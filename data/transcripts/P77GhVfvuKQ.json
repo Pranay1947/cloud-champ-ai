@@ -1,0 +1,2066 @@
+{
+  "video": {
+    "id": "P77GhVfvuKQ",
+    "title": "DevOps ROADMAP 2026: How to learn and Become DevOps Engineer [With Resources]",
+    "url": "https://www.youtube.com/watch?v=P77GhVfvuKQ",
+    "duration": 885,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.44,
+      "duration": 4.319,
+      "text": "in this video I will provide you with a"
+    },
+    {
+      "start": 2.36,
+      "duration": 5.479,
+      "text": "complete road map to learn devops from"
+    },
+    {
+      "start": 4.759,
+      "duration": 5.321,
+      "text": "scratch in a structured and easy way but"
+    },
+    {
+      "start": 7.839,
+      "duration": 4.161,
+      "text": "let me be clear this is not a normal"
+    },
+    {
+      "start": 10.08,
+      "duration": 4.04,
+      "text": "devops road map video where I just talk"
+    },
+    {
+      "start": 12.0,
+      "duration": 3.92,
+      "text": "about things to learn instead I will"
+    },
+    {
+      "start": 14.12,
+      "duration": 3.64,
+      "text": "also provide you with explanations on"
+    },
+    {
+      "start": 15.92,
+      "duration": 3.92,
+      "text": "why you should be learning these tools"
+    },
+    {
+      "start": 17.76,
+      "duration": 4.359,
+      "text": "and also attach resources to help you"
+    },
+    {
+      "start": 19.84,
+      "duration": 4.4,
+      "text": "know where to learn them from so without"
+    },
+    {
+      "start": 22.119,
+      "duration": 4.801,
+      "text": "wasting any time let's start with the"
+    },
+    {
+      "start": 24.24,
+      "duration": 5.32,
+      "text": "[Music]"
+    },
+    {
+      "start": 26.92,
+      "duration": 4.48,
+      "text": "video devops and genius are one of the"
+    },
+    {
+      "start": 29.56,
+      "duration": 3.76,
+      "text": "highest PA Professionals in the tech"
+    },
+    {
+      "start": 31.4,
+      "duration": 4.2,
+      "text": "industry today average salary for a"
+    },
+    {
+      "start": 33.32,
+      "duration": 3.559,
+      "text": "devops engineer in the United States is"
+    },
+    {
+      "start": 35.6,
+      "duration": 3.92,
+      "text": "around"
+    },
+    {
+      "start": 36.879,
+      "duration": 4.881,
+      "text": "$130,000 whereas in India it's around 10"
+    },
+    {
+      "start": 39.52,
+      "duration": 4.199,
+      "text": "lakhs per year and in this video we are"
+    },
+    {
+      "start": 41.76,
+      "duration": 4.319,
+      "text": "going to be discussing different tools"
+    },
+    {
+      "start": 43.719,
+      "duration": 4.961,
+      "text": "and Technologies you need to know to"
+    },
+    {
+      "start": 46.079,
+      "duration": 4.281,
+      "text": "become a devops engineer now to properly"
+    },
+    {
+      "start": 48.68,
+      "duration": 3.6,
+      "text": "understand this devops road map it is"
+    },
+    {
+      "start": 50.36,
+      "duration": 4.32,
+      "text": "necessary for you to note these two"
+    },
+    {
+      "start": 52.28,
+      "duration": 4.84,
+      "text": "important things the first is what do"
+    },
+    {
+      "start": 54.68,
+      "duration": 3.719,
+      "text": "doops engineers exactly do so doops"
+    },
+    {
+      "start": 57.12,
+      "duration": 2.959,
+      "text": "Engineers are someone who are"
+    },
+    {
+      "start": 58.399,
+      "duration": 4.241,
+      "text": "responsible for deploying an applic"
+    },
+    {
+      "start": 60.079,
+      "duration": 4.76,
+      "text": "ation which includes creating servers"
+    },
+    {
+      "start": 62.64,
+      "duration": 3.28,
+      "text": "databases and also configuring them"
+    },
+    {
+      "start": 64.839,
+      "duration": 3.041,
+      "text": "along with that they are also"
+    },
+    {
+      "start": 65.92,
+      "duration": 3.519,
+      "text": "responsible for monitoring and"
+    },
+    {
+      "start": 67.88,
+      "duration": 3.76,
+      "text": "troubleshooting so they need to make"
+    },
+    {
+      "start": 69.439,
+      "duration": 3.961,
+      "text": "sure that the software does not break"
+    },
+    {
+      "start": 71.64,
+      "duration": 3.479,
+      "text": "when it is released and it is working"
+    },
+    {
+      "start": 73.4,
+      "duration": 4.68,
+      "text": "fine all the time the second thing you"
+    },
+    {
+      "start": 75.119,
+      "duration": 5.081,
+      "text": "need to know is doops Engineers love"
+    },
+    {
+      "start": 78.08,
+      "duration": 4.12,
+      "text": "automation they will try to automate"
+    },
+    {
+      "start": 80.2,
+      "duration": 4.04,
+      "text": "every single thing doops Engineers"
+    },
+    {
+      "start": 82.2,
+      "duration": 4.0,
+      "text": "automate repetitive stuff they also"
+    },
+    {
+      "start": 84.24,
+      "duration": 4.96,
+      "text": "automate the creation of infrastructure"
+    },
+    {
+      "start": 86.2,
+      "duration": 5.48,
+      "text": "for an application or configuration even"
+    },
+    {
+      "start": 89.2,
+      "duration": 3.959,
+      "text": "the complete deployment is automated so"
+    },
+    {
+      "start": 91.68,
+      "duration": 3.56,
+      "text": "these are the two important things you"
+    },
+    {
+      "start": 93.159,
+      "duration": 4.081,
+      "text": "need to know to properly understand this"
+    },
+    {
+      "start": 95.24,
+      "duration": 3.72,
+      "text": "devops road map and to know where are"
+    },
+    {
+      "start": 97.24,
+      "duration": 4.32,
+      "text": "all the different tools used in the"
+    },
+    {
+      "start": 98.96,
+      "duration": 4.799,
+      "text": "devops life cycle with that being said"
+    },
+    {
+      "start": 101.56,
+      "duration": 4.4,
+      "text": "now let's look at the devops road map I"
+    },
+    {
+      "start": 103.759,
+      "duration": 3.761,
+      "text": "have a very nice document created here"
+    },
+    {
+      "start": 105.96,
+      "duration": 4.159,
+      "text": "which has information about all the"
+    },
+    {
+      "start": 107.52,
+      "duration": 4.919,
+      "text": "tools and Technologies you need to know"
+    },
+    {
+      "start": 110.119,
+      "duration": 4.481,
+      "text": "to become a devops engineer and this"
+    },
+    {
+      "start": 112.439,
+      "duration": 4.081,
+      "text": "document is kind of lendy because I also"
+    },
+    {
+      "start": 114.6,
+      "duration": 4.32,
+      "text": "have links that will provide you with"
+    },
+    {
+      "start": 116.52,
+      "duration": 4.32,
+      "text": "resources to learn each of these tools"
+    },
+    {
+      "start": 118.92,
+      "duration": 3.76,
+      "text": "if you want me to share this document do"
+    },
+    {
+      "start": 120.84,
+      "duration": 3.959,
+      "text": "let me know in the comment section and I"
+    },
+    {
+      "start": 122.68,
+      "duration": 4.56,
+      "text": "will share this to you on LinkedIn or on"
+    },
+    {
+      "start": 124.799,
+      "duration": 5.001,
+      "text": "GitHub and now let's start with looking"
+    },
+    {
+      "start": 127.24,
+      "duration": 5.76,
+      "text": "at all the different tools you require"
+    },
+    {
+      "start": 129.8,
+      "duration": 6.0,
+      "text": "to become a great devops engineer let's"
+    },
+    {
+      "start": 133.0,
+      "duration": 4.36,
+      "text": "go as we already know a devops engineer"
+    },
+    {
+      "start": 135.8,
+      "duration": 4.0,
+      "text": "is someone who is responsible for"
+    },
+    {
+      "start": 137.36,
+      "duration": 4.48,
+      "text": "deploying and maintaining application so"
+    },
+    {
+      "start": 139.8,
+      "duration": 4.6,
+      "text": "it's very important for a doops engineer"
+    },
+    {
+      "start": 141.84,
+      "duration": 5.039,
+      "text": "to know how is an application created"
+    },
+    {
+      "start": 144.4,
+      "duration": 4.199,
+      "text": "from the start to the very end so when"
+    },
+    {
+      "start": 146.879,
+      "duration": 5.44,
+      "text": "learning develops you should always"
+    },
+    {
+      "start": 148.599,
+      "duration": 6.161,
+      "text": "start with basics of of sdlc sdlc stands"
+    },
+    {
+      "start": 152.319,
+      "duration": 4.401,
+      "text": "for software development life cycle and"
+    },
+    {
+      "start": 154.76,
+      "duration": 4.399,
+      "text": "it's nothing but just step-by-step"
+    },
+    {
+      "start": 156.72,
+      "duration": 4.799,
+      "text": "process that software goes through from"
+    },
+    {
+      "start": 159.159,
+      "duration": 4.481,
+      "text": "planning to coding to testing and the"
+    },
+    {
+      "start": 161.519,
+      "duration": 3.72,
+      "text": "very end to the deployment so as a"
+    },
+    {
+      "start": 163.64,
+      "duration": 3.84,
+      "text": "devops engineer you need to know all the"
+    },
+    {
+      "start": 165.239,
+      "duration": 4.761,
+      "text": "phases that software goes through before"
+    },
+    {
+      "start": 167.48,
+      "duration": 5.08,
+      "text": "it is released in the production so I"
+    },
+    {
+      "start": 170.0,
+      "duration": 4.959,
+      "text": "have resources here attached to learn"
+    },
+    {
+      "start": 172.56,
+      "duration": 4.599,
+      "text": "sdlc and as a devops engineer you don't"
+    },
+    {
+      "start": 174.959,
+      "duration": 4.241,
+      "text": "need to know any definitions or go deep"
+    },
+    {
+      "start": 177.159,
+      "duration": 3.16,
+      "text": "in it but just have an idea of what are"
+    },
+    {
+      "start": 179.2,
+      "duration": 3.48,
+      "text": "different phases"
+    },
+    {
+      "start": 180.319,
+      "duration": 5.081,
+      "text": "and where do devops fall in these"
+    },
+    {
+      "start": 182.68,
+      "duration": 4.88,
+      "text": "different phases learning sdlc will give"
+    },
+    {
+      "start": 185.4,
+      "duration": 4.32,
+      "text": "you a good start to understand what do"
+    },
+    {
+      "start": 187.56,
+      "duration": 4.2,
+      "text": "devops engineer exactly do and what is"
+    },
+    {
+      "start": 189.72,
+      "duration": 4.32,
+      "text": "your duty as a devops engineer so you"
+    },
+    {
+      "start": 191.76,
+      "duration": 4.399,
+      "text": "should always start with basics of sdlc"
+    },
+    {
+      "start": 194.04,
+      "duration": 4.6,
+      "text": "or software development life cycle after"
+    },
+    {
+      "start": 196.159,
+      "duration": 4.601,
+      "text": "learning basics of sdlc you now need to"
+    },
+    {
+      "start": 198.64,
+      "duration": 4.679,
+      "text": "focus on the real Technologies and we"
+    },
+    {
+      "start": 200.76,
+      "duration": 4.839,
+      "text": "start with operating systems as a devops"
+    },
+    {
+      "start": 203.319,
+      "duration": 4.761,
+      "text": "engineer you will be working on systems"
+    },
+    {
+      "start": 205.599,
+      "duration": 4.401,
+      "text": "to create application to set up database"
+    },
+    {
+      "start": 208.08,
+      "duration": 4.32,
+      "text": "and lot more so having knowledge of"
+    },
+    {
+      "start": 210.0,
+      "duration": 4.799,
+      "text": "operating systems is very very important"
+    },
+    {
+      "start": 212.4,
+      "duration": 4.839,
+      "text": "in devops we generally use Windows or"
+    },
+    {
+      "start": 214.799,
+      "duration": 4.16,
+      "text": "Linux for deploy applications mostly"
+    },
+    {
+      "start": 217.239,
+      "duration": 4.401,
+      "text": "it's going to be Linux so you need to"
+    },
+    {
+      "start": 218.959,
+      "duration": 4.56,
+      "text": "have good knowledge of Linux in Linux"
+    },
+    {
+      "start": 221.64,
+      "duration": 4.12,
+      "text": "you need to know the shell commands"
+    },
+    {
+      "start": 223.519,
+      "duration": 4.72,
+      "text": "basic shell commands to do everyday task"
+    },
+    {
+      "start": 225.76,
+      "duration": 4.36,
+      "text": "you also need to know SSH ssh is"
+    },
+    {
+      "start": 228.239,
+      "duration": 4.56,
+      "text": "something we use to connect to a server"
+    },
+    {
+      "start": 230.12,
+      "duration": 4.88,
+      "text": "remotely devops Engineers use SSH to"
+    },
+    {
+      "start": 232.799,
+      "duration": 4.121,
+      "text": "connect to servers in the cloud you also"
+    },
+    {
+      "start": 235.0,
+      "duration": 4.12,
+      "text": "need to know what is virtualization how"
+    },
+    {
+      "start": 236.92,
+      "duration": 4.599,
+      "text": "it works then you need to know how to"
+    },
+    {
+      "start": 239.12,
+      "duration": 4.679,
+      "text": "work with text editors in Linux which"
+    },
+    {
+      "start": 241.519,
+      "duration": 3.881,
+      "text": "can be either whim or Nano then you need"
+    },
+    {
+      "start": 243.799,
+      "duration": 3.921,
+      "text": "to know the commands to change file"
+    },
+    {
+      "start": 245.4,
+      "duration": 4.72,
+      "text": "permissions or file ownership using CH"
+    },
+    {
+      "start": 247.72,
+      "duration": 4.96,
+      "text": "mod or CH bone command you also need to"
+    },
+    {
+      "start": 250.12,
+      "duration": 5.56,
+      "text": "know how to work with packages using"
+    },
+    {
+      "start": 252.68,
+      "duration": 4.2,
+      "text": "package management like AP or yum as a"
+    },
+    {
+      "start": 255.68,
+      "duration": 2.6,
+      "text": "devops engineer you will also be"
+    },
+    {
+      "start": 256.88,
+      "duration": 3.919,
+      "text": "checking processes running in your"
+    },
+    {
+      "start": 258.28,
+      "duration": 4.76,
+      "text": "systems or kill them which can be done"
+    },
+    {
+      "start": 260.799,
+      "duration": 4.521,
+      "text": "using PS or kill commands so you need to"
+    },
+    {
+      "start": 263.04,
+      "duration": 4.439,
+      "text": "have a good idea of different commands"
+    },
+    {
+      "start": 265.32,
+      "duration": 4.28,
+      "text": "when working as a devops engineer and I"
+    },
+    {
+      "start": 267.479,
+      "duration": 3.841,
+      "text": "have this video which explains all the"
+    },
+    {
+      "start": 269.6,
+      "duration": 3.72,
+      "text": "important Linux commands you need to"
+    },
+    {
+      "start": 271.32,
+      "duration": 4.0,
+      "text": "know as a devops engineer but you can"
+    },
+    {
+      "start": 273.32,
+      "duration": 4.28,
+      "text": "also refer to other resources attached"
+    },
+    {
+      "start": 275.32,
+      "duration": 4.319,
+      "text": "in this which can help you learn Linux"
+    },
+    {
+      "start": 277.6,
+      "duration": 4.2,
+      "text": "properly but whenever you learn any"
+    },
+    {
+      "start": 279.639,
+      "duration": 4.641,
+      "text": "technology make sure to practice and do"
+    },
+    {
+      "start": 281.8,
+      "duration": 4.44,
+      "text": "handson so to practice Linux you can try"
+    },
+    {
+      "start": 284.28,
+      "duration": 3.8,
+      "text": "out these things which is setting up a"
+    },
+    {
+      "start": 286.24,
+      "duration": 3.679,
+      "text": "web server on your Linux machine or"
+    },
+    {
+      "start": 288.08,
+      "duration": 3.92,
+      "text": "setting up database or creating and"
+    },
+    {
+      "start": 289.919,
+      "duration": 3.72,
+      "text": "managing users you can also try out"
+    },
+    {
+      "start": 292.0,
+      "duration": 4.32,
+      "text": "installing different devops tools like"
+    },
+    {
+      "start": 293.639,
+      "duration": 4.881,
+      "text": "doer genkins terraform on an UB to Linux"
+    },
+    {
+      "start": 296.32,
+      "duration": 4.04,
+      "text": "machine which will help you teach lenux"
+    },
+    {
+      "start": 298.52,
+      "duration": 3.679,
+      "text": "properly and this is also something that"
+    },
+    {
+      "start": 300.36,
+      "duration": 4.0,
+      "text": "you will be doing every day as a devops"
+    },
+    {
+      "start": 302.199,
+      "duration": 4.121,
+      "text": "engineer so this is Linux that you need"
+    },
+    {
+      "start": 304.36,
+      "duration": 4.04,
+      "text": "to obviously know to become a devops"
+    },
+    {
+      "start": 306.32,
+      "duration": 4.0,
+      "text": "engineer next thing to learn in our"
+    },
+    {
+      "start": 308.4,
+      "duration": 4.079,
+      "text": "devops road map is scripting or"
+    },
+    {
+      "start": 310.32,
+      "duration": 4.439,
+      "text": "programming we already know devops"
+    },
+    {
+      "start": 312.479,
+      "duration": 4.72,
+      "text": "Engineers love Automation and they will"
+    },
+    {
+      "start": 314.759,
+      "duration": 4.201,
+      "text": "automate everything by creating scripts"
+    },
+    {
+      "start": 317.199,
+      "duration": 3.681,
+      "text": "so as a devops engineer it is very"
+    },
+    {
+      "start": 318.96,
+      "duration": 4.12,
+      "text": "important for you to have knowledge of"
+    },
+    {
+      "start": 320.88,
+      "duration": 5.4,
+      "text": "any one scripting language which can be"
+    },
+    {
+      "start": 323.08,
+      "duration": 5.399,
+      "text": "bash or python or Golan so now most of"
+    },
+    {
+      "start": 326.28,
+      "duration": 4.72,
+      "text": "you might be confused and thinking is"
+    },
+    {
+      "start": 328.479,
+      "duration": 4.961,
+      "text": "coding required for devops rules so the"
+    },
+    {
+      "start": 331.0,
+      "duration": 4.72,
+      "text": "answer is yes coding is required and we"
+    },
+    {
+      "start": 333.44,
+      "duration": 4.24,
+      "text": "use coding or scripting to automate"
+    },
+    {
+      "start": 335.72,
+      "duration": 4.199,
+      "text": "these different stuff like pack up"
+    },
+    {
+      "start": 337.68,
+      "duration": 4.48,
+      "text": "automation or working with apis or"
+    },
+    {
+      "start": 339.919,
+      "duration": 3.601,
+      "text": "integration with other devops tools so"
+    },
+    {
+      "start": 342.16,
+      "duration": 3.84,
+      "text": "you will need to have knowledge of any"
+    },
+    {
+      "start": 343.52,
+      "duration": 4.36,
+      "text": "one programming or scripting language"
+    },
+    {
+      "start": 346.0,
+      "duration": 3.8,
+      "text": "you don't have to necessarily learn it"
+    },
+    {
+      "start": 347.88,
+      "duration": 4.319,
+      "text": "right in the beginning of your journey I"
+    },
+    {
+      "start": 349.8,
+      "duration": 4.16,
+      "text": "learned python one year after I became"
+    },
+    {
+      "start": 352.199,
+      "duration": 3.801,
+      "text": "devops engineer so you can also learn it"
+    },
+    {
+      "start": 353.96,
+      "duration": 3.799,
+      "text": "later and here are different resources"
+    },
+    {
+      "start": 356.0,
+      "duration": 4.199,
+      "text": "that will help you learn scripting or"
+    },
+    {
+      "start": 357.759,
+      "duration": 4.401,
+      "text": "programming for devops engineers next"
+    },
+    {
+      "start": 360.199,
+      "duration": 5.161,
+      "text": "important thing in our devops road map"
+    },
+    {
+      "start": 362.16,
+      "duration": 5.28,
+      "text": "is kid git is super super important and"
+    },
+    {
+      "start": 365.36,
+      "duration": 5.48,
+      "text": "you cannot become a devops engineer"
+    },
+    {
+      "start": 367.44,
+      "duration": 5.24,
+      "text": "without knowing git every application on"
+    },
+    {
+      "start": 370.84,
+      "duration": 3.68,
+      "text": "the internet will have code and this"
+    },
+    {
+      "start": 372.68,
+      "duration": 5.04,
+      "text": "code is actually stored somewhere"
+    },
+    {
+      "start": 374.52,
+      "duration": 4.76,
+      "text": "remotely on GitHub or gitlab as a devops"
+    },
+    {
+      "start": 377.72,
+      "duration": 4.08,
+      "text": "engineer you will need to clone this"
+    },
+    {
+      "start": 379.28,
+      "duration": 4.56,
+      "text": "code on different servers to host them"
+    },
+    {
+      "start": 381.8,
+      "duration": 3.56,
+      "text": "and you can do that only by knowing it"
+    },
+    {
+      "start": 383.84,
+      "duration": 3.68,
+      "text": "so you will need to know the concept of"
+    },
+    {
+      "start": 385.36,
+      "duration": 4.08,
+      "text": "branching how to create switch or delete"
+    },
+    {
+      "start": 387.52,
+      "duration": 3.56,
+      "text": "branches you also need to know the"
+    },
+    {
+      "start": 389.44,
+      "duration": 4.039,
+      "text": "important get commands which will let"
+    },
+    {
+      "start": 391.08,
+      "duration": 4.8,
+      "text": "you clone and push changes on the remote"
+    },
+    {
+      "start": 393.479,
+      "duration": 5.12,
+      "text": "repositories also some Advanced commands"
+    },
+    {
+      "start": 395.88,
+      "duration": 4.759,
+      "text": "like cheric or rebase next you also need"
+    },
+    {
+      "start": 398.599,
+      "duration": 4.401,
+      "text": "to know pull request or merge request"
+    },
+    {
+      "start": 400.639,
+      "duration": 4.28,
+      "text": "because in companies we do not push code"
+    },
+    {
+      "start": 403.0,
+      "duration": 3.88,
+      "text": "directly on the main branch we rather"
+    },
+    {
+      "start": 404.919,
+      "duration": 3.801,
+      "text": "create merge request which lets you"
+    },
+    {
+      "start": 406.88,
+      "duration": 4.24,
+      "text": "check the code before pushing to the"
+    },
+    {
+      "start": 408.72,
+      "duration": 4.4,
+      "text": "main branch where the cicd is set up so"
+    },
+    {
+      "start": 411.12,
+      "duration": 5.199,
+      "text": "good is also a very important aspect in"
+    },
+    {
+      "start": 413.12,
+      "duration": 5.359,
+      "text": "cicd in giops or storing infrastructure"
+    },
+    {
+      "start": 416.319,
+      "duration": 4.6,
+      "text": "as code files so you will need to know"
+    },
+    {
+      "start": 418.479,
+      "duration": 4.481,
+      "text": "all of these things related to git to"
+    },
+    {
+      "start": 420.919,
+      "duration": 3.881,
+      "text": "become a devops engineer and I have some"
+    },
+    {
+      "start": 422.96,
+      "duration": 3.72,
+      "text": "resources attached here I also have a"
+    },
+    {
+      "start": 424.8,
+      "duration": 4.239,
+      "text": "video created which is completely"
+    },
+    {
+      "start": 426.68,
+      "duration": 3.799,
+      "text": "Hands-On to teach you git and gith up or"
+    },
+    {
+      "start": 429.039,
+      "duration": 4.28,
+      "text": "else you can also try out this game"
+    },
+    {
+      "start": 430.479,
+      "duration": 4.801,
+      "text": "which teaches you git by playing it git"
+    },
+    {
+      "start": 433.319,
+      "duration": 3.921,
+      "text": "after Git You need to learn networking"
+    },
+    {
+      "start": 435.28,
+      "duration": 3.919,
+      "text": "and security when you deploy an"
+    },
+    {
+      "start": 437.24,
+      "duration": 3.519,
+      "text": "application as a devops engineer you"
+    },
+    {
+      "start": 439.199,
+      "duration": 3.481,
+      "text": "need to make sure that the users are"
+    },
+    {
+      "start": 440.759,
+      "duration": 3.84,
+      "text": "able to access the application the"
+    },
+    {
+      "start": 442.68,
+      "duration": 4.16,
+      "text": "traffic is flowing and the information"
+    },
+    {
+      "start": 444.599,
+      "duration": 4.241,
+      "text": "is sent also you need to make sure that"
+    },
+    {
+      "start": 446.84,
+      "duration": 4.44,
+      "text": "the application is secure and there is"
+    },
+    {
+      "start": 448.84,
+      "duration": 4.799,
+      "text": "no authorized access so to manage"
+    },
+    {
+      "start": 451.28,
+      "duration": 4.56,
+      "text": "traffic to enable security you need to"
+    },
+    {
+      "start": 453.639,
+      "duration": 3.921,
+      "text": "have your networking Concepts cleared"
+    },
+    {
+      "start": 455.84,
+      "duration": 3.799,
+      "text": "and as a devops engineer you will need"
+    },
+    {
+      "start": 457.56,
+      "duration": 4.16,
+      "text": "to know what is IP addressing how it"
+    },
+    {
+      "start": 459.639,
+      "duration": 3.601,
+      "text": "works what are ports and protocols what"
+    },
+    {
+      "start": 461.72,
+      "duration": 4.24,
+      "text": "are different networking services like"
+    },
+    {
+      "start": 463.24,
+      "duration": 5.0,
+      "text": "DCP DNS how they work and all these"
+    },
+    {
+      "start": 465.96,
+      "duration": 3.88,
+      "text": "other things I have a very good YouTube"
+    },
+    {
+      "start": 468.24,
+      "duration": 3.76,
+      "text": "video that will help you learn"
+    },
+    {
+      "start": 469.84,
+      "duration": 4.359,
+      "text": "networking fundamentals for a devops"
+    },
+    {
+      "start": 472.0,
+      "duration": 4.039,
+      "text": "engineer and you can also refer to this"
+    },
+    {
+      "start": 474.199,
+      "duration": 4.081,
+      "text": "networking course or this networking"
+    },
+    {
+      "start": 476.039,
+      "duration": 3.84,
+      "text": "book after learning Linux git and"
+    },
+    {
+      "start": 478.28,
+      "duration": 4.0,
+      "text": "networking you are now now ready to"
+    },
+    {
+      "start": 479.879,
+      "duration": 4.561,
+      "text": "learn cloud cloud computing has been"
+    },
+    {
+      "start": 482.28,
+      "duration": 4.199,
+      "text": "very popular and companies now deploy"
+    },
+    {
+      "start": 484.44,
+      "duration": 4.84,
+      "text": "their applications on cloud providers"
+    },
+    {
+      "start": 486.479,
+      "duration": 5.201,
+      "text": "like AWS Azure or gcp rather than"
+    },
+    {
+      "start": 489.28,
+      "duration": 4.599,
+      "text": "hosting them on premisis so learning"
+    },
+    {
+      "start": 491.68,
+      "duration": 3.68,
+      "text": "cloud is very very important you don't"
+    },
+    {
+      "start": 493.879,
+      "duration": 4.0,
+      "text": "have to learn all of them you just need"
+    },
+    {
+      "start": 495.36,
+      "duration": 4.72,
+      "text": "to master one and get certified in one"
+    },
+    {
+      "start": 497.879,
+      "duration": 5.16,
+      "text": "of the clouds the three popular ones are"
+    },
+    {
+      "start": 500.08,
+      "duration": 5.399,
+      "text": "AWS Azure gcp you can go and learn any"
+    },
+    {
+      "start": 503.039,
+      "duration": 4.521,
+      "text": "of them I started with AWS but you can"
+    },
+    {
+      "start": 505.479,
+      "duration": 4.72,
+      "text": "also learn Azure which is very popular"
+    },
+    {
+      "start": 507.56,
+      "duration": 4.28,
+      "text": "these days or gcp as well when learning"
+    },
+    {
+      "start": 510.199,
+      "duration": 3.361,
+      "text": "any Cloud you don't have to master all"
+    },
+    {
+      "start": 511.84,
+      "duration": 4.72,
+      "text": "the services because there are around"
+    },
+    {
+      "start": 513.56,
+      "duration": 4.919,
+      "text": "200 300 services in AWS but as a devops"
+    },
+    {
+      "start": 516.56,
+      "duration": 4.039,
+      "text": "engineer you only need to know what is a"
+    },
+    {
+      "start": 518.479,
+      "duration": 4.601,
+      "text": "VPC and how to create it what is easy to"
+    },
+    {
+      "start": 520.599,
+      "duration": 4.321,
+      "text": "S3 and all these different Services my"
+    },
+    {
+      "start": 523.08,
+      "duration": 4.0,
+      "text": "recommendation would be to learn Cloud"
+    },
+    {
+      "start": 524.92,
+      "duration": 5.76,
+      "text": "by appearing certifications so you can"
+    },
+    {
+      "start": 527.08,
+      "duration": 5.12,
+      "text": "learn as well as get certified in Cloud"
+    },
+    {
+      "start": 530.68,
+      "duration": 3.48,
+      "text": "after learning cloud you will have"
+    },
+    {
+      "start": 532.2,
+      "duration": 4.36,
+      "text": "knowledge to create servers for your"
+    },
+    {
+      "start": 534.16,
+      "duration": 4.52,
+      "text": "application and also set up database by"
+    },
+    {
+      "start": 536.56,
+      "duration": 4.36,
+      "text": "running leux commands on them and this"
+    },
+    {
+      "start": 538.68,
+      "duration": 4.2,
+      "text": "is fine for just one or two application"
+    },
+    {
+      "start": 540.92,
+      "duration": 3.76,
+      "text": "but when you have multiple applications"
+    },
+    {
+      "start": 542.88,
+      "duration": 4.399,
+      "text": "you have to do this again and again and"
+    },
+    {
+      "start": 544.68,
+      "duration": 4.92,
+      "text": "again and again and we all know devop"
+    },
+    {
+      "start": 547.279,
+      "duration": 5.081,
+      "text": "Engineers hate repetitive task so we can"
+    },
+    {
+      "start": 549.6,
+      "duration": 4.96,
+      "text": "automate this using terraform and anible"
+    },
+    {
+      "start": 552.36,
+      "duration": 4.599,
+      "text": "terraform and anable use the concept of"
+    },
+    {
+      "start": 554.56,
+      "duration": 4.04,
+      "text": "infrastructure as code which is to write"
+    },
+    {
+      "start": 556.959,
+      "duration": 4.0,
+      "text": "down the infrastructure and its"
+    },
+    {
+      "start": 558.6,
+      "duration": 4.16,
+      "text": "configuration in the form of code so if"
+    },
+    {
+      "start": 560.959,
+      "duration": 3.401,
+      "text": "you want to have five servers of Linux"
+    },
+    {
+      "start": 562.76,
+      "duration": 3.84,
+      "text": "operating system you can write it down"
+    },
+    {
+      "start": 564.36,
+      "duration": 4.36,
+      "text": "in Tera form and you want to install"
+    },
+    {
+      "start": 566.6,
+      "duration": 4.76,
+      "text": "mySQL database on all of them with just"
+    },
+    {
+      "start": 568.72,
+      "duration": 4.799,
+      "text": "single command you can use anible for it"
+    },
+    {
+      "start": 571.36,
+      "duration": 4.24,
+      "text": "so terraform and anible are very popular"
+    },
+    {
+      "start": 573.519,
+      "duration": 4.44,
+      "text": "infrastructure as code tool which is"
+    },
+    {
+      "start": 575.6,
+      "duration": 4.64,
+      "text": "used for infrastructure provisioning and"
+    },
+    {
+      "start": 577.959,
+      "duration": 4.56,
+      "text": "for configuration management so using"
+    },
+    {
+      "start": 580.24,
+      "duration": 4.36,
+      "text": "terraform you can create infrastructure"
+    },
+    {
+      "start": 582.519,
+      "duration": 4.161,
+      "text": "and using anal you can configure that"
+    },
+    {
+      "start": 584.6,
+      "duration": 3.64,
+      "text": "infrastructure here are some resources"
+    },
+    {
+      "start": 586.68,
+      "duration": 3.68,
+      "text": "which can help you teach terraform and"
+    },
+    {
+      "start": 588.24,
+      "duration": 4.24,
+      "text": "anible and moving on the next thing you"
+    },
+    {
+      "start": 590.36,
+      "duration": 4.96,
+      "text": "need to know to become a devops engineer"
+    },
+    {
+      "start": 592.48,
+      "duration": 5.039,
+      "text": "is having knowledge on microservices and"
+    },
+    {
+      "start": 595.32,
+      "duration": 3.959,
+      "text": "conization microservices is an"
+    },
+    {
+      "start": 597.519,
+      "duration": 4.681,
+      "text": "architecture diagram where you deploy an"
+    },
+    {
+      "start": 599.279,
+      "duration": 5.161,
+      "text": "application as independent services for"
+    },
+    {
+      "start": 602.2,
+      "duration": 4.4,
+      "text": "better scaling and management and when"
+    },
+    {
+      "start": 604.44,
+      "duration": 4.56,
+      "text": "you use microservices architecture the"
+    },
+    {
+      "start": 606.6,
+      "duration": 4.84,
+      "text": "application is usually deployed as a"
+    },
+    {
+      "start": 609.0,
+      "duration": 4.48,
+      "text": "container a container is a package which"
+    },
+    {
+      "start": 611.44,
+      "duration": 3.399,
+      "text": "includes code dependencies and"
+    },
+    {
+      "start": 613.48,
+      "duration": 3.599,
+      "text": "everything required to run the"
+    },
+    {
+      "start": 614.839,
+      "duration": 4.321,
+      "text": "application on any operating system"
+    },
+    {
+      "start": 617.079,
+      "duration": 4.32,
+      "text": "Docker is a very popular container"
+    },
+    {
+      "start": 619.16,
+      "duration": 4.0,
+      "text": "technology so you need to know how"
+    },
+    {
+      "start": 621.399,
+      "duration": 3.721,
+      "text": "Docker Works what are different Docker"
+    },
+    {
+      "start": 623.16,
+      "duration": 4.48,
+      "text": "commands how to write Docker files how"
+    },
+    {
+      "start": 625.12,
+      "duration": 4.64,
+      "text": "to push and pull Docker images also have"
+    },
+    {
+      "start": 627.64,
+      "duration": 3.48,
+      "text": "general idea of what is microser"
+    },
+    {
+      "start": 629.76,
+      "duration": 3.8,
+      "text": "because typically when you work as a"
+    },
+    {
+      "start": 631.12,
+      "duration": 4.959,
+      "text": "devops engineer your company will be"
+    },
+    {
+      "start": 633.56,
+      "duration": 4.279,
+      "text": "having application using microservices"
+    },
+    {
+      "start": 636.079,
+      "duration": 4.481,
+      "text": "architecture so you need to know"
+    },
+    {
+      "start": 637.839,
+      "duration": 4.601,
+      "text": "microservices and also how Docker Works"
+    },
+    {
+      "start": 640.56,
+      "duration": 3.68,
+      "text": "what are common Docker commands and all"
+    },
+    {
+      "start": 642.44,
+      "duration": 3.48,
+      "text": "the other things here are some resources"
+    },
+    {
+      "start": 644.24,
+      "duration": 4.399,
+      "text": "that will help you learn what is"
+    },
+    {
+      "start": 645.92,
+      "duration": 4.56,
+      "text": "microservices and also teach your Docker"
+    },
+    {
+      "start": 648.639,
+      "duration": 4.481,
+      "text": "next thing to learn in our devops road"
+    },
+    {
+      "start": 650.48,
+      "duration": 5.0,
+      "text": "map is the very popular kubernetes"
+    },
+    {
+      "start": 653.12,
+      "duration": 4.36,
+      "text": "kubernetes is a container orchestrator"
+    },
+    {
+      "start": 655.48,
+      "duration": 4.72,
+      "text": "tool that is used to manage multiple"
+    },
+    {
+      "start": 657.48,
+      "duration": 4.28,
+      "text": "Docker containers many companies use"
+    },
+    {
+      "start": 660.2,
+      "duration": 3.639,
+      "text": "kubernetes to manage their Docker"
+    },
+    {
+      "start": 661.76,
+      "duration": 4.6,
+      "text": "container so it is very very important"
+    },
+    {
+      "start": 663.839,
+      "duration": 4.601,
+      "text": "for you to have knowledge on kubernetes"
+    },
+    {
+      "start": 666.36,
+      "duration": 4.08,
+      "text": "if you want to become a devops engineer"
+    },
+    {
+      "start": 668.44,
+      "duration": 3.639,
+      "text": "but kubernetes is very vast so what do"
+    },
+    {
+      "start": 670.44,
+      "duration": 4.12,
+      "text": "you need to know you should be knowing"
+    },
+    {
+      "start": 672.079,
+      "duration": 3.841,
+      "text": "what is kubernetes and how it works you"
+    },
+    {
+      "start": 674.56,
+      "duration": 4.0,
+      "text": "should also know how to create"
+    },
+    {
+      "start": 675.92,
+      "duration": 4.159,
+      "text": "kubernetes clusters and manage them then"
+    },
+    {
+      "start": 678.56,
+      "duration": 3.88,
+      "text": "you also need to have knowledge on how"
+    },
+    {
+      "start": 680.079,
+      "duration": 4.281,
+      "text": "to deploy applications on kubernetes"
+    },
+    {
+      "start": 682.44,
+      "duration": 3.959,
+      "text": "which is how to create manifest files"
+    },
+    {
+      "start": 684.36,
+      "duration": 3.96,
+      "text": "for deployments replica sets or"
+    },
+    {
+      "start": 686.399,
+      "duration": 3.601,
+      "text": "different kubernetes objects you also"
+    },
+    {
+      "start": 688.32,
+      "duration": 4.28,
+      "text": "need to have knowledge on different"
+    },
+    {
+      "start": 690.0,
+      "duration": 4.88,
+      "text": "kubernetes commands so this is very very"
+    },
+    {
+      "start": 692.6,
+      "duration": 4.479,
+      "text": "important and remember kubernetes is"
+    },
+    {
+      "start": 694.88,
+      "duration": 4.6,
+      "text": "complex so you will require knowledge on"
+    },
+    {
+      "start": 697.079,
+      "duration": 4.76,
+      "text": "all the previous tools before learning"
+    },
+    {
+      "start": 699.48,
+      "duration": 3.84,
+      "text": "kubernetes here is a good resource that"
+    },
+    {
+      "start": 701.839,
+      "duration": 3.24,
+      "text": "will help you understand what are"
+    },
+    {
+      "start": 703.32,
+      "duration": 3.68,
+      "text": "different prerequisites you need to know"
+    },
+    {
+      "start": 705.079,
+      "duration": 3.76,
+      "text": "before learning kubernetes and also"
+    },
+    {
+      "start": 707.0,
+      "duration": 4.56,
+      "text": "other resources that will help you learn"
+    },
+    {
+      "start": 708.839,
+      "duration": 4.361,
+      "text": "kubernetes from scratch every tool that"
+    },
+    {
+      "start": 711.56,
+      "duration": 3.88,
+      "text": "we have discussed till now in this"
+    },
+    {
+      "start": 713.2,
+      "duration": 4.759,
+      "text": "devops road map is enough for you to"
+    },
+    {
+      "start": 715.44,
+      "duration": 4.16,
+      "text": "deploy an application manually but we"
+    },
+    {
+      "start": 717.959,
+      "duration": 3.841,
+      "text": "know devops engineers is to not do"
+    },
+    {
+      "start": 719.6,
+      "duration": 4.56,
+      "text": "anything manually so we use cicd"
+    },
+    {
+      "start": 721.8,
+      "duration": 5.279,
+      "text": "pipeline to automate the deployment of"
+    },
+    {
+      "start": 724.16,
+      "duration": 4.88,
+      "text": "an application using cicd pipeline you"
+    },
+    {
+      "start": 727.079,
+      "duration": 4.241,
+      "text": "can automatically deploy an application"
+    },
+    {
+      "start": 729.04,
+      "duration": 4.599,
+      "text": "to production after you make any minor"
+    },
+    {
+      "start": 731.32,
+      "duration": 5.0,
+      "text": "change and as a devops engineer you will"
+    },
+    {
+      "start": 733.639,
+      "duration": 5.041,
+      "text": "need to know how to create cicd pipeline"
+    },
+    {
+      "start": 736.32,
+      "duration": 4.16,
+      "text": "how to integrate test in your pipeline"
+    },
+    {
+      "start": 738.68,
+      "duration": 3.279,
+      "text": "how to trigger a build and lot more here"
+    },
+    {
+      "start": 740.48,
+      "duration": 3.2,
+      "text": "are different resources to teach you"
+    },
+    {
+      "start": 741.959,
+      "duration": 4.0,
+      "text": "that and in the market right now there"
+    },
+    {
+      "start": 743.68,
+      "duration": 4.76,
+      "text": "are different cicd tools like genkins"
+    },
+    {
+      "start": 745.959,
+      "duration": 5.161,
+      "text": "gitlab Ci GitHub actions Travis CI"
+    },
+    {
+      "start": 748.44,
+      "duration": 4.68,
+      "text": "Circle C and lot more a company might be"
+    },
+    {
+      "start": 751.12,
+      "duration": 4.0,
+      "text": "using any of these so you don't have to"
+    },
+    {
+      "start": 753.12,
+      "duration": 4.159,
+      "text": "know all of them you just need to know"
+    },
+    {
+      "start": 755.12,
+      "duration": 4.12,
+      "text": "one of the cicd tools and then learning"
+    },
+    {
+      "start": 757.279,
+      "duration": 3.56,
+      "text": "other will be very easy for you after"
+    },
+    {
+      "start": 759.24,
+      "duration": 3.68,
+      "text": "the application is deployed on"
+    },
+    {
+      "start": 760.839,
+      "duration": 4.36,
+      "text": "production devops Engineers need to"
+    },
+    {
+      "start": 762.92,
+      "duration": 4.32,
+      "text": "continuously Monitor and check if the"
+    },
+    {
+      "start": 765.199,
+      "duration": 4.521,
+      "text": "application is working fine if there are"
+    },
+    {
+      "start": 767.24,
+      "duration": 4.839,
+      "text": "any issues if the CPU is more or memory"
+    },
+    {
+      "start": 769.72,
+      "duration": 3.76,
+      "text": "is more and lot many other things so a"
+    },
+    {
+      "start": 772.079,
+      "duration": 3.521,
+      "text": "devops engineer need to have good"
+    },
+    {
+      "start": 773.48,
+      "duration": 4.32,
+      "text": "knowledge on how to monitor these"
+    },
+    {
+      "start": 775.6,
+      "duration": 3.84,
+      "text": "applications to monitor applications we"
+    },
+    {
+      "start": 777.8,
+      "duration": 4.88,
+      "text": "use different tools like Prometheus"
+    },
+    {
+      "start": 779.44,
+      "duration": 4.639,
+      "text": "grafana cloudwatch naos Ork stack so you"
+    },
+    {
+      "start": 782.68,
+      "duration": 3.399,
+      "text": "need to have knowledge on these tools"
+    },
+    {
+      "start": 784.079,
+      "duration": 3.841,
+      "text": "and understand how you can use them to"
+    },
+    {
+      "start": 786.079,
+      "duration": 3.32,
+      "text": "monitor your applications along with"
+    },
+    {
+      "start": 787.92,
+      "duration": 3.52,
+      "text": "monitoring you also need to know how"
+    },
+    {
+      "start": 789.399,
+      "duration": 3.721,
+      "text": "logging works so logging is something"
+    },
+    {
+      "start": 791.44,
+      "duration": 3.28,
+      "text": "that will help you tell what is the"
+    },
+    {
+      "start": 793.12,
+      "duration": 3.279,
+      "text": "problem and it is very important in"
+    },
+    {
+      "start": 794.72,
+      "duration": 3.119,
+      "text": "troubleshooting so here are some"
+    },
+    {
+      "start": 796.399,
+      "duration": 3.841,
+      "text": "resources that will teach you how you"
+    },
+    {
+      "start": 797.839,
+      "duration": 4.401,
+      "text": "can use Prometheus an open source tool"
+    },
+    {
+      "start": 800.24,
+      "duration": 3.88,
+      "text": "to monitor the applications on"
+    },
+    {
+      "start": 802.24,
+      "duration": 3.32,
+      "text": "kubernetes once you have learned"
+    },
+    {
+      "start": 804.12,
+      "duration": 3.76,
+      "text": "everything that we have discussed till"
+    },
+    {
+      "start": 805.56,
+      "duration": 4.6,
+      "text": "now in this devops road map you are then"
+    },
+    {
+      "start": 807.88,
+      "duration": 5.44,
+      "text": "ready to look at the advanced stuff"
+    },
+    {
+      "start": 810.16,
+      "duration": 4.799,
+      "text": "which is gitops and service mesh so"
+    },
+    {
+      "start": 813.32,
+      "duration": 3.68,
+      "text": "gitops is a way in devops where you"
+    },
+    {
+      "start": 814.959,
+      "duration": 4.361,
+      "text": "consider git repository as a single"
+    },
+    {
+      "start": 817.0,
+      "duration": 4.079,
+      "text": "source of Truth which means anything on"
+    },
+    {
+      "start": 819.32,
+      "duration": 4.6,
+      "text": "the git repositories is going to be"
+    },
+    {
+      "start": 821.079,
+      "duration": 5.041,
+      "text": "applied on the end application so gitops"
+    },
+    {
+      "start": 823.92,
+      "duration": 4.84,
+      "text": "is done using a very popular tool which"
+    },
+    {
+      "start": 826.12,
+      "duration": 4.6,
+      "text": "is Argo CD and you need to know Argo CD"
+    },
+    {
+      "start": 828.76,
+      "duration": 4.04,
+      "text": "because many companies are using it so"
+    },
+    {
+      "start": 830.72,
+      "duration": 3.88,
+      "text": "giops can be done using Argo CD but"
+    },
+    {
+      "start": 832.8,
+      "duration": 3.959,
+      "text": "before learning giops you need to know"
+    },
+    {
+      "start": 834.6,
+      "duration": 4.4,
+      "text": "what is git what is cicd what is"
+    },
+    {
+      "start": 836.759,
+      "duration": 5.44,
+      "text": "infrastructure as code which is required"
+    },
+    {
+      "start": 839.0,
+      "duration": 4.48,
+      "text": "to implement kops next is service mesh"
+    },
+    {
+      "start": 842.199,
+      "duration": 3.281,
+      "text": "when you have a microservices"
+    },
+    {
+      "start": 843.48,
+      "duration": 5.0,
+      "text": "architecture you're going to have many"
+    },
+    {
+      "start": 845.48,
+      "duration": 4.719,
+      "text": "services and many problems so service"
+    },
+    {
+      "start": 848.48,
+      "duration": 4.12,
+      "text": "mesh is used to solve problems like"
+    },
+    {
+      "start": 850.199,
+      "duration": 5.481,
+      "text": "service Discovery traffic management"
+    },
+    {
+      "start": 852.6,
+      "duration": 5.479,
+      "text": "monitoring logging and also encryption"
+    },
+    {
+      "start": 855.68,
+      "duration": 4.36,
+      "text": "sto a very popular service mesh is used"
+    },
+    {
+      "start": 858.079,
+      "duration": 4.161,
+      "text": "by many big companies so it is very"
+    },
+    {
+      "start": 860.04,
+      "duration": 4.159,
+      "text": "important for you to learn service mesh"
+    },
+    {
+      "start": 862.24,
+      "duration": 4.64,
+      "text": "as well because many companies have now"
+    },
+    {
+      "start": 864.199,
+      "duration": 4.681,
+      "text": "started using it so this is our devops"
+    },
+    {
+      "start": 866.88,
+      "duration": 4.079,
+      "text": "road mapap to help you become a great"
+    },
+    {
+      "start": 868.88,
+      "duration": 4.16,
+      "text": "devops engineer I hope this video was"
+    },
+    {
+      "start": 870.959,
+      "duration": 4.041,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 873.04,
+      "duration": 3.84,
+      "text": "any doubt do let me know in the comment"
+    },
+    {
+      "start": 875.0,
+      "duration": 3.759,
+      "text": "section if you also want this document"
+    },
+    {
+      "start": 876.88,
+      "duration": 4.12,
+      "text": "to be shared do let me know in the"
+    },
+    {
+      "start": 878.759,
+      "duration": 4.361,
+      "text": "comment section please like this video"
+    },
+    {
+      "start": 881.0,
+      "duration": 5.279,
+      "text": "And subscribe to Cloud champ thank you"
+    },
+    {
+      "start": 883.12,
+      "duration": 3.159,
+      "text": "and have a good day"
+    }
+  ]
+}

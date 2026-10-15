@@ -1,0 +1,1481 @@
+{
+  "video": {
+    "id": "4IFW5dXMW1Y",
+    "title": "How to create AWS VPC with Subnets using Terraform",
+    "url": "https://www.youtube.com/watch?v=4IFW5dXMW1Y",
+    "duration": 631,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.32,
+      "duration": 4.72,
+      "text": "hello and welcome back in this video"
+    },
+    {
+      "start": 1.92,
+      "duration": 5.439,
+      "text": "we're going to see how to create aws vpc"
+    },
+    {
+      "start": 5.04,
+      "duration": 4.559,
+      "text": "in terraform so vpc is one of the most"
+    },
+    {
+      "start": 7.359,
+      "duration": 4.481,
+      "text": "important service in aws and you need to"
+    },
+    {
+      "start": 9.599,
+      "duration": 3.681,
+      "text": "know how to create it in terraform but"
+    },
+    {
+      "start": 11.84,
+      "duration": 3.04,
+      "text": "before we actually know how to create it"
+    },
+    {
+      "start": 13.28,
+      "duration": 2.96,
+      "text": "in terraform we need to have the good"
+    },
+    {
+      "start": 14.88,
+      "duration": 3.76,
+      "text": "understanding of how it is done in the"
+    },
+    {
+      "start": 16.24,
+      "duration": 4.56,
+      "text": "console so right now in my aws console"
+    },
+    {
+      "start": 18.64,
+      "duration": 5.2,
+      "text": "and if i click on create vpc option you"
+    },
+    {
+      "start": 20.8,
+      "duration": 5.84,
+      "text": "can see i have the option to create a"
+    },
+    {
+      "start": 23.84,
+      "duration": 4.72,
+      "text": "vpc along with subnet so either public"
+    },
+    {
+      "start": 26.64,
+      "duration": 4.32,
+      "text": "or private and then you also need to"
+    },
+    {
+      "start": 28.56,
+      "duration": 4.96,
+      "text": "create a route table which can be used"
+    },
+    {
+      "start": 30.96,
+      "duration": 5.279,
+      "text": "to attach a subnet with that either"
+    },
+    {
+      "start": 33.52,
+      "duration": 3.92,
+      "text": "internet gateway or nad gateway so in"
+    },
+    {
+      "start": 36.239,
+      "duration": 3.761,
+      "text": "this video we're going to learn how to"
+    },
+    {
+      "start": 37.44,
+      "duration": 5.279,
+      "text": "create vpc one public subnet one private"
+    },
+    {
+      "start": 40.0,
+      "duration": 4.32,
+      "text": "subnet and internet gateway and how to"
+    },
+    {
+      "start": 42.719,
+      "duration": 3.84,
+      "text": "create a route table and associate it"
+    },
+    {
+      "start": 44.32,
+      "duration": 3.84,
+      "text": "with the subnet so diagram would look"
+    },
+    {
+      "start": 46.559,
+      "duration": 3.52,
+      "text": "something like this where we will be"
+    },
+    {
+      "start": 48.16,
+      "duration": 4.399,
+      "text": "having this vpc with this side of block"
+    },
+    {
+      "start": 50.079,
+      "duration": 4.881,
+      "text": "a public subnet private subnet internet"
+    },
+    {
+      "start": 52.559,
+      "duration": 5.201,
+      "text": "gateway and route table everything in"
+    },
+    {
+      "start": 54.96,
+      "duration": 5.2,
+      "text": "one terraform code so let's get started"
+    },
+    {
+      "start": 57.76,
+      "duration": 4.16,
+      "text": "so in this video i have made it in steps"
+    },
+    {
+      "start": 60.16,
+      "duration": 3.44,
+      "text": "where there are different steps for all"
+    },
+    {
+      "start": 61.92,
+      "duration": 3.44,
+      "text": "the uh"
+    },
+    {
+      "start": 63.6,
+      "duration": 3.92,
+      "text": "components where first step is to create"
+    },
+    {
+      "start": 65.36,
+      "duration": 4.16,
+      "text": "vpc then public subnet private subnet"
+    },
+    {
+      "start": 67.52,
+      "duration": 4.8,
+      "text": "internet gateway so let's get started"
+    },
+    {
+      "start": 69.52,
+      "duration": 6.4,
+      "text": "resource for the aws vpc is going to be"
+    },
+    {
+      "start": 72.32,
+      "duration": 4.4,
+      "text": "aws underscore vpc and let's name this"
+    },
+    {
+      "start": 75.92,
+      "duration": 4.32,
+      "text": "as"
+    },
+    {
+      "start": 76.72,
+      "duration": 5.2,
+      "text": "my vpc i'm going to name this my vpc so"
+    },
+    {
+      "start": 80.24,
+      "duration": 4.32,
+      "text": "whenever you create a vpc you need to"
+    },
+    {
+      "start": 81.92,
+      "duration": 7.32,
+      "text": "pass in the cider block"
+    },
+    {
+      "start": 84.56,
+      "duration": 4.68,
+      "text": "cytoblock is going to be 10.0.0.0.16"
+    },
+    {
+      "start": 92.64,
+      "duration": 3.6,
+      "text": "and i'm also going to add tags here tags"
+    },
+    {
+      "start": 94.96,
+      "duration": 3.44,
+      "text": "just to name"
+    },
+    {
+      "start": 96.24,
+      "duration": 4.0,
+      "text": "my vpc i'm going to"
+    },
+    {
+      "start": 98.4,
+      "duration": 5.039,
+      "text": "tag is what you see on the console i'm"
+    },
+    {
+      "start": 100.24,
+      "duration": 3.199,
+      "text": "going to name it as"
+    },
+    {
+      "start": 103.68,
+      "duration": 4.16,
+      "text": "my terraform"
+    },
+    {
+      "start": 106.24,
+      "duration": 3.28,
+      "text": "vpc"
+    },
+    {
+      "start": 107.84,
+      "duration": 4.48,
+      "text": "all right so this will create a vpc"
+    },
+    {
+      "start": 109.52,
+      "duration": 4.959,
+      "text": "let's go ahead and create a subnet so to"
+    },
+    {
+      "start": 112.32,
+      "duration": 4.96,
+      "text": "create a resource as subnet we have to"
+    },
+    {
+      "start": 114.479,
+      "duration": 4.721,
+      "text": "pass the name as aws underscore subnet"
+    },
+    {
+      "start": 117.28,
+      "duration": 4.32,
+      "text": "and i'm going to name it as"
+    },
+    {
+      "start": 119.2,
+      "duration": 2.4,
+      "text": "public"
+    },
+    {
+      "start": 122.159,
+      "duration": 4.0,
+      "text": "submit"
+    },
+    {
+      "start": 124.159,
+      "duration": 3.521,
+      "text": "and here i have to pass in in which vpc"
+    },
+    {
+      "start": 126.159,
+      "duration": 3.761,
+      "text": "do i want to create this subnet so i"
+    },
+    {
+      "start": 127.68,
+      "duration": 4.24,
+      "text": "have to pass in the vpc id"
+    },
+    {
+      "start": 129.92,
+      "duration": 5.12,
+      "text": "and if i show you that in the console as"
+    },
+    {
+      "start": 131.92,
+      "duration": 4.48,
+      "text": "well if i go here and go back to my vpcs"
+    },
+    {
+      "start": 135.04,
+      "duration": 3.36,
+      "text": "let's say i want to create a subnet in"
+    },
+    {
+      "start": 136.4,
+      "duration": 3.919,
+      "text": "one of the vpc i have to click on create"
+    },
+    {
+      "start": 138.4,
+      "duration": 4.0,
+      "text": "submit option and here i have to pass in"
+    },
+    {
+      "start": 140.319,
+      "duration": 4.401,
+      "text": "the vpc id similarly you have to do that"
+    },
+    {
+      "start": 142.4,
+      "duration": 4.16,
+      "text": "in the terraform code as well so vpc id"
+    },
+    {
+      "start": 144.72,
+      "duration": 4.76,
+      "text": "it is going to be the vpc in which you"
+    },
+    {
+      "start": 146.56,
+      "duration": 6.36,
+      "text": "want to create this subnet so aws"
+    },
+    {
+      "start": 149.48,
+      "duration": 7.92,
+      "text": "vpc.myvpc which is here"
+    },
+    {
+      "start": 152.92,
+      "duration": 4.48,
+      "text": "awsvpc.myvpc.id so myvpc.id"
+    },
+    {
+      "start": 157.76,
+      "duration": 3.119,
+      "text": "then i have to pass in the cider block"
+    },
+    {
+      "start": 159.44,
+      "duration": 3.12,
+      "text": "for this"
+    },
+    {
+      "start": 160.879,
+      "duration": 3.281,
+      "text": "subnet so we are going to choose the"
+    },
+    {
+      "start": 162.56,
+      "duration": 4.6,
+      "text": "sider block which is going to be"
+    },
+    {
+      "start": 164.16,
+      "duration": 3.0,
+      "text": "10.0.1.0.24"
+    },
+    {
+      "start": 167.519,
+      "duration": 4.601,
+      "text": "so cytoblock is going to be 10.0.1.0"
+    },
+    {
+      "start": 172.48,
+      "duration": 3.6,
+      "text": "24. this can be anything you can change"
+    },
+    {
+      "start": 174.16,
+      "duration": 4.159,
+      "text": "your cycleblock according to your own"
+    },
+    {
+      "start": 176.08,
+      "duration": 3.76,
+      "text": "preference but i'm going to keep it as"
+    },
+    {
+      "start": 178.319,
+      "duration": 3.601,
+      "text": "10.01.0"
+    },
+    {
+      "start": 179.84,
+      "duration": 4.0,
+      "text": "24. similarly now i have to create a"
+    },
+    {
+      "start": 181.92,
+      "duration": 5.12,
+      "text": "private subnet so i can copy this same"
+    },
+    {
+      "start": 183.84,
+      "duration": 5.52,
+      "text": "configuration here and paste it in my"
+    },
+    {
+      "start": 187.04,
+      "duration": 4.0,
+      "text": "private subnet just make a change here"
+    },
+    {
+      "start": 189.36,
+      "duration": 4.959,
+      "text": "make a change in the name"
+    },
+    {
+      "start": 191.04,
+      "duration": 5.199,
+      "text": "which is going to be private subnet"
+    },
+    {
+      "start": 194.319,
+      "duration": 3.521,
+      "text": "and also make sure it make a change in"
+    },
+    {
+      "start": 196.239,
+      "duration": 3.121,
+      "text": "the cider block as well because if you"
+    },
+    {
+      "start": 197.84,
+      "duration": 3.64,
+      "text": "use the same you're gonna you're going"
+    },
+    {
+      "start": 199.36,
+      "duration": 4.4,
+      "text": "to get the error so i'm going to make it"
+    },
+    {
+      "start": 201.48,
+      "duration": 4.839,
+      "text": "10.0.2.0 which is similar to what i want"
+    },
+    {
+      "start": 203.76,
+      "duration": 5.36,
+      "text": "in my diagram as well right now we have"
+    },
+    {
+      "start": 206.319,
+      "duration": 4.401,
+      "text": "one vpc one subnet public one and one"
+    },
+    {
+      "start": 209.12,
+      "duration": 3.759,
+      "text": "private subnet i'm going to create an"
+    },
+    {
+      "start": 210.72,
+      "duration": 4.48,
+      "text": "internet gateway so internet gateway is"
+    },
+    {
+      "start": 212.879,
+      "duration": 4.481,
+      "text": "necessary for you to have an internet"
+    },
+    {
+      "start": 215.2,
+      "duration": 3.2,
+      "text": "connection to a public subnet so i'm"
+    },
+    {
+      "start": 217.36,
+      "duration": 2.72,
+      "text": "going to create an internet gateway"
+    },
+    {
+      "start": 218.4,
+      "duration": 3.44,
+      "text": "which will be later attached to the"
+    },
+    {
+      "start": 220.08,
+      "duration": 2.96,
+      "text": "public subnet so to create an internet"
+    },
+    {
+      "start": 221.84,
+      "duration": 3.92,
+      "text": "gateway the name of the resource is"
+    },
+    {
+      "start": 223.04,
+      "duration": 3.839,
+      "text": "going to be aws underscore internet"
+    },
+    {
+      "start": 225.76,
+      "duration": 2.399,
+      "text": "underscore"
+    },
+    {
+      "start": 226.879,
+      "duration": 2.72,
+      "text": "gateway"
+    },
+    {
+      "start": 228.159,
+      "duration": 2.16,
+      "text": "and i'm going to name it"
+    },
+    {
+      "start": 229.599,
+      "duration": 3.28,
+      "text": "as"
+    },
+    {
+      "start": 230.319,
+      "duration": 3.84,
+      "text": "igw"
+    },
+    {
+      "start": 232.879,
+      "duration": 3.121,
+      "text": "right in the"
+    },
+    {
+      "start": 234.159,
+      "duration": 3.201,
+      "text": "in the curly brackets you have to pass"
+    },
+    {
+      "start": 236.0,
+      "duration": 2.959,
+      "text": "in the argument which is first going to"
+    },
+    {
+      "start": 237.36,
+      "duration": 3.519,
+      "text": "be the vpc id which means in which"
+    },
+    {
+      "start": 238.959,
+      "duration": 3.441,
+      "text": "subnet do you want to create this in"
+    },
+    {
+      "start": 240.879,
+      "duration": 3.041,
+      "text": "which vpc do you want to create this"
+    },
+    {
+      "start": 242.4,
+      "duration": 3.919,
+      "text": "intermediate way so i'm going to copy"
+    },
+    {
+      "start": 243.92,
+      "duration": 4.72,
+      "text": "the same vpc id so if you want you can"
+    },
+    {
+      "start": 246.319,
+      "duration": 3.28,
+      "text": "copy it this way like copying the whole"
+    },
+    {
+      "start": 248.64,
+      "duration": 4.239,
+      "text": "thing"
+    },
+    {
+      "start": 249.599,
+      "duration": 5.2,
+      "text": "and then paste it here"
+    },
+    {
+      "start": 252.879,
+      "duration": 3.441,
+      "text": "make sure you remove the quotation marks"
+    },
+    {
+      "start": 254.799,
+      "duration": 3.521,
+      "text": "because this is you don't need a"
+    },
+    {
+      "start": 256.32,
+      "duration": 4.56,
+      "text": "quotation mark here put a dot in between"
+    },
+    {
+      "start": 258.32,
+      "duration": 5.52,
+      "text": "so aws vpc.myvpc"
+    },
+    {
+      "start": 260.88,
+      "duration": 5.44,
+      "text": "and lastly dot id because that's what we"
+    },
+    {
+      "start": 263.84,
+      "duration": 3.919,
+      "text": "want vpc id this will tell the terraform"
+    },
+    {
+      "start": 266.32,
+      "duration": 4.72,
+      "text": "that i want the internet gateway in this"
+    },
+    {
+      "start": 267.759,
+      "duration": 4.88,
+      "text": "vpc id which is created here"
+    },
+    {
+      "start": 271.04,
+      "duration": 3.2,
+      "text": "next thing is to create a route table so"
+    },
+    {
+      "start": 272.639,
+      "duration": 4.0,
+      "text": "i'm going to create route table route"
+    },
+    {
+      "start": 274.24,
+      "duration": 4.0,
+      "text": "table is used to"
+    },
+    {
+      "start": 276.639,
+      "duration": 3.921,
+      "text": "provide the routes for example if i show"
+    },
+    {
+      "start": 278.24,
+      "duration": 4.399,
+      "text": "you that in the console right now i have"
+    },
+    {
+      "start": 280.56,
+      "duration": 3.919,
+      "text": "a default route table i'm going to go in"
+    },
+    {
+      "start": 282.639,
+      "duration": 4.161,
+      "text": "the route table section here and let me"
+    },
+    {
+      "start": 284.479,
+      "duration": 3.361,
+      "text": "show you this route table so whenever"
+    },
+    {
+      "start": 286.8,
+      "duration": 3.2,
+      "text": "you create route table you have to"
+    },
+    {
+      "start": 287.84,
+      "duration": 4.079,
+      "text": "define a route which is then attached to"
+    },
+    {
+      "start": 290.0,
+      "duration": 3.52,
+      "text": "the internet gateway"
+    },
+    {
+      "start": 291.919,
+      "duration": 2.961,
+      "text": "right so we're going to do the same"
+    },
+    {
+      "start": 293.52,
+      "duration": 3.76,
+      "text": "thing we're going to create a route"
+    },
+    {
+      "start": 294.88,
+      "duration": 4.16,
+      "text": "table the name of the route table is aws"
+    },
+    {
+      "start": 297.28,
+      "duration": 4.32,
+      "text": "route underscore table"
+    },
+    {
+      "start": 299.04,
+      "duration": 4.719,
+      "text": "and name it as public"
+    },
+    {
+      "start": 301.6,
+      "duration": 3.2,
+      "text": "rt or public route table something like"
+    },
+    {
+      "start": 303.759,
+      "duration": 2.561,
+      "text": "that"
+    },
+    {
+      "start": 304.8,
+      "duration": 3.04,
+      "text": "next we have to pass in the argument"
+    },
+    {
+      "start": 306.32,
+      "duration": 3.12,
+      "text": "which is obviously going to be vpid in"
+    },
+    {
+      "start": 307.84,
+      "duration": 3.359,
+      "text": "which vpc do you want to create this"
+    },
+    {
+      "start": 309.44,
+      "duration": 3.199,
+      "text": "route table so i want this to be created"
+    },
+    {
+      "start": 311.199,
+      "duration": 3.361,
+      "text": "in aws"
+    },
+    {
+      "start": 312.639,
+      "duration": 4.641,
+      "text": "underscore vpc"
+    },
+    {
+      "start": 314.56,
+      "duration": 4.88,
+      "text": "dot my vpc"
+    },
+    {
+      "start": 317.28,
+      "duration": 5.12,
+      "text": "dot id"
+    },
+    {
+      "start": 319.44,
+      "duration": 7.36,
+      "text": "and then you have to pass in the routes"
+    },
+    {
+      "start": 322.4,
+      "duration": 4.4,
+      "text": "so route is going to be cite a block"
+    },
+    {
+      "start": 328.8,
+      "duration": 2.56,
+      "text": "equals to"
+    },
+    {
+      "start": 332.84,
+      "duration": 5.799,
+      "text": "0.0.0.0 which means every ip should be"
+    },
+    {
+      "start": 336.24,
+      "duration": 4.16,
+      "text": "connected to which gateway it should be"
+    },
+    {
+      "start": 338.639,
+      "duration": 3.201,
+      "text": "connected to the internet that i created"
+    },
+    {
+      "start": 340.4,
+      "duration": 3.28,
+      "text": "right now so i'm you have to pass in the"
+    },
+    {
+      "start": 341.84,
+      "duration": 2.56,
+      "text": "gateway id and the gateway is going to"
+    },
+    {
+      "start": 343.68,
+      "duration": 2.239,
+      "text": "be"
+    },
+    {
+      "start": 344.4,
+      "duration": 5.76,
+      "text": "internet gateways i'm going to copy this"
+    },
+    {
+      "start": 345.919,
+      "duration": 8.961,
+      "text": "again aws internet gateway dot igw dot"
+    },
+    {
+      "start": 350.16,
+      "duration": 6.08,
+      "text": "id so igw put a dot in between"
+    },
+    {
+      "start": 354.88,
+      "duration": 2.72,
+      "text": "and dot"
+    },
+    {
+      "start": 356.24,
+      "duration": 2.959,
+      "text": "id"
+    },
+    {
+      "start": 357.6,
+      "duration": 3.92,
+      "text": "so this is going to create a route to"
+    },
+    {
+      "start": 359.199,
+      "duration": 4.0,
+      "text": "map all the ips to this internet gateway"
+    },
+    {
+      "start": 361.52,
+      "duration": 3.6,
+      "text": "id"
+    },
+    {
+      "start": 363.199,
+      "duration": 4.161,
+      "text": "and then lastly you have to create"
+    },
+    {
+      "start": 365.12,
+      "duration": 4.56,
+      "text": "association route table association to"
+    },
+    {
+      "start": 367.36,
+      "duration": 4.8,
+      "text": "map this route table to the public"
+    },
+    {
+      "start": 369.68,
+      "duration": 4.239,
+      "text": "subnet that you created so the we have"
+    },
+    {
+      "start": 372.16,
+      "duration": 3.92,
+      "text": "to pass this route table association"
+    },
+    {
+      "start": 373.919,
+      "duration": 4.56,
+      "text": "resource is going to be route aws"
+    },
+    {
+      "start": 376.08,
+      "duration": 5.28,
+      "text": "underscore route table"
+    },
+    {
+      "start": 378.479,
+      "duration": 5.681,
+      "text": "underscore association"
+    },
+    {
+      "start": 381.36,
+      "duration": 3.839,
+      "text": "and i'm going to name it as public"
+    },
+    {
+      "start": 384.16,
+      "duration": 3.92,
+      "text": "rt"
+    },
+    {
+      "start": 385.199,
+      "duration": 2.881,
+      "text": "association"
+    },
+    {
+      "start": 388.8,
+      "duration": 2.56,
+      "text": "all right in this you have to pass in"
+    },
+    {
+      "start": 390.0,
+      "duration": 2.88,
+      "text": "two arguments one is going to be which"
+    },
+    {
+      "start": 391.36,
+      "duration": 3.44,
+      "text": "route table and one is going to be with"
+    },
+    {
+      "start": 392.88,
+      "duration": 4.56,
+      "text": "subnet so i'm going to pass in this"
+    },
+    {
+      "start": 394.8,
+      "duration": 4.239,
+      "text": "subnet id first subnet underscore id"
+    },
+    {
+      "start": 397.44,
+      "duration": 4.56,
+      "text": "which is going to be the subnet id of my"
+    },
+    {
+      "start": 399.039,
+      "duration": 5.121,
+      "text": "public subnet so submit id of my public"
+    },
+    {
+      "start": 402.0,
+      "duration": 3.12,
+      "text": "subnet so i'm going to copy this"
+    },
+    {
+      "start": 404.16,
+      "duration": 4.56,
+      "text": "and"
+    },
+    {
+      "start": 405.12,
+      "duration": 5.919,
+      "text": "paste it in my submit id column subnet"
+    },
+    {
+      "start": 408.72,
+      "duration": 5.36,
+      "text": "id is going to be aws subnet dot public"
+    },
+    {
+      "start": 411.039,
+      "duration": 4.56,
+      "text": "subnet dot id"
+    },
+    {
+      "start": 414.08,
+      "duration": 4.08,
+      "text": "all right next thing i need to pass is"
+    },
+    {
+      "start": 415.599,
+      "duration": 4.72,
+      "text": "going to be the route table id"
+    },
+    {
+      "start": 418.16,
+      "duration": 3.52,
+      "text": "so route"
+    },
+    {
+      "start": 420.319,
+      "duration": 3.681,
+      "text": "underscore table"
+    },
+    {
+      "start": 421.68,
+      "duration": 4.0,
+      "text": "underscore id is going to be"
+    },
+    {
+      "start": 424.0,
+      "duration": 3.84,
+      "text": "this id of this route table that we"
+    },
+    {
+      "start": 425.68,
+      "duration": 5.28,
+      "text": "created right now so aws route table dot"
+    },
+    {
+      "start": 427.84,
+      "duration": 5.759,
+      "text": "public rt dot the id so paste it put it"
+    },
+    {
+      "start": 430.96,
+      "duration": 2.639,
+      "text": "on in between"
+    },
+    {
+      "start": 434.4,
+      "duration": 7.04,
+      "text": "and dot"
+    },
+    {
+      "start": 436.56,
+      "duration": 7.28,
+      "text": "id so this should now create your vpc"
+    },
+    {
+      "start": 441.44,
+      "duration": 4.319,
+      "text": "your subnet public subnet private subnet"
+    },
+    {
+      "start": 443.84,
+      "duration": 3.359,
+      "text": "internet gateway route table and then"
+    },
+    {
+      "start": 445.759,
+      "duration": 3.84,
+      "text": "associate that route table with the"
+    },
+    {
+      "start": 447.199,
+      "duration": 4.641,
+      "text": "public subnet so let's go and test this"
+    },
+    {
+      "start": 449.599,
+      "duration": 4.0,
+      "text": "out i'm going to open my terminal and"
+    },
+    {
+      "start": 451.84,
+      "duration": 2.88,
+      "text": "run the first command that you need to"
+    },
+    {
+      "start": 453.599,
+      "duration": 2.88,
+      "text": "run all the time you're working with"
+    },
+    {
+      "start": 454.72,
+      "duration": 3.36,
+      "text": "terraform that's going to be in it so"
+    },
+    {
+      "start": 456.479,
+      "duration": 3.521,
+      "text": "when i once read this command is going"
+    },
+    {
+      "start": 458.08,
+      "duration": 3.519,
+      "text": "to initialize the back end which means"
+    },
+    {
+      "start": 460.0,
+      "duration": 4.16,
+      "text": "it is going to download the provider"
+    },
+    {
+      "start": 461.599,
+      "duration": 4.0,
+      "text": "mentioned here which is aws in our case"
+    },
+    {
+      "start": 464.16,
+      "duration": 3.12,
+      "text": "and it is going to initialize and"
+    },
+    {
+      "start": 465.599,
+      "duration": 4.16,
+      "text": "download all the things necessary for us"
+    },
+    {
+      "start": 467.28,
+      "duration": 4.16,
+      "text": "to work with aws let's wait for it to"
+    },
+    {
+      "start": 469.759,
+      "duration": 3.201,
+      "text": "complete wait for it to complete once it"
+    },
+    {
+      "start": 471.44,
+      "duration": 2.72,
+      "text": "is completed we can then start working"
+    },
+    {
+      "start": 472.96,
+      "duration": 2.639,
+      "text": "with tarafa"
+    },
+    {
+      "start": 474.16,
+      "duration": 3.52,
+      "text": "so this is the first step that you want"
+    },
+    {
+      "start": 475.599,
+      "duration": 4.801,
+      "text": "to do and this is going to create a file"
+    },
+    {
+      "start": 477.68,
+      "duration": 4.16,
+      "text": "here so let's wait"
+    },
+    {
+      "start": 480.4,
+      "duration": 3.68,
+      "text": "before i do that let's show you that i"
+    },
+    {
+      "start": 481.84,
+      "duration": 4.4,
+      "text": "don't have any vpc with this side range"
+    },
+    {
+      "start": 484.08,
+      "duration": 5.519,
+      "text": "in my account so i'm going to go into my"
+    },
+    {
+      "start": 486.24,
+      "duration": 5.04,
+      "text": "your vpc section and"
+    },
+    {
+      "start": 489.599,
+      "duration": 3.28,
+      "text": "right now i have three vpcs but all of"
+    },
+    {
+      "start": 491.28,
+      "duration": 5.039,
+      "text": "them i have different side of range no"
+    },
+    {
+      "start": 492.879,
+      "duration": 6.32,
+      "text": "one with the 10.0.0 16 or no one with"
+    },
+    {
+      "start": 496.319,
+      "duration": 5.121,
+      "text": "the name as my terraform vpc so we are"
+    },
+    {
+      "start": 499.199,
+      "duration": 4.961,
+      "text": "going to apply this and we will see the"
+    },
+    {
+      "start": 501.44,
+      "duration": 4.24,
+      "text": "dvpc in the console having all of the"
+    },
+    {
+      "start": 504.16,
+      "duration": 3.2,
+      "text": "things mentioned as subnet and"
+    },
+    {
+      "start": 505.68,
+      "duration": 2.959,
+      "text": "everything so you can see now it says"
+    },
+    {
+      "start": 507.36,
+      "duration": 3.279,
+      "text": "terraform has been successfully"
+    },
+    {
+      "start": 508.639,
+      "duration": 4.001,
+      "text": "initialized and you will now begin"
+    },
+    {
+      "start": 510.639,
+      "duration": 2.801,
+      "text": "working with terraform so next command"
+    },
+    {
+      "start": 512.64,
+      "duration": 2.399,
+      "text": "i'm going to run is going to be"
+    },
+    {
+      "start": 513.44,
+      "duration": 3.039,
+      "text": "terraform one day to check if everything"
+    },
+    {
+      "start": 515.039,
+      "duration": 2.641,
+      "text": "is correct or not all the syntax is"
+    },
+    {
+      "start": 516.479,
+      "duration": 2.8,
+      "text": "correct or not"
+    },
+    {
+      "start": 517.68,
+      "duration": 2.88,
+      "text": "so yeah i get these success"
+    },
+    {
+      "start": 519.279,
+      "duration": 2.88,
+      "text": "configuration is valid which means"
+    },
+    {
+      "start": 520.56,
+      "duration": 3.44,
+      "text": "everything is correct let's run"
+    },
+    {
+      "start": 522.159,
+      "duration": 3.601,
+      "text": "terraform plan to see what is actually"
+    },
+    {
+      "start": 524.0,
+      "duration": 3.279,
+      "text": "going to be created and if you're sure"
+    },
+    {
+      "start": 525.76,
+      "duration": 3.36,
+      "text": "then we can go ahead and run the"
+    },
+    {
+      "start": 527.279,
+      "duration": 3.601,
+      "text": "terraform apply command"
+    },
+    {
+      "start": 529.12,
+      "duration": 3.719,
+      "text": "so terraform plan is going to it should"
+    },
+    {
+      "start": 530.88,
+      "duration": 4.72,
+      "text": "has shown us that it is going to create"
+    },
+    {
+      "start": 532.839,
+      "duration": 5.321,
+      "text": "six resources so first is going to be"
+    },
+    {
+      "start": 535.6,
+      "duration": 4.48,
+      "text": "vpc which is going to be my vpc having"
+    },
+    {
+      "start": 538.16,
+      "duration": 3.679,
+      "text": "this side of range and then it is going"
+    },
+    {
+      "start": 540.08,
+      "duration": 4.48,
+      "text": "to create the public subnet"
+    },
+    {
+      "start": 541.839,
+      "duration": 4.481,
+      "text": "private subnet route table"
+    },
+    {
+      "start": 544.56,
+      "duration": 3.279,
+      "text": "then route table as well so this is"
+    },
+    {
+      "start": 546.32,
+      "duration": 3.44,
+      "text": "routable association and this is a route"
+    },
+    {
+      "start": 547.839,
+      "duration": 3.841,
+      "text": "table then you have you'll also create"
+    },
+    {
+      "start": 549.76,
+      "duration": 4.079,
+      "text": "the internet gateway that is what we"
+    },
+    {
+      "start": 551.68,
+      "duration": 4.8,
+      "text": "want so let's go and run the apply"
+    },
+    {
+      "start": 553.839,
+      "duration": 5.44,
+      "text": "command so terraform apply hyphen auto"
+    },
+    {
+      "start": 556.48,
+      "duration": 2.799,
+      "text": "hyphen approve"
+    },
+    {
+      "start": 560.32,
+      "duration": 3.199,
+      "text": "so once i run this command it's going to"
+    },
+    {
+      "start": 561.68,
+      "duration": 2.719,
+      "text": "start creating the resources in my in my"
+    },
+    {
+      "start": 563.519,
+      "duration": 3.121,
+      "text": "account"
+    },
+    {
+      "start": 564.399,
+      "duration": 3.921,
+      "text": "so you can see it will now start"
+    },
+    {
+      "start": 566.64,
+      "duration": 4.48,
+      "text": "creating the resource"
+    },
+    {
+      "start": 568.32,
+      "duration": 4.959,
+      "text": "so aws my vpc dot my vpc creating and if"
+    },
+    {
+      "start": 571.12,
+      "duration": 4.48,
+      "text": "i refresh the page here"
+    },
+    {
+      "start": 573.279,
+      "duration": 4.0,
+      "text": "you should see the vpc now which has"
+    },
+    {
+      "start": 575.6,
+      "duration": 3.2,
+      "text": "been completed after three seconds just"
+    },
+    {
+      "start": 577.279,
+      "duration": 3.601,
+      "text": "three seconds you can see my vpc is"
+    },
+    {
+      "start": 578.8,
+      "duration": 5.2,
+      "text": "created which is having this side range"
+    },
+    {
+      "start": 580.88,
+      "duration": 4.639,
+      "text": "so let me just uh select that so that we"
+    },
+    {
+      "start": 584.0,
+      "duration": 3.839,
+      "text": "can see all the different submits as"
+    },
+    {
+      "start": 585.519,
+      "duration": 3.521,
+      "text": "well so subnet two submits are created"
+    },
+    {
+      "start": 587.839,
+      "duration": 3.601,
+      "text": "which is"
+    },
+    {
+      "start": 589.04,
+      "duration": 4.4,
+      "text": "public and private so two subnets"
+    },
+    {
+      "start": 591.44,
+      "duration": 4.24,
+      "text": "created then we should also have route"
+    },
+    {
+      "start": 593.44,
+      "duration": 4.72,
+      "text": "table created so route table also"
+    },
+    {
+      "start": 595.68,
+      "duration": 5.56,
+      "text": "present so if i show you the id of route"
+    },
+    {
+      "start": 598.16,
+      "duration": 6.799,
+      "text": "table route table here has an id of"
+    },
+    {
+      "start": 601.24,
+      "duration": 5.32,
+      "text": "rtb05551 so rtb rtb05551"
+    },
+    {
+      "start": 604.959,
+      "duration": 3.44,
+      "text": "then i also it should also have an"
+    },
+    {
+      "start": 606.56,
+      "duration": 4.56,
+      "text": "internet gateway so you can see internet"
+    },
+    {
+      "start": 608.399,
+      "duration": 4.961,
+      "text": "gateway is also there which is attached"
+    },
+    {
+      "start": 611.12,
+      "duration": 5.76,
+      "text": "this is how you create an"
+    },
+    {
+      "start": 613.36,
+      "duration": 5.2,
+      "text": "aws vpc in terraform"
+    },
+    {
+      "start": 616.88,
+      "duration": 3.28,
+      "text": "if you want me to create an ad gateway"
+    },
+    {
+      "start": 618.56,
+      "duration": 2.719,
+      "text": "and attach it to the private subnet"
+    },
+    {
+      "start": 620.16,
+      "duration": 2.64,
+      "text": "please let me know in the comment"
+    },
+    {
+      "start": 621.279,
+      "duration": 3.68,
+      "text": "section if you found this video"
+    },
+    {
+      "start": 622.8,
+      "duration": 4.24,
+      "text": "informative please like this video"
+    },
+    {
+      "start": 624.959,
+      "duration": 5.32,
+      "text": "subscribe to this channel and have a"
+    },
+    {
+      "start": 627.04,
+      "duration": 3.239,
+      "text": "good day"
+    }
+  ]
+}

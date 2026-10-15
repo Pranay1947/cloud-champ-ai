@@ -1,0 +1,626 @@
+{
+  "video": {
+    "id": "WguJCFc5oyc",
+    "title": "Every Kubernetes Object Explained in Just 5 minutes!",
+    "url": "https://www.youtube.com/watch?v=WguJCFc5oyc",
+    "duration": 255,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.4,
+      "duration": 3.919,
+      "text": "Every Kubernetes cluster consists of so"
+    },
+    {
+      "start": 2.48,
+      "duration": 3.68,
+      "text": "many different objects and it is super"
+    },
+    {
+      "start": 4.319,
+      "duration": 3.52,
+      "text": "important for you to understand them. So"
+    },
+    {
+      "start": 6.16,
+      "duration": 3.439,
+      "text": "in this video I'm going to explain you"
+    },
+    {
+      "start": 7.839,
+      "duration": 3.361,
+      "text": "every cubernetes object. So make sure"
+    },
+    {
+      "start": 9.599,
+      "duration": 4.321,
+      "text": "you watch this video till the end. Let's"
+    },
+    {
+      "start": 11.2,
+      "duration": 4.8,
+      "text": "go. Starting with pod. The smallest and"
+    },
+    {
+      "start": 13.92,
+      "duration": 4.48,
+      "text": "the most basic object is a pod which"
+    },
+    {
+      "start": 16.0,
+      "duration": 4.24,
+      "text": "runs one or more containers. Containers"
+    },
+    {
+      "start": 18.4,
+      "duration": 4.24,
+      "text": "inside a pod share the same network and"
+    },
+    {
+      "start": 20.24,
+      "duration": 4.72,
+      "text": "storage. Pods are temporary which means"
+    },
+    {
+      "start": 22.64,
+      "duration": 4.719,
+      "text": "if it fails it might get restarted or"
+    },
+    {
+      "start": 24.96,
+      "duration": 4.159,
+      "text": "replaced losing all the pod data. And"
+    },
+    {
+      "start": 27.359,
+      "duration": 4.08,
+      "text": "that's why you normally don't use pods"
+    },
+    {
+      "start": 29.119,
+      "duration": 4.001,
+      "text": "by themselves in production. To run pods"
+    },
+    {
+      "start": 31.439,
+      "duration": 3.601,
+      "text": "more reliably, Kubernetes has"
+    },
+    {
+      "start": 33.12,
+      "duration": 3.92,
+      "text": "controllers. A deployment is the most"
+    },
+    {
+      "start": 35.04,
+      "duration": 3.359,
+      "text": "common controller. Deployment makes sure"
+    },
+    {
+      "start": 37.04,
+      "duration": 3.44,
+      "text": "that the right number of pods are"
+    },
+    {
+      "start": 38.399,
+      "duration": 4.081,
+      "text": "running, supports scaling up and down,"
+    },
+    {
+      "start": 40.48,
+      "duration": 4.079,
+      "text": "and also allows rolling updates and roll"
+    },
+    {
+      "start": 42.48,
+      "duration": 4.399,
+      "text": "backs. Underneath a deployment is a"
+    },
+    {
+      "start": 44.559,
+      "duration": 4.32,
+      "text": "replica set. A replica set maintains a"
+    },
+    {
+      "start": 46.879,
+      "duration": 3.84,
+      "text": "specified number of pod replicas by"
+    },
+    {
+      "start": 48.879,
+      "duration": 4.401,
+      "text": "automatically creating or deleting the"
+    },
+    {
+      "start": 50.719,
+      "duration": 4.881,
+      "text": "pods as needed. For application that"
+    },
+    {
+      "start": 53.28,
+      "duration": 4.799,
+      "text": "needs stable storage or identity like"
+    },
+    {
+      "start": 55.6,
+      "duration": 4.639,
+      "text": "databases, you can use stateful set."
+    },
+    {
+      "start": 58.079,
+      "duration": 4.241,
+      "text": "Stateful sets provide stable network"
+    },
+    {
+      "start": 60.239,
+      "duration": 3.681,
+      "text": "identities, persistent storage and order"
+    },
+    {
+      "start": 62.32,
+      "duration": 4.32,
+      "text": "deployments which is critical for"
+    },
+    {
+      "start": 63.92,
+      "duration": 4.559,
+      "text": "databases or message cues. For tasks"
+    },
+    {
+      "start": 66.64,
+      "duration": 3.6,
+      "text": "that need to run on every node, such as"
+    },
+    {
+      "start": 68.479,
+      "duration": 4.241,
+      "text": "log collection or monitoring agents,"
+    },
+    {
+      "start": 70.24,
+      "duration": 4.879,
+      "text": "there's demon set. Demon sets ensure"
+    },
+    {
+      "start": 72.72,
+      "duration": 4.24,
+      "text": "that specific pods run on every node or"
+    },
+    {
+      "start": 75.119,
+      "duration": 3.761,
+      "text": "selected nodes. If you need to run"
+    },
+    {
+      "start": 76.96,
+      "duration": 4.32,
+      "text": "something once and then stop, you can"
+    },
+    {
+      "start": 78.88,
+      "duration": 4.64,
+      "text": "use a job. Jobs in Kubernetes are used"
+    },
+    {
+      "start": 81.28,
+      "duration": 4.159,
+      "text": "to run pods that perform finite task and"
+    },
+    {
+      "start": 83.52,
+      "duration": 3.76,
+      "text": "terminate when completed. And if you"
+    },
+    {
+      "start": 85.439,
+      "duration": 4.0,
+      "text": "want to run a job on a schedule like"
+    },
+    {
+      "start": 87.28,
+      "duration": 4.4,
+      "text": "chron job in Linux, you can use a chron"
+    },
+    {
+      "start": 89.439,
+      "duration": 4.561,
+      "text": "job object. Now configuration is managed"
+    },
+    {
+      "start": 91.68,
+      "duration": 4.399,
+      "text": "separately from code. In Kubernetes,"
+    },
+    {
+      "start": 94.0,
+      "duration": 4.079,
+      "text": "config maps store non-sensitive data"
+    },
+    {
+      "start": 96.079,
+      "duration": 3.921,
+      "text": "like app configuration while secrets"
+    },
+    {
+      "start": 98.079,
+      "duration": 4.561,
+      "text": "store sensitive data such as password or"
+    },
+    {
+      "start": 100.0,
+      "duration": 4.88,
+      "text": "API keys. For storage, Kubernetes uses"
+    },
+    {
+      "start": 102.64,
+      "duration": 4.4,
+      "text": "persistent volumes to represent actual"
+    },
+    {
+      "start": 104.88,
+      "duration": 4.32,
+      "text": "disc space either in cloud or physical"
+    },
+    {
+      "start": 107.04,
+      "duration": 4.88,
+      "text": "volumes. Use persistent volume claims to"
+    },
+    {
+      "start": 109.2,
+      "duration": 4.959,
+      "text": "let pod request disk space on these"
+    },
+    {
+      "start": 111.92,
+      "duration": 4.159,
+      "text": "volumes. A storage class defines"
+    },
+    {
+      "start": 114.159,
+      "duration": 4.0,
+      "text": "different types of storage like SSDs or"
+    },
+    {
+      "start": 116.079,
+      "duration": 4.481,
+      "text": "slower disk and allow Kubernetes to"
+    },
+    {
+      "start": 118.159,
+      "duration": 4.32,
+      "text": "automatically provide storage as needed."
+    },
+    {
+      "start": 120.56,
+      "duration": 4.32,
+      "text": "Networking is another important piece of"
+    },
+    {
+      "start": 122.479,
+      "duration": 4.721,
+      "text": "the cluster. Service expose pods by"
+    },
+    {
+      "start": 124.88,
+      "duration": 4.56,
+      "text": "giving them permanent IP and DNS name."
+    },
+    {
+      "start": 127.2,
+      "duration": 4.08,
+      "text": "So even if pods get replaced, apps can"
+    },
+    {
+      "start": 129.44,
+      "duration": 3.519,
+      "text": "still talk to each other. Services are"
+    },
+    {
+      "start": 131.28,
+      "duration": 3.92,
+      "text": "of different types. For example, cluster"
+    },
+    {
+      "start": 132.959,
+      "duration": 4.161,
+      "text": "IP which is internal to the cluster and"
+    },
+    {
+      "start": 135.2,
+      "duration": 4.32,
+      "text": "other service types are node port, load"
+    },
+    {
+      "start": 137.12,
+      "duration": 5.199,
+      "text": "balancer and external link. Ingress."
+    },
+    {
+      "start": 139.52,
+      "duration": 4.96,
+      "text": "Ingress resources manage HTTP and HTTPS"
+    },
+    {
+      "start": 142.319,
+      "duration": 4.56,
+      "text": "traffic routing requests to services"
+    },
+    {
+      "start": 144.48,
+      "duration": 4.64,
+      "text": "based on host names or paths. Network"
+    },
+    {
+      "start": 146.879,
+      "duration": 4.161,
+      "text": "policies. Network policies act as a"
+    },
+    {
+      "start": 149.12,
+      "duration": 3.6,
+      "text": "firewall controlling which pods or"
+    },
+    {
+      "start": 151.04,
+      "duration": 3.76,
+      "text": "namespace can communicate with each"
+    },
+    {
+      "start": 152.72,
+      "duration": 4.239,
+      "text": "other. For security and access control,"
+    },
+    {
+      "start": 154.8,
+      "duration": 4.24,
+      "text": "Kubernetes uses arbback or role-based"
+    },
+    {
+      "start": 156.959,
+      "duration": 4.481,
+      "text": "access controls. Service account is used"
+    },
+    {
+      "start": 159.04,
+      "duration": 4.08,
+      "text": "by pod to access the Kubernetes API."
+    },
+    {
+      "start": 161.44,
+      "duration": 3.519,
+      "text": "Roles and cluster roles define what"
+    },
+    {
+      "start": 163.12,
+      "duration": 3.28,
+      "text": "actions are allowed and role bindings or"
+    },
+    {
+      "start": 164.959,
+      "duration": 3.521,
+      "text": "clustal bindings assign those"
+    },
+    {
+      "start": 166.4,
+      "duration": 4.479,
+      "text": "permissions to the user or pods. To"
+    },
+    {
+      "start": 168.48,
+      "duration": 4.32,
+      "text": "control resources, resource kotas limit"
+    },
+    {
+      "start": 170.879,
+      "duration": 4.72,
+      "text": "how much CPU, memory or storage a"
+    },
+    {
+      "start": 172.8,
+      "duration": 5.2,
+      "text": "namespace can use while limit ranges set"
+    },
+    {
+      "start": 175.599,
+      "duration": 4.081,
+      "text": "default or maximum values for pods. Pod"
+    },
+    {
+      "start": 178.0,
+      "duration": 3.84,
+      "text": "level security like blocking privileged"
+    },
+    {
+      "start": 179.68,
+      "duration": 4.4,
+      "text": "containers or forcing non-root users is"
+    },
+    {
+      "start": 181.84,
+      "duration": 4.24,
+      "text": "handled with pod security admissions. At"
+    },
+    {
+      "start": 184.08,
+      "duration": 3.68,
+      "text": "the cluster level, name spaces can be"
+    },
+    {
+      "start": 186.08,
+      "duration": 3.6,
+      "text": "used to provide logical separation,"
+    },
+    {
+      "start": 187.76,
+      "duration": 5.04,
+      "text": "allowing multiple teams or applications"
+    },
+    {
+      "start": 189.68,
+      "duration": 4.88,
+      "text": "to share a cluster safely. Node. Nodes"
+    },
+    {
+      "start": 192.8,
+      "duration": 4.159,
+      "text": "are physical or virtual machine that"
+    },
+    {
+      "start": 194.56,
+      "duration": 4.24,
+      "text": "actually run the pods. Kubernetes also"
+    },
+    {
+      "start": 196.959,
+      "duration": 4.081,
+      "text": "supports automatic scaling. The"
+    },
+    {
+      "start": 198.8,
+      "duration": 4.159,
+      "text": "horizontal pod autoscaler changes the"
+    },
+    {
+      "start": 201.04,
+      "duration": 3.839,
+      "text": "number of pods based on CPU memory or"
+    },
+    {
+      "start": 202.959,
+      "duration": 4.64,
+      "text": "custom metrics. The vertical pod"
+    },
+    {
+      "start": 204.879,
+      "duration": 4.881,
+      "text": "autoscaler can adjust resources like CPU"
+    },
+    {
+      "start": 207.599,
+      "duration": 3.841,
+      "text": "memory requested by the pods. The"
+    },
+    {
+      "start": 209.76,
+      "duration": 3.52,
+      "text": "cluster autoscaler works at the node"
+    },
+    {
+      "start": 211.44,
+      "duration": 3.519,
+      "text": "level adding or removing machines"
+    },
+    {
+      "start": 213.28,
+      "duration": 4.08,
+      "text": "depending on the workload. Custom"
+    },
+    {
+      "start": 214.959,
+      "duration": 3.761,
+      "text": "resource definitions. Kubernetes can be"
+    },
+    {
+      "start": 217.36,
+      "duration": 4.159,
+      "text": "extended through custom resource"
+    },
+    {
+      "start": 218.72,
+      "duration": 4.72,
+      "text": "definitions. CRDs let you define your"
+    },
+    {
+      "start": 221.519,
+      "duration": 3.841,
+      "text": "own object types beyond the default"
+    },
+    {
+      "start": 223.44,
+      "duration": 5.04,
+      "text": "Kubernetes objects. Many operators like"
+    },
+    {
+      "start": 225.36,
+      "duration": 4.64,
+      "text": "Prometheus Argo CD use CRDs to add new"
+    },
+    {
+      "start": 228.48,
+      "duration": 3.36,
+      "text": "features and to perform operational"
+    },
+    {
+      "start": 230.0,
+      "duration": 4.319,
+      "text": "tasks like backups, scaling or"
+    },
+    {
+      "start": 231.84,
+      "duration": 4.319,
+      "text": "configuration updates. All right. So"
+    },
+    {
+      "start": 234.319,
+      "duration": 3.361,
+      "text": "this was our video. Apart from this"
+    },
+    {
+      "start": 236.159,
+      "duration": 3.201,
+      "text": "there are many other Kubernetes object"
+    },
+    {
+      "start": 237.68,
+      "duration": 3.36,
+      "text": "but these are the most important ones."
+    },
+    {
+      "start": 239.36,
+      "duration": 3.599,
+      "text": "So I hope in this video you have"
+    },
+    {
+      "start": 241.04,
+      "duration": 3.919,
+      "text": "understood all the Kubernetes object but"
+    },
+    {
+      "start": 242.959,
+      "duration": 3.121,
+      "text": "if you have any questions any doubt feel"
+    },
+    {
+      "start": 244.959,
+      "duration": 2.801,
+      "text": "free to let me know in the comment"
+    },
+    {
+      "start": 246.08,
+      "duration": 4.079,
+      "text": "section and if you want me to share this"
+    },
+    {
+      "start": 247.76,
+      "duration": 4.16,
+      "text": "cubernetes object document comment below"
+    },
+    {
+      "start": 250.159,
+      "duration": 3.681,
+      "text": "cubernetes object in the comment section"
+    },
+    {
+      "start": 251.92,
+      "duration": 4.16,
+      "text": "and I will share it. Thank you and"
+    },
+    {
+      "start": 253.84,
+      "duration": 2.24,
+      "text": "subscribe."
+    }
+  ]
+}

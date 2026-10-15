@@ -1,0 +1,1611 @@
+{
+  "video": {
+    "id": "oI7Vvg4-RyA",
+    "title": "Day 7 - Amazon S3 tutorial (Simple Storage Service)",
+    "url": "https://www.youtube.com/watch?v=oI7Vvg4-RyA",
+    "duration": 691,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.08,
+      "duration": 4.96,
+      "text": "hey everyone and welcome to this new"
+    },
+    {
+      "start": 2.0,
+      "duration": 5.12,
+      "text": "video in the AWS Cloud playlist in this"
+    },
+    {
+      "start": 5.04,
+      "duration": 5.16,
+      "text": "video we will be learning about Amazon"
+    },
+    {
+      "start": 7.12,
+      "duration": 6.479,
+      "text": "S3 Amazon S3 is a very popular service"
+    },
+    {
+      "start": 10.2,
+      "duration": 6.159,
+      "text": "in AWS cloud in fact S3 is one of the"
+    },
+    {
+      "start": 13.599,
+      "duration": 4.68,
+      "text": "oldest service in AWS Cloud so it's very"
+    },
+    {
+      "start": 16.359,
+      "duration": 4.361,
+      "text": "important for you to learn and"
+    },
+    {
+      "start": 18.279,
+      "duration": 5.24,
+      "text": "understand Amazon S3 and in this video I"
+    },
+    {
+      "start": 20.72,
+      "duration": 5.399,
+      "text": "will teach you what is Amazon S3 how do"
+    },
+    {
+      "start": 23.519,
+      "duration": 5.121,
+      "text": "we use Amazon S3 in real projects what"
+    },
+    {
+      "start": 26.119,
+      "duration": 4.48,
+      "text": "are S3 buckets how to create them how to"
+    },
+    {
+      "start": 28.64,
+      "duration": 4.8,
+      "text": "manage access to your buckets using"
+    },
+    {
+      "start": 30.599,
+      "duration": 4.48,
+      "text": "bucket policy and encryption along with"
+    },
+    {
+      "start": 33.44,
+      "duration": 4.119,
+      "text": "other features like versioning life"
+    },
+    {
+      "start": 35.079,
+      "duration": 5.721,
+      "text": "cycle policies and more we will also be"
+    },
+    {
+      "start": 37.559,
+      "duration": 5.121,
+      "text": "hosting a static website on S3 bucket so"
+    },
+    {
+      "start": 40.8,
+      "duration": 4.36,
+      "text": "this is going to be a complete video"
+    },
+    {
+      "start": 42.68,
+      "duration": 4.08,
+      "text": "explaining S3 in depth make sure you"
+    },
+    {
+      "start": 45.16,
+      "duration": 3.84,
+      "text": "watch it till the end but if you are new"
+    },
+    {
+      "start": 46.76,
+      "duration": 4.84,
+      "text": "to the channel make sure to check out"
+    },
+    {
+      "start": 49.0,
+      "duration": 5.199,
+      "text": "other videos in the playlist and also"
+    },
+    {
+      "start": 51.6,
+      "duration": 5.0,
+      "text": "subscribe to Cloud Cham let's learn S3"
+    },
+    {
+      "start": 54.199,
+      "duration": 4.761,
+      "text": "now all right to get started with"
+    },
+    {
+      "start": 56.6,
+      "duration": 4.4,
+      "text": "learning Amazon S3 and to create buckets"
+    },
+    {
+      "start": 58.96,
+      "duration": 3.36,
+      "text": "you first need to go to the S3 service"
+    },
+    {
+      "start": 61.0,
+      "duration": 3.239,
+      "text": "which you can find under the storage"
+    },
+    {
+      "start": 62.32,
+      "duration": 4.0,
+      "text": "option here so this is S3 or you can"
+    },
+    {
+      "start": 64.239,
+      "duration": 4.121,
+      "text": "simply search for S3 in the search bar"
+    },
+    {
+      "start": 66.32,
+      "duration": 3.6,
+      "text": "click on this so you are now in the S3"
+    },
+    {
+      "start": 68.36,
+      "duration": 3.88,
+      "text": "service and you can find all the buckets"
+    },
+    {
+      "start": 69.92,
+      "duration": 4.0,
+      "text": "here I have four buckets right now for"
+    },
+    {
+      "start": 72.24,
+      "duration": 3.48,
+      "text": "you it might be zero because you haven't"
+    },
+    {
+      "start": 73.92,
+      "duration": 3.92,
+      "text": "created any bucket and I will show you"
+    },
+    {
+      "start": 75.72,
+      "duration": 4.16,
+      "text": "how to create a bucket but for most of"
+    },
+    {
+      "start": 77.84,
+      "duration": 4.04,
+      "text": "you who don't know what is S3 bucket let"
+    },
+    {
+      "start": 79.88,
+      "duration": 4.559,
+      "text": "me quickly explain it to you consider"
+    },
+    {
+      "start": 81.88,
+      "duration": 4.52,
+      "text": "this as your AWS account inside this"
+    },
+    {
+      "start": 84.439,
+      "duration": 4.401,
+      "text": "account we're going to be creating an S3"
+    },
+    {
+      "start": 86.4,
+      "duration": 4.16,
+      "text": "bucket a bucket is nothing but just a"
+    },
+    {
+      "start": 88.84,
+      "duration": 4.4,
+      "text": "container where you store your files"
+    },
+    {
+      "start": 90.56,
+      "duration": 4.44,
+      "text": "folders images anything so inside this"
+    },
+    {
+      "start": 93.24,
+      "duration": 4.64,
+      "text": "bucket we are going to be storing"
+    },
+    {
+      "start": 95.0,
+      "duration": 6.0,
+      "text": "objects which can be your files which"
+    },
+    {
+      "start": 97.88,
+      "duration": 4.599,
+      "text": "can be folders which can be songs images"
+    },
+    {
+      "start": 101.0,
+      "duration": 4.04,
+      "text": "anything and these things that you"
+    },
+    {
+      "start": 102.479,
+      "duration": 5.32,
+      "text": "upload inside a bucket is known as"
+    },
+    {
+      "start": 105.04,
+      "duration": 5.079,
+      "text": "objects and this is why Amazon S3 is"
+    },
+    {
+      "start": 107.799,
+      "duration": 4.441,
+      "text": "known as object storage service because"
+    },
+    {
+      "start": 110.119,
+      "duration": 3.841,
+      "text": "you store objects inside it so this is"
+    },
+    {
+      "start": 112.24,
+      "duration": 3.6,
+      "text": "what S3 bucket is and we going to be"
+    },
+    {
+      "start": 113.96,
+      "duration": 3.92,
+      "text": "creating bucket so to create a bucket"
+    },
+    {
+      "start": 115.84,
+      "duration": 3.48,
+      "text": "click on this create bucket option when"
+    },
+    {
+      "start": 117.88,
+      "duration": 3.04,
+      "text": "you click on this it will take you to"
+    },
+    {
+      "start": 119.32,
+      "duration": 3.88,
+      "text": "the page where you need to set the"
+    },
+    {
+      "start": 120.92,
+      "duration": 3.64,
+      "text": "configuration for your bucket so these"
+    },
+    {
+      "start": 123.2,
+      "duration": 3.64,
+      "text": "are all the information you need to fill"
+    },
+    {
+      "start": 124.56,
+      "duration": 4.16,
+      "text": "in to create a bucket first thing is to"
+    },
+    {
+      "start": 126.84,
+      "duration": 3.72,
+      "text": "select the bucket type you can select a"
+    },
+    {
+      "start": 128.72,
+      "duration": 3.519,
+      "text": "bucket type of a general purpose which"
+    },
+    {
+      "start": 130.56,
+      "duration": 3.92,
+      "text": "you can use for everyday use case to"
+    },
+    {
+      "start": 132.239,
+      "duration": 3.921,
+      "text": "store your files and folders anything or"
+    },
+    {
+      "start": 134.48,
+      "duration": 3.32,
+      "text": "you can also use the directory option"
+    },
+    {
+      "start": 136.16,
+      "duration": 3.84,
+      "text": "which will store your data in directory"
+    },
+    {
+      "start": 137.8,
+      "duration": 4.84,
+      "text": "format and it is used for low latency"
+    },
+    {
+      "start": 140.0,
+      "duration": 4.08,
+      "text": "use cases usually in everyday use cases"
+    },
+    {
+      "start": 142.64,
+      "duration": 2.959,
+      "text": "you will be using general purpose"
+    },
+    {
+      "start": 144.08,
+      "duration": 3.08,
+      "text": "buckets so I'll show you how to create"
+    },
+    {
+      "start": 145.599,
+      "duration": 3.0,
+      "text": "them but the configuration is very"
+    },
+    {
+      "start": 147.16,
+      "duration": 3.079,
+      "text": "similar so if you understand how to"
+    },
+    {
+      "start": 148.599,
+      "duration": 3.521,
+      "text": "create this you can also create a the"
+    },
+    {
+      "start": 150.239,
+      "duration": 4.08,
+      "text": "bucket next you need to choose the"
+    },
+    {
+      "start": 152.12,
+      "duration": 4.24,
+      "text": "bucket name and remember a bucket name"
+    },
+    {
+      "start": 154.319,
+      "duration": 3.64,
+      "text": "should be globally unique you cannot use"
+    },
+    {
+      "start": 156.36,
+      "duration": 3.4,
+      "text": "the bucket name that has been already"
+    },
+    {
+      "start": 157.959,
+      "duration": 4.841,
+      "text": "used so if I try with something like"
+    },
+    {
+      "start": 159.76,
+      "duration": 5.16,
+      "text": "test bucket and I click on create bucket"
+    },
+    {
+      "start": 162.8,
+      "duration": 3.84,
+      "text": "option here I will get an error saying"
+    },
+    {
+      "start": 164.92,
+      "duration": 3.76,
+      "text": "the bucket with the same name already"
+    },
+    {
+      "start": 166.64,
+      "duration": 4.04,
+      "text": "exist so you need to use a bucket name"
+    },
+    {
+      "start": 168.68,
+      "duration": 3.639,
+      "text": "which is globally unique not taken by"
+    },
+    {
+      "start": 170.68,
+      "duration": 5.12,
+      "text": "anyone so I'm going to use something"
+    },
+    {
+      "start": 172.319,
+      "duration": 5.881,
+      "text": "like new Cloud champ"
+    },
+    {
+      "start": 175.8,
+      "duration": 4.24,
+      "text": "2024 if you are following this video and"
+    },
+    {
+      "start": 178.2,
+      "duration": 3.399,
+      "text": "doing it along with me make sure sure"
+    },
+    {
+      "start": 180.04,
+      "duration": 3.559,
+      "text": "you use something else or maybe you can"
+    },
+    {
+      "start": 181.599,
+      "duration": 4.92,
+      "text": "add some random data to create a global"
+    },
+    {
+      "start": 183.599,
+      "duration": 4.481,
+      "text": "unique name for your bucket next I can"
+    },
+    {
+      "start": 186.519,
+      "duration": 3.8,
+      "text": "copy settings from existing bucket if I"
+    },
+    {
+      "start": 188.08,
+      "duration": 4.719,
+      "text": "want to you can also manage ownership to"
+    },
+    {
+      "start": 190.319,
+      "duration": 4.441,
+      "text": "your objects using ACL which signs for"
+    },
+    {
+      "start": 192.799,
+      "duration": 4.281,
+      "text": "Access Control list and it is used to"
+    },
+    {
+      "start": 194.76,
+      "duration": 4.28,
+      "text": "manage access to your individual objects"
+    },
+    {
+      "start": 197.08,
+      "duration": 4.4,
+      "text": "inside the bucket you're going to keep"
+    },
+    {
+      "start": 199.04,
+      "duration": 4.6,
+      "text": "it disabled as a recommended option by"
+    },
+    {
+      "start": 201.48,
+      "duration": 4.319,
+      "text": "default AWS will keep your S3 buckets"
+    },
+    {
+      "start": 203.64,
+      "duration": 4.2,
+      "text": "private to make sure you're not exposing"
+    },
+    {
+      "start": 205.799,
+      "duration": 4.201,
+      "text": "your objects and you can also make it"
+    },
+    {
+      "start": 207.84,
+      "duration": 3.52,
+      "text": "public by disabling this option but for"
+    },
+    {
+      "start": 210.0,
+      "duration": 3.68,
+      "text": "now I'm going to keep this bucket"
+    },
+    {
+      "start": 211.36,
+      "duration": 4.599,
+      "text": "private next is bucket versioning which"
+    },
+    {
+      "start": 213.68,
+      "duration": 4.639,
+      "text": "is a feature where you can keep multiple"
+    },
+    {
+      "start": 215.959,
+      "duration": 4.0,
+      "text": "versions of your objects inside a bucket"
+    },
+    {
+      "start": 218.319,
+      "duration": 4.241,
+      "text": "so similar to GitHub where you can keep"
+    },
+    {
+      "start": 219.959,
+      "duration": 4.081,
+      "text": "multiple versions of your code in this"
+    },
+    {
+      "start": 222.56,
+      "duration": 4.28,
+      "text": "you can keep multiple versions of your"
+    },
+    {
+      "start": 224.04,
+      "duration": 4.919,
+      "text": "objects for now I'm keeping disabled no"
+    },
+    {
+      "start": 226.84,
+      "duration": 4.2,
+      "text": "need to add tags you can also enable"
+    },
+    {
+      "start": 228.959,
+      "duration": 3.84,
+      "text": "encryption to your buckets to make your"
+    },
+    {
+      "start": 231.04,
+      "duration": 4.24,
+      "text": "objects inside the bucket encrypted"
+    },
+    {
+      "start": 232.799,
+      "duration": 5.761,
+      "text": "using Amazon S3 manage keys or using the"
+    },
+    {
+      "start": 235.28,
+      "duration": 5.039,
+      "text": "AWS KMS service for now I'm choosing all"
+    },
+    {
+      "start": 238.56,
+      "duration": 4.039,
+      "text": "the default option and let's on create"
+    },
+    {
+      "start": 240.319,
+      "duration": 4.28,
+      "text": "bucket this will create a bucket for you"
+    },
+    {
+      "start": 242.599,
+      "duration": 4.441,
+      "text": "if the name is unique so now I have a"
+    },
+    {
+      "start": 244.599,
+      "duration": 4.881,
+      "text": "bucket created and this is the bucket we"
+    },
+    {
+      "start": 247.04,
+      "duration": 3.96,
+      "text": "have once the bucket is created you can"
+    },
+    {
+      "start": 249.48,
+      "duration": 4.24,
+      "text": "then look for more information about the"
+    },
+    {
+      "start": 251.0,
+      "duration": 4.439,
+      "text": "bucket different features it has and"
+    },
+    {
+      "start": 253.72,
+      "duration": 3.199,
+      "text": "also choose to see how you can manage"
+    },
+    {
+      "start": 255.439,
+      "duration": 2.601,
+      "text": "permission to your buckets this is the"
+    },
+    {
+      "start": 256.919,
+      "duration": 2.761,
+      "text": "place where you can make your bucket"
+    },
+    {
+      "start": 258.04,
+      "duration": 3.52,
+      "text": "public there's also bucket policy which"
+    },
+    {
+      "start": 259.68,
+      "duration": 3.64,
+      "text": "I will be explaining you very soon you"
+    },
+    {
+      "start": 261.56,
+      "duration": 4.48,
+      "text": "can then check metrics for your buckets"
+    },
+    {
+      "start": 263.32,
+      "duration": 4.72,
+      "text": "management and so on for now there is no"
+    },
+    {
+      "start": 266.04,
+      "duration": 3.04,
+      "text": "object inside my bucket so let's upload"
+    },
+    {
+      "start": 268.04,
+      "duration": 3.52,
+      "text": "an object so I'm going to click on"
+    },
+    {
+      "start": 269.08,
+      "duration": 4.32,
+      "text": "upload option and upload a file or a"
+    },
+    {
+      "start": 271.56,
+      "duration": 4.04,
+      "text": "folder so you can upload a single file"
+    },
+    {
+      "start": 273.4,
+      "duration": 4.639,
+      "text": "or you can also upload a entire folder"
+    },
+    {
+      "start": 275.6,
+      "duration": 4.48,
+      "text": "inside S3 pcket let's cck on add files"
+    },
+    {
+      "start": 278.039,
+      "duration": 5.88,
+      "text": "option here and in this I'm going to go"
+    },
+    {
+      "start": 280.08,
+      "duration": 5.16,
+      "text": "to I'm going to upload this PNG file so"
+    },
+    {
+      "start": 283.919,
+      "duration": 3.961,
+      "text": "let's click on open option and this will"
+    },
+    {
+      "start": 285.24,
+      "duration": 4.2,
+      "text": "go ahead click on upload option now and"
+    },
+    {
+      "start": 287.88,
+      "duration": 2.84,
+      "text": "this will go ahead and upload our bucket"
+    },
+    {
+      "start": 289.44,
+      "duration": 4.24,
+      "text": "so you can see it's uploading right now"
+    },
+    {
+      "start": 290.72,
+      "duration": 4.759,
+      "text": "which is a file of 3.6 MB and once it is"
+    },
+    {
+      "start": 293.68,
+      "duration": 4.04,
+      "text": "uploaded we can see it inside our S3"
+    },
+    {
+      "start": 295.479,
+      "duration": 4.361,
+      "text": "bucket so the file is uploaded if you"
+    },
+    {
+      "start": 297.72,
+      "duration": 3.6,
+      "text": "click on this you are now here in the"
+    },
+    {
+      "start": 299.84,
+      "duration": 3.639,
+      "text": "object overview you can see more"
+    },
+    {
+      "start": 301.32,
+      "duration": 5.12,
+      "text": "information about the object the owner"
+    },
+    {
+      "start": 303.479,
+      "duration": 5.0,
+      "text": "the region when was it uploaded and also"
+    },
+    {
+      "start": 306.44,
+      "duration": 4.479,
+      "text": "an object URL which you can use to"
+    },
+    {
+      "start": 308.479,
+      "duration": 4.72,
+      "text": "access this object when I click on this"
+    },
+    {
+      "start": 310.919,
+      "duration": 4.241,
+      "text": "I get access denied because my bucket is"
+    },
+    {
+      "start": 313.199,
+      "duration": 4.72,
+      "text": "not public so I need to First make the"
+    },
+    {
+      "start": 315.16,
+      "duration": 4.44,
+      "text": "bucket public let's do that to do this"
+    },
+    {
+      "start": 317.919,
+      "duration": 3.72,
+      "text": "I'm going to click on close option in"
+    },
+    {
+      "start": 319.6,
+      "duration": 3.68,
+      "text": "the bucket click on permissions and then"
+    },
+    {
+      "start": 321.639,
+      "duration": 4.081,
+      "text": "you can see block all public access"
+    },
+    {
+      "start": 323.28,
+      "duration": 4.639,
+      "text": "option is here let's edit it and make"
+    },
+    {
+      "start": 325.72,
+      "duration": 6.319,
+      "text": "this bucket public I'm going to say save"
+    },
+    {
+      "start": 327.919,
+      "duration": 6.56,
+      "text": "changes and confirm to make my bucket"
+    },
+    {
+      "start": 332.039,
+      "duration": 5.241,
+      "text": "public now my bucket is public you can"
+    },
+    {
+      "start": 334.479,
+      "duration": 5.321,
+      "text": "see block all public access is off so"
+    },
+    {
+      "start": 337.28,
+      "duration": 5.199,
+      "text": "now it is public but even if I try it"
+    },
+    {
+      "start": 339.8,
+      "duration": 5.48,
+      "text": "now I'm still getting the access denied"
+    },
+    {
+      "start": 342.479,
+      "duration": 4.44,
+      "text": "error this is because along with making"
+    },
+    {
+      "start": 345.28,
+      "duration": 3.72,
+      "text": "your bucket public you also need to add"
+    },
+    {
+      "start": 346.919,
+      "duration": 4.361,
+      "text": "a bucket policy a bucket policy is a"
+    },
+    {
+      "start": 349.0,
+      "duration": 4.319,
+      "text": "Json document that defines what can you"
+    },
+    {
+      "start": 351.28,
+      "duration": 3.56,
+      "text": "do on your bucket it's written in Json"
+    },
+    {
+      "start": 353.319,
+      "duration": 4.041,
+      "text": "and provides access to the objects"
+    },
+    {
+      "start": 354.84,
+      "duration": 4.079,
+      "text": "inside the bucket to create this if you"
+    },
+    {
+      "start": 357.36,
+      "duration": 3.48,
+      "text": "already know Json you can go ahead and"
+    },
+    {
+      "start": 358.919,
+      "duration": 3.601,
+      "text": "start creating your policy but if you"
+    },
+    {
+      "start": 360.84,
+      "duration": 4.32,
+      "text": "don't know how to write a policy you can"
+    },
+    {
+      "start": 362.52,
+      "duration": 4.48,
+      "text": "also look for policy examples here so"
+    },
+    {
+      "start": 365.16,
+      "duration": 4.24,
+      "text": "this are the policy examples on the AWS"
+    },
+    {
+      "start": 367.0,
+      "duration": 3.52,
+      "text": "documentation that you can simply use or"
+    },
+    {
+      "start": 369.4,
+      "duration": 3.56,
+      "text": "else you can also use the policy"
+    },
+    {
+      "start": 370.52,
+      "duration": 4.88,
+      "text": "generator option which is a tool by AWS"
+    },
+    {
+      "start": 372.96,
+      "duration": 4.92,
+      "text": "to create policies you can create S3"
+    },
+    {
+      "start": 375.4,
+      "duration": 4.04,
+      "text": "bucket policy IM am policy and so on so"
+    },
+    {
+      "start": 377.88,
+      "duration": 4.92,
+      "text": "I'm going to use this tool to create my"
+    },
+    {
+      "start": 379.44,
+      "duration": 5.52,
+      "text": "S3 bucket policy so effect is allow"
+    },
+    {
+      "start": 382.8,
+      "duration": 3.519,
+      "text": "principle is start then you need to"
+    },
+    {
+      "start": 384.96,
+      "duration": 3.239,
+      "text": "choose the actions you can choose to"
+    },
+    {
+      "start": 386.319,
+      "duration": 3.6,
+      "text": "give all actions which means you can do"
+    },
+    {
+      "start": 388.199,
+      "duration": 4.081,
+      "text": "anything in your bucket or I'm just"
+    },
+    {
+      "start": 389.919,
+      "duration": 4.321,
+      "text": "going to go ahead with get object which"
+    },
+    {
+      "start": 392.28,
+      "duration": 3.88,
+      "text": "is a particular action that I want to"
+    },
+    {
+      "start": 394.24,
+      "duration": 5.0,
+      "text": "use so I want to use this"
+    },
+    {
+      "start": 396.16,
+      "duration": 5.08,
+      "text": "action and then I'm going to put Arn Arn"
+    },
+    {
+      "start": 399.24,
+      "duration": 3.76,
+      "text": "stands for Amazon resource name and you"
+    },
+    {
+      "start": 401.24,
+      "duration": 4.12,
+      "text": "can get the Arn for your bucket here I'm"
+    },
+    {
+      "start": 403.0,
+      "duration": 4.4,
+      "text": "going to copy that but you need to make"
+    },
+    {
+      "start": 405.36,
+      "duration": 4.76,
+      "text": "a change so with this you also need to"
+    },
+    {
+      "start": 407.4,
+      "duration": 4.68,
+      "text": "add slash and star which means every"
+    },
+    {
+      "start": 410.12,
+      "duration": 4.44,
+      "text": "object inside the bucket is going to be"
+    },
+    {
+      "start": 412.08,
+      "duration": 4.679,
+      "text": "applicable with this policy click on ADD"
+    },
+    {
+      "start": 414.56,
+      "duration": 3.44,
+      "text": "statement generate policy and this will"
+    },
+    {
+      "start": 416.759,
+      "duration": 3.801,
+      "text": "go ahead and generate a policy that I"
+    },
+    {
+      "start": 418.0,
+      "duration": 5.08,
+      "text": "can use for my bucket in this policy you"
+    },
+    {
+      "start": 420.56,
+      "duration": 3.84,
+      "text": "can see we giving access to get object"
+    },
+    {
+      "start": 423.08,
+      "duration": 5.119,
+      "text": "inside my"
+    },
+    {
+      "start": 424.4,
+      "duration": 6.239,
+      "text": "bucket so let's copy this and paste it"
+    },
+    {
+      "start": 428.199,
+      "duration": 3.521,
+      "text": "here this is how you define access or"
+    },
+    {
+      "start": 430.639,
+      "duration": 3.28,
+      "text": "this is how you give access to your"
+    },
+    {
+      "start": 431.72,
+      "duration": 4.4,
+      "text": "buckets using the bucket policy let's"
+    },
+    {
+      "start": 433.919,
+      "duration": 3.801,
+      "text": "click on Save changes so according to"
+    },
+    {
+      "start": 436.12,
+      "duration": 3.799,
+      "text": "this policy now everyone should be able"
+    },
+    {
+      "start": 437.72,
+      "duration": 5.759,
+      "text": "to get the object so if I refresh the"
+    },
+    {
+      "start": 439.919,
+      "duration": 5.56,
+      "text": "page I will be able to see the object"
+    },
+    {
+      "start": 443.479,
+      "duration": 4.16,
+      "text": "because the bucket is public and I have"
+    },
+    {
+      "start": 445.479,
+      "duration": 3.681,
+      "text": "also added the bucket policy so it's"
+    },
+    {
+      "start": 447.639,
+      "duration": 3.441,
+      "text": "very important for you to understand"
+    },
+    {
+      "start": 449.16,
+      "duration": 3.36,
+      "text": "what is the bucket policy how it works"
+    },
+    {
+      "start": 451.08,
+      "duration": 3.519,
+      "text": "because most of the time when you create"
+    },
+    {
+      "start": 452.52,
+      "duration": 4.359,
+      "text": "buckets and you are facing issues it's"
+    },
+    {
+      "start": 454.599,
+      "duration": 4.28,
+      "text": "only because the bucket policy so you"
+    },
+    {
+      "start": 456.879,
+      "duration": 3.641,
+      "text": "need to enable this so this is how you"
+    },
+    {
+      "start": 458.879,
+      "duration": 4.081,
+      "text": "create a bucket upload an object and"
+    },
+    {
+      "start": 460.52,
+      "duration": 4.6,
+      "text": "also manage access to it now I will show"
+    },
+    {
+      "start": 462.96,
+      "duration": 4.799,
+      "text": "you how you can host your static website"
+    },
+    {
+      "start": 465.12,
+      "duration": 4.799,
+      "text": "using Amazon S3 bucket so we have our"
+    },
+    {
+      "start": 467.759,
+      "duration": 3.72,
+      "text": "bucket here in this bucket right now we"
+    },
+    {
+      "start": 469.919,
+      "duration": 4.72,
+      "text": "have an object that we uploaded which is"
+    },
+    {
+      "start": 471.479,
+      "duration": 5.12,
+      "text": "cloud.png but I also have website files"
+    },
+    {
+      "start": 474.639,
+      "duration": 4.4,
+      "text": "here so this is my website which"
+    },
+    {
+      "start": 476.599,
+      "duration": 4.32,
+      "text": "includes index.html error. HTML and a"
+    },
+    {
+      "start": 479.039,
+      "duration": 4.201,
+      "text": "PNG image that I want to show on my"
+    },
+    {
+      "start": 480.919,
+      "duration": 4.201,
+      "text": "website if I show you this is my website"
+    },
+    {
+      "start": 483.24,
+      "duration": 3.6,
+      "text": "on local machine so you can see this is"
+    },
+    {
+      "start": 485.12,
+      "duration": 4.519,
+      "text": "the local machine website and this is"
+    },
+    {
+      "start": 486.84,
+      "duration": 4.799,
+      "text": "what I want to upload on my S3 bucket"
+    },
+    {
+      "start": 489.639,
+      "duration": 3.921,
+      "text": "and it should be hosted on my S3 bucket"
+    },
+    {
+      "start": 491.639,
+      "duration": 3.84,
+      "text": "so how can we do this let me show you"
+    },
+    {
+      "start": 493.56,
+      "duration": 3.599,
+      "text": "you need to First upload the website"
+    },
+    {
+      "start": 495.479,
+      "duration": 3.761,
+      "text": "files that you want to be shown or"
+    },
+    {
+      "start": 497.159,
+      "duration": 4.641,
+      "text": "hosted on S3 so I'm going to click on"
+    },
+    {
+      "start": 499.24,
+      "duration": 4.679,
+      "text": "add files then go to my folder where my"
+    },
+    {
+      "start": 501.8,
+      "duration": 3.32,
+      "text": "files are so I'll search for my files in"
+    },
+    {
+      "start": 503.919,
+      "duration": 4.921,
+      "text": "the"
+    },
+    {
+      "start": 505.12,
+      "duration": 6.039,
+      "text": "projects so projects my website and"
+    },
+    {
+      "start": 508.84,
+      "duration": 4.36,
+      "text": "these are the files I want to be using"
+    },
+    {
+      "start": 511.159,
+      "duration": 3.481,
+      "text": "so I'm going to upload them let's click"
+    },
+    {
+      "start": 513.2,
+      "duration": 3.759,
+      "text": "on upload option and this will go ahead"
+    },
+    {
+      "start": 514.64,
+      "duration": 3.92,
+      "text": "and upload all the files once your files"
+    },
+    {
+      "start": 516.959,
+      "duration": 4.08,
+      "text": "are uploaded then you need to go and"
+    },
+    {
+      "start": 518.56,
+      "duration": 4.64,
+      "text": "enable the static website setting which"
+    },
+    {
+      "start": 521.039,
+      "duration": 3.8,
+      "text": "you can find inside properties scroll to"
+    },
+    {
+      "start": 523.2,
+      "duration": 3.8,
+      "text": "the bottom and you can see static"
+    },
+    {
+      "start": 524.839,
+      "duration": 4.081,
+      "text": "website hosting use this bucket to host"
+    },
+    {
+      "start": 527.0,
+      "duration": 4.88,
+      "text": "a website I'm going to click on edit"
+    },
+    {
+      "start": 528.92,
+      "duration": 5.359,
+      "text": "option here click on enable and then you"
+    },
+    {
+      "start": 531.88,
+      "duration": 4.36,
+      "text": "need to fill in the information which is"
+    },
+    {
+      "start": 534.279,
+      "duration": 4.441,
+      "text": "what is your index document so my index"
+    },
+    {
+      "start": 536.24,
+      "duration": 4.839,
+      "text": "file is index.html you can see the file"
+    },
+    {
+      "start": 538.72,
+      "duration": 4.64,
+      "text": "name is index. HTML and my error file is"
+    },
+    {
+      "start": 541.079,
+      "duration": 5.041,
+      "text": "error. HTML you have to use the same"
+    },
+    {
+      "start": 543.36,
+      "duration": 4.599,
+      "text": "name it could be index.html or maybe my"
+    },
+    {
+      "start": 546.12,
+      "duration": 4.68,
+      "text": "website. HTML"
+    },
+    {
+      "start": 547.959,
+      "duration": 4.32,
+      "text": "anything I'm going to put index.html and"
+    },
+    {
+      "start": 550.8,
+      "duration": 3.0,
+      "text": "if you want me to upload this files on"
+    },
+    {
+      "start": 552.279,
+      "duration": 3.56,
+      "text": "GitHub or if you want me to share these"
+    },
+    {
+      "start": 553.8,
+      "duration": 3.92,
+      "text": "files let me know in the comment section"
+    },
+    {
+      "start": 555.839,
+      "duration": 4.12,
+      "text": "you can use this files or you can also"
+    },
+    {
+      "start": 557.72,
+      "duration": 4.2,
+      "text": "use any other files from chat GPT or"
+    },
+    {
+      "start": 559.959,
+      "duration": 3.241,
+      "text": "anywhere I'm going to put the name of"
+    },
+    {
+      "start": 561.92,
+      "duration": 3.56,
+      "text": "the file that I want to use for index"
+    },
+    {
+      "start": 563.2,
+      "duration": 4.879,
+      "text": "and error that's all let's click on Save"
+    },
+    {
+      "start": 565.48,
+      "duration": 5.2,
+      "text": "changes once you click on Save changes"
+    },
+    {
+      "start": 568.079,
+      "duration": 5.241,
+      "text": "S3 will provide you website endpoint"
+    },
+    {
+      "start": 570.68,
+      "duration": 6.08,
+      "text": "which is the name of your bucket. S3"
+    },
+    {
+      "start": 573.32,
+      "duration": 5.56,
+      "text": "websites region Amazon aws.com now when"
+    },
+    {
+      "start": 576.76,
+      "duration": 5.199,
+      "text": "I click on this you can see a website"
+    },
+    {
+      "start": 578.88,
+      "duration": 4.6,
+      "text": "hosted on S3 which is my website and"
+    },
+    {
+      "start": 581.959,
+      "duration": 4.201,
+      "text": "this is how you can host your static"
+    },
+    {
+      "start": 583.48,
+      "duration": 4.88,
+      "text": "websites hosting static website on S3 is"
+    },
+    {
+      "start": 586.16,
+      "duration": 4.84,
+      "text": "cheaper compared to hosting it on AWS"
+    },
+    {
+      "start": 588.36,
+      "duration": 4.2,
+      "text": "ec2 so you need to know how to host them"
+    },
+    {
+      "start": 591.0,
+      "duration": 3.68,
+      "text": "if you want me to do this project using"
+    },
+    {
+      "start": 592.56,
+      "duration": 4.04,
+      "text": "cicd you can let me know we can do the"
+    },
+    {
+      "start": 594.68,
+      "duration": 4.88,
+      "text": "same static website hosting but using"
+    },
+    {
+      "start": 596.6,
+      "duration": 4.479,
+      "text": "cicd Pipeline on GitHub actions so in"
+    },
+    {
+      "start": 599.56,
+      "duration": 4.279,
+      "text": "this video I've taught you what is"
+    },
+    {
+      "start": 601.079,
+      "duration": 4.841,
+      "text": "Amazon S3 service how to create buckets"
+    },
+    {
+      "start": 603.839,
+      "duration": 4.201,
+      "text": "how to upload objects how to manage"
+    },
+    {
+      "start": 605.92,
+      "duration": 4.44,
+      "text": "access and also how to set up static"
+    },
+    {
+      "start": 608.04,
+      "duration": 3.64,
+      "text": "website hosting before we end this video"
+    },
+    {
+      "start": 610.36,
+      "duration": 3.8,
+      "text": "Let's quickly revise what we have"
+    },
+    {
+      "start": 611.68,
+      "duration": 4.839,
+      "text": "learned now we know Amazon S3 is a"
+    },
+    {
+      "start": 614.16,
+      "duration": 4.359,
+      "text": "durable storage for unstructured data"
+    },
+    {
+      "start": 616.519,
+      "duration": 4.88,
+      "text": "and it is an object storage unlike other"
+    },
+    {
+      "start": 618.519,
+      "duration": 5.641,
+      "text": "storage services like EBS and EFS EBS is"
+    },
+    {
+      "start": 621.399,
+      "duration": 5.12,
+      "text": "a Blog storage EFS is a file storage but"
+    },
+    {
+      "start": 624.16,
+      "duration": 3.64,
+      "text": "S3 is an object storage so S3 is an"
+    },
+    {
+      "start": 626.519,
+      "duration": 4.921,
+      "text": "object storage service that provides"
+    },
+    {
+      "start": 627.8,
+      "duration": 5.159,
+      "text": "scalable durable and Secure Storage S3"
+    },
+    {
+      "start": 631.44,
+      "duration": 4.079,
+      "text": "is very similar to other cloud storage"
+    },
+    {
+      "start": 632.959,
+      "duration": 4.56,
+      "text": "tools like Google Drive Dropbox where"
+    },
+    {
+      "start": 635.519,
+      "duration": 3.921,
+      "text": "you can upload your files and folders"
+    },
+    {
+      "start": 637.519,
+      "duration": 4.32,
+      "text": "you can also do the same in Amazon S3"
+    },
+    {
+      "start": 639.44,
+      "duration": 4.639,
+      "text": "too next we have understand the concept"
+    },
+    {
+      "start": 641.839,
+      "duration": 4.12,
+      "text": "of bucket and an object a bucket is a"
+    },
+    {
+      "start": 644.079,
+      "duration": 3.241,
+      "text": "container where you put your objects so"
+    },
+    {
+      "start": 645.959,
+      "duration": 4.481,
+      "text": "the objects are the files that you put"
+    },
+    {
+      "start": 647.32,
+      "duration": 4.84,
+      "text": "inside the bucket according to AWS S3"
+    },
+    {
+      "start": 650.44,
+      "duration": 3.6,
+      "text": "provides you with unlimited storage so"
+    },
+    {
+      "start": 652.16,
+      "duration": 3.88,
+      "text": "you can store unlimited amount of data"
+    },
+    {
+      "start": 654.04,
+      "duration": 3.919,
+      "text": "but you can only create 100 buckets in"
+    },
+    {
+      "start": 656.04,
+      "duration": 3.68,
+      "text": "every AWS account so this is something"
+    },
+    {
+      "start": 657.959,
+      "duration": 3.481,
+      "text": "you need to know one more thing that you"
+    },
+    {
+      "start": 659.72,
+      "duration": 4.44,
+      "text": "need to know according to the AWS exam"
+    },
+    {
+      "start": 661.44,
+      "duration": 4.28,
+      "text": "is the S3 storage classes S3 provides"
+    },
+    {
+      "start": 664.16,
+      "duration": 3.919,
+      "text": "you with different storage classes like"
+    },
+    {
+      "start": 665.72,
+      "duration": 4.119,
+      "text": "S3 standard intelligent hearing and so"
+    },
+    {
+      "start": 668.079,
+      "duration": 3.521,
+      "text": "on if you want me to create a video on"
+    },
+    {
+      "start": 669.839,
+      "duration": 3.761,
+      "text": "the storage classes let me know in the"
+    },
+    {
+      "start": 671.6,
+      "duration": 4.44,
+      "text": "comment section and if you also want to"
+    },
+    {
+      "start": 673.6,
+      "duration": 5.32,
+      "text": "have a project to create this S3 static"
+    },
+    {
+      "start": 676.04,
+      "duration": 4.52,
+      "text": "website using C pipeline please put down"
+    },
+    {
+      "start": 678.92,
+      "duration": 3.0,
+      "text": "the comment I hope this video was"
+    },
+    {
+      "start": 680.56,
+      "duration": 3.2,
+      "text": "informative and if you have any"
+    },
+    {
+      "start": 681.92,
+      "duration": 4.08,
+      "text": "questions any doubt let me know in the"
+    },
+    {
+      "start": 683.76,
+      "duration": 6.879,
+      "text": "comment section thank you and see you in"
+    },
+    {
+      "start": 686.0,
+      "duration": 4.639,
+      "text": "the next AWS video bye"
+    }
+  ]
+}

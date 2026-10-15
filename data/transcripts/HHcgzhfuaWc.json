@@ -1,0 +1,3151 @@
+{
+  "video": {
+    "id": "HHcgzhfuaWc",
+    "title": "TOP Docker Interview Questions and Answers | DevOps Interview [2025]",
+    "url": "https://www.youtube.com/watch?v=HHcgzhfuaWc",
+    "duration": 1455,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.52,
+      "duration": 4.239,
+      "text": "in this video we look at most asked"
+    },
+    {
+      "start": 2.639,
+      "duration": 4.521,
+      "text": "Docker interview questions along with"
+    },
+    {
+      "start": 4.759,
+      "duration": 5.261,
+      "text": "answers and practical examples to help"
+    },
+    {
+      "start": 7.16,
+      "duration": 5.28,
+      "text": "you clear your devops interviews let's"
+    },
+    {
+      "start": 10.02,
+      "duration": 5.14,
+      "text": "[Music]"
+    },
+    {
+      "start": 12.44,
+      "duration": 4.599,
+      "text": "go all right so I'm here on my computer"
+    },
+    {
+      "start": 15.16,
+      "duration": 3.6,
+      "text": "screen and I have this document which"
+    },
+    {
+      "start": 17.039,
+      "duration": 3.48,
+      "text": "mostly includes the scenario based"
+    },
+    {
+      "start": 18.76,
+      "duration": 3.4,
+      "text": "Docker interview questions but there are"
+    },
+    {
+      "start": 20.519,
+      "duration": 3.561,
+      "text": "also advanced level Docker interview"
+    },
+    {
+      "start": 22.16,
+      "duration": 3.72,
+      "text": "questions like cic with Docker"
+    },
+    {
+      "start": 24.08,
+      "duration": 4.199,
+      "text": "multi-stage Docker builds how do you"
+    },
+    {
+      "start": 25.88,
+      "duration": 4.639,
+      "text": "create them upgrading Docker containers"
+    },
+    {
+      "start": 28.279,
+      "duration": 4.081,
+      "text": "volumes networks and a lot more so make"
+    },
+    {
+      "start": 30.519,
+      "duration": 3.001,
+      "text": "sure you watch this video till the end"
+    },
+    {
+      "start": 32.36,
+      "duration": 3.32,
+      "text": "and if you want me to share this"
+    },
+    {
+      "start": 33.52,
+      "duration": 3.84,
+      "text": "document with you comment down Docker"
+    },
+    {
+      "start": 35.68,
+      "duration": 4.08,
+      "text": "interview questions and I will share"
+    },
+    {
+      "start": 37.36,
+      "duration": 4.359,
+      "text": "this document as a PDF on LinkedIn as I"
+    },
+    {
+      "start": 39.76,
+      "duration": 3.68,
+      "text": "shared the terraform interview questions"
+    },
+    {
+      "start": 41.719,
+      "duration": 3.121,
+      "text": "and answers if you haven't checked out"
+    },
+    {
+      "start": 43.44,
+      "duration": 3.68,
+      "text": "the terraform interview questions and"
+    },
+    {
+      "start": 44.84,
+      "duration": 4.32,
+      "text": "answers that I uploaded previously make"
+    },
+    {
+      "start": 47.12,
+      "duration": 4.16,
+      "text": "sure to check it out and let's start"
+    },
+    {
+      "start": 49.16,
+      "duration": 5.16,
+      "text": "with this Docker interview questions and"
+    },
+    {
+      "start": 51.28,
+      "duration": 5.2,
+      "text": "answers video let's go so whenever you"
+    },
+    {
+      "start": 54.32,
+      "duration": 4.039,
+      "text": "sit for a Docker interview or maybe any"
+    },
+    {
+      "start": 56.48,
+      "duration": 4.2,
+      "text": "tools interview the first question"
+    },
+    {
+      "start": 58.359,
+      "duration": 4.641,
+      "text": "usually is What is your experience with"
+    },
+    {
+      "start": 60.68,
+      "duration": 4.32,
+      "text": "that particular tool similarly the"
+    },
+    {
+      "start": 63.0,
+      "duration": 4.119,
+      "text": "question here is can you describe a"
+    },
+    {
+      "start": 65.0,
+      "duration": 4.4,
+      "text": "situation where you use Docker to solve"
+    },
+    {
+      "start": 67.119,
+      "duration": 4.401,
+      "text": "a specific problem in this question you"
+    },
+    {
+      "start": 69.4,
+      "duration": 4.64,
+      "text": "need to explain how you use Docker in"
+    },
+    {
+      "start": 71.52,
+      "duration": 4.44,
+      "text": "your previous projects or how has Docker"
+    },
+    {
+      "start": 74.04,
+      "duration": 4.28,
+      "text": "helped you so the answer would be"
+    },
+    {
+      "start": 75.96,
+      "duration": 5.4,
+      "text": "something like yes in a recent project"
+    },
+    {
+      "start": 78.32,
+      "duration": 5.08,
+      "text": "we faced inconsistency issues between"
+    },
+    {
+      "start": 81.36,
+      "duration": 4.399,
+      "text": "development and production environments"
+    },
+    {
+      "start": 83.4,
+      "duration": 4.56,
+      "text": "leading to deployment errors to solve"
+    },
+    {
+      "start": 85.759,
+      "duration": 4.36,
+      "text": "this we adopted Docker and deployed the"
+    },
+    {
+      "start": 87.96,
+      "duration": 4.08,
+      "text": "application with kubernetes so here you"
+    },
+    {
+      "start": 90.119,
+      "duration": 3.801,
+      "text": "have defined that you have inconsistency"
+    },
+    {
+      "start": 92.04,
+      "duration": 4.16,
+      "text": "issues in different environments like"
+    },
+    {
+      "start": 93.92,
+      "duration": 4.479,
+      "text": "deployment and production so you use"
+    },
+    {
+      "start": 96.2,
+      "duration": 3.76,
+      "text": "Docker to have a consistent environment"
+    },
+    {
+      "start": 98.399,
+      "duration": 4.121,
+      "text": "and you deployed that application using"
+    },
+    {
+      "start": 99.96,
+      "duration": 4.159,
+      "text": "kubernetes so this is how you should be"
+    },
+    {
+      "start": 102.52,
+      "duration": 3.76,
+      "text": "sharing your experience of how you use"
+    },
+    {
+      "start": 104.119,
+      "duration": 3.761,
+      "text": "Docker in the past just to give an idea"
+    },
+    {
+      "start": 106.28,
+      "duration": 3.879,
+      "text": "that you actually know Docker and you"
+    },
+    {
+      "start": 107.88,
+      "duration": 5.16,
+      "text": "have used it so the followup question"
+    },
+    {
+      "start": 110.159,
+      "duration": 5.401,
+      "text": "would be can you explain how Docker"
+    },
+    {
+      "start": 113.04,
+      "duration": 4.96,
+      "text": "containers differ from virtual"
+    },
+    {
+      "start": 115.56,
+      "duration": 3.919,
+      "text": "machine so we all know Docker containers"
+    },
+    {
+      "start": 118.0,
+      "duration": 3.56,
+      "text": "are lightweight compared to Virtual"
+    },
+    {
+      "start": 119.479,
+      "duration": 3.96,
+      "text": "Machine because here you just have your"
+    },
+    {
+      "start": 121.56,
+      "duration": 3.72,
+      "text": "application with your dependencies"
+    },
+    {
+      "start": 123.439,
+      "duration": 4.68,
+      "text": "whereas in virtual machine you deploy a"
+    },
+    {
+      "start": 125.28,
+      "duration": 5.679,
+      "text": "complete operating system so Docker"
+    },
+    {
+      "start": 128.119,
+      "duration": 4.961,
+      "text": "containers share the host OS kernel"
+    },
+    {
+      "start": 130.959,
+      "duration": 4.92,
+      "text": "making them lightweight and efficient"
+    },
+    {
+      "start": 133.08,
+      "duration": 4.12,
+      "text": "they provide process level isolation and"
+    },
+    {
+      "start": 135.879,
+      "duration": 4.0,
+      "text": "package application with their"
+    },
+    {
+      "start": 137.2,
+      "duration": 4.84,
+      "text": "dependencies whereas virtual machines"
+    },
+    {
+      "start": 139.879,
+      "duration": 5.041,
+      "text": "run full guest operating systems on a"
+    },
+    {
+      "start": 142.04,
+      "duration": 5.6,
+      "text": "hypervisor and consume more resources"
+    },
+    {
+      "start": 144.92,
+      "duration": 4.52,
+      "text": "and offer strong isolation so here is"
+    },
+    {
+      "start": 147.64,
+      "duration": 3.16,
+      "text": "the difference here we only have our"
+    },
+    {
+      "start": 149.44,
+      "duration": 2.92,
+      "text": "application"
+    },
+    {
+      "start": 150.8,
+      "duration": 3.48,
+      "text": "here we have the complete operating"
+    },
+    {
+      "start": 152.36,
+      "duration": 5.04,
+      "text": "system we only have process level"
+    },
+    {
+      "start": 154.28,
+      "duration": 5.599,
+      "text": "isolation here we have stronger"
+    },
+    {
+      "start": 157.4,
+      "duration": 4.52,
+      "text": "isolation so moving on the next question"
+    },
+    {
+      "start": 159.879,
+      "duration": 3.841,
+      "text": "which is a scenario based question you"
+    },
+    {
+      "start": 161.92,
+      "duration": 4.12,
+      "text": "are in charge of maintaining Docker"
+    },
+    {
+      "start": 163.72,
+      "duration": 4.08,
+      "text": "environments in your company and you"
+    },
+    {
+      "start": 166.04,
+      "duration": 4.76,
+      "text": "have noticed many stopped containers and"
+    },
+    {
+      "start": 167.8,
+      "duration": 4.88,
+      "text": "unused networks taking up space describe"
+    },
+    {
+      "start": 170.8,
+      "duration": 3.799,
+      "text": "how you would clean up these resources"
+    },
+    {
+      "start": 172.68,
+      "duration": 3.639,
+      "text": "effectively to optimized Docker"
+    },
+    {
+      "start": 174.599,
+      "duration": 3.881,
+      "text": "environment so in this question the"
+    },
+    {
+      "start": 176.319,
+      "duration": 4.64,
+      "text": "question is saying you have unused"
+    },
+    {
+      "start": 178.48,
+      "duration": 4.2,
+      "text": "networks and also stop Docker containers"
+    },
+    {
+      "start": 180.959,
+      "duration": 3.881,
+      "text": "which are taking up space you want to"
+    },
+    {
+      "start": 182.68,
+      "duration": 4.16,
+      "text": "delete them to free up some space how"
+    },
+    {
+      "start": 184.84,
+      "duration": 4.2,
+      "text": "you can do it so we can do this using"
+    },
+    {
+      "start": 186.84,
+      "duration": 4.399,
+      "text": "Docker prune command Docker prune"
+    },
+    {
+      "start": 189.04,
+      "duration": 4.279,
+      "text": "command can be used to delete images can"
+    },
+    {
+      "start": 191.239,
+      "duration": 4.56,
+      "text": "be used to delete volumes containers and"
+    },
+    {
+      "start": 193.319,
+      "duration": 5.0,
+      "text": "all and lot more so if I show you right"
+    },
+    {
+      "start": 195.799,
+      "duration": 4.121,
+      "text": "now I have these four images in my"
+    },
+    {
+      "start": 198.319,
+      "duration": 4.041,
+      "text": "machine and if I want to delete all of"
+    },
+    {
+      "start": 199.92,
+      "duration": 4.52,
+      "text": "them at once I can just run Docker image"
+    },
+    {
+      "start": 202.36,
+      "duration": 3.48,
+      "text": "prune command when I run this it will"
+    },
+    {
+      "start": 204.44,
+      "duration": 4.799,
+      "text": "give me a warning saying this will"
+    },
+    {
+      "start": 205.84,
+      "duration": 5.8,
+      "text": "remove all dangling images similarly you"
+    },
+    {
+      "start": 209.239,
+      "duration": 4.881,
+      "text": "can also use use Docker prune with"
+    },
+    {
+      "start": 211.64,
+      "duration": 4.64,
+      "text": "container to create to delete all the"
+    },
+    {
+      "start": 214.12,
+      "duration": 4.08,
+      "text": "different containers which are stopped"
+    },
+    {
+      "start": 216.28,
+      "duration": 4.64,
+      "text": "you can also use Docker volume prune to"
+    },
+    {
+      "start": 218.2,
+      "duration": 4.28,
+      "text": "delete unused volumes Network image and"
+    },
+    {
+      "start": 220.92,
+      "duration": 3.2,
+      "text": "lot more if you want to delete"
+    },
+    {
+      "start": 222.48,
+      "duration": 3.72,
+      "text": "everything you can use Docker system"
+    },
+    {
+      "start": 224.12,
+      "duration": 4.08,
+      "text": "prune command which combines these"
+    },
+    {
+      "start": 226.2,
+      "duration": 3.92,
+      "text": "functionalities into one command"
+    },
+    {
+      "start": 228.2,
+      "duration": 3.92,
+      "text": "ensuring that Docker removes any"
+    },
+    {
+      "start": 230.12,
+      "duration": 3.88,
+      "text": "resources not associated with a running"
+    },
+    {
+      "start": 232.12,
+      "duration": 4.28,
+      "text": "container but when you run this Docker"
+    },
+    {
+      "start": 234.0,
+      "duration": 5.2,
+      "text": "system prune make sure you know that it"
+    },
+    {
+      "start": 236.4,
+      "duration": 4.679,
+      "text": "permanently deletes unused resources and"
+    },
+    {
+      "start": 239.2,
+      "duration": 4.48,
+      "text": "any data associated with them will be"
+    },
+    {
+      "start": 241.079,
+      "duration": 4.88,
+      "text": "lost so always be cautious when running"
+    },
+    {
+      "start": 243.68,
+      "duration": 5.199,
+      "text": "this command in production there is also"
+    },
+    {
+      "start": 245.959,
+      "duration": 6.081,
+      "text": "example of how Docker system prune works"
+    },
+    {
+      "start": 248.879,
+      "duration": 4.801,
+      "text": "so so moving on the next question is you"
+    },
+    {
+      "start": 252.04,
+      "duration": 3.839,
+      "text": "are working on a project that requires"
+    },
+    {
+      "start": 253.68,
+      "duration": 4.44,
+      "text": "Docker container to persistently store"
+    },
+    {
+      "start": 255.879,
+      "duration": 4.401,
+      "text": "data how you how do you handle"
+    },
+    {
+      "start": 258.12,
+      "duration": 4.04,
+      "text": "persistent storage in Docker so we all"
+    },
+    {
+      "start": 260.28,
+      "duration": 3.88,
+      "text": "know Docker has volumes which you can"
+    },
+    {
+      "start": 262.16,
+      "duration": 5.24,
+      "text": "use or attach to different containers to"
+    },
+    {
+      "start": 264.16,
+      "duration": 5.0,
+      "text": "purist data so here the answer is Docker"
+    },
+    {
+      "start": 267.4,
+      "duration": 4.04,
+      "text": "volumes can be used for persistent"
+    },
+    {
+      "start": 269.16,
+      "duration": 3.84,
+      "text": "storage they are managed by Docker and"
+    },
+    {
+      "start": 271.44,
+      "duration": 3.56,
+      "text": "can be attached to one or more"
+    },
+    {
+      "start": 273.0,
+      "duration": 3.919,
+      "text": "containers you can see the diagram here"
+    },
+    {
+      "start": 275.0,
+      "duration": 3.479,
+      "text": "we have volumes which are attached to"
+    },
+    {
+      "start": 276.919,
+      "duration": 4.081,
+      "text": "one or more"
+    },
+    {
+      "start": 278.479,
+      "duration": 5.041,
+      "text": "containers another approach is to use"
+    },
+    {
+      "start": 281.0,
+      "duration": 4.16,
+      "text": "bind mounts which are linked to host"
+    },
+    {
+      "start": 283.52,
+      "duration": 3.959,
+      "text": "file system so you can also use bind"
+    },
+    {
+      "start": 285.16,
+      "duration": 4.16,
+      "text": "mounts to purs data and if you want to"
+    },
+    {
+      "start": 287.479,
+      "duration": 3.841,
+      "text": "learn more you can check out this link"
+    },
+    {
+      "start": 289.32,
+      "duration": 4.48,
+      "text": "here which explains how you can purs"
+    },
+    {
+      "start": 291.32,
+      "duration": 4.92,
+      "text": "data in Docker"
+    },
+    {
+      "start": 293.8,
+      "duration": 4.36,
+      "text": "containers the next question is a"
+    },
+    {
+      "start": 296.24,
+      "duration": 4.16,
+      "text": "company wants to create thousands of"
+    },
+    {
+      "start": 298.16,
+      "duration": 4.68,
+      "text": "containers is there a limit on how many"
+    },
+    {
+      "start": 300.4,
+      "duration": 4.16,
+      "text": "containers you can run in Docker so"
+    },
+    {
+      "start": 302.84,
+      "duration": 4.0,
+      "text": "there is actually no limit when running"
+    },
+    {
+      "start": 304.56,
+      "duration": 4.4,
+      "text": "Docker containers the only limit is the"
+    },
+    {
+      "start": 306.84,
+      "duration": 4.16,
+      "text": "hardware limit of the machine limit if"
+    },
+    {
+      "start": 308.96,
+      "duration": 4.36,
+      "text": "the machine does not have enough CPU it"
+    },
+    {
+      "start": 311.0,
+      "duration": 4.68,
+      "text": "will not be able to run the container so"
+    },
+    {
+      "start": 313.32,
+      "duration": 3.96,
+      "text": "the question so the answer here is the"
+    },
+    {
+      "start": 315.68,
+      "duration": 4.16,
+      "text": "amount of containers that may be run"
+    },
+    {
+      "start": 317.28,
+      "duration": 5.039,
+      "text": "under Docker has no explicit specified"
+    },
+    {
+      "start": 319.84,
+      "duration": 4.639,
+      "text": "limit but it all relies on the"
+    },
+    {
+      "start": 322.319,
+      "duration": 4.521,
+      "text": "constraints particularly the hardware"
+    },
+    {
+      "start": 324.479,
+      "duration": 3.881,
+      "text": "constraints is the size of the program"
+    },
+    {
+      "start": 326.84,
+      "duration": 4.199,
+      "text": "and the number of CPU resources"
+    },
+    {
+      "start": 328.36,
+      "duration": 4.16,
+      "text": "available are two major determinance if"
+    },
+    {
+      "start": 331.039,
+      "duration": 4.0,
+      "text": "your program isn't too large and you"
+    },
+    {
+      "start": 332.52,
+      "duration": 4.36,
+      "text": "have plenty of CPU resources we can run"
+    },
+    {
+      "start": 335.039,
+      "duration": 4.681,
+      "text": "a lot of Docker containers which means"
+    },
+    {
+      "start": 336.88,
+      "duration": 5.52,
+      "text": "if you have a machine with 10 CPUs and"
+    },
+    {
+      "start": 339.72,
+      "duration": 4.319,
+      "text": "10 GB of RAM you can run as many"
+    },
+    {
+      "start": 342.4,
+      "duration": 4.28,
+      "text": "containers as you want which is in the"
+    },
+    {
+      "start": 344.039,
+      "duration": 4.16,
+      "text": "limit of 10 CPUs and 10gb RAM if it's"
+    },
+    {
+      "start": 346.68,
+      "duration": 4.32,
+      "text": "more than that you will not be able to"
+    },
+    {
+      "start": 348.199,
+      "duration": 4.601,
+      "text": "run so now that you understood this the"
+    },
+    {
+      "start": 351.0,
+      "duration": 3.12,
+      "text": "followup question is a scenario based"
+    },
+    {
+      "start": 352.8,
+      "duration": 3.6,
+      "text": "question"
+    },
+    {
+      "start": 354.12,
+      "duration": 4.6,
+      "text": "where you are managing a Docker"
+    },
+    {
+      "start": 356.4,
+      "duration": 4.88,
+      "text": "environment and need to ensure that each"
+    },
+    {
+      "start": 358.72,
+      "duration": 4.919,
+      "text": "container operates within defined CPU"
+    },
+    {
+      "start": 361.28,
+      "duration": 4.32,
+      "text": "and memory limits how do you limit the"
+    },
+    {
+      "start": 363.639,
+      "duration": 3.761,
+      "text": "CPU and memory usage of a Docker"
+    },
+    {
+      "start": 365.6,
+      "duration": 4.159,
+      "text": "container so in this question they are"
+    },
+    {
+      "start": 367.4,
+      "duration": 4.919,
+      "text": "asking you to create a Docker container"
+    },
+    {
+      "start": 369.759,
+      "duration": 5.44,
+      "text": "that should be using only defined CPU"
+    },
+    {
+      "start": 372.319,
+      "duration": 5.361,
+      "text": "which might be 10 CPUs or two CPUs and"
+    },
+    {
+      "start": 375.199,
+      "duration": 4.44,
+      "text": "then defined memory limit as well so you"
+    },
+    {
+      "start": 377.68,
+      "duration": 4.16,
+      "text": "can actually do this using the docker"
+    },
+    {
+      "start": 379.639,
+      "duration": 5.881,
+      "text": "run command passing"
+    },
+    {
+      "start": 381.84,
+      "duration": 6.0,
+      "text": "out-- CPU and-- memory"
+    },
+    {
+      "start": 385.52,
+      "duration": 4.72,
+      "text": "argument so Docker allows you to limit"
+    },
+    {
+      "start": 387.84,
+      "duration": 4.759,
+      "text": "the CPU and memory usage of a container"
+    },
+    {
+      "start": 390.24,
+      "duration": 5.76,
+      "text": "using resource constraints you can set"
+    },
+    {
+      "start": 392.599,
+      "duration": 6.081,
+      "text": "the CPU with the-- CPU option and the"
+    },
+    {
+      "start": 396.0,
+      "duration": 5.72,
+      "text": "memory with the dh- memory option here"
+    },
+    {
+      "start": 398.68,
+      "duration": 6.48,
+      "text": "is an example of Docker run-- CPU equal"
+    },
+    {
+      "start": 401.72,
+      "duration": 6.12,
+      "text": "to 2 memory equal to 1 GB and then my"
+    },
+    {
+      "start": 405.16,
+      "duration": 4.92,
+      "text": "container memory equals to 1G and then"
+    },
+    {
+      "start": 407.84,
+      "duration": 4.4,
+      "text": "my container this is how you can limit"
+    },
+    {
+      "start": 410.08,
+      "duration": 4.48,
+      "text": "how much CPU and memory should be used"
+    },
+    {
+      "start": 412.24,
+      "duration": 2.32,
+      "text": "by the"
+    },
+    {
+      "start": 414.68,
+      "duration": 4.959,
+      "text": "container moving on the next question is"
+    },
+    {
+      "start": 417.479,
+      "duration": 4.361,
+      "text": "what is a Docker file and how it is used"
+    },
+    {
+      "start": 419.639,
+      "duration": 4.481,
+      "text": "in Docker so we already know Docker file"
+    },
+    {
+      "start": 421.84,
+      "duration": 3.6,
+      "text": "is a text based document that includes"
+    },
+    {
+      "start": 424.12,
+      "duration": 3.56,
+      "text": "commands and"
+    },
+    {
+      "start": 425.44,
+      "duration": 4.319,
+      "text": "instructions that includes commands and"
+    },
+    {
+      "start": 427.68,
+      "duration": 4.48,
+      "text": "instructions on how you want your Docker"
+    },
+    {
+      "start": 429.759,
+      "duration": 4.361,
+      "text": "image to be so we have this Docker file"
+    },
+    {
+      "start": 432.16,
+      "duration": 4.24,
+      "text": "then we build an image and then we run a"
+    },
+    {
+      "start": 434.12,
+      "duration": 4.479,
+      "text": "container here is an example of a Docker"
+    },
+    {
+      "start": 436.4,
+      "duration": 4.68,
+      "text": "file which includes some instructions so"
+    },
+    {
+      "start": 438.599,
+      "duration": 5.04,
+      "text": "we have from node which defines the base"
+    },
+    {
+      "start": 441.08,
+      "duration": 4.799,
+      "text": "image work directory copy run and then"
+    },
+    {
+      "start": 443.639,
+      "duration": 3.801,
+      "text": "CMD most of the questions in the"
+    },
+    {
+      "start": 445.879,
+      "duration": 4.401,
+      "text": "interviews will be based on the"
+    },
+    {
+      "start": 447.44,
+      "duration": 4.8,
+      "text": "instructions inside this docker file so"
+    },
+    {
+      "start": 450.28,
+      "duration": 4.72,
+      "text": "make sure you understand what is from"
+    },
+    {
+      "start": 452.24,
+      "duration": 4.519,
+      "text": "and what it does what is workd command"
+    },
+    {
+      "start": 455.0,
+      "duration": 4.08,
+      "text": "what is copy instruction what is run"
+    },
+    {
+      "start": 456.759,
+      "duration": 4.201,
+      "text": "instruction and so on so if you want to"
+    },
+    {
+      "start": 459.08,
+      "duration": 4.76,
+      "text": "know more on these instructions I have a"
+    },
+    {
+      "start": 460.96,
+      "duration": 4.639,
+      "text": "video created which you can check here"
+    },
+    {
+      "start": 463.84,
+      "duration": 3.84,
+      "text": "and in this video I've explained all"
+    },
+    {
+      "start": 465.599,
+      "duration": 4.16,
+      "text": "different Docker instructions and how"
+    },
+    {
+      "start": 467.68,
+      "duration": 4.199,
+      "text": "they work with the Hands-On demo so make"
+    },
+    {
+      "start": 469.759,
+      "duration": 4.241,
+      "text": "sure you check it out and this is why"
+    },
+    {
+      "start": 471.879,
+      "duration": 4.28,
+      "text": "the followup question is what is the"
+    },
+    {
+      "start": 474.0,
+      "duration": 4.599,
+      "text": "purpose of CMD instruction in the docker"
+    },
+    {
+      "start": 476.159,
+      "duration": 4.44,
+      "text": "file so as you can see here CMD"
+    },
+    {
+      "start": 478.599,
+      "duration": 4.44,
+      "text": "instruction here is running the command"
+    },
+    {
+      "start": 480.599,
+      "duration": 4.681,
+      "text": "npm start which will run whenever the"
+    },
+    {
+      "start": 483.039,
+      "duration": 4.041,
+      "text": "container is started so this command is"
+    },
+    {
+      "start": 485.28,
+      "duration": 4.4,
+      "text": "going to start the node"
+    },
+    {
+      "start": 487.08,
+      "duration": 4.36,
+      "text": "application CMD is used to execute a"
+    },
+    {
+      "start": 489.68,
+      "duration": 3.519,
+      "text": "command that will run whenever the"
+    },
+    {
+      "start": 491.44,
+      "duration": 4.64,
+      "text": "application is started or the container"
+    },
+    {
+      "start": 493.199,
+      "duration": 5.521,
+      "text": "is started so here you can see the CMD"
+    },
+    {
+      "start": 496.08,
+      "duration": 4.959,
+      "text": "instruction in Docker file specifies the"
+    },
+    {
+      "start": 498.72,
+      "duration": 4.96,
+      "text": "default command to be executed when the"
+    },
+    {
+      "start": 501.039,
+      "duration": 4.361,
+      "text": "container is started from a Docker image"
+    },
+    {
+      "start": 503.68,
+      "duration": 3.0,
+      "text": "it defines the primary functionality of"
+    },
+    {
+      "start": 505.4,
+      "duration": 4.239,
+      "text": "a container such as running an"
+    },
+    {
+      "start": 506.68,
+      "duration": 4.359,
+      "text": "application as here or executing a"
+    },
+    {
+      "start": 509.639,
+      "duration": 3.801,
+      "text": "script if the docker container is"
+    },
+    {
+      "start": 511.039,
+      "duration": 5.081,
+      "text": "started without a command the command"
+    },
+    {
+      "start": 513.44,
+      "duration": 4.44,
+      "text": "defined in CMD will be executed so this"
+    },
+    {
+      "start": 516.12,
+      "duration": 4.12,
+      "text": "is what CMD"
+    },
+    {
+      "start": 517.88,
+      "duration": 4.32,
+      "text": "does moving on the next question is a"
+    },
+    {
+      "start": 520.24,
+      "duration": 4.159,
+      "text": "scenario based question again you have"
+    },
+    {
+      "start": 522.2,
+      "duration": 4.68,
+      "text": "been asked with ensuring the application"
+    },
+    {
+      "start": 524.399,
+      "duration": 5.081,
+      "text": "can handle increased loads by scaling"
+    },
+    {
+      "start": 526.88,
+      "duration": 5.04,
+      "text": "Docker containers horizontally how do"
+    },
+    {
+      "start": 529.48,
+      "duration": 4.0,
+      "text": "you scale Docker containers horizontally"
+    },
+    {
+      "start": 531.92,
+      "duration": 3.84,
+      "text": "so scaling Docker containers"
+    },
+    {
+      "start": 533.48,
+      "duration": 4.88,
+      "text": "horizontally means running multiple"
+    },
+    {
+      "start": 535.76,
+      "duration": 4.319,
+      "text": "Docker containers so you can actually do"
+    },
+    {
+      "start": 538.36,
+      "duration": 3.84,
+      "text": "this using a container orchestration"
+    },
+    {
+      "start": 540.079,
+      "duration": 3.841,
+      "text": "tools such as kubernetes inside"
+    },
+    {
+      "start": 542.2,
+      "duration": 3.96,
+      "text": "kubernetes you can define a manifest"
+    },
+    {
+      "start": 543.92,
+      "duration": 4.88,
+      "text": "file specifying you want to have five"
+    },
+    {
+      "start": 546.16,
+      "duration": 6.119,
+      "text": "replicas of this particular image so it"
+    },
+    {
+      "start": 548.8,
+      "duration": 5.36,
+      "text": "will run the same application five times"
+    },
+    {
+      "start": 552.279,
+      "duration": 4.081,
+      "text": "so you can see here to scale Docker"
+    },
+    {
+      "start": 554.16,
+      "duration": 4.359,
+      "text": "containers horizontally you can use"
+    },
+    {
+      "start": 556.36,
+      "duration": 4.32,
+      "text": "Docker form or container orchestration"
+    },
+    {
+      "start": 558.519,
+      "duration": 3.801,
+      "text": "tool like kubernetes which lets you"
+    },
+    {
+      "start": 560.68,
+      "duration": 3.56,
+      "text": "create and manage multiple Docker"
+    },
+    {
+      "start": 562.32,
+      "duration": 4.04,
+      "text": "containers defining the number of"
+    },
+    {
+      "start": 564.24,
+      "duration": 4.24,
+      "text": "replicas in declarative way which is"
+    },
+    {
+      "start": 566.36,
+      "duration": 3.96,
+      "text": "using manifest files and if you don't"
+    },
+    {
+      "start": 568.48,
+      "duration": 4.479,
+      "text": "know how it is done done you can check"
+    },
+    {
+      "start": 570.32,
+      "duration": 5.68,
+      "text": "out these videos or projects where I've"
+    },
+    {
+      "start": 572.959,
+      "duration": 4.761,
+      "text": "used kubernetes using Docker containers"
+    },
+    {
+      "start": 576.0,
+      "duration": 3.959,
+      "text": "uh so you can go and check out this"
+    },
+    {
+      "start": 577.72,
+      "duration": 3.76,
+      "text": "videos I would highly recommend you"
+    },
+    {
+      "start": 579.959,
+      "duration": 3.56,
+      "text": "doing the projects if you haven't done"
+    },
+    {
+      "start": 581.48,
+      "duration": 4.64,
+      "text": "it there are four different projects on"
+    },
+    {
+      "start": 583.519,
+      "duration": 4.76,
+      "text": "kubernetes using Docker there are also"
+    },
+    {
+      "start": 586.12,
+      "duration": 4.92,
+      "text": "more projects on my channel so make sure"
+    },
+    {
+      "start": 588.279,
+      "duration": 5.321,
+      "text": "to check this out and also do it"
+    },
+    {
+      "start": 591.04,
+      "duration": 3.84,
+      "text": "yourself now the next question is what"
+    },
+    {
+      "start": 593.6,
+      "duration": 4.679,
+      "text": "is the difference between a Docker"
+    },
+    {
+      "start": 594.88,
+      "duration": 5.56,
+      "text": "container and a kubernetes pod so"
+    },
+    {
+      "start": 598.279,
+      "duration": 3.721,
+      "text": "kubernetes pod is a object Docker"
+    },
+    {
+      "start": 600.44,
+      "duration": 4.48,
+      "text": "container is where your application is"
+    },
+    {
+      "start": 602.0,
+      "duration": 5.079,
+      "text": "running a kubernetes pod is something"
+    },
+    {
+      "start": 604.92,
+      "duration": 4.08,
+      "text": "that will contain one or more Docker"
+    },
+    {
+      "start": 607.079,
+      "duration": 4.44,
+      "text": "containers so this is the difference if"
+    },
+    {
+      "start": 609.0,
+      "duration": 4.12,
+      "text": "you see here this is a pod inside a"
+    },
+    {
+      "start": 611.519,
+      "duration": 3.521,
+      "text": "particular node in the kubernetes"
+    },
+    {
+      "start": 613.12,
+      "duration": 4.2,
+      "text": "cluster and inside this pod you have a"
+    },
+    {
+      "start": 615.04,
+      "duration": 4.72,
+      "text": "container you can have one or more than"
+    },
+    {
+      "start": 617.32,
+      "duration": 4.8,
+      "text": "one container so a Docker container is a"
+    },
+    {
+      "start": 619.76,
+      "duration": 4.16,
+      "text": "lightweight and isolated environment"
+    },
+    {
+      "start": 622.12,
+      "duration": 4.08,
+      "text": "that runs a single instance of the"
+    },
+    {
+      "start": 623.92,
+      "duration": 4.72,
+      "text": "application and it is managed by Docker"
+    },
+    {
+      "start": 626.2,
+      "duration": 5.52,
+      "text": "and provides process level isolation"
+    },
+    {
+      "start": 628.64,
+      "duration": 5.24,
+      "text": "whereas a kubernetes pod is a higher"
+    },
+    {
+      "start": 631.72,
+      "duration": 4.76,
+      "text": "level abstraction and that can contain"
+    },
+    {
+      "start": 633.88,
+      "duration": 4.56,
+      "text": "one or more Docker containers or it"
+    },
+    {
+      "start": 636.48,
+      "duration": 6.08,
+      "text": "could be also other containers from"
+    },
+    {
+      "start": 638.44,
+      "duration": 4.12,
+      "text": "other runtime like cryo"
+    },
+    {
+      "start": 651.72,
+      "duration": 5.359,
+      "text": "uh deploying a microservices"
+    },
+    {
+      "start": 654.12,
+      "duration": 5.24,
+      "text": "architecture using Docker containers one"
+    },
+    {
+      "start": 657.079,
+      "duration": 3.961,
+      "text": "of the containers critical to the"
+    },
+    {
+      "start": 659.36,
+      "duration": 4.2,
+      "text": "systems functionality has suddenly"
+    },
+    {
+      "start": 661.04,
+      "duration": 4.88,
+      "text": "started failing without clear error"
+    },
+    {
+      "start": 663.56,
+      "duration": 5.12,
+      "text": "messages how do you debug issues in a"
+    },
+    {
+      "start": 665.92,
+      "duration": 4.56,
+      "text": "failing Docker container and this this"
+    },
+    {
+      "start": 668.68,
+      "duration": 3.68,
+      "text": "is very important interview question and"
+    },
+    {
+      "start": 670.48,
+      "duration": 3.799,
+      "text": "is and there is a high chance you will"
+    },
+    {
+      "start": 672.36,
+      "duration": 4.12,
+      "text": "get this question because you need to"
+    },
+    {
+      "start": 674.279,
+      "duration": 4.8,
+      "text": "know how to debug issues for a failing"
+    },
+    {
+      "start": 676.48,
+      "duration": 4.52,
+      "text": "Docker containers you can do this first"
+    },
+    {
+      "start": 679.079,
+      "duration": 4.44,
+      "text": "by logging you can use the docker log"
+    },
+    {
+      "start": 681.0,
+      "duration": 4.88,
+      "text": "command to check logs for a failed"
+    },
+    {
+      "start": 683.519,
+      "duration": 4.56,
+      "text": "container or any container you can also"
+    },
+    {
+      "start": 685.88,
+      "duration": 4.24,
+      "text": "use shell access like you can go inside"
+    },
+    {
+      "start": 688.079,
+      "duration": 4.801,
+      "text": "the container using the exact command to"
+    },
+    {
+      "start": 690.12,
+      "duration": 5.12,
+      "text": "see what is the problem alternatively"
+    },
+    {
+      "start": 692.88,
+      "duration": 5.519,
+      "text": "you can also use image inspect command"
+    },
+    {
+      "start": 695.24,
+      "duration": 5.24,
+      "text": "so if I show you right now I have Docker"
+    },
+    {
+      "start": 698.399,
+      "duration": 4.281,
+      "text": "images I have the survey image if I want"
+    },
+    {
+      "start": 700.48,
+      "duration": 6.64,
+      "text": "to see what is inside this or inspect"
+    },
+    {
+      "start": 702.68,
+      "duration": 5.68,
+      "text": "this I can just say Docker image inspect"
+    },
+    {
+      "start": 707.12,
+      "duration": 3.2,
+      "text": "and the name of the image which is"
+    },
+    {
+      "start": 708.36,
+      "duration": 3.919,
+      "text": "survey here once I do this it will give"
+    },
+    {
+      "start": 710.32,
+      "duration": 4.44,
+      "text": "me all the layers and this can also help"
+    },
+    {
+      "start": 712.279,
+      "duration": 4.641,
+      "text": "me troubleshoot or dbook any issues in"
+    },
+    {
+      "start": 714.76,
+      "duration": 4.6,
+      "text": "my container lastly there's also health"
+    },
+    {
+      "start": 716.92,
+      "duration": 4.32,
+      "text": "checks Docker supports defining health"
+    },
+    {
+      "start": 719.36,
+      "duration": 3.56,
+      "text": "checks for containers allowing you to"
+    },
+    {
+      "start": 721.24,
+      "duration": 3.52,
+      "text": "monitor the health status and"
+    },
+    {
+      "start": 722.92,
+      "duration": 4.039,
+      "text": "automatically restart or take action"
+    },
+    {
+      "start": 724.76,
+      "duration": 3.519,
+      "text": "based on predefined conditions apart"
+    },
+    {
+      "start": 726.959,
+      "duration": 4.521,
+      "text": "from this you can also use different"
+    },
+    {
+      "start": 728.279,
+      "duration": 5.68,
+      "text": "tools like Prometheus grafana or also"
+    },
+    {
+      "start": 731.48,
+      "duration": 4.799,
+      "text": "loging tools like Loki to see what is"
+    },
+    {
+      "start": 733.959,
+      "duration": 5.841,
+      "text": "the problem with your Docker"
+    },
+    {
+      "start": 736.279,
+      "duration": 5.321,
+      "text": "container moving on the next question is"
+    },
+    {
+      "start": 739.8,
+      "duration": 4.56,
+      "text": "can you describe a situation where you"
+    },
+    {
+      "start": 741.6,
+      "duration": 5.64,
+      "text": "optimize a Docker file for faster build"
+    },
+    {
+      "start": 744.36,
+      "duration": 4.44,
+      "text": "times or smaller or smaller image size"
+    },
+    {
+      "start": 747.24,
+      "duration": 3.839,
+      "text": "again a very important question because"
+    },
+    {
+      "start": 748.8,
+      "duration": 5.68,
+      "text": "no one wants because the devops engineer"
+    },
+    {
+      "start": 751.079,
+      "duration": 5.601,
+      "text": "need to know how to optimize images to"
+    },
+    {
+      "start": 754.48,
+      "duration": 4.919,
+      "text": "make it shorter or to make it run"
+    },
+    {
+      "start": 756.68,
+      "duration": 4.56,
+      "text": "properly so optimizing Docker file could"
+    },
+    {
+      "start": 759.399,
+      "duration": 5.281,
+      "text": "involve various strategies like using a"
+    },
+    {
+      "start": 761.24,
+      "duration": 5.0,
+      "text": "smaller base image mostly Alpine images"
+    },
+    {
+      "start": 764.68,
+      "duration": 4.08,
+      "text": "reducing the number of layers by"
+    },
+    {
+      "start": 766.24,
+      "duration": 5.32,
+      "text": "combining commands or using multi-stage"
+    },
+    {
+      "start": 768.76,
+      "duration": 4.639,
+      "text": "builds to exclude unnecessary files from"
+    },
+    {
+      "start": 771.56,
+      "duration": 3.16,
+      "text": "the final image so these are different"
+    },
+    {
+      "start": 773.399,
+      "duration": 4.641,
+      "text": "strategies you can use you can use"
+    },
+    {
+      "start": 774.72,
+      "duration": 5.76,
+      "text": "smaller base images you you can uh avoid"
+    },
+    {
+      "start": 778.04,
+      "duration": 5.68,
+      "text": "using multiple instru inside your Docker"
+    },
+    {
+      "start": 780.48,
+      "duration": 4.719,
+      "text": "file you can try to use just one run"
+    },
+    {
+      "start": 783.72,
+      "duration": 3.2,
+      "text": "command and put all the commands you"
+    },
+    {
+      "start": 785.199,
+      "duration": 4.481,
+      "text": "want to run rather than having them"
+    },
+    {
+      "start": 786.92,
+      "duration": 4.32,
+      "text": "multiple times uh and then you can also"
+    },
+    {
+      "start": 789.68,
+      "duration": 4.24,
+      "text": "use multi-stage"
+    },
+    {
+      "start": 791.24,
+      "duration": 6.159,
+      "text": "builds so this is how you can optimize"
+    },
+    {
+      "start": 793.92,
+      "duration": 3.479,
+      "text": "your images to"
+    },
+    {
+      "start": 806.72,
+      "duration": 4.64,
+      "text": "make so multi-stage Docker build is is"
+    },
+    {
+      "start": 809.279,
+      "duration": 4.761,
+      "text": "something like this in a Docker file you"
+    },
+    {
+      "start": 811.36,
+      "duration": 5.36,
+      "text": "will have multiple from Instructions"
+    },
+    {
+      "start": 814.04,
+      "duration": 4.88,
+      "text": "every from instruction Define a stage so"
+    },
+    {
+      "start": 816.72,
+      "duration": 3.919,
+      "text": "you can see here multi-stage builds and"
+    },
+    {
+      "start": 818.92,
+      "duration": 4.279,
+      "text": "Docker allow you to create optimized"
+    },
+    {
+      "start": 820.639,
+      "duration": 4.921,
+      "text": "Docker images by leveraging multiple"
+    },
+    {
+      "start": 823.199,
+      "duration": 4.401,
+      "text": "build stages to create a multi-stage"
+    },
+    {
+      "start": 825.56,
+      "duration": 3.44,
+      "text": "build you define multiple from"
+    },
+    {
+      "start": 827.6,
+      "duration": 3.64,
+      "text": "Instructions as you can see there are"
+    },
+    {
+      "start": 829.0,
+      "duration": 4.44,
+      "text": "two from instruction which means there"
+    },
+    {
+      "start": 831.24,
+      "duration": 5.519,
+      "text": "are two stages here and then if you want"
+    },
+    {
+      "start": 833.44,
+      "duration": 5.72,
+      "text": "to pass in some uh artifacts you can do"
+    },
+    {
+      "start": 836.759,
+      "duration": 4.361,
+      "text": "that using copy command so each stage"
+    },
+    {
+      "start": 839.16,
+      "duration": 4.76,
+      "text": "can use different base image and perform"
+    },
+    {
+      "start": 841.12,
+      "duration": 5.2,
+      "text": "specific build steps intermediate build"
+    },
+    {
+      "start": 843.92,
+      "duration": 5.52,
+      "text": "artifacts can be copied between stages"
+    },
+    {
+      "start": 846.32,
+      "duration": 4.48,
+      "text": "using the copy Das Dash from instruction"
+    },
+    {
+      "start": 849.44,
+      "duration": 4.16,
+      "text": "so this is how you can create"
+    },
+    {
+      "start": 850.8,
+      "duration": 5.839,
+      "text": "multi-stage builds in"
+    },
+    {
+      "start": 853.6,
+      "duration": 4.64,
+      "text": "Docker moving on the next question is"
+    },
+    {
+      "start": 856.639,
+      "duration": 4.041,
+      "text": "how do you create a custom Docker"
+    },
+    {
+      "start": 858.24,
+      "duration": 5.0,
+      "text": "Network so we have Docker Network"
+    },
+    {
+      "start": 860.68,
+      "duration": 5.44,
+      "text": "command to create custom networks which"
+    },
+    {
+      "start": 863.24,
+      "duration": 4.719,
+      "text": "is like this here so to create a Docker"
+    },
+    {
+      "start": 866.12,
+      "duration": 3.56,
+      "text": "so to create a custom Docker Network you"
+    },
+    {
+      "start": 867.959,
+      "duration": 3.921,
+      "text": "can use the docker Network create"
+    },
+    {
+      "start": 869.68,
+      "duration": 4.12,
+      "text": "command followed by the desired network"
+    },
+    {
+      "start": 871.88,
+      "duration": 4.16,
+      "text": "name and I've also explained this"
+    },
+    {
+      "start": 873.8,
+      "duration": 4.479,
+      "text": "properly in the docker video if you"
+    },
+    {
+      "start": 876.04,
+      "duration": 4.039,
+      "text": "haven't checked it out I've also shared"
+    },
+    {
+      "start": 878.279,
+      "duration": 3.36,
+      "text": "notes where all these commands are"
+    },
+    {
+      "start": 880.079,
+      "duration": 3.641,
+      "text": "listed down so you can also check that"
+    },
+    {
+      "start": 881.639,
+      "duration": 4.0,
+      "text": "out if you want me to share it again let"
+    },
+    {
+      "start": 883.72,
+      "duration": 3.96,
+      "text": "me know in the comment section so this"
+    },
+    {
+      "start": 885.639,
+      "duration": 3.521,
+      "text": "is a command which can create a network"
+    },
+    {
+      "start": 887.68,
+      "duration": 3.959,
+      "text": "which will be a custom Network and you"
+    },
+    {
+      "start": 889.16,
+      "duration": 4.64,
+      "text": "can also Define the driver uh using the"
+    },
+    {
+      "start": 891.639,
+      "duration": 4.961,
+      "text": "dash dash driver"
+    },
+    {
+      "start": 893.8,
+      "duration": 3.92,
+      "text": "option so moving on the next question is"
+    },
+    {
+      "start": 896.6,
+      "duration": 3.44,
+      "text": "you are working on a critical"
+    },
+    {
+      "start": 897.72,
+      "duration": 4.88,
+      "text": "application running in docker containers"
+    },
+    {
+      "start": 900.04,
+      "duration": 4.96,
+      "text": "and update needs to be applied without"
+    },
+    {
+      "start": 902.6,
+      "duration": 5.359,
+      "text": "risking data loss so how do you update a"
+    },
+    {
+      "start": 905.0,
+      "duration": 4.6,
+      "text": "Docker container without losing data so"
+    },
+    {
+      "start": 907.959,
+      "duration": 3.601,
+      "text": "you have a container which you want to"
+    },
+    {
+      "start": 909.6,
+      "duration": 4.159,
+      "text": "update but there's also some data inside"
+    },
+    {
+      "start": 911.56,
+      "duration": 4.04,
+      "text": "it you don't want the data to be deleted"
+    },
+    {
+      "start": 913.759,
+      "duration": 5.961,
+      "text": "how do you update the docker container"
+    },
+    {
+      "start": 915.6,
+      "duration": 5.88,
+      "text": "without any data loss so to steps are"
+    },
+    {
+      "start": 919.72,
+      "duration": 3.72,
+      "text": "first take the backup of whatever"
+    },
+    {
+      "start": 921.48,
+      "duration": 4.12,
+      "text": "whatever is there inside the container"
+    },
+    {
+      "start": 923.44,
+      "duration": 4.8,
+      "text": "once you have the backup then stop the"
+    },
+    {
+      "start": 925.6,
+      "duration": 3.799,
+      "text": "container pull the new image or the new"
+    },
+    {
+      "start": 928.24,
+      "duration": 4.0,
+      "text": "update of the container container and"
+    },
+    {
+      "start": 929.399,
+      "duration": 4.88,
+      "text": "then run it uh so here is the steps"
+    },
+    {
+      "start": 932.24,
+      "duration": 3.76,
+      "text": "create the backup stop the container"
+    },
+    {
+      "start": 934.279,
+      "duration": 4.04,
+      "text": "using talker stop command pull the"
+    },
+    {
+      "start": 936.0,
+      "duration": 4.319,
+      "text": "latest version using Docker pull start"
+    },
+    {
+      "start": 938.319,
+      "duration": 3.96,
+      "text": "the new container with the updated image"
+    },
+    {
+      "start": 940.319,
+      "duration": 3.601,
+      "text": "and make sure everything is working fine"
+    },
+    {
+      "start": 942.279,
+      "duration": 4.201,
+      "text": "then you can map the volume of the"
+    },
+    {
+      "start": 943.92,
+      "duration": 4.039,
+      "text": "backup that you have taken and then if"
+    },
+    {
+      "start": 946.48,
+      "duration": 4.44,
+      "text": "you can verify if everything is working"
+    },
+    {
+      "start": 947.959,
+      "duration": 4.521,
+      "text": "fine with the data inside the container"
+    },
+    {
+      "start": 950.92,
+      "duration": 3.479,
+      "text": "so this is how you can update without"
+    },
+    {
+      "start": 952.48,
+      "duration": 4.96,
+      "text": "any data"
+    },
+    {
+      "start": 954.399,
+      "duration": 5.0,
+      "text": "loss moving on the next question is you"
+    },
+    {
+      "start": 957.44,
+      "duration": 4.36,
+      "text": "are responsible for securing Docker"
+    },
+    {
+      "start": 959.399,
+      "duration": 4.68,
+      "text": "containers hosting your organization's"
+    },
+    {
+      "start": 961.8,
+      "duration": 4.599,
+      "text": "sensitive application how do you secure"
+    },
+    {
+      "start": 964.079,
+      "duration": 4.801,
+      "text": "Docker containers security is a very"
+    },
+    {
+      "start": 966.399,
+      "duration": 4.24,
+      "text": "very important thing for organizations"
+    },
+    {
+      "start": 968.88,
+      "duration": 3.72,
+      "text": "so make sure you know how to secure your"
+    },
+    {
+      "start": 970.639,
+      "duration": 4.401,
+      "text": "Docker containers and here we have some"
+    },
+    {
+      "start": 972.6,
+      "duration": 4.28,
+      "text": "best practices on how you can secure"
+    },
+    {
+      "start": 975.04,
+      "duration": 4.88,
+      "text": "Docker containers so the first best"
+    },
+    {
+      "start": 976.88,
+      "duration": 5.56,
+      "text": "practice is to use trusted base images"
+    },
+    {
+      "start": 979.92,
+      "duration": 5.88,
+      "text": "from reputable sources always make sure"
+    },
+    {
+      "start": 982.44,
+      "duration": 5.8,
+      "text": "to use trusted images second is to"
+    },
+    {
+      "start": 985.8,
+      "duration": 5.279,
+      "text": "always second is to regularly update"
+    },
+    {
+      "start": 988.24,
+      "duration": 3.88,
+      "text": "Docker and it underlying host system for"
+    },
+    {
+      "start": 991.079,
+      "duration": 3.641,
+      "text": "security"
+    },
+    {
+      "start": 992.12,
+      "duration": 4.399,
+      "text": "patches next to scan your Docker images"
+    },
+    {
+      "start": 994.72,
+      "duration": 4.32,
+      "text": "for vulnerabilities using tools like"
+    },
+    {
+      "start": 996.519,
+      "duration": 4.841,
+      "text": "Docker Scout which is a tool by Docker"
+    },
+    {
+      "start": 999.04,
+      "duration": 4.56,
+      "text": "itself then implementing Network"
+    },
+    {
+      "start": 1001.36,
+      "duration": 3.88,
+      "text": "segmentation and access control"
+    },
+    {
+      "start": 1003.6,
+      "duration": 3.84,
+      "text": "monitoring container activity and"
+    },
+    {
+      "start": 1005.24,
+      "duration": 4.32,
+      "text": "logging for security analysis using"
+    },
+    {
+      "start": 1007.44,
+      "duration": 4.48,
+      "text": "different tools and then applying the"
+    },
+    {
+      "start": 1009.56,
+      "duration": 4.24,
+      "text": "least privileged principle so here are"
+    },
+    {
+      "start": 1011.92,
+      "duration": 4.24,
+      "text": "some of the best practices to make sure"
+    },
+    {
+      "start": 1013.8,
+      "duration": 3.839,
+      "text": "you you have a secure Docker container"
+    },
+    {
+      "start": 1016.16,
+      "duration": 4.119,
+      "text": "or an application running on these"
+    },
+    {
+      "start": 1017.639,
+      "duration": 4.721,
+      "text": "Docker containers"
+    },
+    {
+      "start": 1020.279,
+      "duration": 5.28,
+      "text": "moving on the next question is Docker"
+    },
+    {
+      "start": 1022.36,
+      "duration": 5.559,
+      "text": "with cicd so have you used Docker in"
+    },
+    {
+      "start": 1025.559,
+      "duration": 5.681,
+      "text": "combination with continuous integration"
+    },
+    {
+      "start": 1027.919,
+      "duration": 5.4,
+      "text": "or continuous deployment system this"
+    },
+    {
+      "start": 1031.24,
+      "duration": 4.719,
+      "text": "should be yes all the time because no"
+    },
+    {
+      "start": 1033.319,
+      "duration": 5.041,
+      "text": "one wants a devops engineer who does not"
+    },
+    {
+      "start": 1035.959,
+      "duration": 6.321,
+      "text": "know how to create Docker images through"
+    },
+    {
+      "start": 1038.36,
+      "duration": 6.16,
+      "text": "cicd so we will answer it in a way yes"
+    },
+    {
+      "start": 1042.28,
+      "duration": 4.12,
+      "text": "in nearly all my projects for example in"
+    },
+    {
+      "start": 1044.52,
+      "duration": 4.84,
+      "text": "one projects we integrated Docker with"
+    },
+    {
+      "start": 1046.4,
+      "duration": 5.24,
+      "text": "Jenkins in the build stage J Lins would"
+    },
+    {
+      "start": 1049.36,
+      "duration": 4.8,
+      "text": "trigger a job that builds a new Docker"
+    },
+    {
+      "start": 1051.64,
+      "duration": 4.56,
+      "text": "image and pushes it to Docker registry"
+    },
+    {
+      "start": 1054.16,
+      "duration": 3.92,
+      "text": "during the deployment stage this image"
+    },
+    {
+      "start": 1056.2,
+      "duration": 4.16,
+      "text": "was pulled from the registry and"
+    },
+    {
+      "start": 1058.08,
+      "duration": 4.4,
+      "text": "deployed to Docker and deployed to"
+    },
+    {
+      "start": 1060.36,
+      "duration": 4.28,
+      "text": "production environment using kubernetes"
+    },
+    {
+      "start": 1062.48,
+      "duration": 3.96,
+      "text": "approach ensured uniformity across all"
+    },
+    {
+      "start": 1064.64,
+      "duration": 4.52,
+      "text": "stages so this is how you should answer"
+    },
+    {
+      "start": 1066.44,
+      "duration": 4.68,
+      "text": "it using cicd you are also creating the"
+    },
+    {
+      "start": 1069.16,
+      "duration": 4.92,
+      "text": "image and also deploying it on"
+    },
+    {
+      "start": 1071.12,
+      "duration": 5.439,
+      "text": "kubernetes so that's how you can use"
+    },
+    {
+      "start": 1074.08,
+      "duration": 6.4,
+      "text": "cicd with Docker moving on the next"
+    },
+    {
+      "start": 1076.559,
+      "duration": 5.6,
+      "text": "question is how is Docker used in AWS so"
+    },
+    {
+      "start": 1080.48,
+      "duration": 3.88,
+      "text": "so again if you're a devops engineer you"
+    },
+    {
+      "start": 1082.159,
+      "duration": 5.601,
+      "text": "need to have knowledge of one cloud with"
+    },
+    {
+      "start": 1084.36,
+      "duration": 5.319,
+      "text": "Docker it could be AWS aure gcp so I'm"
+    },
+    {
+      "start": 1087.76,
+      "duration": 3.799,
+      "text": "using AWS here the answer would be"
+    },
+    {
+      "start": 1089.679,
+      "duration": 5.0,
+      "text": "similar as well so in my previous"
+    },
+    {
+      "start": 1091.559,
+      "duration": 6.321,
+      "text": "project we used Docker with AWS using"
+    },
+    {
+      "start": 1094.679,
+      "duration": 5.88,
+      "text": "Amazon ECS service so ECS is a service"
+    },
+    {
+      "start": 1097.88,
+      "duration": 4.2,
+      "text": "that lets you run your Docker containers"
+    },
+    {
+      "start": 1100.559,
+      "duration": 4.041,
+      "text": "it's also a container orchestration"
+    },
+    {
+      "start": 1102.08,
+      "duration": 4.44,
+      "text": "service in AWS so we deployed our"
+    },
+    {
+      "start": 1104.6,
+      "duration": 4.24,
+      "text": "microservices as Docker containers on"
+    },
+    {
+      "start": 1106.52,
+      "duration": 4.279,
+      "text": "ECS which enabled us to efficiently"
+    },
+    {
+      "start": 1108.84,
+      "duration": 4.48,
+      "text": "manage the life cycle of these Services"
+    },
+    {
+      "start": 1110.799,
+      "duration": 4.441,
+      "text": "we also used AWS farget for serverless"
+    },
+    {
+      "start": 1113.32,
+      "duration": 3.68,
+      "text": "compute of our containers this is how"
+    },
+    {
+      "start": 1115.24,
+      "duration": 3.439,
+      "text": "you should be answering when used when"
+    },
+    {
+      "start": 1117.0,
+      "duration": 3.559,
+      "text": "you have a question on how is Docker"
+    },
+    {
+      "start": 1118.679,
+      "duration": 5.161,
+      "text": "used within"
+    },
+    {
+      "start": 1120.559,
+      "duration": 5.12,
+      "text": "AWS next question is how do you monitor"
+    },
+    {
+      "start": 1123.84,
+      "duration": 3.4,
+      "text": "Docker containers so you can monitor"
+    },
+    {
+      "start": 1125.679,
+      "duration": 3.641,
+      "text": "Docker containers either using Docker"
+    },
+    {
+      "start": 1127.24,
+      "duration": 5.08,
+      "text": "commands or using open source tools like"
+    },
+    {
+      "start": 1129.32,
+      "duration": 4.68,
+      "text": "promus grafana Etc so you can use"
+    },
+    {
+      "start": 1132.32,
+      "duration": 4.2,
+      "text": "built-in container monitoring commands"
+    },
+    {
+      "start": 1134.0,
+      "duration": 5.24,
+      "text": "like Docker stats Docker container stats"
+    },
+    {
+      "start": 1136.52,
+      "duration": 5.68,
+      "text": "Docker top Etc you can also use tools"
+    },
+    {
+      "start": 1139.24,
+      "duration": 5.679,
+      "text": "like Prometheus grafana or elk stack uh"
+    },
+    {
+      "start": 1142.2,
+      "duration": 5.44,
+      "text": "you can also use kubernetes or other"
+    },
+    {
+      "start": 1144.919,
+      "duration": 6.201,
+      "text": "other container orchestrations API or"
+    },
+    {
+      "start": 1147.64,
+      "duration": 5.2,
+      "text": "built-in tools or you can also use spe"
+    },
+    {
+      "start": 1151.12,
+      "duration": 3.799,
+      "text": "specialized monitoring agents or tools"
+    },
+    {
+      "start": 1152.84,
+      "duration": 4.24,
+      "text": "that provide container level insights"
+    },
+    {
+      "start": 1154.919,
+      "duration": 3.921,
+      "text": "this can be something like cloudwatch"
+    },
+    {
+      "start": 1157.08,
+      "duration": 3.479,
+      "text": "agents you can install cloudwatch agents"
+    },
+    {
+      "start": 1158.84,
+      "duration": 4.199,
+      "text": "on the containers and then get the"
+    },
+    {
+      "start": 1160.559,
+      "duration": 4.041,
+      "text": "metrics on cloudwatch dashboards so"
+    },
+    {
+      "start": 1163.039,
+      "duration": 3.681,
+      "text": "these are different ways on how you can"
+    },
+    {
+      "start": 1164.6,
+      "duration": 4.28,
+      "text": "monitor Docker containers make sure to"
+    },
+    {
+      "start": 1166.72,
+      "duration": 3.8,
+      "text": "read it out and if you want me to to"
+    },
+    {
+      "start": 1168.88,
+      "duration": 3.039,
+      "text": "share this document again comment down"
+    },
+    {
+      "start": 1170.52,
+      "duration": 3.279,
+      "text": "Docker interview questions and I'll"
+    },
+    {
+      "start": 1171.919,
+      "duration": 3.76,
+      "text": "share this document which can help you"
+    },
+    {
+      "start": 1173.799,
+      "duration": 4.481,
+      "text": "prepare for your Docker"
+    },
+    {
+      "start": 1175.679,
+      "duration": 4.521,
+      "text": "interviews now the next question is what"
+    },
+    {
+      "start": 1178.28,
+      "duration": 3.8,
+      "text": "are some best practices for using Docker"
+    },
+    {
+      "start": 1180.2,
+      "duration": 4.04,
+      "text": "in production environments again very"
+    },
+    {
+      "start": 1182.08,
+      "duration": 4.959,
+      "text": "very important and you need to know this"
+    },
+    {
+      "start": 1184.24,
+      "duration": 5.12,
+      "text": "before going for Docker interviews so"
+    },
+    {
+      "start": 1187.039,
+      "duration": 5.161,
+      "text": "some best practices here are always"
+    },
+    {
+      "start": 1189.36,
+      "duration": 4.679,
+      "text": "build and use lightweight containers to"
+    },
+    {
+      "start": 1192.2,
+      "duration": 4.479,
+      "text": "improve deployment speed and reduce"
+    },
+    {
+      "start": 1194.039,
+      "duration": 4.481,
+      "text": "attack surface regularly update Docker"
+    },
+    {
+      "start": 1196.679,
+      "duration": 2.601,
+      "text": "and underlying host we already covered"
+    },
+    {
+      "start": 1198.52,
+      "duration": 3.399,
+      "text": "that"
+    },
+    {
+      "start": 1199.28,
+      "duration": 4.56,
+      "text": "Implement container oration platforms"
+    },
+    {
+      "start": 1201.919,
+      "duration": 4.041,
+      "text": "like kubernetes to manage containers at"
+    },
+    {
+      "start": 1203.84,
+      "duration": 4.839,
+      "text": "scale"
+    },
+    {
+      "start": 1205.96,
+      "duration": 4.0,
+      "text": "uh configure resource limits for"
+    },
+    {
+      "start": 1208.679,
+      "duration": 2.921,
+      "text": "containers to prevent resource"
+    },
+    {
+      "start": 1209.96,
+      "duration": 5.04,
+      "text": "contention we have seen how you can use"
+    },
+    {
+      "start": 1211.6,
+      "duration": 4.959,
+      "text": "D- CPU and D- memory to limit how much"
+    },
+    {
+      "start": 1215.0,
+      "duration": 3.72,
+      "text": "CPU and memory should be used by the"
+    },
+    {
+      "start": 1216.559,
+      "duration": 4.24,
+      "text": "container monitor container Health"
+    },
+    {
+      "start": 1218.72,
+      "duration": 4.52,
+      "text": "Resource usage uh to make sure"
+    },
+    {
+      "start": 1220.799,
+      "duration": 4.36,
+      "text": "everything is working fine Implement"
+    },
+    {
+      "start": 1223.24,
+      "duration": 4.04,
+      "text": "secure network configuration using"
+    },
+    {
+      "start": 1225.159,
+      "duration": 4.161,
+      "text": "private networks and we know how to"
+    },
+    {
+      "start": 1227.28,
+      "duration": 4.759,
+      "text": "create custom Networks using the network"
+    },
+    {
+      "start": 1229.32,
+      "duration": 4.32,
+      "text": "create command backup data which are"
+    },
+    {
+      "start": 1232.039,
+      "duration": 4.601,
+      "text": "critical for you using volumes and"
+    },
+    {
+      "start": 1233.64,
+      "duration": 4.76,
+      "text": "Storage Solutions uh Implement"
+    },
+    {
+      "start": 1236.64,
+      "duration": 3.72,
+      "text": "comprehensive security strategy"
+    },
+    {
+      "start": 1238.4,
+      "duration": 4.08,
+      "text": "including container vulnerability"
+    },
+    {
+      "start": 1240.36,
+      "duration": 4.0,
+      "text": "scanning access controls and Le least"
+    },
+    {
+      "start": 1242.48,
+      "duration": 4.4,
+      "text": "privilege principle you have different"
+    },
+    {
+      "start": 1244.36,
+      "duration": 4.439,
+      "text": "tools like Docker Scout to do that so"
+    },
+    {
+      "start": 1246.88,
+      "duration": 4.76,
+      "text": "these are different best practices when"
+    },
+    {
+      "start": 1248.799,
+      "duration": 4.521,
+      "text": "using Docker in production environments"
+    },
+    {
+      "start": 1251.64,
+      "duration": 4.84,
+      "text": "now the next question"
+    },
+    {
+      "start": 1253.32,
+      "duration": 5.479,
+      "text": "is how do you use Docker with kubernetes"
+    },
+    {
+      "start": 1256.48,
+      "duration": 4.12,
+      "text": "this is already this is already known"
+    },
+    {
+      "start": 1258.799,
+      "duration": 3.561,
+      "text": "now we have a container and if you have"
+    },
+    {
+      "start": 1260.6,
+      "duration": 3.24,
+      "text": "multiple containers that we want to"
+    },
+    {
+      "start": 1262.36,
+      "duration": 3.84,
+      "text": "manage we can use container"
+    },
+    {
+      "start": 1263.84,
+      "duration": 3.92,
+      "text": "orchestration tool such as kubernetes"
+    },
+    {
+      "start": 1266.2,
+      "duration": 3.959,
+      "text": "kubernetes provides us with many"
+    },
+    {
+      "start": 1267.76,
+      "duration": 5.0,
+      "text": "different benefits like load balancing"
+    },
+    {
+      "start": 1270.159,
+      "duration": 4.201,
+      "text": "scaling management and lot more so"
+    },
+    {
+      "start": 1272.76,
+      "duration": 4.519,
+      "text": "Docker can be used with container"
+    },
+    {
+      "start": 1274.36,
+      "duration": 5.16,
+      "text": "andtime within a kubernetes cluster when"
+    },
+    {
+      "start": 1277.279,
+      "duration": 4.081,
+      "text": "deploying applications in kubernetes"
+    },
+    {
+      "start": 1279.52,
+      "duration": 4.36,
+      "text": "Docker is responsible for creating and"
+    },
+    {
+      "start": 1281.36,
+      "duration": 4.76,
+      "text": "managing containers on each node"
+    },
+    {
+      "start": 1283.88,
+      "duration": 4.72,
+      "text": "kubernetes uses Docker API to interact"
+    },
+    {
+      "start": 1286.12,
+      "duration": 3.84,
+      "text": "with Docker and perform container"
+    },
+    {
+      "start": 1288.6,
+      "duration": 4.04,
+      "text": "related operations such as pulling"
+    },
+    {
+      "start": 1289.96,
+      "duration": 4.839,
+      "text": "images from Registries or creating"
+    },
+    {
+      "start": 1292.64,
+      "duration": 3.6,
+      "text": "containers or managing the life cycle so"
+    },
+    {
+      "start": 1294.799,
+      "duration": 3.321,
+      "text": "this is how Docker can be used with"
+    },
+    {
+      "start": 1296.24,
+      "duration": 3.16,
+      "text": "kubernetes when you have multiple Docker"
+    },
+    {
+      "start": 1298.12,
+      "duration": 3.32,
+      "text": "containers you use a container"
+    },
+    {
+      "start": 1299.4,
+      "duration": 3.399,
+      "text": "orchestration tool like kubernetes to"
+    },
+    {
+      "start": 1301.44,
+      "duration": 4.839,
+      "text": "manage all of"
+    },
+    {
+      "start": 1302.799,
+      "duration": 5.641,
+      "text": "them now moving on uh can you describe a"
+    },
+    {
+      "start": 1306.279,
+      "duration": 4.041,
+      "text": "situation where you have used terraform"
+    },
+    {
+      "start": 1308.44,
+      "duration": 4.359,
+      "text": "to automate the deployment of Docker"
+    },
+    {
+      "start": 1310.32,
+      "duration": 4.88,
+      "text": "containers again you need again the"
+    },
+    {
+      "start": 1312.799,
+      "duration": 4.12,
+      "text": "answer should be yes so the answer would"
+    },
+    {
+      "start": 1315.2,
+      "duration": 3.8,
+      "text": "be something like this in a recent"
+    },
+    {
+      "start": 1316.919,
+      "duration": 4.441,
+      "text": "project we use terraform to automate the"
+    },
+    {
+      "start": 1319.0,
+      "duration": 5.52,
+      "text": "deployment of our Docker containers on"
+    },
+    {
+      "start": 1321.36,
+      "duration": 5.64,
+      "text": "AWS we defined our infrastructure code"
+    },
+    {
+      "start": 1324.52,
+      "duration": 5.12,
+      "text": "using terraform which included our ECS"
+    },
+    {
+      "start": 1327.0,
+      "duration": 5.64,
+      "text": "service and tasks this task specify the"
+    },
+    {
+      "start": 1329.64,
+      "duration": 5.08,
+      "text": "docker images to be used pulled from ECR"
+    },
+    {
+      "start": 1332.64,
+      "duration": 4.0,
+      "text": "or elastic container registry all of"
+    },
+    {
+      "start": 1334.72,
+      "duration": 4.16,
+      "text": "this done through terraform and the"
+    },
+    {
+      "start": 1336.64,
+      "duration": 3.72,
+      "text": "resource allocated to each container"
+    },
+    {
+      "start": 1338.88,
+      "duration": 3.76,
+      "text": "whenever we made changes to our"
+    },
+    {
+      "start": 1340.36,
+      "duration": 3.6,
+      "text": "terraform scripts we could easily apply"
+    },
+    {
+      "start": 1342.64,
+      "duration": 4.039,
+      "text": "these changes to update our"
+    },
+    {
+      "start": 1343.96,
+      "duration": 3.719,
+      "text": "infrastructure in AWS Cloud so an should"
+    },
+    {
+      "start": 1346.679,
+      "duration": 3.6,
+      "text": "be something like this where you're"
+    },
+    {
+      "start": 1347.679,
+      "duration": 4.761,
+      "text": "using terraform to create ECS clusters"
+    },
+    {
+      "start": 1350.279,
+      "duration": 5.201,
+      "text": "or services or task"
+    },
+    {
+      "start": 1352.44,
+      "duration": 5.2,
+      "text": "Etc now the last question is how do you"
+    },
+    {
+      "start": 1355.48,
+      "duration": 3.96,
+      "text": "implement Canary deployments with Docker"
+    },
+    {
+      "start": 1357.64,
+      "duration": 3.84,
+      "text": "and kubernetes so in the previous"
+    },
+    {
+      "start": 1359.44,
+      "duration": 4.08,
+      "text": "terraform interview questions we covered"
+    },
+    {
+      "start": 1361.48,
+      "duration": 4.199,
+      "text": "the blue green deployment here we have"
+    },
+    {
+      "start": 1363.52,
+      "duration": 4.24,
+      "text": "Canary deployment so what is a canary"
+    },
+    {
+      "start": 1365.679,
+      "duration": 4.561,
+      "text": "deployment a canary deployment is a"
+    },
+    {
+      "start": 1367.76,
+      "duration": 4.48,
+      "text": "strategy where you have one version and"
+    },
+    {
+      "start": 1370.24,
+      "duration": 3.919,
+      "text": "then you have another version so you put"
+    },
+    {
+      "start": 1372.24,
+      "duration": 3.84,
+      "text": "some traffic on the new version to make"
+    },
+    {
+      "start": 1374.159,
+      "duration": 3.52,
+      "text": "sure if everything is working and then"
+    },
+    {
+      "start": 1376.08,
+      "duration": 4.8,
+      "text": "if everything is working you put out all"
+    },
+    {
+      "start": 1377.679,
+      "duration": 4.961,
+      "text": "the traffic to that version so here how"
+    },
+    {
+      "start": 1380.88,
+      "duration": 4.64,
+      "text": "can you implement can deployments using"
+    },
+    {
+      "start": 1382.64,
+      "duration": 5.44,
+      "text": "Docker and kubernetes you can do that by"
+    },
+    {
+      "start": 1385.52,
+      "duration": 4.12,
+      "text": "first setting up a cluster and then"
+    },
+    {
+      "start": 1388.08,
+      "duration": 3.52,
+      "text": "deploying your application using Docker"
+    },
+    {
+      "start": 1389.64,
+      "duration": 4.68,
+      "text": "container once you have that you can"
+    },
+    {
+      "start": 1391.6,
+      "duration": 7.04,
+      "text": "then release a new version or create a"
+    },
+    {
+      "start": 1394.32,
+      "duration": 4.32,
+      "text": "new deployment a service for"
+    },
+    {
+      "start": 1428.559,
+      "duration": 4.081,
+      "text": "so these are all the questions for our"
+    },
+    {
+      "start": 1430.159,
+      "duration": 4.201,
+      "text": "Docker interview I hope this video was"
+    },
+    {
+      "start": 1432.64,
+      "duration": 3.919,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 1434.36,
+      "duration": 4.08,
+      "text": "any doubt do let me know in the comment"
+    },
+    {
+      "start": 1436.559,
+      "duration": 3.801,
+      "text": "section if you want me to share this do"
+    },
+    {
+      "start": 1438.44,
+      "duration": 4.28,
+      "text": "document do let me know in the comment"
+    },
+    {
+      "start": 1440.36,
+      "duration": 4.16,
+      "text": "section as well and if you want me to"
+    },
+    {
+      "start": 1442.72,
+      "duration": 4.24,
+      "text": "cover more such interview questions on"
+    },
+    {
+      "start": 1444.52,
+      "duration": 4.639,
+      "text": "kubernetes let me know in the the"
+    },
+    {
+      "start": 1446.96,
+      "duration": 5.199,
+      "text": "comment box thank you and have a good"
+    },
+    {
+      "start": 1449.159,
+      "duration": 3.0,
+      "text": "day"
+    }
+  ]
+}

@@ -1,0 +1,3206 @@
+{
+  "video": {
+    "id": "wS277TdV3f8",
+    "title": "Important Kubernetes kubectl Command with Examples in 20 minutes!",
+    "url": "https://www.youtube.com/watch?v=wS277TdV3f8",
+    "duration": 1414,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.56,
+      "duration": 4.759,
+      "text": "in this video we look at important"
+    },
+    {
+      "start": 2.6,
+      "duration": 4.759,
+      "text": "kubernetes or cube CTF commands that you"
+    },
+    {
+      "start": 5.319,
+      "duration": 4.881,
+      "text": "should definitely know along with"
+    },
+    {
+      "start": 7.359,
+      "duration": 4.841,
+      "text": "examples and Hands-On demo knowing these"
+    },
+    {
+      "start": 10.2,
+      "duration": 4.359,
+      "text": "useful commands will help you manage and"
+    },
+    {
+      "start": 12.2,
+      "duration": 4.6,
+      "text": "troubleshoot issues in kubernetes very"
+    },
+    {
+      "start": 14.559,
+      "duration": 5.48,
+      "text": "easily so make sure to watch this video"
+    },
+    {
+      "start": 16.8,
+      "duration": 4.84,
+      "text": "till the end let's start all right"
+    },
+    {
+      "start": 20.039,
+      "duration": 3.641,
+      "text": "before you get started with learning"
+    },
+    {
+      "start": 21.64,
+      "duration": 4.639,
+      "text": "important kubernetes commands there are"
+    },
+    {
+      "start": 23.68,
+      "duration": 4.599,
+      "text": "two main things you require the first is"
+    },
+    {
+      "start": 26.279,
+      "duration": 3.4,
+      "text": "a kubernetes cluster and there are"
+    },
+    {
+      "start": 28.279,
+      "duration": 2.201,
+      "text": "different ways to create a kubernetes"
+    },
+    {
+      "start": 29.679,
+      "duration": 2.56,
+      "text": "cluster"
+    },
+    {
+      "start": 30.48,
+      "duration": 5.68,
+      "text": "you can create a kubernetes cluster on a"
+    },
+    {
+      "start": 32.239,
+      "duration": 6.041,
+      "text": "cloud using AWS Azure gcp or any other"
+    },
+    {
+      "start": 36.16,
+      "duration": 4.36,
+      "text": "Cloud platform another way is to create"
+    },
+    {
+      "start": 38.28,
+      "duration": 4.799,
+      "text": "a kubernetes cluster locally using mini"
+    },
+    {
+      "start": 40.52,
+      "duration": 4.16,
+      "text": "Cube or cube ADM for this demo I'm going"
+    },
+    {
+      "start": 43.079,
+      "duration": 3.281,
+      "text": "to be using mini Cube and you can"
+    },
+    {
+      "start": 44.68,
+      "duration": 4.12,
+      "text": "install mini Cube from this"
+    },
+    {
+      "start": 46.36,
+      "duration": 4.24,
+      "text": "documentation here along with a"
+    },
+    {
+      "start": 48.8,
+      "duration": 3.919,
+      "text": "kubernetes luster you also require Cube"
+    },
+    {
+      "start": 50.6,
+      "duration": 4.2,
+      "text": "CDL which is a command line tool used to"
+    },
+    {
+      "start": 52.719,
+      "duration": 4.48,
+      "text": "manage kubernetes and you can install"
+    },
+    {
+      "start": 54.8,
+      "duration": 4.36,
+      "text": "Cube CTL from the same documentation so"
+    },
+    {
+      "start": 57.199,
+      "duration": 4.281,
+      "text": "here you can install Cube CTL and here"
+    },
+    {
+      "start": 59.16,
+      "duration": 3.719,
+      "text": "you have details to install mini Cube I"
+    },
+    {
+      "start": 61.48,
+      "duration": 2.84,
+      "text": "already have them installed so we are"
+    },
+    {
+      "start": 62.879,
+      "duration": 3.28,
+      "text": "ready to get started with learning"
+    },
+    {
+      "start": 64.32,
+      "duration": 4.0,
+      "text": "important kubernetes commands that you"
+    },
+    {
+      "start": 66.159,
+      "duration": 3.561,
+      "text": "should definitely know after you have"
+    },
+    {
+      "start": 68.32,
+      "duration": 3.119,
+      "text": "mini Cube installed in your local"
+    },
+    {
+      "start": 69.72,
+      "duration": 3.28,
+      "text": "machine you need to run the command mini"
+    },
+    {
+      "start": 71.439,
+      "duration": 4.04,
+      "text": "Cube start which will go ahead and"
+    },
+    {
+      "start": 73.0,
+      "duration": 4.119,
+      "text": "create a kues cluster locally for you"
+    },
+    {
+      "start": 75.479,
+      "duration": 3.481,
+      "text": "you can see the explanation here this"
+    },
+    {
+      "start": 77.119,
+      "duration": 3.841,
+      "text": "command setups mini cuq a tool for"
+    },
+    {
+      "start": 78.96,
+      "duration": 4.159,
+      "text": "running kubernetes cluster locally for"
+    },
+    {
+      "start": 80.96,
+      "duration": 4.04,
+      "text": "development purposes and now we have a"
+    },
+    {
+      "start": 83.119,
+      "duration": 3.481,
+      "text": "kubernetes cluster running in our local"
+    },
+    {
+      "start": 85.0,
+      "duration": 4.119,
+      "text": "machine you can also confirm by running"
+    },
+    {
+      "start": 86.6,
+      "duration": 4.44,
+      "text": "mini Cube status and it says control"
+    },
+    {
+      "start": 89.119,
+      "duration": 3.521,
+      "text": "plane running Cube running API server"
+    },
+    {
+      "start": 91.04,
+      "duration": 3.759,
+      "text": "running and if you don't have any idea"
+    },
+    {
+      "start": 92.64,
+      "duration": 3.68,
+      "text": "of what is API server or cubet make sure"
+    },
+    {
+      "start": 94.799,
+      "duration": 3.521,
+      "text": "to watch the previous video but I have"
+    },
+    {
+      "start": 96.32,
+      "duration": 3.68,
+      "text": "explained everything along with the"
+    },
+    {
+      "start": 98.32,
+      "duration": 3.839,
+      "text": "cluster we know we need to also have a"
+    },
+    {
+      "start": 100.0,
+      "duration": 4.0,
+      "text": "cube C command line tool which you can"
+    },
+    {
+      "start": 102.159,
+      "duration": 3.24,
+      "text": "install from here and after you have"
+    },
+    {
+      "start": 104.0,
+      "duration": 3.479,
+      "text": "installed it you can simply run the cube"
+    },
+    {
+      "start": 105.399,
+      "duration": 3.801,
+      "text": "CTL version command to confirm if it is"
+    },
+    {
+      "start": 107.479,
+      "duration": 4.161,
+      "text": "installed you should get a similar"
+    },
+    {
+      "start": 109.2,
+      "duration": 4.8,
+      "text": "output like this this means we are now"
+    },
+    {
+      "start": 111.64,
+      "duration": 4.839,
+      "text": "ready to run commands or kues and marage"
+    },
+    {
+      "start": 114.0,
+      "duration": 4.6,
+      "text": "our workloads but what if we are not"
+    },
+    {
+      "start": 116.479,
+      "duration": 3.761,
+      "text": "using kubernetes cluster on Mini Cube"
+    },
+    {
+      "start": 118.6,
+      "duration": 4.6,
+      "text": "rather we have a kubernetes tester"
+    },
+    {
+      "start": 120.24,
+      "duration": 5.72,
+      "text": "created on cloud provider maybe AWS or"
+    },
+    {
+      "start": 123.2,
+      "duration": 5.039,
+      "text": "Azure or gcp how can we connect the"
+    },
+    {
+      "start": 125.96,
+      "duration": 4.88,
+      "text": "kuber tester on the cloud with the cube"
+    },
+    {
+      "start": 128.239,
+      "duration": 4.281,
+      "text": "CTL in our local machine we do that by"
+    },
+    {
+      "start": 130.84,
+      "duration": 3.039,
+      "text": "setting context and different Cloud"
+    },
+    {
+      "start": 132.52,
+      "duration": 3.359,
+      "text": "providers will have different command"
+    },
+    {
+      "start": 133.879,
+      "duration": 4.44,
+      "text": "for that let's say you have a cluster"
+    },
+    {
+      "start": 135.879,
+      "duration": 4.681,
+      "text": "created in AWS using eks service which"
+    },
+    {
+      "start": 138.319,
+      "duration": 5.841,
+      "text": "is elastic kubernetes service you run a"
+    },
+    {
+      "start": 140.56,
+      "duration": 6.28,
+      "text": "command AWS ek-- region update cube"
+    },
+    {
+      "start": 144.16,
+      "duration": 5.04,
+      "text": "confli with the cluster name and this"
+    },
+    {
+      "start": 146.84,
+      "duration": 5.2,
+      "text": "command is used to connect Amazon eeks"
+    },
+    {
+      "start": 149.2,
+      "duration": 5.0,
+      "text": "cluster with the cube CDL similarly if"
+    },
+    {
+      "start": 152.04,
+      "duration": 4.279,
+      "text": "you have a cluster created in Azure this"
+    },
+    {
+      "start": 154.2,
+      "duration": 4.56,
+      "text": "is the command for GK this is the"
+    },
+    {
+      "start": 156.319,
+      "duration": 4.241,
+      "text": "command so this command set the context"
+    },
+    {
+      "start": 158.76,
+      "duration": 4.08,
+      "text": "for the specified Cloud managed"
+    },
+    {
+      "start": 160.56,
+      "duration": 3.679,
+      "text": "kubernetes clusters allowing subsequent"
+    },
+    {
+      "start": 162.84,
+      "duration": 3.319,
+      "text": "commands to interact with the chosen"
+    },
+    {
+      "start": 164.239,
+      "duration": 3.601,
+      "text": "cluster so when you use mini Cube the"
+    },
+    {
+      "start": 166.159,
+      "duration": 4.201,
+      "text": "context is already set to run the cube"
+    },
+    {
+      "start": 167.84,
+      "duration": 4.039,
+      "text": "CTL commands on Mini Cube cluster and"
+    },
+    {
+      "start": 170.36,
+      "duration": 4.04,
+      "text": "you can also check that by running Cube"
+    },
+    {
+      "start": 171.879,
+      "duration": 4.72,
+      "text": "CTL config current context command which"
+    },
+    {
+      "start": 174.4,
+      "duration": 4.559,
+      "text": "will give you which cluster is connected"
+    },
+    {
+      "start": 176.599,
+      "duration": 4.241,
+      "text": "right now with Cube CTL so when I run"
+    },
+    {
+      "start": 178.959,
+      "duration": 4.241,
+      "text": "this command it tells me mining cube is"
+    },
+    {
+      "start": 180.84,
+      "duration": 4.759,
+      "text": "a cluster which is connected to cube CTL"
+    },
+    {
+      "start": 183.2,
+      "duration": 5.0,
+      "text": "and all the cube C commands will apply"
+    },
+    {
+      "start": 185.599,
+      "duration": 3.92,
+      "text": "on this particular cluster and if you"
+    },
+    {
+      "start": 188.2,
+      "duration": 2.92,
+      "text": "also want to get the list of all the"
+    },
+    {
+      "start": 189.519,
+      "duration": 4.161,
+      "text": "different contexts you have you simply"
+    },
+    {
+      "start": 191.12,
+      "duration": 5.92,
+      "text": "need to run the command Cube C config"
+    },
+    {
+      "start": 193.68,
+      "duration": 5.4,
+      "text": "get contexts so I'll say get context and"
+    },
+    {
+      "start": 197.04,
+      "duration": 4.279,
+      "text": "this will give me all the list of the"
+    },
+    {
+      "start": 199.08,
+      "duration": 3.64,
+      "text": "cluster that I can use or switch to"
+    },
+    {
+      "start": 201.319,
+      "duration": 3.84,
+      "text": "right now I'm connected to mini Cube but"
+    },
+    {
+      "start": 202.72,
+      "duration": 4.56,
+      "text": "I can switch to any other cluster and"
+    },
+    {
+      "start": 205.159,
+      "duration": 3.64,
+      "text": "start working on it all this context"
+    },
+    {
+      "start": 207.28,
+      "duration": 4.4,
+      "text": "data is stored in the file which is"
+    },
+    {
+      "start": 208.799,
+      "duration": 6.761,
+      "text": "under Cube SLC config under the home"
+    },
+    {
+      "start": 211.68,
+      "duration": 6.16,
+      "text": "folder so if I do cat. Cube slig you"
+    },
+    {
+      "start": 215.56,
+      "duration": 4.2,
+      "text": "will see the detail about all the"
+    },
+    {
+      "start": 217.84,
+      "duration": 3.52,
+      "text": "Clusters and you can also switch to"
+    },
+    {
+      "start": 219.76,
+      "duration": 3.28,
+      "text": "start using in them right now we are"
+    },
+    {
+      "start": 221.36,
+      "duration": 3.72,
+      "text": "connected to mini Cube so we're going to"
+    },
+    {
+      "start": 223.04,
+      "duration": 3.199,
+      "text": "run the commands on Mini Cube cluster"
+    },
+    {
+      "start": 225.08,
+      "duration": 3.04,
+      "text": "now let's start with learning the"
+    },
+    {
+      "start": 226.239,
+      "duration": 3.681,
+      "text": "commands to create delete or edit"
+    },
+    {
+      "start": 228.12,
+      "duration": 3.6,
+      "text": "kubernetes object there are many"
+    },
+    {
+      "start": 229.92,
+      "duration": 4.08,
+      "text": "different kubernetes objects like pod"
+    },
+    {
+      "start": 231.72,
+      "duration": 4.56,
+      "text": "deployment replica set stateful set"
+    },
+    {
+      "start": 234.0,
+      "duration": 4.319,
+      "text": "Services nodes and a lot more that I"
+    },
+    {
+      "start": 236.28,
+      "duration": 3.4,
+      "text": "believe you already know if you want me"
+    },
+    {
+      "start": 238.319,
+      "duration": 3.321,
+      "text": "to create a video explaining all this"
+    },
+    {
+      "start": 239.68,
+      "duration": 3.839,
+      "text": "different kubernetes objects do let me"
+    },
+    {
+      "start": 241.64,
+      "duration": 4.0,
+      "text": "know in the comment section in"
+    },
+    {
+      "start": 243.519,
+      "duration": 4.961,
+      "text": "kubernetes objects are generally created"
+    },
+    {
+      "start": 245.64,
+      "duration": 5.599,
+      "text": "using manifest files manifest files if"
+    },
+    {
+      "start": 248.48,
+      "duration": 4.88,
+      "text": "you don't know are short yaml or Json"
+    },
+    {
+      "start": 251.239,
+      "duration": 4.121,
+      "text": "documents that defines how a specific"
+    },
+    {
+      "start": 253.36,
+      "duration": 3.839,
+      "text": "cluster resource should be configured"
+    },
+    {
+      "start": 255.36,
+      "duration": 4.08,
+      "text": "and managed for example this is a"
+    },
+    {
+      "start": 257.199,
+      "duration": 3.681,
+      "text": "manifest file and the kind is deployment"
+    },
+    {
+      "start": 259.44,
+      "duration": 3.6,
+      "text": "you should always look at the kind which"
+    },
+    {
+      "start": 260.88,
+      "duration": 4.0,
+      "text": "defines what kuber object is it so this"
+    },
+    {
+      "start": 263.04,
+      "duration": 3.48,
+      "text": "is where to create a deployment we also"
+    },
+    {
+      "start": 264.88,
+      "duration": 3.599,
+      "text": "have an example here so this is the"
+    },
+    {
+      "start": 266.52,
+      "duration": 4.28,
+      "text": "official documentation for kubernetes"
+    },
+    {
+      "start": 268.479,
+      "duration": 4.641,
+      "text": "deployments object and if I scroll down"
+    },
+    {
+      "start": 270.8,
+      "duration": 4.839,
+      "text": "this is a deployment manifest to create"
+    },
+    {
+      "start": 273.12,
+      "duration": 4.48,
+      "text": "three parts of this image which is"
+    },
+    {
+      "start": 275.639,
+      "duration": 3.881,
+      "text": "enginex now if I want to have a"
+    },
+    {
+      "start": 277.6,
+      "duration": 4.039,
+      "text": "deployment with three parts having ngx"
+    },
+    {
+      "start": 279.52,
+      "duration": 4.64,
+      "text": "image I'm going to create a manifest"
+    },
+    {
+      "start": 281.639,
+      "duration": 5.521,
+      "text": "file for now I'm going to copy this and"
+    },
+    {
+      "start": 284.16,
+      "duration": 6.92,
+      "text": "create a file in my machine Let's create"
+    },
+    {
+      "start": 287.16,
+      "duration": 6.44,
+      "text": "a file name it deployment do yaml inside"
+    },
+    {
+      "start": 291.08,
+      "duration": 4.44,
+      "text": "this I'm going to put what I have here"
+    },
+    {
+      "start": 293.6,
+      "duration": 4.0,
+      "text": "so this is a deployment having three"
+    },
+    {
+      "start": 295.52,
+      "duration": 4.16,
+      "text": "replicas with this image and it's"
+    },
+    {
+      "start": 297.6,
+      "duration": 3.2,
+      "text": "running on container Port 80 this is is"
+    },
+    {
+      "start": 299.68,
+      "duration": 3.2,
+      "text": "the name of the deployment which is"
+    },
+    {
+      "start": 300.8,
+      "duration": 4.04,
+      "text": "engine X deployment I'm going to save"
+    },
+    {
+      "start": 302.88,
+      "duration": 4.28,
+      "text": "this and now if I want to create this"
+    },
+    {
+      "start": 304.84,
+      "duration": 4.76,
+      "text": "deployment in my kubernetes cluster I"
+    },
+    {
+      "start": 307.16,
+      "duration": 5.0,
+      "text": "need to run the command Cube CTL apply"
+    },
+    {
+      "start": 309.6,
+      "duration": 6.159,
+      "text": "hyphen f which stands for the file and"
+    },
+    {
+      "start": 312.16,
+      "duration": 6.039,
+      "text": "the file name so I want to copy this and"
+    },
+    {
+      "start": 315.759,
+      "duration": 6.041,
+      "text": "once I do that I'm going to get a"
+    },
+    {
+      "start": 318.199,
+      "duration": 6.28,
+      "text": "message saying deployment. apps SL the"
+    },
+    {
+      "start": 321.8,
+      "duration": 4.119,
+      "text": "name of the deployment is created"
+    },
+    {
+      "start": 324.479,
+      "duration": 3.521,
+      "text": "similarly if I want to delete something"
+    },
+    {
+      "start": 325.919,
+      "duration": 4.56,
+      "text": "I'm just going to run the command CU CDL"
+    },
+    {
+      "start": 328.0,
+      "duration": 4.68,
+      "text": "delete hyphen f with the the name of the"
+    },
+    {
+      "start": 330.479,
+      "duration": 4.0,
+      "text": "file make sure the file is present in"
+    },
+    {
+      "start": 332.68,
+      "duration": 3.32,
+      "text": "the same folder wherever you're running"
+    },
+    {
+      "start": 334.479,
+      "duration": 4.72,
+      "text": "this command or else you need to put the"
+    },
+    {
+      "start": 336.0,
+      "duration": 5.6,
+      "text": "exact path so the apply command is used"
+    },
+    {
+      "start": 339.199,
+      "duration": 4.481,
+      "text": "to create something when you have the"
+    },
+    {
+      "start": 341.6,
+      "duration": 4.2,
+      "text": "Manifest file so I have the Manifest"
+    },
+    {
+      "start": 343.68,
+      "duration": 4.359,
+      "text": "file here and I'm going to create it"
+    },
+    {
+      "start": 345.8,
+      "duration": 4.519,
+      "text": "similarly if I just run the command"
+    },
+    {
+      "start": 348.039,
+      "duration": 4.44,
+      "text": "which is delete and it will go ahead and"
+    },
+    {
+      "start": 350.319,
+      "duration": 4.241,
+      "text": "delete it now let's go and create it"
+    },
+    {
+      "start": 352.479,
+      "duration": 3.761,
+      "text": "again and this time I I want to edit"
+    },
+    {
+      "start": 354.56,
+      "duration": 3.6,
+      "text": "something so in this let's go and edit"
+    },
+    {
+      "start": 356.24,
+      "duration": 4.079,
+      "text": "the replicas count so instead of having"
+    },
+    {
+      "start": 358.16,
+      "duration": 4.72,
+      "text": "three replicas now I want to have only"
+    },
+    {
+      "start": 360.319,
+      "duration": 5.121,
+      "text": "two replicas so I'll save this and run"
+    },
+    {
+      "start": 362.88,
+      "duration": 4.84,
+      "text": "the command Cube apply again once I run"
+    },
+    {
+      "start": 365.44,
+      "duration": 3.8,
+      "text": "the command instead of created it's"
+    },
+    {
+      "start": 367.72,
+      "duration": 4.919,
+      "text": "saying configured which means it has"
+    },
+    {
+      "start": 369.24,
+      "duration": 5.6,
+      "text": "been scaled down to two replicas now so"
+    },
+    {
+      "start": 372.639,
+      "duration": 4.361,
+      "text": "how do you confirm this to confirm this"
+    },
+    {
+      "start": 374.84,
+      "duration": 4.32,
+      "text": "when are going to run the command get"
+    },
+    {
+      "start": 377.0,
+      "duration": 4.479,
+      "text": "this command retrieve information about"
+    },
+    {
+      "start": 379.16,
+      "duration": 4.4,
+      "text": "different kuber resource such as part"
+    },
+    {
+      "start": 381.479,
+      "duration": 4.12,
+      "text": "services and deployments so using this"
+    },
+    {
+      "start": 383.56,
+      "duration": 4.68,
+      "text": "command we have now created and also"
+    },
+    {
+      "start": 385.599,
+      "duration": 4.32,
+      "text": "edited the deployment according to these"
+    },
+    {
+      "start": 388.24,
+      "duration": 4.679,
+      "text": "commands we should have a deployment"
+    },
+    {
+      "start": 389.919,
+      "duration": 5.56,
+      "text": "with two replicas having engx image that"
+    },
+    {
+      "start": 392.919,
+      "duration": 5.081,
+      "text": "we have used from this manifest right so"
+    },
+    {
+      "start": 395.479,
+      "duration": 4.521,
+      "text": "let's run the command Cube CTL get to"
+    },
+    {
+      "start": 398.0,
+      "duration": 4.919,
+      "text": "see if that is true or not so I going to"
+    },
+    {
+      "start": 400.0,
+      "duration": 4.8,
+      "text": "run the command Cube C get deployments"
+    },
+    {
+      "start": 402.919,
+      "duration": 4.081,
+      "text": "so once I run this you will see there's"
+    },
+    {
+      "start": 404.8,
+      "duration": 4.92,
+      "text": "a deployment that is created inine X"
+    },
+    {
+      "start": 407.0,
+      "duration": 4.72,
+      "text": "deployment 71 seconds ago and this was"
+    },
+    {
+      "start": 409.72,
+      "duration": 4.879,
+      "text": "something which I had ear already which"
+    },
+    {
+      "start": 411.72,
+      "duration": 4.24,
+      "text": "is 71 days ago so this is the deployment"
+    },
+    {
+      "start": 414.599,
+      "duration": 4.561,
+      "text": "which you have and you can get that"
+    },
+    {
+      "start": 415.96,
+      "duration": 5.28,
+      "text": "using Cube CTL get deployment commands"
+    },
+    {
+      "start": 419.16,
+      "duration": 4.719,
+      "text": "so similarly you can run the cube C get"
+    },
+    {
+      "start": 421.24,
+      "duration": 4.679,
+      "text": "command for ports for services config"
+    },
+    {
+      "start": 423.879,
+      "duration": 2.88,
+      "text": "map stateful set everything so I'm going"
+    },
+    {
+      "start": 425.919,
+      "duration": 4.441,
+      "text": "to run"
+    },
+    {
+      "start": 426.759,
+      "duration": 6.12,
+      "text": "Cube get parts and you will see all the"
+    },
+    {
+      "start": 430.36,
+      "duration": 5.119,
+      "text": "parts in the default name space if you"
+    },
+    {
+      "start": 432.879,
+      "duration": 4.081,
+      "text": "run Cub get notes you will get the"
+    },
+    {
+      "start": 435.479,
+      "duration": 3.961,
+      "text": "information about the notes in your"
+    },
+    {
+      "start": 436.96,
+      "duration": 4.239,
+      "text": "cluster so this is cctl get command"
+    },
+    {
+      "start": 439.44,
+      "duration": 4.96,
+      "text": "which is used to get the information"
+    },
+    {
+      "start": 441.199,
+      "duration": 4.56,
+      "text": "about different uh resources but you"
+    },
+    {
+      "start": 444.4,
+      "duration": 2.88,
+      "text": "also use this in different ways let's"
+    },
+    {
+      "start": 445.759,
+      "duration": 4.201,
+      "text": "say you want to get everything present"
+    },
+    {
+      "start": 447.28,
+      "duration": 5.359,
+      "text": "in the cluster deployment services SPS"
+    },
+    {
+      "start": 449.96,
+      "duration": 6.44,
+      "text": "everything you're going to run the CTL"
+    },
+    {
+      "start": 452.639,
+      "duration": 6.321,
+      "text": "get all this will list you the parts the"
+    },
+    {
+      "start": 456.4,
+      "duration": 5.199,
+      "text": "services deployments replica sets and"
+    },
+    {
+      "start": 458.96,
+      "duration": 5.04,
+      "text": "stateful set so the get all is used to"
+    },
+    {
+      "start": 461.599,
+      "duration": 4.0,
+      "text": "get everything in the default namespace"
+    },
+    {
+      "start": 464.0,
+      "duration": 3.36,
+      "text": "and if you want to get it everything in"
+    },
+    {
+      "start": 465.599,
+      "duration": 4.32,
+      "text": "other namespace you need to use the"
+    },
+    {
+      "start": 467.36,
+      "duration": 4.72,
+      "text": "hyphen n with the namespace let's say"
+    },
+    {
+      "start": 469.919,
+      "duration": 4.441,
+      "text": "Cube system so it will get everything"
+    },
+    {
+      "start": 472.08,
+      "duration": 4.239,
+      "text": "inside the cube system name space so"
+    },
+    {
+      "start": 474.36,
+      "duration": 4.799,
+      "text": "these are the parts this is Services"
+    },
+    {
+      "start": 476.319,
+      "duration": 4.401,
+      "text": "demon sets deployments and replica sets"
+    },
+    {
+      "start": 479.159,
+      "duration": 4.88,
+      "text": "but but what if you want to get this"
+    },
+    {
+      "start": 480.72,
+      "duration": 5.64,
+      "text": "data in yaml format or in Json format"
+    },
+    {
+      "start": 484.039,
+      "duration": 7.72,
+      "text": "you can do that by running Cube"
+    },
+    {
+      "start": 486.36,
+      "duration": 7.679,
+      "text": "CT get all hyen o yaml this will now"
+    },
+    {
+      "start": 491.759,
+      "duration": 3.761,
+      "text": "give you the output in yaml format once"
+    },
+    {
+      "start": 494.039,
+      "duration": 4.321,
+      "text": "press enter you can see this is all in"
+    },
+    {
+      "start": 495.52,
+      "duration": 5.239,
+      "text": "yam format correct similarly you can"
+    },
+    {
+      "start": 498.36,
+      "duration": 4.519,
+      "text": "just do it by running Json and this time"
+    },
+    {
+      "start": 500.759,
+      "duration": 4.84,
+      "text": "it will give you in Json format so now"
+    },
+    {
+      "start": 502.879,
+      "duration": 4.401,
+      "text": "this is in Json format along with this"
+    },
+    {
+      "start": 505.599,
+      "duration": 3.16,
+      "text": "you can also run the command hyphen o"
+    },
+    {
+      "start": 507.28,
+      "duration": 2.68,
+      "text": "wide which will provide you with more"
+    },
+    {
+      "start": 508.759,
+      "duration": 3.12,
+      "text": "extra inform"
+    },
+    {
+      "start": 509.96,
+      "duration": 4.079,
+      "text": "so instead of just showing you the Pod"
+    },
+    {
+      "start": 511.879,
+      "duration": 4.241,
+      "text": "it will now show you also the IP address"
+    },
+    {
+      "start": 514.039,
+      "duration": 3.8,
+      "text": "and the node on which it is running"
+    },
+    {
+      "start": 516.12,
+      "duration": 3.719,
+      "text": "along with this for services it will"
+    },
+    {
+      "start": 517.839,
+      "duration": 5.08,
+      "text": "give you more information similarly for"
+    },
+    {
+      "start": 519.839,
+      "duration": 4.721,
+      "text": "deployments so using hyphen o you can"
+    },
+    {
+      "start": 522.919,
+      "duration": 4.36,
+      "text": "change the output you can change the"
+    },
+    {
+      "start": 524.56,
+      "duration": 5.24,
+      "text": "output in the yl into Json or also using"
+    },
+    {
+      "start": 527.279,
+      "duration": 4.521,
+      "text": "hyphen o wide which will give you extra"
+    },
+    {
+      "start": 529.8,
+      "duration": 3.32,
+      "text": "information so this was get command"
+    },
+    {
+      "start": 531.8,
+      "duration": 3.56,
+      "text": "which is used to retrieve information"
+    },
+    {
+      "start": 533.12,
+      "duration": 5.04,
+      "text": "about different kubernetes objects so"
+    },
+    {
+      "start": 535.36,
+      "duration": 4.44,
+      "text": "now we know if you run Cube C get pods"
+    },
+    {
+      "start": 538.16,
+      "duration": 3.32,
+      "text": "command you will get the list of all the"
+    },
+    {
+      "start": 539.8,
+      "duration": 3.479,
+      "text": "parts in your cluster and you will also"
+    },
+    {
+      "start": 541.48,
+      "duration": 3.799,
+      "text": "get the information or the status if"
+    },
+    {
+      "start": 543.279,
+      "duration": 3.921,
+      "text": "they are running or not so we have a"
+    },
+    {
+      "start": 545.279,
+      "duration": 4.481,
+      "text": "port here which is my new Port that is"
+    },
+    {
+      "start": 547.2,
+      "duration": 4.6,
+      "text": "showing us an error which is image pull"
+    },
+    {
+      "start": 549.76,
+      "duration": 4.04,
+      "text": "back off so how can we see what is the"
+    },
+    {
+      "start": 551.8,
+      "duration": 5.24,
+      "text": "error actually or how can we see more"
+    },
+    {
+      "start": 553.8,
+      "duration": 5.56,
+      "text": "information about this particular error"
+    },
+    {
+      "start": 557.04,
+      "duration": 4.68,
+      "text": "you can do that by writing Cube CTL"
+    },
+    {
+      "start": 559.36,
+      "duration": 4.08,
+      "text": "describe command so I'm going to cube"
+    },
+    {
+      "start": 561.72,
+      "duration": 3.64,
+      "text": "CTL describe and I'm going to describe"
+    },
+    {
+      "start": 563.44,
+      "duration": 4.2,
+      "text": "the Pod so I'll say pod and then the"
+    },
+    {
+      "start": 565.36,
+      "duration": 3.88,
+      "text": "name of the pod which is my new pod once"
+    },
+    {
+      "start": 567.64,
+      "duration": 4.0,
+      "text": "I do this it will give me all the"
+    },
+    {
+      "start": 569.24,
+      "duration": 4.2,
+      "text": "information about the Pod and if I"
+    },
+    {
+      "start": 571.64,
+      "duration": 4.24,
+      "text": "scroll down here are events in the"
+    },
+    {
+      "start": 573.44,
+      "duration": 5.68,
+      "text": "events it is saying back off pulling"
+    },
+    {
+      "start": 575.88,
+      "duration": 5.16,
+      "text": "this image other image pull back off"
+    },
+    {
+      "start": 579.12,
+      "duration": 3.48,
+      "text": "this is the image we are trying to use"
+    },
+    {
+      "start": 581.04,
+      "duration": 3.08,
+      "text": "and we know this is not an image name"
+    },
+    {
+      "start": 582.6,
+      "duration": 3.72,
+      "text": "because there's no image with this name"
+    },
+    {
+      "start": 584.12,
+      "duration": 3.88,
+      "text": "in the kubernetes this is why it is"
+    },
+    {
+      "start": 586.32,
+      "duration": 3.84,
+      "text": "giving us an error saying image pull"
+    },
+    {
+      "start": 588.0,
+      "duration": 4.16,
+      "text": "back off so using the describe command"
+    },
+    {
+      "start": 590.16,
+      "duration": 4.32,
+      "text": "you can get more information so this is"
+    },
+    {
+      "start": 592.16,
+      "duration": 4.239,
+      "text": "Cube CDL describe this commands provide"
+    },
+    {
+      "start": 594.48,
+      "duration": 3.64,
+      "text": "detailed information about a specific"
+    },
+    {
+      "start": 596.399,
+      "duration": 2.68,
+      "text": "kubernetes resource aiding in"
+    },
+    {
+      "start": 598.12,
+      "duration": 2.8,
+      "text": "troubleshooting and understanding"
+    },
+    {
+      "start": 599.079,
+      "duration": 3.721,
+      "text": "standing its configuration you can run"
+    },
+    {
+      "start": 600.92,
+      "duration": 3.479,
+      "text": "the same command with services with"
+    },
+    {
+      "start": 602.8,
+      "duration": 2.68,
+      "text": "deployments anything you want so let's"
+    },
+    {
+      "start": 604.399,
+      "duration": 3.56,
+      "text": "say if I want to get the information"
+    },
+    {
+      "start": 605.48,
+      "duration": 7.32,
+      "text": "about cctl let's get the deployment"
+    },
+    {
+      "start": 607.959,
+      "duration": 6.44,
+      "text": "first and I can also run qctl describe"
+    },
+    {
+      "start": 612.8,
+      "duration": 2.76,
+      "text": "deployment and the name of the"
+    },
+    {
+      "start": 614.399,
+      "duration": 3.601,
+      "text": "deployment so let's I want to get the"
+    },
+    {
+      "start": 615.56,
+      "duration": 4.279,
+      "text": "information about this ninex I'm going"
+    },
+    {
+      "start": 618.0,
+      "duration": 3.36,
+      "text": "to press enter and this gives me an"
+    },
+    {
+      "start": 619.839,
+      "duration": 3.521,
+      "text": "information that this is in default"
+    },
+    {
+      "start": 621.36,
+      "duration": 4.36,
+      "text": "namespace this was created this time"
+    },
+    {
+      "start": 623.36,
+      "duration": 4.56,
+      "text": "this is a label and all the events so"
+    },
+    {
+      "start": 625.72,
+      "duration": 4.88,
+      "text": "earlier it was having three replicas but"
+    },
+    {
+      "start": 627.92,
+      "duration": 4.28,
+      "text": "now we changed it around 3 to two so it"
+    },
+    {
+      "start": 630.6,
+      "duration": 4.08,
+      "text": "was scaled down so we get more"
+    },
+    {
+      "start": 632.2,
+      "duration": 5.28,
+      "text": "information about an object when you use"
+    },
+    {
+      "start": 634.68,
+      "duration": 4.719,
+      "text": "Cube C describe command now let's look"
+    },
+    {
+      "start": 637.48,
+      "duration": 3.76,
+      "text": "at imperative commands which are very"
+    },
+    {
+      "start": 639.399,
+      "duration": 3.44,
+      "text": "important if you work with kubernetes"
+    },
+    {
+      "start": 641.24,
+      "duration": 3.599,
+      "text": "every day or if you're preparing for"
+    },
+    {
+      "start": 642.839,
+      "duration": 3.841,
+      "text": "kubernetes certifications you need to"
+    },
+    {
+      "start": 644.839,
+      "duration": 3.921,
+      "text": "know imperative commands and what are"
+    },
+    {
+      "start": 646.68,
+      "duration": 4.76,
+      "text": "imperative commands imperative commands"
+    },
+    {
+      "start": 648.76,
+      "duration": 5.16,
+      "text": "allow quick actions without the need for"
+    },
+    {
+      "start": 651.44,
+      "duration": 4.199,
+      "text": "manifest files we already know if I want"
+    },
+    {
+      "start": 653.92,
+      "duration": 3.56,
+      "text": "to create a kubernetes object let's say"
+    },
+    {
+      "start": 655.639,
+      "duration": 3.681,
+      "text": "deployment I need to create a manifest"
+    },
+    {
+      "start": 657.48,
+      "duration": 3.799,
+      "text": "file like this similarly if I want to"
+    },
+    {
+      "start": 659.32,
+      "duration": 4.12,
+      "text": "create Services I also need to create a"
+    },
+    {
+      "start": 661.279,
+      "duration": 3.921,
+      "text": "manifest file for service which should"
+    },
+    {
+      "start": 663.44,
+      "duration": 3.88,
+      "text": "be something like this so there are two"
+    },
+    {
+      "start": 665.2,
+      "duration": 3.72,
+      "text": "ways to create comp object one is the"
+    },
+    {
+      "start": 667.32,
+      "duration": 3.6,
+      "text": "declarative way where you define a"
+    },
+    {
+      "start": 668.92,
+      "duration": 4.039,
+      "text": "manifest file like this the second is"
+    },
+    {
+      "start": 670.92,
+      "duration": 5.0,
+      "text": "the imperative way where you just run a"
+    },
+    {
+      "start": 672.959,
+      "duration": 4.641,
+      "text": "command and the object is created so"
+    },
+    {
+      "start": 675.92,
+      "duration": 3.4,
+      "text": "this is how you can manage ku's object"
+    },
+    {
+      "start": 677.6,
+      "duration": 3.64,
+      "text": "using imperative command this is the"
+    },
+    {
+      "start": 679.32,
+      "duration": 4.6,
+      "text": "official documentation and if you see an"
+    },
+    {
+      "start": 681.24,
+      "duration": 5.24,
+      "text": "example here using CBE CTL create"
+    },
+    {
+      "start": 683.92,
+      "duration": 5.12,
+      "text": "service you can create a service without"
+    },
+    {
+      "start": 686.48,
+      "duration": 4.159,
+      "text": "actually having a manifest file using"
+    },
+    {
+      "start": 689.04,
+      "duration": 3.96,
+      "text": "imperative commands you can create"
+    },
+    {
+      "start": 690.639,
+      "duration": 4.88,
+      "text": "deployment you can create Parts Services"
+    },
+    {
+      "start": 693.0,
+      "duration": 4.88,
+      "text": "you can also edit them update them lot"
+    },
+    {
+      "start": 695.519,
+      "duration": 4.481,
+      "text": "more so let me show you an example of"
+    },
+    {
+      "start": 697.88,
+      "duration": 4.44,
+      "text": "how you can use imperative command to"
+    },
+    {
+      "start": 700.0,
+      "duration": 4.92,
+      "text": "create a deployment in your cluster you"
+    },
+    {
+      "start": 702.32,
+      "duration": 5.48,
+      "text": "can do that by CTL"
+    },
+    {
+      "start": 704.92,
+      "duration": 6.719,
+      "text": "create deployment and I'm going to name"
+    },
+    {
+      "start": 707.8,
+      "duration": 5.32,
+      "text": "this deployment let's say my new deploy"
+    },
+    {
+      "start": 711.639,
+      "duration": 3.041,
+      "text": "along with this I can pass few"
+    },
+    {
+      "start": 713.12,
+      "duration": 4.0,
+      "text": "parameters like what is the image how"
+    },
+    {
+      "start": 714.68,
+      "duration": 5.599,
+      "text": "many replicas do I want let's use the"
+    },
+    {
+      "start": 717.12,
+      "duration": 5.719,
+      "text": "image Radice and I want to have two"
+    },
+    {
+      "start": 720.279,
+      "duration": 4.961,
+      "text": "replicas so I'll say replicas equals to"
+    },
+    {
+      "start": 722.839,
+      "duration": 4.201,
+      "text": "two once I do this and press enter"
+    },
+    {
+      "start": 725.24,
+      "duration": 4.08,
+      "text": "without having manifest F it's still now"
+    },
+    {
+      "start": 727.04,
+      "duration": 4.84,
+      "text": "created and I can also confirm that Cube"
+    },
+    {
+      "start": 729.32,
+      "duration": 4.8,
+      "text": "C get"
+    },
+    {
+      "start": 731.88,
+      "duration": 5.079,
+      "text": "deployment you can see deployment is now"
+    },
+    {
+      "start": 734.12,
+      "duration": 5.36,
+      "text": "ready which is created 9 seconds ago and"
+    },
+    {
+      "start": 736.959,
+      "duration": 5.081,
+      "text": "it's here I can also check the I'll do"
+    },
+    {
+      "start": 739.48,
+      "duration": 4.84,
+      "text": "Cube CTL get pods and I should have two"
+    },
+    {
+      "start": 742.04,
+      "duration": 4.72,
+      "text": "pods running for redis so I have two"
+    },
+    {
+      "start": 744.32,
+      "duration": 5.759,
+      "text": "pods with this let's see what image it"
+    },
+    {
+      "start": 746.76,
+      "duration": 6.04,
+      "text": "is US adding Cube CTL describe pods and"
+    },
+    {
+      "start": 750.079,
+      "duration": 5.721,
+      "text": "the name of the pod which is here so the"
+    },
+    {
+      "start": 752.8,
+      "duration": 5.599,
+      "text": "image this pod is using can be found"
+    },
+    {
+      "start": 755.8,
+      "duration": 4.8,
+      "text": "here in the image section so you can see"
+    },
+    {
+      "start": 758.399,
+      "duration": 4.201,
+      "text": "image is Radice so this is how you can"
+    },
+    {
+      "start": 760.6,
+      "duration": 4.32,
+      "text": "use imperative command similar to this"
+    },
+    {
+      "start": 762.6,
+      "duration": 4.96,
+      "text": "you have imperative commands also for"
+    },
+    {
+      "start": 764.92,
+      "duration": 5.08,
+      "text": "services for pods and lot more which you"
+    },
+    {
+      "start": 767.56,
+      "duration": 5.76,
+      "text": "can see from this documentation present"
+    },
+    {
+      "start": 770.0,
+      "duration": 5.839,
+      "text": "at the end of this lotion dock so this"
+    },
+    {
+      "start": 773.32,
+      "duration": 4.68,
+      "text": "is the create command used for cluster"
+    },
+    {
+      "start": 775.839,
+      "duration": 3.921,
+      "text": "rle cluster binding con map CR job"
+    },
+    {
+      "start": 778.0,
+      "duration": 4.959,
+      "text": "deployment all of these so if you want"
+    },
+    {
+      "start": 779.76,
+      "duration": 5.28,
+      "text": "to create uh let's say config map you"
+    },
+    {
+      "start": 782.959,
+      "duration": 5.081,
+      "text": "can use Cube C create config map with"
+    },
+    {
+      "start": 785.04,
+      "duration": 4.76,
+      "text": "the name of it and all the other options"
+    },
+    {
+      "start": 788.04,
+      "duration": 4.84,
+      "text": "required similarly for service you will"
+    },
+    {
+      "start": 789.8,
+      "duration": 5.399,
+      "text": "use Cube CTL create service or cube CTL"
+    },
+    {
+      "start": 792.88,
+      "duration": 3.92,
+      "text": "expose service command as well so this"
+    },
+    {
+      "start": 795.199,
+      "duration": 3.721,
+      "text": "is imperative command for you which will"
+    },
+    {
+      "start": 796.8,
+      "duration": 4.0,
+      "text": "help you create kubernetes object very"
+    },
+    {
+      "start": 798.92,
+      "duration": 4.359,
+      "text": "fast by just running a command without"
+    },
+    {
+      "start": 800.8,
+      "duration": 4.88,
+      "text": "using mif files which can help you save"
+    },
+    {
+      "start": 803.279,
+      "duration": 4.601,
+      "text": "a lot of time but on the other hand it's"
+    },
+    {
+      "start": 805.68,
+      "duration": 4.56,
+      "text": "not recommended for production use case"
+    },
+    {
+      "start": 807.88,
+      "duration": 4.88,
+      "text": "so marif f and kubernetes are best"
+    },
+    {
+      "start": 810.24,
+      "duration": 4.32,
+      "text": "practice as they offer a clear version"
+    },
+    {
+      "start": 812.76,
+      "duration": 3.4,
+      "text": "controlled and reproducible way to"
+    },
+    {
+      "start": 814.56,
+      "duration": 4.04,
+      "text": "declare the desired state of your"
+    },
+    {
+      "start": 816.16,
+      "duration": 4.44,
+      "text": "application so it's recommended to have"
+    },
+    {
+      "start": 818.6,
+      "duration": 3.359,
+      "text": "manifest files rather than using"
+    },
+    {
+      "start": 820.6,
+      "duration": 3.239,
+      "text": "imperative commands because you don't"
+    },
+    {
+      "start": 821.959,
+      "duration": 3.601,
+      "text": "have a record of what you are applying"
+    },
+    {
+      "start": 823.839,
+      "duration": 3.721,
+      "text": "and you cannot also Version Control"
+    },
+    {
+      "start": 825.56,
+      "duration": 4.12,
+      "text": "whereas if you have manifest files you"
+    },
+    {
+      "start": 827.56,
+      "duration": 3.68,
+      "text": "can save it on GitHub or gitlab and you"
+    },
+    {
+      "start": 829.68,
+      "duration": 3.56,
+      "text": "can also change it have it version"
+    },
+    {
+      "start": 831.24,
+      "duration": 4.08,
+      "text": "controlled so it's always recommended to"
+    },
+    {
+      "start": 833.24,
+      "duration": 4.8,
+      "text": "have manifest files let me show you a"
+    },
+    {
+      "start": 835.32,
+      "duration": 4.879,
+      "text": "way where you can create a manifest file"
+    },
+    {
+      "start": 838.04,
+      "duration": 4.0,
+      "text": "using imper ative command so so I want"
+    },
+    {
+      "start": 840.199,
+      "duration": 3.32,
+      "text": "to create a manifest file for deployment"
+    },
+    {
+      "start": 842.04,
+      "duration": 3.2,
+      "text": "which should use Monga DB image and"
+    },
+    {
+      "start": 843.519,
+      "duration": 3.921,
+      "text": "should have two replicas the name should"
+    },
+    {
+      "start": 845.24,
+      "duration": 4.36,
+      "text": "be Monga deploy so I can simply command"
+    },
+    {
+      "start": 847.44,
+      "duration": 3.88,
+      "text": "Cube CTL create"
+    },
+    {
+      "start": 849.6,
+      "duration": 4.76,
+      "text": "deployment and the name of the"
+    },
+    {
+      "start": 851.32,
+      "duration": 5.24,
+      "text": "deployment should be mongod D hyphen"
+    },
+    {
+      "start": 854.36,
+      "duration": 4.88,
+      "text": "deploy and I want to use the image which"
+    },
+    {
+      "start": 856.56,
+      "duration": 4.719,
+      "text": "is going to be I want to have"
+    },
+    {
+      "start": 859.24,
+      "duration": 4.44,
+      "text": "three replicas so let's say three"
+    },
+    {
+      "start": 861.279,
+      "duration": 3.92,
+      "text": "replicas and now I don't want to"
+    },
+    {
+      "start": 863.68,
+      "duration": 3.599,
+      "text": "actually create this but I want to have"
+    },
+    {
+      "start": 865.199,
+      "duration": 4.241,
+      "text": "a manifest file created using this"
+    },
+    {
+      "start": 867.279,
+      "duration": 5.12,
+      "text": "imperative command how can I do that I"
+    },
+    {
+      "start": 869.44,
+      "duration": 6.16,
+      "text": "can do that by using dry hyphen run"
+    },
+    {
+      "start": 872.399,
+      "duration": 4.961,
+      "text": "equals to client what does this do this"
+    },
+    {
+      "start": 875.6,
+      "duration": 3.919,
+      "text": "dry run attribute is used to print out"
+    },
+    {
+      "start": 877.36,
+      "duration": 4.0,
+      "text": "the output but don't actually create it"
+    },
+    {
+      "start": 879.519,
+      "duration": 3.481,
+      "text": "so I'm going to use that which will help"
+    },
+    {
+      "start": 881.36,
+      "duration": 3.24,
+      "text": "me create manifest files and if I want"
+    },
+    {
+      "start": 883.0,
+      "duration": 4.079,
+      "text": "to create this manifest file I need to"
+    },
+    {
+      "start": 884.6,
+      "duration": 4.44,
+      "text": "have the output in yaml format so I'll"
+    },
+    {
+      "start": 887.079,
+      "duration": 4.12,
+      "text": "run this command and if I press enter"
+    },
+    {
+      "start": 889.04,
+      "duration": 4.08,
+      "text": "you can see this is the Manifest file"
+    },
+    {
+      "start": 891.199,
+      "duration": 5.88,
+      "text": "which is now created and I can store"
+    },
+    {
+      "start": 893.12,
+      "duration": 8.639,
+      "text": "this in any file let's say D"
+    },
+    {
+      "start": 897.079,
+      "duration": 6.601,
+      "text": "yam if I do at mongod d. now I have a"
+    },
+    {
+      "start": 901.759,
+      "duration": 6.401,
+      "text": "manifest file created which I can simply"
+    },
+    {
+      "start": 903.68,
+      "duration": 7.36,
+      "text": "apply by running Cube CTL apply henf"
+    },
+    {
+      "start": 908.16,
+      "duration": 4.44,
+      "text": "mongod D.L and you can see a deployment"
+    },
+    {
+      "start": 911.04,
+      "duration": 3.4,
+      "text": "will be created so now I have a"
+    },
+    {
+      "start": 912.6,
+      "duration": 3.44,
+      "text": "deployment created also I have a"
+    },
+    {
+      "start": 914.44,
+      "duration": 3.48,
+      "text": "manifest file ready which I can now"
+    },
+    {
+      "start": 916.04,
+      "duration": 4.039,
+      "text": "Version Control so next time onwards you"
+    },
+    {
+      "start": 917.92,
+      "duration": 4.24,
+      "text": "don't need to remember or type manifest"
+    },
+    {
+      "start": 920.079,
+      "duration": 4.76,
+      "text": "files you can simply use the imperative"
+    },
+    {
+      "start": 922.16,
+      "duration": 4.76,
+      "text": "commands to create manifest files for"
+    },
+    {
+      "start": 924.839,
+      "duration": 4.161,
+      "text": "you now before we complete the"
+    },
+    {
+      "start": 926.92,
+      "duration": 4.719,
+      "text": "imperative command part if you look here"
+    },
+    {
+      "start": 929.0,
+      "duration": 4.959,
+      "text": "in the create section there is no pod"
+    },
+    {
+      "start": 931.639,
+      "duration": 4.361,
+      "text": "present here so can we not create pod"
+    },
+    {
+      "start": 933.959,
+      "duration": 5.12,
+      "text": "using imperative commands we can"
+    },
+    {
+      "start": 936.0,
+      "duration": 5.56,
+      "text": "actually do that but we use grun option"
+    },
+    {
+      "start": 939.079,
+      "duration": 4.801,
+      "text": "so we use run and then the Pod name"
+    },
+    {
+      "start": 941.56,
+      "duration": 4.0,
+      "text": "along with the image it is usually"
+    },
+    {
+      "start": 943.88,
+      "duration": 4.319,
+      "text": "because whenever you create a pod it has"
+    },
+    {
+      "start": 945.56,
+      "duration": 4.8,
+      "text": "to be created inside the deployment so"
+    },
+    {
+      "start": 948.199,
+      "duration": 4.64,
+      "text": "best practice is to create pods through"
+    },
+    {
+      "start": 950.36,
+      "duration": 4.24,
+      "text": "deployment but not individually so let"
+    },
+    {
+      "start": 952.839,
+      "duration": 3.56,
+      "text": "me show you an example let's say you"
+    },
+    {
+      "start": 954.6,
+      "duration": 4.52,
+      "text": "want to create a kubernetes pod which"
+    },
+    {
+      "start": 956.399,
+      "duration": 6.24,
+      "text": "should be running NX image so I'll say"
+    },
+    {
+      "start": 959.12,
+      "duration": 7.12,
+      "text": "cubec run name of the pod which is my"
+    },
+    {
+      "start": 962.639,
+      "duration": 6.401,
+      "text": "ngex and then the image is going to be"
+    },
+    {
+      "start": 966.24,
+      "duration": 5.56,
+      "text": "ngex all right it says my engine XP has"
+    },
+    {
+      "start": 969.04,
+      "duration": 5.719,
+      "text": "been created I can conf Cube CTL get"
+    },
+    {
+      "start": 971.8,
+      "duration": 5.68,
+      "text": "pods and you can see the engine X pod is"
+    },
+    {
+      "start": 974.759,
+      "duration": 4.44,
+      "text": "now running it was created 6 seconds ago"
+    },
+    {
+      "start": 977.48,
+      "duration": 3.839,
+      "text": "and it's now in running state so using"
+    },
+    {
+      "start": 979.199,
+      "duration": 4.401,
+      "text": "Cube CDL run command you can create pods"
+    },
+    {
+      "start": 981.319,
+      "duration": 3.76,
+      "text": "imperatively as well which is here the"
+    },
+    {
+      "start": 983.6,
+      "duration": 3.88,
+      "text": "cube C command creates a pod"
+    },
+    {
+      "start": 985.079,
+      "duration": 5.081,
+      "text": "imperatively allowing quick P deployment"
+    },
+    {
+      "start": 987.48,
+      "duration": 4.32,
+      "text": "without the need for manifest files now"
+    },
+    {
+      "start": 990.16,
+      "duration": 3.4,
+      "text": "we have learned two ways of creating"
+    },
+    {
+      "start": 991.8,
+      "duration": 3.2,
+      "text": "kubernetes object the first is the"
+    },
+    {
+      "start": 993.56,
+      "duration": 3.32,
+      "text": "declarative way where we have the"
+    },
+    {
+      "start": 995.0,
+      "duration": 4.399,
+      "text": "Manifest file and we in the cube CT"
+    },
+    {
+      "start": 996.88,
+      "duration": 4.24,
+      "text": "apply command to create kuber object the"
+    },
+    {
+      "start": 999.399,
+      "duration": 3.761,
+      "text": "second is the imperative way where we"
+    },
+    {
+      "start": 1001.12,
+      "duration": 3.92,
+      "text": "run the commands and create kubernetes"
+    },
+    {
+      "start": 1003.16,
+      "duration": 3.919,
+      "text": "object so in this imperative way we"
+    },
+    {
+      "start": 1005.04,
+      "duration": 3.64,
+      "text": "don't have the Manifest file so how can"
+    },
+    {
+      "start": 1007.079,
+      "duration": 2.88,
+      "text": "we change something if if I want to edit"
+    },
+    {
+      "start": 1008.68,
+      "duration": 3.839,
+      "text": "something I don't have the Manifest"
+    },
+    {
+      "start": 1009.959,
+      "duration": 5.161,
+      "text": "files to make the changes so you can use"
+    },
+    {
+      "start": 1012.519,
+      "duration": 4.961,
+      "text": "the cube CTL edit which will let you"
+    },
+    {
+      "start": 1015.12,
+      "duration": 4.719,
+      "text": "edit imperatively so if I run Cube CTL"
+    },
+    {
+      "start": 1017.48,
+      "duration": 4.2,
+      "text": "edit deploy deployment and I'm going to"
+    },
+    {
+      "start": 1019.839,
+      "duration": 3.44,
+      "text": "edit this deployment which was created"
+    },
+    {
+      "start": 1021.68,
+      "duration": 3.279,
+      "text": "imperatively if it is created"
+    },
+    {
+      "start": 1023.279,
+      "duration": 4.721,
+      "text": "imperatively it does not have the"
+    },
+    {
+      "start": 1024.959,
+      "duration": 4.441,
+      "text": "Manifest file Cube CTL edit deployment"
+    },
+    {
+      "start": 1028.0,
+      "duration": 3.839,
+      "text": "the name of the deployment and if I"
+    },
+    {
+      "start": 1029.4,
+      "duration": 5.159,
+      "text": "press enter now I can make the changes"
+    },
+    {
+      "start": 1031.839,
+      "duration": 6.12,
+      "text": "and then uh it will apply so let's go"
+    },
+    {
+      "start": 1034.559,
+      "duration": 6.36,
+      "text": "and change the replicas from two to just"
+    },
+    {
+      "start": 1037.959,
+      "duration": 4.84,
+      "text": "one now I'm going save by running WQ and"
+    },
+    {
+      "start": 1040.919,
+      "duration": 4.361,
+      "text": "you can see it says deployment has been"
+    },
+    {
+      "start": 1042.799,
+      "duration": 4.961,
+      "text": "edited so you can use Cube C edit"
+    },
+    {
+      "start": 1045.28,
+      "duration": 4.2,
+      "text": "command to imperatively edit kubernetes"
+    },
+    {
+      "start": 1047.76,
+      "duration": 3.159,
+      "text": "objects similarly there are other"
+    },
+    {
+      "start": 1049.48,
+      "duration": 3.559,
+      "text": "imperative commands that can help you"
+    },
+    {
+      "start": 1050.919,
+      "duration": 3.841,
+      "text": "save more time which is Cube CDL scale"
+    },
+    {
+      "start": 1053.039,
+      "duration": 3.721,
+      "text": "deployment so instead of changing the"
+    },
+    {
+      "start": 1054.76,
+      "duration": 4.0,
+      "text": "replicas by running this you can simply"
+    },
+    {
+      "start": 1056.76,
+      "duration": 4.6,
+      "text": "scale and Define how many replicas you"
+    },
+    {
+      "start": 1058.76,
+      "duration": 3.96,
+      "text": "want either 2 3 4 all the commands are"
+    },
+    {
+      "start": 1061.36,
+      "duration": 3.24,
+      "text": "going to be present in this"
+    },
+    {
+      "start": 1062.72,
+      "duration": 3.16,
+      "text": "documentation also the other"
+    },
+    {
+      "start": 1064.6,
+      "duration": 2.68,
+      "text": "documentation that make sure you go"
+    },
+    {
+      "start": 1065.88,
+      "duration": 3.2,
+      "text": "through them if you want to know more"
+    },
+    {
+      "start": 1067.28,
+      "duration": 4.399,
+      "text": "about imperative"
+    },
+    {
+      "start": 1069.08,
+      "duration": 4.56,
+      "text": "commands so now we know using Cube CTL"
+    },
+    {
+      "start": 1071.679,
+      "duration": 4.401,
+      "text": "edit command we can imperatively edit"
+    },
+    {
+      "start": 1073.64,
+      "duration": 4.12,
+      "text": "deployments services on area the kuber"
+    },
+    {
+      "start": 1076.08,
+      "duration": 3.2,
+      "text": "object let's try to do it one more time"
+    },
+    {
+      "start": 1077.76,
+      "duration": 3.84,
+      "text": "so I'm going to say Cube C edit"
+    },
+    {
+      "start": 1079.28,
+      "duration": 4.879,
+      "text": "deployment my deploy and now I want to"
+    },
+    {
+      "start": 1081.6,
+      "duration": 5.0,
+      "text": "change the name of my deployment so I"
+    },
+    {
+      "start": 1084.159,
+      "duration": 5.281,
+      "text": "say instead of my new deploy I just want"
+    },
+    {
+      "start": 1086.6,
+      "duration": 5.559,
+      "text": "it to be called as deploy let's try to"
+    },
+    {
+      "start": 1089.44,
+      "duration": 4.32,
+      "text": "save this I'm going to say WQ and it"
+    },
+    {
+      "start": 1092.159,
+      "duration": 4.201,
+      "text": "gave me an error saying a copy of your"
+    },
+    {
+      "start": 1093.76,
+      "duration": 6.0,
+      "text": "changes has been stored to this and it's"
+    },
+    {
+      "start": 1096.36,
+      "duration": 6.4,
+      "text": "not changed so if I just do cubes in get"
+    },
+    {
+      "start": 1099.76,
+      "duration": 5.32,
+      "text": "deploy it's still my new deploy but the"
+    },
+    {
+      "start": 1102.76,
+      "duration": 3.799,
+      "text": "copy is stored here so in kubernetes"
+    },
+    {
+      "start": 1105.08,
+      "duration": 3.839,
+      "text": "objects there are certain things that"
+    },
+    {
+      "start": 1106.559,
+      "duration": 4.881,
+      "text": "cannot be changed such as name or the"
+    },
+    {
+      "start": 1108.919,
+      "duration": 4.24,
+      "text": "image which are known as immutable so"
+    },
+    {
+      "start": 1111.44,
+      "duration": 4.64,
+      "text": "certain fields of resources like its"
+    },
+    {
+      "start": 1113.159,
+      "duration": 6.321,
+      "text": "name or type cannot be edited using Cube"
+    },
+    {
+      "start": 1116.08,
+      "duration": 5.56,
+      "text": "C edit for such cases the cube C replace"
+    },
+    {
+      "start": 1119.48,
+      "duration": 4.52,
+      "text": "command is used to enforce an update by"
+    },
+    {
+      "start": 1121.64,
+      "duration": 4.08,
+      "text": "deleting and recreating the resource so"
+    },
+    {
+      "start": 1124.0,
+      "duration": 3.52,
+      "text": "now we know the copy of this change has"
+    },
+    {
+      "start": 1125.72,
+      "duration": 4.319,
+      "text": "been stored here so instead of running"
+    },
+    {
+      "start": 1127.52,
+      "duration": 5.6,
+      "text": "Cube edit I'm going to use the cube CTL"
+    },
+    {
+      "start": 1130.039,
+      "duration": 5.0,
+      "text": "replace D- Force command you can see it"
+    },
+    {
+      "start": 1133.12,
+      "duration": 3.84,
+      "text": "says deployment has been replaced let's"
+    },
+    {
+      "start": 1135.039,
+      "duration": 4.081,
+      "text": "use the get deploy command and you will"
+    },
+    {
+      "start": 1136.96,
+      "duration": 4.68,
+      "text": "see a new deployment has been created 4"
+    },
+    {
+      "start": 1139.12,
+      "duration": 4.559,
+      "text": "seconds ago which is now not ready yet"
+    },
+    {
+      "start": 1141.64,
+      "duration": 5.0,
+      "text": "so let's use the hyphen watch or hyphen"
+    },
+    {
+      "start": 1143.679,
+      "duration": 5.041,
+      "text": "W to see the new deploy is ready you we"
+    },
+    {
+      "start": 1146.64,
+      "duration": 4.12,
+      "text": "also have a m new deployer here but very"
+    },
+    {
+      "start": 1148.72,
+      "duration": 4.28,
+      "text": "soon it will be deleted because we have"
+    },
+    {
+      "start": 1150.76,
+      "duration": 5.0,
+      "text": "replaced which will delete this and now"
+    },
+    {
+      "start": 1153.0,
+      "duration": 5.0,
+      "text": "created with a new name so this is how"
+    },
+    {
+      "start": 1155.76,
+      "duration": 4.08,
+      "text": "you can use the cube CTL replace command"
+    },
+    {
+      "start": 1158.0,
+      "duration": 3.88,
+      "text": "this command forcefully updates an"
+    },
+    {
+      "start": 1159.84,
+      "duration": 3.959,
+      "text": "object by replacing it with a new"
+    },
+    {
+      "start": 1161.88,
+      "duration": 4.039,
+      "text": "configuration this will help you a lot"
+    },
+    {
+      "start": 1163.799,
+      "duration": 4.161,
+      "text": "in troubleshooting and editing manifest"
+    },
+    {
+      "start": 1165.919,
+      "duration": 3.841,
+      "text": "files now let's look at debugging"
+    },
+    {
+      "start": 1167.96,
+      "duration": 3.88,
+      "text": "command that can help you troubleshoot"
+    },
+    {
+      "start": 1169.76,
+      "duration": 4.12,
+      "text": "issues in kubernetes we have already"
+    },
+    {
+      "start": 1171.84,
+      "duration": 3.64,
+      "text": "seen the describe command that provides"
+    },
+    {
+      "start": 1173.88,
+      "duration": 3.159,
+      "text": "you with information which can also help"
+    },
+    {
+      "start": 1175.48,
+      "duration": 3.84,
+      "text": "you in troubleshooting but there are"
+    },
+    {
+      "start": 1177.039,
+      "duration": 3.76,
+      "text": "more commands and to demonstrate this"
+    },
+    {
+      "start": 1179.32,
+      "duration": 3.719,
+      "text": "let's do an example so I'm going to"
+    },
+    {
+      "start": 1180.799,
+      "duration": 3.76,
+      "text": "create a deployment using the"
+    },
+    {
+      "start": 1183.039,
+      "duration": 3.801,
+      "text": "image and we are going to then run the"
+    },
+    {
+      "start": 1184.559,
+      "duration": 5.161,
+      "text": "debugging commands to C we'll say Cube"
+    },
+    {
+      "start": 1186.84,
+      "duration": 5.36,
+      "text": "CTL create deployment name of the"
+    },
+    {
+      "start": 1189.72,
+      "duration": 4.36,
+      "text": "deployment let's say and I'm going"
+    },
+    {
+      "start": 1192.2,
+      "duration": 4.44,
+      "text": "to use the image which is going to be"
+    },
+    {
+      "start": 1194.08,
+      "duration": 4.4,
+      "text": "image and I want to have two"
+    },
+    {
+      "start": 1196.64,
+      "duration": 4.8,
+      "text": "replicas running so and say replica"
+    },
+    {
+      "start": 1198.48,
+      "duration": 4.48,
+      "text": "equals to 2 and at now the deployment"
+    },
+    {
+      "start": 1201.44,
+      "duration": 5.0,
+      "text": "has been created I can confirm by"
+    },
+    {
+      "start": 1202.96,
+      "duration": 5.44,
+      "text": "running Cube CTL get deployment and you"
+    },
+    {
+      "start": 1206.44,
+      "duration": 4.76,
+      "text": "can see a deployment has been created 6"
+    },
+    {
+      "start": 1208.4,
+      "duration": 5.84,
+      "text": "seconds ago all right let's see the pods"
+    },
+    {
+      "start": 1211.2,
+      "duration": 5.44,
+      "text": "as well so if I do Cube CTL get pods I"
+    },
+    {
+      "start": 1214.24,
+      "duration": 4.559,
+      "text": "can see two PODS of are running"
+    },
+    {
+      "start": 1216.64,
+      "duration": 3.68,
+      "text": "right now in software world we know if"
+    },
+    {
+      "start": 1218.799,
+      "duration": 3.521,
+      "text": "there are any issues or if you want to"
+    },
+    {
+      "start": 1220.32,
+      "duration": 4.28,
+      "text": "check how is our application working we"
+    },
+    {
+      "start": 1222.32,
+      "duration": 4.28,
+      "text": "always check the logs so to get the logs"
+    },
+    {
+      "start": 1224.6,
+      "duration": 5.8,
+      "text": "of any application running here you can"
+    },
+    {
+      "start": 1226.6,
+      "duration": 5.6,
+      "text": "run Cube CTL logs command logs and then"
+    },
+    {
+      "start": 1230.4,
+      "duration": 3.04,
+      "text": "the part you want to get the log for so"
+    },
+    {
+      "start": 1232.2,
+      "duration": 3.0,
+      "text": "I want to get the logs for this"
+    },
+    {
+      "start": 1233.44,
+      "duration": 4.239,
+      "text": "particular application or this"
+    },
+    {
+      "start": 1235.2,
+      "duration": 4.839,
+      "text": "particular part I will say Cube CTL logs"
+    },
+    {
+      "start": 1237.679,
+      "duration": 3.761,
+      "text": "and then the Pod name now you can see"
+    },
+    {
+      "start": 1240.039,
+      "duration": 3.361,
+      "text": "the logs of this pod and you can"
+    },
+    {
+      "start": 1241.44,
+      "duration": 4.08,
+      "text": "troubleshoot if there are any issues or"
+    },
+    {
+      "start": 1243.4,
+      "duration": 3.84,
+      "text": "you can find out what is the problem so"
+    },
+    {
+      "start": 1245.52,
+      "duration": 4.56,
+      "text": "this is the command to get the logs"
+    },
+    {
+      "start": 1247.24,
+      "duration": 4.72,
+      "text": "which is Cube C logs and the name of the"
+    },
+    {
+      "start": 1250.08,
+      "duration": 3.959,
+      "text": "Pod so now we know how to get the logs"
+    },
+    {
+      "start": 1251.96,
+      "duration": 3.959,
+      "text": "for an application but what if I want to"
+    },
+    {
+      "start": 1254.039,
+      "duration": 3.601,
+      "text": "go inside this container and do some"
+    },
+    {
+      "start": 1255.919,
+      "duration": 4.681,
+      "text": "commands or run some commands I can do"
+    },
+    {
+      "start": 1257.64,
+      "duration": 5.44,
+      "text": "that by using the cube CTL exec command"
+    },
+    {
+      "start": 1260.6,
+      "duration": 4.76,
+      "text": "so I'll run Cube CTL exec ion it which"
+    },
+    {
+      "start": 1263.08,
+      "duration": 5.079,
+      "text": "is stands for interactive terminal the"
+    },
+    {
+      "start": 1265.36,
+      "duration": 7.199,
+      "text": "name of the Pod and then the command so"
+    },
+    {
+      "start": 1268.159,
+      "duration": 7.4,
+      "text": "I'll say/ pin SL bash once I do that I'm"
+    },
+    {
+      "start": 1272.559,
+      "duration": 5.841,
+      "text": "now inside the mongod DB instance or"
+    },
+    {
+      "start": 1275.559,
+      "duration": 4.521,
+      "text": "mongod DB pod here inside this I can run"
+    },
+    {
+      "start": 1278.4,
+      "duration": 4.36,
+      "text": "any command I want to list down all the"
+    },
+    {
+      "start": 1280.08,
+      "duration": 4.52,
+      "text": "files present here or anything I want to"
+    },
+    {
+      "start": 1282.76,
+      "duration": 4.36,
+      "text": "do so to go out I'm going to run the"
+    },
+    {
+      "start": 1284.6,
+      "duration": 3.84,
+      "text": "exit command and now I'm back to my"
+    },
+    {
+      "start": 1287.12,
+      "duration": 3.679,
+      "text": "local machine I'm not inside the"
+    },
+    {
+      "start": 1288.44,
+      "duration": 4.599,
+      "text": "container anymore LS"
+    },
+    {
+      "start": 1290.799,
+      "duration": 5.681,
+      "text": "/c now I'm going to get everything"
+    },
+    {
+      "start": 1293.039,
+      "duration": 5.801,
+      "text": "present inside this/ Etc folder for this"
+    },
+    {
+      "start": 1296.48,
+      "duration": 4.84,
+      "text": "particular pod so you can use Cube C"
+    },
+    {
+      "start": 1298.84,
+      "duration": 5.959,
+      "text": "exec is to go inside the Pod if you want"
+    },
+    {
+      "start": 1301.32,
+      "duration": 6.0,
+      "text": "to run a command directly inside the Pod"
+    },
+    {
+      "start": 1304.799,
+      "duration": 4.081,
+      "text": "so this is Cube C exact hyphen ID this"
+    },
+    {
+      "start": 1307.32,
+      "duration": 3.839,
+      "text": "commands demonstrate debugging"
+    },
+    {
+      "start": 1308.88,
+      "duration": 5.56,
+      "text": "techniques so we have seen CU locks to"
+    },
+    {
+      "start": 1311.159,
+      "duration": 5.361,
+      "text": "get the locks and cubd exec to go inside"
+    },
+    {
+      "start": 1314.44,
+      "duration": 4.52,
+      "text": "the container or run the commands inside"
+    },
+    {
+      "start": 1316.52,
+      "duration": 4.0,
+      "text": "the container last ly let's look at"
+    },
+    {
+      "start": 1318.96,
+      "duration": 3.199,
+      "text": "logging and monitoring commands we"
+    },
+    {
+      "start": 1320.52,
+      "duration": 3.92,
+      "text": "already know how to get the logs for a"
+    },
+    {
+      "start": 1322.159,
+      "duration": 4.841,
+      "text": "pod but let's see how we can get the"
+    },
+    {
+      "start": 1324.44,
+      "duration": 6.08,
+      "text": "resources like CPU and memory for pods"
+    },
+    {
+      "start": 1327.0,
+      "duration": 5.679,
+      "text": "or for nodes so to get the logs we then"
+    },
+    {
+      "start": 1330.52,
+      "duration": 4.159,
+      "text": "the command Cube CTL Logs with the Pod"
+    },
+    {
+      "start": 1332.679,
+      "duration": 3.921,
+      "text": "name but for getting the CP and memory"
+    },
+    {
+      "start": 1334.679,
+      "duration": 3.321,
+      "text": "you use the top command so we'll say"
+    },
+    {
+      "start": 1336.6,
+      "duration": 5.64,
+      "text": "Cube"
+    },
+    {
+      "start": 1338.0,
+      "duration": 6.24,
+      "text": "CTL top and then parts so we see the CPU"
+    },
+    {
+      "start": 1342.24,
+      "duration": 4.12,
+      "text": "used by this pod and the memory used"
+    },
+    {
+      "start": 1344.24,
+      "duration": 3.799,
+      "text": "similarly for all the other pods as well"
+    },
+    {
+      "start": 1346.36,
+      "duration": 3.799,
+      "text": "the same command can be used with the"
+    },
+    {
+      "start": 1348.039,
+      "duration": 4.681,
+      "text": "nodes as well so I can say Cube CDL top"
+    },
+    {
+      "start": 1350.159,
+      "duration": 4.64,
+      "text": "nodes right now this is mini Cube so it"
+    },
+    {
+      "start": 1352.72,
+      "duration": 4.12,
+      "text": "only has one nodes and it gives you"
+    },
+    {
+      "start": 1354.799,
+      "duration": 5.48,
+      "text": "information about mini Cube here CPU"
+    },
+    {
+      "start": 1356.84,
+      "duration": 5.48,
+      "text": "used is 8% and memory used is 57% so"
+    },
+    {
+      "start": 1360.279,
+      "duration": 4.201,
+      "text": "this is the top command that is used to"
+    },
+    {
+      "start": 1362.32,
+      "duration": 4.92,
+      "text": "get the resources like CPU and memory"
+    },
+    {
+      "start": 1364.48,
+      "duration": 4.6,
+      "text": "for ports or for notes so these are all"
+    },
+    {
+      "start": 1367.24,
+      "duration": 4.319,
+      "text": "the important commands that you should"
+    },
+    {
+      "start": 1369.08,
+      "duration": 4.079,
+      "text": "know about kubernetes I hope this video"
+    },
+    {
+      "start": 1371.559,
+      "duration": 3.921,
+      "text": "was informative I also have two"
+    },
+    {
+      "start": 1373.159,
+      "duration": 4.281,
+      "text": "documentations by kubernetes itself the"
+    },
+    {
+      "start": 1375.48,
+      "duration": 4.319,
+      "text": "first one is the cube CDL cheat sheet"
+    },
+    {
+      "start": 1377.44,
+      "duration": 4.64,
+      "text": "which has all the commands that you will"
+    },
+    {
+      "start": 1379.799,
+      "duration": 3.88,
+      "text": "require when working with kubernetes and"
+    },
+    {
+      "start": 1382.08,
+      "duration": 3.959,
+      "text": "you can go ahead and check it out this"
+    },
+    {
+      "start": 1383.679,
+      "duration": 3.921,
+      "text": "is by kubernetes official documentation"
+    },
+    {
+      "start": 1386.039,
+      "duration": 3.081,
+      "text": "so every time there is a new command"
+    },
+    {
+      "start": 1387.6,
+      "duration": 3.6,
+      "text": "they will obviously update it and you"
+    },
+    {
+      "start": 1389.12,
+      "duration": 4.799,
+      "text": "should only refer to this similarly I"
+    },
+    {
+      "start": 1391.2,
+      "duration": 4.64,
+      "text": "also have the second document which is"
+    },
+    {
+      "start": 1393.919,
+      "duration": 3.721,
+      "text": "uh this one that will give you more idea"
+    },
+    {
+      "start": 1395.84,
+      "duration": 3.959,
+      "text": "and it's presented in a nice way so you"
+    },
+    {
+      "start": 1397.64,
+      "duration": 4.159,
+      "text": "can use this two documentation to know"
+    },
+    {
+      "start": 1399.799,
+      "duration": 3.88,
+      "text": "about more kues commands I hope this"
+    },
+    {
+      "start": 1401.799,
+      "duration": 3.76,
+      "text": "video was informative do let me know if"
+    },
+    {
+      "start": 1403.679,
+      "duration": 3.641,
+      "text": "you have any questions any doubt and if"
+    },
+    {
+      "start": 1405.559,
+      "duration": 3.881,
+      "text": "you want me to share this document do"
+    },
+    {
+      "start": 1407.32,
+      "duration": 5.239,
+      "text": "let me know the comment section thank"
+    },
+    {
+      "start": 1409.44,
+      "duration": 3.119,
+      "text": "you and have a good"
+    },
+    {
+      "start": 1412.919,
+      "duration": 3.0,
+      "text": "day"
+    }
+  ]
+}

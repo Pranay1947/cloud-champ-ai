@@ -1,0 +1,771 @@
+{
+  "video": {
+    "id": "pz3pzer7sG0",
+    "title": "What are the types of Storage Classes for AWS S3? Important Topic for Solution Architect Exam!",
+    "url": "https://www.youtube.com/watch?v=pz3pzer7sG0",
+    "duration": 352,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.64,
+      "duration": 4.48,
+      "text": "hello and welcome to cloud champ in this"
+    },
+    {
+      "start": 2.8,
+      "duration": 4.4,
+      "text": "video we are going to talk about amazon"
+    },
+    {
+      "start": 5.12,
+      "duration": 4.96,
+      "text": "s3 storage classes"
+    },
+    {
+      "start": 7.2,
+      "duration": 4.08,
+      "text": "so amazon s3 is object level storage in"
+    },
+    {
+      "start": 10.08,
+      "duration": 3.76,
+      "text": "aws"
+    },
+    {
+      "start": 11.28,
+      "duration": 4.559,
+      "text": "which lets you store virtually unlimited"
+    },
+    {
+      "start": 13.84,
+      "duration": 4.56,
+      "text": "amount of data"
+    },
+    {
+      "start": 15.839,
+      "duration": 4.721,
+      "text": "amazon s3 offers a range of storage"
+    },
+    {
+      "start": 18.4,
+      "duration": 3.92,
+      "text": "classes that you can choose from based"
+    },
+    {
+      "start": 20.56,
+      "duration": 4.4,
+      "text": "on the data access"
+    },
+    {
+      "start": 22.32,
+      "duration": 4.24,
+      "text": "resiliency and cost requirements of your"
+    },
+    {
+      "start": 24.96,
+      "duration": 4.0,
+      "text": "workload"
+    },
+    {
+      "start": 26.56,
+      "duration": 4.959,
+      "text": "s3 storage classes are purpose built to"
+    },
+    {
+      "start": 28.96,
+      "duration": 4.8,
+      "text": "provide the load lowest cost storage for"
+    },
+    {
+      "start": 31.519,
+      "duration": 4.321,
+      "text": "different access pattern"
+    },
+    {
+      "start": 33.76,
+      "duration": 2.959,
+      "text": "so the different storage classes in s3"
+    },
+    {
+      "start": 35.84,
+      "duration": 3.68,
+      "text": "are"
+    },
+    {
+      "start": 36.719,
+      "duration": 4.16,
+      "text": "the s3 standard for frequently accessed"
+    },
+    {
+      "start": 39.52,
+      "duration": 4.48,
+      "text": "data"
+    },
+    {
+      "start": 40.879,
+      "duration": 4.721,
+      "text": "s3 standard infrequent access and s3 one"
+    },
+    {
+      "start": 44.0,
+      "duration": 4.079,
+      "text": "zone infrequent access for less"
+    },
+    {
+      "start": 45.6,
+      "duration": 4.56,
+      "text": "frequently accessed data"
+    },
+    {
+      "start": 48.079,
+      "duration": 4.48,
+      "text": "s3 intelligent tiering for automatic"
+    },
+    {
+      "start": 50.16,
+      "duration": 4.0,
+      "text": "cost saving for data with unknown or"
+    },
+    {
+      "start": 52.559,
+      "duration": 3.121,
+      "text": "access changing"
+    },
+    {
+      "start": 54.16,
+      "duration": 4.8,
+      "text": "patterns"
+    },
+    {
+      "start": 55.68,
+      "duration": 7.44,
+      "text": "and s3 glacier for archival"
+    },
+    {
+      "start": 58.96,
+      "duration": 4.16,
+      "text": "let's start with the s3 standard first"
+    },
+    {
+      "start": 63.359,
+      "duration": 4.641,
+      "text": "so the s3 standard is used for general"
+    },
+    {
+      "start": 66.24,
+      "duration": 3.68,
+      "text": "purpose"
+    },
+    {
+      "start": 68.0,
+      "duration": 3.84,
+      "text": "and it offers higher durability"
+    },
+    {
+      "start": 69.92,
+      "duration": 3.44,
+      "text": "availability and performance of"
+    },
+    {
+      "start": 71.84,
+      "duration": 3.44,
+      "text": "performance object storage for"
+    },
+    {
+      "start": 73.36,
+      "duration": 4.399,
+      "text": "frequently accessed data"
+    },
+    {
+      "start": 75.28,
+      "duration": 5.44,
+      "text": "because it delivers low latency and high"
+    },
+    {
+      "start": 77.759,
+      "duration": 5.68,
+      "text": "throughput s3 is appropriate"
+    },
+    {
+      "start": 80.72,
+      "duration": 4.56,
+      "text": "for wide variety of use cases including"
+    },
+    {
+      "start": 83.439,
+      "duration": 4.481,
+      "text": "cloud applications"
+    },
+    {
+      "start": 85.28,
+      "duration": 5.68,
+      "text": "dynamic websites content distribution"
+    },
+    {
+      "start": 87.92,
+      "duration": 5.6,
+      "text": "mobile and gaming application"
+    },
+    {
+      "start": 90.96,
+      "duration": 4.88,
+      "text": "s3 standard storage can be configured at"
+    },
+    {
+      "start": 93.52,
+      "duration": 4.88,
+      "text": "object level"
+    },
+    {
+      "start": 95.84,
+      "duration": 4.48,
+      "text": "so the key features of s3 standard are"
+    },
+    {
+      "start": 98.4,
+      "duration": 4.679,
+      "text": "it has low latency and high throughput"
+    },
+    {
+      "start": 100.32,
+      "duration": 4.96,
+      "text": "performance designed for durability of"
+    },
+    {
+      "start": 103.079,
+      "duration": 4.201,
+      "text": "99.11 lines"
+    },
+    {
+      "start": 105.28,
+      "duration": 4.0,
+      "text": "and even if one of the availability"
+    },
+    {
+      "start": 107.28,
+      "duration": 4.56,
+      "text": "zones is affected you can still have"
+    },
+    {
+      "start": 109.28,
+      "duration": 3.76,
+      "text": "your data as it copies in your data in"
+    },
+    {
+      "start": 111.84,
+      "duration": 3.76,
+      "text": "more than"
+    },
+    {
+      "start": 113.04,
+      "duration": 4.64,
+      "text": "one easy"
+    },
+    {
+      "start": 115.6,
+      "duration": 4.0,
+      "text": "and you can use it for data links cloud"
+    },
+    {
+      "start": 117.68,
+      "duration": 3.2,
+      "text": "native application website and content"
+    },
+    {
+      "start": 119.6,
+      "duration": 2.64,
+      "text": "distribution"
+    },
+    {
+      "start": 120.88,
+      "duration": 3.36,
+      "text": "the second"
+    },
+    {
+      "start": 122.24,
+      "duration": 6.239,
+      "text": "storage class is"
+    },
+    {
+      "start": 124.24,
+      "duration": 6.4,
+      "text": "amazon s3 standard infrequent access"
+    },
+    {
+      "start": 128.479,
+      "duration": 5.041,
+      "text": "so the s3 standard infrequent access has"
+    },
+    {
+      "start": 130.64,
+      "duration": 5.2,
+      "text": "the same durability and availability as"
+    },
+    {
+      "start": 133.52,
+      "duration": 4.799,
+      "text": "s3 standard the only difference between"
+    },
+    {
+      "start": 135.84,
+      "duration": 2.479,
+      "text": "them is"
+    },
+    {
+      "start": 139.52,
+      "duration": 4.24,
+      "text": "it is s3 standard in frequent access is"
+    },
+    {
+      "start": 141.68,
+      "duration": 4.0,
+      "text": "used for the data which you are going to"
+    },
+    {
+      "start": 143.76,
+      "duration": 4.88,
+      "text": "access less frequently"
+    },
+    {
+      "start": 145.68,
+      "duration": 4.88,
+      "text": "and this lets you stay save your cost"
+    },
+    {
+      "start": 148.64,
+      "duration": 3.92,
+      "text": "the key features are for data that is"
+    },
+    {
+      "start": 150.56,
+      "duration": 4.319,
+      "text": "accessed less frequently"
+    },
+    {
+      "start": 152.56,
+      "duration": 6.64,
+      "text": "same low latency and high throughput as"
+    },
+    {
+      "start": 154.879,
+      "duration": 6.321,
+      "text": "s3 standard durability of 99.11 across"
+    },
+    {
+      "start": 159.2,
+      "duration": 4.88,
+      "text": "multiple availability zones"
+    },
+    {
+      "start": 161.2,
+      "duration": 4.56,
+      "text": "and designed for 99.9 availability over"
+    },
+    {
+      "start": 164.08,
+      "duration": 3.519,
+      "text": "a given year"
+    },
+    {
+      "start": 165.76,
+      "duration": 4.72,
+      "text": "and it is used for long-term storage"
+    },
+    {
+      "start": 167.599,
+      "duration": 6.241,
+      "text": "backups and disaster recovery"
+    },
+    {
+      "start": 170.48,
+      "duration": 5.68,
+      "text": "the next storage class is s3 one zone in"
+    },
+    {
+      "start": 173.84,
+      "duration": 4.479,
+      "text": "frequent access"
+    },
+    {
+      "start": 176.16,
+      "duration": 4.079,
+      "text": "so it is also used for data which are"
+    },
+    {
+      "start": 178.319,
+      "duration": 5.361,
+      "text": "accessed less frequently"
+    },
+    {
+      "start": 180.239,
+      "duration": 6.481,
+      "text": "the only change in this is the data is"
+    },
+    {
+      "start": 183.68,
+      "duration": 5.76,
+      "text": "not replicated across three ac's it is"
+    },
+    {
+      "start": 186.72,
+      "duration": 4.4,
+      "text": "only in one easy so if the ac in which"
+    },
+    {
+      "start": 189.44,
+      "duration": 3.04,
+      "text": "your data is stored"
+    },
+    {
+      "start": 191.12,
+      "duration": 4.0,
+      "text": "get"
+    },
+    {
+      "start": 192.48,
+      "duration": 3.92,
+      "text": "loses you can lose your data as well so"
+    },
+    {
+      "start": 195.12,
+      "duration": 3.68,
+      "text": "the"
+    },
+    {
+      "start": 196.4,
+      "duration": 4.839,
+      "text": "use cases is for ideal of secondary"
+    },
+    {
+      "start": 198.8,
+      "duration": 4.64,
+      "text": "backups and workload with easily"
+    },
+    {
+      "start": 201.239,
+      "duration": 6.521,
+      "text": "recreatable data"
+    },
+    {
+      "start": 203.44,
+      "duration": 6.32,
+      "text": "and it provides availability of 99.5"
+    },
+    {
+      "start": 207.76,
+      "duration": 3.92,
+      "text": "percent"
+    },
+    {
+      "start": 209.76,
+      "duration": 4.88,
+      "text": "so this is s3 one zone in frequent"
+    },
+    {
+      "start": 211.68,
+      "duration": 4.4,
+      "text": "access the next is the s3 intelligent"
+    },
+    {
+      "start": 214.64,
+      "duration": 2.64,
+      "text": "tiering"
+    },
+    {
+      "start": 216.08,
+      "duration": 3.84,
+      "text": "this is"
+    },
+    {
+      "start": 217.28,
+      "duration": 5.039,
+      "text": "the storage class which uses"
+    },
+    {
+      "start": 219.92,
+      "duration": 4.08,
+      "text": "machine learning for automatically"
+    },
+    {
+      "start": 222.319,
+      "duration": 4.56,
+      "text": "transferring your data"
+    },
+    {
+      "start": 224.0,
+      "duration": 5.84,
+      "text": "in different s3 classes according to"
+    },
+    {
+      "start": 226.879,
+      "duration": 4.881,
+      "text": "your data retrieval"
+    },
+    {
+      "start": 229.84,
+      "duration": 3.92,
+      "text": "and it is used for data lakes and"
+    },
+    {
+      "start": 231.76,
+      "duration": 3.36,
+      "text": "applications with changing or unknown"
+    },
+    {
+      "start": 233.76,
+      "duration": 3.6,
+      "text": "access patterns"
+    },
+    {
+      "start": 235.12,
+      "duration": 4.64,
+      "text": "it is highly available and durable with"
+    },
+    {
+      "start": 237.36,
+      "duration": 4.32,
+      "text": "low latency high throughput performance"
+    },
+    {
+      "start": 239.76,
+      "duration": 3.36,
+      "text": "same as s3 standard"
+    },
+    {
+      "start": 241.68,
+      "duration": 4.96,
+      "text": "the next"
+    },
+    {
+      "start": 243.12,
+      "duration": 5.92,
+      "text": "storage class is s3 glacier fisher are"
+    },
+    {
+      "start": 246.64,
+      "duration": 5.28,
+      "text": "archival storage in s3 which are of"
+    },
+    {
+      "start": 249.04,
+      "duration": 5.6,
+      "text": "three different type the first is s3"
+    },
+    {
+      "start": 251.92,
+      "duration": 5.279,
+      "text": "glacier instant retrieval"
+    },
+    {
+      "start": 254.64,
+      "duration": 4.719,
+      "text": "you can use this for long term digital"
+    },
+    {
+      "start": 257.199,
+      "duration": 4.961,
+      "text": "preservation of data that is accessed"
+    },
+    {
+      "start": 259.359,
+      "duration": 4.641,
+      "text": "once per quarter and in instant"
+    },
+    {
+      "start": 262.16,
+      "duration": 3.68,
+      "text": "retrieval if you retrieve your data you"
+    },
+    {
+      "start": 264.0,
+      "duration": 3.28,
+      "text": "will get the data instantly"
+    },
+    {
+      "start": 265.84,
+      "duration": 4.32,
+      "text": "within seconds"
+    },
+    {
+      "start": 267.28,
+      "duration": 5.76,
+      "text": "the object size should be minimum 128 kb"
+    },
+    {
+      "start": 270.16,
+      "duration": 5.039,
+      "text": "it provides durability of 99.11"
+    },
+    {
+      "start": 273.04,
+      "duration": 5.12,
+      "text": "across multiple zones"
+    },
+    {
+      "start": 275.199,
+      "duration": 5.121,
+      "text": "the next s3 storage class is s3 glacier"
+    },
+    {
+      "start": 278.16,
+      "duration": 4.24,
+      "text": "flexible retrieval"
+    },
+    {
+      "start": 280.32,
+      "duration": 4.319,
+      "text": "it is ideal for backup and disaster"
+    },
+    {
+      "start": 282.4,
+      "duration": 4.079,
+      "text": "recovery use cases when large sets of"
+    },
+    {
+      "start": 284.639,
+      "duration": 4.56,
+      "text": "data occasionally need to be retrieved"
+    },
+    {
+      "start": 286.479,
+      "duration": 5.201,
+      "text": "in minutes without concern of cost"
+    },
+    {
+      "start": 289.199,
+      "duration": 3.921,
+      "text": "and the retrieval times is from minutes"
+    },
+    {
+      "start": 291.68,
+      "duration": 4.0,
+      "text": "to hours"
+    },
+    {
+      "start": 293.12,
+      "duration": 5.2,
+      "text": "s3 glacier flexible retrieval is used"
+    },
+    {
+      "start": 295.68,
+      "duration": 5.2,
+      "text": "when he is used for backups and"
+    },
+    {
+      "start": 298.32,
+      "duration": 4.56,
+      "text": "disaster recovery when large sets of"
+    },
+    {
+      "start": 300.88,
+      "duration": 4.319,
+      "text": "data occasionally need to be retrieved"
+    },
+    {
+      "start": 302.88,
+      "duration": 5.039,
+      "text": "in minutes without concern of our cost"
+    },
+    {
+      "start": 305.199,
+      "duration": 3.921,
+      "text": "it is used for archival of data"
+    },
+    {
+      "start": 307.919,
+      "duration": 3.84,
+      "text": "the last"
+    },
+    {
+      "start": 309.12,
+      "duration": 5.2,
+      "text": "is deep archive which is the lowest cost"
+    },
+    {
+      "start": 311.759,
+      "duration": 3.761,
+      "text": "storage designed for long term retention"
+    },
+    {
+      "start": 314.32,
+      "duration": 4.56,
+      "text": "of data"
+    },
+    {
+      "start": 315.52,
+      "duration": 4.399,
+      "text": "and which you want to retain for 7 to 10"
+    },
+    {
+      "start": 318.88,
+      "duration": 2.56,
+      "text": "years"
+    },
+    {
+      "start": 319.919,
+      "duration": 4.0,
+      "text": "the retrieval time"
+    },
+    {
+      "start": 321.44,
+      "duration": 4.72,
+      "text": "is about 12 hours so if you want to"
+    },
+    {
+      "start": 323.919,
+      "duration": 4.481,
+      "text": "access your data if you retrieve it you"
+    },
+    {
+      "start": 326.16,
+      "duration": 4.879,
+      "text": "will get the data within 12 hours the"
+    },
+    {
+      "start": 328.4,
+      "duration": 4.96,
+      "text": "durability is 99.11"
+    },
+    {
+      "start": 331.039,
+      "duration": 4.321,
+      "text": "and it is ideal alternative for magnetic"
+    },
+    {
+      "start": 333.36,
+      "duration": 3.839,
+      "text": "tape libraries"
+    },
+    {
+      "start": 335.36,
+      "duration": 4.64,
+      "text": "and it is the most cost effective"
+    },
+    {
+      "start": 337.199,
+      "duration": 5.28,
+      "text": "storage class in s3 so these are all the"
+    },
+    {
+      "start": 340.0,
+      "duration": 5.199,
+      "text": "storage classes in s3 if you like the"
+    },
+    {
+      "start": 342.479,
+      "duration": 4.881,
+      "text": "video please subscribe to the channel"
+    },
+    {
+      "start": 345.199,
+      "duration": 7.081,
+      "text": "you can check out the other videos on"
+    },
+    {
+      "start": 347.36,
+      "duration": 4.92,
+      "text": "cloud and devops have a good day"
+    }
+  ]
+}

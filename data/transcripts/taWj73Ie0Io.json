@@ -1,0 +1,396 @@
+{
+  "video": {
+    "id": "taWj73Ie0Io",
+    "title": "How to create a spam bot with 5 line of Python Code",
+    "url": "https://www.youtube.com/watch?v=taWj73Ie0Io",
+    "duration": 164,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.08,
+      "text": "there are two reasons why you clicked on"
+    },
+    {
+      "start": 1.839,
+      "duration": 4.721,
+      "text": "this video first you want to annoy"
+    },
+    {
+      "start": 4.24,
+      "duration": 3.92,
+      "text": "simple second"
+    },
+    {
+      "start": 6.56,
+      "duration": 3.92,
+      "text": "there is no second reason i know you"
+    },
+    {
+      "start": 8.16,
+      "duration": 4.16,
+      "text": "want to annoy symbol so in this python"
+    },
+    {
+      "start": 10.48,
+      "duration": 4.079,
+      "text": "video i'm going to show you how you can"
+    },
+    {
+      "start": 12.32,
+      "duration": 4.16,
+      "text": "create a program that can send automatic"
+    },
+    {
+      "start": 14.559,
+      "duration": 4.321,
+      "text": "messages which you can use to spam your"
+    },
+    {
+      "start": 16.48,
+      "duration": 4.16,
+      "text": "homies or you can use to send cute"
+    },
+    {
+      "start": 18.88,
+      "duration": 2.88,
+      "text": "messages to your crush so let's get"
+    },
+    {
+      "start": 20.64,
+      "duration": 2.559,
+      "text": "started"
+    },
+    {
+      "start": 21.76,
+      "duration": 4.32,
+      "text": "to get started you will need a code"
+    },
+    {
+      "start": 23.199,
+      "duration": 5.201,
+      "text": "editor or an ide i'm going to use visual"
+    },
+    {
+      "start": 26.08,
+      "duration": 4.24,
+      "text": "studio code because i like it i'm in my"
+    },
+    {
+      "start": 28.4,
+      "duration": 5.36,
+      "text": "spam folder and i have created a file"
+    },
+    {
+      "start": 30.32,
+      "duration": 6.079,
+      "text": "name spam.txt where i have some text"
+    },
+    {
+      "start": 33.76,
+      "duration": 4.0,
+      "text": "hello bro 96 times because i want to"
+    },
+    {
+      "start": 36.399,
+      "duration": 3.68,
+      "text": "spam my friends"
+    },
+    {
+      "start": 37.76,
+      "duration": 4.959,
+      "text": "this much so in here i'm going to create"
+    },
+    {
+      "start": 40.079,
+      "duration": 4.16,
+      "text": "a file named as spam"
+    },
+    {
+      "start": 42.719,
+      "duration": 3.601,
+      "text": "dot p y"
+    },
+    {
+      "start": 44.239,
+      "duration": 4.081,
+      "text": "every python file should enable the"
+    },
+    {
+      "start": 46.32,
+      "duration": 3.759,
+      "text": "extension as dot py"
+    },
+    {
+      "start": 48.32,
+      "duration": 3.28,
+      "text": "now let's start the code we need to"
+    },
+    {
+      "start": 50.079,
+      "duration": 3.281,
+      "text": "import some modules the first model is"
+    },
+    {
+      "start": 51.6,
+      "duration": 3.76,
+      "text": "going to be import time"
+    },
+    {
+      "start": 53.36,
+      "duration": 3.92,
+      "text": "and next we need to import module name"
+    },
+    {
+      "start": 55.36,
+      "duration": 3.679,
+      "text": "as pi auto gui"
+    },
+    {
+      "start": 57.28,
+      "duration": 2.799,
+      "text": "so pi"
+    },
+    {
+      "start": 59.039,
+      "duration": 3.68,
+      "text": "auto"
+    },
+    {
+      "start": 60.079,
+      "duration": 4.4,
+      "text": "gui if you get an error or a yellow line"
+    },
+    {
+      "start": 62.719,
+      "duration": 3.76,
+      "text": "under this make sure you install the pi"
+    },
+    {
+      "start": 64.479,
+      "duration": 6.401,
+      "text": "auto gui module in your machine you can"
+    },
+    {
+      "start": 66.479,
+      "duration": 6.241,
+      "text": "do that by running a command pip install"
+    },
+    {
+      "start": 70.88,
+      "duration": 2.96,
+      "text": "and the name of the module that is by"
+    },
+    {
+      "start": 72.72,
+      "duration": 2.64,
+      "text": "auto gui"
+    },
+    {
+      "start": 73.84,
+      "duration": 2.8,
+      "text": "i have already installed the module so"
+    },
+    {
+      "start": 75.36,
+      "duration": 3.36,
+      "text": "i'm going to get that request"
+    },
+    {
+      "start": 76.64,
+      "duration": 3.6,
+      "text": "requirement already satisfied if you"
+    },
+    {
+      "start": 78.72,
+      "duration": 2.399,
+      "text": "haven't it will start downloading for"
+    },
+    {
+      "start": 80.24,
+      "duration": 3.04,
+      "text": "you"
+    },
+    {
+      "start": 81.119,
+      "duration": 6.081,
+      "text": "next is i need to open a file which is"
+    },
+    {
+      "start": 83.28,
+      "duration": 6.32,
+      "text": "spam.txt so open and"
+    },
+    {
+      "start": 87.2,
+      "duration": 3.919,
+      "text": "name of the file spam dot"
+    },
+    {
+      "start": 89.6,
+      "duration": 3.199,
+      "text": "txt"
+    },
+    {
+      "start": 91.119,
+      "duration": 5.36,
+      "text": "and i'm going to put this in a variable"
+    },
+    {
+      "start": 92.799,
+      "duration": 6.801,
+      "text": "name as f which stands for file"
+    },
+    {
+      "start": 96.479,
+      "duration": 4.0,
+      "text": "next i'm going to pass a for loop so for"
+    },
+    {
+      "start": 99.6,
+      "duration": 1.68,
+      "text": "line"
+    },
+    {
+      "start": 100.479,
+      "duration": 1.671,
+      "text": "in"
+    },
+    {
+      "start": 101.28,
+      "duration": 2.159,
+      "text": "f"
+    },
+    {
+      "start": 102.15,
+      "duration": 5.85,
+      "text": "[Applause]"
+    },
+    {
+      "start": 103.439,
+      "duration": 4.561,
+      "text": "by auto gui dot type right"
+    },
+    {
+      "start": 108.24,
+      "duration": 3.6,
+      "text": "line"
+    },
+    {
+      "start": 110.0,
+      "duration": 3.92,
+      "text": "i want the pi automatically press enter"
+    },
+    {
+      "start": 111.84,
+      "duration": 5.12,
+      "text": "automatically as well and i can do that"
+    },
+    {
+      "start": 113.92,
+      "duration": 6.559,
+      "text": "with python so pi order we press"
+    },
+    {
+      "start": 116.96,
+      "duration": 6.4,
+      "text": "the key which is enter so enter"
+    },
+    {
+      "start": 120.479,
+      "duration": 4.881,
+      "text": "right make sure you put a time sleep"
+    },
+    {
+      "start": 123.36,
+      "duration": 5.28,
+      "text": "for like five seconds for you to go and"
+    },
+    {
+      "start": 125.36,
+      "duration": 5.28,
+      "text": "open the messenger or else it will start"
+    },
+    {
+      "start": 128.64,
+      "duration": 4.08,
+      "text": "sending messages on your terminal itself"
+    },
+    {
+      "start": 130.64,
+      "duration": 5.28,
+      "text": "so i'm going to put this time sleep of"
+    },
+    {
+      "start": 132.72,
+      "duration": 6.32,
+      "text": "four seconds so time dot sleep"
+    },
+    {
+      "start": 135.92,
+      "duration": 4.64,
+      "text": "and four seconds now save this once you"
+    },
+    {
+      "start": 139.04,
+      "duration": 3.44,
+      "text": "have the route once you have the code"
+    },
+    {
+      "start": 140.56,
+      "duration": 4.56,
+      "text": "ready you can run it like start"
+    },
+    {
+      "start": 142.48,
+      "duration": 5.04,
+      "text": "debugging and go back"
+    },
+    {
+      "start": 145.12,
+      "duration": 4.56,
+      "text": "put the cursor where you want to spam it"
+    },
+    {
+      "start": 147.52,
+      "duration": 3.439,
+      "text": "and then you can see it starts spamming"
+    },
+    {
+      "start": 149.68,
+      "duration": 3.36,
+      "text": "your friends"
+    },
+    {
+      "start": 150.959,
+      "duration": 4.0,
+      "text": "now your friends will get annoyed and"
+    },
+    {
+      "start": 153.04,
+      "duration": 4.479,
+      "text": "this is what you wanted so this is how"
+    },
+    {
+      "start": 154.959,
+      "duration": 4.321,
+      "text": "it is done if you have any questions you"
+    },
+    {
+      "start": 157.519,
+      "duration": 3.761,
+      "text": "can let me know i hope you like the"
+    },
+    {
+      "start": 159.28,
+      "duration": 5.239,
+      "text": "video so please subscribe and have a"
+    },
+    {
+      "start": 161.28,
+      "duration": 3.239,
+      "text": "good day"
+    }
+  ]
+}

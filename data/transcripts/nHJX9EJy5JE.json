@@ -1,0 +1,976 @@
+{
+  "video": {
+    "id": "nHJX9EJy5JE",
+    "title": "Terraform depends_on Resource Meta Argument | Depends on tutorial with hands on example",
+    "url": "https://www.youtube.com/watch?v=nHJX9EJy5JE",
+    "duration": 452,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 5.359,
+      "text": "we are going to learn about the"
+    },
+    {
+      "start": 2.32,
+      "duration": 5.36,
+      "text": "depends on meta argument"
+    },
+    {
+      "start": 5.359,
+      "duration": 4.401,
+      "text": "and depends on is used to create a"
+    },
+    {
+      "start": 7.68,
+      "duration": 3.36,
+      "text": "dependency between two"
+    },
+    {
+      "start": 9.76,
+      "duration": 3.28,
+      "text": "resources"
+    },
+    {
+      "start": 11.04,
+      "duration": 3.679,
+      "text": "where so in short you can say that if"
+    },
+    {
+      "start": 13.04,
+      "duration": 3.12,
+      "text": "you want some resources to be created"
+    },
+    {
+      "start": 14.719,
+      "duration": 4.001,
+      "text": "before any other resource you can use"
+    },
+    {
+      "start": 16.16,
+      "duration": 4.48,
+      "text": "this depends on so let's go and create"
+    },
+    {
+      "start": 18.72,
+      "duration": 4.0,
+      "text": "an instance so to create an instance we"
+    },
+    {
+      "start": 20.64,
+      "duration": 5.92,
+      "text": "just need to type in resource"
+    },
+    {
+      "start": 22.72,
+      "duration": 3.84,
+      "text": "aws underscore instance"
+    },
+    {
+      "start": 28.8,
+      "duration": 5.279,
+      "text": "and the name of instance let's give it"
+    },
+    {
+      "start": 31.599,
+      "duration": 2.48,
+      "text": "server"
+    },
+    {
+      "start": 35.28,
+      "duration": 6.0,
+      "text": "and you want the ami so i'm going to"
+    },
+    {
+      "start": 38.0,
+      "duration": 7.079,
+      "text": "copy the am id later on but"
+    },
+    {
+      "start": 41.28,
+      "duration": 3.799,
+      "text": "then instance type"
+    },
+    {
+      "start": 46.239,
+      "duration": 3.761,
+      "text": "is going to be d2 dot micro"
+    },
+    {
+      "start": 52.399,
+      "duration": 3.041,
+      "text": "and let's"
+    },
+    {
+      "start": 55.6,
+      "duration": 4.959,
+      "text": "define a depends on that argument here"
+    },
+    {
+      "start": 58.48,
+      "duration": 3.759,
+      "text": "so before defining let's go and create"
+    },
+    {
+      "start": 60.559,
+      "duration": 4.401,
+      "text": "another resource as well so"
+    },
+    {
+      "start": 62.239,
+      "duration": 5.441,
+      "text": "another resource will be aws s3 bucket"
+    },
+    {
+      "start": 64.96,
+      "duration": 2.72,
+      "text": "so resource"
+    },
+    {
+      "start": 68.24,
+      "duration": 7.04,
+      "text": "aws underscore s3 underscore"
+    },
+    {
+      "start": 73.68,
+      "duration": 3.92,
+      "text": "and if you don't know if you're not sure"
+    },
+    {
+      "start": 75.28,
+      "duration": 3.68,
+      "text": "like is is this a name you can go and"
+    },
+    {
+      "start": 77.6,
+      "duration": 2.96,
+      "text": "search for it"
+    },
+    {
+      "start": 78.96,
+      "duration": 6.479,
+      "text": "on the"
+    },
+    {
+      "start": 80.56,
+      "duration": 6.559,
+      "text": "web like aws s3 terraform"
+    },
+    {
+      "start": 85.439,
+      "duration": 3.601,
+      "text": "and it will give you the exact name"
+    },
+    {
+      "start": 87.119,
+      "duration": 4.561,
+      "text": "which is here"
+    },
+    {
+      "start": 89.04,
+      "duration": 3.439,
+      "text": "so aws s3 bucket is the resource"
+    },
+    {
+      "start": 91.68,
+      "duration": 3.62,
+      "text": "so"
+    },
+    {
+      "start": 92.479,
+      "duration": 5.9,
+      "text": "i'm going to give this name my bucket"
+    },
+    {
+      "start": 95.3,
+      "duration": 3.079,
+      "text": "[Music]"
+    },
+    {
+      "start": 99.04,
+      "duration": 5.28,
+      "text": "and inside this i'm just going to pass"
+    },
+    {
+      "start": 100.96,
+      "duration": 6.4,
+      "text": "the bucket name so bucket name should be"
+    },
+    {
+      "start": 104.32,
+      "duration": 5.439,
+      "text": "unique i'm going to pass random"
+    },
+    {
+      "start": 107.36,
+      "duration": 5.119,
+      "text": "3 4 to a something like this"
+    },
+    {
+      "start": 109.759,
+      "duration": 5.121,
+      "text": "so it doesn't it does not matter"
+    },
+    {
+      "start": 112.479,
+      "duration": 5.761,
+      "text": "now i'm going to pass in the uh depends"
+    },
+    {
+      "start": 114.88,
+      "duration": 5.599,
+      "text": "on my argument here so it depends on"
+    },
+    {
+      "start": 118.24,
+      "duration": 4.479,
+      "text": "equals to and if you want to see the"
+    },
+    {
+      "start": 120.479,
+      "duration": 4.081,
+      "text": "syntax you can always go here so this"
+    },
+    {
+      "start": 122.719,
+      "duration": 4.0,
+      "text": "was the depends on my argument official"
+    },
+    {
+      "start": 124.56,
+      "duration": 3.28,
+      "text": "documentation by terraform"
+    },
+    {
+      "start": 126.719,
+      "duration": 3.201,
+      "text": "and"
+    },
+    {
+      "start": 127.84,
+      "duration": 4.32,
+      "text": "if you see here"
+    },
+    {
+      "start": 129.92,
+      "duration": 2.57,
+      "text": "this snippet where"
+    },
+    {
+      "start": 132.16,
+      "duration": 2.0,
+      "text": "um"
+    },
+    {
+      "start": 132.49,
+      "duration": 3.109,
+      "text": "[Music]"
+    },
+    {
+      "start": 134.16,
+      "duration": 3.2,
+      "text": "so they have used the depends on that"
+    },
+    {
+      "start": 135.599,
+      "duration": 3.921,
+      "text": "argument here and you can see it is in"
+    },
+    {
+      "start": 137.36,
+      "duration": 4.64,
+      "text": "the square brackets so if you want to"
+    },
+    {
+      "start": 139.52,
+      "duration": 4.64,
+      "text": "have it so here they are creating a"
+    },
+    {
+      "start": 142.0,
+      "duration": 3.04,
+      "text": "resource which is aws instance and they"
+    },
+    {
+      "start": 144.16,
+      "duration": 2.4,
+      "text": "want to"
+    },
+    {
+      "start": 145.04,
+      "duration": 4.0,
+      "text": "they want this instance to be created"
+    },
+    {
+      "start": 146.56,
+      "duration": 4.64,
+      "text": "after they create this iem policy so the"
+    },
+    {
+      "start": 149.04,
+      "duration": 3.919,
+      "text": "im policy is here which is defined here"
+    },
+    {
+      "start": 151.2,
+      "duration": 4.16,
+      "text": "and it has this instance has a"
+    },
+    {
+      "start": 152.959,
+      "duration": 4.0,
+      "text": "dependency with it so if you want to"
+    },
+    {
+      "start": 155.36,
+      "duration": 4.08,
+      "text": "define the depends on it should be in"
+    },
+    {
+      "start": 156.959,
+      "duration": 4.64,
+      "text": "the square bracket and here you have to"
+    },
+    {
+      "start": 159.44,
+      "duration": 5.04,
+      "text": "pass in the resource name so here i want"
+    },
+    {
+      "start": 161.599,
+      "duration": 4.64,
+      "text": "to have the dependency for the aws s3"
+    },
+    {
+      "start": 164.48,
+      "duration": 3.36,
+      "text": "bucket which is my bucket"
+    },
+    {
+      "start": 166.239,
+      "duration": 4.321,
+      "text": "right so similarly you have already"
+    },
+    {
+      "start": 167.84,
+      "duration": 5.52,
+      "text": "known like how we can define the"
+    },
+    {
+      "start": 170.56,
+      "duration": 5.52,
+      "text": "resource just you have to copy it"
+    },
+    {
+      "start": 173.36,
+      "duration": 6.0,
+      "text": "and paste here remove the quotation mark"
+    },
+    {
+      "start": 176.08,
+      "duration": 3.28,
+      "text": "and put a dot in between"
+    },
+    {
+      "start": 181.68,
+      "duration": 2.639,
+      "text": "right"
+    },
+    {
+      "start": 182.48,
+      "duration": 4.08,
+      "text": "so here we have the resource name and"
+    },
+    {
+      "start": 184.319,
+      "duration": 4.64,
+      "text": "the name that we have provided for the"
+    },
+    {
+      "start": 186.56,
+      "duration": 5.28,
+      "text": "bucket so let me save it and let's do"
+    },
+    {
+      "start": 188.959,
+      "duration": 2.881,
+      "text": "terraform plan"
+    },
+    {
+      "start": 193.44,
+      "duration": 4.159,
+      "text": "so the bucket will be created after uh"
+    },
+    {
+      "start": 195.44,
+      "duration": 4.079,
+      "text": "after creation of ac2 instance now the"
+    },
+    {
+      "start": 197.599,
+      "duration": 4.081,
+      "text": "bucket will be created first and then"
+    },
+    {
+      "start": 199.519,
+      "duration": 4.401,
+      "text": "the instance will be created so instance"
+    },
+    {
+      "start": 201.68,
+      "duration": 4.88,
+      "text": "so let me just put the emi id i have not"
+    },
+    {
+      "start": 203.92,
+      "duration": 5.44,
+      "text": "put it here so we have a dependency for"
+    },
+    {
+      "start": 206.56,
+      "duration": 5.599,
+      "text": "the instance that we want the instance"
+    },
+    {
+      "start": 209.36,
+      "duration": 5.12,
+      "text": "to be created after we create the s3"
+    },
+    {
+      "start": 212.159,
+      "duration": 2.321,
+      "text": "bucket"
+    },
+    {
+      "start": 214.879,
+      "duration": 3.44,
+      "text": "okay because"
+    },
+    {
+      "start": 216.08,
+      "duration": 4.719,
+      "text": "i was thinking the other way around"
+    },
+    {
+      "start": 218.319,
+      "duration": 5.84,
+      "text": "first you get easy to insert and then no"
+    },
+    {
+      "start": 220.799,
+      "duration": 6.241,
+      "text": "if i if i put this dependency depends on"
+    },
+    {
+      "start": 224.159,
+      "duration": 4.64,
+      "text": "my argument in this block then first the"
+    },
+    {
+      "start": 227.04,
+      "duration": 3.52,
+      "text": "instance would be created then the s3"
+    },
+    {
+      "start": 228.799,
+      "duration": 4.481,
+      "text": "bucket would be created"
+    },
+    {
+      "start": 230.56,
+      "duration": 4.319,
+      "text": "if if you put there the last one plus so"
+    },
+    {
+      "start": 233.28,
+      "duration": 4.48,
+      "text": "we are going to do it other way around"
+    },
+    {
+      "start": 234.879,
+      "duration": 6.08,
+      "text": "as well but let's just do it first"
+    },
+    {
+      "start": 237.76,
+      "duration": 3.199,
+      "text": "here so i'm going to put"
+    },
+    {
+      "start": 241.68,
+      "duration": 4.88,
+      "text": "and save it again and do terraform plan"
+    },
+    {
+      "start": 244.72,
+      "duration": 3.68,
+      "text": "so we are going to get the two resources"
+    },
+    {
+      "start": 246.56,
+      "duration": 4.08,
+      "text": "are going to be created so let's just"
+    },
+    {
+      "start": 248.4,
+      "duration": 2.24,
+      "text": "see"
+    },
+    {
+      "start": 253.2,
+      "duration": 6.08,
+      "text": "so yeah we have two resources created"
+    },
+    {
+      "start": 255.519,
+      "duration": 3.761,
+      "text": "and let's start applying it"
+    },
+    {
+      "start": 259.44,
+      "duration": 4.319,
+      "text": "so this can also be i'll also give you"
+    },
+    {
+      "start": 261.759,
+      "duration": 3.841,
+      "text": "another example which we have the code"
+    },
+    {
+      "start": 263.759,
+      "duration": 3.121,
+      "text": "already so but first"
+    },
+    {
+      "start": 265.6,
+      "duration": 3.039,
+      "text": "you need to remember that whenever"
+    },
+    {
+      "start": 266.88,
+      "duration": 3.92,
+      "text": "you're using depends on in any of the"
+    },
+    {
+      "start": 268.639,
+      "duration": 4.0,
+      "text": "resources you are saying that this"
+    },
+    {
+      "start": 270.8,
+      "duration": 4.48,
+      "text": "resource depends on this another"
+    },
+    {
+      "start": 272.639,
+      "duration": 4.801,
+      "text": "resource which is defined here"
+    },
+    {
+      "start": 275.28,
+      "duration": 3.6,
+      "text": "okay all right so when you create"
+    },
+    {
+      "start": 277.44,
+      "duration": 2.96,
+      "text": "depends on it is going to create the"
+    },
+    {
+      "start": 278.88,
+      "duration": 3.2,
+      "text": "first resource here it says that it"
+    },
+    {
+      "start": 280.4,
+      "duration": 3.44,
+      "text": "depends on s3 buckets so first the s3"
+    },
+    {
+      "start": 282.08,
+      "duration": 4.08,
+      "text": "bucket will be created and then the"
+    },
+    {
+      "start": 283.84,
+      "duration": 6.0,
+      "text": "instance would be created"
+    },
+    {
+      "start": 286.16,
+      "duration": 3.68,
+      "text": "right oh yeah yeah yeah okay"
+    },
+    {
+      "start": 291.6,
+      "duration": 3.76,
+      "text": "so if you see it is first creating the"
+    },
+    {
+      "start": 293.44,
+      "duration": 3.039,
+      "text": "s3 bucket even though we have defined it"
+    },
+    {
+      "start": 295.36,
+      "duration": 3.36,
+      "text": "below"
+    },
+    {
+      "start": 296.479,
+      "duration": 3.841,
+      "text": "right yeah you can see that it has"
+    },
+    {
+      "start": 298.72,
+      "duration": 4.88,
+      "text": "created the s3 bucket and now it is"
+    },
+    {
+      "start": 300.32,
+      "duration": 4.48,
+      "text": "creating the instance which is server"
+    },
+    {
+      "start": 303.6,
+      "duration": 2.879,
+      "text": "so if you go to the terraform"
+    },
+    {
+      "start": 304.8,
+      "duration": 2.72,
+      "text": "documentation again and if you read"
+    },
+    {
+      "start": 306.479,
+      "duration": 3.681,
+      "text": "about it"
+    },
+    {
+      "start": 307.52,
+      "duration": 5.2,
+      "text": "so it says that use depends on to handle"
+    },
+    {
+      "start": 310.16,
+      "duration": 4.24,
+      "text": "hidden resource or module dependencies"
+    },
+    {
+      "start": 312.72,
+      "duration": 4.24,
+      "text": "so here in the example you can see that"
+    },
+    {
+      "start": 314.4,
+      "duration": 4.16,
+      "text": "it is using iam rule as the dependency"
+    },
+    {
+      "start": 316.96,
+      "duration": 3.04,
+      "text": "so there can be a case where we are"
+    },
+    {
+      "start": 318.56,
+      "duration": 4.079,
+      "text": "working with ec2 instance and it"
+    },
+    {
+      "start": 320.0,
+      "duration": 4.479,
+      "text": "requires some tasks to do so for any"
+    },
+    {
+      "start": 322.639,
+      "duration": 3.761,
+      "text": "instance to do some tasks we need"
+    },
+    {
+      "start": 324.479,
+      "duration": 3.28,
+      "text": "a role attached to it"
+    },
+    {
+      "start": 326.4,
+      "duration": 3.359,
+      "text": "right yeah"
+    },
+    {
+      "start": 327.759,
+      "duration": 3.681,
+      "text": "so unless the rule is attached we cannot"
+    },
+    {
+      "start": 329.759,
+      "duration": 4.16,
+      "text": "do any task with the instance that is"
+    },
+    {
+      "start": 331.44,
+      "duration": 4.16,
+      "text": "why we can have a dependency that this"
+    },
+    {
+      "start": 333.919,
+      "duration": 3.12,
+      "text": "instance should be created after we have"
+    },
+    {
+      "start": 335.6,
+      "duration": 3.2,
+      "text": "the role ready"
+    },
+    {
+      "start": 337.039,
+      "duration": 4.401,
+      "text": "the rule created"
+    },
+    {
+      "start": 338.8,
+      "duration": 5.76,
+      "text": "right yeah so we use this too for hidden"
+    },
+    {
+      "start": 341.44,
+      "duration": 5.44,
+      "text": "dependencies or module dependencies and"
+    },
+    {
+      "start": 344.56,
+      "duration": 6.28,
+      "text": "so if you see that it has created let's"
+    },
+    {
+      "start": 346.88,
+      "duration": 3.96,
+      "text": "go and destroy it again"
+    },
+    {
+      "start": 354.32,
+      "duration": 3.68,
+      "text": "so i'm going to put this depends on in"
+    },
+    {
+      "start": 355.84,
+      "duration": 3.52,
+      "text": "the s3 bucket column now"
+    },
+    {
+      "start": 358.0,
+      "duration": 3.199,
+      "text": "and"
+    },
+    {
+      "start": 359.36,
+      "duration": 3.92,
+      "text": "just take care about this indentation"
+    },
+    {
+      "start": 361.199,
+      "duration": 3.521,
+      "text": "because it is very important in yaml so"
+    },
+    {
+      "start": 363.28,
+      "duration": 5.68,
+      "text": "you have to put it"
+    },
+    {
+      "start": 364.72,
+      "duration": 6.08,
+      "text": "in line and i'm going to remove this one"
+    },
+    {
+      "start": 368.96,
+      "duration": 3.28,
+      "text": "so now i have to i have to tell data"
+    },
+    {
+      "start": 370.8,
+      "duration": 2.8,
+      "text": "form that i am"
+    },
+    {
+      "start": 372.24,
+      "duration": 3.12,
+      "text": "this bucket"
+    },
+    {
+      "start": 373.6,
+      "duration": 4.879,
+      "text": "should be created only after the"
+    },
+    {
+      "start": 375.36,
+      "duration": 6.48,
+      "text": "instance is created so let me put the"
+    },
+    {
+      "start": 378.479,
+      "duration": 3.361,
+      "text": "resource name"
+    },
+    {
+      "start": 386.8,
+      "duration": 5.04,
+      "text": "so you now know like how to refer to any"
+    },
+    {
+      "start": 388.639,
+      "duration": 4.801,
+      "text": "other resource right just put in the"
+    },
+    {
+      "start": 391.84,
+      "duration": 2.639,
+      "text": "resource name and the actual name that"
+    },
+    {
+      "start": 393.44,
+      "duration": 4.479,
+      "text": "you have given"
+    },
+    {
+      "start": 394.479,
+      "duration": 4.961,
+      "text": "so if i save it and i do teraform apply"
+    },
+    {
+      "start": 397.919,
+      "duration": 3.441,
+      "text": "yeah"
+    },
+    {
+      "start": 399.44,
+      "duration": 4.08,
+      "text": "so it should create s3 bucket only after"
+    },
+    {
+      "start": 401.36,
+      "duration": 4.88,
+      "text": "creating the instance"
+    },
+    {
+      "start": 403.52,
+      "duration": 5.2,
+      "text": "but in this case you don't write a"
+    },
+    {
+      "start": 406.24,
+      "duration": 4.48,
+      "text": "bucket on the top and easy to insert"
+    },
+    {
+      "start": 408.72,
+      "duration": 4.319,
+      "text": "bottom or no it does not it does not"
+    },
+    {
+      "start": 410.72,
+      "duration": 4.4,
+      "text": "matter so now you can see that instance"
+    },
+    {
+      "start": 413.039,
+      "duration": 3.6,
+      "text": "is creating first and then it would"
+    },
+    {
+      "start": 415.12,
+      "duration": 3.919,
+      "text": "create the s3 bucket but that was not"
+    },
+    {
+      "start": 416.639,
+      "duration": 4.4,
+      "text": "the case earlier so first earlier it was"
+    },
+    {
+      "start": 419.039,
+      "duration": 3.841,
+      "text": "creating the bucket because so it was"
+    },
+    {
+      "start": 421.039,
+      "duration": 4.241,
+      "text": "creating the bucket first and then we"
+    },
+    {
+      "start": 422.88,
+      "duration": 3.84,
+      "text": "created the instance so depends depends"
+    },
+    {
+      "start": 425.28,
+      "duration": 4.319,
+      "text": "on will tell you like"
+    },
+    {
+      "start": 426.72,
+      "duration": 4.64,
+      "text": "uh unless and until the depends on"
+    },
+    {
+      "start": 429.599,
+      "duration": 3.681,
+      "text": "resources created we cannot create the"
+    },
+    {
+      "start": 431.36,
+      "duration": 4.399,
+      "text": "other resource so now it is creating the"
+    },
+    {
+      "start": 433.28,
+      "duration": 4.319,
+      "text": "resource is a server which is present"
+    },
+    {
+      "start": 435.759,
+      "duration": 3.761,
+      "text": "here and it depends on column and once"
+    },
+    {
+      "start": 437.599,
+      "duration": 3.6,
+      "text": "it is created it will start creating the"
+    },
+    {
+      "start": 439.52,
+      "duration": 3.76,
+      "text": "s3 bucket so you can see that the server"
+    },
+    {
+      "start": 441.199,
+      "duration": 4.0,
+      "text": "has been created and it has created the"
+    },
+    {
+      "start": 443.28,
+      "duration": 3.12,
+      "text": "bucket after it"
+    },
+    {
+      "start": 445.199,
+      "duration": 3.28,
+      "text": "yeah right"
+    },
+    {
+      "start": 446.4,
+      "duration": 4.56,
+      "text": "so i hope you have you now understand"
+    },
+    {
+      "start": 448.479,
+      "duration": 4.72,
+      "text": "how terraform depends on meta argument"
+    },
+    {
+      "start": 450.96,
+      "duration": 2.239,
+      "text": "works"
+    }
+  ]
+}

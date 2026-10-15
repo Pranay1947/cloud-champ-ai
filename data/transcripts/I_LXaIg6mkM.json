@@ -1,0 +1,811 @@
+{
+  "video": {
+    "id": "I_LXaIg6mkM",
+    "title": "Understanding CIDR Block in AWS VPC : Classless Interdomain Routing",
+    "url": "https://www.youtube.com/watch?v=I_LXaIg6mkM",
+    "duration": 371,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.84,
+      "duration": 4.979,
+      "text": "we're going to learn is cider or"
+    },
+    {
+      "start": 3.3,
+      "duration": 3.959,
+      "text": "classless Intel domain routing if you"
+    },
+    {
+      "start": 5.819,
+      "duration": 3.481,
+      "text": "see every machine on the internet has"
+    },
+    {
+      "start": 7.259,
+      "duration": 3.42,
+      "text": "public IP address right that's how we"
+    },
+    {
+      "start": 9.3,
+      "duration": 2.94,
+      "text": "can Define where the traffic is coming"
+    },
+    {
+      "start": 10.679,
+      "duration": 4.141,
+      "text": "from and where it is going"
+    },
+    {
+      "start": 12.24,
+      "duration": 4.5,
+      "text": "so when you launch your ec2 instance you"
+    },
+    {
+      "start": 14.82,
+      "duration": 3.18,
+      "text": "define you get a public IP and a private"
+    },
+    {
+      "start": 16.74,
+      "duration": 4.56,
+      "text": "IP address"
+    },
+    {
+      "start": 18.0,
+      "duration": 5.64,
+      "text": "so that's given by the IP address range"
+    },
+    {
+      "start": 21.3,
+      "duration": 4.38,
+      "text": "that we have here so classless enter"
+    },
+    {
+      "start": 23.64,
+      "duration": 4.68,
+      "text": "domain routing is a method of allocating"
+    },
+    {
+      "start": 25.68,
+      "duration": 5.46,
+      "text": "IP addresses and this is also used in"
+    },
+    {
+      "start": 28.32,
+      "duration": 7.14,
+      "text": "Security Group rules and AWS networking"
+    },
+    {
+      "start": 31.14,
+      "duration": 6.54,
+      "text": "in general so if I show you this here"
+    },
+    {
+      "start": 35.46,
+      "duration": 4.2,
+      "text": "this is what a cider range is and if I"
+    },
+    {
+      "start": 37.68,
+      "duration": 3.719,
+      "text": "click on create VPC option it asks me to"
+    },
+    {
+      "start": 39.66,
+      "duration": 4.559,
+      "text": "enter this Hydra range"
+    },
+    {
+      "start": 41.399,
+      "duration": 4.381,
+      "text": "okay so we have to Define like what"
+    },
+    {
+      "start": 44.219,
+      "duration": 3.84,
+      "text": "should be the range of ips that are"
+    },
+    {
+      "start": 45.78,
+      "duration": 3.92,
+      "text": "going to be used in this VPC so I can"
+    },
+    {
+      "start": 48.059,
+      "duration": 5.461,
+      "text": "Define"
+    },
+    {
+      "start": 49.7,
+      "duration": 6.359,
+      "text": "10.0.0.0 so this is ipv4 address which"
+    },
+    {
+      "start": 53.52,
+      "duration": 6.539,
+      "text": "where you have four updates so"
+    },
+    {
+      "start": 56.059,
+      "duration": 6.101,
+      "text": "10.0.0.0 so 4 octates so this is the IP"
+    },
+    {
+      "start": 60.059,
+      "duration": 5.28,
+      "text": "address and if you put slash and"
+    },
+    {
+      "start": 62.16,
+      "duration": 5.34,
+      "text": "something 24 then you get a range of ips"
+    },
+    {
+      "start": 65.339,
+      "duration": 5.521,
+      "text": "so this slash 24 is known as subnet mask"
+    },
+    {
+      "start": 67.5,
+      "duration": 5.64,
+      "text": "a call subnetting in networking so this"
+    },
+    {
+      "start": 70.86,
+      "duration": 3.36,
+      "text": "is what you call slider you have the IP"
+    },
+    {
+      "start": 73.14,
+      "duration": 2.82,
+      "text": "address and then you have something"
+    },
+    {
+      "start": 74.22,
+      "duration": 4.92,
+      "text": "after the slash which is going to Define"
+    },
+    {
+      "start": 75.96,
+      "duration": 4.979,
+      "text": "how much IPS are you going to get and to"
+    },
+    {
+      "start": 79.14,
+      "duration": 3.72,
+      "text": "understand this we have a good website"
+    },
+    {
+      "start": 80.939,
+      "duration": 4.32,
+      "text": "created by someone so if I know"
+    },
+    {
+      "start": 82.86,
+      "duration": 4.38,
+      "text": "cider.xyz"
+    },
+    {
+      "start": 85.259,
+      "duration": 3.9,
+      "text": "this is the website which will help you"
+    },
+    {
+      "start": 87.24,
+      "duration": 5.059,
+      "text": "understand how much IP ranges are you"
+    },
+    {
+      "start": 89.159,
+      "duration": 3.14,
+      "text": "going to get so if I do"
+    },
+    {
+      "start": 93.14,
+      "duration": 6.159,
+      "text": "10.0.0.0 24."
+    },
+    {
+      "start": 96.42,
+      "duration": 5.46,
+      "text": "so it's going to say that we get 256 IPS"
+    },
+    {
+      "start": 99.299,
+      "duration": 4.441,
+      "text": "in this range so this slash 24 means we"
+    },
+    {
+      "start": 101.88,
+      "duration": 7.02,
+      "text": "are going to get 250 side P if I change"
+    },
+    {
+      "start": 103.74,
+      "duration": 8.58,
+      "text": "it to slash 16 I get 65 536 IPS"
+    },
+    {
+      "start": 108.9,
+      "duration": 5.64,
+      "text": "okay so if I show you this like this uh"
+    },
+    {
+      "start": 112.32,
+      "duration": 3.96,
+      "text": "example here like in ec2 instances we"
+    },
+    {
+      "start": 114.54,
+      "duration": 4.74,
+      "text": "have security group right like where we"
+    },
+    {
+      "start": 116.28,
+      "duration": 5.339,
+      "text": "Define what is the port going to be"
+    },
+    {
+      "start": 119.28,
+      "duration": 4.44,
+      "text": "allowed to this particular instance if I"
+    },
+    {
+      "start": 121.619,
+      "duration": 5.521,
+      "text": "have a security group attached here and"
+    },
+    {
+      "start": 123.72,
+      "duration": 7.019,
+      "text": "it has two two rules for 22. so Port 80"
+    },
+    {
+      "start": 127.14,
+      "duration": 4.739,
+      "text": "is HTTP and Port 22 is SSH you can"
+    },
+    {
+      "start": 130.739,
+      "duration": 3.541,
+      "text": "Define like where should this traffic"
+    },
+    {
+      "start": 131.879,
+      "duration": 5.781,
+      "text": "coming from so we have choose anywhere"
+    },
+    {
+      "start": 134.28,
+      "duration": 6.599,
+      "text": "ipv4 that's why it is 0.0.0.0"
+    },
+    {
+      "start": 137.66,
+      "duration": 6.52,
+      "text": "when you put 0.0 this means every IP in"
+    },
+    {
+      "start": 140.879,
+      "duration": 5.341,
+      "text": "the internet so if I do 0.0 like"
+    },
+    {
+      "start": 144.18,
+      "duration": 4.02,
+      "text": "4 billion something is the count which"
+    },
+    {
+      "start": 146.22,
+      "duration": 3.239,
+      "text": "is the total number of IP address on the"
+    },
+    {
+      "start": 148.2,
+      "duration": 3.42,
+      "text": "internet now"
+    },
+    {
+      "start": 149.459,
+      "duration": 3.961,
+      "text": "so every IP address is going to be count"
+    },
+    {
+      "start": 151.62,
+      "duration": 4.5,
+      "text": "and this is 0.0"
+    },
+    {
+      "start": 153.42,
+      "duration": 5.88,
+      "text": "but if I change this to my IP address"
+    },
+    {
+      "start": 156.12,
+      "duration": 4.56,
+      "text": "just my IP you can see the change at"
+    },
+    {
+      "start": 159.3,
+      "duration": 4.14,
+      "text": "like the number what is going to be"
+    },
+    {
+      "start": 160.68,
+      "duration": 6.779,
+      "text": "there after this so if I do my IP it"
+    },
+    {
+      "start": 163.44,
+      "duration": 6.6,
+      "text": "says my IP address and Slash 32."
+    },
+    {
+      "start": 167.459,
+      "duration": 5.401,
+      "text": "okay so slash 32 means just the single"
+    },
+    {
+      "start": 170.04,
+      "duration": 4.279,
+      "text": "IP so if I don't flash 32 here uh"
+    },
+    {
+      "start": 172.86,
+      "duration": 3.72,
+      "text": "something like"
+    },
+    {
+      "start": 174.319,
+      "duration": 5.14,
+      "text": "10.0.032 which means just one IP will"
+    },
+    {
+      "start": 176.58,
+      "duration": 4.68,
+      "text": "have the connection or will have the"
+    },
+    {
+      "start": 179.459,
+      "duration": 5.28,
+      "text": "permission to talk to that instance on"
+    },
+    {
+      "start": 181.26,
+      "duration": 5.46,
+      "text": "Port 80 or 20 to whatever it is"
+    },
+    {
+      "start": 184.739,
+      "duration": 4.021,
+      "text": "right so I hope this makes sense like"
+    },
+    {
+      "start": 186.72,
+      "duration": 3.72,
+      "text": "what is cider range how can you allocate"
+    },
+    {
+      "start": 188.76,
+      "duration": 3.899,
+      "text": "IP address we're going to go more in"
+    },
+    {
+      "start": 190.44,
+      "duration": 4.939,
+      "text": "depth but I hope you got the idea of how"
+    },
+    {
+      "start": 192.659,
+      "duration": 2.72,
+      "text": "you can yeah"
+    },
+    {
+      "start": 198.06,
+      "duration": 5.459,
+      "text": "yeah can access yeah so we have seen"
+    },
+    {
+      "start": 200.94,
+      "duration": 5.519,
+      "text": "that slash 32 means means just one IP"
+    },
+    {
+      "start": 203.519,
+      "duration": 6.481,
+      "text": "like that particular IP address like"
+    },
+    {
+      "start": 206.459,
+      "duration": 5.521,
+      "text": "this and slash 0.02 means every IP on"
+    },
+    {
+      "start": 210.0,
+      "duration": 3.9,
+      "text": "the internet a cider consists of two"
+    },
+    {
+      "start": 211.98,
+      "duration": 4.259,
+      "text": "things one is the base IP and then the"
+    },
+    {
+      "start": 213.9,
+      "duration": 4.64,
+      "text": "subnet mask so base IPS can be anything"
+    },
+    {
+      "start": 216.239,
+      "duration": 5.881,
+      "text": "so"
+    },
+    {
+      "start": 218.54,
+      "duration": 6.58,
+      "text": "10.0.0192.168 172.128 can be anything so"
+    },
+    {
+      "start": 222.12,
+      "duration": 4.94,
+      "text": "if I show you this here this part 10.0.0"
+    },
+    {
+      "start": 225.12,
+      "duration": 5.94,
+      "text": "sorry"
+    },
+    {
+      "start": 227.06,
+      "duration": 5.86,
+      "text": "10.0.0.100 32 here you have the base IB"
+    },
+    {
+      "start": 231.06,
+      "duration": 4.259,
+      "text": "and after the slash you have"
+    },
+    {
+      "start": 232.92,
+      "duration": 5.22,
+      "text": "subnet mask"
+    },
+    {
+      "start": 235.319,
+      "duration": 5.941,
+      "text": "okay so submit mass will Define how many"
+    },
+    {
+      "start": 238.14,
+      "duration": 6.72,
+      "text": "IPS can be given so if I do slash 32 it"
+    },
+    {
+      "start": 241.26,
+      "duration": 5.52,
+      "text": "you can get one IP if I do slash 20 you"
+    },
+    {
+      "start": 244.86,
+      "duration": 3.18,
+      "text": "get 4000 IPS and you can also see the"
+    },
+    {
+      "start": 246.78,
+      "duration": 3.56,
+      "text": "range here"
+    },
+    {
+      "start": 248.04,
+      "duration": 2.3,
+      "text": "so"
+    },
+    {
+      "start": 250.379,
+      "duration": 5.58,
+      "text": "this is the same thing uh again in more"
+    },
+    {
+      "start": 253.14,
+      "duration": 5.4,
+      "text": "detailed way as the base IP if you have"
+    },
+    {
+      "start": 255.959,
+      "duration": 4.62,
+      "text": "slash 32 it is 2 to the power 0 which"
+    },
+    {
+      "start": 258.54,
+      "duration": 4.5,
+      "text": "means nothing is going to be changed is"
+    },
+    {
+      "start": 260.579,
+      "duration": 4.201,
+      "text": "31 then you have 2 to the power 1 if you"
+    },
+    {
+      "start": 263.04,
+      "duration": 6.0,
+      "text": "go to 30 it's going to be 2 to the power"
+    },
+    {
+      "start": 264.78,
+      "duration": 6.06,
+      "text": "2 then 29 38 so similarly you can if you"
+    },
+    {
+      "start": 269.04,
+      "duration": 5.879,
+      "text": "go down if you go to slash 16 you get 2"
+    },
+    {
+      "start": 270.84,
+      "duration": 6.24,
+      "text": "to the power 16 which is 65 536 IPS that"
+    },
+    {
+      "start": 274.919,
+      "duration": 3.84,
+      "text": "you get so for these are the IPS that"
+    },
+    {
+      "start": 277.08,
+      "duration": 3.96,
+      "text": "you are going to be get getting in these"
+    },
+    {
+      "start": 278.759,
+      "duration": 6.961,
+      "text": "side ranges so slash Thirty to one IP"
+    },
+    {
+      "start": 281.04,
+      "duration": 6.06,
+      "text": "slash 31 to 34 8 16."
+    },
+    {
+      "start": 285.72,
+      "duration": 4.199,
+      "text": "so"
+    },
+    {
+      "start": 287.1,
+      "duration": 5.94,
+      "text": "uh if you already know this if I do"
+    },
+    {
+      "start": 289.919,
+      "duration": 7.5,
+      "text": "slash 24 I get 250c IPS if I do 16 I get"
+    },
+    {
+      "start": 293.04,
+      "duration": 7.2,
+      "text": "to 65 536 32 means only one zero means"
+    },
+    {
+      "start": 297.419,
+      "duration": 4.5,
+      "text": "all IPS it'll be this 10.0.0.1 and then"
+    },
+    {
+      "start": 300.24,
+      "duration": 2.519,
+      "text": "the last one is going to be this so when"
+    },
+    {
+      "start": 301.919,
+      "duration": 3.301,
+      "text": "you have"
+    },
+    {
+      "start": 302.759,
+      "duration": 3.901,
+      "text": "uh 32 when you have 32 nothing is going"
+    },
+    {
+      "start": 305.22,
+      "duration": 2.4,
+      "text": "to be changed this is the IP oh this is"
+    },
+    {
+      "start": 306.66,
+      "duration": 3.72,
+      "text": "the same IP that you're going to be used"
+    },
+    {
+      "start": 307.62,
+      "duration": 4.98,
+      "text": "okay okay if you have 16 you can see"
+    },
+    {
+      "start": 310.38,
+      "duration": 4.86,
+      "text": "these two octaves are changing"
+    },
+    {
+      "start": 312.6,
+      "duration": 4.68,
+      "text": "these two last two if you have 24"
+    },
+    {
+      "start": 315.24,
+      "duration": 3.959,
+      "text": "the last one is only changing"
+    },
+    {
+      "start": 317.28,
+      "duration": 4.74,
+      "text": "right so you have 256 IPS which starts"
+    },
+    {
+      "start": 319.199,
+      "duration": 3.84,
+      "text": "from 10.0.1 till 10.254 so when you"
+    },
+    {
+      "start": 322.02,
+      "duration": 2.399,
+      "text": "change the octave when you change the"
+    },
+    {
+      "start": 323.039,
+      "duration": 3.781,
+      "text": "subnet mask you can Define how many IPS"
+    },
+    {
+      "start": 324.419,
+      "duration": 4.261,
+      "text": "are you going to get so if I go back to"
+    },
+    {
+      "start": 326.82,
+      "duration": 3.84,
+      "text": "the slide here it says you side has two"
+    },
+    {
+      "start": 328.68,
+      "duration": 3.48,
+      "text": "two components one is a base IP and the"
+    },
+    {
+      "start": 330.66,
+      "duration": 2.94,
+      "text": "second one is the subnet mask so base IP"
+    },
+    {
+      "start": 332.16,
+      "duration": 2.879,
+      "text": "is what you define and then the submit"
+    },
+    {
+      "start": 333.6,
+      "duration": 2.7,
+      "text": "was going to tell you how many IPS are"
+    },
+    {
+      "start": 335.039,
+      "duration": 2.581,
+      "text": "you going to get so when you put slash"
+    },
+    {
+      "start": 336.3,
+      "duration": 3.0,
+      "text": "32 nothing is going to be changed you"
+    },
+    {
+      "start": 337.62,
+      "duration": 3.06,
+      "text": "have the same one IP if you use slash 24"
+    },
+    {
+      "start": 339.3,
+      "duration": 3.3,
+      "text": "only the last part is going to be"
+    },
+    {
+      "start": 340.68,
+      "duration": 3.78,
+      "text": "changed if you use slash 16 the last two"
+    },
+    {
+      "start": 342.6,
+      "duration": 3.9,
+      "text": "can be changed and slash 8 means last"
+    },
+    {
+      "start": 344.46,
+      "duration": 3.12,
+      "text": "three can be changed okay and you don't"
+    },
+    {
+      "start": 346.5,
+      "duration": 2.4,
+      "text": "need to remember this you don't need to"
+    },
+    {
+      "start": 347.58,
+      "duration": 2.76,
+      "text": "remember this in the a for the exam or"
+    },
+    {
+      "start": 348.9,
+      "duration": 2.82,
+      "text": "for anything you will be you will"
+    },
+    {
+      "start": 350.34,
+      "duration": 3.24,
+      "text": "understand this when you do it every day"
+    },
+    {
+      "start": 351.72,
+      "duration": 3.18,
+      "text": "like when you practice you will be able"
+    },
+    {
+      "start": 353.58,
+      "duration": 3.72,
+      "text": "to understand it so don't"
+    },
+    {
+      "start": 354.9,
+      "duration": 3.6,
+      "text": "try to remember it so you have like if I"
+    },
+    {
+      "start": 357.3,
+      "duration": 3.119,
+      "text": "do slash eight you can see these three"
+    },
+    {
+      "start": 358.5,
+      "duration": 2.94,
+      "text": "octates are changing if I do slash zero"
+    },
+    {
+      "start": 360.419,
+      "duration": 1.861,
+      "text": "which means everything is going to be"
+    },
+    {
+      "start": 361.44,
+      "duration": 2.34,
+      "text": "changed"
+    },
+    {
+      "start": 362.28,
+      "duration": 3.72,
+      "text": "okay"
+    },
+    {
+      "start": 363.78,
+      "duration": 3.84,
+      "text": "so that's what is cider at the base and"
+    },
+    {
+      "start": 366.0,
+      "duration": 2.639,
+      "text": "you can always use sites like this slide"
+    },
+    {
+      "start": 367.62,
+      "duration": 1.98,
+      "text": "erotic spicy or you can also find"
+    },
+    {
+      "start": 368.639,
+      "duration": 3.201,
+      "text": "another sites but this is what I use"
+    },
+    {
+      "start": 369.6,
+      "duration": 2.24,
+      "text": "when I"
+    }
+  ]
+}

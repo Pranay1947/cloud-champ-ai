@@ -1,0 +1,2481 @@
+{
+  "video": {
+    "id": "LjJLZRi_zGU",
+    "title": "Devops project: Manage SPOTIFY using TERRAFORM!",
+    "url": "https://www.youtube.com/watch?v=LjJLZRi_zGU",
+    "duration": 1237,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.28,
+      "duration": 4.36,
+      "text": "hello and welcome to this new fun devops"
+    },
+    {
+      "start": 2.76,
+      "duration": 4.24,
+      "text": "project in this project we are creating"
+    },
+    {
+      "start": 4.64,
+      "duration": 5.72,
+      "text": "a playlist of all your favorite songs on"
+    },
+    {
+      "start": 7.0,
+      "duration": 5.599,
+      "text": "Spotify using terraform terraform is a"
+    },
+    {
+      "start": 10.36,
+      "duration": 4.399,
+      "text": "popular infrastructure as code tool used"
+    },
+    {
+      "start": 12.599,
+      "duration": 4.041,
+      "text": "to create resources in the cloud but it"
+    },
+    {
+      "start": 14.759,
+      "duration": 4.761,
+      "text": "can also be used to manage kubernetes"
+    },
+    {
+      "start": 16.64,
+      "duration": 4.639,
+      "text": "gitlab and many other devops tools but"
+    },
+    {
+      "start": 19.52,
+      "duration": 4.2,
+      "text": "in this project we are using terraform"
+    },
+    {
+      "start": 21.279,
+      "duration": 4.401,
+      "text": "to create playlist on Spotify a very"
+    },
+    {
+      "start": 23.72,
+      "duration": 3.399,
+      "text": "popular streaming platform throughout"
+    },
+    {
+      "start": 25.68,
+      "duration": 3.8,
+      "text": "this project you're going to learn many"
+    },
+    {
+      "start": 27.119,
+      "duration": 4.601,
+      "text": "terraform Concepts like what is provider"
+    },
+    {
+      "start": 29.48,
+      "duration": 4.48,
+      "text": "how ter code Works what are modules what"
+    },
+    {
+      "start": 31.72,
+      "duration": 6.2,
+      "text": "is data block and lot more so make sure"
+    },
+    {
+      "start": 33.96,
+      "duration": 3.96,
+      "text": "you watch this video till the end let's"
+    },
+    {
+      "start": 44.719,
+      "duration": 4.32,
+      "text": "start all right so I'm here on my"
+    },
+    {
+      "start": 47.28,
+      "duration": 4.04,
+      "text": "computer screen and we are ready to"
+    },
+    {
+      "start": 49.039,
+      "duration": 3.921,
+      "text": "start with our terraform project as"
+    },
+    {
+      "start": 51.32,
+      "duration": 3.919,
+      "text": "discussed in this project we are"
+    },
+    {
+      "start": 52.96,
+      "duration": 4.48,
+      "text": "creating Spotify playlist using"
+    },
+    {
+      "start": 55.239,
+      "duration": 5.601,
+      "text": "terraform this is an example this"
+    },
+    {
+      "start": 57.44,
+      "duration": 5.24,
+      "text": "playlist is created using ter form and"
+    },
+    {
+      "start": 60.84,
+      "duration": 5.08,
+      "text": "by the end of this video you will also"
+    },
+    {
+      "start": 62.68,
+      "duration": 5.28,
+      "text": "learn how to create Spotify playlist on"
+    },
+    {
+      "start": 65.92,
+      "duration": 4.04,
+      "text": "terraform but before we start this"
+    },
+    {
+      "start": 67.96,
+      "duration": 4.24,
+      "text": "project there are some prerequisites or"
+    },
+    {
+      "start": 69.96,
+      "duration": 4.12,
+      "text": "tools you need to install to complete"
+    },
+    {
+      "start": 72.2,
+      "duration": 4.08,
+      "text": "this project first thing you need to"
+    },
+    {
+      "start": 74.08,
+      "duration": 4.28,
+      "text": "have is terraform to be installed in"
+    },
+    {
+      "start": 76.28,
+      "duration": 4.159,
+      "text": "your local machine I already have"
+    },
+    {
+      "start": 78.36,
+      "duration": 4.759,
+      "text": "terraform installed and to show you that"
+    },
+    {
+      "start": 80.439,
+      "duration": 4.64,
+      "text": "I'm going to the command terraform DV"
+    },
+    {
+      "start": 83.119,
+      "duration": 3.761,
+      "text": "this command shows that terraform is"
+    },
+    {
+      "start": 85.079,
+      "duration": 3.881,
+      "text": "installed and the version is"
+    },
+    {
+      "start": 86.88,
+      "duration": 3.72,
+      "text": "1.7.4 if you don't have terraform"
+    },
+    {
+      "start": 88.96,
+      "duration": 4.32,
+      "text": "installed you can go to the terraform"
+    },
+    {
+      "start": 90.6,
+      "duration": 5.199,
+      "text": "official documentation or search for"
+    },
+    {
+      "start": 93.28,
+      "duration": 4.68,
+      "text": "terraform downloads and you will be"
+    },
+    {
+      "start": 95.799,
+      "duration": 4.6,
+      "text": "taken to this page where you can install"
+    },
+    {
+      "start": 97.96,
+      "duration": 5.04,
+      "text": "terraform for Mac OS Windows Linux"
+    },
+    {
+      "start": 100.399,
+      "duration": 4.68,
+      "text": "FreeBSD anything I already have it"
+    },
+    {
+      "start": 103.0,
+      "duration": 4.6,
+      "text": "installed if you don't have it install"
+    },
+    {
+      "start": 105.079,
+      "duration": 4.201,
+      "text": "it so that you can do this project along"
+    },
+    {
+      "start": 107.6,
+      "duration": 3.6,
+      "text": "with terraform you will also need to"
+    },
+    {
+      "start": 109.28,
+      "duration": 3.799,
+      "text": "have Docker because we are going to be"
+    },
+    {
+      "start": 111.2,
+      "duration": 4.239,
+      "text": "running a Docker container which will"
+    },
+    {
+      "start": 113.079,
+      "duration": 5.32,
+      "text": "help us do the authentication for this"
+    },
+    {
+      "start": 115.439,
+      "duration": 4.761,
+      "text": "Spotify account next we also need a"
+    },
+    {
+      "start": 118.399,
+      "duration": 3.521,
+      "text": "Spotify account I already have my"
+    },
+    {
+      "start": 120.2,
+      "duration": 4.0,
+      "text": "account here you don't need a premium"
+    },
+    {
+      "start": 121.92,
+      "duration": 4.96,
+      "text": "one for this project you can also use a"
+    },
+    {
+      "start": 124.2,
+      "duration": 4.72,
+      "text": "free Spotify account along with this you"
+    },
+    {
+      "start": 126.88,
+      "duration": 3.92,
+      "text": "also need a Spotify developer account"
+    },
+    {
+      "start": 128.92,
+      "duration": 3.12,
+      "text": "and I will show you how to do this so"
+    },
+    {
+      "start": 130.8,
+      "duration": 3.799,
+      "text": "you don't need to worry if you don't"
+    },
+    {
+      "start": 132.04,
+      "duration": 4.559,
+      "text": "have a Spotify developer account we will"
+    },
+    {
+      "start": 134.599,
+      "duration": 4.321,
+      "text": "be using a Spotify provider and in the"
+    },
+    {
+      "start": 136.599,
+      "duration": 3.801,
+      "text": "video I will show you how you can use it"
+    },
+    {
+      "start": 138.92,
+      "duration": 3.88,
+      "text": "along with all these things you also"
+    },
+    {
+      "start": 140.4,
+      "duration": 4.479,
+      "text": "need a vs code Editor to write down"
+    },
+    {
+      "start": 142.8,
+      "duration": 4.64,
+      "text": "terraform code so these are some"
+    },
+    {
+      "start": 144.879,
+      "duration": 4.841,
+      "text": "prerequisites you require to complete"
+    },
+    {
+      "start": 147.44,
+      "duration": 4.4,
+      "text": "this project now that we have discussed"
+    },
+    {
+      "start": 149.72,
+      "duration": 4.72,
+      "text": "this let's start with creating the"
+    },
+    {
+      "start": 151.84,
+      "duration": 4.88,
+      "text": "project a very important note before we"
+    },
+    {
+      "start": 154.44,
+      "duration": 4.64,
+      "text": "start this project to help you complete"
+    },
+    {
+      "start": 156.72,
+      "duration": 4.56,
+      "text": "this project without any issues I have"
+    },
+    {
+      "start": 159.08,
+      "duration": 4.32,
+      "text": "this notion document created which"
+    },
+    {
+      "start": 161.28,
+      "duration": 4.4,
+      "text": "includes all the steps along with"
+    },
+    {
+      "start": 163.4,
+      "duration": 5.32,
+      "text": "screenshots to help you complete this"
+    },
+    {
+      "start": 165.68,
+      "duration": 5.0,
+      "text": "project without any problems if you want"
+    },
+    {
+      "start": 168.72,
+      "duration": 4.0,
+      "text": "me to share this document with you let"
+    },
+    {
+      "start": 170.68,
+      "duration": 4.32,
+      "text": "me know in the comment section comment"
+    },
+    {
+      "start": 172.72,
+      "duration": 5.36,
+      "text": "down terraform project and I will share"
+    },
+    {
+      "start": 175.0,
+      "duration": 5.64,
+      "text": "this document as a PDF or Link in the"
+    },
+    {
+      "start": 178.08,
+      "duration": 4.92,
+      "text": "video description so comment down and"
+    },
+    {
+      "start": 180.64,
+      "duration": 4.319,
+      "text": "let's start for this project I have"
+    },
+    {
+      "start": 183.0,
+      "duration": 4.4,
+      "text": "already created a folder and also opened"
+    },
+    {
+      "start": 184.959,
+      "duration": 4.801,
+      "text": "in my vs code inside this folder we are"
+    },
+    {
+      "start": 187.4,
+      "duration": 5.04,
+      "text": "going to be creating files that will"
+    },
+    {
+      "start": 189.76,
+      "duration": 5.479,
+      "text": "help us create playlist on Spotify so"
+    },
+    {
+      "start": 192.44,
+      "duration": 3.96,
+      "text": "the name of the folder is Spotify TF in"
+    },
+    {
+      "start": 195.239,
+      "duration": 3.121,
+      "text": "this folder I'm going to create the"
+    },
+    {
+      "start": 196.4,
+      "duration": 5.399,
+      "text": "first file which is"
+    },
+    {
+      "start": 198.36,
+      "duration": 7.159,
+      "text": "provider. TF so for terraform to create"
+    },
+    {
+      "start": 201.799,
+      "duration": 6.16,
+      "text": "resources on AWS Azure gcp or create"
+    },
+    {
+      "start": 205.519,
+      "duration": 5.241,
+      "text": "playlist on Spotify we need to Define"
+    },
+    {
+      "start": 207.959,
+      "duration": 5.241,
+      "text": "them as a provider so we need to Define"
+    },
+    {
+      "start": 210.76,
+      "duration": 4.759,
+      "text": "Spotify as a provider let me show you"
+    },
+    {
+      "start": 213.2,
+      "duration": 4.679,
+      "text": "the list of providers that terraform has"
+    },
+    {
+      "start": 215.519,
+      "duration": 4.401,
+      "text": "so if I search for"
+    },
+    {
+      "start": 217.879,
+      "duration": 4.28,
+      "text": "providers and"
+    },
+    {
+      "start": 219.92,
+      "duration": 4.44,
+      "text": "terraform you will see the long list of"
+    },
+    {
+      "start": 222.159,
+      "duration": 4.961,
+      "text": "all the different providers that are"
+    },
+    {
+      "start": 224.36,
+      "duration": 5.599,
+      "text": "used by terraform so you can create"
+    },
+    {
+      "start": 227.12,
+      "duration": 5.64,
+      "text": "infrastructure on AWS so AWS is a"
+    },
+    {
+      "start": 229.959,
+      "duration": 5.721,
+      "text": "provider similarly Azure gcp kubernetes"
+    },
+    {
+      "start": 232.76,
+      "duration": 6.479,
+      "text": "Alibaba and a long list of"
+    },
+    {
+      "start": 235.68,
+      "duration": 5.44,
+      "text": "4,353 providers that Tera for mass for"
+    },
+    {
+      "start": 239.239,
+      "duration": 5.041,
+      "text": "now we are to be creating playlist on"
+    },
+    {
+      "start": 241.12,
+      "duration": 5.36,
+      "text": "Spotify so we need Spotify as a provider"
+    },
+    {
+      "start": 244.28,
+      "duration": 3.519,
+      "text": "let's see if the provider is available"
+    },
+    {
+      "start": 246.48,
+      "duration": 2.679,
+      "text": "or not so I'm going to search for"
+    },
+    {
+      "start": 247.799,
+      "duration": 3.481,
+      "text": "Spotify"
+    },
+    {
+      "start": 249.159,
+      "duration": 4.841,
+      "text": "here and there are different types of"
+    },
+    {
+      "start": 251.28,
+      "duration": 4.76,
+      "text": "providers your official provider partner"
+    },
+    {
+      "start": 254.0,
+      "duration": 5.079,
+      "text": "provider Community provider we are going"
+    },
+    {
+      "start": 256.04,
+      "duration": 6.719,
+      "text": "to be using this Spotify provider which"
+    },
+    {
+      "start": 259.079,
+      "duration": 5.761,
+      "text": "is created by a person named as Conrad I"
+    },
+    {
+      "start": 262.759,
+      "duration": 4.761,
+      "text": "hope I'm pronouncing the right name and"
+    },
+    {
+      "start": 264.84,
+      "duration": 4.52,
+      "text": "we this is a community provider so we"
+    },
+    {
+      "start": 267.52,
+      "duration": 3.84,
+      "text": "are going to be using this to use this"
+    },
+    {
+      "start": 269.36,
+      "duration": 5.36,
+      "text": "provider you need to click on this use"
+    },
+    {
+      "start": 271.36,
+      "duration": 7.2,
+      "text": "provider option here and I'm going to"
+    },
+    {
+      "start": 274.72,
+      "duration": 6.28,
+      "text": "copy the code paste it here in my vs"
+    },
+    {
+      "start": 278.56,
+      "duration": 4.44,
+      "text": "code so this is a terraform block which"
+    },
+    {
+      "start": 281.0,
+      "duration": 4.52,
+      "text": "is used to define the version of the"
+    },
+    {
+      "start": 283.0,
+      "duration": 5.68,
+      "text": "provider right now the version is"
+    },
+    {
+      "start": 285.52,
+      "duration": 5.399,
+      "text": "0.27 and the source is the person who"
+    },
+    {
+      "start": 288.68,
+      "duration": 4.48,
+      "text": "created it slash the name of the"
+    },
+    {
+      "start": 290.919,
+      "duration": 3.801,
+      "text": "provider inside this we need to pass"
+    },
+    {
+      "start": 293.16,
+      "duration": 3.92,
+      "text": "some configuration option so if you"
+    },
+    {
+      "start": 294.72,
+      "duration": 4.6,
+      "text": "click on documentation here you can read"
+    },
+    {
+      "start": 297.08,
+      "duration": 4.76,
+      "text": "more about the provider so in this"
+    },
+    {
+      "start": 299.32,
+      "duration": 4.96,
+      "text": "provider we have resource and data"
+    },
+    {
+      "start": 301.84,
+      "duration": 5.28,
+      "text": "sources along with the provider you also"
+    },
+    {
+      "start": 304.28,
+      "duration": 6.04,
+      "text": "need an API key so what is an API key"
+    },
+    {
+      "start": 307.12,
+      "duration": 6.44,
+      "text": "API key is a string which is O or2 proxy"
+    },
+    {
+      "start": 310.32,
+      "duration": 6.0,
+      "text": "API key you need this to connect to the"
+    },
+    {
+      "start": 313.56,
+      "duration": 5.68,
+      "text": "Spotify account for example if you were"
+    },
+    {
+      "start": 316.32,
+      "duration": 5.159,
+      "text": "to create resources on AWS you will"
+    },
+    {
+      "start": 319.24,
+      "duration": 4.679,
+      "text": "require access Keys similarly if you"
+    },
+    {
+      "start": 321.479,
+      "duration": 4.881,
+      "text": "want to create playlist on Spotify you"
+    },
+    {
+      "start": 323.919,
+      "duration": 4.921,
+      "text": "need to have an API key here so how do"
+    },
+    {
+      "start": 326.36,
+      "duration": 4.119,
+      "text": "we create an API key to create an API"
+    },
+    {
+      "start": 328.84,
+      "duration": 4.72,
+      "text": "key we going to be following steps here"
+    },
+    {
+      "start": 330.479,
+      "duration": 5.16,
+      "text": "present inside this documentation and if"
+    },
+    {
+      "start": 333.56,
+      "duration": 4.88,
+      "text": "you want this document comment down in"
+    },
+    {
+      "start": 335.639,
+      "duration": 5.481,
+      "text": "the comment section for now I'm going to"
+    },
+    {
+      "start": 338.44,
+      "duration": 4.92,
+      "text": "go here in my vs code in the"
+    },
+    {
+      "start": 341.12,
+      "duration": 6.04,
+      "text": "configuration option we know we require"
+    },
+    {
+      "start": 343.36,
+      "duration": 7.04,
+      "text": "an API key so I'll put API uncore"
+    },
+    {
+      "start": 347.16,
+      "duration": 5.44,
+      "text": "key equals to some value that we don't"
+    },
+    {
+      "start": 350.4,
+      "duration": 4.44,
+      "text": "have right now but we are going to be"
+    },
+    {
+      "start": 352.6,
+      "duration": 4.12,
+      "text": "getting it from Spotify developer"
+    },
+    {
+      "start": 354.84,
+      "duration": 4.4,
+      "text": "account so let's go back to this"
+    },
+    {
+      "start": 356.72,
+      "duration": 4.4,
+      "text": "documentation we require an API key but"
+    },
+    {
+      "start": 359.24,
+      "duration": 3.76,
+      "text": "we don't have have it along with API key"
+    },
+    {
+      "start": 361.12,
+      "duration": 5.28,
+      "text": "we also require client ID and client"
+    },
+    {
+      "start": 363.0,
+      "duration": 5.08,
+      "text": "secret so let's see how we can do it to"
+    },
+    {
+      "start": 366.4,
+      "duration": 3.0,
+      "text": "get this data to get all these"
+    },
+    {
+      "start": 368.08,
+      "duration": 3.64,
+      "text": "credentials you need to go to the"
+    },
+    {
+      "start": 369.4,
+      "duration": 4.56,
+      "text": "Spotify developer dashboard so this is"
+    },
+    {
+      "start": 371.72,
+      "duration": 4.24,
+      "text": "the Spotify developer account I already"
+    },
+    {
+      "start": 373.96,
+      "duration": 3.76,
+      "text": "have an account created I'm also logged"
+    },
+    {
+      "start": 375.96,
+      "duration": 4.16,
+      "text": "into it you need to create an account"
+    },
+    {
+      "start": 377.72,
+      "duration": 4.199,
+      "text": "and log in and then click on dashboard"
+    },
+    {
+      "start": 380.12,
+      "duration": 3.88,
+      "text": "here once you click on this you will see"
+    },
+    {
+      "start": 381.919,
+      "duration": 4.441,
+      "text": "a screen like this where you don't have"
+    },
+    {
+      "start": 384.0,
+      "duration": 5.0,
+      "text": "any apps created I'm going to go ahead"
+    },
+    {
+      "start": 386.36,
+      "duration": 4.559,
+      "text": "and click on create app here for you to"
+    },
+    {
+      "start": 389.0,
+      "duration": 3.4,
+      "text": "create an app need to put this details"
+    },
+    {
+      "start": 390.919,
+      "duration": 3.84,
+      "text": "and the details are already there in"
+    },
+    {
+      "start": 392.4,
+      "duration": 5.56,
+      "text": "this documentation here so you need to"
+    },
+    {
+      "start": 394.759,
+      "duration": 4.921,
+      "text": "put the name description redirect Ur all"
+    },
+    {
+      "start": 397.96,
+      "duration": 5.16,
+      "text": "those things let's copy the name from"
+    },
+    {
+      "start": 399.68,
+      "duration": 6.76,
+      "text": "here I'm saying my playlist through"
+    },
+    {
+      "start": 403.12,
+      "duration": 4.84,
+      "text": "terraform and I'm going to put this here"
+    },
+    {
+      "start": 406.44,
+      "duration": 3.52,
+      "text": "for description I'm using the same"
+    },
+    {
+      "start": 407.96,
+      "duration": 3.48,
+      "text": "description which is create multiple"
+    },
+    {
+      "start": 409.96,
+      "duration": 4.88,
+      "text": "Spotify"
+    },
+    {
+      "start": 411.44,
+      "duration": 5.319,
+      "text": "playlist and paste it here website we"
+    },
+    {
+      "start": 414.84,
+      "duration": 6.0,
+      "text": "don't need to put the website we need to"
+    },
+    {
+      "start": 416.759,
+      "duration": 5.601,
+      "text": "put the redirect URI which is local post"
+    },
+    {
+      "start": 420.84,
+      "duration": 6.359,
+      "text": "27228"
+    },
+    {
+      "start": 422.36,
+      "duration": 7.32,
+      "text": "sl4y call back copy this and paste it"
+    },
+    {
+      "start": 427.199,
+      "duration": 4.84,
+      "text": "here once you do that click on I"
+    },
+    {
+      "start": 429.68,
+      "duration": 4.359,
+      "text": "understand and then click on save this"
+    },
+    {
+      "start": 432.039,
+      "duration": 5.121,
+      "text": "will go ahead and create a Spotify app"
+    },
+    {
+      "start": 434.039,
+      "duration": 5.121,
+      "text": "for us which we are going to use to get"
+    },
+    {
+      "start": 437.16,
+      "duration": 4.68,
+      "text": "the client ID and client"
+    },
+    {
+      "start": 439.16,
+      "duration": 4.879,
+      "text": "secret we need this client ID and client"
+    },
+    {
+      "start": 441.84,
+      "duration": 4.4,
+      "text": "secret to connect Spotify with Tera form"
+    },
+    {
+      "start": 444.039,
+      "duration": 4.321,
+      "text": "and also get the API key so you will get"
+    },
+    {
+      "start": 446.24,
+      "duration": 4.44,
+      "text": "this client ID and client secrets in the"
+    },
+    {
+      "start": 448.36,
+      "duration": 4.2,
+      "text": "settings inside your application so"
+    },
+    {
+      "start": 450.68,
+      "duration": 3.799,
+      "text": "click on settings here and you will see"
+    },
+    {
+      "start": 452.56,
+      "duration": 4.199,
+      "text": "this is a client ID I'm going to be"
+    },
+    {
+      "start": 454.479,
+      "duration": 5.761,
+      "text": "using my own client ID and I will delete"
+    },
+    {
+      "start": 456.759,
+      "duration": 5.72,
+      "text": "this application after I complete this"
+    },
+    {
+      "start": 460.24,
+      "duration": 5.359,
+      "text": "video so make sure to use your own"
+    },
+    {
+      "start": 462.479,
+      "duration": 4.961,
+      "text": "client ID and client secret information"
+    },
+    {
+      "start": 465.599,
+      "duration": 4.44,
+      "text": "so we will need this and we need to"
+    },
+    {
+      "start": 467.44,
+      "duration": 4.28,
+      "text": "store this inside a file so let's go to"
+    },
+    {
+      "start": 470.039,
+      "duration": 4.88,
+      "text": "vs code and inside this I'm going to"
+    },
+    {
+      "start": 471.72,
+      "duration": 5.28,
+      "text": "create a file named as"
+    },
+    {
+      "start": 474.919,
+      "duration": 4.601,
+      "text": "Dov in this we need to create two"
+    },
+    {
+      "start": 477.0,
+      "duration": 4.84,
+      "text": "variables Spotify client ID and Spotify"
+    },
+    {
+      "start": 479.52,
+      "duration": 6.959,
+      "text": "Cent secret I already have them here so"
+    },
+    {
+      "start": 481.84,
+      "duration": 7.84,
+      "text": "you need to just copy and paste"
+    },
+    {
+      "start": 486.479,
+      "duration": 6.361,
+      "text": "it you get the values from the dashboard"
+    },
+    {
+      "start": 489.68,
+      "duration": 5.04,
+      "text": "here inside your settings let's copy"
+    },
+    {
+      "start": 492.84,
+      "duration": 4.88,
+      "text": "that and paste it here no need to put"
+    },
+    {
+      "start": 494.72,
+      "duration": 4.599,
+      "text": "them in double Cotes if you put that uh"
+    },
+    {
+      "start": 497.72,
+      "duration": 4.0,
+      "text": "you might get an error so it's going to"
+    },
+    {
+      "start": 499.319,
+      "duration": 5.88,
+      "text": "be simply as it"
+    },
+    {
+      "start": 501.72,
+      "duration": 6.479,
+      "text": "is let's also copy the client secret and"
+    },
+    {
+      "start": 505.199,
+      "duration": 4.921,
+      "text": "I'm going to copy that paste it"
+    },
+    {
+      "start": 508.199,
+      "duration": 3.921,
+      "text": "here okay"
+    },
+    {
+      "start": 510.12,
+      "duration": 5.0,
+      "text": "now that we have a client ID and client"
+    },
+    {
+      "start": 512.12,
+      "duration": 6.0,
+      "text": "secret stored inside EnV file we are"
+    },
+    {
+      "start": 515.12,
+      "duration": 4.52,
+      "text": "ready to set up a Spotify o proxy which"
+    },
+    {
+      "start": 518.12,
+      "duration": 4.08,
+      "text": "is going to connect Spotify with our"
+    },
+    {
+      "start": 519.64,
+      "duration": 5.92,
+      "text": "terraform so that we can create playlist"
+    },
+    {
+      "start": 522.2,
+      "duration": 5.639,
+      "text": "on Spotify so we are going to be using a"
+    },
+    {
+      "start": 525.56,
+      "duration": 4.92,
+      "text": "package known as Spotify all proxy which"
+    },
+    {
+      "start": 527.839,
+      "duration": 5.881,
+      "text": "is created by the same person who"
+    },
+    {
+      "start": 530.48,
+      "duration": 5.52,
+      "text": "created the Spotify provider on"
+    },
+    {
+      "start": 533.72,
+      "duration": 4.96,
+      "text": "terraform so let's go ahead and run this"
+    },
+    {
+      "start": 536.0,
+      "duration": 6.0,
+      "text": "Docker container the command here is"
+    },
+    {
+      "start": 538.68,
+      "duration": 5.88,
+      "text": "this one dock Docker run Docker run"
+    },
+    {
+      "start": 542.0,
+      "duration": 4.959,
+      "text": "hyphen hyphen RM hyphen it hyphen P this"
+    },
+    {
+      "start": 544.56,
+      "duration": 4.12,
+      "text": "is the environment file and we need to"
+    },
+    {
+      "start": 546.959,
+      "duration": 4.241,
+      "text": "change the path for the envirment file"
+    },
+    {
+      "start": 548.68,
+      "duration": 4.279,
+      "text": "because it the envirment file is created"
+    },
+    {
+      "start": 551.2,
+      "duration": 3.759,
+      "text": "in the same folder so we're going to use"
+    },
+    {
+      "start": 552.959,
+      "duration": 5.361,
+      "text": "EnV instead of"
+    },
+    {
+      "start": 554.959,
+      "duration": 5.721,
+      "text": "/v let's copy that and paste it"
+    },
+    {
+      "start": 558.32,
+      "duration": 4.4,
+      "text": "here I'm going"
+    },
+    {
+      "start": 560.68,
+      "duration": 5.56,
+      "text": "to"
+    },
+    {
+      "start": 562.72,
+      "duration": 6.84,
+      "text": "change change the file part which is EnV"
+    },
+    {
+      "start": 566.24,
+      "duration": 4.56,
+      "text": "because the EnV is present inside this"
+    },
+    {
+      "start": 569.56,
+      "duration": 3.8,
+      "text": "folder"
+    },
+    {
+      "start": 570.8,
+      "duration": 5.4,
+      "text": "only so let's press enter now and this"
+    },
+    {
+      "start": 573.36,
+      "duration": 5.12,
+      "text": "will give us the API key also a link to"
+    },
+    {
+      "start": 576.2,
+      "duration": 4.6,
+      "text": "authorize so we have an API key that we"
+    },
+    {
+      "start": 578.48,
+      "duration": 4.919,
+      "text": "need to put here inside the provider"
+    },
+    {
+      "start": 580.8,
+      "duration": 4.68,
+      "text": "section and also Au URL let's click on"
+    },
+    {
+      "start": 583.399,
+      "duration": 4.721,
+      "text": "this and you will come to this page"
+    },
+    {
+      "start": 585.48,
+      "duration": 3.88,
+      "text": "which says you agree with my playlist"
+    },
+    {
+      "start": 588.12,
+      "duration": 3.399,
+      "text": "through dataform which is the"
+    },
+    {
+      "start": 589.36,
+      "duration": 5.08,
+      "text": "application name that is going to able"
+    },
+    {
+      "start": 591.519,
+      "duration": 5.841,
+      "text": "to access all your Spotify data activity"
+    },
+    {
+      "start": 594.44,
+      "duration": 4.48,
+      "text": "Etc so I'm going to say agree and I will"
+    },
+    {
+      "start": 597.36,
+      "duration": 2.56,
+      "text": "get a message saying authorization"
+    },
+    {
+      "start": 598.92,
+      "duration": 3.28,
+      "text": "success"
+    },
+    {
+      "start": 599.92,
+      "duration": 4.479,
+      "text": "you need to have this message and that's"
+    },
+    {
+      "start": 602.2,
+      "duration": 4.92,
+      "text": "when you will know that everything is"
+    },
+    {
+      "start": 604.399,
+      "duration": 6.44,
+      "text": "working fine so let's get the API key"
+    },
+    {
+      "start": 607.12,
+      "duration": 6.279,
+      "text": "from the terminal and put it here inside"
+    },
+    {
+      "start": 610.839,
+      "duration": 5.521,
+      "text": "API key so it is not recommended to put"
+    },
+    {
+      "start": 613.399,
+      "duration": 4.961,
+      "text": "the API key or any credentials directly"
+    },
+    {
+      "start": 616.36,
+      "duration": 4.0,
+      "text": "instead I'm going to create a variable"
+    },
+    {
+      "start": 618.36,
+      "duration": 5.599,
+      "text": "named as"
+    },
+    {
+      "start": 620.36,
+      "duration": 5.719,
+      "text": "API key and I don't have any variable"
+    },
+    {
+      "start": 623.959,
+      "duration": 4.361,
+      "text": "created so I also create a file named as"
+    },
+    {
+      "start": 626.079,
+      "duration": 4.76,
+      "text": "variables."
+    },
+    {
+      "start": 628.32,
+      "duration": 3.959,
+      "text": "TF these are credentials again not"
+    },
+    {
+      "start": 630.839,
+      "duration": 4.24,
+      "text": "recommended to put directly in"
+    },
+    {
+      "start": 632.279,
+      "duration": 5.721,
+      "text": "variables. TF it should be inside TF v"
+    },
+    {
+      "start": 635.079,
+      "duration": 7.0,
+      "text": "file so I'll create"
+    },
+    {
+      "start": 638.0,
+      "duration": 7.16,
+      "text": "terraform do TF"
+    },
+    {
+      "start": 642.079,
+      "duration": 6.801,
+      "text": "was and inside this I'm going to create"
+    },
+    {
+      "start": 645.16,
+      "duration": 9.0,
+      "text": "a variable named as API key so let's say"
+    },
+    {
+      "start": 648.88,
+      "duration": 8.079,
+      "text": "API uncore key equals to the value which"
+    },
+    {
+      "start": 654.16,
+      "duration": 2.799,
+      "text": "is"
+    },
+    {
+      "start": 657.12,
+      "duration": 7.68,
+      "text": "here so let's put this Val"
+    },
+    {
+      "start": 660.839,
+      "duration": 6.481,
+      "text": "value and paste it here inside double"
+    },
+    {
+      "start": 664.8,
+      "duration": 4.52,
+      "text": "codes because this is the variable of"
+    },
+    {
+      "start": 667.32,
+      "duration": 4.199,
+      "text": "string"
+    },
+    {
+      "start": 669.32,
+      "duration": 3.959,
+      "text": "type okay let's put this here I'm going"
+    },
+    {
+      "start": 671.519,
+      "duration": 4.361,
+      "text": "to call this variable inside a variable"
+    },
+    {
+      "start": 673.279,
+      "duration": 4.601,
+      "text": "block so variable block is going to API"
+    },
+    {
+      "start": 675.88,
+      "duration": 4.44,
+      "text": "key and"
+    },
+    {
+      "start": 677.88,
+      "duration": 4.6,
+      "text": "type"
+    },
+    {
+      "start": 680.32,
+      "duration": 6.759,
+      "text": "string"
+    },
+    {
+      "start": 682.48,
+      "duration": 7.68,
+      "text": "okay now we have a variable with the"
+    },
+    {
+      "start": 687.079,
+      "duration": 6.641,
+      "text": "name apore KY we should should specify"
+    },
+    {
+      "start": 690.16,
+      "duration": 5.08,
+      "text": "underscore here now that we have our API"
+    },
+    {
+      "start": 693.72,
+      "duration": 2.72,
+      "text": "key with us we are going to run the"
+    },
+    {
+      "start": 695.24,
+      "duration": 3.88,
+      "text": "First Command which is going to be"
+    },
+    {
+      "start": 696.44,
+      "duration": 4.76,
+      "text": "terraform in it make sure to not close"
+    },
+    {
+      "start": 699.12,
+      "duration": 3.8,
+      "text": "this application because we want this"
+    },
+    {
+      "start": 701.2,
+      "duration": 4.639,
+      "text": "container to be running throughout the"
+    },
+    {
+      "start": 702.92,
+      "duration": 4.28,
+      "text": "project in order to create playlist so"
+    },
+    {
+      "start": 705.839,
+      "duration": 3.761,
+      "text": "I'm going to go ahead and add another"
+    },
+    {
+      "start": 707.2,
+      "duration": 5.16,
+      "text": "terminal here and run the command"
+    },
+    {
+      "start": 709.6,
+      "duration": 4.52,
+      "text": "terraform in it this command will go"
+    },
+    {
+      "start": 712.36,
+      "duration": 3.88,
+      "text": "ahead and install all these files"
+    },
+    {
+      "start": 714.12,
+      "duration": 3.8,
+      "text": "necessary for this provider to run and"
+    },
+    {
+      "start": 716.24,
+      "duration": 4.039,
+      "text": "we get a message saying terraform has"
+    },
+    {
+      "start": 717.92,
+      "duration": 4.68,
+      "text": "been successfully initialized ized so we"
+    },
+    {
+      "start": 720.279,
+      "duration": 5.081,
+      "text": "are now finally ready to create our"
+    },
+    {
+      "start": 722.6,
+      "duration": 5.44,
+      "text": "playlist using terraform so I'm going to"
+    },
+    {
+      "start": 725.36,
+      "duration": 4.96,
+      "text": "create a file named it as"
+    },
+    {
+      "start": 728.04,
+      "duration": 4.28,
+      "text": "playlist"
+    },
+    {
+      "start": 730.32,
+      "duration": 3.92,
+      "text": "dopf and if you have checked the"
+    },
+    {
+      "start": 732.32,
+      "duration": 4.519,
+      "text": "provider"
+    },
+    {
+      "start": 734.24,
+      "duration": 4.039,
+      "text": "documentation you can see that you have"
+    },
+    {
+      "start": 736.839,
+      "duration": 3.721,
+      "text": "resources"
+    },
+    {
+      "start": 738.279,
+      "duration": 3.881,
+      "text": "here so you have resources here where"
+    },
+    {
+      "start": 740.56,
+      "duration": 4.519,
+      "text": "you can which which you can use to"
+    },
+    {
+      "start": 742.16,
+      "duration": 5.56,
+      "text": "create Spotify playist Spotify libraries"
+    },
+    {
+      "start": 745.079,
+      "duration": 4.241,
+      "text": "also Spotify Library albums for us we"
+    },
+    {
+      "start": 747.72,
+      "duration": 3.64,
+      "text": "are going to be creating a playlist so"
+    },
+    {
+      "start": 749.32,
+      "duration": 4.759,
+      "text": "we will be using a resource of a Spotify"
+    },
+    {
+      "start": 751.36,
+      "duration": 4.68,
+      "text": "playlist type let's do it here so I'm"
+    },
+    {
+      "start": 754.079,
+      "duration": 4.601,
+      "text": "going to create a resource it's going to"
+    },
+    {
+      "start": 756.04,
+      "duration": 6.919,
+      "text": "be Spotify playlist and the name of the"
+    },
+    {
+      "start": 758.68,
+      "duration": 7.24,
+      "text": "playlist I want to keep is let's say"
+    },
+    {
+      "start": 762.959,
+      "duration": 5.0,
+      "text": "Bollywood everyone loves Bollywood song"
+    },
+    {
+      "start": 765.92,
+      "duration": 4.24,
+      "text": "I'm going to create a playlist inside"
+    },
+    {
+      "start": 767.959,
+      "duration": 3.44,
+      "text": "this resource you are we need something"
+    },
+    {
+      "start": 770.16,
+      "duration": 3.919,
+      "text": "so you can always check in the"
+    },
+    {
+      "start": 771.399,
+      "duration": 4.961,
+      "text": "documentation below you can see schema"
+    },
+    {
+      "start": 774.079,
+      "duration": 4.2,
+      "text": "here these are the required things these"
+    },
+    {
+      "start": 776.36,
+      "duration": 4.24,
+      "text": "are optional things so we require a name"
+    },
+    {
+      "start": 778.279,
+      "duration": 4.161,
+      "text": "of the playlist and also the tracks you"
+    },
+    {
+      "start": 780.6,
+      "duration": 3.599,
+      "text": "want to add inside the playlist these"
+    },
+    {
+      "start": 782.44,
+      "duration": 3.92,
+      "text": "are all optional things so I'm going to"
+    },
+    {
+      "start": 784.199,
+      "duration": 4.521,
+      "text": "go ahead and add the"
+    },
+    {
+      "start": 786.36,
+      "duration": 5.76,
+      "text": "name so the name I want to keep is going"
+    },
+    {
+      "start": 788.72,
+      "duration": 3.4,
+      "text": "to be let's say"
+    },
+    {
+      "start": 792.959,
+      "duration": 4.44,
+      "text": "Bollywood and to show you I don't have"
+    },
+    {
+      "start": 795.04,
+      "duration": 4.64,
+      "text": "any playlist with that name uh so let's"
+    },
+    {
+      "start": 797.399,
+      "duration": 4.12,
+      "text": "go to my Spotify account here and you"
+    },
+    {
+      "start": 799.68,
+      "duration": 3.92,
+      "text": "can see I only have one playlist here"
+    },
+    {
+      "start": 801.519,
+      "duration": 5.841,
+      "text": "which is my recommendation playlist no"
+    },
+    {
+      "start": 803.6,
+      "duration": 7.0,
+      "text": "playlist with uh Bollywood or anything"
+    },
+    {
+      "start": 807.36,
+      "duration": 6.44,
+      "text": "okay let's go and create create"
+    },
+    {
+      "start": 810.6,
+      "duration": 7.359,
+      "text": "that so for a track I need to add a"
+    },
+    {
+      "start": 813.8,
+      "duration": 6.24,
+      "text": "track I don't know what song you like"
+    },
+    {
+      "start": 817.959,
+      "duration": 4.761,
+      "text": "but I'm sure everyone knows about the"
+    },
+    {
+      "start": 820.04,
+      "duration": 5.039,
+      "text": "tunic tunic song uh which is made"
+    },
+    {
+      "start": 822.72,
+      "duration": 6.84,
+      "text": "Popular by speed so let's search for"
+    },
+    {
+      "start": 825.079,
+      "duration": 8.241,
+      "text": "tunic tunic song Here tunic"
+    },
+    {
+      "start": 829.56,
+      "duration": 6.24,
+      "text": "tunic which is this one by theay Mandi"
+    },
+    {
+      "start": 833.32,
+      "duration": 4.6,
+      "text": "and you can also see isos speed here so"
+    },
+    {
+      "start": 835.8,
+      "duration": 4.92,
+      "text": "let's use this song for you to use this"
+    },
+    {
+      "start": 837.92,
+      "duration": 5.599,
+      "text": "song you need the ID here Spotify has ID"
+    },
+    {
+      "start": 840.72,
+      "duration": 5.08,
+      "text": "for every track they put on their"
+    },
+    {
+      "start": 843.519,
+      "duration": 4.88,
+      "text": "platform or every song that they put on"
+    },
+    {
+      "start": 845.8,
+      "duration": 5.479,
+      "text": "the platform so we need this ID here and"
+    },
+    {
+      "start": 848.399,
+      "duration": 5.281,
+      "text": "I'm going to put that ID inside tracks"
+    },
+    {
+      "start": 851.279,
+      "duration": 5.401,
+      "text": "this has to be a string or a list of"
+    },
+    {
+      "start": 853.68,
+      "duration": 4.839,
+      "text": "strings I'll put this here now that we"
+    },
+    {
+      "start": 856.68,
+      "duration": 3.519,
+      "text": "have this ready I can go ahead and with"
+    },
+    {
+      "start": 858.519,
+      "duration": 3.041,
+      "text": "running the command terraform plan and"
+    },
+    {
+      "start": 860.199,
+      "duration": 2.76,
+      "text": "it should show me that one thing is"
+    },
+    {
+      "start": 861.56,
+      "duration": 4.0,
+      "text": "going to be created which is this"
+    },
+    {
+      "start": 862.959,
+      "duration": 4.8,
+      "text": "playlist here so I'll say terraform plan"
+    },
+    {
+      "start": 865.56,
+      "duration": 4.24,
+      "text": "command and I got an argument saying"
+    },
+    {
+      "start": 867.759,
+      "duration": 4.08,
+      "text": "track is not expected do you mean tracks"
+    },
+    {
+      "start": 869.8,
+      "duration": 4.76,
+      "text": "so it not it is not track it is tracks"
+    },
+    {
+      "start": 871.839,
+      "duration": 4.841,
+      "text": "because it is a list of"
+    },
+    {
+      "start": 874.56,
+      "duration": 3.56,
+      "text": "strings okay that's right I'm going to"
+    },
+    {
+      "start": 876.68,
+      "duration": 3.36,
+      "text": "save it again and run the same command"
+    },
+    {
+      "start": 878.12,
+      "duration": 4.279,
+      "text": "terraform plan which will show me that"
+    },
+    {
+      "start": 880.04,
+      "duration": 4.159,
+      "text": "one playlist is going to be created the"
+    },
+    {
+      "start": 882.399,
+      "duration": 3.921,
+      "text": "name of the playlist is Bollywood and"
+    },
+    {
+      "start": 884.199,
+      "duration": 4.401,
+      "text": "this is the track which is the tunic"
+    },
+    {
+      "start": 886.32,
+      "duration": 4.56,
+      "text": "tunic song going to be added inside the"
+    },
+    {
+      "start": 888.6,
+      "duration": 4.039,
+      "text": "Bollywood playlist let's run terraform"
+    },
+    {
+      "start": 890.88,
+      "duration": 4.36,
+      "text": "apply command before I do this let me"
+    },
+    {
+      "start": 892.639,
+      "duration": 5.0,
+      "text": "show you I don't have any playlist with"
+    },
+    {
+      "start": 895.24,
+      "duration": 4.32,
+      "text": "the name polywood you can see it's not"
+    },
+    {
+      "start": 897.639,
+      "duration": 3.721,
+      "text": "there here so let's let's go ahead and"
+    },
+    {
+      "start": 899.56,
+      "duration": 5.32,
+      "text": "run terraform apply now I'll say"
+    },
+    {
+      "start": 901.36,
+      "duration": 6.479,
+      "text": "terraform apply hyphen Auto hyphen"
+    },
+    {
+      "start": 904.88,
+      "duration": 5.16,
+      "text": "approve and let's press enter you can"
+    },
+    {
+      "start": 907.839,
+      "duration": 5.481,
+      "text": "see Bollywood play is not creating and"
+    },
+    {
+      "start": 910.04,
+      "duration": 6.08,
+      "text": "it has now created in one second uh"
+    },
+    {
+      "start": 913.32,
+      "duration": 4.319,
+      "text": "let's go back and check so you can see"
+    },
+    {
+      "start": 916.12,
+      "duration": 4.24,
+      "text": "now we have a playlist with the name"
+    },
+    {
+      "start": 917.639,
+      "duration": 5.841,
+      "text": "tunic tunic this is how you will create"
+    },
+    {
+      "start": 920.36,
+      "duration": 5.32,
+      "text": "playlist on Spotify using terraform this"
+    },
+    {
+      "start": 923.48,
+      "duration": 4.719,
+      "text": "is the power of devops this is the power"
+    },
+    {
+      "start": 925.68,
+      "duration": 4.36,
+      "text": "of terraform the only problem with this"
+    },
+    {
+      "start": 928.199,
+      "duration": 3.961,
+      "text": "setup now is is every time you want to"
+    },
+    {
+      "start": 930.04,
+      "duration": 4.4,
+      "text": "create a playlist you need to get the ID"
+    },
+    {
+      "start": 932.16,
+      "duration": 3.32,
+      "text": "of the track maybe you don't know what"
+    },
+    {
+      "start": 934.44,
+      "duration": 3.16,
+      "text": "the ID"
+    },
+    {
+      "start": 935.48,
+      "duration": 4.24,
+      "text": "is and there's no point of this"
+    },
+    {
+      "start": 937.6,
+      "duration": 3.96,
+      "text": "automation if you are going to be"
+    },
+    {
+      "start": 939.72,
+      "duration": 3.44,
+      "text": "getting the ID from Spotify you can"
+    },
+    {
+      "start": 941.56,
+      "duration": 3.92,
+      "text": "simply go ahead and create a playlist"
+    },
+    {
+      "start": 943.16,
+      "duration": 5.479,
+      "text": "right from here so instead of getting"
+    },
+    {
+      "start": 945.48,
+      "duration": 5.56,
+      "text": "the ID uh from here we are going to be"
+    },
+    {
+      "start": 948.639,
+      "duration": 4.401,
+      "text": "using a data block so what is data Block"
+    },
+    {
+      "start": 951.04,
+      "duration": 4.44,
+      "text": "in spotif in"
+    },
+    {
+      "start": 953.04,
+      "duration": 5.4,
+      "text": "terraform so data block is used to fetch"
+    },
+    {
+      "start": 955.48,
+      "duration": 5.0,
+      "text": "the data from the platform in short it's"
+    },
+    {
+      "start": 958.44,
+      "duration": 4.72,
+      "text": "just used to get the information from"
+    },
+    {
+      "start": 960.48,
+      "duration": 4.44,
+      "text": "Spotify to the code directly so we are"
+    },
+    {
+      "start": 963.16,
+      "duration": 5.0,
+      "text": "going to be using data blocks to get the"
+    },
+    {
+      "start": 964.92,
+      "duration": 5.56,
+      "text": "ID of the of the tracks and create a"
+    },
+    {
+      "start": 968.16,
+      "duration": 3.799,
+      "text": "playlist out of it so in here let's"
+    },
+    {
+      "start": 970.48,
+      "duration": 3.44,
+      "text": "create another playlist I'm going to be"
+    },
+    {
+      "start": 971.959,
+      "duration": 5.161,
+      "text": "creating a playlist let's see a rap"
+    },
+    {
+      "start": 973.92,
+      "duration": 4.8,
+      "text": "playlist including all the songs of M&M"
+    },
+    {
+      "start": 977.12,
+      "duration": 3.719,
+      "text": "um so I'm going to create a data block"
+    },
+    {
+      "start": 978.72,
+      "duration": 5.919,
+      "text": "first so data block we will be creating"
+    },
+    {
+      "start": 980.839,
+      "duration": 5.92,
+      "text": "a Spotify search track you can see in"
+    },
+    {
+      "start": 984.639,
+      "duration": 5.161,
+      "text": "the documentation there are also data"
+    },
+    {
+      "start": 986.759,
+      "duration": 6.56,
+      "text": "sources for data search track data"
+    },
+    {
+      "start": 989.8,
+      "duration": 6.36,
+      "text": "Spotify album Spotify track whatever you"
+    },
+    {
+      "start": 993.319,
+      "duration": 4.281,
+      "text": "want okay and this is how you can do it"
+    },
+    {
+      "start": 996.16,
+      "duration": 5.239,
+      "text": "so we going to be searching a track"
+    },
+    {
+      "start": 997.6,
+      "duration": 5.88,
+      "text": "based on the artist so you can add name"
+    },
+    {
+      "start": 1001.399,
+      "duration": 4.081,
+      "text": "of the artist where whichever you want"
+    },
+    {
+      "start": 1003.48,
+      "duration": 6.159,
+      "text": "to search for so I'm going to be adding"
+    },
+    {
+      "start": 1005.48,
+      "duration": 4.159,
+      "text": "an artist name let's say"
+    },
+    {
+      "start": 1011.199,
+      "duration": 4.88,
+      "text": "M&M okay once I have this here I'm going"
+    },
+    {
+      "start": 1014.36,
+      "duration": 5.0,
+      "text": "to create another Spotify playlist so"
+    },
+    {
+      "start": 1016.079,
+      "duration": 9.721,
+      "text": "I'll say resource is going to be Spotify"
+    },
+    {
+      "start": 1019.36,
+      "duration": 6.44,
+      "text": "playlist and I will add the name as Slim"
+    },
+    {
+      "start": 1026.919,
+      "duration": 4.76,
+      "text": "Shady also the name of the playlist I"
+    },
+    {
+      "start": 1029.16,
+      "duration": 3.32,
+      "text": "want to put is Slim Shady so let's put"
+    },
+    {
+      "start": 1031.679,
+      "duration": 5.801,
+      "text": "that"
+    },
+    {
+      "start": 1032.48,
+      "duration": 8.04,
+      "text": "here and the tracks are going to be the"
+    },
+    {
+      "start": 1037.48,
+      "duration": 5.28,
+      "text": "data block using the data block here so"
+    },
+    {
+      "start": 1040.52,
+      "duration": 3.76,
+      "text": "the data block name uh let's change this"
+    },
+    {
+      "start": 1042.76,
+      "duration": 5.12,
+      "text": "to"
+    },
+    {
+      "start": 1044.28,
+      "duration": 6.32,
+      "text": "&m name I want to put as M&M here and I"
+    },
+    {
+      "start": 1047.88,
+      "duration": 5.44,
+      "text": "want to put some song of M&M so you need"
+    },
+    {
+      "start": 1050.6,
+      "duration": 5.8,
+      "text": "to put the tracks colon what track array"
+    },
+    {
+      "start": 1053.32,
+      "duration": 7.04,
+      "text": "do you want so if you search here inside"
+    },
+    {
+      "start": 1056.4,
+      "duration": 5.96,
+      "text": "the artist let's search for emm"
+    },
+    {
+      "start": 1060.36,
+      "duration": 5.04,
+      "text": "here and you can see these are all the"
+    },
+    {
+      "start": 1062.36,
+      "duration": 5.199,
+      "text": "songs by &m so you have without Houdini"
+    },
+    {
+      "start": 1065.4,
+      "duration": 4.8,
+      "text": "without me all these songs if you want"
+    },
+    {
+      "start": 1067.559,
+      "duration": 5.761,
+      "text": "to create a playlist out of these songs"
+    },
+    {
+      "start": 1070.2,
+      "duration": 5.32,
+      "text": "you need to put the array of of the"
+    },
+    {
+      "start": 1073.32,
+      "duration": 3.839,
+      "text": "songs let's say if you choose zero you"
+    },
+    {
+      "start": 1075.52,
+      "duration": 3.76,
+      "text": "will you will get this song in your"
+    },
+    {
+      "start": 1077.159,
+      "duration": 4.081,
+      "text": "playlist if you choose one you will get"
+    },
+    {
+      "start": 1079.28,
+      "duration": 3.879,
+      "text": "this song you will get this song"
+    },
+    {
+      "start": 1081.24,
+      "duration": 5.559,
+      "text": "depending on what you put here so I'm"
+    },
+    {
+      "start": 1083.159,
+      "duration": 5.76,
+      "text": "going to put uh the arrays here let's"
+    },
+    {
+      "start": 1086.799,
+      "duration": 4.921,
+      "text": "say I want to put the first St also the"
+    },
+    {
+      "start": 1088.919,
+      "duration": 6.601,
+      "text": "second one and the third one so I'll say"
+    },
+    {
+      "start": 1091.72,
+      "duration": 8.4,
+      "text": "data block again dot I'll say data again"
+    },
+    {
+      "start": 1095.52,
+      "duration": 7.84,
+      "text": "and then tracks 1. ID also tracks 2. ID"
+    },
+    {
+      "start": 1100.12,
+      "duration": 9.12,
+      "text": "this will go ahead and add three of the"
+    },
+    {
+      "start": 1103.36,
+      "duration": 8.559,
+      "text": "&m songs inside my Slim Shady playlist"
+    },
+    {
+      "start": 1109.24,
+      "duration": 2.679,
+      "text": "so"
+    },
+    {
+      "start": 1112.28,
+      "duration": 6.6,
+      "text": "tracks to. ID I can put as many as I can"
+    },
+    {
+      "start": 1117.039,
+      "duration": 5.201,
+      "text": "and I can also set the limit of how many"
+    },
+    {
+      "start": 1118.88,
+      "duration": 6.679,
+      "text": "songs I want inside here so if I want to"
+    },
+    {
+      "start": 1122.24,
+      "duration": 5.559,
+      "text": "have five songs and I can also do that"
+    },
+    {
+      "start": 1125.559,
+      "duration": 4.161,
+      "text": "so now I'm going to save this and let's"
+    },
+    {
+      "start": 1127.799,
+      "duration": 3.641,
+      "text": "run the command terraform plan let's see"
+    },
+    {
+      "start": 1129.72,
+      "duration": 4.56,
+      "text": "what will happen when I run terraform"
+    },
+    {
+      "start": 1131.44,
+      "duration": 5.239,
+      "text": "plan it says one more playlist is going"
+    },
+    {
+      "start": 1134.28,
+      "duration": 5.879,
+      "text": "to be created and the playlist is going"
+    },
+    {
+      "start": 1136.679,
+      "duration": 5.761,
+      "text": "to have these tracks"
+    },
+    {
+      "start": 1140.159,
+      "duration": 5.4,
+      "text": "okay so let's go ahead and click on"
+    },
+    {
+      "start": 1142.44,
+      "duration": 5.0,
+      "text": "terraform apply hyphen Auto hyphen"
+    },
+    {
+      "start": 1145.559,
+      "duration": 3.6,
+      "text": "approve and this will go ahead and"
+    },
+    {
+      "start": 1147.44,
+      "duration": 3.719,
+      "text": "create a playlist which is created in"
+    },
+    {
+      "start": 1149.159,
+      "duration": 4.961,
+      "text": "one second and now you see this's a"
+    },
+    {
+      "start": 1151.159,
+      "duration": 5.801,
+      "text": "playlist named as Slim Shady which has"
+    },
+    {
+      "start": 1154.12,
+      "duration": 6.16,
+      "text": "Houdini without me and Superman songs"
+    },
+    {
+      "start": 1156.96,
+      "duration": 6.28,
+      "text": "inside this playlist so this is how you"
+    },
+    {
+      "start": 1160.28,
+      "duration": 5.84,
+      "text": "can create playlist using terraform on"
+    },
+    {
+      "start": 1163.24,
+      "duration": 4.28,
+      "text": "Spotify this is a very fun project and I"
+    },
+    {
+      "start": 1166.12,
+      "duration": 3.919,
+      "text": "hope this will teach you terraform"
+    },
+    {
+      "start": 1167.52,
+      "duration": 4.12,
+      "text": "Concepts very very easily eily if you"
+    },
+    {
+      "start": 1170.039,
+      "duration": 3.801,
+      "text": "are able to complete this project make"
+    },
+    {
+      "start": 1171.64,
+      "duration": 4.84,
+      "text": "sure to share it on LinkedIn tag me tag"
+    },
+    {
+      "start": 1173.84,
+      "duration": 4.92,
+      "text": "terraform tag hash cop"
+    },
+    {
+      "start": 1176.48,
+      "duration": 3.36,
+      "text": "everyone this project is originally"
+    },
+    {
+      "start": 1178.76,
+      "duration": 3.919,
+      "text": "present on"
+    },
+    {
+      "start": 1179.84,
+      "duration": 6.959,
+      "text": "hashiko documentation or hashiko"
+    },
+    {
+      "start": 1182.679,
+      "duration": 8.0,
+      "text": "learning platform so if you search for"
+    },
+    {
+      "start": 1186.799,
+      "duration": 6.641,
+      "text": "create Spotify you can see this is the"
+    },
+    {
+      "start": 1190.679,
+      "duration": 4.921,
+      "text": "documentation or the tutorial you can"
+    },
+    {
+      "start": 1193.44,
+      "duration": 5.56,
+      "text": "follow this is exactly what we have done"
+    },
+    {
+      "start": 1195.6,
+      "duration": 6.0,
+      "text": "here so you can also follow this and if"
+    },
+    {
+      "start": 1199.0,
+      "duration": 4.84,
+      "text": "you look at this blog here you can see"
+    },
+    {
+      "start": 1201.6,
+      "duration": 4.199,
+      "text": "follow our new tutorial using this here"
+    },
+    {
+      "start": 1203.84,
+      "duration": 3.92,
+      "text": "from the author and share your playlist"
+    },
+    {
+      "start": 1205.799,
+      "duration": 3.88,
+      "text": "for a chance to win a free hashiko"
+    },
+    {
+      "start": 1207.76,
+      "duration": 4.84,
+      "text": "t-shirt so so you can also get a hash"
+    },
+    {
+      "start": 1209.679,
+      "duration": 4.601,
+      "text": "cop T-shirt If you complete this project"
+    },
+    {
+      "start": 1212.6,
+      "duration": 4.12,
+      "text": "so this was our video on how to create"
+    },
+    {
+      "start": 1214.28,
+      "duration": 4.04,
+      "text": "Spotify playlist using terraform I hope"
+    },
+    {
+      "start": 1216.72,
+      "duration": 3.64,
+      "text": "this video was informative and it will"
+    },
+    {
+      "start": 1218.32,
+      "duration": 4.16,
+      "text": "help you learn terraform Concepts if you"
+    },
+    {
+      "start": 1220.36,
+      "duration": 3.84,
+      "text": "have any questions any doubt feel free"
+    },
+    {
+      "start": 1222.48,
+      "duration": 3.439,
+      "text": "to let me know in the comment section"
+    },
+    {
+      "start": 1224.2,
+      "duration": 6.44,
+      "text": "like this video And subscribe to Cloud"
+    },
+    {
+      "start": 1225.919,
+      "duration": 4.721,
+      "text": "champ thank you and have a good day"
+    }
+  ]
+}

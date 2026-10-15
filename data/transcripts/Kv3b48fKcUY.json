@@ -1,0 +1,1051 @@
+{
+  "video": {
+    "id": "Kv3b48fKcUY",
+    "title": "Day 3- How to choose RIGHT AWS Region | What is AWS Region and Availability Zone",
+    "url": "https://www.youtube.com/watch?v=Kv3b48fKcUY",
+    "duration": 488,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 1.24,
+      "duration": 4.96,
+      "text": "in AWS before you start creating your"
+    },
+    {
+      "start": 3.719,
+      "duration": 5.361,
+      "text": "applications or websites or even before"
+    },
+    {
+      "start": 6.2,
+      "duration": 5.68,
+      "text": "launching your servers databases storage"
+    },
+    {
+      "start": 9.08,
+      "duration": 4.8,
+      "text": "you need to select a region so it is"
+    },
+    {
+      "start": 11.88,
+      "duration": 3.799,
+      "text": "very important for you to understand"
+    },
+    {
+      "start": 13.88,
+      "duration": 4.319,
+      "text": "what is a region what are availability"
+    },
+    {
+      "start": 15.679,
+      "duration": 5.041,
+      "text": "zones and in this video I will teach you"
+    },
+    {
+      "start": 18.199,
+      "duration": 2.521,
+      "text": "exactly"
+    },
+    {
+      "start": 27.32,
+      "duration": 5.52,
+      "text": "that in this video we will look at AWS"
+    },
+    {
+      "start": 30.64,
+      "duration": 4.599,
+      "text": "Global infrastructure understanding what"
+    },
+    {
+      "start": 32.84,
+      "duration": 4.239,
+      "text": "are regions how to use them what are"
+    },
+    {
+      "start": 35.239,
+      "duration": 5.081,
+      "text": "availability zones what are Edge"
+    },
+    {
+      "start": 37.079,
+      "duration": 5.721,
+      "text": "locations and more AWS also has their"
+    },
+    {
+      "start": 40.32,
+      "duration": 5.0,
+      "text": "own documentation explaining the global"
+    },
+    {
+      "start": 42.8,
+      "duration": 4.599,
+      "text": "infrastructure which showcases how many"
+    },
+    {
+      "start": 45.32,
+      "duration": 4.6,
+      "text": "regions they have how many availability"
+    },
+    {
+      "start": 47.399,
+      "duration": 4.441,
+      "text": "Zone they have so you have a map here"
+    },
+    {
+      "start": 49.92,
+      "duration": 4.959,
+      "text": "displaying all the regions all over the"
+    },
+    {
+      "start": 51.84,
+      "duration": 5.559,
+      "text": "world so you have Mumbai region in India"
+    },
+    {
+      "start": 54.879,
+      "duration": 5.36,
+      "text": "Hyderabad region as well and you have"
+    },
+    {
+      "start": 57.399,
+      "duration": 4.8,
+      "text": "all the different regions here in US"
+    },
+    {
+      "start": 60.239,
+      "duration": 5.2,
+      "text": "along with this AWS has new regions"
+    },
+    {
+      "start": 62.199,
+      "duration": 7.481,
+      "text": "coming up so one in Saudi Arabia here in"
+    },
+    {
+      "start": 65.439,
+      "duration": 6.04,
+      "text": "Oakland Taiwan Thailand and so on so"
+    },
+    {
+      "start": 69.68,
+      "duration": 3.079,
+      "text": "this is the AWS infrastructure and this"
+    },
+    {
+      "start": 71.479,
+      "duration": 3.561,
+      "text": "is what we are going to be learning in"
+    },
+    {
+      "start": 72.759,
+      "duration": 5.36,
+      "text": "this video here one thing to note before"
+    },
+    {
+      "start": 75.04,
+      "duration": 5.88,
+      "text": "you start learning AWS is AWS services"
+    },
+    {
+      "start": 78.119,
+      "duration": 6.121,
+      "text": "are either Regional or Global what do I"
+    },
+    {
+      "start": 80.92,
+      "duration": 6.0,
+      "text": "mean by this so here is my AWS account"
+    },
+    {
+      "start": 84.24,
+      "duration": 4.919,
+      "text": "and I am inside ec2 instance dashboard"
+    },
+    {
+      "start": 86.92,
+      "duration": 4.96,
+      "text": "right now I am in Ohio region and you"
+    },
+    {
+      "start": 89.159,
+      "duration": 5.28,
+      "text": "can see no instances found but if I"
+    },
+    {
+      "start": 91.88,
+      "duration": 5.16,
+      "text": "change my region to let's say Us East"
+    },
+    {
+      "start": 94.439,
+      "duration": 5.561,
+      "text": "North Virginia you can see now I have an"
+    },
+    {
+      "start": 97.04,
+      "duration": 5.16,
+      "text": "instance running in North Virginia which"
+    },
+    {
+      "start": 100.0,
+      "duration": 4.36,
+      "text": "means ec2 is a regional service so if I"
+    },
+    {
+      "start": 102.2,
+      "duration": 3.76,
+      "text": "create an ec2 instance in North Virginia"
+    },
+    {
+      "start": 104.36,
+      "duration": 4.119,
+      "text": "it will only be available in North"
+    },
+    {
+      "start": 105.96,
+      "duration": 3.839,
+      "text": "Virginia instead of any other regions so"
+    },
+    {
+      "start": 108.479,
+      "duration": 3.32,
+      "text": "if I change the region from something"
+    },
+    {
+      "start": 109.799,
+      "duration": 3.761,
+      "text": "else let's say Mumbai region now I will"
+    },
+    {
+      "start": 111.799,
+      "duration": 3.241,
+      "text": "not be able to see the same instance"
+    },
+    {
+      "start": 113.56,
+      "duration": 4.28,
+      "text": "because the instance was in North"
+    },
+    {
+      "start": 115.04,
+      "duration": 5.6,
+      "text": "Virginia region not in Mumbai region"
+    },
+    {
+      "start": 117.84,
+      "duration": 4.919,
+      "text": "this means in AWS some services are"
+    },
+    {
+      "start": 120.64,
+      "duration": 4.119,
+      "text": "Regional and if you don't see them which"
+    },
+    {
+      "start": 122.759,
+      "duration": 3.561,
+      "text": "means you are not in the right region"
+    },
+    {
+      "start": 124.759,
+      "duration": 5.041,
+      "text": "although there are also other services"
+    },
+    {
+      "start": 126.32,
+      "duration": 5.559,
+      "text": "which are Global such as AWS IM and S3"
+    },
+    {
+      "start": 129.8,
+      "duration": 5.96,
+      "text": "we will be learning about AWS IM IM in"
+    },
+    {
+      "start": 131.879,
+      "duration": 5.44,
+      "text": "the next video so what is the region AWS"
+    },
+    {
+      "start": 135.76,
+      "duration": 3.0,
+      "text": "has regions all over the world so you"
+    },
+    {
+      "start": 137.319,
+      "duration": 3.761,
+      "text": "can see all the different names of the"
+    },
+    {
+      "start": 138.76,
+      "duration": 5.72,
+      "text": "region here so we have us East North"
+    },
+    {
+      "start": 141.08,
+      "duration": 5.36,
+      "text": "Virginia Us East Ohio Us West California"
+    },
+    {
+      "start": 144.48,
+      "duration": 4.68,
+      "text": "Oregon same way in Europe you have"
+    },
+    {
+      "start": 146.44,
+      "duration": 4.879,
+      "text": "Frankfurt Ireland London pris but along"
+    },
+    {
+      "start": 149.16,
+      "duration": 5.6,
+      "text": "with this regions are also named as us"
+    },
+    {
+      "start": 151.319,
+      "duration": 5.28,
+      "text": "East 1 Us East 2 Us West one US West 2"
+    },
+    {
+      "start": 154.76,
+      "duration": 5.08,
+      "text": "you need to know these names because you"
+    },
+    {
+      "start": 156.599,
+      "duration": 5.681,
+      "text": "will be using these names in your CLI or"
+    },
+    {
+      "start": 159.84,
+      "duration": 4.24,
+      "text": "your terraform or maybe in your"
+    },
+    {
+      "start": 162.28,
+      "duration": 4.76,
+      "text": "programming languages so you will be"
+    },
+    {
+      "start": 164.08,
+      "duration": 5.76,
+      "text": "referring North Virginia as us east1 to"
+    },
+    {
+      "start": 167.04,
+      "duration": 5.839,
+      "text": "show you an example this is my terminal"
+    },
+    {
+      "start": 169.84,
+      "duration": 4.88,
+      "text": "and if I want to use AWS CLI I will be"
+    },
+    {
+      "start": 172.879,
+      "duration": 4.521,
+      "text": "running a command AWS configure we are"
+    },
+    {
+      "start": 174.72,
+      "duration": 4.56,
+      "text": "going to be learning AWS CLI as well so"
+    },
+    {
+      "start": 177.4,
+      "duration": 4.16,
+      "text": "if I want to connect my AWS with my"
+    },
+    {
+      "start": 179.28,
+      "duration": 5.08,
+      "text": "terminal On Us East one which is North"
+    },
+    {
+      "start": 181.56,
+      "duration": 4.679,
+      "text": "Virginia I have to Define it this way so"
+    },
+    {
+      "start": 184.36,
+      "duration": 4.959,
+      "text": "regions can also be called as us East"
+    },
+    {
+      "start": 186.239,
+      "duration": 5.441,
+      "text": "one which is the code for North Virginia"
+    },
+    {
+      "start": 189.319,
+      "duration": 4.721,
+      "text": "regions consist of data centers so here"
+    },
+    {
+      "start": 191.68,
+      "duration": 4.8,
+      "text": "is an image of a data center inside"
+    },
+    {
+      "start": 194.04,
+      "duration": 4.52,
+      "text": "Oregon region and regions are cluster of"
+    },
+    {
+      "start": 196.48,
+      "duration": 4.36,
+      "text": "data centers as you can see here it"
+    },
+    {
+      "start": 198.56,
+      "duration": 3.56,
+      "text": "consists of availability zone so inside"
+    },
+    {
+      "start": 200.84,
+      "duration": 4.119,
+      "text": "a region there will be multiple"
+    },
+    {
+      "start": 202.12,
+      "duration": 4.88,
+      "text": "availability Zone North Virginia has six"
+    },
+    {
+      "start": 204.959,
+      "duration": 3.28,
+      "text": "different availability Z so we"
+    },
+    {
+      "start": 207.0,
+      "duration": 3.28,
+      "text": "understood there are so many different"
+    },
+    {
+      "start": 208.239,
+      "duration": 3.961,
+      "text": "regions to deploy our application"
+    },
+    {
+      "start": 210.28,
+      "duration": 3.679,
+      "text": "so the main question is how to choose"
+    },
+    {
+      "start": 212.2,
+      "duration": 4.0,
+      "text": "the right AWS region for your"
+    },
+    {
+      "start": 213.959,
+      "duration": 4.601,
+      "text": "applications or websites this question"
+    },
+    {
+      "start": 216.2,
+      "duration": 4.08,
+      "text": "can also be asked in your AWS interviews"
+    },
+    {
+      "start": 218.56,
+      "duration": 3.56,
+      "text": "so you need to understand how do you"
+    },
+    {
+      "start": 220.28,
+      "duration": 4.36,
+      "text": "choose the right AWS region for"
+    },
+    {
+      "start": 222.12,
+      "duration": 4.16,
+      "text": "deploying your applications or websites"
+    },
+    {
+      "start": 224.64,
+      "duration": 3.239,
+      "text": "so these are different points to keep in"
+    },
+    {
+      "start": 226.28,
+      "duration": 4.519,
+      "text": "mind when choosing the right region the"
+    },
+    {
+      "start": 227.879,
+      "duration": 5.161,
+      "text": "first is data stays in your region for"
+    },
+    {
+      "start": 230.799,
+      "duration": 4.041,
+      "text": "example in the war between Russia and"
+    },
+    {
+      "start": 233.04,
+      "duration": 3.6,
+      "text": "Ukraine Russia had a compliance"
+    },
+    {
+      "start": 234.84,
+      "duration": 3.8,
+      "text": "requirement that data should not move"
+    },
+    {
+      "start": 236.64,
+      "duration": 3.159,
+      "text": "out of their country so if that is the"
+    },
+    {
+      "start": 238.64,
+      "duration": 3.36,
+      "text": "case you will have to choose a"
+    },
+    {
+      "start": 239.799,
+      "duration": 3.8,
+      "text": "particular region next is closer to your"
+    },
+    {
+      "start": 242.0,
+      "duration": 3.799,
+      "text": "customer you will be deploying your"
+    },
+    {
+      "start": 243.599,
+      "duration": 4.801,
+      "text": "applications or websites closer to your"
+    },
+    {
+      "start": 245.799,
+      "duration": 4.841,
+      "text": "customer for example I have a website"
+    },
+    {
+      "start": 248.4,
+      "duration": 4.16,
+      "text": "and all my customers are in US region"
+    },
+    {
+      "start": 250.64,
+      "duration": 3.64,
+      "text": "although I stay in India I will be"
+    },
+    {
+      "start": 252.56,
+      "duration": 3.56,
+      "text": "hosting my application closer to my"
+    },
+    {
+      "start": 254.28,
+      "duration": 4.079,
+      "text": "customers so that they can fetch the"
+    },
+    {
+      "start": 256.12,
+      "duration": 3.959,
+      "text": "information very quickly so I will be"
+    },
+    {
+      "start": 258.359,
+      "duration": 3.641,
+      "text": "choosing a region closer to my customer"
+    },
+    {
+      "start": 260.079,
+      "duration": 3.84,
+      "text": "this is another criteria to choose a"
+    },
+    {
+      "start": 262.0,
+      "duration": 3.84,
+      "text": "region next criteria is service"
+    },
+    {
+      "start": 263.919,
+      "duration": 3.641,
+      "text": "availability not all services or"
+    },
+    {
+      "start": 265.84,
+      "duration": 4.079,
+      "text": "features are available everywhere"
+    },
+    {
+      "start": 267.56,
+      "duration": 4.479,
+      "text": "whenever AWS launches new services they"
+    },
+    {
+      "start": 269.919,
+      "duration": 4.521,
+      "text": "will be putting them first in the North"
+    },
+    {
+      "start": 272.039,
+      "duration": 4.121,
+      "text": "Virginia or the US regions instead of"
+    },
+    {
+      "start": 274.44,
+      "duration": 3.24,
+      "text": "putting them all over the world so you"
+    },
+    {
+      "start": 276.16,
+      "duration": 3.44,
+      "text": "will have to check if the service you"
+    },
+    {
+      "start": 277.68,
+      "duration": 4.76,
+      "text": "want to use is present in that region or"
+    },
+    {
+      "start": 279.6,
+      "duration": 4.599,
+      "text": "not and this is one of the criteria the"
+    },
+    {
+      "start": 282.44,
+      "duration": 3.68,
+      "text": "next criteria is the cost difference"
+    },
+    {
+      "start": 284.199,
+      "duration": 3.881,
+      "text": "pricing for every service is different"
+    },
+    {
+      "start": 286.12,
+      "duration": 4.24,
+      "text": "for every region usually you will see"
+    },
+    {
+      "start": 288.08,
+      "duration": 4.64,
+      "text": "less pricing for US regions compared to"
+    },
+    {
+      "start": 290.36,
+      "duration": 4.839,
+      "text": "Europe and to show you an example let me"
+    },
+    {
+      "start": 292.72,
+      "duration": 4.36,
+      "text": "take you to the ec2 pricing page so I'm"
+    },
+    {
+      "start": 295.199,
+      "duration": 4.081,
+      "text": "here on ec2 pricing page and the region"
+    },
+    {
+      "start": 297.08,
+      "duration": 4.16,
+      "text": "is selected to us East North Virginia"
+    },
+    {
+      "start": 299.28,
+      "duration": 3.44,
+      "text": "you can see the price for t4g Nano"
+    },
+    {
+      "start": 301.24,
+      "duration": 4.36,
+      "text": "instance is"
+    },
+    {
+      "start": 302.72,
+      "duration": 4.8,
+      "text": "0.42 in North Virginia but if I change"
+    },
+    {
+      "start": 305.6,
+      "duration": 4.52,
+      "text": "this to something else maybe in Cape"
+    },
+    {
+      "start": 307.52,
+      "duration": 4.48,
+      "text": "Town you can see the difference the same"
+    },
+    {
+      "start": 310.12,
+      "duration": 4.24,
+      "text": "instance is now for"
+    },
+    {
+      "start": 312.0,
+      "duration": 4.28,
+      "text": "0.0054 which is expensive compared to"
+    },
+    {
+      "start": 314.36,
+      "duration": 3.839,
+      "text": "the North Virginia region so if you're a"
+    },
+    {
+      "start": 316.28,
+      "duration": 4.44,
+      "text": "company looking for saving cost you"
+    },
+    {
+      "start": 318.199,
+      "duration": 4.72,
+      "text": "might be choosing US regions compared to"
+    },
+    {
+      "start": 320.72,
+      "duration": 4.52,
+      "text": "any other regions because pricing in US"
+    },
+    {
+      "start": 322.919,
+      "duration": 4.081,
+      "text": "regions are less so these are four"
+    },
+    {
+      "start": 325.24,
+      "duration": 3.84,
+      "text": "factors to choose the region the first"
+    },
+    {
+      "start": 327.0,
+      "duration": 3.72,
+      "text": "is compliance requirement second is"
+    },
+    {
+      "start": 329.08,
+      "duration": 3.2,
+      "text": "proximity your customers you will be"
+    },
+    {
+      "start": 330.72,
+      "duration": 3.919,
+      "text": "deploying your application closer to"
+    },
+    {
+      "start": 332.28,
+      "duration": 5.0,
+      "text": "your customer so they can fetch faster"
+    },
+    {
+      "start": 334.639,
+      "duration": 4.4,
+      "text": "having less latency next is service"
+    },
+    {
+      "start": 337.28,
+      "duration": 4.24,
+      "text": "availability you will be choosing a"
+    },
+    {
+      "start": 339.039,
+      "duration": 4.481,
+      "text": "region where your services are available"
+    },
+    {
+      "start": 341.52,
+      "duration": 3.84,
+      "text": "and lastly pricing or the cost"
+    },
+    {
+      "start": 343.52,
+      "duration": 3.84,
+      "text": "difference so you will be choosing"
+    },
+    {
+      "start": 345.36,
+      "duration": 4.36,
+      "text": "region which is going to cost you less"
+    },
+    {
+      "start": 347.36,
+      "duration": 4.04,
+      "text": "compared to any other region now that we"
+    },
+    {
+      "start": 349.72,
+      "duration": 3.4,
+      "text": "understand this let's go and look at"
+    },
+    {
+      "start": 351.4,
+      "duration": 4.079,
+      "text": "availability zones so what are"
+    },
+    {
+      "start": 353.12,
+      "duration": 4.519,
+      "text": "availability zones a is a separate data"
+    },
+    {
+      "start": 355.479,
+      "duration": 4.16,
+      "text": "center with its own power and network"
+    },
+    {
+      "start": 357.639,
+      "duration": 3.961,
+      "text": "and they are present inside a region so"
+    },
+    {
+      "start": 359.639,
+      "duration": 4.321,
+      "text": "so each region has multiple availability"
+    },
+    {
+      "start": 361.6,
+      "duration": 4.879,
+      "text": "Zone usually three minimum two and"
+    },
+    {
+      "start": 363.96,
+      "duration": 5.519,
+      "text": "maximum of six so North Virginia region"
+    },
+    {
+      "start": 366.479,
+      "duration": 4.961,
+      "text": "has six different AES and inside a"
+    },
+    {
+      "start": 369.479,
+      "duration": 3.881,
+      "text": "region you will have different AES let's"
+    },
+    {
+      "start": 371.44,
+      "duration": 3.8,
+      "text": "say for example in this North California"
+    },
+    {
+      "start": 373.36,
+      "duration": 5.52,
+      "text": "region which is Us West one you have"
+    },
+    {
+      "start": 375.24,
+      "duration": 6.239,
+      "text": "three different AES so Us West 1 a 1 B"
+    },
+    {
+      "start": 378.88,
+      "duration": 5.0,
+      "text": "and 1 C this is how naming is done for"
+    },
+    {
+      "start": 381.479,
+      "duration": 4.801,
+      "text": "AES now these AES are separated from"
+    },
+    {
+      "start": 383.88,
+      "duration": 4.719,
+      "text": "each other for disaster protection A's"
+    },
+    {
+      "start": 386.28,
+      "duration": 4.28,
+      "text": "are isolated to avoid all being affected"
+    },
+    {
+      "start": 388.599,
+      "duration": 5.121,
+      "text": "by a disaster but they still connected"
+    },
+    {
+      "start": 390.56,
+      "duration": 4.84,
+      "text": "to each other with AWS OWN networking"
+    },
+    {
+      "start": 393.72,
+      "duration": 3.52,
+      "text": "which is which are very high speed and"
+    },
+    {
+      "start": 395.4,
+      "duration": 4.44,
+      "text": "low latency networks so that if you want"
+    },
+    {
+      "start": 397.24,
+      "duration": 5.16,
+      "text": "to transfer data from one a to another"
+    },
+    {
+      "start": 399.84,
+      "duration": 4.799,
+      "text": "you can do it very quickly using AWS"
+    },
+    {
+      "start": 402.4,
+      "duration": 4.88,
+      "text": "internal Network we select AZ when"
+    },
+    {
+      "start": 404.639,
+      "duration": 4.881,
+      "text": "deploying our instances or databases by"
+    },
+    {
+      "start": 407.28,
+      "duration": 4.479,
+      "text": "choosing a subnet so we select a subnet"
+    },
+    {
+      "start": 409.52,
+      "duration": 5.799,
+      "text": "and one subnet equals to one"
+    },
+    {
+      "start": 411.759,
+      "duration": 5.681,
+      "text": "a next is H location Edge locations are"
+    },
+    {
+      "start": 415.319,
+      "duration": 4.6,
+      "text": "generally used for caching to store your"
+    },
+    {
+      "start": 417.44,
+      "duration": 4.159,
+      "text": "data that is accessed frequently so that"
+    },
+    {
+      "start": 419.919,
+      "duration": 3.72,
+      "text": "the customer don't have to fetch it"
+    },
+    {
+      "start": 421.599,
+      "duration": 4.44,
+      "text": "right from the origin and we use this"
+    },
+    {
+      "start": 423.639,
+      "duration": 5.12,
+      "text": "along with S3 or CDN which is the cloud"
+    },
+    {
+      "start": 426.039,
+      "duration": 5.081,
+      "text": "friend service in AWS so Edge locations"
+    },
+    {
+      "start": 428.759,
+      "duration": 5.361,
+      "text": "are used by AWS to deliver content to"
+    },
+    {
+      "start": 431.12,
+      "duration": 5.32,
+      "text": "the users very fast and the purpose of"
+    },
+    {
+      "start": 434.12,
+      "duration": 4.32,
+      "text": "edge location is to Cas copies of your"
+    },
+    {
+      "start": 436.44,
+      "duration": 4.12,
+      "text": "content closer to the user which will"
+    },
+    {
+      "start": 438.44,
+      "duration": 3.84,
+      "text": "reduce latency and improve speed these"
+    },
+    {
+      "start": 440.56,
+      "duration": 4.199,
+      "text": "are generally used for Content delivery"
+    },
+    {
+      "start": 442.28,
+      "duration": 5.08,
+      "text": "and streaming so why to use Edge"
+    },
+    {
+      "start": 444.759,
+      "duration": 5.361,
+      "text": "location Edge location are part of AWS"
+    },
+    {
+      "start": 447.36,
+      "duration": 5.48,
+      "text": "CDN which is the cloudfront service"
+    },
+    {
+      "start": 450.12,
+      "duration": 5.0,
+      "text": "using age location means you get faster"
+    },
+    {
+      "start": 452.84,
+      "duration": 4.16,
+      "text": "loader times for your website which will"
+    },
+    {
+      "start": 455.12,
+      "duration": 4.72,
+      "text": "be resulting in better user experience"
+    },
+    {
+      "start": 457.0,
+      "duration": 4.56,
+      "text": "and lower latency so moving on you don't"
+    },
+    {
+      "start": 459.84,
+      "duration": 3.68,
+      "text": "have to understand Edge locations unless"
+    },
+    {
+      "start": 461.56,
+      "duration": 3.479,
+      "text": "you are learning about cloudfront but"
+    },
+    {
+      "start": 463.52,
+      "duration": 3.44,
+      "text": "you need to understand what is a region"
+    },
+    {
+      "start": 465.039,
+      "duration": 5.12,
+      "text": "and availability Zone because we will be"
+    },
+    {
+      "start": 466.96,
+      "duration": 5.04,
+      "text": "using them in every service so this was"
+    },
+    {
+      "start": 470.159,
+      "duration": 3.681,
+      "text": "our video understanding AWS Global"
+    },
+    {
+      "start": 472.0,
+      "duration": 4.039,
+      "text": "infrastructure what are regions what are"
+    },
+    {
+      "start": 473.84,
+      "duration": 7.039,
+      "text": "availability Zone and in the next video"
+    },
+    {
+      "start": 476.039,
+      "duration": 4.84,
+      "text": "we will look at AWS IM IM service"
+    }
+  ]
+}

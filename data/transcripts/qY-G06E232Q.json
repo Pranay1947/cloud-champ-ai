@@ -1,0 +1,2191 @@
+{
+  "video": {
+    "id": "qY-G06E232Q",
+    "title": "AWS IAM Hands-on Lab Tutorial | Learn Identity and Access Management in 15 minutes",
+    "url": "https://www.youtube.com/watch?v=qY-G06E232Q",
+    "duration": 1006,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.32,
+      "duration": 3.999,
+      "text": "hello and welcome back to cloud champ so"
+    },
+    {
+      "start": 2.56,
+      "duration": 4.719,
+      "text": "in the previous video we talked about"
+    },
+    {
+      "start": 4.319,
+      "duration": 5.36,
+      "text": "aws im service in depth if you haven't"
+    },
+    {
+      "start": 7.279,
+      "duration": 4.4,
+      "text": "checked the video i'll link it here the"
+    },
+    {
+      "start": 9.679,
+      "duration": 4.88,
+      "text": "link in the description box this is the"
+    },
+    {
+      "start": 11.679,
+      "duration": 5.52,
+      "text": "video we have covered a lot of topics"
+    },
+    {
+      "start": 14.559,
+      "duration": 5.521,
+      "text": "about what is im service what are users"
+    },
+    {
+      "start": 17.199,
+      "duration": 4.561,
+      "text": "groups roles policies"
+    },
+    {
+      "start": 20.08,
+      "duration": 5.359,
+      "text": "what is mfa"
+    },
+    {
+      "start": 21.76,
+      "duration": 5.759,
+      "text": "and what are the features of aws im"
+    },
+    {
+      "start": 25.439,
+      "duration": 4.561,
+      "text": "so in this video we are going to do"
+    },
+    {
+      "start": 27.519,
+      "duration": 4.801,
+      "text": "hands-on practice of all the things that"
+    },
+    {
+      "start": 30.0,
+      "duration": 4.079,
+      "text": "we have discussed so first please watch"
+    },
+    {
+      "start": 32.32,
+      "duration": 4.16,
+      "text": "the previous video and then you can do"
+    },
+    {
+      "start": 34.079,
+      "duration": 4.32,
+      "text": "the hands-on of this video"
+    },
+    {
+      "start": 36.48,
+      "duration": 3.44,
+      "text": "in this video we are going to create an"
+    },
+    {
+      "start": 38.399,
+      "duration": 4.081,
+      "text": "iem user"
+    },
+    {
+      "start": 39.92,
+      "duration": 4.479,
+      "text": "and create the group for the user attach"
+    },
+    {
+      "start": 42.48,
+      "duration": 4.239,
+      "text": "the policy to the group"
+    },
+    {
+      "start": 44.399,
+      "duration": 4.081,
+      "text": "then add the user to the group"
+    },
+    {
+      "start": 46.719,
+      "duration": 5.281,
+      "text": "and we will enable multi-factor"
+    },
+    {
+      "start": 48.48,
+      "duration": 5.2,
+      "text": "authentication or mfa for extra security"
+    },
+    {
+      "start": 52.0,
+      "duration": 4.64,
+      "text": "of the user account"
+    },
+    {
+      "start": 53.68,
+      "duration": 6.16,
+      "text": "lastly we will create an iim role and"
+    },
+    {
+      "start": 56.64,
+      "duration": 5.599,
+      "text": "attach it to one of the aws services"
+    },
+    {
+      "start": 59.84,
+      "duration": 4.719,
+      "text": "so let's get started without wasting any"
+    },
+    {
+      "start": 62.239,
+      "duration": 4.56,
+      "text": "time to get along with this video and to"
+    },
+    {
+      "start": 64.559,
+      "duration": 4.801,
+      "text": "practice along with me you need a free"
+    },
+    {
+      "start": 66.799,
+      "duration": 4.561,
+      "text": "tier aws account you can create a free"
+    },
+    {
+      "start": 69.36,
+      "duration": 4.56,
+      "text": "tier account with a debit or a credit"
+    },
+    {
+      "start": 71.36,
+      "duration": 3.92,
+      "text": "card if you face any problems creating"
+    },
+    {
+      "start": 73.92,
+      "duration": 4.16,
+      "text": "an account you can post down in the"
+    },
+    {
+      "start": 75.28,
+      "duration": 5.76,
+      "text": "comment and i'll help you out so here"
+    },
+    {
+      "start": 78.08,
+      "duration": 5.359,
+      "text": "as you can see i am in the iam dashboard"
+    },
+    {
+      "start": 81.04,
+      "duration": 5.36,
+      "text": "i am logged in as a root user"
+    },
+    {
+      "start": 83.439,
+      "duration": 4.72,
+      "text": "now we will create an iem user"
+    },
+    {
+      "start": 86.4,
+      "duration": 4.24,
+      "text": "also you don't need to select any region"
+    },
+    {
+      "start": 88.159,
+      "duration": 4.161,
+      "text": "for this as i am is a global service"
+    },
+    {
+      "start": 90.64,
+      "duration": 4.0,
+      "text": "it's not a regional service we are"
+    },
+    {
+      "start": 92.32,
+      "duration": 4.64,
+      "text": "creating an im account for the"
+    },
+    {
+      "start": 94.64,
+      "duration": 5.28,
+      "text": "developer we have a developer in our"
+    },
+    {
+      "start": 96.96,
+      "duration": 5.119,
+      "text": "company which is named as cloudchamp so"
+    },
+    {
+      "start": 99.92,
+      "duration": 3.839,
+      "text": "we will create an iem account"
+    },
+    {
+      "start": 102.079,
+      "duration": 4.0,
+      "text": "named as cloudchamp"
+    },
+    {
+      "start": 103.759,
+      "duration": 5.441,
+      "text": "so we want cloudcham to have"
+    },
+    {
+      "start": 106.079,
+      "duration": 5.121,
+      "text": "aws management console access as well as"
+    },
+    {
+      "start": 109.2,
+      "duration": 4.32,
+      "text": "the terminal or"
+    },
+    {
+      "start": 111.2,
+      "duration": 4.4,
+      "text": "cli access as well"
+    },
+    {
+      "start": 113.52,
+      "duration": 2.959,
+      "text": "this is what terminal is if you don't"
+    },
+    {
+      "start": 115.6,
+      "duration": 3.839,
+      "text": "know"
+    },
+    {
+      "start": 116.479,
+      "duration": 3.841,
+      "text": "so let's create an im user name as cloud"
+    },
+    {
+      "start": 119.439,
+      "duration": 4.0,
+      "text": "champ"
+    },
+    {
+      "start": 120.32,
+      "duration": 4.159,
+      "text": "with aws management console as well as"
+    },
+    {
+      "start": 123.439,
+      "duration": 2.081,
+      "text": "cli"
+    },
+    {
+      "start": 124.479,
+      "duration": 3.601,
+      "text": "access"
+    },
+    {
+      "start": 125.52,
+      "duration": 4.56,
+      "text": "so to create an user we have to select"
+    },
+    {
+      "start": 128.08,
+      "duration": 3.76,
+      "text": "click on this users"
+    },
+    {
+      "start": 130.08,
+      "duration": 4.4,
+      "text": "and as you can see we have two users"
+    },
+    {
+      "start": 131.84,
+      "duration": 4.72,
+      "text": "already we don't need this so to delete"
+    },
+    {
+      "start": 134.48,
+      "duration": 3.839,
+      "text": "a user you will need to select the user"
+    },
+    {
+      "start": 136.56,
+      "duration": 5.92,
+      "text": "and click on delete here"
+    },
+    {
+      "start": 138.319,
+      "duration": 6.56,
+      "text": "type the name that is cloud ninja"
+    },
+    {
+      "start": 142.48,
+      "duration": 6.399,
+      "text": "and click on delete"
+    },
+    {
+      "start": 144.879,
+      "duration": 4.0,
+      "text": "so you can see the user is deleting now"
+    },
+    {
+      "start": 149.2,
+      "duration": 4.64,
+      "text": "so user has been deleted"
+    },
+    {
+      "start": 151.04,
+      "duration": 4.559,
+      "text": "successfully to create a new user you"
+    },
+    {
+      "start": 153.84,
+      "duration": 2.88,
+      "text": "need to click on the add user button"
+    },
+    {
+      "start": 155.599,
+      "duration": 3.041,
+      "text": "right there"
+    },
+    {
+      "start": 156.72,
+      "duration": 4.08,
+      "text": "click on add user"
+    },
+    {
+      "start": 158.64,
+      "duration": 4.16,
+      "text": "you will get a screen like this now you"
+    },
+    {
+      "start": 160.8,
+      "duration": 4.4,
+      "text": "have to type in the name of the user you"
+    },
+    {
+      "start": 162.8,
+      "duration": 4.079,
+      "text": "want to create account for in our case"
+    },
+    {
+      "start": 165.2,
+      "duration": 3.64,
+      "text": "we want cloudchamp"
+    },
+    {
+      "start": 166.879,
+      "duration": 4.0,
+      "text": "so we will insert"
+    },
+    {
+      "start": 168.84,
+      "duration": 4.679,
+      "text": "cloudchamp now"
+    },
+    {
+      "start": 170.879,
+      "duration": 6.241,
+      "text": "we want the user to have programmatic"
+    },
+    {
+      "start": 173.519,
+      "duration": 5.36,
+      "text": "access that is cli api and sdk"
+    },
+    {
+      "start": 177.12,
+      "duration": 4.24,
+      "text": "so we will click on this"
+    },
+    {
+      "start": 178.879,
+      "duration": 4.64,
+      "text": "we also want the user to have aws"
+    },
+    {
+      "start": 181.36,
+      "duration": 3.84,
+      "text": "management console access"
+    },
+    {
+      "start": 183.519,
+      "duration": 3.041,
+      "text": "so we will create"
+    },
+    {
+      "start": 185.2,
+      "duration": 4.0,
+      "text": "this as well"
+    },
+    {
+      "start": 186.56,
+      "duration": 5.2,
+      "text": "now we will assign auto generated or you"
+    },
+    {
+      "start": 189.2,
+      "duration": 5.36,
+      "text": "can provide custom password we are going"
+    },
+    {
+      "start": 191.76,
+      "duration": 4.08,
+      "text": "to select auto generated password"
+    },
+    {
+      "start": 194.56,
+      "duration": 4.08,
+      "text": "and we will"
+    },
+    {
+      "start": 195.84,
+      "duration": 5.28,
+      "text": "allow the user to reset the password"
+    },
+    {
+      "start": 198.64,
+      "duration": 5.44,
+      "text": "later on when he logins to the account"
+    },
+    {
+      "start": 201.12,
+      "duration": 5.52,
+      "text": "so we'll take this as well and this will"
+    },
+    {
+      "start": 204.08,
+      "duration": 4.879,
+      "text": "automatically provide the user with im"
+    },
+    {
+      "start": 206.64,
+      "duration": 5.12,
+      "text": "user change password policy the user"
+    },
+    {
+      "start": 208.959,
+      "duration": 4.801,
+      "text": "will get this policy by default next we"
+    },
+    {
+      "start": 211.76,
+      "duration": 3.759,
+      "text": "will click on permissions"
+    },
+    {
+      "start": 213.76,
+      "duration": 3.119,
+      "text": "you can add the permissions from the"
+    },
+    {
+      "start": 215.519,
+      "duration": 3.28,
+      "text": "existing groups"
+    },
+    {
+      "start": 216.879,
+      "duration": 3.761,
+      "text": "or existing users"
+    },
+    {
+      "start": 218.799,
+      "duration": 4.401,
+      "text": "but we don't want to give any"
+    },
+    {
+      "start": 220.64,
+      "duration": 4.56,
+      "text": "permissions to this user for now later"
+    },
+    {
+      "start": 223.2,
+      "duration": 4.399,
+      "text": "on we will create a group and we will"
+    },
+    {
+      "start": 225.2,
+      "duration": 3.759,
+      "text": "provide permissions"
+    },
+    {
+      "start": 227.599,
+      "duration": 4.801,
+      "text": "you can also"
+    },
+    {
+      "start": 228.959,
+      "duration": 5.92,
+      "text": "attach existing policies provided by aws"
+    },
+    {
+      "start": 232.4,
+      "duration": 4.96,
+      "text": "to this user or you can create your own"
+    },
+    {
+      "start": 234.879,
+      "duration": 4.161,
+      "text": "policy we will look how to create a"
+    },
+    {
+      "start": 237.36,
+      "duration": 4.879,
+      "text": "policy in"
+    },
+    {
+      "start": 239.04,
+      "duration": 5.04,
+      "text": "some time for now let's click on tags"
+    },
+    {
+      "start": 242.239,
+      "duration": 3.521,
+      "text": "tags are used to"
+    },
+    {
+      "start": 244.08,
+      "duration": 2.799,
+      "text": "to differentiate the users from the"
+    },
+    {
+      "start": 245.76,
+      "duration": 3.759,
+      "text": "other"
+    },
+    {
+      "start": 246.879,
+      "duration": 4.0,
+      "text": "it's not compulsory but it is good"
+    },
+    {
+      "start": 249.519,
+      "duration": 3.681,
+      "text": "practice to"
+    },
+    {
+      "start": 250.879,
+      "duration": 5.44,
+      "text": "give tax so let's give"
+    },
+    {
+      "start": 253.2,
+      "duration": 3.119,
+      "text": "back to this user"
+    },
+    {
+      "start": 256.56,
+      "duration": 3.199,
+      "text": "cloud chat so"
+    },
+    {
+      "start": 258.239,
+      "duration": 2.481,
+      "text": "now you can review"
+    },
+    {
+      "start": 259.759,
+      "duration": 2.961,
+      "text": "all the"
+    },
+    {
+      "start": 260.72,
+      "duration": 6.44,
+      "text": "details that you have failed in"
+    },
+    {
+      "start": 262.72,
+      "duration": 4.44,
+      "text": "and now we will click on create user"
+    },
+    {
+      "start": 268.16,
+      "duration": 4.0,
+      "text": "now you get the screen"
+    },
+    {
+      "start": 270.08,
+      "duration": 5.76,
+      "text": "this user has the"
+    },
+    {
+      "start": 272.16,
+      "duration": 6.56,
+      "text": "access key id and the secret access key"
+    },
+    {
+      "start": 275.84,
+      "duration": 4.56,
+      "text": "also the password that is auto generated"
+    },
+    {
+      "start": 278.72,
+      "duration": 4.32,
+      "text": "you have to keep this"
+    },
+    {
+      "start": 280.4,
+      "duration": 3.68,
+      "text": "thing safe because you can see this only"
+    },
+    {
+      "start": 283.04,
+      "duration": 3.04,
+      "text": "once"
+    },
+    {
+      "start": 284.08,
+      "duration": 4.559,
+      "text": "once the screen is gone you cannot get"
+    },
+    {
+      "start": 286.08,
+      "duration": 5.6,
+      "text": "your access or a secret access key so"
+    },
+    {
+      "start": 288.639,
+      "duration": 5.601,
+      "text": "you need to download your csv file"
+    },
+    {
+      "start": 291.68,
+      "duration": 5.04,
+      "text": "let's download it"
+    },
+    {
+      "start": 294.24,
+      "duration": 4.16,
+      "text": "so this file has been downloaded"
+    },
+    {
+      "start": 296.72,
+      "duration": 4.479,
+      "text": "one more thing you don't need to expose"
+    },
+    {
+      "start": 298.4,
+      "duration": 4.96,
+      "text": "your access key id or secret access key"
+    },
+    {
+      "start": 301.199,
+      "duration": 5.121,
+      "text": "like i told in the previous video this"
+    },
+    {
+      "start": 303.36,
+      "duration": 5.119,
+      "text": "is very crucial and if anyone gets hold"
+    },
+    {
+      "start": 306.32,
+      "duration": 4.719,
+      "text": "of your access or secret access key you"
+    },
+    {
+      "start": 308.479,
+      "duration": 3.601,
+      "text": "can get a huge bill so do not expose"
+    },
+    {
+      "start": 311.039,
+      "duration": 2.88,
+      "text": "your keys"
+    },
+    {
+      "start": 312.08,
+      "duration": 2.72,
+      "text": "and i'll be deleting this key so don't"
+    },
+    {
+      "start": 313.919,
+      "duration": 2.801,
+      "text": "worry"
+    },
+    {
+      "start": 314.8,
+      "duration": 4.16,
+      "text": "so let's close this window and let's see"
+    },
+    {
+      "start": 316.72,
+      "duration": 4.24,
+      "text": "if the user has been created or not"
+    },
+    {
+      "start": 318.96,
+      "duration": 4.56,
+      "text": "so in this user section as you can see"
+    },
+    {
+      "start": 320.96,
+      "duration": 5.04,
+      "text": "we have a cloud champ user which is not"
+    },
+    {
+      "start": 323.52,
+      "duration": 4.239,
+      "text": "in any of the groups and there is not"
+    },
+    {
+      "start": 326.0,
+      "duration": 2.88,
+      "text": "mfa activated"
+    },
+    {
+      "start": 327.759,
+      "duration": 3.121,
+      "text": "no"
+    },
+    {
+      "start": 328.88,
+      "duration": 3.28,
+      "text": "permissions provided to this"
+    },
+    {
+      "start": 330.88,
+      "duration": 3.599,
+      "text": "user as well"
+    },
+    {
+      "start": 332.16,
+      "duration": 4.56,
+      "text": "so as you can see there is only one"
+    },
+    {
+      "start": 334.479,
+      "duration": 3.28,
+      "text": "permission that is im user change"
+    },
+    {
+      "start": 336.72,
+      "duration": 3.199,
+      "text": "password"
+    },
+    {
+      "start": 337.759,
+      "duration": 3.121,
+      "text": "so we have successfully created our iem"
+    },
+    {
+      "start": 339.919,
+      "duration": 2.881,
+      "text": "user"
+    },
+    {
+      "start": 340.88,
+      "duration": 4.4,
+      "text": "let's create a group"
+    },
+    {
+      "start": 342.8,
+      "duration": 5.04,
+      "text": "here in the users group as you can see"
+    },
+    {
+      "start": 345.28,
+      "duration": 4.32,
+      "text": "we already have two groups to delete a"
+    },
+    {
+      "start": 347.84,
+      "duration": 4.16,
+      "text": "group you just need to select the group"
+    },
+    {
+      "start": 349.6,
+      "duration": 4.56,
+      "text": "you want to delete and click on so now"
+    },
+    {
+      "start": 352.0,
+      "duration": 3.759,
+      "text": "we will create a group for the user we"
+    },
+    {
+      "start": 354.16,
+      "duration": 4.24,
+      "text": "have created"
+    },
+    {
+      "start": 355.759,
+      "duration": 4.961,
+      "text": "so let's click on the create group here"
+    },
+    {
+      "start": 358.4,
+      "duration": 5.28,
+      "text": "and type in the name of the group"
+    },
+    {
+      "start": 360.72,
+      "duration": 5.599,
+      "text": "so we want the group for developers"
+    },
+    {
+      "start": 363.68,
+      "duration": 5.2,
+      "text": "so we will name it as developers"
+    },
+    {
+      "start": 366.319,
+      "duration": 3.841,
+      "text": "and now you can add the developers in"
+    },
+    {
+      "start": 368.88,
+      "duration": 3.36,
+      "text": "this group"
+    },
+    {
+      "start": 370.16,
+      "duration": 5.2,
+      "text": "we the cloud champ is our developer so"
+    },
+    {
+      "start": 372.24,
+      "duration": 5.679,
+      "text": "we will click on cloud champ here"
+    },
+    {
+      "start": 375.36,
+      "duration": 4.32,
+      "text": "you can attach the policy we want this"
+    },
+    {
+      "start": 377.919,
+      "duration": 4.081,
+      "text": "developers to access"
+    },
+    {
+      "start": 379.68,
+      "duration": 3.44,
+      "text": "only ec2 service and no nothing other"
+    },
+    {
+      "start": 382.0,
+      "duration": 3.28,
+      "text": "than that"
+    },
+    {
+      "start": 383.12,
+      "duration": 3.359,
+      "text": "so let's type in the service name"
+    },
+    {
+      "start": 385.28,
+      "duration": 3.52,
+      "text": "ec2"
+    },
+    {
+      "start": 386.479,
+      "duration": 5.681,
+      "text": "so here is the first"
+    },
+    {
+      "start": 388.8,
+      "duration": 6.399,
+      "text": "amazon full access what this policy is"
+    },
+    {
+      "start": 392.16,
+      "duration": 4.8,
+      "text": "it allows everything"
+    },
+    {
+      "start": 395.199,
+      "duration": 4.081,
+      "text": "all"
+    },
+    {
+      "start": 396.96,
+      "duration": 4.0,
+      "text": "allow all action on ec2 on all the"
+    },
+    {
+      "start": 399.28,
+      "duration": 4.4,
+      "text": "resources"
+    },
+    {
+      "start": 400.96,
+      "duration": 3.519,
+      "text": "it also allows auto scaling"
+    },
+    {
+      "start": 403.68,
+      "duration": 2.799,
+      "text": "and"
+    },
+    {
+      "start": 404.479,
+      "duration": 4.0,
+      "text": "creates a whistling role everything that"
+    },
+    {
+      "start": 406.479,
+      "duration": 4.641,
+      "text": "is related to ec2"
+    },
+    {
+      "start": 408.479,
+      "duration": 3.84,
+      "text": "so let's just select that"
+    },
+    {
+      "start": 411.12,
+      "duration": 3.04,
+      "text": "policy"
+    },
+    {
+      "start": 412.319,
+      "duration": 3.761,
+      "text": "and scroll down"
+    },
+    {
+      "start": 414.16,
+      "duration": 3.92,
+      "text": "here we get the option of create group"
+    },
+    {
+      "start": 416.08,
+      "duration": 4.64,
+      "text": "let's click on this"
+    },
+    {
+      "start": 418.08,
+      "duration": 5.64,
+      "text": "so now the user developer user has been"
+    },
+    {
+      "start": 420.72,
+      "duration": 3.0,
+      "text": "created"
+    },
+    {
+      "start": 424.08,
+      "duration": 2.64,
+      "text": "so now the developer group has been"
+    },
+    {
+      "start": 425.68,
+      "duration": 5.12,
+      "text": "created"
+    },
+    {
+      "start": 426.72,
+      "duration": 6.72,
+      "text": "and we have one user that is cloud champ"
+    },
+    {
+      "start": 430.8,
+      "duration": 2.64,
+      "text": "in this group"
+    },
+    {
+      "start": 434.4,
+      "duration": 4.239,
+      "text": "so if you check cloudchamp has"
+    },
+    {
+      "start": 437.199,
+      "duration": 2.801,
+      "text": "will have"
+    },
+    {
+      "start": 438.639,
+      "duration": 4.321,
+      "text": "policies"
+    },
+    {
+      "start": 440.0,
+      "duration": 5.759,
+      "text": "from the group that is amazon ec2 full"
+    },
+    {
+      "start": 442.96,
+      "duration": 3.6,
+      "text": "access so let's login to cloudchamp copy"
+    },
+    {
+      "start": 445.759,
+      "duration": 2.72,
+      "text": "this"
+    },
+    {
+      "start": 446.56,
+      "duration": 5.28,
+      "text": "console link and paste it into the"
+    },
+    {
+      "start": 448.479,
+      "duration": 3.361,
+      "text": "incognito mode"
+    },
+    {
+      "start": 457.12,
+      "duration": 3.68,
+      "text": "so username and the pass click on sign"
+    },
+    {
+      "start": 459.36,
+      "duration": 5.2,
+      "text": "in"
+    },
+    {
+      "start": 460.8,
+      "duration": 7.76,
+      "text": "and as you can see we got the option to"
+    },
+    {
+      "start": 464.56,
+      "duration": 4.0,
+      "text": "change the password so now"
+    },
+    {
+      "start": 469.759,
+      "duration": 3.84,
+      "text": "now we are logged in into the aws"
+    },
+    {
+      "start": 471.84,
+      "duration": 3.6,
+      "text": "account with the"
+    },
+    {
+      "start": 473.599,
+      "duration": 4.16,
+      "text": "cloud champ user"
+    },
+    {
+      "start": 475.44,
+      "duration": 3.36,
+      "text": "as you can see here we have the account"
+    },
+    {
+      "start": 477.759,
+      "duration": 2.16,
+      "text": "id"
+    },
+    {
+      "start": 478.8,
+      "duration": 4.88,
+      "text": "and the"
+    },
+    {
+      "start": 479.919,
+      "duration": 5.041,
+      "text": "iem username that is cloudchamp"
+    },
+    {
+      "start": 483.68,
+      "duration": 4.0,
+      "text": "so"
+    },
+    {
+      "start": 484.96,
+      "duration": 6.4,
+      "text": "if let's go and"
+    },
+    {
+      "start": 487.68,
+      "duration": 6.56,
+      "text": "check out what we can do with this user"
+    },
+    {
+      "start": 491.36,
+      "duration": 6.239,
+      "text": "ec2"
+    },
+    {
+      "start": 494.24,
+      "duration": 4.959,
+      "text": "so we can easily see ec2 dashboard"
+    },
+    {
+      "start": 497.599,
+      "duration": 3.6,
+      "text": "in the next section we are going to"
+    },
+    {
+      "start": 499.199,
+      "duration": 3.521,
+      "text": "learn about this service"
+    },
+    {
+      "start": 501.199,
+      "duration": 4.4,
+      "text": "so we can even"
+    },
+    {
+      "start": 502.72,
+      "duration": 6.08,
+      "text": "launch we launch or"
+    },
+    {
+      "start": 505.599,
+      "duration": 5.44,
+      "text": "terminate or start instance"
+    },
+    {
+      "start": 508.8,
+      "duration": 5.2,
+      "text": "so we have full access for the ec2"
+    },
+    {
+      "start": 511.039,
+      "duration": 5.68,
+      "text": "instance let's try to see if we have the"
+    },
+    {
+      "start": 514.0,
+      "duration": 4.719,
+      "text": "access for s3 as well"
+    },
+    {
+      "start": 516.719,
+      "duration": 3.921,
+      "text": "so we are in the s3 you don't have"
+    },
+    {
+      "start": 518.719,
+      "duration": 4.081,
+      "text": "permission to list bucket definitely we"
+    },
+    {
+      "start": 520.64,
+      "duration": 4.48,
+      "text": "cannot create a bucket so here we have"
+    },
+    {
+      "start": 522.8,
+      "duration": 4.08,
+      "text": "successfully created a user which has"
+    },
+    {
+      "start": 525.12,
+      "duration": 3.279,
+      "text": "access only to"
+    },
+    {
+      "start": 526.88,
+      "duration": 3.36,
+      "text": "ec2 service"
+    },
+    {
+      "start": 528.399,
+      "duration": 2.88,
+      "text": "as created here it has only one"
+    },
+    {
+      "start": 530.24,
+      "duration": 2.32,
+      "text": "permission"
+    },
+    {
+      "start": 531.279,
+      "duration": 3.68,
+      "text": "that is"
+    },
+    {
+      "start": 532.56,
+      "duration": 4.48,
+      "text": "amazon ec2 full access"
+    },
+    {
+      "start": 534.959,
+      "duration": 4.161,
+      "text": "now we will"
+    },
+    {
+      "start": 537.04,
+      "duration": 5.28,
+      "text": "enable multi-factor authentication or"
+    },
+    {
+      "start": 539.12,
+      "duration": 5.76,
+      "text": "mfa and select the user"
+    },
+    {
+      "start": 542.32,
+      "duration": 5.8,
+      "text": "security credentials"
+    },
+    {
+      "start": 544.88,
+      "duration": 3.24,
+      "text": "this is"
+    },
+    {
+      "start": 549.36,
+      "duration": 5.039,
+      "text": "here as you can see it says smfa is not"
+    },
+    {
+      "start": 551.76,
+      "duration": 4.8,
+      "text": "assigned on this to assign mfa we need"
+    },
+    {
+      "start": 554.399,
+      "duration": 4.321,
+      "text": "to click on manage"
+    },
+    {
+      "start": 556.56,
+      "duration": 3.52,
+      "text": "you get three options to assign and"
+    },
+    {
+      "start": 558.72,
+      "duration": 5.44,
+      "text": "manage mfa"
+    },
+    {
+      "start": 560.08,
+      "duration": 6.48,
+      "text": "virtual mfa device utf security key or"
+    },
+    {
+      "start": 564.16,
+      "duration": 5.92,
+      "text": "other hardware mfa device"
+    },
+    {
+      "start": 566.56,
+      "duration": 7.2,
+      "text": "we can enable mfa on our mobile phone"
+    },
+    {
+      "start": 570.08,
+      "duration": 6.96,
+      "text": "using an authenticator app so the famous"
+    },
+    {
+      "start": 573.76,
+      "duration": 5.519,
+      "text": "authenticator that i use is the google"
+    },
+    {
+      "start": 577.04,
+      "duration": 5.28,
+      "text": "authenticator which provides you with"
+    },
+    {
+      "start": 579.279,
+      "duration": 5.68,
+      "text": "the code as mfa so you need to install"
+    },
+    {
+      "start": 582.32,
+      "duration": 4.16,
+      "text": "this app from app store or play store i"
+    },
+    {
+      "start": 584.959,
+      "duration": 6.161,
+      "text": "have already installed the app in my"
+    },
+    {
+      "start": 586.48,
+      "duration": 7.28,
+      "text": "mobile phone so i'll click on continue"
+    },
+    {
+      "start": 591.12,
+      "duration": 5.04,
+      "text": "and here you need to scan the code click"
+    },
+    {
+      "start": 593.76,
+      "duration": 4.48,
+      "text": "on show qr code and i'll scram the code"
+    },
+    {
+      "start": 596.16,
+      "duration": 4.08,
+      "text": "now"
+    },
+    {
+      "start": 598.24,
+      "duration": 4.48,
+      "text": "in the app you'll get a plus sign and"
+    },
+    {
+      "start": 600.24,
+      "duration": 4.159,
+      "text": "you need to click on scan qr code"
+    },
+    {
+      "start": 602.72,
+      "duration": 3.2,
+      "text": "the camera will pop up and you need to"
+    },
+    {
+      "start": 604.399,
+      "duration": 2.721,
+      "text": "scan the code"
+    },
+    {
+      "start": 605.92,
+      "duration": 2.4,
+      "text": "once scan"
+    },
+    {
+      "start": 607.12,
+      "duration": 3.279,
+      "text": "you'll get"
+    },
+    {
+      "start": 608.32,
+      "duration": 3.68,
+      "text": "you'll get this if you can see you will"
+    },
+    {
+      "start": 610.399,
+      "duration": 3.361,
+      "text": "get the"
+    },
+    {
+      "start": 612.0,
+      "duration": 5.36,
+      "text": "code applied"
+    },
+    {
+      "start": 613.76,
+      "duration": 3.6,
+      "text": "and you need to enter the code here"
+    },
+    {
+      "start": 617.6,
+      "duration": 4.32,
+      "text": "you need to enter the two codes the"
+    },
+    {
+      "start": 619.6,
+      "duration": 4.08,
+      "text": "first one is zero three two"
+    },
+    {
+      "start": 621.92,
+      "duration": 3.599,
+      "text": "two two three"
+    },
+    {
+      "start": 623.68,
+      "duration": 4.719,
+      "text": "and the second one we have to wait till"
+    },
+    {
+      "start": 625.519,
+      "duration": 4.56,
+      "text": "the timer goes and the second codes come"
+    },
+    {
+      "start": 628.399,
+      "duration": 2.88,
+      "text": "second code is five"
+    },
+    {
+      "start": 630.079,
+      "duration": 3.041,
+      "text": "two two"
+    },
+    {
+      "start": 631.279,
+      "duration": 5.12,
+      "text": "four six one"
+    },
+    {
+      "start": 633.12,
+      "duration": 5.36,
+      "text": "so we'll click on assign mfa"
+    },
+    {
+      "start": 636.399,
+      "duration": 4.401,
+      "text": "and as you can see we have successfully"
+    },
+    {
+      "start": 638.48,
+      "duration": 3.919,
+      "text": "assigned virtual mfa"
+    },
+    {
+      "start": 640.8,
+      "duration": 3.279,
+      "text": "let's check this out"
+    },
+    {
+      "start": 642.399,
+      "duration": 4.56,
+      "text": "log out from this and try to log in"
+    },
+    {
+      "start": 644.079,
+      "duration": 3.601,
+      "text": "again so now this will ask us"
+    },
+    {
+      "start": 646.959,
+      "duration": 3.521,
+      "text": "the"
+    },
+    {
+      "start": 647.68,
+      "duration": 4.8,
+      "text": "mfa device as well log back in"
+    },
+    {
+      "start": 650.48,
+      "duration": 4.56,
+      "text": "and now put in the username that is"
+    },
+    {
+      "start": 652.48,
+      "duration": 2.56,
+      "text": "cloudchamp"
+    },
+    {
+      "start": 655.36,
+      "duration": 4.64,
+      "text": "enter the password"
+    },
+    {
+      "start": 657.6,
+      "duration": 4.64,
+      "text": "click on sign in"
+    },
+    {
+      "start": 660.0,
+      "duration": 5.04,
+      "text": "now if you can see this is asking an mfa"
+    },
+    {
+      "start": 662.24,
+      "duration": 5.76,
+      "text": "code because we have assigned mfa to"
+    },
+    {
+      "start": 665.04,
+      "duration": 3.84,
+      "text": "enter the code the code is five zero"
+    },
+    {
+      "start": 668.0,
+      "duration": 3.279,
+      "text": "five"
+    },
+    {
+      "start": 668.88,
+      "duration": 5.28,
+      "text": "one nine"
+    },
+    {
+      "start": 671.279,
+      "duration": 4.881,
+      "text": "nine submit we have logged in"
+    },
+    {
+      "start": 674.16,
+      "duration": 5.6,
+      "text": "successfully into our"
+    },
+    {
+      "start": 676.16,
+      "duration": 6.32,
+      "text": "aws account using our iam"
+    },
+    {
+      "start": 679.76,
+      "duration": 5.84,
+      "text": "user so this is how you create an user"
+    },
+    {
+      "start": 682.48,
+      "duration": 6.0,
+      "text": "and assign mfa to the user if you face"
+    },
+    {
+      "start": 685.6,
+      "duration": 5.919,
+      "text": "any problem please post in the comment"
+    },
+    {
+      "start": 688.48,
+      "duration": 5.28,
+      "text": "section i will be there to help you out"
+    },
+    {
+      "start": 691.519,
+      "duration": 5.841,
+      "text": "so now we have already seen how to"
+    },
+    {
+      "start": 693.76,
+      "duration": 6.0,
+      "text": "create users groups attached policies"
+    },
+    {
+      "start": 697.36,
+      "duration": 4.24,
+      "text": "and how to assign an mfa"
+    },
+    {
+      "start": 699.76,
+      "duration": 3.92,
+      "text": "policies we have already talked about"
+    },
+    {
+      "start": 701.6,
+      "duration": 4.64,
+      "text": "policies in the previous section"
+    },
+    {
+      "start": 703.68,
+      "duration": 4.0,
+      "text": "detailed instruction about policy so"
+    },
+    {
+      "start": 706.24,
+      "duration": 3.279,
+      "text": "these are all the policies that are"
+    },
+    {
+      "start": 707.68,
+      "duration": 4.719,
+      "text": "provided by aws"
+    },
+    {
+      "start": 709.519,
+      "duration": 4.801,
+      "text": "and this is the policies created by me"
+    },
+    {
+      "start": 712.399,
+      "duration": 3.68,
+      "text": "that is customer managed"
+    },
+    {
+      "start": 714.32,
+      "duration": 3.6,
+      "text": "so to create a policy you need to click"
+    },
+    {
+      "start": 716.079,
+      "duration": 4.0,
+      "text": "on create policy"
+    },
+    {
+      "start": 717.92,
+      "duration": 3.68,
+      "text": "there are two ways to create policy if"
+    },
+    {
+      "start": 720.079,
+      "duration": 4.801,
+      "text": "you know json"
+    },
+    {
+      "start": 721.6,
+      "duration": 6.0,
+      "text": "you can just write the code and get the"
+    },
+    {
+      "start": 724.88,
+      "duration": 6.639,
+      "text": "policy or if you don't know json not a"
+    },
+    {
+      "start": 727.6,
+      "duration": 5.679,
+      "text": "problem aws has a visual editor that"
+    },
+    {
+      "start": 731.519,
+      "duration": 4.32,
+      "text": "lets you choose a service"
+    },
+    {
+      "start": 733.279,
+      "duration": 3.921,
+      "text": "so we want a policy for ec2 let's say we"
+    },
+    {
+      "start": 735.839,
+      "duration": 4.0,
+      "text": "just need to"
+    },
+    {
+      "start": 737.2,
+      "duration": 5.439,
+      "text": "type in ec2 here"
+    },
+    {
+      "start": 739.839,
+      "duration": 5.201,
+      "text": "now you need to select actions so we'll"
+    },
+    {
+      "start": 742.639,
+      "duration": 3.2,
+      "text": "select list and"
+    },
+    {
+      "start": 745.04,
+      "duration": 3.52,
+      "text": "write"
+    },
+    {
+      "start": 745.839,
+      "duration": 4.081,
+      "text": "so we want the users or this policy to"
+    },
+    {
+      "start": 748.56,
+      "duration": 3.519,
+      "text": "have"
+    },
+    {
+      "start": 749.92,
+      "duration": 4.88,
+      "text": "permissions which lease the instances"
+    },
+    {
+      "start": 752.079,
+      "duration": 4.241,
+      "text": "and terminate a launch instance"
+    },
+    {
+      "start": 754.8,
+      "duration": 4.839,
+      "text": "these are all the permissions provided"
+    },
+    {
+      "start": 756.32,
+      "duration": 3.319,
+      "text": "to this policy"
+    },
+    {
+      "start": 761.279,
+      "duration": 4.481,
+      "text": "now we have to select the resources we"
+    },
+    {
+      "start": 763.12,
+      "duration": 4.719,
+      "text": "can select it to all the resources"
+    },
+    {
+      "start": 765.76,
+      "duration": 4.079,
+      "text": "this is not the best practice but as we"
+    },
+    {
+      "start": 767.839,
+      "duration": 4.081,
+      "text": "we are doing a demo"
+    },
+    {
+      "start": 769.839,
+      "duration": 4.8,
+      "text": "so it's okay we are not going to add"
+    },
+    {
+      "start": 771.92,
+      "duration": 4.64,
+      "text": "request condition as it's optional and"
+    },
+    {
+      "start": 774.639,
+      "duration": 4.401,
+      "text": "beyond the topic of aws solutions"
+    },
+    {
+      "start": 776.56,
+      "duration": 4.56,
+      "text": "architect so we'll select"
+    },
+    {
+      "start": 779.04,
+      "duration": 6.52,
+      "text": "and we'll add the tag"
+    },
+    {
+      "start": 781.12,
+      "duration": 4.44,
+      "text": "easy to policy preview"
+    },
+    {
+      "start": 786.0,
+      "duration": 3.68,
+      "text": "pc to policy"
+    },
+    {
+      "start": 790.079,
+      "duration": 2.721,
+      "text": "policy"
+    },
+    {
+      "start": 793.36,
+      "duration": 3.279,
+      "text": "to list and"
+    },
+    {
+      "start": 796.88,
+      "duration": 3.519,
+      "text": "write"
+    },
+    {
+      "start": 798.24,
+      "duration": 4.64,
+      "text": "instances"
+    },
+    {
+      "start": 800.399,
+      "duration": 5.201,
+      "text": "all right we clicked on create policy"
+    },
+    {
+      "start": 802.88,
+      "duration": 4.88,
+      "text": "the policy ec2 has been created let's"
+    },
+    {
+      "start": 805.6,
+      "duration": 3.12,
+      "text": "try to attach this policy to this user"
+    },
+    {
+      "start": 807.76,
+      "duration": 2.639,
+      "text": "here"
+    },
+    {
+      "start": 808.72,
+      "duration": 4.08,
+      "text": "click on the select the user you want"
+    },
+    {
+      "start": 810.399,
+      "duration": 4.24,
+      "text": "that you want to attach and"
+    },
+    {
+      "start": 812.8,
+      "duration": 5.2,
+      "text": "as you can see this user does not have"
+    },
+    {
+      "start": 814.639,
+      "duration": 5.281,
+      "text": "the policy click on add permission"
+    },
+    {
+      "start": 818.0,
+      "duration": 4.8,
+      "text": "select the attach existing policies"
+    },
+    {
+      "start": 819.92,
+      "duration": 5.52,
+      "text": "directly type in the name"
+    },
+    {
+      "start": 822.8,
+      "duration": 5.839,
+      "text": "of the policy you have created"
+    },
+    {
+      "start": 825.44,
+      "duration": 4.8,
+      "text": "so it was easy to policy"
+    },
+    {
+      "start": 828.639,
+      "duration": 3.281,
+      "text": "this was the policy and this is the"
+    },
+    {
+      "start": 830.24,
+      "duration": 3.839,
+      "text": "policy summary"
+    },
+    {
+      "start": 831.92,
+      "duration": 4.56,
+      "text": "click on next"
+    },
+    {
+      "start": 834.079,
+      "duration": 2.401,
+      "text": "review"
+    },
+    {
+      "start": 837.12,
+      "duration": 5.6,
+      "text": "add permission"
+    },
+    {
+      "start": 839.68,
+      "duration": 7.36,
+      "text": "this policy has been successfully added"
+    },
+    {
+      "start": 842.72,
+      "duration": 7.919,
+      "text": "to the user this is how we create user"
+    },
+    {
+      "start": 847.04,
+      "duration": 3.599,
+      "text": "we have covered all the topics here"
+    },
+    {
+      "start": 850.959,
+      "duration": 4.801,
+      "text": "let's try to attach an iem rule to one"
+    },
+    {
+      "start": 853.199,
+      "duration": 5.041,
+      "text": "of the aws service"
+    },
+    {
+      "start": 855.76,
+      "duration": 5.12,
+      "text": "let's try to attach it to an ec2"
+    },
+    {
+      "start": 858.24,
+      "duration": 5.44,
+      "text": "so click on the ec2 service we are going"
+    },
+    {
+      "start": 860.88,
+      "duration": 4.8,
+      "text": "to learn about dc2 in the next videos"
+    },
+    {
+      "start": 863.68,
+      "duration": 4.399,
+      "text": "from now onwards i'll be explaining you"
+    },
+    {
+      "start": 865.68,
+      "duration": 3.519,
+      "text": "everything theory as well as the"
+    },
+    {
+      "start": 868.079,
+      "duration": 2.641,
+      "text": "hands-on"
+    },
+    {
+      "start": 869.199,
+      "duration": 2.481,
+      "text": "so"
+    },
+    {
+      "start": 870.72,
+      "duration": 2.799,
+      "text": "please"
+    },
+    {
+      "start": 871.68,
+      "duration": 4.56,
+      "text": "follow along or please subscribe to this"
+    },
+    {
+      "start": 873.519,
+      "duration": 5.361,
+      "text": "channel so you don't miss out anything"
+    },
+    {
+      "start": 876.24,
+      "duration": 4.08,
+      "text": "so let's launch an instance and try to"
+    },
+    {
+      "start": 878.88,
+      "duration": 3.12,
+      "text": "attach a rule"
+    },
+    {
+      "start": 880.32,
+      "duration": 4.16,
+      "text": "click on select"
+    },
+    {
+      "start": 882.0,
+      "duration": 4.959,
+      "text": "click on the t2 micro as it is free tier"
+    },
+    {
+      "start": 884.48,
+      "duration": 3.76,
+      "text": "eligible free tier eligible means you"
+    },
+    {
+      "start": 886.959,
+      "duration": 3.521,
+      "text": "don't need to pay"
+    },
+    {
+      "start": 888.24,
+      "duration": 4.88,
+      "text": "money to aws unless you are in the free"
+    },
+    {
+      "start": 890.48,
+      "duration": 6.0,
+      "text": "tier limits that is 750 hours"
+    },
+    {
+      "start": 893.12,
+      "duration": 5.36,
+      "text": "per month that's a lot to practice"
+    },
+    {
+      "start": 896.48,
+      "duration": 4.88,
+      "text": "next we will click on configure aws"
+    },
+    {
+      "start": 898.48,
+      "duration": 5.44,
+      "text": "instance details and as you scroll down"
+    },
+    {
+      "start": 901.36,
+      "duration": 4.56,
+      "text": "you get an option as i am role"
+    },
+    {
+      "start": 903.92,
+      "duration": 3.84,
+      "text": "where you can attach any role or you can"
+    },
+    {
+      "start": 905.92,
+      "duration": 4.08,
+      "text": "also create your new role from here as"
+    },
+    {
+      "start": 907.76,
+      "duration": 4.4,
+      "text": "well let's try to attach a role i have"
+    },
+    {
+      "start": 910.0,
+      "duration": 6.399,
+      "text": "already created this many rows"
+    },
+    {
+      "start": 912.16,
+      "duration": 7.119,
+      "text": "so now if we click on and go ahead"
+    },
+    {
+      "start": 916.399,
+      "duration": 6.24,
+      "text": "it will launch an ec2 instance"
+    },
+    {
+      "start": 919.279,
+      "duration": 4.641,
+      "text": "this ec2 has the role that is s3 full"
+    },
+    {
+      "start": 922.639,
+      "duration": 2.88,
+      "text": "access"
+    },
+    {
+      "start": 923.92,
+      "duration": 2.88,
+      "text": "so this is how you attach a role to any"
+    },
+    {
+      "start": 925.519,
+      "duration": 2.961,
+      "text": "of the service"
+    },
+    {
+      "start": 926.8,
+      "duration": 4.08,
+      "text": "i hope you got the idea so so we have"
+    },
+    {
+      "start": 928.48,
+      "duration": 4.4,
+      "text": "created all the topics noted here we"
+    },
+    {
+      "start": 930.88,
+      "duration": 3.92,
+      "text": "created a user name as cloud champ we"
+    },
+    {
+      "start": 932.88,
+      "duration": 4.72,
+      "text": "created the developers group we attached"
+    },
+    {
+      "start": 934.8,
+      "duration": 4.479,
+      "text": "the ec2 full access policy to the group"
+    },
+    {
+      "start": 937.6,
+      "duration": 3.44,
+      "text": "and it was automatically attached to"
+    },
+    {
+      "start": 939.279,
+      "duration": 4.641,
+      "text": "cloud champ user"
+    },
+    {
+      "start": 941.04,
+      "duration": 5.28,
+      "text": "then we logged into aws im account using"
+    },
+    {
+      "start": 943.92,
+      "duration": 4.719,
+      "text": "the cloud champ login details then we"
+    },
+    {
+      "start": 946.32,
+      "duration": 4.879,
+      "text": "enabled the multi-factor authentication"
+    },
+    {
+      "start": 948.639,
+      "duration": 3.841,
+      "text": "using the google authenticator app"
+    },
+    {
+      "start": 951.199,
+      "duration": 3.2,
+      "text": "and then"
+    },
+    {
+      "start": 952.48,
+      "duration": 3.68,
+      "text": "we create our own policy"
+    },
+    {
+      "start": 954.399,
+      "duration": 3.68,
+      "text": "and we launched"
+    },
+    {
+      "start": 956.16,
+      "duration": 4.56,
+      "text": "an ec2 instance with"
+    },
+    {
+      "start": 958.079,
+      "duration": 4.801,
+      "text": "s3 wordpress role"
+    },
+    {
+      "start": 960.72,
+      "duration": 3.44,
+      "text": "so we learned a whole lot of things in"
+    },
+    {
+      "start": 962.88,
+      "duration": 2.56,
+      "text": "this"
+    },
+    {
+      "start": 964.16,
+      "duration": 4.16,
+      "text": "youtube video"
+    },
+    {
+      "start": 965.44,
+      "duration": 5.44,
+      "text": "so if you found this video helpful"
+    },
+    {
+      "start": 968.32,
+      "duration": 4.639,
+      "text": "please subscribe to this channel"
+    },
+    {
+      "start": 970.88,
+      "duration": 4.56,
+      "text": "please subscribe to this channel please"
+    },
+    {
+      "start": 972.959,
+      "duration": 4.641,
+      "text": "like this video and leave a comment if"
+    },
+    {
+      "start": 975.44,
+      "duration": 3.6,
+      "text": "you face any problems if you think this"
+    },
+    {
+      "start": 977.6,
+      "duration": 3.679,
+      "text": "video was good"
+    },
+    {
+      "start": 979.04,
+      "duration": 4.96,
+      "text": "please leave a comment i'm going to post"
+    },
+    {
+      "start": 981.279,
+      "duration": 4.881,
+      "text": "a lot of videos about aws and devops so"
+    },
+    {
+      "start": 984.0,
+      "duration": 5.279,
+      "text": "if you're someone who wants to learn aws"
+    },
+    {
+      "start": 986.16,
+      "duration": 4.72,
+      "text": "or devops consider following this and"
+    },
+    {
+      "start": 989.279,
+      "duration": 5.92,
+      "text": "i'll be there to help you out in the"
+    },
+    {
+      "start": 990.88,
+      "duration": 7.759,
+      "text": "next videos we will learn about aws ec2"
+    },
+    {
+      "start": 995.199,
+      "duration": 5.361,
+      "text": "or elastic compute cloud compute service"
+    },
+    {
+      "start": 998.639,
+      "duration": 4.161,
+      "text": "i'll be explaining you everything in"
+    },
+    {
+      "start": 1000.56,
+      "duration": 6.199,
+      "text": "theory as well in hands-on see you in"
+    },
+    {
+      "start": 1002.8,
+      "duration": 3.959,
+      "text": "the next video bye"
+    }
+  ]
+}

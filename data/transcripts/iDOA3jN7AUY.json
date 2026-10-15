@@ -1,0 +1,96 @@
+{
+  "video": {
+    "id": "iDOA3jN7AUY",
+    "title": "What is Terraform? 🤔 #devops #infrastructureascode",
+    "url": "https://www.youtube.com/watch?v=iDOA3jN7AUY",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.43,
+      "duration": 5.639,
+      "text": "terraform is infrastructure as code tool"
+    },
+    {
+      "start": 3.85,
+      "duration": 5.82,
+      "text": "used to create resources on cloud"
+    },
+    {
+      "start": 6.069,
+      "duration": 5.881,
+      "text": "providers like AWS Azure gcp Oracle and"
+    },
+    {
+      "start": 9.67,
+      "duration": 4.679,
+      "text": "a long list for example if you want to"
+    },
+    {
+      "start": 11.95,
+      "duration": 3.96,
+      "text": "create an ec2 instance using terraform"
+    },
+    {
+      "start": 14.349,
+      "duration": 4.02,
+      "text": "rather than going to the Management"
+    },
+    {
+      "start": 15.91,
+      "duration": 4.56,
+      "text": "console and clicking on the service you"
+    },
+    {
+      "start": 18.369,
+      "duration": 4.441,
+      "text": "will write a code something like this to"
+    },
+    {
+      "start": 20.47,
+      "duration": 4.08,
+      "text": "create a single ec2 instance using"
+    },
+    {
+      "start": 22.81,
+      "duration": 3.84,
+      "text": "terraform it's very easy for you to"
+    },
+    {
+      "start": 24.55,
+      "duration": 3.96,
+      "text": "manage the infrastructure you can reuse"
+    },
+    {
+      "start": 26.65,
+      "duration": 4.199,
+      "text": "the code to create multiple resources"
+    },
+    {
+      "start": 28.51,
+      "duration": 4.86,
+      "text": "you can also store your code on Version"
+    },
+    {
+      "start": 30.849,
+      "duration": 4.8,
+      "text": "Control Systems like GitHub gitlab to"
+    },
+    {
+      "start": 33.37,
+      "duration": 4.02,
+      "text": "keep track of your changes if you want"
+    },
+    {
+      "start": 35.649,
+      "duration": 4.941,
+      "text": "to learn terraform check out my YouTube"
+    },
+    {
+      "start": 37.39,
+      "duration": 3.2,
+      "text": "video on tarafa"
+    }
+  ]
+}

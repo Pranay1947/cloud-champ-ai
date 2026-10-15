@@ -1,0 +1,491 @@
+{
+  "video": {
+    "id": "wrUJMqjhKZ8",
+    "title": "How to create and store secrets in AWS Secrets Manager using Python boto3 module | AWS SDK tutorial",
+    "url": "https://www.youtube.com/watch?v=wrUJMqjhKZ8",
+    "duration": 234,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.299,
+      "duration": 3.901,
+      "text": "hello and welcome back in this video I'm"
+    },
+    {
+      "start": 2.58,
+      "duration": 4.319,
+      "text": "going to show you how to store your"
+    },
+    {
+      "start": 4.2,
+      "duration": 5.819,
+      "text": "database secrets in AWS Secrets manager"
+    },
+    {
+      "start": 6.899,
+      "duration": 4.981,
+      "text": "using python 23 module so we're going to"
+    },
+    {
+      "start": 10.019,
+      "duration": 3.0,
+      "text": "use the photo 3 module because it is"
+    },
+    {
+      "start": 11.88,
+      "duration": 3.419,
+      "text": "used for"
+    },
+    {
+      "start": 13.019,
+      "duration": 4.201,
+      "text": "accessing the AWS API and we're going to"
+    },
+    {
+      "start": 15.299,
+      "duration": 3.721,
+      "text": "use this service which is the secret"
+    },
+    {
+      "start": 17.22,
+      "duration": 3.479,
+      "text": "manager here"
+    },
+    {
+      "start": 19.02,
+      "duration": 3.3,
+      "text": "so I'm going to use the secrets manager"
+    },
+    {
+      "start": 20.699,
+      "duration": 5.281,
+      "text": "and we're going to store our secret in"
+    },
+    {
+      "start": 22.32,
+      "duration": 5.699,
+      "text": "our AWS secret manager using python so"
+    },
+    {
+      "start": 25.98,
+      "duration": 3.719,
+      "text": "I'm going to go to open my vs code this"
+    },
+    {
+      "start": 28.019,
+      "duration": 5.401,
+      "text": "is my vs code for you to work with"
+    },
+    {
+      "start": 29.699,
+      "duration": 5.88,
+      "text": "python Moto 3 module you need to First"
+    },
+    {
+      "start": 33.42,
+      "duration": 3.78,
+      "text": "run the command which is AWS configure"
+    },
+    {
+      "start": 35.579,
+      "duration": 4.621,
+      "text": "and enter your"
+    },
+    {
+      "start": 37.2,
+      "duration": 5.4,
+      "text": "access key your secret access key and"
+    },
+    {
+      "start": 40.2,
+      "duration": 4.08,
+      "text": "the region name you want to deploy and"
+    },
+    {
+      "start": 42.6,
+      "duration": 3.299,
+      "text": "then the output is going to be done so"
+    },
+    {
+      "start": 44.28,
+      "duration": 3.06,
+      "text": "now I've already done this if you have"
+    },
+    {
+      "start": 45.899,
+      "duration": 3.301,
+      "text": "not entered your keys make sure you do"
+    },
+    {
+      "start": 47.34,
+      "duration": 4.32,
+      "text": "it so that your"
+    },
+    {
+      "start": 49.2,
+      "duration": 3.9,
+      "text": "your code does not show any error so I'm"
+    },
+    {
+      "start": 51.66,
+      "duration": 3.059,
+      "text": "going to import my photo stream model"
+    },
+    {
+      "start": 53.1,
+      "duration": 4.38,
+      "text": "first because that's what we need to"
+    },
+    {
+      "start": 54.719,
+      "duration": 7.941,
+      "text": "have so import Moto 3"
+    },
+    {
+      "start": 57.48,
+      "duration": 8.78,
+      "text": "and now we need to start a session so"
+    },
+    {
+      "start": 62.66,
+      "duration": 6.779,
+      "text": "client is going to be"
+    },
+    {
+      "start": 66.26,
+      "duration": 6.399,
+      "text": "border three"
+    },
+    {
+      "start": 69.439,
+      "duration": 4.36,
+      "text": "dot client and inside this I'm going to"
+    },
+    {
+      "start": 72.659,
+      "duration": 6.181,
+      "text": "pass in the service name which is"
+    },
+    {
+      "start": 73.799,
+      "duration": 7.741,
+      "text": "Secrets manager so Secrets manager"
+    },
+    {
+      "start": 78.84,
+      "duration": 5.94,
+      "text": "if I can spell that Secrets manager okay"
+    },
+    {
+      "start": 81.54,
+      "duration": 4.68,
+      "text": "and this should be inside the quotation"
+    },
+    {
+      "start": 84.78,
+      "duration": 3.979,
+      "text": "mark make sure you put it in a single"
+    },
+    {
+      "start": 86.22,
+      "duration": 2.539,
+      "text": "quotation mark"
+    },
+    {
+      "start": 90.06,
+      "duration": 5.76,
+      "text": "now that we have it transcriber response"
+    },
+    {
+      "start": 92.159,
+      "duration": 6.96,
+      "text": "body so response equals to"
+    },
+    {
+      "start": 95.82,
+      "duration": 4.86,
+      "text": "client dot create we're going to use the"
+    },
+    {
+      "start": 99.119,
+      "duration": 3.301,
+      "text": "create secret method because we are"
+    },
+    {
+      "start": 100.68,
+      "duration": 4.5,
+      "text": "creating a secret here so I'm going to"
+    },
+    {
+      "start": 102.42,
+      "duration": 4.379,
+      "text": "pass in create secret and inside this we"
+    },
+    {
+      "start": 105.18,
+      "duration": 3.6,
+      "text": "need to pass in the name of the secret"
+    },
+    {
+      "start": 106.799,
+      "duration": 5.221,
+      "text": "that you want so the name is going to be"
+    },
+    {
+      "start": 108.78,
+      "duration": 8.64,
+      "text": "let's say my database secret something"
+    },
+    {
+      "start": 112.02,
+      "duration": 7.68,
+      "text": "like that so my DB secret all right put"
+    },
+    {
+      "start": 117.42,
+      "duration": 4.44,
+      "text": "a comma and pass in the other parameter"
+    },
+    {
+      "start": 119.7,
+      "duration": 3.779,
+      "text": "which is going to be secret string where"
+    },
+    {
+      "start": 121.86,
+      "duration": 2.939,
+      "text": "you actually will be where will where"
+    },
+    {
+      "start": 123.479,
+      "duration": 6.681,
+      "text": "you will be actually storing your key"
+    },
+    {
+      "start": 124.799,
+      "duration": 5.361,
+      "text": "and value pair so secret and string"
+    },
+    {
+      "start": 130.979,
+      "duration": 5.76,
+      "text": "secret string equals to"
+    },
+    {
+      "start": 134.099,
+      "duration": 4.741,
+      "text": "and this should be in the Json format so"
+    },
+    {
+      "start": 136.739,
+      "duration": 4.681,
+      "text": "you need to put it in the curly brackets"
+    },
+    {
+      "start": 138.84,
+      "duration": 5.1,
+      "text": "I'm going to pass in the username"
+    },
+    {
+      "start": 141.42,
+      "duration": 4.44,
+      "text": "or user whatever you want"
+    },
+    {
+      "start": 143.94,
+      "duration": 3.299,
+      "text": "so this is where you actually put your"
+    },
+    {
+      "start": 145.86,
+      "duration": 2.94,
+      "text": "secret so this is the value of your"
+    },
+    {
+      "start": 147.239,
+      "duration": 4.741,
+      "text": "secret make sure you put it according to"
+    },
+    {
+      "start": 148.8,
+      "duration": 5.4,
+      "text": "yourself so I'm going to pass in admin"
+    },
+    {
+      "start": 151.98,
+      "duration": 5.339,
+      "text": "and I also need to pass the"
+    },
+    {
+      "start": 154.2,
+      "duration": 6.5,
+      "text": "password so put a comma in between and"
+    },
+    {
+      "start": 157.319,
+      "duration": 3.381,
+      "text": "key is going to be password"
+    },
+    {
+      "start": 161.819,
+      "duration": 5.28,
+      "text": "and the value is going to be let's say"
+    },
+    {
+      "start": 164.7,
+      "duration": 5.16,
+      "text": "password one two three which is not a"
+    },
+    {
+      "start": 167.099,
+      "duration": 5.941,
+      "text": "good password obviously so now I'm going"
+    },
+    {
+      "start": 169.86,
+      "duration": 5.64,
+      "text": "to close this and this is all this"
+    },
+    {
+      "start": 173.04,
+      "duration": 4.62,
+      "text": "should create a secret for us which is"
+    },
+    {
+      "start": 175.5,
+      "duration": 4.14,
+      "text": "named as mydb secret and the username"
+    },
+    {
+      "start": 177.66,
+      "duration": 4.32,
+      "text": "should be admin and the password should"
+    },
+    {
+      "start": 179.64,
+      "duration": 4.44,
+      "text": "be password one two three so let me show"
+    },
+    {
+      "start": 181.98,
+      "duration": 3.839,
+      "text": "you that I don't have any password so"
+    },
+    {
+      "start": 184.08,
+      "duration": 5.1,
+      "text": "you can see there's no"
+    },
+    {
+      "start": 185.819,
+      "duration": 4.5,
+      "text": "a secret named as my DP secret so I'm"
+    },
+    {
+      "start": 189.18,
+      "duration": 2.639,
+      "text": "going to run this command I'm going to"
+    },
+    {
+      "start": 190.319,
+      "duration": 3.681,
+      "text": "run this script and see let's see what"
+    },
+    {
+      "start": 191.819,
+      "duration": 2.181,
+      "text": "happens"
+    },
+    {
+      "start": 194.519,
+      "duration": 3.3,
+      "text": "so now the script has run and it does"
+    },
+    {
+      "start": 196.2,
+      "duration": 3.539,
+      "text": "not give us any error which means this"
+    },
+    {
+      "start": 197.819,
+      "duration": 4.801,
+      "text": "script should have run so let's go here"
+    },
+    {
+      "start": 199.739,
+      "duration": 5.101,
+      "text": "and refresh the secret manager and I see"
+    },
+    {
+      "start": 202.62,
+      "duration": 6.18,
+      "text": "my DB secret here"
+    },
+    {
+      "start": 204.84,
+      "duration": 4.679,
+      "text": "inside the retrave secret value and I"
+    },
+    {
+      "start": 208.8,
+      "duration": 3.42,
+      "text": "have"
+    },
+    {
+      "start": 209.519,
+      "duration": 5.761,
+      "text": "a username which is admin and a password"
+    },
+    {
+      "start": 212.22,
+      "duration": 3.9,
+      "text": "which is password123 so this is how you"
+    },
+    {
+      "start": 215.28,
+      "duration": 3.9,
+      "text": "create"
+    },
+    {
+      "start": 216.12,
+      "duration": 4.619,
+      "text": "Secret in secret manager using python in"
+    },
+    {
+      "start": 219.18,
+      "duration": 2.94,
+      "text": "the next video I'm going to show you how"
+    },
+    {
+      "start": 220.739,
+      "duration": 3.601,
+      "text": "you can"
+    },
+    {
+      "start": 222.12,
+      "duration": 4.08,
+      "text": "how you can list all this list all the"
+    },
+    {
+      "start": 224.34,
+      "duration": 4.56,
+      "text": "secrets present in your secret manager"
+    },
+    {
+      "start": 226.2,
+      "duration": 3.66,
+      "text": "so check out my next video to learn more"
+    },
+    {
+      "start": 228.9,
+      "duration": 5.36,
+      "text": "about"
+    },
+    {
+      "start": 229.86,
+      "duration": 4.4,
+      "text": "aw secret manager with python thank you"
+    }
+  ]
+}

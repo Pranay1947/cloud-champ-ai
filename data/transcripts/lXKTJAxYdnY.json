@@ -1,0 +1,1846 @@
+{
+  "video": {
+    "id": "lXKTJAxYdnY",
+    "title": "Important AWS services for DevOps you need to know!",
+    "url": "https://www.youtube.com/watch?v=lXKTJAxYdnY",
+    "duration": 781,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.62,
+      "duration": 5.98,
+      "text": "AWS has 200 plus different services but"
+    },
+    {
+      "start": 4.02,
+      "duration": 4.74,
+      "text": "is it necessary to learn all of them no"
+    },
+    {
+      "start": 6.6,
+      "duration": 4.8,
+      "text": "in this video I'll be sharing with you"
+    },
+    {
+      "start": 8.76,
+      "duration": 4.98,
+      "text": "the most important AWS Services you"
+    },
+    {
+      "start": 11.4,
+      "duration": 4.58,
+      "text": "should know as a devops engineer let's"
+    },
+    {
+      "start": 13.74,
+      "duration": 2.24,
+      "text": "go"
+    },
+    {
+      "start": 21.84,
+      "duration": 4.08,
+      "text": "hey everyone and Welcome to Cloud champ"
+    },
+    {
+      "start": 23.88,
+      "duration": 4.979,
+      "text": "in this video we will be discussing the"
+    },
+    {
+      "start": 25.92,
+      "duration": 4.92,
+      "text": "most essential AWS services that every"
+    },
+    {
+      "start": 28.859,
+      "duration": 3.9,
+      "text": "devops engineer should know about"
+    },
+    {
+      "start": 30.84,
+      "duration": 3.3,
+      "text": "as a devops freelancer I've been working"
+    },
+    {
+      "start": 32.759,
+      "duration": 3.541,
+      "text": "with so many different companies that"
+    },
+    {
+      "start": 34.14,
+      "duration": 3.48,
+      "text": "use AWS so I can tell you that the"
+    },
+    {
+      "start": 36.3,
+      "duration": 3.419,
+      "text": "services we'll be discussing in this"
+    },
+    {
+      "start": 37.62,
+      "duration": 4.68,
+      "text": "video are one of the most commonly used"
+    },
+    {
+      "start": 39.719,
+      "duration": 4.081,
+      "text": "and important services in devops to help"
+    },
+    {
+      "start": 42.3,
+      "duration": 3.0,
+      "text": "you better understand this topic"
+    },
+    {
+      "start": 43.8,
+      "duration": 3.48,
+      "text": "throughout the video we will be"
+    },
+    {
+      "start": 45.3,
+      "duration": 3.9,
+      "text": "exploring different Services discuss the"
+    },
+    {
+      "start": 47.28,
+      "duration": 3.06,
+      "text": "real use case and categorize them in"
+    },
+    {
+      "start": 49.2,
+      "duration": 3.6,
+      "text": "different devops fields like"
+    },
+    {
+      "start": 50.34,
+      "duration": 5.28,
+      "text": "infrastructure networking monitoring"
+    },
+    {
+      "start": 52.8,
+      "duration": 4.98,
+      "text": "security containers and more so let's"
+    },
+    {
+      "start": 55.62,
+      "duration": 3.84,
+      "text": "get started let's start with the"
+    },
+    {
+      "start": 57.78,
+      "duration": 4.98,
+      "text": "fundamental services that every company"
+    },
+    {
+      "start": 59.46,
+      "duration": 5.04,
+      "text": "uses number one is VPC so VPC or virtual"
+    },
+    {
+      "start": 62.76,
+      "duration": 3.84,
+      "text": "private cloud is a networking service in"
+    },
+    {
+      "start": 64.5,
+      "duration": 4.26,
+      "text": "AWS that lets you create your own"
+    },
+    {
+      "start": 66.6,
+      "duration": 4.32,
+      "text": "private Network in the cloud where you"
+    },
+    {
+      "start": 68.76,
+      "duration": 4.859,
+      "text": "can deploy your servers and databases in"
+    },
+    {
+      "start": 70.92,
+      "duration": 4.5,
+      "text": "secure and isolated manner as a devops"
+    },
+    {
+      "start": 73.619,
+      "duration": 3.421,
+      "text": "engineer it is important to know VPC"
+    },
+    {
+      "start": 75.42,
+      "duration": 3.6,
+      "text": "because it is usually the first thing"
+    },
+    {
+      "start": 77.04,
+      "duration": 4.02,
+      "text": "you will be creating when starting a new"
+    },
+    {
+      "start": 79.02,
+      "duration": 3.66,
+      "text": "project so as a devops engineer you"
+    },
+    {
+      "start": 81.06,
+      "duration": 4.44,
+      "text": "should have knowledge of subnets Route"
+    },
+    {
+      "start": 82.68,
+      "duration": 4.74,
+      "text": "tables internet gateway Nat Gateway and"
+    },
+    {
+      "start": 85.5,
+      "duration": 4.5,
+      "text": "how to create a VPC second fundamental"
+    },
+    {
+      "start": 87.42,
+      "duration": 4.559,
+      "text": "service is ec2 or elastic compute cloud"
+    },
+    {
+      "start": 90.0,
+      "duration": 3.96,
+      "text": "ec2 is a service that lets you create"
+    },
+    {
+      "start": 91.979,
+      "duration": 3.421,
+      "text": "virtual servers in the cloud you can"
+    },
+    {
+      "start": 93.96,
+      "duration": 3.54,
+      "text": "create servers of different operating"
+    },
+    {
+      "start": 95.4,
+      "duration": 4.259,
+      "text": "systems and different sizes having CPU"
+    },
+    {
+      "start": 97.5,
+      "duration": 5.28,
+      "text": "and RAM when you launch a server you can"
+    },
+    {
+      "start": 99.659,
+      "duration": 5.041,
+      "text": "Define network settings storage Edge and"
+    },
+    {
+      "start": 102.78,
+      "duration": 3.839,
+      "text": "more so a devops engineer should know"
+    },
+    {
+      "start": 104.7,
+      "duration": 4.2,
+      "text": "how to create a server because usually"
+    },
+    {
+      "start": 106.619,
+      "duration": 4.081,
+      "text": "when you work as a devops engineer you"
+    },
+    {
+      "start": 108.9,
+      "duration": 3.78,
+      "text": "will be asked to set up a server for"
+    },
+    {
+      "start": 110.7,
+      "duration": 4.379,
+      "text": "setting up database web applications"
+    },
+    {
+      "start": 112.68,
+      "duration": 3.479,
+      "text": "patch processing and more so a type of"
+    },
+    {
+      "start": 115.079,
+      "duration": 3.18,
+      "text": "Engineers should know how to launch"
+    },
+    {
+      "start": 116.159,
+      "duration": 4.081,
+      "text": "server and different features of ec2"
+    },
+    {
+      "start": 118.259,
+      "duration": 4.021,
+      "text": "like load balancing Auto scaling Group"
+    },
+    {
+      "start": 120.24,
+      "duration": 4.62,
+      "text": "Security groups key Pairs and more"
+    },
+    {
+      "start": 122.28,
+      "duration": 4.26,
+      "text": "number three is S3 or simple storage"
+    },
+    {
+      "start": 124.86,
+      "duration": 4.319,
+      "text": "service that can be used to store"
+    },
+    {
+      "start": 126.54,
+      "duration": 5.16,
+      "text": "unlimited amount of data S3 is generally"
+    },
+    {
+      "start": 129.179,
+      "duration": 4.441,
+      "text": "used to store images files videos or any"
+    },
+    {
+      "start": 131.7,
+      "duration": 4.5,
+      "text": "kind of data and the devops engineer"
+    },
+    {
+      "start": 133.62,
+      "duration": 4.74,
+      "text": "should know how to use S3 because a"
+    },
+    {
+      "start": 136.2,
+      "duration": 4.32,
+      "text": "company can be using S3 bucket to store"
+    },
+    {
+      "start": 138.36,
+      "duration": 4.019,
+      "text": "their customer data log files or"
+    },
+    {
+      "start": 140.52,
+      "duration": 5.46,
+      "text": "database backups so you should have"
+    },
+    {
+      "start": 142.379,
+      "duration": 5.401,
+      "text": "knowledge of S3 next is Amazon RDS or"
+    },
+    {
+      "start": 145.98,
+      "duration": 3.18,
+      "text": "relational database service which is a"
+    },
+    {
+      "start": 147.78,
+      "duration": 3.959,
+      "text": "managed service that lets you create"
+    },
+    {
+      "start": 149.16,
+      "duration": 5.1,
+      "text": "setup and operate databases in the cloud"
+    },
+    {
+      "start": 151.739,
+      "duration": 5.101,
+      "text": "RDS supports six popular database"
+    },
+    {
+      "start": 154.26,
+      "duration": 6.059,
+      "text": "engines which are Amazon Aurora mariadb"
+    },
+    {
+      "start": 156.84,
+      "duration": 4.8,
+      "text": "MySQL Microsoft SQL and more due to its"
+    },
+    {
+      "start": 160.319,
+      "duration": 3.481,
+      "text": "different features many companies are"
+    },
+    {
+      "start": 161.64,
+      "duration": 3.959,
+      "text": "using RDS as their production database"
+    },
+    {
+      "start": 163.8,
+      "duration": 4.019,
+      "text": "and that is why every devops engineer"
+    },
+    {
+      "start": 165.599,
+      "duration": 4.681,
+      "text": "should know RDS next important service"
+    },
+    {
+      "start": 167.819,
+      "duration": 4.5,
+      "text": "is IM or identity and access management"
+    },
+    {
+      "start": 170.28,
+      "duration": 4.319,
+      "text": "which allows you to manage access to"
+    },
+    {
+      "start": 172.319,
+      "duration": 4.56,
+      "text": "your AWS resources using IM you can"
+    },
+    {
+      "start": 174.599,
+      "duration": 4.261,
+      "text": "create and manage users groups and roles"
+    },
+    {
+      "start": 176.879,
+      "duration": 4.321,
+      "text": "to control who can access specific"
+    },
+    {
+      "start": 178.86,
+      "duration": 4.32,
+      "text": "resources and actions as a devops"
+    },
+    {
+      "start": 181.2,
+      "duration": 4.02,
+      "text": "engineer it is essential to know IEM"
+    },
+    {
+      "start": 183.18,
+      "duration": 4.26,
+      "text": "because you need to ensure that only"
+    },
+    {
+      "start": 185.22,
+      "duration": 4.86,
+      "text": "authorized users can have access to your"
+    },
+    {
+      "start": 187.44,
+      "duration": 5.579,
+      "text": "critical resources like ec2 instances S3"
+    },
+    {
+      "start": 190.08,
+      "duration": 5.4,
+      "text": "buckets or RDS databases now let's look"
+    },
+    {
+      "start": 193.019,
+      "duration": 4.86,
+      "text": "at some CI CD services that AWS provides"
+    },
+    {
+      "start": 195.48,
+      "duration": 4.5,
+      "text": "us so CI CD is an important process in"
+    },
+    {
+      "start": 197.879,
+      "duration": 4.5,
+      "text": "devops that automates building testing"
+    },
+    {
+      "start": 199.98,
+      "duration": 4.86,
+      "text": "and deploying of the code AWS provides"
+    },
+    {
+      "start": 202.379,
+      "duration": 4.921,
+      "text": "you with different Cit Services number"
+    },
+    {
+      "start": 204.84,
+      "duration": 3.78,
+      "text": "one is code commit so code commit is a"
+    },
+    {
+      "start": 207.3,
+      "duration": 3.359,
+      "text": "fully managed Source control service"
+    },
+    {
+      "start": 208.62,
+      "duration": 3.72,
+      "text": "similar to GitHub or gitlab where you"
+    },
+    {
+      "start": 210.659,
+      "duration": 2.881,
+      "text": "can store your application code as a"
+    },
+    {
+      "start": 212.34,
+      "duration": 3.479,
+      "text": "devops engineer you should know code"
+    },
+    {
+      "start": 213.54,
+      "duration": 4.619,
+      "text": "commit to store your code track changes"
+    },
+    {
+      "start": 215.819,
+      "duration": 4.261,
+      "text": "and to collaborate with other Developers"
+    },
+    {
+      "start": 218.159,
+      "duration": 4.021,
+      "text": "number two is code building so code"
+    },
+    {
+      "start": 220.08,
+      "duration": 4.2,
+      "text": "build is a fully managed build service"
+    },
+    {
+      "start": 222.18,
+      "duration": 3.779,
+      "text": "that compiles the source code runs the"
+    },
+    {
+      "start": 224.28,
+      "duration": 3.539,
+      "text": "test and produces a software package"
+    },
+    {
+      "start": 225.959,
+      "duration": 3.121,
+      "text": "that is ready to deploy as a devops"
+    },
+    {
+      "start": 227.819,
+      "duration": 3.601,
+      "text": "engineer you should know code build"
+    },
+    {
+      "start": 229.08,
+      "duration": 4.26,
+      "text": "because it allows you to quickly and"
+    },
+    {
+      "start": 231.42,
+      "duration": 4.679,
+      "text": "easily build and test code changes"
+    },
+    {
+      "start": 233.34,
+      "duration": 4.619,
+      "text": "enabling for more faster and frequent"
+    },
+    {
+      "start": 236.099,
+      "duration": 3.78,
+      "text": "software releases"
+    },
+    {
+      "start": 237.959,
+      "duration": 3.301,
+      "text": "number three is code deploy which is a"
+    },
+    {
+      "start": 239.879,
+      "duration": 3.36,
+      "text": "deployment service that automates"
+    },
+    {
+      "start": 241.26,
+      "duration": 5.22,
+      "text": "software deployments on various compute"
+    },
+    {
+      "start": 243.239,
+      "duration": 4.621,
+      "text": "servers such as ec2 Lambda or fargate a"
+    },
+    {
+      "start": 246.48,
+      "duration": 3.119,
+      "text": "devops engineer will be using this"
+    },
+    {
+      "start": 247.86,
+      "duration": 4.32,
+      "text": "service to deploy web applications and"
+    },
+    {
+      "start": 249.599,
+      "duration": 4.381,
+      "text": "microservices adoption should no code"
+    },
+    {
+      "start": 252.18,
+      "duration": 4.019,
+      "text": "deploy because it enables you to"
+    },
+    {
+      "start": 253.98,
+      "duration": 4.259,
+      "text": "automate deployments reduce downtime and"
+    },
+    {
+      "start": 256.199,
+      "duration": 4.561,
+      "text": "ensure consistency in the deployment"
+    },
+    {
+      "start": 258.239,
+      "duration": 5.341,
+      "text": "process next important CI CD service in"
+    },
+    {
+      "start": 260.76,
+      "duration": 4.74,
+      "text": "AWS is code pipeline so code python is a"
+    },
+    {
+      "start": 263.58,
+      "duration": 3.6,
+      "text": "continuous delivery service that helps"
+    },
+    {
+      "start": 265.5,
+      "duration": 3.72,
+      "text": "you automate your release pipelines for"
+    },
+    {
+      "start": 267.18,
+      "duration": 4.26,
+      "text": "more faster and reliable application"
+    },
+    {
+      "start": 269.22,
+      "duration": 4.08,
+      "text": "updates code pipeline can be integrated"
+    },
+    {
+      "start": 271.44,
+      "duration": 4.5,
+      "text": "with different cicd tools like GitHub"
+    },
+    {
+      "start": 273.3,
+      "duration": 5.04,
+      "text": "Jenkins and other AWS services like code"
+    },
+    {
+      "start": 275.94,
+      "duration": 3.6,
+      "text": "deploy and code billing a devops"
+    },
+    {
+      "start": 278.34,
+      "duration": 3.12,
+      "text": "engineer should have knowledge of code"
+    },
+    {
+      "start": 279.54,
+      "duration": 3.96,
+      "text": "pipeline for to automate the deployment"
+    },
+    {
+      "start": 281.46,
+      "duration": 4.32,
+      "text": "process resulting in more faster and"
+    },
+    {
+      "start": 283.5,
+      "duration": 4.62,
+      "text": "reliable releases after cicd let's look"
+    },
+    {
+      "start": 285.78,
+      "duration": 4.32,
+      "text": "at some networking services in AWS the"
+    },
+    {
+      "start": 288.12,
+      "duration": 4.26,
+      "text": "two important networking services that a"
+    },
+    {
+      "start": 290.1,
+      "duration": 4.26,
+      "text": "devops engineer should know are VPC and"
+    },
+    {
+      "start": 292.38,
+      "duration": 5.039,
+      "text": "Route 53. we have already talked about"
+    },
+    {
+      "start": 294.36,
+      "duration": 5.279,
+      "text": "PPC so let's look at Route 53. Route 53"
+    },
+    {
+      "start": 297.419,
+      "duration": 3.601,
+      "text": "is a DNS service in AWS that lets you"
+    },
+    {
+      "start": 299.639,
+      "duration": 3.481,
+      "text": "register domain names for your"
+    },
+    {
+      "start": 301.02,
+      "duration": 4.08,
+      "text": "applications or websites and you can"
+    },
+    {
+      "start": 303.12,
+      "duration": 3.66,
+      "text": "also create and configure DNS records"
+    },
+    {
+      "start": 305.1,
+      "duration": 4.44,
+      "text": "that can Route traffic to your AWS"
+    },
+    {
+      "start": 306.78,
+      "duration": 4.859,
+      "text": "services such as ec2 load balancers S3"
+    },
+    {
+      "start": 309.54,
+      "duration": 4.14,
+      "text": "buckets and more a devops Engineers"
+    },
+    {
+      "start": 311.639,
+      "duration": 4.321,
+      "text": "should know how to use Route 53 to"
+    },
+    {
+      "start": 313.68,
+      "duration": 4.86,
+      "text": "register domain names create DNS records"
+    },
+    {
+      "start": 315.96,
+      "duration": 3.959,
+      "text": "set up health checks and also failover"
+    },
+    {
+      "start": 318.54,
+      "duration": 3.3,
+      "text": "routing policies"
+    },
+    {
+      "start": 319.919,
+      "duration": 4.261,
+      "text": "after networking Services let's look at"
+    },
+    {
+      "start": 321.84,
+      "duration": 4.079,
+      "text": "some database services in AWS for devops"
+    },
+    {
+      "start": 324.18,
+      "duration": 4.5,
+      "text": "engineers the three main database"
+    },
+    {
+      "start": 325.919,
+      "duration": 5.041,
+      "text": "services are RDS dynamodb and elastic"
+    },
+    {
+      "start": 328.68,
+      "duration": 4.92,
+      "text": "cache we have already seen RDS in the"
+    },
+    {
+      "start": 330.96,
+      "duration": 5.28,
+      "text": "essential services so using RDS you can"
+    },
+    {
+      "start": 333.6,
+      "duration": 5.64,
+      "text": "create SQL databases like mariadb MySQL"
+    },
+    {
+      "start": 336.24,
+      "duration": 5.28,
+      "text": "Porsche SQL Oracle and more now let's"
+    },
+    {
+      "start": 339.24,
+      "duration": 4.44,
+      "text": "look at dynamodb dynamodb is a very"
+    },
+    {
+      "start": 341.52,
+      "duration": 4.08,
+      "text": "popular nosql database that is very fast"
+    },
+    {
+      "start": 343.68,
+      "duration": 4.019,
+      "text": "and highly scalable a lot of"
+    },
+    {
+      "start": 345.6,
+      "duration": 4.14,
+      "text": "applications use dynamodb so every"
+    },
+    {
+      "start": 347.699,
+      "duration": 4.201,
+      "text": "devops engineer should know how to work"
+    },
+    {
+      "start": 349.74,
+      "duration": 3.959,
+      "text": "with dynamodb elastic cache is an"
+    },
+    {
+      "start": 351.9,
+      "duration": 3.9,
+      "text": "in-memory database that is used to store"
+    },
+    {
+      "start": 353.699,
+      "duration": 4.321,
+      "text": "frequently Access Data session data and"
+    },
+    {
+      "start": 355.8,
+      "duration": 4.32,
+      "text": "metadata for example an e-commerce"
+    },
+    {
+      "start": 358.02,
+      "duration": 3.84,
+      "text": "websites can be using elastic cache so"
+    },
+    {
+      "start": 360.12,
+      "duration": 4.74,
+      "text": "store frequently accessed data of"
+    },
+    {
+      "start": 361.86,
+      "duration": 5.1,
+      "text": "product or customer information reducing"
+    },
+    {
+      "start": 364.86,
+      "duration": 3.839,
+      "text": "the number of calls on database and thus"
+    },
+    {
+      "start": 366.96,
+      "duration": 3.66,
+      "text": "improving the performance of the"
+    },
+    {
+      "start": 368.699,
+      "duration": 3.541,
+      "text": "application so a devops engineer should"
+    },
+    {
+      "start": 370.62,
+      "duration": 2.94,
+      "text": "know elastic cache so improve"
+    },
+    {
+      "start": 372.24,
+      "duration": 3.66,
+      "text": "application performance and to reduce"
+    },
+    {
+      "start": 373.56,
+      "duration": 4.079,
+      "text": "database load after database let's look"
+    },
+    {
+      "start": 375.9,
+      "duration": 4.26,
+      "text": "at some infrastructure as code service"
+    },
+    {
+      "start": 377.639,
+      "duration": 4.62,
+      "text": "in AWS so in AWS you have a service"
+    },
+    {
+      "start": 380.16,
+      "duration": 4.14,
+      "text": "named as cloud formation which is"
+    },
+    {
+      "start": 382.259,
+      "duration": 4.261,
+      "text": "infrastructure as code that lets you"
+    },
+    {
+      "start": 384.3,
+      "duration": 5.76,
+      "text": "manage and provision AWS resources such"
+    },
+    {
+      "start": 386.52,
+      "duration": 5.64,
+      "text": "as ec2 S3 Lambda RDS anything in the"
+    },
+    {
+      "start": 390.06,
+      "duration": 3.9,
+      "text": "form of code not only this cloud"
+    },
+    {
+      "start": 392.16,
+      "duration": 3.479,
+      "text": "formation also supports third-party"
+    },
+    {
+      "start": 393.96,
+      "duration": 3.6,
+      "text": "infrastructure as code tools such as"
+    },
+    {
+      "start": 395.639,
+      "duration": 2.701,
+      "text": "terraform so what devops Engineers"
+    },
+    {
+      "start": 397.56,
+      "duration": 2.1,
+      "text": "should know how to work with"
+    },
+    {
+      "start": 398.34,
+      "duration": 3.78,
+      "text": "cloudformation how to create"
+    },
+    {
+      "start": 399.66,
+      "duration": 5.039,
+      "text": "cloudformation stack templates to"
+    },
+    {
+      "start": 402.12,
+      "duration": 5.16,
+      "text": "provision and manage AWS services in the"
+    },
+    {
+      "start": 404.699,
+      "duration": 5.041,
+      "text": "form of code now let's look at container"
+    },
+    {
+      "start": 407.28,
+      "duration": 4.32,
+      "text": "services in AWS due to rise of Docker"
+    },
+    {
+      "start": 409.74,
+      "duration": 4.2,
+      "text": "and kubernetes every application is"
+    },
+    {
+      "start": 411.6,
+      "duration": 4.08,
+      "text": "deployed in the form of containers and"
+    },
+    {
+      "start": 413.94,
+      "duration": 5.52,
+      "text": "AWS offers you with different container"
+    },
+    {
+      "start": 415.68,
+      "duration": 5.4,
+      "text": "services such as ECR ECS eks and more so"
+    },
+    {
+      "start": 419.46,
+      "duration": 4.019,
+      "text": "let's discuss all this container"
+    },
+    {
+      "start": 421.08,
+      "duration": 5.1,
+      "text": "services in this section number one is"
+    },
+    {
+      "start": 423.479,
+      "duration": 4.381,
+      "text": "ECR or elastic container registry which"
+    },
+    {
+      "start": 426.18,
+      "duration": 4.62,
+      "text": "lets you store manage and deploy your"
+    },
+    {
+      "start": 427.86,
+      "duration": 4.8,
+      "text": "Docker container images in ECR a devops"
+    },
+    {
+      "start": 430.8,
+      "duration": 3.899,
+      "text": "engineer should know how to use ECR to"
+    },
+    {
+      "start": 432.66,
+      "duration": 4.14,
+      "text": "deploy the docker conditional images in"
+    },
+    {
+      "start": 434.699,
+      "duration": 4.44,
+      "text": "private and public registry and to use"
+    },
+    {
+      "start": 436.8,
+      "duration": 5.76,
+      "text": "them with other AWS services such as ECS"
+    },
+    {
+      "start": 439.139,
+      "duration": 5.821,
+      "text": "in eks uh ECR is similar to Docker Hub"
+    },
+    {
+      "start": 442.56,
+      "duration": 4.919,
+      "text": "but it's a service in AWS number two is"
+    },
+    {
+      "start": 444.96,
+      "duration": 3.84,
+      "text": "ECS or Amazon elastic container service"
+    },
+    {
+      "start": 447.479,
+      "duration": 2.94,
+      "text": "which is a container orchestration"
+    },
+    {
+      "start": 448.8,
+      "duration": 3.06,
+      "text": "service that lets you run skill and"
+    },
+    {
+      "start": 450.419,
+      "duration": 3.06,
+      "text": "manage your Docker containers on the"
+    },
+    {
+      "start": 451.86,
+      "duration": 3.779,
+      "text": "cloud first you will be pushing your"
+    },
+    {
+      "start": 453.479,
+      "duration": 4.021,
+      "text": "application image on ECR and then using"
+    },
+    {
+      "start": 455.639,
+      "duration": 3.96,
+      "text": "ECS to deploy them in the form of"
+    },
+    {
+      "start": 457.5,
+      "duration": 3.9,
+      "text": "container ECS supports two different"
+    },
+    {
+      "start": 459.599,
+      "duration": 3.72,
+      "text": "launch type easy to launch type and"
+    },
+    {
+      "start": 461.4,
+      "duration": 3.18,
+      "text": "Target launch type using ACP launch type"
+    },
+    {
+      "start": 463.319,
+      "duration": 4.32,
+      "text": "you will deploy your Docker containers"
+    },
+    {
+      "start": 464.58,
+      "duration": 4.44,
+      "text": "on ec2 servers whereas using fargate you"
+    },
+    {
+      "start": 467.639,
+      "duration": 3.541,
+      "text": "will deploy your Docker containers in"
+    },
+    {
+      "start": 469.02,
+      "duration": 3.959,
+      "text": "serverless fashion as a devops engineer"
+    },
+    {
+      "start": 471.18,
+      "duration": 3.18,
+      "text": "you should know ECS to deploy your"
+    },
+    {
+      "start": 472.979,
+      "duration": 4.201,
+      "text": "application ensuring High availability"
+    },
+    {
+      "start": 474.36,
+      "duration": 3.959,
+      "text": "and reliability next is Amazon eks so if"
+    },
+    {
+      "start": 477.18,
+      "duration": 2.82,
+      "text": "a company wants to deploy their"
+    },
+    {
+      "start": 478.319,
+      "duration": 3.901,
+      "text": "containerized application on kubernetes"
+    },
+    {
+      "start": 480.0,
+      "duration": 4.139,
+      "text": "cluster without managing any kubernetes"
+    },
+    {
+      "start": 482.22,
+      "duration": 4.319,
+      "text": "architecture then they can use Amazon"
+    },
+    {
+      "start": 484.139,
+      "duration": 4.201,
+      "text": "eks so Amazon eks stands for elastic"
+    },
+    {
+      "start": 486.539,
+      "duration": 3.541,
+      "text": "kubernetes service that lets you manage"
+    },
+    {
+      "start": 488.34,
+      "duration": 3.18,
+      "text": "and deploy applications on kubernetes"
+    },
+    {
+      "start": 490.08,
+      "duration": 3.959,
+      "text": "cluster which is going to be managed"
+    },
+    {
+      "start": 491.52,
+      "duration": 4.019,
+      "text": "totally by AWS so a device Engineers"
+    },
+    {
+      "start": 494.039,
+      "duration": 3.121,
+      "text": "should know how to create clusters how"
+    },
+    {
+      "start": 495.539,
+      "duration": 3.0,
+      "text": "to create node groups how to deploy"
+    },
+    {
+      "start": 497.16,
+      "duration": 3.78,
+      "text": "their applications on these kubernetes"
+    },
+    {
+      "start": 498.539,
+      "duration": 4.921,
+      "text": "cluster because every company is using"
+    },
+    {
+      "start": 500.94,
+      "duration": 4.68,
+      "text": "kubernetes and you should know this next"
+    },
+    {
+      "start": 503.46,
+      "duration": 3.9,
+      "text": "let's look at monitoring services in AWS"
+    },
+    {
+      "start": 505.62,
+      "duration": 3.84,
+      "text": "so monitoring is very important aspects"
+    },
+    {
+      "start": 507.36,
+      "duration": 4.14,
+      "text": "of devops to check the status and health"
+    },
+    {
+      "start": 509.46,
+      "duration": 3.84,
+      "text": "of your application AWS provides with"
+    },
+    {
+      "start": 511.5,
+      "duration": 3.479,
+      "text": "different monitoring Services let's look"
+    },
+    {
+      "start": 513.3,
+      "duration": 3.72,
+      "text": "at two important monitoring service that"
+    },
+    {
+      "start": 514.979,
+      "duration": 4.5,
+      "text": "you should know as devops so number one"
+    },
+    {
+      "start": 517.02,
+      "duration": 4.319,
+      "text": "is cloud watch Amazon cloudwatch is a"
+    },
+    {
+      "start": 519.479,
+      "duration": 4.86,
+      "text": "monitoring service in AWS that lets you"
+    },
+    {
+      "start": 521.339,
+      "duration": 5.221,
+      "text": "collect and track metrics log files and"
+    },
+    {
+      "start": 524.339,
+      "duration": 4.261,
+      "text": "set alarms so if you have an application"
+    },
+    {
+      "start": 526.56,
+      "duration": 4.02,
+      "text": "which is showing you high CPU usage and"
+    },
+    {
+      "start": 528.6,
+      "duration": 3.6,
+      "text": "going down you can use cloud watch for"
+    },
+    {
+      "start": 530.58,
+      "duration": 3.24,
+      "text": "that with cloudwatch you can collect"
+    },
+    {
+      "start": 532.2,
+      "duration": 4.8,
+      "text": "metrics like CPU usage memory"
+    },
+    {
+      "start": 533.82,
+      "duration": 4.8,
+      "text": "utilization Network traffic disk IO and"
+    },
+    {
+      "start": 537.0,
+      "duration": 4.32,
+      "text": "create alarms to alert when certain"
+    },
+    {
+      "start": 538.62,
+      "duration": 4.26,
+      "text": "thresholds are met so cloudwatch is a"
+    },
+    {
+      "start": 541.32,
+      "duration": 4.92,
+      "text": "good tool to collect real-time"
+    },
+    {
+      "start": 542.88,
+      "duration": 5.76,
+      "text": "monitoring of ec2 servers eks S3 or any"
+    },
+    {
+      "start": 546.24,
+      "duration": 3.9,
+      "text": "AWS service a devops engineer should"
+    },
+    {
+      "start": 548.64,
+      "duration": 4.02,
+      "text": "know how to use cloudwatch to set up"
+    },
+    {
+      "start": 550.14,
+      "duration": 4.44,
+      "text": "alarms track metrics and to troubleshoot"
+    },
+    {
+      "start": 552.66,
+      "duration": 3.9,
+      "text": "error whenever there's an issue number"
+    },
+    {
+      "start": 554.58,
+      "duration": 3.96,
+      "text": "two is cloudtrail imagine you're working"
+    },
+    {
+      "start": 556.56,
+      "duration": 3.48,
+      "text": "at a company and someone deletes a"
+    },
+    {
+      "start": 558.54,
+      "duration": 4.14,
+      "text": "production database how would you know"
+    },
+    {
+      "start": 560.04,
+      "duration": 4.919,
+      "text": "who has deleted it you can do it using"
+    },
+    {
+      "start": 562.68,
+      "duration": 4.2,
+      "text": "cloudtrail so cloudtrail is an AWS"
+    },
+    {
+      "start": 564.959,
+      "duration": 4.201,
+      "text": "service that will lock all the API calls"
+    },
+    {
+      "start": 566.88,
+      "duration": 4.5,
+      "text": "made in that account using cloudtrail"
+    },
+    {
+      "start": 569.16,
+      "duration": 4.619,
+      "text": "you can audit and monitor your AWS"
+    },
+    {
+      "start": 571.38,
+      "duration": 4.8,
+      "text": "resources and detect security incidents"
+    },
+    {
+      "start": 573.779,
+      "duration": 4.521,
+      "text": "the cloud trail can be used to monitor"
+    },
+    {
+      "start": 576.18,
+      "duration": 5.339,
+      "text": "any kind of logs like creating instances"
+    },
+    {
+      "start": 578.3,
+      "duration": 5.5,
+      "text": "deleting S3 buckets changing Security"
+    },
+    {
+      "start": 581.519,
+      "duration": 3.301,
+      "text": "Group rule or anything so a devops"
+    },
+    {
+      "start": 583.8,
+      "duration": 2.64,
+      "text": "engineer should know how to use"
+    },
+    {
+      "start": 584.82,
+      "duration": 3.66,
+      "text": "cloudtrail because it can help them"
+    },
+    {
+      "start": 586.44,
+      "duration": 4.14,
+      "text": "track and troubleshoot issues or any"
+    },
+    {
+      "start": 588.48,
+      "duration": 4.38,
+      "text": "security breaches now let's look at"
+    },
+    {
+      "start": 590.58,
+      "duration": 3.96,
+      "text": "Automation Services provided by AWS so"
+    },
+    {
+      "start": 592.86,
+      "duration": 2.88,
+      "text": "automation is very important part and"
+    },
+    {
+      "start": 594.54,
+      "duration": 3.54,
+      "text": "every devops engineer is going to"
+    },
+    {
+      "start": 595.74,
+      "duration": 3.599,
+      "text": "automate all the repetitive tasks AWS"
+    },
+    {
+      "start": 598.08,
+      "duration": 4.56,
+      "text": "provides you with different Automation"
+    },
+    {
+      "start": 599.339,
+      "duration": 5.041,
+      "text": "Services number one is Lambda Lambda is"
+    },
+    {
+      "start": 602.64,
+      "duration": 3.48,
+      "text": "a very popular serverless compute"
+    },
+    {
+      "start": 604.38,
+      "duration": 4.44,
+      "text": "service which lets you run code without"
+    },
+    {
+      "start": 606.12,
+      "duration": 5.1,
+      "text": "managing any service you can use Lambda"
+    },
+    {
+      "start": 608.82,
+      "duration": 3.48,
+      "text": "to automate different workloads right so"
+    },
+    {
+      "start": 611.22,
+      "duration": 3.119,
+      "text": "you can write the automation code and"
+    },
+    {
+      "start": 612.3,
+      "duration": 3.659,
+      "text": "put it on Lambda and you can trigger it"
+    },
+    {
+      "start": 614.339,
+      "duration": 3.541,
+      "text": "on the basis of different events like"
+    },
+    {
+      "start": 615.959,
+      "duration": 4.021,
+      "text": "adding something on S3 packet or"
+    },
+    {
+      "start": 617.88,
+      "duration": 4.2,
+      "text": "creating an ec2 instance and more a data"
+    },
+    {
+      "start": 619.98,
+      "duration": 3.9,
+      "text": "Engineers should know how to use Lambda"
+    },
+    {
+      "start": 622.08,
+      "duration": 3.78,
+      "text": "to automate different workflows without"
+    },
+    {
+      "start": 623.88,
+      "duration": 4.019,
+      "text": "managing any underlying infrastructure"
+    },
+    {
+      "start": 625.86,
+      "duration": 4.26,
+      "text": "which can reduce the complexity of these"
+    },
+    {
+      "start": 627.899,
+      "duration": 4.38,
+      "text": "automation workflows so you should know"
+    },
+    {
+      "start": 630.12,
+      "duration": 4.08,
+      "text": "Lambda second important automation"
+    },
+    {
+      "start": 632.279,
+      "duration": 3.12,
+      "text": "service is systems manager with System"
+    },
+    {
+      "start": 634.2,
+      "duration": 3.66,
+      "text": "Manager you can order to make"
+    },
+    {
+      "start": 635.399,
+      "duration": 3.961,
+      "text": "operational tasks like patching software"
+    },
+    {
+      "start": 637.86,
+      "duration": 3.9,
+      "text": "deployment or configuration management"
+    },
+    {
+      "start": 639.36,
+      "duration": 5.82,
+      "text": "while collecting the data for future"
+    },
+    {
+      "start": 641.76,
+      "duration": 4.68,
+      "text": "analysis and security practices so a day"
+    },
+    {
+      "start": 645.18,
+      "duration": 3.96,
+      "text": "of Engineers should know how to use"
+    },
+    {
+      "start": 646.44,
+      "duration": 4.92,
+      "text": "systems manager to manage infrastructure"
+    },
+    {
+      "start": 649.14,
+      "duration": 4.56,
+      "text": "at scale and to gain insights on system"
+    },
+    {
+      "start": 651.36,
+      "duration": 4.14,
+      "text": "performance and security next AWS"
+    },
+    {
+      "start": 653.7,
+      "duration": 3.96,
+      "text": "service in automation is elastic"
+    },
+    {
+      "start": 655.5,
+      "duration": 3.72,
+      "text": "Beanstalk so elastic bean stock is a"
+    },
+    {
+      "start": 657.66,
+      "duration": 3.54,
+      "text": "fully managed service to automate your"
+    },
+    {
+      "start": 659.22,
+      "duration": 4.02,
+      "text": "deployment of applications if you push"
+    },
+    {
+      "start": 661.2,
+      "duration": 3.3,
+      "text": "your code on elastic Beanstalk it will"
+    },
+    {
+      "start": 663.24,
+      "duration": 3.539,
+      "text": "automatically handle the deployment"
+    },
+    {
+      "start": 664.5,
+      "duration": 4.62,
+      "text": "provisioning of servers load balancing"
+    },
+    {
+      "start": 666.779,
+      "duration": 4.56,
+      "text": "Auto scaling and more letting you focus"
+    },
+    {
+      "start": 669.12,
+      "duration": 3.659,
+      "text": "only on the code a day off Engineers"
+    },
+    {
+      "start": 671.339,
+      "duration": 3.18,
+      "text": "should know how to use elastic bean"
+    },
+    {
+      "start": 672.779,
+      "duration": 3.961,
+      "text": "stock because it provides a simple way"
+    },
+    {
+      "start": 674.519,
+      "duration": 4.141,
+      "text": "to deploy application without managing"
+    },
+    {
+      "start": 676.74,
+      "duration": 3.3,
+      "text": "any infrastructure last but not the"
+    },
+    {
+      "start": 678.66,
+      "duration": 4.32,
+      "text": "least let's look at some security"
+    },
+    {
+      "start": 680.04,
+      "duration": 5.22,
+      "text": "services in AWS so two important"
+    },
+    {
+      "start": 682.98,
+      "duration": 6.12,
+      "text": "services that every devops engineer use"
+    },
+    {
+      "start": 685.26,
+      "duration": 6.54,
+      "text": "are KMS and secrets manager let's talk"
+    },
+    {
+      "start": 689.1,
+      "duration": 4.56,
+      "text": "about KMS KMS stands for Key Management"
+    },
+    {
+      "start": 691.8,
+      "duration": 4.56,
+      "text": "Service which lets you create and"
+    },
+    {
+      "start": 693.66,
+      "duration": 4.679,
+      "text": "control encryption keys that can be used"
+    },
+    {
+      "start": 696.36,
+      "duration": 4.44,
+      "text": "to encrypt any kind of data on the cloud"
+    },
+    {
+      "start": 698.339,
+      "duration": 5.581,
+      "text": "KMS can be used to encrypt S3 buckets"
+    },
+    {
+      "start": 700.8,
+      "duration": 4.8,
+      "text": "database backups EBS volumes and more a"
+    },
+    {
+      "start": 703.92,
+      "duration": 4.74,
+      "text": "devops engineer should know how to use"
+    },
+    {
+      "start": 705.6,
+      "duration": 5.82,
+      "text": "and encrypt data using KMS because it is"
+    },
+    {
+      "start": 708.66,
+      "duration": 3.66,
+      "text": "a critical component to secure data on"
+    },
+    {
+      "start": 711.42,
+      "duration": 3.06,
+      "text": "the cloud"
+    },
+    {
+      "start": 712.32,
+      "duration": 4.38,
+      "text": "second important security service is"
+    },
+    {
+      "start": 714.48,
+      "duration": 3.56,
+      "text": "Secrets manager Secrets manager is a"
+    },
+    {
+      "start": 716.7,
+      "duration": 4.199,
+      "text": "service where you will be storing your"
+    },
+    {
+      "start": 718.04,
+      "duration": 5.32,
+      "text": "passwords database credentials API keys"
+    },
+    {
+      "start": 720.899,
+      "duration": 4.861,
+      "text": "and other Secrets it also allows you to"
+    },
+    {
+      "start": 723.36,
+      "duration": 4.2,
+      "text": "enable automatic rotation and"
+    },
+    {
+      "start": 725.76,
+      "duration": 4.199,
+      "text": "integration with different AWS services"
+    },
+    {
+      "start": 727.56,
+      "duration": 4.44,
+      "text": "so devops engineer should know how to"
+    },
+    {
+      "start": 729.959,
+      "duration": 4.38,
+      "text": "use Secrets manager and to store their"
+    },
+    {
+      "start": 732.0,
+      "duration": 3.48,
+      "text": "secrets inside it so that you don't need"
+    },
+    {
+      "start": 734.339,
+      "duration": 3.24,
+      "text": "to put them in your code and you can"
+    },
+    {
+      "start": 735.48,
+      "duration": 4.5,
+      "text": "integrate them with your other AWS"
+    },
+    {
+      "start": 737.579,
+      "duration": 4.5,
+      "text": "Services as well so there you have it"
+    },
+    {
+      "start": 739.98,
+      "duration": 4.38,
+      "text": "all the important AWS Services you"
+    },
+    {
+      "start": 742.079,
+      "duration": 4.32,
+      "text": "should know as a devops engineer one"
+    },
+    {
+      "start": 744.36,
+      "duration": 3.96,
+      "text": "thing to note is while AWS provides you"
+    },
+    {
+      "start": 746.399,
+      "duration": 3.661,
+      "text": "with so many different Services there"
+    },
+    {
+      "start": 748.32,
+      "duration": 4.38,
+      "text": "can be open source alternative for many"
+    },
+    {
+      "start": 750.06,
+      "duration": 4.08,
+      "text": "AWS services for example for cloud watch"
+    },
+    {
+      "start": 752.7,
+      "duration": 4.379,
+      "text": "you have alternative Service as"
+    },
+    {
+      "start": 754.14,
+      "duration": 6.12,
+      "text": "Prometheus for AWS Ops work you have"
+    },
+    {
+      "start": 757.079,
+      "duration": 4.741,
+      "text": "Jenkins and so on so even though you"
+    },
+    {
+      "start": 760.26,
+      "duration": 3.06,
+      "text": "have open source Alternatives if you"
+    },
+    {
+      "start": 761.82,
+      "duration": 3.24,
+      "text": "learn all these Services mentioned in"
+    },
+    {
+      "start": 763.32,
+      "duration": 3.42,
+      "text": "the video it will be very easy for you"
+    },
+    {
+      "start": 765.06,
+      "duration": 4.38,
+      "text": "to work with those open source"
+    },
+    {
+      "start": 766.74,
+      "duration": 4.38,
+      "text": "Alternatives as well so I hope this was"
+    },
+    {
+      "start": 769.44,
+      "duration": 3.6,
+      "text": "very informative and if you have any"
+    },
+    {
+      "start": 771.12,
+      "duration": 3.54,
+      "text": "questions any doubt let let me know in"
+    },
+    {
+      "start": 773.04,
+      "duration": 3.9,
+      "text": "the comment section if you think there"
+    },
+    {
+      "start": 774.66,
+      "duration": 5.04,
+      "text": "is any AWS Services I've missed you can"
+    },
+    {
+      "start": 776.94,
+      "duration": 5.36,
+      "text": "let me know and that's it thank you and"
+    },
+    {
+      "start": 779.7,
+      "duration": 2.6,
+      "text": "have a good day"
+    }
+  ]
+}

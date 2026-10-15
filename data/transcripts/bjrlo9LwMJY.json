@@ -1,0 +1,1836 @@
+{
+  "video": {
+    "id": "bjrlo9LwMJY",
+    "title": "You MUST know this BEFORE learning Kubernetes | Prerequisites for Kubernetes",
+    "url": "https://www.youtube.com/watch?v=bjrlo9LwMJY",
+    "duration": 768,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.359,
+      "duration": 4.761,
+      "text": "kubernetes kubernetes kubernetes"
+    },
+    {
+      "start": 2.96,
+      "duration": 5.08,
+      "text": "everyone knows how popular and demanding"
+    },
+    {
+      "start": 5.12,
+      "duration": 5.28,
+      "text": "kubernetes is almost every application"
+    },
+    {
+      "start": 8.04,
+      "duration": 4.599,
+      "text": "these days is deployed all kubernetes"
+    },
+    {
+      "start": 10.4,
+      "duration": 4.84,
+      "text": "and every job description requires"
+    },
+    {
+      "start": 12.639,
+      "duration": 4.4,
+      "text": "candidate having kubernetes skills due"
+    },
+    {
+      "start": 15.24,
+      "duration": 3.76,
+      "text": "to this popularity most people start"
+    },
+    {
+      "start": 17.039,
+      "duration": 3.361,
+      "text": "with learning kubernetes directly"
+    },
+    {
+      "start": 19.0,
+      "duration": 3.72,
+      "text": "without having their fundamentals"
+    },
+    {
+      "start": 20.4,
+      "duration": 4.879,
+      "text": "cleared which is not the right approach"
+    },
+    {
+      "start": 22.72,
+      "duration": 4.24,
+      "text": "kubernetes is really complex and without"
+    },
+    {
+      "start": 25.279,
+      "duration": 4.201,
+      "text": "proper foundational knowledge it can"
+    },
+    {
+      "start": 26.96,
+      "duration": 5.119,
+      "text": "turn out so horrible wasting your time"
+    },
+    {
+      "start": 29.48,
+      "duration": 5.52,
+      "text": "your money and also making a question if"
+    },
+    {
+      "start": 32.079,
+      "duration": 4.841,
+      "text": "devops is the right path for you and"
+    },
+    {
+      "start": 35.0,
+      "duration": 3.84,
+      "text": "this is why in this video I will tell"
+    },
+    {
+      "start": 36.92,
+      "duration": 4.28,
+      "text": "you all the necessary tools and"
+    },
+    {
+      "start": 38.84,
+      "duration": 4.8,
+      "text": "Technologies you need to know before"
+    },
+    {
+      "start": 41.2,
+      "duration": 4.039,
+      "text": "learning kubernetes having knowledge on"
+    },
+    {
+      "start": 43.64,
+      "duration": 4.12,
+      "text": "these tools will make your kubernetes"
+    },
+    {
+      "start": 45.239,
+      "duration": 6.401,
+      "text": "learning easier and faster so without"
+    },
+    {
+      "start": 47.76,
+      "duration": 3.88,
+      "text": "wasting any time let's start with the"
+    },
+    {
+      "start": 58.64,
+      "duration": 5.0,
+      "text": "video the very first important topic you"
+    },
+    {
+      "start": 61.48,
+      "duration": 4.6,
+      "text": "need to know before learning kubernetes"
+    },
+    {
+      "start": 63.64,
+      "duration": 4.479,
+      "text": "is containerization as we all know"
+    },
+    {
+      "start": 66.08,
+      "duration": 4.64,
+      "text": "kubernetes is a container orchestration"
+    },
+    {
+      "start": 68.119,
+      "duration": 5.281,
+      "text": "tool responsible for managing scaling"
+    },
+    {
+      "start": 70.72,
+      "duration": 4.399,
+      "text": "and operation of application containers"
+    },
+    {
+      "start": 73.4,
+      "duration": 3.84,
+      "text": "so without containers kubernetes will"
+    },
+    {
+      "start": 75.119,
+      "duration": 3.881,
+      "text": "have nothing to orchestrate and this is"
+    },
+    {
+      "start": 77.24,
+      "duration": 4.239,
+      "text": "why you need to have a good"
+    },
+    {
+      "start": 79.0,
+      "duration": 4.6,
+      "text": "understanding of containerization what"
+    },
+    {
+      "start": 81.479,
+      "duration": 4.081,
+      "text": "are images what are containers what are"
+    },
+    {
+      "start": 83.6,
+      "duration": 3.32,
+      "text": "container Registries and there are"
+    },
+    {
+      "start": 85.56,
+      "duration": 3.36,
+      "text": "different software tools that can be"
+    },
+    {
+      "start": 86.92,
+      "duration": 4.6,
+      "text": "used to build containers also known as"
+    },
+    {
+      "start": 88.92,
+      "duration": 5.08,
+      "text": "container runtime like Docker rocket"
+    },
+    {
+      "start": 91.52,
+      "duration": 4.44,
+      "text": "cryo continuity and lot more but the"
+    },
+    {
+      "start": 94.0,
+      "duration": 3.52,
+      "text": "very popular one is Docker this is why"
+    },
+    {
+      "start": 95.96,
+      "duration": 3.199,
+      "text": "you need to have good understanding of"
+    },
+    {
+      "start": 97.52,
+      "duration": 3.32,
+      "text": "what is a Docker container what are"
+    },
+    {
+      "start": 99.159,
+      "duration": 3.721,
+      "text": "different commands used to manage"
+    },
+    {
+      "start": 100.84,
+      "duration": 4.08,
+      "text": "container like Docker run Docker BS"
+    },
+    {
+      "start": 102.88,
+      "duration": 4.519,
+      "text": "Docker stop Docker images and other"
+    },
+    {
+      "start": 104.92,
+      "duration": 4.4,
+      "text": "commands also what is Docker files what"
+    },
+    {
+      "start": 107.399,
+      "duration": 3.641,
+      "text": "is the structure how can you write a"
+    },
+    {
+      "start": 109.32,
+      "duration": 3.52,
+      "text": "Docker file and also try creating Docker"
+    },
+    {
+      "start": 111.04,
+      "duration": 3.759,
+      "text": "file on this channel we have many"
+    },
+    {
+      "start": 112.84,
+      "duration": 3.559,
+      "text": "projects that can help you understand"
+    },
+    {
+      "start": 114.799,
+      "duration": 4.0,
+      "text": "what is a Docker file and how to create"
+    },
+    {
+      "start": 116.399,
+      "duration": 4.521,
+      "text": "them as well along with this you also"
+    },
+    {
+      "start": 118.799,
+      "duration": 3.881,
+      "text": "need to have an idea for Docker images"
+    },
+    {
+      "start": 120.92,
+      "duration": 3.479,
+      "text": "and learn how to create images for your"
+    },
+    {
+      "start": 122.68,
+      "duration": 3.0,
+      "text": "application we also need to know what"
+    },
+    {
+      "start": 124.399,
+      "duration": 3.201,
+      "text": "are Docker containers how are they"
+    },
+    {
+      "start": 125.68,
+      "duration": 3.24,
+      "text": "created first we create a file then we"
+    },
+    {
+      "start": 127.6,
+      "duration": 3.92,
+      "text": "create an image and then we run a"
+    },
+    {
+      "start": 128.92,
+      "duration": 4.24,
+      "text": "container next we have Docker compost we"
+    },
+    {
+      "start": 131.52,
+      "duration": 3.88,
+      "text": "use Docker compost for multi containers"
+    },
+    {
+      "start": 133.16,
+      "duration": 3.6,
+      "text": "and you need to have knowledge of it for"
+    },
+    {
+      "start": 135.4,
+      "duration": 3.04,
+      "text": "all this Concepts I have learning"
+    },
+    {
+      "start": 136.76,
+      "duration": 3.559,
+      "text": "resources here and if you want me to"
+    },
+    {
+      "start": 138.44,
+      "duration": 3.72,
+      "text": "share this document do let me know in"
+    },
+    {
+      "start": 140.319,
+      "duration": 3.401,
+      "text": "the comment section so the first thing"
+    },
+    {
+      "start": 142.16,
+      "duration": 3.24,
+      "text": "you need to know before learning"
+    },
+    {
+      "start": 143.72,
+      "duration": 4.12,
+      "text": "kubernetes is going to be"
+    },
+    {
+      "start": 145.4,
+      "duration": 4.44,
+      "text": "containerization which is very very"
+    },
+    {
+      "start": 147.84,
+      "duration": 3.96,
+      "text": "important next very important"
+    },
+    {
+      "start": 149.84,
+      "duration": 5.24,
+      "text": "prerequisite before learning kubernetes"
+    },
+    {
+      "start": 151.8,
+      "duration": 5.36,
+      "text": "is Linux commands kubernetes and Docker"
+    },
+    {
+      "start": 155.08,
+      "duration": 5.0,
+      "text": "use Linux operating system for managing"
+    },
+    {
+      "start": 157.16,
+      "duration": 4.439,
+      "text": "containers if I show you I have Docker"
+    },
+    {
+      "start": 160.08,
+      "duration": 3.519,
+      "text": "install and if I want to get the docker"
+    },
+    {
+      "start": 161.599,
+      "duration": 4.521,
+      "text": "images in my machine I'm going to run a"
+    },
+    {
+      "start": 163.599,
+      "duration": 4.161,
+      "text": "command which is Docker images similar"
+    },
+    {
+      "start": 166.12,
+      "duration": 3.68,
+      "text": "to this there are different commands and"
+    },
+    {
+      "start": 167.76,
+      "duration": 4.479,
+      "text": "for you to manage kubernetes containers"
+    },
+    {
+      "start": 169.8,
+      "duration": 5.6,
+      "text": "or clusters you need to have proper"
+    },
+    {
+      "start": 172.239,
+      "duration": 5.121,
+      "text": "understanding of how Linux commands work"
+    },
+    {
+      "start": 175.4,
+      "duration": 4.36,
+      "text": "similar to Docker for kubernetes you"
+    },
+    {
+      "start": 177.36,
+      "duration": 4.92,
+      "text": "have Cube C or K9s which are different"
+    },
+    {
+      "start": 179.76,
+      "duration": 4.72,
+      "text": "CLI tools for kubernetes and you manage"
+    },
+    {
+      "start": 182.28,
+      "duration": 4.76,
+      "text": "stuff in kubernetes using commands this"
+    },
+    {
+      "start": 184.48,
+      "duration": 4.399,
+      "text": "is why having Linux knowledge is very"
+    },
+    {
+      "start": 187.04,
+      "duration": 3.919,
+      "text": "important so having Linux Basics"
+    },
+    {
+      "start": 188.879,
+      "duration": 4.64,
+      "text": "knowledge can help you create secure and"
+    },
+    {
+      "start": 190.959,
+      "duration": 4.761,
+      "text": "Performing applications on kubernetes so"
+    },
+    {
+      "start": 193.519,
+      "duration": 3.561,
+      "text": "what should you be learning in Linux for"
+    },
+    {
+      "start": 195.72,
+      "duration": 4.0,
+      "text": "kubernetes you need to know the basic"
+    },
+    {
+      "start": 197.08,
+      "duration": 4.6,
+      "text": "commands which can be file management"
+    },
+    {
+      "start": 199.72,
+      "duration": 4.32,
+      "text": "commands which are different commands of"
+    },
+    {
+      "start": 201.68,
+      "duration": 4.6,
+      "text": "file management navigating permissions"
+    },
+    {
+      "start": 204.04,
+      "duration": 3.759,
+      "text": "and other stuff for example file"
+    },
+    {
+      "start": 206.28,
+      "duration": 4.36,
+      "text": "permissions so how can you change"
+    },
+    {
+      "start": 207.799,
+      "duration": 4.841,
+      "text": "permissions to a file using ch mod or CH"
+    },
+    {
+      "start": 210.64,
+      "duration": 3.36,
+      "text": "own command Process Management to see"
+    },
+    {
+      "start": 212.64,
+      "duration": 3.2,
+      "text": "what are the different running processes"
+    },
+    {
+      "start": 214.0,
+      "duration": 3.799,
+      "text": "and how to kill them or how to manage"
+    },
+    {
+      "start": 215.84,
+      "duration": 4.08,
+      "text": "them then networking"
+    },
+    {
+      "start": 217.799,
+      "duration": 4.841,
+      "text": "Basics you need to be familiar with some"
+    },
+    {
+      "start": 219.92,
+      "duration": 4.12,
+      "text": "networking commands like Ping IP route I"
+    },
+    {
+      "start": 222.64,
+      "duration": 3.4,
+      "text": "trace route that we have covered in the"
+    },
+    {
+      "start": 224.04,
+      "duration": 4.16,
+      "text": "previous video also you need to know"
+    },
+    {
+      "start": 226.04,
+      "duration": 3.96,
+      "text": "text editors because you will be editing"
+    },
+    {
+      "start": 228.2,
+      "duration": 3.72,
+      "text": "manifest files in your kubernetes"
+    },
+    {
+      "start": 230.0,
+      "duration": 4.079,
+      "text": "cluster so you need to understand how"
+    },
+    {
+      "start": 231.92,
+      "duration": 3.8,
+      "text": "whim and Nano Works similarly you need"
+    },
+    {
+      "start": 234.079,
+      "duration": 3.681,
+      "text": "to the system information to check how"
+    },
+    {
+      "start": 235.72,
+      "duration": 3.96,
+      "text": "much CPU or Ram is present in your"
+    },
+    {
+      "start": 237.76,
+      "duration": 3.559,
+      "text": "machine or if they can handle new"
+    },
+    {
+      "start": 239.68,
+      "duration": 3.199,
+      "text": "containers or not so these are all the"
+    },
+    {
+      "start": 241.319,
+      "duration": 3.56,
+      "text": "different things you need to know in"
+    },
+    {
+      "start": 242.879,
+      "duration": 4.36,
+      "text": "Linux and I have an excellent resource"
+    },
+    {
+      "start": 244.879,
+      "duration": 5.36,
+      "text": "which covers all these commands in one"
+    },
+    {
+      "start": 247.239,
+      "duration": 5.321,
+      "text": "video next very very very important"
+    },
+    {
+      "start": 250.239,
+      "duration": 4.441,
+      "text": "topic before you learn kubernetes is"
+    },
+    {
+      "start": 252.56,
+      "duration": 3.679,
+      "text": "networking in kubernetes you will come"
+    },
+    {
+      "start": 254.68,
+      "duration": 3.92,
+      "text": "across networking terms like load"
+    },
+    {
+      "start": 256.239,
+      "duration": 5.0,
+      "text": "balancing firewalls pot topot"
+    },
+    {
+      "start": 258.6,
+      "duration": 4.44,
+      "text": "communication Ingress egress all these"
+    },
+    {
+      "start": 261.239,
+      "duration": 3.801,
+      "text": "terms require you to have networking"
+    },
+    {
+      "start": 263.04,
+      "duration": 3.92,
+      "text": "knowledge so in kubernetes understanding"
+    },
+    {
+      "start": 265.04,
+      "duration": 4.159,
+      "text": "networking is super important and"
+    },
+    {
+      "start": 266.96,
+      "duration": 4.679,
+      "text": "without knowing about things like ports"
+    },
+    {
+      "start": 269.199,
+      "duration": 4.321,
+      "text": "load bcers firewalls you cannot"
+    },
+    {
+      "start": 271.639,
+      "duration": 3.601,
+      "text": "successfully set up a kubernetes"
+    },
+    {
+      "start": 273.52,
+      "duration": 3.08,
+      "text": "application and to have some networking"
+    },
+    {
+      "start": 275.24,
+      "duration": 3.28,
+      "text": "knowledge you can check out the previous"
+    },
+    {
+      "start": 276.6,
+      "duration": 3.72,
+      "text": "video on this channel which was"
+    },
+    {
+      "start": 278.52,
+      "duration": 4.239,
+      "text": "networking for devops engineers which"
+    },
+    {
+      "start": 280.32,
+      "duration": 5.319,
+      "text": "will help you understand what is ports"
+    },
+    {
+      "start": 282.759,
+      "duration": 4.88,
+      "text": "what is protocol what is TCP UDP IP uh"
+    },
+    {
+      "start": 285.639,
+      "duration": 4.161,
+      "text": "and a lot more also subnetting routing"
+    },
+    {
+      "start": 287.639,
+      "duration": 3.721,
+      "text": "so you can go check it out networking is"
+    },
+    {
+      "start": 289.8,
+      "duration": 3.839,
+      "text": "important in kubernetes because it is"
+    },
+    {
+      "start": 291.36,
+      "duration": 4.119,
+      "text": "needed to exchange data between backends"
+    },
+    {
+      "start": 293.639,
+      "duration": 3.601,
+      "text": "and front end also to expose your"
+    },
+    {
+      "start": 295.479,
+      "duration": 4.041,
+      "text": "frontend applications which can be web"
+    },
+    {
+      "start": 297.24,
+      "duration": 4.48,
+      "text": "applications or websites to the internet"
+    },
+    {
+      "start": 299.52,
+      "duration": 4.36,
+      "text": "internet so you need to know networking"
+    },
+    {
+      "start": 301.72,
+      "duration": 3.6,
+      "text": "if you want to work with kubernetes so"
+    },
+    {
+      "start": 303.88,
+      "duration": 3.8,
+      "text": "networking is a big deal in kubernetes"
+    },
+    {
+      "start": 305.32,
+      "duration": 4.319,
+      "text": "to understand how deployments pods"
+    },
+    {
+      "start": 307.68,
+      "duration": 4.2,
+      "text": "services and other kubernetes object"
+    },
+    {
+      "start": 309.639,
+      "duration": 3.601,
+      "text": "communicate with each other so now you"
+    },
+    {
+      "start": 311.88,
+      "duration": 3.84,
+      "text": "might be confused on what you need to"
+    },
+    {
+      "start": 313.24,
+      "duration": 4.04,
+      "text": "know in networking for kubernetes so you"
+    },
+    {
+      "start": 315.72,
+      "duration": 3.28,
+      "text": "need to have just foundational knowledge"
+    },
+    {
+      "start": 317.28,
+      "duration": 3.08,
+      "text": "in networking later on when you learn"
+    },
+    {
+      "start": 319.0,
+      "duration": 3.8,
+      "text": "kubernetes properly there's going to be"
+    },
+    {
+      "start": 320.36,
+      "duration": 4.04,
+      "text": "more advanced networking in kubernetes"
+    },
+    {
+      "start": 322.8,
+      "duration": 3.16,
+      "text": "so before you learn the advanced part"
+    },
+    {
+      "start": 324.4,
+      "duration": 3.44,
+      "text": "you need to have good understanding in"
+    },
+    {
+      "start": 325.96,
+      "duration": 3.2,
+      "text": "the foundational part so you need you"
+    },
+    {
+      "start": 327.84,
+      "duration": 4.28,
+      "text": "need to know what is IP addressing"
+    },
+    {
+      "start": 329.16,
+      "duration": 4.44,
+      "text": "concept what is ipv4 what is IPv6 you"
+    },
+    {
+      "start": 332.12,
+      "duration": 3.28,
+      "text": "need to know what are routing principles"
+    },
+    {
+      "start": 333.6,
+      "duration": 3.64,
+      "text": "how does routing happen you also need to"
+    },
+    {
+      "start": 335.4,
+      "duration": 4.0,
+      "text": "know what is subnetting and how can you"
+    },
+    {
+      "start": 337.24,
+      "duration": 4.16,
+      "text": "distribute a huge Network into small IP"
+    },
+    {
+      "start": 339.4,
+      "duration": 4.4,
+      "text": "ranges which is also CER range that is"
+    },
+    {
+      "start": 341.4,
+      "duration": 5.44,
+      "text": "explained in this particular"
+    },
+    {
+      "start": 343.8,
+      "duration": 4.839,
+      "text": "video next you need to know different"
+    },
+    {
+      "start": 346.84,
+      "duration": 4.28,
+      "text": "protocols what is TCP protocol what is"
+    },
+    {
+      "start": 348.639,
+      "duration": 4.081,
+      "text": "udb protocol what is IPA protocols and"
+    },
+    {
+      "start": 351.12,
+      "duration": 3.28,
+      "text": "also port numbers for different"
+    },
+    {
+      "start": 352.72,
+      "duration": 4.12,
+      "text": "applications so these are some of the"
+    },
+    {
+      "start": 354.4,
+      "duration": 4.56,
+      "text": "things you need to know for networking"
+    },
+    {
+      "start": 356.84,
+      "duration": 4.28,
+      "text": "before you learn kubernetes and this is"
+    },
+    {
+      "start": 358.96,
+      "duration": 3.88,
+      "text": "a great source for you to help with"
+    },
+    {
+      "start": 361.12,
+      "duration": 4.199,
+      "text": "starting networking knowledge on"
+    },
+    {
+      "start": 362.84,
+      "duration": 4.359,
+      "text": "kubernetes so make sure you have your"
+    },
+    {
+      "start": 365.319,
+      "duration": 3.521,
+      "text": "networking Concepts cleared before you"
+    },
+    {
+      "start": 367.199,
+      "duration": 4.56,
+      "text": "start learning kubernetes which will"
+    },
+    {
+      "start": 368.84,
+      "duration": 4.44,
+      "text": "help you save a lot of time next"
+    },
+    {
+      "start": 371.759,
+      "duration": 3.761,
+      "text": "important prerequisite before learning"
+    },
+    {
+      "start": 373.28,
+      "duration": 4.28,
+      "text": "kubernetes is understanding micro"
+    },
+    {
+      "start": 375.52,
+      "duration": 3.959,
+      "text": "Services microservices is an"
+    },
+    {
+      "start": 377.56,
+      "duration": 3.919,
+      "text": "architectural style where you deploy an"
+    },
+    {
+      "start": 379.479,
+      "duration": 4.321,
+      "text": "application in different Services"
+    },
+    {
+      "start": 381.479,
+      "duration": 4.0,
+      "text": "talking to each other and microservices"
+    },
+    {
+      "start": 383.8,
+      "duration": 3.56,
+      "text": "is the architecture pattern which is"
+    },
+    {
+      "start": 385.479,
+      "duration": 4.481,
+      "text": "followed by kubernetes where each"
+    },
+    {
+      "start": 387.36,
+      "duration": 4.839,
+      "text": "service is independently deployed as a"
+    },
+    {
+      "start": 389.96,
+      "duration": 4.639,
+      "text": "container so having an understanding of"
+    },
+    {
+      "start": 392.199,
+      "duration": 4.241,
+      "text": "microservices is very important whenever"
+    },
+    {
+      "start": 394.599,
+      "duration": 3.72,
+      "text": "you deploy an application you will be"
+    },
+    {
+      "start": 396.44,
+      "duration": 4.479,
+      "text": "most likely deploying it using"
+    },
+    {
+      "start": 398.319,
+      "duration": 4.481,
+      "text": "microservices architectural style for"
+    },
+    {
+      "start": 400.919,
+      "duration": 3.881,
+      "text": "example let's say you have an e-commerce"
+    },
+    {
+      "start": 402.8,
+      "duration": 3.92,
+      "text": "application that follows microservices"
+    },
+    {
+      "start": 404.8,
+      "duration": 3.959,
+      "text": "architecture it will have database"
+    },
+    {
+      "start": 406.72,
+      "duration": 4.039,
+      "text": "Service as a container front-end Service"
+    },
+    {
+      "start": 408.759,
+      "duration": 3.72,
+      "text": "as another container backend Service as"
+    },
+    {
+      "start": 410.759,
+      "duration": 3.681,
+      "text": "another container and all of them will"
+    },
+    {
+      "start": 412.479,
+      "duration": 3.961,
+      "text": "work together to create an e-commerce"
+    },
+    {
+      "start": 414.44,
+      "duration": 3.479,
+      "text": "application this is why you need to"
+    },
+    {
+      "start": 416.44,
+      "duration": 3.12,
+      "text": "understand what is microservices"
+    },
+    {
+      "start": 417.919,
+      "duration": 3.041,
+      "text": "architecture you don't need to go go"
+    },
+    {
+      "start": 419.56,
+      "duration": 2.84,
+      "text": "deep but you need to have a common"
+    },
+    {
+      "start": 420.96,
+      "duration": 4.2,
+      "text": "understanding or basic understanding of"
+    },
+    {
+      "start": 422.4,
+      "duration": 4.32,
+      "text": "what is microservices and how they work"
+    },
+    {
+      "start": 425.16,
+      "duration": 3.64,
+      "text": "so what to learn you need to know the"
+    },
+    {
+      "start": 426.72,
+      "duration": 3.759,
+      "text": "basics so understand the basics you need"
+    },
+    {
+      "start": 428.8,
+      "duration": 3.88,
+      "text": "to know how microservices communicate"
+    },
+    {
+      "start": 430.479,
+      "duration": 4.4,
+      "text": "with each other through restful apis you"
+    },
+    {
+      "start": 432.68,
+      "duration": 4.12,
+      "text": "need to know how they are independent so"
+    },
+    {
+      "start": 434.879,
+      "duration": 3.72,
+      "text": "grasp the concept of each microservice"
+    },
+    {
+      "start": 436.8,
+      "duration": 3.72,
+      "text": "operating independently with its own"
+    },
+    {
+      "start": 438.599,
+      "duration": 3.921,
+      "text": "database and functionality next you need"
+    },
+    {
+      "start": 440.52,
+      "duration": 5.959,
+      "text": "to know how apis works so understanding"
+    },
+    {
+      "start": 442.52,
+      "duration": 5.28,
+      "text": "how microservices Expose apis and to"
+    },
+    {
+      "start": 446.479,
+      "duration": 3.521,
+      "text": "understand all this properly you should"
+    },
+    {
+      "start": 447.8,
+      "duration": 3.56,
+      "text": "be doing Hands-On projects I already"
+    },
+    {
+      "start": 450.0,
+      "duration": 3.599,
+      "text": "have many projects you can check out"
+    },
+    {
+      "start": 451.36,
+      "duration": 4.44,
+      "text": "this one to learn microservices on"
+    },
+    {
+      "start": 453.599,
+      "duration": 4.04,
+      "text": "kubernetes kubernetes can be deployed"
+    },
+    {
+      "start": 455.8,
+      "duration": 3.239,
+      "text": "either locally or on the cloud if you"
+    },
+    {
+      "start": 457.639,
+      "duration": 4.24,
+      "text": "deploy it locally you might be using"
+    },
+    {
+      "start": 459.039,
+      "duration": 4.88,
+      "text": "mini Cube or cube ADM but usually for"
+    },
+    {
+      "start": 461.879,
+      "duration": 4.081,
+      "text": "production level clusters we Deploy"
+    },
+    {
+      "start": 463.919,
+      "duration": 5.441,
+      "text": "kubernetes on the cloud using Cloud"
+    },
+    {
+      "start": 465.96,
+      "duration": 5.84,
+      "text": "providers like AWS which has AWS eks or"
+    },
+    {
+      "start": 469.36,
+      "duration": 4.6,
+      "text": "elastic kubernetes Service as kubernetes"
+    },
+    {
+      "start": 471.8,
+      "duration": 4.239,
+      "text": "cluster provider next you can also use"
+    },
+    {
+      "start": 473.96,
+      "duration": 5.079,
+      "text": "Azure kubernetes service or Google"
+    },
+    {
+      "start": 476.039,
+      "duration": 4.681,
+      "text": "kubernetes engine so kubernetes is"
+    },
+    {
+      "start": 479.039,
+      "duration": 3.801,
+      "text": "common deployed in the cloud and"
+    },
+    {
+      "start": 480.72,
+      "duration": 4.12,
+      "text": "deploying kubernetes in the cloud has"
+    },
+    {
+      "start": 482.84,
+      "duration": 3.72,
+      "text": "many different advantages like you get"
+    },
+    {
+      "start": 484.84,
+      "duration": 3.88,
+      "text": "the necessary infrastructure for hosting"
+    },
+    {
+      "start": 486.56,
+      "duration": 4.84,
+      "text": "kubernetes clusters which can be virtual"
+    },
+    {
+      "start": 488.72,
+      "duration": 4.84,
+      "text": "machines storage networking Services"
+    },
+    {
+      "start": 491.4,
+      "duration": 4.56,
+      "text": "security and lot more so having"
+    },
+    {
+      "start": 493.56,
+      "duration": 4.079,
+      "text": "knowledge of cloud platforms is very"
+    },
+    {
+      "start": 495.96,
+      "duration": 3.84,
+      "text": "important if you are starting to learn"
+    },
+    {
+      "start": 497.639,
+      "duration": 3.881,
+      "text": "kubernetes because in the industry no"
+    },
+    {
+      "start": 499.8,
+      "duration": 4.519,
+      "text": "one is going to deploy it on locally it"
+    },
+    {
+      "start": 501.52,
+      "duration": 4.44,
+      "text": "will be deployed on cloud so you need to"
+    },
+    {
+      "start": 504.319,
+      "duration": 3.921,
+      "text": "understand how Cloud works and how can"
+    },
+    {
+      "start": 505.96,
+      "duration": 4.32,
+      "text": "you create clusters on the cloud cloud"
+    },
+    {
+      "start": 508.24,
+      "duration": 3.919,
+      "text": "platforms also offer features like Auto"
+    },
+    {
+      "start": 510.28,
+      "duration": 3.879,
+      "text": "scaling load balancing and monitoring"
+    },
+    {
+      "start": 512.159,
+      "duration": 3.641,
+      "text": "tools that aligns with kubernetes"
+    },
+    {
+      "start": 514.159,
+      "duration": 3.641,
+      "text": "requirement for scalability and"
+    },
+    {
+      "start": 515.8,
+      "duration": 3.52,
+      "text": "resilience along with cluster setup you"
+    },
+    {
+      "start": 517.8,
+      "duration": 3.479,
+      "text": "can also get more features like Auto"
+    },
+    {
+      "start": 519.32,
+      "duration": 4.24,
+      "text": "Skilling load balancing monitoring your"
+    },
+    {
+      "start": 521.279,
+      "duration": 4.68,
+      "text": "clusters through Cloud platforms this is"
+    },
+    {
+      "start": 523.56,
+      "duration": 4.04,
+      "text": "why you need to have knowledge of cloud"
+    },
+    {
+      "start": 525.959,
+      "duration": 3.681,
+      "text": "to get understanding or to get knowledge"
+    },
+    {
+      "start": 527.6,
+      "duration": 5.0,
+      "text": "of cloud I would recommend you uh"
+    },
+    {
+      "start": 529.64,
+      "duration": 5.24,
+      "text": "gaining certifications in AWS in Azure"
+    },
+    {
+      "start": 532.6,
+      "duration": 3.88,
+      "text": "or gcp anything you want to start with"
+    },
+    {
+      "start": 534.88,
+      "duration": 3.28,
+      "text": "uh so what to learn you need to have"
+    },
+    {
+      "start": 536.48,
+      "duration": 4.64,
+      "text": "Cloud fundamentals what is on demand"
+    },
+    {
+      "start": 538.16,
+      "duration": 4.56,
+      "text": "prising scale availability pay as you go"
+    },
+    {
+      "start": 541.12,
+      "duration": 3.08,
+      "text": "you need to be familiar with any of the"
+    },
+    {
+      "start": 542.72,
+      "duration": 4.6,
+      "text": "major Cloud platforms which can be"
+    },
+    {
+      "start": 544.2,
+      "duration": 5.199,
+      "text": "either AWS or Azure or gcp and also to"
+    },
+    {
+      "start": 547.32,
+      "duration": 4.24,
+      "text": "know how to set up kubernetes clusters"
+    },
+    {
+      "start": 549.399,
+      "duration": 4.081,
+      "text": "in it next you need to know repent"
+    },
+    {
+      "start": 551.56,
+      "duration": 3.8,
+      "text": "models what apply public private and"
+    },
+    {
+      "start": 553.48,
+      "duration": 3.96,
+      "text": "hybrid cloud service model"
+    },
+    {
+      "start": 555.36,
+      "duration": 4.08,
+      "text": "infrastructure as service pass platform"
+    },
+    {
+      "start": 557.44,
+      "duration": 4.079,
+      "text": "as a service software as a service basic"
+    },
+    {
+      "start": 559.44,
+      "duration": 4.44,
+      "text": "networking that is also covered here uh"
+    },
+    {
+      "start": 561.519,
+      "duration": 3.961,
+      "text": "in the networking section but in the"
+    },
+    {
+      "start": 563.88,
+      "duration": 3.199,
+      "text": "cloud so you need to use that knowledge"
+    },
+    {
+      "start": 565.48,
+      "duration": 3.76,
+      "text": "and how you can use them the cloud which"
+    },
+    {
+      "start": 567.079,
+      "duration": 4.081,
+      "text": "could be virtual Network subnets"
+    },
+    {
+      "start": 569.24,
+      "duration": 3.8,
+      "text": "security groups next you need to know"
+    },
+    {
+      "start": 571.16,
+      "duration": 5.08,
+      "text": "how to create users groups and policies"
+    },
+    {
+      "start": 573.04,
+      "duration": 4.919,
+      "text": "in using IM am how to attach storage to"
+    },
+    {
+      "start": 576.24,
+      "duration": 3.719,
+      "text": "your clusters using storage Services"
+    },
+    {
+      "start": 577.959,
+      "duration": 4.32,
+      "text": "which can be object level storage or"
+    },
+    {
+      "start": 579.959,
+      "duration": 3.88,
+      "text": "block storage or file storage next"
+    },
+    {
+      "start": 582.279,
+      "duration": 3.441,
+      "text": "security best practices how can you"
+    },
+    {
+      "start": 583.839,
+      "duration": 4.641,
+      "text": "encrypt your data how can you provide"
+    },
+    {
+      "start": 585.72,
+      "duration": 4.84,
+      "text": "access controls and compliance uh when"
+    },
+    {
+      "start": 588.48,
+      "duration": 4.16,
+      "text": "creating or managing kubernetes"
+    },
+    {
+      "start": 590.56,
+      "duration": 3.76,
+      "text": "clusters you also need to know how to"
+    },
+    {
+      "start": 592.64,
+      "duration": 3.84,
+      "text": "manage cost using monitoring budgeting"
+    },
+    {
+      "start": 594.32,
+      "duration": 4.4,
+      "text": "and optimization to save cost when"
+    },
+    {
+      "start": 596.48,
+      "duration": 3.919,
+      "text": "deploying applications on kubernetes and"
+    },
+    {
+      "start": 598.72,
+      "duration": 3.76,
+      "text": "toer learn all this I would recommend"
+    },
+    {
+      "start": 600.399,
+      "duration": 3.88,
+      "text": "you doing Hands-On factories each of"
+    },
+    {
+      "start": 602.48,
+      "duration": 3.84,
+      "text": "this Cloud have their own trainings"
+    },
+    {
+      "start": 604.279,
+      "duration": 4.641,
+      "text": "which are free and paid you can choose"
+    },
+    {
+      "start": 606.32,
+      "duration": 4.079,
+      "text": "to go with the free one to have"
+    },
+    {
+      "start": 608.92,
+      "duration": 3.479,
+      "text": "understanding before you start with"
+    },
+    {
+      "start": 610.399,
+      "duration": 4.0,
+      "text": "kubernetes having knowledge of cloud is"
+    },
+    {
+      "start": 612.399,
+      "duration": 4.281,
+      "text": "really important because these days"
+    },
+    {
+      "start": 614.399,
+      "duration": 3.921,
+      "text": "everyone creates kubernetes clusters on"
+    },
+    {
+      "start": 616.68,
+      "duration": 3.12,
+      "text": "the cloud no one is creating their own"
+    },
+    {
+      "start": 618.32,
+      "duration": 3.4,
+      "text": "clusters no one is using their local"
+    },
+    {
+      "start": 619.8,
+      "duration": 4.92,
+      "text": "machines to create clusters so you need"
+    },
+    {
+      "start": 621.72,
+      "duration": 4.72,
+      "text": "to have understanding of cloud provider"
+    },
+    {
+      "start": 624.72,
+      "duration": 4.52,
+      "text": "last but not the least prerequisite"
+    },
+    {
+      "start": 626.44,
+      "duration": 4.839,
+      "text": "before learning kubernetes is yaml that"
+    },
+    {
+      "start": 629.24,
+      "duration": 4.279,
+      "text": "stands for yet another markup language"
+    },
+    {
+      "start": 631.279,
+      "duration": 3.921,
+      "text": "or yaml a markup language is a"
+    },
+    {
+      "start": 633.519,
+      "duration": 4.361,
+      "text": "programming language which is used to"
+    },
+    {
+      "start": 635.2,
+      "duration": 4.439,
+      "text": "write manifest files in kubernetes and"
+    },
+    {
+      "start": 637.88,
+      "duration": 3.92,
+      "text": "yaml is not just used for kubernetes"
+    },
+    {
+      "start": 639.639,
+      "duration": 4.76,
+      "text": "manifest it's also used for writing"
+    },
+    {
+      "start": 641.8,
+      "duration": 4.92,
+      "text": "anible playbooks creating cicd pipelines"
+    },
+    {
+      "start": 644.399,
+      "duration": 4.44,
+      "text": "and lot more so yaml is used to create"
+    },
+    {
+      "start": 646.72,
+      "duration": 4.48,
+      "text": "manifest files responsible to create"
+    },
+    {
+      "start": 648.839,
+      "duration": 3.881,
+      "text": "kubernetes object in declarative way so"
+    },
+    {
+      "start": 651.2,
+      "duration": 3.439,
+      "text": "there are two ways to create kubernetes"
+    },
+    {
+      "start": 652.72,
+      "duration": 3.76,
+      "text": "object either using imperative which is"
+    },
+    {
+      "start": 654.639,
+      "duration": 3.64,
+      "text": "by running a command or declarative"
+    },
+    {
+      "start": 656.48,
+      "duration": 3.32,
+      "text": "where you create a manifest something"
+    },
+    {
+      "start": 658.279,
+      "duration": 4.0,
+      "text": "similar to this so this is a declarative"
+    },
+    {
+      "start": 659.8,
+      "duration": 5.08,
+      "text": "way of creating a deployment and this is"
+    },
+    {
+      "start": 662.279,
+      "duration": 4.601,
+      "text": "yaml language and you can also check the"
+    },
+    {
+      "start": 664.88,
+      "duration": 5.079,
+      "text": "extension for this file is API hph"
+    },
+    {
+      "start": 666.88,
+      "duration": 6.72,
+      "text": "deployment. yl so the extension for yl"
+    },
+    {
+      "start": 669.959,
+      "duration": 5.841,
+      "text": "files or yl manifest ends with yml so"
+    },
+    {
+      "start": 673.6,
+      "duration": 4.12,
+      "text": "for you to create deployments pods"
+    },
+    {
+      "start": 675.8,
+      "duration": 3.719,
+      "text": "replica set set full sets anything in"
+    },
+    {
+      "start": 677.72,
+      "duration": 3.799,
+      "text": "kubernetes you will be requiring"
+    },
+    {
+      "start": 679.519,
+      "duration": 4.201,
+      "text": "knowledge of yaml so you need to learn"
+    },
+    {
+      "start": 681.519,
+      "duration": 4.201,
+      "text": "what is basic syntax uh in which you can"
+    },
+    {
+      "start": 683.72,
+      "duration": 4.16,
+      "text": "learn key value pairs data types"
+    },
+    {
+      "start": 685.72,
+      "duration": 4.4,
+      "text": "handling list practical use and also"
+    },
+    {
+      "start": 687.88,
+      "duration": 4.56,
+      "text": "validation tools best practices because"
+    },
+    {
+      "start": 690.12,
+      "duration": 3.88,
+      "text": "you will be using yaml a lot this is a"
+    },
+    {
+      "start": 692.44,
+      "duration": 3.12,
+      "text": "great Learning Resource for you to"
+    },
+    {
+      "start": 694.0,
+      "duration": 3.079,
+      "text": "understand how yaml is used in"
+    },
+    {
+      "start": 695.56,
+      "duration": 4.6,
+      "text": "kubernetes and how to get started with"
+    },
+    {
+      "start": 697.079,
+      "duration": 4.601,
+      "text": "learning yamil for kubernetes so this is"
+    },
+    {
+      "start": 700.16,
+      "duration": 3.52,
+      "text": "everything you need to know before you"
+    },
+    {
+      "start": 701.68,
+      "duration": 3.719,
+      "text": "learn kubernetes in order to save your"
+    },
+    {
+      "start": 703.68,
+      "duration": 3.48,
+      "text": "time troubleshooting issues or"
+    },
+    {
+      "start": 705.399,
+      "duration": 3.081,
+      "text": "scratching your head uh so I would"
+    },
+    {
+      "start": 707.16,
+      "duration": 3.4,
+      "text": "recommend you having knowledge on all"
+    },
+    {
+      "start": 708.48,
+      "duration": 3.64,
+      "text": "these Concepts along with this there is"
+    },
+    {
+      "start": 710.56,
+      "duration": 3.68,
+      "text": "also one more thing that I would highly"
+    },
+    {
+      "start": 712.12,
+      "duration": 4.2,
+      "text": "recommend you checking out is the 12"
+    },
+    {
+      "start": 714.24,
+      "duration": 4.039,
+      "text": "Factor app and it's present at this"
+    },
+    {
+      "start": 716.32,
+      "duration": 4.0,
+      "text": "particular website 12 Factor apps which"
+    },
+    {
+      "start": 718.279,
+      "duration": 3.961,
+      "text": "include code based dependencies COGIC"
+    },
+    {
+      "start": 720.32,
+      "duration": 4.6,
+      "text": "packing services this is a great"
+    },
+    {
+      "start": 722.24,
+      "duration": 3.92,
+      "text": "resource which has helped me a lot uh so"
+    },
+    {
+      "start": 724.92,
+      "duration": 3.56,
+      "text": "I would highly recommend you checking"
+    },
+    {
+      "start": 726.16,
+      "duration": 4.479,
+      "text": "this out as well so I hope this video"
+    },
+    {
+      "start": 728.48,
+      "duration": 4.68,
+      "text": "was informative and if you found this"
+    },
+    {
+      "start": 730.639,
+      "duration": 4.521,
+      "text": "video helpful please like the video and"
+    },
+    {
+      "start": 733.16,
+      "duration": 3.76,
+      "text": "if you have any questions any doubt do"
+    },
+    {
+      "start": 735.16,
+      "duration": 3.52,
+      "text": "let me know in the comment section also"
+    },
+    {
+      "start": 736.92,
+      "duration": 3.08,
+      "text": "if you want me to share this document do"
+    },
+    {
+      "start": 738.68,
+      "duration": 4.68,
+      "text": "let me know in the comment section I can"
+    },
+    {
+      "start": 740.0,
+      "duration": 5.16,
+      "text": "share this on LinkedIn or on GitHub so"
+    },
+    {
+      "start": 743.36,
+      "duration": 3.8,
+      "text": "yeah with that being said I hope this"
+    },
+    {
+      "start": 745.16,
+      "duration": 3.32,
+      "text": "video was informative and now you know"
+    },
+    {
+      "start": 747.16,
+      "duration": 3.44,
+      "text": "everything you need to know before"
+    },
+    {
+      "start": 748.48,
+      "duration": 3.52,
+      "text": "learning kubernetes I hope you learn"
+    },
+    {
+      "start": 750.6,
+      "duration": 3.88,
+      "text": "kubernetes faster with all these"
+    },
+    {
+      "start": 752.0,
+      "duration": 4.88,
+      "text": "prerequisits if you wanted me to create"
+    },
+    {
+      "start": 754.48,
+      "duration": 4.24,
+      "text": "tutorials on kubernetes do let me know"
+    },
+    {
+      "start": 756.88,
+      "duration": 5.639,
+      "text": "in the comment section thank you and"
+    },
+    {
+      "start": 758.72,
+      "duration": 3.799,
+      "text": "have a good day see you"
+    },
+    {
+      "start": 766.72,
+      "duration": 3.0,
+      "text": "later"
+    }
+  ]
+}

@@ -1,0 +1,1276 @@
+{
+  "video": {
+    "id": "Ldj9HWv4CpE",
+    "title": "How to Create AWS Security group using Terraform and attach to instance |  security group tf code",
+    "url": "https://www.youtube.com/watch?v=Ldj9HWv4CpE",
+    "duration": 568,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 4.48,
+      "text": "hello and welcome back so in this video"
+    },
+    {
+      "start": 2.159,
+      "duration": 4.481,
+      "text": "we are going to create an aws ec2"
+    },
+    {
+      "start": 4.48,
+      "duration": 4.8,
+      "text": "security group using terraform and"
+    },
+    {
+      "start": 6.64,
+      "duration": 4.879,
+      "text": "attach it to our instance so in the"
+    },
+    {
+      "start": 9.28,
+      "duration": 4.64,
+      "text": "previous video we have created an aws"
+    },
+    {
+      "start": 11.519,
+      "duration": 4.561,
+      "text": "instance and it was an amazon linux ami"
+    },
+    {
+      "start": 13.92,
+      "duration": 3.84,
+      "text": "which was t2 micro we created it using"
+    },
+    {
+      "start": 16.08,
+      "duration": 5.119,
+      "text": "terraform so if you can see in the"
+    },
+    {
+      "start": 17.76,
+      "duration": 5.92,
+      "text": "console we have a terraform ec2 which is"
+    },
+    {
+      "start": 21.199,
+      "duration": 3.84,
+      "text": "t2 micro and we have not attached any"
+    },
+    {
+      "start": 23.68,
+      "duration": 3.599,
+      "text": "security group to it so if you don't"
+    },
+    {
+      "start": 25.039,
+      "duration": 3.761,
+      "text": "attach any security group to an instance"
+    },
+    {
+      "start": 27.279,
+      "duration": 3.201,
+      "text": "in terraform the default is going to be"
+    },
+    {
+      "start": 28.8,
+      "duration": 3.919,
+      "text": "attached so if you don't want any"
+    },
+    {
+      "start": 30.48,
+      "duration": 4.32,
+      "text": "default or if you want our own security"
+    },
+    {
+      "start": 32.719,
+      "duration": 4.481,
+      "text": "group with our rules we can create it"
+    },
+    {
+      "start": 34.8,
+      "duration": 5.12,
+      "text": "using terraform as well so in this video"
+    },
+    {
+      "start": 37.2,
+      "duration": 5.12,
+      "text": "i am going to show you how we can create"
+    },
+    {
+      "start": 39.92,
+      "duration": 4.24,
+      "text": "a security group using terraform so for"
+    },
+    {
+      "start": 42.32,
+      "duration": 3.919,
+      "text": "this we are going to use uh this"
+    },
+    {
+      "start": 44.16,
+      "duration": 4.399,
+      "text": "documentation by terraform that is"
+    },
+    {
+      "start": 46.239,
+      "duration": 4.48,
+      "text": "resource aws security group you can find"
+    },
+    {
+      "start": 48.559,
+      "duration": 4.081,
+      "text": "this link in the description as well so"
+    },
+    {
+      "start": 50.719,
+      "duration": 4.721,
+      "text": "let's get started i'm going to copy this"
+    },
+    {
+      "start": 52.64,
+      "duration": 5.759,
+      "text": "snippet here for reference from right"
+    },
+    {
+      "start": 55.44,
+      "duration": 4.799,
+      "text": "from till the end till tags and paste it"
+    },
+    {
+      "start": 58.399,
+      "duration": 4.16,
+      "text": "here in my code"
+    },
+    {
+      "start": 60.239,
+      "duration": 4.96,
+      "text": "i have it here let me just make some"
+    },
+    {
+      "start": 62.559,
+      "duration": 4.24,
+      "text": "changes for our self and to get"
+    },
+    {
+      "start": 65.199,
+      "duration": 3.841,
+      "text": "reference we are going to go to the"
+    },
+    {
+      "start": 66.799,
+      "duration": 3.521,
+      "text": "security group section and if you see i"
+    },
+    {
+      "start": 69.04,
+      "duration": 2.399,
+      "text": "have only one"
+    },
+    {
+      "start": 70.32,
+      "duration": 2.88,
+      "text": "default"
+    },
+    {
+      "start": 71.439,
+      "duration": 4.32,
+      "text": "uh security group no other security"
+    },
+    {
+      "start": 73.2,
+      "duration": 4.08,
+      "text": "group see it in uh security group here"
+    },
+    {
+      "start": 75.759,
+      "duration": 4.321,
+      "text": "there are some parameters that i have to"
+    },
+    {
+      "start": 77.28,
+      "duration": 5.6,
+      "text": "fill and it's the same as in here so"
+    },
+    {
+      "start": 80.08,
+      "duration": 4.88,
+      "text": "let's change here the resources aws"
+    },
+    {
+      "start": 82.88,
+      "duration": 6.0,
+      "text": "security group and we will give the name"
+    },
+    {
+      "start": 84.96,
+      "duration": 6.159,
+      "text": "as tf underscore sg and the name should"
+    },
+    {
+      "start": 88.88,
+      "duration": 4.8,
+      "text": "be security group using terraform"
+    },
+    {
+      "start": 91.119,
+      "duration": 4.161,
+      "text": "security group using terraform"
+    },
+    {
+      "start": 93.68,
+      "duration": 4.96,
+      "text": "description is going to be the same"
+    },
+    {
+      "start": 95.28,
+      "duration": 6.32,
+      "text": "security group using terraform"
+    },
+    {
+      "start": 98.64,
+      "duration": 5.839,
+      "text": "right so we need a vpc id for security"
+    },
+    {
+      "start": 101.6,
+      "duration": 4.879,
+      "text": "group because uh security groups are vpc"
+    },
+    {
+      "start": 104.479,
+      "duration": 4.32,
+      "text": "bounded you cannot use security group in"
+    },
+    {
+      "start": 106.479,
+      "duration": 4.96,
+      "text": "one pppc to another vpc right so you"
+    },
+    {
+      "start": 108.799,
+      "duration": 5.041,
+      "text": "should have vpc id and you can see the"
+    },
+    {
+      "start": 111.439,
+      "duration": 4.32,
+      "text": "same here in as well so you need vpcid"
+    },
+    {
+      "start": 113.84,
+      "duration": 3.84,
+      "text": "to create a security group and if you"
+    },
+    {
+      "start": 115.759,
+      "duration": 3.921,
+      "text": "want the security group we can go to the"
+    },
+    {
+      "start": 117.68,
+      "duration": 4.24,
+      "text": "instance that is created and you can"
+    },
+    {
+      "start": 119.68,
+      "duration": 5.2,
+      "text": "scroll down here you get the vpc id this"
+    },
+    {
+      "start": 121.92,
+      "duration": 5.12,
+      "text": "is the default vpc id if you have vpc"
+    },
+    {
+      "start": 124.88,
+      "duration": 3.76,
+      "text": "created in the terraform you can insert"
+    },
+    {
+      "start": 127.04,
+      "duration": 3.12,
+      "text": "it like this"
+    },
+    {
+      "start": 128.64,
+      "duration": 3.599,
+      "text": "but we are not creating any vpc in the"
+    },
+    {
+      "start": 130.16,
+      "duration": 4.079,
+      "text": "terraform so we are going to insert it"
+    },
+    {
+      "start": 132.239,
+      "duration": 4.481,
+      "text": "insert the id here in the exclamation"
+    },
+    {
+      "start": 134.239,
+      "duration": 4.801,
+      "text": "mark to make it a string so now"
+    },
+    {
+      "start": 136.72,
+      "duration": 5.2,
+      "text": "if you see here after vpc we have"
+    },
+    {
+      "start": 139.04,
+      "duration": 6.32,
+      "text": "inbound rules and outbound rules so"
+    },
+    {
+      "start": 141.92,
+      "duration": 5.039,
+      "text": "similarly it is ingress and egress so in"
+    },
+    {
+      "start": 145.36,
+      "duration": 3.68,
+      "text": "this security group we i'm going to"
+    },
+    {
+      "start": 146.959,
+      "duration": 5.041,
+      "text": "create three rules the first is going to"
+    },
+    {
+      "start": 149.04,
+      "duration": 6.32,
+      "text": "be 443 that is https"
+    },
+    {
+      "start": 152.0,
+      "duration": 6.4,
+      "text": "second is going to be 80 that is http"
+    },
+    {
+      "start": 155.36,
+      "duration": 4.879,
+      "text": "and the third is going to be ssh42"
+    },
+    {
+      "start": 158.4,
+      "duration": 3.68,
+      "text": "to connect to our instance so i'm going"
+    },
+    {
+      "start": 160.239,
+      "duration": 4.08,
+      "text": "to copy this ingress"
+    },
+    {
+      "start": 162.08,
+      "duration": 5.28,
+      "text": "three times but first let me make some"
+    },
+    {
+      "start": 164.319,
+      "duration": 5.121,
+      "text": "changes i'm going to name is that https"
+    },
+    {
+      "start": 167.36,
+      "duration": 6.08,
+      "text": "right so 443 is the port number for"
+    },
+    {
+      "start": 169.44,
+      "duration": 6.56,
+      "text": "https so from port 443 to port 443 the"
+    },
+    {
+      "start": 173.44,
+      "duration": 4.56,
+      "text": "protocol is tcp and cider blocks so if"
+    },
+    {
+      "start": 176.0,
+      "duration": 4.4,
+      "text": "you want to insert any specific cider"
+    },
+    {
+      "start": 178.0,
+      "duration": 3.599,
+      "text": "block you can have that as well but we"
+    },
+    {
+      "start": 180.4,
+      "duration": 3.759,
+      "text": "don't need it we are going to create"
+    },
+    {
+      "start": 181.599,
+      "duration": 5.521,
+      "text": "this uh cider block that is for everyone"
+    },
+    {
+      "start": 184.159,
+      "duration": 5.841,
+      "text": "so i'm going to copy this cider block"
+    },
+    {
+      "start": 187.12,
+      "duration": 6.16,
+      "text": "for ipv4 and ipv6"
+    },
+    {
+      "start": 190.0,
+      "duration": 6.08,
+      "text": "so like this i'm going to paste it here"
+    },
+    {
+      "start": 193.28,
+      "duration": 5.76,
+      "text": "so this means we are going to access 443"
+    },
+    {
+      "start": 196.08,
+      "duration": 5.04,
+      "text": "from anywhere from any ip right and i'm"
+    },
+    {
+      "start": 199.04,
+      "duration": 5.52,
+      "text": "going to copy it three times just to"
+    },
+    {
+      "start": 201.12,
+      "duration": 3.44,
+      "text": "have three inbound rules"
+    },
+    {
+      "start": 205.92,
+      "duration": 4.16,
+      "text": "so one two"
+    },
+    {
+      "start": 207.84,
+      "duration": 4.72,
+      "text": "and three you should see about this"
+    },
+    {
+      "start": 210.08,
+      "duration": 4.239,
+      "text": "indentation because if i do this if you"
+    },
+    {
+      "start": 212.56,
+      "duration": 3.12,
+      "text": "miss the indentation reform is going to"
+    },
+    {
+      "start": 214.319,
+      "duration": 3.681,
+      "text": "show an error"
+    },
+    {
+      "start": 215.68,
+      "duration": 6.72,
+      "text": "so this is going to be http that is port"
+    },
+    {
+      "start": 218.0,
+      "duration": 6.48,
+      "text": "80 from port 80 to port 80 protocol tcp"
+    },
+    {
+      "start": 222.4,
+      "duration": 5.04,
+      "text": "side block from anywhere ipv6 from"
+    },
+    {
+      "start": 224.48,
+      "duration": 5.6,
+      "text": "anywhere and this is going to be ssh so"
+    },
+    {
+      "start": 227.44,
+      "duration": 6.24,
+      "text": "the port number for ssh is 22"
+    },
+    {
+      "start": 230.08,
+      "duration": 6.159,
+      "text": "22 so from 422 to 422 protocol tcp from"
+    },
+    {
+      "start": 233.68,
+      "duration": 5.36,
+      "text": "anywhere right and the outbound rule is"
+    },
+    {
+      "start": 236.239,
+      "duration": 4.881,
+      "text": "going to be from port 0 to port 0"
+    },
+    {
+      "start": 239.04,
+      "duration": 3.52,
+      "text": "protocol minus one this means all"
+    },
+    {
+      "start": 241.12,
+      "duration": 3.28,
+      "text": "traffic and we are going to change the"
+    },
+    {
+      "start": 242.56,
+      "duration": 4.8,
+      "text": "tags the tag is going to be the same as"
+    },
+    {
+      "start": 244.4,
+      "duration": 5.759,
+      "text": "name i'm going to make the tag as"
+    },
+    {
+      "start": 247.36,
+      "duration": 4.56,
+      "text": "tf5 underscore sg"
+    },
+    {
+      "start": 250.159,
+      "duration": 3.601,
+      "text": "all right so we have a security group"
+    },
+    {
+      "start": 251.92,
+      "duration": 3.28,
+      "text": "let's run terraform plan to see what"
+    },
+    {
+      "start": 253.76,
+      "duration": 3.52,
+      "text": "terraform is going to create according"
+    },
+    {
+      "start": 255.2,
+      "duration": 4.319,
+      "text": "to the configuration so if i turn on"
+    },
+    {
+      "start": 257.28,
+      "duration": 3.6,
+      "text": "telephone pan i have already aws"
+    },
+    {
+      "start": 259.519,
+      "duration": 4.161,
+      "text": "instance in the console so it should"
+    },
+    {
+      "start": 260.88,
+      "duration": 5.039,
+      "text": "show one resource that is aws security"
+    },
+    {
+      "start": 263.68,
+      "duration": 4.4,
+      "text": "group to be added in the console so"
+    },
+    {
+      "start": 265.919,
+      "duration": 5.201,
+      "text": "let's wait and as you can see one is to"
+    },
+    {
+      "start": 268.08,
+      "duration": 4.8,
+      "text": "be added and if i scroll this if i make"
+    },
+    {
+      "start": 271.12,
+      "duration": 4.0,
+      "text": "it bigger you can see"
+    },
+    {
+      "start": 272.88,
+      "duration": 5.68,
+      "text": "that it is security group is going to be"
+    },
+    {
+      "start": 275.12,
+      "duration": 6.32,
+      "text": "added which has port 22 port 443 and"
+    },
+    {
+      "start": 278.56,
+      "duration": 4.4,
+      "text": "port 80 right so this plus sign means it"
+    },
+    {
+      "start": 281.44,
+      "duration": 4.319,
+      "text": "is going to be added"
+    },
+    {
+      "start": 282.96,
+      "duration": 4.48,
+      "text": "so let's terraform apply to actually"
+    },
+    {
+      "start": 285.759,
+      "duration": 3.921,
+      "text": "have it in our console i'm going to"
+    },
+    {
+      "start": 287.44,
+      "duration": 3.84,
+      "text": "reuse terraform apply auto approve and"
+    },
+    {
+      "start": 289.68,
+      "duration": 3.92,
+      "text": "if you see here i don't have any"
+    },
+    {
+      "start": 291.28,
+      "duration": 3.6,
+      "text": "security group except this so now in"
+    },
+    {
+      "start": 293.6,
+      "duration": 3.36,
+      "text": "some seconds"
+    },
+    {
+      "start": 294.88,
+      "duration": 3.92,
+      "text": "when this is done you can see a security"
+    },
+    {
+      "start": 296.96,
+      "duration": 3.6,
+      "text": "group in our security group console so"
+    },
+    {
+      "start": 298.8,
+      "duration": 3.119,
+      "text": "if i create a security group does this"
+    },
+    {
+      "start": 300.56,
+      "duration": 4.079,
+      "text": "means that it would be automatically"
+    },
+    {
+      "start": 301.919,
+      "duration": 5.761,
+      "text": "attached to this instance no"
+    },
+    {
+      "start": 304.639,
+      "duration": 7.041,
+      "text": "so now it is created and if i refresh"
+    },
+    {
+      "start": 307.68,
+      "duration": 6.16,
+      "text": "this you can see a security group tf sg"
+    },
+    {
+      "start": 311.68,
+      "duration": 4.56,
+      "text": "which has inbound rule"
+    },
+    {
+      "start": 313.84,
+      "duration": 4.96,
+      "text": "and outbound rule"
+    },
+    {
+      "start": 316.24,
+      "duration": 5.76,
+      "text": "http https"
+    },
+    {
+      "start": 318.8,
+      "duration": 5.679,
+      "text": "for ipv4 ipv6 so it is twice so we have"
+    },
+    {
+      "start": 322.0,
+      "duration": 4.24,
+      "text": "three inbounds rules and and one"
+    },
+    {
+      "start": 324.479,
+      "duration": 4.961,
+      "text": "outbound rule that is all traffic from"
+    },
+    {
+      "start": 326.24,
+      "duration": 5.6,
+      "text": "anywhere for ipv4 and ipv6 aws security"
+    },
+    {
+      "start": 329.44,
+      "duration": 4.479,
+      "text": "group is created now if i check my"
+    },
+    {
+      "start": 331.84,
+      "duration": 4.48,
+      "text": "instance the security group is still"
+    },
+    {
+      "start": 333.919,
+      "duration": 5.681,
+      "text": "default because we have not made any"
+    },
+    {
+      "start": 336.32,
+      "duration": 5.2,
+      "text": "changes here we should add a parameter"
+    },
+    {
+      "start": 339.6,
+      "duration": 3.84,
+      "text": "that should tell that we have to attach"
+    },
+    {
+      "start": 341.52,
+      "duration": 3.92,
+      "text": "this security group to this instance we"
+    },
+    {
+      "start": 343.44,
+      "duration": 4.64,
+      "text": "have to enter a parameter that is"
+    },
+    {
+      "start": 345.44,
+      "duration": 2.64,
+      "text": "security"
+    },
+    {
+      "start": 348.16,
+      "duration": 3.68,
+      "text": "underscore"
+    },
+    {
+      "start": 349.28,
+      "duration": 5.28,
+      "text": "groups and it should be groups not group"
+    },
+    {
+      "start": 351.84,
+      "duration": 4.88,
+      "text": "because you can attach multiple security"
+    },
+    {
+      "start": 354.56,
+      "duration": 4.96,
+      "text": "group to a single instance right so i'm"
+    },
+    {
+      "start": 356.72,
+      "duration": 4.4,
+      "text": "going to type the name of this security"
+    },
+    {
+      "start": 359.52,
+      "duration": 3.28,
+      "text": "group so you have to enter the name and"
+    },
+    {
+      "start": 361.12,
+      "duration": 3.76,
+      "text": "you can enter the name by copying this"
+    },
+    {
+      "start": 362.8,
+      "duration": 5.2,
+      "text": "here"
+    },
+    {
+      "start": 364.88,
+      "duration": 4.879,
+      "text": "right and it is paste it here"
+    },
+    {
+      "start": 368.0,
+      "duration": 4.319,
+      "text": "remove the"
+    },
+    {
+      "start": 369.759,
+      "duration": 4.641,
+      "text": "and put a dot in that so aws security"
+    },
+    {
+      "start": 372.319,
+      "duration": 2.961,
+      "text": "group dot tf dot sg"
+    },
+    {
+      "start": 374.4,
+      "duration": 1.76,
+      "text": "dot"
+    },
+    {
+      "start": 375.28,
+      "duration": 2.8,
+      "text": "name"
+    },
+    {
+      "start": 376.16,
+      "duration": 3.68,
+      "text": "right so now"
+    },
+    {
+      "start": 378.08,
+      "duration": 3.679,
+      "text": "we have told terraform that this"
+    },
+    {
+      "start": 379.84,
+      "duration": 5.28,
+      "text": "instance should have security group that"
+    },
+    {
+      "start": 381.759,
+      "duration": 5.361,
+      "text": "is this which is created here right and"
+    },
+    {
+      "start": 385.12,
+      "duration": 4.16,
+      "text": "if i now terraform apply i'm going to"
+    },
+    {
+      "start": 387.12,
+      "duration": 4.88,
+      "text": "see a change here we should see that"
+    },
+    {
+      "start": 389.28,
+      "duration": 4.72,
+      "text": "this security group is changed to"
+    },
+    {
+      "start": 392.0,
+      "duration": 4.0,
+      "text": "the security group created here right so"
+    },
+    {
+      "start": 394.0,
+      "duration": 3.6,
+      "text": "let's wait for terraform apply to be"
+    },
+    {
+      "start": 396.0,
+      "duration": 3.36,
+      "text": "completed"
+    },
+    {
+      "start": 397.6,
+      "duration": 3.2,
+      "text": "so you can see one is going to be added"
+    },
+    {
+      "start": 399.36,
+      "duration": 2.959,
+      "text": "and one is going to be destroyed the"
+    },
+    {
+      "start": 400.8,
+      "duration": 2.64,
+      "text": "still design means it is going to be"
+    },
+    {
+      "start": 402.319,
+      "duration": 3.681,
+      "text": "changed"
+    },
+    {
+      "start": 403.44,
+      "duration": 4.0,
+      "text": "right so let's wait it is destroying our"
+    },
+    {
+      "start": 406.0,
+      "duration": 3.28,
+      "text": "current instance and it's going to"
+    },
+    {
+      "start": 407.44,
+      "duration": 4.72,
+      "text": "launch a new instance which has security"
+    },
+    {
+      "start": 409.28,
+      "duration": 4.4,
+      "text": "group that is declared here right so"
+    },
+    {
+      "start": 412.16,
+      "duration": 3.439,
+      "text": "this is how you create a security group"
+    },
+    {
+      "start": 413.68,
+      "duration": 4.4,
+      "text": "and it's very simple so now we will have"
+    },
+    {
+      "start": 415.599,
+      "duration": 4.561,
+      "text": "a security group that has port 22 and"
+    },
+    {
+      "start": 418.08,
+      "duration": 4.08,
+      "text": "port 443 and 80 attached to this"
+    },
+    {
+      "start": 420.16,
+      "duration": 3.52,
+      "text": "instance so let's wait for this to"
+    },
+    {
+      "start": 422.16,
+      "duration": 3.84,
+      "text": "complete"
+    },
+    {
+      "start": 423.68,
+      "duration": 4.639,
+      "text": "so if i go to the console now and if i"
+    },
+    {
+      "start": 426.0,
+      "duration": 3.599,
+      "text": "refresh i'll see a new instance going to"
+    },
+    {
+      "start": 428.319,
+      "duration": 2.32,
+      "text": "be created"
+    },
+    {
+      "start": 429.599,
+      "duration": 3.04,
+      "text": "and the"
+    },
+    {
+      "start": 430.639,
+      "duration": 4.641,
+      "text": "first one is going to be terminated so"
+    },
+    {
+      "start": 432.639,
+      "duration": 4.641,
+      "text": "the instance that had default security"
+    },
+    {
+      "start": 435.28,
+      "duration": 4.24,
+      "text": "group is now terminated and a new"
+    },
+    {
+      "start": 437.28,
+      "duration": 4.479,
+      "text": "instance is created so this instance"
+    },
+    {
+      "start": 439.52,
+      "duration": 4.48,
+      "text": "will have a security group that is"
+    },
+    {
+      "start": 441.759,
+      "duration": 4.16,
+      "text": "security group using terraform so if you"
+    },
+    {
+      "start": 444.0,
+      "duration": 4.24,
+      "text": "see it has completed and we have a"
+    },
+    {
+      "start": 445.919,
+      "duration": 3.601,
+      "text": "security group which has inbound and"
+    },
+    {
+      "start": 448.24,
+      "duration": 4.0,
+      "text": "outbound rule that is declared in the"
+    },
+    {
+      "start": 449.52,
+      "duration": 6.16,
+      "text": "terraform code so the inbound rule is"
+    },
+    {
+      "start": 452.24,
+      "duration": 6.72,
+      "text": "http https and ssh and the outbound rule"
+    },
+    {
+      "start": 455.68,
+      "duration": 6.56,
+      "text": "is for all traffic from anywhere that is"
+    },
+    {
+      "start": 458.96,
+      "duration": 5.76,
+      "text": "from ipv6 and ipv4 so all traffic right"
+    },
+    {
+      "start": 462.24,
+      "duration": 4.32,
+      "text": "so this is how you declare your security"
+    },
+    {
+      "start": 464.72,
+      "duration": 3.44,
+      "text": "groups so this way you create and attach"
+    },
+    {
+      "start": 466.56,
+      "duration": 3.759,
+      "text": "a security group to an instance using"
+    },
+    {
+      "start": 468.16,
+      "duration": 4.319,
+      "text": "terraform and i hope you got the video"
+    },
+    {
+      "start": 470.319,
+      "duration": 4.961,
+      "text": "if you understood this video please like"
+    },
+    {
+      "start": 472.479,
+      "duration": 4.321,
+      "text": "this video subscribe to this channel so"
+    },
+    {
+      "start": 475.28,
+      "duration": 4.08,
+      "text": "to test this out"
+    },
+    {
+      "start": 476.8,
+      "duration": 4.48,
+      "text": "let's just uh go to the instance and try"
+    },
+    {
+      "start": 479.36,
+      "duration": 3.6,
+      "text": "to ssh it so"
+    },
+    {
+      "start": 481.28,
+      "duration": 3.28,
+      "text": "in aws there's a new feature where you"
+    },
+    {
+      "start": 482.96,
+      "duration": 3.44,
+      "text": "can connect to the instance without key"
+    },
+    {
+      "start": 484.56,
+      "duration": 4.8,
+      "text": "pair in the console but you cannot do it"
+    },
+    {
+      "start": 486.4,
+      "duration": 4.88,
+      "text": "in your terminal so i cannot do it in my"
+    },
+    {
+      "start": 489.36,
+      "duration": 3.2,
+      "text": "terminal here i cannot access this"
+    },
+    {
+      "start": 491.28,
+      "duration": 3.68,
+      "text": "because i don't have a keypair attached"
+    },
+    {
+      "start": 492.56,
+      "duration": 4.8,
+      "text": "to this we don't have any keypair here"
+    },
+    {
+      "start": 494.96,
+      "duration": 4.48,
+      "text": "so let's just try it here to see if port"
+    },
+    {
+      "start": 497.36,
+      "duration": 4.72,
+      "text": "22 actually works or not"
+    },
+    {
+      "start": 499.44,
+      "duration": 4.64,
+      "text": "so it should open yeah we are here and"
+    },
+    {
+      "start": 502.08,
+      "duration": 4.559,
+      "text": "it has 420 to open so we have we are"
+    },
+    {
+      "start": 504.08,
+      "duration": 5.2,
+      "text": "inside the console and port 22 works"
+    },
+    {
+      "start": 506.639,
+      "duration": 5.28,
+      "text": "fine if i comment it out and try again"
+    },
+    {
+      "start": 509.28,
+      "duration": 4.8,
+      "text": "so you can see these this is going to be"
+    },
+    {
+      "start": 511.919,
+      "duration": 3.68,
+      "text": "deleted the port 22 inbound rule is"
+    },
+    {
+      "start": 514.08,
+      "duration": 3.68,
+      "text": "going to be deleted"
+    },
+    {
+      "start": 515.599,
+      "duration": 4.481,
+      "text": "this port is going to be deleted if"
+    },
+    {
+      "start": 517.76,
+      "duration": 5.12,
+      "text": "after this so yeah one is to be changed"
+    },
+    {
+      "start": 520.08,
+      "duration": 5.6,
+      "text": "and we cannot ssh into instance and"
+    },
+    {
+      "start": 522.88,
+      "duration": 5.12,
+      "text": "after this if i up refresh this the port"
+    },
+    {
+      "start": 525.68,
+      "duration": 5.44,
+      "text": "22 has been deleted so this should be"
+    },
+    {
+      "start": 528.0,
+      "duration": 5.6,
+      "text": "gone as well so if i refresh i'll see"
+    },
+    {
+      "start": 531.12,
+      "duration": 4.08,
+      "text": "that the page is not loading"
+    },
+    {
+      "start": 533.6,
+      "duration": 3.28,
+      "text": "it's not loading and it will show an"
+    },
+    {
+      "start": 535.2,
+      "duration": 3.28,
+      "text": "error"
+    },
+    {
+      "start": 536.88,
+      "duration": 3.92,
+      "text": "so it shows an error that the problem"
+    },
+    {
+      "start": 538.48,
+      "duration": 3.2,
+      "text": "connecting to your instance so this is"
+    },
+    {
+      "start": 540.8,
+      "duration": 3.28,
+      "text": "how"
+    },
+    {
+      "start": 541.68,
+      "duration": 5.12,
+      "text": "security group works in the next video"
+    },
+    {
+      "start": 544.08,
+      "duration": 5.04,
+      "text": "we are going to see how we can create a"
+    },
+    {
+      "start": 546.8,
+      "duration": 3.76,
+      "text": "key pair for this instance if i show you"
+    },
+    {
+      "start": 549.12,
+      "duration": 3.839,
+      "text": "there's no keeper attached to this"
+    },
+    {
+      "start": 550.56,
+      "duration": 4.32,
+      "text": "instance so if i scroll down if you can"
+    },
+    {
+      "start": 552.959,
+      "duration": 3.521,
+      "text": "see here there is no key pair attached"
+    },
+    {
+      "start": 554.88,
+      "duration": 3.44,
+      "text": "and sometimes we need key pair to"
+    },
+    {
+      "start": 556.48,
+      "duration": 3.68,
+      "text": "connect to the instance using terminal"
+    },
+    {
+      "start": 558.32,
+      "duration": 3.84,
+      "text": "so in the next video we are going to"
+    },
+    {
+      "start": 560.16,
+      "duration": 4.16,
+      "text": "create a key pair and attach it to our"
+    },
+    {
+      "start": 562.16,
+      "duration": 4.16,
+      "text": "instance so please subscribe to this"
+    },
+    {
+      "start": 564.32,
+      "duration": 4.48,
+      "text": "channel and like this video have a good"
+    },
+    {
+      "start": 566.32,
+      "duration": 2.48,
+      "text": "day"
+    }
+  ]
+}

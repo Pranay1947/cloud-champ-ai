@@ -1,0 +1,521 @@
+{
+  "video": {
+    "id": "FugonDV6RdE",
+    "title": "Github Tutorial: Generate Personal Access token to Clone and Push Private Repository",
+    "url": "https://www.youtube.com/watch?v=FugonDV6RdE",
+    "duration": 217,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.179,
+      "duration": 3.901,
+      "text": "hey everyone Welcome to Cloud champ in"
+    },
+    {
+      "start": 2.28,
+      "duration": 3.6,
+      "text": "this video I'm going to show you how you"
+    },
+    {
+      "start": 4.08,
+      "duration": 4.38,
+      "text": "can create personal access tokens on"
+    },
+    {
+      "start": 5.88,
+      "duration": 5.46,
+      "text": "GitHub to clone and push to your remote"
+    },
+    {
+      "start": 8.46,
+      "duration": 4.86,
+      "text": "private repositories if you see here I'm"
+    },
+    {
+      "start": 11.34,
+      "duration": 4.14,
+      "text": "trying to clone the repository and it's"
+    },
+    {
+      "start": 13.32,
+      "duration": 4.02,
+      "text": "asking me for username and password when"
+    },
+    {
+      "start": 15.48,
+      "duration": 3.84,
+      "text": "I entered my password it says support"
+    },
+    {
+      "start": 17.34,
+      "duration": 4.14,
+      "text": "for password authentication was removed"
+    },
+    {
+      "start": 19.32,
+      "duration": 4.02,
+      "text": "on August 13th and you need to check"
+    },
+    {
+      "start": 21.48,
+      "duration": 3.78,
+      "text": "this documentation to create personal"
+    },
+    {
+      "start": 23.34,
+      "duration": 5.939,
+      "text": "access token so if I open this"
+    },
+    {
+      "start": 25.26,
+      "duration": 5.64,
+      "text": "documentation it will open this one and"
+    },
+    {
+      "start": 29.279,
+      "duration": 4.261,
+      "text": "you can see"
+    },
+    {
+      "start": 30.9,
+      "duration": 4.74,
+      "text": "when cloning with https URL it's asking"
+    },
+    {
+      "start": 33.54,
+      "duration": 3.539,
+      "text": "you to create personal access token so"
+    },
+    {
+      "start": 35.64,
+      "duration": 3.18,
+      "text": "in this video I'm going to show you how"
+    },
+    {
+      "start": 37.079,
+      "duration": 5.281,
+      "text": "you can create personal access tokens on"
+    },
+    {
+      "start": 38.82,
+      "duration": 7.8,
+      "text": "GitHub let's get started so I'm going to"
+    },
+    {
+      "start": 42.36,
+      "duration": 6.48,
+      "text": "go to my GitHub profile and you can find"
+    },
+    {
+      "start": 46.62,
+      "duration": 3.66,
+      "text": "settings option here in the click on"
+    },
+    {
+      "start": 48.84,
+      "duration": 4.26,
+      "text": "settings option in"
+    },
+    {
+      "start": 50.28,
+      "duration": 4.799,
+      "text": "and then inside settings scroll down you"
+    },
+    {
+      "start": 53.1,
+      "duration": 4.08,
+      "text": "will find developer settings this is"
+    },
+    {
+      "start": 55.079,
+      "duration": 4.021,
+      "text": "where you can create your access tokens"
+    },
+    {
+      "start": 57.18,
+      "duration": 3.539,
+      "text": "so"
+    },
+    {
+      "start": 59.1,
+      "duration": 3.54,
+      "text": "click on personal access tokens and"
+    },
+    {
+      "start": 60.719,
+      "duration": 3.721,
+      "text": "there are two options Define grain"
+    },
+    {
+      "start": 62.64,
+      "duration": 3.479,
+      "text": "tokens and the tokens classic"
+    },
+    {
+      "start": 64.44,
+      "duration": 3.06,
+      "text": "so to create personal access token we're"
+    },
+    {
+      "start": 66.119,
+      "duration": 3.421,
+      "text": "going to click on tokens classic option"
+    },
+    {
+      "start": 67.5,
+      "duration": 4.02,
+      "text": "here and then we can so this is the page"
+    },
+    {
+      "start": 69.54,
+      "duration": 3.24,
+      "text": "you will get I already have one access"
+    },
+    {
+      "start": 71.52,
+      "duration": 3.3,
+      "text": "token and you can see all the"
+    },
+    {
+      "start": 72.78,
+      "duration": 3.42,
+      "text": "permissions that I have so but for you"
+    },
+    {
+      "start": 74.82,
+      "duration": 3.18,
+      "text": "if you want to create a new token click"
+    },
+    {
+      "start": 76.2,
+      "duration": 4.08,
+      "text": "on generate new token option and then"
+    },
+    {
+      "start": 78.0,
+      "duration": 4.02,
+      "text": "click on new token classic option this"
+    },
+    {
+      "start": 80.28,
+      "duration": 4.62,
+      "text": "is fine grained where you can create"
+    },
+    {
+      "start": 82.02,
+      "duration": 5.279,
+      "text": "tokens with more permissions and to"
+    },
+    {
+      "start": 84.9,
+      "duration": 4.14,
+      "text": "ensure security but this isn't better"
+    },
+    {
+      "start": 87.299,
+      "duration": 4.5,
+      "text": "right now so I'm going to choose the"
+    },
+    {
+      "start": 89.04,
+      "duration": 4.38,
+      "text": "generate new token classic option so"
+    },
+    {
+      "start": 91.799,
+      "duration": 3.481,
+      "text": "here first thing we need to do is to"
+    },
+    {
+      "start": 93.42,
+      "duration": 3.72,
+      "text": "give the names I'm going to name it my"
+    },
+    {
+      "start": 95.28,
+      "duration": 3.24,
+      "text": "token and then you need to set the"
+    },
+    {
+      "start": 97.14,
+      "duration": 3.06,
+      "text": "expiration if you want this token to"
+    },
+    {
+      "start": 98.52,
+      "duration": 3.18,
+      "text": "expire in seven days then select seven"
+    },
+    {
+      "start": 100.2,
+      "duration": 4.2,
+      "text": "if you don't want it to expire then"
+    },
+    {
+      "start": 101.7,
+      "duration": 4.379,
+      "text": "click on no expiration option so"
+    },
+    {
+      "start": 104.4,
+      "duration": 3.24,
+      "text": "once you set up the expiration you need"
+    },
+    {
+      "start": 106.079,
+      "duration": 3.72,
+      "text": "to select the scope or the permissions"
+    },
+    {
+      "start": 107.64,
+      "duration": 4.92,
+      "text": "that this token should have so I'm going"
+    },
+    {
+      "start": 109.799,
+      "duration": 4.801,
+      "text": "to select repo which will give all"
+    },
+    {
+      "start": 112.56,
+      "duration": 3.66,
+      "text": "actions or all permissions for this repo"
+    },
+    {
+      "start": 114.6,
+      "duration": 3.42,
+      "text": "if I'm using this token I can also"
+    },
+    {
+      "start": 116.22,
+      "duration": 4.38,
+      "text": "choose admin organization here"
+    },
+    {
+      "start": 118.02,
+      "duration": 4.5,
+      "text": "and I can choose access to delete the"
+    },
+    {
+      "start": 120.6,
+      "duration": 3.479,
+      "text": "repository so this is all I'm going to"
+    },
+    {
+      "start": 122.52,
+      "duration": 3.36,
+      "text": "go ahead and click on generate new token"
+    },
+    {
+      "start": 124.079,
+      "duration": 3.54,
+      "text": "option once I click on generate new"
+    },
+    {
+      "start": 125.88,
+      "duration": 3.9,
+      "text": "token this is what I'm going to get so"
+    },
+    {
+      "start": 127.619,
+      "duration": 4.861,
+      "text": "if you are seeing this make sure you"
+    },
+    {
+      "start": 129.78,
+      "duration": 3.78,
+      "text": "save your generate token your token"
+    },
+    {
+      "start": 132.48,
+      "duration": 3.24,
+      "text": "because you won't be able to see it"
+    },
+    {
+      "start": 133.56,
+      "duration": 5.759,
+      "text": "again after this is closed so I'm going"
+    },
+    {
+      "start": 135.72,
+      "duration": 5.879,
+      "text": "to go to my uh terminal again and do the"
+    },
+    {
+      "start": 139.319,
+      "duration": 4.081,
+      "text": "same command git clone"
+    },
+    {
+      "start": 141.599,
+      "duration": 4.14,
+      "text": "https and this time I'm going to enter"
+    },
+    {
+      "start": 143.4,
+      "duration": 3.9,
+      "text": "my username so this is my username and"
+    },
+    {
+      "start": 145.739,
+      "duration": 4.681,
+      "text": "in place of my password I'm going to"
+    },
+    {
+      "start": 147.3,
+      "duration": 5.34,
+      "text": "paste my token that I've copied so once"
+    },
+    {
+      "start": 150.42,
+      "duration": 4.92,
+      "text": "I paste my token and if I press enter it"
+    },
+    {
+      "start": 152.64,
+      "duration": 4.86,
+      "text": "will show me that it has cloned right so"
+    },
+    {
+      "start": 155.34,
+      "duration": 5.759,
+      "text": "there's no error of authentication this"
+    },
+    {
+      "start": 157.5,
+      "duration": 5.7,
+      "text": "is how you can create tokens on"
+    },
+    {
+      "start": 161.099,
+      "duration": 3.841,
+      "text": "GitHub if you choose to go with fine day"
+    },
+    {
+      "start": 163.2,
+      "duration": 3.36,
+      "text": "fine grain tokens let me show you how"
+    },
+    {
+      "start": 164.94,
+      "duration": 3.54,
+      "text": "can you create fine grain tokens as well"
+    },
+    {
+      "start": 166.56,
+      "duration": 5.1,
+      "text": "so click on generate token the same way"
+    },
+    {
+      "start": 168.48,
+      "duration": 5.28,
+      "text": "you need to enter the name so my token"
+    },
+    {
+      "start": 171.66,
+      "duration": 5.1,
+      "text": "and then you can select the expiration"
+    },
+    {
+      "start": 173.76,
+      "duration": 5.1,
+      "text": "and here you can select if you want to"
+    },
+    {
+      "start": 176.76,
+      "duration": 3.9,
+      "text": "have access for all depositories or for"
+    },
+    {
+      "start": 178.86,
+      "duration": 4.14,
+      "text": "just one some of the repositories on"
+    },
+    {
+      "start": 180.66,
+      "duration": 4.32,
+      "text": "your GitHub profile so I'm going to go"
+    },
+    {
+      "start": 183.0,
+      "duration": 4.08,
+      "text": "with all repositories let's say and then"
+    },
+    {
+      "start": 184.98,
+      "duration": 4.52,
+      "text": "you can select repository permission so"
+    },
+    {
+      "start": 187.08,
+      "duration": 6.0,
+      "text": "here you can Define more"
+    },
+    {
+      "start": 189.5,
+      "duration": 5.5,
+      "text": "permissions like you can find gray in it"
+    },
+    {
+      "start": 193.08,
+      "duration": 4.62,
+      "text": "and give only the permissions that are"
+    },
+    {
+      "start": 195.0,
+      "duration": 4.319,
+      "text": "required this is why using this you can"
+    },
+    {
+      "start": 197.7,
+      "duration": 3.66,
+      "text": "have more secure so you can choose to"
+    },
+    {
+      "start": 199.319,
+      "duration": 3.181,
+      "text": "give whatever permission you want and"
+    },
+    {
+      "start": 201.36,
+      "duration": 2.22,
+      "text": "then go ahead and create the generate"
+    },
+    {
+      "start": 202.5,
+      "duration": 3.36,
+      "text": "token option"
+    },
+    {
+      "start": 203.58,
+      "duration": 4.439,
+      "text": "so I hope this was informative now you"
+    },
+    {
+      "start": 205.86,
+      "duration": 3.959,
+      "text": "understood how to create access tokens"
+    },
+    {
+      "start": 208.019,
+      "duration": 3.421,
+      "text": "on GitHub if you have any questions any"
+    },
+    {
+      "start": 209.819,
+      "duration": 3.301,
+      "text": "doubt let me know in the comment section"
+    },
+    {
+      "start": 211.44,
+      "duration": 5.36,
+      "text": "and if you haven't subscribed to my"
+    },
+    {
+      "start": 213.12,
+      "duration": 3.68,
+      "text": "Channel Please Subscribe have a good day"
+    }
+  ]
+}

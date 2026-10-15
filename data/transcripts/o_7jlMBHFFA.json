@@ -1,0 +1,2966 @@
+{
+  "video": {
+    "id": "o_7jlMBHFFA",
+    "title": "REAL CKA Exam Questions to Practice and Pass the Certified Kubernetes Administrator Cert!",
+    "url": "https://www.youtube.com/watch?v=o_7jlMBHFFA",
+    "duration": 1387,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.48,
+      "duration": 4.6,
+      "text": "in this video we look at important exam"
+    },
+    {
+      "start": 2.919,
+      "duration": 5.561,
+      "text": "questions for the certified kubernetes"
+    },
+    {
+      "start": 5.08,
+      "duration": 4.639,
+      "text": "administrator or cka exam throughout the"
+    },
+    {
+      "start": 8.48,
+      "duration": 3.64,
+      "text": "video we will be solving these"
+    },
+    {
+      "start": 9.719,
+      "duration": 4.561,
+      "text": "kubernetes questions using the official"
+    },
+    {
+      "start": 12.12,
+      "duration": 3.439,
+      "text": "kubernetes documentation which will help"
+    },
+    {
+      "start": 14.28,
+      "duration": 3.56,
+      "text": "you understand how you can find"
+    },
+    {
+      "start": 15.559,
+      "duration": 4.921,
+      "text": "solutions for your questions and answer"
+    },
+    {
+      "start": 17.84,
+      "duration": 4.88,
+      "text": "them in your CK exam so without wasting"
+    },
+    {
+      "start": 20.48,
+      "duration": 3.639,
+      "text": "any time let's start with the video but"
+    },
+    {
+      "start": 22.72,
+      "duration": 3.6,
+      "text": "make sure to like this video And"
+    },
+    {
+      "start": 24.119,
+      "duration": 3.92,
+      "text": "subscribe to Cloud champ let's go all"
+    },
+    {
+      "start": 26.32,
+      "duration": 4.119,
+      "text": "right so I'm here on my computer screen"
+    },
+    {
+      "start": 28.039,
+      "duration": 5.04,
+      "text": "and I have all this different CK exam"
+    },
+    {
+      "start": 30.439,
+      "duration": 4.001,
+      "text": "questions to practice and for this video"
+    },
+    {
+      "start": 33.079,
+      "duration": 3.881,
+      "text": "we are going to be using kubernetes"
+    },
+    {
+      "start": 34.44,
+      "duration": 3.799,
+      "text": "cluster from killer Koda killer Koda is"
+    },
+    {
+      "start": 36.96,
+      "duration": 3.119,
+      "text": "a website that provides you with"
+    },
+    {
+      "start": 38.239,
+      "duration": 3.881,
+      "text": "playgrounds to learn different devops"
+    },
+    {
+      "start": 40.079,
+      "duration": 4.121,
+      "text": "tools for this video we will be using"
+    },
+    {
+      "start": 42.12,
+      "duration": 3.84,
+      "text": "the cka playground that provides you"
+    },
+    {
+      "start": 44.2,
+      "duration": 4.24,
+      "text": "with the environment with the current"
+    },
+    {
+      "start": 45.96,
+      "duration": 4.079,
+      "text": "version of the cka exam killer Koda"
+    },
+    {
+      "start": 48.44,
+      "duration": 4.32,
+      "text": "provides you with a kubernetes tester"
+    },
+    {
+      "start": 50.039,
+      "duration": 5.601,
+      "text": "that has two nodes one master and one"
+    },
+    {
+      "start": 52.76,
+      "duration": 4.439,
+      "text": "worker node questions in the real CK"
+    },
+    {
+      "start": 55.64,
+      "duration": 3.919,
+      "text": "exam will be based on all these"
+    },
+    {
+      "start": 57.199,
+      "duration": 4.0,
+      "text": "different domains story will have 10% of"
+    },
+    {
+      "start": 59.559,
+      "duration": 4.16,
+      "text": "the questions troubleshooting will have"
+    },
+    {
+      "start": 61.199,
+      "duration": 4.561,
+      "text": "30% and so on if you want to get more"
+    },
+    {
+      "start": 63.719,
+      "duration": 3.161,
+      "text": "information click on expand all option"
+    },
+    {
+      "start": 65.76,
+      "duration": 3.6,
+      "text": "and you will see all the different"
+    },
+    {
+      "start": 66.88,
+      "duration": 3.72,
+      "text": "topics that the questions will come from"
+    },
+    {
+      "start": 69.36,
+      "duration": 2.52,
+      "text": "in this video we are going to be"
+    },
+    {
+      "start": 70.6,
+      "duration": 3.159,
+      "text": "covering questions from all these"
+    },
+    {
+      "start": 71.88,
+      "duration": 3.559,
+      "text": "different domains so make sure you watch"
+    },
+    {
+      "start": 73.759,
+      "duration": 4.081,
+      "text": "this video till the end and also"
+    },
+    {
+      "start": 75.439,
+      "duration": 4.561,
+      "text": "practice it so with that being said now"
+    },
+    {
+      "start": 77.84,
+      "duration": 4.76,
+      "text": "let's start with the first"
+    },
+    {
+      "start": 80.0,
+      "duration": 4.88,
+      "text": "question so the first question is take a"
+    },
+    {
+      "start": 82.6,
+      "duration": 3.6,
+      "text": "backup of the ET CD cluster and save it"
+    },
+    {
+      "start": 84.88,
+      "duration": 4.559,
+      "text": "to/"
+    },
+    {
+      "start": 86.2,
+      "duration": 5.16,
+      "text": "opcd hyphen backup. DB file in this"
+    },
+    {
+      "start": 89.439,
+      "duration": 4.121,
+      "text": "question we are asked to create a backup"
+    },
+    {
+      "start": 91.36,
+      "duration": 4.36,
+      "text": "of the HD cluster and save it to this"
+    },
+    {
+      "start": 93.56,
+      "duration": 4.04,
+      "text": "part the vitage for the question is 10"
+    },
+    {
+      "start": 95.72,
+      "duration": 3.8,
+      "text": "points which means this is a very"
+    },
+    {
+      "start": 97.6,
+      "duration": 3.76,
+      "text": "important question and if you have"
+    },
+    {
+      "start": 99.52,
+      "duration": 3.68,
+      "text": "checked my previous videos you might"
+    },
+    {
+      "start": 101.36,
+      "duration": 4.119,
+      "text": "already know HD is a storage which"
+    },
+    {
+      "start": 103.2,
+      "duration": 4.279,
+      "text": "stores all the important information of"
+    },
+    {
+      "start": 105.479,
+      "duration": 3.68,
+      "text": "the kubernetes cluster and as a"
+    },
+    {
+      "start": 107.479,
+      "duration": 3.6,
+      "text": "kubernetes administrator it is very"
+    },
+    {
+      "start": 109.159,
+      "duration": 4.0,
+      "text": "important for you to know how to take"
+    },
+    {
+      "start": 111.079,
+      "duration": 3.64,
+      "text": "backup of hcd so this is an important"
+    },
+    {
+      "start": 113.159,
+      "duration": 4.041,
+      "text": "question and I'm sure this will come in"
+    },
+    {
+      "start": 114.719,
+      "duration": 3.961,
+      "text": "your exam so let's see how to solve this"
+    },
+    {
+      "start": 117.2,
+      "duration": 3.4,
+      "text": "I'm going to be using the kubes"
+    },
+    {
+      "start": 118.68,
+      "duration": 4.68,
+      "text": "documentation to solve this because you"
+    },
+    {
+      "start": 120.6,
+      "duration": 5.199,
+      "text": "will be able to use this documentation"
+    },
+    {
+      "start": 123.36,
+      "duration": 4.6,
+      "text": "even when you give your CK exam so let's"
+    },
+    {
+      "start": 125.799,
+      "duration": 3.68,
+      "text": "search for HD here in the search box and"
+    },
+    {
+      "start": 127.96,
+      "duration": 3.44,
+      "text": "I'm going to open the first link here"
+    },
+    {
+      "start": 129.479,
+      "duration": 4.081,
+      "text": "which says operating at CD cluster for"
+    },
+    {
+      "start": 131.4,
+      "duration": 3.44,
+      "text": "kubernetes in this if you see on the"
+    },
+    {
+      "start": 133.56,
+      "duration": 3.28,
+      "text": "right side here there are different"
+    },
+    {
+      "start": 134.84,
+      "duration": 4.399,
+      "text": "topics here let's go and click on the"
+    },
+    {
+      "start": 136.84,
+      "duration": 3.679,
+      "text": "backing up and H cluster option here you"
+    },
+    {
+      "start": 139.239,
+      "duration": 3.201,
+      "text": "can go ahead and read about it if you"
+    },
+    {
+      "start": 140.519,
+      "duration": 4.681,
+      "text": "want to but the exact command to take"
+    },
+    {
+      "start": 142.44,
+      "duration": 4.96,
+      "text": "the backup is this one so I will copy"
+    },
+    {
+      "start": 145.2,
+      "duration": 3.759,
+      "text": "this command and paste it in my terminal"
+    },
+    {
+      "start": 147.4,
+      "duration": 3.4,
+      "text": "if you look at this command this command"
+    },
+    {
+      "start": 148.959,
+      "duration": 4.201,
+      "text": "requires you to add few things the first"
+    },
+    {
+      "start": 150.8,
+      "duration": 4.48,
+      "text": "is the end point on which HD is running"
+    },
+    {
+      "start": 153.16,
+      "duration": 4.079,
+      "text": "so it's already here the end point is"
+    },
+    {
+      "start": 155.28,
+      "duration": 4.679,
+      "text": "127.0.0.1"
+    },
+    {
+      "start": 157.239,
+      "duration": 4.801,
+      "text": "2379 which is where the ETD is running"
+    },
+    {
+      "start": 159.959,
+      "duration": 4.121,
+      "text": "along with this you also need the caert"
+    },
+    {
+      "start": 162.04,
+      "duration": 4.119,
+      "text": "which is the trusted CA file you need"
+    },
+    {
+      "start": 164.08,
+      "duration": 3.92,
+      "text": "the certificate which is the cert file"
+    },
+    {
+      "start": 166.159,
+      "duration": 3.681,
+      "text": "the key which is the key file and also"
+    },
+    {
+      "start": 168.0,
+      "duration": 4.28,
+      "text": "the place where you want to store your"
+    },
+    {
+      "start": 169.84,
+      "duration": 4.52,
+      "text": "backup so where can I find all this data"
+    },
+    {
+      "start": 172.28,
+      "duration": 4.8,
+      "text": "this data can be found in the Manifest"
+    },
+    {
+      "start": 174.36,
+      "duration": 5.959,
+      "text": "file which is required to run the hcd"
+    },
+    {
+      "start": 177.08,
+      "duration": 5.519,
+      "text": "Pod so if I do K get pods"
+    },
+    {
+      "start": 180.319,
+      "duration": 4.801,
+      "text": "- A I will see all the parts from all"
+    },
+    {
+      "start": 182.599,
+      "duration": 4.601,
+      "text": "the namespaces and you can see hcd is"
+    },
+    {
+      "start": 185.12,
+      "duration": 3.839,
+      "text": "running in the cube system Nam space and"
+    },
+    {
+      "start": 187.2,
+      "duration": 3.84,
+      "text": "the name of the Pod is hcd hyphen"
+    },
+    {
+      "start": 188.959,
+      "duration": 4.881,
+      "text": "control plane which means this is a"
+    },
+    {
+      "start": 191.04,
+      "duration": 4.96,
+      "text": "static pod running on control plane node"
+    },
+    {
+      "start": 193.84,
+      "duration": 4.28,
+      "text": "and we all know this manifest files for"
+    },
+    {
+      "start": 196.0,
+      "duration": 5.04,
+      "text": "all static parts are present at the"
+    },
+    {
+      "start": 198.12,
+      "duration": 5.479,
+      "text": "folder which is hcd sorry Etc /"
+    },
+    {
+      "start": 201.04,
+      "duration": 5.24,
+      "text": "kubernetes SL Manifest this is where you"
+    },
+    {
+      "start": 203.599,
+      "duration": 5.761,
+      "text": "can find all the Manifest files for all"
+    },
+    {
+      "start": 206.28,
+      "duration": 5.319,
+      "text": "the static parts so here is the hd. yaml"
+    },
+    {
+      "start": 209.36,
+      "duration": 4.519,
+      "text": "file and if you want to see uh the"
+    },
+    {
+      "start": 211.599,
+      "duration": 4.72,
+      "text": "information for cser for CT file for the"
+    },
+    {
+      "start": 213.879,
+      "duration": 5.801,
+      "text": "key file let's do cat here and I want to"
+    },
+    {
+      "start": 216.319,
+      "duration": 4.681,
+      "text": "say cat hd. yl if you go here inside the"
+    },
+    {
+      "start": 219.68,
+      "duration": 5.08,
+      "text": "command section you will see this is"
+    },
+    {
+      "start": 221.0,
+      "duration": 5.599,
+      "text": "aert file and this is the trusted CA"
+    },
+    {
+      "start": 224.76,
+      "duration": 3.16,
+      "text": "file that we require along with that we"
+    },
+    {
+      "start": 226.599,
+      "duration": 3.161,
+      "text": "also require the key file which is"
+    },
+    {
+      "start": 227.92,
+      "duration": 5.2,
+      "text": "present here so this is all the data we"
+    },
+    {
+      "start": 229.76,
+      "duration": 5.92,
+      "text": "require to take the backup of our hcd as"
+    },
+    {
+      "start": 233.12,
+      "duration": 4.679,
+      "text": "per this command so let's put that data"
+    },
+    {
+      "start": 235.68,
+      "duration": 4.0,
+      "text": "here so instead of getting all this"
+    },
+    {
+      "start": 237.799,
+      "duration": 3.72,
+      "text": "information here I'm going to run a grap"
+    },
+    {
+      "start": 239.68,
+      "duration": 5.72,
+      "text": "command so I'll say cat"
+    },
+    {
+      "start": 241.519,
+      "duration": 6.201,
+      "text": "h3. GP F once I do that I get all the"
+    },
+    {
+      "start": 245.4,
+      "duration": 4.44,
+      "text": "information required here so let's put"
+    },
+    {
+      "start": 247.72,
+      "duration": 4.719,
+      "text": "this data one by one in our"
+    },
+    {
+      "start": 249.84,
+      "duration": 7.399,
+      "text": "Command so this is the command which is"
+    },
+    {
+      "start": 252.439,
+      "duration": 7.001,
+      "text": "hcd CTL API equals to 3 HDL inpo is this"
+    },
+    {
+      "start": 257.239,
+      "duration": 3.921,
+      "text": "we need to fill all this data now so the"
+    },
+    {
+      "start": 259.44,
+      "duration": 4.52,
+      "text": "backup location where we want to store"
+    },
+    {
+      "start": 261.16,
+      "duration": 5.68,
+      "text": "our backup is going to be/ opt"
+    },
+    {
+      "start": 263.96,
+      "duration": 6.64,
+      "text": "tcd backup. DP so I'm going to put that"
+    },
+    {
+      "start": 266.84,
+      "duration": 6.28,
+      "text": "here/ opt slcd"
+    },
+    {
+      "start": 270.6,
+      "duration": 2.52,
+      "text": "Isen"
+    },
+    {
+      "start": 273.639,
+      "duration": 5.321,
+      "text": "backup. DB make sure you always copy"
+    },
+    {
+      "start": 277.039,
+      "duration": 4.641,
+      "text": "paste stuff rather than writing it"
+    },
+    {
+      "start": 278.96,
+      "duration": 4.28,
+      "text": "yourself in the exam to avoid issues but"
+    },
+    {
+      "start": 281.68,
+      "duration": 4.16,
+      "text": "I don't have the option to copy paste"
+    },
+    {
+      "start": 283.24,
+      "duration": 3.799,
+      "text": "from PPT so I'll type it out along with"
+    },
+    {
+      "start": 285.84,
+      "duration": 4.28,
+      "text": "this you need to put the key file the"
+    },
+    {
+      "start": 287.039,
+      "duration": 5.801,
+      "text": "key file is present here which is this"
+    },
+    {
+      "start": 290.12,
+      "duration": 4.24,
+      "text": "I'm going to copy this and paste it"
+    },
+    {
+      "start": 292.84,
+      "duration": 4.359,
+      "text": "using control shift"
+    },
+    {
+      "start": 294.36,
+      "duration": 5.88,
+      "text": "wi along with key I also need to put the"
+    },
+    {
+      "start": 297.199,
+      "duration": 6.44,
+      "text": "certificate file so the certificate file"
+    },
+    {
+      "start": 300.24,
+      "duration": 6.519,
+      "text": "is here let's copy this and paste it"
+    },
+    {
+      "start": 303.639,
+      "duration": 4.881,
+      "text": "here lastly we also need to put the cser"
+    },
+    {
+      "start": 306.759,
+      "duration": 4.081,
+      "text": "file which is actually the tested CF"
+    },
+    {
+      "start": 308.52,
+      "duration": 7.44,
+      "text": "file that is here so I'm going to"
+    },
+    {
+      "start": 310.84,
+      "duration": 6.639,
+      "text": "Cy that and paste it here once I run"
+    },
+    {
+      "start": 315.96,
+      "duration": 3.64,
+      "text": "this command I should be able to get the"
+    },
+    {
+      "start": 317.479,
+      "duration": 4.72,
+      "text": "backup stored in this particular path so"
+    },
+    {
+      "start": 319.6,
+      "duration": 5.039,
+      "text": "let's press enter and you get an output"
+    },
+    {
+      "start": 322.199,
+      "duration": 4.401,
+      "text": "saying snapshot saved at this path to"
+    },
+    {
+      "start": 324.639,
+      "duration": 4.321,
+      "text": "confirm I'm going to just run the cat"
+    },
+    {
+      "start": 326.6,
+      "duration": 5.56,
+      "text": "command for this folder and you will see"
+    },
+    {
+      "start": 328.96,
+      "duration": 5.079,
+      "text": "all the data is now stored for hcd in"
+    },
+    {
+      "start": 332.16,
+      "duration": 4.2,
+      "text": "this particular file so this is how you"
+    },
+    {
+      "start": 334.039,
+      "duration": 4.16,
+      "text": "can solve this question and get 10"
+    },
+    {
+      "start": 336.36,
+      "duration": 4.279,
+      "text": "points for your exam let's go to"
+    },
+    {
+      "start": 338.199,
+      "duration": 4.44,
+      "text": "question number two the next question is"
+    },
+    {
+      "start": 340.639,
+      "duration": 4.321,
+      "text": "create a new deployment called engine X"
+    },
+    {
+      "start": 342.639,
+      "duration": 5.641,
+      "text": "hyphen deployment with the image engine"
+    },
+    {
+      "start": 344.96,
+      "duration": 6.16,
+      "text": "X schol 1.16 and two replicas next"
+    },
+    {
+      "start": 348.28,
+      "duration": 5.759,
+      "text": "upgrade the deployment to version 1.17"
+    },
+    {
+      "start": 351.12,
+      "duration": 4.24,
+      "text": "using rolling updates and record it so"
+    },
+    {
+      "start": 354.039,
+      "duration": 3.401,
+      "text": "in this question we are asked to create"
+    },
+    {
+      "start": 355.36,
+      "duration": 4.119,
+      "text": "a deployment with this name and using"
+    },
+    {
+      "start": 357.44,
+      "duration": 4.16,
+      "text": "the image this one and having two"
+    },
+    {
+      "start": 359.479,
+      "duration": 4.601,
+      "text": "replicas once the deployment is created"
+    },
+    {
+      "start": 361.6,
+      "duration": 5.52,
+      "text": "we need to upgrade it to version"
+    },
+    {
+      "start": 364.08,
+      "duration": 5.16,
+      "text": "1.17 using rolling update strategy and"
+    },
+    {
+      "start": 367.12,
+      "duration": 3.68,
+      "text": "also record it so let's see how we can"
+    },
+    {
+      "start": 369.24,
+      "duration": 3.56,
+      "text": "solve this if you have watched my"
+    },
+    {
+      "start": 370.8,
+      "duration": 4.16,
+      "text": "previous video especially the important"
+    },
+    {
+      "start": 372.8,
+      "duration": 4.48,
+      "text": "kubernetes commands video you will know"
+    },
+    {
+      "start": 374.96,
+      "duration": 4.959,
+      "text": "how you can use imperative command to"
+    },
+    {
+      "start": 377.28,
+      "duration": 4.319,
+      "text": "create objects like deployment Cs and a"
+    },
+    {
+      "start": 379.919,
+      "duration": 3.601,
+      "text": "lot more so for this question we are"
+    },
+    {
+      "start": 381.599,
+      "duration": 3.401,
+      "text": "going to be using imperative command and"
+    },
+    {
+      "start": 383.52,
+      "duration": 3.399,
+      "text": "if you don't know about that make sure"
+    },
+    {
+      "start": 385.0,
+      "duration": 3.44,
+      "text": "you check the previous video so let's"
+    },
+    {
+      "start": 386.919,
+      "duration": 3.72,
+      "text": "create a new deployment with this name"
+    },
+    {
+      "start": 388.44,
+      "duration": 4.36,
+      "text": "and having this image with two replicas"
+    },
+    {
+      "start": 390.639,
+      "duration": 6.361,
+      "text": "using imperative command you can just do"
+    },
+    {
+      "start": 392.8,
+      "duration": 6.16,
+      "text": "c Cube CTL create"
+    },
+    {
+      "start": 397.0,
+      "duration": 3.4,
+      "text": "deployment the name of the deployment is"
+    },
+    {
+      "start": 398.96,
+      "duration": 3.239,
+      "text": "going to be engine X hyphen deployment"
+    },
+    {
+      "start": 400.4,
+      "duration": 3.04,
+      "text": "so let's put that name here engine X"
+    },
+    {
+      "start": 402.199,
+      "duration": 3.161,
+      "text": "hyen"
+    },
+    {
+      "start": 403.44,
+      "duration": 3.96,
+      "text": "deployment image used for this"
+    },
+    {
+      "start": 405.36,
+      "duration": 5.16,
+      "text": "deployment is going to be engine X colon"
+    },
+    {
+      "start": 407.4,
+      "duration": 6.88,
+      "text": "1.16 so I'll say D- image is going to be"
+    },
+    {
+      "start": 410.52,
+      "duration": 6.48,
+      "text": "engine X colon"
+    },
+    {
+      "start": 414.28,
+      "duration": 5.8,
+      "text": "1.16 replicas has to be two so I'll say"
+    },
+    {
+      "start": 417.0,
+      "duration": 4.96,
+      "text": "Das Das replica and it is to be into to"
+    },
+    {
+      "start": 420.08,
+      "duration": 3.64,
+      "text": "so once I press enter deployment will be"
+    },
+    {
+      "start": 421.96,
+      "duration": 3.88,
+      "text": "created and you can also confirm by"
+    },
+    {
+      "start": 423.72,
+      "duration": 3.52,
+      "text": "running key get deployments you will see"
+    },
+    {
+      "start": 425.84,
+      "duration": 4.199,
+      "text": "our engine next deployment is now"
+    },
+    {
+      "start": 427.24,
+      "duration": 5.44,
+      "text": "created having two replicas which is now"
+    },
+    {
+      "start": 430.039,
+      "duration": 5.201,
+      "text": "going to be uh creating and you can see"
+    },
+    {
+      "start": 432.68,
+      "duration": 4.04,
+      "text": "it's running as well all right so once"
+    },
+    {
+      "start": 435.24,
+      "duration": 4.2,
+      "text": "the deployment is created we are asked"
+    },
+    {
+      "start": 436.72,
+      "duration": 6.199,
+      "text": "to we are asked to upgrade the version"
+    },
+    {
+      "start": 439.44,
+      "duration": 5.4,
+      "text": "from 1.16 to 1.17 using rolling update"
+    },
+    {
+      "start": 442.919,
+      "duration": 3.96,
+      "text": "in kuties there are two ways to update"
+    },
+    {
+      "start": 444.84,
+      "duration": 3.88,
+      "text": "deployment one is by using the strategy"
+    },
+    {
+      "start": 446.879,
+      "duration": 3.88,
+      "text": "which is recreate deployment that will"
+    },
+    {
+      "start": 448.72,
+      "duration": 3.68,
+      "text": "kill the pods and then recreate it the"
+    },
+    {
+      "start": 450.759,
+      "duration": 3.641,
+      "text": "second one is rolling update which is"
+    },
+    {
+      "start": 452.4,
+      "duration": 4.079,
+      "text": "the default one and we are asked to"
+    },
+    {
+      "start": 454.4,
+      "duration": 4.079,
+      "text": "update our deployment using this rolling"
+    },
+    {
+      "start": 456.479,
+      "duration": 3.28,
+      "text": "update as rolling update is a default"
+    },
+    {
+      "start": 458.479,
+      "duration": 2.961,
+      "text": "deployment you don't have to change"
+    },
+    {
+      "start": 459.759,
+      "duration": 5.4,
+      "text": "anything instead you just need to change"
+    },
+    {
+      "start": 461.44,
+      "duration": 6.039,
+      "text": "the image from 1.16 to 1.17 which you"
+    },
+    {
+      "start": 465.159,
+      "duration": 3.76,
+      "text": "can do either using the K edit command"
+    },
+    {
+      "start": 467.479,
+      "duration": 4.201,
+      "text": "uh which is going to edit the Manifest"
+    },
+    {
+      "start": 468.919,
+      "duration": 5.0,
+      "text": "file so if I do K edit deployment engine"
+    },
+    {
+      "start": 471.68,
+      "duration": 6.16,
+      "text": "X hyphen deployment I can go here and"
+    },
+    {
+      "start": 473.919,
+      "duration": 5.68,
+      "text": "just change the value from 1.16 to 1.17"
+    },
+    {
+      "start": 477.84,
+      "duration": 4.079,
+      "text": "which is one way to do it the the other"
+    },
+    {
+      "start": 479.599,
+      "duration": 4.0,
+      "text": "way is to using the imperative command"
+    },
+    {
+      "start": 481.919,
+      "duration": 4.041,
+      "text": "so let me show you that so using the"
+    },
+    {
+      "start": 483.599,
+      "duration": 4.481,
+      "text": "imperative command which is the K set"
+    },
+    {
+      "start": 485.96,
+      "duration": 6.519,
+      "text": "image command I will be able to change"
+    },
+    {
+      "start": 488.08,
+      "duration": 6.92,
+      "text": "the image from 1.16 to 1.17 you can run"
+    },
+    {
+      "start": 492.479,
+      "duration": 4.521,
+      "text": "this command with the help uh attribute"
+    },
+    {
+      "start": 495.0,
+      "duration": 5.24,
+      "text": "so you can see how you can actually use"
+    },
+    {
+      "start": 497.0,
+      "duration": 5.479,
+      "text": "this command so case at image deployment"
+    },
+    {
+      "start": 500.24,
+      "duration": 3.919,
+      "text": "and then use the Pod name equals to the"
+    },
+    {
+      "start": 502.479,
+      "duration": 3.241,
+      "text": "new version that you want to update for"
+    },
+    {
+      "start": 504.159,
+      "duration": 3.361,
+      "text": "me to run this command I need to know"
+    },
+    {
+      "start": 505.72,
+      "duration": 5.319,
+      "text": "what is the name of my container I can"
+    },
+    {
+      "start": 507.52,
+      "duration": 5.68,
+      "text": "do that by running K get deployment IO"
+    },
+    {
+      "start": 511.039,
+      "duration": 6.401,
+      "text": "yam and you can see the name of the"
+    },
+    {
+      "start": 513.2,
+      "duration": 7.48,
+      "text": "container is engx Cube CDL set"
+    },
+    {
+      "start": 517.44,
+      "duration": 5.8,
+      "text": "image deployment name of the deployment"
+    },
+    {
+      "start": 520.68,
+      "duration": 4.44,
+      "text": "is engine x i"
+    },
+    {
+      "start": 523.24,
+      "duration": 3.599,
+      "text": "deployment name of the container is"
+    },
+    {
+      "start": 525.12,
+      "duration": 2.96,
+      "text": "engin X and I want to have the new"
+    },
+    {
+      "start": 526.839,
+      "duration": 6.361,
+      "text": "version which is going to be engin X"
+    },
+    {
+      "start": 528.08,
+      "duration": 7.84,
+      "text": "colon 1.17 so I'll say engine X colon"
+    },
+    {
+      "start": 533.2,
+      "duration": 6.199,
+      "text": "1.17 this is the command to upgrade"
+    },
+    {
+      "start": 535.92,
+      "duration": 5.2,
+      "text": "image which is using QBE CTL set image"
+    },
+    {
+      "start": 539.399,
+      "duration": 4.961,
+      "text": "now if I want to record this I'll say"
+    },
+    {
+      "start": 541.12,
+      "duration": 5.719,
+      "text": "dash dash record option and if I press"
+    },
+    {
+      "start": 544.36,
+      "duration": 4.52,
+      "text": "enter you will see the deployment for"
+    },
+    {
+      "start": 546.839,
+      "duration": 4.321,
+      "text": "engine X has been updated to confirm I"
+    },
+    {
+      "start": 548.88,
+      "duration": 5.36,
+      "text": "will to say k get deployments and"
+    },
+    {
+      "start": 551.16,
+      "duration": 6.799,
+      "text": "enginex deployment hyphen o y you can"
+    },
+    {
+      "start": 554.24,
+      "duration": 5.279,
+      "text": "see now the image is 1.17 and it has"
+    },
+    {
+      "start": 557.959,
+      "duration": 4.88,
+      "text": "also been recorded to confirm that I"
+    },
+    {
+      "start": 559.519,
+      "duration": 6.241,
+      "text": "went to run the command K roll out"
+    },
+    {
+      "start": 562.839,
+      "duration": 5.041,
+      "text": "history for deployment which is engine X"
+    },
+    {
+      "start": 565.76,
+      "duration": 3.96,
+      "text": "deployment here and we can see it has"
+    },
+    {
+      "start": 567.88,
+      "duration": 4.24,
+      "text": "been recorded which is true"
+    },
+    {
+      "start": 569.72,
+      "duration": 4.679,
+      "text": "so this is how you can update images for"
+    },
+    {
+      "start": 572.12,
+      "duration": 4.32,
+      "text": "deployment and get 15 points for this"
+    },
+    {
+      "start": 574.399,
+      "duration": 4.201,
+      "text": "particular question now let's move on to"
+    },
+    {
+      "start": 576.44,
+      "duration": 4.8,
+      "text": "the next question so the next question"
+    },
+    {
+      "start": 578.6,
+      "duration": 6.04,
+      "text": "is create a static pod named static"
+    },
+    {
+      "start": 581.24,
+      "duration": 6.36,
+      "text": "hyphen pod on the Node 01 node that uses"
+    },
+    {
+      "start": 584.64,
+      "duration": 5.199,
+      "text": "the busy box image and the command sleep"
+    },
+    {
+      "start": 587.6,
+      "duration": 4.479,
+      "text": "2000 so in this question we are asked to"
+    },
+    {
+      "start": 589.839,
+      "duration": 5.041,
+      "text": "create a static pod with this name on"
+    },
+    {
+      "start": 592.079,
+      "duration": 5.88,
+      "text": "this particular node that uses bz box"
+    },
+    {
+      "start": 594.88,
+      "duration": 4.44,
+      "text": "image along with the command sleep 2000"
+    },
+    {
+      "start": 597.959,
+      "duration": 3.601,
+      "text": "as we have already to discuss in the the"
+    },
+    {
+      "start": 599.32,
+      "duration": 4.12,
+      "text": "first question the static pod are"
+    },
+    {
+      "start": 601.56,
+      "duration": 5.279,
+      "text": "something that has manifest stored in"
+    },
+    {
+      "start": 603.44,
+      "duration": 5.44,
+      "text": "the ETC / kubernetes manifest files and"
+    },
+    {
+      "start": 606.839,
+      "duration": 3.321,
+      "text": "they are usually run on any of the nodes"
+    },
+    {
+      "start": 608.88,
+      "duration": 4.16,
+      "text": "in this question we are asked to"
+    },
+    {
+      "start": 610.16,
+      "duration": 4.679,
+      "text": "specifically run this pod on node 01 and"
+    },
+    {
+      "start": 613.04,
+      "duration": 3.76,
+      "text": "use this image so let's see how we can"
+    },
+    {
+      "start": 614.839,
+      "duration": 4.081,
+      "text": "solve this in the cluster I'm going to"
+    },
+    {
+      "start": 616.8,
+      "duration": 4.08,
+      "text": "run key get nodes to show you all the"
+    },
+    {
+      "start": 618.92,
+      "duration": 3.96,
+      "text": "nodes I have right now and there are two"
+    },
+    {
+      "start": 620.88,
+      "duration": 4.48,
+      "text": "nodes the control plane node and the"
+    },
+    {
+      "start": 622.88,
+      "duration": 5.88,
+      "text": "node 01 right now I am on the control"
+    },
+    {
+      "start": 625.36,
+      "duration": 5.919,
+      "text": "pin if I were to run a in the node 01 I"
+    },
+    {
+      "start": 628.76,
+      "duration": 6.16,
+      "text": "need to have the Manifest file stored in"
+    },
+    {
+      "start": 631.279,
+      "duration": 6.721,
+      "text": "the /c/ kubernetes SL manifest folder"
+    },
+    {
+      "start": 634.92,
+      "duration": 5.719,
+      "text": "inside node 01 so let's create a pod"
+    },
+    {
+      "start": 638.0,
+      "duration": 4.24,
+      "text": "manifest and then store it inside this"
+    },
+    {
+      "start": 640.639,
+      "duration": 3.481,
+      "text": "so to create a pod manifest using"
+    },
+    {
+      "start": 642.24,
+      "duration": 4.68,
+      "text": "imperative command we already know we"
+    },
+    {
+      "start": 644.12,
+      "duration": 4.64,
+      "text": "use the cube CTL run option if you don't"
+    },
+    {
+      "start": 646.92,
+      "duration": 3.919,
+      "text": "know this make sure to please check out"
+    },
+    {
+      "start": 648.76,
+      "duration": 4.56,
+      "text": "the important kubernetes commands video"
+    },
+    {
+      "start": 650.839,
+      "duration": 4.761,
+      "text": "that I've created so I'll say k run the"
+    },
+    {
+      "start": 653.32,
+      "duration": 3.199,
+      "text": "name of the pod which is static hyen pod"
+    },
+    {
+      "start": 655.6,
+      "duration": 3.919,
+      "text": "so"
+    },
+    {
+      "start": 656.519,
+      "duration": 4.641,
+      "text": "static hyen pod the the image you want"
+    },
+    {
+      "start": 659.519,
+      "duration": 3.961,
+      "text": "to use is going to be busy box image so"
+    },
+    {
+      "start": 661.16,
+      "duration": 4.76,
+      "text": "I'll say Das Dash image is going to be"
+    },
+    {
+      "start": 663.48,
+      "duration": 4.28,
+      "text": "busy box and we don't want to actually"
+    },
+    {
+      "start": 665.92,
+      "duration": 5.52,
+      "text": "create this in the control plane so I'm"
+    },
+    {
+      "start": 667.76,
+      "duration": 5.879,
+      "text": "going to say try run equals to client"
+    },
+    {
+      "start": 671.44,
+      "duration": 5.76,
+      "text": "and I want this as a manifest so I also"
+    },
+    {
+      "start": 673.639,
+      "duration": 5.2,
+      "text": "run hyphen o yaml correct along with"
+    },
+    {
+      "start": 677.2,
+      "duration": 4.0,
+      "text": "this if you see it also wants you to"
+    },
+    {
+      "start": 678.839,
+      "duration": 5.0,
+      "text": "have a command which is sleep 2,000 so"
+    },
+    {
+      "start": 681.2,
+      "duration": 5.96,
+      "text": "to add a command you need to say Das Das"
+    },
+    {
+      "start": 683.839,
+      "duration": 5.361,
+      "text": "command and then I want to say sleep"
+    },
+    {
+      "start": 687.16,
+      "duration": 4.359,
+      "text": "2,000 so I want to press enter now and"
+    },
+    {
+      "start": 689.2,
+      "duration": 4.52,
+      "text": "see the output so this is the output"
+    },
+    {
+      "start": 691.519,
+      "duration": 3.88,
+      "text": "that provides us with the Manifest files"
+    },
+    {
+      "start": 693.72,
+      "duration": 4.76,
+      "text": "the Manifest file has the name of the"
+    },
+    {
+      "start": 695.399,
+      "duration": 4.801,
+      "text": "Pod as static pod which is check next"
+    },
+    {
+      "start": 698.48,
+      "duration": 4.479,
+      "text": "thing is to use the busy box image which"
+    },
+    {
+      "start": 700.2,
+      "duration": 4.24,
+      "text": "is also check the image is busy box also"
+    },
+    {
+      "start": 702.959,
+      "duration": 3.201,
+      "text": "you need to add a command which uses"
+    },
+    {
+      "start": 704.44,
+      "duration": 3.92,
+      "text": "sleep 2000 and you can see in the"
+    },
+    {
+      "start": 706.16,
+      "duration": 4.479,
+      "text": "command section we have sleep 2,000 so"
+    },
+    {
+      "start": 708.36,
+      "duration": 5.039,
+      "text": "to run this as a static pod we need to"
+    },
+    {
+      "start": 710.639,
+      "duration": 5.161,
+      "text": "put this in the /c/ kubernetes SL"
+    },
+    {
+      "start": 713.399,
+      "duration": 4.88,
+      "text": "manifest folder so now we want to run"
+    },
+    {
+      "start": 715.8,
+      "duration": 4.44,
+      "text": "this on node 01 node so to run this we"
+    },
+    {
+      "start": 718.279,
+      "duration": 5.201,
+      "text": "have to first go inside the node 01"
+    },
+    {
+      "start": 720.24,
+      "duration": 5.08,
+      "text": "which is done by SSH and the name of the"
+    },
+    {
+      "start": 723.48,
+      "duration": 4.359,
+      "text": "node which is node 01 so I'll say node"
+    },
+    {
+      "start": 725.32,
+      "duration": 4.759,
+      "text": "01 and you can see now I'm inside node"
+    },
+    {
+      "start": 727.839,
+      "duration": 5.761,
+      "text": "01 let's go to"
+    },
+    {
+      "start": 730.079,
+      "duration": 5.681,
+      "text": "slash Etc kubernetes manifest folder if"
+    },
+    {
+      "start": 733.6,
+      "duration": 5.08,
+      "text": "I do LS here you can see the no manifest"
+    },
+    {
+      "start": 735.76,
+      "duration": 6.4,
+      "text": "right now I'm going to Simply copy this"
+    },
+    {
+      "start": 738.68,
+      "duration": 7.92,
+      "text": "manifest and create a file named as"
+    },
+    {
+      "start": 742.16,
+      "duration": 9.64,
+      "text": "static do yaml so let's say Nano static"
+    },
+    {
+      "start": 746.6,
+      "duration": 8.16,
+      "text": "do yaml paste my Ms file CR Sr X and now"
+    },
+    {
+      "start": 751.8,
+      "duration": 4.8,
+      "text": "if I do exit from the load one going"
+    },
+    {
+      "start": 754.76,
+      "duration": 4.639,
+      "text": "back to control plane running key get"
+    },
+    {
+      "start": 756.6,
+      "duration": 5.16,
+      "text": "parts you should be able to see a pod"
+    },
+    {
+      "start": 759.399,
+      "duration": 4.321,
+      "text": "created because we have the marest"
+    },
+    {
+      "start": 761.76,
+      "duration": 3.56,
+      "text": "stored in this particular part once I"
+    },
+    {
+      "start": 763.72,
+      "duration": 5.119,
+      "text": "press enter and you can see there's a"
+    },
+    {
+      "start": 765.32,
+      "duration": 6.319,
+      "text": "pod named as static pod Das node01 which"
+    },
+    {
+      "start": 768.839,
+      "duration": 5.24,
+      "text": "is created 14 seconds ago and this is"
+    },
+    {
+      "start": 771.639,
+      "duration": 6.281,
+      "text": "running on node 01 confirm I want to say"
+    },
+    {
+      "start": 774.079,
+      "duration": 6.44,
+      "text": "k get part hyphen o wide and now you can"
+    },
+    {
+      "start": 777.92,
+      "duration": 5.24,
+      "text": "see this pod is actually running on load"
+    },
+    {
+      "start": 780.519,
+      "duration": 5.081,
+      "text": "01 now let's move to the next question"
+    },
+    {
+      "start": 783.16,
+      "duration": 4.799,
+      "text": "which is question four it says create a"
+    },
+    {
+      "start": 785.6,
+      "duration": 5.56,
+      "text": "new pod called super pod with the image"
+    },
+    {
+      "start": 787.959,
+      "duration": 5.761,
+      "text": "busy box colon 1.28 and allow the Pod to"
+    },
+    {
+      "start": 791.16,
+      "duration": 5.16,
+      "text": "be able to set says time the container"
+    },
+    {
+      "start": 793.72,
+      "duration": 3.76,
+      "text": "should be sleeping for 4,800 seconds so"
+    },
+    {
+      "start": 796.32,
+      "duration": 2.72,
+      "text": "in this question we are asked to create"
+    },
+    {
+      "start": 797.48,
+      "duration": 3.0,
+      "text": "a part with this name the image should"
+    },
+    {
+      "start": 799.04,
+      "duration": 3.599,
+      "text": "be this and the part should be able to"
+    },
+    {
+      "start": 800.48,
+      "duration": 5.2,
+      "text": "set s time and the container should be"
+    },
+    {
+      "start": 802.639,
+      "duration": 4.88,
+      "text": "sleeping for 4,800 seconds so I know how"
+    },
+    {
+      "start": 805.68,
+      "duration": 3.519,
+      "text": "to get a P with this name and the image"
+    },
+    {
+      "start": 807.519,
+      "duration": 3.361,
+      "text": "but I don't know what this time is which"
+    },
+    {
+      "start": 809.199,
+      "duration": 4.121,
+      "text": "we are going to check later on from the"
+    },
+    {
+      "start": 810.88,
+      "duration": 4.319,
+      "text": "kubernetes official documentation so for"
+    },
+    {
+      "start": 813.32,
+      "duration": 3.48,
+      "text": "now let's go ahead and create a pod with"
+    },
+    {
+      "start": 815.199,
+      "duration": 4.561,
+      "text": "all the other options and then we can"
+    },
+    {
+      "start": 816.8,
+      "duration": 5.839,
+      "text": "add his time capability later on so I'll"
+    },
+    {
+      "start": 819.76,
+      "duration": 5.28,
+      "text": "go and run the command Cube CTL run the"
+    },
+    {
+      "start": 822.639,
+      "duration": 4.161,
+      "text": "name of the Pod is superp the image that"
+    },
+    {
+      "start": 825.04,
+      "duration": 5.52,
+      "text": "I want to use is going to be busy box"
+    },
+    {
+      "start": 826.8,
+      "duration": 6.0,
+      "text": "image so busy box colon 1.28 which is"
+    },
+    {
+      "start": 830.56,
+      "duration": 4.76,
+      "text": "this one and then I also want to have"
+    },
+    {
+      "start": 832.8,
+      "duration": 4.8,
+      "text": "the container running or sleeping for"
+    },
+    {
+      "start": 835.32,
+      "duration": 5.72,
+      "text": "4,800 seconds I'll add"
+    },
+    {
+      "start": 837.6,
+      "duration": 7.64,
+      "text": "command that - command and the command"
+    },
+    {
+      "start": 841.04,
+      "duration": 5.96,
+      "text": "is going to be sleep 48 0 0 all right"
+    },
+    {
+      "start": 845.24,
+      "duration": 3.76,
+      "text": "now I can go ahead and press enter to"
+    },
+    {
+      "start": 847.0,
+      "duration": 3.8,
+      "text": "create a pod with this but I want to"
+    },
+    {
+      "start": 849.0,
+      "duration": 3.44,
+      "text": "also set this as time so I should have"
+    },
+    {
+      "start": 850.8,
+      "duration": 4.24,
+      "text": "created I will just store the Manifest"
+    },
+    {
+      "start": 852.44,
+      "duration": 4.839,
+      "text": "in a file and then add it later on as"
+    },
+    {
+      "start": 855.04,
+      "duration": 5.56,
+      "text": "well so to do that I want to add the dry"
+    },
+    {
+      "start": 857.279,
+      "duration": 5.68,
+      "text": "run option here so I'll say dry Isen run"
+    },
+    {
+      "start": 860.6,
+      "duration": 5.08,
+      "text": "equals to client and I want to get the"
+    },
+    {
+      "start": 862.959,
+      "duration": 4.401,
+      "text": "output as yam manifest and say iph yaml"
+    },
+    {
+      "start": 865.68,
+      "duration": 4.079,
+      "text": "once I press enter you can see this is"
+    },
+    {
+      "start": 867.36,
+      "duration": 4.64,
+      "text": "the Manifest file let's store this in a"
+    },
+    {
+      "start": 869.759,
+      "duration": 5.52,
+      "text": "file named as"
+    },
+    {
+      "start": 872.0,
+      "duration": 5.759,
+      "text": "q4l all right if I do q4l you will be"
+    },
+    {
+      "start": 875.279,
+      "duration": 3.761,
+      "text": "able to see this now our manifest is"
+    },
+    {
+      "start": 877.759,
+      "duration": 3.64,
+      "text": "ready the only thing we need to add is"
+    },
+    {
+      "start": 879.04,
+      "duration": 3.239,
+      "text": "the sis time capability and to do that"
+    },
+    {
+      "start": 881.399,
+      "duration": 4.0,
+      "text": "I'm going to go here in the"
+    },
+    {
+      "start": 882.279,
+      "duration": 5.36,
+      "text": "documentation let's search for CIS _"
+    },
+    {
+      "start": 885.399,
+      "duration": 3.56,
+      "text": "time once you search for it this is the"
+    },
+    {
+      "start": 887.639,
+      "duration": 3.64,
+      "text": "first link that you need to click on"
+    },
+    {
+      "start": 888.959,
+      "duration": 4.361,
+      "text": "because it has s time inside it so the"
+    },
+    {
+      "start": 891.279,
+      "duration": 5.081,
+      "text": "link says configure a security context"
+    },
+    {
+      "start": 893.32,
+      "duration": 4.519,
+      "text": "or a pod or container now I'm going to"
+    },
+    {
+      "start": 896.36,
+      "duration": 3.2,
+      "text": "scroll down or you can simply click on"
+    },
+    {
+      "start": 897.839,
+      "duration": 5.041,
+      "text": "this but let's scroll scroll down where"
+    },
+    {
+      "start": 899.56,
+      "duration": 5.04,
+      "text": "you see the capability option so if you"
+    },
+    {
+      "start": 902.88,
+      "duration": 4.24,
+      "text": "scroll down this is where you need to"
+    },
+    {
+      "start": 904.6,
+      "duration": 4.12,
+      "text": "look at in this you can see the S time"
+    },
+    {
+      "start": 907.12,
+      "duration": 3.56,
+      "text": "capability is added and that is done"
+    },
+    {
+      "start": 908.72,
+      "duration": 4.28,
+      "text": "using security context which is inside"
+    },
+    {
+      "start": 910.68,
+      "duration": 5.2,
+      "text": "the containers inside spec section so"
+    },
+    {
+      "start": 913.0,
+      "duration": 6.519,
+      "text": "I'm going to copy this so I want to copy"
+    },
+    {
+      "start": 915.88,
+      "duration": 5.44,
+      "text": "this and let's go in our file so I'll"
+    },
+    {
+      "start": 919.519,
+      "duration": 4.081,
+      "text": "say nalo"
+    },
+    {
+      "start": 921.32,
+      "duration": 3.959,
+      "text": "q4l and I need to put this inside"
+    },
+    {
+      "start": 923.6,
+      "duration": 4.52,
+      "text": "container which is inside spec so I'll"
+    },
+    {
+      "start": 925.279,
+      "duration": 4.841,
+      "text": "go here make sure to use the correct"
+    },
+    {
+      "start": 928.12,
+      "duration": 3.88,
+      "text": "indentation or else you will face an"
+    },
+    {
+      "start": 930.12,
+      "duration": 3.48,
+      "text": "error so I'm going to paste this here"
+    },
+    {
+      "start": 932.0,
+      "duration": 2.959,
+      "text": "and I will remove net admin because I"
+    },
+    {
+      "start": 933.6,
+      "duration": 3.88,
+      "text": "don't want that according to the"
+    },
+    {
+      "start": 934.959,
+      "duration": 4.401,
+      "text": "question let's save this now once you"
+    },
+    {
+      "start": 937.48,
+      "duration": 3.64,
+      "text": "have it ready and let me show you the"
+    },
+    {
+      "start": 939.36,
+      "duration": 3.88,
+      "text": "Manifest one more time you can see the"
+    },
+    {
+      "start": 941.12,
+      "duration": 4.88,
+      "text": "Manifest is using the name superpod it"
+    },
+    {
+      "start": 943.24,
+      "duration": 6.0,
+      "text": "is sleeping for 4,800 the image is busy"
+    },
+    {
+      "start": 946.0,
+      "duration": 5.8,
+      "text": "box 1.28 and it is also has it also has"
+    },
+    {
+      "start": 949.24,
+      "duration": 4.64,
+      "text": "ability to set CIS time which is added"
+    },
+    {
+      "start": 951.8,
+      "duration": 3.68,
+      "text": "by security context here once you have"
+    },
+    {
+      "start": 953.88,
+      "duration": 3.519,
+      "text": "this ready all you need to do is to run"
+    },
+    {
+      "start": 955.48,
+      "duration": 5.24,
+      "text": "the cube CTL create command so I'll say"
+    },
+    {
+      "start": 957.399,
+      "duration": 6.0,
+      "text": "Cube CTL create hyphen f and the name of"
+    },
+    {
+      "start": 960.72,
+      "duration": 4.799,
+      "text": "the file which is Q4 yamar once I press"
+    },
+    {
+      "start": 963.399,
+      "duration": 5.321,
+      "text": "enter I should be able to get a pod"
+    },
+    {
+      "start": 965.519,
+      "duration": 5.921,
+      "text": "which is now created you can see G pods"
+    },
+    {
+      "start": 968.72,
+      "duration": 5.359,
+      "text": "iph W and the Pod is running 5 seconds"
+    },
+    {
+      "start": 971.44,
+      "duration": 4.12,
+      "text": "ago now if we want to check if"
+    },
+    {
+      "start": 974.079,
+      "duration": 5.68,
+      "text": "everything is fine you can simply run"
+    },
+    {
+      "start": 975.56,
+      "duration": 6.04,
+      "text": "the KET pods super pod hyphen o yam and"
+    },
+    {
+      "start": 979.759,
+      "duration": 3.961,
+      "text": "you will see this is the exact manifest"
+    },
+    {
+      "start": 981.6,
+      "duration": 4.159,
+      "text": "that we have used so the marif also has"
+    },
+    {
+      "start": 983.72,
+      "duration": 5.239,
+      "text": "theist time capability added the image"
+    },
+    {
+      "start": 985.759,
+      "duration": 5.44,
+      "text": "is busy box 1.28 it is sleeping for 4800"
+    },
+    {
+      "start": 988.959,
+      "duration": 4.201,
+      "text": "and the name of the Pod is superb so"
+    },
+    {
+      "start": 991.199,
+      "duration": 4.161,
+      "text": "this is how you can solve this question"
+    },
+    {
+      "start": 993.16,
+      "duration": 3.679,
+      "text": "and get eight points now let's move on"
+    },
+    {
+      "start": 995.36,
+      "duration": 3.32,
+      "text": "to the next question or the last"
+    },
+    {
+      "start": 996.839,
+      "duration": 3.56,
+      "text": "question of this video I hope you are"
+    },
+    {
+      "start": 998.68,
+      "duration": 3.959,
+      "text": "enjoying this video so please make sure"
+    },
+    {
+      "start": 1000.399,
+      "duration": 4.24,
+      "text": "to like this video and comment down if"
+    },
+    {
+      "start": 1002.639,
+      "duration": 5.12,
+      "text": "you want more of these let's move to the"
+    },
+    {
+      "start": 1004.639,
+      "duration": 5.2,
+      "text": "next question now the next question is"
+    },
+    {
+      "start": 1007.759,
+      "duration": 5.08,
+      "text": "create an enginex pod called enginex"
+    },
+    {
+      "start": 1009.839,
+      "duration": 4.68,
+      "text": "hyphen resolver using the image enginex"
+    },
+    {
+      "start": 1012.839,
+      "duration": 4.8,
+      "text": "expose it internally with a service"
+    },
+    {
+      "start": 1014.519,
+      "duration": 4.32,
+      "text": "called as engine X resolver service test"
+    },
+    {
+      "start": 1017.639,
+      "duration": 3.481,
+      "text": "that you are able to look look up the"
+    },
+    {
+      "start": 1018.839,
+      "duration": 5.161,
+      "text": "service and the Pod names for all within"
+    },
+    {
+      "start": 1021.12,
+      "duration": 6.199,
+      "text": "the cluster use the image busy box for"
+    },
+    {
+      "start": 1024.0,
+      "duration": 6.079,
+      "text": "DNS lookup record results in NX SVC and"
+    },
+    {
+      "start": 1027.319,
+      "duration": 4.12,
+      "text": "engine XP so this is a very confusing"
+    },
+    {
+      "start": 1030.079,
+      "duration": 2.76,
+      "text": "question but let me try to explain you"
+    },
+    {
+      "start": 1031.439,
+      "duration": 3.36,
+      "text": "this so first they're asking you to"
+    },
+    {
+      "start": 1032.839,
+      "duration": 4.48,
+      "text": "create a pod with this name using the"
+    },
+    {
+      "start": 1034.799,
+      "duration": 4.361,
+      "text": "image enginex once the Pod is created"
+    },
+    {
+      "start": 1037.319,
+      "duration": 3.841,
+      "text": "they want you to expose it using a"
+    },
+    {
+      "start": 1039.16,
+      "duration": 3.759,
+      "text": "service which is called as enginex"
+    },
+    {
+      "start": 1041.16,
+      "duration": 3.32,
+      "text": "resolver service and they're asking you"
+    },
+    {
+      "start": 1042.919,
+      "duration": 4.64,
+      "text": "to expose it internally which means it"
+    },
+    {
+      "start": 1044.48,
+      "duration": 6.079,
+      "text": "is a cluster IP service and then once it"
+    },
+    {
+      "start": 1047.559,
+      "duration": 4.761,
+      "text": "is exposed you need to test it so test"
+    },
+    {
+      "start": 1050.559,
+      "duration": 3.641,
+      "text": "that you are able to look up the service"
+    },
+    {
+      "start": 1052.32,
+      "duration": 3.96,
+      "text": "and the Pod names from within the"
+    },
+    {
+      "start": 1054.2,
+      "duration": 4.4,
+      "text": "cluster and you can do that by creating"
+    },
+    {
+      "start": 1056.28,
+      "duration": 4.8,
+      "text": "a pod with the image busy box and"
+    },
+    {
+      "start": 1058.6,
+      "duration": 3.92,
+      "text": "running the DNS lookup command so once"
+    },
+    {
+      "start": 1061.08,
+      "duration": 3.839,
+      "text": "it is done you need to then save the"
+    },
+    {
+      "start": 1062.52,
+      "duration": 6.32,
+      "text": "results in the engine X hyphen SVC file"
+    },
+    {
+      "start": 1064.919,
+      "duration": 6.0,
+      "text": "for service and engx Hy pod file for pod"
+    },
+    {
+      "start": 1068.84,
+      "duration": 4.8,
+      "text": "so this is a networking or a DNS kind of"
+    },
+    {
+      "start": 1070.919,
+      "duration": 4.12,
+      "text": "question so let's try to answer this the"
+    },
+    {
+      "start": 1073.64,
+      "duration": 2.919,
+      "text": "question has weightage of around well"
+    },
+    {
+      "start": 1075.039,
+      "duration": 2.88,
+      "text": "which means this is very very important"
+    },
+    {
+      "start": 1076.559,
+      "duration": 2.681,
+      "text": "and you should know this this is"
+    },
+    {
+      "start": 1077.919,
+      "duration": 3.201,
+      "text": "actually very easy so let me show you"
+    },
+    {
+      "start": 1079.24,
+      "duration": 3.64,
+      "text": "how you can do this first let's create a"
+    },
+    {
+      "start": 1081.12,
+      "duration": 4.48,
+      "text": "p named as the engine resolver with this"
+    },
+    {
+      "start": 1082.88,
+      "duration": 7.32,
+      "text": "name and we can do that by running k run"
+    },
+    {
+      "start": 1085.6,
+      "duration": 7.92,
+      "text": "sorry k run engine X hyphen"
+    },
+    {
+      "start": 1090.2,
+      "duration": 4.8,
+      "text": "resolver Dash Dash image and the image"
+    },
+    {
+      "start": 1093.52,
+      "duration": 3.68,
+      "text": "you want to use is engine X so I'll say"
+    },
+    {
+      "start": 1095.0,
+      "duration": 4.88,
+      "text": "engine X once I press enter a pod is now"
+    },
+    {
+      "start": 1097.2,
+      "duration": 5.16,
+      "text": "created I can confirm my running K pods"
+    },
+    {
+      "start": 1099.88,
+      "duration": 5.2,
+      "text": "and we have a pod which is now creating"
+    },
+    {
+      "start": 1102.36,
+      "duration": 4.559,
+      "text": "State I can do hyph W and you will see a"
+    },
+    {
+      "start": 1105.08,
+      "duration": 4.04,
+      "text": "pod will be soon created so it's now"
+    },
+    {
+      "start": 1106.919,
+      "duration": 5.961,
+      "text": "running in"
+    },
+    {
+      "start": 1109.12,
+      "duration": 6.679,
+      "text": "and let's go create a service to expose"
+    },
+    {
+      "start": 1112.88,
+      "duration": 5.4,
+      "text": "The Bard with this name so I'll say k"
+    },
+    {
+      "start": 1115.799,
+      "duration": 5.441,
+      "text": "expose I want to expose a pod with the"
+    },
+    {
+      "start": 1118.28,
+      "duration": 4.639,
+      "text": "name as ngex resolver and then I want to"
+    },
+    {
+      "start": 1121.24,
+      "duration": 4.36,
+      "text": "expose it with the service named as this"
+    },
+    {
+      "start": 1122.919,
+      "duration": 4.681,
+      "text": "so I'll say D- name name of the service"
+    },
+    {
+      "start": 1125.6,
+      "duration": 6.64,
+      "text": "is engine X hyen resolver hyen service"
+    },
+    {
+      "start": 1127.6,
+      "duration": 9.0,
+      "text": "so engine X hyphen resolver hyphen"
+    },
+    {
+      "start": 1132.24,
+      "duration": 5.72,
+      "text": "service so I can do that and press enter"
+    },
+    {
+      "start": 1136.6,
+      "duration": 3.64,
+      "text": "once I press enter it will give me an"
+    },
+    {
+      "start": 1137.96,
+      "duration": 4.599,
+      "text": "error saying it also requires a port so"
+    },
+    {
+      "start": 1140.24,
+      "duration": 4.52,
+      "text": "we need to add a port the port for engx"
+    },
+    {
+      "start": 1142.559,
+      "duration": 4.921,
+      "text": "is going to be Port 80 so I'll add that"
+    },
+    {
+      "start": 1144.76,
+      "duration": 5.159,
+      "text": "and now the port uh service has been"
+    },
+    {
+      "start": 1147.48,
+      "duration": 4.84,
+      "text": "created which is also exposing our board"
+    },
+    {
+      "start": 1149.919,
+      "duration": 4.441,
+      "text": "you can confirm by Running P SVC and you"
+    },
+    {
+      "start": 1152.32,
+      "duration": 4.8,
+      "text": "can see an NX resolver service has been"
+    },
+    {
+      "start": 1154.36,
+      "duration": 4.96,
+      "text": "created which is of type cluster IP and"
+    },
+    {
+      "start": 1157.12,
+      "duration": 4.679,
+      "text": "it's running on Port 80 created 6"
+    },
+    {
+      "start": 1159.32,
+      "duration": 4.719,
+      "text": "seconds ago so now we have the first"
+    },
+    {
+      "start": 1161.799,
+      "duration": 4.76,
+      "text": "part done which is creating engine X pod"
+    },
+    {
+      "start": 1164.039,
+      "duration": 3.88,
+      "text": "and the engx service we now need to test"
+    },
+    {
+      "start": 1166.559,
+      "duration": 3.561,
+      "text": "that we are able to look up the service"
+    },
+    {
+      "start": 1167.919,
+      "duration": 3.64,
+      "text": "and the pod from within the cluster and"
+    },
+    {
+      "start": 1170.12,
+      "duration": 3.72,
+      "text": "to test that we need to create another"
+    },
+    {
+      "start": 1171.559,
+      "duration": 5.041,
+      "text": "pod so I would create a pod with this"
+    },
+    {
+      "start": 1173.84,
+      "duration": 5.4,
+      "text": "image busy box 1.28 let's name this as"
+    },
+    {
+      "start": 1176.6,
+      "duration": 4.84,
+      "text": "anything so I'll say test uh"
+    },
+    {
+      "start": 1179.24,
+      "duration": 3.88,
+      "text": "DNS and the image I want to use is going"
+    },
+    {
+      "start": 1181.44,
+      "duration": 5.56,
+      "text": "to bebsy box"
+    },
+    {
+      "start": 1183.12,
+      "duration": 6.88,
+      "text": "1.28 so busy box colum"
+    },
+    {
+      "start": 1187.0,
+      "duration": 4.559,
+      "text": "1.28 now if you want this to run uh"
+    },
+    {
+      "start": 1190.0,
+      "duration": 3.36,
+      "text": "without any errors you also need to make"
+    },
+    {
+      "start": 1191.559,
+      "duration": 4.6,
+      "text": "sure that the container is running all"
+    },
+    {
+      "start": 1193.36,
+      "duration": 4.64,
+      "text": "the time so we need to add a command for"
+    },
+    {
+      "start": 1196.159,
+      "duration": 5.121,
+      "text": "sleep or else this container will go in"
+    },
+    {
+      "start": 1198.0,
+      "duration": 7.159,
+      "text": "the crash loop back so I'll add command"
+    },
+    {
+      "start": 1201.28,
+      "duration": 6.879,
+      "text": "sleep let's say 5,000 once I do that now"
+    },
+    {
+      "start": 1205.159,
+      "duration": 5.441,
+      "text": "we have a pod named as test D is created"
+    },
+    {
+      "start": 1208.159,
+      "duration": 5.281,
+      "text": "and I can confirm by saying K get BS"
+    },
+    {
+      "start": 1210.6,
+      "duration": 5.72,
+      "text": "it's also running 5 seconds ago so let's"
+    },
+    {
+      "start": 1213.44,
+      "duration": 4.4,
+      "text": "try to test this part which is able to"
+    },
+    {
+      "start": 1216.32,
+      "duration": 2.88,
+      "text": "look up the service of the port and if"
+    },
+    {
+      "start": 1217.84,
+      "duration": 4.6,
+      "text": "it is able to do that we are got to then"
+    },
+    {
+      "start": 1219.2,
+      "duration": 6.959,
+      "text": "store the data in the these files nx."
+    },
+    {
+      "start": 1222.44,
+      "duration": 5.92,
+      "text": "SVC and N x.p to check that we need to"
+    },
+    {
+      "start": 1226.159,
+      "duration": 4.64,
+      "text": "run the NS Lup command and we Cann the"
+    },
+    {
+      "start": 1228.36,
+      "duration": 4.84,
+      "text": "command inside this test DNS if you have"
+    },
+    {
+      "start": 1230.799,
+      "duration": 4.721,
+      "text": "followed my important Cube CTL commands"
+    },
+    {
+      "start": 1233.2,
+      "duration": 4.8,
+      "text": "video you know to run a command inside a"
+    },
+    {
+      "start": 1235.52,
+      "duration": 5.12,
+      "text": "port we need to use the command K exac"
+    },
+    {
+      "start": 1238.0,
+      "duration": 4.52,
+      "text": "so I'll say k exac hyphen it the P name"
+    },
+    {
+      "start": 1240.64,
+      "duration": 3.96,
+      "text": "is going to be T"
+    },
+    {
+      "start": 1242.52,
+      "duration": 4.279,
+      "text": "DNS and I want to run the command which"
+    },
+    {
+      "start": 1244.6,
+      "duration": 6.36,
+      "text": "is going to be NS lookup and the name of"
+    },
+    {
+      "start": 1246.799,
+      "duration": 6.401,
+      "text": "the service so I'll say NS lookup and"
+    },
+    {
+      "start": 1250.96,
+      "duration": 4.68,
+      "text": "the service name which is engine X"
+    },
+    {
+      "start": 1253.2,
+      "duration": 4.52,
+      "text": "resolver service so let's paste that and"
+    },
+    {
+      "start": 1255.64,
+      "duration": 4.48,
+      "text": "press enter once you press enter we are"
+    },
+    {
+      "start": 1257.72,
+      "duration": 4.199,
+      "text": "able to get the output here so you can"
+    },
+    {
+      "start": 1260.12,
+      "duration": 4.48,
+      "text": "see we are able to look up from inside"
+    },
+    {
+      "start": 1261.919,
+      "duration": 4.281,
+      "text": "the cluster so we can use this but"
+    },
+    {
+      "start": 1264.6,
+      "duration": 4.48,
+      "text": "remember a service can be called with"
+    },
+    {
+      "start": 1266.2,
+      "duration": 5.079,
+      "text": "the name or with with the name do"
+    },
+    {
+      "start": 1269.08,
+      "duration": 5.199,
+      "text": "namespace or with the name. namespace do"
+    },
+    {
+      "start": 1271.279,
+      "duration": 4.88,
+      "text": "service. cluster. loal so I you can"
+    },
+    {
+      "start": 1274.279,
+      "duration": 4.681,
+      "text": "either save this data inside the engine"
+    },
+    {
+      "start": 1276.159,
+      "duration": 5.201,
+      "text": "x. SVC or you can run the same command"
+    },
+    {
+      "start": 1278.96,
+      "duration": 4.92,
+      "text": "with using the proper name for the"
+    },
+    {
+      "start": 1281.36,
+      "duration": 4.76,
+      "text": "service which is here now if you want to"
+    },
+    {
+      "start": 1283.88,
+      "duration": 5.399,
+      "text": "get the data of all the names you can"
+    },
+    {
+      "start": 1286.12,
+      "duration": 5.919,
+      "text": "search for DNS here and you will see DNS"
+    },
+    {
+      "start": 1289.279,
+      "duration": 4.161,
+      "text": "for services and Boards if you go down"
+    },
+    {
+      "start": 1292.039,
+      "duration": 3.441,
+      "text": "you will see how there are different"
+    },
+    {
+      "start": 1293.44,
+      "duration": 4.119,
+      "text": "ways to call a service or to name a"
+    },
+    {
+      "start": 1295.48,
+      "duration": 4.64,
+      "text": "service the service can be service."
+    },
+    {
+      "start": 1297.559,
+      "duration": 4.321,
+      "text": "mynamespace do service. cluster. doain"
+    },
+    {
+      "start": 1300.12,
+      "duration": 5.24,
+      "text": "or just service"
+    },
+    {
+      "start": 1301.88,
+      "duration": 5.44,
+      "text": "name running the same command uh using"
+    },
+    {
+      "start": 1305.36,
+      "duration": 5.12,
+      "text": "the Pod IP so let's get the Pod IP first"
+    },
+    {
+      "start": 1307.32,
+      "duration": 5.2,
+      "text": "I'll say key get quads hph o wide and"
+    },
+    {
+      "start": 1310.48,
+      "duration": 4.04,
+      "text": "this is the Pod ngx resolver this is the"
+    },
+    {
+      "start": 1312.52,
+      "duration": 3.96,
+      "text": "IP address I'm going to copy this run"
+    },
+    {
+      "start": 1314.52,
+      "duration": 4.2,
+      "text": "the same K EXA command this time with"
+    },
+    {
+      "start": 1316.48,
+      "duration": 4.4,
+      "text": "the IP address of the pod"
+    },
+    {
+      "start": 1318.72,
+      "duration": 4.079,
+      "text": "and press enter so you will get the"
+    },
+    {
+      "start": 1320.88,
+      "duration": 3.56,
+      "text": "complete name according to what you see"
+    },
+    {
+      "start": 1322.799,
+      "duration": 3.441,
+      "text": "in this documentation so we are able to"
+    },
+    {
+      "start": 1324.44,
+      "duration": 3.68,
+      "text": "look up the service as well as pod"
+    },
+    {
+      "start": 1326.24,
+      "duration": 3.679,
+      "text": "internally from the cluster and we need"
+    },
+    {
+      "start": 1328.12,
+      "duration": 3.799,
+      "text": "to save this data inside the file so"
+    },
+    {
+      "start": 1329.919,
+      "duration": 4.681,
+      "text": "let's run the same command and now save"
+    },
+    {
+      "start": 1331.919,
+      "duration": 6.321,
+      "text": "this data inside engine x.p pod for the"
+    },
+    {
+      "start": 1334.6,
+      "duration": 5.199,
+      "text": "Pod so and say engine x.p pod and"
+    },
+    {
+      "start": 1338.24,
+      "duration": 4.36,
+      "text": "similarly I'll do the same for service"
+    },
+    {
+      "start": 1339.799,
+      "duration": 4.76,
+      "text": "as well and I save this data inside ngel"
+    },
+    {
+      "start": 1342.6,
+      "duration": 5.0,
+      "text": "x."
+    },
+    {
+      "start": 1344.559,
+      "duration": 5.521,
+      "text": "SVC so if I do LS now you will have two"
+    },
+    {
+      "start": 1347.6,
+      "duration": 3.92,
+      "text": "files which has the data that confirms"
+    },
+    {
+      "start": 1350.08,
+      "duration": 3.079,
+      "text": "that you able to look up the service and"
+    },
+    {
+      "start": 1351.52,
+      "duration": 4.72,
+      "text": "the parts from within the cluster and"
+    },
+    {
+      "start": 1353.159,
+      "duration": 4.961,
+      "text": "store it in engin x. SVC so this is the"
+    },
+    {
+      "start": 1356.24,
+      "duration": 4.039,
+      "text": "end of our video I hope you enjoyed this"
+    },
+    {
+      "start": 1358.12,
+      "duration": 4.12,
+      "text": "video and now you are able to understand"
+    },
+    {
+      "start": 1360.279,
+      "duration": 4.28,
+      "text": "how to answer all these different"
+    },
+    {
+      "start": 1362.24,
+      "duration": 3.88,
+      "text": "important cka questions I have more of"
+    },
+    {
+      "start": 1364.559,
+      "duration": 3.961,
+      "text": "these and if you want me to create a"
+    },
+    {
+      "start": 1366.12,
+      "duration": 4.48,
+      "text": "video or a part two of this series let"
+    },
+    {
+      "start": 1368.52,
+      "duration": 4.0,
+      "text": "me know in the comment section I hope"
+    },
+    {
+      "start": 1370.6,
+      "duration": 4.199,
+      "text": "this video was informative please like"
+    },
+    {
+      "start": 1372.52,
+      "duration": 4.44,
+      "text": "this video subscribe to Cloud champ and"
+    },
+    {
+      "start": 1374.799,
+      "duration": 5.161,
+      "text": "have a good day"
+    },
+    {
+      "start": 1376.96,
+      "duration": 3.0,
+      "text": "bye"
+    },
+    {
+      "start": 1385.36,
+      "duration": 3.0,
+      "text": "yeah"
+    }
+  ]
+}

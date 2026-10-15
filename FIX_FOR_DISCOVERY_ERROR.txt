@@ -1,0 +1,27 @@
+Cloud Champ AI — fix for the invalid video ID issue
+
+The original discovery step inspected the bare channel URL. YouTube can return channel-tab entries (Videos / Live / Shorts) rather than actual video IDs. The old code mistakenly used the channel ID as a video ID, which caused the transcript errors shown in your screenshot.
+
+This ZIP fixes discovery to inspect /videos, /shorts and /streams separately, deduplicate videos, and accept only valid 11-character YouTube video IDs.
+
+Windows steps:
+1. Close the old PowerShell window or stop any running command.
+2. Extract this ZIP to a NEW folder, for example D:\CloudChampAI-Fixed. Do not merge it over your old folder yet.
+3. Open PowerShell in the new folder.
+4. Activate/create your venv as appropriate:
+   py -m venv .venv
+   .\.venv\Scripts\activate
+   python -m pip install -r requirements.txt
+5. Run:
+   python ingest_youtube.py --discover
+6. Confirm it says it discovered actual video IDs (ideally dozens/hundreds), not just 3.
+7. Then run a small test first:
+   python ingest_youtube.py --transcripts --limit 5
+8. If the test works, run the configured pilot:
+   python ingest_youtube.py --transcripts
+9. Finally:
+   python build_index.py
+
+If transcript retrieval still fails for actual 11-character video IDs, update the transcript library:
+   python -m pip install -U youtube-transcript-api yt-dlp
+Then retry. Some videos may genuinely have no accessible transcript; that is separate from the invalid-ID issue.

@@ -1,0 +1,1121 @@
+{
+  "video": {
+    "id": "zMEaEMPzOws",
+    "title": "How to create S3 bucket using Terraform  | Terraform AWS Cloud  Tutorial",
+    "url": "https://www.youtube.com/watch?v=zMEaEMPzOws",
+    "duration": 479,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.179,
+      "duration": 4.08,
+      "text": "hello and welcome to my YouTube channel"
+    },
+    {
+      "start": 1.92,
+      "duration": 5.64,
+      "text": "in this video we are going to see how to"
+    },
+    {
+      "start": 4.259,
+      "duration": 5.88,
+      "text": "create an S3 bucket in AWS using"
+    },
+    {
+      "start": 7.56,
+      "duration": 4.8,
+      "text": "terraform so terraform is an"
+    },
+    {
+      "start": 10.139,
+      "duration": 4.92,
+      "text": "infrastructure as a code tool that lets"
+    },
+    {
+      "start": 12.36,
+      "duration": 3.96,
+      "text": "you create resources on AWS Azure gcp"
+    },
+    {
+      "start": 15.059,
+      "duration": 3.541,
+      "text": "kubernetes and all the different"
+    },
+    {
+      "start": 16.32,
+      "duration": 5.76,
+      "text": "providers as we are creating an S3"
+    },
+    {
+      "start": 18.6,
+      "duration": 6.0,
+      "text": "bucket in AWS we will be using AWS as"
+    },
+    {
+      "start": 22.08,
+      "duration": 5.699,
+      "text": "our provider so let's go and create one"
+    },
+    {
+      "start": 24.6,
+      "duration": 5.16,
+      "text": "S3 bucket in AWS using terraform"
+    },
+    {
+      "start": 27.779,
+      "duration": 3.84,
+      "text": "before we start with the video If you"
+    },
+    {
+      "start": 29.76,
+      "duration": 4.2,
+      "text": "haven't subscribed and are new to this"
+    },
+    {
+      "start": 31.619,
+      "duration": 5.041,
+      "text": "Channel please consider subscribing I"
+    },
+    {
+      "start": 33.96,
+      "duration": 4.74,
+      "text": "post videos on AWS Cloud devops tools"
+    },
+    {
+      "start": 36.66,
+      "duration": 4.079,
+      "text": "and Linux so which can help you so"
+    },
+    {
+      "start": 38.7,
+      "duration": 5.699,
+      "text": "please subscribe and let's start with"
+    },
+    {
+      "start": 40.739,
+      "duration": 6.301,
+      "text": "creating our S3 bucket in terraform"
+    },
+    {
+      "start": 44.399,
+      "duration": 5.82,
+      "text": "okay so we are creating an S3 bucket in"
+    },
+    {
+      "start": 47.04,
+      "duration": 5.1,
+      "text": "AWS so we need to choose AWS as a"
+    },
+    {
+      "start": 50.219,
+      "duration": 4.081,
+      "text": "provider and I'm going to click on use"
+    },
+    {
+      "start": 52.14,
+      "duration": 4.98,
+      "text": "provider option copy this configurations"
+    },
+    {
+      "start": 54.3,
+      "duration": 4.86,
+      "text": "and copy it and paste it in my visual"
+    },
+    {
+      "start": 57.12,
+      "duration": 4.38,
+      "text": "studio code so you will need a code"
+    },
+    {
+      "start": 59.16,
+      "duration": 4.62,
+      "text": "editor you can use Visual Studio code or"
+    },
+    {
+      "start": 61.5,
+      "duration": 4.439,
+      "text": "any code editor of your choice and I'm"
+    },
+    {
+      "start": 63.78,
+      "duration": 4.199,
+      "text": "going to paste this this says I want to"
+    },
+    {
+      "start": 65.939,
+      "duration": 4.141,
+      "text": "have terraform required provider the"
+    },
+    {
+      "start": 67.979,
+      "duration": 4.32,
+      "text": "version should be this and the provider"
+    },
+    {
+      "start": 70.08,
+      "duration": 3.719,
+      "text": "is AWS I can add configuration options"
+    },
+    {
+      "start": 72.299,
+      "duration": 4.561,
+      "text": "so I'm going to add my region name"
+    },
+    {
+      "start": 73.799,
+      "duration": 4.381,
+      "text": "because I want to work in Us East one"
+    },
+    {
+      "start": 76.86,
+      "duration": 3.619,
+      "text": "region which is the North Virginia"
+    },
+    {
+      "start": 78.18,
+      "duration": 5.579,
+      "text": "region so"
+    },
+    {
+      "start": 80.479,
+      "duration": 5.621,
+      "text": "U.S hyphen East"
+    },
+    {
+      "start": 83.759,
+      "duration": 4.381,
+      "text": "hyphen one which is not Virginia region"
+    },
+    {
+      "start": 86.1,
+      "duration": 4.019,
+      "text": "now when you do it make sure you save it"
+    },
+    {
+      "start": 88.14,
+      "duration": 4.2,
+      "text": "you can do it by control s or save it"
+    },
+    {
+      "start": 90.119,
+      "duration": 4.741,
+      "text": "from here save it and run the command"
+    },
+    {
+      "start": 92.34,
+      "duration": 4.08,
+      "text": "which is going to be terraform in it and"
+    },
+    {
+      "start": 94.86,
+      "duration": 3.899,
+      "text": "this command is the first command you"
+    },
+    {
+      "start": 96.42,
+      "duration": 4.32,
+      "text": "should run every time you start working"
+    },
+    {
+      "start": 98.759,
+      "duration": 3.061,
+      "text": "with terraform so terraform minute is"
+    },
+    {
+      "start": 100.74,
+      "duration": 3.78,
+      "text": "going to download all the files"
+    },
+    {
+      "start": 101.82,
+      "duration": 4.619,
+      "text": "necessary for terraform to work with AWS"
+    },
+    {
+      "start": 104.52,
+      "duration": 3.66,
+      "text": "provider I'm going to press terraform"
+    },
+    {
+      "start": 106.439,
+      "duration": 3.54,
+      "text": "type ethra of a minute and press enter"
+    },
+    {
+      "start": 108.18,
+      "duration": 4.079,
+      "text": "so it is initializing the back end"
+    },
+    {
+      "start": 109.979,
+      "duration": 4.561,
+      "text": "installing the provider plugin it is"
+    },
+    {
+      "start": 112.259,
+      "duration": 3.72,
+      "text": "installing the version 4.330 which is"
+    },
+    {
+      "start": 114.54,
+      "duration": 3.24,
+      "text": "mentioned here"
+    },
+    {
+      "start": 115.979,
+      "duration": 3.78,
+      "text": "you can choose to have any version you"
+    },
+    {
+      "start": 117.78,
+      "duration": 4.379,
+      "text": "want if you don't specify this it's"
+    },
+    {
+      "start": 119.759,
+      "duration": 3.961,
+      "text": "going to install the new version so once"
+    },
+    {
+      "start": 122.159,
+      "duration": 4.201,
+      "text": "this is done it should give us a message"
+    },
+    {
+      "start": 123.72,
+      "duration": 4.5,
+      "text": "that we are it is initialized and we"
+    },
+    {
+      "start": 126.36,
+      "duration": 3.3,
+      "text": "should start working with terraform"
+    },
+    {
+      "start": 128.22,
+      "duration": 3.18,
+      "text": "so it says terraform has been"
+    },
+    {
+      "start": 129.66,
+      "duration": 3.9,
+      "text": "successfully initialized and you may now"
+    },
+    {
+      "start": 131.4,
+      "duration": 4.08,
+      "text": "begin working with terraform try running"
+    },
+    {
+      "start": 133.56,
+      "duration": 4.319,
+      "text": "terraform plan so now that we have"
+    },
+    {
+      "start": 135.48,
+      "duration": 4.68,
+      "text": "defined our provider let's go and create"
+    },
+    {
+      "start": 137.879,
+      "duration": 5.521,
+      "text": "our S3 bucket so for that I'm going to"
+    },
+    {
+      "start": 140.16,
+      "duration": 4.62,
+      "text": "create another file name it mail.tf you"
+    },
+    {
+      "start": 143.4,
+      "duration": 3.36,
+      "text": "can name it anything you want name does"
+    },
+    {
+      "start": 144.78,
+      "duration": 4.38,
+      "text": "not matter what matters is what do you"
+    },
+    {
+      "start": 146.76,
+      "duration": 3.78,
+      "text": "have inside the file so to create an S3"
+    },
+    {
+      "start": 149.16,
+      "duration": 4.26,
+      "text": "bucket I need to define the resource"
+    },
+    {
+      "start": 150.54,
+      "duration": 4.32,
+      "text": "because every service is defined in the"
+    },
+    {
+      "start": 153.42,
+      "duration": 4.2,
+      "text": "resource like it can be created with the"
+    },
+    {
+      "start": 154.86,
+      "duration": 4.739,
+      "text": "resource block so resource for AWS S3 is"
+    },
+    {
+      "start": 157.62,
+      "duration": 3.42,
+      "text": "AWS underscore S3 underscore bucket and"
+    },
+    {
+      "start": 159.599,
+      "duration": 3.541,
+      "text": "to show you that I'm going to take you"
+    },
+    {
+      "start": 161.04,
+      "duration": 3.72,
+      "text": "to the official documentation so this is"
+    },
+    {
+      "start": 163.14,
+      "duration": 5.16,
+      "text": "the official documentation by terraform"
+    },
+    {
+      "start": 164.76,
+      "duration": 5.04,
+      "text": "to create AWS S3 bucket and you can read"
+    },
+    {
+      "start": 168.3,
+      "duration": 3.48,
+      "text": "this you can take the reference you can"
+    },
+    {
+      "start": 169.8,
+      "duration": 3.5,
+      "text": "also copy the code snippet so you can"
+    },
+    {
+      "start": 171.78,
+      "duration": 4.56,
+      "text": "see this here"
+    },
+    {
+      "start": 173.3,
+      "duration": 5.799,
+      "text": "this code is going to give you the"
+    },
+    {
+      "start": 176.34,
+      "duration": 4.32,
+      "text": "snippet to create an AWS S3 bucket which"
+    },
+    {
+      "start": 179.099,
+      "duration": 3.181,
+      "text": "is private"
+    },
+    {
+      "start": 180.66,
+      "duration": 3.48,
+      "text": "and if I show you that in the console"
+    },
+    {
+      "start": 182.28,
+      "duration": 3.06,
+      "text": "like how do we create a bucket if you"
+    },
+    {
+      "start": 184.14,
+      "duration": 2.7,
+      "text": "want to create a bucket you can click on"
+    },
+    {
+      "start": 185.34,
+      "duration": 3.06,
+      "text": "create bucket option enter the name of"
+    },
+    {
+      "start": 186.84,
+      "duration": 3.84,
+      "text": "the bucket which should be globally"
+    },
+    {
+      "start": 188.4,
+      "duration": 3.6,
+      "text": "unique and choose the region and you can"
+    },
+    {
+      "start": 190.68,
+      "duration": 3.779,
+      "text": "choose all of this option if you don't"
+    },
+    {
+      "start": 192.0,
+      "duration": 4.019,
+      "text": "choose it it will be selected by default"
+    },
+    {
+      "start": 194.459,
+      "duration": 3.841,
+      "text": "like for encryption the default option"
+    },
+    {
+      "start": 196.019,
+      "duration": 4.201,
+      "text": "is disabled for versioning the default"
+    },
+    {
+      "start": 198.3,
+      "duration": 3.359,
+      "text": "option is disabled as well so if you"
+    },
+    {
+      "start": 200.22,
+      "duration": 4.92,
+      "text": "want you can create S3 bucket in just"
+    },
+    {
+      "start": 201.659,
+      "duration": 5.761,
+      "text": "two lines of code so if I copy this"
+    },
+    {
+      "start": 205.14,
+      "duration": 6.56,
+      "text": "just copy this"
+    },
+    {
+      "start": 207.42,
+      "duration": 4.28,
+      "text": "and paste it in my code in the main.tf"
+    },
+    {
+      "start": 213.12,
+      "duration": 4.92,
+      "text": "so I'm trading a bucket which is AWS S3"
+    },
+    {
+      "start": 215.94,
+      "duration": 3.6,
+      "text": "bucket the name of the bucket is p and"
+    },
+    {
+      "start": 218.04,
+      "duration": 3.72,
+      "text": "this is my bucket name which I will get"
+    },
+    {
+      "start": 219.54,
+      "duration": 4.199,
+      "text": "in my console so make sure this is"
+    },
+    {
+      "start": 221.76,
+      "duration": 3.539,
+      "text": "unique so to make this unique I'm going"
+    },
+    {
+      "start": 223.739,
+      "duration": 3.601,
+      "text": "to type some random numbers"
+    },
+    {
+      "start": 225.299,
+      "duration": 3.72,
+      "text": "and this is the name in the environment"
+    },
+    {
+      "start": 227.34,
+      "duration": 3.959,
+      "text": "step if you want you can remove the"
+    },
+    {
+      "start": 229.019,
+      "duration": 4.381,
+      "text": "stacks but tags it's okay if you want to"
+    },
+    {
+      "start": 231.299,
+      "duration": 3.601,
+      "text": "keep it now that I've done this I'm"
+    },
+    {
+      "start": 233.4,
+      "duration": 2.82,
+      "text": "going to save and run the terraform plan"
+    },
+    {
+      "start": 234.9,
+      "duration": 2.699,
+      "text": "let's see what will happen if I run the"
+    },
+    {
+      "start": 236.22,
+      "duration": 3.12,
+      "text": "data from plan"
+    },
+    {
+      "start": 237.599,
+      "duration": 3.901,
+      "text": "so terraform plan should give me that"
+    },
+    {
+      "start": 239.34,
+      "duration": 4.38,
+      "text": "one resource is going to be created if"
+    },
+    {
+      "start": 241.5,
+      "duration": 4.08,
+      "text": "there's no error so let's see so it says"
+    },
+    {
+      "start": 243.72,
+      "duration": 5.48,
+      "text": "one is going to be added and if I show"
+    },
+    {
+      "start": 245.58,
+      "duration": 3.62,
+      "text": "you the plan the plan says"
+    },
+    {
+      "start": 249.36,
+      "duration": 6.12,
+      "text": "that an AWS S3 bucket dot b is going to"
+    },
+    {
+      "start": 252.48,
+      "duration": 5.52,
+      "text": "be created and the bucket name is this"
+    },
+    {
+      "start": 255.48,
+      "duration": 4.68,
+      "text": "and all of the things other than that is"
+    },
+    {
+      "start": 258.0,
+      "duration": 3.6,
+      "text": "going to be default for example you can"
+    },
+    {
+      "start": 260.16,
+      "duration": 3.9,
+      "text": "see all this option object lock"
+    },
+    {
+      "start": 261.6,
+      "duration": 4.56,
+      "text": "replication configuration server side"
+    },
+    {
+      "start": 264.06,
+      "duration": 3.72,
+      "text": "encryption all of these are by default"
+    },
+    {
+      "start": 266.16,
+      "duration": 3.3,
+      "text": "so if you want to create this I'm going"
+    },
+    {
+      "start": 267.78,
+      "duration": 4.199,
+      "text": "to run a command terraform apply"
+    },
+    {
+      "start": 269.46,
+      "duration": 5.4,
+      "text": "terraform apply will start creating this"
+    },
+    {
+      "start": 271.979,
+      "duration": 5.701,
+      "text": "S3 bucket in my console so right now I"
+    },
+    {
+      "start": 274.86,
+      "duration": 5.04,
+      "text": "don't have any bucket inside my console"
+    },
+    {
+      "start": 277.68,
+      "duration": 4.86,
+      "text": "my my console is empty I don't have any"
+    },
+    {
+      "start": 279.9,
+      "duration": 5.16,
+      "text": "bucket no buckets so if I go and apply"
+    },
+    {
+      "start": 282.54,
+      "duration": 4.32,
+      "text": "this it will show me the plan again and"
+    },
+    {
+      "start": 285.06,
+      "duration": 3.0,
+      "text": "will ask me if I'm sure or not so you"
+    },
+    {
+      "start": 286.86,
+      "duration": 2.339,
+      "text": "can see there are two files downloaded"
+    },
+    {
+      "start": 288.06,
+      "duration": 3.6,
+      "text": "this is because when you run the"
+    },
+    {
+      "start": 289.199,
+      "duration": 4.5,
+      "text": "terraform in it and if I if I type yes"
+    },
+    {
+      "start": 291.66,
+      "duration": 3.96,
+      "text": "this should create a new file as well"
+    },
+    {
+      "start": 293.699,
+      "duration": 4.081,
+      "text": "which is going to be a state file so now"
+    },
+    {
+      "start": 295.62,
+      "duration": 4.5,
+      "text": "it is creating an S3 bucket and if you"
+    },
+    {
+      "start": 297.78,
+      "duration": 4.62,
+      "text": "go to the console refresh"
+    },
+    {
+      "start": 300.12,
+      "duration": 4.38,
+      "text": "you should see the bucket is created my"
+    },
+    {
+      "start": 302.4,
+      "duration": 4.079,
+      "text": "test bucket and it has been completed in"
+    },
+    {
+      "start": 304.5,
+      "duration": 3.96,
+      "text": "just six seconds it also created a file"
+    },
+    {
+      "start": 306.479,
+      "duration": 3.481,
+      "text": "which is terraform DF State file which"
+    },
+    {
+      "start": 308.46,
+      "duration": 3.42,
+      "text": "records everything so you don't need to"
+    },
+    {
+      "start": 309.96,
+      "duration": 4.08,
+      "text": "worry about these you just need to edit"
+    },
+    {
+      "start": 311.88,
+      "duration": 4.02,
+      "text": "these two files so now this bucket has"
+    },
+    {
+      "start": 314.04,
+      "duration": 4.379,
+      "text": "been created which is about which is"
+    },
+    {
+      "start": 315.9,
+      "duration": 4.14,
+      "text": "this so my Tera from TF State and if you"
+    },
+    {
+      "start": 318.419,
+      "duration": 4.5,
+      "text": "want to see all the configurations so"
+    },
+    {
+      "start": 320.04,
+      "duration": 4.74,
+      "text": "this bucket has versioning disabled it"
+    },
+    {
+      "start": 322.919,
+      "duration": 3.481,
+      "text": "has the stacks the encryption is"
+    },
+    {
+      "start": 324.78,
+      "duration": 4.08,
+      "text": "disabled as well"
+    },
+    {
+      "start": 326.4,
+      "duration": 4.019,
+      "text": "server access login is disabled so if"
+    },
+    {
+      "start": 328.86,
+      "duration": 3.3,
+      "text": "you want to add any of these let's say"
+    },
+    {
+      "start": 330.419,
+      "duration": 2.941,
+      "text": "you want to enable the versioning if you"
+    },
+    {
+      "start": 332.16,
+      "duration": 3.36,
+      "text": "want to enable that you can go to the"
+    },
+    {
+      "start": 333.36,
+      "duration": 3.6,
+      "text": "snippet and you can find you can search"
+    },
+    {
+      "start": 335.52,
+      "duration": 3.3,
+      "text": "for versioning"
+    },
+    {
+      "start": 336.96,
+      "duration": 3.06,
+      "text": "so you can see this this block here so"
+    },
+    {
+      "start": 338.82,
+      "duration": 4.08,
+      "text": "versioning if you want to enable that"
+    },
+    {
+      "start": 340.02,
+      "duration": 4.56,
+      "text": "you need to pass this parameter or this"
+    },
+    {
+      "start": 342.9,
+      "duration": 3.48,
+      "text": "argument which is versioning and if you"
+    },
+    {
+      "start": 344.58,
+      "duration": 5.04,
+      "text": "pass this ACL or Access Control list"
+    },
+    {
+      "start": 346.38,
+      "duration": 5.34,
+      "text": "will make your bucket private so I can"
+    },
+    {
+      "start": 349.62,
+      "duration": 5.46,
+      "text": "add this in my already existing bucket"
+    },
+    {
+      "start": 351.72,
+      "duration": 5.46,
+      "text": "so I'm going to put this here"
+    },
+    {
+      "start": 355.08,
+      "duration": 4.02,
+      "text": "and this means I have passed Access"
+    },
+    {
+      "start": 357.18,
+      "duration": 3.6,
+      "text": "Control list which is making the bucket"
+    },
+    {
+      "start": 359.1,
+      "duration": 3.36,
+      "text": "private and the versioning should be"
+    },
+    {
+      "start": 360.78,
+      "duration": 3.54,
+      "text": "enabled so I'm going to save this and"
+    },
+    {
+      "start": 362.46,
+      "duration": 3.48,
+      "text": "run my terraform"
+    },
+    {
+      "start": 364.32,
+      "duration": 3.84,
+      "text": "plan again"
+    },
+    {
+      "start": 365.94,
+      "duration": 3.599,
+      "text": "so now that we have created the bucket"
+    },
+    {
+      "start": 368.16,
+      "duration": 3.42,
+      "text": "which is"
+    },
+    {
+      "start": 369.539,
+      "duration": 3.901,
+      "text": "which does not have versioning enabled"
+    },
+    {
+      "start": 371.58,
+      "duration": 3.3,
+      "text": "it's going to have versioning enabled"
+    },
+    {
+      "start": 373.44,
+      "duration": 3.42,
+      "text": "using terraform so I'm going to run"
+    },
+    {
+      "start": 374.88,
+      "duration": 4.159,
+      "text": "terraform plan and see what is going to"
+    },
+    {
+      "start": 376.86,
+      "duration": 2.179,
+      "text": "happen"
+    },
+    {
+      "start": 380.34,
+      "duration": 3.54,
+      "text": "so terraform plan is checking what is"
+    },
+    {
+      "start": 382.199,
+      "duration": 4.021,
+      "text": "there on the console and it's giving you"
+    },
+    {
+      "start": 383.88,
+      "duration": 4.319,
+      "text": "this it is refreshing the state file so"
+    },
+    {
+      "start": 386.22,
+      "duration": 3.66,
+      "text": "once it is done it says"
+    },
+    {
+      "start": 388.199,
+      "duration": 3.72,
+      "text": "one thing is going to be changed and"
+    },
+    {
+      "start": 389.88,
+      "duration": 3.9,
+      "text": "according to that it is going to it is"
+    },
+    {
+      "start": 391.919,
+      "duration": 3.12,
+      "text": "going to enable the versioning you can"
+    },
+    {
+      "start": 393.78,
+      "duration": 2.88,
+      "text": "see the option versioning is going to be"
+    },
+    {
+      "start": 395.039,
+      "duration": 2.88,
+      "text": "enabled and it gives you an argument"
+    },
+    {
+      "start": 396.66,
+      "duration": 3.18,
+      "text": "it's deprecated you don't need to worry"
+    },
+    {
+      "start": 397.919,
+      "duration": 3.72,
+      "text": "about that so I'm going to run terraform"
+    },
+    {
+      "start": 399.84,
+      "duration": 4.62,
+      "text": "apply"
+    },
+    {
+      "start": 401.639,
+      "duration": 4.56,
+      "text": "and iPhone Auto iPhone approved so that"
+    },
+    {
+      "start": 404.46,
+      "duration": 3.78,
+      "text": "I don't need to add I don't need to"
+    },
+    {
+      "start": 406.199,
+      "duration": 4.381,
+      "text": "confirm by typing yes so there are some"
+    },
+    {
+      "start": 408.24,
+      "duration": 3.6,
+      "text": "iPhone I apply hyphen Auto hyphen"
+    },
+    {
+      "start": 410.58,
+      "duration": 4.52,
+      "text": "approved it's going to create a bucket"
+    },
+    {
+      "start": 411.84,
+      "duration": 3.26,
+      "text": "with versioning enabled"
+    },
+    {
+      "start": 417.06,
+      "duration": 3.9,
+      "text": "so now once this is done we should see"
+    },
+    {
+      "start": 419.52,
+      "duration": 5.0,
+      "text": "that versioning has been enabled let's"
+    },
+    {
+      "start": 420.96,
+      "duration": 3.56,
+      "text": "wait for this to be done"
+    },
+    {
+      "start": 427.44,
+      "duration": 3.12,
+      "text": "so it's modifying the S3 bucket which is"
+    },
+    {
+      "start": 429.3,
+      "duration": 4.32,
+      "text": "already present"
+    },
+    {
+      "start": 430.56,
+      "duration": 7.199,
+      "text": "once this is it is done and if I go back"
+    },
+    {
+      "start": 433.62,
+      "duration": 5.4,
+      "text": "to my console and refresh my bucket I"
+    },
+    {
+      "start": 437.759,
+      "duration": 3.181,
+      "text": "should see that the versioning has been"
+    },
+    {
+      "start": 439.02,
+      "duration": 3.54,
+      "text": "enabled so you can see versioning has"
+    },
+    {
+      "start": 440.94,
+      "duration": 3.9,
+      "text": "been enabled similarly you can make"
+    },
+    {
+      "start": 442.56,
+      "duration": 3.66,
+      "text": "changes in encryption or in server"
+    },
+    {
+      "start": 444.84,
+      "duration": 3.9,
+      "text": "access logging just by going to the"
+    },
+    {
+      "start": 446.22,
+      "duration": 5.34,
+      "text": "documentation so you can enable logging"
+    },
+    {
+      "start": 448.74,
+      "duration": 5.04,
+      "text": "by passing it passing the"
+    },
+    {
+      "start": 451.56,
+      "duration": 4.979,
+      "text": "login parameter here you can enable"
+    },
+    {
+      "start": 453.78,
+      "duration": 4.56,
+      "text": "object lifecycle with this snippet so"
+    },
+    {
+      "start": 456.539,
+      "duration": 2.88,
+      "text": "all of these are already mentioned in"
+    },
+    {
+      "start": 458.34,
+      "duration": 3.24,
+      "text": "the"
+    },
+    {
+      "start": 459.419,
+      "duration": 3.961,
+      "text": "official documentation"
+    },
+    {
+      "start": 461.58,
+      "duration": 4.08,
+      "text": "I hope this video was informative and"
+    },
+    {
+      "start": 463.38,
+      "duration": 4.8,
+      "text": "you now know how to create an S3 bucket"
+    },
+    {
+      "start": 465.66,
+      "duration": 4.92,
+      "text": "using AWS terraform if you found this"
+    },
+    {
+      "start": 468.18,
+      "duration": 4.44,
+      "text": "video helpful please like this video And"
+    },
+    {
+      "start": 470.58,
+      "duration": 4.8,
+      "text": "subscribe to my channel for more videos"
+    },
+    {
+      "start": 472.62,
+      "duration": 5.419,
+      "text": "on AWS terraform and Cloud thank you and"
+    },
+    {
+      "start": 475.38,
+      "duration": 2.659,
+      "text": "have a good day"
+    }
+  ]
+}

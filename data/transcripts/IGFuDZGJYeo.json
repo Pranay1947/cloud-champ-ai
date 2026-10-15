@@ -1,0 +1,881 @@
+{
+  "video": {
+    "id": "IGFuDZGJYeo",
+    "title": "Connect Multiple MCP servers with StormMCP [Tutorial]",
+    "url": "https://www.youtube.com/watch?v=IGFuDZGJYeo",
+    "duration": 366,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.6,
+      "duration": 3.68,
+      "text": "If you ever try to connect your AI"
+    },
+    {
+      "start": 2.2,
+      "duration": 3.44,
+      "text": "agents with multiple MCP servers, you"
+    },
+    {
+      "start": 4.28,
+      "duration": 3.72,
+      "text": "know there are so many problems with"
+    },
+    {
+      "start": 5.64,
+      "duration": 3.96,
+      "text": "authentication, API keys, and also"
+    },
+    {
+      "start": 8.0,
+      "duration": 3.84,
+      "text": "giving too much access to your AI"
+    },
+    {
+      "start": 9.6,
+      "duration": 4.0,
+      "text": "agents. This makes setup very slow and"
+    },
+    {
+      "start": 11.84,
+      "duration": 3.16,
+      "text": "frustrating. So, in this video, I'm"
+    },
+    {
+      "start": 13.6,
+      "duration": 4.56,
+      "text": "going to show you how to connect to"
+    },
+    {
+      "start": 15.0,
+      "duration": 5.8,
+      "text": "multiple MCP servers using Storm MCP."
+    },
+    {
+      "start": 18.16,
+      "duration": 2.64,
+      "text": "Let's go."
+    },
+    {
+      "start": 28.28,
+      "duration": 4.6,
+      "text": "This is Storm MCP website. Storm MCP is"
+    },
+    {
+      "start": 30.64,
+      "duration": 3.96,
+      "text": "a gateway that fixes setup pain by"
+    },
+    {
+      "start": 32.88,
+      "duration": 4.4,
+      "text": "making connections to various MCP"
+    },
+    {
+      "start": 34.6,
+      "duration": 4.44,
+      "text": "servers easier and safer. So, instead of"
+    },
+    {
+      "start": 37.28,
+      "duration": 3.84,
+      "text": "worrying about tokens and configs, you"
+    },
+    {
+      "start": 39.04,
+      "duration": 4.0,
+      "text": "can connect to MCP servers easily"
+    },
+    {
+      "start": 41.12,
+      "duration": 4.24,
+      "text": "through a simple dashboard using Storm"
+    },
+    {
+      "start": 43.04,
+      "duration": 3.56,
+      "text": "MCP. To start using Storm MCP, you need"
+    },
+    {
+      "start": 45.36,
+      "duration": 2.92,
+      "text": "to create an account. The link is in"
+    },
+    {
+      "start": 46.6,
+      "duration": 3.4,
+      "text": "description. Once you log in to your"
+    },
+    {
+      "start": 48.28,
+      "duration": 4.16,
+      "text": "Storm MCP account, you get to see this"
+    },
+    {
+      "start": 50.0,
+      "duration": 3.92,
+      "text": "clean dashboard. Here, you can browse"
+    },
+    {
+      "start": 52.44,
+      "duration": 4.92,
+      "text": "through many different MCP servers. You"
+    },
+    {
+      "start": 53.92,
+      "duration": 5.4,
+      "text": "have GitHub, Pearl, Postman, Grafana,"
+    },
+    {
+      "start": 57.36,
+      "duration": 3.52,
+      "text": "and so much more. You can also see"
+    },
+    {
+      "start": 59.32,
+      "duration": 3.68,
+      "text": "different tabs like Gateway,"
+    },
+    {
+      "start": 60.88,
+      "duration": 3.639,
+      "text": "Observability, Logging, which I'm going"
+    },
+    {
+      "start": 63.0,
+      "duration": 3.72,
+      "text": "to explain you in this video. But for"
+    },
+    {
+      "start": 64.519,
+      "duration": 3.401,
+      "text": "now, let's try connecting to Notion MCP"
+    },
+    {
+      "start": 66.72,
+      "duration": 2.68,
+      "text": "server."
+    },
+    {
+      "start": 67.92,
+      "duration": 3.44,
+      "text": "When you scroll down, you can see Notion"
+    },
+    {
+      "start": 69.4,
+      "duration": 4.4,
+      "text": "MCP server here, and then click on"
+    },
+    {
+      "start": 71.36,
+      "duration": 4.56,
+      "text": "connect button for this MCP server. Now,"
+    },
+    {
+      "start": 73.8,
+      "duration": 3.4,
+      "text": "add your API key, and it's connected."
+    },
+    {
+      "start": 75.92,
+      "duration": 4.16,
+      "text": "After you connect, go to the gateway"
+    },
+    {
+      "start": 77.2,
+      "duration": 4.56,
+      "text": "section and click on new gateway."
+    },
+    {
+      "start": 80.08,
+      "duration": 3.48,
+      "text": "Name this gateway and select Notion"
+    },
+    {
+      "start": 81.76,
+      "duration": 3.2,
+      "text": "application here."
+    },
+    {
+      "start": 83.56,
+      "duration": 3.36,
+      "text": "Now, you can choose which action you"
+    },
+    {
+      "start": 84.96,
+      "duration": 4.56,
+      "text": "want your AI to use so that you don't"
+    },
+    {
+      "start": 86.92,
+      "duration": 4.8,
+      "text": "give them excess access."
+    },
+    {
+      "start": 89.52,
+      "duration": 4.44,
+      "text": "In the same way, you can add as many MCP"
+    },
+    {
+      "start": 91.72,
+      "duration": 4.0,
+      "text": "servers as you want in your gateway. So,"
+    },
+    {
+      "start": 93.96,
+      "duration": 3.8,
+      "text": "think of this like a control panel for"
+    },
+    {
+      "start": 95.72,
+      "duration": 3.8,
+      "text": "all your AI integrations, and instead of"
+    },
+    {
+      "start": 97.76,
+      "duration": 4.08,
+      "text": "managing separate config files for all"
+    },
+    {
+      "start": 99.52,
+      "duration": 5.12,
+      "text": "this MCP, you can manage them all in a"
+    },
+    {
+      "start": 101.84,
+      "duration": 4.68,
+      "text": "single dashboard using Storm MCP. Let me"
+    },
+    {
+      "start": 104.64,
+      "duration": 3.84,
+      "text": "show you step-by-step with a hands-on"
+    },
+    {
+      "start": 106.52,
+      "duration": 4.64,
+      "text": "demo on how to connect to GitHub MCP"
+    },
+    {
+      "start": 108.48,
+      "duration": 4.76,
+      "text": "server using Storm MCP, and then run"
+    },
+    {
+      "start": 111.16,
+      "duration": 3.24,
+      "text": "some actions on my repository. So, in"
+    },
+    {
+      "start": 113.24,
+      "duration": 3.44,
+      "text": "this dashboard, you can search for"
+    },
+    {
+      "start": 114.4,
+      "duration": 4.28,
+      "text": "GitHub MCP server or scroll down. This"
+    },
+    {
+      "start": 116.68,
+      "duration": 3.6,
+      "text": "is GitHub MCP server. Click on the"
+    },
+    {
+      "start": 118.68,
+      "duration": 3.36,
+      "text": "connect button here, and then it will"
+    },
+    {
+      "start": 120.28,
+      "duration": 4.96,
+      "text": "ask you to put your personal access"
+    },
+    {
+      "start": 122.04,
+      "duration": 3.2,
+      "text": "token or API key."
+    },
+    {
+      "start": 125.92,
+      "duration": 3.36,
+      "text": "This is my personal access token. Make"
+    },
+    {
+      "start": 127.92,
+      "duration": 2.759,
+      "text": "sure to use your own personal access"
+    },
+    {
+      "start": 129.28,
+      "duration": 3.52,
+      "text": "token. I'm going to disable this so you"
+    },
+    {
+      "start": 130.679,
+      "duration": 3.841,
+      "text": "cannot use it. Use your own, and then"
+    },
+    {
+      "start": 132.8,
+      "duration": 3.88,
+      "text": "paste this in the personal access token"
+    },
+    {
+      "start": 134.52,
+      "duration": 3.76,
+      "text": "section here. Click on connect option,"
+    },
+    {
+      "start": 136.68,
+      "duration": 3.48,
+      "text": "and you will see a message, GitHub is"
+    },
+    {
+      "start": 138.28,
+      "duration": 4.0,
+      "text": "now connected to your MCP gateway. You"
+    },
+    {
+      "start": 140.16,
+      "duration": 3.96,
+      "text": "can start using it in your workflows."
+    },
+    {
+      "start": 142.28,
+      "duration": 3.88,
+      "text": "Click on done, and now go to gateway"
+    },
+    {
+      "start": 144.12,
+      "duration": 3.72,
+      "text": "section. I already have these two"
+    },
+    {
+      "start": 146.16,
+      "duration": 3.72,
+      "text": "gateway, but for you, you need to click"
+    },
+    {
+      "start": 147.84,
+      "duration": 3.96,
+      "text": "on new gateway, and then choose the app"
+    },
+    {
+      "start": 149.88,
+      "duration": 3.64,
+      "text": "that you want your AI agents to use. I'm"
+    },
+    {
+      "start": 151.8,
+      "duration": 3.48,
+      "text": "going to choose GitHub here. You can"
+    },
+    {
+      "start": 153.52,
+      "duration": 3.48,
+      "text": "choose as many application as you want"
+    },
+    {
+      "start": 155.28,
+      "duration": 4.32,
+      "text": "after you connect it."
+    },
+    {
+      "start": 157.0,
+      "duration": 4.24,
+      "text": "Let's name the gateway,"
+    },
+    {
+      "start": 159.6,
+      "duration": 3.44,
+      "text": "and then click on next."
+    },
+    {
+      "start": 161.24,
+      "duration": 3.32,
+      "text": "On this page, Storm MCP shows you"
+    },
+    {
+      "start": 163.04,
+      "duration": 3.56,
+      "text": "different permissions that your AI"
+    },
+    {
+      "start": 164.56,
+      "duration": 4.12,
+      "text": "agents can do. For example, if you"
+    },
+    {
+      "start": 166.6,
+      "duration": 4.0,
+      "text": "choose create issue, create repository,"
+    },
+    {
+      "start": 168.68,
+      "duration": 5.04,
+      "text": "your AI agents can do this actions for"
+    },
+    {
+      "start": 170.6,
+      "duration": 3.12,
+      "text": "you. You can choose to"
+    },
+    {
+      "start": 173.84,
+      "duration": 4.0,
+      "text": "You can choose to select You can choose"
+    },
+    {
+      "start": 175.6,
+      "duration": 3.96,
+      "text": "to select Okay. You can choose to select"
+    },
+    {
+      "start": 177.84,
+      "duration": 3.64,
+      "text": "only what you require to manage access,"
+    },
+    {
+      "start": 179.56,
+      "duration": 3.44,
+      "text": "or you can also select all. For this"
+    },
+    {
+      "start": 181.48,
+      "duration": 3.2,
+      "text": "demo, let's say we only want to manage"
+    },
+    {
+      "start": 183.0,
+      "duration": 3.32,
+      "text": "issues, so I'm going to choose only"
+    },
+    {
+      "start": 184.68,
+      "duration": 3.4,
+      "text": "issues related"
+    },
+    {
+      "start": 186.32,
+      "duration": 3.88,
+      "text": "which is create issue,"
+    },
+    {
+      "start": 188.08,
+      "duration": 3.52,
+      "text": "get issue,"
+    },
+    {
+      "start": 190.2,
+      "duration": 2.92,
+      "text": "list issues,"
+    },
+    {
+      "start": 191.6,
+      "duration": 3.76,
+      "text": "list pull request,"
+    },
+    {
+      "start": 193.12,
+      "duration": 4.0,
+      "text": "search issue, update issue, update pull"
+    },
+    {
+      "start": 195.36,
+      "duration": 3.4,
+      "text": "request, update pull request batch. This"
+    },
+    {
+      "start": 197.12,
+      "duration": 3.399,
+      "text": "way your AI agents can help you with"
+    },
+    {
+      "start": 198.76,
+      "duration": 3.08,
+      "text": "issues and pull request, but it cannot"
+    },
+    {
+      "start": 200.519,
+      "duration": 3.72,
+      "text": "break anything because it does not have"
+    },
+    {
+      "start": 201.84,
+      "duration": 3.88,
+      "text": "a permission. Click on create now, and"
+    },
+    {
+      "start": 204.239,
+      "duration": 3.72,
+      "text": "this is the endpoint that we can use."
+    },
+    {
+      "start": 205.72,
+      "duration": 3.92,
+      "text": "Click on done. Now we have our gateway"
+    },
+    {
+      "start": 207.959,
+      "duration": 3.721,
+      "text": "ready, and we can start using it. We can"
+    },
+    {
+      "start": 209.64,
+      "duration": 4.08,
+      "text": "use it either using cursor, cloud code,"
+    },
+    {
+      "start": 211.68,
+      "duration": 3.72,
+      "text": "or cloud desktop. I have cursor here, so"
+    },
+    {
+      "start": 213.72,
+      "duration": 5.239,
+      "text": "I'm going to click on add cursor option,"
+    },
+    {
+      "start": 215.4,
+      "duration": 5.24,
+      "text": "and then choose API key authentication."
+    },
+    {
+      "start": 218.959,
+      "duration": 2.961,
+      "text": "Now click on open cursor. This is my"
+    },
+    {
+      "start": 220.64,
+      "duration": 3.36,
+      "text": "cursor application, and you can see it"
+    },
+    {
+      "start": 221.92,
+      "duration": 3.84,
+      "text": "says install MCP server. The name is"
+    },
+    {
+      "start": 224.0,
+      "duration": 3.28,
+      "text": "Storm Git, and this is the endpoint. I'm"
+    },
+    {
+      "start": 225.76,
+      "duration": 3.16,
+      "text": "going to click on install option here,"
+    },
+    {
+      "start": 227.28,
+      "duration": 3.0,
+      "text": "and you will see very soon it will load"
+    },
+    {
+      "start": 228.92,
+      "duration": 3.0,
+      "text": "tools, and it will only show you the"
+    },
+    {
+      "start": 230.28,
+      "duration": 3.12,
+      "text": "tools that we have selected, which is"
+    },
+    {
+      "start": 231.92,
+      "duration": 3.52,
+      "text": "create issue, get issue, list issue,"
+    },
+    {
+      "start": 233.4,
+      "duration": 3.2,
+      "text": "list pull request, and so on. Let's try"
+    },
+    {
+      "start": 235.44,
+      "duration": 2.64,
+      "text": "it out."
+    },
+    {
+      "start": 236.6,
+      "duration": 2.84,
+      "text": "This is what configuration looks like,"
+    },
+    {
+      "start": 238.08,
+      "duration": 3.0,
+      "text": "but you don't have to manage it because"
+    },
+    {
+      "start": 239.44,
+      "duration": 3.64,
+      "text": "Storm MCP does it for you. Now, let's"
+    },
+    {
+      "start": 241.08,
+      "duration": 4.0,
+      "text": "try to test this out. Let's test our"
+    },
+    {
+      "start": 243.08,
+      "duration": 4.4,
+      "text": "GitHub MCP server. I'm going to ask my"
+    },
+    {
+      "start": 245.08,
+      "duration": 5.2,
+      "text": "agent to list all the current issues in"
+    },
+    {
+      "start": 247.48,
+      "duration": 2.8,
+      "text": "my repository."
+    },
+    {
+      "start": 256.2,
+      "duration": 2.8,
+      "text": "You can see it is running the list"
+    },
+    {
+      "start": 257.44,
+      "duration": 2.88,
+      "text": "issues tool here."
+    },
+    {
+      "start": 259.0,
+      "duration": 3.04,
+      "text": "And based on this, you can see it gave"
+    },
+    {
+      "start": 260.32,
+      "duration": 2.72,
+      "text": "me information saying open issues, open"
+    },
+    {
+      "start": 262.04,
+      "duration": 3.16,
+      "text": "pull request, and these are all the"
+    },
+    {
+      "start": 263.04,
+      "duration": 4.0,
+      "text": "different pull requests here."
+    },
+    {
+      "start": 265.2,
+      "duration": 3.56,
+      "text": "Awesome. Based on the permissions you've"
+    },
+    {
+      "start": 267.04,
+      "duration": 3.68,
+      "text": "given in Storm MCP dashboard, you can"
+    },
+    {
+      "start": 268.76,
+      "duration": 3.64,
+      "text": "perform more actions here. So, let's try"
+    },
+    {
+      "start": 270.72,
+      "duration": 4.0,
+      "text": "to ask it to create an issue to fix"
+    },
+    {
+      "start": 272.4,
+      "duration": 3.72,
+      "text": "Dockerfile and see what happens."
+    },
+    {
+      "start": 274.72,
+      "duration": 4.4,
+      "text": "You can see it says I have successfully"
+    },
+    {
+      "start": 276.12,
+      "duration": 4.76,
+      "text": "created a new issue #32 titled fixed"
+    },
+    {
+      "start": 279.12,
+      "duration": 3.44,
+      "text": "Dockerfile issues, and here is more"
+    },
+    {
+      "start": 280.88,
+      "duration": 3.24,
+      "text": "information. Let's confirm that. I'm"
+    },
+    {
+      "start": 282.56,
+      "duration": 4.6,
+      "text": "going to go to my repository, which is"
+    },
+    {
+      "start": 284.12,
+      "duration": 4.6,
+      "text": "this one, and then go to issue section."
+    },
+    {
+      "start": 287.16,
+      "duration": 3.84,
+      "text": "And you see a new issue has been"
+    },
+    {
+      "start": 288.72,
+      "duration": 4.32,
+      "text": "created, which is fixed Dockerfile, open"
+    },
+    {
+      "start": 291.0,
+      "duration": 4.6,
+      "text": "right now. Isn't this amazing? You can"
+    },
+    {
+      "start": 293.04,
+      "duration": 5.2,
+      "text": "now use multiple MCP servers safely and"
+    },
+    {
+      "start": 295.6,
+      "duration": 4.68,
+      "text": "securely using Storm MCP. One of the"
+    },
+    {
+      "start": 298.24,
+      "duration": 3.4,
+      "text": "best features of Storm MCP is that it"
+    },
+    {
+      "start": 300.28,
+      "duration": 2.56,
+      "text": "gives you visibility into what's"
+    },
+    {
+      "start": 301.64,
+      "duration": 3.279,
+      "text": "happening, and this is called"
+    },
+    {
+      "start": 302.84,
+      "duration": 3.4,
+      "text": "observability. It means you can measure"
+    },
+    {
+      "start": 304.919,
+      "duration": 3.281,
+      "text": "and understand how your connections are"
+    },
+    {
+      "start": 306.24,
+      "duration": 3.96,
+      "text": "being used. Storm MCP provides you with"
+    },
+    {
+      "start": 308.2,
+      "duration": 3.96,
+      "text": "action logs. You can also see logs and"
+    },
+    {
+      "start": 310.2,
+      "duration": 3.64,
+      "text": "understand every request that's made"
+    },
+    {
+      "start": 312.16,
+      "duration": 4.32,
+      "text": "through an MCP server. You can also"
+    },
+    {
+      "start": 313.84,
+      "duration": 4.52,
+      "text": "track and see which AI agent or workflow"
+    },
+    {
+      "start": 316.48,
+      "duration": 4.32,
+      "text": "triggered an action. You can also see"
+    },
+    {
+      "start": 318.36,
+      "duration": 4.2,
+      "text": "speed, total request, peak request,"
+    },
+    {
+      "start": 320.8,
+      "duration": 3.4,
+      "text": "active gateways, and so on."
+    },
+    {
+      "start": 322.56,
+      "duration": 3.32,
+      "text": "This way, if your AI agent is not"
+    },
+    {
+      "start": 324.2,
+      "duration": 3.8,
+      "text": "working properly or listing issues too"
+    },
+    {
+      "start": 325.88,
+      "duration": 3.24,
+      "text": "often, you can see that in your logs. Or"
+    },
+    {
+      "start": 328.0,
+      "duration": 2.56,
+      "text": "if the permission is missing, you can"
+    },
+    {
+      "start": 329.12,
+      "duration": 3.799,
+      "text": "also see a clear message in the"
+    },
+    {
+      "start": 330.56,
+      "duration": 4.12,
+      "text": "dashboard. This makes Storm MCP not just"
+    },
+    {
+      "start": 332.919,
+      "duration": 3.321,
+      "text": "a MCP connection tool, but also a"
+    },
+    {
+      "start": 334.68,
+      "duration": 3.12,
+      "text": "monitoring tool. So, you always know"
+    },
+    {
+      "start": 336.24,
+      "duration": 3.88,
+      "text": "what your AI is doing, and you can also"
+    },
+    {
+      "start": 337.8,
+      "duration": 4.16,
+      "text": "fix problem very fast. So, this was"
+    },
+    {
+      "start": 340.12,
+      "duration": 3.52,
+      "text": "Storm MCP. Try it now to connect to"
+    },
+    {
+      "start": 341.96,
+      "duration": 5.04,
+      "text": "multiple MCP servers. The link is in"
+    },
+    {
+      "start": 343.64,
+      "duration": 3.36,
+      "text": "description. Subscribe."
+    },
+    {
+      "start": 364.84,
+      "duration": 2.12,
+      "text": ">> Oh."
+    }
+  ]
+}

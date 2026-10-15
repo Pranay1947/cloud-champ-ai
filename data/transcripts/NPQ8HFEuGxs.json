@@ -1,0 +1,926 @@
+{
+  "video": {
+    "id": "NPQ8HFEuGxs",
+    "title": "How to Bootstrap EC2 Instance with user data script in Terraform | Terraform userdata example",
+    "url": "https://www.youtube.com/watch?v=NPQ8HFEuGxs",
+    "duration": 403,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 5.44,
+      "text": "user data to bootstrap our ec2 instances"
+    },
+    {
+      "start": 3.52,
+      "duration": 3.279,
+      "text": "and in the previous video we saw how we"
+    },
+    {
+      "start": 5.6,
+      "duration": 3.76,
+      "text": "used to create"
+    },
+    {
+      "start": 6.799,
+      "duration": 4.641,
+      "text": "ec2 instance using security groups using"
+    },
+    {
+      "start": 9.36,
+      "duration": 4.0,
+      "text": "keepers in the terraform so if you have"
+    },
+    {
+      "start": 11.44,
+      "duration": 3.76,
+      "text": "not watched the previous video i would"
+    },
+    {
+      "start": 13.36,
+      "duration": 3.839,
+      "text": "recommend you to go ahead and watch the"
+    },
+    {
+      "start": 15.2,
+      "duration": 4.8,
+      "text": "previous video and then come to watch"
+    },
+    {
+      "start": 17.199,
+      "duration": 4.801,
+      "text": "this user data video so whenever we"
+    },
+    {
+      "start": 20.0,
+      "duration": 4.24,
+      "text": "click launch instance in the console you"
+    },
+    {
+      "start": 22.0,
+      "duration": 4.32,
+      "text": "get an option to choose an ami and after"
+    },
+    {
+      "start": 24.24,
+      "duration": 4.16,
+      "text": "choosing ami you get an option to select"
+    },
+    {
+      "start": 26.32,
+      "duration": 3.44,
+      "text": "the instance type when you select the"
+    },
+    {
+      "start": 28.4,
+      "duration": 3.36,
+      "text": "instance type you get the option to"
+    },
+    {
+      "start": 29.76,
+      "duration": 4.08,
+      "text": "configure instance details and if you"
+    },
+    {
+      "start": 31.76,
+      "duration": 4.16,
+      "text": "scroll down here this there's an option"
+    },
+    {
+      "start": 33.84,
+      "duration": 4.559,
+      "text": "to enter the user data you can input"
+    },
+    {
+      "start": 35.92,
+      "duration": 4.72,
+      "text": "user data in two forms using text or"
+    },
+    {
+      "start": 38.399,
+      "duration": 3.68,
+      "text": "using a file if you choose to put it as"
+    },
+    {
+      "start": 40.64,
+      "duration": 3.2,
+      "text": "a text you just have to enter your"
+    },
+    {
+      "start": 42.079,
+      "duration": 3.841,
+      "text": "script here in this block or if you"
+    },
+    {
+      "start": 43.84,
+      "duration": 4.399,
+      "text": "choose to put it as a file you have to"
+    },
+    {
+      "start": 45.92,
+      "duration": 4.479,
+      "text": "choose a file from your local machine"
+    },
+    {
+      "start": 48.239,
+      "duration": 4.48,
+      "text": "right and same way in terraform you get"
+    },
+    {
+      "start": 50.399,
+      "duration": 4.081,
+      "text": "two options either you can put it as a"
+    },
+    {
+      "start": 52.719,
+      "duration": 4.16,
+      "text": "text in the code itself or you can"
+    },
+    {
+      "start": 54.48,
+      "duration": 5.28,
+      "text": "choose to have a file and refer it in"
+    },
+    {
+      "start": 56.879,
+      "duration": 5.281,
+      "text": "your ec2 instance ta file so if i go to"
+    },
+    {
+      "start": 59.76,
+      "duration": 4.0,
+      "text": "the terraform user data documentation"
+    },
+    {
+      "start": 62.16,
+      "duration": 3.2,
+      "text": "there this is a data from documentation"
+    },
+    {
+      "start": 63.76,
+      "duration": 3.679,
+      "text": "i will paste the link in the description"
+    },
+    {
+      "start": 65.36,
+      "duration": 4.0,
+      "text": "and you can go check it out in this"
+    },
+    {
+      "start": 67.439,
+      "duration": 4.081,
+      "text": "documentation if i scroll down you can"
+    },
+    {
+      "start": 69.36,
+      "duration": 4.64,
+      "text": "see that there are two methods the first"
+    },
+    {
+      "start": 71.52,
+      "duration": 5.52,
+      "text": "is user data inserted in the tf file"
+    },
+    {
+      "start": 74.0,
+      "duration": 4.799,
+      "text": "itself or user data located in the"
+    },
+    {
+      "start": 77.04,
+      "duration": 3.92,
+      "text": "another file so i'm going to show you"
+    },
+    {
+      "start": 78.799,
+      "duration": 3.36,
+      "text": "both the methods and you can use any one"
+    },
+    {
+      "start": 80.96,
+      "duration": 3.839,
+      "text": "of them"
+    },
+    {
+      "start": 82.159,
+      "duration": 5.201,
+      "text": "so the first is using the user data"
+    },
+    {
+      "start": 84.799,
+      "duration": 5.201,
+      "text": "itself in the tf file so you can use"
+    },
+    {
+      "start": 87.36,
+      "duration": 4.399,
+      "text": "this end of file method and i'm going to"
+    },
+    {
+      "start": 90.0,
+      "duration": 3.6,
+      "text": "copy this"
+    },
+    {
+      "start": 91.759,
+      "duration": 4.4,
+      "text": "code here this is the script by"
+    },
+    {
+      "start": 93.6,
+      "duration": 4.64,
+      "text": "terraform itself in the documentation so"
+    },
+    {
+      "start": 96.159,
+      "duration": 4.0,
+      "text": "in your tf file"
+    },
+    {
+      "start": 98.24,
+      "duration": 4.64,
+      "text": "you have to use this argument that is"
+    },
+    {
+      "start": 100.159,
+      "duration": 4.561,
+      "text": "user underscore data and after that you"
+    },
+    {
+      "start": 102.88,
+      "duration": 4.48,
+      "text": "have to paste in the code remember to"
+    },
+    {
+      "start": 104.72,
+      "duration": 5.12,
+      "text": "put this and eof i don't really like"
+    },
+    {
+      "start": 107.36,
+      "duration": 5.36,
+      "text": "this method because it makes my code"
+    },
+    {
+      "start": 109.84,
+      "duration": 4.559,
+      "text": "very big and quite confusing so it does"
+    },
+    {
+      "start": 112.72,
+      "duration": 3.439,
+      "text": "not look so nice so i would recommend"
+    },
+    {
+      "start": 114.399,
+      "duration": 4.32,
+      "text": "you to go with the second method that is"
+    },
+    {
+      "start": 116.159,
+      "duration": 4.161,
+      "text": "using the another file for the user data"
+    },
+    {
+      "start": 118.719,
+      "duration": 3.521,
+      "text": "that is user data located in another"
+    },
+    {
+      "start": 120.32,
+      "duration": 4.0,
+      "text": "file so for that i'm going to create a"
+    },
+    {
+      "start": 122.24,
+      "duration": 4.479,
+      "text": "new file uh and i've created a file name"
+    },
+    {
+      "start": 124.32,
+      "duration": 4.24,
+      "text": "as script.sh so for now i'm going to"
+    },
+    {
+      "start": 126.719,
+      "duration": 3.76,
+      "text": "delete this and because i'm not using"
+    },
+    {
+      "start": 128.56,
+      "duration": 3.6,
+      "text": "this approach i don't like it so much so"
+    },
+    {
+      "start": 130.479,
+      "duration": 4.161,
+      "text": "i've created a new file and i'm going to"
+    },
+    {
+      "start": 132.16,
+      "duration": 5.2,
+      "text": "put in my script here"
+    },
+    {
+      "start": 134.64,
+      "duration": 5.2,
+      "text": "so first of all you need to have shebang"
+    },
+    {
+      "start": 137.36,
+      "duration": 4.48,
+      "text": "slash bin bash if you know scripting you"
+    },
+    {
+      "start": 139.84,
+      "duration": 3.759,
+      "text": "might know this as well the second is"
+    },
+    {
+      "start": 141.84,
+      "duration": 2.56,
+      "text": "going to be updating all the packages in"
+    },
+    {
+      "start": 143.599,
+      "duration": 3.041,
+      "text": "my"
+    },
+    {
+      "start": 144.4,
+      "duration": 4.88,
+      "text": "instance so i'm using yum because my"
+    },
+    {
+      "start": 146.64,
+      "duration": 3.52,
+      "text": "instance is amazon linux so if you're"
+    },
+    {
+      "start": 149.28,
+      "duration": 3.2,
+      "text": "using"
+    },
+    {
+      "start": 150.16,
+      "duration": 4.4,
+      "text": "ubuntu you have to use apt packet"
+    },
+    {
+      "start": 152.48,
+      "duration": 4.24,
+      "text": "manager but i'm using amazon linux so"
+    },
+    {
+      "start": 154.56,
+      "duration": 4.0,
+      "text": "i'm going to use yum update hyphen y"
+    },
+    {
+      "start": 156.72,
+      "duration": 3.599,
+      "text": "which is going to update all my packages"
+    },
+    {
+      "start": 158.56,
+      "duration": 4.64,
+      "text": "in the instance the third is going to"
+    },
+    {
+      "start": 160.319,
+      "duration": 4.721,
+      "text": "install httpd web server that is apache"
+    },
+    {
+      "start": 163.2,
+      "duration": 3.52,
+      "text": "web server and"
+    },
+    {
+      "start": 165.04,
+      "duration": 4.0,
+      "text": "next i have to start this apache web"
+    },
+    {
+      "start": 166.72,
+      "duration": 5.28,
+      "text": "server so i'm going to use system ctl"
+    },
+    {
+      "start": 169.04,
+      "duration": 4.96,
+      "text": "start httpd service and then i'm going"
+    },
+    {
+      "start": 172.0,
+      "duration": 4.08,
+      "text": "to enable it so whenever if i start the"
+    },
+    {
+      "start": 174.0,
+      "duration": 5.04,
+      "text": "instance after stopping it i should have"
+    },
+    {
+      "start": 176.08,
+      "duration": 5.04,
+      "text": "the http service started"
+    },
+    {
+      "start": 179.04,
+      "duration": 4.559,
+      "text": "and lastly i'm going to print out this"
+    },
+    {
+      "start": 181.12,
+      "duration": 5.52,
+      "text": "message on this screen whenever i paste"
+    },
+    {
+      "start": 183.599,
+      "duration": 4.72,
+      "text": "my ip in the browser so if i put my ip"
+    },
+    {
+      "start": 186.64,
+      "duration": 4.16,
+      "text": "public ip on the browser i should see"
+    },
+    {
+      "start": 188.319,
+      "duration": 4.56,
+      "text": "this message so i have my script ready"
+    },
+    {
+      "start": 190.8,
+      "duration": 4.719,
+      "text": "and how am i going to refer this script"
+    },
+    {
+      "start": 192.879,
+      "duration": 6.0,
+      "text": "dot sh in the instance file so for that"
+    },
+    {
+      "start": 195.519,
+      "duration": 5.921,
+      "text": "after user data you have to use file"
+    },
+    {
+      "start": 198.879,
+      "duration": 4.08,
+      "text": "file and in the brackets you have to put"
+    },
+    {
+      "start": 201.44,
+      "duration": 3.92,
+      "text": "it in the inverted commas the name of"
+    },
+    {
+      "start": 202.959,
+      "duration": 5.36,
+      "text": "the file so it is going to be script"
+    },
+    {
+      "start": 205.36,
+      "duration": 5.04,
+      "text": "dot sh and i'm going to save this now"
+    },
+    {
+      "start": 208.319,
+      "duration": 4.241,
+      "text": "and save this settings as well"
+    },
+    {
+      "start": 210.4,
+      "duration": 3.919,
+      "text": "and if i go here let's run terraform"
+    },
+    {
+      "start": 212.56,
+      "duration": 2.88,
+      "text": "plan to see what is exactly going to be"
+    },
+    {
+      "start": 214.319,
+      "duration": 3.041,
+      "text": "created"
+    },
+    {
+      "start": 215.44,
+      "duration": 3.12,
+      "text": "so let's run terraform plan so all the"
+    },
+    {
+      "start": 217.36,
+      "duration": 2.48,
+      "text": "things that i've mentioned here in the"
+    },
+    {
+      "start": 218.56,
+      "duration": 4.319,
+      "text": "code is going to be shown in the"
+    },
+    {
+      "start": 219.84,
+      "duration": 6.319,
+      "text": "terraform plan and it says all the keys"
+    },
+    {
+      "start": 222.879,
+      "duration": 5.841,
+      "text": "and security group the ec2 instance is"
+    },
+    {
+      "start": 226.159,
+      "duration": 3.841,
+      "text": "going to be created so if i search it"
+    },
+    {
+      "start": 228.72,
+      "duration": 2.799,
+      "text": "here"
+    },
+    {
+      "start": 230.0,
+      "duration": 3.92,
+      "text": "user"
+    },
+    {
+      "start": 231.519,
+      "duration": 4.64,
+      "text": "data so if you see user data here you"
+    },
+    {
+      "start": 233.92,
+      "duration": 5.2,
+      "text": "can see the code it is in the base64"
+    },
+    {
+      "start": 236.159,
+      "duration": 4.64,
+      "text": "encoded code and let's run terraform"
+    },
+    {
+      "start": 239.12,
+      "duration": 4.399,
+      "text": "apply to"
+    },
+    {
+      "start": 240.799,
+      "duration": 5.281,
+      "text": "see if you can get the user data running"
+    },
+    {
+      "start": 243.519,
+      "duration": 3.761,
+      "text": "so telephone apply hyphen auto hyphen"
+    },
+    {
+      "start": 246.08,
+      "duration": 2.96,
+      "text": "approve"
+    },
+    {
+      "start": 247.28,
+      "duration": 3.84,
+      "text": "if you want to know how i created the"
+    },
+    {
+      "start": 249.04,
+      "duration": 3.52,
+      "text": "keepers and all this stuff security"
+    },
+    {
+      "start": 251.12,
+      "duration": 3.28,
+      "text": "group please check out the previous"
+    },
+    {
+      "start": 252.56,
+      "duration": 3.919,
+      "text": "video i've created a detailed video"
+    },
+    {
+      "start": 254.4,
+      "duration": 4.72,
+      "text": "explaining everything how you can create"
+    },
+    {
+      "start": 256.479,
+      "duration": 5.28,
+      "text": "uh look how you can create a keypass"
+    },
+    {
+      "start": 259.12,
+      "duration": 5.359,
+      "text": "in the terraform code so now let's go"
+    },
+    {
+      "start": 261.759,
+      "duration": 4.481,
+      "text": "back to the issue service and see if our"
+    },
+    {
+      "start": 264.479,
+      "duration": 3.841,
+      "text": "instance is creating can see the"
+    },
+    {
+      "start": 266.24,
+      "duration": 3.679,
+      "text": "security group has been created key pair"
+    },
+    {
+      "start": 268.32,
+      "duration": 3.84,
+      "text": "has been created as well the instance is"
+    },
+    {
+      "start": 269.919,
+      "duration": 4.641,
+      "text": "still creating and you can wait for it"
+    },
+    {
+      "start": 272.16,
+      "duration": 2.4,
+      "text": "to create"
+    },
+    {
+      "start": 274.72,
+      "duration": 3.84,
+      "text": "so as you can see it says the apply"
+    },
+    {
+      "start": 276.639,
+      "duration": 4.401,
+      "text": "complete and five resources has been"
+    },
+    {
+      "start": 278.56,
+      "duration": 5.28,
+      "text": "added so if i refresh here i should see"
+    },
+    {
+      "start": 281.04,
+      "duration": 5.04,
+      "text": "a terraform ec2 running and we have to"
+    },
+    {
+      "start": 283.84,
+      "duration": 4.32,
+      "text": "wait for the status check to go two by"
+    },
+    {
+      "start": 286.08,
+      "duration": 4.399,
+      "text": "two because it might show some error"
+    },
+    {
+      "start": 288.16,
+      "duration": 4.08,
+      "text": "before if you try to access it now and"
+    },
+    {
+      "start": 290.479,
+      "duration": 3.921,
+      "text": "you can see this intersects here it is"
+    },
+    {
+      "start": 292.24,
+      "duration": 3.92,
+      "text": "still an initializing phase to see if"
+    },
+    {
+      "start": 294.4,
+      "duration": 3.6,
+      "text": "your user data actually works or not"
+    },
+    {
+      "start": 296.16,
+      "duration": 4.56,
+      "text": "there are two methods i can directly go"
+    },
+    {
+      "start": 298.0,
+      "duration": 4.8,
+      "text": "here and you are using https but you"
+    },
+    {
+      "start": 300.72,
+      "duration": 4.72,
+      "text": "have to remove the s here because we are"
+    },
+    {
+      "start": 302.8,
+      "duration": 4.32,
+      "text": "not using any ssl we we are going to use"
+    },
+    {
+      "start": 305.44,
+      "duration": 3.12,
+      "text": "http"
+    },
+    {
+      "start": 307.12,
+      "duration": 2.799,
+      "text": "and it says"
+    },
+    {
+      "start": 308.56,
+      "duration": 2.8,
+      "text": "the site can't be reached because it is"
+    },
+    {
+      "start": 309.919,
+      "duration": 3.441,
+      "text": "still in initializing phase so we are"
+    },
+    {
+      "start": 311.36,
+      "duration": 4.72,
+      "text": "going to wait till now you can go to the"
+    },
+    {
+      "start": 313.36,
+      "duration": 5.44,
+      "text": "connect section and let's go here"
+    },
+    {
+      "start": 316.08,
+      "duration": 4.32,
+      "text": "there's a url which shows what user data"
+    },
+    {
+      "start": 318.8,
+      "duration": 6.16,
+      "text": "do you have here so i'm going to use"
+    },
+    {
+      "start": 320.4,
+      "duration": 5.92,
+      "text": "that url curl and"
+    },
+    {
+      "start": 324.96,
+      "duration": 3.519,
+      "text": "user data"
+    },
+    {
+      "start": 326.32,
+      "duration": 5.52,
+      "text": "ec2 url"
+    },
+    {
+      "start": 328.479,
+      "duration": 5.921,
+      "text": "something i 169254 metadata but we can"
+    },
+    {
+      "start": 331.84,
+      "duration": 4.72,
+      "text": "use it to get our instance user data as"
+    },
+    {
+      "start": 334.4,
+      "duration": 4.799,
+      "text": "well so i'm going to paste it here"
+    },
+    {
+      "start": 336.56,
+      "duration": 5.04,
+      "text": "insole so it says i'm going to paste it"
+    },
+    {
+      "start": 339.199,
+      "duration": 6.801,
+      "text": "i've pasted it and i'm going to type"
+    },
+    {
+      "start": 341.6,
+      "duration": 7.039,
+      "text": "user hyphen data and slash so if i type"
+    },
+    {
+      "start": 346.0,
+      "duration": 4.72,
+      "text": "this it can show whatever"
+    },
+    {
+      "start": 348.639,
+      "duration": 4.161,
+      "text": "user data i'm using it's the same user"
+    },
+    {
+      "start": 350.72,
+      "duration": 5.199,
+      "text": "data here as well so now let's check if"
+    },
+    {
+      "start": 352.8,
+      "duration": 5.519,
+      "text": "our instance is up by status 2x2 so if"
+    },
+    {
+      "start": 355.919,
+      "duration": 3.761,
+      "text": "you can see here the instance is up and"
+    },
+    {
+      "start": 358.319,
+      "duration": 2.401,
+      "text": "if i copy"
+    },
+    {
+      "start": 359.68,
+      "duration": 3.68,
+      "text": "this in"
+    },
+    {
+      "start": 360.72,
+      "duration": 6.08,
+      "text": "if i paste it make sure to remove the s"
+    },
+    {
+      "start": 363.36,
+      "duration": 5.6,
+      "text": "in the https and make it http and if i"
+    },
+    {
+      "start": 366.8,
+      "duration": 5.04,
+      "text": "press enter now you should see the"
+    },
+    {
+      "start": 368.96,
+      "duration": 4.48,
+      "text": "message it says hello cloud champ from"
+    },
+    {
+      "start": 371.84,
+      "duration": 4.4,
+      "text": "the host name"
+    },
+    {
+      "start": 373.44,
+      "duration": 5.52,
+      "text": "and created by user data in terraform"
+    },
+    {
+      "start": 376.24,
+      "duration": 4.799,
+      "text": "and if you have it please subscribe now"
+    },
+    {
+      "start": 378.96,
+      "duration": 4.32,
+      "text": "so this is how you use user data in"
+    },
+    {
+      "start": 381.039,
+      "duration": 4.641,
+      "text": "terraform using either file you can"
+    },
+    {
+      "start": 383.28,
+      "duration": 4.4,
+      "text": "paste it directly in your terraform code"
+    },
+    {
+      "start": 385.68,
+      "duration": 5.04,
+      "text": "so i hope you understood the video if"
+    },
+    {
+      "start": 387.68,
+      "duration": 5.84,
+      "text": "you got the user data in your browser"
+    },
+    {
+      "start": 390.72,
+      "duration": 5.36,
+      "text": "please subscribe to this channel and"
+    },
+    {
+      "start": 393.52,
+      "duration": 4.56,
+      "text": "i'm going to create more videos and i'm"
+    },
+    {
+      "start": 396.08,
+      "duration": 4.72,
+      "text": "so thankful for all the love and support"
+    },
+    {
+      "start": 398.08,
+      "duration": 5.839,
+      "text": "i'm getting so have a good day see you"
+    },
+    {
+      "start": 400.8,
+      "duration": 3.119,
+      "text": "in the next video"
+    }
+  ]
+}

@@ -1,0 +1,1326 @@
+{
+  "video": {
+    "id": "VpedSVqh5Pk",
+    "title": "Devops vs SRE : Difference between DevOps Engineer and Site Reliability Engineer",
+    "url": "https://www.youtube.com/watch?v=VpedSVqh5Pk",
+    "duration": 572,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 4.86,
+      "text": "so I work as a devops engineer along"
+    },
+    {
+      "start": 2.52,
+      "duration": 4.739,
+      "text": "with sres and platform engineers in my"
+    },
+    {
+      "start": 5.1,
+      "duration": 4.499,
+      "text": "company and even though we have same"
+    },
+    {
+      "start": 7.259,
+      "duration": 4.021,
+      "text": "kind of job roles and tasks there was a"
+    },
+    {
+      "start": 9.599,
+      "duration": 2.881,
+      "text": "difference in the job title and I was"
+    },
+    {
+      "start": 11.28,
+      "duration": 4.2,
+      "text": "always confused what is the difference"
+    },
+    {
+      "start": 12.48,
+      "duration": 4.86,
+      "text": "between a devops engineer or an SRE and"
+    },
+    {
+      "start": 15.48,
+      "duration": 3.66,
+      "text": "after so many years now I have the"
+    },
+    {
+      "start": 17.34,
+      "duration": 5.9,
+      "text": "answer and this is what we are going to"
+    },
+    {
+      "start": 19.14,
+      "duration": 4.1,
+      "text": "learn in this video so let's get started"
+    },
+    {
+      "start": 26.1,
+      "duration": 3.54,
+      "text": "hey everyone Welcome to Cloud Jam in"
+    },
+    {
+      "start": 28.14,
+      "duration": 3.539,
+      "text": "this video we are going to discuss the"
+    },
+    {
+      "start": 29.64,
+      "duration": 3.119,
+      "text": "difference between devops engineer and"
+    },
+    {
+      "start": 31.679,
+      "duration": 2.88,
+      "text": "SRE"
+    },
+    {
+      "start": 32.759,
+      "duration": 3.541,
+      "text": "so due to the rise of cloud computing"
+    },
+    {
+      "start": 34.559,
+      "duration": 3.481,
+      "text": "companies have changed the way they"
+    },
+    {
+      "start": 36.3,
+      "duration": 4.2,
+      "text": "deploy their applications and this has"
+    },
+    {
+      "start": 38.04,
+      "duration": 5.16,
+      "text": "led to so many different job roles two"
+    },
+    {
+      "start": 40.5,
+      "duration": 4.32,
+      "text": "of them are devops and SRE and even"
+    },
+    {
+      "start": 43.2,
+      "duration": 4.199,
+      "text": "though they have kind of same job rules"
+    },
+    {
+      "start": 44.82,
+      "duration": 4.559,
+      "text": "and tasks and some overlap but there are"
+    },
+    {
+      "start": 47.399,
+      "duration": 3.961,
+      "text": "still some important differences that we"
+    },
+    {
+      "start": 49.379,
+      "duration": 3.18,
+      "text": "have to discuss in this video so"
+    },
+    {
+      "start": 51.36,
+      "duration": 3.6,
+      "text": "throughout the video we will be"
+    },
+    {
+      "start": 52.559,
+      "duration": 3.901,
+      "text": "comparing SRE and devops engineer on"
+    },
+    {
+      "start": 54.96,
+      "duration": 3.72,
+      "text": "certain factors like what is the"
+    },
+    {
+      "start": 56.46,
+      "duration": 3.779,
+      "text": "definition what job they actually do"
+    },
+    {
+      "start": 58.68,
+      "duration": 3.6,
+      "text": "what are the tools used by devops"
+    },
+    {
+      "start": 60.239,
+      "duration": 3.541,
+      "text": "engineer versus SRE what is the salary"
+    },
+    {
+      "start": 62.28,
+      "duration": 3.42,
+      "text": "difference between SRE and devops"
+    },
+    {
+      "start": 63.78,
+      "duration": 3.72,
+      "text": "engineer along with this we are also"
+    },
+    {
+      "start": 65.7,
+      "duration": 4.2,
+      "text": "going to discuss two important case"
+    },
+    {
+      "start": 67.5,
+      "duration": 4.979,
+      "text": "studies so case study by Netflix and we"
+    },
+    {
+      "start": 69.9,
+      "duration": 4.56,
+      "text": "will see how SRE in Netflix work to"
+    },
+    {
+      "start": 72.479,
+      "duration": 4.381,
+      "text": "maintain Netflix architecture and the"
+    },
+    {
+      "start": 74.46,
+      "duration": 5.04,
+      "text": "second case study by Etsy so we are"
+    },
+    {
+      "start": 76.86,
+      "duration": 5.52,
+      "text": "going to discuss how devops engineer in"
+    },
+    {
+      "start": 79.5,
+      "duration": 4.86,
+      "text": "HC work to maintain HC so this way you"
+    },
+    {
+      "start": 82.38,
+      "duration": 3.96,
+      "text": "will be able to understand how devops"
+    },
+    {
+      "start": 84.36,
+      "duration": 3.48,
+      "text": "Engineers are different from SRE and"
+    },
+    {
+      "start": 86.34,
+      "duration": 3.54,
+      "text": "what are the different jobs and tasks"
+    },
+    {
+      "start": 87.84,
+      "duration": 3.779,
+      "text": "they do so let's get started"
+    },
+    {
+      "start": 89.88,
+      "duration": 4.2,
+      "text": "to differentiate between devops"
+    },
+    {
+      "start": 91.619,
+      "duration": 4.86,
+      "text": "engineers and SRE let's start with the"
+    },
+    {
+      "start": 94.08,
+      "duration": 5.46,
+      "text": "definition or to Define who is a devops"
+    },
+    {
+      "start": 96.479,
+      "duration": 5.221,
+      "text": "engineer and who is a SRE devops"
+    },
+    {
+      "start": 99.54,
+      "duration": 4.38,
+      "text": "engineer is a person who uses software"
+    },
+    {
+      "start": 101.7,
+      "duration": 3.559,
+      "text": "development and it operation skills to"
+    },
+    {
+      "start": 103.92,
+      "duration": 3.659,
+      "text": "automate the process of building"
+    },
+    {
+      "start": 105.259,
+      "duration": 4.961,
+      "text": "deploying and managing of software"
+    },
+    {
+      "start": 107.579,
+      "duration": 4.621,
+      "text": "applications whereas SRE SRE is somewhat"
+    },
+    {
+      "start": 110.22,
+      "duration": 4.32,
+      "text": "different so SRE or site reliability"
+    },
+    {
+      "start": 112.2,
+      "duration": 4.919,
+      "text": "engineer is a term introduced by Google"
+    },
+    {
+      "start": 114.54,
+      "duration": 4.74,
+      "text": "in late 2000s and this was originally"
+    },
+    {
+      "start": 117.119,
+      "duration": 4.381,
+      "text": "used to describe the practices and"
+    },
+    {
+      "start": 119.28,
+      "duration": 4.019,
+      "text": "principles that has helped Google to"
+    },
+    {
+      "start": 121.5,
+      "duration": 3.18,
+      "text": "maintain reliability availability and"
+    },
+    {
+      "start": 123.299,
+      "duration": 3.901,
+      "text": "scalability of their massive"
+    },
+    {
+      "start": 124.68,
+      "duration": 4.559,
+      "text": "infrastructure so SRE or site liability"
+    },
+    {
+      "start": 127.2,
+      "duration": 4.86,
+      "text": "engineer is a person who is responsible"
+    },
+    {
+      "start": 129.239,
+      "duration": 4.5,
+      "text": "for ensuring scalability reliability and"
+    },
+    {
+      "start": 132.06,
+      "duration": 4.14,
+      "text": "availability of large complex"
+    },
+    {
+      "start": 133.739,
+      "duration": 4.08,
+      "text": "infrastructures SRE uses combination of"
+    },
+    {
+      "start": 136.2,
+      "duration": 3.42,
+      "text": "software engineering skills and it"
+    },
+    {
+      "start": 137.819,
+      "duration": 4.201,
+      "text": "operations to design Implement and"
+    },
+    {
+      "start": 139.62,
+      "duration": 4.8,
+      "text": "maintain infrastructure and services"
+    },
+    {
+      "start": 142.02,
+      "duration": 4.68,
+      "text": "second point for comparison is focus and"
+    },
+    {
+      "start": 144.42,
+      "duration": 5.28,
+      "text": "goals so devops engineer focuses on"
+    },
+    {
+      "start": 146.7,
+      "duration": 5.1,
+      "text": "collaboration Automation and CI CD and"
+    },
+    {
+      "start": 149.7,
+      "duration": 3.24,
+      "text": "the main goals of devops engineer is to"
+    },
+    {
+      "start": 151.8,
+      "duration": 3.6,
+      "text": "improve the collaboration between"
+    },
+    {
+      "start": 152.94,
+      "duration": 4.92,
+      "text": "development and operation teams to"
+    },
+    {
+      "start": 155.4,
+      "duration": 4.5,
+      "text": "automate all the manual processes and to"
+    },
+    {
+      "start": 157.86,
+      "duration": 4.2,
+      "text": "set up cicd pipelines for continuous"
+    },
+    {
+      "start": 159.9,
+      "duration": 4.979,
+      "text": "Improvement and faster deployment of"
+    },
+    {
+      "start": 162.06,
+      "duration": 5.399,
+      "text": "application whereas SRE focuses on"
+    },
+    {
+      "start": 164.879,
+      "duration": 4.921,
+      "text": "stability reliability and availability"
+    },
+    {
+      "start": 167.459,
+      "duration": 4.321,
+      "text": "of application making sure that the"
+    },
+    {
+      "start": 169.8,
+      "duration": 4.14,
+      "text": "application is up all the time so the"
+    },
+    {
+      "start": 171.78,
+      "duration": 4.62,
+      "text": "main goals of SRE is to reduce incidence"
+    },
+    {
+      "start": 173.94,
+      "duration": 4.799,
+      "text": "improve the mean time to recovery or"
+    },
+    {
+      "start": 176.4,
+      "duration": 4.5,
+      "text": "Implement best practices for monitoring"
+    },
+    {
+      "start": 178.739,
+      "duration": 4.321,
+      "text": "alerting and incident responses also"
+    },
+    {
+      "start": 180.9,
+      "duration": 4.14,
+      "text": "risk management and disaster recovery so"
+    },
+    {
+      "start": 183.06,
+      "duration": 4.259,
+      "text": "that the affection can withstand any"
+    },
+    {
+      "start": 185.04,
+      "duration": 4.559,
+      "text": "unexpected failures third point for"
+    },
+    {
+      "start": 187.319,
+      "duration": 3.721,
+      "text": "comparison is day-to-day activities so"
+    },
+    {
+      "start": 189.599,
+      "duration": 3.601,
+      "text": "day-to-day activities for devops"
+    },
+    {
+      "start": 191.04,
+      "duration": 4.86,
+      "text": "engineer includes provisioning and"
+    },
+    {
+      "start": 193.2,
+      "duration": 5.52,
+      "text": "configuration of infrastructure setting"
+    },
+    {
+      "start": 195.9,
+      "duration": 5.1,
+      "text": "up cicd Pipelines automating software"
+    },
+    {
+      "start": 198.72,
+      "duration": 3.72,
+      "text": "deployment processes monitoring the"
+    },
+    {
+      "start": 201.0,
+      "duration": 2.76,
+      "text": "performance of infrastructure and"
+    },
+    {
+      "start": 202.44,
+      "duration": 3.299,
+      "text": "applications"
+    },
+    {
+      "start": 203.76,
+      "duration": 3.24,
+      "text": "troubleshooting and resolving issues in"
+    },
+    {
+      "start": 205.739,
+      "duration": 4.381,
+      "text": "different environments like production"
+    },
+    {
+      "start": 207.0,
+      "duration": 5.48,
+      "text": "development and staging and securing the"
+    },
+    {
+      "start": 210.12,
+      "duration": 5.58,
+      "text": "infrastructure and applications whereas"
+    },
+    {
+      "start": 212.48,
+      "duration": 5.619,
+      "text": "day-to-day activities of SRE includes"
+    },
+    {
+      "start": 215.7,
+      "duration": 3.539,
+      "text": "focus on ensuring software relatability"
+    },
+    {
+      "start": 218.099,
+      "duration": 3.121,
+      "text": "and availability"
+    },
+    {
+      "start": 219.239,
+      "duration": 3.541,
+      "text": "monitor performance metrics and quickly"
+    },
+    {
+      "start": 221.22,
+      "duration": 3.78,
+      "text": "responds to incidents"
+    },
+    {
+      "start": 222.78,
+      "duration": 3.239,
+      "text": "automate infrastructure management and"
+    },
+    {
+      "start": 225.0,
+      "duration": 3.299,
+      "text": "scaling"
+    },
+    {
+      "start": 226.019,
+      "duration": 4.741,
+      "text": "conduct root cause analysis for problems"
+    },
+    {
+      "start": 228.299,
+      "duration": 4.621,
+      "text": "to prevent future incidents now let's"
+    },
+    {
+      "start": 230.76,
+      "duration": 4.14,
+      "text": "differentiate on the basis of tools and"
+    },
+    {
+      "start": 232.92,
+      "duration": 4.14,
+      "text": "Technologies used by devops Engineers"
+    },
+    {
+      "start": 234.9,
+      "duration": 4.979,
+      "text": "versus tools and Technologies used by"
+    },
+    {
+      "start": 237.06,
+      "duration": 4.62,
+      "text": "SRE Engineers so devops Engineers have"
+    },
+    {
+      "start": 239.879,
+      "duration": 3.72,
+      "text": "different set of tools depending on"
+    },
+    {
+      "start": 241.68,
+      "duration": 3.779,
+      "text": "different workloads for configuration"
+    },
+    {
+      "start": 243.599,
+      "duration": 5.881,
+      "text": "management devops engineer uses ansible"
+    },
+    {
+      "start": 245.459,
+      "duration": 6.601,
+      "text": "salt stack Chef puppet and more for cicd"
+    },
+    {
+      "start": 249.48,
+      "duration": 5.58,
+      "text": "devops India uses gitlab Jenkins Travis"
+    },
+    {
+      "start": 252.06,
+      "duration": 5.34,
+      "text": "CI Circle CI for containerization and"
+    },
+    {
+      "start": 255.06,
+      "duration": 5.94,
+      "text": "orchestration adoption uses Docker"
+    },
+    {
+      "start": 257.4,
+      "duration": 5.28,
+      "text": "kubernetes openshift Rancher May sauce"
+    },
+    {
+      "start": 261.0,
+      "duration": 4.08,
+      "text": "day offset engine uses Cloud providers"
+    },
+    {
+      "start": 262.68,
+      "duration": 6.26,
+      "text": "like AWS Azure gcp they also uses"
+    },
+    {
+      "start": 265.08,
+      "duration": 3.86,
+      "text": "monitoring tools like Prometheus grafana"
+    },
+    {
+      "start": 269.54,
+      "duration": 3.939,
+      "text": "whereas SRE has different set of tools"
+    },
+    {
+      "start": 272.16,
+      "duration": 3.42,
+      "text": "and Technologies depending on their"
+    },
+    {
+      "start": 273.479,
+      "duration": 3.841,
+      "text": "workload so the first category is SLO"
+    },
+    {
+      "start": 275.58,
+      "duration": 4.2,
+      "text": "monitoring and they have different tools"
+    },
+    {
+      "start": 277.32,
+      "duration": 4.8,
+      "text": "like New Relic data doc app Dynamics and"
+    },
+    {
+      "start": 279.78,
+      "duration": 4.32,
+      "text": "Signal effects for this next is incident"
+    },
+    {
+      "start": 282.12,
+      "duration": 4.62,
+      "text": "response and management so tools like"
+    },
+    {
+      "start": 284.1,
+      "duration": 4.44,
+      "text": "slack pager Duty Vector Ops are used for"
+    },
+    {
+      "start": 286.74,
+      "duration": 4.08,
+      "text": "Automation and orchestration SRE uses"
+    },
+    {
+      "start": 288.54,
+      "duration": 3.78,
+      "text": "terraform cloud formation pulumi and"
+    },
+    {
+      "start": 290.82,
+      "duration": 3.48,
+      "text": "other tools for observability and"
+    },
+    {
+      "start": 292.32,
+      "duration": 4.319,
+      "text": "tracing SRE uses tools like open"
+    },
+    {
+      "start": 294.3,
+      "duration": 4.26,
+      "text": "Telemetry Zipkin and Jager and for"
+    },
+    {
+      "start": 296.639,
+      "duration": 4.021,
+      "text": "reliability engineering they use tools"
+    },
+    {
+      "start": 298.56,
+      "duration": 4.26,
+      "text": "like chaos toolkit chaos monkey and"
+    },
+    {
+      "start": 300.66,
+      "duration": 4.56,
+      "text": "litmus so these are some of the tools"
+    },
+    {
+      "start": 302.82,
+      "duration": 5.7,
+      "text": "and Technologies which are used in"
+    },
+    {
+      "start": 305.22,
+      "duration": 5.1,
+      "text": "devops versus used in si now let's look"
+    },
+    {
+      "start": 308.52,
+      "duration": 4.56,
+      "text": "at this difference in the salary between"
+    },
+    {
+      "start": 310.32,
+      "duration": 4.319,
+      "text": "the devops engineer and salary of SRE or"
+    },
+    {
+      "start": 313.08,
+      "duration": 3.96,
+      "text": "if you compare the salaries of devops"
+    },
+    {
+      "start": 314.639,
+      "duration": 4.801,
+      "text": "Engineers versus salary of SRE according"
+    },
+    {
+      "start": 317.04,
+      "duration": 4.5,
+      "text": "to Glassdoor a job search company the"
+    },
+    {
+      "start": 319.44,
+      "duration": 5.099,
+      "text": "national average salary of a devops"
+    },
+    {
+      "start": 321.54,
+      "duration": 5.939,
+      "text": "engineer in United States is 105 000"
+    },
+    {
+      "start": 324.539,
+      "duration": 8.1,
+      "text": "annually whereas salary of SRE engineer"
+    },
+    {
+      "start": 327.479,
+      "duration": 7.201,
+      "text": "in United States is 127 000 per year and"
+    },
+    {
+      "start": 332.639,
+      "duration": 4.081,
+      "text": "if you see that in India the starting"
+    },
+    {
+      "start": 334.68,
+      "duration": 4.739,
+      "text": "salary of a devops engineer is 7 lakhs"
+    },
+    {
+      "start": 336.72,
+      "duration": 6.18,
+      "text": "per annum whereas starting salary of an"
+    },
+    {
+      "start": 339.419,
+      "duration": 6.361,
+      "text": "SRE is 11 lakhs per annum if you look at"
+    },
+    {
+      "start": 342.9,
+      "duration": 4.799,
+      "text": "it the salary of SRA is more compared to"
+    },
+    {
+      "start": 345.78,
+      "duration": 3.6,
+      "text": "salary of devops engineer and that is"
+    },
+    {
+      "start": 347.699,
+      "duration": 3.541,
+      "text": "because SRE has additional"
+    },
+    {
+      "start": 349.38,
+      "duration": 4.319,
+      "text": "responsibilities so they are usually"
+    },
+    {
+      "start": 351.24,
+      "duration": 4.32,
+      "text": "paid more now before we go ahead and"
+    },
+    {
+      "start": 353.699,
+      "duration": 3.961,
+      "text": "look at the case studies of Netflix and"
+    },
+    {
+      "start": 355.56,
+      "duration": 4.079,
+      "text": "Etsy let's discuss the skills required"
+    },
+    {
+      "start": 357.66,
+      "duration": 5.34,
+      "text": "to become a devops engineer versus"
+    },
+    {
+      "start": 359.639,
+      "duration": 5.461,
+      "text": "skills required to become SRE so skills"
+    },
+    {
+      "start": 363.0,
+      "duration": 3.6,
+      "text": "required to become devops engineers are"
+    },
+    {
+      "start": 365.1,
+      "duration": 3.659,
+      "text": "already mentioned in this video you can"
+    },
+    {
+      "start": 366.6,
+      "duration": 4.439,
+      "text": "check it out but to summarize you need"
+    },
+    {
+      "start": 368.759,
+      "duration": 4.5,
+      "text": "to have knowledge of Linux get cloud"
+    },
+    {
+      "start": 371.039,
+      "duration": 3.361,
+      "text": "provider CI CD all the tools that we"
+    },
+    {
+      "start": 373.259,
+      "duration": 3.481,
+      "text": "have discussed before along with that"
+    },
+    {
+      "start": 374.4,
+      "duration": 4.44,
+      "text": "you also need some scripting and some"
+    },
+    {
+      "start": 376.74,
+      "duration": 3.84,
+      "text": "amount of coding language whereas if you"
+    },
+    {
+      "start": 378.84,
+      "duration": 3.0,
+      "text": "want to become a SRE you need to know"
+    },
+    {
+      "start": 380.58,
+      "duration": 3.42,
+      "text": "all the tools that we have discussed"
+    },
+    {
+      "start": 381.84,
+      "duration": 3.96,
+      "text": "before and you need to have extensive"
+    },
+    {
+      "start": 384.0,
+      "duration": 3.24,
+      "text": "coding knowledge because you might be"
+    },
+    {
+      "start": 385.8,
+      "duration": 4.26,
+      "text": "asked to create an application that can"
+    },
+    {
+      "start": 387.24,
+      "duration": 4.86,
+      "text": "scale and handle Peak workloads you also"
+    },
+    {
+      "start": 390.06,
+      "duration": 3.96,
+      "text": "need to have excellent monitorings and"
+    },
+    {
+      "start": 392.1,
+      "duration": 4.98,
+      "text": "troubleshooting skills you need to have"
+    },
+    {
+      "start": 394.02,
+      "duration": 4.92,
+      "text": "knowledge of networking CI CD Automation"
+    },
+    {
+      "start": 397.08,
+      "duration": 4.38,
+      "text": "and you need to have ability to leverage"
+    },
+    {
+      "start": 398.94,
+      "duration": 4.14,
+      "text": "tool to automate things in production"
+    },
+    {
+      "start": 401.46,
+      "duration": 3.959,
+      "text": "now to understand the difference between"
+    },
+    {
+      "start": 403.08,
+      "duration": 4.559,
+      "text": "SRE and devops more clearly let's look"
+    },
+    {
+      "start": 405.419,
+      "duration": 4.141,
+      "text": "at two interesting case studies the"
+    },
+    {
+      "start": 407.639,
+      "duration": 3.9,
+      "text": "first case study is by Etsy an online"
+    },
+    {
+      "start": 409.56,
+      "duration": 4.74,
+      "text": "Marketplace and we are going to see how"
+    },
+    {
+      "start": 411.539,
+      "duration": 5.041,
+      "text": "devops engineers in Etsy have used some"
+    },
+    {
+      "start": 414.3,
+      "duration": 4.44,
+      "text": "practices which has helped them gain lot"
+    },
+    {
+      "start": 416.58,
+      "duration": 4.2,
+      "text": "of profits the second case study is by"
+    },
+    {
+      "start": 418.74,
+      "duration": 4.079,
+      "text": "Netflix we are going to see how SRD"
+    },
+    {
+      "start": 420.78,
+      "duration": 4.5,
+      "text": "engineers in Netflix are able to handle"
+    },
+    {
+      "start": 422.819,
+      "duration": 4.141,
+      "text": "Netflix at Peak workloads so let's get"
+    },
+    {
+      "start": 425.28,
+      "duration": 3.84,
+      "text": "started so Etsy is a pretty popular"
+    },
+    {
+      "start": 426.96,
+      "duration": 4.14,
+      "text": "Online Marketplace but in the initial"
+    },
+    {
+      "start": 429.12,
+      "duration": 4.019,
+      "text": "days Etsy was facing a lot of problems"
+    },
+    {
+      "start": 431.1,
+      "duration": 3.84,
+      "text": "one of them was to manage their growing"
+    },
+    {
+      "start": 433.139,
+      "duration": 3.721,
+      "text": "infrastructure and second they didn't"
+    },
+    {
+      "start": 434.94,
+      "duration": 4.08,
+      "text": "had any stable platform for their"
+    },
+    {
+      "start": 436.86,
+      "duration": 4.02,
+      "text": "growing user base so the company was"
+    },
+    {
+      "start": 439.02,
+      "duration": 4.32,
+      "text": "looking for a solution to streamline"
+    },
+    {
+      "start": 440.88,
+      "duration": 4.5,
+      "text": "their code deployments and to have a"
+    },
+    {
+      "start": 443.34,
+      "duration": 4.5,
+      "text": "high performing platform for their users"
+    },
+    {
+      "start": 445.38,
+      "duration": 4.08,
+      "text": "that is when the devops engineers at the"
+    },
+    {
+      "start": 447.84,
+      "duration": 3.72,
+      "text": "company introduced a continuous"
+    },
+    {
+      "start": 449.46,
+      "duration": 3.78,
+      "text": "deployment process which led them to"
+    },
+    {
+      "start": 451.56,
+      "duration": 3.96,
+      "text": "deploy code changes to the production"
+    },
+    {
+      "start": 453.24,
+      "duration": 4.26,
+      "text": "government multiple times a day due to"
+    },
+    {
+      "start": 455.52,
+      "duration": 4.32,
+      "text": "this they were able to find and resolve"
+    },
+    {
+      "start": 457.5,
+      "duration": 4.8,
+      "text": "bugs faster and they were also able to"
+    },
+    {
+      "start": 459.84,
+      "duration": 4.68,
+      "text": "deploy new features and improvements"
+    },
+    {
+      "start": 462.3,
+      "duration": 3.899,
+      "text": "every day so due to devops Engineers"
+    },
+    {
+      "start": 464.52,
+      "duration": 3.899,
+      "text": "this led to increased platform stability"
+    },
+    {
+      "start": 466.199,
+      "duration": 4.141,
+      "text": "improved performance and faster feature"
+    },
+    {
+      "start": 468.419,
+      "duration": 4.201,
+      "text": "delivery it also led to higher user"
+    },
+    {
+      "start": 470.34,
+      "duration": 4.799,
+      "text": "satisfaction and profit for Etsy so this"
+    },
+    {
+      "start": 472.62,
+      "duration": 3.96,
+      "text": "is how evox Engineers have helped HC to"
+    },
+    {
+      "start": 475.139,
+      "duration": 3.601,
+      "text": "gain profit and to have a high"
+    },
+    {
+      "start": 476.58,
+      "duration": 4.559,
+      "text": "performing platform for their users"
+    },
+    {
+      "start": 478.74,
+      "duration": 4.32,
+      "text": "second case studies about Netflix and we"
+    },
+    {
+      "start": 481.139,
+      "duration": 5.101,
+      "text": "are going to see how SRE Engineers have"
+    },
+    {
+      "start": 483.06,
+      "duration": 5.34,
+      "text": "made Netflix disaster proof so everyone"
+    },
+    {
+      "start": 486.24,
+      "duration": 3.84,
+      "text": "knows about Netflix Netflix is a very"
+    },
+    {
+      "start": 488.4,
+      "duration": 5.12,
+      "text": "popular online streaming platform where"
+    },
+    {
+      "start": 490.08,
+      "duration": 7.14,
+      "text": "you can watch anime TV shows or movies"
+    },
+    {
+      "start": 493.52,
+      "duration": 5.92,
+      "text": "so Netflix is also on AWS so in 2007 due"
+    },
+    {
+      "start": 497.22,
+      "duration": 4.86,
+      "text": "to AWS outage Netflix was down"
+    },
+    {
+      "start": 499.44,
+      "duration": 5.099,
+      "text": "completely down so SRA engineers at"
+    },
+    {
+      "start": 502.08,
+      "duration": 4.2,
+      "text": "Netflix started focusing on ways to"
+    },
+    {
+      "start": 504.539,
+      "duration": 3.66,
+      "text": "improve availability and reliability of"
+    },
+    {
+      "start": 506.28,
+      "duration": 3.84,
+      "text": "Netflix they started working on a"
+    },
+    {
+      "start": 508.199,
+      "duration": 3.72,
+      "text": "project which was named as Simeon Army"
+    },
+    {
+      "start": 510.12,
+      "duration": 3.599,
+      "text": "and this siemian Army is a project which"
+    },
+    {
+      "start": 511.919,
+      "duration": 4.141,
+      "text": "consists of different tools one of them"
+    },
+    {
+      "start": 513.719,
+      "duration": 3.661,
+      "text": "is chaos monkey so chaos monkey is a"
+    },
+    {
+      "start": 516.06,
+      "duration": 3.599,
+      "text": "tool which selects any production"
+    },
+    {
+      "start": 517.38,
+      "duration": 4.019,
+      "text": "servers and deletes it and even if they"
+    },
+    {
+      "start": 519.659,
+      "duration": 3.601,
+      "text": "delete the production server there is no"
+    },
+    {
+      "start": 521.399,
+      "duration": 3.901,
+      "text": "impact on Netflix or no impact on"
+    },
+    {
+      "start": 523.26,
+      "duration": 3.96,
+      "text": "customers watching Netflix that is how"
+    },
+    {
+      "start": 525.3,
+      "duration": 4.2,
+      "text": "disaster proof Netflix architecture is"
+    },
+    {
+      "start": 527.22,
+      "duration": 4.38,
+      "text": "but that's not all semin Army consists"
+    },
+    {
+      "start": 529.5,
+      "duration": 4.32,
+      "text": "of different tools like janitor monkey"
+    },
+    {
+      "start": 531.6,
+      "duration": 4.08,
+      "text": "doctor monkey latency monkey you can"
+    },
+    {
+      "start": 533.82,
+      "duration": 3.0,
+      "text": "check out all of them in the blog that"
+    },
+    {
+      "start": 535.68,
+      "duration": 3.54,
+      "text": "I'm going to post in the description"
+    },
+    {
+      "start": 536.82,
+      "duration": 4.139,
+      "text": "this blog is by Netflix themselves and"
+    },
+    {
+      "start": 539.22,
+      "duration": 4.02,
+      "text": "not only this they have made the code"
+    },
+    {
+      "start": 540.959,
+      "duration": 3.841,
+      "text": "open source for a chaos monkey I'm going"
+    },
+    {
+      "start": 543.24,
+      "duration": 3.12,
+      "text": "to put the link for GitHub as well you"
+    },
+    {
+      "start": 544.8,
+      "duration": 3.659,
+      "text": "can check it out it's very interesting"
+    },
+    {
+      "start": 546.36,
+      "duration": 3.84,
+      "text": "and I'm absolutely sure you'll love it"
+    },
+    {
+      "start": 548.459,
+      "duration": 4.021,
+      "text": "so this is the difference devops"
+    },
+    {
+      "start": 550.2,
+      "duration": 4.56,
+      "text": "engineer focuses on deployment practices"
+    },
+    {
+      "start": 552.48,
+      "duration": 4.26,
+      "text": "and deployment processes whereas SRE"
+    },
+    {
+      "start": 554.76,
+      "duration": 4.079,
+      "text": "focuses on reliability availability of"
+    },
+    {
+      "start": 556.74,
+      "duration": 4.68,
+      "text": "the application making it more disaster"
+    },
+    {
+      "start": 558.839,
+      "duration": 4.321,
+      "text": "proof and highly available I hope the"
+    },
+    {
+      "start": 561.42,
+      "duration": 3.419,
+      "text": "difference between the SRE and devops is"
+    },
+    {
+      "start": 563.16,
+      "duration": 3.42,
+      "text": "clear if you have any questions any"
+    },
+    {
+      "start": 564.839,
+      "duration": 3.541,
+      "text": "doubt let me know in the comment section"
+    },
+    {
+      "start": 566.58,
+      "duration": 4.14,
+      "text": "and if you haven't subscribed please"
+    },
+    {
+      "start": 568.38,
+      "duration": 4.88,
+      "text": "subscribe to cloudchamp thank you and"
+    },
+    {
+      "start": 570.72,
+      "duration": 2.54,
+      "text": "have a good day"
+    }
+  ]
+}

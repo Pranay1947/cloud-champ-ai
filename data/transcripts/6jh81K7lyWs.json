@@ -1,0 +1,1361 @@
+{
+  "video": {
+    "id": "6jh81K7lyWs",
+    "title": "Simple DevOps Project: Host a Webserver and create your Website on EC2",
+    "url": "https://www.youtube.com/watch?v=6jh81K7lyWs",
+    "duration": 561,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 3.3,
+      "text": "hey everyone Welcome to Cloud champ in"
+    },
+    {
+      "start": 2.04,
+      "duration": 3.239,
+      "text": "this video we are going to do a simple"
+    },
+    {
+      "start": 3.3,
+      "duration": 3.84,
+      "text": "devops project where we will be learning"
+    },
+    {
+      "start": 5.279,
+      "duration": 4.201,
+      "text": "how to set up web server and configure"
+    },
+    {
+      "start": 7.14,
+      "duration": 3.72,
+      "text": "it to host our own website so I'm going"
+    },
+    {
+      "start": 9.48,
+      "duration": 3.42,
+      "text": "to show you everything on how to launch"
+    },
+    {
+      "start": 10.86,
+      "duration": 3.899,
+      "text": "an ec2 instance and install Apache web"
+    },
+    {
+      "start": 12.9,
+      "duration": 3.479,
+      "text": "server on it and we will also configure"
+    },
+    {
+      "start": 14.759,
+      "duration": 3.061,
+      "text": "it to set up our website so by the end"
+    },
+    {
+      "start": 16.379,
+      "duration": 2.761,
+      "text": "of the video you will have website"
+    },
+    {
+      "start": 17.82,
+      "duration": 2.879,
+      "text": "something like this where you can"
+    },
+    {
+      "start": 19.14,
+      "duration": 3.479,
+      "text": "customize it to create your own blogs"
+    },
+    {
+      "start": 20.699,
+      "duration": 3.901,
+      "text": "your own portfolios which you can show"
+    },
+    {
+      "start": 22.619,
+      "duration": 3.66,
+      "text": "to your recruiters and land a good job"
+    },
+    {
+      "start": 24.6,
+      "duration": 3.419,
+      "text": "so I'm going to explain you everything"
+    },
+    {
+      "start": 26.279,
+      "duration": 4.32,
+      "text": "step by step I'll also provide you"
+    },
+    {
+      "start": 28.019,
+      "duration": 4.861,
+      "text": "resources like this devops repository"
+    },
+    {
+      "start": 30.599,
+      "duration": 4.861,
+      "text": "where I'm sharing the index.html so"
+    },
+    {
+      "start": 32.88,
+      "duration": 4.32,
+      "text": "let's see how we can set up Apache web"
+    },
+    {
+      "start": 35.46,
+      "duration": 4.259,
+      "text": "server and configure it to host our own"
+    },
+    {
+      "start": 37.2,
+      "duration": 4.74,
+      "text": "website let's get started so first thing"
+    },
+    {
+      "start": 39.719,
+      "duration": 3.84,
+      "text": "we need to do is to create or launch an"
+    },
+    {
+      "start": 41.94,
+      "duration": 4.26,
+      "text": "Amazon ec2 instance if you don't know"
+    },
+    {
+      "start": 43.559,
+      "duration": 5.401,
+      "text": "about ec2 ec2 service in AWS that lets"
+    },
+    {
+      "start": 46.2,
+      "duration": 4.5,
+      "text": "you create servers in the cloud in we"
+    },
+    {
+      "start": 48.96,
+      "duration": 3.06,
+      "text": "are going to use this to launch our web"
+    },
+    {
+      "start": 50.7,
+      "duration": 4.199,
+      "text": "server so I'm going to name this web"
+    },
+    {
+      "start": 52.02,
+      "duration": 4.08,
+      "text": "server and launch choose you can choose"
+    },
+    {
+      "start": 54.899,
+      "duration": 3.3,
+      "text": "operating system so I'm going to choose"
+    },
+    {
+      "start": 56.1,
+      "duration": 3.9,
+      "text": "Ubuntu you can also choose Amazon Linux"
+    },
+    {
+      "start": 58.199,
+      "duration": 3.481,
+      "text": "or red hat or any other operating system"
+    },
+    {
+      "start": 60.0,
+      "duration": 3.719,
+      "text": "if you want I'm going to go with Ubuntu"
+    },
+    {
+      "start": 61.68,
+      "duration": 3.839,
+      "text": "here and the instance type is T2 micro"
+    },
+    {
+      "start": 63.719,
+      "duration": 3.9,
+      "text": "we're not going to do something fancy so"
+    },
+    {
+      "start": 65.519,
+      "duration": 3.841,
+      "text": "we are able to see stay in the free tier"
+    },
+    {
+      "start": 67.619,
+      "duration": 3.601,
+      "text": "limit so we're going to choose T2 micro"
+    },
+    {
+      "start": 69.36,
+      "duration": 4.14,
+      "text": "after you choose the instance type let's"
+    },
+    {
+      "start": 71.22,
+      "duration": 3.78,
+      "text": "go and select key pair logging most of"
+    },
+    {
+      "start": 73.5,
+      "duration": 4.2,
+      "text": "you might be using"
+    },
+    {
+      "start": 75.0,
+      "duration": 4.14,
+      "text": "or windows so you have to use putty so"
+    },
+    {
+      "start": 77.7,
+      "duration": 3.72,
+      "text": "if you're using putty make sure you use"
+    },
+    {
+      "start": 79.14,
+      "duration": 4.26,
+      "text": "the dot PPK format if not you can use"
+    },
+    {
+      "start": 81.42,
+      "duration": 3.12,
+      "text": "petition code to convert it but you need"
+    },
+    {
+      "start": 83.4,
+      "duration": 2.34,
+      "text": "to attach a keeper if you want to"
+    },
+    {
+      "start": 84.54,
+      "duration": 3.6,
+      "text": "connect to an instance so we have to"
+    },
+    {
+      "start": 85.74,
+      "duration": 3.72,
+      "text": "attach a keypad here and in the next you"
+    },
+    {
+      "start": 88.14,
+      "duration": 3.78,
+      "text": "can skip all of these just go ahead and"
+    },
+    {
+      "start": 89.46,
+      "duration": 5.519,
+      "text": "create a security group having code HTTP"
+    },
+    {
+      "start": 91.92,
+      "duration": 5.46,
+      "text": "and https along with SSH ssh is the"
+    },
+    {
+      "start": 94.979,
+      "duration": 3.6,
+      "text": "command or is the SSH is a protocol"
+    },
+    {
+      "start": 97.38,
+      "duration": 4.98,
+      "text": "which is used to connect to your remote"
+    },
+    {
+      "start": 98.579,
+      "duration": 6.121,
+      "text": "Linux servers whereas HTTP and https are"
+    },
+    {
+      "start": 102.36,
+      "duration": 4.799,
+      "text": "the protocols used to access websites on"
+    },
+    {
+      "start": 104.7,
+      "duration": 4.8,
+      "text": "the web server so we need these two"
+    },
+    {
+      "start": 107.159,
+      "duration": 4.14,
+      "text": "next after we have done this let's go"
+    },
+    {
+      "start": 109.5,
+      "duration": 4.2,
+      "text": "and launch our instance so I'm going to"
+    },
+    {
+      "start": 111.299,
+      "duration": 4.5,
+      "text": "launch this instance here"
+    },
+    {
+      "start": 113.7,
+      "duration": 3.48,
+      "text": "and it is now in installing a launching"
+    },
+    {
+      "start": 115.799,
+      "duration": 3.541,
+      "text": "State once it is done you can click on"
+    },
+    {
+      "start": 117.18,
+      "duration": 3.96,
+      "text": "the instance ID"
+    },
+    {
+      "start": 119.34,
+      "duration": 3.18,
+      "text": "and here you have it the instance is now"
+    },
+    {
+      "start": 121.14,
+      "duration": 3.54,
+      "text": "in pending State we have to wait for"
+    },
+    {
+      "start": 122.52,
+      "duration": 3.54,
+      "text": "some time to come it in running state"
+    },
+    {
+      "start": 124.68,
+      "duration": 2.939,
+      "text": "but if I show you the details about it"
+    },
+    {
+      "start": 126.06,
+      "duration": 4.5,
+      "text": "you have an instance which has a public"
+    },
+    {
+      "start": 127.619,
+      "duration": 4.381,
+      "text": "IP address uh it has a DNS all the"
+    },
+    {
+      "start": 130.56,
+      "duration": 2.58,
+      "text": "details are mentioned here along with"
+    },
+    {
+      "start": 132.0,
+      "duration": 3.42,
+      "text": "this you need to wait for the status"
+    },
+    {
+      "start": 133.14,
+      "duration": 4.44,
+      "text": "checks to come in running as well so"
+    },
+    {
+      "start": 135.42,
+      "duration": 3.84,
+      "text": "let's wait for this instance to come up"
+    },
+    {
+      "start": 137.58,
+      "duration": 3.42,
+      "text": "in running State along with status"
+    },
+    {
+      "start": 139.26,
+      "duration": 2.88,
+      "text": "checks running as well so now you can"
+    },
+    {
+      "start": 141.0,
+      "duration": 2.76,
+      "text": "see they are running let's go and"
+    },
+    {
+      "start": 142.14,
+      "duration": 2.58,
+      "text": "connect to it so if you want to connect"
+    },
+    {
+      "start": 143.76,
+      "duration": 2.94,
+      "text": "to this instance you have different"
+    },
+    {
+      "start": 144.72,
+      "duration": 4.379,
+      "text": "options you can use instance connect you"
+    },
+    {
+      "start": 146.7,
+      "duration": 4.259,
+      "text": "can use session manager SSH client ec2cl"
+    },
+    {
+      "start": 149.099,
+      "duration": 3.901,
+      "text": "console using Windows you need to use"
+    },
+    {
+      "start": 150.959,
+      "duration": 4.741,
+      "text": "putty and you need to enter your details"
+    },
+    {
+      "start": 153.0,
+      "duration": 4.14,
+      "text": "here if you are facing Linux you can"
+    },
+    {
+      "start": 155.7,
+      "duration": 2.88,
+      "text": "just use this command and go ahead"
+    },
+    {
+      "start": 157.14,
+      "duration": 3.3,
+      "text": "connect to your instance but if you know"
+    },
+    {
+      "start": 158.58,
+      "duration": 3.9,
+      "text": "if you're not aware let's use instance"
+    },
+    {
+      "start": 160.44,
+      "duration": 3.48,
+      "text": "connect which is an in-browser session"
+    },
+    {
+      "start": 162.48,
+      "duration": 3.24,
+      "text": "which that opens an SSH connection"
+    },
+    {
+      "start": 163.92,
+      "duration": 3.3,
+      "text": "between your server so once you open"
+    },
+    {
+      "start": 165.72,
+      "duration": 3.68,
+      "text": "this it is saying establishing"
+    },
+    {
+      "start": 167.22,
+      "duration": 2.18,
+      "text": "connection"
+    },
+    {
+      "start": 171.9,
+      "duration": 3.24,
+      "text": "so"
+    },
+    {
+      "start": 173.519,
+      "duration": 3.36,
+      "text": "if you're not able to connect to this"
+    },
+    {
+      "start": 175.14,
+      "duration": 3.66,
+      "text": "instance most likely you don't have a"
+    },
+    {
+      "start": 176.879,
+      "duration": 4.44,
+      "text": "security group with Port 22 open so you"
+    },
+    {
+      "start": 178.8,
+      "duration": 4.98,
+      "text": "need to check your Port if you have Port"
+    },
+    {
+      "start": 181.319,
+      "duration": 4.5,
+      "text": "20 to open or not I do have it so I'm"
+    },
+    {
+      "start": 183.78,
+      "duration": 4.62,
+      "text": "now inside my instance you can see it's"
+    },
+    {
+      "start": 185.819,
+      "duration": 4.621,
+      "text": "an Ubuntu instance uh which is Ubuntu"
+    },
+    {
+      "start": 188.4,
+      "duration": 3.839,
+      "text": "222 so in this"
+    },
+    {
+      "start": 190.44,
+      "duration": 4.32,
+      "text": "a server we are going to know now"
+    },
+    {
+      "start": 192.239,
+      "duration": 3.841,
+      "text": "install Apache web server so first thing"
+    },
+    {
+      "start": 194.76,
+      "duration": 2.699,
+      "text": "we need to do whenever we launch an"
+    },
+    {
+      "start": 196.08,
+      "duration": 4.019,
+      "text": "instance is to update all the packages"
+    },
+    {
+      "start": 197.459,
+      "duration": 5.661,
+      "text": "so I'm going to do sudo"
+    },
+    {
+      "start": 200.099,
+      "duration": 3.021,
+      "text": "apt update"
+    },
+    {
+      "start": 203.58,
+      "duration": 5.72,
+      "text": "and sudo"
+    },
+    {
+      "start": 205.92,
+      "duration": 3.38,
+      "text": "apt upgrade"
+    },
+    {
+      "start": 211.26,
+      "duration": 4.14,
+      "text": "this is going to update and upgrade all"
+    },
+    {
+      "start": 212.94,
+      "duration": 4.019,
+      "text": "my packages inside this Ubuntu Server"
+    },
+    {
+      "start": 215.4,
+      "duration": 3.0,
+      "text": "once I do this I'm going to run the"
+    },
+    {
+      "start": 216.959,
+      "duration": 3.541,
+      "text": "command to install Apache web server"
+    },
+    {
+      "start": 218.4,
+      "duration": 4.14,
+      "text": "storage of Apache web server or any web"
+    },
+    {
+      "start": 220.5,
+      "duration": 3.959,
+      "text": "server is very crucial for it a devops"
+    },
+    {
+      "start": 222.54,
+      "duration": 3.96,
+      "text": "engineer because in your day-to-day work"
+    },
+    {
+      "start": 224.459,
+      "duration": 3.84,
+      "text": "you might be creating this web servers"
+    },
+    {
+      "start": 226.5,
+      "duration": 3.239,
+      "text": "to host your websites your company's"
+    },
+    {
+      "start": 228.299,
+      "duration": 2.881,
+      "text": "applications and all of that so you need"
+    },
+    {
+      "start": 229.739,
+      "duration": 3.78,
+      "text": "to have an understanding of how you can"
+    },
+    {
+      "start": 231.18,
+      "duration": 4.979,
+      "text": "install and configure these web servers"
+    },
+    {
+      "start": 233.519,
+      "duration": 4.44,
+      "text": "so now we are going to see how to do it"
+    },
+    {
+      "start": 236.159,
+      "duration": 2.701,
+      "text": "and have a website something similar to"
+    },
+    {
+      "start": 237.959,
+      "duration": 2.64,
+      "text": "this"
+    },
+    {
+      "start": 238.86,
+      "duration": 3.9,
+      "text": "but you can always customize it to have"
+    },
+    {
+      "start": 240.599,
+      "duration": 4.081,
+      "text": "your own name your own portfolio your"
+    },
+    {
+      "start": 242.76,
+      "duration": 3.42,
+      "text": "own blogs so I'm going to show you how"
+    },
+    {
+      "start": 244.68,
+      "duration": 3.059,
+      "text": "can you do it"
+    },
+    {
+      "start": 246.18,
+      "duration": 2.94,
+      "text": "okay now everything has been updated"
+    },
+    {
+      "start": 247.739,
+      "duration": 2.821,
+      "text": "let's go and run the command to install"
+    },
+    {
+      "start": 249.12,
+      "duration": 3.119,
+      "text": "Apache web server so I'm going to do"
+    },
+    {
+      "start": 250.56,
+      "duration": 4.44,
+      "text": "sudo"
+    },
+    {
+      "start": 252.239,
+      "duration": 4.021,
+      "text": "apt install"
+    },
+    {
+      "start": 255.0,
+      "duration": 4.56,
+      "text": "and the name of the package which is"
+    },
+    {
+      "start": 256.26,
+      "duration": 5.039,
+      "text": "Apache 2. so Apache two once I do this"
+    },
+    {
+      "start": 259.56,
+      "duration": 3.12,
+      "text": "it should start installing and now it's"
+    },
+    {
+      "start": 261.299,
+      "duration": 4.561,
+      "text": "asking me to confirm and I'm going to"
+    },
+    {
+      "start": 262.68,
+      "duration": 4.86,
+      "text": "say y to yes and then it will start"
+    },
+    {
+      "start": 265.86,
+      "duration": 3.48,
+      "text": "installing it once it is installed you"
+    },
+    {
+      "start": 267.54,
+      "duration": 3.54,
+      "text": "should see a test page to confirm that"
+    },
+    {
+      "start": 269.34,
+      "duration": 3.06,
+      "text": "it is installed let's"
+    },
+    {
+      "start": 271.08,
+      "duration": 3.0,
+      "text": "let's see"
+    },
+    {
+      "start": 272.4,
+      "duration": 4.2,
+      "text": "so I'm going to say okay press enter"
+    },
+    {
+      "start": 274.08,
+      "duration": 5.04,
+      "text": "here and again press enter"
+    },
+    {
+      "start": 276.6,
+      "duration": 3.78,
+      "text": "all right now"
+    },
+    {
+      "start": 279.12,
+      "duration": 2.46,
+      "text": "if you want to check if Apache is"
+    },
+    {
+      "start": 280.38,
+      "duration": 3.36,
+      "text": "installed or not you can just do which"
+    },
+    {
+      "start": 281.58,
+      "duration": 6.6,
+      "text": "and the name of the package which is"
+    },
+    {
+      "start": 283.74,
+      "duration": 6.0,
+      "text": "Apache here so Apache two sorry and you"
+    },
+    {
+      "start": 288.18,
+      "duration": 2.94,
+      "text": "can see it can give you the path which"
+    },
+    {
+      "start": 289.74,
+      "duration": 5.42,
+      "text": "means Apache has been installed you can"
+    },
+    {
+      "start": 291.12,
+      "duration": 4.04,
+      "text": "also check Apache"
+    },
+    {
+      "start": 297.24,
+      "duration": 4.62,
+      "text": "you can also run Apache to hyphen V to"
+    },
+    {
+      "start": 299.04,
+      "duration": 5.939,
+      "text": "check the version of your Apache now"
+    },
+    {
+      "start": 301.86,
+      "duration": 4.08,
+      "text": "that we are clear let's go and start"
+    },
+    {
+      "start": 304.979,
+      "duration": 4.021,
+      "text": "this"
+    },
+    {
+      "start": 305.94,
+      "duration": 4.92,
+      "text": "service so I'm going to do sudo"
+    },
+    {
+      "start": 309.0,
+      "duration": 4.82,
+      "text": "service"
+    },
+    {
+      "start": 310.86,
+      "duration": 2.96,
+      "text": "Apache"
+    },
+    {
+      "start": 316.199,
+      "duration": 3.541,
+      "text": "to start"
+    },
+    {
+      "start": 318.0,
+      "duration": 3.18,
+      "text": "and this should start with they should"
+    },
+    {
+      "start": 319.74,
+      "duration": 3.959,
+      "text": "start my server if you confirm I'm going"
+    },
+    {
+      "start": 321.18,
+      "duration": 4.2,
+      "text": "to run status now you can see it says"
+    },
+    {
+      "start": 323.699,
+      "duration": 4.081,
+      "text": "running and to confirm this I'm going to"
+    },
+    {
+      "start": 325.38,
+      "duration": 4.319,
+      "text": "copy this IP address and open it in a"
+    },
+    {
+      "start": 327.78,
+      "duration": 3.419,
+      "text": "new tab once I open it in a new tab if"
+    },
+    {
+      "start": 329.699,
+      "duration": 2.94,
+      "text": "Apache is installed I should see a test"
+    },
+    {
+      "start": 331.199,
+      "duration": 2.34,
+      "text": "page if I don't see a test page"
+    },
+    {
+      "start": 332.639,
+      "duration": 2.461,
+      "text": "something like this which means there's"
+    },
+    {
+      "start": 333.539,
+      "duration": 3.781,
+      "text": "a problem and you need to go back and"
+    },
+    {
+      "start": 335.1,
+      "duration": 3.9,
+      "text": "watch the video again to see this so"
+    },
+    {
+      "start": 337.32,
+      "duration": 3.42,
+      "text": "when you launch enough when you when you"
+    },
+    {
+      "start": 339.0,
+      "duration": 3.419,
+      "text": "when you install Apache this is what you"
+    },
+    {
+      "start": 340.74,
+      "duration": 3.72,
+      "text": "get and you need to customize this to"
+    },
+    {
+      "start": 342.419,
+      "duration": 4.261,
+      "text": "have your own website or you for you to"
+    },
+    {
+      "start": 344.46,
+      "duration": 3.959,
+      "text": "show your own content so if you see if"
+    },
+    {
+      "start": 346.68,
+      "duration": 4.26,
+      "text": "you read here properly it can it will"
+    },
+    {
+      "start": 348.419,
+      "duration": 4.62,
+      "text": "say you should replace this file located"
+    },
+    {
+      "start": 350.94,
+      "duration": 5.099,
+      "text": "at this path before continue to operate"
+    },
+    {
+      "start": 353.039,
+      "duration": 5.041,
+      "text": "your HTTP server so we need to edit or"
+    },
+    {
+      "start": 356.039,
+      "duration": 4.44,
+      "text": "we need to add index.html to have your"
+    },
+    {
+      "start": 358.08,
+      "duration": 5.28,
+      "text": "own website so I'm going to go here"
+    },
+    {
+      "start": 360.479,
+      "duration": 8.22,
+      "text": "and go to the path which is CD"
+    },
+    {
+      "start": 363.36,
+      "duration": 5.339,
+      "text": "slash VAR slash www HTML"
+    },
+    {
+      "start": 369.06,
+      "duration": 3.3,
+      "text": "if you do LS here you can see there's a"
+    },
+    {
+      "start": 370.68,
+      "duration": 3.359,
+      "text": "file nameless index.html which has all"
+    },
+    {
+      "start": 372.36,
+      "duration": 5.42,
+      "text": "the content that this test page has so"
+    },
+    {
+      "start": 374.039,
+      "duration": 3.741,
+      "text": "I'm going to remove that so sudo"
+    },
+    {
+      "start": 378.3,
+      "duration": 5.3,
+      "text": "RM index dot HTML once I remove this now"
+    },
+    {
+      "start": 381.96,
+      "duration": 3.54,
+      "text": "I need to now I want to have my own"
+    },
+    {
+      "start": 383.6,
+      "duration": 5.98,
+      "text": "index.acmail so I'm going to do sudo"
+    },
+    {
+      "start": 385.5,
+      "duration": 6.84,
+      "text": "Nano index dot HTML"
+    },
+    {
+      "start": 389.58,
+      "duration": 7.2,
+      "text": "in here I'm going to type hi there"
+    },
+    {
+      "start": 392.34,
+      "duration": 6.78,
+      "text": "this is my website once I do this save"
+    },
+    {
+      "start": 396.78,
+      "duration": 4.38,
+      "text": "it and close now you can run the sudo"
+    },
+    {
+      "start": 399.12,
+      "duration": 5.88,
+      "text": "service restart command so I'm going to"
+    },
+    {
+      "start": 401.16,
+      "duration": 5.7,
+      "text": "do sudo service Apache 2 restart once I"
+    },
+    {
+      "start": 405.0,
+      "duration": 4.68,
+      "text": "restarted let's go to the website and"
+    },
+    {
+      "start": 406.86,
+      "duration": 4.32,
+      "text": "then refresh this page after I refresh"
+    },
+    {
+      "start": 409.68,
+      "duration": 3.84,
+      "text": "you can see it has my own content"
+    },
+    {
+      "start": 411.18,
+      "duration": 4.26,
+      "text": "there's no test page anymore"
+    },
+    {
+      "start": 413.52,
+      "duration": 3.299,
+      "text": "so by adding your own index.html you can"
+    },
+    {
+      "start": 415.44,
+      "duration": 4.259,
+      "text": "show whatever you want on the website"
+    },
+    {
+      "start": 416.819,
+      "duration": 5.401,
+      "text": "let's go to add something fancy so that"
+    },
+    {
+      "start": 419.699,
+      "duration": 3.961,
+      "text": "we can have a good attractive website so"
+    },
+    {
+      "start": 422.22,
+      "duration": 2.94,
+      "text": "you can use this repository I'm going to"
+    },
+    {
+      "start": 423.66,
+      "duration": 3.0,
+      "text": "post the link below but you can always"
+    },
+    {
+      "start": 425.16,
+      "duration": 3.12,
+      "text": "use your own imagination and you can use"
+    },
+    {
+      "start": 426.66,
+      "duration": 3.24,
+      "text": "your own creativity to have your own"
+    },
+    {
+      "start": 428.28,
+      "duration": 4.52,
+      "text": "website so for now I'm going to copy"
+    },
+    {
+      "start": 429.9,
+      "duration": 6.12,
+      "text": "this content and paste it in my"
+    },
+    {
+      "start": 432.8,
+      "duration": 4.959,
+      "text": "index.html so I'm going to do sudo"
+    },
+    {
+      "start": 436.02,
+      "duration": 4.92,
+      "text": "Nano"
+    },
+    {
+      "start": 437.759,
+      "duration": 5.521,
+      "text": "index .html and I'm going to remove this"
+    },
+    {
+      "start": 440.94,
+      "duration": 4.5,
+      "text": "file paste the one that I've copied save"
+    },
+    {
+      "start": 443.28,
+      "duration": 4.979,
+      "text": "it exit and restart the service again"
+    },
+    {
+      "start": 445.44,
+      "duration": 6.199,
+      "text": "once I restarted it should show me the"
+    },
+    {
+      "start": 448.259,
+      "duration": 3.38,
+      "text": "new content let's wait for it to restart"
+    },
+    {
+      "start": 453.599,
+      "duration": 3.121,
+      "text": "okay now it has been restarted let's"
+    },
+    {
+      "start": 455.58,
+      "duration": 3.059,
+      "text": "check the status as well if it is"
+    },
+    {
+      "start": 456.72,
+      "duration": 4.02,
+      "text": "running or not so I'm going to do slow"
+    },
+    {
+      "start": 458.639,
+      "duration": 3.481,
+      "text": "service Apache 2 and"
+    },
+    {
+      "start": 460.74,
+      "duration": 3.6,
+      "text": "status"
+    },
+    {
+      "start": 462.12,
+      "duration": 4.5,
+      "text": "so it is running I'm going to go to the"
+    },
+    {
+      "start": 464.34,
+      "duration": 5.22,
+      "text": "website and refresh now once I refresh"
+    },
+    {
+      "start": 466.62,
+      "duration": 4.44,
+      "text": "you can see I have a project I have my"
+    },
+    {
+      "start": 469.56,
+      "duration": 2.88,
+      "text": "website which all these different things"
+    },
+    {
+      "start": 471.06,
+      "duration": 2.94,
+      "text": "because that is what defined in my"
+    },
+    {
+      "start": 472.44,
+      "duration": 3.42,
+      "text": "index.html"
+    },
+    {
+      "start": 474.0,
+      "duration": 4.199,
+      "text": "so this is how you can configure your"
+    },
+    {
+      "start": 475.86,
+      "duration": 4.14,
+      "text": "web servers and host your own website in"
+    },
+    {
+      "start": 478.199,
+      "duration": 3.9,
+      "text": "the next video now that you have your"
+    },
+    {
+      "start": 480.0,
+      "duration": 3.72,
+      "text": "website which has an IP address to it"
+    },
+    {
+      "start": 482.099,
+      "duration": 4.981,
+      "text": "you can also map this to your domain"
+    },
+    {
+      "start": 483.72,
+      "duration": 4.919,
+      "text": "name using DNS like Route 53 or GoDaddy"
+    },
+    {
+      "start": 487.08,
+      "duration": 4.019,
+      "text": "or anything you just need to map it with"
+    },
+    {
+      "start": 488.639,
+      "duration": 4.68,
+      "text": "your domain name like my website.com or"
+    },
+    {
+      "start": 491.099,
+      "duration": 5.1,
+      "text": "cloudcham.com or devops.com you just"
+    },
+    {
+      "start": 493.319,
+      "duration": 5.341,
+      "text": "need to map it with your domain in your"
+    },
+    {
+      "start": 496.199,
+      "duration": 4.801,
+      "text": "DNS and I've already created a video on"
+    },
+    {
+      "start": 498.66,
+      "duration": 3.659,
+      "text": "how you can create domain domain names"
+    },
+    {
+      "start": 501.0,
+      "duration": 3.06,
+      "text": "how you can create domain names and add"
+    },
+    {
+      "start": 502.319,
+      "duration": 4.021,
+      "text": "records in Route 53 so you can check it"
+    },
+    {
+      "start": 504.06,
+      "duration": 4.199,
+      "text": "out but if you don't want to spend money"
+    },
+    {
+      "start": 506.34,
+      "duration": 3.66,
+      "text": "this is all you just need to share this"
+    },
+    {
+      "start": 508.259,
+      "duration": 4.441,
+      "text": "on your LinkedIn and make sure you tag"
+    },
+    {
+      "start": 510.0,
+      "duration": 4.2,
+      "text": "me so I can repost this and in the next"
+    },
+    {
+      "start": 512.7,
+      "duration": 2.94,
+      "text": "video I'm going to show you how you can"
+    },
+    {
+      "start": 514.2,
+      "duration": 3.719,
+      "text": "do this in multiple servers maybe"
+    },
+    {
+      "start": 515.64,
+      "duration": 4.259,
+      "text": "thousands or hundreds of servers how can"
+    },
+    {
+      "start": 517.919,
+      "duration": 3.841,
+      "text": "you do it and if you already know about"
+    },
+    {
+      "start": 519.899,
+      "duration": 3.241,
+      "text": "the application or the devops tool that"
+    },
+    {
+      "start": 521.76,
+      "duration": 2.88,
+      "text": "we're going to use let me know in the"
+    },
+    {
+      "start": 523.14,
+      "duration": 3.42,
+      "text": "comment section we're going to use that"
+    },
+    {
+      "start": 524.64,
+      "duration": 3.66,
+      "text": "to configure hundreds of server so this"
+    },
+    {
+      "start": 526.56,
+      "duration": 3.3,
+      "text": "was just a base video to understand how"
+    },
+    {
+      "start": 528.3,
+      "duration": 3.479,
+      "text": "we do it manually so that we can"
+    },
+    {
+      "start": 529.86,
+      "duration": 3.9,
+      "text": "automate this process and do it for"
+    },
+    {
+      "start": 531.779,
+      "duration": 4.381,
+      "text": "hundreds of servers so I hope you have"
+    },
+    {
+      "start": 533.76,
+      "duration": 4.5,
+      "text": "in this should how can you launch an"
+    },
+    {
+      "start": 536.16,
+      "duration": 3.66,
+      "text": "instance an SS into it and also set up"
+    },
+    {
+      "start": 538.26,
+      "duration": 3.12,
+      "text": "Apache and deploy your website if you"
+    },
+    {
+      "start": 539.82,
+      "duration": 2.94,
+      "text": "found this video helpful let me know in"
+    },
+    {
+      "start": 541.38,
+      "duration": 3.72,
+      "text": "the comment section if you have any"
+    },
+    {
+      "start": 542.76,
+      "duration": 3.72,
+      "text": "questions doubt you can post it and I"
+    },
+    {
+      "start": 545.1,
+      "duration": 2.82,
+      "text": "wanted to share this on LinkedIn so I"
+    },
+    {
+      "start": 546.48,
+      "duration": 2.76,
+      "text": "have added this button as well you can"
+    },
+    {
+      "start": 547.92,
+      "duration": 2.76,
+      "text": "go ahead and share your website on your"
+    },
+    {
+      "start": 549.24,
+      "duration": 3.599,
+      "text": "LinkedIn showcase that you have"
+    },
+    {
+      "start": 550.68,
+      "duration": 4.02,
+      "text": "knowledge of how to launch an ec2"
+    },
+    {
+      "start": 552.839,
+      "duration": 4.201,
+      "text": "instance and configure web servers on it"
+    },
+    {
+      "start": 554.7,
+      "duration": 3.84,
+      "text": "so I hope you understood this if you did"
+    },
+    {
+      "start": 557.04,
+      "duration": 4.4,
+      "text": "please like this video subscribe to my"
+    },
+    {
+      "start": 558.54,
+      "duration": 2.9,
+      "text": "channel and have a good day"
+    }
+  ]
+}

@@ -1,0 +1,1231 @@
+{
+  "video": {
+    "id": "1P9r7Ia8Dio",
+    "title": "How I passed my Hashicorp Certified Terraform Associate Certification Exam",
+    "url": "https://www.youtube.com/watch?v=1P9r7Ia8Dio",
+    "duration": 584,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.179,
+      "duration": 3.661,
+      "text": "most of you already know that I passed"
+    },
+    {
+      "start": 2.34,
+      "duration": 3.3,
+      "text": "my hashicorp certified terraform"
+    },
+    {
+      "start": 3.84,
+      "duration": 3.479,
+      "text": "associate exam and since then I've been"
+    },
+    {
+      "start": 5.64,
+      "duration": 4.379,
+      "text": "receiving messages on LinkedIn YouTube"
+    },
+    {
+      "start": 7.319,
+      "duration": 4.561,
+      "text": "asking me how to create exam what topics"
+    },
+    {
+      "start": 10.019,
+      "duration": 3.961,
+      "text": "are covered in the exam what resources"
+    },
+    {
+      "start": 11.88,
+      "duration": 4.14,
+      "text": "to use so in this video I want to share"
+    },
+    {
+      "start": 13.98,
+      "duration": 4.02,
+      "text": "with you everything you need to know to"
+    },
+    {
+      "start": 16.02,
+      "duration": 4.2,
+      "text": "pass the exam along with the resources I"
+    },
+    {
+      "start": 18.0,
+      "duration": 5.06,
+      "text": "used and my tips to pass your exam on"
+    },
+    {
+      "start": 20.22,
+      "duration": 2.84,
+      "text": "your first attempt"
+    },
+    {
+      "start": 25.619,
+      "duration": 3.601,
+      "text": "hey everyone Welcome to Cloud champ"
+    },
+    {
+      "start": 27.42,
+      "duration": 3.599,
+      "text": "before we dive into the tips and"
+    },
+    {
+      "start": 29.22,
+      "duration": 4.019,
+      "text": "resources to pass this terraform"
+    },
+    {
+      "start": 31.019,
+      "duration": 4.2,
+      "text": "certification let's understand the"
+    },
+    {
+      "start": 33.239,
+      "duration": 4.201,
+      "text": "basics if you're not familiar with this"
+    },
+    {
+      "start": 35.219,
+      "duration": 4.5,
+      "text": "exam this certification is provided by"
+    },
+    {
+      "start": 37.44,
+      "duration": 4.98,
+      "text": "hashicob which tests your knowledge on"
+    },
+    {
+      "start": 39.719,
+      "duration": 5.16,
+      "text": "terraform a popular infrastructure as"
+    },
+    {
+      "start": 42.42,
+      "duration": 4.139,
+      "text": "code tool the terraform certification is"
+    },
+    {
+      "start": 44.879,
+      "duration": 4.261,
+      "text": "designed to validate your understanding"
+    },
+    {
+      "start": 46.559,
+      "duration": 4.861,
+      "text": "of terraform's core concept best"
+    },
+    {
+      "start": 49.14,
+      "duration": 4.62,
+      "text": "practices and its usage in real world"
+    },
+    {
+      "start": 51.42,
+      "duration": 4.68,
+      "text": "scenarios the exam is multiple choice"
+    },
+    {
+      "start": 53.76,
+      "duration": 5.299,
+      "text": "questions and it covers various topics"
+    },
+    {
+      "start": 56.1,
+      "duration": 2.959,
+      "text": "like terraforms"
+    },
+    {
+      "start": 60.079,
+      "duration": 5.621,
+      "text": "variables modules terraform commands and"
+    },
+    {
+      "start": 63.059,
+      "duration": 4.74,
+      "text": "more this exam can be taken online and"
+    },
+    {
+      "start": 65.7,
+      "duration": 3.84,
+      "text": "it's proctored you have one ad to"
+    },
+    {
+      "start": 67.799,
+      "duration": 6.481,
+      "text": "complete the exam and the cost of this"
+    },
+    {
+      "start": 69.54,
+      "duration": 6.96,
+      "text": "exam is 70.50 plus the charges or taxes"
+    },
+    {
+      "start": 74.28,
+      "duration": 4.199,
+      "text": "it's worth noting that the exam does not"
+    },
+    {
+      "start": 76.5,
+      "duration": 3.72,
+      "text": "include retakes if you fail and you want"
+    },
+    {
+      "start": 78.479,
+      "duration": 4.261,
+      "text": "to retake the exam you need to pay for"
+    },
+    {
+      "start": 80.22,
+      "duration": 4.2,
+      "text": "it so you need to thoroughly prepare for"
+    },
+    {
+      "start": 82.74,
+      "duration": 3.18,
+      "text": "the exam so that he passed in the first"
+    },
+    {
+      "start": 84.42,
+      "duration": 4.26,
+      "text": "attempt and that is why you need to"
+    },
+    {
+      "start": 85.92,
+      "duration": 4.8,
+      "text": "watch this video till the end the exam"
+    },
+    {
+      "start": 88.68,
+      "duration": 3.96,
+      "text": "is only available in English and its"
+    },
+    {
+      "start": 90.72,
+      "duration": 3.0,
+      "text": "validity is for two years from the"
+    },
+    {
+      "start": 92.64,
+      "duration": 3.6,
+      "text": "passing date"
+    },
+    {
+      "start": 93.72,
+      "duration": 4.68,
+      "text": "now let's talk about the topics covered"
+    },
+    {
+      "start": 96.24,
+      "duration": 4.739,
+      "text": "in the exam this exam will have"
+    },
+    {
+      "start": 98.4,
+      "duration": 5.039,
+      "text": "questions on these nine topics and let's"
+    },
+    {
+      "start": 100.979,
+      "duration": 4.081,
+      "text": "understand them one by one the first"
+    },
+    {
+      "start": 103.439,
+      "duration": 4.441,
+      "text": "objective is understanding"
+    },
+    {
+      "start": 105.06,
+      "duration": 4.919,
+      "text": "infrastructure as code Concepts or IEC"
+    },
+    {
+      "start": 107.88,
+      "duration": 4.739,
+      "text": "Concepts in this you will be asked"
+    },
+    {
+      "start": 109.979,
+      "duration": 5.401,
+      "text": "questions regarding what is ISE what is"
+    },
+    {
+      "start": 112.619,
+      "duration": 4.381,
+      "text": "the advantages of using IAC how is it"
+    },
+    {
+      "start": 115.38,
+      "duration": 4.199,
+      "text": "different compared to the manual"
+    },
+    {
+      "start": 117.0,
+      "duration": 4.32,
+      "text": "creation of resources in the cloud so"
+    },
+    {
+      "start": 119.579,
+      "duration": 4.201,
+      "text": "you need to understand and focus on"
+    },
+    {
+      "start": 121.32,
+      "duration": 4.979,
+      "text": "these topics number two is understanding"
+    },
+    {
+      "start": 123.78,
+      "duration": 4.8,
+      "text": "terraform's purpose versus other IEC"
+    },
+    {
+      "start": 126.299,
+      "duration": 4.501,
+      "text": "tools so in this you need to know why"
+    },
+    {
+      "start": 128.58,
+      "duration": 5.58,
+      "text": "terraform is better than other IEC tools"
+    },
+    {
+      "start": 130.8,
+      "duration": 5.46,
+      "text": "like cloud formation or polumi or Azure"
+    },
+    {
+      "start": 134.16,
+      "duration": 4.5,
+      "text": "Ram templates so you need to know that"
+    },
+    {
+      "start": 136.26,
+      "duration": 5.22,
+      "text": "terraform is multi-cloud supporter you"
+    },
+    {
+      "start": 138.66,
+      "duration": 5.579,
+      "text": "can use terraform with AWS Azure gcp"
+    },
+    {
+      "start": 141.48,
+      "duration": 5.16,
+      "text": "whereas if you use cloud formation you"
+    },
+    {
+      "start": 144.239,
+      "duration": 4.021,
+      "text": "can only work in AWS if you use Azure"
+    },
+    {
+      "start": 146.64,
+      "duration": 3.48,
+      "text": "Ram templates you can only work with"
+    },
+    {
+      "start": 148.26,
+      "duration": 4.08,
+      "text": "Azure so you need to understand that"
+    },
+    {
+      "start": 150.12,
+      "duration": 4.56,
+      "text": "terraform is multi-cloud and platform"
+    },
+    {
+      "start": 152.34,
+      "duration": 5.1,
+      "text": "agnostic also so you need to understand"
+    },
+    {
+      "start": 154.68,
+      "duration": 4.8,
+      "text": "how terraform uses state to manage"
+    },
+    {
+      "start": 157.44,
+      "duration": 3.48,
+      "text": "resources on the cloud so you need to"
+    },
+    {
+      "start": 159.48,
+      "duration": 4.08,
+      "text": "understand the concept of terraform"
+    },
+    {
+      "start": 160.92,
+      "duration": 5.039,
+      "text": "state in this second objective"
+    },
+    {
+      "start": 163.56,
+      "duration": 4.56,
+      "text": "number three is understand terraforms"
+    },
+    {
+      "start": 165.959,
+      "duration": 4.261,
+      "text": "basic in this you need to know how to"
+    },
+    {
+      "start": 168.12,
+      "duration": 4.38,
+      "text": "install terraform and pro different"
+    },
+    {
+      "start": 170.22,
+      "duration": 4.44,
+      "text": "providers you need to know how to work"
+    },
+    {
+      "start": 172.5,
+      "duration": 4.14,
+      "text": "with different providers how terraform"
+    },
+    {
+      "start": 174.66,
+      "duration": 4.439,
+      "text": "installs them you need to know when to"
+    },
+    {
+      "start": 176.64,
+      "duration": 4.739,
+      "text": "use remote exact provisioner or when to"
+    },
+    {
+      "start": 179.099,
+      "duration": 3.841,
+      "text": "use local exact provisioner so all these"
+    },
+    {
+      "start": 181.379,
+      "duration": 4.801,
+      "text": "basic concepts you need to clear in this"
+    },
+    {
+      "start": 182.94,
+      "duration": 6.18,
+      "text": "third objective moving on number four we"
+    },
+    {
+      "start": 186.18,
+      "duration": 5.22,
+      "text": "have use the terraform CLI so in this"
+    },
+    {
+      "start": 189.12,
+      "duration": 6.44,
+      "text": "you need to understand how terraform fft"
+    },
+    {
+      "start": 191.4,
+      "duration": 4.16,
+      "text": "command Works to format the code"
+    },
+    {
+      "start": 208.2,
+      "duration": 5.16,
+      "text": "fourth objective number fifth is"
+    },
+    {
+      "start": 210.84,
+      "duration": 4.2,
+      "text": "interacting with terraform modules in"
+    },
+    {
+      "start": 213.36,
+      "duration": 4.14,
+      "text": "this you need to understand how modules"
+    },
+    {
+      "start": 215.04,
+      "duration": 4.8,
+      "text": "work in terraform what is child module"
+    },
+    {
+      "start": 217.5,
+      "duration": 4.739,
+      "text": "what is root module how you can use"
+    },
+    {
+      "start": 219.84,
+      "duration": 4.14,
+      "text": "modules why are modules used how to pass"
+    },
+    {
+      "start": 222.239,
+      "duration": 4.14,
+      "text": "an argument from one module to another"
+    },
+    {
+      "start": 223.98,
+      "duration": 4.5,
+      "text": "how to version the module what is public"
+    },
+    {
+      "start": 226.379,
+      "duration": 4.981,
+      "text": "terraform module registry what is"
+    },
+    {
+      "start": 228.48,
+      "duration": 5.28,
+      "text": "private model registry and all of that"
+    },
+    {
+      "start": 231.36,
+      "duration": 4.439,
+      "text": "things number six is navigate terraform"
+    },
+    {
+      "start": 233.76,
+      "duration": 3.839,
+      "text": "workflow here you need to understand the"
+    },
+    {
+      "start": 235.799,
+      "duration": 3.841,
+      "text": "basic workflow of terraform where you"
+    },
+    {
+      "start": 237.599,
+      "duration": 3.301,
+      "text": "first write the code then you plan to"
+    },
+    {
+      "start": 239.64,
+      "duration": 3.659,
+      "text": "check what is going to be created"
+    },
+    {
+      "start": 240.9,
+      "duration": 5.28,
+      "text": "deleted or edited according to your code"
+    },
+    {
+      "start": 243.299,
+      "duration": 5.101,
+      "text": "and third you apply the code to create"
+    },
+    {
+      "start": 246.18,
+      "duration": 4.74,
+      "text": "that resource on the cloud so you need"
+    },
+    {
+      "start": 248.4,
+      "duration": 5.759,
+      "text": "to understand uh commands like terraform"
+    },
+    {
+      "start": 250.92,
+      "duration": 6.3,
+      "text": "in it terraform apply terraform plan"
+    },
+    {
+      "start": 254.159,
+      "duration": 5.401,
+      "text": "terraform destroy so these commands are"
+    },
+    {
+      "start": 257.22,
+      "duration": 5.4,
+      "text": "required for you to understand the"
+    },
+    {
+      "start": 259.56,
+      "duration": 5.699,
+      "text": "workflow required in this sixth module"
+    },
+    {
+      "start": 262.62,
+      "duration": 4.62,
+      "text": "number seventh is Implement and maintain"
+    },
+    {
+      "start": 265.259,
+      "duration": 3.841,
+      "text": "State here you need to understand how to"
+    },
+    {
+      "start": 267.24,
+      "duration": 4.679,
+      "text": "work with State what is is local back"
+    },
+    {
+      "start": 269.1,
+      "duration": 5.7,
+      "text": "end but his remote State backend how can"
+    },
+    {
+      "start": 271.919,
+      "duration": 5.101,
+      "text": "you store your terraform State into your"
+    },
+    {
+      "start": 274.8,
+      "duration": 4.2,
+      "text": "remote seat back in like S3 or different"
+    },
+    {
+      "start": 277.02,
+      "duration": 3.959,
+      "text": "backend options you also need to know"
+    },
+    {
+      "start": 279.0,
+      "duration": 4.259,
+      "text": "what is State locking and how to"
+    },
+    {
+      "start": 280.979,
+      "duration": 4.621,
+      "text": "configure it so all the things related"
+    },
+    {
+      "start": 283.259,
+      "duration": 5.041,
+      "text": "to state is going to be asked in the"
+    },
+    {
+      "start": 285.6,
+      "duration": 4.86,
+      "text": "seventh objective which is Implement and"
+    },
+    {
+      "start": 288.3,
+      "duration": 4.02,
+      "text": "maintain State moving on you number"
+    },
+    {
+      "start": 290.46,
+      "duration": 3.72,
+      "text": "eight is read generate and modify"
+    },
+    {
+      "start": 292.32,
+      "duration": 3.78,
+      "text": "configuration in this you need to"
+    },
+    {
+      "start": 294.18,
+      "duration": 4.32,
+      "text": "understand how to use terraform"
+    },
+    {
+      "start": 296.1,
+      "duration": 4.02,
+      "text": "variables and outputs what is the"
+    },
+    {
+      "start": 298.5,
+      "duration": 3.66,
+      "text": "difference between terraform resource"
+    },
+    {
+      "start": 300.12,
+      "duration": 3.66,
+      "text": "and data block you need to understand"
+    },
+    {
+      "start": 302.16,
+      "duration": 4.2,
+      "text": "the different built-in functions by"
+    },
+    {
+      "start": 303.78,
+      "duration": 5.52,
+      "text": "terraform also met arguments like count"
+    },
+    {
+      "start": 306.36,
+      "duration": 4.92,
+      "text": "depends on life cycle all of these you"
+    },
+    {
+      "start": 309.3,
+      "duration": 4.14,
+      "text": "need to understand in this read generate"
+    },
+    {
+      "start": 311.28,
+      "duration": 3.54,
+      "text": "and modify configuration block lastly"
+    },
+    {
+      "start": 313.44,
+      "duration": 3.0,
+      "text": "you have number nine which is to"
+    },
+    {
+      "start": 314.82,
+      "duration": 4.2,
+      "text": "understand terraform cloud and"
+    },
+    {
+      "start": 316.44,
+      "duration": 4.08,
+      "text": "Enterprise capabilities in this you they"
+    },
+    {
+      "start": 319.02,
+      "duration": 4.04,
+      "text": "will be asking questions on different"
+    },
+    {
+      "start": 320.52,
+      "duration": 5.22,
+      "text": "products by hashika purchased Sentinel"
+    },
+    {
+      "start": 323.06,
+      "duration": 4.72,
+      "text": "terraform Enterprise terraform open"
+    },
+    {
+      "start": 325.74,
+      "duration": 3.959,
+      "text": "source so here you will be asked"
+    },
+    {
+      "start": 327.78,
+      "duration": 4.199,
+      "text": "questions on what is the feature of"
+    },
+    {
+      "start": 329.699,
+      "duration": 3.78,
+      "text": "terraform Cloud why should you use"
+    },
+    {
+      "start": 331.979,
+      "duration": 4.16,
+      "text": "terraform Cloud rather than using"
+    },
+    {
+      "start": 333.479,
+      "duration": 2.66,
+      "text": "terraform Enterprise"
+    },
+    {
+      "start": 348.539,
+      "duration": 4.561,
+      "text": "here you can see my score uh depending"
+    },
+    {
+      "start": 351.06,
+      "duration": 4.4,
+      "text": "on all this exam objectives the first"
+    },
+    {
+      "start": 353.1,
+      "duration": 4.98,
+      "text": "two on in the first two I got 100"
+    },
+    {
+      "start": 355.46,
+      "duration": 4.84,
+      "text": "correct on third which is understand"
+    },
+    {
+      "start": 358.08,
+      "duration": 5.7,
+      "text": "there are from Basics I got 57 percent"
+    },
+    {
+      "start": 360.3,
+      "duration": 5.82,
+      "text": "correct using terraform CLI or your 66"
+    },
+    {
+      "start": 363.78,
+      "duration": 5.639,
+      "text": "percent interact with terraform modules"
+    },
+    {
+      "start": 366.12,
+      "duration": 5.88,
+      "text": "I got 50 correct navigator from workflow"
+    },
+    {
+      "start": 369.419,
+      "duration": 5.821,
+      "text": "is 75 percent correct Implement and"
+    },
+    {
+      "start": 372.0,
+      "duration": 5.34,
+      "text": "maintain State I got 100 correct then"
+    },
+    {
+      "start": 375.24,
+      "duration": 4.56,
+      "text": "again hundred percent for eighth"
+    },
+    {
+      "start": 377.34,
+      "duration": 4.199,
+      "text": "objective and Ninth again hundred for"
+    },
+    {
+      "start": 379.8,
+      "duration": 2.76,
+      "text": "understanding terraform cloud and"
+    },
+    {
+      "start": 381.539,
+      "duration": 3.72,
+      "text": "terraform"
+    },
+    {
+      "start": 382.56,
+      "duration": 5.16,
+      "text": "uh Enterprise capabilities"
+    },
+    {
+      "start": 385.259,
+      "duration": 4.201,
+      "text": "now let's talk about the resources I"
+    },
+    {
+      "start": 387.72,
+      "duration": 4.44,
+      "text": "used to prepare for my terraform"
+    },
+    {
+      "start": 389.46,
+      "duration": 4.98,
+      "text": "associate exam firstly I would highly"
+    },
+    {
+      "start": 392.16,
+      "duration": 4.979,
+      "text": "recommend you checking out the terraform"
+    },
+    {
+      "start": 394.44,
+      "duration": 4.08,
+      "text": "official documentation and the notes"
+    },
+    {
+      "start": 397.139,
+      "duration": 3.301,
+      "text": "that they have provided I think"
+    },
+    {
+      "start": 398.52,
+      "duration": 3.899,
+      "text": "terraform has best documentation among"
+    },
+    {
+      "start": 400.44,
+      "duration": 3.84,
+      "text": "all the different devops tools the"
+    },
+    {
+      "start": 402.419,
+      "duration": 4.081,
+      "text": "documentation is well organized easy to"
+    },
+    {
+      "start": 404.28,
+      "duration": 4.62,
+      "text": "navigate and contains examples relevant"
+    },
+    {
+      "start": 406.5,
+      "duration": 4.02,
+      "text": "for the exam firstly I would suggest you"
+    },
+    {
+      "start": 408.9,
+      "duration": 4.139,
+      "text": "to check out the official documentation"
+    },
+    {
+      "start": 410.52,
+      "duration": 4.26,
+      "text": "and use that to prepare for the exam"
+    },
+    {
+      "start": 413.039,
+      "duration": 4.741,
+      "text": "after you have gone through the"
+    },
+    {
+      "start": 414.78,
+      "duration": 5.34,
+      "text": "documentation and read all the important"
+    },
+    {
+      "start": 417.78,
+      "duration": 4.979,
+      "text": "topics you can start with a udemy course"
+    },
+    {
+      "start": 420.12,
+      "duration": 4.919,
+      "text": "this is what I would suggest if you want"
+    },
+    {
+      "start": 422.759,
+      "duration": 4.081,
+      "text": "to learn for free I would suggest my own"
+    },
+    {
+      "start": 425.039,
+      "duration": 4.261,
+      "text": "YouTube video where I have taught"
+    },
+    {
+      "start": 426.84,
+      "duration": 4.02,
+      "text": "terraform in 60 minutes you will"
+    },
+    {
+      "start": 429.3,
+      "duration": 4.2,
+      "text": "understand all the topics you need to"
+    },
+    {
+      "start": 430.86,
+      "duration": 5.7,
+      "text": "know for this exam after you have done"
+    },
+    {
+      "start": 433.5,
+      "duration": 5.58,
+      "text": "the Hands-On following the udemy or the"
+    },
+    {
+      "start": 436.56,
+      "duration": 4.919,
+      "text": "YouTube video you can use this terraform"
+    },
+    {
+      "start": 439.08,
+      "duration": 5.76,
+      "text": "practice question on udemy which will"
+    },
+    {
+      "start": 441.479,
+      "duration": 5.401,
+      "text": "help you immensely pass this exam so the"
+    },
+    {
+      "start": 444.84,
+      "duration": 3.9,
+      "text": "resources are used were official"
+    },
+    {
+      "start": 446.88,
+      "duration": 4.8,
+      "text": "documentation by terraform and this"
+    },
+    {
+      "start": 448.74,
+      "duration": 5.16,
+      "text": "practice test on udemy my tips before"
+    },
+    {
+      "start": 451.68,
+      "duration": 4.799,
+      "text": "you set for the exam is to make sure you"
+    },
+    {
+      "start": 453.9,
+      "duration": 4.68,
+      "text": "take detailed notes I remember when I"
+    },
+    {
+      "start": 456.479,
+      "duration": 4.62,
+      "text": "was studying I took detail notes on"
+    },
+    {
+      "start": 458.58,
+      "duration": 4.98,
+      "text": "every concept and applied them while I"
+    },
+    {
+      "start": 461.099,
+      "duration": 4.801,
+      "text": "was doing Hands-On Hands-On is the key"
+    },
+    {
+      "start": 463.56,
+      "duration": 4.02,
+      "text": "to understand every topic you will be"
+    },
+    {
+      "start": 465.9,
+      "duration": 4.139,
+      "text": "able to understand things only when you"
+    },
+    {
+      "start": 467.58,
+      "duration": 4.2,
+      "text": "work on terraform writing code so you"
+    },
+    {
+      "start": 470.039,
+      "duration": 4.141,
+      "text": "need to do Hands-On and if you want to"
+    },
+    {
+      "start": 471.78,
+      "duration": 4.02,
+      "text": "do Hands-On you can check out my videos"
+    },
+    {
+      "start": 474.18,
+      "duration": 4.019,
+      "text": "where I have explained how to create"
+    },
+    {
+      "start": 475.8,
+      "duration": 5.1,
+      "text": "easy to instances using terraform how to"
+    },
+    {
+      "start": 478.199,
+      "duration": 5.701,
+      "text": "create S3 buckets using terraform how to"
+    },
+    {
+      "start": 480.9,
+      "duration": 4.98,
+      "text": "create VPC RDS using terraform this way"
+    },
+    {
+      "start": 483.9,
+      "duration": 3.66,
+      "text": "you will be able to understand how to"
+    },
+    {
+      "start": 485.88,
+      "duration": 3.98,
+      "text": "use a different"
+    },
+    {
+      "start": 487.56,
+      "duration": 5.699,
+      "text": "terraform Concepts like resources"
+    },
+    {
+      "start": 489.86,
+      "duration": 5.44,
+      "text": "variables inputs data blocks provisioner"
+    },
+    {
+      "start": 493.259,
+      "duration": 4.5,
+      "text": "so when I did Hands-On I was able to"
+    },
+    {
+      "start": 495.3,
+      "duration": 5.519,
+      "text": "understand all these topics like how to"
+    },
+    {
+      "start": 497.759,
+      "duration": 4.921,
+      "text": "use modules how to work with remote exit"
+    },
+    {
+      "start": 500.819,
+      "duration": 3.361,
+      "text": "provision how to work with meta"
+    },
+    {
+      "start": 502.68,
+      "duration": 3.54,
+      "text": "arguments like cloud account met"
+    },
+    {
+      "start": 504.18,
+      "duration": 3.959,
+      "text": "argument depends on that argument and"
+    },
+    {
+      "start": 506.22,
+      "duration": 4.08,
+      "text": "not only this when you sit for the exam"
+    },
+    {
+      "start": 508.139,
+      "duration": 4.32,
+      "text": "while you answer the question your mind"
+    },
+    {
+      "start": 510.3,
+      "duration": 4.26,
+      "text": "will remind you that okay you were doing"
+    },
+    {
+      "start": 512.459,
+      "duration": 3.721,
+      "text": "this Hands-On and this was the answer or"
+    },
+    {
+      "start": 514.56,
+      "duration": 3.719,
+      "text": "this is what you used to tackle the"
+    },
+    {
+      "start": 516.18,
+      "duration": 4.799,
+      "text": "situation and that is when you can"
+    },
+    {
+      "start": 518.279,
+      "duration": 4.801,
+      "text": "answer questions correctly so Hands-On"
+    },
+    {
+      "start": 520.979,
+      "duration": 3.601,
+      "text": "is the key to understand each topic you"
+    },
+    {
+      "start": 523.08,
+      "duration": 4.02,
+      "text": "will not be able to answer a question"
+    },
+    {
+      "start": 524.58,
+      "duration": 4.56,
+      "text": "only if you read or if you watch the"
+    },
+    {
+      "start": 527.1,
+      "duration": 3.96,
+      "text": "videos you need to do Hands-On and if"
+    },
+    {
+      "start": 529.14,
+      "duration": 3.3,
+      "text": "you're giving this exam at home make"
+    },
+    {
+      "start": 531.06,
+      "duration": 4.8,
+      "text": "sure you have a stable internet"
+    },
+    {
+      "start": 532.44,
+      "duration": 5.399,
+      "text": "connection a quiet background a webcam"
+    },
+    {
+      "start": 535.86,
+      "duration": 4.5,
+      "text": "that meets the proctoring requirement"
+    },
+    {
+      "start": 537.839,
+      "duration": 4.981,
+      "text": "also you need to have the ID with you"
+    },
+    {
+      "start": 540.36,
+      "duration": 4.86,
+      "text": "because the Proctor is going to verify"
+    },
+    {
+      "start": 542.82,
+      "duration": 5.82,
+      "text": "it before you start the exam and when"
+    },
+    {
+      "start": 545.22,
+      "duration": 5.16,
+      "text": "you give the exam make sure you you read"
+    },
+    {
+      "start": 548.64,
+      "duration": 4.5,
+      "text": "and understand the question correctly"
+    },
+    {
+      "start": 550.38,
+      "duration": 5.22,
+      "text": "before you answer it and if you are"
+    },
+    {
+      "start": 553.14,
+      "duration": 5.16,
+      "text": "stuck at any question do not waste your"
+    },
+    {
+      "start": 555.6,
+      "duration": 4.799,
+      "text": "time on that question only you can flag"
+    },
+    {
+      "start": 558.3,
+      "duration": 3.9,
+      "text": "it for review and come back again when"
+    },
+    {
+      "start": 560.399,
+      "duration": 3.361,
+      "text": "you answer the other question this way"
+    },
+    {
+      "start": 562.2,
+      "duration": 4.02,
+      "text": "you will be able to manage your time"
+    },
+    {
+      "start": 563.76,
+      "duration": 3.9,
+      "text": "properly and you will have time to"
+    },
+    {
+      "start": 566.22,
+      "duration": 3.72,
+      "text": "answer the other question"
+    },
+    {
+      "start": 567.66,
+      "duration": 5.22,
+      "text": "so there you have it the resources I"
+    },
+    {
+      "start": 569.94,
+      "duration": 5.459,
+      "text": "used my advice and topics you need to"
+    },
+    {
+      "start": 572.88,
+      "duration": 4.26,
+      "text": "cover for past this exam I hope this"
+    },
+    {
+      "start": 575.399,
+      "duration": 4.62,
+      "text": "video was informative and if you're"
+    },
+    {
+      "start": 577.14,
+      "duration": 4.86,
+      "text": "sitting for the exam best of luck I hope"
+    },
+    {
+      "start": 580.019,
+      "duration": 4.281,
+      "text": "you passed the exam thank you and have a"
+    },
+    {
+      "start": 582.0,
+      "duration": 2.3,
+      "text": "good day"
+    }
+  ]
+}

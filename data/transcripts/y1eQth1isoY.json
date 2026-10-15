@@ -1,0 +1,96 @@
+{
+  "video": {
+    "id": "y1eQth1isoY",
+    "title": "The Future of DevOps is Here: GitOps Explained! 🔥",
+    "url": "https://www.youtube.com/watch?v=y1eQth1isoY",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 5.48,
+      "text": "What is GitOps? So, GitOps is a way to"
+    },
+    {
+      "start": 2.64,
+      "duration": 5.28,
+      "text": "do continuous delivery by using Git as a"
+    },
+    {
+      "start": 5.48,
+      "duration": 5.04,
+      "text": "single source of truth for declarative"
+    },
+    {
+      "start": 7.92,
+      "duration": 4.72,
+      "text": "applications and infrastructure. The way"
+    },
+    {
+      "start": 10.52,
+      "duration": 4.16,
+      "text": "GitOps work is you need to connect your"
+    },
+    {
+      "start": 12.64,
+      "duration": 4.8,
+      "text": "Git repository with applications like"
+    },
+    {
+      "start": 14.68,
+      "duration": 4.76,
+      "text": "Argo CD, Flux CD, and it will start"
+    },
+    {
+      "start": 17.44,
+      "duration": 3.88,
+      "text": "using your pull request whenever you"
+    },
+    {
+      "start": 19.44,
+      "duration": 3.64,
+      "text": "make any change. So, if you push a"
+    },
+    {
+      "start": 21.32,
+      "duration": 4.4,
+      "text": "change, it's going to be applied on your"
+    },
+    {
+      "start": 23.08,
+      "duration": 4.64,
+      "text": "application or infrastructure."
+    },
+    {
+      "start": 25.72,
+      "duration": 3.88,
+      "text": "Using GitOps, it's very easy to track"
+    },
+    {
+      "start": 27.72,
+      "duration": 4.2,
+      "text": "changes and to roll back if there's any"
+    },
+    {
+      "start": 29.6,
+      "duration": 4.16,
+      "text": "problem. You can use GitOps to deploy"
+    },
+    {
+      "start": 31.92,
+      "duration": 4.8,
+      "text": "and update applications on Kubernetes"
+    },
+    {
+      "start": 33.76,
+      "duration": 7.0,
+      "text": "clusters, manage infrastructure as code,"
+    },
+    {
+      "start": 36.72,
+      "duration": 4.04,
+      "text": "or collaboration pipelines."
+    }
+  ]
+}

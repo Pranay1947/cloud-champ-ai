@@ -1,0 +1,1106 @@
+{
+  "video": {
+    "id": "D-t4UR4HfNc",
+    "title": "How to deploy MySQL Database on AWS RDS using Terraform",
+    "url": "https://www.youtube.com/watch?v=D-t4UR4HfNc",
+    "duration": 510,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 1.839,
+      "duration": 5.201,
+      "text": "it says it is available which means we"
+    },
+    {
+      "start": 4.799,
+      "duration": 4.8,
+      "text": "have successfully created our rds"
+    },
+    {
+      "start": 7.04,
+      "duration": 5.2,
+      "text": "instance using teraform so i'm going to"
+    },
+    {
+      "start": 9.599,
+      "duration": 4.641,
+      "text": "paste this code in the description"
+    },
+    {
+      "start": 12.24,
+      "duration": 4.08,
+      "text": "hello and welcome to my youtube channel"
+    },
+    {
+      "start": 14.24,
+      "duration": 6.4,
+      "text": "in this video we're going to see how to"
+    },
+    {
+      "start": 16.32,
+      "duration": 5.6,
+      "text": "create an aws rds database instance in"
+    },
+    {
+      "start": 20.64,
+      "duration": 4.559,
+      "text": "terraform"
+    },
+    {
+      "start": 21.92,
+      "duration": 6.48,
+      "text": "so rds is a database service in aws that"
+    },
+    {
+      "start": 25.199,
+      "duration": 5.201,
+      "text": "lets you create mysql postgres oracle"
+    },
+    {
+      "start": 28.4,
+      "duration": 5.12,
+      "text": "microsoft sql so all the relational"
+    },
+    {
+      "start": 30.4,
+      "duration": 4.8,
+      "text": "databases can be created using rds in"
+    },
+    {
+      "start": 33.52,
+      "duration": 4.559,
+      "text": "this video we are going to see how we"
+    },
+    {
+      "start": 35.2,
+      "duration": 4.56,
+      "text": "can create rds database using the"
+    },
+    {
+      "start": 38.079,
+      "duration": 4.0,
+      "text": "teraform tool"
+    },
+    {
+      "start": 39.76,
+      "duration": 4.0,
+      "text": "so before we actually do that i want you"
+    },
+    {
+      "start": 42.079,
+      "duration": 4.32,
+      "text": "to have a good understanding of how it"
+    },
+    {
+      "start": 43.76,
+      "duration": 4.4,
+      "text": "is done in the console so what different"
+    },
+    {
+      "start": 46.399,
+      "duration": 3.601,
+      "text": "parameters do you have to enter in the"
+    },
+    {
+      "start": 48.16,
+      "duration": 3.919,
+      "text": "console so you need to choose what"
+    },
+    {
+      "start": 50.0,
+      "duration": 4.079,
+      "text": "engine do you want what engine version"
+    },
+    {
+      "start": 52.079,
+      "duration": 4.0,
+      "text": "should be added then you need to know"
+    },
+    {
+      "start": 54.079,
+      "duration": 4.64,
+      "text": "the database identifier you have to"
+    },
+    {
+      "start": 56.079,
+      "duration": 5.361,
+      "text": "enter the username and the password you"
+    },
+    {
+      "start": 58.719,
+      "duration": 5.121,
+      "text": "also need to enter what instance class"
+    },
+    {
+      "start": 61.44,
+      "duration": 4.28,
+      "text": "or the instance size you want for"
+    },
+    {
+      "start": 63.84,
+      "duration": 5.92,
+      "text": "example it should it be"
+    },
+    {
+      "start": 65.72,
+      "duration": 6.04,
+      "text": "m588 large or t2 micro or t3 micro"
+    },
+    {
+      "start": 69.76,
+      "duration": 3.76,
+      "text": "how much storage do you want"
+    },
+    {
+      "start": 71.76,
+      "duration": 4.56,
+      "text": "so all of this need to be when you"
+    },
+    {
+      "start": 73.52,
+      "duration": 5.12,
+      "text": "create the rds in terraform so if you"
+    },
+    {
+      "start": 76.32,
+      "duration": 3.04,
+      "text": "want to get help you can always refer"
+    },
+    {
+      "start": 78.64,
+      "duration": 3.44,
+      "text": "the"
+    },
+    {
+      "start": 79.36,
+      "duration": 5.92,
+      "text": "terraform documentation which is aws"
+    },
+    {
+      "start": 82.08,
+      "duration": 4.88,
+      "text": "rds teraform link is going to be the"
+    },
+    {
+      "start": 85.28,
+      "duration": 3.28,
+      "text": "documentation by"
+    },
+    {
+      "start": 86.96,
+      "duration": 3.12,
+      "text": "terraform itself"
+    },
+    {
+      "start": 88.56,
+      "duration": 3.68,
+      "text": "i'm going to paste this link in the"
+    },
+    {
+      "start": 90.08,
+      "duration": 4.48,
+      "text": "description so let's go and start"
+    },
+    {
+      "start": 92.24,
+      "duration": 4.32,
+      "text": "creating the database in so i'm going to"
+    },
+    {
+      "start": 94.56,
+      "duration": 4.0,
+      "text": "create a new file and name is name it"
+    },
+    {
+      "start": 96.56,
+      "duration": 4.559,
+      "text": "rds dot df"
+    },
+    {
+      "start": 98.56,
+      "duration": 3.519,
+      "text": "and this file we are going to create"
+    },
+    {
+      "start": 101.119,
+      "duration": 2.081,
+      "text": "our"
+    },
+    {
+      "start": 102.079,
+      "duration": 2.801,
+      "text": "first"
+    },
+    {
+      "start": 103.2,
+      "duration": 4.239,
+      "text": "create our rds"
+    },
+    {
+      "start": 104.88,
+      "duration": 4.8,
+      "text": "database using"
+    },
+    {
+      "start": 107.439,
+      "duration": 4.32,
+      "text": "teraform"
+    },
+    {
+      "start": 109.68,
+      "duration": 4.96,
+      "text": "so to create rds database we have to"
+    },
+    {
+      "start": 111.759,
+      "duration": 6.32,
+      "text": "create a resource block resource is"
+    },
+    {
+      "start": 114.64,
+      "duration": 5.04,
+      "text": "going to be aws underscore db underscore"
+    },
+    {
+      "start": 118.079,
+      "duration": 4.561,
+      "text": "instance"
+    },
+    {
+      "start": 119.68,
+      "duration": 5.6,
+      "text": "and i'm going to name this as"
+    },
+    {
+      "start": 122.64,
+      "duration": 4.56,
+      "text": "my rds you can name it anything you want"
+    },
+    {
+      "start": 125.28,
+      "duration": 5.039,
+      "text": "and this is a name that terraform refers"
+    },
+    {
+      "start": 127.2,
+      "duration": 5.28,
+      "text": "to so it can be anything so"
+    },
+    {
+      "start": 130.319,
+      "duration": 4.401,
+      "text": "inside this i can i have to pass in all"
+    },
+    {
+      "start": 132.48,
+      "duration": 4.8,
+      "text": "the parameters that you have seen in the"
+    },
+    {
+      "start": 134.72,
+      "duration": 4.239,
+      "text": "console so i can pass in the engine"
+    },
+    {
+      "start": 137.28,
+      "duration": 4.16,
+      "text": "which is going to be let's say i want to"
+    },
+    {
+      "start": 138.959,
+      "duration": 4.241,
+      "text": "launch my sequel so i can select my"
+    },
+    {
+      "start": 141.44,
+      "duration": 3.76,
+      "text": "sequel"
+    },
+    {
+      "start": 143.2,
+      "duration": 3.759,
+      "text": "then i also have to pass in the engine"
+    },
+    {
+      "start": 145.2,
+      "duration": 4.88,
+      "text": "version so i can"
+    },
+    {
+      "start": 146.959,
+      "duration": 6.081,
+      "text": "type in engine underscore version two"
+    },
+    {
+      "start": 150.08,
+      "duration": 7.519,
+      "text": "seven so i am selecting eight"
+    },
+    {
+      "start": 153.04,
+      "duration": 7.44,
+      "text": "point zero point two seven"
+    },
+    {
+      "start": 157.599,
+      "duration": 5.761,
+      "text": "then after i do that i am going to add"
+    },
+    {
+      "start": 160.48,
+      "duration": 4.08,
+      "text": "how much storage do i want so allocated"
+    },
+    {
+      "start": 163.36,
+      "duration": 3.76,
+      "text": "storage"
+    },
+    {
+      "start": 164.56,
+      "duration": 5.28,
+      "text": "allocated underscore storage"
+    },
+    {
+      "start": 167.12,
+      "duration": 5.759,
+      "text": "so by default you get 20 gb whenever you"
+    },
+    {
+      "start": 169.84,
+      "duration": 5.039,
+      "text": "use the free tier so i'm going to select"
+    },
+    {
+      "start": 172.879,
+      "duration": 4.161,
+      "text": "that and you have"
+    },
+    {
+      "start": 174.879,
+      "duration": 4.961,
+      "text": "three storage option general purpose"
+    },
+    {
+      "start": 177.04,
+      "duration": 4.72,
+      "text": "which is gp2 provisioned iops and"
+    },
+    {
+      "start": 179.84,
+      "duration": 5.039,
+      "text": "magnetic so i'm going to use the general"
+    },
+    {
+      "start": 181.76,
+      "duration": 4.399,
+      "text": "purpose one which is gp2 to select the"
+    },
+    {
+      "start": 184.879,
+      "duration": 3.681,
+      "text": "storage type"
+    },
+    {
+      "start": 186.159,
+      "duration": 4.08,
+      "text": "storage underscore type"
+    },
+    {
+      "start": 188.56,
+      "duration": 4.48,
+      "text": "is going to be"
+    },
+    {
+      "start": 190.239,
+      "duration": 4.72,
+      "text": "gp2"
+    },
+    {
+      "start": 193.04,
+      "duration": 3.919,
+      "text": "so i have my engine version engine"
+    },
+    {
+      "start": 194.959,
+      "duration": 4.0,
+      "text": "allocated storage storage type i'm going"
+    },
+    {
+      "start": 196.959,
+      "duration": 6.321,
+      "text": "to add identifier which is going to be"
+    },
+    {
+      "start": 198.959,
+      "duration": 6.241,
+      "text": "the name of my my sequel database so"
+    },
+    {
+      "start": 203.28,
+      "duration": 4.0,
+      "text": "my db"
+    },
+    {
+      "start": 205.2,
+      "duration": 4.8,
+      "text": "then i'm going to add the username so"
+    },
+    {
+      "start": 207.28,
+      "duration": 4.879,
+      "text": "the username for the user that wants to"
+    },
+    {
+      "start": 210.0,
+      "duration": 4.56,
+      "text": "log into the database so i'm going to"
+    },
+    {
+      "start": 212.159,
+      "duration": 4.72,
+      "text": "pass in as admin"
+    },
+    {
+      "start": 214.56,
+      "duration": 4.239,
+      "text": "i also have to pass in the password so"
+    },
+    {
+      "start": 216.879,
+      "duration": 3.761,
+      "text": "it's going to be password"
+    },
+    {
+      "start": 218.799,
+      "duration": 4.321,
+      "text": "and make sure you're adding password"
+    },
+    {
+      "start": 220.64,
+      "duration": 4.239,
+      "text": "without any add the rate symbol"
+    },
+    {
+      "start": 223.12,
+      "duration": 3.92,
+      "text": "because that is not allowed so i'm going"
+    },
+    {
+      "start": 224.879,
+      "duration": 3.041,
+      "text": "to pass in as pass"
+    },
+    {
+      "start": 227.04,
+      "duration": 3.52,
+      "text": "word"
+    },
+    {
+      "start": 227.92,
+      "duration": 4.239,
+      "text": "exclamation mark one two three you"
+    },
+    {
+      "start": 230.56,
+      "duration": 3.52,
+      "text": "obviously you have to store a strong"
+    },
+    {
+      "start": 232.159,
+      "duration": 3.521,
+      "text": "password not this one"
+    },
+    {
+      "start": 234.08,
+      "duration": 2.96,
+      "text": "because you don't want your database to"
+    },
+    {
+      "start": 235.68,
+      "duration": 3.199,
+      "text": "be hacked"
+    },
+    {
+      "start": 237.04,
+      "duration": 4.32,
+      "text": "then if you want it to be publicly"
+    },
+    {
+      "start": 238.879,
+      "duration": 5.681,
+      "text": "accessible all over the internet you can"
+    },
+    {
+      "start": 241.36,
+      "duration": 6.64,
+      "text": "make it publicly"
+    },
+    {
+      "start": 244.56,
+      "duration": 3.44,
+      "text": "underscore accessible"
+    },
+    {
+      "start": 248.08,
+      "duration": 4.96,
+      "text": "and by default it is false"
+    },
+    {
+      "start": 250.56,
+      "duration": 4.08,
+      "text": "if you make it publicly accessible is"
+    },
+    {
+      "start": 253.04,
+      "duration": 4.0,
+      "text": "equal to true which means you can then"
+    },
+    {
+      "start": 254.64,
+      "duration": 3.999,
+      "text": "connect to your database using any"
+    },
+    {
+      "start": 257.04,
+      "duration": 4.08,
+      "text": "server if you have the username and"
+    },
+    {
+      "start": 258.639,
+      "duration": 4.401,
+      "text": "password and the endpoint to it"
+    },
+    {
+      "start": 261.12,
+      "duration": 3.68,
+      "text": "you can see boolean to control if the"
+    },
+    {
+      "start": 263.04,
+      "duration": 3.84,
+      "text": "instance is publicly accessible or not"
+    },
+    {
+      "start": 264.8,
+      "duration": 6.08,
+      "text": "the default is false so if you if you"
+    },
+    {
+      "start": 266.88,
+      "duration": 6.08,
+      "text": "want it to be private you can skip this"
+    },
+    {
+      "start": 270.88,
+      "duration": 4.879,
+      "text": "if you want it to be public you can add"
+    },
+    {
+      "start": 272.96,
+      "duration": 4.4,
+      "text": "this so just for your information and"
+    },
+    {
+      "start": 275.759,
+      "duration": 4.961,
+      "text": "last thing that you need to enable is"
+    },
+    {
+      "start": 277.36,
+      "duration": 5.52,
+      "text": "going to be skip final snapshot so if"
+    },
+    {
+      "start": 280.72,
+      "duration": 4.0,
+      "text": "you have not enabled this if you delete"
+    },
+    {
+      "start": 282.88,
+      "duration": 4.16,
+      "text": "your instance every time you delete your"
+    },
+    {
+      "start": 284.72,
+      "duration": 4.72,
+      "text": "rds instance it is going to create a"
+    },
+    {
+      "start": 287.04,
+      "duration": 4.24,
+      "text": "snapshot and snapshot is going to charge"
+    },
+    {
+      "start": 289.44,
+      "duration": 3.44,
+      "text": "you money so if you don't want to create"
+    },
+    {
+      "start": 291.28,
+      "duration": 3.52,
+      "text": "that you can"
+    },
+    {
+      "start": 292.88,
+      "duration": 3.92,
+      "text": "enable this option which is skip final"
+    },
+    {
+      "start": 294.8,
+      "duration": 3.839,
+      "text": "snapshot determines whether a final"
+    },
+    {
+      "start": 296.8,
+      "duration": 4.399,
+      "text": "snapshot is created before the instance"
+    },
+    {
+      "start": 298.639,
+      "duration": 4.481,
+      "text": "is deleted if true is specified no"
+    },
+    {
+      "start": 301.199,
+      "duration": 4.081,
+      "text": "snapshot is created if false is"
+    },
+    {
+      "start": 303.12,
+      "duration": 4.56,
+      "text": "specified a snapshot is created before"
+    },
+    {
+      "start": 305.28,
+      "duration": 4.32,
+      "text": "the instance is deleted using the value"
+    },
+    {
+      "start": 307.68,
+      "duration": 3.28,
+      "text": "so default is false make sure you make"
+    },
+    {
+      "start": 309.6,
+      "duration": 3.12,
+      "text": "it true if you don't want to create"
+    },
+    {
+      "start": 310.96,
+      "duration": 4.32,
+      "text": "unnecessary snapshot"
+    },
+    {
+      "start": 312.72,
+      "duration": 5.12,
+      "text": "then i'm going to add a tag so tags"
+    },
+    {
+      "start": 315.28,
+      "duration": 2.56,
+      "text": "equal to"
+    },
+    {
+      "start": 319.039,
+      "duration": 3.201,
+      "text": "name is equal to let's say"
+    },
+    {
+      "start": 321.28,
+      "duration": 2.24,
+      "text": "my"
+    },
+    {
+      "start": 322.24,
+      "duration": 2.239,
+      "text": "rds"
+    },
+    {
+      "start": 323.52,
+      "duration": 3.04,
+      "text": "db"
+    },
+    {
+      "start": 324.479,
+      "duration": 4.401,
+      "text": "and i'm going to save this now i have"
+    },
+    {
+      "start": 326.56,
+      "duration": 5.56,
+      "text": "created the code to launch an rds"
+    },
+    {
+      "start": 328.88,
+      "duration": 7.36,
+      "text": "database which is my sql database"
+    },
+    {
+      "start": 332.12,
+      "duration": 7.4,
+      "text": "8027 version allocated storage of 20 gb"
+    },
+    {
+      "start": 336.24,
+      "duration": 5.6,
+      "text": "storage type gp2 identifier mydb this is"
+    },
+    {
+      "start": 339.52,
+      "duration": 4.239,
+      "text": "the username password it is publicly"
+    },
+    {
+      "start": 341.84,
+      "duration": 4.0,
+      "text": "accessible and i am skipping the final"
+    },
+    {
+      "start": 343.759,
+      "duration": 3.601,
+      "text": "snapshot so the first command that i"
+    },
+    {
+      "start": 345.84,
+      "duration": 3.12,
+      "text": "need to run is going to be terraform"
+    },
+    {
+      "start": 347.36,
+      "duration": 3.52,
+      "text": "init make sure you run this command"
+    },
+    {
+      "start": 348.96,
+      "duration": 4.32,
+      "text": "whenever you start working with your"
+    },
+    {
+      "start": 350.88,
+      "duration": 4.159,
+      "text": "terraform code for the first time"
+    },
+    {
+      "start": 353.28,
+      "duration": 3.68,
+      "text": "so i'm running this command installing"
+    },
+    {
+      "start": 355.039,
+      "duration": 3.44,
+      "text": "all the provider plugin if you want to"
+    },
+    {
+      "start": 356.96,
+      "duration": 3.36,
+      "text": "learn more about terraform i have"
+    },
+    {
+      "start": 358.479,
+      "duration": 5.28,
+      "text": "already created videos you can check out"
+    },
+    {
+      "start": 360.32,
+      "duration": 5.439,
+      "text": "my channel and please like this video i"
+    },
+    {
+      "start": 363.759,
+      "duration": 4.88,
+      "text": "want you to like this video right now"
+    },
+    {
+      "start": 365.759,
+      "duration": 5.761,
+      "text": "and let me know if you have created a"
+    },
+    {
+      "start": 368.639,
+      "duration": 4.56,
+      "text": "rds database with this code so i'm going"
+    },
+    {
+      "start": 371.52,
+      "duration": 3.679,
+      "text": "to run the reform plan to see what is"
+    },
+    {
+      "start": 373.199,
+      "duration": 4.081,
+      "text": "actually going to be created so when i"
+    },
+    {
+      "start": 375.199,
+      "duration": 4.641,
+      "text": "run terraform plan it shows"
+    },
+    {
+      "start": 377.28,
+      "duration": 4.72,
+      "text": "me an error which says instance class is"
+    },
+    {
+      "start": 379.84,
+      "duration": 3.68,
+      "text": "required but no definition was found"
+    },
+    {
+      "start": 382.0,
+      "duration": 5.199,
+      "text": "obviously we have to enter the instance"
+    },
+    {
+      "start": 383.52,
+      "duration": 5.44,
+      "text": "class i have totally skipped that so"
+    },
+    {
+      "start": 387.199,
+      "duration": 4.881,
+      "text": "instance class is going to be the"
+    },
+    {
+      "start": 388.96,
+      "duration": 5.359,
+      "text": "instance type which can be t2 micro or"
+    },
+    {
+      "start": 392.08,
+      "duration": 3.04,
+      "text": "m5 large whatever you want so as this is"
+    },
+    {
+      "start": 394.319,
+      "duration": 2.641,
+      "text": "for"
+    },
+    {
+      "start": 395.12,
+      "duration": 4.799,
+      "text": "just tutorial basis i'm going to make it"
+    },
+    {
+      "start": 396.96,
+      "duration": 5.2,
+      "text": "t2 so let make sure you are entering the"
+    },
+    {
+      "start": 399.919,
+      "duration": 5.441,
+      "text": "correct name so you can go here"
+    },
+    {
+      "start": 402.16,
+      "duration": 8.479,
+      "text": "and in here you can see db.t3.micro"
+    },
+    {
+      "start": 405.36,
+      "duration": 6.959,
+      "text": "so it is db dot t3 dot micro"
+    },
+    {
+      "start": 410.639,
+      "duration": 3.921,
+      "text": "saving this and running the terraform"
+    },
+    {
+      "start": 412.319,
+      "duration": 4.241,
+      "text": "plan again"
+    },
+    {
+      "start": 414.56,
+      "duration": 3.52,
+      "text": "and now it will not show you any error"
+    },
+    {
+      "start": 416.56,
+      "duration": 3.44,
+      "text": "it says one"
+    },
+    {
+      "start": 418.08,
+      "duration": 3.519,
+      "text": "resource is going to be added and if i"
+    },
+    {
+      "start": 420.0,
+      "duration": 3.68,
+      "text": "show you the plan"
+    },
+    {
+      "start": 421.599,
+      "duration": 3.201,
+      "text": "clearly you can see"
+    },
+    {
+      "start": 423.68,
+      "duration": 4.639,
+      "text": "that the"
+    },
+    {
+      "start": 424.8,
+      "duration": 6.959,
+      "text": "rds database with storage is 20"
+    },
+    {
+      "start": 428.319,
+      "duration": 6.081,
+      "text": "engine is my sequel version is 8.0.27"
+    },
+    {
+      "start": 431.759,
+      "duration": 5.521,
+      "text": "and this is the instance class"
+    },
+    {
+      "start": 434.4,
+      "duration": 5.76,
+      "text": "this is false performance insight but it"
+    },
+    {
+      "start": 437.28,
+      "duration": 5.759,
+      "text": "is publicly accessible and the name tag"
+    },
+    {
+      "start": 440.16,
+      "duration": 5.36,
+      "text": "is this so i'm going to run terraform"
+    },
+    {
+      "start": 443.039,
+      "duration": 6.321,
+      "text": "apply command so terraform apply hyphen"
+    },
+    {
+      "start": 445.52,
+      "duration": 6.399,
+      "text": "auto hyphen approve"
+    },
+    {
+      "start": 449.36,
+      "duration": 4.399,
+      "text": "and now it is going to start creating my"
+    },
+    {
+      "start": 451.919,
+      "duration": 4.56,
+      "text": "rds instance which will take some time"
+    },
+    {
+      "start": 453.759,
+      "duration": 4.641,
+      "text": "it takes uh around five minutes or so so"
+    },
+    {
+      "start": 456.479,
+      "duration": 3.921,
+      "text": "yeah this is you can see it's creating"
+    },
+    {
+      "start": 458.4,
+      "duration": 4.4,
+      "text": "it isn't creating state but it will take"
+    },
+    {
+      "start": 460.4,
+      "duration": 4.96,
+      "text": "around five minutes to come to the"
+    },
+    {
+      "start": 462.8,
+      "duration": 4.32,
+      "text": "available state so i'm going to pause my"
+    },
+    {
+      "start": 465.36,
+      "duration": 4.32,
+      "text": "video and come back when this instance"
+    },
+    {
+      "start": 467.12,
+      "duration": 2.56,
+      "text": "is ready"
+    },
+    {
+      "start": 470.96,
+      "duration": 4.32,
+      "text": "all right so all right so now this"
+    },
+    {
+      "start": 473.039,
+      "duration": 4.641,
+      "text": "instance has been created after 4"
+    },
+    {
+      "start": 475.28,
+      "duration": 6.319,
+      "text": "minutes and 12 seconds let's see in the"
+    },
+    {
+      "start": 477.68,
+      "duration": 6.88,
+      "text": "console so if i refresh now"
+    },
+    {
+      "start": 481.599,
+      "duration": 5.201,
+      "text": "it says it is available which means we"
+    },
+    {
+      "start": 484.56,
+      "duration": 4.8,
+      "text": "have successfully created our rds"
+    },
+    {
+      "start": 486.8,
+      "duration": 4.959,
+      "text": "instance using teraform so i'm going to"
+    },
+    {
+      "start": 489.36,
+      "duration": 4.399,
+      "text": "paste this code in the description if"
+    },
+    {
+      "start": 491.759,
+      "duration": 4.641,
+      "text": "you found this video helpful please like"
+    },
+    {
+      "start": 493.759,
+      "duration": 5.28,
+      "text": "this video and subscribe to my channel i"
+    },
+    {
+      "start": 496.4,
+      "duration": 6.239,
+      "text": "have seen people watch my video but have"
+    },
+    {
+      "start": 499.039,
+      "duration": 6.241,
+      "text": "not subscribed 90 of my viewers have not"
+    },
+    {
+      "start": 502.639,
+      "duration": 5.68,
+      "text": "subscribed so please subscribe to my"
+    },
+    {
+      "start": 505.28,
+      "duration": 5.68,
+      "text": "channel for more cloud and devops videos"
+    },
+    {
+      "start": 508.319,
+      "duration": 2.641,
+      "text": "thank you"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "video": {
+    "id": "YjuH5JbJnno",
+    "title": "Learn Shell Scripting in Less than 1 minute Tutorial 😱 #bash #devops",
+    "url": "https://www.youtube.com/watch?v=YjuH5JbJnno",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.88,
+      "text": "let's learn how to create a bash script"
+    },
+    {
+      "start": 2.12,
+      "duration": 5.0,
+      "text": "in less than 1 minute let's go open your"
+    },
+    {
+      "start": 5.04,
+      "duration": 4.4,
+      "text": "terminal to check shell type run Echo"
+    },
+    {
+      "start": 7.12,
+      "duration": 4.399,
+      "text": "dollar Z search A bash shell now create"
+    },
+    {
+      "start": 9.44,
+      "duration": 4.239,
+      "text": "a file using n editor in this file we"
+    },
+    {
+      "start": 11.519,
+      "duration": 5.68,
+      "text": "need to tell The Interpreter to use bash"
+    },
+    {
+      "start": 13.679,
+      "duration": 5.801,
+      "text": "shell so /bin/bash or shebang we can"
+    },
+    {
+      "start": 17.199,
+      "duration": 4.441,
+      "text": "start writing a script now let's display"
+    },
+    {
+      "start": 19.48,
+      "duration": 4.76,
+      "text": "a message to enter two numbers using"
+    },
+    {
+      "start": 21.64,
+      "duration": 4.879,
+      "text": "Echo command now get the input using"
+    },
+    {
+      "start": 24.24,
+      "duration": 4.119,
+      "text": "read command so read num one and read"
+    },
+    {
+      "start": 26.519,
+      "duration": 3.76,
+      "text": "num two after you get the numbers from"
+    },
+    {
+      "start": 28.359,
+      "duration": 4.72,
+      "text": "the users you can show the sum using"
+    },
+    {
+      "start": 30.279,
+      "duration": 4.841,
+      "text": "Echo command by saying Echo the sum is"
+    },
+    {
+      "start": 33.079,
+      "duration": 4.16,
+      "text": "num 1 plus num 2 so we are adding an"
+    },
+    {
+      "start": 35.12,
+      "duration": 4.68,
+      "text": "arithmetic operation here that's your"
+    },
+    {
+      "start": 37.239,
+      "duration": 4.32,
+      "text": "script save and close to run this file"
+    },
+    {
+      "start": 39.8,
+      "duration": 3.64,
+      "text": "now if you notice there's no execute"
+    },
+    {
+      "start": 41.559,
+      "duration": 3.761,
+      "text": "permission to run this script so we need"
+    },
+    {
+      "start": 43.44,
+      "duration": 4.24,
+      "text": "to First change the permission using CH"
+    },
+    {
+      "start": 45.32,
+      "duration": 4.6,
+      "text": "mode so we'll say CH mode U plus X name"
+    },
+    {
+      "start": 47.68,
+      "duration": 4.519,
+      "text": "of the file and then to run this file"
+    },
+    {
+      "start": 49.92,
+      "duration": 4.159,
+      "text": "we'll say period name of the file you"
+    },
+    {
+      "start": 52.199,
+      "duration": 3.921,
+      "text": "see this is how you can create a b"
+    },
+    {
+      "start": 54.079,
+      "duration": 4.881,
+      "text": "script in less than 1 minute subscribe"
+    },
+    {
+      "start": 56.12,
+      "duration": 2.84,
+      "text": "for more"
+    }
+  ]
+}

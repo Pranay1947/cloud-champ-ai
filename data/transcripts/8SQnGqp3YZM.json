@@ -1,0 +1,5566 @@
+{
+  "video": {
+    "id": "8SQnGqp3YZM",
+    "title": "AWS EC2 Tutorial Beginners to Advance - Full course with Hands On Labs 2023",
+    "url": "https://www.youtube.com/watch?v=8SQnGqp3YZM",
+    "duration": 2380,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 3.439,
+      "duration": 4.4,
+      "text": "hello and welcome back how are you"
+    },
+    {
+      "start": 5.68,
+      "duration": 5.28,
+      "text": "i'm back again with another video so i'm"
+    },
+    {
+      "start": 7.839,
+      "duration": 4.72,
+      "text": "creating a course on ec2 i've received"
+    },
+    {
+      "start": 10.96,
+      "duration": 3.44,
+      "text": "messages from a lot of people on"
+    },
+    {
+      "start": 12.559,
+      "duration": 4.161,
+      "text": "linkedin on whatsapp they wanted me to"
+    },
+    {
+      "start": 14.4,
+      "duration": 4.56,
+      "text": "teach about ec2 service and if you don't"
+    },
+    {
+      "start": 16.72,
+      "duration": 4.319,
+      "text": "know i am aws certified solutions"
+    },
+    {
+      "start": 18.96,
+      "duration": 3.76,
+      "text": "architect so i'm bringing you a course"
+    },
+    {
+      "start": 21.039,
+      "duration": 3.841,
+      "text": "of ec2 where you will learn everything"
+    },
+    {
+      "start": 22.72,
+      "duration": 4.639,
+      "text": "about dc2 after this video you don't"
+    },
+    {
+      "start": 24.88,
+      "duration": 4.0,
+      "text": "need to watch any other video on ec2"
+    },
+    {
+      "start": 27.359,
+      "duration": 3.521,
+      "text": "and this video is going to be a mixture"
+    },
+    {
+      "start": 28.88,
+      "duration": 4.16,
+      "text": "of slides and the hands-on and if you"
+    },
+    {
+      "start": 30.88,
+      "duration": 5.12,
+      "text": "want to follow along with the hands-on i"
+    },
+    {
+      "start": 33.04,
+      "duration": 4.8,
+      "text": "want you to have an aws account so"
+    },
+    {
+      "start": 36.0,
+      "duration": 5.12,
+      "text": "without wasting any much time let's get"
+    },
+    {
+      "start": 37.84,
+      "duration": 4.559,
+      "text": "started with learning aws ec2 on my"
+    },
+    {
+      "start": 41.12,
+      "duration": 3.84,
+      "text": "computer screen and you're going to talk"
+    },
+    {
+      "start": 42.399,
+      "duration": 5.041,
+      "text": "about amazon ec2 service which stands"
+    },
+    {
+      "start": 44.96,
+      "duration": 4.8,
+      "text": "for amazon elastic compute cloud and"
+    },
+    {
+      "start": 47.44,
+      "duration": 4.32,
+      "text": "this is one of the most used service one"
+    },
+    {
+      "start": 49.76,
+      "duration": 4.16,
+      "text": "of the oldest service the core service"
+    },
+    {
+      "start": 51.76,
+      "duration": 4.0,
+      "text": "of aws and if you are working as a cloud"
+    },
+    {
+      "start": 53.92,
+      "duration": 3.44,
+      "text": "or a devops engineer this is the service"
+    },
+    {
+      "start": 55.76,
+      "duration": 3.04,
+      "text": "that you'll be using the most even if"
+    },
+    {
+      "start": 57.36,
+      "duration": 3.199,
+      "text": "you're developers you'll be spinning up"
+    },
+    {
+      "start": 58.8,
+      "duration": 3.919,
+      "text": "servers and that can be done with this"
+    },
+    {
+      "start": 60.559,
+      "duration": 4.24,
+      "text": "service so let's get started"
+    },
+    {
+      "start": 62.719,
+      "duration": 4.321,
+      "text": "before learning aws i want you to set up"
+    },
+    {
+      "start": 64.799,
+      "duration": 3.921,
+      "text": "aws budget because you might get charges"
+    },
+    {
+      "start": 67.04,
+      "duration": 3.6,
+      "text": "and you if you don't want to pay more"
+    },
+    {
+      "start": 68.72,
+      "duration": 3.439,
+      "text": "than anything you can set up budget if"
+    },
+    {
+      "start": 70.64,
+      "duration": 3.12,
+      "text": "you don't know how to create a budget i"
+    },
+    {
+      "start": 72.159,
+      "duration": 4.0,
+      "text": "have made a video you can go check it"
+    },
+    {
+      "start": 73.76,
+      "duration": 3.999,
+      "text": "out somewhere here i'll create a card"
+    },
+    {
+      "start": 76.159,
+      "duration": 3.521,
+      "text": "and you can set up a budget because if"
+    },
+    {
+      "start": 77.759,
+      "duration": 4.081,
+      "text": "you don't such a budget you can get a"
+    },
+    {
+      "start": 79.68,
+      "duration": 3.84,
+      "text": "lot of bill something like this i've"
+    },
+    {
+      "start": 81.84,
+      "duration": 4.639,
+      "text": "also made a video where my friend got"
+    },
+    {
+      "start": 83.52,
+      "duration": 5.2,
+      "text": "around one lack of bill for three months"
+    },
+    {
+      "start": 86.479,
+      "duration": 4.401,
+      "text": "which is quite more for which is quite a"
+    },
+    {
+      "start": 88.72,
+      "duration": 3.84,
+      "text": "lot for students like us so please set"
+    },
+    {
+      "start": 90.88,
+      "duration": 4.08,
+      "text": "up budget and then we can go ahead with"
+    },
+    {
+      "start": 92.56,
+      "duration": 4.879,
+      "text": "the hands-on and the learnings so let's"
+    },
+    {
+      "start": 94.96,
+      "duration": 3.839,
+      "text": "talk about aws ac2 ec2 is one of the"
+    },
+    {
+      "start": 97.439,
+      "duration": 3.121,
+      "text": "most popular"
+    },
+    {
+      "start": 98.799,
+      "duration": 3.521,
+      "text": "servers of aws and it's one of the"
+    },
+    {
+      "start": 100.56,
+      "duration": 3.599,
+      "text": "oldest service as well it stands for"
+    },
+    {
+      "start": 102.32,
+      "duration": 3.68,
+      "text": "elastic compute cloud and it is"
+    },
+    {
+      "start": 104.159,
+      "duration": 3.92,
+      "text": "infrastructure as a service so in cloud"
+    },
+    {
+      "start": 106.0,
+      "duration": 4.479,
+      "text": "address infrastructure service platform"
+    },
+    {
+      "start": 108.079,
+      "duration": 3.921,
+      "text": "as a service and software as a service"
+    },
+    {
+      "start": 110.479,
+      "duration": 2.96,
+      "text": "in infrastructure you need to set up"
+    },
+    {
+      "start": 112.0,
+      "duration": 3.52,
+      "text": "everything from the ground up which"
+    },
+    {
+      "start": 113.439,
+      "duration": 4.081,
+      "text": "means you will get only servers in ec2"
+    },
+    {
+      "start": 115.52,
+      "duration": 3.36,
+      "text": "you need to install the operating system"
+    },
+    {
+      "start": 117.52,
+      "duration": 3.12,
+      "text": "you need to install the softwares"
+    },
+    {
+      "start": 118.88,
+      "duration": 2.72,
+      "text": "everything so this is infrastructural"
+    },
+    {
+      "start": 120.64,
+      "duration": 2.96,
+      "text": "service"
+    },
+    {
+      "start": 121.6,
+      "duration": 4.72,
+      "text": "and it mainly consists"
+    },
+    {
+      "start": 123.6,
+      "duration": 4.4,
+      "text": "of renting the ec2 is capability of"
+    },
+    {
+      "start": 126.32,
+      "duration": 3.12,
+      "text": "capable of renting virtual machines so"
+    },
+    {
+      "start": 128.0,
+      "duration": 4.319,
+      "text": "you can get virtual machines of"
+    },
+    {
+      "start": 129.44,
+      "duration": 4.879,
+      "text": "different os in ec2 you can store data"
+    },
+    {
+      "start": 132.319,
+      "duration": 4.081,
+      "text": "on virtual drive so there's a storage"
+    },
+    {
+      "start": 134.319,
+      "duration": 4.241,
+      "text": "known as ebs or elastic block store for"
+    },
+    {
+      "start": 136.4,
+      "duration": 4.559,
+      "text": "ec2 you can distribute load across"
+    },
+    {
+      "start": 138.56,
+      "duration": 4.399,
+      "text": "machines using elastic load balancer"
+    },
+    {
+      "start": 140.959,
+      "duration": 4.321,
+      "text": "and you can also scale the services you"
+    },
+    {
+      "start": 142.959,
+      "duration": 4.161,
+      "text": "can do scale in and scale out using auto"
+    },
+    {
+      "start": 145.28,
+      "duration": 3.36,
+      "text": "scaling groups so knowing ac 2 is"
+    },
+    {
+      "start": 147.12,
+      "duration": 3.52,
+      "text": "fundamental to understand how cloud"
+    },
+    {
+      "start": 148.64,
+      "duration": 4.239,
+      "text": "actually works"
+    },
+    {
+      "start": 150.64,
+      "duration": 4.0,
+      "text": "so using ec2 you have different options"
+    },
+    {
+      "start": 152.879,
+      "duration": 3.44,
+      "text": "you can choose which operating system do"
+    },
+    {
+      "start": 154.64,
+      "duration": 4.239,
+      "text": "you want you do you want linux do you"
+    },
+    {
+      "start": 156.319,
+      "duration": 4.081,
+      "text": "want windows or do you want mac os and"
+    },
+    {
+      "start": 158.879,
+      "duration": 4.241,
+      "text": "you can also choose how much compute"
+    },
+    {
+      "start": 160.4,
+      "duration": 4.64,
+      "text": "power do you want and how much memory do"
+    },
+    {
+      "start": 163.12,
+      "duration": 3.6,
+      "text": "you want so how much cpu you want you"
+    },
+    {
+      "start": 165.04,
+      "duration": 4.08,
+      "text": "how much ram you want you can choose"
+    },
+    {
+      "start": 166.72,
+      "duration": 4.96,
+      "text": "with ec2 while selecting the servers and"
+    },
+    {
+      "start": 169.12,
+      "duration": 4.0,
+      "text": "you can also choose how does uh what"
+    },
+    {
+      "start": 171.68,
+      "duration": 3.199,
+      "text": "which storage option do you want do you"
+    },
+    {
+      "start": 173.12,
+      "duration": 3.92,
+      "text": "want network attached storage like ebs"
+    },
+    {
+      "start": 174.879,
+      "duration": 3.921,
+      "text": "or efs or do you want hardware attached"
+    },
+    {
+      "start": 177.04,
+      "duration": 3.119,
+      "text": "storage like easy to instant store and"
+    },
+    {
+      "start": 178.8,
+      "duration": 3.28,
+      "text": "this will all make sense when we do"
+    },
+    {
+      "start": 180.159,
+      "duration": 2.881,
+      "text": "hands-on in some time"
+    },
+    {
+      "start": 182.08,
+      "duration": 2.879,
+      "text": "so"
+    },
+    {
+      "start": 183.04,
+      "duration": 3.68,
+      "text": "next you can also attach a network card"
+    },
+    {
+      "start": 184.959,
+      "duration": 3.28,
+      "text": "you can set up firewall rules in"
+    },
+    {
+      "start": 186.72,
+      "duration": 3.92,
+      "text": "security group which allows you to set"
+    },
+    {
+      "start": 188.239,
+      "duration": 4.0,
+      "text": "up ports and protocols like which uh"
+    },
+    {
+      "start": 190.64,
+      "duration": 2.879,
+      "text": "which port do you want to allow access"
+    },
+    {
+      "start": 192.239,
+      "duration": 3.521,
+      "text": "to the server"
+    },
+    {
+      "start": 193.519,
+      "duration": 4.961,
+      "text": "that can be set up in this ec2 also you"
+    },
+    {
+      "start": 195.76,
+      "duration": 4.32,
+      "text": "can bootstrap script using ec2 user data"
+    },
+    {
+      "start": 198.48,
+      "duration": 3.6,
+      "text": "so if you want to have some some"
+    },
+    {
+      "start": 200.08,
+      "duration": 4.719,
+      "text": "softwares already installed you can do"
+    },
+    {
+      "start": 202.08,
+      "duration": 4.239,
+      "text": "that using creating a script in linux"
+    },
+    {
+      "start": 204.799,
+      "duration": 3.44,
+      "text": "and it's not so complicated i'll be"
+    },
+    {
+      "start": 206.319,
+      "duration": 2.961,
+      "text": "teaching you that as well so"
+    },
+    {
+      "start": 208.239,
+      "duration": 2.801,
+      "text": "move on"
+    },
+    {
+      "start": 209.28,
+      "duration": 3.28,
+      "text": "what is user data"
+    },
+    {
+      "start": 211.04,
+      "duration": 3.759,
+      "text": "it is possible to bootstrap our"
+    },
+    {
+      "start": 212.56,
+      "duration": 4.16,
+      "text": "instances using an ec2 user data"
+    },
+    {
+      "start": 214.799,
+      "duration": 4.0,
+      "text": "bootstrapping means launching commands"
+    },
+    {
+      "start": 216.72,
+      "duration": 3.12,
+      "text": "when the machine starts so if let's say"
+    },
+    {
+      "start": 218.799,
+      "duration": 3.281,
+      "text": "you want to"
+    },
+    {
+      "start": 219.84,
+      "duration": 3.759,
+      "text": "install git on it and whatever you will"
+    },
+    {
+      "start": 222.08,
+      "duration": 3.28,
+      "text": "do you will create a server and then you"
+    },
+    {
+      "start": 223.599,
+      "duration": 3.521,
+      "text": "will go into the server and run the"
+    },
+    {
+      "start": 225.36,
+      "duration": 3.2,
+      "text": "command forget but if you want to have"
+    },
+    {
+      "start": 227.12,
+      "duration": 4.08,
+      "text": "it pre-configured while launching the"
+    },
+    {
+      "start": 228.56,
+      "duration": 4.399,
+      "text": "instance you can use bootstrapping and"
+    },
+    {
+      "start": 231.2,
+      "duration": 4.08,
+      "text": "you can create a command where it will"
+    },
+    {
+      "start": 232.959,
+      "duration": 3.761,
+      "text": "say that you want to install a git and"
+    },
+    {
+      "start": 235.28,
+      "duration": 3.12,
+      "text": "you want to create folders you want to"
+    },
+    {
+      "start": 236.72,
+      "duration": 4.48,
+      "text": "create files something like that and you"
+    },
+    {
+      "start": 238.4,
+      "duration": 4.559,
+      "text": "can do that using ec2 user data"
+    },
+    {
+      "start": 241.2,
+      "duration": 3.2,
+      "text": "so user data is used to automate boot"
+    },
+    {
+      "start": 242.959,
+      "duration": 2.961,
+      "text": "tasks such as installing updates"
+    },
+    {
+      "start": 244.4,
+      "duration": 3.199,
+      "text": "installing software downloading common"
+    },
+    {
+      "start": 245.92,
+      "duration": 3.039,
+      "text": "files from the internet and anything"
+    },
+    {
+      "start": 247.599,
+      "duration": 2.801,
+      "text": "that you can think of anything that you"
+    },
+    {
+      "start": 248.959,
+      "duration": 3.441,
+      "text": "can write in your scripts can be done"
+    },
+    {
+      "start": 250.4,
+      "duration": 4.08,
+      "text": "using ec2 user data"
+    },
+    {
+      "start": 252.4,
+      "duration": 4.32,
+      "text": "and user data runs with the root user so"
+    },
+    {
+      "start": 254.48,
+      "duration": 5.759,
+      "text": "in linux you have root and other users"
+    },
+    {
+      "start": 256.72,
+      "duration": 3.519,
+      "text": "and it runs on the root user"
+    },
+    {
+      "start": 260.639,
+      "duration": 3.12,
+      "text": "next there are different instance type"
+    },
+    {
+      "start": 262.0,
+      "duration": 4.56,
+      "text": "which are we are going to see but just"
+    },
+    {
+      "start": 263.759,
+      "duration": 6.081,
+      "text": "to name few of them t2 micro t2 x large"
+    },
+    {
+      "start": 266.56,
+      "duration": 5.359,
+      "text": "c5 r5 and m5 so if you can see this"
+    },
+    {
+      "start": 269.84,
+      "duration": 4.24,
+      "text": "difference between the memory and the"
+    },
+    {
+      "start": 271.919,
+      "duration": 4.72,
+      "text": "cpu of all of them so this has the"
+    },
+    {
+      "start": 274.08,
+      "duration": 6.559,
+      "text": "lowest one and one this is these are 16"
+    },
+    {
+      "start": 276.639,
+      "duration": 5.761,
+      "text": "cpus this has 32 memory ram so you can"
+    },
+    {
+      "start": 280.639,
+      "duration": 3.441,
+      "text": "choose any of them according to your use"
+    },
+    {
+      "start": 282.4,
+      "duration": 3.92,
+      "text": "case if you if you're having a simple"
+    },
+    {
+      "start": 284.08,
+      "duration": 4.48,
+      "text": "block you can go with t2 micro or t2x"
+    },
+    {
+      "start": 286.32,
+      "duration": 4.159,
+      "text": "large but you have something like are"
+    },
+    {
+      "start": 288.56,
+      "duration": 4.72,
+      "text": "you hosting gaming servers then you can"
+    },
+    {
+      "start": 290.479,
+      "duration": 4.081,
+      "text": "go for c5 or r5 something like that so"
+    },
+    {
+      "start": 293.28,
+      "duration": 4.16,
+      "text": "depending on your use case you can"
+    },
+    {
+      "start": 294.56,
+      "duration": 5.04,
+      "text": "choose instance types and let's go and"
+    },
+    {
+      "start": 297.44,
+      "duration": 4.72,
+      "text": "do a hands-on so i'm going to do the"
+    },
+    {
+      "start": 299.6,
+      "duration": 2.56,
+      "text": "hands-on"
+    },
+    {
+      "start": 303.52,
+      "duration": 5.119,
+      "text": "so i'm here in my aws aws dashboard and"
+    },
+    {
+      "start": 306.32,
+      "duration": 4.64,
+      "text": "you can find ec2 here in the compute"
+    },
+    {
+      "start": 308.639,
+      "duration": 4.241,
+      "text": "service so in here you can see ec2 or"
+    },
+    {
+      "start": 310.96,
+      "duration": 4.72,
+      "text": "else you can search for ac2 here in the"
+    },
+    {
+      "start": 312.88,
+      "duration": 4.64,
+      "text": "search box so i'm going to search ec2"
+    },
+    {
+      "start": 315.68,
+      "duration": 3.68,
+      "text": "and whenever launching servers first"
+    },
+    {
+      "start": 317.52,
+      "duration": 3.76,
+      "text": "thing you need to see is the region so"
+    },
+    {
+      "start": 319.36,
+      "duration": 3.36,
+      "text": "you want to choose where in which region"
+    },
+    {
+      "start": 321.28,
+      "duration": 3.199,
+      "text": "you want to"
+    },
+    {
+      "start": 322.72,
+      "duration": 3.199,
+      "text": "deploy your servers in so you have"
+    },
+    {
+      "start": 324.479,
+      "duration": 4.56,
+      "text": "different options like a"
+    },
+    {
+      "start": 325.919,
+      "duration": 4.641,
+      "text": "us east us west africa asia pacific"
+    },
+    {
+      "start": 329.039,
+      "duration": 3.361,
+      "text": "anything like that so i'm going to"
+    },
+    {
+      "start": 330.56,
+      "duration": 3.52,
+      "text": "choose the mumbai region because that's"
+    },
+    {
+      "start": 332.4,
+      "duration": 3.84,
+      "text": "the closest to me and i'm going to"
+    },
+    {
+      "start": 334.08,
+      "duration": 3.76,
+      "text": "launch my instance there so to launch an"
+    },
+    {
+      "start": 336.24,
+      "duration": 4.399,
+      "text": "instance you need to click on the"
+    },
+    {
+      "start": 337.84,
+      "duration": 4.88,
+      "text": "instances option here and"
+    },
+    {
+      "start": 340.639,
+      "duration": 3.28,
+      "text": "you get the option here the"
+    },
+    {
+      "start": 342.72,
+      "duration": 2.8,
+      "text": "orange button where you need to click on"
+    },
+    {
+      "start": 343.919,
+      "duration": 3.28,
+      "text": "launch instance"
+    },
+    {
+      "start": 345.52,
+      "duration": 4.48,
+      "text": "and i'm going to type in the name of my"
+    },
+    {
+      "start": 347.199,
+      "duration": 4.321,
+      "text": "instance so my instance"
+    },
+    {
+      "start": 350.0,
+      "duration": 3.759,
+      "text": "and if you see here it lets you choose"
+    },
+    {
+      "start": 351.52,
+      "duration": 5.04,
+      "text": "the application and the os image also"
+    },
+    {
+      "start": 353.759,
+      "duration": 4.56,
+      "text": "known as ami or amazon machine image and"
+    },
+    {
+      "start": 356.56,
+      "duration": 4.24,
+      "text": "you get bunch of options like"
+    },
+    {
+      "start": 358.319,
+      "duration": 5.841,
+      "text": "amazon linux ubuntu windows red hat"
+    },
+    {
+      "start": 360.8,
+      "duration": 5.6,
+      "text": "seuss and mac os a lot of a lot of amis"
+    },
+    {
+      "start": 364.16,
+      "duration": 4.56,
+      "text": "you can also choose machine marketplace"
+    },
+    {
+      "start": 366.4,
+      "duration": 4.239,
+      "text": "emi so if you want to install wordpress"
+    },
+    {
+      "start": 368.72,
+      "duration": 3.52,
+      "text": "you have to first install linux you need"
+    },
+    {
+      "start": 370.639,
+      "duration": 3.761,
+      "text": "to install wordpress you need to set up"
+    },
+    {
+      "start": 372.24,
+      "duration": 4.0,
+      "text": "my sequel and all the other stuff but if"
+    },
+    {
+      "start": 374.4,
+      "duration": 3.76,
+      "text": "you don't want to do that you can just"
+    },
+    {
+      "start": 376.24,
+      "duration": 4.72,
+      "text": "type in wordpress here and in"
+    },
+    {
+      "start": 378.16,
+      "duration": 4.96,
+      "text": "marketplace emis you can get ready-made"
+    },
+    {
+      "start": 380.96,
+      "duration": 3.84,
+      "text": "wordpress you don't need to set it up so"
+    },
+    {
+      "start": 383.12,
+      "duration": 3.6,
+      "text": "you can choose"
+    },
+    {
+      "start": 384.8,
+      "duration": 3.839,
+      "text": "amazon machine image as a base for your"
+    },
+    {
+      "start": 386.72,
+      "duration": 3.919,
+      "text": "ec2 servers so we are going to choose"
+    },
+    {
+      "start": 388.639,
+      "duration": 3.361,
+      "text": "the amazon linux"
+    },
+    {
+      "start": 390.639,
+      "duration": 5.201,
+      "text": "one this is the one that we're going to"
+    },
+    {
+      "start": 392.0,
+      "duration": 3.84,
+      "text": "use so i'm going to select this here"
+    },
+    {
+      "start": 396.8,
+      "duration": 2.48,
+      "text": "all right"
+    },
+    {
+      "start": 402.16,
+      "duration": 4.8,
+      "text": "and now i've selected the amazon let me"
+    },
+    {
+      "start": 404.4,
+      "duration": 5.12,
+      "text": "then amazon linux image the instance"
+    },
+    {
+      "start": 406.96,
+      "duration": 4.4,
+      "text": "type is going to be t2 micro so this is"
+    },
+    {
+      "start": 409.52,
+      "duration": 3.519,
+      "text": "free tier so i'm going to use t2 micro"
+    },
+    {
+      "start": 411.36,
+      "duration": 4.48,
+      "text": "throughout the rows you can choose any"
+    },
+    {
+      "start": 413.039,
+      "duration": 4.241,
+      "text": "one you want but if you choose something"
+    },
+    {
+      "start": 415.84,
+      "duration": 3.44,
+      "text": "else than 80 t2 micro you will be"
+    },
+    {
+      "start": 417.28,
+      "duration": 3.359,
+      "text": "getting charged so i don't want you to"
+    },
+    {
+      "start": 419.28,
+      "duration": 3.919,
+      "text": "get charged so we are going to use the"
+    },
+    {
+      "start": 420.639,
+      "duration": 4.241,
+      "text": "free tier eligible"
+    },
+    {
+      "start": 423.199,
+      "duration": 4.0,
+      "text": "next we have to choose the key pair this"
+    },
+    {
+      "start": 424.88,
+      "duration": 4.8,
+      "text": "keypair is used to ssh into our instance"
+    },
+    {
+      "start": 427.199,
+      "duration": 4.641,
+      "text": "so to ssh means let's let me show you my"
+    },
+    {
+      "start": 429.68,
+      "duration": 4.0,
+      "text": "terminal here so this is in i'm inside"
+    },
+    {
+      "start": 431.84,
+      "duration": 3.759,
+      "text": "my local"
+    },
+    {
+      "start": 433.68,
+      "duration": 4.32,
+      "text": "linux machine i'm inside my local ubuntu"
+    },
+    {
+      "start": 435.599,
+      "duration": 4.88,
+      "text": "machine so if i want to run any command"
+    },
+    {
+      "start": 438.0,
+      "duration": 6.0,
+      "text": "i can go here and i can type ls i can"
+    },
+    {
+      "start": 440.479,
+      "duration": 5.28,
+      "text": "type cd anything i want so i'm inside my"
+    },
+    {
+      "start": 444.0,
+      "duration": 3.599,
+      "text": "ubuntu image and if you want to be"
+    },
+    {
+      "start": 445.759,
+      "duration": 4.0,
+      "text": "inside in your linux image you need a"
+    },
+    {
+      "start": 447.599,
+      "duration": 4.16,
+      "text": "key pair so you can either create a new"
+    },
+    {
+      "start": 449.759,
+      "duration": 3.761,
+      "text": "keypair or you can use the existing one"
+    },
+    {
+      "start": 451.759,
+      "duration": 3.601,
+      "text": "so i already have the keypair but to"
+    },
+    {
+      "start": 453.52,
+      "duration": 3.84,
+      "text": "show you i can i'm going to create a new"
+    },
+    {
+      "start": 455.36,
+      "duration": 4.16,
+      "text": "keyboard so let's click on create a new"
+    },
+    {
+      "start": 457.36,
+      "duration": 4.8,
+      "text": "keypad and you can see select the"
+    },
+    {
+      "start": 459.52,
+      "duration": 4.72,
+      "text": "algorithm as rsa dot pam file if you're"
+    },
+    {
+      "start": 462.16,
+      "duration": 4.319,
+      "text": "using windows you can go ahead and use"
+    },
+    {
+      "start": 464.24,
+      "duration": 4.799,
+      "text": "the dot ppk file windows does not work"
+    },
+    {
+      "start": 466.479,
+      "duration": 5.681,
+      "text": "with dot pam file so"
+    },
+    {
+      "start": 469.039,
+      "duration": 4.72,
+      "text": "let's give this key a name so my key"
+    },
+    {
+      "start": 472.16,
+      "duration": 5.599,
+      "text": "and i'm going to create a new key pair"
+    },
+    {
+      "start": 473.759,
+      "duration": 6.16,
+      "text": "and save it in my desktop folder so save"
+    },
+    {
+      "start": 477.759,
+      "duration": 4.56,
+      "text": "i have my key downloaded here and i'm"
+    },
+    {
+      "start": 479.919,
+      "duration": 4.321,
+      "text": "going to go next you can choose network"
+    },
+    {
+      "start": 482.319,
+      "duration": 3.761,
+      "text": "settings in which vpc do you want to"
+    },
+    {
+      "start": 484.24,
+      "duration": 4.079,
+      "text": "launch this instance in which subnet do"
+    },
+    {
+      "start": 486.08,
+      "duration": 3.6,
+      "text": "you want to launch this instance and a"
+    },
+    {
+      "start": 488.319,
+      "duration": 3.361,
+      "text": "lot more stuff you can also choose"
+    },
+    {
+      "start": 489.68,
+      "duration": 3.519,
+      "text": "security groups so security groups are"
+    },
+    {
+      "start": 491.68,
+      "duration": 3.84,
+      "text": "like firewalls which lets you choose"
+    },
+    {
+      "start": 493.199,
+      "duration": 4.72,
+      "text": "which protocol or which port you want to"
+    },
+    {
+      "start": 495.52,
+      "duration": 4.799,
+      "text": "allow so let's add a rule i'm going to"
+    },
+    {
+      "start": 497.919,
+      "duration": 4.72,
+      "text": "add a rule name as http"
+    },
+    {
+      "start": 500.319,
+      "duration": 5.28,
+      "text": "so where is http"
+    },
+    {
+      "start": 502.639,
+      "duration": 5.12,
+      "text": "here's http http the protocol is tcp"
+    },
+    {
+      "start": 505.599,
+      "duration": 4.241,
+      "text": "port number is 80 and we have to choose"
+    },
+    {
+      "start": 507.759,
+      "duration": 3.681,
+      "text": "the source type so we can choose from"
+    },
+    {
+      "start": 509.84,
+      "duration": 3.679,
+      "text": "anywhere which means anyone on the"
+    },
+    {
+      "start": 511.44,
+      "duration": 4.959,
+      "text": "internet can access our website or"
+    },
+    {
+      "start": 513.519,
+      "duration": 5.52,
+      "text": "access our instance using http"
+    },
+    {
+      "start": 516.399,
+      "duration": 4.241,
+      "text": "so let's go ahead and choose the storage"
+    },
+    {
+      "start": 519.039,
+      "duration": 4.401,
+      "text": "you can add more storage if you want but"
+    },
+    {
+      "start": 520.64,
+      "duration": 4.08,
+      "text": "i think 8 gb is sufficient and let's go"
+    },
+    {
+      "start": 523.44,
+      "duration": 3.28,
+      "text": "ahead and add"
+    },
+    {
+      "start": 524.72,
+      "duration": 4.0,
+      "text": "user data so for user data you need to"
+    },
+    {
+      "start": 526.72,
+      "duration": 3.679,
+      "text": "click on advanced details and you need"
+    },
+    {
+      "start": 528.72,
+      "duration": 3.119,
+      "text": "to scroll down so here's the section"
+    },
+    {
+      "start": 530.399,
+      "duration": 3.281,
+      "text": "where you need to add in the user in the"
+    },
+    {
+      "start": 531.839,
+      "duration": 2.881,
+      "text": "data section so this is user data this"
+    },
+    {
+      "start": 533.68,
+      "duration": 3.2,
+      "text": "is what the"
+    },
+    {
+      "start": 534.72,
+      "duration": 4.64,
+      "text": "script linux script looked like so this"
+    },
+    {
+      "start": 536.88,
+      "duration": 4.959,
+      "text": "is uh shebang and you need to start with"
+    },
+    {
+      "start": 539.36,
+      "duration": 4.159,
+      "text": "slash shebang slash pin slash bash so"
+    },
+    {
+      "start": 541.839,
+      "duration": 3.521,
+      "text": "this is installing"
+    },
+    {
+      "start": 543.519,
+      "duration": 4.0,
+      "text": "updating all the packages installing"
+    },
+    {
+      "start": 545.36,
+      "duration": 4.479,
+      "text": "apache web server starting apache web"
+    },
+    {
+      "start": 547.519,
+      "duration": 4.801,
+      "text": "server and enabling it now we have the"
+    },
+    {
+      "start": 549.839,
+      "duration": 4.56,
+      "text": "message to put in inside this directory"
+    },
+    {
+      "start": 552.32,
+      "duration": 6.0,
+      "text": "that is"
+    },
+    {
+      "start": 554.399,
+      "duration": 5.44,
+      "text": "world www.html index.html so we want our"
+    },
+    {
+      "start": 558.32,
+      "duration": 3.6,
+      "text": "instance to have all these things when"
+    },
+    {
+      "start": 559.839,
+      "duration": 3.841,
+      "text": "we when it is running so i'm going to"
+    },
+    {
+      "start": 561.92,
+      "duration": 4.56,
+      "text": "use this user data and i'm going to"
+    },
+    {
+      "start": 563.68,
+      "duration": 4.96,
+      "text": "click on launch instance here"
+    },
+    {
+      "start": 566.48,
+      "duration": 4.56,
+      "text": "it is launching and after some time you"
+    },
+    {
+      "start": 568.64,
+      "duration": 4.8,
+      "text": "can see it's it has a message of success"
+    },
+    {
+      "start": 571.04,
+      "duration": 4.96,
+      "text": "successfully initiated launch of amazon"
+    },
+    {
+      "start": 573.44,
+      "duration": 3.76,
+      "text": "of instance so i'm going to click here"
+    },
+    {
+      "start": 576.0,
+      "duration": 3.6,
+      "text": "and will"
+    },
+    {
+      "start": 577.2,
+      "duration": 4.319,
+      "text": "bring me to the dashboard so here it is"
+    },
+    {
+      "start": 579.6,
+      "duration": 3.44,
+      "text": "a pending state but still you can see"
+    },
+    {
+      "start": 581.519,
+      "duration": 3.44,
+      "text": "some things like"
+    },
+    {
+      "start": 583.04,
+      "duration": 3.68,
+      "text": "like you can see the instance id you can"
+    },
+    {
+      "start": 584.959,
+      "duration": 4.481,
+      "text": "see the public ip associated to this"
+    },
+    {
+      "start": 586.72,
+      "duration": 4.799,
+      "text": "instance you can see private ip the ipv6"
+    },
+    {
+      "start": 589.44,
+      "duration": 4.399,
+      "text": "address is still going to come instant"
+    },
+    {
+      "start": 591.519,
+      "duration": 3.76,
+      "text": "state is pending the public ipv4 and all"
+    },
+    {
+      "start": 593.839,
+      "duration": 3.761,
+      "text": "the other stuff the"
+    },
+    {
+      "start": 595.279,
+      "duration": 4.161,
+      "text": "instance type is t2 micro"
+    },
+    {
+      "start": 597.6,
+      "duration": 3.44,
+      "text": "and we can scroll down where"
+    },
+    {
+      "start": 599.44,
+      "duration": 4.32,
+      "text": "where is this instance located in this"
+    },
+    {
+      "start": 601.04,
+      "duration": 4.08,
+      "text": "vpc id in this subnet"
+    },
+    {
+      "start": 603.76,
+      "duration": 3.04,
+      "text": "all of the different stuff and you can"
+    },
+    {
+      "start": 605.12,
+      "duration": 3.279,
+      "text": "go here security where you can see which"
+    },
+    {
+      "start": 606.8,
+      "duration": 3.12,
+      "text": "security group is attached to it what"
+    },
+    {
+      "start": 608.399,
+      "duration": 4.241,
+      "text": "are the approvals uh what are the"
+    },
+    {
+      "start": 609.92,
+      "duration": 7.44,
+      "text": "security groups so it has port 22 that"
+    },
+    {
+      "start": 612.64,
+      "duration": 6.08,
+      "text": "is ssh and port 80 enabled from anywhere"
+    },
+    {
+      "start": 617.36,
+      "duration": 4.08,
+      "text": "right"
+    },
+    {
+      "start": 618.72,
+      "duration": 4.559,
+      "text": "and let's wait for it to come online and"
+    },
+    {
+      "start": 621.44,
+      "duration": 4.0,
+      "text": "it is still in initially you have to"
+    },
+    {
+      "start": 623.279,
+      "duration": 3.601,
+      "text": "wait for status check to come and status"
+    },
+    {
+      "start": 625.44,
+      "duration": 4.56,
+      "text": "checks are these two checks system"
+    },
+    {
+      "start": 626.88,
+      "duration": 4.72,
+      "text": "status 6 and instant status checks so"
+    },
+    {
+      "start": 630.0,
+      "duration": 3.68,
+      "text": "once you have launched that we launched"
+    },
+    {
+      "start": 631.6,
+      "duration": 4.08,
+      "text": "your instance you can you have options"
+    },
+    {
+      "start": 633.68,
+      "duration": 4.0,
+      "text": "to either stop it you have options to"
+    },
+    {
+      "start": 635.68,
+      "duration": 3.839,
+      "text": "reboot it your options to terminate it"
+    },
+    {
+      "start": 637.68,
+      "duration": 3.52,
+      "text": "as well so if you don't want it anymore"
+    },
+    {
+      "start": 639.519,
+      "duration": 3.041,
+      "text": "you can go ahead and terminate it but"
+    },
+    {
+      "start": 641.2,
+      "duration": 2.879,
+      "text": "once you dominate you can lose it"
+    },
+    {
+      "start": 642.56,
+      "duration": 3.279,
+      "text": "completely you cannot have the data"
+    },
+    {
+      "start": 644.079,
+      "duration": 3.76,
+      "text": "again but if you stop it you can start"
+    },
+    {
+      "start": 645.839,
+      "duration": 4.56,
+      "text": "it and have the same data that you have"
+    },
+    {
+      "start": 647.839,
+      "duration": 6.24,
+      "text": "installed so let's see if it is launched"
+    },
+    {
+      "start": 650.399,
+      "duration": 5.281,
+      "text": "or not it is still initializing"
+    },
+    {
+      "start": 654.079,
+      "duration": 3.281,
+      "text": "and you have also different options like"
+    },
+    {
+      "start": 655.68,
+      "duration": 3.68,
+      "text": "actions and actions you can either view"
+    },
+    {
+      "start": 657.36,
+      "duration": 4.64,
+      "text": "details connect to this instance from"
+    },
+    {
+      "start": 659.36,
+      "duration": 4.24,
+      "text": "ssh you can do stuff like"
+    },
+    {
+      "start": 662.0,
+      "duration": 3.519,
+      "text": "uh change instance type if you don't"
+    },
+    {
+      "start": 663.6,
+      "duration": 4.08,
+      "text": "want it from t to micro you can make it"
+    },
+    {
+      "start": 665.519,
+      "duration": 4.081,
+      "text": "to large or c5 latch anything that you"
+    },
+    {
+      "start": 667.68,
+      "duration": 3.52,
+      "text": "want you can change it here you can edit"
+    },
+    {
+      "start": 669.6,
+      "duration": 3.2,
+      "text": "user data the script that you have put"
+    },
+    {
+      "start": 671.2,
+      "duration": 4.079,
+      "text": "in you can edit that as well you can"
+    },
+    {
+      "start": 672.8,
+      "duration": 4.4,
+      "text": "manage tags and in networking section"
+    },
+    {
+      "start": 675.279,
+      "duration": 4.081,
+      "text": "you can attach network interface so"
+    },
+    {
+      "start": 677.2,
+      "duration": 4.0,
+      "text": "network interface gives you public ip or"
+    },
+    {
+      "start": 679.36,
+      "duration": 3.599,
+      "text": "private ip and you don't need to know"
+    },
+    {
+      "start": 681.2,
+      "duration": 3.92,
+      "text": "about that for now i'm going to teach"
+    },
+    {
+      "start": 682.959,
+      "duration": 4.161,
+      "text": "you that in next session maybe and in"
+    },
+    {
+      "start": 685.12,
+      "duration": 4.959,
+      "text": "security group you can attach security"
+    },
+    {
+      "start": 687.12,
+      "duration": 5.2,
+      "text": "group or you can also attach iem rule so"
+    },
+    {
+      "start": 690.079,
+      "duration": 4.0,
+      "text": "iem rule if you have seen the video of"
+    },
+    {
+      "start": 692.32,
+      "duration": 3.84,
+      "text": "about im if not you can check out the"
+    },
+    {
+      "start": 694.079,
+      "duration": 5.041,
+      "text": "iem video i'm going to link it here"
+    },
+    {
+      "start": 696.16,
+      "duration": 5.119,
+      "text": "somewhere and im rules are permissions"
+    },
+    {
+      "start": 699.12,
+      "duration": 4.08,
+      "text": "granted to any service so that they can"
+    },
+    {
+      "start": 701.279,
+      "duration": 4.24,
+      "text": "do some tasks for you"
+    },
+    {
+      "start": 703.2,
+      "duration": 3.92,
+      "text": "so let's see if we have it so i'm going"
+    },
+    {
+      "start": 705.519,
+      "duration": 2.88,
+      "text": "to copy this"
+    },
+    {
+      "start": 707.12,
+      "duration": 2.399,
+      "text": "in"
+    },
+    {
+      "start": 708.399,
+      "duration": 1.921,
+      "text": "new tab"
+    },
+    {
+      "start": 709.519,
+      "duration": 2.721,
+      "text": "and"
+    },
+    {
+      "start": 710.32,
+      "duration": 4.4,
+      "text": "i should see the message"
+    },
+    {
+      "start": 712.24,
+      "duration": 4.8,
+      "text": "of whatever was described in the user"
+    },
+    {
+      "start": 714.72,
+      "duration": 3.359,
+      "text": "data so let's wait"
+    },
+    {
+      "start": 717.04,
+      "duration": 4.479,
+      "text": "and see"
+    },
+    {
+      "start": 718.079,
+      "duration": 5.76,
+      "text": "if it is actually showing or not"
+    },
+    {
+      "start": 721.519,
+      "duration": 4.32,
+      "text": "so i have to remove this s here because"
+    },
+    {
+      "start": 723.839,
+      "duration": 4.24,
+      "text": "i don't have ssl enabled"
+    },
+    {
+      "start": 725.839,
+      "duration": 5.12,
+      "text": "it is going to be http only so i'm going"
+    },
+    {
+      "start": 728.079,
+      "duration": 4.481,
+      "text": "to and as you can see the we can see the"
+    },
+    {
+      "start": 730.959,
+      "duration": 3.921,
+      "text": "message that was described in the user"
+    },
+    {
+      "start": 732.56,
+      "duration": 4.56,
+      "text": "data so if you see the user data again"
+    },
+    {
+      "start": 734.88,
+      "duration": 4.959,
+      "text": "so this was the message hello world from"
+    },
+    {
+      "start": 737.12,
+      "duration": 5.279,
+      "text": "host name and it was in the index.html"
+    },
+    {
+      "start": 739.839,
+      "duration": 3.761,
+      "text": "page so we can see that clearly on our"
+    },
+    {
+      "start": 742.399,
+      "duration": 3.761,
+      "text": "screen"
+    },
+    {
+      "start": 743.6,
+      "duration": 4.799,
+      "text": "on our web page which means our instance"
+    },
+    {
+      "start": 746.16,
+      "duration": 3.359,
+      "text": "has correctly configured with the user"
+    },
+    {
+      "start": 748.399,
+      "duration": 2.721,
+      "text": "data"
+    },
+    {
+      "start": 749.519,
+      "duration": 3.521,
+      "text": "so let's say you want you want to make"
+    },
+    {
+      "start": 751.12,
+      "duration": 4.159,
+      "text": "some changes and you have to do some"
+    },
+    {
+      "start": 753.04,
+      "duration": 5.359,
+      "text": "changes so if you're in windows you have"
+    },
+    {
+      "start": 755.279,
+      "duration": 4.24,
+      "text": "to download a software name as party"
+    },
+    {
+      "start": 758.399,
+      "duration": 2.641,
+      "text": "or"
+    },
+    {
+      "start": 759.519,
+      "duration": 3.681,
+      "text": "this is what patty looks like this is a"
+    },
+    {
+      "start": 761.04,
+      "duration": 3.919,
+      "text": "software or if you're in linux like me"
+    },
+    {
+      "start": 763.2,
+      "duration": 3.68,
+      "text": "you can just open your terminal and you"
+    },
+    {
+      "start": 764.959,
+      "duration": 5.361,
+      "text": "can put in the ssh command and put in"
+    },
+    {
+      "start": 766.88,
+      "duration": 5.04,
+      "text": "the key with the ip address and you can"
+    },
+    {
+      "start": 770.32,
+      "duration": 4.16,
+      "text": "get into your instance and make any"
+    },
+    {
+      "start": 771.92,
+      "duration": 4.32,
+      "text": "changes maybe you can download stuff so"
+    },
+    {
+      "start": 774.48,
+      "duration": 3.12,
+      "text": "or else you have a different option so"
+    },
+    {
+      "start": 776.24,
+      "duration": 3.279,
+      "text": "i'm going to select the instance click"
+    },
+    {
+      "start": 777.6,
+      "duration": 4.4,
+      "text": "on connect and you have options like ac"
+    },
+    {
+      "start": 779.519,
+      "duration": 5.201,
+      "text": "to insert connect session manager ssh"
+    },
+    {
+      "start": 782.0,
+      "duration": 4.48,
+      "text": "client or ec2 serial console so if you"
+    },
+    {
+      "start": 784.72,
+      "duration": 3.52,
+      "text": "don't want to download any third-party"
+    },
+    {
+      "start": 786.48,
+      "duration": 3.84,
+      "text": "apps you can select easy to instance"
+    },
+    {
+      "start": 788.24,
+      "duration": 3.68,
+      "text": "connect and click on connect but just"
+    },
+    {
+      "start": 790.32,
+      "duration": 3.6,
+      "text": "remember that this is limited to only"
+    },
+    {
+      "start": 791.92,
+      "duration": 4.32,
+      "text": "some of the instances like only to"
+    },
+    {
+      "start": 793.92,
+      "duration": 4.719,
+      "text": "amazon linux or ubuntu you cannot do it"
+    },
+    {
+      "start": 796.24,
+      "duration": 3.92,
+      "text": "with windows or any other instance so"
+    },
+    {
+      "start": 798.639,
+      "duration": 3.361,
+      "text": "i'm going to click on connect here and i"
+    },
+    {
+      "start": 800.16,
+      "duration": 3.76,
+      "text": "should be inside my"
+    },
+    {
+      "start": 802.0,
+      "duration": 3.76,
+      "text": "amazon instance so here is the name of"
+    },
+    {
+      "start": 803.92,
+      "duration": 4.96,
+      "text": "the instance and i am inside my instance"
+    },
+    {
+      "start": 805.76,
+      "duration": 4.72,
+      "text": "so if i do some command like sudo apt"
+    },
+    {
+      "start": 808.88,
+      "duration": 3.519,
+      "text": "update"
+    },
+    {
+      "start": 810.48,
+      "duration": 5.12,
+      "text": "sorry pseudo um update this is amazon"
+    },
+    {
+      "start": 812.399,
+      "duration": 4.721,
+      "text": "linux say not ubuntu"
+    },
+    {
+      "start": 815.6,
+      "duration": 3.359,
+      "text": "so dm update and it is updating the"
+    },
+    {
+      "start": 817.12,
+      "duration": 4.32,
+      "text": "package and if you want to delete"
+    },
+    {
+      "start": 818.959,
+      "duration": 5.201,
+      "text": "install let's say git so sudo yum"
+    },
+    {
+      "start": 821.44,
+      "duration": 2.72,
+      "text": "install get"
+    },
+    {
+      "start": 824.399,
+      "duration": 4.081,
+      "text": "and it's going to go ahead and install"
+    },
+    {
+      "start": 826.16,
+      "duration": 4.56,
+      "text": "ticket so this is how you go into the"
+    },
+    {
+      "start": 828.48,
+      "duration": 3.52,
+      "text": "server download stuff you can pretty"
+    },
+    {
+      "start": 830.72,
+      "duration": 2.32,
+      "text": "much do anything that you want if you"
+    },
+    {
+      "start": 832.0,
+      "duration": 1.92,
+      "text": "want to"
+    },
+    {
+      "start": 833.04,
+      "duration": 2.799,
+      "text": "have a"
+    },
+    {
+      "start": 833.92,
+      "duration": 4.0,
+      "text": "wordpress website you can install"
+    },
+    {
+      "start": 835.839,
+      "duration": 4.56,
+      "text": "wordpress you can configure mysql but"
+    },
+    {
+      "start": 837.92,
+      "duration": 3.599,
+      "text": "this is how you launch an instance"
+    },
+    {
+      "start": 840.399,
+      "duration": 4.161,
+      "text": "right so i've taught you everything"
+    },
+    {
+      "start": 841.519,
+      "duration": 4.641,
+      "text": "about instance how to launch one how to"
+    },
+    {
+      "start": 844.56,
+      "duration": 4.0,
+      "text": "get into the instance how to download"
+    },
+    {
+      "start": 846.16,
+      "duration": 3.84,
+      "text": "softwares and there's something more i"
+    },
+    {
+      "start": 848.56,
+      "duration": 2.24,
+      "text": "want to tell you about so if you see"
+    },
+    {
+      "start": 850.0,
+      "duration": 2.48,
+      "text": "here"
+    },
+    {
+      "start": 850.8,
+      "duration": 5.719,
+      "text": "the ip address just note down the ip"
+    },
+    {
+      "start": 852.48,
+      "duration": 4.039,
+      "text": "address it says 13.2332.13"
+    },
+    {
+      "start": 857.199,
+      "duration": 4.241,
+      "text": "then we have it here so if i stop this"
+    },
+    {
+      "start": 859.44,
+      "duration": 3.519,
+      "text": "instance now let me stop this instance"
+    },
+    {
+      "start": 861.44,
+      "duration": 4.0,
+      "text": "you can stop the instance by selecting"
+    },
+    {
+      "start": 862.959,
+      "duration": 4.481,
+      "text": "it instant state and stop it so i'm"
+    },
+    {
+      "start": 865.44,
+      "duration": 4.32,
+      "text": "going to stop this instance"
+    },
+    {
+      "start": 867.44,
+      "duration": 4.639,
+      "text": "and it is successfully stopped let's"
+    },
+    {
+      "start": 869.76,
+      "duration": 3.759,
+      "text": "refresh it so it is stopping it is in"
+    },
+    {
+      "start": 872.079,
+      "duration": 3.44,
+      "text": "stopping state and we will wait for it"
+    },
+    {
+      "start": 873.519,
+      "duration": 5.76,
+      "text": "to completely stop"
+    },
+    {
+      "start": 875.519,
+      "duration": 5.68,
+      "text": "and just remember that this ip is uh"
+    },
+    {
+      "start": 879.279,
+      "duration": 4.081,
+      "text": "now going to be changed"
+    },
+    {
+      "start": 881.199,
+      "duration": 4.551,
+      "text": "and i'll show you how"
+    },
+    {
+      "start": 883.36,
+      "duration": 5.449,
+      "text": "so it is still in stopping state"
+    },
+    {
+      "start": 885.75,
+      "duration": 3.059,
+      "text": "[Music]"
+    },
+    {
+      "start": 898.33,
+      "duration": 3.059,
+      "text": "[Music]"
+    },
+    {
+      "start": 907.36,
+      "duration": 3.68,
+      "text": "so now it has been completely stopped"
+    },
+    {
+      "start": 909.36,
+      "duration": 4.08,
+      "text": "and if you see the public ip address has"
+    },
+    {
+      "start": 911.04,
+      "duration": 5.4,
+      "text": "been gone and the earlier one was"
+    },
+    {
+      "start": 913.44,
+      "duration": 3.0,
+      "text": "13.232.137.213"
+    },
+    {
+      "start": 916.56,
+      "duration": 5.6,
+      "text": "now if i start the instance again so"
+    },
+    {
+      "start": 920.56,
+      "duration": 3.36,
+      "text": "i should have the same ip address"
+    },
+    {
+      "start": 922.16,
+      "duration": 3.52,
+      "text": "because i have used it in my domain name"
+    },
+    {
+      "start": 923.92,
+      "duration": 3.44,
+      "text": "let's say if you have set it up"
+    },
+    {
+      "start": 925.68,
+      "duration": 4.079,
+      "text": "if you have set up your website you want"
+    },
+    {
+      "start": 927.36,
+      "duration": 4.32,
+      "text": "the ip address to be same right if it is"
+    },
+    {
+      "start": 929.759,
+      "duration": 3.76,
+      "text": "not same your site will be down so i"
+    },
+    {
+      "start": 931.68,
+      "duration": 3.519,
+      "text": "want to have the same ip address but"
+    },
+    {
+      "start": 933.519,
+      "duration": 4.481,
+      "text": "that's not the case with the instance if"
+    },
+    {
+      "start": 935.199,
+      "duration": 5.921,
+      "text": "you start stop it and start it again the"
+    },
+    {
+      "start": 938.0,
+      "duration": 5.279,
+      "text": "ip is going to be changed so let's see"
+    },
+    {
+      "start": 941.12,
+      "duration": 5.44,
+      "text": "it it's still in pending state now and"
+    },
+    {
+      "start": 943.279,
+      "duration": 4.8,
+      "text": "we should see an ip address here"
+    },
+    {
+      "start": 946.56,
+      "duration": 3.36,
+      "text": "so the private one is going to be the"
+    },
+    {
+      "start": 948.079,
+      "duration": 4.161,
+      "text": "same because uh it does not change the"
+    },
+    {
+      "start": 949.92,
+      "duration": 3.839,
+      "text": "private one but you can see that this"
+    },
+    {
+      "start": 952.24,
+      "duration": 4.48,
+      "text": "one is changed now so this is"
+    },
+    {
+      "start": 953.759,
+      "duration": 7.241,
+      "text": "13.253.153.164."
+    },
+    {
+      "start": 956.72,
+      "duration": 4.28,
+      "text": "and the earlier one was 13.232.137.213"
+    },
+    {
+      "start": 961.759,
+      "duration": 3.921,
+      "text": "and this is very big problem if you have"
+    },
+    {
+      "start": 964.079,
+      "duration": 3.76,
+      "text": "your website"
+    },
+    {
+      "start": 965.68,
+      "duration": 4.399,
+      "text": "directed to this ip address if it is"
+    },
+    {
+      "start": 967.839,
+      "duration": 4.321,
+      "text": "changed you cannot access this right so"
+    },
+    {
+      "start": 970.079,
+      "duration": 4.161,
+      "text": "you need to have a static ip address and"
+    },
+    {
+      "start": 972.16,
+      "duration": 5.599,
+      "text": "that can be done using a service that is"
+    },
+    {
+      "start": 974.24,
+      "duration": 6.08,
+      "text": "known as elastic ip address in aws so"
+    },
+    {
+      "start": 977.759,
+      "duration": 4.08,
+      "text": "you can have aws you can have static ip"
+    },
+    {
+      "start": 980.32,
+      "duration": 3.36,
+      "text": "address so that your ip does not change"
+    },
+    {
+      "start": 981.839,
+      "duration": 3.92,
+      "text": "even though your instance is started or"
+    },
+    {
+      "start": 983.68,
+      "duration": 3.279,
+      "text": "stopped so to uh to have a static ip"
+    },
+    {
+      "start": 985.759,
+      "duration": 3.601,
+      "text": "address you can need to click on this"
+    },
+    {
+      "start": 986.959,
+      "duration": 5.521,
+      "text": "elastic ip option click on allocate"
+    },
+    {
+      "start": 989.36,
+      "duration": 5.36,
+      "text": "elastic ips and you need to"
+    },
+    {
+      "start": 992.48,
+      "duration": 4.64,
+      "text": "choose amazon pool of ipv4 addresses and"
+    },
+    {
+      "start": 994.72,
+      "duration": 4.08,
+      "text": "allocate you can put tags you want but"
+    },
+    {
+      "start": 997.12,
+      "duration": 4.48,
+      "text": "it's so totally optional so i'm going to"
+    },
+    {
+      "start": 998.8,
+      "duration": 4.64,
+      "text": "skip this and allocate ip address so i"
+    },
+    {
+      "start": 1001.6,
+      "duration": 4.08,
+      "text": "can as you can see i have an ip address"
+    },
+    {
+      "start": 1003.44,
+      "duration": 5.04,
+      "text": "here and the thing about elastic ip"
+    },
+    {
+      "start": 1005.68,
+      "duration": 5.2,
+      "text": "address is if you allocate it but do not"
+    },
+    {
+      "start": 1008.48,
+      "duration": 4.0,
+      "text": "use it then you are going to charge but"
+    },
+    {
+      "start": 1010.88,
+      "duration": 3.84,
+      "text": "if you use it then you are not going to"
+    },
+    {
+      "start": 1012.48,
+      "duration": 4.88,
+      "text": "be charged so once it is allocated you"
+    },
+    {
+      "start": 1014.72,
+      "duration": 4.96,
+      "text": "need to attach it to the instance so i'm"
+    },
+    {
+      "start": 1017.36,
+      "duration": 4.399,
+      "text": "going to click on associate elastic ip"
+    },
+    {
+      "start": 1019.68,
+      "duration": 3.76,
+      "text": "address here and i'm going to select the"
+    },
+    {
+      "start": 1021.759,
+      "duration": 3.68,
+      "text": "instance that is running"
+    },
+    {
+      "start": 1023.44,
+      "duration": 3.92,
+      "text": "and click on associate so now you should"
+    },
+    {
+      "start": 1025.439,
+      "duration": 3.6,
+      "text": "see that the instance ip should be"
+    },
+    {
+      "start": 1027.36,
+      "duration": 3.839,
+      "text": "changed to this and i'm going to click"
+    },
+    {
+      "start": 1029.039,
+      "duration": 3.841,
+      "text": "on associate let's go back to our"
+    },
+    {
+      "start": 1031.199,
+      "duration": 3.521,
+      "text": "instance"
+    },
+    {
+      "start": 1032.88,
+      "duration": 4.4,
+      "text": "and select the instance to see that the"
+    },
+    {
+      "start": 1034.72,
+      "duration": 5.04,
+      "text": "ip has now been changed to a static ip"
+    },
+    {
+      "start": 1037.28,
+      "duration": 4.159,
+      "text": "and even if i stop it or start it again"
+    },
+    {
+      "start": 1039.76,
+      "duration": 3.279,
+      "text": "the ip is still going to be same so"
+    },
+    {
+      "start": 1041.439,
+      "duration": 3.52,
+      "text": "let's show you again so i'm going to"
+    },
+    {
+      "start": 1043.039,
+      "duration": 4.4,
+      "text": "stop this instance now and wait for it"
+    },
+    {
+      "start": 1044.959,
+      "duration": 4.96,
+      "text": "to be stopped completely and after this"
+    },
+    {
+      "start": 1047.439,
+      "duration": 6.401,
+      "text": "i should have uh i should have the same"
+    },
+    {
+      "start": 1049.919,
+      "duration": 3.921,
+      "text": "ip because i'm using elastic ips now"
+    },
+    {
+      "start": 1054.88,
+      "duration": 3.2,
+      "text": "so we talked about the launch we have"
+    },
+    {
+      "start": 1056.32,
+      "duration": 4.08,
+      "text": "launched our first server using aws"
+    },
+    {
+      "start": 1058.08,
+      "duration": 4.719,
+      "text": "console we have got the first high level"
+    },
+    {
+      "start": 1060.4,
+      "duration": 4.32,
+      "text": "approach on what aws parameters are what"
+    },
+    {
+      "start": 1062.799,
+      "duration": 3.841,
+      "text": "is amazon id"
+    },
+    {
+      "start": 1064.72,
+      "duration": 4.959,
+      "text": "you have got all the idea on and the"
+    },
+    {
+      "start": 1066.64,
+      "duration": 5.52,
+      "text": "details about that here and we also saw"
+    },
+    {
+      "start": 1069.679,
+      "duration": 4.081,
+      "text": "how to create and launch a web server so"
+    },
+    {
+      "start": 1072.16,
+      "duration": 3.44,
+      "text": "we created this one this is our web"
+    },
+    {
+      "start": 1073.76,
+      "duration": 3.84,
+      "text": "server a passive web server with this"
+    },
+    {
+      "start": 1075.6,
+      "duration": 4.24,
+      "text": "message on the website"
+    },
+    {
+      "start": 1077.6,
+      "duration": 4.319,
+      "text": "and we have learned how to start stop"
+    },
+    {
+      "start": 1079.84,
+      "duration": 4.079,
+      "text": "and terminate our instance so let's go"
+    },
+    {
+      "start": 1081.919,
+      "duration": 5.521,
+      "text": "ahead and see if the ip is changed or"
+    },
+    {
+      "start": 1083.919,
+      "duration": 5.201,
+      "text": "not so i'm back here in my instance"
+    },
+    {
+      "start": 1087.44,
+      "duration": 3.599,
+      "text": "and it stopped completely let's start it"
+    },
+    {
+      "start": 1089.12,
+      "duration": 3.76,
+      "text": "again so i'm going to start it here and"
+    },
+    {
+      "start": 1091.039,
+      "duration": 5.361,
+      "text": "i'm going to close all the unnecessary"
+    },
+    {
+      "start": 1092.88,
+      "duration": 5.84,
+      "text": "tabs so closing this"
+    },
+    {
+      "start": 1096.4,
+      "duration": 4.24,
+      "text": "this and this and also closing this so"
+    },
+    {
+      "start": 1098.72,
+      "duration": 3.68,
+      "text": "this is party is going to be a ssh"
+    },
+    {
+      "start": 1100.64,
+      "duration": 3.44,
+      "text": "software for windows"
+    },
+    {
+      "start": 1102.4,
+      "duration": 3.2,
+      "text": "and if you have any questions or any"
+    },
+    {
+      "start": 1104.08,
+      "duration": 3.2,
+      "text": "doubts on how to do this you can let me"
+    },
+    {
+      "start": 1105.6,
+      "duration": 4.16,
+      "text": "know in the comment section and maybe"
+    },
+    {
+      "start": 1107.28,
+      "duration": 4.8,
+      "text": "i'll create a new video on how to ssh"
+    },
+    {
+      "start": 1109.76,
+      "duration": 4.24,
+      "text": "with putty in windows"
+    },
+    {
+      "start": 1112.08,
+      "duration": 3.36,
+      "text": "but you can always go and use the"
+    },
+    {
+      "start": 1114.0,
+      "duration": 3.76,
+      "text": "instance connect option which is very"
+    },
+    {
+      "start": 1115.44,
+      "duration": 4.239,
+      "text": "easy without setting up any third party"
+    },
+    {
+      "start": 1117.76,
+      "duration": 3.84,
+      "text": "application so it's still an"
+    },
+    {
+      "start": 1119.679,
+      "duration": 4.481,
+      "text": "initializing phase and you can see that"
+    },
+    {
+      "start": 1121.6,
+      "duration": 5.28,
+      "text": "the instance ip is still the same it has"
+    },
+    {
+      "start": 1124.16,
+      "duration": 4.879,
+      "text": "not changed because we have used elastic"
+    },
+    {
+      "start": 1126.88,
+      "duration": 4.64,
+      "text": "ip so this is how you can have a static"
+    },
+    {
+      "start": 1129.039,
+      "duration": 3.281,
+      "text": "ip and uh"
+    },
+    {
+      "start": 1131.52,
+      "duration": 2.159,
+      "text": "and"
+    },
+    {
+      "start": 1132.32,
+      "duration": 3.92,
+      "text": "you can have the same ip even though"
+    },
+    {
+      "start": 1133.679,
+      "duration": 3.921,
+      "text": "your instance is stopped"
+    },
+    {
+      "start": 1136.24,
+      "duration": 3.04,
+      "text": "so now that we have learned everything"
+    },
+    {
+      "start": 1137.6,
+      "duration": 3.439,
+      "text": "about this we can choose to terminate"
+    },
+    {
+      "start": 1139.28,
+      "duration": 3.6,
+      "text": "this instance and it is very common for"
+    },
+    {
+      "start": 1141.039,
+      "duration": 3.441,
+      "text": "you to terminate instance in the cloud"
+    },
+    {
+      "start": 1142.88,
+      "duration": 4.4,
+      "text": "because you don't want to pay for"
+    },
+    {
+      "start": 1144.48,
+      "duration": 4.16,
+      "text": "unnecessary uh unnecessary"
+    },
+    {
+      "start": 1147.28,
+      "duration": 2.96,
+      "text": "you don't want to pay a necessarily so"
+    },
+    {
+      "start": 1148.64,
+      "duration": 3.36,
+      "text": "you can terminate instance whenever you"
+    },
+    {
+      "start": 1150.24,
+      "duration": 3.439,
+      "text": "want so i'm going to select the instance"
+    },
+    {
+      "start": 1152.0,
+      "duration": 3.36,
+      "text": "go to instant state and click on"
+    },
+    {
+      "start": 1153.679,
+      "duration": 4.401,
+      "text": "terminate instance once this is"
+    },
+    {
+      "start": 1155.36,
+      "duration": 4.559,
+      "text": "terminated all the data will be gone i"
+    },
+    {
+      "start": 1158.08,
+      "duration": 3.36,
+      "text": "cannot find it again"
+    },
+    {
+      "start": 1159.919,
+      "duration": 3.601,
+      "text": "so if you want the data to be saved you"
+    },
+    {
+      "start": 1161.44,
+      "duration": 4.08,
+      "text": "can click you can create snapshots or"
+    },
+    {
+      "start": 1163.52,
+      "duration": 4.32,
+      "text": "you can create backups but this is how"
+    },
+    {
+      "start": 1165.52,
+      "duration": 4.88,
+      "text": "we can launch an image launch an"
+    },
+    {
+      "start": 1167.84,
+      "duration": 4.719,
+      "text": "instance we can stop terminate attach an"
+    },
+    {
+      "start": 1170.4,
+      "duration": 3.76,
+      "text": "elastic ip and all this stuff so you"
+    },
+    {
+      "start": 1172.559,
+      "duration": 3.12,
+      "text": "have learned a lot let's go ahead and"
+    },
+    {
+      "start": 1174.16,
+      "duration": 3.04,
+      "text": "learn more"
+    },
+    {
+      "start": 1175.679,
+      "duration": 4.161,
+      "text": "so we learned about instance type for"
+    },
+    {
+      "start": 1177.2,
+      "duration": 4.8,
+      "text": "this we were using instant t2 micro and"
+    },
+    {
+      "start": 1179.84,
+      "duration": 4.8,
+      "text": "let's understand the naming convention"
+    },
+    {
+      "start": 1182.0,
+      "duration": 4.32,
+      "text": "so let's take an example of m5.2x large"
+    },
+    {
+      "start": 1184.64,
+      "duration": 3.68,
+      "text": "by the way you can see all the instance"
+    },
+    {
+      "start": 1186.32,
+      "duration": 4.479,
+      "text": "types here you can go and see the"
+    },
+    {
+      "start": 1188.32,
+      "duration": 4.479,
+      "text": "extensive list of instance type here"
+    },
+    {
+      "start": 1190.799,
+      "duration": 2.961,
+      "text": "it contains all the lists like from t2"
+    },
+    {
+      "start": 1192.799,
+      "duration": 4.481,
+      "text": "to c"
+    },
+    {
+      "start": 1193.76,
+      "duration": 5.2,
+      "text": "c family a family and then"
+    },
+    {
+      "start": 1197.28,
+      "duration": 3.759,
+      "text": "you also can see all the other stuff"
+    },
+    {
+      "start": 1198.96,
+      "duration": 3.92,
+      "text": "that you want it it's all present here"
+    },
+    {
+      "start": 1201.039,
+      "duration": 4.88,
+      "text": "you can go ahead and check out so let's"
+    },
+    {
+      "start": 1202.88,
+      "duration": 4.96,
+      "text": "take an example of my m5 dot two slash"
+    },
+    {
+      "start": 1205.919,
+      "duration": 4.721,
+      "text": "and this the m stands for the instance"
+    },
+    {
+      "start": 1207.84,
+      "duration": 5.68,
+      "text": "class the five stands for the generation"
+    },
+    {
+      "start": 1210.64,
+      "duration": 4.72,
+      "text": "so version or generation you can say and"
+    },
+    {
+      "start": 1213.52,
+      "duration": 4.48,
+      "text": "two weeks large is the size so two weeks"
+    },
+    {
+      "start": 1215.36,
+      "duration": 4.559,
+      "text": "large will define how much vp cpu or how"
+    },
+    {
+      "start": 1218.0,
+      "duration": 4.559,
+      "text": "much ram is going to be there so to give"
+    },
+    {
+      "start": 1219.919,
+      "duration": 5.681,
+      "text": "you more clarity we can go here so you"
+    },
+    {
+      "start": 1222.559,
+      "duration": 5.761,
+      "text": "can see 2x large here and 2x large has"
+    },
+    {
+      "start": 1225.6,
+      "duration": 5.12,
+      "text": "more cpus and more memory compared to x"
+    },
+    {
+      "start": 1228.32,
+      "duration": 4.96,
+      "text": "large so x large has only four but 2x"
+    },
+    {
+      "start": 1230.72,
+      "duration": 5.439,
+      "text": "large has 8 whereas memory in memory it"
+    },
+    {
+      "start": 1233.28,
+      "duration": 4.56,
+      "text": "has 16 and 2x large has 32"
+    },
+    {
+      "start": 1236.159,
+      "duration": 3.281,
+      "text": "so 2x large is the size within the"
+    },
+    {
+      "start": 1237.84,
+      "duration": 3.04,
+      "text": "instance class"
+    },
+    {
+      "start": 1239.44,
+      "duration": 2.56,
+      "text": "next is the instance type we have"
+    },
+    {
+      "start": 1240.88,
+      "duration": 2.64,
+      "text": "different types of instance type"
+    },
+    {
+      "start": 1242.0,
+      "duration": 3.679,
+      "text": "depending on the use case the general"
+    },
+    {
+      "start": 1243.52,
+      "duration": 4.56,
+      "text": "purpose instance type is the instance"
+    },
+    {
+      "start": 1245.679,
+      "duration": 4.081,
+      "text": "type which is great for diversity of"
+    },
+    {
+      "start": 1248.08,
+      "duration": 3.52,
+      "text": "workloads such as web servers or code"
+    },
+    {
+      "start": 1249.76,
+      "duration": 4.08,
+      "text": "repositories and it has a complete"
+    },
+    {
+      "start": 1251.6,
+      "duration": 5.84,
+      "text": "balance between compute networking and"
+    },
+    {
+      "start": 1253.84,
+      "duration": 5.52,
+      "text": "memory so if you have a general general"
+    },
+    {
+      "start": 1257.44,
+      "duration": 4.16,
+      "text": "use case where you don't need to have a"
+    },
+    {
+      "start": 1259.36,
+      "duration": 5.92,
+      "text": "lot of memory or cpu you can go ahead"
+    },
+    {
+      "start": 1261.6,
+      "duration": 5.92,
+      "text": "and use the general purpose and"
+    },
+    {
+      "start": 1265.28,
+      "duration": 4.08,
+      "text": "next is the compute optimize so"
+    },
+    {
+      "start": 1267.52,
+      "duration": 3.44,
+      "text": "it is good for compute of intensive"
+    },
+    {
+      "start": 1269.36,
+      "duration": 3.84,
+      "text": "workloads and that require high"
+    },
+    {
+      "start": 1270.96,
+      "duration": 3.68,
+      "text": "performance of processor and the use"
+    },
+    {
+      "start": 1273.2,
+      "duration": 3.68,
+      "text": "cases are batch processing media"
+    },
+    {
+      "start": 1274.64,
+      "duration": 4.24,
+      "text": "transcoding high performance web servers"
+    },
+    {
+      "start": 1276.88,
+      "duration": 3.52,
+      "text": "high performance computing scientific"
+    },
+    {
+      "start": 1278.88,
+      "duration": 3.6,
+      "text": "modeling and machine learning and"
+    },
+    {
+      "start": 1280.4,
+      "duration": 5.519,
+      "text": "dedicated gaming servers so workloads"
+    },
+    {
+      "start": 1282.48,
+      "duration": 5.28,
+      "text": "that need a large amount of cpu can be"
+    },
+    {
+      "start": 1285.919,
+      "duration": 3.601,
+      "text": "used can be created through compute"
+    },
+    {
+      "start": 1287.76,
+      "duration": 3.44,
+      "text": "optimized and this is one of the most"
+    },
+    {
+      "start": 1289.52,
+      "duration": 3.44,
+      "text": "important or most asked question in the"
+    },
+    {
+      "start": 1291.2,
+      "duration": 3.599,
+      "text": "exam as well so you need to know about"
+    },
+    {
+      "start": 1292.96,
+      "duration": 4.4,
+      "text": "the different instance type the general"
+    },
+    {
+      "start": 1294.799,
+      "duration": 6.081,
+      "text": "purpose compute optimized and these are"
+    },
+    {
+      "start": 1297.36,
+      "duration": 5.679,
+      "text": "always going to be c5 family so c family"
+    },
+    {
+      "start": 1300.88,
+      "duration": 3.84,
+      "text": "next is going to be memory optimized so"
+    },
+    {
+      "start": 1303.039,
+      "duration": 4.161,
+      "text": "fast performance for workloads that"
+    },
+    {
+      "start": 1304.72,
+      "duration": 3.839,
+      "text": "process large data sets in memory so"
+    },
+    {
+      "start": 1307.2,
+      "duration": 4.0,
+      "text": "whenever there is memory it is going to"
+    },
+    {
+      "start": 1308.559,
+      "duration": 4.48,
+      "text": "be memory optimized and the use cases"
+    },
+    {
+      "start": 1311.2,
+      "duration": 4.56,
+      "text": "are high performance relational and"
+    },
+    {
+      "start": 1313.039,
+      "duration": 6.0,
+      "text": "non-relational databases web skill case"
+    },
+    {
+      "start": 1315.76,
+      "duration": 5.2,
+      "text": "storage and memory databases application"
+    },
+    {
+      "start": 1319.039,
+      "duration": 3.441,
+      "text": "performing real-time processing of big"
+    },
+    {
+      "start": 1320.96,
+      "duration": 5.92,
+      "text": "unstructured data"
+    },
+    {
+      "start": 1322.48,
+      "duration": 5.76,
+      "text": "and r stands for ram so r x and z is"
+    },
+    {
+      "start": 1326.88,
+      "duration": 2.799,
+      "text": "going to be the memory optimized no one"
+    },
+    {
+      "start": 1328.24,
+      "duration": 3.84,
+      "text": "is going to ask you this but just"
+    },
+    {
+      "start": 1329.679,
+      "duration": 4.561,
+      "text": "remember why memory optimized is used"
+    },
+    {
+      "start": 1332.08,
+      "duration": 4.079,
+      "text": "why compute optimized is used so use"
+    },
+    {
+      "start": 1334.24,
+      "duration": 4.16,
+      "text": "memory only when you need memory use"
+    },
+    {
+      "start": 1336.159,
+      "duration": 3.601,
+      "text": "compute when your new cpu task use"
+    },
+    {
+      "start": 1338.4,
+      "duration": 3.12,
+      "text": "general when you don't have any such"
+    },
+    {
+      "start": 1339.76,
+      "duration": 3.84,
+      "text": "particular"
+    },
+    {
+      "start": 1341.52,
+      "duration": 4.08,
+      "text": "criteria and lastly it's going to be"
+    },
+    {
+      "start": 1343.6,
+      "duration": 3.439,
+      "text": "storage optimized so great for storage"
+    },
+    {
+      "start": 1345.6,
+      "duration": 3.04,
+      "text": "intensive tasks that require high"
+    },
+    {
+      "start": 1347.039,
+      "duration": 3.76,
+      "text": "sequential read and write access to"
+    },
+    {
+      "start": 1348.64,
+      "duration": 4.0,
+      "text": "large data sets on local storage and the"
+    },
+    {
+      "start": 1350.799,
+      "duration": 5.281,
+      "text": "use cases are high frequency online"
+    },
+    {
+      "start": 1352.64,
+      "duration": 6.48,
+      "text": "transaction uh processing system oltp"
+    },
+    {
+      "start": 1356.08,
+      "duration": 5.44,
+      "text": "and relational nosql databases cache"
+    },
+    {
+      "start": 1359.12,
+      "duration": 4.08,
+      "text": "data warehousing and distributed so i"
+    },
+    {
+      "start": 1361.52,
+      "duration": 3.44,
+      "text": "family is going to be storage optimized"
+    },
+    {
+      "start": 1363.2,
+      "duration": 2.959,
+      "text": "so this was the four different"
+    },
+    {
+      "start": 1364.96,
+      "duration": 3.44,
+      "text": "instance type"
+    },
+    {
+      "start": 1366.159,
+      "duration": 3.601,
+      "text": "compute general purpose memory and"
+    },
+    {
+      "start": 1368.4,
+      "duration": 2.8,
+      "text": "storage optimized"
+    },
+    {
+      "start": 1369.76,
+      "duration": 2.96,
+      "text": "and let's talk about security group"
+    },
+    {
+      "start": 1371.2,
+      "duration": 3.04,
+      "text": "first so we already saw what security"
+    },
+    {
+      "start": 1372.72,
+      "duration": 4.72,
+      "text": "groups are like firewalls for the"
+    },
+    {
+      "start": 1374.24,
+      "duration": 5.12,
+      "text": "instance which allows certain uh"
+    },
+    {
+      "start": 1377.44,
+      "duration": 3.84,
+      "text": "certain"
+    },
+    {
+      "start": 1379.36,
+      "duration": 4.319,
+      "text": "certain port and protocol"
+    },
+    {
+      "start": 1381.28,
+      "duration": 3.759,
+      "text": "so let's let's do a hands-on for this"
+    },
+    {
+      "start": 1383.679,
+      "duration": 3.841,
+      "text": "i'm going to launch the same instance"
+    },
+    {
+      "start": 1385.039,
+      "duration": 4.481,
+      "text": "again so i don't think i can do that i'm"
+    },
+    {
+      "start": 1387.52,
+      "duration": 4.72,
+      "text": "going to launch a new instance again"
+    },
+    {
+      "start": 1389.52,
+      "duration": 4.32,
+      "text": "and let's make it my"
+    },
+    {
+      "start": 1392.24,
+      "duration": 3.919,
+      "text": "server"
+    },
+    {
+      "start": 1393.84,
+      "duration": 3.76,
+      "text": "my server"
+    },
+    {
+      "start": 1396.159,
+      "duration": 2.64,
+      "text": "i'm going to do this fast because i"
+    },
+    {
+      "start": 1397.6,
+      "duration": 3.36,
+      "text": "already taught you how to launch an"
+    },
+    {
+      "start": 1398.799,
+      "duration": 4.161,
+      "text": "instance amazon linux image it is going"
+    },
+    {
+      "start": 1400.96,
+      "duration": 4.719,
+      "text": "to be t2 micro keypad is going to be the"
+    },
+    {
+      "start": 1402.96,
+      "duration": 4.719,
+      "text": "one that i've created which is my key"
+    },
+    {
+      "start": 1405.679,
+      "duration": 5.201,
+      "text": "and networking i'm going to leave it as"
+    },
+    {
+      "start": 1407.679,
+      "duration": 5.681,
+      "text": "it is for security group i have the port"
+    },
+    {
+      "start": 1410.88,
+      "duration": 4.08,
+      "text": "ssh here and i don't have any other port"
+    },
+    {
+      "start": 1413.36,
+      "duration": 4.799,
+      "text": "i'm not going to add any other port"
+    },
+    {
+      "start": 1414.96,
+      "duration": 3.199,
+      "text": "because i want to show you something"
+    },
+    {
+      "start": 1418.72,
+      "duration": 4.24,
+      "text": "so let's go ahead and put the user data"
+    },
+    {
+      "start": 1421.2,
+      "duration": 3.2,
+      "text": "for this and the user data is going to"
+    },
+    {
+      "start": 1422.96,
+      "duration": 2.959,
+      "text": "be"
+    },
+    {
+      "start": 1424.4,
+      "duration": 2.96,
+      "text": "the same as the previous one i'm going"
+    },
+    {
+      "start": 1425.919,
+      "duration": 3.601,
+      "text": "to launch the instance so it is"
+    },
+    {
+      "start": 1427.36,
+      "duration": 5.36,
+      "text": "launching and i should see this instance"
+    },
+    {
+      "start": 1429.52,
+      "duration": 5.759,
+      "text": "in my dashboard within some time so"
+    },
+    {
+      "start": 1432.72,
+      "duration": 4.64,
+      "text": "let's talk about security group here"
+    },
+    {
+      "start": 1435.279,
+      "duration": 3.921,
+      "text": "so security groups are acting as a"
+    },
+    {
+      "start": 1437.36,
+      "duration": 4.0,
+      "text": "firewall on ec2 instance and the"
+    },
+    {
+      "start": 1439.2,
+      "duration": 4.8,
+      "text": "regulate access to the port authorized"
+    },
+    {
+      "start": 1441.36,
+      "duration": 4.72,
+      "text": "ip address and ipv6 so you can choose on"
+    },
+    {
+      "start": 1444.0,
+      "duration": 3.76,
+      "text": "which source do you want this"
+    },
+    {
+      "start": 1446.08,
+      "duration": 3.839,
+      "text": "traffic to be allowed so you can choose"
+    },
+    {
+      "start": 1447.76,
+      "duration": 4.72,
+      "text": "to have everyone to allow traffic on"
+    },
+    {
+      "start": 1449.919,
+      "duration": 4.801,
+      "text": "port 80 or you can have only your ip so"
+    },
+    {
+      "start": 1452.48,
+      "duration": 5.12,
+      "text": "this slash 32 means only one ip which is"
+    },
+    {
+      "start": 1454.72,
+      "duration": 4.88,
+      "text": "your ip and custom tcp rule you can add"
+    },
+    {
+      "start": 1457.6,
+      "duration": 3.92,
+      "text": "any custom rule so if you're using any"
+    },
+    {
+      "start": 1459.6,
+      "duration": 3.84,
+      "text": "application that has certain port number"
+    },
+    {
+      "start": 1461.52,
+      "duration": 3.519,
+      "text": "you can that as that ad as well so"
+    },
+    {
+      "start": 1463.44,
+      "duration": 4.88,
+      "text": "here's the java application which runs"
+    },
+    {
+      "start": 1465.039,
+      "duration": 5.76,
+      "text": "on port 4567 and you can add that as"
+    },
+    {
+      "start": 1468.32,
+      "duration": 4.64,
+      "text": "well in your security group"
+    },
+    {
+      "start": 1470.799,
+      "duration": 4.161,
+      "text": "and let me just show you if i think it"
+    },
+    {
+      "start": 1472.96,
+      "duration": 3.599,
+      "text": "should be up now"
+    },
+    {
+      "start": 1474.96,
+      "duration": 3.12,
+      "text": "it's not"
+    },
+    {
+      "start": 1476.559,
+      "duration": 3.521,
+      "text": "so let's wait and you can change the"
+    },
+    {
+      "start": 1478.08,
+      "duration": 4.079,
+      "text": "security group zero here from here you"
+    },
+    {
+      "start": 1480.08,
+      "duration": 4.719,
+      "text": "need to select the security group and it"
+    },
+    {
+      "start": 1482.159,
+      "duration": 4.321,
+      "text": "will open a security group dashboard you"
+    },
+    {
+      "start": 1484.799,
+      "duration": 6.36,
+      "text": "can go ahead and"
+    },
+    {
+      "start": 1486.48,
+      "duration": 4.679,
+      "text": "i need to make this move somewhere"
+    },
+    {
+      "start": 1494.03,
+      "duration": 3.19,
+      "text": "[Music]"
+    },
+    {
+      "start": 1500.88,
+      "duration": 4.24,
+      "text": "so i can click on edit inbound rules"
+    },
+    {
+      "start": 1502.559,
+      "duration": 2.561,
+      "text": "here and"
+    },
+    {
+      "start": 1508.799,
+      "duration": 4.161,
+      "text": "let me drop this for now"
+    },
+    {
+      "start": 1510.799,
+      "duration": 3.681,
+      "text": "so i am going to click on add rule i can"
+    },
+    {
+      "start": 1512.96,
+      "duration": 4.24,
+      "text": "choose anything that i want i can choose"
+    },
+    {
+      "start": 1514.48,
+      "duration": 5.199,
+      "text": "any rules i want so any custom tcp or"
+    },
+    {
+      "start": 1517.2,
+      "duration": 5.2,
+      "text": "http or ssh anything that i want and i"
+    },
+    {
+      "start": 1519.679,
+      "duration": 4.961,
+      "text": "can make changes like if i want only ssh"
+    },
+    {
+      "start": 1522.4,
+      "duration": 5.2,
+      "text": "from my instance i can choose here which"
+    },
+    {
+      "start": 1524.64,
+      "duration": 4.96,
+      "text": "has my instance i instance and it is"
+    },
+    {
+      "start": 1527.6,
+      "duration": 3.76,
+      "text": "slash 32 which means only one instance"
+    },
+    {
+      "start": 1529.6,
+      "duration": 3.199,
+      "text": "so let's"
+    },
+    {
+      "start": 1531.36,
+      "duration": 4.72,
+      "text": "keep it as it is for now and let's see"
+    },
+    {
+      "start": 1532.799,
+      "duration": 3.281,
+      "text": "if our instance is up or not"
+    },
+    {
+      "start": 1537.279,
+      "duration": 4.4,
+      "text": "it is not up so let's talk about i"
+    },
+    {
+      "start": 1540.08,
+      "duration": 4.32,
+      "text": "so security group are like if you have"
+    },
+    {
+      "start": 1541.679,
+      "duration": 4.48,
+      "text": "allowed access to that port you can go"
+    },
+    {
+      "start": 1544.4,
+      "duration": 3.92,
+      "text": "you can go into instance if not it is"
+    },
+    {
+      "start": 1546.159,
+      "duration": 5.281,
+      "text": "going to deny so if you can see we have"
+    },
+    {
+      "start": 1548.32,
+      "duration": 4.719,
+      "text": "an authorized ssh for port 22 for this"
+    },
+    {
+      "start": 1551.44,
+      "duration": 3.839,
+      "text": "but not for this so it is not going to"
+    },
+    {
+      "start": 1553.039,
+      "duration": 4.961,
+      "text": "enter and same way for outbound as well"
+    },
+    {
+      "start": 1555.279,
+      "duration": 4.561,
+      "text": "if you have allowed you can do it"
+    },
+    {
+      "start": 1558.0,
+      "duration": 3.039,
+      "text": "so good to know about security group is"
+    },
+    {
+      "start": 1559.84,
+      "duration": 3.52,
+      "text": "that it can be attached to multiple"
+    },
+    {
+      "start": 1561.039,
+      "duration": 4.801,
+      "text": "instances you can attach a single"
+    },
+    {
+      "start": 1563.36,
+      "duration": 4.4,
+      "text": "security group to multiple instance and"
+    },
+    {
+      "start": 1565.84,
+      "duration": 4.079,
+      "text": "security group are bounded to region or"
+    },
+    {
+      "start": 1567.76,
+      "duration": 5.44,
+      "text": "vpc you can have security group only"
+    },
+    {
+      "start": 1569.919,
+      "duration": 5.041,
+      "text": "within the region or within the vpc"
+    },
+    {
+      "start": 1573.2,
+      "duration": 3.28,
+      "text": "and it lives outside the ec2 if the"
+    },
+    {
+      "start": 1574.96,
+      "duration": 3.92,
+      "text": "traffic is blocked the ec2 instance"
+    },
+    {
+      "start": 1576.48,
+      "duration": 3.84,
+      "text": "won't see it so hc2 does not know about"
+    },
+    {
+      "start": 1578.88,
+      "duration": 4.0,
+      "text": "the security group but you can still"
+    },
+    {
+      "start": 1580.32,
+      "duration": 3.76,
+      "text": "attach rules on security group for ec2"
+    },
+    {
+      "start": 1582.88,
+      "duration": 3.12,
+      "text": "and if your application is not"
+    },
+    {
+      "start": 1584.08,
+      "duration": 4.0,
+      "text": "accessible if you get an error like this"
+    },
+    {
+      "start": 1586.0,
+      "duration": 3.919,
+      "text": "timeout then it is security group issue"
+    },
+    {
+      "start": 1588.08,
+      "duration": 3.76,
+      "text": "but if an application says connection"
+    },
+    {
+      "start": 1589.919,
+      "duration": 3.681,
+      "text": "refused it is the application issue and"
+    },
+    {
+      "start": 1591.84,
+      "duration": 4.079,
+      "text": "not the security group issue so whenever"
+    },
+    {
+      "start": 1593.6,
+      "duration": 3.92,
+      "text": "you get timeout option or error you"
+    },
+    {
+      "start": 1595.919,
+      "duration": 3.841,
+      "text": "should go and check out the security"
+    },
+    {
+      "start": 1597.52,
+      "duration": 3.759,
+      "text": "group first and then you can check the"
+    },
+    {
+      "start": 1599.76,
+      "duration": 3.519,
+      "text": "application or another you can"
+    },
+    {
+      "start": 1601.279,
+      "duration": 4.241,
+      "text": "troubleshoot any other issues so all"
+    },
+    {
+      "start": 1603.279,
+      "duration": 4.161,
+      "text": "traffic all traffic is blocked by"
+    },
+    {
+      "start": 1605.52,
+      "duration": 4.48,
+      "text": "default and all outbound traffic is"
+    },
+    {
+      "start": 1607.44,
+      "duration": 3.76,
+      "text": "authorized by default so let's just try"
+    },
+    {
+      "start": 1610.0,
+      "duration": 2.88,
+      "text": "out this"
+    },
+    {
+      "start": 1611.2,
+      "duration": 3.76,
+      "text": "all right so our instance is up with"
+    },
+    {
+      "start": 1612.88,
+      "duration": 4.32,
+      "text": "status two by two checks and i'm going"
+    },
+    {
+      "start": 1614.96,
+      "duration": 4.4,
+      "text": "to open this address and i should see"
+    },
+    {
+      "start": 1617.2,
+      "duration": 4.479,
+      "text": "like i see here i can see i should see"
+    },
+    {
+      "start": 1619.36,
+      "duration": 4.16,
+      "text": "the web page because i've used the"
+    },
+    {
+      "start": 1621.679,
+      "duration": 3.521,
+      "text": "instance state user data i'm going to"
+    },
+    {
+      "start": 1623.52,
+      "duration": 3.519,
+      "text": "remove this s here"
+    },
+    {
+      "start": 1625.2,
+      "duration": 4.16,
+      "text": "because it's not ssl"
+    },
+    {
+      "start": 1627.039,
+      "duration": 4.24,
+      "text": "but still it's loading it's loading and"
+    },
+    {
+      "start": 1629.36,
+      "duration": 3.6,
+      "text": "it is going to show an error after some"
+    },
+    {
+      "start": 1631.279,
+      "duration": 4.081,
+      "text": "time and the"
+    },
+    {
+      "start": 1632.96,
+      "duration": 5.36,
+      "text": "reason for this is because we have not"
+    },
+    {
+      "start": 1635.36,
+      "duration": 5.28,
+      "text": "enabled the security in security group"
+    },
+    {
+      "start": 1638.32,
+      "duration": 5.04,
+      "text": "we have not enabled the port 80 which is"
+    },
+    {
+      "start": 1640.64,
+      "duration": 4.88,
+      "text": "used for http so we are doing http here"
+    },
+    {
+      "start": 1643.36,
+      "duration": 4.0,
+      "text": "but we have not enabled http so we need"
+    },
+    {
+      "start": 1645.52,
+      "duration": 3.92,
+      "text": "to do that but first let's see if we get"
+    },
+    {
+      "start": 1647.36,
+      "duration": 4.24,
+      "text": "an error or not so after 30 seconds"
+    },
+    {
+      "start": 1649.44,
+      "duration": 4.0,
+      "text": "after 30 seconds it will stay"
+    },
+    {
+      "start": 1651.6,
+      "duration": 4.16,
+      "text": "stop and it will show that the error"
+    },
+    {
+      "start": 1653.44,
+      "duration": 4.719,
+      "text": "connection timeout error and let me"
+    },
+    {
+      "start": 1655.76,
+      "duration": 4.56,
+      "text": "troubleshoot this why it is"
+    },
+    {
+      "start": 1658.159,
+      "duration": 5.361,
+      "text": "why you can see my face"
+    },
+    {
+      "start": 1660.32,
+      "duration": 6.479,
+      "text": "so i'm going to do this all right"
+    },
+    {
+      "start": 1663.52,
+      "duration": 6.159,
+      "text": "so i'm stuck here i don't know why but"
+    },
+    {
+      "start": 1666.799,
+      "duration": 4.801,
+      "text": "it's okay i guess"
+    },
+    {
+      "start": 1669.679,
+      "duration": 3.521,
+      "text": "it says device is busy i'm going to not"
+    },
+    {
+      "start": 1671.6,
+      "duration": 5.199,
+      "text": "show my face so"
+    },
+    {
+      "start": 1673.2,
+      "duration": 3.599,
+      "text": "forget that and let's see here"
+    },
+    {
+      "start": 1680.24,
+      "duration": 4.0,
+      "text": "so it is still loading and now if i go"
+    },
+    {
+      "start": 1682.48,
+      "duration": 3.199,
+      "text": "here and change the security group rules"
+    },
+    {
+      "start": 1684.24,
+      "duration": 2.72,
+      "text": "i'm going to go in the security group"
+    },
+    {
+      "start": 1685.679,
+      "duration": 4.321,
+      "text": "section"
+    },
+    {
+      "start": 1686.96,
+      "duration": 4.0,
+      "text": "and i am going to add a rule let's add a"
+    },
+    {
+      "start": 1690.0,
+      "duration": 4.64,
+      "text": "rule"
+    },
+    {
+      "start": 1690.96,
+      "duration": 6.0,
+      "text": "and it is going to be http so http here"
+    },
+    {
+      "start": 1694.64,
+      "duration": 4.24,
+      "text": "port 80 from anywhere"
+    },
+    {
+      "start": 1696.96,
+      "duration": 4.079,
+      "text": "so now i have this rule"
+    },
+    {
+      "start": 1698.88,
+      "duration": 4.08,
+      "text": "and i should"
+    },
+    {
+      "start": 1701.039,
+      "duration": 3.441,
+      "text": "i have this rule i'm going to save this"
+    },
+    {
+      "start": 1702.96,
+      "duration": 4.16,
+      "text": "so once i have said"
+    },
+    {
+      "start": 1704.48,
+      "duration": 4.319,
+      "text": "i can come back here and stop this and"
+    },
+    {
+      "start": 1707.12,
+      "duration": 3.279,
+      "text": "refresh it now and i can see the"
+    },
+    {
+      "start": 1708.799,
+      "duration": 2.88,
+      "text": "instance i can see the data that is"
+    },
+    {
+      "start": 1710.399,
+      "duration": 3.28,
+      "text": "there in the"
+    },
+    {
+      "start": 1711.679,
+      "duration": 3.761,
+      "text": "user data so if you have allowed the"
+    },
+    {
+      "start": 1713.679,
+      "duration": 3.201,
+      "text": "port you can see it if you're not you"
+    },
+    {
+      "start": 1715.44,
+      "duration": 4.56,
+      "text": "cannot see it so that's how security"
+    },
+    {
+      "start": 1716.88,
+      "duration": 4.72,
+      "text": "group work you can choose which uh which"
+    },
+    {
+      "start": 1720.0,
+      "duration": 4.08,
+      "text": "rule do you want if i remove the"
+    },
+    {
+      "start": 1721.6,
+      "duration": 4.799,
+      "text": "security group now for http security"
+    },
+    {
+      "start": 1724.08,
+      "duration": 4.24,
+      "text": "rule now and try it again so you can see"
+    },
+    {
+      "start": 1726.399,
+      "duration": 4.16,
+      "text": "that i'm going to get the same error"
+    },
+    {
+      "start": 1728.32,
+      "duration": 4.079,
+      "text": "that is it is loading so it will keep on"
+    },
+    {
+      "start": 1730.559,
+      "duration": 4.0,
+      "text": "rotating and it will after some time it"
+    },
+    {
+      "start": 1732.399,
+      "duration": 3.76,
+      "text": "will show an error but it will not have"
+    },
+    {
+      "start": 1734.559,
+      "duration": 3.6,
+      "text": "the same value"
+    },
+    {
+      "start": 1736.159,
+      "duration": 3.52,
+      "text": "right so that's how security group work"
+    },
+    {
+      "start": 1738.159,
+      "duration": 5.12,
+      "text": "you can choose which port do you want"
+    },
+    {
+      "start": 1739.679,
+      "duration": 5.36,
+      "text": "which port do you not want and"
+    },
+    {
+      "start": 1743.279,
+      "duration": 3.52,
+      "text": "let's go ahead you guys these are some"
+    },
+    {
+      "start": 1745.039,
+      "duration": 3.921,
+      "text": "of the well-known ports which that you"
+    },
+    {
+      "start": 1746.799,
+      "duration": 5.12,
+      "text": "should know the port 22 that is used for"
+    },
+    {
+      "start": 1748.96,
+      "duration": 5.12,
+      "text": "ssh port 21 for file transfer protocol"
+    },
+    {
+      "start": 1751.919,
+      "duration": 4.161,
+      "text": "that upload files into the file share"
+    },
+    {
+      "start": 1754.08,
+      "duration": 3.76,
+      "text": "port 22 that is also used for file"
+    },
+    {
+      "start": 1756.08,
+      "duration": 3.839,
+      "text": "transfer but secure file transfer that"
+    },
+    {
+      "start": 1757.84,
+      "duration": 4.16,
+      "text": "uses ssh"
+    },
+    {
+      "start": 1759.919,
+      "duration": 4.721,
+      "text": "and port 80 that we just saw"
+    },
+    {
+      "start": 1762.0,
+      "duration": 5.279,
+      "text": "http and if you can see here you get an"
+    },
+    {
+      "start": 1764.64,
+      "duration": 5.279,
+      "text": "error that says connection timeout so"
+    },
+    {
+      "start": 1767.279,
+      "duration": 6.801,
+      "text": "you need to know about the sports 80 443"
+    },
+    {
+      "start": 1769.919,
+      "duration": 7.041,
+      "text": "for https and 3389 to remote access your"
+    },
+    {
+      "start": 1774.08,
+      "duration": 2.88,
+      "text": "windows instance"
+    },
+    {
+      "start": 1777.44,
+      "duration": 3.92,
+      "text": "so we used ec2 instance connect to get"
+    },
+    {
+      "start": 1779.36,
+      "duration": 3.919,
+      "text": "into our instance and if you are using"
+    },
+    {
+      "start": 1781.36,
+      "duration": 4.24,
+      "text": "windows you can use putty if you're"
+    },
+    {
+      "start": 1783.279,
+      "duration": 4.0,
+      "text": "using linux macs you can use ssh command"
+    },
+    {
+      "start": 1785.6,
+      "duration": 3.04,
+      "text": "as well but it's good to use the"
+    },
+    {
+      "start": 1787.279,
+      "duration": 3.601,
+      "text": "instance connect because you don't need"
+    },
+    {
+      "start": 1788.64,
+      "duration": 4.8,
+      "text": "to download any other software and i use"
+    },
+    {
+      "start": 1790.88,
+      "duration": 4.56,
+      "text": "that a lot"
+    },
+    {
+      "start": 1793.44,
+      "duration": 3.599,
+      "text": "next is going to be how to ssh into your"
+    },
+    {
+      "start": 1795.44,
+      "duration": 3.28,
+      "text": "instance"
+    },
+    {
+      "start": 1797.039,
+      "duration": 3.281,
+      "text": "so we already saw how to instance how to"
+    },
+    {
+      "start": 1798.72,
+      "duration": 3.439,
+      "text": "connect we you need to go to the"
+    },
+    {
+      "start": 1800.32,
+      "duration": 3.839,
+      "text": "instance here so i'm going to go to the"
+    },
+    {
+      "start": 1802.159,
+      "duration": 3.921,
+      "text": "instances i'm going to select my running"
+    },
+    {
+      "start": 1804.159,
+      "duration": 3.361,
+      "text": "instance i'm going to click on connect"
+    },
+    {
+      "start": 1806.08,
+      "duration": 4.4,
+      "text": "i'm going to click on connect option"
+    },
+    {
+      "start": 1807.52,
+      "duration": 5.36,
+      "text": "here and i am inside my instance so i"
+    },
+    {
+      "start": 1810.48,
+      "duration": 5.52,
+      "text": "can run anything i want i can run"
+    },
+    {
+      "start": 1812.88,
+      "duration": 5.44,
+      "text": "uh sudo m update command so that all"
+    },
+    {
+      "start": 1816.0,
+      "duration": 4.0,
+      "text": "everything is updated so this is how you"
+    },
+    {
+      "start": 1818.32,
+      "duration": 4.16,
+      "text": "get into our instance and do anything"
+    },
+    {
+      "start": 1820.0,
+      "duration": 4.48,
+      "text": "you want so that's that's what is"
+    },
+    {
+      "start": 1822.48,
+      "duration": 4.96,
+      "text": "written here how to ssh into your"
+    },
+    {
+      "start": 1824.48,
+      "duration": 4.559,
+      "text": "instance on linux or max and with"
+    },
+    {
+      "start": 1827.44,
+      "duration": 2.959,
+      "text": "uh you can also use easy to instance"
+    },
+    {
+      "start": 1829.039,
+      "duration": 3.601,
+      "text": "connect to connect your instance within"
+    },
+    {
+      "start": 1830.399,
+      "duration": 3.681,
+      "text": "your browser no need to use your key so"
+    },
+    {
+      "start": 1832.64,
+      "duration": 3.759,
+      "text": "as you can see i have not used any key"
+    },
+    {
+      "start": 1834.08,
+      "duration": 3.44,
+      "text": "because it is already loaded in the in"
+    },
+    {
+      "start": 1836.399,
+      "duration": 2.801,
+      "text": "amazon"
+    },
+    {
+      "start": 1837.52,
+      "duration": 4.24,
+      "text": "and the magic is that the temporary key"
+    },
+    {
+      "start": 1839.2,
+      "duration": 3.76,
+      "text": "is uploaded on the ec2 onto act by aws"
+    },
+    {
+      "start": 1841.76,
+      "duration": 2.24,
+      "text": "so the key is already there in the"
+    },
+    {
+      "start": 1842.96,
+      "duration": 3.28,
+      "text": "instance"
+    },
+    {
+      "start": 1844.0,
+      "duration": 3.919,
+      "text": "and it works only out of the box with"
+    },
+    {
+      "start": 1846.24,
+      "duration": 3.84,
+      "text": "amazon linux 2 but it also works with"
+    },
+    {
+      "start": 1847.919,
+      "duration": 3.841,
+      "text": "ubuntu and not with other instances so"
+    },
+    {
+      "start": 1850.08,
+      "duration": 3.36,
+      "text": "you need to make sure you're using"
+    },
+    {
+      "start": 1851.76,
+      "duration": 2.399,
+      "text": "amazon linux 2 or"
+    },
+    {
+      "start": 1853.44,
+      "duration": 2.8,
+      "text": "the"
+    },
+    {
+      "start": 1854.159,
+      "duration": 3.841,
+      "text": "ubuntu image and also you need to make"
+    },
+    {
+      "start": 1856.24,
+      "duration": 3.919,
+      "text": "sure that the port 22 is still open if"
+    },
+    {
+      "start": 1858.0,
+      "duration": 3.84,
+      "text": "you don't have port 22 open in your"
+    },
+    {
+      "start": 1860.159,
+      "duration": 3.041,
+      "text": "security group you will have you will"
+    },
+    {
+      "start": 1861.84,
+      "duration": 3.04,
+      "text": "get the same error like this connection"
+    },
+    {
+      "start": 1863.2,
+      "duration": 4.16,
+      "text": "timeout and you cannot access it you"
+    },
+    {
+      "start": 1864.88,
+      "duration": 5.039,
+      "text": "cannot go into your instance"
+    },
+    {
+      "start": 1867.36,
+      "duration": 4.48,
+      "text": "so let's try to attach a role on ec2"
+    },
+    {
+      "start": 1869.919,
+      "duration": 5.041,
+      "text": "instance but for before that let me show"
+    },
+    {
+      "start": 1871.84,
+      "duration": 5.199,
+      "text": "you something cool so you can"
+    },
+    {
+      "start": 1874.96,
+      "duration": 4.0,
+      "text": "so we can launch instance or do anything"
+    },
+    {
+      "start": 1877.039,
+      "duration": 3.601,
+      "text": "with the console this is the aws"
+    },
+    {
+      "start": 1878.96,
+      "duration": 3.04,
+      "text": "management console where you can do"
+    },
+    {
+      "start": 1880.64,
+      "duration": 2.8,
+      "text": "anything that you want you can launch"
+    },
+    {
+      "start": 1882.0,
+      "duration": 4.559,
+      "text": "instance you can"
+    },
+    {
+      "start": 1883.44,
+      "duration": 4.719,
+      "text": "use s3 you can use iem you can use rds"
+    },
+    {
+      "start": 1886.559,
+      "duration": 3.281,
+      "text": "anything that you want by just clicking"
+    },
+    {
+      "start": 1888.159,
+      "duration": 4.561,
+      "text": "on it and there's another option to"
+    },
+    {
+      "start": 1889.84,
+      "duration": 5.6,
+      "text": "access your aws services that is using"
+    },
+    {
+      "start": 1892.72,
+      "duration": 5.439,
+      "text": "cli so this is my command line interface"
+    },
+    {
+      "start": 1895.44,
+      "duration": 4.959,
+      "text": "and i can do anything i want in my"
+    },
+    {
+      "start": 1898.159,
+      "duration": 5.281,
+      "text": "account from here so for that i need to"
+    },
+    {
+      "start": 1900.399,
+      "duration": 4.961,
+      "text": "do aws configure and i need to put in my"
+    },
+    {
+      "start": 1903.44,
+      "duration": 2.959,
+      "text": "keys and access keys so some this is"
+    },
+    {
+      "start": 1905.36,
+      "duration": 3.28,
+      "text": "something like"
+    },
+    {
+      "start": 1906.399,
+      "duration": 4.321,
+      "text": "uh username and password but for cli"
+    },
+    {
+      "start": 1908.64,
+      "duration": 5.6,
+      "text": "this is command line interface and this"
+    },
+    {
+      "start": 1910.72,
+      "duration": 5.04,
+      "text": "is graphical user interface or gui so"
+    },
+    {
+      "start": 1914.24,
+      "duration": 3.84,
+      "text": "using"
+    },
+    {
+      "start": 1915.76,
+      "duration": 5.2,
+      "text": "uh cli i can see anything i want so"
+    },
+    {
+      "start": 1918.08,
+      "duration": 5.68,
+      "text": "let's let's try to list the iem users"
+    },
+    {
+      "start": 1920.96,
+      "duration": 3.76,
+      "text": "and i'm going to list im users here"
+    },
+    {
+      "start": 1923.76,
+      "duration": 2.32,
+      "text": "so"
+    },
+    {
+      "start": 1924.72,
+      "duration": 4.079,
+      "text": "i should see all the users that are"
+    },
+    {
+      "start": 1926.08,
+      "duration": 4.8,
+      "text": "there in my iem account and i get the i"
+    },
+    {
+      "start": 1928.799,
+      "duration": 4.0,
+      "text": "can see that there's a username as alex"
+    },
+    {
+      "start": 1930.88,
+      "duration": 4.159,
+      "text": "demo user and then i see"
+    },
+    {
+      "start": 1932.799,
+      "duration": 4.401,
+      "text": "so this is done because i have aws"
+    },
+    {
+      "start": 1935.039,
+      "duration": 4.561,
+      "text": "configured and there's another way to"
+    },
+    {
+      "start": 1937.2,
+      "duration": 5.359,
+      "text": "get the same data you can choose to add"
+    },
+    {
+      "start": 1939.6,
+      "duration": 5.439,
+      "text": "aws configure here in your"
+    },
+    {
+      "start": 1942.559,
+      "duration": 4.561,
+      "text": "ec2 as well but that's very"
+    },
+    {
+      "start": 1945.039,
+      "duration": 4.24,
+      "text": "wrong to keep your access or secret"
+    },
+    {
+      "start": 1947.12,
+      "duration": 3.76,
+      "text": "access key in on the instance because"
+    },
+    {
+      "start": 1949.279,
+      "duration": 3.841,
+      "text": "that can be a security thread someone"
+    },
+    {
+      "start": 1950.88,
+      "duration": 4.639,
+      "text": "else can access your ec2 and get your"
+    },
+    {
+      "start": 1953.12,
+      "duration": 5.12,
+      "text": "access and secret access key so rather"
+    },
+    {
+      "start": 1955.519,
+      "duration": 4.88,
+      "text": "than that we can use im role and iem"
+    },
+    {
+      "start": 1958.24,
+      "duration": 3.919,
+      "text": "rule are"
+    },
+    {
+      "start": 1960.399,
+      "duration": 5.201,
+      "text": "permissions granted to service if you"
+    },
+    {
+      "start": 1962.159,
+      "duration": 5.12,
+      "text": "want it if you want them to do some task"
+    },
+    {
+      "start": 1965.6,
+      "duration": 3.52,
+      "text": "so you can"
+    },
+    {
+      "start": 1967.279,
+      "duration": 3.921,
+      "text": "you can attach an im rule to aws"
+    },
+    {
+      "start": 1969.12,
+      "duration": 3.52,
+      "text": "instance let attach an iem rule so if"
+    },
+    {
+      "start": 1971.2,
+      "duration": 4.079,
+      "text": "you don't know about im rule not a"
+    },
+    {
+      "start": 1972.64,
+      "duration": 4.8,
+      "text": "problem you can watch my previous video"
+    },
+    {
+      "start": 1975.279,
+      "duration": 4.561,
+      "text": "on im which has hands on as well as"
+    },
+    {
+      "start": 1977.44,
+      "duration": 4.56,
+      "text": "theory so lets try to attach an im rule"
+    },
+    {
+      "start": 1979.84,
+      "duration": 4.4,
+      "text": "here and i am going to select the"
+    },
+    {
+      "start": 1982.0,
+      "duration": 4.32,
+      "text": "instance i am going to click on actions"
+    },
+    {
+      "start": 1984.24,
+      "duration": 5.2,
+      "text": "and i am going to click on security"
+    },
+    {
+      "start": 1986.32,
+      "duration": 6.0,
+      "text": "modify im role and im going to create"
+    },
+    {
+      "start": 1989.44,
+      "duration": 5.52,
+      "text": "attach the role that is going to be"
+    },
+    {
+      "start": 1992.32,
+      "duration": 5.04,
+      "text": "a new ect role let me show you what this"
+    },
+    {
+      "start": 1994.96,
+      "duration": 7.199,
+      "text": "role does so to show you i'm going to go"
+    },
+    {
+      "start": 1997.36,
+      "duration": 4.799,
+      "text": "to the iem option let's search for iam"
+    },
+    {
+      "start": 2002.96,
+      "duration": 2.88,
+      "text": "and i'm into my"
+    },
+    {
+      "start": 2008.88,
+      "duration": 3.919,
+      "text": "this is my im dashboard i'm going to go"
+    },
+    {
+      "start": 2010.72,
+      "duration": 4.559,
+      "text": "into roles and i'm see i'll go i'll see"
+    },
+    {
+      "start": 2012.799,
+      "duration": 4.801,
+      "text": "what does that rule does so let's search"
+    },
+    {
+      "start": 2015.279,
+      "duration": 4.0,
+      "text": "for that rule new ec2 rule this is the"
+    },
+    {
+      "start": 2017.6,
+      "duration": 3.84,
+      "text": "rule and if you don't know how to read"
+    },
+    {
+      "start": 2019.279,
+      "duration": 3.76,
+      "text": "permissions please go and check out the"
+    },
+    {
+      "start": 2021.44,
+      "duration": 3.599,
+      "text": "previous video so this was the"
+    },
+    {
+      "start": 2023.039,
+      "duration": 3.12,
+      "text": "permission and it says that you can"
+    },
+    {
+      "start": 2025.039,
+      "duration": 4.161,
+      "text": "allow"
+    },
+    {
+      "start": 2026.159,
+      "duration": 5.921,
+      "text": "lists and get user on anything so same"
+    },
+    {
+      "start": 2029.2,
+      "duration": 4.959,
+      "text": "as what we saw in the in the console in"
+    },
+    {
+      "start": 2032.08,
+      "duration": 3.92,
+      "text": "the cli you can you have the permissions"
+    },
+    {
+      "start": 2034.159,
+      "duration": 3.441,
+      "text": "to list user but you don't need to do"
+    },
+    {
+      "start": 2036.0,
+      "duration": 3.84,
+      "text": "aws configure you don't need to store"
+    },
+    {
+      "start": 2037.6,
+      "duration": 4.4,
+      "text": "the keys in that you can do it using"
+    },
+    {
+      "start": 2039.84,
+      "duration": 4.48,
+      "text": "this role so i'm going to attach that"
+    },
+    {
+      "start": 2042.0,
+      "duration": 3.6,
+      "text": "onto my ec2 instance and before"
+    },
+    {
+      "start": 2044.32,
+      "duration": 2.239,
+      "text": "attaching it let me show you that i"
+    },
+    {
+      "start": 2045.6,
+      "duration": 3.92,
+      "text": "cannot"
+    },
+    {
+      "start": 2046.559,
+      "duration": 4.641,
+      "text": "see the users so let me just"
+    },
+    {
+      "start": 2049.52,
+      "duration": 3.76,
+      "text": "run this command and show you that i"
+    },
+    {
+      "start": 2051.2,
+      "duration": 3.679,
+      "text": "cannot access it so it says unable to"
+    },
+    {
+      "start": 2053.28,
+      "duration": 4.0,
+      "text": "load credentials and you can configure"
+    },
+    {
+      "start": 2054.879,
+      "duration": 4.081,
+      "text": "credentials by using run by running aws"
+    },
+    {
+      "start": 2057.28,
+      "duration": 3.28,
+      "text": "configure and i'm not going to do that"
+    },
+    {
+      "start": 2058.96,
+      "duration": 4.8,
+      "text": "i'm going to attach the rule so let's"
+    },
+    {
+      "start": 2060.56,
+      "duration": 5.599,
+      "text": "attach it and save it so it has it says"
+    },
+    {
+      "start": 2063.76,
+      "duration": 4.0,
+      "text": "successfully attached new ect role to"
+    },
+    {
+      "start": 2066.159,
+      "duration": 3.76,
+      "text": "instance so this is how you attach an"
+    },
+    {
+      "start": 2067.76,
+      "duration": 4.48,
+      "text": "iem rule to your instance now i should"
+    },
+    {
+      "start": 2069.919,
+      "duration": 4.561,
+      "text": "have the permissions that was defined in"
+    },
+    {
+      "start": 2072.24,
+      "duration": 4.48,
+      "text": "the iem role this permissions to list"
+    },
+    {
+      "start": 2074.48,
+      "duration": 4.639,
+      "text": "and get users so let's run the command"
+    },
+    {
+      "start": 2076.72,
+      "duration": 4.56,
+      "text": "again and hopefully i should see it"
+    },
+    {
+      "start": 2079.119,
+      "duration": 3.121,
+      "text": "so i'm running the command and i can see"
+    },
+    {
+      "start": 2081.28,
+      "duration": 4.0,
+      "text": "my"
+    },
+    {
+      "start": 2082.24,
+      "duration": 4.399,
+      "text": "users all of them same as what i can see"
+    },
+    {
+      "start": 2085.28,
+      "duration": 2.96,
+      "text": "in my instance"
+    },
+    {
+      "start": 2086.639,
+      "duration": 3.361,
+      "text": "and i can see it here without running"
+    },
+    {
+      "start": 2088.24,
+      "duration": 3.52,
+      "text": "the aws configure command just by using"
+    },
+    {
+      "start": 2090.0,
+      "duration": 3.839,
+      "text": "the role so this is how you can attach"
+    },
+    {
+      "start": 2091.76,
+      "duration": 4.0,
+      "text": "im role to your instance and we have"
+    },
+    {
+      "start": 2093.839,
+      "duration": 3.76,
+      "text": "done this hands-on and i want you to do"
+    },
+    {
+      "start": 2095.76,
+      "duration": 3.359,
+      "text": "the hands-on yourself as well because if"
+    },
+    {
+      "start": 2097.599,
+      "duration": 3.201,
+      "text": "you don't do it you are not going to"
+    },
+    {
+      "start": 2099.119,
+      "duration": 4.401,
+      "text": "learn anything so i would recommend you"
+    },
+    {
+      "start": 2100.8,
+      "duration": 4.48,
+      "text": "to watch this video first and then do"
+    },
+    {
+      "start": 2103.52,
+      "duration": 4.0,
+      "text": "the hands-on while watching this video"
+    },
+    {
+      "start": 2105.28,
+      "duration": 4.24,
+      "text": "twice"
+    },
+    {
+      "start": 2107.52,
+      "duration": 4.48,
+      "text": "and you have to let's talk about the"
+    },
+    {
+      "start": 2109.52,
+      "duration": 4.88,
+      "text": "easy to launch types and all i already"
+    },
+    {
+      "start": 2112.0,
+      "duration": 4.32,
+      "text": "have created a video on this so"
+    },
+    {
+      "start": 2114.4,
+      "duration": 3.36,
+      "text": "you can check it out there's a detailed"
+    },
+    {
+      "start": 2116.32,
+      "duration": 3.84,
+      "text": "video i'm going to link it here"
+    },
+    {
+      "start": 2117.76,
+      "duration": 4.56,
+      "text": "somewhere in the top so you can check"
+    },
+    {
+      "start": 2120.16,
+      "duration": 4.0,
+      "text": "that video but just to give an hour give"
+    },
+    {
+      "start": 2122.32,
+      "duration": 3.6,
+      "text": "a brief introduction so you have"
+    },
+    {
+      "start": 2124.16,
+      "duration": 4.08,
+      "text": "positioning options wherein you can"
+    },
+    {
+      "start": 2125.92,
+      "duration": 4.08,
+      "text": "select how do you want to purchase ec2"
+    },
+    {
+      "start": 2128.24,
+      "duration": 3.839,
+      "text": "instance you can have on demand you can"
+    },
+    {
+      "start": 2130.0,
+      "duration": 4.079,
+      "text": "have reserved you can have savings plan"
+    },
+    {
+      "start": 2132.079,
+      "duration": 4.081,
+      "text": "so spot instances dedicated hosts"
+    },
+    {
+      "start": 2134.079,
+      "duration": 4.721,
+      "text": "dedicated instances so let's learn one"
+    },
+    {
+      "start": 2136.16,
+      "duration": 4.64,
+      "text": "by one so on demand means you can choose"
+    },
+    {
+      "start": 2138.8,
+      "duration": 3.6,
+      "text": "to launch or terminate instance anytime"
+    },
+    {
+      "start": 2140.8,
+      "duration": 3.2,
+      "text": "you want so"
+    },
+    {
+      "start": 2142.4,
+      "duration": 3.36,
+      "text": "no long term commitment you can choose"
+    },
+    {
+      "start": 2144.0,
+      "duration": 3.76,
+      "text": "whenever you want and you pay for what"
+    },
+    {
+      "start": 2145.76,
+      "duration": 3.76,
+      "text": "you use for windows or linux you use per"
+    },
+    {
+      "start": 2147.76,
+      "duration": 2.64,
+      "text": "second and for"
+    },
+    {
+      "start": 2149.52,
+      "duration": 2.559,
+      "text": "uh"
+    },
+    {
+      "start": 2150.4,
+      "duration": 3.52,
+      "text": "for operating other operating system you"
+    },
+    {
+      "start": 2152.079,
+      "duration": 4.161,
+      "text": "pay per hour and there's no long term"
+    },
+    {
+      "start": 2153.92,
+      "duration": 5.679,
+      "text": "commitment you and recommended for short"
+    },
+    {
+      "start": 2156.24,
+      "duration": 5.28,
+      "text": "term and uninterrupted workload"
+    },
+    {
+      "start": 2159.599,
+      "duration": 4.081,
+      "text": "so next is going to be a reserved"
+    },
+    {
+      "start": 2161.52,
+      "duration": 4.0,
+      "text": "instances which gives you 70 discount"
+    },
+    {
+      "start": 2163.68,
+      "duration": 3.6,
+      "text": "compared to on demand but the thing is"
+    },
+    {
+      "start": 2165.52,
+      "duration": 3.599,
+      "text": "you need to have it for either one year"
+    },
+    {
+      "start": 2167.28,
+      "duration": 3.44,
+      "text": "or for three year and the payment"
+    },
+    {
+      "start": 2169.119,
+      "duration": 3.361,
+      "text": "options are no offense partial and all"
+    },
+    {
+      "start": 2170.72,
+      "duration": 4.72,
+      "text": "the print so you can watch this video"
+    },
+    {
+      "start": 2172.48,
+      "duration": 5.44,
+      "text": "and you will get more idea about it when"
+    },
+    {
+      "start": 2175.44,
+      "duration": 4.24,
+      "text": "you see that video i'm going to you can"
+    },
+    {
+      "start": 2177.92,
+      "duration": 4.0,
+      "text": "check that in the description box as"
+    },
+    {
+      "start": 2179.68,
+      "duration": 4.88,
+      "text": "well next is the saving plans same as"
+    },
+    {
+      "start": 2181.92,
+      "duration": 4.72,
+      "text": "reserved instances so then the spot"
+    },
+    {
+      "start": 2184.56,
+      "duration": 2.799,
+      "text": "instances which can be used for"
+    },
+    {
+      "start": 2186.64,
+      "duration": 2.0,
+      "text": "for"
+    },
+    {
+      "start": 2187.359,
+      "duration": 3.681,
+      "text": "temporary"
+    },
+    {
+      "start": 2188.64,
+      "duration": 4.0,
+      "text": "workloads and"
+    },
+    {
+      "start": 2191.04,
+      "duration": 3.36,
+      "text": "these are the most cost efficient so"
+    },
+    {
+      "start": 2192.64,
+      "duration": 4.56,
+      "text": "this is the key term that is used in the"
+    },
+    {
+      "start": 2194.4,
+      "duration": 4.16,
+      "text": "aws exam for spot instance question most"
+    },
+    {
+      "start": 2197.2,
+      "duration": 3.6,
+      "text": "cost efficient and it can give you"
+    },
+    {
+      "start": 2198.56,
+      "duration": 4.08,
+      "text": "discount up to 90 percent"
+    },
+    {
+      "start": 2200.8,
+      "duration": 3.6,
+      "text": "next is going to be dedicated host so"
+    },
+    {
+      "start": 2202.64,
+      "duration": 3.6,
+      "text": "you get the physical server yourself"
+    },
+    {
+      "start": 2204.4,
+      "duration": 4.56,
+      "text": "where you can where you can have your"
+    },
+    {
+      "start": 2206.24,
+      "duration": 5.76,
+      "text": "instance only no other customer can have"
+    },
+    {
+      "start": 2208.96,
+      "duration": 4.96,
+      "text": "the instance on that host and it is used"
+    },
+    {
+      "start": 2212.0,
+      "duration": 4.96,
+      "text": "for compliance requirement and to use"
+    },
+    {
+      "start": 2213.92,
+      "duration": 5.36,
+      "text": "your server so you should use your"
+    },
+    {
+      "start": 2216.96,
+      "duration": 4.639,
+      "text": "existing server bound license so anytime"
+    },
+    {
+      "start": 2219.28,
+      "duration": 3.839,
+      "text": "you see uh licensing or compliance"
+    },
+    {
+      "start": 2221.599,
+      "duration": 3.76,
+      "text": "sequence in the question it is going to"
+    },
+    {
+      "start": 2223.119,
+      "duration": 3.841,
+      "text": "be dedicated host"
+    },
+    {
+      "start": 2225.359,
+      "duration": 3.121,
+      "text": "dedicated instance same as dedicated"
+    },
+    {
+      "start": 2226.96,
+      "duration": 3.04,
+      "text": "host but few"
+    },
+    {
+      "start": 2228.48,
+      "duration": 3.119,
+      "text": "restrictions you can check that this is"
+    },
+    {
+      "start": 2230.0,
+      "duration": 3.28,
+      "text": "the restriction i also have created a"
+    },
+    {
+      "start": 2231.599,
+      "duration": 3.281,
+      "text": "video to compare dedicated host and"
+    },
+    {
+      "start": 2233.28,
+      "duration": 2.319,
+      "text": "dedicated instance you can check that"
+    },
+    {
+      "start": 2234.88,
+      "duration": 3.04,
+      "text": "out"
+    },
+    {
+      "start": 2235.599,
+      "duration": 6.401,
+      "text": "and this is the example i have"
+    },
+    {
+      "start": 2237.92,
+      "duration": 5.919,
+      "text": "described in in the previous video"
+    },
+    {
+      "start": 2242.0,
+      "duration": 3.52,
+      "text": "this is the pricing comparison for all"
+    },
+    {
+      "start": 2243.839,
+      "duration": 5.121,
+      "text": "the different launch types for on demand"
+    },
+    {
+      "start": 2245.52,
+      "duration": 4.559,
+      "text": "is dot one zero and for sport instance"
+    },
+    {
+      "start": 2248.96,
+      "duration": 2.72,
+      "text": "this is this"
+    },
+    {
+      "start": 2250.079,
+      "duration": 4.641,
+      "text": "you can you can pause the video and"
+    },
+    {
+      "start": 2251.68,
+      "duration": 4.8,
+      "text": "check out this price comparison"
+    },
+    {
+      "start": 2254.72,
+      "duration": 5.119,
+      "text": "so let's summarize this section and"
+    },
+    {
+      "start": 2256.48,
+      "duration": 6.24,
+      "text": "let's bring this video to an end so"
+    },
+    {
+      "start": 2259.839,
+      "duration": 4.641,
+      "text": "easy to instance using aws ec2 you can"
+    },
+    {
+      "start": 2262.72,
+      "duration": 3.6,
+      "text": "launch servers and you can choose which"
+    },
+    {
+      "start": 2264.48,
+      "duration": 2.639,
+      "text": "os do you want you do you want linux so"
+    },
+    {
+      "start": 2266.32,
+      "duration": 2.48,
+      "text": "you want"
+    },
+    {
+      "start": 2267.119,
+      "duration": 3.441,
+      "text": "mac or do you want windows you can"
+    },
+    {
+      "start": 2268.8,
+      "duration": 3.76,
+      "text": "choose which instance size you want how"
+    },
+    {
+      "start": 2270.56,
+      "duration": 4.16,
+      "text": "much cpu do you want how much ram do you"
+    },
+    {
+      "start": 2272.56,
+      "duration": 4.799,
+      "text": "want you can choose how much storage do"
+    },
+    {
+      "start": 2274.72,
+      "duration": 4.8,
+      "text": "you want you can choose what rules do"
+    },
+    {
+      "start": 2277.359,
+      "duration": 4.641,
+      "text": "you want do you want to have http do you"
+    },
+    {
+      "start": 2279.52,
+      "duration": 4.079,
+      "text": "want to have https you can do that using"
+    },
+    {
+      "start": 2282.0,
+      "duration": 4.16,
+      "text": "security groups and you can also"
+    },
+    {
+      "start": 2283.599,
+      "duration": 4.641,
+      "text": "bootstrap your instance using ec2 user"
+    },
+    {
+      "start": 2286.16,
+      "duration": 3.439,
+      "text": "data so security groups are like"
+    },
+    {
+      "start": 2288.24,
+      "duration": 3.119,
+      "text": "firewall attached to the instance which"
+    },
+    {
+      "start": 2289.599,
+      "duration": 4.0,
+      "text": "tells you what rules are allowed and"
+    },
+    {
+      "start": 2291.359,
+      "duration": 4.0,
+      "text": "what are not ec2 user data are like a"
+    },
+    {
+      "start": 2293.599,
+      "duration": 3.841,
+      "text": "bootstrap script which will help you to"
+    },
+    {
+      "start": 2295.359,
+      "duration": 4.561,
+      "text": "launch script launched at first start of"
+    },
+    {
+      "start": 2297.44,
+      "duration": 4.639,
+      "text": "an instance using this we launched our"
+    },
+    {
+      "start": 2299.92,
+      "duration": 4.96,
+      "text": "web server apache web server and we have"
+    },
+    {
+      "start": 2302.079,
+      "duration": 5.04,
+      "text": "seen it on the web browser"
+    },
+    {
+      "start": 2304.88,
+      "duration": 4.4,
+      "text": "and ssh is used to go into our into your"
+    },
+    {
+      "start": 2307.119,
+      "duration": 4.48,
+      "text": "instance to launch to"
+    },
+    {
+      "start": 2309.28,
+      "duration": 4.24,
+      "text": "install some packages or to do any"
+    },
+    {
+      "start": 2311.599,
+      "duration": 3.441,
+      "text": "changes you can create directories you"
+    },
+    {
+      "start": 2313.52,
+      "duration": 3.36,
+      "text": "can create files anything that you want"
+    },
+    {
+      "start": 2315.04,
+      "duration": 4.48,
+      "text": "you can do it when you get into instance"
+    },
+    {
+      "start": 2316.88,
+      "duration": 4.56,
+      "text": "using ssh just note that you have to"
+    },
+    {
+      "start": 2319.52,
+      "duration": 3.92,
+      "text": "enable this rule"
+    },
+    {
+      "start": 2321.44,
+      "duration": 4.159,
+      "text": "then easy to instance role you can do"
+    },
+    {
+      "start": 2323.44,
+      "duration": 5.2,
+      "text": "certain tasks by providing permissions"
+    },
+    {
+      "start": 2325.599,
+      "duration": 6.0,
+      "text": "using iem rules and we have seen how to"
+    },
+    {
+      "start": 2328.64,
+      "duration": 4.479,
+      "text": "list im users using attaching iem rule"
+    },
+    {
+      "start": 2331.599,
+      "duration": 4.48,
+      "text": "lastly positioning option that we have"
+    },
+    {
+      "start": 2333.119,
+      "duration": 6.48,
+      "text": "seen right now and this brings to our"
+    },
+    {
+      "start": 2336.079,
+      "duration": 6.0,
+      "text": "end this brings to the end of the ec2"
+    },
+    {
+      "start": 2339.599,
+      "duration": 2.48,
+      "text": "lecture"
+    },
+    {
+      "start": 2342.24,
+      "duration": 3.68,
+      "text": "so i hope you have learned a lot about"
+    },
+    {
+      "start": 2343.839,
+      "duration": 3.841,
+      "text": "ec2 in this video if you have any"
+    },
+    {
+      "start": 2345.92,
+      "duration": 3.439,
+      "text": "questions any doubts you can post that"
+    },
+    {
+      "start": 2347.68,
+      "duration": 3.84,
+      "text": "in the comment section and if you want"
+    },
+    {
+      "start": 2349.359,
+      "duration": 3.681,
+      "text": "me to cover any other video you can let"
+    },
+    {
+      "start": 2351.52,
+      "duration": 4.0,
+      "text": "me know in the comment section you can"
+    },
+    {
+      "start": 2353.04,
+      "duration": 3.84,
+      "text": "also connect with me on linkedin and you"
+    },
+    {
+      "start": 2355.52,
+      "duration": 4.0,
+      "text": "can find the linkedin link in the"
+    },
+    {
+      "start": 2356.88,
+      "duration": 5.36,
+      "text": "description box and i hope you learned a"
+    },
+    {
+      "start": 2359.52,
+      "duration": 4.48,
+      "text": "lot about ec2 so please subscribe to"
+    },
+    {
+      "start": 2362.24,
+      "duration": 3.2,
+      "text": "this channel if you have not and please"
+    },
+    {
+      "start": 2364.0,
+      "duration": 3.28,
+      "text": "like this video"
+    },
+    {
+      "start": 2365.44,
+      "duration": 5.52,
+      "text": "i will see you in the next lecture maybe"
+    },
+    {
+      "start": 2367.28,
+      "duration": 5.6,
+      "text": "we can cover more topics on s3 on rds on"
+    },
+    {
+      "start": 2370.96,
+      "duration": 3.2,
+      "text": "load balancers and auto scaling group"
+    },
+    {
+      "start": 2372.88,
+      "duration": 2.4,
+      "text": "just let me know in the comment section"
+    },
+    {
+      "start": 2374.16,
+      "duration": 3.84,
+      "text": "and we can"
+    },
+    {
+      "start": 2375.28,
+      "duration": 5.96,
+      "text": "do that so have a good day and happy"
+    },
+    {
+      "start": 2378.0,
+      "duration": 3.24,
+      "text": "cloud computing"
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "video": {
+    "id": "Tlx7qZCPIsA",
+    "title": "How to use Linux on Windows! - WSL Installation steps",
+    "url": "https://www.youtube.com/watch?v=Tlx7qZCPIsA",
+    "duration": 315,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.599,
+      "duration": 4.081,
+      "text": "so you want to work on Linux but do not"
+    },
+    {
+      "start": 2.8,
+      "duration": 4.72,
+      "text": "want to set up a separate operating"
+    },
+    {
+      "start": 4.68,
+      "duration": 5.08,
+      "text": "system or a virtual box to do that no"
+    },
+    {
+      "start": 7.52,
+      "duration": 4.4,
+      "text": "problem in this video I'm going to show"
+    },
+    {
+      "start": 9.76,
+      "duration": 6.76,
+      "text": "you how you can use Linux on your"
+    },
+    {
+      "start": 11.92,
+      "duration": 7.64,
+      "text": "Windows machine using WSL WSL or Windows"
+    },
+    {
+      "start": 16.52,
+      "duration": 5.36,
+      "text": "subsystem for Linux provides you a Linux"
+    },
+    {
+      "start": 19.56,
+      "duration": 4.68,
+      "text": "distribution inside your Windows"
+    },
+    {
+      "start": 21.88,
+      "duration": 5.08,
+      "text": "operating system without using any"
+    },
+    {
+      "start": 24.24,
+      "duration": 4.439,
+      "text": "virtual box or any separate operating"
+    },
+    {
+      "start": 26.96,
+      "duration": 4.04,
+      "text": "system you don't have to do anything you"
+    },
+    {
+      "start": 28.679,
+      "duration": 4.481,
+      "text": "just need to install WS SL and in this"
+    },
+    {
+      "start": 31.0,
+      "duration": 4.92,
+      "text": "video I'm going to show you how you can"
+    },
+    {
+      "start": 33.16,
+      "duration": 5.96,
+      "text": "use WSL to use any Linux distribution"
+    },
+    {
+      "start": 35.92,
+      "duration": 5.28,
+      "text": "like uent 2 Debi and red hat s any"
+    },
+    {
+      "start": 39.12,
+      "duration": 4.0,
+      "text": "operating system that you want so let's"
+    },
+    {
+      "start": 41.2,
+      "duration": 4.12,
+      "text": "get started start with the video If you"
+    },
+    {
+      "start": 43.12,
+      "duration": 5.439,
+      "text": "haven't subscribed to Cloud champ Please"
+    },
+    {
+      "start": 45.32,
+      "duration": 6.399,
+      "text": "Subscribe for more videos on AWS Cloud"
+    },
+    {
+      "start": 48.559,
+      "duration": 5.601,
+      "text": "Linux and devops let's get started once"
+    },
+    {
+      "start": 51.719,
+      "duration": 6.0,
+      "text": "you are here click on the search icon"
+    },
+    {
+      "start": 54.16,
+      "duration": 6.199,
+      "text": "and then search for Turn Windows feature"
+    },
+    {
+      "start": 57.719,
+      "duration": 4.52,
+      "text": "on or off in the control panel once you"
+    },
+    {
+      "start": 60.359,
+      "duration": 4.16,
+      "text": "click on it a page will appear and"
+    },
+    {
+      "start": 62.239,
+      "duration": 4.92,
+      "text": "scroll down to find Windows subsystem"
+    },
+    {
+      "start": 64.519,
+      "duration": 5.001,
+      "text": "for Linux you will find it here check"
+    },
+    {
+      "start": 67.159,
+      "duration": 4.0,
+      "text": "the box and now click on okay once you"
+    },
+    {
+      "start": 69.52,
+      "duration": 4.16,
+      "text": "click on okay it will search for"
+    },
+    {
+      "start": 71.159,
+      "duration": 5.681,
+      "text": "required file and install it which are"
+    },
+    {
+      "start": 73.68,
+      "duration": 5.52,
+      "text": "necessary for Windows subsystem or WSL"
+    },
+    {
+      "start": 76.84,
+      "duration": 3.919,
+      "text": "to run now that you have installed it"
+    },
+    {
+      "start": 79.2,
+      "duration": 3.64,
+      "text": "click on the restart now option which"
+    },
+    {
+      "start": 80.759,
+      "duration": 3.841,
+      "text": "will restart your computer I'm going to"
+    },
+    {
+      "start": 82.84,
+      "duration": 4.239,
+      "text": "click on and"
+    },
+    {
+      "start": 84.6,
+      "duration": 4.8,
+      "text": "then your machine is started you can"
+    },
+    {
+      "start": 87.079,
+      "duration": 4.481,
+      "text": "choose to install WSL right from the"
+    },
+    {
+      "start": 89.4,
+      "duration": 5.039,
+      "text": "Microsoft store so you can open your"
+    },
+    {
+      "start": 91.56,
+      "duration": 6.879,
+      "text": "Microsoft Store and search for any Linux"
+    },
+    {
+      "start": 94.439,
+      "duration": 5.801,
+      "text": "distribution like Ruben 2 or Seuss so"
+    },
+    {
+      "start": 98.439,
+      "duration": 3.68,
+      "text": "I'm here in my Microsoft store and I'm"
+    },
+    {
+      "start": 100.24,
+      "duration": 5.28,
+      "text": "going to search for Linux and you can"
+    },
+    {
+      "start": 102.119,
+      "duration": 6.121,
+      "text": "find all these different uh apps but"
+    },
+    {
+      "start": 105.52,
+      "duration": 4.76,
+      "text": "another way to install WSL is by opening"
+    },
+    {
+      "start": 108.24,
+      "duration": 5.199,
+      "text": "CMD so I'm going to open CMD here"
+    },
+    {
+      "start": 110.28,
+      "duration": 5.04,
+      "text": "maximize this I'm going to run WSL"
+    },
+    {
+      "start": 113.439,
+      "duration": 4.561,
+      "text": "hyphen hyphen"
+    },
+    {
+      "start": 115.32,
+      "duration": 5.079,
+      "text": "install it will show me all the list of"
+    },
+    {
+      "start": 118.0,
+      "duration": 5.719,
+      "text": "different distributions so I have ubben"
+    },
+    {
+      "start": 120.399,
+      "duration": 5.241,
+      "text": "2 Debian khux and different"
+    },
+    {
+      "start": 123.719,
+      "duration": 3.76,
+      "text": "distributions here to install any of"
+    },
+    {
+      "start": 125.64,
+      "duration": 5.239,
+      "text": "these you need to run this command which"
+    },
+    {
+      "start": 127.479,
+      "duration": 6.321,
+      "text": "is WSL D-"
+    },
+    {
+      "start": 130.879,
+      "duration": 5.36,
+      "text": "install space- T which is the"
+    },
+    {
+      "start": 133.8,
+      "duration": 7.28,
+      "text": "distribution name and I'm going to run"
+    },
+    {
+      "start": 136.239,
+      "duration": 7.64,
+      "text": "the name which is uent 2 so uu n Tu"
+    },
+    {
+      "start": 141.08,
+      "duration": 5.32,
+      "text": "hyphen 20 because I'm going to install"
+    },
+    {
+      "start": 143.879,
+      "duration": 5.0,
+      "text": "20.04 once you do that press enter you"
+    },
+    {
+      "start": 146.4,
+      "duration": 4.68,
+      "text": "can choose to install any distribution"
+    },
+    {
+      "start": 148.879,
+      "duration": 5.72,
+      "text": "you can go for Deb K Linux whatever you"
+    },
+    {
+      "start": 151.08,
+      "duration": 5.32,
+      "text": "want I want WSL for uben 2 I'm going to"
+    },
+    {
+      "start": 154.599,
+      "duration": 3.601,
+      "text": "press enter and after running this"
+    },
+    {
+      "start": 156.4,
+      "duration": 4.759,
+      "text": "command so now you can see it's going to"
+    },
+    {
+      "start": 158.2,
+      "duration": 7.039,
+      "text": "install uben 2 in my machine let's wait"
+    },
+    {
+      "start": 161.159,
+      "duration": 4.08,
+      "text": "for the installation to be complete"
+    },
+    {
+      "start": 187.48,
+      "duration": 5.16,
+      "text": "WSL I'm going to search for ubben 2 here"
+    },
+    {
+      "start": 189.44,
+      "duration": 5.56,
+      "text": "which is ubben 220 on Windows and this"
+    },
+    {
+      "start": 192.64,
+      "duration": 4.879,
+      "text": "is so installing this may take few"
+    },
+    {
+      "start": 195.0,
+      "duration": 4.2,
+      "text": "minutes it says wsl2 requires an update"
+    },
+    {
+      "start": 197.519,
+      "duration": 2.881,
+      "text": "to its colel component so if you get an"
+    },
+    {
+      "start": 199.2,
+      "duration": 3.2,
+      "text": "error something like this you just need"
+    },
+    {
+      "start": 200.4,
+      "duration": 5.96,
+      "text": "to type"
+    },
+    {
+      "start": 202.4,
+      "duration": 6.039,
+      "text": "WSL hyphen hyphen"
+    },
+    {
+      "start": 206.36,
+      "duration": 4.32,
+      "text": "update once you run this it's going to"
+    },
+    {
+      "start": 208.439,
+      "duration": 3.921,
+      "text": "update all the WSL packages for Linux"
+    },
+    {
+      "start": 210.68,
+      "duration": 3.24,
+      "text": "and you will not get the same error"
+    },
+    {
+      "start": 212.36,
+      "duration": 4.079,
+      "text": "which you were getting so let's wait for"
+    },
+    {
+      "start": 213.92,
+      "duration": 5.959,
+      "text": "the update to be done"
+    },
+    {
+      "start": 216.439,
+      "duration": 6.0,
+      "text": "and so I'm going to run WSL hyphen"
+    },
+    {
+      "start": 219.879,
+      "duration": 2.56,
+      "text": "hyphen"
+    },
+    {
+      "start": 224.84,
+      "duration": 4.16,
+      "text": "shutdown distribution failed with an"
+    },
+    {
+      "start": 226.879,
+      "duration": 4.041,
+      "text": "error the operation could not be started"
+    },
+    {
+      "start": 229.0,
+      "duration": 4.239,
+      "text": "because a required feature is not"
+    },
+    {
+      "start": 230.92,
+      "duration": 6.239,
+      "text": "installed get the same error make sure"
+    },
+    {
+      "start": 233.239,
+      "duration": 5.761,
+      "text": "you have hyperv and WSL installed here"
+    },
+    {
+      "start": 237.159,
+      "duration": 3.841,
+      "text": "so you can need to click on this C on"
+    },
+    {
+      "start": 239.0,
+      "duration": 4.4,
+      "text": "okay here and it will start installing"
+    },
+    {
+      "start": 241.0,
+      "duration": 4.28,
+      "text": "for the required files applying changes"
+    },
+    {
+      "start": 243.4,
+      "duration": 4.16,
+      "text": "and it might also require you to restart"
+    },
+    {
+      "start": 245.28,
+      "duration": 4.959,
+      "text": "your PC so I'm going to restart"
+    },
+    {
+      "start": 247.56,
+      "duration": 4.44,
+      "text": "now we have restarted let's try again to"
+    },
+    {
+      "start": 250.239,
+      "duration": 4.161,
+      "text": "open our WSL so I'm going to open the"
+    },
+    {
+      "start": 252.0,
+      "duration": 5.72,
+      "text": "duben 2 which we have installed and you"
+    },
+    {
+      "start": 254.4,
+      "duration": 6.799,
+      "text": "can see it has brought me inside my"
+    },
+    {
+      "start": 257.72,
+      "duration": 4.72,
+      "text": "machine so I'm here in my ubben to"
+    },
+    {
+      "start": 261.199,
+      "duration": 2.201,
+      "text": "machine let me show you that so I'm"
+    },
+    {
+      "start": 262.44,
+      "duration": 5.44,
+      "text": "going to"
+    },
+    {
+      "start": 263.4,
+      "duration": 7.48,
+      "text": "cat to show you the machine name so Etc"
+    },
+    {
+      "start": 267.88,
+      "duration": 4.56,
+      "text": "os- relase and and it says it's an ubu"
+    },
+    {
+      "start": 270.88,
+      "duration": 3.8,
+      "text": "machine"
+    },
+    {
+      "start": 272.44,
+      "duration": 5.36,
+      "text": "20.04 this means we have successfully"
+    },
+    {
+      "start": 274.68,
+      "duration": 5.359,
+      "text": "installed ubu sudo AP update is going to"
+    },
+    {
+      "start": 277.8,
+      "duration": 4.56,
+      "text": "work for me because this is now an UB to"
+    },
+    {
+      "start": 280.039,
+      "duration": 3.521,
+      "text": "machine so if you have any issues any"
+    },
+    {
+      "start": 282.36,
+      "duration": 3.96,
+      "text": "questions you can let me know in the"
+    },
+    {
+      "start": 283.56,
+      "duration": 7.52,
+      "text": "comment section make sure you have"
+    },
+    {
+      "start": 286.32,
+      "duration": 7.92,
+      "text": "hyperv and WSL enabled here in the turn"
+    },
+    {
+      "start": 291.08,
+      "duration": 6.24,
+      "text": "Windows feature on and off if you still"
+    },
+    {
+      "start": 294.24,
+      "duration": 5.72,
+      "text": "get the issue make sure W WSL installed"
+    },
+    {
+      "start": 297.32,
+      "duration": 4.08,
+      "text": "and updated in the command prop any"
+    },
+    {
+      "start": 299.96,
+      "duration": 3.0,
+      "text": "question any doubt let me know in the"
+    },
+    {
+      "start": 301.4,
+      "duration": 3.6,
+      "text": "comment section I hope this was"
+    },
+    {
+      "start": 302.96,
+      "duration": 4.0,
+      "text": "informative please subscribe for more"
+    },
+    {
+      "start": 305.0,
+      "duration": 5.32,
+      "text": "videos like this thank you and have a"
+    },
+    {
+      "start": 306.96,
+      "duration": 3.36,
+      "text": "good day"
+    }
+  ]
+}

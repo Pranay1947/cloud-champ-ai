@@ -1,0 +1,4426 @@
+{
+  "video": {
+    "id": "ESot3GyOkZQ",
+    "title": "AWS Developer Associate Certification: Exam  Practice Questions Walkthrough",
+    "url": "https://www.youtube.com/watch?v=ESot3GyOkZQ",
+    "duration": 1980,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.299,
+      "duration": 4.141,
+      "text": "hey everyone Welcome to Cloud champ in"
+    },
+    {
+      "start": 2.399,
+      "duration": 4.92,
+      "text": "this video we are going to see AWS"
+    },
+    {
+      "start": 4.44,
+      "duration": 4.56,
+      "text": "developer associate practice test so AWS"
+    },
+    {
+      "start": 7.319,
+      "duration": 4.621,
+      "text": "certified developer associate is a"
+    },
+    {
+      "start": 9.0,
+      "duration": 4.62,
+      "text": "certification in AWS that showcases your"
+    },
+    {
+      "start": 11.94,
+      "duration": 3.84,
+      "text": "knowledge and understanding of core AWS"
+    },
+    {
+      "start": 13.62,
+      "duration": 4.38,
+      "text": "Services their uses and basic AWS"
+    },
+    {
+      "start": 15.78,
+      "duration": 4.499,
+      "text": "architecture best practices so you can"
+    },
+    {
+      "start": 18.0,
+      "duration": 5.4,
+      "text": "give this exam if you want to get a good"
+    },
+    {
+      "start": 20.279,
+      "duration": 5.221,
+      "text": "job as a depth Cloud developer or devops"
+    },
+    {
+      "start": 23.4,
+      "duration": 3.719,
+      "text": "engineer or even Solutions architect so"
+    },
+    {
+      "start": 25.5,
+      "duration": 3.66,
+      "text": "in this video we are going to go through"
+    },
+    {
+      "start": 27.119,
+      "duration": 4.381,
+      "text": "some sets of practice tests that can"
+    },
+    {
+      "start": 29.16,
+      "duration": 3.84,
+      "text": "help you easily pass your exam these"
+    },
+    {
+      "start": 31.5,
+      "duration": 3.42,
+      "text": "questions are very helpful and have"
+    },
+    {
+      "start": 33.0,
+      "duration": 4.079,
+      "text": "helped a lot of people pass their exam"
+    },
+    {
+      "start": 34.92,
+      "duration": 4.08,
+      "text": "there can be a chance that you might see"
+    },
+    {
+      "start": 37.079,
+      "duration": 3.66,
+      "text": "the same exact question in your exam so"
+    },
+    {
+      "start": 39.0,
+      "duration": 3.48,
+      "text": "watch this video till the end if you"
+    },
+    {
+      "start": 40.739,
+      "duration": 4.14,
+      "text": "want to pass your developer associate"
+    },
+    {
+      "start": 42.48,
+      "duration": 6.18,
+      "text": "exam and this is supportive for both the"
+    },
+    {
+      "start": 44.879,
+      "duration": 6.721,
+      "text": "versions DVA c01 and C02 so there's no"
+    },
+    {
+      "start": 48.66,
+      "duration": 4.32,
+      "text": "problem so let's start with learning"
+    },
+    {
+      "start": 51.6,
+      "duration": 3.479,
+      "text": "we're going through all this practice"
+    },
+    {
+      "start": 52.98,
+      "duration": 3.899,
+      "text": "test I'm going to explain you and along"
+    },
+    {
+      "start": 55.079,
+      "duration": 3.66,
+      "text": "with the solutions and the explanation"
+    },
+    {
+      "start": 56.879,
+      "duration": 3.84,
+      "text": "why it is correct answer we're going to"
+    },
+    {
+      "start": 58.739,
+      "duration": 4.14,
+      "text": "see the AWS documentation while we go"
+    },
+    {
+      "start": 60.719,
+      "duration": 4.201,
+      "text": "across all these different questions so"
+    },
+    {
+      "start": 62.879,
+      "duration": 3.6,
+      "text": "let's start the video but before we"
+    },
+    {
+      "start": 64.92,
+      "duration": 3.36,
+      "text": "start if you haven't subscribed to Cloud"
+    },
+    {
+      "start": 66.479,
+      "duration": 4.081,
+      "text": "champ yet please subscribe to Cloud"
+    },
+    {
+      "start": 68.28,
+      "duration": 4.98,
+      "text": "champ post videos on AWS Cloud terraform"
+    },
+    {
+      "start": 70.56,
+      "duration": 5.419,
+      "text": "kubernetes and Docker so do subscribe"
+    },
+    {
+      "start": 73.26,
+      "duration": 2.719,
+      "text": "and let's start"
+    },
+    {
+      "start": 76.979,
+      "duration": 4.621,
+      "text": "okay so the first question is you are a"
+    },
+    {
+      "start": 79.799,
+      "duration": 4.5,
+      "text": "developer working on AWS Lambda"
+    },
+    {
+      "start": 81.6,
+      "duration": 5.519,
+      "text": "functions that are invoked by rest apis"
+    },
+    {
+      "start": 84.299,
+      "duration": 4.561,
+      "text": "using Amazon API Gateway"
+    },
+    {
+      "start": 87.119,
+      "duration": 3.961,
+      "text": "currently when a character Quest is"
+    },
+    {
+      "start": 88.86,
+      "duration": 4.439,
+      "text": "invoked by the consumer an entire data"
+    },
+    {
+      "start": 91.08,
+      "duration": 3.3,
+      "text": "set returned by Lambda function is"
+    },
+    {
+      "start": 93.299,
+      "duration": 3.061,
+      "text": "visible"
+    },
+    {
+      "start": 94.38,
+      "duration": 3.779,
+      "text": "your team lead asks you to reformat the"
+    },
+    {
+      "start": 96.36,
+      "duration": 5.16,
+      "text": "data response which feature of API"
+    },
+    {
+      "start": 98.159,
+      "duration": 5.221,
+      "text": "Gateway can be used to solve this so the"
+    },
+    {
+      "start": 101.52,
+      "duration": 3.779,
+      "text": "question is asking does the Lambda"
+    },
+    {
+      "start": 103.38,
+      "duration": 4.8,
+      "text": "function is invoked by rest apis using"
+    },
+    {
+      "start": 105.299,
+      "duration": 5.82,
+      "text": "Amazon API Gateway and when someone runs"
+    },
+    {
+      "start": 108.18,
+      "duration": 4.74,
+      "text": "a get response a data set is returned"
+    },
+    {
+      "start": 111.119,
+      "duration": 3.901,
+      "text": "and your team lead or your manager is"
+    },
+    {
+      "start": 112.92,
+      "duration": 3.96,
+      "text": "asking you to format that data set so"
+    },
+    {
+      "start": 115.02,
+      "duration": 3.9,
+      "text": "which feature of API Gateway can you use"
+    },
+    {
+      "start": 116.88,
+      "duration": 4.559,
+      "text": "we have options here Lambda custom"
+    },
+    {
+      "start": 118.92,
+      "duration": 5.04,
+      "text": "insert Interceptor apis Gateway stage"
+    },
+    {
+      "start": 121.439,
+      "duration": 5.701,
+      "text": "variable deploy an Interceptor shell"
+    },
+    {
+      "start": 123.96,
+      "duration": 6.42,
+      "text": "script or use Amazon API Gateway mapping"
+    },
+    {
+      "start": 127.14,
+      "duration": 5.16,
+      "text": "template so let's see the solution for"
+    },
+    {
+      "start": 130.38,
+      "duration": 4.499,
+      "text": "this"
+    },
+    {
+      "start": 132.3,
+      "duration": 4.98,
+      "text": "suppose we have an API for managing"
+    },
+    {
+      "start": 134.879,
+      "duration": 4.08,
+      "text": "fruits and vegetable uh in produce"
+    },
+    {
+      "start": 137.28,
+      "duration": 3.42,
+      "text": "department of Supermarket when you run"
+    },
+    {
+      "start": 138.959,
+      "duration": 3.901,
+      "text": "the query you get a data set something"
+    },
+    {
+      "start": 140.7,
+      "duration": 4.56,
+      "text": "like this so Department categories fruit"
+    },
+    {
+      "start": 142.86,
+      "duration": 4.92,
+      "text": "vegetable and inside this you have all"
+    },
+    {
+      "start": 145.26,
+      "duration": 4.86,
+      "text": "this data let's say your team lead is"
+    },
+    {
+      "start": 147.78,
+      "duration": 4.62,
+      "text": "asking is asking you to format it in"
+    },
+    {
+      "start": 150.12,
+      "duration": 4.08,
+      "text": "this kind of format where you have the"
+    },
+    {
+      "start": 152.4,
+      "duration": 3.9,
+      "text": "data set returned like this so how can"
+    },
+    {
+      "start": 154.2,
+      "duration": 4.56,
+      "text": "you do it to do that you will be using"
+    },
+    {
+      "start": 156.3,
+      "duration": 4.5,
+      "text": "something known as API Gateway mapping"
+    },
+    {
+      "start": 158.76,
+      "duration": 3.96,
+      "text": "template so to enable this we need to"
+    },
+    {
+      "start": 160.8,
+      "duration": 3.84,
+      "text": "provide API Gateway mapping template to"
+    },
+    {
+      "start": 162.72,
+      "duration": 3.78,
+      "text": "translate the data from the backend in"
+    },
+    {
+      "start": 164.64,
+      "duration": 4.62,
+      "text": "this format so that we can get it like"
+    },
+    {
+      "start": 166.5,
+      "duration": 5.28,
+      "text": "this rather than getting it like this so"
+    },
+    {
+      "start": 169.26,
+      "duration": 4.08,
+      "text": "to do that you will use API Gateway"
+    },
+    {
+      "start": 171.78,
+      "duration": 4.56,
+      "text": "mapping template and that's the correct"
+    },
+    {
+      "start": 173.34,
+      "duration": 4.8,
+      "text": "answer so whenever you want to format"
+    },
+    {
+      "start": 176.34,
+      "duration": 4.259,
+      "text": "the data set returned by Lambda after"
+    },
+    {
+      "start": 178.14,
+      "duration": 4.44,
+      "text": "invoked by Amazon API Gateway you would"
+    },
+    {
+      "start": 180.599,
+      "duration": 4.021,
+      "text": "be using API map Gateway mapping"
+    },
+    {
+      "start": 182.58,
+      "duration": 4.019,
+      "text": "templates"
+    },
+    {
+      "start": 184.62,
+      "duration": 4.619,
+      "text": "the next question is which of the"
+    },
+    {
+      "start": 186.599,
+      "duration": 5.341,
+      "text": "following best describes how KMS"
+    },
+    {
+      "start": 189.239,
+      "duration": 4.86,
+      "text": "encryption works so KMS stands for key"
+    },
+    {
+      "start": 191.94,
+      "duration": 4.92,
+      "text": "management system used for encrypting"
+    },
+    {
+      "start": 194.099,
+      "duration": 4.92,
+      "text": "data and the question is asking how does"
+    },
+    {
+      "start": 196.86,
+      "duration": 5.099,
+      "text": "KMS actually works or how is the how"
+    },
+    {
+      "start": 199.019,
+      "duration": 6.3,
+      "text": "does the encryption in KMS works so we"
+    },
+    {
+      "start": 201.959,
+      "duration": 5.521,
+      "text": "have options here KMS stores this cmk or"
+    },
+    {
+      "start": 205.319,
+      "duration": 4.261,
+      "text": "customer master key receives the data"
+    },
+    {
+      "start": 207.48,
+      "duration": 4.2,
+      "text": "from the client which encrypts and sends"
+    },
+    {
+      "start": 209.58,
+      "duration": 3.48,
+      "text": "back so this looks like the right"
+    },
+    {
+      "start": 211.68,
+      "duration": 3.96,
+      "text": "response to me but let's see the other"
+    },
+    {
+      "start": 213.06,
+      "duration": 4.2,
+      "text": "is other options KMS generates a new key"
+    },
+    {
+      "start": 215.64,
+      "duration": 3.42,
+      "text": "for each encrypt call and encrypts the"
+    },
+    {
+      "start": 217.26,
+      "duration": 4.08,
+      "text": "data with it this is wrong KMS will not"
+    },
+    {
+      "start": 219.06,
+      "duration": 5.88,
+      "text": "generate a new cmk all the time we can"
+    },
+    {
+      "start": 221.34,
+      "duration": 5.7,
+      "text": "use the existing CNG to encrypt the data"
+    },
+    {
+      "start": 224.94,
+      "duration": 3.54,
+      "text": "KMS sends the cmk to the client which"
+    },
+    {
+      "start": 227.04,
+      "duration": 4.1,
+      "text": "performs the encryption and then to"
+    },
+    {
+      "start": 228.48,
+      "duration": 5.64,
+      "text": "reach a cmk"
+    },
+    {
+      "start": 231.14,
+      "duration": 5.08,
+      "text": "you will have to put the data to the KMS"
+    },
+    {
+      "start": 234.12,
+      "duration": 3.539,
+      "text": "and cmk which is stored in KMS will do"
+    },
+    {
+      "start": 236.22,
+      "duration": 4.739,
+      "text": "the encryption"
+    },
+    {
+      "start": 237.659,
+      "duration": 5.22,
+      "text": "last is kscmk from the client at every"
+    },
+    {
+      "start": 240.959,
+      "duration": 3.541,
+      "text": "encrypt call and their encrypts the data"
+    },
+    {
+      "start": 242.879,
+      "duration": 4.14,
+      "text": "this is also not true so the correct"
+    },
+    {
+      "start": 244.5,
+      "duration": 4.44,
+      "text": "answer is KMS throws the cmk receives"
+    },
+    {
+      "start": 247.019,
+      "duration": 4.021,
+      "text": "data from the glac which encrypts and"
+    },
+    {
+      "start": 248.94,
+      "duration": 3.359,
+      "text": "sends back so if you want to get more"
+    },
+    {
+      "start": 251.04,
+      "duration": 5.22,
+      "text": "information we can go through this"
+    },
+    {
+      "start": 252.299,
+      "duration": 6.9,
+      "text": "documentation on KMS which will help you"
+    },
+    {
+      "start": 256.26,
+      "duration": 4.74,
+      "text": "understand what is cmk how does the"
+    },
+    {
+      "start": 259.199,
+      "duration": 4.5,
+      "text": "encryption is done"
+    },
+    {
+      "start": 261.0,
+      "duration": 4.68,
+      "text": "so cmks are of different type you can"
+    },
+    {
+      "start": 263.699,
+      "duration": 4.921,
+      "text": "see customer managed key and then you"
+    },
+    {
+      "start": 265.68,
+      "duration": 4.5,
+      "text": "have AWS my skin AWS own key"
+    },
+    {
+      "start": 268.62,
+      "duration": 3.299,
+      "text": "so"
+    },
+    {
+      "start": 270.18,
+      "duration": 4.32,
+      "text": "the correct answer for this is going to"
+    },
+    {
+      "start": 271.919,
+      "duration": 3.901,
+      "text": "be KMS store the cmk receive the data"
+    },
+    {
+      "start": 274.5,
+      "duration": 4.58,
+      "text": "from the client and then the encryption"
+    },
+    {
+      "start": 275.82,
+      "duration": 3.26,
+      "text": "is done and sent back to the client"
+    },
+    {
+      "start": 279.24,
+      "duration": 3.72,
+      "text": "the next question is a company is"
+    },
+    {
+      "start": 281.16,
+      "duration": 4.86,
+      "text": "looking for optimizing their Amazon ec2"
+    },
+    {
+      "start": 282.96,
+      "duration": 5.459,
+      "text": "instance class cost uh"
+    },
+    {
+      "start": 286.02,
+      "duration": 4.44,
+      "text": "and then this instances are sure to run"
+    },
+    {
+      "start": 288.419,
+      "duration": 3.601,
+      "text": "for a few years where the instance type"
+    },
+    {
+      "start": 290.46,
+      "duration": 3.42,
+      "text": "might be changed based on the"
+    },
+    {
+      "start": 292.02,
+      "duration": 3.899,
+      "text": "requirements so which ec2 instance"
+    },
+    {
+      "start": 293.88,
+      "duration": 4.319,
+      "text": "purchasing option should they opt to"
+    },
+    {
+      "start": 295.919,
+      "duration": 3.601,
+      "text": "meet the reduced cross criteria so here"
+    },
+    {
+      "start": 298.199,
+      "duration": 3.541,
+      "text": "the question is based on the ec2"
+    },
+    {
+      "start": 299.52,
+      "duration": 4.32,
+      "text": "instance purchasing options and you have"
+    },
+    {
+      "start": 301.74,
+      "duration": 4.08,
+      "text": "requirement that this instance is a way"
+    },
+    {
+      "start": 303.84,
+      "duration": 3.9,
+      "text": "to run for few years but the instant"
+    },
+    {
+      "start": 305.82,
+      "duration": 4.379,
+      "text": "site might be changed"
+    },
+    {
+      "start": 307.74,
+      "duration": 4.8,
+      "text": "so you want to find the least or the"
+    },
+    {
+      "start": 310.199,
+      "duration": 5.22,
+      "text": "most cost effective instance type which"
+    },
+    {
+      "start": 312.54,
+      "duration": 4.68,
+      "text": "can provide us with these two options to"
+    },
+    {
+      "start": 315.419,
+      "duration": 4.261,
+      "text": "understand this you can watch it you can"
+    },
+    {
+      "start": 317.22,
+      "duration": 3.24,
+      "text": "watch my video on purchasing options on"
+    },
+    {
+      "start": 319.68,
+      "duration": 2.76,
+      "text": "aw"
+    },
+    {
+      "start": 320.46,
+      "duration": 4.26,
+      "text": "you can watch this video where I explain"
+    },
+    {
+      "start": 322.44,
+      "duration": 4.14,
+      "text": "what are reserved instances schedule"
+    },
+    {
+      "start": 324.72,
+      "duration": 3.78,
+      "text": "Visa of instances convertible reserved"
+    },
+    {
+      "start": 326.58,
+      "duration": 3.119,
+      "text": "instances but whenever you have a"
+    },
+    {
+      "start": 328.5,
+      "duration": 3.06,
+      "text": "criteria where you have to run an"
+    },
+    {
+      "start": 329.699,
+      "duration": 3.661,
+      "text": "instance for few years and you want to"
+    },
+    {
+      "start": 331.56,
+      "duration": 3.6,
+      "text": "change the instance type in between then"
+    },
+    {
+      "start": 333.36,
+      "duration": 3.3,
+      "text": "it should go with convertible reserved"
+    },
+    {
+      "start": 335.16,
+      "duration": 3.42,
+      "text": "instance which is the most cost"
+    },
+    {
+      "start": 336.66,
+      "duration": 3.24,
+      "text": "effective when you use standard you"
+    },
+    {
+      "start": 338.58,
+      "duration": 3.36,
+      "text": "won't be able to change the instance"
+    },
+    {
+      "start": 339.9,
+      "duration": 3.54,
+      "text": "family or instance type schedule"
+    },
+    {
+      "start": 341.94,
+      "duration": 3.42,
+      "text": "instance is not going to help you in"
+    },
+    {
+      "start": 343.44,
+      "duration": 3.78,
+      "text": "here and there's no option like elastic"
+    },
+    {
+      "start": 345.36,
+      "duration": 3.72,
+      "text": "reserved instance so the answer is"
+    },
+    {
+      "start": 347.22,
+      "duration": 3.78,
+      "text": "convertible reserved instance which can"
+    },
+    {
+      "start": 349.08,
+      "duration": 3.959,
+      "text": "help you run that instance for either"
+    },
+    {
+      "start": 351.0,
+      "duration": 3.84,
+      "text": "one year or for three year and you can"
+    },
+    {
+      "start": 353.039,
+      "duration": 3.361,
+      "text": "also change the instance type so the"
+    },
+    {
+      "start": 354.84,
+      "duration": 3.54,
+      "text": "correct answer is convertible reserved"
+    },
+    {
+      "start": 356.4,
+      "duration": 4.38,
+      "text": "instance"
+    },
+    {
+      "start": 358.38,
+      "duration": 4.8,
+      "text": "the question next question is technical"
+    },
+    {
+      "start": 360.78,
+      "duration": 4.919,
+      "text": "need of your team has reviewed cloud"
+    },
+    {
+      "start": 363.18,
+      "duration": 4.44,
+      "text": "formation yaml template returned by a"
+    },
+    {
+      "start": 365.699,
+      "duration": 4.081,
+      "text": "new recruit and specified that there's"
+    },
+    {
+      "start": 367.62,
+      "duration": 3.96,
+      "text": "an invalid section that isn't that added"
+    },
+    {
+      "start": 369.78,
+      "duration": 4.139,
+      "text": "to a template which of the following"
+    },
+    {
+      "start": 371.58,
+      "duration": 4.44,
+      "text": "represents an environment section"
+    },
+    {
+      "start": 373.919,
+      "duration": 3.601,
+      "text": "so someone a new recruit wrote a clock"
+    },
+    {
+      "start": 376.02,
+      "duration": 3.48,
+      "text": "formation template and he has added an"
+    },
+    {
+      "start": 377.52,
+      "duration": 3.54,
+      "text": "invented section we need to find what is"
+    },
+    {
+      "start": 379.5,
+      "duration": 3.9,
+      "text": "the inlet section in the cloud formation"
+    },
+    {
+      "start": 381.06,
+      "duration": 4.38,
+      "text": "template so we have an options like we"
+    },
+    {
+      "start": 383.4,
+      "duration": 3.54,
+      "text": "have options like resources"
+    },
+    {
+      "start": 385.44,
+      "duration": 3.36,
+      "text": "we have options like resources"
+    },
+    {
+      "start": 386.94,
+      "duration": 4.74,
+      "text": "dependencies conditions and parameters"
+    },
+    {
+      "start": 388.8,
+      "duration": 5.7,
+      "text": "if I show your documentation of this"
+    },
+    {
+      "start": 391.68,
+      "duration": 4.56,
+      "text": "let's go to this documentation and see"
+    },
+    {
+      "start": 394.5,
+      "duration": 3.419,
+      "text": "what does a cloud formation template"
+    },
+    {
+      "start": 396.24,
+      "duration": 3.42,
+      "text": "look like so here's the Json format"
+    },
+    {
+      "start": 397.919,
+      "duration": 4.021,
+      "text": "template and here is yaml firmware"
+    },
+    {
+      "start": 399.66,
+      "duration": 5.159,
+      "text": "template if I show you in yaml there is"
+    },
+    {
+      "start": 401.94,
+      "duration": 6.0,
+      "text": "no there is description metadata"
+    },
+    {
+      "start": 404.819,
+      "duration": 6.241,
+      "text": "parameters rules mappings conditions"
+    },
+    {
+      "start": 407.94,
+      "duration": 5.46,
+      "text": "resources outputs so we can see"
+    },
+    {
+      "start": 411.06,
+      "duration": 4.62,
+      "text": "the resources here we can also see"
+    },
+    {
+      "start": 413.4,
+      "duration": 4.56,
+      "text": "conditions here we can see parameters"
+    },
+    {
+      "start": 415.68,
+      "duration": 4.139,
+      "text": "here so but"
+    },
+    {
+      "start": 417.96,
+      "duration": 3.959,
+      "text": "so this resources conditions and"
+    },
+    {
+      "start": 419.819,
+      "duration": 3.6,
+      "text": "parameters but there is no dependency so"
+    },
+    {
+      "start": 421.919,
+      "duration": 4.521,
+      "text": "dependencies are invalid section in"
+    },
+    {
+      "start": 423.419,
+      "duration": 3.021,
+      "text": "cloud formation template"
+    },
+    {
+      "start": 426.72,
+      "duration": 4.08,
+      "text": "question fifth is a developer has been"
+    },
+    {
+      "start": 429.12,
+      "duration": 4.26,
+      "text": "interested with the job of securing"
+    },
+    {
+      "start": 430.8,
+      "duration": 5.28,
+      "text": "certain S3 buckets that are shared by"
+    },
+    {
+      "start": 433.38,
+      "duration": 4.68,
+      "text": "last team of users last time a bucket"
+    },
+    {
+      "start": 436.08,
+      "duration": 4.08,
+      "text": "policy was changed the bucket was"
+    },
+    {
+      "start": 438.06,
+      "duration": 4.32,
+      "text": "available for everyone outside the"
+    },
+    {
+      "start": 440.16,
+      "duration": 3.96,
+      "text": "organization too so which feature or"
+    },
+    {
+      "start": 442.38,
+      "duration": 3.48,
+      "text": "service will help the developer identify"
+    },
+    {
+      "start": 444.12,
+      "duration": 3.6,
+      "text": "similar security issues with minimum"
+    },
+    {
+      "start": 445.86,
+      "duration": 5.1,
+      "text": "effort so here the question is asking"
+    },
+    {
+      "start": 447.72,
+      "duration": 5.58,
+      "text": "you to find a service that can help you"
+    },
+    {
+      "start": 450.96,
+      "duration": 4.2,
+      "text": "tell what is the policy going to do like"
+    },
+    {
+      "start": 453.3,
+      "duration": 4.08,
+      "text": "who is going to access that service if"
+    },
+    {
+      "start": 455.16,
+      "duration": 4.439,
+      "text": "the policies attached so which service"
+    },
+    {
+      "start": 457.38,
+      "duration": 6.0,
+      "text": "can you use the options are IM access"
+    },
+    {
+      "start": 459.599,
+      "duration": 7.5,
+      "text": "analyzer S3 object lock S3 analytics and"
+    },
+    {
+      "start": 463.38,
+      "duration": 6.12,
+      "text": "access advisor feature on IM consult so"
+    },
+    {
+      "start": 467.099,
+      "duration": 4.801,
+      "text": "options are IM access analyzer S3 object"
+    },
+    {
+      "start": 469.5,
+      "duration": 4.199,
+      "text": "lock S3 analytics and access advisor"
+    },
+    {
+      "start": 471.9,
+      "duration": 3.66,
+      "text": "feature on IM console if I go to the"
+    },
+    {
+      "start": 473.699,
+      "duration": 4.381,
+      "text": "dashboard and show you what is an IM"
+    },
+    {
+      "start": 475.56,
+      "duration": 4.02,
+      "text": "access analyzer let's go to our AWS"
+    },
+    {
+      "start": 478.08,
+      "duration": 4.64,
+      "text": "dashboard"
+    },
+    {
+      "start": 479.58,
+      "duration": 3.14,
+      "text": "and I'm going to go to my IM"
+    },
+    {
+      "start": 483.12,
+      "duration": 5.579,
+      "text": "in IEM you can find the option"
+    },
+    {
+      "start": 485.819,
+      "duration": 5.28,
+      "text": "if you can find access analyzer here"
+    },
+    {
+      "start": 488.699,
+      "duration": 3.961,
+      "text": "so access analyzer if you go to that"
+    },
+    {
+      "start": 491.099,
+      "duration": 3.481,
+      "text": "page"
+    },
+    {
+      "start": 492.66,
+      "duration": 4.92,
+      "text": "actually as it is used to monitor access"
+    },
+    {
+      "start": 494.58,
+      "duration": 4.98,
+      "text": "to the resources and you can Define this"
+    },
+    {
+      "start": 497.58,
+      "duration": 4.26,
+      "text": "book like who should access this either"
+    },
+    {
+      "start": 499.56,
+      "duration": 4.68,
+      "text": "organization or an AWS account and this"
+    },
+    {
+      "start": 501.84,
+      "duration": 4.44,
+      "text": "is this this is a true zone of trust so"
+    },
+    {
+      "start": 504.24,
+      "duration": 4.079,
+      "text": "using this you can identify if someone"
+    },
+    {
+      "start": 506.28,
+      "duration": 3.66,
+      "text": "else has access to your resources or not"
+    },
+    {
+      "start": 508.319,
+      "duration": 5.041,
+      "text": "and this is what action this is actually"
+    },
+    {
+      "start": 509.94,
+      "duration": 4.68,
+      "text": "what we want so I access analyzer looks"
+    },
+    {
+      "start": 513.36,
+      "duration": 3.419,
+      "text": "like the correct answer to me but let's"
+    },
+    {
+      "start": 514.62,
+      "duration": 5.099,
+      "text": "see the other options so S3 object clock"
+    },
+    {
+      "start": 516.779,
+      "duration": 5.7,
+      "text": "object lock is used to prevent rights on"
+    },
+    {
+      "start": 519.719,
+      "duration": 4.62,
+      "text": "S3 so this is not what the answer the"
+    },
+    {
+      "start": 522.479,
+      "duration": 4.201,
+      "text": "question is asking for this is not the"
+    },
+    {
+      "start": 524.339,
+      "duration": 4.56,
+      "text": "correct answer S3 analytics is also not"
+    },
+    {
+      "start": 526.68,
+      "duration": 4.62,
+      "text": "the correct answer because"
+    },
+    {
+      "start": 528.899,
+      "duration": 4.62,
+      "text": "by using Amazon SD analytics you can"
+    },
+    {
+      "start": 531.3,
+      "duration": 4.32,
+      "text": "analyze the storage patterns and then"
+    },
+    {
+      "start": 533.519,
+      "duration": 3.901,
+      "text": "you can choose the right storage class"
+    },
+    {
+      "start": 535.62,
+      "duration": 3.42,
+      "text": "so this is not what the question is"
+    },
+    {
+      "start": 537.42,
+      "duration": 3.9,
+      "text": "asking so this is not the right answer"
+    },
+    {
+      "start": 539.04,
+      "duration": 4.739,
+      "text": "next you have access advisor access"
+    },
+    {
+      "start": 541.32,
+      "duration": 4.8,
+      "text": "advisor and AWS will let you know what"
+    },
+    {
+      "start": 543.779,
+      "duration": 4.441,
+      "text": "are the unused Rule and then you can"
+    },
+    {
+      "start": 546.12,
+      "duration": 4.56,
+      "text": "remove that rule so if you go here and"
+    },
+    {
+      "start": 548.22,
+      "duration": 4.619,
+      "text": "go to any of these users you can find"
+    },
+    {
+      "start": 550.68,
+      "duration": 4.56,
+      "text": "access advisor settings let's say let's"
+    },
+    {
+      "start": 552.839,
+      "duration": 4.201,
+      "text": "go to Alex user here and you have access"
+    },
+    {
+      "start": 555.24,
+      "duration": 4.68,
+      "text": "advisor setting here where you can find"
+    },
+    {
+      "start": 557.04,
+      "duration": 5.04,
+      "text": "any of the services that are not used by"
+    },
+    {
+      "start": 559.92,
+      "duration": 4.68,
+      "text": "that particular user so you can remove"
+    },
+    {
+      "start": 562.08,
+      "duration": 5.52,
+      "text": "that from from their permissions"
+    },
+    {
+      "start": 564.6,
+      "duration": 4.919,
+      "text": "so access advisor is also not the right"
+    },
+    {
+      "start": 567.6,
+      "duration": 3.72,
+      "text": "answer there right answer is I am access"
+    },
+    {
+      "start": 569.519,
+      "duration": 4.44,
+      "text": "analyze and if you go to the doc"
+    },
+    {
+      "start": 571.32,
+      "duration": 4.44,
+      "text": "solution here you can find that IM"
+    },
+    {
+      "start": 573.959,
+      "duration": 3.181,
+      "text": "access analyzer help to identify the"
+    },
+    {
+      "start": 575.76,
+      "duration": 4.199,
+      "text": "resource in your organization and"
+    },
+    {
+      "start": 577.14,
+      "duration": 4.86,
+      "text": "accounts so the S3 packet IM rules that"
+    },
+    {
+      "start": 579.959,
+      "duration": 5.221,
+      "text": "are shared with an external right entity"
+    },
+    {
+      "start": 582.0,
+      "duration": 5.7,
+      "text": "this lets you identify unintended access"
+    },
+    {
+      "start": 585.18,
+      "duration": 4.68,
+      "text": "to your resources data which is a"
+    },
+    {
+      "start": 587.7,
+      "duration": 4.68,
+      "text": "security risk you can set the scope for"
+    },
+    {
+      "start": 589.86,
+      "duration": 3.3,
+      "text": "your analyzer to an organization or AWS"
+    },
+    {
+      "start": 592.38,
+      "duration": 3.24,
+      "text": "account"
+    },
+    {
+      "start": 593.16,
+      "duration": 4.799,
+      "text": "that is correct so we can also see the"
+    },
+    {
+      "start": 595.62,
+      "duration": 4.5,
+      "text": "other options like as the object lock it"
+    },
+    {
+      "start": 597.959,
+      "duration": 4.741,
+      "text": "says you can only use right once and"
+    },
+    {
+      "start": 600.12,
+      "duration": 5.04,
+      "text": "read many to prevent accidental or"
+    },
+    {
+      "start": 602.7,
+      "duration": 3.6,
+      "text": "inappropriate deletion of data so this"
+    },
+    {
+      "start": 605.16,
+      "duration": 3.299,
+      "text": "is not the right answer for the current"
+    },
+    {
+      "start": 606.3,
+      "duration": 5.159,
+      "text": "scenario so the correct answer is I am"
+    },
+    {
+      "start": 608.459,
+      "duration": 4.801,
+      "text": "access analyzer let's go to the next"
+    },
+    {
+      "start": 611.459,
+      "duration": 4.681,
+      "text": "question which is question six question"
+    },
+    {
+      "start": 613.26,
+      "duration": 5.579,
+      "text": "six says a developer a development team"
+    },
+    {
+      "start": 616.14,
+      "duration": 5.94,
+      "text": "is leading a development team lead is"
+    },
+    {
+      "start": 618.839,
+      "duration": 5.761,
+      "text": "configuring policies for his team at an"
+    },
+    {
+      "start": 622.08,
+      "duration": 4.68,
+      "text": "ID company which of the following policy"
+    },
+    {
+      "start": 624.6,
+      "duration": 4.98,
+      "text": "types only limit permissions out but"
+    },
+    {
+      "start": 626.76,
+      "duration": 6.8,
+      "text": "cannot Grant permissions so among these"
+    },
+    {
+      "start": 629.58,
+      "duration": 6.42,
+      "text": "which of the policies can only"
+    },
+    {
+      "start": 633.56,
+      "duration": 3.58,
+      "text": "live information but to not Grant"
+    },
+    {
+      "start": 636.0,
+      "duration": 4.62,
+      "text": "permission so you have permissions"
+    },
+    {
+      "start": 637.14,
+      "duration": 6.6,
+      "text": "boundary you have AWS organization SCP"
+    },
+    {
+      "start": 640.62,
+      "duration": 6.0,
+      "text": "you have identity based policy resource"
+    },
+    {
+      "start": 643.74,
+      "duration": 4.86,
+      "text": "based policy and access control policy"
+    },
+    {
+      "start": 646.62,
+      "duration": 5.7,
+      "text": "so the question is asking for the policy"
+    },
+    {
+      "start": 648.6,
+      "duration": 6.0,
+      "text": "which can limit access but not granted"
+    },
+    {
+      "start": 652.32,
+      "duration": 4.44,
+      "text": "so to understand this we can go to this"
+    },
+    {
+      "start": 654.6,
+      "duration": 4.44,
+      "text": "documentation you can see the answer but"
+    },
+    {
+      "start": 656.76,
+      "duration": 3.78,
+      "text": "let's understand why these two are the"
+    },
+    {
+      "start": 659.04,
+      "duration": 4.62,
+      "text": "correct answer why permission boundary"
+    },
+    {
+      "start": 660.54,
+      "duration": 6.0,
+      "text": "and organization SCP are correct answers"
+    },
+    {
+      "start": 663.66,
+      "duration": 4.14,
+      "text": "let go to this documentation by AWS and"
+    },
+    {
+      "start": 666.54,
+      "duration": 4.34,
+      "text": "you can find the different policy types"
+    },
+    {
+      "start": 667.8,
+      "duration": 7.02,
+      "text": "here so in the in the options we have"
+    },
+    {
+      "start": 670.88,
+      "duration": 6.28,
+      "text": "identity resource access and then these"
+    },
+    {
+      "start": 674.82,
+      "duration": 4.74,
+      "text": "two so let's go to IIT based policy you"
+    },
+    {
+      "start": 677.16,
+      "duration": 4.02,
+      "text": "can find it here identity based policy"
+    },
+    {
+      "start": 679.56,
+      "duration": 4.26,
+      "text": "are attached a managed and in Life"
+    },
+    {
+      "start": 681.18,
+      "duration": 4.5,
+      "text": "policies to IM identities and identity"
+    },
+    {
+      "start": 683.82,
+      "duration": 3.78,
+      "text": "based policies Grant permissions to an"
+    },
+    {
+      "start": 685.68,
+      "duration": 3.42,
+      "text": "identity so this is granting permission"
+    },
+    {
+      "start": 687.6,
+      "duration": 4.08,
+      "text": "it is not limiting permission which the"
+    },
+    {
+      "start": 689.1,
+      "duration": 4.62,
+      "text": "question is asking for so which policy"
+    },
+    {
+      "start": 691.68,
+      "duration": 4.74,
+      "text": "types only limit permission but cannot"
+    },
+    {
+      "start": 693.72,
+      "duration": 4.08,
+      "text": "Grant permission so identity is out of"
+    },
+    {
+      "start": 696.42,
+      "duration": 3.12,
+      "text": "the option now then you have"
+    },
+    {
+      "start": 697.8,
+      "duration": 3.96,
+      "text": "resource-based policy if you see"
+    },
+    {
+      "start": 699.54,
+      "duration": 3.96,
+      "text": "resource based policy it is used to"
+    },
+    {
+      "start": 701.76,
+      "duration": 3.72,
+      "text": "Grant Provisions to the principle that"
+    },
+    {
+      "start": 703.5,
+      "duration": 3.66,
+      "text": "is specified in the policy so"
+    },
+    {
+      "start": 705.48,
+      "duration": 3.539,
+      "text": "resource-based policies Grant permission"
+    },
+    {
+      "start": 707.16,
+      "duration": 4.2,
+      "text": "to the police to the principle that is"
+    },
+    {
+      "start": 709.019,
+      "duration": 4.141,
+      "text": "specified so this is not limiting or"
+    },
+    {
+      "start": 711.36,
+      "duration": 3.659,
+      "text": "policy but this is granting it which is"
+    },
+    {
+      "start": 713.16,
+      "duration": 3.6,
+      "text": "not the question once so this is also"
+    },
+    {
+      "start": 715.019,
+      "duration": 4.32,
+      "text": "not the option next you have permission"
+    },
+    {
+      "start": 716.76,
+      "duration": 4.74,
+      "text": "boundaries so here this is used for an"
+    },
+    {
+      "start": 719.339,
+      "duration": 4.021,
+      "text": "IM entity this policy defines the"
+    },
+    {
+      "start": 721.5,
+      "duration": 4.5,
+      "text": "maximum number maximum permission that"
+    },
+    {
+      "start": 723.36,
+      "duration": 4.56,
+      "text": "is identity policy can grant but does"
+    },
+    {
+      "start": 726.0,
+      "duration": 3.18,
+      "text": "not Grant permissions so this is not a"
+    },
+    {
+      "start": 727.92,
+      "duration": 2.7,
+      "text": "writing permission but limiting the"
+    },
+    {
+      "start": 729.18,
+      "duration": 4.26,
+      "text": "permissions so this is one of the"
+    },
+    {
+      "start": 730.62,
+      "duration": 4.86,
+      "text": "answers so first option is provision's"
+    },
+    {
+      "start": 733.44,
+      "duration": 4.8,
+      "text": "boundary let's see the next which is"
+    },
+    {
+      "start": 735.48,
+      "duration": 4.859,
+      "text": "organization scps so use organization"
+    },
+    {
+      "start": 738.24,
+      "duration": 4.14,
+      "text": "SCP to define the maximum permission for"
+    },
+    {
+      "start": 740.339,
+      "duration": 3.481,
+      "text": "account members of an organization or"
+    },
+    {
+      "start": 742.38,
+      "duration": 4.32,
+      "text": "organization unit"
+    },
+    {
+      "start": 743.82,
+      "duration": 5.1,
+      "text": "sap limit permission that identity based"
+    },
+    {
+      "start": 746.7,
+      "duration": 3.96,
+      "text": "policies or resource-based policies"
+    },
+    {
+      "start": 748.92,
+      "duration": 3.18,
+      "text": "Grant within the account but the Lord"
+    },
+    {
+      "start": 750.66,
+      "duration": 3.419,
+      "text": "grant permission so you can see it is"
+    },
+    {
+      "start": 752.1,
+      "duration": 3.54,
+      "text": "limiting the permission but not granting"
+    },
+    {
+      "start": 754.079,
+      "duration": 3.301,
+      "text": "any permissions so this is also the"
+    },
+    {
+      "start": 755.64,
+      "duration": 3.72,
+      "text": "current answers so these two are the"
+    },
+    {
+      "start": 757.38,
+      "duration": 4.44,
+      "text": "correct answers permission boundary and"
+    },
+    {
+      "start": 759.36,
+      "duration": 4.32,
+      "text": "organization service"
+    },
+    {
+      "start": 761.82,
+      "duration": 4.56,
+      "text": "boundary if you see for Access rental"
+    },
+    {
+      "start": 763.68,
+      "duration": 5.52,
+      "text": "list you can find it here Access Control"
+    },
+    {
+      "start": 766.38,
+      "duration": 5.639,
+      "text": "list I used to Grant permissions so"
+    },
+    {
+      "start": 769.2,
+      "duration": 5.639,
+      "text": "Access Control list across that Grant"
+    },
+    {
+      "start": 772.019,
+      "duration": 5.341,
+      "text": "permissions to specified principles"
+    },
+    {
+      "start": 774.839,
+      "duration": 4.62,
+      "text": "so the correct answer is permissions"
+    },
+    {
+      "start": 777.36,
+      "duration": 3.779,
+      "text": "boundary and organization SCP can only"
+    },
+    {
+      "start": 779.459,
+      "duration": 4.38,
+      "text": "limit permission but cannot Grant"
+    },
+    {
+      "start": 781.139,
+      "duration": 4.5,
+      "text": "permissions to any AWS Identity or"
+    },
+    {
+      "start": 783.839,
+      "duration": 3.24,
+      "text": "entities"
+    },
+    {
+      "start": 785.639,
+      "duration": 3.601,
+      "text": "let's go to the next question which is"
+    },
+    {
+      "start": 787.079,
+      "duration": 4.2,
+      "text": "question seven a developer has been"
+    },
+    {
+      "start": 789.24,
+      "duration": 4.62,
+      "text": "asked to create an application that can"
+    },
+    {
+      "start": 791.279,
+      "duration": 4.62,
+      "text": "be deployed across Fleet of ec2"
+    },
+    {
+      "start": 793.86,
+      "duration": 3.24,
+      "text": "instances so developer has been asked to"
+    },
+    {
+      "start": 795.899,
+      "duration": 2.521,
+      "text": "create an application that can be"
+    },
+    {
+      "start": 797.1,
+      "duration": 3.359,
+      "text": "deployed"
+    },
+    {
+      "start": 798.42,
+      "duration": 4.26,
+      "text": "across Fleet of ec2 instances the"
+    },
+    {
+      "start": 800.459,
+      "duration": 4.68,
+      "text": "configuration must allow full control"
+    },
+    {
+      "start": 802.68,
+      "duration": 4.32,
+      "text": "over deployment steps using blue green"
+    },
+    {
+      "start": 805.139,
+      "duration": 3.361,
+      "text": "deployment so here there are two"
+    },
+    {
+      "start": 807.0,
+      "duration": 3.5,
+      "text": "requirements one is to create an"
+    },
+    {
+      "start": 808.5,
+      "duration": 4.56,
+      "text": "application that has to be deployed for"
+    },
+    {
+      "start": 810.5,
+      "duration": 3.76,
+      "text": "Fleet of ec2 instances and when you"
+    },
+    {
+      "start": 813.06,
+      "duration": 3.3,
+      "text": "deploy it you should have full control"
+    },
+    {
+      "start": 814.26,
+      "duration": 4.019,
+      "text": "over the blue green deployment so we"
+    },
+    {
+      "start": 816.36,
+      "duration": 4.2,
+      "text": "have options like code built code deploy"
+    },
+    {
+      "start": 818.279,
+      "duration": 4.86,
+      "text": "elastic bean stock and code pipeline"
+    },
+    {
+      "start": 820.56,
+      "duration": 5.04,
+      "text": "code wind"
+    },
+    {
+      "start": 823.139,
+      "duration": 4.14,
+      "text": "so code code wind is a service that is"
+    },
+    {
+      "start": 825.6,
+      "duration": 3.78,
+      "text": "fully managed used for continuous"
+    },
+    {
+      "start": 827.279,
+      "duration": 5.161,
+      "text": "integration that compiles your code to"
+    },
+    {
+      "start": 829.38,
+      "duration": 5.82,
+      "text": "run the test and then give that to code"
+    },
+    {
+      "start": 832.44,
+      "duration": 4.199,
+      "text": "deploy to deploy the application so code"
+    },
+    {
+      "start": 835.2,
+      "duration": 2.759,
+      "text": "deploy is actually used for deployment"
+    },
+    {
+      "start": 836.639,
+      "duration": 4.14,
+      "text": "of applications and the question is"
+    },
+    {
+      "start": 837.959,
+      "duration": 5.101,
+      "text": "actually deploying uh the application"
+    },
+    {
+      "start": 840.779,
+      "duration": 4.381,
+      "text": "across Fleet of issue instances so code"
+    },
+    {
+      "start": 843.06,
+      "duration": 4.62,
+      "text": "deploy might be the right answer but you"
+    },
+    {
+      "start": 845.16,
+      "duration": 5.1,
+      "text": "also have elastic bean stock here which"
+    },
+    {
+      "start": 847.68,
+      "duration": 6.48,
+      "text": "is used for deploying applications"
+    },
+    {
+      "start": 850.26,
+      "duration": 5.819,
+      "text": "without managing any AWS infrastructure"
+    },
+    {
+      "start": 854.16,
+      "duration": 3.9,
+      "text": "the code web and if you see the fourth"
+    },
+    {
+      "start": 856.079,
+      "duration": 4.921,
+      "text": "option is code pipeline code pipeline is"
+    },
+    {
+      "start": 858.06,
+      "duration": 4.86,
+      "text": "automated build test and deploy phases"
+    },
+    {
+      "start": 861.0,
+      "duration": 3.779,
+      "text": "so you can just put the stages in code"
+    },
+    {
+      "start": 862.92,
+      "duration": 3.96,
+      "text": "pipeline so it is not actually used for"
+    },
+    {
+      "start": 864.779,
+      "duration": 3.721,
+      "text": "deployment we have to use underlying"
+    },
+    {
+      "start": 866.88,
+      "duration": 4.019,
+      "text": "services like code deploy to deploy the"
+    },
+    {
+      "start": 868.5,
+      "duration": 4.74,
+      "text": "application so among these two which one"
+    },
+    {
+      "start": 870.899,
+      "duration": 4.141,
+      "text": "of the is the correct answer you can try"
+    },
+    {
+      "start": 873.24,
+      "duration": 3.839,
+      "text": "to answer it"
+    },
+    {
+      "start": 875.04,
+      "duration": 4.2,
+      "text": "in the comment if you look or let me"
+    },
+    {
+      "start": 877.079,
+      "duration": 4.081,
+      "text": "explain which one is the correct answer"
+    },
+    {
+      "start": 879.24,
+      "duration": 3.779,
+      "text": "so here the question is also stating"
+    },
+    {
+      "start": 881.16,
+      "duration": 3.9,
+      "text": "that you need to have full control over"
+    },
+    {
+      "start": 883.019,
+      "duration": 3.481,
+      "text": "deployment steps and then you can get"
+    },
+    {
+      "start": 885.06,
+      "duration": 3.899,
+      "text": "the full control over deployment states"
+    },
+    {
+      "start": 886.5,
+      "duration": 4.56,
+      "text": "only when you use code deploy elastic"
+    },
+    {
+      "start": 888.959,
+      "duration": 4.68,
+      "text": "Beanstalk you don't get because elastic"
+    },
+    {
+      "start": 891.06,
+      "duration": 4.98,
+      "text": "pin stock is a managed service by AWS so"
+    },
+    {
+      "start": 893.639,
+      "duration": 4.861,
+      "text": "if you go to Solutions here and read the"
+    },
+    {
+      "start": 896.04,
+      "duration": 3.84,
+      "text": "description you can see code deploy is"
+    },
+    {
+      "start": 898.5,
+      "duration": 3.12,
+      "text": "deployment service that automates"
+    },
+    {
+      "start": 899.88,
+      "duration": 4.56,
+      "text": "application to Amazon ec2 instances"
+    },
+    {
+      "start": 901.62,
+      "duration": 4.68,
+      "text": "on-premise instances or serverless"
+    },
+    {
+      "start": 904.44,
+      "duration": 4.199,
+      "text": "Lambda functions and it also supports"
+    },
+    {
+      "start": 906.3,
+      "duration": 4.62,
+      "text": "blueprint deployment which is controlled"
+    },
+    {
+      "start": 908.639,
+      "duration": 4.081,
+      "text": "by code deploy so you have all the"
+    },
+    {
+      "start": 910.92,
+      "duration": 4.56,
+      "text": "control options and if you see elastic"
+    },
+    {
+      "start": 912.72,
+      "duration": 5.46,
+      "text": "being stuck offers look but does not as"
+    },
+    {
+      "start": 915.48,
+      "duration": 4.979,
+      "text": "much control as code deployed"
+    },
+    {
+      "start": 918.18,
+      "duration": 4.38,
+      "text": "so the correct answer for this scenario"
+    },
+    {
+      "start": 920.459,
+      "duration": 3.901,
+      "text": "is going to be code deploy which is a"
+    },
+    {
+      "start": 922.56,
+      "duration": 3.3,
+      "text": "deployment service in AWS that lets you"
+    },
+    {
+      "start": 924.36,
+      "duration": 4.44,
+      "text": "Deploy on easy to instances Lambda"
+    },
+    {
+      "start": 925.86,
+      "duration": 5.76,
+      "text": "functions and also on-premise servers"
+    },
+    {
+      "start": 928.8,
+      "duration": 4.979,
+      "text": "let's go to question 8 so the question 8"
+    },
+    {
+      "start": 931.62,
+      "duration": 3.959,
+      "text": "States a development team at an IIT"
+    },
+    {
+      "start": 933.779,
+      "duration": 3.481,
+      "text": "company wants to make changes to a"
+    },
+    {
+      "start": 935.579,
+      "duration": 4.981,
+      "text": "current application written in node.js"
+    },
+    {
+      "start": 937.26,
+      "duration": 5.759,
+      "text": "and Deploy on the Linux server"
+    },
+    {
+      "start": 940.56,
+      "duration": 5.1,
+      "text": "the teammate would like to decouple the"
+    },
+    {
+      "start": 943.019,
+      "duration": 4.081,
+      "text": "application into microservices package"
+    },
+    {
+      "start": 945.66,
+      "duration": 4.08,
+      "text": "the application to Docker container"
+    },
+    {
+      "start": 947.1,
+      "duration": 5.22,
+      "text": "which is then run on AWS infrastructure"
+    },
+    {
+      "start": 949.74,
+      "duration": 3.599,
+      "text": "which AWS service is best suited for"
+    },
+    {
+      "start": 952.32,
+      "duration": 3.06,
+      "text": "this change"
+    },
+    {
+      "start": 953.339,
+      "duration": 4.021,
+      "text": "so according to the question we have an"
+    },
+    {
+      "start": 955.38,
+      "duration": 5.88,
+      "text": "application written in node.js and we"
+    },
+    {
+      "start": 957.36,
+      "duration": 6.3,
+      "text": "want to deploy it on Linux server"
+    },
+    {
+      "start": 961.26,
+      "duration": 4.079,
+      "text": "so and also we need to create a"
+    },
+    {
+      "start": 963.66,
+      "duration": 3.299,
+      "text": "microservice and deploy this in the form"
+    },
+    {
+      "start": 965.339,
+      "duration": 3.421,
+      "text": "of Docker container so whenever you hear"
+    },
+    {
+      "start": 966.959,
+      "duration": 5.401,
+      "text": "Docker containers or Docker services in"
+    },
+    {
+      "start": 968.76,
+      "duration": 5.519,
+      "text": "AWS you need to look for ECS ECR so we"
+    },
+    {
+      "start": 972.36,
+      "duration": 6.479,
+      "text": "have two different Docker Services here"
+    },
+    {
+      "start": 974.279,
+      "duration": 6.961,
+      "text": "ECR and ECS ECR is a service which lets"
+    },
+    {
+      "start": 978.839,
+      "duration": 4.021,
+      "text": "you store Docker images kind of a Docker"
+    },
+    {
+      "start": 981.24,
+      "duration": 3.959,
+      "text": "Hub where you can store your private"
+    },
+    {
+      "start": 982.86,
+      "duration": 5.64,
+      "text": "images and you have ECS which you can"
+    },
+    {
+      "start": 985.199,
+      "duration": 6.361,
+      "text": "use to deploy Docker containers on on uh"
+    },
+    {
+      "start": 988.5,
+      "duration": 4.62,
+      "text": "on ec2 or using fargate which is a"
+    },
+    {
+      "start": 991.56,
+      "duration": 3.18,
+      "text": "service option so here the question is"
+    },
+    {
+      "start": 993.12,
+      "duration": 3.839,
+      "text": "asking you to deploy it on Linux server"
+    },
+    {
+      "start": 994.74,
+      "duration": 5.159,
+      "text": "so it's going to be an ec2 instance so"
+    },
+    {
+      "start": 996.959,
+      "duration": 4.74,
+      "text": "the correct answer is ecos"
+    },
+    {
+      "start": 999.899,
+      "duration": 3.661,
+      "text": "and if you want to see why is it the"
+    },
+    {
+      "start": 1001.699,
+      "duration": 5.541,
+      "text": "correct answer let's go to the"
+    },
+    {
+      "start": 1003.56,
+      "duration": 3.68,
+      "text": "explanation so if I show you that here"
+    },
+    {
+      "start": 1012.32,
+      "duration": 4.019,
+      "text": "so you can see the explanation here"
+    },
+    {
+      "start": 1013.839,
+      "duration": 3.94,
+      "text": "Amazon ECR is not the correct option"
+    },
+    {
+      "start": 1016.339,
+      "duration": 3.3,
+      "text": "because"
+    },
+    {
+      "start": 1017.779,
+      "duration": 4.081,
+      "text": "ECR is fully managed Docker container"
+    },
+    {
+      "start": 1019.639,
+      "duration": 4.081,
+      "text": "registry that makes it easy to develop"
+    },
+    {
+      "start": 1021.86,
+      "duration": 3.66,
+      "text": "developers to store manage and deploy"
+    },
+    {
+      "start": 1023.72,
+      "duration": 4.38,
+      "text": "container images it's like a Docker hub"
+    },
+    {
+      "start": 1025.52,
+      "duration": 3.96,
+      "text": "for word for AWS Lambda is out of"
+    },
+    {
+      "start": 1028.1,
+      "duration": 3.42,
+      "text": "question because Lambda cannot be used"
+    },
+    {
+      "start": 1029.48,
+      "duration": 5.339,
+      "text": "to run Docker containers it is used to"
+    },
+    {
+      "start": 1031.52,
+      "duration": 4.919,
+      "text": "run code without provisioning or"
+    },
+    {
+      "start": 1034.819,
+      "duration": 4.02,
+      "text": "managing servers then you have stack"
+    },
+    {
+      "start": 1036.439,
+      "duration": 3.9,
+      "text": "functions which are not used to run"
+    },
+    {
+      "start": 1038.839,
+      "duration": 3.36,
+      "text": "Docker container there is a web service"
+    },
+    {
+      "start": 1040.339,
+      "duration": 3.24,
+      "text": "that enables you to coordinate the"
+    },
+    {
+      "start": 1042.199,
+      "duration": 3.061,
+      "text": "components of distributed applications"
+    },
+    {
+      "start": 1043.579,
+      "duration": 3.661,
+      "text": "and micro services using visual and"
+    },
+    {
+      "start": 1045.26,
+      "duration": 3.539,
+      "text": "workflows so the question is asking"
+    },
+    {
+      "start": 1047.24,
+      "duration": 4.14,
+      "text": "which service can be used to deploy"
+    },
+    {
+      "start": 1048.799,
+      "duration": 5.461,
+      "text": "Docker containers or Linux servers and"
+    },
+    {
+      "start": 1051.38,
+      "duration": 5.58,
+      "text": "that is done by using Amazon ECS"
+    },
+    {
+      "start": 1054.26,
+      "duration": 5.46,
+      "text": "so the correct answer is ECS"
+    },
+    {
+      "start": 1056.96,
+      "duration": 4.8,
+      "text": "next question is code commit is a manage"
+    },
+    {
+      "start": 1059.72,
+      "duration": 4.14,
+      "text": "Version Control service that hosts"
+    },
+    {
+      "start": 1061.76,
+      "duration": 4.2,
+      "text": "private git repositories in AWS Cloud"
+    },
+    {
+      "start": 1063.86,
+      "duration": 5.1,
+      "text": "which of the following credentials type"
+    },
+    {
+      "start": 1065.96,
+      "duration": 5.04,
+      "text": "is not supported by iem4 code commit so"
+    },
+    {
+      "start": 1068.96,
+      "duration": 3.18,
+      "text": "I recently uploaded a video on code"
+    },
+    {
+      "start": 1071.0,
+      "duration": 3.299,
+      "text": "commit"
+    },
+    {
+      "start": 1072.14,
+      "duration": 3.659,
+      "text": "if you haven't checked it out I would"
+    },
+    {
+      "start": 1074.299,
+      "duration": 3.181,
+      "text": "recommend you checking it out so that"
+    },
+    {
+      "start": 1075.799,
+      "duration": 4.38,
+      "text": "you can answer this question easily so"
+    },
+    {
+      "start": 1077.48,
+      "duration": 4.62,
+      "text": "code commit is a service in AWS that"
+    },
+    {
+      "start": 1080.179,
+      "duration": 4.081,
+      "text": "lets you create host private git"
+    },
+    {
+      "start": 1082.1,
+      "duration": 6.06,
+      "text": "repository similar to GitHub or gitlab"
+    },
+    {
+      "start": 1084.26,
+      "duration": 5.88,
+      "text": "and how can you uh how can you clone it"
+    },
+    {
+      "start": 1088.16,
+      "duration": 4.08,
+      "text": "or how can you which criticious type can"
+    },
+    {
+      "start": 1090.14,
+      "duration": 3.779,
+      "text": "you use for code commit so you have"
+    },
+    {
+      "start": 1092.24,
+      "duration": 5.34,
+      "text": "options like IM username and password"
+    },
+    {
+      "start": 1093.919,
+      "duration": 6.12,
+      "text": "SSH Keys grid credentials and AWS access"
+    },
+    {
+      "start": 1097.58,
+      "duration": 4.5,
+      "text": "keys so the correct answer here is IM"
+    },
+    {
+      "start": 1100.039,
+      "duration": 3.781,
+      "text": "username and password but if I were to"
+    },
+    {
+      "start": 1102.08,
+      "duration": 3.479,
+      "text": "show you how let let's go to the"
+    },
+    {
+      "start": 1103.82,
+      "duration": 4.68,
+      "text": "documentation to know why is it the"
+    },
+    {
+      "start": 1105.559,
+      "duration": 4.74,
+      "text": "correct uh answer so the question is"
+    },
+    {
+      "start": 1108.5,
+      "duration": 4.919,
+      "text": "asking which of the following is not"
+    },
+    {
+      "start": 1110.299,
+      "duration": 4.861,
+      "text": "supported so it is not supported if I"
+    },
+    {
+      "start": 1113.419,
+      "duration": 4.14,
+      "text": "show you the documentation here you can"
+    },
+    {
+      "start": 1115.16,
+      "duration": 6.24,
+      "text": "see the title says using IM code commit"
+    },
+    {
+      "start": 1117.559,
+      "duration": 6.601,
+      "text": "with get credentials SSH keys and AWS"
+    },
+    {
+      "start": 1121.4,
+      "duration": 4.98,
+      "text": "access keys so other options are SSH"
+    },
+    {
+      "start": 1124.16,
+      "duration": 3.42,
+      "text": "Keys get credentials and access keys"
+    },
+    {
+      "start": 1126.38,
+      "duration": 3.24,
+      "text": "there is no option mentioned like"
+    },
+    {
+      "start": 1127.58,
+      "duration": 5.219,
+      "text": "username and password so this is not"
+    },
+    {
+      "start": 1129.62,
+      "duration": 5.419,
+      "text": "supported by im4 code commit"
+    },
+    {
+      "start": 1132.799,
+      "duration": 2.24,
+      "text": "foreign"
+    },
+    {
+      "start": 1138.039,
+      "duration": 4.301,
+      "text": "keys and access keys but not with IM"
+    },
+    {
+      "start": 1140.539,
+      "duration": 4.441,
+      "text": "username and password"
+    },
+    {
+      "start": 1142.34,
+      "duration": 5.219,
+      "text": "so the next question"
+    },
+    {
+      "start": 1144.98,
+      "duration": 5.22,
+      "text": "number 10 is development team has"
+    },
+    {
+      "start": 1147.559,
+      "duration": 4.62,
+      "text": "configured inbound traffic for 11 ports"
+    },
+    {
+      "start": 1150.2,
+      "duration": 4.56,
+      "text": "in both security group of ec2 instance"
+    },
+    {
+      "start": 1152.179,
+      "duration": 6.36,
+      "text": "as well as network access control list"
+    },
+    {
+      "start": 1154.76,
+      "duration": 6.24,
+      "text": "or knackle of subnet for ec2 instance"
+    },
+    {
+      "start": 1158.539,
+      "duration": 4.38,
+      "text": "the team is however unable to connect to"
+    },
+    {
+      "start": 1161.0,
+      "duration": 4.14,
+      "text": "service running on Amazon ec2 instance"
+    },
+    {
+      "start": 1162.919,
+      "duration": 4.861,
+      "text": "as a developer associate which of the"
+    },
+    {
+      "start": 1165.14,
+      "duration": 5.399,
+      "text": "following will you recommend to issue"
+    },
+    {
+      "start": 1167.78,
+      "duration": 4.62,
+      "text": "to solve this issue so a development"
+    },
+    {
+      "start": 1170.539,
+      "duration": 4.441,
+      "text": "team has configured something and they"
+    },
+    {
+      "start": 1172.4,
+      "duration": 5.88,
+      "text": "have they have"
+    },
+    {
+      "start": 1174.98,
+      "duration": 5.34,
+      "text": "configured inbound traffic for both"
+    },
+    {
+      "start": 1178.28,
+      "duration": 4.139,
+      "text": "Security Group and network access"
+    },
+    {
+      "start": 1180.32,
+      "duration": 4.739,
+      "text": "control list but it they are still not"
+    },
+    {
+      "start": 1182.419,
+      "duration": 4.201,
+      "text": "able to connect to it so if I if you"
+    },
+    {
+      "start": 1185.059,
+      "duration": 3.781,
+      "text": "have a"
+    },
+    {
+      "start": 1186.62,
+      "duration": 3.84,
+      "text": "if you have read about NaCl or network"
+    },
+    {
+      "start": 1188.84,
+      "duration": 5.36,
+      "text": "access control list you might already"
+    },
+    {
+      "start": 1190.46,
+      "duration": 6.18,
+      "text": "know that network access control list is"
+    },
+    {
+      "start": 1194.2,
+      "duration": 4.78,
+      "text": "stateless so you need to allow inbound"
+    },
+    {
+      "start": 1196.64,
+      "duration": 4.32,
+      "text": "as well as outbound traffic"
+    },
+    {
+      "start": 1198.98,
+      "duration": 3.84,
+      "text": "I can show you that with an example but"
+    },
+    {
+      "start": 1200.96,
+      "duration": 3.78,
+      "text": "let's see what are the options here so"
+    },
+    {
+      "start": 1202.82,
+      "duration": 4.14,
+      "text": "the first option is Rule associated with"
+    },
+    {
+      "start": 1204.74,
+      "duration": 4.14,
+      "text": "network ACL should be modified from the"
+    },
+    {
+      "start": 1206.96,
+      "duration": 4.44,
+      "text": "command line This is not correct you can"
+    },
+    {
+      "start": 1208.88,
+      "duration": 5.88,
+      "text": "also modify it through AWS console if"
+    },
+    {
+      "start": 1211.4,
+      "duration": 5.34,
+      "text": "you go to the uh if you go to let me"
+    },
+    {
+      "start": 1214.76,
+      "duration": 4.62,
+      "text": "show you that"
+    },
+    {
+      "start": 1216.74,
+      "duration": 4.26,
+      "text": "so in VPC you can find NaCl or network"
+    },
+    {
+      "start": 1219.38,
+      "duration": 3.78,
+      "text": "access control list which you can manage"
+    },
+    {
+      "start": 1221.0,
+      "duration": 4.98,
+      "text": "through the console so here are the two"
+    },
+    {
+      "start": 1223.16,
+      "duration": 5.759,
+      "text": "Security Options Network ACL and"
+    },
+    {
+      "start": 1225.98,
+      "duration": 4.92,
+      "text": "security groups if I go here I can"
+    },
+    {
+      "start": 1228.919,
+      "duration": 4.321,
+      "text": "manage inbound and outbound traffic"
+    },
+    {
+      "start": 1230.9,
+      "duration": 5.279,
+      "text": "right from my console so there's no need"
+    },
+    {
+      "start": 1233.24,
+      "duration": 4.5,
+      "text": "for us to manage it but when you define"
+    },
+    {
+      "start": 1236.179,
+      "duration": 3.901,
+      "text": "something in inbound you also have to"
+    },
+    {
+      "start": 1237.74,
+      "duration": 3.42,
+      "text": "Define it in outboard because it is it"
+    },
+    {
+      "start": 1240.08,
+      "duration": 3.0,
+      "text": "is stateless"
+    },
+    {
+      "start": 1241.16,
+      "duration": 3.899,
+      "text": "so next you have Network ACLS are"
+    },
+    {
+      "start": 1243.08,
+      "duration": 3.42,
+      "text": "stateless so you must allow both inbound"
+    },
+    {
+      "start": 1245.059,
+      "duration": 2.881,
+      "text": "and outbound Road this is the correct"
+    },
+    {
+      "start": 1246.5,
+      "duration": 3.299,
+      "text": "answer but let's see what are the"
+    },
+    {
+      "start": 1247.94,
+      "duration": 3.84,
+      "text": "different options here"
+    },
+    {
+      "start": 1249.799,
+      "duration": 4.861,
+      "text": "I am role is defined in the security"
+    },
+    {
+      "start": 1251.78,
+      "duration": 4.5,
+      "text": "group is different from the IM rule that"
+    },
+    {
+      "start": 1254.66,
+      "duration": 3.24,
+      "text": "is given in the network there is no"
+    },
+    {
+      "start": 1256.28,
+      "duration": 3.3,
+      "text": "concept of I enrolled in security group"
+    },
+    {
+      "start": 1257.9,
+      "duration": 2.82,
+      "text": "or network ACM so this is not the"
+    },
+    {
+      "start": 1259.58,
+      "duration": 2.82,
+      "text": "correct answer"
+    },
+    {
+      "start": 1260.72,
+      "duration": 3.3,
+      "text": "next you have security groups are"
+    },
+    {
+      "start": 1262.4,
+      "duration": 4.019,
+      "text": "stateless so you must allow both in"
+    },
+    {
+      "start": 1264.02,
+      "duration": 4.08,
+      "text": "modern outbound most secular group are"
+    },
+    {
+      "start": 1266.419,
+      "duration": 3.661,
+      "text": "stateful and if you allow inbound"
+    },
+    {
+      "start": 1268.1,
+      "duration": 4.68,
+      "text": "traffic our world traffic is also"
+    },
+    {
+      "start": 1270.08,
+      "duration": 4.92,
+      "text": "allowed to explain you this more clearly"
+    },
+    {
+      "start": 1272.78,
+      "duration": 3.54,
+      "text": "let's go to the diagram which"
+    },
+    {
+      "start": 1275.0,
+      "duration": 4.2,
+      "text": "differentiates"
+    },
+    {
+      "start": 1276.32,
+      "duration": 4.859,
+      "text": "Security Group at nacf so you can see"
+    },
+    {
+      "start": 1279.2,
+      "duration": 4.44,
+      "text": "all of these but let's focus on"
+    },
+    {
+      "start": 1281.179,
+      "duration": 4.921,
+      "text": "something on this fourth point one sorry"
+    },
+    {
+      "start": 1283.64,
+      "duration": 4.5,
+      "text": "fifth point so Security Group are"
+    },
+    {
+      "start": 1286.1,
+      "duration": 4.92,
+      "text": "stateful return traffic is allowed"
+    },
+    {
+      "start": 1288.14,
+      "duration": 4.86,
+      "text": "regardless of the rules but nacls are"
+    },
+    {
+      "start": 1291.02,
+      "duration": 5.22,
+      "text": "stateless the return traffic must be"
+    },
+    {
+      "start": 1293.0,
+      "duration": 5.52,
+      "text": "explicitly Allowed by the rules so this"
+    },
+    {
+      "start": 1296.24,
+      "duration": 4.559,
+      "text": "question where the application is not"
+    },
+    {
+      "start": 1298.52,
+      "duration": 4.2,
+      "text": "connecting is because the nacle has only"
+    },
+    {
+      "start": 1300.799,
+      "duration": 3.301,
+      "text": "been defined inbound traffic not"
+    },
+    {
+      "start": 1302.72,
+      "duration": 3.66,
+      "text": "outbound traffic so you need to Define"
+    },
+    {
+      "start": 1304.1,
+      "duration": 4.079,
+      "text": "both inbound and artboard traffic so the"
+    },
+    {
+      "start": 1306.38,
+      "duration": 4.799,
+      "text": "correct answer is Network the AC is"
+    },
+    {
+      "start": 1308.179,
+      "duration": 7.441,
+      "text": "Network acns are stateless and you must"
+    },
+    {
+      "start": 1311.179,
+      "duration": 7.38,
+      "text": "allow both inbound and outbound traffic"
+    },
+    {
+      "start": 1315.62,
+      "duration": 5.1,
+      "text": "next we have question 11 which is to"
+    },
+    {
+      "start": 1318.559,
+      "duration": 4.74,
+      "text": "enable https connections for this web"
+    },
+    {
+      "start": 1320.72,
+      "duration": 3.959,
+      "text": "application deployed on AWS a developer"
+    },
+    {
+      "start": 1323.299,
+      "duration": 3.961,
+      "text": "is in process of creating server"
+    },
+    {
+      "start": 1324.679,
+      "duration": 6.061,
+      "text": "certificate which AWS entities can be"
+    },
+    {
+      "start": 1327.26,
+      "duration": 5.159,
+      "text": "used to deploy SSL TLS certificate so"
+    },
+    {
+      "start": 1330.74,
+      "duration": 4.439,
+      "text": "here we want to have an https"
+    },
+    {
+      "start": 1332.419,
+      "duration": 5.161,
+      "text": "connections using SSL certificate or the"
+    },
+    {
+      "start": 1335.179,
+      "duration": 4.98,
+      "text": "web application so which AWS service can"
+    },
+    {
+      "start": 1337.58,
+      "duration": 5.099,
+      "text": "be used to deploy SSL certificates so we"
+    },
+    {
+      "start": 1340.159,
+      "duration": 4.621,
+      "text": "already know there's a service named as"
+    },
+    {
+      "start": 1342.679,
+      "duration": 5.281,
+      "text": "ACM or"
+    },
+    {
+      "start": 1344.78,
+      "duration": 5.22,
+      "text": "AWS certificate manager that is used to"
+    },
+    {
+      "start": 1347.96,
+      "duration": 4.38,
+      "text": "manage"
+    },
+    {
+      "start": 1350.0,
+      "duration": 4.44,
+      "text": "provision management deploy SSL TRS"
+    },
+    {
+      "start": 1352.34,
+      "duration": 4.319,
+      "text": "certificate so this is the answer if it"
+    },
+    {
+      "start": 1354.44,
+      "duration": 5.28,
+      "text": "if the if it is present in the option so"
+    },
+    {
+      "start": 1356.659,
+      "duration": 4.801,
+      "text": "you can see AWS certificate manager can"
+    },
+    {
+      "start": 1359.72,
+      "duration": 3.12,
+      "text": "be used to deploy system certificate but"
+    },
+    {
+      "start": 1361.46,
+      "duration": 4.26,
+      "text": "the question is asking for you to select"
+    },
+    {
+      "start": 1362.84,
+      "duration": 4.86,
+      "text": "two options so which of the other option"
+    },
+    {
+      "start": 1365.72,
+      "duration": 4.439,
+      "text": "can you choose to deploy certificate"
+    },
+    {
+      "start": 1367.7,
+      "duration": 4.38,
+      "text": "let's go and check that so we have cloud"
+    },
+    {
+      "start": 1370.159,
+      "duration": 3.661,
+      "text": "formation cloud formation is used to"
+    },
+    {
+      "start": 1372.08,
+      "duration": 3.959,
+      "text": "create templates that can be used to"
+    },
+    {
+      "start": 1373.82,
+      "duration": 3.96,
+      "text": "deploy architectures or infrastructure"
+    },
+    {
+      "start": 1376.039,
+      "duration": 3.481,
+      "text": "in the cloud so if you want to deploy"
+    },
+    {
+      "start": 1377.78,
+      "duration": 3.779,
+      "text": "ec2 instance you can Define that in"
+    },
+    {
+      "start": 1379.52,
+      "duration": 4.019,
+      "text": "cloud formation so cloudformation cannot"
+    },
+    {
+      "start": 1381.559,
+      "duration": 4.5,
+      "text": "be used for deploying SSL certificate"
+    },
+    {
+      "start": 1383.539,
+      "duration": 5.581,
+      "text": "but it is used as infrastructure as code"
+    },
+    {
+      "start": 1386.059,
+      "duration": 5.941,
+      "text": "to create stuff on AWS then you have"
+    },
+    {
+      "start": 1389.12,
+      "duration": 5.52,
+      "text": "secrets manager AWS Secrets manager is"
+    },
+    {
+      "start": 1392.0,
+      "duration": 4.62,
+      "text": "used to store secrets and environment"
+    },
+    {
+      "start": 1394.64,
+      "duration": 5.039,
+      "text": "variables and you can also rotate them"
+    },
+    {
+      "start": 1396.62,
+      "duration": 5.46,
+      "text": "but it is not used for deploying SSL or"
+    },
+    {
+      "start": 1399.679,
+      "duration": 4.141,
+      "text": "TLS certificate so Secrets manager is"
+    },
+    {
+      "start": 1402.08,
+      "duration": 3.959,
+      "text": "easily rotate manage and retrieve"
+    },
+    {
+      "start": 1403.82,
+      "duration": 4.32,
+      "text": "secrets you cannot use it for deploying"
+    },
+    {
+      "start": 1406.039,
+      "duration": 6.301,
+      "text": "assistant certificates"
+    },
+    {
+      "start": 1408.14,
+      "duration": 6.12,
+      "text": "next you have IEM so I am"
+    },
+    {
+      "start": 1412.34,
+      "duration": 5.54,
+      "text": "is an identity based access management"
+    },
+    {
+      "start": 1414.26,
+      "duration": 3.62,
+      "text": "service so if I go to imq"
+    },
+    {
+      "start": 1418.28,
+      "duration": 5.46,
+      "text": "it can be used to provide permissions to"
+    },
+    {
+      "start": 1420.62,
+      "duration": 5.46,
+      "text": "users groups and rules because using IM"
+    },
+    {
+      "start": 1423.74,
+      "duration": 5.22,
+      "text": "you can deploy your you can upload your"
+    },
+    {
+      "start": 1426.08,
+      "duration": 5.82,
+      "text": "SS certificates that can be used by web"
+    },
+    {
+      "start": 1428.96,
+      "duration": 5.28,
+      "text": "application or by load balance elsewhere"
+    },
+    {
+      "start": 1431.9,
+      "duration": 5.7,
+      "text": "so the correct answers are"
+    },
+    {
+      "start": 1434.24,
+      "duration": 4.08,
+      "text": "AWS certificate manager and I to show"
+    },
+    {
+      "start": 1437.6,
+      "duration": 2.459,
+      "text": "you"
+    },
+    {
+      "start": 1438.32,
+      "duration": 3.599,
+      "text": "the explanation let's go to explanation"
+    },
+    {
+      "start": 1440.059,
+      "duration": 4.381,
+      "text": "here and see"
+    },
+    {
+      "start": 1441.919,
+      "duration": 4.801,
+      "text": "so ACM is preferred tool to provision"
+    },
+    {
+      "start": 1444.44,
+      "duration": 3.96,
+      "text": "manage and deploy server certificate"
+    },
+    {
+      "start": 1446.72,
+      "duration": 3.959,
+      "text": "with AC Market requested certificate"
+    },
+    {
+      "start": 1448.4,
+      "duration": 4.32,
+      "text": "image used as a certificate manager only"
+    },
+    {
+      "start": 1450.679,
+      "duration": 4.62,
+      "text": "when you support https Connection in a"
+    },
+    {
+      "start": 1452.72,
+      "duration": 3.959,
+      "text": "lesion that is not supported by ECF so"
+    },
+    {
+      "start": 1455.299,
+      "duration": 3.541,
+      "text": "these are the two Services which can be"
+    },
+    {
+      "start": 1456.679,
+      "duration": 4.021,
+      "text": "used to deploy SSN certificates"
+    },
+    {
+      "start": 1458.84,
+      "duration": 4.14,
+      "text": "the incorrect options here are search"
+    },
+    {
+      "start": 1460.7,
+      "duration": 4.62,
+      "text": "secret manager so you already know that"
+    },
+    {
+      "start": 1462.98,
+      "duration": 4.079,
+      "text": "it is used to protect Secrets needed by"
+    },
+    {
+      "start": 1465.32,
+      "duration": 3.18,
+      "text": "your application and you can easily"
+    },
+    {
+      "start": 1467.059,
+      "duration": 4.681,
+      "text": "rotate manage and retrieve database"
+    },
+    {
+      "start": 1468.5,
+      "duration": 5.4,
+      "text": "credentials API keys and other secrets"
+    },
+    {
+      "start": 1471.74,
+      "duration": 3.72,
+      "text": "AWS system manages an incorrect option"
+    },
+    {
+      "start": 1473.9,
+      "duration": 3.48,
+      "text": "because it gives you visibility and"
+    },
+    {
+      "start": 1475.46,
+      "duration": 3.48,
+      "text": "control of your infrastructure System"
+    },
+    {
+      "start": 1477.38,
+      "duration": 3.539,
+      "text": "Manager provides a unified user"
+    },
+    {
+      "start": 1478.94,
+      "duration": 4.32,
+      "text": "interface so you can view operational"
+    },
+    {
+      "start": 1480.919,
+      "duration": 3.901,
+      "text": "data for multiple AWS services that"
+    },
+    {
+      "start": 1483.26,
+      "duration": 3.84,
+      "text": "allows you to operation an automate"
+    },
+    {
+      "start": 1484.82,
+      "duration": 4.02,
+      "text": "operation task such as running command"
+    },
+    {
+      "start": 1487.1,
+      "duration": 3.84,
+      "text": "managing patches and configuring servers"
+    },
+    {
+      "start": 1488.84,
+      "duration": 4.26,
+      "text": "so you can use this to connect to the"
+    },
+    {
+      "start": 1490.94,
+      "duration": 3.719,
+      "text": "database Services instances and then run"
+    },
+    {
+      "start": 1493.1,
+      "duration": 4.079,
+      "text": "the commands on it but cannot be used"
+    },
+    {
+      "start": 1494.659,
+      "duration": 5.821,
+      "text": "for deploying SSN certificates cloud"
+    },
+    {
+      "start": 1497.179,
+      "duration": 5.101,
+      "text": "formation asset is used for allows you"
+    },
+    {
+      "start": 1500.48,
+      "duration": 4.62,
+      "text": "to use programming languages or Simple"
+    },
+    {
+      "start": 1502.28,
+      "duration": 4.56,
+      "text": "Text file to model and provision in an"
+    },
+    {
+      "start": 1505.1,
+      "duration": 5.28,
+      "text": "automated and secure manner so the right"
+    },
+    {
+      "start": 1506.84,
+      "duration": 5.4,
+      "text": "answer is IEM and ACM can be used to"
+    },
+    {
+      "start": 1510.38,
+      "duration": 5.64,
+      "text": "deploy"
+    },
+    {
+      "start": 1512.24,
+      "duration": 6.0,
+      "text": "can be used to deploy AWS can be used to"
+    },
+    {
+      "start": 1516.02,
+      "duration": 4.62,
+      "text": "deploy SSL certificates so that was"
+    },
+    {
+      "start": 1518.24,
+      "duration": 5.46,
+      "text": "question 11 let's go to question number"
+    },
+    {
+      "start": 1520.64,
+      "duration": 5.46,
+      "text": "12. so the question number 12 says as"
+    },
+    {
+      "start": 1523.7,
+      "duration": 5.64,
+      "text": "financial services company is undergoing"
+    },
+    {
+      "start": 1526.1,
+      "duration": 5.16,
+      "text": "compliance audit by a regulator the"
+    },
+    {
+      "start": 1529.34,
+      "duration": 4.8,
+      "text": "company has hundreds of IM users that"
+    },
+    {
+      "start": 1531.26,
+      "duration": 5.64,
+      "text": "make API calls but specifically it needs"
+    },
+    {
+      "start": 1534.14,
+      "duration": 5.399,
+      "text": "to determine who is making KMS API calls"
+    },
+    {
+      "start": 1536.9,
+      "duration": 4.98,
+      "text": "so whenever you hear audit you are going"
+    },
+    {
+      "start": 1539.539,
+      "duration": 4.62,
+      "text": "to look for two different service config"
+    },
+    {
+      "start": 1541.88,
+      "duration": 6.179,
+      "text": "and Cloud trade so these two are used"
+    },
+    {
+      "start": 1544.159,
+      "duration": 6.721,
+      "text": "for audit purpose and if it is audit for"
+    },
+    {
+      "start": 1548.059,
+      "duration": 4.74,
+      "text": "checking API calls or audit for a"
+    },
+    {
+      "start": 1550.88,
+      "duration": 3.84,
+      "text": "particular account then you will select"
+    },
+    {
+      "start": 1552.799,
+      "duration": 3.781,
+      "text": "Cloud tray but if it is audit for a"
+    },
+    {
+      "start": 1554.72,
+      "duration": 3.72,
+      "text": "particular resource then able to use AWS"
+    },
+    {
+      "start": 1556.58,
+      "duration": 5.4,
+      "text": "config so here we are going to check the"
+    },
+    {
+      "start": 1558.44,
+      "duration": 4.92,
+      "text": "API calls performed on a KMS so which"
+    },
+    {
+      "start": 1561.98,
+      "duration": 4.439,
+      "text": "isn't main which means we need to use"
+    },
+    {
+      "start": 1563.36,
+      "duration": 5.28,
+      "text": "cloudtrail if I show you the description"
+    },
+    {
+      "start": 1566.419,
+      "duration": 5.341,
+      "text": "or the solution for this let's see the"
+    },
+    {
+      "start": 1568.64,
+      "duration": 5.519,
+      "text": "explanation it says with Cloud tray you"
+    },
+    {
+      "start": 1571.76,
+      "duration": 3.84,
+      "text": "can log continuously Monitor and retain"
+    },
+    {
+      "start": 1574.159,
+      "duration": 3.301,
+      "text": "account activity"
+    },
+    {
+      "start": 1575.6,
+      "duration": 3.72,
+      "text": "you can use cloudtrail to answer the"
+    },
+    {
+      "start": 1577.46,
+      "duration": 3.78,
+      "text": "question who made an API call to modify"
+    },
+    {
+      "start": 1579.32,
+      "duration": 3.959,
+      "text": "this resource so using cloudtrend you"
+    },
+    {
+      "start": 1581.24,
+      "duration": 4.439,
+      "text": "can easily check who has made the API"
+    },
+    {
+      "start": 1583.279,
+      "duration": 5.581,
+      "text": "called to KMS or to any other service"
+    },
+    {
+      "start": 1585.679,
+      "duration": 4.86,
+      "text": "even security groups so you cannot use"
+    },
+    {
+      "start": 1588.86,
+      "duration": 3.179,
+      "text": "cloud drill to maintain the history of"
+    },
+    {
+      "start": 1590.539,
+      "duration": 3.481,
+      "text": "resource but can be used to check who"
+    },
+    {
+      "start": 1592.039,
+      "duration": 2.821,
+      "text": "has made a new app to event history of"
+    },
+    {
+      "start": 1594.02,
+      "duration": 2.759,
+      "text": "all the"
+    },
+    {
+      "start": 1594.86,
+      "duration": 3.78,
+      "text": "AWS config on the other hand is a"
+    },
+    {
+      "start": 1596.779,
+      "duration": 3.421,
+      "text": "service that enables you to access audit"
+    },
+    {
+      "start": 1598.64,
+      "duration": 3.659,
+      "text": "and evaluate the configuration on your"
+    },
+    {
+      "start": 1600.2,
+      "duration": 5.04,
+      "text": "AWS resources"
+    },
+    {
+      "start": 1602.299,
+      "duration": 4.561,
+      "text": "okay it's used on AWS resources which"
+    },
+    {
+      "start": 1605.24,
+      "duration": 3.6,
+      "text": "can be a needle with instance as three"
+    },
+    {
+      "start": 1606.86,
+      "duration": 4.26,
+      "text": "buckets or anything like that"
+    },
+    {
+      "start": 1608.84,
+      "duration": 3.78,
+      "text": "the other options the X-ray are used to"
+    },
+    {
+      "start": 1611.12,
+      "duration": 3.299,
+      "text": "debug and analyze distributed"
+    },
+    {
+      "start": 1612.62,
+      "duration": 3.96,
+      "text": "application but cannot be used to check"
+    },
+    {
+      "start": 1614.419,
+      "duration": 3.961,
+      "text": "who made the API call so this is not the"
+    },
+    {
+      "start": 1616.58,
+      "duration": 4.26,
+      "text": "right answer cloudwatch is used to"
+    },
+    {
+      "start": 1618.38,
+      "duration": 5.82,
+      "text": "monitor services and it is not used to"
+    },
+    {
+      "start": 1620.84,
+      "duration": 5.16,
+      "text": "audit or record the API calls so"
+    },
+    {
+      "start": 1624.2,
+      "duration": 3.54,
+      "text": "cloudwatch is also another item so right"
+    },
+    {
+      "start": 1626.0,
+      "duration": 3.779,
+      "text": "answer is cloud trade which can be used"
+    },
+    {
+      "start": 1627.74,
+      "duration": 4.439,
+      "text": "to audit and check who made the API call"
+    },
+    {
+      "start": 1629.779,
+      "duration": 4.861,
+      "text": "to KMS"
+    },
+    {
+      "start": 1632.179,
+      "duration": 4.201,
+      "text": "next we have question number 13 so"
+    },
+    {
+      "start": 1634.64,
+      "duration": 4.38,
+      "text": "question number 13 says in addition to"
+    },
+    {
+      "start": 1636.38,
+      "duration": 5.039,
+      "text": "regular sign-in credentials AWS supports"
+    },
+    {
+      "start": 1639.02,
+      "duration": 4.5,
+      "text": "multi-factor authentication for accounts"
+    },
+    {
+      "start": 1641.419,
+      "duration": 4.201,
+      "text": "with privileged access which of the"
+    },
+    {
+      "start": 1643.52,
+      "duration": 4.74,
+      "text": "following MFM mechanism is not supported"
+    },
+    {
+      "start": 1645.62,
+      "duration": 4.439,
+      "text": "by book user authentication so MFA or"
+    },
+    {
+      "start": 1648.26,
+      "duration": 4.26,
+      "text": "multi-factor authentication is kind of a"
+    },
+    {
+      "start": 1650.059,
+      "duration": 4.5,
+      "text": "security mechanism which lets you enter"
+    },
+    {
+      "start": 1652.52,
+      "duration": 4.139,
+      "text": "a code when you sign in after you put"
+    },
+    {
+      "start": 1654.559,
+      "duration": 4.021,
+      "text": "your IM username and password you will"
+    },
+    {
+      "start": 1656.659,
+      "duration": 5.041,
+      "text": "need to enter a code which can be done"
+    },
+    {
+      "start": 1658.58,
+      "duration": 6.06,
+      "text": "using a virtual MFA devices UTF security"
+    },
+    {
+      "start": 1661.7,
+      "duration": 6.24,
+      "text": "or Hardware MFA device but you can also"
+    },
+    {
+      "start": 1664.64,
+      "duration": 5.159,
+      "text": "use SMS text based MFA so the question"
+    },
+    {
+      "start": 1667.94,
+      "duration": 4.32,
+      "text": "is asking which of the following is not"
+    },
+    {
+      "start": 1669.799,
+      "duration": 4.081,
+      "text": "supported by root user Authentication"
+    },
+    {
+      "start": 1672.26,
+      "duration": 4.2,
+      "text": "which of the following is not separated"
+    },
+    {
+      "start": 1673.88,
+      "duration": 4.62,
+      "text": "by root user not IM but root user to"
+    },
+    {
+      "start": 1676.46,
+      "duration": 6.12,
+      "text": "understand this let's go to the AWS"
+    },
+    {
+      "start": 1678.5,
+      "duration": 6.6,
+      "text": "documentation which talks about MFA"
+    },
+    {
+      "start": 1682.58,
+      "duration": 4.38,
+      "text": "so if I scroll down I should see the"
+    },
+    {
+      "start": 1685.1,
+      "duration": 4.079,
+      "text": "link here and you can see the answer it"
+    },
+    {
+      "start": 1686.96,
+      "duration": 4.74,
+      "text": "says SMS text paste but why it is the"
+    },
+    {
+      "start": 1689.179,
+      "duration": 5.401,
+      "text": "answer you can find here in this AWS"
+    },
+    {
+      "start": 1691.7,
+      "duration": 5.04,
+      "text": "documentation that talks about MFA or"
+    },
+    {
+      "start": 1694.58,
+      "duration": 3.18,
+      "text": "multi-factor authentication so if I"
+    },
+    {
+      "start": 1696.74,
+      "duration": 2.819,
+      "text": "scroll down"
+    },
+    {
+      "start": 1697.76,
+      "duration": 3.96,
+      "text": "you can see the different options you"
+    },
+    {
+      "start": 1699.559,
+      "duration": 4.86,
+      "text": "have security key virtual MFA device"
+    },
+    {
+      "start": 1701.72,
+      "duration": 5.939,
+      "text": "hardware token and you don't have the"
+    },
+    {
+      "start": 1704.419,
+      "duration": 5.341,
+      "text": "option C SMS based for root access so"
+    },
+    {
+      "start": 1707.659,
+      "duration": 4.801,
+      "text": "the correct answer is"
+    },
+    {
+      "start": 1709.76,
+      "duration": 4.38,
+      "text": "SMS takes message based MFA is not"
+    },
+    {
+      "start": 1712.46,
+      "duration": 4.68,
+      "text": "supported by Road user authentication it"
+    },
+    {
+      "start": 1714.14,
+      "duration": 5.34,
+      "text": "is supported it supports UDF virtual MFA"
+    },
+    {
+      "start": 1717.14,
+      "duration": 4.8,
+      "text": "and Hardware MFA so you can use like"
+    },
+    {
+      "start": 1719.48,
+      "duration": 6.179,
+      "text": "cross indicator or Tiki or UV key but"
+    },
+    {
+      "start": 1721.94,
+      "duration": 6.239,
+      "text": "not SMS paste FFA"
+    },
+    {
+      "start": 1725.659,
+      "duration": 4.741,
+      "text": "next we have next twist question 14 it"
+    },
+    {
+      "start": 1728.179,
+      "duration": 4.62,
+      "text": "says you're a developer doing contract"
+    },
+    {
+      "start": 1730.4,
+      "duration": 4.5,
+      "text": "work for the media sector since you work"
+    },
+    {
+      "start": 1732.799,
+      "duration": 3.661,
+      "text": "alone you opt for technologies that"
+    },
+    {
+      "start": 1734.9,
+      "duration": 4.44,
+      "text": "requires retail maintenance which allows"
+    },
+    {
+      "start": 1736.46,
+      "duration": 5.52,
+      "text": "you to focus more on your coding you"
+    },
+    {
+      "start": 1739.34,
+      "duration": 4.319,
+      "text": "have chosen elastic Beanstalk"
+    },
+    {
+      "start": 1741.98,
+      "duration": 3.299,
+      "text": "so elastic bean stock is a service that"
+    },
+    {
+      "start": 1743.659,
+      "duration": 3.12,
+      "text": "lets you focus on your coding and not at"
+    },
+    {
+      "start": 1745.279,
+      "duration": 4.741,
+      "text": "the deployment part because everything"
+    },
+    {
+      "start": 1746.779,
+      "duration": 5.041,
+      "text": "is done by AWS so"
+    },
+    {
+      "start": 1750.02,
+      "duration": 2.94,
+      "text": "you have chosen elastic bean stock to"
+    },
+    {
+      "start": 1751.82,
+      "duration": 2.7,
+      "text": "assist with deployments of your"
+    },
+    {
+      "start": 1752.96,
+      "duration": 3.9,
+      "text": "application while reading online"
+    },
+    {
+      "start": 1754.52,
+      "duration": 4.379,
+      "text": "documentation you find that elastic bean"
+    },
+    {
+      "start": 1756.86,
+      "duration": 4.02,
+      "text": "stock relies on another AWS services to"
+    },
+    {
+      "start": 1758.899,
+      "duration": 4.801,
+      "text": "provision your resource which of the"
+    },
+    {
+      "start": 1760.88,
+      "duration": 4.38,
+      "text": "following represents this AWS service so"
+    },
+    {
+      "start": 1763.7,
+      "duration": 3.3,
+      "text": "you have different services and the"
+    },
+    {
+      "start": 1765.26,
+      "duration": 3.6,
+      "text": "question is asking when using elastic"
+    },
+    {
+      "start": 1767.0,
+      "duration": 4.62,
+      "text": "bean stock which stipulates everything"
+    },
+    {
+      "start": 1768.86,
+      "duration": 4.26,
+      "text": "on their own what AWS service is used to"
+    },
+    {
+      "start": 1771.62,
+      "duration": 4.08,
+      "text": "deploy their applications"
+    },
+    {
+      "start": 1773.12,
+      "duration": 4.74,
+      "text": "so we have cloud formation code commit"
+    },
+    {
+      "start": 1775.7,
+      "duration": 4.02,
+      "text": "systems manager and code deploy so we"
+    },
+    {
+      "start": 1777.86,
+      "duration": 4.38,
+      "text": "know that code commit is a git"
+    },
+    {
+      "start": 1779.72,
+      "duration": 4.199,
+      "text": "repository it's kind of a reposit code"
+    },
+    {
+      "start": 1782.24,
+      "duration": 3.72,
+      "text": "gravity is an AWS service to host"
+    },
+    {
+      "start": 1783.919,
+      "duration": 4.681,
+      "text": "private repository so this is not an"
+    },
+    {
+      "start": 1785.96,
+      "duration": 5.04,
+      "text": "option here we cannot create uh"
+    },
+    {
+      "start": 1788.6,
+      "duration": 4.98,
+      "text": "infrastructure resources to code commit"
+    },
+    {
+      "start": 1791.0,
+      "duration": 5.7,
+      "text": "so this is not an answer system manager"
+    },
+    {
+      "start": 1793.58,
+      "duration": 5.339,
+      "text": "is used to run commands and servers"
+    },
+    {
+      "start": 1796.7,
+      "duration": 3.66,
+      "text": "but not actually used to create servers"
+    },
+    {
+      "start": 1798.919,
+      "duration": 3.301,
+      "text": "so this is not the correct answer as"
+    },
+    {
+      "start": 1800.36,
+      "duration": 3.9,
+      "text": "well next you have code deploy code"
+    },
+    {
+      "start": 1802.22,
+      "duration": 5.699,
+      "text": "deploy is used to and deploy"
+    },
+    {
+      "start": 1804.26,
+      "duration": 6.0,
+      "text": "applications uh deploy applications on"
+    },
+    {
+      "start": 1807.919,
+      "duration": 3.841,
+      "text": "the resources on AWS servers or sub like"
+    },
+    {
+      "start": 1810.26,
+      "duration": 3.779,
+      "text": "that after you get the code from the"
+    },
+    {
+      "start": 1811.76,
+      "duration": 4.2,
+      "text": "code with after you get the artifact or"
+    },
+    {
+      "start": 1814.039,
+      "duration": 3.421,
+      "text": "the basic by code build so this is also"
+    },
+    {
+      "start": 1815.96,
+      "duration": 3.36,
+      "text": "not the correct answer so the correct"
+    },
+    {
+      "start": 1817.46,
+      "duration": 4.26,
+      "text": "answer is cloud formation so when you"
+    },
+    {
+      "start": 1819.32,
+      "duration": 5.579,
+      "text": "choose AWS elastic Beanstalk"
+    },
+    {
+      "start": 1821.72,
+      "duration": 5.939,
+      "text": "AWS create templates which will deploy"
+    },
+    {
+      "start": 1824.899,
+      "duration": 4.621,
+      "text": "your security groups load balances and"
+    },
+    {
+      "start": 1827.659,
+      "duration": 4.201,
+      "text": "everything using cloud formation so the"
+    },
+    {
+      "start": 1829.52,
+      "duration": 4.2,
+      "text": "correct answer is cloud formation"
+    },
+    {
+      "start": 1831.86,
+      "duration": 4.62,
+      "text": "elastic bean stock uses cloud formation"
+    },
+    {
+      "start": 1833.72,
+      "duration": 5.88,
+      "text": "as a backend when creating servers load"
+    },
+    {
+      "start": 1836.48,
+      "duration": 5.1,
+      "text": "balances Security Group anything"
+    },
+    {
+      "start": 1839.6,
+      "duration": 4.26,
+      "text": "the question 15 is an application is"
+    },
+    {
+      "start": 1841.58,
+      "duration": 4.74,
+      "text": "hosted by third party and exposed at"
+    },
+    {
+      "start": 1843.86,
+      "duration": 4.5,
+      "text": "your app.thirdparty.com"
+    },
+    {
+      "start": 1846.32,
+      "duration": 3.9,
+      "text": "you won't you would like to have your"
+    },
+    {
+      "start": 1848.36,
+      "duration": 5.16,
+      "text": "users access your application using"
+    },
+    {
+      "start": 1850.22,
+      "duration": 5.76,
+      "text": "mydomain.com which you own and manage"
+    },
+    {
+      "start": 1853.52,
+      "duration": 4.08,
+      "text": "under Cloud 53 which Route 53 in a car"
+    },
+    {
+      "start": 1855.98,
+      "duration": 4.919,
+      "text": "show you create so you have options like"
+    },
+    {
+      "start": 1857.6,
+      "duration": 4.92,
+      "text": "Lis PTR a record and CNA the question is"
+    },
+    {
+      "start": 1860.899,
+      "duration": 3.201,
+      "text": "asking that you have an application that"
+    },
+    {
+      "start": 1862.52,
+      "duration": 3.6,
+      "text": "is running on your"
+    },
+    {
+      "start": 1864.1,
+      "duration": 3.22,
+      "text": "app.thirdparty.com what you want that"
+    },
+    {
+      "start": 1866.12,
+      "duration": 3.779,
+      "text": "application to be running on my"
+    },
+    {
+      "start": 1867.32,
+      "duration": 4.859,
+      "text": "domain.com so you want to map this"
+    },
+    {
+      "start": 1869.899,
+      "duration": 3.9,
+      "text": "domain with this one so that you can see"
+    },
+    {
+      "start": 1872.179,
+      "duration": 3.24,
+      "text": "the application on this domain so"
+    },
+    {
+      "start": 1873.799,
+      "duration": 3.421,
+      "text": "whenever you want to map a domain with a"
+    },
+    {
+      "start": 1875.419,
+      "duration": 4.801,
+      "text": "domain you're going to use C name"
+    },
+    {
+      "start": 1877.22,
+      "duration": 5.88,
+      "text": "because Elias is used to map a domain"
+    },
+    {
+      "start": 1880.22,
+      "duration": 6.72,
+      "text": "name with an IP address PTR is opposite"
+    },
+    {
+      "start": 1883.1,
+      "duration": 6.54,
+      "text": "of sorry a record is used to map"
+    },
+    {
+      "start": 1886.94,
+      "duration": 5.099,
+      "text": "domain name with IP address PTR is used"
+    },
+    {
+      "start": 1889.64,
+      "duration": 4.32,
+      "text": "to map IP address or domain name and"
+    },
+    {
+      "start": 1892.039,
+      "duration": 4.441,
+      "text": "then Elias is something that can be used"
+    },
+    {
+      "start": 1893.96,
+      "duration": 3.839,
+      "text": "with AWS services to explain you this in"
+    },
+    {
+      "start": 1896.48,
+      "duration": 3.9,
+      "text": "more detail let's go to the solutions"
+    },
+    {
+      "start": 1897.799,
+      "duration": 4.921,
+      "text": "and exploration part"
+    },
+    {
+      "start": 1900.38,
+      "duration": 4.14,
+      "text": "so here you can see C Name Records are"
+    },
+    {
+      "start": 1902.72,
+      "duration": 2.839,
+      "text": "used to map one domain with another for"
+    },
+    {
+      "start": 1904.52,
+      "duration": 3.08,
+      "text": "example"
+    },
+    {
+      "start": 1905.559,
+      "duration": 5.561,
+      "text": "acme.childcham.com can be mapped with"
+    },
+    {
+      "start": 1907.6,
+      "duration": 5.079,
+      "text": "example.com or example.net whereas a"
+    },
+    {
+      "start": 1911.12,
+      "duration": 3.539,
+      "text": "record is used to point domain or"
+    },
+    {
+      "start": 1912.679,
+      "duration": 4.081,
+      "text": "subdomain to an IP address and they"
+    },
+    {
+      "start": 1914.659,
+      "duration": 3.541,
+      "text": "cannot be used to map one domain and to"
+    },
+    {
+      "start": 1916.76,
+      "duration": 3.299,
+      "text": "another domain which the equation is"
+    },
+    {
+      "start": 1918.2,
+      "duration": 5.82,
+      "text": "asking for so this is not the correct"
+    },
+    {
+      "start": 1920.059,
+      "duration": 6.061,
+      "text": "answer PTR or pointer record resolves an"
+    },
+    {
+      "start": 1924.02,
+      "duration": 4.74,
+      "text": "IP address to a fully qualified domain"
+    },
+    {
+      "start": 1926.12,
+      "duration": 6.36,
+      "text": "name as opposite to the a record thus"
+    },
+    {
+      "start": 1928.76,
+      "duration": 5.519,
+      "text": "next we have Elias so Elias record is"
+    },
+    {
+      "start": 1932.48,
+      "duration": 3.179,
+      "text": "lets you route traffic to selected area"
+    },
+    {
+      "start": 1934.279,
+      "duration": 3.481,
+      "text": "based resources such as cloud formation"
+    },
+    {
+      "start": 1935.659,
+      "duration": 4.14,
+      "text": "distributions load balances and Amazon"
+    },
+    {
+      "start": 1937.76,
+      "duration": 4.38,
+      "text": "S3 bucket so you can use Lis if you want"
+    },
+    {
+      "start": 1939.799,
+      "duration": 4.441,
+      "text": "to connect your domain with these AWS"
+    },
+    {
+      "start": 1942.14,
+      "duration": 3.659,
+      "text": "services so whenever you want the map"
+    },
+    {
+      "start": 1944.24,
+      "duration": 2.34,
+      "text": "domain with domain you're going to go"
+    },
+    {
+      "start": 1945.799,
+      "duration": 2.041,
+      "text": "with"
+    },
+    {
+      "start": 1946.58,
+      "duration": 3.599,
+      "text": "uh"
+    },
+    {
+      "start": 1947.84,
+      "duration": 5.52,
+      "text": "C name record"
+    },
+    {
+      "start": 1950.179,
+      "duration": 5.821,
+      "text": "so this is all I hope you understood and"
+    },
+    {
+      "start": 1953.36,
+      "duration": 4.799,
+      "text": "you have an idea of how you can choose"
+    },
+    {
+      "start": 1956.0,
+      "duration": 4.74,
+      "text": "options in your AWS developer"
+    },
+    {
+      "start": 1958.159,
+      "duration": 4.921,
+      "text": "Association if you like this video uh"
+    },
+    {
+      "start": 1960.74,
+      "duration": 5.039,
+      "text": "please subscribe to my channel and if"
+    },
+    {
+      "start": 1963.08,
+      "duration": 4.56,
+      "text": "you want to have part two of this let me"
+    },
+    {
+      "start": 1965.779,
+      "duration": 3.421,
+      "text": "know in the comment section I can post"
+    },
+    {
+      "start": 1967.64,
+      "duration": 3.72,
+      "text": "more videos and I have lot of question"
+    },
+    {
+      "start": 1969.2,
+      "duration": 4.199,
+      "text": "sites so let me know in the comment"
+    },
+    {
+      "start": 1971.36,
+      "duration": 3.9,
+      "text": "section if you understood uh the video"
+    },
+    {
+      "start": 1973.399,
+      "duration": 5.041,
+      "text": "and how was the explanation about each"
+    },
+    {
+      "start": 1975.26,
+      "duration": 5.419,
+      "text": "question so thank you and have a good"
+    },
+    {
+      "start": 1978.44,
+      "duration": 2.239,
+      "text": "day"
+    }
+  ]
+}

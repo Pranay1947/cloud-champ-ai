@@ -1,0 +1,1061 @@
+{
+  "video": {
+    "id": "lJbf0J9rRzE",
+    "title": "How to create AWS Keypair using Terraform and attach to EC2 instance | Key to SSH in EC2 server",
+    "url": "https://www.youtube.com/watch?v=lJbf0J9rRzE",
+    "duration": 447,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 2.879,
+      "text": "hello and welcome back so in the"
+    },
+    {
+      "start": 1.28,
+      "duration": 3.6,
+      "text": "previous video we learned how we can"
+    },
+    {
+      "start": 2.879,
+      "duration": 3.761,
+      "text": "attach a security group to our aws"
+    },
+    {
+      "start": 4.88,
+      "duration": 4.56,
+      "text": "instance and we launched an instance"
+    },
+    {
+      "start": 6.64,
+      "duration": 6.32,
+      "text": "with security group that entry to https"
+    },
+    {
+      "start": 9.44,
+      "duration": 5.52,
+      "text": "http and ssh 422 but we didn't attach"
+    },
+    {
+      "start": 12.96,
+      "duration": 3.68,
+      "text": "any key pair to our instance so in this"
+    },
+    {
+      "start": 14.96,
+      "duration": 4.079,
+      "text": "video we are going to learn how we can"
+    },
+    {
+      "start": 16.64,
+      "duration": 4.32,
+      "text": "create a keypair and attach it to our"
+    },
+    {
+      "start": 19.039,
+      "duration": 3.681,
+      "text": "instance so there are two methods to"
+    },
+    {
+      "start": 20.96,
+      "duration": 3.92,
+      "text": "attach a keypair to our instance in"
+    },
+    {
+      "start": 22.72,
+      "duration": 4.96,
+      "text": "terraform the first is to create a"
+    },
+    {
+      "start": 24.88,
+      "duration": 4.399,
+      "text": "keeper in the aws console and attaching"
+    },
+    {
+      "start": 27.68,
+      "duration": 3.919,
+      "text": "it to instance from terraform or"
+    },
+    {
+      "start": 29.279,
+      "duration": 3.841,
+      "text": "directly creating a keypad in terraform"
+    },
+    {
+      "start": 31.599,
+      "duration": 3.441,
+      "text": "so first let's create a keypair i'm"
+    },
+    {
+      "start": 33.12,
+      "duration": 4.32,
+      "text": "going to click on create keeper here and"
+    },
+    {
+      "start": 35.04,
+      "duration": 4.56,
+      "text": "i'm going to name it demo so the keeper"
+    },
+    {
+      "start": 37.44,
+      "duration": 5.119,
+      "text": "algorithm is going to be rsa format is"
+    },
+    {
+      "start": 39.6,
+      "duration": 4.799,
+      "text": "going to be dot pem tags name equal to"
+    },
+    {
+      "start": 42.559,
+      "duration": 3.761,
+      "text": "demo so i'm going to create a key pair"
+    },
+    {
+      "start": 44.399,
+      "duration": 3.761,
+      "text": "and i'll download it in my home"
+    },
+    {
+      "start": 46.32,
+      "duration": 4.0,
+      "text": "directory so it will be downloaded here"
+    },
+    {
+      "start": 48.16,
+      "duration": 4.16,
+      "text": "so i have a key pair that is created in"
+    },
+    {
+      "start": 50.32,
+      "duration": 3.68,
+      "text": "my console and to use it in the"
+    },
+    {
+      "start": 52.32,
+      "duration": 4.0,
+      "text": "terraform code i am going to use an"
+    },
+    {
+      "start": 54.0,
+      "duration": 5.44,
+      "text": "argument that is named as key"
+    },
+    {
+      "start": 56.32,
+      "duration": 5.759,
+      "text": "underscore name is equal to name of the"
+    },
+    {
+      "start": 59.44,
+      "duration": 4.64,
+      "text": "keeper that was demo so that's it save"
+    },
+    {
+      "start": 62.079,
+      "duration": 3.44,
+      "text": "it and i run terraform plan here i'm"
+    },
+    {
+      "start": 64.08,
+      "duration": 2.88,
+      "text": "going to see that this keypad is going"
+    },
+    {
+      "start": 65.519,
+      "duration": 4.321,
+      "text": "to be attached to my since that is going"
+    },
+    {
+      "start": 66.96,
+      "duration": 4.96,
+      "text": "to be created search for demo as you can"
+    },
+    {
+      "start": 69.84,
+      "duration": 4.8,
+      "text": "see the key name is going to be demo run"
+    },
+    {
+      "start": 71.92,
+      "duration": 4.64,
+      "text": "terraform apply hyphen auto hyphen"
+    },
+    {
+      "start": 74.64,
+      "duration": 5.2,
+      "text": "approve so after that i can use this"
+    },
+    {
+      "start": 76.56,
+      "duration": 5.12,
+      "text": "keeper demo to ssh into my aws instance"
+    },
+    {
+      "start": 79.84,
+      "duration": 4.56,
+      "text": "for ssh command you need keypair"
+    },
+    {
+      "start": 81.68,
+      "duration": 4.16,
+      "text": "username and you need public ip of the"
+    },
+    {
+      "start": 84.4,
+      "duration": 2.96,
+      "text": "instance so once this is created i'm"
+    },
+    {
+      "start": 85.84,
+      "duration": 3.279,
+      "text": "going to take the public ip of this"
+    },
+    {
+      "start": 87.36,
+      "duration": 3.68,
+      "text": "instance so this is the key pair that"
+    },
+    {
+      "start": 89.119,
+      "duration": 3.761,
+      "text": "i'm going to use to ssh into my instance"
+    },
+    {
+      "start": 91.04,
+      "duration": 4.719,
+      "text": "sensors here it is in pending state so"
+    },
+    {
+      "start": 92.88,
+      "duration": 6.72,
+      "text": "this is the public ip address command is"
+    },
+    {
+      "start": 95.759,
+      "duration": 6.801,
+      "text": "ssh ec2 hyphen user this is the username"
+    },
+    {
+      "start": 99.6,
+      "duration": 5.199,
+      "text": "and public ip hyphen i and the name of"
+    },
+    {
+      "start": 102.56,
+      "duration": 4.4,
+      "text": "the key so that is demo.pam so the"
+    },
+    {
+      "start": 104.799,
+      "duration": 4.64,
+      "text": "resource is now created and enter i"
+    },
+    {
+      "start": 106.96,
+      "duration": 4.08,
+      "text": "should be in my instance so it is asking"
+    },
+    {
+      "start": 109.439,
+      "duration": 2.801,
+      "text": "are you sure i'm going to say yes most"
+    },
+    {
+      "start": 111.04,
+      "duration": 3.84,
+      "text": "of the time due to permissions you can"
+    },
+    {
+      "start": 112.24,
+      "duration": 5.36,
+      "text": "get an error like this so you might get"
+    },
+    {
+      "start": 114.88,
+      "duration": 4.0,
+      "text": "an error saying warning unprotected file"
+    },
+    {
+      "start": 117.6,
+      "duration": 4.64,
+      "text": "so what you have to do is just change"
+    },
+    {
+      "start": 118.88,
+      "duration": 5.599,
+      "text": "the permissions so chmod 400 and the"
+    },
+    {
+      "start": 122.24,
+      "duration": 4.559,
+      "text": "name that is going to be demo. so after"
+    },
+    {
+      "start": 124.479,
+      "duration": 4.241,
+      "text": "this if i try the ssh command again i'm"
+    },
+    {
+      "start": 126.799,
+      "duration": 4.001,
+      "text": "going to be in my instance as you can"
+    },
+    {
+      "start": 128.72,
+      "duration": 4.48,
+      "text": "see i'm in my instance it's easy to"
+    },
+    {
+      "start": 130.8,
+      "duration": 3.519,
+      "text": "hyphen user the ip address so this was"
+    },
+    {
+      "start": 133.2,
+      "duration": 4.32,
+      "text": "the first"
+    },
+    {
+      "start": 134.319,
+      "duration": 4.801,
+      "text": "way to create or to attach and keeper in"
+    },
+    {
+      "start": 137.52,
+      "duration": 3.439,
+      "text": "your instance through terraform the"
+    },
+    {
+      "start": 139.12,
+      "duration": 4.08,
+      "text": "second way is going to be creating the"
+    },
+    {
+      "start": 140.959,
+      "duration": 3.841,
+      "text": "keeper itself in the terraform code so"
+    },
+    {
+      "start": 143.2,
+      "duration": 3.679,
+      "text": "let's comment this out and try the"
+    },
+    {
+      "start": 144.8,
+      "duration": 3.76,
+      "text": "second way so to create a keeper let's"
+    },
+    {
+      "start": 146.879,
+      "duration": 4.161,
+      "text": "jump to the terraform official"
+    },
+    {
+      "start": 148.56,
+      "duration": 4.399,
+      "text": "documentation aws key pair resource"
+    },
+    {
+      "start": 151.04,
+      "duration": 4.08,
+      "text": "scroll down and this is the snippet that"
+    },
+    {
+      "start": 152.959,
+      "duration": 5.041,
+      "text": "i want paste it in my code it says"
+    },
+    {
+      "start": 155.12,
+      "duration": 5.68,
+      "text": "resource aws keypad and the name we want"
+    },
+    {
+      "start": 158.0,
+      "duration": 5.519,
+      "text": "is going to be terraform underscore key"
+    },
+    {
+      "start": 160.8,
+      "duration": 5.2,
+      "text": "same name here as well terraform"
+    },
+    {
+      "start": 163.519,
+      "duration": 4.641,
+      "text": "underscore key and it is asking for"
+    },
+    {
+      "start": 166.0,
+      "duration": 3.599,
+      "text": "public key but we don't have any public"
+    },
+    {
+      "start": 168.16,
+      "duration": 3.52,
+      "text": "key right so"
+    },
+    {
+      "start": 169.599,
+      "duration": 4.72,
+      "text": "i'm going to remove all of this here"
+    },
+    {
+      "start": 171.68,
+      "duration": 4.8,
+      "text": "right public underscore key and how are"
+    },
+    {
+      "start": 174.319,
+      "duration": 5.2,
+      "text": "we going to get the key so when you"
+    },
+    {
+      "start": 176.48,
+      "duration": 4.399,
+      "text": "create a ssh key you get a private and a"
+    },
+    {
+      "start": 179.519,
+      "duration": 2.961,
+      "text": "public key so private key is to be"
+    },
+    {
+      "start": 180.879,
+      "duration": 3.521,
+      "text": "downloaded in your local machine and"
+    },
+    {
+      "start": 182.48,
+      "duration": 3.679,
+      "text": "public key is to be shared on the server"
+    },
+    {
+      "start": 184.4,
+      "duration": 4.64,
+      "text": "but how we are going to create a private"
+    },
+    {
+      "start": 186.159,
+      "duration": 4.481,
+      "text": "key let's search so ssh key terraform"
+    },
+    {
+      "start": 189.04,
+      "duration": 3.36,
+      "text": "and this is the same documentation"
+    },
+    {
+      "start": 190.64,
+      "duration": 4.239,
+      "text": "scroll down i get this documentation by"
+    },
+    {
+      "start": 192.4,
+      "duration": 4.08,
+      "text": "terraform that is tls private key and"
+    },
+    {
+      "start": 194.879,
+      "duration": 3.521,
+      "text": "this is what we are going to use scroll"
+    },
+    {
+      "start": 196.48,
+      "duration": 3.399,
+      "text": "down so there are different algorithms"
+    },
+    {
+      "start": 198.4,
+      "duration": 4.8,
+      "text": "like rsa"
+    },
+    {
+      "start": 199.879,
+      "duration": 6.041,
+      "text": "ed25519 ecds like we saw in the keypair"
+    },
+    {
+      "start": 203.2,
+      "duration": 3.84,
+      "text": "section when we created a keypair i can"
+    },
+    {
+      "start": 205.92,
+      "duration": 2.8,
+      "text": "see the same"
+    },
+    {
+      "start": 207.04,
+      "duration": 3.8,
+      "text": "algorithm here as well so i'm going to"
+    },
+    {
+      "start": 208.72,
+      "duration": 5.2,
+      "text": "select this one"
+    },
+    {
+      "start": 210.84,
+      "duration": 4.679,
+      "text": "rsa4096 bit and paste it here so after"
+    },
+    {
+      "start": 213.92,
+      "duration": 3.039,
+      "text": "this creation i'm going to get public"
+    },
+    {
+      "start": 215.519,
+      "duration": 3.041,
+      "text": "and a private key the public key is"
+    },
+    {
+      "start": 216.959,
+      "duration": 3.681,
+      "text": "going to be stored here so let's just"
+    },
+    {
+      "start": 218.56,
+      "duration": 4.239,
+      "text": "change the name for reference so the"
+    },
+    {
+      "start": 220.64,
+      "duration": 4.0,
+      "text": "name is going to be rsa and to get the"
+    },
+    {
+      "start": 222.799,
+      "duration": 2.881,
+      "text": "public key from this i'm going to refer"
+    },
+    {
+      "start": 224.64,
+      "duration": 3.28,
+      "text": "this as"
+    },
+    {
+      "start": 225.68,
+      "duration": 3.44,
+      "text": "tls"
+    },
+    {
+      "start": 227.92,
+      "duration": 3.039,
+      "text": "dot"
+    },
+    {
+      "start": 229.12,
+      "duration": 4.08,
+      "text": "tls private key"
+    },
+    {
+      "start": 230.959,
+      "duration": 3.521,
+      "text": "dot rsa dot"
+    },
+    {
+      "start": 233.2,
+      "duration": 3.44,
+      "text": "public"
+    },
+    {
+      "start": 234.48,
+      "duration": 4.08,
+      "text": "underscore key"
+    },
+    {
+      "start": 236.64,
+      "duration": 5.44,
+      "text": "underscore"
+    },
+    {
+      "start": 238.56,
+      "duration": 6.48,
+      "text": "open ssh so it should be public"
+    },
+    {
+      "start": 242.08,
+      "duration": 4.159,
+      "text": "underscore key under score open ssh so"
+    },
+    {
+      "start": 245.04,
+      "duration": 3.119,
+      "text": "this is how you are going to get the"
+    },
+    {
+      "start": 246.239,
+      "duration": 3.761,
+      "text": "public key in here but we also want"
+    },
+    {
+      "start": 248.159,
+      "duration": 3.36,
+      "text": "private key to be stored in our machine"
+    },
+    {
+      "start": 250.0,
+      "duration": 3.84,
+      "text": "so that so that we can access it into"
+    },
+    {
+      "start": 251.519,
+      "duration": 4.56,
+      "text": "our instance so to store private key"
+    },
+    {
+      "start": 253.84,
+      "duration": 4.959,
+      "text": "because in our machine we need to create"
+    },
+    {
+      "start": 256.079,
+      "duration": 4.481,
+      "text": "a file or a folder right so how we can"
+    },
+    {
+      "start": 258.799,
+      "duration": 4.241,
+      "text": "create a files to create a file we have"
+    },
+    {
+      "start": 260.56,
+      "duration": 5.12,
+      "text": "to use terraform resource that is local"
+    },
+    {
+      "start": 263.04,
+      "duration": 5.12,
+      "text": "so create file in terraform let's search"
+    },
+    {
+      "start": 265.68,
+      "duration": 4.079,
+      "text": "for it i get this local file resource"
+    },
+    {
+      "start": 268.16,
+      "duration": 4.08,
+      "text": "and we're going to use this local file"
+    },
+    {
+      "start": 269.759,
+      "duration": 4.321,
+      "text": "resource use this resource local file"
+    },
+    {
+      "start": 272.24,
+      "duration": 4.64,
+      "text": "i'm going to paste it here local file"
+    },
+    {
+      "start": 274.08,
+      "duration": 5.119,
+      "text": "name is going to be same tf underscore"
+    },
+    {
+      "start": 276.88,
+      "duration": 3.92,
+      "text": "key and the content should be private"
+    },
+    {
+      "start": 279.199,
+      "duration": 3.28,
+      "text": "content of the key that is going to be"
+    },
+    {
+      "start": 280.8,
+      "duration": 3.679,
+      "text": "created the same like"
+    },
+    {
+      "start": 282.479,
+      "duration": 3.28,
+      "text": "this i'm going to copy this"
+    },
+    {
+      "start": 284.479,
+      "duration": 4.081,
+      "text": "here"
+    },
+    {
+      "start": 285.759,
+      "duration": 4.801,
+      "text": "and paste it here so no need to insert"
+    },
+    {
+      "start": 288.56,
+      "duration": 4.56,
+      "text": "exclamation marks"
+    },
+    {
+      "start": 290.56,
+      "duration": 4.24,
+      "text": "it should be tls underscore private key"
+    },
+    {
+      "start": 293.12,
+      "duration": 3.28,
+      "text": "dot rsa"
+    },
+    {
+      "start": 294.8,
+      "duration": 4.64,
+      "text": "dot private"
+    },
+    {
+      "start": 296.4,
+      "duration": 5.44,
+      "text": "underscore key underscore pem so this is"
+    },
+    {
+      "start": 299.44,
+      "duration": 4.64,
+      "text": "how you store the private key and the"
+    },
+    {
+      "start": 301.84,
+      "duration": 3.52,
+      "text": "file name should be tf"
+    },
+    {
+      "start": 304.08,
+      "duration": 4.08,
+      "text": "key"
+    },
+    {
+      "start": 305.36,
+      "duration": 4.48,
+      "text": "right so now i have keeper created the"
+    },
+    {
+      "start": 308.16,
+      "duration": 3.28,
+      "text": "public key is going to be stored in my"
+    },
+    {
+      "start": 309.84,
+      "duration": 3.44,
+      "text": "aws like this the public key is going to"
+    },
+    {
+      "start": 311.44,
+      "duration": 3.44,
+      "text": "be stored like this here and the private"
+    },
+    {
+      "start": 313.28,
+      "duration": 3.44,
+      "text": "is going to be stored in my machine so"
+    },
+    {
+      "start": 314.88,
+      "duration": 3.28,
+      "text": "let's share a form plan this to see what"
+    },
+    {
+      "start": 316.72,
+      "duration": 3.12,
+      "text": "is going to be created"
+    },
+    {
+      "start": 318.16,
+      "duration": 4.0,
+      "text": "local file which that is going to store"
+    },
+    {
+      "start": 319.84,
+      "duration": 3.919,
+      "text": "private key aws key pair that is going"
+    },
+    {
+      "start": 322.16,
+      "duration": 3.2,
+      "text": "to create a key pair"
+    },
+    {
+      "start": 323.759,
+      "duration": 2.961,
+      "text": "and attach it to our instance and the"
+    },
+    {
+      "start": 325.36,
+      "duration": 3.839,
+      "text": "public key as well so let's run the"
+    },
+    {
+      "start": 326.72,
+      "duration": 4.4,
+      "text": "raffle apply again terraform apply so i"
+    },
+    {
+      "start": 329.199,
+      "duration": 4.081,
+      "text": "have commented the first key i have to"
+    },
+    {
+      "start": 331.12,
+      "duration": 4.32,
+      "text": "use this keeper as well so now it is"
+    },
+    {
+      "start": 333.28,
+      "duration": 4.4,
+      "text": "going it is created if we can see here"
+    },
+    {
+      "start": 335.44,
+      "duration": 4.64,
+      "text": "if we refresh this have the name of the"
+    },
+    {
+      "start": 337.68,
+      "duration": 4.16,
+      "text": "key as tf dot underscore kri right so"
+    },
+    {
+      "start": 340.08,
+      "duration": 4.72,
+      "text": "the same way if i use"
+    },
+    {
+      "start": 341.84,
+      "duration": 5.68,
+      "text": "the name your tf underscore key if you"
+    },
+    {
+      "start": 344.8,
+      "duration": 4.72,
+      "text": "can see here as well i have got the key"
+    },
+    {
+      "start": 347.52,
+      "duration": 4.8,
+      "text": "that stores the private key this is in"
+    },
+    {
+      "start": 349.52,
+      "duration": 6.64,
+      "text": "my local so if i go in my terminal and i"
+    },
+    {
+      "start": 352.32,
+      "duration": 6.64,
+      "text": "go to cd terraform tutorial and i do ls"
+    },
+    {
+      "start": 356.16,
+      "duration": 5.36,
+      "text": "i can see this key tf dot key right so i"
+    },
+    {
+      "start": 358.96,
+      "duration": 4.56,
+      "text": "can use this tf key to ssh into my"
+    },
+    {
+      "start": 361.52,
+      "duration": 3.92,
+      "text": "instance so i go to my instance and i'm"
+    },
+    {
+      "start": 363.52,
+      "duration": 4.239,
+      "text": "copy the public ip of the instance that"
+    },
+    {
+      "start": 365.44,
+      "duration": 5.36,
+      "text": "is going to be created run ssh command"
+    },
+    {
+      "start": 367.759,
+      "duration": 5.121,
+      "text": "ssh ec2 hyphen user"
+    },
+    {
+      "start": 370.8,
+      "duration": 5.519,
+      "text": "at the rate public"
+    },
+    {
+      "start": 372.88,
+      "duration": 6.0,
+      "text": "ip hyphen i and tf"
+    },
+    {
+      "start": 376.319,
+      "duration": 4.16,
+      "text": "key name of the key and it says are you"
+    },
+    {
+      "start": 378.88,
+      "duration": 3.68,
+      "text": "sure i'm saying yes"
+    },
+    {
+      "start": 380.479,
+      "duration": 3.761,
+      "text": "permanently added and it's going to show"
+    },
+    {
+      "start": 382.56,
+      "duration": 4.079,
+      "text": "the same error so similarly we are going"
+    },
+    {
+      "start": 384.24,
+      "duration": 4.959,
+      "text": "to run the same command that is chmod"
+    },
+    {
+      "start": 386.639,
+      "duration": 4.0,
+      "text": "400 and name of the key that is tf key"
+    },
+    {
+      "start": 389.199,
+      "duration": 2.56,
+      "text": "and i'm going to run the ssh command"
+    },
+    {
+      "start": 390.639,
+      "duration": 2.081,
+      "text": "again"
+    },
+    {
+      "start": 391.759,
+      "duration": 3.601,
+      "text": "so now"
+    },
+    {
+      "start": 392.72,
+      "duration": 5.12,
+      "text": "we should be inside our s ec2 instance"
+    },
+    {
+      "start": 395.36,
+      "duration": 4.72,
+      "text": "so yes we are inside our ec2 instance so"
+    },
+    {
+      "start": 397.84,
+      "duration": 4.639,
+      "text": "this is how you create your keypair in"
+    },
+    {
+      "start": 400.08,
+      "duration": 4.48,
+      "text": "the instance the first is directly"
+    },
+    {
+      "start": 402.479,
+      "duration": 4.0,
+      "text": "pasting the name of the keypair in the"
+    },
+    {
+      "start": 404.56,
+      "duration": 3.68,
+      "text": "code in the terraform code and the"
+    },
+    {
+      "start": 406.479,
+      "duration": 4.0,
+      "text": "second way is to create the terraform"
+    },
+    {
+      "start": 408.24,
+      "duration": 4.399,
+      "text": "code so if i run terraform destroy the"
+    },
+    {
+      "start": 410.479,
+      "duration": 3.921,
+      "text": "key is going to be destroyed as well"
+    },
+    {
+      "start": 412.639,
+      "duration": 3.361,
+      "text": "let's just exit it should also destroy"
+    },
+    {
+      "start": 414.4,
+      "duration": 3.919,
+      "text": "this tf.key"
+    },
+    {
+      "start": 416.0,
+      "duration": 5.919,
+      "text": "so if i do ls now i should see that this"
+    },
+    {
+      "start": 418.319,
+      "duration": 5.761,
+      "text": "tf dot is gone tf key is gone because it"
+    },
+    {
+      "start": 421.919,
+      "duration": 5.041,
+      "text": "has been deleted and similarly if i go"
+    },
+    {
+      "start": 424.08,
+      "duration": 3.679,
+      "text": "to my key pair here in keeper i also"
+    },
+    {
+      "start": 426.96,
+      "duration": 3.359,
+      "text": "should"
+    },
+    {
+      "start": 427.759,
+      "duration": 4.16,
+      "text": "see that the key tft has gone because"
+    },
+    {
+      "start": 430.319,
+      "duration": 3.681,
+      "text": "it is going to be applied under deleted"
+    },
+    {
+      "start": 431.919,
+      "duration": 4.481,
+      "text": "according to the resources"
+    },
+    {
+      "start": 434.0,
+      "duration": 4.479,
+      "text": "so this is how you create your keeper in"
+    },
+    {
+      "start": 436.4,
+      "duration": 4.239,
+      "text": "terraform and attach it to your instance"
+    },
+    {
+      "start": 438.479,
+      "duration": 4.321,
+      "text": "so i hope you got the idea and you"
+    },
+    {
+      "start": 440.639,
+      "duration": 4.081,
+      "text": "understood this video so please like"
+    },
+    {
+      "start": 442.8,
+      "duration": 5.119,
+      "text": "this video and subscribe to this channel"
+    },
+    {
+      "start": 444.72,
+      "duration": 3.199,
+      "text": "and have a good day"
+    }
+  ]
+}

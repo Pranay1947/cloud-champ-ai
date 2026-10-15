@@ -1,0 +1,3386 @@
+{
+  "video": {
+    "id": "wFWg0Y68Owo",
+    "title": "Simple DevOps Project to Practice Terraform with AWS",
+    "url": "https://www.youtube.com/watch?v=wFWg0Y68Owo",
+    "duration": 1542,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.299,
+      "duration": 4.5,
+      "text": "new devops project to practice and learn"
+    },
+    {
+      "start": 2.58,
+      "duration": 4.5,
+      "text": "terrafour with AWS in this project video"
+    },
+    {
+      "start": 4.799,
+      "duration": 4.321,
+      "text": "we are going to create S3 bucket and set"
+    },
+    {
+      "start": 7.08,
+      "duration": 5.519,
+      "text": "up static website hosting to showcase"
+    },
+    {
+      "start": 9.12,
+      "duration": 6.059,
+      "text": "our portfolio projects resumes on AWS"
+    },
+    {
+      "start": 12.599,
+      "duration": 4.561,
+      "text": "using terraform in just 3 seconds let's"
+    },
+    {
+      "start": 15.179,
+      "duration": 3.781,
+      "text": "go alright so I'm here on my computer"
+    },
+    {
+      "start": 17.16,
+      "duration": 4.199,
+      "text": "screen and in this video we are going to"
+    },
+    {
+      "start": 18.96,
+      "duration": 4.979,
+      "text": "do a project of creating a S3 bucket on"
+    },
+    {
+      "start": 21.359,
+      "duration": 4.861,
+      "text": "AWS and setting up static website using"
+    },
+    {
+      "start": 23.939,
+      "duration": 3.961,
+      "text": "terraform in just three seconds before"
+    },
+    {
+      "start": 26.22,
+      "duration": 3.059,
+      "text": "we start with the project there are a"
+    },
+    {
+      "start": 27.9,
+      "duration": 3.66,
+      "text": "few prerequisites that you need to have"
+    },
+    {
+      "start": 29.279,
+      "duration": 3.721,
+      "text": "first is the AWS account you need to"
+    },
+    {
+      "start": 31.56,
+      "duration": 3.24,
+      "text": "have an AWS account if you want to"
+    },
+    {
+      "start": 33.0,
+      "duration": 3.899,
+      "text": "create S3 buckets on it so I already"
+    },
+    {
+      "start": 34.8,
+      "duration": 4.2,
+      "text": "have mine if you don't have it do create"
+    },
+    {
+      "start": 36.899,
+      "duration": 3.66,
+      "text": "it and I'm going to paste the link of"
+    },
+    {
+      "start": 39.0,
+      "duration": 4.02,
+      "text": "the video where I show you how to create"
+    },
+    {
+      "start": 40.559,
+      "duration": 3.961,
+      "text": "a free AWS account second is to have"
+    },
+    {
+      "start": 43.02,
+      "duration": 3.48,
+      "text": "terraform installed if you don't have it"
+    },
+    {
+      "start": 44.52,
+      "duration": 3.96,
+      "text": "installed you can install it from this"
+    },
+    {
+      "start": 46.5,
+      "duration": 4.44,
+      "text": "the official documentation and to"
+    },
+    {
+      "start": 48.48,
+      "duration": 4.38,
+      "text": "confirm you can just run terraform dash"
+    },
+    {
+      "start": 50.94,
+      "duration": 3.779,
+      "text": "dash version if you have this output"
+    },
+    {
+      "start": 52.86,
+      "duration": 3.539,
+      "text": "which means terraform is installed for"
+    },
+    {
+      "start": 54.719,
+      "duration": 4.081,
+      "text": "you I have terraform installed and I can"
+    },
+    {
+      "start": 56.399,
+      "duration": 4.8,
+      "text": "see the output as well third thing or"
+    },
+    {
+      "start": 58.8,
+      "duration": 4.86,
+      "text": "third prerequisite is to watch my for"
+    },
+    {
+      "start": 61.199,
+      "duration": 4.201,
+      "text": "videos which you will find here in the"
+    },
+    {
+      "start": 63.66,
+      "duration": 3.72,
+      "text": "playlist which covers all the basic"
+    },
+    {
+      "start": 65.4,
+      "duration": 4.02,
+      "text": "concepts of what is HCl syntax what is"
+    },
+    {
+      "start": 67.38,
+      "duration": 4.02,
+      "text": "providers what is variables and outputs"
+    },
+    {
+      "start": 69.42,
+      "duration": 3.66,
+      "text": "and how to connect AWS to terraform"
+    },
+    {
+      "start": 71.4,
+      "duration": 3.06,
+      "text": "because we are going to implement all"
+    },
+    {
+      "start": 73.08,
+      "duration": 3.539,
+      "text": "the knowledge that we have learned in"
+    },
+    {
+      "start": 74.46,
+      "duration": 3.479,
+      "text": "this previous videos as a project and"
+    },
+    {
+      "start": 76.619,
+      "duration": 3.0,
+      "text": "help you understand all the concepts"
+    },
+    {
+      "start": 77.939,
+      "duration": 3.481,
+      "text": "properly so do watch the video because"
+    },
+    {
+      "start": 79.619,
+      "duration": 4.14,
+      "text": "we are going to use variables outputs"
+    },
+    {
+      "start": 81.42,
+      "duration": 4.8,
+      "text": "providers and everything all of that in"
+    },
+    {
+      "start": 83.759,
+      "duration": 4.741,
+      "text": "the in this project"
+    },
+    {
+      "start": 86.22,
+      "duration": 3.66,
+      "text": "so let's start with the project but let"
+    },
+    {
+      "start": 88.5,
+      "duration": 3.24,
+      "text": "me tell you the steps that we are going"
+    },
+    {
+      "start": 89.88,
+      "duration": 3.779,
+      "text": "to follow first we need to create an S3"
+    },
+    {
+      "start": 91.74,
+      "duration": 3.78,
+      "text": "bucket so we'll be using terraform to"
+    },
+    {
+      "start": 93.659,
+      "duration": 3.721,
+      "text": "create S3 bucket second we need to"
+    },
+    {
+      "start": 95.52,
+      "duration": 4.139,
+      "text": "enable the setting that we require to"
+    },
+    {
+      "start": 97.38,
+      "duration": 3.18,
+      "text": "set up static website on that S3 so we"
+    },
+    {
+      "start": 99.659,
+      "duration": 3.181,
+      "text": "will also be doing this through"
+    },
+    {
+      "start": 100.56,
+      "duration": 4.5,
+      "text": "terraform nothing manual all everything"
+    },
+    {
+      "start": 102.84,
+      "duration": 5.94,
+      "text": "will be automated we also need to upload"
+    },
+    {
+      "start": 105.06,
+      "duration": 6.54,
+      "text": "website files like index.html error.html"
+    },
+    {
+      "start": 108.78,
+      "duration": 4.44,
+      "text": "also a few images if you want to insert"
+    },
+    {
+      "start": 111.6,
+      "duration": 4.5,
+      "text": "some images for example if you see here"
+    },
+    {
+      "start": 113.22,
+      "duration": 4.439,
+      "text": "I have an image of me here so we also"
+    },
+    {
+      "start": 116.1,
+      "duration": 5.22,
+      "text": "need to upload this image on S3 bucket"
+    },
+    {
+      "start": 117.659,
+      "duration": 5.341,
+      "text": "and this HTML website also on the S3"
+    },
+    {
+      "start": 121.32,
+      "duration": 4.02,
+      "text": "bucket so we'll be doing that through"
+    },
+    {
+      "start": 123.0,
+      "duration": 4.32,
+      "text": "terraform next we need to enable Public"
+    },
+    {
+      "start": 125.34,
+      "duration": 3.6,
+      "text": "Access if you want to set up starting"
+    },
+    {
+      "start": 127.32,
+      "duration": 3.9,
+      "text": "website on S3 you need to make the"
+    },
+    {
+      "start": 128.94,
+      "duration": 4.68,
+      "text": "bucket public so we're able to do that"
+    },
+    {
+      "start": 131.22,
+      "duration": 4.32,
+      "text": "configuration even through terraform so"
+    },
+    {
+      "start": 133.62,
+      "duration": 3.78,
+      "text": "I'll show you that as well and this is"
+    },
+    {
+      "start": 135.54,
+      "duration": 3.839,
+      "text": "optional if you have a domain name let's"
+    },
+    {
+      "start": 137.4,
+      "duration": 4.26,
+      "text": "say mywebsite.com you can connect your"
+    },
+    {
+      "start": 139.379,
+      "duration": 3.241,
+      "text": "S3 website with your domain name if you"
+    },
+    {
+      "start": 141.66,
+      "duration": 2.64,
+      "text": "don't have it and you don't want to"
+    },
+    {
+      "start": 142.62,
+      "duration": 4.52,
+      "text": "spend money buying a domain you can"
+    },
+    {
+      "start": 144.3,
+      "duration": 5.7,
+      "text": "still complete this project using S3"
+    },
+    {
+      "start": 147.14,
+      "duration": 4.54,
+      "text": "endpoint like this next after you have"
+    },
+    {
+      "start": 150.0,
+      "duration": 4.08,
+      "text": "your website ready you can just test it"
+    },
+    {
+      "start": 151.68,
+      "duration": 4.26,
+      "text": "by running pasting the website endpoint"
+    },
+    {
+      "start": 154.08,
+      "duration": 3.18,
+      "text": "and seeing if your website is accessible"
+    },
+    {
+      "start": 155.94,
+      "duration": 3.42,
+      "text": "or not"
+    },
+    {
+      "start": 157.26,
+      "duration": 4.14,
+      "text": "so once you have these prerequisites and"
+    },
+    {
+      "start": 159.36,
+      "duration": 3.48,
+      "text": "the steps cleared let's start with"
+    },
+    {
+      "start": 161.4,
+      "duration": 3.72,
+      "text": "creating our project so first thing I'm"
+    },
+    {
+      "start": 162.84,
+      "duration": 3.6,
+      "text": "going to do is to create a folder so I"
+    },
+    {
+      "start": 165.12,
+      "duration": 4.32,
+      "text": "have this is my terminal I'm going to"
+    },
+    {
+      "start": 166.44,
+      "duration": 6.0,
+      "text": "create a folder and let's name it my"
+    },
+    {
+      "start": 169.44,
+      "duration": 4.92,
+      "text": "S3 static website or you can name it"
+    },
+    {
+      "start": 172.44,
+      "duration": 3.6,
+      "text": "anything it's up to you I created this"
+    },
+    {
+      "start": 174.36,
+      "duration": 4.32,
+      "text": "folder and I'm going to go inside this"
+    },
+    {
+      "start": 176.04,
+      "duration": 6.36,
+      "text": "folder and open this in vs code"
+    },
+    {
+      "start": 178.68,
+      "duration": 6.72,
+      "text": "so here is my vs code"
+    },
+    {
+      "start": 182.4,
+      "duration": 5.1,
+      "text": "let's start with creating our static"
+    },
+    {
+      "start": 185.4,
+      "duration": 4.14,
+      "text": "website on terraform so if you remember"
+    },
+    {
+      "start": 187.5,
+      "duration": 4.2,
+      "text": "in the providers video we have defined"
+    },
+    {
+      "start": 189.54,
+      "duration": 4.199,
+      "text": "whenever we want to work with AWS or"
+    },
+    {
+      "start": 191.7,
+      "duration": 4.38,
+      "text": "data form we need to First create a"
+    },
+    {
+      "start": 193.739,
+      "duration": 5.701,
+      "text": "provider and I'm going to do that in a"
+    },
+    {
+      "start": 196.08,
+      "duration": 5.579,
+      "text": "file named as providers dot TF so this"
+    },
+    {
+      "start": 199.44,
+      "duration": 4.14,
+      "text": "file will contain my provider detail and"
+    },
+    {
+      "start": 201.659,
+      "duration": 4.741,
+      "text": "right now we are using terraform with"
+    },
+    {
+      "start": 203.58,
+      "duration": 5.159,
+      "text": "AWS so we need to say"
+    },
+    {
+      "start": 206.4,
+      "duration": 3.36,
+      "text": "AWS is uploaded so I'm going to say AWS"
+    },
+    {
+      "start": 208.739,
+      "duration": 3.36,
+      "text": "star form"
+    },
+    {
+      "start": 209.76,
+      "duration": 3.96,
+      "text": "and provider we will go to the official"
+    },
+    {
+      "start": 212.099,
+      "duration": 3.181,
+      "text": "documentation throughout the video we"
+    },
+    {
+      "start": 213.72,
+      "duration": 3.48,
+      "text": "will be using documentation to help you"
+    },
+    {
+      "start": 215.28,
+      "duration": 4.86,
+      "text": "understand the concept properly and even"
+    },
+    {
+      "start": 217.2,
+      "duration": 4.98,
+      "text": "to find Solutions if you are stuck we"
+    },
+    {
+      "start": 220.14,
+      "duration": 4.019,
+      "text": "are also going to be using chat GPT in"
+    },
+    {
+      "start": 222.18,
+      "duration": 4.02,
+      "text": "this project so make sure you watch this"
+    },
+    {
+      "start": 224.159,
+      "duration": 4.44,
+      "text": "video and see how you can use strategypt"
+    },
+    {
+      "start": 226.2,
+      "duration": 4.74,
+      "text": "in your day-to-day stuff so here we have"
+    },
+    {
+      "start": 228.599,
+      "duration": 4.381,
+      "text": "a provider we can choose to use this"
+    },
+    {
+      "start": 230.94,
+      "duration": 3.299,
+      "text": "Provider by clicking on this button and"
+    },
+    {
+      "start": 232.98,
+      "duration": 3.36,
+      "text": "copying the"
+    },
+    {
+      "start": 234.239,
+      "duration": 3.601,
+      "text": "configuration here there are two blocks"
+    },
+    {
+      "start": 236.34,
+      "duration": 3.179,
+      "text": "here terraform block and the provider"
+    },
+    {
+      "start": 237.84,
+      "duration": 3.119,
+      "text": "block terraform block can be used"
+    },
+    {
+      "start": 239.519,
+      "duration": 3.36,
+      "text": "whenever you want to use a specific"
+    },
+    {
+      "start": 240.959,
+      "duration": 3.36,
+      "text": "version of this provider so right now it"
+    },
+    {
+      "start": 242.879,
+      "duration": 3.841,
+      "text": "is 5.1"
+    },
+    {
+      "start": 244.319,
+      "duration": 4.021,
+      "text": "10.0 which is the latest one if you want"
+    },
+    {
+      "start": 246.72,
+      "duration": 3.299,
+      "text": "to use any particular one you can also"
+    },
+    {
+      "start": 248.34,
+      "duration": 3.599,
+      "text": "use that let's go with the latest one"
+    },
+    {
+      "start": 250.019,
+      "duration": 4.201,
+      "text": "and I'm going to paste the block as it"
+    },
+    {
+      "start": 251.939,
+      "duration": 3.901,
+      "text": "is in this terraform block we can also"
+    },
+    {
+      "start": 254.22,
+      "duration": 4.979,
+      "text": "put the backend configuration where we"
+    },
+    {
+      "start": 255.84,
+      "duration": 5.639,
+      "text": "can store our state file in S3 buckets"
+    },
+    {
+      "start": 259.199,
+      "duration": 4.201,
+      "text": "which is very important and I'm going to"
+    },
+    {
+      "start": 261.479,
+      "duration": 4.021,
+      "text": "explain you that in the next upcoming"
+    },
+    {
+      "start": 263.4,
+      "duration": 4.32,
+      "text": "videos of what is State file and how to"
+    },
+    {
+      "start": 265.5,
+      "duration": 4.62,
+      "text": "manage State what is backend and all the"
+    },
+    {
+      "start": 267.72,
+      "duration": 3.6,
+      "text": "stuff for now I am going to Define this"
+    },
+    {
+      "start": 270.12,
+      "duration": 5.1,
+      "text": "provider and the region is going to be"
+    },
+    {
+      "start": 271.32,
+      "duration": 5.58,
+      "text": "us Dash East dash one so this is my"
+    },
+    {
+      "start": 275.22,
+      "duration": 3.78,
+      "text": "region and I have defined my provider"
+    },
+    {
+      "start": 276.9,
+      "duration": 4.5,
+      "text": "let's go and run the First Command which"
+    },
+    {
+      "start": 279.0,
+      "duration": 3.96,
+      "text": "is terraform init command this command"
+    },
+    {
+      "start": 281.4,
+      "duration": 4.14,
+      "text": "is to initialize the data form and to"
+    },
+    {
+      "start": 282.96,
+      "duration": 4.739,
+      "text": "download all the required dependencies"
+    },
+    {
+      "start": 285.54,
+      "duration": 4.56,
+      "text": "or required files for this provided work"
+    },
+    {
+      "start": 287.699,
+      "duration": 4.261,
+      "text": "and to give API access so once this is"
+    },
+    {
+      "start": 290.1,
+      "duration": 3.06,
+      "text": "done it should give us a message that"
+    },
+    {
+      "start": 291.96,
+      "duration": 2.88,
+      "text": "provider has been successfully"
+    },
+    {
+      "start": 293.16,
+      "duration": 3.66,
+      "text": "initialized you can now start working"
+    },
+    {
+      "start": 294.84,
+      "duration": 3.78,
+      "text": "with terraform so this is an important"
+    },
+    {
+      "start": 296.82,
+      "duration": 4.319,
+      "text": "step once this is done we can start with"
+    },
+    {
+      "start": 298.62,
+      "duration": 4.98,
+      "text": "writing our code to create S3 buckets to"
+    },
+    {
+      "start": 301.139,
+      "duration": 5.221,
+      "text": "set up static website to upload website"
+    },
+    {
+      "start": 303.6,
+      "duration": 3.9,
+      "text": "files and and a lot more so now you can"
+    },
+    {
+      "start": 306.36,
+      "duration": 2.46,
+      "text": "see it says terraform has been"
+    },
+    {
+      "start": 307.5,
+      "duration": 3.12,
+      "text": "successfully initialized there are few"
+    },
+    {
+      "start": 308.82,
+      "duration": 4.319,
+      "text": "files here which we don't need to worry"
+    },
+    {
+      "start": 310.62,
+      "duration": 4.32,
+      "text": "about and let's start with writing our"
+    },
+    {
+      "start": 313.139,
+      "duration": 3.241,
+      "text": "code I can choose to write the code in"
+    },
+    {
+      "start": 314.94,
+      "duration": 5.46,
+      "text": "this file itself but I'm going to create"
+    },
+    {
+      "start": 316.38,
+      "duration": 7.92,
+      "text": "another file and name it main dot TF all"
+    },
+    {
+      "start": 320.4,
+      "duration": 5.28,
+      "text": "right in this first step is to create S3"
+    },
+    {
+      "start": 324.3,
+      "duration": 4.08,
+      "text": "bucket"
+    },
+    {
+      "start": 325.68,
+      "duration": 4.859,
+      "text": "right so let's do let's create a bucket"
+    },
+    {
+      "start": 328.38,
+      "duration": 3.659,
+      "text": "to create a bucket because again use the"
+    },
+    {
+      "start": 330.539,
+      "duration": 2.761,
+      "text": "official documentation so you can say"
+    },
+    {
+      "start": 332.039,
+      "duration": 5.6,
+      "text": "terraform"
+    },
+    {
+      "start": 333.3,
+      "duration": 7.679,
+      "text": "S3 resource once I do this I am going to"
+    },
+    {
+      "start": 337.639,
+      "duration": 4.961,
+      "text": "click on this link which says S3 bucket"
+    },
+    {
+      "start": 340.979,
+      "duration": 3.181,
+      "text": "and you can find the complete"
+    },
+    {
+      "start": 342.6,
+      "duration": 3.9,
+      "text": "documentation this is saying that the"
+    },
+    {
+      "start": 344.16,
+      "duration": 3.599,
+      "text": "version is a 3.36 if you want to go to"
+    },
+    {
+      "start": 346.5,
+      "duration": 4.02,
+      "text": "the latest one I'm going to click on go"
+    },
+    {
+      "start": 347.759,
+      "duration": 6.241,
+      "text": "to latest version here and search for S3"
+    },
+    {
+      "start": 350.52,
+      "duration": 5.76,
+      "text": "in this menu so you can find S3 in the S"
+    },
+    {
+      "start": 354.0,
+      "duration": 5.34,
+      "text": "section which is"
+    },
+    {
+      "start": 356.28,
+      "duration": 4.5,
+      "text": "here so STD Glacier S3 simple storage"
+    },
+    {
+      "start": 359.34,
+      "duration": 3.6,
+      "text": "this is what you want to use and I want"
+    },
+    {
+      "start": 360.78,
+      "duration": 3.6,
+      "text": "to create a bucket so I can I can use"
+    },
+    {
+      "start": 362.94,
+      "duration": 4.08,
+      "text": "this documentation to create a bucket"
+    },
+    {
+      "start": 364.38,
+      "duration": 4.259,
+      "text": "and I can copy this thing here but"
+    },
+    {
+      "start": 367.02,
+      "duration": 4.14,
+      "text": "remember whenever you create a bucket it"
+    },
+    {
+      "start": 368.639,
+      "duration": 4.081,
+      "text": "has to be unique the name of the packet"
+    },
+    {
+      "start": 371.16,
+      "duration": 4.319,
+      "text": "should be globally unique you cannot use"
+    },
+    {
+      "start": 372.72,
+      "duration": 4.14,
+      "text": "the same name for a bucket and we are"
+    },
+    {
+      "start": 375.479,
+      "duration": 4.621,
+      "text": "going to define the name of the bucket"
+    },
+    {
+      "start": 376.86,
+      "duration": 5.94,
+      "text": "in the form of variable so let me make"
+    },
+    {
+      "start": 380.1,
+      "duration": 4.98,
+      "text": "this smaller and we have the resource"
+    },
+    {
+      "start": 382.8,
+      "duration": 3.959,
+      "text": "here resources AWS S3 bucket the name of"
+    },
+    {
+      "start": 385.08,
+      "duration": 5.94,
+      "text": "the bucket let's change this to bucket"
+    },
+    {
+      "start": 386.759,
+      "duration": 6.481,
+      "text": "or my bucket here and in this we have a"
+    },
+    {
+      "start": 391.02,
+      "duration": 3.66,
+      "text": "name but we have to Define this name in"
+    },
+    {
+      "start": 393.24,
+      "duration": 3.84,
+      "text": "the form of variable I also don't want"
+    },
+    {
+      "start": 394.68,
+      "duration": 4.799,
+      "text": "this tax because they are optional so in"
+    },
+    {
+      "start": 397.08,
+      "duration": 3.959,
+      "text": "this I am going to again create a new"
+    },
+    {
+      "start": 399.479,
+      "duration": 3.481,
+      "text": "file for variables I don't want to put"
+    },
+    {
+      "start": 401.039,
+      "duration": 6.061,
+      "text": "the variables in this main.tf so I'll be"
+    },
+    {
+      "start": 402.96,
+      "duration": 5.64,
+      "text": "creating a file name it variables dot TF"
+    },
+    {
+      "start": 407.1,
+      "duration": 3.24,
+      "text": "all right"
+    },
+    {
+      "start": 408.6,
+      "duration": 3.3,
+      "text": "inside this I need to create a variable"
+    },
+    {
+      "start": 410.34,
+      "duration": 5.04,
+      "text": "and the name of the variable is going to"
+    },
+    {
+      "start": 411.9,
+      "duration": 5.76,
+      "text": "be bucket name so bucket name and the"
+    },
+    {
+      "start": 415.38,
+      "duration": 4.56,
+      "text": "value is going to be default equals to"
+    },
+    {
+      "start": 417.66,
+      "duration": 4.68,
+      "text": "Let's choose the very unique names I'm"
+    },
+    {
+      "start": 419.94,
+      "duration": 4.44,
+      "text": "going to say my terraform"
+    },
+    {
+      "start": 422.34,
+      "duration": 3.38,
+      "text": "uh project"
+    },
+    {
+      "start": 424.38,
+      "duration": 3.72,
+      "text": "website"
+    },
+    {
+      "start": 425.72,
+      "duration": 4.18,
+      "text": "2023 hopefully this name should not be"
+    },
+    {
+      "start": 428.1,
+      "duration": 4.14,
+      "text": "taken by anyone so it should not give us"
+    },
+    {
+      "start": 429.9,
+      "duration": 4.799,
+      "text": "any error and I'm going to use that this"
+    },
+    {
+      "start": 432.24,
+      "duration": 5.28,
+      "text": "variable inside the main.tf by saying"
+    },
+    {
+      "start": 434.699,
+      "duration": 4.741,
+      "text": "War dot bucket name let's save this and"
+    },
+    {
+      "start": 437.52,
+      "duration": 3.299,
+      "text": "our code is ready let's go into other"
+    },
+    {
+      "start": 439.44,
+      "duration": 3.12,
+      "text": "terraform plan command to see what is"
+    },
+    {
+      "start": 440.819,
+      "duration": 3.66,
+      "text": "going to happen according to this"
+    },
+    {
+      "start": 442.56,
+      "duration": 4.62,
+      "text": "configuration so you should be having a"
+    },
+    {
+      "start": 444.479,
+      "duration": 6.601,
+      "text": "bucket created and let me show you why"
+    },
+    {
+      "start": 447.18,
+      "duration": 7.019,
+      "text": "AWS right now there are no packets just"
+    },
+    {
+      "start": 451.08,
+      "duration": 6.0,
+      "text": "to be sure so if I go inside buckets"
+    },
+    {
+      "start": 454.199,
+      "duration": 4.321,
+      "text": "here let's go to buckets"
+    },
+    {
+      "start": 457.08,
+      "duration": 3.239,
+      "text": "and you can see there are no buckets"
+    },
+    {
+      "start": 458.52,
+      "duration": 3.42,
+      "text": "right now at this moment once I run the"
+    },
+    {
+      "start": 460.319,
+      "duration": 4.081,
+      "text": "terraform platter apply command I should"
+    },
+    {
+      "start": 461.94,
+      "duration": 3.96,
+      "text": "be having a bucket created here so when"
+    },
+    {
+      "start": 464.4,
+      "duration": 3.18,
+      "text": "I render from plan it should show me"
+    },
+    {
+      "start": 465.9,
+      "duration": 5.639,
+      "text": "that the one that one bucket should be"
+    },
+    {
+      "start": 467.58,
+      "duration": 6.119,
+      "text": "created let's see what does it say so"
+    },
+    {
+      "start": 471.539,
+      "duration": 3.481,
+      "text": "all right so here you can see it says"
+    },
+    {
+      "start": 473.699,
+      "duration": 3.181,
+      "text": "one thing to add"
+    },
+    {
+      "start": 475.02,
+      "duration": 3.119,
+      "text": "we haven't defined or we haven't defined"
+    },
+    {
+      "start": 476.88,
+      "duration": 2.759,
+      "text": "anything about the website or anything"
+    },
+    {
+      "start": 478.139,
+      "duration": 4.321,
+      "text": "configuration here so just a simple"
+    },
+    {
+      "start": 479.639,
+      "duration": 4.62,
+      "text": "bucket being created let's run the data"
+    },
+    {
+      "start": 482.46,
+      "duration": 3.54,
+      "text": "for apply command to see if it actually"
+    },
+    {
+      "start": 484.259,
+      "duration": 3.72,
+      "text": "creates a bucket or not so I'm going to"
+    },
+    {
+      "start": 486.0,
+      "duration": 3.96,
+      "text": "set it off I'll apply hyphen Auto hyphen"
+    },
+    {
+      "start": 487.979,
+      "duration": 4.141,
+      "text": "approve hyphen Auto hyphen approve as a"
+    },
+    {
+      "start": 489.96,
+      "duration": 4.2,
+      "text": "flag if you don't want to be prompted by"
+    },
+    {
+      "start": 492.12,
+      "duration": 3.419,
+      "text": "a terraform if like if you run terafa"
+    },
+    {
+      "start": 494.16,
+      "duration": 3.24,
+      "text": "apply it will ask you are you sure and"
+    },
+    {
+      "start": 495.539,
+      "duration": 3.421,
+      "text": "you need to IPS if you want to skip that"
+    },
+    {
+      "start": 497.4,
+      "duration": 3.78,
+      "text": "yes thing you can just run teraf or"
+    },
+    {
+      "start": 498.96,
+      "duration": 4.859,
+      "text": "apply hyphen Auto hyphen approve and it"
+    },
+    {
+      "start": 501.18,
+      "duration": 4.44,
+      "text": "will not ask you to IPS so once this is"
+    },
+    {
+      "start": 503.819,
+      "duration": 4.44,
+      "text": "done a bucket should be created in like"
+    },
+    {
+      "start": 505.62,
+      "duration": 4.799,
+      "text": "seconds uh so here's my bucket which is"
+    },
+    {
+      "start": 508.259,
+      "duration": 3.66,
+      "text": "in creating state right now"
+    },
+    {
+      "start": 510.419,
+      "duration": 3.901,
+      "text": "as you can see bucket has been created"
+    },
+    {
+      "start": 511.919,
+      "duration": 5.04,
+      "text": "in six seconds let's refresh the page"
+    },
+    {
+      "start": 514.32,
+      "duration": 4.98,
+      "text": "uh and you should have a bucket here so"
+    },
+    {
+      "start": 516.959,
+      "duration": 3.96,
+      "text": "the bucket is present now inside this"
+    },
+    {
+      "start": 519.3,
+      "duration": 2.64,
+      "text": "bucket we don't have any objects we are"
+    },
+    {
+      "start": 520.919,
+      "duration": 3.18,
+      "text": "going to upload the objects to a"
+    },
+    {
+      "start": 521.94,
+      "duration": 5.16,
+      "text": "terraform but next thing we have to do"
+    },
+    {
+      "start": 524.099,
+      "duration": 6.001,
+      "text": "is to make this bucket public this"
+    },
+    {
+      "start": 527.1,
+      "duration": 5.1,
+      "text": "bucket is not public right now so you"
+    },
+    {
+      "start": 530.1,
+      "duration": 5.04,
+      "text": "need to make this bucket public and also"
+    },
+    {
+      "start": 532.2,
+      "duration": 4.199,
+      "text": "enable this setting which is static"
+    },
+    {
+      "start": 535.14,
+      "duration": 3.42,
+      "text": "website hosting you can see this is"
+    },
+    {
+      "start": 536.399,
+      "duration": 4.56,
+      "text": "disabled right now we need to add or"
+    },
+    {
+      "start": 538.56,
+      "duration": 4.02,
+      "text": "make configuration to make this enabled"
+    },
+    {
+      "start": 540.959,
+      "duration": 4.32,
+      "text": "so that we can have our static website"
+    },
+    {
+      "start": 542.58,
+      "duration": 4.319,
+      "text": "hosting on S3 okay now that the bucket"
+    },
+    {
+      "start": 545.279,
+      "duration": 3.541,
+      "text": "has been created we need to refine the"
+    },
+    {
+      "start": 546.899,
+      "duration": 4.081,
+      "text": "ownership of the bucket to be as a"
+    },
+    {
+      "start": 548.82,
+      "duration": 3.78,
+      "text": "bucket owner so that everything in this"
+    },
+    {
+      "start": 550.98,
+      "duration": 3.479,
+      "text": "bucket should be owned by us and no one"
+    },
+    {
+      "start": 552.6,
+      "duration": 3.419,
+      "text": "can change anything so I need to go to"
+    },
+    {
+      "start": 554.459,
+      "duration": 3.961,
+      "text": "the another resource which is ownership"
+    },
+    {
+      "start": 556.019,
+      "duration": 4.44,
+      "text": "controls here and I can simply copy this"
+    },
+    {
+      "start": 558.42,
+      "duration": 3.84,
+      "text": "block of ownership control by changing"
+    },
+    {
+      "start": 560.459,
+      "duration": 4.261,
+      "text": "the bucket name so I'm going to paste it"
+    },
+    {
+      "start": 562.26,
+      "duration": 4.199,
+      "text": "here and change the reference of this"
+    },
+    {
+      "start": 564.72,
+      "duration": 5.88,
+      "text": "bucket to our bucket which is AWS"
+    },
+    {
+      "start": 566.459,
+      "duration": 5.161,
+      "text": "underscore S3 bucket dot live bucket dot"
+    },
+    {
+      "start": 570.6,
+      "duration": 2.82,
+      "text": "ID"
+    },
+    {
+      "start": 571.62,
+      "duration": 3.36,
+      "text": "alright this will"
+    },
+    {
+      "start": 573.42,
+      "duration": 3.419,
+      "text": "ensure that everything inside this"
+    },
+    {
+      "start": 574.98,
+      "duration": 3.84,
+      "text": "bucket is owned by the bucket owner"
+    },
+    {
+      "start": 576.839,
+      "duration": 3.481,
+      "text": "itself and next thing after we do this"
+    },
+    {
+      "start": 578.82,
+      "duration": 4.079,
+      "text": "we need to also make the bucket public"
+    },
+    {
+      "start": 580.32,
+      "duration": 5.519,
+      "text": "so for that I need to use public access"
+    },
+    {
+      "start": 582.899,
+      "duration": 4.62,
+      "text": "block resource and uh as you can see"
+    },
+    {
+      "start": 585.839,
+      "duration": 3.361,
+      "text": "here here everything is true because the"
+    },
+    {
+      "start": 587.519,
+      "duration": 3.601,
+      "text": "market is private but we need to make it"
+    },
+    {
+      "start": 589.2,
+      "duration": 4.259,
+      "text": "false so you can see here it says"
+    },
+    {
+      "start": 591.12,
+      "duration": 4.62,
+      "text": "whether Amazon S3 should block public"
+    },
+    {
+      "start": 593.459,
+      "duration": 3.961,
+      "text": "ACLS or not default to false so just"
+    },
+    {
+      "start": 595.74,
+      "duration": 3.9,
+      "text": "copy this and make everything false here"
+    },
+    {
+      "start": 597.42,
+      "duration": 4.26,
+      "text": "so I'm going to copy this and paste it"
+    },
+    {
+      "start": 599.64,
+      "duration": 5.34,
+      "text": "here change the bucket reference to"
+    },
+    {
+      "start": 601.68,
+      "duration": 5.64,
+      "text": "mybucket dot ID and all the values here"
+    },
+    {
+      "start": 604.98,
+      "duration": 5.16,
+      "text": "will be false"
+    },
+    {
+      "start": 607.32,
+      "duration": 3.84,
+      "text": "so false so that we can make the bucket"
+    },
+    {
+      "start": 610.14,
+      "duration": 2.699,
+      "text": "uh"
+    },
+    {
+      "start": 611.16,
+      "duration": 4.46,
+      "text": "public so I'll be showing you what"
+    },
+    {
+      "start": 612.839,
+      "duration": 5.641,
+      "text": "happens when we make this change so"
+    },
+    {
+      "start": 615.62,
+      "duration": 5.44,
+      "text": "false and this is going to be false as"
+    },
+    {
+      "start": 618.48,
+      "duration": 4.02,
+      "text": "well let's save this another app like a"
+    },
+    {
+      "start": 621.06,
+      "duration": 3.02,
+      "text": "plan command to see what is going to be"
+    },
+    {
+      "start": 622.5,
+      "duration": 4.38,
+      "text": "happening after we add these two"
+    },
+    {
+      "start": 624.08,
+      "duration": 5.319,
+      "text": "resources we also need to add acl's"
+    },
+    {
+      "start": 626.88,
+      "duration": 5.34,
+      "text": "Access Control list as well to make sure"
+    },
+    {
+      "start": 629.399,
+      "duration": 4.5,
+      "text": "that the bucket is completely ready for"
+    },
+    {
+      "start": 632.22,
+      "duration": 3.059,
+      "text": "the website and you can see we have"
+    },
+    {
+      "start": 633.899,
+      "duration": 3.661,
+      "text": "added two resources so it says two"
+    },
+    {
+      "start": 635.279,
+      "duration": 3.901,
+      "text": "things to be added and these are the two"
+    },
+    {
+      "start": 637.56,
+      "duration": 3.719,
+      "text": "things which are bucket ownership and"
+    },
+    {
+      "start": 639.18,
+      "duration": 4.08,
+      "text": "also public access block before we enter"
+    },
+    {
+      "start": 641.279,
+      "duration": 4.68,
+      "text": "if I apply let's also add the next"
+    },
+    {
+      "start": 643.26,
+      "duration": 4.92,
+      "text": "resource which is public which is ACL"
+    },
+    {
+      "start": 645.959,
+      "duration": 4.021,
+      "text": "here if you can see this is the S3"
+    },
+    {
+      "start": 648.18,
+      "duration": 5.279,
+      "text": "bucket ACL thing that we need to use"
+    },
+    {
+      "start": 649.98,
+      "duration": 5.64,
+      "text": "inside this if you can see here this is"
+    },
+    {
+      "start": 653.459,
+      "duration": 5.161,
+      "text": "the block we need to use but here ACL is"
+    },
+    {
+      "start": 655.62,
+      "duration": 5.339,
+      "text": "private for us to have a but to have a"
+    },
+    {
+      "start": 658.62,
+      "duration": 3.48,
+      "text": "website we need to make a public read"
+    },
+    {
+      "start": 660.959,
+      "duration": 3.06,
+      "text": "not"
+    },
+    {
+      "start": 662.1,
+      "duration": 3.9,
+      "text": "uh private so you're going to copy this"
+    },
+    {
+      "start": 664.019,
+      "duration": 3.301,
+      "text": "thing here which says public read so we"
+    },
+    {
+      "start": 666.0,
+      "duration": 4.019,
+      "text": "can see you can see we use the same"
+    },
+    {
+      "start": 667.32,
+      "duration": 5.88,
+      "text": "thing here and we are now going to copy"
+    },
+    {
+      "start": 670.019,
+      "duration": 6.481,
+      "text": "this part so public read and I'm going"
+    },
+    {
+      "start": 673.2,
+      "duration": 5.22,
+      "text": "to paste it below with editing this"
+    },
+    {
+      "start": 676.5,
+      "duration": 3.54,
+      "text": "all right so we have a bucket ACL ready"
+    },
+    {
+      "start": 678.42,
+      "duration": 3.539,
+      "text": "and it is it depends on these through"
+    },
+    {
+      "start": 680.04,
+      "duration": 3.72,
+      "text": "these two things which we created right"
+    },
+    {
+      "start": 681.959,
+      "duration": 3.541,
+      "text": "now we need to specify the bucket name"
+    },
+    {
+      "start": 683.76,
+      "duration": 5.1,
+      "text": "correctly so I'm going to say my bucket"
+    },
+    {
+      "start": 685.5,
+      "duration": 5.399,
+      "text": "dot ID and this is ready once we make"
+    },
+    {
+      "start": 688.86,
+      "duration": 6.08,
+      "text": "this you will be able to see that the"
+    },
+    {
+      "start": 690.899,
+      "duration": 4.041,
+      "text": "bucket is right now private"
+    },
+    {
+      "start": 696.019,
+      "duration": 4.121,
+      "text": "it will be public"
+    },
+    {
+      "start": 698.459,
+      "duration": 4.32,
+      "text": "so let's go and run traffic apply"
+    },
+    {
+      "start": 700.14,
+      "duration": 4.8,
+      "text": "heissen Auto hyphen approve command and"
+    },
+    {
+      "start": 702.779,
+      "duration": 5.341,
+      "text": "let's wait for this to be done so that"
+    },
+    {
+      "start": 704.94,
+      "duration": 5.399,
+      "text": "our bucket is private is public so that"
+    },
+    {
+      "start": 708.12,
+      "duration": 4.86,
+      "text": "our bucket is public and ready to be uh"
+    },
+    {
+      "start": 710.339,
+      "duration": 5.641,
+      "text": "ready to set up S3 static website on it"
+    },
+    {
+      "start": 712.98,
+      "duration": 5.52,
+      "text": "so if you see here this is now done"
+    },
+    {
+      "start": 715.98,
+      "duration": 5.4,
+      "text": "let's refresh the page to see if a"
+    },
+    {
+      "start": 718.5,
+      "duration": 4.56,
+      "text": "bucket is public right now or not so you"
+    },
+    {
+      "start": 721.38,
+      "duration": 3.84,
+      "text": "can see it is now public and it's"
+    },
+    {
+      "start": 723.06,
+      "duration": 4.68,
+      "text": "publicly accessible which is which means"
+    },
+    {
+      "start": 725.22,
+      "duration": 4.92,
+      "text": "a bucket is now ready to set up S3"
+    },
+    {
+      "start": 727.74,
+      "duration": 4.44,
+      "text": "static website here so this allows"
+    },
+    {
+      "start": 730.14,
+      "duration": 3.42,
+      "text": "disabled let's enable that as well and"
+    },
+    {
+      "start": 732.18,
+      "duration": 3.3,
+      "text": "for that I need to use website"
+    },
+    {
+      "start": 733.56,
+      "duration": 3.899,
+      "text": "configuration resource so if you go to"
+    },
+    {
+      "start": 735.48,
+      "duration": 5.52,
+      "text": "official documentation again you can"
+    },
+    {
+      "start": 737.459,
+      "duration": 5.521,
+      "text": "find website configuration resource here"
+    },
+    {
+      "start": 741.0,
+      "duration": 3.12,
+      "text": "in this website configuration resource"
+    },
+    {
+      "start": 742.98,
+      "duration": 4.62,
+      "text": "you can see they're asking you for"
+    },
+    {
+      "start": 744.12,
+      "duration": 6.899,
+      "text": "index.html and error.html so we need to"
+    },
+    {
+      "start": 747.6,
+      "duration": 5.58,
+      "text": "first put this file inside S3 bucket"
+    },
+    {
+      "start": 751.019,
+      "duration": 3.901,
+      "text": "right now in the S3 there are no objects"
+    },
+    {
+      "start": 753.18,
+      "duration": 3.659,
+      "text": "in my bucket"
+    },
+    {
+      "start": 754.92,
+      "duration": 4.58,
+      "text": "so if you don't have objects you will"
+    },
+    {
+      "start": 756.839,
+      "duration": 4.981,
+      "text": "not be able to Define index.html"
+    },
+    {
+      "start": 759.5,
+      "duration": 4.959,
+      "text": "error.html so I need to put this first"
+    },
+    {
+      "start": 761.82,
+      "duration": 4.5,
+      "text": "and then I can use this in my website"
+    },
+    {
+      "start": 764.459,
+      "duration": 3.961,
+      "text": "configuration so how would you do it if"
+    },
+    {
+      "start": 766.32,
+      "duration": 5.16,
+      "text": "you already know HTML you can simply"
+    },
+    {
+      "start": 768.42,
+      "duration": 5.76,
+      "text": "create a file name it index.html here"
+    },
+    {
+      "start": 771.48,
+      "duration": 5.22,
+      "text": "and also another file for error.html"
+    },
+    {
+      "start": 774.18,
+      "duration": 3.839,
+      "text": "this files are required to be shown on"
+    },
+    {
+      "start": 776.7,
+      "duration": 2.28,
+      "text": "your website when someone access your"
+    },
+    {
+      "start": 778.019,
+      "duration": 3.0,
+      "text": "website they will be able to see"
+    },
+    {
+      "start": 778.98,
+      "duration": 3.9,
+      "text": "index.html and if they access your"
+    },
+    {
+      "start": 781.019,
+      "duration": 3.661,
+      "text": "website which is with the with the"
+    },
+    {
+      "start": 782.88,
+      "duration": 4.019,
+      "text": "particular path which is not there they"
+    },
+    {
+      "start": 784.68,
+      "duration": 4.26,
+      "text": "will get an error.html so how would you"
+    },
+    {
+      "start": 786.899,
+      "duration": 3.961,
+      "text": "do it if you know HTML you can simply"
+    },
+    {
+      "start": 788.94,
+      "duration": 3.899,
+      "text": "type hello world and you can try to"
+    },
+    {
+      "start": 790.86,
+      "duration": 4.44,
+      "text": "create a website but let's try to use"
+    },
+    {
+      "start": 792.839,
+      "duration": 5.281,
+      "text": "chatgpt because I don't know HTML much"
+    },
+    {
+      "start": 795.3,
+      "duration": 5.219,
+      "text": "so I'm going to use stat gptl so let's"
+    },
+    {
+      "start": 798.12,
+      "duration": 5.219,
+      "text": "ask chargpt to create a index.html for"
+    },
+    {
+      "start": 800.519,
+      "duration": 4.56,
+      "text": "us by giving it some prompt so let's say"
+    },
+    {
+      "start": 803.339,
+      "duration": 4.381,
+      "text": "please"
+    },
+    {
+      "start": 805.079,
+      "duration": 6.541,
+      "text": "create index"
+    },
+    {
+      "start": 807.72,
+      "duration": 6.66,
+      "text": "dot HTML for John"
+    },
+    {
+      "start": 811.62,
+      "duration": 4.62,
+      "text": "'s portfolio website"
+    },
+    {
+      "start": 814.38,
+      "duration": 3.78,
+      "text": "uh"
+    },
+    {
+      "start": 816.24,
+      "duration": 5.399,
+      "text": "and"
+    },
+    {
+      "start": 818.16,
+      "duration": 6.239,
+      "text": "mention projects"
+    },
+    {
+      "start": 821.639,
+      "duration": 7.801,
+      "text": "also reviews"
+    },
+    {
+      "start": 824.399,
+      "duration": 7.68,
+      "text": "and add animation add CSS"
+    },
+    {
+      "start": 829.44,
+      "duration": 6.019,
+      "text": "to show animations and studies so you"
+    },
+    {
+      "start": 832.079,
+      "duration": 5.461,
+      "text": "can add something like this to get"
+    },
+    {
+      "start": 835.459,
+      "duration": 4.661,
+      "text": "index.html from chat CPT rather than"
+    },
+    {
+      "start": 837.54,
+      "duration": 4.039,
+      "text": "writing itself because this is not a"
+    },
+    {
+      "start": 840.12,
+      "duration": 3.3,
+      "text": "devops thing you don't need to write"
+    },
+    {
+      "start": 841.579,
+      "duration": 4.421,
+      "text": "index.html you don't need to write code"
+    },
+    {
+      "start": 843.42,
+      "duration": 3.78,
+      "text": "often in devops apart from the"
+    },
+    {
+      "start": 846.0,
+      "duration": 3.72,
+      "text": "automation thing so I'm just going to"
+    },
+    {
+      "start": 847.2,
+      "duration": 4.56,
+      "text": "copy what Chachi PD gave me here and we"
+    },
+    {
+      "start": 849.72,
+      "duration": 4.14,
+      "text": "will be seeing this project on our S3"
+    },
+    {
+      "start": 851.76,
+      "duration": 5.579,
+      "text": "static website once we configure it so"
+    },
+    {
+      "start": 853.86,
+      "duration": 6.3,
+      "text": "I'm going to upload this in the S3"
+    },
+    {
+      "start": 857.339,
+      "duration": 5.461,
+      "text": "bucket let me show you how so I'm going"
+    },
+    {
+      "start": 860.16,
+      "duration": 4.46,
+      "text": "to copy this and paste it here Also"
+    },
+    {
+      "start": 862.8,
+      "duration": 4.68,
+      "text": "let's ask it to create"
+    },
+    {
+      "start": 864.62,
+      "duration": 6.519,
+      "text": "error.html as well so please create"
+    },
+    {
+      "start": 867.48,
+      "duration": 6.68,
+      "text": "error Dot html2"
+    },
+    {
+      "start": 871.139,
+      "duration": 7.14,
+      "text": "so once I do this it will start creating"
+    },
+    {
+      "start": 874.16,
+      "duration": 6.46,
+      "text": "error.html so you'll see error.html and"
+    },
+    {
+      "start": 878.279,
+      "duration": 4.86,
+      "text": "I'm going to post paste that here"
+    },
+    {
+      "start": 880.62,
+      "duration": 5.94,
+      "text": "all right so this website as well I use"
+    },
+    {
+      "start": 883.139,
+      "duration": 4.861,
+      "text": "chat GPT and it gave me this code you"
+    },
+    {
+      "start": 886.56,
+      "duration": 3.0,
+      "text": "can also ask our GPT with different"
+    },
+    {
+      "start": 888.0,
+      "duration": 3.36,
+      "text": "prompts it will give you the code or you"
+    },
+    {
+      "start": 889.56,
+      "duration": 3.42,
+      "text": "can simply edit it if you want to have"
+    },
+    {
+      "start": 891.36,
+      "duration": 4.08,
+      "text": "some configurations"
+    },
+    {
+      "start": 892.98,
+      "duration": 5.58,
+      "text": "let's say we also want to have a photo"
+    },
+    {
+      "start": 895.44,
+      "duration": 4.74,
+      "text": "or photo so what we can do we can simply"
+    },
+    {
+      "start": 898.56,
+      "duration": 4.92,
+      "text": "get a photo from"
+    },
+    {
+      "start": 900.18,
+      "duration": 5.42,
+      "text": "let's use Luffy"
+    },
+    {
+      "start": 903.48,
+      "duration": 7.68,
+      "text": "one piece"
+    },
+    {
+      "start": 905.6,
+      "duration": 8.38,
+      "text": "as a photo I'm going to use this"
+    },
+    {
+      "start": 911.16,
+      "duration": 4.979,
+      "text": "picture of Luffy"
+    },
+    {
+      "start": 913.98,
+      "duration": 5.46,
+      "text": "shout out to Debian Whoever has created"
+    },
+    {
+      "start": 916.139,
+      "duration": 4.44,
+      "text": "this I'm going to copy and put this in"
+    },
+    {
+      "start": 919.44,
+      "duration": 3.6,
+      "text": "our"
+    },
+    {
+      "start": 920.579,
+      "duration": 5.76,
+      "text": "project which is"
+    },
+    {
+      "start": 923.04,
+      "duration": 4.68,
+      "text": "profile dot PNG and I'm going to put"
+    },
+    {
+      "start": 926.339,
+      "duration": 3.541,
+      "text": "this"
+    },
+    {
+      "start": 927.72,
+      "duration": 5.46,
+      "text": "the name of the file is profile.png I'm"
+    },
+    {
+      "start": 929.88,
+      "duration": 5.04,
+      "text": "going to put this in my S3 static"
+    },
+    {
+      "start": 933.18,
+      "duration": 5.339,
+      "text": "website"
+    },
+    {
+      "start": 934.92,
+      "duration": 5.52,
+      "text": "okay this folder and save it once I do"
+    },
+    {
+      "start": 938.519,
+      "duration": 5.341,
+      "text": "this you should be able to"
+    },
+    {
+      "start": 940.44,
+      "duration": 5.28,
+      "text": "see the profile.png here as well okay so"
+    },
+    {
+      "start": 943.86,
+      "duration": 4.74,
+      "text": "we have the files ready to for our"
+    },
+    {
+      "start": 945.72,
+      "duration": 5.76,
+      "text": "website let's go and put them in S3"
+    },
+    {
+      "start": 948.6,
+      "duration": 5.34,
+      "text": "to put them in S3 I need to I need to"
+    },
+    {
+      "start": 951.48,
+      "duration": 4.5,
+      "text": "add things here so in there I need to"
+    },
+    {
+      "start": 953.94,
+      "duration": 4.079,
+      "text": "create a resource"
+    },
+    {
+      "start": 955.98,
+      "duration": 3.78,
+      "text": "the resource name is"
+    },
+    {
+      "start": 958.019,
+      "duration": 5.101,
+      "text": "S3 object"
+    },
+    {
+      "start": 959.76,
+      "duration": 6.3,
+      "text": "AWS S3 object so you can see this is the"
+    },
+    {
+      "start": 963.12,
+      "duration": 7.64,
+      "text": "resource I'm going to say resource AWS"
+    },
+    {
+      "start": 966.06,
+      "duration": 4.7,
+      "text": "underscore S3 underscore object"
+    },
+    {
+      "start": 970.92,
+      "duration": 4.62,
+      "text": "and in this I'm going to first put the"
+    },
+    {
+      "start": 973.019,
+      "duration": 4.62,
+      "text": "index I'm going to say index as the name"
+    },
+    {
+      "start": 975.54,
+      "duration": 5.58,
+      "text": "and we need to Define few things like"
+    },
+    {
+      "start": 977.639,
+      "duration": 4.921,
+      "text": "bucket key and source so bucket is which"
+    },
+    {
+      "start": 981.12,
+      "duration": 3.2,
+      "text": "bucket do you want to put this in so I'm"
+    },
+    {
+      "start": 982.56,
+      "duration": 4.56,
+      "text": "going to say AWS underscore"
+    },
+    {
+      "start": 984.32,
+      "duration": 6.1,
+      "text": "s3.mybucket.id and the key is going to"
+    },
+    {
+      "start": 987.12,
+      "duration": 6.18,
+      "text": "be the name of the name of defy so the"
+    },
+    {
+      "start": 990.42,
+      "duration": 4.62,
+      "text": "name of the file is index.html and I"
+    },
+    {
+      "start": 993.3,
+      "duration": 2.94,
+      "text": "also need to say find the source source"
+    },
+    {
+      "start": 995.04,
+      "duration": 2.76,
+      "text": "is going to be where is the file right"
+    },
+    {
+      "start": 996.24,
+      "duration": 5.64,
+      "text": "now it is in the current folder so I can"
+    },
+    {
+      "start": 997.8,
+      "duration": 5.279,
+      "text": "just type index.html here so index dot"
+    },
+    {
+      "start": 1001.88,
+      "duration": 3.0,
+      "text": "HTML"
+    },
+    {
+      "start": 1003.079,
+      "duration": 3.541,
+      "text": "I also need to Define what is the ACL"
+    },
+    {
+      "start": 1004.88,
+      "duration": 4.98,
+      "text": "Access Control list because I need to"
+    },
+    {
+      "start": 1006.62,
+      "duration": 4.92,
+      "text": "make this bucket a distinct public so"
+    },
+    {
+      "start": 1009.86,
+      "duration": 5.399,
+      "text": "I'm going to say ACL equals to public"
+    },
+    {
+      "start": 1011.54,
+      "duration": 5.34,
+      "text": "underscore read public hyphen read"
+    },
+    {
+      "start": 1015.259,
+      "duration": 4.621,
+      "text": "and we also need to define the content"
+    },
+    {
+      "start": 1016.88,
+      "duration": 4.44,
+      "text": "type so content type is going to be"
+    },
+    {
+      "start": 1019.88,
+      "duration": 5.039,
+      "text": "text"
+    },
+    {
+      "start": 1021.32,
+      "duration": 4.56,
+      "text": "slash HTML okay this is how you will be"
+    },
+    {
+      "start": 1024.919,
+      "duration": 3.0,
+      "text": "uploading you will be uploading an"
+    },
+    {
+      "start": 1025.88,
+      "duration": 6.0,
+      "text": "object or in the bucket I'll copy the"
+    },
+    {
+      "start": 1027.919,
+      "duration": 3.961,
+      "text": "same thing for error.html"
+    },
+    {
+      "start": 1031.939,
+      "duration": 3.48,
+      "text": "so this is my editor so let's change the"
+    },
+    {
+      "start": 1034.339,
+      "duration": 3.541,
+      "text": "name first"
+    },
+    {
+      "start": 1035.419,
+      "duration": 4.801,
+      "text": "and let's change the name of the key as"
+    },
+    {
+      "start": 1037.88,
+      "duration": 4.14,
+      "text": "well so error here and the source as"
+    },
+    {
+      "start": 1040.22,
+      "duration": 3.479,
+      "text": "error.html and that's the file is going"
+    },
+    {
+      "start": 1042.02,
+      "duration": 4.559,
+      "text": "to be the same also let's add a"
+    },
+    {
+      "start": 1043.699,
+      "duration": 5.881,
+      "text": "profile.png uh so I'm going to say"
+    },
+    {
+      "start": 1046.579,
+      "duration": 4.741,
+      "text": "resource is going to be AWS underscore"
+    },
+    {
+      "start": 1049.58,
+      "duration": 4.44,
+      "text": "S3 object again"
+    },
+    {
+      "start": 1051.32,
+      "duration": 4.979,
+      "text": "and this is my profile we haven't"
+    },
+    {
+      "start": 1054.02,
+      "duration": 4.8,
+      "text": "updated the code in index.html to have a"
+    },
+    {
+      "start": 1056.299,
+      "duration": 4.441,
+      "text": "picture but we will do soon once we have"
+    },
+    {
+      "start": 1058.82,
+      "duration": 4.26,
+      "text": "our website ready we can anytime change"
+    },
+    {
+      "start": 1060.74,
+      "duration": 5.58,
+      "text": "the index.html so in here I'm going to"
+    },
+    {
+      "start": 1063.08,
+      "duration": 5.719,
+      "text": "say first key uh sorry bucket bucket is"
+    },
+    {
+      "start": 1066.32,
+      "duration": 4.5,
+      "text": "going to be AWS underscore S3"
+    },
+    {
+      "start": 1068.799,
+      "duration": 3.581,
+      "text": "bucket.mybucket.id key is going to be"
+    },
+    {
+      "start": 1070.82,
+      "duration": 5.04,
+      "text": "the profile name so it's going to be"
+    },
+    {
+      "start": 1072.38,
+      "duration": 6.179,
+      "text": "profile dot PNG the same name as you see"
+    },
+    {
+      "start": 1075.86,
+      "duration": 7.08,
+      "text": "here dot PNG and also the source which"
+    },
+    {
+      "start": 1078.559,
+      "duration": 6.24,
+      "text": "is going to be profile Dot PNG and I"
+    },
+    {
+      "start": 1082.94,
+      "duration": 3.0,
+      "text": "also need to define the ACL which is"
+    },
+    {
+      "start": 1084.799,
+      "duration": 4.88,
+      "text": "going to be public read so I'm going to"
+    },
+    {
+      "start": 1085.94,
+      "duration": 6.78,
+      "text": "say ACL and it is public hyphen read"
+    },
+    {
+      "start": 1089.679,
+      "duration": 5.321,
+      "text": "okay so we have three objects defined"
+    },
+    {
+      "start": 1092.72,
+      "duration": 4.199,
+      "text": "here and these three objects once I run"
+    },
+    {
+      "start": 1095.0,
+      "duration": 3.66,
+      "text": "traffic apply it will be inside the"
+    },
+    {
+      "start": 1096.919,
+      "duration": 3.361,
+      "text": "bucket so let's go and test that out I'm"
+    },
+    {
+      "start": 1098.66,
+      "duration": 3.24,
+      "text": "going to enter if I apply command and"
+    },
+    {
+      "start": 1100.28,
+      "duration": 4.32,
+      "text": "inside this bucket site now there are no"
+    },
+    {
+      "start": 1101.9,
+      "duration": 4.38,
+      "text": "objects but once we do this it's there"
+    },
+    {
+      "start": 1104.6,
+      "duration": 3.959,
+      "text": "should be three objects and they should"
+    },
+    {
+      "start": 1106.28,
+      "duration": 3.899,
+      "text": "be public as well"
+    },
+    {
+      "start": 1108.559,
+      "duration": 3.36,
+      "text": "so they are now in creating State and"
+    },
+    {
+      "start": 1110.179,
+      "duration": 4.261,
+      "text": "creation has been completed for index"
+    },
+    {
+      "start": 1111.919,
+      "duration": 4.321,
+      "text": "and profile and error as well so let's"
+    },
+    {
+      "start": 1114.44,
+      "duration": 5.099,
+      "text": "refresh and you should see three"
+    },
+    {
+      "start": 1116.24,
+      "duration": 4.86,
+      "text": "resources inside uh the bucket which"
+    },
+    {
+      "start": 1119.539,
+      "duration": 3.361,
+      "text": "means we are ready now to configure"
+    },
+    {
+      "start": 1121.1,
+      "duration": 3.72,
+      "text": "website in our"
+    },
+    {
+      "start": 1122.9,
+      "duration": 3.84,
+      "text": "better form so let's go to the official"
+    },
+    {
+      "start": 1124.82,
+      "duration": 3.96,
+      "text": "documentation again and in this official"
+    },
+    {
+      "start": 1126.74,
+      "duration": 3.72,
+      "text": "documentation this is the code or"
+    },
+    {
+      "start": 1128.78,
+      "duration": 3.54,
+      "text": "resource which we'll be using to set up"
+    },
+    {
+      "start": 1130.46,
+      "duration": 4.2,
+      "text": "our website so here we need an index"
+    },
+    {
+      "start": 1132.32,
+      "duration": 5.4,
+      "text": "documentation and error document as well"
+    },
+    {
+      "start": 1134.66,
+      "duration": 5.04,
+      "text": "so let's go and create that"
+    },
+    {
+      "start": 1137.72,
+      "duration": 5.4,
+      "text": "I'm going to say resource is going to be"
+    },
+    {
+      "start": 1139.7,
+      "duration": 6.18,
+      "text": "AWS underscore S3 underscore website"
+    },
+    {
+      "start": 1143.12,
+      "duration": 5.04,
+      "text": "configuration and let's name this as"
+    },
+    {
+      "start": 1145.88,
+      "duration": 4.919,
+      "text": "website"
+    },
+    {
+      "start": 1148.16,
+      "duration": 4.32,
+      "text": "in this I need to First Define the index"
+    },
+    {
+      "start": 1150.799,
+      "duration": 3.0,
+      "text": "token bucket so what is the bucket first"
+    },
+    {
+      "start": 1152.48,
+      "duration": 5.22,
+      "text": "thing you should Define a bucket so this"
+    },
+    {
+      "start": 1153.799,
+      "duration": 5.341,
+      "text": "is bucket dot ID and you might be I'm"
+    },
+    {
+      "start": 1157.7,
+      "duration": 4.44,
+      "text": "not sure if you have a question or not"
+    },
+    {
+      "start": 1159.14,
+      "duration": 4.8,
+      "text": "twice then no VPC wire on the no subnets"
+    },
+    {
+      "start": 1162.14,
+      "duration": 4.56,
+      "text": "because I've always mentioned that we"
+    },
+    {
+      "start": 1163.94,
+      "duration": 4.859,
+      "text": "create subnets and vpcs for creation of"
+    },
+    {
+      "start": 1166.7,
+      "duration": 4.92,
+      "text": "before creating any projects but there"
+    },
+    {
+      "start": 1168.799,
+      "duration": 5.581,
+      "text": "is no VPC here because S3 does not"
+    },
+    {
+      "start": 1171.62,
+      "duration": 4.439,
+      "text": "deploy inside a VPC it's outside of EPC"
+    },
+    {
+      "start": 1174.38,
+      "duration": 2.94,
+      "text": "so that is why we don't have it here but"
+    },
+    {
+      "start": 1176.059,
+      "duration": 3.901,
+      "text": "I'm going to student create another"
+    },
+    {
+      "start": 1177.32,
+      "duration": 6.06,
+      "text": "project which will have S3 which will"
+    },
+    {
+      "start": 1179.96,
+      "duration": 5.099,
+      "text": "have VPC easy to load balancers uh S3"
+    },
+    {
+      "start": 1183.38,
+      "duration": 3.78,
+      "text": "and so much more so no need to worry"
+    },
+    {
+      "start": 1185.059,
+      "duration": 3.601,
+      "text": "about that let's define the website"
+    },
+    {
+      "start": 1187.16,
+      "duration": 2.82,
+      "text": "configuration now so we have the bucket"
+    },
+    {
+      "start": 1188.66,
+      "duration": 3.42,
+      "text": "ready in this I'm going to say index"
+    },
+    {
+      "start": 1189.98,
+      "duration": 5.28,
+      "text": "document and the index document has"
+    },
+    {
+      "start": 1192.08,
+      "duration": 4.979,
+      "text": "suffix equals to"
+    },
+    {
+      "start": 1195.26,
+      "duration": 5.64,
+      "text": "the name of the index which is"
+    },
+    {
+      "start": 1197.059,
+      "duration": 5.401,
+      "text": "index.html here so index dot HTML"
+    },
+    {
+      "start": 1200.9,
+      "duration": 3.06,
+      "text": "similarly I also need to define the"
+    },
+    {
+      "start": 1202.46,
+      "duration": 3.66,
+      "text": "error dot error document so I'm going to"
+    },
+    {
+      "start": 1203.96,
+      "duration": 7.28,
+      "text": "say error document error document has"
+    },
+    {
+      "start": 1206.12,
+      "duration": 8.7,
+      "text": "key equals to so key equals to error dot"
+    },
+    {
+      "start": 1211.24,
+      "duration": 5.02,
+      "text": "HTML all right once I do this I can I"
+    },
+    {
+      "start": 1214.82,
+      "duration": 3.78,
+      "text": "don't need to have routing policies or"
+    },
+    {
+      "start": 1216.26,
+      "duration": 4.919,
+      "text": "anything because my website don't have"
+    },
+    {
+      "start": 1218.6,
+      "duration": 5.4,
+      "text": "any routes so I need to say this depends"
+    },
+    {
+      "start": 1221.179,
+      "duration": 4.38,
+      "text": "on uh this should create after this"
+    },
+    {
+      "start": 1224.0,
+      "duration": 4.5,
+      "text": "thing has been created so let's save"
+    },
+    {
+      "start": 1225.559,
+      "duration": 5.341,
+      "text": "this and now our bucket should be ready"
+    },
+    {
+      "start": 1228.5,
+      "duration": 5.039,
+      "text": "with the website configured on it so"
+    },
+    {
+      "start": 1230.9,
+      "duration": 4.92,
+      "text": "let's try to run that I'm going to set"
+    },
+    {
+      "start": 1233.539,
+      "duration": 3.841,
+      "text": "off apply hyphen Auto hyphen approve and"
+    },
+    {
+      "start": 1235.82,
+      "duration": 5.66,
+      "text": "a bucket will be ready website will be"
+    },
+    {
+      "start": 1237.38,
+      "duration": 4.1,
+      "text": "ready as well so let's wait to see that"
+    },
+    {
+      "start": 1243.08,
+      "duration": 3.479,
+      "text": "so"
+    },
+    {
+      "start": 1244.34,
+      "duration": 3.6,
+      "text": "here we go website configuration is then"
+    },
+    {
+      "start": 1246.559,
+      "duration": 3.48,
+      "text": "creating state right now and it has been"
+    },
+    {
+      "start": 1247.94,
+      "duration": 3.239,
+      "text": "done in three seconds let's go and check"
+    },
+    {
+      "start": 1250.039,
+      "duration": 3.301,
+      "text": "that"
+    },
+    {
+      "start": 1251.179,
+      "duration": 4.321,
+      "text": "in our properties I'm going to go to"
+    },
+    {
+      "start": 1253.34,
+      "duration": 3.6,
+      "text": "buckets my terraform projects and I'm"
+    },
+    {
+      "start": 1255.5,
+      "duration": 4.5,
+      "text": "going to go to properties and you can"
+    },
+    {
+      "start": 1256.94,
+      "duration": 4.619,
+      "text": "see here the bucket has been created and"
+    },
+    {
+      "start": 1260.0,
+      "duration": 4.08,
+      "text": "if I open this link you see John"
+    },
+    {
+      "start": 1261.559,
+      "duration": 4.561,
+      "text": "portfolio is there as well so this is"
+    },
+    {
+      "start": 1264.08,
+      "duration": 4.62,
+      "text": "how you can set up a website let's try"
+    },
+    {
+      "start": 1266.12,
+      "duration": 4.98,
+      "text": "to edit the index.html and recreate this"
+    },
+    {
+      "start": 1268.7,
+      "duration": 3.9,
+      "text": "again so I'm going to copy this and ask"
+    },
+    {
+      "start": 1271.1,
+      "duration": 3.319,
+      "text": "chat GPT"
+    },
+    {
+      "start": 1272.6,
+      "duration": 4.1,
+      "text": "to"
+    },
+    {
+      "start": 1274.419,
+      "duration": 4.721,
+      "text": "please add"
+    },
+    {
+      "start": 1276.7,
+      "duration": 5.219,
+      "text": "for an image"
+    },
+    {
+      "start": 1279.14,
+      "duration": 2.779,
+      "text": "in between"
+    },
+    {
+      "start": 1282.08,
+      "duration": 3.56,
+      "text": "which has been uploaded"
+    },
+    {
+      "start": 1285.82,
+      "duration": 7.66,
+      "text": "uploaded"
+    },
+    {
+      "start": 1287.78,
+      "duration": 7.2,
+      "text": "as profile dot PNG in S3 bucket and add"
+    },
+    {
+      "start": 1293.48,
+      "duration": 4.86,
+      "text": "colors"
+    },
+    {
+      "start": 1294.98,
+      "duration": 6.3,
+      "text": "and animations to this please"
+    },
+    {
+      "start": 1298.34,
+      "duration": 4.98,
+      "text": "okay let's see what charity has to give"
+    },
+    {
+      "start": 1301.28,
+      "duration": 4.68,
+      "text": "us now and"
+    },
+    {
+      "start": 1303.32,
+      "duration": 4.979,
+      "text": "it should include the profile.png as"
+    },
+    {
+      "start": 1305.96,
+      "duration": 6.48,
+      "text": "well and we should see a photo of Luffy"
+    },
+    {
+      "start": 1308.299,
+      "duration": 6.38,
+      "text": "in our portfolio here so let's wait and"
+    },
+    {
+      "start": 1312.44,
+      "duration": 2.239,
+      "text": "see"
+    },
+    {
+      "start": 1315.799,
+      "duration": 4.62,
+      "text": "so you can see it has the image source"
+    },
+    {
+      "start": 1318.559,
+      "duration": 4.201,
+      "text": "here we need to put the bucket URL so"
+    },
+    {
+      "start": 1320.419,
+      "duration": 5.221,
+      "text": "the bucket URL you can find from"
+    },
+    {
+      "start": 1322.76,
+      "duration": 6.299,
+      "text": "any anything here so let's go to objects"
+    },
+    {
+      "start": 1325.64,
+      "duration": 6.48,
+      "text": "and you can click on profile.png and you"
+    },
+    {
+      "start": 1329.059,
+      "duration": 5.341,
+      "text": "can find the bucket URL or you can"
+    },
+    {
+      "start": 1332.12,
+      "duration": 6.179,
+      "text": "directly copy and paste this thing"
+    },
+    {
+      "start": 1334.4,
+      "duration": 6.42,
+      "text": "in the code so this is what we it gave"
+    },
+    {
+      "start": 1338.299,
+      "duration": 5.701,
+      "text": "us let's copy this and paste it in our"
+    },
+    {
+      "start": 1340.82,
+      "duration": 5.94,
+      "text": "thing let's search for image and I'm"
+    },
+    {
+      "start": 1344.0,
+      "duration": 5.64,
+      "text": "going to put my profile.png thing in"
+    },
+    {
+      "start": 1346.76,
+      "duration": 6.0,
+      "text": "here so copy"
+    },
+    {
+      "start": 1349.64,
+      "duration": 5.88,
+      "text": "object URI paste it save it let's"
+    },
+    {
+      "start": 1352.76,
+      "duration": 4.62,
+      "text": "destroy everything and recreate and see"
+    },
+    {
+      "start": 1355.52,
+      "duration": 3.84,
+      "text": "how much time does it take to create"
+    },
+    {
+      "start": 1357.38,
+      "duration": 3.9,
+      "text": "everything from scratch so I'm going to"
+    },
+    {
+      "start": 1359.36,
+      "duration": 3.98,
+      "text": "destroy this"
+    },
+    {
+      "start": 1361.28,
+      "duration": 2.06,
+      "text": "is"
+    },
+    {
+      "start": 1372.799,
+      "duration": 2.821,
+      "text": "so eight things I really destroyed so"
+    },
+    {
+      "start": 1374.539,
+      "duration": 3.061,
+      "text": "everything is going to be destroyed and"
+    },
+    {
+      "start": 1375.62,
+      "duration": 3.36,
+      "text": "if I refresh the page after once this is"
+    },
+    {
+      "start": 1377.6,
+      "duration": 3.48,
+      "text": "destroyed completely so you can see it"
+    },
+    {
+      "start": 1378.98,
+      "duration": 5.4,
+      "text": "says everything has been destroyed let's"
+    },
+    {
+      "start": 1381.08,
+      "duration": 4.459,
+      "text": "refresh and there is no bucket now once"
+    },
+    {
+      "start": 1384.38,
+      "duration": 4.44,
+      "text": "you have the code"
+    },
+    {
+      "start": 1385.539,
+      "duration": 6.221,
+      "text": "main.tf code here let's also try to add"
+    },
+    {
+      "start": 1388.82,
+      "duration": 5.52,
+      "text": "an outputs.tf so that we can get the end"
+    },
+    {
+      "start": 1391.76,
+      "duration": 3.299,
+      "text": "point right on our terminal right rather"
+    },
+    {
+      "start": 1394.34,
+      "duration": 2.819,
+      "text": "than"
+    },
+    {
+      "start": 1395.059,
+      "duration": 3.721,
+      "text": "going in the console for that so I'm"
+    },
+    {
+      "start": 1397.159,
+      "duration": 3.661,
+      "text": "going to say outputs so output is going"
+    },
+    {
+      "start": 1398.78,
+      "duration": 4.5,
+      "text": "to be the website endpoint"
+    },
+    {
+      "start": 1400.82,
+      "duration": 4.859,
+      "text": "so endpoint"
+    },
+    {
+      "start": 1403.28,
+      "duration": 4.08,
+      "text": "and sorry endpoint and inside this I'm"
+    },
+    {
+      "start": 1405.679,
+      "duration": 5.461,
+      "text": "going to say value"
+    },
+    {
+      "start": 1407.36,
+      "duration": 5.9,
+      "text": "is going to be AWS underscore S3"
+    },
+    {
+      "start": 1411.14,
+      "duration": 3.98,
+      "text": "underscore bucket"
+    },
+    {
+      "start": 1413.26,
+      "duration": 5.62,
+      "text": "dot"
+    },
+    {
+      "start": 1415.12,
+      "duration": 7.6,
+      "text": "mybucket.website endpoint and save this"
+    },
+    {
+      "start": 1418.88,
+      "duration": 5.4,
+      "text": "now uh let's try to apply it again and"
+    },
+    {
+      "start": 1422.72,
+      "duration": 3.48,
+      "text": "see how much time does it take so I'm"
+    },
+    {
+      "start": 1424.28,
+      "duration": 3.96,
+      "text": "going to say apply"
+    },
+    {
+      "start": 1426.2,
+      "duration": 4.979,
+      "text": "and everything should be ready with the"
+    },
+    {
+      "start": 1428.24,
+      "duration": 4.86,
+      "text": "website endpoint for me here"
+    },
+    {
+      "start": 1431.179,
+      "duration": 4.141,
+      "text": "and we should have an image as well"
+    },
+    {
+      "start": 1433.1,
+      "duration": 3.84,
+      "text": "inside our John portfolio"
+    },
+    {
+      "start": 1435.32,
+      "duration": 3.18,
+      "text": "so"
+    },
+    {
+      "start": 1436.94,
+      "duration": 3.18,
+      "text": "here you go it's including state right"
+    },
+    {
+      "start": 1438.5,
+      "duration": 3.84,
+      "text": "now one second has been passed three"
+    },
+    {
+      "start": 1440.12,
+      "duration": 3.72,
+      "text": "seconds have been passed and we have"
+    },
+    {
+      "start": 1442.34,
+      "duration": 3.78,
+      "text": "the website created in just three"
+    },
+    {
+      "start": 1443.84,
+      "duration": 3.78,
+      "text": "seconds as I have told you uh we don't"
+    },
+    {
+      "start": 1446.12,
+      "duration": 3.78,
+      "text": "have the configuration because it's"
+    },
+    {
+      "start": 1447.62,
+      "duration": 3.48,
+      "text": "deprecated and I don't find the updated"
+    },
+    {
+      "start": 1449.9,
+      "duration": 2.759,
+      "text": "one if you know let me know in the"
+    },
+    {
+      "start": 1451.1,
+      "duration": 3.3,
+      "text": "comment section so I'm going to just run"
+    },
+    {
+      "start": 1452.659,
+      "duration": 4.561,
+      "text": "the data apply again or I can just"
+    },
+    {
+      "start": 1454.4,
+      "duration": 4.92,
+      "text": "refresh this page and you should be able"
+    },
+    {
+      "start": 1457.22,
+      "duration": 4.62,
+      "text": "to see John portfolio with a little fees"
+    },
+    {
+      "start": 1459.32,
+      "duration": 4.38,
+      "text": "image here and something here if you"
+    },
+    {
+      "start": 1461.84,
+      "duration": 4.86,
+      "text": "want me to use the code that I have here"
+    },
+    {
+      "start": 1463.7,
+      "duration": 6.78,
+      "text": "on this website in the project that we"
+    },
+    {
+      "start": 1466.7,
+      "duration": 5.76,
+      "text": "have now I can copy it and so let me"
+    },
+    {
+      "start": 1470.48,
+      "duration": 3.72,
+      "text": "copy this and paste it here"
+    },
+    {
+      "start": 1472.46,
+      "duration": 5.0,
+      "text": "also change"
+    },
+    {
+      "start": 1474.2,
+      "duration": 5.82,
+      "text": "the URL properly so that I can get the"
+    },
+    {
+      "start": 1477.46,
+      "duration": 4.66,
+      "text": "profile.png which is here from the"
+    },
+    {
+      "start": 1480.02,
+      "duration": 4.26,
+      "text": "website I'm going to save this and run"
+    },
+    {
+      "start": 1482.12,
+      "duration": 4.32,
+      "text": "terraform apply so rather than seeing"
+    },
+    {
+      "start": 1484.28,
+      "duration": 4.98,
+      "text": "the same simple website I I'm using this"
+    },
+    {
+      "start": 1486.44,
+      "duration": 5.16,
+      "text": "index.html and you will have a website"
+    },
+    {
+      "start": 1489.26,
+      "duration": 4.919,
+      "text": "similar to what you can see here so"
+    },
+    {
+      "start": 1491.6,
+      "duration": 5.579,
+      "text": "let's wait for it to come up and after I"
+    },
+    {
+      "start": 1494.179,
+      "duration": 6.601,
+      "text": "paste this endpoint it should be showing"
+    },
+    {
+      "start": 1497.179,
+      "duration": 5.88,
+      "text": "me the website so let's press enter to"
+    },
+    {
+      "start": 1500.78,
+      "duration": 3.899,
+      "text": "this and you can see it says portfolio"
+    },
+    {
+      "start": 1503.059,
+      "duration": 3.841,
+      "text": "of nasila Chaudhary and it has the image"
+    },
+    {
+      "start": 1504.679,
+      "duration": 4.801,
+      "text": "of Luffy which means you can use this"
+    },
+    {
+      "start": 1506.9,
+      "duration": 4.86,
+      "text": "any index.html and you can input any"
+    },
+    {
+      "start": 1509.48,
+      "duration": 6.059,
+      "text": "style you want I can upload my code what"
+    },
+    {
+      "start": 1511.76,
+      "duration": 5.22,
+      "text": "I used so I can upload this code in"
+    },
+    {
+      "start": 1515.539,
+      "duration": 3.181,
+      "text": "GitHub if you want let me know in the"
+    },
+    {
+      "start": 1516.98,
+      "duration": 3.42,
+      "text": "comment section and I can post it or"
+    },
+    {
+      "start": 1518.72,
+      "duration": 3.9,
+      "text": "else you can always use chat GPT to"
+    },
+    {
+      "start": 1520.4,
+      "duration": 5.519,
+      "text": "create your own code your own style and"
+    },
+    {
+      "start": 1522.62,
+      "duration": 6.12,
+      "text": "paste it in the terraform code to have"
+    },
+    {
+      "start": 1525.919,
+      "duration": 4.921,
+      "text": "your bucket created and configured in"
+    },
+    {
+      "start": 1528.74,
+      "duration": 3.48,
+      "text": "just three seconds I hope this video was"
+    },
+    {
+      "start": 1530.84,
+      "duration": 3.12,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 1532.22,
+      "duration": 4.26,
+      "text": "any doubt let me know in the comment"
+    },
+    {
+      "start": 1533.96,
+      "duration": 3.42,
+      "text": "section in and don't forget to watch the"
+    },
+    {
+      "start": 1536.48,
+      "duration": 3.66,
+      "text": "complete playlist to understand"
+    },
+    {
+      "start": 1537.38,
+      "duration": 5.419,
+      "text": "terraform from scratch thank you and"
+    },
+    {
+      "start": 1540.14,
+      "duration": 2.659,
+      "text": "have a good day"
+    }
+  ]
+}

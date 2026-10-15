@@ -1,0 +1,2426 @@
+{
+  "video": {
+    "id": "Fl2FfkYd6PE",
+    "title": "How to create AWS VPC with Public and Private Subnet",
+    "url": "https://www.youtube.com/watch?v=Fl2FfkYd6PE",
+    "duration": 1097,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.719,
+      "duration": 4.401,
+      "text": "hello and welcome to cloudchamp in this"
+    },
+    {
+      "start": 2.8,
+      "duration": 4.559,
+      "text": "video we are going to learn about very"
+    },
+    {
+      "start": 5.12,
+      "duration": 5.92,
+      "text": "important networking service which is"
+    },
+    {
+      "start": 7.359,
+      "duration": 5.521,
+      "text": "vpc or virtual private cloud it is very"
+    },
+    {
+      "start": 11.04,
+      "duration": 4.479,
+      "text": "important for a devops or a cloud"
+    },
+    {
+      "start": 12.88,
+      "duration": 4.88,
+      "text": "engineer to know how to create vpcs how"
+    },
+    {
+      "start": 15.519,
+      "duration": 4.961,
+      "text": "to create public subnet private subnet"
+    },
+    {
+      "start": 17.76,
+      "duration": 5.519,
+      "text": "how to attach internet gateways because"
+    },
+    {
+      "start": 20.48,
+      "duration": 4.799,
+      "text": "every project starts with vpc so to"
+    },
+    {
+      "start": 23.279,
+      "duration": 3.92,
+      "text": "learn everything about vpc watch this"
+    },
+    {
+      "start": 25.279,
+      "duration": 4.0,
+      "text": "video and if you haven't subscribed to"
+    },
+    {
+      "start": 27.199,
+      "duration": 5.281,
+      "text": "my channel please subscribe for more"
+    },
+    {
+      "start": 29.279,
+      "duration": 4.641,
+      "text": "videos on aws and cloud let's get"
+    },
+    {
+      "start": 32.48,
+      "duration": 3.599,
+      "text": "started"
+    },
+    {
+      "start": 33.92,
+      "duration": 3.92,
+      "text": "so i'm going to create a vpc"
+    },
+    {
+      "start": 36.079,
+      "duration": 4.961,
+      "text": "i'm going to click on create vpc and"
+    },
+    {
+      "start": 37.84,
+      "duration": 4.16,
+      "text": "give a name my vpc you can give any name"
+    },
+    {
+      "start": 41.04,
+      "duration": 2.4,
+      "text": "you want"
+    },
+    {
+      "start": 42.0,
+      "duration": 4.16,
+      "text": "and we're going to give the cider block"
+    },
+    {
+      "start": 43.44,
+      "duration": 5.119,
+      "text": "a classless inter domain range which"
+    },
+    {
+      "start": 46.16,
+      "duration": 3.919,
+      "text": "will tell us how much range we will have"
+    },
+    {
+      "start": 48.559,
+      "duration": 4.52,
+      "text": "so i'm going to pass the range as"
+    },
+    {
+      "start": 50.079,
+      "duration": 3.0,
+      "text": "10.0.0.0"
+    },
+    {
+      "start": 53.12,
+      "duration": 7.279,
+      "text": "16. slash 16 mean 65 536 ips for this"
+    },
+    {
+      "start": 58.48,
+      "duration": 5.36,
+      "text": "vpc"
+    },
+    {
+      "start": 60.399,
+      "duration": 5.76,
+      "text": "then i'm going to click on create vpc"
+    },
+    {
+      "start": 63.84,
+      "duration": 4.0,
+      "text": "now this vpc is created"
+    },
+    {
+      "start": 66.159,
+      "duration": 5.441,
+      "text": "you can see it you can see it's present"
+    },
+    {
+      "start": 67.84,
+      "duration": 5.599,
+      "text": "here in the my vpc with this side block"
+    },
+    {
+      "start": 71.6,
+      "duration": 4.4,
+      "text": "once this vpc is created i'm going to"
+    },
+    {
+      "start": 73.439,
+      "duration": 5.68,
+      "text": "create subnets in it because we want to"
+    },
+    {
+      "start": 76.0,
+      "duration": 5.2,
+      "text": "have a structure like this"
+    },
+    {
+      "start": 79.119,
+      "duration": 3.441,
+      "text": "so if i show you this image"
+    },
+    {
+      "start": 81.2,
+      "duration": 3.84,
+      "text": "we want to have a structure something"
+    },
+    {
+      "start": 82.56,
+      "duration": 5.12,
+      "text": "like this we want to have vpc inside"
+    },
+    {
+      "start": 85.04,
+      "duration": 6.16,
+      "text": "that ppc we need a public subnet and a"
+    },
+    {
+      "start": 87.68,
+      "duration": 5.36,
+      "text": "private subnet public subnet to host our"
+    },
+    {
+      "start": 91.2,
+      "duration": 3.84,
+      "text": "applications or anything that we want to"
+    },
+    {
+      "start": 93.04,
+      "duration": 4.88,
+      "text": "expose to the internet and private"
+    },
+    {
+      "start": 95.04,
+      "duration": 4.399,
+      "text": "subnet that should contain our database"
+    },
+    {
+      "start": 97.92,
+      "duration": 3.12,
+      "text": "which should be private to the people"
+    },
+    {
+      "start": 99.439,
+      "duration": 2.32,
+      "text": "and internet should not be connected to"
+    },
+    {
+      "start": 101.04,
+      "duration": 2.48,
+      "text": "it"
+    },
+    {
+      "start": 101.759,
+      "duration": 3.201,
+      "text": "so i'm going to create subnets here but"
+    },
+    {
+      "start": 103.52,
+      "duration": 4.639,
+      "text": "first i'll select"
+    },
+    {
+      "start": 104.96,
+      "duration": 4.72,
+      "text": "my vpc which is 040f"
+    },
+    {
+      "start": 108.159,
+      "duration": 4.0,
+      "text": "so this one"
+    },
+    {
+      "start": 109.68,
+      "duration": 4.64,
+      "text": "i'm going to go to subnets in here now i"
+    },
+    {
+      "start": 112.159,
+      "duration": 3.761,
+      "text": "don't have any subnets present so no"
+    },
+    {
+      "start": 114.32,
+      "duration": 3.839,
+      "text": "matching resources i'm going to create"
+    },
+    {
+      "start": 115.92,
+      "duration": 4.4,
+      "text": "two subnets so click on create subnet"
+    },
+    {
+      "start": 118.159,
+      "duration": 5.201,
+      "text": "option which vpc do you want to create"
+    },
+    {
+      "start": 120.32,
+      "duration": 4.88,
+      "text": "subnets in i want to create it in my vpc"
+    },
+    {
+      "start": 123.36,
+      "duration": 5.119,
+      "text": "i'm going to click on myvpc give it a"
+    },
+    {
+      "start": 125.2,
+      "duration": 4.88,
+      "text": "name so let's say public"
+    },
+    {
+      "start": 128.479,
+      "duration": 3.921,
+      "text": "subnet"
+    },
+    {
+      "start": 130.08,
+      "duration": 4.239,
+      "text": "and i need you can choose what ac do you"
+    },
+    {
+      "start": 132.4,
+      "duration": 4.4,
+      "text": "want to launch it or if you don't choose"
+    },
+    {
+      "start": 134.319,
+      "duration": 5.041,
+      "text": "anything aws will randomly select it so"
+    },
+    {
+      "start": 136.8,
+      "duration": 6.96,
+      "text": "i'm going to launch my private public"
+    },
+    {
+      "start": 139.36,
+      "duration": 6.4,
+      "text": "easy public subnet in my u.s east 1a"
+    },
+    {
+      "start": 143.76,
+      "duration": 3.199,
+      "text": "then i'm going to pass in my cider block"
+    },
+    {
+      "start": 145.76,
+      "duration": 3.52,
+      "text": "for the"
+    },
+    {
+      "start": 146.959,
+      "duration": 5.681,
+      "text": "subnet which should be inside the"
+    },
+    {
+      "start": 149.28,
+      "duration": 6.239,
+      "text": "a cider block of the vpc so i'm going to"
+    },
+    {
+      "start": 152.64,
+      "duration": 3.76,
+      "text": "choose 10.0.0"
+    },
+    {
+      "start": 155.519,
+      "duration": 2.08,
+      "text": "slash"
+    },
+    {
+      "start": 156.4,
+      "duration": 3.52,
+      "text": "24"
+    },
+    {
+      "start": 157.599,
+      "duration": 5.041,
+      "text": "so if i show you what does that mean so"
+    },
+    {
+      "start": 159.92,
+      "duration": 6.0,
+      "text": "cider ranges side.xyz this is the"
+    },
+    {
+      "start": 162.64,
+      "duration": 5.84,
+      "text": "website that you can go and to check so"
+    },
+    {
+      "start": 165.92,
+      "duration": 5.12,
+      "text": "earlier we had the vpc cider s10.0"
+    },
+    {
+      "start": 168.48,
+      "duration": 3.68,
+      "text": "10.0.0"
+    },
+    {
+      "start": 171.04,
+      "duration": 5.479,
+      "text": "16."
+    },
+    {
+      "start": 172.16,
+      "duration": 8.92,
+      "text": "slash 16 means 65 536 ips starting from"
+    },
+    {
+      "start": 176.519,
+      "duration": 4.561,
+      "text": "10.0.1 till 10.0.255.254."
+    },
+    {
+      "start": 181.2,
+      "duration": 6.16,
+      "text": "when it chooses 16 which means this to"
+    },
+    {
+      "start": 184.48,
+      "duration": 4.16,
+      "text": "last octave is going to be changed"
+    },
+    {
+      "start": 187.36,
+      "duration": 4.4,
+      "text": "right"
+    },
+    {
+      "start": 188.64,
+      "duration": 6.319,
+      "text": "starting from 10.0.1 so 1 will be 2 3 4"
+    },
+    {
+      "start": 191.76,
+      "duration": 5.6,
+      "text": "5 6 till 255 then this will be changed"
+    },
+    {
+      "start": 194.959,
+      "duration": 4.241,
+      "text": "to 1 then"
+    },
+    {
+      "start": 197.36,
+      "duration": 3.599,
+      "text": "two three four five three two fifty five"
+    },
+    {
+      "start": 199.2,
+      "duration": 4.399,
+      "text": "then it will become two one two three"
+    },
+    {
+      "start": 200.959,
+      "duration": 4.0,
+      "text": "two fifty five similarly so so on we get"
+    },
+    {
+      "start": 203.599,
+      "duration": 3.92,
+      "text": "sixty five thousand five hundred and"
+    },
+    {
+      "start": 204.959,
+      "duration": 5.041,
+      "text": "thirty six ips that we have given to our"
+    },
+    {
+      "start": 207.519,
+      "duration": 3.321,
+      "text": "vpc this vpc"
+    },
+    {
+      "start": 210.0,
+      "duration": 3.28,
+      "text": "which"
+    },
+    {
+      "start": 210.84,
+      "duration": 3.479,
+      "text": "is this one"
+    },
+    {
+      "start": 213.28,
+      "duration": 2.879,
+      "text": "right right"
+    },
+    {
+      "start": 214.319,
+      "duration": 3.84,
+      "text": "so inside this cpc i'm going to create a"
+    },
+    {
+      "start": 216.159,
+      "duration": 5.921,
+      "text": "subnet which is going to be a range of"
+    },
+    {
+      "start": 218.159,
+      "duration": 7.36,
+      "text": "24 so when you pass 24 you get 256 ips"
+    },
+    {
+      "start": 222.08,
+      "duration": 5.76,
+      "text": "starting from 10.0.1 till 254. so when"
+    },
+    {
+      "start": 225.519,
+      "duration": 4.401,
+      "text": "you use slash 24 only the last octave is"
+    },
+    {
+      "start": 227.84,
+      "duration": 5.84,
+      "text": "going to change so we have the range"
+    },
+    {
+      "start": 229.92,
+      "duration": 6.16,
+      "text": "starting from 10.0.1 till 254. and so in"
+    },
+    {
+      "start": 233.68,
+      "duration": 4.479,
+      "text": "total we get 256 ips so we don't"
+    },
+    {
+      "start": 236.08,
+      "duration": 5.76,
+      "text": "actually get 256. five of them are"
+    },
+    {
+      "start": 238.159,
+      "duration": 6.241,
+      "text": "reserved by aws but the count is 256"
+    },
+    {
+      "start": 241.84,
+      "duration": 4.27,
+      "text": "so we'll do that so i have give the"
+    },
+    {
+      "start": 244.4,
+      "duration": 3.839,
+      "text": "cider in just 10.0.0.24"
+    },
+    {
+      "start": 246.11,
+      "duration": 4.53,
+      "text": "[Music]"
+    },
+    {
+      "start": 248.239,
+      "duration": 3.841,
+      "text": "so this will create a subnet for me if i"
+    },
+    {
+      "start": 250.64,
+      "duration": 2.799,
+      "text": "want i can also create a new subnet"
+    },
+    {
+      "start": 252.08,
+      "duration": 2.56,
+      "text": "right here but i'm going to do that"
+    },
+    {
+      "start": 253.439,
+      "duration": 2.721,
+      "text": "separately"
+    },
+    {
+      "start": 254.64,
+      "duration": 3.36,
+      "text": "so i'm going to click on create subnet"
+    },
+    {
+      "start": 256.16,
+      "duration": 5.12,
+      "text": "it has created one subnet which is for"
+    },
+    {
+      "start": 258.0,
+      "duration": 4.8,
+      "text": "public subnet and this is the id this is"
+    },
+    {
+      "start": 261.28,
+      "duration": 3.04,
+      "text": "the side range and if i show you the"
+    },
+    {
+      "start": 262.8,
+      "duration": 4.72,
+      "text": "available"
+    },
+    {
+      "start": 264.32,
+      "duration": 6.159,
+      "text": "ip addresses are just 251 like here it"
+    },
+    {
+      "start": 267.52,
+      "duration": 6.959,
+      "text": "shows 256 but it says that the available"
+    },
+    {
+      "start": 270.479,
+      "duration": 6.081,
+      "text": "ipv4 are 251 because aws takes five ips"
+    },
+    {
+      "start": 274.479,
+      "duration": 3.761,
+      "text": "for themselves to do some tasks and"
+    },
+    {
+      "start": 276.56,
+      "duration": 3.52,
+      "text": "we'll see oh like"
+    },
+    {
+      "start": 278.24,
+      "duration": 3.679,
+      "text": "i'll show you how they use it"
+    },
+    {
+      "start": 280.08,
+      "duration": 3.52,
+      "text": "so now let's go and create a new subnet"
+    },
+    {
+      "start": 281.919,
+      "duration": 4.321,
+      "text": "which is going to be private subnet same"
+    },
+    {
+      "start": 283.6,
+      "duration": 4.96,
+      "text": "in the same vpc my vpc"
+    },
+    {
+      "start": 286.24,
+      "duration": 4.0,
+      "text": "so i'll give i'm going to give this name"
+    },
+    {
+      "start": 288.56,
+      "duration": 4.079,
+      "text": "as private"
+    },
+    {
+      "start": 290.24,
+      "duration": 4.8,
+      "text": "subnet"
+    },
+    {
+      "start": 292.639,
+      "duration": 5.601,
+      "text": "and i'm going to launch this subnet in"
+    },
+    {
+      "start": 295.04,
+      "duration": 5.52,
+      "text": "my u.s east 1b availability zones"
+    },
+    {
+      "start": 298.24,
+      "duration": 4.399,
+      "text": "so now i have to give my cider block for"
+    },
+    {
+      "start": 300.56,
+      "duration": 5.96,
+      "text": "my private summit level previously i"
+    },
+    {
+      "start": 302.639,
+      "duration": 3.881,
+      "text": "gave the cytobloc as 10.0.0.0.24"
+    },
+    {
+      "start": 306.88,
+      "duration": 3.599,
+      "text": "so this range which means starting from"
+    },
+    {
+      "start": 309.039,
+      "duration": 3.681,
+      "text": "1 till 255"
+    },
+    {
+      "start": 310.479,
+      "duration": 4.481,
+      "text": "now for this subnet i need to give a"
+    },
+    {
+      "start": 312.72,
+      "duration": 4.0,
+      "text": "different range which should not overlap"
+    },
+    {
+      "start": 314.96,
+      "duration": 4.16,
+      "text": "this one for example if i choose"
+    },
+    {
+      "start": 316.72,
+      "duration": 2.4,
+      "text": "something like"
+    },
+    {
+      "start": 319.24,
+      "duration": 4.12,
+      "text": "10.0.0.0.24 which is already given to"
+    },
+    {
+      "start": 321.36,
+      "duration": 4.0,
+      "text": "the previous one if i choose this and"
+    },
+    {
+      "start": 323.36,
+      "duration": 4.32,
+      "text": "click on create subnet it will give me"
+    },
+    {
+      "start": 325.36,
+      "duration": 4.48,
+      "text": "an error saying slider address overlaps"
+    },
+    {
+      "start": 327.68,
+      "duration": 6.4,
+      "text": "with existing subnets hider if i make a"
+    },
+    {
+      "start": 329.84,
+      "duration": 6.88,
+      "text": "change here which is like 10.0.0.1"
+    },
+    {
+      "start": 334.08,
+      "duration": 5.2,
+      "text": "it will still give me an error because"
+    },
+    {
+      "start": 336.72,
+      "duration": 5.199,
+      "text": "this 10.0.1 comes in the range with the"
+    },
+    {
+      "start": 339.28,
+      "duration": 5.6,
+      "text": "previous slider that starts from one"
+    },
+    {
+      "start": 341.919,
+      "duration": 4.72,
+      "text": "tail to 54. so we cannot use this last"
+    },
+    {
+      "start": 344.88,
+      "duration": 5.96,
+      "text": "octet we need to make a change in here"
+    },
+    {
+      "start": 346.639,
+      "duration": 6.241,
+      "text": "or here somewhere other than last update"
+    },
+    {
+      "start": 350.84,
+      "duration": 5.76,
+      "text": "right so i'm going to choose a range"
+    },
+    {
+      "start": 352.88,
+      "duration": 3.72,
+      "text": "which is going to be 10.0.1.0"
+    },
+    {
+      "start": 358.0,
+      "duration": 2.96,
+      "text": "because if i choose this i get a"
+    },
+    {
+      "start": 359.52,
+      "duration": 4.399,
+      "text": "different range right now the range is"
+    },
+    {
+      "start": 360.96,
+      "duration": 5.04,
+      "text": "10.0.1 uh till 254 but if i make a"
+    },
+    {
+      "start": 363.919,
+      "duration": 5.681,
+      "text": "change here make it one and now i get"
+    },
+    {
+      "start": 366.0,
+      "duration": 3.6,
+      "text": "different set of 256 ips"
+    },
+    {
+      "start": 370.72,
+      "duration": 3.759,
+      "text": "so i'm going to choose that and click on"
+    },
+    {
+      "start": 372.8,
+      "duration": 3.679,
+      "text": "create subway so this has created"
+    },
+    {
+      "start": 374.479,
+      "duration": 5.921,
+      "text": "another subnet for me right now i have"
+    },
+    {
+      "start": 376.479,
+      "duration": 6.16,
+      "text": "two subnets present one is public"
+    },
+    {
+      "start": 380.4,
+      "duration": 4.16,
+      "text": "and what is private so"
+    },
+    {
+      "start": 382.639,
+      "duration": 3.601,
+      "text": "let me show you i mean right now right"
+    },
+    {
+      "start": 384.56,
+      "duration": 3.6,
+      "text": "right now they are put"
+    },
+    {
+      "start": 386.24,
+      "duration": 3.679,
+      "text": "they are good"
+    },
+    {
+      "start": 388.16,
+      "duration": 3.28,
+      "text": "right we just named them public and"
+    },
+    {
+      "start": 389.919,
+      "duration": 2.481,
+      "text": "private but right now they are both"
+    },
+    {
+      "start": 391.44,
+      "duration": 2.319,
+      "text": "private"
+    },
+    {
+      "start": 392.4,
+      "duration": 2.639,
+      "text": "yeah they are both private right now"
+    },
+    {
+      "start": 393.759,
+      "duration": 3.44,
+      "text": "even though the name is public and"
+    },
+    {
+      "start": 395.039,
+      "duration": 4.481,
+      "text": "private because we have not attached the"
+    },
+    {
+      "start": 397.199,
+      "duration": 3.601,
+      "text": "internet that makes this submit actually"
+    },
+    {
+      "start": 399.52,
+      "duration": 2.399,
+      "text": "public"
+    },
+    {
+      "start": 400.8,
+      "duration": 2.64,
+      "text": "so"
+    },
+    {
+      "start": 401.919,
+      "duration": 2.881,
+      "text": "let's go and launch an instance in both"
+    },
+    {
+      "start": 403.44,
+      "duration": 2.72,
+      "text": "of them real quick so i'm going to"
+    },
+    {
+      "start": 404.8,
+      "duration": 3.6,
+      "text": "launch an instance to show you how"
+    },
+    {
+      "start": 406.16,
+      "duration": 5.759,
+      "text": "internet gateway works so i'm going to"
+    },
+    {
+      "start": 408.4,
+      "duration": 5.6,
+      "text": "click on launch instance option"
+    },
+    {
+      "start": 411.919,
+      "duration": 5.521,
+      "text": "and give this a name as"
+    },
+    {
+      "start": 414.0,
+      "duration": 3.44,
+      "text": "public instance"
+    },
+    {
+      "start": 418.96,
+      "duration": 4.239,
+      "text": "and i'm going to choose amazon linux"
+    },
+    {
+      "start": 421.199,
+      "duration": 5.12,
+      "text": "keypair something that i have in my"
+    },
+    {
+      "start": 423.199,
+      "duration": 5.521,
+      "text": "machine so easy to key"
+    },
+    {
+      "start": 426.319,
+      "duration": 4.88,
+      "text": "okay and if i need to change the"
+    },
+    {
+      "start": 428.72,
+      "duration": 5.12,
+      "text": "networking settings make it in my vpc"
+    },
+    {
+      "start": 431.199,
+      "duration": 4.4,
+      "text": "that i created in the public subnet and"
+    },
+    {
+      "start": 433.84,
+      "duration": 4.32,
+      "text": "you can see it says auto assign public"
+    },
+    {
+      "start": 435.599,
+      "duration": 4.32,
+      "text": "ip is disabled you need to enable it but"
+    },
+    {
+      "start": 438.16,
+      "duration": 4.479,
+      "text": "if you want it to be default you can"
+    },
+    {
+      "start": 439.919,
+      "duration": 6.72,
+      "text": "just make the change in the subnet so i"
+    },
+    {
+      "start": 442.639,
+      "duration": 4.0,
+      "text": "can go here choose a subnet"
+    },
+    {
+      "start": 446.96,
+      "duration": 4.88,
+      "text": "so first choose the vpc then go to"
+    },
+    {
+      "start": 448.88,
+      "duration": 5.52,
+      "text": "subnets in this i can go to public"
+    },
+    {
+      "start": 451.84,
+      "duration": 4.4,
+      "text": "subnets go to actions"
+    },
+    {
+      "start": 454.4,
+      "duration": 4.4,
+      "text": "click on edit subnet settings and i have"
+    },
+    {
+      "start": 456.24,
+      "duration": 4.399,
+      "text": "the option to auto assign public ipv4 if"
+    },
+    {
+      "start": 458.8,
+      "duration": 4.04,
+      "text": "i don't enable this option"
+    },
+    {
+      "start": 460.639,
+      "duration": 3.84,
+      "text": "you cannot get the ip"
+    },
+    {
+      "start": 462.84,
+      "duration": 3.079,
+      "text": "address okay"
+    },
+    {
+      "start": 464.479,
+      "duration": 2.881,
+      "text": "so i'm going to"
+    },
+    {
+      "start": 465.919,
+      "duration": 3.601,
+      "text": "now it is going to be assigned"
+    },
+    {
+      "start": 467.36,
+      "duration": 3.44,
+      "text": "automatically and i'm going to choose a"
+    },
+    {
+      "start": 469.52,
+      "duration": 5.16,
+      "text": "security group"
+    },
+    {
+      "start": 470.8,
+      "duration": 3.88,
+      "text": "so security group"
+    },
+    {
+      "start": 479.919,
+      "duration": 4.72,
+      "text": "okay i don't have one so i'm going to"
+    },
+    {
+      "start": 481.919,
+      "duration": 2.72,
+      "text": "create a new one"
+    },
+    {
+      "start": 484.96,
+      "duration": 4.32,
+      "text": "because security group our vpc one is"
+    },
+    {
+      "start": 487.039,
+      "duration": 4.321,
+      "text": "bounded so in this ac we don't have any"
+    },
+    {
+      "start": 489.28,
+      "duration": 4.96,
+      "text": "security group so we need to create one"
+    },
+    {
+      "start": 491.36,
+      "duration": 6.239,
+      "text": "so public"
+    },
+    {
+      "start": 494.24,
+      "duration": 5.679,
+      "text": "is g you can give any name you want"
+    },
+    {
+      "start": 497.599,
+      "duration": 4.88,
+      "text": "i am going to have ssh rule"
+    },
+    {
+      "start": 499.919,
+      "duration": 4.161,
+      "text": "and i can i am also going to have http"
+    },
+    {
+      "start": 502.479,
+      "duration": 3.761,
+      "text": "from anywhere"
+    },
+    {
+      "start": 504.08,
+      "duration": 4.559,
+      "text": "so http"
+    },
+    {
+      "start": 506.24,
+      "duration": 4.079,
+      "text": "from anywhere"
+    },
+    {
+      "start": 508.639,
+      "duration": 3.76,
+      "text": "all right now click on launch instance"
+    },
+    {
+      "start": 510.319,
+      "duration": 4.001,
+      "text": "and this instance is going to be created"
+    },
+    {
+      "start": 512.399,
+      "duration": 4.0,
+      "text": "let's also launch an instance in the"
+    },
+    {
+      "start": 514.32,
+      "duration": 3.92,
+      "text": "private submit as well so i'm going to"
+    },
+    {
+      "start": 516.399,
+      "duration": 4.241,
+      "text": "click on view all instance you can see"
+    },
+    {
+      "start": 518.24,
+      "duration": 3.679,
+      "text": "if subnet is created which is in pending"
+    },
+    {
+      "start": 520.64,
+      "duration": 4.319,
+      "text": "scene i'm going to stop this because i'm"
+    },
+    {
+      "start": 521.919,
+      "duration": 3.04,
+      "text": "not using it right now"
+    },
+    {
+      "start": 525.04,
+      "duration": 3.04,
+      "text": "so stop it"
+    },
+    {
+      "start": 528.16,
+      "duration": 4.799,
+      "text": "and click on launch instance to launch"
+    },
+    {
+      "start": 530.16,
+      "duration": 5.679,
+      "text": "another instance so instance private"
+    },
+    {
+      "start": 532.959,
+      "duration": 2.88,
+      "text": "instance"
+    },
+    {
+      "start": 536.48,
+      "duration": 5.84,
+      "text": "amazon linux"
+    },
+    {
+      "start": 538.24,
+      "duration": 4.08,
+      "text": "keypair is going to be easy to key"
+    },
+    {
+      "start": 545.279,
+      "duration": 3.281,
+      "text": "edit the settings network settings to"
+    },
+    {
+      "start": 547.12,
+      "duration": 2.8,
+      "text": "cheats to"
+    },
+    {
+      "start": 548.56,
+      "duration": 4.399,
+      "text": "where do you want to launch this i want"
+    },
+    {
+      "start": 549.92,
+      "duration": 4.72,
+      "text": "to launch it in my vpc in private subnet"
+    },
+    {
+      "start": 552.959,
+      "duration": 4.401,
+      "text": "and i can choose if i want to have the"
+    },
+    {
+      "start": 554.64,
+      "duration": 4.8,
+      "text": "ip or not so for private submit mostly"
+    },
+    {
+      "start": 557.36,
+      "duration": 3.919,
+      "text": "we don't have the eyepiece but if you"
+    },
+    {
+      "start": 559.44,
+      "duration": 4.079,
+      "text": "want you can choose to have it so i'm"
+    },
+    {
+      "start": 561.279,
+      "duration": 4.401,
+      "text": "going to skip that for now and choose"
+    },
+    {
+      "start": 563.519,
+      "duration": 5.041,
+      "text": "the existing security group which we"
+    },
+    {
+      "start": 565.68,
+      "duration": 6.32,
+      "text": "created right now public hd and click on"
+    },
+    {
+      "start": 568.56,
+      "duration": 6.44,
+      "text": "launch instance so it says some error is"
+    },
+    {
+      "start": 572.0,
+      "duration": 3.0,
+      "text": "there"
+    },
+    {
+      "start": 576.64,
+      "duration": 4.4,
+      "text": "so that is just a glitch if you try to"
+    },
+    {
+      "start": 579.04,
+      "duration": 4.32,
+      "text": "do stuff very fast ew sometimes gives"
+    },
+    {
+      "start": 581.04,
+      "duration": 4.72,
+      "text": "you an error but no problem"
+    },
+    {
+      "start": 583.36,
+      "duration": 3.84,
+      "text": "so now we have two instances launched in"
+    },
+    {
+      "start": 585.76,
+      "duration": 4.96,
+      "text": "the"
+    },
+    {
+      "start": 587.2,
+      "duration": 5.44,
+      "text": "ec2 publix instance and private instance"
+    },
+    {
+      "start": 590.72,
+      "duration": 4.08,
+      "text": "but even though this is named as public"
+    },
+    {
+      "start": 592.64,
+      "duration": 3.52,
+      "text": "having a public ip it will still not be"
+    },
+    {
+      "start": 594.8,
+      "duration": 3.599,
+      "text": "connected to the"
+    },
+    {
+      "start": 596.16,
+      "duration": 4.0,
+      "text": "it we cannot able to assist into it"
+    },
+    {
+      "start": 598.399,
+      "duration": 3.44,
+      "text": "because we don't have the internet"
+    },
+    {
+      "start": 600.16,
+      "duration": 4.32,
+      "text": "connection"
+    },
+    {
+      "start": 601.839,
+      "duration": 4.321,
+      "text": "right right so if i try to connect to"
+    },
+    {
+      "start": 604.48,
+      "duration": 3.52,
+      "text": "this it will show me an error even"
+    },
+    {
+      "start": 606.16,
+      "duration": 4.08,
+      "text": "though we have the security group rule"
+    },
+    {
+      "start": 608.0,
+      "duration": 4.32,
+      "text": "saying 22 allowed so we have the"
+    },
+    {
+      "start": 610.24,
+      "duration": 3.92,
+      "text": "security group rule 22 allowed from"
+    },
+    {
+      "start": 612.32,
+      "duration": 3.6,
+      "text": "anywhere and we also have the keeper"
+    },
+    {
+      "start": 614.16,
+      "duration": 4.32,
+      "text": "attached to it but still it would you"
+    },
+    {
+      "start": 615.92,
+      "duration": 4.0,
+      "text": "won't be able to connect to it"
+    },
+    {
+      "start": 618.48,
+      "duration": 2.96,
+      "text": "because you're not connected to the"
+    },
+    {
+      "start": 619.92,
+      "duration": 2.88,
+      "text": "internet so fail to connect we're not"
+    },
+    {
+      "start": 621.44,
+      "duration": 2.8,
+      "text": "able to connect your instance make sure"
+    },
+    {
+      "start": 622.8,
+      "duration": 3.12,
+      "text": "that the instance network settings are"
+    },
+    {
+      "start": 624.24,
+      "duration": 3.52,
+      "text": "configured correctly"
+    },
+    {
+      "start": 625.92,
+      "duration": 3.68,
+      "text": "and we need to attach"
+    },
+    {
+      "start": 627.76,
+      "duration": 3.6,
+      "text": "internet gateway to this so let's go and"
+    },
+    {
+      "start": 629.6,
+      "duration": 2.88,
+      "text": "attach an internet gateway and how do"
+    },
+    {
+      "start": 631.36,
+      "duration": 3.2,
+      "text": "you do that"
+    },
+    {
+      "start": 632.48,
+      "duration": 3.44,
+      "text": "so to attach an internet gateway we need"
+    },
+    {
+      "start": 634.56,
+      "duration": 2.959,
+      "text": "to"
+    },
+    {
+      "start": 635.92,
+      "duration": 3.12,
+      "text": "use stuff like"
+    },
+    {
+      "start": 637.519,
+      "duration": 3.361,
+      "text": "root tables"
+    },
+    {
+      "start": 639.04,
+      "duration": 3.919,
+      "text": "and internet gateways and inside this"
+    },
+    {
+      "start": 640.88,
+      "duration": 4.56,
+      "text": "root table we need to add"
+    },
+    {
+      "start": 642.959,
+      "duration": 4.481,
+      "text": "add our in subnet which we want to be"
+    },
+    {
+      "start": 645.44,
+      "duration": 2.959,
+      "text": "connected to the internet gateway"
+    },
+    {
+      "start": 647.44,
+      "duration": 2.56,
+      "text": "so"
+    },
+    {
+      "start": 648.399,
+      "duration": 3.281,
+      "text": "so first i need to create a great"
+    },
+    {
+      "start": 650.0,
+      "duration": 3.2,
+      "text": "gateway i'm going to click on internet"
+    },
+    {
+      "start": 651.68,
+      "duration": 3.52,
+      "text": "gateways right now i don't have any"
+    },
+    {
+      "start": 653.2,
+      "duration": 4.48,
+      "text": "internet gateway and if i show you what"
+    },
+    {
+      "start": 655.2,
+      "duration": 5.199,
+      "text": "does it mean so let's see what does aws"
+    },
+    {
+      "start": 657.68,
+      "duration": 4.399,
+      "text": "tell us about internet gateway so"
+    },
+    {
+      "start": 660.399,
+      "duration": 3.761,
+      "text": "internet data enables resources in your"
+    },
+    {
+      "start": 662.079,
+      "duration": 4.0,
+      "text": "public subnet such as ec2 instance to"
+    },
+    {
+      "start": 664.16,
+      "duration": 4.72,
+      "text": "connect to the internet if the resource"
+    },
+    {
+      "start": 666.079,
+      "duration": 5.521,
+      "text": "has public ipv4 address right so we have"
+    },
+    {
+      "start": 668.88,
+      "duration": 5.199,
+      "text": "an instance in the public subnet uh and"
+    },
+    {
+      "start": 671.6,
+      "duration": 4.32,
+      "text": "we can we are not able to connect to it"
+    },
+    {
+      "start": 674.079,
+      "duration": 3.041,
+      "text": "because we we don't have the intricate"
+    },
+    {
+      "start": 675.92,
+      "duration": 3.68,
+      "text": "way enabled"
+    },
+    {
+      "start": 677.12,
+      "duration": 3.92,
+      "text": "right so we're going to enable that if"
+    },
+    {
+      "start": 679.6,
+      "duration": 3.12,
+      "text": "you see here an internet data enables"
+    },
+    {
+      "start": 681.04,
+      "duration": 4.0,
+      "text": "you to connect to an instance using your"
+    },
+    {
+      "start": 682.72,
+      "duration": 4.72,
+      "text": "local computer so i'm going to go here"
+    },
+    {
+      "start": 685.04,
+      "duration": 5.039,
+      "text": "and create an internet gateway first so"
+    },
+    {
+      "start": 687.44,
+      "duration": 4.16,
+      "text": "click on create internet gateway give it"
+    },
+    {
+      "start": 690.079,
+      "duration": 2.721,
+      "text": "a name"
+    },
+    {
+      "start": 691.6,
+      "duration": 4.0,
+      "text": "so my"
+    },
+    {
+      "start": 692.8,
+      "duration": 4.56,
+      "text": "igw or my internet gateway"
+    },
+    {
+      "start": 695.6,
+      "duration": 3.359,
+      "text": "and click on create internet gateway"
+    },
+    {
+      "start": 697.36,
+      "duration": 3.919,
+      "text": "this is going to click create an"
+    },
+    {
+      "start": 698.959,
+      "duration": 4.88,
+      "text": "internet which is in detached state"
+    },
+    {
+      "start": 701.279,
+      "duration": 2.56,
+      "text": "right now"
+    },
+    {
+      "start": 704.16,
+      "duration": 2.64,
+      "text": "right"
+    },
+    {
+      "start": 705.36,
+      "duration": 3.2,
+      "text": "okay wait so we just went and you"
+    },
+    {
+      "start": 706.8,
+      "duration": 4.8,
+      "text": "created the"
+    },
+    {
+      "start": 708.56,
+      "duration": 4.64,
+      "text": "internet gathering right yes"
+    },
+    {
+      "start": 711.6,
+      "duration": 4.08,
+      "text": "i created this internet gateway right"
+    },
+    {
+      "start": 713.2,
+      "duration": 4.639,
+      "text": "now which is in detached state i need to"
+    },
+    {
+      "start": 715.68,
+      "duration": 4.719,
+      "text": "attach it to the vpc that i want so i"
+    },
+    {
+      "start": 717.839,
+      "duration": 4.321,
+      "text": "can click on the attach vpc option and"
+    },
+    {
+      "start": 720.399,
+      "duration": 4.801,
+      "text": "select the vpc that i want to use so"
+    },
+    {
+      "start": 722.16,
+      "duration": 5.44,
+      "text": "this is my ppc and then click on attach"
+    },
+    {
+      "start": 725.2,
+      "duration": 3.68,
+      "text": "internet gateway and this is attached to"
+    },
+    {
+      "start": 727.6,
+      "duration": 2.88,
+      "text": "my vpc"
+    },
+    {
+      "start": 728.88,
+      "duration": 3.36,
+      "text": "right you can see the pcid here and it"
+    },
+    {
+      "start": 730.48,
+      "duration": 5.919,
+      "text": "says attached"
+    },
+    {
+      "start": 732.24,
+      "duration": 4.159,
+      "text": "now i'm going to this root table option"
+    },
+    {
+      "start": 736.72,
+      "duration": 3.04,
+      "text": "so just a second"
+    },
+    {
+      "start": 741.6,
+      "duration": 3.6,
+      "text": "go into this root table it already has a"
+    },
+    {
+      "start": 743.279,
+      "duration": 3.841,
+      "text": "default root table"
+    },
+    {
+      "start": 745.2,
+      "duration": 4.8,
+      "text": "but which so you can see here there is"
+    },
+    {
+      "start": 747.12,
+      "duration": 4.56,
+      "text": "details roots subnet association edge"
+    },
+    {
+      "start": 750.0,
+      "duration": 3.92,
+      "text": "association and all these different"
+    },
+    {
+      "start": 751.68,
+      "duration": 4.48,
+      "text": "options so we're going to use"
+    },
+    {
+      "start": 753.92,
+      "duration": 4.67,
+      "text": "that"
+    },
+    {
+      "start": 756.16,
+      "duration": 5.55,
+      "text": "so just a second"
+    },
+    {
+      "start": 758.59,
+      "duration": 3.12,
+      "text": "[Music]"
+    },
+    {
+      "start": 773.04,
+      "duration": 3.919,
+      "text": "right"
+    },
+    {
+      "start": 774.16,
+      "duration": 4.0,
+      "text": "all right so we have uh let's get a"
+    },
+    {
+      "start": 776.959,
+      "duration": 2.961,
+      "text": "different route table this is the"
+    },
+    {
+      "start": 778.16,
+      "duration": 3.84,
+      "text": "default one i'm going to click on create"
+    },
+    {
+      "start": 779.92,
+      "duration": 4.64,
+      "text": "root table option and give this a name"
+    },
+    {
+      "start": 782.0,
+      "duration": 5.92,
+      "text": "so it can be anything"
+    },
+    {
+      "start": 784.56,
+      "duration": 5.92,
+      "text": "my rt or my root table select the vpc"
+    },
+    {
+      "start": 787.92,
+      "duration": 4.08,
+      "text": "you want so this is my vpc"
+    },
+    {
+      "start": 790.48,
+      "duration": 3.76,
+      "text": "right"
+    },
+    {
+      "start": 792.0,
+      "duration": 3.839,
+      "text": "yes"
+    },
+    {
+      "start": 794.24,
+      "duration": 3.2,
+      "text": "sorry"
+    },
+    {
+      "start": 795.839,
+      "duration": 3.281,
+      "text": "yeah that's the one you just created yes"
+    },
+    {
+      "start": 797.44,
+      "duration": 4.16,
+      "text": "yes this is the one we created right now"
+    },
+    {
+      "start": 799.12,
+      "duration": 4.159,
+      "text": "it's 10.0.0.16"
+    },
+    {
+      "start": 801.6,
+      "duration": 4.16,
+      "text": "side range and i'm going to click on"
+    },
+    {
+      "start": 803.279,
+      "duration": 3.68,
+      "text": "create root table once this root table"
+    },
+    {
+      "start": 805.76,
+      "duration": 3.44,
+      "text": "is created"
+    },
+    {
+      "start": 806.959,
+      "duration": 4.081,
+      "text": "we can see roots here subnet association"
+    },
+    {
+      "start": 809.2,
+      "duration": 3.52,
+      "text": "and all this option we just need to"
+    },
+    {
+      "start": 811.04,
+      "duration": 4.0,
+      "text": "focus on these two"
+    },
+    {
+      "start": 812.72,
+      "duration": 4.48,
+      "text": "right so we have a route with this side"
+    },
+    {
+      "start": 815.04,
+      "duration": 4.08,
+      "text": "range that is defined for our vpc"
+    },
+    {
+      "start": 817.2,
+      "duration": 4.4,
+      "text": "for the target local but i'm going to"
+    },
+    {
+      "start": 819.12,
+      "duration": 3.36,
+      "text": "click on edit routes option and add a"
+    },
+    {
+      "start": 821.6,
+      "duration": 3.679,
+      "text": "route"
+    },
+    {
+      "start": 822.48,
+      "duration": 6.08,
+      "text": "that is 0.0.0.0"
+    },
+    {
+      "start": 825.279,
+      "duration": 7.521,
+      "text": "0 which means all ips in this subnet"
+    },
+    {
+      "start": 828.56,
+      "duration": 5.12,
+      "text": "should be connected to internet gateway"
+    },
+    {
+      "start": 832.8,
+      "duration": 2.479,
+      "text": "okay"
+    },
+    {
+      "start": 833.68,
+      "duration": 2.959,
+      "text": "so i'm going to click on internet where"
+    },
+    {
+      "start": 835.279,
+      "duration": 4.321,
+      "text": "this is the internet that i created"
+    },
+    {
+      "start": 836.639,
+      "duration": 4.961,
+      "text": "right now so i'm selecting that and"
+    },
+    {
+      "start": 839.6,
+      "duration": 4.72,
+      "text": "clicking on save changes"
+    },
+    {
+      "start": 841.6,
+      "duration": 4.479,
+      "text": "once i do that i have two routes present"
+    },
+    {
+      "start": 844.32,
+      "duration": 4.48,
+      "text": "one with the local"
+    },
+    {
+      "start": 846.079,
+      "duration": 5.2,
+      "text": "and one with the internet gateway"
+    },
+    {
+      "start": 848.8,
+      "duration": 4.479,
+      "text": "but i also need to add this sub nets in"
+    },
+    {
+      "start": 851.279,
+      "duration": 4.401,
+      "text": "here so right now i don't have any"
+    },
+    {
+      "start": 853.279,
+      "duration": 3.201,
+      "text": "subnet associated"
+    },
+    {
+      "start": 855.68,
+      "duration": 2.399,
+      "text": "right"
+    },
+    {
+      "start": 856.48,
+      "duration": 3.84,
+      "text": "so let's say i want to attach this"
+    },
+    {
+      "start": 858.079,
+      "duration": 4.241,
+      "text": "employee to it to the public subnet how"
+    },
+    {
+      "start": 860.32,
+      "duration": 4.16,
+      "text": "can i do that i can click on edit submit"
+    },
+    {
+      "start": 862.32,
+      "duration": 4.24,
+      "text": "association option and select my public"
+    },
+    {
+      "start": 864.48,
+      "duration": 4.24,
+      "text": "subnet here"
+    },
+    {
+      "start": 866.56,
+      "duration": 4.639,
+      "text": "select my public subnet and then click"
+    },
+    {
+      "start": 868.72,
+      "duration": 4.32,
+      "text": "on save association"
+    },
+    {
+      "start": 871.199,
+      "duration": 2.88,
+      "text": "once i do this then"
+    },
+    {
+      "start": 873.04,
+      "duration": 3.28,
+      "text": "my"
+    },
+    {
+      "start": 874.079,
+      "duration": 3.281,
+      "text": "subnet is connected to the internet so"
+    },
+    {
+      "start": 876.32,
+      "duration": 3.28,
+      "text": "you can see you have successfully"
+    },
+    {
+      "start": 877.36,
+      "duration": 4.56,
+      "text": "updated the association and in certain"
+    },
+    {
+      "start": 879.6,
+      "duration": 5.12,
+      "text": "association i get the option as public"
+    },
+    {
+      "start": 881.92,
+      "duration": 4.159,
+      "text": "subnets connected to the root table"
+    },
+    {
+      "start": 884.72,
+      "duration": 3.52,
+      "text": "which is connected to the internet"
+    },
+    {
+      "start": 886.079,
+      "duration": 5.361,
+      "text": "gateway so if i go here hopefully i"
+    },
+    {
+      "start": 888.24,
+      "duration": 3.2,
+      "text": "should be able to log into"
+    },
+    {
+      "start": 896.839,
+      "duration": 5.24,
+      "text": "this now you can see we are inside the"
+    },
+    {
+      "start": 899.279,
+      "duration": 5.441,
+      "text": "instance and if i run anything say let's"
+    },
+    {
+      "start": 902.079,
+      "duration": 2.641,
+      "text": "bring google"
+    },
+    {
+      "start": 906.959,
+      "duration": 2.32,
+      "text": "sorry"
+    },
+    {
+      "start": 911.6,
+      "duration": 4.0,
+      "text": "google.com"
+    },
+    {
+      "start": 914.16,
+      "duration": 3.6,
+      "text": "so you can see it's it is connected to"
+    },
+    {
+      "start": 915.6,
+      "duration": 4.239,
+      "text": "the internet like because we can talk to"
+    },
+    {
+      "start": 917.76,
+      "duration": 3.439,
+      "text": "the google we are able to get connect to"
+    },
+    {
+      "start": 919.839,
+      "duration": 3.68,
+      "text": "the internet you can see if i do"
+    },
+    {
+      "start": 921.199,
+      "duration": 3.32,
+      "text": "delegate i'm able to get the index.html"
+    },
+    {
+      "start": 923.519,
+      "duration": 3.281,
+      "text": "for this"
+    },
+    {
+      "start": 924.519,
+      "duration": 3.88,
+      "text": "cider.xyz which means we are able to"
+    },
+    {
+      "start": 926.8,
+      "duration": 3.399,
+      "text": "connect to the internet and we have we"
+    },
+    {
+      "start": 928.399,
+      "duration": 3.841,
+      "text": "can talk to the internet if i do"
+    },
+    {
+      "start": 930.199,
+      "duration": 4.121,
+      "text": "ping.amazon.com or anything"
+    },
+    {
+      "start": 932.24,
+      "duration": 3.68,
+      "text": "i can get the results of the packet"
+    },
+    {
+      "start": 934.32,
+      "duration": 3.519,
+      "text": "because i am connected to the internet"
+    },
+    {
+      "start": 935.92,
+      "duration": 3.359,
+      "text": "same way if i try to do it with the"
+    },
+    {
+      "start": 937.839,
+      "duration": 2.961,
+      "text": "subnet that is not connected to the"
+    },
+    {
+      "start": 939.279,
+      "duration": 4.24,
+      "text": "internet which is dar"
+    },
+    {
+      "start": 940.8,
+      "duration": 6.24,
+      "text": "uh which is our private subnet but it"
+    },
+    {
+      "start": 943.519,
+      "duration": 4.961,
+      "text": "also does not have the public ip to it"
+    },
+    {
+      "start": 947.04,
+      "duration": 2.799,
+      "text": "yeah we won't be able to connect to it"
+    },
+    {
+      "start": 948.48,
+      "duration": 3.359,
+      "text": "because it says the instance does not"
+    },
+    {
+      "start": 949.839,
+      "duration": 3.841,
+      "text": "have public ipv4 address"
+    },
+    {
+      "start": 951.839,
+      "duration": 3.44,
+      "text": "right so this is how you do"
+    },
+    {
+      "start": 953.68,
+      "duration": 4.24,
+      "text": "how you uh"
+    },
+    {
+      "start": 955.279,
+      "duration": 4.081,
+      "text": "attach an internet gateway"
+    },
+    {
+      "start": 957.92,
+      "duration": 4.719,
+      "text": "to"
+    },
+    {
+      "start": 959.36,
+      "duration": 5.2,
+      "text": "to an instance right"
+    },
+    {
+      "start": 962.639,
+      "duration": 4.32,
+      "text": "so let me go over the steps again first"
+    },
+    {
+      "start": 964.56,
+      "duration": 4.079,
+      "text": "we created a vpc"
+    },
+    {
+      "start": 966.959,
+      "duration": 4.961,
+      "text": "first we created a vpc and we launched"
+    },
+    {
+      "start": 968.639,
+      "duration": 5.12,
+      "text": "two subnets in it public and private"
+    },
+    {
+      "start": 971.92,
+      "duration": 4.56,
+      "text": "and inside this public subnet if you go"
+    },
+    {
+      "start": 973.759,
+      "duration": 4.481,
+      "text": "here you need to enable the app option"
+    },
+    {
+      "start": 976.48,
+      "duration": 4.0,
+      "text": "edit subnet settings"
+    },
+    {
+      "start": 978.24,
+      "duration": 5.519,
+      "text": "and you need to enable the"
+    },
+    {
+      "start": 980.48,
+      "duration": 5.44,
+      "text": "auto assign public ipo for address right"
+    },
+    {
+      "start": 983.759,
+      "duration": 4.88,
+      "text": "so that is for a public subnet and you"
+    },
+    {
+      "start": 985.92,
+      "duration": 4.8,
+      "text": "can also enable uh resource name dns"
+    },
+    {
+      "start": 988.639,
+      "duration": 3.2,
+      "text": "record on launch if you want"
+    },
+    {
+      "start": 990.72,
+      "duration": 2.72,
+      "text": "so"
+    },
+    {
+      "start": 991.839,
+      "duration": 5.281,
+      "text": "we can make the changes after the"
+    },
+    {
+      "start": 993.44,
+      "duration": 7.519,
+      "text": "instance is update is created as well"
+    },
+    {
+      "start": 997.12,
+      "duration": 6.0,
+      "text": "so let's enable all those"
+    },
+    {
+      "start": 1000.959,
+      "duration": 3.761,
+      "text": "and then"
+    },
+    {
+      "start": 1003.12,
+      "duration": 3.68,
+      "text": "once we create the two subnets we"
+    },
+    {
+      "start": 1004.72,
+      "duration": 3.44,
+      "text": "created we created a internet gateway"
+    },
+    {
+      "start": 1006.8,
+      "duration": 2.64,
+      "text": "and a route table"
+    },
+    {
+      "start": 1008.16,
+      "duration": 3.2,
+      "text": "right so let me show you what root"
+    },
+    {
+      "start": 1009.44,
+      "duration": 5.92,
+      "text": "tables does like if you see the"
+    },
+    {
+      "start": 1011.36,
+      "duration": 5.839,
+      "text": "definition by aws so root table aws you"
+    },
+    {
+      "start": 1015.36,
+      "duration": 5.039,
+      "text": "can see what is an aws root table root"
+    },
+    {
+      "start": 1017.199,
+      "duration": 5.521,
+      "text": "table contains a set of rules called set"
+    },
+    {
+      "start": 1020.399,
+      "duration": 3.841,
+      "text": "of rules called roots that determine"
+    },
+    {
+      "start": 1022.72,
+      "duration": 3.839,
+      "text": "where the network traffic from your"
+    },
+    {
+      "start": 1024.24,
+      "duration": 4.88,
+      "text": "subnet or gateway is directed"
+    },
+    {
+      "start": 1026.559,
+      "duration": 4.561,
+      "text": "so right now we were using public subnet"
+    },
+    {
+      "start": 1029.12,
+      "duration": 3.439,
+      "text": "so we attached it to the internet"
+    },
+    {
+      "start": 1031.12,
+      "duration": 3.6,
+      "text": "gateway"
+    },
+    {
+      "start": 1032.559,
+      "duration": 3.12,
+      "text": "right so we attached it to an internet"
+    },
+    {
+      "start": 1034.72,
+      "duration": 2.8,
+      "text": "gateway"
+    },
+    {
+      "start": 1035.679,
+      "duration": 3.921,
+      "text": "like this so our public subnet is"
+    },
+    {
+      "start": 1037.52,
+      "duration": 5.679,
+      "text": "connected to this root table and this"
+    },
+    {
+      "start": 1039.6,
+      "duration": 6.079,
+      "text": "root table has a root coming from"
+    },
+    {
+      "start": 1043.199,
+      "duration": 4.88,
+      "text": "internet gateway"
+    },
+    {
+      "start": 1045.679,
+      "duration": 4.0,
+      "text": "but if it is a private subnet which is"
+    },
+    {
+      "start": 1048.079,
+      "duration": 2.561,
+      "text": "not a public subnet we use something"
+    },
+    {
+      "start": 1049.679,
+      "duration": 2.961,
+      "text": "known as"
+    },
+    {
+      "start": 1050.64,
+      "duration": 4.08,
+      "text": "nat gateway"
+    },
+    {
+      "start": 1052.64,
+      "duration": 4.48,
+      "text": "so you can see internet where there's"
+    },
+    {
+      "start": 1054.72,
+      "duration": 3.36,
+      "text": "not gateways with that gateway why do we"
+    },
+    {
+      "start": 1057.12,
+      "duration": 2.48,
+      "text": "use it"
+    },
+    {
+      "start": 1058.08,
+      "duration": 3.44,
+      "text": "so so there was something known as that"
+    },
+    {
+      "start": 1059.6,
+      "duration": 3.84,
+      "text": "instance before that gateway that"
+    },
+    {
+      "start": 1061.52,
+      "duration": 3.6,
+      "text": "instance also known as bastion host or"
+    },
+    {
+      "start": 1063.44,
+      "duration": 4.88,
+      "text": "jump boxes"
+    },
+    {
+      "start": 1065.12,
+      "duration": 5.52,
+      "text": "so nat gateway is network address"
+    },
+    {
+      "start": 1068.32,
+      "duration": 4.239,
+      "text": "translation service you can use that"
+    },
+    {
+      "start": 1070.64,
+      "duration": 3.919,
+      "text": "gateway so that the instance in private"
+    },
+    {
+      "start": 1072.559,
+      "duration": 4.0,
+      "text": "subnet"
+    },
+    {
+      "start": 1074.559,
+      "duration": 4.161,
+      "text": "can connect to the services outside your"
+    },
+    {
+      "start": 1076.559,
+      "duration": 3.601,
+      "text": "vpc but external services cannot"
+    },
+    {
+      "start": 1078.72,
+      "duration": 2.56,
+      "text": "initiate a connection with those"
+    },
+    {
+      "start": 1080.16,
+      "duration": 2.879,
+      "text": "instance"
+    },
+    {
+      "start": 1081.28,
+      "duration": 3.519,
+      "text": "so if you have a sub instance running in"
+    },
+    {
+      "start": 1083.039,
+      "duration": 3.921,
+      "text": "private subnet and you want it to talk"
+    },
+    {
+      "start": 1084.799,
+      "duration": 4.721,
+      "text": "to the internet but internet should not"
+    },
+    {
+      "start": 1086.96,
+      "duration": 4.079,
+      "text": "talk back to it"
+    },
+    {
+      "start": 1089.52,
+      "duration": 4.8,
+      "text": "so how can you do that you can do that"
+    },
+    {
+      "start": 1091.039,
+      "duration": 4.64,
+      "text": "using that gateway"
+    },
+    {
+      "start": 1094.32,
+      "duration": 3.52,
+      "text": "so we are going to see how to create"
+    },
+    {
+      "start": 1095.679,
+      "duration": 2.161,
+      "text": "that"
+    }
+  ]
+}

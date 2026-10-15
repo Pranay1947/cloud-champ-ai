@@ -1,0 +1,991 @@
+{
+  "video": {
+    "id": "NlWvsfndbnw",
+    "title": "How to Setup AWS Budgets and Billing Alerts in AWS Console: A Step by Step Guide",
+    "url": "https://www.youtube.com/watch?v=NlWvsfndbnw",
+    "duration": 427,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 5.44,
+      "text": "in this video we are going to set up aws"
+    },
+    {
+      "start": 2.639,
+      "duration": 4.321,
+      "text": "budget for our aws account"
+    },
+    {
+      "start": 5.6,
+      "duration": 2.319,
+      "text": "and we are going to create a billing"
+    },
+    {
+      "start": 6.96,
+      "duration": 3.2,
+      "text": "alerts"
+    },
+    {
+      "start": 7.919,
+      "duration": 4.001,
+      "text": "we are going to refer this document"
+    },
+    {
+      "start": 10.16,
+      "duration": 2.479,
+      "text": "but first why are we going to create"
+    },
+    {
+      "start": 11.92,
+      "duration": 2.4,
+      "text": "this"
+    },
+    {
+      "start": 12.639,
+      "duration": 3.281,
+      "text": "i'll show you a photo and you will get"
+    },
+    {
+      "start": 14.32,
+      "duration": 2.879,
+      "text": "the idea why we are going to set up a"
+    },
+    {
+      "start": 15.92,
+      "duration": 4.16,
+      "text": "billing alert"
+    },
+    {
+      "start": 17.199,
+      "duration": 3.92,
+      "text": "this is the aws bill received to my"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.6,
+      "text": "friend"
+    },
+    {
+      "start": 21.119,
+      "duration": 5.361,
+      "text": "for one month she got a bill of 31"
+    },
+    {
+      "start": 24.68,
+      "duration": 3.96,
+      "text": "750"
+    },
+    {
+      "start": 26.48,
+      "duration": 4.08,
+      "text": "and according to her she just launched"
+    },
+    {
+      "start": 28.64,
+      "duration": 4.64,
+      "text": "few of the instances and she might have"
+    },
+    {
+      "start": 30.56,
+      "duration": 4.88,
+      "text": "forgotten to terminate it but this is a"
+    },
+    {
+      "start": 33.28,
+      "duration": 4.16,
+      "text": "huge bill for students like us i don't"
+    },
+    {
+      "start": 35.44,
+      "duration": 4.4,
+      "text": "want you to get this huge bill so i'll"
+    },
+    {
+      "start": 37.44,
+      "duration": 5.04,
+      "text": "help you out but first you need to"
+    },
+    {
+      "start": 39.84,
+      "duration": 5.28,
+      "text": "subscribe to this video let me also show"
+    },
+    {
+      "start": 42.48,
+      "duration": 4.48,
+      "text": "you my account i have"
+    },
+    {
+      "start": 45.12,
+      "duration": 4.0,
+      "text": "set up a budget"
+    },
+    {
+      "start": 46.96,
+      "duration": 4.96,
+      "text": "so that you get the idea why you should"
+    },
+    {
+      "start": 49.12,
+      "duration": 2.8,
+      "text": "set up your budget"
+    },
+    {
+      "start": 52.399,
+      "duration": 6.241,
+      "text": "my bill for the month of february as you"
+    },
+    {
+      "start": 54.719,
+      "duration": 5.441,
+      "text": "can see it's zero i am paying 0"
+    },
+    {
+      "start": 58.64,
+      "duration": 2.88,
+      "text": "for jan"
+    },
+    {
+      "start": 60.16,
+      "duration": 3.12,
+      "text": "i'm also paying"
+    },
+    {
+      "start": 61.52,
+      "duration": 4.959,
+      "text": "zero"
+    },
+    {
+      "start": 63.28,
+      "duration": 4.879,
+      "text": "i'm decent in december i also paid 0."
+    },
+    {
+      "start": 66.479,
+      "duration": 3.521,
+      "text": "you might think i'm not using any of the"
+    },
+    {
+      "start": 68.159,
+      "duration": 6.161,
+      "text": "services but that's not the case i'm"
+    },
+    {
+      "start": 70.0,
+      "duration": 6.72,
+      "text": "using a lot of service i'm using ec2 for"
+    },
+    {
+      "start": 74.32,
+      "duration": 5.2,
+      "text": "around 19"
+    },
+    {
+      "start": 76.72,
+      "duration": 4.96,
+      "text": "i'm using a lot of services but why i am"
+    },
+    {
+      "start": 79.52,
+      "duration": 3.36,
+      "text": "paying zeros it's because i have"
+    },
+    {
+      "start": 81.68,
+      "duration": 4.0,
+      "text": "credits"
+    },
+    {
+      "start": 82.88,
+      "duration": 4.559,
+      "text": "i have a lot of credits here"
+    },
+    {
+      "start": 85.68,
+      "duration": 5.04,
+      "text": "as you can see i have a lot of credits i"
+    },
+    {
+      "start": 87.439,
+      "duration": 5.68,
+      "text": "used 23 dollars this month if you want"
+    },
+    {
+      "start": 90.72,
+      "duration": 4.56,
+      "text": "to know how i got the credits or if you"
+    },
+    {
+      "start": 93.119,
+      "duration": 4.64,
+      "text": "want to get this credits as well you can"
+    },
+    {
+      "start": 95.28,
+      "duration": 4.159,
+      "text": "let me know in the comment section and"
+    },
+    {
+      "start": 97.759,
+      "duration": 3.121,
+      "text": "i'll make a separate video to get"
+    },
+    {
+      "start": 99.439,
+      "duration": 3.601,
+      "text": "credits"
+    },
+    {
+      "start": 100.88,
+      "duration": 4.32,
+      "text": "so let's set up a budget and create"
+    },
+    {
+      "start": 103.04,
+      "duration": 3.6,
+      "text": "billing alerts so we get the emails from"
+    },
+    {
+      "start": 105.2,
+      "duration": 3.919,
+      "text": "the aws"
+    },
+    {
+      "start": 106.64,
+      "duration": 4.4,
+      "text": "whenever a cost exceed you'll get a bill"
+    },
+    {
+      "start": 109.119,
+      "duration": 4.241,
+      "text": "you'll get an email like this"
+    },
+    {
+      "start": 111.04,
+      "duration": 5.039,
+      "text": "so i got to like your aws account has"
+    },
+    {
+      "start": 113.36,
+      "duration": 4.56,
+      "text": "exceeded 85 percent of usage limit"
+    },
+    {
+      "start": 116.079,
+      "duration": 3.68,
+      "text": "whenever you get the bill you can just"
+    },
+    {
+      "start": 117.92,
+      "duration": 2.879,
+      "text": "terminate the service or you can just"
+    },
+    {
+      "start": 119.759,
+      "duration": 3.201,
+      "text": "stop it"
+    },
+    {
+      "start": 120.799,
+      "duration": 2.96,
+      "text": "so you don't need to pay extra money"
+    },
+    {
+      "start": 122.96,
+      "duration": 3.199,
+      "text": "like"
+    },
+    {
+      "start": 123.759,
+      "duration": 5.681,
+      "text": "this you don't need to pay extra"
+    },
+    {
+      "start": 126.159,
+      "duration": 5.841,
+      "text": "money like this 31 000 for single month"
+    },
+    {
+      "start": 129.44,
+      "duration": 5.28,
+      "text": "so to set up a budget you need to log in"
+    },
+    {
+      "start": 132.0,
+      "duration": 5.12,
+      "text": "with an root account or an iem account"
+    },
+    {
+      "start": 134.72,
+      "duration": 5.12,
+      "text": "which has billing permission i am login"
+    },
+    {
+      "start": 137.12,
+      "duration": 4.96,
+      "text": "with my aws im account which has billing"
+    },
+    {
+      "start": 139.84,
+      "duration": 3.28,
+      "text": "permission you can use your root account"
+    },
+    {
+      "start": 142.08,
+      "duration": 2.96,
+      "text": "for this"
+    },
+    {
+      "start": 143.12,
+      "duration": 4.64,
+      "text": "and first you need to go to this billing"
+    },
+    {
+      "start": 145.04,
+      "duration": 2.72,
+      "text": "preferences"
+    },
+    {
+      "start": 148.0,
+      "duration": 4.4,
+      "text": "you need to check all the things that i"
+    },
+    {
+      "start": 149.76,
+      "duration": 5.04,
+      "text": "have checked here the first is receive"
+    },
+    {
+      "start": 152.4,
+      "duration": 5.6,
+      "text": "pdf invoice by emails turn on this"
+    },
+    {
+      "start": 154.8,
+      "duration": 5.439,
+      "text": "feature to receive pdf version invoice"
+    },
+    {
+      "start": 158.0,
+      "duration": 4.0,
+      "text": "by email invoices are generally"
+    },
+    {
+      "start": 160.239,
+      "duration": 3.041,
+      "text": "available within the first three days of"
+    },
+    {
+      "start": 162.0,
+      "duration": 3.2,
+      "text": "the month"
+    },
+    {
+      "start": 163.28,
+      "duration": 4.16,
+      "text": "whenever you get the bill you'll get the"
+    },
+    {
+      "start": 165.2,
+      "duration": 4.319,
+      "text": "bill in the form of pdf so you can keep"
+    },
+    {
+      "start": 167.44,
+      "duration": 4.0,
+      "text": "it as a record"
+    },
+    {
+      "start": 169.519,
+      "duration": 4.641,
+      "text": "so you need to check this"
+    },
+    {
+      "start": 171.44,
+      "duration": 5.04,
+      "text": "feature the second is receive free tier"
+    },
+    {
+      "start": 174.16,
+      "duration": 4.48,
+      "text": "usage alerts whenever you exceed or"
+    },
+    {
+      "start": 176.48,
+      "duration": 4.72,
+      "text": "whenever you use more of the"
+    },
+    {
+      "start": 178.64,
+      "duration": 4.08,
+      "text": "free tier you'll receive email alerts"
+    },
+    {
+      "start": 181.2,
+      "duration": 3.92,
+      "text": "from aws"
+    },
+    {
+      "start": 182.72,
+      "duration": 4.72,
+      "text": "on your email id the email will look"
+    },
+    {
+      "start": 185.12,
+      "duration": 4.72,
+      "text": "like this so that you can"
+    },
+    {
+      "start": 187.44,
+      "duration": 4.48,
+      "text": "prevent yourself from getting a bill"
+    },
+    {
+      "start": 189.84,
+      "duration": 3.84,
+      "text": "the third option is receive billing"
+    },
+    {
+      "start": 191.92,
+      "duration": 3.84,
+      "text": "alerts turn on this feature to monitor"
+    },
+    {
+      "start": 193.68,
+      "duration": 4.559,
+      "text": "your aws usage"
+    },
+    {
+      "start": 195.76,
+      "duration": 4.24,
+      "text": "so you need to check all the three"
+    },
+    {
+      "start": 198.239,
+      "duration": 5.441,
+      "text": "features and you need to enter your"
+    },
+    {
+      "start": 200.0,
+      "duration": 3.68,
+      "text": "email id here i'll enter mine"
+    },
+    {
+      "start": 203.76,
+      "duration": 3.6,
+      "text": "champ"
+    },
+    {
+      "start": 205.519,
+      "duration": 3.36,
+      "text": "dot com and you need to save your"
+    },
+    {
+      "start": 207.36,
+      "duration": 4.879,
+      "text": "preferences"
+    },
+    {
+      "start": 208.879,
+      "duration": 5.041,
+      "text": "i'll go ahead and save it"
+    },
+    {
+      "start": 212.239,
+      "duration": 4.801,
+      "text": "preference is saved"
+    },
+    {
+      "start": 213.92,
+      "duration": 6.0,
+      "text": "so this has set up your billing alerts"
+    },
+    {
+      "start": 217.04,
+      "duration": 5.199,
+      "text": "now we will set up our aws budget to set"
+    },
+    {
+      "start": 219.92,
+      "duration": 4.64,
+      "text": "up a budget we need to use a service"
+    },
+    {
+      "start": 222.239,
+      "duration": 4.801,
+      "text": "name as cloud watch you can search cloud"
+    },
+    {
+      "start": 224.56,
+      "duration": 4.56,
+      "text": "watch in the search console"
+    },
+    {
+      "start": 227.04,
+      "duration": 3.68,
+      "text": "so that's the cloud service click on"
+    },
+    {
+      "start": 229.12,
+      "duration": 4.16,
+      "text": "cloud watch here"
+    },
+    {
+      "start": 230.72,
+      "duration": 4.48,
+      "text": "in the cloud watch dashboard"
+    },
+    {
+      "start": 233.28,
+      "duration": 4.239,
+      "text": "you need to select"
+    },
+    {
+      "start": 235.2,
+      "duration": 5.119,
+      "text": "alarm"
+    },
+    {
+      "start": 237.519,
+      "duration": 4.321,
+      "text": "and click on create alarm"
+    },
+    {
+      "start": 240.319,
+      "duration": 3.92,
+      "text": "select metric"
+    },
+    {
+      "start": 241.84,
+      "duration": 5.36,
+      "text": "you can select billing here"
+    },
+    {
+      "start": 244.239,
+      "duration": 4.801,
+      "text": "and click on total estimated charge"
+    },
+    {
+      "start": 247.2,
+      "duration": 4.239,
+      "text": "if you don't see this"
+    },
+    {
+      "start": 249.04,
+      "duration": 4.479,
+      "text": "you have not"
+    },
+    {
+      "start": 251.439,
+      "duration": 3.681,
+      "text": "checked this option you need to check"
+    },
+    {
+      "start": 253.519,
+      "duration": 3.28,
+      "text": "this option then and then"
+    },
+    {
+      "start": 255.12,
+      "duration": 4.239,
+      "text": "you can see this screen"
+    },
+    {
+      "start": 256.799,
+      "duration": 4.0,
+      "text": "so click on total estimated charge"
+    },
+    {
+      "start": 259.359,
+      "duration": 2.961,
+      "text": "select the"
+    },
+    {
+      "start": 260.799,
+      "duration": 3.12,
+      "text": "currency that is"
+    },
+    {
+      "start": 262.32,
+      "duration": 3.68,
+      "text": "usd dollar"
+    },
+    {
+      "start": 263.919,
+      "duration": 4.401,
+      "text": "select metric"
+    },
+    {
+      "start": 266.0,
+      "duration": 4.479,
+      "text": "and you'll get the interface like this"
+    },
+    {
+      "start": 268.32,
+      "duration": 3.04,
+      "text": "click let it be static"
+    },
+    {
+      "start": 270.479,
+      "duration": 3.121,
+      "text": "and"
+    },
+    {
+      "start": 271.36,
+      "duration": 4.0,
+      "text": "whenever estimated charges is greater"
+    },
+    {
+      "start": 273.6,
+      "duration": 3.52,
+      "text": "than or equal to"
+    },
+    {
+      "start": 275.36,
+      "duration": 5.76,
+      "text": "let's say five dollars"
+    },
+    {
+      "start": 277.12,
+      "duration": 5.519,
+      "text": "we want aws to send us an email"
+    },
+    {
+      "start": 281.12,
+      "duration": 4.16,
+      "text": "and you don't need to do this"
+    },
+    {
+      "start": 282.639,
+      "duration": 4.961,
+      "text": "configuration"
+    },
+    {
+      "start": 285.28,
+      "duration": 4.96,
+      "text": "we will create an sns topic we will"
+    },
+    {
+      "start": 287.6,
+      "duration": 3.92,
+      "text": "learn about sns in the further sessions"
+    },
+    {
+      "start": 290.24,
+      "duration": 3.12,
+      "text": "no need to"
+    },
+    {
+      "start": 291.52,
+      "duration": 3.2,
+      "text": "complicate things now let's create a new"
+    },
+    {
+      "start": 293.36,
+      "duration": 3.119,
+      "text": "topic"
+    },
+    {
+      "start": 294.72,
+      "duration": 3.919,
+      "text": "you can name this topic"
+    },
+    {
+      "start": 296.479,
+      "duration": 4.881,
+      "text": "whatever you want"
+    },
+    {
+      "start": 298.639,
+      "duration": 3.601,
+      "text": "i'll leave it like this you have to"
+    },
+    {
+      "start": 301.36,
+      "duration": 2.16,
+      "text": "enter"
+    },
+    {
+      "start": 302.24,
+      "duration": 3.679,
+      "text": "the email"
+    },
+    {
+      "start": 303.52,
+      "duration": 5.04,
+      "text": "on which you want to receive budget"
+    },
+    {
+      "start": 305.919,
+      "duration": 4.641,
+      "text": "emails so i'll enter my email you can"
+    },
+    {
+      "start": 308.56,
+      "duration": 4.32,
+      "text": "also enter more than one email"
+    },
+    {
+      "start": 310.56,
+      "duration": 4.72,
+      "text": "if you want like user one"
+    },
+    {
+      "start": 312.88,
+      "duration": 4.64,
+      "text": "example.com user2xample.com"
+    },
+    {
+      "start": 315.28,
+      "duration": 4.08,
+      "text": "so enter the email"
+    },
+    {
+      "start": 317.52,
+      "duration": 4.239,
+      "text": "after entering the email click on create"
+    },
+    {
+      "start": 319.36,
+      "duration": 2.399,
+      "text": "topic"
+    },
+    {
+      "start": 322.96,
+      "duration": 4.16,
+      "text": "once created you need to confirm the"
+    },
+    {
+      "start": 324.639,
+      "duration": 4.801,
+      "text": "email as well so now let's scroll down"
+    },
+    {
+      "start": 327.12,
+      "duration": 4.32,
+      "text": "and click on next"
+    },
+    {
+      "start": 329.44,
+      "duration": 4.24,
+      "text": "give the name for the alarm we'll give"
+    },
+    {
+      "start": 331.44,
+      "duration": 4.24,
+      "text": "this aws"
+    },
+    {
+      "start": 333.68,
+      "duration": 3.84,
+      "text": "budget"
+    },
+    {
+      "start": 335.68,
+      "duration": 3.68,
+      "text": "alarm"
+    },
+    {
+      "start": 337.52,
+      "duration": 4.959,
+      "text": "and"
+    },
+    {
+      "start": 339.36,
+      "duration": 5.44,
+      "text": "description is alarm for"
+    },
+    {
+      "start": 342.479,
+      "duration": 3.44,
+      "text": "aws"
+    },
+    {
+      "start": 344.8,
+      "duration": 3.76,
+      "text": "project"
+    },
+    {
+      "start": 345.919,
+      "duration": 4.641,
+      "text": "all right let's click on next"
+    },
+    {
+      "start": 348.56,
+      "duration": 3.84,
+      "text": "you'll get an interface like this"
+    },
+    {
+      "start": 350.56,
+      "duration": 3.12,
+      "text": "review the detail and click on create"
+    },
+    {
+      "start": 352.4,
+      "duration": 3.68,
+      "text": "alarm"
+    },
+    {
+      "start": 353.68,
+      "duration": 5.68,
+      "text": "now if you check"
+    },
+    {
+      "start": 356.08,
+      "duration": 5.04,
+      "text": "this is the alarm we have here"
+    },
+    {
+      "start": 359.36,
+      "duration": 2.8,
+      "text": "it is showing"
+    },
+    {
+      "start": 361.12,
+      "duration": 3.199,
+      "text": "ok"
+    },
+    {
+      "start": 362.16,
+      "duration": 3.12,
+      "text": "you need to confirm the"
+    },
+    {
+      "start": 364.319,
+      "duration": 2.561,
+      "text": "email"
+    },
+    {
+      "start": 365.28,
+      "duration": 3.199,
+      "text": "so"
+    },
+    {
+      "start": 366.88,
+      "duration": 4.0,
+      "text": "in your email id"
+    },
+    {
+      "start": 368.479,
+      "duration": 4.961,
+      "text": "you will get an email from aws like this"
+    },
+    {
+      "start": 370.88,
+      "duration": 4.8,
+      "text": "aws notification you need to click on"
+    },
+    {
+      "start": 373.44,
+      "duration": 4.56,
+      "text": "this and confirm the subscription"
+    },
+    {
+      "start": 375.68,
+      "duration": 4.799,
+      "text": "so that they will confirm this is your"
+    },
+    {
+      "start": 378.0,
+      "duration": 3.44,
+      "text": "email id to provide you the emails in"
+    },
+    {
+      "start": 380.479,
+      "duration": 3.201,
+      "text": "future"
+    },
+    {
+      "start": 381.44,
+      "duration": 4.479,
+      "text": "submit will click on confirmation and"
+    },
+    {
+      "start": 383.68,
+      "duration": 4.0,
+      "text": "the subscription has been confirmed so"
+    },
+    {
+      "start": 385.919,
+      "duration": 3.28,
+      "text": "now"
+    },
+    {
+      "start": 387.68,
+      "duration": 2.639,
+      "text": "we have created"
+    },
+    {
+      "start": 389.199,
+      "duration": 3.761,
+      "text": "the budget"
+    },
+    {
+      "start": 390.319,
+      "duration": 4.961,
+      "text": "and whenever the cost is five dollars or"
+    },
+    {
+      "start": 392.96,
+      "duration": 5.44,
+      "text": "greater than five dollars we will get an"
+    },
+    {
+      "start": 395.28,
+      "duration": 6.24,
+      "text": "email from the aws team"
+    },
+    {
+      "start": 398.4,
+      "duration": 5.519,
+      "text": "notifying about the cost so that we can"
+    },
+    {
+      "start": 401.52,
+      "duration": 4.32,
+      "text": "come to the console and"
+    },
+    {
+      "start": 403.919,
+      "duration": 5.12,
+      "text": "stop the services that we don't need so"
+    },
+    {
+      "start": 405.84,
+      "duration": 5.68,
+      "text": "we don't get a huge bill i hope"
+    },
+    {
+      "start": 409.039,
+      "duration": 4.961,
+      "text": "this was informative and"
+    },
+    {
+      "start": 411.52,
+      "duration": 5.28,
+      "text": "you have created your budget"
+    },
+    {
+      "start": 414.0,
+      "duration": 5.759,
+      "text": "so please like this video subscribe to"
+    },
+    {
+      "start": 416.8,
+      "duration": 6.959,
+      "text": "this channel and follow along for more"
+    },
+    {
+      "start": 419.759,
+      "duration": 7.481,
+      "text": "aws and devops videos"
+    },
+    {
+      "start": 423.759,
+      "duration": 3.481,
+      "text": "have a good day"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "video": {
+    "id": "QfT-Vchz2b8",
+    "title": "What is Kubernetes Operator and How it works? #kubernetes",
+    "url": "https://www.youtube.com/watch?v=QfT-Vchz2b8",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.32,
+      "duration": 4.24,
+      "text": "What is a Kubernetes operator? So a"
+    },
+    {
+      "start": 2.72,
+      "duration": 4.159,
+      "text": "Kubernetes operator is an extension of"
+    },
+    {
+      "start": 4.56,
+      "duration": 4.4,
+      "text": "Kubernetes that lets you manage complex"
+    },
+    {
+      "start": 6.879,
+      "duration": 4.481,
+      "text": "application in the same way as you"
+    },
+    {
+      "start": 8.96,
+      "duration": 3.759,
+      "text": "manage pods or deployments. So how it"
+    },
+    {
+      "start": 11.36,
+      "duration": 3.199,
+      "text": "actually works is you need a custom"
+    },
+    {
+      "start": 12.719,
+      "duration": 3.281,
+      "text": "resource definition in which you define"
+    },
+    {
+      "start": 14.559,
+      "duration": 3.041,
+      "text": "your new object which could be a"
+    },
+    {
+      "start": 16.0,
+      "duration": 3.359,
+      "text": "posgress cluster or a Prometheus"
+    },
+    {
+      "start": 17.6,
+      "duration": 3.12,
+      "text": "instance. Along with this you also need"
+    },
+    {
+      "start": 19.359,
+      "duration": 3.361,
+      "text": "a controller that is going to"
+    },
+    {
+      "start": 20.72,
+      "duration": 4.08,
+      "text": "continuously check this objects to make"
+    },
+    {
+      "start": 22.72,
+      "duration": 3.68,
+      "text": "sure that it matches the desired state."
+    },
+    {
+      "start": 24.8,
+      "duration": 3.36,
+      "text": "For example, you can use Postgress"
+    },
+    {
+      "start": 26.4,
+      "duration": 4.24,
+      "text": "operator to create and manage Postgress"
+    },
+    {
+      "start": 28.16,
+      "duration": 5.12,
+      "text": "SQL clusters just by defining Postgress"
+    },
+    {
+      "start": 30.64,
+      "duration": 4.64,
+      "text": "cluster resource in the CRD. Similarly,"
+    },
+    {
+      "start": 33.28,
+      "duration": 3.84,
+      "text": "you can also use Prometheus operator to"
+    },
+    {
+      "start": 35.28,
+      "duration": 4.08,
+      "text": "manage and deploy Prometheus instances"
+    },
+    {
+      "start": 37.12,
+      "duration": 3.84,
+      "text": "in the cluster and so on. So, an"
+    },
+    {
+      "start": 39.36,
+      "duration": 4.64,
+      "text": "operator is just a CRD with a"
+    },
+    {
+      "start": 40.96,
+      "duration": 3.04,
+      "text": "controller. Subscribe."
+    }
+  ]
+}

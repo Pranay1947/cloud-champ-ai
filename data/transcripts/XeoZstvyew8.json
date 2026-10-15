@@ -1,0 +1,2236 @@
+{
+  "video": {
+    "id": "XeoZstvyew8",
+    "title": "Simple DevOps Project - Create a Game using Docker and Deploy to AWS",
+    "url": "https://www.youtube.com/watch?v=XeoZstvyew8",
+    "duration": 1071,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.659,
+      "duration": 5.1,
+      "text": "hello everyone Welcome to Cloud Jam in"
+    },
+    {
+      "start": 3.72,
+      "duration": 4.56,
+      "text": "this video we are going to do a devops"
+    },
+    {
+      "start": 5.759,
+      "duration": 5.401,
+      "text": "project where we will be creating a game"
+    },
+    {
+      "start": 8.28,
+      "duration": 6.06,
+      "text": "using Docker container and then deploy"
+    },
+    {
+      "start": 11.16,
+      "duration": 5.64,
+      "text": "it on AWS in this devops project we will"
+    },
+    {
+      "start": 14.34,
+      "duration": 4.68,
+      "text": "learn how to create Docker file Docker"
+    },
+    {
+      "start": 16.8,
+      "duration": 4.68,
+      "text": "images Docker containers and then how to"
+    },
+    {
+      "start": 19.02,
+      "duration": 5.22,
+      "text": "deploy a containerized application on"
+    },
+    {
+      "start": 21.48,
+      "duration": 5.16,
+      "text": "AWS watch this video till the end"
+    },
+    {
+      "start": 24.24,
+      "duration": 4.02,
+      "text": "complete the project if you complete the"
+    },
+    {
+      "start": 26.64,
+      "duration": 3.84,
+      "text": "project and showcase this on your resume"
+    },
+    {
+      "start": 28.26,
+      "duration": 4.38,
+      "text": "or your LinkedIn there are high chances"
+    },
+    {
+      "start": 30.48,
+      "duration": 4.32,
+      "text": "that you can get your devops job faster"
+    },
+    {
+      "start": 32.64,
+      "duration": 3.599,
+      "text": "so watch this video and complete the"
+    },
+    {
+      "start": 34.8,
+      "duration": 3.48,
+      "text": "project with me"
+    },
+    {
+      "start": 36.239,
+      "duration": 3.961,
+      "text": "before we start with the video If you"
+    },
+    {
+      "start": 38.28,
+      "duration": 5.459,
+      "text": "haven't subscribed to Cloud champ Please"
+    },
+    {
+      "start": 40.2,
+      "duration": 5.76,
+      "text": "Subscribe I post videos on AWS cloud and"
+    },
+    {
+      "start": 43.739,
+      "duration": 4.681,
+      "text": "other devops tools so please subscribe"
+    },
+    {
+      "start": 45.96,
+      "duration": 4.5,
+      "text": "and let's start with the video"
+    },
+    {
+      "start": 48.42,
+      "duration": 3.78,
+      "text": "let me give you an idea of what are we"
+    },
+    {
+      "start": 50.46,
+      "duration": 4.38,
+      "text": "going to create in this devops project"
+    },
+    {
+      "start": 52.2,
+      "duration": 6.9,
+      "text": "so you might have heard about a game"
+    },
+    {
+      "start": 54.84,
+      "duration": 5.82,
+      "text": "named as 2048 so this game two zero four"
+    },
+    {
+      "start": 59.1,
+      "duration": 4.02,
+      "text": "eight you might have played we are going"
+    },
+    {
+      "start": 60.66,
+      "duration": 3.899,
+      "text": "to create this project on Docker so"
+    },
+    {
+      "start": 63.12,
+      "duration": 3.06,
+      "text": "we're going to use this GitHub"
+    },
+    {
+      "start": 64.559,
+      "duration": 3.361,
+      "text": "repository I'm going to paste the link"
+    },
+    {
+      "start": 66.18,
+      "duration": 4.08,
+      "text": "in the description so you can go check"
+    },
+    {
+      "start": 67.92,
+      "duration": 4.739,
+      "text": "it out so this is repository by Gabriel"
+    },
+    {
+      "start": 70.26,
+      "duration": 4.8,
+      "text": "we are going to use this repository to"
+    },
+    {
+      "start": 72.659,
+      "duration": 4.28,
+      "text": "create a game on Docker container and"
+    },
+    {
+      "start": 75.06,
+      "duration": 5.4,
+      "text": "then we will be using the elastic"
+    },
+    {
+      "start": 76.939,
+      "duration": 6.04,
+      "text": "Beanstalk service in AWS to deploy this"
+    },
+    {
+      "start": 80.46,
+      "duration": 4.92,
+      "text": "Docker container on AWS if you haven't"
+    },
+    {
+      "start": 82.979,
+      "duration": 4.14,
+      "text": "seen my elastic Beanstalk video go check"
+    },
+    {
+      "start": 85.38,
+      "duration": 3.66,
+      "text": "it out you can find it here in written"
+    },
+    {
+      "start": 87.119,
+      "duration": 3.721,
+      "text": "so let me show you what this game might"
+    },
+    {
+      "start": 89.04,
+      "duration": 4.619,
+      "text": "look like so that for those who don't"
+    },
+    {
+      "start": 90.84,
+      "duration": 4.739,
+      "text": "have the idea can get the understanding"
+    },
+    {
+      "start": 93.659,
+      "duration": 3.661,
+      "text": "of what are we going to create so I'm"
+    },
+    {
+      "start": 95.579,
+      "duration": 3.961,
+      "text": "going to go to this website I don't know"
+    },
+    {
+      "start": 97.32,
+      "duration": 4.7,
+      "text": "whose website this is but this is what"
+    },
+    {
+      "start": 99.54,
+      "duration": 5.52,
+      "text": "we are going to create similar to this"
+    },
+    {
+      "start": 102.02,
+      "duration": 6.34,
+      "text": "so this is a 2048 game very matchy"
+    },
+    {
+      "start": 105.06,
+      "duration": 6.419,
+      "text": "numbers so 2 plus 2 becomes 4 and 4 plus"
+    },
+    {
+      "start": 108.36,
+      "duration": 4.619,
+      "text": "4 8 till you get the number 2048"
+    },
+    {
+      "start": 111.479,
+      "duration": 4.32,
+      "text": "so this is what we are going to create"
+    },
+    {
+      "start": 112.979,
+      "duration": 4.5,
+      "text": "so let's start to get started with this"
+    },
+    {
+      "start": 115.799,
+      "duration": 3.78,
+      "text": "we are going to use the repository as"
+    },
+    {
+      "start": 117.479,
+      "duration": 4.201,
+      "text": "mentioned and they will be using this"
+    },
+    {
+      "start": 119.579,
+      "duration": 4.621,
+      "text": "repository to create our own Docker"
+    },
+    {
+      "start": 121.68,
+      "duration": 4.38,
+      "text": "image and then Docker container so"
+    },
+    {
+      "start": 124.2,
+      "duration": 4.259,
+      "text": "now that you have the understanding of"
+    },
+    {
+      "start": 126.06,
+      "duration": 4.32,
+      "text": "this project let's go and create it I'm"
+    },
+    {
+      "start": 128.459,
+      "duration": 3.981,
+      "text": "going to open my terminal and create a"
+    },
+    {
+      "start": 130.38,
+      "duration": 5.34,
+      "text": "folder so name it"
+    },
+    {
+      "start": 132.44,
+      "duration": 4.9,
+      "text": "2048 the name of the game and inside"
+    },
+    {
+      "start": 135.72,
+      "duration": 3.3,
+      "text": "this folder I'm going to create a Docker"
+    },
+    {
+      "start": 137.34,
+      "duration": 4.38,
+      "text": "file so I'm going to go in this folder"
+    },
+    {
+      "start": 139.02,
+      "duration": 3.96,
+      "text": "open my vs code if you're running if"
+    },
+    {
+      "start": 141.72,
+      "duration": 3.12,
+      "text": "you're on Windows you need to follow"
+    },
+    {
+      "start": 142.98,
+      "duration": 4.32,
+      "text": "different steps to create a folder you"
+    },
+    {
+      "start": 144.84,
+      "duration": 4.259,
+      "text": "cannot use mkdir command but that's for"
+    },
+    {
+      "start": 147.3,
+      "duration": 4.38,
+      "text": "Linux inside this I'm going to create a"
+    },
+    {
+      "start": 149.099,
+      "duration": 4.5,
+      "text": "Docker file make sure when you get the"
+    },
+    {
+      "start": 151.68,
+      "duration": 3.54,
+      "text": "name for the file D is capital and that"
+    },
+    {
+      "start": 153.599,
+      "duration": 3.241,
+      "text": "stuff all is going to be small"
+    },
+    {
+      "start": 155.22,
+      "duration": 4.5,
+      "text": "so Docker file and we are going to"
+    },
+    {
+      "start": 156.84,
+      "duration": 4.8,
+      "text": "create a Docker file for our game"
+    },
+    {
+      "start": 159.72,
+      "duration": 7.56,
+      "text": "so I'm going to use the base image as"
+    },
+    {
+      "start": 161.64,
+      "duration": 8.58,
+      "text": "Ubuntu 24 sorry 22 so Ubuntu and 20 20"
+    },
+    {
+      "start": 167.28,
+      "duration": 4.819,
+      "text": "22. so let me show you the image on"
+    },
+    {
+      "start": 170.22,
+      "duration": 6.48,
+      "text": "Docker half so this is the official"
+    },
+    {
+      "start": 172.099,
+      "duration": 6.521,
+      "text": "Docker image for Ubuntu 222 sorry this"
+    },
+    {
+      "start": 176.7,
+      "duration": 3.96,
+      "text": "is Ubuntu and we have different versions"
+    },
+    {
+      "start": 178.62,
+      "duration": 4.979,
+      "text": "so we're going to use this image which"
+    },
+    {
+      "start": 180.66,
+      "duration": 5.1,
+      "text": "is 22.04"
+    },
+    {
+      "start": 183.599,
+      "duration": 4.14,
+      "text": "so whenever you want to use an image you"
+    },
+    {
+      "start": 185.76,
+      "duration": 4.58,
+      "text": "need to type from and then the name of"
+    },
+    {
+      "start": 187.739,
+      "duration": 5.28,
+      "text": "the image so Ubuntu colon"
+    },
+    {
+      "start": 190.34,
+      "duration": 4.479,
+      "text": "22.04 if you want to know all these"
+    },
+    {
+      "start": 193.019,
+      "duration": 5.401,
+      "text": "different commands on Docker you can go"
+    },
+    {
+      "start": 194.819,
+      "duration": 5.941,
+      "text": "and check out my LinkedIn I post a"
+    },
+    {
+      "start": 198.42,
+      "duration": 4.38,
+      "text": "different post on Docker or all devops"
+    },
+    {
+      "start": 200.76,
+      "duration": 4.32,
+      "text": "tools I have a post where I Define or"
+    },
+    {
+      "start": 202.8,
+      "duration": 4.32,
+      "text": "explain all the different Docker"
+    },
+    {
+      "start": 205.08,
+      "duration": 5.04,
+      "text": "instructions so from means to specify a"
+    },
+    {
+      "start": 207.12,
+      "duration": 5.16,
+      "text": "base image run environment copy expose"
+    },
+    {
+      "start": 210.12,
+      "duration": 4.259,
+      "text": "add we are going to use some of this"
+    },
+    {
+      "start": 212.28,
+      "duration": 3.48,
+      "text": "instructions in our Docker file so you"
+    },
+    {
+      "start": 214.379,
+      "duration": 3.241,
+      "text": "need to have good understanding of what"
+    },
+    {
+      "start": 215.76,
+      "duration": 4.92,
+      "text": "this is I'm also going to post the link"
+    },
+    {
+      "start": 217.62,
+      "duration": 4.979,
+      "text": "for this post in my description so you"
+    },
+    {
+      "start": 220.68,
+      "duration": 4.32,
+      "text": "can go check it out you can follow me on"
+    },
+    {
+      "start": 222.599,
+      "duration": 3.901,
+      "text": "LinkedIn so yes"
+    },
+    {
+      "start": 225.0,
+      "duration": 5.76,
+      "text": "so now we are going to use the base"
+    },
+    {
+      "start": 226.5,
+      "duration": 7.86,
+      "text": "image as Ubuntu next we need to run a"
+    },
+    {
+      "start": 230.76,
+      "duration": 6.18,
+      "text": "command so run apt hyphen get update"
+    },
+    {
+      "start": 234.36,
+      "duration": 4.92,
+      "text": "which means update all the packages on"
+    },
+    {
+      "start": 236.94,
+      "duration": 5.519,
+      "text": "my Ubuntu machine next we again need to"
+    },
+    {
+      "start": 239.28,
+      "duration": 4.62,
+      "text": "run a command so run curl"
+    },
+    {
+      "start": 242.459,
+      "duration": 6.301,
+      "text": "sorry run"
+    },
+    {
+      "start": 243.9,
+      "duration": 8.28,
+      "text": "apt hyphen get install utility so we're"
+    },
+    {
+      "start": 248.76,
+      "duration": 5.339,
+      "text": "going to install equal zip and nginx"
+    },
+    {
+      "start": 252.18,
+      "duration": 5.88,
+      "text": "nginx is a web server which will be used"
+    },
+    {
+      "start": 254.099,
+      "duration": 6.86,
+      "text": "to host our game on the browser so"
+    },
+    {
+      "start": 258.06,
+      "duration": 7.04,
+      "text": "install hyphen y"
+    },
+    {
+      "start": 260.959,
+      "duration": 8.381,
+      "text": "nginx then we also need zip to unzip our"
+    },
+    {
+      "start": 265.1,
+      "duration": 6.46,
+      "text": "repository M curl utility"
+    },
+    {
+      "start": 269.34,
+      "duration": 5.52,
+      "text": "then once we install all this we are"
+    },
+    {
+      "start": 271.56,
+      "duration": 6.8,
+      "text": "going to Echo a message which is"
+    },
+    {
+      "start": 274.86,
+      "duration": 3.5,
+      "text": "we are going to Echo Daemon off"
+    },
+    {
+      "start": 279.54,
+      "duration": 6.18,
+      "text": "you need to do this configuration in our"
+    },
+    {
+      "start": 283.04,
+      "duration": 5.08,
+      "text": "nginx so"
+    },
+    {
+      "start": 285.72,
+      "duration": 5.6,
+      "text": "slash Etc nginx"
+    },
+    {
+      "start": 288.12,
+      "duration": 3.2,
+      "text": "slash nginx.com"
+    },
+    {
+      "start": 292.02,
+      "duration": 5.16,
+      "text": "so we are going to run this uh once we"
+    },
+    {
+      "start": 294.479,
+      "duration": 4.561,
+      "text": "install nginx our ZIP and curl we are"
+    },
+    {
+      "start": 297.18,
+      "duration": 3.959,
+      "text": "going to do this configuration which is"
+    },
+    {
+      "start": 299.04,
+      "duration": 5.7,
+      "text": "D1 of in the nginx file"
+    },
+    {
+      "start": 301.139,
+      "duration": 9.241,
+      "text": "next we need to curl"
+    },
+    {
+      "start": 304.74,
+      "duration": 9.62,
+      "text": "hypheno slash VAR slash www HTML"
+    },
+    {
+      "start": 310.38,
+      "duration": 3.98,
+      "text": "slash master dot zip"
+    },
+    {
+      "start": 314.699,
+      "duration": 4.621,
+      "text": "hyphen l"
+    },
+    {
+      "start": 317.16,
+      "duration": 4.94,
+      "text": "the repository let me give you let me"
+    },
+    {
+      "start": 319.32,
+      "duration": 2.78,
+      "text": "paste the link here"
+    },
+    {
+      "start": 322.32,
+      "duration": 5.52,
+      "text": "so here in this on line seven we are"
+    },
+    {
+      "start": 325.199,
+      "duration": 5.901,
+      "text": "trying to curl the repository on this"
+    },
+    {
+      "start": 327.84,
+      "duration": 6.12,
+      "text": "path which is master.zip inside VAR www"
+    },
+    {
+      "start": 331.1,
+      "duration": 5.56,
+      "text": "HTML folder so we are trying to install"
+    },
+    {
+      "start": 333.96,
+      "duration": 5.1,
+      "text": "all the things in this GitHub I showed"
+    },
+    {
+      "start": 336.66,
+      "duration": 4.979,
+      "text": "me earlier so this repository we are"
+    },
+    {
+      "start": 339.06,
+      "duration": 3.96,
+      "text": "trying to get the files on our this path"
+    },
+    {
+      "start": 341.639,
+      "duration": 3.301,
+      "text": "you don't need to clone it you can just"
+    },
+    {
+      "start": 343.02,
+      "duration": 4.56,
+      "text": "run this without cloning you'll find"
+    },
+    {
+      "start": 344.94,
+      "duration": 4.56,
+      "text": "you'll see all the files here so here we"
+    },
+    {
+      "start": 347.58,
+      "duration": 3.66,
+      "text": "have it in zip folder we need to unzip"
+    },
+    {
+      "start": 349.5,
+      "duration": 3.199,
+      "text": "it as well so in the next command we are"
+    },
+    {
+      "start": 351.24,
+      "duration": 6.26,
+      "text": "going to unzip this"
+    },
+    {
+      "start": 352.699,
+      "duration": 7.601,
+      "text": "master.zip so CD slash one slash www"
+    },
+    {
+      "start": 357.5,
+      "duration": 5.62,
+      "text": "HTML which means I'm going to go in this"
+    },
+    {
+      "start": 360.3,
+      "duration": 5.339,
+      "text": "directory next Once I am inside this"
+    },
+    {
+      "start": 363.12,
+      "duration": 3.859,
+      "text": "directory I need to unzip"
+    },
+    {
+      "start": 365.639,
+      "duration": 4.861,
+      "text": "master"
+    },
+    {
+      "start": 366.979,
+      "duration": 5.5,
+      "text": "dot zip folder so master.zip where we"
+    },
+    {
+      "start": 370.5,
+      "duration": 4.919,
+      "text": "have all the contents for our GitHub the"
+    },
+    {
+      "start": 372.479,
+      "duration": 5.881,
+      "text": "repository and once we unzip it then"
+    },
+    {
+      "start": 375.419,
+      "duration": 6.421,
+      "text": "move all the content so move two zero"
+    },
+    {
+      "start": 378.36,
+      "duration": 6.0,
+      "text": "four eight hyphen master"
+    },
+    {
+      "start": 381.84,
+      "duration": 6.18,
+      "text": "and and all the contents inside this"
+    },
+    {
+      "start": 384.36,
+      "duration": 6.3,
+      "text": "tour path which is current path so copy"
+    },
+    {
+      "start": 388.02,
+      "duration": 4.799,
+      "text": "all the extracted files in this path of"
+    },
+    {
+      "start": 390.66,
+      "duration": 4.68,
+      "text": "inside HTML folder"
+    },
+    {
+      "start": 392.819,
+      "duration": 7.32,
+      "text": "so once I do that I'm going to"
+    },
+    {
+      "start": 395.34,
+      "duration": 9.299,
+      "text": "uh also remove the previous master.zip"
+    },
+    {
+      "start": 400.139,
+      "duration": 4.5,
+      "text": "as folder here so RM rf2048"
+    },
+    {
+      "start": 405.479,
+      "duration": 6.981,
+      "text": "hyphen master and"
+    },
+    {
+      "start": 408.18,
+      "duration": 4.28,
+      "text": "master dot zip so master dot zip"
+    },
+    {
+      "start": 412.56,
+      "duration": 3.54,
+      "text": "once you do this we are going to now"
+    },
+    {
+      "start": 414.06,
+      "duration": 3.96,
+      "text": "expose the port 80 what do you mean by"
+    },
+    {
+      "start": 416.1,
+      "duration": 4.379,
+      "text": "Expose if you want to know you can go"
+    },
+    {
+      "start": 418.02,
+      "duration": 4.679,
+      "text": "and check my LinkedIn post which I was"
+    },
+    {
+      "start": 420.479,
+      "duration": 4.741,
+      "text": "talking about so this is so where is the"
+    },
+    {
+      "start": 422.699,
+      "duration": 4.56,
+      "text": "LinkedIn post again all right so you can"
+    },
+    {
+      "start": 425.22,
+      "duration": 3.9,
+      "text": "see here Xpose main specifies the port"
+    },
+    {
+      "start": 427.259,
+      "duration": 3.541,
+      "text": "to be exposed on Docker container so"
+    },
+    {
+      "start": 429.12,
+      "duration": 3.54,
+      "text": "this game is going to be hosted on web"
+    },
+    {
+      "start": 430.8,
+      "duration": 4.86,
+      "text": "browser so it is going to be exposed on"
+    },
+    {
+      "start": 432.66,
+      "duration": 5.58,
+      "text": "Port HTTP or HTTP which is going to be"
+    },
+    {
+      "start": 435.66,
+      "duration": 4.8,
+      "text": "Port 80. so we're going to use expose we"
+    },
+    {
+      "start": 438.24,
+      "duration": 4.2,
+      "text": "have used from to specify the base image"
+    },
+    {
+      "start": 440.46,
+      "duration": 3.959,
+      "text": "run to execute any command and now we"
+    },
+    {
+      "start": 442.44,
+      "duration": 3.18,
+      "text": "are using Xpose to specify the port on"
+    },
+    {
+      "start": 444.419,
+      "duration": 4.861,
+      "text": "which we are going to run this"
+    },
+    {
+      "start": 445.62,
+      "duration": 5.699,
+      "text": "application so I'm going to run expose"
+    },
+    {
+      "start": 449.28,
+      "duration": 4.8,
+      "text": "port 80."
+    },
+    {
+      "start": 451.319,
+      "duration": 5.461,
+      "text": "next Once I do that with my application"
+    },
+    {
+      "start": 454.08,
+      "duration": 5.7,
+      "text": "is almost ready I just need to"
+    },
+    {
+      "start": 456.78,
+      "duration": 5.52,
+      "text": "run a command to start my nginx or to do"
+    },
+    {
+      "start": 459.78,
+      "duration": 4.5,
+      "text": "a configuration so CMD and then inside"
+    },
+    {
+      "start": 462.3,
+      "duration": 5.519,
+      "text": "square bracket I'm going to"
+    },
+    {
+      "start": 464.28,
+      "duration": 8.759,
+      "text": "do slash user"
+    },
+    {
+      "start": 467.819,
+      "duration": 9.421,
+      "text": "slash S bin slash nginx"
+    },
+    {
+      "start": 473.039,
+      "duration": 5.341,
+      "text": "and I'm going to do hyphen C so you can"
+    },
+    {
+      "start": 477.24,
+      "duration": 5.16,
+      "text": "see"
+    },
+    {
+      "start": 478.38,
+      "duration": 8.039,
+      "text": "comma same thing slash so this path here"
+    },
+    {
+      "start": 482.4,
+      "duration": 5.94,
+      "text": "which is its Etc nginx conf"
+    },
+    {
+      "start": 486.419,
+      "duration": 4.921,
+      "text": "all right so I'm going to paste this"
+    },
+    {
+      "start": 488.34,
+      "duration": 5.46,
+      "text": "this is ready we have our Docker file"
+    },
+    {
+      "start": 491.34,
+      "duration": 4.079,
+      "text": "ready now let's try to create an image"
+    },
+    {
+      "start": 493.8,
+      "duration": 4.26,
+      "text": "out of this and see if we are going to"
+    },
+    {
+      "start": 495.419,
+      "duration": 4.68,
+      "text": "get the application as desired so make"
+    },
+    {
+      "start": 498.06,
+      "duration": 4.5,
+      "text": "sure you create this Docker file let me"
+    },
+    {
+      "start": 500.099,
+      "duration": 4.981,
+      "text": "explain it to you again so here we're"
+    },
+    {
+      "start": 502.56,
+      "duration": 5.039,
+      "text": "using from to get the base image so base"
+    },
+    {
+      "start": 505.08,
+      "duration": 4.26,
+      "text": "image is Ubuntu and the version is 22"
+    },
+    {
+      "start": 507.599,
+      "duration": 3.361,
+      "text": "then we are running the command to"
+    },
+    {
+      "start": 509.34,
+      "duration": 3.9,
+      "text": "update all the packages in our Ubuntu"
+    },
+    {
+      "start": 510.96,
+      "duration": 5.699,
+      "text": "machine we are running command to"
+    },
+    {
+      "start": 513.24,
+      "duration": 5.34,
+      "text": "install nginx zip and curl so this three"
+    },
+    {
+      "start": 516.659,
+      "duration": 3.421,
+      "text": "utilities are required once you install"
+    },
+    {
+      "start": 518.58,
+      "duration": 3.42,
+      "text": "this nginx you need to do this"
+    },
+    {
+      "start": 520.08,
+      "duration": 4.44,
+      "text": "configuration which is D1 off in the"
+    },
+    {
+      "start": 522.0,
+      "duration": 4.2,
+      "text": "nginx conf file after you do this"
+    },
+    {
+      "start": 524.52,
+      "duration": 4.56,
+      "text": "configuration you are going to curl to"
+    },
+    {
+      "start": 526.2,
+      "duration": 6.66,
+      "text": "get the repository content in your VAR"
+    },
+    {
+      "start": 529.08,
+      "duration": 5.819,
+      "text": "slash ww HTML folder this content is"
+    },
+    {
+      "start": 532.86,
+      "duration": 4.919,
+      "text": "going to be in master.zip or Zip Zip"
+    },
+    {
+      "start": 534.899,
+      "duration": 5.221,
+      "text": "extension so we need to use uh and we"
+    },
+    {
+      "start": 537.779,
+      "duration": 4.201,
+      "text": "need to use zip to unzip the content so"
+    },
+    {
+      "start": 540.12,
+      "duration": 5.1,
+      "text": "we are going to unzip all the content in"
+    },
+    {
+      "start": 541.98,
+      "duration": 4.68,
+      "text": "this path and then delete the folder"
+    },
+    {
+      "start": 545.22,
+      "duration": 4.26,
+      "text": "so once you delete the folder you're"
+    },
+    {
+      "start": 546.66,
+      "duration": 4.08,
+      "text": "going to expose the game on Port 80 and"
+    },
+    {
+      "start": 549.48,
+      "duration": 3.84,
+      "text": "then we are going to run this command to"
+    },
+    {
+      "start": 550.74,
+      "duration": 5.48,
+      "text": "start RK so I'm going to save this and"
+    },
+    {
+      "start": 553.32,
+      "duration": 2.9,
+      "text": "open my terminal"
+    },
+    {
+      "start": 556.74,
+      "duration": 4.26,
+      "text": "so for you to understand now we are"
+    },
+    {
+      "start": 558.959,
+      "duration": 4.56,
+      "text": "going to run some Docker commands right"
+    },
+    {
+      "start": 561.0,
+      "duration": 3.899,
+      "text": "now we have the file using this file we"
+    },
+    {
+      "start": 563.519,
+      "duration": 3.121,
+      "text": "are going to create an image and out of"
+    },
+    {
+      "start": 564.899,
+      "duration": 4.081,
+      "text": "the image we are going to create a"
+    },
+    {
+      "start": 566.64,
+      "duration": 4.139,
+      "text": "container so Docker file when you build"
+    },
+    {
+      "start": 568.98,
+      "duration": 4.14,
+      "text": "it you create an image when you run the"
+    },
+    {
+      "start": 570.779,
+      "duration": 4.981,
+      "text": "image you create a container right so"
+    },
+    {
+      "start": 573.12,
+      "duration": 5.3,
+      "text": "let's go and build an image out of this"
+    },
+    {
+      "start": 575.76,
+      "duration": 2.66,
+      "text": "Docker file"
+    },
+    {
+      "start": 578.76,
+      "duration": 4.259,
+      "text": "we have a Docker file created we are"
+    },
+    {
+      "start": 580.92,
+      "duration": 3.72,
+      "text": "going to create an image out of this so"
+    },
+    {
+      "start": 583.019,
+      "duration": 3.901,
+      "text": "when you have a Docker file you can"
+    },
+    {
+      "start": 584.64,
+      "duration": 5.16,
+      "text": "build an image out of this and with the"
+    },
+    {
+      "start": 586.92,
+      "duration": 4.979,
+      "text": "image you can run a container so Docker"
+    },
+    {
+      "start": 589.8,
+      "duration": 4.44,
+      "text": "file Docker image Docker container so"
+    },
+    {
+      "start": 591.899,
+      "duration": 4.38,
+      "text": "let's go and create a image for the"
+    },
+    {
+      "start": 594.24,
+      "duration": 3.779,
+      "text": "docker file we have created so I'm going"
+    },
+    {
+      "start": 596.279,
+      "duration": 4.921,
+      "text": "to run the dot command to create an"
+    },
+    {
+      "start": 598.019,
+      "duration": 4.621,
+      "text": "image so it is docker"
+    },
+    {
+      "start": 601.2,
+      "duration": 3.24,
+      "text": "build"
+    },
+    {
+      "start": 602.64,
+      "duration": 3.6,
+      "text": "and I'm going to add a parameter which"
+    },
+    {
+      "start": 604.44,
+      "duration": 5.24,
+      "text": "is hyphen T to give a name for this"
+    },
+    {
+      "start": 606.24,
+      "duration": 7.74,
+      "text": "image so I'm going to name this as 2048"
+    },
+    {
+      "start": 609.68,
+      "duration": 6.279,
+      "text": "iPhone game and then dot this dot means"
+    },
+    {
+      "start": 613.98,
+      "duration": 3.66,
+      "text": "create an image out of the docker file"
+    },
+    {
+      "start": 615.959,
+      "duration": 3.481,
+      "text": "which is in the current directory if you"
+    },
+    {
+      "start": 617.64,
+      "duration": 3.3,
+      "text": "are not in the directory which has a"
+    },
+    {
+      "start": 619.44,
+      "duration": 3.42,
+      "text": "Docker file you need to get the exact"
+    },
+    {
+      "start": 620.94,
+      "duration": 2.94,
+      "text": "path but I am right now I am in the"
+    },
+    {
+      "start": 622.86,
+      "duration": 3.479,
+      "text": "current directory so I'm going to run"
+    },
+    {
+      "start": 623.88,
+      "duration": 5.399,
+      "text": "Docker build hyphen T name of the file"
+    },
+    {
+      "start": 626.339,
+      "duration": 4.921,
+      "text": "image and Dot so this command is going"
+    },
+    {
+      "start": 629.279,
+      "duration": 4.141,
+      "text": "to create an image for this Docker file"
+    },
+    {
+      "start": 631.26,
+      "duration": 3.84,
+      "text": "and name it as 2048 so I'm going to"
+    },
+    {
+      "start": 633.42,
+      "duration": 4.02,
+      "text": "press enter and it will execute all"
+    },
+    {
+      "start": 635.1,
+      "duration": 5.28,
+      "text": "these commands one by one so press enter"
+    },
+    {
+      "start": 637.44,
+      "duration": 5.28,
+      "text": "and it has used the first image as"
+    },
+    {
+      "start": 640.38,
+      "duration": 5.22,
+      "text": "Ubuntu 22 then it's going to update all"
+    },
+    {
+      "start": 642.72,
+      "duration": 4.559,
+      "text": "the packages in my Ubuntu image so it's"
+    },
+    {
+      "start": 645.6,
+      "duration": 3.9,
+      "text": "updating all the packages and next it"
+    },
+    {
+      "start": 647.279,
+      "duration": 4.021,
+      "text": "will install the utilities and following"
+    },
+    {
+      "start": 649.5,
+      "duration": 4.62,
+      "text": "it will execute all the commands one by"
+    },
+    {
+      "start": 651.3,
+      "duration": 5.34,
+      "text": "one so you can see it has updated all"
+    },
+    {
+      "start": 654.12,
+      "duration": 5.88,
+      "text": "the packages now it has installed"
+    },
+    {
+      "start": 656.64,
+      "duration": 4.86,
+      "text": "nginx curl and zip once it has installed"
+    },
+    {
+      "start": 660.0,
+      "duration": 3.92,
+      "text": "that it's going to"
+    },
+    {
+      "start": 661.5,
+      "duration": 5.7,
+      "text": "do this configuration in the nginx cons"
+    },
+    {
+      "start": 663.92,
+      "duration": 6.22,
+      "text": "folder and then it will download the"
+    },
+    {
+      "start": 667.2,
+      "duration": 4.86,
+      "text": "GitHub repository content unzip it"
+    },
+    {
+      "start": 670.14,
+      "duration": 3.78,
+      "text": "expose it and then do this configuration"
+    },
+    {
+      "start": 672.06,
+      "duration": 3.719,
+      "text": "so let's wait for this image to be"
+    },
+    {
+      "start": 673.92,
+      "duration": 4.14,
+      "text": "created and then we are going to run a"
+    },
+    {
+      "start": 675.779,
+      "duration": 5.281,
+      "text": "container out of this image"
+    },
+    {
+      "start": 678.06,
+      "duration": 5.459,
+      "text": "so you can see it has also installed all"
+    },
+    {
+      "start": 681.06,
+      "duration": 4.56,
+      "text": "the GitHub content from this repository"
+    },
+    {
+      "start": 683.519,
+      "duration": 4.56,
+      "text": "which is the game actually"
+    },
+    {
+      "start": 685.62,
+      "duration": 4.56,
+      "text": "next it's going to expose Pro DT and"
+    },
+    {
+      "start": 688.079,
+      "duration": 4.561,
+      "text": "then run the last command so it says"
+    },
+    {
+      "start": 690.18,
+      "duration": 4.68,
+      "text": "successfully built image and it also"
+    },
+    {
+      "start": 692.64,
+      "duration": 4.86,
+      "text": "gave it a name as 2048 so I'm going to"
+    },
+    {
+      "start": 694.86,
+      "duration": 4.979,
+      "text": "run Docker images command to see if my"
+    },
+    {
+      "start": 697.5,
+      "duration": 5.459,
+      "text": "image is actually there or not so Docker"
+    },
+    {
+      "start": 699.839,
+      "duration": 4.94,
+      "text": "images and you should see an image so"
+    },
+    {
+      "start": 702.959,
+      "duration": 5.221,
+      "text": "you can see an image is here which is"
+    },
+    {
+      "start": 704.779,
+      "duration": 4.901,
+      "text": "2048k and it's created 21 seconds ago"
+    },
+    {
+      "start": 708.18,
+      "duration": 4.38,
+      "text": "all of these are different images that"
+    },
+    {
+      "start": 709.68,
+      "duration": 5.46,
+      "text": "I've used but you don't need to you just"
+    },
+    {
+      "start": 712.56,
+      "duration": 4.62,
+      "text": "need to focus on this if you follow the"
+    },
+    {
+      "start": 715.14,
+      "duration": 4.319,
+      "text": "video you should have a Docker image"
+    },
+    {
+      "start": 717.18,
+      "duration": 4.62,
+      "text": "created like this so now that we have"
+    },
+    {
+      "start": 719.459,
+      "duration": 4.38,
+      "text": "the image let's go and run a container"
+    },
+    {
+      "start": 721.8,
+      "duration": 4.14,
+      "text": "to test out that we have what we"
+    },
+    {
+      "start": 723.839,
+      "duration": 4.62,
+      "text": "actually wanted so I'm going to do"
+    },
+    {
+      "start": 725.94,
+      "duration": 4.44,
+      "text": "I'm going to clear this out first now"
+    },
+    {
+      "start": 728.459,
+      "duration": 4.141,
+      "text": "that we have our Docker image created"
+    },
+    {
+      "start": 730.38,
+      "duration": 3.84,
+      "text": "from our Docker file let's go run a"
+    },
+    {
+      "start": 732.6,
+      "duration": 3.9,
+      "text": "command to create a container out of"
+    },
+    {
+      "start": 734.22,
+      "duration": 6.359,
+      "text": "this so I'm going to run Docker run"
+    },
+    {
+      "start": 736.5,
+      "duration": 7.32,
+      "text": "hyphen D hyphen P Port 80 colon Port 80"
+    },
+    {
+      "start": 740.579,
+      "duration": 4.621,
+      "text": "and then either the name or the ID of my"
+    },
+    {
+      "start": 743.82,
+      "duration": 3.3,
+      "text": "image so I'm going to copy the ID and"
+    },
+    {
+      "start": 745.2,
+      "duration": 4.8,
+      "text": "paste it here so I'm we are telling"
+    },
+    {
+      "start": 747.12,
+      "duration": 4.98,
+      "text": "Docker to run a container on Port 80 and"
+    },
+    {
+      "start": 750.0,
+      "duration": 4.8,
+      "text": "this container is Created from this"
+    },
+    {
+      "start": 752.1,
+      "duration": 5.46,
+      "text": "Docker file so we should have our game"
+    },
+    {
+      "start": 754.8,
+      "duration": 6.24,
+      "text": "created so I'm going to press enter and"
+    },
+    {
+      "start": 757.56,
+      "duration": 4.92,
+      "text": "we should get some ID like this once"
+    },
+    {
+      "start": 761.04,
+      "duration": 3.78,
+      "text": "this you get this which means your"
+    },
+    {
+      "start": 762.48,
+      "duration": 4.62,
+      "text": "container is running to test it out I am"
+    },
+    {
+      "start": 764.82,
+      "duration": 4.38,
+      "text": "going to go to my localhost so I am"
+    },
+    {
+      "start": 767.1,
+      "duration": 4.26,
+      "text": "going to open my browser here and I'll"
+    },
+    {
+      "start": 769.2,
+      "duration": 5.639,
+      "text": "type load kill host"
+    },
+    {
+      "start": 771.36,
+      "duration": 6.36,
+      "text": "Port 80 which is actually uh without Pro"
+    },
+    {
+      "start": 774.839,
+      "duration": 4.68,
+      "text": "TT but you can see a game is created on"
+    },
+    {
+      "start": 777.72,
+      "duration": 4.559,
+      "text": "here which means our Docker container is"
+    },
+    {
+      "start": 779.519,
+      "duration": 5.581,
+      "text": "running you can play this game but"
+    },
+    {
+      "start": 782.279,
+      "duration": 4.921,
+      "text": "right now this Docker container is in"
+    },
+    {
+      "start": 785.1,
+      "duration": 4.859,
+      "text": "your Local Host so no one else is going"
+    },
+    {
+      "start": 787.2,
+      "duration": 4.74,
+      "text": "to access it apart from you so this is"
+    },
+    {
+      "start": 789.959,
+      "duration": 4.56,
+      "text": "why we are going to host this on AWS"
+    },
+    {
+      "start": 791.94,
+      "duration": 4.38,
+      "text": "Cloud but I hope if you're following"
+    },
+    {
+      "start": 794.519,
+      "duration": 3.961,
+      "text": "this video and you are here which means"
+    },
+    {
+      "start": 796.32,
+      "duration": 4.62,
+      "text": "you have a container running which is"
+    },
+    {
+      "start": 798.48,
+      "duration": 5.58,
+      "text": "hosting your app or your game so let's"
+    },
+    {
+      "start": 800.94,
+      "duration": 5.699,
+      "text": "go and create or host this on the cloud"
+    },
+    {
+      "start": 804.06,
+      "duration": 4.56,
+      "text": "using elastic Beanstalk so to do that I"
+    },
+    {
+      "start": 806.639,
+      "duration": 4.621,
+      "text": "am going to open my console so I'm going"
+    },
+    {
+      "start": 808.62,
+      "duration": 4.44,
+      "text": "to run AWS command console open your AWS"
+    },
+    {
+      "start": 811.26,
+      "duration": 4.98,
+      "text": "console you should have"
+    },
+    {
+      "start": 813.06,
+      "duration": 5.88,
+      "text": "an AWS account for this and you can use"
+    },
+    {
+      "start": 816.24,
+      "duration": 5.219,
+      "text": "my you can watch the elastic Beanstalk"
+    },
+    {
+      "start": 818.94,
+      "duration": 4.38,
+      "text": "video which I posted some time some days"
+    },
+    {
+      "start": 821.459,
+      "duration": 4.021,
+      "text": "ago to understand what we are going to"
+    },
+    {
+      "start": 823.32,
+      "duration": 4.199,
+      "text": "do here so elastic bean stock is a"
+    },
+    {
+      "start": 825.48,
+      "duration": 4.859,
+      "text": "service in AWS that lets you create"
+    },
+    {
+      "start": 827.519,
+      "duration": 6.181,
+      "text": "applications on different platforms like"
+    },
+    {
+      "start": 830.339,
+      "duration": 6.24,
+      "text": "python node gojs Docker everything so"
+    },
+    {
+      "start": 833.7,
+      "duration": 4.02,
+      "text": "we're going to use this service to"
+    },
+    {
+      "start": 836.579,
+      "duration": 3.601,
+      "text": "create"
+    },
+    {
+      "start": 837.72,
+      "duration": 4.14,
+      "text": "our game so I'm going to name this as"
+    },
+    {
+      "start": 840.18,
+      "duration": 3.48,
+      "text": "2048"
+    },
+    {
+      "start": 841.86,
+      "duration": 4.68,
+      "text": "and then I'm going to get this"
+    },
+    {
+      "start": 843.66,
+      "duration": 6.239,
+      "text": "environment as demo"
+    },
+    {
+      "start": 846.54,
+      "duration": 5.4,
+      "text": "game or demo project"
+    },
+    {
+      "start": 849.899,
+      "duration": 4.021,
+      "text": "all right I'm going to choose the"
+    },
+    {
+      "start": 851.94,
+      "duration": 3.3,
+      "text": "platform as Docker as this is a Docker"
+    },
+    {
+      "start": 853.92,
+      "duration": 3.96,
+      "text": "container so I'm going to choose this"
+    },
+    {
+      "start": 855.24,
+      "duration": 5.399,
+      "text": "Docker and we are going to leave the"
+    },
+    {
+      "start": 857.88,
+      "duration": 5.04,
+      "text": "settings as as it is so recent recent"
+    },
+    {
+      "start": 860.639,
+      "duration": 4.2,
+      "text": "version and in the application code I am"
+    },
+    {
+      "start": 862.92,
+      "duration": 4.08,
+      "text": "going to choose upload your code option"
+    },
+    {
+      "start": 864.839,
+      "duration": 4.44,
+      "text": "so upload your code and then I'm going"
+    },
+    {
+      "start": 867.0,
+      "duration": 4.8,
+      "text": "to push my Docker file here so I'm going"
+    },
+    {
+      "start": 869.279,
+      "duration": 5.281,
+      "text": "to choose file go to my repository which"
+    },
+    {
+      "start": 871.8,
+      "duration": 4.38,
+      "text": "is this 2048 and this is the docker file"
+    },
+    {
+      "start": 874.56,
+      "duration": 3.48,
+      "text": "which we used to create our application"
+    },
+    {
+      "start": 876.18,
+      "duration": 4.26,
+      "text": "or to create the game so I'm going to"
+    },
+    {
+      "start": 878.04,
+      "duration": 4.56,
+      "text": "push this Docker image here"
+    },
+    {
+      "start": 880.44,
+      "duration": 4.139,
+      "text": "and it says file successfully uploaded"
+    },
+    {
+      "start": 882.6,
+      "duration": 3.62,
+      "text": "once it is done you can choose to"
+    },
+    {
+      "start": 884.579,
+      "duration": 4.56,
+      "text": "configure more options if you want to"
+    },
+    {
+      "start": 886.22,
+      "duration": 4.72,
+      "text": "configure some details accordingly if"
+    },
+    {
+      "start": 889.139,
+      "duration": 3.541,
+      "text": "you want to add like high availability"
+    },
+    {
+      "start": 890.94,
+      "duration": 3.42,
+      "text": "if you want to have load balances but"
+    },
+    {
+      "start": 892.68,
+      "duration": 3.06,
+      "text": "for the sake of this project I'm going"
+    },
+    {
+      "start": 894.36,
+      "duration": 3.479,
+      "text": "to go with the free tier option because"
+    },
+    {
+      "start": 895.74,
+      "duration": 4.02,
+      "text": "we don't want the bill to be increased"
+    },
+    {
+      "start": 897.839,
+      "duration": 4.381,
+      "text": "so I'm going to go with a free tier"
+    },
+    {
+      "start": 899.76,
+      "duration": 4.8,
+      "text": "option and then click on create app"
+    },
+    {
+      "start": 902.22,
+      "duration": 3.9,
+      "text": "option here once you click on create app"
+    },
+    {
+      "start": 904.56,
+      "duration": 3.3,
+      "text": "elastic Beanstalk is going to"
+    },
+    {
+      "start": 906.12,
+      "duration": 4.14,
+      "text": "automatically provision all the"
+    },
+    {
+      "start": 907.86,
+      "duration": 4.38,
+      "text": "infrastructure you don't have to manage"
+    },
+    {
+      "start": 910.26,
+      "duration": 4.62,
+      "text": "anything you just need to push your code"
+    },
+    {
+      "start": 912.24,
+      "duration": 4.14,
+      "text": "and elastic beam stock will create your"
+    },
+    {
+      "start": 914.88,
+      "duration": 4.74,
+      "text": "infrastructure like it will create your"
+    },
+    {
+      "start": 916.38,
+      "duration": 4.74,
+      "text": "instances your containers images load"
+    },
+    {
+      "start": 919.62,
+      "duration": 3.48,
+      "text": "balances Auto scaling group everything"
+    },
+    {
+      "start": 921.12,
+      "duration": 4.92,
+      "text": "that is necessary for this application"
+    },
+    {
+      "start": 923.1,
+      "duration": 5.22,
+      "text": "to run will be created by elastic bean"
+    },
+    {
+      "start": 926.04,
+      "duration": 5.099,
+      "text": "stock so we will wait for some time to"
+    },
+    {
+      "start": 928.32,
+      "duration": 4.5,
+      "text": "this to bring all the infrastructure up"
+    },
+    {
+      "start": 931.139,
+      "duration": 4.26,
+      "text": "once the infrastructure is up we should"
+    },
+    {
+      "start": 932.82,
+      "duration": 4.379,
+      "text": "see our application running on the cloud"
+    },
+    {
+      "start": 935.399,
+      "duration": 4.44,
+      "text": "so"
+    },
+    {
+      "start": 937.199,
+      "duration": 4.621,
+      "text": "if you see here this is what we got and"
+    },
+    {
+      "start": 939.839,
+      "duration": 4.201,
+      "text": "right now it is in localhost but we will"
+    },
+    {
+      "start": 941.82,
+      "duration": 4.8,
+      "text": "get we will get a"
+    },
+    {
+      "start": 944.04,
+      "duration": 5.039,
+      "text": "C name created by elastic Beanstalk"
+    },
+    {
+      "start": 946.62,
+      "duration": 4.38,
+      "text": "which we can map to a to a domain and"
+    },
+    {
+      "start": 949.079,
+      "duration": 3.361,
+      "text": "then we can have our own website hosting"
+    },
+    {
+      "start": 951.0,
+      "duration": 3.18,
+      "text": "this game you can also create your own"
+    },
+    {
+      "start": 952.44,
+      "duration": 3.839,
+      "text": "application so this is an excellent"
+    },
+    {
+      "start": 954.18,
+      "duration": 4.68,
+      "text": "project to do let's wait for some time"
+    },
+    {
+      "start": 956.279,
+      "duration": 5.041,
+      "text": "because right now it says environment is"
+    },
+    {
+      "start": 958.86,
+      "duration": 4.56,
+      "text": "starting it has created elastic IP it"
+    },
+    {
+      "start": 961.32,
+      "duration": 4.44,
+      "text": "creates a security group for us as well"
+    },
+    {
+      "start": 963.42,
+      "duration": 3.779,
+      "text": "so let's wait for some time and it says"
+    },
+    {
+      "start": 965.76,
+      "duration": 3.96,
+      "text": "instance deployment completed"
+    },
+    {
+      "start": 967.199,
+      "duration": 5.221,
+      "text": "successfully so elastic bean stock is an"
+    },
+    {
+      "start": 969.72,
+      "duration": 5.76,
+      "text": "amazing service to use if you just want"
+    },
+    {
+      "start": 972.42,
+      "duration": 5.64,
+      "text": "to have your application hosted without"
+    },
+    {
+      "start": 975.48,
+      "duration": 4.5,
+      "text": "managing any infrastructure AWS is going"
+    },
+    {
+      "start": 978.06,
+      "duration": 4.92,
+      "text": "to do that for you so right now it says"
+    },
+    {
+      "start": 979.98,
+      "duration": 5.159,
+      "text": "application available on this path and"
+    },
+    {
+      "start": 982.98,
+      "duration": 4.5,
+      "text": "it says successfully launched so let's"
+    },
+    {
+      "start": 985.139,
+      "duration": 5.581,
+      "text": "wait and here it says okay so you can"
+    },
+    {
+      "start": 987.48,
+      "duration": 5.159,
+      "text": "click on this C name to get the"
+    },
+    {
+      "start": 990.72,
+      "duration": 4.38,
+      "text": "application so right now we have a"
+    },
+    {
+      "start": 992.639,
+      "duration": 4.861,
+      "text": "application running on Docker on Amazon"
+    },
+    {
+      "start": 995.1,
+      "duration": 3.599,
+      "text": "Linux Ami so I'm going to click on this"
+    },
+    {
+      "start": 997.5,
+      "duration": 4.079,
+      "text": "and we should have our application"
+    },
+    {
+      "start": 998.699,
+      "duration": 4.56,
+      "text": "running if you have a screen like this"
+    },
+    {
+      "start": 1001.579,
+      "duration": 3.781,
+      "text": "which means you have successfully"
+    },
+    {
+      "start": 1003.259,
+      "duration": 4.981,
+      "text": "deployed your application on Docker"
+    },
+    {
+      "start": 1005.36,
+      "duration": 5.219,
+      "text": "using elastic bean stock service so I'm"
+    },
+    {
+      "start": 1008.24,
+      "duration": 4.38,
+      "text": "going to play this game now and I hope"
+    },
+    {
+      "start": 1010.579,
+      "duration": 3.961,
+      "text": "if you follow the video you have the"
+    },
+    {
+      "start": 1012.62,
+      "duration": 4.2,
+      "text": "same output as me if you have any"
+    },
+    {
+      "start": 1014.54,
+      "duration": 4.14,
+      "text": "questions any doubt you can let me know"
+    },
+    {
+      "start": 1016.82,
+      "duration": 4.62,
+      "text": "in the comment section and if you got"
+    },
+    {
+      "start": 1018.68,
+      "duration": 5.7,
+      "text": "the output or the project created you"
+    },
+    {
+      "start": 1021.44,
+      "duration": 5.04,
+      "text": "can showcase this on your LinkedIn you"
+    },
+    {
+      "start": 1024.38,
+      "duration": 3.78,
+      "text": "take a screenshot or a video and then"
+    },
+    {
+      "start": 1026.48,
+      "duration": 3.54,
+      "text": "post it on LinkedIn because when you"
+    },
+    {
+      "start": 1028.16,
+      "duration": 3.299,
+      "text": "post it on LinkedIn be visible to all"
+    },
+    {
+      "start": 1030.02,
+      "duration": 3.659,
+      "text": "the recruiters and they will get to know"
+    },
+    {
+      "start": 1031.459,
+      "duration": 4.681,
+      "text": "that you have knowledge of Docker and"
+    },
+    {
+      "start": 1033.679,
+      "duration": 4.38,
+      "text": "AWS so you can showcase this on your"
+    },
+    {
+      "start": 1036.14,
+      "duration": 4.74,
+      "text": "LinkedIn on your resume but make sure to"
+    },
+    {
+      "start": 1038.059,
+      "duration": 4.981,
+      "text": "tag me or on your LinkedIn and also make"
+    },
+    {
+      "start": 1040.88,
+      "duration": 4.38,
+      "text": "sure to follow me on LinkedIn I hope"
+    },
+    {
+      "start": 1043.04,
+      "duration": 3.48,
+      "text": "this was informative if you have if you"
+    },
+    {
+      "start": 1045.26,
+      "duration": 3.659,
+      "text": "understood the video"
+    },
+    {
+      "start": 1046.52,
+      "duration": 4.26,
+      "text": "please subscribe to my channel and once"
+    },
+    {
+      "start": 1048.919,
+      "duration": 4.14,
+      "text": "you are done make sure you delete this"
+    },
+    {
+      "start": 1050.78,
+      "duration": 4.08,
+      "text": "you need to delete the application and"
+    },
+    {
+      "start": 1053.059,
+      "duration": 4.021,
+      "text": "the environment in the elasticbin start"
+    },
+    {
+      "start": 1054.86,
+      "duration": 4.26,
+      "text": "or is you might get charged so once you"
+    },
+    {
+      "start": 1057.08,
+      "duration": 3.719,
+      "text": "are done and you have showcased it on"
+    },
+    {
+      "start": 1059.12,
+      "duration": 2.939,
+      "text": "the LinkedIn on your resume make sure"
+    },
+    {
+      "start": 1060.799,
+      "duration": 2.821,
+      "text": "you delete the infrastructure if you"
+    },
+    {
+      "start": 1062.059,
+      "duration": 4.381,
+      "text": "don't want to get charged for more"
+    },
+    {
+      "start": 1063.62,
+      "duration": 5.46,
+      "text": "videos like this please subscribe to"
+    },
+    {
+      "start": 1066.44,
+      "duration": 5.359,
+      "text": "Cloud Channel and thank you have a good"
+    },
+    {
+      "start": 1069.08,
+      "duration": 2.719,
+      "text": "day bye"
+    }
+  ]
+}

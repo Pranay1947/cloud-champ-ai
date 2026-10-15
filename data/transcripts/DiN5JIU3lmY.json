@@ -1,0 +1,166 @@
+{
+  "video": {
+    "id": "DiN5JIU3lmY",
+    "title": "What is OpenTelemetry & How Otel works? #otel",
+    "url": "https://www.youtube.com/watch?v=DiN5JIU3lmY",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 4.56,
+      "text": "What is open telemetry? Open telemetry"
+    },
+    {
+      "start": 3.16,
+      "duration": 3.88,
+      "text": "is an open source standard for"
+    },
+    {
+      "start": 4.56,
+      "duration": 4.24,
+      "text": "collecting logs, metrics, and traces"
+    },
+    {
+      "start": 7.04,
+      "duration": 3.72,
+      "text": "from your application. So, instead of"
+    },
+    {
+      "start": 8.8,
+      "duration": 3.4,
+      "text": "using different libraries or tools for"
+    },
+    {
+      "start": 10.76,
+      "duration": 2.84,
+      "text": "each type of telemetry data,"
+    },
+    {
+      "start": 12.2,
+      "duration": 3.64,
+      "text": "OpenTelemetry provides you with a"
+    },
+    {
+      "start": 13.6,
+      "duration": 4.24,
+      "text": "unified way to generate and send all"
+    },
+    {
+      "start": 15.84,
+      "duration": 3.76,
+      "text": "observability data. And here's how it"
+    },
+    {
+      "start": 17.84,
+      "duration": 3.4,
+      "text": "works. OpenTelemetry provides with"
+    },
+    {
+      "start": 19.6,
+      "duration": 4.52,
+      "text": "instrumentation libraries for languages"
+    },
+    {
+      "start": 21.24,
+      "duration": 4.64,
+      "text": "like Golang, Java, Python, and Node.js"
+    },
+    {
+      "start": 24.12,
+      "duration": 3.92,
+      "text": "that automatically captures key events"
+    },
+    {
+      "start": 25.88,
+      "duration": 3.48,
+      "text": "like HTTP calls, database queries, or"
+    },
+    {
+      "start": 28.04,
+      "duration": 2.84,
+      "text": "service-to-service communication."
+    },
+    {
+      "start": 29.36,
+      "duration": 3.399,
+      "text": ">> The most important component is the"
+    },
+    {
+      "start": 30.88,
+      "duration": 4.24,
+      "text": "OpenTelemetry Collector, which receives"
+    },
+    {
+      "start": 32.759,
+      "duration": 3.881,
+      "text": "telemetry data from your applications"
+    },
+    {
+      "start": 35.12,
+      "duration": 3.76,
+      "text": "and forwards it to any back end you"
+    },
+    {
+      "start": 36.64,
+      "duration": 4.56,
+      "text": "choose. Could be Honeycomb, Datadog, New"
+    },
+    {
+      "start": 38.88,
+      "duration": 4.28,
+      "text": "Relic, Jaeger, Grafana, anything. And"
+    },
+    {
+      "start": 41.2,
+      "duration": 4.6,
+      "text": "because OpenTelemetry uses a common"
+    },
+    {
+      "start": 43.16,
+      "duration": 5.4,
+      "text": "protocol, OLTP, all the telemetry data"
+    },
+    {
+      "start": 45.8,
+      "duration": 4.68,
+      "text": "is consistent and vendor neutral. So, in"
+    },
+    {
+      "start": 48.56,
+      "duration": 3.76,
+      "text": "short, OpenTelemetry is an open source"
+    },
+    {
+      "start": 50.48,
+      "duration": 3.6,
+      "text": "tool that helps you understand what your"
+    },
+    {
+      "start": 52.32,
+      "duration": 3.68,
+      "text": "app is doing by collecting logs,"
+    },
+    {
+      "start": 54.08,
+      "duration": 3.92,
+      "text": "metrics, and traces, and sending this"
+    },
+    {
+      "start": 56.0,
+      "duration": 3.76,
+      "text": "data to any observability tool, so you"
+    },
+    {
+      "start": 58.0,
+      "duration": 4.88,
+      "text": "can understand what's the issue and fix"
+    },
+    {
+      "start": 59.76,
+      "duration": 3.12,
+      "text": "it. Subscribe."
+    }
+  ]
+}

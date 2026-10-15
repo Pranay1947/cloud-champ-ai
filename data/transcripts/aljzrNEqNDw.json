@@ -1,0 +1,1556 @@
+{
+  "video": {
+    "id": "aljzrNEqNDw",
+    "title": "Popular DevOps Monitoring Tools in 2024",
+    "url": "https://www.youtube.com/watch?v=aljzrNEqNDw",
+    "duration": 655,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.06,
+      "duration": 4.68,
+      "text": "monitoring and devops is important"
+    },
+    {
+      "start": 2.52,
+      "duration": 4.08,
+      "text": "because it makes sure your software"
+    },
+    {
+      "start": 4.74,
+      "duration": 3.779,
+      "text": "applications are running properly your"
+    },
+    {
+      "start": 6.6,
+      "duration": 4.86,
+      "text": "infrastructure is up and you don't face"
+    },
+    {
+      "start": 8.519,
+      "duration": 4.981,
+      "text": "any business loss so in this video we"
+    },
+    {
+      "start": 11.46,
+      "duration": 4.02,
+      "text": "will look at eight popular monitoring"
+    },
+    {
+      "start": 13.5,
+      "duration": 3.779,
+      "text": "tools that every devops engineer should"
+    },
+    {
+      "start": 15.48,
+      "duration": 4.379,
+      "text": "know along with different monitoring"
+    },
+    {
+      "start": 17.279,
+      "duration": 4.26,
+      "text": "types in devops and an amazing resource"
+    },
+    {
+      "start": 19.859,
+      "duration": 5.0,
+      "text": "to learn all this monitoring tools at"
+    },
+    {
+      "start": 21.539,
+      "duration": 3.32,
+      "text": "one place let's start"
+    },
+    {
+      "start": 32.16,
+      "duration": 3.48,
+      "text": "before we start with learning about the"
+    },
+    {
+      "start": 34.14,
+      "duration": 2.939,
+      "text": "popular monitoring tools we need to"
+    },
+    {
+      "start": 35.64,
+      "duration": 4.079,
+      "text": "understand what are different types of"
+    },
+    {
+      "start": 37.079,
+      "duration": 3.901,
+      "text": "monitors that we do in devops so there"
+    },
+    {
+      "start": 39.719,
+      "duration": 3.061,
+      "text": "can be different types of model things"
+    },
+    {
+      "start": 40.98,
+      "duration": 3.419,
+      "text": "like server monitoring or cost"
+    },
+    {
+      "start": 42.78,
+      "duration": 3.36,
+      "text": "monitoring network monitoring"
+    },
+    {
+      "start": 44.399,
+      "duration": 3.84,
+      "text": "application monitoring infrastructure"
+    },
+    {
+      "start": 46.14,
+      "duration": 4.14,
+      "text": "monitoring you can pretty much monitor"
+    },
+    {
+      "start": 48.239,
+      "duration": 3.84,
+      "text": "anything that is important for you or"
+    },
+    {
+      "start": 50.28,
+      "duration": 3.42,
+      "text": "for your business so before we start"
+    },
+    {
+      "start": 52.079,
+      "duration": 2.82,
+      "text": "with different tools let me help you"
+    },
+    {
+      "start": 53.7,
+      "duration": 3.539,
+      "text": "understand these different types of"
+    },
+    {
+      "start": 54.899,
+      "duration": 4.021,
+      "text": "monetaries starting with what is server"
+    },
+    {
+      "start": 57.239,
+      "duration": 3.601,
+      "text": "monitoring server monitoring is"
+    },
+    {
+      "start": 58.92,
+      "duration": 4.319,
+      "text": "important to keep an eye on your servers"
+    },
+    {
+      "start": 60.84,
+      "duration": 4.139,
+      "text": "or computers to make sure they are"
+    },
+    {
+      "start": 63.239,
+      "duration": 4.2,
+      "text": "running smoothly they are not overeating"
+    },
+    {
+      "start": 64.979,
+      "duration": 4.861,
+      "text": "and have enough resources like CPU and"
+    },
+    {
+      "start": 67.439,
+      "duration": 4.261,
+      "text": "memory to run the application server"
+    },
+    {
+      "start": 69.84,
+      "duration": 3.779,
+      "text": "marketing is important because there can"
+    },
+    {
+      "start": 71.7,
+      "duration": 3.959,
+      "text": "be issues like downtime which brings"
+    },
+    {
+      "start": 73.619,
+      "duration": 4.081,
+      "text": "your application down your website is"
+    },
+    {
+      "start": 75.659,
+      "duration": 4.621,
+      "text": "down and your customers cannot access it"
+    },
+    {
+      "start": 77.7,
+      "duration": 4.5,
+      "text": "which cause loss in the business server"
+    },
+    {
+      "start": 80.28,
+      "duration": 4.379,
+      "text": "monitoring can help us catch problems"
+    },
+    {
+      "start": 82.2,
+      "duration": 4.62,
+      "text": "resolve issues early before it actually"
+    },
+    {
+      "start": 84.659,
+      "duration": 4.021,
+      "text": "happened and this is the first type of"
+    },
+    {
+      "start": 86.82,
+      "duration": 4.2,
+      "text": "monitoring let's look at what is network"
+    },
+    {
+      "start": 88.68,
+      "duration": 3.84,
+      "text": "monitoring imagine you are talking to"
+    },
+    {
+      "start": 91.02,
+      "duration": 2.88,
+      "text": "your girlfriend or the video call or"
+    },
+    {
+      "start": 92.52,
+      "duration": 3.059,
+      "text": "you're playing game of fortnite with"
+    },
+    {
+      "start": 93.9,
+      "duration": 3.6,
+      "text": "your friends and suddenly the game"
+    },
+    {
+      "start": 95.579,
+      "duration": 3.841,
+      "text": "started laggy or there's a high ping"
+    },
+    {
+      "start": 97.5,
+      "duration": 3.9,
+      "text": "then there is always a network problem"
+    },
+    {
+      "start": 99.42,
+      "duration": 3.12,
+      "text": "network monitoring can be done to look"
+    },
+    {
+      "start": 101.4,
+      "duration": 3.12,
+      "text": "at the connection between different"
+    },
+    {
+      "start": 102.54,
+      "duration": 3.78,
+      "text": "computers it can also be done to check"
+    },
+    {
+      "start": 104.52,
+      "duration": 3.84,
+      "text": "the traffic coming in and going out in"
+    },
+    {
+      "start": 106.32,
+      "duration": 3.9,
+      "text": "the network some bottlenecks or"
+    },
+    {
+      "start": 108.36,
+      "duration": 3.66,
+      "text": "potential issues and this is important"
+    },
+    {
+      "start": 110.22,
+      "duration": 3.6,
+      "text": "because network problems can slow down"
+    },
+    {
+      "start": 112.02,
+      "duration": 2.7,
+      "text": "the communication between servers and"
+    },
+    {
+      "start": 113.82,
+      "duration": 2.82,
+      "text": "users"
+    },
+    {
+      "start": 114.72,
+      "duration": 3.96,
+      "text": "moving on the next type of monitoring is"
+    },
+    {
+      "start": 116.64,
+      "duration": 3.54,
+      "text": "cost monitoring cost monitoring is used"
+    },
+    {
+      "start": 118.68,
+      "duration": 4.2,
+      "text": "to keep track of how much money you're"
+    },
+    {
+      "start": 120.18,
+      "duration": 4.74,
+      "text": "spending on different Cloud resources or"
+    },
+    {
+      "start": 122.88,
+      "duration": 3.66,
+      "text": "services and this reminds me of an"
+    },
+    {
+      "start": 124.92,
+      "duration": 3.96,
+      "text": "incident where I was working for a"
+    },
+    {
+      "start": 126.54,
+      "duration": 4.26,
+      "text": "company and an employee created a screen"
+    },
+    {
+      "start": 128.88,
+      "duration": 3.3,
+      "text": "packet enabled login for it and the log"
+    },
+    {
+      "start": 130.8,
+      "duration": 3.78,
+      "text": "was stored in the same bucket which"
+    },
+    {
+      "start": 132.18,
+      "duration": 4.559,
+      "text": "created look and they caught around"
+    },
+    {
+      "start": 134.58,
+      "duration": 3.96,
+      "text": "thousands of dollars of bills this is"
+    },
+    {
+      "start": 136.739,
+      "duration": 3.661,
+      "text": "why you need cost monitoring to avoid"
+    },
+    {
+      "start": 138.54,
+      "duration": 4.08,
+      "text": "spending more than your budget and also"
+    },
+    {
+      "start": 140.4,
+      "duration": 4.08,
+      "text": "to avoid surprise expenses like this"
+    },
+    {
+      "start": 142.62,
+      "duration": 3.42,
+      "text": "similar to these there are other"
+    },
+    {
+      "start": 144.48,
+      "duration": 3.479,
+      "text": "different types of monitorings like"
+    },
+    {
+      "start": 146.04,
+      "duration": 4.08,
+      "text": "infrastructure monitoring application"
+    },
+    {
+      "start": 147.959,
+      "duration": 4.201,
+      "text": "monitoring database monitoring log"
+    },
+    {
+      "start": 150.12,
+      "duration": 4.14,
+      "text": "monitoring Cloud monitoring even"
+    },
+    {
+      "start": 152.16,
+      "duration": 4.26,
+      "text": "container monitoring now due to rise of"
+    },
+    {
+      "start": 154.26,
+      "duration": 3.66,
+      "text": "Docker and kubernetes so there are so"
+    },
+    {
+      "start": 156.42,
+      "duration": 3.84,
+      "text": "many different types of monitorings and"
+    },
+    {
+      "start": 157.92,
+      "duration": 4.08,
+      "text": "you can read about them online but now"
+    },
+    {
+      "start": 160.26,
+      "duration": 3.839,
+      "text": "let's understand how can you actually"
+    },
+    {
+      "start": 162.0,
+      "duration": 3.9,
+      "text": "perform these types of monitorings what"
+    },
+    {
+      "start": 164.099,
+      "duration": 3.961,
+      "text": "are different popular monitoring tools"
+    },
+    {
+      "start": 165.9,
+      "duration": 5.04,
+      "text": "that we have in devops starting with"
+    },
+    {
+      "start": 168.06,
+      "duration": 5.1,
+      "text": "Prometheus Prometheus is a very popular"
+    },
+    {
+      "start": 170.94,
+      "duration": 3.72,
+      "text": "open source monitoring tool that you can"
+    },
+    {
+      "start": 173.16,
+      "duration": 3.96,
+      "text": "use to monitor containerized application"
+    },
+    {
+      "start": 174.66,
+      "duration": 4.68,
+      "text": "stations microservices and different"
+    },
+    {
+      "start": 177.12,
+      "duration": 3.78,
+      "text": "Cloud native environments so let's say"
+    },
+    {
+      "start": 179.34,
+      "duration": 3.72,
+      "text": "you have an application on kubernetes"
+    },
+    {
+      "start": 180.9,
+      "duration": 4.5,
+      "text": "you can use from atheists to collect and"
+    },
+    {
+      "start": 183.06,
+      "duration": 4.08,
+      "text": "analyze different set of data or metrics"
+    },
+    {
+      "start": 185.4,
+      "duration": 3.78,
+      "text": "like resource utilization you can check"
+    },
+    {
+      "start": 187.14,
+      "duration": 4.379,
+      "text": "how is your application performing is a"
+    },
+    {
+      "start": 189.18,
+      "duration": 4.32,
+      "text": "service up or not are you SSL"
+    },
+    {
+      "start": 191.519,
+      "duration": 4.321,
+      "text": "certificates going to expire what not"
+    },
+    {
+      "start": 193.5,
+      "duration": 4.2,
+      "text": "you can do all of this using committees"
+    },
+    {
+      "start": 195.84,
+      "duration": 3.539,
+      "text": "can help you scrape metrics set up"
+    },
+    {
+      "start": 197.7,
+      "duration": 3.78,
+      "text": "alerting rules to notify you whenever"
+    },
+    {
+      "start": 199.379,
+      "duration": 4.14,
+      "text": "there's a problem and also help you"
+    },
+    {
+      "start": 201.48,
+      "duration": 3.78,
+      "text": "visualize all this data in grafana"
+    },
+    {
+      "start": 203.519,
+      "duration": 3.541,
+      "text": "dashboards we will be talking about"
+    },
+    {
+      "start": 205.26,
+      "duration": 3.899,
+      "text": "grafana very soon but it's also another"
+    },
+    {
+      "start": 207.06,
+      "duration": 3.24,
+      "text": "monitoring tool along with this there"
+    },
+    {
+      "start": 209.159,
+      "duration": 3.36,
+      "text": "are so many different features that"
+    },
+    {
+      "start": 210.3,
+      "duration": 4.32,
+      "text": "formichas have but one powerful feature"
+    },
+    {
+      "start": 212.519,
+      "duration": 4.44,
+      "text": "is the prawn ql or Prometheus query"
+    },
+    {
+      "start": 214.62,
+      "duration": 4.44,
+      "text": "language which tells you query on"
+    },
+    {
+      "start": 216.959,
+      "duration": 4.021,
+      "text": "connected metric setup alerting rules"
+    },
+    {
+      "start": 219.06,
+      "duration": 4.14,
+      "text": "and make your life easier the only"
+    },
+    {
+      "start": 220.98,
+      "duration": 3.96,
+      "text": "disadvantage is learning permitages can"
+    },
+    {
+      "start": 223.2,
+      "duration": 3.599,
+      "text": "be complex and you will need to spend"
+    },
+    {
+      "start": 224.94,
+      "duration": 3.78,
+      "text": "more time learning about it and this is"
+    },
+    {
+      "start": 226.799,
+      "duration": 4.44,
+      "text": "why I have an amazing resource for you"
+    },
+    {
+      "start": 228.72,
+      "duration": 4.26,
+      "text": "so this is code Cloud an online trading"
+    },
+    {
+      "start": 231.239,
+      "duration": 4.261,
+      "text": "platform to learn about different Cloud"
+    },
+    {
+      "start": 232.98,
+      "duration": 4.38,
+      "text": "platforms and also Dev devops tools"
+    },
+    {
+      "start": 235.5,
+      "duration": 4.56,
+      "text": "including kubernetes Prometheus"
+    },
+    {
+      "start": 237.36,
+      "duration": 4.32,
+      "text": "terraform and lot more good thing about"
+    },
+    {
+      "start": 240.06,
+      "duration": 4.08,
+      "text": "code cloud is it provides you with"
+    },
+    {
+      "start": 241.68,
+      "duration": 4.619,
+      "text": "Hands-On Labs which lets you learn by"
+    },
+    {
+      "start": 244.14,
+      "duration": 3.959,
+      "text": "actually doing it for example I'm using"
+    },
+    {
+      "start": 246.299,
+      "duration": 4.14,
+      "text": "Prometheus course which has this"
+    },
+    {
+      "start": 248.099,
+      "duration": 4.92,
+      "text": "Hands-On lab that teaches me Prometheus"
+    },
+    {
+      "start": 250.439,
+      "duration": 4.201,
+      "text": "along with Hands-On exercises code"
+    },
+    {
+      "start": 253.019,
+      "duration": 3.661,
+      "text": "without provides you with learning path"
+    },
+    {
+      "start": 254.64,
+      "duration": 3.599,
+      "text": "based on role so if you want to become a"
+    },
+    {
+      "start": 256.68,
+      "duration": 3.119,
+      "text": "devops engineer you can choose this or"
+    },
+    {
+      "start": 258.239,
+      "duration": 3.78,
+      "text": "domain based which provides you with"
+    },
+    {
+      "start": 259.799,
+      "duration": 4.021,
+      "text": "courses based on a particular domain now"
+    },
+    {
+      "start": 262.019,
+      "duration": 3.781,
+      "text": "if you are very new to devops you can"
+    },
+    {
+      "start": 263.82,
+      "duration": 3.96,
+      "text": "click on the role-based select devops"
+    },
+    {
+      "start": 265.8,
+      "duration": 3.959,
+      "text": "engineer which will provide you with a"
+    },
+    {
+      "start": 267.78,
+      "duration": 4.68,
+      "text": "roadmap on which process you should be"
+    },
+    {
+      "start": 269.759,
+      "duration": 4.681,
+      "text": "doing to become a full-fledged devops"
+    },
+    {
+      "start": 272.46,
+      "duration": 3.84,
+      "text": "engineer not just this if you have any"
+    },
+    {
+      "start": 274.44,
+      "duration": 3.72,
+      "text": "questions or issues while doing this"
+    },
+    {
+      "start": 276.3,
+      "duration": 4.679,
+      "text": "courses you can join the code Cloud"
+    },
+    {
+      "start": 278.16,
+      "duration": 5.22,
+      "text": "Community which has over 70"
+    },
+    {
+      "start": 280.979,
+      "duration": 4.201,
+      "text": "000 plus enthusiastic individuals and"
+    },
+    {
+      "start": 283.38,
+      "duration": 3.72,
+      "text": "you can ask your questions in this slack"
+    },
+    {
+      "start": 285.18,
+      "duration": 4.2,
+      "text": "workspace code cloud is providing with a"
+    },
+    {
+      "start": 287.1,
+      "duration": 4.44,
+      "text": "free week for you to test out all these"
+    },
+    {
+      "start": 289.38,
+      "duration": 3.84,
+      "text": "different courses for free so if you"
+    },
+    {
+      "start": 291.54,
+      "duration": 3.599,
+      "text": "want to get started take advantage of"
+    },
+    {
+      "start": 293.22,
+      "duration": 3.539,
+      "text": "this free week click on the link in the"
+    },
+    {
+      "start": 295.139,
+      "duration": 4.141,
+      "text": "description and sign up for the free"
+    },
+    {
+      "start": 296.759,
+      "duration": 4.741,
+      "text": "week which is from 25th September to 1st"
+    },
+    {
+      "start": 299.28,
+      "duration": 5.22,
+      "text": "October or you can also simply scan this"
+    },
+    {
+      "start": 301.5,
+      "duration": 5.82,
+      "text": "code and register for the free week"
+    },
+    {
+      "start": 304.5,
+      "duration": 4.8,
+      "text": "moving on the second monitoring tool is"
+    },
+    {
+      "start": 307.32,
+      "duration": 3.78,
+      "text": "graph Pharma which is also open sourced"
+    },
+    {
+      "start": 309.3,
+      "duration": 4.32,
+      "text": "and perfect for creating custom"
+    },
+    {
+      "start": 311.1,
+      "duration": 4.62,
+      "text": "dashboard to visualize monitoring data"
+    },
+    {
+      "start": 313.62,
+      "duration": 3.6,
+      "text": "coming from different sources so let's"
+    },
+    {
+      "start": 315.72,
+      "duration": 2.94,
+      "text": "say you have enabled monitoring through"
+    },
+    {
+      "start": 317.22,
+      "duration": 3.78,
+      "text": "different set of monitoring tools like"
+    },
+    {
+      "start": 318.66,
+      "duration": 4.979,
+      "text": "Prometheus elasticsearch Cloud watch"
+    },
+    {
+      "start": 321.0,
+      "duration": 4.919,
+      "text": "inflex DB and so much more and you want"
+    },
+    {
+      "start": 323.639,
+      "duration": 5.041,
+      "text": "all this monitoring data at one place in"
+    },
+    {
+      "start": 325.919,
+      "duration": 5.101,
+      "text": "charts graph and good visualization then"
+    },
+    {
+      "start": 328.68,
+      "duration": 4.38,
+      "text": "again use grafana for that along with"
+    },
+    {
+      "start": 331.02,
+      "duration": 4.26,
+      "text": "Rich visualization and support for"
+    },
+    {
+      "start": 333.06,
+      "duration": 4.32,
+      "text": "multiple data sources grafana also"
+    },
+    {
+      "start": 335.28,
+      "duration": 4.139,
+      "text": "provide features like alerting plugin"
+    },
+    {
+      "start": 337.38,
+      "duration": 3.48,
+      "text": "ego systems and comment dashboard the"
+    },
+    {
+      "start": 339.419,
+      "duration": 2.701,
+      "text": "only problem is you need to integrate"
+    },
+    {
+      "start": 340.86,
+      "duration": 3.779,
+      "text": "your phone with all these different"
+    },
+    {
+      "start": 342.12,
+      "duration": 4.859,
+      "text": "tools that can be a bit complex"
+    },
+    {
+      "start": 344.639,
+      "duration": 4.801,
+      "text": "the third monitoring tool is nagios"
+    },
+    {
+      "start": 346.979,
+      "duration": 5.16,
+      "text": "which is again open sourced and very"
+    },
+    {
+      "start": 349.44,
+      "duration": 5.4,
+      "text": "very popular that is used in many devops"
+    },
+    {
+      "start": 352.139,
+      "duration": 4.861,
+      "text": "companies magios is primarily used to"
+    },
+    {
+      "start": 354.84,
+      "duration": 4.74,
+      "text": "monitor the availability of a service if"
+    },
+    {
+      "start": 357.0,
+      "duration": 4.919,
+      "text": "it is running or not and also has a very"
+    },
+    {
+      "start": 359.58,
+      "duration": 4.8,
+      "text": "powerful alerting system that checks and"
+    },
+    {
+      "start": 361.919,
+      "duration": 4.62,
+      "text": "notifies you in real time but obviously"
+    },
+    {
+      "start": 364.38,
+      "duration": 4.2,
+      "text": "using plugins and nadios you can monitor"
+    },
+    {
+      "start": 366.539,
+      "duration": 3.781,
+      "text": "more than just availability of a service"
+    },
+    {
+      "start": 368.58,
+      "duration": 4.02,
+      "text": "along with this there are more features"
+    },
+    {
+      "start": 370.32,
+      "duration": 4.92,
+      "text": "like nagios can collect historical data"
+    },
+    {
+      "start": 372.6,
+      "duration": 5.099,
+      "text": "which is very helpful to analyze and to"
+    },
+    {
+      "start": 375.24,
+      "duration": 4.44,
+      "text": "troubleshoot many monitoring issues the"
+    },
+    {
+      "start": 377.699,
+      "duration": 3.661,
+      "text": "fourth tool in the monitoring list is a"
+    },
+    {
+      "start": 379.68,
+      "duration": 4.859,
+      "text": "in key stack that stands for"
+    },
+    {
+      "start": 381.36,
+      "duration": 4.86,
+      "text": "elasticsearch log stash and kibana and"
+    },
+    {
+      "start": 384.539,
+      "duration": 4.141,
+      "text": "this is a very powerful monitoring tool"
+    },
+    {
+      "start": 386.22,
+      "duration": 4.68,
+      "text": "to monitor locks manage them and also to"
+    },
+    {
+      "start": 388.68,
+      "duration": 4.44,
+      "text": "understand the op data so imagine you"
+    },
+    {
+      "start": 390.9,
+      "duration": 4.019,
+      "text": "have a website with lots of visitors and"
+    },
+    {
+      "start": 393.12,
+      "duration": 3.6,
+      "text": "you want to keep track of what are your"
+    },
+    {
+      "start": 394.919,
+      "duration": 2.941,
+      "text": "visitors doing on the site you need to"
+    },
+    {
+      "start": 396.72,
+      "duration": 3.24,
+      "text": "know which one is accessing your web"
+    },
+    {
+      "start": 397.86,
+      "duration": 4.86,
+      "text": "page or you just want to monitor if any"
+    },
+    {
+      "start": 399.96,
+      "duration": 4.679,
+      "text": "issues occurs you can use El key stack"
+    },
+    {
+      "start": 402.72,
+      "duration": 3.96,
+      "text": "for that one of the cool things of you"
+    },
+    {
+      "start": 404.639,
+      "duration": 4.261,
+      "text": "stack is it can let you search through"
+    },
+    {
+      "start": 406.68,
+      "duration": 3.9,
+      "text": "your data just like you would search on"
+    },
+    {
+      "start": 408.9,
+      "duration": 3.48,
+      "text": "the internet along with this you can"
+    },
+    {
+      "start": 410.58,
+      "duration": 4.38,
+      "text": "also create charts and graph to"
+    },
+    {
+      "start": 412.38,
+      "duration": 4.379,
+      "text": "understand log data properly plus using"
+    },
+    {
+      "start": 414.96,
+      "duration": 3.72,
+      "text": "elk you can also break down and"
+    },
+    {
+      "start": 416.759,
+      "duration": 4.321,
+      "text": "understand different part of your log"
+    },
+    {
+      "start": 418.68,
+      "duration": 5.639,
+      "text": "data making it very easy to work with"
+    },
+    {
+      "start": 421.08,
+      "duration": 6.3,
+      "text": "logs when using El key stack in this elk"
+    },
+    {
+      "start": 424.319,
+      "duration": 5.16,
+      "text": "stack the elasticsearch is super powered"
+    },
+    {
+      "start": 427.38,
+      "duration": 3.72,
+      "text": "search engine for your docs the log"
+    },
+    {
+      "start": 429.479,
+      "duration": 3.72,
+      "text": "stash is a conconen that will connect"
+    },
+    {
+      "start": 431.1,
+      "duration": 4.2,
+      "text": "the logs from different sources from"
+    },
+    {
+      "start": 433.199,
+      "duration": 5.28,
+      "text": "different processes and will ingest the"
+    },
+    {
+      "start": 435.3,
+      "duration": 5.16,
+      "text": "logs in the stack whereas K or kibada is"
+    },
+    {
+      "start": 438.479,
+      "duration": 3.84,
+      "text": "used to visualize its Law data in graphs"
+    },
+    {
+      "start": 440.46,
+      "duration": 3.9,
+      "text": "and chart along with this Lobster is"
+    },
+    {
+      "start": 442.319,
+      "duration": 3.541,
+      "text": "also very resource intensive and if you"
+    },
+    {
+      "start": 444.36,
+      "duration": 3.6,
+      "text": "want to run it make sure your system can"
+    },
+    {
+      "start": 445.86,
+      "duration": 3.899,
+      "text": "handle it so this is another great tool"
+    },
+    {
+      "start": 447.96,
+      "duration": 3.84,
+      "text": "for monetary next monitoring tool that"
+    },
+    {
+      "start": 449.759,
+      "duration": 3.84,
+      "text": "we have on the list is New renik New"
+    },
+    {
+      "start": 451.8,
+      "duration": 3.899,
+      "text": "Relic is a tool to monitor all kind of"
+    },
+    {
+      "start": 453.599,
+      "duration": 4.201,
+      "text": "things websites mobile application"
+    },
+    {
+      "start": 455.699,
+      "duration": 4.321,
+      "text": "servers on which this applications are"
+    },
+    {
+      "start": 457.8,
+      "duration": 4.019,
+      "text": "running and even how people are visiting"
+    },
+    {
+      "start": 460.02,
+      "duration": 4.2,
+      "text": "your applications and what are their"
+    },
+    {
+      "start": 461.819,
+      "duration": 4.621,
+      "text": "experiences for example let's say you"
+    },
+    {
+      "start": 464.22,
+      "duration": 3.78,
+      "text": "have a Commerce website to sell t-shirts"
+    },
+    {
+      "start": 466.44,
+      "duration": 3.06,
+      "text": "online and you want to make sure that"
+    },
+    {
+      "start": 468.0,
+      "duration": 3.419,
+      "text": "your customers are having a good time"
+    },
+    {
+      "start": 469.5,
+      "duration": 3.96,
+      "text": "visiting your website and also to buy"
+    },
+    {
+      "start": 471.419,
+      "duration": 3.601,
+      "text": "T-shirts from it so you can use new"
+    },
+    {
+      "start": 473.46,
+      "duration": 3.48,
+      "text": "earnings to monitor things and also to"
+    },
+    {
+      "start": 475.02,
+      "duration": 3.84,
+      "text": "help you with different issues like slow"
+    },
+    {
+      "start": 476.94,
+      "duration": 3.479,
+      "text": "transactions how well is your database"
+    },
+    {
+      "start": 478.86,
+      "duration": 4.26,
+      "text": "working what is happening on your"
+    },
+    {
+      "start": 480.419,
+      "duration": 4.441,
+      "text": "servers and much more new Linux helps"
+    },
+    {
+      "start": 483.12,
+      "duration": 4.62,
+      "text": "you alert for these problems in real"
+    },
+    {
+      "start": 484.86,
+      "duration": 5.22,
+      "text": "time you can customize them or present"
+    },
+    {
+      "start": 487.74,
+      "duration": 4.44,
+      "text": "your data in custom dashboards graphs as"
+    },
+    {
+      "start": 490.08,
+      "duration": 3.72,
+      "text": "you can do with kafana apart from this"
+    },
+    {
+      "start": 492.18,
+      "duration": 3.66,
+      "text": "new addict is known for user friendly"
+    },
+    {
+      "start": 493.8,
+      "duration": 4.98,
+      "text": "and it's very easy to use also suitable"
+    },
+    {
+      "start": 495.84,
+      "duration": 4.979,
+      "text": "for modern application Next Top Notch"
+    },
+    {
+      "start": 498.78,
+      "duration": 4.56,
+      "text": "monitoring tool in the list is dinar"
+    },
+    {
+      "start": 500.819,
+      "duration": 4.741,
+      "text": "trees dinar Trace can be used to monitor"
+    },
+    {
+      "start": 503.34,
+      "duration": 4.56,
+      "text": "complex applications and micro services"
+    },
+    {
+      "start": 505.56,
+      "duration": 4.199,
+      "text": "for example imagine you have a cloud"
+    },
+    {
+      "start": 507.9,
+      "duration": 3.54,
+      "text": "native modern application that have"
+    },
+    {
+      "start": 509.759,
+      "duration": 3.84,
+      "text": "multiple containers in it different"
+    },
+    {
+      "start": 511.44,
+      "duration": 4.08,
+      "text": "services and also some third-party"
+    },
+    {
+      "start": 513.599,
+      "duration": 4.141,
+      "text": "services that you are using in this"
+    },
+    {
+      "start": 515.52,
+      "duration": 4.319,
+      "text": "application so dynatrase can be used to"
+    },
+    {
+      "start": 517.74,
+      "duration": 4.2,
+      "text": "monitor your application and also the"
+    },
+    {
+      "start": 519.839,
+      "duration": 3.961,
+      "text": "third party services and how the data is"
+    },
+    {
+      "start": 521.94,
+      "duration": 5.22,
+      "text": "transferred among them not just this"
+    },
+    {
+      "start": 523.8,
+      "duration": 5.46,
+      "text": "dialect and help you find slow spots or"
+    },
+    {
+      "start": 527.16,
+      "duration": 4.2,
+      "text": "pinpoint errors which can cause"
+    },
+    {
+      "start": 529.26,
+      "duration": 4.139,
+      "text": "performance issues one of the popular"
+    },
+    {
+      "start": 531.36,
+      "duration": 4.5,
+      "text": "features of Dinah Trace is its smart"
+    },
+    {
+      "start": 533.399,
+      "duration": 4.5,
+      "text": "monitoring that uses AI which I also"
+    },
+    {
+      "start": 535.86,
+      "duration": 4.14,
+      "text": "mentioned in one of my videos where I've"
+    },
+    {
+      "start": 537.899,
+      "duration": 4.261,
+      "text": "showed how AI can replace devops"
+    },
+    {
+      "start": 540.0,
+      "duration": 4.38,
+      "text": "Engineers do check out so Thailand Trace"
+    },
+    {
+      "start": 542.16,
+      "duration": 4.739,
+      "text": "uses AI to spot issues and can notify"
+    },
+    {
+      "start": 544.38,
+      "duration": 4.2,
+      "text": "you before it actually happens it's like"
+    },
+    {
+      "start": 546.899,
+      "duration": 4.44,
+      "text": "having a virtual assistant that will"
+    },
+    {
+      "start": 548.58,
+      "duration": 5.04,
+      "text": "check your applications 24x7 number"
+    },
+    {
+      "start": 551.339,
+      "duration": 4.261,
+      "text": "seven is plank which is another very"
+    },
+    {
+      "start": 553.62,
+      "duration": 4.8,
+      "text": "powerful monitoring tool for analyzing"
+    },
+    {
+      "start": 555.6,
+      "duration": 5.22,
+      "text": "log data to enhance security and to make"
+    },
+    {
+      "start": 558.42,
+      "duration": 3.84,
+      "text": "decisions imagine you are working as a"
+    },
+    {
+      "start": 560.82,
+      "duration": 3.3,
+      "text": "deaf psychops engineered in a company"
+    },
+    {
+      "start": 562.26,
+      "duration": 4.56,
+      "text": "and you want to protect your application"
+    },
+    {
+      "start": 564.12,
+      "duration": 5.1,
+      "text": "from any possible security threats then"
+    },
+    {
+      "start": 566.82,
+      "duration": 4.86,
+      "text": "you will be using splug Splunk can"
+    },
+    {
+      "start": 569.22,
+      "duration": 4.44,
+      "text": "connect and ingest data from various"
+    },
+    {
+      "start": 571.68,
+      "duration": 4.5,
+      "text": "different sources and can also detect"
+    },
+    {
+      "start": 573.66,
+      "duration": 5.04,
+      "text": "possible threats and alert you in real"
+    },
+    {
+      "start": 576.18,
+      "duration": 4.68,
+      "text": "time similar to elasticsearch Splunk"
+    },
+    {
+      "start": 578.7,
+      "duration": 4.86,
+      "text": "also has indexing and switching feature"
+    },
+    {
+      "start": 580.86,
+      "duration": 4.38,
+      "text": "to search through your log data and also"
+    },
+    {
+      "start": 583.56,
+      "duration": 4.32,
+      "text": "uses machine learning to detect"
+    },
+    {
+      "start": 585.24,
+      "duration": 5.52,
+      "text": "anomalies or possible threats to keep"
+    },
+    {
+      "start": 587.88,
+      "duration": 5.1,
+      "text": "your application safe last monitoring"
+    },
+    {
+      "start": 590.76,
+      "duration": 3.6,
+      "text": "tool that we have is app Dynamics which"
+    },
+    {
+      "start": 592.98,
+      "duration": 3.359,
+      "text": "is mainly used for application"
+    },
+    {
+      "start": 594.36,
+      "duration": 4.44,
+      "text": "performance monitoring but also can be"
+    },
+    {
+      "start": 596.339,
+      "duration": 5.041,
+      "text": "used to check code issues in different"
+    },
+    {
+      "start": 598.8,
+      "duration": 4.02,
+      "text": "programming languages for example let's"
+    },
+    {
+      "start": 601.38,
+      "duration": 3.36,
+      "text": "say you have an application which is"
+    },
+    {
+      "start": 602.82,
+      "duration": 3.84,
+      "text": "very important and makes a lot of money"
+    },
+    {
+      "start": 604.74,
+      "duration": 3.9,
+      "text": "for you and you want to make sure that"
+    },
+    {
+      "start": 606.66,
+      "duration": 4.02,
+      "text": "it works properly all the time then you"
+    },
+    {
+      "start": 608.64,
+      "duration": 3.96,
+      "text": "can use app Dynamics for it app Dynamics"
+    },
+    {
+      "start": 610.68,
+      "duration": 3.779,
+      "text": "can help you monitor your application in"
+    },
+    {
+      "start": 612.6,
+      "duration": 3.84,
+      "text": "real time alert you whenever there's an"
+    },
+    {
+      "start": 614.459,
+      "duration": 4.261,
+      "text": "issue it can even look at the actual"
+    },
+    {
+      "start": 616.44,
+      "duration": 4.079,
+      "text": "code to find and fix any issues that can"
+    },
+    {
+      "start": 618.72,
+      "duration": 4.26,
+      "text": "slow down your application or cause any"
+    },
+    {
+      "start": 620.519,
+      "duration": 3.901,
+      "text": "other issues app Dynamics is super"
+    },
+    {
+      "start": 622.98,
+      "duration": 2.82,
+      "text": "detailed and provide you with deep"
+    },
+    {
+      "start": 624.42,
+      "duration": 3.3,
+      "text": "insights to make sure your application"
+    },
+    {
+      "start": 625.8,
+      "duration": 4.68,
+      "text": "is running properly and the users have"
+    },
+    {
+      "start": 627.72,
+      "duration": 3.96,
+      "text": "good experience so whenever you have a"
+    },
+    {
+      "start": 630.48,
+      "duration": 2.82,
+      "text": "critical application that is very"
+    },
+    {
+      "start": 631.68,
+      "duration": 3.779,
+      "text": "important for your business I would"
+    },
+    {
+      "start": 633.3,
+      "duration": 3.42,
+      "text": "recommend using App Dynamics so there"
+    },
+    {
+      "start": 635.459,
+      "duration": 3.181,
+      "text": "you go these are on the popular"
+    },
+    {
+      "start": 636.72,
+      "duration": 4.44,
+      "text": "monitoring tools that we have in devops"
+    },
+    {
+      "start": 638.64,
+      "duration": 4.62,
+      "text": "I hope this video was informative if you"
+    },
+    {
+      "start": 641.16,
+      "duration": 4.08,
+      "text": "have any questions any doubt let me know"
+    },
+    {
+      "start": 643.26,
+      "duration": 5.24,
+      "text": "in the comment section thank you and"
+    },
+    {
+      "start": 645.24,
+      "duration": 3.26,
+      "text": "have a good day bye"
+    }
+  ]
+}

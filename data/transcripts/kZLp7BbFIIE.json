@@ -1,0 +1,126 @@
+{
+  "video": {
+    "id": "kZLp7BbFIIE",
+    "title": "Authentication vs Authorization Explained in 1 min! #devops #software",
+    "url": "https://www.youtube.com/watch?v=kZLp7BbFIIE",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.159,
+      "text": "Let's understand the difference between"
+    },
+    {
+      "start": 1.839,
+      "duration": 4.641,
+      "text": "authentication and authorization."
+    },
+    {
+      "start": 4.319,
+      "duration": 4.881,
+      "text": "Authentication. Authentication is a"
+    },
+    {
+      "start": 6.48,
+      "duration": 4.48,
+      "text": "process of verifying users identity. Who"
+    },
+    {
+      "start": 9.2,
+      "duration": 4.16,
+      "text": "are you? Are you the right person trying"
+    },
+    {
+      "start": 10.96,
+      "duration": 4.32,
+      "text": "to access this application or system? So"
+    },
+    {
+      "start": 13.36,
+      "duration": 4.08,
+      "text": "for example, whenever you log into your"
+    },
+    {
+      "start": 15.28,
+      "duration": 4.48,
+      "text": "AWS account with your right username and"
+    },
+    {
+      "start": 17.44,
+      "duration": 3.839,
+      "text": "password, you are authenticated which"
+    },
+    {
+      "start": 19.76,
+      "duration": 3.519,
+      "text": "means you are the right person with"
+    },
+    {
+      "start": 21.279,
+      "duration": 3.521,
+      "text": "correct credentials to access this AWS"
+    },
+    {
+      "start": 23.279,
+      "duration": 3.361,
+      "text": "account. On the other hand,"
+    },
+    {
+      "start": 24.8,
+      "duration": 3.6,
+      "text": "authorization is about checking what you"
+    },
+    {
+      "start": 26.64,
+      "duration": 3.92,
+      "text": "can access or what permissions do you"
+    },
+    {
+      "start": 28.4,
+      "duration": 4.8,
+      "text": "have in the system. For example, in your"
+    },
+    {
+      "start": 30.56,
+      "duration": 4.88,
+      "text": "AWS account, the admins or root user are"
+    },
+    {
+      "start": 33.2,
+      "duration": 4.16,
+      "text": "authorized to access everything. Whereas"
+    },
+    {
+      "start": 35.44,
+      "duration": 4.32,
+      "text": "database admins are only authorized to"
+    },
+    {
+      "start": 37.36,
+      "duration": 4.32,
+      "text": "use RDS or a particular service. In"
+    },
+    {
+      "start": 39.76,
+      "duration": 3.6,
+      "text": "short, authentication is confirming who"
+    },
+    {
+      "start": 41.68,
+      "duration": 3.68,
+      "text": "you are by checking your credentials."
+    },
+    {
+      "start": 43.36,
+      "duration": 6.24,
+      "text": "And authorization means what you can do"
+    },
+    {
+      "start": 45.36,
+      "duration": 4.24,
+      "text": "by checking your permissions. Subscribe."
+    }
+  ]
+}

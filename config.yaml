@@ -1,0 +1,8 @@
+channel_url: "https://youtube.com/@cloudchamp"
+pilot_videos: 0
+
+paths:
+  metadata: "data/metadata/videos.json"
+  transcripts: "data/transcripts"
+  chunks: "data/chunks.jsonl"
+  index: "data/index.sqlite"

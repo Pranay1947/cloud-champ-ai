@@ -1,0 +1,131 @@
+{
+  "video": {
+    "id": "nyD931bK4QM",
+    "title": "Docker Sandbox for AI Agents Explained!",
+    "url": "https://www.youtube.com/watch?v=nyD931bK4QM",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 4.28,
+      "text": "Running AI agents on your machine can be"
+    },
+    {
+      "start": 2.24,
+      "duration": 3.96,
+      "text": "risky because they can execute commands,"
+    },
+    {
+      "start": 4.28,
+      "duration": 4.12,
+      "text": "install packages, and modify files"
+    },
+    {
+      "start": 6.2,
+      "duration": 4.68,
+      "text": "directly. And that's why Docker AI"
+    },
+    {
+      "start": 8.4,
+      "duration": 4.48,
+      "text": "sandboxes exist. So, Docker AI sandbox"
+    },
+    {
+      "start": 10.88,
+      "duration": 5.0,
+      "text": "is a secure environment that runs your"
+    },
+    {
+      "start": 12.88,
+      "duration": 4.96,
+      "text": "AI agent in an isolated micro VM instead"
+    },
+    {
+      "start": 15.88,
+      "duration": 4.12,
+      "text": "of your local system. Let me explain how"
+    },
+    {
+      "start": 17.84,
+      "duration": 4.56,
+      "text": "this actually works. So, each sandbox"
+    },
+    {
+      "start": 20.0,
+      "duration": 4.28,
+      "text": "gets its own file system, network stack,"
+    },
+    {
+      "start": 22.4,
+      "duration": 3.6,
+      "text": "and Docker engine. So, the AI thinks"
+    },
+    {
+      "start": 24.28,
+      "duration": 3.6,
+      "text": "that it is running on a full machine,"
+    },
+    {
+      "start": 26.0,
+      "duration": 4.52,
+      "text": "but everything is actually contained"
+    },
+    {
+      "start": 27.88,
+      "duration": 4.96,
+      "text": "inside this isolated environment. Docker"
+    },
+    {
+      "start": 30.52,
+      "duration": 4.64,
+      "text": "sandboxes uses five isolation layer:"
+    },
+    {
+      "start": 32.84,
+      "duration": 4.36,
+      "text": "hypervisor, network, Docker engine,"
+    },
+    {
+      "start": 35.16,
+      "duration": 3.6,
+      "text": "workspace, and credential proxy. These"
+    },
+    {
+      "start": 37.2,
+      "duration": 3.68,
+      "text": "layers ensure that the agent cannot"
+    },
+    {
+      "start": 38.76,
+      "duration": 4.2,
+      "text": "access your host system files or"
+    },
+    {
+      "start": 40.88,
+      "duration": 4.36,
+      "text": "sensitive data. So, the agent can build,"
+    },
+    {
+      "start": 42.96,
+      "duration": 4.16,
+      "text": "run, and test code freely inside the"
+    },
+    {
+      "start": 45.24,
+      "duration": 3.96,
+      "text": "sandbox. And once the task is done, you"
+    },
+    {
+      "start": 47.12,
+      "duration": 5.64,
+      "text": "can simply stop or delete the sandbox,"
+    },
+    {
+      "start": 49.2,
+      "duration": 3.56,
+      "text": "and everything else will be wiped."
+    }
+  ]
+}

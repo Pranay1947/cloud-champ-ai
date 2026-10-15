@@ -1,0 +1,2086 @@
+{
+  "video": {
+    "id": "guCFLTU-XRM",
+    "title": "How I use Python as DevOps Engineer | Python for Devops",
+    "url": "https://www.youtube.com/watch?v=guCFLTU-XRM",
+    "duration": 924,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 1.56,
+      "duration": 3.84,
+      "text": "python is the most used programming"
+    },
+    {
+      "start": 3.659,
+      "duration": 4.321,
+      "text": "language for devops engineers to do"
+    },
+    {
+      "start": 5.4,
+      "duration": 4.38,
+      "text": "their everyday devops task in this video"
+    },
+    {
+      "start": 7.98,
+      "duration": 3.6,
+      "text": "I want to share with you some of the"
+    },
+    {
+      "start": 9.78,
+      "duration": 4.62,
+      "text": "most common use cases of python in"
+    },
+    {
+      "start": 11.58,
+      "duration": 5.24,
+      "text": "devops and how I use python as a devops"
+    },
+    {
+      "start": 14.4,
+      "duration": 2.42,
+      "text": "engineer"
+    },
+    {
+      "start": 24.0,
+      "duration": 4.619,
+      "text": "1000 subscribers on YouTube so thank you"
+    },
+    {
+      "start": 26.58,
+      "duration": 4.08,
+      "text": "and if you haven't subscribed Please"
+    },
+    {
+      "start": 28.619,
+      "duration": 4.381,
+      "text": "Subscribe I post videos on cloud and"
+    },
+    {
+      "start": 30.66,
+      "duration": 4.079,
+      "text": "devops let's start with the video python"
+    },
+    {
+      "start": 33.0,
+      "duration": 3.899,
+      "text": "has become the most popular language for"
+    },
+    {
+      "start": 34.739,
+      "duration": 4.801,
+      "text": "all devops professionals due to its"
+    },
+    {
+      "start": 36.899,
+      "duration": 5.281,
+      "text": "simple syntax easy to use and extensive"
+    },
+    {
+      "start": 39.54,
+      "duration": 4.38,
+      "text": "libraries making it the best option for"
+    },
+    {
+      "start": 42.18,
+      "duration": 3.84,
+      "text": "different use cases like scripting"
+    },
+    {
+      "start": 43.92,
+      "duration": 3.9,
+      "text": "automation infrastructure management and"
+    },
+    {
+      "start": 46.02,
+      "duration": 3.66,
+      "text": "much more as a devops engineer I"
+    },
+    {
+      "start": 47.82,
+      "duration": 3.84,
+      "text": "personally use Python every day for a"
+    },
+    {
+      "start": 49.68,
+      "duration": 3.84,
+      "text": "variety of tasks like automating my task"
+    },
+    {
+      "start": 51.66,
+      "duration": 4.559,
+      "text": "or integrating with different devops"
+    },
+    {
+      "start": 53.52,
+      "duration": 4.14,
+      "text": "tools like Jenkins or kubernetes in this"
+    },
+    {
+      "start": 56.219,
+      "duration": 3.061,
+      "text": "video I will share with you some of the"
+    },
+    {
+      "start": 57.66,
+      "duration": 4.079,
+      "text": "most common use cases of python in"
+    },
+    {
+      "start": 59.28,
+      "duration": 4.86,
+      "text": "devops and demonstrate how I use python"
+    },
+    {
+      "start": 61.739,
+      "duration": 4.441,
+      "text": "in my day-to-day work along with some"
+    },
+    {
+      "start": 64.14,
+      "duration": 4.019,
+      "text": "projects and demos showing you the code"
+    },
+    {
+      "start": 66.18,
+      "duration": 3.96,
+      "text": "so don't miss this video and watch it"
+    },
+    {
+      "start": 68.159,
+      "duration": 3.901,
+      "text": "till the end first let's understand why"
+    },
+    {
+      "start": 70.14,
+      "duration": 3.659,
+      "text": "do we need to Learn Python so if you"
+    },
+    {
+      "start": 72.06,
+      "duration": 3.72,
+      "text": "check out any job description for cloud"
+    },
+    {
+      "start": 73.799,
+      "duration": 3.661,
+      "text": "engineer and devops engineer roles you"
+    },
+    {
+      "start": 75.78,
+      "duration": 4.08,
+      "text": "will see that they're asking for python"
+    },
+    {
+      "start": 77.46,
+      "duration": 4.08,
+      "text": "knowledge or python experience and you"
+    },
+    {
+      "start": 79.86,
+      "duration": 3.42,
+      "text": "might be wondering if python is required"
+    },
+    {
+      "start": 81.54,
+      "duration": 3.719,
+      "text": "for devops or not is coding required for"
+    },
+    {
+      "start": 83.28,
+      "duration": 4.26,
+      "text": "devops or not and I try to answer this"
+    },
+    {
+      "start": 85.259,
+      "duration": 4.081,
+      "text": "in the video so watch this video and you"
+    },
+    {
+      "start": 87.54,
+      "duration": 3.42,
+      "text": "will be able to know why is python used"
+    },
+    {
+      "start": 89.34,
+      "duration": 3.54,
+      "text": "how much programming do you need for"
+    },
+    {
+      "start": 90.96,
+      "duration": 4.08,
+      "text": "devops so watch this video before you"
+    },
+    {
+      "start": 92.88,
+      "duration": 4.02,
+      "text": "see this so learning python can help you"
+    },
+    {
+      "start": 95.04,
+      "duration": 4.079,
+      "text": "easily get a job as well as to automate"
+    },
+    {
+      "start": 96.9,
+      "duration": 4.62,
+      "text": "your task so let's see some use cases of"
+    },
+    {
+      "start": 99.119,
+      "duration": 4.561,
+      "text": "python scripting and automation so"
+    },
+    {
+      "start": 101.52,
+      "duration": 4.26,
+      "text": "python is used extensively for scripting"
+    },
+    {
+      "start": 103.68,
+      "duration": 3.54,
+      "text": "repetitive tasks and automating"
+    },
+    {
+      "start": 105.78,
+      "duration": 4.08,
+      "text": "processes such as deployment of"
+    },
+    {
+      "start": 107.22,
+      "duration": 4.56,
+      "text": "applications monitoring testing I create"
+    },
+    {
+      "start": 109.86,
+      "duration": 4.14,
+      "text": "Python scripts for everything that can"
+    },
+    {
+      "start": 111.78,
+      "duration": 4.26,
+      "text": "be automated and python can be used for"
+    },
+    {
+      "start": 114.0,
+      "duration": 4.32,
+      "text": "automating wide variety of tasks from"
+    },
+    {
+      "start": 116.04,
+      "duration": 4.079,
+      "text": "Trading reports to setting up servers to"
+    },
+    {
+      "start": 118.32,
+      "duration": 3.9,
+      "text": "rotating database passwords taking"
+    },
+    {
+      "start": 120.119,
+      "duration": 4.201,
+      "text": "backups and much more let me give you an"
+    },
+    {
+      "start": 122.22,
+      "duration": 4.2,
+      "text": "example so for example you're working as"
+    },
+    {
+      "start": 124.32,
+      "duration": 3.719,
+      "text": "a devops engineer and your manager asks"
+    },
+    {
+      "start": 126.42,
+      "duration": 4.08,
+      "text": "you to rotate database passwords every"
+    },
+    {
+      "start": 128.039,
+      "duration": 4.321,
+      "text": "day so if you don't know python you"
+    },
+    {
+      "start": 130.5,
+      "duration": 4.02,
+      "text": "might be running the query to alter the"
+    },
+    {
+      "start": 132.36,
+      "duration": 3.959,
+      "text": "password every day but if you know"
+    },
+    {
+      "start": 134.52,
+      "duration": 3.78,
+      "text": "python you can create a script which"
+    },
+    {
+      "start": 136.319,
+      "duration": 4.321,
+      "text": "will run the query automatically without"
+    },
+    {
+      "start": 138.3,
+      "duration": 4.62,
+      "text": "you doing anything so this is the power"
+    },
+    {
+      "start": 140.64,
+      "duration": 4.86,
+      "text": "of python you can use Python to automate"
+    },
+    {
+      "start": 142.92,
+      "duration": 4.74,
+      "text": "repetitive tasks by creating scripts for"
+    },
+    {
+      "start": 145.5,
+      "duration": 4.319,
+      "text": "them number two is enhanced devops"
+    },
+    {
+      "start": 147.66,
+      "duration": 4.92,
+      "text": "workflows so in devops there are so many"
+    },
+    {
+      "start": 149.819,
+      "duration": 4.081,
+      "text": "open source tools to do tasks like SCI"
+    },
+    {
+      "start": 152.58,
+      "duration": 3.12,
+      "text": "CD configuration management"
+    },
+    {
+      "start": 153.9,
+      "duration": 4.62,
+      "text": "infrastructure provisioning and much"
+    },
+    {
+      "start": 155.7,
+      "duration": 4.38,
+      "text": "more but sometimes these devops tools do"
+    },
+    {
+      "start": 158.52,
+      "duration": 3.299,
+      "text": "not provide the built-in functionality"
+    },
+    {
+      "start": 160.08,
+      "duration": 3.78,
+      "text": "depending on the project that you're"
+    },
+    {
+      "start": 161.819,
+      "duration": 3.901,
+      "text": "doing and that is where python comes in"
+    },
+    {
+      "start": 163.86,
+      "duration": 4.5,
+      "text": "handy you can use Python to customize"
+    },
+    {
+      "start": 165.72,
+      "duration": 5.28,
+      "text": "this application to make it use as you"
+    },
+    {
+      "start": 168.36,
+      "duration": 4.739,
+      "text": "want for example in ansible you can use"
+    },
+    {
+      "start": 171.0,
+      "duration": 3.84,
+      "text": "Python to create custom modules when no"
+    },
+    {
+      "start": 173.099,
+      "duration": 3.901,
+      "text": "existing model is available for your"
+    },
+    {
+      "start": 174.84,
+      "duration": 3.6,
+      "text": "required task so using python you can"
+    },
+    {
+      "start": 177.0,
+      "duration": 3.12,
+      "text": "create module and customize the"
+    },
+    {
+      "start": 178.44,
+      "duration": 3.54,
+      "text": "application according to your use case"
+    },
+    {
+      "start": 180.12,
+      "duration": 4.14,
+      "text": "another use case can be you might need"
+    },
+    {
+      "start": 181.98,
+      "duration": 4.38,
+      "text": "to read some data from a CSV file that"
+    },
+    {
+      "start": 184.26,
+      "duration": 3.839,
+      "text": "is hosted on S3 bucket or maybe in your"
+    },
+    {
+      "start": 186.36,
+      "duration": 3.78,
+      "text": "local machine so python provides you"
+    },
+    {
+      "start": 188.099,
+      "duration": 4.381,
+      "text": "with so many easy to use functions to"
+    },
+    {
+      "start": 190.14,
+      "duration": 4.92,
+      "text": "retrieve data from CSV file and get the"
+    },
+    {
+      "start": 192.48,
+      "duration": 4.56,
+      "text": "required data so using python you can"
+    },
+    {
+      "start": 195.06,
+      "duration": 4.92,
+      "text": "customize the applications and you can"
+    },
+    {
+      "start": 197.04,
+      "duration": 5.22,
+      "text": "enhance devops workflows number three is"
+    },
+    {
+      "start": 199.98,
+      "duration": 3.899,
+      "text": "cloud computing python provides you with"
+    },
+    {
+      "start": 202.26,
+      "duration": 5.58,
+      "text": "libraries such as go to 3 or Apache"
+    },
+    {
+      "start": 203.879,
+      "duration": 6.0,
+      "text": "Cloud giving you access to AWS Azure gcp"
+    },
+    {
+      "start": 207.84,
+      "duration": 4.38,
+      "text": "so that you can deploy applications on"
+    },
+    {
+      "start": 209.879,
+      "duration": 4.561,
+      "text": "the cloud using python automating This"
+    },
+    {
+      "start": 212.22,
+      "duration": 4.32,
+      "text": "Cloud deployments using python can allow"
+    },
+    {
+      "start": 214.44,
+      "duration": 4.14,
+      "text": "teams to reduce manual errors increase"
+    },
+    {
+      "start": 216.54,
+      "duration": 4.14,
+      "text": "the deployment speed and to maintain"
+    },
+    {
+      "start": 218.58,
+      "duration": 4.32,
+      "text": "consistency among different environments"
+    },
+    {
+      "start": 220.68,
+      "duration": 4.5,
+      "text": "like production deployment and staging"
+    },
+    {
+      "start": 222.9,
+      "duration": 4.14,
+      "text": "not only this python can be easily"
+    },
+    {
+      "start": 225.18,
+      "duration": 3.86,
+      "text": "integrated with infrastructure as code"
+    },
+    {
+      "start": 227.04,
+      "duration": 4.44,
+      "text": "tools like terraform and cloudformation"
+    },
+    {
+      "start": 229.04,
+      "duration": 4.419,
+      "text": "so that you can manage Cloud resources"
+    },
+    {
+      "start": 231.48,
+      "duration": 4.08,
+      "text": "in the form of code also maintaining the"
+    },
+    {
+      "start": 233.459,
+      "duration": 4.081,
+      "text": "consistency and to save this code of"
+    },
+    {
+      "start": 235.56,
+      "duration": 3.0,
+      "text": "motion control systems like gitlab and"
+    },
+    {
+      "start": 237.54,
+      "duration": 2.759,
+      "text": "GitHub"
+    },
+    {
+      "start": 238.56,
+      "duration": 4.259,
+      "text": "and in the example I'm going to show you"
+    },
+    {
+      "start": 240.299,
+      "duration": 4.981,
+      "text": "how you can create ec2 instance using"
+    },
+    {
+      "start": 242.819,
+      "duration": 4.681,
+      "text": "python photo 3 module number four is"
+    },
+    {
+      "start": 245.28,
+      "duration": 4.26,
+      "text": "continualization continualization plays"
+    },
+    {
+      "start": 247.5,
+      "duration": 3.959,
+      "text": "an important role in modern devops and"
+    },
+    {
+      "start": 249.54,
+      "duration": 3.779,
+      "text": "every company is using containers to"
+    },
+    {
+      "start": 251.459,
+      "duration": 4.321,
+      "text": "deploy their application and that is"
+    },
+    {
+      "start": 253.319,
+      "duration": 4.561,
+      "text": "where python plays an important role a"
+    },
+    {
+      "start": 255.78,
+      "duration": 3.959,
+      "text": "devops engineer can use Python to work"
+    },
+    {
+      "start": 257.88,
+      "duration": 4.56,
+      "text": "with different controlization tools like"
+    },
+    {
+      "start": 259.739,
+      "duration": 4.861,
+      "text": "Docker kubernetes and openshift in case"
+    },
+    {
+      "start": 262.44,
+      "duration": 4.38,
+      "text": "of kubernetes a devops engineer can use"
+    },
+    {
+      "start": 264.6,
+      "duration": 4.08,
+      "text": "Python to create kubernetes deployment"
+    },
+    {
+      "start": 266.82,
+      "duration": 4.26,
+      "text": "script where they can Define how the"
+    },
+    {
+      "start": 268.68,
+      "duration": 4.2,
+      "text": "docker container should be deployed and"
+    },
+    {
+      "start": 271.08,
+      "duration": 3.3,
+      "text": "managed along with how many replica"
+    },
+    {
+      "start": 272.88,
+      "duration": 3.06,
+      "text": "should be there how should be the"
+    },
+    {
+      "start": 274.38,
+      "duration": 4.02,
+      "text": "scaling managed everything you can"
+    },
+    {
+      "start": 275.94,
+      "duration": 4.44,
+      "text": "Define in the form of Python scripts"
+    },
+    {
+      "start": 278.4,
+      "duration": 4.019,
+      "text": "with python devops Engineers can"
+    },
+    {
+      "start": 280.38,
+      "duration": 4.14,
+      "text": "automate container deployment and"
+    },
+    {
+      "start": 282.419,
+      "duration": 4.5,
+      "text": "management along with monitoring these"
+    },
+    {
+      "start": 284.52,
+      "duration": 4.739,
+      "text": "containers so to do this you can use"
+    },
+    {
+      "start": 286.919,
+      "duration": 4.201,
+      "text": "Python modules like kubernetes python"
+    },
+    {
+      "start": 289.259,
+      "duration": 4.561,
+      "text": "client which gives you access to"
+    },
+    {
+      "start": 291.12,
+      "duration": 5.88,
+      "text": "kubernetes API that can be used to"
+    },
+    {
+      "start": 293.82,
+      "duration": 4.5,
+      "text": "create delete or parts name spaces and"
+    },
+    {
+      "start": 297.0,
+      "duration": 3.419,
+      "text": "all the different kubernetes resources"
+    },
+    {
+      "start": 298.32,
+      "duration": 3.78,
+      "text": "so overall python is an ideal language"
+    },
+    {
+      "start": 300.419,
+      "duration": 3.601,
+      "text": "for manage managing containerized"
+    },
+    {
+      "start": 302.1,
+      "duration": 3.9,
+      "text": "application in devops environment number"
+    },
+    {
+      "start": 304.02,
+      "duration": 3.66,
+      "text": "five is monitoring and alerting"
+    },
+    {
+      "start": 306.0,
+      "duration": 3.78,
+      "text": "monitoring is very important for any"
+    },
+    {
+      "start": 307.68,
+      "duration": 4.32,
+      "text": "application a devops engineer use"
+    },
+    {
+      "start": 309.78,
+      "duration": 4.32,
+      "text": "monitoring to keep track of their system"
+    },
+    {
+      "start": 312.0,
+      "duration": 3.9,
+      "text": "metric application performance and"
+    },
+    {
+      "start": 314.1,
+      "duration": 4.86,
+      "text": "security events using tools like"
+    },
+    {
+      "start": 315.9,
+      "duration": 4.62,
+      "text": "Prometheus grafana or nazios one of the"
+    },
+    {
+      "start": 318.96,
+      "duration": 3.66,
+      "text": "example is python can be used with"
+    },
+    {
+      "start": 320.52,
+      "duration": 3.72,
+      "text": "monitoring tools like Prometheus so you"
+    },
+    {
+      "start": 322.62,
+      "duration": 4.38,
+      "text": "can create a python script to extract"
+    },
+    {
+      "start": 324.24,
+      "duration": 5.1,
+      "text": "metrics from various sources for example"
+    },
+    {
+      "start": 327.0,
+      "duration": 4.259,
+      "text": "getting CPU metrics or memory metrics"
+    },
+    {
+      "start": 329.34,
+      "duration": 4.74,
+      "text": "from a server and then configuring an"
+    },
+    {
+      "start": 331.259,
+      "duration": 5.401,
+      "text": "alerting rule such that if the CPU is 90"
+    },
+    {
+      "start": 334.08,
+      "duration": 5.7,
+      "text": "then an alert should be sent then to the"
+    },
+    {
+      "start": 336.66,
+      "duration": 5.819,
+      "text": "respected person using mails or SMS or"
+    },
+    {
+      "start": 339.78,
+      "duration": 4.5,
+      "text": "using slack so you can create a python"
+    },
+    {
+      "start": 342.479,
+      "duration": 3.901,
+      "text": "script to automate this process such"
+    },
+    {
+      "start": 344.28,
+      "duration": 3.72,
+      "text": "that whenever a CP view is reached at a"
+    },
+    {
+      "start": 346.38,
+      "duration": 3.96,
+      "text": "certain level a notification should be"
+    },
+    {
+      "start": 348.0,
+      "duration": 3.9,
+      "text": "sent so that people can quickly detect"
+    },
+    {
+      "start": 350.34,
+      "duration": 3.6,
+      "text": "and address the issue in the system"
+    },
+    {
+      "start": 351.9,
+      "duration": 4.44,
+      "text": "ensuring smooth operation and high"
+    },
+    {
+      "start": 353.94,
+      "duration": 3.96,
+      "text": "availability alternatively even though"
+    },
+    {
+      "start": 356.34,
+      "duration": 3.18,
+      "text": "you might have so many monitoring tools"
+    },
+    {
+      "start": 357.9,
+      "duration": 3.12,
+      "text": "there can be a situation where you need"
+    },
+    {
+      "start": 359.52,
+      "duration": 3.119,
+      "text": "to have a customized application for"
+    },
+    {
+      "start": 361.02,
+      "duration": 3.06,
+      "text": "monitoring and alerting and that is"
+    },
+    {
+      "start": 362.639,
+      "duration": 3.12,
+      "text": "where you can use Python to create a"
+    },
+    {
+      "start": 364.08,
+      "duration": 3.839,
+      "text": "customized monitoring and alerting"
+    },
+    {
+      "start": 365.759,
+      "duration": 5.22,
+      "text": "system using python modules like flask"
+    },
+    {
+      "start": 367.919,
+      "duration": 5.461,
+      "text": "or psutils and much more number six is"
+    },
+    {
+      "start": 370.979,
+      "duration": 4.321,
+      "text": "data analytics and visualization so as"
+    },
+    {
+      "start": 373.38,
+      "duration": 4.44,
+      "text": "we have seen how we use Python to get"
+    },
+    {
+      "start": 375.3,
+      "duration": 4.86,
+      "text": "metrics like CPU and memory from"
+    },
+    {
+      "start": 377.82,
+      "duration": 4.86,
+      "text": "different sources we can use this data"
+    },
+    {
+      "start": 380.16,
+      "duration": 4.14,
+      "text": "to analyze and to detect if there is"
+    },
+    {
+      "start": 382.68,
+      "duration": 3.66,
+      "text": "going to be any problem in the future we"
+    },
+    {
+      "start": 384.3,
+      "duration": 4.019,
+      "text": "can use Python to analyze this data to"
+    },
+    {
+      "start": 386.34,
+      "duration": 3.479,
+      "text": "detain the patterns or to detect any"
+    },
+    {
+      "start": 388.319,
+      "duration": 3.481,
+      "text": "issues that can come in near future"
+    },
+    {
+      "start": 389.819,
+      "duration": 4.021,
+      "text": "python provides you with modules like"
+    },
+    {
+      "start": 391.8,
+      "duration": 4.019,
+      "text": "pandas and matplotlib that can be used"
+    },
+    {
+      "start": 393.84,
+      "duration": 4.44,
+      "text": "to analyze this data to see security"
+    },
+    {
+      "start": 395.819,
+      "duration": 4.621,
+      "text": "threats and to avoid any issues along"
+    },
+    {
+      "start": 398.28,
+      "duration": 4.02,
+      "text": "with matplotlift which is used to create"
+    },
+    {
+      "start": 400.44,
+      "duration": 3.599,
+      "text": "charts so that we can visualize this"
+    },
+    {
+      "start": 402.3,
+      "duration": 3.78,
+      "text": "data so these are some of the common use"
+    },
+    {
+      "start": 404.039,
+      "duration": 4.021,
+      "text": "cases of how you can use by python but"
+    },
+    {
+      "start": 406.08,
+      "duration": 3.48,
+      "text": "there are Endless Options so there are"
+    },
+    {
+      "start": 408.06,
+      "duration": 4.5,
+      "text": "endless use cases of how you can use"
+    },
+    {
+      "start": 409.56,
+      "duration": 4.859,
+      "text": "Python now let's see some code"
+    },
+    {
+      "start": 412.56,
+      "duration": 3.419,
+      "text": "all right so I'm here on my computer"
+    },
+    {
+      "start": 414.419,
+      "duration": 4.62,
+      "text": "screen and let's see some real world"
+    },
+    {
+      "start": 415.979,
+      "duration": 5.581,
+      "text": "examples and the code for python so"
+    },
+    {
+      "start": 419.039,
+      "duration": 4.021,
+      "text": "first is I have some I have two examples"
+    },
+    {
+      "start": 421.56,
+      "duration": 5.88,
+      "text": "for you the first one is to create an"
+    },
+    {
+      "start": 423.06,
+      "duration": 6.78,
+      "text": "ec2 instance using python next is to use"
+    },
+    {
+      "start": 427.44,
+      "duration": 4.08,
+      "text": "Python to rotate the mySQL database"
+    },
+    {
+      "start": 429.84,
+      "duration": 3.72,
+      "text": "password automatically without you"
+    },
+    {
+      "start": 431.52,
+      "duration": 4.44,
+      "text": "running the query yourself and the third"
+    },
+    {
+      "start": 433.56,
+      "duration": 5.88,
+      "text": "I have an interesting example for you"
+    },
+    {
+      "start": 435.96,
+      "duration": 6.48,
+      "text": "which is a flask application using"
+    },
+    {
+      "start": 439.44,
+      "duration": 6.539,
+      "text": "psutil module to get the CPU and the"
+    },
+    {
+      "start": 442.44,
+      "duration": 5.159,
+      "text": "memory of the server so I have created a"
+    },
+    {
+      "start": 445.979,
+      "duration": 3.601,
+      "text": "full-fledged project for this and if you"
+    },
+    {
+      "start": 447.599,
+      "duration": 3.6,
+      "text": "want me to create a video for it you can"
+    },
+    {
+      "start": 449.58,
+      "duration": 4.14,
+      "text": "let me know in the comment section but"
+    },
+    {
+      "start": 451.199,
+      "duration": 4.801,
+      "text": "first let's see the working of these"
+    },
+    {
+      "start": 453.72,
+      "duration": 4.319,
+      "text": "examples one by one so the first example"
+    },
+    {
+      "start": 456.0,
+      "duration": 3.72,
+      "text": "is creating an ec2 instance let's say"
+    },
+    {
+      "start": 458.039,
+      "duration": 3.301,
+      "text": "you are working on a company as a devops"
+    },
+    {
+      "start": 459.72,
+      "duration": 4.319,
+      "text": "engineer and someone asked you to create"
+    },
+    {
+      "start": 461.34,
+      "duration": 5.16,
+      "text": "an ec2 instance or Cloud resources using"
+    },
+    {
+      "start": 464.039,
+      "duration": 5.041,
+      "text": "python so how would you do it"
+    },
+    {
+      "start": 466.5,
+      "duration": 4.86,
+      "text": "so for you to create resources in AWS"
+    },
+    {
+      "start": 469.08,
+      "duration": 4.5,
+      "text": "you need to use something known as boto3"
+    },
+    {
+      "start": 471.36,
+      "duration": 3.779,
+      "text": "which is a python SDK so if I show you"
+    },
+    {
+      "start": 473.58,
+      "duration": 3.6,
+      "text": "the documentation this is the"
+    },
+    {
+      "start": 475.139,
+      "duration": 5.28,
+      "text": "documentation here for Moto 3 and it"
+    },
+    {
+      "start": 477.18,
+      "duration": 5.76,
+      "text": "says you can use AWS SDK for python to"
+    },
+    {
+      "start": 480.419,
+      "duration": 5.101,
+      "text": "create configure and manage AWS services"
+    },
+    {
+      "start": 482.94,
+      "duration": 4.979,
+      "text": "so using Moto 3 you can manage all types"
+    },
+    {
+      "start": 485.52,
+      "duration": 5.459,
+      "text": "of services not just ec2 you can create"
+    },
+    {
+      "start": 487.919,
+      "duration": 4.861,
+      "text": "S3 you can create kubernetes clusters"
+    },
+    {
+      "start": 490.979,
+      "duration": 3.541,
+      "text": "you can create anything you want for"
+    },
+    {
+      "start": 492.78,
+      "duration": 4.139,
+      "text": "example if I show you an example here"
+    },
+    {
+      "start": 494.52,
+      "duration": 4.799,
+      "text": "which is Amazon S3 so you can create"
+    },
+    {
+      "start": 496.919,
+      "duration": 4.861,
+      "text": "Amazon S3 buckets using Moto 3 so here"
+    },
+    {
+      "start": 499.319,
+      "duration": 5.1,
+      "text": "is the code to create Amazon S3 bucket"
+    },
+    {
+      "start": 501.78,
+      "duration": 4.74,
+      "text": "which is using Ubuntu 3 as a module so"
+    },
+    {
+      "start": 504.419,
+      "duration": 3.78,
+      "text": "similarly we are going to use boto 3 for"
+    },
+    {
+      "start": 506.52,
+      "duration": 3.54,
+      "text": "query and ec2 instance and set the"
+    },
+    {
+      "start": 508.199,
+      "duration": 3.601,
+      "text": "client as ec2 because we are working on"
+    },
+    {
+      "start": 510.06,
+      "duration": 3.839,
+      "text": "ec2 next we are going to define the"
+    },
+    {
+      "start": 511.8,
+      "duration": 3.539,
+      "text": "parameters of what is the image ID for"
+    },
+    {
+      "start": 513.899,
+      "duration": 3.721,
+      "text": "the instance we want to create what is"
+    },
+    {
+      "start": 515.339,
+      "duration": 4.62,
+      "text": "the type which is T2 Micro Key name"
+    },
+    {
+      "start": 517.62,
+      "duration": 4.2,
+      "text": "Security Group ID and submit ID once I"
+    },
+    {
+      "start": 519.959,
+      "duration": 3.721,
+      "text": "fill in all these details I'm going to"
+    },
+    {
+      "start": 521.82,
+      "duration": 4.2,
+      "text": "launch the instance with this response"
+    },
+    {
+      "start": 523.68,
+      "duration": 4.8,
+      "text": "and then once the instance is launched"
+    },
+    {
+      "start": 526.02,
+      "duration": 4.92,
+      "text": "it should give main sense ID public IP"
+    },
+    {
+      "start": 528.48,
+      "duration": 4.26,
+      "text": "and private IP in my terminal"
+    },
+    {
+      "start": 530.94,
+      "duration": 3.12,
+      "text": "so let's try to run this but before I"
+    },
+    {
+      "start": 532.74,
+      "duration": 4.32,
+      "text": "run this let me show you that I don't"
+    },
+    {
+      "start": 534.06,
+      "duration": 4.98,
+      "text": "have any instance in my account which is"
+    },
+    {
+      "start": 537.06,
+      "duration": 4.62,
+      "text": "in running state so right now you can"
+    },
+    {
+      "start": 539.04,
+      "duration": 4.02,
+      "text": "see there is no instance in my account"
+    },
+    {
+      "start": 541.68,
+      "duration": 3.3,
+      "text": "which is in running State and after I"
+    },
+    {
+      "start": 543.06,
+      "duration": 3.36,
+      "text": "done this after I run the script I"
+    },
+    {
+      "start": 544.98,
+      "duration": 4.62,
+      "text": "should have an instance in the account"
+    },
+    {
+      "start": 546.42,
+      "duration": 5.46,
+      "text": "so let's go and run the command"
+    },
+    {
+      "start": 549.6,
+      "duration": 4.5,
+      "text": "before you run this make sure if you're"
+    },
+    {
+      "start": 551.88,
+      "duration": 4.32,
+      "text": "trying it yourself you have done the AWS"
+    },
+    {
+      "start": 554.1,
+      "duration": 4.08,
+      "text": "configure command to set the keys or"
+    },
+    {
+      "start": 556.2,
+      "duration": 3.9,
+      "text": "else it will not work so you need to run"
+    },
+    {
+      "start": 558.18,
+      "duration": 3.9,
+      "text": "this command set the keys access key"
+    },
+    {
+      "start": 560.1,
+      "duration": 3.78,
+      "text": "secret access key region and the output"
+    },
+    {
+      "start": 562.08,
+      "duration": 4.08,
+      "text": "once you do this then you can run the"
+    },
+    {
+      "start": 563.88,
+      "duration": 4.68,
+      "text": "run the file so for me I have already"
+    },
+    {
+      "start": 566.16,
+      "duration": 4.08,
+      "text": "done the AWS configure so I will go"
+    },
+    {
+      "start": 568.56,
+      "duration": 3.839,
+      "text": "ahead and run the file"
+    },
+    {
+      "start": 570.24,
+      "duration": 3.779,
+      "text": "so Python 3"
+    },
+    {
+      "start": 572.399,
+      "duration": 5.88,
+      "text": "and the name of the file which is create"
+    },
+    {
+      "start": 574.019,
+      "duration": 6.541,
+      "text": "ec2 dot Pi so if I once I do this my"
+    },
+    {
+      "start": 578.279,
+      "duration": 4.381,
+      "text": "python is going to run because it is not"
+    },
+    {
+      "start": 580.56,
+      "duration": 3.839,
+      "text": "showing any error and we have to wait it"
+    },
+    {
+      "start": 582.66,
+      "duration": 3.54,
+      "text": "will not show us an output unless and"
+    },
+    {
+      "start": 584.399,
+      "duration": 3.901,
+      "text": "until the instance is in running state"
+    },
+    {
+      "start": 586.2,
+      "duration": 4.68,
+      "text": "but if I show you my console here"
+    },
+    {
+      "start": 588.3,
+      "duration": 4.62,
+      "text": "so in here right now you can see there"
+    },
+    {
+      "start": 590.88,
+      "duration": 3.899,
+      "text": "is no but if I refresh something I"
+    },
+    {
+      "start": 592.92,
+      "duration": 4.44,
+      "text": "should have an instance in pending state"
+    },
+    {
+      "start": 594.779,
+      "duration": 4.801,
+      "text": "which is here so instance which is T2"
+    },
+    {
+      "start": 597.36,
+      "duration": 4.14,
+      "text": "micro is in pending State having this"
+    },
+    {
+      "start": 599.58,
+      "duration": 4.319,
+      "text": "subnet ID having the key pair as"
+    },
+    {
+      "start": 601.5,
+      "duration": 5.04,
+      "text": "WordPress so you can and if I compare it"
+    },
+    {
+      "start": 603.899,
+      "duration": 4.741,
+      "text": "with the instance that we have here"
+    },
+    {
+      "start": 606.54,
+      "duration": 3.9,
+      "text": "let's see right now it is not showing us"
+    },
+    {
+      "start": 608.64,
+      "duration": 3.3,
+      "text": "output because we have a condition set"
+    },
+    {
+      "start": 610.44,
+      "duration": 3.54,
+      "text": "that unless the instance is in running"
+    },
+    {
+      "start": 611.94,
+      "duration": 3.899,
+      "text": "State don't show me the output but now"
+    },
+    {
+      "start": 613.98,
+      "duration": 5.46,
+      "text": "the instance is in running state so we"
+    },
+    {
+      "start": 615.839,
+      "duration": 6.721,
+      "text": "have the output of the ID public IP"
+    },
+    {
+      "start": 619.44,
+      "duration": 7.399,
+      "text": "private IP all of it so"
+    },
+    {
+      "start": 622.56,
+      "duration": 7.58,
+      "text": "here you can see the instance has"
+    },
+    {
+      "start": 626.839,
+      "duration": 5.56,
+      "text": "54.20547184 as public IP and"
+    },
+    {
+      "start": 630.14,
+      "duration": 4.66,
+      "text": "1723189.2 which means we have"
+    },
+    {
+      "start": 632.399,
+      "duration": 5.641,
+      "text": "successfully created an ec2 instance"
+    },
+    {
+      "start": 634.8,
+      "duration": 6.84,
+      "text": "using python so if you want you can try"
+    },
+    {
+      "start": 638.04,
+      "duration": 6.239,
+      "text": "this out you can create a VPC S3 sqs"
+    },
+    {
+      "start": 641.64,
+      "duration": 4.8,
+      "text": "Lambda anything using python so this is"
+    },
+    {
+      "start": 644.279,
+      "duration": 5.041,
+      "text": "how you can create an ec2 instance or"
+    },
+    {
+      "start": 646.44,
+      "duration": 5.459,
+      "text": "any Cloud resource using python next"
+    },
+    {
+      "start": 649.32,
+      "duration": 4.56,
+      "text": "example is password rotation example so"
+    },
+    {
+      "start": 651.899,
+      "duration": 3.661,
+      "text": "right now so I have MySQL in my local"
+    },
+    {
+      "start": 653.88,
+      "duration": 5.459,
+      "text": "machine and if I try to login"
+    },
+    {
+      "start": 655.56,
+      "duration": 6.86,
+      "text": "MySQL hyphenu hyphoon p this is the"
+    },
+    {
+      "start": 659.339,
+      "duration": 3.081,
+      "text": "password Here"
+    },
+    {
+      "start": 664.62,
+      "duration": 6.839,
+      "text": "so you can see I'm inside my MySQL shell"
+    },
+    {
+      "start": 667.44,
+      "duration": 6.48,
+      "text": "so this code python code is used to run"
+    },
+    {
+      "start": 671.459,
+      "duration": 4.261,
+      "text": "a query which is Alter user root at the"
+    },
+    {
+      "start": 673.92,
+      "duration": 4.56,
+      "text": "rate localized with localhost with this"
+    },
+    {
+      "start": 675.72,
+      "duration": 4.26,
+      "text": "password so I'm trying to create a"
+    },
+    {
+      "start": 678.48,
+      "duration": 3.9,
+      "text": "script to rotate the password of my"
+    },
+    {
+      "start": 679.98,
+      "duration": 4.5,
+      "text": "mySQL database automatically it should"
+    },
+    {
+      "start": 682.38,
+      "duration": 4.8,
+      "text": "create the password itself and then use"
+    },
+    {
+      "start": 684.48,
+      "duration": 4.26,
+      "text": "that as a new password so let's try to"
+    },
+    {
+      "start": 687.18,
+      "duration": 3.599,
+      "text": "run the script the script is using sub"
+    },
+    {
+      "start": 688.74,
+      "duration": 3.96,
+      "text": "process string and random as a module"
+    },
+    {
+      "start": 690.779,
+      "duration": 3.961,
+      "text": "sub processes to change run the query"
+    },
+    {
+      "start": 692.7,
+      "duration": 4.259,
+      "text": "string is to create this new password"
+    },
+    {
+      "start": 694.74,
+      "duration": 4.02,
+      "text": "and random to generate some random data"
+    },
+    {
+      "start": 696.959,
+      "duration": 3.781,
+      "text": "which is going to be used to create new"
+    },
+    {
+      "start": 698.76,
+      "duration": 3.18,
+      "text": "password so once I run the script this"
+    },
+    {
+      "start": 700.74,
+      "duration": 3.24,
+      "text": "is going to ask me for the current"
+    },
+    {
+      "start": 701.94,
+      "duration": 4.079,
+      "text": "password once I give the correct"
+    },
+    {
+      "start": 703.98,
+      "duration": 3.72,
+      "text": "password it will run this query which is"
+    },
+    {
+      "start": 706.019,
+      "duration": 3.961,
+      "text": "Alter user and then it will show us the"
+    },
+    {
+      "start": 707.7,
+      "duration": 4.92,
+      "text": "new password and it can also save it in"
+    },
+    {
+      "start": 709.98,
+      "duration": 5.28,
+      "text": "this file which is here so let's try to"
+    },
+    {
+      "start": 712.62,
+      "duration": 5.58,
+      "text": "run this I'm going to run Python 3 and"
+    },
+    {
+      "start": 715.26,
+      "duration": 5.1,
+      "text": "the name of the file which has password"
+    },
+    {
+      "start": 718.2,
+      "duration": 3.54,
+      "text": "if I press enter it will ask me for the"
+    },
+    {
+      "start": 720.36,
+      "duration": 3.539,
+      "text": "new bus Which with for the current"
+    },
+    {
+      "start": 721.74,
+      "duration": 5.4,
+      "text": "password which is here which I'm going"
+    },
+    {
+      "start": 723.899,
+      "duration": 5.041,
+      "text": "to paste that one and press enter once I"
+    },
+    {
+      "start": 727.14,
+      "duration": 3.42,
+      "text": "do this it gives us a new password which"
+    },
+    {
+      "start": 728.94,
+      "duration": 3.6,
+      "text": "is this let's try to see if this is"
+    },
+    {
+      "start": 730.56,
+      "duration": 5.219,
+      "text": "working or not so I'm going to go to my"
+    },
+    {
+      "start": 732.54,
+      "duration": 7.14,
+      "text": "MySQL shell exit from here let me make"
+    },
+    {
+      "start": 735.779,
+      "duration": 5.701,
+      "text": "this pick so that you can see it clearly"
+    },
+    {
+      "start": 739.68,
+      "duration": 5.94,
+      "text": "so I'm going to run the same command and"
+    },
+    {
+      "start": 741.48,
+      "duration": 7.22,
+      "text": "this time uh if I use the previous one"
+    },
+    {
+      "start": 745.62,
+      "duration": 3.08,
+      "text": "if I use the previous"
+    },
+    {
+      "start": 750.779,
+      "duration": 4.441,
+      "text": "it will show us an error saying access"
+    },
+    {
+      "start": 752.88,
+      "duration": 4.56,
+      "text": "denied so I need to use the new password"
+    },
+    {
+      "start": 755.22,
+      "duration": 4.739,
+      "text": "because python has changed that changed"
+    },
+    {
+      "start": 757.44,
+      "duration": 4.62,
+      "text": "it for us so I'm going to run use this"
+    },
+    {
+      "start": 759.959,
+      "duration": 4.32,
+      "text": "password now and see if it actually"
+    },
+    {
+      "start": 762.06,
+      "duration": 4.2,
+      "text": "works or not"
+    },
+    {
+      "start": 764.279,
+      "duration": 3.421,
+      "text": "so you can see we are inside our MySQL"
+    },
+    {
+      "start": 766.26,
+      "duration": 3.6,
+      "text": "shell which means python has"
+    },
+    {
+      "start": 767.7,
+      "duration": 4.139,
+      "text": "successfully rotated the password and"
+    },
+    {
+      "start": 769.86,
+      "duration": 5.219,
+      "text": "you can customize this to run this"
+    },
+    {
+      "start": 771.839,
+      "duration": 4.8,
+      "text": "script every day maybe at two o'clock or"
+    },
+    {
+      "start": 775.079,
+      "duration": 3.121,
+      "text": "one o'clock whenever you want and this"
+    },
+    {
+      "start": 776.639,
+      "duration": 3.301,
+      "text": "should do the things automatically for"
+    },
+    {
+      "start": 778.2,
+      "duration": 3.6,
+      "text": "you you can also customize it to not ask"
+    },
+    {
+      "start": 779.94,
+      "duration": 4.44,
+      "text": "you for the prompt and get the things"
+    },
+    {
+      "start": 781.8,
+      "duration": 4.56,
+      "text": "either from Secret managers on AWS or"
+    },
+    {
+      "start": 784.38,
+      "duration": 5.04,
+      "text": "from a file so this is how you can use"
+    },
+    {
+      "start": 786.36,
+      "duration": 4.44,
+      "text": "Python to automate your task that you do"
+    },
+    {
+      "start": 789.42,
+      "duration": 3.479,
+      "text": "every day"
+    },
+    {
+      "start": 790.8,
+      "duration": 5.339,
+      "text": "let me show you another project which is"
+    },
+    {
+      "start": 792.899,
+      "duration": 4.38,
+      "text": "more amazing or more fun so here we have"
+    },
+    {
+      "start": 796.139,
+      "duration": 2.76,
+      "text": "a project"
+    },
+    {
+      "start": 797.279,
+      "duration": 4.56,
+      "text": "so this is a project which is created in"
+    },
+    {
+      "start": 798.899,
+      "duration": 4.981,
+      "text": "flask flask module and then it uses A"
+    },
+    {
+      "start": 801.839,
+      "duration": 4.68,
+      "text": "Pas util module which is used to get the"
+    },
+    {
+      "start": 803.88,
+      "duration": 5.519,
+      "text": "CPU metric and the memory metric of your"
+    },
+    {
+      "start": 806.519,
+      "duration": 5.101,
+      "text": "server so when I run this"
+    },
+    {
+      "start": 809.399,
+      "duration": 4.081,
+      "text": "python script is going to get the CPU"
+    },
+    {
+      "start": 811.62,
+      "duration": 4.019,
+      "text": "and the memory of my server and if it is"
+    },
+    {
+      "start": 813.48,
+      "duration": 3.96,
+      "text": "more than 80 it will show us this"
+    },
+    {
+      "start": 815.639,
+      "duration": 4.561,
+      "text": "message so let's try to run this I'm"
+    },
+    {
+      "start": 817.44,
+      "duration": 5.16,
+      "text": "going to run the Python 3 and the name"
+    },
+    {
+      "start": 820.2,
+      "duration": 4.319,
+      "text": "of the file which is this once I do this"
+    },
+    {
+      "start": 822.6,
+      "duration": 3.84,
+      "text": "it's going to run on 4.5"
+    },
+    {
+      "start": 824.519,
+      "duration": 5.521,
+      "text": "000 and"
+    },
+    {
+      "start": 826.44,
+      "duration": 5.94,
+      "text": "here is the result so you can see it is"
+    },
+    {
+      "start": 830.04,
+      "duration": 4.919,
+      "text": "a system monitoring application which is"
+    },
+    {
+      "start": 832.38,
+      "duration": 4.8,
+      "text": "getting a CPU utilization as 20 and"
+    },
+    {
+      "start": 834.959,
+      "duration": 4.32,
+      "text": "memory s38 if I refresh it will get real"
+    },
+    {
+      "start": 837.18,
+      "duration": 5.279,
+      "text": "time metric so you can see it's updating"
+    },
+    {
+      "start": 839.279,
+      "duration": 5.281,
+      "text": "according to my server metrics so this"
+    },
+    {
+      "start": 842.459,
+      "duration": 3.801,
+      "text": "is how you can create your own"
+    },
+    {
+      "start": 844.56,
+      "duration": 5.219,
+      "text": "monitoring application using python"
+    },
+    {
+      "start": 846.26,
+      "duration": 5.74,
+      "text": "flask and psudel so I have created this"
+    },
+    {
+      "start": 849.779,
+      "duration": 4.021,
+      "text": "full flash product where I've dockerized"
+    },
+    {
+      "start": 852.0,
+      "duration": 4.019,
+      "text": "this application to host it on"
+    },
+    {
+      "start": 853.8,
+      "duration": 5.279,
+      "text": "kubernetes clusters so you can see I'm"
+    },
+    {
+      "start": 856.019,
+      "duration": 4.801,
+      "text": "using porto3 module to create ECR which"
+    },
+    {
+      "start": 859.079,
+      "duration": 4.5,
+      "text": "is elastic container registry where I'm"
+    },
+    {
+      "start": 860.82,
+      "duration": 6.0,
+      "text": "going to store my Docker image and I"
+    },
+    {
+      "start": 863.579,
+      "duration": 4.861,
+      "text": "also created kubernetes as I said python"
+    },
+    {
+      "start": 866.82,
+      "duration": 3.66,
+      "text": "can be integrated with kubernetes so we"
+    },
+    {
+      "start": 868.44,
+      "duration": 3.899,
+      "text": "have used kubernetes module here which"
+    },
+    {
+      "start": 870.48,
+      "duration": 4.74,
+      "text": "is used to"
+    },
+    {
+      "start": 872.339,
+      "duration": 4.321,
+      "text": "create deployments or manage any"
+    },
+    {
+      "start": 875.22,
+      "duration": 3.96,
+      "text": "kubernetes architectures like pod"
+    },
+    {
+      "start": 876.66,
+      "duration": 4.799,
+      "text": "namespaces in this project I'm using"
+    },
+    {
+      "start": 879.18,
+      "duration": 5.64,
+      "text": "kubernetes module to create a deployment"
+    },
+    {
+      "start": 881.459,
+      "duration": 5.94,
+      "text": "file which is going to host my my flask"
+    },
+    {
+      "start": 884.82,
+      "duration": 4.44,
+      "text": "cap using this image so I can Define"
+    },
+    {
+      "start": 887.399,
+      "duration": 3.601,
+      "text": "anything I want along with the container"
+    },
+    {
+      "start": 889.26,
+      "duration": 4.439,
+      "text": "port and I'm also creating a service"
+    },
+    {
+      "start": 891.0,
+      "duration": 4.44,
+      "text": "here so the service is this I'm going to"
+    },
+    {
+      "start": 893.699,
+      "duration": 3.541,
+      "text": "launch this pod in my default namespace"
+    },
+    {
+      "start": 895.44,
+      "duration": 3.0,
+      "text": "so everything I'm going to customize and"
+    },
+    {
+      "start": 897.24,
+      "duration": 3.12,
+      "text": "I don't need to do anything manually"
+    },
+    {
+      "start": 898.44,
+      "duration": 4.139,
+      "text": "this application will be done everything"
+    },
+    {
+      "start": 900.36,
+      "duration": 4.919,
+      "text": "in Python if you want me to create a"
+    },
+    {
+      "start": 902.579,
+      "duration": 4.081,
+      "text": "video on this project let me know in the"
+    },
+    {
+      "start": 905.279,
+      "duration": 3.481,
+      "text": "comment section"
+    },
+    {
+      "start": 906.66,
+      "duration": 4.02,
+      "text": "but I hope now you have an idea of how"
+    },
+    {
+      "start": 908.76,
+      "duration": 4.439,
+      "text": "you can use Python to do everyday tasks"
+    },
+    {
+      "start": 910.68,
+      "duration": 4.62,
+      "text": "or to integrate it with different devops"
+    },
+    {
+      "start": 913.199,
+      "duration": 3.901,
+      "text": "tools or to create infrastructure on the"
+    },
+    {
+      "start": 915.3,
+      "duration": 3.539,
+      "text": "cloud if you have any questions any"
+    },
+    {
+      "start": 917.1,
+      "duration": 4.14,
+      "text": "doubt let me know in the comment section"
+    },
+    {
+      "start": 918.839,
+      "duration": 4.881,
+      "text": "and I will answer it all thank you have"
+    },
+    {
+      "start": 921.24,
+      "duration": 2.48,
+      "text": "a good day"
+    }
+  ]
+}

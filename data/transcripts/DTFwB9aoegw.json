@@ -1,0 +1,1101 @@
+{
+  "video": {
+    "id": "DTFwB9aoegw",
+    "title": "Elastic Block Store Volumes in AWS EC2 |What is Amazon EBS | EBS Tutorial for Beginners",
+    "url": "https://www.youtube.com/watch?v=DTFwB9aoegw",
+    "duration": 475,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 3.84,
+      "text": "hello and welcome to Cloud champ in this"
+    },
+    {
+      "start": 2.58,
+      "duration": 4.679,
+      "text": "video we are going to learn about the"
+    },
+    {
+      "start": 4.08,
+      "duration": 4.86,
+      "text": "EBS volumes in ec2 instance so EPS is"
+    },
+    {
+      "start": 7.259,
+      "duration": 3.96,
+      "text": "elastic Block store and is one of the"
+    },
+    {
+      "start": 8.94,
+      "duration": 5.88,
+      "text": "storage options inside and ec2 instance"
+    },
+    {
+      "start": 11.219,
+      "duration": 5.281,
+      "text": "we are going to see what VBS EBS are and"
+    },
+    {
+      "start": 14.82,
+      "duration": 3.12,
+      "text": "what are the different features in EBS"
+    },
+    {
+      "start": 16.5,
+      "duration": 3.3,
+      "text": "in the next video we're going to see"
+    },
+    {
+      "start": 17.94,
+      "duration": 4.14,
+      "text": "what are snapshots and how can you"
+    },
+    {
+      "start": 19.8,
+      "duration": 3.6,
+      "text": "create a snapshot from an EBS volume so"
+    },
+    {
+      "start": 22.08,
+      "duration": 3.42,
+      "text": "this is going to be a series of videos"
+    },
+    {
+      "start": 23.4,
+      "duration": 3.6,
+      "text": "on EBS and if you want to learn more"
+    },
+    {
+      "start": 25.5,
+      "duration": 3.72,
+      "text": "about EBS you can check out the videos"
+    },
+    {
+      "start": 27.0,
+      "duration": 3.779,
+      "text": "on my channel and if you have not"
+    },
+    {
+      "start": 29.22,
+      "duration": 3.539,
+      "text": "subscribed to not subscribed to my"
+    },
+    {
+      "start": 30.779,
+      "duration": 4.44,
+      "text": "channel yet please subscribe to my"
+    },
+    {
+      "start": 32.759,
+      "duration": 4.561,
+      "text": "channel because 85 percent of my viewers"
+    },
+    {
+      "start": 35.219,
+      "duration": 4.261,
+      "text": "have not subscribed yet which is not a"
+    },
+    {
+      "start": 37.32,
+      "duration": 4.8,
+      "text": "good thing so please subscribe to my"
+    },
+    {
+      "start": 39.48,
+      "duration": 5.34,
+      "text": "channel and let's start with EBS"
+    },
+    {
+      "start": 42.12,
+      "duration": 4.8,
+      "text": "so ABS or elastic Block store are"
+    },
+    {
+      "start": 44.82,
+      "duration": 4.5,
+      "text": "volumes and you can consider them as a"
+    },
+    {
+      "start": 46.92,
+      "duration": 4.26,
+      "text": "pen drive or a USB stick so the idea is"
+    },
+    {
+      "start": 49.32,
+      "duration": 3.66,
+      "text": "you can create volume you can create an"
+    },
+    {
+      "start": 51.18,
+      "duration": 4.26,
+      "text": "ABS volume and you can attach it to any"
+    },
+    {
+      "start": 52.98,
+      "duration": 4.079,
+      "text": "of the instance so an EBS or elastic"
+    },
+    {
+      "start": 55.44,
+      "duration": 3.0,
+      "text": "Block store is a network drive that you"
+    },
+    {
+      "start": 57.059,
+      "duration": 3.18,
+      "text": "can attach to your instance while they"
+    },
+    {
+      "start": 58.44,
+      "duration": 3.48,
+      "text": "run and it allows your instance to"
+    },
+    {
+      "start": 60.239,
+      "duration": 3.841,
+      "text": "purchase the data process means you can"
+    },
+    {
+      "start": 61.92,
+      "duration": 3.9,
+      "text": "skip the data even of the instance is"
+    },
+    {
+      "start": 64.08,
+      "duration": 3.84,
+      "text": "terminated even after the instance is"
+    },
+    {
+      "start": 65.82,
+      "duration": 4.02,
+      "text": "deleted and they can only be mounted to"
+    },
+    {
+      "start": 67.92,
+      "duration": 4.08,
+      "text": "an instance one instance at a time you"
+    },
+    {
+      "start": 69.84,
+      "duration": 5.16,
+      "text": "can have multiple volumes to an instance"
+    },
+    {
+      "start": 72.0,
+      "duration": 4.979,
+      "text": "but but you cannot have a single EPS for"
+    },
+    {
+      "start": 75.0,
+      "duration": 3.78,
+      "text": "multiple instance just they are bounded"
+    },
+    {
+      "start": 76.979,
+      "duration": 4.14,
+      "text": "to specific availability Zone which"
+    },
+    {
+      "start": 78.78,
+      "duration": 4.8,
+      "text": "means you can only use your volume if"
+    },
+    {
+      "start": 81.119,
+      "duration": 4.741,
+      "text": "your instance is in the same AZ as the"
+    },
+    {
+      "start": 83.58,
+      "duration": 4.26,
+      "text": "volume so think of them as a network USB"
+    },
+    {
+      "start": 85.86,
+      "duration": 3.84,
+      "text": "stick which you can attach it from one"
+    },
+    {
+      "start": 87.84,
+      "duration": 4.02,
+      "text": "instance to another like you do with"
+    },
+    {
+      "start": 89.7,
+      "duration": 4.38,
+      "text": "your pen drive or with your USB you"
+    },
+    {
+      "start": 91.86,
+      "duration": 3.48,
+      "text": "store your data in a USB drive and then"
+    },
+    {
+      "start": 94.08,
+      "duration": 2.999,
+      "text": "you can attach it to any other laptop"
+    },
+    {
+      "start": 95.34,
+      "duration": 3.9,
+      "text": "and you can start using it same"
+    },
+    {
+      "start": 97.079,
+      "duration": 4.741,
+      "text": "similarly you can use EBS volumes that"
+    },
+    {
+      "start": 99.24,
+      "duration": 5.1,
+      "text": "way so let's go and launch an instance"
+    },
+    {
+      "start": 101.82,
+      "duration": 5.28,
+      "text": "so if I click on ec2 I am right now in"
+    },
+    {
+      "start": 104.34,
+      "duration": 4.739,
+      "text": "my ec2 service and here I can click on"
+    },
+    {
+      "start": 107.1,
+      "duration": 3.72,
+      "text": "launch instance option so I can click on"
+    },
+    {
+      "start": 109.079,
+      "duration": 4.921,
+      "text": "launch instance option"
+    },
+    {
+      "start": 110.82,
+      "duration": 4.439,
+      "text": "I can click on give this a name EBS"
+    },
+    {
+      "start": 114.0,
+      "duration": 4.02,
+      "text": "instance"
+    },
+    {
+      "start": 115.259,
+      "duration": 4.741,
+      "text": "and I want to have Amazon Linux the"
+    },
+    {
+      "start": 118.02,
+      "duration": 4.5,
+      "text": "thing that we need to look here is going"
+    },
+    {
+      "start": 120.0,
+      "duration": 6.119,
+      "text": "to be the storage option where you where"
+    },
+    {
+      "start": 122.52,
+      "duration": 4.559,
+      "text": "you get EBS general purpose storage so"
+    },
+    {
+      "start": 126.119,
+      "duration": 3.181,
+      "text": "we are going to learn about the"
+    },
+    {
+      "start": 127.079,
+      "duration": 5.221,
+      "text": "different types in ABS which are general"
+    },
+    {
+      "start": 129.3,
+      "duration": 5.46,
+      "text": "purpose provisioned iops magnetic store"
+    },
+    {
+      "start": 132.3,
+      "duration": 4.439,
+      "text": "and cold HDD so we're going to look that"
+    },
+    {
+      "start": 134.76,
+      "duration": 4.08,
+      "text": "in the next video you can check out my"
+    },
+    {
+      "start": 136.739,
+      "duration": 4.381,
+      "text": "channel for the videos so now I'm going"
+    },
+    {
+      "start": 138.84,
+      "duration": 5.039,
+      "text": "to launch this instance giving it a key"
+    },
+    {
+      "start": 141.12,
+      "duration": 4.199,
+      "text": "pair my ec2 key"
+    },
+    {
+      "start": 143.879,
+      "duration": 3.301,
+      "text": "I don't want to change the network"
+    },
+    {
+      "start": 145.319,
+      "duration": 4.5,
+      "text": "storage I'm using the"
+    },
+    {
+      "start": 147.18,
+      "duration": 4.98,
+      "text": "existing Security Group"
+    },
+    {
+      "start": 149.819,
+      "duration": 4.261,
+      "text": "and here you can configure a storage so"
+    },
+    {
+      "start": 152.16,
+      "duration": 4.02,
+      "text": "you already by default by default you"
+    },
+    {
+      "start": 154.08,
+      "duration": 4.08,
+      "text": "get 8GB of storage when using the Linux"
+    },
+    {
+      "start": 156.18,
+      "duration": 5.1,
+      "text": "and you get 30 GB of storage when you"
+    },
+    {
+      "start": 158.16,
+      "duration": 5.34,
+      "text": "use Windows instances so I right now by"
+    },
+    {
+      "start": 161.28,
+      "duration": 4.02,
+      "text": "default I have 8 GB of storage but I can"
+    },
+    {
+      "start": 163.5,
+      "duration": 4.44,
+      "text": "add more volumes I can add more ABS"
+    },
+    {
+      "start": 165.3,
+      "duration": 5.34,
+      "text": "volumes so I can add more EBS volume of"
+    },
+    {
+      "start": 167.94,
+      "duration": 5.159,
+      "text": "let's say 8GB or 9gb 10gb whatever you"
+    },
+    {
+      "start": 170.64,
+      "duration": 5.64,
+      "text": "want but it cannot be less than 8 GB so"
+    },
+    {
+      "start": 173.099,
+      "duration": 5.28,
+      "text": "8GB is the limit you cannot have 7654 so"
+    },
+    {
+      "start": 176.28,
+      "duration": 4.319,
+      "text": "you need to have 8 GB of storage and it"
+    },
+    {
+      "start": 178.379,
+      "duration": 3.0,
+      "text": "can go up to 100 GB 200gb whatever you"
+    },
+    {
+      "start": 180.599,
+      "duration": 2.941,
+      "text": "want"
+    },
+    {
+      "start": 181.379,
+      "duration": 4.14,
+      "text": "so this instance should have two volumes"
+    },
+    {
+      "start": 183.54,
+      "duration": 3.66,
+      "text": "now so I'm going to go here and click on"
+    },
+    {
+      "start": 185.519,
+      "duration": 3.36,
+      "text": "launch instance"
+    },
+    {
+      "start": 187.2,
+      "duration": 4.86,
+      "text": "so my instance is going to be created"
+    },
+    {
+      "start": 188.879,
+      "duration": 6.14,
+      "text": "and I have two volumes attached to it"
+    },
+    {
+      "start": 192.06,
+      "duration": 2.959,
+      "text": "so let's see that"
+    },
+    {
+      "start": 195.36,
+      "duration": 3.12,
+      "text": "so you can see my instances in pending"
+    },
+    {
+      "start": 197.04,
+      "duration": 4.619,
+      "text": "state but if I click here and go to"
+    },
+    {
+      "start": 198.48,
+      "duration": 4.92,
+      "text": "storage I can see two storage attached"
+    },
+    {
+      "start": 201.659,
+      "duration": 3.781,
+      "text": "to it and both of them are attaching"
+    },
+    {
+      "start": 203.4,
+      "duration": 5.04,
+      "text": "right now both of them having volume"
+    },
+    {
+      "start": 205.44,
+      "duration": 4.92,
+      "text": "size 8GB 8GB so this is done when you"
+    },
+    {
+      "start": 208.44,
+      "duration": 3.84,
+      "text": "create the instance but what if you want"
+    },
+    {
+      "start": 210.36,
+      "duration": 3.54,
+      "text": "to attach and attach a volume to an"
+    },
+    {
+      "start": 212.28,
+      "duration": 3.78,
+      "text": "existing ec2 instance that is already"
+    },
+    {
+      "start": 213.9,
+      "duration": 4.619,
+      "text": "launched how do we do that so let's"
+    },
+    {
+      "start": 216.06,
+      "duration": 4.319,
+      "text": "let's check an example of this instance"
+    },
+    {
+      "start": 218.519,
+      "duration": 4.5,
+      "text": "which is postgres here so I need to"
+    },
+    {
+      "start": 220.379,
+      "duration": 4.801,
+      "text": "attach a volume here so let's say"
+    },
+    {
+      "start": 223.019,
+      "duration": 3.481,
+      "text": "add volume I'm going to name this but"
+    },
+    {
+      "start": 225.18,
+      "duration": 2.58,
+      "text": "this is an existing instance which is"
+    },
+    {
+      "start": 226.5,
+      "duration": 3.06,
+      "text": "not launched right now so it's already"
+    },
+    {
+      "start": 227.76,
+      "duration": 3.6,
+      "text": "in the running I'm going to attach an"
+    },
+    {
+      "start": 229.56,
+      "duration": 4.259,
+      "text": "instance to this I'm going to attach a"
+    },
+    {
+      "start": 231.36,
+      "duration": 4.14,
+      "text": "volume to this instance so to create a"
+    },
+    {
+      "start": 233.819,
+      "duration": 5.721,
+      "text": "volume you have to go here in the volume"
+    },
+    {
+      "start": 235.5,
+      "duration": 4.04,
+      "text": "section under ABS or elastic Block store"
+    },
+    {
+      "start": 239.58,
+      "duration": 4.079,
+      "text": "and you click on create volume option"
+    },
+    {
+      "start": 241.2,
+      "duration": 4.74,
+      "text": "here so here I can select what how much"
+    },
+    {
+      "start": 243.659,
+      "duration": 4.681,
+      "text": "storage do I want I can make it 100 but"
+    },
+    {
+      "start": 245.94,
+      "duration": 4.499,
+      "text": "I'm going to keep to keep my bill low"
+    },
+    {
+      "start": 248.34,
+      "duration": 4.679,
+      "text": "I'm going to select the 8 GB"
+    },
+    {
+      "start": 250.439,
+      "duration": 4.621,
+      "text": "so you can you can see we can select any"
+    },
+    {
+      "start": 253.019,
+      "duration": 4.261,
+      "text": "so I'm going to click on 8GB all right"
+    },
+    {
+      "start": 255.06,
+      "duration": 3.54,
+      "text": "you can select what AC do you want so"
+    },
+    {
+      "start": 257.28,
+      "duration": 3.239,
+      "text": "you need to make you make you need to"
+    },
+    {
+      "start": 258.6,
+      "duration": 3.86,
+      "text": "make sure that your instance and your"
+    },
+    {
+      "start": 260.519,
+      "duration": 4.62,
+      "text": "volume are in the same easy because"
+    },
+    {
+      "start": 262.46,
+      "duration": 4.06,
+      "text": "volumes are available to Zone bounded so"
+    },
+    {
+      "start": 265.139,
+      "duration": 3.601,
+      "text": "I'm going to select one day because my"
+    },
+    {
+      "start": 266.52,
+      "duration": 4.399,
+      "text": "instance is in 1D and let me show you"
+    },
+    {
+      "start": 268.74,
+      "duration": 2.179,
+      "text": "that"
+    },
+    {
+      "start": 276.919,
+      "duration": 3.661,
+      "text": "so my ADD volume"
+    },
+    {
+      "start": 281.46,
+      "duration": 5.4,
+      "text": "so my ADD volume instance is in Us East"
+    },
+    {
+      "start": 284.52,
+      "duration": 4.34,
+      "text": "1D so I want to create keep my volume in"
+    },
+    {
+      "start": 286.86,
+      "duration": 4.5,
+      "text": "the 1D itself if I use any other"
+    },
+    {
+      "start": 288.86,
+      "duration": 4.36,
+      "text": "availability Zone this volume will not"
+    },
+    {
+      "start": 291.36,
+      "duration": 3.3,
+      "text": "be attached to the instance and I also"
+    },
+    {
+      "start": 293.22,
+      "duration": 3.78,
+      "text": "have the option to encrypt my volume"
+    },
+    {
+      "start": 294.66,
+      "duration": 3.539,
+      "text": "which means this data the data that is"
+    },
+    {
+      "start": 297.0,
+      "duration": 3.12,
+      "text": "stored in this volume is going to be"
+    },
+    {
+      "start": 298.199,
+      "duration": 3.421,
+      "text": "encrypted all the data that is flowed is"
+    },
+    {
+      "start": 300.12,
+      "duration": 3.299,
+      "text": "also encrypted we are going to learn"
+    },
+    {
+      "start": 301.62,
+      "duration": 3.12,
+      "text": "about encryption in the next video in"
+    },
+    {
+      "start": 303.419,
+      "duration": 2.461,
+      "text": "the next video you can check it out on"
+    },
+    {
+      "start": 304.74,
+      "duration": 2.399,
+      "text": "my channel"
+    },
+    {
+      "start": 305.88,
+      "duration": 2.7,
+      "text": "we are going to learn about the"
+    },
+    {
+      "start": 307.139,
+      "duration": 2.881,
+      "text": "encryption in the next coming videos so"
+    },
+    {
+      "start": 308.58,
+      "duration": 3.3,
+      "text": "I'm going to click here and I'm not"
+    },
+    {
+      "start": 310.02,
+      "duration": 3.72,
+      "text": "ready to encrypt it now so I'm not"
+    },
+    {
+      "start": 311.88,
+      "duration": 4.5,
+      "text": "encrypting it now I'm going to click and"
+    },
+    {
+      "start": 313.74,
+      "duration": 6.78,
+      "text": "create volume here so this volume is now"
+    },
+    {
+      "start": 316.38,
+      "duration": 5.759,
+      "text": "created and if I refresh I should see"
+    },
+    {
+      "start": 320.52,
+      "duration": 5.519,
+      "text": "if I refresh I should see the volume"
+    },
+    {
+      "start": 322.139,
+      "duration": 5.521,
+      "text": "which is this so 0 C 0 C 0 f and you can"
+    },
+    {
+      "start": 326.039,
+      "duration": 3.781,
+      "text": "see it's an available State whereas all"
+    },
+    {
+      "start": 327.66,
+      "duration": 4.2,
+      "text": "the other volumes are in"
+    },
+    {
+      "start": 329.82,
+      "duration": 3.78,
+      "text": "use State these two are in available"
+    },
+    {
+      "start": 331.86,
+      "duration": 3.179,
+      "text": "State because they are not attached to"
+    },
+    {
+      "start": 333.6,
+      "duration": 3.36,
+      "text": "any of the instances you can also see"
+    },
+    {
+      "start": 335.039,
+      "duration": 4.081,
+      "text": "that in attached instances option and"
+    },
+    {
+      "start": 336.96,
+      "duration": 4.32,
+      "text": "they are not attached so"
+    },
+    {
+      "start": 339.12,
+      "duration": 3.48,
+      "text": "to attach a volume which is created to"
+    },
+    {
+      "start": 341.28,
+      "duration": 3.359,
+      "text": "an instance you can click on actions"
+    },
+    {
+      "start": 342.6,
+      "duration": 4.439,
+      "text": "option click on attach volume and here"
+    },
+    {
+      "start": 344.639,
+      "duration": 4.201,
+      "text": "you select what instance do you want to"
+    },
+    {
+      "start": 347.039,
+      "duration": 4.801,
+      "text": "attach I want to attach it to or add"
+    },
+    {
+      "start": 348.84,
+      "duration": 5.52,
+      "text": "volume instance and I'm going to click"
+    },
+    {
+      "start": 351.84,
+      "duration": 4.859,
+      "text": "on attach volume now if I go to the"
+    },
+    {
+      "start": 354.36,
+      "duration": 3.96,
+      "text": "instances and I go to add volume option"
+    },
+    {
+      "start": 356.699,
+      "duration": 4.861,
+      "text": "I should see an extra ABS volume"
+    },
+    {
+      "start": 358.32,
+      "duration": 5.64,
+      "text": "attached to it so I already had a single"
+    },
+    {
+      "start": 361.56,
+      "duration": 6.199,
+      "text": "so it still say single Let me refresh"
+    },
+    {
+      "start": 363.96,
+      "duration": 3.799,
+      "text": "this and right now"
+    },
+    {
+      "start": 369.539,
+      "duration": 3.841,
+      "text": "so this is my ADD volume and let's see"
+    },
+    {
+      "start": 371.759,
+      "duration": 2.94,
+      "text": "if we have the instance in here or not"
+    },
+    {
+      "start": 373.38,
+      "duration": 3.06,
+      "text": "so I'm going to click on storage option"
+    },
+    {
+      "start": 374.699,
+      "duration": 3.72,
+      "text": "as you can see there are two instances"
+    },
+    {
+      "start": 376.44,
+      "duration": 3.96,
+      "text": "there are two volumes attached to this"
+    },
+    {
+      "start": 378.419,
+      "duration": 6.201,
+      "text": "instance this is how you create an ABS"
+    },
+    {
+      "start": 380.4,
+      "duration": 4.22,
+      "text": "volume and attach it to an instance so"
+    },
+    {
+      "start": 385.199,
+      "duration": 4.261,
+      "text": "this is what we did we we already had we"
+    },
+    {
+      "start": 388.02,
+      "duration": 4.14,
+      "text": "launched an instance with an ABS volume"
+    },
+    {
+      "start": 389.46,
+      "duration": 4.98,
+      "text": "then we created our own volume and then"
+    },
+    {
+      "start": 392.16,
+      "duration": 3.96,
+      "text": "attached it to an instance so you can"
+    },
+    {
+      "start": 394.44,
+      "duration": 3.96,
+      "text": "create new volumes and attach it to the"
+    },
+    {
+      "start": 396.12,
+      "duration": 4.62,
+      "text": "instance with this process so next is"
+    },
+    {
+      "start": 398.4,
+      "duration": 4.56,
+      "text": "delete on termination attribute so if I"
+    },
+    {
+      "start": 400.74,
+      "duration": 5.519,
+      "text": "go to instances if I click on if I click"
+    },
+    {
+      "start": 402.96,
+      "duration": 5.459,
+      "text": "on the launch instance option here and"
+    },
+    {
+      "start": 406.259,
+      "duration": 4.5,
+      "text": "go to storage option configure storage I"
+    },
+    {
+      "start": 408.419,
+      "duration": 3.72,
+      "text": "can click on Advanced option and here"
+    },
+    {
+      "start": 410.759,
+      "duration": 3.541,
+      "text": "you can see there's an option known as"
+    },
+    {
+      "start": 412.139,
+      "duration": 4.68,
+      "text": "delete on termination and you can make"
+    },
+    {
+      "start": 414.3,
+      "duration": 4.739,
+      "text": "it yes or no what this option does is if"
+    },
+    {
+      "start": 416.819,
+      "duration": 3.841,
+      "text": "you enable it delete on termination this"
+    },
+    {
+      "start": 419.039,
+      "duration": 3.061,
+      "text": "volume is going to be deleted when you"
+    },
+    {
+      "start": 420.66,
+      "duration": 4.02,
+      "text": "terminate your instance when you delete"
+    },
+    {
+      "start": 422.1,
+      "duration": 4.62,
+      "text": "your instance but if you disable it if"
+    },
+    {
+      "start": 424.68,
+      "duration": 4.2,
+      "text": "you make it no which means even if your"
+    },
+    {
+      "start": 426.72,
+      "duration": 3.84,
+      "text": "instance is deleted your volume is going"
+    },
+    {
+      "start": 428.88,
+      "duration": 3.78,
+      "text": "to be there if you click on info you can"
+    },
+    {
+      "start": 430.56,
+      "duration": 3.359,
+      "text": "read about it then it says but the"
+    },
+    {
+      "start": 432.66,
+      "duration": 2.7,
+      "text": "volume should be automatically deleted"
+    },
+    {
+      "start": 433.919,
+      "duration": 2.941,
+      "text": "when the instance is terminated or not"
+    },
+    {
+      "start": 435.36,
+      "duration": 3.179,
+      "text": "so you should select yes if you want the"
+    },
+    {
+      "start": 436.86,
+      "duration": 4.32,
+      "text": "volume to be deleted because if you"
+    },
+    {
+      "start": 438.539,
+      "duration": 4.201,
+      "text": "don't if you select no volume is going"
+    },
+    {
+      "start": 441.18,
+      "duration": 4.32,
+      "text": "to be there even if the instance is"
+    },
+    {
+      "start": 442.74,
+      "duration": 6.299,
+      "text": "deleted so this is"
+    },
+    {
+      "start": 445.5,
+      "duration": 4.5,
+      "text": "how you create attach EBS volume and we"
+    },
+    {
+      "start": 449.039,
+      "duration": 2.461,
+      "text": "have also learned about delete and"
+    },
+    {
+      "start": 450.0,
+      "duration": 4.199,
+      "text": "termination in the next video we are"
+    },
+    {
+      "start": 451.5,
+      "duration": 5.28,
+      "text": "going to see how to create snapshots of"
+    },
+    {
+      "start": 454.199,
+      "duration": 3.961,
+      "text": "the volume so snapshots are backups and"
+    },
+    {
+      "start": 456.78,
+      "duration": 4.44,
+      "text": "we are going to learn how to create"
+    },
+    {
+      "start": 458.16,
+      "duration": 5.099,
+      "text": "snapshots of the existing volumes and"
+    },
+    {
+      "start": 461.22,
+      "duration": 3.419,
+      "text": "how to encrypt them as well so let's see"
+    },
+    {
+      "start": 463.259,
+      "duration": 3.481,
+      "text": "so"
+    },
+    {
+      "start": 464.639,
+      "duration": 3.9,
+      "text": "for if you if you found this video help"
+    },
+    {
+      "start": 466.74,
+      "duration": 3.6,
+      "text": "if you found this video helpful please"
+    },
+    {
+      "start": 468.539,
+      "duration": 3.901,
+      "text": "like this video And subscribe to my"
+    },
+    {
+      "start": 470.34,
+      "duration": 5.12,
+      "text": "channel for more videos on cloud and"
+    },
+    {
+      "start": 472.44,
+      "duration": 3.02,
+      "text": "devops thank you"
+    }
+  ]
+}

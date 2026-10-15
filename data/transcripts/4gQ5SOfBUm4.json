@@ -1,0 +1,1211 @@
+{
+  "video": {
+    "id": "4gQ5SOfBUm4",
+    "title": "AWS EC2 Instance types Explained | AWS SAA C03",
+    "url": "https://www.youtube.com/watch?v=4gQ5SOfBUm4",
+    "duration": 531,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.88,
+      "duration": 5.56,
+      "text": "hey everyone in this video we are going"
+    },
+    {
+      "start": 2.76,
+      "duration": 5.28,
+      "text": "to learn about ec2 instance types in AWS"
+    },
+    {
+      "start": 6.44,
+      "duration": 3.52,
+      "text": "there are different instance types like"
+    },
+    {
+      "start": 8.04,
+      "duration": 3.92,
+      "text": "general purpose instances compute"
+    },
+    {
+      "start": 9.96,
+      "duration": 4.24,
+      "text": "optimized instances memory optimized"
+    },
+    {
+      "start": 11.96,
+      "duration": 4.52,
+      "text": "instances storage optimized and"
+    },
+    {
+      "start": 14.2,
+      "duration": 4.999,
+      "text": "accelerated Computing in the previous"
+    },
+    {
+      "start": 16.48,
+      "duration": 4.559,
+      "text": "ec2 video we have created a T2 micro"
+    },
+    {
+      "start": 19.199,
+      "duration": 4.08,
+      "text": "instance which belongs to general"
+    },
+    {
+      "start": 21.039,
+      "duration": 3.641,
+      "text": "purpose and it is very important for you"
+    },
+    {
+      "start": 23.279,
+      "duration": 3.201,
+      "text": "to understand all these different"
+    },
+    {
+      "start": 24.68,
+      "duration": 3.88,
+      "text": "instance types because it helps you"
+    },
+    {
+      "start": 26.48,
+      "duration": 4.92,
+      "text": "decide the right instance for your"
+    },
+    {
+      "start": 28.56,
+      "duration": 5.24,
+      "text": "workloads but in types is also one of"
+    },
+    {
+      "start": 31.4,
+      "duration": 4.92,
+      "text": "the very important topic for AWS"
+    },
+    {
+      "start": 33.8,
+      "duration": 4.04,
+      "text": "certification exam this is a real exam"
+    },
+    {
+      "start": 36.32,
+      "duration": 4.88,
+      "text": "question from Solutions architect"
+    },
+    {
+      "start": 37.84,
+      "duration": 6.16,
+      "text": "associate based on AWS ec2 instance"
+    },
+    {
+      "start": 41.2,
+      "duration": 4.6,
+      "text": "types so the question here is a company"
+    },
+    {
+      "start": 44.0,
+      "duration": 4.12,
+      "text": "plans to run a compute intensive"
+    },
+    {
+      "start": 45.8,
+      "duration": 5.439,
+      "text": "workload that uses graphical processing"
+    },
+    {
+      "start": 48.12,
+      "duration": 5.599,
+      "text": "units which are gpus which Amazon ec2"
+    },
+    {
+      "start": 51.239,
+      "duration": 4.241,
+      "text": "instance types should the company use"
+    },
+    {
+      "start": 53.719,
+      "duration": 3.801,
+      "text": "now if you're familiar with ec2 instance"
+    },
+    {
+      "start": 55.48,
+      "duration": 4.0,
+      "text": "types you might say that the question"
+    },
+    {
+      "start": 57.52,
+      "duration": 3.999,
+      "text": "has computer intensive so we need to go"
+    },
+    {
+      "start": 59.48,
+      "duration": 4.56,
+      "text": "with computer optimized but the correct"
+    },
+    {
+      "start": 61.519,
+      "duration": 4.0,
+      "text": "answer is accelerated Computing and by"
+    },
+    {
+      "start": 64.04,
+      "duration": 3.52,
+      "text": "the end of this video you will"
+    },
+    {
+      "start": 65.519,
+      "duration": 4.201,
+      "text": "understand why the answer is accelerated"
+    },
+    {
+      "start": 67.56,
+      "duration": 5.52,
+      "text": "Computing so watch this video till the"
+    },
+    {
+      "start": 69.72,
+      "duration": 5.52,
+      "text": "end to learn all this different instance"
+    },
+    {
+      "start": 73.08,
+      "duration": 4.679,
+      "text": "types now when you create an ec2"
+    },
+    {
+      "start": 75.24,
+      "duration": 4.68,
+      "text": "instance in the AWS dashboard you select"
+    },
+    {
+      "start": 77.759,
+      "duration": 4.521,
+      "text": "the instance types which defines how"
+    },
+    {
+      "start": 79.92,
+      "duration": 4.519,
+      "text": "much CPU and RAM your server is going to"
+    },
+    {
+      "start": 82.28,
+      "duration": 3.799,
+      "text": "get so you can select something from T2"
+    },
+    {
+      "start": 84.439,
+      "duration": 3.68,
+      "text": "micro which is a general purpose"
+    },
+    {
+      "start": 86.079,
+      "duration": 5.201,
+      "text": "instance or maybe something from the C"
+    },
+    {
+      "start": 88.119,
+      "duration": 5.68,
+      "text": "family such as C5 ad 2x large which has"
+    },
+    {
+      "start": 91.28,
+      "duration": 4.44,
+      "text": "more CPUs compared to general purpose or"
+    },
+    {
+      "start": 93.799,
+      "duration": 4.6,
+      "text": "maybe you can go for something in the D"
+    },
+    {
+      "start": 95.72,
+      "duration": 5.12,
+      "text": "family G family I family there are many"
+    },
+    {
+      "start": 98.399,
+      "duration": 4.281,
+      "text": "different families in instance types"
+    },
+    {
+      "start": 100.84,
+      "duration": 4.959,
+      "text": "that I will be explaining you in this"
+    },
+    {
+      "start": 102.68,
+      "duration": 5.6,
+      "text": "video so in AWS instance types are"
+    },
+    {
+      "start": 105.799,
+      "duration": 4.721,
+      "text": "differentiated based on compute memory"
+    },
+    {
+      "start": 108.28,
+      "duration": 3.68,
+      "text": "storage and networking capabilities"
+    },
+    {
+      "start": 110.52,
+      "duration": 3.12,
+      "text": "making it possible to select the"
+    },
+    {
+      "start": 111.96,
+      "duration": 3.519,
+      "text": "appropriate instance for specific"
+    },
+    {
+      "start": 113.64,
+      "duration": 3.759,
+      "text": "workloads so if you have a workload"
+    },
+    {
+      "start": 115.479,
+      "duration": 4.841,
+      "text": "where you require more CPU you will go"
+    },
+    {
+      "start": 117.399,
+      "duration": 5.64,
+      "text": "with that particular instance type"
+    },
+    {
+      "start": 120.32,
+      "duration": 4.64,
+      "text": "for example if you use AWS ec2 for"
+    },
+    {
+      "start": 123.039,
+      "duration": 4.44,
+      "text": "mining bitcoins you will require a"
+    },
+    {
+      "start": 124.96,
+      "duration": 4.439,
+      "text": "server with more CPU power because when"
+    },
+    {
+      "start": 127.479,
+      "duration": 4.081,
+      "text": "mining Bitcoin we solves cryptographic"
+    },
+    {
+      "start": 129.399,
+      "duration": 3.761,
+      "text": "puzzles which require more CPU so you"
+    },
+    {
+      "start": 131.56,
+      "duration": 4.0,
+      "text": "will be going with compute optimized"
+    },
+    {
+      "start": 133.16,
+      "duration": 4.56,
+      "text": "instances but if you are training an AI"
+    },
+    {
+      "start": 135.56,
+      "duration": 4.16,
+      "text": "model using your ec2s you will require"
+    },
+    {
+      "start": 137.72,
+      "duration": 3.799,
+      "text": "more GPU this is why you will be"
+    },
+    {
+      "start": 139.72,
+      "duration": 3.799,
+      "text": "selecting instance types which has more"
+    },
+    {
+      "start": 141.519,
+      "duration": 3.561,
+      "text": "GPU and this is the reason why you need"
+    },
+    {
+      "start": 143.519,
+      "duration": 3.36,
+      "text": "to understand different ec2 instance"
+    },
+    {
+      "start": 145.08,
+      "duration": 3.159,
+      "text": "types in this video I will be teaching"
+    },
+    {
+      "start": 146.879,
+      "duration": 3.08,
+      "text": "you all the different instance types"
+    },
+    {
+      "start": 148.239,
+      "duration": 4.36,
+      "text": "like general purpose compute optimized"
+    },
+    {
+      "start": 149.959,
+      "duration": 4.64,
+      "text": "so on before you learn this let's"
+    },
+    {
+      "start": 152.599,
+      "duration": 5.121,
+      "text": "understand the instance naming so how is"
+    },
+    {
+      "start": 154.599,
+      "duration": 5.64,
+      "text": "an instance name so we have T2 micro c5x"
+    },
+    {
+      "start": 157.72,
+      "duration": 5.439,
+      "text": "large similarly here is an example of R5"
+    },
+    {
+      "start": 160.239,
+      "duration": 5.681,
+      "text": "DX large in this name the r stands for"
+    },
+    {
+      "start": 163.159,
+      "duration": 4.841,
+      "text": "the instance family it belongs to five"
+    },
+    {
+      "start": 165.92,
+      "duration": 3.44,
+      "text": "is the instance generation D is the"
+    },
+    {
+      "start": 168.0,
+      "duration": 2.959,
+      "text": "additional capabilities for that"
+    },
+    {
+      "start": 169.36,
+      "duration": 3.72,
+      "text": "particular instance and this is the"
+    },
+    {
+      "start": 170.959,
+      "duration": 4.64,
+      "text": "actual size which could be micro Nano"
+    },
+    {
+      "start": 173.08,
+      "duration": 4.04,
+      "text": "small large x large 2x large and so on"
+    },
+    {
+      "start": 175.599,
+      "duration": 3.961,
+      "text": "so you need to understand this before"
+    },
+    {
+      "start": 177.12,
+      "duration": 4.119,
+      "text": "you learn about ec2 instance types now"
+    },
+    {
+      "start": 179.56,
+      "duration": 3.599,
+      "text": "that we you know this let's move on to"
+    },
+    {
+      "start": 181.239,
+      "duration": 4.441,
+      "text": "the first instance type which is a"
+    },
+    {
+      "start": 183.159,
+      "duration": 4.401,
+      "text": "general purpose instance so general"
+    },
+    {
+      "start": 185.68,
+      "duration": 4.04,
+      "text": "purpose instances are instances which"
+    },
+    {
+      "start": 187.56,
+      "duration": 4.52,
+      "text": "has a balance of compute memory and"
+    },
+    {
+      "start": 189.72,
+      "duration": 4.079,
+      "text": "networking so whenever you want a server"
+    },
+    {
+      "start": 192.08,
+      "duration": 4.0,
+      "text": "which should have proper balance between"
+    },
+    {
+      "start": 193.799,
+      "duration": 4.761,
+      "text": "compute memory and networking you can go"
+    },
+    {
+      "start": 196.08,
+      "duration": 6.48,
+      "text": "for general purpose instances and so all"
+    },
+    {
+      "start": 198.56,
+      "duration": 7.36,
+      "text": "the T family such as t4g or T3 t3a T2"
+    },
+    {
+      "start": 202.56,
+      "duration": 5.239,
+      "text": "along with m71 M families also belong to"
+    },
+    {
+      "start": 205.92,
+      "duration": 3.36,
+      "text": "general purpose instances which are"
+    },
+    {
+      "start": 207.799,
+      "duration": 2.601,
+      "text": "balanced between compute memory and"
+    },
+    {
+      "start": 209.28,
+      "duration": 2.8,
+      "text": "networking"
+    },
+    {
+      "start": 210.4,
+      "duration": 3.64,
+      "text": "when will you be using this general"
+    },
+    {
+      "start": 212.08,
+      "duration": 3.48,
+      "text": "purpose instances you can use general"
+    },
+    {
+      "start": 214.04,
+      "duration": 3.839,
+      "text": "purpose instances whenever you want to"
+    },
+    {
+      "start": 215.56,
+      "duration": 3.679,
+      "text": "host web servers application servers"
+    },
+    {
+      "start": 217.879,
+      "duration": 4.881,
+      "text": "code repositories development"
+    },
+    {
+      "start": 219.239,
+      "duration": 6.28,
+      "text": "environments and so on the next instance"
+    },
+    {
+      "start": 222.76,
+      "duration": 4.96,
+      "text": "type is the compute optimized instances"
+    },
+    {
+      "start": 225.519,
+      "duration": 4.561,
+      "text": "this instances can be used for compute"
+    },
+    {
+      "start": 227.72,
+      "duration": 4.56,
+      "text": "heavy applications for applications that"
+    },
+    {
+      "start": 230.08,
+      "duration": 4.439,
+      "text": "require more compute power you can go"
+    },
+    {
+      "start": 232.28,
+      "duration": 4.84,
+      "text": "with compute optimized instances and all"
+    },
+    {
+      "start": 234.519,
+      "duration": 5.241,
+      "text": "the C family belong to compute optimized"
+    },
+    {
+      "start": 237.12,
+      "duration": 4.72,
+      "text": "instance type use cases include hyp"
+    },
+    {
+      "start": 239.76,
+      "duration": 4.119,
+      "text": "performance Computing batch processing"
+    },
+    {
+      "start": 241.84,
+      "duration": 4.479,
+      "text": "scientific modeling machine learning"
+    },
+    {
+      "start": 243.879,
+      "duration": 4.881,
+      "text": "also dedicated gaming servers ad server"
+    },
+    {
+      "start": 246.319,
+      "duration": 4.801,
+      "text": "agencies and so on so all these examples"
+    },
+    {
+      "start": 248.76,
+      "duration": 4.0,
+      "text": "want you to have more CPU and this is"
+    },
+    {
+      "start": 251.12,
+      "duration": 5.079,
+      "text": "why you will be choosing the compute"
+    },
+    {
+      "start": 252.76,
+      "duration": 5.199,
+      "text": "optimized or the C family instances the"
+    },
+    {
+      "start": 256.199,
+      "duration": 3.961,
+      "text": "next instance type is the memory"
+    },
+    {
+      "start": 257.959,
+      "duration": 4.481,
+      "text": "optimized instances so by the name you"
+    },
+    {
+      "start": 260.16,
+      "duration": 4.44,
+      "text": "will understand instances which has more"
+    },
+    {
+      "start": 262.44,
+      "duration": 3.64,
+      "text": "memory or applications that require more"
+    },
+    {
+      "start": 264.6,
+      "duration": 3.76,
+      "text": "memory should be choosing memory"
+    },
+    {
+      "start": 266.08,
+      "duration": 3.92,
+      "text": "optimized so if you read here memory"
+    },
+    {
+      "start": 268.36,
+      "duration": 4.04,
+      "text": "optimized instances are designed to"
+    },
+    {
+      "start": 270.0,
+      "duration": 5.16,
+      "text": "deliver fast performance for workloads"
+    },
+    {
+      "start": 272.4,
+      "duration": 5.04,
+      "text": "that process large data sets in memory"
+    },
+    {
+      "start": 275.16,
+      "duration": 4.479,
+      "text": "by memory you mean ram here so people"
+    },
+    {
+      "start": 277.44,
+      "duration": 4.8,
+      "text": "are confused between RAM and storage so"
+    },
+    {
+      "start": 279.639,
+      "duration": 5.321,
+      "text": "here memory optimized means RAM and all"
+    },
+    {
+      "start": 282.24,
+      "duration": 5.12,
+      "text": "the r as well as X family belongs to"
+    },
+    {
+      "start": 284.96,
+      "duration": 5.04,
+      "text": "memory optimize instances use cases"
+    },
+    {
+      "start": 287.36,
+      "duration": 5.44,
+      "text": "could be inmemory databases real-time"
+    },
+    {
+      "start": 290.0,
+      "duration": 5.44,
+      "text": "big data analytics application and so on"
+    },
+    {
+      "start": 292.8,
+      "duration": 6.28,
+      "text": "so here we have an example of x1e"
+    },
+    {
+      "start": 295.44,
+      "duration": 6.24,
+      "text": "instance type which has 4 V CPU but 122"
+    },
+    {
+      "start": 299.08,
+      "duration": 5.32,
+      "text": "GB of memory and so on you can see the"
+    },
+    {
+      "start": 301.68,
+      "duration": 4.6,
+      "text": "examples here but if you want to know"
+    },
+    {
+      "start": 304.4,
+      "duration": 4.48,
+      "text": "more information about each instance"
+    },
+    {
+      "start": 306.28,
+      "duration": 5.0,
+      "text": "type you can always read the official"
+    },
+    {
+      "start": 308.88,
+      "duration": 6.039,
+      "text": "documentation by AWS so if you search"
+    },
+    {
+      "start": 311.28,
+      "duration": 6.0,
+      "text": "for instance types AWS you will be taken"
+    },
+    {
+      "start": 314.919,
+      "duration": 4.0,
+      "text": "to this page which has information about"
+    },
+    {
+      "start": 317.28,
+      "duration": 3.08,
+      "text": "all the different instance types"
+    },
+    {
+      "start": 318.919,
+      "duration": 3.56,
+      "text": "including general purpose compute"
+    },
+    {
+      "start": 320.36,
+      "duration": 4.279,
+      "text": "optimized memory optimized and so on so"
+    },
+    {
+      "start": 322.479,
+      "duration": 3.921,
+      "text": "you can read about them also understand"
+    },
+    {
+      "start": 324.639,
+      "duration": 3.881,
+      "text": "when to use them what are different use"
+    },
+    {
+      "start": 326.4,
+      "duration": 3.639,
+      "text": "cases for every instance types but I"
+    },
+    {
+      "start": 328.52,
+      "duration": 3.32,
+      "text": "hope this video will be enough you don't"
+    },
+    {
+      "start": 330.039,
+      "duration": 4.841,
+      "text": "need to read the documentation if you"
+    },
+    {
+      "start": 331.84,
+      "duration": 5.68,
+      "text": "watch this video so moving on the next"
+    },
+    {
+      "start": 334.88,
+      "duration": 5.08,
+      "text": "instance type is the storage optimized"
+    },
+    {
+      "start": 337.52,
+      "duration": 4.08,
+      "text": "instance storage optimized instances are"
+    },
+    {
+      "start": 339.96,
+      "duration": 3.959,
+      "text": "designed for workloads which require"
+    },
+    {
+      "start": 341.6,
+      "duration": 4.76,
+      "text": "High sequential read and write access to"
+    },
+    {
+      "start": 343.919,
+      "duration": 3.761,
+      "text": "very large data sets on local storage so"
+    },
+    {
+      "start": 346.36,
+      "duration": 2.679,
+      "text": "whenever you have an instance which is"
+    },
+    {
+      "start": 347.68,
+      "duration": 3.72,
+      "text": "going to read and write data"
+    },
+    {
+      "start": 349.039,
+      "duration": 4.921,
+      "text": "continuously on a very high scale you"
+    },
+    {
+      "start": 351.4,
+      "duration": 4.56,
+      "text": "can go for storage optimized instances"
+    },
+    {
+      "start": 353.96,
+      "duration": 4.799,
+      "text": "they are optimized to deliver tens of"
+    },
+    {
+      "start": 355.96,
+      "duration": 5.239,
+      "text": "thousands of low latency random input"
+    },
+    {
+      "start": 358.759,
+      "duration": 5.961,
+      "text": "output operation per seconds also known"
+    },
+    {
+      "start": 361.199,
+      "duration": 7.0,
+      "text": "as iops so all the I family and D family"
+    },
+    {
+      "start": 364.72,
+      "duration": 4.879,
+      "text": "belongs to storage optimized you use"
+    },
+    {
+      "start": 368.199,
+      "duration": 3.081,
+      "text": "cases include large scale high"
+    },
+    {
+      "start": 369.599,
+      "duration": 3.88,
+      "text": "throughput workloads like no SQL"
+    },
+    {
+      "start": 371.28,
+      "duration": 4.4,
+      "text": "databases or maybe storing data in data"
+    },
+    {
+      "start": 373.479,
+      "duration": 4.521,
+      "text": "warehousing and all that so here is an"
+    },
+    {
+      "start": 375.68,
+      "duration": 4.12,
+      "text": "example of H1 instance type that we have"
+    },
+    {
+      "start": 378.0,
+      "duration": 3.44,
+      "text": "here and you can see the storage"
+    },
+    {
+      "start": 379.8,
+      "duration": 4.959,
+      "text": "attached to this instances are quite"
+    },
+    {
+      "start": 381.44,
+      "duration": 6.08,
+      "text": "more compared to other instance"
+    },
+    {
+      "start": 384.759,
+      "duration": 5.041,
+      "text": "types next instance type we have is"
+    },
+    {
+      "start": 387.52,
+      "duration": 4.0,
+      "text": "accelerated Computing you will be using"
+    },
+    {
+      "start": 389.8,
+      "duration": 4.519,
+      "text": "accelerated Computing whenever you want"
+    },
+    {
+      "start": 391.52,
+      "duration": 5.84,
+      "text": "more GPU because accelerated Computing"
+    },
+    {
+      "start": 394.319,
+      "duration": 5.521,
+      "text": "use Hardware accelerators such as fpga"
+    },
+    {
+      "start": 397.36,
+      "duration": 3.76,
+      "text": "or GPU like this to perform functions"
+    },
+    {
+      "start": 399.84,
+      "duration": 3.52,
+      "text": "such as floating Point number"
+    },
+    {
+      "start": 401.12,
+      "duration": 3.96,
+      "text": "calculations graphic processing data"
+    },
+    {
+      "start": 403.36,
+      "duration": 3.679,
+      "text": "pattern matching more efficiently"
+    },
+    {
+      "start": 405.08,
+      "duration": 3.44,
+      "text": "compared to compute optimized instances"
+    },
+    {
+      "start": 407.039,
+      "duration": 4.28,
+      "text": "so you will be using this whenever you"
+    },
+    {
+      "start": 408.52,
+      "duration": 5.88,
+      "text": "want Hardware accelerators such as fpga"
+    },
+    {
+      "start": 411.319,
+      "duration": 5.041,
+      "text": "or more gpus all the instance belongs to"
+    },
+    {
+      "start": 414.4,
+      "duration": 3.68,
+      "text": "accelerated Computing so in the exam"
+    },
+    {
+      "start": 416.36,
+      "duration": 4.64,
+      "text": "when whenever you have a question to use"
+    },
+    {
+      "start": 418.08,
+      "duration": 4.64,
+      "text": "Hardware accelerators like fpgs or gpus"
+    },
+    {
+      "start": 421.0,
+      "duration": 3.72,
+      "text": "or you want to use more GPU which should"
+    },
+    {
+      "start": 422.72,
+      "duration": 3.4,
+      "text": "be in the price range you can go with"
+    },
+    {
+      "start": 424.72,
+      "duration": 3.96,
+      "text": "accelerated"
+    },
+    {
+      "start": 426.12,
+      "duration": 4.919,
+      "text": "Computing lastly the next instance type"
+    },
+    {
+      "start": 428.68,
+      "duration": 4.48,
+      "text": "is HPC optimized or high performance"
+    },
+    {
+      "start": 431.039,
+      "duration": 4.16,
+      "text": "Computing optimized instances which are"
+    },
+    {
+      "start": 433.16,
+      "duration": 3.879,
+      "text": "built to offer best price performance"
+    },
+    {
+      "start": 435.199,
+      "duration": 4.68,
+      "text": "for running high performance Computing"
+    },
+    {
+      "start": 437.039,
+      "duration": 7.641,
+      "text": "workloads at scale on AWS so all this"
+    },
+    {
+      "start": 439.879,
+      "duration": 7.201,
+      "text": "HPC 7g HPC 7A HPC 6 ID belongs to high"
+    },
+    {
+      "start": 444.68,
+      "duration": 5.12,
+      "text": "performance Computing optimized instance"
+    },
+    {
+      "start": 447.08,
+      "duration": 4.88,
+      "text": "types and HPC optimized instance are"
+    },
+    {
+      "start": 449.8,
+      "duration": 4.2,
+      "text": "used for applications that benefits from"
+    },
+    {
+      "start": 451.96,
+      "duration": 4.2,
+      "text": "high performance processor such as large"
+    },
+    {
+      "start": 454.0,
+      "duration": 4.16,
+      "text": "complex simulations and deep learning"
+    },
+    {
+      "start": 456.16,
+      "duration": 3.68,
+      "text": "workloads so these are all the different"
+    },
+    {
+      "start": 458.16,
+      "duration": 3.52,
+      "text": "instance sites that are going to be"
+    },
+    {
+      "start": 459.84,
+      "duration": 3.52,
+      "text": "asked in your exam and it is very"
+    },
+    {
+      "start": 461.68,
+      "duration": 3.479,
+      "text": "important for all cloud and devops"
+    },
+    {
+      "start": 463.36,
+      "duration": 3.48,
+      "text": "Engineers to know this so that you can"
+    },
+    {
+      "start": 465.159,
+      "duration": 5.04,
+      "text": "select the right instance for your"
+    },
+    {
+      "start": 466.84,
+      "duration": 4.479,
+      "text": "workloads now I have this table here"
+    },
+    {
+      "start": 470.199,
+      "duration": 3.361,
+      "text": "which includes all the different"
+    },
+    {
+      "start": 471.319,
+      "duration": 4.521,
+      "text": "instance family and what instance type"
+    },
+    {
+      "start": 473.56,
+      "duration": 3.84,
+      "text": "do they belong to along along with use"
+    },
+    {
+      "start": 475.84,
+      "duration": 4.44,
+      "text": "cases to help you understand when should"
+    },
+    {
+      "start": 477.4,
+      "duration": 4.88,
+      "text": "be using T family or M family or C"
+    },
+    {
+      "start": 480.28,
+      "duration": 4.28,
+      "text": "family so I have t family to be used"
+    },
+    {
+      "start": 482.28,
+      "duration": 3.759,
+      "text": "whenever you want burstable workloads M"
+    },
+    {
+      "start": 484.56,
+      "duration": 3.599,
+      "text": "family whenever you want to have balance"
+    },
+    {
+      "start": 486.039,
+      "duration": 4.0,
+      "text": "compute C family for high compute"
+    },
+    {
+      "start": 488.159,
+      "duration": 3.76,
+      "text": "requirements and so on you can take a"
+    },
+    {
+      "start": 490.039,
+      "duration": 4.241,
+      "text": "screenshot to understand this because"
+    },
+    {
+      "start": 491.919,
+      "duration": 3.601,
+      "text": "you will get a question in the exam so I"
+    },
+    {
+      "start": 494.28,
+      "duration": 3.759,
+      "text": "hope now you have understood what are"
+    },
+    {
+      "start": 495.52,
+      "duration": 4.32,
+      "text": "different instance types if you did make"
+    },
+    {
+      "start": 498.039,
+      "duration": 3.081,
+      "text": "sure to answer this question and write"
+    },
+    {
+      "start": 499.84,
+      "duration": 3.44,
+      "text": "down write down the answer in the"
+    },
+    {
+      "start": 501.12,
+      "duration": 4.28,
+      "text": "comment section so the question is you"
+    },
+    {
+      "start": 503.28,
+      "duration": 5.319,
+      "text": "were running in memory database like"
+    },
+    {
+      "start": 505.4,
+      "duration": 5.44,
+      "text": "redis that requires large amounts of ram"
+    },
+    {
+      "start": 508.599,
+      "duration": 4.201,
+      "text": "to store the ire data set in memory"
+    },
+    {
+      "start": 510.84,
+      "duration": 4.439,
+      "text": "which instance type category is the most"
+    },
+    {
+      "start": 512.8,
+      "duration": 4.039,
+      "text": "suitable I think this is a very easy"
+    },
+    {
+      "start": 515.279,
+      "duration": 3.081,
+      "text": "question if you have watched this video"
+    },
+    {
+      "start": 516.839,
+      "duration": 3.041,
+      "text": "till the end you should you should be"
+    },
+    {
+      "start": 518.36,
+      "duration": 3.28,
+      "text": "able to answer this question so make"
+    },
+    {
+      "start": 519.88,
+      "duration": 3.719,
+      "text": "sure you comment down the answer and"
+    },
+    {
+      "start": 521.64,
+      "duration": 3.56,
+      "text": "also like this video I hope this video"
+    },
+    {
+      "start": 523.599,
+      "duration": 3.36,
+      "text": "was informative if you have any"
+    },
+    {
+      "start": 525.2,
+      "duration": 3.92,
+      "text": "questions any doubt let me know in the"
+    },
+    {
+      "start": 526.959,
+      "duration": 5.161,
+      "text": "comment section and see you in the next"
+    },
+    {
+      "start": 529.12,
+      "duration": 3.0,
+      "text": "video"
+    }
+  ]
+}

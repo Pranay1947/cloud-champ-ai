@@ -1,0 +1,1491 @@
+{
+  "video": {
+    "id": "gXl2FUBXI90",
+    "title": "Provisioners in Terraform Explained |Terraform Provisioner block : File, Local exec and Remote exec",
+    "url": "https://www.youtube.com/watch?v=gXl2FUBXI90",
+    "duration": 616,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 3.919,
+      "text": "terraform provisioner"
+    },
+    {
+      "start": 2.08,
+      "duration": 2.56,
+      "text": "provisioners are used whenever you want"
+    },
+    {
+      "start": 3.919,
+      "duration": 2.96,
+      "text": "to"
+    },
+    {
+      "start": 4.64,
+      "duration": 4.16,
+      "text": "do some specific action on the local"
+    },
+    {
+      "start": 6.879,
+      "duration": 3.921,
+      "text": "machine so local machine means the"
+    },
+    {
+      "start": 8.8,
+      "duration": 3.839,
+      "text": "machine that we are using right now"
+    },
+    {
+      "start": 10.8,
+      "duration": 3.999,
+      "text": "or the remote machine which is going to"
+    },
+    {
+      "start": 12.639,
+      "duration": 4.64,
+      "text": "be created using terraform so for"
+    },
+    {
+      "start": 14.799,
+      "duration": 5.921,
+      "text": "example ec2 machine if you're using it"
+    },
+    {
+      "start": 17.279,
+      "duration": 6.08,
+      "text": "in aws and the common examples are like"
+    },
+    {
+      "start": 20.72,
+      "duration": 3.6,
+      "text": "you use it for installing packages maybe"
+    },
+    {
+      "start": 23.359,
+      "duration": 3.121,
+      "text": "in"
+    },
+    {
+      "start": 24.32,
+      "duration": 4.16,
+      "text": "remote or in local it will pass some"
+    },
+    {
+      "start": 26.48,
+      "duration": 4.719,
+      "text": "information like maybe some passing some"
+    },
+    {
+      "start": 28.48,
+      "duration": 4.239,
+      "text": "files or folders or to run any"
+    },
+    {
+      "start": 31.199,
+      "duration": 2.961,
+      "text": "configuration management tools so"
+    },
+    {
+      "start": 32.719,
+      "duration": 4.241,
+      "text": "configuration management tool like"
+    },
+    {
+      "start": 34.16,
+      "duration": 4.16,
+      "text": "ansible puppet can be run"
+    },
+    {
+      "start": 36.96,
+      "duration": 3.599,
+      "text": "in terraform"
+    },
+    {
+      "start": 38.32,
+      "duration": 3.84,
+      "text": "using this pro business so i do have a"
+    },
+    {
+      "start": 40.559,
+      "duration": 2.721,
+      "text": "project and i'll be explaining i'll be"
+    },
+    {
+      "start": 42.16,
+      "duration": 2.879,
+      "text": "showing you"
+    },
+    {
+      "start": 43.28,
+      "duration": 3.92,
+      "text": "with the example"
+    },
+    {
+      "start": 45.039,
+      "duration": 4.241,
+      "text": "so okay"
+    },
+    {
+      "start": 47.2,
+      "duration": 3.6,
+      "text": "before going ahead let's learn about the"
+    },
+    {
+      "start": 49.28,
+      "duration": 3.36,
+      "text": "types of provisioner so there are three"
+    },
+    {
+      "start": 50.8,
+      "duration": 4.72,
+      "text": "types of provisioner first is the file"
+    },
+    {
+      "start": 52.64,
+      "duration": 5.04,
+      "text": "provisioner the second is local and the"
+    },
+    {
+      "start": 55.52,
+      "duration": 4.32,
+      "text": "third is remote so file provisioner is"
+    },
+    {
+      "start": 57.68,
+      "duration": 4.96,
+      "text": "used whenever we want to transfer or"
+    },
+    {
+      "start": 59.84,
+      "duration": 5.2,
+      "text": "copy files from our own local to the"
+    },
+    {
+      "start": 62.64,
+      "duration": 4.4,
+      "text": "remote machine so"
+    },
+    {
+      "start": 65.04,
+      "duration": 4.0,
+      "text": "that is why we use file provisioner we"
+    },
+    {
+      "start": 67.04,
+      "duration": 3.439,
+      "text": "use local whenever you want to run"
+    },
+    {
+      "start": 69.04,
+      "duration": 3.28,
+      "text": "commands or whenever we want to do some"
+    },
+    {
+      "start": 70.479,
+      "duration": 5.28,
+      "text": "task in the local machine so we use"
+    },
+    {
+      "start": 72.32,
+      "duration": 4.799,
+      "text": "local exec provisioner and we use remote"
+    },
+    {
+      "start": 75.759,
+      "duration": 3.281,
+      "text": "exec whenever we want to do some"
+    },
+    {
+      "start": 77.119,
+      "duration": 4.241,
+      "text": "commands install packages or do anything"
+    },
+    {
+      "start": 79.04,
+      "duration": 3.92,
+      "text": "on the remote machine so while working"
+    },
+    {
+      "start": 81.36,
+      "duration": 2.88,
+      "text": "with any of the provisioner we have to"
+    },
+    {
+      "start": 82.96,
+      "duration": 3.519,
+      "text": "provide the connection block so"
+    },
+    {
+      "start": 84.24,
+      "duration": 4.559,
+      "text": "connection blocks means we have to tell"
+    },
+    {
+      "start": 86.479,
+      "duration": 4.241,
+      "text": "terraform how are we going to connect to"
+    },
+    {
+      "start": 88.799,
+      "duration": 4.721,
+      "text": "any machine so let's say we are using"
+    },
+    {
+      "start": 90.72,
+      "duration": 4.64,
+      "text": "the remote exec or the file provisioner"
+    },
+    {
+      "start": 93.52,
+      "duration": 4.0,
+      "text": "so we are going to do some tasks on the"
+    },
+    {
+      "start": 95.36,
+      "duration": 4.64,
+      "text": "remote machine right so some machine"
+    },
+    {
+      "start": 97.52,
+      "duration": 4.4,
+      "text": "which is not so you don't have access to"
+    },
+    {
+      "start": 100.0,
+      "duration": 4.399,
+      "text": "it you need to provide a connection"
+    },
+    {
+      "start": 101.92,
+      "duration": 5.519,
+      "text": "block so most provisional device require"
+    },
+    {
+      "start": 104.399,
+      "duration": 5.521,
+      "text": "access to the remote resource via ssh or"
+    },
+    {
+      "start": 107.439,
+      "duration": 4.481,
+      "text": "vin rm and expect a nested connection"
+    },
+    {
+      "start": 109.92,
+      "duration": 3.92,
+      "text": "block with the with details about how to"
+    },
+    {
+      "start": 111.92,
+      "duration": 3.519,
+      "text": "connect so whenever you're connecting to"
+    },
+    {
+      "start": 113.84,
+      "duration": 3.12,
+      "text": "any other remote or whenever you're"
+    },
+    {
+      "start": 115.439,
+      "duration": 3.921,
+      "text": "using the file provisioner you have to"
+    },
+    {
+      "start": 116.96,
+      "duration": 4.32,
+      "text": "provide this connection block uh which"
+    },
+    {
+      "start": 119.36,
+      "duration": 4.56,
+      "text": "can be using ssh if it is a linux"
+    },
+    {
+      "start": 121.28,
+      "duration": 4.24,
+      "text": "machine or win rm if it is a windows"
+    },
+    {
+      "start": 123.92,
+      "duration": 4.16,
+      "text": "machine so connection blocks look"
+    },
+    {
+      "start": 125.52,
+      "duration": 4.799,
+      "text": "something like this so you have to pass"
+    },
+    {
+      "start": 128.08,
+      "duration": 4.239,
+      "text": "in the type type is going to be ssh host"
+    },
+    {
+      "start": 130.319,
+      "duration": 3.92,
+      "text": "is going to be public ip and if you use"
+    },
+    {
+      "start": 132.319,
+      "duration": 4.081,
+      "text": "the self dot public ip"
+    },
+    {
+      "start": 134.239,
+      "duration": 4.161,
+      "text": "the public ip of that instance is going"
+    },
+    {
+      "start": 136.4,
+      "duration": 3.52,
+      "text": "to be put in here and you have to pass"
+    },
+    {
+      "start": 138.4,
+      "duration": 3.76,
+      "text": "in the user and the password same way"
+    },
+    {
+      "start": 139.92,
+      "duration": 4.399,
+      "text": "you do the ssh command like you have to"
+    },
+    {
+      "start": 142.16,
+      "duration": 3.6,
+      "text": "pass in the key and the username and the"
+    },
+    {
+      "start": 144.319,
+      "duration": 3.201,
+      "text": "password same way you have to pass in"
+    },
+    {
+      "start": 145.76,
+      "duration": 2.8,
+      "text": "the key here the username and the"
+    },
+    {
+      "start": 147.52,
+      "duration": 2.4,
+      "text": "password"
+    },
+    {
+      "start": 148.56,
+      "duration": 3.44,
+      "text": "and you have to use this connection"
+    },
+    {
+      "start": 149.92,
+      "duration": 4.16,
+      "text": "block for pro business whenever you want"
+    },
+    {
+      "start": 152.0,
+      "duration": 4.56,
+      "text": "to access the remote resource let's say"
+    },
+    {
+      "start": 154.08,
+      "duration": 4.08,
+      "text": "we have launched any instance on ec2 and"
+    },
+    {
+      "start": 156.56,
+      "duration": 3.6,
+      "text": "if i want to connect to that in system"
+    },
+    {
+      "start": 158.16,
+      "duration": 3.68,
+      "text": "instance i have to pass i have to run"
+    },
+    {
+      "start": 160.16,
+      "duration": 3.92,
+      "text": "this command necessary command when i"
+    },
+    {
+      "start": 161.84,
+      "duration": 5.44,
+      "text": "have to pass in my key"
+    },
+    {
+      "start": 164.08,
+      "duration": 5.439,
+      "text": "and then i have to pass in the username"
+    },
+    {
+      "start": 167.28,
+      "duration": 4.64,
+      "text": "and then i have to pass in the host"
+    },
+    {
+      "start": 169.519,
+      "duration": 4.481,
+      "text": "right and after this i can connect to my"
+    },
+    {
+      "start": 171.92,
+      "duration": 4.319,
+      "text": "machine whichever host i am trying to"
+    },
+    {
+      "start": 174.0,
+      "duration": 3.84,
+      "text": "connect to so same way if you're using"
+    },
+    {
+      "start": 176.239,
+      "duration": 3.201,
+      "text": "provisioners which are accessing the"
+    },
+    {
+      "start": 177.84,
+      "duration": 4.479,
+      "text": "remote resource you have to pass in the"
+    },
+    {
+      "start": 179.44,
+      "duration": 5.439,
+      "text": "type the host username password and"
+    },
+    {
+      "start": 182.319,
+      "duration": 4.321,
+      "text": "private key"
+    },
+    {
+      "start": 184.879,
+      "duration": 3.28,
+      "text": "right"
+    },
+    {
+      "start": 186.64,
+      "duration": 3.36,
+      "text": "so let's go and learn about the file"
+    },
+    {
+      "start": 188.159,
+      "duration": 4.401,
+      "text": "provisioner the file provisioner is used"
+    },
+    {
+      "start": 190.0,
+      "duration": 4.56,
+      "text": "to copy files or directories from"
+    },
+    {
+      "start": 192.56,
+      "duration": 3.679,
+      "text": "machine use executing terraform to the"
+    },
+    {
+      "start": 194.56,
+      "duration": 3.92,
+      "text": "newly created resource"
+    },
+    {
+      "start": 196.239,
+      "duration": 5.761,
+      "text": "and file provisioner supports both ssh"
+    },
+    {
+      "start": 198.48,
+      "duration": 5.759,
+      "text": "and rm so let's say you have any uh"
+    },
+    {
+      "start": 202.0,
+      "duration": 3.36,
+      "text": "so i have this files in my local machine"
+    },
+    {
+      "start": 204.239,
+      "duration": 3.201,
+      "text": "right now"
+    },
+    {
+      "start": 205.36,
+      "duration": 4.32,
+      "text": "right so i want to pass this app"
+    },
+    {
+      "start": 207.44,
+      "duration": 3.84,
+      "text": "app folder from my local machine to the"
+    },
+    {
+      "start": 209.68,
+      "duration": 3.839,
+      "text": "ec2 instance that is created using"
+    },
+    {
+      "start": 211.28,
+      "duration": 4.319,
+      "text": "terraform so how can i do it i can do it"
+    },
+    {
+      "start": 213.519,
+      "duration": 4.401,
+      "text": "using the file provisioner"
+    },
+    {
+      "start": 215.599,
+      "duration": 3.841,
+      "text": "right so you can see the syntax here the"
+    },
+    {
+      "start": 217.92,
+      "duration": 3.2,
+      "text": "you have to pass in the name of the"
+    },
+    {
+      "start": 219.44,
+      "duration": 3.2,
+      "text": "provisioner which is going to be file"
+    },
+    {
+      "start": 221.12,
+      "duration": 3.119,
+      "text": "and then you have to pass in this source"
+    },
+    {
+      "start": 222.64,
+      "duration": 2.879,
+      "text": "source is going to be your local so"
+    },
+    {
+      "start": 224.239,
+      "duration": 2.961,
+      "text": "let's say the source is going to be"
+    },
+    {
+      "start": 225.519,
+      "duration": 4.401,
+      "text": "slash app"
+    },
+    {
+      "start": 227.2,
+      "duration": 5.92,
+      "text": "right and slash app you have to pass in"
+    },
+    {
+      "start": 229.92,
+      "duration": 4.48,
+      "text": "the destination so on on the ec2 machine"
+    },
+    {
+      "start": 233.12,
+      "duration": 3.679,
+      "text": "where do you have to where do you want"
+    },
+    {
+      "start": 234.4,
+      "duration": 4.8,
+      "text": "to paste this file so destination will"
+    },
+    {
+      "start": 236.799,
+      "duration": 4.72,
+      "text": "be the path where you want to uh copy"
+    },
+    {
+      "start": 239.2,
+      "duration": 5.92,
+      "text": "and paste this file"
+    },
+    {
+      "start": 241.519,
+      "duration": 6.241,
+      "text": "the same way you can also use to"
+    },
+    {
+      "start": 245.12,
+      "duration": 4.399,
+      "text": "copy any content or folder or file so"
+    },
+    {
+      "start": 247.76,
+      "duration": 3.679,
+      "text": "you can copy paste anything you want"
+    },
+    {
+      "start": 249.519,
+      "duration": 3.841,
+      "text": "like files or folders or any text format"
+    },
+    {
+      "start": 251.439,
+      "duration": 4.961,
+      "text": "you want so that can be done using file"
+    },
+    {
+      "start": 253.36,
+      "duration": 5.52,
+      "text": "provisioner and let me show you that"
+    },
+    {
+      "start": 256.4,
+      "duration": 4.72,
+      "text": "with an example that is used in real"
+    },
+    {
+      "start": 258.88,
+      "duration": 4.24,
+      "text": "case so i have"
+    },
+    {
+      "start": 261.12,
+      "duration": 4.48,
+      "text": "a project"
+    },
+    {
+      "start": 263.12,
+      "duration": 3.92,
+      "text": "right this one so if i go here in this"
+    },
+    {
+      "start": 265.6,
+      "duration": 3.52,
+      "text": "you can see there's a provisional name"
+    },
+    {
+      "start": 267.04,
+      "duration": 3.68,
+      "text": "as file and"
+    },
+    {
+      "start": 269.12,
+      "duration": 3.28,
+      "text": "this uh this is"
+    },
+    {
+      "start": 270.72,
+      "duration": 5.039,
+      "text": "this project is launching easy to"
+    },
+    {
+      "start": 272.4,
+      "duration": 5.28,
+      "text": "instances and is using ansible do you"
+    },
+    {
+      "start": 275.759,
+      "duration": 4.0,
+      "text": "know about ansible"
+    },
+    {
+      "start": 277.68,
+      "duration": 4.72,
+      "text": "yeah so information management yes"
+    },
+    {
+      "start": 279.759,
+      "duration": 4.641,
+      "text": "configuration management tool so this"
+    },
+    {
+      "start": 282.4,
+      "duration": 4.239,
+      "text": "we are using provisionals to handle all"
+    },
+    {
+      "start": 284.4,
+      "duration": 4.56,
+      "text": "the configuration management tool but"
+    },
+    {
+      "start": 286.639,
+      "duration": 5.12,
+      "text": "before running ansible i need to have"
+    },
+    {
+      "start": 288.96,
+      "duration": 5.36,
+      "text": "the playbook and all the other stuff"
+    },
+    {
+      "start": 291.759,
+      "duration": 5.44,
+      "text": "in my ec2 instance"
+    },
+    {
+      "start": 294.32,
+      "duration": 5.92,
+      "text": "right so this engine configuration is my"
+    },
+    {
+      "start": 297.199,
+      "duration": 5.361,
+      "text": "playbook and then i also have the rules"
+    },
+    {
+      "start": 300.24,
+      "duration": 4.16,
+      "text": "is all inside my local machine"
+    },
+    {
+      "start": 302.56,
+      "duration": 3.68,
+      "text": "but i want to pass this in my remote"
+    },
+    {
+      "start": 304.4,
+      "duration": 5.04,
+      "text": "machine this machine that is created"
+    },
+    {
+      "start": 306.24,
+      "duration": 5.28,
+      "text": "here the aws instance so i want to pass"
+    },
+    {
+      "start": 309.44,
+      "duration": 3.92,
+      "text": "this in that machine so i can use the"
+    },
+    {
+      "start": 311.52,
+      "duration": 3.84,
+      "text": "provisioner file but i have to pass in"
+    },
+    {
+      "start": 313.36,
+      "duration": 3.36,
+      "text": "the connection block as you can see here"
+    },
+    {
+      "start": 315.36,
+      "duration": 4.72,
+      "text": "the connection block which has the type"
+    },
+    {
+      "start": 316.72,
+      "duration": 5.039,
+      "text": "ssh user as ubuntu and the private key"
+    },
+    {
+      "start": 320.08,
+      "duration": 3.92,
+      "text": "is the keypair that i've created which"
+    },
+    {
+      "start": 321.759,
+      "duration": 3.921,
+      "text": "will be created once this code is run"
+    },
+    {
+      "start": 324.0,
+      "duration": 3.199,
+      "text": "and the host is going to be the self dot"
+    },
+    {
+      "start": 325.68,
+      "duration": 4.0,
+      "text": "public ip when you use the self dot"
+    },
+    {
+      "start": 327.199,
+      "duration": 4.161,
+      "text": "public ip the public ip of this instance"
+    },
+    {
+      "start": 329.68,
+      "duration": 2.64,
+      "text": "that is going to be created is fetched"
+    },
+    {
+      "start": 331.36,
+      "duration": 3.119,
+      "text": "here"
+    },
+    {
+      "start": 332.32,
+      "duration": 5.76,
+      "text": "and this will automatically copy the"
+    },
+    {
+      "start": 334.479,
+      "duration": 5.361,
+      "text": "file from my roles so this folder that"
+    },
+    {
+      "start": 338.08,
+      "duration": 4.64,
+      "text": "is present here rules is going to be"
+    },
+    {
+      "start": 339.84,
+      "duration": 4.0,
+      "text": "copied to the home ubuntu"
+    },
+    {
+      "start": 342.72,
+      "duration": 3.6,
+      "text": "rules"
+    },
+    {
+      "start": 343.84,
+      "duration": 4.4,
+      "text": "so next is local exec provisioner so if"
+    },
+    {
+      "start": 346.32,
+      "duration": 4.319,
+      "text": "you want to run any command in your"
+    },
+    {
+      "start": 348.24,
+      "duration": 4.48,
+      "text": "local machine you can use this local"
+    },
+    {
+      "start": 350.639,
+      "duration": 4.0,
+      "text": "exec provisioner so look like the"
+    },
+    {
+      "start": 352.72,
+      "duration": 4.319,
+      "text": "provisional invokes local executable"
+    },
+    {
+      "start": 354.639,
+      "duration": 4.721,
+      "text": "after resource is created this invokes a"
+    },
+    {
+      "start": 357.039,
+      "duration": 4.081,
+      "text": "process on the machine running terraform"
+    },
+    {
+      "start": 359.36,
+      "duration": 4.959,
+      "text": "not on the resource so on the machine"
+    },
+    {
+      "start": 361.12,
+      "duration": 5.12,
+      "text": "where the terraform code is uh run"
+    },
+    {
+      "start": 364.319,
+      "duration": 4.32,
+      "text": "your in the command will be done so this"
+    },
+    {
+      "start": 366.24,
+      "duration": 3.44,
+      "text": "can be used for any general use case so"
+    },
+    {
+      "start": 368.639,
+      "duration": 3.601,
+      "text": "let's say if you're working on"
+    },
+    {
+      "start": 369.68,
+      "duration": 4.079,
+      "text": "kubernetes uh you can"
+    },
+    {
+      "start": 372.24,
+      "duration": 4.239,
+      "text": "you can use local executive provision"
+    },
+    {
+      "start": 373.759,
+      "duration": 3.761,
+      "text": "just to create a name space and let me"
+    },
+    {
+      "start": 376.479,
+      "duration": 3.121,
+      "text": "show you"
+    },
+    {
+      "start": 377.52,
+      "duration": 4.48,
+      "text": "an example of local"
+    },
+    {
+      "start": 379.6,
+      "duration": 3.84,
+      "text": "so here we have local exec provisioner"
+    },
+    {
+      "start": 382.0,
+      "duration": 3.44,
+      "text": "and if i want to run any commands"
+    },
+    {
+      "start": 383.44,
+      "duration": 3.92,
+      "text": "without creating any resource i just"
+    },
+    {
+      "start": 385.44,
+      "duration": 5.199,
+      "text": "want to i just want the"
+    },
+    {
+      "start": 387.36,
+      "duration": 6.48,
+      "text": "command to be run so like for example if"
+    },
+    {
+      "start": 390.639,
+      "duration": 5.441,
+      "text": "i have a keypair created and i want to"
+    },
+    {
+      "start": 393.84,
+      "duration": 4.24,
+      "text": "just provide the permission to it so i"
+    },
+    {
+      "start": 396.08,
+      "duration": 4.16,
+      "text": "don't want to create any any resource"
+    },
+    {
+      "start": 398.08,
+      "duration": 4.0,
+      "text": "but i only want to create i only want to"
+    },
+    {
+      "start": 400.24,
+      "duration": 3.76,
+      "text": "provide permission and that's why i'll"
+    },
+    {
+      "start": 402.08,
+      "duration": 3.36,
+      "text": "use the local exec provisioner and i"
+    },
+    {
+      "start": 404.0,
+      "duration": 3.6,
+      "text": "have to pass in the command so command"
+    },
+    {
+      "start": 405.44,
+      "duration": 4.479,
+      "text": "is going to be let's say cube ctl create"
+    },
+    {
+      "start": 407.6,
+      "duration": 4.48,
+      "text": "here i'm creating a configuration file"
+    },
+    {
+      "start": 409.919,
+      "duration": 3.921,
+      "text": "using the cube ctl create command in my"
+    },
+    {
+      "start": 412.08,
+      "duration": 3.28,
+      "text": "own local machine so i don't have to do"
+    },
+    {
+      "start": 413.84,
+      "duration": 4.16,
+      "text": "any manual like"
+    },
+    {
+      "start": 415.36,
+      "duration": 5.04,
+      "text": "if i was not using this local exec i"
+    },
+    {
+      "start": 418.0,
+      "duration": 3.84,
+      "text": "have to run this command in my terminal"
+    },
+    {
+      "start": 420.4,
+      "duration": 3.28,
+      "text": "like this so i don't want to do any"
+    },
+    {
+      "start": 421.84,
+      "duration": 4.639,
+      "text": "manual work i want it to be done"
+    },
+    {
+      "start": 423.68,
+      "duration": 5.28,
+      "text": "automatically everything so that is why"
+    },
+    {
+      "start": 426.479,
+      "duration": 4.641,
+      "text": "we are using local exec so i am using"
+    },
+    {
+      "start": 428.96,
+      "duration": 4.079,
+      "text": "terraform just to run this command in"
+    },
+    {
+      "start": 431.12,
+      "duration": 3.68,
+      "text": "the terraform itself so using local"
+    },
+    {
+      "start": 433.039,
+      "duration": 3.761,
+      "text": "which means you are going to run the"
+    },
+    {
+      "start": 434.8,
+      "duration": 4.239,
+      "text": "command in your local machine remote"
+    },
+    {
+      "start": 436.8,
+      "duration": 4.08,
+      "text": "exact means remote exact means like"
+    },
+    {
+      "start": 439.039,
+      "duration": 3.841,
+      "text": "you're you're creating an instance in"
+    },
+    {
+      "start": 440.88,
+      "duration": 4.96,
+      "text": "terraform and you're running the command"
+    },
+    {
+      "start": 442.88,
+      "duration": 2.96,
+      "text": "on that instance"
+    },
+    {
+      "start": 445.919,
+      "duration": 4.081,
+      "text": "right so let's let's learn about remote"
+    },
+    {
+      "start": 447.599,
+      "duration": 4.88,
+      "text": "as well remote exec procedure invokes a"
+    },
+    {
+      "start": 450.0,
+      "duration": 4.16,
+      "text": "script on a remote resource after it is"
+    },
+    {
+      "start": 452.479,
+      "duration": 3.601,
+      "text": "created this can be used to run"
+    },
+    {
+      "start": 454.16,
+      "duration": 4.56,
+      "text": "configuration management tool or"
+    },
+    {
+      "start": 456.08,
+      "duration": 4.48,
+      "text": "bootstrapped into a cluster etc"
+    },
+    {
+      "start": 458.72,
+      "duration": 4.479,
+      "text": "so let's say let me show you an example"
+    },
+    {
+      "start": 460.56,
+      "duration": 2.639,
+      "text": "of that as well"
+    },
+    {
+      "start": 463.599,
+      "duration": 4.481,
+      "text": "here you can see that this instance"
+    },
+    {
+      "start": 465.599,
+      "duration": 4.241,
+      "text": "is created which has the emi the"
+    },
+    {
+      "start": 468.08,
+      "duration": 4.16,
+      "text": "instance type all the stuff so i want to"
+    },
+    {
+      "start": 469.84,
+      "duration": 4.96,
+      "text": "maybe run some commands so which you can"
+    },
+    {
+      "start": 472.24,
+      "duration": 4.639,
+      "text": "run remote exec so using remote exec i"
+    },
+    {
+      "start": 474.8,
+      "duration": 3.76,
+      "text": "can run commands like let's say i've"
+    },
+    {
+      "start": 476.879,
+      "duration": 3.681,
+      "text": "used remote exec here"
+    },
+    {
+      "start": 478.56,
+      "duration": 3.84,
+      "text": "and i have used the inline command where"
+    },
+    {
+      "start": 480.56,
+      "duration": 4.079,
+      "text": "i'm passing all the commands so i'm"
+    },
+    {
+      "start": 482.4,
+      "duration": 5.12,
+      "text": "echoing this i have whenever i'm using"
+    },
+    {
+      "start": 484.639,
+      "duration": 4.56,
+      "text": "ansible i have to pass in the host file"
+    },
+    {
+      "start": 487.52,
+      "duration": 4.0,
+      "text": "right where i have to pass in the ip"
+    },
+    {
+      "start": 489.199,
+      "duration": 4.72,
+      "text": "address or private api address of all"
+    },
+    {
+      "start": 491.52,
+      "duration": 4.48,
+      "text": "the other ac2 instances so that the"
+    },
+    {
+      "start": 493.919,
+      "duration": 3.921,
+      "text": "playbook can be run on that instances so"
+    },
+    {
+      "start": 496.0,
+      "duration": 4.319,
+      "text": "for that i have to create a host and to"
+    },
+    {
+      "start": 497.84,
+      "duration": 4.16,
+      "text": "create that host i'm using remote exec"
+    },
+    {
+      "start": 500.319,
+      "duration": 3.6,
+      "text": "where i'm echoing everything that i've"
+    },
+    {
+      "start": 502.0,
+      "duration": 3.68,
+      "text": "put in here so i'm recording ansible the"
+    },
+    {
+      "start": 503.919,
+      "duration": 4.0,
+      "text": "name of the host this means that i'm"
+    },
+    {
+      "start": 505.68,
+      "duration": 5.28,
+      "text": "running some commands on my remote"
+    },
+    {
+      "start": 507.919,
+      "duration": 4.8,
+      "text": "machine without accessing it"
+    },
+    {
+      "start": 510.96,
+      "duration": 2.559,
+      "text": "right all right okay without accessing"
+    },
+    {
+      "start": 512.719,
+      "duration": 2.88,
+      "text": "here"
+    },
+    {
+      "start": 513.519,
+      "duration": 3.52,
+      "text": "i'm doing everything from here"
+    },
+    {
+      "start": 515.599,
+      "duration": 3.841,
+      "text": "i just have to pass in the connection"
+    },
+    {
+      "start": 517.039,
+      "duration": 4.401,
+      "text": "block so i'm accessing it through this"
+    },
+    {
+      "start": 519.44,
+      "duration": 4.159,
+      "text": "but not going to the console or not"
+    },
+    {
+      "start": 521.44,
+      "duration": 4.48,
+      "text": "going to my terminal i'm just using the"
+    },
+    {
+      "start": 523.599,
+      "duration": 4.24,
+      "text": "terraform to do any everything"
+    },
+    {
+      "start": 525.92,
+      "duration": 3.919,
+      "text": "you can use remote exact provisioner to"
+    },
+    {
+      "start": 527.839,
+      "duration": 3.601,
+      "text": "run commands like you can run commands"
+    },
+    {
+      "start": 529.839,
+      "duration": 3.761,
+      "text": "you can run configuration management"
+    },
+    {
+      "start": 531.44,
+      "duration": 5.04,
+      "text": "tool as well so let me show you like i"
+    },
+    {
+      "start": 533.6,
+      "duration": 4.56,
+      "text": "have a command which is uh"
+    },
+    {
+      "start": 536.48,
+      "duration": 4.08,
+      "text": "running so this is remote exec"
+    },
+    {
+      "start": 538.16,
+      "duration": 4.08,
+      "text": "provisioner as also and this is the"
+    },
+    {
+      "start": 540.56,
+      "duration": 3.04,
+      "text": "command to run the ansible playbook"
+    },
+    {
+      "start": 542.24,
+      "duration": 2.4,
+      "text": "ansible playbook and the name of the"
+    },
+    {
+      "start": 543.6,
+      "duration": 4.16,
+      "text": "playbook"
+    },
+    {
+      "start": 544.64,
+      "duration": 5.199,
+      "text": "right so this command is run without"
+    },
+    {
+      "start": 547.76,
+      "duration": 4.16,
+      "text": "going into the instance i was not using"
+    },
+    {
+      "start": 549.839,
+      "duration": 4.481,
+      "text": "this remote exact provisioner what i was"
+    },
+    {
+      "start": 551.92,
+      "duration": 4.64,
+      "text": "doing is i will be creating the instance"
+    },
+    {
+      "start": 554.32,
+      "duration": 3.12,
+      "text": "once that instance is created i'll go to"
+    },
+    {
+      "start": 556.56,
+      "duration": 2.8,
+      "text": "my"
+    },
+    {
+      "start": 557.44,
+      "duration": 4.32,
+      "text": "console i'll log into my console then i"
+    },
+    {
+      "start": 559.36,
+      "duration": 3.68,
+      "text": "go to then i'll go to my aws ec2"
+    },
+    {
+      "start": 561.76,
+      "duration": 3.92,
+      "text": "instance"
+    },
+    {
+      "start": 563.04,
+      "duration": 3.76,
+      "text": "right and after that ec2 instance i have"
+    },
+    {
+      "start": 565.68,
+      "duration": 2.64,
+      "text": "to go"
+    },
+    {
+      "start": 566.8,
+      "duration": 2.96,
+      "text": "to the"
+    },
+    {
+      "start": 568.32,
+      "duration": 3.44,
+      "text": "particular instance which is going to be"
+    },
+    {
+      "start": 569.76,
+      "duration": 4.079,
+      "text": "created and once the instance is created"
+    },
+    {
+      "start": 571.76,
+      "duration": 3.84,
+      "text": "i have to say this is the instance that"
+    },
+    {
+      "start": 573.839,
+      "duration": 3.761,
+      "text": "is created so if i want to run the"
+    },
+    {
+      "start": 575.6,
+      "duration": 4.4,
+      "text": "ansible playbook in this i have to go"
+    },
+    {
+      "start": 577.6,
+      "duration": 4.239,
+      "text": "connect to it then then a shell will be"
+    },
+    {
+      "start": 580.0,
+      "duration": 3.839,
+      "text": "open so this and then i have to pass in"
+    },
+    {
+      "start": 581.839,
+      "duration": 4.881,
+      "text": "the command so i have to do some manual"
+    },
+    {
+      "start": 583.839,
+      "duration": 4.641,
+      "text": "task in this right so i have to go here"
+    },
+    {
+      "start": 586.72,
+      "duration": 3.36,
+      "text": "i have to go to control and so if you"
+    },
+    {
+      "start": 588.48,
+      "duration": 3.52,
+      "text": "don't want to do any manual task and if"
+    },
+    {
+      "start": 590.08,
+      "duration": 3.12,
+      "text": "you want to run the commands directly"
+    },
+    {
+      "start": 592.0,
+      "duration": 3.519,
+      "text": "from the"
+    },
+    {
+      "start": 593.2,
+      "duration": 4.0,
+      "text": "terraform then we use remote"
+    },
+    {
+      "start": 595.519,
+      "duration": 5.041,
+      "text": "exec provisioner"
+    },
+    {
+      "start": 597.2,
+      "duration": 5.36,
+      "text": "remote means far right so remote exactly"
+    },
+    {
+      "start": 600.56,
+      "duration": 3.92,
+      "text": "running commands on remote machine local"
+    },
+    {
+      "start": 602.56,
+      "duration": 3.68,
+      "text": "exec means running commands on local"
+    },
+    {
+      "start": 604.48,
+      "duration": 2.96,
+      "text": "machine"
+    },
+    {
+      "start": 606.24,
+      "duration": 3.2,
+      "text": "okay"
+    },
+    {
+      "start": 607.44,
+      "duration": 4.56,
+      "text": "right and file provisioner is used"
+    },
+    {
+      "start": 609.44,
+      "duration": 4.16,
+      "text": "whenever you want to copy paste file or"
+    },
+    {
+      "start": 612.0,
+      "duration": 4.959,
+      "text": "folders in"
+    },
+    {
+      "start": 613.6,
+      "duration": 3.359,
+      "text": "remote machine"
+    }
+  ]
+}

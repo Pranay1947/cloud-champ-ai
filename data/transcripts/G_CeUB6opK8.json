@@ -1,0 +1,1711 @@
+{
+  "video": {
+    "id": "G_CeUB6opK8",
+    "title": "MOST Secure Way to Access Private Cloud Resources - Twingate",
+    "url": "https://www.youtube.com/watch?v=G_CeUB6opK8",
+    "duration": 731,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 3.92,
+      "text": "Security, security, security. When it"
+    },
+    {
+      "start": 2.8,
+      "duration": 4.079,
+      "text": "comes to DevOps, it's all about"
+    },
+    {
+      "start": 4.16,
+      "duration": 5.12,
+      "text": "automation and moving fast, but without"
+    },
+    {
+      "start": 6.879,
+      "duration": 4.961,
+      "text": "sacrificing security. Your development"
+    },
+    {
+      "start": 9.28,
+      "duration": 4.56,
+      "text": "pipeline, application, infrastructure,"
+    },
+    {
+      "start": 11.84,
+      "duration": 3.679,
+      "text": "everything needs to be secured from"
+    },
+    {
+      "start": 13.84,
+      "duration": 4.08,
+      "text": "potential threats that can cause"
+    },
+    {
+      "start": 15.519,
+      "duration": 4.561,
+      "text": "business loss. Also, these days with"
+    },
+    {
+      "start": 17.92,
+      "duration": 4.32,
+      "text": "many companies adopting remote work,"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.56,
+      "text": "there is a need to securely and easily"
+    },
+    {
+      "start": 22.24,
+      "duration": 4.879,
+      "text": "access cloud resources without any"
+    },
+    {
+      "start": 24.64,
+      "duration": 5.2,
+      "text": "issues. And to do this, companies often"
+    },
+    {
+      "start": 27.119,
+      "duration": 5.761,
+      "text": "use VPNs or bases host which are not so"
+    },
+    {
+      "start": 29.84,
+      "duration": 5.12,
+      "text": "easy to set up and also not very secure."
+    },
+    {
+      "start": 32.88,
+      "duration": 4.64,
+      "text": "And this is why you need to use Twin"
+    },
+    {
+      "start": 34.96,
+      "duration": 4.88,
+      "text": "Gate. So Twin Gate is a secure remote"
+    },
+    {
+      "start": 37.52,
+      "duration": 5.359,
+      "text": "access solution for an organization's"
+    },
+    {
+      "start": 39.84,
+      "duration": 5.2,
+      "text": "data application or environment which"
+    },
+    {
+      "start": 42.879,
+      "duration": 4.561,
+      "text": "may be either in the cloud or on"
+    },
+    {
+      "start": 45.04,
+      "duration": 4.8,
+      "text": "premises. And this may make it sounded"
+    },
+    {
+      "start": 47.44,
+      "duration": 4.639,
+      "text": "like a VPN, but it's not. It's actually"
+    },
+    {
+      "start": 49.84,
+      "duration": 5.359,
+      "text": "better, easier, and more secure. So,"
+    },
+    {
+      "start": 52.079,
+      "duration": 5.441,
+      "text": "Twing uses zero trust network access"
+    },
+    {
+      "start": 55.199,
+      "duration": 4.0,
+      "text": "model which is a more modern and more"
+    },
+    {
+      "start": 57.52,
+      "duration": 4.48,
+      "text": "secure way of accessing remote"
+    },
+    {
+      "start": 59.199,
+      "duration": 5.04,
+      "text": "applications securely and seamlessly"
+    },
+    {
+      "start": 62.0,
+      "duration": 3.84,
+      "text": "without any need of passion host or"
+    },
+    {
+      "start": 64.239,
+      "duration": 3.601,
+      "text": "VPNs."
+    },
+    {
+      "start": 65.84,
+      "duration": 3.68,
+      "text": "Okay. So, I'm here on my computer screen"
+    },
+    {
+      "start": 67.84,
+      "duration": 3.92,
+      "text": "and let me show you how you can use"
+    },
+    {
+      "start": 69.52,
+      "duration": 4.72,
+      "text": "Twinate to access private applications"
+    },
+    {
+      "start": 71.76,
+      "duration": 3.76,
+      "text": "on AWS cloud. Now to use Twinate, you"
+    },
+    {
+      "start": 74.24,
+      "duration": 3.28,
+      "text": "need to go to the official website which"
+    },
+    {
+      "start": 75.52,
+      "duration": 3.279,
+      "text": "is twinate.com which will bring you to"
+    },
+    {
+      "start": 77.52,
+      "duration": 3.04,
+      "text": "this page where you can read about"
+    },
+    {
+      "start": 78.799,
+      "duration": 4.881,
+      "text": "twinate different benefits of using"
+    },
+    {
+      "start": 80.56,
+      "duration": 4.96,
+      "text": "twing compared to VPNs and all that. But"
+    },
+    {
+      "start": 83.68,
+      "duration": 3.84,
+      "text": "right now Twing offers different pricing"
+    },
+    {
+      "start": 85.52,
+      "duration": 4.08,
+      "text": "models. So if you're a small team or an"
+    },
+    {
+      "start": 87.52,
+      "duration": 3.599,
+      "text": "individual working with twinate, you can"
+    },
+    {
+      "start": 89.6,
+      "duration": 3.519,
+      "text": "go with the free model or else you can"
+    },
+    {
+      "start": 91.119,
+      "duration": 3.601,
+      "text": "choose teams business. But if you're"
+    },
+    {
+      "start": 93.119,
+      "duration": 3.68,
+      "text": "bigger organization, you can also use"
+    },
+    {
+      "start": 94.72,
+      "duration": 3.439,
+      "text": "the enterprise option here. For this"
+    },
+    {
+      "start": 96.799,
+      "duration": 3.121,
+      "text": "demo, I'm going to be using the free"
+    },
+    {
+      "start": 98.159,
+      "duration": 4.241,
+      "text": "version and you can also go ahead with"
+    },
+    {
+      "start": 99.92,
+      "duration": 4.159,
+      "text": "using this which is free. Uh so go ahead"
+    },
+    {
+      "start": 102.4,
+      "duration": 3.2,
+      "text": "with create an account. I already have"
+    },
+    {
+      "start": 104.079,
+      "duration": 3.281,
+      "text": "an account with Twinate. So I'm going to"
+    },
+    {
+      "start": 105.6,
+      "duration": 3.44,
+      "text": "log into it. For you, you need to create"
+    },
+    {
+      "start": 107.36,
+      "duration": 3.84,
+      "text": "an account which can be done using an"
+    },
+    {
+      "start": 109.04,
+      "duration": 3.68,
+      "text": "email IP. So just go ahead add your"
+    },
+    {
+      "start": 111.2,
+      "duration": 3.12,
+      "text": "email and get started with using"
+    },
+    {
+      "start": 112.72,
+      "duration": 3.84,
+      "text": "Twinate. So I'm going to go ahead and"
+    },
+    {
+      "start": 114.32,
+      "duration": 3.92,
+      "text": "log into my account. Once you log in,"
+    },
+    {
+      "start": 116.56,
+      "duration": 3.839,
+      "text": "this is the dashboard you get. So you"
+    },
+    {
+      "start": 118.24,
+      "duration": 4.239,
+      "text": "can see network ping devices all those"
+    },
+    {
+      "start": 120.399,
+      "duration": 3.68,
+      "text": "here. Now, twin gate works in a way"
+    },
+    {
+      "start": 122.479,
+      "duration": 4.401,
+      "text": "where you first need to create a"
+    },
+    {
+      "start": 124.079,
+      "duration": 4.481,
+      "text": "network, install the connector, then add"
+    },
+    {
+      "start": 126.88,
+      "duration": 3.599,
+      "text": "the resources you want to connect and"
+    },
+    {
+      "start": 128.56,
+      "duration": 3.92,
+      "text": "lastly use the twinate client to"
+    },
+    {
+      "start": 130.479,
+      "duration": 3.441,
+      "text": "actually access that. So, you need to"
+    },
+    {
+      "start": 132.48,
+      "duration": 3.52,
+      "text": "first start with creating your network"
+    },
+    {
+      "start": 133.92,
+      "duration": 3.92,
+      "text": "and twing has excellent documentations"
+    },
+    {
+      "start": 136.0,
+      "duration": 3.52,
+      "text": "that can help you with almost"
+    },
+    {
+      "start": 137.84,
+      "duration": 3.28,
+      "text": "everything. So, you can see how you can"
+    },
+    {
+      "start": 139.52,
+      "duration": 3.28,
+      "text": "start with creating a network. If you"
+    },
+    {
+      "start": 141.12,
+      "duration": 2.88,
+      "text": "want to know how twing actually works,"
+    },
+    {
+      "start": 142.8,
+      "duration": 3.28,
+      "text": "you can also read from their"
+    },
+    {
+      "start": 144.0,
+      "duration": 4.239,
+      "text": "documentation on how Twit uses"
+    },
+    {
+      "start": 146.08,
+      "duration": 4.08,
+      "text": "connectors and relays to access private"
+    },
+    {
+      "start": 148.239,
+      "duration": 3.281,
+      "text": "application. So they have excellent"
+    },
+    {
+      "start": 150.16,
+      "duration": 3.52,
+      "text": "documentation and if you want to learn"
+    },
+    {
+      "start": 151.52,
+      "duration": 3.52,
+      "text": "more you can definitely check that out."
+    },
+    {
+      "start": 153.68,
+      "duration": 3.12,
+      "text": "For now I'm going to go ahead with"
+    },
+    {
+      "start": 155.04,
+      "duration": 3.52,
+      "text": "creating a network. So I'll go here"
+    },
+    {
+      "start": 156.8,
+      "duration": 3.76,
+      "text": "remote networks and you can see I"
+    },
+    {
+      "start": 158.56,
+      "duration": 3.52,
+      "text": "already have one network created. I was"
+    },
+    {
+      "start": 160.56,
+      "duration": 3.44,
+      "text": "playing around so this is when I created"
+    },
+    {
+      "start": 162.08,
+      "duration": 3.439,
+      "text": "that but I'm going to show you how to"
+    },
+    {
+      "start": 164.0,
+      "duration": 3.28,
+      "text": "create one. So let's click on remote"
+    },
+    {
+      "start": 165.519,
+      "duration": 3.36,
+      "text": "network and you can choose where do you"
+    },
+    {
+      "start": 167.28,
+      "duration": 4.48,
+      "text": "want this network to be created either"
+    },
+    {
+      "start": 168.879,
+      "duration": 5.921,
+      "text": "in AWS or Azure or Google cloud or"
+    },
+    {
+      "start": 171.76,
+      "duration": 4.72,
+      "text": "onremise etc. For now we are using AWS."
+    },
+    {
+      "start": 174.8,
+      "duration": 4.799,
+      "text": "So let's go with AWS and I'm going to"
+    },
+    {
+      "start": 176.48,
+      "duration": 5.44,
+      "text": "name this as uh secure VPC. Okay, let's"
+    },
+    {
+      "start": 179.599,
+      "duration": 5.36,
+      "text": "add remote network here. Once you click"
+    },
+    {
+      "start": 181.92,
+      "duration": 5.36,
+      "text": "on remote network, you need to then"
+    },
+    {
+      "start": 184.959,
+      "duration": 4.241,
+      "text": "install connectors. So you can see there"
+    },
+    {
+      "start": 187.28,
+      "duration": 3.92,
+      "text": "are two connectors here. These are two"
+    },
+    {
+      "start": 189.2,
+      "duration": 3.679,
+      "text": "connectors for high availability, but"
+    },
+    {
+      "start": 191.2,
+      "duration": 3.44,
+      "text": "you can choose to install one of them."
+    },
+    {
+      "start": 192.879,
+      "duration": 4.241,
+      "text": "If you're using Twin Gate in production,"
+    },
+    {
+      "start": 194.64,
+      "duration": 4.72,
+      "text": "I would recommend you installing these"
+    },
+    {
+      "start": 197.12,
+      "duration": 4.24,
+      "text": "two connectors on different instances in"
+    },
+    {
+      "start": 199.36,
+      "duration": 3.76,
+      "text": "the same network. So to provide access,"
+    },
+    {
+      "start": 201.36,
+      "duration": 3.2,
+      "text": "you need to first deploy a connector."
+    },
+    {
+      "start": 203.12,
+      "duration": 3.52,
+      "text": "I'm going to click on deploy connector"
+    },
+    {
+      "start": 204.56,
+      "duration": 3.36,
+      "text": "option here. So you can see to deploy a"
+    },
+    {
+      "start": 206.64,
+      "duration": 3.2,
+      "text": "connector there are different ways. You"
+    },
+    {
+      "start": 207.92,
+      "duration": 4.08,
+      "text": "can use docker to deploy a connector"
+    },
+    {
+      "start": 209.84,
+      "duration": 4.64,
+      "text": "using these commands. You can also use"
+    },
+    {
+      "start": 212.0,
+      "duration": 4.64,
+      "text": "health charts. You can use AWS ECS,"
+    },
+    {
+      "start": 214.48,
+      "duration": 4.56,
+      "text": "Azure or simply install it on Linux"
+    },
+    {
+      "start": 216.64,
+      "duration": 5.2,
+      "text": "using the commands. Also if you're using"
+    },
+    {
+      "start": 219.04,
+      "duration": 4.08,
+      "text": "AWS TwinT has a cloud formation template"
+    },
+    {
+      "start": 221.84,
+      "duration": 2.88,
+      "text": "that you can use which will"
+    },
+    {
+      "start": 223.12,
+      "duration": 3.44,
+      "text": "automatically go ahead with creating a"
+    },
+    {
+      "start": 224.72,
+      "duration": 3.519,
+      "text": "stack. And for you to do this you need"
+    },
+    {
+      "start": 226.56,
+      "duration": 3.92,
+      "text": "to reauthenticate. Once you're"
+    },
+    {
+      "start": 228.239,
+      "duration": 3.761,
+      "text": "authenticated, you can select the region"
+    },
+    {
+      "start": 230.48,
+      "duration": 3.52,
+      "text": "where you want to deploy this connector"
+    },
+    {
+      "start": 232.0,
+      "duration": 3.76,
+      "text": "and you can click on open AWS which will"
+    },
+    {
+      "start": 234.0,
+      "duration": 3.439,
+      "text": "take you to the cloud form page where"
+    },
+    {
+      "start": 235.76,
+      "duration": 4.16,
+      "text": "you can go ahead with deploying this"
+    },
+    {
+      "start": 237.439,
+      "duration": 4.561,
+      "text": "connector as a stack without you doing"
+    },
+    {
+      "start": 239.92,
+      "duration": 3.44,
+      "text": "anything. So this helps you deploy"
+    },
+    {
+      "start": 242.0,
+      "duration": 3.28,
+      "text": "connector automatically using cloud"
+    },
+    {
+      "start": 243.36,
+      "duration": 4.72,
+      "text": "form. But for this demo I'm going to be"
+    },
+    {
+      "start": 245.28,
+      "duration": 4.72,
+      "text": "using uh Linux because I'll be creating"
+    },
+    {
+      "start": 248.08,
+      "duration": 4.56,
+      "text": "an instance and deploying this connector"
+    },
+    {
+      "start": 250.0,
+      "duration": 4.239,
+      "text": "on AWS EC2 instance. Okay. So I have"
+    },
+    {
+      "start": 252.64,
+      "duration": 3.28,
+      "text": "this EC2 instance ready. I'm going to"
+    },
+    {
+      "start": 254.239,
+      "duration": 4.801,
+      "text": "connect to it and then run this commands"
+    },
+    {
+      "start": 255.92,
+      "duration": 5.36,
+      "text": "to install be connected. So I can also"
+    },
+    {
+      "start": 259.04,
+      "duration": 4.719,
+      "text": "customize if I want to get logs. So I"
+    },
+    {
+      "start": 261.28,
+      "duration": 4.96,
+      "text": "can choose to put logs and get also get"
+    },
+    {
+      "start": 263.759,
+      "duration": 5.281,
+      "text": "the logs but I'm not able to do that for"
+    },
+    {
+      "start": 266.24,
+      "duration": 4.48,
+      "text": "now. Let's copy the command and wait for"
+    },
+    {
+      "start": 269.04,
+      "duration": 4.08,
+      "text": "the connection after you paste it. So I"
+    },
+    {
+      "start": 270.72,
+      "duration": 4.64,
+      "text": "want to paste this here. Once done you"
+    },
+    {
+      "start": 273.12,
+      "duration": 4.96,
+      "text": "should be able to see a green symbol a"
+    },
+    {
+      "start": 275.36,
+      "duration": 4.32,
+      "text": "green color here and also connected."
+    },
+    {
+      "start": 278.08,
+      "duration": 3.52,
+      "text": "So now it is connected. Let's refresh"
+    },
+    {
+      "start": 279.68,
+      "duration": 3.84,
+      "text": "the page and you can see it's connected"
+    },
+    {
+      "start": 281.6,
+      "duration": 4.319,
+      "text": "or we also have a controller and relay"
+    },
+    {
+      "start": 283.52,
+      "duration": 4.72,
+      "text": "connected now. Okay, now that the"
+    },
+    {
+      "start": 285.919,
+      "duration": 4.0,
+      "text": "connector is deployed, let's move ahead."
+    },
+    {
+      "start": 288.24,
+      "duration": 5.04,
+      "text": "I'm going to be deploying genkins"
+    },
+    {
+      "start": 289.919,
+      "duration": 5.921,
+      "text": "application on AWS EC2 privately which"
+    },
+    {
+      "start": 293.28,
+      "duration": 4.639,
+      "text": "can be accessed only through twin not"
+    },
+    {
+      "start": 295.84,
+      "duration": 4.079,
+      "text": "through public internet. So let's go to"
+    },
+    {
+      "start": 297.919,
+      "duration": 5.041,
+      "text": "EC2 instance and create a genkins"
+    },
+    {
+      "start": 299.919,
+      "duration": 4.801,
+      "text": "application on EC2. Let's name this as"
+    },
+    {
+      "start": 302.96,
+      "duration": 4.16,
+      "text": "Genkins. If you're not aware about"
+    },
+    {
+      "start": 304.72,
+      "duration": 4.4,
+      "text": "Genkins, Genkins is a very popular CI/CD"
+    },
+    {
+      "start": 307.12,
+      "duration": 3.84,
+      "text": "tool and I have videos about Genkins on"
+    },
+    {
+      "start": 309.12,
+      "duration": 4.079,
+      "text": "this channel. So, make sure you"
+    },
+    {
+      "start": 310.96,
+      "duration": 4.4,
+      "text": "subscribe to Cloud Champ for more DevOps"
+    },
+    {
+      "start": 313.199,
+      "duration": 3.201,
+      "text": "and cloud content. Okay, this is the one"
+    },
+    {
+      "start": 315.36,
+      "duration": 4.0,
+      "text": "I'm going to be using. So, let's click"
+    },
+    {
+      "start": 316.4,
+      "duration": 4.48,
+      "text": "on select and then we can have options"
+    },
+    {
+      "start": 319.36,
+      "duration": 3.839,
+      "text": "to fill in all these details. I'm going"
+    },
+    {
+      "start": 320.88,
+      "duration": 4.8,
+      "text": "to leave all this as it is. We have"
+    },
+    {
+      "start": 323.199,
+      "duration": 4.241,
+      "text": "Genkin selected as an AMI. One thing to"
+    },
+    {
+      "start": 325.68,
+      "duration": 3.68,
+      "text": "make sure is to deploy your instance in"
+    },
+    {
+      "start": 327.44,
+      "duration": 3.199,
+      "text": "the same network as you have your"
+    },
+    {
+      "start": 329.36,
+      "duration": 3.44,
+      "text": "connector in. So I'm going to be"
+    },
+    {
+      "start": 330.639,
+      "duration": 4.961,
+      "text": "applying it here and I'm going to set"
+    },
+    {
+      "start": 332.8,
+      "duration": 5.28,
+      "text": "also auto assign as disabled to make it"
+    },
+    {
+      "start": 335.6,
+      "duration": 4.08,
+      "text": "private not public and that's when I'm"
+    },
+    {
+      "start": 338.08,
+      "duration": 3.36,
+      "text": "going to go ahead with creating a log"
+    },
+    {
+      "start": 339.68,
+      "duration": 3.92,
+      "text": "this instance and this instance will be"
+    },
+    {
+      "start": 341.44,
+      "duration": 3.92,
+      "text": "created. So let's wait for this to be"
+    },
+    {
+      "start": 343.6,
+      "duration": 3.52,
+      "text": "created completely. You can see there's"
+    },
+    {
+      "start": 345.36,
+      "duration": 4.16,
+      "text": "no public IP address there's only"
+    },
+    {
+      "start": 347.12,
+      "duration": 4.639,
+      "text": "private IP address which is now the"
+    },
+    {
+      "start": 349.52,
+      "duration": 4.16,
+      "text": "application is ready and it's also"
+    },
+    {
+      "start": 351.759,
+      "duration": 3.361,
+      "text": "running. So let's copy this private IP"
+    },
+    {
+      "start": 353.68,
+      "duration": 4.239,
+      "text": "and see if we are able to connect to"
+    },
+    {
+      "start": 355.12,
+      "duration": 4.4,
+      "text": "this or not. So we can see it's loading"
+    },
+    {
+      "start": 357.919,
+      "duration": 3.601,
+      "text": "and very soon we will get an error"
+    },
+    {
+      "start": 359.52,
+      "duration": 4.16,
+      "text": "saying either connection not established"
+    },
+    {
+      "start": 361.52,
+      "duration": 4.399,
+      "text": "a timeout because this is private and"
+    },
+    {
+      "start": 363.68,
+      "duration": 4.079,
+      "text": "will not be accessed on public internet."
+    },
+    {
+      "start": 365.919,
+      "duration": 3.201,
+      "text": "So let's see how we can use twinate to"
+    },
+    {
+      "start": 367.759,
+      "duration": 3.361,
+      "text": "do that. So I'm going to go back to"
+    },
+    {
+      "start": 369.12,
+      "duration": 4.0,
+      "text": "twinate dashboard. Once you have your"
+    },
+    {
+      "start": 371.12,
+      "duration": 3.919,
+      "text": "connector ready and deployed you then"
+    },
+    {
+      "start": 373.12,
+      "duration": 3.84,
+      "text": "need to go to resources section. So you"
+    },
+    {
+      "start": 375.039,
+      "duration": 3.44,
+      "text": "need to see you can see here create"
+    },
+    {
+      "start": 376.96,
+      "duration": 4.64,
+      "text": "resource option. Let's click on create"
+    },
+    {
+      "start": 378.479,
+      "duration": 6.0,
+      "text": "resource. Let's label this as I don't"
+    },
+    {
+      "start": 381.6,
+      "duration": 5.439,
+      "text": "know genkins and then put the IP address"
+    },
+    {
+      "start": 384.479,
+      "duration": 5.041,
+      "text": "of the application. It could be IP"
+    },
+    {
+      "start": 387.039,
+      "duration": 4.241,
+      "text": "address, domain name or side range."
+    },
+    {
+      "start": 389.52,
+      "duration": 3.84,
+      "text": "After you add a resource, you can choose"
+    },
+    {
+      "start": 391.28,
+      "duration": 3.68,
+      "text": "which group or services do you want to"
+    },
+    {
+      "start": 393.36,
+      "duration": 4.08,
+      "text": "give access to. So I have a group named"
+    },
+    {
+      "start": 394.96,
+      "duration": 4.239,
+      "text": "as everyone and also a service account"
+    },
+    {
+      "start": 397.44,
+      "duration": 3.92,
+      "text": "which is EC2. So I'm going to choose"
+    },
+    {
+      "start": 399.199,
+      "duration": 4.161,
+      "text": "everyone here and then click on grant"
+    },
+    {
+      "start": 401.36,
+      "duration": 5.119,
+      "text": "access. If you want to create new users"
+    },
+    {
+      "start": 403.36,
+      "duration": 4.8,
+      "text": "or groups, you can do that from the team"
+    },
+    {
+      "start": 406.479,
+      "duration": 3.601,
+      "text": "section here. So if you click on teams"
+    },
+    {
+      "start": 408.16,
+      "duration": 3.2,
+      "text": "you can see you can add user you can add"
+    },
+    {
+      "start": 410.08,
+      "duration": 3.2,
+      "text": "create groups you can also create"
+    },
+    {
+      "start": 411.36,
+      "duration": 3.679,
+      "text": "service accounts. Similarly you can also"
+    },
+    {
+      "start": 413.28,
+      "duration": 4.72,
+      "text": "see which devices are connected. So"
+    },
+    {
+      "start": 415.039,
+      "duration": 5.44,
+      "text": "right now my iPhone and my laptop is"
+    },
+    {
+      "start": 418.0,
+      "duration": 3.84,
+      "text": "connected here. So now we have added a"
+    },
+    {
+      "start": 420.479,
+      "duration": 3.28,
+      "text": "resource which is our genkins"
+    },
+    {
+      "start": 421.84,
+      "duration": 4.88,
+      "text": "application. Even though we have added"
+    },
+    {
+      "start": 423.759,
+      "duration": 4.56,
+      "text": "it it's still showing us this error."
+    },
+    {
+      "start": 426.72,
+      "duration": 3.599,
+      "text": "It's not able to connect because you"
+    },
+    {
+      "start": 428.319,
+      "duration": 5.121,
+      "text": "need to also install the twin gate"
+    },
+    {
+      "start": 430.319,
+      "duration": 5.44,
+      "text": "client. So I have client installed on my"
+    },
+    {
+      "start": 433.44,
+      "duration": 4.8,
+      "text": "laptop also on my phone. You can see"
+    },
+    {
+      "start": 435.759,
+      "duration": 4.72,
+      "text": "this is the app and I'm able to see uh"
+    },
+    {
+      "start": 438.24,
+      "duration": 3.84,
+      "text": "the resource that I created or added. So"
+    },
+    {
+      "start": 440.479,
+      "duration": 3.761,
+      "text": "you can see genkins is present here and"
+    },
+    {
+      "start": 442.08,
+      "duration": 5.04,
+      "text": "to install it you can search for"
+    },
+    {
+      "start": 444.24,
+      "duration": 4.959,
+      "text": "windgate client and you can see all the"
+    },
+    {
+      "start": 447.12,
+      "duration": 4.16,
+      "text": "options. So if you're using Linux or"
+    },
+    {
+      "start": 449.199,
+      "duration": 3.84,
+      "text": "Windows or Mac OS you can go ahead with"
+    },
+    {
+      "start": 451.28,
+      "duration": 3.759,
+      "text": "installing that. For me to actually"
+    },
+    {
+      "start": 453.039,
+      "duration": 4.321,
+      "text": "start it I need to run the command sudo"
+    },
+    {
+      "start": 455.039,
+      "duration": 4.88,
+      "text": "to engage setup. So when I understood"
+    },
+    {
+      "start": 457.36,
+      "duration": 5.52,
+      "text": "pseudo 28 setup"
+    },
+    {
+      "start": 459.919,
+      "duration": 5.28,
+      "text": "after putting my password"
+    },
+    {
+      "start": 462.88,
+      "duration": 6.48,
+      "text": "it's asking me for a few details I"
+    },
+    {
+      "start": 465.199,
+      "duration": 9.44,
+      "text": "agree. Okay I agree this is my network"
+    },
+    {
+      "start": 469.36,
+      "duration": 7.36,
+      "text": "here. Okay okay okay okay. And now"
+    },
+    {
+      "start": 474.639,
+      "duration": 3.761,
+      "text": "can see I need to authenticate. Once I"
+    },
+    {
+      "start": 476.72,
+      "duration": 3.44,
+      "text": "authenticate it shows me this message"
+    },
+    {
+      "start": 478.4,
+      "duration": 4.799,
+      "text": "which is authenticated and the online"
+    },
+    {
+      "start": 480.16,
+      "duration": 5.039,
+      "text": "user is online now. So now I have added"
+    },
+    {
+      "start": 483.199,
+      "duration": 3.761,
+      "text": "my resource. I have the client ready. I"
+    },
+    {
+      "start": 485.199,
+      "duration": 4.081,
+      "text": "should be able to access the"
+    },
+    {
+      "start": 486.96,
+      "duration": 5.04,
+      "text": "application. So I'm going to refresh"
+    },
+    {
+      "start": 489.28,
+      "duration": 4.96,
+      "text": "this and you will very soon see that you"
+    },
+    {
+      "start": 492.0,
+      "duration": 3.84,
+      "text": "can access Genkins which is on a private"
+    },
+    {
+      "start": 494.24,
+      "duration": 4.239,
+      "text": "network and you're accessing this"
+    },
+    {
+      "start": 495.84,
+      "duration": 4.56,
+      "text": "without using VPNs or dash your host."
+    },
+    {
+      "start": 498.479,
+      "duration": 3.681,
+      "text": "There's no complex setup. It's you just"
+    },
+    {
+      "start": 500.4,
+      "duration": 3.76,
+      "text": "need a single tool and you need to have"
+    },
+    {
+      "start": 502.16,
+      "duration": 5.84,
+      "text": "a client. I'll also show you how I can"
+    },
+    {
+      "start": 504.16,
+      "duration": 5.439,
+      "text": "use this Genkins on my phone as well. So"
+    },
+    {
+      "start": 508.0,
+      "duration": 4.399,
+      "text": "I'm going to copy and open this in a"
+    },
+    {
+      "start": 509.599,
+      "duration": 5.12,
+      "text": "browser. You can see here this is my"
+    },
+    {
+      "start": 512.399,
+      "duration": 4.241,
+      "text": "clinicals on my phone and it's actually"
+    },
+    {
+      "start": 514.719,
+      "duration": 3.2,
+      "text": "on different network only this is my"
+    },
+    {
+      "start": 516.64,
+      "duration": 3.44,
+      "text": "different network I'm still able to do"
+    },
+    {
+      "start": 517.919,
+      "duration": 4.081,
+      "text": "this because I have a twin gate client"
+    },
+    {
+      "start": 520.08,
+      "duration": 4.72,
+      "text": "connector. Now let me show you another"
+    },
+    {
+      "start": 522.0,
+      "duration": 5.839,
+      "text": "real devops use case. So I have this RDS"
+    },
+    {
+      "start": 524.8,
+      "duration": 4.8,
+      "text": "database which is not public and I will"
+    },
+    {
+      "start": 527.839,
+      "duration": 4.241,
+      "text": "be showing you how you can connect this"
+    },
+    {
+      "start": 529.6,
+      "duration": 5.52,
+      "text": "using twing. So similarly as we did to"
+    },
+    {
+      "start": 532.08,
+      "duration": 5.36,
+      "text": "our genkins I also need to add this as a"
+    },
+    {
+      "start": 535.12,
+      "duration": 3.68,
+      "text": "resource first. Uh before I do that let"
+    },
+    {
+      "start": 537.44,
+      "duration": 2.88,
+      "text": "me show you that I'm not able to connect"
+    },
+    {
+      "start": 538.8,
+      "duration": 3.12,
+      "text": "to this. So, I'm going to go ahead and"
+    },
+    {
+      "start": 540.32,
+      "duration": 5.76,
+      "text": "open up my terminal. In this, I'm going"
+    },
+    {
+      "start": 541.92,
+      "duration": 7.16,
+      "text": "to say MySQL - H the endpoint"
+    },
+    {
+      "start": 546.08,
+      "duration": 3.0,
+      "text": "P336"
+    },
+    {
+      "start": 549.519,
+      "duration": 6.161,
+      "text": "uh type in U admin and IP p for the"
+    },
+    {
+      "start": 552.16,
+      "duration": 5.2,
+      "text": "password. If I put my password here,"
+    },
+    {
+      "start": 555.68,
+      "duration": 3.599,
+      "text": "I will get another very soon saying that"
+    },
+    {
+      "start": 557.36,
+      "duration": 6.159,
+      "text": "I will not be able to connect to this as"
+    },
+    {
+      "start": 559.279,
+      "duration": 6.961,
+      "text": "it's not public. So usually in DevOps we"
+    },
+    {
+      "start": 563.519,
+      "duration": 4.481,
+      "text": "use uh bastion host we use proxies to"
+    },
+    {
+      "start": 566.24,
+      "duration": 4.08,
+      "text": "configure this or to access databases"
+    },
+    {
+      "start": 568.0,
+      "duration": 3.839,
+      "text": "and private subnet but here you don't"
+    },
+    {
+      "start": 570.32,
+      "duration": 3.519,
+      "text": "need to do anything extra you just need"
+    },
+    {
+      "start": 571.839,
+      "duration": 4.0,
+      "text": "to use twingate so I'm going to copy"
+    },
+    {
+      "start": 573.839,
+      "duration": 4.401,
+      "text": "this endpoint and go to my networks"
+    },
+    {
+      "start": 575.839,
+      "duration": 4.241,
+      "text": "sorry go to my resources here in this"
+    },
+    {
+      "start": 578.24,
+      "duration": 4.4,
+      "text": "I'm going to add a resource select the"
+    },
+    {
+      "start": 580.08,
+      "duration": 4.319,
+      "text": "remote network which is the secure VPC"
+    },
+    {
+      "start": 582.64,
+      "duration": 5.36,
+      "text": "put the endpoint and I'm going to name"
+    },
+    {
+      "start": 584.399,
+      "duration": 6.081,
+      "text": "this as broad database ro DB let's"
+    },
+    {
+      "start": 588.0,
+      "duration": 4.32,
+      "text": "create resource once I have this"
+    },
+    {
+      "start": 590.48,
+      "duration": 4.4,
+      "text": "resource I'm going to select to give"
+    },
+    {
+      "start": 592.32,
+      "duration": 4.88,
+      "text": "access to everyone in my group and grant"
+    },
+    {
+      "start": 594.88,
+      "duration": 5.04,
+      "text": "access here. Uh now let's try the same"
+    },
+    {
+      "start": 597.2,
+      "duration": 5.72,
+      "text": "thing again the same command putting a"
+    },
+    {
+      "start": 599.92,
+      "duration": 3.0,
+      "text": "password"
+    },
+    {
+      "start": 603.44,
+      "duration": 3.92,
+      "text": "and you see we are now inside the"
+    },
+    {
+      "start": 605.36,
+      "duration": 4.56,
+      "text": "database. So this is how easy it is to"
+    },
+    {
+      "start": 607.36,
+      "duration": 4.4,
+      "text": "access private applications using twing"
+    },
+    {
+      "start": 609.92,
+      "duration": 4.24,
+      "text": "without any extra configurations or"
+    },
+    {
+      "start": 611.76,
+      "duration": 4.56,
+      "text": "headache. But that's not all. Twate can"
+    },
+    {
+      "start": 614.16,
+      "duration": 4.239,
+      "text": "also be used with CI/CD pipelines to"
+    },
+    {
+      "start": 616.32,
+      "duration": 4.16,
+      "text": "make sure only authorized persons can"
+    },
+    {
+      "start": 618.399,
+      "duration": 4.321,
+      "text": "trigger ways. It can also be used to"
+    },
+    {
+      "start": 620.48,
+      "duration": 4.32,
+      "text": "securely access Kubernetes cluster also"
+    },
+    {
+      "start": 622.72,
+      "duration": 3.84,
+      "text": "for Git repositories and lot more. You"
+    },
+    {
+      "start": 624.8,
+      "duration": 4.0,
+      "text": "can check out our different use cases on"
+    },
+    {
+      "start": 626.56,
+      "duration": 4.08,
+      "text": "the Twin documentation. So I hope now"
+    },
+    {
+      "start": 628.8,
+      "duration": 3.68,
+      "text": "you have complete idea of how twate"
+    },
+    {
+      "start": 630.64,
+      "duration": 3.92,
+      "text": "works. How to create networks, how to"
+    },
+    {
+      "start": 632.48,
+      "duration": 4.32,
+      "text": "deploy connector, how to add resources"
+    },
+    {
+      "start": 634.56,
+      "duration": 4.48,
+      "text": "in the console. But let's say you are a"
+    },
+    {
+      "start": 636.8,
+      "duration": 4.24,
+      "text": "developer or a DevOps engineer like me"
+    },
+    {
+      "start": 639.04,
+      "duration": 4.4,
+      "text": "who likes to do everything through code."
+    },
+    {
+      "start": 641.04,
+      "duration": 3.919,
+      "text": "Twing can also do that. Twing supports"
+    },
+    {
+      "start": 643.44,
+      "duration": 3.76,
+      "text": "infrastructure as code tools like"
+    },
+    {
+      "start": 644.959,
+      "duration": 4.0,
+      "text": "Teraphform and Pulomi. So if you want to"
+    },
+    {
+      "start": 647.2,
+      "duration": 3.28,
+      "text": "create networks or manage twin gate"
+    },
+    {
+      "start": 648.959,
+      "duration": 3.841,
+      "text": "programmatically you can also use"
+    },
+    {
+      "start": 650.48,
+      "duration": 4.0,
+      "text": "terapform or pulley. Twin gate has a"
+    },
+    {
+      "start": 652.8,
+      "duration": 4.32,
+      "text": "terapform providers. Apart from this"
+    },
+    {
+      "start": 654.48,
+      "duration": 4.479,
+      "text": "twing also has a puli package. So if you"
+    },
+    {
+      "start": 657.12,
+      "duration": 3.76,
+      "text": "are someone who has experience with puli"
+    },
+    {
+      "start": 658.959,
+      "duration": 4.801,
+      "text": "you can start using twinate through"
+    },
+    {
+      "start": 660.88,
+      "duration": 4.959,
+      "text": "puli. Twate has this documentation and a"
+    },
+    {
+      "start": 663.76,
+      "duration": 4.48,
+      "text": "video explaining on how you can deploy"
+    },
+    {
+      "start": 665.839,
+      "duration": 4.401,
+      "text": "twingate using pulley. Let me show you"
+    },
+    {
+      "start": 668.24,
+      "duration": 4.0,
+      "text": "an example of how to use twing with"
+    },
+    {
+      "start": 670.24,
+      "duration": 4.24,
+      "text": "terafform. So if you see this"
+    },
+    {
+      "start": 672.24,
+      "duration": 4.24,
+      "text": "documentation for the twin gate provider"
+    },
+    {
+      "start": 674.48,
+      "duration": 4.799,
+      "text": "for you to use twinate you need to have"
+    },
+    {
+      "start": 676.48,
+      "duration": 4.64,
+      "text": "the network and the API token. So I had"
+    },
+    {
+      "start": 679.279,
+      "duration": 3.521,
+      "text": "this code here which I was using to"
+    },
+    {
+      "start": 681.12,
+      "duration": 4.959,
+      "text": "deploy twin gate through terapform and"
+    },
+    {
+      "start": 682.8,
+      "duration": 5.039,
+      "text": "you can see inside this terapform pfs I"
+    },
+    {
+      "start": 686.079,
+      "duration": 3.841,
+      "text": "have these two variable which are the"
+    },
+    {
+      "start": 687.839,
+      "duration": 4.641,
+      "text": "API key and the network. If you go to"
+    },
+    {
+      "start": 689.92,
+      "duration": 5.2,
+      "text": "twingate you need to go to settings and"
+    },
+    {
+      "start": 692.48,
+      "duration": 4.479,
+      "text": "you need to go to API. Click on generate"
+    },
+    {
+      "start": 695.12,
+      "duration": 3.76,
+      "text": "token. You will need to authenticate."
+    },
+    {
+      "start": 696.959,
+      "duration": 5.921,
+      "text": "Once you get the token, you can put this"
+    },
+    {
+      "start": 698.88,
+      "duration": 5.519,
+      "text": "inside the variable which is TG API key."
+    },
+    {
+      "start": 702.88,
+      "duration": 3.84,
+      "text": "For the network, the network will be the"
+    },
+    {
+      "start": 704.399,
+      "duration": 3.921,
+      "text": "same as you have in the URL. So my"
+    },
+    {
+      "start": 706.72,
+      "duration": 3.92,
+      "text": "network name is going to be cloud champ"
+    },
+    {
+      "start": 708.32,
+      "duration": 3.92,
+      "text": "44. So once you do this, you can go"
+    },
+    {
+      "start": 710.64,
+      "duration": 3.439,
+      "text": "ahead with using twin gate through"
+    },
+    {
+      "start": 712.24,
+      "duration": 3.92,
+      "text": "terapform by simply running terapform"
+    },
+    {
+      "start": 714.079,
+      "duration": 4.0,
+      "text": "commands rather than doing things in the"
+    },
+    {
+      "start": 716.16,
+      "duration": 4.0,
+      "text": "console. You can use twin gate with"
+    },
+    {
+      "start": 718.079,
+      "duration": 4.961,
+      "text": "terafform for all the legit routes like"
+    },
+    {
+      "start": 720.16,
+      "duration": 4.799,
+      "text": "AWS, GCP or Azure. So this is all about"
+    },
+    {
+      "start": 723.04,
+      "duration": 4.16,
+      "text": "twinate. Make sure to check it out and"
+    },
+    {
+      "start": 724.959,
+      "duration": 3.921,
+      "text": "if you have any questions, any doubt, do"
+    },
+    {
+      "start": 727.2,
+      "duration": 5.28,
+      "text": "let me know in the comment section."
+    },
+    {
+      "start": 728.88,
+      "duration": 3.6,
+      "text": "Thank you and have a good day."
+    }
+  ]
+}

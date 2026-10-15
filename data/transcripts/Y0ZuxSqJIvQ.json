@@ -1,0 +1,106 @@
+{
+  "video": {
+    "id": "Y0ZuxSqJIvQ",
+    "title": "How does MCP work? How to use Model Context Protocol Server #mcp",
+    "url": "https://www.youtube.com/watch?v=Y0ZuxSqJIvQ",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 4.96,
+      "text": "How does MCP actually work? MCP is a"
+    },
+    {
+      "start": 3.439,
+      "duration": 4.161,
+      "text": "protocol that lets you connect external"
+    },
+    {
+      "start": 5.2,
+      "duration": 5.04,
+      "text": "data sources with your LLMs via a"
+    },
+    {
+      "start": 7.6,
+      "duration": 4.64,
+      "text": "dedicated MCP server. So the first step"
+    },
+    {
+      "start": 10.24,
+      "duration": 4.479,
+      "text": "is to choose an MCP server that you want"
+    },
+    {
+      "start": 12.24,
+      "duration": 5.119,
+      "text": "to connect with your LLM. For example,"
+    },
+    {
+      "start": 14.719,
+      "duration": 4.56,
+      "text": "GitHub MCP server. Each MCP server"
+    },
+    {
+      "start": 17.359,
+      "duration": 4.401,
+      "text": "provides with tools or functions like"
+    },
+    {
+      "start": 19.279,
+      "duration": 4.401,
+      "text": "create or update file, push files,"
+    },
+    {
+      "start": 21.76,
+      "duration": 4.56,
+      "text": "search repository, create repository,"
+    },
+    {
+      "start": 23.68,
+      "duration": 4.8,
+      "text": "etc. To start using this MCP server, you"
+    },
+    {
+      "start": 26.32,
+      "duration": 5.279,
+      "text": "need to copy this JSON code and put it"
+    },
+    {
+      "start": 28.48,
+      "duration": 4.88,
+      "text": "in your LLM's config.json. Once the MCP"
+    },
+    {
+      "start": 31.599,
+      "duration": 4.321,
+      "text": "server is connected, you can view list"
+    },
+    {
+      "start": 33.36,
+      "duration": 3.84,
+      "text": "of all available tools in your LLM."
+    },
+    {
+      "start": 35.92,
+      "duration": 3.12,
+      "text": "Lastly, you just need to write the"
+    },
+    {
+      "start": 37.2,
+      "duration": 3.519,
+      "text": "prompt and the LLM will automatically"
+    },
+    {
+      "start": 39.04,
+      "duration": 5.359,
+      "text": "choose the right tool to execute the"
+    },
+    {
+      "start": 40.719,
+      "duration": 3.68,
+      "text": "task. And now you know."
+    }
+  ]
+}

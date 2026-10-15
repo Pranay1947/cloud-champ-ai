@@ -1,0 +1,146 @@
+{
+  "video": {
+    "id": "3w6F5Ot0PcM",
+    "title": "Ansible : The Automation tool ♾️ | How does Ansible work? 💭🤔 #ansible #devops",
+    "url": "https://www.youtube.com/watch?v=3w6F5Ot0PcM",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.4,
+      "duration": 2.68,
+      "text": "Hey, DevOps engineers. Have you ever"
+    },
+    {
+      "start": 1.88,
+      "duration": 3.52,
+      "text": "wished you could automate all the"
+    },
+    {
+      "start": 3.08,
+      "duration": 4.76,
+      "text": "repetitive tasks that you do every day?"
+    },
+    {
+      "start": 5.4,
+      "duration": 4.0,
+      "text": "Well, with Ansible you can. Ansible is"
+    },
+    {
+      "start": 7.84,
+      "duration": 3.4,
+      "text": "an open source configuration management"
+    },
+    {
+      "start": 9.4,
+      "duration": 3.76,
+      "text": "tool used to automate infrastructure"
+    },
+    {
+      "start": 11.24,
+      "duration": 3.56,
+      "text": "management and configuration. Using"
+    },
+    {
+      "start": 13.16,
+      "duration": 3.76,
+      "text": "Ansible, you can configure hundreds and"
+    },
+    {
+      "start": 14.8,
+      "duration": 4.24,
+      "text": "thousands of servers with just a single"
+    },
+    {
+      "start": 16.92,
+      "duration": 3.92,
+      "text": "command. So, how does Ansible work?"
+    },
+    {
+      "start": 19.04,
+      "duration": 3.84,
+      "text": "Ansible uses something known as playbook"
+    },
+    {
+      "start": 20.84,
+      "duration": 4.52,
+      "text": "written in YAML syntax, where you can"
+    },
+    {
+      "start": 22.88,
+      "duration": 3.92,
+      "text": "define all your task and configurations"
+    },
+    {
+      "start": 25.36,
+      "duration": 2.88,
+      "text": "that you want to be applied on all the"
+    },
+    {
+      "start": 26.8,
+      "duration": 2.92,
+      "text": "servers."
+    },
+    {
+      "start": 28.24,
+      "duration": 3.8,
+      "text": "Along with the playbook, you also need a"
+    },
+    {
+      "start": 29.72,
+      "duration": 4.32,
+      "text": "host file or inventory file, which will"
+    },
+    {
+      "start": 32.04,
+      "duration": 3.92,
+      "text": "contain the IP addresses of all the"
+    },
+    {
+      "start": 34.04,
+      "duration": 3.56,
+      "text": "servers on which you want to run the"
+    },
+    {
+      "start": 35.96,
+      "duration": 3.24,
+      "text": "playbook. After you have the playbook"
+    },
+    {
+      "start": 37.6,
+      "duration": 3.52,
+      "text": "and define your servers in the host"
+    },
+    {
+      "start": 39.2,
+      "duration": 3.52,
+      "text": "file, you can run the Ansible command,"
+    },
+    {
+      "start": 41.12,
+      "duration": 4.08,
+      "text": "which will run this playbook on all the"
+    },
+    {
+      "start": 42.72,
+      "duration": 4.76,
+      "text": "servers defined in the host file using"
+    },
+    {
+      "start": 45.2,
+      "duration": 4.76,
+      "text": "SSH. This is how Ansible can be used to"
+    },
+    {
+      "start": 47.48,
+      "duration": 4.92,
+      "text": "manage and configure multiple servers at"
+    },
+    {
+      "start": 49.96,
+      "duration": 2.44,
+      "text": "once."
+    }
+  ]
+}

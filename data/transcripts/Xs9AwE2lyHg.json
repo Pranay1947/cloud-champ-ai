@@ -1,0 +1,1766 @@
+{
+  "video": {
+    "id": "Xs9AwE2lyHg",
+    "title": "What is MCP in AI? Model Context Protocol Simply Explained [No BS]",
+    "url": "https://www.youtube.com/watch?v=Xs9AwE2lyHg",
+    "duration": 744,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 3.6,
+      "text": "There are so many things happening in"
+    },
+    {
+      "start": 1.6,
+      "duration": 4.0,
+      "text": "the AI space with new tools and updates"
+    },
+    {
+      "start": 3.76,
+      "duration": 4.24,
+      "text": "coming in. But I'm pretty sure you might"
+    },
+    {
+      "start": 5.6,
+      "duration": 4.64,
+      "text": "have already heard about MCP or model"
+    },
+    {
+      "start": 8.0,
+      "duration": 4.48,
+      "text": "context protocol. Now, if you don't know"
+    },
+    {
+      "start": 10.24,
+      "duration": 4.8,
+      "text": "what is MCP, MCP is a standard way to"
+    },
+    {
+      "start": 12.48,
+      "duration": 4.639,
+      "text": "connect your LLMs or AI models with"
+    },
+    {
+      "start": 15.04,
+      "duration": 4.88,
+      "text": "external data sources to perform actions"
+    },
+    {
+      "start": 17.119,
+      "duration": 5.521,
+      "text": "and to get better responses. MCP is a"
+    },
+    {
+      "start": 19.92,
+      "duration": 5.279,
+      "text": "gamecher and even OpenAI has integrated"
+    },
+    {
+      "start": 22.64,
+      "duration": 4.08,
+      "text": "MCP to start using with Chad GPT and now"
+    },
+    {
+      "start": 25.199,
+      "duration": 4.08,
+      "text": "Google is also looking forward to"
+    },
+    {
+      "start": 26.72,
+      "duration": 4.08,
+      "text": "integrate MCP with Gemini models. So in"
+    },
+    {
+      "start": 29.279,
+      "duration": 4.001,
+      "text": "this video I'm going to explain you what"
+    },
+    {
+      "start": 30.8,
+      "duration": 4.64,
+      "text": "is MCP or model context protocol in"
+    },
+    {
+      "start": 33.28,
+      "duration": 3.84,
+      "text": "simplest way possible. I will also show"
+    },
+    {
+      "start": 35.44,
+      "duration": 3.6,
+      "text": "you how it actually works. What are"
+    },
+    {
+      "start": 37.12,
+      "duration": 3.92,
+      "text": "different components in it? What is MCP"
+    },
+    {
+      "start": 39.04,
+      "duration": 4.32,
+      "text": "server? What is MCP client? How do you"
+    },
+    {
+      "start": 41.04,
+      "duration": 4.0,
+      "text": "connect each other and lot more. Lastly,"
+    },
+    {
+      "start": 43.36,
+      "duration": 4.56,
+      "text": "I will show you a demo of how you can"
+    },
+    {
+      "start": 45.04,
+      "duration": 5.28,
+      "text": "use Kubernetes MCP server to manage"
+    },
+    {
+      "start": 47.92,
+      "duration": 4.639,
+      "text": "applications on your cluster by simply"
+    },
+    {
+      "start": 50.32,
+      "duration": 3.919,
+      "text": "giving prompts to AI agents. This is"
+    },
+    {
+      "start": 52.559,
+      "duration": 2.801,
+      "text": "going to be an amazing video and I'm"
+    },
+    {
+      "start": 54.239,
+      "duration": 2.721,
+      "text": "pretty sure you will have complete"
+    },
+    {
+      "start": 55.36,
+      "duration": 3.28,
+      "text": "understanding of what is MCP through"
+    },
+    {
+      "start": 56.96,
+      "duration": 3.52,
+      "text": "this video. So make sure you watch it"
+    },
+    {
+      "start": 58.64,
+      "duration": 3.759,
+      "text": "till the end, like this video and also"
+    },
+    {
+      "start": 60.48,
+      "duration": 3.679,
+      "text": "subscribe to cloud champ. Let's go."
+    },
+    {
+      "start": 62.399,
+      "duration": 3.601,
+      "text": "Before I start explaining you what is"
+    },
+    {
+      "start": 64.159,
+      "duration": 3.841,
+      "text": "model context protocol and give you more"
+    },
+    {
+      "start": 66.0,
+      "duration": 4.0,
+      "text": "theory about the architecture components"
+    },
+    {
+      "start": 68.0,
+      "duration": 4.32,
+      "text": "etc. I want to show you something which"
+    },
+    {
+      "start": 70.0,
+      "duration": 3.92,
+      "text": "will help you understand MCP completely."
+    },
+    {
+      "start": 72.32,
+      "duration": 3.36,
+      "text": "So in my local machine I have this"
+    },
+    {
+      "start": 73.92,
+      "duration": 3.28,
+      "text": "postgress database that includes"
+    },
+    {
+      "start": 75.68,
+      "duration": 3.6,
+      "text": "information about different products"
+    },
+    {
+      "start": 77.2,
+      "duration": 3.52,
+      "text": "like laptop, smartphone, headphones,"
+    },
+    {
+      "start": 79.28,
+      "duration": 4.24,
+      "text": "which country have bought them. So like"
+    },
+    {
+      "start": 80.72,
+      "duration": 4.079,
+      "text": "USA, Germany, India, Japan etc. and also"
+    },
+    {
+      "start": 83.52,
+      "duration": 3.36,
+      "text": "people who have actually bought this"
+    },
+    {
+      "start": 84.799,
+      "duration": 4.081,
+      "text": "products. I want to get information from"
+    },
+    {
+      "start": 86.88,
+      "duration": 4.879,
+      "text": "this postress database. So I'm going to"
+    },
+    {
+      "start": 88.88,
+      "duration": 5.199,
+      "text": "go to charg and ask it a simple question"
+    },
+    {
+      "start": 91.759,
+      "duration": 4.801,
+      "text": "which is tell me about all the purchases"
+    },
+    {
+      "start": 94.079,
+      "duration": 4.161,
+      "text": "made in USA from sales table. Since"
+    },
+    {
+      "start": 96.56,
+      "duration": 3.44,
+      "text": "charge GPT is not directly connected to"
+    },
+    {
+      "start": 98.24,
+      "duration": 4.559,
+      "text": "my posgress database it will give me a"
+    },
+    {
+      "start": 100.0,
+      "duration": 4.479,
+      "text": "vague answer or ask for more context. So"
+    },
+    {
+      "start": 102.799,
+      "duration": 3.36,
+      "text": "it says to help you get more information"
+    },
+    {
+      "start": 104.479,
+      "duration": 3.6,
+      "text": "about your purchases I'll need to know"
+    },
+    {
+      "start": 106.159,
+      "duration": 4.32,
+      "text": "the structure of your table which means"
+    },
+    {
+      "start": 108.079,
+      "duration": 4.72,
+      "text": "this chatgptt or llm model don't have"
+    },
+    {
+      "start": 110.479,
+      "duration": 4.401,
+      "text": "context to my database. Whereas if I go"
+    },
+    {
+      "start": 112.799,
+      "duration": 4.801,
+      "text": "to my VS code, in my VS code I have this"
+    },
+    {
+      "start": 114.88,
+      "duration": 5.04,
+      "text": "GitHub copilot which is using cloud LLM"
+    },
+    {
+      "start": 117.6,
+      "duration": 3.92,
+      "text": "model. I can also use GPD if I want. And"
+    },
+    {
+      "start": 119.92,
+      "duration": 4.559,
+      "text": "the most important thing here is this"
+    },
+    {
+      "start": 121.52,
+      "duration": 6.239,
+      "text": "JSON code. This JSON code is adding"
+    },
+    {
+      "start": 124.479,
+      "duration": 4.721,
+      "text": "Postgress MCP server in my LLM. So I can"
+    },
+    {
+      "start": 127.759,
+      "duration": 3.12,
+      "text": "run commands and fetch information"
+    },
+    {
+      "start": 129.2,
+      "duration": 3.2,
+      "text": "directly. So you can see it is also"
+    },
+    {
+      "start": 130.879,
+      "duration": 4.0,
+      "text": "running right now. And if you look at"
+    },
+    {
+      "start": 132.4,
+      "duration": 4.96,
+      "text": "this tools here, this Postgress MCP"
+    },
+    {
+      "start": 134.879,
+      "duration": 4.241,
+      "text": "server is able to run a read only SQL"
+    },
+    {
+      "start": 137.36,
+      "duration": 4.239,
+      "text": "query. So in my copilot, I'm going to"
+    },
+    {
+      "start": 139.12,
+      "duration": 4.24,
+      "text": "run the same prompt. I'll say tell me"
+    },
+    {
+      "start": 141.599,
+      "duration": 4.241,
+      "text": "about all the purchases made in the USA"
+    },
+    {
+      "start": 143.36,
+      "duration": 4.16,
+      "text": "from the sales table. Since this is"
+    },
+    {
+      "start": 145.84,
+      "duration": 3.68,
+      "text": "connected to my Postgress, it is going"
+    },
+    {
+      "start": 147.52,
+      "duration": 3.84,
+      "text": "to start working and run the query for"
+    },
+    {
+      "start": 149.52,
+      "duration": 3.999,
+      "text": "me. So it says I'll help you run the"
+    },
+    {
+      "start": 151.36,
+      "duration": 4.56,
+      "text": "query. And if I click on this drop down,"
+    },
+    {
+      "start": 153.519,
+      "duration": 3.761,
+      "text": "you see this tool is from Postgress MCP"
+    },
+    {
+      "start": 155.92,
+      "duration": 3.28,
+      "text": "server. And it is going to run this"
+    },
+    {
+      "start": 157.28,
+      "duration": 3.36,
+      "text": "query for me. When I click on continue,"
+    },
+    {
+      "start": 159.2,
+      "duration": 3.28,
+      "text": "so you can see now I got all the"
+    },
+    {
+      "start": 160.64,
+      "duration": 4.4,
+      "text": "information about the purchases made. So"
+    },
+    {
+      "start": 162.48,
+      "duration": 4.72,
+      "text": "10 laptops were sold at March 31st, 15"
+    },
+    {
+      "start": 165.04,
+      "duration": 4.4,
+      "text": "smart watches on April 2nd, Mr. Beast"
+    },
+    {
+      "start": 167.2,
+      "duration": 4.319,
+      "text": "purchases two iPhone, Elon Mus purchased"
+    },
+    {
+      "start": 169.44,
+      "duration": 3.76,
+      "text": "one iPhone. purchase two drones all"
+    },
+    {
+      "start": 171.519,
+      "duration": 3.921,
+      "text": "these things and you can also confirm by"
+    },
+    {
+      "start": 173.2,
+      "duration": 4.24,
+      "text": "looking at the data here in my Postgress"
+    },
+    {
+      "start": 175.44,
+      "duration": 4.4,
+      "text": "database. So now I hope you have an idea"
+    },
+    {
+      "start": 177.44,
+      "duration": 4.64,
+      "text": "of what MCP protocol is actually doing."
+    },
+    {
+      "start": 179.84,
+      "duration": 5.6,
+      "text": "MCP protocol is connecting your LLM"
+    },
+    {
+      "start": 182.08,
+      "duration": 5.439,
+      "text": "models with your MCP servers. So this is"
+    },
+    {
+      "start": 185.44,
+      "duration": 4.0,
+      "text": "the client, this is the server and it is"
+    },
+    {
+      "start": 187.519,
+      "duration": 3.761,
+      "text": "connected to each other through MCP"
+    },
+    {
+      "start": 189.44,
+      "duration": 3.76,
+      "text": "protocol. Let's try to understand what's"
+    },
+    {
+      "start": 191.28,
+      "duration": 4.239,
+      "text": "happening here. So on one side we have"
+    },
+    {
+      "start": 193.2,
+      "duration": 4.64,
+      "text": "our MCP clients which are our LLMs that"
+    },
+    {
+      "start": 195.519,
+      "duration": 4.241,
+      "text": "are connected to MCP servers. In our"
+    },
+    {
+      "start": 197.84,
+      "duration": 4.0,
+      "text": "context it was Postgress. So these"
+    },
+    {
+      "start": 199.76,
+      "duration": 4.32,
+      "text": "clients are connected to the MCP servers"
+    },
+    {
+      "start": 201.84,
+      "duration": 4.24,
+      "text": "using MCP protocol. So you can also"
+    },
+    {
+      "start": 204.08,
+      "duration": 3.92,
+      "text": "integrate GitHub with your LLM. You just"
+    },
+    {
+      "start": 206.08,
+      "duration": 3.84,
+      "text": "need to add as an MCP server. This"
+    },
+    {
+      "start": 208.0,
+      "duration": 3.92,
+      "text": "GitHub repository contains a list of all"
+    },
+    {
+      "start": 209.92,
+      "duration": 4.399,
+      "text": "the different MCP servers. You can find"
+    },
+    {
+      "start": 211.92,
+      "duration": 4.08,
+      "text": "server for Brave, for GitLab, GitHub,"
+    },
+    {
+      "start": 214.319,
+      "duration": 5.041,
+      "text": "Git. You can also scroll down to find"
+    },
+    {
+      "start": 216.0,
+      "duration": 6.48,
+      "text": "servers for Slack and you have Chroma."
+    },
+    {
+      "start": 219.36,
+      "duration": 5.2,
+      "text": "You also have Graphana Lot lot more. In"
+    },
+    {
+      "start": 222.48,
+      "duration": 4.24,
+      "text": "the demo, we used this MCP server which"
+    },
+    {
+      "start": 224.56,
+      "duration": 4.64,
+      "text": "is the PostgreSQL MCP server which will"
+    },
+    {
+      "start": 226.72,
+      "duration": 4.159,
+      "text": "read only database access with schema"
+    },
+    {
+      "start": 229.2,
+      "duration": 3.52,
+      "text": "inspection. When I click on this here,"
+    },
+    {
+      "start": 230.879,
+      "duration": 2.961,
+      "text": "you can also see how this MCP server was"
+    },
+    {
+      "start": 232.72,
+      "duration": 2.4,
+      "text": "created. So you can click on this"
+    },
+    {
+      "start": 233.84,
+      "duration": 3.36,
+      "text": "TypeScript and see all the different"
+    },
+    {
+      "start": 235.12,
+      "duration": 3.92,
+      "text": "functions it can actually execute which"
+    },
+    {
+      "start": 237.2,
+      "duration": 3.36,
+      "text": "was running a query. Now if you scroll"
+    },
+    {
+      "start": 239.04,
+      "duration": 3.919,
+      "text": "down in the readme section, you can find"
+    },
+    {
+      "start": 240.56,
+      "duration": 4.399,
+      "text": "the tools. So it can execute this tool"
+    },
+    {
+      "start": 242.959,
+      "duration": 4.081,
+      "text": "which is the query that will only do"
+    },
+    {
+      "start": 244.959,
+      "duration": 3.761,
+      "text": "read only SQL queries. If you want to"
+    },
+    {
+      "start": 247.04,
+      "duration": 3.68,
+      "text": "install this MCP servers, you can do it"
+    },
+    {
+      "start": 248.72,
+      "duration": 4.48,
+      "text": "either using Docker or you can also use"
+    },
+    {
+      "start": 250.72,
+      "duration": 4.159,
+      "text": "it using npx. For using Docker, you need"
+    },
+    {
+      "start": 253.2,
+      "duration": 3.439,
+      "text": "to have Docker desktop installed. And"
+    },
+    {
+      "start": 254.879,
+      "duration": 4.401,
+      "text": "for using npx, you need to have node"
+    },
+    {
+      "start": 256.639,
+      "duration": 4.72,
+      "text": "installed. In our example, we used node."
+    },
+    {
+      "start": 259.28,
+      "duration": 4.24,
+      "text": "So you can see the same kind of JSON"
+    },
+    {
+      "start": 261.359,
+      "duration": 4.56,
+      "text": "code here which is using model context"
+    },
+    {
+      "start": 263.52,
+      "duration": 4.399,
+      "text": "protocol server is posgress. I show you"
+    },
+    {
+      "start": 265.919,
+      "duration": 4.401,
+      "text": "another example of GitHub. I have GitHub"
+    },
+    {
+      "start": 267.919,
+      "duration": 4.121,
+      "text": "MCP server also installed in my copilot"
+    },
+    {
+      "start": 270.32,
+      "duration": 4.96,
+      "text": "here. So if I click on this tools"
+    },
+    {
+      "start": 272.04,
+      "duration": 5.48,
+      "text": "option, you can see I have notion. I"
+    },
+    {
+      "start": 275.28,
+      "duration": 3.919,
+      "text": "also have GitHub. server MCP server"
+    },
+    {
+      "start": 277.52,
+      "duration": 3.36,
+      "text": "which can create file update file search"
+    },
+    {
+      "start": 279.199,
+      "duration": 3.761,
+      "text": "repository create repositories and lot"
+    },
+    {
+      "start": 280.88,
+      "duration": 6.28,
+      "text": "lot more. If I show you a demo right now"
+    },
+    {
+      "start": 282.96,
+      "duration": 9.04,
+      "text": "if I run uh create a new"
+    },
+    {
+      "start": 287.16,
+      "duration": 7.24,
+      "text": "repository with the name new MCP repo."
+    },
+    {
+      "start": 292.0,
+      "duration": 4.479,
+      "text": "Here we have MCP server and it is also"
+    },
+    {
+      "start": 294.4,
+      "duration": 3.84,
+      "text": "running. So if I show you this is my MCP"
+    },
+    {
+      "start": 296.479,
+      "duration": 3.361,
+      "text": "server which is running for GitHub and"
+    },
+    {
+      "start": 298.24,
+      "duration": 3.679,
+      "text": "it is going to run this tool. So the"
+    },
+    {
+      "start": 299.84,
+      "duration": 3.52,
+      "text": "tool says create repository and this is"
+    },
+    {
+      "start": 301.919,
+      "duration": 3.761,
+      "text": "going to go ahead create a repository"
+    },
+    {
+      "start": 303.36,
+      "duration": 4.16,
+      "text": "for me with the name MCP Kubernetes. So"
+    },
+    {
+      "start": 305.68,
+      "duration": 3.44,
+      "text": "I click on continue and you will very"
+    },
+    {
+      "start": 307.52,
+      "duration": 3.36,
+      "text": "soon see that the repository will be"
+    },
+    {
+      "start": 309.12,
+      "duration": 3.68,
+      "text": "created. So you can run a prompt in this"
+    },
+    {
+      "start": 310.88,
+      "duration": 5.2,
+      "text": "MCP client to execute task on different"
+    },
+    {
+      "start": 312.8,
+      "duration": 4.56,
+      "text": "MCP servers. I hope that makes sense. So"
+    },
+    {
+      "start": 316.08,
+      "duration": 3.04,
+      "text": "you can see I have created a new"
+    },
+    {
+      "start": 317.36,
+      "duration": 5.36,
+      "text": "repository called MCP Kubernetes. And if"
+    },
+    {
+      "start": 319.12,
+      "duration": 5.44,
+      "text": "I go to my if I go to my GitHub uh to"
+    },
+    {
+      "start": 322.72,
+      "duration": 3.84,
+      "text": "see all my repositories very soon I will"
+    },
+    {
+      "start": 324.56,
+      "duration": 5.04,
+      "text": "see a GitHub repository being created"
+    },
+    {
+      "start": 326.56,
+      "duration": 5.76,
+      "text": "all through MCP. So this is the one how"
+    },
+    {
+      "start": 329.6,
+      "duration": 4.08,
+      "text": "amazing it is, right? This way using MCP"
+    },
+    {
+      "start": 332.32,
+      "duration": 3.439,
+      "text": "you can perform different actions by"
+    },
+    {
+      "start": 333.68,
+      "duration": 4.16,
+      "text": "just simply running a prompt. I hope now"
+    },
+    {
+      "start": 335.759,
+      "duration": 3.44,
+      "text": "you have a clear idea of how MCP server"
+    },
+    {
+      "start": 337.84,
+      "duration": 3.44,
+      "text": "works. How do you integrate it with your"
+    },
+    {
+      "start": 339.199,
+      "duration": 3.84,
+      "text": "LMS to provide context and to fetch"
+    },
+    {
+      "start": 341.28,
+      "duration": 3.359,
+      "text": "proper information. Let's go to the"
+    },
+    {
+      "start": 343.039,
+      "duration": 3.44,
+      "text": "official documentation. This is the"
+    },
+    {
+      "start": 344.639,
+      "duration": 3.28,
+      "text": "official documentation for model context"
+    },
+    {
+      "start": 346.479,
+      "duration": 4.081,
+      "text": "protocol. According to this"
+    },
+    {
+      "start": 347.919,
+      "duration": 4.641,
+      "text": "documentation, MCP is an open protocol"
+    },
+    {
+      "start": 350.56,
+      "duration": 5.04,
+      "text": "that standardizes how applications"
+    },
+    {
+      "start": 352.56,
+      "duration": 6.16,
+      "text": "provide context to LMS. Think of MCP"
+    },
+    {
+      "start": 355.6,
+      "duration": 5.28,
+      "text": "like a USBC port for AI application. So"
+    },
+    {
+      "start": 358.72,
+      "duration": 3.68,
+      "text": "here you have a protocol and using MCP"
+    },
+    {
+      "start": 360.88,
+      "duration": 4.159,
+      "text": "protocol you can connect all kinds of"
+    },
+    {
+      "start": 362.4,
+      "duration": 4.56,
+      "text": "different servers. Previously before MCP"
+    },
+    {
+      "start": 365.039,
+      "duration": 3.681,
+      "text": "you have to have different integrations"
+    },
+    {
+      "start": 366.96,
+      "duration": 3.92,
+      "text": "and when using different integrations"
+    },
+    {
+      "start": 368.72,
+      "duration": 4.319,
+      "text": "you had to face different problems but"
+    },
+    {
+      "start": 370.88,
+      "duration": 4.0,
+      "text": "now you have a standard way using which"
+    },
+    {
+      "start": 373.039,
+      "duration": 4.081,
+      "text": "you can integrate any kinds of third"
+    },
+    {
+      "start": 374.88,
+      "duration": 4.08,
+      "text": "party tools. So using MCP you can"
+    },
+    {
+      "start": 377.12,
+      "duration": 3.44,
+      "text": "connect it with your DevOps tools, you"
+    },
+    {
+      "start": 378.96,
+      "duration": 3.44,
+      "text": "can connect it with your databases, you"
+    },
+    {
+      "start": 380.56,
+      "duration": 3.759,
+      "text": "can connect it with your Gmail, anything"
+    },
+    {
+      "start": 382.4,
+      "duration": 3.44,
+      "text": "you want. Now let's try to understand"
+    },
+    {
+      "start": 384.319,
+      "duration": 3.121,
+      "text": "the technical architecture in this"
+    },
+    {
+      "start": 385.84,
+      "duration": 3.919,
+      "text": "documentation. Here you have the general"
+    },
+    {
+      "start": 387.44,
+      "duration": 4.96,
+      "text": "architecture for MCP. As we all know the"
+    },
+    {
+      "start": 389.759,
+      "duration": 5.841,
+      "text": "host is the MCP client or the LLMs which"
+    },
+    {
+      "start": 392.4,
+      "duration": 6.799,
+      "text": "are cloud IDE tools etc. So we had cloud"
+    },
+    {
+      "start": 395.6,
+      "duration": 5.68,
+      "text": "ids like VS code uh are clients here and"
+    },
+    {
+      "start": 399.199,
+      "duration": 4.321,
+      "text": "then these are connected to MCP servers"
+    },
+    {
+      "start": 401.28,
+      "duration": 4.08,
+      "text": "through MCP protocol. Once they are"
+    },
+    {
+      "start": 403.52,
+      "duration": 3.76,
+      "text": "connected these MCP servers can fetch"
+    },
+    {
+      "start": 405.36,
+      "duration": 3.52,
+      "text": "information from local data source which"
+    },
+    {
+      "start": 407.28,
+      "duration": 3.359,
+      "text": "could be a Postgress database which"
+    },
+    {
+      "start": 408.88,
+      "duration": 3.92,
+      "text": "could be a GitHub repository which could"
+    },
+    {
+      "start": 410.639,
+      "duration": 3.921,
+      "text": "be a Kubernetes cluster anything. So"
+    },
+    {
+      "start": 412.8,
+      "duration": 3.76,
+      "text": "this is the architecture where the MCP"
+    },
+    {
+      "start": 414.56,
+      "duration": 5.039,
+      "text": "client which is an LLM is connected to"
+    },
+    {
+      "start": 416.56,
+      "duration": 4.72,
+      "text": "an MCP server and this MCP server is"
+    },
+    {
+      "start": 419.599,
+      "duration": 3.761,
+      "text": "getting or fetching the information"
+    },
+    {
+      "start": 421.28,
+      "duration": 4.0,
+      "text": "depending on what tools are available"
+    },
+    {
+      "start": 423.36,
+      "duration": 2.959,
+      "text": "here. So if you look at different MCP"
+    },
+    {
+      "start": 425.28,
+      "duration": 3.84,
+      "text": "servers there are different tools"
+    },
+    {
+      "start": 426.319,
+      "duration": 5.841,
+      "text": "available. As we know for Postgress we"
+    },
+    {
+      "start": 429.12,
+      "duration": 5.76,
+      "text": "had a tool which was to fetch or run"
+    },
+    {
+      "start": 432.16,
+      "duration": 4.479,
+      "text": "only readonly queries whereas in GitHub"
+    },
+    {
+      "start": 434.88,
+      "duration": 4.159,
+      "text": "you have different tools here. So this"
+    },
+    {
+      "start": 436.639,
+      "duration": 4.4,
+      "text": "tool or this MCP server can create or"
+    },
+    {
+      "start": 439.039,
+      "duration": 3.361,
+      "text": "update a file. It can push files. It can"
+    },
+    {
+      "start": 441.039,
+      "duration": 3.121,
+      "text": "search repositories. It can create"
+    },
+    {
+      "start": 442.4,
+      "duration": 3.68,
+      "text": "repositories. Depending on what"
+    },
+    {
+      "start": 444.16,
+      "duration": 4.159,
+      "text": "functions or what tools does an MCP"
+    },
+    {
+      "start": 446.08,
+      "duration": 3.839,
+      "text": "server have only then LLM can perform"
+    },
+    {
+      "start": 448.319,
+      "duration": 3.44,
+      "text": "actions on it. But if you look at this"
+    },
+    {
+      "start": 449.919,
+      "duration": 3.521,
+      "text": "key components here, the MCP servers"
+    },
+    {
+      "start": 451.759,
+      "duration": 4.321,
+      "text": "have three main key components which are"
+    },
+    {
+      "start": 453.44,
+      "duration": 4.159,
+      "text": "tools, resources and prompts. Tools as"
+    },
+    {
+      "start": 456.08,
+      "duration": 4.399,
+      "text": "we all know are different functions that"
+    },
+    {
+      "start": 457.599,
+      "duration": 4.801,
+      "text": "an MCP server can perform. Tools are"
+    },
+    {
+      "start": 460.479,
+      "duration": 4.081,
+      "text": "executable functions that an AI can"
+    },
+    {
+      "start": 462.4,
+      "duration": 3.84,
+      "text": "perform. For example, sending an email,"
+    },
+    {
+      "start": 464.56,
+      "duration": 3.52,
+      "text": "quering database, creating GitHub"
+    },
+    {
+      "start": 466.24,
+      "duration": 3.84,
+      "text": "request. These are all the tools or the"
+    },
+    {
+      "start": 468.08,
+      "duration": 4.88,
+      "text": "functions that an MCP server is capable"
+    },
+    {
+      "start": 470.08,
+      "duration": 4.48,
+      "text": "of. Next important thing is resources."
+    },
+    {
+      "start": 472.96,
+      "duration": 3.519,
+      "text": "Resources represent the data source"
+    },
+    {
+      "start": 474.56,
+      "duration": 4.56,
+      "text": "which could be a database record, a"
+    },
+    {
+      "start": 476.479,
+      "duration": 4.481,
+      "text": "file, API responses etc. This provide"
+    },
+    {
+      "start": 479.12,
+      "duration": 4.4,
+      "text": "more context to the model and they"
+    },
+    {
+      "start": 480.96,
+      "duration": 4.239,
+      "text": "generally read only. Lastly, you also"
+    },
+    {
+      "start": 483.52,
+      "duration": 3.359,
+      "text": "require prompts. Prompts are the message"
+    },
+    {
+      "start": 485.199,
+      "duration": 4.241,
+      "text": "that you put in the LM models which are"
+    },
+    {
+      "start": 486.879,
+      "duration": 4.32,
+      "text": "then given out to MCP servers. So prompt"
+    },
+    {
+      "start": 489.44,
+      "duration": 3.84,
+      "text": "templates guide the interaction between"
+    },
+    {
+      "start": 491.199,
+      "duration": 3.84,
+      "text": "the AI and the external system. So"
+    },
+    {
+      "start": 493.28,
+      "duration": 4.08,
+      "text": "altogether I hope now you have a clear"
+    },
+    {
+      "start": 495.039,
+      "duration": 4.0,
+      "text": "idea of what is MCP and model context"
+    },
+    {
+      "start": 497.36,
+      "duration": 3.04,
+      "text": "protocol. And if you want to read more"
+    },
+    {
+      "start": 499.039,
+      "duration": 4.0,
+      "text": "about it, you can read it from the"
+    },
+    {
+      "start": 500.4,
+      "duration": 4.32,
+      "text": "Anthropic documentation. Entropic is the"
+    },
+    {
+      "start": 503.039,
+      "duration": 4.241,
+      "text": "company that created claude and also"
+    },
+    {
+      "start": 504.72,
+      "duration": 4.24,
+      "text": "this MCP protocol. All right. Now, let"
+    },
+    {
+      "start": 507.28,
+      "duration": 3.759,
+      "text": "me show you a demo of how you can use"
+    },
+    {
+      "start": 508.96,
+      "duration": 4.559,
+      "text": "Kubernetes MCP server and perform"
+    },
+    {
+      "start": 511.039,
+      "duration": 5.041,
+      "text": "actions on your cluster by running"
+    },
+    {
+      "start": 513.519,
+      "duration": 4.481,
+      "text": "prompts in your LLM models. So, this is"
+    },
+    {
+      "start": 516.08,
+      "duration": 3.439,
+      "text": "the Kubernetes MCP server. So, if you"
+    },
+    {
+      "start": 518.0,
+      "duration": 3.2,
+      "text": "read at this GitHub readme section, you"
+    },
+    {
+      "start": 519.519,
+      "duration": 3.2,
+      "text": "can see for this server, you need to"
+    },
+    {
+      "start": 521.2,
+      "duration": 3.36,
+      "text": "have cubectl installed. You also need to"
+    },
+    {
+      "start": 522.719,
+      "duration": 3.601,
+      "text": "have cube configured and you need to"
+    },
+    {
+      "start": 524.56,
+      "duration": 3.6,
+      "text": "have access to your Kubernetes cluster."
+    },
+    {
+      "start": 526.32,
+      "duration": 4.48,
+      "text": "you need to have helm installed as well."
+    },
+    {
+      "start": 528.16,
+      "duration": 4.4,
+      "text": "I don't know why but that's okay. So"
+    },
+    {
+      "start": 530.8,
+      "duration": 3.039,
+      "text": "features are all these features. You can"
+    },
+    {
+      "start": 532.56,
+      "duration": 2.8,
+      "text": "connect to a Kubernetes cluster, you can"
+    },
+    {
+      "start": 533.839,
+      "duration": 4.241,
+      "text": "list pod, you can describe pod, delete"
+    },
+    {
+      "start": 535.36,
+      "duration": 4.64,
+      "text": "pod, etc., etc. Let me show you a demo."
+    },
+    {
+      "start": 538.08,
+      "duration": 4.72,
+      "text": "So to start working on this, you need to"
+    },
+    {
+      "start": 540.0,
+      "duration": 4.56,
+      "text": "first install this MCP server. So I'm"
+    },
+    {
+      "start": 542.8,
+      "duration": 3.599,
+      "text": "going to be using this npx option here."
+    },
+    {
+      "start": 544.56,
+      "duration": 5.2,
+      "text": "And let's copy this. I already have this"
+    },
+    {
+      "start": 546.399,
+      "duration": 5.521,
+      "text": "inside my VS code. This is VS Code"
+    },
+    {
+      "start": 549.76,
+      "duration": 4.16,
+      "text": "Insider. You can also run the same thing"
+    },
+    {
+      "start": 551.92,
+      "duration": 4.08,
+      "text": "in cloud. All you need to do is put the"
+    },
+    {
+      "start": 553.92,
+      "duration": 4.08,
+      "text": "JSON code of the MCP server you want to"
+    },
+    {
+      "start": 556.0,
+      "duration": 4.0,
+      "text": "use. So you can see in cloud I also have"
+    },
+    {
+      "start": 558.0,
+      "duration": 3.72,
+      "text": "some tools here. This is from the MCP"
+    },
+    {
+      "start": 560.0,
+      "duration": 3.76,
+      "text": "tools. Uh you can see here this is the"
+    },
+    {
+      "start": 561.72,
+      "duration": 3.799,
+      "text": "Kubernetes server. It's not running"
+    },
+    {
+      "start": 563.76,
+      "duration": 4.24,
+      "text": "right now. If I click on start it will"
+    },
+    {
+      "start": 565.519,
+      "duration": 4.801,
+      "text": "be running. And if you see here these"
+    },
+    {
+      "start": 568.0,
+      "duration": 4.0,
+      "text": "are all the different actions that I can"
+    },
+    {
+      "start": 570.32,
+      "duration": 3.519,
+      "text": "perform. So these are the actions which"
+    },
+    {
+      "start": 572.0,
+      "duration": 3.92,
+      "text": "are configuration view event list etc"
+    },
+    {
+      "start": 573.839,
+      "duration": 4.56,
+      "text": "etc. Let's try to ask it a question. So"
+    },
+    {
+      "start": 575.92,
+      "duration": 5.0,
+      "text": "I'm going to ask a question uh which is"
+    },
+    {
+      "start": 578.399,
+      "duration": 5.281,
+      "text": "to list all the pods I have right"
+    },
+    {
+      "start": 580.92,
+      "duration": 4.84,
+      "text": "now. Now since we have MCP server"
+    },
+    {
+      "start": 583.68,
+      "duration": 4.08,
+      "text": "running, it is going to go ahead and"
+    },
+    {
+      "start": 585.76,
+      "duration": 3.68,
+      "text": "start or run the command for us which is"
+    },
+    {
+      "start": 587.76,
+      "duration": 3.199,
+      "text": "to list the pod. So you can see this is"
+    },
+    {
+      "start": 589.44,
+      "duration": 3.68,
+      "text": "to list all the Kubernetes pod in the"
+    },
+    {
+      "start": 590.959,
+      "duration": 4.081,
+      "text": "current cluster for all name spaces. I'm"
+    },
+    {
+      "start": 593.12,
+      "duration": 4.08,
+      "text": "going to click on continue and this will"
+    },
+    {
+      "start": 595.04,
+      "duration": 4.64,
+      "text": "fetch all the pods for me. Right now I"
+    },
+    {
+      "start": 597.2,
+      "duration": 4.24,
+      "text": "have four pods of engineext server"
+    },
+    {
+      "start": 599.68,
+      "duration": 3.76,
+      "text": "running. So if I show you, you can see I"
+    },
+    {
+      "start": 601.44,
+      "duration": 3.44,
+      "text": "have four pods of engineext deployment"
+    },
+    {
+      "start": 603.44,
+      "duration": 2.959,
+      "text": "and that's what it is saying. It is"
+    },
+    {
+      "start": 604.88,
+      "duration": 5.2,
+      "text": "saying I have four replicas of enginex"
+    },
+    {
+      "start": 606.399,
+      "duration": 6.481,
+      "text": "deployment pod named engineext d. Now"
+    },
+    {
+      "start": 610.08,
+      "duration": 4.4,
+      "text": "let me try to uh deploy something right"
+    },
+    {
+      "start": 612.88,
+      "duration": 4.44,
+      "text": "in front of you by simply running a"
+    },
+    {
+      "start": 614.48,
+      "duration": 5.96,
+      "text": "prompt. So I'm going to say create a"
+    },
+    {
+      "start": 617.32,
+      "duration": 5.759,
+      "text": "deployment of six"
+    },
+    {
+      "start": 620.44,
+      "duration": 5.68,
+      "text": "replicas using radius"
+    },
+    {
+      "start": 623.079,
+      "duration": 7.88,
+      "text": "image and also expose"
+    },
+    {
+      "start": 626.12,
+      "duration": 8.08,
+      "text": "it using node port service and give me"
+    },
+    {
+      "start": 630.959,
+      "duration": 3.241,
+      "text": "the endpoint."
+    },
+    {
+      "start": 634.959,
+      "duration": 5.201,
+      "text": "So now this MCP server is going to"
+    },
+    {
+      "start": 636.959,
+      "duration": 4.721,
+      "text": "execute the prompt that I given and if"
+    },
+    {
+      "start": 640.16,
+      "duration": 4.48,
+      "text": "it has all the tools necessary, it will"
+    },
+    {
+      "start": 641.68,
+      "duration": 5.279,
+      "text": "also give me the correct response. Okay."
+    },
+    {
+      "start": 644.64,
+      "duration": 4.16,
+      "text": "So it's going to run this query or run"
+    },
+    {
+      "start": 646.959,
+      "duration": 5.521,
+      "text": "this command. Uh this is the manifest"
+    },
+    {
+      "start": 648.8,
+      "duration": 5.36,
+      "text": "file for creating a pod of name radius."
+    },
+    {
+      "start": 652.48,
+      "duration": 3.2,
+      "text": "And let's go ahead and click on"
+    },
+    {
+      "start": 654.16,
+      "duration": 2.44,
+      "text": "continue. You can also see it is using"
+    },
+    {
+      "start": 655.68,
+      "duration": 6.08,
+      "text": "node"
+    },
+    {
+      "start": 656.6,
+      "duration": 7.08,
+      "text": "port 30379 is the port. So using this LM"
+    },
+    {
+      "start": 661.76,
+      "duration": 4.16,
+      "text": "model I can now perform anything I want"
+    },
+    {
+      "start": 663.68,
+      "duration": 3.599,
+      "text": "and you can see now let me verify the"
+    },
+    {
+      "start": 665.92,
+      "duration": 3.68,
+      "text": "deployment is running properly and get"
+    },
+    {
+      "start": 667.279,
+      "duration": 3.761,
+      "text": "the endpoint information for you. Okay,"
+    },
+    {
+      "start": 669.6,
+      "duration": 3.76,
+      "text": "now it has successfully executed"
+    },
+    {
+      "start": 671.04,
+      "duration": 4.239,
+      "text": "everything. Let's see if I have the pods"
+    },
+    {
+      "start": 673.36,
+      "duration": 4.159,
+      "text": "here or not. So if I say cubectl get"
+    },
+    {
+      "start": 675.279,
+      "duration": 3.521,
+      "text": "pods, I should be able to see radius pod"
+    },
+    {
+      "start": 677.519,
+      "duration": 3.521,
+      "text": "as well. So these are all the radius"
+    },
+    {
+      "start": 678.8,
+      "duration": 8.64,
+      "text": "pods here. So if I want to say let's say"
+    },
+    {
+      "start": 681.04,
+      "duration": 8.08,
+      "text": "uh add some CPU limits to my pods. So"
+    },
+    {
+      "start": 687.44,
+      "duration": 4.0,
+      "text": "now it's modifying the deployment to add"
+    },
+    {
+      "start": 689.12,
+      "duration": 3.839,
+      "text": "CPU limit and request. Adding CPU limit"
+    },
+    {
+      "start": 691.44,
+      "duration": 3.6,
+      "text": "and request is a best practice to make"
+    },
+    {
+      "start": 692.959,
+      "duration": 4.0,
+      "text": "sure your pods are not using more than"
+    },
+    {
+      "start": 695.04,
+      "duration": 3.52,
+      "text": "what they want. So when I click on"
+    },
+    {
+      "start": 696.959,
+      "duration": 3.681,
+      "text": "continue, it is going to go ahead and do"
+    },
+    {
+      "start": 698.56,
+      "duration": 3.44,
+      "text": "this for me. And now you can see"
+    },
+    {
+      "start": 700.64,
+      "duration": 3.439,
+      "text": "deployment requirements have been"
+    },
+    {
+      "start": 702.0,
+      "duration": 3.6,
+      "text": "updated. So without me actually going"
+    },
+    {
+      "start": 704.079,
+      "duration": 4.801,
+      "text": "and running any command, I just need to"
+    },
+    {
+      "start": 705.6,
+      "duration": 4.799,
+      "text": "say this to my LLM and all because MCP"
+    },
+    {
+      "start": 708.88,
+      "duration": 4.32,
+      "text": "server is installed, it can do anything"
+    },
+    {
+      "start": 710.399,
+      "duration": 4.801,
+      "text": "for me. Isn't this amazing? using MCP"
+    },
+    {
+      "start": 713.2,
+      "duration": 4.639,
+      "text": "servers. Now you can perform all kind of"
+    },
+    {
+      "start": 715.2,
+      "duration": 4.8,
+      "text": "operations by simply running a prompt in"
+    },
+    {
+      "start": 717.839,
+      "duration": 4.0,
+      "text": "your AI model. I hope this video helped"
+    },
+    {
+      "start": 720.0,
+      "duration": 3.279,
+      "text": "you understand what is MCP and how it"
+    },
+    {
+      "start": 721.839,
+      "duration": 3.281,
+      "text": "actually works. If you have any"
+    },
+    {
+      "start": 723.279,
+      "duration": 3.441,
+      "text": "questions, any doubt, feel free to let"
+    },
+    {
+      "start": 725.12,
+      "duration": 3.12,
+      "text": "me know in the comment section. And if"
+    },
+    {
+      "start": 726.72,
+      "duration": 3.52,
+      "text": "you want me to create a video of"
+    },
+    {
+      "start": 728.24,
+      "duration": 4.96,
+      "text": "automating different DevOps tools like"
+    },
+    {
+      "start": 730.24,
+      "duration": 4.48,
+      "text": "Terraform, Anible etc. using MCP"
+    },
+    {
+      "start": 733.2,
+      "duration": 2.879,
+      "text": "servers, please let me know in the"
+    },
+    {
+      "start": 734.72,
+      "duration": 3.359,
+      "text": "comment section and I will create a"
+    },
+    {
+      "start": 736.079,
+      "duration": 4.241,
+      "text": "video. Make sure to start using MCP"
+    },
+    {
+      "start": 738.079,
+      "duration": 3.601,
+      "text": "servers to automate your DevOps workflow"
+    },
+    {
+      "start": 740.32,
+      "duration": 3.759,
+      "text": "and also share your learnings on"
+    },
+    {
+      "start": 741.68,
+      "duration": 2.399,
+      "text": "LinkedIn."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "video": {
+    "id": "rTAMrOXzVY0",
+    "title": "SIDECAR Containers in Kubernetes Explained!! 👌 #k8s #devops #kubernetes",
+    "url": "https://www.youtube.com/watch?v=rTAMrOXzVY0",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 4.599,
+      "text": "let's understand what are sidecar"
+    },
+    {
+      "start": 1.959,
+      "duration": 4.96,
+      "text": "containers in kubernetes so sidecar are"
+    },
+    {
+      "start": 4.839,
+      "duration": 4.521,
+      "text": "separate helper containers that runs"
+    },
+    {
+      "start": 6.919,
+      "duration": 4.961,
+      "text": "alongside the main application container"
+    },
+    {
+      "start": 9.36,
+      "duration": 4.92,
+      "text": "inside the Pod but why do we need a"
+    },
+    {
+      "start": 11.88,
+      "duration": 4.36,
+      "text": "sidecar container okay so the main"
+    },
+    {
+      "start": 14.28,
+      "duration": 3.96,
+      "text": "container here is responsible only to"
+    },
+    {
+      "start": 16.24,
+      "duration": 4.76,
+      "text": "run the application whereas other"
+    },
+    {
+      "start": 18.24,
+      "duration": 5.119,
+      "text": "functionalities like logging monitoring"
+    },
+    {
+      "start": 21.0,
+      "duration": 4.599,
+      "text": "load balancing service Discovery"
+    },
+    {
+      "start": 23.359,
+      "duration": 4.961,
+      "text": "security authentication all of these are"
+    },
+    {
+      "start": 25.599,
+      "duration": 4.92,
+      "text": "managed using sidecar you will see the"
+    },
+    {
+      "start": 28.32,
+      "duration": 4.48,
+      "text": "sidecar pattern even in service like a"
+    },
+    {
+      "start": 30.519,
+      "duration": 5.401,
+      "text": "steop where Envoy proxy is a side card"
+    },
+    {
+      "start": 32.8,
+      "duration": 3.12,
+      "text": "for the main container"
+    }
+  ]
+}

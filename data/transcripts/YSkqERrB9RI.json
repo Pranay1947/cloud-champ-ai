@@ -1,0 +1,121 @@
+{
+  "video": {
+    "id": "YSkqERrB9RI",
+    "title": "How PROMETHEUS Monitoring works? 🌞 #devops #monitoring",
+    "url": "https://www.youtube.com/watch?v=YSkqERrB9RI",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.12,
+      "duration": 3.799,
+      "text": "Prometheus a very powerful monitoring"
+    },
+    {
+      "start": 2.44,
+      "duration": 3.959,
+      "text": "tool used to collect metrics from"
+    },
+    {
+      "start": 3.919,
+      "duration": 4.961,
+      "text": "servers Docker containers and even"
+    },
+    {
+      "start": 6.399,
+      "duration": 5.2,
+      "text": "kubernetes clusters let me show you how"
+    },
+    {
+      "start": 8.88,
+      "duration": 5.44,
+      "text": "Prometheus actually works at first is"
+    },
+    {
+      "start": 11.599,
+      "duration": 5.401,
+      "text": "the prometheus. yml file Prometheus uses"
+    },
+    {
+      "start": 14.32,
+      "duration": 4.959,
+      "text": "a yaml configuration file named prom."
+    },
+    {
+      "start": 17.0,
+      "duration": 4.8,
+      "text": "yml which defines how and where to"
+    },
+    {
+      "start": 19.279,
+      "duration": 4.801,
+      "text": "collect metrics from this file contains"
+    },
+    {
+      "start": 21.8,
+      "duration": 4.36,
+      "text": "endpoints and intervals to scrape"
+    },
+    {
+      "start": 24.08,
+      "duration": 4.08,
+      "text": "metrics after you have your config file"
+    },
+    {
+      "start": 26.16,
+      "duration": 3.84,
+      "text": "ready exporters are used which are demon"
+    },
+    {
+      "start": 28.16,
+      "duration": 3.84,
+      "text": "surveys used to collect metrics and"
+    },
+    {
+      "start": 30.0,
+      "duration": 4.28,
+      "text": "expose them into prometheous compatible"
+    },
+    {
+      "start": 32.0,
+      "duration": 5.04,
+      "text": "format you can visualize these metrics"
+    },
+    {
+      "start": 34.28,
+      "duration": 5.08,
+      "text": "on grafana dashboard and you can also"
+    },
+    {
+      "start": 37.04,
+      "duration": 5.199,
+      "text": "set up and send alerts to slack email"
+    },
+    {
+      "start": 39.36,
+      "duration": 5.24,
+      "text": "telegram anything using Prometheus alert"
+    },
+    {
+      "start": 42.239,
+      "duration": 3.881,
+      "text": "manager so this is how Prometheus"
+    },
+    {
+      "start": 44.6,
+      "duration": 3.08,
+      "text": "actually works if you want to know more"
+    },
+    {
+      "start": 46.12,
+      "duration": 5.48,
+      "text": "about promethus or different devop"
+    },
+    {
+      "start": 47.68,
+      "duration": 3.92,
+      "text": "schools subscribe to Cloud Chan"
+    }
+  ]
+}

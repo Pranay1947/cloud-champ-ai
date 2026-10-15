@@ -1,0 +1,716 @@
+{
+  "video": {
+    "id": "_d42iIc-P5I",
+    "title": "Amazon EC2 Instance Launch Types : On Demand, Reserved, Spot Instances and Dedicated host.",
+    "url": "https://www.youtube.com/watch?v=_d42iIc-P5I",
+    "duration": 354,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.56,
+      "duration": 3.759,
+      "text": "hello and welcome to Cloud champ so in"
+    },
+    {
+      "start": 2.28,
+      "duration": 5.24,
+      "text": "the previous video we talked about"
+    },
+    {
+      "start": 4.319,
+      "duration": 5.521,
+      "text": "Amazon ec2 service and we looked what is"
+    },
+    {
+      "start": 7.52,
+      "duration": 4.84,
+      "text": "ec2 what are the features of ec2 and the"
+    },
+    {
+      "start": 9.84,
+      "duration": 5.64,
+      "text": "different components of ec2 including"
+    },
+    {
+      "start": 12.36,
+      "duration": 4.759,
+      "text": "the instance types and security groups"
+    },
+    {
+      "start": 15.48,
+      "duration": 4.04,
+      "text": "so in this video we are going to talk"
+    },
+    {
+      "start": 17.119,
+      "duration": 4.841,
+      "text": "about the ac2 launch types or the"
+    },
+    {
+      "start": 19.52,
+      "duration": 5.32,
+      "text": "different purchasing options that we can"
+    },
+    {
+      "start": 21.96,
+      "duration": 4.28,
+      "text": "use to launch our instances so the"
+    },
+    {
+      "start": 24.84,
+      "duration": 4.32,
+      "text": "different options are on demand"
+    },
+    {
+      "start": 26.24,
+      "duration": 5.88,
+      "text": "instances reserved instances spot"
+    },
+    {
+      "start": 29.16,
+      "duration": 5.96,
+      "text": "instances dedicated host and dedicated"
+    },
+    {
+      "start": 32.12,
+      "duration": 4.88,
+      "text": "instances so we will learn each of them"
+    },
+    {
+      "start": 35.12,
+      "duration": 4.08,
+      "text": "and in the last I'll give you an"
+    },
+    {
+      "start": 37.0,
+      "duration": 4.399,
+      "text": "excellent example where you will"
+    },
+    {
+      "start": 39.2,
+      "duration": 4.6,
+      "text": "absolutely understand everything there"
+    },
+    {
+      "start": 41.399,
+      "duration": 4.281,
+      "text": "will be no doubt on this topic this is"
+    },
+    {
+      "start": 43.8,
+      "duration": 4.239,
+      "text": "an important topic comes into exam"
+    },
+    {
+      "start": 45.68,
+      "duration": 5.719,
+      "text": "definitely a question on this topic you"
+    },
+    {
+      "start": 48.039,
+      "duration": 5.801,
+      "text": "need to know this in detail so let's"
+    },
+    {
+      "start": 51.399,
+      "duration": 5.0,
+      "text": "talk about the first instance launch"
+    },
+    {
+      "start": 53.84,
+      "duration": 4.64,
+      "text": "type that is on demand instance so the"
+    },
+    {
+      "start": 56.399,
+      "duration": 5.16,
+      "text": "on demand instance"
+    },
+    {
+      "start": 58.48,
+      "duration": 6.16,
+      "text": "is you pick pay for the compute capacity"
+    },
+    {
+      "start": 61.559,
+      "duration": 5.161,
+      "text": "by second with no long-term commitments"
+    },
+    {
+      "start": 64.64,
+      "duration": 4.72,
+      "text": "so there is no long-term commitment you"
+    },
+    {
+      "start": 66.72,
+      "duration": 5.16,
+      "text": "only pay what you use and you decide"
+    },
+    {
+      "start": 69.36,
+      "duration": 4.84,
+      "text": "when to launch stop hibernate start"
+    },
+    {
+      "start": 71.88,
+      "duration": 4.76,
+      "text": "reboot or terminate it you have control"
+    },
+    {
+      "start": 74.2,
+      "duration": 4.52,
+      "text": "over the instance you can launch anytime"
+    },
+    {
+      "start": 76.64,
+      "duration": 4.6,
+      "text": "you can terminate any time there is no"
+    },
+    {
+      "start": 78.72,
+      "duration": 4.96,
+      "text": "long-term commitment so the use case is"
+    },
+    {
+      "start": 81.24,
+      "duration": 4.64,
+      "text": "short-term irregular workloads that"
+    },
+    {
+      "start": 83.68,
+      "duration": 4.119,
+      "text": "cannot be interrupted so whenever you"
+    },
+    {
+      "start": 85.88,
+      "duration": 4.239,
+      "text": "need an instance for short duration you"
+    },
+    {
+      "start": 87.799,
+      "duration": 4.6,
+      "text": "can use on demand and you can terminate"
+    },
+    {
+      "start": 90.119,
+      "duration": 6.201,
+      "text": "it on your will most of the time we use"
+    },
+    {
+      "start": 92.399,
+      "duration": 7.601,
+      "text": "on demand uh so that's the on demand"
+    },
+    {
+      "start": 96.32,
+      "duration": 6.96,
+      "text": "launch type the next launch type is the"
+    },
+    {
+      "start": 100.0,
+      "duration": 6.68,
+      "text": "reserved instance so reserved instance"
+    },
+    {
+      "start": 103.28,
+      "duration": 5.839,
+      "text": "provide significant amount up to 72%"
+    },
+    {
+      "start": 106.68,
+      "duration": 5.2,
+      "text": "compared to the on demand the only thing"
+    },
+    {
+      "start": 109.119,
+      "duration": 5.28,
+      "text": "is you need to have reserved instance"
+    },
+    {
+      "start": 111.88,
+      "duration": 4.4,
+      "text": "either for one year or for 3 years you"
+    },
+    {
+      "start": 114.399,
+      "duration": 4.08,
+      "text": "need to have this instance either for 1"
+    },
+    {
+      "start": 116.28,
+      "duration": 5.28,
+      "text": "year or 3 years and you can get up to"
+    },
+    {
+      "start": 118.479,
+      "duration": 5.201,
+      "text": "72% discount compared to the on demand"
+    },
+    {
+      "start": 121.56,
+      "duration": 3.919,
+      "text": "there are three modes of payment the"
+    },
+    {
+      "start": 123.68,
+      "duration": 4.76,
+      "text": "first is all UPF front you pay all the"
+    },
+    {
+      "start": 125.479,
+      "duration": 5.601,
+      "text": "money to Amazon you pay partial money"
+    },
+    {
+      "start": 128.44,
+      "duration": 5.6,
+      "text": "that is partial upfront or no money you"
+    },
+    {
+      "start": 131.08,
+      "duration": 4.799,
+      "text": "can pay later on but when you pay all"
+    },
+    {
+      "start": 134.04,
+      "duration": 4.44,
+      "text": "upfront you get more"
+    },
+    {
+      "start": 135.879,
+      "duration": 4.921,
+      "text": "discounts and the best it is best for"
+    },
+    {
+      "start": 138.48,
+      "duration": 5.039,
+      "text": "stable predictive workload it is best"
+    },
+    {
+      "start": 140.8,
+      "duration": 5.56,
+      "text": "for workloads that you know and because"
+    },
+    {
+      "start": 143.519,
+      "duration": 4.961,
+      "text": "you need to select a specific instance"
+    },
+    {
+      "start": 146.36,
+      "duration": 4.879,
+      "text": "type there are three types of reserved"
+    },
+    {
+      "start": 148.48,
+      "duration": 5.039,
+      "text": "instances that is standard reserved"
+    },
+    {
+      "start": 151.239,
+      "duration": 5.161,
+      "text": "instances where you cannot change your"
+    },
+    {
+      "start": 153.519,
+      "duration": 5.201,
+      "text": "instance type next is convertible"
+    },
+    {
+      "start": 156.4,
+      "duration": 4.6,
+      "text": "reserved instances where you can convert"
+    },
+    {
+      "start": 158.72,
+      "duration": 4.96,
+      "text": "your instance type from let's say T2"
+    },
+    {
+      "start": 161.0,
+      "duration": 5.44,
+      "text": "micro to T2 small the third one is"
+    },
+    {
+      "start": 163.68,
+      "duration": 4.919,
+      "text": "scheduled reserved instances so you can"
+    },
+    {
+      "start": 166.44,
+      "duration": 5.24,
+      "text": "schedule your instances let's say you"
+    },
+    {
+      "start": 168.599,
+      "duration": 6.601,
+      "text": "want your instance every Sunday or every"
+    },
+    {
+      "start": 171.68,
+      "duration": 5.96,
+      "text": "day at 5:00 for one year or for 3 years"
+    },
+    {
+      "start": 175.2,
+      "duration": 5.24,
+      "text": "so you can use schedule reserved"
+    },
+    {
+      "start": 177.64,
+      "duration": 5.84,
+      "text": "instances the next"
+    },
+    {
+      "start": 180.44,
+      "duration": 5.56,
+      "text": "is the spot instances the spot instances"
+    },
+    {
+      "start": 183.48,
+      "duration": 5.88,
+      "text": "enable you to request unused ec2"
+    },
+    {
+      "start": 186.0,
+      "duration": 6.64,
+      "text": "instance at steep discounts up to"
+    },
+    {
+      "start": 189.36,
+      "duration": 6.4,
+      "text": "90% And it is most cost effective so the"
+    },
+    {
+      "start": 192.64,
+      "duration": 6.2,
+      "text": "idea here is you can launch unused"
+    },
+    {
+      "start": 195.76,
+      "duration": 5.72,
+      "text": "instances uh at very low price by paying"
+    },
+    {
+      "start": 198.84,
+      "duration": 5.6,
+      "text": "some fees that is up to 90% off compared"
+    },
+    {
+      "start": 201.48,
+      "duration": 5.6,
+      "text": "to I'm On Demand but if someone pays"
+    },
+    {
+      "start": 204.44,
+      "duration": 4.56,
+      "text": "more than you you can lose that instance"
+    },
+    {
+      "start": 207.08,
+      "duration": 3.64,
+      "text": "so it is best used for interrupted"
+    },
+    {
+      "start": 209.0,
+      "duration": 5.159,
+      "text": "workloads which are resilient for"
+    },
+    {
+      "start": 210.72,
+      "duration": 5.92,
+      "text": "failure use cases is the bad jobs image"
+    },
+    {
+      "start": 214.159,
+      "duration": 5.041,
+      "text": "processing any distributed workload"
+    },
+    {
+      "start": 216.64,
+      "duration": 5.679,
+      "text": "which can be okay if it is interrupted"
+    },
+    {
+      "start": 219.2,
+      "duration": 6.039,
+      "text": "next is the dedicated host or dedicated"
+    },
+    {
+      "start": 222.319,
+      "duration": 5.48,
+      "text": "servers so dedicated host is a physical"
+    },
+    {
+      "start": 225.239,
+      "duration": 4.72,
+      "text": "server fully dedicated for your use so"
+    },
+    {
+      "start": 227.799,
+      "duration": 4.201,
+      "text": "you get the whole rack for yourself you"
+    },
+    {
+      "start": 229.959,
+      "duration": 3.84,
+      "text": "don't have any other customers apart"
+    },
+    {
+      "start": 232.0,
+      "duration": 5.159,
+      "text": "from you you are the only one who is"
+    },
+    {
+      "start": 233.799,
+      "duration": 5.241,
+      "text": "using the whole server so it is used for"
+    },
+    {
+      "start": 237.159,
+      "duration": 4.041,
+      "text": "strong Regulatory Compliance"
+    },
+    {
+      "start": 239.04,
+      "duration": 5.039,
+      "text": "requirements"
+    },
+    {
+      "start": 241.2,
+      "duration": 5.48,
+      "text": "the dedicated instance so dedicated host"
+    },
+    {
+      "start": 244.079,
+      "duration": 6.281,
+      "text": "and dedicated instance can be same the"
+    },
+    {
+      "start": 246.68,
+      "duration": 6.919,
+      "text": "only difference is you cannot control"
+    },
+    {
+      "start": 250.36,
+      "duration": 5.599,
+      "text": "the hardware underlying Hardware but"
+    },
+    {
+      "start": 253.599,
+      "duration": 4.281,
+      "text": "there is only your instance only you can"
+    },
+    {
+      "start": 255.959,
+      "duration": 4.201,
+      "text": "launch in that server no one else can"
+    },
+    {
+      "start": 257.88,
+      "duration": 4.24,
+      "text": "launch in the server so that's a"
+    },
+    {
+      "start": 260.16,
+      "duration": 3.92,
+      "text": "dedicated instance same as dedicated"
+    },
+    {
+      "start": 262.12,
+      "duration": 4.2,
+      "text": "host but you cannot control your"
+    },
+    {
+      "start": 264.08,
+      "duration": 4.679,
+      "text": "instance uh I know this can be"
+    },
+    {
+      "start": 266.32,
+      "duration": 4.28,
+      "text": "complicated but I'll create one more"
+    },
+    {
+      "start": 268.759,
+      "duration": 3.761,
+      "text": "video where you where we will compare"
+    },
+    {
+      "start": 270.6,
+      "duration": 4.28,
+      "text": "the dedicated host and dedicated"
+    },
+    {
+      "start": 272.52,
+      "duration": 5.76,
+      "text": "instance I'll link it here you can check"
+    },
+    {
+      "start": 274.88,
+      "duration": 6.84,
+      "text": "it out so that's the difference launch"
+    },
+    {
+      "start": 278.28,
+      "duration": 5.16,
+      "text": "type so let's take an example to fully"
+    },
+    {
+      "start": 281.72,
+      "duration": 4.16,
+      "text": "understand what the different launch"
+    },
+    {
+      "start": 283.44,
+      "duration": 5.52,
+      "text": "types are let's say"
+    },
+    {
+      "start": 285.88,
+      "duration": 5.84,
+      "text": "you uh when you use on demand on demand"
+    },
+    {
+      "start": 288.96,
+      "duration": 5.079,
+      "text": "is something like you can stay and leave"
+    },
+    {
+      "start": 291.72,
+      "duration": 5.28,
+      "text": "whenever you want there's no longterm"
+    },
+    {
+      "start": 294.039,
+      "duration": 4.681,
+      "text": "commitments it's you have the control so"
+    },
+    {
+      "start": 297.0,
+      "duration": 3.16,
+      "text": "on demand is like staying in a hotel and"
+    },
+    {
+      "start": 298.72,
+      "duration": 3.28,
+      "text": "leaving whenever you want"
+    },
+    {
+      "start": 300.16,
+      "duration": 4.16,
+      "text": "reserved is something you planned when"
+    },
+    {
+      "start": 302.0,
+      "duration": 5.039,
+      "text": "you plan to stay for long time let's say"
+    },
+    {
+      "start": 304.32,
+      "duration": 5.12,
+      "text": "one year or 3 year you get a discount"
+    },
+    {
+      "start": 307.039,
+      "duration": 4.801,
+      "text": "same as reserved launch type and the"
+    },
+    {
+      "start": 309.44,
+      "duration": 5.0,
+      "text": "spot instance is you stay for the night"
+    },
+    {
+      "start": 311.84,
+      "duration": 5.56,
+      "text": "in cheap price this hotel has some"
+    },
+    {
+      "start": 314.44,
+      "duration": 5.479,
+      "text": "unused rooms and it wants to give it to"
+    },
+    {
+      "start": 317.4,
+      "duration": 4.32,
+      "text": "some customers at low price so it can"
+    },
+    {
+      "start": 319.919,
+      "duration": 4.201,
+      "text": "give it to you for cheap price but"
+    },
+    {
+      "start": 321.72,
+      "duration": 4.759,
+      "text": "someone but if someone pays more than"
+    },
+    {
+      "start": 324.12,
+      "duration": 4.28,
+      "text": "you you will be thrown out of the hotel"
+    },
+    {
+      "start": 326.479,
+      "duration": 4.28,
+      "text": "so same as spot instances you can lose"
+    },
+    {
+      "start": 328.4,
+      "duration": 5.2,
+      "text": "your instance if someone pays more than"
+    },
+    {
+      "start": 330.759,
+      "duration": 5.0,
+      "text": "your your price and the last is"
+    },
+    {
+      "start": 333.6,
+      "duration": 4.64,
+      "text": "dedicated host where you book entire"
+    },
+    {
+      "start": 335.759,
+      "duration": 5.961,
+      "text": "hotel for yourself no one else no"
+    },
+    {
+      "start": 338.24,
+      "duration": 4.959,
+      "text": "neighbors so that is dedicated host so I"
+    },
+    {
+      "start": 341.72,
+      "duration": 3.479,
+      "text": "hope you understood the launch type and"
+    },
+    {
+      "start": 343.199,
+      "duration": 4.401,
+      "text": "the purchasing options if you like the"
+    },
+    {
+      "start": 345.199,
+      "duration": 5.361,
+      "text": "video please subscribe to the channel"
+    },
+    {
+      "start": 347.6,
+      "duration": 5.319,
+      "text": "and for more AWS and devops videos"
+    },
+    {
+      "start": 350.56,
+      "duration": 5.16,
+      "text": "please follow along and that's all have"
+    },
+    {
+      "start": 352.919,
+      "duration": 2.801,
+      "text": "a good day"
+    }
+  ]
+}

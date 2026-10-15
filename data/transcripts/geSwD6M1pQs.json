@@ -1,0 +1,2371 @@
+{
+  "video": {
+    "id": "geSwD6M1pQs",
+    "title": "How to use Terraform and Ansible together in a CICD Pipeline | Spacelift",
+    "url": "https://www.youtube.com/watch?v=geSwD6M1pQs",
+    "duration": 942,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 4.4,
+      "text": "Hey everyone, we all know Terraform and"
+    },
+    {
+      "start": 2.639,
+      "duration": 3.921,
+      "text": "Ansible are two most popular"
+    },
+    {
+      "start": 4.64,
+      "duration": 4.48,
+      "text": "infrastructure as code tool in the"
+    },
+    {
+      "start": 6.56,
+      "duration": 4.959,
+      "text": "DevOps market today. Terraform is a tool"
+    },
+    {
+      "start": 9.12,
+      "duration": 4.559,
+      "text": "by Hashikop which lets you create or"
+    },
+    {
+      "start": 11.519,
+      "duration": 5.121,
+      "text": "provision cloud infrastructures like"
+    },
+    {
+      "start": 13.679,
+      "duration": 4.561,
+      "text": "servers, storage, databases, networking"
+    },
+    {
+      "start": 16.64,
+      "duration": 4.0,
+      "text": "and everything required for your"
+    },
+    {
+      "start": 18.24,
+      "duration": 4.08,
+      "text": "application to work. After you create"
+    },
+    {
+      "start": 20.64,
+      "duration": 4.24,
+      "text": "this infrastructure, you need to"
+    },
+    {
+      "start": 22.32,
+      "duration": 4.56,
+      "text": "configure them to run your application."
+    },
+    {
+      "start": 24.88,
+      "duration": 4.399,
+      "text": "But it is not recommended to use"
+    },
+    {
+      "start": 26.88,
+      "duration": 4.159,
+      "text": "Terapform to configure application. we"
+    },
+    {
+      "start": 29.279,
+      "duration": 4.481,
+      "text": "should be using configuration management"
+    },
+    {
+      "start": 31.039,
+      "duration": 4.641,
+      "text": "tools such as anible. So Ansible is a"
+    },
+    {
+      "start": 33.76,
+      "duration": 4.08,
+      "text": "very popular configuration management"
+    },
+    {
+      "start": 35.68,
+      "duration": 4.08,
+      "text": "tool by Red Hat using which you can"
+    },
+    {
+      "start": 37.84,
+      "duration": 4.0,
+      "text": "configure your servers which means"
+    },
+    {
+      "start": 39.76,
+      "duration": 4.08,
+      "text": "installing applications, managing"
+    },
+    {
+      "start": 41.84,
+      "duration": 4.239,
+      "text": "services, deploying your applications"
+    },
+    {
+      "start": 43.84,
+      "duration": 4.48,
+      "text": "and lot more. Both of these tools are"
+    },
+    {
+      "start": 46.079,
+      "duration": 4.881,
+      "text": "amazing and they used together to create"
+    },
+    {
+      "start": 48.32,
+      "duration": 4.559,
+      "text": "automated solution. But here's the"
+    },
+    {
+      "start": 50.96,
+      "duration": 3.759,
+      "text": "problem. These tools are often managed"
+    },
+    {
+      "start": 52.879,
+      "duration": 3.121,
+      "text": "by two different separate teams. The"
+    },
+    {
+      "start": 54.719,
+      "duration": 3.36,
+      "text": "infrastructure team and the"
+    },
+    {
+      "start": 56.0,
+      "duration": 4.079,
+      "text": "configuration team. Infrastructure team"
+    },
+    {
+      "start": 58.079,
+      "duration": 3.841,
+      "text": "is responsible to write terapform code"
+    },
+    {
+      "start": 60.079,
+      "duration": 3.841,
+      "text": "and create infrastructure. The"
+    },
+    {
+      "start": 61.92,
+      "duration": 3.519,
+      "text": "configuration teams comes after it and"
+    },
+    {
+      "start": 63.92,
+      "duration": 3.76,
+      "text": "runs anible playbook on the"
+    },
+    {
+      "start": 65.439,
+      "duration": 4.561,
+      "text": "infrastructure created. This creates"
+    },
+    {
+      "start": 67.68,
+      "duration": 4.4,
+      "text": "gaps, break things and also take time"
+    },
+    {
+      "start": 70.0,
+      "duration": 3.6,
+      "text": "for deployment. You might also have a"
+    },
+    {
+      "start": 72.08,
+      "duration": 3.92,
+      "text": "compliance requirement where you want to"
+    },
+    {
+      "start": 73.6,
+      "duration": 5.28,
+      "text": "follow a policy or you want to implement"
+    },
+    {
+      "start": 76.0,
+      "duration": 4.96,
+      "text": "arbback to control access. So what if I"
+    },
+    {
+      "start": 78.88,
+      "duration": 4.32,
+      "text": "tell you we can automate everything with"
+    },
+    {
+      "start": 80.96,
+      "duration": 4.479,
+      "text": "all these features and that's where"
+    },
+    {
+      "start": 83.2,
+      "duration": 4.239,
+      "text": "spacelift comes in. So what is"
+    },
+    {
+      "start": 85.439,
+      "duration": 4.32,
+      "text": "spacelift? Spacelift is an"
+    },
+    {
+      "start": 87.439,
+      "duration": 4.32,
+      "text": "infrastructure orchestrator tool that"
+    },
+    {
+      "start": 89.759,
+      "duration": 3.68,
+      "text": "you can use to automate the provision of"
+    },
+    {
+      "start": 91.759,
+      "duration": 4.961,
+      "text": "infrastructure using different tools"
+    },
+    {
+      "start": 93.439,
+      "duration": 5.121,
+      "text": "like terraform, open tofu and cloud for."
+    },
+    {
+      "start": 96.72,
+      "duration": 3.92,
+      "text": "You can also use spacelift to configure"
+    },
+    {
+      "start": 98.56,
+      "duration": 4.16,
+      "text": "your applications and run anible"
+    },
+    {
+      "start": 100.64,
+      "duration": 4.0,
+      "text": "playbooks on your infrastructure. But"
+    },
+    {
+      "start": 102.72,
+      "duration": 4.16,
+      "text": "not just this, spacelift also provides"
+    },
+    {
+      "start": 104.64,
+      "duration": 4.88,
+      "text": "you with features to manage policies,"
+    },
+    {
+      "start": 106.88,
+      "duration": 4.96,
+      "text": "approvals, and much more. It's like a"
+    },
+    {
+      "start": 109.52,
+      "duration": 4.959,
+      "text": "CI/CD platform built specifically for"
+    },
+    {
+      "start": 111.84,
+      "duration": 4.639,
+      "text": "infrastructure. Using spacelift you can"
+    },
+    {
+      "start": 114.479,
+      "duration": 4.24,
+      "text": "connect to your git repository and fetch"
+    },
+    {
+      "start": 116.479,
+      "duration": 4.161,
+      "text": "all the latest infrastructure code which"
+    },
+    {
+      "start": 118.719,
+      "duration": 4.0,
+      "text": "you can use for application deployment"
+    },
+    {
+      "start": 120.64,
+      "duration": 4.32,
+      "text": "or creating infrastructure using all the"
+    },
+    {
+      "start": 122.719,
+      "duration": 5.52,
+      "text": "popular tools including terapform open"
+    },
+    {
+      "start": 124.96,
+      "duration": 5.68,
+      "text": "tofu teragrant pulumi cloud for etc. You"
+    },
+    {
+      "start": 128.239,
+      "duration": 4.561,
+      "text": "can also use spacelift to run anible"
+    },
+    {
+      "start": 130.64,
+      "duration": 3.84,
+      "text": "playbooks on your infrastructure, manage"
+    },
+    {
+      "start": 132.8,
+      "duration": 4.72,
+      "text": "access, connect with different cloud"
+    },
+    {
+      "start": 134.48,
+      "duration": 4.72,
+      "text": "providers, security and lot more. Very"
+    },
+    {
+      "start": 137.52,
+      "duration": 3.52,
+      "text": "soon I will show you a hands-on demo"
+    },
+    {
+      "start": 139.2,
+      "duration": 3.759,
+      "text": "where we will be using spacelift to"
+    },
+    {
+      "start": 141.04,
+      "duration": 3.76,
+      "text": "create infrastructure using terraform"
+    },
+    {
+      "start": 142.959,
+      "duration": 4.321,
+      "text": "and also running anible playbooks on"
+    },
+    {
+      "start": 144.8,
+      "duration": 4.96,
+      "text": "that infrastructure all in automated"
+    },
+    {
+      "start": 147.28,
+      "duration": 4.24,
+      "text": "single pipeline. This video is sponsored"
+    },
+    {
+      "start": 149.76,
+      "duration": 3.52,
+      "text": "by spacelift and if you want to try out"
+    },
+    {
+      "start": 151.52,
+      "duration": 3.68,
+      "text": "spacelift you can check out their plans"
+    },
+    {
+      "start": 153.28,
+      "duration": 3.92,
+      "text": "here. In this demo, we will be using the"
+    },
+    {
+      "start": 155.2,
+      "duration": 4.48,
+      "text": "free plan and you can also use the same"
+    },
+    {
+      "start": 157.2,
+      "duration": 3.92,
+      "text": "plan to follow along in the demo. But if"
+    },
+    {
+      "start": 159.68,
+      "duration": 3.12,
+      "text": "you wish to use spacelift in your"
+    },
+    {
+      "start": 161.12,
+      "duration": 4.08,
+      "text": "company, you can look out different"
+    },
+    {
+      "start": 162.8,
+      "duration": 3.84,
+      "text": "plans here and also compare them by"
+    },
+    {
+      "start": 165.2,
+      "duration": 3.84,
+      "text": "looking at the different options or"
+    },
+    {
+      "start": 166.64,
+      "duration": 4.4,
+      "text": "features provided. All right, now that"
+    },
+    {
+      "start": 169.04,
+      "duration": 4.08,
+      "text": "you understood what spacelift is, let's"
+    },
+    {
+      "start": 171.04,
+      "duration": 4.08,
+      "text": "get into the demo and learn how you can"
+    },
+    {
+      "start": 173.12,
+      "duration": 4.56,
+      "text": "set up an automated pipeline to work"
+    },
+    {
+      "start": 175.12,
+      "duration": 4.8,
+      "text": "along with Terraform and Anible. In this"
+    },
+    {
+      "start": 177.68,
+      "duration": 3.839,
+      "text": "demo, we will use spacelift to create an"
+    },
+    {
+      "start": 179.92,
+      "duration": 4.0,
+      "text": "automated pipeline which creates"
+    },
+    {
+      "start": 181.519,
+      "duration": 5.041,
+      "text": "infrastructure on AWS cloud using"
+    },
+    {
+      "start": 183.92,
+      "duration": 4.48,
+      "text": "terraform and also run anible playbook"
+    },
+    {
+      "start": 186.56,
+      "duration": 4.08,
+      "text": "on that infrastructure everything"
+    },
+    {
+      "start": 188.4,
+      "duration": 4.0,
+      "text": "automated. If you are a DevOps engineer,"
+    },
+    {
+      "start": 190.64,
+      "duration": 3.76,
+      "text": "I would highly recommend you to try this"
+    },
+    {
+      "start": 192.4,
+      "duration": 3.68,
+      "text": "along with me because this is something"
+    },
+    {
+      "start": 194.4,
+      "duration": 3.199,
+      "text": "you will do every day as a DevOps"
+    },
+    {
+      "start": 196.08,
+      "duration": 4.4,
+      "text": "engineer. So, make sure you follow along"
+    },
+    {
+      "start": 197.599,
+      "duration": 4.881,
+      "text": "and let's get into the demo. All right,"
+    },
+    {
+      "start": 200.48,
+      "duration": 3.839,
+      "text": "to get started with this demo, you will"
+    },
+    {
+      "start": 202.48,
+      "duration": 3.92,
+      "text": "need to have a Spacelift account"
+    },
+    {
+      "start": 204.319,
+      "duration": 3.84,
+      "text": "created. And you can create a Spacelift"
+    },
+    {
+      "start": 206.4,
+      "duration": 3.6,
+      "text": "account using the link in the video"
+    },
+    {
+      "start": 208.159,
+      "duration": 4.0,
+      "text": "description or by simply clicking on"
+    },
+    {
+      "start": 210.0,
+      "duration": 4.08,
+      "text": "this free trial button on the Spacelift"
+    },
+    {
+      "start": 212.159,
+      "duration": 3.36,
+      "text": "website. You can create a spacelift"
+    },
+    {
+      "start": 214.08,
+      "duration": 3.76,
+      "text": "account using your GitHub credentials,"
+    },
+    {
+      "start": 215.519,
+      "duration": 3.921,
+      "text": "GitLab, Google, Microsoft, etc. I"
+    },
+    {
+      "start": 217.84,
+      "duration": 3.039,
+      "text": "already have my Spacelift account"
+    },
+    {
+      "start": 219.44,
+      "duration": 3.92,
+      "text": "created. So, I'm going to go ahead and"
+    },
+    {
+      "start": 220.879,
+      "duration": 4.161,
+      "text": "simply log into it. So, this is what you"
+    },
+    {
+      "start": 223.36,
+      "duration": 3.28,
+      "text": "get when you create a spacelift account."
+    },
+    {
+      "start": 225.04,
+      "duration": 3.279,
+      "text": "Right now, we don't have any stacks in"
+    },
+    {
+      "start": 226.64,
+      "duration": 3.679,
+      "text": "our spacelift account. And we will be"
+    },
+    {
+      "start": 228.319,
+      "duration": 3.84,
+      "text": "creating two stack. one for Terraform"
+    },
+    {
+      "start": 230.319,
+      "duration": 3.601,
+      "text": "and one for running Ansible playbook."
+    },
+    {
+      "start": 232.159,
+      "duration": 3.681,
+      "text": "Using spacelift, we will integrate the"
+    },
+    {
+      "start": 233.92,
+      "duration": 3.76,
+      "text": "Terraform and Ansible stack so that we"
+    },
+    {
+      "start": 235.84,
+      "duration": 3.36,
+      "text": "can run them together in a single run."
+    },
+    {
+      "start": 237.68,
+      "duration": 3.36,
+      "text": "For this demo, I'm going to be using"
+    },
+    {
+      "start": 239.2,
+      "duration": 3.52,
+      "text": "this GitHub repository and the link for"
+    },
+    {
+      "start": 241.04,
+      "duration": 3.759,
+      "text": "this repository is in this video"
+    },
+    {
+      "start": 242.72,
+      "duration": 4.159,
+      "text": "description. Inside this repository, we"
+    },
+    {
+      "start": 244.799,
+      "duration": 3.601,
+      "text": "have two folders. One for Terraform and"
+    },
+    {
+      "start": 246.879,
+      "duration": 3.601,
+      "text": "another one for Ansible. In this"
+    },
+    {
+      "start": 248.4,
+      "duration": 3.759,
+      "text": "terapform folder, we have the main.tf"
+    },
+    {
+      "start": 250.48,
+      "duration": 3.92,
+      "text": "which is creating a private key that is"
+    },
+    {
+      "start": 252.159,
+      "duration": 4.161,
+      "text": "going to be used by the EC2 instance."
+    },
+    {
+      "start": 254.4,
+      "duration": 4.0,
+      "text": "It's also creating VPC, internet"
+    },
+    {
+      "start": 256.32,
+      "duration": 4.4,
+      "text": "gateway, route table, etc. to create"
+    },
+    {
+      "start": 258.4,
+      "duration": 4.32,
+      "text": "that EC2 instance inside and on this"
+    },
+    {
+      "start": 260.72,
+      "duration": 3.68,
+      "text": "instance we want to run a playbook which"
+    },
+    {
+      "start": 262.72,
+      "duration": 4.32,
+      "text": "is going to be an anible playbook that"
+    },
+    {
+      "start": 264.4,
+      "duration": 4.48,
+      "text": "is going to install Apache web server"
+    },
+    {
+      "start": 267.04,
+      "duration": 3.52,
+      "text": "and after it is installed it will show a"
+    },
+    {
+      "start": 268.88,
+      "duration": 3.84,
+      "text": "message saying hello from anible"
+    },
+    {
+      "start": 270.56,
+      "duration": 4.16,
+      "text": "deployed via spacelift. So by the end of"
+    },
+    {
+      "start": 272.72,
+      "duration": 4.08,
+      "text": "this demo we want to have an instance"
+    },
+    {
+      "start": 274.72,
+      "duration": 4.0,
+      "text": "created and also a playbook running on"
+    },
+    {
+      "start": 276.8,
+      "duration": 3.88,
+      "text": "it which should show this message when"
+    },
+    {
+      "start": 278.72,
+      "duration": 5.039,
+      "text": "we paste the IP address on the browser"
+    },
+    {
+      "start": 280.68,
+      "duration": 4.68,
+      "text": "because this instance also has port 80"
+    },
+    {
+      "start": 283.759,
+      "duration": 3.281,
+      "text": "already enabled. So when you paste the"
+    },
+    {
+      "start": 285.36,
+      "duration": 3.36,
+      "text": "IP address of this instance, the message"
+    },
+    {
+      "start": 287.04,
+      "duration": 3.36,
+      "text": "will be shown. Along with this, I have"
+    },
+    {
+      "start": 288.72,
+      "duration": 3.68,
+      "text": "some outputs created for the public IP"
+    },
+    {
+      "start": 290.4,
+      "duration": 3.519,
+      "text": "address and also to get the key SSM"
+    },
+    {
+      "start": 292.4,
+      "duration": 4.079,
+      "text": "parameter. You can follow through this"
+    },
+    {
+      "start": 293.919,
+      "duration": 5.041,
+      "text": "demo and learn how you can use spacelift"
+    },
+    {
+      "start": 296.479,
+      "duration": 4.241,
+      "text": "to integrate Terraform and Ansible. For"
+    },
+    {
+      "start": 298.96,
+      "duration": 4.04,
+      "text": "now, let's go click on stacks and create"
+    },
+    {
+      "start": 300.72,
+      "duration": 4.16,
+      "text": "a stack. I'm going to name this as"
+    },
+    {
+      "start": 303.0,
+      "duration": 3.56,
+      "text": "Terraform. And this is going to be in"
+    },
+    {
+      "start": 304.88,
+      "duration": 3.759,
+      "text": "the root space. No need to add any"
+    },
+    {
+      "start": 306.56,
+      "duration": 4.0,
+      "text": "labels. Let's click on continue. If you"
+    },
+    {
+      "start": 308.639,
+      "duration": 2.961,
+      "text": "wish, you can also add description here."
+    },
+    {
+      "start": 310.56,
+      "duration": 3.199,
+      "text": "But for now, I'm going to click on"
+    },
+    {
+      "start": 311.6,
+      "duration": 3.84,
+      "text": "continue. As we already know, spacelift"
+    },
+    {
+      "start": 313.759,
+      "duration": 2.961,
+      "text": "supports multiple source providers and"
+    },
+    {
+      "start": 315.44,
+      "duration": 2.64,
+      "text": "you can also connect to your GitHub"
+    },
+    {
+      "start": 316.72,
+      "duration": 3.039,
+      "text": "repository. So I'm going to connect to"
+    },
+    {
+      "start": 318.08,
+      "duration": 4.32,
+      "text": "my GitHub repository which is the"
+    },
+    {
+      "start": 319.759,
+      "duration": 5.121,
+      "text": "spacelift demo. And here the branch is"
+    },
+    {
+      "start": 322.4,
+      "duration": 3.76,
+      "text": "main. The project root is where the code"
+    },
+    {
+      "start": 324.88,
+      "duration": 2.879,
+      "text": "is stored. So the code is stored inside"
+    },
+    {
+      "start": 326.16,
+      "duration": 3.68,
+      "text": "the terapform folder. So I'm going to"
+    },
+    {
+      "start": 327.759,
+      "duration": 3.361,
+      "text": "type Terapform here. Click on continue."
+    },
+    {
+      "start": 329.84,
+      "duration": 3.12,
+      "text": "Spacelift supports different"
+    },
+    {
+      "start": 331.12,
+      "duration": 4.24,
+      "text": "infrastructure tools such as open tofu,"
+    },
+    {
+      "start": 332.96,
+      "duration": 4.799,
+      "text": "terapform, pulum, cloud for kubernetes,"
+    },
+    {
+      "start": 335.36,
+      "duration": 3.92,
+      "text": "teragrant, anible. For now we want to"
+    },
+    {
+      "start": 337.759,
+      "duration": 2.801,
+      "text": "create infrastructure using terapform."
+    },
+    {
+      "start": 339.28,
+      "duration": 3.28,
+      "text": "So I'm going to select this and then"
+    },
+    {
+      "start": 340.56,
+      "duration": 4.079,
+      "text": "choose terapform here. You can also"
+    },
+    {
+      "start": 342.56,
+      "duration": 3.84,
+      "text": "specify what version you want to use and"
+    },
+    {
+      "start": 344.639,
+      "duration": 3.761,
+      "text": "also other settings here where you can"
+    },
+    {
+      "start": 346.4,
+      "duration": 4.079,
+      "text": "manage state externally or import"
+    },
+    {
+      "start": 348.4,
+      "duration": 4.0,
+      "text": "existing state file. Let's click on"
+    },
+    {
+      "start": 350.479,
+      "duration": 3.841,
+      "text": "create and continue. On this page here"
+    },
+    {
+      "start": 352.4,
+      "duration": 3.519,
+      "text": "you can add more features to your stack"
+    },
+    {
+      "start": 354.32,
+      "duration": 3.92,
+      "text": "which could be defining your stack"
+    },
+    {
+      "start": 355.919,
+      "duration": 4.241,
+      "text": "behavior, adding commands as pre hooks"
+    },
+    {
+      "start": 358.24,
+      "duration": 3.92,
+      "text": "or after hooks. You can also connect to"
+    },
+    {
+      "start": 360.16,
+      "duration": 3.599,
+      "text": "your cloud provider, attach policies and"
+    },
+    {
+      "start": 362.16,
+      "duration": 3.84,
+      "text": "attach context. We are going to be"
+    },
+    {
+      "start": 363.759,
+      "duration": 4.081,
+      "text": "deploying our applications on AWS. So we"
+    },
+    {
+      "start": 366.0,
+      "duration": 3.68,
+      "text": "do need to attach a cloud provider. So"
+    },
+    {
+      "start": 367.84,
+      "duration": 3.76,
+      "text": "when we click on this right now we don't"
+    },
+    {
+      "start": 369.68,
+      "duration": 3.28,
+      "text": "have any cloud integration and after the"
+    },
+    {
+      "start": 371.6,
+      "duration": 3.36,
+      "text": "stack is created I'm going to show you"
+    },
+    {
+      "start": 372.96,
+      "duration": 4.48,
+      "text": "how you can integrate any cloud which"
+    },
+    {
+      "start": 374.96,
+      "duration": 4.079,
+      "text": "could be AWS Azure or GCP throughout"
+    },
+    {
+      "start": 377.44,
+      "duration": 3.759,
+      "text": "this demo if you're stuck at any point"
+    },
+    {
+      "start": 379.039,
+      "duration": 4.16,
+      "text": "you can obviously use the official"
+    },
+    {
+      "start": 381.199,
+      "duration": 3.761,
+      "text": "Spacelift documentation they have great"
+    },
+    {
+      "start": 383.199,
+      "duration": 3.681,
+      "text": "documentation which includes all the"
+    },
+    {
+      "start": 384.96,
+      "duration": 3.6,
+      "text": "steps and things that will help you"
+    },
+    {
+      "start": 386.88,
+      "duration": 4.4,
+      "text": "complete this demo. Although you can"
+    },
+    {
+      "start": 388.56,
+      "duration": 4.479,
+      "text": "always follow the video to uh do it"
+    },
+    {
+      "start": 391.28,
+      "duration": 3.759,
+      "text": "along with me. For now let's click on"
+    },
+    {
+      "start": 393.039,
+      "duration": 3.841,
+      "text": "continue. We don't need to have any"
+    },
+    {
+      "start": 395.039,
+      "duration": 3.521,
+      "text": "policies here, but policies can be used"
+    },
+    {
+      "start": 396.88,
+      "duration": 4.08,
+      "text": "to control various decision points"
+    },
+    {
+      "start": 398.56,
+      "duration": 4.479,
+      "text": "throughout your workflow, which could be"
+    },
+    {
+      "start": 400.96,
+      "duration": 3.359,
+      "text": "defining how what happens when a PR is"
+    },
+    {
+      "start": 403.039,
+      "duration": 3.28,
+      "text": "open, what happens when something is"
+    },
+    {
+      "start": 404.319,
+      "duration": 4.081,
+      "text": "created, what happens when you receive a"
+    },
+    {
+      "start": 406.319,
+      "duration": 3.681,
+      "text": "notification, etc. All things can be"
+    },
+    {
+      "start": 408.4,
+      "duration": 3.28,
+      "text": "defined inside a policy and you can"
+    },
+    {
+      "start": 410.0,
+      "duration": 3.68,
+      "text": "review this. For now, everything is"
+    },
+    {
+      "start": 411.68,
+      "duration": 4.0,
+      "text": "okay. All we need is to attach a cloud"
+    },
+    {
+      "start": 413.68,
+      "duration": 3.6,
+      "text": "integration, which I'm going to do now."
+    },
+    {
+      "start": 415.68,
+      "duration": 4.0,
+      "text": "So, let's click on confirm option here."
+    },
+    {
+      "start": 417.28,
+      "duration": 3.919,
+      "text": "And the stack is now created. If I try"
+    },
+    {
+      "start": 419.68,
+      "duration": 2.799,
+      "text": "to run this stack now, it will give me"
+    },
+    {
+      "start": 421.199,
+      "duration": 2.961,
+      "text": "an error saying the cloud is not"
+    },
+    {
+      "start": 422.479,
+      "duration": 3.921,
+      "text": "connected. That's why we need to first"
+    },
+    {
+      "start": 424.16,
+      "duration": 4.479,
+      "text": "go ahead and integrate the cloud which"
+    },
+    {
+      "start": 426.4,
+      "duration": 4.239,
+      "text": "is option here cloud integrations. If I"
+    },
+    {
+      "start": 428.639,
+      "duration": 4.161,
+      "text": "try to trigger this or run this very"
+    },
+    {
+      "start": 430.639,
+      "duration": 5.041,
+      "text": "soon I will get an error which will be"
+    },
+    {
+      "start": 432.8,
+      "duration": 4.959,
+      "text": "that the AWS is not connected and you"
+    },
+    {
+      "start": 435.68,
+      "duration": 4.239,
+      "text": "can connect your AWS either using this"
+    },
+    {
+      "start": 437.759,
+      "duration": 4.801,
+      "text": "cloud integration option here or you can"
+    },
+    {
+      "start": 439.919,
+      "duration": 4.161,
+      "text": "also add your AWS access keys or secret"
+    },
+    {
+      "start": 442.56,
+      "duration": 3.759,
+      "text": "access keys in the environment variable"
+    },
+    {
+      "start": 444.08,
+      "duration": 4.0,
+      "text": "option. Let me show you. You can click"
+    },
+    {
+      "start": 446.319,
+      "duration": 3.921,
+      "text": "on environment option here and click on"
+    },
+    {
+      "start": 448.08,
+      "duration": 3.76,
+      "text": "add variable. You can add your AWS"
+    },
+    {
+      "start": 450.24,
+      "duration": 3.679,
+      "text": "access key or secret access key by"
+    },
+    {
+      "start": 451.84,
+      "duration": 4.639,
+      "text": "creating them in the AWS console."
+    },
+    {
+      "start": 453.919,
+      "duration": 4.161,
+      "text": "Another option is to use IM roles. So"
+    },
+    {
+      "start": 456.479,
+      "duration": 3.28,
+      "text": "you can see the terapform stack has"
+    },
+    {
+      "start": 458.08,
+      "duration": 4.239,
+      "text": "failed and you can also check the logs"
+    },
+    {
+      "start": 459.759,
+      "duration": 4.401,
+      "text": "for it. So this is the fail job. When I"
+    },
+    {
+      "start": 462.319,
+      "duration": 3.521,
+      "text": "click on this, you can see it says no"
+    },
+    {
+      "start": 464.16,
+      "duration": 3.2,
+      "text": "valid credentials which is expected"
+    },
+    {
+      "start": 465.84,
+      "duration": 3.359,
+      "text": "because we haven't connected our account"
+    },
+    {
+      "start": 467.36,
+      "duration": 3.52,
+      "text": "yet. So let's click on cloud integration"
+    },
+    {
+      "start": 469.199,
+      "duration": 3.84,
+      "text": "option here and then click on setup"
+    },
+    {
+      "start": 470.88,
+      "duration": 4.08,
+      "text": "integration. We will be using AWS cloud."
+    },
+    {
+      "start": 473.039,
+      "duration": 6.241,
+      "text": "So I'm choosing on AWS cloud and let's"
+    },
+    {
+      "start": 474.96,
+      "duration": 6.88,
+      "text": "name this as u I don't know cloud."
+    },
+    {
+      "start": 479.28,
+      "duration": 4.72,
+      "text": "For now we need to enter a role ARN and"
+    },
+    {
+      "start": 481.84,
+      "duration": 3.84,
+      "text": "we can get this role ARN created after"
+    },
+    {
+      "start": 484.0,
+      "duration": 3.759,
+      "text": "we paste this trust policy. So I'm going"
+    },
+    {
+      "start": 485.68,
+      "duration": 4.48,
+      "text": "to copy this and go to my AWS account."
+    },
+    {
+      "start": 487.759,
+      "duration": 4.72,
+      "text": "In your AWS account go to the IM service"
+    },
+    {
+      "start": 490.16,
+      "duration": 4.08,
+      "text": "and create an IM role. So I'm going to"
+    },
+    {
+      "start": 492.479,
+      "duration": 4.241,
+      "text": "click on RO option here and then click"
+    },
+    {
+      "start": 494.24,
+      "duration": 3.92,
+      "text": "on create RO button. So right now we are"
+    },
+    {
+      "start": 496.72,
+      "duration": 3.039,
+      "text": "going to be creating a role for a third"
+    },
+    {
+      "start": 498.16,
+      "duration": 3.68,
+      "text": "party application. So I'm going to"
+    },
+    {
+      "start": 499.759,
+      "duration": 3.521,
+      "text": "select custom trust policy. All this"
+    },
+    {
+      "start": 501.84,
+      "duration": 3.44,
+      "text": "information is already present on the"
+    },
+    {
+      "start": 503.28,
+      "duration": 4.08,
+      "text": "spacelift documentation. Spaceelift"
+    },
+    {
+      "start": 505.28,
+      "duration": 3.28,
+      "text": "cloud integration documentation and you"
+    },
+    {
+      "start": 507.36,
+      "duration": 3.36,
+      "text": "can see either you can create"
+    },
+    {
+      "start": 508.56,
+      "duration": 3.839,
+      "text": "environment variables or create a role"
+    },
+    {
+      "start": 510.72,
+      "duration": 3.119,
+      "text": "using trust policy. So here we have all"
+    },
+    {
+      "start": 512.399,
+      "duration": 2.88,
+      "text": "the steps where they're asking you to"
+    },
+    {
+      "start": 513.839,
+      "duration": 3.68,
+      "text": "paste the trust policy that you get from"
+    },
+    {
+      "start": 515.279,
+      "duration": 4.961,
+      "text": "the dashboard here. So I'm going to copy"
+    },
+    {
+      "start": 517.519,
+      "duration": 4.161,
+      "text": "this trust policy and go to my IM again."
+    },
+    {
+      "start": 520.24,
+      "duration": 3.679,
+      "text": "When I click on create role option,"
+    },
+    {
+      "start": 521.68,
+      "duration": 4.48,
+      "text": "select custom trust policy and paste the"
+    },
+    {
+      "start": 523.919,
+      "duration": 4.241,
+      "text": "trust policy here. So this is my trust"
+    },
+    {
+      "start": 526.16,
+      "duration": 4.48,
+      "text": "policy which includes my external ID and"
+    },
+    {
+      "start": 528.16,
+      "duration": 4.239,
+      "text": "also uh this principle here. Let's click"
+    },
+    {
+      "start": 530.64,
+      "duration": 3.44,
+      "text": "on next. You can choose to give any"
+    },
+    {
+      "start": 532.399,
+      "duration": 3.761,
+      "text": "access you want. If you're specifically"
+    },
+    {
+      "start": 534.08,
+      "duration": 4.24,
+      "text": "working on EC2, you can give EC2 full"
+    },
+    {
+      "start": 536.16,
+      "duration": 4.239,
+      "text": "access. But to make things easier, I'm"
+    },
+    {
+      "start": 538.32,
+      "duration": 4.56,
+      "text": "going to choose administrator access and"
+    },
+    {
+      "start": 540.399,
+      "duration": 5.481,
+      "text": "then click on next. Now I'm going to"
+    },
+    {
+      "start": 542.88,
+      "duration": 5.36,
+      "text": "name this. So let's name this as"
+    },
+    {
+      "start": 545.88,
+      "duration": 3.56,
+      "text": "spacelift demo. And you can add"
+    },
+    {
+      "start": 548.24,
+      "duration": 3.76,
+      "text": "description if you want. I'm going to"
+    },
+    {
+      "start": 549.44,
+      "duration": 5.04,
+      "text": "click on create role. And now this role"
+    },
+    {
+      "start": 552.0,
+      "duration": 4.88,
+      "text": "is created. Once this role is created,"
+    },
+    {
+      "start": 554.48,
+      "duration": 5.359,
+      "text": "you can simply go ahead and copy this"
+    },
+    {
+      "start": 556.88,
+      "duration": 4.639,
+      "text": "ARN. So this ARN is required here in our"
+    },
+    {
+      "start": 559.839,
+      "duration": 4.161,
+      "text": "cloud integration section. I'm going to"
+    },
+    {
+      "start": 561.519,
+      "duration": 4.561,
+      "text": "paste it here. And then you can choose"
+    },
+    {
+      "start": 564.0,
+      "duration": 4.56,
+      "text": "to change the duration if you want. For"
+    },
+    {
+      "start": 566.08,
+      "duration": 4.16,
+      "text": "now, I'm going to click on setup. And my"
+    },
+    {
+      "start": 568.56,
+      "duration": 4.16,
+      "text": "AWS integration was successfully"
+    },
+    {
+      "start": 570.24,
+      "duration": 4.32,
+      "text": "created. So for my stack to start using"
+    },
+    {
+      "start": 572.72,
+      "duration": 3.679,
+      "text": "it, you can also customize or edit your"
+    },
+    {
+      "start": 574.56,
+      "duration": 3.76,
+      "text": "created stack. You click on this three"
+    },
+    {
+      "start": 576.399,
+      "duration": 4.321,
+      "text": "dots here and then click on settings. Go"
+    },
+    {
+      "start": 578.32,
+      "duration": 4.72,
+      "text": "to integrations, add cloud integration"
+    },
+    {
+      "start": 580.72,
+      "duration": 4.239,
+      "text": "or attach cloud integration and select"
+    },
+    {
+      "start": 583.04,
+      "duration": 4.799,
+      "text": "this. I'm going to give read and write"
+    },
+    {
+      "start": 584.959,
+      "duration": 4.801,
+      "text": "access and click on attach option here."
+    },
+    {
+      "start": 587.839,
+      "duration": 3.761,
+      "text": "Once it is done, let's try and re rerun"
+    },
+    {
+      "start": 589.76,
+      "duration": 3.759,
+      "text": "this stack. So I'm going to go ahead and"
+    },
+    {
+      "start": 591.6,
+      "duration": 3.6,
+      "text": "click on trigger option here. So right"
+    },
+    {
+      "start": 593.519,
+      "duration": 3.601,
+      "text": "now we are only creating a stack for"
+    },
+    {
+      "start": 595.2,
+      "duration": 3.92,
+      "text": "terraform, but we also need to create a"
+    },
+    {
+      "start": 597.12,
+      "duration": 4.56,
+      "text": "stack for anible and then connect them"
+    },
+    {
+      "start": 599.12,
+      "duration": 5.12,
+      "text": "together to make it run using a single"
+    },
+    {
+      "start": 601.68,
+      "duration": 3.92,
+      "text": "run in spacelift. So spacelift is a"
+    },
+    {
+      "start": 604.24,
+      "duration": 3.92,
+      "text": "great tool that you can use to create"
+    },
+    {
+      "start": 605.6,
+      "duration": 4.08,
+      "text": "infrastructure on terraform, puli, cloud"
+    },
+    {
+      "start": 608.16,
+      "duration": 3.28,
+      "text": "for we have seen all the different tools"
+    },
+    {
+      "start": 609.68,
+      "duration": 3.839,
+      "text": "that is supported. You can also attach"
+    },
+    {
+      "start": 611.44,
+      "duration": 3.6,
+      "text": "policies, you can add context, you can"
+    },
+    {
+      "start": 613.519,
+      "duration": 2.88,
+      "text": "add web hooks, source code, cloud"
+    },
+    {
+      "start": 615.04,
+      "duration": 3.039,
+      "text": "integration. There are so many different"
+    },
+    {
+      "start": 616.399,
+      "duration": 3.201,
+      "text": "features that you get. This is in"
+    },
+    {
+      "start": 618.079,
+      "duration": 3.361,
+      "text": "planning phase right now and you can"
+    },
+    {
+      "start": 619.6,
+      "duration": 3.679,
+      "text": "check the logs for every stage. Right"
+    },
+    {
+      "start": 621.44,
+      "duration": 3.519,
+      "text": "now in this planning stage, it says 10"
+    },
+    {
+      "start": 623.279,
+      "duration": 4.401,
+      "text": "things are going to be created. For now,"
+    },
+    {
+      "start": 624.959,
+      "duration": 6.241,
+      "text": "if I go to my AWS, right now I don't"
+    },
+    {
+      "start": 627.68,
+      "duration": 5.04,
+      "text": "have any instance here. All right, it"
+    },
+    {
+      "start": 631.2,
+      "duration": 3.04,
+      "text": "says apply has been completed and it"
+    },
+    {
+      "start": 632.72,
+      "duration": 3.76,
+      "text": "also gives you the output here with the"
+    },
+    {
+      "start": 634.24,
+      "duration": 4.32,
+      "text": "IP address of the instance. If I go back"
+    },
+    {
+      "start": 636.48,
+      "duration": 3.76,
+      "text": "here, click on refresh, you will see an"
+    },
+    {
+      "start": 638.56,
+      "duration": 3.76,
+      "text": "instance has been created. This is an"
+    },
+    {
+      "start": 640.24,
+      "duration": 4.96,
+      "text": "Ubuntu instance with the security group"
+    },
+    {
+      "start": 642.32,
+      "duration": 4.88,
+      "text": "attached which has port 22 and 80 open."
+    },
+    {
+      "start": 645.2,
+      "duration": 3.84,
+      "text": "Perfect. This is what we actually wanted"
+    },
+    {
+      "start": 647.2,
+      "duration": 5.12,
+      "text": "according to the code present in our"
+    },
+    {
+      "start": 649.04,
+      "duration": 4.88,
+      "text": "GitHub repository. So, spacelift can get"
+    },
+    {
+      "start": 652.32,
+      "duration": 3.199,
+      "text": "the code from the GitHub repository and"
+    },
+    {
+      "start": 653.92,
+      "duration": 3.359,
+      "text": "if you have any changes made, you can"
+    },
+    {
+      "start": 655.519,
+      "duration": 3.44,
+      "text": "also sync it. Anytime you make a change,"
+    },
+    {
+      "start": 657.279,
+      "duration": 3.841,
+      "text": "you can go back to this and click on the"
+    },
+    {
+      "start": 658.959,
+      "duration": 4.081,
+      "text": "sync option which will sync to your"
+    },
+    {
+      "start": 661.12,
+      "duration": 3.92,
+      "text": "latest commit. Let's go and create a"
+    },
+    {
+      "start": 663.04,
+      "duration": 4.0,
+      "text": "stack for anible. So, I'm going to click"
+    },
+    {
+      "start": 665.04,
+      "duration": 4.16,
+      "text": "on create stack and choose the name"
+    },
+    {
+      "start": 667.04,
+      "duration": 4.32,
+      "text": "anible. No need to add any labels or"
+    },
+    {
+      "start": 669.2,
+      "duration": 4.079,
+      "text": "description if you want. And then select"
+    },
+    {
+      "start": 671.36,
+      "duration": 3.36,
+      "text": "the repository. This is the repository"
+    },
+    {
+      "start": 673.279,
+      "duration": 2.961,
+      "text": "which is the main branch and all the"
+    },
+    {
+      "start": 674.72,
+      "duration": 3.84,
+      "text": "code for Ansible is present in the"
+    },
+    {
+      "start": 676.24,
+      "duration": 3.76,
+      "text": "Ansible folder. Let's click on continue"
+    },
+    {
+      "start": 678.56,
+      "duration": 3.12,
+      "text": "option. We are going to be using"
+    },
+    {
+      "start": 680.0,
+      "duration": 3.519,
+      "text": "Ansible. So I select Ansible here and"
+    },
+    {
+      "start": 681.68,
+      "duration": 3.76,
+      "text": "let's name the playbook. So the playbook"
+    },
+    {
+      "start": 683.519,
+      "duration": 3.76,
+      "text": "name is playbook.yimml which is this"
+    },
+    {
+      "start": 685.44,
+      "duration": 4.0,
+      "text": "playbook here that is going to install"
+    },
+    {
+      "start": 687.279,
+      "duration": 3.68,
+      "text": "Apache web server and also put this"
+    },
+    {
+      "start": 689.44,
+      "duration": 3.92,
+      "text": "custom message. So the name of the"
+    },
+    {
+      "start": 690.959,
+      "duration": 3.921,
+      "text": "playbook is playbook.yml. Make sure you"
+    },
+    {
+      "start": 693.36,
+      "duration": 3.32,
+      "text": "enter the correct name that you want to"
+    },
+    {
+      "start": 694.88,
+      "duration": 3.92,
+      "text": "run. So I'm going to say"
+    },
+    {
+      "start": 696.68,
+      "duration": 4.2,
+      "text": "playbook.yiml and then click on create"
+    },
+    {
+      "start": 698.8,
+      "duration": 3.84,
+      "text": "and continue. We also need to attach a"
+    },
+    {
+      "start": 700.88,
+      "duration": 3.199,
+      "text": "cloud because we won't be deploying or"
+    },
+    {
+      "start": 702.64,
+      "duration": 3.439,
+      "text": "running this playbook on the instance"
+    },
+    {
+      "start": 704.079,
+      "duration": 4.401,
+      "text": "that is inside AWS cloud. So I need to"
+    },
+    {
+      "start": 706.079,
+      "duration": 4.641,
+      "text": "attach my cloud or give it access. Along"
+    },
+    {
+      "start": 708.48,
+      "duration": 4.32,
+      "text": "with this, I'm also going to do some"
+    },
+    {
+      "start": 710.72,
+      "duration": 3.84,
+      "text": "more configurations using the hooks here"
+    },
+    {
+      "start": 712.8,
+      "duration": 3.36,
+      "text": "which I will show you very soon. Before"
+    },
+    {
+      "start": 714.56,
+      "duration": 3.279,
+      "text": "I do that, let me explain you the"
+    },
+    {
+      "start": 716.16,
+      "duration": 3.44,
+      "text": "terapform code quickly. So in this"
+    },
+    {
+      "start": 717.839,
+      "duration": 3.521,
+      "text": "terapform code, I'm going to be using a"
+    },
+    {
+      "start": 719.6,
+      "duration": 4.0,
+      "text": "key pair. I'm creating a key pair here"
+    },
+    {
+      "start": 721.36,
+      "duration": 4.32,
+      "text": "and the key pair is stored in AWS SSM"
+    },
+    {
+      "start": 723.6,
+      "duration": 4.72,
+      "text": "parameter. So I want to fetch this key"
+    },
+    {
+      "start": 725.68,
+      "duration": 4.719,
+      "text": "pair from the SSM parameter into my"
+    },
+    {
+      "start": 728.32,
+      "duration": 3.68,
+      "text": "spacelift stack. so that it can be used"
+    },
+    {
+      "start": 730.399,
+      "duration": 4.56,
+      "text": "to run the Ansible playbook because"
+    },
+    {
+      "start": 732.0,
+      "duration": 4.72,
+      "text": "Ansible uses SSH to run playbooks on any"
+    },
+    {
+      "start": 734.959,
+      "duration": 3.201,
+      "text": "remote machine. Before I do any"
+    },
+    {
+      "start": 736.72,
+      "duration": 3.679,
+      "text": "configuration, if I click on trigger"
+    },
+    {
+      "start": 738.16,
+      "duration": 4.32,
+      "text": "option here, I will obviously get a"
+    },
+    {
+      "start": 740.399,
+      "duration": 3.921,
+      "text": "failure on this because I don't have any"
+    },
+    {
+      "start": 742.48,
+      "duration": 3.52,
+      "text": "key pair and the Ansible stack does not"
+    },
+    {
+      "start": 744.32,
+      "duration": 3.6,
+      "text": "know where to run it. Although the"
+    },
+    {
+      "start": 746.0,
+      "duration": 3.76,
+      "text": "Terapform stack is created, it is not"
+    },
+    {
+      "start": 747.92,
+      "duration": 3.52,
+      "text": "connected. So, it does not know which IP"
+    },
+    {
+      "start": 749.76,
+      "duration": 3.199,
+      "text": "address to run it on. So, you will see"
+    },
+    {
+      "start": 751.44,
+      "duration": 3.04,
+      "text": "very soon I will get an error on this"
+    },
+    {
+      "start": 752.959,
+      "duration": 3.281,
+      "text": "anible stack and we need to configure"
+    },
+    {
+      "start": 754.48,
+      "duration": 3.28,
+      "text": "some things here. So to configure things"
+    },
+    {
+      "start": 756.24,
+      "duration": 3.36,
+      "text": "or to run command on this stack you can"
+    },
+    {
+      "start": 757.76,
+      "duration": 3.6,
+      "text": "click on hooks option here you have"
+    },
+    {
+      "start": 759.6,
+      "duration": 3.6,
+      "text": "hooks at different level which could be"
+    },
+    {
+      "start": 761.36,
+      "duration": 4.24,
+      "text": "initialization planning applying"
+    },
+    {
+      "start": 763.2,
+      "duration": 4.0,
+      "text": "destroying performing etc etc these are"
+    },
+    {
+      "start": 765.6,
+      "duration": 3.2,
+      "text": "all the commands that I'm going to add"
+    },
+    {
+      "start": 767.2,
+      "duration": 2.8,
+      "text": "let me quickly explain the commands here"
+    },
+    {
+      "start": 768.8,
+      "duration": 3.599,
+      "text": "I'm setting the permission for the"
+    },
+    {
+      "start": 770.0,
+      "duration": 4.32,
+      "text": "anible directory also setting my ansible"
+    },
+    {
+      "start": 772.399,
+      "duration": 3.201,
+      "text": "configuration to this path here as an"
+    },
+    {
+      "start": 774.32,
+      "duration": 3.519,
+      "text": "environment variable creating a"
+    },
+    {
+      "start": 775.6,
+      "duration": 4.0,
+      "text": "workspace and then creating an inventory"
+    },
+    {
+      "start": 777.839,
+      "duration": 4.481,
+      "text": "which will include the space lift input"
+    },
+    {
+      "start": 779.6,
+      "duration": 5.44,
+      "text": "instance IP for this to work we need to"
+    },
+    {
+      "start": 782.32,
+      "duration": 5.519,
+      "text": "create an environment variable that gets"
+    },
+    {
+      "start": 785.04,
+      "duration": 4.88,
+      "text": "the output from my EC2 instance here"
+    },
+    {
+      "start": 787.839,
+      "duration": 3.601,
+      "text": "that we have defined and then store it"
+    },
+    {
+      "start": 789.92,
+      "duration": 3.84,
+      "text": "in the anible stack with the name"
+    },
+    {
+      "start": 791.44,
+      "duration": 4.079,
+      "text": "spacelift input ips which will be stored"
+    },
+    {
+      "start": 793.76,
+      "duration": 3.68,
+      "text": "inside inventory file that will be used"
+    },
+    {
+      "start": 795.519,
+      "duration": 3.76,
+      "text": "by anible to run the playbook on. So"
+    },
+    {
+      "start": 797.44,
+      "duration": 4.0,
+      "text": "once we have this inventory created I'm"
+    },
+    {
+      "start": 799.279,
+      "duration": 5.12,
+      "text": "fetching the key from the SSM parameter"
+    },
+    {
+      "start": 801.44,
+      "duration": 4.399,
+      "text": "and then doing this configuration for an"
+    },
+    {
+      "start": 804.399,
+      "duration": 2.961,
+      "text": "anible which will make my anible"
+    },
+    {
+      "start": 805.839,
+      "duration": 3.361,
+      "text": "playbook run. So I'm going to click on"
+    },
+    {
+      "start": 807.36,
+      "duration": 3.52,
+      "text": "save option here. So for this to"
+    },
+    {
+      "start": 809.2,
+      "duration": 3.759,
+      "text": "actually work we need to have spacelift"
+    },
+    {
+      "start": 810.88,
+      "duration": 3.92,
+      "text": "input instance ips as an environment"
+    },
+    {
+      "start": 812.959,
+      "duration": 3.281,
+      "text": "variable created. But this environment"
+    },
+    {
+      "start": 814.8,
+      "duration": 2.96,
+      "text": "variable value is present inside the"
+    },
+    {
+      "start": 816.24,
+      "duration": 3.36,
+      "text": "terapform stack. So we need to create a"
+    },
+    {
+      "start": 817.76,
+      "duration": 3.44,
+      "text": "dependency between these two stacks. And"
+    },
+    {
+      "start": 819.6,
+      "duration": 4.16,
+      "text": "you can create dependencies by going to"
+    },
+    {
+      "start": 821.2,
+      "duration": 5.36,
+      "text": "this dependency section. So this anible"
+    },
+    {
+      "start": 823.76,
+      "duration": 4.639,
+      "text": "stack is dependent on terapform stack"
+    },
+    {
+      "start": 826.56,
+      "duration": 4.0,
+      "text": "which means the first terapform stack is"
+    },
+    {
+      "start": 828.399,
+      "duration": 4.321,
+      "text": "going to run and then anible stack is"
+    },
+    {
+      "start": 830.56,
+      "duration": 3.519,
+      "text": "going to run. So I'm going to cl click"
+    },
+    {
+      "start": 832.72,
+      "duration": 3.919,
+      "text": "on add dependencies and choose this"
+    },
+    {
+      "start": 834.079,
+      "duration": 4.081,
+      "text": "option here. Click on add again. Now we"
+    },
+    {
+      "start": 836.639,
+      "duration": 3.521,
+      "text": "also need an output which is the"
+    },
+    {
+      "start": 838.16,
+      "duration": 3.679,
+      "text": "instance IP address. So click on this"
+    },
+    {
+      "start": 840.16,
+      "duration": 4.0,
+      "text": "add output reference and then select"
+    },
+    {
+      "start": 841.839,
+      "duration": 3.761,
+      "text": "public IP. For the input name we going"
+    },
+    {
+      "start": 844.16,
+      "duration": 3.84,
+      "text": "to be using the spa same name which is"
+    },
+    {
+      "start": 845.6,
+      "duration": 4.0,
+      "text": "spacelift input instance ips because"
+    },
+    {
+      "start": 848.0,
+      "duration": 3.199,
+      "text": "this is the name I have used inside the"
+    },
+    {
+      "start": 849.6,
+      "duration": 3.84,
+      "text": "hooks or the commands. So I'm going to"
+    },
+    {
+      "start": 851.199,
+      "duration": 4.241,
+      "text": "click on add option now and we are ready"
+    },
+    {
+      "start": 853.44,
+      "duration": 3.68,
+      "text": "to run the playbook. So previously you"
+    },
+    {
+      "start": 855.44,
+      "duration": 3.519,
+      "text": "can see it has finished. When I click on"
+    },
+    {
+      "start": 857.12,
+      "duration": 3.2,
+      "text": "this it did finish but does not run"
+    },
+    {
+      "start": 858.959,
+      "duration": 3.281,
+      "text": "playbook because it does not know which"
+    },
+    {
+      "start": 860.32,
+      "duration": 3.36,
+      "text": "host to run the playbook on. Now that we"
+    },
+    {
+      "start": 862.24,
+      "duration": 4.08,
+      "text": "have configured everything and we have"
+    },
+    {
+      "start": 863.68,
+      "duration": 4.08,
+      "text": "inventory anible config the keeper as"
+    },
+    {
+      "start": 866.32,
+      "duration": 2.4,
+      "text": "well we should be able to run this"
+    },
+    {
+      "start": 867.76,
+      "duration": 2.8,
+      "text": "playbook. So I'm going to click on"
+    },
+    {
+      "start": 868.72,
+      "duration": 3.76,
+      "text": "trigger option now and this will fetch"
+    },
+    {
+      "start": 870.56,
+      "duration": 4.2,
+      "text": "the IP address from the Terapform stack"
+    },
+    {
+      "start": 872.48,
+      "duration": 4.719,
+      "text": "and use it in the Ansible stack"
+    },
+    {
+      "start": 874.76,
+      "duration": 3.96,
+      "text": "here. After waiting for some time you"
+    },
+    {
+      "start": 877.199,
+      "duration": 3.681,
+      "text": "can see the playbook has ran and it"
+    },
+    {
+      "start": 878.72,
+      "duration": 4.16,
+      "text": "gives an output saying okay equal to 6"
+    },
+    {
+      "start": 880.88,
+      "duration": 4.56,
+      "text": "change equal to three unreachable 0 fail"
+    },
+    {
+      "start": 882.88,
+      "duration": 4.56,
+      "text": "zero ignore zero etc etc. So now to"
+    },
+    {
+      "start": 885.44,
+      "duration": 3.92,
+      "text": "confirm this I'm going to copy the IP"
+    },
+    {
+      "start": 887.44,
+      "duration": 3.199,
+      "text": "address and open a new tab. If"
+    },
+    {
+      "start": 889.36,
+      "duration": 3.12,
+      "text": "everything has worked properly and"
+    },
+    {
+      "start": 890.639,
+      "duration": 4.0,
+      "text": "spacelift has integrated terapform with"
+    },
+    {
+      "start": 892.48,
+      "duration": 3.919,
+      "text": "anible, it should create this EC2"
+    },
+    {
+      "start": 894.639,
+      "duration": 3.841,
+      "text": "instance and also run the playbook to"
+    },
+    {
+      "start": 896.399,
+      "duration": 4.24,
+      "text": "install Apache web server and show a"
+    },
+    {
+      "start": 898.48,
+      "duration": 5.039,
+      "text": "message which we want which is hello"
+    },
+    {
+      "start": 900.639,
+      "duration": 4.56,
+      "text": "from anible deployed on spacelift which"
+    },
+    {
+      "start": 903.519,
+      "duration": 4.081,
+      "text": "means spacelift has successfully"
+    },
+    {
+      "start": 905.199,
+      "duration": 4.241,
+      "text": "integrated terraform and anible the two"
+    },
+    {
+      "start": 907.6,
+      "duration": 3.039,
+      "text": "powerful infrastructure as code tool."
+    },
+    {
+      "start": 909.44,
+      "duration": 2.88,
+      "text": "Along with this, if you want to know"
+    },
+    {
+      "start": 910.639,
+      "duration": 3.2,
+      "text": "more about your stacks, as I told you,"
+    },
+    {
+      "start": 912.32,
+      "duration": 3.199,
+      "text": "you can check out the metrics page here"
+    },
+    {
+      "start": 913.839,
+      "duration": 3.68,
+      "text": "and get more information about how many"
+    },
+    {
+      "start": 915.519,
+      "duration": 4.56,
+      "text": "resources are created, what stacks have"
+    },
+    {
+      "start": 917.519,
+      "duration": 4.081,
+      "text": "been successfully completed, not etc."
+    },
+    {
+      "start": 920.079,
+      "duration": 4.2,
+      "text": "And you get more features when you get"
+    },
+    {
+      "start": 921.6,
+      "duration": 5.44,
+      "text": "the enterprise or business plan on"
+    },
+    {
+      "start": 924.279,
+      "duration": 4.92,
+      "text": "spacelift. All right, so this was our"
+    },
+    {
+      "start": 927.04,
+      "duration": 4.239,
+      "text": "video. I hope you have now learned how"
+    },
+    {
+      "start": 929.199,
+      "duration": 4.721,
+      "text": "to use spacelift to integrate terraform"
+    },
+    {
+      "start": 931.279,
+      "duration": 4.481,
+      "text": "with anible and use them together. If"
+    },
+    {
+      "start": 933.92,
+      "duration": 3.599,
+      "text": "you have any questions, any doubt, do"
+    },
+    {
+      "start": 935.76,
+      "duration": 3.759,
+      "text": "let me know in the comment section. And"
+    },
+    {
+      "start": 937.519,
+      "duration": 4.401,
+      "text": "do check out Spacelift. The link is a"
+    },
+    {
+      "start": 939.519,
+      "duration": 2.401,
+      "text": "description."
+    }
+  ]
+}

@@ -1,0 +1,2481 @@
+{
+  "video": {
+    "id": "gTLsHwk0e2Y",
+    "title": "How much Database Knowledge is needed for a DevOps Engineer | Databases for DevOps!",
+    "url": "https://www.youtube.com/watch?v=gTLsHwk0e2Y",
+    "duration": 980,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 3.0,
+      "text": "In this video, I will explain you"
+    },
+    {
+      "start": 1.72,
+      "duration": 3.84,
+      "text": "everything you need to know about"
+    },
+    {
+      "start": 3.0,
+      "duration": 3.92,
+      "text": "databases as a DevOps engineer. We will"
+    },
+    {
+      "start": 5.56,
+      "duration": 3.6,
+      "text": "start by understanding what is a"
+    },
+    {
+      "start": 6.92,
+      "duration": 3.76,
+      "text": "database and how do we actually use it."
+    },
+    {
+      "start": 9.16,
+      "duration": 3.2,
+      "text": "What are different types of databases,"
+    },
+    {
+      "start": 10.68,
+      "duration": 4.16,
+      "text": "when to use them, what are different"
+    },
+    {
+      "start": 12.36,
+      "duration": 3.68,
+      "text": "database concepts, and lot more. So, if"
+    },
+    {
+      "start": 14.84,
+      "duration": 3.04,
+      "text": "you want to understand databases"
+    },
+    {
+      "start": 16.04,
+      "duration": 3.36,
+      "text": "properly, make sure to watch this video"
+    },
+    {
+      "start": 17.88,
+      "duration": 3.32,
+      "text": "till the end. And if you are new to"
+    },
+    {
+      "start": 19.4,
+      "duration": 3.64,
+      "text": "Cloud Champ, make sure to subscribe."
+    },
+    {
+      "start": 21.2,
+      "duration": 3.64,
+      "text": "Most of you watch the video, but why not"
+    },
+    {
+      "start": 23.04,
+      "duration": 4.04,
+      "text": "subscribe? So, please subscribe and"
+    },
+    {
+      "start": 24.84,
+      "duration": 4.28,
+      "text": "let's start with the video. All right,"
+    },
+    {
+      "start": 27.08,
+      "duration": 4.36,
+      "text": "let's begin by understanding what is a"
+    },
+    {
+      "start": 29.12,
+      "duration": 4.52,
+      "text": "database. We all know database is a very"
+    },
+    {
+      "start": 31.44,
+      "duration": 3.76,
+      "text": "important component in an application,"
+    },
+    {
+      "start": 33.64,
+      "duration": 3.88,
+      "text": "but to give you some definition,"
+    },
+    {
+      "start": 35.2,
+      "duration": 4.56,
+      "text": "database is a structured way to store,"
+    },
+    {
+      "start": 37.52,
+      "duration": 4.0,
+      "text": "retrieve, and manage data. Consider you"
+    },
+    {
+      "start": 39.76,
+      "duration": 3.84,
+      "text": "have an application and the user is"
+    },
+    {
+      "start": 41.52,
+      "duration": 4.72,
+      "text": "entering some data in the application,"
+    },
+    {
+      "start": 43.6,
+      "duration": 4.28,
+      "text": "which goes and stored inside a database."
+    },
+    {
+      "start": 46.24,
+      "duration": 3.64,
+      "text": "So, a database could be used to store"
+    },
+    {
+      "start": 47.88,
+      "duration": 3.28,
+      "text": "user information such as login details,"
+    },
+    {
+      "start": 49.88,
+      "duration": 3.16,
+      "text": "or it could also be used to store"
+    },
+    {
+      "start": 51.16,
+      "duration": 4.32,
+      "text": "application information. So, in the"
+    },
+    {
+      "start": 53.04,
+      "duration": 4.32,
+      "text": "definition here in DevOps, databases are"
+    },
+    {
+      "start": 55.48,
+      "duration": 4.72,
+      "text": "essentially for storing everything from"
+    },
+    {
+      "start": 57.36,
+      "duration": 4.84,
+      "text": "user data and application states to log"
+    },
+    {
+      "start": 60.2,
+      "duration": 3.999,
+      "text": "and metrics. To give you some example,"
+    },
+    {
+      "start": 62.2,
+      "duration": 4.0,
+      "text": "you can see a banking application could"
+    },
+    {
+      "start": 64.199,
+      "duration": 3.721,
+      "text": "store information or their data in a"
+    },
+    {
+      "start": 66.2,
+      "duration": 4.72,
+      "text": "database this way, where they have"
+    },
+    {
+      "start": 67.92,
+      "duration": 5.64,
+      "text": "account ID, account type, amount, date,"
+    },
+    {
+      "start": 70.92,
+      "duration": 5.04,
+      "text": "etc. Similarly, an online application"
+    },
+    {
+      "start": 73.56,
+      "duration": 5.08,
+      "text": "such as Amazon would store the data of"
+    },
+    {
+      "start": 75.96,
+      "duration": 4.28,
+      "text": "their products using this format. So,"
+    },
+    {
+      "start": 78.64,
+      "duration": 3.72,
+      "text": "here they have the product ID, name,"
+    },
+    {
+      "start": 80.24,
+      "duration": 3.32,
+      "text": "description, price, etc. Or if you are"
+    },
+    {
+      "start": 82.36,
+      "duration": 2.76,
+      "text": "storing application data in the"
+    },
+    {
+      "start": 83.56,
+      "duration": 3.12,
+      "text": "database, it could be in the key-value"
+    },
+    {
+      "start": 85.12,
+      "duration": 4.08,
+      "text": "pair. So, here we have different types"
+    },
+    {
+      "start": 86.68,
+      "duration": 4.04,
+      "text": "of data inserted inside a database. For"
+    },
+    {
+      "start": 89.2,
+      "duration": 3.2,
+      "text": "different data, we need different"
+    },
+    {
+      "start": 90.72,
+      "duration": 4.6,
+      "text": "databases. So, different types of"
+    },
+    {
+      "start": 92.4,
+      "duration": 5.72,
+      "text": "databases include two primary types, the"
+    },
+    {
+      "start": 95.32,
+      "duration": 4.72,
+      "text": "SQL or structured query language and"
+    },
+    {
+      "start": 98.12,
+      "duration": 3.8,
+      "text": "NoSQL, which stands for not only"
+    },
+    {
+      "start": 100.04,
+      "duration": 4.52,
+      "text": "structured query language. Let's try to"
+    },
+    {
+      "start": 101.92,
+      "duration": 5.24,
+      "text": "understand the SQL part first. Let's"
+    },
+    {
+      "start": 104.56,
+      "duration": 4.28,
+      "text": "focus on SQL first. SQL stands for"
+    },
+    {
+      "start": 107.16,
+      "duration": 3.6,
+      "text": "structured query language, which is a"
+    },
+    {
+      "start": 108.84,
+      "duration": 4.6,
+      "text": "programming language to store and manage"
+    },
+    {
+      "start": 110.76,
+      "duration": 4.2,
+      "text": "data inside a relational database. So,"
+    },
+    {
+      "start": 113.44,
+      "duration": 3.8,
+      "text": "SQL is also known as relational"
+    },
+    {
+      "start": 114.96,
+      "duration": 4.0,
+      "text": "database, whereas NoSQL is also known as"
+    },
+    {
+      "start": 117.24,
+      "duration": 4.16,
+      "text": "non-relational database."
+    },
+    {
+      "start": 118.96,
+      "duration": 4.8,
+      "text": "Now, focusing on SQL first, SQL has"
+    },
+    {
+      "start": 121.4,
+      "duration": 5.96,
+      "text": "primarily two different types. The first"
+    },
+    {
+      "start": 123.76,
+      "duration": 6.919,
+      "text": "type is this, which is stands for OLTP"
+    },
+    {
+      "start": 127.36,
+      "duration": 6.12,
+      "text": "or online transaction processing. So,"
+    },
+    {
+      "start": 130.679,
+      "duration": 3.681,
+      "text": "OLTP. And this other type here is known"
+    },
+    {
+      "start": 133.48,
+      "duration": 1.96,
+      "text": "as"
+    },
+    {
+      "start": 134.36,
+      "duration": 3.96,
+      "text": "OLAP."
+    },
+    {
+      "start": 135.44,
+      "duration": 4.24,
+      "text": "So, online analytical processing."
+    },
+    {
+      "start": 138.32,
+      "duration": 2.76,
+      "text": "Now, all these databases are used for"
+    },
+    {
+      "start": 139.68,
+      "duration": 3.52,
+      "text": "transactional purposes, whereas"
+    },
+    {
+      "start": 141.08,
+      "duration": 3.92,
+      "text": "databases such as Redshift or Snowflake,"
+    },
+    {
+      "start": 143.2,
+      "duration": 4.4,
+      "text": "which store huge amount of data, are"
+    },
+    {
+      "start": 145.0,
+      "duration": 5.2,
+      "text": "used for analysis purposes. If you look"
+    },
+    {
+      "start": 147.6,
+      "duration": 5.08,
+      "text": "into the document by Snowflake, you can"
+    },
+    {
+      "start": 150.2,
+      "duration": 5.4,
+      "text": "see here the difference between OLAP and"
+    },
+    {
+      "start": 152.68,
+      "duration": 5.44,
+      "text": "OLTP is that OLAP is used for complex"
+    },
+    {
+      "start": 155.6,
+      "duration": 4.04,
+      "text": "data analysis, while OLTP is used for"
+    },
+    {
+      "start": 158.12,
+      "duration": 3.56,
+      "text": "real-time processing of online"
+    },
+    {
+      "start": 159.64,
+      "duration": 3.28,
+      "text": "transaction at scale. So, whenever you"
+    },
+    {
+      "start": 161.68,
+      "duration": 2.96,
+      "text": "have a requirement where you need to"
+    },
+    {
+      "start": 162.92,
+      "duration": 3.76,
+      "text": "analyze some data, you might be using"
+    },
+    {
+      "start": 164.64,
+      "duration": 3.92,
+      "text": "OLAP databases such as Snowflake,"
+    },
+    {
+      "start": 166.68,
+      "duration": 3.68,
+      "text": "Redshift, etc. Where you have"
+    },
+    {
+      "start": 168.56,
+      "duration": 3.6,
+      "text": "requirement to do online transaction"
+    },
+    {
+      "start": 170.36,
+      "duration": 3.599,
+      "text": "processing, if you're storing uh"
+    },
+    {
+      "start": 172.16,
+      "duration": 3.28,
+      "text": "transactional data, you would be using"
+    },
+    {
+      "start": 173.959,
+      "duration": 2.681,
+      "text": "OLTP."
+    },
+    {
+      "start": 175.44,
+      "duration": 2.56,
+      "text": "As a DevOps engineer, you might be"
+    },
+    {
+      "start": 176.64,
+      "duration": 3.28,
+      "text": "working on both of these different"
+    },
+    {
+      "start": 178.0,
+      "duration": 3.8,
+      "text": "databases types. So, it is important for"
+    },
+    {
+      "start": 179.92,
+      "duration": 4.16,
+      "text": "you to have knowledge. Let's begin by"
+    },
+    {
+      "start": 181.8,
+      "duration": 4.439,
+      "text": "understanding OLTP or online transaction"
+    },
+    {
+      "start": 184.08,
+      "duration": 3.92,
+      "text": "processing databases. So, we have"
+    },
+    {
+      "start": 186.239,
+      "duration": 5.481,
+      "text": "different databases here like SQL"
+    },
+    {
+      "start": 188.0,
+      "duration": 6.92,
+      "text": "Server, Oracle DB, IBM DB2, MySQL,"
+    },
+    {
+      "start": 191.72,
+      "duration": 5.4,
+      "text": "PostgreSQL, MariaDB, SQLite, and more."
+    },
+    {
+      "start": 194.92,
+      "duration": 5.24,
+      "text": "So, here SQL Server, Oracle Server, and"
+    },
+    {
+      "start": 197.12,
+      "duration": 4.839,
+      "text": "IMDB are three enterprise databases that"
+    },
+    {
+      "start": 200.16,
+      "duration": 3.88,
+      "text": "are used by enterprise companies."
+    },
+    {
+      "start": 201.959,
+      "duration": 4.041,
+      "text": "Whereas, MySQL and PostgreSQL here are"
+    },
+    {
+      "start": 204.04,
+      "duration": 3.08,
+      "text": "open source databases."
+    },
+    {
+      "start": 206.0,
+      "duration": 2.72,
+      "text": "If you are thinking of learning"
+    },
+    {
+      "start": 207.12,
+      "duration": 3.88,
+      "text": "databases, you should always start with"
+    },
+    {
+      "start": 208.72,
+      "duration": 3.96,
+      "text": "either MySQL or PostgreSQL because these"
+    },
+    {
+      "start": 211.0,
+      "duration": 3.48,
+      "text": "are the very common ones that we use in"
+    },
+    {
+      "start": 212.68,
+      "duration": 4.12,
+      "text": "DevOps. I would recommend you starting"
+    },
+    {
+      "start": 214.48,
+      "duration": 4.479,
+      "text": "with PostgreSQL database. PostgreSQL is"
+    },
+    {
+      "start": 216.8,
+      "duration": 3.6,
+      "text": "a very powerful open source relational"
+    },
+    {
+      "start": 218.959,
+      "duration": 3.401,
+      "text": "database that is used by many"
+    },
+    {
+      "start": 220.4,
+      "duration": 3.68,
+      "text": "applications to store all kinds of data,"
+    },
+    {
+      "start": 222.36,
+      "duration": 3.599,
+      "text": "which could be login data,"
+    },
+    {
+      "start": 224.08,
+      "duration": 3.24,
+      "text": "transactional data, and lot, lot more. I"
+    },
+    {
+      "start": 225.959,
+      "duration": 2.761,
+      "text": "would recommend you starting out with"
+    },
+    {
+      "start": 227.32,
+      "duration": 3.52,
+      "text": "PostgreSQL, installing it on your"
+    },
+    {
+      "start": 228.72,
+      "duration": 4.8,
+      "text": "server, setting up database, creating"
+    },
+    {
+      "start": 230.84,
+      "duration": 4.32,
+      "text": "tables, adding data, and lot more."
+    },
+    {
+      "start": 233.52,
+      "duration": 3.36,
+      "text": "So, if you want to see an example of how"
+    },
+    {
+      "start": 235.16,
+      "duration": 3.84,
+      "text": "data is stored inside a relational"
+    },
+    {
+      "start": 236.88,
+      "duration": 3.76,
+      "text": "database, this is what it looks like."
+    },
+    {
+      "start": 239.0,
+      "duration": 3.76,
+      "text": "So, you have rows and columns and you"
+    },
+    {
+      "start": 240.64,
+      "duration": 4.56,
+      "text": "use SQL query language to manage data"
+    },
+    {
+      "start": 242.76,
+      "duration": 4.04,
+      "text": "inside this. In SQL database, the schema"
+    },
+    {
+      "start": 245.2,
+      "duration": 3.24,
+      "text": "is fixed and you have to follow a"
+    },
+    {
+      "start": 246.8,
+      "duration": 3.84,
+      "text": "pattern where you add information like"
+    },
+    {
+      "start": 248.44,
+      "duration": 3.16,
+      "text": "this. Most of you might have a question,"
+    },
+    {
+      "start": 250.64,
+      "duration": 3.319,
+      "text": "what is the difference between a"
+    },
+    {
+      "start": 251.6,
+      "duration": 4.32,
+      "text": "database and a spreadsheet? You can also"
+    },
+    {
+      "start": 253.959,
+      "duration": 4.041,
+      "text": "input the same data inside an Excel"
+    },
+    {
+      "start": 255.92,
+      "duration": 3.72,
+      "text": "sheet and it will work the same, which"
+    },
+    {
+      "start": 258.0,
+      "duration": 3.239,
+      "text": "is actually true. But, when using"
+    },
+    {
+      "start": 259.64,
+      "duration": 3.96,
+      "text": "databases you can actually query the"
+    },
+    {
+      "start": 261.239,
+      "duration": 4.281,
+      "text": "data to find what you want. For example,"
+    },
+    {
+      "start": 263.6,
+      "duration": 3.52,
+      "text": "if you are using spreadsheet for just 10"
+    },
+    {
+      "start": 265.52,
+      "duration": 3.16,
+      "text": "records, that's okay. But, if you have"
+    },
+    {
+      "start": 267.12,
+      "duration": 3.08,
+      "text": "thousands of records and you want to"
+    },
+    {
+      "start": 268.68,
+      "duration": 3.28,
+      "text": "search something, it is going to be very"
+    },
+    {
+      "start": 270.2,
+      "duration": 3.76,
+      "text": "difficult. While using databases, you"
+    },
+    {
+      "start": 271.96,
+      "duration": 3.72,
+      "text": "can run query and fetch the data exactly"
+    },
+    {
+      "start": 273.96,
+      "duration": 3.76,
+      "text": "what you want. For example, if you want"
+    },
+    {
+      "start": 275.68,
+      "duration": 4.36,
+      "text": "to find out the employee who started at"
+    },
+    {
+      "start": 277.72,
+      "duration": 4.199,
+      "text": "this particular time, what is it what is"
+    },
+    {
+      "start": 280.04,
+      "duration": 3.879,
+      "text": "the ID and so on, you can easily do that"
+    },
+    {
+      "start": 281.919,
+      "duration": 3.561,
+      "text": "by running queries. I will explain you"
+    },
+    {
+      "start": 283.919,
+      "duration": 3.921,
+      "text": "what queries are and also how do"
+    },
+    {
+      "start": 285.48,
+      "duration": 4.0,
+      "text": "actually work in this video."
+    },
+    {
+      "start": 287.84,
+      "duration": 5.32,
+      "text": "Now, let's talk about non-relational"
+    },
+    {
+      "start": 289.48,
+      "duration": 6.52,
+      "text": "databases, that for no SQL. This no SQL"
+    },
+    {
+      "start": 293.16,
+      "duration": 5.12,
+      "text": "is not only SQL. So, along with SQL it"
+    },
+    {
+      "start": 296.0,
+      "duration": 3.919,
+      "text": "provides you with more features. Now, in"
+    },
+    {
+      "start": 298.28,
+      "duration": 3.72,
+      "text": "no SQL databases there are different"
+    },
+    {
+      "start": 299.919,
+      "duration": 3.961,
+      "text": "types, which includes document"
+    },
+    {
+      "start": 302.0,
+      "duration": 3.88,
+      "text": "databases, key-value databases, column"
+    },
+    {
+      "start": 303.88,
+      "duration": 3.96,
+      "text": "family databases, graph databases, time"
+    },
+    {
+      "start": 305.88,
+      "duration": 4.039,
+      "text": "series databases, and there are lot lot"
+    },
+    {
+      "start": 307.84,
+      "duration": 4.48,
+      "text": "more. So, if you want to know the"
+    },
+    {
+      "start": 309.919,
+      "duration": 4.521,
+      "text": "popular databases I've noted down here."
+    },
+    {
+      "start": 312.32,
+      "duration": 4.56,
+      "text": "In the document databases, you have the"
+    },
+    {
+      "start": 314.44,
+      "duration": 4.36,
+      "text": "popular ones which include MongoDB and"
+    },
+    {
+      "start": 316.88,
+      "duration": 4.0,
+      "text": "AWS alternative for it, which is AWS"
+    },
+    {
+      "start": 318.8,
+      "duration": 4.32,
+      "text": "DocumentDB. If you are going to start"
+    },
+    {
+      "start": 320.88,
+      "duration": 4.44,
+      "text": "out, always MongoDB. MongoDB is a very"
+    },
+    {
+      "start": 323.12,
+      "duration": 4.28,
+      "text": "popular option and they have free"
+    },
+    {
+      "start": 325.32,
+      "duration": 4.64,
+      "text": "option, also enterprise option. You can"
+    },
+    {
+      "start": 327.4,
+      "duration": 4.8,
+      "text": "easily install MongoDB on your servers"
+    },
+    {
+      "start": 329.96,
+      "duration": 4.56,
+      "text": "and start working on it."
+    },
+    {
+      "start": 332.2,
+      "duration": 3.8,
+      "text": "Next is key-value pair. AWS has a very"
+    },
+    {
+      "start": 334.52,
+      "duration": 4.44,
+      "text": "popular key-value database, which is"
+    },
+    {
+      "start": 336.0,
+      "duration": 4.919,
+      "text": "DynamoDB. Again, a very popular no SQL"
+    },
+    {
+      "start": 338.96,
+      "duration": 3.56,
+      "text": "database, which is also serverless,"
+    },
+    {
+      "start": 340.919,
+      "duration": 2.921,
+      "text": "highly scalable. So, if you have"
+    },
+    {
+      "start": 342.52,
+      "duration": 3.04,
+      "text": "applications that needs to handle"
+    },
+    {
+      "start": 343.84,
+      "duration": 2.8,
+      "text": "millions of traffic, DynamoDB is the"
+    },
+    {
+      "start": 345.56,
+      "duration": 2.52,
+      "text": "answer for you."
+    },
+    {
+      "start": 346.64,
+      "duration": 3.84,
+      "text": "Similarly, you also have in-memory"
+    },
+    {
+      "start": 348.08,
+      "duration": 4.68,
+      "text": "databases here like Redis and Memcached."
+    },
+    {
+      "start": 350.48,
+      "duration": 4.04,
+      "text": "So, in-memory databases are usually"
+    },
+    {
+      "start": 352.76,
+      "duration": 3.96,
+      "text": "inserted before a database as a"
+    },
+    {
+      "start": 354.52,
+      "duration": 4.08,
+      "text": "middleman to get the data to the end"
+    },
+    {
+      "start": 356.72,
+      "duration": 3.84,
+      "text": "users very quickly. If you are using"
+    },
+    {
+      "start": 358.6,
+      "duration": 3.32,
+      "text": "Redis, Redis will stay somewhere here"
+    },
+    {
+      "start": 360.56,
+      "duration": 3.12,
+      "text": "and rather than users getting the"
+    },
+    {
+      "start": 361.92,
+      "duration": 3.6,
+      "text": "information directly from the database,"
+    },
+    {
+      "start": 363.68,
+      "duration": 4.04,
+      "text": "they will get the information from the"
+    },
+    {
+      "start": 365.52,
+      "duration": 3.72,
+      "text": "Redis and Redis is going to cache the"
+    },
+    {
+      "start": 367.72,
+      "duration": 3.56,
+      "text": "frequently accessed data from the"
+    },
+    {
+      "start": 369.24,
+      "duration": 3.88,
+      "text": "database. This way, the load is not"
+    },
+    {
+      "start": 371.28,
+      "duration": 4.04,
+      "text": "directly on the database. So, this is an"
+    },
+    {
+      "start": 373.12,
+      "duration": 3.96,
+      "text": "example of in-memory database used for"
+    },
+    {
+      "start": 375.32,
+      "duration": 4.24,
+      "text": "caching. And the very popular option is"
+    },
+    {
+      "start": 377.08,
+      "duration": 4.36,
+      "text": "Redis. So, I have included Redis here."
+    },
+    {
+      "start": 379.56,
+      "duration": 2.88,
+      "text": "Similarly, you have other databases as"
+    },
+    {
+      "start": 381.44,
+      "duration": 2.4,
+      "text": "well."
+    },
+    {
+      "start": 382.44,
+      "duration": 3.6,
+      "text": "Once you understand the different types"
+    },
+    {
+      "start": 383.84,
+      "duration": 4.0,
+      "text": "of databases, to actually work on them"
+    },
+    {
+      "start": 386.04,
+      "duration": 4.08,
+      "text": "and to manage data inside it, you will"
+    },
+    {
+      "start": 387.84,
+      "duration": 4.24,
+      "text": "need to learn the queries. So, what are"
+    },
+    {
+      "start": 390.12,
+      "duration": 4.0,
+      "text": "queries? Query in a database is a"
+    },
+    {
+      "start": 392.08,
+      "duration": 4.04,
+      "text": "request for information or an operation"
+    },
+    {
+      "start": 394.12,
+      "duration": 3.52,
+      "text": "on the data stored in the database. So,"
+    },
+    {
+      "start": 396.12,
+      "duration": 3.24,
+      "text": "if you want to create a new table in the"
+    },
+    {
+      "start": 397.64,
+      "duration": 3.24,
+      "text": "database, or if you want to insert some"
+    },
+    {
+      "start": 399.36,
+      "duration": 3.2,
+      "text": "data, you want to find something, you"
+    },
+    {
+      "start": 400.88,
+      "duration": 4.039,
+      "text": "want to delete the table, you will need"
+    },
+    {
+      "start": 402.56,
+      "duration": 4.28,
+      "text": "to run a query. Typically, a query is"
+    },
+    {
+      "start": 404.919,
+      "duration": 3.721,
+      "text": "written in an SQL language for"
+    },
+    {
+      "start": 406.84,
+      "duration": 3.6,
+      "text": "relational databases. So, I have some"
+    },
+    {
+      "start": 408.64,
+      "duration": 3.52,
+      "text": "examples here. So, here is a select"
+    },
+    {
+      "start": 410.44,
+      "duration": 4.2,
+      "text": "query to get something from the"
+    },
+    {
+      "start": 412.16,
+      "duration": 5.36,
+      "text": "database. So, we are saying select the"
+    },
+    {
+      "start": 414.64,
+      "duration": 6.0,
+      "text": "name department from the employee table"
+    },
+    {
+      "start": 417.52,
+      "duration": 4.64,
+      "text": "where the value of department is sales."
+    },
+    {
+      "start": 420.64,
+      "duration": 3.32,
+      "text": "You also have an insert query here to"
+    },
+    {
+      "start": 422.16,
+      "duration": 4.04,
+      "text": "insert data inside a table. So, you're"
+    },
+    {
+      "start": 423.96,
+      "duration": 4.36,
+      "text": "saying insert into employee table all"
+    },
+    {
+      "start": 426.2,
+      "duration": 4.32,
+      "text": "this information for Jane Doe, marketing"
+    },
+    {
+      "start": 428.32,
+      "duration": 3.8,
+      "text": "and this salary."
+    },
+    {
+      "start": 430.52,
+      "duration": 3.72,
+      "text": "Similarly, for a NoSQL database like a"
+    },
+    {
+      "start": 432.12,
+      "duration": 4.52,
+      "text": "MongoDB, you will run the query in this"
+    },
+    {
+      "start": 434.24,
+      "duration": 4.4,
+      "text": "format where you have database employees"
+    },
+    {
+      "start": 436.64,
+      "duration": 3.8,
+      "text": "find from this particular"
+    },
+    {
+      "start": 438.64,
+      "duration": 3.6,
+      "text": "uh database. On this channel, there are"
+    },
+    {
+      "start": 440.44,
+      "duration": 3.479,
+      "text": "many projects which uses databases."
+    },
+    {
+      "start": 442.24,
+      "duration": 3.48,
+      "text": "There's also a microservices project"
+    },
+    {
+      "start": 443.919,
+      "duration": 4.121,
+      "text": "which uses PostgreSQL along with"
+    },
+    {
+      "start": 445.72,
+      "duration": 4.32,
+      "text": "MongoDB. PostgreSQL is used to store the"
+    },
+    {
+      "start": 448.04,
+      "duration": 4.08,
+      "text": "login information. The MongoDB is used"
+    },
+    {
+      "start": 450.04,
+      "duration": 3.64,
+      "text": "to store the videos and the audios. So,"
+    },
+    {
+      "start": 452.12,
+      "duration": 3.32,
+      "text": "if you want to learn databases, make"
+    },
+    {
+      "start": 453.68,
+      "duration": 3.68,
+      "text": "sure to check out the microservices"
+    },
+    {
+      "start": 455.44,
+      "duration": 3.84,
+      "text": "application project to convert video"
+    },
+    {
+      "start": 457.36,
+      "duration": 4.36,
+      "text": "into audio where I have used Python"
+    },
+    {
+      "start": 459.28,
+      "duration": 3.92,
+      "text": "along with PostgreSQL and MongoDB. Now,"
+    },
+    {
+      "start": 461.72,
+      "duration": 3.32,
+      "text": "to give you some more example, I'm going"
+    },
+    {
+      "start": 463.2,
+      "duration": 5.56,
+      "text": "to be showing you how queries actually"
+    },
+    {
+      "start": 465.04,
+      "duration": 5.32,
+      "text": "work. I have MongoDB installed on my EC2"
+    },
+    {
+      "start": 468.76,
+      "duration": 4.76,
+      "text": "instance, and I'm going to be running"
+    },
+    {
+      "start": 470.36,
+      "duration": 5.48,
+      "text": "queries to show you how to manage data"
+    },
+    {
+      "start": 473.52,
+      "duration": 3.96,
+      "text": "inside a database. So, I'm here on my"
+    },
+    {
+      "start": 475.84,
+      "duration": 4.32,
+      "text": "EC2 instance, and I have installed"
+    },
+    {
+      "start": 477.48,
+      "duration": 4.8,
+      "text": "PostgreSQL database on it. You can also"
+    },
+    {
+      "start": 480.16,
+      "duration": 3.28,
+      "text": "see I'm connected to Postgres. To show"
+    },
+    {
+      "start": 482.28,
+      "duration": 2.76,
+      "text": "you an example, we are going to be"
+    },
+    {
+      "start": 483.44,
+      "duration": 3.84,
+      "text": "creating a database for a banking"
+    },
+    {
+      "start": 485.04,
+      "duration": 4.16,
+      "text": "application and insert some data by"
+    },
+    {
+      "start": 487.28,
+      "duration": 3.96,
+      "text": "running queries. This demo will help you"
+    },
+    {
+      "start": 489.2,
+      "duration": 4.64,
+      "text": "understand how queries actually work and"
+    },
+    {
+      "start": 491.24,
+      "duration": 4.32,
+      "text": "how to manage data inside a database."
+    },
+    {
+      "start": 493.84,
+      "duration": 3.04,
+      "text": "For this example, I'm using Postgres."
+    },
+    {
+      "start": 495.56,
+      "duration": 3.6,
+      "text": "You can also do the same thing by"
+    },
+    {
+      "start": 496.88,
+      "duration": 4.32,
+      "text": "running queries for a MongoDB database"
+    },
+    {
+      "start": 499.16,
+      "duration": 4.0,
+      "text": "or any other database. The queries might"
+    },
+    {
+      "start": 501.2,
+      "duration": 2.92,
+      "text": "be different, but the idea is the same."
+    },
+    {
+      "start": 503.16,
+      "duration": 2.68,
+      "text": "So, let's go ahead and create a"
+    },
+    {
+      "start": 504.12,
+      "duration": 3.72,
+      "text": "database. Now, to see existing"
+    },
+    {
+      "start": 505.84,
+      "duration": 3.72,
+      "text": "databases, you will run backslash L,"
+    },
+    {
+      "start": 507.84,
+      "duration": 3.52,
+      "text": "which is to list down all the databases"
+    },
+    {
+      "start": 509.56,
+      "duration": 4.039,
+      "text": "you have. These are all the default"
+    },
+    {
+      "start": 511.36,
+      "duration": 3.559,
+      "text": "databases, so let's create a new one. As"
+    },
+    {
+      "start": 513.599,
+      "duration": 3.44,
+      "text": "I told you, we are going to be doing it"
+    },
+    {
+      "start": 514.919,
+      "duration": 4.281,
+      "text": "for a banking application, so we run the"
+    },
+    {
+      "start": 517.039,
+      "duration": 5.0,
+      "text": "queries for it. Here, I'm saying create"
+    },
+    {
+      "start": 519.2,
+      "duration": 4.32,
+      "text": "a database with the name banking app."
+    },
+    {
+      "start": 522.039,
+      "duration": 3.481,
+      "text": "Backslash L, and you can see banking"
+    },
+    {
+      "start": 523.52,
+      "duration": 3.56,
+      "text": "application is created."
+    },
+    {
+      "start": 525.52,
+      "duration": 3.0,
+      "text": "Next, let's go and connect to this"
+    },
+    {
+      "start": 527.08,
+      "duration": 4.2,
+      "text": "banking app. To connect to it, you will"
+    },
+    {
+      "start": 528.52,
+      "duration": 4.68,
+      "text": "say backslash C and the name of the"
+    },
+    {
+      "start": 531.28,
+      "duration": 3.52,
+      "text": "database, which is banking app."
+    },
+    {
+      "start": 533.2,
+      "duration": 3.96,
+      "text": "It says you're now connected to a"
+    },
+    {
+      "start": 534.8,
+      "duration": 4.039,
+      "text": "database banking app as a user Postgres."
+    },
+    {
+      "start": 537.16,
+      "duration": 3.8,
+      "text": "Alternatively, you can also create new"
+    },
+    {
+      "start": 538.839,
+      "duration": 3.441,
+      "text": "users, grant them permissions,"
+    },
+    {
+      "start": 540.96,
+      "duration": 3.16,
+      "text": "provide them passwords, so you can"
+    },
+    {
+      "start": 542.28,
+      "duration": 3.32,
+      "text": "connect to that database from a"
+    },
+    {
+      "start": 544.12,
+      "duration": 5.0,
+      "text": "different location, maybe I'm from"
+    },
+    {
+      "start": 545.6,
+      "duration": 4.72,
+      "text": "another server or from your application."
+    },
+    {
+      "start": 549.12,
+      "duration": 2.76,
+      "text": "So, I'm going to be creating a table"
+    },
+    {
+      "start": 550.32,
+      "duration": 4.64,
+      "text": "inside this. Let's create a table with"
+    },
+    {
+      "start": 551.88,
+      "duration": 5.0,
+      "text": "the name customers and also a table with"
+    },
+    {
+      "start": 554.96,
+      "duration": 3.08,
+      "text": "the name accounts."
+    },
+    {
+      "start": 556.88,
+      "duration": 3.12,
+      "text": "So, we are going to be creating a table"
+    },
+    {
+      "start": 558.04,
+      "duration": 3.36,
+      "text": "with the name customers that will insert"
+    },
+    {
+      "start": 560.0,
+      "duration": 3.2,
+      "text": "the data like customer ID, first name,"
+    },
+    {
+      "start": 561.4,
+      "duration": 3.6,
+      "text": "last name, email, phone number, and then"
+    },
+    {
+      "start": 563.2,
+      "duration": 3.96,
+      "text": "was it created. Once I do this, the"
+    },
+    {
+      "start": 565.0,
+      "duration": 3.2,
+      "text": "table is created. I will do the same for"
+    },
+    {
+      "start": 567.16,
+      "duration": 2.52,
+      "text": "accounts."
+    },
+    {
+      "start": 568.2,
+      "duration": 4.0,
+      "text": "So, this is how you create a table"
+    },
+    {
+      "start": 569.68,
+      "duration": 4.08,
+      "text": "inside a database. Inside this table, we"
+    },
+    {
+      "start": 572.2,
+      "duration": 3.0,
+      "text": "are going to be inserting some data. So,"
+    },
+    {
+      "start": 573.76,
+      "duration": 3.0,
+      "text": "I'm inserting some random data inside"
+    },
+    {
+      "start": 575.2,
+      "duration": 2.8,
+      "text": "the customer database"
+    },
+    {
+      "start": 576.76,
+      "duration": 3.64,
+      "text": "table"
+    },
+    {
+      "start": 578.0,
+      "duration": 4.32,
+      "text": "and then also in the accounts table. So"
+    },
+    {
+      "start": 580.4,
+      "duration": 3.96,
+      "text": "here we can see data is inserted when"
+    },
+    {
+      "start": 582.32,
+      "duration": 4.92,
+      "text": "you get this output. Let's also do the"
+    },
+    {
+      "start": 584.36,
+      "duration": 4.88,
+      "text": "same for accounts. I'm inserting account"
+    },
+    {
+      "start": 587.24,
+      "duration": 3.44,
+      "text": "information which includes a customer"
+    },
+    {
+      "start": 589.24,
+      "duration": 3.8,
+      "text": "ID, account type, and balance. So"
+    },
+    {
+      "start": 590.68,
+      "duration": 3.84,
+      "text": "customer ID, customer ID, accounts type,"
+    },
+    {
+      "start": 593.04,
+      "duration": 2.88,
+      "text": "and balance."
+    },
+    {
+      "start": 594.52,
+      "duration": 3.52,
+      "text": "Once I do this, the data is now"
+    },
+    {
+      "start": 595.92,
+      "duration": 4.28,
+      "text": "inserted. If you want to check data"
+    },
+    {
+      "start": 598.04,
+      "duration": 4.64,
+      "text": "inside a particular table, you will use"
+    },
+    {
+      "start": 600.2,
+      "duration": 5.16,
+      "text": "a select query. So as I've explained you"
+    },
+    {
+      "start": 602.68,
+      "duration": 4.84,
+      "text": "inside the query section, we use select"
+    },
+    {
+      "start": 605.36,
+      "duration": 3.84,
+      "text": "query to retrieve data. We want to get"
+    },
+    {
+      "start": 607.52,
+      "duration": 3.24,
+      "text": "all the data that we have stored now. I"
+    },
+    {
+      "start": 609.2,
+      "duration": 3.76,
+      "text": "will say select star which means"
+    },
+    {
+      "start": 610.76,
+      "duration": 3.84,
+      "text": "everything from customers table. So this"
+    },
+    {
+      "start": 612.96,
+      "duration": 2.96,
+      "text": "is a wildcard. When you run this, you"
+    },
+    {
+      "start": 614.6,
+      "duration": 3.56,
+      "text": "get all the information. But you can"
+    },
+    {
+      "start": 615.92,
+      "duration": 4.4,
+      "text": "also specifically get information. For"
+    },
+    {
+      "start": 618.16,
+      "duration": 4.0,
+      "text": "example, you need to only get the"
+    },
+    {
+      "start": 620.32,
+      "duration": 3.68,
+      "text": "information for the person who has the"
+    },
+    {
+      "start": 622.16,
+      "duration": 3.08,
+      "text": "last name as Smith. Or maybe a person"
+    },
+    {
+      "start": 624.0,
+      "duration": 3.48,
+      "text": "who has this phone number. So you can"
+    },
+    {
+      "start": 625.24,
+      "duration": 3.8,
+      "text": "say select this this this from this"
+    },
+    {
+      "start": 627.48,
+      "duration": 3.0,
+      "text": "particular table. So you can customize"
+    },
+    {
+      "start": 629.04,
+      "duration": 2.8,
+      "text": "your query according to what data you"
+    },
+    {
+      "start": 630.48,
+      "duration": 3.36,
+      "text": "want to retrieve."
+    },
+    {
+      "start": 631.84,
+      "duration": 4.28,
+      "text": "So this is how you can use queries to"
+    },
+    {
+      "start": 633.84,
+      "duration": 3.96,
+      "text": "manage data inside a database. All"
+    },
+    {
+      "start": 636.12,
+      "duration": 3.76,
+      "text": "right. Now that you have practical"
+    },
+    {
+      "start": 637.8,
+      "duration": 4.24,
+      "text": "understanding of how to manage data in a"
+    },
+    {
+      "start": 639.88,
+      "duration": 3.92,
+      "text": "database using different queries, let's"
+    },
+    {
+      "start": 642.04,
+      "duration": 3.72,
+      "text": "understand some important database"
+    },
+    {
+      "start": 643.8,
+      "duration": 3.92,
+      "text": "concepts that you should know when"
+    },
+    {
+      "start": 645.76,
+      "duration": 3.56,
+      "text": "working on databases in production"
+    },
+    {
+      "start": 647.72,
+      "duration": 3.24,
+      "text": "environments. So there are different"
+    },
+    {
+      "start": 649.32,
+      "duration": 4.519,
+      "text": "database concepts that a DevOps engineer"
+    },
+    {
+      "start": 650.96,
+      "duration": 4.48,
+      "text": "should know starting with sharding."
+    },
+    {
+      "start": 653.839,
+      "duration": 3.321,
+      "text": "So sharding is a very popular or a very"
+    },
+    {
+      "start": 655.44,
+      "duration": 3.6,
+      "text": "common concept where you distribute a"
+    },
+    {
+      "start": 657.16,
+      "duration": 4.52,
+      "text": "large database into different"
+    },
+    {
+      "start": 659.04,
+      "duration": 4.64,
+      "text": "partitions, also known as shards. And"
+    },
+    {
+      "start": 661.68,
+      "duration": 3.96,
+      "text": "these shards or different partitions are"
+    },
+    {
+      "start": 663.68,
+      "duration": 3.72,
+      "text": "hosted on different servers. So we"
+    },
+    {
+      "start": 665.64,
+      "duration": 3.72,
+      "text": "partition data horizontally across"
+    },
+    {
+      "start": 667.4,
+      "duration": 3.88,
+      "text": "multiple databases to improve"
+    },
+    {
+      "start": 669.36,
+      "duration": 3.32,
+      "text": "performance. This way each server is"
+    },
+    {
+      "start": 671.28,
+      "duration": 3.4,
+      "text": "going to handle less data and there is"
+    },
+    {
+      "start": 672.68,
+      "duration": 4.159,
+      "text": "going to be less load on it and this"
+    },
+    {
+      "start": 674.68,
+      "duration": 4.52,
+      "text": "will improve performance. Next database"
+    },
+    {
+      "start": 676.839,
+      "duration": 4.201,
+      "text": "concept is data model which is designing"
+    },
+    {
+      "start": 679.2,
+      "duration": 4.36,
+      "text": "how do you want to put the data in the"
+    },
+    {
+      "start": 681.04,
+      "duration": 4.96,
+      "text": "database. And it includes normalization"
+    },
+    {
+      "start": 683.56,
+      "duration": 4.08,
+      "text": "and denormalization. Normalization is"
+    },
+    {
+      "start": 686.0,
+      "duration": 3.28,
+      "text": "where you have different tables to store"
+    },
+    {
+      "start": 687.64,
+      "duration": 3.36,
+      "text": "all the data. So you have different"
+    },
+    {
+      "start": 689.28,
+      "duration": 4.48,
+      "text": "tables to store data and this will help"
+    },
+    {
+      "start": 691.0,
+      "duration": 4.68,
+      "text": "you reduce duplication of data."
+    },
+    {
+      "start": 693.76,
+      "duration": 4.16,
+      "text": "Whereas, in denormalization, all the"
+    },
+    {
+      "start": 695.68,
+      "duration": 4.36,
+      "text": "data is stored inside a single table for"
+    },
+    {
+      "start": 697.92,
+      "duration": 3.76,
+      "text": "faster access. So, depending on your"
+    },
+    {
+      "start": 700.04,
+      "duration": 3.76,
+      "text": "requirement, if you want to get the data"
+    },
+    {
+      "start": 701.68,
+      "duration": 4.32,
+      "text": "faster, you might use denormalized where"
+    },
+    {
+      "start": 703.8,
+      "duration": 4.04,
+      "text": "all the data is in a single table, or if"
+    },
+    {
+      "start": 706.0,
+      "duration": 3.6,
+      "text": "you want to reduce duplication, you will"
+    },
+    {
+      "start": 707.84,
+      "duration": 4.12,
+      "text": "be using normalized data where you have"
+    },
+    {
+      "start": 709.6,
+      "duration": 4.2,
+      "text": "data in separate tables."
+    },
+    {
+      "start": 711.96,
+      "duration": 3.92,
+      "text": "Moving on, the next database concept is"
+    },
+    {
+      "start": 713.8,
+      "duration": 4.04,
+      "text": "replication. So, replication is where"
+    },
+    {
+      "start": 715.88,
+      "duration": 3.92,
+      "text": "you replicate or create a copy of your"
+    },
+    {
+      "start": 717.84,
+      "duration": 3.88,
+      "text": "database on different servers in"
+    },
+    {
+      "start": 719.8,
+      "duration": 3.72,
+      "text": "different regions. This is very common"
+    },
+    {
+      "start": 721.72,
+      "duration": 3.44,
+      "text": "in cloud infrastructure, so where you"
+    },
+    {
+      "start": 723.52,
+      "duration": 4.04,
+      "text": "have a database and you replicate that"
+    },
+    {
+      "start": 725.16,
+      "duration": 4.52,
+      "text": "database onto a different region such"
+    },
+    {
+      "start": 727.56,
+      "duration": 4.12,
+      "text": "that if this database is down, you can"
+    },
+    {
+      "start": 729.68,
+      "duration": 3.88,
+      "text": "still access your application data on"
+    },
+    {
+      "start": 731.68,
+      "duration": 3.24,
+      "text": "these servers because the data has been"
+    },
+    {
+      "start": 733.56,
+      "duration": 3.92,
+      "text": "replicated."
+    },
+    {
+      "start": 734.92,
+      "duration": 4.2,
+      "text": "Next is backup and restore. We all know"
+    },
+    {
+      "start": 737.48,
+      "duration": 3.72,
+      "text": "databases are very important and the"
+    },
+    {
+      "start": 739.12,
+      "duration": 3.8,
+      "text": "data inside it is all we need for our"
+    },
+    {
+      "start": 741.2,
+      "duration": 3.84,
+      "text": "business. So, we need to make sure that"
+    },
+    {
+      "start": 742.92,
+      "duration": 4.36,
+      "text": "we replicate the data in case if the"
+    },
+    {
+      "start": 745.04,
+      "duration": 4.4,
+      "text": "database is down, we can restore it. So,"
+    },
+    {
+      "start": 747.28,
+      "duration": 3.88,
+      "text": "we can do that using backup and restore."
+    },
+    {
+      "start": 749.44,
+      "duration": 3.52,
+      "text": "So, you take the backup or replicate all"
+    },
+    {
+      "start": 751.16,
+      "duration": 3.679,
+      "text": "the data from the database, store it"
+    },
+    {
+      "start": 752.96,
+      "duration": 4.12,
+      "text": "somewhere, in case the database is down,"
+    },
+    {
+      "start": 754.839,
+      "duration": 4.641,
+      "text": "you can restore it from that backup. And"
+    },
+    {
+      "start": 757.08,
+      "duration": 4.56,
+      "text": "we can create backups either manually or"
+    },
+    {
+      "start": 759.48,
+      "duration": 4.92,
+      "text": "also automatically by using cloud"
+    },
+    {
+      "start": 761.64,
+      "duration": 4.48,
+      "text": "features or by creating bash scripts."
+    },
+    {
+      "start": 764.4,
+      "duration": 3.48,
+      "text": "Similarly, you also want to encrypt data"
+    },
+    {
+      "start": 766.12,
+      "duration": 2.88,
+      "text": "inside the database. The data might be"
+    },
+    {
+      "start": 767.88,
+      "duration": 3.04,
+      "text": "very crucial and you don't want to"
+    },
+    {
+      "start": 769.0,
+      "duration": 4.2,
+      "text": "expose it to hackers. You can use"
+    },
+    {
+      "start": 770.92,
+      "duration": 5.56,
+      "text": "encryption. In AWS, encryption is done"
+    },
+    {
+      "start": 773.2,
+      "duration": 5.16,
+      "text": "using AWS KMS or key management system."
+    },
+    {
+      "start": 776.48,
+      "duration": 3.359,
+      "text": "This is done at rest, whereas if you"
+    },
+    {
+      "start": 778.36,
+      "duration": 4.0,
+      "text": "want the data to be encrypted at"
+    },
+    {
+      "start": 779.839,
+      "duration": 3.521,
+      "text": "transit, you will use SSL certificate"
+    },
+    {
+      "start": 782.36,
+      "duration": 2.24,
+      "text": "for that."
+    },
+    {
+      "start": 783.36,
+      "duration": 3.28,
+      "text": "So, these are all different concepts you"
+    },
+    {
+      "start": 784.6,
+      "duration": 3.6,
+      "text": "should know as a DevOps engineer. Now,"
+    },
+    {
+      "start": 786.64,
+      "duration": 3.4,
+      "text": "before we end this video, let me give"
+    },
+    {
+      "start": 788.2,
+      "duration": 4.0,
+      "text": "you the list of different DevOps tasks"
+    },
+    {
+      "start": 790.04,
+      "duration": 3.799,
+      "text": "you will be doing with databases."
+    },
+    {
+      "start": 792.2,
+      "duration": 3.8,
+      "text": "So, let's look into common databases"
+    },
+    {
+      "start": 793.839,
+      "duration": 3.801,
+      "text": "tasks for a DevOps engineer. As a DevOps"
+    },
+    {
+      "start": 796.0,
+      "duration": 3.76,
+      "text": "engineer, you will be responsible to set"
+    },
+    {
+      "start": 797.64,
+      "duration": 4.4,
+      "text": "up databases for your application. So,"
+    },
+    {
+      "start": 799.76,
+      "duration": 3.8,
+      "text": "your common task would include database"
+    },
+    {
+      "start": 802.04,
+      "duration": 4.28,
+      "text": "provisioning, which is to create a"
+    },
+    {
+      "start": 803.56,
+      "duration": 4.36,
+      "text": "database on cloud providers. So, you"
+    },
+    {
+      "start": 806.32,
+      "duration": 3.6,
+      "text": "will be creating databases either on"
+    },
+    {
+      "start": 807.92,
+      "duration": 5.0,
+      "text": "your servers or using managed services"
+    },
+    {
+      "start": 809.92,
+      "duration": 4.04,
+      "text": "like RDS, SQL Azure databases, and lot"
+    },
+    {
+      "start": 812.92,
+      "duration": 2.08,
+      "text": "more."
+    },
+    {
+      "start": 813.96,
+      "duration": 2.48,
+      "text": "There are two ways for creating"
+    },
+    {
+      "start": 815.0,
+      "duration": 2.84,
+      "text": "databases in the cloud. You can either"
+    },
+    {
+      "start": 816.44,
+      "duration": 4.16,
+      "text": "do it through the console by clicking on"
+    },
+    {
+      "start": 817.84,
+      "duration": 4.84,
+      "text": "it, or you can do it by using tools like"
+    },
+    {
+      "start": 820.6,
+      "duration": 3.68,
+      "text": "Terraform. So, automating the creation"
+    },
+    {
+      "start": 822.68,
+      "duration": 3.64,
+      "text": "of new databases using tools like"
+    },
+    {
+      "start": 824.28,
+      "duration": 4.96,
+      "text": "Terraform could be a common database"
+    },
+    {
+      "start": 826.32,
+      "duration": 4.36,
+      "text": "task. Next is performance tuning. If"
+    },
+    {
+      "start": 829.24,
+      "duration": 3.08,
+      "text": "your database is not working properly,"
+    },
+    {
+      "start": 830.68,
+      "duration": 3.64,
+      "text": "you will need to check what is the"
+    },
+    {
+      "start": 832.32,
+      "duration": 4.68,
+      "text": "problem, and you need to optimize"
+    },
+    {
+      "start": 834.32,
+      "duration": 4.36,
+      "text": "queries for better results. This is"
+    },
+    {
+      "start": 837.0,
+      "duration": 4.2,
+      "text": "another common task which is to analyze"
+    },
+    {
+      "start": 838.68,
+      "duration": 3.8,
+      "text": "and add indexes to improve slow SQL"
+    },
+    {
+      "start": 841.2,
+      "duration": 3.04,
+      "text": "queries."
+    },
+    {
+      "start": 842.48,
+      "duration": 3.32,
+      "text": "Next is backup and restore. As we have"
+    },
+    {
+      "start": 844.24,
+      "duration": 3.52,
+      "text": "seen in this database concept, you need"
+    },
+    {
+      "start": 845.8,
+      "duration": 3.68,
+      "text": "to create backup for your databases."
+    },
+    {
+      "start": 847.76,
+      "duration": 3.16,
+      "text": "Creating a backup is very important for"
+    },
+    {
+      "start": 849.48,
+      "duration": 4.04,
+      "text": "DevOps engineers, so you should know how"
+    },
+    {
+      "start": 850.92,
+      "duration": 5.56,
+      "text": "to create backups either using scripts,"
+    },
+    {
+      "start": 853.52,
+      "duration": 5.0,
+      "text": "automated way, or using cloud consoles."
+    },
+    {
+      "start": 856.48,
+      "duration": 4.56,
+      "text": "So, automating periodic database backups"
+    },
+    {
+      "start": 858.52,
+      "duration": 5.08,
+      "text": "and testing with restore processes."
+    },
+    {
+      "start": 861.04,
+      "duration": 4.44,
+      "text": "For example, you might set up uh daily"
+    },
+    {
+      "start": 863.6,
+      "duration": 3.36,
+      "text": "backup for your Postgres databases using"
+    },
+    {
+      "start": 865.48,
+      "duration": 2.48,
+      "text": "a cron job. If you don't know how to do"
+    },
+    {
+      "start": 866.96,
+      "duration": 3.04,
+      "text": "that, let me know in the comment"
+    },
+    {
+      "start": 867.96,
+      "duration": 4.44,
+      "text": "section, and maybe I can create a video"
+    },
+    {
+      "start": 870.0,
+      "duration": 4.6,
+      "text": "explaining how to take a backup using a"
+    },
+    {
+      "start": 872.4,
+      "duration": 5.439,
+      "text": "bash script and run that script every"
+    },
+    {
+      "start": 874.6,
+      "duration": 5.08,
+      "text": "day or every week using cron job. Next"
+    },
+    {
+      "start": 877.839,
+      "duration": 3.561,
+      "text": "is replication setup. You need to make"
+    },
+    {
+      "start": 879.68,
+      "duration": 4.52,
+      "text": "sure that your databases are replicated"
+    },
+    {
+      "start": 881.4,
+      "duration": 5.2,
+      "text": "in multi-AZ or multi-region deployments."
+    },
+    {
+      "start": 884.2,
+      "duration": 3.76,
+      "text": "So, enable read replicas for AWS RDS"
+    },
+    {
+      "start": 886.6,
+      "duration": 3.239,
+      "text": "could be a task."
+    },
+    {
+      "start": 887.96,
+      "duration": 3.36,
+      "text": "Next is monitoring alert. Monitoring and"
+    },
+    {
+      "start": 889.839,
+      "duration": 3.201,
+      "text": "alert to make sure your databases are"
+    },
+    {
+      "start": 891.32,
+      "duration": 3.519,
+      "text": "working properly, you need to get"
+    },
+    {
+      "start": 893.04,
+      "duration": 3.6,
+      "text": "alerts. You need to check metrics, how"
+    },
+    {
+      "start": 894.839,
+      "duration": 3.081,
+      "text": "much is the CPU, how much is the RAM."
+    },
+    {
+      "start": 896.64,
+      "duration": 3.36,
+      "text": "You can set up monitoring on your"
+    },
+    {
+      "start": 897.92,
+      "duration": 4.32,
+      "text": "databases. This could also be a task."
+    },
+    {
+      "start": 900.0,
+      "duration": 4.96,
+      "text": "For example, using DataDog to monitor"
+    },
+    {
+      "start": 902.24,
+      "duration": 4.16,
+      "text": "query execution time in MySQL."
+    },
+    {
+      "start": 904.96,
+      "duration": 2.52,
+      "text": "If your existing database is not enough"
+    },
+    {
+      "start": 906.4,
+      "duration": 2.92,
+      "text": "to handle"
+    },
+    {
+      "start": 907.48,
+      "duration": 3.6,
+      "text": "load, you might scale horizontally or"
+    },
+    {
+      "start": 909.32,
+      "duration": 3.44,
+      "text": "you might scale vertically"
+    },
+    {
+      "start": 911.08,
+      "duration": 3.84,
+      "text": "to handle more traffic."
+    },
+    {
+      "start": 912.76,
+      "duration": 4.16,
+      "text": "So, partition user data from across"
+    },
+    {
+      "start": 914.92,
+      "duration": 4.36,
+      "text": "multiple databases using shard, which is"
+    },
+    {
+      "start": 916.92,
+      "duration": 4.0,
+      "text": "the concept of sharding."
+    },
+    {
+      "start": 919.28,
+      "duration": 3.24,
+      "text": "Next is security. If you want to make"
+    },
+    {
+      "start": 920.92,
+      "duration": 4.8,
+      "text": "sure your database is encrypted, you"
+    },
+    {
+      "start": 922.52,
+      "duration": 5.12,
+      "text": "might use SSL or KMS keys. Data"
+    },
+    {
+      "start": 925.72,
+      "duration": 3.44,
+      "text": "migration, transferring data from one"
+    },
+    {
+      "start": 927.64,
+      "duration": 2.96,
+      "text": "place to another is known as data"
+    },
+    {
+      "start": 929.16,
+      "duration": 3.68,
+      "text": "migration. So, you might have database"
+    },
+    {
+      "start": 930.6,
+      "duration": 3.92,
+      "text": "set up in your local machine, and then"
+    },
+    {
+      "start": 932.84,
+      "duration": 4.4,
+      "text": "you want to set it up on the cloud. You"
+    },
+    {
+      "start": 934.52,
+      "duration": 5.08,
+      "text": "will use the migration techniques to"
+    },
+    {
+      "start": 937.24,
+      "duration": 4.24,
+      "text": "store the existing data from your local"
+    },
+    {
+      "start": 939.6,
+      "duration": 4.2,
+      "text": "machine to the cloud. So, for example,"
+    },
+    {
+      "start": 941.48,
+      "duration": 3.96,
+      "text": "in Postgres, you can use PG dump utility"
+    },
+    {
+      "start": 943.8,
+      "duration": 2.68,
+      "text": "to migrate data from one database to"
+    },
+    {
+      "start": 945.44,
+      "duration": 3.24,
+      "text": "another."
+    },
+    {
+      "start": 946.48,
+      "duration": 4.04,
+      "text": "Next is database schema management,"
+    },
+    {
+      "start": 948.68,
+      "duration": 3.96,
+      "text": "which could also be a task. Lastly is"
+    },
+    {
+      "start": 950.52,
+      "duration": 4.72,
+      "text": "disaster recovery planning. So, this is"
+    },
+    {
+      "start": 952.64,
+      "duration": 4.4,
+      "text": "all you need about databases as a DevOps"
+    },
+    {
+      "start": 955.24,
+      "duration": 4.36,
+      "text": "engineer. Having this knowledge will"
+    },
+    {
+      "start": 957.04,
+      "duration": 4.28,
+      "text": "help you start working on databases, and"
+    },
+    {
+      "start": 959.6,
+      "duration": 3.72,
+      "text": "you will be able to set up databases for"
+    },
+    {
+      "start": 961.32,
+      "duration": 4.08,
+      "text": "your application. I hope this video was"
+    },
+    {
+      "start": 963.32,
+      "duration": 3.72,
+      "text": "informative. If you have any questions,"
+    },
+    {
+      "start": 965.4,
+      "duration": 4.28,
+      "text": "any doubt, let me know in the comment"
+    },
+    {
+      "start": 967.04,
+      "duration": 4.88,
+      "text": "section. If you want me to share this"
+    },
+    {
+      "start": 969.68,
+      "duration": 3.52,
+      "text": "document or this PDF,"
+    },
+    {
+      "start": 971.92,
+      "duration": 4.96,
+      "text": "let me know in the comment section."
+    },
+    {
+      "start": 973.2,
+      "duration": 3.68,
+      "text": "Thank you, and have a good day."
+    }
+  ]
+}

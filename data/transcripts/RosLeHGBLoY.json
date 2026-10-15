@@ -1,0 +1,3091 @@
+{
+  "video": {
+    "id": "RosLeHGBLoY",
+    "title": "RAG Explained in 20 Minutes | Retrieval Augmented Generation + Hands on Project",
+    "url": "https://www.youtube.com/watch?v=RosLeHGBLoY",
+    "duration": 1204,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 5.96,
+      "text": "In this video, you will learn what is"
+    },
+    {
+      "start": 2.36,
+      "duration": 5.28,
+      "text": "rag or retrieval augmented generation."
+    },
+    {
+      "start": 5.96,
+      "duration": 4.52,
+      "text": "We will also understand how different"
+    },
+    {
+      "start": 7.64,
+      "duration": 5.32,
+      "text": "companies use rag and also a hands-on"
+    },
+    {
+      "start": 10.48,
+      "duration": 3.88,
+      "text": "demo to set up your own rag pipeline."
+    },
+    {
+      "start": 12.96,
+      "duration": 3.48,
+      "text": "So, make sure you watch this video till"
+    },
+    {
+      "start": 14.36,
+      "duration": 4.32,
+      "text": "the end. Let's go. Before we get"
+    },
+    {
+      "start": 16.44,
+      "duration": 4.36,
+      "text": "started, I have detailed notes created"
+    },
+    {
+      "start": 18.68,
+      "duration": 3.72,
+      "text": "about rag and it includes everything you"
+    },
+    {
+      "start": 20.8,
+      "duration": 3.68,
+      "text": "should know. So, if you want me to share"
+    },
+    {
+      "start": 22.4,
+      "duration": 3.4,
+      "text": "these notes with you, comment below rag"
+    },
+    {
+      "start": 24.48,
+      "duration": 3.56,
+      "text": "and I will share it in the video"
+    },
+    {
+      "start": 25.8,
+      "duration": 4.16,
+      "text": "description. All right. Now, to"
+    },
+    {
+      "start": 28.04,
+      "duration": 4.48,
+      "text": "understand rag properly, let's start"
+    },
+    {
+      "start": 29.96,
+      "duration": 5.2,
+      "text": "with an example of chat GPT. If you go"
+    },
+    {
+      "start": 32.52,
+      "duration": 4.92,
+      "text": "to chat GPT and ask a question, what is"
+    },
+    {
+      "start": 35.16,
+      "duration": 3.96,
+      "text": "the capital of India? It will reply you"
+    },
+    {
+      "start": 37.44,
+      "duration": 3.44,
+      "text": "with an answer because it has been"
+    },
+    {
+      "start": 39.12,
+      "duration": 5.16,
+      "text": "trained on huge amount of data like"
+    },
+    {
+      "start": 40.88,
+      "duration": 5.6,
+      "text": "PDFs, website pages, Wikipedia and a lot"
+    },
+    {
+      "start": 44.28,
+      "duration": 5.16,
+      "text": "more that knows that the capital of"
+    },
+    {
+      "start": 46.48,
+      "duration": 4.76,
+      "text": "India is Delhi. But, when you ask chat"
+    },
+    {
+      "start": 49.44,
+      "duration": 4.12,
+      "text": "GPT something internal about your"
+    },
+    {
+      "start": 51.24,
+      "duration": 4.96,
+      "text": "company, for example, how much sales did"
+    },
+    {
+      "start": 53.56,
+      "duration": 4.32,
+      "text": "we make on Saturday? Since chat GPT do"
+    },
+    {
+      "start": 56.2,
+      "duration": 3.64,
+      "text": "not have access to your company internal"
+    },
+    {
+      "start": 57.88,
+      "duration": 3.76,
+      "text": "documentation or does not know how much"
+    },
+    {
+      "start": 59.84,
+      "duration": 3.64,
+      "text": "sales you have made, it will reply you"
+    },
+    {
+      "start": 61.64,
+      "duration": 3.44,
+      "text": "with an answer saying, I do not have"
+    },
+    {
+      "start": 63.48,
+      "duration": 4.36,
+      "text": "enough context or access to your"
+    },
+    {
+      "start": 65.08,
+      "duration": 5.2,
+      "text": "internal company. Or chat GPT might just"
+    },
+    {
+      "start": 67.84,
+      "duration": 4.56,
+      "text": "lie or make stuff up. This is because"
+    },
+    {
+      "start": 70.28,
+      "duration": 4.0,
+      "text": "chat GPT is not trained on your company"
+    },
+    {
+      "start": 72.4,
+      "duration": 4.04,
+      "text": "internal documentation. It has been"
+    },
+    {
+      "start": 74.28,
+      "duration": 3.96,
+      "text": "trained on public internet pages. I hope"
+    },
+    {
+      "start": 76.44,
+      "duration": 4.04,
+      "text": "that makes sense. Now, let's try with"
+    },
+    {
+      "start": 78.24,
+      "duration": 3.72,
+      "text": "another example. This is the error I got"
+    },
+    {
+      "start": 80.48,
+      "duration": 3.88,
+      "text": "from a docker container running in my"
+    },
+    {
+      "start": 81.96,
+      "duration": 4.8,
+      "text": "local machine. If I paste the same error"
+    },
+    {
+      "start": 84.36,
+      "duration": 5.12,
+      "text": "in chat GPT, chat GPT might give me a"
+    },
+    {
+      "start": 86.76,
+      "duration": 5.12,
+      "text": "vague answer which is most likely wrong."
+    },
+    {
+      "start": 89.48,
+      "duration": 5.64,
+      "text": "But, if I paste the same error on"
+    },
+    {
+      "start": 91.88,
+      "duration": 5.04,
+      "text": "docs.docker.com in the garden docker AI,"
+    },
+    {
+      "start": 95.12,
+      "duration": 3.52,
+      "text": "it will give me right answer pointing me"
+    },
+    {
+      "start": 96.92,
+      "duration": 3.8,
+      "text": "to the correct documentation and the"
+    },
+    {
+      "start": 98.64,
+      "duration": 3.84,
+      "text": "sources where it got the answer from."
+    },
+    {
+      "start": 100.72,
+      "duration": 3.64,
+      "text": "So, how come chat GPT gave me a wrong"
+    },
+    {
+      "start": 102.48,
+      "duration": 2.88,
+      "text": "answer but docker AI gave me the right"
+    },
+    {
+      "start": 104.36,
+      "duration": 4.08,
+      "text": "answer pointing me to the right"
+    },
+    {
+      "start": 105.36,
+      "duration": 5.4,
+      "text": "documentation? The answer is rag or"
+    },
+    {
+      "start": 108.44,
+      "duration": 4.72,
+      "text": "retrieval augmented generation. So,"
+    },
+    {
+      "start": 110.76,
+      "duration": 4.12,
+      "text": "retrieval augmented generation or rag is"
+    },
+    {
+      "start": 113.16,
+      "duration": 4.16,
+      "text": "a technique that combines information"
+    },
+    {
+      "start": 114.88,
+      "duration": 5.28,
+      "text": "retrieval with large language models to"
+    },
+    {
+      "start": 117.32,
+      "duration": 5.4,
+      "text": "generate more accurate, up-to-date and"
+    },
+    {
+      "start": 120.16,
+      "duration": 4.72,
+      "text": "context-aware responses. And how does it"
+    },
+    {
+      "start": 122.72,
+      "duration": 4.92,
+      "text": "do that? So, instead of relying only on"
+    },
+    {
+      "start": 124.88,
+      "duration": 4.44,
+      "text": "what a model was trained on, rag allows"
+    },
+    {
+      "start": 127.64,
+      "duration": 3.88,
+      "text": "the model to fetch relevant data from"
+    },
+    {
+      "start": 129.32,
+      "duration": 5.08,
+      "text": "external sources. Could be documents,"
+    },
+    {
+      "start": 131.52,
+      "duration": 5.24,
+      "text": "PDF, databases, APIs and use the"
+    },
+    {
+      "start": 134.4,
+      "duration": 4.12,
+      "text": "information while generating answers."
+    },
+    {
+      "start": 136.76,
+      "duration": 3.2,
+      "text": "So, when you ask a question to an LLM,"
+    },
+    {
+      "start": 138.52,
+      "duration": 3.44,
+      "text": "rather than giving the answers from the"
+    },
+    {
+      "start": 139.96,
+      "duration": 4.52,
+      "text": "data that has it has been trained on, it"
+    },
+    {
+      "start": 141.96,
+      "duration": 3.96,
+      "text": "will get the data from the sources and"
+    },
+    {
+      "start": 144.48,
+      "duration": 3.4,
+      "text": "then generate the response to give it to"
+    },
+    {
+      "start": 145.92,
+      "duration": 4.4,
+      "text": "you. So, without rag, your model could"
+    },
+    {
+      "start": 147.88,
+      "duration": 4.04,
+      "text": "hallucinate. You can get old information"
+    },
+    {
+      "start": 150.32,
+      "duration": 3.4,
+      "text": "or you can get responses that it does"
+    },
+    {
+      "start": 151.92,
+      "duration": 3.8,
+      "text": "not understand or it could be not your"
+    },
+    {
+      "start": 153.72,
+      "duration": 4.64,
+      "text": "data. To explain you this more clearly,"
+    },
+    {
+      "start": 155.72,
+      "duration": 5.16,
+      "text": "I actually have a project in which I'm"
+    },
+    {
+      "start": 158.36,
+      "duration": 4.8,
+      "text": "using a document, which is a text file"
+    },
+    {
+      "start": 160.88,
+      "duration": 4.04,
+      "text": "that has information about Japan and I"
+    },
+    {
+      "start": 163.16,
+      "duration": 3.56,
+      "text": "have two files here, the insert.py and"
+    },
+    {
+      "start": 164.92,
+      "duration": 3.88,
+      "text": "the question.py. I will very soon"
+    },
+    {
+      "start": 166.72,
+      "duration": 4.12,
+      "text": "explain you what it does. But, now let's"
+    },
+    {
+      "start": 168.8,
+      "duration": 3.68,
+      "text": "run this file. So, if I say python3"
+    },
+    {
+      "start": 170.84,
+      "duration": 4.12,
+      "text": "question.py, I can simply ask it a"
+    },
+    {
+      "start": 172.48,
+      "duration": 5.28,
+      "text": "question similar to I do to chat GPT."
+    },
+    {
+      "start": 174.96,
+      "duration": 5.24,
+      "text": "But, in here I'm using an model which is"
+    },
+    {
+      "start": 177.76,
+      "duration": 4.08,
+      "text": "the nomic embed text model. It's a local"
+    },
+    {
+      "start": 180.2,
+      "duration": 3.64,
+      "text": "LLM that I have on my local machine"
+    },
+    {
+      "start": 181.84,
+      "duration": 3.68,
+      "text": "using ollama. So, when I run this file"
+    },
+    {
+      "start": 183.84,
+      "duration": 3.6,
+      "text": "now, you can see it's asking me, put"
+    },
+    {
+      "start": 185.52,
+      "duration": 3.88,
+      "text": "your question. So, now if I ask any"
+    },
+    {
+      "start": 187.44,
+      "duration": 3.8,
+      "text": "question related to Japan, it will get"
+    },
+    {
+      "start": 189.4,
+      "duration": 4.2,
+      "text": "the information from this text file."
+    },
+    {
+      "start": 191.24,
+      "duration": 4.28,
+      "text": "But, if I ask anything apart from Japan,"
+    },
+    {
+      "start": 193.6,
+      "duration": 3.08,
+      "text": "let's say if I ask, what is Kubernetes?"
+    },
+    {
+      "start": 195.52,
+      "duration": 3.0,
+      "text": "It will give me an answer saying it does"
+    },
+    {
+      "start": 196.68,
+      "duration": 3.16,
+      "text": "not have context or information about"
+    },
+    {
+      "start": 198.52,
+      "duration": 4.0,
+      "text": "it. So, if let's ask, what is"
+    },
+    {
+      "start": 199.84,
+      "duration": 5.24,
+      "text": "Kubernetes? So, this is the user query."
+    },
+    {
+      "start": 202.52,
+      "duration": 4.44,
+      "text": "Using rag, it will search the document"
+    },
+    {
+      "start": 205.08,
+      "duration": 3.56,
+      "text": "and now it gave me the response saying,"
+    },
+    {
+      "start": 206.96,
+      "duration": 2.88,
+      "text": "there is no mention of Kubernetes or any"
+    },
+    {
+      "start": 208.64,
+      "duration": 3.64,
+      "text": "other technology in the provided"
+    },
+    {
+      "start": 209.84,
+      "duration": 4.16,
+      "text": "context. The text only discusses Japan."
+    },
+    {
+      "start": 212.28,
+      "duration": 3.24,
+      "text": "Now, the information is fetched only"
+    },
+    {
+      "start": 214.0,
+      "duration": 3.6,
+      "text": "from the documentation. It is not"
+    },
+    {
+      "start": 215.52,
+      "duration": 3.32,
+      "text": "referencing to any data that it has been"
+    },
+    {
+      "start": 217.6,
+      "duration": 3.16,
+      "text": "trained on."
+    },
+    {
+      "start": 218.84,
+      "duration": 5.96,
+      "text": "Let's try another example. Let me ask,"
+    },
+    {
+      "start": 220.76,
+      "duration": 5.76,
+      "text": "what to eat in Japan?"
+    },
+    {
+      "start": 224.8,
+      "duration": 4.2,
+      "text": "Okay. So, now we have the response here"
+    },
+    {
+      "start": 226.52,
+      "duration": 3.96,
+      "text": "which says, you can eat sushi, ramen,"
+    },
+    {
+      "start": 229.0,
+      "duration": 3.28,
+      "text": "tempura, all of these. And the"
+    },
+    {
+      "start": 230.48,
+      "duration": 3.4,
+      "text": "information is has been fetched from"
+    },
+    {
+      "start": 232.28,
+      "duration": 2.72,
+      "text": "this particular file. I can try another"
+    },
+    {
+      "start": 233.88,
+      "duration": 3.24,
+      "text": "example."
+    },
+    {
+      "start": 235.0,
+      "duration": 4.4,
+      "text": "Give me"
+    },
+    {
+      "start": 237.12,
+      "duration": 5.36,
+      "text": "3 days"
+    },
+    {
+      "start": 239.4,
+      "duration": 4.8,
+      "text": "Japan itinerary."
+    },
+    {
+      "start": 242.48,
+      "duration": 3.28,
+      "text": "So, since this documentation has"
+    },
+    {
+      "start": 244.2,
+      "duration": 3.8,
+      "text": "information about Japan, it will give me"
+    },
+    {
+      "start": 245.76,
+      "duration": 4.12,
+      "text": "a 3 days itinerary using the information"
+    },
+    {
+      "start": 248.0,
+      "duration": 3.32,
+      "text": "and generating a response. So, you can"
+    },
+    {
+      "start": 249.88,
+      "duration": 3.68,
+      "text": "see, on the first day you should go to"
+    },
+    {
+      "start": 251.32,
+      "duration": 4.36,
+      "text": "Tokyo, then Kyoto and then Tokyo again"
+    },
+    {
+      "start": 253.56,
+      "duration": 4.12,
+      "text": "or Osaka optional. But, if I ask"
+    },
+    {
+      "start": 255.68,
+      "duration": 4.88,
+      "text": "anything else, let's say what is capital"
+    },
+    {
+      "start": 257.68,
+      "duration": 2.88,
+      "text": "of India?"
+    },
+    {
+      "start": 261.68,
+      "duration": 4.08,
+      "text": "Since this documentation does not have"
+    },
+    {
+      "start": 263.28,
+      "duration": 3.84,
+      "text": "anything about capital or India, it will"
+    },
+    {
+      "start": 265.76,
+      "duration": 3.44,
+      "text": "give me a response saying it does not"
+    },
+    {
+      "start": 267.12,
+      "duration": 3.76,
+      "text": "have information. So, using rag you can"
+    },
+    {
+      "start": 269.2,
+      "duration": 3.8,
+      "text": "reference to documentations or text"
+    },
+    {
+      "start": 270.88,
+      "duration": 4.72,
+      "text": "files, PDFs like this to get correct"
+    },
+    {
+      "start": 273.0,
+      "duration": 2.6,
+      "text": "response."
+    },
+    {
+      "start": 275.88,
+      "duration": 3.72,
+      "text": "In this rag notes, if you scroll down,"
+    },
+    {
+      "start": 277.8,
+      "duration": 4.08,
+      "text": "you will find a section that says, how"
+    },
+    {
+      "start": 279.6,
+      "duration": 4.4,
+      "text": "rag works and it has a architecture"
+    },
+    {
+      "start": 281.88,
+      "duration": 4.2,
+      "text": "diagram of a basic rag pipeline showing"
+    },
+    {
+      "start": 284.0,
+      "duration": 4.6,
+      "text": "you all the components in a rag setup."
+    },
+    {
+      "start": 286.08,
+      "duration": 3.76,
+      "text": "For example, LLM but also has a vector"
+    },
+    {
+      "start": 288.6,
+      "duration": 3.4,
+      "text": "database which is special kind of"
+    },
+    {
+      "start": 289.84,
+      "duration": 5.36,
+      "text": "database. This vector database will hold"
+    },
+    {
+      "start": 292.0,
+      "duration": 4.56,
+      "text": "all your internal documents, PDF, etc."
+    },
+    {
+      "start": 295.2,
+      "duration": 3.68,
+      "text": "But, you cannot store them directly. You"
+    },
+    {
+      "start": 296.56,
+      "duration": 4.96,
+      "text": "need to convert the documents into an"
+    },
+    {
+      "start": 298.88,
+      "duration": 5.08,
+      "text": "embeddings or vector using an embedding"
+    },
+    {
+      "start": 301.52,
+      "duration": 5.24,
+      "text": "model so that whenever a user passes a"
+    },
+    {
+      "start": 303.96,
+      "duration": 4.44,
+      "text": "query or ask a question, the question is"
+    },
+    {
+      "start": 306.76,
+      "duration": 3.4,
+      "text": "also going to be converted into vectors."
+    },
+    {
+      "start": 308.4,
+      "duration": 3.76,
+      "text": "Now, the question vector and the vector"
+    },
+    {
+      "start": 310.16,
+      "duration": 2.96,
+      "text": "stored inside your vector database will"
+    },
+    {
+      "start": 312.16,
+      "duration": 3.08,
+      "text": "be"
+    },
+    {
+      "start": 313.12,
+      "duration": 4.32,
+      "text": "you will do a search between them and"
+    },
+    {
+      "start": 315.24,
+      "duration": 3.8,
+      "text": "then the context is passed to the LLM to"
+    },
+    {
+      "start": 317.44,
+      "duration": 4.56,
+      "text": "create a response and then give it back"
+    },
+    {
+      "start": 319.04,
+      "duration": 4.4,
+      "text": "to you. I hope that makes sense. If not,"
+    },
+    {
+      "start": 322.0,
+      "duration": 3.32,
+      "text": "let me show you with an architecture"
+    },
+    {
+      "start": 323.44,
+      "duration": 3.68,
+      "text": "diagram. So, let's start with an"
+    },
+    {
+      "start": 325.32,
+      "duration": 3.64,
+      "text": "architecture diagram showing you what"
+    },
+    {
+      "start": 327.12,
+      "duration": 3.84,
+      "text": "happens when you don't use rag, which is"
+    },
+    {
+      "start": 328.96,
+      "duration": 4.44,
+      "text": "a simple chat GPT setup. So, you will"
+    },
+    {
+      "start": 330.96,
+      "duration": 4.8,
+      "text": "have an LLM or a large language model."
+    },
+    {
+      "start": 333.4,
+      "duration": 5.2,
+      "text": "Could be GPT-4 for chat GPT, could be"
+    },
+    {
+      "start": 335.76,
+      "duration": 5.72,
+      "text": "Gemini, Claude, Opus, etc., etc., etc."
+    },
+    {
+      "start": 338.6,
+      "duration": 5.08,
+      "text": "Now, when a user asks a question or"
+    },
+    {
+      "start": 341.48,
+      "duration": 5.56,
+      "text": "gives a prompt to this LLM, for example,"
+    },
+    {
+      "start": 343.68,
+      "duration": 5.36,
+      "text": "it says, what is Kubernetes?"
+    },
+    {
+      "start": 347.04,
+      "duration": 4.08,
+      "text": "This LLM does not understand text. It"
+    },
+    {
+      "start": 349.04,
+      "duration": 3.8,
+      "text": "only understands vectors. So, the text"
+    },
+    {
+      "start": 351.12,
+      "duration": 4.72,
+      "text": "is going to be broken down and then"
+    },
+    {
+      "start": 352.84,
+      "duration": 5.36,
+      "text": "converted into tokens. And the process"
+    },
+    {
+      "start": 355.84,
+      "duration": 4.64,
+      "text": "is known as tokenization. So, the"
+    },
+    {
+      "start": 358.2,
+      "duration": 4.0,
+      "text": "process of breaking down your prompt and"
+    },
+    {
+      "start": 360.48,
+      "duration": 4.24,
+      "text": "then converting into a token is called"
+    },
+    {
+      "start": 362.2,
+      "duration": 5.2,
+      "text": "as tokenization. Now, these tokens will"
+    },
+    {
+      "start": 364.72,
+      "duration": 4.12,
+      "text": "be converted into vectors, also called"
+    },
+    {
+      "start": 367.4,
+      "duration": 3.96,
+      "text": "as embedding. So, these vectors are"
+    },
+    {
+      "start": 368.84,
+      "duration": 6.12,
+      "text": "nothing but a long list of arrays that"
+    },
+    {
+      "start": 371.36,
+      "duration": 5.8,
+      "text": "has set of numbers. Length of the array"
+    },
+    {
+      "start": 374.96,
+      "duration": 3.84,
+      "text": "or length of these numbers will depend"
+    },
+    {
+      "start": 377.16,
+      "duration": 3.96,
+      "text": "on the model that you are using. For"
+    },
+    {
+      "start": 378.8,
+      "duration": 4.0,
+      "text": "example, we were using nomic embed text"
+    },
+    {
+      "start": 381.12,
+      "duration": 4.64,
+      "text": "for the Japan example and it has a"
+    },
+    {
+      "start": 382.8,
+      "duration": 5.08,
+      "text": "vector dimension of 768 dimension. Here"
+    },
+    {
+      "start": 385.76,
+      "duration": 4.76,
+      "text": "is the query to create table inside your"
+    },
+    {
+      "start": 387.88,
+      "duration": 4.24,
+      "text": "vector database with the dimension 768."
+    },
+    {
+      "start": 390.52,
+      "duration": 3.32,
+      "text": "But, if you're using a different model,"
+    },
+    {
+      "start": 392.12,
+      "duration": 4.8,
+      "text": "the dimension will differ. Could be"
+    },
+    {
+      "start": 393.84,
+      "duration": 4.72,
+      "text": "1536, could be 768 or could be more. For"
+    },
+    {
+      "start": 396.92,
+      "duration": 3.4,
+      "text": "example, in this open AI documentation,"
+    },
+    {
+      "start": 398.56,
+      "duration": 4.92,
+      "text": "you can see by default the length of the"
+    },
+    {
+      "start": 400.32,
+      "duration": 6.44,
+      "text": "embedding vector is 5 1,536 for text"
+    },
+    {
+      "start": 403.48,
+      "duration": 5.16,
+      "text": "embedding 3 small model or 3,072 for"
+    },
+    {
+      "start": 406.76,
+      "duration": 3.16,
+      "text": "text embedding 3 large model. So,"
+    },
+    {
+      "start": 408.64,
+      "duration": 3.36,
+      "text": "depending on the model, the vector size"
+    },
+    {
+      "start": 409.92,
+      "duration": 3.64,
+      "text": "will differ. But, now"
+    },
+    {
+      "start": 412.0,
+      "duration": 3.44,
+      "text": "once the query or the prompt is"
+    },
+    {
+      "start": 413.56,
+      "duration": 4.84,
+      "text": "converted into vectors, these vectors"
+    },
+    {
+      "start": 415.44,
+      "duration": 5.12,
+      "text": "are then passed to the LLM. LLM, which"
+    },
+    {
+      "start": 418.4,
+      "duration": 4.32,
+      "text": "is trained on huge amount of data, will"
+    },
+    {
+      "start": 420.56,
+      "duration": 5.32,
+      "text": "then use these vectors to find patterns"
+    },
+    {
+      "start": 422.72,
+      "duration": 4.4,
+      "text": "inside the data and then once the"
+    },
+    {
+      "start": 425.88,
+      "duration": 3.16,
+      "text": "pattern has been found or the once the"
+    },
+    {
+      "start": 427.12,
+      "duration": 5.24,
+      "text": "answer has been revealed, it will pass"
+    },
+    {
+      "start": 429.04,
+      "duration": 5.84,
+      "text": "the vector to a decoder. This decoder"
+    },
+    {
+      "start": 432.36,
+      "duration": 5.4,
+      "text": "will convert vectors into tokens, tokens"
+    },
+    {
+      "start": 434.88,
+      "duration": 4.68,
+      "text": "into text and then pass the value"
+    },
+    {
+      "start": 437.76,
+      "duration": 3.92,
+      "text": "to the user saying that the Kubernetes"
+    },
+    {
+      "start": 439.56,
+      "duration": 3.88,
+      "text": "is a container orchestration tool. Then"
+    },
+    {
+      "start": 441.68,
+      "duration": 4.16,
+      "text": "this is how the thing work. So, this is"
+    },
+    {
+      "start": 443.44,
+      "duration": 4.36,
+      "text": "your basic chat GPT setup. This is how"
+    },
+    {
+      "start": 445.84,
+      "duration": 3.72,
+      "text": "chat GPT actually works where you don't"
+    },
+    {
+      "start": 447.8,
+      "duration": 3.0,
+      "text": "have any rag setup where it is not using"
+    },
+    {
+      "start": 449.56,
+      "duration": 3.8,
+      "text": "your internal documents to give you"
+    },
+    {
+      "start": 450.8,
+      "duration": 5.28,
+      "text": "answer. Whereas, if you were using rag,"
+    },
+    {
+      "start": 453.36,
+      "duration": 4.12,
+      "text": "you will have an extra component"
+    },
+    {
+      "start": 456.08,
+      "duration": 3.48,
+      "text": "which is going to be your vector"
+    },
+    {
+      "start": 457.48,
+      "duration": 3.52,
+      "text": "database. So, here this is your vector"
+    },
+    {
+      "start": 459.56,
+      "duration": 2.84,
+      "text": "database."
+    },
+    {
+      "start": 461.0,
+      "duration": 2.8,
+      "text": "There are different types of vector"
+    },
+    {
+      "start": 462.4,
+      "duration": 3.36,
+      "text": "database like Pinecone, Weaviate,"
+    },
+    {
+      "start": 463.8,
+      "duration": 4.44,
+      "text": "Milvus. You can also use Postgres"
+    },
+    {
+      "start": 465.76,
+      "duration": 4.16,
+      "text": "database as a vector database, which I'm"
+    },
+    {
+      "start": 468.24,
+      "duration": 3.48,
+      "text": "using inside this"
+    },
+    {
+      "start": 469.92,
+      "duration": 4.12,
+      "text": "Japan example. If you want me to create"
+    },
+    {
+      "start": 471.72,
+      "duration": 4.04,
+      "text": "a step-by-step video to show you how to"
+    },
+    {
+      "start": 474.04,
+      "duration": 3.16,
+      "text": "create rag pipeline using the example"
+    },
+    {
+      "start": 475.76,
+      "duration": 2.92,
+      "text": "and how to use Postgres as a vector"
+    },
+    {
+      "start": 477.2,
+      "duration": 3.56,
+      "text": "database, let me know in the comment"
+    },
+    {
+      "start": 478.68,
+      "duration": 4.16,
+      "text": "section. Now, when using rag, you will"
+    },
+    {
+      "start": 480.76,
+      "duration": 4.56,
+      "text": "have a vector database that will store"
+    },
+    {
+      "start": 482.84,
+      "duration": 4.84,
+      "text": "all your documents, PDFs, internal"
+    },
+    {
+      "start": 485.32,
+      "duration": 3.84,
+      "text": "files, etc. Since vector database cannot"
+    },
+    {
+      "start": 487.68,
+      "duration": 3.64,
+      "text": "store file directly, you need to convert"
+    },
+    {
+      "start": 489.16,
+      "duration": 4.88,
+      "text": "them into embeddings and you do that"
+    },
+    {
+      "start": 491.32,
+      "duration": 5.4,
+      "text": "using an embedding model. So, this"
+    },
+    {
+      "start": 494.04,
+      "duration": 4.4,
+      "text": "embedding model will take the documents"
+    },
+    {
+      "start": 496.72,
+      "duration": 2.72,
+      "text": "and then convert them into vectors."
+    },
+    {
+      "start": 498.44,
+      "duration": 3.36,
+      "text": "These vectors are then going to be"
+    },
+    {
+      "start": 499.44,
+      "duration": 5.0,
+      "text": "stored inside this vector database. Now,"
+    },
+    {
+      "start": 501.8,
+      "duration": 4.4,
+      "text": "whenever a user ask a question like, how"
+    },
+    {
+      "start": 504.44,
+      "duration": 3.32,
+      "text": "much sales did we make?"
+    },
+    {
+      "start": 506.2,
+      "duration": 3.4,
+      "text": "So, this information about the sales"
+    },
+    {
+      "start": 507.76,
+      "duration": 2.96,
+      "text": "were present inside this document. The"
+    },
+    {
+      "start": 509.6,
+      "duration": 2.28,
+      "text": "content inside this document is"
+    },
+    {
+      "start": 510.72,
+      "duration": 3.24,
+      "text": "converted into vectors and present"
+    },
+    {
+      "start": 511.88,
+      "duration": 4.12,
+      "text": "inside this vector database. So,"
+    },
+    {
+      "start": 513.96,
+      "duration": 3.16,
+      "text": "whenever a user asks a question, the"
+    },
+    {
+      "start": 516.0,
+      "duration": 3.28,
+      "text": "question is then going going to be"
+    },
+    {
+      "start": 517.12,
+      "duration": 3.24,
+      "text": "converted into vectors the same way"
+    },
+    {
+      "start": 519.28,
+      "duration": 3.28,
+      "text": "which is going to be converted into"
+    },
+    {
+      "start": 520.36,
+      "duration": 3.52,
+      "text": "tokens and then vectors. We will use"
+    },
+    {
+      "start": 522.56,
+      "duration": 3.6,
+      "text": "this vectors, which is the question"
+    },
+    {
+      "start": 523.88,
+      "duration": 3.64,
+      "text": "vector, with the vectors present inside"
+    },
+    {
+      "start": 526.16,
+      "duration": 3.24,
+      "text": "this vector database. We will do"
+    },
+    {
+      "start": 527.52,
+      "duration": 3.84,
+      "text": "semantic search. Semantic search is a"
+    },
+    {
+      "start": 529.4,
+      "duration": 3.48,
+      "text": "process of finding closest vectors so"
+    },
+    {
+      "start": 531.36,
+      "duration": 3.44,
+      "text": "that it can give you correct response."
+    },
+    {
+      "start": 532.88,
+      "duration": 3.36,
+      "text": "Now, when you have some information from"
+    },
+    {
+      "start": 534.8,
+      "duration": 2.72,
+      "text": "this vector database, the vector"
+    },
+    {
+      "start": 536.24,
+      "duration": 3.48,
+      "text": "database will pass that information to"
+    },
+    {
+      "start": 537.52,
+      "duration": 4.2,
+      "text": "the LLM which will generate some context"
+    },
+    {
+      "start": 539.72,
+      "duration": 4.48,
+      "text": "framing the answer properly and then"
+    },
+    {
+      "start": 541.72,
+      "duration": 4.6,
+      "text": "give this answer to the user. So, this"
+    },
+    {
+      "start": 544.2,
+      "duration": 4.12,
+      "text": "is how rag actually works. I hope this"
+    },
+    {
+      "start": 546.32,
+      "duration": 3.88,
+      "text": "explains you everything and to make it"
+    },
+    {
+      "start": 548.32,
+      "duration": 3.72,
+      "text": "more easier, we are now going to do a"
+    },
+    {
+      "start": 550.2,
+      "duration": 3.2,
+      "text": "hands-on demo where I will show you how"
+    },
+    {
+      "start": 552.04,
+      "duration": 3.08,
+      "text": "do you will set up your own vector"
+    },
+    {
+      "start": 553.4,
+      "duration": 3.64,
+      "text": "database, how will you convert your"
+    },
+    {
+      "start": 555.12,
+      "duration": 3.6,
+      "text": "documentations into embeddings and then"
+    },
+    {
+      "start": 557.04,
+      "duration": 3.6,
+      "text": "store into vector database, ask a"
+    },
+    {
+      "start": 558.72,
+      "duration": 3.92,
+      "text": "question and do a semantic search."
+    },
+    {
+      "start": 560.64,
+      "duration": 3.92,
+      "text": "Everything will be explained. All right."
+    },
+    {
+      "start": 562.64,
+      "duration": 3.6,
+      "text": "So, now it's time for a hands-on demo."
+    },
+    {
+      "start": 564.56,
+      "duration": 3.84,
+      "text": "We are going to be setting up a complete"
+    },
+    {
+      "start": 566.24,
+      "duration": 4.04,
+      "text": "rag pipeline. And for this hands-on"
+    },
+    {
+      "start": 568.4,
+      "duration": 4.0,
+      "text": "practice, I'm using a free lab by Code"
+    },
+    {
+      "start": 570.28,
+      "duration": 3.36,
+      "text": "Cloud. The link is in description. So,"
+    },
+    {
+      "start": 572.4,
+      "duration": 3.36,
+      "text": "we are given a scenario where there is a"
+    },
+    {
+      "start": 573.64,
+      "duration": 4.12,
+      "text": "company named as TechCorp and the CEO"
+    },
+    {
+      "start": 575.76,
+      "duration": 3.92,
+      "text": "just burst into office saying, we have"
+    },
+    {
+      "start": 577.76,
+      "duration": 4.16,
+      "text": "500 GB of critical documents like"
+    },
+    {
+      "start": 579.68,
+      "duration": 4.36,
+      "text": "policies, products, products, meeting"
+    },
+    {
+      "start": 581.92,
+      "duration": 3.64,
+      "text": "notes and nobody can find anything. Our"
+    },
+    {
+      "start": 584.04,
+      "duration": 3.56,
+      "text": "competitors are using AI. We need a"
+    },
+    {
+      "start": 585.56,
+      "duration": 4.56,
+      "text": "solution today. So, a CEO is asking to"
+    },
+    {
+      "start": 587.6,
+      "duration": 5.04,
+      "text": "create an AI that can use all these"
+    },
+    {
+      "start": 590.12,
+      "duration": 4.44,
+      "text": "policies, all these documents and answer"
+    },
+    {
+      "start": 592.64,
+      "duration": 3.36,
+      "text": "questions using a AI. So, your mission"
+    },
+    {
+      "start": 594.56,
+      "duration": 3.12,
+      "text": "is to build an AI-powered knowledge"
+    },
+    {
+      "start": 596.0,
+      "duration": 4.12,
+      "text": "assistant that can instantly answer any"
+    },
+    {
+      "start": 597.68,
+      "duration": 3.8,
+      "text": "question about TechCorp's document. So,"
+    },
+    {
+      "start": 600.12,
+      "duration": 3.36,
+      "text": "we start by setting up a vector"
+    },
+    {
+      "start": 601.48,
+      "duration": 3.16,
+      "text": "database, which is Chroma DB here. These"
+    },
+    {
+      "start": 603.48,
+      "duration": 3.32,
+      "text": "transformers are going to be used to"
+    },
+    {
+      "start": 604.64,
+      "duration": 4.36,
+      "text": "convert documents into embeddings."
+    },
+    {
+      "start": 606.8,
+      "duration": 4.68,
+      "text": "There's a web server using Flask, and"
+    },
+    {
+      "start": 609.0,
+      "duration": 4.2,
+      "text": "OpenAI is used as an LLM. Okay, when"
+    },
+    {
+      "start": 611.48,
+      "duration": 3.44,
+      "text": "using CodeCloud Labs, everything will be"
+    },
+    {
+      "start": 613.2,
+      "duration": 3.36,
+      "text": "provided to make sure you easily do"
+    },
+    {
+      "start": 614.92,
+      "duration": 4.32,
+      "text": "hands-on practice. I'm going to just"
+    },
+    {
+      "start": 616.56,
+      "duration": 3.96,
+      "text": "copy and paste this, but to explain you,"
+    },
+    {
+      "start": 619.24,
+      "duration": 3.84,
+      "text": "this command is to install all the"
+    },
+    {
+      "start": 620.52,
+      "duration": 3.84,
+      "text": "dependencies and also Chroma DB."
+    },
+    {
+      "start": 623.08,
+      "duration": 3.56,
+      "text": "Once it is done, it will give out a"
+    },
+    {
+      "start": 624.36,
+      "duration": 3.76,
+      "text": "message saying ready. Uh so, we can go"
+    },
+    {
+      "start": 626.64,
+      "duration": 3.84,
+      "text": "on and check if everything has been"
+    },
+    {
+      "start": 628.12,
+      "duration": 3.44,
+      "text": "installed or not. Let's check this."
+    },
+    {
+      "start": 630.48,
+      "duration": 3.48,
+      "text": "Check if virtual environment was"
+    },
+    {
+      "start": 631.56,
+      "duration": 4.16,
+      "text": "created, if UV packager was involved,"
+    },
+    {
+      "start": 633.96,
+      "duration": 3.16,
+      "text": "all the required packages are installed,"
+    },
+    {
+      "start": 635.72,
+      "duration": 3.4,
+      "text": "setup completion. So, everything is"
+    },
+    {
+      "start": 637.12,
+      "duration": 3.8,
+      "text": "done. Let's click on next here. The next"
+    },
+    {
+      "start": 639.12,
+      "duration": 3.32,
+      "text": "step is to explore what document you"
+    },
+    {
+      "start": 640.92,
+      "duration": 3.28,
+      "text": "have. pet_policy.md,"
+    },
+    {
+      "start": 642.44,
+      "duration": 3.16,
+      "text": "remote_work_policy.md. So, you can run"
+    },
+    {
+      "start": 644.2,
+      "duration": 2.84,
+      "text": "this command to see all the documents"
+    },
+    {
+      "start": 645.6,
+      "duration": 3.12,
+      "text": "present inside"
+    },
+    {
+      "start": 647.04,
+      "duration": 3.32,
+      "text": "this particular lab. So, you have"
+    },
+    {
+      "start": 648.72,
+      "duration": 4.16,
+      "text": "employee handbook, meeting notes,"
+    },
+    {
+      "start": 650.36,
+      "duration": 3.96,
+      "text": "product specs, customer FAQs. Inside"
+    },
+    {
+      "start": 652.88,
+      "duration": 3.04,
+      "text": "employee handbook, you have all these"
+    },
+    {
+      "start": 654.32,
+      "duration": 3.16,
+      "text": "different things. So, you can go check"
+    },
+    {
+      "start": 655.92,
+      "duration": 3.0,
+      "text": "it out if you want. These documents are"
+    },
+    {
+      "start": 657.48,
+      "duration": 3.0,
+      "text": "going to be converted into embeddings"
+    },
+    {
+      "start": 658.92,
+      "duration": 3.84,
+      "text": "and stored inside the vector database"
+    },
+    {
+      "start": 660.48,
+      "duration": 3.4,
+      "text": "that we just installed. So, right now we"
+    },
+    {
+      "start": 662.76,
+      "duration": 2.8,
+      "text": "just installed it. We also need to"
+    },
+    {
+      "start": 663.88,
+      "duration": 2.8,
+      "text": "create collection to store those vector"
+    },
+    {
+      "start": 665.56,
+      "duration": 2.4,
+      "text": "database."
+    },
+    {
+      "start": 666.68,
+      "duration": 2.8,
+      "text": "Uh so, here we're going to be converting"
+    },
+    {
+      "start": 667.96,
+      "duration": 3.879,
+      "text": "documents into vectors and then do a"
+    },
+    {
+      "start": 669.48,
+      "duration": 3.96,
+      "text": "semantic search on these vectors."
+    },
+    {
+      "start": 671.839,
+      "duration": 3.321,
+      "text": "For this, you need to create AI brain"
+    },
+    {
+      "start": 673.44,
+      "duration": 3.6,
+      "text": "for storing document vectors, and you"
+    },
+    {
+      "start": 675.16,
+      "duration": 3.88,
+      "text": "have the code here. In this code, we are"
+    },
+    {
+      "start": 677.04,
+      "duration": 4.28,
+      "text": "initializing a vector database, which is"
+    },
+    {
+      "start": 679.04,
+      "duration": 3.28,
+      "text": "Chroma DB, and then we are also creating"
+    },
+    {
+      "start": 681.32,
+      "duration": 3.04,
+      "text": "a collection with the name"
+    },
+    {
+      "start": 682.32,
+      "duration": 3.2,
+      "text": "techcorp_docs. So, I'm going to create a"
+    },
+    {
+      "start": 684.36,
+      "duration": 3.52,
+      "text": "Python file with the name"
+    },
+    {
+      "start": 685.52,
+      "duration": 3.96,
+      "text": "init_vector_db.py."
+    },
+    {
+      "start": 687.88,
+      "duration": 3.0,
+      "text": "And then, paste the code present in this"
+    },
+    {
+      "start": 689.48,
+      "duration": 3.52,
+      "text": "particular section. So, let's create"
+    },
+    {
+      "start": 690.88,
+      "duration": 4.52,
+      "text": "this file, copy the code,"
+    },
+    {
+      "start": 693.0,
+      "duration": 4.839,
+      "text": "paste it here, save it,"
+    },
+    {
+      "start": 695.4,
+      "duration": 4.2,
+      "text": "and then run this using the command cd"
+    },
+    {
+      "start": 697.839,
+      "duration": 3.961,
+      "text": "inside this folder, and then run the"
+    },
+    {
+      "start": 699.6,
+      "duration": 3.76,
+      "text": "python init_vector_db.py."
+    },
+    {
+      "start": 701.8,
+      "duration": 2.92,
+      "text": "So, this command is to initialize vector"
+    },
+    {
+      "start": 703.36,
+      "duration": 3.16,
+      "text": "database and also create a collection"
+    },
+    {
+      "start": 704.72,
+      "duration": 3.76,
+      "text": "with the name techcorp_docs."
+    },
+    {
+      "start": 706.52,
+      "duration": 3.84,
+      "text": "Uh we are also going to be using HNSW"
+    },
+    {
+      "start": 708.48,
+      "duration": 3.08,
+      "text": "index and a cosine similarity search"
+    },
+    {
+      "start": 710.36,
+      "duration": 2.4,
+      "text": "option."
+    },
+    {
+      "start": 711.56,
+      "duration": 2.8,
+      "text": "If any of this does not make sense, you"
+    },
+    {
+      "start": 712.76,
+      "duration": 3.76,
+      "text": "can simply go and copy and ask ChatGPT"
+    },
+    {
+      "start": 714.36,
+      "duration": 3.96,
+      "text": "about it, but these are requirements for"
+    },
+    {
+      "start": 716.52,
+      "duration": 3.28,
+      "text": "you to set up RAG pipeline. So, now it"
+    },
+    {
+      "start": 718.32,
+      "duration": 2.96,
+      "text": "says AI brain is ready. Let's go and"
+    },
+    {
+      "start": 719.8,
+      "duration": 3.56,
+      "text": "check it if the initialization script"
+    },
+    {
+      "start": 721.28,
+      "duration": 5.0,
+      "text": "was created or if the Chroma DB"
+    },
+    {
+      "start": 723.36,
+      "duration": 4.36,
+      "text": "directory was created as well."
+    },
+    {
+      "start": 726.28,
+      "duration": 3.28,
+      "text": "Okay, so it's now created. Let's click"
+    },
+    {
+      "start": 727.72,
+      "duration": 4.28,
+      "text": "on next. So, the document is broken down"
+    },
+    {
+      "start": 729.56,
+      "duration": 4.2,
+      "text": "into different chunks for easy or better"
+    },
+    {
+      "start": 732.0,
+      "duration": 3.08,
+      "text": "search. This is another file that we"
+    },
+    {
+      "start": 733.76,
+      "duration": 3.44,
+      "text": "need to create. Uh this is a"
+    },
+    {
+      "start": 735.08,
+      "duration": 4.08,
+      "text": "test_chunking.py file, in which we have"
+    },
+    {
+      "start": 737.2,
+      "duration": 4.36,
+      "text": "a function here, which is going to start"
+    },
+    {
+      "start": 739.16,
+      "duration": 3.679,
+      "text": "chunking for documentation."
+    },
+    {
+      "start": 741.56,
+      "duration": 3.56,
+      "text": "And here is the sample documentation."
+    },
+    {
+      "start": 742.839,
+      "duration": 4.081,
+      "text": "So, I'm going to just copy and paste"
+    },
+    {
+      "start": 745.12,
+      "duration": 3.32,
+      "text": "by creating a file first. I'm going to"
+    },
+    {
+      "start": 746.92,
+      "duration": 3.6,
+      "text": "run this file now to see if the chunking"
+    },
+    {
+      "start": 748.44,
+      "duration": 4.16,
+      "text": "script was created. Chunking test output"
+    },
+    {
+      "start": 750.52,
+      "duration": 4.0,
+      "text": "exist and verify the chunking count"
+    },
+    {
+      "start": 752.6,
+      "duration": 4.08,
+      "text": "format as well. Now, it has completed"
+    },
+    {
+      "start": 754.52,
+      "duration": 3.12,
+      "text": "two chunks from 506 characters."
+    },
+    {
+      "start": 756.68,
+      "duration": 2.24,
+      "text": "So, you can see the output here. Let's"
+    },
+    {
+      "start": 757.64,
+      "duration": 2.72,
+      "text": "click on check button here, and"
+    },
+    {
+      "start": 758.92,
+      "duration": 2.919,
+      "text": "everything passes."
+    },
+    {
+      "start": 760.36,
+      "duration": 3.0,
+      "text": "So, now we have a database. The"
+    },
+    {
+      "start": 761.839,
+      "duration": 3.521,
+      "text": "documents have been chunked. We need to"
+    },
+    {
+      "start": 763.36,
+      "duration": 4.36,
+      "text": "now put the embeddings inside the"
+    },
+    {
+      "start": 765.36,
+      "duration": 4.24,
+      "text": "document. So, understand that pets"
+    },
+    {
+      "start": 767.72,
+      "duration": 3.92,
+      "text": "permitted means dogs are allowed. So,"
+    },
+    {
+      "start": 769.6,
+      "duration": 3.76,
+      "text": "the similarity percentage is 92%,"
+    },
+    {
+      "start": 771.64,
+      "duration": 3.24,
+      "text": "whereas remote work does not mean dogs"
+    },
+    {
+      "start": 773.36,
+      "duration": 3.2,
+      "text": "are allowed. So, the"
+    },
+    {
+      "start": 774.88,
+      "duration": 3.28,
+      "text": "percentage is 18%."
+    },
+    {
+      "start": 776.56,
+      "duration": 2.88,
+      "text": "Uh so, semantic search means finding"
+    },
+    {
+      "start": 778.16,
+      "duration": 2.12,
+      "text": "closest vectors, as we have already"
+    },
+    {
+      "start": 779.44,
+      "duration": 3.12,
+      "text": "known."
+    },
+    {
+      "start": 780.28,
+      "duration": 3.52,
+      "text": "Let's go and create this file."
+    },
+    {
+      "start": 782.56,
+      "duration": 4.0,
+      "text": "So, in this code, you are using"
+    },
+    {
+      "start": 783.8,
+      "duration": 5.12,
+      "text": "all-MiniLM model to convert words or"
+    },
+    {
+      "start": 786.56,
+      "duration": 5.2,
+      "text": "sentences into vectors. Each vector is"
+    },
+    {
+      "start": 788.92,
+      "duration": 5.32,
+      "text": "going to be converted into 384"
+    },
+    {
+      "start": 791.76,
+      "duration": 4.28,
+      "text": "dimensions or 84 numbers, as you can see"
+    },
+    {
+      "start": 794.24,
+      "duration": 4.76,
+      "text": "here. So, I'm going to just copy this,"
+    },
+    {
+      "start": 796.04,
+      "duration": 4.52,
+      "text": "put this inside the file."
+    },
+    {
+      "start": 799.0,
+      "duration": 4.32,
+      "text": "Okay, let's run this file again using"
+    },
+    {
+      "start": 800.56,
+      "duration": 5.4,
+      "text": "the command python test_embedding.py,"
+    },
+    {
+      "start": 803.32,
+      "duration": 4.24,
+      "text": "and this will create embeddings."
+    },
+    {
+      "start": 805.96,
+      "duration": 4.0,
+      "text": "So, you can see it's using the"
+    },
+    {
+      "start": 807.56,
+      "duration": 5.08,
+      "text": "all-MiniLM-62. This is a Hugging Face"
+    },
+    {
+      "start": 809.96,
+      "duration": 5.2,
+      "text": "model to convert"
+    },
+    {
+      "start": 812.64,
+      "duration": 5.199,
+      "text": "words into vectors, and"
+    },
+    {
+      "start": 815.16,
+      "duration": 5.2,
+      "text": "it has been done. Let's click on check."
+    },
+    {
+      "start": 817.839,
+      "duration": 5.121,
+      "text": "All right, let's click on next now."
+    },
+    {
+      "start": 820.36,
+      "duration": 4.84,
+      "text": "Okay, so far we have the documents"
+    },
+    {
+      "start": 822.96,
+      "duration": 4.4,
+      "text": "converted into vectors, and we also have"
+    },
+    {
+      "start": 825.2,
+      "duration": 3.8,
+      "text": "a database. But now, we need to put that"
+    },
+    {
+      "start": 827.36,
+      "duration": 3.24,
+      "text": "embeddings inside the vector database"
+    },
+    {
+      "start": 829.0,
+      "duration": 3.2,
+      "text": "that we created. So, the purpose is to"
+    },
+    {
+      "start": 830.6,
+      "duration": 3.84,
+      "text": "process all the documents using chunking"
+    },
+    {
+      "start": 832.2,
+      "duration": 3.52,
+      "text": "and embeddings into a into the database."
+    },
+    {
+      "start": 834.44,
+      "duration": 3.16,
+      "text": "So, in this code, we have the function"
+    },
+    {
+      "start": 835.72,
+      "duration": 3.8,
+      "text": "to ingest uh"
+    },
+    {
+      "start": 837.6,
+      "duration": 3.08,
+      "text": "the document vectors inside vector"
+    },
+    {
+      "start": 839.52,
+      "duration": 2.56,
+      "text": "database."
+    },
+    {
+      "start": 840.68,
+      "duration": 3.159,
+      "text": "I highly recommend you to understand the"
+    },
+    {
+      "start": 842.08,
+      "duration": 3.84,
+      "text": "code and what you're doing be- if you"
+    },
+    {
+      "start": 843.839,
+      "duration": 3.761,
+      "text": "are actually doing this lab with me,"
+    },
+    {
+      "start": 845.92,
+      "duration": 3.08,
+      "text": "or else it does not make sense. So,"
+    },
+    {
+      "start": 847.6,
+      "duration": 3.08,
+      "text": "CodeCloud provides you with every"
+    },
+    {
+      "start": 849.0,
+      "duration": 3.6,
+      "text": "command and every code, so you can"
+    },
+    {
+      "start": 850.68,
+      "duration": 3.76,
+      "text": "simply go and use it for your reference."
+    },
+    {
+      "start": 852.6,
+      "duration": 3.6,
+      "text": "If you don't understand it, you can also"
+    },
+    {
+      "start": 854.44,
+      "duration": 3.68,
+      "text": "go and ask ChatGPT about any line of"
+    },
+    {
+      "start": 856.2,
+      "duration": 3.639,
+      "text": "code you want."
+    },
+    {
+      "start": 858.12,
+      "duration": 3.76,
+      "text": "Okay, so I'm going to save this file and"
+    },
+    {
+      "start": 859.839,
+      "duration": 3.161,
+      "text": "then run the code again,"
+    },
+    {
+      "start": 861.88,
+      "duration": 3.36,
+      "text": "and this will load all the vector"
+    },
+    {
+      "start": 863.0,
+      "duration": 5.04,
+      "text": "embeddings inside vector database."
+    },
+    {
+      "start": 865.24,
+      "duration": 4.24,
+      "text": "So, you can see uh this first file has"
+    },
+    {
+      "start": 868.04,
+      "duration": 3.68,
+      "text": "been converted into nine chunks, and"
+    },
+    {
+      "start": 869.48,
+      "duration": 3.96,
+      "text": "then the vectors are created to store"
+    },
+    {
+      "start": 871.72,
+      "duration": 2.84,
+      "text": "inside the database. Let's click on"
+    },
+    {
+      "start": 873.44,
+      "duration": 2.399,
+      "text": "check if everything has been"
+    },
+    {
+      "start": 874.56,
+      "duration": 3.44,
+      "text": "successfully done."
+    },
+    {
+      "start": 875.839,
+      "duration": 3.841,
+      "text": "And now we move on to the next step. So,"
+    },
+    {
+      "start": 878.0,
+      "duration": 3.64,
+      "text": "in this step, uh we are going to be"
+    },
+    {
+      "start": 879.68,
+      "duration": 3.64,
+      "text": "asking a question, which will be"
+    },
+    {
+      "start": 881.64,
+      "duration": 3.08,
+      "text": "converted into vectors, and then a"
+    },
+    {
+      "start": 883.32,
+      "duration": 3.56,
+      "text": "vector search will be done on any of"
+    },
+    {
+      "start": 884.72,
+      "duration": 4.16,
+      "text": "these documents that have been inserted"
+    },
+    {
+      "start": 886.88,
+      "duration": 3.28,
+      "text": "inside the vector database. So, we have"
+    },
+    {
+      "start": 888.88,
+      "duration": 3.52,
+      "text": "The purpose is to build a semantic"
+    },
+    {
+      "start": 890.16,
+      "duration": 4.4,
+      "text": "search that understands meanings, not"
+    },
+    {
+      "start": 892.4,
+      "duration": 4.16,
+      "text": "just keywords. So, earlier in the SQL"
+    },
+    {
+      "start": 894.56,
+      "duration": 3.36,
+      "text": "search, it was a keyword search, but now"
+    },
+    {
+      "start": 896.56,
+      "duration": 4.2,
+      "text": "it's a semantic search because using"
+    },
+    {
+      "start": 897.92,
+      "duration": 5.335,
+      "text": "LLM, you can now find words with similar"
+    },
+    {
+      "start": 900.76,
+      "duration": 2.72,
+      "text": "meanings, not exact keywords."
+    },
+    {
+      "start": 903.255,
+      "duration": 1.945,
+      "text": ">> [snorts]"
+    },
+    {
+      "start": 903.48,
+      "duration": 3.64,
+      "text": ">> So, we're going to be creating uh this"
+    },
+    {
+      "start": 905.2,
+      "duration": 3.2,
+      "text": "file test_search.py."
+    },
+    {
+      "start": 907.12,
+      "duration": 3.04,
+      "text": "So, in this code, you have queries like,"
+    },
+    {
+      "start": 908.4,
+      "duration": 3.72,
+      "text": "\"What is the policy at TechCorp? Tell me"
+    },
+    {
+      "start": 910.16,
+      "duration": 4.36,
+      "text": "about Cloud Sync Pro features. How many"
+    },
+    {
+      "start": 912.12,
+      "duration": 3.8,
+      "text": "days of remote work are allowed?\""
+    },
+    {
+      "start": 914.52,
+      "duration": 2.76,
+      "text": "And it will do"
+    },
+    {
+      "start": 915.92,
+      "duration": 2.28,
+      "text": "a semantic search on the document"
+    },
+    {
+      "start": 917.28,
+      "duration": 2.4,
+      "text": "present. So, I'm going to paste this"
+    },
+    {
+      "start": 918.2,
+      "duration": 3.08,
+      "text": "code here,"
+    },
+    {
+      "start": 919.68,
+      "duration": 4.12,
+      "text": "and then run the command python"
+    },
+    {
+      "start": 921.28,
+      "duration": 4.88,
+      "text": "test_search.py."
+    },
+    {
+      "start": 923.8,
+      "duration": 4.52,
+      "text": "So, it will give me results of all the"
+    },
+    {
+      "start": 926.16,
+      "duration": 4.2,
+      "text": "responses for these questions. The"
+    },
+    {
+      "start": 928.32,
+      "duration": 4.12,
+      "text": "question was, \"What is the pet policy at"
+    },
+    {
+      "start": 930.36,
+      "duration": 4.36,
+      "text": "TechCorp?\" Top result by semantic"
+    },
+    {
+      "start": 932.44,
+      "duration": 4.6,
+      "text": "search. It is looking at this file,"
+    },
+    {
+      "start": 934.72,
+      "duration": 4.0,
+      "text": "which is pet_policy.md,"
+    },
+    {
+      "start": 937.04,
+      "duration": 3.76,
+      "text": "and it says employees with allergies"
+    },
+    {
+      "start": 938.72,
+      "duration": 5.04,
+      "text": "should notify HR if they have allergies"
+    },
+    {
+      "start": 940.8,
+      "duration": 5.24,
+      "text": "with pet. It also says that pets are not"
+    },
+    {
+      "start": 943.76,
+      "duration": 3.8,
+      "text": "allowed in cafeteria, con- conference"
+    },
+    {
+      "start": 946.04,
+      "duration": 3.48,
+      "text": "room, server room, etc., which is"
+    },
+    {
+      "start": 947.56,
+      "duration": 3.16,
+      "text": "exactly what this question is asking."
+    },
+    {
+      "start": 949.52,
+      "duration": 3.559,
+      "text": "The second question is, \"Tell me about"
+    },
+    {
+      "start": 950.72,
+      "duration": 4.76,
+      "text": "Cloud Sync Pro features.\" So, it is now"
+    },
+    {
+      "start": 953.079,
+      "duration": 4.841,
+      "text": "searching into another document to find"
+    },
+    {
+      "start": 955.48,
+      "duration": 4.28,
+      "text": "the answer, which is cloud_sync_pro.md."
+    },
+    {
+      "start": 957.92,
+      "duration": 2.84,
+      "text": "It says this particular file has 100%"
+    },
+    {
+      "start": 959.76,
+      "duration": 3.319,
+      "text": "match up for the question that you're"
+    },
+    {
+      "start": 960.76,
+      "duration": 4.44,
+      "text": "asking. This has 85% match, and this has"
+    },
+    {
+      "start": 963.079,
+      "duration": 3.401,
+      "text": "70% match. So, this just means that"
+    },
+    {
+      "start": 965.2,
+      "duration": 3.52,
+      "text": "whenever you ask a question, it is going"
+    },
+    {
+      "start": 966.48,
+      "duration": 3.84,
+      "text": "to do a similarity search on the vectors"
+    },
+    {
+      "start": 968.72,
+      "duration": 3.119,
+      "text": "present inside vector database,"
+    },
+    {
+      "start": 970.32,
+      "duration": 3.04,
+      "text": "referencing to all these documents,"
+    },
+    {
+      "start": 971.839,
+      "duration": 2.841,
+      "text": "because this is what we inserted inside"
+    },
+    {
+      "start": 973.36,
+      "duration": 2.8,
+      "text": "the document. And this is actually what"
+    },
+    {
+      "start": 974.68,
+      "duration": 3.24,
+      "text": "RAG is."
+    },
+    {
+      "start": 976.16,
+      "duration": 3.4,
+      "text": "Now, let's move on to the next thing"
+    },
+    {
+      "start": 977.92,
+      "duration": 2.52,
+      "text": "after we check if everything worked"
+    },
+    {
+      "start": 979.56,
+      "duration": 2.88,
+      "text": "here."
+    },
+    {
+      "start": 980.44,
+      "duration": 4.08,
+      "text": "Okay, task eight is to complete a RAG"
+    },
+    {
+      "start": 982.44,
+      "duration": 3.88,
+      "text": "pipeline test. Now, the purpose is to"
+    },
+    {
+      "start": 984.52,
+      "duration": 4.6,
+      "text": "test all the three phases, which is"
+    },
+    {
+      "start": 986.32,
+      "duration": 4.0,
+      "text": "retrieval, augmentation, and generation."
+    },
+    {
+      "start": 989.12,
+      "duration": 4.36,
+      "text": "So, I'm going to create another file,"
+    },
+    {
+      "start": 990.32,
+      "duration": 4.639,
+      "text": "which is test_rag_pipeline.py."
+    },
+    {
+      "start": 993.48,
+      "duration": 3.4,
+      "text": "So, I hope this makes sense. If not, you"
+    },
+    {
+      "start": 994.959,
+      "duration": 3.441,
+      "text": "have to do hands-on practice to actually"
+    },
+    {
+      "start": 996.88,
+      "duration": 3.16,
+      "text": "understand all this stuff. And if you"
+    },
+    {
+      "start": 998.4,
+      "duration": 2.92,
+      "text": "have not skipped any previous part of"
+    },
+    {
+      "start": 1000.04,
+      "duration": 3.28,
+      "text": "the video, you will definitely"
+    },
+    {
+      "start": 1001.32,
+      "duration": 4.0,
+      "text": "understand everything going on here. So,"
+    },
+    {
+      "start": 1003.32,
+      "duration": 4.12,
+      "text": "now I'm going to create a file, which is"
+    },
+    {
+      "start": 1005.32,
+      "duration": 3.6,
+      "text": "test_rag_pipeline.py."
+    },
+    {
+      "start": 1007.44,
+      "duration": 3.399,
+      "text": "All right, so the file executed"
+    },
+    {
+      "start": 1008.92,
+      "duration": 3.76,
+      "text": "properly, and here we have response. It"
+    },
+    {
+      "start": 1010.839,
+      "duration": 3.761,
+      "text": "says, \"What are the benefits of working"
+    },
+    {
+      "start": 1012.68,
+      "duration": 3.48,
+      "text": "at TechCorp?\" So, it first retrieve the"
+    },
+    {
+      "start": 1014.6,
+      "duration": 3.479,
+      "text": "information from the document and says"
+    },
+    {
+      "start": 1016.16,
+      "duration": 3.48,
+      "text": "found three relevant documents. Once it"
+    },
+    {
+      "start": 1018.079,
+      "duration": 2.961,
+      "text": "has information, it is now augmenting"
+    },
+    {
+      "start": 1019.64,
+      "duration": 3.24,
+      "text": "it, which means preparing context for"
+    },
+    {
+      "start": 1021.04,
+      "duration": 4.24,
+      "text": "AI. Then, it will give the information"
+    },
+    {
+      "start": 1022.88,
+      "duration": 4.16,
+      "text": "to LLM. LLM will prepare a nice answer"
+    },
+    {
+      "start": 1025.28,
+      "duration": 3.28,
+      "text": "and then give back the response,"
+    },
+    {
+      "start": 1027.04,
+      "duration": 3.639,
+      "text": "uh which says, \"Based on the TechCorp"
+    },
+    {
+      "start": 1028.56,
+      "duration": 4.0,
+      "text": "documents, employees enjoy comprehensive"
+    },
+    {
+      "start": 1030.679,
+      "duration": 3.961,
+      "text": "health insurance, 401k"
+    },
+    {
+      "start": 1032.56,
+      "duration": 3.6,
+      "text": "matching up to 6%, and these are all the"
+    },
+    {
+      "start": 1034.64,
+      "duration": 3.08,
+      "text": "different benefits of working at"
+    },
+    {
+      "start": 1036.16,
+      "duration": 3.32,
+      "text": "TechCorp, which means the RAG pipeline"
+    },
+    {
+      "start": 1037.72,
+      "duration": 3.04,
+      "text": "is working properly, and we can also"
+    },
+    {
+      "start": 1039.48,
+      "duration": 3.04,
+      "text": "check."
+    },
+    {
+      "start": 1040.76,
+      "duration": 4.319,
+      "text": "So, all the checks passed. Everything is"
+    },
+    {
+      "start": 1042.52,
+      "duration": 4.24,
+      "text": "working now. We need to just give a web"
+    },
+    {
+      "start": 1045.079,
+      "duration": 3.441,
+      "text": "interface so that users can go ahead and"
+    },
+    {
+      "start": 1046.76,
+      "duration": 3.96,
+      "text": "ask their question easily, rather than"
+    },
+    {
+      "start": 1048.52,
+      "duration": 4.12,
+      "text": "running through these scripts. Let's go"
+    },
+    {
+      "start": 1050.72,
+      "duration": 4.92,
+      "text": "and set up a Flask application, which is"
+    },
+    {
+      "start": 1052.64,
+      "duration": 4.64,
+      "text": "going to work on port 5252."
+    },
+    {
+      "start": 1055.64,
+      "duration": 4.8,
+      "text": "Okay, so the app is now running. You can"
+    },
+    {
+      "start": 1057.28,
+      "duration": 4.52,
+      "text": "see it's running on port 5252. To access"
+    },
+    {
+      "start": 1060.44,
+      "duration": 3.28,
+      "text": "it, you need to click on this three dot,"
+    },
+    {
+      "start": 1061.8,
+      "duration": 5.6,
+      "text": "and then click on view port option,"
+    },
+    {
+      "start": 1063.72,
+      "duration": 4.92,
+      "text": "and then choose the port, which is 5252,"
+    },
+    {
+      "start": 1067.4,
+      "duration": 2.6,
+      "text": "on which your app is running. Click on"
+    },
+    {
+      "start": 1068.64,
+      "duration": 3.32,
+      "text": "open port,"
+    },
+    {
+      "start": 1070.0,
+      "duration": 4.44,
+      "text": "and now it opens up a"
+    },
+    {
+      "start": 1071.96,
+      "duration": 3.32,
+      "text": "UI, where I can ask questions like, \"Can"
+    },
+    {
+      "start": 1074.44,
+      "duration": 2.239,
+      "text": "I"
+    },
+    {
+      "start": 1075.28,
+      "duration": 3.04,
+      "text": "bring my"
+    },
+    {
+      "start": 1076.679,
+      "duration": 3.921,
+      "text": "dog"
+    },
+    {
+      "start": 1078.32,
+      "duration": 5.0,
+      "text": "to the office"
+    },
+    {
+      "start": 1080.6,
+      "duration": 2.72,
+      "text": "on Monday?\""
+    },
+    {
+      "start": 1083.679,
+      "duration": 2.321,
+      "text": "So, based on TechCorp's documents,"
+    },
+    {
+      "start": 1084.96,
+      "duration": 3.48,
+      "text": "here's the relevant information."
+    },
+    {
+      "start": 1086.0,
+      "duration": 3.76,
+      "text": "TechCorp policy, da da da da da da. Dogs"
+    },
+    {
+      "start": 1088.44,
+      "duration": 3.6,
+      "text": "are welcome in office every Friday."
+    },
+    {
+      "start": 1089.76,
+      "duration": 4.12,
+      "text": "They're not welcomed on Monday. So, this"
+    },
+    {
+      "start": 1092.04,
+      "duration": 4.56,
+      "text": "gave me answer based on the document"
+    },
+    {
+      "start": 1093.88,
+      "duration": 4.0,
+      "text": "present inside uh pet_policy."
+    },
+    {
+      "start": 1096.6,
+      "duration": 2.64,
+      "text": "So, the source, as you can see, it's"
+    },
+    {
+      "start": 1097.88,
+      "duration": 3.56,
+      "text": "been referenced from this particular"
+    },
+    {
+      "start": 1099.24,
+      "duration": 3.4,
+      "text": "source. If I ask something like,"
+    },
+    {
+      "start": 1101.44,
+      "duration": 2.44,
+      "text": "\"Do I get"
+    },
+    {
+      "start": 1102.64,
+      "duration": 2.64,
+      "text": "family"
+    },
+    {
+      "start": 1103.88,
+      "duration": 3.2,
+      "text": "health"
+    },
+    {
+      "start": 1105.28,
+      "duration": 3.48,
+      "text": "insurance"
+    },
+    {
+      "start": 1107.08,
+      "duration": 3.92,
+      "text": "or just"
+    },
+    {
+      "start": 1108.76,
+      "duration": 4.0,
+      "text": "mine"
+    },
+    {
+      "start": 1111.0,
+      "duration": 3.8,
+      "text": "working"
+    },
+    {
+      "start": 1112.76,
+      "duration": 3.48,
+      "text": "in the company?\""
+    },
+    {
+      "start": 1114.8,
+      "duration": 3.52,
+      "text": "So, now this question is around benefits"
+    },
+    {
+      "start": 1116.24,
+      "duration": 5.96,
+      "text": "of working in a company at TechCorp, and"
+    },
+    {
+      "start": 1118.32,
+      "duration": 5.44,
+      "text": "it says based on the document,"
+    },
+    {
+      "start": 1122.2,
+      "duration": 4.36,
+      "text": "health and wellness,"
+    },
+    {
+      "start": 1123.76,
+      "duration": 4.72,
+      "text": "it covers 80% dependent, 100% employee,"
+    },
+    {
+      "start": 1126.56,
+      "duration": 3.2,
+      "text": "and da da da da da. So, this means now"
+    },
+    {
+      "start": 1128.48,
+      "duration": 3.12,
+      "text": "the RAG pipeline is"
+    },
+    {
+      "start": 1129.76,
+      "duration": 2.88,
+      "text": "working perfectly. So, you can now ask"
+    },
+    {
+      "start": 1131.6,
+      "duration": 3.44,
+      "text": "your questions, and it will give you a"
+    },
+    {
+      "start": 1132.64,
+      "duration": 4.279,
+      "text": "response from the document. It will not"
+    },
+    {
+      "start": 1135.04,
+      "duration": 3.8,
+      "text": "hallucinate or lie about the answers,"
+    },
+    {
+      "start": 1136.919,
+      "duration": 3.76,
+      "text": "which means RAG is working properly. So,"
+    },
+    {
+      "start": 1138.84,
+      "duration": 3.36,
+      "text": "your RAG system is now live, and try"
+    },
+    {
+      "start": 1140.679,
+      "duration": 3.641,
+      "text": "more questions about benefits, products,"
+    },
+    {
+      "start": 1142.2,
+      "duration": 4.32,
+      "text": "etc. So, you can go ahead and try this"
+    },
+    {
+      "start": 1144.32,
+      "duration": 4.2,
+      "text": "out yourself. The link for this lab is"
+    },
+    {
+      "start": 1146.52,
+      "duration": 3.36,
+      "text": "in description. This is completely free,"
+    },
+    {
+      "start": 1148.52,
+      "duration": 3.36,
+      "text": "so you don't have to pay or buy a"
+    },
+    {
+      "start": 1149.88,
+      "duration": 3.52,
+      "text": "CodeCloud subscription. Along with this"
+    },
+    {
+      "start": 1151.88,
+      "duration": 3.4,
+      "text": "lab, there are also other two labs that"
+    },
+    {
+      "start": 1153.4,
+      "duration": 4.44,
+      "text": "I highly recommend, uh which is this"
+    },
+    {
+      "start": 1155.28,
+      "duration": 4.32,
+      "text": "YouTube lab RAG uh crash course. This is"
+    },
+    {
+      "start": 1157.84,
+      "duration": 3.839,
+      "text": "again free, and this has all these"
+    },
+    {
+      "start": 1159.6,
+      "duration": 4.0,
+      "text": "different modules. And the last one is"
+    },
+    {
+      "start": 1161.679,
+      "duration": 3.361,
+      "text": "this one, which has all the labs. So,"
+    },
+    {
+      "start": 1163.6,
+      "duration": 2.8,
+      "text": "you have different RAG search methods."
+    },
+    {
+      "start": 1165.04,
+      "duration": 4.44,
+      "text": "If you want to go more deep, understand"
+    },
+    {
+      "start": 1166.4,
+      "duration": 5.04,
+      "text": "BM25, hybrid search, etc., etc., you can"
+    },
+    {
+      "start": 1169.48,
+      "duration": 3.16,
+      "text": "go and check this lab."
+    },
+    {
+      "start": 1171.44,
+      "duration": 2.44,
+      "text": "So,"
+    },
+    {
+      "start": 1172.64,
+      "duration": 2.92,
+      "text": "once this is done, you can go and try it"
+    },
+    {
+      "start": 1173.88,
+      "duration": 3.08,
+      "text": "out yourself. I hope this was"
+    },
+    {
+      "start": 1175.56,
+      "duration": 3.359,
+      "text": "informative."
+    },
+    {
+      "start": 1176.96,
+      "duration": 4.16,
+      "text": "So, this was our video on RAG, or"
+    },
+    {
+      "start": 1178.919,
+      "duration": 4.081,
+      "text": "retrieval augmented generation. I hope"
+    },
+    {
+      "start": 1181.12,
+      "duration": 3.72,
+      "text": "this video was informative. If you have"
+    },
+    {
+      "start": 1183.0,
+      "duration": 3.6,
+      "text": "any questions, any doubt, feel free to"
+    },
+    {
+      "start": 1184.84,
+      "duration": 3.56,
+      "text": "let me know in the comment section. And"
+    },
+    {
+      "start": 1186.6,
+      "duration": 4.28,
+      "text": "if you want me to create a separate,"
+    },
+    {
+      "start": 1188.4,
+      "duration": 4.68,
+      "text": "dedicated project on RAG, explaining all"
+    },
+    {
+      "start": 1190.88,
+      "duration": 3.84,
+      "text": "the settings like temperature, top K"
+    },
+    {
+      "start": 1193.08,
+      "duration": 3.32,
+      "text": "chunks, or how to work with different"
+    },
+    {
+      "start": 1194.72,
+      "duration": 3.64,
+      "text": "vector dimensions, or how to use"
+    },
+    {
+      "start": 1196.4,
+      "duration": 3.56,
+      "text": "Postgres as a vector database, let me"
+    },
+    {
+      "start": 1198.36,
+      "duration": 3.8,
+      "text": "know the comment section. I'm happy to"
+    },
+    {
+      "start": 1199.96,
+      "duration": 5.36,
+      "text": "create another video as well. See you in"
+    },
+    {
+      "start": 1202.16,
+      "duration": 3.16,
+      "text": "the next video. Bye-bye."
+    }
+  ]
+}

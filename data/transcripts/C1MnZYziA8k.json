@@ -1,0 +1,2401 @@
+{
+  "video": {
+    "id": "C1MnZYziA8k",
+    "title": "Day 4- AWS IAM Complete Course with Notes | Identity and Access Management Service",
+    "url": "https://www.youtube.com/watch?v=C1MnZYziA8k",
+    "duration": 1170,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.399,
+      "duration": 5.001,
+      "text": "hey everyone and welcome to this new"
+    },
+    {
+      "start": 2.32,
+      "duration": 5.279,
+      "text": "video in the AWS playlist in this video"
+    },
+    {
+      "start": 5.4,
+      "duration": 5.92,
+      "text": "I will teach you"
+    },
+    {
+      "start": 7.599,
+      "duration": 5.881,
+      "text": "awsam so AWS or identity access"
+    },
+    {
+      "start": 11.32,
+      "duration": 4.64,
+      "text": "management is used to provide access to"
+    },
+    {
+      "start": 13.48,
+      "duration": 4.879,
+      "text": "services or workloads in your AWS"
+    },
+    {
+      "start": 15.96,
+      "duration": 5.04,
+      "text": "account to users in your company or"
+    },
+    {
+      "start": 18.359,
+      "duration": 4.401,
+      "text": "maybe to other AWS Services if you are"
+    },
+    {
+      "start": 21.0,
+      "duration": 4.16,
+      "text": "new to this Channel please make sure to"
+    },
+    {
+      "start": 22.76,
+      "duration": 4.839,
+      "text": "check out other videos in this playlist"
+    },
+    {
+      "start": 25.16,
+      "duration": 4.439,
+      "text": "and also subscribe to Cloud Cham by the"
+    },
+    {
+      "start": 27.599,
+      "duration": 4.321,
+      "text": "end of this video you will understand"
+    },
+    {
+      "start": 29.599,
+      "duration": 4.841,
+      "text": "what is IM am how to use IM am as a"
+    },
+    {
+      "start": 31.92,
+      "duration": 4.84,
+      "text": "devops engineer what are users groups"
+    },
+    {
+      "start": 34.44,
+      "duration": 5.52,
+      "text": "roles and how to create them through"
+    },
+    {
+      "start": 36.76,
+      "duration": 5.76,
+      "text": "handson examples so let's get into it"
+    },
+    {
+      "start": 39.96,
+      "duration": 4.56,
+      "text": "okay let's go and sign in to my AWS"
+    },
+    {
+      "start": 42.52,
+      "duration": 4.64,
+      "text": "account notice there are two options"
+    },
+    {
+      "start": 44.52,
+      "duration": 5.28,
+      "text": "Here sign in using your root user or"
+    },
+    {
+      "start": 47.16,
+      "duration": 4.52,
+      "text": "sign in using I IM user you can log into"
+    },
+    {
+      "start": 49.8,
+      "duration": 3.88,
+      "text": "your account using root user by putting"
+    },
+    {
+      "start": 51.68,
+      "duration": 4.559,
+      "text": "the email ID that you use to create your"
+    },
+    {
+      "start": 53.68,
+      "duration": 5.16,
+      "text": "ads account you can also choose to sign"
+    },
+    {
+      "start": 56.239,
+      "duration": 4.761,
+      "text": "in using an IM user IM user will have"
+    },
+    {
+      "start": 58.84,
+      "duration": 4.359,
+      "text": "certain permissions whereas root user"
+    },
+    {
+      "start": 61.0,
+      "duration": 4.479,
+      "text": "has all the permissions which could be"
+    },
+    {
+      "start": 63.199,
+      "duration": 5.001,
+      "text": "checking Billings or deleting the"
+    },
+    {
+      "start": 65.479,
+      "duration": 5.121,
+      "text": "account completely this is why AWS does"
+    },
+    {
+      "start": 68.2,
+      "duration": 5.32,
+      "text": "not recommend you using or sharing your"
+    },
+    {
+      "start": 70.6,
+      "duration": 5.199,
+      "text": "root user credential but for now I don't"
+    },
+    {
+      "start": 73.52,
+      "duration": 4.599,
+      "text": "have any IM user so I will be showing"
+    },
+    {
+      "start": 75.799,
+      "duration": 4.041,
+      "text": "you how to create an IM user what is an"
+    },
+    {
+      "start": 78.119,
+      "duration": 3.96,
+      "text": "IM user how to get permissions and"
+    },
+    {
+      "start": 79.84,
+      "duration": 4.48,
+      "text": "everything in this video let's go ahead"
+    },
+    {
+      "start": 82.079,
+      "duration": 4.0,
+      "text": "and log into my account now I will go"
+    },
+    {
+      "start": 84.32,
+      "duration": 5.4,
+      "text": "ahead and log into my account using root"
+    },
+    {
+      "start": 86.079,
+      "duration": 5.481,
+      "text": "user all right so I'm now inside my AWS"
+    },
+    {
+      "start": 89.72,
+      "duration": 4.359,
+      "text": "account account and you can find IM am"
+    },
+    {
+      "start": 91.56,
+      "duration": 5.239,
+      "text": "service in the security identity and"
+    },
+    {
+      "start": 94.079,
+      "duration": 5.561,
+      "text": "compliance section IM am which is used"
+    },
+    {
+      "start": 96.799,
+      "duration": 4.521,
+      "text": "for managing access to AWS resources if"
+    },
+    {
+      "start": 99.64,
+      "duration": 3.799,
+      "text": "you don't find it here you can just"
+    },
+    {
+      "start": 101.32,
+      "duration": 4.799,
+      "text": "search for IM in the search bar and you"
+    },
+    {
+      "start": 103.439,
+      "duration": 4.841,
+      "text": "can go to IM IM service so the top"
+    },
+    {
+      "start": 106.119,
+      "duration": 5.201,
+      "text": "features of this service includes groups"
+    },
+    {
+      "start": 108.28,
+      "duration": 4.72,
+      "text": "users roles policies we are going to be"
+    },
+    {
+      "start": 111.32,
+      "duration": 4.68,
+      "text": "learning about what are users groups"
+    },
+    {
+      "start": 113.0,
+      "duration": 4.799,
+      "text": "roles and how to attach policies to them"
+    },
+    {
+      "start": 116.0,
+      "duration": 5.56,
+      "text": "so you can see right now I have three"
+    },
+    {
+      "start": 117.799,
+      "duration": 5.68,
+      "text": "different users Alex intern and rajes if"
+    },
+    {
+      "start": 121.56,
+      "duration": 3.879,
+      "text": "you want to give access to your AWS"
+    },
+    {
+      "start": 123.479,
+      "duration": 4.041,
+      "text": "Services you should be creating users"
+    },
+    {
+      "start": 125.439,
+      "duration": 4.561,
+      "text": "for them rather than giving them root"
+    },
+    {
+      "start": 127.52,
+      "duration": 6.439,
+      "text": "user creden so you can see this intern"
+    },
+    {
+      "start": 130.0,
+      "duration": 6.4,
+      "text": "user has access to ec2 read only access"
+    },
+    {
+      "start": 133.959,
+      "duration": 4.36,
+      "text": "also has access to VPC full access"
+    },
+    {
+      "start": 136.4,
+      "duration": 4.72,
+      "text": "permissions are given to users groups or"
+    },
+    {
+      "start": 138.319,
+      "duration": 4.961,
+      "text": "roles using policies now to explain you"
+    },
+    {
+      "start": 141.12,
+      "duration": 5.04,
+      "text": "this more properly before we go ahead"
+    },
+    {
+      "start": 143.28,
+      "duration": 5.2,
+      "text": "and create any users or do some Hands-On"
+    },
+    {
+      "start": 146.16,
+      "duration": 6.04,
+      "text": "let's look into some Theory now when"
+    },
+    {
+      "start": 148.48,
+      "duration": 6.32,
+      "text": "learning about AWS IM am or identity"
+    },
+    {
+      "start": 152.2,
+      "duration": 5.92,
+      "text": "access management you need to understand"
+    },
+    {
+      "start": 154.8,
+      "duration": 7.88,
+      "text": "what are am users and how they work what"
+    },
+    {
+      "start": 158.12,
+      "duration": 7.64,
+      "text": "are I am groups what are I am roles and"
+    },
+    {
+      "start": 162.68,
+      "duration": 5.32,
+      "text": "what are IM am policies so we will be"
+    },
+    {
+      "start": 165.76,
+      "duration": 5.36,
+      "text": "learning each one of them starting with"
+    },
+    {
+      "start": 168.0,
+      "duration": 5.72,
+      "text": "I am user so to understand what is I am"
+    },
+    {
+      "start": 171.12,
+      "duration": 4.199,
+      "text": "user let me help you with an example so"
+    },
+    {
+      "start": 173.72,
+      "duration": 4.08,
+      "text": "let's say there's a new developer in"
+    },
+    {
+      "start": 175.319,
+      "duration": 4.64,
+      "text": "your company and as a devops engineer"
+    },
+    {
+      "start": 177.8,
+      "duration": 5.159,
+      "text": "you need to give this developer access"
+    },
+    {
+      "start": 179.959,
+      "duration": 6.041,
+      "text": "to ec2 service so we can start working"
+    },
+    {
+      "start": 182.959,
+      "duration": 6.321,
+      "text": "on the website which is present on ec2"
+    },
+    {
+      "start": 186.0,
+      "duration": 6.0,
+      "text": "so using AWS IM user you can give access"
+    },
+    {
+      "start": 189.28,
+      "duration": 5.64,
+      "text": "to physical users in your company to a"
+    },
+    {
+      "start": 192.0,
+      "duration": 4.599,
+      "text": "particular service in AWS let me show"
+    },
+    {
+      "start": 194.92,
+      "duration": 5.36,
+      "text": "you how it is done with the Hands-On"
+    },
+    {
+      "start": 196.599,
+      "duration": 5.64,
+      "text": "demo of creating an IM user to create an"
+    },
+    {
+      "start": 200.28,
+      "duration": 4.0,
+      "text": "IM IM user you need to go to this IM"
+    },
+    {
+      "start": 202.239,
+      "duration": 5.08,
+      "text": "service in the dashboard you can see"
+    },
+    {
+      "start": 204.28,
+      "duration": 5.039,
+      "text": "users on the left side right now I have"
+    },
+    {
+      "start": 207.319,
+      "duration": 3.881,
+      "text": "these three users if I want to create a"
+    },
+    {
+      "start": 209.319,
+      "duration": 4.56,
+      "text": "new one I'm going to click on create"
+    },
+    {
+      "start": 211.2,
+      "duration": 4.679,
+      "text": "user button once I click on this it is"
+    },
+    {
+      "start": 213.879,
+      "duration": 5.28,
+      "text": "asking me for a username let's say the"
+    },
+    {
+      "start": 215.879,
+      "duration": 5.681,
+      "text": "new developer name is Brian I want Brian"
+    },
+    {
+      "start": 219.159,
+      "duration": 4.64,
+      "text": "to access AWS Management console which"
+    },
+    {
+      "start": 221.56,
+      "duration": 6.399,
+      "text": "is this console here and I don't want to"
+    },
+    {
+      "start": 223.799,
+      "duration": 5.72,
+      "text": "create Center I want to create an i user"
+    },
+    {
+      "start": 227.959,
+      "duration": 3.601,
+      "text": "then you can choose to give the password"
+    },
+    {
+      "start": 229.519,
+      "duration": 4.241,
+      "text": "which could be autogenerated password by"
+    },
+    {
+      "start": 231.56,
+      "duration": 4.44,
+      "text": "AWS or you can choose to give your own"
+    },
+    {
+      "start": 233.76,
+      "duration": 4.72,
+      "text": "custom password if you want I'm going to"
+    },
+    {
+      "start": 236.0,
+      "duration": 4.28,
+      "text": "select autogenerated password and I'm"
+    },
+    {
+      "start": 238.48,
+      "duration": 4.24,
+      "text": "going to check the option which is when"
+    },
+    {
+      "start": 240.28,
+      "duration": 4.959,
+      "text": "to let users create a new password at"
+    },
+    {
+      "start": 242.72,
+      "duration": 4.76,
+      "text": "next signin so when I give this"
+    },
+    {
+      "start": 245.239,
+      "duration": 4.64,
+      "text": "permission to change the password AWS"
+    },
+    {
+      "start": 247.48,
+      "duration": 4.8,
+      "text": "will automatically give this user I am"
+    },
+    {
+      "start": 249.879,
+      "duration": 4.64,
+      "text": "user change password policy which will"
+    },
+    {
+      "start": 252.28,
+      "duration": 4.519,
+      "text": "allow them to change their own password"
+    },
+    {
+      "start": 254.519,
+      "duration": 5.24,
+      "text": "if I show you what this policy does you"
+    },
+    {
+      "start": 256.799,
+      "duration": 5.921,
+      "text": "can check here using this policy the"
+    },
+    {
+      "start": 259.759,
+      "duration": 5.041,
+      "text": "user can change the password allow"
+    },
+    {
+      "start": 262.72,
+      "duration": 4.52,
+      "text": "access to change password for this"
+    },
+    {
+      "start": 264.8,
+      "duration": 5.2,
+      "text": "particular username also allow to get"
+    },
+    {
+      "start": 267.24,
+      "duration": 5.04,
+      "text": "password policy and you can also see the"
+    },
+    {
+      "start": 270.0,
+      "duration": 4.52,
+      "text": "same in the summary option where you get"
+    },
+    {
+      "start": 272.28,
+      "duration": 3.84,
+      "text": "access to IM service to read and write"
+    },
+    {
+      "start": 274.52,
+      "duration": 3.88,
+      "text": "on multiple"
+    },
+    {
+      "start": 276.12,
+      "duration": 3.76,
+      "text": "resources so I'm going to check this"
+    },
+    {
+      "start": 278.4,
+      "duration": 3.28,
+      "text": "which means automatically we are"
+    },
+    {
+      "start": 279.88,
+      "duration": 4.64,
+      "text": "attaching the policy which is I is a"
+    },
+    {
+      "start": 281.68,
+      "duration": 5.04,
+      "text": "change passord policy in AWS if you want"
+    },
+    {
+      "start": 284.52,
+      "duration": 4.32,
+      "text": "to give access to users groups and roles"
+    },
+    {
+      "start": 286.72,
+      "duration": 4.8,
+      "text": "you need to attach a policy similar to"
+    },
+    {
+      "start": 288.84,
+      "duration": 5.28,
+      "text": "this according to our scenario we want"
+    },
+    {
+      "start": 291.52,
+      "duration": 4.44,
+      "text": "Brian user to get access to EC tool so"
+    },
+    {
+      "start": 294.12,
+      "duration": 4.04,
+      "text": "it can start working on the website"
+    },
+    {
+      "start": 295.96,
+      "duration": 4.04,
+      "text": "which is on as instance I'm going to"
+    },
+    {
+      "start": 298.16,
+      "duration": 4.36,
+      "text": "click on next and if you want to give"
+    },
+    {
+      "start": 300.0,
+      "duration": 5.08,
+      "text": "access to an IM user you can do it three"
+    },
+    {
+      "start": 302.52,
+      "duration": 4.239,
+      "text": "ways either adding the user to a group"
+    },
+    {
+      "start": 305.08,
+      "duration": 4.44,
+      "text": "or by copying a permission from an"
+    },
+    {
+      "start": 306.759,
+      "duration": 5.041,
+      "text": "existing user to Brian or attaching"
+    },
+    {
+      "start": 309.52,
+      "duration": 4.84,
+      "text": "policies directly right now I don't have"
+    },
+    {
+      "start": 311.8,
+      "duration": 5.08,
+      "text": "any Group which has only ec2 access so"
+    },
+    {
+      "start": 314.36,
+      "duration": 4.839,
+      "text": "I'm not going to attach that I also"
+    },
+    {
+      "start": 316.88,
+      "duration": 4.28,
+      "text": "don't have any users which only have ec2"
+    },
+    {
+      "start": 319.199,
+      "duration": 4.0,
+      "text": "access they have more than ec2 so I'm"
+    },
+    {
+      "start": 321.16,
+      "duration": 3.4,
+      "text": "going to attach policies directly and"
+    },
+    {
+      "start": 323.199,
+      "duration": 3.361,
+      "text": "here you get the list of all the"
+    },
+    {
+      "start": 324.56,
+      "duration": 4.32,
+      "text": "different policies that are managed by"
+    },
+    {
+      "start": 326.56,
+      "duration": 5.199,
+      "text": "AWS although you can also create your"
+    },
+    {
+      "start": 328.88,
+      "duration": 4.96,
+      "text": "own policy so I want to attach ec2"
+    },
+    {
+      "start": 331.759,
+      "duration": 3.761,
+      "text": "access policy so let's search for ec2"
+    },
+    {
+      "start": 333.84,
+      "duration": 4.479,
+      "text": "here and you get all the policies"
+    },
+    {
+      "start": 335.52,
+      "duration": 5.32,
+      "text": "related to ec2 you can check this one is"
+    },
+    {
+      "start": 338.319,
+      "duration": 6.201,
+      "text": "ec2 full access policy and if I click on"
+    },
+    {
+      "start": 340.84,
+      "duration": 6.359,
+      "text": "this plus icon it shows me allow all ec2"
+    },
+    {
+      "start": 344.52,
+      "duration": 4.76,
+      "text": "actions on every resource allow all"
+    },
+    {
+      "start": 347.199,
+      "duration": 4.12,
+      "text": "elastic load balancing actions on every"
+    },
+    {
+      "start": 349.28,
+      "duration": 5.08,
+      "text": "resource so here you get all actions"
+    },
+    {
+      "start": 351.319,
+      "duration": 5.481,
+      "text": "which means EC Pro full access similarly"
+    },
+    {
+      "start": 354.36,
+      "duration": 4.559,
+      "text": "if you check this one this is reown the"
+    },
+    {
+      "start": 356.8,
+      "duration": 4.64,
+      "text": "access so you are only going to get"
+    },
+    {
+      "start": 358.919,
+      "duration": 4.041,
+      "text": "describe access access not full access"
+    },
+    {
+      "start": 361.44,
+      "duration": 4.039,
+      "text": "so I'm going to attach Inc to full"
+    },
+    {
+      "start": 362.96,
+      "duration": 5.0,
+      "text": "access click on next and I can review"
+    },
+    {
+      "start": 365.479,
+      "duration": 4.321,
+      "text": "all the settings so the username is B"
+    },
+    {
+      "start": 367.96,
+      "duration": 4.12,
+      "text": "password is autogenerated I want the"
+    },
+    {
+      "start": 369.8,
+      "duration": 4.839,
+      "text": "user to reset it policies attached"
+    },
+    {
+      "start": 372.08,
+      "duration": 5.119,
+      "text": "include Amazon res P access and also I"
+    },
+    {
+      "start": 374.639,
+      "duration": 4.481,
+      "text": "am user change because of this and"
+    },
+    {
+      "start": 377.199,
+      "duration": 4.361,
+      "text": "that's my user so I'm going to click on"
+    },
+    {
+      "start": 379.12,
+      "duration": 5.079,
+      "text": "create user and this will go ahead and"
+    },
+    {
+      "start": 381.56,
+      "duration": 5.32,
+      "text": "create a user for me now I can send this"
+    },
+    {
+      "start": 384.199,
+      "duration": 5.56,
+      "text": "user details to Brian on or I can also"
+    },
+    {
+      "start": 386.88,
+      "duration": 5.56,
+      "text": "download CSV I want to download CSV now"
+    },
+    {
+      "start": 389.759,
+      "duration": 5.16,
+      "text": "and let's sign in to myws account using"
+    },
+    {
+      "start": 392.44,
+      "duration": 6.08,
+      "text": "Brian credentials to see if Brian can"
+    },
+    {
+      "start": 394.919,
+      "duration": 5.481,
+      "text": "actually access ec2 or any other service"
+    },
+    {
+      "start": 398.52,
+      "duration": 3.76,
+      "text": "I'm going to open up incognito mode"
+    },
+    {
+      "start": 400.4,
+      "duration": 4.96,
+      "text": "because you cannot have two sessions in"
+    },
+    {
+      "start": 402.28,
+      "duration": 6.199,
+      "text": "a browser now when I paste the signin"
+    },
+    {
+      "start": 405.36,
+      "duration": 5.559,
+      "text": "link present here which includes my"
+    },
+    {
+      "start": 408.479,
+      "duration": 6.081,
+      "text": "account ID I will be then able to log to"
+    },
+    {
+      "start": 410.919,
+      "duration": 6.56,
+      "text": "my account using I user so you can see"
+    },
+    {
+      "start": 414.56,
+      "duration": 5.28,
+      "text": "now the account ID is here username is"
+    },
+    {
+      "start": 417.479,
+      "duration": 3.16,
+      "text": "Brian and the password is the author"
+    },
+    {
+      "start": 419.84,
+      "duration": 2.88,
+      "text": "your"
+    },
+    {
+      "start": 420.639,
+      "duration": 3.321,
+      "text": "password once I click on this you can"
+    },
+    {
+      "start": 422.72,
+      "duration": 2.84,
+      "text": "see it's asking me to change the"
+    },
+    {
+      "start": 423.96,
+      "duration": 5.84,
+      "text": "password because we have enabled"
+    },
+    {
+      "start": 425.56,
+      "duration": 6.96,
+      "text": "password reset option let's put the"
+    },
+    {
+      "start": 429.8,
+      "duration": 5.6,
+      "text": "password once I do this now I going to"
+    },
+    {
+      "start": 432.52,
+      "duration": 6.92,
+      "text": "be logged in to my AWS account using the"
+    },
+    {
+      "start": 435.4,
+      "duration": 5.96,
+      "text": "imim user Brian which you can see here"
+    },
+    {
+      "start": 439.44,
+      "duration": 3.8,
+      "text": "according to the policies attached Brian"
+    },
+    {
+      "start": 441.36,
+      "duration": 5.239,
+      "text": "should be able to do anything he wants"
+    },
+    {
+      "start": 443.24,
+      "duration": 5.679,
+      "text": "in ec2 because ec2 is given full access"
+    },
+    {
+      "start": 446.599,
+      "duration": 4.481,
+      "text": "so Brian can create new instances Brian"
+    },
+    {
+      "start": 448.919,
+      "duration": 4.481,
+      "text": "can delete any instances or can also"
+    },
+    {
+      "start": 451.08,
+      "duration": 3.92,
+      "text": "stop them let me see if Brian can"
+    },
+    {
+      "start": 453.4,
+      "duration": 4.44,
+      "text": "actually see the instance in the North"
+    },
+    {
+      "start": 455.0,
+      "duration": 4.56,
+      "text": "Virginia region if Brian has access he"
+    },
+    {
+      "start": 457.84,
+      "duration": 3.84,
+      "text": "would be able to delete this instance"
+    },
+    {
+      "start": 459.56,
+      "duration": 5.28,
+      "text": "right power instance is install right"
+    },
+    {
+      "start": 461.68,
+      "duration": 5.6,
+      "text": "click on instance State delete"
+    },
+    {
+      "start": 464.84,
+      "duration": 5.359,
+      "text": "instance I have successfully deleted the"
+    },
+    {
+      "start": 467.28,
+      "duration": 5.599,
+      "text": "instance only because B has access to me"
+    },
+    {
+      "start": 470.199,
+      "duration": 5.041,
+      "text": "seeking whereas if I go to S3 and see"
+    },
+    {
+      "start": 472.879,
+      "duration": 4.641,
+      "text": "what buckets I have in my S3"
+    },
+    {
+      "start": 475.24,
+      "duration": 4.72,
+      "text": "buckets will not be able to check any"
+    },
+    {
+      "start": 477.52,
+      "duration": 4.56,
+      "text": "buckets or not even create a bucket"
+    },
+    {
+      "start": 479.96,
+      "duration": 4.28,
+      "text": "because you don't have permissions so"
+    },
+    {
+      "start": 482.08,
+      "duration": 3.959,
+      "text": "list a bucket I cannot create a bucket"
+    },
+    {
+      "start": 484.24,
+      "duration": 4.28,
+      "text": "because I don't have permissions so this"
+    },
+    {
+      "start": 486.039,
+      "duration": 4.84,
+      "text": "is how you create IM user and give them"
+    },
+    {
+      "start": 488.52,
+      "duration": 5.359,
+      "text": "only required access rather than giving"
+    },
+    {
+      "start": 490.879,
+      "duration": 4.921,
+      "text": "them all access according to aw's best"
+    },
+    {
+      "start": 493.879,
+      "duration": 4.28,
+      "text": "practice you should be giving access"
+    },
+    {
+      "start": 495.8,
+      "duration": 4.88,
+      "text": "only to required Services rather than"
+    },
+    {
+      "start": 498.159,
+      "duration": 6.16,
+      "text": "giving them extra permissions which is"
+    },
+    {
+      "start": 500.68,
+      "duration": 6.199,
+      "text": "also known as least rage principle so"
+    },
+    {
+      "start": 504.319,
+      "duration": 5.84,
+      "text": "this is how you create an IM IM user"
+    },
+    {
+      "start": 506.879,
+      "duration": 5.481,
+      "text": "let's talk about IM IM user groups"
+    },
+    {
+      "start": 510.159,
+      "duration": 4.601,
+      "text": "so I am user group is a collection of I"
+    },
+    {
+      "start": 512.36,
+      "duration": 4.72,
+      "text": "am users use groups to specify"
+    },
+    {
+      "start": 514.76,
+      "duration": 4.759,
+      "text": "permissions for collection of users in"
+    },
+    {
+      "start": 517.08,
+      "duration": 4.68,
+      "text": "simple words IM am user group is just a"
+    },
+    {
+      "start": 519.519,
+      "duration": 4.44,
+      "text": "collection of I am users so let's say"
+    },
+    {
+      "start": 521.76,
+      "duration": 4.6,
+      "text": "along with Brian there are four more"
+    },
+    {
+      "start": 523.959,
+      "duration": 4.681,
+      "text": "users that you want to manage so instead"
+    },
+    {
+      "start": 526.36,
+      "duration": 4.36,
+      "text": "of managing them singularly you can put"
+    },
+    {
+      "start": 528.64,
+      "duration": 4.52,
+      "text": "them all in the group and manage them"
+    },
+    {
+      "start": 530.72,
+      "duration": 4.28,
+      "text": "all at once let me show you an example"
+    },
+    {
+      "start": 533.16,
+      "duration": 4.08,
+      "text": "let's go ahead and create a group I want"
+    },
+    {
+      "start": 535.0,
+      "duration": 4.48,
+      "text": "to create a group called developers I'll"
+    },
+    {
+      "start": 537.24,
+      "duration": 6.56,
+      "text": "say developers and in this group I want"
+    },
+    {
+      "start": 539.48,
+      "duration": 7.16,
+      "text": "want to put Brian Alex and rajes which"
+    },
+    {
+      "start": 543.8,
+      "duration": 5.279,
+      "text": "are three developers in my company so"
+    },
+    {
+      "start": 546.64,
+      "duration": 5.639,
+      "text": "now I want this three users to have same"
+    },
+    {
+      "start": 549.079,
+      "duration": 5.041,
+      "text": "permissions which is maling RDS because"
+    },
+    {
+      "start": 552.279,
+      "duration": 4.601,
+      "text": "they all working on the database right"
+    },
+    {
+      "start": 554.12,
+      "duration": 5.6,
+      "text": "now so I will them Amazon RDS full"
+    },
+    {
+      "start": 556.88,
+      "duration": 4.8,
+      "text": "access Amazon RDS is a database service"
+    },
+    {
+      "start": 559.72,
+      "duration": 4.52,
+      "text": "in AWS and we will be learning about"
+    },
+    {
+      "start": 561.68,
+      "duration": 5.8,
+      "text": "that according to this policy you giving"
+    },
+    {
+      "start": 564.24,
+      "duration": 5.36,
+      "text": "all actions on RDS database so they can"
+    },
+    {
+      "start": 567.48,
+      "duration": 4.32,
+      "text": "do anything like creating databases"
+    },
+    {
+      "start": 569.6,
+      "duration": 4.239,
+      "text": "database changing Security Group and lot"
+    },
+    {
+      "start": 571.8,
+      "duration": 4.36,
+      "text": "more I'm going to go ahead and click on"
+    },
+    {
+      "start": 573.839,
+      "duration": 4.721,
+      "text": "create music group once this group is"
+    },
+    {
+      "start": 576.16,
+      "duration": 5.0,
+      "text": "created I will be able to manage all"
+    },
+    {
+      "start": 578.56,
+      "duration": 4.56,
+      "text": "these different users at once using the"
+    },
+    {
+      "start": 581.16,
+      "duration": 4.48,
+      "text": "user group this is actually a best"
+    },
+    {
+      "start": 583.12,
+      "duration": 4.8,
+      "text": "practice so rather than managing a user"
+    },
+    {
+      "start": 585.64,
+      "duration": 5.0,
+      "text": "individually you can put them in a group"
+    },
+    {
+      "start": 587.92,
+      "duration": 5.12,
+      "text": "and manage them all at once so now you"
+    },
+    {
+      "start": 590.64,
+      "duration": 4.72,
+      "text": "can see when I click on Brian here Brian"
+    },
+    {
+      "start": 593.04,
+      "duration": 4.72,
+      "text": "will have its own existing policies"
+    },
+    {
+      "start": 595.36,
+      "duration": 5.64,
+      "text": "along with RDS full access which is"
+    },
+    {
+      "start": 597.76,
+      "duration": 5.48,
+      "text": "provided by the group develop"
+    },
+    {
+      "start": 601.0,
+      "duration": 4.279,
+      "text": "so now if there's an any new user who is"
+    },
+    {
+      "start": 603.24,
+      "duration": 3.88,
+      "text": "also a developer rather than giving them"
+    },
+    {
+      "start": 605.279,
+      "duration": 3.961,
+      "text": "access separately we can directly put"
+    },
+    {
+      "start": 607.12,
+      "duration": 4.839,
+      "text": "them in a group so let's quickly do that"
+    },
+    {
+      "start": 609.24,
+      "duration": 5.279,
+      "text": "here I'm going to click a create a user"
+    },
+    {
+      "start": 611.959,
+      "duration": 4.681,
+      "text": "and name this as new Dev or new"
+    },
+    {
+      "start": 614.519,
+      "duration": 4.841,
+      "text": "developer I want"
+    },
+    {
+      "start": 616.64,
+      "duration": 5.48,
+      "text": "the access to aw Management console"
+    },
+    {
+      "start": 619.36,
+      "duration": 6.08,
+      "text": "autogenerated password uh I don't want"
+    },
+    {
+      "start": 622.12,
+      "duration": 4.64,
+      "text": "them in the password cck on next and we"
+    },
+    {
+      "start": 625.44,
+      "duration": 2.72,
+      "text": "going to put them in a group named as"
+    },
+    {
+      "start": 626.76,
+      "duration": 4.36,
+      "text": "developer and they will be getting the"
+    },
+    {
+      "start": 628.16,
+      "duration": 6.64,
+      "text": "access which is r full access and click"
+    },
+    {
+      "start": 631.12,
+      "duration": 5.36,
+      "text": "on next click on the create user now if"
+    },
+    {
+      "start": 634.8,
+      "duration": 4.56,
+      "text": "you look at this user here by clicking"
+    },
+    {
+      "start": 636.48,
+      "duration": 6.08,
+      "text": "on new user you will be able to see that"
+    },
+    {
+      "start": 639.36,
+      "duration": 6.44,
+      "text": "this user has RDS full access provided"
+    },
+    {
+      "start": 642.56,
+      "duration": 5.12,
+      "text": "by the group now I can manage this user"
+    },
+    {
+      "start": 645.8,
+      "duration": 4.56,
+      "text": "because it is in the group if it is out"
+    },
+    {
+      "start": 647.68,
+      "duration": 4.839,
+      "text": "of the group we'll have no permissions"
+    },
+    {
+      "start": 650.36,
+      "duration": 5.159,
+      "text": "attached so this is how you create a"
+    },
+    {
+      "start": 652.519,
+      "duration": 4.961,
+      "text": "group now an IM user can be in a single"
+    },
+    {
+      "start": 655.519,
+      "duration": 4.56,
+      "text": "group it can also be in multiple groups"
+    },
+    {
+      "start": 657.48,
+      "duration": 4.56,
+      "text": "and it can also be in no group so this"
+    },
+    {
+      "start": 660.079,
+      "duration": 5.121,
+      "text": "is IM am user group used to manage"
+    },
+    {
+      "start": 662.04,
+      "duration": 6.12,
+      "text": "collection of IM am users now let's talk"
+    },
+    {
+      "start": 665.2,
+      "duration": 4.879,
+      "text": "about IM am policies I am policies are"
+    },
+    {
+      "start": 668.16,
+      "duration": 4.799,
+      "text": "responsible to give permissions and"
+    },
+    {
+      "start": 670.079,
+      "duration": 5.481,
+      "text": "Define what can a user group and role"
+    },
+    {
+      "start": 672.959,
+      "duration": 5.56,
+      "text": "access in your AWS account you can see"
+    },
+    {
+      "start": 675.56,
+      "duration": 5.6,
+      "text": "here a policy is an object in AWS that"
+    },
+    {
+      "start": 678.519,
+      "duration": 5.801,
+      "text": "defines permission and this is what an i"
+    },
+    {
+      "start": 681.16,
+      "duration": 5.679,
+      "text": "policy looks like it is a Json document"
+    },
+    {
+      "start": 684.32,
+      "duration": 4.199,
+      "text": "that defines what should be allowed or"
+    },
+    {
+      "start": 686.839,
+      "duration": 4.321,
+      "text": "what access should be allowed in what"
+    },
+    {
+      "start": 688.519,
+      "duration": 4.601,
+      "text": "resource for example if you check this"
+    },
+    {
+      "start": 691.16,
+      "duration": 5.64,
+      "text": "policy here which is the administrative"
+    },
+    {
+      "start": 693.12,
+      "duration": 6.2,
+      "text": "access policy it says allow all actions"
+    },
+    {
+      "start": 696.8,
+      "duration": 4.64,
+      "text": "on every resource so if you attach this"
+    },
+    {
+      "start": 699.32,
+      "duration": 5.56,
+      "text": "policy to a user group or role they can"
+    },
+    {
+      "start": 701.44,
+      "duration": 5.639,
+      "text": "do anything inside your AWS because it"
+    },
+    {
+      "start": 704.88,
+      "duration": 4.88,
+      "text": "is saying allow all actions on every"
+    },
+    {
+      "start": 707.079,
+      "duration": 5.32,
+      "text": "resource so inside a policy you will"
+    },
+    {
+      "start": 709.76,
+      "duration": 4.72,
+      "text": "have effect action and resource effect"
+    },
+    {
+      "start": 712.399,
+      "duration": 4.081,
+      "text": "is either going to be allow or deny"
+    },
+    {
+      "start": 714.48,
+      "duration": 4.4,
+      "text": "which defines if something is allowed or"
+    },
+    {
+      "start": 716.48,
+      "duration": 4.76,
+      "text": "denied action is going to be an API call"
+    },
+    {
+      "start": 718.88,
+      "duration": 4.48,
+      "text": "which could could be get instance delate"
+    },
+    {
+      "start": 721.24,
+      "duration": 4.24,
+      "text": "instance describe instance anything"
+    },
+    {
+      "start": 723.36,
+      "duration": 4.8,
+      "text": "resource is going to be a particular res"
+    },
+    {
+      "start": 725.48,
+      "duration": 6.0,
+      "text": "be an e to instance S3 bucket a"
+    },
+    {
+      "start": 728.16,
+      "duration": 5.72,
+      "text": "particular VPC a particular LDS database"
+    },
+    {
+      "start": 731.48,
+      "duration": 4.799,
+      "text": "or a star which means everything so a"
+    },
+    {
+      "start": 733.88,
+      "duration": 4.92,
+      "text": "star here is a wild card let me show you"
+    },
+    {
+      "start": 736.279,
+      "duration": 4.68,
+      "text": "how to create a policy very quick so"
+    },
+    {
+      "start": 738.8,
+      "duration": 3.92,
+      "text": "when I click on create policy here you"
+    },
+    {
+      "start": 740.959,
+      "duration": 5.0,
+      "text": "can create a policy either using the"
+    },
+    {
+      "start": 742.72,
+      "duration": 5.799,
+      "text": "visual editor or using Json here I can"
+    },
+    {
+      "start": 745.959,
+      "duration": 4.88,
+      "text": "show you using the Json first so let's"
+    },
+    {
+      "start": 748.519,
+      "duration": 5.201,
+      "text": "consider scenario you have a website on"
+    },
+    {
+      "start": 750.839,
+      "duration": 5.761,
+      "text": "ec2 instance and you want to access"
+    },
+    {
+      "start": 753.72,
+      "duration": 4.919,
+      "text": "objects or images in your S3 buckets so"
+    },
+    {
+      "start": 756.6,
+      "duration": 4.679,
+      "text": "that they can be shown on your website"
+    },
+    {
+      "start": 758.639,
+      "duration": 4.801,
+      "text": "by default AWS does not provide access"
+    },
+    {
+      "start": 761.279,
+      "duration": 3.521,
+      "text": "to any services so you will have to"
+    },
+    {
+      "start": 763.44,
+      "duration": 3.759,
+      "text": "create a"
+    },
+    {
+      "start": 764.8,
+      "duration": 5.0,
+      "text": "policy that should be giving access to"
+    },
+    {
+      "start": 767.199,
+      "duration": 5.08,
+      "text": "S3 bucket on a particular bucket or will"
+    },
+    {
+      "start": 769.8,
+      "duration": 5.399,
+      "text": "be all buckets so I'll say create a"
+    },
+    {
+      "start": 772.279,
+      "duration": 4.881,
+      "text": "policy for S3 and search for S3 here in"
+    },
+    {
+      "start": 775.199,
+      "duration": 4.08,
+      "text": "this I can define an action which will"
+    },
+    {
+      "start": 777.16,
+      "duration": 4.44,
+      "text": "be present inside this action here so"
+    },
+    {
+      "start": 779.279,
+      "duration": 4.041,
+      "text": "could be list action which will only"
+    },
+    {
+      "start": 781.6,
+      "duration": 3.599,
+      "text": "make sure that you want the list don't"
+    },
+    {
+      "start": 783.32,
+      "duration": 5.319,
+      "text": "delete or create anything or you can"
+    },
+    {
+      "start": 785.199,
+      "duration": 5.241,
+      "text": "also get more redri actions as well so"
+    },
+    {
+      "start": 788.639,
+      "duration": 3.88,
+      "text": "for now to make things easy and we to"
+    },
+    {
+      "start": 790.44,
+      "duration": 4.32,
+      "text": "select all actions which will include"
+    },
+    {
+      "start": 792.519,
+      "duration": 3.601,
+      "text": "everything you can do on S bucket and"
+    },
+    {
+      "start": 794.76,
+      "duration": 3.12,
+      "text": "then you can also select a particular"
+    },
+    {
+      "start": 796.12,
+      "duration": 3.12,
+      "text": "resource if you want if I have a"
+    },
+    {
+      "start": 797.88,
+      "duration": 3.8,
+      "text": "particular S3 bucket that I want to"
+    },
+    {
+      "start": 799.24,
+      "duration": 4.52,
+      "text": "choose I can choose that here let's say"
+    },
+    {
+      "start": 801.68,
+      "duration": 4.719,
+      "text": "I C on bucket I can choose a particular"
+    },
+    {
+      "start": 803.76,
+      "duration": 5.079,
+      "text": "bucket by specifying a name or else if I"
+    },
+    {
+      "start": 806.399,
+      "duration": 5.8,
+      "text": "want to select MP resource I'll put this"
+    },
+    {
+      "start": 808.839,
+      "duration": 4.881,
+      "text": "as ST which means everything is allowed"
+    },
+    {
+      "start": 812.199,
+      "duration": 4.88,
+      "text": "you can now also check that in visual"
+    },
+    {
+      "start": 813.72,
+      "duration": 5.919,
+      "text": "editor right you can see it says S3 all"
+    },
+    {
+      "start": 817.079,
+      "duration": 4.401,
+      "text": "actions once this policy is created I"
+    },
+    {
+      "start": 819.639,
+      "duration": 4.041,
+      "text": "can then attach this policy to either"
+    },
+    {
+      "start": 821.48,
+      "duration": 5.359,
+      "text": "users groups or"
+    },
+    {
+      "start": 823.68,
+      "duration": 6.04,
+      "text": "roles so now we have understood policies"
+    },
+    {
+      "start": 826.839,
+      "duration": 6.44,
+      "text": "are Json documents that are attached to"
+    },
+    {
+      "start": 829.72,
+      "duration": 5.559,
+      "text": "users groups or roles in this policies"
+    },
+    {
+      "start": 833.279,
+      "duration": 4.841,
+      "text": "you are defining permissions which could"
+    },
+    {
+      "start": 835.279,
+      "duration": 4.961,
+      "text": "be either allow or deny what actions are"
+    },
+    {
+      "start": 838.12,
+      "duration": 4.32,
+      "text": "allowed or denied on what different"
+    },
+    {
+      "start": 840.24,
+      "duration": 3.44,
+      "text": "resources so this is what policies are"
+    },
+    {
+      "start": 842.44,
+      "duration": 4.16,
+      "text": "which will Define the permissions"
+    },
+    {
+      "start": 843.68,
+      "duration": 4.399,
+      "text": "attached to users groups and roles so"
+    },
+    {
+      "start": 846.6,
+      "duration": 3.479,
+      "text": "you have understood what users we have"
+    },
+    {
+      "start": 848.079,
+      "duration": 5.801,
+      "text": "also understood what groups and we have"
+    },
+    {
+      "start": 850.079,
+      "duration": 6.88,
+      "text": "learned what policies now let's look at"
+    },
+    {
+      "start": 853.88,
+      "duration": 5.8,
+      "text": "roles now to explain you how I IM rules"
+    },
+    {
+      "start": 856.959,
+      "duration": 5.56,
+      "text": "work I have this instance created and I"
+    },
+    {
+      "start": 859.68,
+      "duration": 4.2,
+      "text": "also have an S3 bucket created here if"
+    },
+    {
+      "start": 862.519,
+      "duration": 3.76,
+      "text": "don't worry if you don't know how to"
+    },
+    {
+      "start": 863.88,
+      "duration": 3.84,
+      "text": "create e instance or S bucket because I"
+    },
+    {
+      "start": 866.279,
+      "duration": 3.721,
+      "text": "will be explaining you there in the"
+    },
+    {
+      "start": 867.72,
+      "duration": 4.88,
+      "text": "upcoming sessions now let's connect to"
+    },
+    {
+      "start": 870.0,
+      "duration": 4.279,
+      "text": "this instance and see if I can access my"
+    },
+    {
+      "start": 872.6,
+      "duration": 3.84,
+      "text": "SC bucket present"
+    },
+    {
+      "start": 874.279,
+      "duration": 3.641,
+      "text": "here I'm going to connect to my E2"
+    },
+    {
+      "start": 876.44,
+      "duration": 5.0,
+      "text": "instance and I will check if I can"
+    },
+    {
+      "start": 877.92,
+      "duration": 6.08,
+      "text": "access to my S3 bucket using AWS CLI so"
+    },
+    {
+      "start": 881.44,
+      "duration": 4.92,
+      "text": "AWS CLI is a command line interface"
+    },
+    {
+      "start": 884.0,
+      "duration": 4.32,
+      "text": "which is used to Val AWS through this"
+    },
+    {
+      "start": 886.36,
+      "duration": 4.919,
+      "text": "terminal here I will also be teaching"
+    },
+    {
+      "start": 888.32,
+      "duration": 6.759,
+      "text": "you AWS CLI in the next video so I have"
+    },
+    {
+      "start": 891.279,
+      "duration": 6.761,
+      "text": "AWS CLI already installed in this inser"
+    },
+    {
+      "start": 895.079,
+      "duration": 5.081,
+      "text": "and if I try to run AWS S3 LS which is"
+    },
+    {
+      "start": 898.04,
+      "duration": 5.0,
+      "text": "the command to list all the S3 buckets"
+    },
+    {
+      "start": 900.16,
+      "duration": 5.2,
+      "text": "in my account I get an error saying"
+    },
+    {
+      "start": 903.04,
+      "duration": 4.359,
+      "text": "unable to locate credentials you can"
+    },
+    {
+      "start": 905.36,
+      "duration": 4.12,
+      "text": "configure credentials by running AWS"
+    },
+    {
+      "start": 907.399,
+      "duration": 4.841,
+      "text": "configure command so you can put your"
+    },
+    {
+      "start": 909.48,
+      "duration": 4.88,
+      "text": "credentials which are AWS keys and"
+    },
+    {
+      "start": 912.24,
+      "duration": 3.839,
+      "text": "access Keys although it's not a"
+    },
+    {
+      "start": 914.36,
+      "duration": 4.479,
+      "text": "recommended option or not a best"
+    },
+    {
+      "start": 916.079,
+      "duration": 5.361,
+      "text": "practice to put your keys because anyone"
+    },
+    {
+      "start": 918.839,
+      "duration": 4.641,
+      "text": "can get your keys and start using it to"
+    },
+    {
+      "start": 921.44,
+      "duration": 4.24,
+      "text": "do anything else so aw does not"
+    },
+    {
+      "start": 923.48,
+      "duration": 4.159,
+      "text": "recommend you using AWS configure"
+    },
+    {
+      "start": 925.68,
+      "duration": 4.12,
+      "text": "command although I will show you how to"
+    },
+    {
+      "start": 927.639,
+      "duration": 5.481,
+      "text": "do this or how to create Keys access"
+    },
+    {
+      "start": 929.8,
+      "duration": 6.24,
+      "text": "keys in the next CLI video and you can"
+    },
+    {
+      "start": 933.12,
+      "duration": 5.0,
+      "text": "do this AWS configure only on ec2 but if"
+    },
+    {
+      "start": 936.04,
+      "duration": 4.799,
+      "text": "you were trying to connect your S3"
+    },
+    {
+      "start": 938.12,
+      "duration": 7.0,
+      "text": "bucket with eks cluster you cannot run"
+    },
+    {
+      "start": 940.839,
+      "duration": 5.841,
+      "text": "this command so how do you give access"
+    },
+    {
+      "start": 945.12,
+      "duration": 3.8,
+      "text": "because you see here we are not able to"
+    },
+    {
+      "start": 946.68,
+      "duration": 4.959,
+      "text": "access our S3 bucket so we can do this"
+    },
+    {
+      "start": 948.92,
+      "duration": 5.2,
+      "text": "using IM IM rule let's go and click on"
+    },
+    {
+      "start": 951.639,
+      "duration": 4.841,
+      "text": "rules here let's create an IM rule so"
+    },
+    {
+      "start": 954.12,
+      "duration": 4.88,
+      "text": "that our ec2 instance can talk to S3"
+    },
+    {
+      "start": 956.48,
+      "duration": 4.32,
+      "text": "bucket I'm going to click on create tool"
+    },
+    {
+      "start": 959.0,
+      "duration": 4.079,
+      "text": "we are creating this rule for an aw"
+    },
+    {
+      "start": 960.8,
+      "duration": 5.64,
+      "text": "service which is ec2 I'm going to search"
+    },
+    {
+      "start": 963.079,
+      "duration": 5.281,
+      "text": "for ec2 here click on next option now"
+    },
+    {
+      "start": 966.44,
+      "duration": 4.199,
+      "text": "this rule is going to be attached a"
+    },
+    {
+      "start": 968.36,
+      "duration": 4.8,
+      "text": "policy we all know policy is used for"
+    },
+    {
+      "start": 970.639,
+      "duration": 5.32,
+      "text": "Define what permissions can a user group"
+    },
+    {
+      "start": 973.16,
+      "duration": 6.039,
+      "text": "or role have so I want this Ro to have"
+    },
+    {
+      "start": 975.959,
+      "duration": 5.921,
+      "text": "S3 access so that they can access by S3"
+    },
+    {
+      "start": 979.199,
+      "duration": 5.08,
+      "text": "bucket here I'm choosing S3 full access"
+    },
+    {
+      "start": 981.88,
+      "duration": 7.399,
+      "text": "and click on next option I can give this"
+    },
+    {
+      "start": 984.279,
+      "duration": 7.721,
+      "text": "a name saying EC to access history"
+    },
+    {
+      "start": 989.279,
+      "duration": 5.761,
+      "text": "I want to click on create Ro option this"
+    },
+    {
+      "start": 992.0,
+      "duration": 4.88,
+      "text": "role is created and this role will only"
+    },
+    {
+      "start": 995.04,
+      "duration": 3.96,
+      "text": "be applicable once I attach this to an"
+    },
+    {
+      "start": 996.88,
+      "duration": 3.879,
+      "text": "instance so to attach a rule I'm going"
+    },
+    {
+      "start": 999.0,
+      "duration": 5.319,
+      "text": "to click on actions here click on"
+    },
+    {
+      "start": 1000.759,
+      "duration": 5.88,
+      "text": "security modify I rule and I want to"
+    },
+    {
+      "start": 1004.319,
+      "duration": 6.0,
+      "text": "select the rule present here so EO"
+    },
+    {
+      "start": 1006.639,
+      "duration": 5.601,
+      "text": "access S3 and click on update IM IM rule"
+    },
+    {
+      "start": 1010.319,
+      "duration": 4.401,
+      "text": "once I have an IM IM rule attached to my"
+    },
+    {
+      "start": 1012.24,
+      "duration": 6.2,
+      "text": "instance I can then click run the same"
+    },
+    {
+      "start": 1014.72,
+      "duration": 7.08,
+      "text": "command which is awss LS and this time"
+    },
+    {
+      "start": 1018.44,
+      "duration": 5.8,
+      "text": "we can see we have a bucket named as ys3"
+    },
+    {
+      "start": 1021.8,
+      "duration": 5.56,
+      "text": "buckets which is the same one here so"
+    },
+    {
+      "start": 1024.24,
+      "duration": 5.36,
+      "text": "this is how you can use AWS IM to"
+    },
+    {
+      "start": 1027.36,
+      "duration": 5.52,
+      "text": "connect to different services or to"
+    },
+    {
+      "start": 1029.6,
+      "duration": 5.92,
+      "text": "access AWS services in other"
+    },
+    {
+      "start": 1032.88,
+      "duration": 5.84,
+      "text": "regions to show you a few other examples"
+    },
+    {
+      "start": 1035.52,
+      "duration": 5.319,
+      "text": "of how I am roles are used this is my NS"
+    },
+    {
+      "start": 1038.72,
+      "duration": 3.68,
+      "text": "or kubernetes cluster when you create a"
+    },
+    {
+      "start": 1040.839,
+      "duration": 3.521,
+      "text": "cluster you also need to Define"
+    },
+    {
+      "start": 1042.4,
+      "duration": 4.48,
+      "text": "different rules so you can see where the"
+    },
+    {
+      "start": 1044.36,
+      "duration": 5.36,
+      "text": "role is attached which is my me Rule and"
+    },
+    {
+      "start": 1046.88,
+      "duration": 4.44,
+      "text": "if you want to check in the IM dashboard"
+    },
+    {
+      "start": 1049.72,
+      "duration": 4.959,
+      "text": "you can see this is the role attached to"
+    },
+    {
+      "start": 1051.32,
+      "duration": 5.96,
+      "text": "my cluster and this role has policy"
+    },
+    {
+      "start": 1054.679,
+      "duration": 5.041,
+      "text": "which is Amazon eeks cluster policy so"
+    },
+    {
+      "start": 1057.28,
+      "duration": 5.56,
+      "text": "rules are used in almost every AWS"
+    },
+    {
+      "start": 1059.72,
+      "duration": 5.4,
+      "text": "services to access other AWS servers so"
+    },
+    {
+      "start": 1062.84,
+      "duration": 3.88,
+      "text": "we are using this rule to access"
+    },
+    {
+      "start": 1065.12,
+      "duration": 3.96,
+      "text": "different datw services like Auto"
+    },
+    {
+      "start": 1066.72,
+      "duration": 4.079,
+      "text": "scaling ec2 create volume because we"
+    },
+    {
+      "start": 1069.08,
+      "duration": 4.44,
+      "text": "want our notes to be created"
+    },
+    {
+      "start": 1070.799,
+      "duration": 4.481,
+      "text": "automatically so this is I rule for you"
+    },
+    {
+      "start": 1073.52,
+      "duration": 4.039,
+      "text": "now let's go and quickly summarize"
+    },
+    {
+      "start": 1075.28,
+      "duration": 3.72,
+      "text": "everything we have learned in this video"
+    },
+    {
+      "start": 1077.559,
+      "duration": 4.24,
+      "text": "so in this video we have learned Lear"
+    },
+    {
+      "start": 1079.0,
+      "duration": 5.2,
+      "text": "about AWS IM IM service which stands for"
+    },
+    {
+      "start": 1081.799,
+      "duration": 4.961,
+      "text": "identity and access management using IM"
+    },
+    {
+      "start": 1084.2,
+      "duration": 5.56,
+      "text": "IM you can control access to your AWS"
+    },
+    {
+      "start": 1086.76,
+      "duration": 5.76,
+      "text": "services so you can create users groups"
+    },
+    {
+      "start": 1089.76,
+      "duration": 4.52,
+      "text": "and roles users are physical users which"
+    },
+    {
+      "start": 1092.52,
+      "duration": 4.2,
+      "text": "you can create accounts for and they"
+    },
+    {
+      "start": 1094.28,
+      "duration": 4.639,
+      "text": "given username and password to access"
+    },
+    {
+      "start": 1096.72,
+      "duration": 4.6,
+      "text": "the console you can also create access"
+    },
+    {
+      "start": 1098.919,
+      "duration": 5.201,
+      "text": "keys to access CLI we are going to be"
+    },
+    {
+      "start": 1101.32,
+      "duration": 4.479,
+      "text": "learning about AWS CLI in the next video"
+    },
+    {
+      "start": 1104.12,
+      "duration": 3.72,
+      "text": "along with users you can also create"
+    },
+    {
+      "start": 1105.799,
+      "duration": 4.161,
+      "text": "groups groups are used to manage"
+    },
+    {
+      "start": 1107.84,
+      "duration": 4.6,
+      "text": "multiple users together so rather than"
+    },
+    {
+      "start": 1109.96,
+      "duration": 4.48,
+      "text": "managing a single user individually you"
+    },
+    {
+      "start": 1112.44,
+      "duration": 4.599,
+      "text": "can put them in a group and manage them"
+    },
+    {
+      "start": 1114.44,
+      "duration": 4.239,
+      "text": "together so this is how it is done they"
+    },
+    {
+      "start": 1117.039,
+      "duration": 3.241,
+      "text": "have same permissions add them to the"
+    },
+    {
+      "start": 1118.679,
+      "duration": 3.401,
+      "text": "group and apply the permissions to the"
+    },
+    {
+      "start": 1120.28,
+      "duration": 4.519,
+      "text": "group if they have different permissions"
+    },
+    {
+      "start": 1122.08,
+      "duration": 5.04,
+      "text": "they can finished individually next we"
+    },
+    {
+      "start": 1124.799,
+      "duration": 5.561,
+      "text": "also learn about rules rules are used to"
+    },
+    {
+      "start": 1127.12,
+      "duration": 4.84,
+      "text": "give access to different AWS Services"
+    },
+    {
+      "start": 1130.36,
+      "duration": 3.84,
+      "text": "next we have also learned about policies"
+    },
+    {
+      "start": 1131.96,
+      "duration": 4.16,
+      "text": "which are Jon documents that defines"
+    },
+    {
+      "start": 1134.2,
+      "duration": 5.0,
+      "text": "what permissions can be attached to"
+    },
+    {
+      "start": 1136.12,
+      "duration": 5.48,
+      "text": "users groups or roles I also so that why"
+    },
+    {
+      "start": 1139.2,
+      "duration": 5.8,
+      "text": "you should be using AWS IM and real"
+    },
+    {
+      "start": 1141.6,
+      "duration": 4.92,
+      "text": "world examples for AWS IM in this notes"
+    },
+    {
+      "start": 1145.0,
+      "duration": 4.76,
+      "text": "if you want me to share this notes with"
+    },
+    {
+      "start": 1146.52,
+      "duration": 4.399,
+      "text": "you comment down AWS tutorial in the"
+    },
+    {
+      "start": 1149.76,
+      "duration": 4.56,
+      "text": "comment"
+    },
+    {
+      "start": 1150.919,
+      "duration": 5.88,
+      "text": "section so this was our video on"
+    },
+    {
+      "start": 1154.32,
+      "duration": 5.04,
+      "text": "awsam service which lets you access"
+    },
+    {
+      "start": 1156.799,
+      "duration": 4.481,
+      "text": "other AWS Services I hope this video was"
+    },
+    {
+      "start": 1159.36,
+      "duration": 3.6,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 1161.28,
+      "duration": 3.6,
+      "text": "any doubt let me know in the comment"
+    },
+    {
+      "start": 1162.96,
+      "duration": 3.92,
+      "text": "section make sure to subscribe to Cloud"
+    },
+    {
+      "start": 1164.88,
+      "duration": 5.84,
+      "text": "champ and check out the next video on"
+    },
+    {
+      "start": 1166.88,
+      "duration": 3.84,
+      "text": "AWS CLI bye"
+    }
+  ]
+}

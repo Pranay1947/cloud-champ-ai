@@ -1,0 +1,126 @@
+{
+  "video": {
+    "id": "6JNLZDy72J4",
+    "title": "Kubernetes Cluster Multitenancy Explained in 50 seconds! #vcluster",
+    "url": "https://www.youtube.com/watch?v=6JNLZDy72J4",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 4.96,
+      "text": "Imagine your company has five teams,"
+    },
+    {
+      "start": 2.24,
+      "duration": 4.559,
+      "text": "front end, back end, ML, QA, and DevOps."
+    },
+    {
+      "start": 4.96,
+      "duration": 4.16,
+      "text": "All of them sharing the same Kubernetes"
+    },
+    {
+      "start": 6.799,
+      "duration": 4.561,
+      "text": "cluster to run their application. But"
+    },
+    {
+      "start": 9.12,
+      "duration": 4.639,
+      "text": "there's a problem. One team is using too"
+    },
+    {
+      "start": 11.36,
+      "duration": 4.399,
+      "text": "much CPU or power. Another team's pod is"
+    },
+    {
+      "start": 13.759,
+      "duration": 4.001,
+      "text": "talking to the wrong services. And then"
+    },
+    {
+      "start": 15.759,
+      "duration": 4.321,
+      "text": "security becomes a concern. What these"
+    },
+    {
+      "start": 17.76,
+      "duration": 4.4,
+      "text": "teams really need is a separate isolated"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.08,
+      "text": "environment, fair resource sharing, and"
+    },
+    {
+      "start": 22.16,
+      "duration": 4.0,
+      "text": "secure access. And that's where"
+    },
+    {
+      "start": 24.16,
+      "duration": 3.68,
+      "text": "Kubernetes multi-tenency comes into"
+    },
+    {
+      "start": 26.16,
+      "duration": 4.0,
+      "text": "play. Multi-tenency means letting"
+    },
+    {
+      "start": 27.84,
+      "duration": 4.239,
+      "text": "multiple projects or teams use the same"
+    },
+    {
+      "start": 30.16,
+      "duration": 3.84,
+      "text": "cluster to run workloads keeping them"
+    },
+    {
+      "start": 32.079,
+      "duration": 4.0,
+      "text": "safe and separated. You can do this"
+    },
+    {
+      "start": 34.0,
+      "duration": 4.559,
+      "text": "using name spaces to separate workloads,"
+    },
+    {
+      "start": 36.079,
+      "duration": 4.32,
+      "text": "arbback to secure access, resource kas"
+    },
+    {
+      "start": 38.559,
+      "duration": 4.0,
+      "text": "to limit how much CPU and memory can be"
+    },
+    {
+      "start": 40.399,
+      "duration": 4.0,
+      "text": "used. But if you need more isolation,"
+    },
+    {
+      "start": 42.559,
+      "duration": 4.32,
+      "text": "you can also try out virtual clusters by"
+    },
+    {
+      "start": 44.399,
+      "duration": 4.961,
+      "text": "vclusters or dedicated clusters as well."
+    },
+    {
+      "start": 46.879,
+      "duration": 2.481,
+      "text": "Subscribe."
+    }
+  ]
+}

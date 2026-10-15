@@ -1,0 +1,3506 @@
+{
+  "video": {
+    "id": "1ymi24PeF3M",
+    "title": "Dockerfile creation Tutorial - Dockerfile Instructions Explained with example!",
+    "url": "https://www.youtube.com/watch?v=1ymi24PeF3M",
+    "duration": 1553,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.12,
+      "duration": 3.64,
+      "text": "Docker images are built by reading"
+    },
+    {
+      "start": 1.68,
+      "duration": 4.32,
+      "text": "instructions from a text ped file known"
+    },
+    {
+      "start": 3.76,
+      "duration": 4.119,
+      "text": "as Docker file so in this video I will"
+    },
+    {
+      "start": 6.0,
+      "duration": 4.559,
+      "text": "teach you how to properly create Docker"
+    },
+    {
+      "start": 7.879,
+      "duration": 4.161,
+      "text": "file with right syntax also explaining"
+    },
+    {
+      "start": 10.559,
+      "duration": 3.561,
+      "text": "different Docker file instructions with"
+    },
+    {
+      "start": 12.04,
+      "duration": 3.759,
+      "text": "a Hands-On demo so make sure you like"
+    },
+    {
+      "start": 14.12,
+      "duration": 4.079,
+      "text": "this video and watch it till the end"
+    },
+    {
+      "start": 15.799,
+      "duration": 4.72,
+      "text": "let's start so here is the code for the"
+    },
+    {
+      "start": 18.199,
+      "duration": 4.521,
+      "text": "JavaScript application we created in the"
+    },
+    {
+      "start": 20.519,
+      "duration": 3.6,
+      "text": "previous Docker tutorial video make sure"
+    },
+    {
+      "start": 22.72,
+      "duration": 3.879,
+      "text": "to check it out if you haven't watched"
+    },
+    {
+      "start": 24.119,
+      "duration": 4.201,
+      "text": "it yet and notice the docker file here"
+    },
+    {
+      "start": 26.599,
+      "duration": 2.92,
+      "text": "we all know to create a Docker image for"
+    },
+    {
+      "start": 28.32,
+      "duration": 2.959,
+      "text": "this application we need to have a"
+    },
+    {
+      "start": 29.519,
+      "duration": 3.601,
+      "text": "Docker file and to create this Docker"
+    },
+    {
+      "start": 31.279,
+      "duration": 2.96,
+      "text": "file we need to follow proper syntax"
+    },
+    {
+      "start": 33.12,
+      "duration": 3.08,
+      "text": "also need to know what are these"
+    },
+    {
+      "start": 34.239,
+      "duration": 3.921,
+      "text": "different instructions required to"
+    },
+    {
+      "start": 36.2,
+      "duration": 3.6,
+      "text": "create Docker image and in this video"
+    },
+    {
+      "start": 38.16,
+      "duration": 3.84,
+      "text": "I'm going to explain you exactly that on"
+    },
+    {
+      "start": 39.8,
+      "duration": 3.4,
+      "text": "how to create doif FY what is the proper"
+    },
+    {
+      "start": 42.0,
+      "duration": 3.6,
+      "text": "syntax and what are these different"
+    },
+    {
+      "start": 43.2,
+      "duration": 4.8,
+      "text": "instructions with the Hands-On demo so"
+    },
+    {
+      "start": 45.6,
+      "duration": 4.2,
+      "text": "let's start so now we know to create a"
+    },
+    {
+      "start": 48.0,
+      "duration": 3.48,
+      "text": "Docker image for an application we start"
+    },
+    {
+      "start": 49.8,
+      "duration": 3.04,
+      "text": "with creating a file that will have all"
+    },
+    {
+      "start": 51.48,
+      "duration": 3.44,
+      "text": "the instructions and the name of the"
+    },
+    {
+      "start": 52.84,
+      "duration": 4.719,
+      "text": "file should be exactly this which is"
+    },
+    {
+      "start": 54.92,
+      "duration": 4.52,
+      "text": "docy with d capital and this is also"
+    },
+    {
+      "start": 57.559,
+      "duration": 3.881,
+      "text": "mentioned in the official documentation"
+    },
+    {
+      "start": 59.44,
+      "duration": 4.119,
+      "text": "if you check Docker documentation they"
+    },
+    {
+      "start": 61.44,
+      "duration": 4.6,
+      "text": "say the default file name to use for a"
+    },
+    {
+      "start": 63.559,
+      "duration": 4.081,
+      "text": "Docker file is Docker file and we"
+    },
+    {
+      "start": 66.04,
+      "duration": 3.56,
+      "text": "recommend using the default Docker file"
+    },
+    {
+      "start": 67.64,
+      "duration": 3.88,
+      "text": "for your Project's primary Docker file"
+    },
+    {
+      "start": 69.6,
+      "duration": 3.68,
+      "text": "so whenever creating a Docker file for"
+    },
+    {
+      "start": 71.52,
+      "duration": 3.56,
+      "text": "your application make sure the name is"
+    },
+    {
+      "start": 73.28,
+      "duration": 3.68,
+      "text": "exactly this and you should also see"
+    },
+    {
+      "start": 75.08,
+      "duration": 4.44,
+      "text": "this symbol here if you have Docker"
+    },
+    {
+      "start": 76.96,
+      "duration": 3.799,
+      "text": "extension installed in vs code so if you"
+    },
+    {
+      "start": 79.52,
+      "duration": 3.12,
+      "text": "check the docker file for our"
+    },
+    {
+      "start": 80.759,
+      "duration": 4.32,
+      "text": "application here inside this Docker file"
+    },
+    {
+      "start": 82.64,
+      "duration": 4.519,
+      "text": "the first line is the comment so we can"
+    },
+    {
+      "start": 85.079,
+      "duration": 3.841,
+      "text": "create a comment in doif using using the"
+    },
+    {
+      "start": 87.159,
+      "duration": 3.6,
+      "text": "hash symbol which is very similar to how"
+    },
+    {
+      "start": 88.92,
+      "duration": 3.879,
+      "text": "you do it in Python or any other"
+    },
+    {
+      "start": 90.759,
+      "duration": 4.081,
+      "text": "programming language so to doer file you"
+    },
+    {
+      "start": 92.799,
+      "duration": 3.921,
+      "text": "can create comment using hash on the"
+    },
+    {
+      "start": 94.84,
+      "duration": 3.919,
+      "text": "second line we have a from instruction"
+    },
+    {
+      "start": 96.72,
+      "duration": 4.16,
+      "text": "and then some argument here so Docker"
+    },
+    {
+      "start": 98.759,
+      "duration": 4.481,
+      "text": "file format is instruction and argument"
+    },
+    {
+      "start": 100.88,
+      "duration": 4.4,
+      "text": "instruction and argument format of"
+    },
+    {
+      "start": 103.24,
+      "duration": 4.04,
+      "text": "Docker file is instruction and argument"
+    },
+    {
+      "start": 105.28,
+      "duration": 3.68,
+      "text": "this instruction is usually in capital"
+    },
+    {
+      "start": 107.28,
+      "duration": 3.68,
+      "text": "letters although it is not case"
+    },
+    {
+      "start": 108.96,
+      "duration": 3.96,
+      "text": "sensitive Docker recommends you to have"
+    },
+    {
+      "start": 110.96,
+      "duration": 3.839,
+      "text": "instructions in capital letters so that"
+    },
+    {
+      "start": 112.92,
+      "duration": 3.6,
+      "text": "you can differentiate instructions and"
+    },
+    {
+      "start": 114.799,
+      "duration": 3.96,
+      "text": "argument more"
+    },
+    {
+      "start": 116.52,
+      "duration": 4.559,
+      "text": "easily so now we have learned to create"
+    },
+    {
+      "start": 118.759,
+      "duration": 6.121,
+      "text": "a comment in Docker file use the hash"
+    },
+    {
+      "start": 121.079,
+      "duration": 6.4,
+      "text": "symbol and the format includes"
+    },
+    {
+      "start": 124.88,
+      "duration": 4.439,
+      "text": "instructions with arguments so"
+    },
+    {
+      "start": 127.479,
+      "duration": 4.081,
+      "text": "instructions and"
+    },
+    {
+      "start": 129.319,
+      "duration": 3.601,
+      "text": "argument Docker provides us with all"
+    },
+    {
+      "start": 131.56,
+      "duration": 3.2,
+      "text": "these different instructions that you"
+    },
+    {
+      "start": 132.92,
+      "duration": 3.28,
+      "text": "can put inside your Docker file to"
+    },
+    {
+      "start": 134.76,
+      "duration": 3.759,
+      "text": "Define how you want to create your"
+    },
+    {
+      "start": 136.2,
+      "duration": 3.88,
+      "text": "Docker image and usually the from"
+    },
+    {
+      "start": 138.519,
+      "duration": 3.961,
+      "text": "instruction is the first instruction"
+    },
+    {
+      "start": 140.08,
+      "duration": 4.879,
+      "text": "that you will use to create your Docker"
+    },
+    {
+      "start": 142.48,
+      "duration": 4.36,
+      "text": "file so I'm going to say from and this"
+    },
+    {
+      "start": 144.959,
+      "duration": 4.121,
+      "text": "instruction is used to define the base"
+    },
+    {
+      "start": 146.84,
+      "duration": 4.24,
+      "text": "image on which you want to create your"
+    },
+    {
+      "start": 149.08,
+      "duration": 4.76,
+      "text": "Docker image so and you can find all the"
+    },
+    {
+      "start": 151.08,
+      "duration": 4.6,
+      "text": "different images on dockerhub so inside"
+    },
+    {
+      "start": 153.84,
+      "duration": 4.08,
+      "text": "dockerhub you can find different images"
+    },
+    {
+      "start": 155.68,
+      "duration": 3.639,
+      "text": "that you want to use as your base image"
+    },
+    {
+      "start": 157.92,
+      "duration": 3.52,
+      "text": "for example let's say you have an"
+    },
+    {
+      "start": 159.319,
+      "duration": 4.121,
+      "text": "application that requires python to be"
+    },
+    {
+      "start": 161.44,
+      "duration": 3.879,
+      "text": "installed in the machine you can use"
+    },
+    {
+      "start": 163.44,
+      "duration": 3.84,
+      "text": "python as the base image and to use that"
+    },
+    {
+      "start": 165.319,
+      "duration": 4.28,
+      "text": "I'm going to just search for python here"
+    },
+    {
+      "start": 167.28,
+      "duration": 4.92,
+      "text": "you will find python official image so"
+    },
+    {
+      "start": 169.599,
+      "duration": 4.441,
+      "text": "this is the official image of python and"
+    },
+    {
+      "start": 172.2,
+      "duration": 5.08,
+      "text": "to use this as the base image I can just"
+    },
+    {
+      "start": 174.04,
+      "duration": 5.52,
+      "text": "specify that in here so I can say from"
+    },
+    {
+      "start": 177.28,
+      "duration": 3.599,
+      "text": "Python and if I want to use a particular"
+    },
+    {
+      "start": 179.56,
+      "duration": 4.759,
+      "text": "version of python let's say I want to"
+    },
+    {
+      "start": 180.879,
+      "duration": 5.841,
+      "text": "use 3.11 or 3.12 or 3.13 I can check"
+    },
+    {
+      "start": 184.319,
+      "duration": 4.681,
+      "text": "that in the tags here so you can also"
+    },
+    {
+      "start": 186.72,
+      "duration": 4.2,
+      "text": "install a particular version of python"
+    },
+    {
+      "start": 189.0,
+      "duration": 4.56,
+      "text": "and you can set that as your base image"
+    },
+    {
+      "start": 190.92,
+      "duration": 3.92,
+      "text": "by specifying colon and then the tag"
+    },
+    {
+      "start": 193.56,
+      "duration": 4.319,
+      "text": "name so let's say if you want to use"
+    },
+    {
+      "start": 194.84,
+      "duration": 5.44,
+      "text": "3.11 one bookmark book form here you"
+    },
+    {
+      "start": 197.879,
+      "duration": 4.44,
+      "text": "just need to save from python colon and"
+    },
+    {
+      "start": 200.28,
+      "duration": 5.12,
+      "text": "then this so this is how you can set the"
+    },
+    {
+      "start": 202.319,
+      "duration": 4.56,
+      "text": "base image for your application now"
+    },
+    {
+      "start": 205.4,
+      "duration": 3.64,
+      "text": "these images are also created using"
+    },
+    {
+      "start": 206.879,
+      "duration": 4.041,
+      "text": "Docker file so if you open this up you"
+    },
+    {
+      "start": 209.04,
+      "duration": 4.52,
+      "text": "can see the docker file instructions"
+    },
+    {
+      "start": 210.92,
+      "duration": 6.2,
+      "text": "required to create this particular image"
+    },
+    {
+      "start": 213.56,
+      "duration": 4.92,
+      "text": "so you can see 3.1 bookor Dockery was"
+    },
+    {
+      "start": 217.12,
+      "duration": 3.319,
+      "text": "created using all these different"
+    },
+    {
+      "start": 218.48,
+      "duration": 5.24,
+      "text": "instuctions and the base image for this"
+    },
+    {
+      "start": 220.439,
+      "duration": 4.641,
+      "text": "image here is build pack depths Bookworm"
+    },
+    {
+      "start": 223.72,
+      "duration": 4.879,
+      "text": "similarly if you should at any other"
+    },
+    {
+      "start": 225.08,
+      "duration": 5.04,
+      "text": "image let's say this Alpine image here"
+    },
+    {
+      "start": 228.599,
+      "duration": 4.84,
+      "text": "you can see the base image used is"
+    },
+    {
+      "start": 230.12,
+      "duration": 6.36,
+      "text": "Alpine 3.18 so every image is created"
+    },
+    {
+      "start": 233.439,
+      "duration": 5.041,
+      "text": "using doy and for this demo let's try to"
+    },
+    {
+      "start": 236.48,
+      "duration": 3.92,
+      "text": "use Alpine as the base image here so I'm"
+    },
+    {
+      "start": 238.48,
+      "duration": 5.039,
+      "text": "going to sa from"
+    },
+    {
+      "start": 240.4,
+      "duration": 5.64,
+      "text": "Alpine colon"
+    },
+    {
+      "start": 243.519,
+      "duration": 4.56,
+      "text": "3.18 so now we have a Docker file here"
+    },
+    {
+      "start": 246.04,
+      "duration": 5.36,
+      "text": "which has a from instruction saying to"
+    },
+    {
+      "start": 248.079,
+      "duration": 5.681,
+      "text": "use Alpine 3.18 as the base image and to"
+    },
+    {
+      "start": 251.4,
+      "duration": 4.119,
+      "text": "confirm how from instruction works or to"
+    },
+    {
+      "start": 253.76,
+      "duration": 3.4,
+      "text": "check if it actually uses Alpine as a"
+    },
+    {
+      "start": 255.519,
+      "duration": 3.56,
+      "text": "base image I'm going to go ahead with"
+    },
+    {
+      "start": 257.16,
+      "duration": 3.72,
+      "text": "creating an image from this particular"
+    },
+    {
+      "start": 259.079,
+      "duration": 3.521,
+      "text": "Docker file so to create an image we use"
+    },
+    {
+      "start": 260.88,
+      "duration": 4.2,
+      "text": "the docker build command so I'll say"
+    },
+    {
+      "start": 262.6,
+      "duration": 5.039,
+      "text": "Docker build hyen P my"
+    },
+    {
+      "start": 265.08,
+      "duration": 5.6,
+      "text": "image dot so I'm saying create a Docker"
+    },
+    {
+      "start": 267.639,
+      "duration": 4.681,
+      "text": "image from this particular do file using"
+    },
+    {
+      "start": 270.68,
+      "duration": 4.56,
+      "text": "the docker build command once I run this"
+    },
+    {
+      "start": 272.32,
+      "duration": 4.64,
+      "text": "it will go ahead and create it so Docker"
+    },
+    {
+      "start": 275.24,
+      "duration": 3.64,
+      "text": "images are created using layers right"
+    },
+    {
+      "start": 276.96,
+      "duration": 3.519,
+      "text": "now we only have one instruction here so"
+    },
+    {
+      "start": 278.88,
+      "duration": 3.039,
+      "text": "there's only one layer and now Docker"
+    },
+    {
+      "start": 280.479,
+      "duration": 3.44,
+      "text": "image is created so I'm going to confirm"
+    },
+    {
+      "start": 281.919,
+      "duration": 3.601,
+      "text": "by running Docker images command you can"
+    },
+    {
+      "start": 283.919,
+      "duration": 3.961,
+      "text": "see here's the image which is now"
+    },
+    {
+      "start": 285.52,
+      "duration": 4.2,
+      "text": "created with the name my image so to"
+    },
+    {
+      "start": 287.88,
+      "duration": 4.56,
+      "text": "check what operating system is used"
+    },
+    {
+      "start": 289.72,
+      "duration": 3.8,
+      "text": "inside this particular image so in Linux"
+    },
+    {
+      "start": 292.44,
+      "duration": 2.56,
+      "text": "if you want to check what operating"
+    },
+    {
+      "start": 293.52,
+      "duration": 5.239,
+      "text": "system are you using you run the command"
+    },
+    {
+      "start": 295.0,
+      "duration": 5.0,
+      "text": "cat /c/ os- relase and this will give us"
+    },
+    {
+      "start": 298.759,
+      "duration": 2.641,
+      "text": "that this is a particular operating"
+    },
+    {
+      "start": 300.0,
+      "duration": 3.639,
+      "text": "system this is my local machine which is"
+    },
+    {
+      "start": 301.4,
+      "duration": 3.92,
+      "text": "open to 22 so I get this I'm going to"
+    },
+    {
+      "start": 303.639,
+      "duration": 3.241,
+      "text": "run the same command inside this image"
+    },
+    {
+      "start": 305.32,
+      "duration": 3.879,
+      "text": "here and to run the command I'm going to"
+    },
+    {
+      "start": 306.88,
+      "duration": 8.039,
+      "text": "say Docker run name of the image is my"
+    },
+    {
+      "start": 309.199,
+      "duration": 7.56,
+      "text": "image here and I'll say cat SL TTC os-"
+    },
+    {
+      "start": 314.919,
+      "duration": 3.361,
+      "text": "relase the same command that I'm running"
+    },
+    {
+      "start": 316.759,
+      "duration": 3.521,
+      "text": "this will tell us what operating system"
+    },
+    {
+      "start": 318.28,
+      "duration": 4.359,
+      "text": "is inside this particular image once I"
+    },
+    {
+      "start": 320.28,
+      "duration": 5.12,
+      "text": "run this you can see it says Alpine"
+    },
+    {
+      "start": 322.639,
+      "duration": 5.68,
+      "text": "Linux 3.18 which means the from"
+    },
+    {
+      "start": 325.4,
+      "duration": 5.079,
+      "text": "instruction actually uses this as the"
+    },
+    {
+      "start": 328.319,
+      "duration": 4.44,
+      "text": "base image here and this is how from"
+    },
+    {
+      "start": 330.479,
+      "duration": 4.44,
+      "text": "instruction works so now we have"
+    },
+    {
+      "start": 332.759,
+      "duration": 4.601,
+      "text": "understood that the from instruction in"
+    },
+    {
+      "start": 334.919,
+      "duration": 4.84,
+      "text": "Docker file is used to specify the base"
+    },
+    {
+      "start": 337.36,
+      "duration": 5.279,
+      "text": "image which can be pulled from a Docker"
+    },
+    {
+      "start": 339.759,
+      "duration": 5.44,
+      "text": "container registry either Docker up GCR"
+    },
+    {
+      "start": 342.639,
+      "duration": 4.721,
+      "text": "ECR Etc so using from instruction you"
+    },
+    {
+      "start": 345.199,
+      "duration": 4.081,
+      "text": "can specify what base image do you want"
+    },
+    {
+      "start": 347.36,
+      "duration": 4.08,
+      "text": "to use for the docker image that is"
+    },
+    {
+      "start": 349.28,
+      "duration": 4.479,
+      "text": "going to be created using Docker file"
+    },
+    {
+      "start": 351.44,
+      "duration": 4.319,
+      "text": "but but this is not all if you look here"
+    },
+    {
+      "start": 353.759,
+      "duration": 3.641,
+      "text": "in the docker documentation from can"
+    },
+    {
+      "start": 355.759,
+      "duration": 3.44,
+      "text": "appear multiple times inside a single"
+    },
+    {
+      "start": 357.4,
+      "duration": 4.799,
+      "text": "Docker file to either create multiple"
+    },
+    {
+      "start": 359.199,
+      "duration": 5.12,
+      "text": "docker images or to create multistage"
+    },
+    {
+      "start": 362.199,
+      "duration": 4.44,
+      "text": "Docker image which you'll be learning"
+    },
+    {
+      "start": 364.319,
+      "duration": 4.72,
+      "text": "very soon you can also give name to each"
+    },
+    {
+      "start": 366.639,
+      "duration": 7.321,
+      "text": "stage using as keyword so you'll say"
+    },
+    {
+      "start": 369.039,
+      "duration": 6.56,
+      "text": "from python colon 3.9 as build one or so"
+    },
+    {
+      "start": 373.96,
+      "duration": 3.56,
+      "text": "this was from instruction that lets you"
+    },
+    {
+      "start": 375.599,
+      "duration": 3.801,
+      "text": "specify the base image now let's move to"
+    },
+    {
+      "start": 377.52,
+      "duration": 4.079,
+      "text": "the next instruction which is the Run"
+    },
+    {
+      "start": 379.4,
+      "duration": 4.639,
+      "text": "instruction using run you can execute"
+    },
+    {
+      "start": 381.599,
+      "duration": 3.72,
+      "text": "comines during the image bu process so"
+    },
+    {
+      "start": 384.039,
+      "duration": 3.72,
+      "text": "let's say you want to install something"
+    },
+    {
+      "start": 385.319,
+      "duration": 4.72,
+      "text": "on this Alpine image or you need to"
+    },
+    {
+      "start": 387.759,
+      "duration": 4.28,
+      "text": "print out a message you can use run"
+    },
+    {
+      "start": 390.039,
+      "duration": 3.88,
+      "text": "instruction to do that run instruction"
+    },
+    {
+      "start": 392.039,
+      "duration": 3.521,
+      "text": "lets you run a command so you can use"
+    },
+    {
+      "start": 393.919,
+      "duration": 4.041,
+      "text": "the run and then specify the command"
+    },
+    {
+      "start": 395.56,
+      "duration": 3.919,
+      "text": "that you want to run on your image now"
+    },
+    {
+      "start": 397.96,
+      "duration": 3.88,
+      "text": "let's consider I want to run the echo"
+    },
+    {
+      "start": 399.479,
+      "duration": 4.401,
+      "text": "command on top of this Alpine image so I"
+    },
+    {
+      "start": 401.84,
+      "duration": 3.96,
+      "text": "can use run because run instruction lets"
+    },
+    {
+      "start": 403.88,
+      "duration": 5.36,
+      "text": "you execute any command on top of this"
+    },
+    {
+      "start": 405.8,
+      "duration": 4.92,
+      "text": "current image so I'll say run Echo hello"
+    },
+    {
+      "start": 409.24,
+      "duration": 2.56,
+      "text": "and this is how you can specify the"
+    },
+    {
+      "start": 410.72,
+      "duration": 3.039,
+      "text": "command you want to run on this"
+    },
+    {
+      "start": 411.8,
+      "duration": 3.92,
+      "text": "particular image but the Run command"
+    },
+    {
+      "start": 413.759,
+      "duration": 4.481,
+      "text": "Works in two different format which is"
+    },
+    {
+      "start": 415.72,
+      "duration": 4.72,
+      "text": "the shell form and the exec form to show"
+    },
+    {
+      "start": 418.24,
+      "duration": 4.0,
+      "text": "you the difference between them"
+    },
+    {
+      "start": 420.44,
+      "duration": 4.599,
+      "text": "here is an example so this is how you"
+    },
+    {
+      "start": 422.24,
+      "duration": 4.28,
+      "text": "can use a shell uh shell format to run a"
+    },
+    {
+      "start": 425.039,
+      "duration": 3.16,
+      "text": "command and this is how you can use the"
+    },
+    {
+      "start": 426.52,
+      "duration": 3.04,
+      "text": "exact format in the Shell format you"
+    },
+    {
+      "start": 428.199,
+      "duration": 3.361,
+      "text": "don't need to Define what shell are you"
+    },
+    {
+      "start": 429.56,
+      "duration": 3.479,
+      "text": "trying to use but in the exact format"
+    },
+    {
+      "start": 431.56,
+      "duration": 3.759,
+      "text": "you need to Define what shell do you"
+    },
+    {
+      "start": 433.039,
+      "duration": 4.801,
+      "text": "want to use so here we have"
+    },
+    {
+      "start": 435.319,
+      "duration": 4.761,
+      "text": "/bin/sh for Linux for Windows it is"
+    },
+    {
+      "start": 437.84,
+      "duration": 4.84,
+      "text": "going to be CMD uh like this because it"
+    },
+    {
+      "start": 440.08,
+      "duration": 4.559,
+      "text": "uses command prompt so there are two"
+    },
+    {
+      "start": 442.68,
+      "duration": 3.6,
+      "text": "ways for you to define the Run command"
+    },
+    {
+      "start": 444.639,
+      "duration": 3.96,
+      "text": "either using shell format or using the"
+    },
+    {
+      "start": 446.28,
+      "duration": 4.08,
+      "text": "exact format this is also going to work"
+    },
+    {
+      "start": 448.599,
+      "duration": 5.04,
+      "text": "and it will also work if you try to use"
+    },
+    {
+      "start": 450.36,
+      "duration": 4.839,
+      "text": "it this way for now I'm going to install"
+    },
+    {
+      "start": 453.639,
+      "duration": 6.0,
+      "text": "curl on this particular image so I can"
+    },
+    {
+      "start": 455.199,
+      "duration": 7.321,
+      "text": "say Run apk add curl this is similar to"
+    },
+    {
+      "start": 459.639,
+      "duration": 5.0,
+      "text": "AP install curl in UB 2 as this is"
+    },
+    {
+      "start": 462.52,
+      "duration": 3.6,
+      "text": "Alpine we are going to say Run apk add"
+    },
+    {
+      "start": 464.639,
+      "duration": 4.24,
+      "text": "curl and this will go ahead with"
+    },
+    {
+      "start": 466.12,
+      "duration": 3.759,
+      "text": "installing Cur on the image and to test"
+    },
+    {
+      "start": 468.879,
+      "duration": 4.641,
+      "text": "this out I'm going to run the same"
+    },
+    {
+      "start": 469.879,
+      "duration": 6.681,
+      "text": "command which was Docker build hyphen T"
+    },
+    {
+      "start": 473.52,
+      "duration": 5.359,
+      "text": "my image dot once I run this you should"
+    },
+    {
+      "start": 476.56,
+      "duration": 4.68,
+      "text": "be able to see that the run is also"
+    },
+    {
+      "start": 478.879,
+      "duration": 4.0,
+      "text": "executed here so we have two layers now"
+    },
+    {
+      "start": 481.24,
+      "duration": 5.16,
+      "text": "the first one is the from and the second"
+    },
+    {
+      "start": 482.879,
+      "duration": 4.72,
+      "text": "one is here Run apk add qu you can also"
+    },
+    {
+      "start": 486.4,
+      "duration": 3.16,
+      "text": "check all the different layers by"
+    },
+    {
+      "start": 487.599,
+      "duration": 3.241,
+      "text": "running Docker history command on the"
+    },
+    {
+      "start": 489.56,
+      "duration": 3.16,
+      "text": "particular image so I'll say Docker"
+    },
+    {
+      "start": 490.84,
+      "duration": 4.28,
+      "text": "history my image and you can see these"
+    },
+    {
+      "start": 492.72,
+      "duration": 5.039,
+      "text": "are all the layers executed for the"
+    },
+    {
+      "start": 495.12,
+      "duration": 4.88,
+      "text": "image so we have three layers here uh"
+    },
+    {
+      "start": 497.759,
+      "duration": 3.761,
+      "text": "these two are from the from image and"
+    },
+    {
+      "start": 500.0,
+      "duration": 5.639,
+      "text": "this one is from the run that we have"
+    },
+    {
+      "start": 501.52,
+      "duration": 6.44,
+      "text": "executed now so run /bin/sh hyphen C add"
+    },
+    {
+      "start": 505.639,
+      "duration": 4.601,
+      "text": "APK add curl so now the Cur is installed"
+    },
+    {
+      "start": 507.96,
+      "duration": 4.519,
+      "text": "inside our machine"
+    },
+    {
+      "start": 510.24,
+      "duration": 3.76,
+      "text": "using run command because run lets you"
+    },
+    {
+      "start": 512.479,
+      "duration": 3.761,
+      "text": "execute any command on top of the"
+    },
+    {
+      "start": 514.0,
+      "duration": 3.479,
+      "text": "current image now moving on the next"
+    },
+    {
+      "start": 516.24,
+      "duration": 4.64,
+      "text": "doer file instruction that we're going"
+    },
+    {
+      "start": 517.479,
+      "duration": 5.641,
+      "text": "to look into is work B instruction using"
+    },
+    {
+      "start": 520.88,
+      "duration": 3.68,
+      "text": "this instruction you can set the path on"
+    },
+    {
+      "start": 523.12,
+      "duration": 3.159,
+      "text": "which you want to work so you can see"
+    },
+    {
+      "start": 524.56,
+      "duration": 3.48,
+      "text": "the you can see the explanation here set"
+    },
+    {
+      "start": 526.279,
+      "duration": 4.12,
+      "text": "the working directory for any subsequent"
+    },
+    {
+      "start": 528.04,
+      "duration": 4.76,
+      "text": "add copy CMD entrypoint instruction that"
+    },
+    {
+      "start": 530.399,
+      "duration": 4.761,
+      "text": "follows inside the docile to explain you"
+    },
+    {
+      "start": 532.8,
+      "duration": 3.8,
+      "text": "this in better terms for now I'm inside"
+    },
+    {
+      "start": 535.16,
+      "duration": 3.28,
+      "text": "my local file I'm working into side"
+    },
+    {
+      "start": 536.6,
+      "duration": 4.12,
+      "text": "directory which is inside projects"
+    },
+    {
+      "start": 538.44,
+      "duration": 3.76,
+      "text": "folder inside Docker file tutorial"
+    },
+    {
+      "start": 540.72,
+      "duration": 3.52,
+      "text": "similarly if you want to work inside a"
+    },
+    {
+      "start": 542.2,
+      "duration": 5.079,
+      "text": "particular directory or a folder you can"
+    },
+    {
+      "start": 544.24,
+      "duration": 5.36,
+      "text": "set that using workd right now if I show"
+    },
+    {
+      "start": 547.279,
+      "duration": 4.081,
+      "text": "you what folder are you working inside"
+    },
+    {
+      "start": 549.6,
+      "duration": 5.16,
+      "text": "the image we can check that by running"
+    },
+    {
+      "start": 551.36,
+      "duration": 6.039,
+      "text": "Docker run my image and PWD to sprint"
+    },
+    {
+      "start": 554.76,
+      "duration": 4.84,
+      "text": "out the working directory so the image"
+    },
+    {
+      "start": 557.399,
+      "duration": 4.0,
+      "text": "is using the slash path which is this"
+    },
+    {
+      "start": 559.6,
+      "duration": 4.32,
+      "text": "path here but let's say you want to use"
+    },
+    {
+      "start": 561.399,
+      "duration": 5.961,
+      "text": "the downloads folder so you can set that"
+    },
+    {
+      "start": 563.92,
+      "duration": 6.919,
+      "text": "using word so I'm going to say set the"
+    },
+    {
+      "start": 567.36,
+      "duration": 4.8,
+      "text": "working directory to downloads so right"
+    },
+    {
+      "start": 570.839,
+      "duration": 2.721,
+      "text": "now let's check what is inside the"
+    },
+    {
+      "start": 572.16,
+      "duration": 3.84,
+      "text": "download folder which you can do using"
+    },
+    {
+      "start": 573.56,
+      "duration": 4.2,
+      "text": "LS command so I'll say LS"
+    },
+    {
+      "start": 576.0,
+      "duration": 4.079,
+      "text": "SL"
+    },
+    {
+      "start": 577.76,
+      "duration": 3.84,
+      "text": "downloads and it says no such file or"
+    },
+    {
+      "start": 580.079,
+      "duration": 3.041,
+      "text": "directory so you don't need to worry"
+    },
+    {
+      "start": 581.6,
+      "duration": 4.04,
+      "text": "because working directory can also set"
+    },
+    {
+      "start": 583.12,
+      "duration": 4.6,
+      "text": "the path but also create new directories"
+    },
+    {
+      "start": 585.64,
+      "duration": 4.08,
+      "text": "if it if if they are not already there"
+    },
+    {
+      "start": 587.72,
+      "duration": 4.04,
+      "text": "so now using workd I'm going to set the"
+    },
+    {
+      "start": 589.72,
+      "duration": 3.64,
+      "text": "working directory as/ downloads but if"
+    },
+    {
+      "start": 591.76,
+      "duration": 3.759,
+      "text": "it's not there it will also create it"
+    },
+    {
+      "start": 593.36,
+      "duration": 4.159,
+      "text": "for me so I'm going to test that out"
+    },
+    {
+      "start": 595.519,
+      "duration": 6.76,
+      "text": "let's save this and create an image so"
+    },
+    {
+      "start": 597.519,
+      "duration": 5.801,
+      "text": "I'll say Docker build hyphen T my image"
+    },
+    {
+      "start": 602.279,
+      "duration": 4.0,
+      "text": "and"
+    },
+    {
+      "start": 603.32,
+      "duration": 4.32,
+      "text": "Dot so very soon it will create an image"
+    },
+    {
+      "start": 606.279,
+      "duration": 5.761,
+      "text": "and you can see this is the third layer"
+    },
+    {
+      "start": 607.64,
+      "duration": 6.12,
+      "text": "which is the workd layer now if I do PWD"
+    },
+    {
+      "start": 612.04,
+      "duration": 3.88,
+      "text": "command that we ran earlier to check out"
+    },
+    {
+      "start": 613.76,
+      "duration": 3.88,
+      "text": "what current directory is it using once"
+    },
+    {
+      "start": 615.92,
+      "duration": 3.64,
+      "text": "I do PWD you can see it's using the"
+    },
+    {
+      "start": 617.64,
+      "duration": 4.96,
+      "text": "downloads folder which means it has"
+    },
+    {
+      "start": 619.56,
+      "duration": 5.36,
+      "text": "created the folder and also set it as"
+    },
+    {
+      "start": 622.6,
+      "duration": 4.28,
+      "text": "the working directory to be used by the"
+    },
+    {
+      "start": 624.92,
+      "duration": 5.0,
+      "text": "subsequent commands which could be add"
+    },
+    {
+      "start": 626.88,
+      "duration": 4.28,
+      "text": "copy CMD Etc so it's all clear now the"
+    },
+    {
+      "start": 629.92,
+      "duration": 3.84,
+      "text": "working director sets the working"
+    },
+    {
+      "start": 631.16,
+      "duration": 4.2,
+      "text": "directory to be used by all these"
+    },
+    {
+      "start": 633.76,
+      "duration": 3.639,
+      "text": "different instructions that follow the"
+    },
+    {
+      "start": 635.36,
+      "duration": 3.599,
+      "text": "work di command the next talker"
+    },
+    {
+      "start": 637.399,
+      "duration": 3.921,
+      "text": "instructions that we going to learn is"
+    },
+    {
+      "start": 638.959,
+      "duration": 5.201,
+      "text": "the user instruction user instruction"
+    },
+    {
+      "start": 641.32,
+      "duration": 4.959,
+      "text": "lets you set the username or the user ID"
+    },
+    {
+      "start": 644.16,
+      "duration": 4.16,
+      "text": "along with group ID if you want to as"
+    },
+    {
+      "start": 646.279,
+      "duration": 4.161,
+      "text": "the default user and group for the next"
+    },
+    {
+      "start": 648.32,
+      "duration": 4.12,
+      "text": "commands by default when you don't set"
+    },
+    {
+      "start": 650.44,
+      "duration": 4.16,
+      "text": "any user the docker image is using the"
+    },
+    {
+      "start": 652.44,
+      "duration": 4.16,
+      "text": "root user as the default user and I can"
+    },
+    {
+      "start": 654.6,
+      "duration": 3.679,
+      "text": "show you that so when I run who Ami"
+    },
+    {
+      "start": 656.6,
+      "duration": 3.72,
+      "text": "command on my image I should be able to"
+    },
+    {
+      "start": 658.279,
+      "duration": 6.081,
+      "text": "see root as is the default user so"
+    },
+    {
+      "start": 660.32,
+      "duration": 6.28,
+      "text": "Docker run my image and who my command"
+    },
+    {
+      "start": 664.36,
+      "duration": 4.4,
+      "text": "is going to show us root is the default"
+    },
+    {
+      "start": 666.6,
+      "duration": 3.76,
+      "text": "user but using user command we can set"
+    },
+    {
+      "start": 668.76,
+      "duration": 4.56,
+      "text": "any other user so let's say I want to"
+    },
+    {
+      "start": 670.36,
+      "duration": 5.8,
+      "text": "set the user as Cloud sham and if I were"
+    },
+    {
+      "start": 673.32,
+      "duration": 4.72,
+      "text": "to try running the command Again by"
+    },
+    {
+      "start": 676.16,
+      "duration": 5.2,
+      "text": "creating an image I should be able to"
+    },
+    {
+      "start": 678.04,
+      "duration": 5.12,
+      "text": "get Cloud shamp as the user but as Cloud"
+    },
+    {
+      "start": 681.36,
+      "duration": 3.919,
+      "text": "sham is not created obviously we will"
+    },
+    {
+      "start": 683.16,
+      "duration": 4.6,
+      "text": "get an error saying no matching entries"
+    },
+    {
+      "start": 685.279,
+      "duration": 3.68,
+      "text": "or there is no usern named as Cloud chap"
+    },
+    {
+      "start": 687.76,
+      "duration": 3.28,
+      "text": "so before I do that I'm going to go"
+    },
+    {
+      "start": 688.959,
+      "duration": 3.921,
+      "text": "ahead and create a user inside my"
+    },
+    {
+      "start": 691.04,
+      "duration": 3.84,
+      "text": "container using the Run command because"
+    },
+    {
+      "start": 692.88,
+      "duration": 3.959,
+      "text": "we know run command is used to execute"
+    },
+    {
+      "start": 694.88,
+      "duration": 4.56,
+      "text": "any commands on the top of image so so I"
+    },
+    {
+      "start": 696.839,
+      "duration": 6.041,
+      "text": "will run the add user command saying add"
+    },
+    {
+      "start": 699.44,
+      "duration": 7.199,
+      "text": "user i d uh name of the user which is"
+    },
+    {
+      "start": 702.88,
+      "duration": 6.399,
+      "text": "cloud champ and now if I try to build"
+    },
+    {
+      "start": 706.639,
+      "duration": 5.2,
+      "text": "the image again this time I'm creating a"
+    },
+    {
+      "start": 709.279,
+      "duration": 4.321,
+      "text": "user along with creation I'm also"
+    },
+    {
+      "start": 711.839,
+      "duration": 4.44,
+      "text": "setting the user to be used as Cloud"
+    },
+    {
+      "start": 713.6,
+      "duration": 4.0,
+      "text": "Cham for the next instruction so now"
+    },
+    {
+      "start": 716.279,
+      "duration": 3.441,
+      "text": "this container should be running with"
+    },
+    {
+      "start": 717.6,
+      "duration": 4.12,
+      "text": "the user as Cloud Cham so let's try to"
+    },
+    {
+      "start": 719.72,
+      "duration": 4.44,
+      "text": "check that when I are the same who Ami"
+    },
+    {
+      "start": 721.72,
+      "duration": 4.0,
+      "text": "command this time in place of root it"
+    },
+    {
+      "start": 724.16,
+      "duration": 3.96,
+      "text": "should show us Cloud sham because we"
+    },
+    {
+      "start": 725.72,
+      "duration": 4.32,
+      "text": "using the user instruction so this is"
+    },
+    {
+      "start": 728.12,
+      "duration": 3.959,
+      "text": "how user instruction works it will let"
+    },
+    {
+      "start": 730.04,
+      "duration": 3.68,
+      "text": "you set the user or the user ID"
+    },
+    {
+      "start": 732.079,
+      "duration": 4.241,
+      "text": "optionally I can also set the group if I"
+    },
+    {
+      "start": 733.72,
+      "duration": 5.04,
+      "text": "want to but that's how user instruction"
+    },
+    {
+      "start": 736.32,
+      "duration": 4.84,
+      "text": "Works in Windows you can create a new"
+    },
+    {
+      "start": 738.76,
+      "duration": 4.519,
+      "text": "user using the net user add command and"
+    },
+    {
+      "start": 741.16,
+      "duration": 3.799,
+      "text": "then send that user using the user"
+    },
+    {
+      "start": 743.279,
+      "duration": 3.761,
+      "text": "instruction so this is how you can do it"
+    },
+    {
+      "start": 744.959,
+      "duration": 3.88,
+      "text": "in Windows and and for the next Docker"
+    },
+    {
+      "start": 747.04,
+      "duration": 3.28,
+      "text": "file instruction let's try to build a"
+    },
+    {
+      "start": 748.839,
+      "duration": 5.0,
+      "text": "Windows image so I'm going to remove"
+    },
+    {
+      "start": 750.32,
+      "duration": 4.959,
+      "text": "this and add the code for Windows image"
+    },
+    {
+      "start": 753.839,
+      "duration": 3.081,
+      "text": "so here are new set of Docker file"
+    },
+    {
+      "start": 755.279,
+      "duration": 3.881,
+      "text": "instructions that we are going to use to"
+    },
+    {
+      "start": 756.92,
+      "duration": 4.84,
+      "text": "create a new Docker image we have three"
+    },
+    {
+      "start": 759.16,
+      "duration": 3.919,
+      "text": "instructions of from run and run from"
+    },
+    {
+      "start": 761.76,
+      "duration": 3.0,
+      "text": "instruction is used to set the base"
+    },
+    {
+      "start": 763.079,
+      "duration": 3.801,
+      "text": "image that we know and we using"
+    },
+    {
+      "start": 764.76,
+      "duration": 4.16,
+      "text": "Powershell as the base image from"
+    },
+    {
+      "start": 766.88,
+      "duration": 3.8,
+      "text": "Microsoft you can find the image here on"
+    },
+    {
+      "start": 768.92,
+      "duration": 3.88,
+      "text": "dockerhub so this is the Powershell"
+    },
+    {
+      "start": 770.68,
+      "duration": 5.64,
+      "text": "image by Microsoft and this is what we"
+    },
+    {
+      "start": 772.8,
+      "duration": 5.159,
+      "text": "are using for our new Docker image along"
+    },
+    {
+      "start": 776.32,
+      "duration": 3.28,
+      "text": "with this we have two run commands so"
+    },
+    {
+      "start": 777.959,
+      "duration": 4.481,
+      "text": "this command is used to create a folder"
+    },
+    {
+      "start": 779.6,
+      "duration": 5.239,
+      "text": "named as/ demo and you can see it's a"
+    },
+    {
+      "start": 782.44,
+      "duration": 4.72,
+      "text": "Linux command because we know mkd in"
+    },
+    {
+      "start": 784.839,
+      "duration": 3.881,
+      "text": "Linux is used to create folders"
+    },
+    {
+      "start": 787.16,
+      "duration": 3.359,
+      "text": "similarly we also have another command"
+    },
+    {
+      "start": 788.72,
+      "duration": 3.52,
+      "text": "here which is the Run command run"
+    },
+    {
+      "start": 790.519,
+      "duration": 4.281,
+      "text": "command is used to execute any commands"
+    },
+    {
+      "start": 792.24,
+      "duration": 4.44,
+      "text": "on top of the current image so in this"
+    },
+    {
+      "start": 794.8,
+      "duration": 3.64,
+      "text": "command here we are saying hello world"
+    },
+    {
+      "start": 796.68,
+      "duration": 5.24,
+      "text": "and then we are putting this message"
+    },
+    {
+      "start": 798.44,
+      "duration": 5.28,
+      "text": "inside demo message. txt so this is a"
+    },
+    {
+      "start": 801.92,
+      "duration": 4.159,
+      "text": "Linux command but this is a Windows"
+    },
+    {
+      "start": 803.72,
+      "duration": 3.84,
+      "text": "command so how can Docker handle two"
+    },
+    {
+      "start": 806.079,
+      "duration": 3.521,
+      "text": "different commands from two different"
+    },
+    {
+      "start": 807.56,
+      "duration": 3.36,
+      "text": "operating system let's check that that"
+    },
+    {
+      "start": 809.6,
+      "duration": 3.32,
+      "text": "for now I'm going to go ahead with"
+    },
+    {
+      "start": 810.92,
+      "duration": 5.56,
+      "text": "creating an image from this Docker file"
+    },
+    {
+      "start": 812.92,
+      "duration": 6.44,
+      "text": "so I'll say Docker build hyphen T New"
+    },
+    {
+      "start": 816.48,
+      "duration": 4.799,
+      "text": "Image and Dot once I run this it will go"
+    },
+    {
+      "start": 819.36,
+      "duration": 3.719,
+      "text": "ahead and start creating it but you can"
+    },
+    {
+      "start": 821.279,
+      "duration": 4.841,
+      "text": "see there's an error here on the third"
+    },
+    {
+      "start": 823.079,
+      "duration": 6.721,
+      "text": "instruction so we got an error saying"
+    },
+    {
+      "start": 826.12,
+      "duration": 6.279,
+      "text": "fail to solve process /p/ hyen C so this"
+    },
+    {
+      "start": 829.8,
+      "duration": 4.56,
+      "text": "command is still using the bash shell"
+    },
+    {
+      "start": 832.399,
+      "duration": 3.841,
+      "text": "instead of using the windows shell which"
+    },
+    {
+      "start": 834.36,
+      "duration": 3.64,
+      "text": "could be power shell or command prompt"
+    },
+    {
+      "start": 836.24,
+      "duration": 3.92,
+      "text": "so let's try to change that and we can"
+    },
+    {
+      "start": 838.0,
+      "duration": 4.399,
+      "text": "change the shell in Docker file using"
+    },
+    {
+      "start": 840.16,
+      "duration": 3.239,
+      "text": "the Shell instruction so if you look"
+    },
+    {
+      "start": 842.399,
+      "duration": 2.961,
+      "text": "here in the"
+    },
+    {
+      "start": 843.399,
+      "duration": 3.841,
+      "text": "documentation shell instruction and"
+    },
+    {
+      "start": 845.36,
+      "duration": 3.44,
+      "text": "Docker file can be used to change what"
+    },
+    {
+      "start": 847.24,
+      "duration": 3.92,
+      "text": "kind of shell do you want to execute any"
+    },
+    {
+      "start": 848.8,
+      "duration": 4.399,
+      "text": "command if you see here uh in this"
+    },
+    {
+      "start": 851.16,
+      "duration": 4.039,
+      "text": "example here we are using in this"
+    },
+    {
+      "start": 853.199,
+      "duration": 3.76,
+      "text": "example here you can use shell to Define"
+    },
+    {
+      "start": 855.199,
+      "duration": 3.801,
+      "text": "that you want to use a Powers shell or"
+    },
+    {
+      "start": 856.959,
+      "duration": 3.8,
+      "text": "you can you want to use a CMD or you"
+    },
+    {
+      "start": 859.0,
+      "duration": 5.16,
+      "text": "should you can use the default one which"
+    },
+    {
+      "start": 860.759,
+      "duration": 5.88,
+      "text": "is /bin/sh for Linux so now as this"
+    },
+    {
+      "start": 864.16,
+      "duration": 4.52,
+      "text": "command is Powers shell command we can"
+    },
+    {
+      "start": 866.639,
+      "duration": 5.961,
+      "text": "set the shell as Powers shell before we"
+    },
+    {
+      "start": 868.68,
+      "duration": 6.68,
+      "text": "run this mod so I'm going to put the"
+    },
+    {
+      "start": 872.6,
+      "duration": 5.56,
+      "text": "shell instruction here and set the shell"
+    },
+    {
+      "start": 875.36,
+      "duration": 5.599,
+      "text": "as power shell rather than using the"
+    },
+    {
+      "start": 878.16,
+      "duration": 5.599,
+      "text": "/bin/sh which it is doing by default so"
+    },
+    {
+      "start": 880.959,
+      "duration": 7.0,
+      "text": "I'll go ahead and copy this thing"
+    },
+    {
+      "start": 883.759,
+      "duration": 5.681,
+      "text": "here and paste it in my code so now we"
+    },
+    {
+      "start": 887.959,
+      "duration": 3.0,
+      "text": "using the Shell instruction to set the"
+    },
+    {
+      "start": 889.44,
+      "duration": 3.839,
+      "text": "shell as poers shell for the next"
+    },
+    {
+      "start": 890.959,
+      "duration": 3.641,
+      "text": "command which is this one here now I'm"
+    },
+    {
+      "start": 893.279,
+      "duration": 3.041,
+      "text": "going to save it and then run the docker"
+    },
+    {
+      "start": 894.6,
+      "duration": 5.0,
+      "text": "build command again to see if we get the"
+    },
+    {
+      "start": 896.32,
+      "duration": 4.759,
+      "text": "same error okay we got save error"
+    },
+    {
+      "start": 899.6,
+      "duration": 2.84,
+      "text": "so instead of powers shell I think it"
+    },
+    {
+      "start": 901.079,
+      "duration": 4.281,
+      "text": "has to be"
+    },
+    {
+      "start": 902.44,
+      "duration": 6.44,
+      "text": "pwsh something like this now I'm going"
+    },
+    {
+      "start": 905.36,
+      "duration": 5.8,
+      "text": "to save this and run it again so this"
+    },
+    {
+      "start": 908.88,
+      "duration": 4.92,
+      "text": "time we got no error and if I check the"
+    },
+    {
+      "start": 911.16,
+      "duration": 4.72,
+      "text": "file inside this I want to say Docker"
+    },
+    {
+      "start": 913.8,
+      "duration": 4.36,
+      "text": "run new"
+    },
+    {
+      "start": 915.88,
+      "duration": 5.6,
+      "text": "image L"
+    },
+    {
+      "start": 918.16,
+      "duration": 3.32,
+      "text": "cat this"
+    },
+    {
+      "start": 922.759,
+      "duration": 3.44,
+      "text": "part so you can see the message is Hello"
+    },
+    {
+      "start": 925.0,
+      "duration": 3.399,
+      "text": "World which means this command has"
+    },
+    {
+      "start": 926.199,
+      "duration": 5.44,
+      "text": "executed successfully when you use the"
+    },
+    {
+      "start": 928.399,
+      "duration": 6.081,
+      "text": "shell command to change the shell from"
+    },
+    {
+      "start": 931.639,
+      "duration": 4.32,
+      "text": "/bin/sh to power shell here so using"
+    },
+    {
+      "start": 934.48,
+      "duration": 3.159,
+      "text": "shell command you can Define what shell"
+    },
+    {
+      "start": 935.959,
+      "duration": 4.161,
+      "text": "do you want to use for the next Docker"
+    },
+    {
+      "start": 937.639,
+      "duration": 3.721,
+      "text": "file instructions here so till now in"
+    },
+    {
+      "start": 940.12,
+      "duration": 2.88,
+      "text": "this Docker file tutorial we have"
+    },
+    {
+      "start": 941.36,
+      "duration": 4.599,
+      "text": "learned many Docker file instructions"
+    },
+    {
+      "start": 943.0,
+      "duration": 4.759,
+      "text": "like from Dr work user shell and lot"
+    },
+    {
+      "start": 945.959,
+      "duration": 3.88,
+      "text": "more how can we set environment"
+    },
+    {
+      "start": 947.759,
+      "duration": 3.721,
+      "text": "variables setting environment variables"
+    },
+    {
+      "start": 949.839,
+      "duration": 3.521,
+      "text": "for running an application is very very"
+    },
+    {
+      "start": 951.48,
+      "duration": 4.76,
+      "text": "common and you can do that in Docker"
+    },
+    {
+      "start": 953.36,
+      "duration": 4.56,
+      "text": "file using the EnV instruction so the"
+    },
+    {
+      "start": 956.24,
+      "duration": 4.079,
+      "text": "EnV instruction lets you set the"
+    },
+    {
+      "start": 957.92,
+      "duration": 4.64,
+      "text": "environment variable to specified value"
+    },
+    {
+      "start": 960.319,
+      "duration": 7.32,
+      "text": "EnV and then key equals to Value so"
+    },
+    {
+      "start": 962.56,
+      "duration": 7.56,
+      "text": "let's say appor host is going to be"
+    },
+    {
+      "start": 967.639,
+      "duration": 4.2,
+      "text": "0.0.0.0 similarly if you want to add"
+    },
+    {
+      "start": 970.12,
+      "duration": 5.56,
+      "text": "more such environment variables let's"
+    },
+    {
+      "start": 971.839,
+      "duration": 5.92,
+      "text": "say for your uh app Port so you can do"
+    },
+    {
+      "start": 975.68,
+      "duration": 4.24,
+      "text": "that by adding more such EnV"
+    },
+    {
+      "start": 977.759,
+      "duration": 3.52,
+      "text": "instructions in the docker file"
+    },
+    {
+      "start": 979.92,
+      "duration": 2.68,
+      "text": "optionally if you want to have more such"
+    },
+    {
+      "start": 981.279,
+      "duration": 3.841,
+      "text": "environment variables you can add it"
+    },
+    {
+      "start": 982.6,
+      "duration": 4.799,
+      "text": "directly in the same single instruction"
+    },
+    {
+      "start": 985.12,
+      "duration": 4.44,
+      "text": "by saying or adding this backs slash"
+    },
+    {
+      "start": 987.399,
+      "duration": 4.24,
+      "text": "here so using this you can now put more"
+    },
+    {
+      "start": 989.56,
+      "duration": 6.48,
+      "text": "s more envirment variables like this so"
+    },
+    {
+      "start": 991.639,
+      "duration": 6.44,
+      "text": "let's say ABC equals to XYZ and if you"
+    },
+    {
+      "start": 996.04,
+      "duration": 3.84,
+      "text": "want to add more you can just add back"
+    },
+    {
+      "start": 998.079,
+      "duration": 4.2,
+      "text": "slash and then put the next variable"
+    },
+    {
+      "start": 999.88,
+      "duration": 4.399,
+      "text": "here so this is how you can define"
+    },
+    {
+      "start": 1002.279,
+      "duration": 3.8,
+      "text": "environment variables using the en EnV"
+    },
+    {
+      "start": 1004.279,
+      "duration": 4.92,
+      "text": "instruction the EMV instruction sets"
+    },
+    {
+      "start": 1006.079,
+      "duration": 5.56,
+      "text": "theab variable key to the value value"
+    },
+    {
+      "start": 1009.199,
+      "duration": 4.2,
+      "text": "and and here are some examples as well"
+    },
+    {
+      "start": 1011.639,
+      "duration": 3.44,
+      "text": "now once I set this you can also check"
+    },
+    {
+      "start": 1013.399,
+      "duration": 3.44,
+      "text": "if it is working or not so I'm going to"
+    },
+    {
+      "start": 1015.079,
+      "duration": 5.2,
+      "text": "save this and run the command to build"
+    },
+    {
+      "start": 1016.839,
+      "duration": 9.12,
+      "text": "an image so I'll say Docker build iph p"
+    },
+    {
+      "start": 1020.279,
+      "duration": 8.601,
+      "text": "uh my new image dot once I do this okay"
+    },
+    {
+      "start": 1025.959,
+      "duration": 4.521,
+      "text": "Docker build once I do this it will go"
+    },
+    {
+      "start": 1028.88,
+      "duration": 3.76,
+      "text": "ahead and create an image this image"
+    },
+    {
+      "start": 1030.48,
+      "duration": 4.0,
+      "text": "should have enir three envir variables"
+    },
+    {
+      "start": 1032.64,
+      "duration": 4.88,
+      "text": "one for app host one for app port and"
+    },
+    {
+      "start": 1034.48,
+      "duration": 4.4,
+      "text": "then the third one for ABC equal to XYZ"
+    },
+    {
+      "start": 1037.52,
+      "duration": 3.679,
+      "text": "once this image is created I'm going to"
+    },
+    {
+      "start": 1038.88,
+      "duration": 5.199,
+      "text": "check the environment variables present"
+    },
+    {
+      "start": 1041.199,
+      "duration": 2.88,
+      "text": "inside this doer"
+    },
+    {
+      "start": 1045.319,
+      "duration": 4.24,
+      "text": "container okay so now the image has been"
+    },
+    {
+      "start": 1047.919,
+      "duration": 4.0,
+      "text": "created let's try to run this as a"
+    },
+    {
+      "start": 1049.559,
+      "duration": 4.601,
+      "text": "container so I'll say Docker run my new"
+    },
+    {
+      "start": 1051.919,
+      "duration": 3.721,
+      "text": "image and then I want to run the command"
+    },
+    {
+      "start": 1054.16,
+      "duration": 3.96,
+      "text": "EnV to check what are different"
+    },
+    {
+      "start": 1055.64,
+      "duration": 5.0,
+      "text": "envirment variables present inside this"
+    },
+    {
+      "start": 1058.12,
+      "duration": 3.88,
+      "text": "so it should show me the same uh enab"
+    },
+    {
+      "start": 1060.64,
+      "duration": 4.08,
+      "text": "variables present here in the docker"
+    },
+    {
+      "start": 1062.0,
+      "duration": 4.96,
+      "text": "file so we can understand that en works"
+    },
+    {
+      "start": 1064.72,
+      "duration": 4.319,
+      "text": "properly so when I run this you will be"
+    },
+    {
+      "start": 1066.96,
+      "duration": 3.959,
+      "text": "able to see all this instructions along"
+    },
+    {
+      "start": 1069.039,
+      "duration": 4.401,
+      "text": "with the instructions that are set in"
+    },
+    {
+      "start": 1070.919,
+      "duration": 4.681,
+      "text": "the python base image so we can see it"
+    },
+    {
+      "start": 1073.44,
+      "duration": 5.599,
+      "text": "works so using EnV you can set the"
+    },
+    {
+      "start": 1075.6,
+      "duration": 5.04,
+      "text": "enviral variables inside your containers"
+    },
+    {
+      "start": 1079.039,
+      "duration": 3.401,
+      "text": "we all know a Docker container consists"
+    },
+    {
+      "start": 1080.64,
+      "duration": 3.44,
+      "text": "of code along with its dependencies and"
+    },
+    {
+      "start": 1082.44,
+      "duration": 4.56,
+      "text": "libraries and we have also learned that"
+    },
+    {
+      "start": 1084.08,
+      "duration": 4.839,
+      "text": "in the previous Docker course so now"
+    },
+    {
+      "start": 1087.0,
+      "duration": 3.72,
+      "text": "let's say we want to copy this code from"
+    },
+    {
+      "start": 1088.919,
+      "duration": 4.281,
+      "text": "our local machine to our Docker"
+    },
+    {
+      "start": 1090.72,
+      "duration": 4.68,
+      "text": "container how can we do that so we can"
+    },
+    {
+      "start": 1093.2,
+      "duration": 4.64,
+      "text": "do that using the copy instruction that"
+    },
+    {
+      "start": 1095.4,
+      "duration": 4.48,
+      "text": "lets you copy something from source to"
+    },
+    {
+      "start": 1097.84,
+      "duration": 4.24,
+      "text": "destination so the source here is a"
+    },
+    {
+      "start": 1099.88,
+      "duration": 4.24,
+      "text": "local machine and the destination is"
+    },
+    {
+      "start": 1102.08,
+      "duration": 6.36,
+      "text": "this directory here so I'm going to say"
+    },
+    {
+      "start": 1104.12,
+      "duration": 7.28,
+      "text": "copy app.py from my local machine inside"
+    },
+    {
+      "start": 1108.44,
+      "duration": 5.359,
+      "text": "SL code slash once I do this and then"
+    },
+    {
+      "start": 1111.4,
+      "duration": 4.2,
+      "text": "now create Docker image from this Docker"
+    },
+    {
+      "start": 1113.799,
+      "duration": 5.36,
+      "text": "file we should be able to see that the"
+    },
+    {
+      "start": 1115.6,
+      "duration": 5.04,
+      "text": "app.py is present inside /c code folder"
+    },
+    {
+      "start": 1119.159,
+      "duration": 3.88,
+      "text": "so I'm going to now go ahead with"
+    },
+    {
+      "start": 1120.64,
+      "duration": 6.88,
+      "text": "reiling this image so Docker build hyen"
+    },
+    {
+      "start": 1123.039,
+      "duration": 4.481,
+      "text": "T by New Image"
+    },
+    {
+      "start": 1128.44,
+      "duration": 4.599,
+      "text": "Dot and you can see the copy has been"
+    },
+    {
+      "start": 1131.12,
+      "duration": 4.64,
+      "text": "executed so if I want to check that I"
+    },
+    {
+      "start": 1133.039,
+      "duration": 6.601,
+      "text": "can run the image as a container by"
+    },
+    {
+      "start": 1135.76,
+      "duration": 6.32,
+      "text": "saying Docker run my new image and then"
+    },
+    {
+      "start": 1139.64,
+      "duration": 4.68,
+      "text": "LS /c"
+    },
+    {
+      "start": 1142.08,
+      "duration": 4.56,
+      "text": "code so when I do this you can see"
+    },
+    {
+      "start": 1144.32,
+      "duration": 4.08,
+      "text": "app.py is present and this is how you"
+    },
+    {
+      "start": 1146.64,
+      "duration": 3.32,
+      "text": "can copy file from one page to another"
+    },
+    {
+      "start": 1148.4,
+      "duration": 3.519,
+      "text": "using the copy"
+    },
+    {
+      "start": 1149.96,
+      "duration": 3.92,
+      "text": "instruction you can copy files and"
+    },
+    {
+      "start": 1151.919,
+      "duration": 4.601,
+      "text": "folders from copy command similar to"
+    },
+    {
+      "start": 1153.88,
+      "duration": 4.44,
+      "text": "copy is the add instruction using add"
+    },
+    {
+      "start": 1156.52,
+      "duration": 4.279,
+      "text": "instruction we can also copy files from"
+    },
+    {
+      "start": 1158.32,
+      "duration": 3.96,
+      "text": "one for from one place to another but"
+    },
+    {
+      "start": 1160.799,
+      "duration": 4.12,
+      "text": "along with that it also has extra"
+    },
+    {
+      "start": 1162.28,
+      "duration": 4.32,
+      "text": "functionality where you can copy files"
+    },
+    {
+      "start": 1164.919,
+      "duration": 4.081,
+      "text": "from a remote location maybe something"
+    },
+    {
+      "start": 1166.6,
+      "duration": 5.24,
+      "text": "on the Internet inside your container"
+    },
+    {
+      "start": 1169.0,
+      "duration": 5.6,
+      "text": "let me show you an example so in my S3"
+    },
+    {
+      "start": 1171.84,
+      "duration": 4.88,
+      "text": "bucket I have a file named as token. txt"
+    },
+    {
+      "start": 1174.6,
+      "duration": 5.199,
+      "text": "and using add instructions I can copy"
+    },
+    {
+      "start": 1176.72,
+      "duration": 5.68,
+      "text": "that from my S3 bucket inside my"
+    },
+    {
+      "start": 1179.799,
+      "duration": 4.681,
+      "text": "container so add add instruction can"
+    },
+    {
+      "start": 1182.4,
+      "duration": 4.56,
+      "text": "copy things from local to The Container"
+    },
+    {
+      "start": 1184.48,
+      "duration": 4.4,
+      "text": "also from remote URLs like S3 buckets or"
+    },
+    {
+      "start": 1186.96,
+      "duration": 3.28,
+      "text": "anything inside the container as well to"
+    },
+    {
+      "start": 1188.88,
+      "duration": 2.679,
+      "text": "show you that I'm going to go ahead with"
+    },
+    {
+      "start": 1190.24,
+      "duration": 4.799,
+      "text": "building an image so I'm going to say"
+    },
+    {
+      "start": 1191.559,
+      "duration": 5.281,
+      "text": "Docker build hyphen T New Image and then"
+    },
+    {
+      "start": 1195.039,
+      "duration": 3.961,
+      "text": "you can see it has executed the add"
+    },
+    {
+      "start": 1196.84,
+      "duration": 4.48,
+      "text": "instruction as well to confirm I'm to"
+    },
+    {
+      "start": 1199.0,
+      "duration": 4.08,
+      "text": "check what is inside the code folder so"
+    },
+    {
+      "start": 1201.32,
+      "duration": 4.359,
+      "text": "along with app.py it should also have a"
+    },
+    {
+      "start": 1203.08,
+      "duration": 4.12,
+      "text": "file named as token. txt so I going to"
+    },
+    {
+      "start": 1205.679,
+      "duration": 3.36,
+      "text": "run the same comile which i r earlier"
+    },
+    {
+      "start": 1207.2,
+      "duration": 4.56,
+      "text": "which was doer run my new image and"
+    },
+    {
+      "start": 1209.039,
+      "duration": 4.441,
+      "text": "check what is inside the SL code folder"
+    },
+    {
+      "start": 1211.76,
+      "duration": 4.44,
+      "text": "so when I rest enter you can see there"
+    },
+    {
+      "start": 1213.48,
+      "duration": 5.319,
+      "text": "are two files now app.py along with"
+    },
+    {
+      "start": 1216.2,
+      "duration": 5.08,
+      "text": "token. txt so this is how you can use"
+    },
+    {
+      "start": 1218.799,
+      "duration": 4.721,
+      "text": "add instruction which is similar to copy"
+    },
+    {
+      "start": 1221.28,
+      "duration": 4.96,
+      "text": "but also had but also has an extra"
+    },
+    {
+      "start": 1223.52,
+      "duration": 4.76,
+      "text": "function where it can copy or get things"
+    },
+    {
+      "start": 1226.24,
+      "duration": 3.88,
+      "text": "from remote URLs like S3 bucket or"
+    },
+    {
+      "start": 1228.28,
+      "duration": 4.0,
+      "text": "anything on the"
+    },
+    {
+      "start": 1230.12,
+      "duration": 3.84,
+      "text": "internet the next doer instruction that"
+    },
+    {
+      "start": 1232.28,
+      "duration": 3.44,
+      "text": "you're going to learn is the expose"
+    },
+    {
+      "start": 1233.96,
+      "duration": 3.28,
+      "text": "instruction so let's say you have an"
+    },
+    {
+      "start": 1235.72,
+      "duration": 3.64,
+      "text": "application which is running on Port"
+    },
+    {
+      "start": 1237.24,
+      "duration": 4.439,
+      "text": "5000 so you want the container to be"
+    },
+    {
+      "start": 1239.36,
+      "duration": 4.84,
+      "text": "listing on Port 5,000 or to allow"
+    },
+    {
+      "start": 1241.679,
+      "duration": 4.761,
+      "text": "inbound traffic from Port 5,000 and you"
+    },
+    {
+      "start": 1244.2,
+      "duration": 4.24,
+      "text": "can do that using expose command so the"
+    },
+    {
+      "start": 1246.44,
+      "duration": 3.88,
+      "text": "expose Define the network ports that"
+    },
+    {
+      "start": 1248.44,
+      "duration": 4.04,
+      "text": "this container will listen on at one"
+    },
+    {
+      "start": 1250.32,
+      "duration": 3.719,
+      "text": "time it's saying expose 5,000 which"
+    },
+    {
+      "start": 1252.48,
+      "duration": 4.12,
+      "text": "means I'm telling Docker to create a"
+    },
+    {
+      "start": 1254.039,
+      "duration": 3.88,
+      "text": "container which has Port 5,000 open let"
+    },
+    {
+      "start": 1256.6,
+      "duration": 3.6,
+      "text": "me show you I'm going to go ahead with"
+    },
+    {
+      "start": 1257.919,
+      "duration": 5.76,
+      "text": "creating an image from this Docker file"
+    },
+    {
+      "start": 1260.2,
+      "duration": 6.4,
+      "text": "and by saying Docker build i t my new"
+    },
+    {
+      "start": 1263.679,
+      "duration": 5.0,
+      "text": "image dot once I do that you can see"
+    },
+    {
+      "start": 1266.6,
+      "duration": 4.28,
+      "text": "Docker has started creating the image"
+    },
+    {
+      "start": 1268.679,
+      "duration": 4.041,
+      "text": "and very soon uh we will have the image"
+    },
+    {
+      "start": 1270.88,
+      "duration": 3.279,
+      "text": "ready so the image is ready and to check"
+    },
+    {
+      "start": 1272.72,
+      "duration": 3.4,
+      "text": "what ports are allowed on this"
+    },
+    {
+      "start": 1274.159,
+      "duration": 4.64,
+      "text": "particular image I'm going to use the"
+    },
+    {
+      "start": 1276.12,
+      "duration": 4.32,
+      "text": "docker inspect command so this is a"
+    },
+    {
+      "start": 1278.799,
+      "duration": 3.561,
+      "text": "command here Docker inspect to check"
+    },
+    {
+      "start": 1280.44,
+      "duration": 4.119,
+      "text": "this image and to see what ports are"
+    },
+    {
+      "start": 1282.36,
+      "duration": 3.72,
+      "text": "Exposed on this particular image once I"
+    },
+    {
+      "start": 1284.559,
+      "duration": 4.161,
+      "text": "run this you will be able to see that"
+    },
+    {
+      "start": 1286.08,
+      "duration": 5.24,
+      "text": "the port exposed is 5,000 and it was"
+    },
+    {
+      "start": 1288.72,
+      "duration": 4.36,
+      "text": "using expose Docker instruction so using"
+    },
+    {
+      "start": 1291.32,
+      "duration": 5.44,
+      "text": "expose you can allow traffic from a"
+    },
+    {
+      "start": 1293.08,
+      "duration": 5.28,
+      "text": "particular Port inside the container so"
+    },
+    {
+      "start": 1296.76,
+      "duration": 3.44,
+      "text": "far in this talker file tutorial we have"
+    },
+    {
+      "start": 1298.36,
+      "duration": 3.84,
+      "text": "learned many different instructions but"
+    },
+    {
+      "start": 1300.2,
+      "duration": 3.52,
+      "text": "the two very most important instructions"
+    },
+    {
+      "start": 1302.2,
+      "duration": 3.32,
+      "text": "that are responsible to run the"
+    },
+    {
+      "start": 1303.72,
+      "duration": 5.4,
+      "text": "application or the process inside the"
+    },
+    {
+      "start": 1305.52,
+      "duration": 5.399,
+      "text": "container are entry point and CMD so"
+    },
+    {
+      "start": 1309.12,
+      "duration": 3.88,
+      "text": "entry point and CMD are the instructions"
+    },
+    {
+      "start": 1310.919,
+      "duration": 4.081,
+      "text": "in Docker file that will actually tell"
+    },
+    {
+      "start": 1313.0,
+      "duration": 4.159,
+      "text": "what process to run or what command to"
+    },
+    {
+      "start": 1315.0,
+      "duration": 3.679,
+      "text": "execute Docker expects you to have"
+    },
+    {
+      "start": 1317.159,
+      "duration": 3.041,
+      "text": "either one of these inside the docker"
+    },
+    {
+      "start": 1318.679,
+      "duration": 3.201,
+      "text": "file you can also have both of them but"
+    },
+    {
+      "start": 1320.2,
+      "duration": 3.959,
+      "text": "you need to have either one of them"
+    },
+    {
+      "start": 1321.88,
+      "duration": 4.279,
+      "text": "which will Define what is to be running"
+    },
+    {
+      "start": 1324.159,
+      "duration": 4.12,
+      "text": "inside the container for example if you"
+    },
+    {
+      "start": 1326.159,
+      "duration": 4.361,
+      "text": "look at the docker file here which we"
+    },
+    {
+      "start": 1328.279,
+      "duration": 4.121,
+      "text": "have used in the previous Docker course"
+    },
+    {
+      "start": 1330.52,
+      "duration": 4.92,
+      "text": "you can see CMD command is here which is"
+    },
+    {
+      "start": 1332.4,
+      "duration": 4.879,
+      "text": "running npm start command so npm is the"
+    },
+    {
+      "start": 1335.44,
+      "duration": 5.239,
+      "text": "execute table and the start is the"
+    },
+    {
+      "start": 1337.279,
+      "duration": 5.801,
+      "text": "parameter here you can also check the"
+    },
+    {
+      "start": 1340.679,
+      "duration": 5.161,
+      "text": "command here and you can see executable"
+    },
+    {
+      "start": 1343.08,
+      "duration": 6.36,
+      "text": "parameter 1 parameter 2 this similar"
+    },
+    {
+      "start": 1345.84,
+      "duration": 6.28,
+      "text": "command could also be WR as entry point"
+    },
+    {
+      "start": 1349.44,
+      "duration": 4.68,
+      "text": "and you define the executable here"
+    },
+    {
+      "start": 1352.12,
+      "duration": 4.919,
+      "text": "rather than doing it here and then you"
+    },
+    {
+      "start": 1354.12,
+      "duration": 6.039,
+      "text": "have the parameter defined here so this"
+    },
+    {
+      "start": 1357.039,
+      "duration": 5.0,
+      "text": "will work the same way as it was earlier"
+    },
+    {
+      "start": 1360.159,
+      "duration": 3.4,
+      "text": "so entry point now we have defined"
+    },
+    {
+      "start": 1362.039,
+      "duration": 3.481,
+      "text": "executable here in the entry point and"
+    },
+    {
+      "start": 1363.559,
+      "duration": 4.281,
+      "text": "we have defined the parameter here in"
+    },
+    {
+      "start": 1365.52,
+      "duration": 4.2,
+      "text": "the CMD so let's try to run this and see"
+    },
+    {
+      "start": 1367.84,
+      "duration": 5.0,
+      "text": "if it actually works or not so I'm going"
+    },
+    {
+      "start": 1369.72,
+      "duration": 5.12,
+      "text": "to go here with saying Docker"
+    },
+    {
+      "start": 1372.84,
+      "duration": 4.719,
+      "text": "build"
+    },
+    {
+      "start": 1374.84,
+      "duration": 4.92,
+      "text": "heent IMG dot which means I'm going to"
+    },
+    {
+      "start": 1377.559,
+      "duration": 3.961,
+      "text": "create an image from this Docker file"
+    },
+    {
+      "start": 1379.76,
+      "duration": 5.24,
+      "text": "and let's see if it actually works or"
+    },
+    {
+      "start": 1381.52,
+      "duration": 7.279,
+      "text": "not so the docker file is ready let's"
+    },
+    {
+      "start": 1385.0,
+      "duration": 6.039,
+      "text": "run it by saying Docker run hyphen it"
+    },
+    {
+      "start": 1388.799,
+      "duration": 3.561,
+      "text": "run this on 80 so run this on Port 808"
+    },
+    {
+      "start": 1391.039,
+      "duration": 3.64,
+      "text": "in my machine but the container is"
+    },
+    {
+      "start": 1392.36,
+      "duration": 5.919,
+      "text": "running on Port 3,000 which we have"
+    },
+    {
+      "start": 1394.679,
+      "duration": 7.161,
+      "text": "exposed here and I'll say i"
+    },
+    {
+      "start": 1398.279,
+      "duration": 5.961,
+      "text": "z so I need to also Define h d and I P"
+    },
+    {
+      "start": 1401.84,
+      "duration": 4.04,
+      "text": "here on side of that you will see the"
+    },
+    {
+      "start": 1404.24,
+      "duration": 3.76,
+      "text": "container is running let's check Port"
+    },
+    {
+      "start": 1405.88,
+      "duration": 4.24,
+      "text": "880 now and if it actually works which"
+    },
+    {
+      "start": 1408.0,
+      "duration": 6.88,
+      "text": "means we have used the correct"
+    },
+    {
+      "start": 1410.12,
+      "duration": 7.039,
+      "text": "instructions I'll say Local Host Port"
+    },
+    {
+      "start": 1414.88,
+      "duration": 4.159,
+      "text": "880 so we have the application running"
+    },
+    {
+      "start": 1417.159,
+      "duration": 3.4,
+      "text": "here which means it works the same so"
+    },
+    {
+      "start": 1419.039,
+      "duration": 3.64,
+      "text": "this is how you can Define entry point"
+    },
+    {
+      "start": 1420.559,
+      "duration": 4.521,
+      "text": "and CMD the entry point is where you can"
+    },
+    {
+      "start": 1422.679,
+      "duration": 4.321,
+      "text": "Define the executable and the CMD if you"
+    },
+    {
+      "start": 1425.08,
+      "duration": 3.68,
+      "text": "have enter Point already in the CMD you"
+    },
+    {
+      "start": 1427.0,
+      "duration": 3.76,
+      "text": "need to define the parameter this"
+    },
+    {
+      "start": 1428.76,
+      "duration": 3.88,
+      "text": "parameter could also be overridden for"
+    },
+    {
+      "start": 1430.76,
+      "duration": 4.0,
+      "text": "example if I show you this with another"
+    },
+    {
+      "start": 1432.64,
+      "duration": 3.88,
+      "text": "command let's say sleep command here so"
+    },
+    {
+      "start": 1434.76,
+      "duration": 3.399,
+      "text": "in sleep I'm saying the parameter to be"
+    },
+    {
+      "start": 1436.52,
+      "duration": 3.0,
+      "text": "five which means when I run this"
+    },
+    {
+      "start": 1438.159,
+      "duration": 3.361,
+      "text": "container container this container is"
+    },
+    {
+      "start": 1439.52,
+      "duration": 4.48,
+      "text": "going to sleep for 5 seconds but if I"
+    },
+    {
+      "start": 1441.52,
+      "duration": 4.72,
+      "text": "want to but if I want to change this or"
+    },
+    {
+      "start": 1444.0,
+      "duration": 5.6,
+      "text": "override this parameter I can also say"
+    },
+    {
+      "start": 1446.24,
+      "duration": 5.64,
+      "text": "uh this now instead of when I run this"
+    },
+    {
+      "start": 1449.6,
+      "duration": 4.4,
+      "text": "command it will tell it will take this"
+    },
+    {
+      "start": 1451.88,
+      "duration": 3.64,
+      "text": "10 and override the five here which"
+    },
+    {
+      "start": 1454.0,
+      "duration": 3.48,
+      "text": "means the sleep is going to be executing"
+    },
+    {
+      "start": 1455.52,
+      "duration": 4.159,
+      "text": "for next 10 seconds rather than just"
+    },
+    {
+      "start": 1457.48,
+      "duration": 4.16,
+      "text": "five to understand this more properly I"
+    },
+    {
+      "start": 1459.679,
+      "duration": 3.801,
+      "text": "know this is confusing and to understand"
+    },
+    {
+      "start": 1461.64,
+      "duration": 4.36,
+      "text": "this more properly you can go to the"
+    },
+    {
+      "start": 1463.48,
+      "duration": 5.0,
+      "text": "official documentation here and go"
+    },
+    {
+      "start": 1466.0,
+      "duration": 4.84,
+      "text": "through these uh read you can read the"
+    },
+    {
+      "start": 1468.48,
+      "duration": 4.76,
+      "text": "documentation to understand how CMD and"
+    },
+    {
+      "start": 1470.84,
+      "duration": 3.68,
+      "text": "entry point are different along with"
+    },
+    {
+      "start": 1473.24,
+      "duration": 3.72,
+      "text": "this you can also check out the stack"
+    },
+    {
+      "start": 1474.52,
+      "duration": 4.72,
+      "text": "Overflow answers here uh which can help"
+    },
+    {
+      "start": 1476.96,
+      "duration": 5.0,
+      "text": "you understand more properly or you can"
+    },
+    {
+      "start": 1479.24,
+      "duration": 4.08,
+      "text": "check out videos on YouTube I hope this"
+    },
+    {
+      "start": 1481.96,
+      "duration": 3.88,
+      "text": "uh if you have any questions regarding"
+    },
+    {
+      "start": 1483.32,
+      "duration": 4.12,
+      "text": "CMD entry point or any other Docker file"
+    },
+    {
+      "start": 1485.84,
+      "duration": 3.319,
+      "text": "instructions feel free to let me know in"
+    },
+    {
+      "start": 1487.44,
+      "duration": 4.119,
+      "text": "the comment section so far we have"
+    },
+    {
+      "start": 1489.159,
+      "duration": 5.4,
+      "text": "covered almost everything apart from uh"
+    },
+    {
+      "start": 1491.559,
+      "duration": 4.881,
+      "text": "labels here so label are used to give"
+    },
+    {
+      "start": 1494.559,
+      "duration": 3.36,
+      "text": "more information about the image so you"
+    },
+    {
+      "start": 1496.44,
+      "duration": 3.359,
+      "text": "could add version of the image or you"
+    },
+    {
+      "start": 1497.919,
+      "duration": 4.36,
+      "text": "could add who has created this image who"
+    },
+    {
+      "start": 1499.799,
+      "duration": 3.841,
+      "text": "is the maintainer uh all those things so"
+    },
+    {
+      "start": 1502.279,
+      "duration": 3.4,
+      "text": "label instruction is used to add"
+    },
+    {
+      "start": 1503.64,
+      "duration": 4.0,
+      "text": "metadata to the image for example I can"
+    },
+    {
+      "start": 1505.679,
+      "duration": 5.12,
+      "text": "add a label instruction here saying that"
+    },
+    {
+      "start": 1507.64,
+      "duration": 7.0,
+      "text": "the Creator is me so label equals to key"
+    },
+    {
+      "start": 1510.799,
+      "duration": 4.641,
+      "text": "equals to Value so I can say uh creator"
+    },
+    {
+      "start": 1514.64,
+      "duration": 3.32,
+      "text": "of"
+    },
+    {
+      "start": 1515.44,
+      "duration": 4.44,
+      "text": "this is cloud"
+    },
+    {
+      "start": 1517.96,
+      "duration": 5.36,
+      "text": "champ or it could be anything the"
+    },
+    {
+      "start": 1519.88,
+      "duration": 5.56,
+      "text": "version of this application is two or"
+    },
+    {
+      "start": 1523.32,
+      "duration": 3.92,
+      "text": "uh environment equals to prod"
+    },
+    {
+      "start": 1525.44,
+      "duration": 2.88,
+      "text": "environment equals to development so on"
+    },
+    {
+      "start": 1527.24,
+      "duration": 2.4,
+      "text": "so these are all the different"
+    },
+    {
+      "start": 1528.32,
+      "duration": 3.2,
+      "text": "instructions we have seen all this"
+    },
+    {
+      "start": 1529.64,
+      "duration": 3.72,
+      "text": "different Docker file instructions with"
+    },
+    {
+      "start": 1531.52,
+      "duration": 3.519,
+      "text": "hands on so I hope you have understood"
+    },
+    {
+      "start": 1533.36,
+      "duration": 4.559,
+      "text": "this video and if you have any questions"
+    },
+    {
+      "start": 1535.039,
+      "duration": 4.441,
+      "text": "any doubt feel free to let me know uh if"
+    },
+    {
+      "start": 1537.919,
+      "duration": 3.36,
+      "text": "you found this video helpful please like"
+    },
+    {
+      "start": 1539.48,
+      "duration": 4.88,
+      "text": "this video And subscribe to Cloud champ"
+    },
+    {
+      "start": 1541.279,
+      "duration": 3.081,
+      "text": "thank you and have a good"
+    },
+    {
+      "start": 1548.35,
+      "duration": 5.809,
+      "text": "[Music]"
+    },
+    {
+      "start": 1551.159,
+      "duration": 3.0,
+      "text": "day"
+    }
+  ]
+}

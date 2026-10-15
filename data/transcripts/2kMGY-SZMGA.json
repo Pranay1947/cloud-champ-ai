@@ -1,0 +1,1581 @@
+{
+  "video": {
+    "id": "2kMGY-SZMGA",
+    "title": "Day 8 - Amazon RDS Tutorial [Complete Hands ON!]",
+    "url": "https://www.youtube.com/watch?v=2kMGY-SZMGA",
+    "duration": 677,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.199,
+      "duration": 4.841,
+      "text": "in this video I will teach you how to"
+    },
+    {
+      "start": 2.08,
+      "duration": 5.6,
+      "text": "create databases in AWS Cloud using"
+    },
+    {
+      "start": 5.04,
+      "duration": 5.0,
+      "text": "Amazon RDS so make sure you watch this"
+    },
+    {
+      "start": 7.68,
+      "duration": 5.72,
+      "text": "video till the end and also subscribe to"
+    },
+    {
+      "start": 10.04,
+      "duration": 5.639,
+      "text": "Cloud Cham Amazon RDS is a very popular"
+    },
+    {
+      "start": 13.4,
+      "duration": 4.36,
+      "text": "service in AWS that lets you create"
+    },
+    {
+      "start": 15.679,
+      "duration": 3.961,
+      "text": "relational databases in the cloud there"
+    },
+    {
+      "start": 17.76,
+      "duration": 3.64,
+      "text": "are two different types of databases"
+    },
+    {
+      "start": 19.64,
+      "duration": 4.6,
+      "text": "relational databases and non-relational"
+    },
+    {
+      "start": 21.4,
+      "duration": 5.6,
+      "text": "databases also known as SQL database and"
+    },
+    {
+      "start": 24.24,
+      "duration": 5.24,
+      "text": "no SQL database so using RDS you can"
+    },
+    {
+      "start": 27.0,
+      "duration": 5.8,
+      "text": "create all the SQL databases like"
+    },
+    {
+      "start": 29.48,
+      "duration": 6.0,
+      "text": "Microsoft SQL Server MySQL post SQL IBM"
+    },
+    {
+      "start": 32.8,
+      "duration": 5.36,
+      "text": "db2 and so on but if you want to create"
+    },
+    {
+      "start": 35.48,
+      "duration": 4.96,
+      "text": "the nosql database you can use another a"
+    },
+    {
+      "start": 38.16,
+      "duration": 4.64,
+      "text": "service which is dynamodb so using"
+    },
+    {
+      "start": 40.44,
+      "duration": 4.119,
+      "text": "dynamodb you can create no SQL databases"
+    },
+    {
+      "start": 42.8,
+      "duration": 3.68,
+      "text": "in the cloud so when you click on create"
+    },
+    {
+      "start": 44.559,
+      "duration": 3.961,
+      "text": "database you can see all the engines"
+    },
+    {
+      "start": 46.48,
+      "duration": 4.52,
+      "text": "which are supported by RDS you can"
+    },
+    {
+      "start": 48.52,
+      "duration": 6.96,
+      "text": "create mySQL database Maria DP database"
+    },
+    {
+      "start": 51.0,
+      "duration": 6.44,
+      "text": "POS SQL Oracle Microsoft SQL IBM db2 but"
+    },
+    {
+      "start": 55.48,
+      "duration": 3.879,
+      "text": "Amazon also have their own Aurora which"
+    },
+    {
+      "start": 57.44,
+      "duration": 4.48,
+      "text": "is Amazon's own propriety database"
+    },
+    {
+      "start": 59.359,
+      "duration": 4.401,
+      "text": "service you have Aurora for MySQL and"
+    },
+    {
+      "start": 61.92,
+      "duration": 3.84,
+      "text": "postgress when you use Aurora"
+    },
+    {
+      "start": 63.76,
+      "duration": 4.16,
+      "text": "postgressql you get three times more"
+    },
+    {
+      "start": 65.76,
+      "duration": 3.92,
+      "text": "speed than the normal postgressql you"
+    },
+    {
+      "start": 67.92,
+      "duration": 4.8,
+      "text": "can read the features here so up to"
+    },
+    {
+      "start": 69.68,
+      "duration": 6.0,
+      "text": "three times faster up to 128 TB of"
+    },
+    {
+      "start": 72.72,
+      "duration": 4.88,
+      "text": "scaling similarly if you use Aurora MyQ"
+    },
+    {
+      "start": 75.68,
+      "duration": 4.119,
+      "text": "you get features like five times faster"
+    },
+    {
+      "start": 77.6,
+      "duration": 3.72,
+      "text": "than the normal mySQL database so"
+    },
+    {
+      "start": 79.799,
+      "duration": 3.64,
+      "text": "whenever you have an application in"
+    },
+    {
+      "start": 81.32,
+      "duration": 4.56,
+      "text": "production you can use Aurora databases"
+    },
+    {
+      "start": 83.439,
+      "duration": 3.481,
+      "text": "to get all this different benefits but"
+    },
+    {
+      "start": 85.88,
+      "duration": 2.76,
+      "text": "in this video I'm going to be showing"
+    },
+    {
+      "start": 86.92,
+      "duration": 3.12,
+      "text": "you how to create a postgress database"
+    },
+    {
+      "start": 88.64,
+      "duration": 3.519,
+      "text": "one more thing to note you can can"
+    },
+    {
+      "start": 90.04,
+      "duration": 4.52,
+      "text": "create databases in AWS cloud in two"
+    },
+    {
+      "start": 92.159,
+      "duration": 4.721,
+      "text": "different ways first is by using the ec2"
+    },
+    {
+      "start": 94.56,
+      "duration": 4.4,
+      "text": "service so I can install postgress on my"
+    },
+    {
+      "start": 96.88,
+      "duration": 4.239,
+      "text": "server which could be OB to or Amazon"
+    },
+    {
+      "start": 98.96,
+      "duration": 4.479,
+      "text": "Linux or else I could do it using the"
+    },
+    {
+      "start": 101.119,
+      "duration": 5.161,
+      "text": "RDS like I have here so what is the"
+    },
+    {
+      "start": 103.439,
+      "duration": 5.68,
+      "text": "difference as we all know Amazon RDS is"
+    },
+    {
+      "start": 106.28,
+      "duration": 5.439,
+      "text": "a managed database service so everything"
+    },
+    {
+      "start": 109.119,
+      "duration": 4.561,
+      "text": "is going to be managed by AWS itself so"
+    },
+    {
+      "start": 111.719,
+      "duration": 3.281,
+      "text": "starting from installation to backup"
+    },
+    {
+      "start": 113.68,
+      "duration": 4.359,
+      "text": "patching everything is going to be"
+    },
+    {
+      "start": 115.0,
+      "duration": 4.399,
+      "text": "managed by AWS whereas if you use ec2"
+    },
+    {
+      "start": 118.039,
+      "duration": 3.201,
+      "text": "you have to install the database"
+    },
+    {
+      "start": 119.399,
+      "duration": 4.121,
+      "text": "yourself you will have to create scripts"
+    },
+    {
+      "start": 121.24,
+      "duration": 4.04,
+      "text": "to back up the data you will have to do"
+    },
+    {
+      "start": 123.52,
+      "duration": 4.04,
+      "text": "the patching yourself everything is"
+    },
+    {
+      "start": 125.28,
+      "duration": 5.28,
+      "text": "managed by us this is why RDS is known"
+    },
+    {
+      "start": 127.56,
+      "duration": 4.399,
+      "text": "as manage database service so let me"
+    },
+    {
+      "start": 130.56,
+      "duration": 3.44,
+      "text": "show you what are the different settings"
+    },
+    {
+      "start": 131.959,
+      "duration": 3.761,
+      "text": "that you can do with RDS when I click on"
+    },
+    {
+      "start": 134.0,
+      "duration": 3.56,
+      "text": "create database you have two options"
+    },
+    {
+      "start": 135.72,
+      "duration": 3.92,
+      "text": "here you can create a database either"
+    },
+    {
+      "start": 137.56,
+      "duration": 4.039,
+      "text": "using standard create option or using"
+    },
+    {
+      "start": 139.64,
+      "duration": 3.28,
+      "text": "the easy create option when you choose"
+    },
+    {
+      "start": 141.599,
+      "duration": 3.041,
+      "text": "standard create you have options to"
+    },
+    {
+      "start": 142.92,
+      "duration": 3.84,
+      "text": "configure it but when you use Easy"
+    },
+    {
+      "start": 144.64,
+      "duration": 4.0,
+      "text": "create AWS will give you recommendations"
+    },
+    {
+      "start": 146.76,
+      "duration": 3.759,
+      "text": "to create your database let's go with"
+    },
+    {
+      "start": 148.64,
+      "duration": 4.08,
+      "text": "standard create now I'm going to be"
+    },
+    {
+      "start": 150.519,
+      "duration": 4.44,
+      "text": "creating postgress"
+    },
+    {
+      "start": 152.72,
+      "duration": 3.879,
+      "text": "database next I will choose the engine"
+    },
+    {
+      "start": 154.959,
+      "duration": 3.56,
+      "text": "version so postgress has different"
+    },
+    {
+      "start": 156.599,
+      "duration": 4.481,
+      "text": "version you can choose to use postgress"
+    },
+    {
+      "start": 158.519,
+      "duration": 5.121,
+      "text": "16 or if you want to use postgress 15 14"
+    },
+    {
+      "start": 161.08,
+      "duration": 4.439,
+      "text": "anything you can choose the version here"
+    },
+    {
+      "start": 163.64,
+      "duration": 3.679,
+      "text": "next you select the template do you want"
+    },
+    {
+      "start": 165.519,
+      "duration": 4.44,
+      "text": "to use this database for a production"
+    },
+    {
+      "start": 167.319,
+      "duration": 4.481,
+      "text": "environment or for Dev test or for free"
+    },
+    {
+      "start": 169.959,
+      "duration": 3.601,
+      "text": "tier when you use this database for"
+    },
+    {
+      "start": 171.8,
+      "duration": 4.04,
+      "text": "production you can deploy this database"
+    },
+    {
+      "start": 173.56,
+      "duration": 3.64,
+      "text": "in multi-az deployment which means your"
+    },
+    {
+      "start": 175.84,
+      "duration": 4.36,
+      "text": "database is going to be deployed in"
+    },
+    {
+      "start": 177.2,
+      "duration": 4.119,
+      "text": "different a at once but for now as we"
+    },
+    {
+      "start": 180.2,
+      "duration": 3.119,
+      "text": "are learning things let's go with the"
+    },
+    {
+      "start": 181.319,
+      "duration": 4.56,
+      "text": "free tier option and when you use free"
+    },
+    {
+      "start": 183.319,
+      "duration": 4.92,
+      "text": "tier you only have single database in"
+    },
+    {
+      "start": 185.879,
+      "duration": 3.881,
+      "text": "one a next setting is to give the name"
+    },
+    {
+      "start": 188.239,
+      "duration": 4.121,
+      "text": "of your database this name is going to"
+    },
+    {
+      "start": 189.76,
+      "duration": 4.28,
+      "text": "be shown in your RDS console like this"
+    },
+    {
+      "start": 192.36,
+      "duration": 3.439,
+      "text": "so This database has the name database"
+    },
+    {
+      "start": 194.04,
+      "duration": 2.88,
+      "text": "one the new database that I'm going to"
+    },
+    {
+      "start": 195.799,
+      "duration": 3.08,
+      "text": "create is going to have the name"
+    },
+    {
+      "start": 196.92,
+      "duration": 5.72,
+      "text": "database to you can name this anything"
+    },
+    {
+      "start": 198.879,
+      "duration": 3.761,
+      "text": "you want for example my app"
+    },
+    {
+      "start": 203.04,
+      "duration": 3.68,
+      "text": "DB next you need to give the username so"
+    },
+    {
+      "start": 205.56,
+      "duration": 2.72,
+      "text": "you can give the username for your"
+    },
+    {
+      "start": 206.72,
+      "duration": 4.519,
+      "text": "database right now the username is"
+    },
+    {
+      "start": 208.28,
+      "duration": 5.56,
+      "text": "pogress you can make it admin my user"
+    },
+    {
+      "start": 211.239,
+      "duration": 4.521,
+      "text": "super user anything you want next is to"
+    },
+    {
+      "start": 213.84,
+      "duration": 4.119,
+      "text": "give the password for this database you"
+    },
+    {
+      "start": 215.76,
+      "duration": 3.88,
+      "text": "can choose to give the password yourself"
+    },
+    {
+      "start": 217.959,
+      "duration": 4.48,
+      "text": "or else you can also choose to put the"
+    },
+    {
+      "start": 219.64,
+      "duration": 4.599,
+      "text": "password in the AWS Secrets manager"
+    },
+    {
+      "start": 222.439,
+      "duration": 5.281,
+      "text": "which is another AWS service to put your"
+    },
+    {
+      "start": 224.239,
+      "duration": 4.92,
+      "text": "secret files passwords API Keys etc for"
+    },
+    {
+      "start": 227.72,
+      "duration": 3.439,
+      "text": "now I'm going to be putting my password"
+    },
+    {
+      "start": 229.159,
+      "duration": 4.201,
+      "text": "myself so let's put the password Here"
+    },
+    {
+      "start": 231.159,
+      "duration": 4.28,
+      "text": "make sure not to use the slash or these"
+    },
+    {
+      "start": 233.36,
+      "duration": 4.64,
+      "text": "apostrophy symbols as you can see here"
+    },
+    {
+      "start": 235.439,
+      "duration": 4.8,
+      "text": "I'm going to be putting my"
+    },
+    {
+      "start": 238.0,
+      "duration": 3.84,
+      "text": "password and this password will be used"
+    },
+    {
+      "start": 240.239,
+      "duration": 3.601,
+      "text": "when you want to connect to your postest"
+    },
+    {
+      "start": 241.84,
+      "duration": 4.679,
+      "text": "database that you're creating"
+    },
+    {
+      "start": 243.84,
+      "duration": 4.52,
+      "text": "now so this is my password let's go to"
+    },
+    {
+      "start": 246.519,
+      "duration": 3.401,
+      "text": "the next setting you can see here you"
+    },
+    {
+      "start": 248.36,
+      "duration": 3.56,
+      "text": "will have to choose the database"
+    },
+    {
+      "start": 249.92,
+      "duration": 4.44,
+      "text": "instance that you want to create the"
+    },
+    {
+      "start": 251.92,
+      "duration": 4.64,
+      "text": "database instance by default is T t4g"
+    },
+    {
+      "start": 254.36,
+      "duration": 4.36,
+      "text": "micro and as we have selected the free"
+    },
+    {
+      "start": 256.56,
+      "duration": 5.239,
+      "text": "tier option we cannot select anything"
+    },
+    {
+      "start": 258.72,
+      "duration": 5.24,
+      "text": "apart from the free tier instances here"
+    },
+    {
+      "start": 261.799,
+      "duration": 5.161,
+      "text": "so if you use production or def test you"
+    },
+    {
+      "start": 263.96,
+      "duration": 4.84,
+      "text": "can go with D3 T3 large or T3 2x large"
+    },
+    {
+      "start": 266.96,
+      "duration": 3.88,
+      "text": "or maybe something else but for now we"
+    },
+    {
+      "start": 268.8,
+      "duration": 3.0,
+      "text": "have selected free here so we can only"
+    },
+    {
+      "start": 270.84,
+      "duration": 3.04,
+      "text": "use"
+    },
+    {
+      "start": 271.8,
+      "duration": 4.0,
+      "text": "micro next you can Define how much"
+    },
+    {
+      "start": 273.88,
+      "duration": 3.8,
+      "text": "storage do you want for this database so"
+    },
+    {
+      "start": 275.8,
+      "duration": 3.8,
+      "text": "if you are storing large amount of data"
+    },
+    {
+      "start": 277.68,
+      "duration": 5.28,
+      "text": "you can increase the storage from 20 GB"
+    },
+    {
+      "start": 279.6,
+      "duration": 5.84,
+      "text": "to up to 1,000 GB or you can go up to"
+    },
+    {
+      "start": 282.96,
+      "duration": 4.44,
+      "text": "6,000 GB here but if you want to Auto"
+    },
+    {
+      "start": 285.44,
+      "duration": 3.88,
+      "text": "scale like depending on the data coming"
+    },
+    {
+      "start": 287.4,
+      "duration": 4.239,
+      "text": "in you want to increase your storage you"
+    },
+    {
+      "start": 289.32,
+      "duration": 4.599,
+      "text": "can also enable the auto scaling option"
+    },
+    {
+      "start": 291.639,
+      "duration": 3.921,
+      "text": "here so you have Auto scaling option"
+    },
+    {
+      "start": 293.919,
+      "duration": 5.401,
+      "text": "which means your database is going to"
+    },
+    {
+      "start": 295.56,
+      "duration": 5.68,
+      "text": "increase from 20 up to 1,000 GB when you"
+    },
+    {
+      "start": 299.32,
+      "duration": 3.56,
+      "text": "enable this next you can select the"
+    },
+    {
+      "start": 301.24,
+      "duration": 3.239,
+      "text": "connectivity option so you can choose to"
+    },
+    {
+      "start": 302.88,
+      "duration": 3.44,
+      "text": "connect your database only through your"
+    },
+    {
+      "start": 304.479,
+      "duration": 4.081,
+      "text": "ec2 instance or if you want to connect"
+    },
+    {
+      "start": 306.32,
+      "duration": 3.92,
+      "text": "it outside your a account you can choose"
+    },
+    {
+      "start": 308.56,
+      "duration": 2.96,
+      "text": "this option so I'm going to be choosing"
+    },
+    {
+      "start": 310.24,
+      "duration": 3.679,
+      "text": "this option because I will show you how"
+    },
+    {
+      "start": 311.52,
+      "duration": 4.6,
+      "text": "to connect to post database in your"
+    },
+    {
+      "start": 313.919,
+      "duration": 5.201,
+      "text": "local machine using the command or maybe"
+    },
+    {
+      "start": 316.12,
+      "duration": 5.12,
+      "text": "using different clients like PG admin"
+    },
+    {
+      "start": 319.12,
+      "duration": 3.96,
+      "text": "Etc next you select the VPC where you"
+    },
+    {
+      "start": 321.24,
+      "duration": 4.16,
+      "text": "want to launch your RDS database the"
+    },
+    {
+      "start": 323.08,
+      "duration": 3.959,
+      "text": "subnet group Next setting is to Define"
+    },
+    {
+      "start": 325.4,
+      "duration": 2.919,
+      "text": "how do you want to access your database"
+    },
+    {
+      "start": 327.039,
+      "duration": 3.6,
+      "text": "do you want to access your database"
+    },
+    {
+      "start": 328.319,
+      "duration": 4.041,
+      "text": "publicly outside your a account or do"
+    },
+    {
+      "start": 330.639,
+      "duration": 4.4,
+      "text": "you want to access your database only in"
+    },
+    {
+      "start": 332.36,
+      "duration": 4.8,
+      "text": "your VPC so you can choose to do any of"
+    },
+    {
+      "start": 335.039,
+      "duration": 4.041,
+      "text": "these option for now as I said I will be"
+    },
+    {
+      "start": 337.16,
+      "duration": 4.2,
+      "text": "accessing my database outside the AWS"
+    },
+    {
+      "start": 339.08,
+      "duration": 4.48,
+      "text": "account I will make it public access but"
+    },
+    {
+      "start": 341.36,
+      "duration": 4.0,
+      "text": "the best practice according to AWS is to"
+    },
+    {
+      "start": 343.56,
+      "duration": 4.16,
+      "text": "not make your databases public so you"
+    },
+    {
+      "start": 345.36,
+      "duration": 5.399,
+      "text": "can put them in private subnet or you"
+    },
+    {
+      "start": 347.72,
+      "duration": 5.479,
+      "text": "can make it not public such that RDS"
+    },
+    {
+      "start": 350.759,
+      "duration": 5.44,
+      "text": "will only be accessible inside the VPC"
+    },
+    {
+      "start": 353.199,
+      "duration": 5.0,
+      "text": "that you have created your database in"
+    },
+    {
+      "start": 356.199,
+      "duration": 3.881,
+      "text": "so I'm going to be creating making it"
+    },
+    {
+      "start": 358.199,
+      "duration": 4.081,
+      "text": "public for now you can also attach a"
+    },
+    {
+      "start": 360.08,
+      "duration": 4.08,
+      "text": "security group to your database instance"
+    },
+    {
+      "start": 362.28,
+      "duration": 4.6,
+      "text": "defining what port should be allowed who"
+    },
+    {
+      "start": 364.16,
+      "duration": 4.599,
+      "text": "can actually access your database by"
+    },
+    {
+      "start": 366.88,
+      "duration": 3.56,
+      "text": "creating Security Group rules for now"
+    },
+    {
+      "start": 368.759,
+      "duration": 4.121,
+      "text": "I'm selecting the default option no"
+    },
+    {
+      "start": 370.44,
+      "duration": 4.319,
+      "text": "preferences for as's no need to create"
+    },
+    {
+      "start": 372.88,
+      "duration": 3.48,
+      "text": "proxy as of now next we will scroll down"
+    },
+    {
+      "start": 374.759,
+      "duration": 3.201,
+      "text": "and I'll show you other options like"
+    },
+    {
+      "start": 376.36,
+      "duration": 3.72,
+      "text": "monitoring you can enable monitoring and"
+    },
+    {
+      "start": 377.96,
+      "duration": 3.799,
+      "text": "this is why RDS is managed because"
+    },
+    {
+      "start": 380.08,
+      "duration": 4.16,
+      "text": "monitoring is done automatically when"
+    },
+    {
+      "start": 381.759,
+      "duration": 5.44,
+      "text": "you enable a setting you also have other"
+    },
+    {
+      "start": 384.24,
+      "duration": 5.0,
+      "text": "things like backup encryption and so on"
+    },
+    {
+      "start": 387.199,
+      "duration": 3.201,
+      "text": "so you have enabled automated backups"
+    },
+    {
+      "start": 389.24,
+      "duration": 4.92,
+      "text": "which you can also keep the backup"
+    },
+    {
+      "start": 390.4,
+      "duration": 4.88,
+      "text": "either for one one day or for 35 days"
+    },
+    {
+      "start": 394.16,
+      "duration": 2.92,
+      "text": "and you can also select the timing"
+    },
+    {
+      "start": 395.28,
+      "duration": 3.319,
+      "text": "whenever you want to create this backup"
+    },
+    {
+      "start": 397.08,
+      "duration": 3.839,
+      "text": "so these are all the settings you have"
+    },
+    {
+      "start": 398.599,
+      "duration": 3.561,
+      "text": "along with encryption and so on lastly"
+    },
+    {
+      "start": 400.919,
+      "duration": 3.321,
+      "text": "when you're done with configuring your"
+    },
+    {
+      "start": 402.16,
+      "duration": 3.759,
+      "text": "database scroll down and click on create"
+    },
+    {
+      "start": 404.24,
+      "duration": 3.92,
+      "text": "database this will go ahead and create"
+    },
+    {
+      "start": 405.919,
+      "duration": 4.601,
+      "text": "your database so it usually takes around"
+    },
+    {
+      "start": 408.16,
+      "duration": 3.92,
+      "text": "10 to 15 minutes to create a database"
+    },
+    {
+      "start": 410.52,
+      "duration": 3.6,
+      "text": "right now the database is in creating"
+    },
+    {
+      "start": 412.08,
+      "duration": 4.08,
+      "text": "status and you can see I have another"
+    },
+    {
+      "start": 414.12,
+      "duration": 4.4,
+      "text": "database which is available it is also a"
+    },
+    {
+      "start": 416.16,
+      "duration": 4.0,
+      "text": "post rql database let me show you how"
+    },
+    {
+      "start": 418.52,
+      "duration": 2.72,
+      "text": "will you connect to this dat database"
+    },
+    {
+      "start": 420.16,
+      "duration": 3.2,
+      "text": "once it is"
+    },
+    {
+      "start": 421.24,
+      "duration": 3.16,
+      "text": "created so when you click on a database"
+    },
+    {
+      "start": 423.36,
+      "duration": 3.239,
+      "text": "you will see all the different"
+    },
+    {
+      "start": 424.4,
+      "duration": 3.32,
+      "text": "information such as the endpoint where"
+    },
+    {
+      "start": 426.599,
+      "duration": 3.241,
+      "text": "you are going to be connecting to your"
+    },
+    {
+      "start": 427.72,
+      "duration": 4.4,
+      "text": "database so this is the difference when"
+    },
+    {
+      "start": 429.84,
+      "duration": 4.68,
+      "text": "you do it on ec2 you have the public IP"
+    },
+    {
+      "start": 432.12,
+      "duration": 5.04,
+      "text": "address that you will use as a host but"
+    },
+    {
+      "start": 434.52,
+      "duration": 3.799,
+      "text": "when you use RDS you have the end point"
+    },
+    {
+      "start": 437.16,
+      "duration": 3.64,
+      "text": "that you will use to connect to your"
+    },
+    {
+      "start": 438.319,
+      "duration": 6.841,
+      "text": "database the port number is 5432 the"
+    },
+    {
+      "start": 440.8,
+      "duration": 6.239,
+      "text": "default post SQL Port the AC is this VPC"
+    },
+    {
+      "start": 445.16,
+      "duration": 5.599,
+      "text": "is this similarly you can also check"
+    },
+    {
+      "start": 447.039,
+      "duration": 6.081,
+      "text": "monitoring data in this logs events"
+    },
+    {
+      "start": 450.759,
+      "duration": 4.12,
+      "text": "configurations and other stuff so this"
+    },
+    {
+      "start": 453.12,
+      "duration": 3.96,
+      "text": "is how you can create a database in the"
+    },
+    {
+      "start": 454.879,
+      "duration": 4.0,
+      "text": "cloud once the database is created if"
+    },
+    {
+      "start": 457.08,
+      "duration": 3.799,
+      "text": "you want to change any settings you can"
+    },
+    {
+      "start": 458.879,
+      "duration": 3.401,
+      "text": "always modify the database so when you"
+    },
+    {
+      "start": 460.879,
+      "duration": 3.6,
+      "text": "click on modify you can change your"
+    },
+    {
+      "start": 462.28,
+      "duration": 4.24,
+      "text": "configuration and then apply this"
+    },
+    {
+      "start": 464.479,
+      "duration": 4.601,
+      "text": "modification to have that new setting in"
+    },
+    {
+      "start": 466.52,
+      "duration": 4.56,
+      "text": "your RDS database along with this as we"
+    },
+    {
+      "start": 469.08,
+      "duration": 4.079,
+      "text": "all know RDS is a managed database and"
+    },
+    {
+      "start": 471.08,
+      "duration": 3.959,
+      "text": "you have options to enable automated"
+    },
+    {
+      "start": 473.159,
+      "duration": 3.841,
+      "text": "backups which means backups are going to"
+    },
+    {
+      "start": 475.039,
+      "duration": 3.28,
+      "text": "be creating every seven days and all"
+    },
+    {
+      "start": 477.0,
+      "duration": 3.639,
+      "text": "these backups are stored here in"
+    },
+    {
+      "start": 478.319,
+      "duration": 4.081,
+      "text": "automated backups right now I don't have"
+    },
+    {
+      "start": 480.639,
+      "duration": 3.721,
+      "text": "any backup except these two that I"
+    },
+    {
+      "start": 482.4,
+      "duration": 4.079,
+      "text": "created now so you can see the backup is"
+    },
+    {
+      "start": 484.36,
+      "duration": 3.92,
+      "text": "already created and I can go ahead and"
+    },
+    {
+      "start": 486.479,
+      "duration": 4.361,
+      "text": "create a new database out of this backup"
+    },
+    {
+      "start": 488.28,
+      "duration": 3.96,
+      "text": "if I want to along with this you can"
+    },
+    {
+      "start": 490.84,
+      "duration": 3.479,
+      "text": "also manually create a backup if you"
+    },
+    {
+      "start": 492.24,
+      "duration": 5.239,
+      "text": "haven't enabled automated backup so how"
+    },
+    {
+      "start": 494.319,
+      "duration": 4.921,
+      "text": "to do this when you click on a database"
+    },
+    {
+      "start": 497.479,
+      "duration": 3.801,
+      "text": "and you click on actions on the top you"
+    },
+    {
+      "start": 499.24,
+      "duration": 4.239,
+      "text": "can see here you have an option to"
+    },
+    {
+      "start": 501.28,
+      "duration": 4.28,
+      "text": "create snapshot which is this one take"
+    },
+    {
+      "start": 503.479,
+      "duration": 4.0,
+      "text": "snapshot when I click on take snapshot I"
+    },
+    {
+      "start": 505.56,
+      "duration": 4.599,
+      "text": "can Define the name of the instance or"
+    },
+    {
+      "start": 507.479,
+      "duration": 5.44,
+      "text": "the snapshot I want to take uh so let's"
+    },
+    {
+      "start": 510.159,
+      "duration": 5.0,
+      "text": "say my DB"
+    },
+    {
+      "start": 512.919,
+      "duration": 5.401,
+      "text": "backup and click on take snapshot this"
+    },
+    {
+      "start": 515.159,
+      "duration": 4.961,
+      "text": "will take the backup of your database"
+    },
+    {
+      "start": 518.32,
+      "duration": 3.719,
+      "text": "which are done manually so you can find"
+    },
+    {
+      "start": 520.12,
+      "duration": 3.359,
+      "text": "all your databases here but make sure"
+    },
+    {
+      "start": 522.039,
+      "duration": 3.641,
+      "text": "whenever you take a backup you will have"
+    },
+    {
+      "start": 523.479,
+      "duration": 4.201,
+      "text": "to pay for the storage this backup is"
+    },
+    {
+      "start": 525.68,
+      "duration": 3.64,
+      "text": "taking so whenever you have extra Bill"
+    },
+    {
+      "start": 527.68,
+      "duration": 3.88,
+      "text": "also make sure your databases backups"
+    },
+    {
+      "start": 529.32,
+      "duration": 4.44,
+      "text": "are deleted as well so this is how you"
+    },
+    {
+      "start": 531.56,
+      "duration": 4.48,
+      "text": "will create databases in RDS and also"
+    },
+    {
+      "start": 533.76,
+      "duration": 4.319,
+      "text": "take backups using snapshots or using"
+    },
+    {
+      "start": 536.04,
+      "duration": 3.56,
+      "text": "automated backups now our database is"
+    },
+    {
+      "start": 538.079,
+      "duration": 3.44,
+      "text": "ready and it's available for us to to"
+    },
+    {
+      "start": 539.6,
+      "duration": 3.72,
+      "text": "use let me show you how you will connect"
+    },
+    {
+      "start": 541.519,
+      "duration": 3.601,
+      "text": "to this database so this is a"
+    },
+    {
+      "start": 543.32,
+      "duration": 3.68,
+      "text": "postgressql database and if you want to"
+    },
+    {
+      "start": 545.12,
+      "duration": 4.159,
+      "text": "connect to it you need to First install"
+    },
+    {
+      "start": 547.0,
+      "duration": 4.16,
+      "text": "postgress in your local machine I"
+    },
+    {
+      "start": 549.279,
+      "duration": 3.201,
+      "text": "already have postgress installed to show"
+    },
+    {
+      "start": 551.16,
+      "duration": 4.359,
+      "text": "you I'm going to run the command sudo"
+    },
+    {
+      "start": 552.48,
+      "duration": 6.24,
+      "text": "service postgressql"
+    },
+    {
+      "start": 555.519,
+      "duration": 5.641,
+      "text": "status so I have post 16 installed and"
+    },
+    {
+      "start": 558.72,
+      "duration": 4.44,
+      "text": "when I run this command you can see it's"
+    },
+    {
+      "start": 561.16,
+      "duration": 3.4,
+      "text": "active and running so you can connect to"
+    },
+    {
+      "start": 563.16,
+      "duration": 3.919,
+      "text": "this postgress database either by"
+    },
+    {
+      "start": 564.56,
+      "duration": 5.519,
+      "text": "running commands or also by using uh"
+    },
+    {
+      "start": 567.079,
+      "duration": 5.121,
+      "text": "postgress client such as PG admin"
+    },
+    {
+      "start": 570.079,
+      "duration": 3.88,
+      "text": "very popular post client so you can"
+    },
+    {
+      "start": 572.2,
+      "duration": 3.16,
+      "text": "either use PG admin where you can"
+    },
+    {
+      "start": 573.959,
+      "duration": 2.841,
+      "text": "connect to your database and also look"
+    },
+    {
+      "start": 575.36,
+      "duration": 5.0,
+      "text": "at all the different data inside the"
+    },
+    {
+      "start": 576.8,
+      "duration": 6.12,
+      "text": "database in a UI console using this"
+    },
+    {
+      "start": 580.36,
+      "duration": 3.84,
+      "text": "particular client so now I'm going to be"
+    },
+    {
+      "start": 582.92,
+      "duration": 3.08,
+      "text": "running the command and show you how to"
+    },
+    {
+      "start": 584.2,
+      "duration": 3.52,
+      "text": "do it so to connect to a database you"
+    },
+    {
+      "start": 586.0,
+      "duration": 3.519,
+      "text": "require three things the first is a"
+    },
+    {
+      "start": 587.72,
+      "duration": 4.799,
+      "text": "username so the username for this"
+    },
+    {
+      "start": 589.519,
+      "duration": 5.481,
+      "text": "database we have is postgress the"
+    },
+    {
+      "start": 592.519,
+      "duration": 4.641,
+      "text": "username we need password we also need a"
+    },
+    {
+      "start": 595.0,
+      "duration": 4.079,
+      "text": "host which is going to be IP address but"
+    },
+    {
+      "start": 597.16,
+      "duration": 4.08,
+      "text": "as we using RDS we don't have IP address"
+    },
+    {
+      "start": 599.079,
+      "duration": 3.401,
+      "text": "it's the Endo that we going to be using"
+    },
+    {
+      "start": 601.24,
+      "duration": 5.4,
+      "text": "so let's copy this I'm going to be"
+    },
+    {
+      "start": 602.48,
+      "duration": 6.88,
+      "text": "running the command psql so sudo psql"
+    },
+    {
+      "start": 606.64,
+      "duration": 5.84,
+      "text": "hyphen U for the username which is post"
+    },
+    {
+      "start": 609.36,
+      "duration": 6.28,
+      "text": "address iph H for the host which is the"
+    },
+    {
+      "start": 612.48,
+      "duration": 4.88,
+      "text": "endpoint and lastly I have to put the"
+    },
+    {
+      "start": 615.64,
+      "duration": 4.639,
+      "text": "password as well so I'll put Das Das"
+    },
+    {
+      "start": 617.36,
+      "duration": 4.36,
+      "text": "password and press enter let's put the"
+    },
+    {
+      "start": 620.279,
+      "duration": 3.8,
+      "text": "password for my"
+    },
+    {
+      "start": 621.72,
+      "duration": 4.52,
+      "text": "database so this is my password if I"
+    },
+    {
+      "start": 624.079,
+      "duration": 3.561,
+      "text": "press enter I will be able to connect to"
+    },
+    {
+      "start": 626.24,
+      "duration": 3.08,
+      "text": "the database if everything is working"
+    },
+    {
+      "start": 627.64,
+      "duration": 3.0,
+      "text": "properly so I'm now inside the dat"
+    },
+    {
+      "start": 629.32,
+      "duration": 3.519,
+      "text": "database and I can start creating"
+    },
+    {
+      "start": 630.64,
+      "duration": 6.319,
+      "text": "databases by running create database"
+    },
+    {
+      "start": 632.839,
+      "duration": 7.521,
+      "text": "query so create database my"
+    },
+    {
+      "start": 636.959,
+      "duration": 7.161,
+      "text": "DB and this says database is created you"
+    },
+    {
+      "start": 640.36,
+      "duration": 6.68,
+      "text": "can run the command uh such ASL and you"
+    },
+    {
+      "start": 644.12,
+      "duration": 4.48,
+      "text": "can see my DB is now here so this is how"
+    },
+    {
+      "start": 647.04,
+      "duration": 3.28,
+      "text": "you create databases in the cloud and"
+    },
+    {
+      "start": 648.6,
+      "duration": 4.2,
+      "text": "also connect to it in this video I've"
+    },
+    {
+      "start": 650.32,
+      "duration": 4.68,
+      "text": "shown you how to create RDS databases"
+    },
+    {
+      "start": 652.8,
+      "duration": 4.599,
+      "text": "how to connect to it how to take backups"
+    },
+    {
+      "start": 655.0,
+      "duration": 4.6,
+      "text": "what are snapshots and so on in the next"
+    },
+    {
+      "start": 657.399,
+      "duration": 3.961,
+      "text": "video we are going to be doing a project"
+    },
+    {
+      "start": 659.6,
+      "duration": 4.84,
+      "text": "where we set up a WordPress website on"
+    },
+    {
+      "start": 661.36,
+      "duration": 4.44,
+      "text": "ec2 instance also using RDS mySQL"
+    },
+    {
+      "start": 664.44,
+      "duration": 2.519,
+      "text": "database so if you want me to create a"
+    },
+    {
+      "start": 665.8,
+      "duration": 2.64,
+      "text": "project let me know in the comment"
+    },
+    {
+      "start": 666.959,
+      "duration": 3.721,
+      "text": "section I hope this video was"
+    },
+    {
+      "start": 668.44,
+      "duration": 3.88,
+      "text": "informative please like this video And"
+    },
+    {
+      "start": 670.68,
+      "duration": 5.44,
+      "text": "subscribe to Cloud champ thank you and"
+    },
+    {
+      "start": 672.32,
+      "duration": 3.8,
+      "text": "see you in the next video"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "video": {
+    "id": "Oa7LWrQHbSQ",
+    "title": "Zero config eBPF & AI root cause observability with coroot! #observability",
+    "url": "https://www.youtube.com/watch?v=Oa7LWrQHbSQ",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.32,
+      "text": "Most outages are not hard to fix. The"
+    },
+    {
+      "start": 2.48,
+      "duration": 4.16,
+      "text": "real problem is figuring out what went"
+    },
+    {
+      "start": 4.48,
+      "duration": 4.0,
+      "text": "wrong. In incident response, engineers"
+    },
+    {
+      "start": 6.64,
+      "duration": 4.56,
+      "text": "lose most of the time switching between"
+    },
+    {
+      "start": 8.48,
+      "duration": 5.039,
+      "text": "metrics, logs, traces, dashboard, and"
+    },
+    {
+      "start": 11.2,
+      "duration": 4.16,
+      "text": "still not knowing the actual root cause."
+    },
+    {
+      "start": 13.519,
+      "duration": 4.321,
+      "text": "A good observability should instantly"
+    },
+    {
+      "start": 15.36,
+      "duration": 4.88,
+      "text": "show you what broke, where it broke, and"
+    },
+    {
+      "start": 17.84,
+      "duration": 4.32,
+      "text": "why without deep manual digging. And"
+    },
+    {
+      "start": 20.24,
+      "duration": 5.199,
+      "text": "that's exactly what Coror Routt actually"
+    },
+    {
+      "start": 22.16,
+      "duration": 5.279,
+      "text": "does. Corroot uses zero config ebpf to"
+    },
+    {
+      "start": 25.439,
+      "duration": 4.481,
+      "text": "automatically capture system behavior"
+    },
+    {
+      "start": 27.439,
+      "duration": 4.96,
+      "text": "from the kernel. No agents, no code"
+    },
+    {
+      "start": 29.92,
+      "duration": 4.479,
+      "text": "changes. It also builds a real-time map"
+    },
+    {
+      "start": 32.399,
+      "duration": 4.481,
+      "text": "of all your services, correlating"
+    },
+    {
+      "start": 34.399,
+      "duration": 4.721,
+      "text": "metrics, logs, traces, and profile to"
+    },
+    {
+      "start": 36.88,
+      "duration": 4.8,
+      "text": "show you exactly when and where an"
+    },
+    {
+      "start": 39.12,
+      "duration": 4.24,
+      "text": "started. And with AI powered root cause"
+    },
+    {
+      "start": 41.68,
+      "duration": 4.0,
+      "text": "analysis, Coror Root can explain the"
+    },
+    {
+      "start": 43.36,
+      "duration": 4.24,
+      "text": "incident and give you suggested fixes in"
+    },
+    {
+      "start": 45.68,
+      "duration": 3.76,
+      "text": "just minutes. So if you want to explore"
+    },
+    {
+      "start": 47.6,
+      "duration": 3.6,
+      "text": "it, check out the Core Routt opensource"
+    },
+    {
+      "start": 49.44,
+      "duration": 4.08,
+      "text": "community edition or check out the"
+    },
+    {
+      "start": 51.2,
+      "duration": 5.44,
+      "text": "enterprise version with unlimited AI"
+    },
+    {
+      "start": 53.52,
+      "duration": 6.96,
+      "text": "root cause analysis just for $1 per CPU"
+    },
+    {
+      "start": 56.64,
+      "duration": 3.84,
+      "text": "core. The link is in the pin comment."
+    }
+  ]
+}

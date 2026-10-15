@@ -1,0 +1,141 @@
+{
+  "video": {
+    "id": "6aTqpoaXjlQ",
+    "title": "Observability Explained Simply in 60 seconds #observability #devops",
+    "url": "https://www.youtube.com/watch?v=6aTqpoaXjlQ",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 4.559,
+      "text": "What is observability? Observability is"
+    },
+    {
+      "start": 3.12,
+      "duration": 4.32,
+      "text": "a way to find out what's happening"
+    },
+    {
+      "start": 4.799,
+      "duration": 4.641,
+      "text": "inside a complex system. Modern apps run"
+    },
+    {
+      "start": 7.44,
+      "duration": 3.84,
+      "text": "across many services, APIs, and"
+    },
+    {
+      "start": 9.44,
+      "duration": 3.6,
+      "text": "containers. So when something breaks,"
+    },
+    {
+      "start": 11.28,
+      "duration": 4.72,
+      "text": "you depend on three core signals:"
+    },
+    {
+      "start": 13.04,
+      "duration": 5.04,
+      "text": "metrics, logs, and traces. Metrics are"
+    },
+    {
+      "start": 16.0,
+      "duration": 5.279,
+      "text": "numbers that reflect system health like"
+    },
+    {
+      "start": 18.08,
+      "duration": 5.68,
+      "text": "CPU, latency, throughput, memory, etc."
+    },
+    {
+      "start": 21.279,
+      "duration": 4.801,
+      "text": "Logs are detailed event messages that"
+    },
+    {
+      "start": 23.76,
+      "duration": 4.32,
+      "text": "tell you exactly what happened and why."
+    },
+    {
+      "start": 26.08,
+      "duration": 3.92,
+      "text": "And lastly, traces show you the complete"
+    },
+    {
+      "start": 28.08,
+      "duration": 3.599,
+      "text": "path a request takes across multiple"
+    },
+    {
+      "start": 30.0,
+      "duration": 3.52,
+      "text": "services to know where the request"
+    },
+    {
+      "start": 31.679,
+      "duration": 4.001,
+      "text": "failed or slowed down. When you bring"
+    },
+    {
+      "start": 33.52,
+      "duration": 3.76,
+      "text": "metrics, logs, and traces together,"
+    },
+    {
+      "start": 35.68,
+      "duration": 3.68,
+      "text": "observability can help you answer"
+    },
+    {
+      "start": 37.28,
+      "duration": 4.16,
+      "text": "critical questions like where did the"
+    },
+    {
+      "start": 39.36,
+      "duration": 4.4,
+      "text": "request fail? Which microservices is"
+    },
+    {
+      "start": 41.44,
+      "duration": 4.32,
+      "text": "causing slowdown? Is the issue in code"
+    },
+    {
+      "start": 43.76,
+      "duration": 4.16,
+      "text": "infrastructure or any other dependency"
+    },
+    {
+      "start": 45.76,
+      "duration": 4.56,
+      "text": "and many other questions. So in short,"
+    },
+    {
+      "start": 47.92,
+      "duration": 4.56,
+      "text": "observability helps engineers debug"
+    },
+    {
+      "start": 50.32,
+      "duration": 4.32,
+      "text": "faster and understand system behavior"
+    },
+    {
+      "start": 52.48,
+      "duration": 4.719,
+      "text": "more clearly whenever there's an issue."
+    },
+    {
+      "start": 54.64,
+      "duration": 2.559,
+      "text": "Subscribe."
+    }
+  ]
+}

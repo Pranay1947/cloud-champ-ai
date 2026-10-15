@@ -1,0 +1,1516 @@
+{
+  "video": {
+    "id": "nD6JfA9nGOg",
+    "title": "Monitoring and Logging for DevOps Engineers | Production Best Practices",
+    "url": "https://www.youtube.com/watch?v=nD6JfA9nGOg",
+    "duration": 684,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.919,
+      "duration": 4.601,
+      "text": "do you remember the recent Microsoft"
+    },
+    {
+      "start": 2.84,
+      "duration": 4.88,
+      "text": "outage that caused major disruptions all"
+    },
+    {
+      "start": 5.52,
+      "duration": 5.32,
+      "text": "over the world due to a single crowd"
+    },
+    {
+      "start": 7.72,
+      "duration": 5.28,
+      "text": "strike update hospitals were not working"
+    },
+    {
+      "start": 10.84,
+      "duration": 4.759,
+      "text": "Banks were closed airports were shut"
+    },
+    {
+      "start": 13.0,
+      "duration": 6.0,
+      "text": "down and all of this just because of a"
+    },
+    {
+      "start": 15.599,
+      "duration": 5.081,
+      "text": "single update crazy right however this"
+    },
+    {
+      "start": 19.0,
+      "duration": 4.64,
+      "text": "could have been easily avoided with"
+    },
+    {
+      "start": 20.68,
+      "duration": 4.8,
+      "text": "proper monitoring and alerting practices"
+    },
+    {
+      "start": 23.64,
+      "duration": 4.12,
+      "text": "now this is obviously a bad news for"
+    },
+    {
+      "start": 25.48,
+      "duration": 4.6,
+      "text": "Microsoft but incidents like these"
+    },
+    {
+      "start": 27.76,
+      "duration": 4.84,
+      "text": "proves how important monitoring and"
+    },
+    {
+      "start": 30.08,
+      "duration": 5.28,
+      "text": "logging are in software development life"
+    },
+    {
+      "start": 32.6,
+      "duration": 4.76,
+      "text": "cycle so in this video we will look at"
+    },
+    {
+      "start": 35.36,
+      "duration": 4.4,
+      "text": "importance of monitoring and logging in"
+    },
+    {
+      "start": 37.36,
+      "duration": 5.48,
+      "text": "devops processes what are some popular"
+    },
+    {
+      "start": 39.76,
+      "duration": 5.16,
+      "text": "monitoring tools and also best practices"
+    },
+    {
+      "start": 42.84,
+      "duration": 4.399,
+      "text": "when implementing monitoring and logging"
+    },
+    {
+      "start": 44.92,
+      "duration": 4.52,
+      "text": "in your devops workflow this is going to"
+    },
+    {
+      "start": 47.239,
+      "duration": 3.881,
+      "text": "be a very informative video I will also"
+    },
+    {
+      "start": 49.44,
+      "duration": 3.56,
+      "text": "show you a demo of a very popular"
+    },
+    {
+      "start": 51.12,
+      "duration": 6.52,
+      "text": "monitoring tool so make sure you watch"
+    },
+    {
+      "start": 53.0,
+      "duration": 4.64,
+      "text": "this video till the end let's start"
+    },
+    {
+      "start": 64.4,
+      "duration": 3.96,
+      "text": "so hey everyone and Welcome to Cloud"
+    },
+    {
+      "start": 66.24,
+      "duration": 3.919,
+      "text": "champ logging and monitoring are"
+    },
+    {
+      "start": 68.36,
+      "duration": 3.84,
+      "text": "absolutely important for a devops"
+    },
+    {
+      "start": 70.159,
+      "duration": 5.201,
+      "text": "Engineers to know so let's begin with"
+    },
+    {
+      "start": 72.2,
+      "duration": 5.2,
+      "text": "monitoring first so what is monitoring"
+    },
+    {
+      "start": 75.36,
+      "duration": 4.36,
+      "text": "according to the definition monitoring"
+    },
+    {
+      "start": 77.4,
+      "duration": 4.12,
+      "text": "is a process of continuously watching"
+    },
+    {
+      "start": 79.72,
+      "duration": 4.32,
+      "text": "and measuring the performance of your"
+    },
+    {
+      "start": 81.52,
+      "duration": 4.52,
+      "text": "applications systems or"
+    },
+    {
+      "start": 84.04,
+      "duration": 4.119,
+      "text": "infrastructure this means collecting"
+    },
+    {
+      "start": 86.04,
+      "duration": 4.24,
+      "text": "information like CPU usage memory"
+    },
+    {
+      "start": 88.159,
+      "duration": 4.481,
+      "text": "consumption or other metrics to make"
+    },
+    {
+      "start": 90.28,
+      "duration": 4.479,
+      "text": "sure your application is performing as"
+    },
+    {
+      "start": 92.64,
+      "duration": 4.32,
+      "text": "you want now there are different types"
+    },
+    {
+      "start": 94.759,
+      "duration": 5.0,
+      "text": "of monitorings depending on what kind of"
+    },
+    {
+      "start": 96.96,
+      "duration": 4.64,
+      "text": "data do you want to monitor for example"
+    },
+    {
+      "start": 99.759,
+      "duration": 3.36,
+      "text": "infrastructure monitoring which will"
+    },
+    {
+      "start": 101.6,
+      "duration": 4.32,
+      "text": "look at the health of your servers"
+    },
+    {
+      "start": 103.119,
+      "duration": 4.28,
+      "text": "networks databases Etc there is also"
+    },
+    {
+      "start": 105.92,
+      "duration": 3.76,
+      "text": "application monitoring which will make"
+    },
+    {
+      "start": 107.399,
+      "duration": 4.36,
+      "text": "sure your application is running fine by"
+    },
+    {
+      "start": 109.68,
+      "duration": 5.16,
+      "text": "checking response rates transaction"
+    },
+    {
+      "start": 111.759,
+      "duration": 4.68,
+      "text": "volumes or even error rates additionally"
+    },
+    {
+      "start": 114.84,
+      "duration": 3.52,
+      "text": "there is also cost monitoring which is"
+    },
+    {
+      "start": 116.439,
+      "duration": 3.521,
+      "text": "very common in Cloud architecture to"
+    },
+    {
+      "start": 118.36,
+      "duration": 4.2,
+      "text": "make sure you're not spending more than"
+    },
+    {
+      "start": 119.96,
+      "duration": 4.119,
+      "text": "than your specified budget apart from"
+    },
+    {
+      "start": 122.56,
+      "duration": 3.199,
+      "text": "this there are also many other types of"
+    },
+    {
+      "start": 124.079,
+      "duration": 3.68,
+      "text": "monitorings that you will come across"
+    },
+    {
+      "start": 125.759,
+      "duration": 3.961,
+      "text": "when working as a devops engineer so"
+    },
+    {
+      "start": 127.759,
+      "duration": 4.681,
+      "text": "this is a very high level overview of"
+    },
+    {
+      "start": 129.72,
+      "duration": 5.0,
+      "text": "how monitoring happens in devops now"
+    },
+    {
+      "start": 132.44,
+      "duration": 4.0,
+      "text": "let's look at logging similar to"
+    },
+    {
+      "start": 134.72,
+      "duration": 3.599,
+      "text": "monitoring logging is also a very"
+    },
+    {
+      "start": 136.44,
+      "duration": 3.72,
+      "text": "important devops practice which will"
+    },
+    {
+      "start": 138.319,
+      "duration": 4.2,
+      "text": "provide you with information on what is"
+    },
+    {
+      "start": 140.16,
+      "duration": 4.2,
+      "text": "happening inside your application using"
+    },
+    {
+      "start": 142.519,
+      "duration": 4.481,
+      "text": "logging you can detect and troubleshoot"
+    },
+    {
+      "start": 144.36,
+      "duration": 5.12,
+      "text": "issues in production environment so what"
+    },
+    {
+      "start": 147.0,
+      "duration": 4.44,
+      "text": "is logging according to the definition"
+    },
+    {
+      "start": 149.48,
+      "duration": 4.2,
+      "text": "logging is a process of capturing and"
+    },
+    {
+      "start": 151.44,
+      "duration": 4.76,
+      "text": "storing data generated by your systems"
+    },
+    {
+      "start": 153.68,
+      "duration": 4.919,
+      "text": "or applications which is very important"
+    },
+    {
+      "start": 156.2,
+      "duration": 5.8,
+      "text": "for troubleshooting in case you got some"
+    },
+    {
+      "start": 158.599,
+      "duration": 5.64,
+      "text": "issues this is what logs look like logs"
+    },
+    {
+      "start": 162.0,
+      "duration": 4.48,
+      "text": "are timestamp data which will tell you"
+    },
+    {
+      "start": 164.239,
+      "duration": 3.881,
+      "text": "what is happening inside your systems"
+    },
+    {
+      "start": 166.48,
+      "duration": 6.039,
+      "text": "and there are different types of logs"
+    },
+    {
+      "start": 168.12,
+      "duration": 6.199,
+      "text": "like error log info log debug log Etc so"
+    },
+    {
+      "start": 172.519,
+      "duration": 3.881,
+      "text": "imagine you have an application running"
+    },
+    {
+      "start": 174.319,
+      "duration": 3.761,
+      "text": "on a kubernetes cluster on Linux"
+    },
+    {
+      "start": 176.4,
+      "duration": 3.88,
+      "text": "operating machine and you also have"
+    },
+    {
+      "start": 178.08,
+      "duration": 3.84,
+      "text": "logging enabled for it so the the system"
+    },
+    {
+      "start": 180.28,
+      "duration": 4.12,
+      "text": "logs will provide you with information"
+    },
+    {
+      "start": 181.92,
+      "duration": 5.48,
+      "text": "about the health of the system CPU"
+    },
+    {
+      "start": 184.4,
+      "duration": 4.6,
+      "text": "performance Etc the kubernetes logs will"
+    },
+    {
+      "start": 187.4,
+      "duration": 4.04,
+      "text": "capture events which will help you"
+    },
+    {
+      "start": 189.0,
+      "duration": 5.2,
+      "text": "troubleshoot issues like pod failures"
+    },
+    {
+      "start": 191.44,
+      "duration": 5.2,
+      "text": "deployment issues service not exposed or"
+    },
+    {
+      "start": 194.2,
+      "duration": 4.679,
+      "text": "which node is taking more CPU or Ram"
+    },
+    {
+      "start": 196.64,
+      "duration": 4.44,
+      "text": "information like this whereas the"
+    },
+    {
+      "start": 198.879,
+      "duration": 4.401,
+      "text": "application log will focus more on the"
+    },
+    {
+      "start": 201.08,
+      "duration": 3.92,
+      "text": "application related activities like"
+    },
+    {
+      "start": 203.28,
+      "duration": 3.76,
+      "text": "application is not working properly"
+    },
+    {
+      "start": 205.0,
+      "duration": 4.159,
+      "text": "there is a latency issues or customers"
+    },
+    {
+      "start": 207.04,
+      "duration": 4.04,
+      "text": "are facing some problems all that you"
+    },
+    {
+      "start": 209.159,
+      "duration": 3.961,
+      "text": "can also get security logs which can"
+    },
+    {
+      "start": 211.08,
+      "duration": 4.439,
+      "text": "help you track any unauthorized access"
+    },
+    {
+      "start": 213.12,
+      "duration": 5.399,
+      "text": "on your application or your kubernetes"
+    },
+    {
+      "start": 215.519,
+      "duration": 5.0,
+      "text": "cluster logs or logging make it so easy"
+    },
+    {
+      "start": 218.519,
+      "duration": 4.161,
+      "text": "to find and troubleshoot issues so this"
+    },
+    {
+      "start": 220.519,
+      "duration": 4.36,
+      "text": "is why as a devops engineer you need to"
+    },
+    {
+      "start": 222.68,
+      "duration": 3.96,
+      "text": "know how to read logs and also how to"
+    },
+    {
+      "start": 224.879,
+      "duration": 3.881,
+      "text": "enable logs for your applications or"
+    },
+    {
+      "start": 226.64,
+      "duration": 3.84,
+      "text": "kubernetes cluster now that we have"
+    },
+    {
+      "start": 228.76,
+      "duration": 3.6,
+      "text": "understood what monitoring and logging"
+    },
+    {
+      "start": 230.48,
+      "duration": 3.679,
+      "text": "is along with an example I hope you"
+    },
+    {
+      "start": 232.36,
+      "duration": 3.879,
+      "text": "understood how important it is to have"
+    },
+    {
+      "start": 234.159,
+      "duration": 4.72,
+      "text": "logging and monitoring enabled for your"
+    },
+    {
+      "start": 236.239,
+      "duration": 4.28,
+      "text": "applications as a devops engineer in the"
+    },
+    {
+      "start": 238.879,
+      "duration": 3.36,
+      "text": "devops market right now there are so"
+    },
+    {
+      "start": 240.519,
+      "duration": 3.72,
+      "text": "many different monitoring and logging"
+    },
+    {
+      "start": 242.239,
+      "duration": 3.72,
+      "text": "tools you would have definitely heard"
+    },
+    {
+      "start": 244.239,
+      "duration": 4.36,
+      "text": "about the popular open source monitoring"
+    },
+    {
+      "start": 245.959,
+      "duration": 4.881,
+      "text": "tool which is Prometheus and grafana"
+    },
+    {
+      "start": 248.599,
+      "duration": 4.401,
+      "text": "Prometheus along with grafana is used to"
+    },
+    {
+      "start": 250.84,
+      "duration": 4.72,
+      "text": "collect and also visualize metrics in a"
+    },
+    {
+      "start": 253.0,
+      "duration": 6.12,
+      "text": "good dashboard for logging you can use"
+    },
+    {
+      "start": 255.56,
+      "duration": 5.84,
+      "text": "open search or log stash Jager is a very"
+    },
+    {
+      "start": 259.12,
+      "duration": 3.68,
+      "text": "popular tracing tool so there are"
+    },
+    {
+      "start": 261.4,
+      "duration": 4.0,
+      "text": "separate tools for monitoring for"
+    },
+    {
+      "start": 262.8,
+      "duration": 5.48,
+      "text": "logging for tracing but this is not how"
+    },
+    {
+      "start": 265.4,
+      "duration": 5.4,
+      "text": "we do in real devops projects we need a"
+    },
+    {
+      "start": 268.28,
+      "duration": 4.08,
+      "text": "single tool let me explain why you will"
+    },
+    {
+      "start": 270.8,
+      "duration": 3.72,
+      "text": "need a single tool for monitoring"
+    },
+    {
+      "start": 272.36,
+      "duration": 3.76,
+      "text": "logging and tracing let's say you have"
+    },
+    {
+      "start": 274.52,
+      "duration": 3.8,
+      "text": "an application which is facing some"
+    },
+    {
+      "start": 276.12,
+      "duration": 4.88,
+      "text": "issues while checking metrics you found"
+    },
+    {
+      "start": 278.32,
+      "duration": 4.719,
+      "text": "out that the CPU utilization is very"
+    },
+    {
+      "start": 281.0,
+      "duration": 4.4,
+      "text": "high you're going to go deep inside the"
+    },
+    {
+      "start": 283.039,
+      "duration": 5.561,
+      "text": "logs and traces to find out the root"
+    },
+    {
+      "start": 285.4,
+      "duration": 5.84,
+      "text": "cause on why is my CPU high so we are"
+    },
+    {
+      "start": 288.6,
+      "duration": 4.879,
+      "text": "going to be using metrics traces and"
+    },
+    {
+      "start": 291.24,
+      "duration": 5.48,
+      "text": "logs all together and this is why we"
+    },
+    {
+      "start": 293.479,
+      "duration": 7.601,
+      "text": "need a singular tool such as"
+    },
+    {
+      "start": 296.72,
+      "duration": 6.759,
+      "text": "logs. so what is logs. logs. is a very"
+    },
+    {
+      "start": 301.08,
+      "duration": 4.88,
+      "text": "popular observability platform that is"
+    },
+    {
+      "start": 303.479,
+      "duration": 5.961,
+      "text": "used by many big organization like Unity"
+    },
+    {
+      "start": 305.96,
+      "duration": 5.32,
+      "text": "cens sneak and many more for this demo I"
+    },
+    {
+      "start": 309.44,
+      "duration": 3.92,
+      "text": "have an open Elementary application"
+    },
+    {
+      "start": 311.28,
+      "duration": 5.479,
+      "text": "deployed on AWS and I will be using"
+    },
+    {
+      "start": 313.36,
+      "duration": 6.04,
+      "text": "logs. to check metrix analyze logs and"
+    },
+    {
+      "start": 316.759,
+      "duration": 5.0,
+      "text": "traces thank you logs. for sponsoring"
+    },
+    {
+      "start": 319.4,
+      "duration": 4.16,
+      "text": "this video and sending me amazing swags"
+    },
+    {
+      "start": 321.759,
+      "duration": 4.0,
+      "text": "make sure to check out logs. the link is"
+    },
+    {
+      "start": 323.56,
+      "duration": 5.32,
+      "text": "in description let's get into the demo"
+    },
+    {
+      "start": 325.759,
+      "duration": 4.44,
+      "text": "now and this is my logs. account I will"
+    },
+    {
+      "start": 328.88,
+      "duration": 3.0,
+      "text": "be using this account account to work"
+    },
+    {
+      "start": 330.199,
+      "duration": 3.961,
+      "text": "you through the demo but if you want to"
+    },
+    {
+      "start": 331.88,
+      "duration": 3.879,
+      "text": "create your account you can create it"
+    },
+    {
+      "start": 334.16,
+      "duration": 3.319,
+      "text": "for free from the link in the"
+    },
+    {
+      "start": 335.759,
+      "duration": 4.521,
+      "text": "description all you need is to fill in"
+    },
+    {
+      "start": 337.479,
+      "duration": 5.321,
+      "text": "your details and start using logs doio"
+    },
+    {
+      "start": 340.28,
+      "duration": 3.8,
+      "text": "to analyze your logs metrics and traces"
+    },
+    {
+      "start": 342.8,
+      "duration": 3.16,
+      "text": "but if you're a company or an"
+    },
+    {
+      "start": 344.08,
+      "duration": 3.839,
+      "text": "organization who is looking for an"
+    },
+    {
+      "start": 345.96,
+      "duration": 4.48,
+      "text": "observability tool you can also schedule"
+    },
+    {
+      "start": 347.919,
+      "duration": 5.28,
+      "text": "a demo with the logs. team to understand"
+    },
+    {
+      "start": 350.44,
+      "duration": 5.36,
+      "text": "how you can use logs. I for your"
+    },
+    {
+      "start": 353.199,
+      "duration": 4.921,
+      "text": "applications logs. is designed to"
+    },
+    {
+      "start": 355.8,
+      "duration": 5.32,
+      "text": "collect and analyze Telemetry data which"
+    },
+    {
+      "start": 358.12,
+      "duration": 5.799,
+      "text": "includes metrics logs Braes and even"
+    },
+    {
+      "start": 361.12,
+      "duration": 6.12,
+      "text": "security information through"
+    },
+    {
+      "start": 363.919,
+      "duration": 5.321,
+      "text": "S so logs are managed by open search"
+    },
+    {
+      "start": 367.24,
+      "duration": 4.359,
+      "text": "which provid you with robust analytical"
+    },
+    {
+      "start": 369.24,
+      "duration": 4.6,
+      "text": "capabilities metrics are handled through"
+    },
+    {
+      "start": 371.599,
+      "duration": 4.841,
+      "text": "Prometheus a very powerful monitoring"
+    },
+    {
+      "start": 373.84,
+      "duration": 4.52,
+      "text": "solution whereas traces are managed"
+    },
+    {
+      "start": 376.44,
+      "duration": 3.92,
+      "text": "through jger providing you with"
+    },
+    {
+      "start": 378.36,
+      "duration": 4.119,
+      "text": "distributed tracing to understand how"
+    },
+    {
+      "start": 380.36,
+      "duration": 3.76,
+      "text": "microservices talk to each other which"
+    },
+    {
+      "start": 382.479,
+      "duration": 3.881,
+      "text": "means you get the best of monitoring"
+    },
+    {
+      "start": 384.12,
+      "duration": 4.44,
+      "text": "tool all in one platform let's start"
+    },
+    {
+      "start": 386.36,
+      "duration": 4.239,
+      "text": "with logs first logs are very important"
+    },
+    {
+      "start": 388.56,
+      "duration": 4.44,
+      "text": "to monitor any app application and logs"
+    },
+    {
+      "start": 390.599,
+      "duration": 4.481,
+      "text": "doio makes it so easier with all its"
+    },
+    {
+      "start": 393.0,
+      "duration": 3.84,
+      "text": "different feature let me show you a demo"
+    },
+    {
+      "start": 395.08,
+      "duration": 3.679,
+      "text": "right now we have logs here and you can"
+    },
+    {
+      "start": 396.84,
+      "duration": 4.96,
+      "text": "filter logs based on a particular"
+    },
+    {
+      "start": 398.759,
+      "duration": 4.401,
+      "text": "keyword or also timestamp but along with"
+    },
+    {
+      "start": 401.8,
+      "duration": 3.08,
+      "text": "this you also have another feature where"
+    },
+    {
+      "start": 403.16,
+      "duration": 4.52,
+      "text": "you can get more information about any"
+    },
+    {
+      "start": 404.88,
+      "duration": 5.36,
+      "text": "log using this machine learning option"
+    },
+    {
+      "start": 407.68,
+      "duration": 4.12,
+      "text": "which is observability IQ so using this"
+    },
+    {
+      "start": 410.24,
+      "duration": 3.76,
+      "text": "you can get to know more information"
+    },
+    {
+      "start": 411.8,
+      "duration": 3.56,
+      "text": "about anything in your logs so let's say"
+    },
+    {
+      "start": 414.0,
+      "duration": 4.879,
+      "text": "you want to get more information about"
+    },
+    {
+      "start": 415.36,
+      "duration": 5.32,
+      "text": "this code Lineo you can just ask the AI"
+    },
+    {
+      "start": 418.879,
+      "duration": 3.44,
+      "text": "to tell you more about it and then it"
+    },
+    {
+      "start": 420.68,
+      "duration": 2.88,
+      "text": "will give you information which will"
+    },
+    {
+      "start": 422.319,
+      "duration": 3.72,
+      "text": "make it more easy for you to"
+    },
+    {
+      "start": 423.56,
+      "duration": 5.12,
+      "text": "troubleshoot any errors or any issues"
+    },
+    {
+      "start": 426.039,
+      "duration": 4.361,
+      "text": "that you get inside your logs let's say"
+    },
+    {
+      "start": 428.68,
+      "duration": 3.56,
+      "text": "we asking tell me the most common error"
+    },
+    {
+      "start": 430.4,
+      "duration": 3.479,
+      "text": "log and then it gives you an output"
+    },
+    {
+      "start": 432.24,
+      "duration": 4.0,
+      "text": "based on the provided data there are no"
+    },
+    {
+      "start": 433.879,
+      "duration": 4.681,
+      "text": "error logs now let's talk about metrics"
+    },
+    {
+      "start": 436.24,
+      "duration": 4.32,
+      "text": "logs. uses Prometheus to collect and"
+    },
+    {
+      "start": 438.56,
+      "duration": 4.44,
+      "text": "visualize metrics you can get metrics"
+    },
+    {
+      "start": 440.56,
+      "duration": 5.4,
+      "text": "from ec2 instances kubernetes clusters"
+    },
+    {
+      "start": 443.0,
+      "duration": 5.08,
+      "text": "and lot more logs. can be integrated"
+    },
+    {
+      "start": 445.96,
+      "duration": 3.72,
+      "text": "with all the major clouds and also"
+    },
+    {
+      "start": 448.08,
+      "duration": 3.2,
+      "text": "programming languages so I have all"
+    },
+    {
+      "start": 449.68,
+      "duration": 3.72,
+      "text": "these different dashboards here along"
+    },
+    {
+      "start": 451.28,
+      "duration": 4.599,
+      "text": "with this you can also run queries"
+    },
+    {
+      "start": 453.4,
+      "duration": 3.96,
+      "text": "Additionally you also have alerting that"
+    },
+    {
+      "start": 455.879,
+      "duration": 3.72,
+      "text": "you can set up to get alerts for a"
+    },
+    {
+      "start": 457.36,
+      "duration": 4.36,
+      "text": "particular metrics you can get races for"
+    },
+    {
+      "start": 459.599,
+      "duration": 3.561,
+      "text": "Individual Services for example ad"
+    },
+    {
+      "start": 461.72,
+      "duration": 3.4,
+      "text": "service or account service or checkout"
+    },
+    {
+      "start": 463.16,
+      "duration": 3.4,
+      "text": "service here so this is very important"
+    },
+    {
+      "start": 465.12,
+      "duration": 3.519,
+      "text": "whenever you have a microservices"
+    },
+    {
+      "start": 466.56,
+      "duration": 5.039,
+      "text": "architecture next amazing feature that I"
+    },
+    {
+      "start": 468.639,
+      "duration": 4.641,
+      "text": "like about logs. I is this app 360 which"
+    },
+    {
+      "start": 471.599,
+      "duration": 3.72,
+      "text": "is way better than any traditional"
+    },
+    {
+      "start": 473.28,
+      "duration": 4.319,
+      "text": "application performance monitoring tool"
+    },
+    {
+      "start": 475.319,
+      "duration": 3.72,
+      "text": "using App 360 you can get information or"
+    },
+    {
+      "start": 477.599,
+      "duration": 3.6,
+      "text": "metrics about all your different"
+    },
+    {
+      "start": 479.039,
+      "duration": 3.241,
+      "text": "Microsoft services on a single page so"
+    },
+    {
+      "start": 481.199,
+      "duration": 2.44,
+      "text": "if you want to know how is your"
+    },
+    {
+      "start": 482.28,
+      "duration": 4.52,
+      "text": "accounting service performing you can"
+    },
+    {
+      "start": 483.639,
+      "duration": 5.161,
+      "text": "see that here right on app 360 you can"
+    },
+    {
+      "start": 486.8,
+      "duration": 3.92,
+      "text": "also compare how this service is working"
+    },
+    {
+      "start": 488.8,
+      "duration": 3.88,
+      "text": "compared to yesterday so you can also do"
+    },
+    {
+      "start": 490.72,
+      "duration": 4.36,
+      "text": "that here this is made particularly for"
+    },
+    {
+      "start": 492.68,
+      "duration": 4.12,
+      "text": "kubernetes and microservices application"
+    },
+    {
+      "start": 495.08,
+      "duration": 4.76,
+      "text": "and talking about kubernetes you also"
+    },
+    {
+      "start": 496.8,
+      "duration": 4.56,
+      "text": "have kubernetes 360 similar to app 360"
+    },
+    {
+      "start": 499.84,
+      "duration": 4.24,
+      "text": "you can get information about all your"
+    },
+    {
+      "start": 501.36,
+      "duration": 5.119,
+      "text": "pods notes different Services inside"
+    },
+    {
+      "start": 504.08,
+      "duration": 4.72,
+      "text": "your cluster on a single page which"
+    },
+    {
+      "start": 506.479,
+      "duration": 3.961,
+      "text": "makes it so much easy to troubleshoot"
+    },
+    {
+      "start": 508.8,
+      "duration": 3.4,
+      "text": "and also solve different kubernetes"
+    },
+    {
+      "start": 510.44,
+      "duration": 4.039,
+      "text": "error so if you have a kubernetes"
+    },
+    {
+      "start": 512.2,
+      "duration": 6.48,
+      "text": "application make sure to check out or"
+    },
+    {
+      "start": 514.479,
+      "duration": 6.401,
+      "text": "use kubernetes 360 here wow isn't this"
+    },
+    {
+      "start": 518.68,
+      "duration": 4.08,
+      "text": "amazing your company might be using some"
+    },
+    {
+      "start": 520.88,
+      "duration": 4.12,
+      "text": "other monitoring tool maybe Prometheus"
+    },
+    {
+      "start": 522.76,
+      "duration": 3.68,
+      "text": "or Cloud watch or maybe something else"
+    },
+    {
+      "start": 525.0,
+      "duration": 4.2,
+      "text": "but you can obviously suggest them to"
+    },
+    {
+      "start": 526.44,
+      "duration": 4.28,
+      "text": "use lobs doio for your application as a"
+    },
+    {
+      "start": 529.2,
+      "duration": 3.52,
+      "text": "devops engineer you need to have"
+    },
+    {
+      "start": 530.72,
+      "duration": 3.92,
+      "text": "experience with any one of the"
+    },
+    {
+      "start": 532.72,
+      "duration": 4.08,
+      "text": "monitoring tool that your company might"
+    },
+    {
+      "start": 534.64,
+      "duration": 3.92,
+      "text": "be using now that you know this let's"
+    },
+    {
+      "start": 536.8,
+      "duration": 4.08,
+      "text": "summarize all the information we have"
+    },
+    {
+      "start": 538.56,
+      "duration": 4.64,
+      "text": "got in this video by looking at Best"
+    },
+    {
+      "start": 540.88,
+      "duration": 4.8,
+      "text": "Practices when implementing devops and"
+    },
+    {
+      "start": 543.2,
+      "duration": 4.6,
+      "text": "logging for your application so the"
+    },
+    {
+      "start": 545.68,
+      "duration": 3.52,
+      "text": "first best practice when setting up"
+    },
+    {
+      "start": 547.8,
+      "duration": 4.32,
+      "text": "monitoring and logging for your"
+    },
+    {
+      "start": 549.2,
+      "duration": 5.319,
+      "text": "application is to follow centralized"
+    },
+    {
+      "start": 552.12,
+      "duration": 5.2,
+      "text": "approach make sure your monitoring and"
+    },
+    {
+      "start": 554.519,
+      "duration": 5.44,
+      "text": "logging systems are all at one place so"
+    },
+    {
+      "start": 557.32,
+      "duration": 4.72,
+      "text": "that you can check metrics analyze log"
+    },
+    {
+      "start": 559.959,
+      "duration": 4.161,
+      "text": "Trace events all of them on a single"
+    },
+    {
+      "start": 562.04,
+      "duration": 4.56,
+      "text": "platform like"
+    },
+    {
+      "start": 564.12,
+      "duration": 4.959,
+      "text": "logs. second best practice is to make"
+    },
+    {
+      "start": 566.6,
+      "duration": 4.88,
+      "text": "sure you are collecting important data"
+    },
+    {
+      "start": 569.079,
+      "duration": 4.601,
+      "text": "rather than collecting garbage data and"
+    },
+    {
+      "start": 571.48,
+      "duration": 4.08,
+      "text": "to do this you can Implement proper log"
+    },
+    {
+      "start": 573.68,
+      "duration": 3.719,
+      "text": "retention policies to balance between"
+    },
+    {
+      "start": 575.56,
+      "duration": 4.0,
+      "text": "storing important data for"
+    },
+    {
+      "start": 577.399,
+      "duration": 4.601,
+      "text": "troubleshooting and compliance while"
+    },
+    {
+      "start": 579.56,
+      "duration": 4.88,
+      "text": "also making sure that you are managing"
+    },
+    {
+      "start": 582.0,
+      "duration": 4.16,
+      "text": "your storage cost this is very important"
+    },
+    {
+      "start": 584.44,
+      "duration": 3.72,
+      "text": "because I've seen many companies who"
+    },
+    {
+      "start": 586.16,
+      "duration": 4.08,
+      "text": "store all kind of logs which they are"
+    },
+    {
+      "start": 588.16,
+      "duration": 5.6,
+      "text": "not using and hence they are paying a"
+    },
+    {
+      "start": 590.24,
+      "duration": 6.0,
+      "text": "lot for storage so make sure you have"
+    },
+    {
+      "start": 593.76,
+      "duration": 4.44,
+      "text": "proper log retention policies third"
+    },
+    {
+      "start": 596.24,
+      "duration": 4.68,
+      "text": "important best practice is to make sure"
+    },
+    {
+      "start": 598.2,
+      "duration": 5.48,
+      "text": "you set automate alerts so you should"
+    },
+    {
+      "start": 600.92,
+      "duration": 4.159,
+      "text": "set automated actionable alerts for"
+    },
+    {
+      "start": 603.68,
+      "duration": 3.32,
+      "text": "metrics that are important for your"
+    },
+    {
+      "start": 605.079,
+      "duration": 4.241,
+      "text": "business to make sure you can detect and"
+    },
+    {
+      "start": 607.0,
+      "duration": 4.36,
+      "text": "troubleshoot issues very very quickly"
+    },
+    {
+      "start": 609.32,
+      "duration": 5.12,
+      "text": "before your customer finds out many"
+    },
+    {
+      "start": 611.36,
+      "duration": 5.28,
+      "text": "monitoring tools support slack Gmail Etc"
+    },
+    {
+      "start": 614.44,
+      "duration": 4.32,
+      "text": "even logs. supports it so make sure you"
+    },
+    {
+      "start": 616.64,
+      "duration": 4.6,
+      "text": "check it out next thing to keep in your"
+    },
+    {
+      "start": 618.76,
+      "duration": 4.4,
+      "text": "mind is scalability make sure you have a"
+    },
+    {
+      "start": 621.24,
+      "duration": 4.32,
+      "text": "monitoring solution which should scale"
+    },
+    {
+      "start": 623.16,
+      "duration": 4.16,
+      "text": "up along with your infrastructure and"
+    },
+    {
+      "start": 625.56,
+      "duration": 4.2,
+      "text": "should also be able to handle large"
+    },
+    {
+      "start": 627.32,
+      "duration": 4.44,
+      "text": "volumes of data"
+    },
+    {
+      "start": 629.76,
+      "duration": 4.12,
+      "text": "last but not least make sure you have a"
+    },
+    {
+      "start": 631.76,
+      "duration": 4.56,
+      "text": "tight security you should be enabling"
+    },
+    {
+      "start": 633.88,
+      "duration": 4.72,
+      "text": "security logs to find out any authorized"
+    },
+    {
+      "start": 636.32,
+      "duration": 4.4,
+      "text": "access or online attacks that could"
+    },
+    {
+      "start": 638.6,
+      "duration": 4.679,
+      "text": "cause issues to your systems before it"
+    },
+    {
+      "start": 640.72,
+      "duration": 4.28,
+      "text": "happens so these are some best practices"
+    },
+    {
+      "start": 643.279,
+      "duration": 3.521,
+      "text": "you should keep in mind when you set up"
+    },
+    {
+      "start": 645.0,
+      "duration": 4.12,
+      "text": "monitoring and logging in your"
+    },
+    {
+      "start": 646.8,
+      "duration": 4.24,
+      "text": "application so this was our video on"
+    },
+    {
+      "start": 649.12,
+      "duration": 4.399,
+      "text": "what monitoring and logging is and how"
+    },
+    {
+      "start": 651.04,
+      "duration": 4.799,
+      "text": "it helps in devops workflow as a devops"
+    },
+    {
+      "start": 653.519,
+      "duration": 4.241,
+      "text": "engineer it is very very very important"
+    },
+    {
+      "start": 655.839,
+      "duration": 4.0,
+      "text": "to understand monitoring and logging so"
+    },
+    {
+      "start": 657.76,
+      "duration": 4.28,
+      "text": "I hope this video was informative if you"
+    },
+    {
+      "start": 659.839,
+      "duration": 4.281,
+      "text": "have any questions any doubt feel free"
+    },
+    {
+      "start": 662.04,
+      "duration": 4.239,
+      "text": "to let me know in the comment section"
+    },
+    {
+      "start": 664.12,
+      "duration": 4.08,
+      "text": "also make sure to check out logs. an"
+    },
+    {
+      "start": 666.279,
+      "duration": 3.601,
+      "text": "amazing observability tool they are"
+    },
+    {
+      "start": 668.2,
+      "duration": 3.8,
+      "text": "providing you with a free account the"
+    },
+    {
+      "start": 669.88,
+      "duration": 4.199,
+      "text": "links is in description I going to be"
+    },
+    {
+      "start": 672.0,
+      "duration": 6.32,
+      "text": "creating an observability project thank"
+    },
+    {
+      "start": 674.079,
+      "duration": 4.241,
+      "text": "you and have a good day bye"
+    }
+  ]
+}

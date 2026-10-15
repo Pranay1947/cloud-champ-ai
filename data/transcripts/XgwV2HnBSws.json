@@ -1,0 +1,8326 @@
+{
+  "video": {
+    "id": "XgwV2HnBSws",
+    "title": "Master Terraform in 60 minutes | Terraform Tutorial for beginners with Hands On Labs in 2023",
+    "url": "https://www.youtube.com/watch?v=XgwV2HnBSws",
+    "duration": 4170,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.06,
+      "duration": 4.5,
+      "text": "hello and welcome to Cloud champ in this"
+    },
+    {
+      "start": 2.399,
+      "duration": 4.5,
+      "text": "video I am going to explain terraform"
+    },
+    {
+      "start": 4.56,
+      "duration": 4.74,
+      "text": "right from the basic watch this video"
+    },
+    {
+      "start": 6.899,
+      "duration": 3.78,
+      "text": "Till the End by the end of the video you"
+    },
+    {
+      "start": 9.3,
+      "duration": 3.959,
+      "text": "will understand all the data firm"
+    },
+    {
+      "start": 10.679,
+      "duration": 5.281,
+      "text": "Concepts like variables outputs meta"
+    },
+    {
+      "start": 13.259,
+      "duration": 3.901,
+      "text": "arguments modules remote backend and all"
+    },
+    {
+      "start": 15.96,
+      "duration": 3.48,
+      "text": "the things that you need to know about"
+    },
+    {
+      "start": 17.16,
+      "duration": 4.44,
+      "text": "terraform so watch this video till the"
+    },
+    {
+      "start": 19.44,
+      "duration": 3.839,
+      "text": "end and let's start"
+    },
+    {
+      "start": 21.6,
+      "duration": 3.9,
+      "text": "so before you learn terraform you need"
+    },
+    {
+      "start": 23.279,
+      "duration": 3.541,
+      "text": "to have good knowledge about AWS"
+    },
+    {
+      "start": 25.5,
+      "duration": 4.199,
+      "text": "Management console"
+    },
+    {
+      "start": 26.82,
+      "duration": 4.32,
+      "text": "in AWS we create our infrastructure or"
+    },
+    {
+      "start": 29.699,
+      "duration": 3.36,
+      "text": "architecture you can launch ec2"
+    },
+    {
+      "start": 31.14,
+      "duration": 4.56,
+      "text": "instances create your S3 packets create"
+    },
+    {
+      "start": 33.059,
+      "duration": 5.041,
+      "text": "RDS database when you use your console"
+    },
+    {
+      "start": 35.7,
+      "duration": 5.1,
+      "text": "dashboard and then you click on things"
+    },
+    {
+      "start": 38.1,
+      "duration": 6.66,
+      "text": "to create anything you want but"
+    },
+    {
+      "start": 40.8,
+      "duration": 6.06,
+      "text": "terraform uh is based on IAC concept or"
+    },
+    {
+      "start": 44.76,
+      "duration": 5.22,
+      "text": "infrastructure as code concept you have"
+    },
+    {
+      "start": 46.86,
+      "duration": 6.539,
+      "text": "various tools like terraform for example"
+    },
+    {
+      "start": 49.98,
+      "duration": 5.52,
+      "text": "there is cloud formation by AWS then you"
+    },
+    {
+      "start": 53.399,
+      "duration": 4.381,
+      "text": "have pulumi which is another IAC tool"
+    },
+    {
+      "start": 55.5,
+      "duration": 4.079,
+      "text": "but terraform is one of the tool which"
+    },
+    {
+      "start": 57.78,
+      "duration": 3.959,
+      "text": "is used a lot"
+    },
+    {
+      "start": 59.579,
+      "duration": 4.681,
+      "text": "and it because it has a lot of"
+    },
+    {
+      "start": 61.739,
+      "duration": 5.041,
+      "text": "advantages we're going to see what what"
+    },
+    {
+      "start": 64.26,
+      "duration": 4.56,
+      "text": "it is so it is infrastructure as code"
+    },
+    {
+      "start": 66.78,
+      "duration": 3.3,
+      "text": "where you write your infrastructure or"
+    },
+    {
+      "start": 68.82,
+      "duration": 3.9,
+      "text": "your architecture in the form of code"
+    },
+    {
+      "start": 70.08,
+      "duration": 3.899,
+      "text": "and terraform is widely used because it"
+    },
+    {
+      "start": 72.72,
+      "duration": 4.079,
+      "text": "is supported by all these different"
+    },
+    {
+      "start": 73.979,
+      "duration": 4.741,
+      "text": "clouds in terraform you can call them"
+    },
+    {
+      "start": 76.799,
+      "duration": 5.64,
+      "text": "providers so if I show you the list of"
+    },
+    {
+      "start": 78.72,
+      "duration": 5.719,
+      "text": "providers you have AWS Azure gcp a long"
+    },
+    {
+      "start": 82.439,
+      "duration": 4.921,
+      "text": "list with"
+    },
+    {
+      "start": 84.439,
+      "duration": 5.561,
+      "text": "2744 providers so with terraform you can"
+    },
+    {
+      "start": 87.36,
+      "duration": 4.86,
+      "text": "work on AWS on Azure you can also work"
+    },
+    {
+      "start": 90.0,
+      "duration": 4.2,
+      "text": "on kubernetes Helms I can I will show"
+    },
+    {
+      "start": 92.22,
+      "duration": 5.579,
+      "text": "you an example where we will be using"
+    },
+    {
+      "start": 94.2,
+      "duration": 5.16,
+      "text": "Helm and kubernetes in tarafa"
+    },
+    {
+      "start": 97.799,
+      "duration": 2.941,
+      "text": "so these are all the different providers"
+    },
+    {
+      "start": 99.36,
+      "duration": 4.38,
+      "text": "let's say you want to create something"
+    },
+    {
+      "start": 100.74,
+      "duration": 4.559,
+      "text": "on AWS then you will be using AWS as a"
+    },
+    {
+      "start": 103.74,
+      "duration": 4.08,
+      "text": "provider if you're using if you want to"
+    },
+    {
+      "start": 105.299,
+      "duration": 4.981,
+      "text": "create Azure Cloud resources you will"
+    },
+    {
+      "start": 107.82,
+      "duration": 4.079,
+      "text": "use Azure same for gcp so let's say I"
+    },
+    {
+      "start": 110.28,
+      "duration": 3.54,
+      "text": "want to create ec2 instances I'm going"
+    },
+    {
+      "start": 111.899,
+      "duration": 3.36,
+      "text": "to go to AWS and you can see all these"
+    },
+    {
+      "start": 113.82,
+      "duration": 2.579,
+      "text": "different versions present for the"
+    },
+    {
+      "start": 115.259,
+      "duration": 3.18,
+      "text": "provider"
+    },
+    {
+      "start": 116.399,
+      "duration": 4.741,
+      "text": "now this was published last 10 days ago"
+    },
+    {
+      "start": 118.439,
+      "duration": 5.64,
+      "text": "this was 14 days ago so there can be a"
+    },
+    {
+      "start": 121.14,
+      "duration": 4.619,
+      "text": "criteria or a possibility where people"
+    },
+    {
+      "start": 124.079,
+      "duration": 3.661,
+      "text": "are going to ask you to use a specific"
+    },
+    {
+      "start": 125.759,
+      "duration": 3.84,
+      "text": "version if that's the case you can use a"
+    },
+    {
+      "start": 127.74,
+      "duration": 4.079,
+      "text": "version if not you can go with the"
+    },
+    {
+      "start": 129.599,
+      "duration": 4.021,
+      "text": "latest one"
+    },
+    {
+      "start": 131.819,
+      "duration": 3.361,
+      "text": "so if you want to use this you're going"
+    },
+    {
+      "start": 133.62,
+      "duration": 3.92,
+      "text": "to use click on this option here use"
+    },
+    {
+      "start": 135.18,
+      "duration": 5.34,
+      "text": "provider and you will get the code"
+    },
+    {
+      "start": 137.54,
+      "duration": 4.9,
+      "text": "in this form so"
+    },
+    {
+      "start": 140.52,
+      "duration": 3.12,
+      "text": "this is known as terraform block and"
+    },
+    {
+      "start": 142.44,
+      "duration": 3.36,
+      "text": "this is known as provider block I'm"
+    },
+    {
+      "start": 143.64,
+      "duration": 3.599,
+      "text": "going to explain the hashic of syntax"
+    },
+    {
+      "start": 145.8,
+      "duration": 2.34,
+      "text": "where you will it will be easy for you"
+    },
+    {
+      "start": 147.239,
+      "duration": 2.941,
+      "text": "to understand"
+    },
+    {
+      "start": 148.14,
+      "duration": 4.44,
+      "text": "so when you use terraform block you can"
+    },
+    {
+      "start": 150.18,
+      "duration": 4.62,
+      "text": "Define what version do you want so right"
+    },
+    {
+      "start": 152.58,
+      "duration": 4.32,
+      "text": "now it's set to 4.48 which is the latest"
+    },
+    {
+      "start": 154.8,
+      "duration": 4.98,
+      "text": "one but you can add any version value"
+    },
+    {
+      "start": 156.9,
+      "duration": 5.419,
+      "text": "inside this to use any specific version"
+    },
+    {
+      "start": 159.78,
+      "duration": 2.539,
+      "text": "okay"
+    },
+    {
+      "start": 162.54,
+      "duration": 3.6,
+      "text": "then this is provider block which"
+    },
+    {
+      "start": 163.98,
+      "duration": 3.899,
+      "text": "defines that AWS as a provider and you"
+    },
+    {
+      "start": 166.14,
+      "duration": 6.26,
+      "text": "can then add configuration options like"
+    },
+    {
+      "start": 167.879,
+      "duration": 4.521,
+      "text": "Lis or region anything"
+    },
+    {
+      "start": 172.44,
+      "duration": 4.2,
+      "text": "so infrastructure as code is a concept"
+    },
+    {
+      "start": 175.08,
+      "duration": 3.18,
+      "text": "where you define your architecture or"
+    },
+    {
+      "start": 176.64,
+      "duration": 4.92,
+      "text": "your infrastructure in the form of code"
+    },
+    {
+      "start": 178.26,
+      "duration": 5.1,
+      "text": "and then when you run the commands it"
+    },
+    {
+      "start": 181.56,
+      "duration": 4.2,
+      "text": "will be applied to your Cloud resources"
+    },
+    {
+      "start": 183.36,
+      "duration": 5.519,
+      "text": "so you have different tools"
+    },
+    {
+      "start": 185.76,
+      "duration": 4.86,
+      "text": "uh like pulumi Azure templates"
+    },
+    {
+      "start": 188.879,
+      "duration": 4.021,
+      "text": "cloudformation Google Cloud deployment"
+    },
+    {
+      "start": 190.62,
+      "duration": 6.119,
+      "text": "manager terraform all of these so what"
+    },
+    {
+      "start": 192.9,
+      "duration": 6.18,
+      "text": "is the benefits of using IEC concept so"
+    },
+    {
+      "start": 196.739,
+      "duration": 5.64,
+      "text": "it improve customer experience increase"
+    },
+    {
+      "start": 199.08,
+      "duration": 4.92,
+      "text": "speed but documentation scalability more"
+    },
+    {
+      "start": 202.379,
+      "duration": 3.481,
+      "text": "reusability better collaboration less"
+    },
+    {
+      "start": 204.0,
+      "duration": 4.739,
+      "text": "human error all these different benefits"
+    },
+    {
+      "start": 205.86,
+      "duration": 4.739,
+      "text": "and there is a confusion between"
+    },
+    {
+      "start": 208.739,
+      "duration": 3.541,
+      "text": "infrastructure as code and configuration"
+    },
+    {
+      "start": 210.599,
+      "duration": 3.78,
+      "text": "management as a code there are two"
+    },
+    {
+      "start": 212.28,
+      "duration": 4.02,
+      "text": "different things if you see terraform"
+    },
+    {
+      "start": 214.379,
+      "duration": 4.021,
+      "text": "and then here's an example of fancy pill"
+    },
+    {
+      "start": 216.3,
+      "duration": 3.719,
+      "text": "which is most used tool so terraform is"
+    },
+    {
+      "start": 218.4,
+      "duration": 4.32,
+      "text": "used to create infrastructure on the"
+    },
+    {
+      "start": 220.019,
+      "duration": 5.101,
+      "text": "cloud it's not used to let's say it will"
+    },
+    {
+      "start": 222.72,
+      "duration": 4.2,
+      "text": "be used to create ec2 instance but if"
+    },
+    {
+      "start": 225.12,
+      "duration": 4.56,
+      "text": "you want to install Apache web server or"
+    },
+    {
+      "start": 226.92,
+      "duration": 5.039,
+      "text": "any database you will be using ansible"
+    },
+    {
+      "start": 229.68,
+      "duration": 3.96,
+      "text": "to do that because it is configuration"
+    },
+    {
+      "start": 231.959,
+      "duration": 5.64,
+      "text": "management tool and this is"
+    },
+    {
+      "start": 233.64,
+      "duration": 6.12,
+      "text": "infrastructure provisioning tool"
+    },
+    {
+      "start": 237.599,
+      "duration": 4.14,
+      "text": "so here you can see in first exercise"
+    },
+    {
+      "start": 239.76,
+      "duration": 3.78,
+      "text": "code is the managing and provisioning of"
+    },
+    {
+      "start": 241.739,
+      "duration": 3.42,
+      "text": "infrastructure through code instead of"
+    },
+    {
+      "start": 243.54,
+      "duration": 4.02,
+      "text": "using manual process to configure"
+    },
+    {
+      "start": 245.159,
+      "duration": 4.981,
+      "text": "devices so instead of using your"
+    },
+    {
+      "start": 247.56,
+      "duration": 4.62,
+      "text": "Cloud Management console you can use"
+    },
+    {
+      "start": 250.14,
+      "duration": 3.36,
+      "text": "terraform and this way you can reuse the"
+    },
+    {
+      "start": 252.18,
+      "duration": 3.059,
+      "text": "code these are all the benefits you can"
+    },
+    {
+      "start": 253.5,
+      "duration": 3.84,
+      "text": "reuse the code you will have less errors"
+    },
+    {
+      "start": 255.239,
+      "duration": 4.081,
+      "text": "it will be very fast using commands you"
+    },
+    {
+      "start": 257.34,
+      "duration": 4.5,
+      "text": "can provision everything in seconds and"
+    },
+    {
+      "start": 259.32,
+      "duration": 5.4,
+      "text": "you can store it on your Source Control"
+    },
+    {
+      "start": 261.84,
+      "duration": 4.139,
+      "text": "Management like get gitlab or GitHub so"
+    },
+    {
+      "start": 264.72,
+      "duration": 3.419,
+      "text": "this way you can reuse your code again"
+    },
+    {
+      "start": 265.979,
+      "duration": 3.78,
+      "text": "and again and why is terraform mostly"
+    },
+    {
+      "start": 268.139,
+      "duration": 3.481,
+      "text": "used because it supports all the"
+    },
+    {
+      "start": 269.759,
+      "duration": 3.361,
+      "text": "different Cloud if you use cloud"
+    },
+    {
+      "start": 271.62,
+      "duration": 3.72,
+      "text": "formation you will only be limited to"
+    },
+    {
+      "start": 273.12,
+      "duration": 3.84,
+      "text": "AWS if you use Azure you will only be"
+    },
+    {
+      "start": 275.34,
+      "duration": 3.419,
+      "text": "limited to Azure but if you use"
+    },
+    {
+      "start": 276.96,
+      "duration": 4.32,
+      "text": "terraform you can work with all the"
+    },
+    {
+      "start": 278.759,
+      "duration": 4.681,
+      "text": "different multi-clouds"
+    },
+    {
+      "start": 281.28,
+      "duration": 4.02,
+      "text": "okay"
+    },
+    {
+      "start": 283.44,
+      "duration": 3.96,
+      "text": "so configuration management is another"
+    },
+    {
+      "start": 285.3,
+      "duration": 3.6,
+      "text": "thing which is configuration as code is"
+    },
+    {
+      "start": 287.4,
+      "duration": 3.299,
+      "text": "the practice of managing configuration"
+    },
+    {
+      "start": 288.9,
+      "duration": 3.18,
+      "text": "files and repository config file"
+    },
+    {
+      "start": 290.699,
+      "duration": 3.661,
+      "text": "established the parameters and settings"
+    },
+    {
+      "start": 292.08,
+      "duration": 4.08,
+      "text": "for application server processing and"
+    },
+    {
+      "start": 294.36,
+      "duration": 3.24,
+      "text": "operating systems so you will use this"
+    },
+    {
+      "start": 296.16,
+      "duration": 4.14,
+      "text": "when you want to install the configure"
+    },
+    {
+      "start": 297.6,
+      "duration": 4.68,
+      "text": "something on the cloud you will use this"
+    },
+    {
+      "start": 300.3,
+      "duration": 3.959,
+      "text": "to provision it first you will provision"
+    },
+    {
+      "start": 302.28,
+      "duration": 3.96,
+      "text": "and then you will configure like the"
+    },
+    {
+      "start": 304.259,
+      "duration": 3.481,
+      "text": "example I gave you will create an ec2"
+    },
+    {
+      "start": 306.24,
+      "duration": 3.42,
+      "text": "instance and if you want to set up let's"
+    },
+    {
+      "start": 307.74,
+      "duration": 4.8,
+      "text": "say WordPress or any Apache web server"
+    },
+    {
+      "start": 309.66,
+      "duration": 4.259,
+      "text": "you will use ansible for that there can"
+    },
+    {
+      "start": 312.54,
+      "duration": 3.48,
+      "text": "be a possibility where you can use"
+    },
+    {
+      "start": 313.919,
+      "duration": 4.321,
+      "text": "terraform for that as well but that's"
+    },
+    {
+      "start": 316.02,
+      "duration": 4.2,
+      "text": "not that's not recommended because the"
+    },
+    {
+      "start": 318.24,
+      "duration": 4.98,
+      "text": "primary objective is to create"
+    },
+    {
+      "start": 320.22,
+      "duration": 5.46,
+      "text": "investigator not manage it"
+    },
+    {
+      "start": 323.22,
+      "duration": 3.78,
+      "text": "like for example I'll be explaining you"
+    },
+    {
+      "start": 325.68,
+      "duration": 3.6,
+      "text": "something known as provisioners in"
+    },
+    {
+      "start": 327.0,
+      "duration": 3.96,
+      "text": "terraform where you can use to install"
+    },
+    {
+      "start": 329.28,
+      "duration": 4.259,
+      "text": "something or run some commands on the"
+    },
+    {
+      "start": 330.96,
+      "duration": 4.799,
+      "text": "server as well"
+    },
+    {
+      "start": 333.539,
+      "duration": 5.16,
+      "text": "so if you don't have terraform install"
+    },
+    {
+      "start": 335.759,
+      "duration": 4.88,
+      "text": "you can visit this website and then you"
+    },
+    {
+      "start": 338.699,
+      "duration": 4.621,
+      "text": "can install it you can install it in"
+    },
+    {
+      "start": 340.639,
+      "duration": 5.381,
+      "text": "Windows Mac Linux this is commands for"
+    },
+    {
+      "start": 343.32,
+      "duration": 4.26,
+      "text": "Linux because I'm using Ubuntu if you're"
+    },
+    {
+      "start": 346.02,
+      "duration": 3.54,
+      "text": "not using Linux you should start using"
+    },
+    {
+      "start": 347.58,
+      "duration": 4.02,
+      "text": "Linux because cloud is based on Linux"
+    },
+    {
+      "start": 349.56,
+      "duration": 4.139,
+      "text": "you will be using commands to configure"
+    },
+    {
+      "start": 351.6,
+      "duration": 4.02,
+      "text": "every devops tool you come across like"
+    },
+    {
+      "start": 353.699,
+      "duration": 3.361,
+      "text": "Docker is based on commands terraform is"
+    },
+    {
+      "start": 355.62,
+      "duration": 3.84,
+      "text": "based on commands kubernetes everything"
+    },
+    {
+      "start": 357.06,
+      "duration": 5.22,
+      "text": "is command based"
+    },
+    {
+      "start": 359.46,
+      "duration": 4.56,
+      "text": "so you need to understand and have"
+    },
+    {
+      "start": 362.28,
+      "duration": 3.0,
+      "text": "experience with Linux"
+    },
+    {
+      "start": 364.02,
+      "duration": 3.36,
+      "text": "so this is how you will install"
+    },
+    {
+      "start": 365.28,
+      "duration": 4.38,
+      "text": "terraform you can find the information"
+    },
+    {
+      "start": 367.38,
+      "duration": 3.84,
+      "text": "on this page as well"
+    },
+    {
+      "start": 369.66,
+      "duration": 5.28,
+      "text": "and terraform uses something known as"
+    },
+    {
+      "start": 371.22,
+      "duration": 6.72,
+      "text": "HCL or hashicab configuration language"
+    },
+    {
+      "start": 374.94,
+      "duration": 5.64,
+      "text": "so this is similar to Json and yaml but"
+    },
+    {
+      "start": 377.94,
+      "duration": 4.259,
+      "text": "not exactly that it is it is HCl and HCL"
+    },
+    {
+      "start": 380.58,
+      "duration": 4.559,
+      "text": "has a syntax like this this is an"
+    },
+    {
+      "start": 382.199,
+      "duration": 5.161,
+      "text": "example of instance an AWS instance"
+    },
+    {
+      "start": 385.139,
+      "duration": 3.84,
+      "text": "which is web server Amis this and"
+    },
+    {
+      "start": 387.36,
+      "duration": 3.779,
+      "text": "instance type is this so this is example"
+    },
+    {
+      "start": 388.979,
+      "duration": 5.22,
+      "text": "of HCL syntax"
+    },
+    {
+      "start": 391.139,
+      "duration": 4.981,
+      "text": "and before we like we have already seen"
+    },
+    {
+      "start": 394.199,
+      "duration": 4.201,
+      "text": "what have providers you can Define what"
+    },
+    {
+      "start": 396.12,
+      "duration": 4.139,
+      "text": "providers you want uh AWS if you're"
+    },
+    {
+      "start": 398.4,
+      "duration": 4.98,
+      "text": "using AWS as a cloud you have to Define"
+    },
+    {
+      "start": 400.259,
+      "duration": 7.521,
+      "text": "this as a provider"
+    },
+    {
+      "start": 403.38,
+      "duration": 4.4,
+      "text": "right same for gcp Azure or anything"
+    },
+    {
+      "start": 408.419,
+      "duration": 4.261,
+      "text": "then inside after you define providers"
+    },
+    {
+      "start": 411.36,
+      "duration": 4.14,
+      "text": "if you want to create anything you can"
+    },
+    {
+      "start": 412.68,
+      "duration": 5.639,
+      "text": "Define that in the form of resource so"
+    },
+    {
+      "start": 415.5,
+      "duration": 4.88,
+      "text": "for example if I show you any code here"
+    },
+    {
+      "start": 418.319,
+      "duration": 2.061,
+      "text": "um"
+    },
+    {
+      "start": 429.6,
+      "duration": 3.5,
+      "text": "all right can you see my screen now"
+    },
+    {
+      "start": 433.139,
+      "duration": 3.481,
+      "text": "so whenever you create something first"
+    },
+    {
+      "start": 434.94,
+      "duration": 3.74,
+      "text": "thing you do is to Define your provider"
+    },
+    {
+      "start": 436.62,
+      "duration": 4.26,
+      "text": "so this is how you define a provider"
+    },
+    {
+      "start": 438.68,
+      "duration": 4.12,
+      "text": "and we are using two providers here"
+    },
+    {
+      "start": 440.88,
+      "duration": 5.28,
+      "text": "because we are creating some stuff in"
+    },
+    {
+      "start": 442.8,
+      "duration": 4.739,
+      "text": "U.S east one and then in US West one so"
+    },
+    {
+      "start": 446.16,
+      "duration": 4.099,
+      "text": "I'll explain you that later on how to"
+    },
+    {
+      "start": 447.539,
+      "duration": 2.72,
+      "text": "define Lis"
+    },
+    {
+      "start": 451.319,
+      "duration": 4.681,
+      "text": "yeah so"
+    },
+    {
+      "start": 454.259,
+      "duration": 4.401,
+      "text": "when you use multiple regions in a"
+    },
+    {
+      "start": 456.0,
+      "duration": 2.66,
+      "text": "single provider"
+    },
+    {
+      "start": 459.3,
+      "duration": 3.839,
+      "text": "so this is what a resource block is if"
+    },
+    {
+      "start": 461.099,
+      "duration": 4.201,
+      "text": "you want to create anything it can be"
+    },
+    {
+      "start": 463.139,
+      "duration": 4.68,
+      "text": "easy to it can be Security Group it can"
+    },
+    {
+      "start": 465.3,
+      "duration": 4.08,
+      "text": "be subnet VPC elastic IP anything you"
+    },
+    {
+      "start": 467.819,
+      "duration": 3.481,
+      "text": "will be defining that in the form of"
+    },
+    {
+      "start": 469.38,
+      "duration": 4.58,
+      "text": "research"
+    },
+    {
+      "start": 471.3,
+      "duration": 2.66,
+      "text": "right"
+    },
+    {
+      "start": 474.3,
+      "duration": 3.959,
+      "text": "right so these are all the different"
+    },
+    {
+      "start": 475.44,
+      "duration": 4.14,
+      "text": "resources uh and then let's let's see"
+    },
+    {
+      "start": 478.259,
+      "duration": 3.84,
+      "text": "the basics of how you can Define the"
+    },
+    {
+      "start": 479.58,
+      "duration": 4.019,
+      "text": "resource or provider which is in ashicab"
+    },
+    {
+      "start": 482.099,
+      "duration": 3.301,
+      "text": "language"
+    },
+    {
+      "start": 483.599,
+      "duration": 4.021,
+      "text": "so you have a block and then you have"
+    },
+    {
+      "start": 485.4,
+      "duration": 3.84,
+      "text": "parameter and inside the parameters or"
+    },
+    {
+      "start": 487.62,
+      "duration": 3.78,
+      "text": "inside the block you will have key and"
+    },
+    {
+      "start": 489.24,
+      "duration": 3.899,
+      "text": "value pair for example here you can see"
+    },
+    {
+      "start": 491.4,
+      "duration": 4.019,
+      "text": "there's a resource named as local file"
+    },
+    {
+      "start": 493.139,
+      "duration": 4.261,
+      "text": "and then you have some parameters these"
+    },
+    {
+      "start": 495.419,
+      "duration": 4.021,
+      "text": "are the two parameters this is what is"
+    },
+    {
+      "start": 497.4,
+      "duration": 3.96,
+      "text": "the actual name of the resource and this"
+    },
+    {
+      "start": 499.44,
+      "duration": 4.439,
+      "text": "is the name you give inside for"
+    },
+    {
+      "start": 501.36,
+      "duration": 5.1,
+      "text": "terraform purpose for terraform like"
+    },
+    {
+      "start": 503.879,
+      "duration": 4.861,
+      "text": "references and inside this block"
+    },
+    {
+      "start": 506.46,
+      "duration": 4.2,
+      "text": "resource block you will have key and"
+    },
+    {
+      "start": 508.74,
+      "duration": 2.7,
+      "text": "value pair so key and value key and"
+    },
+    {
+      "start": 510.66,
+      "duration": 3.36,
+      "text": "value"
+    },
+    {
+      "start": 511.44,
+      "duration": 4.38,
+      "text": "all the time so here is the resource"
+    },
+    {
+      "start": 514.02,
+      "duration": 5.579,
+      "text": "block then you have some parameters and"
+    },
+    {
+      "start": 515.82,
+      "duration": 5.82,
+      "text": "this is key value key value key value"
+    },
+    {
+      "start": 519.599,
+      "duration": 5.041,
+      "text": "okay so you can see here this is the"
+    },
+    {
+      "start": 521.64,
+      "duration": 4.86,
+      "text": "block name uh local file is the resource"
+    },
+    {
+      "start": 524.64,
+      "duration": 3.78,
+      "text": "it is a resource type this is a resource"
+    },
+    {
+      "start": 526.5,
+      "duration": 4.76,
+      "text": "name then arguments are your key and"
+    },
+    {
+      "start": 528.42,
+      "duration": 2.84,
+      "text": "value arguments"
+    },
+    {
+      "start": 532.2,
+      "duration": 4.139,
+      "text": "so here is some example this is an"
+    },
+    {
+      "start": 533.88,
+      "duration": 4.139,
+      "text": "example of creating a AWS instance"
+    },
+    {
+      "start": 536.339,
+      "duration": 3.781,
+      "text": "resource and here is an example of"
+    },
+    {
+      "start": 538.019,
+      "duration": 4.561,
+      "text": "creating S3 bucket resource so you have"
+    },
+    {
+      "start": 540.12,
+      "duration": 5.1,
+      "text": "defined this as a resource type and this"
+    },
+    {
+      "start": 542.58,
+      "duration": 5.64,
+      "text": "is a resource name arguments Amis this"
+    },
+    {
+      "start": 545.22,
+      "duration": 5.64,
+      "text": "instance type is this"
+    },
+    {
+      "start": 548.22,
+      "duration": 4.559,
+      "text": "so once you create this aft then you"
+    },
+    {
+      "start": 550.86,
+      "duration": 4.44,
+      "text": "need to run some commands to manage this"
+    },
+    {
+      "start": 552.779,
+      "duration": 4.68,
+      "text": "so let's let's go and create a directory"
+    },
+    {
+      "start": 555.3,
+      "duration": 6.86,
+      "text": "and do this Hands-On first so I'm going"
+    },
+    {
+      "start": 557.459,
+      "duration": 4.701,
+      "text": "to create a directory let's say learn"
+    },
+    {
+      "start": 562.98,
+      "duration": 2.78,
+      "text": "terraform"
+    },
+    {
+      "start": 572.959,
+      "duration": 7.5,
+      "text": "okay so can you see this"
+    },
+    {
+      "start": 576.24,
+      "duration": 4.219,
+      "text": "is it visible for you okay just a second"
+    },
+    {
+      "start": 582.6,
+      "duration": 2.0,
+      "text": "um"
+    },
+    {
+      "start": 592.08,
+      "duration": 4.5,
+      "text": "okay so I'm here in my"
+    },
+    {
+      "start": 594.6,
+      "duration": 3.72,
+      "text": "Visual Studio code we have created"
+    },
+    {
+      "start": 596.58,
+      "duration": 3.6,
+      "text": "directory name that's learn.alent"
+    },
+    {
+      "start": 598.32,
+      "duration": 3.72,
+      "text": "terraform and we will start creating"
+    },
+    {
+      "start": 600.18,
+      "duration": 4.86,
+      "text": "some infrastructure"
+    },
+    {
+      "start": 602.04,
+      "duration": 4.859,
+      "text": "on our Cloud on our AWS to do that"
+    },
+    {
+      "start": 605.04,
+      "duration": 4.02,
+      "text": "before you need to run a command named"
+    },
+    {
+      "start": 606.899,
+      "duration": 4.321,
+      "text": "as AWS configure where you will enter"
+    },
+    {
+      "start": 609.06,
+      "duration": 5.54,
+      "text": "your keys access key and secret access"
+    },
+    {
+      "start": 611.22,
+      "duration": 3.38,
+      "text": "key you know what those are right"
+    },
+    {
+      "start": 615.959,
+      "duration": 2.661,
+      "text": "hello"
+    },
+    {
+      "start": 619.5,
+      "duration": 6.6,
+      "text": "so in AWS when you create a user IM user"
+    },
+    {
+      "start": 623.16,
+      "duration": 5.88,
+      "text": "you can give them a CLI access and when"
+    },
+    {
+      "start": 626.1,
+      "duration": 6.179,
+      "text": "you give them CLI access you get keys so"
+    },
+    {
+      "start": 629.04,
+      "duration": 5.22,
+      "text": "these are secret access key yeah so this"
+    },
+    {
+      "start": 632.279,
+      "duration": 3.841,
+      "text": "secret access key and access keys are"
+    },
+    {
+      "start": 634.26,
+      "duration": 4.38,
+      "text": "used to login through CLI you can run"
+    },
+    {
+      "start": 636.12,
+      "duration": 4.8,
+      "text": "the command AWS configure and then you"
+    },
+    {
+      "start": 638.64,
+      "duration": 5.4,
+      "text": "can enter your access key ID then secret"
+    },
+    {
+      "start": 640.92,
+      "duration": 5.099,
+      "text": "access key then the region name and then"
+    },
+    {
+      "start": 644.04,
+      "duration": 3.9,
+      "text": "the output format and this is how you"
+    },
+    {
+      "start": 646.019,
+      "duration": 4.921,
+      "text": "will connect it if you want to check you"
+    },
+    {
+      "start": 647.94,
+      "duration": 5.399,
+      "text": "can just run AWS IEM list Dash users"
+    },
+    {
+      "start": 650.94,
+      "duration": 4.92,
+      "text": "which will give you the users present in"
+    },
+    {
+      "start": 653.339,
+      "duration": 4.261,
+      "text": "the IEM so if these are the same"
+    },
+    {
+      "start": 655.86,
+      "duration": 3.84,
+      "text": "which means you have using the correct"
+    },
+    {
+      "start": 657.6,
+      "duration": 3.96,
+      "text": "uh account or else you there might be a"
+    },
+    {
+      "start": 659.7,
+      "duration": 3.84,
+      "text": "chance where you might be using your"
+    },
+    {
+      "start": 661.56,
+      "duration": 3.959,
+      "text": "company's account which you don't want"
+    },
+    {
+      "start": 663.54,
+      "duration": 4.4,
+      "text": "to do"
+    },
+    {
+      "start": 665.519,
+      "duration": 2.421,
+      "text": "right"
+    },
+    {
+      "start": 667.98,
+      "duration": 3.919,
+      "text": "so inside this directory I'm going to"
+    },
+    {
+      "start": 669.54,
+      "duration": 5.28,
+      "text": "first create a file named as provider"
+    },
+    {
+      "start": 671.899,
+      "duration": 5.081,
+      "text": "dot TF every file should end with DOT TF"
+    },
+    {
+      "start": 674.82,
+      "duration": 4.32,
+      "text": "and terraform when because that's how"
+    },
+    {
+      "start": 676.98,
+      "duration": 4.979,
+      "text": "terraform works every file should be"
+    },
+    {
+      "start": 679.14,
+      "duration": 5.16,
+      "text": "with DOT TF extension"
+    },
+    {
+      "start": 681.959,
+      "duration": 4.741,
+      "text": "so inside this provider.tf we are going"
+    },
+    {
+      "start": 684.3,
+      "duration": 4.14,
+      "text": "to Define our AWS provider so I can go"
+    },
+    {
+      "start": 686.7,
+      "duration": 6.92,
+      "text": "to the documentation"
+    },
+    {
+      "start": 688.44,
+      "duration": 5.18,
+      "text": "which is here and I can copy this code"
+    },
+    {
+      "start": 695.16,
+      "duration": 5.22,
+      "text": "paste it here so this is terraform"
+    },
+    {
+      "start": 698.22,
+      "duration": 3.9,
+      "text": "official documentation and if you want"
+    },
+    {
+      "start": 700.38,
+      "duration": 3.72,
+      "text": "to do anything you can use this and you"
+    },
+    {
+      "start": 702.12,
+      "duration": 3.42,
+      "text": "should always be using this because it's"
+    },
+    {
+      "start": 704.1,
+      "duration": 3.6,
+      "text": "a good practice to follow documentation"
+    },
+    {
+      "start": 705.54,
+      "duration": 5.1,
+      "text": "this way you will avoid making any"
+    },
+    {
+      "start": 707.7,
+      "duration": 4.8,
+      "text": "issues so you can see this documentation"
+    },
+    {
+      "start": 710.64,
+      "duration": 4.259,
+      "text": "will give you all the examples on how"
+    },
+    {
+      "start": 712.5,
+      "duration": 3.72,
+      "text": "you can set up your own provider you can"
+    },
+    {
+      "start": 714.899,
+      "duration": 3.06,
+      "text": "also type anything let's say you want to"
+    },
+    {
+      "start": 716.22,
+      "duration": 4.14,
+      "text": "create ec2"
+    },
+    {
+      "start": 717.959,
+      "duration": 3.601,
+      "text": "instance or ec2 instance and then"
+    },
+    {
+      "start": 720.36,
+      "duration": 4.02,
+      "text": "terraform"
+    },
+    {
+      "start": 721.56,
+      "duration": 4.44,
+      "text": "will take you to the terraform"
+    },
+    {
+      "start": 724.38,
+      "duration": 4.38,
+      "text": "documentation this way you can use this"
+    },
+    {
+      "start": 726.0,
+      "duration": 4.8,
+      "text": "as a reference to create anything"
+    },
+    {
+      "start": 728.76,
+      "duration": 4.199,
+      "text": "so here is the"
+    },
+    {
+      "start": 730.8,
+      "duration": 4.14,
+      "text": "resource block for AWS instance you can"
+    },
+    {
+      "start": 732.959,
+      "duration": 5.041,
+      "text": "use this to create anything in your"
+    },
+    {
+      "start": 734.94,
+      "duration": 4.98,
+      "text": "account like the AWS"
+    },
+    {
+      "start": 738.0,
+      "duration": 4.019,
+      "text": "so using the documentation we got this"
+    },
+    {
+      "start": 739.92,
+      "duration": 3.96,
+      "text": "terraform block which is using the"
+    },
+    {
+      "start": 742.019,
+      "duration": 3.841,
+      "text": "latest version and then you have a"
+    },
+    {
+      "start": 743.88,
+      "duration": 4.019,
+      "text": "provider named as AWS inside this I'm"
+    },
+    {
+      "start": 745.86,
+      "duration": 4.68,
+      "text": "going to add argument which is going to"
+    },
+    {
+      "start": 747.899,
+      "duration": 4.56,
+      "text": "be reason so I'm going to use us Dash"
+    },
+    {
+      "start": 750.54,
+      "duration": 4.56,
+      "text": "East dashboard"
+    },
+    {
+      "start": 752.459,
+      "duration": 6.481,
+      "text": "so this is not Virginia also named as"
+    },
+    {
+      "start": 755.1,
+      "duration": 6.44,
+      "text": "US-1 inside our AWS"
+    },
+    {
+      "start": 758.94,
+      "duration": 2.6,
+      "text": "so"
+    },
+    {
+      "start": 771.36,
+      "duration": 2.9,
+      "text": "okay no problem"
+    },
+    {
+      "start": 779.339,
+      "duration": 3.361,
+      "text": "all right so here are the different"
+    },
+    {
+      "start": 780.959,
+      "duration": 3.601,
+      "text": "versions if you want to cross check make"
+    },
+    {
+      "start": 782.7,
+      "duration": 4.139,
+      "text": "sure you're using the right name which"
+    },
+    {
+      "start": 784.56,
+      "duration": 4.62,
+      "text": "is us-east1"
+    },
+    {
+      "start": 786.839,
+      "duration": 4.981,
+      "text": "not the Virginia if you want to use any"
+    },
+    {
+      "start": 789.18,
+      "duration": 3.959,
+      "text": "other levels you can use test names from"
+    },
+    {
+      "start": 791.82,
+      "duration": 2.94,
+      "text": "the console"
+    },
+    {
+      "start": 793.139,
+      "duration": 3.121,
+      "text": "so I'm going to add this and once you"
+    },
+    {
+      "start": 794.76,
+      "duration": 3.98,
+      "text": "add this then you can create your"
+    },
+    {
+      "start": 796.26,
+      "duration": 5.46,
+      "text": "infrastructure I can choose to create"
+    },
+    {
+      "start": 798.74,
+      "duration": 5.02,
+      "text": "ec2 instance right in this provider.df"
+    },
+    {
+      "start": 801.72,
+      "duration": 4.5,
+      "text": "but I'm going to create another file"
+    },
+    {
+      "start": 803.76,
+      "duration": 5.16,
+      "text": "name it ec2.tf or you can name it"
+    },
+    {
+      "start": 806.22,
+      "duration": 3.6,
+      "text": "anything main.tf server.tf anything you"
+    },
+    {
+      "start": 808.92,
+      "duration": 2.58,
+      "text": "want"
+    },
+    {
+      "start": 809.82,
+      "duration": 3.92,
+      "text": "so I'm going to go to the documentation"
+    },
+    {
+      "start": 811.5,
+      "duration": 2.24,
+      "text": "again"
+    },
+    {
+      "start": 815.82,
+      "duration": 3.0,
+      "text": "oh"
+    },
+    {
+      "start": 823.26,
+      "duration": 3.56,
+      "text": "a lot of tabs are open"
+    },
+    {
+      "start": 829.019,
+      "duration": 3.361,
+      "text": "all right"
+    },
+    {
+      "start": 830.399,
+      "duration": 3.841,
+      "text": "so I'm going to copy this block of code"
+    },
+    {
+      "start": 832.38,
+      "duration": 4.74,
+      "text": "resource AWS"
+    },
+    {
+      "start": 834.24,
+      "duration": 4.56,
+      "text": "instance and then paste it in our code"
+    },
+    {
+      "start": 837.12,
+      "duration": 3.36,
+      "text": "here so"
+    },
+    {
+      "start": 838.8,
+      "duration": 3.42,
+      "text": "we are not using data block here so I'm"
+    },
+    {
+      "start": 840.48,
+      "duration": 4.08,
+      "text": "going to remove this and provide my own"
+    },
+    {
+      "start": 842.22,
+      "duration": 4.08,
+      "text": "value so resource is AWS instance and"
+    },
+    {
+      "start": 844.56,
+      "duration": 2.94,
+      "text": "this is the name of the resource Ami"
+    },
+    {
+      "start": 846.3,
+      "duration": 3.659,
+      "text": "value I'm going to put that from the"
+    },
+    {
+      "start": 847.5,
+      "duration": 3.66,
+      "text": "console and since type is T3 micro and"
+    },
+    {
+      "start": 849.959,
+      "duration": 2.341,
+      "text": "the name of the instance should be hello"
+    },
+    {
+      "start": 851.16,
+      "duration": 2.4,
+      "text": "good"
+    },
+    {
+      "start": 852.3,
+      "duration": 4.14,
+      "text": "okay"
+    },
+    {
+      "start": 853.56,
+      "duration": 5.459,
+      "text": "so I'm going to go to my uh"
+    },
+    {
+      "start": 856.44,
+      "duration": 5.82,
+      "text": "AWS AWS dashboard again"
+    },
+    {
+      "start": 859.019,
+      "duration": 6.0,
+      "text": "which is here and easy to make sure you"
+    },
+    {
+      "start": 862.26,
+      "duration": 4.139,
+      "text": "always use your own Ami because Ami is"
+    },
+    {
+      "start": 865.019,
+      "duration": 4.041,
+      "text": "going to be different for every region"
+    },
+    {
+      "start": 866.399,
+      "duration": 2.661,
+      "text": "and every account"
+    },
+    {
+      "start": 871.26,
+      "duration": 4.019,
+      "text": "so I'm going to go to Ami section here"
+    },
+    {
+      "start": 873.36,
+      "duration": 4.44,
+      "text": "and copy the Emi so this is the Ami ID"
+    },
+    {
+      "start": 875.279,
+      "duration": 4.441,
+      "text": "for Amazon Linux I can choose Ubuntu if"
+    },
+    {
+      "start": 877.8,
+      "duration": 3.839,
+      "text": "I want to so I'm going to go with Amazon"
+    },
+    {
+      "start": 879.72,
+      "duration": 4.2,
+      "text": "Linux"
+    },
+    {
+      "start": 881.639,
+      "duration": 4.021,
+      "text": "and copy this Ami ID"
+    },
+    {
+      "start": 883.92,
+      "duration": 3.419,
+      "text": "paste it here"
+    },
+    {
+      "start": 885.66,
+      "duration": 2.82,
+      "text": "so let's say this is your infrastructure"
+    },
+    {
+      "start": 887.339,
+      "duration": 3.421,
+      "text": "you want to just create a single"
+    },
+    {
+      "start": 888.48,
+      "duration": 4.68,
+      "text": "instance and how would you go from here"
+    },
+    {
+      "start": 890.76,
+      "duration": 4.079,
+      "text": "you will open your terminal and run some"
+    },
+    {
+      "start": 893.16,
+      "duration": 3.72,
+      "text": "commands so"
+    },
+    {
+      "start": 894.839,
+      "duration": 3.18,
+      "text": "terraformat has different commands let"
+    },
+    {
+      "start": 896.88,
+      "duration": 3.24,
+      "text": "me show you all the different commands"
+    },
+    {
+      "start": 898.019,
+      "duration": 5.041,
+      "text": "of terraform if I type terraform I will"
+    },
+    {
+      "start": 900.12,
+      "duration": 5.519,
+      "text": "get all these commands so you can see"
+    },
+    {
+      "start": 903.06,
+      "duration": 4.68,
+      "text": "init validate plan apply destroy console"
+    },
+    {
+      "start": 905.639,
+      "duration": 3.481,
+      "text": "fmt force and log all this different and"
+    },
+    {
+      "start": 907.74,
+      "duration": 2.52,
+      "text": "you can read about them if you want to"
+    },
+    {
+      "start": 909.12,
+      "duration": 2.88,
+      "text": "know what they do"
+    },
+    {
+      "start": 910.26,
+      "duration": 3.06,
+      "text": "so init command is to prepare your"
+    },
+    {
+      "start": 912.0,
+      "duration": 3.6,
+      "text": "working directory and this is the first"
+    },
+    {
+      "start": 913.32,
+      "duration": 4.319,
+      "text": "command you should run whenever you"
+    },
+    {
+      "start": 915.6,
+      "duration": 3.78,
+      "text": "start working with terraform"
+    },
+    {
+      "start": 917.639,
+      "duration": 3.541,
+      "text": "it's going to install all the files"
+    },
+    {
+      "start": 919.38,
+      "duration": 3.72,
+      "text": "necessary for the provider to run and"
+    },
+    {
+      "start": 921.18,
+      "duration": 5.58,
+      "text": "also the it will also install the API"
+    },
+    {
+      "start": 923.1,
+      "duration": 6.299,
+      "text": "access for AWS"
+    },
+    {
+      "start": 926.76,
+      "duration": 4.379,
+      "text": "right this is why we Define provider so"
+    },
+    {
+      "start": 929.399,
+      "duration": 4.081,
+      "text": "that we can get API access from our"
+    },
+    {
+      "start": 931.139,
+      "duration": 6.0,
+      "text": "machine to the cloud"
+    },
+    {
+      "start": 933.48,
+      "duration": 6.12,
+      "text": "and then you will use validate to check"
+    },
+    {
+      "start": 937.139,
+      "duration": 3.721,
+      "text": "the syntax if it is correct or not you"
+    },
+    {
+      "start": 939.6,
+      "duration": 4.14,
+      "text": "can then plan to check what is going to"
+    },
+    {
+      "start": 940.86,
+      "duration": 4.26,
+      "text": "be created so let's run all all of these"
+    },
+    {
+      "start": 943.74,
+      "duration": 2.88,
+      "text": "command one by one to understand what"
+    },
+    {
+      "start": 945.12,
+      "duration": 3.42,
+      "text": "they do"
+    },
+    {
+      "start": 946.62,
+      "duration": 4.079,
+      "text": "so as I mentioned that first thing you"
+    },
+    {
+      "start": 948.54,
+      "duration": 3.659,
+      "text": "are going to do when you work with"
+    },
+    {
+      "start": 950.699,
+      "duration": 2.521,
+      "text": "terraform is going to run terraform in"
+    },
+    {
+      "start": 952.199,
+      "duration": 4.5,
+      "text": "it command"
+    },
+    {
+      "start": 953.22,
+      "duration": 5.82,
+      "text": "so terraform in it"
+    },
+    {
+      "start": 956.699,
+      "duration": 5.421,
+      "text": "so 10 of a minute is going to install"
+    },
+    {
+      "start": 959.04,
+      "duration": 3.08,
+      "text": "all the files necessary"
+    },
+    {
+      "start": 962.82,
+      "duration": 3.019,
+      "text": "so just a second"
+    },
+    {
+      "start": 966.6,
+      "duration": 4.48,
+      "text": "hello"
+    },
+    {
+      "start": 967.98,
+      "duration": 3.1,
+      "text": "[Music]"
+    },
+    {
+      "start": 973.579,
+      "duration": 9.421,
+      "text": "one two two three one two two three one"
+    },
+    {
+      "start": 980.339,
+      "duration": 2.661,
+      "text": "ah"
+    },
+    {
+      "start": 983.579,
+      "duration": 2.481,
+      "text": "okay"
+    },
+    {
+      "start": 986.399,
+      "duration": 5.281,
+      "text": "okay so now you can see it says"
+    },
+    {
+      "start": 990.12,
+      "duration": 3.3,
+      "text": "terraform has been successfully"
+    },
+    {
+      "start": 991.68,
+      "duration": 3.3,
+      "text": "initialized and you may now begin"
+    },
+    {
+      "start": 993.42,
+      "duration": 4.94,
+      "text": "working with terraform"
+    },
+    {
+      "start": 994.98,
+      "duration": 3.38,
+      "text": "let me make this small"
+    },
+    {
+      "start": 999.36,
+      "duration": 4.279,
+      "text": "okay can you see this message"
+    },
+    {
+      "start": 1004.519,
+      "duration": 3.12,
+      "text": "and you can also see that there are two"
+    },
+    {
+      "start": 1006.019,
+      "duration": 3.961,
+      "text": "files created which we didn't created"
+    },
+    {
+      "start": 1007.639,
+      "duration": 4.861,
+      "text": "it's all it's automatically done once"
+    },
+    {
+      "start": 1009.98,
+      "duration": 4.38,
+      "text": "you define terraform in it and this is"
+    },
+    {
+      "start": 1012.5,
+      "duration": 3.42,
+      "text": "necessary for your code to one run"
+    },
+    {
+      "start": 1014.36,
+      "duration": 3.659,
+      "text": "because it has all the information about"
+    },
+    {
+      "start": 1015.92,
+      "duration": 4.979,
+      "text": "the provider it's not going to open here"
+    },
+    {
+      "start": 1018.019,
+      "duration": 4.5,
+      "text": "but this is a required file"
+    },
+    {
+      "start": 1020.899,
+      "duration": 3.42,
+      "text": "and this will come only when you run"
+    },
+    {
+      "start": 1022.519,
+      "duration": 3.54,
+      "text": "terraform in it you should not make any"
+    },
+    {
+      "start": 1024.319,
+      "duration": 4.14,
+      "text": "changes in this you should always make"
+    },
+    {
+      "start": 1026.059,
+      "duration": 4.38,
+      "text": "changes in file which ends with DOT TF"
+    },
+    {
+      "start": 1028.459,
+      "duration": 4.081,
+      "text": "you don't you should not touch any Dot"
+    },
+    {
+      "start": 1030.439,
+      "duration": 4.64,
+      "text": "Lock or dot State file"
+    },
+    {
+      "start": 1032.54,
+      "duration": 2.539,
+      "text": "okay"
+    },
+    {
+      "start": 1035.24,
+      "duration": 3.719,
+      "text": "so terraform unit command is used to"
+    },
+    {
+      "start": 1036.98,
+      "duration": 3.66,
+      "text": "initialize the backend and provide a"
+    },
+    {
+      "start": 1038.959,
+      "duration": 3.96,
+      "text": "plugin we're going to see remote backend"
+    },
+    {
+      "start": 1040.64,
+      "duration": 3.96,
+      "text": "concept as well later on but I hope you"
+    },
+    {
+      "start": 1042.919,
+      "duration": 3.061,
+      "text": "understood what this terraform init"
+    },
+    {
+      "start": 1044.6,
+      "duration": 2.88,
+      "text": "command it's used to prepare your"
+    },
+    {
+      "start": 1045.98,
+      "duration": 3.6,
+      "text": "working directory for other commands"
+    },
+    {
+      "start": 1047.48,
+      "duration": 4.079,
+      "text": "First Command to run if every time you"
+    },
+    {
+      "start": 1049.58,
+      "duration": 4.58,
+      "text": "start working with terraform"
+    },
+    {
+      "start": 1051.559,
+      "duration": 2.601,
+      "text": "okay"
+    },
+    {
+      "start": 1054.32,
+      "duration": 3.479,
+      "text": "next command we are going to learn is"
+    },
+    {
+      "start": 1056.24,
+      "duration": 2.76,
+      "text": "terraform plan it will tell us what is"
+    },
+    {
+      "start": 1057.799,
+      "duration": 3.301,
+      "text": "going to be created according to the"
+    },
+    {
+      "start": 1059.0,
+      "duration": 4.02,
+      "text": "code so the code says we are going to"
+    },
+    {
+      "start": 1061.1,
+      "duration": 5.16,
+      "text": "create one instance which is going to be"
+    },
+    {
+      "start": 1063.02,
+      "duration": 4.92,
+      "text": "this Ami and instance type is this name"
+    },
+    {
+      "start": 1066.26,
+      "duration": 3.299,
+      "text": "of the instant would be this so"
+    },
+    {
+      "start": 1067.94,
+      "duration": 3.42,
+      "text": "according to the plan it should show us"
+    },
+    {
+      "start": 1069.559,
+      "duration": 3.781,
+      "text": "that an instance should be created so"
+    },
+    {
+      "start": 1071.36,
+      "duration": 4.8,
+      "text": "I'm going to enter a form plan here"
+    },
+    {
+      "start": 1073.34,
+      "duration": 5.4,
+      "text": "and let's see what happens"
+    },
+    {
+      "start": 1076.16,
+      "duration": 6.86,
+      "text": "it says one thing is going to be added 0"
+    },
+    {
+      "start": 1078.74,
+      "duration": 4.28,
+      "text": "is going to be changed and 0 to distort"
+    },
+    {
+      "start": 1083.24,
+      "duration": 4.02,
+      "text": "so if you see the plan you can see an"
+    },
+    {
+      "start": 1085.94,
+      "duration": 4.56,
+      "text": "instance is going to be created which is"
+    },
+    {
+      "start": 1087.26,
+      "duration": 4.56,
+      "text": "dot web AWS instance dot web and this is"
+    },
+    {
+      "start": 1090.5,
+      "duration": 3.539,
+      "text": "the Ami ID"
+    },
+    {
+      "start": 1091.82,
+      "duration": 4.2,
+      "text": "then all the parameters here which is"
+    },
+    {
+      "start": 1094.039,
+      "duration": 3.541,
+      "text": "this is the instance type"
+    },
+    {
+      "start": 1096.02,
+      "duration": 3.6,
+      "text": "and the name of the instance is going to"
+    },
+    {
+      "start": 1097.58,
+      "duration": 4.52,
+      "text": "be hello world"
+    },
+    {
+      "start": 1099.62,
+      "duration": 2.48,
+      "text": "okay"
+    },
+    {
+      "start": 1102.86,
+      "duration": 3.84,
+      "text": "so if you are sure that and if you are"
+    },
+    {
+      "start": 1104.9,
+      "duration": 3.72,
+      "text": "okay with this plan this is what you"
+    },
+    {
+      "start": 1106.7,
+      "duration": 3.24,
+      "text": "wanted then you can run terraform apply"
+    },
+    {
+      "start": 1108.62,
+      "duration": 4.08,
+      "text": "command so you can see it says you"
+    },
+    {
+      "start": 1109.94,
+      "duration": 4.68,
+      "text": "didn't use the hyphen out option to save"
+    },
+    {
+      "start": 1112.7,
+      "duration": 4.68,
+      "text": "the plan so terraform can't guarantee to"
+    },
+    {
+      "start": 1114.62,
+      "duration": 4.679,
+      "text": "exactly this action if you run terraform"
+    },
+    {
+      "start": 1117.38,
+      "duration": 4.08,
+      "text": "planner which means if you want to stay"
+    },
+    {
+      "start": 1119.299,
+      "duration": 4.801,
+      "text": "if you want to save this plan in a file"
+    },
+    {
+      "start": 1121.46,
+      "duration": 4.74,
+      "text": "you can use type 1 out command so"
+    },
+    {
+      "start": 1124.1,
+      "duration": 5.28,
+      "text": "terraform plan"
+    },
+    {
+      "start": 1126.2,
+      "duration": 6.12,
+      "text": "nice and out and then the name of the"
+    },
+    {
+      "start": 1129.38,
+      "duration": 4.86,
+      "text": "file let's say plan.txt"
+    },
+    {
+      "start": 1132.32,
+      "duration": 4.08,
+      "text": "if I run this command it's going to show"
+    },
+    {
+      "start": 1134.24,
+      "duration": 3.9,
+      "text": "me the plan and it will show save save"
+    },
+    {
+      "start": 1136.4,
+      "duration": 4.38,
+      "text": "it in plan.txt"
+    },
+    {
+      "start": 1138.14,
+      "duration": 5.58,
+      "text": "so if I do LS I should see the file"
+    },
+    {
+      "start": 1140.78,
+      "duration": 5.639,
+      "text": "named as plan.txt if I do cat plan.txt"
+    },
+    {
+      "start": 1143.72,
+      "duration": 6.78,
+      "text": "it should have a it should have all this"
+    },
+    {
+      "start": 1146.419,
+      "duration": 6.781,
+      "text": "gibberish data but it is what the"
+    },
+    {
+      "start": 1150.5,
+      "duration": 5.28,
+      "text": "terraform plan right it can be any other"
+    },
+    {
+      "start": 1153.2,
+      "duration": 4.92,
+      "text": "syntax not DOT txt should be dot TF or"
+    },
+    {
+      "start": 1155.78,
+      "duration": 3.779,
+      "text": "Json which will show you the plan but"
+    },
+    {
+      "start": 1158.12,
+      "duration": 5.419,
+      "text": "this is how you save"
+    },
+    {
+      "start": 1159.559,
+      "duration": 3.98,
+      "text": "uh your plan and a file"
+    },
+    {
+      "start": 1163.88,
+      "duration": 2.6,
+      "text": "okay"
+    },
+    {
+      "start": 1167.66,
+      "duration": 2.54,
+      "text": "hello"
+    },
+    {
+      "start": 1170.72,
+      "duration": 5.72,
+      "text": "all right so you understood the plan"
+    },
+    {
+      "start": 1172.7,
+      "duration": 3.74,
+      "text": "option right terraform plan command"
+    },
+    {
+      "start": 1179.0,
+      "duration": 3.059,
+      "text": "it will show you what is going to be"
+    },
+    {
+      "start": 1180.5,
+      "duration": 4.14,
+      "text": "created destroyed"
+    },
+    {
+      "start": 1182.059,
+      "duration": 4.801,
+      "text": "you can skip forward a bit I'll load"
+    },
+    {
+      "start": 1184.64,
+      "duration": 4.38,
+      "text": "this okay"
+    },
+    {
+      "start": 1186.86,
+      "duration": 6.12,
+      "text": "all right so I'm going to create a"
+    },
+    {
+      "start": 1189.02,
+      "duration": 6.3,
+      "text": "create this terraform apply"
+    },
+    {
+      "start": 1192.98,
+      "duration": 4.14,
+      "text": "hyphen Auto"
+    },
+    {
+      "start": 1195.32,
+      "duration": 3.3,
+      "text": "python approved to create this"
+    },
+    {
+      "start": 1197.12,
+      "duration": 4.439,
+      "text": "infrastructure in my"
+    },
+    {
+      "start": 1198.62,
+      "duration": 4.14,
+      "text": "terraform count in my AWS account so I'm"
+    },
+    {
+      "start": 1201.559,
+      "duration": 4.161,
+      "text": "going to go here and you can see an"
+    },
+    {
+      "start": 1202.76,
+      "duration": 2.96,
+      "text": "instance will be created"
+    },
+    {
+      "start": 1213.32,
+      "duration": 5.04,
+      "text": "yes terraform iPhone Auto iPhone"
+    },
+    {
+      "start": 1215.66,
+      "duration": 4.5,
+      "text": "approved will avoid putting yes or else"
+    },
+    {
+      "start": 1218.36,
+      "duration": 4.5,
+      "text": "it will"
+    },
+    {
+      "start": 1220.16,
+      "duration": 5.1,
+      "text": "it will ask you for the confirmation"
+    },
+    {
+      "start": 1222.86,
+      "duration": 4.559,
+      "text": "so you can see it apply has been"
+    },
+    {
+      "start": 1225.26,
+      "duration": 4.26,
+      "text": "completed and one resource is added you"
+    },
+    {
+      "start": 1227.419,
+      "duration": 3.241,
+      "text": "can see the ID as well so I'm going to"
+    },
+    {
+      "start": 1229.52,
+      "duration": 3.68,
+      "text": "show you that this is the hello world"
+    },
+    {
+      "start": 1230.66,
+      "duration": 5.7,
+      "text": "it's the same what we wanted and the"
+    },
+    {
+      "start": 1233.2,
+      "duration": 5.2,
+      "text": "id0b85 which is the same so this is how"
+    },
+    {
+      "start": 1236.36,
+      "duration": 3.78,
+      "text": "you can create infrastructure and"
+    },
+    {
+      "start": 1238.4,
+      "duration": 3.36,
+      "text": "terraform by running terraform apply"
+    },
+    {
+      "start": 1240.14,
+      "duration": 3.899,
+      "text": "command let's say you want to change"
+    },
+    {
+      "start": 1241.76,
+      "duration": 3.659,
+      "text": "something you want to change the name of"
+    },
+    {
+      "start": 1244.039,
+      "duration": 3.901,
+      "text": "the instance or you want to change the"
+    },
+    {
+      "start": 1245.419,
+      "duration": 4.021,
+      "text": "instance type you can run"
+    },
+    {
+      "start": 1247.94,
+      "duration": 5.28,
+      "text": "you can make the change here let's say"
+    },
+    {
+      "start": 1249.44,
+      "duration": 5.4,
+      "text": "hello world 1 101 something like this if"
+    },
+    {
+      "start": 1253.22,
+      "duration": 3.78,
+      "text": "I save this and enter a home apply again"
+    },
+    {
+      "start": 1254.84,
+      "duration": 3.48,
+      "text": "or First Data from plan let's run"
+    },
+    {
+      "start": 1257.0,
+      "duration": 4.86,
+      "text": "terraform plan"
+    },
+    {
+      "start": 1258.32,
+      "duration": 5.7,
+      "text": "to see what changes going to be done"
+    },
+    {
+      "start": 1261.86,
+      "duration": 4.8,
+      "text": "so it will show us that one thing is"
+    },
+    {
+      "start": 1264.02,
+      "duration": 4.92,
+      "text": "going to be changed and if you see this"
+    },
+    {
+      "start": 1266.66,
+      "duration": 3.36,
+      "text": "symbols here this is plus symbol in"
+    },
+    {
+      "start": 1268.94,
+      "duration": 3.0,
+      "text": "green color which means something is"
+    },
+    {
+      "start": 1270.02,
+      "duration": 3.96,
+      "text": "going to be added and if you see this"
+    },
+    {
+      "start": 1271.94,
+      "duration": 3.72,
+      "text": "here which is yellow color tilde symbol"
+    },
+    {
+      "start": 1273.98,
+      "duration": 4.02,
+      "text": "or the baby symbol"
+    },
+    {
+      "start": 1275.66,
+      "duration": 4.56,
+      "text": "which is going to show us that the name"
+    },
+    {
+      "start": 1278.0,
+      "duration": 4.02,
+      "text": "is going to be changed so one is going"
+    },
+    {
+      "start": 1280.22,
+      "duration": 3.66,
+      "text": "to be changed 0 is going to be added 0"
+    },
+    {
+      "start": 1282.02,
+      "duration": 3.36,
+      "text": "is going to be destroyed so this is what"
+    },
+    {
+      "start": 1283.88,
+      "duration": 3.06,
+      "text": "we wanted and I'm going to run data from"
+    },
+    {
+      "start": 1285.38,
+      "duration": 3.06,
+      "text": "apply iPhone or to hyphen approved to"
+    },
+    {
+      "start": 1286.94,
+      "duration": 6.14,
+      "text": "apply this change"
+    },
+    {
+      "start": 1288.44,
+      "duration": 4.64,
+      "text": "so this will be done in like seconds"
+    },
+    {
+      "start": 1294.26,
+      "duration": 3.68,
+      "text": "it's refreshing the state okay so here"
+    },
+    {
+      "start": 1296.659,
+      "duration": 3.961,
+      "text": "you can see a file is created"
+    },
+    {
+      "start": 1297.94,
+      "duration": 4.359,
+      "text": "terraform.tf State file this file is"
+    },
+    {
+      "start": 1300.62,
+      "duration": 3.84,
+      "text": "very important for terraform to work"
+    },
+    {
+      "start": 1302.299,
+      "duration": 4.681,
+      "text": "this is what records everything like"
+    },
+    {
+      "start": 1304.46,
+      "duration": 4.199,
+      "text": "every change you make or every resource"
+    },
+    {
+      "start": 1306.98,
+      "duration": 3.84,
+      "text": "you create you can see the details here"
+    },
+    {
+      "start": 1308.659,
+      "duration": 4.14,
+      "text": "this is very important for terraform to"
+    },
+    {
+      "start": 1310.82,
+      "duration": 3.78,
+      "text": "work if you delete this file terraform"
+    },
+    {
+      "start": 1312.799,
+      "duration": 4.38,
+      "text": "will not know what is happening in the"
+    },
+    {
+      "start": 1314.6,
+      "duration": 4.86,
+      "text": "cloud or in the account so it will not"
+    },
+    {
+      "start": 1317.179,
+      "duration": 4.141,
+      "text": "be able to manage all the resources you"
+    },
+    {
+      "start": 1319.46,
+      "duration": 5.339,
+      "text": "have defined so you should never edit"
+    },
+    {
+      "start": 1321.32,
+      "duration": 5.4,
+      "text": "change or destroy this file"
+    },
+    {
+      "start": 1324.799,
+      "duration": 3.481,
+      "text": "so if I go to my console and if I"
+    },
+    {
+      "start": 1326.72,
+      "duration": 3.66,
+      "text": "refresh I should see the change applied"
+    },
+    {
+      "start": 1328.28,
+      "duration": 3.84,
+      "text": "here so without me managing anything"
+    },
+    {
+      "start": 1330.38,
+      "duration": 3.86,
+      "text": "from the console everything is done"
+    },
+    {
+      "start": 1332.12,
+      "duration": 4.439,
+      "text": "through terraform this is how you create"
+    },
+    {
+      "start": 1334.24,
+      "duration": 4.24,
+      "text": "stuff in terraform"
+    },
+    {
+      "start": 1336.559,
+      "duration": 5.161,
+      "text": "so we have seen how to create a resource"
+    },
+    {
+      "start": 1338.48,
+      "duration": 6.559,
+      "text": "I'm going to delete this for now and go"
+    },
+    {
+      "start": 1341.72,
+      "duration": 3.319,
+      "text": "ahead with other Concepts"
+    },
+    {
+      "start": 1345.14,
+      "duration": 4.56,
+      "text": "so terraform display iPhone approve will"
+    },
+    {
+      "start": 1348.26,
+      "duration": 3.799,
+      "text": "show me that the instance is going to be"
+    },
+    {
+      "start": 1349.7,
+      "duration": 2.359,
+      "text": "destroyed"
+    },
+    {
+      "start": 1352.46,
+      "duration": 3.74,
+      "text": "all right so let's go to the"
+    },
+    {
+      "start": 1357.2,
+      "duration": 4.14,
+      "text": "this is what the workflow of terraform"
+    },
+    {
+      "start": 1359.12,
+      "duration": 5.48,
+      "text": "is first you write the code which we did"
+    },
+    {
+      "start": 1361.34,
+      "duration": 5.88,
+      "text": "we created provider.tf and instant.tf"
+    },
+    {
+      "start": 1364.6,
+      "duration": 5.14,
+      "text": "then we ran the terraform unit command"
+    },
+    {
+      "start": 1367.22,
+      "duration": 4.5,
+      "text": "which downloaded all the provider files"
+    },
+    {
+      "start": 1369.74,
+      "duration": 3.78,
+      "text": "and the necessary documents"
+    },
+    {
+      "start": 1371.72,
+      "duration": 2.939,
+      "text": "then we ran the data from plan command"
+    },
+    {
+      "start": 1373.52,
+      "duration": 4.56,
+      "text": "to see what change is going to be"
+    },
+    {
+      "start": 1374.659,
+      "duration": 5.581,
+      "text": "applied or created or changed and then"
+    },
+    {
+      "start": 1378.08,
+      "duration": 4.02,
+      "text": "we run the telephone apply command to"
+    },
+    {
+      "start": 1380.24,
+      "duration": 5.22,
+      "text": "create or to change the resource in the"
+    },
+    {
+      "start": 1382.1,
+      "duration": 5.22,
+      "text": "console so write the code init plan and"
+    },
+    {
+      "start": 1385.46,
+      "duration": 4.5,
+      "text": "then apply"
+    },
+    {
+      "start": 1387.32,
+      "duration": 4.8,
+      "text": "this is also one of the questions that I"
+    },
+    {
+      "start": 1389.96,
+      "duration": 3.599,
+      "text": "got when I was sitting for my terraform"
+    },
+    {
+      "start": 1392.12,
+      "duration": 3.299,
+      "text": "associate exam so you should know the"
+    },
+    {
+      "start": 1393.559,
+      "duration": 3.48,
+      "text": "telephone workflow"
+    },
+    {
+      "start": 1395.419,
+      "duration": 4.5,
+      "text": "then we saw all these different commands"
+    },
+    {
+      "start": 1397.039,
+      "duration": 4.321,
+      "text": "in it validate plan apply destroy and we"
+    },
+    {
+      "start": 1399.919,
+      "duration": 3.061,
+      "text": "saw how it works"
+    },
+    {
+      "start": 1401.36,
+      "duration": 4.38,
+      "text": "so yeah why did it command is what I"
+    },
+    {
+      "start": 1402.98,
+      "duration": 4.86,
+      "text": "didn't show you it should so right now"
+    },
+    {
+      "start": 1405.74,
+      "duration": 3.96,
+      "text": "it's deleting but when I did command"
+    },
+    {
+      "start": 1407.84,
+      "duration": 3.42,
+      "text": "will show us let's say right now if I"
+    },
+    {
+      "start": 1409.7,
+      "duration": 5.16,
+      "text": "don't have converted it it will show me"
+    },
+    {
+      "start": 1411.26,
+      "duration": 6.32,
+      "text": "that the configuration is valid"
+    },
+    {
+      "start": 1414.86,
+      "duration": 5.939,
+      "text": "but if I remove let's I remove this"
+    },
+    {
+      "start": 1417.58,
+      "duration": 8.02,
+      "text": "block here it will then show me that the"
+    },
+    {
+      "start": 1420.799,
+      "duration": 6.481,
+      "text": "this block it hasn't got the ending"
+    },
+    {
+      "start": 1425.6,
+      "duration": 3.36,
+      "text": "thing so you can see here it says"
+    },
+    {
+      "start": 1427.28,
+      "duration": 3.779,
+      "text": "invalid multi-line and you can see it"
+    },
+    {
+      "start": 1428.96,
+      "duration": 3.959,
+      "text": "says no closing marker for found for the"
+    },
+    {
+      "start": 1431.059,
+      "duration": 3.061,
+      "text": "string so if I put the closing marker"
+    },
+    {
+      "start": 1432.919,
+      "duration": 4.861,
+      "text": "then it will show me that the"
+    },
+    {
+      "start": 1434.12,
+      "duration": 6.48,
+      "text": "configuration is valid so syntax check"
+    },
+    {
+      "start": 1437.78,
+      "duration": 4.44,
+      "text": "okay then you can also have all these"
+    },
+    {
+      "start": 1440.6,
+      "duration": 4.5,
+      "text": "different commands which you need to"
+    },
+    {
+      "start": 1442.22,
+      "duration": 4.86,
+      "text": "know if you are setting for the exam but"
+    },
+    {
+      "start": 1445.1,
+      "duration": 3.9,
+      "text": "in real life you won't come across like"
+    },
+    {
+      "start": 1447.08,
+      "duration": 3.78,
+      "text": "you won't be using this all the time but"
+    },
+    {
+      "start": 1449.0,
+      "duration": 3.36,
+      "text": "this is something you should know"
+    },
+    {
+      "start": 1450.86,
+      "duration": 5.0,
+      "text": "so here you have console terraform"
+    },
+    {
+      "start": 1452.36,
+      "duration": 5.699,
+      "text": "console this is a command to run"
+    },
+    {
+      "start": 1455.86,
+      "duration": 3.58,
+      "text": "terraform function so if I show you this"
+    },
+    {
+      "start": 1458.059,
+      "duration": 4.201,
+      "text": "there are some console it will open an"
+    },
+    {
+      "start": 1459.44,
+      "duration": 4.92,
+      "text": "interactive shell so and it will it can"
+    },
+    {
+      "start": 1462.26,
+      "duration": 4.02,
+      "text": "do any functions for example if I do a"
+    },
+    {
+      "start": 1464.36,
+      "duration": 4.799,
+      "text": "simple like this addition it will show"
+    },
+    {
+      "start": 1466.28,
+      "duration": 4.68,
+      "text": "me so try terraform expression at an"
+    },
+    {
+      "start": 1469.159,
+      "duration": 4.981,
+      "text": "interactive command prompt"
+    },
+    {
+      "start": 1470.96,
+      "duration": 6.18,
+      "text": "then I'm going to exit this"
+    },
+    {
+      "start": 1474.14,
+      "duration": 5.88,
+      "text": "you have format for example terraform"
+    },
+    {
+      "start": 1477.14,
+      "duration": 5.279,
+      "text": "follows this hashicab format it the"
+    },
+    {
+      "start": 1480.02,
+      "duration": 5.159,
+      "text": "equal to symbol should all be in same"
+    },
+    {
+      "start": 1482.419,
+      "duration": 5.041,
+      "text": "thing like in same block canonical found"
+    },
+    {
+      "start": 1485.179,
+      "duration": 4.261,
+      "text": "yes so that can be done using terraform"
+    },
+    {
+      "start": 1487.46,
+      "duration": 3.54,
+      "text": "fmt or the format command"
+    },
+    {
+      "start": 1489.44,
+      "duration": 3.42,
+      "text": "then you have Force unlock sometimes"
+    },
+    {
+      "start": 1491.0,
+      "duration": 5.22,
+      "text": "when you run the terraform commands the"
+    },
+    {
+      "start": 1492.86,
+      "duration": 5.04,
+      "text": "state is logged and you cannot run your"
+    },
+    {
+      "start": 1496.22,
+      "duration": 3.12,
+      "text": "command so you will use terraform Force"
+    },
+    {
+      "start": 1497.9,
+      "duration": 4.44,
+      "text": "unlock command it will reduce the stack"
+    },
+    {
+      "start": 1499.34,
+      "duration": 4.68,
+      "text": "lock on the current workspace"
+    },
+    {
+      "start": 1502.34,
+      "duration": 4.74,
+      "text": "right and these are all the different"
+    },
+    {
+      "start": 1504.02,
+      "duration": 5.659,
+      "text": "commands so"
+    },
+    {
+      "start": 1507.08,
+      "duration": 2.599,
+      "text": "yes"
+    },
+    {
+      "start": 1509.78,
+      "duration": 4.2,
+      "text": "so sometimes whenever even though you're"
+    },
+    {
+      "start": 1511.64,
+      "duration": 4.56,
+      "text": "not trying to do any bad things it still"
+    },
+    {
+      "start": 1513.98,
+      "duration": 4.98,
+      "text": "gets stuck and if you want to release"
+    },
+    {
+      "start": 1516.2,
+      "duration": 4.94,
+      "text": "the stuck or the lock you can do Force"
+    },
+    {
+      "start": 1518.96,
+      "duration": 2.18,
+      "text": "unlock"
+    },
+    {
+      "start": 1521.419,
+      "duration": 3.661,
+      "text": "so we saw this terraform plan it will"
+    },
+    {
+      "start": 1523.34,
+      "duration": 3.6,
+      "text": "create all the plans and you can see the"
+    },
+    {
+      "start": 1525.08,
+      "duration": 3.479,
+      "text": "details about it then you can see the"
+    },
+    {
+      "start": 1526.94,
+      "duration": 4.46,
+      "text": "symbols which means it isn't going to be"
+    },
+    {
+      "start": 1528.559,
+      "duration": 5.461,
+      "text": "changed or created and applied uh then"
+    },
+    {
+      "start": 1531.4,
+      "duration": 4.42,
+      "text": "it will also show us what is going to be"
+    },
+    {
+      "start": 1534.02,
+      "duration": 3.6,
+      "text": "added change or disturbed at the end so"
+    },
+    {
+      "start": 1535.82,
+      "duration": 4.38,
+      "text": "we saw this earlier then we'll add the"
+    },
+    {
+      "start": 1537.62,
+      "duration": 5.7,
+      "text": "apply command as well"
+    },
+    {
+      "start": 1540.2,
+      "duration": 5.52,
+      "text": "now let's see uh some meta arguments in"
+    },
+    {
+      "start": 1543.32,
+      "duration": 4.2,
+      "text": "terraform"
+    },
+    {
+      "start": 1545.72,
+      "duration": 4.02,
+      "text": "so with this hand we did this Hands-On"
+    },
+    {
+      "start": 1547.52,
+      "duration": 4.68,
+      "text": "lab as well"
+    },
+    {
+      "start": 1549.74,
+      "duration": 3.419,
+      "text": "let's go and learn the meta argument so"
+    },
+    {
+      "start": 1552.2,
+      "duration": 2.88,
+      "text": "we're going to use the terraform"
+    },
+    {
+      "start": 1553.159,
+      "duration": 4.02,
+      "text": "documentation for that there are form"
+    },
+    {
+      "start": 1555.08,
+      "duration": 5.76,
+      "text": "has different meta arguments"
+    },
+    {
+      "start": 1557.179,
+      "duration": 6.921,
+      "text": "like uh just a second I do have a"
+    },
+    {
+      "start": 1560.84,
+      "duration": 3.26,
+      "text": "repository which can help us"
+    },
+    {
+      "start": 1584.179,
+      "duration": 2.181,
+      "text": "foreign"
+    },
+    {
+      "start": 1604.76,
+      "duration": 4.64,
+      "text": "can you see this gitlab repository on my"
+    },
+    {
+      "start": 1607.279,
+      "duration": 2.121,
+      "text": "screen"
+    },
+    {
+      "start": 1612.14,
+      "duration": 4.5,
+      "text": "yes okay"
+    },
+    {
+      "start": 1614.32,
+      "duration": 4.0,
+      "text": "so we are going to learn about the meta"
+    },
+    {
+      "start": 1616.64,
+      "duration": 4.38,
+      "text": "arguments here these are all the nodes"
+    },
+    {
+      "start": 1618.32,
+      "duration": 4.68,
+      "text": "created about terraform Basics and"
+    },
+    {
+      "start": 1621.02,
+      "duration": 3.98,
+      "text": "Foundation blocks we are let's see"
+    },
+    {
+      "start": 1623.0,
+      "duration": 4.44,
+      "text": "variables first before we go with the"
+    },
+    {
+      "start": 1625.0,
+      "duration": 7.62,
+      "text": "concepts variables are"
+    },
+    {
+      "start": 1627.44,
+      "duration": 5.18,
+      "text": "ways yes I can send you this"
+    },
+    {
+      "start": 1634.7,
+      "duration": 5.479,
+      "text": "so variables are ways to put your values"
+    },
+    {
+      "start": 1638.0,
+      "duration": 4.98,
+      "text": "for example here we are defining"
+    },
+    {
+      "start": 1640.179,
+      "duration": 4.721,
+      "text": "t233.micro and we are defining Ami value"
+    },
+    {
+      "start": 1642.98,
+      "duration": 4.26,
+      "text": "directly in the code but using variables"
+    },
+    {
+      "start": 1644.9,
+      "duration": 4.139,
+      "text": "you can skip that and this can be used"
+    },
+    {
+      "start": 1647.24,
+      "duration": 3.6,
+      "text": "to reuse the values again and again in"
+    },
+    {
+      "start": 1649.039,
+      "duration": 4.081,
+      "text": "the code so I'm going to create a file"
+    },
+    {
+      "start": 1650.84,
+      "duration": 3.78,
+      "text": "name it variables.tf or I can also do"
+    },
+    {
+      "start": 1653.12,
+      "duration": 4.679,
+      "text": "that in the same thing"
+    },
+    {
+      "start": 1654.62,
+      "duration": 5.159,
+      "text": "so I'm going to create a variable for"
+    },
+    {
+      "start": 1657.799,
+      "duration": 4.38,
+      "text": "the instance type"
+    },
+    {
+      "start": 1659.779,
+      "duration": 4.441,
+      "text": "so I'm going to copy this"
+    },
+    {
+      "start": 1662.179,
+      "duration": 3.661,
+      "text": "or cut this out create a variable to"
+    },
+    {
+      "start": 1664.22,
+      "duration": 4.02,
+      "text": "create a variable you need to create a"
+    },
+    {
+      "start": 1665.84,
+      "duration": 4.74,
+      "text": "variable plot if you're using vs code"
+    },
+    {
+      "start": 1668.24,
+      "duration": 3.98,
+      "text": "you can install the extension to get"
+    },
+    {
+      "start": 1670.58,
+      "duration": 4.86,
+      "text": "this"
+    },
+    {
+      "start": 1672.22,
+      "duration": 5.14,
+      "text": "autocomplete so when I write variable it"
+    },
+    {
+      "start": 1675.44,
+      "duration": 4.099,
+      "text": "will create a block for me"
+    },
+    {
+      "start": 1677.36,
+      "duration": 6.36,
+      "text": "I can give this a name let's say"
+    },
+    {
+      "start": 1679.539,
+      "duration": 7.301,
+      "text": "size.com or just size not.com sorry so"
+    },
+    {
+      "start": 1683.72,
+      "duration": 5.4,
+      "text": "size and the type is going to be string"
+    },
+    {
+      "start": 1686.84,
+      "duration": 4.5,
+      "text": "default is going to be the value so we"
+    },
+    {
+      "start": 1689.12,
+      "duration": 3.9,
+      "text": "have a value which is T3 dot micro you"
+    },
+    {
+      "start": 1691.34,
+      "duration": 3.48,
+      "text": "can change it anything you want you to"
+    },
+    {
+      "start": 1693.02,
+      "duration": 4.5,
+      "text": "add micro or anything and description"
+    },
+    {
+      "start": 1694.82,
+      "duration": 4.94,
+      "text": "which is optional so this is instant"
+    },
+    {
+      "start": 1697.52,
+      "duration": 2.24,
+      "text": "size"
+    },
+    {
+      "start": 1701.14,
+      "duration": 4.3,
+      "text": "okay so once you define the variable if"
+    },
+    {
+      "start": 1704.0,
+      "duration": 4.62,
+      "text": "you want to use that in the code you"
+    },
+    {
+      "start": 1705.44,
+      "duration": 4.8,
+      "text": "need to use VAR dot name of the variable"
+    },
+    {
+      "start": 1708.62,
+      "duration": 4.439,
+      "text": "with your size"
+    },
+    {
+      "start": 1710.24,
+      "duration": 4.5,
+      "text": "this way if you want to create multiple"
+    },
+    {
+      "start": 1713.059,
+      "duration": 3.72,
+      "text": "instances with the same size rather than"
+    },
+    {
+      "start": 1714.74,
+      "duration": 5.1,
+      "text": "defining the value all the time you can"
+    },
+    {
+      "start": 1716.779,
+      "duration": 4.441,
+      "text": "use variables other advantages if you"
+    },
+    {
+      "start": 1719.84,
+      "duration": 3.54,
+      "text": "want to change the values from"
+    },
+    {
+      "start": 1721.22,
+      "duration": 4.26,
+      "text": "everywhere rather than changing it one"
+    },
+    {
+      "start": 1723.38,
+      "duration": 3.419,
+      "text": "by one you can change it directly in the"
+    },
+    {
+      "start": 1725.48,
+      "duration": 3.54,
+      "text": "variable"
+    },
+    {
+      "start": 1726.799,
+      "duration": 3.901,
+      "text": "so let's try this out so I'm going to"
+    },
+    {
+      "start": 1729.02,
+      "duration": 3.48,
+      "text": "run terraform plan it should show me"
+    },
+    {
+      "start": 1730.7,
+      "duration": 5.24,
+      "text": "that it is going to create"
+    },
+    {
+      "start": 1732.5,
+      "duration": 3.44,
+      "text": "32 micro instance"
+    },
+    {
+      "start": 1737.72,
+      "duration": 6.18,
+      "text": "so terraform plan is showing me that"
+    },
+    {
+      "start": 1741.919,
+      "duration": 3.721,
+      "text": "it's going to create T2 micro if I make"
+    },
+    {
+      "start": 1743.9,
+      "duration": 4.259,
+      "text": "it small the plan will change it to"
+    },
+    {
+      "start": 1745.64,
+      "duration": 7.039,
+      "text": "small which means"
+    },
+    {
+      "start": 1748.159,
+      "duration": 4.52,
+      "text": "our variables are working correctly"
+    },
+    {
+      "start": 1753.02,
+      "duration": 4.139,
+      "text": "so this way you can Define variable for"
+    },
+    {
+      "start": 1754.64,
+      "duration": 5.22,
+      "text": "every different arguments or if it can"
+    },
+    {
+      "start": 1757.159,
+      "duration": 5.161,
+      "text": "be used for long code long codes as well"
+    },
+    {
+      "start": 1759.86,
+      "duration": 4.86,
+      "text": "I'll show you different examples so you"
+    },
+    {
+      "start": 1762.32,
+      "duration": 4.56,
+      "text": "can see T2 small has been appeared here"
+    },
+    {
+      "start": 1764.72,
+      "duration": 4.559,
+      "text": "next thing you need to know is outputs"
+    },
+    {
+      "start": 1766.88,
+      "duration": 3.899,
+      "text": "so I'm going to create an output here to"
+    },
+    {
+      "start": 1769.279,
+      "duration": 4.38,
+      "text": "print out these"
+    },
+    {
+      "start": 1770.779,
+      "duration": 4.681,
+      "text": "public IP address of my instance so"
+    },
+    {
+      "start": 1773.659,
+      "duration": 4.081,
+      "text": "let's say you want to"
+    },
+    {
+      "start": 1775.46,
+      "duration": 3.9,
+      "text": "do some configuration here and you want"
+    },
+    {
+      "start": 1777.74,
+      "duration": 3.299,
+      "text": "to access it into this instance so"
+    },
+    {
+      "start": 1779.36,
+      "duration": 3.84,
+      "text": "rather than going to the command going"
+    },
+    {
+      "start": 1781.039,
+      "duration": 4.14,
+      "text": "to the console to get the IP address you"
+    },
+    {
+      "start": 1783.2,
+      "duration": 3.719,
+      "text": "can directly print it out in your"
+    },
+    {
+      "start": 1785.179,
+      "duration": 3.24,
+      "text": "terminal"
+    },
+    {
+      "start": 1786.919,
+      "duration": 3.721,
+      "text": "this way you don't have to use the"
+    },
+    {
+      "start": 1788.419,
+      "duration": 4.201,
+      "text": "console or else if sometimes you only"
+    },
+    {
+      "start": 1790.64,
+      "duration": 6.06,
+      "text": "have CLI access or not console access"
+    },
+    {
+      "start": 1792.62,
+      "duration": 7.38,
+      "text": "you can use outputs to get the IP"
+    },
+    {
+      "start": 1796.7,
+      "duration": 5.579,
+      "text": "address or private IP anything you want"
+    },
+    {
+      "start": 1800.0,
+      "duration": 4.2,
+      "text": "in outputs so you can get all these"
+    },
+    {
+      "start": 1802.279,
+      "duration": 3.961,
+      "text": "different arguments that are mentioned"
+    },
+    {
+      "start": 1804.2,
+      "duration": 6.24,
+      "text": "here instance type key name password"
+    },
+    {
+      "start": 1806.24,
+      "duration": 6.419,
+      "text": "data public IP private IP private DNS so"
+    },
+    {
+      "start": 1810.44,
+      "duration": 3.66,
+      "text": "let's try to get the public and the"
+    },
+    {
+      "start": 1812.659,
+      "duration": 3.481,
+      "text": "private IP"
+    },
+    {
+      "start": 1814.1,
+      "duration": 4.74,
+      "text": "so for that you're going to use outputs"
+    },
+    {
+      "start": 1816.14,
+      "duration": 4.019,
+      "text": "and you can we can see outputs option"
+    },
+    {
+      "start": 1818.84,
+      "duration": 3.839,
+      "text": "here somewhere"
+    },
+    {
+      "start": 1820.159,
+      "duration": 5.601,
+      "text": "so we have variables"
+    },
+    {
+      "start": 1822.679,
+      "duration": 3.081,
+      "text": "and output values"
+    },
+    {
+      "start": 1826.159,
+      "duration": 5.101,
+      "text": "so you can see here this is how you"
+    },
+    {
+      "start": 1829.22,
+      "duration": 3.78,
+      "text": "define an output you have to give a name"
+    },
+    {
+      "start": 1831.26,
+      "duration": 3.6,
+      "text": "and then the value of what do you want"
+    },
+    {
+      "start": 1833.0,
+      "duration": 4.2,
+      "text": "to Output so I'm going to add an output"
+    },
+    {
+      "start": 1834.86,
+      "duration": 4.02,
+      "text": "block here so output name of the output"
+    },
+    {
+      "start": 1837.2,
+      "duration": 4.459,
+      "text": "is going to be"
+    },
+    {
+      "start": 1838.88,
+      "duration": 2.779,
+      "text": "private"
+    },
+    {
+      "start": 1842.33,
+      "duration": 3.18,
+      "text": "[Music]"
+    },
+    {
+      "start": 1846.44,
+      "duration": 4.56,
+      "text": "IP and the value is going to be so in"
+    },
+    {
+      "start": 1849.38,
+      "duration": 3.299,
+      "text": "place of value you need to select the"
+    },
+    {
+      "start": 1851.0,
+      "duration": 4.2,
+      "text": "resource and the argument that you want"
+    },
+    {
+      "start": 1852.679,
+      "duration": 4.141,
+      "text": "so I'm going to copy this from here it"
+    },
+    {
+      "start": 1855.2,
+      "duration": 4.14,
+      "text": "is instance"
+    },
+    {
+      "start": 1856.82,
+      "duration": 4.62,
+      "text": "so I'm going to paste it here AWS"
+    },
+    {
+      "start": 1859.34,
+      "duration": 3.9,
+      "text": "instance Dot"
+    },
+    {
+      "start": 1861.44,
+      "duration": 4.82,
+      "text": "web"
+    },
+    {
+      "start": 1863.24,
+      "duration": 3.02,
+      "text": "Dot Public"
+    },
+    {
+      "start": 1867.02,
+      "duration": 6.2,
+      "text": "underscore IP"
+    },
+    {
+      "start": 1869.899,
+      "duration": 3.321,
+      "text": "sorry private IP"
+    },
+    {
+      "start": 1873.44,
+      "duration": 3.719,
+      "text": "it can be anything you can print out"
+    },
+    {
+      "start": 1875.72,
+      "duration": 2.819,
+      "text": "anything you want so I'm going to add"
+    },
+    {
+      "start": 1877.159,
+      "duration": 2.76,
+      "text": "that and I'm going to remove all these"
+    },
+    {
+      "start": 1878.539,
+      "duration": 3.0,
+      "text": "different arguments you can use"
+    },
+    {
+      "start": 1879.919,
+      "duration": 4.081,
+      "text": "description you can use sensitive if you"
+    },
+    {
+      "start": 1881.539,
+      "duration": 5.24,
+      "text": "don't want to show it but I'm going to"
+    },
+    {
+      "start": 1884.0,
+      "duration": 2.779,
+      "text": "remove this"
+    },
+    {
+      "start": 1887.6,
+      "duration": 5.04,
+      "text": "so save it and then run terraform plan"
+    },
+    {
+      "start": 1890.539,
+      "duration": 4.02,
+      "text": "at the end after the plan you will see"
+    },
+    {
+      "start": 1892.64,
+      "duration": 3.84,
+      "text": "that the output column will also appear"
+    },
+    {
+      "start": 1894.559,
+      "duration": 4.081,
+      "text": "so you can see changes to output and we"
+    },
+    {
+      "start": 1896.48,
+      "duration": 3.9,
+      "text": "find terraform apply let's try doing"
+    },
+    {
+      "start": 1898.64,
+      "duration": 3.84,
+      "text": "that so turn off apply hyphen Auto"
+    },
+    {
+      "start": 1900.38,
+      "duration": 5.76,
+      "text": "hyphen approve once the instance is"
+    },
+    {
+      "start": 1902.48,
+      "duration": 6.54,
+      "text": "created private IP will be shown here"
+    },
+    {
+      "start": 1906.14,
+      "duration": 3.539,
+      "text": "so this is what private uh sorry outputs"
+    },
+    {
+      "start": 1909.02,
+      "duration": 2.879,
+      "text": "are"
+    },
+    {
+      "start": 1909.679,
+      "duration": 5.72,
+      "text": "you can you also have a"
+    },
+    {
+      "start": 1911.899,
+      "duration": 3.5,
+      "text": "Labs here which you can use"
+    },
+    {
+      "start": 1915.679,
+      "duration": 6.541,
+      "text": "next we have local values so sometimes"
+    },
+    {
+      "start": 1919.34,
+      "duration": 5.28,
+      "text": "you want to create uh you want to create"
+    },
+    {
+      "start": 1922.22,
+      "duration": 3.9,
+      "text": "some local files"
+    },
+    {
+      "start": 1924.62,
+      "duration": 3.48,
+      "text": "so using"
+    },
+    {
+      "start": 1926.12,
+      "duration": 5.059,
+      "text": "this block you can also do that so let"
+    },
+    {
+      "start": 1928.1,
+      "duration": 3.079,
+      "text": "me show you an example here"
+    },
+    {
+      "start": 1933.679,
+      "duration": 6.301,
+      "text": "S3 bucket"
+    },
+    {
+      "start": 1936.679,
+      "duration": 4.801,
+      "text": "so you can see in this way you can give"
+    },
+    {
+      "start": 1939.98,
+      "duration": 3.419,
+      "text": "the name of the bucket by creating some"
+    },
+    {
+      "start": 1941.48,
+      "duration": 4.14,
+      "text": "functions or by defining some values"
+    },
+    {
+      "start": 1943.399,
+      "duration": 4.801,
+      "text": "directly here in this form so when you"
+    },
+    {
+      "start": 1945.62,
+      "duration": 4.799,
+      "text": "define that in this local only work with"
+    },
+    {
+      "start": 1948.2,
+      "duration": 4.32,
+      "text": "the same file within the same file so if"
+    },
+    {
+      "start": 1950.419,
+      "duration": 4.26,
+      "text": "it is easy to dot TF it will only work"
+    },
+    {
+      "start": 1952.52,
+      "duration": 3.659,
+      "text": "in http.tf and this is how you can"
+    },
+    {
+      "start": 1954.679,
+      "duration": 4.521,
+      "text": "create values for different arguments"
+    },
+    {
+      "start": 1956.179,
+      "duration": 3.021,
+      "text": "inside the same file"
+    },
+    {
+      "start": 1960.559,
+      "duration": 5.1,
+      "text": "all right so next we can so you can see"
+    },
+    {
+      "start": 1963.32,
+      "duration": 5.82,
+      "text": "here we have got the private IP this way"
+    },
+    {
+      "start": 1965.659,
+      "duration": 6.061,
+      "text": "you can define public IP or public DNS"
+    },
+    {
+      "start": 1969.14,
+      "duration": 5.1,
+      "text": "anything you want"
+    },
+    {
+      "start": 1971.72,
+      "duration": 4.199,
+      "text": "next learn let's learn about the meta"
+    },
+    {
+      "start": 1974.24,
+      "duration": 3.659,
+      "text": "arguments so in terraform we have"
+    },
+    {
+      "start": 1975.919,
+      "duration": 4.14,
+      "text": "different meta arguments like count meta"
+    },
+    {
+      "start": 1977.899,
+      "duration": 4.14,
+      "text": "argument for each"
+    },
+    {
+      "start": 1980.059,
+      "duration": 5.541,
+      "text": "then you have"
+    },
+    {
+      "start": 1982.039,
+      "duration": 3.561,
+      "text": "various event arguments option"
+    },
+    {
+      "start": 2005.08,
+      "duration": 4.38,
+      "text": "we are going to use the documentation"
+    },
+    {
+      "start": 2007.0,
+      "duration": 5.659,
+      "text": "itself to learn about this so terraform"
+    },
+    {
+      "start": 2009.46,
+      "duration": 3.199,
+      "text": "document arguments"
+    },
+    {
+      "start": 2016.08,
+      "duration": 5.56,
+      "text": "so there are different types uh depends"
+    },
+    {
+      "start": 2019.059,
+      "duration": 3.421,
+      "text": "on count for each then provider and life"
+    },
+    {
+      "start": 2021.64,
+      "duration": 2.7,
+      "text": "cycle"
+    },
+    {
+      "start": 2022.48,
+      "duration": 4.799,
+      "text": "so it depends on meta argument let's say"
+    },
+    {
+      "start": 2024.34,
+      "duration": 5.04,
+      "text": "let's consider an example of an"
+    },
+    {
+      "start": 2027.279,
+      "duration": 4.681,
+      "text": "architecture where you have AWS instance"
+    },
+    {
+      "start": 2029.38,
+      "duration": 4.74,
+      "text": "and you have S3 bucket so you are"
+    },
+    {
+      "start": 2031.96,
+      "duration": 5.099,
+      "text": "creating a web page where people are"
+    },
+    {
+      "start": 2034.12,
+      "duration": 4.799,
+      "text": "going to upload some images and"
+    },
+    {
+      "start": 2037.059,
+      "duration": 3.6,
+      "text": "ec2 instance is going to take the image"
+    },
+    {
+      "start": 2038.919,
+      "duration": 4.321,
+      "text": "from the user and store it on S3 bucket"
+    },
+    {
+      "start": 2040.659,
+      "duration": 4.681,
+      "text": "so S3 bucket should be created before"
+    },
+    {
+      "start": 2043.24,
+      "duration": 4.38,
+      "text": "you create the instance if that's the"
+    },
+    {
+      "start": 2045.34,
+      "duration": 3.72,
+      "text": "case which means your ec2 instance is"
+    },
+    {
+      "start": 2047.62,
+      "duration": 3.36,
+      "text": "dependent on S3"
+    },
+    {
+      "start": 2049.06,
+      "duration": 4.98,
+      "text": "so you can add the depends on argument"
+    },
+    {
+      "start": 2050.98,
+      "duration": 5.52,
+      "text": "in the ec2 instance to like defining"
+    },
+    {
+      "start": 2054.04,
+      "duration": 4.22,
+      "text": "that depends on S3 packet so for example"
+    },
+    {
+      "start": 2056.5,
+      "duration": 4.619,
+      "text": "you can see here"
+    },
+    {
+      "start": 2058.26,
+      "duration": 4.18,
+      "text": "we have it depends on Market argument"
+    },
+    {
+      "start": 2061.119,
+      "duration": 4.081,
+      "text": "you used"
+    },
+    {
+      "start": 2062.44,
+      "duration": 4.739,
+      "text": "so this instance this is an AWS instance"
+    },
+    {
+      "start": 2065.2,
+      "duration": 5.1,
+      "text": "created and it is depends on it depends"
+    },
+    {
+      "start": 2067.179,
+      "duration": 4.561,
+      "text": "on AWS IM rule policy so this IM role"
+    },
+    {
+      "start": 2070.3,
+      "duration": 3.299,
+      "text": "policy will be created first before"
+    },
+    {
+      "start": 2071.74,
+      "duration": 3.96,
+      "text": "after the ins like before the instance"
+    },
+    {
+      "start": 2073.599,
+      "duration": 4.02,
+      "text": "is created"
+    },
+    {
+      "start": 2075.7,
+      "duration": 3.659,
+      "text": "to show you an example"
+    },
+    {
+      "start": 2077.619,
+      "duration": 3.361,
+      "text": "let's do that I'm going to create"
+    },
+    {
+      "start": 2079.359,
+      "duration": 4.861,
+      "text": "another resource"
+    },
+    {
+      "start": 2080.98,
+      "duration": 6.359,
+      "text": "in here let's name it S3 bucket like"
+    },
+    {
+      "start": 2084.22,
+      "duration": 4.919,
+      "text": "we're going to create an S3 packet"
+    },
+    {
+      "start": 2087.339,
+      "duration": 5.0,
+      "text": "so I'm going to use data for"
+    },
+    {
+      "start": 2089.139,
+      "duration": 3.2,
+      "text": "documentation again terraform"
+    },
+    {
+      "start": 2092.98,
+      "duration": 5.67,
+      "text": "S3 bucket"
+    },
+    {
+      "start": 2095.56,
+      "duration": 3.09,
+      "text": "[Music]"
+    },
+    {
+      "start": 2114.4,
+      "duration": 4.98,
+      "text": "so bucket can be created in just two way"
+    },
+    {
+      "start": 2116.26,
+      "duration": 5.819,
+      "text": "two arguments like or a single argument"
+    },
+    {
+      "start": 2119.38,
+      "duration": 4.62,
+      "text": "I'm going to use just bucket and this"
+    },
+    {
+      "start": 2122.079,
+      "duration": 4.441,
+      "text": "bucket name should be unique because S3"
+    },
+    {
+      "start": 2124.0,
+      "duration": 4.02,
+      "text": "has criteria where you need to use the"
+    },
+    {
+      "start": 2126.52,
+      "duration": 4.74,
+      "text": "unique bucket name so I'm going to type"
+    },
+    {
+      "start": 2128.02,
+      "duration": 3.24,
+      "text": "something random"
+    },
+    {
+      "start": 2136.42,
+      "duration": 4.679,
+      "text": "all right and in this I'm going to add"
+    },
+    {
+      "start": 2138.339,
+      "duration": 4.74,
+      "text": "an argument a meta argument here which"
+    },
+    {
+      "start": 2141.099,
+      "duration": 3.781,
+      "text": "is going to be that depends on meta"
+    },
+    {
+      "start": 2143.079,
+      "duration": 3.981,
+      "text": "argument that you can see here so I'm"
+    },
+    {
+      "start": 2144.88,
+      "duration": 5.04,
+      "text": "going to add"
+    },
+    {
+      "start": 2147.06,
+      "duration": 4.98,
+      "text": "depends on Section so it depends"
+    },
+    {
+      "start": 2149.92,
+      "duration": 3.9,
+      "text": "underscore on"
+    },
+    {
+      "start": 2152.04,
+      "duration": 4.36,
+      "text": "equals to"
+    },
+    {
+      "start": 2153.82,
+      "duration": 5.34,
+      "text": "inside this this"
+    },
+    {
+      "start": 2156.4,
+      "duration": 5.219,
+      "text": "square brackets will always mean that"
+    },
+    {
+      "start": 2159.16,
+      "duration": 5.88,
+      "text": "it's a list even when you use security"
+    },
+    {
+      "start": 2161.619,
+      "duration": 5.22,
+      "text": "groups it uh it will be inside the"
+    },
+    {
+      "start": 2165.04,
+      "duration": 3.42,
+      "text": "brackets because an instance can have"
+    },
+    {
+      "start": 2166.839,
+      "duration": 3.481,
+      "text": "multiple Security Group and so it should"
+    },
+    {
+      "start": 2168.46,
+      "duration": 3.84,
+      "text": "be a list of security groups even though"
+    },
+    {
+      "start": 2170.32,
+      "duration": 4.32,
+      "text": "you're using a single map so it depends"
+    },
+    {
+      "start": 2172.3,
+      "duration": 4.38,
+      "text": "on I'm going to push put that this"
+    },
+    {
+      "start": 2174.64,
+      "duration": 4.14,
+      "text": "instance depends on S3 bucket so I'm"
+    },
+    {
+      "start": 2176.68,
+      "duration": 4.56,
+      "text": "going to copy this"
+    },
+    {
+      "start": 2178.78,
+      "duration": 4.079,
+      "text": "and I need to destroy to show you this"
+    },
+    {
+      "start": 2181.24,
+      "duration": 3.42,
+      "text": "so I'm going to destroy the instance"
+    },
+    {
+      "start": 2182.859,
+      "duration": 4.98,
+      "text": "that is created already"
+    },
+    {
+      "start": 2184.66,
+      "duration": 6.02,
+      "text": "copy the S3 bucket ID and then"
+    },
+    {
+      "start": 2187.839,
+      "duration": 2.841,
+      "text": "put it here"
+    },
+    {
+      "start": 2195.28,
+      "duration": 4.079,
+      "text": "so once the instance is deleted or"
+    },
+    {
+      "start": 2197.8,
+      "duration": 3.9,
+      "text": "destroyed we are going to enter from"
+    },
+    {
+      "start": 2199.359,
+      "duration": 3.901,
+      "text": "apply and the S3 bucket will be created"
+    },
+    {
+      "start": 2201.7,
+      "duration": 4.68,
+      "text": "first and then the instance will be"
+    },
+    {
+      "start": 2203.26,
+      "duration": 5.579,
+      "text": "created and it does not matter what the"
+    },
+    {
+      "start": 2206.38,
+      "duration": 4.14,
+      "text": "order is even if the bucket is down like"
+    },
+    {
+      "start": 2208.839,
+      "duration": 3.661,
+      "text": "below this instance it will still create"
+    },
+    {
+      "start": 2210.52,
+      "duration": 4.44,
+      "text": "the bucket first and then the"
+    },
+    {
+      "start": 2212.5,
+      "duration": 5.64,
+      "text": "uh"
+    },
+    {
+      "start": 2214.96,
+      "duration": 5.36,
+      "text": "then the instance"
+    },
+    {
+      "start": 2218.14,
+      "duration": 2.18,
+      "text": "foreign"
+    },
+    {
+      "start": 2238.18,
+      "duration": 2.78,
+      "text": "if you want to"
+    },
+    {
+      "start": 2259.72,
+      "duration": 3.0,
+      "text": "plan"
+    },
+    {
+      "start": 2263.079,
+      "duration": 3.301,
+      "text": "it's going to show me that and bucket is"
+    },
+    {
+      "start": 2265.0,
+      "duration": 4.32,
+      "text": "also going to be created so two things"
+    },
+    {
+      "start": 2266.38,
+      "duration": 8.18,
+      "text": "are going to be added and which is"
+    },
+    {
+      "start": 2269.32,
+      "duration": 5.24,
+      "text": "bucket and so let's enter our planer"
+    },
+    {
+      "start": 2277.3,
+      "duration": 4.44,
+      "text": "so you can see a bucket is created first"
+    },
+    {
+      "start": 2279.04,
+      "duration": 5.819,
+      "text": "and then the instance would be created"
+    },
+    {
+      "start": 2281.74,
+      "duration": 5.64,
+      "text": "if I put this depends on part in in this"
+    },
+    {
+      "start": 2284.859,
+      "duration": 4.921,
+      "text": "and saying that they eat a S3 bucket is"
+    },
+    {
+      "start": 2287.38,
+      "duration": 4.32,
+      "text": "dependent on this instance it will then"
+    },
+    {
+      "start": 2289.78,
+      "duration": 4.079,
+      "text": "create the instance first and then the"
+    },
+    {
+      "start": 2291.7,
+      "duration": 3.78,
+      "text": "bucket so this is what depends on my"
+    },
+    {
+      "start": 2293.859,
+      "duration": 4.321,
+      "text": "document is"
+    },
+    {
+      "start": 2295.48,
+      "duration": 4.56,
+      "text": "next you have count met argument so"
+    },
+    {
+      "start": 2298.18,
+      "duration": 4.2,
+      "text": "count mat argument can be used when you"
+    },
+    {
+      "start": 2300.04,
+      "duration": 4.68,
+      "text": "want to create a resource multiple times"
+    },
+    {
+      "start": 2302.38,
+      "duration": 4.38,
+      "text": "so showing that as an example let's say"
+    },
+    {
+      "start": 2304.72,
+      "duration": 4.2,
+      "text": "you want this instance right now it is"
+    },
+    {
+      "start": 2306.76,
+      "duration": 4.38,
+      "text": "only creating a single single instance"
+    },
+    {
+      "start": 2308.92,
+      "duration": 5.22,
+      "text": "but if you want to have five instances"
+    },
+    {
+      "start": 2311.14,
+      "duration": 5.4,
+      "text": "of same configuration same configuration"
+    },
+    {
+      "start": 2314.14,
+      "duration": 5.1,
+      "text": "which means same ID same size which is"
+    },
+    {
+      "start": 2316.54,
+      "duration": 5.76,
+      "text": "T2 dot small here"
+    },
+    {
+      "start": 2319.24,
+      "duration": 6.119,
+      "text": "then you can use count mid argument so"
+    },
+    {
+      "start": 2322.3,
+      "duration": 5.7,
+      "text": "you can see the example here we have a"
+    },
+    {
+      "start": 2325.359,
+      "duration": 4.98,
+      "text": "resource block for AWS instance the"
+    },
+    {
+      "start": 2328.0,
+      "duration": 5.22,
+      "text": "count is set to 4"
+    },
+    {
+      "start": 2330.339,
+      "duration": 4.561,
+      "text": "Emi ID is this and the instance type is"
+    },
+    {
+      "start": 2333.22,
+      "duration": 3.84,
+      "text": "T2 dot micro"
+    },
+    {
+      "start": 2334.9,
+      "duration": 3.6,
+      "text": "so once you run this application once"
+    },
+    {
+      "start": 2337.06,
+      "duration": 2.64,
+      "text": "you run this terraform code it will"
+    },
+    {
+      "start": 2338.5,
+      "duration": 4.68,
+      "text": "create four"
+    },
+    {
+      "start": 2339.7,
+      "duration": 5.94,
+      "text": "similar instances with same values so"
+    },
+    {
+      "start": 2343.18,
+      "duration": 4.38,
+      "text": "let's wait for this to come up and then"
+    },
+    {
+      "start": 2345.64,
+      "duration": 3.14,
+      "text": "we can add an argument which is going to"
+    },
+    {
+      "start": 2347.56,
+      "duration": 2.94,
+      "text": "be count"
+    },
+    {
+      "start": 2348.78,
+      "duration": 3.52,
+      "text": "equals to"
+    },
+    {
+      "start": 2350.5,
+      "duration": 3.359,
+      "text": "3."
+    },
+    {
+      "start": 2352.3,
+      "duration": 4.26,
+      "text": "so right now we have defined everything"
+    },
+    {
+      "start": 2353.859,
+      "duration": 4.561,
+      "text": "same so even the tags what we're saying"
+    },
+    {
+      "start": 2356.56,
+      "duration": 3.539,
+      "text": "which is Hello World 101 for all the"
+    },
+    {
+      "start": 2358.42,
+      "duration": 4.14,
+      "text": "different three instances"
+    },
+    {
+      "start": 2360.099,
+      "duration": 4.76,
+      "text": "so let's save this and if I go to the"
+    },
+    {
+      "start": 2362.56,
+      "duration": 2.299,
+      "text": "console"
+    },
+    {
+      "start": 2365.5,
+      "duration": 5.099,
+      "text": "in here I will have a single instance T2"
+    },
+    {
+      "start": 2367.66,
+      "duration": 4.56,
+      "text": "dot small with Hello World 101 so this"
+    },
+    {
+      "start": 2370.599,
+      "duration": 3.541,
+      "text": "is the one with this one is previous one"
+    },
+    {
+      "start": 2372.22,
+      "duration": 4.68,
+      "text": "which is terminated but you can see"
+    },
+    {
+      "start": 2374.14,
+      "duration": 5.64,
+      "text": "hello world one which is running T2"
+    },
+    {
+      "start": 2376.9,
+      "duration": 4.5,
+      "text": "small and if I run 10 for apply now once"
+    },
+    {
+      "start": 2379.78,
+      "duration": 3.72,
+      "text": "I have mentioned the count equals to 3"
+    },
+    {
+      "start": 2381.4,
+      "duration": 3.3,
+      "text": "it will show me that two resources are"
+    },
+    {
+      "start": 2383.5,
+      "duration": 3.18,
+      "text": "going to be created"
+    },
+    {
+      "start": 2384.7,
+      "duration": 4.2,
+      "text": "so two more resources will be created"
+    },
+    {
+      "start": 2386.68,
+      "duration": 5.7,
+      "text": "because one is already there and there"
+    },
+    {
+      "start": 2388.9,
+      "duration": 4.92,
+      "text": "are from State uh right okay this is"
+    },
+    {
+      "start": 2392.38,
+      "duration": 3.6,
+      "text": "also showing us a problem because we"
+    },
+    {
+      "start": 2393.82,
+      "duration": 4.14,
+      "text": "have defined an output here"
+    },
+    {
+      "start": 2395.98,
+      "duration": 3.84,
+      "text": "an output is defined when it was just a"
+    },
+    {
+      "start": 2397.96,
+      "duration": 3.3,
+      "text": "single instance so now that you have"
+    },
+    {
+      "start": 2399.82,
+      "duration": 3.48,
+      "text": "three different instances you need to"
+    },
+    {
+      "start": 2401.26,
+      "duration": 3.78,
+      "text": "Define for which instance you what do"
+    },
+    {
+      "start": 2403.3,
+      "duration": 4.26,
+      "text": "you want the private IP"
+    },
+    {
+      "start": 2405.04,
+      "duration": 4.68,
+      "text": "so here it is asking to define the count"
+    },
+    {
+      "start": 2407.56,
+      "duration": 4.08,
+      "text": "dot index"
+    },
+    {
+      "start": 2409.72,
+      "duration": 4.2,
+      "text": "so what do you mean by count dot Index"
+    },
+    {
+      "start": 2411.64,
+      "duration": 4.62,
+      "text": "right now we have defined count as three"
+    },
+    {
+      "start": 2413.92,
+      "duration": 4.98,
+      "text": "so every instant instance will have an"
+    },
+    {
+      "start": 2416.26,
+      "duration": 4.92,
+      "text": "index value and index starts from zero"
+    },
+    {
+      "start": 2418.9,
+      "duration": 4.26,
+      "text": "so the first index first instance will"
+    },
+    {
+      "start": 2421.18,
+      "duration": 4.98,
+      "text": "be zero then the second instance will be"
+    },
+    {
+      "start": 2423.16,
+      "duration": 4.5,
+      "text": "one and this third instance will be two"
+    },
+    {
+      "start": 2426.16,
+      "duration": 3.78,
+      "text": "index"
+    },
+    {
+      "start": 2427.66,
+      "duration": 4.56,
+      "text": "so if I want to get the private IP for"
+    },
+    {
+      "start": 2429.94,
+      "duration": 5.82,
+      "text": "let's say the second instance so I'm"
+    },
+    {
+      "start": 2432.22,
+      "duration": 6.96,
+      "text": "going to define the count here as"
+    },
+    {
+      "start": 2435.76,
+      "duration": 6.72,
+      "text": "1 in square brackets so AWS instance dot"
+    },
+    {
+      "start": 2439.18,
+      "duration": 5.399,
+      "text": "web 1 dot private IP so if I save this"
+    },
+    {
+      "start": 2442.48,
+      "duration": 4.92,
+      "text": "and run terraform plan again"
+    },
+    {
+      "start": 2444.579,
+      "duration": 4.5,
+      "text": "it will not show me the error"
+    },
+    {
+      "start": 2447.4,
+      "duration": 3.9,
+      "text": "every time you get an error just read"
+    },
+    {
+      "start": 2449.079,
+      "duration": 4.321,
+      "text": "the message carefully and you will get"
+    },
+    {
+      "start": 2451.3,
+      "duration": 4.44,
+      "text": "to understand what the answer is so it's"
+    },
+    {
+      "start": 2453.4,
+      "duration": 4.62,
+      "text": "just asking you to add the uh"
+    },
+    {
+      "start": 2455.74,
+      "duration": 4.32,
+      "text": "in count dot index it says two things"
+    },
+    {
+      "start": 2458.02,
+      "duration": 4.559,
+      "text": "are going to be added and then it will"
+    },
+    {
+      "start": 2460.06,
+      "duration": 4.32,
+      "text": "change the private IP as well"
+    },
+    {
+      "start": 2462.579,
+      "duration": 3.421,
+      "text": "you can see it changes option changes"
+    },
+    {
+      "start": 2464.38,
+      "duration": 3.54,
+      "text": "mentioned here so I'm going to enter if"
+    },
+    {
+      "start": 2466.0,
+      "duration": 4.14,
+      "text": "I apply on it I should see three"
+    },
+    {
+      "start": 2467.92,
+      "duration": 5.48,
+      "text": "instances created in my"
+    },
+    {
+      "start": 2470.14,
+      "duration": 3.26,
+      "text": "uh in my"
+    },
+    {
+      "start": 2473.44,
+      "duration": 4.56,
+      "text": "account and here they will all have same"
+    },
+    {
+      "start": 2476.02,
+      "duration": 3.599,
+      "text": "name but you can use count.index to"
+    },
+    {
+      "start": 2478.0,
+      "duration": 4.619,
+      "text": "change the name as well let's wait for"
+    },
+    {
+      "start": 2479.619,
+      "duration": 4.5,
+      "text": "it to complete so right now it's in"
+    },
+    {
+      "start": 2482.619,
+      "duration": 3.901,
+      "text": "creating State and after some time it"
+    },
+    {
+      "start": 2484.119,
+      "duration": 4.5,
+      "text": "will come come up in running state so"
+    },
+    {
+      "start": 2486.52,
+      "duration": 4.559,
+      "text": "count will create"
+    },
+    {
+      "start": 2488.619,
+      "duration": 3.301,
+      "text": "Resources with same configurations but"
+    },
+    {
+      "start": 2491.079,
+      "duration": 3.661,
+      "text": "if you want to have different"
+    },
+    {
+      "start": 2491.92,
+      "duration": 5.28,
+      "text": "configurations you can use another met"
+    },
+    {
+      "start": 2494.74,
+      "duration": 4.14,
+      "text": "argument in terraform which is for each"
+    },
+    {
+      "start": 2497.2,
+      "duration": 3.78,
+      "text": "meta argument"
+    },
+    {
+      "start": 2498.88,
+      "duration": 4.32,
+      "text": "so for each met argument we'll create"
+    },
+    {
+      "start": 2500.98,
+      "duration": 3.599,
+      "text": "the different things when you define it"
+    },
+    {
+      "start": 2503.2,
+      "duration": 4.02,
+      "text": "so"
+    },
+    {
+      "start": 2504.579,
+      "duration": 4.381,
+      "text": "for a group the region should be Estus"
+    },
+    {
+      "start": 2507.22,
+      "duration": 3.84,
+      "text": "for another group it should be West us"
+    },
+    {
+      "start": 2508.96,
+      "duration": 4.26,
+      "text": "so you can Define the for each met"
+    },
+    {
+      "start": 2511.06,
+      "duration": 4.38,
+      "text": "argument and it you can Define key and"
+    },
+    {
+      "start": 2513.22,
+      "duration": 4.32,
+      "text": "value so like whenever it is a group the"
+    },
+    {
+      "start": 2515.44,
+      "duration": 4.139,
+      "text": "region should be EST East us and"
+    },
+    {
+      "start": 2517.54,
+      "duration": 5.22,
+      "text": "whenever it is another group it should"
+    },
+    {
+      "start": 2519.579,
+      "duration": 4.921,
+      "text": "be West us so for each key each value so"
+    },
+    {
+      "start": 2522.76,
+      "duration": 3.42,
+      "text": "name is a group and then the value is"
+    },
+    {
+      "start": 2524.5,
+      "duration": 4.14,
+      "text": "going to be yes so this will create two"
+    },
+    {
+      "start": 2526.18,
+      "duration": 6.06,
+      "text": "Resources with"
+    },
+    {
+      "start": 2528.64,
+      "duration": 5.16,
+      "text": "uh different different set of arguments"
+    },
+    {
+      "start": 2532.24,
+      "duration": 3.24,
+      "text": "you're going to see that as well so"
+    },
+    {
+      "start": 2533.8,
+      "duration": 4.62,
+      "text": "let's wait for this to come up right now"
+    },
+    {
+      "start": 2535.48,
+      "duration": 4.8,
+      "text": "it has created two resources for us so"
+    },
+    {
+      "start": 2538.42,
+      "duration": 4.26,
+      "text": "three instances created using count mat"
+    },
+    {
+      "start": 2540.28,
+      "duration": 4.62,
+      "text": "argument if I refresh"
+    },
+    {
+      "start": 2542.68,
+      "duration": 5.34,
+      "text": "I should see that so all of these are"
+    },
+    {
+      "start": 2544.9,
+      "duration": 6.84,
+      "text": "same name hello world 101 1011"
+    },
+    {
+      "start": 2548.02,
+      "duration": 6.38,
+      "text": "but you can change that you can add"
+    },
+    {
+      "start": 2551.74,
+      "duration": 2.66,
+      "text": "uh"
+    },
+    {
+      "start": 2554.68,
+      "duration": 5.0,
+      "text": "you can add in the count dot index"
+    },
+    {
+      "start": 2557.619,
+      "duration": 5.161,
+      "text": "so count"
+    },
+    {
+      "start": 2559.68,
+      "duration": 5.439,
+      "text": "dot index"
+    },
+    {
+      "start": 2562.78,
+      "duration": 5.22,
+      "text": "when I apply this it will have hello"
+    },
+    {
+      "start": 2565.119,
+      "duration": 5.46,
+      "text": "world 1 hello world 2 hello world 3."
+    },
+    {
+      "start": 2568.0,
+      "duration": 5.46,
+      "text": "it will have available one so you can"
+    },
+    {
+      "start": 2570.579,
+      "duration": 5.28,
+      "text": "add plus one here to get because count"
+    },
+    {
+      "start": 2573.46,
+      "duration": 4.2,
+      "text": "will start with zero so if I just put"
+    },
+    {
+      "start": 2575.859,
+      "duration": 3.901,
+      "text": "this it will start hello world zero"
+    },
+    {
+      "start": 2577.66,
+      "duration": 5.04,
+      "text": "hello world 1 and level two"
+    },
+    {
+      "start": 2579.76,
+      "duration": 6.92,
+      "text": "if I add plus 1 it will start with 1. so"
+    },
+    {
+      "start": 2582.7,
+      "duration": 3.98,
+      "text": "I'm going to run terraform plan first"
+    },
+    {
+      "start": 2593.98,
+      "duration": 4.139,
+      "text": "so you can see the index is 0 1 and 2"
+    },
+    {
+      "start": 2596.079,
+      "duration": 5.24,
+      "text": "but if I add plus 1 it will then change"
+    },
+    {
+      "start": 2598.119,
+      "duration": 7.081,
+      "text": "the name so you can see it's three"
+    },
+    {
+      "start": 2601.319,
+      "duration": 5.861,
+      "text": "two and one so this way you can also use"
+    },
+    {
+      "start": 2605.2,
+      "duration": 3.84,
+      "text": "count dot index inside the arguments to"
+    },
+    {
+      "start": 2607.18,
+      "duration": 4.08,
+      "text": "make changes inside your code"
+    },
+    {
+      "start": 2609.04,
+      "duration": 3.539,
+      "text": "so this was count index count met"
+    },
+    {
+      "start": 2611.26,
+      "duration": 3.78,
+      "text": "argument"
+    },
+    {
+      "start": 2612.579,
+      "duration": 3.841,
+      "text": "if I want to have for each like if I"
+    },
+    {
+      "start": 2615.04,
+      "duration": 4.079,
+      "text": "want to have different values I can use"
+    },
+    {
+      "start": 2616.42,
+      "duration": 4.199,
+      "text": "for each meta argument as well you have"
+    },
+    {
+      "start": 2619.119,
+      "duration": 3.48,
+      "text": "different Provisions in terraform there"
+    },
+    {
+      "start": 2620.619,
+      "duration": 3.541,
+      "text": "are three types of row business the"
+    },
+    {
+      "start": 2622.599,
+      "duration": 3.901,
+      "text": "remote exact provisioner local"
+    },
+    {
+      "start": 2624.16,
+      "duration": 4.74,
+      "text": "executioner provisioner and then you"
+    },
+    {
+      "start": 2626.5,
+      "duration": 4.319,
+      "text": "have file provisioner Provisions are"
+    },
+    {
+      "start": 2628.9,
+      "duration": 4.88,
+      "text": "used if you want to do something some"
+    },
+    {
+      "start": 2630.819,
+      "duration": 5.641,
+      "text": "tasks or some actions and these are"
+    },
+    {
+      "start": 2633.78,
+      "duration": 4.6,
+      "text": "recommended to use as a last resort"
+    },
+    {
+      "start": 2636.46,
+      "duration": 4.44,
+      "text": "so provinces can be used to model"
+    },
+    {
+      "start": 2638.38,
+      "duration": 4.14,
+      "text": "specific action on local machine on"
+    },
+    {
+      "start": 2640.9,
+      "duration": 3.66,
+      "text": "remote machine in order to prepare"
+    },
+    {
+      "start": 2642.52,
+      "duration": 4.319,
+      "text": "servers"
+    },
+    {
+      "start": 2644.56,
+      "duration": 3.9,
+      "text": "so you can use this for installing"
+    },
+    {
+      "start": 2646.839,
+      "duration": 3.541,
+      "text": "anything on your remote machine let's"
+    },
+    {
+      "start": 2648.46,
+      "duration": 4.02,
+      "text": "say ec2 instance you can also do that to"
+    },
+    {
+      "start": 2650.38,
+      "duration": 4.52,
+      "text": "install something on your local machine"
+    },
+    {
+      "start": 2652.48,
+      "duration": 4.56,
+      "text": "like config tools yes"
+    },
+    {
+      "start": 2654.9,
+      "duration": 3.88,
+      "text": "or you can also use it to run a"
+    },
+    {
+      "start": 2657.04,
+      "duration": 3.66,
+      "text": "configuration management tool so to show"
+    },
+    {
+      "start": 2658.78,
+      "duration": 3.9,
+      "text": "you an example if I go here in my code"
+    },
+    {
+      "start": 2660.7,
+      "duration": 4.139,
+      "text": "which I was showing you earlier we have"
+    },
+    {
+      "start": 2662.68,
+      "duration": 4.56,
+      "text": "used ansible so you can see this is an"
+    },
+    {
+      "start": 2664.839,
+      "duration": 4.441,
+      "text": "example where we are using some modules"
+    },
+    {
+      "start": 2667.24,
+      "duration": 4.26,
+      "text": "uh we have different modules present"
+    },
+    {
+      "start": 2669.28,
+      "duration": 4.86,
+      "text": "here so this is a module block where we"
+    },
+    {
+      "start": 2671.5,
+      "duration": 3.599,
+      "text": "have modules for Cassandra eks Helm RDS"
+    },
+    {
+      "start": 2674.14,
+      "duration": 3.78,
+      "text": "VPC"
+    },
+    {
+      "start": 2675.099,
+      "duration": 4.081,
+      "text": "and I created this uh inside each module"
+    },
+    {
+      "start": 2677.92,
+      "duration": 3.3,
+      "text": "I have defined"
+    },
+    {
+      "start": 2679.18,
+      "duration": 5.04,
+      "text": "instances variables and output for that"
+    },
+    {
+      "start": 2681.22,
+      "duration": 5.099,
+      "text": "model itself for example in VPC model I"
+    },
+    {
+      "start": 2684.22,
+      "duration": 4.02,
+      "text": "have everything related to VPC creating"
+    },
+    {
+      "start": 2686.319,
+      "duration": 4.081,
+      "text": "a VPC subnet internet gateway route"
+    },
+    {
+      "start": 2688.24,
+      "duration": 4.5,
+      "text": "table all of this then I Define my"
+    },
+    {
+      "start": 2690.4,
+      "duration": 3.48,
+      "text": "outputs and variables inside this in RDS"
+    },
+    {
+      "start": 2692.74,
+      "duration": 4.32,
+      "text": "I have"
+    },
+    {
+      "start": 2693.88,
+      "duration": 5.64,
+      "text": "configuration for my database so we are"
+    },
+    {
+      "start": 2697.06,
+      "duration": 4.559,
+      "text": "using a provisioners here inside"
+    },
+    {
+      "start": 2699.52,
+      "duration": 4.559,
+      "text": "Cassandra where we are creating some ec2"
+    },
+    {
+      "start": 2701.619,
+      "duration": 4.801,
+      "text": "instances so if I go to main.tf I have"
+    },
+    {
+      "start": 2704.079,
+      "duration": 4.681,
+      "text": "an instance created"
+    },
+    {
+      "start": 2706.42,
+      "duration": 3.919,
+      "text": "so this instance has provisioner"
+    },
+    {
+      "start": 2708.76,
+      "duration": 3.9,
+      "text": "mentioned here which is remote"
+    },
+    {
+      "start": 2710.339,
+      "duration": 4.121,
+      "text": "executioner provisional remote.xact"
+    },
+    {
+      "start": 2712.66,
+      "duration": 3.48,
+      "text": "provisioner so you can Define inside"
+    },
+    {
+      "start": 2714.46,
+      "duration": 4.619,
+      "text": "this remote provisioner I'm using inline"
+    },
+    {
+      "start": 2716.14,
+      "duration": 4.979,
+      "text": "method to run all these commands so I'm"
+    },
+    {
+      "start": 2719.079,
+      "duration": 5.581,
+      "text": "running a command which is to Echo this"
+    },
+    {
+      "start": 2721.119,
+      "duration": 5.101,
+      "text": "part in this file then all this put all"
+    },
+    {
+      "start": 2724.66,
+      "duration": 3.3,
+      "text": "of these in this message because I want"
+    },
+    {
+      "start": 2726.22,
+      "duration": 4.26,
+      "text": "to run ansible tool"
+    },
+    {
+      "start": 2727.96,
+      "duration": 4.68,
+      "text": "so if I go below here"
+    },
+    {
+      "start": 2730.48,
+      "duration": 4.619,
+      "text": "you can see whenever you use provisiones"
+    },
+    {
+      "start": 2732.64,
+      "duration": 3.78,
+      "text": "you have to create inventory yeah this"
+    },
+    {
+      "start": 2735.099,
+      "duration": 4.441,
+      "text": "is required whenever you want to run"
+    },
+    {
+      "start": 2736.42,
+      "duration": 5.82,
+      "text": "with ansible you need to have a host of"
+    },
+    {
+      "start": 2739.54,
+      "duration": 4.68,
+      "text": "host inventory where you define all the"
+    },
+    {
+      "start": 2742.24,
+      "duration": 4.76,
+      "text": "IP addresses on which you want to run"
+    },
+    {
+      "start": 2744.22,
+      "duration": 2.78,
+      "text": "the ansible Playbook"
+    },
+    {
+      "start": 2747.099,
+      "duration": 4.26,
+      "text": "then"
+    },
+    {
+      "start": 2748.839,
+      "duration": 4.74,
+      "text": "whenever you define uh provisioners you"
+    },
+    {
+      "start": 2751.359,
+      "duration": 4.141,
+      "text": "need to define the connection block"
+    },
+    {
+      "start": 2753.579,
+      "duration": 3.54,
+      "text": "so yeah you can use a shell script like"
+    },
+    {
+      "start": 2755.5,
+      "duration": 3.0,
+      "text": "this or you can also use shell script if"
+    },
+    {
+      "start": 2757.119,
+      "duration": 3.421,
+      "text": "you're using ec2 instance you can use"
+    },
+    {
+      "start": 2758.5,
+      "duration": 4.02,
+      "text": "something known as user data"
+    },
+    {
+      "start": 2760.54,
+      "duration": 4.02,
+      "text": "user data is used to bootstrap the"
+    },
+    {
+      "start": 2762.52,
+      "duration": 4.44,
+      "text": "script like bootstrap your instance and"
+    },
+    {
+      "start": 2764.56,
+      "duration": 5.58,
+      "text": "you can Define the script so I have a"
+    },
+    {
+      "start": 2766.96,
+      "duration": 5.28,
+      "text": "script named as ansible.master sh so if"
+    },
+    {
+      "start": 2770.14,
+      "duration": 5.219,
+      "text": "you see here this is the file"
+    },
+    {
+      "start": 2772.24,
+      "duration": 5.4,
+      "text": "and I have a shell script created to"
+    },
+    {
+      "start": 2775.359,
+      "duration": 5.101,
+      "text": "create this user add this user install"
+    },
+    {
+      "start": 2777.64,
+      "duration": 4.56,
+      "text": "SSH pass run this and install ansible on"
+    },
+    {
+      "start": 2780.46,
+      "duration": 3.42,
+      "text": "my machine on my remote machine because"
+    },
+    {
+      "start": 2782.2,
+      "duration": 3.54,
+      "text": "once I create this terraform it will not"
+    },
+    {
+      "start": 2783.88,
+      "duration": 3.959,
+      "text": "have ansible installed so I need to"
+    },
+    {
+      "start": 2785.74,
+      "duration": 4.2,
+      "text": "First install that and I can use user"
+    },
+    {
+      "start": 2787.839,
+      "duration": 3.901,
+      "text": "data for it once the ansible is"
+    },
+    {
+      "start": 2789.94,
+      "duration": 4.399,
+      "text": "installed to"
+    },
+    {
+      "start": 2791.74,
+      "duration": 4.98,
+      "text": "the two things I can then uh create"
+    },
+    {
+      "start": 2794.339,
+      "duration": 4.48,
+      "text": "provisioner which is a remote access"
+    },
+    {
+      "start": 2796.72,
+      "duration": 4.02,
+      "text": "provisional and run all these commands"
+    },
+    {
+      "start": 2798.819,
+      "duration": 3.601,
+      "text": "but provision also record requires"
+    },
+    {
+      "start": 2800.74,
+      "duration": 3.48,
+      "text": "something known as connection block"
+    },
+    {
+      "start": 2802.42,
+      "duration": 3.54,
+      "text": "so connection block will be how will you"
+    },
+    {
+      "start": 2804.22,
+      "duration": 5.82,
+      "text": "connect to this instance so this is"
+    },
+    {
+      "start": 2805.96,
+      "duration": 5.639,
+      "text": "going to be type SSH you have SSH ssh"
+    },
+    {
+      "start": 2810.04,
+      "duration": 3.12,
+      "text": "and win RM"
+    },
+    {
+      "start": 2811.599,
+      "duration": 4.141,
+      "text": "so if you want to connect with Windows"
+    },
+    {
+      "start": 2813.16,
+      "duration": 4.32,
+      "text": "you want to use Windows RM or win RM but"
+    },
+    {
+      "start": 2815.74,
+      "duration": 3.839,
+      "text": "this is a Linux Ubuntu instance I'm"
+    },
+    {
+      "start": 2817.48,
+      "duration": 4.68,
+      "text": "going to use SSH user is Ubuntu and this"
+    },
+    {
+      "start": 2819.579,
+      "duration": 4.861,
+      "text": "is a private file private key file for"
+    },
+    {
+      "start": 2822.16,
+      "duration": 4.74,
+      "text": "SSH access then the host is going to be"
+    },
+    {
+      "start": 2824.44,
+      "duration": 5.399,
+      "text": "self Dot Public which is means public IP"
+    },
+    {
+      "start": 2826.9,
+      "duration": 4.74,
+      "text": "of this instance and this way it will"
+    },
+    {
+      "start": 2829.839,
+      "duration": 3.601,
+      "text": "done done all the commands because the"
+    },
+    {
+      "start": 2831.64,
+      "duration": 4.02,
+      "text": "connection will not happen between them"
+    },
+    {
+      "start": 2833.44,
+      "duration": 3.96,
+      "text": "if you don't have connection block"
+    },
+    {
+      "start": 2835.66,
+      "duration": 4.62,
+      "text": "next I also have an example of"
+    },
+    {
+      "start": 2837.4,
+      "duration": 4.199,
+      "text": "provisioner which is file provisioner so"
+    },
+    {
+      "start": 2840.28,
+      "duration": 2.7,
+      "text": "if you want to let's see all the"
+    },
+    {
+      "start": 2841.599,
+      "duration": 3.361,
+      "text": "provisioners here"
+    },
+    {
+      "start": 2842.98,
+      "duration": 4.98,
+      "text": "so five provisional local exec and"
+    },
+    {
+      "start": 2844.96,
+      "duration": 4.44,
+      "text": "remote exact provisioner so whenever you"
+    },
+    {
+      "start": 2847.96,
+      "duration": 3.3,
+      "text": "use a provisioner you need to define a"
+    },
+    {
+      "start": 2849.4,
+      "duration": 3.84,
+      "text": "connection block so most Provisions"
+    },
+    {
+      "start": 2851.26,
+      "duration": 4.26,
+      "text": "require access to remote resource via"
+    },
+    {
+      "start": 2853.24,
+      "duration": 4.14,
+      "text": "SSH or when RM and you expect a"
+    },
+    {
+      "start": 2855.52,
+      "duration": 4.38,
+      "text": "connection block with all these details"
+    },
+    {
+      "start": 2857.38,
+      "duration": 4.38,
+      "text": "on what is the type then what is the"
+    },
+    {
+      "start": 2859.9,
+      "duration": 4.5,
+      "text": "host user password if you know the SSH"
+    },
+    {
+      "start": 2861.76,
+      "duration": 5.16,
+      "text": "command you use SSH hyphen I the key"
+    },
+    {
+      "start": 2864.4,
+      "duration": 4.919,
+      "text": "name user at the rate host so this is"
+    },
+    {
+      "start": 2866.92,
+      "duration": 4.199,
+      "text": "what it will it has all the options as"
+    },
+    {
+      "start": 2869.319,
+      "duration": 4.02,
+      "text": "well"
+    },
+    {
+      "start": 2871.119,
+      "duration": 3.781,
+      "text": "then you have we saw five provisioners"
+    },
+    {
+      "start": 2873.339,
+      "duration": 3.661,
+      "text": "so five provisional is used to copy"
+    },
+    {
+      "start": 2874.9,
+      "duration": 4.86,
+      "text": "files so if you have something from here"
+    },
+    {
+      "start": 2877.0,
+      "duration": 4.2,
+      "text": "you can copy it to remote file so you"
+    },
+    {
+      "start": 2879.76,
+      "duration": 3.839,
+      "text": "can see I have a file nameless engine"
+    },
+    {
+      "start": 2881.2,
+      "duration": 4.98,
+      "text": "hyphen config which is the Playbook file"
+    },
+    {
+      "start": 2883.599,
+      "duration": 5.101,
+      "text": "ansible Playbook so I want this to be"
+    },
+    {
+      "start": 2886.18,
+      "duration": 4.139,
+      "text": "copied to my server because if it is not"
+    },
+    {
+      "start": 2888.7,
+      "duration": 3.72,
+      "text": "on the server it will not run the"
+    },
+    {
+      "start": 2890.319,
+      "duration": 3.841,
+      "text": "Playbook so I am going to first copy the"
+    },
+    {
+      "start": 2892.42,
+      "duration": 3.48,
+      "text": "file so here I'm using the file"
+    },
+    {
+      "start": 2894.16,
+      "duration": 3.8,
+      "text": "provisioner to copy it from my local"
+    },
+    {
+      "start": 2895.9,
+      "duration": 4.38,
+      "text": "machine which is path dot module so"
+    },
+    {
+      "start": 2897.96,
+      "duration": 3.82,
+      "text": "engine.config is here and will be then"
+    },
+    {
+      "start": 2900.28,
+      "duration": 4.5,
+      "text": "passed to destination which is home"
+    },
+    {
+      "start": 2901.78,
+      "duration": 5.64,
+      "text": "Ubuntu on this server"
+    },
+    {
+      "start": 2904.78,
+      "duration": 3.96,
+      "text": "so I also need a connection block for"
+    },
+    {
+      "start": 2907.42,
+      "duration": 3.899,
+      "text": "this so I've used the same connection"
+    },
+    {
+      "start": 2908.74,
+      "duration": 5.04,
+      "text": "block here and then I'm going to pass my"
+    },
+    {
+      "start": 2911.319,
+      "duration": 4.081,
+      "text": "role directory so not just file also the"
+    },
+    {
+      "start": 2913.78,
+      "duration": 3.839,
+      "text": "directories can be passed through file"
+    },
+    {
+      "start": 2915.4,
+      "duration": 4.02,
+      "text": "provisioner right so I'm passing the"
+    },
+    {
+      "start": 2917.619,
+      "duration": 4.7,
+      "text": "whole directly which has tasks and"
+    },
+    {
+      "start": 2919.42,
+      "duration": 2.899,
+      "text": "templates inside it"
+    },
+    {
+      "start": 2922.66,
+      "duration": 3.6,
+      "text": "yeah same you need to pass the"
+    },
+    {
+      "start": 2924.16,
+      "duration": 4.199,
+      "text": "connection block once you do that then"
+    },
+    {
+      "start": 2926.26,
+      "duration": 3.66,
+      "text": "I'm running the remote exact provisioner"
+    },
+    {
+      "start": 2928.359,
+      "duration": 3.841,
+      "text": "to run the Playbook so I'm using the"
+    },
+    {
+      "start": 2929.92,
+      "duration": 4.56,
+      "text": "ansible Playbook command to run the"
+    },
+    {
+      "start": 2932.2,
+      "duration": 3.659,
+      "text": "Playbook command on my machine this is"
+    },
+    {
+      "start": 2934.48,
+      "duration": 3.359,
+      "text": "how you will use the provisional clock"
+    },
+    {
+      "start": 2935.859,
+      "duration": 3.96,
+      "text": "so file provisioner is used to copy"
+    },
+    {
+      "start": 2937.839,
+      "duration": 3.961,
+      "text": "files or directories from machine"
+    },
+    {
+      "start": 2939.819,
+      "duration": 4.441,
+      "text": "executing terraform to the newly created"
+    },
+    {
+      "start": 2941.8,
+      "duration": 5.16,
+      "text": "resource so it can be awcc to instance"
+    },
+    {
+      "start": 2944.26,
+      "duration": 5.16,
+      "text": "or Azure compute service or Google"
+    },
+    {
+      "start": 2946.96,
+      "duration": 4.5,
+      "text": "compute service"
+    },
+    {
+      "start": 2949.42,
+      "duration": 4.86,
+      "text": "so file provision also supports both"
+    },
+    {
+      "start": 2951.46,
+      "duration": 4.98,
+      "text": "ssnb and RM for connection block"
+    },
+    {
+      "start": 2954.28,
+      "duration": 3.839,
+      "text": "then you have local exact provisioner so"
+    },
+    {
+      "start": 2956.44,
+      "duration": 3.6,
+      "text": "I also have an example for that local"
+    },
+    {
+      "start": 2958.119,
+      "duration": 3.301,
+      "text": "exit provisional let's say you are doing"
+    },
+    {
+      "start": 2960.04,
+      "duration": 3.36,
+      "text": "something with kubernetes and you want"
+    },
+    {
+      "start": 2961.42,
+      "duration": 3.84,
+      "text": "to apply a file on your local machine"
+    },
+    {
+      "start": 2963.4,
+      "duration": 4.14,
+      "text": "because the cluster access is not is in"
+    },
+    {
+      "start": 2965.26,
+      "duration": 4.26,
+      "text": "local machine so you can use local"
+    },
+    {
+      "start": 2967.54,
+      "duration": 3.72,
+      "text": "provisioner to run the commands on the"
+    },
+    {
+      "start": 2969.52,
+      "duration": 3.72,
+      "text": "same machine let's say I want to create"
+    },
+    {
+      "start": 2971.26,
+      "duration": 4.859,
+      "text": "some file so I'm going to use the local"
+    },
+    {
+      "start": 2973.24,
+      "duration": 5.04,
+      "text": "local provisioner so I have a local"
+    },
+    {
+      "start": 2976.119,
+      "duration": 4.081,
+      "text": "provision example here so if you have"
+    },
+    {
+      "start": 2978.28,
+      "duration": 3.839,
+      "text": "worked with kubernetes you might know"
+    },
+    {
+      "start": 2980.2,
+      "duration": 3.01,
+      "text": "concepts of"
+    },
+    {
+      "start": 2982.119,
+      "duration": 2.581,
+      "text": "namespaces"
+    },
+    {
+      "start": 2983.21,
+      "duration": 2.99,
+      "text": "[Music]"
+    },
+    {
+      "start": 2984.7,
+      "duration": 2.639,
+      "text": "or even if you don't know that's okay"
+    },
+    {
+      "start": 2986.2,
+      "duration": 3.06,
+      "text": "because"
+    },
+    {
+      "start": 2987.339,
+      "duration": 5.221,
+      "text": "local provisioner is just to use to run"
+    },
+    {
+      "start": 2989.26,
+      "duration": 6.96,
+      "text": "the commands in your local machine"
+    },
+    {
+      "start": 2992.56,
+      "duration": 6.18,
+      "text": "yeah so kubernetes is uh country"
+    },
+    {
+      "start": 2996.22,
+      "duration": 4.92,
+      "text": "container occupation orchestration tool"
+    },
+    {
+      "start": 2998.74,
+      "duration": 4.04,
+      "text": "where you define okay you do all right"
+    },
+    {
+      "start": 3001.14,
+      "duration": 6.14,
+      "text": "no problem"
+    },
+    {
+      "start": 3002.78,
+      "duration": 4.5,
+      "text": "let me show you the local provisioner"
+    },
+    {
+      "start": 3014.4,
+      "duration": 4.98,
+      "text": "well let's say here is an example which"
+    },
+    {
+      "start": 3016.619,
+      "duration": 4.861,
+      "text": "is something you will also relate with"
+    },
+    {
+      "start": 3019.38,
+      "duration": 5.16,
+      "text": "so we are going to we are creating a"
+    },
+    {
+      "start": 3021.48,
+      "duration": 5.16,
+      "text": "file uh sorry we are creating a key pair"
+    },
+    {
+      "start": 3024.54,
+      "duration": 4.92,
+      "text": "in AWS"
+    },
+    {
+      "start": 3026.64,
+      "duration": 4.62,
+      "text": "in the terraform to put the key like key"
+    },
+    {
+      "start": 3029.46,
+      "duration": 4.26,
+      "text": "name here so we are directly creating"
+    },
+    {
+      "start": 3031.26,
+      "duration": 6.78,
+      "text": "and whenever you create a key pair in"
+    },
+    {
+      "start": 3033.72,
+      "duration": 6.06,
+      "text": "AWS uh if you try to use it with SSH"
+    },
+    {
+      "start": 3038.04,
+      "duration": 3.299,
+      "text": "command it will show you an error saying"
+    },
+    {
+      "start": 3039.78,
+      "duration": 3.059,
+      "text": "that the permissions are not correct so"
+    },
+    {
+      "start": 3041.339,
+      "duration": 4.621,
+      "text": "you need to define the permission which"
+    },
+    {
+      "start": 3042.839,
+      "duration": 5.22,
+      "text": "is chmod 400 and then the key pair so we"
+    },
+    {
+      "start": 3045.96,
+      "duration": 3.84,
+      "text": "are also doing that here we use we used"
+    },
+    {
+      "start": 3048.059,
+      "duration": 3.241,
+      "text": "to do it here and to do something in"
+    },
+    {
+      "start": 3049.8,
+      "duration": 3.84,
+      "text": "your local machine you can use local"
+    },
+    {
+      "start": 3051.3,
+      "duration": 5.36,
+      "text": "exec provisioner so here's another"
+    },
+    {
+      "start": 3053.64,
+      "duration": 6.06,
+      "text": "example where we are doing the config"
+    },
+    {
+      "start": 3056.66,
+      "duration": 4.959,
+      "text": "updating the context of the cluster so"
+    },
+    {
+      "start": 3059.7,
+      "duration": 3.26,
+      "text": "that we can get the cluster access so if"
+    },
+    {
+      "start": 3061.619,
+      "duration": 4.261,
+      "text": "we run this command"
+    },
+    {
+      "start": 3062.96,
+      "duration": 5.32,
+      "text": "and then same if I want to set the image"
+    },
+    {
+      "start": 3065.88,
+      "duration": 5.34,
+      "text": "I'm running some Cube CTL and helping"
+    },
+    {
+      "start": 3068.28,
+      "duration": 5.22,
+      "text": "commands in my local machine using this"
+    },
+    {
+      "start": 3071.22,
+      "duration": 3.96,
+      "text": "right you can see it's using Cube CTL"
+    },
+    {
+      "start": 3073.5,
+      "duration": 4.26,
+      "text": "create NS create namespace search"
+    },
+    {
+      "start": 3075.18,
+      "duration": 4.439,
+      "text": "manager so all these commands are in my"
+    },
+    {
+      "start": 3077.76,
+      "duration": 4.46,
+      "text": "local machine using local exec"
+    },
+    {
+      "start": 3079.619,
+      "duration": 2.601,
+      "text": "provisioner"
+    },
+    {
+      "start": 3083.28,
+      "duration": 3.0,
+      "text": "okay"
+    },
+    {
+      "start": 3092.22,
+      "duration": 4.32,
+      "text": "and then data block so yeah there's"
+    },
+    {
+      "start": 3094.859,
+      "duration": 3.361,
+      "text": "something data block"
+    },
+    {
+      "start": 3096.54,
+      "duration": 3.48,
+      "text": "let's complete data block and then we"
+    },
+    {
+      "start": 3098.22,
+      "duration": 5.22,
+      "text": "can stop"
+    },
+    {
+      "start": 3100.02,
+      "duration": 5.039,
+      "text": "so same same code example let me show"
+    },
+    {
+      "start": 3103.44,
+      "duration": 3.179,
+      "text": "you the example here data block is used"
+    },
+    {
+      "start": 3105.059,
+      "duration": 4.02,
+      "text": "whenever you want to get something from"
+    },
+    {
+      "start": 3106.619,
+      "duration": 4.98,
+      "text": "the console for example we used to type"
+    },
+    {
+      "start": 3109.079,
+      "duration": 5.881,
+      "text": "the Ami ID directly but you can also"
+    },
+    {
+      "start": 3111.599,
+      "duration": 6.541,
+      "text": "Define a filter so I have a data block"
+    },
+    {
+      "start": 3114.96,
+      "duration": 5.52,
+      "text": "here for my Subnet IDs"
+    },
+    {
+      "start": 3118.14,
+      "duration": 4.979,
+      "text": "so you can see"
+    },
+    {
+      "start": 3120.48,
+      "duration": 4.92,
+      "text": "this is the this is a provider defined"
+    },
+    {
+      "start": 3123.119,
+      "duration": 4.681,
+      "text": "here inside the provider I have a region"
+    },
+    {
+      "start": 3125.4,
+      "duration": 4.14,
+      "text": "which is defined in variable so where is"
+    },
+    {
+      "start": 3127.8,
+      "duration": 2.64,
+      "text": "the variable.tf I have defined the"
+    },
+    {
+      "start": 3129.54,
+      "duration": 3.779,
+      "text": "region"
+    },
+    {
+      "start": 3130.44,
+      "duration": 5.399,
+      "text": "USBS to Oregon region so inside Oregon"
+    },
+    {
+      "start": 3133.319,
+      "duration": 5.581,
+      "text": "region we need to check how much how"
+    },
+    {
+      "start": 3135.839,
+      "duration": 5.041,
+      "text": "many uh availability zones are there so"
+    },
+    {
+      "start": 3138.9,
+      "duration": 3.179,
+      "text": "if I want to get the information I can"
+    },
+    {
+      "start": 3140.88,
+      "duration": 3.179,
+      "text": "use data block"
+    },
+    {
+      "start": 3142.079,
+      "duration": 4.201,
+      "text": "so I'm using data blocks to get all the"
+    },
+    {
+      "start": 3144.059,
+      "duration": 6.421,
+      "text": "easies and"
+    },
+    {
+      "start": 3146.28,
+      "duration": 6.36,
+      "text": "then I am creating the subnets or in one"
+    },
+    {
+      "start": 3150.48,
+      "duration": 4.379,
+      "text": "by one like I've defined three as a"
+    },
+    {
+      "start": 3152.64,
+      "duration": 4.919,
+      "text": "count and then I'm using creating the"
+    },
+    {
+      "start": 3154.859,
+      "duration": 7.2,
+      "text": "Subnet in each of the AC so Us East one"
+    },
+    {
+      "start": 3157.559,
+      "duration": 6.54,
+      "text": "US is 2A 2B and 2C like number of node"
+    },
+    {
+      "start": 3162.059,
+      "duration": 4.861,
+      "text": "like whatever is the number for example"
+    },
+    {
+      "start": 3164.099,
+      "duration": 5.041,
+      "text": "if I go to my"
+    },
+    {
+      "start": 3166.92,
+      "duration": 4.98,
+      "text": "okay"
+    },
+    {
+      "start": 3169.14,
+      "duration": 4.38,
+      "text": "in here if I go to VPC"
+    },
+    {
+      "start": 3171.9,
+      "duration": 3.6,
+      "text": "section"
+    },
+    {
+      "start": 3173.52,
+      "duration": 4.2,
+      "text": "so whatever information is there on the"
+    },
+    {
+      "start": 3175.5,
+      "duration": 5.359,
+      "text": "console if you want to get it on the"
+    },
+    {
+      "start": 3177.72,
+      "duration": 3.139,
+      "text": "on the"
+    },
+    {
+      "start": 3181.14,
+      "duration": 4.86,
+      "text": "on the terraform you will use data block"
+    },
+    {
+      "start": 3183.42,
+      "duration": 4.439,
+      "text": "here is another example where you can"
+    },
+    {
+      "start": 3186.0,
+      "duration": 3.059,
+      "text": "see it's getting the information about"
+    },
+    {
+      "start": 3187.859,
+      "duration": 4.46,
+      "text": "the Ami"
+    },
+    {
+      "start": 3189.059,
+      "duration": 3.26,
+      "text": "your sharing is Frozen"
+    },
+    {
+      "start": 3201.359,
+      "duration": 2.781,
+      "text": "no"
+    },
+    {
+      "start": 3204.24,
+      "duration": 5.46,
+      "text": "can you see okay all right"
+    },
+    {
+      "start": 3207.24,
+      "duration": 5.76,
+      "text": "so here is another example to get the"
+    },
+    {
+      "start": 3209.7,
+      "duration": 5.34,
+      "text": "data about all the AWS Ami so we have"
+    },
+    {
+      "start": 3213.0,
+      "duration": 4.079,
+      "text": "defined that we want to get the Ami ID"
+    },
+    {
+      "start": 3215.04,
+      "duration": 3.72,
+      "text": "for Ubuntu so if you don't want to use"
+    },
+    {
+      "start": 3217.079,
+      "duration": 4.02,
+      "text": "the console to get the Mi ID you can"
+    },
+    {
+      "start": 3218.76,
+      "duration": 4.859,
+      "text": "Define it in the block so you have"
+    },
+    {
+      "start": 3221.099,
+      "duration": 5.161,
+      "text": "defined a data for AWS Ami the filter"
+    },
+    {
+      "start": 3223.619,
+      "duration": 4.261,
+      "text": "name name is namesheet with this then"
+    },
+    {
+      "start": 3226.26,
+      "duration": 3.48,
+      "text": "the virtualization type is this so if I"
+    },
+    {
+      "start": 3227.88,
+      "duration": 4.8,
+      "text": "go to my ec2 instance you will see all"
+    },
+    {
+      "start": 3229.74,
+      "duration": 4.44,
+      "text": "these options for the particular Ami so"
+    },
+    {
+      "start": 3232.68,
+      "duration": 4.2,
+      "text": "let's go to"
+    },
+    {
+      "start": 3234.18,
+      "duration": 5.939,
+      "text": "launch instance option here and then"
+    },
+    {
+      "start": 3236.88,
+      "duration": 5.1,
+      "text": "click on get browse more Amis option so"
+    },
+    {
+      "start": 3240.119,
+      "duration": 4.44,
+      "text": "you have"
+    },
+    {
+      "start": 3241.98,
+      "duration": 5.0,
+      "text": "if I go for Ubuntu let's search for"
+    },
+    {
+      "start": 3244.559,
+      "duration": 2.421,
+      "text": "Ubuntu"
+    },
+    {
+      "start": 3251.52,
+      "duration": 3.38,
+      "text": "and then this example"
+    },
+    {
+      "start": 3255.18,
+      "duration": 4.86,
+      "text": "okay yeah here is"
+    },
+    {
+      "start": 3257.339,
+      "duration": 4.321,
+      "text": "you can see uh here we have defined the"
+    },
+    {
+      "start": 3260.04,
+      "duration": 3.84,
+      "text": "filters name should be this voice"
+    },
+    {
+      "start": 3261.66,
+      "duration": 4.56,
+      "text": "license should be hvm owner should be"
+    },
+    {
+      "start": 3263.88,
+      "duration": 4.439,
+      "text": "this this is canonical the owner and"
+    },
+    {
+      "start": 3266.22,
+      "duration": 4.2,
+      "text": "once you find something which is"
+    },
+    {
+      "start": 3268.319,
+      "duration": 5.401,
+      "text": "filtered out this then put the ID"
+    },
+    {
+      "start": 3270.42,
+      "duration": 6.899,
+      "text": "here so data dot AWS ami.ubuntu dot ID"
+    },
+    {
+      "start": 3273.72,
+      "duration": 5.52,
+      "text": "so whichever Ami has all these filters"
+    },
+    {
+      "start": 3277.319,
+      "duration": 4.681,
+      "text": "will be entered here so you don't need"
+    },
+    {
+      "start": 3279.24,
+      "duration": 4.619,
+      "text": "to get go to the AWS console to get the"
+    },
+    {
+      "start": 3282.0,
+      "duration": 5.4,
+      "text": "ID you can directly Define it in the"
+    },
+    {
+      "start": 3283.859,
+      "duration": 6.921,
+      "text": "code using data block so if I show you"
+    },
+    {
+      "start": 3287.4,
+      "duration": 3.38,
+      "text": "the documentation data"
+    },
+    {
+      "start": 3294.54,
+      "duration": 3.36,
+      "text": "so data block requests that the"
+    },
+    {
+      "start": 3295.98,
+      "duration": 4.44,
+      "text": "terraform read from the given data"
+    },
+    {
+      "start": 3297.9,
+      "duration": 6.06,
+      "text": "source for example we use the AWS Ami"
+    },
+    {
+      "start": 3300.42,
+      "duration": 6.24,
+      "text": "example here so it will read the data"
+    },
+    {
+      "start": 3303.96,
+      "duration": 4.44,
+      "text": "from the console to the terraform block"
+    },
+    {
+      "start": 3306.66,
+      "duration": 4.22,
+      "text": "and Export the result under the given"
+    },
+    {
+      "start": 3308.4,
+      "duration": 2.48,
+      "text": "local name"
+    },
+    {
+      "start": 3313.74,
+      "duration": 4.379,
+      "text": "so here is data block to create to get"
+    },
+    {
+      "start": 3316.079,
+      "duration": 3.961,
+      "text": "the Emi which would have the name as app"
+    },
+    {
+      "start": 3318.119,
+      "duration": 4.021,
+      "text": "server and"
+    },
+    {
+      "start": 3320.04,
+      "duration": 6.2,
+      "text": "it is created by you the Ami is created"
+    },
+    {
+      "start": 3322.14,
+      "duration": 4.1,
+      "text": "by you itself so it says owner itself"
+    },
+    {
+      "start": 3326.76,
+      "duration": 5.76,
+      "text": "okay then uh remote backend"
+    },
+    {
+      "start": 3331.2,
+      "duration": 3.859,
+      "text": "do you know the concept of remote"
+    },
+    {
+      "start": 3332.52,
+      "duration": 2.539,
+      "text": "backend"
+    },
+    {
+      "start": 3339.96,
+      "duration": 2.54,
+      "text": "hello"
+    },
+    {
+      "start": 3347.819,
+      "duration": 3.74,
+      "text": "yeah am I Audible"
+    },
+    {
+      "start": 3357.359,
+      "duration": 5.76,
+      "text": "yes yes so do you have experience doing"
+    },
+    {
+      "start": 3360.54,
+      "duration": 5.12,
+      "text": "that because this is very important uh"
+    },
+    {
+      "start": 3363.119,
+      "duration": 2.541,
+      "text": "when we"
+    },
+    {
+      "start": 3371.05,
+      "duration": 3.319,
+      "text": "[Music]"
+    },
+    {
+      "start": 3380.339,
+      "duration": 5.821,
+      "text": "yes so to when you will be defining that"
+    },
+    {
+      "start": 3384.359,
+      "duration": 5.281,
+      "text": "in the terraform block which we were"
+    },
+    {
+      "start": 3386.16,
+      "duration": 4.919,
+      "text": "using to uh Define the AWS of the"
+    },
+    {
+      "start": 3389.64,
+      "duration": 3.36,
+      "text": "provider version same block you will"
+    },
+    {
+      "start": 3391.079,
+      "duration": 3.78,
+      "text": "Define the backend and before you define"
+    },
+    {
+      "start": 3393.0,
+      "duration": 6.059,
+      "text": "the back end you need to have"
+    },
+    {
+      "start": 3394.859,
+      "duration": 6.5,
+      "text": "uh S3 bucket and dynamodb table created"
+    },
+    {
+      "start": 3399.059,
+      "duration": 4.621,
+      "text": "so"
+    },
+    {
+      "start": 3401.359,
+      "duration": 3.881,
+      "text": "dynamodb table is used for State locking"
+    },
+    {
+      "start": 3403.68,
+      "duration": 3.6,
+      "text": "you can see here whenever you state"
+    },
+    {
+      "start": 3405.24,
+      "duration": 3.48,
+      "text": "locking let's say you there are"
+    },
+    {
+      "start": 3407.28,
+      "duration": 3.9,
+      "text": "different people working on the same"
+    },
+    {
+      "start": 3408.72,
+      "duration": 5.16,
+      "text": "code so whenever someone push run"
+    },
+    {
+      "start": 3411.18,
+      "duration": 4.08,
+      "text": "terraform Planet apply the state file is"
+    },
+    {
+      "start": 3413.88,
+      "duration": 4.14,
+      "text": "going to be changed"
+    },
+    {
+      "start": 3415.26,
+      "duration": 4.92,
+      "text": "so if multiple people try to run the"
+    },
+    {
+      "start": 3418.02,
+      "duration": 4.559,
+      "text": "same command at the same time terraform"
+    },
+    {
+      "start": 3420.18,
+      "duration": 4.08,
+      "text": "state is going to be corrupted and to"
+    },
+    {
+      "start": 3422.579,
+      "duration": 3.961,
+      "text": "avoid that corruption we have a lock"
+    },
+    {
+      "start": 3424.26,
+      "duration": 4.079,
+      "text": "setup so we have something known as"
+    },
+    {
+      "start": 3426.54,
+      "duration": 3.539,
+      "text": "terraform State DOT lock whenever you"
+    },
+    {
+      "start": 3428.339,
+      "duration": 4.681,
+      "text": "run it will be applied here you can see"
+    },
+    {
+      "start": 3430.079,
+      "duration": 4.861,
+      "text": "a file named here and this is not"
+    },
+    {
+      "start": 3433.02,
+      "duration": 3.24,
+      "text": "possible if you don't use dynamodb so it"
+    },
+    {
+      "start": 3434.94,
+      "duration": 3.419,
+      "text": "is going to be used for terraform State"
+    },
+    {
+      "start": 3436.26,
+      "duration": 4.079,
+      "text": "lock whenever someone applies so that"
+    },
+    {
+      "start": 3438.359,
+      "duration": 4.22,
+      "text": "the terraform State should not be"
+    },
+    {
+      "start": 3440.339,
+      "duration": 5.101,
+      "text": "corrupted"
+    },
+    {
+      "start": 3442.579,
+      "duration": 4.181,
+      "text": "uh so this this way you can use S3"
+    },
+    {
+      "start": 3445.44,
+      "duration": 4.28,
+      "text": "bucket and"
+    },
+    {
+      "start": 3446.76,
+      "duration": 5.76,
+      "text": "uh and dynamodb there are various"
+    },
+    {
+      "start": 3449.72,
+      "duration": 4.66,
+      "text": "various benefits for this this way you"
+    },
+    {
+      "start": 3452.52,
+      "duration": 4.319,
+      "text": "can use encryption on your S3 buckets to"
+    },
+    {
+      "start": 3454.38,
+      "duration": 3.719,
+      "text": "keep your data from State file secure uh"
+    },
+    {
+      "start": 3456.839,
+      "duration": 3.301,
+      "text": "you can also"
+    },
+    {
+      "start": 3458.099,
+      "duration": 4.381,
+      "text": "version them you can have you have"
+    },
+    {
+      "start": 3460.14,
+      "duration": 3.719,
+      "text": "versioning option enabled on estate"
+    },
+    {
+      "start": 3462.48,
+      "duration": 2.82,
+      "text": "bucket so you can have different"
+    },
+    {
+      "start": 3463.859,
+      "duration": 3.061,
+      "text": "versions of State files so if there's"
+    },
+    {
+      "start": 3465.3,
+      "duration": 3.6,
+      "text": "any problem you can revert to previous"
+    },
+    {
+      "start": 3466.92,
+      "duration": 2.78,
+      "text": "state or you can see what changes were"
+    },
+    {
+      "start": 3468.9,
+      "duration": 3.12,
+      "text": "made"
+    },
+    {
+      "start": 3469.7,
+      "duration": 4.18,
+      "text": "so to enable this you need to First"
+    },
+    {
+      "start": 3472.02,
+      "duration": 4.86,
+      "text": "create the bucket and then Define the"
+    },
+    {
+      "start": 3473.88,
+      "duration": 5.82,
+      "text": "terraform backend go backend block"
+    },
+    {
+      "start": 3476.88,
+      "duration": 5.219,
+      "text": "uh inside data FM block so you have"
+    },
+    {
+      "start": 3479.7,
+      "duration": 4.74,
+      "text": "different options like S3 and you have"
+    },
+    {
+      "start": 3482.099,
+      "duration": 4.141,
+      "text": "options like Azure blob storage"
+    },
+    {
+      "start": 3484.44,
+      "duration": 4.619,
+      "text": "and different options Google say cloud"
+    },
+    {
+      "start": 3486.24,
+      "duration": 4.68,
+      "text": "storage something but if you're doing it"
+    },
+    {
+      "start": 3489.059,
+      "duration": 4.681,
+      "text": "on AWS you should always use S3 because"
+    },
+    {
+      "start": 3490.92,
+      "duration": 4.86,
+      "text": "it has more options like encryption and"
+    },
+    {
+      "start": 3493.74,
+      "duration": 4.2,
+      "text": "everything else"
+    },
+    {
+      "start": 3495.78,
+      "duration": 3.779,
+      "text": "so when you when I if I comment this out"
+    },
+    {
+      "start": 3497.94,
+      "duration": 3.54,
+      "text": "first thing I need to do is to run"
+    },
+    {
+      "start": 3499.559,
+      "duration": 3.901,
+      "text": "terraform init command it will not work"
+    },
+    {
+      "start": 3501.48,
+      "duration": 3.839,
+      "text": "if I don't use init once the init is"
+    },
+    {
+      "start": 3503.46,
+      "duration": 4.92,
+      "text": "done then because if I run 10 of a"
+    },
+    {
+      "start": 3505.319,
+      "duration": 4.441,
+      "text": "minute it's going to say something for"
+    },
+    {
+      "start": 3508.38,
+      "duration": 3.959,
+      "text": "example if I enter for a minute now it"
+    },
+    {
+      "start": 3509.76,
+      "duration": 4.68,
+      "text": "says initializing the back end"
+    },
+    {
+      "start": 3512.339,
+      "duration": 3.48,
+      "text": "right and it is now blank because we"
+    },
+    {
+      "start": 3514.44,
+      "duration": 3.48,
+      "text": "have commented it out we don't have any"
+    },
+    {
+      "start": 3515.819,
+      "duration": 4.8,
+      "text": "back end block right now but if I"
+    },
+    {
+      "start": 3517.92,
+      "duration": 5.159,
+      "text": "comment it out then it will show me that"
+    },
+    {
+      "start": 3520.619,
+      "duration": 3.541,
+      "text": "the backend is working on it then if I"
+    },
+    {
+      "start": 3523.079,
+      "duration": 4.141,
+      "text": "check my"
+    },
+    {
+      "start": 3524.16,
+      "duration": 4.56,
+      "text": "S3 uh it will have a bucket created"
+    },
+    {
+      "start": 3527.22,
+      "duration": 3.599,
+      "text": "which will have the state file as well"
+    },
+    {
+      "start": 3528.72,
+      "duration": 4.379,
+      "text": "so it will be transferred from here you"
+    },
+    {
+      "start": 3530.819,
+      "duration": 4.081,
+      "text": "can choose to migrate everything right"
+    },
+    {
+      "start": 3533.099,
+      "duration": 3.0,
+      "text": "now it does not have anything here but"
+    },
+    {
+      "start": 3534.9,
+      "duration": 4.5,
+      "text": "if I enable"
+    },
+    {
+      "start": 3536.099,
+      "duration": 5.581,
+      "text": "uh if I enable S3 backend on here"
+    },
+    {
+      "start": 3539.4,
+      "duration": 3.719,
+      "text": "everything that is present can also be"
+    },
+    {
+      "start": 3541.68,
+      "duration": 4.02,
+      "text": "transferred or you can also choose to"
+    },
+    {
+      "start": 3543.119,
+      "duration": 5.22,
+      "text": "have like fresh but I would recommend"
+    },
+    {
+      "start": 3545.7,
+      "duration": 4.2,
+      "text": "you to push it like everything because"
+    },
+    {
+      "start": 3548.339,
+      "duration": 4.621,
+      "text": "this way you will be able to manage the"
+    },
+    {
+      "start": 3549.9,
+      "duration": 5.179,
+      "text": "existing resources through S3 backend as"
+    },
+    {
+      "start": 3552.96,
+      "duration": 2.119,
+      "text": "well"
+    },
+    {
+      "start": 3556.559,
+      "duration": 4.26,
+      "text": "so this was a backend"
+    },
+    {
+      "start": 3558.78,
+      "duration": 4.88,
+      "text": "on S3"
+    },
+    {
+      "start": 3560.819,
+      "duration": 2.841,
+      "text": "and then"
+    },
+    {
+      "start": 3565.28,
+      "duration": 5.519,
+      "text": "modules so just a second again"
+    },
+    {
+      "start": 3573.299,
+      "duration": 6.0,
+      "text": "all right let's go to module so now"
+    },
+    {
+      "start": 3577.079,
+      "duration": 3.901,
+      "text": "in terraform you will have modules for"
+    },
+    {
+      "start": 3579.299,
+      "duration": 4.081,
+      "text": "different blocks rather than you"
+    },
+    {
+      "start": 3580.98,
+      "duration": 4.44,
+      "text": "defining anything there are modules for"
+    },
+    {
+      "start": 3583.38,
+      "duration": 3.54,
+      "text": "everything created already so let's go"
+    },
+    {
+      "start": 3585.42,
+      "duration": 5.0,
+      "text": "to terraform"
+    },
+    {
+      "start": 3586.92,
+      "duration": 3.5,
+      "text": "modules registry"
+    },
+    {
+      "start": 3593.64,
+      "duration": 4.679,
+      "text": "so you have modules for VPC which is"
+    },
+    {
+      "start": 3595.68,
+      "duration": 4.74,
+      "text": "used 32 million times then you have a"
+    },
+    {
+      "start": 3598.319,
+      "duration": 4.381,
+      "text": "cloud pose modules for IEM Security"
+    },
+    {
+      "start": 3600.42,
+      "duration": 3.659,
+      "text": "Group so you can use modest models"
+    },
+    {
+      "start": 3602.7,
+      "duration": 3.3,
+      "text": "directly rather than creating your own"
+    },
+    {
+      "start": 3604.079,
+      "duration": 4.141,
+      "text": "code when you use these modules you have"
+    },
+    {
+      "start": 3606.0,
+      "duration": 3.9,
+      "text": "to Define some values"
+    },
+    {
+      "start": 3608.22,
+      "duration": 3.48,
+      "text": "and you can use this modules this way"
+    },
+    {
+      "start": 3609.9,
+      "duration": 4.199,
+      "text": "you have the code directly present here"
+    },
+    {
+      "start": 3611.7,
+      "duration": 4.44,
+      "text": "this is similar to what you use whenever"
+    },
+    {
+      "start": 3614.099,
+      "duration": 4.26,
+      "text": "you create your own models as well so if"
+    },
+    {
+      "start": 3616.14,
+      "duration": 3.84,
+      "text": "I show you the modules block here right"
+    },
+    {
+      "start": 3618.359,
+      "duration": 5.22,
+      "text": "now we have modules created for"
+    },
+    {
+      "start": 3619.98,
+      "duration": 5.46,
+      "text": "Cassandra eks LTS help"
+    },
+    {
+      "start": 3623.579,
+      "duration": 4.98,
+      "text": "and VPC"
+    },
+    {
+      "start": 3625.44,
+      "duration": 4.919,
+      "text": "right this modules won't work unless you"
+    },
+    {
+      "start": 3628.559,
+      "duration": 3.721,
+      "text": "have main.tf file which is used to call"
+    },
+    {
+      "start": 3630.359,
+      "duration": 3.601,
+      "text": "the module so we have defined the model"
+    },
+    {
+      "start": 3632.28,
+      "duration": 3.839,
+      "text": "circuit here we need to call it from"
+    },
+    {
+      "start": 3633.96,
+      "duration": 4.26,
+      "text": "here so you define you call it using the"
+    },
+    {
+      "start": 3636.119,
+      "duration": 4.98,
+      "text": "module block so module is going to be"
+    },
+    {
+      "start": 3638.22,
+      "duration": 5.879,
+      "text": "VPC source is this so it is in current"
+    },
+    {
+      "start": 3641.099,
+      "duration": 4.921,
+      "text": "directory and the modules under VPC so"
+    },
+    {
+      "start": 3644.099,
+      "duration": 3.421,
+      "text": "you need to define the source here we"
+    },
+    {
+      "start": 3646.02,
+      "duration": 3.18,
+      "text": "are using the source as this because it"
+    },
+    {
+      "start": 3647.52,
+      "duration": 4.559,
+      "text": "is defined because we have created it"
+    },
+    {
+      "start": 3649.2,
+      "duration": 5.04,
+      "text": "ourselves but if you use something from"
+    },
+    {
+      "start": 3652.079,
+      "duration": 5.881,
+      "text": "terraform it's going to be terraform"
+    },
+    {
+      "start": 3654.24,
+      "duration": 6.359,
+      "text": "hyphen AWS Security Group AWS because"
+    },
+    {
+      "start": 3657.96,
+      "duration": 4.92,
+      "text": "this is the path"
+    },
+    {
+      "start": 3660.599,
+      "duration": 4.081,
+      "text": "right"
+    },
+    {
+      "start": 3662.88,
+      "duration": 4.08,
+      "text": "and if you want to check the code you"
+    },
+    {
+      "start": 3664.68,
+      "duration": 5.159,
+      "text": "can go and check it from here in the"
+    },
+    {
+      "start": 3666.96,
+      "duration": 4.26,
+      "text": "secure in the GitHub you can open it in"
+    },
+    {
+      "start": 3669.839,
+      "duration": 3.841,
+      "text": "web editor if you want to check anything"
+    },
+    {
+      "start": 3671.22,
+      "duration": 5.579,
+      "text": "you can check it or you can clone it to"
+    },
+    {
+      "start": 3673.68,
+      "duration": 5.6,
+      "text": "have your own customized terraform"
+    },
+    {
+      "start": 3676.799,
+      "duration": 2.481,
+      "text": "module"
+    },
+    {
+      "start": 3680.22,
+      "duration": 5.46,
+      "text": "so whenever you use modules make sure"
+    },
+    {
+      "start": 3682.44,
+      "duration": 6.179,
+      "text": "you're calling it in the main.tf and you"
+    },
+    {
+      "start": 3685.68,
+      "duration": 4.8,
+      "text": "can also have for example uh one"
+    },
+    {
+      "start": 3688.619,
+      "duration": 3.96,
+      "text": "challenging thing that I experienced"
+    },
+    {
+      "start": 3690.48,
+      "duration": 4.68,
+      "text": "when working with modules was let's have"
+    },
+    {
+      "start": 3692.579,
+      "duration": 4.74,
+      "text": "VPC and I want to create this instances"
+    },
+    {
+      "start": 3695.16,
+      "duration": 4.26,
+      "text": "in this module from the VPC that I"
+    },
+    {
+      "start": 3697.319,
+      "duration": 4.681,
+      "text": "created here so I want to pass my VPC ID"
+    },
+    {
+      "start": 3699.42,
+      "duration": 5.04,
+      "text": "from here to this module so passing the"
+    },
+    {
+      "start": 3702.0,
+      "duration": 6.42,
+      "text": "arguments from one model to another is"
+    },
+    {
+      "start": 3704.46,
+      "duration": 5.28,
+      "text": "complex like if you don't know uh but if"
+    },
+    {
+      "start": 3708.42,
+      "duration": 3.72,
+      "text": "you know you will be able to understand"
+    },
+    {
+      "start": 3709.74,
+      "duration": 3.72,
+      "text": "but let's say how I will pass it so if I"
+    },
+    {
+      "start": 3712.14,
+      "duration": 3.84,
+      "text": "want to pass I will create a variable"
+    },
+    {
+      "start": 3713.46,
+      "duration": 4.5,
+      "text": "but I will not give it a value so"
+    },
+    {
+      "start": 3715.98,
+      "duration": 3.599,
+      "text": "in here if I show you first I will"
+    },
+    {
+      "start": 3717.96,
+      "duration": 4.2,
+      "text": "create an output so I'm going to Output"
+    },
+    {
+      "start": 3719.579,
+      "duration": 4.141,
+      "text": "my EPC ID and my Subnet ID here and then"
+    },
+    {
+      "start": 3722.16,
+      "duration": 3.419,
+      "text": "inside this Cassandra I'm going to"
+    },
+    {
+      "start": 3723.72,
+      "duration": 5.7,
+      "text": "create a variable which will fetch the"
+    },
+    {
+      "start": 3725.579,
+      "duration": 6.78,
+      "text": "output from here so I'm using subnet and"
+    },
+    {
+      "start": 3729.42,
+      "duration": 5.399,
+      "text": "the PC ID right so here a variable is"
+    },
+    {
+      "start": 3732.359,
+      "duration": 4.2,
+      "text": "created to VPC ID but I'm not I have not"
+    },
+    {
+      "start": 3734.819,
+      "duration": 3.601,
+      "text": "defined any value to it no default"
+    },
+    {
+      "start": 3736.559,
+      "duration": 4.52,
+      "text": "option is present"
+    },
+    {
+      "start": 3738.42,
+      "duration": 2.659,
+      "text": "correct"
+    },
+    {
+      "start": 3743.04,
+      "duration": 4.259,
+      "text": "yeah so just hear me out it will be easy"
+    },
+    {
+      "start": 3745.319,
+      "duration": 4.081,
+      "text": "for you to understand so let's say I"
+    },
+    {
+      "start": 3747.299,
+      "duration": 3.661,
+      "text": "have created a VPC in my main.tf here in"
+    },
+    {
+      "start": 3749.4,
+      "duration": 4.26,
+      "text": "the VPC block"
+    },
+    {
+      "start": 3750.96,
+      "duration": 4.859,
+      "text": "and I I have three subnets so I created"
+    },
+    {
+      "start": 3753.66,
+      "duration": 5.399,
+      "text": "a VPC I want this VPC ID and the subnet"
+    },
+    {
+      "start": 3755.819,
+      "duration": 4.74,
+      "text": "ID to be used in this RDS block and this"
+    },
+    {
+      "start": 3759.059,
+      "duration": 3.081,
+      "text": "Cassandra block where I'm creating my"
+    },
+    {
+      "start": 3760.559,
+      "duration": 3.961,
+      "text": "instances and my"
+    },
+    {
+      "start": 3762.14,
+      "duration": 4.84,
+      "text": "resources so if I want to pass it from"
+    },
+    {
+      "start": 3764.52,
+      "duration": 4.44,
+      "text": "VPC to Cassandra so I will first create"
+    },
+    {
+      "start": 3766.98,
+      "duration": 3.66,
+      "text": "an output for VPC"
+    },
+    {
+      "start": 3768.96,
+      "duration": 3.48,
+      "text": "so you know how to create an output now"
+    },
+    {
+      "start": 3770.64,
+      "duration": 3.959,
+      "text": "right"
+    },
+    {
+      "start": 3772.44,
+      "duration": 4.5,
+      "text": "so I will create an output where I will"
+    },
+    {
+      "start": 3774.599,
+      "duration": 5.101,
+      "text": "Define that I want to Output my VPC ID"
+    },
+    {
+      "start": 3776.94,
+      "duration": 4.2,
+      "text": "so when I output my EPC ID I will create"
+    },
+    {
+      "start": 3779.7,
+      "duration": 3.54,
+      "text": "a variable in here because I want to"
+    },
+    {
+      "start": 3781.14,
+      "duration": 4.62,
+      "text": "fetch this VPC ID so I will create a"
+    },
+    {
+      "start": 3783.24,
+      "duration": 3.96,
+      "text": "variable and then I will not provide any"
+    },
+    {
+      "start": 3785.76,
+      "duration": 3.72,
+      "text": "default value because I want the value"
+    },
+    {
+      "start": 3787.2,
+      "duration": 4.619,
+      "text": "from the from this part"
+    },
+    {
+      "start": 3789.48,
+      "duration": 4.5,
+      "text": "so once you create this"
+    },
+    {
+      "start": 3791.819,
+      "duration": 4.141,
+      "text": "no it will not automatically pick it you"
+    },
+    {
+      "start": 3793.98,
+      "duration": 3.599,
+      "text": "will Define it here in the main.tf when"
+    },
+    {
+      "start": 3795.96,
+      "duration": 3.599,
+      "text": "you call your modules let's say I'm"
+    },
+    {
+      "start": 3797.579,
+      "duration": 4.02,
+      "text": "calling you the modules for Cassandra so"
+    },
+    {
+      "start": 3799.559,
+      "duration": 4.381,
+      "text": "I have a variable created for VCS subnet"
+    },
+    {
+      "start": 3801.599,
+      "duration": 5.46,
+      "text": "VPC ID so it will tell me that the VPC"
+    },
+    {
+      "start": 3803.94,
+      "duration": 5.879,
+      "text": "ID should be called from module from"
+    },
+    {
+      "start": 3807.059,
+      "duration": 5.701,
+      "text": "this module which is dot VPC and then"
+    },
+    {
+      "start": 3809.819,
+      "duration": 6.561,
+      "text": "the output name"
+    },
+    {
+      "start": 3812.76,
+      "duration": 3.62,
+      "text": "the output name which was"
+    },
+    {
+      "start": 3819.58,
+      "duration": 3.86,
+      "text": "[Music]"
+    },
+    {
+      "start": 3821.339,
+      "duration": 4.76,
+      "text": "yeah you need to create a variable where"
+    },
+    {
+      "start": 3823.44,
+      "duration": 2.659,
+      "text": "you want to call it"
+    },
+    {
+      "start": 3827.94,
+      "duration": 4.8,
+      "text": "right so here you can also see we are"
+    },
+    {
+      "start": 3830.46,
+      "duration": 3.839,
+      "text": "creating getting the VPC ID here but it"
+    },
+    {
+      "start": 3832.74,
+      "duration": 4.44,
+      "text": "will not work unless you call it from"
+    },
+    {
+      "start": 3834.299,
+      "duration": 4.981,
+      "text": "main.tf so inside the main.tf you will"
+    },
+    {
+      "start": 3837.18,
+      "duration": 4.02,
+      "text": "have a section where you are defining"
+    },
+    {
+      "start": 3839.28,
+      "duration": 3.96,
+      "text": "your variables where you didn't have any"
+    },
+    {
+      "start": 3841.2,
+      "duration": 3.899,
+      "text": "values entered and you will tell them"
+    },
+    {
+      "start": 3843.24,
+      "duration": 4.079,
+      "text": "that the value should be from this"
+    },
+    {
+      "start": 3845.099,
+      "duration": 4.5,
+      "text": "module module name and the output name"
+    },
+    {
+      "start": 3847.319,
+      "duration": 4.441,
+      "text": "so module module name and the output"
+    },
+    {
+      "start": 3849.599,
+      "duration": 4.681,
+      "text": "name same here as well which we are"
+    },
+    {
+      "start": 3851.76,
+      "duration": 5.52,
+      "text": "using in AKs"
+    },
+    {
+      "start": 3854.28,
+      "duration": 3.0,
+      "text": "okay"
+    },
+    {
+      "start": 3875.04,
+      "duration": 2.539,
+      "text": "okay"
+    },
+    {
+      "start": 3896.94,
+      "duration": 5.34,
+      "text": "yeah so I can choose to skip"
+    },
+    {
+      "start": 3899.88,
+      "duration": 4.56,
+      "text": "I can choose to remove that but I'm not"
+    },
+    {
+      "start": 3902.28,
+      "duration": 3.62,
+      "text": "I'm just putting the cider here and I'm"
+    },
+    {
+      "start": 3904.44,
+      "duration": 4.08,
+      "text": "actually getting the value from"
+    },
+    {
+      "start": 3905.9,
+      "duration": 4.24,
+      "text": "variable.tf here"
+    },
+    {
+      "start": 3908.52,
+      "duration": 3.799,
+      "text": "right so that is why I've defined that"
+    },
+    {
+      "start": 3910.14,
+      "duration": 4.26,
+      "text": "in here that the VPC cider should be"
+    },
+    {
+      "start": 3912.319,
+      "duration": 4.121,
+      "text": "variable.disc so the variable is present"
+    },
+    {
+      "start": 3914.4,
+      "duration": 5.659,
+      "text": "here so I have some variables created"
+    },
+    {
+      "start": 3916.44,
+      "duration": 3.619,
+      "text": "outside the modules"
+    },
+    {
+      "start": 3920.66,
+      "duration": 11.52,
+      "text": "[Music]"
+    },
+    {
+      "start": 3927.18,
+      "duration": 5.0,
+      "text": "cider is just a value which is used"
+    },
+    {
+      "start": 3932.7,
+      "duration": 2.0,
+      "text": "um"
+    },
+    {
+      "start": 3936.42,
+      "duration": 2.72,
+      "text": "yes"
+    },
+    {
+      "start": 3942.42,
+      "duration": 2.0,
+      "text": "yes"
+    },
+    {
+      "start": 3955.9,
+      "duration": 3.86,
+      "text": "[Music]"
+    },
+    {
+      "start": 3957.26,
+      "duration": 5.079,
+      "text": "let me explain if that will answer your"
+    },
+    {
+      "start": 3959.76,
+      "duration": 4.74,
+      "text": "question I'm not sure but this is a VPC"
+    },
+    {
+      "start": 3962.339,
+      "duration": 4.441,
+      "text": "module okay inside this module I'm going"
+    },
+    {
+      "start": 3964.5,
+      "duration": 4.44,
+      "text": "to create one VPC three subnets internet"
+    },
+    {
+      "start": 3966.78,
+      "duration": 4.92,
+      "text": "gateway and Round Table Round Table"
+    },
+    {
+      "start": 3968.94,
+      "duration": 4.8,
+      "text": "Association all these things so I'm"
+    },
+    {
+      "start": 3971.7,
+      "duration": 5.94,
+      "text": "going to create a VPC with the inside a"
+    },
+    {
+      "start": 3973.74,
+      "duration": 5.28,
+      "text": "module cider block as 10.0.0.0 16."
+    },
+    {
+      "start": 3977.64,
+      "duration": 3.479,
+      "text": "okay"
+    },
+    {
+      "start": 3979.02,
+      "duration": 3.48,
+      "text": "so I have defined that the value of the"
+    },
+    {
+      "start": 3981.119,
+      "duration": 4.5,
+      "text": "sided block should be from variable"
+    },
+    {
+      "start": 3982.5,
+      "duration": 5.579,
+      "text": "which is this cider so I have created a"
+    },
+    {
+      "start": 3985.619,
+      "duration": 4.561,
+      "text": "variable inside my module inside this"
+    },
+    {
+      "start": 3988.079,
+      "duration": 4.141,
+      "text": "module I have created a variable named"
+    },
+    {
+      "start": 3990.18,
+      "duration": 3.84,
+      "text": "as VPC underscore cider but I have not"
+    },
+    {
+      "start": 3992.22,
+      "duration": 3.839,
+      "text": "given it the name I have not given it"
+    },
+    {
+      "start": 3994.02,
+      "duration": 4.38,
+      "text": "the value this value is commented out so"
+    },
+    {
+      "start": 3996.059,
+      "duration": 6.06,
+      "text": "it's not picking it from here"
+    },
+    {
+      "start": 3998.4,
+      "duration": 5.939,
+      "text": "so right now my VPC does not know where"
+    },
+    {
+      "start": 4002.119,
+      "duration": 4.141,
+      "text": "is the variable coming from same as we"
+    },
+    {
+      "start": 4004.339,
+      "duration": 4.26,
+      "text": "did for Cassandra we then defined the"
+    },
+    {
+      "start": 4006.26,
+      "duration": 4.74,
+      "text": "value we didn't Define the value for VPC"
+    },
+    {
+      "start": 4008.599,
+      "duration": 4.921,
+      "text": "ID we just gave it the type"
+    },
+    {
+      "start": 4011.0,
+      "duration": 5.16,
+      "text": "so I gave it just the type and when I'm"
+    },
+    {
+      "start": 4013.52,
+      "duration": 4.799,
+      "text": "calling my model in the main.tf module"
+    },
+    {
+      "start": 4016.16,
+      "duration": 5.159,
+      "text": "VPC sources this I have these two"
+    },
+    {
+      "start": 4018.319,
+      "duration": 4.621,
+      "text": "options where I haven't given the values"
+    },
+    {
+      "start": 4021.319,
+      "duration": 3.661,
+      "text": "yet"
+    },
+    {
+      "start": 4022.94,
+      "duration": 4.02,
+      "text": "so it will get the value from the"
+    },
+    {
+      "start": 4024.98,
+      "duration": 4.8,
+      "text": "variable so variable now is using this"
+    },
+    {
+      "start": 4026.96,
+      "duration": 5.46,
+      "text": "block outside the modules"
+    },
+    {
+      "start": 4029.78,
+      "duration": 4.079,
+      "text": "right so here I am some variables so I"
+    },
+    {
+      "start": 4032.42,
+      "duration": 3.36,
+      "text": "have defined a variable for cider block"
+    },
+    {
+      "start": 4033.859,
+      "duration": 4.74,
+      "text": "and this is the variable so it's going"
+    },
+    {
+      "start": 4035.78,
+      "duration": 4.799,
+      "text": "to put the if I don't if I if I don't"
+    },
+    {
+      "start": 4038.599,
+      "duration": 3.841,
+      "text": "use this it's going to show me an error"
+    },
+    {
+      "start": 4040.579,
+      "duration": 4.401,
+      "text": "saying that the variable VPC cider is"
+    },
+    {
+      "start": 4042.44,
+      "duration": 2.54,
+      "text": "not defined yet"
+    },
+    {
+      "start": 4049.66,
+      "duration": 3.06,
+      "text": "thank you"
+    },
+    {
+      "start": 4053.359,
+      "duration": 3.621,
+      "text": "why are we using this variable"
+    },
+    {
+      "start": 4061.22,
+      "duration": 5.16,
+      "text": "yeah just like an output so I can choose"
+    },
+    {
+      "start": 4064.52,
+      "duration": 4.799,
+      "text": "to directly give it from here and then"
+    },
+    {
+      "start": 4066.38,
+      "duration": 4.08,
+      "text": "skip calling it from here"
+    },
+    {
+      "start": 4069.319,
+      "duration": 3.421,
+      "text": "right"
+    },
+    {
+      "start": 4070.46,
+      "duration": 3.899,
+      "text": "I will I don't have to then call it from"
+    },
+    {
+      "start": 4072.74,
+      "duration": 3.599,
+      "text": "here"
+    },
+    {
+      "start": 4074.359,
+      "duration": 3.601,
+      "text": "yeah that will work as well I don't want"
+    },
+    {
+      "start": 4076.339,
+      "duration": 3.48,
+      "text": "to then call it from here I just need to"
+    },
+    {
+      "start": 4077.96,
+      "duration": 3.359,
+      "text": "Define source and cluster name then"
+    },
+    {
+      "start": 4079.819,
+      "duration": 4.441,
+      "text": "again if I want to just have the cluster"
+    },
+    {
+      "start": 4081.319,
+      "duration": 5.161,
+      "text": "name defined inside my module I don't"
+    },
+    {
+      "start": 4084.26,
+      "duration": 4.319,
+      "text": "want to call it outside my module"
+    },
+    {
+      "start": 4086.48,
+      "duration": 3.839,
+      "text": "so all these models are all these values"
+    },
+    {
+      "start": 4088.579,
+      "duration": 3.421,
+      "text": "that are called are the values that are"
+    },
+    {
+      "start": 4090.319,
+      "duration": 3.421,
+      "text": "not defined yet"
+    },
+    {
+      "start": 4092.0,
+      "duration": 4.339,
+      "text": "if they are defined then they don't need"
+    },
+    {
+      "start": 4093.74,
+      "duration": 2.599,
+      "text": "to be called here"
+    },
+    {
+      "start": 4097.819,
+      "duration": 5.88,
+      "text": "yeah there can be a chance where you"
+    },
+    {
+      "start": 4099.859,
+      "duration": 6.141,
+      "text": "just have modules with Source nothing"
+    },
+    {
+      "start": 4103.699,
+      "duration": 2.301,
+      "text": "else"
+    },
+    {
+      "start": 4107.6,
+      "duration": 5.699,
+      "text": "right even when you use this modules"
+    },
+    {
+      "start": 4110.48,
+      "duration": 5.219,
+      "text": "from the terraform all these different"
+    },
+    {
+      "start": 4113.299,
+      "duration": 4.201,
+      "text": "modules"
+    },
+    {
+      "start": 4115.699,
+      "duration": 3.961,
+      "text": "from the terraform you need to define"
+    },
+    {
+      "start": 4117.5,
+      "duration": 5.1,
+      "text": "the values"
+    },
+    {
+      "start": 4119.66,
+      "duration": 4.44,
+      "text": "if you're using module for AMI for ec2"
+    },
+    {
+      "start": 4122.6,
+      "duration": 4.739,
+      "text": "instance you will Define the values for"
+    },
+    {
+      "start": 4124.1,
+      "duration": 6.619,
+      "text": "AMI for anything for instance type for"
+    },
+    {
+      "start": 4127.339,
+      "duration": 3.38,
+      "text": "key name and everything else"
+    },
+    {
+      "start": 4133.04,
+      "duration": 4.799,
+      "text": "okay"
+    },
+    {
+      "start": 4135.38,
+      "duration": 6.359,
+      "text": "so it's more than one and a half hour"
+    },
+    {
+      "start": 4137.839,
+      "duration": 6.061,
+      "text": "now and I need to go to pray so"
+    },
+    {
+      "start": 4141.739,
+      "duration": 5.281,
+      "text": "we can continue with one hour session"
+    },
+    {
+      "start": 4143.9,
+      "duration": 5.04,
+      "text": "later on you can do the payment on"
+    },
+    {
+      "start": 4147.02,
+      "duration": 4.44,
+      "text": "Fiverr if you want to or you can use if"
+    },
+    {
+      "start": 4148.94,
+      "duration": 4.64,
+      "text": "you have downloaded that remitly let me"
+    },
+    {
+      "start": 4151.46,
+      "duration": 2.12,
+      "text": "know"
+    },
+    {
+      "start": 4154.819,
+      "duration": 7.101,
+      "text": "yes I'm going to share that on my on you"
+    },
+    {
+      "start": 4158.6,
+      "duration": 3.32,
+      "text": "on this chat"
+    },
+    {
+      "start": 4163.52,
+      "duration": 5.42,
+      "text": "so you need to copy this or else it will"
+    },
+    {
+      "start": 4165.199,
+      "duration": 3.741,
+      "text": "be gone once we stop this meat"
+    }
+  ]
+}

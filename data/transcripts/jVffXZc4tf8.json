@@ -1,0 +1,491 @@
+{
+  "video": {
+    "id": "jVffXZc4tf8",
+    "title": "How to increase EBS volume size in AWS EC2",
+    "url": "https://www.youtube.com/watch?v=jVffXZc4tf8",
+    "duration": 261,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.359,
+      "duration": 3.781,
+      "text": "hello and welcome back in this video I"
+    },
+    {
+      "start": 2.7,
+      "duration": 6.66,
+      "text": "am going to show you how you can"
+    },
+    {
+      "start": 4.14,
+      "duration": 7.2,
+      "text": "increase EBS volume in AWS ec2 so right"
+    },
+    {
+      "start": 9.36,
+      "duration": 4.92,
+      "text": "now I have an instance"
+    },
+    {
+      "start": 11.34,
+      "duration": 5.519,
+      "text": "which has 8 GB of storage attached to it"
+    },
+    {
+      "start": 14.28,
+      "duration": 5.4,
+      "text": "so we have 8GB of storage and I'm going"
+    },
+    {
+      "start": 16.859,
+      "duration": 6.961,
+      "text": "to increase this ABS storage from 8GB"
+    },
+    {
+      "start": 19.68,
+      "duration": 6.54,
+      "text": "200 GB so I can go here in my volumes"
+    },
+    {
+      "start": 23.82,
+      "duration": 4.74,
+      "text": "select the volume I want to extend and"
+    },
+    {
+      "start": 26.22,
+      "duration": 3.6,
+      "text": "then click on actions click on modify"
+    },
+    {
+      "start": 28.56,
+      "duration": 4.26,
+      "text": "volume option"
+    },
+    {
+      "start": 29.82,
+      "duration": 4.86,
+      "text": "right now the storage is 8GB and if you"
+    },
+    {
+      "start": 32.82,
+      "duration": 3.06,
+      "text": "want to increase you can type in the"
+    },
+    {
+      "start": 34.68,
+      "duration": 5.16,
+      "text": "number you want so I'm going to increase"
+    },
+    {
+      "start": 35.88,
+      "duration": 6.92,
+      "text": "it 100 GB so I want to make it 100 GB"
+    },
+    {
+      "start": 39.84,
+      "duration": 2.96,
+      "text": "and modify it"
+    },
+    {
+      "start": 44.7,
+      "duration": 5.1,
+      "text": "so once this is modified you can see"
+    },
+    {
+      "start": 46.76,
+      "duration": 5.319,
+      "text": "refresh it and it says the volume has"
+    },
+    {
+      "start": 49.8,
+      "duration": 4.32,
+      "text": "been modified but this is not it you"
+    },
+    {
+      "start": 52.079,
+      "duration": 4.081,
+      "text": "need to run some commands to make sure"
+    },
+    {
+      "start": 54.12,
+      "duration": 3.98,
+      "text": "that the instance is using this 100 GB"
+    },
+    {
+      "start": 56.16,
+      "duration": 4.26,
+      "text": "so I'm going to log into my instance"
+    },
+    {
+      "start": 58.1,
+      "duration": 5.56,
+      "text": "which is"
+    },
+    {
+      "start": 60.42,
+      "duration": 5.16,
+      "text": "here so let me share my terminal right"
+    },
+    {
+      "start": 63.66,
+      "duration": 4.02,
+      "text": "now I am SSH into my instance which is"
+    },
+    {
+      "start": 65.58,
+      "duration": 4.14,
+      "text": "this ip172 and I'm going to clear this"
+    },
+    {
+      "start": 67.68,
+      "duration": 4.619,
+      "text": "out"
+    },
+    {
+      "start": 69.72,
+      "duration": 5.28,
+      "text": "if I show you the command DF hyphen H to"
+    },
+    {
+      "start": 72.299,
+      "duration": 6.561,
+      "text": "see how much storage is right now so you"
+    },
+    {
+      "start": 75.0,
+      "duration": 5.759,
+      "text": "can see we have"
+    },
+    {
+      "start": 78.86,
+      "duration": 5.2,
+      "text": "7.6 GB"
+    },
+    {
+      "start": 80.759,
+      "duration": 4.981,
+      "text": "out of which we have used this and 70 is"
+    },
+    {
+      "start": 84.06,
+      "duration": 3.9,
+      "text": "remaining so right now we have allocated"
+    },
+    {
+      "start": 85.74,
+      "duration": 4.44,
+      "text": "100 GB but it's still not using 100 GB"
+    },
+    {
+      "start": 87.96,
+      "duration": 4.38,
+      "text": "and to do that I'm going to run some"
+    },
+    {
+      "start": 90.18,
+      "duration": 3.54,
+      "text": "commands so I can search for"
+    },
+    {
+      "start": 92.34,
+      "duration": 4.739,
+      "text": "increase"
+    },
+    {
+      "start": 93.72,
+      "duration": 6.84,
+      "text": "EBS size ec2 and it will open a document"
+    },
+    {
+      "start": 97.079,
+      "duration": 5.521,
+      "text": "which is by AWS itself"
+    },
+    {
+      "start": 100.56,
+      "duration": 6.059,
+      "text": "copy the commands present here so this"
+    },
+    {
+      "start": 102.6,
+      "duration": 5.94,
+      "text": "command sudo LSP LK will show me"
+    },
+    {
+      "start": 106.619,
+      "duration": 3.96,
+      "text": "all the volumes present and the"
+    },
+    {
+      "start": 108.54,
+      "duration": 6.14,
+      "text": "partitions as well so run this command"
+    },
+    {
+      "start": 110.579,
+      "duration": 4.101,
+      "text": "sudo lsplk sorry"
+    },
+    {
+      "start": 117.54,
+      "duration": 5.219,
+      "text": "l s p l k"
+    },
+    {
+      "start": 121.02,
+      "duration": 4.68,
+      "text": "and it gives me all the less so you can"
+    },
+    {
+      "start": 122.759,
+      "duration": 5.28,
+      "text": "see 7.9 GB is what we see here which is"
+    },
+    {
+      "start": 125.7,
+      "duration": 5.88,
+      "text": "8GB and I need to increase the storage"
+    },
+    {
+      "start": 128.039,
+      "duration": 6.42,
+      "text": "because you can see 100 GB is here so we"
+    },
+    {
+      "start": 131.58,
+      "duration": 5.64,
+      "text": "need to make use of 100 GB at this path"
+    },
+    {
+      "start": 134.459,
+      "duration": 5.041,
+      "text": "xvda so I'm going to run some commands"
+    },
+    {
+      "start": 137.22,
+      "duration": 3.72,
+      "text": "so these commands are different if"
+    },
+    {
+      "start": 139.5,
+      "duration": 3.78,
+      "text": "you're using Nitro instance you need to"
+    },
+    {
+      "start": 140.94,
+      "duration": 4.26,
+      "text": "rest if you're using Zen you need to use"
+    },
+    {
+      "start": 143.28,
+      "duration": 3.48,
+      "text": "this so you can choose any of them right"
+    },
+    {
+      "start": 145.2,
+      "duration": 5.36,
+      "text": "now we're using this one because we can"
+    },
+    {
+      "start": 146.76,
+      "duration": 3.8,
+      "text": "see the path as xvda"
+    },
+    {
+      "start": 150.86,
+      "duration": 7.32,
+      "text": "xvda so I'm going to copy this"
+    },
+    {
+      "start": 154.14,
+      "duration": 4.04,
+      "text": "and paste it in my terminal again"
+    },
+    {
+      "start": 158.879,
+      "duration": 5.22,
+      "text": "and it it gives me an output says change"
+    },
+    {
+      "start": 161.34,
+      "duration": 5.1,
+      "text": "partition and this output but if you get"
+    },
+    {
+      "start": 164.099,
+      "duration": 5.161,
+      "text": "something some error like this which"
+    },
+    {
+      "start": 166.44,
+      "duration": 4.62,
+      "text": "says cannot create directory or any must"
+    },
+    {
+      "start": 169.26,
+      "duration": 4.259,
+      "text": "Supply partition number or anything else"
+    },
+    {
+      "start": 171.06,
+      "duration": 4.8,
+      "text": "you can configure it by reading the"
+    },
+    {
+      "start": 173.519,
+      "duration": 3.901,
+      "text": "information here so you get this error"
+    },
+    {
+      "start": 175.86,
+      "duration": 3.239,
+      "text": "Whenever there is no space you need to"
+    },
+    {
+      "start": 177.42,
+      "duration": 4.08,
+      "text": "delete something so that this command"
+    },
+    {
+      "start": 179.099,
+      "duration": 4.621,
+      "text": "can run now I need to run the next"
+    },
+    {
+      "start": 181.5,
+      "duration": 6.379,
+      "text": "command which is sudo lspl key again so"
+    },
+    {
+      "start": 183.72,
+      "duration": 4.159,
+      "text": "I'm going to run the command sudo LSP LK"
+    },
+    {
+      "start": 188.819,
+      "duration": 7.081,
+      "text": "so pseudo lsplk and now you can see it's"
+    },
+    {
+      "start": 192.239,
+      "duration": 8.161,
+      "text": "99 GB earlier it was just 7.6 GB"
+    },
+    {
+      "start": 195.9,
+      "duration": 6.479,
+      "text": "something so lsplk 7.9 GB now it is 99.9"
+    },
+    {
+      "start": 200.4,
+      "duration": 4.68,
+      "text": "GB which means we have increased storage"
+    },
+    {
+      "start": 202.379,
+      "duration": 5.881,
+      "text": "so I'm going to run this command"
+    },
+    {
+      "start": 205.08,
+      "duration": 6.6,
+      "text": "and see what do we get"
+    },
+    {
+      "start": 208.26,
+      "duration": 6.0,
+      "text": "sudo resize to fs and it says resize"
+    },
+    {
+      "start": 211.68,
+      "duration": 5.639,
+      "text": "happen and if I run the command DF"
+    },
+    {
+      "start": 214.26,
+      "duration": 5.699,
+      "text": "hyphen HD I should see that now the"
+    },
+    {
+      "start": 217.319,
+      "duration": 4.5,
+      "text": "storage has been increased to 97 GB"
+    },
+    {
+      "start": 219.959,
+      "duration": 4.681,
+      "text": "so this is how you increase your storage"
+    },
+    {
+      "start": 221.819,
+      "duration": 6.121,
+      "text": "and you can start using your 100 GB that"
+    },
+    {
+      "start": 224.64,
+      "duration": 5.879,
+      "text": "you have modified using your ec2 console"
+    },
+    {
+      "start": 227.94,
+      "duration": 5.28,
+      "text": "so you can see it is 100 GP now and it's"
+    },
+    {
+      "start": 230.519,
+      "duration": 5.28,
+      "text": "also using the same inside the"
+    },
+    {
+      "start": 233.22,
+      "duration": 4.019,
+      "text": "terminal as well right which is 97 GB"
+    },
+    {
+      "start": 235.799,
+      "duration": 4.741,
+      "text": "which means I have increased my storage"
+    },
+    {
+      "start": 237.239,
+      "duration": 4.92,
+      "text": "from 8 GB to 100 GB so this is how you"
+    },
+    {
+      "start": 240.54,
+      "duration": 4.259,
+      "text": "increase storage in your"
+    },
+    {
+      "start": 242.159,
+      "duration": 4.14,
+      "text": "ec2 if you have any questions any doubt"
+    },
+    {
+      "start": 244.799,
+      "duration": 4.44,
+      "text": "you can always"
+    },
+    {
+      "start": 246.299,
+      "duration": 5.761,
+      "text": "drop the questions in the comment and I"
+    },
+    {
+      "start": 249.239,
+      "duration": 4.981,
+      "text": "will answer that for more videos on AWS"
+    },
+    {
+      "start": 252.06,
+      "duration": 5.959,
+      "text": "and ec2 please subscribe to my channel"
+    },
+    {
+      "start": 254.22,
+      "duration": 3.799,
+      "text": "thank you and have a good day"
+    }
+  ]
+}

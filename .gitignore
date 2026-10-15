@@ -1,0 +1,13 @@
+# Python environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+.venv/
+
+# Streamlit local settings
+.streamlit/
+
+# Temporary outputs
+generated_scripts/

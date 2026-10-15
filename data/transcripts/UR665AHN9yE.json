@@ -1,0 +1,2826 @@
+{
+  "video": {
+    "id": "UR665AHN9yE",
+    "title": "Day 2: Master HCL syntax and Learn how to write Terraform Code",
+    "url": "https://www.youtube.com/watch?v=UR665AHN9yE",
+    "duration": 1141,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.659,
+      "duration": 4.021,
+      "text": "HCL or hashicorp configuration language"
+    },
+    {
+      "start": 3.179,
+      "duration": 3.66,
+      "text": "is used to create terraform"
+    },
+    {
+      "start": 4.68,
+      "duration": 3.54,
+      "text": "configuration files in this video I'll"
+    },
+    {
+      "start": 6.839,
+      "duration": 3.001,
+      "text": "be teaching you a CL right from the"
+    },
+    {
+      "start": 8.22,
+      "duration": 3.839,
+      "text": "scratch it's very important for you to"
+    },
+    {
+      "start": 9.84,
+      "duration": 4.2,
+      "text": "understand HCL and its syntax to learn"
+    },
+    {
+      "start": 12.059,
+      "duration": 5.181,
+      "text": "data form faster so watch this video"
+    },
+    {
+      "start": 14.04,
+      "duration": 3.2,
+      "text": "till the end let's start"
+    },
+    {
+      "start": 23.16,
+      "duration": 3.539,
+      "text": "Welcome to Cloud champ we are here on"
+    },
+    {
+      "start": 24.96,
+      "duration": 3.36,
+      "text": "the computer screen and in this video we"
+    },
+    {
+      "start": 26.699,
+      "duration": 3.721,
+      "text": "are going to learn about HCL or"
+    },
+    {
+      "start": 28.32,
+      "duration": 4.2,
+      "text": "hashicorp configuration language that we"
+    },
+    {
+      "start": 30.42,
+      "duration": 3.42,
+      "text": "use to write our terraform scripts this"
+    },
+    {
+      "start": 32.52,
+      "duration": 2.58,
+      "text": "is the second video in our terraform"
+    },
+    {
+      "start": 33.84,
+      "duration": 2.7,
+      "text": "playlist if you haven't checked out"
+    },
+    {
+      "start": 35.1,
+      "duration": 3.72,
+      "text": "please check out the data from playlist"
+    },
+    {
+      "start": 36.54,
+      "duration": 3.6,
+      "text": "to learn terraform from scratch"
+    },
+    {
+      "start": 38.82,
+      "duration": 3.18,
+      "text": "in this video I'll be teaching you"
+    },
+    {
+      "start": 40.14,
+      "duration": 4.32,
+      "text": "everything about HCL starting with data"
+    },
+    {
+      "start": 42.0,
+      "duration": 4.739,
+      "text": "types in HCL what are blocks in HCL what"
+    },
+    {
+      "start": 44.46,
+      "duration": 3.72,
+      "text": "do you mean by attributes in HCL what"
+    },
+    {
+      "start": 46.739,
+      "duration": 3.0,
+      "text": "what are functions and how to write them"
+    },
+    {
+      "start": 48.18,
+      "duration": 4.379,
+      "text": "how to write conditional statements in"
+    },
+    {
+      "start": 49.739,
+      "duration": 4.681,
+      "text": "HCL also what is resource dependency and"
+    },
+    {
+      "start": 52.559,
+      "duration": 3.361,
+      "text": "so much more in this video is going to"
+    },
+    {
+      "start": 54.42,
+      "duration": 3.119,
+      "text": "be very very important foundationals"
+    },
+    {
+      "start": 55.92,
+      "duration": 3.24,
+      "text": "video to help you understand the complex"
+    },
+    {
+      "start": 57.539,
+      "duration": 3.18,
+      "text": "topics we are going to learn in the"
+    },
+    {
+      "start": 59.16,
+      "duration": 2.94,
+      "text": "further sessions so make sure you watch"
+    },
+    {
+      "start": 60.719,
+      "duration": 3.541,
+      "text": "the video till the end and also practice"
+    },
+    {
+      "start": 62.1,
+      "duration": 4.019,
+      "text": "along with me also if you want to learn"
+    },
+    {
+      "start": 64.26,
+      "duration": 4.2,
+      "text": "more about HCL you can check out the"
+    },
+    {
+      "start": 66.119,
+      "duration": 4.201,
+      "text": "official documentation by hashicop and"
+    },
+    {
+      "start": 68.46,
+      "duration": 3.0,
+      "text": "their official repository as well the"
+    },
+    {
+      "start": 70.32,
+      "duration": 2.88,
+      "text": "links are going to be in the description"
+    },
+    {
+      "start": 71.46,
+      "duration": 3.78,
+      "text": "but this video is all you need to learn"
+    },
+    {
+      "start": 73.2,
+      "duration": 3.599,
+      "text": "HCL from scratch so let's start with"
+    },
+    {
+      "start": 75.24,
+      "duration": 3.419,
+      "text": "learning it I'm going to open my"
+    },
+    {
+      "start": 76.799,
+      "duration": 5.301,
+      "text": "terminal and create a new folder to"
+    },
+    {
+      "start": 78.659,
+      "duration": 7.021,
+      "text": "learn HCL so let's learn"
+    },
+    {
+      "start": 82.1,
+      "duration": 5.08,
+      "text": "and open this in vs code"
+    },
+    {
+      "start": 85.68,
+      "duration": 3.36,
+      "text": "for you to practice it make sure you"
+    },
+    {
+      "start": 87.18,
+      "duration": 4.439,
+      "text": "have vs code installed I have it already"
+    },
+    {
+      "start": 89.04,
+      "duration": 5.399,
+      "text": "installed so here's my vs code"
+    },
+    {
+      "start": 91.619,
+      "duration": 4.621,
+      "text": "and let's create a file name it main.ts"
+    },
+    {
+      "start": 94.439,
+      "duration": 3.901,
+      "text": "remember every terraform file should end"
+    },
+    {
+      "start": 96.24,
+      "duration": 3.9,
+      "text": "with DOT TF extension and we are not"
+    },
+    {
+      "start": 98.34,
+      "duration": 3.12,
+      "text": "creating any resource or anything as of"
+    },
+    {
+      "start": 100.14,
+      "duration": 3.54,
+      "text": "now but still we are going to name it"
+    },
+    {
+      "start": 101.46,
+      "duration": 4.199,
+      "text": "main.tf to make sure we follow the"
+    },
+    {
+      "start": 103.68,
+      "duration": 4.56,
+      "text": "practice now I'm going to add a comment"
+    },
+    {
+      "start": 105.659,
+      "duration": 5.761,
+      "text": "saying learning HCL"
+    },
+    {
+      "start": 108.24,
+      "duration": 4.98,
+      "text": "with Cloud chat"
+    },
+    {
+      "start": 111.42,
+      "duration": 3.18,
+      "text": "this is how you are a comment in HCL"
+    },
+    {
+      "start": 113.22,
+      "duration": 3.179,
+      "text": "then if you want to add a multi-line"
+    },
+    {
+      "start": 114.6,
+      "duration": 4.379,
+      "text": "comment you need to do it through slash"
+    },
+    {
+      "start": 116.399,
+      "duration": 6.061,
+      "text": "and a star symbol and you can see this"
+    },
+    {
+      "start": 118.979,
+      "duration": 5.761,
+      "text": "is a multi"
+    },
+    {
+      "start": 122.46,
+      "duration": 5.4,
+      "text": "line comment"
+    },
+    {
+      "start": 124.74,
+      "duration": 5.7,
+      "text": "and you can close this by star and slash"
+    },
+    {
+      "start": 127.86,
+      "duration": 4.8,
+      "text": "so this is how you add a comment in HCL"
+    },
+    {
+      "start": 130.44,
+      "duration": 3.42,
+      "text": "today we are going to learn about what"
+    },
+    {
+      "start": 132.66,
+      "duration": 3.0,
+      "text": "are blocks"
+    },
+    {
+      "start": 133.86,
+      "duration": 3.48,
+      "text": "so blocks in HCL and there are different"
+    },
+    {
+      "start": 135.66,
+      "duration": 4.079,
+      "text": "types of blocks that we are going to"
+    },
+    {
+      "start": 137.34,
+      "duration": 4.68,
+      "text": "look into next is"
+    },
+    {
+      "start": 139.739,
+      "duration": 4.621,
+      "text": "next is attributes so what do you mean"
+    },
+    {
+      "start": 142.02,
+      "duration": 3.6,
+      "text": "by attributes and what are they"
+    },
+    {
+      "start": 144.36,
+      "duration": 3.36,
+      "text": "after that we're able to learn about"
+    },
+    {
+      "start": 145.62,
+      "duration": 4.74,
+      "text": "data types so different data types like"
+    },
+    {
+      "start": 147.72,
+      "duration": 6.06,
+      "text": "string numbers Boolean Maps list Etc"
+    },
+    {
+      "start": 150.36,
+      "duration": 4.68,
+      "text": "then you have to look into conditions so"
+    },
+    {
+      "start": 153.78,
+      "duration": 2.76,
+      "text": "what are different conditions and how to"
+    },
+    {
+      "start": 155.04,
+      "duration": 4.02,
+      "text": "create conditional statements in HCL"
+    },
+    {
+      "start": 156.54,
+      "duration": 4.26,
+      "text": "what are functions in HCL and how to"
+    },
+    {
+      "start": 159.06,
+      "duration": 5.959,
+      "text": "write them lastly we're going to see the"
+    },
+    {
+      "start": 160.8,
+      "duration": 4.219,
+      "text": "resource dependency and more things"
+    },
+    {
+      "start": 166.62,
+      "duration": 2.94,
+      "text": "so this video is going to cover few more"
+    },
+    {
+      "start": 168.3,
+      "duration": 2.46,
+      "text": "things that are not there in the"
+    },
+    {
+      "start": 169.56,
+      "duration": 2.819,
+      "text": "documentation so make sure you follow"
+    },
+    {
+      "start": 170.76,
+      "duration": 3.18,
+      "text": "the video till the end and let's start"
+    },
+    {
+      "start": 172.379,
+      "duration": 2.701,
+      "text": "with what is vlog"
+    },
+    {
+      "start": 173.94,
+      "duration": 2.879,
+      "text": "so if you look at the official"
+    },
+    {
+      "start": 175.08,
+      "duration": 3.84,
+      "text": "documentation and try to understand what"
+    },
+    {
+      "start": 176.819,
+      "duration": 4.081,
+      "text": "is block according to HCL a block is a"
+    },
+    {
+      "start": 178.92,
+      "duration": 4.14,
+      "text": "container for other content and this is"
+    },
+    {
+      "start": 180.9,
+      "duration": 4.08,
+      "text": "an example here so it's a resource block"
+    },
+    {
+      "start": 183.06,
+      "duration": 4.319,
+      "text": "and there's a network interface block"
+    },
+    {
+      "start": 184.98,
+      "duration": 3.78,
+      "text": "inside resource block so a resource"
+    },
+    {
+      "start": 187.379,
+      "duration": 3.0,
+      "text": "block has some arguments and then it"
+    },
+    {
+      "start": 188.76,
+      "duration": 3.42,
+      "text": "starts with curly brackets to help you"
+    },
+    {
+      "start": 190.379,
+      "duration": 3.481,
+      "text": "give you a simple lesson so here's a"
+    },
+    {
+      "start": 192.18,
+      "duration": 3.36,
+      "text": "simple syntax of block block is going to"
+    },
+    {
+      "start": 193.86,
+      "duration": 3.06,
+      "text": "have a block type and then attribute and"
+    },
+    {
+      "start": 195.54,
+      "duration": 3.66,
+      "text": "value there are many different block"
+    },
+    {
+      "start": 196.92,
+      "duration": 4.2,
+      "text": "types in in terraform there's a provider"
+    },
+    {
+      "start": 199.2,
+      "duration": 4.74,
+      "text": "block a resource block data block"
+    },
+    {
+      "start": 201.12,
+      "duration": 4.32,
+      "text": "variable block output block and so much"
+    },
+    {
+      "start": 203.94,
+      "duration": 3.06,
+      "text": "more so"
+    },
+    {
+      "start": 205.44,
+      "duration": 3.9,
+      "text": "depending on the Block type you might"
+    },
+    {
+      "start": 207.0,
+      "duration": 3.959,
+      "text": "have parameters in front of it or you"
+    },
+    {
+      "start": 209.34,
+      "duration": 3.6,
+      "text": "might not but there will be attributes"
+    },
+    {
+      "start": 210.959,
+      "duration": 4.56,
+      "text": "and value here so what do you mean by"
+    },
+    {
+      "start": 212.94,
+      "duration": 4.379,
+      "text": "attributes so attributes are key value"
+    },
+    {
+      "start": 215.519,
+      "duration": 5.22,
+      "text": "pair there's going to be a key and a"
+    },
+    {
+      "start": 217.319,
+      "duration": 5.221,
+      "text": "value so key equals to value"
+    },
+    {
+      "start": 220.739,
+      "duration": 3.961,
+      "text": "so let's try to understand attributes"
+    },
+    {
+      "start": 222.54,
+      "duration": 4.559,
+      "text": "and block with an example of creating an"
+    },
+    {
+      "start": 224.7,
+      "duration": 4.679,
+      "text": "instance so"
+    },
+    {
+      "start": 227.099,
+      "duration": 4.081,
+      "text": "here is the terraform code to create an"
+    },
+    {
+      "start": 229.379,
+      "duration": 3.36,
+      "text": "instance so this is a resource block and"
+    },
+    {
+      "start": 231.18,
+      "duration": 3.9,
+      "text": "it has a resource type known as AWS"
+    },
+    {
+      "start": 232.739,
+      "duration": 3.661,
+      "text": "instance there is attribute named as Ami"
+    },
+    {
+      "start": 235.08,
+      "duration": 2.519,
+      "text": "and this is the value of the attribute"
+    },
+    {
+      "start": 236.4,
+      "duration": 3.36,
+      "text": "similarly this attribute nameless"
+    },
+    {
+      "start": 237.599,
+      "duration": 4.081,
+      "text": "instance type and the name of the value"
+    },
+    {
+      "start": 239.76,
+      "duration": 3.96,
+      "text": "of the attribute let's try to add some"
+    },
+    {
+      "start": 241.68,
+      "duration": 3.119,
+      "text": "more attribute so you can add attribute"
+    },
+    {
+      "start": 243.72,
+      "duration": 3.18,
+      "text": "named as count"
+    },
+    {
+      "start": 244.799,
+      "duration": 3.061,
+      "text": "saying 3 which means I need to have"
+    },
+    {
+      "start": 246.9,
+      "duration": 3.18,
+      "text": "three"
+    },
+    {
+      "start": 247.86,
+      "duration": 4.799,
+      "text": "three instances and we can also add"
+    },
+    {
+      "start": 250.08,
+      "duration": 4.5,
+      "text": "enabled equals to true"
+    },
+    {
+      "start": 252.659,
+      "duration": 3.601,
+      "text": "so now there are four different"
+    },
+    {
+      "start": 254.58,
+      "duration": 4.559,
+      "text": "attributes here"
+    },
+    {
+      "start": 256.26,
+      "duration": 4.379,
+      "text": "Ami instance type count and enabled and"
+    },
+    {
+      "start": 259.139,
+      "duration": 3.181,
+      "text": "if you look at the different values this"
+    },
+    {
+      "start": 260.639,
+      "duration": 3.301,
+      "text": "is the value which which is enclosed in"
+    },
+    {
+      "start": 262.32,
+      "duration": 3.48,
+      "text": "double quotes because it is in string"
+    },
+    {
+      "start": 263.94,
+      "duration": 3.78,
+      "text": "this is also in string so it's in double"
+    },
+    {
+      "start": 265.8,
+      "duration": 3.36,
+      "text": "quotes this is a number so it is not a"
+    },
+    {
+      "start": 267.72,
+      "duration": 3.0,
+      "text": "double quotes and this is a Boolean"
+    },
+    {
+      "start": 269.16,
+      "duration": 3.42,
+      "text": "value so it's not in double quotes which"
+    },
+    {
+      "start": 270.72,
+      "duration": 3.72,
+      "text": "means there are different types in HCL"
+    },
+    {
+      "start": 272.58,
+      "duration": 4.32,
+      "text": "so there's string which should be always"
+    },
+    {
+      "start": 274.44,
+      "duration": 5.36,
+      "text": "in double quotes"
+    },
+    {
+      "start": 276.9,
+      "duration": 2.9,
+      "text": "this number"
+    },
+    {
+      "start": 280.32,
+      "duration": 5.46,
+      "text": "then you have Boolean"
+    },
+    {
+      "start": 283.199,
+      "duration": 5.94,
+      "text": "which can be true or false and you also"
+    },
+    {
+      "start": 285.78,
+      "duration": 6.419,
+      "text": "have list and Maps so let's look more"
+    },
+    {
+      "start": 289.139,
+      "duration": 5.041,
+      "text": "into list and Maps now"
+    },
+    {
+      "start": 292.199,
+      "duration": 3.481,
+      "text": "so what do you mean by list list means"
+    },
+    {
+      "start": 294.18,
+      "duration": 2.82,
+      "text": "list of something it can be list of"
+    },
+    {
+      "start": 295.68,
+      "duration": 2.88,
+      "text": "security groups it can be list of"
+    },
+    {
+      "start": 297.0,
+      "duration": 3.96,
+      "text": "subnets it can be list of servers"
+    },
+    {
+      "start": 298.56,
+      "duration": 4.859,
+      "text": "databases and so much more so list is"
+    },
+    {
+      "start": 300.96,
+      "duration": 3.959,
+      "text": "always defined in square brackets this"
+    },
+    {
+      "start": 303.419,
+      "duration": 5.701,
+      "text": "is what you will Define and it will have"
+    },
+    {
+      "start": 304.919,
+      "duration": 7.081,
+      "text": "items inside it so item one comma"
+    },
+    {
+      "start": 309.12,
+      "duration": 4.5,
+      "text": "item two"
+    },
+    {
+      "start": 312.0,
+      "duration": 4.62,
+      "text": "comma"
+    },
+    {
+      "start": 313.62,
+      "duration": 4.26,
+      "text": "item three so to give you an example you"
+    },
+    {
+      "start": 316.62,
+      "duration": 3.0,
+      "text": "can have a scenario where you need to"
+    },
+    {
+      "start": 317.88,
+      "duration": 3.24,
+      "text": "attach multiple security groups to an"
+    },
+    {
+      "start": 319.62,
+      "duration": 3.079,
+      "text": "instance so it can be list of security"
+    },
+    {
+      "start": 321.12,
+      "duration": 4.38,
+      "text": "groups it can be security"
+    },
+    {
+      "start": 322.699,
+      "duration": 5.621,
+      "text": "underscore groups"
+    },
+    {
+      "start": 325.5,
+      "duration": 7.44,
+      "text": "equals to in square brackets it will be"
+    },
+    {
+      "start": 328.32,
+      "duration": 6.36,
+      "text": "SG hyphen something then comma"
+    },
+    {
+      "start": 332.94,
+      "duration": 3.3,
+      "text": "SG"
+    },
+    {
+      "start": 334.68,
+      "duration": 4.859,
+      "text": "hyphen"
+    },
+    {
+      "start": 336.24,
+      "duration": 5.34,
+      "text": "something again okay similarly you can"
+    },
+    {
+      "start": 339.539,
+      "duration": 3.541,
+      "text": "add a list of subnets and so much more"
+    },
+    {
+      "start": 341.58,
+      "duration": 3.66,
+      "text": "indifferent"
+    },
+    {
+      "start": 343.08,
+      "duration": 4.8,
+      "text": "the resource type now let's look at what"
+    },
+    {
+      "start": 345.24,
+      "duration": 5.28,
+      "text": "are maps in HCL so what are Mac what is"
+    },
+    {
+      "start": 347.88,
+      "duration": 4.56,
+      "text": "map data type in HCL"
+    },
+    {
+      "start": 350.52,
+      "duration": 3.42,
+      "text": "in HCL maps are defined using curly"
+    },
+    {
+      "start": 352.44,
+      "duration": 3.599,
+      "text": "brackets and they follow the key value"
+    },
+    {
+      "start": 353.94,
+      "duration": 3.599,
+      "text": "syntax similar to dictionaries in Python"
+    },
+    {
+      "start": 356.039,
+      "duration": 3.72,
+      "text": "and other programming language so you"
+    },
+    {
+      "start": 357.539,
+      "duration": 4.621,
+      "text": "can see here we have a variable block"
+    },
+    {
+      "start": 359.759,
+      "duration": 4.261,
+      "text": "defined with map as a data type and here"
+    },
+    {
+      "start": 362.16,
+      "duration": 4.14,
+      "text": "is the key value pair this key value"
+    },
+    {
+      "start": 364.02,
+      "duration": 3.54,
+      "text": "pair can be of different data type it"
+    },
+    {
+      "start": 366.3,
+      "duration": 2.94,
+      "text": "can be a string it can also have a"
+    },
+    {
+      "start": 367.56,
+      "duration": 3.54,
+      "text": "number in it it can also have Boolean"
+    },
+    {
+      "start": 369.24,
+      "duration": 3.06,
+      "text": "types in it to give to provide with"
+    },
+    {
+      "start": 371.1,
+      "duration": 3.3,
+      "text": "another example let's try to add the"
+    },
+    {
+      "start": 372.3,
+      "duration": 3.78,
+      "text": "details about John and here is the name"
+    },
+    {
+      "start": 374.4,
+      "duration": 4.68,
+      "text": "of the John name equals to John do age"
+    },
+    {
+      "start": 376.08,
+      "duration": 5.1,
+      "text": "equals to 30 is admin equals to two so"
+    },
+    {
+      "start": 379.08,
+      "duration": 3.36,
+      "text": "this is what maps are and if you want to"
+    },
+    {
+      "start": 381.18,
+      "duration": 2.519,
+      "text": "get the value of any of these things"
+    },
+    {
+      "start": 382.44,
+      "duration": 3.0,
+      "text": "here let's say you want to get the age"
+    },
+    {
+      "start": 383.699,
+      "duration": 5.641,
+      "text": "of John how can we get it we can get it"
+    },
+    {
+      "start": 385.44,
+      "duration": 5.879,
+      "text": "by locals dot my underscore map"
+    },
+    {
+      "start": 389.34,
+      "duration": 3.299,
+      "text": "and inside square brackets we can Define"
+    },
+    {
+      "start": 391.319,
+      "duration": 2.82,
+      "text": "the term we want to get so we want to"
+    },
+    {
+      "start": 392.639,
+      "duration": 2.701,
+      "text": "get the age so we're going to say h this"
+    },
+    {
+      "start": 394.139,
+      "duration": 2.821,
+      "text": "is how you can this is how you can get"
+    },
+    {
+      "start": 395.34,
+      "duration": 4.02,
+      "text": "the value of particular attribute inside"
+    },
+    {
+      "start": 396.96,
+      "duration": 4.56,
+      "text": "map next let's go and check out"
+    },
+    {
+      "start": 399.36,
+      "duration": 3.72,
+      "text": "condition statement conditions in HCL"
+    },
+    {
+      "start": 401.52,
+      "duration": 3.48,
+      "text": "are very important to make decisions or"
+    },
+    {
+      "start": 403.08,
+      "duration": 3.36,
+      "text": "to execute a certain block of code and"
+    },
+    {
+      "start": 405.0,
+      "duration": 3.539,
+      "text": "there can be various scenarios where you"
+    },
+    {
+      "start": 406.44,
+      "duration": 3.0,
+      "text": "might be using condition uh some the"
+    },
+    {
+      "start": 408.539,
+      "duration": 2.1,
+      "text": "first scenario would be different"
+    },
+    {
+      "start": 409.44,
+      "duration": 3.479,
+      "text": "environments let's say you have"
+    },
+    {
+      "start": 410.639,
+      "duration": 3.301,
+      "text": "production and staging and development"
+    },
+    {
+      "start": 412.919,
+      "duration": 2.641,
+      "text": "environment and you need to create"
+    },
+    {
+      "start": 413.94,
+      "duration": 3.06,
+      "text": "different resources let's say in"
+    },
+    {
+      "start": 415.56,
+      "duration": 3.18,
+      "text": "production you wanted to launch instance"
+    },
+    {
+      "start": 417.0,
+      "duration": 4.56,
+      "text": "type in development you want you to"
+    },
+    {
+      "start": 418.74,
+      "duration": 4.019,
+      "text": "small uh in staging you might need T2"
+    },
+    {
+      "start": 421.56,
+      "duration": 2.639,
+      "text": "micro or something like that so you can"
+    },
+    {
+      "start": 422.759,
+      "duration": 2.88,
+      "text": "use condition saying that if the"
+    },
+    {
+      "start": 424.199,
+      "duration": 4.081,
+      "text": "environment is test then create this"
+    },
+    {
+      "start": 425.639,
+      "duration": 4.921,
+      "text": "instance another example would be"
+    },
+    {
+      "start": 428.28,
+      "duration": 4.56,
+      "text": "you can also have conditions on certain"
+    },
+    {
+      "start": 430.56,
+      "duration": 4.859,
+      "text": "criterias if the feature is enabled then"
+    },
+    {
+      "start": 432.84,
+      "duration": 4.32,
+      "text": "do this for example if the database is"
+    },
+    {
+      "start": 435.419,
+      "duration": 4.021,
+      "text": "public don't connect it to ec2 but if it"
+    },
+    {
+      "start": 437.16,
+      "duration": 3.659,
+      "text": "is private then connect it to ec2 that"
+    },
+    {
+      "start": 439.44,
+      "duration": 3.24,
+      "text": "then you can Define this in the form of"
+    },
+    {
+      "start": 440.819,
+      "duration": 4.5,
+      "text": "condition also you can say that if the"
+    },
+    {
+      "start": 442.68,
+      "duration": 4.34,
+      "text": "CPU of my first instance is 50 then"
+    },
+    {
+      "start": 445.319,
+      "duration": 4.38,
+      "text": "launch another then launch another"
+    },
+    {
+      "start": 447.02,
+      "duration": 4.299,
+      "text": "server so to demonstrate this let's try"
+    },
+    {
+      "start": 449.699,
+      "duration": 3.661,
+      "text": "to create a resource here so I'm going"
+    },
+    {
+      "start": 451.319,
+      "duration": 4.621,
+      "text": "to say resource of AWS underscore"
+    },
+    {
+      "start": 453.36,
+      "duration": 4.32,
+      "text": "instance so AWS"
+    },
+    {
+      "start": 455.94,
+      "duration": 3.18,
+      "text": "instance and we are going to use the"
+    },
+    {
+      "start": 457.68,
+      "duration": 3.239,
+      "text": "example of the environment so let's"
+    },
+    {
+      "start": 459.12,
+      "duration": 3.24,
+      "text": "create a server"
+    },
+    {
+      "start": 460.919,
+      "duration": 3.06,
+      "text": "and inside this I'm going to say"
+    },
+    {
+      "start": 462.36,
+      "duration": 3.66,
+      "text": "instance type"
+    },
+    {
+      "start": 463.979,
+      "duration": 4.5,
+      "text": "so instance type can be generally T to"
+    },
+    {
+      "start": 466.02,
+      "duration": 5.519,
+      "text": "micro or it can be instance type can be"
+    },
+    {
+      "start": 468.479,
+      "duration": 5.16,
+      "text": "T2 micro or T2 small but here we want to"
+    },
+    {
+      "start": 471.539,
+      "duration": 3.541,
+      "text": "have a condition saying that if the"
+    },
+    {
+      "start": 473.639,
+      "duration": 3.12,
+      "text": "development if the environment is"
+    },
+    {
+      "start": 475.08,
+      "duration": 3.119,
+      "text": "development then it should be T2 micro"
+    },
+    {
+      "start": 476.759,
+      "duration": 3.72,
+      "text": "if it is not development then it should"
+    },
+    {
+      "start": 478.199,
+      "duration": 3.421,
+      "text": "be T2 small so to Define this in"
+    },
+    {
+      "start": 480.479,
+      "duration": 2.881,
+      "text": "condition we are going to define the"
+    },
+    {
+      "start": 481.62,
+      "duration": 3.06,
+      "text": "value of the environment in a variable"
+    },
+    {
+      "start": 483.36,
+      "duration": 2.88,
+      "text": "we are not creating it but this is how"
+    },
+    {
+      "start": 484.68,
+      "duration": 4.26,
+      "text": "you will be doing it so variable of"
+    },
+    {
+      "start": 486.24,
+      "duration": 5.94,
+      "text": "environment is development"
+    },
+    {
+      "start": 488.94,
+      "duration": 4.92,
+      "text": "in double quotes development"
+    },
+    {
+      "start": 492.18,
+      "duration": 2.94,
+      "text": "then start the condition saying the"
+    },
+    {
+      "start": 493.86,
+      "duration": 3.42,
+      "text": "study condition will start with this"
+    },
+    {
+      "start": 495.12,
+      "duration": 4.019,
+      "text": "question mark saying if the value of"
+    },
+    {
+      "start": 497.28,
+      "duration": 4.139,
+      "text": "environment is development then I should"
+    },
+    {
+      "start": 499.139,
+      "duration": 4.921,
+      "text": "be using T2 micro"
+    },
+    {
+      "start": 501.419,
+      "duration": 5.941,
+      "text": "but if the value is not this then I"
+    },
+    {
+      "start": 504.06,
+      "duration": 5.46,
+      "text": "should be using 2 to small"
+    },
+    {
+      "start": 507.36,
+      "duration": 3.899,
+      "text": "so if the value here in the environment"
+    },
+    {
+      "start": 509.52,
+      "duration": 3.959,
+      "text": "is development then you will be creating"
+    },
+    {
+      "start": 511.259,
+      "duration": 3.9,
+      "text": "an instance which is T2 micro and if it"
+    },
+    {
+      "start": 513.479,
+      "duration": 3.661,
+      "text": "is production or staging it will be"
+    },
+    {
+      "start": 515.159,
+      "duration": 4.021,
+      "text": "creating T2 small this is how you will"
+    },
+    {
+      "start": 517.14,
+      "duration": 3.12,
+      "text": "create conditions uh I hope this makes"
+    },
+    {
+      "start": 519.18,
+      "duration": 2.82,
+      "text": "sense if you have any questions"
+    },
+    {
+      "start": 520.26,
+      "duration": 3.42,
+      "text": "regarding conditions let me know in the"
+    },
+    {
+      "start": 522.0,
+      "duration": 4.14,
+      "text": "comment section and let's move to the"
+    },
+    {
+      "start": 523.68,
+      "duration": 4.38,
+      "text": "next thing which is functions in HCL"
+    },
+    {
+      "start": 526.14,
+      "duration": 3.12,
+      "text": "functions in HCL are very helpful that"
+    },
+    {
+      "start": 528.06,
+      "duration": 3.12,
+      "text": "can help you perform operations"
+    },
+    {
+      "start": 529.26,
+      "duration": 3.9,
+      "text": "calculations and Transformations within"
+    },
+    {
+      "start": 531.18,
+      "duration": 3.24,
+      "text": "your code and HCL provides you with so"
+    },
+    {
+      "start": 533.16,
+      "duration": 3.42,
+      "text": "many different functions that can use"
+    },
+    {
+      "start": 534.42,
+      "duration": 3.599,
+      "text": "use to manipulate data and validate"
+    },
+    {
+      "start": 536.58,
+      "duration": 2.879,
+      "text": "inputs and so much more let's have a"
+    },
+    {
+      "start": 538.019,
+      "duration": 3.541,
+      "text": "look at all the different functions that"
+    },
+    {
+      "start": 539.459,
+      "duration": 4.261,
+      "text": "I'd see at CL has so here you can see"
+    },
+    {
+      "start": 541.56,
+      "duration": 3.54,
+      "text": "this built-in function uh this is the"
+    },
+    {
+      "start": 543.72,
+      "duration": 3.179,
+      "text": "max function to check out the maximum"
+    },
+    {
+      "start": 545.1,
+      "duration": 3.54,
+      "text": "volume on all these three so the maximum"
+    },
+    {
+      "start": 546.899,
+      "duration": 3.301,
+      "text": "value is 12 here but there are also more"
+    },
+    {
+      "start": 548.64,
+      "duration": 4.139,
+      "text": "functions for numeric functions you have"
+    },
+    {
+      "start": 550.2,
+      "duration": 4.259,
+      "text": "Max minimum pass and floor all these"
+    },
+    {
+      "start": 552.779,
+      "duration": 4.56,
+      "text": "things first string you have charm Pence"
+    },
+    {
+      "start": 554.459,
+      "duration": 4.44,
+      "text": "width format join upward lower all this"
+    },
+    {
+      "start": 557.339,
+      "duration": 4.62,
+      "text": "stuff you also have functions for"
+    },
+    {
+      "start": 558.899,
+      "duration": 4.801,
+      "text": "collections for encoding and lot more"
+    },
+    {
+      "start": 561.959,
+      "duration": 3.241,
+      "text": "along with this if you want to have a"
+    },
+    {
+      "start": 563.7,
+      "duration": 4.44,
+      "text": "custom function you can also create it"
+    },
+    {
+      "start": 565.2,
+      "duration": 4.62,
+      "text": "using modules let's try to create to"
+    },
+    {
+      "start": 568.14,
+      "duration": 3.12,
+      "text": "show you this with Hands-On or with a"
+    },
+    {
+      "start": 569.82,
+      "duration": 3.42,
+      "text": "practical use case let's try to"
+    },
+    {
+      "start": 571.26,
+      "duration": 4.98,
+      "text": "demonstrate this using"
+    },
+    {
+      "start": 573.24,
+      "duration": 5.34,
+      "text": "a local block so in this example I will"
+    },
+    {
+      "start": 576.24,
+      "duration": 4.26,
+      "text": "try to create a value for a person named"
+    },
+    {
+      "start": 578.58,
+      "duration": 3.18,
+      "text": "as John and I would create a message"
+    },
+    {
+      "start": 580.5,
+      "duration": 4.26,
+      "text": "using all these different functions"
+    },
+    {
+      "start": 581.76,
+      "duration": 4.8,
+      "text": "saying hello hello John I I know you"
+    },
+    {
+      "start": 584.76,
+      "duration": 3.12,
+      "text": "like mangoes apples and bananas"
+    },
+    {
+      "start": 586.56,
+      "duration": 3.66,
+      "text": "something like this so let's try to"
+    },
+    {
+      "start": 587.88,
+      "duration": 4.079,
+      "text": "create an attribute named as name and"
+    },
+    {
+      "start": 590.22,
+      "duration": 2.84,
+      "text": "the value would be John"
+    },
+    {
+      "start": 591.959,
+      "duration": 4.341,
+      "text": "Cena"
+    },
+    {
+      "start": 593.06,
+      "duration": 5.62,
+      "text": "John Cena and"
+    },
+    {
+      "start": 596.3,
+      "duration": 5.02,
+      "text": "here I would include Goods list of"
+    },
+    {
+      "start": 598.68,
+      "duration": 4.62,
+      "text": "fruits so fruits equals to in square"
+    },
+    {
+      "start": 601.32,
+      "duration": 4.079,
+      "text": "brackets I'm going to say apple"
+    },
+    {
+      "start": 603.3,
+      "duration": 3.42,
+      "text": "I'm sure Johnson also loves bananas I'm"
+    },
+    {
+      "start": 605.399,
+      "duration": 3.541,
+      "text": "going to say banana"
+    },
+    {
+      "start": 606.72,
+      "duration": 4.86,
+      "text": "and who doesn't loves mangoes I'm going"
+    },
+    {
+      "start": 608.94,
+      "duration": 4.44,
+      "text": "to say mango as well okay now I have two"
+    },
+    {
+      "start": 611.58,
+      "duration": 4.319,
+      "text": "three fruits here let's create a message"
+    },
+    {
+      "start": 613.38,
+      "duration": 4.139,
+      "text": "using all the different functions that"
+    },
+    {
+      "start": 615.899,
+      "duration": 3.961,
+      "text": "you can use for string so I'm going to"
+    },
+    {
+      "start": 617.519,
+      "duration": 5.581,
+      "text": "say message equals to"
+    },
+    {
+      "start": 619.86,
+      "duration": 4.919,
+      "text": "hello and I want John Cena to be all in"
+    },
+    {
+      "start": 623.1,
+      "duration": 4.2,
+      "text": "capital so I'm going to say uppercase"
+    },
+    {
+      "start": 624.779,
+      "duration": 4.081,
+      "text": "using this you can add functions or you"
+    },
+    {
+      "start": 627.3,
+      "duration": 4.14,
+      "text": "can also this is known as interpolation"
+    },
+    {
+      "start": 628.86,
+      "duration": 3.96,
+      "text": "so it's going to be in dollar sign and"
+    },
+    {
+      "start": 631.44,
+      "duration": 3.959,
+      "text": "curly brackets inside this I'm going to"
+    },
+    {
+      "start": 632.82,
+      "duration": 3.84,
+      "text": "say upper and I want to have this in"
+    },
+    {
+      "start": 635.399,
+      "duration": 2.461,
+      "text": "capital so the name which is inside"
+    },
+    {
+      "start": 636.66,
+      "duration": 2.76,
+      "text": "locals"
+    },
+    {
+      "start": 637.86,
+      "duration": 7.56,
+      "text": "so I'm going to say"
+    },
+    {
+      "start": 639.42,
+      "duration": 9.0,
+      "text": "uh with double this local dot name"
+    },
+    {
+      "start": 645.42,
+      "duration": 4.38,
+      "text": "and I'm going to say hello John Cena I"
+    },
+    {
+      "start": 648.42,
+      "duration": 3.06,
+      "text": "know"
+    },
+    {
+      "start": 649.8,
+      "duration": 3.659,
+      "text": "you like"
+    },
+    {
+      "start": 651.48,
+      "duration": 3.419,
+      "text": "apples banana and mangoes I want to All"
+    },
+    {
+      "start": 653.459,
+      "duration": 2.641,
+      "text": "Join all of these in one sentence I'm"
+    },
+    {
+      "start": 654.899,
+      "duration": 3.18,
+      "text": "going to say"
+    },
+    {
+      "start": 656.1,
+      "duration": 3.179,
+      "text": "this dollar symbol again with curly"
+    },
+    {
+      "start": 658.079,
+      "duration": 2.401,
+      "text": "brackets and inside this I'm going to"
+    },
+    {
+      "start": 659.279,
+      "duration": 2.581,
+      "text": "say join"
+    },
+    {
+      "start": 660.48,
+      "duration": 3.419,
+      "text": "and in this I'm going to say join this"
+    },
+    {
+      "start": 661.86,
+      "duration": 3.479,
+      "text": "with a comma Sim so in double quotes I'm"
+    },
+    {
+      "start": 663.899,
+      "duration": 3.301,
+      "text": "going to say comma"
+    },
+    {
+      "start": 665.339,
+      "duration": 5.221,
+      "text": "I want to join all the fruits so I'm"
+    },
+    {
+      "start": 667.2,
+      "duration": 6.0,
+      "text": "going to say local dot fruits so once"
+    },
+    {
+      "start": 670.56,
+      "duration": 4.56,
+      "text": "this is executed and we the value would"
+    },
+    {
+      "start": 673.2,
+      "duration": 5.28,
+      "text": "be something like this so this"
+    },
+    {
+      "start": 675.12,
+      "duration": 6.0,
+      "text": "hello John"
+    },
+    {
+      "start": 678.48,
+      "duration": 10.44,
+      "text": "Cena"
+    },
+    {
+      "start": 681.12,
+      "duration": 10.5,
+      "text": "I know you like apple comma banana"
+    },
+    {
+      "start": 688.92,
+      "duration": 4.919,
+      "text": "comma mango this is what I output would"
+    },
+    {
+      "start": 691.62,
+      "duration": 4.56,
+      "text": "be when we use upper which is going to"
+    },
+    {
+      "start": 693.839,
+      "duration": 4.381,
+      "text": "format everything in capital letters and"
+    },
+    {
+      "start": 696.18,
+      "duration": 4.74,
+      "text": "join which will join all these things in"
+    },
+    {
+      "start": 698.22,
+      "duration": 4.619,
+      "text": "one sentence so you can check the uh"
+    },
+    {
+      "start": 700.92,
+      "duration": 4.5,
+      "text": "more about upper and join here so let's"
+    },
+    {
+      "start": 702.839,
+      "duration": 4.321,
+      "text": "let me show you the join function in the"
+    },
+    {
+      "start": 705.42,
+      "duration": 3.24,
+      "text": "string so here we have string and here's"
+    },
+    {
+      "start": 707.16,
+      "duration": 3.239,
+      "text": "a joint function you can see this is how"
+    },
+    {
+      "start": 708.66,
+      "duration": 6.48,
+      "text": "you can join it so here the separator is"
+    },
+    {
+      "start": 710.399,
+      "duration": 6.0,
+      "text": "a hyphen we used this separator and we"
+    },
+    {
+      "start": 715.14,
+      "duration": 2.819,
+      "text": "have all the values defined in the local"
+    },
+    {
+      "start": 716.399,
+      "duration": 3.12,
+      "text": "so we are not using this this is how you"
+    },
+    {
+      "start": 717.959,
+      "duration": 3.361,
+      "text": "can use different functions which can"
+    },
+    {
+      "start": 719.519,
+      "duration": 5.401,
+      "text": "help you modify the data in your code"
+    },
+    {
+      "start": 721.32,
+      "duration": 6.48,
+      "text": "and create Dynamic messages as well now"
+    },
+    {
+      "start": 724.92,
+      "duration": 4.74,
+      "text": "let's let's talk about dependencies"
+    },
+    {
+      "start": 727.8,
+      "duration": 4.2,
+      "text": "now let's move to the next topic which"
+    },
+    {
+      "start": 729.66,
+      "duration": 4.619,
+      "text": "is resource dependency in HCL"
+    },
+    {
+      "start": 732.0,
+      "duration": 3.42,
+      "text": "resource dependency in HCL is very"
+    },
+    {
+      "start": 734.279,
+      "duration": 3.18,
+      "text": "important and you might be using this"
+    },
+    {
+      "start": 735.42,
+      "duration": 3.539,
+      "text": "every time resource dependencies are"
+    },
+    {
+      "start": 737.459,
+      "duration": 3.12,
+      "text": "usually used to create relationship"
+    },
+    {
+      "start": 738.959,
+      "duration": 3.421,
+      "text": "between two different resources and also"
+    },
+    {
+      "start": 740.579,
+      "duration": 3.541,
+      "text": "to define the order on how they should"
+    },
+    {
+      "start": 742.38,
+      "duration": 3.42,
+      "text": "be created and there are two types of"
+    },
+    {
+      "start": 744.12,
+      "duration": 3.779,
+      "text": "dependency implicit dependency and"
+    },
+    {
+      "start": 745.8,
+      "duration": 3.779,
+      "text": "explicit dependency implicit dependency"
+    },
+    {
+      "start": 747.899,
+      "duration": 2.94,
+      "text": "is done automatically by terraform and"
+    },
+    {
+      "start": 749.579,
+      "duration": 2.76,
+      "text": "you don't need to do it but if you want"
+    },
+    {
+      "start": 750.839,
+      "duration": 2.94,
+      "text": "to explicit Define that there's a"
+    },
+    {
+      "start": 752.339,
+      "duration": 3.421,
+      "text": "dependency between two resources you can"
+    },
+    {
+      "start": 753.779,
+      "duration": 4.261,
+      "text": "use depends on wet argument which you'll"
+    },
+    {
+      "start": 755.76,
+      "duration": 4.019,
+      "text": "be learning later on so to help you with"
+    },
+    {
+      "start": 758.04,
+      "duration": 3.84,
+      "text": "an example let's say you have instance"
+    },
+    {
+      "start": 759.779,
+      "duration": 3.781,
+      "text": "and a security group created separately"
+    },
+    {
+      "start": 761.88,
+      "duration": 4.019,
+      "text": "but you want to use that security group"
+    },
+    {
+      "start": 763.56,
+      "duration": 3.959,
+      "text": "with this instance so this instance"
+    },
+    {
+      "start": 765.899,
+      "duration": 3.24,
+      "text": "depends on this Security Group so let's"
+    },
+    {
+      "start": 767.519,
+      "duration": 3.361,
+      "text": "try to show this with an example I'm"
+    },
+    {
+      "start": 769.139,
+      "duration": 5.521,
+      "text": "going to create two resources one"
+    },
+    {
+      "start": 770.88,
+      "duration": 7.019,
+      "text": "resource for AWS underscore instance"
+    },
+    {
+      "start": 774.66,
+      "duration": 5.4,
+      "text": "and another resource for"
+    },
+    {
+      "start": 777.899,
+      "duration": 4.221,
+      "text": "Security Group so I'm going to say AWS"
+    },
+    {
+      "start": 780.06,
+      "duration": 4.2,
+      "text": "underscore security"
+    },
+    {
+      "start": 782.12,
+      "duration": 4.6,
+      "text": "underscore group"
+    },
+    {
+      "start": 784.26,
+      "duration": 3.72,
+      "text": "okay so in this instance I'm going to"
+    },
+    {
+      "start": 786.72,
+      "duration": 3.119,
+      "text": "Define all the different parameters like"
+    },
+    {
+      "start": 787.98,
+      "duration": 3.72,
+      "text": "Ami and all this stuff but the main one"
+    },
+    {
+      "start": 789.839,
+      "duration": 4.56,
+      "text": "is the security group ID so I'm going to"
+    },
+    {
+      "start": 791.7,
+      "duration": 4.86,
+      "text": "say VPC Security Group ID equals to this"
+    },
+    {
+      "start": 794.399,
+      "duration": 4.141,
+      "text": "year inside this I have defined inbound"
+    },
+    {
+      "start": 796.56,
+      "duration": 3.0,
+      "text": "and outbound rules whichever I want so"
+    },
+    {
+      "start": 798.54,
+      "duration": 2.4,
+      "text": "I'm not going to Define that but I'll"
+    },
+    {
+      "start": 799.56,
+      "duration": 3.36,
+      "text": "show you how you can use this Security"
+    },
+    {
+      "start": 800.94,
+      "duration": 4.26,
+      "text": "Group inside this instance even though"
+    },
+    {
+      "start": 802.92,
+      "duration": 4.859,
+      "text": "they are separate resources so to use"
+    },
+    {
+      "start": 805.2,
+      "duration": 4.139,
+      "text": "this you need to say AWS underscore"
+    },
+    {
+      "start": 807.779,
+      "duration": 3.36,
+      "text": "Security Group which is the name of the"
+    },
+    {
+      "start": 809.339,
+      "duration": 3.901,
+      "text": "instance here or which is the name of"
+    },
+    {
+      "start": 811.139,
+      "duration": 5.64,
+      "text": "the resource your resource type so I can"
+    },
+    {
+      "start": 813.24,
+      "duration": 5.58,
+      "text": "also copy it and paste it here dot this"
+    },
+    {
+      "start": 816.779,
+      "duration": 4.321,
+      "text": "is the name so I can"
+    },
+    {
+      "start": 818.82,
+      "duration": 4.139,
+      "text": "I can copy this like this can be"
+    },
+    {
+      "start": 821.1,
+      "duration": 4.14,
+      "text": "anything let's change the name to my"
+    },
+    {
+      "start": 822.959,
+      "duration": 5.461,
+      "text": "Security Group so instead of this I'm"
+    },
+    {
+      "start": 825.24,
+      "duration": 4.92,
+      "text": "going to say my SG and Dot ID because we"
+    },
+    {
+      "start": 828.42,
+      "duration": 3.62,
+      "text": "need to add ID here this is how you can"
+    },
+    {
+      "start": 830.16,
+      "duration": 5.1,
+      "text": "create dependencies resource dependency"
+    },
+    {
+      "start": 832.04,
+      "duration": 5.56,
+      "text": "implicitly uh without"
+    },
+    {
+      "start": 835.26,
+      "duration": 3.78,
+      "text": "using any depends on bit argument and"
+    },
+    {
+      "start": 837.6,
+      "duration": 4.32,
+      "text": "this will know that I'm going to use"
+    },
+    {
+      "start": 839.04,
+      "duration": 4.5,
+      "text": "Security Group here inside this instance"
+    },
+    {
+      "start": 841.92,
+      "duration": 3.599,
+      "text": "similarly you can attach this Security"
+    },
+    {
+      "start": 843.54,
+      "duration": 3.419,
+      "text": "Group to multiple instances as well and"
+    },
+    {
+      "start": 845.519,
+      "duration": 4.081,
+      "text": "if you want to put let's say another use"
+    },
+    {
+      "start": 846.959,
+      "duration": 4.68,
+      "text": "case can be you're creating a VPC or you"
+    },
+    {
+      "start": 849.6,
+      "duration": 4.2,
+      "text": "can I can show that to you as well like"
+    },
+    {
+      "start": 851.639,
+      "duration": 3.601,
+      "text": "this so you I'm creating a VPC here and"
+    },
+    {
+      "start": 853.8,
+      "duration": 2.82,
+      "text": "then I'm creating a subnet so I need to"
+    },
+    {
+      "start": 855.24,
+      "duration": 4.219,
+      "text": "create a subnet in this VPC so I'm"
+    },
+    {
+      "start": 856.62,
+      "duration": 4.98,
+      "text": "saying VPC ID equals to awcpc dot my"
+    },
+    {
+      "start": 859.459,
+      "duration": 5.201,
+      "text": "newvpc.id this is how you can Define"
+    },
+    {
+      "start": 861.6,
+      "duration": 5.94,
+      "text": "dependency and I hope this this makes"
+    },
+    {
+      "start": 864.66,
+      "duration": 4.5,
+      "text": "your I hope the concepts have been clear"
+    },
+    {
+      "start": 867.54,
+      "duration": 3.0,
+      "text": "let's revise what we have learned till"
+    },
+    {
+      "start": 869.16,
+      "duration": 4.14,
+      "text": "now so we have learned how to define"
+    },
+    {
+      "start": 870.54,
+      "duration": 4.2,
+      "text": "comments in HCL we also learned block"
+    },
+    {
+      "start": 873.3,
+      "duration": 3.599,
+      "text": "what are different block types like"
+    },
+    {
+      "start": 874.74,
+      "duration": 3.719,
+      "text": "provider resource locals and all the"
+    },
+    {
+      "start": 876.899,
+      "duration": 2.761,
+      "text": "different types of blocks we have also"
+    },
+    {
+      "start": 878.459,
+      "duration": 2.521,
+      "text": "understood what are attributes which are"
+    },
+    {
+      "start": 879.66,
+      "duration": 2.76,
+      "text": "key value pairs that Define the settings"
+    },
+    {
+      "start": 880.98,
+      "duration": 3.299,
+      "text": "and the configurations inside different"
+    },
+    {
+      "start": 882.42,
+      "duration": 3.419,
+      "text": "blocks then we learned about the"
+    },
+    {
+      "start": 884.279,
+      "duration": 3.3,
+      "text": "different database like string number"
+    },
+    {
+      "start": 885.839,
+      "duration": 3.601,
+      "text": "and Boolean string should always be in"
+    },
+    {
+      "start": 887.579,
+      "duration": 4.021,
+      "text": "double quotes number can be in codes or"
+    },
+    {
+      "start": 889.44,
+      "duration": 3.36,
+      "text": "without codes booleans are true and true"
+    },
+    {
+      "start": 891.6,
+      "duration": 3.359,
+      "text": "and false value which are without codes"
+    },
+    {
+      "start": 892.8,
+      "duration": 4.86,
+      "text": "then we logged into list list of items"
+    },
+    {
+      "start": 894.959,
+      "duration": 3.961,
+      "text": "that are side square brackets and it can"
+    },
+    {
+      "start": 897.66,
+      "duration": 3.419,
+      "text": "be a list of Security Group list of"
+    },
+    {
+      "start": 898.92,
+      "duration": 4.02,
+      "text": "subnets list of availability zones and"
+    },
+    {
+      "start": 901.079,
+      "duration": 4.56,
+      "text": "so much more then we also looked into"
+    },
+    {
+      "start": 902.94,
+      "duration": 4.8,
+      "text": "maps maps are dictionary which are key"
+    },
+    {
+      "start": 905.639,
+      "duration": 4.14,
+      "text": "value Pairs and you can choose to remove"
+    },
+    {
+      "start": 907.74,
+      "duration": 4.92,
+      "text": "any value whatever you want and value"
+    },
+    {
+      "start": 909.779,
+      "duration": 4.981,
+      "text": "can be either string or numbers or"
+    },
+    {
+      "start": 912.66,
+      "duration": 3.96,
+      "text": "Boolean anything"
+    },
+    {
+      "start": 914.76,
+      "duration": 4.319,
+      "text": "then we looked into conditions"
+    },
+    {
+      "start": 916.62,
+      "duration": 3.779,
+      "text": "conditions Define condition can help you"
+    },
+    {
+      "start": 919.079,
+      "duration": 3.12,
+      "text": "make decisions depending on different"
+    },
+    {
+      "start": 920.399,
+      "duration": 3.721,
+      "text": "criterias and we'll look into an example"
+    },
+    {
+      "start": 922.199,
+      "duration": 3.901,
+      "text": "of how you can change the instance type"
+    },
+    {
+      "start": 924.12,
+      "duration": 3.659,
+      "text": "depending on the develop depending on"
+    },
+    {
+      "start": 926.1,
+      "duration": 2.58,
+      "text": "the environment next we'll also load"
+    },
+    {
+      "start": 927.779,
+      "duration": 3.36,
+      "text": "into functions and there are different"
+    },
+    {
+      "start": 928.68,
+      "duration": 4.56,
+      "text": "functions you can use to change or to"
+    },
+    {
+      "start": 931.139,
+      "duration": 3.781,
+      "text": "transform your data lastly we looked"
+    },
+    {
+      "start": 933.24,
+      "duration": 5.099,
+      "text": "into the resource dependency on how you"
+    },
+    {
+      "start": 934.92,
+      "duration": 4.74,
+      "text": "can use two resources together to make"
+    },
+    {
+      "start": 938.339,
+      "duration": 3.36,
+      "text": "things more interesting let's try to"
+    },
+    {
+      "start": 939.66,
+      "duration": 4.679,
+      "text": "create a challenge and I want to"
+    },
+    {
+      "start": 941.699,
+      "duration": 4.681,
+      "text": "I want you to do it and also post this"
+    },
+    {
+      "start": 944.339,
+      "duration": 3.481,
+      "text": "on LinkedIn if you are able to do it"
+    },
+    {
+      "start": 946.38,
+      "duration": 2.639,
+      "text": "he has the challenge to test your"
+    },
+    {
+      "start": 947.82,
+      "duration": 2.819,
+      "text": "knowledge on everything that we have"
+    },
+    {
+      "start": 949.019,
+      "duration": 3.18,
+      "text": "learned to learn in this challenge we"
+    },
+    {
+      "start": 950.639,
+      "duration": 3.241,
+      "text": "are going to create a file in a local"
+    },
+    {
+      "start": 952.199,
+      "duration": 3.301,
+      "text": "machine using terraform and we are going"
+    },
+    {
+      "start": 953.88,
+      "duration": 3.84,
+      "text": "to insert some message in that file"
+    },
+    {
+      "start": 955.5,
+      "duration": 3.779,
+      "text": "using string functions you can use as"
+    },
+    {
+      "start": 957.72,
+      "duration": 2.82,
+      "text": "many string functions as you want to"
+    },
+    {
+      "start": 959.279,
+      "duration": 3.24,
+      "text": "test out your knowledge and to make sure"
+    },
+    {
+      "start": 960.54,
+      "duration": 3.299,
+      "text": "you understand functions properly so"
+    },
+    {
+      "start": 962.519,
+      "duration": 2.641,
+      "text": "let's create a resource I'm going to"
+    },
+    {
+      "start": 963.839,
+      "duration": 3.24,
+      "text": "create a resource and name it as null"
+    },
+    {
+      "start": 965.16,
+      "duration": 3.66,
+      "text": "resource I'm going to create a resource"
+    },
+    {
+      "start": 967.079,
+      "duration": 3.181,
+      "text": "and the resource type is null resource"
+    },
+    {
+      "start": 968.82,
+      "duration": 3.48,
+      "text": "because we are not creating anything in"
+    },
+    {
+      "start": 970.26,
+      "duration": 4.56,
+      "text": "the cloud but it is in a local machine"
+    },
+    {
+      "start": 972.3,
+      "duration": 3.899,
+      "text": "and I'll be naming this as file this"
+    },
+    {
+      "start": 974.82,
+      "duration": 2.879,
+      "text": "name is just for terraform reference not"
+    },
+    {
+      "start": 976.199,
+      "duration": 2.521,
+      "text": "the thing that you'll be seeing here we"
+    },
+    {
+      "start": 977.699,
+      "duration": 3.121,
+      "text": "are going to name the file something"
+    },
+    {
+      "start": 978.72,
+      "duration": 4.08,
+      "text": "else inside there's another source I'll"
+    },
+    {
+      "start": 980.82,
+      "duration": 3.36,
+      "text": "be using a provisioner provisioners are"
+    },
+    {
+      "start": 982.8,
+      "duration": 3.0,
+      "text": "used to run commands and there are three"
+    },
+    {
+      "start": 984.18,
+      "duration": 2.82,
+      "text": "types of provisioners it's an advanced"
+    },
+    {
+      "start": 985.8,
+      "duration": 3.18,
+      "text": "topic so we are going to learn about it"
+    },
+    {
+      "start": 987.0,
+      "duration": 3.899,
+      "text": "later on in the later sessions so I'm"
+    },
+    {
+      "start": 988.98,
+      "duration": 3.9,
+      "text": "going to use local exec provisioner so I"
+    },
+    {
+      "start": 990.899,
+      "duration": 4.141,
+      "text": "can run this in my machine and the"
+    },
+    {
+      "start": 992.88,
+      "duration": 3.78,
+      "text": "command is going to be Echo command so"
+    },
+    {
+      "start": 995.04,
+      "duration": 3.78,
+      "text": "Echo"
+    },
+    {
+      "start": 996.66,
+      "duration": 3.599,
+      "text": "the message and the message is going to"
+    },
+    {
+      "start": 998.82,
+      "duration": 4.079,
+      "text": "be message"
+    },
+    {
+      "start": 1000.259,
+      "duration": 4.32,
+      "text": "colon I want to type hello world but"
+    },
+    {
+      "start": 1002.899,
+      "duration": 3.901,
+      "text": "everything it should be in capital so"
+    },
+    {
+      "start": 1004.579,
+      "duration": 4.68,
+      "text": "I'm going to use the upper function so"
+    },
+    {
+      "start": 1006.8,
+      "duration": 5.279,
+      "text": "I'm going to say upper"
+    },
+    {
+      "start": 1009.259,
+      "duration": 4.32,
+      "text": "and inside this so I want to have Hello"
+    },
+    {
+      "start": 1012.079,
+      "duration": 3.18,
+      "text": "World all in capitals I'll be typing"
+    },
+    {
+      "start": 1013.579,
+      "duration": 3.781,
+      "text": "hello world here which will be Capital"
+    },
+    {
+      "start": 1015.259,
+      "duration": 4.2,
+      "text": "using this function and I'll show you"
+    },
+    {
+      "start": 1017.36,
+      "duration": 3.779,
+      "text": "once we run the commands so hello worlds"
+    },
+    {
+      "start": 1019.459,
+      "duration": 5.581,
+      "text": "and then I want this to be saved inside"
+    },
+    {
+      "start": 1021.139,
+      "duration": 6.121,
+      "text": "a file named as challenge.txt but before"
+    },
+    {
+      "start": 1025.04,
+      "duration": 4.44,
+      "text": "I do that make sure you save close this"
+    },
+    {
+      "start": 1027.26,
+      "duration": 4.28,
+      "text": "bracket here as well and now save this"
+    },
+    {
+      "start": 1029.48,
+      "duration": 5.4,
+      "text": "in a file name Dash challenge"
+    },
+    {
+      "start": 1031.54,
+      "duration": 5.44,
+      "text": "dot txt once this is done I'm going to"
+    },
+    {
+      "start": 1034.88,
+      "duration": 3.48,
+      "text": "save it and go to my terminal in my"
+    },
+    {
+      "start": 1036.98,
+      "duration": 3.06,
+      "text": "terminal if I show you I only have two"
+    },
+    {
+      "start": 1038.36,
+      "duration": 2.939,
+      "text": "files and after running few commands"
+    },
+    {
+      "start": 1040.04,
+      "duration": 3.06,
+      "text": "I'll have another file named as"
+    },
+    {
+      "start": 1041.299,
+      "duration": 4.321,
+      "text": "challenge.txt we should have a message"
+    },
+    {
+      "start": 1043.1,
+      "duration": 4.38,
+      "text": "message a colon Hello World online"
+    },
+    {
+      "start": 1045.62,
+      "duration": 3.0,
+      "text": "Capital so I'm going to run Tera for a"
+    },
+    {
+      "start": 1047.48,
+      "duration": 3.12,
+      "text": "minute the First Command you need to run"
+    },
+    {
+      "start": 1048.62,
+      "duration": 3.84,
+      "text": "to make sure everything is in place and"
+    },
+    {
+      "start": 1050.6,
+      "duration": 3.3,
+      "text": "in order to install some things and if"
+    },
+    {
+      "start": 1052.46,
+      "duration": 3.18,
+      "text": "you check here you will see that few"
+    },
+    {
+      "start": 1053.9,
+      "duration": 3.3,
+      "text": "files and I'll be here present"
+    },
+    {
+      "start": 1055.64,
+      "duration": 3.96,
+      "text": "automatically which I'll be explaining"
+    },
+    {
+      "start": 1057.2,
+      "duration": 4.44,
+      "text": "you tomorrow in the provider section in"
+    },
+    {
+      "start": 1059.6,
+      "duration": 3.6,
+      "text": "the next video in this next reminder"
+    },
+    {
+      "start": 1061.64,
+      "duration": 3.48,
+      "text": "from plan to see what is going to be"
+    },
+    {
+      "start": 1063.2,
+      "duration": 4.02,
+      "text": "created and it says one thing is going"
+    },
+    {
+      "start": 1065.12,
+      "duration": 3.299,
+      "text": "to be added which is a file and the"
+    },
+    {
+      "start": 1067.22,
+      "duration": 3.78,
+      "text": "resource dot file is going to be created"
+    },
+    {
+      "start": 1068.419,
+      "duration": 3.901,
+      "text": "null resource dot file and now if I'm"
+    },
+    {
+      "start": 1071.0,
+      "duration": 3.12,
+      "text": "okay with that I'm just going to run"
+    },
+    {
+      "start": 1072.32,
+      "duration": 4.34,
+      "text": "terraform apply so let's run terraform"
+    },
+    {
+      "start": 1074.12,
+      "duration": 5.04,
+      "text": "apply command"
+    },
+    {
+      "start": 1076.66,
+      "duration": 4.36,
+      "text": "it will ask me if you're sure type yes"
+    },
+    {
+      "start": 1079.16,
+      "duration": 4.08,
+      "text": "if no then type you can type anything"
+    },
+    {
+      "start": 1081.02,
+      "duration": 4.519,
+      "text": "else once I type yes you will see a"
+    },
+    {
+      "start": 1083.24,
+      "duration": 4.679,
+      "text": "resource has been added and it says"
+    },
+    {
+      "start": 1085.539,
+      "duration": 3.76,
+      "text": "challenge.txt has been completed and you"
+    },
+    {
+      "start": 1087.919,
+      "duration": 3.241,
+      "text": "can see a file name that cylinder takes"
+    },
+    {
+      "start": 1089.299,
+      "duration": 3.661,
+      "text": "is there which has the message called in"
+    },
+    {
+      "start": 1091.16,
+      "duration": 2.82,
+      "text": "hello world so this is how you can"
+    },
+    {
+      "start": 1092.96,
+      "duration": 2.76,
+      "text": "create a file in your local machine"
+    },
+    {
+      "start": 1093.98,
+      "duration": 3.36,
+      "text": "using terraform I would have made the"
+    },
+    {
+      "start": 1095.72,
+      "duration": 4.079,
+      "text": "challenge is more complex by creating"
+    },
+    {
+      "start": 1097.34,
+      "duration": 4.5,
+      "text": "this creating a server on AWS or on"
+    },
+    {
+      "start": 1099.799,
+      "duration": 3.541,
+      "text": "Azure but I don't want to confuse you"
+    },
+    {
+      "start": 1101.84,
+      "duration": 3.18,
+      "text": "with those things because we have to"
+    },
+    {
+      "start": 1103.34,
+      "duration": 3.66,
+      "text": "learn about it tomorrow we are going to"
+    },
+    {
+      "start": 1105.02,
+      "duration": 3.6,
+      "text": "learn about providers and resources in"
+    },
+    {
+      "start": 1107.0,
+      "duration": 3.539,
+      "text": "the third video so make sure to check it"
+    },
+    {
+      "start": 1108.62,
+      "duration": 3.24,
+      "text": "out and after we run providers we are"
+    },
+    {
+      "start": 1110.539,
+      "duration": 3.061,
+      "text": "going to create repositories on GitHub"
+    },
+    {
+      "start": 1111.86,
+      "duration": 3.72,
+      "text": "we are going to create servers on AWS"
+    },
+    {
+      "start": 1113.6,
+      "duration": 4.319,
+      "text": "and lot more interesting challenges so"
+    },
+    {
+      "start": 1115.58,
+      "duration": 3.959,
+      "text": "make sure you watch that video and I"
+    },
+    {
+      "start": 1117.919,
+      "duration": 3.481,
+      "text": "hope this video was informative you have"
+    },
+    {
+      "start": 1119.539,
+      "duration": 4.621,
+      "text": "learned everything about"
+    },
+    {
+      "start": 1121.4,
+      "duration": 4.32,
+      "text": "HCL syntax to make you to make sure you"
+    },
+    {
+      "start": 1124.16,
+      "duration": 3.0,
+      "text": "can work on it if you have any questions"
+    },
+    {
+      "start": 1125.72,
+      "duration": 2.94,
+      "text": "any doubt feel free to let me know in"
+    },
+    {
+      "start": 1127.16,
+      "duration": 3.12,
+      "text": "the comment section and also try to"
+    },
+    {
+      "start": 1128.66,
+      "duration": 3.18,
+      "text": "complete this Challenge and share it on"
+    },
+    {
+      "start": 1130.28,
+      "duration": 5.0,
+      "text": "LinkedIn and don't forget to tag me"
+    },
+    {
+      "start": 1131.84,
+      "duration": 3.44,
+      "text": "thank you and have a good day"
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "video": {
+    "id": "nt94yPphOnk",
+    "title": "How to Register a Domain and Setup Hosted zone with AWS Route53 DNS Service | Step By Step Demo",
+    "url": "https://www.youtube.com/watch?v=nt94yPphOnk",
+    "duration": 246,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.08,
+      "duration": 3.839,
+      "text": "hello everyone in this video i'm going"
+    },
+    {
+      "start": 2.159,
+      "duration": 4.481,
+      "text": "to be showing you how to register a"
+    },
+    {
+      "start": 3.919,
+      "duration": 5.041,
+      "text": "domain name using aws"
+    },
+    {
+      "start": 6.64,
+      "duration": 4.48,
+      "text": "so here i am in the aws management"
+    },
+    {
+      "start": 8.96,
+      "duration": 4.639,
+      "text": "console if this is your first time in"
+    },
+    {
+      "start": 11.12,
+      "duration": 3.599,
+      "text": "aws you need to register for an account"
+    },
+    {
+      "start": 13.599,
+      "duration": 2.881,
+      "text": "first"
+    },
+    {
+      "start": 14.719,
+      "duration": 3.521,
+      "text": "once you log into your account you're"
+    },
+    {
+      "start": 16.48,
+      "duration": 4.0,
+      "text": "going to find your recently visited"
+    },
+    {
+      "start": 18.24,
+      "duration": 4.879,
+      "text": "services here so you can quickly click"
+    },
+    {
+      "start": 20.48,
+      "duration": 5.84,
+      "text": "on route 53 but if it's not here you can"
+    },
+    {
+      "start": 23.119,
+      "duration": 5.841,
+      "text": "simply type route 53 in the search bar"
+    },
+    {
+      "start": 26.32,
+      "duration": 4.799,
+      "text": "and route 53 as you can see here below"
+    },
+    {
+      "start": 28.96,
+      "duration": 3.92,
+      "text": "it's a scalable dns and domain name"
+    },
+    {
+      "start": 31.119,
+      "duration": 4.081,
+      "text": "registration service it lets you"
+    },
+    {
+      "start": 32.88,
+      "duration": 4.0,
+      "text": "register domains it also has features"
+    },
+    {
+      "start": 35.2,
+      "duration": 3.28,
+      "text": "that allow you to create endpoint that"
+    },
+    {
+      "start": 36.88,
+      "duration": 3.44,
+      "text": "you can road users to certain"
+    },
+    {
+      "start": 38.48,
+      "duration": 2.96,
+      "text": "applications if they had the certain"
+    },
+    {
+      "start": 40.32,
+      "duration": 2.8,
+      "text": "endpoint"
+    },
+    {
+      "start": 41.44,
+      "duration": 4.16,
+      "text": "but we are not going to get too much"
+    },
+    {
+      "start": 43.12,
+      "duration": 4.0,
+      "text": "into the details of route 53 here i'm"
+    },
+    {
+      "start": 45.6,
+      "duration": 2.959,
+      "text": "just going to show you how to create"
+    },
+    {
+      "start": 47.12,
+      "duration": 3.36,
+      "text": "your domain"
+    },
+    {
+      "start": 48.559,
+      "duration": 3.601,
+      "text": "so once you get to the dashboard page"
+    },
+    {
+      "start": 50.48,
+      "duration": 3.599,
+      "text": "here we're going to go to the left where"
+    },
+    {
+      "start": 52.16,
+      "duration": 6.12,
+      "text": "it says registered domains and i'm going"
+    },
+    {
+      "start": 54.079,
+      "duration": 4.201,
+      "text": "to click on registered domains"
+    },
+    {
+      "start": 58.64,
+      "duration": 3.84,
+      "text": "right so i don't have any domain"
+    },
+    {
+      "start": 60.48,
+      "duration": 3.84,
+      "text": "registered on this account if you have a"
+    },
+    {
+      "start": 62.48,
+      "duration": 3.999,
+      "text": "domain from another provider maybe"
+    },
+    {
+      "start": 64.32,
+      "duration": 4.96,
+      "text": "something like godaddy you can transfer"
+    },
+    {
+      "start": 66.479,
+      "duration": 5.121,
+      "text": "that over aws pretty easily by clicking"
+    },
+    {
+      "start": 69.28,
+      "duration": 4.159,
+      "text": "transfer domain up over here"
+    },
+    {
+      "start": 71.6,
+      "duration": 4.08,
+      "text": "but since we don't have one of those we"
+    },
+    {
+      "start": 73.439,
+      "duration": 4.961,
+      "text": "are going to register from scratch so"
+    },
+    {
+      "start": 75.68,
+      "duration": 4.56,
+      "text": "i'm going to click on register domain"
+    },
+    {
+      "start": 78.4,
+      "duration": 3.84,
+      "text": "so the next step here is to choose a"
+    },
+    {
+      "start": 80.24,
+      "duration": 4.16,
+      "text": "domain name so whatever you're looking"
+    },
+    {
+      "start": 82.24,
+      "duration": 4.96,
+      "text": "for this is where you put it in"
+    },
+    {
+      "start": 84.4,
+      "duration": 4.399,
+      "text": "so mine is called aws test"
+    },
+    {
+      "start": 87.2,
+      "duration": 3.68,
+      "text": "and now over here on the right you can"
+    },
+    {
+      "start": 88.799,
+      "duration": 3.841,
+      "text": "pick one of the suffix that you want"
+    },
+    {
+      "start": 90.88,
+      "duration": 4.0,
+      "text": "notice that there is a different prices"
+    },
+    {
+      "start": 92.64,
+      "duration": 4.32,
+      "text": "here for each one so like dot comma was"
+    },
+    {
+      "start": 94.88,
+      "duration": 4.8,
+      "text": "fifteen dollars"
+    },
+    {
+      "start": 96.96,
+      "duration": 5.6,
+      "text": "but normal com is at twelve dollars"
+    },
+    {
+      "start": 99.68,
+      "duration": 4.88,
+      "text": "it's depending on what you pick"
+    },
+    {
+      "start": 102.56,
+      "duration": 4.32,
+      "text": "this is the yearly cost so keep that in"
+    },
+    {
+      "start": 104.56,
+      "duration": 3.839,
+      "text": "mind when you are picking this"
+    },
+    {
+      "start": 106.88,
+      "duration": 3.04,
+      "text": "i'm just going to leave that as calm"
+    },
+    {
+      "start": 108.399,
+      "duration": 3.04,
+      "text": "right now because when you click on"
+    },
+    {
+      "start": 109.92,
+      "duration": 3.839,
+      "text": "check here it's going to give you a list"
+    },
+    {
+      "start": 111.439,
+      "duration": 5.28,
+      "text": "of domains that are available"
+    },
+    {
+      "start": 113.759,
+      "duration": 4.801,
+      "text": "i happen to know that aws test.com is"
+    },
+    {
+      "start": 116.719,
+      "duration": 3.921,
+      "text": "already unavailable"
+    },
+    {
+      "start": 118.56,
+      "duration": 3.76,
+      "text": "but looking here down below we can see"
+    },
+    {
+      "start": 120.64,
+      "duration": 4.119,
+      "text": "here these are some of the open options"
+    },
+    {
+      "start": 122.32,
+      "duration": 6.159,
+      "text": "that are still available so aws"
+    },
+    {
+      "start": 124.759,
+      "duration": 6.921,
+      "text": "datatest.com aws dot me another option"
+    },
+    {
+      "start": 128.479,
+      "duration": 6.001,
+      "text": "is aws test dot tv i'm actually gonna go"
+    },
+    {
+      "start": 131.68,
+      "duration": 5.919,
+      "text": "with me and notice here"
+    },
+    {
+      "start": 134.48,
+      "duration": 5.04,
+      "text": "that it's actually 25 per year"
+    },
+    {
+      "start": 137.599,
+      "duration": 4.081,
+      "text": "i want you to decide the combination of"
+    },
+    {
+      "start": 139.52,
+      "duration": 4.24,
+      "text": "your domain name and your suffix then"
+    },
+    {
+      "start": 141.68,
+      "duration": 3.52,
+      "text": "you go ahead and click on add to cart"
+    },
+    {
+      "start": 143.76,
+      "duration": 3.36,
+      "text": "now over here on the right it's just"
+    },
+    {
+      "start": 145.2,
+      "duration": 3.679,
+      "text": "going to ask if you want to sign up for"
+    },
+    {
+      "start": 147.12,
+      "duration": 4.08,
+      "text": "one year or more years"
+    },
+    {
+      "start": 148.879,
+      "duration": 4.801,
+      "text": "i'm just going to sign up for one year"
+    },
+    {
+      "start": 151.2,
+      "duration": 4.16,
+      "text": "there is no need for me to do more"
+    },
+    {
+      "start": 153.68,
+      "duration": 3.68,
+      "text": "now we're going to scroll down and go"
+    },
+    {
+      "start": 155.36,
+      "duration": 3.92,
+      "text": "and click on continue"
+    },
+    {
+      "start": 157.36,
+      "duration": 3.76,
+      "text": "now at this point it asking us for some"
+    },
+    {
+      "start": 159.28,
+      "duration": 3.84,
+      "text": "contact information and you can select"
+    },
+    {
+      "start": 161.12,
+      "duration": 4.399,
+      "text": "depending on what you are"
+    },
+    {
+      "start": 163.12,
+      "duration": 4.88,
+      "text": "this is for person a company an"
+    },
+    {
+      "start": 165.519,
+      "duration": 4.161,
+      "text": "association or public body"
+    },
+    {
+      "start": 168.0,
+      "duration": 3.36,
+      "text": "you need to fill all this information"
+    },
+    {
+      "start": 169.68,
+      "duration": 3.52,
+      "text": "here and then go all the way down to the"
+    },
+    {
+      "start": 171.36,
+      "duration": 4.0,
+      "text": "bottom make sure that you have this"
+    },
+    {
+      "start": 173.2,
+      "duration": 3.84,
+      "text": "enabled for privacy protection that"
+    },
+    {
+      "start": 175.36,
+      "duration": 3.44,
+      "text": "means that people that are just running"
+    },
+    {
+      "start": 177.04,
+      "duration": 3.199,
+      "text": "whose checks on your domain are not"
+    },
+    {
+      "start": 178.8,
+      "duration": 3.28,
+      "text": "going to be able to see all this"
+    },
+    {
+      "start": 180.239,
+      "duration": 4.241,
+      "text": "information that you've been out that's"
+    },
+    {
+      "start": 182.08,
+      "duration": 4.079,
+      "text": "something you should worry about so at"
+    },
+    {
+      "start": 184.48,
+      "duration": 3.52,
+      "text": "this point i'm going to go ahead and"
+    },
+    {
+      "start": 186.159,
+      "duration": 3.841,
+      "text": "fill out all this different information"
+    },
+    {
+      "start": 188.0,
+      "duration": 4.56,
+      "text": "here and i click on continue and bring"
+    },
+    {
+      "start": 190.0,
+      "duration": 4.72,
+      "text": "it to the next page when i'm all done"
+    },
+    {
+      "start": 192.56,
+      "duration": 4.16,
+      "text": "okay so i filled all my information and"
+    },
+    {
+      "start": 194.72,
+      "duration": 4.64,
+      "text": "i clicked on continue at the bottom of"
+    },
+    {
+      "start": 196.72,
+      "duration": 4.799,
+      "text": "the page at this point it's just going"
+    },
+    {
+      "start": 199.36,
+      "duration": 4.48,
+      "text": "to show you some confirmation details"
+    },
+    {
+      "start": 201.519,
+      "duration": 4.8,
+      "text": "about what you filled in the form"
+    },
+    {
+      "start": 203.84,
+      "duration": 4.56,
+      "text": "so down here under managing dns for your"
+    },
+    {
+      "start": 206.319,
+      "duration": 3.92,
+      "text": "domain this is basically just telling"
+    },
+    {
+      "start": 208.4,
+      "duration": 3.759,
+      "text": "you that it's going to set up a hosted"
+    },
+    {
+      "start": 210.239,
+      "duration": 3.121,
+      "text": "zone we don't need to care about that"
+    },
+    {
+      "start": 212.159,
+      "duration": 3.041,
+      "text": "right now"
+    },
+    {
+      "start": 213.36,
+      "duration": 4.32,
+      "text": "this setting down here asks you if you"
+    },
+    {
+      "start": 215.2,
+      "duration": 4.64,
+      "text": "want have all over new on or off i'm"
+    },
+    {
+      "start": 217.68,
+      "duration": 4.24,
+      "text": "going to keep it as disabled"
+    },
+    {
+      "start": 219.84,
+      "duration": 4.399,
+      "text": "the next step is to just acknowledge the"
+    },
+    {
+      "start": 221.92,
+      "duration": 4.0,
+      "text": "terms and conditions i had to suggest to"
+    },
+    {
+      "start": 224.239,
+      "duration": 3.36,
+      "text": "take a quick look at this and read it"
+    },
+    {
+      "start": 225.92,
+      "duration": 3.039,
+      "text": "through just so you know what you are"
+    },
+    {
+      "start": 227.599,
+      "duration": 3.28,
+      "text": "getting into"
+    },
+    {
+      "start": 228.959,
+      "duration": 3.92,
+      "text": "so at this point what i need to do is go"
+    },
+    {
+      "start": 230.879,
+      "duration": 3.841,
+      "text": "ahead and click on complete order once"
+    },
+    {
+      "start": 232.879,
+      "duration": 3.681,
+      "text": "you have verified all the details of"
+    },
+    {
+      "start": 234.72,
+      "duration": 2.879,
+      "text": "your registration you should be good to"
+    },
+    {
+      "start": 236.56,
+      "duration": 2.8,
+      "text": "go"
+    },
+    {
+      "start": 237.599,
+      "duration": 3.601,
+      "text": "then after that you will be directed to"
+    },
+    {
+      "start": 239.36,
+      "duration": 3.92,
+      "text": "the next page telling you that your"
+    },
+    {
+      "start": 241.2,
+      "duration": 5.48,
+      "text": "order is successfully submitted and what"
+    },
+    {
+      "start": 243.28,
+      "duration": 3.4,
+      "text": "to do next"
+    }
+  ]
+}

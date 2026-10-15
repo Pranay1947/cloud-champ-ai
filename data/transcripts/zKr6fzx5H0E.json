@@ -1,0 +1,141 @@
+{
+  "video": {
+    "id": "zKr6fzx5H0E",
+    "title": "How to commit code in GitHub? 🤔 #git #github",
+    "url": "https://www.youtube.com/watch?v=zKr6fzx5H0E",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.64,
+      "duration": 4.04,
+      "text": "Let me teach you how to commit."
+    },
+    {
+      "start": 2.56,
+      "duration": 4.04,
+      "text": "I have this simple project cloned and"
+    },
+    {
+      "start": 4.68,
+      "duration": 4.56,
+      "text": "opened in my VS Code. Let's make some"
+    },
+    {
+      "start": 6.6,
+      "duration": 4.96,
+      "text": "changes now."
+    },
+    {
+      "start": 9.24,
+      "duration": 4.72,
+      "text": "Notice the number here, two. This means"
+    },
+    {
+      "start": 11.56,
+      "duration": 4.52,
+      "text": "two files have changed. Now, let's run"
+    },
+    {
+      "start": 13.96,
+      "duration": 4.24,
+      "text": "Git commands to commit and push. So,"
+    },
+    {
+      "start": 16.08,
+      "duration": 3.56,
+      "text": "open up your terminal. The first step is"
+    },
+    {
+      "start": 18.2,
+      "duration": 3.6,
+      "text": "to check if you're connected to the"
+    },
+    {
+      "start": 19.64,
+      "duration": 3.48,
+      "text": "right repo using Git remote dash v"
+    },
+    {
+      "start": 21.8,
+      "duration": 3.6,
+      "text": "command."
+    },
+    {
+      "start": 23.12,
+      "duration": 5.48,
+      "text": "Run Git add file name to commit a single"
+    },
+    {
+      "start": 25.4,
+      "duration": 4.075,
+      "text": "file or run Git add dot to push"
+    },
+    {
+      "start": 28.6,
+      "duration": 1.84,
+      "text": "everything."
+    },
+    {
+      "start": 29.475,
+      "duration": 3.045,
+      "text": "[music]"
+    },
+    {
+      "start": 30.44,
+      "duration": 3.88,
+      "text": "Next, check status by running Git status"
+    },
+    {
+      "start": 32.52,
+      "duration": 3.4,
+      "text": "command. And if everything is okay,"
+    },
+    {
+      "start": 34.32,
+      "duration": 4.6,
+      "text": "commit the changes with the Git commit"
+    },
+    {
+      "start": 35.92,
+      "duration": 5.68,
+      "text": "command and the message version two."
+    },
+    {
+      "start": 38.92,
+      "duration": 5.04,
+      "text": "Next, run Git push command. And this is"
+    },
+    {
+      "start": 41.6,
+      "duration": 4.96,
+      "text": "how you push code from your local"
+    },
+    {
+      "start": 43.96,
+      "duration": 4.6,
+      "text": "machine to GitHub. To confirm, you can"
+    },
+    {
+      "start": 46.56,
+      "duration": 3.28,
+      "text": "refresh the page and see that the new"
+    },
+    {
+      "start": 48.56,
+      "duration": 3.04,
+      "text": "commit has been made with the new"
+    },
+    {
+      "start": 49.84,
+      "duration": 4.24,
+      "text": "message version two. And here are your"
+    },
+    {
+      "start": 51.6,
+      "duration": 2.48,
+      "text": "changes."
+    }
+  ]
+}

@@ -1,0 +1,756 @@
+{
+  "video": {
+    "id": "CzgthcwLUHM",
+    "title": "How to Install Jenkins on Amazon Linux EC2 Instance",
+    "url": "https://www.youtube.com/watch?v=CzgthcwLUHM",
+    "duration": 343,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.359,
+      "duration": 3.661,
+      "text": "hello and welcome to Cloud champ in this"
+    },
+    {
+      "start": 2.46,
+      "duration": 4.919,
+      "text": "video we are going to see how to install"
+    },
+    {
+      "start": 4.02,
+      "duration": 5.999,
+      "text": "Jenkins on AWS ec2 we are going to"
+    },
+    {
+      "start": 7.379,
+      "duration": 4.501,
+      "text": "launch an Amazon Linux machine and we"
+    },
+    {
+      "start": 10.019,
+      "duration": 3.361,
+      "text": "will install Jenkins on it launch"
+    },
+    {
+      "start": 11.88,
+      "duration": 3.54,
+      "text": "instance option here I'm going to click"
+    },
+    {
+      "start": 13.38,
+      "duration": 4.26,
+      "text": "on launch instance and fill in all the"
+    },
+    {
+      "start": 15.42,
+      "duration": 3.72,
+      "text": "details I'm going to name it as"
+    },
+    {
+      "start": 17.64,
+      "duration": 4.74,
+      "text": "Jenkins"
+    },
+    {
+      "start": 19.14,
+      "duration": 5.28,
+      "text": "and we're going to use Amazon Linux Ami"
+    },
+    {
+      "start": 22.38,
+      "duration": 3.84,
+      "text": "instance type T2 micro you can increase"
+    },
+    {
+      "start": 24.42,
+      "duration": 2.699,
+      "text": "it if you want I'm going to go with t to"
+    },
+    {
+      "start": 26.22,
+      "duration": 2.52,
+      "text": "micro"
+    },
+    {
+      "start": 27.119,
+      "duration": 3.24,
+      "text": "select the keypad we're going to use"
+    },
+    {
+      "start": 28.74,
+      "duration": 3.42,
+      "text": "this keypad because we will we are going"
+    },
+    {
+      "start": 30.359,
+      "duration": 3.601,
+      "text": "to SSH into the instance to connect to"
+    },
+    {
+      "start": 32.16,
+      "duration": 2.88,
+      "text": "the instance we will need a keypad so"
+    },
+    {
+      "start": 33.96,
+      "duration": 2.88,
+      "text": "I'm going to click on create a new"
+    },
+    {
+      "start": 35.04,
+      "duration": 5.339,
+      "text": "keypair just to show you how to create a"
+    },
+    {
+      "start": 36.84,
+      "duration": 6.059,
+      "text": "new key so I can give it Jenkins key RSA"
+    },
+    {
+      "start": 40.379,
+      "duration": 4.68,
+      "text": "dot pem if you're using Windows and you"
+    },
+    {
+      "start": 42.899,
+      "duration": 3.66,
+      "text": "want to use putty you can use dot PPK I"
+    },
+    {
+      "start": 45.059,
+      "duration": 4.261,
+      "text": "have a Linux machine I'm going to go"
+    },
+    {
+      "start": 46.559,
+      "duration": 4.68,
+      "text": "with a DOT pep click on create key pair"
+    },
+    {
+      "start": 49.32,
+      "duration": 3.66,
+      "text": "and a private key should be"
+    },
+    {
+      "start": 51.239,
+      "duration": 3.721,
+      "text": "download it so I'm going to click on"
+    },
+    {
+      "start": 52.98,
+      "duration": 4.02,
+      "text": "download and private key is here"
+    },
+    {
+      "start": 54.96,
+      "duration": 3.779,
+      "text": "after you create a keypad you can choose"
+    },
+    {
+      "start": 57.0,
+      "duration": 4.86,
+      "text": "network settings I'm going to use the"
+    },
+    {
+      "start": 58.739,
+      "duration": 5.341,
+      "text": "default VPC default subnet and existing"
+    },
+    {
+      "start": 61.86,
+      "duration": 4.799,
+      "text": "Security Group whatever Security Group"
+    },
+    {
+      "start": 64.08,
+      "duration": 4.74,
+      "text": "you use make sure you have port 8080"
+    },
+    {
+      "start": 66.659,
+      "duration": 5.581,
+      "text": "enabled because Jenkins is working on"
+    },
+    {
+      "start": 68.82,
+      "duration": 5.159,
+      "text": "port 8080 8GB of storage which is more"
+    },
+    {
+      "start": 72.24,
+      "duration": 3.66,
+      "text": "than enough and now I'm going to click"
+    },
+    {
+      "start": 73.979,
+      "duration": 3.541,
+      "text": "on launch instance once I click on"
+    },
+    {
+      "start": 75.9,
+      "duration": 5.039,
+      "text": "launch instance this instant should"
+    },
+    {
+      "start": 77.52,
+      "duration": 6.419,
+      "text": "start creating so initiated launcher for"
+    },
+    {
+      "start": 80.939,
+      "duration": 5.161,
+      "text": "instance let's go to the Simpson"
+    },
+    {
+      "start": 83.939,
+      "duration": 3.54,
+      "text": "so now our instance is in running state"
+    },
+    {
+      "start": 86.1,
+      "duration": 2.699,
+      "text": "if I want to connect I'm going to click"
+    },
+    {
+      "start": 87.479,
+      "duration": 2.761,
+      "text": "on connect we have all these different"
+    },
+    {
+      "start": 88.799,
+      "duration": 3.901,
+      "text": "options to connect to our instance"
+    },
+    {
+      "start": 90.24,
+      "duration": 4.8,
+      "text": "instance connect session manager SSH"
+    },
+    {
+      "start": 92.7,
+      "duration": 4.86,
+      "text": "client I'm going to go with ec2 instance"
+    },
+    {
+      "start": 95.04,
+      "duration": 3.96,
+      "text": "connect and click on connect option here"
+    },
+    {
+      "start": 97.56,
+      "duration": 3.12,
+      "text": "so it is now going to establish"
+    },
+    {
+      "start": 99.0,
+      "duration": 4.14,
+      "text": "connection and we should be inside our"
+    },
+    {
+      "start": 100.68,
+      "duration": 5.04,
+      "text": "Linux Amazon Linux machine so I'm here"
+    },
+    {
+      "start": 103.14,
+      "duration": 5.04,
+      "text": "in my Amazon Linux to Ami let's start"
+    },
+    {
+      "start": 105.72,
+      "duration": 3.66,
+      "text": "with Jenkins installation to gen to"
+    },
+    {
+      "start": 108.18,
+      "duration": 2.759,
+      "text": "install Jenkins first I'm going to"
+    },
+    {
+      "start": 109.38,
+      "duration": 4.68,
+      "text": "update all my packages so I'm going to"
+    },
+    {
+      "start": 110.939,
+      "duration": 4.68,
+      "text": "run sudo em update hyphen y this is"
+    },
+    {
+      "start": 114.06,
+      "duration": 3.839,
+      "text": "going to update all my packages so we"
+    },
+    {
+      "start": 115.619,
+      "duration": 4.921,
+      "text": "don't have any packages to update add"
+    },
+    {
+      "start": 117.899,
+      "duration": 6.421,
+      "text": "the Jenkins wrapper using this command"
+    },
+    {
+      "start": 120.54,
+      "duration": 6.359,
+      "text": "so adding the Jenkins repo using this so"
+    },
+    {
+      "start": 124.32,
+      "duration": 4.38,
+      "text": "we have Jenkins repo saved here now I'm"
+    },
+    {
+      "start": 126.899,
+      "duration": 4.621,
+      "text": "going to import the key file for Jenkins"
+    },
+    {
+      "start": 128.7,
+      "duration": 4.679,
+      "text": "CI to enable installation from the"
+    },
+    {
+      "start": 131.52,
+      "duration": 3.9,
+      "text": "package so I'm going to paste this here"
+    },
+    {
+      "start": 133.379,
+      "duration": 4.141,
+      "text": "which is going to import the key then"
+    },
+    {
+      "start": 135.42,
+      "duration": 5.52,
+      "text": "I'm going to upgrade all my packages so"
+    },
+    {
+      "start": 137.52,
+      "duration": 4.859,
+      "text": "sudo M upgrade now it's upgrading all"
+    },
+    {
+      "start": 140.94,
+      "duration": 4.2,
+      "text": "the packages which has Jenkins and"
+    },
+    {
+      "start": 142.379,
+      "duration": 4.621,
+      "text": "Jenkins primary DB once this is done you"
+    },
+    {
+      "start": 145.14,
+      "duration": 4.62,
+      "text": "need to install Java so I'm going to"
+    },
+    {
+      "start": 147.0,
+      "duration": 4.5,
+      "text": "install Java with open jdk 11 this"
+    },
+    {
+      "start": 149.76,
+      "duration": 4.86,
+      "text": "should start installing Java in my"
+    },
+    {
+      "start": 151.5,
+      "duration": 5.58,
+      "text": "machine and once we install Java we then"
+    },
+    {
+      "start": 154.62,
+      "duration": 4.8,
+      "text": "can install our Jenkins so Jenkins"
+    },
+    {
+      "start": 157.08,
+      "duration": 3.96,
+      "text": "required Java installation make sure you"
+    },
+    {
+      "start": 159.42,
+      "duration": 4.02,
+      "text": "have it before you install"
+    },
+    {
+      "start": 161.04,
+      "duration": 4.26,
+      "text": "Jenkins you can find all these different"
+    },
+    {
+      "start": 163.44,
+      "duration": 3.659,
+      "text": "commands inside my description box so"
+    },
+    {
+      "start": 165.3,
+      "duration": 3.719,
+      "text": "you don't need to go anywhere or you can"
+    },
+    {
+      "start": 167.099,
+      "duration": 3.841,
+      "text": "use the official Jenkins installation to"
+    },
+    {
+      "start": 169.019,
+      "duration": 5.341,
+      "text": "do that"
+    },
+    {
+      "start": 170.94,
+      "duration": 5.7,
+      "text": "so once Java is installed I can now run"
+    },
+    {
+      "start": 174.36,
+      "duration": 3.78,
+      "text": "Jenkins command sudo yum install Jenkins"
+    },
+    {
+      "start": 176.64,
+      "duration": 4.56,
+      "text": "hyphen Y which is going to install"
+    },
+    {
+      "start": 178.14,
+      "duration": 5.34,
+      "text": "Jenkins in our machine"
+    },
+    {
+      "start": 181.2,
+      "duration": 4.38,
+      "text": "let's wait for it to be installed"
+    },
+    {
+      "start": 183.48,
+      "duration": 5.82,
+      "text": "and then we can start the Jenkins"
+    },
+    {
+      "start": 185.58,
+      "duration": 6.239,
+      "text": "machine so it's installing Jenkins and"
+    },
+    {
+      "start": 189.3,
+      "duration": 4.98,
+      "text": "now we have Jenkins installed we can now"
+    },
+    {
+      "start": 191.819,
+      "duration": 5.041,
+      "text": "start it first I'm going to enable it so"
+    },
+    {
+      "start": 194.28,
+      "duration": 4.8,
+      "text": "sudo system CTL enable Jenkins"
+    },
+    {
+      "start": 196.86,
+      "duration": 4.5,
+      "text": "and we have enabled it now I'm going to"
+    },
+    {
+      "start": 199.08,
+      "duration": 7.739,
+      "text": "start the service so sudo"
+    },
+    {
+      "start": 201.36,
+      "duration": 5.459,
+      "text": "system CTL start Jenkins"
+    },
+    {
+      "start": 208.86,
+      "duration": 4.32,
+      "text": "once it is started you can check the"
+    },
+    {
+      "start": 210.599,
+      "duration": 6.301,
+      "text": "status of this Jenkins service by"
+    },
+    {
+      "start": 213.18,
+      "duration": 5.58,
+      "text": "running sudo system CTL status Jenkins"
+    },
+    {
+      "start": 216.9,
+      "duration": 3.36,
+      "text": "okay now that we have started the"
+    },
+    {
+      "start": 218.76,
+      "duration": 4.02,
+      "text": "service we can check the status by"
+    },
+    {
+      "start": 220.26,
+      "duration": 5.46,
+      "text": "running sudo system CTL status Jenkins"
+    },
+    {
+      "start": 222.78,
+      "duration": 5.34,
+      "text": "it should give you that this Jenkins is"
+    },
+    {
+      "start": 225.72,
+      "duration": 4.379,
+      "text": "active and running now you can paste"
+    },
+    {
+      "start": 228.12,
+      "duration": 6.0,
+      "text": "copy your IP address public IP address"
+    },
+    {
+      "start": 230.099,
+      "duration": 7.161,
+      "text": "paste it in a new tab with Port 80"
+    },
+    {
+      "start": 234.12,
+      "duration": 6.42,
+      "text": "80 which should show you Jenkins"
+    },
+    {
+      "start": 237.26,
+      "duration": 7.36,
+      "text": "on this board so now"
+    },
+    {
+      "start": 240.54,
+      "duration": 6.3,
+      "text": "we are inside Jenkins so this is"
+    },
+    {
+      "start": 244.62,
+      "duration": 3.6,
+      "text": "if you get the same screen as me which"
+    },
+    {
+      "start": 246.84,
+      "duration": 3.539,
+      "text": "means you have successfully installed"
+    },
+    {
+      "start": 248.22,
+      "duration": 3.659,
+      "text": "Jenkins we can find the password at this"
+    },
+    {
+      "start": 250.379,
+      "duration": 4.56,
+      "text": "path here so I'm going to copy this path"
+    },
+    {
+      "start": 251.879,
+      "duration": 6.001,
+      "text": "uh check what is there inside this path"
+    },
+    {
+      "start": 254.939,
+      "duration": 4.381,
+      "text": "so pseudo cat and the file I'm going to"
+    },
+    {
+      "start": 257.88,
+      "duration": 4.079,
+      "text": "get the password here so this is the"
+    },
+    {
+      "start": 259.32,
+      "duration": 5.46,
+      "text": "password we will require to"
+    },
+    {
+      "start": 261.959,
+      "duration": 4.621,
+      "text": "login into our assign it into our"
+    },
+    {
+      "start": 264.78,
+      "duration": 5.1,
+      "text": "Jenkins I'm going to paste that password"
+    },
+    {
+      "start": 266.58,
+      "duration": 5.1,
+      "text": "and then click on continue option here"
+    },
+    {
+      "start": 269.88,
+      "duration": 4.08,
+      "text": "if the password is correct you should be"
+    },
+    {
+      "start": 271.68,
+      "duration": 4.56,
+      "text": "inside the Jenkins you can now select"
+    },
+    {
+      "start": 273.96,
+      "duration": 4.019,
+      "text": "the option either go with install"
+    },
+    {
+      "start": 276.24,
+      "duration": 2.94,
+      "text": "suggested plugins or select plugins to"
+    },
+    {
+      "start": 277.979,
+      "duration": 3.541,
+      "text": "install I'm going to go with install"
+    },
+    {
+      "start": 279.18,
+      "duration": 6.239,
+      "text": "suggested plugins"
+    },
+    {
+      "start": 281.52,
+      "duration": 5.82,
+      "text": "and scroll down okay"
+    },
+    {
+      "start": 285.419,
+      "duration": 3.661,
+      "text": "so this get Jenkins is now getting"
+    },
+    {
+      "start": 287.34,
+      "duration": 4.38,
+      "text": "started which means we have successfully"
+    },
+    {
+      "start": 289.08,
+      "duration": 5.399,
+      "text": "configured and installed Jenkins in our"
+    },
+    {
+      "start": 291.72,
+      "duration": 4.68,
+      "text": "Amazon Linux Ami"
+    },
+    {
+      "start": 294.479,
+      "duration": 4.321,
+      "text": "this is how you install it you can now"
+    },
+    {
+      "start": 296.4,
+      "duration": 4.68,
+      "text": "start creating your builds and deploy"
+    },
+    {
+      "start": 298.8,
+      "duration": 3.959,
+      "text": "your applications using Jenkins if you"
+    },
+    {
+      "start": 301.08,
+      "duration": 4.02,
+      "text": "have any questions any doubt regarding"
+    },
+    {
+      "start": 302.759,
+      "duration": 3.66,
+      "text": "this installation or configuration you"
+    },
+    {
+      "start": 305.1,
+      "duration": 4.08,
+      "text": "can let me know in the comment section"
+    },
+    {
+      "start": 306.419,
+      "duration": 5.22,
+      "text": "and I will be there to help you so if"
+    },
+    {
+      "start": 309.18,
+      "duration": 4.44,
+      "text": "you have any issues like timeout error"
+    },
+    {
+      "start": 311.639,
+      "duration": 4.62,
+      "text": "or anything make sure you have Security"
+    },
+    {
+      "start": 313.62,
+      "duration": 4.44,
+      "text": "Group with port 8080 enabled if you"
+    },
+    {
+      "start": 316.259,
+      "duration": 5.341,
+      "text": "don't have it you might face issues like"
+    },
+    {
+      "start": 318.06,
+      "duration": 5.52,
+      "text": "connection refused or timeout error make"
+    },
+    {
+      "start": 321.6,
+      "duration": 4.02,
+      "text": "sure you have it and Jenkins is going to"
+    },
+    {
+      "start": 323.58,
+      "duration": 4.2,
+      "text": "run on 8080."
+    },
+    {
+      "start": 325.62,
+      "duration": 4.079,
+      "text": "now I need to create an admin password"
+    },
+    {
+      "start": 327.78,
+      "duration": 3.72,
+      "text": "and then I can start using my genkates"
+    },
+    {
+      "start": 329.699,
+      "duration": 4.5,
+      "text": "but this is this is all I hope you"
+    },
+    {
+      "start": 331.5,
+      "duration": 4.979,
+      "text": "understood on how to install Jenkins on"
+    },
+    {
+      "start": 334.199,
+      "duration": 3.84,
+      "text": "your Amazon Linux machine let me know in"
+    },
+    {
+      "start": 336.479,
+      "duration": 3.78,
+      "text": "the comment section and subscribe for"
+    },
+    {
+      "start": 338.039,
+      "duration": 5.66,
+      "text": "more videos on AWS devops and Cloud"
+    },
+    {
+      "start": 340.259,
+      "duration": 3.44,
+      "text": "thank you have a good day"
+    }
+  ]
+}

@@ -1,0 +1,1896 @@
+{
+  "video": {
+    "id": "RIAe1EazB5M",
+    "title": "Everything you need to know about Service Mesh Explained! [DEMO]",
+    "url": "https://www.youtube.com/watch?v=RIAe1EazB5M",
+    "duration": 795,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.359,
+      "duration": 3.441,
+      "text": "in this video you will learn everything"
+    },
+    {
+      "start": 1.92,
+      "duration": 4.399,
+      "text": "you need to know about service meshes"
+    },
+    {
+      "start": 3.8,
+      "duration": 4.2,
+      "text": "with detail notes and Hands-On project I"
+    },
+    {
+      "start": 6.319,
+      "duration": 3.481,
+      "text": "will explain you what is service mesh"
+    },
+    {
+      "start": 8.0,
+      "duration": 3.679,
+      "text": "how they actually work service mesh"
+    },
+    {
+      "start": 9.8,
+      "duration": 4.039,
+      "text": "architecture different types of service"
+    },
+    {
+      "start": 11.679,
+      "duration": 3.721,
+      "text": "meshes used in the industry and also"
+    },
+    {
+      "start": 13.839,
+      "duration": 3.561,
+      "text": "explaining different features of service"
+    },
+    {
+      "start": 15.4,
+      "duration": 4.52,
+      "text": "meshes through a live project which we"
+    },
+    {
+      "start": 17.4,
+      "duration": 4.36,
+      "text": "Deploy on Mini Cube cluster using sto"
+    },
+    {
+      "start": 19.92,
+      "duration": 3.92,
+      "text": "service mesh make sure you watch this"
+    },
+    {
+      "start": 21.76,
+      "duration": 3.8,
+      "text": "video till the end let's go now before"
+    },
+    {
+      "start": 23.84,
+      "duration": 3.64,
+      "text": "we start with learning service mesh I"
+    },
+    {
+      "start": 25.56,
+      "duration": 4.4,
+      "text": "have this detail notes created which"
+    },
+    {
+      "start": 27.48,
+      "duration": 4.919,
+      "text": "includes all the definitions diagrams"
+    },
+    {
+      "start": 29.96,
+      "duration": 4.96,
+      "text": "explaining service mesh its architecture"
+    },
+    {
+      "start": 32.399,
+      "duration": 4.801,
+      "text": "real life case studies and also links to"
+    },
+    {
+      "start": 34.92,
+      "duration": 3.84,
+      "text": "help you learn service mesh properly if"
+    },
+    {
+      "start": 37.2,
+      "duration": 3.72,
+      "text": "you want me to share this document with"
+    },
+    {
+      "start": 38.76,
+      "duration": 4.08,
+      "text": "you comment below service mesh and I"
+    },
+    {
+      "start": 40.92,
+      "duration": 4.68,
+      "text": "will share the PDF in the video"
+    },
+    {
+      "start": 42.84,
+      "duration": 4.6,
+      "text": "description let's start all right to"
+    },
+    {
+      "start": 45.6,
+      "duration": 3.92,
+      "text": "properly understand service mesh let's"
+    },
+    {
+      "start": 47.44,
+      "duration": 3.759,
+      "text": "start with a scenario imagine you are"
+    },
+    {
+      "start": 49.52,
+      "duration": 3.8,
+      "text": "engineer working in an e-commerce"
+    },
+    {
+      "start": 51.199,
+      "duration": 4.601,
+      "text": "company like Amazon and you're working"
+    },
+    {
+      "start": 53.32,
+      "duration": 4.759,
+      "text": "on a mon application which is a single"
+    },
+    {
+      "start": 55.8,
+      "duration": 5.12,
+      "text": "large code base for handling users"
+    },
+    {
+      "start": 58.079,
+      "duration": 4.201,
+      "text": "managing orders inventory and payments"
+    },
+    {
+      "start": 60.92,
+      "duration": 3.08,
+      "text": "everything is working fine but the"
+    },
+    {
+      "start": 62.28,
+      "duration": 3.44,
+      "text": "company is growing so you want to move"
+    },
+    {
+      "start": 64.0,
+      "duration": 4.6,
+      "text": "from monolith architecture to"
+    },
+    {
+      "start": 65.72,
+      "duration": 4.56,
+      "text": "microservices architecture now with this"
+    },
+    {
+      "start": 68.6,
+      "duration": 3.28,
+      "text": "microservices architecture you have"
+    },
+    {
+      "start": 70.28,
+      "duration": 3.519,
+      "text": "separate services and they are all"
+    },
+    {
+      "start": 71.88,
+      "duration": 3.879,
+      "text": "communicating with each other so you"
+    },
+    {
+      "start": 73.799,
+      "duration": 4.081,
+      "text": "have different services like user"
+    },
+    {
+      "start": 75.759,
+      "duration": 3.921,
+      "text": "service for handling user accounts order"
+    },
+    {
+      "start": 77.88,
+      "duration": 4.44,
+      "text": "service for processing orders inventory"
+    },
+    {
+      "start": 79.68,
+      "duration": 4.92,
+      "text": "to track stocks and also payments for"
+    },
+    {
+      "start": 82.32,
+      "duration": 3.92,
+      "text": "handling payment for this e-commerce"
+    },
+    {
+      "start": 84.6,
+      "duration": 3.559,
+      "text": "application to work properly these"
+    },
+    {
+      "start": 86.24,
+      "duration": 3.559,
+      "text": "microservices need to communicate with"
+    },
+    {
+      "start": 88.159,
+      "duration": 3.521,
+      "text": "each other so the user service is going"
+    },
+    {
+      "start": 89.799,
+      "duration": 4.36,
+      "text": "to talk to inventory or user service"
+    },
+    {
+      "start": 91.68,
+      "duration": 4.28,
+      "text": "might talk to order service and so on"
+    },
+    {
+      "start": 94.159,
+      "duration": 4.28,
+      "text": "microservices architecture are good for"
+    },
+    {
+      "start": 95.96,
+      "duration": 4.36,
+      "text": "scaling and for big companies but they"
+    },
+    {
+      "start": 98.439,
+      "duration": 3.841,
+      "text": "come with different problems so the"
+    },
+    {
+      "start": 100.32,
+      "duration": 4.119,
+      "text": "first problem we face is authentication"
+    },
+    {
+      "start": 102.28,
+      "duration": 4.159,
+      "text": "and authorization we know that the"
+    },
+    {
+      "start": 104.439,
+      "duration": 3.881,
+      "text": "services are going to talk to each other"
+    },
+    {
+      "start": 106.439,
+      "duration": 4.32,
+      "text": "and for every request it should be"
+    },
+    {
+      "start": 108.32,
+      "duration": 4.119,
+      "text": "authenticated and authorized every micro"
+    },
+    {
+      "start": 110.759,
+      "duration": 3.241,
+      "text": "Services need to handle logins and"
+    },
+    {
+      "start": 112.439,
+      "duration": 3.6,
+      "text": "permissions separately and you can do"
+    },
+    {
+      "start": 114.0,
+      "duration": 3.68,
+      "text": "this by adding the code inside every"
+    },
+    {
+      "start": 116.039,
+      "duration": 3.161,
+      "text": "microservice and whenever you add a new"
+    },
+    {
+      "start": 117.68,
+      "duration": 3.92,
+      "text": "micros service you need to add the code"
+    },
+    {
+      "start": 119.2,
+      "duration": 4.32,
+      "text": "for login or for authorization in that"
+    },
+    {
+      "start": 121.6,
+      "duration": 4.28,
+      "text": "service as well which is a repetitive"
+    },
+    {
+      "start": 123.52,
+      "duration": 4.56,
+      "text": "task second problem you face is hard to"
+    },
+    {
+      "start": 125.88,
+      "duration": 3.84,
+      "text": "debug whenever there's a problem it is"
+    },
+    {
+      "start": 128.08,
+      "duration": 3.28,
+      "text": "very difficult to troubleshoot and to"
+    },
+    {
+      "start": 129.72,
+      "duration": 2.96,
+      "text": "find out where the problem is for"
+    },
+    {
+      "start": 131.36,
+      "duration": 3.2,
+      "text": "example let's say customers are"
+    },
+    {
+      "start": 132.68,
+      "duration": 3.639,
+      "text": "complaining that the orders are failing"
+    },
+    {
+      "start": 134.56,
+      "duration": 3.6,
+      "text": "randomly and you try to look into the"
+    },
+    {
+      "start": 136.319,
+      "duration": 3.521,
+      "text": "logs of the application and you found"
+    },
+    {
+      "start": 138.16,
+      "duration": 3.88,
+      "text": "out that the problem is with the"
+    },
+    {
+      "start": 139.84,
+      "duration": 4.119,
+      "text": "payments service but you don't know if"
+    },
+    {
+      "start": 142.04,
+      "duration": 4.0,
+      "text": "the problem is due to network glitch or"
+    },
+    {
+      "start": 143.959,
+      "duration": 3.681,
+      "text": "if it is due to the load spikes or due"
+    },
+    {
+      "start": 146.04,
+      "duration": 3.559,
+      "text": "to faulty service update so"
+    },
+    {
+      "start": 147.64,
+      "duration": 4.4,
+      "text": "troubleshooting is difficult third"
+    },
+    {
+      "start": 149.599,
+      "duration": 4.481,
+      "text": "problem is security risk these Services"
+    },
+    {
+      "start": 152.04,
+      "duration": 4.4,
+      "text": "communicate with each other but the data"
+    },
+    {
+      "start": 154.08,
+      "duration": 4.239,
+      "text": "that they share is not encrypted so for"
+    },
+    {
+      "start": 156.44,
+      "duration": 4.439,
+      "text": "example a user is trying to add credit"
+    },
+    {
+      "start": 158.319,
+      "duration": 5.2,
+      "text": "card details this information is not"
+    },
+    {
+      "start": 160.879,
+      "duration": 5.041,
+      "text": "encrypted and anyone can actually get"
+    },
+    {
+      "start": 163.519,
+      "duration": 4.241,
+      "text": "that information if there is no security"
+    },
+    {
+      "start": 165.92,
+      "duration": 4.28,
+      "text": "so there's a huge security risk when"
+    },
+    {
+      "start": 167.76,
+      "duration": 4.759,
+      "text": "working with microservices next problem"
+    },
+    {
+      "start": 170.2,
+      "duration": 4.039,
+      "text": "that we face is load balancing let's say"
+    },
+    {
+      "start": 172.519,
+      "duration": 3.201,
+      "text": "the order page is getting used traffic"
+    },
+    {
+      "start": 174.239,
+      "duration": 3.441,
+      "text": "but the inventory page is not getting"
+    },
+    {
+      "start": 175.72,
+      "duration": 5.56,
+      "text": "that much traffic so we need to handle"
+    },
+    {
+      "start": 177.68,
+      "duration": 5.8,
+      "text": "traffic properly and lastly slow rollout"
+    },
+    {
+      "start": 181.28,
+      "duration": 4.319,
+      "text": "and deployments so consider you have a"
+    },
+    {
+      "start": 183.48,
+      "duration": 3.96,
+      "text": "new version of payment service and you"
+    },
+    {
+      "start": 185.599,
+      "duration": 4.0,
+      "text": "want this version to be shown only to"
+    },
+    {
+      "start": 187.44,
+      "duration": 4.24,
+      "text": "10% of the users which is also known as"
+    },
+    {
+      "start": 189.599,
+      "duration": 3.761,
+      "text": "can deployment handling this deployment"
+    },
+    {
+      "start": 191.68,
+      "duration": 3.6,
+      "text": "could be a very difficult task when"
+    },
+    {
+      "start": 193.36,
+      "duration": 4.48,
+      "text": "using microservices so all these"
+    },
+    {
+      "start": 195.28,
+      "duration": 5.08,
+      "text": "problems can be solved using service"
+    },
+    {
+      "start": 197.84,
+      "duration": 3.959,
+      "text": "mesh let's look at the definition a"
+    },
+    {
+      "start": 200.36,
+      "duration": 3.439,
+      "text": "service mesh is nothing but an"
+    },
+    {
+      "start": 201.799,
+      "duration": 4.121,
+      "text": "infrastructure layer that manages"
+    },
+    {
+      "start": 203.799,
+      "duration": 4.52,
+      "text": "service to service communication within"
+    },
+    {
+      "start": 205.92,
+      "duration": 4.36,
+      "text": "a distributed microservices architecture"
+    },
+    {
+      "start": 208.319,
+      "duration": 4.28,
+      "text": "it abstract a networking concerns"
+    },
+    {
+      "start": 210.28,
+      "duration": 4.8,
+      "text": "thereby providing things like security"
+    },
+    {
+      "start": 212.599,
+      "duration": 4.521,
+      "text": "which is through mutual TLS traffic"
+    },
+    {
+      "start": 215.08,
+      "duration": 4.519,
+      "text": "management via intelligent routing load"
+    },
+    {
+      "start": 217.12,
+      "duration": 4.119,
+      "text": "balancing and R rise also observability"
+    },
+    {
+      "start": 219.599,
+      "duration": 3.521,
+      "text": "because these service mesh can be"
+    },
+    {
+      "start": 221.239,
+      "duration": 5.161,
+      "text": "integrated with tools like Prometheus"
+    },
+    {
+      "start": 223.12,
+      "duration": 5.56,
+      "text": "grafana Etc and also resilience by using"
+    },
+    {
+      "start": 226.4,
+      "duration": 4.08,
+      "text": "circuit breakers and fault injection now"
+    },
+    {
+      "start": 228.68,
+      "duration": 3.44,
+      "text": "before service mesh companies used to"
+    },
+    {
+      "start": 230.48,
+      "duration": 3.759,
+      "text": "manually manage service to service"
+    },
+    {
+      "start": 232.12,
+      "duration": 4.6,
+      "text": "communication by adding the code in each"
+    },
+    {
+      "start": 234.239,
+      "duration": 4.881,
+      "text": "microservice or by using reverse proxies"
+    },
+    {
+      "start": 236.72,
+      "duration": 3.599,
+      "text": "like engine X ha proxy load balancers"
+    },
+    {
+      "start": 239.12,
+      "duration": 3.0,
+      "text": "API Gateway"
+    },
+    {
+      "start": 240.319,
+      "duration": 3.521,
+      "text": "but this was very difficult and there"
+    },
+    {
+      "start": 242.12,
+      "duration": 4.479,
+      "text": "were used to be different problems that"
+    },
+    {
+      "start": 243.84,
+      "duration": 4.599,
+      "text": "we have seen here so all these problems"
+    },
+    {
+      "start": 246.599,
+      "duration": 4.161,
+      "text": "can be easily solved with service mesh"
+    },
+    {
+      "start": 248.439,
+      "duration": 4.681,
+      "text": "Netflix also uses sto service mesh and"
+    },
+    {
+      "start": 250.76,
+      "duration": 3.839,
+      "text": "you can read this blog where you can"
+    },
+    {
+      "start": 253.12,
+      "duration": 3.799,
+      "text": "understand how Netflix started using"
+    },
+    {
+      "start": 254.599,
+      "duration": 4.401,
+      "text": "service mesh what problem they faced"
+    },
+    {
+      "start": 256.919,
+      "duration": 4.081,
+      "text": "before using service me Netflix created"
+    },
+    {
+      "start": 259.0,
+      "duration": 3.72,
+      "text": "their own internal tools to start with"
+    },
+    {
+      "start": 261.0,
+      "duration": 4.68,
+      "text": "which is urea for service Discovery and"
+    },
+    {
+      "start": 262.72,
+      "duration": 5.36,
+      "text": "ribon as well for IPC interprocess"
+    },
+    {
+      "start": 265.68,
+      "duration": 4.799,
+      "text": "communication but later on they moved to"
+    },
+    {
+      "start": 268.08,
+      "duration": 4.0,
+      "text": "service mes like sto so now that we"
+    },
+    {
+      "start": 270.479,
+      "duration": 3.601,
+      "text": "understood what is a service mesh let's"
+    },
+    {
+      "start": 272.08,
+      "duration": 3.72,
+      "text": "look at the service mesh architecture"
+    },
+    {
+      "start": 274.08,
+      "duration": 3.679,
+      "text": "architecture consists of two important"
+    },
+    {
+      "start": 275.8,
+      "duration": 4.76,
+      "text": "things which is the control plane and"
+    },
+    {
+      "start": 277.759,
+      "duration": 4.361,
+      "text": "the data plane so the control plane here"
+    },
+    {
+      "start": 280.56,
+      "duration": 2.96,
+      "text": "is going to be managing the data plane"
+    },
+    {
+      "start": 282.12,
+      "duration": 3.88,
+      "text": "and the data plane consists of the"
+    },
+    {
+      "start": 283.52,
+      "duration": 4.959,
+      "text": "microservices along with a side car"
+    },
+    {
+      "start": 286.0,
+      "duration": 4.919,
+      "text": "proxy so this proxy is used to handle"
+    },
+    {
+      "start": 288.479,
+      "duration": 3.921,
+      "text": "everything that we Face here proxy is"
+    },
+    {
+      "start": 290.919,
+      "duration": 3.481,
+      "text": "going to handle authorization"
+    },
+    {
+      "start": 292.4,
+      "duration": 3.84,
+      "text": "authentication it will also have"
+    },
+    {
+      "start": 294.4,
+      "duration": 3.76,
+      "text": "observability it will also do"
+    },
+    {
+      "start": 296.24,
+      "duration": 4.48,
+      "text": "communication through mutual TLS load"
+    },
+    {
+      "start": 298.16,
+      "duration": 3.92,
+      "text": "balancing and also can deployments this"
+    },
+    {
+      "start": 300.72,
+      "duration": 3.16,
+      "text": "is how it works it consists of data"
+    },
+    {
+      "start": 302.08,
+      "duration": 3.72,
+      "text": "plane and a control plane you can read"
+    },
+    {
+      "start": 303.88,
+      "duration": 3.92,
+      "text": "about it here a data plane consists of"
+    },
+    {
+      "start": 305.8,
+      "duration": 3.959,
+      "text": "each microservices running alongside"
+    },
+    {
+      "start": 307.8,
+      "duration": 3.8,
+      "text": "with a sidecar proxy if you don't know"
+    },
+    {
+      "start": 309.759,
+      "duration": 3.28,
+      "text": "what is a side car a side car is another"
+    },
+    {
+      "start": 311.6,
+      "duration": 3.48,
+      "text": "container that is going to run along"
+    },
+    {
+      "start": 313.039,
+      "duration": 4.281,
+      "text": "with your microservice in a pod a good"
+    },
+    {
+      "start": 315.08,
+      "duration": 4.959,
+      "text": "example of this proxy is enoy proxy that"
+    },
+    {
+      "start": 317.32,
+      "duration": 4.319,
+      "text": "is used in ISO service mesh and this"
+    },
+    {
+      "start": 320.039,
+      "duration": 3.401,
+      "text": "side curve proxy can provide you with"
+    },
+    {
+      "start": 321.639,
+      "duration": 3.041,
+      "text": "all these different benefits or they"
+    },
+    {
+      "start": 323.44,
+      "duration": 3.96,
+      "text": "responsible for all these different"
+    },
+    {
+      "start": 324.68,
+      "duration": 5.0,
+      "text": "things whereas control plane is used to"
+    },
+    {
+      "start": 327.4,
+      "duration": 4.239,
+      "text": "manage the side carve proxy and also to"
+    },
+    {
+      "start": 329.68,
+      "duration": 3.84,
+      "text": "apply traffic rules security policy and"
+    },
+    {
+      "start": 331.639,
+      "duration": 4.521,
+      "text": "observability settings so this is the"
+    },
+    {
+      "start": 333.52,
+      "duration": 4.0,
+      "text": "architecture of service mesh so now you"
+    },
+    {
+      "start": 336.16,
+      "duration": 3.2,
+      "text": "might have understood without service"
+    },
+    {
+      "start": 337.52,
+      "duration": 4.239,
+      "text": "mesh the service talks to each other"
+    },
+    {
+      "start": 339.36,
+      "duration": 4.76,
+      "text": "manually with custom retry logic no"
+    },
+    {
+      "start": 341.759,
+      "duration": 4.521,
+      "text": "security whereas using service mesh you"
+    },
+    {
+      "start": 344.12,
+      "duration": 4.48,
+      "text": "have a proxy where a service is going to"
+    },
+    {
+      "start": 346.28,
+      "duration": 4.0,
+      "text": "talk to each other through a proxy which"
+    },
+    {
+      "start": 348.6,
+      "duration": 3.96,
+      "text": "is going to handle retries which will"
+    },
+    {
+      "start": 350.28,
+      "duration": 4.12,
+      "text": "have security also have monitoring and"
+    },
+    {
+      "start": 352.56,
+      "duration": 3.96,
+      "text": "everything else now in the market there"
+    },
+    {
+      "start": 354.4,
+      "duration": 4.919,
+      "text": "are different types of service mesh like"
+    },
+    {
+      "start": 356.52,
+      "duration": 3.64,
+      "text": "linkerd sto you also have console by"
+    },
+    {
+      "start": 359.319,
+      "duration": 4.201,
+      "text": "hashing"
+    },
+    {
+      "start": 360.16,
+      "duration": 4.96,
+      "text": "or AWS app mesh I have a link here which"
+    },
+    {
+      "start": 363.52,
+      "duration": 3.519,
+      "text": "will help you understand different"
+    },
+    {
+      "start": 365.12,
+      "duration": 3.519,
+      "text": "service mesh and also their comparison"
+    },
+    {
+      "start": 367.039,
+      "duration": 3.401,
+      "text": "so if you want to know which service"
+    },
+    {
+      "start": 368.639,
+      "duration": 4.521,
+      "text": "mesh is good for you you can read this"
+    },
+    {
+      "start": 370.44,
+      "duration": 5.479,
+      "text": "blog here and you can also scroll down"
+    },
+    {
+      "start": 373.16,
+      "duration": 5.08,
+      "text": "to see the comparison so this sto is"
+    },
+    {
+      "start": 375.919,
+      "duration": 5.201,
+      "text": "created by Google IBM and LIF Linker is"
+    },
+    {
+      "start": 378.24,
+      "duration": 5.12,
+      "text": "created by Bond sto uses nvoy proxy it"
+    },
+    {
+      "start": 381.12,
+      "duration": 5.32,
+      "text": "can also be using ambient mesh Linker"
+    },
+    {
+      "start": 383.36,
+      "duration": 5.16,
+      "text": "uses linker2 proxy AWS app mesh uses NY"
+    },
+    {
+      "start": 386.44,
+      "duration": 3.92,
+      "text": "proxy and so on so this is a great link"
+    },
+    {
+      "start": 388.52,
+      "duration": 3.72,
+      "text": "if you want me to share this doent let"
+    },
+    {
+      "start": 390.36,
+      "duration": 3.04,
+      "text": "me know in the comment section now to"
+    },
+    {
+      "start": 392.24,
+      "duration": 2.679,
+      "text": "explain you different features of"
+    },
+    {
+      "start": 393.4,
+      "duration": 4.16,
+      "text": "service mesh I have this project"
+    },
+    {
+      "start": 394.919,
+      "duration": 4.521,
+      "text": "deployed on Mini Cube using sto service"
+    },
+    {
+      "start": 397.56,
+      "duration": 4.0,
+      "text": "mesh and using this project I will"
+    },
+    {
+      "start": 399.44,
+      "duration": 4.479,
+      "text": "explain you how Mutual TLS load"
+    },
+    {
+      "start": 401.56,
+      "duration": 4.68,
+      "text": "balancing observability Etc work in"
+    },
+    {
+      "start": 403.919,
+      "duration": 4.441,
+      "text": "service mesh all right so I have this"
+    },
+    {
+      "start": 406.24,
+      "duration": 4.32,
+      "text": "book info application deployed on my"
+    },
+    {
+      "start": 408.36,
+      "duration": 3.679,
+      "text": "machine it is deployed on Mini Cube and"
+    },
+    {
+      "start": 410.56,
+      "duration": 3.24,
+      "text": "it has different microservices like the"
+    },
+    {
+      "start": 412.039,
+      "duration": 3.72,
+      "text": "details microservice product page"
+    },
+    {
+      "start": 413.8,
+      "duration": 4.2,
+      "text": "ratings and three different versions of"
+    },
+    {
+      "start": 415.759,
+      "duration": 3.88,
+      "text": "reviews microservices as you can see"
+    },
+    {
+      "start": 418.0,
+      "duration": 3.84,
+      "text": "these microservices have two pods"
+    },
+    {
+      "start": 419.639,
+      "duration": 4.4,
+      "text": "running and one of the image is the"
+    },
+    {
+      "start": 421.84,
+      "duration": 5.0,
+      "text": "microservices itself other one is the"
+    },
+    {
+      "start": 424.039,
+      "duration": 6.681,
+      "text": "proxy which is the sto proxy to show you"
+    },
+    {
+      "start": 426.84,
+      "duration": 9.199,
+      "text": "that I'm going to do Cube CTL describe"
+    },
+    {
+      "start": 430.72,
+      "duration": 7.159,
+      "text": "pod and let's use this so if you look at"
+    },
+    {
+      "start": 436.039,
+      "duration": 4.401,
+      "text": "different images used in this you can"
+    },
+    {
+      "start": 437.879,
+      "duration": 5.04,
+      "text": "see scroll down in the container section"
+    },
+    {
+      "start": 440.44,
+      "duration": 5.599,
+      "text": "here you can see the image used here is"
+    },
+    {
+      "start": 442.919,
+      "duration": 5.761,
+      "text": "the book info details image whereas the"
+    },
+    {
+      "start": 446.039,
+      "duration": 4.361,
+      "text": "second image used is the sto proxy so in"
+    },
+    {
+      "start": 448.68,
+      "duration": 3.56,
+      "text": "service mesh you have a sidecar"
+    },
+    {
+      "start": 450.4,
+      "duration": 3.44,
+      "text": "container running along with your main"
+    },
+    {
+      "start": 452.24,
+      "duration": 3.12,
+      "text": "container this is a book info"
+    },
+    {
+      "start": 453.84,
+      "duration": 4.32,
+      "text": "application which you can also find on"
+    },
+    {
+      "start": 455.36,
+      "duration": 4.48,
+      "text": "the official sto page it consists of"
+    },
+    {
+      "start": 458.16,
+      "duration": 3.2,
+      "text": "different microservices written in"
+    },
+    {
+      "start": 459.84,
+      "duration": 4.28,
+      "text": "different language so the product page"
+    },
+    {
+      "start": 461.36,
+      "duration": 5.36,
+      "text": "is written in Python the ratings page is"
+    },
+    {
+      "start": 464.12,
+      "duration": 5.28,
+      "text": "written in nodejs reviews are written in"
+    },
+    {
+      "start": 466.72,
+      "duration": 5.199,
+      "text": "Java whereas Ruby is used to create"
+    },
+    {
+      "start": 469.4,
+      "duration": 4.4,
+      "text": "details microservices using this project"
+    },
+    {
+      "start": 471.919,
+      "duration": 4.56,
+      "text": "I'm going to show you different features"
+    },
+    {
+      "start": 473.8,
+      "duration": 5.04,
+      "text": "which includes Mutual TLS load balancing"
+    },
+    {
+      "start": 476.479,
+      "duration": 4.28,
+      "text": "Etc if you want a detailed video"
+    },
+    {
+      "start": 478.84,
+      "duration": 3.84,
+      "text": "explaining how to deploy this book info"
+    },
+    {
+      "start": 480.759,
+      "duration": 3.761,
+      "text": "application on Mini Cube or any"
+    },
+    {
+      "start": 482.68,
+      "duration": 3.359,
+      "text": "kubernetes cluster please let me know in"
+    },
+    {
+      "start": 484.52,
+      "duration": 3.44,
+      "text": "the comment section so you can also do"
+    },
+    {
+      "start": 486.039,
+      "duration": 3.641,
+      "text": "the same demo with me to start with"
+    },
+    {
+      "start": 487.96,
+      "duration": 4.16,
+      "text": "let's understand how you can use service"
+    },
+    {
+      "start": 489.68,
+      "duration": 4.56,
+      "text": "mesh to monitor your microservices sto"
+    },
+    {
+      "start": 492.12,
+      "duration": 4.6,
+      "text": "can be used along with grafana"
+    },
+    {
+      "start": 494.24,
+      "duration": 6.16,
+      "text": "Prometheus and also Kali let's go ahead"
+    },
+    {
+      "start": 496.72,
+      "duration": 3.68,
+      "text": "and apply this so I'm going to"
+    },
+    {
+      "start": 502.199,
+      "duration": 6.521,
+      "text": "apply and we have grafana Jer Kali Loki"
+    },
+    {
+      "start": 506.759,
+      "duration": 4.681,
+      "text": "Prometheus I'm going to be applying them"
+    },
+    {
+      "start": 508.72,
+      "duration": 2.72,
+      "text": "one by one"
+    },
+    {
+      "start": 513.479,
+      "duration": 5.321,
+      "text": "okay to start using it you can simply"
+    },
+    {
+      "start": 515.839,
+      "duration": 5.481,
+      "text": "say sctl dashboard and the name of the"
+    },
+    {
+      "start": 518.8,
+      "duration": 5.0,
+      "text": "app which is Kali here and you can see"
+    },
+    {
+      "start": 521.32,
+      "duration": 3.8,
+      "text": "this is the Kali dashboard now in this"
+    },
+    {
+      "start": 523.8,
+      "duration": 3.68,
+      "text": "dashboard you can see different things"
+    },
+    {
+      "start": 525.12,
+      "duration": 4.279,
+      "text": "like traic graph I'm going to select"
+    },
+    {
+      "start": 527.48,
+      "duration": 4.4,
+      "text": "default namespace because this is where"
+    },
+    {
+      "start": 529.399,
+      "duration": 4.56,
+      "text": "my microservices are present and you can"
+    },
+    {
+      "start": 531.88,
+      "duration": 4.12,
+      "text": "see all the different microservices now"
+    },
+    {
+      "start": 533.959,
+      "duration": 4.56,
+      "text": "so you can see communication between the"
+    },
+    {
+      "start": 536.0,
+      "duration": 4.04,
+      "text": "product page going to the version one"
+    },
+    {
+      "start": 538.519,
+      "duration": 3.281,
+      "text": "reviews and so on"
+    },
+    {
+      "start": 540.04,
+      "duration": 3.16,
+      "text": "using Kali you can get more information"
+    },
+    {
+      "start": 541.8,
+      "duration": 2.88,
+      "text": "about your microservices like how they"
+    },
+    {
+      "start": 543.2,
+      "duration": 3.68,
+      "text": "are communicating what are different"
+    },
+    {
+      "start": 544.68,
+      "duration": 4.96,
+      "text": "applications workload Services"
+    },
+    {
+      "start": 546.88,
+      "duration": 4.399,
+      "text": "configuration and lot more right now"
+    },
+    {
+      "start": 549.64,
+      "duration": 4.199,
+      "text": "these services are communicating with"
+    },
+    {
+      "start": 551.279,
+      "duration": 4.68,
+      "text": "each other which is not encrypted so to"
+    },
+    {
+      "start": 553.839,
+      "duration": 4.44,
+      "text": "encrypt it we can use something known as"
+    },
+    {
+      "start": 555.959,
+      "duration": 4.44,
+      "text": "Mutual TLS so let me show you how you"
+    },
+    {
+      "start": 558.279,
+      "duration": 4.641,
+      "text": "can enable that as you can see here"
+    },
+    {
+      "start": 560.399,
+      "duration": 4.721,
+      "text": "Mutual TLS will help you with securing"
+    },
+    {
+      "start": 562.92,
+      "duration": 4.32,
+      "text": "Communications between microservices I'm"
+    },
+    {
+      "start": 565.12,
+      "duration": 5.0,
+      "text": "going to Simply apply this manifest file"
+    },
+    {
+      "start": 567.24,
+      "duration": 5.2,
+      "text": "and go here"
+    },
+    {
+      "start": 570.12,
+      "duration": 4.76,
+      "text": "and apply this now that this is applied"
+    },
+    {
+      "start": 572.44,
+      "duration": 4.24,
+      "text": "let's go here refresh the page and you"
+    },
+    {
+      "start": 574.88,
+      "duration": 5.28,
+      "text": "can see very"
+    },
+    {
+      "start": 576.68,
+      "duration": 5.96,
+      "text": "soon if I just enable"
+    },
+    {
+      "start": 580.16,
+      "duration": 4.28,
+      "text": "security so now you can see Mutual TLS"
+    },
+    {
+      "start": 582.64,
+      "duration": 3.56,
+      "text": "is enabled this means every"
+    },
+    {
+      "start": 584.44,
+      "duration": 4.24,
+      "text": "microservices is talking to each other"
+    },
+    {
+      "start": 586.2,
+      "duration": 4.4,
+      "text": "and the data transferred is encrypted"
+    },
+    {
+      "start": 588.68,
+      "duration": 3.8,
+      "text": "this is how service mesh like sto can be"
+    },
+    {
+      "start": 590.6,
+      "duration": 3.919,
+      "text": "used to enable encryption between"
+    },
+    {
+      "start": 592.48,
+      "duration": 4.52,
+      "text": "different microservices now let me show"
+    },
+    {
+      "start": 594.519,
+      "duration": 4.841,
+      "text": "you how you can use service mesh for"
+    },
+    {
+      "start": 597.0,
+      "duration": 3.88,
+      "text": "traffic distribution in our app"
+    },
+    {
+      "start": 599.36,
+      "duration": 3.2,
+      "text": "application here we have different"
+    },
+    {
+      "start": 600.88,
+      "duration": 3.56,
+      "text": "microservices we have three different"
+    },
+    {
+      "start": 602.56,
+      "duration": 3.839,
+      "text": "versions of reviews let's apply a"
+    },
+    {
+      "start": 604.44,
+      "duration": 4.24,
+      "text": "manifest file which is a virtual service"
+    },
+    {
+      "start": 606.399,
+      "duration": 4.601,
+      "text": "which will tell that 80% of traffic"
+    },
+    {
+      "start": 608.68,
+      "duration": 4.0,
+      "text": "should go to reviews version one and 20%"
+    },
+    {
+      "start": 611.0,
+      "duration": 3.6,
+      "text": "should go to reviews version two right"
+    },
+    {
+      "start": 612.68,
+      "duration": 3.76,
+      "text": "now if I show you the application here"
+    },
+    {
+      "start": 614.6,
+      "duration": 3.52,
+      "text": "has three different versions of reviews"
+    },
+    {
+      "start": 616.44,
+      "duration": 4.959,
+      "text": "this is the third"
+    },
+    {
+      "start": 618.12,
+      "duration": 5.719,
+      "text": "version this is the second version and"
+    },
+    {
+      "start": 621.399,
+      "duration": 4.041,
+      "text": "this is the first version with no stars"
+    },
+    {
+      "start": 623.839,
+      "duration": 2.961,
+      "text": "so when I make the change it will only"
+    },
+    {
+      "start": 625.44,
+      "duration": 3.6,
+      "text": "be showing the first and the second"
+    },
+    {
+      "start": 626.8,
+      "duration": 4.52,
+      "text": "version which means 20% of traffic will"
+    },
+    {
+      "start": 629.04,
+      "duration": 4.16,
+      "text": "go to to the second version and 80% of"
+    },
+    {
+      "start": 631.32,
+      "duration": 4.56,
+      "text": "traffic will go to the first version so"
+    },
+    {
+      "start": 633.2,
+      "duration": 2.68,
+      "text": "let's apply"
+    },
+    {
+      "start": 636.079,
+      "duration": 5.041,
+      "text": "this and it is applied now if I refresh"
+    },
+    {
+      "start": 638.92,
+      "duration": 2.2,
+      "text": "my"
+    },
+    {
+      "start": 641.16,
+      "duration": 4.919,
+      "text": "page you can see most of the time it is"
+    },
+    {
+      "start": 644.2,
+      "duration": 3.6,
+      "text": "always showing us the first version and"
+    },
+    {
+      "start": 646.079,
+      "duration": 3.32,
+      "text": "then sometimes it will show us the"
+    },
+    {
+      "start": 647.8,
+      "duration": 3.64,
+      "text": "second version which is the 20% of the"
+    },
+    {
+      "start": 649.399,
+      "duration": 4.041,
+      "text": "traffic so this is how you can use"
+    },
+    {
+      "start": 651.44,
+      "duration": 4.079,
+      "text": "service mesh to manage traffic"
+    },
+    {
+      "start": 653.44,
+      "duration": 3.92,
+      "text": "distribution as well similarly there are"
+    },
+    {
+      "start": 655.519,
+      "duration": 3.481,
+      "text": "more scenarios here which you can try"
+    },
+    {
+      "start": 657.36,
+      "duration": 3.4,
+      "text": "out to understand how service mesh"
+    },
+    {
+      "start": 659.0,
+      "duration": 3.2,
+      "text": "actually works if you want to deploy"
+    },
+    {
+      "start": 660.76,
+      "duration": 3.199,
+      "text": "this project you can use the official"
+    },
+    {
+      "start": 662.2,
+      "duration": 3.4,
+      "text": "documentation or you can let me know in"
+    },
+    {
+      "start": 663.959,
+      "duration": 3.401,
+      "text": "the comment section I can create a"
+    },
+    {
+      "start": 665.6,
+      "duration": 3.44,
+      "text": "separate video explaining how to deploy"
+    },
+    {
+      "start": 667.36,
+      "duration": 4.0,
+      "text": "a book info application using service"
+    },
+    {
+      "start": 669.04,
+      "duration": 4.84,
+      "text": "mesh I in fact also have documentation"
+    },
+    {
+      "start": 671.36,
+      "duration": 3.84,
+      "text": "here about how to deploy it so all the"
+    },
+    {
+      "start": 673.88,
+      "duration": 3.44,
+      "text": "steps and the commands are present in"
+    },
+    {
+      "start": 675.2,
+      "duration": 3.879,
+      "text": "this document additionally if you also"
+    },
+    {
+      "start": 677.32,
+      "duration": 3.639,
+      "text": "want to use grafana or Prometheus you"
+    },
+    {
+      "start": 679.079,
+      "duration": 4.2,
+      "text": "simply need to say"
+    },
+    {
+      "start": 680.959,
+      "duration": 3.88,
+      "text": "STL"
+    },
+    {
+      "start": 683.279,
+      "duration": 3.56,
+      "text": "dashboard"
+    },
+    {
+      "start": 684.839,
+      "duration": 4.281,
+      "text": "grafana since grafana is already"
+    },
+    {
+      "start": 686.839,
+      "duration": 4.641,
+      "text": "installed we can also use it here and"
+    },
+    {
+      "start": 689.12,
+      "duration": 4.0,
+      "text": "then go to dashboards in this dashboard"
+    },
+    {
+      "start": 691.48,
+      "duration": 3.24,
+      "text": "you can find sto and you can find"
+    },
+    {
+      "start": 693.12,
+      "duration": 3.48,
+      "text": "dashboards for your workload mesh"
+    },
+    {
+      "start": 694.72,
+      "duration": 4.4,
+      "text": "control plane"
+    },
+    {
+      "start": 696.6,
+      "duration": 4.679,
+      "text": "Etc so here you can see metrics"
+    },
+    {
+      "start": 699.12,
+      "duration": 4.36,
+      "text": "similarly you can also do this"
+    },
+    {
+      "start": 701.279,
+      "duration": 3.481,
+      "text": "for Prometheus because we have also"
+    },
+    {
+      "start": 703.48,
+      "duration": 3.44,
+      "text": "installed Prometheus so instead of"
+    },
+    {
+      "start": 704.76,
+      "duration": 3.92,
+      "text": "grafana I say"
+    },
+    {
+      "start": 706.92,
+      "duration": 4.159,
+      "text": "Prometheus and this will open up"
+    },
+    {
+      "start": 708.68,
+      "duration": 4.839,
+      "text": "Prometheus dashboard so service mesh can"
+    },
+    {
+      "start": 711.079,
+      "duration": 4.76,
+      "text": "be used with different monitoring"
+    },
+    {
+      "start": 713.519,
+      "duration": 4.081,
+      "text": "services so now we have understood what"
+    },
+    {
+      "start": 715.839,
+      "duration": 3.601,
+      "text": "problems do service mesh solve and how"
+    },
+    {
+      "start": 717.6,
+      "duration": 3.28,
+      "text": "we can use it in our microservices AS"
+    },
+    {
+      "start": 719.44,
+      "duration": 3.639,
+      "text": "application so here are different"
+    },
+    {
+      "start": 720.88,
+      "duration": 3.84,
+      "text": "benefits now let's understand when to"
+    },
+    {
+      "start": 723.079,
+      "duration": 3.281,
+      "text": "use service mesh you will be using"
+    },
+    {
+      "start": 724.72,
+      "duration": 4.04,
+      "text": "service mesh only when you have more"
+    },
+    {
+      "start": 726.36,
+      "duration": 4.84,
+      "text": "than five Services because if you have"
+    },
+    {
+      "start": 728.76,
+      "duration": 4.439,
+      "text": "less microservices adding a service mesh"
+    },
+    {
+      "start": 731.2,
+      "duration": 3.52,
+      "text": "would be too much of overhead and extra"
+    },
+    {
+      "start": 733.199,
+      "duration": 3.2,
+      "text": "work so you will have to be using"
+    },
+    {
+      "start": 734.72,
+      "duration": 2.96,
+      "text": "service mesh when you have multiple"
+    },
+    {
+      "start": 736.399,
+      "duration": 3.481,
+      "text": "microservices and you want to manage"
+    },
+    {
+      "start": 737.68,
+      "duration": 4.0,
+      "text": "them properly so 10 plus microservices"
+    },
+    {
+      "start": 739.88,
+      "duration": 3.72,
+      "text": "is where you will be using it when you"
+    },
+    {
+      "start": 741.68,
+      "duration": 4.32,
+      "text": "have multicloud or hybrid deployments"
+    },
+    {
+      "start": 743.6,
+      "duration": 4.16,
+      "text": "you can use service mesh when you have"
+    },
+    {
+      "start": 746.0,
+      "duration": 3.72,
+      "text": "applications that require high security"
+    },
+    {
+      "start": 747.76,
+      "duration": 3.4,
+      "text": "environments you can use service mesh"
+    },
+    {
+      "start": 749.72,
+      "duration": 3.32,
+      "text": "because it provides you with features"
+    },
+    {
+      "start": 751.16,
+      "duration": 3.479,
+      "text": "like Mutual TLS or centralized"
+    },
+    {
+      "start": 753.04,
+      "duration": 3.599,
+      "text": "authentication I also have different"
+    },
+    {
+      "start": 754.639,
+      "duration": 3.401,
+      "text": "scenarios where you can restrict access"
+    },
+    {
+      "start": 756.639,
+      "duration": 5.0,
+      "text": "to your micro Services based on"
+    },
+    {
+      "start": 758.04,
+      "duration": 6.0,
+      "text": "different roles or using JWT token"
+    },
+    {
+      "start": 761.639,
+      "duration": 5.32,
+      "text": "Etc along with this this document also"
+    },
+    {
+      "start": 764.04,
+      "duration": 5.12,
+      "text": "includes some case studies of how Airbnb"
+    },
+    {
+      "start": 766.959,
+      "duration": 5.12,
+      "text": "is using service mesh like sto how"
+    },
+    {
+      "start": 769.16,
+      "duration": 5.88,
+      "text": "stripe use service mesh for Mutual TLS"
+    },
+    {
+      "start": 772.079,
+      "duration": 5.641,
+      "text": "Netflix and so on and also few links to"
+    },
+    {
+      "start": 775.04,
+      "duration": 4.64,
+      "text": "explain you more about service mesh so"
+    },
+    {
+      "start": 777.72,
+      "duration": 3.64,
+      "text": "this was our video on service MH I hope"
+    },
+    {
+      "start": 779.68,
+      "duration": 3.76,
+      "text": "this video was informative if you have"
+    },
+    {
+      "start": 781.36,
+      "duration": 3.8,
+      "text": "any questions any doubt do let me know"
+    },
+    {
+      "start": 783.44,
+      "duration": 3.92,
+      "text": "in the comment section and if you want"
+    },
+    {
+      "start": 785.16,
+      "duration": 4.359,
+      "text": "me to share this notes comment down"
+    },
+    {
+      "start": 787.36,
+      "duration": 3.56,
+      "text": "service mesh in the comment section also"
+    },
+    {
+      "start": 789.519,
+      "duration": 3.921,
+      "text": "let me know if you want a separate video"
+    },
+    {
+      "start": 790.92,
+      "duration": 5.8,
+      "text": "to deploy book info application on ISO"
+    },
+    {
+      "start": 793.44,
+      "duration": 3.28,
+      "text": "service mesh bye"
+    }
+  ]
+}

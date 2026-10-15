@@ -1,0 +1,1091 @@
+{
+  "video": {
+    "id": "HU3g1x_ohIY",
+    "title": "Will AI replace DevOps Engineer? AI tools in DevOps 2024",
+    "url": "https://www.youtube.com/watch?v=HU3g1x_ohIY",
+    "duration": 481,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.42,
+      "duration": 4.2,
+      "text": "device and Ai and tools like chat GPT"
+    },
+    {
+      "start": 2.52,
+      "duration": 4.56,
+      "text": "there's always a question will AI"
+    },
+    {
+      "start": 4.62,
+      "duration": 3.96,
+      "text": "replace devops engineer rules and this"
+    },
+    {
+      "start": 7.08,
+      "duration": 3.24,
+      "text": "is what we will be discussing in this"
+    },
+    {
+      "start": 8.58,
+      "duration": 3.96,
+      "text": "video along with what are different"
+    },
+    {
+      "start": 10.32,
+      "duration": 4.92,
+      "text": "devops tasks that AI can replace what"
+    },
+    {
+      "start": 12.54,
+      "duration": 5.04,
+      "text": "are some popular AI Tools in devops and"
+    },
+    {
+      "start": 15.24,
+      "duration": 4.619,
+      "text": "also how companies like Netflix Google"
+    },
+    {
+      "start": 17.58,
+      "duration": 4.26,
+      "text": "Airbnb are using these tools in their"
+    },
+    {
+      "start": 19.859,
+      "duration": 3.84,
+      "text": "devops lifecycle this is going to be a"
+    },
+    {
+      "start": 21.84,
+      "duration": 5.54,
+      "text": "very fast and interesting video so watch"
+    },
+    {
+      "start": 23.699,
+      "duration": 3.681,
+      "text": "this video till the end let's start"
+    },
+    {
+      "start": 34.38,
+      "duration": 3.96,
+      "text": "hey everyone welcome to cloudshare in"
+    },
+    {
+      "start": 36.42,
+      "duration": 4.2,
+      "text": "this video we will be discussing AI as"
+    },
+    {
+      "start": 38.34,
+      "duration": 4.14,
+      "text": "its role in devops and by the end of the"
+    },
+    {
+      "start": 40.62,
+      "duration": 4.619,
+      "text": "video you will have an idea if AI will"
+    },
+    {
+      "start": 42.48,
+      "duration": 4.739,
+      "text": "replace devops engineer rules or not so"
+    },
+    {
+      "start": 45.239,
+      "duration": 3.961,
+      "text": "if you look at it AI has seriously grown"
+    },
+    {
+      "start": 47.219,
+      "duration": 3.601,
+      "text": "in the past few years I mean you can do"
+    },
+    {
+      "start": 49.2,
+      "duration": 3.6,
+      "text": "everything with AI you can edit photos"
+    },
+    {
+      "start": 50.82,
+      "duration": 5.419,
+      "text": "you can create code you can ask Eminem"
+    },
+    {
+      "start": 52.8,
+      "duration": 3.439,
+      "text": "to sing for you through AI"
+    },
+    {
+      "start": 56.82,
+      "duration": 3.2,
+      "text": "who we Claire Champs the names"
+    },
+    {
+      "start": 63.539,
+      "duration": 4.561,
+      "text": "gitlab's most recent survey of over 4000"
+    },
+    {
+      "start": 66.18,
+      "duration": 4.14,
+      "text": "developers will make you think about it"
+    },
+    {
+      "start": 68.1,
+      "duration": 4.74,
+      "text": "because they are saying 75 percent of"
+    },
+    {
+      "start": 70.32,
+      "duration": 4.5,
+      "text": "them are using Ai and ml for testing and"
+    },
+    {
+      "start": 72.84,
+      "duration": 4.08,
+      "text": "reviewing code prereleases and this is"
+    },
+    {
+      "start": 74.82,
+      "duration": 3.72,
+      "text": "going to grow over the type if you want"
+    },
+    {
+      "start": 76.92,
+      "duration": 2.76,
+      "text": "to have a look at the survey the link is"
+    },
+    {
+      "start": 78.54,
+      "duration": 2.939,
+      "text": "in description"
+    },
+    {
+      "start": 79.68,
+      "duration": 3.72,
+      "text": "now let's look at the different devops"
+    },
+    {
+      "start": 81.479,
+      "duration": 3.721,
+      "text": "tasks that can be replaced through AI"
+    },
+    {
+      "start": 83.4,
+      "duration": 4.02,
+      "text": "number one is code deployment and"
+    },
+    {
+      "start": 85.2,
+      "duration": 3.72,
+      "text": "continuous integration AI can automate"
+    },
+    {
+      "start": 87.42,
+      "duration": 3.059,
+      "text": "the process of deploying the code to"
+    },
+    {
+      "start": 88.92,
+      "duration": 4.08,
+      "text": "various different environments and"
+    },
+    {
+      "start": 90.479,
+      "duration": 3.96,
+      "text": "managing CHD pipelines reducing any"
+    },
+    {
+      "start": 93.0,
+      "duration": 3.84,
+      "text": "manual intervention in the deployment"
+    },
+    {
+      "start": 94.439,
+      "duration": 4.981,
+      "text": "first assets thus reducing errors and"
+    },
+    {
+      "start": 96.84,
+      "duration": 5.52,
+      "text": "having a reliable deployment pipeline"
+    },
+    {
+      "start": 99.42,
+      "duration": 4.5,
+      "text": "number two is automated testing AI power"
+    },
+    {
+      "start": 102.36,
+      "duration": 3.66,
+      "text": "testing tools can analyze the code"
+    },
+    {
+      "start": 103.92,
+      "duration": 4.44,
+      "text": "change and automatically run test cases"
+    },
+    {
+      "start": 106.02,
+      "duration": 4.379,
+      "text": "to identify bugs personal expertise"
+    },
+    {
+      "start": 108.36,
+      "duration": 4.079,
+      "text": "performance issues and even generate"
+    },
+    {
+      "start": 110.399,
+      "duration": 4.26,
+      "text": "test scenarios this can help speeding up"
+    },
+    {
+      "start": 112.439,
+      "duration": 4.32,
+      "text": "the testing phase and pedals test"
+    },
+    {
+      "start": 114.659,
+      "duration": 4.681,
+      "text": "coverage also Pickers feedback to the"
+    },
+    {
+      "start": 116.759,
+      "duration": 4.561,
+      "text": "developers number three is alerting and"
+    },
+    {
+      "start": 119.34,
+      "duration": 4.08,
+      "text": "monitoring AI driven monitoring tools"
+    },
+    {
+      "start": 121.32,
+      "duration": 4.56,
+      "text": "can help you analyze real-time system"
+    },
+    {
+      "start": 123.42,
+      "duration": 5.759,
+      "text": "metrics logs and application performance"
+    },
+    {
+      "start": 125.88,
+      "duration": 5.4,
+      "text": "data to detect issues anomalies or any"
+    },
+    {
+      "start": 129.179,
+      "duration": 4.2,
+      "text": "unevitable patterns and also triggering"
+    },
+    {
+      "start": 131.28,
+      "duration": 4.02,
+      "text": "alerts for immediate attention so that"
+    },
+    {
+      "start": 133.379,
+      "duration": 4.141,
+      "text": "your production does not go down number"
+    },
+    {
+      "start": 135.3,
+      "duration": 4.68,
+      "text": "four is log analysis I don't know about"
+    },
+    {
+      "start": 137.52,
+      "duration": 4.5,
+      "text": "you but I hate looking at logs and"
+    },
+    {
+      "start": 139.98,
+      "duration": 4.56,
+      "text": "that's where AI can help you AI tools"
+    },
+    {
+      "start": 142.02,
+      "duration": 4.38,
+      "text": "can process large volumes of log data to"
+    },
+    {
+      "start": 144.54,
+      "duration": 3.6,
+      "text": "identify patterns and relations which"
+    },
+    {
+      "start": 146.4,
+      "duration": 4.199,
+      "text": "can help you troubleshoot a problem and"
+    },
+    {
+      "start": 148.14,
+      "duration": 4.44,
+      "text": "also to fight root cause analysis number"
+    },
+    {
+      "start": 150.599,
+      "duration": 4.14,
+      "text": "five is chat Bots and virtual assistants"
+    },
+    {
+      "start": 152.58,
+      "duration": 3.6,
+      "text": "AI driven chatbots can provide instant"
+    },
+    {
+      "start": 154.739,
+      "duration": 3.661,
+      "text": "support to developers and operation"
+    },
+    {
+      "start": 156.18,
+      "duration": 4.559,
+      "text": "teams answering common queries resolving"
+    },
+    {
+      "start": 158.4,
+      "duration": 4.199,
+      "text": "everyday problems added like more you"
+    },
+    {
+      "start": 160.739,
+      "duration": 4.561,
+      "text": "can also use it to automate your task"
+    },
+    {
+      "start": 162.599,
+      "duration": 4.86,
+      "text": "like setting up environment setting up"
+    },
+    {
+      "start": 165.3,
+      "duration": 4.2,
+      "text": "infrastructure so it's like having a"
+    },
+    {
+      "start": 167.459,
+      "duration": 3.78,
+      "text": "chat GPT but for your own company for"
+    },
+    {
+      "start": 169.5,
+      "duration": 3.72,
+      "text": "your own problems and if you want to"
+    },
+    {
+      "start": 171.239,
+      "duration": 3.661,
+      "text": "know how I use chatgpt as a devops"
+    },
+    {
+      "start": 173.22,
+      "duration": 3.599,
+      "text": "engineer you can check out this video"
+    },
+    {
+      "start": 174.9,
+      "duration": 3.3,
+      "text": "where I've shown you all the ways on how"
+    },
+    {
+      "start": 176.819,
+      "duration": 4.381,
+      "text": "I use charging to increase my"
+    },
+    {
+      "start": 178.2,
+      "duration": 5.34,
+      "text": "productivity and save time number six is"
+    },
+    {
+      "start": 181.2,
+      "duration": 4.38,
+      "text": "security and compliance so AI power"
+    },
+    {
+      "start": 183.54,
+      "duration": 4.08,
+      "text": "tools can automatically Run Security"
+    },
+    {
+      "start": 185.58,
+      "duration": 3.6,
+      "text": "scans for identify vulnerabilities and"
+    },
+    {
+      "start": 187.62,
+      "duration": 3.96,
+      "text": "to ensure compliance with security"
+    },
+    {
+      "start": 189.18,
+      "duration": 4.86,
+      "text": "policies and standards and also to"
+    },
+    {
+      "start": 191.58,
+      "duration": 4.14,
+      "text": "automate some security tasks apart from"
+    },
+    {
+      "start": 194.04,
+      "duration": 3.24,
+      "text": "this six devops start there are so many"
+    },
+    {
+      "start": 195.72,
+      "duration": 3.72,
+      "text": "other devops tasks like resource"
+    },
+    {
+      "start": 197.28,
+      "duration": 4.319,
+      "text": "allocation cost management automated"
+    },
+    {
+      "start": 199.44,
+      "duration": 4.2,
+      "text": "configuration predictive analysis"
+    },
+    {
+      "start": 201.599,
+      "duration": 4.261,
+      "text": "insulin management and so much more that"
+    },
+    {
+      "start": 203.64,
+      "duration": 4.98,
+      "text": "AI can do better than humans so I'm very"
+    },
+    {
+      "start": 205.86,
+      "duration": 5.28,
+      "text": "worried now let's look at the popular AI"
+    },
+    {
+      "start": 208.62,
+      "duration": 4.44,
+      "text": "Tools in devops number one is datadox"
+    },
+    {
+      "start": 211.14,
+      "duration": 4.56,
+      "text": "APM one application performance"
+    },
+    {
+      "start": 213.06,
+      "duration": 4.74,
+      "text": "monitoring that uses AI to him devops"
+    },
+    {
+      "start": 215.7,
+      "duration": 4.56,
+      "text": "and security team to collect logs"
+    },
+    {
+      "start": 217.8,
+      "duration": 5.46,
+      "text": "metrics and user data from applications"
+    },
+    {
+      "start": 220.26,
+      "duration": 4.32,
+      "text": "back-end Services databases to find"
+    },
+    {
+      "start": 223.26,
+      "duration": 3.78,
+      "text": "issues troubleshoot them increase"
+    },
+    {
+      "start": 224.58,
+      "duration": 5.04,
+      "text": "performance and also to monitor resource"
+    },
+    {
+      "start": 227.04,
+      "duration": 4.32,
+      "text": "usage using datadoc you can get alerts"
+    },
+    {
+      "start": 229.62,
+      "duration": 3.72,
+      "text": "and also roll back any application"
+    },
+    {
+      "start": 231.36,
+      "duration": 3.959,
+      "text": "deployment to give any issues occur in"
+    },
+    {
+      "start": 233.34,
+      "duration": 3.78,
+      "text": "the production number two is Amazon code"
+    },
+    {
+      "start": 235.319,
+      "duration": 4.021,
+      "text": "Guru service which uses machine learning"
+    },
+    {
+      "start": 237.12,
+      "duration": 4.74,
+      "text": "to analyze code to optimize performance"
+    },
+    {
+      "start": 239.34,
+      "duration": 4.619,
+      "text": "identify bugs and to increase overall"
+    },
+    {
+      "start": 241.86,
+      "duration": 4.08,
+      "text": "code quality code Bureau also integrates"
+    },
+    {
+      "start": 243.959,
+      "duration": 4.381,
+      "text": "with devops work so it can automatically"
+    },
+    {
+      "start": 245.94,
+      "duration": 3.96,
+      "text": "scan code repositories identify critical"
+    },
+    {
+      "start": 248.34,
+      "duration": 3.24,
+      "text": "areas of improvement and generate"
+    },
+    {
+      "start": 249.9,
+      "duration": 3.479,
+      "text": "detailed reports that can help devops"
+    },
+    {
+      "start": 251.58,
+      "duration": 3.12,
+      "text": "Engineers prioritize their effort and"
+    },
+    {
+      "start": 253.379,
+      "duration": 3.54,
+      "text": "streamline the development process"
+    },
+    {
+      "start": 254.7,
+      "duration": 3.779,
+      "text": "number three is hardness which is a"
+    },
+    {
+      "start": 256.919,
+      "duration": 4.5,
+      "text": "software definitely platform that uses"
+    },
+    {
+      "start": 258.479,
+      "duration": 4.981,
+      "text": "AI to simplify devops versus like Ci CD"
+    },
+    {
+      "start": 261.419,
+      "duration": 3.961,
+      "text": "grid tops cost optimization and much"
+    },
+    {
+      "start": 263.46,
+      "duration": 4.2,
+      "text": "more along with this you also have"
+    },
+    {
+      "start": 265.38,
+      "duration": 4.62,
+      "text": "Jenkins which is extension of Jenkins"
+    },
+    {
+      "start": 267.66,
+      "duration": 4.259,
+      "text": "that can be used to automate CI CD"
+    },
+    {
+      "start": 270.0,
+      "duration": 4.02,
+      "text": "kubernetes deployment streamlining the"
+    },
+    {
+      "start": 271.919,
+      "duration": 4.321,
+      "text": "software development process other AI"
+    },
+    {
+      "start": 274.02,
+      "duration": 5.76,
+      "text": "tools that are used in devops are Splunk"
+    },
+    {
+      "start": 276.24,
+      "duration": 5.64,
+      "text": "pager Duty charge GPT option I cystic"
+    },
+    {
+      "start": 279.78,
+      "duration": 4.979,
+      "text": "and so much more now let's have a look"
+    },
+    {
+      "start": 281.88,
+      "duration": 5.16,
+      "text": "at how companies like Netflix Airbnb and"
+    },
+    {
+      "start": 284.759,
+      "duration": 4.861,
+      "text": "Google are using AI in their deployment"
+    },
+    {
+      "start": 287.04,
+      "duration": 4.439,
+      "text": "process number one is Netflix the"
+    },
+    {
+      "start": 289.62,
+      "duration": 4.56,
+      "text": "streaming platform to watch movies"
+    },
+    {
+      "start": 291.479,
+      "duration": 4.5,
+      "text": "Animated Series Netflix uses AI based"
+    },
+    {
+      "start": 294.18,
+      "duration": 4.14,
+      "text": "recommendation systems to optimize"
+    },
+    {
+      "start": 295.979,
+      "duration": 4.5,
+      "text": "content delivery and enhancing user"
+    },
+    {
+      "start": 298.32,
+      "duration": 4.62,
+      "text": "experience number two is Airbnb which"
+    },
+    {
+      "start": 300.479,
+      "duration": 4.801,
+      "text": "uses AI to automate deployments scaling"
+    },
+    {
+      "start": 302.94,
+      "duration": 4.5,
+      "text": "and monitoring processes to ensure High"
+    },
+    {
+      "start": 305.28,
+      "duration": 4.32,
+      "text": "availability of their services for their"
+    },
+    {
+      "start": 307.44,
+      "duration": 3.66,
+      "text": "users number three we have Google so"
+    },
+    {
+      "start": 309.6,
+      "duration": 3.24,
+      "text": "Google has integrated AI to the"
+    },
+    {
+      "start": 311.1,
+      "duration": 3.659,
+      "text": "infrastructure to manage load balancing"
+    },
+    {
+      "start": 312.84,
+      "duration": 4.02,
+      "text": "optimize resource allocation detect"
+    },
+    {
+      "start": 314.759,
+      "duration": 3.72,
+      "text": "animals in the system also for testing"
+    },
+    {
+      "start": 316.86,
+      "duration": 3.839,
+      "text": "and continuous deployments number four"
+    },
+    {
+      "start": 318.479,
+      "duration": 4.44,
+      "text": "is LinkedIn LinkedIn also uses AI to"
+    },
+    {
+      "start": 320.699,
+      "duration": 4.56,
+      "text": "optimize it continuous integration and"
+    },
+    {
+      "start": 322.919,
+      "duration": 3.62,
+      "text": "delivery processes enabling faster and"
+    },
+    {
+      "start": 325.259,
+      "duration": 3.681,
+      "text": "more reliable deployments similar"
+    },
+    {
+      "start": 326.539,
+      "duration": 5.44,
+      "text": "companies like Microsoft Facebook"
+    },
+    {
+      "start": 328.94,
+      "duration": 4.96,
+      "text": "Salesforce Adobe Twitter Uber and so"
+    },
+    {
+      "start": 331.979,
+      "duration": 4.56,
+      "text": "much more are also using AI for testing"
+    },
+    {
+      "start": 333.9,
+      "duration": 3.9,
+      "text": "monitoring and other purposes and this"
+    },
+    {
+      "start": 336.539,
+      "duration": 3.541,
+      "text": "is going to be a very common pattern"
+    },
+    {
+      "start": 337.8,
+      "duration": 4.679,
+      "text": "you'll see many companies adopting AI in"
+    },
+    {
+      "start": 340.08,
+      "duration": 4.02,
+      "text": "their devops workflows but even though"
+    },
+    {
+      "start": 342.479,
+      "duration": 4.021,
+      "text": "they are using AI there are still"
+    },
+    {
+      "start": 344.1,
+      "duration": 3.96,
+      "text": "limitations of using AI in devops so"
+    },
+    {
+      "start": 346.5,
+      "duration": 4.44,
+      "text": "let's discuss the different limitations"
+    },
+    {
+      "start": 348.06,
+      "duration": 4.74,
+      "text": "or disadvantages of using Ai and how"
+    },
+    {
+      "start": 350.94,
+      "duration": 4.08,
+      "text": "they can pass problems when using in"
+    },
+    {
+      "start": 352.8,
+      "duration": 4.38,
+      "text": "devops workflow number one is lack of"
+    },
+    {
+      "start": 355.02,
+      "duration": 3.959,
+      "text": "human context so AI likes you in"
+    },
+    {
+      "start": 357.18,
+      "duration": 3.6,
+      "text": "contexts are intuition which is very"
+    },
+    {
+      "start": 358.979,
+      "duration": 3.601,
+      "text": "important for problem solving and"
+    },
+    {
+      "start": 360.78,
+      "duration": 4.74,
+      "text": "decision making and also to understand"
+    },
+    {
+      "start": 362.58,
+      "duration": 4.679,
+      "text": "unique situations that is why bayofs"
+    },
+    {
+      "start": 365.52,
+      "duration": 3.6,
+      "text": "Engineers are still needed because there"
+    },
+    {
+      "start": 367.259,
+      "duration": 4.201,
+      "text": "are many times when you find problems or"
+    },
+    {
+      "start": 369.12,
+      "duration": 4.799,
+      "text": "issues which you have never done before"
+    },
+    {
+      "start": 371.46,
+      "duration": 4.56,
+      "text": "so AI cannot help you in that you still"
+    },
+    {
+      "start": 373.919,
+      "duration": 4.681,
+      "text": "need devops Engineers number two can be"
+    },
+    {
+      "start": 376.02,
+      "duration": 4.32,
+      "text": "inaccuracy so AI gives you output or"
+    },
+    {
+      "start": 378.6,
+      "duration": 3.659,
+      "text": "results based on the data that it is"
+    },
+    {
+      "start": 380.34,
+      "duration": 3.72,
+      "text": "trained on if you play an AI on pool or"
+    },
+    {
+      "start": 382.259,
+      "duration": 3.181,
+      "text": "biased data obviously it will give you"
+    },
+    {
+      "start": 384.06,
+      "duration": 3.66,
+      "text": "wrong results which can cause problems"
+    },
+    {
+      "start": 385.44,
+      "duration": 4.08,
+      "text": "to your workflows you even there are"
+    },
+    {
+      "start": 387.72,
+      "duration": 3.72,
+      "text": "some times when AI is trained on"
+    },
+    {
+      "start": 389.52,
+      "duration": 3.48,
+      "text": "historical data which cannot be relevant"
+    },
+    {
+      "start": 391.44,
+      "duration": 4.14,
+      "text": "in the current scenario or future"
+    },
+    {
+      "start": 393.0,
+      "duration": 5.22,
+      "text": "scenarios so if you let AI do the devops"
+    },
+    {
+      "start": 395.58,
+      "duration": 4.559,
+      "text": "task it can cause issues or it can pull"
+    },
+    {
+      "start": 398.22,
+      "duration": 3.3,
+      "text": "your production down and there can also"
+    },
+    {
+      "start": 400.139,
+      "duration": 3.301,
+      "text": "be situation where you are training an"
+    },
+    {
+      "start": 401.52,
+      "duration": 3.72,
+      "text": "AI model which is working properly when"
+    },
+    {
+      "start": 403.44,
+      "duration": 3.84,
+      "text": "it is trained but if you put it in"
+    },
+    {
+      "start": 405.24,
+      "duration": 4.32,
+      "text": "actual use there can be issues or it"
+    },
+    {
+      "start": 407.28,
+      "duration": 4.74,
+      "text": "cannot work properly next is Black Box"
+    },
+    {
+      "start": 409.56,
+      "duration": 3.78,
+      "text": "problems many AI model especially the"
+    },
+    {
+      "start": 412.02,
+      "duration": 3.66,
+      "text": "Deep learning ones operate as black"
+    },
+    {
+      "start": 413.34,
+      "duration": 3.6,
+      "text": "boxes when you don't understand how they"
+    },
+    {
+      "start": 415.68,
+      "duration": 3.06,
+      "text": "are doing the decision making process"
+    },
+    {
+      "start": 416.94,
+      "duration": 3.479,
+      "text": "and how they got the output and this is"
+    },
+    {
+      "start": 418.74,
+      "duration": 3.959,
+      "text": "going to be a very concerning topic if"
+    },
+    {
+      "start": 420.419,
+      "duration": 3.72,
+      "text": "it is a regulated environment similar to"
+    },
+    {
+      "start": 422.699,
+      "duration": 3.78,
+      "text": "this problems there are problems like"
+    },
+    {
+      "start": 424.139,
+      "duration": 4.921,
+      "text": "cost and resource allocations it takes a"
+    },
+    {
+      "start": 426.479,
+      "duration": 4.56,
+      "text": "lot of cost and resource to set up and"
+    },
+    {
+      "start": 429.06,
+      "duration": 3.72,
+      "text": "to operate AI tools there are also"
+    },
+    {
+      "start": 431.039,
+      "duration": 3.361,
+      "text": "problems like security and compliance if"
+    },
+    {
+      "start": 432.78,
+      "duration": 3.72,
+      "text": "you want to work with AI tools they had"
+    },
+    {
+      "start": 434.4,
+      "duration": 4.2,
+      "text": "to be compliant with the policies or"
+    },
+    {
+      "start": 436.5,
+      "duration": 3.96,
+      "text": "standards also learning curve there"
+    },
+    {
+      "start": 438.6,
+      "duration": 3.24,
+      "text": "might be situation availability members"
+    },
+    {
+      "start": 440.46,
+      "duration": 3.42,
+      "text": "might be hesitant or might not"
+    },
+    {
+      "start": 441.84,
+      "duration": 4.259,
+      "text": "understand how this AI Works which can"
+    },
+    {
+      "start": 443.88,
+      "duration": 4.5,
+      "text": "cause issues now that you understand how"
+    },
+    {
+      "start": 446.099,
+      "duration": 4.021,
+      "text": "AI is used in devops and how companies"
+    },
+    {
+      "start": 448.38,
+      "duration": 4.56,
+      "text": "are using devops along with the problems"
+    },
+    {
+      "start": 450.12,
+      "duration": 5.1,
+      "text": "that can be faced when using AI in devox"
+    },
+    {
+      "start": 452.94,
+      "duration": 4.68,
+      "text": "I want you to answer will AI replace"
+    },
+    {
+      "start": 455.22,
+      "duration": 3.66,
+      "text": "devops engineer rules or not let me know"
+    },
+    {
+      "start": 457.62,
+      "duration": 3.24,
+      "text": "in the comment section what do you think"
+    },
+    {
+      "start": 458.88,
+      "duration": 3.96,
+      "text": "I hope this video was informative if you"
+    },
+    {
+      "start": 460.86,
+      "duration": 3.779,
+      "text": "have any questions any doubt let me know"
+    },
+    {
+      "start": 462.84,
+      "duration": 4.4,
+      "text": "in the comment section thank you and"
+    },
+    {
+      "start": 464.639,
+      "duration": 2.601,
+      "text": "have a good day"
+    }
+  ]
+}

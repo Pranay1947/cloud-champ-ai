@@ -1,0 +1,2006 @@
+{
+  "video": {
+    "id": "QhmFnlbbwP4",
+    "title": "How to Connect AWS with Terraform | Set Credentials & Configure",
+    "url": "https://www.youtube.com/watch?v=QhmFnlbbwP4",
+    "duration": 802,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.719,
+      "duration": 3.421,
+      "text": "hey everyone Welcome to Cloud champ in"
+    },
+    {
+      "start": 2.76,
+      "duration": 3.36,
+      "text": "this video I'll be showing you how you"
+    },
+    {
+      "start": 4.14,
+      "duration": 4.08,
+      "text": "can connect your AWS account with"
+    },
+    {
+      "start": 6.12,
+      "duration": 4.26,
+      "text": "terraform to start creating resources on"
+    },
+    {
+      "start": 8.22,
+      "duration": 4.14,
+      "text": "your AWS Cloud using terraform the"
+    },
+    {
+      "start": 10.38,
+      "duration": 3.9,
+      "text": "infrastructure as code tool let's start"
+    },
+    {
+      "start": 12.36,
+      "duration": 3.779,
+      "text": "before we move ahead and start learning"
+    },
+    {
+      "start": 14.28,
+      "duration": 3.12,
+      "text": "how to connect AWS with terraform you"
+    },
+    {
+      "start": 16.139,
+      "duration": 3.241,
+      "text": "need to know there are three ways to"
+    },
+    {
+      "start": 17.4,
+      "duration": 3.959,
+      "text": "access AWS services and create them"
+    },
+    {
+      "start": 19.38,
+      "duration": 3.78,
+      "text": "first one is AWS Management console"
+    },
+    {
+      "start": 21.359,
+      "duration": 3.0,
+      "text": "which is a graphical user interface that"
+    },
+    {
+      "start": 23.16,
+      "duration": 2.879,
+      "text": "lets you click on the services and"
+    },
+    {
+      "start": 24.359,
+      "duration": 3.66,
+      "text": "create them you can log into your AWS"
+    },
+    {
+      "start": 26.039,
+      "duration": 3.9,
+      "text": "console using email address and password"
+    },
+    {
+      "start": 28.019,
+      "duration": 3.901,
+      "text": "or username and password if it is an IM"
+    },
+    {
+      "start": 29.939,
+      "duration": 4.861,
+      "text": "account the second way to access AWS"
+    },
+    {
+      "start": 31.92,
+      "duration": 4.74,
+      "text": "service is using AWS SDK or software"
+    },
+    {
+      "start": 34.8,
+      "duration": 3.12,
+      "text": "development kit where you use distant"
+    },
+    {
+      "start": 36.66,
+      "duration": 3.78,
+      "text": "programming languages to create"
+    },
+    {
+      "start": 37.92,
+      "duration": 4.92,
+      "text": "resources on AWS one of the example is"
+    },
+    {
+      "start": 40.44,
+      "duration": 4.2,
+      "text": "the Moto 3 module which is python SDK to"
+    },
+    {
+      "start": 42.84,
+      "duration": 3.84,
+      "text": "create resources on AWS and I've shown"
+    },
+    {
+      "start": 44.64,
+      "duration": 4.62,
+      "text": "how to use puto 3 to create resources in"
+    },
+    {
+      "start": 46.68,
+      "duration": 4.02,
+      "text": "this devops project go check it out so"
+    },
+    {
+      "start": 49.26,
+      "duration": 3.299,
+      "text": "if you want to create resources using"
+    },
+    {
+      "start": 50.7,
+      "duration": 3.839,
+      "text": "SDK you need to use access key and"
+    },
+    {
+      "start": 52.559,
+      "duration": 4.621,
+      "text": "secret access key the third option to"
+    },
+    {
+      "start": 54.539,
+      "duration": 4.68,
+      "text": "access AWS Services is using CLI or"
+    },
+    {
+      "start": 57.18,
+      "duration": 4.379,
+      "text": "command line interface tool by AWS that"
+    },
+    {
+      "start": 59.219,
+      "duration": 3.961,
+      "text": "lets you create services using commands"
+    },
+    {
+      "start": 61.559,
+      "duration": 3.301,
+      "text": "and if you want to connect your AWS to"
+    },
+    {
+      "start": 63.18,
+      "duration": 3.78,
+      "text": "turn off you need to log in using AWS"
+    },
+    {
+      "start": 64.86,
+      "duration": 4.2,
+      "text": "CLI you can log into awcli using the"
+    },
+    {
+      "start": 66.96,
+      "duration": 3.18,
+      "text": "same access key and secret access key so"
+    },
+    {
+      "start": 69.06,
+      "duration": 2.82,
+      "text": "in this video I'll be showing you how"
+    },
+    {
+      "start": 70.14,
+      "duration": 3.54,
+      "text": "you can create keys and then use them to"
+    },
+    {
+      "start": 71.88,
+      "duration": 3.72,
+      "text": "connect AWS with terraform let's go to"
+    },
+    {
+      "start": 73.68,
+      "duration": 3.299,
+      "text": "our computer screen all right some here"
+    },
+    {
+      "start": 75.6,
+      "duration": 2.94,
+      "text": "on my computer screen and let's start"
+    },
+    {
+      "start": 76.979,
+      "duration": 3.18,
+      "text": "with learning how to connect AWS account"
+    },
+    {
+      "start": 78.54,
+      "duration": 2.82,
+      "text": "with terraform we have already seen"
+    },
+    {
+      "start": 80.159,
+      "duration": 3.181,
+      "text": "three different ways on how you can"
+    },
+    {
+      "start": 81.36,
+      "duration": 5.399,
+      "text": "create resources on AWS using Management"
+    },
+    {
+      "start": 83.34,
+      "duration": 5.459,
+      "text": "console using cdk or SDK which requires"
+    },
+    {
+      "start": 86.759,
+      "duration": 4.741,
+      "text": "access key and secret access key also"
+    },
+    {
+      "start": 88.799,
+      "duration": 4.261,
+      "text": "using CLI which requires access key and"
+    },
+    {
+      "start": 91.5,
+      "duration": 3.659,
+      "text": "secret access key as well so"
+    },
+    {
+      "start": 93.06,
+      "duration": 3.9,
+      "text": "prerequisites for you before you start"
+    },
+    {
+      "start": 95.159,
+      "duration": 3.661,
+      "text": "with watching this video is to have an"
+    },
+    {
+      "start": 96.96,
+      "duration": 5.76,
+      "text": "AWS account and if you don't have an"
+    },
+    {
+      "start": 98.82,
+      "duration": 6.36,
+      "text": "account you can go on AWS free tier and"
+    },
+    {
+      "start": 102.72,
+      "duration": 4.079,
+      "text": "create an account here for free so to"
+    },
+    {
+      "start": 105.18,
+      "duration": 2.82,
+      "text": "create services on AWS and to connect it"
+    },
+    {
+      "start": 106.799,
+      "duration": 2.941,
+      "text": "with terraform you will obviously need"
+    },
+    {
+      "start": 108.0,
+      "duration": 3.119,
+      "text": "to have an account so you can go and"
+    },
+    {
+      "start": 109.74,
+      "duration": 3.54,
+      "text": "create an account right I have a video"
+    },
+    {
+      "start": 111.119,
+      "duration": 3.36,
+      "text": "on how you can create AWS account you"
+    },
+    {
+      "start": 113.28,
+      "duration": 2.76,
+      "text": "can go check it out the link is going to"
+    },
+    {
+      "start": 114.479,
+      "duration": 4.561,
+      "text": "be up there second thing you need to"
+    },
+    {
+      "start": 116.04,
+      "duration": 5.52,
+      "text": "have is to have AWS CLI install install"
+    },
+    {
+      "start": 119.04,
+      "duration": 4.74,
+      "text": "AWS CLI from the link below but you can"
+    },
+    {
+      "start": 121.56,
+      "duration": 4.559,
+      "text": "just search for awcli and click on this"
+    },
+    {
+      "start": 123.78,
+      "duration": 3.72,
+      "text": "documentation which has all the commands"
+    },
+    {
+      "start": 126.119,
+      "duration": 4.381,
+      "text": "and explanation on how you can install"
+    },
+    {
+      "start": 127.5,
+      "duration": 4.86,
+      "text": "it in Windows in Linux or in Macos so I"
+    },
+    {
+      "start": 130.5,
+      "duration": 3.78,
+      "text": "do have AWS CLI to show you I'm going to"
+    },
+    {
+      "start": 132.36,
+      "duration": 4.98,
+      "text": "open my terminal and run the command AWS"
+    },
+    {
+      "start": 134.28,
+      "duration": 5.76,
+      "text": "version which shows me that AWS CLI is"
+    },
+    {
+      "start": 137.34,
+      "duration": 4.14,
+      "text": "installed and it is 2.9.8 you can use"
+    },
+    {
+      "start": 140.04,
+      "duration": 2.88,
+      "text": "this documentation the link is going to"
+    },
+    {
+      "start": 141.48,
+      "duration": 3.119,
+      "text": "be in the description to install it we"
+    },
+    {
+      "start": 142.92,
+      "duration": 3.539,
+      "text": "will require this connect with terraform"
+    },
+    {
+      "start": 144.599,
+      "duration": 2.881,
+      "text": "so you need to install this and lastly"
+    },
+    {
+      "start": 146.459,
+      "duration": 2.941,
+      "text": "you also need to have terraform"
+    },
+    {
+      "start": 147.48,
+      "duration": 4.44,
+      "text": "installed and you can install terraform"
+    },
+    {
+      "start": 149.4,
+      "duration": 4.26,
+      "text": "from the official documentation so you"
+    },
+    {
+      "start": 151.92,
+      "duration": 4.26,
+      "text": "can install terraform on Mac OS on"
+    },
+    {
+      "start": 153.66,
+      "duration": 4.079,
+      "text": "Windows on Linux on freebhd open BST any"
+    },
+    {
+      "start": 156.18,
+      "duration": 2.94,
+      "text": "operating system you have I have it"
+    },
+    {
+      "start": 157.739,
+      "duration": 2.761,
+      "text": "installed and I can confirm it by just"
+    },
+    {
+      "start": 159.12,
+      "duration": 2.699,
+      "text": "running terraform and you can see all"
+    },
+    {
+      "start": 160.5,
+      "duration": 3.0,
+      "text": "the different all the different commands"
+    },
+    {
+      "start": 161.819,
+      "duration": 3.721,
+      "text": "which means set up a Miss installed I"
+    },
+    {
+      "start": 163.5,
+      "duration": 4.26,
+      "text": "can also run terraform version command"
+    },
+    {
+      "start": 165.54,
+      "duration": 3.779,
+      "text": "to show you that terraform is version"
+    },
+    {
+      "start": 167.76,
+      "duration": 3.66,
+      "text": "1.3.2"
+    },
+    {
+      "start": 169.319,
+      "duration": 4.081,
+      "text": "so once this is done you can then start"
+    },
+    {
+      "start": 171.42,
+      "duration": 4.319,
+      "text": "with the actual process of connecting"
+    },
+    {
+      "start": 173.4,
+      "duration": 4.08,
+      "text": "your AWS with terraform so once you have"
+    },
+    {
+      "start": 175.739,
+      "duration": 3.36,
+      "text": "your AWS account ready go ahead and log"
+    },
+    {
+      "start": 177.48,
+      "duration": 3.66,
+      "text": "into your account so I'm going to log in"
+    },
+    {
+      "start": 179.099,
+      "duration": 3.72,
+      "text": "with my IM account and you can see when"
+    },
+    {
+      "start": 181.14,
+      "duration": 3.78,
+      "text": "you log in with your AWS you need to put"
+    },
+    {
+      "start": 182.819,
+      "duration": 3.481,
+      "text": "your username and password or email ID"
+    },
+    {
+      "start": 184.92,
+      "duration": 3.36,
+      "text": "or password if you're using root user"
+    },
+    {
+      "start": 186.3,
+      "duration": 3.48,
+      "text": "you can log with either root user or"
+    },
+    {
+      "start": 188.28,
+      "duration": 3.48,
+      "text": "with IM user the process is going to be"
+    },
+    {
+      "start": 189.78,
+      "duration": 4.02,
+      "text": "the same so let's start I'm going to log"
+    },
+    {
+      "start": 191.76,
+      "duration": 3.66,
+      "text": "in with this Nasi user and put my"
+    },
+    {
+      "start": 193.8,
+      "duration": 5.04,
+      "text": "password as well now you can see I'm"
+    },
+    {
+      "start": 195.42,
+      "duration": 5.16,
+      "text": "inside my AWS console I'm loaded as an"
+    },
+    {
+      "start": 198.84,
+      "duration": 3.3,
+      "text": "AC user and if I want to create quiz I"
+    },
+    {
+      "start": 200.58,
+      "duration": 3.84,
+      "text": "can just go and click on security"
+    },
+    {
+      "start": 202.14,
+      "duration": 3.9,
+      "text": "credentials I will have an option to"
+    },
+    {
+      "start": 204.42,
+      "duration": 4.2,
+      "text": "create access keys and secret access"
+    },
+    {
+      "start": 206.04,
+      "duration": 4.38,
+      "text": "keys in my IM dashboard so when I click"
+    },
+    {
+      "start": 208.62,
+      "duration": 4.619,
+      "text": "on security credentials it take me to im"
+    },
+    {
+      "start": 210.42,
+      "duration": 3.959,
+      "text": "a service and if you see here below you"
+    },
+    {
+      "start": 213.239,
+      "duration": 3.661,
+      "text": "will have an option to create access"
+    },
+    {
+      "start": 214.379,
+      "duration": 5.521,
+      "text": "keys and it says use access key to send"
+    },
+    {
+      "start": 216.9,
+      "duration": 5.699,
+      "text": "programmatic calls to AWS from CLI from"
+    },
+    {
+      "start": 219.9,
+      "duration": 5.04,
+      "text": "Powershell from sdks direct API caller"
+    },
+    {
+      "start": 222.599,
+      "duration": 4.381,
+      "text": "also terraform ansible and devops tools"
+    },
+    {
+      "start": 224.94,
+      "duration": 4.26,
+      "text": "which requires you to have secret access"
+    },
+    {
+      "start": 226.98,
+      "duration": 3.66,
+      "text": "keys and access keys so if I want to"
+    },
+    {
+      "start": 229.2,
+      "duration": 3.36,
+      "text": "create create for the same user I can go"
+    },
+    {
+      "start": 230.64,
+      "duration": 3.599,
+      "text": "and click on create access keys and I"
+    },
+    {
+      "start": 232.56,
+      "duration": 4.319,
+      "text": "can choose the options and I'm going to"
+    },
+    {
+      "start": 234.239,
+      "duration": 4.56,
+      "text": "click on yes I understand and then you"
+    },
+    {
+      "start": 236.879,
+      "duration": 3.561,
+      "text": "click on next Once I click on next I can"
+    },
+    {
+      "start": 238.799,
+      "duration": 4.681,
+      "text": "give this value so let's say terraform"
+    },
+    {
+      "start": 240.44,
+      "duration": 4.359,
+      "text": "keys and create access keys this is when"
+    },
+    {
+      "start": 243.48,
+      "duration": 3.06,
+      "text": "you're logged in with the user let's say"
+    },
+    {
+      "start": 244.799,
+      "duration": 3.241,
+      "text": "you don't have a user created then I'm"
+    },
+    {
+      "start": 246.54,
+      "duration": 3.059,
+      "text": "going to show you how you can do that so"
+    },
+    {
+      "start": 248.04,
+      "duration": 4.08,
+      "text": "let's go and create a user for yourself"
+    },
+    {
+      "start": 249.599,
+      "duration": 3.901,
+      "text": "and remember whenever you're creating a"
+    },
+    {
+      "start": 252.12,
+      "duration": 3.36,
+      "text": "user you need to give them proper"
+    },
+    {
+      "start": 253.5,
+      "duration": 3.72,
+      "text": "permissions let's say with terraform"
+    },
+    {
+      "start": 255.48,
+      "duration": 3.3,
+      "text": "you're going to create ec2 instances"
+    },
+    {
+      "start": 257.22,
+      "duration": 3.06,
+      "text": "then you need to make sure that the user"
+    },
+    {
+      "start": 258.78,
+      "duration": 3.239,
+      "text": "you are creating should have easy to"
+    },
+    {
+      "start": 260.28,
+      "duration": 3.12,
+      "text": "access if you're creating S3 buckets you"
+    },
+    {
+      "start": 262.019,
+      "duration": 3.24,
+      "text": "need to make sure that the user has S3"
+    },
+    {
+      "start": 263.4,
+      "duration": 4.5,
+      "text": "access as well if you're getting RDS as"
+    },
+    {
+      "start": 265.259,
+      "duration": 4.38,
+      "text": "well you need to give RDS access to so"
+    },
+    {
+      "start": 267.9,
+      "duration": 4.5,
+      "text": "to make things simple either you can"
+    },
+    {
+      "start": 269.639,
+      "duration": 4.5,
+      "text": "give it admin access or you can give the"
+    },
+    {
+      "start": 272.4,
+      "duration": 3.66,
+      "text": "permissions which you require so I'm"
+    },
+    {
+      "start": 274.139,
+      "duration": 3.84,
+      "text": "going to say terraform uses the name of"
+    },
+    {
+      "start": 276.06,
+      "duration": 3.48,
+      "text": "the user as terraform user here and I"
+    },
+    {
+      "start": 277.979,
+      "duration": 4.021,
+      "text": "want this user to have access to console"
+    },
+    {
+      "start": 279.54,
+      "duration": 4.2,
+      "text": "as well and I want to create an IM user"
+    },
+    {
+      "start": 282.0,
+      "duration": 3.06,
+      "text": "so you can choose to give alternative"
+    },
+    {
+      "start": 283.74,
+      "duration": 2.64,
+      "text": "password I can or you can guess the"
+    },
+    {
+      "start": 285.06,
+      "duration": 3.359,
+      "text": "custom password let me give you a post"
+    },
+    {
+      "start": 286.38,
+      "duration": 3.66,
+      "text": "custom password here okay now I've done"
+    },
+    {
+      "start": 288.419,
+      "duration": 3.72,
+      "text": "this I don't want to use to change the"
+    },
+    {
+      "start": 290.04,
+      "duration": 3.42,
+      "text": "password next I am going to say to add"
+    },
+    {
+      "start": 292.139,
+      "duration": 3.601,
+      "text": "some permissions and I'm going to attach"
+    },
+    {
+      "start": 293.46,
+      "duration": 4.08,
+      "text": "policies directly as I said if the if"
+    },
+    {
+      "start": 295.74,
+      "duration": 3.54,
+      "text": "you're using terraform to create ec2"
+    },
+    {
+      "start": 297.54,
+      "duration": 4.02,
+      "text": "instances make sure the user has easy to"
+    },
+    {
+      "start": 299.28,
+      "duration": 3.6,
+      "text": "access so that when the user Keys it"
+    },
+    {
+      "start": 301.56,
+      "duration": 2.94,
+      "text": "should not give you access denied or any"
+    },
+    {
+      "start": 302.88,
+      "duration": 3.539,
+      "text": "other problem so to make things simple"
+    },
+    {
+      "start": 304.5,
+      "duration": 3.9,
+      "text": "I'm going to give all access which is by"
+    },
+    {
+      "start": 306.419,
+      "duration": 4.201,
+      "text": "giving administrator access and you can"
+    },
+    {
+      "start": 308.4,
+      "duration": 4.68,
+      "text": "see this policy it says allow all action"
+    },
+    {
+      "start": 310.62,
+      "duration": 4.5,
+      "text": "the star means all on all resources this"
+    },
+    {
+      "start": 313.08,
+      "duration": 3.96,
+      "text": "means when using the keys from this user"
+    },
+    {
+      "start": 315.12,
+      "duration": 4.2,
+      "text": "I will be able to access everything and"
+    },
+    {
+      "start": 317.04,
+      "duration": 4.379,
+      "text": "can create everything in terraform after"
+    },
+    {
+      "start": 319.32,
+      "duration": 4.62,
+      "text": "it is connected to AWS so now I'm going"
+    },
+    {
+      "start": 321.419,
+      "duration": 4.441,
+      "text": "to click on next option here and then"
+    },
+    {
+      "start": 323.94,
+      "duration": 4.62,
+      "text": "click create this user so let's go and"
+    },
+    {
+      "start": 325.86,
+      "duration": 5.46,
+      "text": "sign in I'm going to open my incognito"
+    },
+    {
+      "start": 328.56,
+      "duration": 4.62,
+      "text": "window and copy this link"
+    },
+    {
+      "start": 331.32,
+      "duration": 3.9,
+      "text": "you can also save it by downloading this"
+    },
+    {
+      "start": 333.18,
+      "duration": 4.019,
+      "text": "CSV file so that you don't miss the"
+    },
+    {
+      "start": 335.22,
+      "duration": 3.66,
+      "text": "login this is login through console"
+    },
+    {
+      "start": 337.199,
+      "duration": 3.361,
+      "text": "remember this is log into console not"
+    },
+    {
+      "start": 338.88,
+      "duration": 3.659,
+      "text": "through CL I'm going to show you how you"
+    },
+    {
+      "start": 340.56,
+      "duration": 3.6,
+      "text": "can do it after you create the keys so"
+    },
+    {
+      "start": 342.539,
+      "duration": 4.021,
+      "text": "now I'm going to put the username which"
+    },
+    {
+      "start": 344.16,
+      "duration": 4.379,
+      "text": "is terraform user I can directly paste"
+    },
+    {
+      "start": 346.56,
+      "duration": 4.38,
+      "text": "it here and put the password as well"
+    },
+    {
+      "start": 348.539,
+      "duration": 3.841,
+      "text": "which is here once I put this I can"
+    },
+    {
+      "start": 350.94,
+      "duration": 2.699,
+      "text": "click on sign in and it should take me"
+    },
+    {
+      "start": 352.38,
+      "duration": 3.78,
+      "text": "inside"
+    },
+    {
+      "start": 353.639,
+      "duration": 5.761,
+      "text": "the console and now I can easily create"
+    },
+    {
+      "start": 356.16,
+      "duration": 5.28,
+      "text": "keys by just clicking on the name and"
+    },
+    {
+      "start": 359.4,
+      "duration": 3.54,
+      "text": "then security Credence is option here so"
+    },
+    {
+      "start": 361.44,
+      "duration": 3.84,
+      "text": "let's click on the name security"
+    },
+    {
+      "start": 362.94,
+      "duration": 4.74,
+      "text": "credentials and it will take me to IM"
+    },
+    {
+      "start": 365.28,
+      "duration": 4.919,
+      "text": "dashboard where I can create my keys and"
+    },
+    {
+      "start": 367.68,
+      "duration": 4.019,
+      "text": "you can see below you will have access"
+    },
+    {
+      "start": 370.199,
+      "duration": 3.241,
+      "text": "keys so I'm going to click on create"
+    },
+    {
+      "start": 371.699,
+      "duration": 2.94,
+      "text": "access keys and I want to choose CLI or"
+    },
+    {
+      "start": 373.44,
+      "duration": 3.06,
+      "text": "you can choose any other option but you"
+    },
+    {
+      "start": 374.639,
+      "duration": 3.9,
+      "text": "need to make sure that you say I"
+    },
+    {
+      "start": 376.5,
+      "duration": 4.199,
+      "text": "understand and click on next option here"
+    },
+    {
+      "start": 378.539,
+      "duration": 3.861,
+      "text": "give attack which is options I'm going"
+    },
+    {
+      "start": 380.699,
+      "duration": 4.321,
+      "text": "to say terraform"
+    },
+    {
+      "start": 382.4,
+      "duration": 4.6,
+      "text": "keys or anything and then click on"
+    },
+    {
+      "start": 385.02,
+      "duration": 3.299,
+      "text": "create access Keys once I click on this"
+    },
+    {
+      "start": 387.0,
+      "duration": 3.419,
+      "text": "I will have a access key and secret"
+    },
+    {
+      "start": 388.319,
+      "duration": 4.44,
+      "text": "access key which I can save in CSV file"
+    },
+    {
+      "start": 390.419,
+      "duration": 4.201,
+      "text": "you can then use this to connect your"
+    },
+    {
+      "start": 392.759,
+      "duration": 3.481,
+      "text": "AWS let me show you how I'm going to"
+    },
+    {
+      "start": 394.62,
+      "duration": 6.24,
+      "text": "create a new directory I'm going to say"
+    },
+    {
+      "start": 396.24,
+      "duration": 7.079,
+      "text": "mkdir terraform AWS connection let's"
+    },
+    {
+      "start": 400.86,
+      "duration": 3.839,
+      "text": "open this in vs code we want to use AWS"
+    },
+    {
+      "start": 403.319,
+      "duration": 3.061,
+      "text": "with tariff you'll need to use AWS"
+    },
+    {
+      "start": 404.699,
+      "duration": 3.361,
+      "text": "provider in your terraform and to use"
+    },
+    {
+      "start": 406.38,
+      "duration": 3.24,
+      "text": "the provider as I've already mentioned"
+    },
+    {
+      "start": 408.06,
+      "duration": 3.84,
+      "text": "in previous videos you need to click"
+    },
+    {
+      "start": 409.62,
+      "duration": 3.9,
+      "text": "here and choose this block and I need to"
+    },
+    {
+      "start": 411.9,
+      "duration": 3.06,
+      "text": "put some configuration options in the"
+    },
+    {
+      "start": 413.52,
+      "duration": 2.94,
+      "text": "documentation you'll be able to see what"
+    },
+    {
+      "start": 414.96,
+      "duration": 3.66,
+      "text": "parameters you can put inside this"
+    },
+    {
+      "start": 416.46,
+      "duration": 4.14,
+      "text": "provider and let's scroll down to see"
+    },
+    {
+      "start": 418.62,
+      "duration": 3.66,
+      "text": "this is how you can define a provider by"
+    },
+    {
+      "start": 420.6,
+      "duration": 3.3,
+      "text": "defining region access key and secret"
+    },
+    {
+      "start": 422.28,
+      "duration": 5.1,
+      "text": "access key so I'm going to create a file"
+    },
+    {
+      "start": 423.9,
+      "duration": 4.799,
+      "text": "name it provider dot TS and paste this"
+    },
+    {
+      "start": 427.38,
+      "duration": 3.9,
+      "text": "thing here so we're using a provider"
+    },
+    {
+      "start": 428.699,
+      "duration": 4.141,
+      "text": "named as AWS and we need to put region"
+    },
+    {
+      "start": 431.28,
+      "duration": 4.08,
+      "text": "and we need to put access key and secret"
+    },
+    {
+      "start": 432.84,
+      "duration": 5.22,
+      "text": "access key that we created here on this"
+    },
+    {
+      "start": 435.36,
+      "duration": 5.22,
+      "text": "page to connect your AWS with terraform"
+    },
+    {
+      "start": 438.06,
+      "duration": 5.16,
+      "text": "but if you see here"
+    },
+    {
+      "start": 440.58,
+      "duration": 3.959,
+      "text": "terraform says hard coding credentials"
+    },
+    {
+      "start": 443.22,
+      "duration": 3.06,
+      "text": "are not recommended in any terraform"
+    },
+    {
+      "start": 444.539,
+      "duration": 3.241,
+      "text": "configurations which means you should"
+    },
+    {
+      "start": 446.28,
+      "duration": 3.479,
+      "text": "never hard code it and if you push this"
+    },
+    {
+      "start": 447.78,
+      "duration": 4.02,
+      "text": "hard-coded thing in GitHub obviously"
+    },
+    {
+      "start": 449.759,
+      "duration": 3.601,
+      "text": "people can access it and they will log"
+    },
+    {
+      "start": 451.8,
+      "duration": 3.239,
+      "text": "into your account but even if you push"
+    },
+    {
+      "start": 453.36,
+      "duration": 3.119,
+      "text": "it it is very intelligent surgeon to"
+    },
+    {
+      "start": 455.039,
+      "duration": 2.581,
+      "text": "check and terminate your account so you"
+    },
+    {
+      "start": 456.479,
+      "duration": 2.821,
+      "text": "will not be able to use your account so"
+    },
+    {
+      "start": 457.62,
+      "duration": 4.32,
+      "text": "make sure you're never storing your keys"
+    },
+    {
+      "start": 459.3,
+      "duration": 4.679,
+      "text": "in terraform and pushing it to get up so"
+    },
+    {
+      "start": 461.94,
+      "duration": 4.44,
+      "text": "let's go and put the thing here so I'm"
+    },
+    {
+      "start": 463.979,
+      "duration": 3.78,
+      "text": "going to choose region sus2 and I'm"
+    },
+    {
+      "start": 466.38,
+      "duration": 3.659,
+      "text": "going to put my access key here first"
+    },
+    {
+      "start": 467.759,
+      "duration": 4.201,
+      "text": "this is my access key I'm putting it"
+    },
+    {
+      "start": 470.039,
+      "duration": 3.66,
+      "text": "here and then I need to put my secret"
+    },
+    {
+      "start": 471.96,
+      "duration": 4.139,
+      "text": "access key also"
+    },
+    {
+      "start": 473.699,
+      "duration": 4.021,
+      "text": "and all right if we have our access key"
+    },
+    {
+      "start": 476.099,
+      "duration": 3.72,
+      "text": "and secret access key here even though"
+    },
+    {
+      "start": 477.72,
+      "duration": 3.78,
+      "text": "terraform says it's a practice you can"
+    },
+    {
+      "start": 479.819,
+      "duration": 3.541,
+      "text": "still use it I'll be showing you what is"
+    },
+    {
+      "start": 481.5,
+      "duration": 4.139,
+      "text": "the best practice to use it but for now"
+    },
+    {
+      "start": 483.36,
+      "duration": 4.559,
+      "text": "let me show you and try to see if we are"
+    },
+    {
+      "start": 485.639,
+      "duration": 3.84,
+      "text": "able to connect and create resources or"
+    },
+    {
+      "start": 487.919,
+      "duration": 4.141,
+      "text": "not and to do that I'm going to create a"
+    },
+    {
+      "start": 489.479,
+      "duration": 4.56,
+      "text": "new file name it main.ts inside this I'm"
+    },
+    {
+      "start": 492.06,
+      "duration": 4.8,
+      "text": "going to create a resource AWS"
+    },
+    {
+      "start": 494.039,
+      "duration": 3.901,
+      "text": "underscore S3 underscore bucket and you"
+    },
+    {
+      "start": 496.86,
+      "duration": 2.88,
+      "text": "can use the terraform official"
+    },
+    {
+      "start": 497.94,
+      "duration": 3.12,
+      "text": "documentation which is this one the link"
+    },
+    {
+      "start": 499.74,
+      "duration": 2.82,
+      "text": "is going to be description to create a"
+    },
+    {
+      "start": 501.06,
+      "duration": 3.359,
+      "text": "bucket I've also shown how to create a"
+    },
+    {
+      "start": 502.56,
+      "duration": 3.12,
+      "text": "bucket in the previous video so you can"
+    },
+    {
+      "start": 504.419,
+      "duration": 3.72,
+      "text": "also check that so I'm going to say my"
+    },
+    {
+      "start": 505.68,
+      "duration": 4.38,
+      "text": "bucket as a name for terraform reference"
+    },
+    {
+      "start": 508.139,
+      "duration": 4.501,
+      "text": "and inside this I'm going to pass the"
+    },
+    {
+      "start": 510.06,
+      "duration": 7.62,
+      "text": "attribute name in as bucket let's name"
+    },
+    {
+      "start": 512.64,
+      "duration": 7.44,
+      "text": "this as test terraform AWS connection"
+    },
+    {
+      "start": 517.68,
+      "duration": 4.38,
+      "text": "bucket the name can be anything but it"
+    },
+    {
+      "start": 520.08,
+      "duration": 3.959,
+      "text": "should be unique because S3 wants you to"
+    },
+    {
+      "start": 522.06,
+      "duration": 3.779,
+      "text": "have unique name I now need to run some"
+    },
+    {
+      "start": 524.039,
+      "duration": 3.061,
+      "text": "terraform commands and if it is"
+    },
+    {
+      "start": 525.839,
+      "duration": 4.801,
+      "text": "connected successfully I should be able"
+    },
+    {
+      "start": 527.1,
+      "duration": 4.919,
+      "text": "to see a bucket named as this inside my"
+    },
+    {
+      "start": 530.64,
+      "duration": 2.94,
+      "text": "console you can see there is no bucket"
+    },
+    {
+      "start": 532.019,
+      "duration": 3.841,
+      "text": "with that name and I'm able to see the"
+    },
+    {
+      "start": 533.58,
+      "duration": 4.14,
+      "text": "buckets only because this user has"
+    },
+    {
+      "start": 535.86,
+      "duration": 3.12,
+      "text": "access to it so make sure whenever you"
+    },
+    {
+      "start": 537.72,
+      "duration": 2.58,
+      "text": "create a user you should have access to"
+    },
+    {
+      "start": 538.98,
+      "duration": 3.0,
+      "text": "whatever resource you are trying to"
+    },
+    {
+      "start": 540.3,
+      "duration": 2.64,
+      "text": "create in terraform so First Command I'm"
+    },
+    {
+      "start": 541.98,
+      "duration": 2.34,
+      "text": "going to really start off a minute"
+    },
+    {
+      "start": 542.94,
+      "duration": 3.42,
+      "text": "command to make sure that it downloads"
+    },
+    {
+      "start": 544.32,
+      "duration": 3.9,
+      "text": "everything required for this AWS"
+    },
+    {
+      "start": 546.36,
+      "duration": 3.72,
+      "text": "provider to them so I'm going to set"
+    },
+    {
+      "start": 548.22,
+      "duration": 3.42,
+      "text": "terraform init and it will start"
+    },
+    {
+      "start": 550.08,
+      "duration": 4.02,
+      "text": "installing provider plugins so you can"
+    },
+    {
+      "start": 551.64,
+      "duration": 4.259,
+      "text": "see 5.9.0 version is going to be"
+    },
+    {
+      "start": 554.1,
+      "duration": 3.359,
+      "text": "installed up and once it is installed in"
+    },
+    {
+      "start": 555.899,
+      "duration": 3.421,
+      "text": "we can run the terraform plan command"
+    },
+    {
+      "start": 557.459,
+      "duration": 4.981,
+      "text": "apply command to have this resource"
+    },
+    {
+      "start": 559.32,
+      "duration": 4.56,
+      "text": "created in the account if everything is"
+    },
+    {
+      "start": 562.44,
+      "duration": 2.94,
+      "text": "fine then everything is connected"
+    },
+    {
+      "start": 563.88,
+      "duration": 2.88,
+      "text": "properly so let's wait for this to be"
+    },
+    {
+      "start": 565.38,
+      "duration": 3.3,
+      "text": "done"
+    },
+    {
+      "start": 566.76,
+      "duration": 3.6,
+      "text": "all right so the init has been done and"
+    },
+    {
+      "start": 568.68,
+      "duration": 3.0,
+      "text": "then you can read the message which says"
+    },
+    {
+      "start": 570.36,
+      "duration": 3.78,
+      "text": "terraform has been successfully"
+    },
+    {
+      "start": 571.68,
+      "duration": 5.219,
+      "text": "initialized you may now run it uh this"
+    },
+    {
+      "start": 574.14,
+      "duration": 3.72,
+      "text": "telephone plan and so let's enter from"
+    },
+    {
+      "start": 576.899,
+      "duration": 2.401,
+      "text": "plan to see if it is going to be"
+    },
+    {
+      "start": 577.86,
+      "duration": 2.88,
+      "text": "creating something or not so when I run"
+    },
+    {
+      "start": 579.3,
+      "duration": 2.76,
+      "text": "an iPhone plan if the connection is"
+    },
+    {
+      "start": 580.74,
+      "duration": 3.779,
+      "text": "successful it should not give us any"
+    },
+    {
+      "start": 582.06,
+      "duration": 3.899,
+      "text": "error this uh everything is perfect it"
+    },
+    {
+      "start": 584.519,
+      "duration": 5.041,
+      "text": "says one thing is what we created which"
+    },
+    {
+      "start": 585.959,
+      "duration": 5.761,
+      "text": "is the AWS S3 bucket dot my bucket as"
+    },
+    {
+      "start": 589.56,
+      "duration": 3.839,
+      "text": "defined inside here let's go and create"
+    },
+    {
+      "start": 591.72,
+      "duration": 4.98,
+      "text": "it by running terrify of like command"
+    },
+    {
+      "start": 593.399,
+      "duration": 4.62,
+      "text": "hyphen Auto hyphen approve if I run this"
+    },
+    {
+      "start": 596.7,
+      "duration": 2.699,
+      "text": "and it is created which means there are"
+    },
+    {
+      "start": 598.019,
+      "duration": 3.481,
+      "text": "firm and AWS has been successfully"
+    },
+    {
+      "start": 599.399,
+      "duration": 3.961,
+      "text": "connected it's in creating state which"
+    },
+    {
+      "start": 601.5,
+      "duration": 4.32,
+      "text": "means we have successfully connected but"
+    },
+    {
+      "start": 603.36,
+      "duration": 4.32,
+      "text": "still it is a bad practice for you to"
+    },
+    {
+      "start": 605.82,
+      "duration": 3.72,
+      "text": "store your keys inside it so let me show"
+    },
+    {
+      "start": 607.68,
+      "duration": 3.839,
+      "text": "you another way you can use it to make"
+    },
+    {
+      "start": 609.54,
+      "duration": 3.72,
+      "text": "sure your access keys are not hard coded"
+    },
+    {
+      "start": 611.519,
+      "duration": 3.121,
+      "text": "in the code but let me also show you"
+    },
+    {
+      "start": 613.26,
+      "duration": 3.3,
+      "text": "that the bucket is present here let's"
+    },
+    {
+      "start": 614.64,
+      "duration": 4.319,
+      "text": "refresh this page and you can see a"
+    },
+    {
+      "start": 616.56,
+      "duration": 4.14,
+      "text": "terraform test bucket has been created"
+    },
+    {
+      "start": 618.959,
+      "duration": 4.32,
+      "text": "this is how you can connect using access"
+    },
+    {
+      "start": 620.7,
+      "duration": 5.04,
+      "text": "Keys let's try to delete this bucket and"
+    },
+    {
+      "start": 623.279,
+      "duration": 4.56,
+      "text": "use another way to define our access"
+    },
+    {
+      "start": 625.74,
+      "duration": 4.92,
+      "text": "keys so another way to define is using"
+    },
+    {
+      "start": 627.839,
+      "duration": 5.821,
+      "text": "AWS CLI so as I've told you to install"
+    },
+    {
+      "start": 630.66,
+      "duration": 4.38,
+      "text": "AWS CLI using this documentation once"
+    },
+    {
+      "start": 633.66,
+      "duration": 2.82,
+      "text": "you install it if you want to connect"
+    },
+    {
+      "start": 635.04,
+      "duration": 3.239,
+      "text": "through CLI you need to run the command"
+    },
+    {
+      "start": 636.48,
+      "duration": 3.539,
+      "text": "AWS configure which will ask you to put"
+    },
+    {
+      "start": 638.279,
+      "duration": 3.601,
+      "text": "your access key and secret access key so"
+    },
+    {
+      "start": 640.019,
+      "duration": 3.421,
+      "text": "when I run this it asks me to put the"
+    },
+    {
+      "start": 641.88,
+      "duration": 3.3,
+      "text": "access key so I've already put my access"
+    },
+    {
+      "start": 643.44,
+      "duration": 3.6,
+      "text": "key this is why this shows here for you"
+    },
+    {
+      "start": 645.18,
+      "duration": 4.44,
+      "text": "it should it might be none or no value"
+    },
+    {
+      "start": 647.04,
+      "duration": 5.16,
+      "text": "here but let me put my access Keys copy"
+    },
+    {
+      "start": 649.62,
+      "duration": 3.42,
+      "text": "or cut it out and remove this live from"
+    },
+    {
+      "start": 652.2,
+      "duration": 4.74,
+      "text": "here"
+    },
+    {
+      "start": 653.04,
+      "duration": 5.76,
+      "text": "save it and put it in my CLI here next"
+    },
+    {
+      "start": 656.94,
+      "duration": 3.78,
+      "text": "I'm going to copy my secret access key"
+    },
+    {
+      "start": 658.8,
+      "duration": 3.96,
+      "text": "because once I press enter after putting"
+    },
+    {
+      "start": 660.72,
+      "duration": 4.32,
+      "text": "my access Keys it is going to ask me for"
+    },
+    {
+      "start": 662.76,
+      "duration": 4.44,
+      "text": "secret access keys so let me put that"
+    },
+    {
+      "start": 665.04,
+      "duration": 3.78,
+      "text": "here now and there is going to ask me"
+    },
+    {
+      "start": 667.2,
+      "duration": 3.12,
+      "text": "for reason I can choose to put any meter"
+    },
+    {
+      "start": 668.82,
+      "duration": 3.48,
+      "text": "I want or I can choose to keep it Us"
+    },
+    {
+      "start": 670.32,
+      "duration": 4.38,
+      "text": "best one the reason is going to be used"
+    },
+    {
+      "start": 672.3,
+      "duration": 4.2,
+      "text": "from this section so no need to worry so"
+    },
+    {
+      "start": 674.7,
+      "duration": 4.259,
+      "text": "I'm going to also remove this access key"
+    },
+    {
+      "start": 676.5,
+      "duration": 4.62,
+      "text": "and save this now I'm going to put my"
+    },
+    {
+      "start": 678.959,
+      "duration": 4.56,
+      "text": "region and the format is none output"
+    },
+    {
+      "start": 681.12,
+      "duration": 4.62,
+      "text": "format all right now after entering your"
+    },
+    {
+      "start": 683.519,
+      "duration": 3.481,
+      "text": "keys using AWS configure command you can"
+    },
+    {
+      "start": 685.74,
+      "duration": 3.12,
+      "text": "check if the connection has been"
+    },
+    {
+      "start": 687.0,
+      "duration": 4.86,
+      "text": "successfully established by running any"
+    },
+    {
+      "start": 688.86,
+      "duration": 4.44,
+      "text": "command let's say AWS IM list Dash users"
+    },
+    {
+      "start": 691.86,
+      "duration": 3.719,
+      "text": "which will tell you all the list of the"
+    },
+    {
+      "start": 693.3,
+      "duration": 3.479,
+      "text": "users if it is connected successfully so"
+    },
+    {
+      "start": 695.579,
+      "duration": 4.081,
+      "text": "you can see I see all the rest of the"
+    },
+    {
+      "start": 696.779,
+      "duration": 5.401,
+      "text": "users Alex Ben John Kingsley in the seat"
+    },
+    {
+      "start": 699.66,
+      "duration": 3.96,
+      "text": "s users all of it which means it is"
+    },
+    {
+      "start": 702.18,
+      "duration": 2.82,
+      "text": "connected successfully now you can also"
+    },
+    {
+      "start": 703.62,
+      "duration": 2.94,
+      "text": "test this by going to your terraform"
+    },
+    {
+      "start": 705.0,
+      "duration": 3.48,
+      "text": "let's try to change the name of the"
+    },
+    {
+      "start": 706.56,
+      "duration": 3.719,
+      "text": "bucket now so it is not the same and run"
+    },
+    {
+      "start": 708.48,
+      "duration": 3.84,
+      "text": "the terraform plan command again if it"
+    },
+    {
+      "start": 710.279,
+      "duration": 3.3,
+      "text": "is not correct it will show you an error"
+    },
+    {
+      "start": 712.32,
+      "duration": 3.48,
+      "text": "if it is correct it should the plan"
+    },
+    {
+      "start": 713.579,
+      "duration": 4.26,
+      "text": "successfully so now when I run the plan"
+    },
+    {
+      "start": 715.8,
+      "duration": 3.779,
+      "text": "command I don't have any bucket with"
+    },
+    {
+      "start": 717.839,
+      "duration": 3.481,
+      "text": "this name and after I run this it will"
+    },
+    {
+      "start": 719.579,
+      "duration": 3.841,
+      "text": "be adding it so let's run terraform"
+    },
+    {
+      "start": 721.32,
+      "duration": 4.5,
+      "text": "apply Commander therefore apply hyphen"
+    },
+    {
+      "start": 723.42,
+      "duration": 4.2,
+      "text": "Auto hyphen approve"
+    },
+    {
+      "start": 725.82,
+      "duration": 4.079,
+      "text": "and it is now going to start creating"
+    },
+    {
+      "start": 727.62,
+      "duration": 4.14,
+      "text": "the bucket as well if everything is"
+    },
+    {
+      "start": 729.899,
+      "duration": 3.541,
+      "text": "connected successfully so this is how"
+    },
+    {
+      "start": 731.76,
+      "duration": 3.54,
+      "text": "you can connect your terraform with this"
+    },
+    {
+      "start": 733.44,
+      "duration": 3.66,
+      "text": "AWS using using access key and secret"
+    },
+    {
+      "start": 735.3,
+      "duration": 3.599,
+      "text": "access key and make sure you're never"
+    },
+    {
+      "start": 737.1,
+      "duration": 3.78,
+      "text": "putting the access keys inside this"
+    },
+    {
+      "start": 738.899,
+      "duration": 3.301,
+      "text": "because it's not a good practice so you"
+    },
+    {
+      "start": 740.88,
+      "duration": 3.24,
+      "text": "should always use the AWS configure"
+    },
+    {
+      "start": 742.2,
+      "duration": 4.56,
+      "text": "command and put it there or you can use"
+    },
+    {
+      "start": 744.12,
+      "duration": 4.38,
+      "text": "variables.tf first file as I've shown in"
+    },
+    {
+      "start": 746.76,
+      "duration": 3.24,
+      "text": "the previous video you can create TFS"
+    },
+    {
+      "start": 748.5,
+      "duration": 3.899,
+      "text": "file and put the access keys there"
+    },
+    {
+      "start": 750.0,
+      "duration": 3.54,
+      "text": "rather than finding hard coded in the in"
+    },
+    {
+      "start": 752.399,
+      "duration": 3.0,
+      "text": "the code so you can see it says"
+    },
+    {
+      "start": 753.54,
+      "duration": 4.08,
+      "text": "processors one has been created and you"
+    },
+    {
+      "start": 755.399,
+      "duration": 4.68,
+      "text": "can confirm that by running AWS S3 LS"
+    },
+    {
+      "start": 757.62,
+      "duration": 4.14,
+      "text": "and you can see that test data from"
+    },
+    {
+      "start": 760.079,
+      "duration": 3.841,
+      "text": "bucket is there and I can also show you"
+    },
+    {
+      "start": 761.76,
+      "duration": 4.259,
+      "text": "this in the console so let's say fresh"
+    },
+    {
+      "start": 763.92,
+      "duration": 3.719,
+      "text": "and you can see here this is also"
+    },
+    {
+      "start": 766.019,
+      "duration": 3.781,
+      "text": "created so"
+    },
+    {
+      "start": 767.639,
+      "duration": 3.781,
+      "text": "this is how you can connect your AWS"
+    },
+    {
+      "start": 769.8,
+      "duration": 3.24,
+      "text": "with terraform and create resources I"
+    },
+    {
+      "start": 771.42,
+      "duration": 3.539,
+      "text": "hope this video was helpful if you have"
+    },
+    {
+      "start": 773.04,
+      "duration": 3.539,
+      "text": "any questions any doubt feel free to let"
+    },
+    {
+      "start": 774.959,
+      "duration": 3.12,
+      "text": "me know in the comment section and also"
+    },
+    {
+      "start": 776.579,
+      "duration": 3.721,
+      "text": "check out the data from pre-list to"
+    },
+    {
+      "start": 778.079,
+      "duration": 5.0,
+      "text": "learn Patera form from scratch thank you"
+    },
+    {
+      "start": 780.3,
+      "duration": 2.779,
+      "text": "and have a good day"
+    }
+  ]
+}

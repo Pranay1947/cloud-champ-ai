@@ -1,0 +1,4791 @@
+{
+  "video": {
+    "id": "ULiPYBLcCiw",
+    "title": "AWS Interview Questions and Answers 2025 [Updated!]",
+    "url": "https://www.youtube.com/watch?v=ULiPYBLcCiw",
+    "duration": 2030,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.56,
+      "duration": 4.08,
+      "text": "in this video we look at AWS Cloud"
+    },
+    {
+      "start": 2.52,
+      "duration": 3.4,
+      "text": "interview questions and answers"
+    },
+    {
+      "start": 4.64,
+      "duration": 3.08,
+      "text": "throughout this video we will be"
+    },
+    {
+      "start": 5.92,
+      "duration": 3.96,
+      "text": "covering frequently Asked interview"
+    },
+    {
+      "start": 7.72,
+      "duration": 4.28,
+      "text": "questions that I got most in my devops"
+    },
+    {
+      "start": 9.88,
+      "duration": 3.919,
+      "text": "interviews along with many scenario"
+    },
+    {
+      "start": 12.0,
+      "duration": 3.679,
+      "text": "based questions and I will provide you"
+    },
+    {
+      "start": 13.799,
+      "duration": 4.121,
+      "text": "with practical Solutions doing it on the"
+    },
+    {
+      "start": 15.679,
+      "duration": 5.041,
+      "text": "console and also helping you on how to"
+    },
+    {
+      "start": 17.92,
+      "duration": 5.24,
+      "text": "answer them in your devops interviews so"
+    },
+    {
+      "start": 20.72,
+      "duration": 4.44,
+      "text": "let's get started all right so I'm here"
+    },
+    {
+      "start": 23.16,
+      "duration": 3.92,
+      "text": "on my computer screen and I'm so sorry"
+    },
+    {
+      "start": 25.16,
+      "duration": 4.4,
+      "text": "if I look tired it's because I am not"
+    },
+    {
+      "start": 27.08,
+      "duration": 5.24,
+      "text": "feeling well but here we are with AWS"
+    },
+    {
+      "start": 29.56,
+      "duration": 4.8,
+      "text": "interview questions and answers video in"
+    },
+    {
+      "start": 32.32,
+      "duration": 3.759,
+      "text": "this document I have noted down all the"
+    },
+    {
+      "start": 34.36,
+      "duration": 3.32,
+      "text": "most asked interview questions along"
+    },
+    {
+      "start": 36.079,
+      "duration": 3.361,
+      "text": "with their answers and I will also show"
+    },
+    {
+      "start": 37.68,
+      "duration": 4.359,
+      "text": "you how to solve them practically on the"
+    },
+    {
+      "start": 39.44,
+      "duration": 4.24,
+      "text": "console so you can better answer them so"
+    },
+    {
+      "start": 42.039,
+      "duration": 3.721,
+      "text": "now without wasting any time let's start"
+    },
+    {
+      "start": 43.68,
+      "duration": 3.68,
+      "text": "with the video whenever you sit for any"
+    },
+    {
+      "start": 45.76,
+      "duration": 3.479,
+      "text": "technical interview the first question"
+    },
+    {
+      "start": 47.36,
+      "duration": 3.6,
+      "text": "that you usually get is tell me about"
+    },
+    {
+      "start": 49.239,
+      "duration": 3.32,
+      "text": "your experience and the past projects"
+    },
+    {
+      "start": 50.96,
+      "duration": 3.32,
+      "text": "that you have worked on this is very"
+    },
+    {
+      "start": 52.559,
+      "duration": 3.561,
+      "text": "common but it's very important for you"
+    },
+    {
+      "start": 54.28,
+      "duration": 3.16,
+      "text": "to answer it properly because this way"
+    },
+    {
+      "start": 56.12,
+      "duration": 3.399,
+      "text": "will tell the interviewer how technical"
+    },
+    {
+      "start": 57.44,
+      "duration": 3.84,
+      "text": "you are so mention your projects and the"
+    },
+    {
+      "start": 59.519,
+      "duration": 3.36,
+      "text": "problems might have faced I've also"
+    },
+    {
+      "start": 61.28,
+      "duration": 3.08,
+      "text": "answered this question very properly in"
+    },
+    {
+      "start": 62.879,
+      "duration": 3.521,
+      "text": "the devops interview questions and"
+    },
+    {
+      "start": 64.36,
+      "duration": 4.04,
+      "text": "answers video where you've covered self-"
+    },
+    {
+      "start": 66.4,
+      "duration": 4.12,
+      "text": "related questions questions on Linux"
+    },
+    {
+      "start": 68.4,
+      "duration": 3.759,
+      "text": "networking terraform and lot more so I"
+    },
+    {
+      "start": 70.52,
+      "duration": 3.8,
+      "text": "highly recommend you checking that video"
+    },
+    {
+      "start": 72.159,
+      "duration": 3.361,
+      "text": "if you have an interview very soon but"
+    },
+    {
+      "start": 74.32,
+      "duration": 3.439,
+      "text": "in this video we are going to be"
+    },
+    {
+      "start": 75.52,
+      "duration": 5.52,
+      "text": "covering questions related to AWS"
+    },
+    {
+      "start": 77.759,
+      "duration": 5.36,
+      "text": "services like VPC Lambda S3 ec2 codal"
+    },
+    {
+      "start": 81.04,
+      "duration": 3.64,
+      "text": "Pipeline and lot more so let's start"
+    },
+    {
+      "start": 83.119,
+      "duration": 4.0,
+      "text": "with the first question which is to"
+    },
+    {
+      "start": 84.68,
+      "duration": 4.28,
+      "text": "explain the steps to set up a secure MPC"
+    },
+    {
+      "start": 87.119,
+      "duration": 3.761,
+      "text": "with subnets and everything this is"
+    },
+    {
+      "start": 88.96,
+      "duration": 3.479,
+      "text": "actually a very techic question to"
+    },
+    {
+      "start": 90.88,
+      "duration": 3.36,
+      "text": "understand if you have knowledge on AWS"
+    },
+    {
+      "start": 92.439,
+      "duration": 3.32,
+      "text": "or not this question I have received a"
+    },
+    {
+      "start": 94.24,
+      "duration": 3.4,
+      "text": "lot of times and I also ask this"
+    },
+    {
+      "start": 95.759,
+      "duration": 3.64,
+      "text": "question whenever I take interviews"
+    },
+    {
+      "start": 97.64,
+      "duration": 3.32,
+      "text": "because this gives a general idea of if"
+    },
+    {
+      "start": 99.399,
+      "duration": 3.841,
+      "text": "the candidate actually has Hands-On"
+    },
+    {
+      "start": 100.96,
+      "duration": 5.159,
+      "text": "knowledge on AWS so what are the steps"
+    },
+    {
+      "start": 103.24,
+      "duration": 4.479,
+      "text": "to set up secure VPC to create a VPC you"
+    },
+    {
+      "start": 106.119,
+      "duration": 3.441,
+      "text": "need to go to the VPC service which is"
+    },
+    {
+      "start": 107.719,
+      "duration": 3.881,
+      "text": "virtual private Cloud you first start"
+    },
+    {
+      "start": 109.56,
+      "duration": 4.48,
+      "text": "with creating a VPC where you select the"
+    },
+    {
+      "start": 111.6,
+      "duration": 4.04,
+      "text": "side range and the name of the VPC once"
+    },
+    {
+      "start": 114.04,
+      "duration": 3.399,
+      "text": "the VC is created you then create"
+    },
+    {
+      "start": 115.64,
+      "duration": 3.96,
+      "text": "subnets which can be public subnets and"
+    },
+    {
+      "start": 117.439,
+      "duration": 4.081,
+      "text": "private subnets depending on your use"
+    },
+    {
+      "start": 119.6,
+      "duration": 4.04,
+      "text": "cases this so you first go ahead and"
+    },
+    {
+      "start": 121.52,
+      "duration": 4.0,
+      "text": "click on create VPC in the VPC you need"
+    },
+    {
+      "start": 123.64,
+      "duration": 4.2,
+      "text": "to set the side rrange you need to set"
+    },
+    {
+      "start": 125.52,
+      "duration": 4.799,
+      "text": "the configuration like enabling vs host"
+    },
+    {
+      "start": 127.84,
+      "duration": 5.6,
+      "text": "names or resolution then you select how"
+    },
+    {
+      "start": 130.319,
+      "duration": 4.601,
+      "text": "many subnets you want in what e and you"
+    },
+    {
+      "start": 133.44,
+      "duration": 3.079,
+      "text": "also need to create route tables which"
+    },
+    {
+      "start": 134.92,
+      "duration": 4.24,
+      "text": "will Define that the public subnet"
+    },
+    {
+      "start": 136.519,
+      "duration": 4.121,
+      "text": "should talk to internet gateway whereas"
+    },
+    {
+      "start": 139.16,
+      "duration": 3.92,
+      "text": "private subnet should talk to man"
+    },
+    {
+      "start": 140.64,
+      "duration": 4.36,
+      "text": "Gateway so you can also create internet"
+    },
+    {
+      "start": 143.08,
+      "duration": 3.76,
+      "text": "gateway and Gateway here are the steps"
+    },
+    {
+      "start": 145.0,
+      "duration": 3.92,
+      "text": "you first create a VPC then you create"
+    },
+    {
+      "start": 146.84,
+      "duration": 4.28,
+      "text": "submits then you configure route table"
+    },
+    {
+      "start": 148.92,
+      "duration": 4.16,
+      "text": "NS on network access control list can be"
+    },
+    {
+      "start": 151.12,
+      "duration": 4.0,
+      "text": "created where you can manage inbound and"
+    },
+    {
+      "start": 153.08,
+      "duration": 4.32,
+      "text": "outbound traffic coming inside or going"
+    },
+    {
+      "start": 155.12,
+      "duration": 4.399,
+      "text": "outside your VPC similarly you can also"
+    },
+    {
+      "start": 157.4,
+      "duration": 4.16,
+      "text": "create security groups if you have any"
+    },
+    {
+      "start": 159.519,
+      "duration": 3.521,
+      "text": "servers and you want to manage them"
+    },
+    {
+      "start": 161.56,
+      "duration": 2.959,
+      "text": "along with that you need to add internet"
+    },
+    {
+      "start": 163.04,
+      "duration": 3.44,
+      "text": "gateway optionally you can have n"
+    },
+    {
+      "start": 164.519,
+      "duration": 3.681,
+      "text": "Gateway or not instances to give"
+    },
+    {
+      "start": 166.48,
+      "duration": 3.56,
+      "text": "internet accesses to your private"
+    },
+    {
+      "start": 168.2,
+      "duration": 3.72,
+      "text": "subnets and if you want to monitor"
+    },
+    {
+      "start": 170.04,
+      "duration": 3.8,
+      "text": "traffic you can enable VPC locks or"
+    },
+    {
+      "start": 171.92,
+      "duration": 3.039,
+      "text": "monitor it through cloudwatch this is"
+    },
+    {
+      "start": 173.84,
+      "duration": 3.679,
+      "text": "how you should be answering this"
+    },
+    {
+      "start": 174.959,
+      "duration": 4.441,
+      "text": "particular question moving on the next"
+    },
+    {
+      "start": 177.519,
+      "duration": 4.681,
+      "text": "question is explain what this IM IM"
+    },
+    {
+      "start": 179.4,
+      "duration": 4.6,
+      "text": "policy does I am in AWS stands for"
+    },
+    {
+      "start": 182.2,
+      "duration": 4.2,
+      "text": "identity and access management which"
+    },
+    {
+      "start": 184.0,
+      "duration": 4.239,
+      "text": "lets you create users groups and roles"
+    },
+    {
+      "start": 186.4,
+      "duration": 4.36,
+      "text": "and these users groups and roles up"
+    },
+    {
+      "start": 188.239,
+      "duration": 4.56,
+      "text": "attached a policy policy is a Json"
+    },
+    {
+      "start": 190.76,
+      "duration": 3.96,
+      "text": "document like this which defines what"
+    },
+    {
+      "start": 192.799,
+      "duration": 4.121,
+      "text": "permissions should be given to users"
+    },
+    {
+      "start": 194.72,
+      "duration": 5.2,
+      "text": "groups or roles in this question we have"
+    },
+    {
+      "start": 196.92,
+      "duration": 4.92,
+      "text": "a simple policy and the interviewer is"
+    },
+    {
+      "start": 199.92,
+      "duration": 4.599,
+      "text": "asking you to explain what this IM IM"
+    },
+    {
+      "start": 201.84,
+      "duration": 4.399,
+      "text": "policy does so in this IM am policy we"
+    },
+    {
+      "start": 204.519,
+      "duration": 3.72,
+      "text": "have two statements you can see this is"
+    },
+    {
+      "start": 206.239,
+      "duration": 4.0,
+      "text": "one statement here and this is second"
+    },
+    {
+      "start": 208.239,
+      "duration": 4.2,
+      "text": "statement here if you look at the policy"
+    },
+    {
+      "start": 210.239,
+      "duration": 4.36,
+      "text": "properly there are three things effect"
+    },
+    {
+      "start": 212.439,
+      "duration": 4.08,
+      "text": "action and resource so effect is allow"
+    },
+    {
+      "start": 214.599,
+      "duration": 3.28,
+      "text": "which means it is allowing something so"
+    },
+    {
+      "start": 216.519,
+      "duration": 3.201,
+      "text": "it is allowing you to list bucket and"
+    },
+    {
+      "start": 217.879,
+      "duration": 3.321,
+      "text": "also the items inside the bucket only"
+    },
+    {
+      "start": 219.72,
+      "duration": 4.12,
+      "text": "for this particular bucket which is"
+    },
+    {
+      "start": 221.2,
+      "duration": 6.28,
+      "text": "company data and the second part of the"
+    },
+    {
+      "start": 223.84,
+      "duration": 6.24,
+      "text": "policy is saying allow running task on"
+    },
+    {
+      "start": 227.48,
+      "duration": 5.72,
+      "text": "this particular task definition only if"
+    },
+    {
+      "start": 230.08,
+      "duration": 4.879,
+      "text": "you have Arn equals to this Arn in aw"
+    },
+    {
+      "start": 233.2,
+      "duration": 3.879,
+      "text": "stands for Amazon resource name and it"
+    },
+    {
+      "start": 234.959,
+      "duration": 4.241,
+      "text": "is given to every particular identity in"
+    },
+    {
+      "start": 237.079,
+      "duration": 3.761,
+      "text": "AWS so the second part of the policy is"
+    },
+    {
+      "start": 239.2,
+      "duration": 3.56,
+      "text": "saying you allowed to run task on this"
+    },
+    {
+      "start": 240.84,
+      "duration": 5.08,
+      "text": "particular task definition which have a"
+    },
+    {
+      "start": 242.76,
+      "duration": 5.28,
+      "text": "prefix update tables only if you have AR"
+    },
+    {
+      "start": 245.92,
+      "duration": 3.959,
+      "text": "in this and if you don't understand you"
+    },
+    {
+      "start": 248.04,
+      "duration": 4.36,
+      "text": "can go ahead and read this by pausing"
+    },
+    {
+      "start": 249.879,
+      "duration": 4.36,
+      "text": "the video moving moving on let's go to"
+    },
+    {
+      "start": 252.4,
+      "duration": 3.559,
+      "text": "the next question the next question is"
+    },
+    {
+      "start": 254.239,
+      "duration": 3.761,
+      "text": "how do you secure sensitive information"
+    },
+    {
+      "start": 255.959,
+      "duration": 5.12,
+      "text": "such as API Keys passwords and other"
+    },
+    {
+      "start": 258.0,
+      "duration": 5.12,
+      "text": "credentials in cicd Pipeline on AWS so"
+    },
+    {
+      "start": 261.079,
+      "duration": 4.281,
+      "text": "on AWS you can create cicd pipelines"
+    },
+    {
+      "start": 263.12,
+      "duration": 5.0,
+      "text": "using tools using services like code"
+    },
+    {
+      "start": 265.36,
+      "duration": 4.399,
+      "text": "pipeline code build code commit and it"
+    },
+    {
+      "start": 268.12,
+      "duration": 3.639,
+      "text": "is very important for you to have a"
+    },
+    {
+      "start": 269.759,
+      "duration": 3.88,
+      "text": "secure pipeline where you don't put your"
+    },
+    {
+      "start": 271.759,
+      "duration": 4.521,
+      "text": "passwords your API keys inside the"
+    },
+    {
+      "start": 273.639,
+      "duration": 4.201,
+      "text": "pipeline hardcoded so what you can do"
+    },
+    {
+      "start": 276.28,
+      "duration": 3.919,
+      "text": "being a good devops engineer you should"
+    },
+    {
+      "start": 277.84,
+      "duration": 4.68,
+      "text": "be storing your API keys or passwords or"
+    },
+    {
+      "start": 280.199,
+      "duration": 4.881,
+      "text": "any secrets in tools or services like"
+    },
+    {
+      "start": 282.52,
+      "duration": 5.16,
+      "text": "secret sper so using secret sper you can"
+    },
+    {
+      "start": 285.08,
+      "duration": 4.8,
+      "text": "easily create uh secrets you can rotate"
+    },
+    {
+      "start": 287.68,
+      "duration": 4.12,
+      "text": "them or also give access so you should"
+    },
+    {
+      "start": 289.88,
+      "duration": 4.879,
+      "text": "always store your passwords or your"
+    },
+    {
+      "start": 291.8,
+      "duration": 5.6,
+      "text": "database credentials or anything inside"
+    },
+    {
+      "start": 294.759,
+      "duration": 3.961,
+      "text": "Secrets manager once you put your"
+    },
+    {
+      "start": 297.4,
+      "duration": 5.28,
+      "text": "passwords here you should be giving"
+    },
+    {
+      "start": 298.72,
+      "duration": 6.64,
+      "text": "access to cic services using IM am rule"
+    },
+    {
+      "start": 302.68,
+      "duration": 4.6,
+      "text": "so this is how you can secure your apis"
+    },
+    {
+      "start": 305.36,
+      "duration": 4.399,
+      "text": "and passwords rather than hardcoding"
+    },
+    {
+      "start": 307.28,
+      "duration": 4.4,
+      "text": "them you can look at the answer here so"
+    },
+    {
+      "start": 309.759,
+      "duration": 4.121,
+      "text": "you can use AWS Secrets manager or"
+    },
+    {
+      "start": 311.68,
+      "duration": 4.76,
+      "text": "parameter store to store your secrets"
+    },
+    {
+      "start": 313.88,
+      "duration": 4.64,
+      "text": "like API skis passwords and then use IM"
+    },
+    {
+      "start": 316.44,
+      "duration": 4.36,
+      "text": "rules for cic services so they can"
+    },
+    {
+      "start": 318.52,
+      "duration": 5.0,
+      "text": "access these secrets present inside"
+    },
+    {
+      "start": 320.8,
+      "duration": 4.64,
+      "text": "Secrets manager you should always rotate"
+    },
+    {
+      "start": 323.52,
+      "duration": 4.679,
+      "text": "secrets you can make sure that the"
+    },
+    {
+      "start": 325.44,
+      "duration": 4.759,
+      "text": "secrets are changed every 10 days or 30"
+    },
+    {
+      "start": 328.199,
+      "duration": 4.44,
+      "text": "days according to you you should also"
+    },
+    {
+      "start": 330.199,
+      "duration": 4.521,
+      "text": "encrypt data using KMS keys in AWS you"
+    },
+    {
+      "start": 332.639,
+      "duration": 4.041,
+      "text": "have key KMS or key management system"
+    },
+    {
+      "start": 334.72,
+      "duration": 4.28,
+      "text": "service that lets you encrypt data at"
+    },
+    {
+      "start": 336.68,
+      "duration": 4.6,
+      "text": "rest also in transit and you should also"
+    },
+    {
+      "start": 339.0,
+      "duration": 4.56,
+      "text": "enable audit access such that if anyone"
+    },
+    {
+      "start": 341.28,
+      "duration": 4.039,
+      "text": "is changing or secrets you should be"
+    },
+    {
+      "start": 343.56,
+      "duration": 3.28,
+      "text": "notified you can do that using cloud"
+    },
+    {
+      "start": 345.319,
+      "duration": 4.32,
+      "text": "trail which is a service that lets you"
+    },
+    {
+      "start": 346.84,
+      "duration": 5.479,
+      "text": "audit or also note down what changes"
+    },
+    {
+      "start": 349.639,
+      "duration": 4.521,
+      "text": "have been made by which particular user"
+    },
+    {
+      "start": 352.319,
+      "duration": 3.72,
+      "text": "so this is how you can secure sensitive"
+    },
+    {
+      "start": 354.16,
+      "duration": 4.319,
+      "text": "information rather than hardcoding them"
+    },
+    {
+      "start": 356.039,
+      "duration": 4.921,
+      "text": "in the code or in your pipeline"
+    },
+    {
+      "start": 358.479,
+      "duration": 4.28,
+      "text": "script moving on the next question is"
+    },
+    {
+      "start": 360.96,
+      "duration": 4.079,
+      "text": "name some AWS Services which are not"
+    },
+    {
+      "start": 362.759,
+      "duration": 4.72,
+      "text": "region specific so if you look at AWS"
+    },
+    {
+      "start": 365.039,
+      "duration": 4.321,
+      "text": "Services here every service has a region"
+    },
+    {
+      "start": 367.479,
+      "duration": 3.72,
+      "text": "here so we can select what region do you"
+    },
+    {
+      "start": 369.36,
+      "duration": 3.44,
+      "text": "want to work on so I am right now in"
+    },
+    {
+      "start": 371.199,
+      "duration": 3.56,
+      "text": "North Virginia for the aw Secrets"
+    },
+    {
+      "start": 372.8,
+      "duration": 4.0,
+      "text": "manager so anything I create inside this"
+    },
+    {
+      "start": 374.759,
+      "duration": 3.321,
+      "text": "region will only be present here but"
+    },
+    {
+      "start": 376.8,
+      "duration": 3.48,
+      "text": "there are few Services which are not"
+    },
+    {
+      "start": 378.08,
+      "duration": 4.559,
+      "text": "region scoped and they are Global such"
+    },
+    {
+      "start": 380.28,
+      "duration": 4.72,
+      "text": "as Im so I IM you do not have option to"
+    },
+    {
+      "start": 382.639,
+      "duration": 3.721,
+      "text": "select this region right now you can see"
+    },
+    {
+      "start": 385.0,
+      "duration": 3.199,
+      "text": "it's Global and everything is blurred"
+    },
+    {
+      "start": 386.36,
+      "duration": 4.72,
+      "text": "out similar to IM IM you also have"
+    },
+    {
+      "start": 388.199,
+      "duration": 4.72,
+      "text": "Amazon Route 53 and AWS cloudfront which"
+    },
+    {
+      "start": 391.08,
+      "duration": 4.239,
+      "text": "are some examples of AWS services that"
+    },
+    {
+      "start": 392.919,
+      "duration": 5.0,
+      "text": "are not region specific they are global"
+    },
+    {
+      "start": 395.319,
+      "duration": 4.28,
+      "text": "Service the next question is describe"
+    },
+    {
+      "start": 397.919,
+      "duration": 4.241,
+      "text": "the key difference between Amazon ec2"
+    },
+    {
+      "start": 399.599,
+      "duration": 5.04,
+      "text": "and AWS Lambda when would you choose one"
+    },
+    {
+      "start": 402.16,
+      "duration": 4.319,
+      "text": "over the other for a specific task so if"
+    },
+    {
+      "start": 404.639,
+      "duration": 4.4,
+      "text": "you go to AWS dashboard and select the"
+    },
+    {
+      "start": 406.479,
+      "duration": 5.801,
+      "text": "compute section you will see ec2 and"
+    },
+    {
+      "start": 409.039,
+      "duration": 5.081,
+      "text": "Lambda are both compute services in AWS"
+    },
+    {
+      "start": 412.28,
+      "duration": 3.639,
+      "text": "ec2 lets you create virtual servers in"
+    },
+    {
+      "start": 414.12,
+      "duration": 4.079,
+      "text": "the cloud whereas Lambda lets you run"
+    },
+    {
+      "start": 415.919,
+      "duration": 3.56,
+      "text": "code without thinking about servers so"
+    },
+    {
+      "start": 418.199,
+      "duration": 3.161,
+      "text": "this is a serverless service where you"
+    },
+    {
+      "start": 419.479,
+      "duration": 3.56,
+      "text": "don't need to create any servers so you"
+    },
+    {
+      "start": 421.36,
+      "duration": 4.0,
+      "text": "will be using ac2 whenever you want to"
+    },
+    {
+      "start": 423.039,
+      "duration": 4.241,
+      "text": "have a server created for example maybe"
+    },
+    {
+      "start": 425.36,
+      "duration": 3.6,
+      "text": "setting up your website or setting up a"
+    },
+    {
+      "start": 427.28,
+      "duration": 2.919,
+      "text": "database server whereas you will be"
+    },
+    {
+      "start": 428.96,
+      "duration": 3.239,
+      "text": "using Lambda whenever you want to"
+    },
+    {
+      "start": 430.199,
+      "duration": 4.12,
+      "text": "execute something for a short duration"
+    },
+    {
+      "start": 432.199,
+      "duration": 3.961,
+      "text": "without managing any server some of the"
+    },
+    {
+      "start": 434.319,
+      "duration": 4.0,
+      "text": "examples could be here so if you see"
+    },
+    {
+      "start": 436.16,
+      "duration": 4.24,
+      "text": "Amazon ec2 provides virtual servers that"
+    },
+    {
+      "start": 438.319,
+      "duration": 4.801,
+      "text": "you can manage by later Bas Lambda runs"
+    },
+    {
+      "start": 440.4,
+      "duration": 5.079,
+      "text": "code in response to events and it scales"
+    },
+    {
+      "start": 443.12,
+      "duration": 3.88,
+      "text": "automatically choose E2 for log running"
+    },
+    {
+      "start": 445.479,
+      "duration": 3.28,
+      "text": "task or where you need more control over"
+    },
+    {
+      "start": 447.0,
+      "duration": 3.879,
+      "text": "the environment for example hosting a"
+    },
+    {
+      "start": 448.759,
+      "duration": 3.961,
+      "text": "website or running a database server"
+    },
+    {
+      "start": 450.879,
+      "duration": 3.72,
+      "text": "whereas Lambda can be used whenever you"
+    },
+    {
+      "start": 452.72,
+      "duration": 4.08,
+      "text": "want to have event driven short lift"
+    },
+    {
+      "start": 454.599,
+      "duration": 4.32,
+      "text": "task with automatic skill example could"
+    },
+    {
+      "start": 456.8,
+      "duration": 4.16,
+      "text": "be you want to update a record in a"
+    },
+    {
+      "start": 458.919,
+      "duration": 3.881,
+      "text": "database whenever you update whenever"
+    },
+    {
+      "start": 460.96,
+      "duration": 4.079,
+      "text": "you upload something on S3 so when you"
+    },
+    {
+      "start": 462.8,
+      "duration": 4.04,
+      "text": "upload something on S3 you can enable S3"
+    },
+    {
+      "start": 465.039,
+      "duration": 4.041,
+      "text": "even notification which will run a"
+    },
+    {
+      "start": 466.84,
+      "duration": 4.52,
+      "text": "Lambda and put the records in Dynamo DB"
+    },
+    {
+      "start": 469.08,
+      "duration": 4.399,
+      "text": "or any database so this could be managed"
+    },
+    {
+      "start": 471.36,
+      "duration": 4.279,
+      "text": "using Lambda for example processing"
+    },
+    {
+      "start": 473.479,
+      "duration": 4.44,
+      "text": "event driven action such as file uploads"
+    },
+    {
+      "start": 475.639,
+      "duration": 3.84,
+      "text": "database updates or API request here is"
+    },
+    {
+      "start": 477.919,
+      "duration": 4.201,
+      "text": "a table that will provide you more"
+    },
+    {
+      "start": 479.479,
+      "duration": 4.801,
+      "text": "information on difference between ac2 L"
+    },
+    {
+      "start": 482.12,
+      "duration": 4.72,
+      "text": "Lambda and when to use"
+    },
+    {
+      "start": 484.28,
+      "duration": 4.16,
+      "text": "it the next question is on cloud"
+    },
+    {
+      "start": 486.84,
+      "duration": 3.68,
+      "text": "formation the cloud formation template"
+    },
+    {
+      "start": 488.44,
+      "duration": 3.4,
+      "text": "has an error that you have committed"
+    },
+    {
+      "start": 490.52,
+      "duration": 3.2,
+      "text": "what could happen as a result of the"
+    },
+    {
+      "start": 491.84,
+      "duration": 4.4,
+      "text": "error and how would you correct it so"
+    },
+    {
+      "start": 493.72,
+      "duration": 4.759,
+      "text": "cloud formation in AWS is a service that"
+    },
+    {
+      "start": 496.24,
+      "duration": 5.04,
+      "text": "lets you create resources like ec2 S3"
+    },
+    {
+      "start": 498.479,
+      "duration": 4.72,
+      "text": "RDS and many others by defining them in"
+    },
+    {
+      "start": 501.28,
+      "duration": 4.72,
+      "text": "the code so it's an infrastructure ased"
+    },
+    {
+      "start": 503.199,
+      "duration": 4.321,
+      "text": "code service what will happen if you if"
+    },
+    {
+      "start": 506.0,
+      "duration": 3.24,
+      "text": "you made an error in the template and"
+    },
+    {
+      "start": 507.52,
+      "duration": 3.44,
+      "text": "then you commit it if you made an error"
+    },
+    {
+      "start": 509.24,
+      "duration": 3.56,
+      "text": "when you commit it either it will not"
+    },
+    {
+      "start": 510.96,
+      "duration": 3.999,
+      "text": "run if it is running it will not create"
+    },
+    {
+      "start": 512.8,
+      "duration": 4.08,
+      "text": "the resources carefully and there might"
+    },
+    {
+      "start": 514.959,
+      "duration": 3.52,
+      "text": "be a security issue so how can you solve"
+    },
+    {
+      "start": 516.88,
+      "duration": 3.48,
+      "text": "this you can solve this following all"
+    },
+    {
+      "start": 518.479,
+      "duration": 4.04,
+      "text": "the steps here so you should first"
+    },
+    {
+      "start": 520.36,
+      "duration": 4.479,
+      "text": "identify what the error is by running"
+    },
+    {
+      "start": 522.519,
+      "duration": 3.961,
+      "text": "AWS cloud formation discri command so"
+    },
+    {
+      "start": 524.839,
+      "duration": 3.56,
+      "text": "you can check where the error is once"
+    },
+    {
+      "start": 526.48,
+      "duration": 3.4,
+      "text": "you find the error you can change it and"
+    },
+    {
+      "start": 528.399,
+      "duration": 3.201,
+      "text": "then you can validate your template by"
+    },
+    {
+      "start": 529.88,
+      "duration": 3.639,
+      "text": "running AWS cloud formation validate"
+    },
+    {
+      "start": 531.6,
+      "duration": 3.56,
+      "text": "command next if you want to check what"
+    },
+    {
+      "start": 533.519,
+      "duration": 3.641,
+      "text": "is going to happen after you made the"
+    },
+    {
+      "start": 535.16,
+      "duration": 3.84,
+      "text": "change you can run the change sets"
+    },
+    {
+      "start": 537.16,
+      "duration": 3.52,
+      "text": "command to preview what changes is going"
+    },
+    {
+      "start": 539.0,
+      "duration": 3.2,
+      "text": "to Happ happen and once everything is"
+    },
+    {
+      "start": 540.68,
+      "duration": 3.96,
+      "text": "okay you can go ahead and deploy your"
+    },
+    {
+      "start": 542.2,
+      "duration": 4.36,
+      "text": "updated template by running AWS cloud"
+    },
+    {
+      "start": 544.64,
+      "duration": 3.439,
+      "text": "formation deployer so this is very"
+    },
+    {
+      "start": 546.56,
+      "duration": 3.719,
+      "text": "important to know because many companies"
+    },
+    {
+      "start": 548.079,
+      "duration": 4.681,
+      "text": "use cloud formation to deploy resources"
+    },
+    {
+      "start": 550.279,
+      "duration": 4.361,
+      "text": "on AWS I have many clients who use a"
+    },
+    {
+      "start": 552.76,
+      "duration": 3.639,
+      "text": "cloud formation although I told them"
+    },
+    {
+      "start": 554.64,
+      "duration": 3.52,
+      "text": "that terraform is better but they have"
+    },
+    {
+      "start": 556.399,
+      "duration": 3.56,
+      "text": "all the resources on AWS so they choose"
+    },
+    {
+      "start": 558.16,
+      "duration": 3.359,
+      "text": "to use cloud formation so you should be"
+    },
+    {
+      "start": 559.959,
+      "duration": 4.041,
+      "text": "having knowledge of cloud formation"
+    },
+    {
+      "start": 561.519,
+      "duration": 5.121,
+      "text": "whenever sitting for AWS interviews"
+    },
+    {
+      "start": 564.0,
+      "duration": 5.2,
+      "text": "moving on the next question is in VPC"
+    },
+    {
+      "start": 566.64,
+      "duration": 4.36,
+      "text": "with private and public subnets database"
+    },
+    {
+      "start": 569.2,
+      "duration": 4.319,
+      "text": "server should ideally be launched into"
+    },
+    {
+      "start": 571.0,
+      "duration": 4.04,
+      "text": "which subnet this is actually very easy"
+    },
+    {
+      "start": 573.519,
+      "duration": 4.041,
+      "text": "question but you should be answering"
+    },
+    {
+      "start": 575.04,
+      "duration": 4.32,
+      "text": "this carefully and also stating why uh"
+    },
+    {
+      "start": 577.56,
+      "duration": 4.36,
+      "text": "why you going to deploy your database in"
+    },
+    {
+      "start": 579.36,
+      "duration": 4.64,
+      "text": "either private or public so database"
+    },
+    {
+      "start": 581.92,
+      "duration": 4.56,
+      "text": "server should always be deployed in"
+    },
+    {
+      "start": 584.0,
+      "duration": 4.839,
+      "text": "private subnets because private subnets"
+    },
+    {
+      "start": 586.48,
+      "duration": 3.84,
+      "text": "don't have internet access so users on"
+    },
+    {
+      "start": 588.839,
+      "duration": 3.321,
+      "text": "the internet cannot directly talk to"
+    },
+    {
+      "start": 590.32,
+      "duration": 4.04,
+      "text": "your databases in private subnet you"
+    },
+    {
+      "start": 592.16,
+      "duration": 5.119,
+      "text": "will have to use uh net gateways or net"
+    },
+    {
+      "start": 594.36,
+      "duration": 4.919,
+      "text": "instances so database server should e be"
+    },
+    {
+      "start": 597.279,
+      "duration": 4.56,
+      "text": "lodged into private subnets this this"
+    },
+    {
+      "start": 599.279,
+      "duration": 4.68,
+      "text": "ensures enhanced security by restricting"
+    },
+    {
+      "start": 601.839,
+      "duration": 4.281,
+      "text": "direct access from the internet and also"
+    },
+    {
+      "start": 603.959,
+      "duration": 3.761,
+      "text": "allows tighter control over the network"
+    },
+    {
+      "start": 606.12,
+      "duration": 3.68,
+      "text": "access using security measures like"
+    },
+    {
+      "start": 607.72,
+      "duration": 4.44,
+      "text": "security group or NS so here is a"
+    },
+    {
+      "start": 609.8,
+      "duration": 4.32,
+      "text": "diagram which explains that RDS is in"
+    },
+    {
+      "start": 612.16,
+      "duration": 5.6,
+      "text": "private subnet and you can access it"
+    },
+    {
+      "start": 614.12,
+      "duration": 6.56,
+      "text": "through Bastian host or n instances"
+    },
+    {
+      "start": 617.76,
+      "duration": 4.48,
+      "text": "here moving on the next question is how"
+    },
+    {
+      "start": 620.68,
+      "duration": 3.88,
+      "text": "do you choose the right database service"
+    },
+    {
+      "start": 622.24,
+      "duration": 4.44,
+      "text": "in AWS for a specific applications"
+    },
+    {
+      "start": 624.56,
+      "duration": 3.839,
+      "text": "requirement tell a little bit more about"
+    },
+    {
+      "start": 626.68,
+      "duration": 4.0,
+      "text": "your experience so this is also a"
+    },
+    {
+      "start": 628.399,
+      "duration": 4.12,
+      "text": "scenario based question or maybe your"
+    },
+    {
+      "start": 630.68,
+      "duration": 3.68,
+      "text": "past experience question so how would"
+    },
+    {
+      "start": 632.519,
+      "duration": 4.12,
+      "text": "you choose the right database service in"
+    },
+    {
+      "start": 634.36,
+      "duration": 4.52,
+      "text": "AWS so in AWS there are many different"
+    },
+    {
+      "start": 636.639,
+      "duration": 5.0,
+      "text": "Services just for databases you could"
+    },
+    {
+      "start": 638.88,
+      "duration": 6.0,
+      "text": "see you have document DB D DB elastic C"
+    },
+    {
+      "start": 641.639,
+      "duration": 5.32,
+      "text": "and all those here RDS is manage"
+    },
+    {
+      "start": 644.88,
+      "duration": 3.399,
+      "text": "relational database service so first"
+    },
+    {
+      "start": 646.959,
+      "duration": 3.12,
+      "text": "thing is to check what is your"
+    },
+    {
+      "start": 648.279,
+      "duration": 3.601,
+      "text": "application requirement what kind of"
+    },
+    {
+      "start": 650.079,
+      "duration": 3.241,
+      "text": "data is your application holding if your"
+    },
+    {
+      "start": 651.88,
+      "duration": 4.519,
+      "text": "application is holding relational kind"
+    },
+    {
+      "start": 653.32,
+      "duration": 5.04,
+      "text": "of data or SQL data you can go with RDS"
+    },
+    {
+      "start": 656.399,
+      "duration": 6.56,
+      "text": "that lets you create SQL databases like"
+    },
+    {
+      "start": 658.36,
+      "duration": 7.52,
+      "text": "MySQL post SQL uh IBM D2 IBM database"
+    },
+    {
+      "start": 662.959,
+      "duration": 5.641,
+      "text": "and others so you can use RDS whenever"
+    },
+    {
+      "start": 665.88,
+      "duration": 4.88,
+      "text": "you have a relational database um"
+    },
+    {
+      "start": 668.6,
+      "duration": 4.0,
+      "text": "relational data similarly if you have a"
+    },
+    {
+      "start": 670.76,
+      "duration": 3.519,
+      "text": "non- relational kind of data where which"
+    },
+    {
+      "start": 672.6,
+      "duration": 4.88,
+      "text": "you need to scale automatically you"
+    },
+    {
+      "start": 674.279,
+      "duration": 5.401,
+      "text": "should go with Dio DB which is a no SQL"
+    },
+    {
+      "start": 677.48,
+      "duration": 4.76,
+      "text": "database and it's uh it can scale up"
+    },
+    {
+      "start": 679.68,
+      "duration": 3.88,
+      "text": "very easily so you can see here RDS is"
+    },
+    {
+      "start": 682.24,
+      "duration": 3.88,
+      "text": "ideal for applications that require"
+    },
+    {
+      "start": 683.56,
+      "duration": 4.519,
+      "text": "traditional relational database uh and"
+    },
+    {
+      "start": 686.12,
+      "duration": 4.44,
+      "text": "for standard SQL support transaction and"
+    },
+    {
+      "start": 688.079,
+      "duration": 4.241,
+      "text": "complex queries whereas tyo DB suits"
+    },
+    {
+      "start": 690.56,
+      "duration": 4.279,
+      "text": "application needing a highly scalable"
+    },
+    {
+      "start": 692.32,
+      "duration": 4.28,
+      "text": "nosql database with fast predictable"
+    },
+    {
+      "start": 694.839,
+      "duration": 3.0,
+      "text": "performance at any scale then you have"
+    },
+    {
+      "start": 696.6,
+      "duration": 2.64,
+      "text": "Amazon red shift when you have huge"
+    },
+    {
+      "start": 697.839,
+      "duration": 3.201,
+      "text": "amount of data and you want to learn"
+    },
+    {
+      "start": 699.24,
+      "duration": 3.92,
+      "text": "complex queries on it you can go with"
+    },
+    {
+      "start": 701.04,
+      "duration": 4.28,
+      "text": "Aon red shift similarly there are also"
+    },
+    {
+      "start": 703.16,
+      "duration": 4.04,
+      "text": "other services or other database"
+    },
+    {
+      "start": 705.32,
+      "duration": 5.04,
+      "text": "services like elastic C which is an"
+    },
+    {
+      "start": 707.2,
+      "duration": 5.12,
+      "text": "inmemory database you have uh key spaces"
+    },
+    {
+      "start": 710.36,
+      "duration": 5.64,
+      "text": "which are which is similar to Cassandra"
+    },
+    {
+      "start": 712.32,
+      "duration": 6.04,
+      "text": "document DB similar to MB uh and so on"
+    },
+    {
+      "start": 716.0,
+      "duration": 4.32,
+      "text": "so this is how you can answer it if the"
+    },
+    {
+      "start": 718.36,
+      "duration": 5.64,
+      "text": "application require SQL database you can"
+    },
+    {
+      "start": 720.32,
+      "duration": 6.04,
+      "text": "go with RDS if it requires non-sql"
+    },
+    {
+      "start": 724.0,
+      "duration": 4.48,
+      "text": "database you can go and use D modp or"
+    },
+    {
+      "start": 726.36,
+      "duration": 3.8,
+      "text": "you can use right shift when you have"
+    },
+    {
+      "start": 728.48,
+      "duration": 4.4,
+      "text": "your remount of data with that being"
+    },
+    {
+      "start": 730.16,
+      "duration": 4.4,
+      "text": "said you can also use ec2 instances to"
+    },
+    {
+      "start": 732.88,
+      "duration": 4.12,
+      "text": "install any kind of data these are all"
+    },
+    {
+      "start": 734.56,
+      "duration": 4.12,
+      "text": "AWS marage service so you're using this"
+    },
+    {
+      "start": 737.0,
+      "duration": 3.839,
+      "text": "but you can also use ec2 to install"
+    },
+    {
+      "start": 738.68,
+      "duration": 4.64,
+      "text": "MySQL or postgress what would be any"
+    },
+    {
+      "start": 740.839,
+      "duration": 4.12,
+      "text": "kind of database you want the next"
+    },
+    {
+      "start": 743.32,
+      "duration": 3.4,
+      "text": "question is explain the concept of Autos"
+    },
+    {
+      "start": 744.959,
+      "duration": 4.44,
+      "text": "scaling and how it can be implemented in"
+    },
+    {
+      "start": 746.72,
+      "duration": 5.6,
+      "text": "ews to handle fluctuating workloads so"
+    },
+    {
+      "start": 749.399,
+      "duration": 4.56,
+      "text": "Autos scaling in AWS means automatically"
+    },
+    {
+      "start": 752.32,
+      "duration": 3.8,
+      "text": "scaling up your instances or your"
+    },
+    {
+      "start": 753.959,
+      "duration": 5.041,
+      "text": "servers or also deleting them whenever"
+    },
+    {
+      "start": 756.12,
+      "duration": 4.64,
+      "text": "you don't need it AWS has Autos Skilling"
+    },
+    {
+      "start": 759.0,
+      "duration": 3.36,
+      "text": "feature and you can use this whenever"
+    },
+    {
+      "start": 760.76,
+      "duration": 3.199,
+      "text": "you have increasing traffic or"
+    },
+    {
+      "start": 762.36,
+      "duration": 4.159,
+      "text": "unpredictable"
+    },
+    {
+      "start": 763.959,
+      "duration": 4.761,
+      "text": "workloads using AWS Autos Skilling you"
+    },
+    {
+      "start": 766.519,
+      "duration": 3.801,
+      "text": "can easily create or delete servers when"
+    },
+    {
+      "start": 768.72,
+      "duration": 4.239,
+      "text": "you don't need them you can see Autos"
+    },
+    {
+      "start": 770.32,
+      "duration": 4.16,
+      "text": "Skilling is here and Autos Skilling"
+    },
+    {
+      "start": 772.959,
+      "duration": 3.32,
+      "text": "helps maintain the availability of your"
+    },
+    {
+      "start": 774.48,
+      "duration": 4.599,
+      "text": "applications in this you can set up a"
+    },
+    {
+      "start": 776.279,
+      "duration": 5.401,
+      "text": "parameter let's say 50% of traffic if my"
+    },
+    {
+      "start": 779.079,
+      "duration": 4.721,
+      "text": "server uh has 50% of traffic create"
+    },
+    {
+      "start": 781.68,
+      "duration": 5.719,
+      "text": "another server if it is less than 20%"
+    },
+    {
+      "start": 783.8,
+      "duration": 5.12,
+      "text": "delete the server something like this so"
+    },
+    {
+      "start": 787.399,
+      "duration": 3.281,
+      "text": "Autos scaling automatically adjusts the"
+    },
+    {
+      "start": 788.92,
+      "duration": 3.84,
+      "text": "number of instances in a group based on"
+    },
+    {
+      "start": 790.68,
+      "duration": 4.04,
+      "text": "demand it can be implemented in AWS"
+    },
+    {
+      "start": 792.76,
+      "duration": 3.639,
+      "text": "using services like Autos scaling Group"
+    },
+    {
+      "start": 794.72,
+      "duration": 3.679,
+      "text": "which dynamically adjust capacity to"
+    },
+    {
+      "start": 796.399,
+      "duration": 3.521,
+      "text": "maintain performance and reduce cost you"
+    },
+    {
+      "start": 798.399,
+      "duration": 3.281,
+      "text": "can see a diagram here which explains"
+    },
+    {
+      "start": 799.92,
+      "duration": 3.479,
+      "text": "how Autos scaling works so you can have"
+    },
+    {
+      "start": 801.68,
+      "duration": 4.12,
+      "text": "desired capacity and you can set the"
+    },
+    {
+      "start": 803.399,
+      "duration": 4.161,
+      "text": "maximum size or minimum size depending"
+    },
+    {
+      "start": 805.8,
+      "duration": 4.719,
+      "text": "on how much service you want all the"
+    },
+    {
+      "start": 807.56,
+      "duration": 5.839,
+      "text": "time let's move to the next question"
+    },
+    {
+      "start": 810.519,
+      "duration": 4.281,
+      "text": "explain can you vertically scale on"
+    },
+    {
+      "start": 813.399,
+      "duration": 3.721,
+      "text": "explain can you vertically scale on"
+    },
+    {
+      "start": 814.8,
+      "duration": 3.92,
+      "text": "Amazon instance how so scalability are"
+    },
+    {
+      "start": 817.12,
+      "duration": 3.399,
+      "text": "of two types vertical scaling and"
+    },
+    {
+      "start": 818.72,
+      "duration": 4.359,
+      "text": "horizontal scaling vertical scaling"
+    },
+    {
+      "start": 820.519,
+      "duration": 4.56,
+      "text": "means increasing the power which is CPU"
+    },
+    {
+      "start": 823.079,
+      "duration": 4.281,
+      "text": "and memory horizontal scaling means"
+    },
+    {
+      "start": 825.079,
+      "duration": 3.88,
+      "text": "increasing the number of servers so in"
+    },
+    {
+      "start": 827.36,
+      "duration": 4.12,
+      "text": "this question it is asking can you"
+    },
+    {
+      "start": 828.959,
+      "duration": 4.56,
+      "text": "vertically scale an Aon instance if yes"
+    },
+    {
+      "start": 831.48,
+      "duration": 4.039,
+      "text": "how let me show you how you can do that"
+    },
+    {
+      "start": 833.519,
+      "duration": 3.68,
+      "text": "so if you go to instances here in the"
+    },
+    {
+      "start": 835.519,
+      "duration": 3.481,
+      "text": "instances right now I have one instance"
+    },
+    {
+      "start": 837.199,
+      "duration": 3.361,
+      "text": "which is Docker and it is inst stop"
+    },
+    {
+      "start": 839.0,
+      "duration": 3.279,
+      "text": "State whenever you want to vertically"
+    },
+    {
+      "start": 840.56,
+      "duration": 3.24,
+      "text": "scale up make sure your instances are in"
+    },
+    {
+      "start": 842.279,
+      "duration": 3.441,
+      "text": "stop State and you can do that by"
+    },
+    {
+      "start": 843.8,
+      "duration": 3.959,
+      "text": "selecting it going to the instance tape"
+    },
+    {
+      "start": 845.72,
+      "duration": 3.52,
+      "text": "and stopping it my instance is already"
+    },
+    {
+      "start": 847.759,
+      "duration": 3.0,
+      "text": "in stop state so I'm going to click on"
+    },
+    {
+      "start": 849.24,
+      "duration": 3.279,
+      "text": "actions here and I'm going to click on"
+    },
+    {
+      "start": 850.759,
+      "duration": 3.801,
+      "text": "instance settings in here you have"
+    },
+    {
+      "start": 852.519,
+      "duration": 4.201,
+      "text": "change instance type once I click on"
+    },
+    {
+      "start": 854.56,
+      "duration": 4.04,
+      "text": "this I can choose right now it is T2"
+    },
+    {
+      "start": 856.72,
+      "duration": 3.88,
+      "text": "medium I can make it T2 large which is"
+    },
+    {
+      "start": 858.6,
+      "duration": 4.56,
+      "text": "vertically scaling from T2 medium to T2"
+    },
+    {
+      "start": 860.6,
+      "duration": 4.239,
+      "text": "large T2 medium has 4 GB Ram T2 large"
+    },
+    {
+      "start": 863.16,
+      "duration": 4.119,
+      "text": "will have 8 GB Ram which means I'm"
+    },
+    {
+      "start": 864.839,
+      "duration": 4.041,
+      "text": "increasing the power so let me show you"
+    },
+    {
+      "start": 867.279,
+      "duration": 5.56,
+      "text": "how to do that so I'm going to select to"
+    },
+    {
+      "start": 868.88,
+      "duration": 7.04,
+      "text": "large now and click on apply and this"
+    },
+    {
+      "start": 872.839,
+      "duration": 4.721,
+      "text": "will change my server from T to medium"
+    },
+    {
+      "start": 875.92,
+      "duration": 4.039,
+      "text": "to T2 large so this is how you can"
+    },
+    {
+      "start": 877.56,
+      "duration": 2.399,
+      "text": "vertically"
+    },
+    {
+      "start": 880.519,
+      "duration": 4.801,
+      "text": "scale next can a connection can a"
+    },
+    {
+      "start": 883.48,
+      "duration": 5.0,
+      "text": "connection be made between a company's"
+    },
+    {
+      "start": 885.32,
+      "duration": 4.959,
+      "text": "Data Center and Amazon Cloud if yes how"
+    },
+    {
+      "start": 888.48,
+      "duration": 3.88,
+      "text": "so this is very important question for"
+    },
+    {
+      "start": 890.279,
+      "duration": 3.601,
+      "text": "companies who are migrating uh you"
+    },
+    {
+      "start": 892.36,
+      "duration": 3.56,
+      "text": "should be knowing how to use different"
+    },
+    {
+      "start": 893.88,
+      "duration": 4.879,
+      "text": "services to connect the on promises data"
+    },
+    {
+      "start": 895.92,
+      "duration": 4.719,
+      "text": "center to AWS accounts so you can do"
+    },
+    {
+      "start": 898.759,
+      "duration": 3.921,
+      "text": "that using two very popular service one"
+    },
+    {
+      "start": 900.639,
+      "duration": 3.241,
+      "text": "is the direct connect option so using"
+    },
+    {
+      "start": 902.68,
+      "duration": 3.44,
+      "text": "Direct Connect you can connect to your"
+    },
+    {
+      "start": 903.88,
+      "duration": 4.48,
+      "text": "AWS accounts with your on devices data"
+    },
+    {
+      "start": 906.12,
+      "duration": 5.32,
+      "text": "center on a private Network which is not"
+    },
+    {
+      "start": 908.36,
+      "duration": 4.68,
+      "text": "connected to the internet so AWS Direct"
+    },
+    {
+      "start": 911.44,
+      "duration": 3.88,
+      "text": "Connect lets you establish a dedicated"
+    },
+    {
+      "start": 913.04,
+      "duration": 3.4,
+      "text": "network connection to AWS a dedicated"
+    },
+    {
+      "start": 915.32,
+      "duration": 2.959,
+      "text": "network connection which means it is"
+    },
+    {
+      "start": 916.44,
+      "duration": 4.04,
+      "text": "going to be private similar to this you"
+    },
+    {
+      "start": 918.279,
+      "duration": 3.521,
+      "text": "have VPN or virtual private Network"
+    },
+    {
+      "start": 920.48,
+      "duration": 4.52,
+      "text": "which lets which also provides a"
+    },
+    {
+      "start": 921.8,
+      "duration": 5.76,
+      "text": "connection between your uh dat account"
+    },
+    {
+      "start": 925.0,
+      "duration": 5.839,
+      "text": "and your data center but securely on the"
+    },
+    {
+      "start": 927.56,
+      "duration": 6.04,
+      "text": "internet so you can use VPN as well"
+    },
+    {
+      "start": 930.839,
+      "duration": 5.8,
+      "text": "which is here uh other use cases could"
+    },
+    {
+      "start": 933.6,
+      "duration": 6.039,
+      "text": "be if you want to share your data from"
+    },
+    {
+      "start": 936.639,
+      "duration": 5.041,
+      "text": "BPL from on promises to your AWS account"
+    },
+    {
+      "start": 939.639,
+      "duration": 3.921,
+      "text": "you can also use AWS storage Gateway"
+    },
+    {
+      "start": 941.68,
+      "duration": 5.0,
+      "text": "where you can connect your data center"
+    },
+    {
+      "start": 943.56,
+      "duration": 4.88,
+      "text": "with your AWS account so here is the"
+    },
+    {
+      "start": 946.68,
+      "duration": 3.2,
+      "text": "answer yes a connection can be made"
+    },
+    {
+      "start": 948.44,
+      "duration": 3.44,
+      "text": "using Direct Connect which is high"
+    },
+    {
+      "start": 949.88,
+      "duration": 3.759,
+      "text": "bandwidth link for private connection"
+    },
+    {
+      "start": 951.88,
+      "duration": 3.68,
+      "text": "and virtual private Network which is"
+    },
+    {
+      "start": 953.639,
+      "duration": 3.56,
+      "text": "encrypted connection over the Internet"
+    },
+    {
+      "start": 955.56,
+      "duration": 3.399,
+      "text": "so this is how you can create connection"
+    },
+    {
+      "start": 957.199,
+      "duration": 3.2,
+      "text": "and it is very important for you to know"
+    },
+    {
+      "start": 958.959,
+      "duration": 3.8,
+      "text": "because companies are looking for people"
+    },
+    {
+      "start": 960.399,
+      "duration": 4.721,
+      "text": "who know how to migrate stuff from one"
+    },
+    {
+      "start": 962.759,
+      "duration": 4.0,
+      "text": "devices to the cloud uh because this is"
+    },
+    {
+      "start": 965.12,
+      "duration": 4.6,
+      "text": "very common many companies have their"
+    },
+    {
+      "start": 966.759,
+      "duration": 4.681,
+      "text": "stuff on AWS as well as on premisis data"
+    },
+    {
+      "start": 969.72,
+      "duration": 2.599,
+      "text": "center which is also known as hybrid"
+    },
+    {
+      "start": 971.44,
+      "duration": 3.44,
+      "text": "Cloud"
+    },
+    {
+      "start": 972.319,
+      "duration": 4.401,
+      "text": "architecture next the question is"
+    },
+    {
+      "start": 974.88,
+      "duration": 4.519,
+      "text": "explain difference AWS services to"
+    },
+    {
+      "start": 976.72,
+      "duration": 4.679,
+      "text": "manage cost cost management is very very"
+    },
+    {
+      "start": 979.399,
+      "duration": 3.92,
+      "text": "important no company wants to spend more"
+    },
+    {
+      "start": 981.399,
+      "duration": 3.68,
+      "text": "than what they should be spending so you"
+    },
+    {
+      "start": 983.319,
+      "duration": 4.161,
+      "text": "need to know different aw services on"
+    },
+    {
+      "start": 985.079,
+      "duration": 4.32,
+      "text": "how to manage cost you can look that you"
+    },
+    {
+      "start": 987.48,
+      "duration": 3.96,
+      "text": "can check that out from uh the cloud"
+    },
+    {
+      "start": 989.399,
+      "duration": 3.24,
+      "text": "Financial Management Service here and"
+    },
+    {
+      "start": 991.44,
+      "duration": 2.959,
+      "text": "these are some of the services that you"
+    },
+    {
+      "start": 992.639,
+      "duration": 4.2,
+      "text": "can use inside billing and cost"
+    },
+    {
+      "start": 994.399,
+      "duration": 5.041,
+      "text": "management there are few very important"
+    },
+    {
+      "start": 996.839,
+      "duration": 4.841,
+      "text": "services that can help you manage and"
+    },
+    {
+      "start": 999.44,
+      "duration": 4.759,
+      "text": "manage cost uh you can see here the"
+    },
+    {
+      "start": 1001.68,
+      "duration": 3.8,
+      "text": "first is cost Explorer which provides"
+    },
+    {
+      "start": 1004.199,
+      "duration": 2.681,
+      "text": "you with information on how you are"
+    },
+    {
+      "start": 1005.48,
+      "duration": 3.12,
+      "text": "spending how much is going to be the"
+    },
+    {
+      "start": 1006.88,
+      "duration": 3.6,
+      "text": "forecast how much you'll be spending in"
+    },
+    {
+      "start": 1008.6,
+      "duration": 3.96,
+      "text": "the future uh and you can also change"
+    },
+    {
+      "start": 1010.48,
+      "duration": 3.76,
+      "text": "dimensions and dates according to your"
+    },
+    {
+      "start": 1012.56,
+      "duration": 4.16,
+      "text": "use case this will provide you how you"
+    },
+    {
+      "start": 1014.24,
+      "duration": 3.959,
+      "text": "are using stuff and then you can change"
+    },
+    {
+      "start": 1016.72,
+      "duration": 3.76,
+      "text": "or delete services if you don't need"
+    },
+    {
+      "start": 1018.199,
+      "duration": 3.801,
+      "text": "them similar to this is budgets you can"
+    },
+    {
+      "start": 1020.48,
+      "duration": 3.599,
+      "text": "create budgets to Define how much you"
+    },
+    {
+      "start": 1022.0,
+      "duration": 4.76,
+      "text": "want to spend rather than spending a lot"
+    },
+    {
+      "start": 1024.079,
+      "duration": 3.801,
+      "text": "of money so using budgets you can select"
+    },
+    {
+      "start": 1026.76,
+      "duration": 2.679,
+      "text": "how much you want to spend and whenever"
+    },
+    {
+      "start": 1027.88,
+      "duration": 3.6,
+      "text": "you spend more than that you get a"
+    },
+    {
+      "start": 1029.439,
+      "duration": 3.441,
+      "text": "notification on your mail so you can see"
+    },
+    {
+      "start": 1031.48,
+      "duration": 3.839,
+      "text": "I have created budgets which are"
+    },
+    {
+      "start": 1032.88,
+      "duration": 4.72,
+      "text": "exceeded and I get mails on my email"
+    },
+    {
+      "start": 1035.319,
+      "duration": 4.961,
+      "text": "ID similar to this there are also other"
+    },
+    {
+      "start": 1037.6,
+      "duration": 3.959,
+      "text": "services like trusted advisor which will"
+    },
+    {
+      "start": 1040.28,
+      "duration": 3.639,
+      "text": "provide you with the recommendations on"
+    },
+    {
+      "start": 1041.559,
+      "duration": 3.801,
+      "text": "things you should be doing to save cost"
+    },
+    {
+      "start": 1043.919,
+      "duration": 3.0,
+      "text": "you also have cost and usage reports"
+    },
+    {
+      "start": 1045.36,
+      "duration": 3.88,
+      "text": "that we have seen already and you can"
+    },
+    {
+      "start": 1046.919,
+      "duration": 3.921,
+      "text": "use aw Savings Plan to save money"
+    },
+    {
+      "start": 1049.24,
+      "duration": 3.96,
+      "text": "whenever you have a dedicated or a"
+    },
+    {
+      "start": 1050.84,
+      "duration": 5.0,
+      "text": "committed usage example could be using"
+    },
+    {
+      "start": 1053.2,
+      "duration": 4.4,
+      "text": "ec2 instances reserved instances which"
+    },
+    {
+      "start": 1055.84,
+      "duration": 3.839,
+      "text": "will let you save money if you use that"
+    },
+    {
+      "start": 1057.6,
+      "duration": 5.28,
+      "text": "instance for one year or for 3"
+    },
+    {
+      "start": 1059.679,
+      "duration": 4.681,
+      "text": "year moving on the next question is what"
+    },
+    {
+      "start": 1062.88,
+      "duration": 4.12,
+      "text": "is the difference between that Gateway"
+    },
+    {
+      "start": 1064.36,
+      "duration": 4.16,
+      "text": "and Nat instances why do we use them so"
+    },
+    {
+      "start": 1067.0,
+      "duration": 4.6,
+      "text": "Nat instances was something which was"
+    },
+    {
+      "start": 1068.52,
+      "duration": 4.84,
+      "text": "popular before Nat Gateway came into AWS"
+    },
+    {
+      "start": 1071.6,
+      "duration": 3.64,
+      "text": "but Nat Gateway and N instances are very"
+    },
+    {
+      "start": 1073.36,
+      "duration": 5.24,
+      "text": "same they both do the same thing which"
+    },
+    {
+      "start": 1075.24,
+      "duration": 5.439,
+      "text": "is to provide internet access to uh two"
+    },
+    {
+      "start": 1078.6,
+      "duration": 5.28,
+      "text": "servers in private subnet but Nat"
+    },
+    {
+      "start": 1080.679,
+      "duration": 5.24,
+      "text": "Gateway is AWS managed service you can"
+    },
+    {
+      "start": 1083.88,
+      "duration": 4.799,
+      "text": "go ahead and create n Gateway whereas n"
+    },
+    {
+      "start": 1085.919,
+      "duration": 4.24,
+      "text": "instances are on ec2 in or on ec2"
+    },
+    {
+      "start": 1088.679,
+      "duration": 5.041,
+      "text": "machines you need to install and"
+    },
+    {
+      "start": 1090.159,
+      "duration": 5.52,
+      "text": "configure them properly so n gway is"
+    },
+    {
+      "start": 1093.72,
+      "duration": 4.0,
+      "text": "managed by AWS it is highly performance"
+    },
+    {
+      "start": 1095.679,
+      "duration": 4.081,
+      "text": "and availability no Administration"
+    },
+    {
+      "start": 1097.72,
+      "duration": 4.28,
+      "text": "required whereas that instances a user"
+    },
+    {
+      "start": 1099.76,
+      "duration": 4.32,
+      "text": "managed tc2 instances requires manual"
+    },
+    {
+      "start": 1102.0,
+      "duration": 4.44,
+      "text": "scaling and Administration less scalable"
+    },
+    {
+      "start": 1104.08,
+      "duration": 4.56,
+      "text": "compared to that Gateway uh the use"
+    },
+    {
+      "start": 1106.44,
+      "duration": 4.239,
+      "text": "cases both enable outbound inter access"
+    },
+    {
+      "start": 1108.64,
+      "duration": 4.039,
+      "text": "for resources and private subnet andan"
+    },
+    {
+      "start": 1110.679,
+      "duration": 4.401,
+      "text": "security facilitate compliance and you"
+    },
+    {
+      "start": 1112.679,
+      "duration": 3.601,
+      "text": "also have a diagram or a table here that"
+    },
+    {
+      "start": 1115.08,
+      "duration": 3.479,
+      "text": "explains the difference between that"
+    },
+    {
+      "start": 1116.28,
+      "duration": 4.56,
+      "text": "Gateway and N instance you can see that"
+    },
+    {
+      "start": 1118.559,
+      "duration": 4.561,
+      "text": "Gateway has bandwidth up to 45 GB per"
+    },
+    {
+      "start": 1120.84,
+      "duration": 4.28,
+      "text": "second whereas bandwidth of n instance"
+    },
+    {
+      "start": 1123.12,
+      "duration": 4.28,
+      "text": "depends on what is the inel size if it"
+    },
+    {
+      "start": 1125.12,
+      "duration": 4.08,
+      "text": "is T2 large it will be good if it is t2x"
+    },
+    {
+      "start": 1127.4,
+      "duration": 4.0,
+      "text": "large it will be more so these are all"
+    },
+    {
+      "start": 1129.2,
+      "duration": 4.56,
+      "text": "the differences between Nat Gateway and"
+    },
+    {
+      "start": 1131.4,
+      "duration": 2.36,
+      "text": "Nat"
+    },
+    {
+      "start": 1133.799,
+      "duration": 4.36,
+      "text": "instances next the question is what are"
+    },
+    {
+      "start": 1135.84,
+      "duration": 3.8,
+      "text": "different ways to access AWS Services we"
+    },
+    {
+      "start": 1138.159,
+      "duration": 3.161,
+      "text": "have seen the first way is to use the"
+    },
+    {
+      "start": 1139.64,
+      "duration": 3.159,
+      "text": "Management console using Management"
+    },
+    {
+      "start": 1141.32,
+      "duration": 4.12,
+      "text": "console I can create Services I can"
+    },
+    {
+      "start": 1142.799,
+      "duration": 4.961,
+      "text": "delete services another way is using AWS"
+    },
+    {
+      "start": 1145.44,
+      "duration": 5.68,
+      "text": "CLI which is a command line tool so you"
+    },
+    {
+      "start": 1147.76,
+      "duration": 5.039,
+      "text": "can use AWS uh to do anything you want"
+    },
+    {
+      "start": 1151.12,
+      "duration": 3.439,
+      "text": "let's say if you want to do anything in"
+    },
+    {
+      "start": 1152.799,
+      "duration": 5.041,
+      "text": "S3 you can"
+    },
+    {
+      "start": 1154.559,
+      "duration": 6.081,
+      "text": "find if I do AWS S3 LS I can get the"
+    },
+    {
+      "start": 1157.84,
+      "duration": 5.28,
+      "text": "list of buckets in my account so AWS CLI"
+    },
+    {
+      "start": 1160.64,
+      "duration": 4.279,
+      "text": "is another way to access AWS Services"
+    },
+    {
+      "start": 1163.12,
+      "duration": 3.679,
+      "text": "similar to this is sdks or software"
+    },
+    {
+      "start": 1164.919,
+      "duration": 4.201,
+      "text": "development kits so if you know python"
+    },
+    {
+      "start": 1166.799,
+      "duration": 5.321,
+      "text": "you can also access or create AWS"
+    },
+    {
+      "start": 1169.12,
+      "duration": 5.4,
+      "text": "services using python um and the next so"
+    },
+    {
+      "start": 1172.12,
+      "duration": 4.2,
+      "text": "here are the here is the answer you can"
+    },
+    {
+      "start": 1174.52,
+      "duration": 3.84,
+      "text": "use AWS console which is a web based"
+    },
+    {
+      "start": 1176.32,
+      "duration": 4.08,
+      "text": "interface and you can click on things to"
+    },
+    {
+      "start": 1178.36,
+      "duration": 4.92,
+      "text": "create it you can also use AWS CLI"
+    },
+    {
+      "start": 1180.4,
+      "duration": 5.519,
+      "text": "command line tool you can use AWS sdks"
+    },
+    {
+      "start": 1183.28,
+      "duration": 4.399,
+      "text": "uh to create stuff using your own"
+    },
+    {
+      "start": 1185.919,
+      "duration": 3.161,
+      "text": "favorite programming language and the"
+    },
+    {
+      "start": 1187.679,
+      "duration": 4.0,
+      "text": "last one is dat Cloud information which"
+    },
+    {
+      "start": 1189.08,
+      "duration": 4.599,
+      "text": "is infrastructure as code tool terraform"
+    },
+    {
+      "start": 1191.679,
+      "duration": 3.521,
+      "text": "also uh theform also is an"
+    },
+    {
+      "start": 1193.679,
+      "duration": 3.601,
+      "text": "infrastructure as code tool and it also"
+    },
+    {
+      "start": 1195.2,
+      "duration": 3.52,
+      "text": "falls in the same category so no need to"
+    },
+    {
+      "start": 1197.28,
+      "duration": 3.68,
+      "text": "mention here but you can also tell that"
+    },
+    {
+      "start": 1198.72,
+      "duration": 3.72,
+      "text": "in your interviews if you want to so"
+    },
+    {
+      "start": 1200.96,
+      "duration": 4.68,
+      "text": "these are different ways for you to"
+    },
+    {
+      "start": 1202.44,
+      "duration": 4.4,
+      "text": "access AWS Services moving on the next"
+    },
+    {
+      "start": 1205.64,
+      "duration": 3.24,
+      "text": "question is what are different types of"
+    },
+    {
+      "start": 1206.84,
+      "duration": 3.52,
+      "text": "load balancers and when to use them in"
+    },
+    {
+      "start": 1208.88,
+      "duration": 4.64,
+      "text": "AWS there are four different types of"
+    },
+    {
+      "start": 1210.36,
+      "duration": 5.12,
+      "text": "load balancer as of now if you want to"
+    },
+    {
+      "start": 1213.52,
+      "duration": 4.639,
+      "text": "see it you can go to the E2 below you"
+    },
+    {
+      "start": 1215.48,
+      "duration": 4.64,
+      "text": "will see load balances load balances are"
+    },
+    {
+      "start": 1218.159,
+      "duration": 4.64,
+      "text": "used to manage traffic on multiple"
+    },
+    {
+      "start": 1220.12,
+      "duration": 5.08,
+      "text": "servers right now AWS provides you with"
+    },
+    {
+      "start": 1222.799,
+      "duration": 5.36,
+      "text": "1 2 3 and the fourth one which is the"
+    },
+    {
+      "start": 1225.2,
+      "duration": 4.52,
+      "text": "class balancer previous generation app"
+    },
+    {
+      "start": 1228.159,
+      "duration": 4.601,
+      "text": "appliation balancer can be used whenever"
+    },
+    {
+      "start": 1229.72,
+      "duration": 4.8,
+      "text": "you want to have HTTP and https traffic"
+    },
+    {
+      "start": 1232.76,
+      "duration": 3.039,
+      "text": "similarly if you're managing TCP UTP"
+    },
+    {
+      "start": 1234.52,
+      "duration": 3.44,
+      "text": "traffic and you want to have a highly"
+    },
+    {
+      "start": 1235.799,
+      "duration": 4.76,
+      "text": "performant very fast uh correction you"
+    },
+    {
+      "start": 1237.96,
+      "duration": 3.839,
+      "text": "can go with network Lo balancer lastly G"
+    },
+    {
+      "start": 1240.559,
+      "duration": 4.0,
+      "text": "balancer can be used whenever you want"
+    },
+    {
+      "start": 1241.799,
+      "duration": 4.161,
+      "text": "to connect your all devices with your aw"
+    },
+    {
+      "start": 1244.559,
+      "duration": 3.561,
+      "text": "accounts or whenever you want to use"
+    },
+    {
+      "start": 1245.96,
+      "duration": 3.88,
+      "text": "third party security appliances you can"
+    },
+    {
+      "start": 1248.12,
+      "duration": 4.52,
+      "text": "go with kateway"
+    },
+    {
+      "start": 1249.84,
+      "duration": 4.839,
+      "text": "balancer so here is the explanation and"
+    },
+    {
+      "start": 1252.64,
+      "duration": 4.48,
+      "text": "you can read through it to understand"
+    },
+    {
+      "start": 1254.679,
+      "duration": 5.441,
+      "text": "when to use which load"
+    },
+    {
+      "start": 1257.12,
+      "duration": 4.919,
+      "text": "balancer moving on the next question is"
+    },
+    {
+      "start": 1260.12,
+      "duration": 5.039,
+      "text": "how do you allow or restrict access to"
+    },
+    {
+      "start": 1262.039,
+      "duration": 4.721,
+      "text": "AWS Services we all know the first thing"
+    },
+    {
+      "start": 1265.159,
+      "duration": 3.841,
+      "text": "uh that comes in my mind when I read"
+    },
+    {
+      "start": 1266.76,
+      "duration": 4.24,
+      "text": "this question is I IM I can create I am"
+    },
+    {
+      "start": 1269.0,
+      "duration": 4.2,
+      "text": "users I can give them policies to Define"
+    },
+    {
+      "start": 1271.0,
+      "duration": 4.44,
+      "text": "what user should be doing uh so I can"
+    },
+    {
+      "start": 1273.2,
+      "duration": 4.12,
+      "text": "restrict access or allow access using IM"
+    },
+    {
+      "start": 1275.44,
+      "duration": 4.96,
+      "text": "IM similar to IM IM you also have"
+    },
+    {
+      "start": 1277.32,
+      "duration": 5.719,
+      "text": "resource policies so in services like S3"
+    },
+    {
+      "start": 1280.4,
+      "duration": 4.6,
+      "text": "bucket you can select who can access"
+    },
+    {
+      "start": 1283.039,
+      "duration": 4.24,
+      "text": "this bucket who has permission to access"
+    },
+    {
+      "start": 1285.0,
+      "duration": 3.72,
+      "text": "it by attaching a bucket policy so if I"
+    },
+    {
+      "start": 1287.279,
+      "duration": 3.681,
+      "text": "go to this bucket and click on"
+    },
+    {
+      "start": 1288.72,
+      "duration": 3.92,
+      "text": "permissions here I have option to attach"
+    },
+    {
+      "start": 1290.96,
+      "duration": 4.56,
+      "text": "a bucket policy right now it does not"
+    },
+    {
+      "start": 1292.64,
+      "duration": 5.2,
+      "text": "have it but but this is something you"
+    },
+    {
+      "start": 1295.52,
+      "duration": 4.84,
+      "text": "can attach to allow or restrict access"
+    },
+    {
+      "start": 1297.84,
+      "duration": 4.199,
+      "text": "to this particular bucket next is"
+    },
+    {
+      "start": 1300.36,
+      "duration": 3.84,
+      "text": "network access control list this is"
+    },
+    {
+      "start": 1302.039,
+      "duration": 4.0,
+      "text": "something on subet level you can Define"
+    },
+    {
+      "start": 1304.2,
+      "duration": 3.839,
+      "text": "which traffic can come inside or go"
+    },
+    {
+      "start": 1306.039,
+      "duration": 4.481,
+      "text": "outside the subnet similarly you have"
+    },
+    {
+      "start": 1308.039,
+      "duration": 4.081,
+      "text": "Security Group on instance level you can"
+    },
+    {
+      "start": 1310.52,
+      "duration": 4.279,
+      "text": "Define which traffic should come in and"
+    },
+    {
+      "start": 1312.12,
+      "duration": 4.2,
+      "text": "outside the server or the instances next"
+    },
+    {
+      "start": 1314.799,
+      "duration": 3.841,
+      "text": "you have scps or service control"
+    },
+    {
+      "start": 1316.32,
+      "duration": 4.08,
+      "text": "policies where you have multiple AWS"
+    },
+    {
+      "start": 1318.64,
+      "duration": 3.96,
+      "text": "accounts in your organization you can"
+    },
+    {
+      "start": 1320.4,
+      "duration": 5.08,
+      "text": "Define or allow or restrict access using"
+    },
+    {
+      "start": 1322.6,
+      "duration": 4.36,
+      "text": "scps or service control policies you"
+    },
+    {
+      "start": 1325.48,
+      "duration": 4.319,
+      "text": "also have MCN points to privately"
+    },
+    {
+      "start": 1326.96,
+      "duration": 5.0,
+      "text": "connect to aw services like S3 using end"
+    },
+    {
+      "start": 1329.799,
+      "duration": 4.321,
+      "text": "points rather than using the internet"
+    },
+    {
+      "start": 1331.96,
+      "duration": 4.16,
+      "text": "which is to avoid public IPS so these"
+    },
+    {
+      "start": 1334.12,
+      "duration": 6.52,
+      "text": "are different services or different ways"
+    },
+    {
+      "start": 1336.12,
+      "duration": 7.08,
+      "text": "to allow or restrict access to aw"
+    },
+    {
+      "start": 1340.64,
+      "duration": 3.919,
+      "text": "Services moving on the next question is"
+    },
+    {
+      "start": 1343.2,
+      "duration": 4.2,
+      "text": "describe the advantages and"
+    },
+    {
+      "start": 1344.559,
+      "duration": 5.041,
+      "text": "disadvantages of using AWS RDS compared"
+    },
+    {
+      "start": 1347.4,
+      "duration": 4.36,
+      "text": "to managing your databases on ec2"
+    },
+    {
+      "start": 1349.6,
+      "duration": 4.199,
+      "text": "instances so we already know you can"
+    },
+    {
+      "start": 1351.76,
+      "duration": 4.36,
+      "text": "either create database directly using"
+    },
+    {
+      "start": 1353.799,
+      "duration": 4.76,
+      "text": "RDS which is a m service or you can also"
+    },
+    {
+      "start": 1356.12,
+      "duration": 4.12,
+      "text": "create or install your database on ec2"
+    },
+    {
+      "start": 1358.559,
+      "duration": 4.12,
+      "text": "instance what is the advantage and"
+    },
+    {
+      "start": 1360.24,
+      "duration": 4.439,
+      "text": "disadvantage of doing it when you use"
+    },
+    {
+      "start": 1362.679,
+      "duration": 3.48,
+      "text": "RDS to set up your database it's all"
+    },
+    {
+      "start": 1364.679,
+      "duration": 3.041,
+      "text": "managed by AWS so you don't need to"
+    },
+    {
+      "start": 1366.159,
+      "duration": 3.4,
+      "text": "install anything you don't need to"
+    },
+    {
+      "start": 1367.72,
+      "duration": 3.12,
+      "text": "automat you don't need to create backups"
+    },
+    {
+      "start": 1369.559,
+      "duration": 3.72,
+      "text": "because you can automatically create"
+    },
+    {
+      "start": 1370.84,
+      "duration": 5.16,
+      "text": "backups using snapshots or automated"
+    },
+    {
+      "start": 1373.279,
+      "duration": 5.481,
+      "text": "backups in RDS you also don't need to"
+    },
+    {
+      "start": 1376.0,
+      "duration": 4.84,
+      "text": "patch or uh do anything Rel to security"
+    },
+    {
+      "start": 1378.76,
+      "duration": 5.24,
+      "text": "because it's all managed by AWS and this"
+    },
+    {
+      "start": 1380.84,
+      "duration": 4.839,
+      "text": "is the benefit when you use RDS whereas"
+    },
+    {
+      "start": 1384.0,
+      "duration": 3.559,
+      "text": "if you use ec2 you have to manually"
+    },
+    {
+      "start": 1385.679,
+      "duration": 4.441,
+      "text": "install everything you have to configure"
+    },
+    {
+      "start": 1387.559,
+      "duration": 4.321,
+      "text": "it uh you have to do everything but the"
+    },
+    {
+      "start": 1390.12,
+      "duration": 4.12,
+      "text": "advantage of setting up your database on"
+    },
+    {
+      "start": 1391.88,
+      "duration": 4.159,
+      "text": "ec2 is you get more power or you get"
+    },
+    {
+      "start": 1394.24,
+      "duration": 3.12,
+      "text": "more Administration access you can go"
+    },
+    {
+      "start": 1396.039,
+      "duration": 3.481,
+      "text": "inside the server and change anything"
+    },
+    {
+      "start": 1397.36,
+      "duration": 3.799,
+      "text": "you want whereas in RDS you cannot"
+    },
+    {
+      "start": 1399.52,
+      "duration": 3.6,
+      "text": "assess it to the server you cannot"
+    },
+    {
+      "start": 1401.159,
+      "duration": 4.0,
+      "text": "change anything if you want so this is"
+    },
+    {
+      "start": 1403.12,
+      "duration": 3.64,
+      "text": "the difference advantages of RDS"
+    },
+    {
+      "start": 1405.159,
+      "duration": 3.4,
+      "text": "includes manage backups automated"
+    },
+    {
+      "start": 1406.76,
+      "duration": 3.279,
+      "text": "patching and scaling disadvantage is"
+    },
+    {
+      "start": 1408.559,
+      "duration": 4.081,
+      "text": "using less control over the database"
+    },
+    {
+      "start": 1410.039,
+      "duration": 3.921,
+      "text": "compared to managing it on ec2 instance"
+    },
+    {
+      "start": 1412.64,
+      "duration": 2.72,
+      "text": "so this is the difference and this is"
+    },
+    {
+      "start": 1413.96,
+      "duration": 3.44,
+      "text": "the advantage or"
+    },
+    {
+      "start": 1415.36,
+      "duration": 4.52,
+      "text": "disadvantage moving on the next question"
+    },
+    {
+      "start": 1417.4,
+      "duration": 5.92,
+      "text": "is what is the relationship between"
+    },
+    {
+      "start": 1419.88,
+      "duration": 5.96,
+      "text": "instance and an Ami so instance in AWS"
+    },
+    {
+      "start": 1423.32,
+      "duration": 5.32,
+      "text": "is known as server uh we call servers as"
+    },
+    {
+      "start": 1425.84,
+      "duration": 4.76,
+      "text": "instances and AWS and Ami stands for"
+    },
+    {
+      "start": 1428.64,
+      "duration": 4.24,
+      "text": "Amazon machine image so when you create"
+    },
+    {
+      "start": 1430.6,
+      "duration": 4.28,
+      "text": "instance you need to select the Ami Amis"
+    },
+    {
+      "start": 1432.88,
+      "duration": 3.76,
+      "text": "are of different type so Amis let you"
+    },
+    {
+      "start": 1434.88,
+      "duration": 4.0,
+      "text": "decide which operating system you want"
+    },
+    {
+      "start": 1436.64,
+      "duration": 3.84,
+      "text": "to use you can see am Ami here Amazon"
+    },
+    {
+      "start": 1438.88,
+      "duration": 3.159,
+      "text": "machine image and when you create a"
+    },
+    {
+      "start": 1440.48,
+      "duration": 4.72,
+      "text": "server you select if you want to use"
+    },
+    {
+      "start": 1442.039,
+      "duration": 5.361,
+      "text": "Amazon Linux Ami or Mac Ami or open 2"
+    },
+    {
+      "start": 1445.2,
+      "duration": 4.719,
+      "text": "Ami or Windows Emi but you can also"
+    },
+    {
+      "start": 1447.4,
+      "duration": 3.879,
+      "text": "create backups of your servers when you"
+    },
+    {
+      "start": 1449.919,
+      "duration": 3.24,
+      "text": "create a backup of your server which"
+    },
+    {
+      "start": 1451.279,
+      "duration": 3.841,
+      "text": "means you're creating an Emi so let me"
+    },
+    {
+      "start": 1453.159,
+      "duration": 3.88,
+      "text": "show you an example so right now I have"
+    },
+    {
+      "start": 1455.12,
+      "duration": 3.32,
+      "text": "Docker and I want to create a backup"
+    },
+    {
+      "start": 1457.039,
+      "duration": 3.601,
+      "text": "creating a backup means creating an"
+    },
+    {
+      "start": 1458.44,
+      "duration": 4.16,
+      "text": "image so I go to images and template I"
+    },
+    {
+      "start": 1460.64,
+      "duration": 4.279,
+      "text": "click on create image once I click on"
+    },
+    {
+      "start": 1462.6,
+      "duration": 5.959,
+      "text": "create image it lets me uh put the"
+    },
+    {
+      "start": 1464.919,
+      "duration": 5.721,
+      "text": "information so let's say my image"
+    },
+    {
+      "start": 1468.559,
+      "duration": 4.0,
+      "text": "and I'm going to click on image create"
+    },
+    {
+      "start": 1470.64,
+      "duration": 4.32,
+      "text": "here and you can see it's also backing"
+    },
+    {
+      "start": 1472.559,
+      "duration": 4.401,
+      "text": "up my storage which is attached to it"
+    },
+    {
+      "start": 1474.96,
+      "duration": 5.079,
+      "text": "and when I click on create image here it"
+    },
+    {
+      "start": 1476.96,
+      "duration": 5.319,
+      "text": "creates an Ami and I get this ID here"
+    },
+    {
+      "start": 1480.039,
+      "duration": 6.12,
+      "text": "this is how I can create backups so"
+    },
+    {
+      "start": 1482.279,
+      "duration": 6.321,
+      "text": "instance is a server and Ami is its"
+    },
+    {
+      "start": 1486.159,
+      "duration": 4.441,
+      "text": "backup so instance is running an"
+    },
+    {
+      "start": 1488.6,
+      "duration": 3.84,
+      "text": "instance is a running virtual machine"
+    },
+    {
+      "start": 1490.6,
+      "duration": 3.72,
+      "text": "while an Ami is a template used to"
+    },
+    {
+      "start": 1492.44,
+      "duration": 3.359,
+      "text": "create instances and instances are"
+    },
+    {
+      "start": 1494.32,
+      "duration": 3.68,
+      "text": "launched from Im so I can just go ahead"
+    },
+    {
+      "start": 1495.799,
+      "duration": 4.281,
+      "text": "and select this image that I created and"
+    },
+    {
+      "start": 1498.0,
+      "duration": 4.279,
+      "text": "I can also create a server out of"
+    },
+    {
+      "start": 1500.08,
+      "duration": 4.079,
+      "text": "it moving on the next question is what"
+    },
+    {
+      "start": 1502.279,
+      "duration": 4.28,
+      "text": "are difference launch type and when to"
+    },
+    {
+      "start": 1504.159,
+      "duration": 5.081,
+      "text": "use them so in AWS you can launch your"
+    },
+    {
+      "start": 1506.559,
+      "duration": 5.161,
+      "text": "servers using different launch types"
+    },
+    {
+      "start": 1509.24,
+      "duration": 5.96,
+      "text": "like reserved instances spot request"
+    },
+    {
+      "start": 1511.72,
+      "duration": 5.0,
+      "text": "dedicated host as so you can select your"
+    },
+    {
+      "start": 1515.2,
+      "duration": 3.16,
+      "text": "preferred launch type depending on your"
+    },
+    {
+      "start": 1516.72,
+      "duration": 3.36,
+      "text": "use case if you have a server which"
+    },
+    {
+      "start": 1518.36,
+      "duration": 3.919,
+      "text": "you're going to be using for next 3"
+    },
+    {
+      "start": 1520.08,
+      "duration": 3.839,
+      "text": "years or next one year you can go with"
+    },
+    {
+      "start": 1522.279,
+      "duration": 3.64,
+      "text": "reserved instances that will provide you"
+    },
+    {
+      "start": 1523.919,
+      "duration": 3.841,
+      "text": "with discounts if you want to have a"
+    },
+    {
+      "start": 1525.919,
+      "duration": 4.281,
+      "text": "server where you need to attach your rle"
+    },
+    {
+      "start": 1527.76,
+      "duration": 3.88,
+      "text": "licenses and no nothing related to AWS"
+    },
+    {
+      "start": 1530.2,
+      "duration": 3.32,
+      "text": "you can go with dedicated host or"
+    },
+    {
+      "start": 1531.64,
+      "duration": 4.36,
+      "text": "dedicated instances similarly if you"
+    },
+    {
+      "start": 1533.52,
+      "duration": 4.879,
+      "text": "want a server for a short period of time"
+    },
+    {
+      "start": 1536.0,
+      "duration": 4.6,
+      "text": "which is okay if you which is okay if it"
+    },
+    {
+      "start": 1538.399,
+      "duration": 4.361,
+      "text": "got deleted you can go with spot request"
+    },
+    {
+      "start": 1540.6,
+      "duration": 5.319,
+      "text": "and I try to explain this very easily in"
+    },
+    {
+      "start": 1542.76,
+      "duration": 6.48,
+      "text": "this video so you can go check it"
+    },
+    {
+      "start": 1545.919,
+      "duration": 4.801,
+      "text": "out next question is can you describe"
+    },
+    {
+      "start": 1549.24,
+      "duration": 4.36,
+      "text": "the process of setting up a cicd"
+    },
+    {
+      "start": 1550.72,
+      "duration": 5.439,
+      "text": "pipeline in AWS using Code Pipeline and"
+    },
+    {
+      "start": 1553.6,
+      "duration": 4.76,
+      "text": "code bid so in AWS we know different"
+    },
+    {
+      "start": 1556.159,
+      "duration": 4.441,
+      "text": "services that can help you create"
+    },
+    {
+      "start": 1558.36,
+      "duration": 4.199,
+      "text": "cicd pipeline you can use code pipeline"
+    },
+    {
+      "start": 1560.6,
+      "duration": 3.679,
+      "text": "to set up an automated cicd pipeline"
+    },
+    {
+      "start": 1562.559,
+      "duration": 3.921,
+      "text": "which includes stages like which"
+    },
+    {
+      "start": 1564.279,
+      "duration": 4.601,
+      "text": "includes stages like Source build test"
+    },
+    {
+      "start": 1566.48,
+      "duration": 4.919,
+      "text": "and deploy so using Code pipeline you"
+    },
+    {
+      "start": 1568.88,
+      "duration": 4.84,
+      "text": "can create automated pipeline using Code"
+    },
+    {
+      "start": 1571.399,
+      "duration": 4.52,
+      "text": "build you can integrate build stage and"
+    },
+    {
+      "start": 1573.72,
+      "duration": 4.72,
+      "text": "test stage and using Code deploy you can"
+    },
+    {
+      "start": 1575.919,
+      "duration": 5.0,
+      "text": "deploy it either on ec2 eks ECS whever"
+    },
+    {
+      "start": 1578.44,
+      "duration": 4.239,
+      "text": "you want to do it so the process"
+    },
+    {
+      "start": 1580.919,
+      "duration": 4.601,
+      "text": "involves configuring a pipeline in code"
+    },
+    {
+      "start": 1582.679,
+      "duration": 5.401,
+      "text": "pipeline defining SES like Source build"
+    },
+    {
+      "start": 1585.52,
+      "duration": 4.44,
+      "text": "test and deploy using all the different"
+    },
+    {
+      "start": 1588.08,
+      "duration": 3.28,
+      "text": "services that we have seen here so this"
+    },
+    {
+      "start": 1589.96,
+      "duration": 3.04,
+      "text": "is the place where you can Define The"
+    },
+    {
+      "start": 1591.36,
+      "duration": 3.559,
+      "text": "Source this is where you can build it"
+    },
+    {
+      "start": 1593.0,
+      "duration": 4.399,
+      "text": "this is where you can deploy"
+    },
+    {
+      "start": 1594.919,
+      "duration": 4.841,
+      "text": "it so this is how you can create or set"
+    },
+    {
+      "start": 1597.399,
+      "duration": 3.801,
+      "text": "up a cicd pipeline the next question is"
+    },
+    {
+      "start": 1599.76,
+      "duration": 4.039,
+      "text": "your application stores sensitive"
+    },
+    {
+      "start": 1601.2,
+      "duration": 3.719,
+      "text": "customer data in an AWS RDS database how"
+    },
+    {
+      "start": 1603.799,
+      "duration": 3.201,
+      "text": "would you ensure the security and"
+    },
+    {
+      "start": 1604.919,
+      "duration": 3.88,
+      "text": "compliance of this data so according to"
+    },
+    {
+      "start": 1607.0,
+      "duration": 4.24,
+      "text": "this question we have an RDS database"
+    },
+    {
+      "start": 1608.799,
+      "duration": 3.721,
+      "text": "and inside that RDS database some data"
+    },
+    {
+      "start": 1611.24,
+      "duration": 2.439,
+      "text": "is present which is which is very"
+    },
+    {
+      "start": 1612.52,
+      "duration": 3.639,
+      "text": "critical and you want to make sure that"
+    },
+    {
+      "start": 1613.679,
+      "duration": 3.681,
+      "text": "it's secured so you can make sure that"
+    },
+    {
+      "start": 1616.159,
+      "duration": 3.361,
+      "text": "the data is secured using different"
+    },
+    {
+      "start": 1617.36,
+      "duration": 5.24,
+      "text": "things like encryption you can encrypt"
+    },
+    {
+      "start": 1619.52,
+      "duration": 5.039,
+      "text": "your data inside database using KMS KMS"
+    },
+    {
+      "start": 1622.6,
+      "duration": 5.0,
+      "text": "as we know stands for key management"
+    },
+    {
+      "start": 1624.559,
+      "duration": 4.921,
+      "text": "system that secure uh that can secure"
+    },
+    {
+      "start": 1627.6,
+      "duration": 4.52,
+      "text": "your data using encryption"
+    },
+    {
+      "start": 1629.48,
+      "duration": 6.12,
+      "text": "Keys similar to this you can also use"
+    },
+    {
+      "start": 1632.12,
+      "duration": 5.0,
+      "text": "security groups on your RDS uh databases"
+    },
+    {
+      "start": 1635.6,
+      "duration": 3.84,
+      "text": "by defining who can access it or what"
+    },
+    {
+      "start": 1637.12,
+      "duration": 4.439,
+      "text": "traffic should come in or goop so ensure"
+    },
+    {
+      "start": 1639.44,
+      "duration": 3.959,
+      "text": "encryption at rest in transit Implement"
+    },
+    {
+      "start": 1641.559,
+      "duration": 4.84,
+      "text": "Access Control using IM this is also you"
+    },
+    {
+      "start": 1643.399,
+      "duration": 4.681,
+      "text": "can do you can set up IM rules or IM"
+    },
+    {
+      "start": 1646.399,
+      "duration": 3.921,
+      "text": "policies to Define who access the"
+    },
+    {
+      "start": 1648.08,
+      "duration": 4.079,
+      "text": "database regularly audit database"
+    },
+    {
+      "start": 1650.32,
+      "duration": 5.04,
+      "text": "activity and comply with reg revent"
+    },
+    {
+      "start": 1652.159,
+      "duration": 4.601,
+      "text": "regulations such as gdpr or AA so this"
+    },
+    {
+      "start": 1655.36,
+      "duration": 3.52,
+      "text": "is how you can secure your data inside"
+    },
+    {
+      "start": 1656.76,
+      "duration": 4.12,
+      "text": "RDS database moving on the next question"
+    },
+    {
+      "start": 1658.88,
+      "duration": 3.72,
+      "text": "is your team is adopting Docker for"
+    },
+    {
+      "start": 1660.88,
+      "duration": 3.84,
+      "text": "containerization how would you deploy"
+    },
+    {
+      "start": 1662.6,
+      "duration": 3.84,
+      "text": "and manage Docker containers on AWS so"
+    },
+    {
+      "start": 1664.72,
+      "duration": 3.439,
+      "text": "Docker is a service that lets you cize"
+    },
+    {
+      "start": 1666.44,
+      "duration": 3.76,
+      "text": "your application and let's say a company"
+    },
+    {
+      "start": 1668.159,
+      "duration": 4.041,
+      "text": "is moving from wall to microservices"
+    },
+    {
+      "start": 1670.2,
+      "duration": 4.199,
+      "text": "using Docker how can they use ew"
+    },
+    {
+      "start": 1672.2,
+      "duration": 5.04,
+      "text": "services so the first way is to install"
+    },
+    {
+      "start": 1674.399,
+      "duration": 5.041,
+      "text": "Docker on ec2 servers and then cize your"
+    },
+    {
+      "start": 1677.24,
+      "duration": 4.319,
+      "text": "application and deployed there but AWS"
+    },
+    {
+      "start": 1679.44,
+      "duration": 4.079,
+      "text": "also has many other containerization"
+    },
+    {
+      "start": 1681.559,
+      "duration": 5.0,
+      "text": "services that you can see here so you"
+    },
+    {
+      "start": 1683.519,
+      "duration": 4.841,
+      "text": "have ECS and eks ECS lets you deploy"
+    },
+    {
+      "start": 1686.559,
+      "duration": 4.0,
+      "text": "your containers using ec2 servers or"
+    },
+    {
+      "start": 1688.36,
+      "duration": 3.52,
+      "text": "fargate but you can also use eks which"
+    },
+    {
+      "start": 1690.559,
+      "duration": 3.96,
+      "text": "lets you deploy your containers on"
+    },
+    {
+      "start": 1691.88,
+      "duration": 5.0,
+      "text": "kubernetes cluster you also have ECR"
+    },
+    {
+      "start": 1694.519,
+      "duration": 5.481,
+      "text": "where you can store your Docker images"
+    },
+    {
+      "start": 1696.88,
+      "duration": 6.24,
+      "text": "similar to Docker Hub so deploy Docker"
+    },
+    {
+      "start": 1700.0,
+      "duration": 4.48,
+      "text": "containers using Amazon ECS or eks this"
+    },
+    {
+      "start": 1703.12,
+      "duration": 2.96,
+      "text": "Services provide manage coner"
+    },
+    {
+      "start": 1704.48,
+      "duration": 4.16,
+      "text": "orchestration scaling and integration"
+    },
+    {
+      "start": 1706.08,
+      "duration": 4.92,
+      "text": "with other AWS services"
+    },
+    {
+      "start": 1708.64,
+      "duration": 4.72,
+      "text": "next is your company wants to migrate"
+    },
+    {
+      "start": 1711.0,
+      "duration": 4.679,
+      "text": "its onrite infrastructure to AWS for"
+    },
+    {
+      "start": 1713.36,
+      "duration": 4.039,
+      "text": "cost saving and scalability what steps"
+    },
+    {
+      "start": 1715.679,
+      "duration": 3.6,
+      "text": "would you take to plan and execute this"
+    },
+    {
+      "start": 1717.399,
+      "duration": 3.52,
+      "text": "migration this is very very important"
+    },
+    {
+      "start": 1719.279,
+      "duration": 3.0,
+      "text": "again because many companies are"
+    },
+    {
+      "start": 1720.919,
+      "duration": 4.24,
+      "text": "actually migrating their stuff among on"
+    },
+    {
+      "start": 1722.279,
+      "duration": 4.481,
+      "text": "premises to AWS so how can you solve"
+    },
+    {
+      "start": 1725.159,
+      "duration": 3.041,
+      "text": "this or how can you migrate your data"
+    },
+    {
+      "start": 1726.76,
+      "duration": 3.279,
+      "text": "first thing is to check what do you have"
+    },
+    {
+      "start": 1728.2,
+      "duration": 3.839,
+      "text": "on premisis what are different services"
+    },
+    {
+      "start": 1730.039,
+      "duration": 3.88,
+      "text": "that you want to migrate once you know"
+    },
+    {
+      "start": 1732.039,
+      "duration": 3.721,
+      "text": "what is going to be once you know what"
+    },
+    {
+      "start": 1733.919,
+      "duration": 3.36,
+      "text": "has to be migrated select the migrating"
+    },
+    {
+      "start": 1735.76,
+      "duration": 3.519,
+      "text": "strategy which are of different types"
+    },
+    {
+      "start": 1737.279,
+      "duration": 4.24,
+      "text": "like lift and shift refactor and re"
+    },
+    {
+      "start": 1739.279,
+      "duration": 4.76,
+      "text": "architecting let's say you have a legacy"
+    },
+    {
+      "start": 1741.519,
+      "duration": 4.801,
+      "text": "application written in Java or C++ but"
+    },
+    {
+      "start": 1744.039,
+      "duration": 4.281,
+      "text": "now you want to deploy that on cloud"
+    },
+    {
+      "start": 1746.32,
+      "duration": 4.44,
+      "text": "maybe if you want to use new uh new"
+    },
+    {
+      "start": 1748.32,
+      "duration": 4.32,
+      "text": "stack using goang or python you will"
+    },
+    {
+      "start": 1750.76,
+      "duration": 4.2,
+      "text": "have to recreate everything so you need"
+    },
+    {
+      "start": 1752.64,
+      "duration": 4.36,
+      "text": "to see if you want to just lift and"
+    },
+    {
+      "start": 1754.96,
+      "duration": 4.439,
+      "text": "shift it here if you want to create it"
+    },
+    {
+      "start": 1757.0,
+      "duration": 4.88,
+      "text": "from scratch so you need to select what"
+    },
+    {
+      "start": 1759.399,
+      "duration": 4.081,
+      "text": "migration strategy it will be required"
+    },
+    {
+      "start": 1761.88,
+      "duration": 4.44,
+      "text": "then you will estimate the cost using"
+    },
+    {
+      "start": 1763.48,
+      "duration": 5.559,
+      "text": "AWS pricing calculator you can see how"
+    },
+    {
+      "start": 1766.32,
+      "duration": 5.199,
+      "text": "much cost is going to come if I migrate"
+    },
+    {
+      "start": 1769.039,
+      "duration": 4.841,
+      "text": "my stuff on AWS once you know the cost"
+    },
+    {
+      "start": 1771.519,
+      "duration": 3.841,
+      "text": "you can then uh plan for migration test"
+    },
+    {
+      "start": 1773.88,
+      "duration": 3.919,
+      "text": "it if everything works okay then you can"
+    },
+    {
+      "start": 1775.36,
+      "duration": 4.28,
+      "text": "migrate without downtime or with less"
+    },
+    {
+      "start": 1777.799,
+      "duration": 4.0,
+      "text": "downtime so this is how you can migrate"
+    },
+    {
+      "start": 1779.64,
+      "duration": 4.56,
+      "text": "you first check what is there you then"
+    },
+    {
+      "start": 1781.799,
+      "duration": 5.521,
+      "text": "select the strategy you then check the"
+    },
+    {
+      "start": 1784.2,
+      "duration": 5.68,
+      "text": "cost plan it and then you migrate"
+    },
+    {
+      "start": 1787.32,
+      "duration": 5.68,
+      "text": "it moving on the next question is"
+    },
+    {
+      "start": 1789.88,
+      "duration": 4.88,
+      "text": "describe how AWS IM is used to manage"
+    },
+    {
+      "start": 1793.0,
+      "duration": 3.399,
+      "text": "permissions and access control in AWS"
+    },
+    {
+      "start": 1794.76,
+      "duration": 4.0,
+      "text": "environments this we have already known"
+    },
+    {
+      "start": 1796.399,
+      "duration": 5.441,
+      "text": "AWS IM is used used to create users for"
+    },
+    {
+      "start": 1798.76,
+      "duration": 5.159,
+      "text": "physical users groups for group of users"
+    },
+    {
+      "start": 1801.84,
+      "duration": 3.959,
+      "text": "roles for AWS services and then you can"
+    },
+    {
+      "start": 1803.919,
+      "duration": 4.12,
+      "text": "attach policies on them to decide what"
+    },
+    {
+      "start": 1805.799,
+      "duration": 4.081,
+      "text": "they can do or what they cannot do so I"
+    },
+    {
+      "start": 1808.039,
+      "duration": 3.801,
+      "text": "imp allows you to create man manage"
+    },
+    {
+      "start": 1809.88,
+      "duration": 4.0,
+      "text": "users groups and roles to control access"
+    },
+    {
+      "start": 1811.84,
+      "duration": 4.28,
+      "text": "to aw resources you can Define policies"
+    },
+    {
+      "start": 1813.88,
+      "duration": 4.24,
+      "text": "that specify the permissions user have"
+    },
+    {
+      "start": 1816.12,
+      "duration": 3.6,
+      "text": "ensuring least privilege principle least"
+    },
+    {
+      "start": 1818.12,
+      "duration": 4.6,
+      "text": "privilege principle means giving them"
+    },
+    {
+      "start": 1819.72,
+      "duration": 4.88,
+      "text": "only what is required not extra so this"
+    },
+    {
+      "start": 1822.72,
+      "duration": 4.679,
+      "text": "is how you can use IM to manage"
+    },
+    {
+      "start": 1824.6,
+      "duration": 5.04,
+      "text": "permissions and access control in AWS"
+    },
+    {
+      "start": 1827.399,
+      "duration": 3.721,
+      "text": "the next question is describe how you"
+    },
+    {
+      "start": 1829.64,
+      "duration": 4.24,
+      "text": "would set up an automated testing"
+    },
+    {
+      "start": 1831.12,
+      "duration": 4.48,
+      "text": "process within your cicd pipeline on AWS"
+    },
+    {
+      "start": 1833.88,
+      "duration": 3.76,
+      "text": "whenever we create a cicd pipeline we"
+    },
+    {
+      "start": 1835.6,
+      "duration": 4.36,
+      "text": "need to have test to make sure that we"
+    },
+    {
+      "start": 1837.64,
+      "duration": 4.279,
+      "text": "follow the dev zops approach so we"
+    },
+    {
+      "start": 1839.96,
+      "duration": 4.0,
+      "text": "should always add test to make sure that"
+    },
+    {
+      "start": 1841.919,
+      "duration": 3.801,
+      "text": "our code is proper and it should go and"
+    },
+    {
+      "start": 1843.96,
+      "duration": 4.319,
+      "text": "work properly in the production so how"
+    },
+    {
+      "start": 1845.72,
+      "duration": 5.079,
+      "text": "can you add automated testing process"
+    },
+    {
+      "start": 1848.279,
+      "duration": 4.481,
+      "text": "when you have cicd Pipeline on AWS so we"
+    },
+    {
+      "start": 1850.799,
+      "duration": 4.161,
+      "text": "know to create CHD pipeline we have"
+    },
+    {
+      "start": 1852.76,
+      "duration": 4.159,
+      "text": "different services like code pipeline"
+    },
+    {
+      "start": 1854.96,
+      "duration": 4.599,
+      "text": "code build that we have already seen so"
+    },
+    {
+      "start": 1856.919,
+      "duration": 6.12,
+      "text": "far so to integrate test you can do that"
+    },
+    {
+      "start": 1859.559,
+      "duration": 4.801,
+      "text": "in the build stage using Code build here"
+    },
+    {
+      "start": 1863.039,
+      "duration": 2.961,
+      "text": "but before you integrate it you need to"
+    },
+    {
+      "start": 1864.36,
+      "duration": 3.159,
+      "text": "write the test cases so you need to"
+    },
+    {
+      "start": 1866.0,
+      "duration": 3.08,
+      "text": "First select what test cases you want to"
+    },
+    {
+      "start": 1867.519,
+      "duration": 3.441,
+      "text": "write and what Frameworks do you want to"
+    },
+    {
+      "start": 1869.08,
+      "duration": 4.24,
+      "text": "select so you can either select junit or"
+    },
+    {
+      "start": 1870.96,
+      "duration": 5.439,
+      "text": "selenium and then you can write down the"
+    },
+    {
+      "start": 1873.32,
+      "duration": 5.079,
+      "text": "test cases put them along with your code"
+    },
+    {
+      "start": 1876.399,
+      "duration": 4.081,
+      "text": "and then use services like code build to"
+    },
+    {
+      "start": 1878.399,
+      "duration": 4.16,
+      "text": "integrate it so choose the testing tools"
+    },
+    {
+      "start": 1880.48,
+      "duration": 4.039,
+      "text": "first select what framework you want to"
+    },
+    {
+      "start": 1882.559,
+      "duration": 3.641,
+      "text": "use then write the test which could be"
+    },
+    {
+      "start": 1884.519,
+      "duration": 3.481,
+      "text": "unit test integration test end to end"
+    },
+    {
+      "start": 1886.2,
+      "duration": 3.56,
+      "text": "test and put them alongside with your"
+    },
+    {
+      "start": 1888.0,
+      "duration": 4.24,
+      "text": "code so keep test code in the same"
+    },
+    {
+      "start": 1889.76,
+      "duration": 3.519,
+      "text": "repository use AWS code pipeline to"
+    },
+    {
+      "start": 1892.24,
+      "duration": 3.96,
+      "text": "create an"
+    },
+    {
+      "start": 1893.279,
+      "duration": 4.76,
+      "text": "automate pipeline stages here uh and"
+    },
+    {
+      "start": 1896.2,
+      "duration": 3.76,
+      "text": "then integrate testing tools like code"
+    },
+    {
+      "start": 1898.039,
+      "duration": 3.721,
+      "text": "build or genkins to execute the test"
+    },
+    {
+      "start": 1899.96,
+      "duration": 5.12,
+      "text": "whenever the pipeline is running you can"
+    },
+    {
+      "start": 1901.76,
+      "duration": 5.799,
+      "text": "also store this test in S3 buckets uh so"
+    },
+    {
+      "start": 1905.08,
+      "duration": 4.479,
+      "text": "store test artifacts or logs in Amazon"
+    },
+    {
+      "start": 1907.559,
+      "duration": 3.881,
+      "text": "S3 for reference use cloudwatch to"
+    },
+    {
+      "start": 1909.559,
+      "duration": 3.36,
+      "text": "monitor it set up notifications if"
+    },
+    {
+      "start": 1911.44,
+      "duration": 4.04,
+      "text": "anything is wrong you can set up"
+    },
+    {
+      "start": 1912.919,
+      "duration": 4.88,
+      "text": "notification and then check it or change"
+    },
+    {
+      "start": 1915.48,
+      "duration": 4.36,
+      "text": "it and then continuously improve"
+    },
+    {
+      "start": 1917.799,
+      "duration": 3.321,
+      "text": "Improvement regularly review and enhance"
+    },
+    {
+      "start": 1919.84,
+      "duration": 4.0,
+      "text": "testing process this is how you can"
+    },
+    {
+      "start": 1921.12,
+      "duration": 4.799,
+      "text": "integrate testing process in your cic"
+    },
+    {
+      "start": 1923.84,
+      "duration": 3.16,
+      "text": "pipeline very very important and most"
+    },
+    {
+      "start": 1925.919,
+      "duration": 4.681,
+      "text": "probably you will get this question"
+    },
+    {
+      "start": 1927.0,
+      "duration": 4.96,
+      "text": "whenever you apply for senior level or"
+    },
+    {
+      "start": 1930.6,
+      "duration": 3.6,
+      "text": "senior level"
+    },
+    {
+      "start": 1931.96,
+      "duration": 4.88,
+      "text": "interviews moving on the next question"
+    },
+    {
+      "start": 1934.2,
+      "duration": 5.479,
+      "text": "is explain the process of rolling back a"
+    },
+    {
+      "start": 1936.84,
+      "duration": 4.16,
+      "text": "field deployment in AWS what do you mean"
+    },
+    {
+      "start": 1939.679,
+      "duration": 2.761,
+      "text": "by rolling back let's say you have a"
+    },
+    {
+      "start": 1941.0,
+      "duration": 3.48,
+      "text": "deployment which has caused some issues"
+    },
+    {
+      "start": 1942.44,
+      "duration": 3.76,
+      "text": "and it is not working as you want so how"
+    },
+    {
+      "start": 1944.48,
+      "duration": 3.039,
+      "text": "do you roll back to previous to make"
+    },
+    {
+      "start": 1946.2,
+      "duration": 3.479,
+      "text": "sure that the things are working all"
+    },
+    {
+      "start": 1947.519,
+      "duration": 3.721,
+      "text": "right so first thing we will do is stop"
+    },
+    {
+      "start": 1949.679,
+      "duration": 5.161,
+      "text": "the deployment because it is not working"
+    },
+    {
+      "start": 1951.24,
+      "duration": 5.6,
+      "text": "fine then check what was the issue uh"
+    },
+    {
+      "start": 1954.84,
+      "duration": 3.199,
+      "text": "stop the deployment revert it back to"
+    },
+    {
+      "start": 1956.84,
+      "duration": 4.079,
+      "text": "the previous version where everything"
+    },
+    {
+      "start": 1958.039,
+      "duration": 4.961,
+      "text": "was working fine make test check what"
+    },
+    {
+      "start": 1960.919,
+      "duration": 3.401,
+      "text": "was the issue troubleshoot it and then"
+    },
+    {
+      "start": 1963.0,
+      "duration": 4.32,
+      "text": "if everything is working fine then you"
+    },
+    {
+      "start": 1964.32,
+      "duration": 4.8,
+      "text": "can upload it or then you can update it"
+    },
+    {
+      "start": 1967.32,
+      "duration": 3.359,
+      "text": "so identify failure Monitor and"
+    },
+    {
+      "start": 1969.12,
+      "duration": 3.439,
+      "text": "deployment monitor the deployment"
+    },
+    {
+      "start": 1970.679,
+      "duration": 4.041,
+      "text": "process to pinpoint what is the issue"
+    },
+    {
+      "start": 1972.559,
+      "duration": 4.641,
+      "text": "Hal any ongoing deployment to prevent"
+    },
+    {
+      "start": 1974.72,
+      "duration": 4.319,
+      "text": "further changes investigate the cost by"
+    },
+    {
+      "start": 1977.2,
+      "duration": 3.88,
+      "text": "analyzing logs and errors to understand"
+    },
+    {
+      "start": 1979.039,
+      "duration": 4.721,
+      "text": "what caused the failing of the"
+    },
+    {
+      "start": 1981.08,
+      "duration": 4.64,
+      "text": "deployment create a plan to reward back"
+    },
+    {
+      "start": 1983.76,
+      "duration": 3.96,
+      "text": "made reward back changes that were made"
+    },
+    {
+      "start": 1985.72,
+      "duration": 3.439,
+      "text": "during the fail deployment verify if"
+    },
+    {
+      "start": 1987.72,
+      "duration": 3.0,
+      "text": "everything is working fine in the"
+    },
+    {
+      "start": 1989.159,
+      "duration": 2.76,
+      "text": "previous version you can talk to your"
+    },
+    {
+      "start": 1990.72,
+      "duration": 3.28,
+      "text": "customers and make sure that everything"
+    },
+    {
+      "start": 1991.919,
+      "duration": 3.76,
+      "text": "is okay at their end as well and then"
+    },
+    {
+      "start": 1994.0,
+      "duration": 4.0,
+      "text": "create a postmortem analysis or root"
+    },
+    {
+      "start": 1995.679,
+      "duration": 5.0,
+      "text": "cause analysis to learn why this issue"
+    },
+    {
+      "start": 1998.0,
+      "duration": 4.96,
+      "text": "was caused and how can you solve it so"
+    },
+    {
+      "start": 2000.679,
+      "duration": 4.201,
+      "text": "this was the end of our AWS interview"
+    },
+    {
+      "start": 2002.96,
+      "duration": 3.559,
+      "text": "questions and answers video I hope this"
+    },
+    {
+      "start": 2004.88,
+      "duration": 3.759,
+      "text": "video was helpful and it will help you"
+    },
+    {
+      "start": 2006.519,
+      "duration": 4.0,
+      "text": "for your interviews if you want me to"
+    },
+    {
+      "start": 2008.639,
+      "duration": 3.52,
+      "text": "share this document with you do let me"
+    },
+    {
+      "start": 2010.519,
+      "duration": 3.0,
+      "text": "know in the comment section and also let"
+    },
+    {
+      "start": 2012.159,
+      "duration": 3.081,
+      "text": "me know if you want me to cover more"
+    },
+    {
+      "start": 2013.519,
+      "duration": 3.681,
+      "text": "such interview questions on terraform"
+    },
+    {
+      "start": 2015.24,
+      "duration": 3.2,
+      "text": "kubernetes uh let me know in the comment"
+    },
+    {
+      "start": 2017.2,
+      "duration": 3.359,
+      "text": "section I hope this video was"
+    },
+    {
+      "start": 2018.44,
+      "duration": 4.44,
+      "text": "informative thank you and best of luck"
+    },
+    {
+      "start": 2020.559,
+      "duration": 2.321,
+      "text": "for your"
+    },
+    {
+      "start": 2028.0,
+      "duration": 3.0,
+      "text": "interviews"
+    }
+  ]
+}

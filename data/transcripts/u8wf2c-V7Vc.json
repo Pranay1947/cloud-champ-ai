@@ -1,0 +1,681 @@
+{
+  "video": {
+    "id": "u8wf2c-V7Vc",
+    "title": "How to Install Apache Web Server with EC2 User Data Script",
+    "url": "https://www.youtube.com/watch?v=u8wf2c-V7Vc",
+    "duration": 302,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.299,
+      "duration": 4.321,
+      "text": "hey everyone Welcome to Cloud champ in"
+    },
+    {
+      "start": 2.639,
+      "duration": 4.501,
+      "text": "this video I am going to show you how we"
+    },
+    {
+      "start": 4.62,
+      "duration": 5.1,
+      "text": "can use ec2 user data script to install"
+    },
+    {
+      "start": 7.14,
+      "duration": 4.56,
+      "text": "Apache web server on our Ubuntu instance"
+    },
+    {
+      "start": 9.72,
+      "duration": 4.02,
+      "text": "so I'm going to show you everything from"
+    },
+    {
+      "start": 11.7,
+      "duration": 5.159,
+      "text": "the scratch so watch this video to here"
+    },
+    {
+      "start": 13.74,
+      "duration": 4.799,
+      "text": "before we start let's see what is user"
+    },
+    {
+      "start": 16.859,
+      "duration": 4.68,
+      "text": "reader script"
+    },
+    {
+      "start": 18.539,
+      "duration": 4.861,
+      "text": "Ure data is used to bootstrap it since"
+    },
+    {
+      "start": 21.539,
+      "duration": 3.841,
+      "text": "my bootstrapping means launching the"
+    },
+    {
+      "start": 23.4,
+      "duration": 3.48,
+      "text": "command when the machine starts and we"
+    },
+    {
+      "start": 25.38,
+      "duration": 3.899,
+      "text": "can use user data script to install"
+    },
+    {
+      "start": 26.88,
+      "duration": 4.44,
+      "text": "updates of installed softwares download"
+    },
+    {
+      "start": 29.279,
+      "duration": 4.021,
+      "text": "common files and anything that you can"
+    },
+    {
+      "start": 31.32,
+      "duration": 4.56,
+      "text": "think of in this video I'm going to show"
+    },
+    {
+      "start": 33.3,
+      "duration": 4.56,
+      "text": "you how we can use user data to install"
+    },
+    {
+      "start": 35.88,
+      "duration": 4.62,
+      "text": "Apache web server or to install lamp"
+    },
+    {
+      "start": 37.86,
+      "duration": 5.16,
+      "text": "stack on our ec2 instance so let's start"
+    },
+    {
+      "start": 40.5,
+      "duration": 4.98,
+      "text": "so I'm here on my AWS Management console"
+    },
+    {
+      "start": 43.02,
+      "duration": 3.6,
+      "text": "and I'm going to go to ec2 service in"
+    },
+    {
+      "start": 45.48,
+      "duration": 3.419,
+      "text": "the easy point I'm going to click on"
+    },
+    {
+      "start": 46.62,
+      "duration": 5.64,
+      "text": "launch instance so let's go and Notch at"
+    },
+    {
+      "start": 48.899,
+      "duration": 4.98,
+      "text": "it since so server one"
+    },
+    {
+      "start": 52.26,
+      "duration": 4.08,
+      "text": "I'm going to choose Ubuntu you can"
+    },
+    {
+      "start": 53.879,
+      "duration": 3.961,
+      "text": "choose to open to any version or you can"
+    },
+    {
+      "start": 56.34,
+      "duration": 4.98,
+      "text": "also choose Amazon Linux but the command"
+    },
+    {
+      "start": 57.84,
+      "duration": 5.58,
+      "text": "will be different so just be sure"
+    },
+    {
+      "start": 61.32,
+      "duration": 3.239,
+      "text": "then I'm going to select my keypad I'm"
+    },
+    {
+      "start": 63.42,
+      "duration": 3.239,
+      "text": "going to choose my default Security"
+    },
+    {
+      "start": 64.559,
+      "duration": 3.961,
+      "text": "Group but you can choose to have your"
+    },
+    {
+      "start": 66.659,
+      "duration": 4.381,
+      "text": "own existing Security Group make sure"
+    },
+    {
+      "start": 68.52,
+      "duration": 6.36,
+      "text": "you have HTTP enabled if you are going"
+    },
+    {
+      "start": 71.04,
+      "duration": 5.46,
+      "text": "to use web server next to add user"
+    },
+    {
+      "start": 74.88,
+      "duration": 3.72,
+      "text": "attack I want to go into advanced"
+    },
+    {
+      "start": 76.5,
+      "duration": 4.86,
+      "text": "details and at the bottom you can find"
+    },
+    {
+      "start": 78.6,
+      "duration": 4.98,
+      "text": "user data option here"
+    },
+    {
+      "start": 81.36,
+      "duration": 3.899,
+      "text": "so in this let's start writing a script"
+    },
+    {
+      "start": 83.58,
+      "duration": 4.44,
+      "text": "to write the batch script you need to"
+    },
+    {
+      "start": 85.259,
+      "duration": 5.581,
+      "text": "add shipbank at the start which is hash"
+    },
+    {
+      "start": 88.02,
+      "duration": 4.919,
+      "text": "and exclamation mark slash twin slash"
+    },
+    {
+      "start": 90.84,
+      "duration": 3.739,
+      "text": "bash and after this you can start"
+    },
+    {
+      "start": 92.939,
+      "duration": 4.32,
+      "text": "writing your"
+    },
+    {
+      "start": 94.579,
+      "duration": 4.601,
+      "text": "commands so I'm going to write apt"
+    },
+    {
+      "start": 97.259,
+      "duration": 3.841,
+      "text": "hyphen get you can see I'm not using"
+    },
+    {
+      "start": 99.18,
+      "duration": 4.5,
+      "text": "sudo here because when this user data"
+    },
+    {
+      "start": 101.1,
+      "duration": 4.4,
+      "text": "run it pass on root privileges so you"
+    },
+    {
+      "start": 103.68,
+      "duration": 4.5,
+      "text": "can choose to add sudo or you can also"
+    },
+    {
+      "start": 105.5,
+      "duration": 5.32,
+      "text": "skip it so I'm going to add APD"
+    },
+    {
+      "start": 108.18,
+      "duration": 5.579,
+      "text": "eisenguet update hyphen y to update all"
+    },
+    {
+      "start": 110.82,
+      "duration": 5.759,
+      "text": "the packages then apt hyphen get"
+    },
+    {
+      "start": 113.759,
+      "duration": 5.941,
+      "text": "install Apache"
+    },
+    {
+      "start": 116.579,
+      "duration": 5.641,
+      "text": "two hyphen web so using these two"
+    },
+    {
+      "start": 119.7,
+      "duration": 4.68,
+      "text": "commands I can have an Apache installed"
+    },
+    {
+      "start": 122.22,
+      "duration": 4.679,
+      "text": "on my machine and I if I paste my IP"
+    },
+    {
+      "start": 124.38,
+      "duration": 4.379,
+      "text": "address in a new tab I will get a test"
+    },
+    {
+      "start": 126.899,
+      "duration": 3.661,
+      "text": "page something similar to this which"
+    },
+    {
+      "start": 128.759,
+      "duration": 3.661,
+      "text": "means Apache is installed but if you"
+    },
+    {
+      "start": 130.56,
+      "duration": 4.02,
+      "text": "want to have a custom message which is"
+    },
+    {
+      "start": 132.42,
+      "duration": 4.2,
+      "text": "something similar to this you can choose"
+    },
+    {
+      "start": 134.58,
+      "duration": 5.46,
+      "text": "to make settings in this file which is"
+    },
+    {
+      "start": 136.62,
+      "duration": 5.339,
+      "text": "slash bar slash www.html to Showcase"
+    },
+    {
+      "start": 140.04,
+      "duration": 3.559,
+      "text": "that let's add a command to add a custom"
+    },
+    {
+      "start": 141.959,
+      "duration": 4.321,
+      "text": "message so I'm going to do Echo"
+    },
+    {
+      "start": 143.599,
+      "duration": 5.761,
+      "text": "subscribe to"
+    },
+    {
+      "start": 146.28,
+      "duration": 3.08,
+      "text": "Cloud chat"
+    },
+    {
+      "start": 150.239,
+      "duration": 3.601,
+      "text": "please"
+    },
+    {
+      "start": 151.8,
+      "duration": 3.439,
+      "text": "and I'm going to put this in slash for"
+    },
+    {
+      "start": 153.84,
+      "duration": 4.08,
+      "text": "Slash"
+    },
+    {
+      "start": 155.239,
+      "duration": 4.061,
+      "text": "www.html and the ningoctify which is"
+    },
+    {
+      "start": 157.92,
+      "duration": 3.24,
+      "text": "indexed"
+    },
+    {
+      "start": 159.3,
+      "duration": 4.14,
+      "text": "dot HTML"
+    },
+    {
+      "start": 161.16,
+      "duration": 5.34,
+      "text": "so next we need to start this service"
+    },
+    {
+      "start": 163.44,
+      "duration": 6.0,
+      "text": "I'm going to do systemct and start a"
+    },
+    {
+      "start": 166.5,
+      "duration": 4.92,
+      "text": "path sheet 2. so if you see at this"
+    },
+    {
+      "start": 169.44,
+      "duration": 3.36,
+      "text": "command the system install this is to"
+    },
+    {
+      "start": 171.42,
+      "duration": 3.3,
+      "text": "update all the packages to install"
+    },
+    {
+      "start": 172.8,
+      "duration": 5.1,
+      "text": "Apache web server to put the custom"
+    },
+    {
+      "start": 174.72,
+      "duration": 5.519,
+      "text": "message in the index.html and to start"
+    },
+    {
+      "start": 177.9,
+      "duration": 4.26,
+      "text": "the service so once this instance is"
+    },
+    {
+      "start": 180.239,
+      "duration": 3.481,
+      "text": "launched we should see this message once"
+    },
+    {
+      "start": 182.16,
+      "duration": 3.54,
+      "text": "we can paste the IP address in the new"
+    },
+    {
+      "start": 183.72,
+      "duration": 4.2,
+      "text": "tags so I'm going to go and click on"
+    },
+    {
+      "start": 185.7,
+      "duration": 4.08,
+      "text": "launch it states and let's wait for the"
+    },
+    {
+      "start": 187.92,
+      "duration": 3.84,
+      "text": "instance to come up in running State and"
+    },
+    {
+      "start": 189.78,
+      "duration": 4.92,
+      "text": "then we can test it out by pasting the"
+    },
+    {
+      "start": 191.76,
+      "duration": 4.92,
+      "text": "IP in a new tab right now if you see the"
+    },
+    {
+      "start": 194.7,
+      "duration": 3.72,
+      "text": "instance is at pending state so I'm"
+    },
+    {
+      "start": 196.68,
+      "duration": 3.3,
+      "text": "we're going to wait till the instance"
+    },
+    {
+      "start": 198.42,
+      "duration": 2.64,
+      "text": "come up in running state with status"
+    },
+    {
+      "start": 199.98,
+      "duration": 4.1,
+      "text": "checks"
+    },
+    {
+      "start": 201.06,
+      "duration": 3.02,
+      "text": "running as well"
+    },
+    {
+      "start": 206.76,
+      "duration": 4.02,
+      "text": "all right so if you see if you see now"
+    },
+    {
+      "start": 209.04,
+      "duration": 3.36,
+      "text": "on instances in running state so I'm"
+    },
+    {
+      "start": 210.78,
+      "duration": 4.379,
+      "text": "going to copy this public IP address and"
+    },
+    {
+      "start": 212.4,
+      "duration": 4.619,
+      "text": "paste it in a new tab once I paste it I"
+    },
+    {
+      "start": 215.159,
+      "duration": 3.421,
+      "text": "should see the message which is"
+    },
+    {
+      "start": 217.019,
+      "duration": 4.08,
+      "text": "subscribed to Cloud champ which means"
+    },
+    {
+      "start": 218.58,
+      "duration": 4.7,
+      "text": "our Apache web server has been installed"
+    },
+    {
+      "start": 221.099,
+      "duration": 4.681,
+      "text": "and we also entered the message in the"
+    },
+    {
+      "start": 223.28,
+      "duration": 4.12,
+      "text": "index.html file that is why we can see"
+    },
+    {
+      "start": 225.78,
+      "duration": 3.84,
+      "text": "it here so I know you have now"
+    },
+    {
+      "start": 227.4,
+      "duration": 4.919,
+      "text": "understood how to set up Apache web"
+    },
+    {
+      "start": 229.62,
+      "duration": 5.1,
+      "text": "server using easy to user data if you"
+    },
+    {
+      "start": 232.319,
+      "duration": 4.321,
+      "text": "have any questions you can let me know"
+    },
+    {
+      "start": 234.72,
+      "duration": 3.659,
+      "text": "in the comment section let's say you"
+    },
+    {
+      "start": 236.64,
+      "duration": 3.42,
+      "text": "want to make a change in the user data"
+    },
+    {
+      "start": 238.379,
+      "duration": 3.481,
+      "text": "so if you want to make a change in the"
+    },
+    {
+      "start": 240.06,
+      "duration": 4.5,
+      "text": "user data you can make a change by going"
+    },
+    {
+      "start": 241.86,
+      "duration": 4.98,
+      "text": "in actions in instant settings and click"
+    },
+    {
+      "start": 244.56,
+      "duration": 4.679,
+      "text": "on edit user data but for YouTube almost"
+    },
+    {
+      "start": 246.84,
+      "duration": 4.08,
+      "text": "you need to have the instance in stop"
+    },
+    {
+      "start": 249.239,
+      "duration": 3.661,
+      "text": "state so you can see it says to edit"
+    },
+    {
+      "start": 250.92,
+      "duration": 3.899,
+      "text": "your user data you can you need to stop"
+    },
+    {
+      "start": 252.9,
+      "duration": 4.44,
+      "text": "your instance so once you stop it you"
+    },
+    {
+      "start": 254.819,
+      "duration": 4.081,
+      "text": "can choose to edit the user data we add"
+    },
+    {
+      "start": 257.34,
+      "duration": 3.84,
+      "text": "any commands or remove any commands and"
+    },
+    {
+      "start": 258.9,
+      "duration": 4.32,
+      "text": "then start the instance again"
+    },
+    {
+      "start": 261.18,
+      "duration": 5.28,
+      "text": "So This Is How We Do how you can install"
+    },
+    {
+      "start": 263.22,
+      "duration": 5.039,
+      "text": "Apache web server on Ubuntu instance if"
+    },
+    {
+      "start": 266.46,
+      "duration": 3.84,
+      "text": "you want to boost this steps on Amazon"
+    },
+    {
+      "start": 268.259,
+      "duration": 5.401,
+      "text": "Linux you can follow the documentation"
+    },
+    {
+      "start": 270.3,
+      "duration": 5.7,
+      "text": "by AWS so I'm going to share the link so"
+    },
+    {
+      "start": 273.66,
+      "duration": 4.92,
+      "text": "here is the documentation by AWS to run"
+    },
+    {
+      "start": 276.0,
+      "duration": 4.979,
+      "text": "commands on Linux instance using user"
+    },
+    {
+      "start": 278.58,
+      "duration": 5.839,
+      "text": "data you can find a script here which is"
+    },
+    {
+      "start": 280.979,
+      "duration": 7.081,
+      "text": "to install lab Linux Apache web server"
+    },
+    {
+      "start": 284.419,
+      "duration": 5.381,
+      "text": "MySQL mariadb pH UI admit so I'm going"
+    },
+    {
+      "start": 288.06,
+      "duration": 3.419,
+      "text": "to post the link in below and I hope"
+    },
+    {
+      "start": 289.8,
+      "duration": 3.179,
+      "text": "this was informative if you found this"
+    },
+    {
+      "start": 291.479,
+      "duration": 3.121,
+      "text": "video pretty helpful and please"
+    },
+    {
+      "start": 292.979,
+      "duration": 3.181,
+      "text": "subscribe to Cloud champ your support"
+    },
+    {
+      "start": 294.6,
+      "duration": 3.539,
+      "text": "means a lot so please subscribe and"
+    },
+    {
+      "start": 296.16,
+      "duration": 4.28,
+      "text": "share this video thank you and have a"
+    },
+    {
+      "start": 298.139,
+      "duration": 2.301,
+      "text": "good day"
+    }
+  ]
+}

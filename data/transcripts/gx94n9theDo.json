@@ -1,0 +1,3521 @@
+{
+  "video": {
+    "id": "gx94n9theDo",
+    "title": "I use these TOP Docker Tools to INCREASE Productivity!",
+    "url": "https://www.youtube.com/watch?v=gx94n9theDo",
+    "duration": 1487,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 3.399,
+      "text": "in this video I going to show you how I"
+    },
+    {
+      "start": 2.12,
+      "duration": 3.52,
+      "text": "use different Docker products to"
+    },
+    {
+      "start": 3.639,
+      "duration": 4.681,
+      "text": "increase my productivity and how you can"
+    },
+    {
+      "start": 5.64,
+      "duration": 4.039,
+      "text": "do it too with a Hands-On demo so this"
+    },
+    {
+      "start": 8.32,
+      "duration": 3.12,
+      "text": "is the project that we are going to be"
+    },
+    {
+      "start": 9.679,
+      "duration": 3.801,
+      "text": "using throughout this video to learn"
+    },
+    {
+      "start": 11.44,
+      "duration": 4.0,
+      "text": "about different Docker products this"
+    },
+    {
+      "start": 13.48,
+      "duration": 3.76,
+      "text": "project is a system monitoring dashboard"
+    },
+    {
+      "start": 15.44,
+      "duration": 4.599,
+      "text": "that will collect system data such as"
+    },
+    {
+      "start": 17.24,
+      "duration": 5.08,
+      "text": "CPU memory disk and also showcase them"
+    },
+    {
+      "start": 20.039,
+      "duration": 4.641,
+      "text": "on the browser we are using flask"
+    },
+    {
+      "start": 22.32,
+      "duration": 4.64,
+      "text": "Library along with redis redus is used"
+    },
+    {
+      "start": 24.68,
+      "duration": 4.919,
+      "text": "to store five recent metrics and we will"
+    },
+    {
+      "start": 26.96,
+      "duration": 4.2,
+      "text": "use this project to deploy it on Docker"
+    },
+    {
+      "start": 29.599,
+      "duration": 3.521,
+      "text": "but we not just containerizing this"
+    },
+    {
+      "start": 31.16,
+      "duration": 4.16,
+      "text": "application we will also be using"
+    },
+    {
+      "start": 33.12,
+      "duration": 4.92,
+      "text": "Advanced Docker tools to enhance"
+    },
+    {
+      "start": 35.32,
+      "duration": 4.48,
+      "text": "development security and testing Docker"
+    },
+    {
+      "start": 38.04,
+      "duration": 3.56,
+      "text": "is the most popular container technology"
+    },
+    {
+      "start": 39.8,
+      "duration": 3.64,
+      "text": "and is used by almost every company"
+    },
+    {
+      "start": 41.6,
+      "duration": 3.6,
+      "text": "these days so learning all these tools"
+    },
+    {
+      "start": 43.44,
+      "duration": 3.56,
+      "text": "and having Hands-On knowledge on Docker"
+    },
+    {
+      "start": 45.2,
+      "duration": 3.879,
+      "text": "products is going to help you in your"
+    },
+    {
+      "start": 47.0,
+      "duration": 3.199,
+      "text": "career by the end of this tutorial you"
+    },
+    {
+      "start": 49.079,
+      "duration": 3.28,
+      "text": "will be able to package your"
+    },
+    {
+      "start": 50.199,
+      "duration": 4.2,
+      "text": "applications as Docker container run and"
+    },
+    {
+      "start": 52.359,
+      "duration": 3.921,
+      "text": "manage them using Docker desktop use"
+    },
+    {
+      "start": 54.399,
+      "duration": 3.64,
+      "text": "Docker compose and compose watch to"
+    },
+    {
+      "start": 56.28,
+      "duration": 4.16,
+      "text": "manage multiple Docker containers and"
+    },
+    {
+      "start": 58.039,
+      "duration": 4.48,
+      "text": "also for live reloading scan your Docker"
+    },
+    {
+      "start": 60.44,
+      "duration": 3.96,
+      "text": "images using Docker Scout speed up your"
+    },
+    {
+      "start": 62.519,
+      "duration": 4.041,
+      "text": "build using Docker build cloud and"
+    },
+    {
+      "start": 64.4,
+      "duration": 4.359,
+      "text": "lastly automate testing using test"
+    },
+    {
+      "start": 66.56,
+      "duration": 4.28,
+      "text": "containers this video is sponsored by"
+    },
+    {
+      "start": 68.759,
+      "duration": 3.441,
+      "text": "Docker and I am a Docker Captain so I'm"
+    },
+    {
+      "start": 70.84,
+      "duration": 3.24,
+      "text": "going to show you everything through"
+    },
+    {
+      "start": 72.2,
+      "duration": 4.2,
+      "text": "Hands-On demo so make sure you watch"
+    },
+    {
+      "start": 74.08,
+      "duration": 4.399,
+      "text": "this video till the end let's go all"
+    },
+    {
+      "start": 76.4,
+      "duration": 4.079,
+      "text": "right let's get started the first step"
+    },
+    {
+      "start": 78.479,
+      "duration": 3.761,
+      "text": "is to clone this repository and you can"
+    },
+    {
+      "start": 80.479,
+      "duration": 4.081,
+      "text": "find the link of this repository in the"
+    },
+    {
+      "start": 82.24,
+      "duration": 4.519,
+      "text": "video description anyone can do this"
+    },
+    {
+      "start": 84.56,
+      "duration": 4.72,
+      "text": "project including beginners because I've"
+    },
+    {
+      "start": 86.759,
+      "duration": 4.72,
+      "text": "added all the steps all the commands"
+    },
+    {
+      "start": 89.28,
+      "duration": 4.199,
+      "text": "including Docker file Docker compose"
+    },
+    {
+      "start": 91.479,
+      "duration": 4.041,
+      "text": "file in the readme section of this"
+    },
+    {
+      "start": 93.479,
+      "duration": 3.92,
+      "text": "repository so make sure you watch this"
+    },
+    {
+      "start": 95.52,
+      "duration": 3.599,
+      "text": "video till the end and also practice"
+    },
+    {
+      "start": 97.399,
+      "duration": 3.68,
+      "text": "along with me because all the steps are"
+    },
+    {
+      "start": 99.119,
+      "duration": 3.521,
+      "text": "already here now the first step is to"
+    },
+    {
+      "start": 101.079,
+      "duration": 3.841,
+      "text": "clone this repository so click on this"
+    },
+    {
+      "start": 102.64,
+      "duration": 4.479,
+      "text": "code button copy the URL and I'm going"
+    },
+    {
+      "start": 104.92,
+      "duration": 4.08,
+      "text": "to go to my terminal in my terminal I'm"
+    },
+    {
+      "start": 107.119,
+      "duration": 3.801,
+      "text": "going to run the command get clone and"
+    },
+    {
+      "start": 109.0,
+      "duration": 3.84,
+      "text": "paste this URL and it will go ahead and"
+    },
+    {
+      "start": 110.92,
+      "duration": 3.559,
+      "text": "start cloning this repo now I have this"
+    },
+    {
+      "start": 112.84,
+      "duration": 3.559,
+      "text": "repository downloaded in my local"
+    },
+    {
+      "start": 114.479,
+      "duration": 4.401,
+      "text": "machine and I'm going to open this up in"
+    },
+    {
+      "start": 116.399,
+      "duration": 4.801,
+      "text": "my vs code you can see the project is"
+    },
+    {
+      "start": 118.88,
+      "duration": 4.44,
+      "text": "here we have all the files is required"
+    },
+    {
+      "start": 121.2,
+      "duration": 3.519,
+      "text": "so this is the app.py as you can see it"
+    },
+    {
+      "start": 123.32,
+      "duration": 4.96,
+      "text": "is using all these different libraries"
+    },
+    {
+      "start": 124.719,
+      "duration": 4.88,
+      "text": "flask PSU till date time redis OS Etc to"
+    },
+    {
+      "start": 128.28,
+      "duration": 3.0,
+      "text": "give you a general information about"
+    },
+    {
+      "start": 129.599,
+      "duration": 3.801,
+      "text": "this project this project is collecting"
+    },
+    {
+      "start": 131.28,
+      "duration": 4.679,
+      "text": "system metrics as I've already mentioned"
+    },
+    {
+      "start": 133.4,
+      "duration": 4.0,
+      "text": "which is the CPU memory and disk and"
+    },
+    {
+      "start": 135.959,
+      "duration": 3.92,
+      "text": "once it collects the metric it is going"
+    },
+    {
+      "start": 137.4,
+      "duration": 4.52,
+      "text": "to refresh every 5 Seconds it is also"
+    },
+    {
+      "start": 139.879,
+      "duration": 4.321,
+      "text": "going to store five recent metrics in"
+    },
+    {
+      "start": 141.92,
+      "duration": 3.8,
+      "text": "the redis if you want to know more about"
+    },
+    {
+      "start": 144.2,
+      "duration": 3.28,
+      "text": "this project all you can do is copy this"
+    },
+    {
+      "start": 145.72,
+      "duration": 3.56,
+      "text": "and go to chat GPD and ask it to explain"
+    },
+    {
+      "start": 147.48,
+      "duration": 3.6,
+      "text": "it to you this video is not about the"
+    },
+    {
+      "start": 149.28,
+      "duration": 4.56,
+      "text": "code it is is about learning how to use"
+    },
+    {
+      "start": 151.08,
+      "duration": 5.159,
+      "text": "Docker to deploy this application before"
+    },
+    {
+      "start": 153.84,
+      "duration": 4.32,
+      "text": "we use Docker to containerize this let's"
+    },
+    {
+      "start": 156.239,
+      "duration": 4.08,
+      "text": "confirm if this is running in our local"
+    },
+    {
+      "start": 158.16,
+      "duration": 4.079,
+      "text": "machine or not to run this python"
+    },
+    {
+      "start": 160.319,
+      "duration": 3.401,
+      "text": "project I'm going to open up my terminal"
+    },
+    {
+      "start": 162.239,
+      "duration": 5.761,
+      "text": "and in the terminal I'm going to say"
+    },
+    {
+      "start": 163.72,
+      "duration": 6.0,
+      "text": "Python 3 app.py for you to run this you"
+    },
+    {
+      "start": 168.0,
+      "duration": 3.92,
+      "text": "need to have python installed you also"
+    },
+    {
+      "start": 169.72,
+      "duration": 3.64,
+      "text": "need to install redis so if you want"
+    },
+    {
+      "start": 171.92,
+      "duration": 3.12,
+      "text": "help let me know in the comment section"
+    },
+    {
+      "start": 173.36,
+      "duration": 3.48,
+      "text": "but you can easily install redis from"
+    },
+    {
+      "start": 175.04,
+      "duration": 3.839,
+      "text": "the official documentation so if you"
+    },
+    {
+      "start": 176.84,
+      "duration": 3.319,
+      "text": "search for redis you can just go to this"
+    },
+    {
+      "start": 178.879,
+      "duration": 4.161,
+      "text": "document and then download download it"
+    },
+    {
+      "start": 180.159,
+      "duration": 4.681,
+      "text": "for your windows Linux Mac OS anything I"
+    },
+    {
+      "start": 183.04,
+      "duration": 3.199,
+      "text": "have red already installed in my machine"
+    },
+    {
+      "start": 184.84,
+      "duration": 3.2,
+      "text": "so I'm going to just show you how to run"
+    },
+    {
+      "start": 186.239,
+      "duration": 4.801,
+      "text": "this code so in the terminal I'm going"
+    },
+    {
+      "start": 188.04,
+      "duration": 4.559,
+      "text": "to say Python 3 app.py and press enter"
+    },
+    {
+      "start": 191.04,
+      "duration": 4.16,
+      "text": "once I press enter I get this error"
+    },
+    {
+      "start": 192.599,
+      "duration": 3.92,
+      "text": "saying no module named flask so I need"
+    },
+    {
+      "start": 195.2,
+      "duration": 5.759,
+      "text": "to install this module so I'm going to"
+    },
+    {
+      "start": 196.519,
+      "duration": 6.041,
+      "text": "say pip 3 install flask flask is a"
+    },
+    {
+      "start": 200.959,
+      "duration": 3.681,
+      "text": "dependency here which is required for"
+    },
+    {
+      "start": 202.56,
+      "duration": 3.44,
+      "text": "this application to run now when I press"
+    },
+    {
+      "start": 204.64,
+      "duration": 3.48,
+      "text": "enter it goes ahead and starts"
+    },
+    {
+      "start": 206.0,
+      "duration": 3.879,
+      "text": "installing flask once I install flask"
+    },
+    {
+      "start": 208.12,
+      "duration": 4.199,
+      "text": "and run this again I'm going to get"
+    },
+    {
+      "start": 209.879,
+      "duration": 3.881,
+      "text": "another saying PS util not installed so"
+    },
+    {
+      "start": 212.319,
+      "duration": 4.0,
+      "text": "this application requires different"
+    },
+    {
+      "start": 213.76,
+      "duration": 5.0,
+      "text": "dependencies like flask PS util redis"
+    },
+    {
+      "start": 216.319,
+      "duration": 4.721,
+      "text": "date time Etc and this is what Docker"
+    },
+    {
+      "start": 218.76,
+      "duration": 4.039,
+      "text": "actually solves I have all this"
+    },
+    {
+      "start": 221.04,
+      "duration": 4.24,
+      "text": "requirements or dependency present"
+    },
+    {
+      "start": 222.799,
+      "duration": 4.321,
+      "text": "inside this requirements.txt file so"
+    },
+    {
+      "start": 225.28,
+      "duration": 4.679,
+      "text": "rather than installing them one by one"
+    },
+    {
+      "start": 227.12,
+      "duration": 4.319,
+      "text": "all you need to do is say pip 3 install"
+    },
+    {
+      "start": 229.959,
+      "duration": 3.241,
+      "text": "hyphen R and name of the file"
+    },
+    {
+      "start": 231.439,
+      "duration": 3.8,
+      "text": "requirements.txt which is going to"
+    },
+    {
+      "start": 233.2,
+      "duration": 5.64,
+      "text": "install everything once it is installed"
+    },
+    {
+      "start": 235.239,
+      "duration": 6.041,
+      "text": "I'm going to say the Python 3 app.py"
+    },
+    {
+      "start": 238.84,
+      "duration": 4.08,
+      "text": "command again to run it and you can see"
+    },
+    {
+      "start": 241.28,
+      "duration": 4.239,
+      "text": "now it is running and you can check that"
+    },
+    {
+      "start": 242.92,
+      "duration": 3.959,
+      "text": "on your Local Host 50001 so let's go to"
+    },
+    {
+      "start": 245.519,
+      "duration": 4.28,
+      "text": "Local"
+    },
+    {
+      "start": 246.879,
+      "duration": 5.681,
+      "text": "Host 50001 and this is our application"
+    },
+    {
+      "start": 249.799,
+      "duration": 4.481,
+      "text": "which is running showing us CPU memory"
+    },
+    {
+      "start": 252.56,
+      "duration": 3.76,
+      "text": "and disk you can see very soon it's"
+    },
+    {
+      "start": 254.28,
+      "duration": 5.199,
+      "text": "going to be updated and it updates every"
+    },
+    {
+      "start": 256.32,
+      "duration": 4.879,
+      "text": "5 seconds so very soon you will see it"
+    },
+    {
+      "start": 259.479,
+      "duration": 4.321,
+      "text": "is updated now and you can also see the"
+    },
+    {
+      "start": 261.199,
+      "duration": 4.241,
+      "text": "logs here now as I told you this"
+    },
+    {
+      "start": 263.8,
+      "duration": 3.88,
+      "text": "application is also going to store some"
+    },
+    {
+      "start": 265.44,
+      "duration": 4.039,
+      "text": "data in redis so let me show you how"
+    },
+    {
+      "start": 267.68,
+      "duration": 4.12,
+      "text": "that works in my new terminal I'm going"
+    },
+    {
+      "start": 269.479,
+      "duration": 4.241,
+      "text": "to say redis hyphen CLI you can only run"
+    },
+    {
+      "start": 271.8,
+      "duration": 4.2,
+      "text": "this when you have redis installed and"
+    },
+    {
+      "start": 273.72,
+      "duration": 5.039,
+      "text": "now to show what metrics do I have I'll"
+    },
+    {
+      "start": 276.0,
+      "duration": 4.84,
+      "text": "say keys and Then star this shows me"
+    },
+    {
+      "start": 278.759,
+      "duration": 4.841,
+      "text": "that I have metrics stored here so let's"
+    },
+    {
+      "start": 280.84,
+      "duration": 4.28,
+      "text": "see what is the metric type is list so"
+    },
+    {
+      "start": 283.6,
+      "duration": 4.84,
+      "text": "if I want to see this I going to say"
+    },
+    {
+      "start": 285.12,
+      "duration": 6.2,
+      "text": "okay lrange metrix 0 to minus one okay"
+    },
+    {
+      "start": 288.44,
+      "duration": 5.16,
+      "text": "so you can see these are the five latest"
+    },
+    {
+      "start": 291.32,
+      "duration": 3.879,
+      "text": "metrics that are stored inside redice so"
+    },
+    {
+      "start": 293.6,
+      "duration": 4.52,
+      "text": "we have an application that is showing"
+    },
+    {
+      "start": 295.199,
+      "duration": 5.0,
+      "text": "us metrics and also storing it in redis"
+    },
+    {
+      "start": 298.12,
+      "duration": 3.639,
+      "text": "interesting project right I want you to"
+    },
+    {
+      "start": 300.199,
+      "duration": 3.361,
+      "text": "deploy this so we have now locally"
+    },
+    {
+      "start": 301.759,
+      "duration": 4.521,
+      "text": "deployed this application we want to"
+    },
+    {
+      "start": 303.56,
+      "duration": 4.76,
+      "text": "deploy this using Docker and later on"
+    },
+    {
+      "start": 306.28,
+      "duration": 4.16,
+      "text": "also use Advanced Docker tools to"
+    },
+    {
+      "start": 308.32,
+      "duration": 4.4,
+      "text": "enhance development security making it"
+    },
+    {
+      "start": 310.44,
+      "duration": 3.8,
+      "text": "fast reliable and lot more now before we"
+    },
+    {
+      "start": 312.72,
+      "duration": 3.4,
+      "text": "use Docker to containerize our"
+    },
+    {
+      "start": 314.24,
+      "duration": 4.079,
+      "text": "application let me quickly explain you"
+    },
+    {
+      "start": 316.12,
+      "duration": 3.799,
+      "text": "what is Docker and why do we use it so"
+    },
+    {
+      "start": 318.319,
+      "duration": 3.121,
+      "text": "Docker is a tool that lets you package"
+    },
+    {
+      "start": 319.919,
+      "duration": 3.4,
+      "text": "your applications along with its"
+    },
+    {
+      "start": 321.44,
+      "duration": 3.96,
+      "text": "dependencies and everything necessary"
+    },
+    {
+      "start": 323.319,
+      "duration": 5.641,
+      "text": "into a container so that it can run"
+    },
+    {
+      "start": 325.4,
+      "duration": 5.4,
+      "text": "anywhere be it Linux Mac OS windows or"
+    },
+    {
+      "start": 328.96,
+      "duration": 3.48,
+      "text": "local de velopment staging production"
+    },
+    {
+      "start": 330.8,
+      "duration": 3.64,
+      "text": "anywhere it will run the same because"
+    },
+    {
+      "start": 332.44,
+      "duration": 4.199,
+      "text": "this container has your applications"
+    },
+    {
+      "start": 334.44,
+      "duration": 3.92,
+      "text": "dependencies and everything necessary to"
+    },
+    {
+      "start": 336.639,
+      "duration": 3.521,
+      "text": "run it now that you understood what is"
+    },
+    {
+      "start": 338.36,
+      "duration": 3.2,
+      "text": "Docker let's see it in action it's"
+    },
+    {
+      "start": 340.16,
+      "duration": 2.8,
+      "text": "always a best practice to run your"
+    },
+    {
+      "start": 341.56,
+      "duration": 3.24,
+      "text": "application locally before you"
+    },
+    {
+      "start": 342.96,
+      "duration": 3.519,
+      "text": "containerize it and now if you want to"
+    },
+    {
+      "start": 344.8,
+      "duration": 3.959,
+      "text": "containerize it or run this as a Docker"
+    },
+    {
+      "start": 346.479,
+      "duration": 4.361,
+      "text": "container the first step is to create a"
+    },
+    {
+      "start": 348.759,
+      "duration": 3.921,
+      "text": "Docker file so we need to First create a"
+    },
+    {
+      "start": 350.84,
+      "duration": 3.919,
+      "text": "Docker file out of which we will create"
+    },
+    {
+      "start": 352.68,
+      "duration": 4.239,
+      "text": "a Docker image and then run it as a"
+    },
+    {
+      "start": 354.759,
+      "duration": 4.121,
+      "text": "Docker container so what is Docker file"
+    },
+    {
+      "start": 356.919,
+      "duration": 4.321,
+      "text": "a Docker file is a set of instructions"
+    },
+    {
+      "start": 358.88,
+      "duration": 3.84,
+      "text": "that will tell how you want the image to"
+    },
+    {
+      "start": 361.24,
+      "duration": 3.72,
+      "text": "be so we are going to be creating a"
+    },
+    {
+      "start": 362.72,
+      "duration": 4.08,
+      "text": "Docker file so now to create a Docker"
+    },
+    {
+      "start": 364.96,
+      "duration": 3.92,
+      "text": "file you need to name it the same way as"
+    },
+    {
+      "start": 366.8,
+      "duration": 4.72,
+      "text": "it is which is Docker file and you can"
+    },
+    {
+      "start": 368.88,
+      "duration": 5.8,
+      "text": "see this Docker logo as well GitHub"
+    },
+    {
+      "start": 371.52,
+      "duration": 5.239,
+      "text": "copilot to create this Docker file you"
+    },
+    {
+      "start": 374.68,
+      "duration": 4.2,
+      "text": "can also use co-pilot or you can"
+    },
+    {
+      "start": 376.759,
+      "duration": 4.0,
+      "text": "directly copy it from the readme section"
+    },
+    {
+      "start": 378.88,
+      "duration": 5.4,
+      "text": "so I'm going to click on this here and"
+    },
+    {
+      "start": 380.759,
+      "duration": 5.801,
+      "text": "ask co-pilot to give me the docker file"
+    },
+    {
+      "start": 384.28,
+      "duration": 4.52,
+      "text": "so we have this file here which is using"
+    },
+    {
+      "start": 386.56,
+      "duration": 5.24,
+      "text": "python 3.9 as the base image work"
+    },
+    {
+      "start": 388.8,
+      "duration": 6.36,
+      "text": "directory as app requirements.txt is"
+    },
+    {
+      "start": 391.8,
+      "duration": 5.08,
+      "text": "copied okay let's use this and now we"
+    },
+    {
+      "start": 395.16,
+      "duration": 2.879,
+      "text": "have this Docker file ready if you want"
+    },
+    {
+      "start": 396.88,
+      "duration": 2.92,
+      "text": "to learn about all this different"
+    },
+    {
+      "start": 398.039,
+      "duration": 3.88,
+      "text": "instructions I have a separate video"
+    },
+    {
+      "start": 399.8,
+      "duration": 3.76,
+      "text": "created and if you don't know what from"
+    },
+    {
+      "start": 401.919,
+      "duration": 3.321,
+      "text": "means or work directory means or copy"
+    },
+    {
+      "start": 403.56,
+      "duration": 3.24,
+      "text": "means I will highly recommend you to"
+    },
+    {
+      "start": 405.24,
+      "duration": 3.6,
+      "text": "check that out these are all Docker"
+    },
+    {
+      "start": 406.8,
+      "duration": 3.959,
+      "text": "instructions that tell Docker how you"
+    },
+    {
+      "start": 408.84,
+      "duration": 4.44,
+      "text": "want the image to be so we have this"
+    },
+    {
+      "start": 410.759,
+      "duration": 3.801,
+      "text": "Docker file here let's go ahead and run"
+    },
+    {
+      "start": 413.28,
+      "duration": 3.28,
+      "text": "this to run this we need to run the"
+    },
+    {
+      "start": 414.56,
+      "duration": 3.479,
+      "text": "command Docker build so Docker build"
+    },
+    {
+      "start": 416.56,
+      "duration": 3.56,
+      "text": "hyphen T and the name of the image you"
+    },
+    {
+      "start": 418.039,
+      "duration": 4.041,
+      "text": "want uh okay yeah"
+    },
+    {
+      "start": 420.12,
+      "duration": 3.72,
+      "text": "GitHub copilot has also given us this"
+    },
+    {
+      "start": 422.08,
+      "duration": 3.399,
+      "text": "command so I'm going to copy this so the"
+    },
+    {
+      "start": 423.84,
+      "duration": 2.88,
+      "text": "command is Docker build hyphen T and the"
+    },
+    {
+      "start": 425.479,
+      "duration": 3.72,
+      "text": "name of the image is going to be my"
+    },
+    {
+      "start": 426.72,
+      "duration": 4.8,
+      "text": "flask app dot once I press enter you can"
+    },
+    {
+      "start": 429.199,
+      "duration": 4.481,
+      "text": "see the image is now being created from"
+    },
+    {
+      "start": 431.52,
+      "duration": 4.56,
+      "text": "this Docker file and now the image is"
+    },
+    {
+      "start": 433.68,
+      "duration": 5.56,
+      "text": "created you can check your image by"
+    },
+    {
+      "start": 436.08,
+      "duration": 5.32,
+      "text": "simply running Docker images but a"
+    },
+    {
+      "start": 439.24,
+      "duration": 4.519,
+      "text": "better way is to check it through Docker"
+    },
+    {
+      "start": 441.4,
+      "duration": 3.96,
+      "text": "desktop so a Docker desktop is where you"
+    },
+    {
+      "start": 443.759,
+      "duration": 4.361,
+      "text": "can see all your different images"
+    },
+    {
+      "start": 445.36,
+      "duration": 4.44,
+      "text": "containers volumes builds Etc this is a"
+    },
+    {
+      "start": 448.12,
+      "duration": 4.16,
+      "text": "graphical user interface to manage your"
+    },
+    {
+      "start": 449.8,
+      "duration": 4.64,
+      "text": "image containers and volumes I have this"
+    },
+    {
+      "start": 452.28,
+      "duration": 3.52,
+      "text": "Docker desktop installed if you don't"
+    },
+    {
+      "start": 454.44,
+      "duration": 2.92,
+      "text": "have it installed you can simply go to"
+    },
+    {
+      "start": 455.8,
+      "duration": 4.239,
+      "text": "the browser and just search for Docker"
+    },
+    {
+      "start": 457.36,
+      "duration": 4.399,
+      "text": "desktop uh this is the page or else you"
+    },
+    {
+      "start": 460.039,
+      "duration": 3.84,
+      "text": "can just go to the repository in the"
+    },
+    {
+      "start": 461.759,
+      "duration": 4.481,
+      "text": "repository you can find steps and click"
+    },
+    {
+      "start": 463.879,
+      "duration": 4.32,
+      "text": "on this link to install Docker desktop"
+    },
+    {
+      "start": 466.24,
+      "duration": 3.16,
+      "text": "you can find Docker desktop here in this"
+    },
+    {
+      "start": 468.199,
+      "duration": 2.641,
+      "text": "video we are going to be learning about"
+    },
+    {
+      "start": 469.4,
+      "duration": 4.12,
+      "text": "Docker desktop we also going to learn"
+    },
+    {
+      "start": 470.84,
+      "duration": 4.919,
+      "text": "about Docker Scout test containers build"
+    },
+    {
+      "start": 473.52,
+      "duration": 4.28,
+      "text": "Cloud Docker compose Docker compose"
+    },
+    {
+      "start": 475.759,
+      "duration": 4.12,
+      "text": "watch and lot more so make sure you"
+    },
+    {
+      "start": 477.8,
+      "duration": 3.92,
+      "text": "stick to the video till the end I have"
+    },
+    {
+      "start": 479.879,
+      "duration": 3.561,
+      "text": "this Docker desktop already installed if"
+    },
+    {
+      "start": 481.72,
+      "duration": 3.68,
+      "text": "you don't have it installed you can go"
+    },
+    {
+      "start": 483.44,
+      "duration": 4.24,
+      "text": "ahead and install it from this official"
+    },
+    {
+      "start": 485.4,
+      "duration": 4.28,
+      "text": "documentation you can see images here in"
+    },
+    {
+      "start": 487.68,
+      "duration": 4.56,
+      "text": "this images you can see this my flask is"
+    },
+    {
+      "start": 489.68,
+      "duration": 4.239,
+      "text": "the image that is created 22 seconds ago"
+    },
+    {
+      "start": 492.24,
+      "duration": 3.56,
+      "text": "when I click on this image I can see all"
+    },
+    {
+      "start": 493.919,
+      "duration": 3.361,
+      "text": "the different layers here so you can see"
+    },
+    {
+      "start": 495.8,
+      "duration": 3.119,
+      "text": "these are all the different layers and I"
+    },
+    {
+      "start": 497.28,
+      "duration": 3.479,
+      "text": "can go ahead run this image as a"
+    },
+    {
+      "start": 498.919,
+      "duration": 3.761,
+      "text": "container as well so when I click on run"
+    },
+    {
+      "start": 500.759,
+      "duration": 3.4,
+      "text": "option here optional settings where I"
+    },
+    {
+      "start": 502.68,
+      "duration": 4.44,
+      "text": "can fill in what should I name this I"
+    },
+    {
+      "start": 504.159,
+      "duration": 5.72,
+      "text": "can name this my monitoring container so"
+    },
+    {
+      "start": 507.12,
+      "duration": 3.88,
+      "text": "monitoring container and the host p on"
+    },
+    {
+      "start": 509.879,
+      "duration": 3.441,
+      "text": "which I want to run this so let's say I"
+    },
+    {
+      "start": 511.0,
+      "duration": 4.32,
+      "text": "want to run this on maybe 9,000 so I'll"
+    },
+    {
+      "start": 513.32,
+      "duration": 3.56,
+      "text": "say 9,000 and then click on run once you"
+    },
+    {
+      "start": 515.32,
+      "duration": 4.279,
+      "text": "click on run you can see the logs as"
+    },
+    {
+      "start": 516.88,
+      "duration": 6.399,
+      "text": "well and if I go to my browser open up"
+    },
+    {
+      "start": 519.599,
+      "duration": 5.8,
+      "text": "Local Host colon 9000 which is where my"
+    },
+    {
+      "start": 523.279,
+      "duration": 3.441,
+      "text": "container is running so you can see the"
+    },
+    {
+      "start": 525.399,
+      "duration": 3.401,
+      "text": "container is now running and you can see"
+    },
+    {
+      "start": 526.72,
+      "duration": 4.559,
+      "text": "the CPU usage memory usage disk usage"
+    },
+    {
+      "start": 528.8,
+      "duration": 4.44,
+      "text": "for the container so this is now running"
+    },
+    {
+      "start": 531.279,
+      "duration": 3.601,
+      "text": "as a Docker container if I want I can"
+    },
+    {
+      "start": 533.24,
+      "duration": 3.68,
+      "text": "share this Docker container or Docker"
+    },
+    {
+      "start": 534.88,
+      "duration": 3.959,
+      "text": "image with you and anyone in the world"
+    },
+    {
+      "start": 536.92,
+      "duration": 4.44,
+      "text": "can run this container from their own"
+    },
+    {
+      "start": 538.839,
+      "duration": 4.601,
+      "text": "laptop now before you run your container"
+    },
+    {
+      "start": 541.36,
+      "duration": 5.32,
+      "text": "you need to always make sure that your"
+    },
+    {
+      "start": 543.44,
+      "duration": 6.28,
+      "text": "images are secured so if I click on this"
+    },
+    {
+      "start": 546.68,
+      "duration": 5.44,
+      "text": "I have an option to run analysis or to"
+    },
+    {
+      "start": 549.72,
+      "duration": 4.119,
+      "text": "check if my images is secure or not what"
+    },
+    {
+      "start": 552.12,
+      "duration": 3.56,
+      "text": "security issues are present what"
+    },
+    {
+      "start": 553.839,
+      "duration": 4.081,
+      "text": "vulnerabilities are present so you can"
+    },
+    {
+      "start": 555.68,
+      "duration": 4.159,
+      "text": "check that by using Docker Scout Docker"
+    },
+    {
+      "start": 557.92,
+      "duration": 3.52,
+      "text": "Scout is another product by Docker which"
+    },
+    {
+      "start": 559.839,
+      "duration": 3.56,
+      "text": "lets you scan your images for any"
+    },
+    {
+      "start": 561.44,
+      "duration": 3.68,
+      "text": "security issues before you actually run"
+    },
+    {
+      "start": 563.399,
+      "duration": 2.961,
+      "text": "them doing this is very important"
+    },
+    {
+      "start": 565.12,
+      "duration": 3.399,
+      "text": "because there are so many security"
+    },
+    {
+      "start": 566.36,
+      "duration": 4.12,
+      "text": "concerns and every company wants you to"
+    },
+    {
+      "start": 568.519,
+      "duration": 4.081,
+      "text": "have secure images follow security"
+    },
+    {
+      "start": 570.48,
+      "duration": 3.799,
+      "text": "practices so let's try to run a security"
+    },
+    {
+      "start": 572.6,
+      "duration": 3.84,
+      "text": "analysis on this image here so I'm going"
+    },
+    {
+      "start": 574.279,
+      "duration": 4.8,
+      "text": "to say start analysis it will go ahead"
+    },
+    {
+      "start": 576.44,
+      "duration": 4.399,
+      "text": "and start analyzing to check what common"
+    },
+    {
+      "start": 579.079,
+      "duration": 4.161,
+      "text": "vulnerabilities are present and what can"
+    },
+    {
+      "start": 580.839,
+      "duration": 4.24,
+      "text": "I do to make it more secure you can in"
+    },
+    {
+      "start": 583.24,
+      "duration": 3.8,
+      "text": "fact also do the same using the docker"
+    },
+    {
+      "start": 585.079,
+      "duration": 4.32,
+      "text": "Scout command you can also run Docker"
+    },
+    {
+      "start": 587.04,
+      "duration": 3.799,
+      "text": "Scout with the name of your image or you"
+    },
+    {
+      "start": 589.399,
+      "duration": 3.641,
+      "text": "can simply run Docker Scout help and you"
+    },
+    {
+      "start": 590.839,
+      "duration": 4.601,
+      "text": "can see how you can run different uh"
+    },
+    {
+      "start": 593.04,
+      "duration": 4.08,
+      "text": "commands here but Docker desktops give"
+    },
+    {
+      "start": 595.44,
+      "duration": 4.2,
+      "text": "you a good graphical user interface so"
+    },
+    {
+      "start": 597.12,
+      "duration": 3.76,
+      "text": "you can always see them graphically here"
+    },
+    {
+      "start": 599.64,
+      "duration": 3.12,
+      "text": "you can see at all the different layers"
+    },
+    {
+      "start": 600.88,
+      "duration": 3.8,
+      "text": "you have vulnerabilities present the"
+    },
+    {
+      "start": 602.76,
+      "duration": 4.24,
+      "text": "there are zero critical severity high"
+    },
+    {
+      "start": 604.68,
+      "duration": 4.48,
+      "text": "severities are zero seven low severity"
+    },
+    {
+      "start": 607.0,
+      "duration": 4.399,
+      "text": "here in the first layer and you can also"
+    },
+    {
+      "start": 609.16,
+      "duration": 3.799,
+      "text": "click on them to learn about more you"
+    },
+    {
+      "start": 611.399,
+      "duration": 3.201,
+      "text": "can see three different High severity"
+    },
+    {
+      "start": 612.959,
+      "duration": 4.201,
+      "text": "vulnerabilities when you click on this"
+    },
+    {
+      "start": 614.6,
+      "duration": 5.08,
+      "text": "here you can also go and read about it"
+    },
+    {
+      "start": 617.16,
+      "duration": 5.0,
+      "text": "more on what is this about why is this"
+    },
+    {
+      "start": 619.68,
+      "duration": 4.32,
+      "text": "coming up what should we do and so on so"
+    },
+    {
+      "start": 622.16,
+      "duration": 3.679,
+      "text": "this is a good tool to make sure your"
+    },
+    {
+      "start": 624.0,
+      "duration": 3.24,
+      "text": "applications are secure your images are"
+    },
+    {
+      "start": 625.839,
+      "duration": 4.041,
+      "text": "secure before you deploy them into"
+    },
+    {
+      "start": 627.24,
+      "duration": 4.24,
+      "text": "production so this is Docker Scout now"
+    },
+    {
+      "start": 629.88,
+      "duration": 3.92,
+      "text": "in this application we have two main"
+    },
+    {
+      "start": 631.48,
+      "duration": 4.4,
+      "text": "things the flask application itself and"
+    },
+    {
+      "start": 633.8,
+      "duration": 4.479,
+      "text": "also the redish which is used to store"
+    },
+    {
+      "start": 635.88,
+      "duration": 4.32,
+      "text": "recent metrics so we have we are going"
+    },
+    {
+      "start": 638.279,
+      "duration": 3.36,
+      "text": "to be using two different containers and"
+    },
+    {
+      "start": 640.2,
+      "duration": 3.079,
+      "text": "when you have multiple containers that"
+    },
+    {
+      "start": 641.639,
+      "duration": 3.64,
+      "text": "you want to manage you need to use"
+    },
+    {
+      "start": 643.279,
+      "duration": 3.721,
+      "text": "something known as Docker compost so"
+    },
+    {
+      "start": 645.279,
+      "duration": 4.081,
+      "text": "Docker compost is a tool for defining"
+    },
+    {
+      "start": 647.0,
+      "duration": 3.92,
+      "text": "and running multicontainer applications"
+    },
+    {
+      "start": 649.36,
+      "duration": 5.64,
+      "text": "to start using Docker compost you need"
+    },
+    {
+      "start": 650.92,
+      "duration": 6.599,
+      "text": "to create a file name as Docker compost."
+    },
+    {
+      "start": 655.0,
+      "duration": 5.24,
+      "text": "yml so it's going to be Docker compost."
+    },
+    {
+      "start": 657.519,
+      "duration": 5.44,
+      "text": "yml inside this file we need to define"
+    },
+    {
+      "start": 660.24,
+      "duration": 4.92,
+      "text": "the specifications about different"
+    },
+    {
+      "start": 662.959,
+      "duration": 4.44,
+      "text": "Docker containers that we want to run"
+    },
+    {
+      "start": 665.16,
+      "duration": 4.119,
+      "text": "and using this Docker compose will run"
+    },
+    {
+      "start": 667.399,
+      "duration": 3.761,
+      "text": "all of them all together and manage"
+    },
+    {
+      "start": 669.279,
+      "duration": 4.041,
+      "text": "multiple containers at once so I have"
+    },
+    {
+      "start": 671.16,
+      "duration": 4.64,
+      "text": "this Docker compos file already created"
+    },
+    {
+      "start": 673.32,
+      "duration": 4.0,
+      "text": "which you can go and copy from this uh"
+    },
+    {
+      "start": 675.8,
+      "duration": 4.0,
+      "text": "repository here so I'm going to copy"
+    },
+    {
+      "start": 677.32,
+      "duration": 4.319,
+      "text": "this and paste it here in fact you can"
+    },
+    {
+      "start": 679.8,
+      "duration": 3.479,
+      "text": "also ask gith up copilot if you want you"
+    },
+    {
+      "start": 681.639,
+      "duration": 2.961,
+      "text": "can ask it to create it for you if you"
+    },
+    {
+      "start": 683.279,
+      "duration": 3.12,
+      "text": "don't know but I have it already"
+    },
+    {
+      "start": 684.6,
+      "duration": 4.16,
+      "text": "provided to make sure you don't face any"
+    },
+    {
+      "start": 686.399,
+      "duration": 3.56,
+      "text": "issues now inside this Docker compos"
+    },
+    {
+      "start": 688.76,
+      "duration": 3.0,
+      "text": "file"
+    },
+    {
+      "start": 689.959,
+      "duration": 3.68,
+      "text": "we have two different Services we have"
+    },
+    {
+      "start": 691.76,
+      "duration": 4.0,
+      "text": "the web service and also the reddish"
+    },
+    {
+      "start": 693.639,
+      "duration": 4.041,
+      "text": "service web service is for the flask"
+    },
+    {
+      "start": 695.76,
+      "duration": 3.96,
+      "text": "application and we have reddish service"
+    },
+    {
+      "start": 697.68,
+      "duration": 4.24,
+      "text": "which is running on 6379 using the"
+    },
+    {
+      "start": 699.72,
+      "duration": 4.04,
+      "text": "reddish latest image to store our metrix"
+    },
+    {
+      "start": 701.92,
+      "duration": 3.479,
+      "text": "data if you want to run this you need to"
+    },
+    {
+      "start": 703.76,
+      "duration": 2.84,
+      "text": "run the command Docker compose before"
+    },
+    {
+      "start": 705.399,
+      "duration": 3.161,
+      "text": "you run the command make sure you have"
+    },
+    {
+      "start": 706.6,
+      "duration": 3.919,
+      "text": "Docker compose installed in your laptop"
+    },
+    {
+      "start": 708.56,
+      "duration": 4.32,
+      "text": "so I can show you that Docker compose is"
+    },
+    {
+      "start": 710.519,
+      "duration": 4.44,
+      "text": "installed for me which is version 2.3"
+    },
+    {
+      "start": 712.88,
+      "duration": 4.0,
+      "text": "2.4 so rather than running this"
+    },
+    {
+      "start": 714.959,
+      "duration": 3.921,
+      "text": "containers individually I can now run"
+    },
+    {
+      "start": 716.88,
+      "duration": 4.36,
+      "text": "them all together maybe I can have like"
+    },
+    {
+      "start": 718.88,
+      "duration": 4.36,
+      "text": "three 4 5 six seven containers inside"
+    },
+    {
+      "start": 721.24,
+      "duration": 3.839,
+      "text": "this Docker compost file and I can run"
+    },
+    {
+      "start": 723.24,
+      "duration": 5.48,
+      "text": "them all together at once with a single"
+    },
+    {
+      "start": 725.079,
+      "duration": 5.521,
+      "text": "command by saying Docker compost up"
+    },
+    {
+      "start": 728.72,
+      "duration": 3.96,
+      "text": "hyphen D to make it in detach mode once"
+    },
+    {
+      "start": 730.6,
+      "duration": 5.039,
+      "text": "I run this you can see the container has"
+    },
+    {
+      "start": 732.68,
+      "duration": 4.719,
+      "text": "now been started and I can also check"
+    },
+    {
+      "start": 735.639,
+      "duration": 4.841,
+      "text": "that in my Docker desktop here so if you"
+    },
+    {
+      "start": 737.399,
+      "duration": 4.961,
+      "text": "go to Containers section you can see the"
+    },
+    {
+      "start": 740.48,
+      "duration": 4.28,
+      "text": "two containers which are running which"
+    },
+    {
+      "start": 742.36,
+      "duration": 4.52,
+      "text": "is redish and the web application here"
+    },
+    {
+      "start": 744.76,
+      "duration": 4.4,
+      "text": "so when I click on this I can see my"
+    },
+    {
+      "start": 746.88,
+      "duration": 5.72,
+      "text": "application is running uh inside a"
+    },
+    {
+      "start": 749.16,
+      "duration": 5.52,
+      "text": "container now amazing right so this is"
+    },
+    {
+      "start": 752.6,
+      "duration": 4.12,
+      "text": "how you can use Docker compost to manage"
+    },
+    {
+      "start": 754.68,
+      "duration": 3.44,
+      "text": "multiple containers now let's take a"
+    },
+    {
+      "start": 756.72,
+      "duration": 3.44,
+      "text": "scenario as you can see in this"
+    },
+    {
+      "start": 758.12,
+      "duration": 3.64,
+      "text": "application we have my system monitoring"
+    },
+    {
+      "start": 760.16,
+      "duration": 3.28,
+      "text": "dashboard let's say you want to make a"
+    },
+    {
+      "start": 761.76,
+      "duration": 4.24,
+      "text": "change maybe you want to change this"
+    },
+    {
+      "start": 763.44,
+      "duration": 4.639,
+      "text": "color or the text here or maybe the"
+    },
+    {
+      "start": 766.0,
+      "duration": 3.519,
+      "text": "outline here something else or you want"
+    },
+    {
+      "start": 768.079,
+      "duration": 3.961,
+      "text": "to make a change in your application"
+    },
+    {
+      "start": 769.519,
+      "duration": 4.641,
+      "text": "backend logic anything whenever you make"
+    },
+    {
+      "start": 772.04,
+      "duration": 3.88,
+      "text": "a change you need to run the command to"
+    },
+    {
+      "start": 774.16,
+      "duration": 3.679,
+      "text": "create the image again then run the"
+    },
+    {
+      "start": 775.92,
+      "duration": 4.599,
+      "text": "container again and so on which is a"
+    },
+    {
+      "start": 777.839,
+      "duration": 4.481,
+      "text": "very manual and timeconsuming task what"
+    },
+    {
+      "start": 780.519,
+      "duration": 4.281,
+      "text": "if I can tell you that there's an option"
+    },
+    {
+      "start": 782.32,
+      "duration": 4.04,
+      "text": "where you can do this automatically"
+    },
+    {
+      "start": 784.8,
+      "duration": 3.36,
+      "text": "before I show you that let me show you"
+    },
+    {
+      "start": 786.36,
+      "duration": 4.159,
+      "text": "how is the manual process done in this"
+    },
+    {
+      "start": 788.16,
+      "duration": 4.32,
+      "text": "index.html I have my system monitoring"
+    },
+    {
+      "start": 790.519,
+      "duration": 3.481,
+      "text": "dashboard message here which you can see"
+    },
+    {
+      "start": 792.48,
+      "duration": 4.2,
+      "text": "in here let's say I want to change this"
+    },
+    {
+      "start": 794.0,
+      "duration": 5.399,
+      "text": "message to new system monitoring"
+    },
+    {
+      "start": 796.68,
+      "duration": 4.36,
+      "text": "dashboard when I save this and I refresh"
+    },
+    {
+      "start": 799.399,
+      "duration": 3.88,
+      "text": "this is not going to be reflected unless"
+    },
+    {
+      "start": 801.04,
+      "duration": 3.4,
+      "text": "and until I create a new image so I need"
+    },
+    {
+      "start": 803.279,
+      "duration": 4.12,
+      "text": "to run the"
+    },
+    {
+      "start": 804.44,
+      "duration": 5.24,
+      "text": "command my image 1 Dot and this will go"
+    },
+    {
+      "start": 807.399,
+      "duration": 3.88,
+      "text": "ahead and create the image notice how"
+    },
+    {
+      "start": 809.68,
+      "duration": 4.04,
+      "text": "long it will take to create the image it"
+    },
+    {
+      "start": 811.279,
+      "duration": 4.401,
+      "text": "took around like uh 3.4 seconds"
+    },
+    {
+      "start": 813.72,
+      "duration": 3.76,
+      "text": "something and now when I go to my Docker"
+    },
+    {
+      "start": 815.68,
+      "duration": 5.12,
+      "text": "desktop I can see a new image being"
+    },
+    {
+      "start": 817.48,
+      "duration": 5.12,
+      "text": "created which is my image one now to run"
+    },
+    {
+      "start": 820.8,
+      "duration": 4.039,
+      "text": "this new image I'm going to say"
+    },
+    {
+      "start": 822.6,
+      "duration": 4.96,
+      "text": "run and I can run this let's say on"
+    },
+    {
+      "start": 824.839,
+      "duration": 5.641,
+      "text": "5,002 instead of 50001 when I click on"
+    },
+    {
+      "start": 827.56,
+      "duration": 5.76,
+      "text": "run and now if I go to"
+    },
+    {
+      "start": 830.48,
+      "duration": 5.599,
+      "text": "5,000"
+    },
+    {
+      "start": 833.32,
+      "duration": 4.879,
+      "text": "2 you can see it says new system"
+    },
+    {
+      "start": 836.079,
+      "duration": 3.721,
+      "text": "monitoring dashboard so whenever you"
+    },
+    {
+      "start": 838.199,
+      "duration": 3.601,
+      "text": "make a change you need to recreate the"
+    },
+    {
+      "start": 839.8,
+      "duration": 3.959,
+      "text": "image then run the container out of it"
+    },
+    {
+      "start": 841.8,
+      "duration": 4.719,
+      "text": "and then you will see the updated change"
+    },
+    {
+      "start": 843.759,
+      "duration": 4.961,
+      "text": "but with using Docker compos watch you"
+    },
+    {
+      "start": 846.519,
+      "duration": 3.68,
+      "text": "can automate this process so Docker"
+    },
+    {
+      "start": 848.72,
+      "duration": 3.679,
+      "text": "compos watch is an attribute that"
+    },
+    {
+      "start": 850.199,
+      "duration": 4.64,
+      "text": "automatically updates and previews your"
+    },
+    {
+      "start": 852.399,
+      "duration": 4.44,
+      "text": "running compos Services as you edit and"
+    },
+    {
+      "start": 854.839,
+      "duration": 4.12,
+      "text": "save your code let me show you how it"
+    },
+    {
+      "start": 856.839,
+      "duration": 5.68,
+      "text": "works so in your compos file you first"
+    },
+    {
+      "start": 858.959,
+      "duration": 5.32,
+      "text": "need to add a section seeing develop"
+    },
+    {
+      "start": 862.519,
+      "duration": 4.721,
+      "text": "watch and you can add a criteria either"
+    },
+    {
+      "start": 864.279,
+      "duration": 4.961,
+      "text": "it can sync it or it can also restart it"
+    },
+    {
+      "start": 867.24,
+      "duration": 3.48,
+      "text": "so if I want to sync it let's say just"
+    },
+    {
+      "start": 869.24,
+      "duration": 3.32,
+      "text": "sync it and then show the updated"
+    },
+    {
+      "start": 870.72,
+      "duration": 4.28,
+      "text": "changes I can show it or I can also ask"
+    },
+    {
+      "start": 872.56,
+      "duration": 3.719,
+      "text": "it to restart the container for me so in"
+    },
+    {
+      "start": 875.0,
+      "duration": 3.44,
+      "text": "this documentation you can read more"
+    },
+    {
+      "start": 876.279,
+      "duration": 3.12,
+      "text": "about Docker compose watch and if you"
+    },
+    {
+      "start": 878.44,
+      "duration": 4.6,
+      "text": "scroll"
+    },
+    {
+      "start": 879.399,
+      "duration": 5.88,
+      "text": "down you can find sync option here which"
+    },
+    {
+      "start": 883.04,
+      "duration": 3.96,
+      "text": "is the action to set sync compose will"
+    },
+    {
+      "start": 885.279,
+      "duration": 3.321,
+      "text": "make sure that any changes you make to"
+    },
+    {
+      "start": 887.0,
+      "duration": 3.48,
+      "text": "the file will automatically match with"
+    },
+    {
+      "start": 888.6,
+      "duration": 4.0,
+      "text": "the corresponding files you also have"
+    },
+    {
+      "start": 890.48,
+      "duration": 3.96,
+      "text": "option for sync plus restart which is"
+    },
+    {
+      "start": 892.6,
+      "duration": 3.4,
+      "text": "when to restart whenever you make a"
+    },
+    {
+      "start": 894.44,
+      "duration": 4.199,
+      "text": "change so let me show you how this works"
+    },
+    {
+      "start": 896.0,
+      "duration": 4.56,
+      "text": "in action first of all I'm going to go"
+    },
+    {
+      "start": 898.639,
+      "duration": 5.041,
+      "text": "and stop any running containers and also"
+    },
+    {
+      "start": 900.56,
+      "duration": 5.8,
+      "text": "images I'm going to delete"
+    },
+    {
+      "start": 903.68,
+      "duration": 5.36,
+      "text": "them okay and also delete any existing"
+    },
+    {
+      "start": 906.36,
+      "duration": 4.279,
+      "text": "image all right now it's all fresh let's"
+    },
+    {
+      "start": 909.04,
+      "duration": 3.32,
+      "text": "go here you can see in the docker"
+    },
+    {
+      "start": 910.639,
+      "duration": 3.681,
+      "text": "composer I have this develop section"
+    },
+    {
+      "start": 912.36,
+      "duration": 3.76,
+      "text": "added with the watch saying action is"
+    },
+    {
+      "start": 914.32,
+      "duration": 3.759,
+      "text": "going to be sync plus restart which"
+    },
+    {
+      "start": 916.12,
+      "duration": 4.959,
+      "text": "means anytime I make a change either in"
+    },
+    {
+      "start": 918.079,
+      "duration": 5.041,
+      "text": "this app.py or in this index.html it"
+    },
+    {
+      "start": 921.079,
+      "duration": 3.801,
+      "text": "will automatically update it you don't"
+    },
+    {
+      "start": 923.12,
+      "duration": 3.399,
+      "text": "need to do any manual configuration this"
+    },
+    {
+      "start": 924.88,
+      "duration": 3.319,
+      "text": "will save a lot of time there are many"
+    },
+    {
+      "start": 926.519,
+      "duration": 3.521,
+      "text": "times where our application is automated"
+    },
+    {
+      "start": 928.199,
+      "duration": 3.76,
+      "text": "through a pipeline and you cannot do any"
+    },
+    {
+      "start": 930.04,
+      "duration": 3.919,
+      "text": "manual changes this is where you can use"
+    },
+    {
+      "start": 931.959,
+      "duration": 3.8,
+      "text": "compose watch to use compose watch you"
+    },
+    {
+      "start": 933.959,
+      "duration": 4.24,
+      "text": "need to First add this develop watch"
+    },
+    {
+      "start": 935.759,
+      "duration": 5.401,
+      "text": "section in your compose file and then"
+    },
+    {
+      "start": 938.199,
+      "duration": 6.44,
+      "text": "you can say Docker compose watch to"
+    },
+    {
+      "start": 941.16,
+      "duration": 5.919,
+      "text": "enable it okay all right there has to be"
+    },
+    {
+      "start": 944.639,
+      "duration": 4.161,
+      "text": "no space let's save it again and then"
+    },
+    {
+      "start": 947.079,
+      "duration": 3.0,
+      "text": "run the docker compose watch again and"
+    },
+    {
+      "start": 948.8,
+      "duration": 4.0,
+      "text": "now you can see it's pulling all the"
+    },
+    {
+      "start": 950.079,
+      "duration": 4.961,
+      "text": "images and if it is fine it will show"
+    },
+    {
+      "start": 952.8,
+      "duration": 4.719,
+      "text": "you that it is started watching your"
+    },
+    {
+      "start": 955.04,
+      "duration": 5.0,
+      "text": "containers all right finally you can see"
+    },
+    {
+      "start": 957.519,
+      "duration": 5.0,
+      "text": "watch is enabled now notice how long it"
+    },
+    {
+      "start": 960.04,
+      "duration": 4.239,
+      "text": "took around 198 seconds to create a"
+    },
+    {
+      "start": 962.519,
+      "duration": 3.161,
+      "text": "build and we need to do something about"
+    },
+    {
+      "start": 964.279,
+      "duration": 3.721,
+      "text": "it we need to make sure that the builds"
+    },
+    {
+      "start": 965.68,
+      "duration": 5.399,
+      "text": "are doing faster but for now let me show"
+    },
+    {
+      "start": 968.0,
+      "duration": 6.24,
+      "text": "you how this compos watch works so right"
+    },
+    {
+      "start": 971.079,
+      "duration": 5.68,
+      "text": "now in this index.html we have new"
+    },
+    {
+      "start": 974.24,
+      "duration": 4.24,
+      "text": "system monitoring dashboard and you can"
+    },
+    {
+      "start": 976.759,
+      "duration": 3.64,
+      "text": "see new system monitoring dashboard and"
+    },
+    {
+      "start": 978.48,
+      "duration": 3.88,
+      "text": "when I go to my browser you can see it's"
+    },
+    {
+      "start": 980.399,
+      "duration": 5.12,
+      "text": "been updated automatically let's make a"
+    },
+    {
+      "start": 982.36,
+      "duration": 4.719,
+      "text": "change from this new make it LOL once I"
+    },
+    {
+      "start": 985.519,
+      "duration": 3.961,
+      "text": "save it you can see a message here"
+    },
+    {
+      "start": 987.079,
+      "duration": 5.0,
+      "text": "saying syncing and restarting service"
+    },
+    {
+      "start": 989.48,
+      "duration": 4.96,
+      "text": "web after one changes were detected so"
+    },
+    {
+      "start": 992.079,
+      "duration": 4.961,
+      "text": "when I refresh now without creating any"
+    },
+    {
+      "start": 994.44,
+      "duration": 3.839,
+      "text": "new image or without creating any new"
+    },
+    {
+      "start": 997.04,
+      "duration": 3.4,
+      "text": "container you can see the change has"
+    },
+    {
+      "start": 998.279,
+      "duration": 5.321,
+      "text": "been updated automatically let's try it"
+    },
+    {
+      "start": 1000.44,
+      "duration": 7.319,
+      "text": "again one more time instead of uh this"
+    },
+    {
+      "start": 1003.6,
+      "duration": 4.159,
+      "text": "I'm going to say cloud"
+    },
+    {
+      "start": 1007.839,
+      "duration": 5.041,
+      "text": "Cham and save it again so you can see"
+    },
+    {
+      "start": 1010.88,
+      "duration": 3.6,
+      "text": "the message here is always going to be"
+    },
+    {
+      "start": 1012.88,
+      "duration": 3.759,
+      "text": "shown whenever you make a change it says"
+    },
+    {
+      "start": 1014.48,
+      "duration": 3.96,
+      "text": "syncing and restarting service web after"
+    },
+    {
+      "start": 1016.639,
+      "duration": 3.32,
+      "text": "one changes were detected and now if I"
+    },
+    {
+      "start": 1018.44,
+      "duration": 3.519,
+      "text": "refresh you can see the change has been"
+    },
+    {
+      "start": 1019.959,
+      "duration": 3.521,
+      "text": "updated here so this is a very good tool"
+    },
+    {
+      "start": 1021.959,
+      "duration": 3.48,
+      "text": "that will save you a lot of time and it"
+    },
+    {
+      "start": 1023.48,
+      "duration": 4.24,
+      "text": "will also help you automate the process"
+    },
+    {
+      "start": 1025.439,
+      "duration": 4.36,
+      "text": "of recreating or restarting whenever you"
+    },
+    {
+      "start": 1027.72,
+      "duration": 4.359,
+      "text": "make a change this can also be used in"
+    },
+    {
+      "start": 1029.799,
+      "duration": 4.321,
+      "text": "your cicd pipeline so that whenever you"
+    },
+    {
+      "start": 1032.079,
+      "duration": 4.12,
+      "text": "make a change in your code in any of"
+    },
+    {
+      "start": 1034.12,
+      "duration": 5.52,
+      "text": "your files Docker compose will get to"
+    },
+    {
+      "start": 1036.199,
+      "duration": 4.76,
+      "text": "know and automatically sync restart"
+    },
+    {
+      "start": 1039.64,
+      "duration": 3.399,
+      "text": "depending on what action you have added"
+    },
+    {
+      "start": 1040.959,
+      "duration": 5.801,
+      "text": "inside your Docker compose file so let's"
+    },
+    {
+      "start": 1043.039,
+      "duration": 8.401,
+      "text": "me show you again uh let's say we"
+    },
+    {
+      "start": 1046.76,
+      "duration": 6.4,
+      "text": "type sponsored by do Cur and save it now"
+    },
+    {
+      "start": 1051.44,
+      "duration": 3.0,
+      "text": "you will see the same message being"
+    },
+    {
+      "start": 1053.16,
+      "duration": 3.48,
+      "text": "shown again it says syncing and"
+    },
+    {
+      "start": 1054.44,
+      "duration": 5.359,
+      "text": "restarting service web after one changes"
+    },
+    {
+      "start": 1056.64,
+      "duration": 5.159,
+      "text": "word detector and if I refresh this page"
+    },
+    {
+      "start": 1059.799,
+      "duration": 4.401,
+      "text": "you can see the message being updated"
+    },
+    {
+      "start": 1061.799,
+      "duration": 3.801,
+      "text": "here so similarly any change you make"
+    },
+    {
+      "start": 1064.2,
+      "duration": 4.0,
+      "text": "will automatically be updated using"
+    },
+    {
+      "start": 1065.6,
+      "duration": 4.88,
+      "text": "Docker compose watch and if you want to"
+    },
+    {
+      "start": 1068.2,
+      "duration": 4.2,
+      "text": "learn more about compose watch you can"
+    },
+    {
+      "start": 1070.48,
+      "duration": 3.52,
+      "text": "go here in the official documentation"
+    },
+    {
+      "start": 1072.4,
+      "duration": 4.24,
+      "text": "and see other options that you can use"
+    },
+    {
+      "start": 1074.0,
+      "duration": 4.36,
+      "text": "in your projects so far we have seen so"
+    },
+    {
+      "start": 1076.64,
+      "duration": 3.6,
+      "text": "many amazing Docker products to help you"
+    },
+    {
+      "start": 1078.36,
+      "duration": 4.679,
+      "text": "secure your images manage multiple"
+    },
+    {
+      "start": 1080.24,
+      "duration": 5.28,
+      "text": "containers also detect any changes that"
+    },
+    {
+      "start": 1083.039,
+      "duration": 5.0,
+      "text": "you make but the problem here is notice"
+    },
+    {
+      "start": 1085.52,
+      "duration": 5.639,
+      "text": "how long it took to create or build an"
+    },
+    {
+      "start": 1088.039,
+      "duration": 4.921,
+      "text": "image it took around 198.50 seconds"
+    },
+    {
+      "start": 1091.159,
+      "duration": 3.121,
+      "text": "which is a huge time maybe your"
+    },
+    {
+      "start": 1092.96,
+      "duration": 3.56,
+      "text": "application will give you a timeout"
+    },
+    {
+      "start": 1094.28,
+      "duration": 4.08,
+      "text": "issue if it took that many time so to"
+    },
+    {
+      "start": 1096.52,
+      "duration": 4.399,
+      "text": "solve this issue we have another great"
+    },
+    {
+      "start": 1098.36,
+      "duration": 4.72,
+      "text": "product by Docker which is Docker build"
+    },
+    {
+      "start": 1100.919,
+      "duration": 4.76,
+      "text": "Cloud using Docker build Cloud you can"
+    },
+    {
+      "start": 1103.08,
+      "duration": 4.04,
+      "text": "create your images faster Docker build"
+    },
+    {
+      "start": 1105.679,
+      "duration": 3.721,
+      "text": "cloud is a service that lets you build"
+    },
+    {
+      "start": 1107.12,
+      "duration": 4.84,
+      "text": "your images faster both locally and in"
+    },
+    {
+      "start": 1109.4,
+      "duration": 4.48,
+      "text": "CI how Docker build works is using the"
+    },
+    {
+      "start": 1111.96,
+      "duration": 4.44,
+      "text": "build X command let me show you in"
+    },
+    {
+      "start": 1113.88,
+      "duration": 4.56,
+      "text": "action so right now all our builds were"
+    },
+    {
+      "start": 1116.4,
+      "duration": 5.6,
+      "text": "taking a lot of time but now with using"
+    },
+    {
+      "start": 1118.44,
+      "duration": 5.4,
+      "text": "Docker build X you can do it very fast"
+    },
+    {
+      "start": 1122.0,
+      "duration": 3.88,
+      "text": "to start using Docker build Cloud for"
+    },
+    {
+      "start": 1123.84,
+      "duration": 3.52,
+      "text": "faster builds you need to First install"
+    },
+    {
+      "start": 1125.88,
+      "duration": 3.24,
+      "text": "it and you can click on choose plan"
+    },
+    {
+      "start": 1127.36,
+      "duration": 3.48,
+      "text": "option this comes already installed with"
+    },
+    {
+      "start": 1129.12,
+      "duration": 4.0,
+      "text": "the docker desktop so if you install"
+    },
+    {
+      "start": 1130.84,
+      "duration": 4.64,
+      "text": "Docker desktop you get Docker Scout"
+    },
+    {
+      "start": 1133.12,
+      "duration": 4.32,
+      "text": "Docker build build X Docker compos"
+    },
+    {
+      "start": 1135.48,
+      "duration": 3.48,
+      "text": "everything everything so I have it"
+    },
+    {
+      "start": 1137.44,
+      "duration": 6.32,
+      "text": "already installed I can show you by"
+    },
+    {
+      "start": 1138.96,
+      "duration": 6.36,
+      "text": "running Docker build X version command"
+    },
+    {
+      "start": 1143.76,
+      "duration": 4.279,
+      "text": "and you can see it's already there I"
+    },
+    {
+      "start": 1145.32,
+      "duration": 4.719,
+      "text": "also have some builds already created so"
+    },
+    {
+      "start": 1148.039,
+      "duration": 3.161,
+      "text": "if I should by running Docker build X"
+    },
+    {
+      "start": 1150.039,
+      "duration": 2.561,
+      "text": "you can see these are different builds"
+    },
+    {
+      "start": 1151.2,
+      "duration": 2.8,
+      "text": "that I've created and if you want to"
+    },
+    {
+      "start": 1152.6,
+      "duration": 3.52,
+      "text": "create a new one you can follow the"
+    },
+    {
+      "start": 1154.0,
+      "duration": 4.12,
+      "text": "commands in the read me section here so"
+    },
+    {
+      "start": 1156.12,
+      "duration": 3.48,
+      "text": "Docker build X create a new Builder so"
+    },
+    {
+      "start": 1158.12,
+      "duration": 4.28,
+      "text": "I'm going to"
+    },
+    {
+      "start": 1159.6,
+      "duration": 4.319,
+      "text": "say Docker build"
+    },
+    {
+      "start": 1162.4,
+      "duration": 3.72,
+      "text": "X"
+    },
+    {
+      "start": 1163.919,
+      "duration": 4.481,
+      "text": "create Das Das"
+    },
+    {
+      "start": 1166.12,
+      "duration": 5.28,
+      "text": "name and name is going to be let's say"
+    },
+    {
+      "start": 1168.4,
+      "duration": 4.6,
+      "text": "Flash because it creates Docker images"
+    },
+    {
+      "start": 1171.4,
+      "duration": 4.0,
+      "text": "in the Flash and then I'm going to use"
+    },
+    {
+      "start": 1173.0,
+      "duration": 4.799,
+      "text": "it so I'll say Das Das use now this"
+    },
+    {
+      "start": 1175.4,
+      "duration": 3.84,
+      "text": "Docker build X build has been created"
+    },
+    {
+      "start": 1177.799,
+      "duration": 2.88,
+      "text": "and you can also confirm this in the"
+    },
+    {
+      "start": 1179.24,
+      "duration": 2.96,
+      "text": "docker desktop so if I go to Docker"
+    },
+    {
+      "start": 1180.679,
+      "duration": 3.081,
+      "text": "desktop and go click on this builds"
+    },
+    {
+      "start": 1182.2,
+      "duration": 3.92,
+      "text": "option here you can see the current"
+    },
+    {
+      "start": 1183.76,
+      "duration": 3.52,
+      "text": "build which is selected is Flash after"
+    },
+    {
+      "start": 1186.12,
+      "duration": 3.6,
+      "text": "you run the command if you want to"
+    },
+    {
+      "start": 1187.28,
+      "duration": 4.12,
+      "text": "create an image using Docker build Cloud"
+    },
+    {
+      "start": 1189.72,
+      "duration": 3.439,
+      "text": "you need to say Docker build X build"
+    },
+    {
+      "start": 1191.4,
+      "duration": 4.56,
+      "text": "hyphen hyphen platform you can mention"
+    },
+    {
+      "start": 1193.159,
+      "duration": 5.88,
+      "text": "it for Linux AMD or arm 64 then the name"
+    },
+    {
+      "start": 1195.96,
+      "duration": 6.68,
+      "text": "of your image so let's say my image or"
+    },
+    {
+      "start": 1199.039,
+      "duration": 5.321,
+      "text": "maybe like just image and the latest dot"
+    },
+    {
+      "start": 1202.64,
+      "duration": 3.76,
+      "text": "you can in fact also pass your Docker"
+    },
+    {
+      "start": 1204.36,
+      "duration": 3.799,
+      "text": "Hub repository here so to directly push"
+    },
+    {
+      "start": 1206.4,
+      "duration": 4.159,
+      "text": "your image from your local machine right"
+    },
+    {
+      "start": 1208.159,
+      "duration": 5.241,
+      "text": "now you can see it's taking around 6.7"
+    },
+    {
+      "start": 1210.559,
+      "duration": 4.721,
+      "text": "or maybe uh long time very soon after we"
+    },
+    {
+      "start": 1213.4,
+      "duration": 4.399,
+      "text": "recreate it it will take less time"
+    },
+    {
+      "start": 1215.28,
+      "duration": 4.0,
+      "text": "because Docker build will collect cach"
+    },
+    {
+      "start": 1217.799,
+      "duration": 3.921,
+      "text": "and it will reuse the cach rather than"
+    },
+    {
+      "start": 1219.28,
+      "duration": 4.519,
+      "text": "doing it from scratch so let's see how"
+    },
+    {
+      "start": 1221.72,
+      "duration": 4.92,
+      "text": "long it will take for this image to be"
+    },
+    {
+      "start": 1223.799,
+      "duration": 4.88,
+      "text": "created all right finally the image has"
+    },
+    {
+      "start": 1226.64,
+      "duration": 5.72,
+      "text": "been created and if you see here it took"
+    },
+    {
+      "start": 1228.679,
+      "duration": 6.081,
+      "text": "around 643 seconds to create this image"
+    },
+    {
+      "start": 1232.36,
+      "duration": 4.6,
+      "text": "which is a huge time now as we were"
+    },
+    {
+      "start": 1234.76,
+      "duration": 3.96,
+      "text": "using Docker build Cloud next time when"
+    },
+    {
+      "start": 1236.96,
+      "duration": 4.04,
+      "text": "we create this image it is not going to"
+    },
+    {
+      "start": 1238.72,
+      "duration": 4.36,
+      "text": "take that much time let's try again so"
+    },
+    {
+      "start": 1241.0,
+      "duration": 4.24,
+      "text": "when I say Docker build X again this"
+    },
+    {
+      "start": 1243.08,
+      "duration": 4.599,
+      "text": "time you can see now it's just taking"
+    },
+    {
+      "start": 1245.24,
+      "duration": 4.6,
+      "text": "1.6 seconds to create the same image"
+    },
+    {
+      "start": 1247.679,
+      "duration": 4.201,
+      "text": "because when using Docker build Cloud"
+    },
+    {
+      "start": 1249.84,
+      "duration": 5.04,
+      "text": "the image building process is not done"
+    },
+    {
+      "start": 1251.88,
+      "duration": 4.76,
+      "text": "locally in your laptop it is done on the"
+    },
+    {
+      "start": 1254.88,
+      "duration": 3.44,
+      "text": "cloud so next time when I do the same"
+    },
+    {
+      "start": 1256.64,
+      "duration": 2.84,
+      "text": "thing again you can see it's not going"
+    },
+    {
+      "start": 1258.32,
+      "duration": 3.68,
+      "text": "to take take that much time it will"
+    },
+    {
+      "start": 1259.48,
+      "duration": 4.4,
+      "text": "simply just take less time compared to"
+    },
+    {
+      "start": 1262.0,
+      "duration": 4.0,
+      "text": "what it took initially so using Docker"
+    },
+    {
+      "start": 1263.88,
+      "duration": 4.279,
+      "text": "build Cloud you can save your time you"
+    },
+    {
+      "start": 1266.0,
+      "duration": 4.0,
+      "text": "can save resources of your laptop"
+    },
+    {
+      "start": 1268.159,
+      "duration": 4.12,
+      "text": "because this image building process is"
+    },
+    {
+      "start": 1270.0,
+      "duration": 4.36,
+      "text": "done on the cloud so this is how you can"
+    },
+    {
+      "start": 1272.279,
+      "duration": 4.601,
+      "text": "use Docker build Cloud to save time and"
+    },
+    {
+      "start": 1274.36,
+      "duration": 4.64,
+      "text": "to save resources of your laptop now"
+    },
+    {
+      "start": 1276.88,
+      "duration": 3.72,
+      "text": "let's look at test containers test"
+    },
+    {
+      "start": 1279.0,
+      "duration": 3.48,
+      "text": "containers is another great tool by"
+    },
+    {
+      "start": 1280.6,
+      "duration": 4.28,
+      "text": "Docker which lets you test your"
+    },
+    {
+      "start": 1282.48,
+      "duration": 4.88,
+      "text": "application on a temporary Docker"
+    },
+    {
+      "start": 1284.88,
+      "duration": 4.08,
+      "text": "container so in our application here we"
+    },
+    {
+      "start": 1287.36,
+      "duration": 3.559,
+      "text": "have redis let's say you don't have"
+    },
+    {
+      "start": 1288.96,
+      "duration": 3.719,
+      "text": "redus installed in your laptop so how"
+    },
+    {
+      "start": 1290.919,
+      "duration": 3.801,
+      "text": "can you test it you can use test"
+    },
+    {
+      "start": 1292.679,
+      "duration": 3.161,
+      "text": "containers for that similarly imagine"
+    },
+    {
+      "start": 1294.72,
+      "duration": 3.52,
+      "text": "you're working on a postgress"
+    },
+    {
+      "start": 1295.84,
+      "duration": 4.6,
+      "text": "application you can use test containers"
+    },
+    {
+      "start": 1298.24,
+      "duration": 4.48,
+      "text": "to just test it without installing the"
+    },
+    {
+      "start": 1300.44,
+      "duration": 3.56,
+      "text": "database in your local machine so using"
+    },
+    {
+      "start": 1302.72,
+      "duration": 4.48,
+      "text": "test containers you can test your"
+    },
+    {
+      "start": 1304.0,
+      "duration": 5.52,
+      "text": "databases apis Etc without actually"
+    },
+    {
+      "start": 1307.2,
+      "duration": 4.079,
+      "text": "installing them it will be testing on a"
+    },
+    {
+      "start": 1309.52,
+      "duration": 3.759,
+      "text": "container which is going to be temporary"
+    },
+    {
+      "start": 1311.279,
+      "duration": 3.64,
+      "text": "and after the test it will be deleted to"
+    },
+    {
+      "start": 1313.279,
+      "duration": 4.681,
+      "text": "show you in action so I'm going to be"
+    },
+    {
+      "start": 1314.919,
+      "duration": 4.801,
+      "text": "creating a test hyphen app.py file"
+    },
+    {
+      "start": 1317.96,
+      "duration": 4.4,
+      "text": "inside this we will add a simple test to"
+    },
+    {
+      "start": 1319.72,
+      "duration": 5.36,
+      "text": "check red is connection so here I have a"
+    },
+    {
+      "start": 1322.36,
+      "duration": 4.08,
+      "text": "file named as testore app.py in which we"
+    },
+    {
+      "start": 1325.08,
+      "duration": 3.76,
+      "text": "are going to be using test containers to"
+    },
+    {
+      "start": 1326.44,
+      "duration": 4.4,
+      "text": "test out redish also flask and to check"
+    },
+    {
+      "start": 1328.84,
+      "duration": 3.88,
+      "text": "if the metrics are being exposed or not"
+    },
+    {
+      "start": 1330.84,
+      "duration": 3.439,
+      "text": "so you can go ahead and read this code"
+    },
+    {
+      "start": 1332.72,
+      "duration": 4.079,
+      "text": "or you can also ask chat GPT to explain"
+    },
+    {
+      "start": 1334.279,
+      "duration": 4.76,
+      "text": "you this code but this is simply a file"
+    },
+    {
+      "start": 1336.799,
+      "duration": 4.801,
+      "text": "created to test out redis flask and"
+    },
+    {
+      "start": 1339.039,
+      "duration": 5.201,
+      "text": "Metric when we execute this it is going"
+    },
+    {
+      "start": 1341.6,
+      "duration": 4.64,
+      "text": "to create a temporary redis container to"
+    },
+    {
+      "start": 1344.24,
+      "duration": 3.76,
+      "text": "check out redish database connection to"
+    },
+    {
+      "start": 1346.24,
+      "duration": 4.0,
+      "text": "check out flask and also to check out"
+    },
+    {
+      "start": 1348.0,
+      "duration": 3.96,
+      "text": "metric which is a very good way because"
+    },
+    {
+      "start": 1350.24,
+      "duration": 3.76,
+      "text": "whenever you create an application you"
+    },
+    {
+      "start": 1351.96,
+      "duration": 4.24,
+      "text": "always need to create test cases and you"
+    },
+    {
+      "start": 1354.0,
+      "duration": 3.72,
+      "text": "do it generally in the local machine but"
+    },
+    {
+      "start": 1356.2,
+      "duration": 4.32,
+      "text": "using test containers you can do the"
+    },
+    {
+      "start": 1357.72,
+      "duration": 4.439,
+      "text": "same process in the container and then"
+    },
+    {
+      "start": 1360.52,
+      "duration": 3.399,
+      "text": "you can always delete it it is always"
+    },
+    {
+      "start": 1362.159,
+      "duration": 3.88,
+      "text": "going to be temporary so let's try this"
+    },
+    {
+      "start": 1363.919,
+      "duration": 3.921,
+      "text": "out to use this you need to have P test"
+    },
+    {
+      "start": 1366.039,
+      "duration": 4.681,
+      "text": "installed so I think I have P test"
+    },
+    {
+      "start": 1367.84,
+      "duration": 6.56,
+      "text": "installed so I'm going to say uh Python"
+    },
+    {
+      "start": 1370.72,
+      "duration": 5.319,
+      "text": "3 hyph m p test and then the name of the"
+    },
+    {
+      "start": 1374.4,
+      "duration": 4.8,
+      "text": "app which is"
+    },
+    {
+      "start": 1376.039,
+      "duration": 5.64,
+      "text": "testore app.py once I do this it is"
+    },
+    {
+      "start": 1379.2,
+      "duration": 4.599,
+      "text": "going to go ahead and start uh executing"
+    },
+    {
+      "start": 1381.679,
+      "duration": 6.801,
+      "text": "the test and very soon we can see it"
+    },
+    {
+      "start": 1383.799,
+      "duration": 4.681,
+      "text": "collected two items if it passes or"
+    },
+    {
+      "start": 1388.559,
+      "duration": 4.48,
+      "text": "not okay so the test have been passed"
+    },
+    {
+      "start": 1391.159,
+      "duration": 3.841,
+      "text": "and you can see two passed test and you"
+    },
+    {
+      "start": 1393.039,
+      "duration": 3.681,
+      "text": "have one warning for SSL which is okay"
+    },
+    {
+      "start": 1395.0,
+      "duration": 4.44,
+      "text": "because it's just a warning so this is"
+    },
+    {
+      "start": 1396.72,
+      "duration": 4.8,
+      "text": "how I can use test containers to test my"
+    },
+    {
+      "start": 1399.44,
+      "duration": 3.68,
+      "text": "code right in the container in a"
+    },
+    {
+      "start": 1401.52,
+      "duration": 3.72,
+      "text": "temporary way without installing"
+    },
+    {
+      "start": 1403.12,
+      "duration": 4.96,
+      "text": "anything and you can use test containers"
+    },
+    {
+      "start": 1405.24,
+      "duration": 3.799,
+      "text": "for every language maybe Java go python"
+    },
+    {
+      "start": 1408.08,
+      "duration": 3.4,
+      "text": "net anything language that you're"
+    },
+    {
+      "start": 1409.039,
+      "duration": 4.0,
+      "text": "working on right now we using it python"
+    },
+    {
+      "start": 1411.48,
+      "duration": 3.4,
+      "text": "uh but if you're working with nodejs or"
+    },
+    {
+      "start": 1413.039,
+      "duration": 4.081,
+      "text": "any other language you can go ahead and"
+    },
+    {
+      "start": 1414.88,
+      "duration": 4.48,
+      "text": "use it you can see it is using p test"
+    },
+    {
+      "start": 1417.12,
+      "duration": 4.039,
+      "text": "containers. postgress to try out or"
+    },
+    {
+      "start": 1419.36,
+      "duration": 3.919,
+      "text": "testing out postgress but we used it"
+    },
+    {
+      "start": 1421.159,
+      "duration": 4.281,
+      "text": "with redis because we using redis as our"
+    },
+    {
+      "start": 1423.279,
+      "duration": 4.4,
+      "text": "database in the application you also"
+    },
+    {
+      "start": 1425.44,
+      "duration": 3.96,
+      "text": "have the test container Cloud option uh"
+    },
+    {
+      "start": 1427.679,
+      "duration": 3.6,
+      "text": "so test container cloud is a paid"
+    },
+    {
+      "start": 1429.4,
+      "duration": 3.44,
+      "text": "offering but if you want to use it for"
+    },
+    {
+      "start": 1431.279,
+      "duration": 3.561,
+      "text": "your local projects you can also use the"
+    },
+    {
+      "start": 1432.84,
+      "duration": 3.8,
+      "text": "test container default or the desktop"
+    },
+    {
+      "start": 1434.84,
+      "duration": 3.92,
+      "text": "option so far we have seen so many"
+    },
+    {
+      "start": 1436.64,
+      "duration": 4.56,
+      "text": "amazing Docker products including Docker"
+    },
+    {
+      "start": 1438.76,
+      "duration": 5.0,
+      "text": "desktop Docker Scout Docker compose"
+    },
+    {
+      "start": 1441.2,
+      "duration": 4.8,
+      "text": "Docker compose watch Docker buildex to"
+    },
+    {
+      "start": 1443.76,
+      "duration": 4.159,
+      "text": "save build time and also test containers"
+    },
+    {
+      "start": 1446.0,
+      "duration": 3.88,
+      "text": "to test out your code and to make sure"
+    },
+    {
+      "start": 1447.919,
+      "duration": 3.88,
+      "text": "it is reliable if you learn all this"
+    },
+    {
+      "start": 1449.88,
+      "duration": 3.799,
+      "text": "tools properly you can work with any"
+    },
+    {
+      "start": 1451.799,
+      "duration": 3.961,
+      "text": "similar tools and it will also help you"
+    },
+    {
+      "start": 1453.679,
+      "duration": 4.681,
+      "text": "in your current projects so I hope you"
+    },
+    {
+      "start": 1455.76,
+      "duration": 4.44,
+      "text": "will try out this project along with me"
+    },
+    {
+      "start": 1458.36,
+      "duration": 3.52,
+      "text": "all right so this was our video on how"
+    },
+    {
+      "start": 1460.2,
+      "duration": 3.56,
+      "text": "you can use different Docker products to"
+    },
+    {
+      "start": 1461.88,
+      "duration": 3.279,
+      "text": "increase your productivity in this video"
+    },
+    {
+      "start": 1463.76,
+      "duration": 4.639,
+      "text": "we have seen different Docker tools like"
+    },
+    {
+      "start": 1465.159,
+      "duration": 5.681,
+      "text": "Docker desktop Docker Scout Docker init"
+    },
+    {
+      "start": 1468.399,
+      "duration": 4.921,
+      "text": "also Docker compose compose watch Docker"
+    },
+    {
+      "start": 1470.84,
+      "duration": 4.319,
+      "text": "build cloud and test containers I hope"
+    },
+    {
+      "start": 1473.32,
+      "duration": 3.88,
+      "text": "this video was informative if you have"
+    },
+    {
+      "start": 1475.159,
+      "duration": 3.921,
+      "text": "any questions any doubt do let me know"
+    },
+    {
+      "start": 1477.2,
+      "duration": 4.12,
+      "text": "in the comment section and I hope you"
+    },
+    {
+      "start": 1479.08,
+      "duration": 3.92,
+      "text": "will do this video along with me so make"
+    },
+    {
+      "start": 1481.32,
+      "duration": 3.68,
+      "text": "sure you complete the project and also"
+    },
+    {
+      "start": 1483.0,
+      "duration": 5.64,
+      "text": "share your learning on LinkedIn thank"
+    },
+    {
+      "start": 1485.0,
+      "duration": 3.64,
+      "text": "you and have a good day"
+    }
+  ]
+}

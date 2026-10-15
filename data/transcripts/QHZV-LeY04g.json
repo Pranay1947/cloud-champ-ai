@@ -1,0 +1,151 @@
+{
+  "video": {
+    "id": "QHZV-LeY04g",
+    "title": "What is mlOps? MLOps explained simply in 60 seconds! #mlops",
+    "url": "https://www.youtube.com/watch?v=QHZV-LeY04g",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 5.76,
+      "text": "What is MLOps? MLOps is basically DevOps"
+    },
+    {
+      "start": 3.919,
+      "duration": 3.84,
+      "text": "for machine learning. In DevOps, you"
+    },
+    {
+      "start": 6.0,
+      "duration": 4.16,
+      "text": "automate building and deploying of"
+    },
+    {
+      "start": 7.759,
+      "duration": 4.321,
+      "text": "software. In MLOps, you automate"
+    },
+    {
+      "start": 10.16,
+      "duration": 4.16,
+      "text": "building, deploying and managing machine"
+    },
+    {
+      "start": 12.08,
+      "duration": 4.24,
+      "text": "learning models. This is how MLOps"
+    },
+    {
+      "start": 14.32,
+      "duration": 4.0,
+      "text": "actually work. First step is to version"
+    },
+    {
+      "start": 16.32,
+      "duration": 4.0,
+      "text": "control everything, your code, your"
+    },
+    {
+      "start": 18.32,
+      "duration": 4.4,
+      "text": "data, and machine learning models using"
+    },
+    {
+      "start": 20.32,
+      "duration": 4.08,
+      "text": "tools like MLflow. Doing this, we can"
+    },
+    {
+      "start": 22.72,
+      "duration": 3.28,
+      "text": "keep track of any changes happening in"
+    },
+    {
+      "start": 24.4,
+      "duration": 3.68,
+      "text": "the training data and we can also"
+    },
+    {
+      "start": 26.0,
+      "duration": 3.679,
+      "text": "retrain our models anytime we want."
+    },
+    {
+      "start": 28.08,
+      "duration": 3.68,
+      "text": "Next, we will build pipelines to"
+    },
+    {
+      "start": 29.679,
+      "duration": 4.321,
+      "text": "automate all this process from training"
+    },
+    {
+      "start": 31.76,
+      "duration": 4.479,
+      "text": "a model to testing it and deploying it"
+    },
+    {
+      "start": 34.0,
+      "duration": 4.0,
+      "text": "without any manual work using tools like"
+    },
+    {
+      "start": 36.239,
+      "duration": 3.201,
+      "text": "CubeFlow. For deployment, you can"
+    },
+    {
+      "start": 38.0,
+      "duration": 3.28,
+      "text": "package your models into a Docker"
+    },
+    {
+      "start": 39.44,
+      "duration": 3.6,
+      "text": "container and run them on Kubernetes."
+    },
+    {
+      "start": 41.28,
+      "duration": 3.84,
+      "text": "Once the model is live, you can also"
+    },
+    {
+      "start": 43.04,
+      "duration": 3.519,
+      "text": "monitor it using tools like Prometheus."
+    },
+    {
+      "start": 45.12,
+      "duration": 4.16,
+      "text": "And finally, if you want to scale the"
+    },
+    {
+      "start": 46.559,
+      "duration": 5.281,
+      "text": "entire system, you can use cloud GPUs,"
+    },
+    {
+      "start": 49.28,
+      "duration": 4.48,
+      "text": "autoscaling or optimized infrastructure."
+    },
+    {
+      "start": 51.84,
+      "duration": 3.76,
+      "text": "Comment below MLOps if you want a"
+    },
+    {
+      "start": 53.76,
+      "duration": 4.84,
+      "text": "complete video with the project."
+    },
+    {
+      "start": 55.6,
+      "duration": 3.0,
+      "text": "Subscribe."
+    }
+  ]
+}

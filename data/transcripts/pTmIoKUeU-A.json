@@ -1,0 +1,5821 @@
+{
+  "video": {
+    "id": "pTmIoKUeU-A",
+    "title": "Kubernetes Live Project: Deploy Cloud Native Voting Application on EKS",
+    "url": "https://www.youtube.com/watch?v=pTmIoKUeU-A",
+    "duration": 2903,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.96,
+      "duration": 4.72,
+      "text": "new devops project so we are deploying a"
+    },
+    {
+      "start": 3.76,
+      "duration": 4.2,
+      "text": "three- tier complex Cloud native"
+    },
+    {
+      "start": 5.68,
+      "duration": 4.72,
+      "text": "application on kubernetes this"
+    },
+    {
+      "start": 7.96,
+      "duration": 5.559,
+      "text": "application has react as a front end"
+    },
+    {
+      "start": 10.4,
+      "duration": 5.199,
+      "text": "goang as an API and mongodb as a"
+    },
+    {
+      "start": 13.519,
+      "duration": 3.92,
+      "text": "database let me explain you how this"
+    },
+    {
+      "start": 15.599,
+      "duration": 3.52,
+      "text": "project works so you can see the"
+    },
+    {
+      "start": 17.439,
+      "duration": 3.321,
+      "text": "application has been deployed here and"
+    },
+    {
+      "start": 19.119,
+      "duration": 3.16,
+      "text": "I'm accessing this application through a"
+    },
+    {
+      "start": 20.76,
+      "duration": 3.4,
+      "text": "service endpoint which is a load"
+    },
+    {
+      "start": 22.279,
+      "duration": 4.441,
+      "text": "balancer type so this is my load"
+    },
+    {
+      "start": 24.16,
+      "duration": 4.519,
+      "text": "balancers DNS now this application is a"
+    },
+    {
+      "start": 26.72,
+      "duration": 4.319,
+      "text": "voting application with front end"
+    },
+    {
+      "start": 28.679,
+      "duration": 4.04,
+      "text": "created in react and JavaScript but we"
+    },
+    {
+      "start": 31.039,
+      "duration": 4.321,
+      "text": "will be using a Docker image to deploy"
+    },
+    {
+      "start": 32.719,
+      "duration": 4.16,
+      "text": "this so the idea is whenever a user"
+    },
+    {
+      "start": 35.36,
+      "duration": 3.44,
+      "text": "comes here and votes for the programming"
+    },
+    {
+      "start": 36.879,
+      "duration": 4.281,
+      "text": "language the data should be taken here"
+    },
+    {
+      "start": 38.8,
+      "duration": 4.919,
+      "text": "and should be updated in the mongodb"
+    },
+    {
+      "start": 41.16,
+      "duration": 6.28,
+      "text": "database so as you can see here python"
+    },
+    {
+      "start": 43.719,
+      "duration": 5.601,
+      "text": "has one vote whereas uh nodejs has 8 vs"
+    },
+    {
+      "start": 47.44,
+      "duration": 5.279,
+      "text": "Java has 9 VES so you can see the same"
+    },
+    {
+      "start": 49.32,
+      "duration": 5.919,
+      "text": "here as well so nodejs has 8 vs whereas"
+    },
+    {
+      "start": 52.719,
+      "duration": 4.281,
+      "text": "Java has N9 votes let me show you this"
+    },
+    {
+      "start": 55.239,
+      "duration": 4.32,
+      "text": "live so I'm going to add some more"
+    },
+    {
+      "start": 57.0,
+      "duration": 5.0,
+      "text": "wordss to nodejs so let's make it more"
+    },
+    {
+      "start": 59.559,
+      "duration": 4.96,
+      "text": "so now now I have 10 vots for nodejs and"
+    },
+    {
+      "start": 62.0,
+      "duration": 5.32,
+      "text": "for Java I'll make it more as well so"
+    },
+    {
+      "start": 64.519,
+      "duration": 4.881,
+      "text": "now Java has 13 vots I can add more vots"
+    },
+    {
+      "start": 67.32,
+      "duration": 3.56,
+      "text": "to python or any other language so it's"
+    },
+    {
+      "start": 69.4,
+      "duration": 3.96,
+      "text": "just that the user is going to add some"
+    },
+    {
+      "start": 70.88,
+      "duration": 4.48,
+      "text": "votes and whenever user adds some votes"
+    },
+    {
+      "start": 73.36,
+      "duration": 4.56,
+      "text": "the data should be fetched from goang"
+    },
+    {
+      "start": 75.36,
+      "duration": 4.6,
+      "text": "API and should be updated in the mongod"
+    },
+    {
+      "start": 77.92,
+      "duration": 3.8,
+      "text": "DB database that we have here so this"
+    },
+    {
+      "start": 79.96,
+      "duration": 4.24,
+      "text": "command is to run the command inside"
+    },
+    {
+      "start": 81.72,
+      "duration": 4.8,
+      "text": "this particular pod to query the Lang DB"
+    },
+    {
+      "start": 84.2,
+      "duration": 4.919,
+      "text": "database and show us whatever data we"
+    },
+    {
+      "start": 86.52,
+      "duration": 5.279,
+      "text": "have once I run this it will show me the"
+    },
+    {
+      "start": 89.119,
+      "duration": 7.481,
+      "text": "updated w which is 10 Vols for nodejs"
+    },
+    {
+      "start": 91.799,
+      "duration": 7.121,
+      "text": "Java 13 6 for goang now this application"
+    },
+    {
+      "start": 96.6,
+      "duration": 6.08,
+      "text": "has multiple things like it has three"
+    },
+    {
+      "start": 98.92,
+      "duration": 6.04,
+      "text": "parts for mongodb database two for API"
+    },
+    {
+      "start": 102.68,
+      "duration": 4.399,
+      "text": "two for front end it has a service for"
+    },
+    {
+      "start": 104.96,
+      "duration": 3.96,
+      "text": "API front end and also two"
+    },
+    {
+      "start": 107.079,
+      "duration": 3.761,
+      "text": "deployments replica sets and one"
+    },
+    {
+      "start": 108.92,
+      "duration": 3.96,
+      "text": "stateful set to explain you this let me"
+    },
+    {
+      "start": 110.84,
+      "duration": 3.68,
+      "text": "show you the architecture now our"
+    },
+    {
+      "start": 112.88,
+      "duration": 3.04,
+      "text": "architecture diagram as you can see here"
+    },
+    {
+      "start": 114.52,
+      "duration": 3.36,
+      "text": "the application is going to be deployed"
+    },
+    {
+      "start": 115.92,
+      "duration": 4.68,
+      "text": "on kubernetes so we will be using Amazon"
+    },
+    {
+      "start": 117.88,
+      "duration": 4.08,
+      "text": "eks to deploy our application so in this"
+    },
+    {
+      "start": 120.6,
+      "duration": 4.36,
+      "text": "application we have three things front"
+    },
+    {
+      "start": 121.96,
+      "duration": 5.32,
+      "text": "end API and mongodb we will start with"
+    },
+    {
+      "start": 124.96,
+      "duration": 5.799,
+      "text": "creating mongodb so the mongodb have"
+    },
+    {
+      "start": 127.28,
+      "duration": 4.679,
+      "text": "three pods pod0 Pod 1 and pod two and"
+    },
+    {
+      "start": 130.759,
+      "duration": 3.241,
+      "text": "they going to be deployed using State"
+    },
+    {
+      "start": 131.959,
+      "duration": 3.56,
+      "text": "full set so why do we have three pods"
+    },
+    {
+      "start": 134.0,
+      "duration": 3.8,
+      "text": "here we have three pods to enable"
+    },
+    {
+      "start": 135.519,
+      "duration": 4.041,
+      "text": "replica sets in mongodb where the first"
+    },
+    {
+      "start": 137.8,
+      "duration": 4.28,
+      "text": "p is going to be primary that will read"
+    },
+    {
+      "start": 139.56,
+      "duration": 4.08,
+      "text": "and write data whereas P one and P two"
+    },
+    {
+      "start": 142.08,
+      "duration": 3.72,
+      "text": "are going to be secondary which are"
+    },
+    {
+      "start": 143.64,
+      "duration": 4.28,
+      "text": "going to be having replicas of the data"
+    },
+    {
+      "start": 145.8,
+      "duration": 4.439,
+      "text": "but will only work when the first pod is"
+    },
+    {
+      "start": 147.92,
+      "duration": 4.48,
+      "text": "deleted or destroyed so as you can see"
+    },
+    {
+      "start": 150.239,
+      "duration": 4.64,
+      "text": "here we have replica set enabled for the"
+    },
+    {
+      "start": 152.4,
+      "duration": 5.08,
+      "text": "first pod being primary second secondary"
+    },
+    {
+      "start": 154.879,
+      "duration": 4.681,
+      "text": "and third secondary as well along with"
+    },
+    {
+      "start": 157.48,
+      "duration": 4.08,
+      "text": "the pods we also have PV also known as"
+    },
+    {
+      "start": 159.56,
+      "duration": 4.12,
+      "text": "persistent volumes and persistent volume"
+    },
+    {
+      "start": 161.56,
+      "duration": 5.599,
+      "text": "claims to store the data from the"
+    },
+    {
+      "start": 163.68,
+      "duration": 5.76,
+      "text": "database into EBS volumes in AWS so we"
+    },
+    {
+      "start": 167.159,
+      "duration": 5.241,
+      "text": "will be creating ABS volumes as well"
+    },
+    {
+      "start": 169.44,
+      "duration": 4.96,
+      "text": "second we have API so the API is going"
+    },
+    {
+      "start": 172.4,
+      "duration": 4.32,
+      "text": "to be deployed using deployments and we"
+    },
+    {
+      "start": 174.4,
+      "duration": 4.759,
+      "text": "will have two PODS of API this API is"
+    },
+    {
+      "start": 176.72,
+      "duration": 4.56,
+      "text": "created in goang and exposed using a"
+    },
+    {
+      "start": 179.159,
+      "duration": 4.841,
+      "text": "service of of load balancer type so to"
+    },
+    {
+      "start": 181.28,
+      "duration": 5.36,
+      "text": "show you that in action I have my API"
+    },
+    {
+      "start": 184.0,
+      "duration": 5.239,
+      "text": "here as you can see this API is uh"
+    },
+    {
+      "start": 186.64,
+      "duration": 5.64,
+      "text": "fetched and we are using a path SL okay"
+    },
+    {
+      "start": 189.239,
+      "duration": 4.601,
+      "text": "if I try to query some languages path"
+    },
+    {
+      "start": 192.28,
+      "duration": 2.519,
+      "text": "you'll see these are all the languages I"
+    },
+    {
+      "start": 193.84,
+      "duration": 3.56,
+      "text": "can also"
+    },
+    {
+      "start": 194.799,
+      "duration": 4.44,
+      "text": "query particular language which is here"
+    },
+    {
+      "start": 197.4,
+      "duration": 3.32,
+      "text": "which will show me all the wordss and"
+    },
+    {
+      "start": 199.239,
+      "duration": 3.841,
+      "text": "then this data is going to be then fed"
+    },
+    {
+      "start": 200.72,
+      "duration": 4.32,
+      "text": "into the mongodb database where we will"
+    },
+    {
+      "start": 203.08,
+      "duration": 3.96,
+      "text": "see all the data properly so how do the"
+    },
+    {
+      "start": 205.04,
+      "duration": 4.36,
+      "text": "API get the data the data is going to be"
+    },
+    {
+      "start": 207.04,
+      "duration": 3.8,
+      "text": "get from the front end so we are going"
+    },
+    {
+      "start": 209.4,
+      "duration": 3.36,
+      "text": "to be deploying front end using"
+    },
+    {
+      "start": 210.84,
+      "duration": 4.399,
+      "text": "deployments we will have two parts of"
+    },
+    {
+      "start": 212.76,
+      "duration": 4.119,
+      "text": "front end the front end is in react as"
+    },
+    {
+      "start": 215.239,
+      "duration": 3.481,
+      "text": "you already know and it is going to be"
+    },
+    {
+      "start": 216.879,
+      "duration": 5.08,
+      "text": "exposed to a service of load balancer"
+    },
+    {
+      "start": 218.72,
+      "duration": 5.159,
+      "text": "type and that's what our application is"
+    },
+    {
+      "start": 221.959,
+      "duration": 3.601,
+      "text": "now it might sound complex or it might"
+    },
+    {
+      "start": 223.879,
+      "duration": 3.92,
+      "text": "be complex for you but trust me it's"
+    },
+    {
+      "start": 225.56,
+      "duration": 3.959,
+      "text": "going to be very very very interesting"
+    },
+    {
+      "start": 227.799,
+      "duration": 3.761,
+      "text": "learning for you and if you want to"
+    },
+    {
+      "start": 229.519,
+      "duration": 3.601,
+      "text": "learn kubernetes the practical way I"
+    },
+    {
+      "start": 231.56,
+      "duration": 3.56,
+      "text": "would highly recommend you checking and"
+    },
+    {
+      "start": 233.12,
+      "duration": 4.0,
+      "text": "doing this project along with this you"
+    },
+    {
+      "start": 235.12,
+      "duration": 4.28,
+      "text": "will also learn many mongodb Concepts"
+    },
+    {
+      "start": 237.12,
+      "duration": 4.479,
+      "text": "like replica sets and different queries"
+    },
+    {
+      "start": 239.4,
+      "duration": 3.88,
+      "text": "so so please do this project if by any"
+    },
+    {
+      "start": 241.599,
+      "duration": 3.72,
+      "text": "chance you have facing issues or you are"
+    },
+    {
+      "start": 243.28,
+      "duration": 4.679,
+      "text": "stuck in this project feel free to use"
+    },
+    {
+      "start": 245.319,
+      "duration": 4.441,
+      "text": "documentation and many online resources"
+    },
+    {
+      "start": 247.959,
+      "duration": 3.401,
+      "text": "but if you're still stuck let me know in"
+    },
+    {
+      "start": 249.76,
+      "duration": 3.72,
+      "text": "the comment section I'm going to help"
+    },
+    {
+      "start": 251.36,
+      "duration": 4.28,
+      "text": "you I'm going to help and reply on all"
+    },
+    {
+      "start": 253.48,
+      "duration": 3.68,
+      "text": "the comments and if you successfully"
+    },
+    {
+      "start": 255.64,
+      "duration": 3.719,
+      "text": "completed this project please share it"
+    },
+    {
+      "start": 257.16,
+      "duration": 4.16,
+      "text": "on LinkedIn and don't forget to tag me"
+    },
+    {
+      "start": 259.359,
+      "duration": 6.481,
+      "text": "as well I want to see how many of you"
+    },
+    {
+      "start": 261.32,
+      "duration": 4.52,
+      "text": "can actually complete this project let's"
+    },
+    {
+      "start": 268.6,
+      "duration": 3.0,
+      "text": "start"
+    },
+    {
+      "start": 274.84,
+      "duration": 3.199,
+      "text": "all right now that you understand what"
+    },
+    {
+      "start": 276.479,
+      "duration": 4.0,
+      "text": "is this application and what are we"
+    },
+    {
+      "start": 278.039,
+      "duration": 4.521,
+      "text": "going to create in this devops project"
+    },
+    {
+      "start": 280.479,
+      "duration": 4.401,
+      "text": "let's start with actually creating it so"
+    },
+    {
+      "start": 282.56,
+      "duration": 4.84,
+      "text": "I'm here on my AWS dashboard and I'm"
+    },
+    {
+      "start": 284.88,
+      "duration": 5.4,
+      "text": "logged into my account using an IM IM"
+    },
+    {
+      "start": 287.4,
+      "duration": 4.76,
+      "text": "user named as Nasi so we are creating"
+    },
+    {
+      "start": 290.28,
+      "duration": 4.72,
+      "text": "this application on kubernetes and we"
+    },
+    {
+      "start": 292.16,
+      "duration": 5.039,
+      "text": "will be using elastic kubernetes service"
+    },
+    {
+      "start": 295.0,
+      "duration": 4.84,
+      "text": "which is Amazon eks and along with this"
+    },
+    {
+      "start": 297.199,
+      "duration": 4.921,
+      "text": "we also be using load balancers e to"
+    },
+    {
+      "start": 299.84,
+      "duration": 5.0,
+      "text": "instances EBS volumes for persistent"
+    },
+    {
+      "start": 302.12,
+      "duration": 3.96,
+      "text": "volumes so before we move ahead just to"
+    },
+    {
+      "start": 304.84,
+      "duration": 3.04,
+      "text": "let you know if you're doing this"
+    },
+    {
+      "start": 306.08,
+      "duration": 4.36,
+      "text": "project along with me you're going to"
+    },
+    {
+      "start": 307.88,
+      "duration": 4.72,
+      "text": "get some charge of around $2 or $3 at"
+    },
+    {
+      "start": 310.44,
+      "duration": 3.88,
+      "text": "Max if you're running this application"
+    },
+    {
+      "start": 312.6,
+      "duration": 3.8,
+      "text": "but despite the charge I would highly"
+    },
+    {
+      "start": 314.32,
+      "duration": 4.52,
+      "text": "recommend you to please please do this"
+    },
+    {
+      "start": 316.4,
+      "duration": 4.519,
+      "text": "Hands-On project with me because if you"
+    },
+    {
+      "start": 318.84,
+      "duration": 3.72,
+      "text": "just watch the video it will not make"
+    },
+    {
+      "start": 320.919,
+      "duration": 3.521,
+      "text": "sense and you will not be able to grasp"
+    },
+    {
+      "start": 322.56,
+      "duration": 4.84,
+      "text": "all the knowledge because we're going to"
+    },
+    {
+      "start": 324.44,
+      "duration": 6.44,
+      "text": "learn how to create deployments stateful"
+    },
+    {
+      "start": 327.4,
+      "duration": 5.88,
+      "text": "set persistent volumes uh Nam spaces so"
+    },
+    {
+      "start": 330.88,
+      "duration": 4.68,
+      "text": "much more along with mongodb queries so"
+    },
+    {
+      "start": 333.28,
+      "duration": 4.68,
+      "text": "I want you to please do handson and"
+    },
+    {
+      "start": 335.56,
+      "duration": 4.12,
+      "text": "complete this project along with me so"
+    },
+    {
+      "start": 337.96,
+      "duration": 4.16,
+      "text": "saying that let's go ahead and create"
+    },
+    {
+      "start": 339.68,
+      "duration": 5.239,
+      "text": "our kubernetes cluster so I'm going to"
+    },
+    {
+      "start": 342.12,
+      "duration": 5.519,
+      "text": "go to Amazon eks service and let's click"
+    },
+    {
+      "start": 344.919,
+      "duration": 5.521,
+      "text": "on create cluster option here I'm going"
+    },
+    {
+      "start": 347.639,
+      "duration": 5.56,
+      "text": "to give the name as cluster"
+    },
+    {
+      "start": 350.44,
+      "duration": 5.52,
+      "text": "one for kues version I'm going to keep"
+    },
+    {
+      "start": 353.199,
+      "duration": 4.56,
+      "text": "the default version which is 1.27 and"
+    },
+    {
+      "start": 355.96,
+      "duration": 3.959,
+      "text": "the cluster service role is my Amazon"
+    },
+    {
+      "start": 357.759,
+      "duration": 4.761,
+      "text": "eeks cluster role most of you had"
+    },
+    {
+      "start": 359.919,
+      "duration": 3.761,
+      "text": "question in the previous project uh that"
+    },
+    {
+      "start": 362.52,
+      "duration": 3.119,
+      "text": "what is this cluster role and what"
+    },
+    {
+      "start": 363.68,
+      "duration": 3.919,
+      "text": "permissions do you have to show you I"
+    },
+    {
+      "start": 365.639,
+      "duration": 4.321,
+      "text": "have this role here and this role has"
+    },
+    {
+      "start": 367.599,
+      "duration": 4.481,
+      "text": "Amazon eks cluster policy so if you"
+    },
+    {
+      "start": 369.96,
+      "duration": 5.519,
+      "text": "don't have this role by default you can"
+    },
+    {
+      "start": 372.08,
+      "duration": 6.88,
+      "text": "create a role and add this policy to it"
+    },
+    {
+      "start": 375.479,
+      "duration": 6.601,
+      "text": "next I'm going to click on next button"
+    },
+    {
+      "start": 378.96,
+      "duration": 5.32,
+      "text": "here and the VPC is going to be default"
+    },
+    {
+      "start": 382.08,
+      "duration": 4.28,
+      "text": "VPC I'm choosing the four subnets that"
+    },
+    {
+      "start": 384.28,
+      "duration": 4.12,
+      "text": "are there already and the security group"
+    },
+    {
+      "start": 386.36,
+      "duration": 3.64,
+      "text": "is going to be default as"
+    },
+    {
+      "start": 388.4,
+      "duration": 4.72,
+      "text": "well"
+    },
+    {
+      "start": 390.0,
+      "duration": 4.16,
+      "text": "okay now for endpoint access I'm going"
+    },
+    {
+      "start": 393.12,
+      "duration": 3.16,
+      "text": "to keep it"
+    },
+    {
+      "start": 394.16,
+      "duration": 3.68,
+      "text": "public for logging I'm not going to"
+    },
+    {
+      "start": 396.28,
+      "duration": 4.16,
+      "text": "enable logging because we don't need"
+    },
+    {
+      "start": 397.84,
+      "duration": 4.199,
+      "text": "that for this project for E add-ons we"
+    },
+    {
+      "start": 400.44,
+      "duration": 4.0,
+      "text": "going to choose the default one but"
+    },
+    {
+      "start": 402.039,
+      "duration": 3.841,
+      "text": "along with this we also need EBS CSI"
+    },
+    {
+      "start": 404.44,
+      "duration": 4.199,
+      "text": "add-on which we are going to add very"
+    },
+    {
+      "start": 405.88,
+      "duration": 7.8,
+      "text": "soon because we need to create volumes"
+    },
+    {
+      "start": 408.639,
+      "duration": 6.521,
+      "text": "for our mongodb uh databases or ports so"
+    },
+    {
+      "start": 413.68,
+      "duration": 4.16,
+      "text": "once I do this I can review everything"
+    },
+    {
+      "start": 415.16,
+      "duration": 5.92,
+      "text": "and click on create option creating a"
+    },
+    {
+      "start": 417.84,
+      "duration": 4.919,
+      "text": "cluster can take up to like uh 5 to 10"
+    },
+    {
+      "start": 421.08,
+      "duration": 3.119,
+      "text": "minutes so till the time it is going to"
+    },
+    {
+      "start": 422.759,
+      "duration": 3.801,
+      "text": "create let's go ahead and add the"
+    },
+    {
+      "start": 424.199,
+      "duration": 5.601,
+      "text": "add-ons here so I'll click on get more"
+    },
+    {
+      "start": 426.56,
+      "duration": 5.8,
+      "text": "add-ons option and search for Eeps which"
+    },
+    {
+      "start": 429.8,
+      "duration": 5.04,
+      "text": "you see here the Eeps CSI driver this is"
+    },
+    {
+      "start": 432.36,
+      "duration": 5.0,
+      "text": "responsible for creating persistent"
+    },
+    {
+      "start": 434.84,
+      "duration": 4.199,
+      "text": "volumes or EBS volumes automatically and"
+    },
+    {
+      "start": 437.36,
+      "duration": 4.36,
+      "text": "you need this for this project so I'm"
+    },
+    {
+      "start": 439.039,
+      "duration": 3.6,
+      "text": "going to select this and scroll down to"
+    },
+    {
+      "start": 441.72,
+      "duration": 4.52,
+      "text": "click on"
+    },
+    {
+      "start": 442.639,
+      "duration": 5.041,
+      "text": "next uh click on next again and click on"
+    },
+    {
+      "start": 446.24,
+      "duration": 3.72,
+      "text": "create"
+    },
+    {
+      "start": 447.68,
+      "duration": 5.16,
+      "text": "option all right so this addon will be"
+    },
+    {
+      "start": 449.96,
+      "duration": 5.079,
+      "text": "also added in our uh cluster once this"
+    },
+    {
+      "start": 452.84,
+      "duration": 4.68,
+      "text": "is created we can go ahead and click on"
+    },
+    {
+      "start": 455.039,
+      "duration": 5.16,
+      "text": "compute to add node groups we are going"
+    },
+    {
+      "start": 457.52,
+      "duration": 4.92,
+      "text": "to use two nodes of T2 medium instances"
+    },
+    {
+      "start": 460.199,
+      "duration": 4.761,
+      "text": "so we will add that only when cluster is"
+    },
+    {
+      "start": 462.44,
+      "duration": 4.12,
+      "text": "created so until the time in the cluster"
+    },
+    {
+      "start": 464.96,
+      "duration": 3.919,
+      "text": "is created we can go ahead and set up"
+    },
+    {
+      "start": 466.56,
+      "duration": 5.0,
+      "text": "our other things for this project I am"
+    },
+    {
+      "start": 468.879,
+      "duration": 4.801,
+      "text": "going to this do this project on ec2"
+    },
+    {
+      "start": 471.56,
+      "duration": 4.359,
+      "text": "because most of you had questions or"
+    },
+    {
+      "start": 473.68,
+      "duration": 4.56,
+      "text": "issues uh in the previous projects you"
+    },
+    {
+      "start": 475.919,
+      "duration": 3.761,
+      "text": "said I have mac I have Windows please do"
+    },
+    {
+      "start": 478.24,
+      "duration": 4.44,
+      "text": "this project on Windows please do this"
+    },
+    {
+      "start": 479.68,
+      "duration": 4.68,
+      "text": "project on Windows or Mac uh so to help"
+    },
+    {
+      "start": 482.68,
+      "duration": 3.519,
+      "text": "you out with this we are going to do"
+    },
+    {
+      "start": 484.36,
+      "duration": 3.76,
+      "text": "this project on ec2 so no matter what"
+    },
+    {
+      "start": 486.199,
+      "duration": 3.96,
+      "text": "operating system you have you can still"
+    },
+    {
+      "start": 488.12,
+      "duration": 3.56,
+      "text": "complete this project with me so for"
+    },
+    {
+      "start": 490.159,
+      "duration": 4.241,
+      "text": "this project I'm going to create a T2"
+    },
+    {
+      "start": 491.68,
+      "duration": 4.76,
+      "text": "micro instance and we will be installing"
+    },
+    {
+      "start": 494.4,
+      "duration": 2.919,
+      "text": "Cube CTL and all the other things on"
+    },
+    {
+      "start": 496.44,
+      "duration": 3.28,
+      "text": "that"
+    },
+    {
+      "start": 497.319,
+      "duration": 3.761,
+      "text": "particular uh on that particular"
+    },
+    {
+      "start": 499.72,
+      "duration": 3.199,
+      "text": "instance so I'm going to click on launch"
+    },
+    {
+      "start": 501.08,
+      "duration": 5.239,
+      "text": "instance option"
+    },
+    {
+      "start": 502.919,
+      "duration": 5.321,
+      "text": "here and let's name the instance as"
+    },
+    {
+      "start": 506.319,
+      "duration": 3.56,
+      "text": "project"
+    },
+    {
+      "start": 508.24,
+      "duration": 3.44,
+      "text": "server"
+    },
+    {
+      "start": 509.879,
+      "duration": 4.6,
+      "text": "I'm choosing Amazon Linux for this"
+    },
+    {
+      "start": 511.68,
+      "duration": 4.599,
+      "text": "instance typist T2 Micro Key pair is"
+    },
+    {
+      "start": 514.479,
+      "duration": 3.521,
+      "text": "going to be us best you can choose any"
+    },
+    {
+      "start": 516.279,
+      "duration": 4.041,
+      "text": "key pair or you can create a new Keir if"
+    },
+    {
+      "start": 518.0,
+      "duration": 6.08,
+      "text": "you don't have any for Security Group"
+    },
+    {
+      "start": 520.32,
+      "duration": 5.48,
+      "text": "I'm going to allow SSH traffic only and"
+    },
+    {
+      "start": 524.08,
+      "duration": 3.4,
+      "text": "in advanced sections I need to add a"
+    },
+    {
+      "start": 525.8,
+      "duration": 4.24,
+      "text": "role which should have access to my"
+    },
+    {
+      "start": 527.48,
+      "duration": 5.88,
+      "text": "cluster so I can work with it but using"
+    },
+    {
+      "start": 530.04,
+      "duration": 4.64,
+      "text": "Ro will be a problem like you can uh get"
+    },
+    {
+      "start": 533.36,
+      "duration": 4.24,
+      "text": "a problem and I'll show you how to"
+    },
+    {
+      "start": 534.68,
+      "duration": 5.0,
+      "text": "troubleshoot that so I'm using eks rooll"
+    },
+    {
+      "start": 537.6,
+      "duration": 4.919,
+      "text": "to show you what access or what do I"
+    },
+    {
+      "start": 539.68,
+      "duration": 6.279,
+      "text": "have in this rule uh I'm going to search"
+    },
+    {
+      "start": 542.519,
+      "duration": 5.841,
+      "text": "my eks access rule which is this and"
+    },
+    {
+      "start": 545.959,
+      "duration": 5.201,
+      "text": "inside this I have this eks access"
+    },
+    {
+      "start": 548.36,
+      "duration": 5.159,
+      "text": "policy which have these permissions so"
+    },
+    {
+      "start": 551.16,
+      "duration": 4.28,
+      "text": "you can create or copy this Json and"
+    },
+    {
+      "start": 553.519,
+      "duration": 3.44,
+      "text": "create a policy which have describe"
+    },
+    {
+      "start": 555.44,
+      "duration": 3.519,
+      "text": "cluster list cluster describe node"
+    },
+    {
+      "start": 556.959,
+      "duration": 5.241,
+      "text": "groups list node group list update and"
+    },
+    {
+      "start": 558.959,
+      "duration": 4.88,
+      "text": "access kubernetes API permissions once"
+    },
+    {
+      "start": 562.2,
+      "duration": 4.16,
+      "text": "you do that you can attach this to your"
+    },
+    {
+      "start": 563.839,
+      "duration": 5.521,
+      "text": "instance and go ahead and click on"
+    },
+    {
+      "start": 566.36,
+      "duration": 4.96,
+      "text": "launch instance option so now this"
+    },
+    {
+      "start": 569.36,
+      "duration": 6.599,
+      "text": "instance is going to be created and we"
+    },
+    {
+      "start": 571.32,
+      "duration": 7.16,
+      "text": "can use this instance to actually uh"
+    },
+    {
+      "start": 575.959,
+      "duration": 4.641,
+      "text": "manage or deploy our application so for"
+    },
+    {
+      "start": 578.48,
+      "duration": 4.4,
+      "text": "you to deploy or manage your kubernetes"
+    },
+    {
+      "start": 580.6,
+      "duration": 5.16,
+      "text": "cluster you need to have a tool named as"
+    },
+    {
+      "start": 582.88,
+      "duration": 4.92,
+      "text": "cube CTL so this is a tool which we use"
+    },
+    {
+      "start": 585.76,
+      "duration": 3.84,
+      "text": "to manage our kubernetes cluster and I"
+    },
+    {
+      "start": 587.8,
+      "duration": 4.56,
+      "text": "have it in my local machine but you will"
+    },
+    {
+      "start": 589.6,
+      "duration": 6.04,
+      "text": "also need to use it or install it uh if"
+    },
+    {
+      "start": 592.36,
+      "duration": 4.719,
+      "text": "you're doing it on ec2 along with me so"
+    },
+    {
+      "start": 595.64,
+      "duration": 2.8,
+      "text": "let's wait for this instance to come up"
+    },
+    {
+      "start": 597.079,
+      "duration": 4.561,
+      "text": "in running State and then we can go"
+    },
+    {
+      "start": 598.44,
+      "duration": 5.48,
+      "text": "ahead and ins install Cube CTL in this"
+    },
+    {
+      "start": 601.64,
+      "duration": 4.68,
+      "text": "instance so now as you can see the"
+    },
+    {
+      "start": 603.92,
+      "duration": 4.479,
+      "text": "instance is in running States I'm going"
+    },
+    {
+      "start": 606.32,
+      "duration": 5.12,
+      "text": "to click on connect option here and"
+    },
+    {
+      "start": 608.399,
+      "duration": 3.041,
+      "text": "click on connect"
+    },
+    {
+      "start": 611.92,
+      "duration": 4.4,
+      "text": "again now to install Cube CTL you can"
+    },
+    {
+      "start": 614.48,
+      "duration": 3.799,
+      "text": "use uh the internet but I have the"
+    },
+    {
+      "start": 616.32,
+      "duration": 4.68,
+      "text": "commands already here so I'm going to"
+    },
+    {
+      "start": 618.279,
+      "duration": 5.201,
+      "text": "use the commands that I"
+    },
+    {
+      "start": 621.0,
+      "duration": 6.16,
+      "text": "have so once the instance is ready we"
+    },
+    {
+      "start": 623.48,
+      "duration": 6.72,
+      "text": "can go ahead and install Cube C"
+    },
+    {
+      "start": 627.16,
+      "duration": 4.88,
+      "text": "here okay so now the instance is ready"
+    },
+    {
+      "start": 630.2,
+      "duration": 3.199,
+      "text": "I'm going to clear the screen and if I"
+    },
+    {
+      "start": 632.04,
+      "duration": 4.16,
+      "text": "run Cube Cil"
+    },
+    {
+      "start": 633.399,
+      "duration": 4.721,
+      "text": "now it will tell me Cube Cil command not"
+    },
+    {
+      "start": 636.2,
+      "duration": 3.92,
+      "text": "found not found because we don't have it"
+    },
+    {
+      "start": 638.12,
+      "duration": 4.279,
+      "text": "so I'm going to run this command which"
+    },
+    {
+      "start": 640.12,
+      "duration": 5.12,
+      "text": "is to Cur the command to install uh to"
+    },
+    {
+      "start": 642.399,
+      "duration": 5.0,
+      "text": "get the file from this particular bucket"
+    },
+    {
+      "start": 645.24,
+      "duration": 4.64,
+      "text": "and then change the permission all the"
+    },
+    {
+      "start": 647.399,
+      "duration": 5.161,
+      "text": "other things to install Cube CTL in our"
+    },
+    {
+      "start": 649.88,
+      "duration": 5.48,
+      "text": "machine so this commands will be present"
+    },
+    {
+      "start": 652.56,
+      "duration": 5.12,
+      "text": "readme section I have this GitHub"
+    },
+    {
+      "start": 655.36,
+      "duration": 4.479,
+      "text": "repository created for all the Manifest"
+    },
+    {
+      "start": 657.68,
+      "duration": 4.88,
+      "text": "and the readme is going to be updated"
+    },
+    {
+      "start": 659.839,
+      "duration": 4.321,
+      "text": "very soon for now you can see uh the"
+    },
+    {
+      "start": 662.56,
+      "duration": 4.839,
+      "text": "cube C has been installed and to confirm"
+    },
+    {
+      "start": 664.16,
+      "duration": 5.2,
+      "text": "I can do Cube CTL command so it will not"
+    },
+    {
+      "start": 667.399,
+      "duration": 4.0,
+      "text": "show me errors similar to this it will"
+    },
+    {
+      "start": 669.36,
+      "duration": 4.039,
+      "text": "in fact show me all the different"
+    },
+    {
+      "start": 671.399,
+      "duration": 3.401,
+      "text": "parameters you can see version here so I"
+    },
+    {
+      "start": 673.399,
+      "duration": 4.641,
+      "text": "can do Cube"
+    },
+    {
+      "start": 674.8,
+      "duration": 5.279,
+      "text": "CTL version command and it will then"
+    },
+    {
+      "start": 678.04,
+      "duration": 3.08,
+      "text": "show me the version which means it is"
+    },
+    {
+      "start": 680.079,
+      "duration": 3.721,
+      "text": "installed"
+    },
+    {
+      "start": 681.12,
+      "duration": 6.519,
+      "text": "successfully along with Cube CTL we also"
+    },
+    {
+      "start": 683.8,
+      "duration": 6.599,
+      "text": "need to have AWS CLI which is a command"
+    },
+    {
+      "start": 687.639,
+      "duration": 5.88,
+      "text": "line tool to manage aw services in in"
+    },
+    {
+      "start": 690.399,
+      "duration": 5.721,
+      "text": "our case it is kubernetes eks so we need"
+    },
+    {
+      "start": 693.519,
+      "duration": 3.88,
+      "text": "to install AWS CLI as well and to do"
+    },
+    {
+      "start": 696.12,
+      "duration": 3.519,
+      "text": "that you can go to official"
+    },
+    {
+      "start": 697.399,
+      "duration": 5.281,
+      "text": "documentation so you can say AWS CLI"
+    },
+    {
+      "start": 699.639,
+      "duration": 5.041,
+      "text": "download and it will open up this so we"
+    },
+    {
+      "start": 702.68,
+      "duration": 4.2,
+      "text": "are using Linux instance so we need to"
+    },
+    {
+      "start": 704.68,
+      "duration": 6.04,
+      "text": "follow this stock for Linux and I'm"
+    },
+    {
+      "start": 706.88,
+      "duration": 6.72,
+      "text": "going to copy these commands run them in"
+    },
+    {
+      "start": 710.72,
+      "duration": 6.28,
+      "text": "my instance so copy and paste and it"
+    },
+    {
+      "start": 713.6,
+      "duration": 6.16,
+      "text": "will start installing AWS CLI for me"
+    },
+    {
+      "start": 717.0,
+      "duration": 5.16,
+      "text": "okay so now we have CBE C installed and"
+    },
+    {
+      "start": 719.76,
+      "duration": 4.48,
+      "text": "we also have AWS CLI installed so we"
+    },
+    {
+      "start": 722.16,
+      "duration": 4.16,
+      "text": "will be waiting for this uh cluster to"
+    },
+    {
+      "start": 724.24,
+      "duration": 4.76,
+      "text": "be in running state so we can go ahead"
+    },
+    {
+      "start": 726.32,
+      "duration": 5.319,
+      "text": "and add notes we require notes because"
+    },
+    {
+      "start": 729.0,
+      "duration": 4.92,
+      "text": "the pods are in the noes and if you"
+    },
+    {
+      "start": 731.639,
+      "duration": 5.081,
+      "text": "don't have notes your pods will not be"
+    },
+    {
+      "start": 733.92,
+      "duration": 4.12,
+      "text": "up so we will wait for this to come in"
+    },
+    {
+      "start": 736.72,
+      "duration": 3.84,
+      "text": "active State and then we can go ahead"
+    },
+    {
+      "start": 738.04,
+      "duration": 6.08,
+      "text": "and add node groups till the time it is"
+    },
+    {
+      "start": 740.56,
+      "duration": 6.12,
+      "text": "still in creating State I can clone this"
+    },
+    {
+      "start": 744.12,
+      "duration": 7.44,
+      "text": "repository and then get the Manifest"
+    },
+    {
+      "start": 746.68,
+      "duration": 6.32,
+      "text": "file in my instance itself so if you"
+    },
+    {
+      "start": 751.56,
+      "duration": 3.839,
+      "text": "don't want to do it on instance you can"
+    },
+    {
+      "start": 753.0,
+      "duration": 4.48,
+      "text": "also do it on your uh terminal or on"
+    },
+    {
+      "start": 755.399,
+      "duration": 4.68,
+      "text": "your local machine if you have Linux or"
+    },
+    {
+      "start": 757.48,
+      "duration": 5.159,
+      "text": "if you have Mac OS or if you have WSL in"
+    },
+    {
+      "start": 760.079,
+      "duration": 5.361,
+      "text": "Windows you can still do try to do this"
+    },
+    {
+      "start": 762.639,
+      "duration": 4.721,
+      "text": "on your uh local machine it will work"
+    },
+    {
+      "start": 765.44,
+      "duration": 4.759,
+      "text": "fine uh even though you will get an"
+    },
+    {
+      "start": 767.36,
+      "duration": 4.0,
+      "text": "error when you do it through through E2"
+    },
+    {
+      "start": 770.199,
+      "duration": 3.841,
+      "text": "instance I'll show you how to"
+    },
+    {
+      "start": 771.36,
+      "duration": 4.32,
+      "text": "troubleshoot that but as most of you had"
+    },
+    {
+      "start": 774.04,
+      "duration": 3.88,
+      "text": "complaints earlier so I'm doing this on"
+    },
+    {
+      "start": 775.68,
+      "duration": 4.279,
+      "text": "ec2 just to make sure that you complete"
+    },
+    {
+      "start": 777.92,
+      "duration": 3.52,
+      "text": "your this project a along with me and if"
+    },
+    {
+      "start": 779.959,
+      "duration": 4.161,
+      "text": "you're just watching this video doing"
+    },
+    {
+      "start": 781.44,
+      "duration": 5.079,
+      "text": "not doing it actually I would ask you to"
+    },
+    {
+      "start": 784.12,
+      "duration": 4.399,
+      "text": "please do it because this is going to be"
+    },
+    {
+      "start": 786.519,
+      "duration": 6.161,
+      "text": "very very helpful for you to learn"
+    },
+    {
+      "start": 788.519,
+      "duration": 7.601,
+      "text": "kubernetes handson so now the AWS CLI is"
+    },
+    {
+      "start": 792.68,
+      "duration": 6.12,
+      "text": "also installed I'm going to clone my"
+    },
+    {
+      "start": 796.12,
+      "duration": 5.68,
+      "text": "repo here so when I run kit"
+    },
+    {
+      "start": 798.8,
+      "duration": 5.039,
+      "text": "clone and paste the command uh paste my"
+    },
+    {
+      "start": 801.8,
+      "duration": 4.08,
+      "text": "repository URL it says get not found"
+    },
+    {
+      "start": 803.839,
+      "duration": 3.44,
+      "text": "which means it is not installed so let's"
+    },
+    {
+      "start": 805.88,
+      "duration": 3.519,
+      "text": "install that as well so I'll say sud"
+    },
+    {
+      "start": 807.279,
+      "duration": 5.56,
+      "text": "sudo yum"
+    },
+    {
+      "start": 809.399,
+      "duration": 5.521,
+      "text": "install g-y and this will install git"
+    },
+    {
+      "start": 812.839,
+      "duration": 4.68,
+      "text": "for"
+    },
+    {
+      "start": 814.92,
+      "duration": 4.56,
+      "text": "me okay so once the get is installed I"
+    },
+    {
+      "start": 817.519,
+      "duration": 4.56,
+      "text": "can run the same command again and then"
+    },
+    {
+      "start": 819.48,
+      "duration": 4.719,
+      "text": "it should clone the repo for me so you"
+    },
+    {
+      "start": 822.079,
+      "duration": 5.161,
+      "text": "can see now my repo is here I can go"
+    },
+    {
+      "start": 824.199,
+      "duration": 5.281,
+      "text": "inside it and I can go inside the"
+    },
+    {
+      "start": 827.24,
+      "duration": 4.36,
+      "text": "Manifest section and when I do LS I can"
+    },
+    {
+      "start": 829.48,
+      "duration": 3.88,
+      "text": "see all the Manifest file here I'm going"
+    },
+    {
+      "start": 831.6,
+      "duration": 3.56,
+      "text": "to explain you this manifest file"
+    },
+    {
+      "start": 833.36,
+      "duration": 5.44,
+      "text": "throughout the video so don't worry"
+    },
+    {
+      "start": 835.16,
+      "duration": 6.56,
+      "text": "about it uh let's see if our cluster is"
+    },
+    {
+      "start": 838.8,
+      "duration": 5.92,
+      "text": "is actually ready or"
+    },
+    {
+      "start": 841.72,
+      "duration": 5.039,
+      "text": "not okay now it is active as you can see"
+    },
+    {
+      "start": 844.72,
+      "duration": 3.559,
+      "text": "here we have our cluster is active let's"
+    },
+    {
+      "start": 846.759,
+      "duration": 3.681,
+      "text": "go ahead and add a node group so I'm"
+    },
+    {
+      "start": 848.279,
+      "duration": 5.721,
+      "text": "going to say add node group button here"
+    },
+    {
+      "start": 850.44,
+      "duration": 6.759,
+      "text": "and type NG or I can say"
+    },
+    {
+      "start": 854.0,
+      "duration": 5.519,
+      "text": "node group for node group I have a role"
+    },
+    {
+      "start": 857.199,
+      "duration": 5.56,
+      "text": "which is my Amazon eks node role again"
+    },
+    {
+      "start": 859.519,
+      "duration": 5.201,
+      "text": "if you don't have it you can check the"
+    },
+    {
+      "start": 862.759,
+      "duration": 4.161,
+      "text": "node uh check the permission that I have"
+    },
+    {
+      "start": 864.72,
+      "duration": 4.84,
+      "text": "in this and you can also create it by"
+    },
+    {
+      "start": 866.92,
+      "duration": 4.96,
+      "text": "default so this is the ru and I have"
+    },
+    {
+      "start": 869.56,
+      "duration": 3.959,
+      "text": "these four permissions in it so if you"
+    },
+    {
+      "start": 871.88,
+      "duration": 3.72,
+      "text": "don't have it pause the video and create"
+    },
+    {
+      "start": 873.519,
+      "duration": 4.841,
+      "text": "a rule and then you can attach that to"
+    },
+    {
+      "start": 875.6,
+      "duration": 5.2,
+      "text": "your node group Next I'm going to click"
+    },
+    {
+      "start": 878.36,
+      "duration": 4.56,
+      "text": "on next without selecting anything and"
+    },
+    {
+      "start": 880.8,
+      "duration": 4.36,
+      "text": "for AMI type I'm using Amazon Linux"
+    },
+    {
+      "start": 882.92,
+      "duration": 4.479,
+      "text": "capacity is on demand for instance type"
+    },
+    {
+      "start": 885.16,
+      "duration": 4.84,
+      "text": "I'll be using T2 medium so I'll search"
+    },
+    {
+      "start": 887.399,
+      "duration": 6.041,
+      "text": "for T2 and then select"
+    },
+    {
+      "start": 890.0,
+      "duration": 5.04,
+      "text": "this for this size I'm keeping 20 for"
+    },
+    {
+      "start": 893.44,
+      "duration": 5.319,
+      "text": "desired size it is going to be two which"
+    },
+    {
+      "start": 895.04,
+      "duration": 5.159,
+      "text": "means two nodes of my uh instance of my"
+    },
+    {
+      "start": 898.759,
+      "duration": 4.801,
+      "text": "Amazon Linux will be running all the"
+    },
+    {
+      "start": 900.199,
+      "duration": 5.32,
+      "text": "time and then click on next again for"
+    },
+    {
+      "start": 903.56,
+      "duration": 4.8,
+      "text": "subnet I'm choosing the default subnets"
+    },
+    {
+      "start": 905.519,
+      "duration": 5.721,
+      "text": "in my default VPC click on next and"
+    },
+    {
+      "start": 908.36,
+      "duration": 5.719,
+      "text": "click on create button here so this will"
+    },
+    {
+      "start": 911.24,
+      "duration": 4.959,
+      "text": "start creating the notes for me now if"
+    },
+    {
+      "start": 914.079,
+      "duration": 5.241,
+      "text": "you want to work in this particular"
+    },
+    {
+      "start": 916.199,
+      "duration": 4.841,
+      "text": "cluster how will AWS know like if you"
+    },
+    {
+      "start": 919.32,
+      "duration": 3.959,
+      "text": "try to do Cube"
+    },
+    {
+      "start": 921.04,
+      "duration": 4.4,
+      "text": "C get parts even though if you don't"
+    },
+    {
+      "start": 923.279,
+      "duration": 3.721,
+      "text": "have any pods or nodes ready if I try to"
+    },
+    {
+      "start": 925.44,
+      "duration": 4.519,
+      "text": "run this command it will give me an"
+    },
+    {
+      "start": 927.0,
+      "duration": 5.399,
+      "text": "error saying uh try this connection to"
+    },
+    {
+      "start": 929.959,
+      "duration": 4.521,
+      "text": "the server was refused or even if I try"
+    },
+    {
+      "start": 932.399,
+      "duration": 5.761,
+      "text": "to do this in my local Machine by"
+    },
+    {
+      "start": 934.48,
+      "duration": 6.2,
+      "text": "running Cube CTL get pods it will give"
+    },
+    {
+      "start": 938.16,
+      "duration": 2.52,
+      "text": "me an error"
+    },
+    {
+      "start": 940.88,
+      "duration": 3.959,
+      "text": "saying unable to connect to the server"
+    },
+    {
+      "start": 943.16,
+      "duration": 3.76,
+      "text": "dial this so we need to first set the"
+    },
+    {
+      "start": 944.839,
+      "duration": 4.0,
+      "text": "context and then we can actually use it"
+    },
+    {
+      "start": 946.92,
+      "duration": 4.96,
+      "text": "so if I run to set the context we need"
+    },
+    {
+      "start": 948.839,
+      "duration": 6.081,
+      "text": "to run this command which is AWS eks"
+    },
+    {
+      "start": 951.88,
+      "duration": 6.36,
+      "text": "update hyphen Cube"
+    },
+    {
+      "start": 954.92,
+      "duration": 4.96,
+      "text": "config dash dash name of the cluster"
+    },
+    {
+      "start": 958.24,
+      "duration": 3.76,
+      "text": "which is cluster"
+    },
+    {
+      "start": 959.88,
+      "duration": 5.399,
+      "text": "one and the region in which you have"
+    },
+    {
+      "start": 962.0,
+      "duration": 5.959,
+      "text": "deployed it so us-"
+    },
+    {
+      "start": 965.279,
+      "duration": 5.081,
+      "text": "west-2 because I'm using Oregon region"
+    },
+    {
+      "start": 967.959,
+      "duration": 5.201,
+      "text": "once I press enter it will show me that"
+    },
+    {
+      "start": 970.36,
+      "duration": 5.0,
+      "text": "the context has been added and now once"
+    },
+    {
+      "start": 973.16,
+      "duration": 4.08,
+      "text": "everything is ready it should also show"
+    },
+    {
+      "start": 975.36,
+      "duration": 3.76,
+      "text": "me when I run the cube C get nodes"
+    },
+    {
+      "start": 977.24,
+      "duration": 3.519,
+      "text": "command so in the compute section you"
+    },
+    {
+      "start": 979.12,
+      "duration": 4.199,
+      "text": "can see this is still creating we have"
+    },
+    {
+      "start": 980.759,
+      "duration": 5.841,
+      "text": "to wait for it to be created and we will"
+    },
+    {
+      "start": 983.319,
+      "duration": 6.161,
+      "text": "th C2 instances in"
+    },
+    {
+      "start": 986.6,
+      "duration": 4.599,
+      "text": "our ec2 section as well so right now you"
+    },
+    {
+      "start": 989.48,
+      "duration": 4.039,
+      "text": "can see there's only one instance we"
+    },
+    {
+      "start": 991.199,
+      "duration": 5.44,
+      "text": "will once the node group is ready we"
+    },
+    {
+      "start": 993.519,
+      "duration": 5.24,
+      "text": "will then have two instances which are"
+    },
+    {
+      "start": 996.639,
+      "duration": 3.921,
+      "text": "the two nodes going to be created as"
+    },
+    {
+      "start": 998.759,
+      "duration": 3.921,
+      "text": "well so I'm going to pause the video for"
+    },
+    {
+      "start": 1000.56,
+      "duration": 4.399,
+      "text": "now and come back again when my node"
+    },
+    {
+      "start": 1002.68,
+      "duration": 4.92,
+      "text": "group is"
+    },
+    {
+      "start": 1004.959,
+      "duration": 4.56,
+      "text": "ready all right so now the node group is"
+    },
+    {
+      "start": 1007.6,
+      "duration": 5.76,
+      "text": "active with two nodes as you can see"
+    },
+    {
+      "start": 1009.519,
+      "duration": 7.0,
+      "text": "here and if I try to run Cube CTL get"
+    },
+    {
+      "start": 1013.36,
+      "duration": 6.08,
+      "text": "nodes in my ec2 instance which is"
+    },
+    {
+      "start": 1016.519,
+      "duration": 7.0,
+      "text": "launched and is accessing my eks cluster"
+    },
+    {
+      "start": 1019.44,
+      "duration": 6.44,
+      "text": "through the rule so this instance is is"
+    },
+    {
+      "start": 1023.519,
+      "duration": 4.761,
+      "text": "accessing my cluster through eks access"
+    },
+    {
+      "start": 1025.88,
+      "duration": 4.48,
+      "text": "rule when I try to run Cube CTL get"
+    },
+    {
+      "start": 1028.28,
+      "duration": 5.559,
+      "text": "nodes it should show me that two nodes"
+    },
+    {
+      "start": 1030.36,
+      "duration": 6.719,
+      "text": "are created along with the uh"
+    },
+    {
+      "start": 1033.839,
+      "duration": 5.641,
+      "text": "DNS but if you see here it says You must"
+    },
+    {
+      "start": 1037.079,
+      "duration": 4.96,
+      "text": "be logged into the server whereas if I"
+    },
+    {
+      "start": 1039.48,
+      "duration": 3.8,
+      "text": "do the same thing in my terminal here"
+    },
+    {
+      "start": 1042.039,
+      "duration": 3.4,
+      "text": "let me clear the screen and set the"
+    },
+    {
+      "start": 1043.28,
+      "duration": 6.84,
+      "text": "context okay I'll set the context by"
+    },
+    {
+      "start": 1045.439,
+      "duration": 7.961,
+      "text": "saying AWS eks update Das Cube"
+    },
+    {
+      "start": 1050.12,
+      "duration": 10.679,
+      "text": "config D- name"
+    },
+    {
+      "start": 1053.4,
+      "duration": 7.399,
+      "text": "cluster one D- region us-"
+    },
+    {
+      "start": 1061.919,
+      "duration": 4.76,
+      "text": "west-2 okay now I've set the context"
+    },
+    {
+      "start": 1064.799,
+      "duration": 5.441,
+      "text": "here and if I try to run Cube"
+    },
+    {
+      "start": 1066.679,
+      "duration": 5.801,
+      "text": "CTL get nodes"
+    },
+    {
+      "start": 1070.24,
+      "duration": 3.92,
+      "text": "commands I will get the nodes as I as"
+    },
+    {
+      "start": 1072.48,
+      "duration": 4.16,
+      "text": "you can see here but when I do the same"
+    },
+    {
+      "start": 1074.16,
+      "duration": 4.84,
+      "text": "thing here it's not giving me uh the"
+    },
+    {
+      "start": 1076.64,
+      "duration": 4.44,
+      "text": "nodes output this is because so I'm"
+    },
+    {
+      "start": 1079.0,
+      "duration": 3.88,
+      "text": "getting this output only because I'm"
+    },
+    {
+      "start": 1081.08,
+      "duration": 3.44,
+      "text": "logged in due to the keys of this"
+    },
+    {
+      "start": 1082.88,
+      "duration": 3.799,
+      "text": "particular user which is the creator of"
+    },
+    {
+      "start": 1084.52,
+      "duration": 4.56,
+      "text": "the cluster whereas this instance is"
+    },
+    {
+      "start": 1086.679,
+      "duration": 4.521,
+      "text": "giving this getting this error because"
+    },
+    {
+      "start": 1089.08,
+      "duration": 5.0,
+      "text": "it is accessing cluster not through this"
+    },
+    {
+      "start": 1091.2,
+      "duration": 6.04,
+      "text": "particular user but through an IM IM"
+    },
+    {
+      "start": 1094.08,
+      "duration": 5.2,
+      "text": "role which is eks access so in AWS you"
+    },
+    {
+      "start": 1097.24,
+      "duration": 4.12,
+      "text": "will get this error unless you give"
+    },
+    {
+      "start": 1099.28,
+      "duration": 4.16,
+      "text": "permission to the rule so that it can"
+    },
+    {
+      "start": 1101.36,
+      "duration": 4.64,
+      "text": "access our cluster and how can I do that"
+    },
+    {
+      "start": 1103.44,
+      "duration": 4.16,
+      "text": "I can do that by editing the config map"
+    },
+    {
+      "start": 1106.0,
+      "duration": 3.48,
+      "text": "so if you don't know what is config map"
+    },
+    {
+      "start": 1107.6,
+      "duration": 4.72,
+      "text": "feel free to get go to the official"
+    },
+    {
+      "start": 1109.48,
+      "duration": 5.439,
+      "text": "documentation to understand what is"
+    },
+    {
+      "start": 1112.32,
+      "duration": 4.88,
+      "text": "config map and you can read about it but"
+    },
+    {
+      "start": 1114.919,
+      "duration": 4.201,
+      "text": "if you want to see how I can edit it uh"
+    },
+    {
+      "start": 1117.2,
+      "duration": 6.0,
+      "text": "let me show you so I'll run the command"
+    },
+    {
+      "start": 1119.12,
+      "duration": 6.0,
+      "text": "Cube CTL edit config map and you need to"
+    },
+    {
+      "start": 1123.2,
+      "duration": 4.479,
+      "text": "edit the config map which is AWS hyphen"
+    },
+    {
+      "start": 1125.12,
+      "duration": 3.48,
+      "text": "o this is the name and it is inside the"
+    },
+    {
+      "start": 1127.679,
+      "duration": 3.961,
+      "text": "cube"
+    },
+    {
+      "start": 1128.6,
+      "duration": 6.079,
+      "text": "system Nam space so when I run this it"
+    },
+    {
+      "start": 1131.64,
+      "duration": 4.84,
+      "text": "will open a VI editor uh with this file"
+    },
+    {
+      "start": 1134.679,
+      "duration": 4.24,
+      "text": "which is a config map and I need to go"
+    },
+    {
+      "start": 1136.48,
+      "duration": 5.6,
+      "text": "till the kind press I to go to insert"
+    },
+    {
+      "start": 1138.919,
+      "duration": 5.401,
+      "text": "mode and then I need to start typing"
+    },
+    {
+      "start": 1142.08,
+      "duration": 5.32,
+      "text": "some configurations which should be"
+    },
+    {
+      "start": 1144.32,
+      "duration": 6.16,
+      "text": "exactly below this uh group so I'll go"
+    },
+    {
+      "start": 1147.4,
+      "duration": 4.92,
+      "text": "down and press Dash and type in this"
+    },
+    {
+      "start": 1150.48,
+      "duration": 4.96,
+      "text": "things so the role Arn where I need to"
+    },
+    {
+      "start": 1152.32,
+      "duration": 6.599,
+      "text": "put the Arn of the rule that is used to"
+    },
+    {
+      "start": 1155.44,
+      "duration": 6.68,
+      "text": "access the cluster and this is totally"
+    },
+    {
+      "start": 1158.919,
+      "duration": 5.24,
+      "text": "optional for you if you are if you think"
+    },
+    {
+      "start": 1162.12,
+      "duration": 4.84,
+      "text": "this is confusing feel free to put your"
+    },
+    {
+      "start": 1164.159,
+      "duration": 4.601,
+      "text": "keys directly by running the AWS uh"
+    },
+    {
+      "start": 1166.96,
+      "duration": 3.44,
+      "text": "configure command you you can run the"
+    },
+    {
+      "start": 1168.76,
+      "duration": 4.2,
+      "text": "AWS configure command and put the keys"
+    },
+    {
+      "start": 1170.4,
+      "duration": 4.08,
+      "text": "of the user that created the cluster but"
+    },
+    {
+      "start": 1172.96,
+      "duration": 3.56,
+      "text": "most of you in the comments will show"
+    },
+    {
+      "start": 1174.48,
+      "duration": 3.48,
+      "text": "will tell me that this is not a good"
+    },
+    {
+      "start": 1176.52,
+      "duration": 3.2,
+      "text": "practice which is actually not a good"
+    },
+    {
+      "start": 1177.96,
+      "duration": 3.88,
+      "text": "practice so I will show you how you can"
+    },
+    {
+      "start": 1179.72,
+      "duration": 5.72,
+      "text": "edit config Maps and give access to"
+    },
+    {
+      "start": 1181.84,
+      "duration": 5.199,
+      "text": "different users or roles in your AWS and"
+    },
+    {
+      "start": 1185.44,
+      "duration": 4.76,
+      "text": "if you don't know how to do it you can"
+    },
+    {
+      "start": 1187.039,
+      "duration": 5.921,
+      "text": "also follow this particular uh"
+    },
+    {
+      "start": 1190.2,
+      "duration": 5.76,
+      "text": "documentation by AWS and there's also a"
+    },
+    {
+      "start": 1192.96,
+      "duration": 5.599,
+      "text": "video by this person so if I scroll down"
+    },
+    {
+      "start": 1195.96,
+      "duration": 5.719,
+      "text": "and show you you will see the command"
+    },
+    {
+      "start": 1198.559,
+      "duration": 5.401,
+      "text": "that I ran right now which is the edit"
+    },
+    {
+      "start": 1201.679,
+      "duration": 4.041,
+      "text": "config map command so let me search for"
+    },
+    {
+      "start": 1203.96,
+      "duration": 3.64,
+      "text": "it edit config and you can see this is"
+    },
+    {
+      "start": 1205.72,
+      "duration": 4.0,
+      "text": "the command once you edit it you can"
+    },
+    {
+      "start": 1207.6,
+      "duration": 3.72,
+      "text": "give access to different IM users or"
+    },
+    {
+      "start": 1209.72,
+      "duration": 3.56,
+      "text": "different role as well for us it is"
+    },
+    {
+      "start": 1211.32,
+      "duration": 4.64,
+      "text": "roles so we will be using this section"
+    },
+    {
+      "start": 1213.28,
+      "duration": 4.48,
+      "text": "so I'm going to add Arn for my role and"
+    },
+    {
+      "start": 1215.96,
+      "duration": 5.28,
+      "text": "which is here so I'll copy it and paste"
+    },
+    {
+      "start": 1217.76,
+      "duration": 4.96,
+      "text": "it in this after role I need to add the"
+    },
+    {
+      "start": 1221.24,
+      "duration": 3.559,
+      "text": "uh username so as you can see here it"
+    },
+    {
+      "start": 1222.72,
+      "duration": 5.16,
+      "text": "says username which is the name of the"
+    },
+    {
+      "start": 1224.799,
+      "duration": 6.201,
+      "text": "rule so I'll say user name and the name"
+    },
+    {
+      "start": 1227.88,
+      "duration": 4.48,
+      "text": "of theule is eks access next I need to"
+    },
+    {
+      "start": 1231.0,
+      "duration": 5.12,
+      "text": "define the groups so I'll be putting"
+    },
+    {
+      "start": 1232.36,
+      "duration": 7.4,
+      "text": "this group groups here and it should be"
+    },
+    {
+      "start": 1236.12,
+      "duration": 7.36,
+      "text": "inside system colon Masters so I'll say"
+    },
+    {
+      "start": 1239.76,
+      "duration": 6.68,
+      "text": "system colon Masters now I'll press"
+    },
+    {
+      "start": 1243.48,
+      "duration": 4.8,
+      "text": "Escape colon WQ to save this file once I"
+    },
+    {
+      "start": 1246.44,
+      "duration": 4.28,
+      "text": "do this and everything is fine it should"
+    },
+    {
+      "start": 1248.28,
+      "duration": 4.68,
+      "text": "give me config map Au edited if you get"
+    },
+    {
+      "start": 1250.72,
+      "duration": 4.76,
+      "text": "any error make sure that the indentation"
+    },
+    {
+      "start": 1252.96,
+      "duration": 4.079,
+      "text": "and everything is correct uh next if I"
+    },
+    {
+      "start": 1255.48,
+      "duration": 4.24,
+      "text": "go back now and try to run the same"
+    },
+    {
+      "start": 1257.039,
+      "duration": 4.441,
+      "text": "command which gave me a earlier by"
+    },
+    {
+      "start": 1259.72,
+      "duration": 5.959,
+      "text": "saying so let me stop this first I'll"
+    },
+    {
+      "start": 1261.48,
+      "duration": 7.0,
+      "text": "say Cube c l get nodes and this time it"
+    },
+    {
+      "start": 1265.679,
+      "duration": 5.081,
+      "text": "will not give me error because now I my"
+    },
+    {
+      "start": 1268.48,
+      "duration": 4.64,
+      "text": "role has access to the cluster this is"
+    },
+    {
+      "start": 1270.76,
+      "duration": 4.24,
+      "text": "how you get you can edit config maps to"
+    },
+    {
+      "start": 1273.12,
+      "duration": 3.64,
+      "text": "give access to different users and"
+    },
+    {
+      "start": 1275.0,
+      "duration": 3.96,
+      "text": "whenever you get this issue you should"
+    },
+    {
+      "start": 1276.76,
+      "duration": 5.44,
+      "text": "always go and check that the config map"
+    },
+    {
+      "start": 1278.96,
+      "duration": 4.8,
+      "text": "has the rule added or not this can also"
+    },
+    {
+      "start": 1282.2,
+      "duration": 4.0,
+      "text": "be an error when your nodes are not"
+    },
+    {
+      "start": 1283.76,
+      "duration": 5.039,
+      "text": "ready so make sure you uh see that the"
+    },
+    {
+      "start": 1286.2,
+      "duration": 4.12,
+      "text": "nodes are ready as well okay now"
+    },
+    {
+      "start": 1288.799,
+      "duration": 3.721,
+      "text": "everything is fine let's go ahead and"
+    },
+    {
+      "start": 1290.32,
+      "duration": 5.239,
+      "text": "deploy our application we will start"
+    },
+    {
+      "start": 1292.52,
+      "duration": 5.279,
+      "text": "with creating uh the mongod DB so we are"
+    },
+    {
+      "start": 1295.559,
+      "duration": 5.36,
+      "text": "using stateful set to deploy our mongod"
+    },
+    {
+      "start": 1297.799,
+      "duration": 5.561,
+      "text": "DB Parts all the Manifest file here so"
+    },
+    {
+      "start": 1300.919,
+      "duration": 6.36,
+      "text": "let me explain you what is there in this"
+    },
+    {
+      "start": 1303.36,
+      "duration": 6.16,
+      "text": "stateful set. yam so this this is"
+    },
+    {
+      "start": 1307.279,
+      "duration": 4.921,
+      "text": "a manifest file for stateful set you can"
+    },
+    {
+      "start": 1309.52,
+      "duration": 4.6,
+      "text": "see the client kind is stateful set name"
+    },
+    {
+      "start": 1312.2,
+      "duration": 4.04,
+      "text": "of this stateful set is we are"
+    },
+    {
+      "start": 1314.12,
+      "duration": 4.559,
+      "text": "defining this in Cloud uh Cloud Cham"
+    },
+    {
+      "start": 1316.24,
+      "duration": 4.4,
+      "text": "name space and just to let you know we"
+    },
+    {
+      "start": 1318.679,
+      "duration": 5.281,
+      "text": "don't have this Nam space as of now so"
+    },
+    {
+      "start": 1320.64,
+      "duration": 4.88,
+      "text": "if I do Cube CTL get NS you can see that"
+    },
+    {
+      "start": 1323.96,
+      "duration": 3.48,
+      "text": "there are all default name spaces we"
+    },
+    {
+      "start": 1325.52,
+      "duration": 3.92,
+      "text": "need to create a cloud champ name space"
+    },
+    {
+      "start": 1327.44,
+      "duration": 6.44,
+      "text": "or else we will get an error so I'll say"
+    },
+    {
+      "start": 1329.44,
+      "duration": 7.479,
+      "text": "Cube CTL create NS Cloud"
+    },
+    {
+      "start": 1333.88,
+      "duration": 4.799,
+      "text": "champ okay this will create uh name"
+    },
+    {
+      "start": 1336.919,
+      "duration": 4.12,
+      "text": "space named as Cloud champ and I can you"
+    },
+    {
+      "start": 1338.679,
+      "duration": 5.441,
+      "text": "can check that by running the cube C get"
+    },
+    {
+      "start": 1341.039,
+      "duration": 5.721,
+      "text": "NS now you see Cloud Jam active created"
+    },
+    {
+      "start": 1344.12,
+      "duration": 4.48,
+      "text": "5 seconds ago okay so this will be"
+    },
+    {
+      "start": 1346.76,
+      "duration": 3.919,
+      "text": "created in this name space and it is"
+    },
+    {
+      "start": 1348.6,
+      "duration": 5.0,
+      "text": "going to have three replicas which means"
+    },
+    {
+      "start": 1350.679,
+      "duration": 5.321,
+      "text": "three pods running for it has"
+    },
+    {
+      "start": 1353.6,
+      "duration": 5.959,
+      "text": "these labels and it has some Affinity"
+    },
+    {
+      "start": 1356.0,
+      "duration": 5.84,
+      "text": "rules here now we are using container"
+    },
+    {
+      "start": 1359.559,
+      "duration": 3.561,
+      "text": "image as 4.2 and after the"
+    },
+    {
+      "start": 1361.84,
+      "duration": 2.839,
+      "text": "container is created it will run the"
+    },
+    {
+      "start": 1363.12,
+      "duration": 5.0,
+      "text": "command in this command which is to"
+    },
+    {
+      "start": 1364.679,
+      "duration": 5.88,
+      "text": "start uh service or database"
+    },
+    {
+      "start": 1368.12,
+      "duration": 5.72,
+      "text": "the port is 27017 and it is also going"
+    },
+    {
+      "start": 1370.559,
+      "duration": 6.0,
+      "text": "to create persistent storage uh which is"
+    },
+    {
+      "start": 1373.84,
+      "duration": 4.64,
+      "text": "going to create EBS volumes of gp2 type"
+    },
+    {
+      "start": 1376.559,
+      "duration": 4.321,
+      "text": "you can see here so once once we run"
+    },
+    {
+      "start": 1378.48,
+      "duration": 4.48,
+      "text": "this along with the pods it will also"
+    },
+    {
+      "start": 1380.88,
+      "duration": 4.24,
+      "text": "create EBS volumes as of now if I show"
+    },
+    {
+      "start": 1382.96,
+      "duration": 4.56,
+      "text": "you these are the two nodes we have"
+    },
+    {
+      "start": 1385.12,
+      "duration": 6.24,
+      "text": "let's name this as node"
+    },
+    {
+      "start": 1387.52,
+      "duration": 8.44,
+      "text": "one and node 2 so this node has a"
+    },
+    {
+      "start": 1391.36,
+      "duration": 6.28,
+      "text": "storage of uh 20 GB now but once I run"
+    },
+    {
+      "start": 1395.96,
+      "duration": 4.76,
+      "text": "the stateful set it will have additional"
+    },
+    {
+      "start": 1397.64,
+      "duration": 6.84,
+      "text": "1 GB storage according to the stateful"
+    },
+    {
+      "start": 1400.72,
+      "duration": 5.76,
+      "text": "uh set manifest that we have here so"
+    },
+    {
+      "start": 1404.48,
+      "duration": 4.88,
+      "text": "let's go and apply this to let's go and"
+    },
+    {
+      "start": 1406.48,
+      "duration": 4.84,
+      "text": "apply this to create three pods and PVC"
+    },
+    {
+      "start": 1409.36,
+      "duration": 7.16,
+      "text": "as well so if I show you right now Cube"
+    },
+    {
+      "start": 1411.32,
+      "duration": 6.479,
+      "text": "CTL get all hyph n Cloud Cham has no"
+    },
+    {
+      "start": 1416.52,
+      "duration": 3.279,
+      "text": "resource it should have no resource"
+    },
+    {
+      "start": 1417.799,
+      "duration": 5.641,
+      "text": "because we haven't created anything"
+    },
+    {
+      "start": 1419.799,
+      "duration": 7.081,
+      "text": "again if I do Cube CTL get PV hyphen n"
+    },
+    {
+      "start": 1423.44,
+      "duration": 5.64,
+      "text": "Cloud sham it will tell me no resources"
+    },
+    {
+      "start": 1426.88,
+      "duration": 4.56,
+      "text": "found but when I apply this particular"
+    },
+    {
+      "start": 1429.08,
+      "duration": 6.44,
+      "text": "manifest file it will create three pods"
+    },
+    {
+      "start": 1431.44,
+      "duration": 5.839,
+      "text": "and uh three volumes along with PVCs or"
+    },
+    {
+      "start": 1435.52,
+      "duration": 3.08,
+      "text": "persist volume claims to actually use it"
+    },
+    {
+      "start": 1437.279,
+      "duration": 3.321,
+      "text": "in our part"
+    },
+    {
+      "start": 1438.6,
+      "duration": 5.88,
+      "text": "so let's clear it and run the command"
+    },
+    {
+      "start": 1440.6,
+      "duration": 6.12,
+      "text": "Cube CTL apply hyphen f name of the file"
+    },
+    {
+      "start": 1444.48,
+      "duration": 4.6,
+      "text": "which is"
+    },
+    {
+      "start": 1446.72,
+      "duration": 4.839,
+      "text": "stateful now when I run this it will"
+    },
+    {
+      "start": 1449.08,
+      "duration": 5.16,
+      "text": "tell me that the stateful set do apps"
+    },
+    {
+      "start": 1451.559,
+      "duration": 7.401,
+      "text": "created and when I run this Cube"
+    },
+    {
+      "start": 1454.24,
+      "duration": 7.799,
+      "text": "CTL get pods hyphen and Cloud champ you"
+    },
+    {
+      "start": 1458.96,
+      "duration": 5.8,
+      "text": "should be able to see the three"
+    },
+    {
+      "start": 1462.039,
+      "duration": 5.801,
+      "text": "pods very soon so let's run this in"
+    },
+    {
+      "start": 1464.76,
+      "duration": 6.279,
+      "text": "watch mode which will show us the pods"
+    },
+    {
+      "start": 1467.84,
+      "duration": 6.76,
+      "text": "creating again if I come back here and"
+    },
+    {
+      "start": 1471.039,
+      "duration": 5.041,
+      "text": "now you already saw that this is 20 GB"
+    },
+    {
+      "start": 1474.6,
+      "duration": 4.36,
+      "text": "but it should have additional storage"
+    },
+    {
+      "start": 1476.08,
+      "duration": 5.319,
+      "text": "now so let's click on this and click on"
+    },
+    {
+      "start": 1478.96,
+      "duration": 5.28,
+      "text": "storage you can see a new storage has"
+    },
+    {
+      "start": 1481.399,
+      "duration": 5.52,
+      "text": "been added here and similarly for node"
+    },
+    {
+      "start": 1484.24,
+      "duration": 3.919,
+      "text": "one you will have new storage added as"
+    },
+    {
+      "start": 1486.919,
+      "duration": 4.041,
+      "text": "well"
+    },
+    {
+      "start": 1488.159,
+      "duration": 4.76,
+      "text": "okay coming back here you can see the"
+    },
+    {
+      "start": 1490.96,
+      "duration": 4.04,
+      "text": "instance now is in running state so"
+    },
+    {
+      "start": 1492.919,
+      "duration": 4.161,
+      "text": "one is in running State 0er"
+    },
+    {
+      "start": 1495.0,
+      "duration": 3.72,
+      "text": "is also in running State and 2 is"
+    },
+    {
+      "start": 1497.08,
+      "duration": 4.88,
+      "text": "in container creating state which will"
+    },
+    {
+      "start": 1498.72,
+      "duration": 5.6,
+      "text": "take like 1 second to come back again"
+    },
+    {
+      "start": 1501.96,
+      "duration": 4.12,
+      "text": "okay so if I show you everything inside"
+    },
+    {
+      "start": 1504.32,
+      "duration": 6.12,
+      "text": "our and Cloud"
+    },
+    {
+      "start": 1506.08,
+      "duration": 6.8,
+      "text": "champ name space we have Cube C get all"
+    },
+    {
+      "start": 1510.44,
+      "duration": 4.239,
+      "text": "hyphen n Cloud champ putting this hyphen"
+    },
+    {
+      "start": 1512.88,
+      "duration": 4.799,
+      "text": "n Cloud champ is a very iritating so"
+    },
+    {
+      "start": 1514.679,
+      "duration": 5.081,
+      "text": "let's set the cloud champ as default but"
+    },
+    {
+      "start": 1517.679,
+      "duration": 4.48,
+      "text": "you can see we have three pods ready one"
+    },
+    {
+      "start": 1519.76,
+      "duration": 6.96,
+      "text": "stateful set which created this pod and"
+    },
+    {
+      "start": 1522.159,
+      "duration": 6.281,
+      "text": "we also have our uh volumes added you"
+    },
+    {
+      "start": 1526.72,
+      "duration": 6.24,
+      "text": "can check that by running"
+    },
+    {
+      "start": 1528.44,
+      "duration": 6.08,
+      "text": "Cube CTL get PV or persistent volumes"
+    },
+    {
+      "start": 1532.96,
+      "duration": 3.48,
+      "text": "completely if you want to add that so"
+    },
+    {
+      "start": 1534.52,
+      "duration": 5.399,
+      "text": "you can see three volumes are there and"
+    },
+    {
+      "start": 1536.44,
+      "duration": 7.479,
+      "text": "you can also check PVC which are bounded"
+    },
+    {
+      "start": 1539.919,
+      "duration": 6.401,
+      "text": "uh okay sorry PVC hyphen n cloud"
+    },
+    {
+      "start": 1543.919,
+      "duration": 4.24,
+      "text": "shamp and you can see three PVS which"
+    },
+    {
+      "start": 1546.32,
+      "duration": 4.359,
+      "text": "are bounded to this particular"
+    },
+    {
+      "start": 1548.159,
+      "duration": 6.041,
+      "text": "persistent volumes which is exactly what"
+    },
+    {
+      "start": 1550.679,
+      "duration": 5.961,
+      "text": "we want now let's go ahead and uh do"
+    },
+    {
+      "start": 1554.2,
+      "duration": 4.28,
+      "text": "some configuration to set replicas what"
+    },
+    {
+      "start": 1556.64,
+      "duration": 4.36,
+      "text": "do I mean by replicas so if I show you"
+    },
+    {
+      "start": 1558.48,
+      "duration": 5.439,
+      "text": "there are three parts in"
+    },
+    {
+      "start": 1561.0,
+      "duration": 4.96,
+      "text": "our uh for our mongod DB so the"
+    },
+    {
+      "start": 1563.919,
+      "duration": 4.401,
+      "text": "one should be the primary database"
+    },
+    {
+      "start": 1565.96,
+      "duration": 4.24,
+      "text": "whereas this two should be secondary as"
+    },
+    {
+      "start": 1568.32,
+      "duration": 5.44,
+      "text": "a backup if everything anything is wrong"
+    },
+    {
+      "start": 1570.2,
+      "duration": 7.4,
+      "text": "with this and so to do that exactly I"
+    },
+    {
+      "start": 1573.76,
+      "duration": 5.48,
+      "text": "need to First expose this mongod DB pods"
+    },
+    {
+      "start": 1577.6,
+      "duration": 3.559,
+      "text": "and how can I expose this to expose you"
+    },
+    {
+      "start": 1579.24,
+      "duration": 4.24,
+      "text": "need to use service so what are services"
+    },
+    {
+      "start": 1581.159,
+      "duration": 4.801,
+      "text": "and uh kubernetes you can read that in"
+    },
+    {
+      "start": 1583.48,
+      "duration": 3.72,
+      "text": "official documentation so service is a"
+    },
+    {
+      "start": 1585.96,
+      "duration": 2.8,
+      "text": "method for exposing a network"
+    },
+    {
+      "start": 1587.2,
+      "duration": 4.24,
+      "text": "application that is running on one or"
+    },
+    {
+      "start": 1588.76,
+      "duration": 5.48,
+      "text": "more pod and to expose this we are going"
+    },
+    {
+      "start": 1591.44,
+      "duration": 4.76,
+      "text": "to use a service which is headless"
+    },
+    {
+      "start": 1594.24,
+      "duration": 4.919,
+      "text": "service what do you mean by headless in"
+    },
+    {
+      "start": 1596.2,
+      "duration": 5.719,
+      "text": "headless you have uh cluster IP and the"
+    },
+    {
+      "start": 1599.159,
+      "duration": 5.081,
+      "text": "IP set to none and let me show you that"
+    },
+    {
+      "start": 1601.919,
+      "duration": 4.48,
+      "text": "in the Manifest that I have here so when"
+    },
+    {
+      "start": 1604.24,
+      "duration": 6.039,
+      "text": "I do LS you can see this is a manifest"
+    },
+    {
+      "start": 1606.399,
+      "duration": 7.961,
+      "text": "if I do cat"
+    },
+    {
+      "start": 1610.279,
+      "duration": 6.721,
+      "text": "service Uhl we are creating a service in"
+    },
+    {
+      "start": 1614.36,
+      "duration": 3.919,
+      "text": "named as in Cloud champ and this"
+    },
+    {
+      "start": 1617.0,
+      "duration": 4.039,
+      "text": "is the label"
+    },
+    {
+      "start": 1618.279,
+      "duration": 4.28,
+      "text": "it is running on Port 2707 this is the"
+    },
+    {
+      "start": 1621.039,
+      "duration": 3.201,
+      "text": "Target Port and the cluster IP is set to"
+    },
+    {
+      "start": 1622.559,
+      "duration": 3.921,
+      "text": "none which is a headless service which"
+    },
+    {
+      "start": 1624.24,
+      "duration": 4.559,
+      "text": "means we are creating a service but not"
+    },
+    {
+      "start": 1626.48,
+      "duration": 4.16,
+      "text": "actually exposing it to the to the"
+    },
+    {
+      "start": 1628.799,
+      "duration": 4.441,
+      "text": "internet world it is going to be exposed"
+    },
+    {
+      "start": 1630.64,
+      "duration": 5.039,
+      "text": "to this API which will get the votes"
+    },
+    {
+      "start": 1633.24,
+      "duration": 3.52,
+      "text": "from here and store inside the database"
+    },
+    {
+      "start": 1635.679,
+      "duration": 3.36,
+      "text": "uh which is on"
+    },
+    {
+      "start": 1636.76,
+      "duration": 7.0,
+      "text": "mongodb okay let's go ahead and apply"
+    },
+    {
+      "start": 1639.039,
+      "duration": 8.561,
+      "text": "that by saying Cube C apply hyphen f and"
+    },
+    {
+      "start": 1643.76,
+      "duration": 6.519,
+      "text": "service. ml when I do this it"
+    },
+    {
+      "start": 1647.6,
+      "duration": 5.76,
+      "text": "should show me service created and"
+    },
+    {
+      "start": 1650.279,
+      "duration": 7.28,
+      "text": "to confirm you can do Cube CTL get SVC"
+    },
+    {
+      "start": 1653.36,
+      "duration": 5.64,
+      "text": "hyphen n Cloud champ okay now you can"
+    },
+    {
+      "start": 1657.559,
+      "duration": 3.521,
+      "text": "see the service has been created which"
+    },
+    {
+      "start": 1659.0,
+      "duration": 4.559,
+      "text": "is a service cluster IP is the"
+    },
+    {
+      "start": 1661.08,
+      "duration": 4.68,
+      "text": "type and it is set to Lear now"
+    },
+    {
+      "start": 1663.559,
+      "duration": 4.801,
+      "text": "everything is done uh just to avoid"
+    },
+    {
+      "start": 1665.76,
+      "duration": 7.039,
+      "text": "using hyphen n Cloud champ all the time"
+    },
+    {
+      "start": 1668.36,
+      "duration": 7.4,
+      "text": "I am going to set Cloud champ as default"
+    },
+    {
+      "start": 1672.799,
+      "duration": 5.48,
+      "text": "I'll say Cube CTL"
+    },
+    {
+      "start": 1675.76,
+      "duration": 4.88,
+      "text": "config set"
+    },
+    {
+      "start": 1678.279,
+      "duration": 5.441,
+      "text": "hyphen"
+    },
+    {
+      "start": 1680.64,
+      "duration": 8.2,
+      "text": "context hyphen hyphen"
+    },
+    {
+      "start": 1683.72,
+      "duration": 5.12,
+      "text": "current hyph hyph namespace as Cloud"
+    },
+    {
+      "start": 1689.159,
+      "duration": 8.801,
+      "text": "Cham okay so this will set uh Cloud Cham"
+    },
+    {
+      "start": 1693.08,
+      "duration": 4.88,
+      "text": "as a default namespace and if I do Cube"
+    },
+    {
+      "start": 1698.0,
+      "duration": 6.679,
+      "text": "CTL get pods now it"
+    },
+    {
+      "start": 1701.12,
+      "duration": 5.88,
+      "text": "should show me the pods in the name in"
+    },
+    {
+      "start": 1704.679,
+      "duration": 4.84,
+      "text": "the cloud Cham name space only okay now"
+    },
+    {
+      "start": 1707.0,
+      "duration": 5.32,
+      "text": "everything is done we have our parts"
+    },
+    {
+      "start": 1709.519,
+      "duration": 4.16,
+      "text": "ready we also have our service ready and"
+    },
+    {
+      "start": 1712.32,
+      "duration": 3.4,
+      "text": "we all we need to do is to set the"
+    },
+    {
+      "start": 1713.679,
+      "duration": 4.041,
+      "text": "replication so that this is the"
+    },
+    {
+      "start": 1715.72,
+      "duration": 3.76,
+      "text": "primary one this is a secondary and this"
+    },
+    {
+      "start": 1717.72,
+      "duration": 4.76,
+      "text": "is secondary once we do that then we"
+    },
+    {
+      "start": 1719.48,
+      "duration": 6.96,
+      "text": "will load the data about the languages"
+    },
+    {
+      "start": 1722.48,
+      "duration": 6.28,
+      "text": "in our in our database database so"
+    },
+    {
+      "start": 1726.44,
+      "duration": 3.68,
+      "text": "if you haven't used mongodb earlier I"
+    },
+    {
+      "start": 1728.76,
+      "duration": 4.44,
+      "text": "would recommend you checking it out"
+    },
+    {
+      "start": 1730.12,
+      "duration": 5.24,
+      "text": "because it is very very uh very popular"
+    },
+    {
+      "start": 1733.2,
+      "duration": 5.079,
+      "text": "no SQL database and I use it a lot in"
+    },
+    {
+      "start": 1735.36,
+      "duration": 4.08,
+      "text": "many of my projects so so you can go to"
+    },
+    {
+      "start": 1738.279,
+      "duration": 3.481,
+      "text": "the official documentation to learn"
+    },
+    {
+      "start": 1739.44,
+      "duration": 5.4,
+      "text": "about more of it"
+    },
+    {
+      "start": 1741.76,
+      "duration": 5.96,
+      "text": "now once I created this service I can go"
+    },
+    {
+      "start": 1744.84,
+      "duration": 5.12,
+      "text": "ahead and set the replication as I said"
+    },
+    {
+      "start": 1747.72,
+      "duration": 4.16,
+      "text": "so we need to use the command Cube C"
+    },
+    {
+      "start": 1749.96,
+      "duration": 4.319,
+      "text": "exec to go inside this particular"
+    },
+    {
+      "start": 1751.88,
+      "duration": 6.88,
+      "text": "container and run the commands so Cube"
+    },
+    {
+      "start": 1754.279,
+      "duration": 8.041,
+      "text": "CTL exec hyphen it and the name of the"
+    },
+    {
+      "start": 1758.76,
+      "duration": 6.799,
+      "text": "pod which is mongod d0 and I want to"
+    },
+    {
+      "start": 1762.32,
+      "duration": 6.68,
+      "text": "also open shells I'll say by"
+    },
+    {
+      "start": 1765.559,
+      "duration": 4.96,
+      "text": "hyph iPhone this will open up uh"
+    },
+    {
+      "start": 1769.0,
+      "duration": 4.36,
+      "text": "shell for me which you can see"
+    },
+    {
+      "start": 1770.519,
+      "duration": 5.801,
+      "text": "here and then I'll run some commands to"
+    },
+    {
+      "start": 1773.36,
+      "duration": 5.4,
+      "text": "set the replication uh with this being"
+    },
+    {
+      "start": 1776.32,
+      "duration": 6.16,
+      "text": "primary secondary secondary so I'm going"
+    },
+    {
+      "start": 1778.76,
+      "duration": 5.72,
+      "text": "to I have the commands already there and"
+    },
+    {
+      "start": 1782.48,
+      "duration": 4.52,
+      "text": "I'll copy it if"
+    },
+    {
+      "start": 1784.48,
+      "duration": 4.439,
+      "text": "you if I try to explain it it will take"
+    },
+    {
+      "start": 1787.0,
+      "duration": 5.6,
+      "text": "more time so rather than me explaining"
+    },
+    {
+      "start": 1788.919,
+      "duration": 6.921,
+      "text": "it you can just go ahead charge GPT and"
+    },
+    {
+      "start": 1792.6,
+      "duration": 6.679,
+      "text": "paste the command so I can say explain"
+    },
+    {
+      "start": 1795.84,
+      "duration": 4.959,
+      "text": "these to me and then it can explain you"
+    },
+    {
+      "start": 1799.279,
+      "duration": 3.361,
+      "text": "in very simple manner if you're not"
+    },
+    {
+      "start": 1800.799,
+      "duration": 3.48,
+      "text": "satisfied you can ask him to make it"
+    },
+    {
+      "start": 1802.64,
+      "duration": 3.6,
+      "text": "more simpler and this will explain you"
+    },
+    {
+      "start": 1804.279,
+      "duration": 4.041,
+      "text": "all the commands line by line so this is"
+    },
+    {
+      "start": 1806.24,
+      "duration": 3.84,
+      "text": "just nothing but just to set one"
+    },
+    {
+      "start": 1808.32,
+      "duration": 6.68,
+      "text": "as the prim 0o as primary and"
+    },
+    {
+      "start": 1810.08,
+      "duration": 7.839,
+      "text": "2 uh and one as secondary replicas"
+    },
+    {
+      "start": 1815.0,
+      "duration": 5.279,
+      "text": "so when I run this by copying it and"
+    },
+    {
+      "start": 1817.919,
+      "duration": 2.36,
+      "text": "pressing"
+    },
+    {
+      "start": 1820.559,
+      "duration": 5.48,
+      "text": "enter"
+    },
+    {
+      "start": 1823.559,
+      "duration": 5.041,
+      "text": "okay so now once this is executed we can"
+    },
+    {
+      "start": 1826.039,
+      "duration": 6.0,
+      "text": "check the status and should show us that"
+    },
+    {
+      "start": 1828.6,
+      "duration": 6.76,
+      "text": "the S say RS do"
+    },
+    {
+      "start": 1832.039,
+      "duration": 6.401,
+      "text": "status and this it should show me that"
+    },
+    {
+      "start": 1835.36,
+      "duration": 6.159,
+      "text": "the first one which is the zero uh"
+    },
+    {
+      "start": 1838.44,
+      "duration": 3.079,
+      "text": "coming back to the Top This"
+    },
+    {
+      "start": 1844.559,
+      "duration": 6.201,
+      "text": "is okay yeah this is zero which is"
+    },
+    {
+      "start": 1847.88,
+      "duration": 5.679,
+      "text": "primary now and one is secondary"
+    },
+    {
+      "start": 1850.76,
+      "duration": 5.72,
+      "text": "two is secondary as well all right"
+    },
+    {
+      "start": 1853.559,
+      "duration": 4.441,
+      "text": "so this is what exactly we want and now"
+    },
+    {
+      "start": 1856.48,
+      "duration": 4.079,
+      "text": "we are find"
+    },
+    {
+      "start": 1858.0,
+      "duration": 5.08,
+      "text": "uh now we can go ahead and add our data"
+    },
+    {
+      "start": 1860.559,
+      "duration": 3.881,
+      "text": "or insert our data in this database so"
+    },
+    {
+      "start": 1863.08,
+      "duration": 3.319,
+      "text": "first we need to create a database and I"
+    },
+    {
+      "start": 1864.44,
+      "duration": 4.68,
+      "text": "can use run this command which is US"
+    },
+    {
+      "start": 1866.399,
+      "duration": 6.321,
+      "text": "Lang DB uh this is the query or a"
+    },
+    {
+      "start": 1869.12,
+      "duration": 5.36,
+      "text": "command to create database in mongodb if"
+    },
+    {
+      "start": 1872.72,
+      "duration": 4.919,
+      "text": "you are not sure you can feel free to"
+    },
+    {
+      "start": 1874.48,
+      "duration": 5.28,
+      "text": "off use the official documentation and"
+    },
+    {
+      "start": 1877.639,
+      "duration": 4.64,
+      "text": "uh here you will see all the different"
+    },
+    {
+      "start": 1879.76,
+      "duration": 5.2,
+      "text": "commands and queries on how to create a"
+    },
+    {
+      "start": 1882.279,
+      "duration": 4.561,
+      "text": "database and how to insert something so"
+    },
+    {
+      "start": 1884.96,
+      "duration": 4.4,
+      "text": "as you see here there are insert methods"
+    },
+    {
+      "start": 1886.84,
+      "duration": 6.36,
+      "text": "and this is the method which is db."
+    },
+    {
+      "start": 1889.36,
+      "duration": 6.439,
+      "text": "collection do insert so I'm going to uh"
+    },
+    {
+      "start": 1893.2,
+      "duration": 5.92,
+      "text": "use that method to insert some data and"
+    },
+    {
+      "start": 1895.799,
+      "duration": 4.72,
+      "text": "when I run this it will say that a"
+    },
+    {
+      "start": 1899.12,
+      "duration": 3.279,
+      "text": "database has been created and we are"
+    },
+    {
+      "start": 1900.519,
+      "duration": 4.561,
+      "text": "also using that database now so switch"
+    },
+    {
+      "start": 1902.399,
+      "duration": 5.721,
+      "text": "to DP Lang DB and now I have all the"
+    },
+    {
+      "start": 1905.08,
+      "duration": 6.24,
+      "text": "queries here so if I show you here this"
+    },
+    {
+      "start": 1908.12,
+      "duration": 6.0,
+      "text": "query is to insert a data which is a"
+    },
+    {
+      "start": 1911.32,
+      "duration": 5.88,
+      "text": "which is all this so name is C use case"
+    },
+    {
+      "start": 1914.12,
+      "duration": 5.6,
+      "text": "is this and as a result it says uh White"
+    },
+    {
+      "start": 1917.2,
+      "duration": 5.079,
+      "text": "right as similarly I'll go ahead and do"
+    },
+    {
+      "start": 1919.72,
+      "duration": 4.48,
+      "text": "that for all the different uh"
+    },
+    {
+      "start": 1922.279,
+      "duration": 4.4,
+      "text": "programming languages that I"
+    },
+    {
+      "start": 1924.2,
+      "duration": 4.24,
+      "text": "have so you can get this in the read me"
+    },
+    {
+      "start": 1926.679,
+      "duration": 4.6,
+      "text": "section again I'll be updating it very"
+    },
+    {
+      "start": 1928.44,
+      "duration": 4.16,
+      "text": "very soon before I upload this video so"
+    },
+    {
+      "start": 1931.279,
+      "duration": 3.24,
+      "text": "once I do this you will see all the"
+    },
+    {
+      "start": 1932.6,
+      "duration": 5.439,
+      "text": "result it says and to confirm you can"
+    },
+    {
+      "start": 1934.519,
+      "duration": 6.64,
+      "text": "run a command uh which is"
+    },
+    {
+      "start": 1938.039,
+      "duration": 7.24,
+      "text": "db. languages which is the collection"
+    },
+    {
+      "start": 1941.159,
+      "duration": 5.721,
+      "text": "name do findind and this so when I run"
+    },
+    {
+      "start": 1945.279,
+      "duration": 4.721,
+      "text": "this it will show me all of the data"
+    },
+    {
+      "start": 1946.88,
+      "duration": 5.399,
+      "text": "that is inserted you can also see it uh"
+    },
+    {
+      "start": 1950.0,
+      "duration": 5.24,
+      "text": "nicely by using"
+    },
+    {
+      "start": 1952.279,
+      "duration": 5.561,
+      "text": "pretty and you can see them in um rable"
+    },
+    {
+      "start": 1955.24,
+      "duration": 5.76,
+      "text": "format so now right now the vots are"
+    },
+    {
+      "start": 1957.84,
+      "duration": 5.76,
+      "text": "zero and we have to create a system or"
+    },
+    {
+      "start": 1961.0,
+      "duration": 4.88,
+      "text": "an API where whenever someone on the"
+    },
+    {
+      "start": 1963.6,
+      "duration": 4.16,
+      "text": "front end adds a vat it should be taken"
+    },
+    {
+      "start": 1965.88,
+      "duration": 4.6,
+      "text": "from front end and deployed it in the"
+    },
+    {
+      "start": 1967.76,
+      "duration": 4.879,
+      "text": "mongodb and we need API for that so we"
+    },
+    {
+      "start": 1970.48,
+      "duration": 4.679,
+      "text": "will be using an API and we will be"
+    },
+    {
+      "start": 1972.639,
+      "duration": 4.76,
+      "text": "deploying an API through a deployment so"
+    },
+    {
+      "start": 1975.159,
+      "duration": 5.321,
+      "text": "let's go ahead and deploy our API now"
+    },
+    {
+      "start": 1977.399,
+      "duration": 4.681,
+      "text": "that we have our mongodb set properly so"
+    },
+    {
+      "start": 1980.48,
+      "duration": 5.039,
+      "text": "I'll go and exit from this particular"
+    },
+    {
+      "start": 1982.08,
+      "duration": 6.0,
+      "text": "shell and from this container okay"
+    },
+    {
+      "start": 1985.519,
+      "duration": 5.481,
+      "text": "so we have mongodb with three parts a"
+    },
+    {
+      "start": 1988.08,
+      "duration": 7.839,
+      "text": "service and volumes created let's go and"
+    },
+    {
+      "start": 1991.0,
+      "duration": 7.0,
+      "text": "deploy our API so I have uh API service"
+    },
+    {
+      "start": 1995.919,
+      "duration": 4.201,
+      "text": "here sorry API deployment here and to"
+    },
+    {
+      "start": 1998.0,
+      "duration": 4.0,
+      "text": "show you what is this deployment it is"
+    },
+    {
+      "start": 2000.12,
+      "duration": 3.48,
+      "text": "going to create three I guess oh no"
+    },
+    {
+      "start": 2002.0,
+      "duration": 4.76,
+      "text": "sorry three it going to create two"
+    },
+    {
+      "start": 2003.6,
+      "duration": 5.799,
+      "text": "replicas of API and it will be using"
+    },
+    {
+      "start": 2006.76,
+      "duration": 6.399,
+      "text": "this particular uh image which you can"
+    },
+    {
+      "start": 2009.399,
+      "duration": 7.12,
+      "text": "find on dockerhub and then it is going"
+    },
+    {
+      "start": 2013.159,
+      "duration": 4.36,
+      "text": "to have a connection string some"
+    },
+    {
+      "start": 2016.519,
+      "duration": 2.801,
+      "text": "environment variables which is"
+    },
+    {
+      "start": 2017.519,
+      "duration": 3.721,
+      "text": "connection string username and secret"
+    },
+    {
+      "start": 2019.32,
+      "duration": 4.16,
+      "text": "but we haven't created any secret here"
+    },
+    {
+      "start": 2021.24,
+      "duration": 4.559,
+      "text": "so we need to First create a secret that"
+    },
+    {
+      "start": 2023.48,
+      "duration": 5.199,
+      "text": "will hold login details which is"
+    },
+    {
+      "start": 2025.799,
+      "duration": 5.281,
+      "text": "username and password for this mongodb"
+    },
+    {
+      "start": 2028.679,
+      "duration": 4.96,
+      "text": "database so I already have the Manifest"
+    },
+    {
+      "start": 2031.08,
+      "duration": 5.64,
+      "text": "again so let me show you this is the"
+    },
+    {
+      "start": 2033.639,
+      "duration": 5.64,
+      "text": "Manifest file for secret let's C it to"
+    },
+    {
+      "start": 2036.72,
+      "duration": 5.48,
+      "text": "see what's inside it so Monga secret."
+    },
+    {
+      "start": 2039.279,
+      "duration": 4.76,
+      "text": "yaml is creating a secret with this name"
+    },
+    {
+      "start": 2042.2,
+      "duration": 3.24,
+      "text": "in this name space and this is the"
+    },
+    {
+      "start": 2044.039,
+      "duration": 2.721,
+      "text": "username so you might be thinking what"
+    },
+    {
+      "start": 2045.44,
+      "duration": 4.56,
+      "text": "is this username and what is this"
+    },
+    {
+      "start": 2046.76,
+      "duration": 6.72,
+      "text": "password actually this is admin and this"
+    },
+    {
+      "start": 2050.0,
+      "duration": 4.919,
+      "text": "is password but in it is in B 64 format"
+    },
+    {
+      "start": 2053.48,
+      "duration": 4.359,
+      "text": "so every secret that you create in"
+    },
+    {
+      "start": 2054.919,
+      "duration": 6.0,
+      "text": "kubernetes will be in base 64 and to"
+    },
+    {
+      "start": 2057.839,
+      "duration": 6.0,
+      "text": "confirm that let me decode it for you so"
+    },
+    {
+      "start": 2060.919,
+      "duration": 4.881,
+      "text": "B 64d code and paste this and when you"
+    },
+    {
+      "start": 2063.839,
+      "duration": 4.84,
+      "text": "see this it's admin the username is"
+    },
+    {
+      "start": 2065.8,
+      "duration": 7.319,
+      "text": "admin so similarly if I decode these"
+    },
+    {
+      "start": 2068.679,
+      "duration": 4.44,
+      "text": "this password and paste it"
+    },
+    {
+      "start": 2073.399,
+      "duration": 4.76,
+      "text": "here decode and you can see it's a"
+    },
+    {
+      "start": 2076.0,
+      "duration": 4.28,
+      "text": "password so the username is admin"
+    },
+    {
+      "start": 2078.159,
+      "duration": 4.041,
+      "text": "password is password this is what we"
+    },
+    {
+      "start": 2080.28,
+      "duration": 3.44,
+      "text": "have in this let's go ahead and apply"
+    },
+    {
+      "start": 2082.2,
+      "duration": 4.159,
+      "text": "this to create a secret because this"
+    },
+    {
+      "start": 2083.72,
+      "duration": 4.52,
+      "text": "secret is actually used in API"
+    },
+    {
+      "start": 2086.359,
+      "duration": 3.161,
+      "text": "deployment if I try to run API"
+    },
+    {
+      "start": 2088.24,
+      "duration": 2.919,
+      "text": "deployment it will give me an error"
+    },
+    {
+      "start": 2089.52,
+      "duration": 5.76,
+      "text": "because we haven't created mongodb"
+    },
+    {
+      "start": 2091.159,
+      "duration": 7.72,
+      "text": "secret so I'll say Cube CD apply hyph F"
+    },
+    {
+      "start": 2095.28,
+      "duration": 3.599,
+      "text": "and"
+    },
+    {
+      "start": 2099.079,
+      "duration": 4.201,
+      "text": "secret now most of you might be thinking"
+    },
+    {
+      "start": 2101.28,
+      "duration": 3.68,
+      "text": "I'm going too fast or I'm speaking too"
+    },
+    {
+      "start": 2103.28,
+      "duration": 4.4,
+      "text": "fast I know I have received those"
+    },
+    {
+      "start": 2104.96,
+      "duration": 4.68,
+      "text": "comments but I want you to please uh if"
+    },
+    {
+      "start": 2107.68,
+      "duration": 4.28,
+      "text": "you are not comfortable with this speed"
+    },
+    {
+      "start": 2109.64,
+      "duration": 4.959,
+      "text": "you have an option to reduce the speed"
+    },
+    {
+      "start": 2111.96,
+      "duration": 5.84,
+      "text": "to .5x or"
+    },
+    {
+      "start": 2114.599,
+      "duration": 5.281,
+      "text": "25x but I try to try to speak slow this"
+    },
+    {
+      "start": 2117.8,
+      "duration": 5.559,
+      "text": "is my speed normally so I'm so sorry for"
+    },
+    {
+      "start": 2119.88,
+      "duration": 5.88,
+      "text": "that now it says secret has been created"
+    },
+    {
+      "start": 2123.359,
+      "duration": 4.041,
+      "text": "and we are ready to deploy our API as"
+    },
+    {
+      "start": 2125.76,
+      "duration": 2.92,
+      "text": "well so I'll say"
+    },
+    {
+      "start": 2127.4,
+      "duration": 7.719,
+      "text": "uh Cube"
+    },
+    {
+      "start": 2128.68,
+      "duration": 9.159,
+      "text": "C apply hyphen f n API deployment. yml"
+    },
+    {
+      "start": 2135.119,
+      "duration": 5.161,
+      "text": "this should create two PODS of API and"
+    },
+    {
+      "start": 2137.839,
+      "duration": 5.961,
+      "text": "we should also see it in our namespace"
+    },
+    {
+      "start": 2140.28,
+      "duration": 6.96,
+      "text": "so it says deployment. apps. API created"
+    },
+    {
+      "start": 2143.8,
+      "duration": 9.319,
+      "text": "you can check that by running Cube"
+    },
+    {
+      "start": 2147.24,
+      "duration": 8.44,
+      "text": "CTL sorry Cube CTL uh get pods and this"
+    },
+    {
+      "start": 2153.119,
+      "duration": 5.921,
+      "text": "will show us two pods for API which are"
+    },
+    {
+      "start": 2155.68,
+      "duration": 5.439,
+      "text": "in running state and if I see Cube CTL"
+    },
+    {
+      "start": 2159.04,
+      "duration": 3.799,
+      "text": "get all it will also show you all the"
+    },
+    {
+      "start": 2161.119,
+      "duration": 4.321,
+      "text": "things that are created so we have three"
+    },
+    {
+      "start": 2162.839,
+      "duration": 4.52,
+      "text": "three parts for two for API one"
+    },
+    {
+      "start": 2165.44,
+      "duration": 5.32,
+      "text": "service for one for deploy uh"
+    },
+    {
+      "start": 2167.359,
+      "duration": 5.281,
+      "text": "deployment for API replica set for"
+    },
+    {
+      "start": 2170.76,
+      "duration": 3.96,
+      "text": "sorry replica set for API and stateful"
+    },
+    {
+      "start": 2172.64,
+      "duration": 4.959,
+      "text": "set for as well so these are all"
+    },
+    {
+      "start": 2174.72,
+      "duration": 6.04,
+      "text": "the things that we have as of now to"
+    },
+    {
+      "start": 2177.599,
+      "duration": 5.361,
+      "text": "actually uh test this API and to see if"
+    },
+    {
+      "start": 2180.76,
+      "duration": 4.4,
+      "text": "we getting the uh responses or not we"
+    },
+    {
+      "start": 2182.96,
+      "duration": 4.04,
+      "text": "need to expose this API by creating a"
+    },
+    {
+      "start": 2185.16,
+      "duration": 2.959,
+      "text": "service and we going to cre cre a"
+    },
+    {
+      "start": 2187.0,
+      "duration": 2.48,
+      "text": "service which is going to be a load"
+    },
+    {
+      "start": 2188.119,
+      "duration": 3.681,
+      "text": "balancer"
+    },
+    {
+      "start": 2189.48,
+      "duration": 4.4,
+      "text": "service so I already have the Manifest"
+    },
+    {
+      "start": 2191.8,
+      "duration": 4.36,
+      "text": "again ready which you can use but"
+    },
+    {
+      "start": 2193.88,
+      "duration": 4.88,
+      "text": "whenever you use this manifest make sure"
+    },
+    {
+      "start": 2196.16,
+      "duration": 4.08,
+      "text": "you are able to understand and for that"
+    },
+    {
+      "start": 2198.76,
+      "duration": 4.079,
+      "text": "you can always refer the official"
+    },
+    {
+      "start": 2200.24,
+      "duration": 5.079,
+      "text": "documentation or chat GPD to understand"
+    },
+    {
+      "start": 2202.839,
+      "duration": 4.721,
+      "text": "it so here this is a manifest file it's"
+    },
+    {
+      "start": 2205.319,
+      "duration": 4.841,
+      "text": "a service and the name is of the service"
+    },
+    {
+      "start": 2207.56,
+      "duration": 4.72,
+      "text": "is API these are labels it is running on"
+    },
+    {
+      "start": 2210.16,
+      "duration": 4.36,
+      "text": "this port this is the target board and"
+    },
+    {
+      "start": 2212.28,
+      "duration": 4.4,
+      "text": "this is the type which is load balancer"
+    },
+    {
+      "start": 2214.52,
+      "duration": 4.64,
+      "text": "which means when I create this uh"
+    },
+    {
+      "start": 2216.68,
+      "duration": 5.679,
+      "text": "service it will create a load balancer"
+    },
+    {
+      "start": 2219.16,
+      "duration": 5.8,
+      "text": "in my ec2 dashboard right now I don't"
+    },
+    {
+      "start": 2222.359,
+      "duration": 4.561,
+      "text": "have any uh load balancers but once I"
+    },
+    {
+      "start": 2224.96,
+      "duration": 4.52,
+      "text": "create this it will automatically create"
+    },
+    {
+      "start": 2226.92,
+      "duration": 4.439,
+      "text": "a service with of load balancer type and"
+    },
+    {
+      "start": 2229.48,
+      "duration": 5.48,
+      "text": "a load balancer here as"
+    },
+    {
+      "start": 2231.359,
+      "duration": 5.921,
+      "text": "well so you can try either do Cube SE"
+    },
+    {
+      "start": 2234.96,
+      "duration": 4.48,
+      "text": "apply hyphen f to directly create a"
+    },
+    {
+      "start": 2237.28,
+      "duration": 3.76,
+      "text": "service from this manifest or I can run"
+    },
+    {
+      "start": 2239.44,
+      "duration": 4.639,
+      "text": "this command which is a imperative"
+    },
+    {
+      "start": 2241.04,
+      "duration": 5.039,
+      "text": "command according to uh kubernetes so"
+    },
+    {
+      "start": 2244.079,
+      "duration": 4.841,
+      "text": "something I use to speed up things so I"
+    },
+    {
+      "start": 2246.079,
+      "duration": 4.681,
+      "text": "can do c CTL expose I want to expose a"
+    },
+    {
+      "start": 2248.92,
+      "duration": 5.64,
+      "text": "deployment which is API so I'll say Cube"
+    },
+    {
+      "start": 2250.76,
+      "duration": 5.92,
+      "text": "CTL expose deployment named as API and"
+    },
+    {
+      "start": 2254.56,
+      "duration": 5.72,
+      "text": "for with a service that should be named"
+    },
+    {
+      "start": 2256.68,
+      "duration": 6.72,
+      "text": "as API it should be a type of load"
+    },
+    {
+      "start": 2260.28,
+      "duration": 5.76,
+      "text": "balancer so I'll say type equals to load"
+    },
+    {
+      "start": 2263.4,
+      "duration": 6.04,
+      "text": "balancer with L capital b capital as"
+    },
+    {
+      "start": 2266.04,
+      "duration": 5.92,
+      "text": "well and Port is going to be 80 so it"
+    },
+    {
+      "start": 2269.44,
+      "duration": 6.84,
+      "text": "should work on Port 80 and the target"
+    },
+    {
+      "start": 2271.96,
+      "duration": 6.08,
+      "text": "code should be 8080 so when I run this"
+    },
+    {
+      "start": 2276.28,
+      "duration": 5.44,
+      "text": "it should go ahead and"
+    },
+    {
+      "start": 2278.04,
+      "duration": 6.079,
+      "text": "create a load balancer service for"
+    },
+    {
+      "start": 2281.72,
+      "duration": 4.52,
+      "text": "me so now that I press enter it says"
+    },
+    {
+      "start": 2284.119,
+      "duration": 4.48,
+      "text": "Service API exposed and you can confirm"
+    },
+    {
+      "start": 2286.24,
+      "duration": 4.079,
+      "text": "that by saying Cube CTL get SVC we"
+    },
+    {
+      "start": 2288.599,
+      "duration": 5.201,
+      "text": "should have two Services now one for"
+    },
+    {
+      "start": 2290.319,
+      "duration": 5.04,
+      "text": "one for API awesome so we have"
+    },
+    {
+      "start": 2293.8,
+      "duration": 3.76,
+      "text": "this API and it's a load balancer"
+    },
+    {
+      "start": 2295.359,
+      "duration": 5.0,
+      "text": "service and you can see it has been"
+    },
+    {
+      "start": 2297.56,
+      "duration": 4.88,
+      "text": "created here if I go to my load balancer"
+    },
+    {
+      "start": 2300.359,
+      "duration": 5.521,
+      "text": "section and refresh this you should see"
+    },
+    {
+      "start": 2302.44,
+      "duration": 5.159,
+      "text": "a load balancer created here as well all"
+    },
+    {
+      "start": 2305.88,
+      "duration": 4.52,
+      "text": "right so this load balance is now"
+    },
+    {
+      "start": 2307.599,
+      "duration": 5.201,
+      "text": "created and to test out if my API is"
+    },
+    {
+      "start": 2310.4,
+      "duration": 4.76,
+      "text": "running fine or not I can run a curl"
+    },
+    {
+      "start": 2312.8,
+      "duration": 5.0,
+      "text": "command but it might take some time for"
+    },
+    {
+      "start": 2315.16,
+      "duration": 4.08,
+      "text": "the load balancer to come up in active"
+    },
+    {
+      "start": 2317.8,
+      "duration": 3.4,
+      "text": "state right so till the time it is"
+    },
+    {
+      "start": 2319.24,
+      "duration": 3.44,
+      "text": "active I can run a command let me"
+    },
+    {
+      "start": 2321.2,
+      "duration": 3.24,
+      "text": "explain you what this command is doing"
+    },
+    {
+      "start": 2322.68,
+      "duration": 5.56,
+      "text": "so the command is going to store the"
+    },
+    {
+      "start": 2324.44,
+      "duration": 6.639,
+      "text": "value of this uh thing in the this"
+    },
+    {
+      "start": 2328.24,
+      "duration": 4.92,
+      "text": "variable which is API elb public fqdn"
+    },
+    {
+      "start": 2331.079,
+      "duration": 4.161,
+      "text": "along with this it is also going to run"
+    },
+    {
+      "start": 2333.16,
+      "duration": 4.8,
+      "text": "a command saying until NS look up like"
+    },
+    {
+      "start": 2335.24,
+      "duration": 5.2,
+      "text": "until the load balancer is an active"
+    },
+    {
+      "start": 2337.96,
+      "duration": 5.32,
+      "text": "State use show this message and once it"
+    },
+    {
+      "start": 2340.44,
+      "duration": 4.72,
+      "text": "is in active state run this command so I"
+    },
+    {
+      "start": 2343.28,
+      "duration": 4.16,
+      "text": "press enter and it will show me a"
+    },
+    {
+      "start": 2345.16,
+      "duration": 3.159,
+      "text": "message saying okay to confirm this you"
+    },
+    {
+      "start": 2347.44,
+      "duration": 4.76,
+      "text": "can"
+    },
+    {
+      "start": 2348.319,
+      "duration": 7.201,
+      "text": "copy and paste this in a new tab and"
+    },
+    {
+      "start": 2352.2,
+      "duration": 6.76,
+      "text": "slash okay to see what response you get"
+    },
+    {
+      "start": 2355.52,
+      "duration": 7.0,
+      "text": "and the okay path so it says okay which"
+    },
+    {
+      "start": 2358.96,
+      "duration": 6.0,
+      "text": "is exactly what we want next uh it can"
+    },
+    {
+      "start": 2362.52,
+      "duration": 5.24,
+      "text": "also uh show me other things like if I"
+    },
+    {
+      "start": 2364.96,
+      "duration": 6.2,
+      "text": "try to say languages it will sorry"
+    },
+    {
+      "start": 2367.76,
+      "duration": 3.4,
+      "text": "language or languages"
+    },
+    {
+      "start": 2377.88,
+      "duration": 6.959,
+      "text": "what and you can also check by copying"
+    },
+    {
+      "start": 2380.44,
+      "duration": 8.04,
+      "text": "this uh URL which is the DNS name into a"
+    },
+    {
+      "start": 2384.839,
+      "duration": 5.601,
+      "text": "new tab and adding okay path at the end"
+    },
+    {
+      "start": 2388.48,
+      "duration": 4.52,
+      "text": "which will give you a response as okay"
+    },
+    {
+      "start": 2390.44,
+      "duration": 7.08,
+      "text": "similarly we can also check API calls"
+    },
+    {
+      "start": 2393.0,
+      "duration": 7.0,
+      "text": "for languages so if I do Lang languages"
+    },
+    {
+      "start": 2397.52,
+      "duration": 4.599,
+      "text": "it should give me all this similarly we"
+    },
+    {
+      "start": 2400.0,
+      "duration": 5.8,
+      "text": "can also choose to get for a certain"
+    },
+    {
+      "start": 2402.119,
+      "duration": 7.041,
+      "text": "language here either either C Java or"
+    },
+    {
+      "start": 2405.8,
+      "duration": 5.68,
+      "text": "anything so let's say languages SL"
+    },
+    {
+      "start": 2409.16,
+      "duration": 4.48,
+      "text": "Python and you can get the data for"
+    },
+    {
+      "start": 2411.48,
+      "duration": 4.08,
+      "text": "python only which means our API is"
+    },
+    {
+      "start": 2413.64,
+      "duration": 4.84,
+      "text": "working properly and we are ready to"
+    },
+    {
+      "start": 2415.56,
+      "duration": 5.16,
+      "text": "move ahead with the front end part now"
+    },
+    {
+      "start": 2418.48,
+      "duration": 4.56,
+      "text": "so the API is done with uh with two"
+    },
+    {
+      "start": 2420.72,
+      "duration": 4.2,
+      "text": "parts actually and a service of a load"
+    },
+    {
+      "start": 2423.04,
+      "duration": 4.079,
+      "text": "balancer type and now we're going to"
+    },
+    {
+      "start": 2424.92,
+      "duration": 5.24,
+      "text": "deploy our front end which will have the"
+    },
+    {
+      "start": 2427.119,
+      "duration": 5.441,
+      "text": "react application which can get vots"
+    },
+    {
+      "start": 2430.16,
+      "duration": 5.4,
+      "text": "from the users on the internet and then"
+    },
+    {
+      "start": 2432.56,
+      "duration": 5.68,
+      "text": "the API will get it so the users will"
+    },
+    {
+      "start": 2435.56,
+      "duration": 4.48,
+      "text": "put the vote on the website API will"
+    },
+    {
+      "start": 2438.24,
+      "duration": 5.48,
+      "text": "fetch it and put the data in the mongod"
+    },
+    {
+      "start": 2440.04,
+      "duration": 5.559,
+      "text": "DB so when I check the mongod DB which"
+    },
+    {
+      "start": 2443.72,
+      "duration": 4.28,
+      "text": "is to get the data now you can see the"
+    },
+    {
+      "start": 2445.599,
+      "duration": 5.0,
+      "text": "votes are zero but if someone's votes"
+    },
+    {
+      "start": 2448.0,
+      "duration": 5.2,
+      "text": "for no JS the vote will be one similarly"
+    },
+    {
+      "start": 2450.599,
+      "duration": 4.121,
+      "text": "for Java and other this is how we are"
+    },
+    {
+      "start": 2453.2,
+      "duration": 4.84,
+      "text": "going to deploy it so let's go ahead and"
+    },
+    {
+      "start": 2454.72,
+      "duration": 6.119,
+      "text": "create our front end as well I'm going"
+    },
+    {
+      "start": 2458.04,
+      "duration": 5.0,
+      "text": "to clear our screen and for front end we"
+    },
+    {
+      "start": 2460.839,
+      "duration": 4.321,
+      "text": "are going to use a deployment file again"
+    },
+    {
+      "start": 2463.04,
+      "duration": 3.799,
+      "text": "I have the Manifest file ready here so"
+    },
+    {
+      "start": 2465.16,
+      "duration": 3.48,
+      "text": "you can check uh sorry the front end"
+    },
+    {
+      "start": 2466.839,
+      "duration": 4.441,
+      "text": "deployment is here and we have the front"
+    },
+    {
+      "start": 2468.64,
+      "duration": 5.16,
+      "text": "end Service as well to show you front"
+    },
+    {
+      "start": 2471.28,
+      "duration": 6.0,
+      "text": "deployment again let's run the cat"
+    },
+    {
+      "start": 2473.8,
+      "duration": 6.6,
+      "text": "frontend dot sorry cat"
+    },
+    {
+      "start": 2477.28,
+      "duration": 4.88,
+      "text": "frontend deployment. yaml and it's a"
+    },
+    {
+      "start": 2480.4,
+      "duration": 4.04,
+      "text": "deployment file which because the kind"
+    },
+    {
+      "start": 2482.16,
+      "duration": 4.28,
+      "text": "is deployment the name is front end name"
+    },
+    {
+      "start": 2484.44,
+      "duration": 3.72,
+      "text": "space is cloud champ we creating two"
+    },
+    {
+      "start": 2486.44,
+      "duration": 5.52,
+      "text": "replicas means two parts are going to be"
+    },
+    {
+      "start": 2488.16,
+      "duration": 5.679,
+      "text": "created this is the uh image this is the"
+    },
+    {
+      "start": 2491.96,
+      "duration": 4.2,
+      "text": "name we are"
+    },
+    {
+      "start": 2493.839,
+      "duration": 6.48,
+      "text": "using an environment variable which is"
+    },
+    {
+      "start": 2496.16,
+      "duration": 7.919,
+      "text": "API elb fqdn this is why I added my load"
+    },
+    {
+      "start": 2500.319,
+      "duration": 5.28,
+      "text": "balancer DN DNS in this along with this"
+    },
+    {
+      "start": 2504.079,
+      "duration": 4.28,
+      "text": "we have lightess probe and Readiness"
+    },
+    {
+      "start": 2505.599,
+      "duration": 4.201,
+      "text": "prob which means we should uh which is"
+    },
+    {
+      "start": 2508.359,
+      "duration": 4.601,
+      "text": "all we have if you don't understand what"
+    },
+    {
+      "start": 2509.8,
+      "duration": 5.68,
+      "text": "it is feel free to use documentation"
+    },
+    {
+      "start": 2512.96,
+      "duration": 4.44,
+      "text": "feel free to use a chat GPT as I've been"
+    },
+    {
+      "start": 2515.48,
+      "duration": 4.359,
+      "text": "repeating so many times let's go ahead"
+    },
+    {
+      "start": 2517.4,
+      "duration": 6.84,
+      "text": "and apply it by saying Cube CTL apply"
+    },
+    {
+      "start": 2519.839,
+      "duration": 6.921,
+      "text": "hyphen f frontend deployment. yaml this"
+    },
+    {
+      "start": 2524.24,
+      "duration": 5.2,
+      "text": "will create two pods for us and a"
+    },
+    {
+      "start": 2526.76,
+      "duration": 3.68,
+      "text": "deployment as well so if I do Cube CTL"
+    },
+    {
+      "start": 2529.44,
+      "duration": 4.6,
+      "text": "get"
+    },
+    {
+      "start": 2530.44,
+      "duration": 6.32,
+      "text": "pods uh along with the tag so I'll say"
+    },
+    {
+      "start": 2534.04,
+      "duration": 4.559,
+      "text": "just I do this I'll see two parts for"
+    },
+    {
+      "start": 2536.76,
+      "duration": 4.48,
+      "text": "API two pods for front end which is"
+    },
+    {
+      "start": 2538.599,
+      "duration": 5.641,
+      "text": "right now in running but still not ready"
+    },
+    {
+      "start": 2541.24,
+      "duration": 4.8,
+      "text": "and if I do Cube CTL get all you will"
+    },
+    {
+      "start": 2544.24,
+      "duration": 2.48,
+      "text": "also see everything that is done till"
+    },
+    {
+      "start": 2546.04,
+      "duration": 2.24,
+      "text": "now"
+    },
+    {
+      "start": 2546.72,
+      "duration": 3.68,
+      "text": "along with deployment so we have two"
+    },
+    {
+      "start": 2548.28,
+      "duration": 4.88,
+      "text": "deployments one for API one for front"
+    },
+    {
+      "start": 2550.4,
+      "duration": 5.719,
+      "text": "end and it has two parts which are now"
+    },
+    {
+      "start": 2553.16,
+      "duration": 5.399,
+      "text": "running State as well so we have this"
+    },
+    {
+      "start": 2556.119,
+      "duration": 5.081,
+      "text": "application front end ready but if uh"
+    },
+    {
+      "start": 2558.559,
+      "duration": 6.121,
+      "text": "how can I access it I cannot access it"
+    },
+    {
+      "start": 2561.2,
+      "duration": 5.52,
+      "text": "unless it is exposed using uh using a"
+    },
+    {
+      "start": 2564.68,
+      "duration": 4.72,
+      "text": "service that we have seen so far so"
+    },
+    {
+      "start": 2566.72,
+      "duration": 4.68,
+      "text": "similar to API we we also need to create"
+    },
+    {
+      "start": 2569.4,
+      "duration": 4.12,
+      "text": "a front- end service which is going to"
+    },
+    {
+      "start": 2571.4,
+      "duration": 3.76,
+      "text": "be a load balancer type so I'll say Cube"
+    },
+    {
+      "start": 2573.52,
+      "duration": 5.599,
+      "text": "CTL"
+    },
+    {
+      "start": 2575.16,
+      "duration": 3.959,
+      "text": "expose uh front"
+    },
+    {
+      "start": 2579.24,
+      "duration": 5.119,
+      "text": "end and which sorry expose deployment"
+    },
+    {
+      "start": 2582.119,
+      "duration": 4.801,
+      "text": "because we are going to deployment and"
+    },
+    {
+      "start": 2584.359,
+      "duration": 3.561,
+      "text": "the name of the deployment is front end"
+    },
+    {
+      "start": 2586.92,
+      "duration": 4.639,
+      "text": "so I'll say"
+    },
+    {
+      "start": 2587.92,
+      "duration": 5.439,
+      "text": "deployment front end uh using a service"
+    },
+    {
+      "start": 2591.559,
+      "duration": 5.321,
+      "text": "that should be named as front end again"
+    },
+    {
+      "start": 2593.359,
+      "duration": 4.641,
+      "text": "so I'll say front end type is going to"
+    },
+    {
+      "start": 2596.88,
+      "duration": 3.959,
+      "text": "be load"
+    },
+    {
+      "start": 2598.0,
+      "duration": 6.16,
+      "text": "balancer so type is going to be load"
+    },
+    {
+      "start": 2600.839,
+      "duration": 7.24,
+      "text": "balancer with L capital b capital again"
+    },
+    {
+      "start": 2604.16,
+      "duration": 3.919,
+      "text": "and Port is going to be 80"
+    },
+    {
+      "start": 2608.319,
+      "duration": 5.641,
+      "text": "and Target Port is going to be 8080"
+    },
+    {
+      "start": 2610.52,
+      "duration": 5.319,
+      "text": "Target dport equals to 8080 okay once I"
+    },
+    {
+      "start": 2613.96,
+      "duration": 4.0,
+      "text": "run this it will create a service and"
+    },
+    {
+      "start": 2615.839,
+      "duration": 3.76,
+      "text": "the deployment will be exposed as well"
+    },
+    {
+      "start": 2617.96,
+      "duration": 4.52,
+      "text": "don't worry if you don't understand this"
+    },
+    {
+      "start": 2619.599,
+      "duration": 5.801,
+      "text": "I also have a manifest ready and this"
+    },
+    {
+      "start": 2622.48,
+      "duration": 6.28,
+      "text": "manifest is here so if you cat it you"
+    },
+    {
+      "start": 2625.4,
+      "duration": 5.08,
+      "text": "will see exactly what I did as of now"
+    },
+    {
+      "start": 2628.76,
+      "duration": 3.76,
+      "text": "you can choose to apply directly or you"
+    },
+    {
+      "start": 2630.48,
+      "duration": 4.48,
+      "text": "can also run this command by copy and"
+    },
+    {
+      "start": 2632.52,
+      "duration": 4.039,
+      "text": "pasting it okay now to confirm that the"
+    },
+    {
+      "start": 2634.96,
+      "duration": 5.399,
+      "text": "service has been created I can say Cube"
+    },
+    {
+      "start": 2636.559,
+      "duration": 5.881,
+      "text": "CTL get SVC and this will show me the"
+    },
+    {
+      "start": 2640.359,
+      "duration": 4.321,
+      "text": "two Services sorry three services that"
+    },
+    {
+      "start": 2642.44,
+      "duration": 5.0,
+      "text": "we have this is the one for load"
+    },
+    {
+      "start": 2644.68,
+      "duration": 4.84,
+      "text": "balancer and if I copy and paste this I"
+    },
+    {
+      "start": 2647.44,
+      "duration": 4.159,
+      "text": "should be seeing my application in the"
+    },
+    {
+      "start": 2649.52,
+      "duration": 5.44,
+      "text": "browser so let"
+    },
+    {
+      "start": 2651.599,
+      "duration": 6.401,
+      "text": "me uh let me open a new tab and paste"
+    },
+    {
+      "start": 2654.96,
+      "duration": 6.159,
+      "text": "this so I'll have to wait because again"
+    },
+    {
+      "start": 2658.0,
+      "duration": 5.52,
+      "text": "this will take some time uh so the so I"
+    },
+    {
+      "start": 2661.119,
+      "duration": 5.081,
+      "text": "have this command here uh which"
+    },
+    {
+      "start": 2663.52,
+      "duration": 6.039,
+      "text": "can notify us whenever it is ready so we"
+    },
+    {
+      "start": 2666.2,
+      "duration": 6.48,
+      "text": "are saying put the do balances DNS uh in"
+    },
+    {
+      "start": 2669.559,
+      "duration": 5.401,
+      "text": "this and then run this NS look up until"
+    },
+    {
+      "start": 2672.68,
+      "duration": 3.72,
+      "text": "it is ready when when until it is ready"
+    },
+    {
+      "start": 2674.96,
+      "duration": 4.119,
+      "text": "you should give me this message when it"
+    },
+    {
+      "start": 2676.4,
+      "duration": 5.6,
+      "text": "is ready you should curl it and I should"
+    },
+    {
+      "start": 2679.079,
+      "duration": 5.441,
+      "text": "see the response so now it says it is"
+    },
+    {
+      "start": 2682.0,
+      "duration": 5.2,
+      "text": "ready it says 200 okay just Echo it"
+    },
+    {
+      "start": 2684.52,
+      "duration": 5.92,
+      "text": "right in my in my terminal here I say"
+    },
+    {
+      "start": 2687.2,
+      "duration": 4.44,
+      "text": "Echo and the name of the uh variable"
+    },
+    {
+      "start": 2690.44,
+      "duration": 4.639,
+      "text": "which has my"
+    },
+    {
+      "start": 2691.64,
+      "duration": 6.36,
+      "text": "DNS so I'm going to copy this uh end"
+    },
+    {
+      "start": 2695.079,
+      "duration": 5.48,
+      "text": "point which is which is my load balances"
+    },
+    {
+      "start": 2698.0,
+      "duration": 4.16,
+      "text": "DNS and paste it in a new tab once I"
+    },
+    {
+      "start": 2700.559,
+      "duration": 4.321,
+      "text": "paste this you can see the language"
+    },
+    {
+      "start": 2702.16,
+      "duration": 4.28,
+      "text": "application the voting application ready"
+    },
+    {
+      "start": 2704.88,
+      "duration": 3.479,
+      "text": "and we have all these different"
+    },
+    {
+      "start": 2706.44,
+      "duration": 4.28,
+      "text": "languages whenever you add some votes or"
+    },
+    {
+      "start": 2708.359,
+      "duration": 5.681,
+      "text": "whenever a user adds some votes it will"
+    },
+    {
+      "start": 2710.72,
+      "duration": 4.76,
+      "text": "be stored inside the mongod DB database"
+    },
+    {
+      "start": 2714.04,
+      "duration": 3.799,
+      "text": "let's try to test it out I'm going to"
+    },
+    {
+      "start": 2715.48,
+      "duration": 4.8,
+      "text": "add some boards here for JavaScript and"
+    },
+    {
+      "start": 2717.839,
+      "duration": 4.76,
+      "text": "for python because I love python"
+    },
+    {
+      "start": 2720.28,
+      "duration": 5.0,
+      "text": "similarly for go I'll add more vs for go"
+    },
+    {
+      "start": 2722.599,
+      "duration": 4.921,
+      "text": "because go is the trending uh"
+    },
+    {
+      "start": 2725.28,
+      "duration": 5.079,
+      "text": "programming Lang AG now okay so we have"
+    },
+    {
+      "start": 2727.52,
+      "duration": 6.76,
+      "text": "12 vs for uh go three"
+    },
+    {
+      "start": 2730.359,
+      "duration": 5.681,
+      "text": "for Python and seven for JavaScript and"
+    },
+    {
+      "start": 2734.28,
+      "duration": 3.44,
+      "text": "I'm going to query the mongod DB"
+    },
+    {
+      "start": 2736.04,
+      "duration": 5.48,
+      "text": "database now so let's go inside the"
+    },
+    {
+      "start": 2737.72,
+      "duration": 6.839,
+      "text": "database by running Cube CTL exec hyphen"
+    },
+    {
+      "start": 2741.52,
+      "duration": 5.72,
+      "text": "it the name of the P which is Das"
+    },
+    {
+      "start": 2744.559,
+      "duration": 4.201,
+      "text": "Z and I'll open the shell so I'll"
+    },
+    {
+      "start": 2747.24,
+      "duration": 3.879,
+      "text": "say D-"
+    },
+    {
+      "start": 2748.76,
+      "duration": 4.319,
+      "text": "okay this should take me inside"
+    },
+    {
+      "start": 2751.119,
+      "duration": 5.44,
+      "text": "the shell and to check all the"
+    },
+    {
+      "start": 2753.079,
+      "duration": 6.161,
+      "text": "data uh inside it I'll be running"
+    },
+    {
+      "start": 2756.559,
+      "duration": 8.52,
+      "text": "we have to first use Lang DB so I'll say"
+    },
+    {
+      "start": 2759.24,
+      "duration": 9.2,
+      "text": "use Lang DB and I'll say DB do"
+    },
+    {
+      "start": 2765.079,
+      "duration": 5.361,
+      "text": "languages. find and it should then show"
+    },
+    {
+      "start": 2768.44,
+      "duration": 4.6,
+      "text": "me all the list so if you see here there"
+    },
+    {
+      "start": 2770.44,
+      "duration": 5.08,
+      "text": "are nine votes or let me make let me"
+    },
+    {
+      "start": 2773.04,
+      "duration": 5.88,
+      "text": "make it pretty here so we see it good"
+    },
+    {
+      "start": 2775.52,
+      "duration": 6.039,
+      "text": "format so do"
+    },
+    {
+      "start": 2778.92,
+      "duration": 5.0,
+      "text": "pretty okay now you can see there are no"
+    },
+    {
+      "start": 2781.559,
+      "duration": 6.121,
+      "text": "wordss for Nots as we have did there are"
+    },
+    {
+      "start": 2783.92,
+      "duration": 8.08,
+      "text": "no wordss now zero for Java as well but"
+    },
+    {
+      "start": 2787.68,
+      "duration": 7.32,
+      "text": "for goang we have 10 vots as you can see"
+    },
+    {
+      "start": 2792.0,
+      "duration": 6.0,
+      "text": "for JavaScript we have zero V sorry six"
+    },
+    {
+      "start": 2795.0,
+      "duration": 5.52,
+      "text": "vots as you can see here similarly for"
+    },
+    {
+      "start": 2798.0,
+      "duration": 4.359,
+      "text": "python you have nine votes so if I try"
+    },
+    {
+      "start": 2800.52,
+      "duration": 5.559,
+      "text": "to add more votes let's try to add votes"
+    },
+    {
+      "start": 2802.359,
+      "duration": 6.0,
+      "text": "for nodejs and for Java as well and try"
+    },
+    {
+      "start": 2806.079,
+      "duration": 4.121,
+      "text": "to run the same query again and this"
+    },
+    {
+      "start": 2808.359,
+      "duration": 4.681,
+      "text": "will show you that the votes have been"
+    },
+    {
+      "start": 2810.2,
+      "duration": 4.72,
+      "text": "updated so this is our application so"
+    },
+    {
+      "start": 2813.04,
+      "duration": 4.36,
+      "text": "this is our application project I hope"
+    },
+    {
+      "start": 2814.92,
+      "duration": 5.28,
+      "text": "this was informative we have created"
+    },
+    {
+      "start": 2817.4,
+      "duration": 4.4,
+      "text": "everything from scratch from starting"
+    },
+    {
+      "start": 2820.2,
+      "duration": 4.2,
+      "text": "from creating a stateful set for"
+    },
+    {
+      "start": 2821.8,
+      "duration": 4.319,
+      "text": "deploying mongod DB database on pods"
+    },
+    {
+      "start": 2824.4,
+      "duration": 3.959,
+      "text": "then creating a service to expose the"
+    },
+    {
+      "start": 2826.119,
+      "duration": 5.361,
+      "text": "Pod to our API we have also created our"
+    },
+    {
+      "start": 2828.359,
+      "duration": 5.841,
+      "text": "API with two pods using deployments and"
+    },
+    {
+      "start": 2831.48,
+      "duration": 5.2,
+      "text": "exposed it using load balancer service"
+    },
+    {
+      "start": 2834.2,
+      "duration": 5.56,
+      "text": "we tried querying the we also uh tried"
+    },
+    {
+      "start": 2836.68,
+      "duration": 5.08,
+      "text": "to get the run the get queries on our"
+    },
+    {
+      "start": 2839.76,
+      "duration": 5.12,
+      "text": "API which gave us all the different"
+    },
+    {
+      "start": 2841.76,
+      "duration": 5.2,
+      "text": "responses lastly we deployed our react"
+    },
+    {
+      "start": 2844.88,
+      "duration": 4.0,
+      "text": "application using front end deployment"
+    },
+    {
+      "start": 2846.96,
+      "duration": 4.08,
+      "text": "having two replicas and exposed using"
+    },
+    {
+      "start": 2848.88,
+      "duration": 4.28,
+      "text": "load balancer there we go this is our"
+    },
+    {
+      "start": 2851.04,
+      "duration": 3.519,
+      "text": "application I hope you have understood"
+    },
+    {
+      "start": 2853.16,
+      "duration": 3.28,
+      "text": "and if you have any questions feel free"
+    },
+    {
+      "start": 2854.559,
+      "duration": 3.52,
+      "text": "to let me know in the comment section so"
+    },
+    {
+      "start": 2856.44,
+      "duration": 3.8,
+      "text": "to make things more interesting and very"
+    },
+    {
+      "start": 2858.079,
+      "duration": 4.841,
+      "text": "fast I deployed this application using"
+    },
+    {
+      "start": 2860.24,
+      "duration": 5.079,
+      "text": "Argo CD the giops tools and I also have"
+    },
+    {
+      "start": 2862.92,
+      "duration": 4.96,
+      "text": "a video created if you like this video"
+    },
+    {
+      "start": 2865.319,
+      "duration": 5.121,
+      "text": "and I'm aiming for around 2,000 likes"
+    },
+    {
+      "start": 2867.88,
+      "duration": 5.4,
+      "text": "not more so 2,000 likes if this video"
+    },
+    {
+      "start": 2870.44,
+      "duration": 4.44,
+      "text": "has 2,000 likes I will create a video on"
+    },
+    {
+      "start": 2873.28,
+      "duration": 4.279,
+      "text": "how you can deploy the same application"
+    },
+    {
+      "start": 2874.88,
+      "duration": 4.439,
+      "text": "on Argo CD I hope this was informative"
+    },
+    {
+      "start": 2877.559,
+      "duration": 3.481,
+      "text": "if you have any questions any doubt let"
+    },
+    {
+      "start": 2879.319,
+      "duration": 3.441,
+      "text": "me know in the comment section and if"
+    },
+    {
+      "start": 2881.04,
+      "duration": 3.16,
+      "text": "you're new to my Channel please"
+    },
+    {
+      "start": 2882.76,
+      "duration": 3.64,
+      "text": "subscribe to Cloud champ we are very"
+    },
+    {
+      "start": 2884.2,
+      "duration": 4.96,
+      "text": "very very close to 50,000 subscribers"
+    },
+    {
+      "start": 2886.4,
+      "duration": 5.04,
+      "text": "thank you so much for everything for uh"
+    },
+    {
+      "start": 2889.16,
+      "duration": 4.84,
+      "text": "everything for all the support and love"
+    },
+    {
+      "start": 2891.44,
+      "duration": 4.32,
+      "text": "thank you let's continue learning devops"
+    },
+    {
+      "start": 2894.0,
+      "duration": 4.079,
+      "text": "uh I hope you have a good day thank you"
+    },
+    {
+      "start": 2895.76,
+      "duration": 2.319,
+      "text": "and"
+    },
+    {
+      "start": 2901.68,
+      "duration": 3.0,
+      "text": "bye"
+    }
+  ]
+}

@@ -1,0 +1,1626 @@
+{
+  "video": {
+    "id": "J14LtcacFMI",
+    "title": "What is AWS EC2? Learn Amazon Elastic Compute Cloud Service in 15 minutes",
+    "url": "https://www.youtube.com/watch?v=J14LtcacFMI",
+    "duration": 747,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.08,
+      "duration": 4.16,
+      "text": "hello and welcome to cloud champ today"
+    },
+    {
+      "start": 2.0,
+      "duration": 5.44,
+      "text": "in this video we are going to talk about"
+    },
+    {
+      "start": 4.24,
+      "duration": 5.359,
+      "text": "very important service in aws that is"
+    },
+    {
+      "start": 7.44,
+      "duration": 4.4,
+      "text": "amazon ec2"
+    },
+    {
+      "start": 9.599,
+      "duration": 3.441,
+      "text": "amazon ec2 is very popular service of"
+    },
+    {
+      "start": 11.84,
+      "duration": 3.36,
+      "text": "aws"
+    },
+    {
+      "start": 13.04,
+      "duration": 3.92,
+      "text": "and it is very important for you to know"
+    },
+    {
+      "start": 15.2,
+      "duration": 2.96,
+      "text": "this service because it's used"
+    },
+    {
+      "start": 16.96,
+      "duration": 3.84,
+      "text": "everywhere"
+    },
+    {
+      "start": 18.16,
+      "duration": 4.959,
+      "text": "according to integrate service netflix"
+    },
+    {
+      "start": 20.8,
+      "duration": 5.04,
+      "text": "spends around 19 million dollars every"
+    },
+    {
+      "start": 23.119,
+      "duration": 5.041,
+      "text": "month on aws ec2"
+    },
+    {
+      "start": 25.84,
+      "duration": 3.679,
+      "text": "so it is very important for you to know"
+    },
+    {
+      "start": 28.16,
+      "duration": 2.72,
+      "text": "this service because it's used"
+    },
+    {
+      "start": 29.519,
+      "duration": 3.04,
+      "text": "everywhere today"
+    },
+    {
+      "start": 30.88,
+      "duration": 3.679,
+      "text": "and if you have the knowledge for this"
+    },
+    {
+      "start": 32.559,
+      "duration": 4.081,
+      "text": "service mentioned in your resume"
+    },
+    {
+      "start": 34.559,
+      "duration": 4.641,
+      "text": "definitely you will stand out among"
+    },
+    {
+      "start": 36.64,
+      "duration": 5.439,
+      "text": "other candidates so let's learn about"
+    },
+    {
+      "start": 39.2,
+      "duration": 4.879,
+      "text": "aws ec2 in this video we'll learn all"
+    },
+    {
+      "start": 42.079,
+      "duration": 3.361,
+      "text": "the components and all the features"
+    },
+    {
+      "start": 44.079,
+      "duration": 4.32,
+      "text": "available"
+    },
+    {
+      "start": 45.44,
+      "duration": 4.799,
+      "text": "including the aws ec2 instance types the"
+    },
+    {
+      "start": 48.399,
+      "duration": 4.561,
+      "text": "purchasing options the different types"
+    },
+    {
+      "start": 50.239,
+      "duration": 6.32,
+      "text": "of aws instances the security group and"
+    },
+    {
+      "start": 52.96,
+      "duration": 6.48,
+      "text": "all the other components of ec2 so"
+    },
+    {
+      "start": 56.559,
+      "duration": 5.201,
+      "text": "before we go ahead i want you to please"
+    },
+    {
+      "start": 59.44,
+      "duration": 3.759,
+      "text": "subscribe to the channel because most of"
+    },
+    {
+      "start": 61.76,
+      "duration": 3.2,
+      "text": "the people"
+    },
+    {
+      "start": 63.199,
+      "duration": 3.041,
+      "text": "have not subscribed yet i take a lot of"
+    },
+    {
+      "start": 64.96,
+      "duration": 3.76,
+      "text": "effort to make"
+    },
+    {
+      "start": 66.24,
+      "duration": 4.96,
+      "text": "these videos so please subscribe to this"
+    },
+    {
+      "start": 68.72,
+      "duration": 6.399,
+      "text": "channel and let's get started to learn"
+    },
+    {
+      "start": 71.2,
+      "duration": 7.279,
+      "text": "the aws ec2 according to the definition"
+    },
+    {
+      "start": 75.119,
+      "duration": 6.0,
+      "text": "by aws amazon elastic compute cloud"
+    },
+    {
+      "start": 78.479,
+      "duration": 5.521,
+      "text": "provides scalable computing capacity in"
+    },
+    {
+      "start": 81.119,
+      "duration": 5.121,
+      "text": "the cloud using amazon ac2 eliminates"
+    },
+    {
+      "start": 84.0,
+      "duration": 3.92,
+      "text": "your need to invest in hardware upfront"
+    },
+    {
+      "start": 86.24,
+      "duration": 4.0,
+      "text": "so you can develop and deploy"
+    },
+    {
+      "start": 87.92,
+      "duration": 4.879,
+      "text": "applications faster so what this means"
+    },
+    {
+      "start": 90.24,
+      "duration": 5.519,
+      "text": "is you get servers on rent earlier"
+    },
+    {
+      "start": 92.799,
+      "duration": 5.841,
+      "text": "before cloud when there was no cloud we"
+    },
+    {
+      "start": 95.759,
+      "duration": 4.881,
+      "text": "used to buy servers and install them and"
+    },
+    {
+      "start": 98.64,
+      "duration": 4.479,
+      "text": "configure them this used to take around"
+    },
+    {
+      "start": 100.64,
+      "duration": 4.96,
+      "text": "weeks and maybe some time months it was"
+    },
+    {
+      "start": 103.119,
+      "duration": 4.64,
+      "text": "quite time consuming and very costly so"
+    },
+    {
+      "start": 105.6,
+      "duration": 4.72,
+      "text": "easy to have changed the game easy to"
+    },
+    {
+      "start": 107.759,
+      "duration": 5.281,
+      "text": "have changed how people work and now we"
+    },
+    {
+      "start": 110.32,
+      "duration": 4.56,
+      "text": "can deploy our application faster we can"
+    },
+    {
+      "start": 113.04,
+      "duration": 3.92,
+      "text": "launch our servers just in seconds we"
+    },
+    {
+      "start": 114.88,
+      "duration": 4.32,
+      "text": "can launch hundreds of servers just in"
+    },
+    {
+      "start": 116.96,
+      "duration": 4.96,
+      "text": "one second so yeah it is very important"
+    },
+    {
+      "start": 119.2,
+      "duration": 3.519,
+      "text": "for you to know this service"
+    },
+    {
+      "start": 121.92,
+      "duration": 3.44,
+      "text": "why"
+    },
+    {
+      "start": 122.719,
+      "duration": 5.52,
+      "text": "ec2 why we should use each c2 or what"
+    },
+    {
+      "start": 125.36,
+      "duration": 5.36,
+      "text": "are the features of ec2 so ec2 provides"
+    },
+    {
+      "start": 128.239,
+      "duration": 5.521,
+      "text": "virtual machines and let you choose the"
+    },
+    {
+      "start": 130.72,
+      "duration": 5.519,
+      "text": "operating system also known as ami for"
+    },
+    {
+      "start": 133.76,
+      "duration": 4.8,
+      "text": "amazon ec2 provides you with lot of amis"
+    },
+    {
+      "start": 136.239,
+      "duration": 4.881,
+      "text": "ami catalog you can see the number"
+    },
+    {
+      "start": 138.56,
+      "duration": 6.96,
+      "text": "different types of amis available so you"
+    },
+    {
+      "start": 141.12,
+      "duration": 8.16,
+      "text": "get linux windows it's mac os"
+    },
+    {
+      "start": 145.52,
+      "duration": 5.28,
+      "text": "red hat suits ubuntu windows microsoft"
+    },
+    {
+      "start": 149.28,
+      "duration": 4.319,
+      "text": "and everything that everything that you"
+    },
+    {
+      "start": 150.8,
+      "duration": 4.88,
+      "text": "want you can also create your own amis"
+    },
+    {
+      "start": 153.599,
+      "duration": 3.92,
+      "text": "or amazon machine images you get"
+    },
+    {
+      "start": 155.68,
+      "duration": 4.24,
+      "text": "marketplace amis which are readymade"
+    },
+    {
+      "start": 157.519,
+      "duration": 4.641,
+      "text": "amis for example let's take this"
+    },
+    {
+      "start": 159.92,
+      "duration": 3.76,
+      "text": "wordpress you don't need to configure"
+    },
+    {
+      "start": 162.16,
+      "duration": 4.32,
+      "text": "wordpress on your server you get it"
+    },
+    {
+      "start": 163.68,
+      "duration": 5.68,
+      "text": "ready made so you can start your blog in"
+    },
+    {
+      "start": 166.48,
+      "duration": 5.2,
+      "text": "seconds you also get communities ami"
+    },
+    {
+      "start": 169.36,
+      "duration": 5.599,
+      "text": "from other fellow community people"
+    },
+    {
+      "start": 171.68,
+      "duration": 5.68,
+      "text": "so this is what ami is uw cc2 lets you"
+    },
+    {
+      "start": 174.959,
+      "duration": 5.121,
+      "text": "choose the mi of your choice according"
+    },
+    {
+      "start": 177.36,
+      "duration": 5.519,
+      "text": "to your workload and the second is"
+    },
+    {
+      "start": 180.08,
+      "duration": 6.0,
+      "text": "how much compute power or ram or storage"
+    },
+    {
+      "start": 182.879,
+      "duration": 4.0,
+      "text": "you need so you can choose the amount of"
+    },
+    {
+      "start": 186.08,
+      "duration": 3.6,
+      "text": "ram"
+    },
+    {
+      "start": 186.879,
+      "duration": 4.401,
+      "text": "or workload amazon easy to ins provides"
+    },
+    {
+      "start": 189.68,
+      "duration": 4.16,
+      "text": "you with instance type different"
+    },
+    {
+      "start": 191.28,
+      "duration": 5.039,
+      "text": "instance type you can choose any of them"
+    },
+    {
+      "start": 193.84,
+      "duration": 6.24,
+      "text": "according to your workload amazon ec2"
+    },
+    {
+      "start": 196.319,
+      "duration": 7.121,
+      "text": "lets you choose different instance type"
+    },
+    {
+      "start": 200.08,
+      "duration": 6.239,
+      "text": "based on your requirement so let's take"
+    },
+    {
+      "start": 203.44,
+      "duration": 6.96,
+      "text": "this for example it provides the c1"
+    },
+    {
+      "start": 206.319,
+      "duration": 6.92,
+      "text": "large provides you eight vcpus 7"
+    },
+    {
+      "start": 210.4,
+      "duration": 4.399,
+      "text": "gb ram and storage of"
+    },
+    {
+      "start": 213.239,
+      "duration": 2.441,
+      "text": "1680"
+    },
+    {
+      "start": 214.799,
+      "duration": 2.72,
+      "text": "gb"
+    },
+    {
+      "start": 215.68,
+      "duration": 3.839,
+      "text": "so that's a lot so you get to choose the"
+    },
+    {
+      "start": 217.519,
+      "duration": 5.521,
+      "text": "different types of instances based on"
+    },
+    {
+      "start": 219.519,
+      "duration": 5.841,
+      "text": "your workload so you can choose your cpu"
+    },
+    {
+      "start": 223.04,
+      "duration": 3.839,
+      "text": "your memory and your storage"
+    },
+    {
+      "start": 225.36,
+      "duration": 3.76,
+      "text": "the third option is you get to choose"
+    },
+    {
+      "start": 226.879,
+      "duration": 3.121,
+      "text": "the type of storage you want to attach"
+    },
+    {
+      "start": 229.12,
+      "duration": 4.16,
+      "text": "so"
+    },
+    {
+      "start": 230.0,
+      "duration": 5.28,
+      "text": "in ec2 you can attach ebs or known as"
+    },
+    {
+      "start": 233.28,
+      "duration": 4.56,
+      "text": "elastic block store or you can attach"
+    },
+    {
+      "start": 235.28,
+      "duration": 4.72,
+      "text": "elastic file systems or you can attach"
+    },
+    {
+      "start": 237.84,
+      "duration": 5.28,
+      "text": "instant store as well we will see the"
+    },
+    {
+      "start": 240.0,
+      "duration": 6.239,
+      "text": "different storage options later on"
+    },
+    {
+      "start": 243.12,
+      "duration": 5.199,
+      "text": "the fourth is which allows you to"
+    },
+    {
+      "start": 246.239,
+      "duration": 4.481,
+      "text": "select the ports you want to open you"
+    },
+    {
+      "start": 248.319,
+      "duration": 4.401,
+      "text": "can do this using security groups so you"
+    },
+    {
+      "start": 250.72,
+      "duration": 5.28,
+      "text": "can create your own security group and"
+    },
+    {
+      "start": 252.72,
+      "duration": 4.16,
+      "text": "allow the ports and you can add a rule"
+    },
+    {
+      "start": 256.0,
+      "duration": 3.6,
+      "text": "here"
+    },
+    {
+      "start": 256.88,
+      "duration": 4.8,
+      "text": "we will look about security group and"
+    },
+    {
+      "start": 259.6,
+      "duration": 3.52,
+      "text": "further sessions so basically you can"
+    },
+    {
+      "start": 261.68,
+      "duration": 3.68,
+      "text": "add your ports"
+    },
+    {
+      "start": 263.12,
+      "duration": 4.12,
+      "text": "you can allow ports whichever you want"
+    },
+    {
+      "start": 265.36,
+      "duration": 5.279,
+      "text": "this is a feature one of the feature of"
+    },
+    {
+      "start": 267.24,
+      "duration": 5.64,
+      "text": "awcc2 and the you can also distribute"
+    },
+    {
+      "start": 270.639,
+      "duration": 5.12,
+      "text": "load across instances using the load"
+    },
+    {
+      "start": 272.88,
+      "duration": 2.879,
+      "text": "balancer option"
+    },
+    {
+      "start": 276.8,
+      "duration": 4.56,
+      "text": "so you can distribute the traffic among"
+    },
+    {
+      "start": 279.759,
+      "duration": 4.321,
+      "text": "different servers among different"
+    },
+    {
+      "start": 281.36,
+      "duration": 5.04,
+      "text": "instances using the load balancers"
+    },
+    {
+      "start": 284.08,
+      "duration": 3.839,
+      "text": "we will look about we will learn more"
+    },
+    {
+      "start": 286.4,
+      "duration": 2.56,
+      "text": "about load balancers and the further"
+    },
+    {
+      "start": 287.919,
+      "duration": 2.481,
+      "text": "sessions"
+    },
+    {
+      "start": 288.96,
+      "duration": 3.6,
+      "text": "and"
+    },
+    {
+      "start": 290.4,
+      "duration": 3.84,
+      "text": "you can also use auto scaling groups to"
+    },
+    {
+      "start": 292.56,
+      "duration": 3.44,
+      "text": "increase the number of instances"
+    },
+    {
+      "start": 294.24,
+      "duration": 3.6,
+      "text": "whenever the load is coming in and"
+    },
+    {
+      "start": 296.0,
+      "duration": 3.52,
+      "text": "decrease the number of instances when"
+    },
+    {
+      "start": 297.84,
+      "duration": 3.919,
+      "text": "there is less traffic"
+    },
+    {
+      "start": 299.52,
+      "duration": 4.8,
+      "text": "these are the features of ec2 so now you"
+    },
+    {
+      "start": 301.759,
+      "duration": 3.361,
+      "text": "have understood why ec2 is so important"
+    },
+    {
+      "start": 304.32,
+      "duration": 3.76,
+      "text": "and"
+    },
+    {
+      "start": 305.12,
+      "duration": 5.12,
+      "text": "why it is so powerful everyone uses ec2"
+    },
+    {
+      "start": 308.08,
+      "duration": 4.88,
+      "text": "because it provides you with many"
+    },
+    {
+      "start": 310.24,
+      "duration": 4.64,
+      "text": "options and many flexibility that is why"
+    },
+    {
+      "start": 312.96,
+      "duration": 4.88,
+      "text": "we should use we should know about ec2"
+    },
+    {
+      "start": 314.88,
+      "duration": 4.64,
+      "text": "and it is very important for you to know"
+    },
+    {
+      "start": 317.84,
+      "duration": 3.359,
+      "text": "let's talk about the different eco"
+    },
+    {
+      "start": 319.52,
+      "duration": 4.0,
+      "text": "instance type that is general purpose"
+    },
+    {
+      "start": 321.199,
+      "duration": 4.641,
+      "text": "compute optimized memory optimized and"
+    },
+    {
+      "start": 323.52,
+      "duration": 4.0,
+      "text": "storage optimized the first one is"
+    },
+    {
+      "start": 325.84,
+      "duration": 4.16,
+      "text": "general purpose"
+    },
+    {
+      "start": 327.52,
+      "duration": 5.2,
+      "text": "the general purpose instances provide a"
+    },
+    {
+      "start": 330.0,
+      "duration": 5.68,
+      "text": "balance of compute memory and networking"
+    },
+    {
+      "start": 332.72,
+      "duration": 4.12,
+      "text": "resources and can be used for a variety"
+    },
+    {
+      "start": 335.68,
+      "duration": 5.2,
+      "text": "of diverse"
+    },
+    {
+      "start": 336.84,
+      "duration": 5.72,
+      "text": "workloads this plot by aws explains you"
+    },
+    {
+      "start": 340.88,
+      "duration": 3.36,
+      "text": "everything about the difference ec2"
+    },
+    {
+      "start": 342.56,
+      "duration": 3.12,
+      "text": "instance type these are all the"
+    },
+    {
+      "start": 344.24,
+      "duration": 2.88,
+      "text": "instances"
+    },
+    {
+      "start": 345.68,
+      "duration": 2.88,
+      "text": "different instances which are in the"
+    },
+    {
+      "start": 347.12,
+      "duration": 4.079,
+      "text": "general purpose"
+    },
+    {
+      "start": 348.56,
+      "duration": 5.199,
+      "text": "let's take an example of t2 micro or t2"
+    },
+    {
+      "start": 351.199,
+      "duration": 5.761,
+      "text": "that we use for free tier usually so"
+    },
+    {
+      "start": 353.759,
+      "duration": 4.401,
+      "text": "this is 2t2 micro it has one cpu"
+    },
+    {
+      "start": 356.96,
+      "duration": 2.48,
+      "text": "16"
+    },
+    {
+      "start": 358.16,
+      "duration": 5.68,
+      "text": "credits"
+    },
+    {
+      "start": 359.44,
+      "duration": 5.199,
+      "text": "1 gb ram and ebs packed storage"
+    },
+    {
+      "start": 363.84,
+      "duration": 2.4,
+      "text": "so"
+    },
+    {
+      "start": 364.639,
+      "duration": 3.921,
+      "text": "there's a general purpose which i use"
+    },
+    {
+      "start": 366.24,
+      "duration": 4.079,
+      "text": "mostly for web servers and code"
+    },
+    {
+      "start": 368.56,
+      "duration": 4.56,
+      "text": "repositories"
+    },
+    {
+      "start": 370.319,
+      "duration": 5.281,
+      "text": "we mostly use general purpose but"
+    },
+    {
+      "start": 373.12,
+      "duration": 4.4,
+      "text": "the next type is compute optimized"
+    },
+    {
+      "start": 375.6,
+      "duration": 5.039,
+      "text": "compute optimized instances are best for"
+    },
+    {
+      "start": 377.52,
+      "duration": 5.92,
+      "text": "compute intensive tasks that require"
+    },
+    {
+      "start": 380.639,
+      "duration": 3.601,
+      "text": "high performance processor so whenever"
+    },
+    {
+      "start": 383.44,
+      "duration": 3.039,
+      "text": "you"
+    },
+    {
+      "start": 384.24,
+      "duration": 4.32,
+      "text": "you have a workload that requires more"
+    },
+    {
+      "start": 386.479,
+      "duration": 4.241,
+      "text": "of the compute capacity"
+    },
+    {
+      "start": 388.56,
+      "duration": 4.88,
+      "text": "which require more compute power you can"
+    },
+    {
+      "start": 390.72,
+      "duration": 4.88,
+      "text": "use compute optimized the use cases for"
+    },
+    {
+      "start": 393.44,
+      "duration": 4.24,
+      "text": "compute optimized are batch processing"
+    },
+    {
+      "start": 395.6,
+      "duration": 4.48,
+      "text": "high performance web servers high"
+    },
+    {
+      "start": 397.68,
+      "duration": 4.799,
+      "text": "performance computing or hpc"
+    },
+    {
+      "start": 400.08,
+      "duration": 3.839,
+      "text": "dedicated gaming servers or machine"
+    },
+    {
+      "start": 402.479,
+      "duration": 3.84,
+      "text": "learning interface"
+    },
+    {
+      "start": 403.919,
+      "duration": 6.961,
+      "text": "the different types of compute optimized"
+    },
+    {
+      "start": 406.319,
+      "duration": 7.201,
+      "text": "instances are the c family c 7 g c 6 g"
+    },
+    {
+      "start": 410.88,
+      "duration": 3.84,
+      "text": "and all the other let's take c 6 g n for"
+    },
+    {
+      "start": 413.52,
+      "duration": 2.72,
+      "text": "example"
+    },
+    {
+      "start": 414.72,
+      "duration": 6.479,
+      "text": "as you can see they have"
+    },
+    {
+      "start": 416.24,
+      "duration": 6.399,
+      "text": "core of around 32 48 64. so they compute"
+    },
+    {
+      "start": 421.199,
+      "duration": 4.081,
+      "text": "power in this"
+    },
+    {
+      "start": 422.639,
+      "duration": 6.321,
+      "text": "type of instances is more and used for"
+    },
+    {
+      "start": 425.28,
+      "duration": 6.0,
+      "text": "compute intensive workload"
+    },
+    {
+      "start": 428.96,
+      "duration": 4.799,
+      "text": "so the next instance type is"
+    },
+    {
+      "start": 431.28,
+      "duration": 4.639,
+      "text": "memory optimized instance type"
+    },
+    {
+      "start": 433.759,
+      "duration": 4.241,
+      "text": "this is the photo of the ram memory"
+    },
+    {
+      "start": 435.919,
+      "duration": 4.4,
+      "text": "optimized is designed for"
+    },
+    {
+      "start": 438.0,
+      "duration": 5.12,
+      "text": "is designed to deliver fast performance"
+    },
+    {
+      "start": 440.319,
+      "duration": 4.481,
+      "text": "for workloads that process large data"
+    },
+    {
+      "start": 443.12,
+      "duration": 3.519,
+      "text": "sets in memory"
+    },
+    {
+      "start": 444.8,
+      "duration": 5.44,
+      "text": "whenever you want"
+    },
+    {
+      "start": 446.639,
+      "duration": 5.68,
+      "text": "more ram you can use memory optimized"
+    },
+    {
+      "start": 450.24,
+      "duration": 4.64,
+      "text": "instances the use cases are high"
+    },
+    {
+      "start": 452.319,
+      "duration": 4.72,
+      "text": "performance databases or application"
+    },
+    {
+      "start": 454.88,
+      "duration": 4.4,
+      "text": "performing real-time processing of big"
+    },
+    {
+      "start": 457.039,
+      "duration": 3.681,
+      "text": "unstructured data so something that"
+    },
+    {
+      "start": 459.28,
+      "duration": 3.039,
+      "text": "needs"
+    },
+    {
+      "start": 460.72,
+      "duration": 3.919,
+      "text": "memory can be done through memory"
+    },
+    {
+      "start": 462.319,
+      "duration": 4.961,
+      "text": "optimized instances so the memory"
+    },
+    {
+      "start": 464.639,
+      "duration": 5.12,
+      "text": "optimized instances are our family r"
+    },
+    {
+      "start": 467.28,
+      "duration": 4.16,
+      "text": "stands for ram"
+    },
+    {
+      "start": 469.759,
+      "duration": 3.761,
+      "text": "so if you see there are"
+    },
+    {
+      "start": 471.44,
+      "duration": 5.36,
+      "text": "the memory for this types of instances"
+    },
+    {
+      "start": 473.52,
+      "duration": 5.6,
+      "text": "is quite big quite more"
+    },
+    {
+      "start": 476.8,
+      "duration": 4.88,
+      "text": "let's take the next type that is storage"
+    },
+    {
+      "start": 479.12,
+      "duration": 5.04,
+      "text": "optimized so for workloads that require"
+    },
+    {
+      "start": 481.68,
+      "duration": 4.799,
+      "text": "high sequential reads and write access"
+    },
+    {
+      "start": 484.16,
+      "duration": 3.599,
+      "text": "to every large data sets on local"
+    },
+    {
+      "start": 486.479,
+      "duration": 4.0,
+      "text": "storage"
+    },
+    {
+      "start": 487.759,
+      "duration": 4.641,
+      "text": "they are optimized to deliver 10 tens of"
+    },
+    {
+      "start": 490.479,
+      "duration": 4.0,
+      "text": "thousands of low latency"
+    },
+    {
+      "start": 492.4,
+      "duration": 4.72,
+      "text": "ii operations per second"
+    },
+    {
+      "start": 494.479,
+      "duration": 4.801,
+      "text": "or iops to the application"
+    },
+    {
+      "start": 497.12,
+      "duration": 4.4,
+      "text": "so the use cases for this type of"
+    },
+    {
+      "start": 499.28,
+      "duration": 5.28,
+      "text": "instances is redis"
+    },
+    {
+      "start": 501.52,
+      "duration": 6.0,
+      "text": "cache and distributed file system data"
+    },
+    {
+      "start": 504.56,
+      "duration": 5.28,
+      "text": "warehousing application and this"
+    },
+    {
+      "start": 507.52,
+      "duration": 4.879,
+      "text": "instance type include"
+    },
+    {
+      "start": 509.84,
+      "duration": 5.04,
+      "text": "the i family"
+    },
+    {
+      "start": 512.399,
+      "duration": 5.2,
+      "text": "so if you see this"
+    },
+    {
+      "start": 514.88,
+      "duration": 6.079,
+      "text": "they have more of the storage"
+    },
+    {
+      "start": 517.599,
+      "duration": 5.36,
+      "text": "as compared to the cpu and the memory so"
+    },
+    {
+      "start": 520.959,
+      "duration": 4.0,
+      "text": "whenever you need more storage you go"
+    },
+    {
+      "start": 522.959,
+      "duration": 3.44,
+      "text": "for storage optimized"
+    },
+    {
+      "start": 524.959,
+      "duration": 3.841,
+      "text": "so these are the"
+    },
+    {
+      "start": 526.399,
+      "duration": 4.961,
+      "text": "instance type"
+    },
+    {
+      "start": 528.8,
+      "duration": 4.8,
+      "text": "let's talk about security group for now"
+    },
+    {
+      "start": 531.36,
+      "duration": 5.12,
+      "text": "security groups acts as a virtual"
+    },
+    {
+      "start": 533.6,
+      "duration": 6.56,
+      "text": "firewall for your ec2 instances"
+    },
+    {
+      "start": 536.48,
+      "duration": 5.28,
+      "text": "to control incoming and outgoing traffic"
+    },
+    {
+      "start": 540.16,
+      "duration": 4.48,
+      "text": "so you can control the inbound and"
+    },
+    {
+      "start": 541.76,
+      "duration": 4.96,
+      "text": "outbound traffic by allowing ports let's"
+    },
+    {
+      "start": 544.64,
+      "duration": 4.72,
+      "text": "go to the console and let's look how to"
+    },
+    {
+      "start": 546.72,
+      "duration": 4.559,
+      "text": "what does a security group look like"
+    },
+    {
+      "start": 549.36,
+      "duration": 3.84,
+      "text": "if you don't know i have created a video"
+    },
+    {
+      "start": 551.279,
+      "duration": 4.401,
+      "text": "which launches"
+    },
+    {
+      "start": 553.2,
+      "duration": 3.68,
+      "text": "terminates and connects to easy to inst"
+    },
+    {
+      "start": 555.68,
+      "duration": 3.12,
+      "text": "connects"
+    },
+    {
+      "start": 556.88,
+      "duration": 3.84,
+      "text": "to the instance you can go check it out"
+    },
+    {
+      "start": 558.8,
+      "duration": 4.08,
+      "text": "i'll link it here and post the link in"
+    },
+    {
+      "start": 560.72,
+      "duration": 4.0,
+      "text": "the description below as well i've also"
+    },
+    {
+      "start": 562.88,
+      "duration": 3.84,
+      "text": "shown how to create a security group and"
+    },
+    {
+      "start": 564.72,
+      "duration": 2.96,
+      "text": "other components by launching an"
+    },
+    {
+      "start": 566.72,
+      "duration": 2.72,
+      "text": "instance"
+    },
+    {
+      "start": 567.68,
+      "duration": 2.719,
+      "text": "so let's create a security group and we"
+    },
+    {
+      "start": 569.44,
+      "duration": 3.839,
+      "text": "can"
+    },
+    {
+      "start": 570.399,
+      "duration": 4.44,
+      "text": "get to know what all the things are"
+    },
+    {
+      "start": 573.279,
+      "duration": 6.0,
+      "text": "so my"
+    },
+    {
+      "start": 574.839,
+      "duration": 5.551,
+      "text": "demo security group"
+    },
+    {
+      "start": 579.279,
+      "duration": 2.321,
+      "text": "security"
+    },
+    {
+      "start": 580.39,
+      "duration": 2.569,
+      "text": "[Music]"
+    },
+    {
+      "start": 581.6,
+      "duration": 3.28,
+      "text": "all right so"
+    },
+    {
+      "start": 582.959,
+      "duration": 4.481,
+      "text": "this is the inbound rule inbound rules"
+    },
+    {
+      "start": 584.88,
+      "duration": 3.92,
+      "text": "mean traffic coming into the instance"
+    },
+    {
+      "start": 587.44,
+      "duration": 4.0,
+      "text": "so we can add"
+    },
+    {
+      "start": 588.8,
+      "duration": 3.76,
+      "text": "inbound rule you need to know different"
+    },
+    {
+      "start": 591.44,
+      "duration": 2.079,
+      "text": "ports"
+    },
+    {
+      "start": 592.56,
+      "duration": 4.56,
+      "text": "for this"
+    },
+    {
+      "start": 593.519,
+      "duration": 5.841,
+      "text": "so the first port we will add is ssh"
+    },
+    {
+      "start": 597.12,
+      "duration": 5.719,
+      "text": "to connect to our instance that is port"
+    },
+    {
+      "start": 599.36,
+      "duration": 7.52,
+      "text": "22 you can add anywhere or my"
+    },
+    {
+      "start": 602.839,
+      "duration": 6.921,
+      "text": "ip the next we can add is"
+    },
+    {
+      "start": 606.88,
+      "duration": 2.88,
+      "text": "http"
+    },
+    {
+      "start": 610.16,
+      "duration": 4.56,
+      "text": "for"
+    },
+    {
+      "start": 611.12,
+      "duration": 5.6,
+      "text": "that is port 80 for http access from"
+    },
+    {
+      "start": 614.72,
+      "duration": 5.04,
+      "text": "anywhere so you can add many of"
+    },
+    {
+      "start": 616.72,
+      "duration": 4.72,
+      "text": "different ports that are presented here"
+    },
+    {
+      "start": 619.76,
+      "duration": 3.68,
+      "text": "you can add"
+    },
+    {
+      "start": 621.44,
+      "duration": 6.8,
+      "text": "https rd"
+    },
+    {
+      "start": 623.44,
+      "duration": 8.56,
+      "text": "https tcp pop3 imap ldf"
+    },
+    {
+      "start": 628.24,
+      "duration": 6.8,
+      "text": "smb smtps so many instance many things"
+    },
+    {
+      "start": 632.0,
+      "duration": 6.24,
+      "text": "for inbound traffic you can delete"
+    },
+    {
+      "start": 635.04,
+      "duration": 5.44,
+      "text": "a rule by clicking here"
+    },
+    {
+      "start": 638.24,
+      "duration": 4.4,
+      "text": "the outbound traffic is the traffic that"
+    },
+    {
+      "start": 640.48,
+      "duration": 4.4,
+      "text": "goes out from the instances"
+    },
+    {
+      "start": 642.64,
+      "duration": 5.6,
+      "text": "so by default everything is"
+    },
+    {
+      "start": 644.88,
+      "duration": 6.079,
+      "text": "allowed for outbound traffic"
+    },
+    {
+      "start": 648.24,
+      "duration": 5.839,
+      "text": "you can add a tag to differentiate your"
+    },
+    {
+      "start": 650.959,
+      "duration": 4.56,
+      "text": "different ect groups so let's have a tag"
+    },
+    {
+      "start": 654.079,
+      "duration": 2.481,
+      "text": "here"
+    },
+    {
+      "start": 655.519,
+      "duration": 3.281,
+      "text": "create"
+    },
+    {
+      "start": 656.56,
+      "duration": 4.32,
+      "text": "we have successfully created"
+    },
+    {
+      "start": 658.8,
+      "duration": 6.64,
+      "text": "a security group which has two inbound"
+    },
+    {
+      "start": 660.88,
+      "duration": 7.76,
+      "text": "rules that is http port 80 and ssh port"
+    },
+    {
+      "start": 665.44,
+      "duration": 5.36,
+      "text": "22. so this instance whenever i attach"
+    },
+    {
+      "start": 668.64,
+      "duration": 3.36,
+      "text": "this security group to any instance it"
+    },
+    {
+      "start": 670.8,
+      "duration": 2.8,
+      "text": "will have"
+    },
+    {
+      "start": 672.0,
+      "duration": 3.76,
+      "text": "access to"
+    },
+    {
+      "start": 673.6,
+      "duration": 4.16,
+      "text": "connect the instance as it will has http"
+    },
+    {
+      "start": 675.76,
+      "duration": 4.0,
+      "text": "access as well"
+    },
+    {
+      "start": 677.76,
+      "duration": 4.4,
+      "text": "by default all the inbound traffic is"
+    },
+    {
+      "start": 679.76,
+      "duration": 4.48,
+      "text": "blocked whenever you create new"
+    },
+    {
+      "start": 682.16,
+      "duration": 4.56,
+      "text": "security group you need to add"
+    },
+    {
+      "start": 684.24,
+      "duration": 5.36,
+      "text": "inbound traffic and by default all the"
+    },
+    {
+      "start": 686.72,
+      "duration": 4.799,
+      "text": "inbound outbound traffic is allowed"
+    },
+    {
+      "start": 689.6,
+      "duration": 4.4,
+      "text": "and you can also attach"
+    },
+    {
+      "start": 691.519,
+      "duration": 5.44,
+      "text": "so you can attach more than one security"
+    },
+    {
+      "start": 694.0,
+      "duration": 5.279,
+      "text": "group to a single instance"
+    },
+    {
+      "start": 696.959,
+      "duration": 4.161,
+      "text": "now let's look about the easy to"
+    },
+    {
+      "start": 699.279,
+      "duration": 3.441,
+      "text": "launch types"
+    },
+    {
+      "start": 701.12,
+      "duration": 4.56,
+      "text": "so the easy to launch types are"
+    },
+    {
+      "start": 702.72,
+      "duration": 6.08,
+      "text": "on-demand instances reserved instances"
+    },
+    {
+      "start": 705.68,
+      "duration": 5.04,
+      "text": "spot instances dedicated host and"
+    },
+    {
+      "start": 708.8,
+      "duration": 4.24,
+      "text": "dedicated instances"
+    },
+    {
+      "start": 710.72,
+      "duration": 3.84,
+      "text": "we will look about this ec2 launch type"
+    },
+    {
+      "start": 713.04,
+      "duration": 3.599,
+      "text": "in the next video"
+    },
+    {
+      "start": 714.56,
+      "duration": 2.8,
+      "text": "so please check that out i'll link it"
+    },
+    {
+      "start": 716.639,
+      "duration": 3.2,
+      "text": "here"
+    },
+    {
+      "start": 717.36,
+      "duration": 4.719,
+      "text": "and for more videos like this please"
+    },
+    {
+      "start": 719.839,
+      "duration": 5.12,
+      "text": "subscribe to this channel so i can post"
+    },
+    {
+      "start": 722.079,
+      "duration": 4.961,
+      "text": "more about aws clouds and devops"
+    },
+    {
+      "start": 724.959,
+      "duration": 5.12,
+      "text": "and i hope you understood the concept"
+    },
+    {
+      "start": 727.04,
+      "duration": 6.08,
+      "text": "and how important it is to learn amazon"
+    },
+    {
+      "start": 730.079,
+      "duration": 4.801,
+      "text": "is ec2 it is very important"
+    },
+    {
+      "start": 733.12,
+      "duration": 3.519,
+      "text": "for exam perspective as well there are"
+    },
+    {
+      "start": 734.88,
+      "duration": 4.24,
+      "text": "many questions in the solutions"
+    },
+    {
+      "start": 736.639,
+      "duration": 4.481,
+      "text": "architect exam on this topic"
+    },
+    {
+      "start": 739.12,
+      "duration": 3.519,
+      "text": "so please check it out"
+    },
+    {
+      "start": 741.12,
+      "duration": 4.159,
+      "text": "and"
+    },
+    {
+      "start": 742.639,
+      "duration": 5.841,
+      "text": "i hope you liked it please subscribe"
+    },
+    {
+      "start": 745.279,
+      "duration": 3.201,
+      "text": "have a good day"
+    }
+  ]
+}

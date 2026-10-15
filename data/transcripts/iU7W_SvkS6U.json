@@ -1,0 +1,546 @@
+{
+  "video": {
+    "id": "iU7W_SvkS6U",
+    "title": "How to CREATE , ADD and DELETE users in Linux with commands in Terminal",
+    "url": "https://www.youtube.com/watch?v=iU7W_SvkS6U",
+    "duration": 228,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.4,
+      "text": "we have successfully created a user and"
+    },
+    {
+      "start": 2.879,
+      "duration": 3.92,
+      "text": "we have also set the password for it"
+    },
+    {
+      "start": 4.56,
+      "duration": 4.4,
+      "text": "let's go and log into it"
+    },
+    {
+      "start": 6.799,
+      "duration": 4.321,
+      "text": "hello and welcome to my youtube channel"
+    },
+    {
+      "start": 8.96,
+      "duration": 5.28,
+      "text": "in this video we are going to see how to"
+    },
+    {
+      "start": 11.12,
+      "duration": 5.2,
+      "text": "create and how to delete a user in linux"
+    },
+    {
+      "start": 14.24,
+      "duration": 3.84,
+      "text": "so linux is one of the most important"
+    },
+    {
+      "start": 16.32,
+      "duration": 4.08,
+      "text": "operating system whenever working in"
+    },
+    {
+      "start": 18.08,
+      "duration": 4.08,
+      "text": "cloud or devops so i'm going to use my"
+    },
+    {
+      "start": 20.4,
+      "duration": 3.84,
+      "text": "local machine which is an ubuntu"
+    },
+    {
+      "start": 22.16,
+      "duration": 3.92,
+      "text": "instance you can use your local if you"
+    },
+    {
+      "start": 24.24,
+      "duration": 4.0,
+      "text": "have ubuntu if not you can create a"
+    },
+    {
+      "start": 26.08,
+      "duration": 3.519,
+      "text": "linux instance in the cloud and if you"
+    },
+    {
+      "start": 28.24,
+      "duration": 3.359,
+      "text": "don't know how to create a linux"
+    },
+    {
+      "start": 29.599,
+      "duration": 4.081,
+      "text": "instance so i've already created a video"
+    },
+    {
+      "start": 31.599,
+      "duration": 5.441,
+      "text": "on how you can launch a linux instance"
+    },
+    {
+      "start": 33.68,
+      "duration": 5.44,
+      "text": "in amazon cloud so check out this video"
+    },
+    {
+      "start": 37.04,
+      "duration": 3.92,
+      "text": "so to show you what version i'm using"
+    },
+    {
+      "start": 39.12,
+      "duration": 4.0,
+      "text": "i'm going to run a command cat lsp"
+    },
+    {
+      "start": 40.96,
+      "duration": 4.8,
+      "text": "release it is an ubuntu machine which is"
+    },
+    {
+      "start": 43.12,
+      "duration": 4.32,
+      "text": "a 20 version so to create a user in this"
+    },
+    {
+      "start": 45.76,
+      "duration": 4.16,
+      "text": "machine i'm going to run a command which"
+    },
+    {
+      "start": 47.44,
+      "duration": 5.119,
+      "text": "is going to be sudo"
+    },
+    {
+      "start": 49.92,
+      "duration": 5.52,
+      "text": "user add and the name of the user which"
+    },
+    {
+      "start": 52.559,
+      "duration": 4.48,
+      "text": "is going to be cloud champ"
+    },
+    {
+      "start": 55.44,
+      "duration": 3.599,
+      "text": "so before i run this command let me just"
+    },
+    {
+      "start": 57.039,
+      "duration": 3.2,
+      "text": "show you that i don't have any users"
+    },
+    {
+      "start": 59.039,
+      "duration": 4.721,
+      "text": "named as"
+    },
+    {
+      "start": 60.239,
+      "duration": 5.841,
+      "text": "cloudchamp so you can see i only have"
+    },
+    {
+      "start": 63.76,
+      "duration": 4.64,
+      "text": "one user which is the current one right"
+    },
+    {
+      "start": 66.08,
+      "duration": 4.16,
+      "text": "now so nasi which is the current one"
+    },
+    {
+      "start": 68.4,
+      "duration": 3.2,
+      "text": "right now i don't have any user named as"
+    },
+    {
+      "start": 70.24,
+      "duration": 2.72,
+      "text": "cloudchamp so i'm going to run this"
+    },
+    {
+      "start": 71.6,
+      "duration": 2.4,
+      "text": "command"
+    },
+    {
+      "start": 72.96,
+      "duration": 2.24,
+      "text": "and it's going to ask me for the"
+    },
+    {
+      "start": 74.0,
+      "duration": 3.119,
+      "text": "password"
+    },
+    {
+      "start": 75.2,
+      "duration": 4.08,
+      "text": "and i'm going to enter my own password"
+    },
+    {
+      "start": 77.119,
+      "duration": 4.721,
+      "text": "so we have all and you can see now we"
+    },
+    {
+      "start": 79.28,
+      "duration": 4.159,
+      "text": "have a new user which is cloudchamp"
+    },
+    {
+      "start": 81.84,
+      "duration": 3.919,
+      "text": "we also want to"
+    },
+    {
+      "start": 83.439,
+      "duration": 3.601,
+      "text": "set a password for the new user and to"
+    },
+    {
+      "start": 85.759,
+      "duration": 2.921,
+      "text": "do that we're going to run the command"
+    },
+    {
+      "start": 87.04,
+      "duration": 4.96,
+      "text": "sudo"
+    },
+    {
+      "start": 88.68,
+      "duration": 5.16,
+      "text": "p-a-s-s-w-d sudo p-a-a-s-s wt which is"
+    },
+    {
+      "start": 92.0,
+      "duration": 3.52,
+      "text": "the password and the name of the user"
+    },
+    {
+      "start": 93.84,
+      "duration": 3.04,
+      "text": "which is cloud champion"
+    },
+    {
+      "start": 95.52,
+      "duration": 5.2,
+      "text": "so now i'm going to"
+    },
+    {
+      "start": 96.88,
+      "duration": 5.36,
+      "text": "prompt to enter my password so p a s s"
+    },
+    {
+      "start": 100.72,
+      "duration": 4.88,
+      "text": "one two three"
+    },
+    {
+      "start": 102.24,
+      "duration": 4.32,
+      "text": "p a s s one two three you could enter"
+    },
+    {
+      "start": 105.6,
+      "duration": 3.199,
+      "text": "audio"
+    },
+    {
+      "start": 106.56,
+      "duration": 4.239,
+      "text": "you can enter any of your password"
+    },
+    {
+      "start": 108.799,
+      "duration": 3.841,
+      "text": "obviously don't enter a password like"
+    },
+    {
+      "start": 110.799,
+      "duration": 4.161,
+      "text": "this it is very"
+    },
+    {
+      "start": 112.64,
+      "duration": 4.56,
+      "text": "it is very weak password so i'm going to"
+    },
+    {
+      "start": 114.96,
+      "duration": 5.119,
+      "text": "press enter and it says password updated"
+    },
+    {
+      "start": 117.2,
+      "duration": 4.959,
+      "text": "successfully so now we have created a"
+    },
+    {
+      "start": 120.079,
+      "duration": 4.72,
+      "text": "user and we've also set a password for"
+    },
+    {
+      "start": 122.159,
+      "duration": 5.521,
+      "text": "it so let's go and log into our machine"
+    },
+    {
+      "start": 124.799,
+      "duration": 5.44,
+      "text": "using this user so i'm going to sudo su"
+    },
+    {
+      "start": 127.68,
+      "duration": 4.48,
+      "text": "for switching user switch user to my new"
+    },
+    {
+      "start": 130.239,
+      "duration": 5.441,
+      "text": "user which is cloud champ"
+    },
+    {
+      "start": 132.16,
+      "duration": 5.76,
+      "text": "so sudo su cloud champ"
+    },
+    {
+      "start": 135.68,
+      "duration": 4.48,
+      "text": "and if i run the command who am i to see"
+    },
+    {
+      "start": 137.92,
+      "duration": 4.48,
+      "text": "which user is the current one and i can"
+    },
+    {
+      "start": 140.16,
+      "duration": 3.439,
+      "text": "see it's the cloud champ user"
+    },
+    {
+      "start": 142.4,
+      "duration": 2.88,
+      "text": "so"
+    },
+    {
+      "start": 143.599,
+      "duration": 3.441,
+      "text": "if i run the command to update all my"
+    },
+    {
+      "start": 145.28,
+      "duration": 3.76,
+      "text": "packages which is sudo apt update it's"
+    },
+    {
+      "start": 147.04,
+      "duration": 4.8,
+      "text": "going to ask me for the password first"
+    },
+    {
+      "start": 149.04,
+      "duration": 4.8,
+      "text": "so password one two three and then it"
+    },
+    {
+      "start": 151.84,
+      "duration": 4.72,
+      "text": "gives me an error saying cloud champ is"
+    },
+    {
+      "start": 153.84,
+      "duration": 4.88,
+      "text": "not in the sudo or file which means it"
+    },
+    {
+      "start": 156.56,
+      "duration": 3.679,
+      "text": "cannot run the sudo command so to"
+    },
+    {
+      "start": 158.72,
+      "duration": 3.76,
+      "text": "configure this error i have already"
+    },
+    {
+      "start": 160.239,
+      "duration": 4.08,
+      "text": "created a video you can check out watch"
+    },
+    {
+      "start": 162.48,
+      "duration": 3.759,
+      "text": "this video and you can easily configure"
+    },
+    {
+      "start": 164.319,
+      "duration": 3.521,
+      "text": "this i'm not going to repeat this here"
+    },
+    {
+      "start": 166.239,
+      "duration": 4.0,
+      "text": "so we have successfully created a user"
+    },
+    {
+      "start": 167.84,
+      "duration": 5.119,
+      "text": "let's go and delete this user in linux"
+    },
+    {
+      "start": 170.239,
+      "duration": 5.441,
+      "text": "so to delete the user i am going to exit"
+    },
+    {
+      "start": 172.959,
+      "duration": 4.64,
+      "text": "and then run the command sudo delete"
+    },
+    {
+      "start": 175.68,
+      "duration": 4.08,
+      "text": "user"
+    },
+    {
+      "start": 177.599,
+      "duration": 3.92,
+      "text": "so name of the user which is cloudchamp"
+    },
+    {
+      "start": 179.76,
+      "duration": 3.839,
+      "text": "once i run this command you can see this"
+    },
+    {
+      "start": 181.519,
+      "duration": 4.64,
+      "text": "user is going to be deleted and if i"
+    },
+    {
+      "start": 183.599,
+      "duration": 4.56,
+      "text": "press enter it says removing user cloud"
+    },
+    {
+      "start": 186.159,
+      "duration": 5.201,
+      "text": "champ removing group cloud jam and it"
+    },
+    {
+      "start": 188.159,
+      "duration": 5.281,
+      "text": "has no members now so if i show you here"
+    },
+    {
+      "start": 191.36,
+      "duration": 3.36,
+      "text": "i don't have any user name as cloudchap"
+    },
+    {
+      "start": 193.44,
+      "duration": 3.6,
+      "text": "anymore"
+    },
+    {
+      "start": 194.72,
+      "duration": 3.519,
+      "text": "so this is how you create users to"
+    },
+    {
+      "start": 197.04,
+      "duration": 3.44,
+      "text": "create a user you have to run the"
+    },
+    {
+      "start": 198.239,
+      "duration": 4.561,
+      "text": "command user ad and let's see what it"
+    },
+    {
+      "start": 200.48,
+      "duration": 5.039,
+      "text": "does it creates a user it creates a new"
+    },
+    {
+      "start": 202.8,
+      "duration": 4.56,
+      "text": "user and update a new configuration and"
+    },
+    {
+      "start": 205.519,
+      "duration": 3.681,
+      "text": "if you want to delete the user we are"
+    },
+    {
+      "start": 207.36,
+      "duration": 2.799,
+      "text": "going to run the command"
+    },
+    {
+      "start": 209.2,
+      "duration": 2.08,
+      "text": "delete"
+    },
+    {
+      "start": 210.159,
+      "duration": 3.281,
+      "text": "user"
+    },
+    {
+      "start": 211.28,
+      "duration": 4.48,
+      "text": "which deleted which removes a user"
+    },
+    {
+      "start": 213.44,
+      "duration": 4.32,
+      "text": "pretty straightforward right so i hope"
+    },
+    {
+      "start": 215.76,
+      "duration": 4.559,
+      "text": "you have understood a video you now know"
+    },
+    {
+      "start": 217.76,
+      "duration": 5.119,
+      "text": "how to create and delete a user in linux"
+    },
+    {
+      "start": 220.319,
+      "duration": 4.961,
+      "text": "so please like this video and subscribe"
+    },
+    {
+      "start": 222.879,
+      "duration": 6.64,
+      "text": "to my channel for more linux cloud and"
+    },
+    {
+      "start": 225.28,
+      "duration": 4.239,
+      "text": "devops videos thank you"
+    }
+  ]
+}

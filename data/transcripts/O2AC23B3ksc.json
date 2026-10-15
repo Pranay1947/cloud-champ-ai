@@ -1,0 +1,1226 @@
+{
+  "video": {
+    "id": "O2AC23B3ksc",
+    "title": "You NEED to learn GOLANG because Every Company is using it!",
+    "url": "https://www.youtube.com/watch?v=O2AC23B3ksc",
+    "duration": 521,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.56,
+      "duration": 4.08,
+      "text": "go or goang is a very popular"
+    },
+    {
+      "start": 2.52,
+      "duration": 5.2,
+      "text": "programming language created by Google"
+    },
+    {
+      "start": 4.64,
+      "duration": 4.959,
+      "text": "in Year 2007 which is used extensively"
+    },
+    {
+      "start": 7.72,
+      "duration": 5.36,
+      "text": "by many big companies like Google"
+    },
+    {
+      "start": 9.599,
+      "duration": 6.0,
+      "text": "Twitter Netflix meta Uber and so many"
+    },
+    {
+      "start": 13.08,
+      "duration": 4.6,
+      "text": "others not just this many popular devops"
+    },
+    {
+      "start": 15.599,
+      "duration": 5.081,
+      "text": "tools like Docker kubernetes chus"
+    },
+    {
+      "start": 17.68,
+      "duration": 5.04,
+      "text": "terraform all of them are written in go"
+    },
+    {
+      "start": 20.68,
+      "duration": 3.759,
+      "text": "goang is also a preferred programming"
+    },
+    {
+      "start": 22.72,
+      "duration": 4.319,
+      "text": "language for all Cloud native and"
+    },
+    {
+      "start": 24.439,
+      "duration": 5.16,
+      "text": "develops task so why is go language so"
+    },
+    {
+      "start": 27.039,
+      "duration": 4.201,
+      "text": "Dam popular in this video we will"
+    },
+    {
+      "start": 29.599,
+      "duration": 4.28,
+      "text": "understand why companies are choosing go"
+    },
+    {
+      "start": 31.24,
+      "duration": 4.92,
+      "text": "programming language over python nodejs"
+    },
+    {
+      "start": 33.879,
+      "duration": 3.721,
+      "text": "arubi or any other language along with"
+    },
+    {
+      "start": 36.16,
+      "duration": 3.399,
+      "text": "this we will also look at different case"
+    },
+    {
+      "start": 37.6,
+      "duration": 3.799,
+      "text": "studies on how go language are used in"
+    },
+    {
+      "start": 39.559,
+      "duration": 4.121,
+      "text": "these companies and what are advantages"
+    },
+    {
+      "start": 41.399,
+      "duration": 7.041,
+      "text": "of using go language and why you should"
+    },
+    {
+      "start": 43.68,
+      "duration": 4.76,
+      "text": "learn goang in 2023 let's"
+    },
+    {
+      "start": 55.239,
+      "duration": 4.721,
+      "text": "go hey everyone and Welcome to Cloud"
+    },
+    {
+      "start": 57.8,
+      "duration": 4.2,
+      "text": "champ let's quickly have a look at"
+    },
+    {
+      "start": 59.96,
+      "duration": 4.12,
+      "text": "history of goang and why was there an"
+    },
+    {
+      "start": 62.0,
+      "duration": 4.28,
+      "text": "actual need to create a new programming"
+    },
+    {
+      "start": 64.08,
+      "duration": 4.079,
+      "text": "language so go programming language was"
+    },
+    {
+      "start": 66.28,
+      "duration": 4.199,
+      "text": "created when Google was spacing major"
+    },
+    {
+      "start": 68.159,
+      "duration": 4.521,
+      "text": "problems with concurrency and scaling"
+    },
+    {
+      "start": 70.479,
+      "duration": 3.841,
+      "text": "but the main issue was compile time it"
+    },
+    {
+      "start": 72.68,
+      "duration": 3.6,
+      "text": "used to take a huge amount of time to"
+    },
+    {
+      "start": 74.32,
+      "duration": 4.68,
+      "text": "compile applications written in C"
+    },
+    {
+      "start": 76.28,
+      "duration": 5.6,
+      "text": "programming or python this is when three"
+    },
+    {
+      "start": 79.0,
+      "duration": 4.36,
+      "text": "Google experts Robert Rob and Ken"
+    },
+    {
+      "start": 81.88,
+      "duration": 3.12,
+      "text": "decided to create a new programming"
+    },
+    {
+      "start": 83.36,
+      "duration": 3.68,
+      "text": "language that should be easier to read"
+    },
+    {
+      "start": 85.0,
+      "duration": 4.119,
+      "text": "and write should be very fast and also"
+    },
+    {
+      "start": 87.04,
+      "duration": 3.92,
+      "text": "handle concurrency so this is how go"
+    },
+    {
+      "start": 89.119,
+      "duration": 3.401,
+      "text": "programming was Bor a very simple"
+    },
+    {
+      "start": 90.96,
+      "duration": 3.92,
+      "text": "language that you can easily read and"
+    },
+    {
+      "start": 92.52,
+      "duration": 4.72,
+      "text": "write can compile code faster than C and"
+    },
+    {
+      "start": 94.88,
+      "duration": 4.68,
+      "text": "Python and can even handle concurrency"
+    },
+    {
+      "start": 97.24,
+      "duration": 4.4,
+      "text": "easily now most of you might be confused"
+    },
+    {
+      "start": 99.56,
+      "duration": 3.72,
+      "text": "about what concurrency is so let me"
+    },
+    {
+      "start": 101.64,
+      "duration": 3.6,
+      "text": "explain you this quickly before we move"
+    },
+    {
+      "start": 103.28,
+      "duration": 4.32,
+      "text": "ahead and concurrency is nothing but"
+    },
+    {
+      "start": 105.24,
+      "duration": 5.559,
+      "text": "just an ability of a system to manage"
+    },
+    {
+      "start": 107.6,
+      "duration": 5.28,
+      "text": "multiple task simultaneously for example"
+    },
+    {
+      "start": 110.799,
+      "duration": 3.28,
+      "text": "you're watching this video on YouTube so"
+    },
+    {
+      "start": 112.88,
+      "duration": 2.839,
+      "text": "while you're watching someone else is"
+    },
+    {
+      "start": 114.079,
+      "duration": 2.761,
+      "text": "uploading a video someone is writing a"
+    },
+    {
+      "start": 115.719,
+      "duration": 3.04,
+      "text": "comment someone is getting a"
+    },
+    {
+      "start": 116.84,
+      "duration": 3.84,
+      "text": "recommendation so YouTube is handling"
+    },
+    {
+      "start": 118.759,
+      "duration": 3.801,
+      "text": "multiple task at the same time and this"
+    },
+    {
+      "start": 120.68,
+      "duration": 4.24,
+      "text": "is what concurrency is and you can do"
+    },
+    {
+      "start": 122.56,
+      "duration": 4.68,
+      "text": "concurrency easier in go using go"
+    },
+    {
+      "start": 124.92,
+      "duration": 4.24,
+      "text": "routines so if anytime you want to build"
+    },
+    {
+      "start": 127.24,
+      "duration": 3.799,
+      "text": "really big programs to analyze the whole"
+    },
+    {
+      "start": 129.16,
+      "duration": 4.079,
+      "text": "freaking internet go would be the right"
+    },
+    {
+      "start": 131.039,
+      "duration": 4.761,
+      "text": "choice for you now that we understand"
+    },
+    {
+      "start": 133.239,
+      "duration": 4.64,
+      "text": "how important and useful goang is let's"
+    },
+    {
+      "start": 135.8,
+      "duration": 4.439,
+      "text": "look at some interesting case studies to"
+    },
+    {
+      "start": 137.879,
+      "duration": 4.72,
+      "text": "understand how big companies are using"
+    },
+    {
+      "start": 140.239,
+      "duration": 5.0,
+      "text": "go programming language in their systems"
+    },
+    {
+      "start": 142.599,
+      "duration": 4.64,
+      "text": "all right so I'm here on go. Devolution"
+    },
+    {
+      "start": 145.239,
+      "duration": 3.841,
+      "text": "case studies which has case studies from"
+    },
+    {
+      "start": 147.239,
+      "duration": 5.441,
+      "text": "different companies and we have some big"
+    },
+    {
+      "start": 149.08,
+      "duration": 6.4,
+      "text": "names here meta Google Microsoft Netflix"
+    },
+    {
+      "start": 152.68,
+      "duration": 4.48,
+      "text": "PayPal Salesforce and other companies"
+    },
+    {
+      "start": 155.48,
+      "duration": 3.839,
+      "text": "let's look at some interesting ones and"
+    },
+    {
+      "start": 157.16,
+      "duration": 4.12,
+      "text": "how they are using go in their"
+    },
+    {
+      "start": 159.319,
+      "duration": 4.92,
+      "text": "architecture we have Microsoft here"
+    },
+    {
+      "start": 161.28,
+      "duration": 4.36,
+      "text": "let's see how Microsoft is using goang"
+    },
+    {
+      "start": 164.239,
+      "duration": 3.521,
+      "text": "uh this is the block from Microsoft"
+    },
+    {
+      "start": 165.64,
+      "duration": 3.879,
+      "text": "website with the static binary that you"
+    },
+    {
+      "start": 167.76,
+      "duration": 4.04,
+      "text": "build in go you could have doif file"
+    },
+    {
+      "start": 169.519,
+      "duration": 4.0,
+      "text": "that's 10 11 12 megabytes instead of"
+    },
+    {
+      "start": 171.8,
+      "duration": 3.92,
+      "text": "bringing in the entire nodejs ecosystem"
+    },
+    {
+      "start": 173.519,
+      "duration": 4.0,
+      "text": "of python on Java where you have got"
+    },
+    {
+      "start": 175.72,
+      "duration": 4.32,
+      "text": "these hundreds of megabytes size Stocker"
+    },
+    {
+      "start": 177.519,
+      "duration": 5.481,
+      "text": "F so Microsoft is using golang to reduce"
+    },
+    {
+      "start": 180.04,
+      "duration": 4.72,
+      "text": "the size of their doer images along with"
+    },
+    {
+      "start": 183.0,
+      "duration": 3.48,
+      "text": "this they also mentioned how performance"
+    },
+    {
+      "start": 184.76,
+      "duration": 3.16,
+      "text": "has been increased when using go so"
+    },
+    {
+      "start": 186.48,
+      "duration": 3.24,
+      "text": "performance of go means that you're not"
+    },
+    {
+      "start": 187.92,
+      "duration": 3.599,
+      "text": "really losing anything when you are"
+    },
+    {
+      "start": 189.72,
+      "duration": 3.599,
+      "text": "coming from the language in fact"
+    },
+    {
+      "start": 191.519,
+      "duration": 3.72,
+      "text": "compared to python or Ruby you are"
+    },
+    {
+      "start": 193.319,
+      "duration": 4.601,
+      "text": "gaining quite a bit of speed which"
+    },
+    {
+      "start": 195.239,
+      "duration": 4.0,
+      "text": "defines go is faster than python or Ruby"
+    },
+    {
+      "start": 197.92,
+      "duration": 3.28,
+      "text": "and this is why they have shifted in"
+    },
+    {
+      "start": 199.239,
+      "duration": 3.601,
+      "text": "some of their applications now let's"
+    },
+    {
+      "start": 201.2,
+      "duration": 4.28,
+      "text": "look at Val case study when Netflix is"
+    },
+    {
+      "start": 202.84,
+      "duration": 5.039,
+      "text": "using goang this is a medium blog by"
+    },
+    {
+      "start": 205.48,
+      "duration": 4.399,
+      "text": "Netflix Netflix is using go to improve"
+    },
+    {
+      "start": 207.879,
+      "duration": 4.64,
+      "text": "latency if you go down here in this"
+    },
+    {
+      "start": 209.879,
+      "duration": 4.44,
+      "text": "block and you look here it says the"
+    },
+    {
+      "start": 212.519,
+      "duration": 3.36,
+      "text": "decision to use go was deliberate"
+    },
+    {
+      "start": 214.319,
+      "duration": 3.84,
+      "text": "because we needed something that had"
+    },
+    {
+      "start": 215.879,
+      "duration": 4.44,
+      "text": "lower latency than Java and is more"
+    },
+    {
+      "start": 218.159,
+      "duration": 3.881,
+      "text": "productivity for developers than C while"
+    },
+    {
+      "start": 220.319,
+      "duration": 4.2,
+      "text": "also handling tens and thousands of"
+    },
+    {
+      "start": 222.04,
+      "duration": 4.32,
+      "text": "client connections so go fits this pay"
+    },
+    {
+      "start": 224.519,
+      "duration": 4.041,
+      "text": "as well this is how Netflix has shifted"
+    },
+    {
+      "start": 226.36,
+      "duration": 4.079,
+      "text": "from java to go this is getting"
+    },
+    {
+      "start": 228.56,
+      "duration": 3.239,
+      "text": "interested let's see some more PayPal is"
+    },
+    {
+      "start": 230.439,
+      "duration": 3.561,
+      "text": "another great application to transfer"
+    },
+    {
+      "start": 231.799,
+      "duration": 4.601,
+      "text": "money and let's see how PayPal is using"
+    },
+    {
+      "start": 234.0,
+      "duration": 5.079,
+      "text": "go so in here you can see ppal is using"
+    },
+    {
+      "start": 236.4,
+      "duration": 3.919,
+      "text": "go to scale to increase scalability if"
+    },
+    {
+      "start": 239.079,
+      "duration": 2.841,
+      "text": "you see here"
+    },
+    {
+      "start": 240.319,
+      "duration": 4.041,
+      "text": "as PayPal's platform becomes more"
+    },
+    {
+      "start": 241.92,
+      "duration": 4.2,
+      "text": "intricate go provides a way to readily"
+    },
+    {
+      "start": 244.36,
+      "duration": 3.519,
+      "text": "simplify the complexity of creating and"
+    },
+    {
+      "start": 246.12,
+      "duration": 3.44,
+      "text": "running softwares at scale language"
+    },
+    {
+      "start": 247.879,
+      "duration": 3.521,
+      "text": "provides PayPal with great libraries and"
+    },
+    {
+      "start": 249.56,
+      "duration": 4.44,
+      "text": "fast Tools Plus concurrency garbage"
+    },
+    {
+      "start": 251.4,
+      "duration": 3.72,
+      "text": "relations and type safety so this is how"
+    },
+    {
+      "start": 254.0,
+      "duration": 2.72,
+      "text": "PayPal is using to scale their"
+    },
+    {
+      "start": 255.12,
+      "duration": 4.48,
+      "text": "applications and after this success they"
+    },
+    {
+      "start": 256.72,
+      "duration": 5.52,
+      "text": "have started rewriting the nosql system"
+    },
+    {
+      "start": 259.6,
+      "duration": 4.319,
+      "text": "also in go and they have started"
+    },
+    {
+      "start": 262.24,
+      "duration": 3.6,
+      "text": "adapting go language in most of their"
+    },
+    {
+      "start": 263.919,
+      "duration": 3.921,
+      "text": "other systems another interesting case"
+    },
+    {
+      "start": 265.84,
+      "duration": 4.6,
+      "text": "study is by Twitter and how Twitter is"
+    },
+    {
+      "start": 267.84,
+      "duration": 5.359,
+      "text": "using go to handle 5 billion s a day in"
+    },
+    {
+      "start": 270.44,
+      "duration": 5.24,
+      "text": "real time this is the block by Twitter"
+    },
+    {
+      "start": 273.199,
+      "duration": 3.56,
+      "text": "or X and if you scroll down you see this"
+    },
+    {
+      "start": 275.68,
+      "duration": 3.239,
+      "text": "is the challenge they were facing which"
+    },
+    {
+      "start": 276.759,
+      "duration": 3.481,
+      "text": "was event reception if reception you can"
+    },
+    {
+      "start": 278.919,
+      "duration": 3.201,
+      "text": "go and read about this block but if you"
+    },
+    {
+      "start": 280.24,
+      "duration": 4.56,
+      "text": "see here it says this service is written"
+    },
+    {
+      "start": 282.12,
+      "duration": 5.28,
+      "text": "in goang frontend by Amazon elb and"
+    },
+    {
+      "start": 284.8,
+      "duration": 4.88,
+      "text": "simply in cues every payload so even"
+    },
+    {
+      "start": 287.4,
+      "duration": 4.04,
+      "text": "Twitter is using golang for event"
+    },
+    {
+      "start": 289.68,
+      "duration": 4.32,
+      "text": "reception and to handle 5 billion"
+    },
+    {
+      "start": 291.44,
+      "duration": 4.24,
+      "text": "sessions every day another interesting"
+    },
+    {
+      "start": 294.0,
+      "duration": 4.12,
+      "text": "case studies that has more information"
+    },
+    {
+      "start": 295.68,
+      "duration": 5.04,
+      "text": "is by stream and they Define why we"
+    },
+    {
+      "start": 298.12,
+      "duration": 4.16,
+      "text": "switched from python to V go so in this"
+    },
+    {
+      "start": 300.72,
+      "duration": 3.72,
+      "text": "you can see the different reasons and"
+    },
+    {
+      "start": 302.28,
+      "duration": 4.12,
+      "text": "why they have shied from python to go"
+    },
+    {
+      "start": 304.44,
+      "duration": 5.24,
+      "text": "the first one is performance and they"
+    },
+    {
+      "start": 306.4,
+      "duration": 5.639,
+      "text": "say go is extremely fast it is typically"
+    },
+    {
+      "start": 309.68,
+      "duration": 3.959,
+      "text": "40 times faster than Python and they"
+    },
+    {
+      "start": 312.039,
+      "duration": 3.561,
+      "text": "also have a link for a benchmark game"
+    },
+    {
+      "start": 313.639,
+      "duration": 4.721,
+      "text": "that will Define the speed and you can"
+    },
+    {
+      "start": 315.6,
+      "duration": 4.599,
+      "text": "go and try it out so when using python"
+    },
+    {
+      "start": 318.36,
+      "duration": 3.52,
+      "text": "they were facing performance issues they"
+    },
+    {
+      "start": 320.199,
+      "duration": 3.56,
+      "text": "as you can see they say python is a"
+    },
+    {
+      "start": 321.88,
+      "duration": 3.4,
+      "text": "great language but it is but its"
+    },
+    {
+      "start": 323.759,
+      "duration": 2.921,
+      "text": "performance is pretty sluggish for use"
+    },
+    {
+      "start": 325.28,
+      "duration": 3.96,
+      "text": "cases such as serialization der"
+    },
+    {
+      "start": 326.68,
+      "duration": 3.88,
+      "text": "serialization ranking and aggregation so"
+    },
+    {
+      "start": 329.24,
+      "duration": 3.679,
+      "text": "using go they were just getting the"
+    },
+    {
+      "start": 330.56,
+      "duration": 3.52,
+      "text": "information in 1 milliseconds whereas"
+    },
+    {
+      "start": 332.919,
+      "duration": 3.0,
+      "text": "with python they were getting"
+    },
+    {
+      "start": 334.08,
+      "duration": 3.72,
+      "text": "information in more than 10 milliseconds"
+    },
+    {
+      "start": 335.919,
+      "duration": 3.801,
+      "text": "apart from this there another reason to"
+    },
+    {
+      "start": 337.8,
+      "duration": 4.48,
+      "text": "shift from python to go was concurrency"
+    },
+    {
+      "start": 339.72,
+      "duration": 4.28,
+      "text": "and channels go is well known for"
+    },
+    {
+      "start": 342.28,
+      "duration": 4.52,
+      "text": "concurrency if you see they say compared"
+    },
+    {
+      "start": 344.0,
+      "duration": 5.479,
+      "text": "to python Java running a function on a"
+    },
+    {
+      "start": 346.8,
+      "duration": 4.64,
+      "text": "go routine requires minimal boiler plate"
+    },
+    {
+      "start": 349.479,
+      "duration": 4.401,
+      "text": "code you simply pretend the function"
+    },
+    {
+      "start": 351.44,
+      "duration": 4.28,
+      "text": "call with keyword go another reason why"
+    },
+    {
+      "start": 353.88,
+      "duration": 4.759,
+      "text": "they shifted to go was faster compile"
+    },
+    {
+      "start": 355.72,
+      "duration": 4.319,
+      "text": "time as we already know go is very fast"
+    },
+    {
+      "start": 358.639,
+      "duration": 3.12,
+      "text": "and here they see our largest"
+    },
+    {
+      "start": 360.039,
+      "duration": 4.0,
+      "text": "microservice was return in go it"
+    },
+    {
+      "start": 361.759,
+      "duration": 3.841,
+      "text": "currently takes 4 second to compile and"
+    },
+    {
+      "start": 364.039,
+      "duration": 3.201,
+      "text": "Go's fast compile time was a major"
+    },
+    {
+      "start": 365.6,
+      "duration": 3.96,
+      "text": "productivity when compared to language"
+    },
+    {
+      "start": 367.24,
+      "duration": 4.239,
+      "text": "like Java and C++ which are famous to"
+    },
+    {
+      "start": 369.56,
+      "duration": 4.24,
+      "text": "sluggish compilation speed which is"
+    },
+    {
+      "start": 371.479,
+      "duration": 4.321,
+      "text": "obviously correct now these are some of"
+    },
+    {
+      "start": 373.8,
+      "duration": 4.28,
+      "text": "the reasons on why stream has shifted to"
+    },
+    {
+      "start": 375.8,
+      "duration": 4.04,
+      "text": "go you can go and read about it another"
+    },
+    {
+      "start": 378.08,
+      "duration": 4.32,
+      "text": "interesting case study would be from"
+    },
+    {
+      "start": 379.84,
+      "duration": 4.4,
+      "text": "Uber Uber uses go a lot and also"
+    },
+    {
+      "start": 382.4,
+      "duration": 4.68,
+      "text": "contributes to go community so let's"
+    },
+    {
+      "start": 384.24,
+      "duration": 4.84,
+      "text": "have a look at how Uber is using bang so"
+    },
+    {
+      "start": 387.08,
+      "duration": 4.44,
+      "text": "I have two blogs here from Uber and"
+    },
+    {
+      "start": 389.08,
+      "duration": 4.399,
+      "text": "these two are defines how they using go"
+    },
+    {
+      "start": 391.52,
+      "duration": 4.16,
+      "text": "the first block Uber engineering's"
+    },
+    {
+      "start": 393.479,
+      "duration": 4.44,
+      "text": "highest query per second using go and if"
+    },
+    {
+      "start": 395.68,
+      "duration": 4.519,
+      "text": "you scroll down here earlier Uber was"
+    },
+    {
+      "start": 397.919,
+      "duration": 4.241,
+      "text": "using nodejs and now they have shifted"
+    },
+    {
+      "start": 400.199,
+      "duration": 3.761,
+      "text": "go which is defined in this part here so"
+    },
+    {
+      "start": 402.16,
+      "duration": 3.36,
+      "text": "nodejs was real time Market based team's"
+    },
+    {
+      "start": 403.96,
+      "duration": 3.72,
+      "text": "primary programming language at the time"
+    },
+    {
+      "start": 405.52,
+      "duration": 3.56,
+      "text": "VA validated languages and thus we add"
+    },
+    {
+      "start": 407.68,
+      "duration": 3.72,
+      "text": "more in-house knowledge and experience"
+    },
+    {
+      "start": 409.08,
+      "duration": 4.16,
+      "text": "with it however go meets are needs for"
+    },
+    {
+      "start": 411.4,
+      "duration": 3.88,
+      "text": "following reason having high throughput"
+    },
+    {
+      "start": 413.24,
+      "duration": 4.2,
+      "text": "and low latency requirements for CPU"
+    },
+    {
+      "start": 415.28,
+      "duration": 3.88,
+      "text": "intensive workload for non-d disrupting"
+    },
+    {
+      "start": 417.44,
+      "duration": 3.599,
+      "text": "background loading and you can go read"
+    },
+    {
+      "start": 419.16,
+      "duration": 3.8,
+      "text": "about it on these blogs I'll be posting"
+    },
+    {
+      "start": 421.039,
+      "duration": 5.72,
+      "text": "the links for this in the description"
+    },
+    {
+      "start": 422.96,
+      "duration": 5.48,
+      "text": "below so goang is used in Uber for all"
+    },
+    {
+      "start": 426.759,
+      "duration": 3.641,
+      "text": "these different reasons apart from this"
+    },
+    {
+      "start": 428.44,
+      "duration": 4.56,
+      "text": "there's another block which has data"
+    },
+    {
+      "start": 430.4,
+      "duration": 4.919,
+      "text": "race patterns in go and this defines how"
+    },
+    {
+      "start": 433.0,
+      "duration": 5.44,
+      "text": "Uber is using go to solve concurrency"
+    },
+    {
+      "start": 435.319,
+      "duration": 5.72,
+      "text": "problem they Define how go can be used"
+    },
+    {
+      "start": 438.44,
+      "duration": 4.08,
+      "text": "for concurrency for example by scanning"
+    },
+    {
+      "start": 441.039,
+      "duration": 3.081,
+      "text": "hundreds and thousands of microservices"
+    },
+    {
+      "start": 442.52,
+      "duration": 4.2,
+      "text": "in since is running our data centers we"
+    },
+    {
+      "start": 444.12,
+      "duration": 4.199,
+      "text": "found that go microservices expose 8X"
+    },
+    {
+      "start": 446.72,
+      "duration": 3.599,
+      "text": "more congruency compared to Java"
+    },
+    {
+      "start": 448.319,
+      "duration": 4.6,
+      "text": "microservices this is one of the reasons"
+    },
+    {
+      "start": 450.319,
+      "duration": 4.641,
+      "text": "why they shifted from java to go apart"
+    },
+    {
+      "start": 452.919,
+      "duration": 5.201,
+      "text": "from this there are more reasons on why"
+    },
+    {
+      "start": 454.96,
+      "duration": 5.679,
+      "text": "would have shifted from java to go uh as"
+    },
+    {
+      "start": 458.12,
+      "duration": 4.199,
+      "text": "you can see in this block and the links"
+    },
+    {
+      "start": 460.639,
+      "duration": 3.321,
+      "text": "for them all of them are going to be in"
+    },
+    {
+      "start": 462.319,
+      "duration": 3.241,
+      "text": "the description looking at all these"
+    },
+    {
+      "start": 463.96,
+      "duration": 3.679,
+      "text": "different case studies and how companies"
+    },
+    {
+      "start": 465.56,
+      "duration": 4.759,
+      "text": "are using goang you might have an idea"
+    },
+    {
+      "start": 467.639,
+      "duration": 4.041,
+      "text": "of how popular and in demand is goang"
+    },
+    {
+      "start": 470.319,
+      "duration": 2.961,
+      "text": "which should be the main reason of why"
+    },
+    {
+      "start": 471.68,
+      "duration": 3.12,
+      "text": "you should start learning goang but"
+    },
+    {
+      "start": 473.28,
+      "duration": 3.08,
+      "text": "appart from this if you are a goine"
+    },
+    {
+      "start": 474.8,
+      "duration": 3.519,
+      "text": "developer you can expect a very good"
+    },
+    {
+      "start": 476.36,
+      "duration": 3.799,
+      "text": "salary even if you are not a developer"
+    },
+    {
+      "start": 478.319,
+      "duration": 3.761,
+      "text": "you are a devops on S sorry you still"
+    },
+    {
+      "start": 480.159,
+      "duration": 4.32,
+      "text": "have to learn goang because goang is"
+    },
+    {
+      "start": 482.08,
+      "duration": 4.44,
+      "text": "used for many devops task including"
+    },
+    {
+      "start": 484.479,
+      "duration": 4.0,
+      "text": "automation creating scripts"
+    },
+    {
+      "start": 486.52,
+      "duration": 3.88,
+      "text": "configuration and lot more so this"
+    },
+    {
+      "start": 488.479,
+      "duration": 3.84,
+      "text": "brings us to the end of the video I hope"
+    },
+    {
+      "start": 490.4,
+      "duration": 4.96,
+      "text": "now you have an idea of why companies"
+    },
+    {
+      "start": 492.319,
+      "duration": 5.481,
+      "text": "are switching from python or Java to go"
+    },
+    {
+      "start": 495.36,
+      "duration": 4.04,
+      "text": "language and this does not means python"
+    },
+    {
+      "start": 497.8,
+      "duration": 3.359,
+      "text": "is going to die or P this is the end of"
+    },
+    {
+      "start": 499.4,
+      "duration": 3.32,
+      "text": "python python is going to still there"
+    },
+    {
+      "start": 501.159,
+      "duration": 3.0,
+      "text": "and is used a lot in many G big"
+    },
+    {
+      "start": 502.72,
+      "duration": 3.52,
+      "text": "companies so you don't have to worry if"
+    },
+    {
+      "start": 504.159,
+      "duration": 3.681,
+      "text": "you are a python developer but I hope"
+    },
+    {
+      "start": 506.24,
+      "duration": 3.48,
+      "text": "this video was informative if you have"
+    },
+    {
+      "start": 507.84,
+      "duration": 3.759,
+      "text": "any questions any doubt let me know in"
+    },
+    {
+      "start": 509.72,
+      "duration": 4.08,
+      "text": "the comment section thank you and have a"
+    },
+    {
+      "start": 511.599,
+      "duration": 2.201,
+      "text": "good"
+    },
+    {
+      "start": 519.0,
+      "duration": 3.0,
+      "text": "day"
+    }
+  ]
+}

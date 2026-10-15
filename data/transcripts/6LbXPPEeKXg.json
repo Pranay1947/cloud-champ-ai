@@ -1,0 +1,1081 @@
+{
+  "video": {
+    "id": "6LbXPPEeKXg",
+    "title": "Terraform Count Meta Argument and Count Index with example | count vs for_each demo tutorial",
+    "url": "https://www.youtube.com/watch?v=6LbXPPEeKXg",
+    "duration": 465,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.32,
+      "duration": 3.68,
+      "text": "hello and welcome back so in this video"
+    },
+    {
+      "start": 2.639,
+      "duration": 3.601,
+      "text": "we're going to learn about the meta"
+    },
+    {
+      "start": 4.0,
+      "duration": 3.52,
+      "text": "arguments in terra form and terraform"
+    },
+    {
+      "start": 6.24,
+      "duration": 4.479,
+      "text": "provides you with different meta"
+    },
+    {
+      "start": 7.52,
+      "duration": 5.44,
+      "text": "arguments like depends on count for each"
+    },
+    {
+      "start": 10.719,
+      "duration": 4.401,
+      "text": "and life cycle so meta arguments in"
+    },
+    {
+      "start": 12.96,
+      "duration": 4.239,
+      "text": "terraform are extremely useful and it"
+    },
+    {
+      "start": 15.12,
+      "duration": 4.239,
+      "text": "saves a lot of time for"
+    },
+    {
+      "start": 17.199,
+      "duration": 4.08,
+      "text": "devops and cloud engineers so in this"
+    },
+    {
+      "start": 19.359,
+      "duration": 4.16,
+      "text": "video i am going to teach you about the"
+    },
+    {
+      "start": 21.279,
+      "duration": 4.721,
+      "text": "count meta argument and if you go to the"
+    },
+    {
+      "start": 23.519,
+      "duration": 5.201,
+      "text": "actual documentation by terraform it"
+    },
+    {
+      "start": 26.0,
+      "duration": 5.599,
+      "text": "shows how you can use the count document"
+    },
+    {
+      "start": 28.72,
+      "duration": 4.72,
+      "text": "it has the basic syntax and an example"
+    },
+    {
+      "start": 31.599,
+      "duration": 4.721,
+      "text": "but i am going to show you with a"
+    },
+    {
+      "start": 33.44,
+      "duration": 4.639,
+      "text": "practical example so let's go to the vs"
+    },
+    {
+      "start": 36.32,
+      "duration": 3.84,
+      "text": "code and if you have seen my previous"
+    },
+    {
+      "start": 38.079,
+      "duration": 4.401,
+      "text": "video on how to create amazon ec2"
+    },
+    {
+      "start": 40.16,
+      "duration": 4.719,
+      "text": "instance using terraform so you will"
+    },
+    {
+      "start": 42.48,
+      "duration": 5.28,
+      "text": "know that this block of code is going to"
+    },
+    {
+      "start": 44.879,
+      "duration": 5.041,
+      "text": "create a single ec2 instance right if"
+    },
+    {
+      "start": 47.76,
+      "duration": 5.52,
+      "text": "you're not sure i can run terraform plan"
+    },
+    {
+      "start": 49.92,
+      "duration": 5.92,
+      "text": "now and you can see that this code is"
+    },
+    {
+      "start": 53.28,
+      "duration": 4.48,
+      "text": "going to create a single ec2 instance so"
+    },
+    {
+      "start": 55.84,
+      "duration": 3.84,
+      "text": "let's wait for the plan to come out and"
+    },
+    {
+      "start": 57.76,
+      "duration": 4.319,
+      "text": "as you can see it is going to create"
+    },
+    {
+      "start": 59.68,
+      "duration": 4.08,
+      "text": "only a single ec2 instance so let's say"
+    },
+    {
+      "start": 62.079,
+      "duration": 3.12,
+      "text": "you have a scenario where you want to"
+    },
+    {
+      "start": 63.76,
+      "duration": 4.399,
+      "text": "have"
+    },
+    {
+      "start": 65.199,
+      "duration": 4.481,
+      "text": "10 ec2 instance with same ami and same"
+    },
+    {
+      "start": 68.159,
+      "duration": 2.881,
+      "text": "instance type"
+    },
+    {
+      "start": 69.68,
+      "duration": 2.72,
+      "text": "if you don't know about meta arguments"
+    },
+    {
+      "start": 71.04,
+      "duration": 3.759,
+      "text": "what you will do is you are going to"
+    },
+    {
+      "start": 72.4,
+      "duration": 4.96,
+      "text": "copy this code and you're going to paste"
+    },
+    {
+      "start": 74.799,
+      "duration": 5.601,
+      "text": "it 10 times right 10 times i'm going to"
+    },
+    {
+      "start": 77.36,
+      "duration": 5.04,
+      "text": "do this 10 times so if i do this 10"
+    },
+    {
+      "start": 80.4,
+      "duration": 3.68,
+      "text": "times i have to also make changes to the"
+    },
+    {
+      "start": 82.4,
+      "duration": 3.2,
+      "text": "name of the"
+    },
+    {
+      "start": 84.08,
+      "duration": 4.399,
+      "text": "resource type so the first is going to"
+    },
+    {
+      "start": 85.6,
+      "duration": 5.839,
+      "text": "be web and then i have to do it web one"
+    },
+    {
+      "start": 88.479,
+      "duration": 4.96,
+      "text": "web two and web three"
+    },
+    {
+      "start": 91.439,
+      "duration": 4.881,
+      "text": "web four"
+    },
+    {
+      "start": 93.439,
+      "duration": 5.121,
+      "text": "and so on now if i save it should create"
+    },
+    {
+      "start": 96.32,
+      "duration": 4.24,
+      "text": "zero one two three and four five"
+    },
+    {
+      "start": 98.56,
+      "duration": 4.16,
+      "text": "instances right so if i run terraform"
+    },
+    {
+      "start": 100.56,
+      "duration": 5.519,
+      "text": "plan now i should see that five"
+    },
+    {
+      "start": 102.72,
+      "duration": 5.439,
+      "text": "instances are going to be created"
+    },
+    {
+      "start": 106.079,
+      "duration": 3.921,
+      "text": "so if i want to have more instances then"
+    },
+    {
+      "start": 108.159,
+      "duration": 4.32,
+      "text": "i have to do it 10 times if i want 50"
+    },
+    {
+      "start": 110.0,
+      "duration": 4.399,
+      "text": "instances i have to do 50 times and that"
+    },
+    {
+      "start": 112.479,
+      "duration": 3.761,
+      "text": "is a lot of work right so if you see"
+    },
+    {
+      "start": 114.399,
+      "duration": 4.32,
+      "text": "here in the plan it says that the five"
+    },
+    {
+      "start": 116.24,
+      "duration": 4.64,
+      "text": "instances are going to be created right"
+    },
+    {
+      "start": 118.719,
+      "duration": 4.241,
+      "text": "so if i don't want to repeat my task"
+    },
+    {
+      "start": 120.88,
+      "duration": 4.0,
+      "text": "what i will do is i will use the count"
+    },
+    {
+      "start": 122.96,
+      "duration": 3.92,
+      "text": "meta argument which is very very very"
+    },
+    {
+      "start": 124.88,
+      "duration": 5.04,
+      "text": "useful and i use it a lot so i'm going"
+    },
+    {
+      "start": 126.88,
+      "duration": 4.32,
+      "text": "to remove all of this code right now"
+    },
+    {
+      "start": 129.92,
+      "duration": 2.48,
+      "text": "and"
+    },
+    {
+      "start": 131.2,
+      "duration": 3.679,
+      "text": "remove it"
+    },
+    {
+      "start": 132.4,
+      "duration": 4.479,
+      "text": "and save it now so"
+    },
+    {
+      "start": 134.879,
+      "duration": 4.961,
+      "text": "count to use count you have to type in"
+    },
+    {
+      "start": 136.879,
+      "duration": 5.44,
+      "text": "the count equals to how many resources"
+    },
+    {
+      "start": 139.84,
+      "duration": 4.56,
+      "text": "do you want so i want let's say five"
+    },
+    {
+      "start": 142.319,
+      "duration": 4.721,
+      "text": "resources so i'm going to put in count"
+    },
+    {
+      "start": 144.4,
+      "duration": 5.76,
+      "text": "equals to five and save it now if i run"
+    },
+    {
+      "start": 147.04,
+      "duration": 5.68,
+      "text": "the reform plan it should show that five"
+    },
+    {
+      "start": 150.16,
+      "duration": 4.159,
+      "text": "instances are going to be created"
+    },
+    {
+      "start": 152.72,
+      "duration": 3.04,
+      "text": "so we will wait and it says that the"
+    },
+    {
+      "start": 154.319,
+      "duration": 3.2,
+      "text": "five instances are going to be created"
+    },
+    {
+      "start": 155.76,
+      "duration": 2.8,
+      "text": "so if you scroll up here"
+    },
+    {
+      "start": 157.519,
+      "duration": 3.761,
+      "text": "in the"
+    },
+    {
+      "start": 158.56,
+      "duration": 4.0,
+      "text": "plan you can see that the last instances"
+    },
+    {
+      "start": 161.28,
+      "duration": 4.0,
+      "text": "is named as"
+    },
+    {
+      "start": 162.56,
+      "duration": 5.679,
+      "text": "web 4 right the index to the last"
+    },
+    {
+      "start": 165.28,
+      "duration": 3.92,
+      "text": "instance is going to be 4 then will be 3"
+    },
+    {
+      "start": 168.239,
+      "duration": 3.921,
+      "text": "2"
+    },
+    {
+      "start": 169.2,
+      "duration": 5.52,
+      "text": "one and lastly it will be"
+    },
+    {
+      "start": 172.16,
+      "duration": 4.4,
+      "text": "zero right so the first instance is zero"
+    },
+    {
+      "start": 174.72,
+      "duration": 4.239,
+      "text": "then one then two then three then four"
+    },
+    {
+      "start": 176.56,
+      "duration": 3.679,
+      "text": "right so now we have we know that the"
+    },
+    {
+      "start": 178.959,
+      "duration": 4.241,
+      "text": "five inserts are going to be created"
+    },
+    {
+      "start": 180.239,
+      "duration": 4.321,
+      "text": "let's apply it to see it in the console"
+    },
+    {
+      "start": 183.2,
+      "duration": 3.84,
+      "text": "so i'm going to run terraform apply"
+    },
+    {
+      "start": 184.56,
+      "duration": 4.959,
+      "text": "hyphen auto hyphen approve if i go to"
+    },
+    {
+      "start": 187.04,
+      "duration": 4.16,
+      "text": "the console here and i do refresh this"
+    },
+    {
+      "start": 189.519,
+      "duration": 3.601,
+      "text": "these are the previously created so i"
+    },
+    {
+      "start": 191.2,
+      "duration": 3.679,
+      "text": "don't have any running instances all of"
+    },
+    {
+      "start": 193.12,
+      "duration": 3.6,
+      "text": "these up at the previous run so i'm"
+    },
+    {
+      "start": 194.879,
+      "duration": 4.0,
+      "text": "going to filter this for running instant"
+    },
+    {
+      "start": 196.72,
+      "duration": 3.76,
+      "text": "state running and now i don't see any"
+    },
+    {
+      "start": 198.879,
+      "duration": 4.64,
+      "text": "because the instances are going to be"
+    },
+    {
+      "start": 200.48,
+      "duration": 5.679,
+      "text": "created now so that it is creating 0 1 2"
+    },
+    {
+      "start": 203.519,
+      "duration": 4.241,
+      "text": "3 and 4 so five instances are created"
+    },
+    {
+      "start": 206.159,
+      "duration": 3.601,
+      "text": "using the meta argument so you don't"
+    },
+    {
+      "start": 207.76,
+      "duration": 3.92,
+      "text": "have to repeat this block of code five"
+    },
+    {
+      "start": 209.76,
+      "duration": 3.759,
+      "text": "times you can just put in the account"
+    },
+    {
+      "start": 211.68,
+      "duration": 3.279,
+      "text": "argument and it says that the apply has"
+    },
+    {
+      "start": 213.519,
+      "duration": 2.481,
+      "text": "completed and the four resources are"
+    },
+    {
+      "start": 214.959,
+      "duration": 3.2,
+      "text": "created"
+    },
+    {
+      "start": 216.0,
+      "duration": 4.56,
+      "text": "so if i refresh this you can see that"
+    },
+    {
+      "start": 218.159,
+      "duration": 4.561,
+      "text": "the five instances are created but they"
+    },
+    {
+      "start": 220.56,
+      "duration": 4.0,
+      "text": "don't have any tags and"
+    },
+    {
+      "start": 222.72,
+      "duration": 3.68,
+      "text": "i cannot differentiate"
+    },
+    {
+      "start": 224.56,
+      "duration": 4.72,
+      "text": "all of them so right so i go back to the"
+    },
+    {
+      "start": 226.4,
+      "duration": 5.0,
+      "text": "account to the actual documentation and"
+    },
+    {
+      "start": 229.28,
+      "duration": 4.959,
+      "text": "you can see that it is referring to"
+    },
+    {
+      "start": 231.4,
+      "duration": 4.039,
+      "text": "count.index so using this count.index"
+    },
+    {
+      "start": 234.239,
+      "duration": 3.2,
+      "text": "you can name"
+    },
+    {
+      "start": 235.439,
+      "duration": 4.481,
+      "text": "your instances you can give names to"
+    },
+    {
+      "start": 237.439,
+      "duration": 5.281,
+      "text": "them so let's try to use it and i'm"
+    },
+    {
+      "start": 239.92,
+      "duration": 5.92,
+      "text": "going to give tags to this instances so"
+    },
+    {
+      "start": 242.72,
+      "duration": 4.56,
+      "text": "i'm going to use tags equals to"
+    },
+    {
+      "start": 245.84,
+      "duration": 2.88,
+      "text": "so name"
+    },
+    {
+      "start": 247.28,
+      "duration": 3.44,
+      "text": "is going to be"
+    },
+    {
+      "start": 248.72,
+      "duration": 4.079,
+      "text": "let's say let's give each of the"
+    },
+    {
+      "start": 250.72,
+      "duration": 4.0,
+      "text": "instance like instance 1 instance 2"
+    },
+    {
+      "start": 252.799,
+      "duration": 3.84,
+      "text": "instance three instance four so i'm"
+    },
+    {
+      "start": 254.72,
+      "duration": 3.199,
+      "text": "going to put this instance"
+    },
+    {
+      "start": 256.639,
+      "duration": 4.961,
+      "text": "and"
+    },
+    {
+      "start": 257.919,
+      "duration": 6.481,
+      "text": "count dot index so it will be count"
+    },
+    {
+      "start": 261.6,
+      "duration": 2.8,
+      "text": "dot index"
+    },
+    {
+      "start": 264.639,
+      "duration": 3.84,
+      "text": "and save this so now"
+    },
+    {
+      "start": 266.8,
+      "duration": 3.119,
+      "text": "it should change the instance and put in"
+    },
+    {
+      "start": 268.479,
+      "duration": 3.921,
+      "text": "the tags for them so i'm going to run"
+    },
+    {
+      "start": 269.919,
+      "duration": 4.72,
+      "text": "terraform plan to see actually the tags"
+    },
+    {
+      "start": 272.4,
+      "duration": 4.48,
+      "text": "are going to be created or not"
+    },
+    {
+      "start": 274.639,
+      "duration": 6.161,
+      "text": "so let's wait and if you see it is going"
+    },
+    {
+      "start": 276.88,
+      "duration": 6.0,
+      "text": "to refresh because it is already created"
+    },
+    {
+      "start": 280.8,
+      "duration": 3.839,
+      "text": "and it says that the five instances are"
+    },
+    {
+      "start": 282.88,
+      "duration": 3.12,
+      "text": "going to be changed that means the tags"
+    },
+    {
+      "start": 284.639,
+      "duration": 2.881,
+      "text": "are going to be added to them so the"
+    },
+    {
+      "start": 286.0,
+      "duration": 2.32,
+      "text": "last instance is going to be instance"
+    },
+    {
+      "start": 287.52,
+      "duration": 4.56,
+      "text": "four"
+    },
+    {
+      "start": 288.32,
+      "duration": 5.599,
+      "text": "and instance three two one and zero"
+    },
+    {
+      "start": 292.08,
+      "duration": 3.52,
+      "text": "right so the count dot index is going to"
+    },
+    {
+      "start": 293.919,
+      "duration": 3.361,
+      "text": "provide the index to all of the"
+    },
+    {
+      "start": 295.6,
+      "duration": 4.64,
+      "text": "instances so the first is going to be"
+    },
+    {
+      "start": 297.28,
+      "duration": 5.359,
+      "text": "instant 0 1 2 3 4 so let's"
+    },
+    {
+      "start": 300.24,
+      "duration": 4.72,
+      "text": "terraform apply this to see actually on"
+    },
+    {
+      "start": 302.639,
+      "duration": 3.041,
+      "text": "the console so now i don't have any tags"
+    },
+    {
+      "start": 304.96,
+      "duration": 2.56,
+      "text": "here"
+    },
+    {
+      "start": 305.68,
+      "duration": 4.959,
+      "text": "and once it is going to be once it is"
+    },
+    {
+      "start": 307.52,
+      "duration": 4.32,
+      "text": "created we should see that the tags"
+    },
+    {
+      "start": 310.639,
+      "duration": 3.28,
+      "text": "are added"
+    },
+    {
+      "start": 311.84,
+      "duration": 4.48,
+      "text": "so you can use count dot index to"
+    },
+    {
+      "start": 313.919,
+      "duration": 4.801,
+      "text": "provide indexes to them and you should"
+    },
+    {
+      "start": 316.32,
+      "duration": 5.28,
+      "text": "know that the index always start with"
+    },
+    {
+      "start": 318.72,
+      "duration": 4.0,
+      "text": "the zero so it always starts with zero"
+    },
+    {
+      "start": 321.6,
+      "duration": 3.52,
+      "text": "and it goes"
+    },
+    {
+      "start": 322.72,
+      "duration": 4.16,
+      "text": "from 0 to 1 2 3 for how many instances"
+    },
+    {
+      "start": 325.12,
+      "duration": 3.68,
+      "text": "or resources you want to be created"
+    },
+    {
+      "start": 326.88,
+      "duration": 4.0,
+      "text": "using the countment argument so it says"
+    },
+    {
+      "start": 328.8,
+      "duration": 4.399,
+      "text": "that the apply has been completed and if"
+    },
+    {
+      "start": 330.88,
+      "duration": 4.72,
+      "text": "i go back to the console and i refresh"
+    },
+    {
+      "start": 333.199,
+      "duration": 4.881,
+      "text": "this i should see that the tags are"
+    },
+    {
+      "start": 335.6,
+      "duration": 4.72,
+      "text": "added so it is 0 1 2 three four so this"
+    },
+    {
+      "start": 338.08,
+      "duration": 4.08,
+      "text": "is how you can use count uh meta"
+    },
+    {
+      "start": 340.32,
+      "duration": 3.84,
+      "text": "argument to create as many resource as"
+    },
+    {
+      "start": 342.16,
+      "duration": 4.72,
+      "text": "you want and it is not limited to five"
+    },
+    {
+      "start": 344.16,
+      "duration": 4.8,
+      "text": "or ten i can create fifty or five"
+    },
+    {
+      "start": 346.88,
+      "duration": 3.599,
+      "text": "hundred as many results as i want and"
+    },
+    {
+      "start": 348.96,
+      "duration": 3.76,
+      "text": "but just reminder just remember that"
+    },
+    {
+      "start": 350.479,
+      "duration": 4.321,
+      "text": "you're going to be charged for this so"
+    },
+    {
+      "start": 352.72,
+      "duration": 4.72,
+      "text": "if i run terraform plan i should see"
+    },
+    {
+      "start": 354.8,
+      "duration": 5.679,
+      "text": "that 45 more instances should be added"
+    },
+    {
+      "start": 357.44,
+      "duration": 4.879,
+      "text": "because five are already created and"
+    },
+    {
+      "start": 360.479,
+      "duration": 4.72,
+      "text": "let's wait and see"
+    },
+    {
+      "start": 362.319,
+      "duration": 5.281,
+      "text": "the reform plan so it says the 45"
+    },
+    {
+      "start": 365.199,
+      "duration": 4.481,
+      "text": "instances are going to be added so using"
+    },
+    {
+      "start": 367.6,
+      "duration": 4.4,
+      "text": "just this meta argument you can re"
+    },
+    {
+      "start": 369.68,
+      "duration": 4.239,
+      "text": "create as many resource as you want you"
+    },
+    {
+      "start": 372.0,
+      "duration": 3.6,
+      "text": "don't have to copy the code"
+    },
+    {
+      "start": 373.919,
+      "duration": 4.081,
+      "text": "repetitively you don't have to copy the"
+    },
+    {
+      "start": 375.6,
+      "duration": 5.599,
+      "text": "code every time and you can see it"
+    },
+    {
+      "start": 378.0,
+      "duration": 6.08,
+      "text": "should also have the tags so the last"
+    },
+    {
+      "start": 381.199,
+      "duration": 5.84,
+      "text": "instance has the tag 49 so"
+    },
+    {
+      "start": 384.08,
+      "duration": 4.48,
+      "text": "second last will be 48 47 46 and so on"
+    },
+    {
+      "start": 387.039,
+      "duration": 3.841,
+      "text": "so using count with argument you can"
+    },
+    {
+      "start": 388.56,
+      "duration": 4.32,
+      "text": "create as many resource as you want and"
+    },
+    {
+      "start": 390.88,
+      "duration": 4.319,
+      "text": "this is not limited to only aws instance"
+    },
+    {
+      "start": 392.88,
+      "duration": 4.48,
+      "text": "i've also used it in creating vpcs and"
+    },
+    {
+      "start": 395.199,
+      "duration": 3.601,
+      "text": "subnet so this is my code and i'm using"
+    },
+    {
+      "start": 397.36,
+      "duration": 3.92,
+      "text": "the count"
+    },
+    {
+      "start": 398.8,
+      "duration": 4.88,
+      "text": "to create three subnets to create three"
+    },
+    {
+      "start": 401.28,
+      "duration": 5.84,
+      "text": "subnets and i'm giving the cider block"
+    },
+    {
+      "start": 403.68,
+      "duration": 5.2,
+      "text": "as 10.0 dot count index so the first"
+    },
+    {
+      "start": 407.12,
+      "duration": 4.76,
+      "text": "update is going to be is going to have"
+    },
+    {
+      "start": 408.88,
+      "duration": 3.0,
+      "text": "10.0.0.0.24"
+    },
+    {
+      "start": 412.4,
+      "duration": 4.519,
+      "text": "and this sec second subnet is going to"
+    },
+    {
+      "start": 414.24,
+      "duration": 5.12,
+      "text": "have a cider block of"
+    },
+    {
+      "start": 416.919,
+      "duration": 5.921,
+      "text": "10.0.1.0 and then the last subnet is"
+    },
+    {
+      "start": 419.36,
+      "duration": 3.48,
+      "text": "going to have 10.0.2"
+    },
+    {
+      "start": 422.96,
+      "duration": 4.72,
+      "text": "24. right if you're using meta argument"
+    },
+    {
+      "start": 425.52,
+      "duration": 3.519,
+      "text": "count and for each you might be confused"
+    },
+    {
+      "start": 427.68,
+      "duration": 3.12,
+      "text": "as when to use"
+    },
+    {
+      "start": 429.039,
+      "duration": 3.681,
+      "text": "for each and when to use count so"
+    },
+    {
+      "start": 430.8,
+      "duration": 3.839,
+      "text": "whenever you want to have the same"
+    },
+    {
+      "start": 432.72,
+      "duration": 3.84,
+      "text": "settings likes you want to have same ami"
+    },
+    {
+      "start": 434.639,
+      "duration": 3.521,
+      "text": "and same instance type so you want to"
+    },
+    {
+      "start": 436.56,
+      "duration": 3.6,
+      "text": "have same mmi and see any means it's"
+    },
+    {
+      "start": 438.16,
+      "duration": 3.92,
+      "text": "typed for all the instance you can use"
+    },
+    {
+      "start": 440.16,
+      "duration": 3.84,
+      "text": "count but if you want to have different"
+    },
+    {
+      "start": 442.08,
+      "duration": 4.32,
+      "text": "you can use for each and i'm going to"
+    },
+    {
+      "start": 444.0,
+      "duration": 4.24,
+      "text": "teach you for each and depends on and"
+    },
+    {
+      "start": 446.4,
+      "duration": 2.88,
+      "text": "life cycle my argument in the upcoming"
+    },
+    {
+      "start": 448.24,
+      "duration": 3.679,
+      "text": "videos"
+    },
+    {
+      "start": 449.28,
+      "duration": 5.199,
+      "text": "so if you have learned how to use count"
+    },
+    {
+      "start": 451.919,
+      "duration": 4.161,
+      "text": "meta argument please like this video and"
+    },
+    {
+      "start": 454.479,
+      "duration": 4.0,
+      "text": "subscribe to this channel if you have"
+    },
+    {
+      "start": 456.08,
+      "duration": 4.239,
+      "text": "any doubts or any questions if you want"
+    },
+    {
+      "start": 458.479,
+      "duration": 4.0,
+      "text": "me to cover any other topic you can let"
+    },
+    {
+      "start": 460.319,
+      "duration": 6.401,
+      "text": "me know in the comments section and i"
+    },
+    {
+      "start": 462.479,
+      "duration": 4.241,
+      "text": "hope you have a good day thank you"
+    }
+  ]
+}

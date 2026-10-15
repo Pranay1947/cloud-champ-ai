@@ -1,0 +1,1706 @@
+{
+  "video": {
+    "id": "67MD9Obl6vk",
+    "title": "AWS IAM Service Tutorial: What is Identity Access Management ? | IAM Users, Groups, Roles, Policies",
+    "url": "https://www.youtube.com/watch?v=67MD9Obl6vk",
+    "duration": 803,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.14,
+      "duration": 3.38,
+      "text": "[Music]"
+    },
+    {
+      "start": 0.799,
+      "duration": 5.52,
+      "text": "welcome to cloud champ in this video we"
+    },
+    {
+      "start": 3.52,
+      "duration": 6.159,
+      "text": "are going to learn about aws identity"
+    },
+    {
+      "start": 6.319,
+      "duration": 6.161,
+      "text": "and access management service"
+    },
+    {
+      "start": 9.679,
+      "duration": 4.401,
+      "text": "topics covered in this video are what is"
+    },
+    {
+      "start": 12.48,
+      "duration": 4.799,
+      "text": "im service"
+    },
+    {
+      "start": 14.08,
+      "duration": 6.0,
+      "text": "what are the different components of iam"
+    },
+    {
+      "start": 17.279,
+      "duration": 5.84,
+      "text": "what are im users groups"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.959,
+      "text": "im roles and the policies"
+    },
+    {
+      "start": 23.119,
+      "duration": 2.961,
+      "text": "what are different features of iem"
+    },
+    {
+      "start": 25.039,
+      "duration": 3.921,
+      "text": "service"
+    },
+    {
+      "start": 26.08,
+      "duration": 5.199,
+      "text": "and lastly we will do the hands-on lab"
+    },
+    {
+      "start": 28.96,
+      "duration": 5.2,
+      "text": "for the iem service"
+    },
+    {
+      "start": 31.279,
+      "duration": 5.841,
+      "text": "so according to the definition"
+    },
+    {
+      "start": 34.16,
+      "duration": 5.44,
+      "text": "aws identity and access management is a"
+    },
+    {
+      "start": 37.12,
+      "duration": 5.52,
+      "text": "web service that enables amazon web"
+    },
+    {
+      "start": 39.6,
+      "duration": 5.52,
+      "text": "services customers to manage users and"
+    },
+    {
+      "start": 42.64,
+      "duration": 5.759,
+      "text": "user permissions in aws"
+    },
+    {
+      "start": 45.12,
+      "duration": 5.2,
+      "text": "what this means is you can set up users"
+    },
+    {
+      "start": 48.399,
+      "duration": 3.921,
+      "text": "groups and roles"
+    },
+    {
+      "start": 50.32,
+      "duration": 4.719,
+      "text": "and attach policies to them to give"
+    },
+    {
+      "start": 52.32,
+      "duration": 4.8,
+      "text": "permissions to each of them"
+    },
+    {
+      "start": 55.039,
+      "duration": 3.761,
+      "text": "so let's"
+    },
+    {
+      "start": 57.12,
+      "duration": 4.32,
+      "text": "take a look on the"
+    },
+    {
+      "start": 58.8,
+      "duration": 4.079,
+      "text": "im dashboard i am here in my aws"
+    },
+    {
+      "start": 61.44,
+      "duration": 4.56,
+      "text": "management console"
+    },
+    {
+      "start": 62.879,
+      "duration": 4.401,
+      "text": "you can search for iem by typing here in"
+    },
+    {
+      "start": 66.0,
+      "duration": 4.96,
+      "text": "the search bar"
+    },
+    {
+      "start": 67.28,
+      "duration": 3.68,
+      "text": "so this is the im service"
+    },
+    {
+      "start": 71.36,
+      "duration": 3.119,
+      "text": "you can see"
+    },
+    {
+      "start": 72.56,
+      "duration": 4.64,
+      "text": "there are user groups"
+    },
+    {
+      "start": 74.479,
+      "duration": 5.521,
+      "text": "users roles and policies"
+    },
+    {
+      "start": 77.2,
+      "duration": 4.88,
+      "text": "let's take a look and what"
+    },
+    {
+      "start": 80.0,
+      "duration": 3.759,
+      "text": "as you can see i have two"
+    },
+    {
+      "start": 82.08,
+      "duration": 3.92,
+      "text": "groups in the"
+    },
+    {
+      "start": 83.759,
+      "duration": 5.121,
+      "text": "group section user groups one is"
+    },
+    {
+      "start": 86.0,
+      "duration": 5.759,
+      "text": "developer and one is light sale"
+    },
+    {
+      "start": 88.88,
+      "duration": 4.559,
+      "text": "in the user section i have three users"
+    },
+    {
+      "start": 91.759,
+      "duration": 3.841,
+      "text": "this is the one i'm currently using"
+    },
+    {
+      "start": 93.439,
+      "duration": 4.161,
+      "text": "right now"
+    },
+    {
+      "start": 95.6,
+      "duration": 3.92,
+      "text": "and"
+    },
+    {
+      "start": 97.6,
+      "duration": 4.72,
+      "text": "in the role section as you can see there"
+    },
+    {
+      "start": 99.52,
+      "duration": 4.8,
+      "text": "are many roles provided by aws"
+    },
+    {
+      "start": 102.32,
+      "duration": 3.839,
+      "text": "to us which you can"
+    },
+    {
+      "start": 104.32,
+      "duration": 4.479,
+      "text": "use whenever you want"
+    },
+    {
+      "start": 106.159,
+      "duration": 3.681,
+      "text": "and these are the policies let's learn"
+    },
+    {
+      "start": 108.799,
+      "duration": 2.241,
+      "text": "each"
+    },
+    {
+      "start": 109.84,
+      "duration": 2.959,
+      "text": "what are the"
+    },
+    {
+      "start": 111.04,
+      "duration": 3.92,
+      "text": "components here"
+    },
+    {
+      "start": 112.799,
+      "duration": 4.561,
+      "text": "one more thing as you can see"
+    },
+    {
+      "start": 114.96,
+      "duration": 5.68,
+      "text": "there is no option to select"
+    },
+    {
+      "start": 117.36,
+      "duration": 6.24,
+      "text": "any region here because im is a global"
+    },
+    {
+      "start": 120.64,
+      "duration": 5.36,
+      "text": "service its not a regional service"
+    },
+    {
+      "start": 123.6,
+      "duration": 6.799,
+      "text": "iem is a global service so lets learn"
+    },
+    {
+      "start": 126.0,
+      "duration": 4.399,
+      "text": "about users what are the iem user"
+    },
+    {
+      "start": 130.64,
+      "duration": 3.92,
+      "text": "an im user can be a person or any"
+    },
+    {
+      "start": 133.44,
+      "duration": 3.519,
+      "text": "service"
+    },
+    {
+      "start": 134.56,
+      "duration": 5.36,
+      "text": "what this means is as you can see"
+    },
+    {
+      "start": 136.959,
+      "duration": 3.92,
+      "text": "i have im username as lite lets say"
+    },
+    {
+      "start": 139.92,
+      "duration": 2.72,
+      "text": "light"
+    },
+    {
+      "start": 140.879,
+      "duration": 5.281,
+      "text": "and also"
+    },
+    {
+      "start": 142.64,
+      "duration": 6.88,
+      "text": "i have an im username as cloud ninja"
+    },
+    {
+      "start": 146.16,
+      "duration": 5.359,
+      "text": "so this cloud ninja is a developer"
+    },
+    {
+      "start": 149.52,
+      "duration": 5.12,
+      "text": "in my company"
+    },
+    {
+      "start": 151.519,
+      "duration": 7.281,
+      "text": "so if i wanted to create an im user for"
+    },
+    {
+      "start": 154.64,
+      "duration": 6.16,
+      "text": "someone who is a developer i can create"
+    },
+    {
+      "start": 158.8,
+      "duration": 4.079,
+      "text": "user from"
+    },
+    {
+      "start": 160.8,
+      "duration": 5.12,
+      "text": "this section"
+    },
+    {
+      "start": 162.879,
+      "duration": 5.36,
+      "text": "you can have up to 5000 users per aws"
+    },
+    {
+      "start": 165.92,
+      "duration": 5.44,
+      "text": "account"
+    },
+    {
+      "start": 168.239,
+      "duration": 5.681,
+      "text": "by default users cannot access anything"
+    },
+    {
+      "start": 171.36,
+      "duration": 4.0,
+      "text": "so whenever you create a new user no"
+    },
+    {
+      "start": 173.92,
+      "duration": 3.12,
+      "text": "permissions are"
+    },
+    {
+      "start": 175.36,
+      "duration": 4.159,
+      "text": "attached to them you have to provide"
+    },
+    {
+      "start": 177.04,
+      "duration": 5.44,
+      "text": "permissions as you can see in this"
+    },
+    {
+      "start": 179.519,
+      "duration": 5.36,
+      "text": "section i have attached"
+    },
+    {
+      "start": 182.48,
+      "duration": 5.28,
+      "text": "a permission policy two policies are"
+    },
+    {
+      "start": 184.879,
+      "duration": 5.36,
+      "text": "applied to this which is the user can"
+    },
+    {
+      "start": 187.76,
+      "duration": 4.8,
+      "text": "change password and user can access"
+    },
+    {
+      "start": 190.239,
+      "duration": 4.481,
+      "text": "light sales service"
+    },
+    {
+      "start": 192.56,
+      "duration": 4.72,
+      "text": "so you have to attach the policy by"
+    },
+    {
+      "start": 194.72,
+      "duration": 4.32,
+      "text": "default users cannot access anything"
+    },
+    {
+      "start": 197.28,
+      "duration": 4.16,
+      "text": "the every"
+    },
+    {
+      "start": 199.04,
+      "duration": 3.76,
+      "text": "iem user has access key and secret"
+    },
+    {
+      "start": 201.44,
+      "duration": 3.76,
+      "text": "access key"
+    },
+    {
+      "start": 202.8,
+      "duration": 5.12,
+      "text": "so whenever you create an iem user you"
+    },
+    {
+      "start": 205.2,
+      "duration": 5.52,
+      "text": "have to set a password and a username"
+    },
+    {
+      "start": 207.92,
+      "duration": 5.92,
+      "text": "also you get an access key id and a"
+    },
+    {
+      "start": 210.72,
+      "duration": 3.12,
+      "text": "secret key access key"
+    },
+    {
+      "start": 214.159,
+      "duration": 4.561,
+      "text": "please note that you don't have to share"
+    },
+    {
+      "start": 216.08,
+      "duration": 5.12,
+      "text": "or expose your access key with anyone"
+    },
+    {
+      "start": 218.72,
+      "duration": 5.36,
+      "text": "because if a hacker gets hold of your"
+    },
+    {
+      "start": 221.2,
+      "duration": 5.28,
+      "text": "access keys and secret access keys you"
+    },
+    {
+      "start": 224.08,
+      "duration": 5.519,
+      "text": "can get in trouble and get a large huge"
+    },
+    {
+      "start": 226.48,
+      "duration": 6.24,
+      "text": "bill in your aws account so never share"
+    },
+    {
+      "start": 229.599,
+      "duration": 5.041,
+      "text": "your access key or secret access key"
+    },
+    {
+      "start": 232.72,
+      "duration": 4.079,
+      "text": "whenever you create an account you get"
+    },
+    {
+      "start": 234.64,
+      "duration": 3.04,
+      "text": "this once you have to save it keep it"
+    },
+    {
+      "start": 236.799,
+      "duration": 2.08,
+      "text": "safe"
+    },
+    {
+      "start": 237.68,
+      "duration": 3.52,
+      "text": "so"
+    },
+    {
+      "start": 238.879,
+      "duration": 4.801,
+      "text": "the next topic is root account"
+    },
+    {
+      "start": 241.2,
+      "duration": 4.239,
+      "text": "when you first create your aws account"
+    },
+    {
+      "start": 243.68,
+      "duration": 4.479,
+      "text": "with your email id"
+    },
+    {
+      "start": 245.439,
+      "duration": 3.44,
+      "text": "you create you have a root account"
+    },
+    {
+      "start": 248.159,
+      "duration": 4.08,
+      "text": "so"
+    },
+    {
+      "start": 248.879,
+      "duration": 3.36,
+      "text": "this is an iem account"
+    },
+    {
+      "start": 252.56,
+      "duration": 3.679,
+      "text": "when you first create your"
+    },
+    {
+      "start": 254.4,
+      "duration": 3.6,
+      "text": "aws account"
+    },
+    {
+      "start": 256.239,
+      "duration": 3.52,
+      "text": "with your email id"
+    },
+    {
+      "start": 258.0,
+      "duration": 3.759,
+      "text": "that's the root account"
+    },
+    {
+      "start": 259.759,
+      "duration": 4.081,
+      "text": "i call root account as a god mode"
+    },
+    {
+      "start": 261.759,
+      "duration": 4.641,
+      "text": "because root account has"
+    },
+    {
+      "start": 263.84,
+      "duration": 4.72,
+      "text": "full administrative permissions and this"
+    },
+    {
+      "start": 266.4,
+      "duration": 4.64,
+      "text": "cannot be restricted so the best"
+    },
+    {
+      "start": 268.56,
+      "duration": 4.32,
+      "text": "practices while using root account is"
+    },
+    {
+      "start": 271.04,
+      "duration": 4.879,
+      "text": "not to use root account"
+    },
+    {
+      "start": 272.88,
+      "duration": 5.12,
+      "text": "rather create an iem account with"
+    },
+    {
+      "start": 275.919,
+      "duration": 4.081,
+      "text": "administrative permissions"
+    },
+    {
+      "start": 278.0,
+      "duration": 5.44,
+      "text": "so you have you"
+    },
+    {
+      "start": 280.0,
+      "duration": 6.16,
+      "text": "aw suggest you not to use your root"
+    },
+    {
+      "start": 283.44,
+      "duration": 3.92,
+      "text": "account because it has privileges and"
+    },
+    {
+      "start": 286.16,
+      "duration": 3.36,
+      "text": "you can do"
+    },
+    {
+      "start": 287.36,
+      "duration": 5.36,
+      "text": "many things without any restrictions so"
+    },
+    {
+      "start": 289.52,
+      "duration": 6.0,
+      "text": "rather than that you can create a user"
+    },
+    {
+      "start": 292.72,
+      "duration": 4.64,
+      "text": "with administrative permissions so i"
+    },
+    {
+      "start": 295.52,
+      "duration": 5.119,
+      "text": "already have a user"
+    },
+    {
+      "start": 297.36,
+      "duration": 6.399,
+      "text": "this is my user name as nasi which has"
+    },
+    {
+      "start": 300.639,
+      "duration": 5.041,
+      "text": "administrative permissions you can"
+    },
+    {
+      "start": 303.759,
+      "duration": 7.241,
+      "text": "as you can see this is the administrator"
+    },
+    {
+      "start": 305.68,
+      "duration": 5.32,
+      "text": "access permission which has all the"
+    },
+    {
+      "start": 311.199,
+      "duration": 4.161,
+      "text": "administrator access permission the"
+    },
+    {
+      "start": 313.28,
+      "duration": 4.32,
+      "text": "second is you have to enable mfa"
+    },
+    {
+      "start": 315.36,
+      "duration": 5.52,
+      "text": "authentication for the root account we"
+    },
+    {
+      "start": 317.6,
+      "duration": 4.96,
+      "text": "have already enabled it but you can i"
+    },
+    {
+      "start": 320.88,
+      "duration": 3.52,
+      "text": "have already enabled the multi-factor"
+    },
+    {
+      "start": 322.56,
+      "duration": 3.6,
+      "text": "authentication for the root account but"
+    },
+    {
+      "start": 324.4,
+      "duration": 4.079,
+      "text": "not for the"
+    },
+    {
+      "start": 326.16,
+      "duration": 3.84,
+      "text": "im account so we will set it up in the"
+    },
+    {
+      "start": 328.479,
+      "duration": 4.241,
+      "text": "hands-on section"
+    },
+    {
+      "start": 330.0,
+      "duration": 4.96,
+      "text": "whatever mfa is you can"
+    },
+    {
+      "start": 332.72,
+      "duration": 4.8,
+      "text": "secure your account"
+    },
+    {
+      "start": 334.96,
+      "duration": 4.48,
+      "text": "by putting a security code which you get"
+    },
+    {
+      "start": 337.52,
+      "duration": 3.36,
+      "text": "on your mobile phone"
+    },
+    {
+      "start": 339.44,
+      "duration": 3.039,
+      "text": "now you can get this on google"
+    },
+    {
+      "start": 340.88,
+      "duration": 3.36,
+      "text": "authenticator"
+    },
+    {
+      "start": 342.479,
+      "duration": 4.641,
+      "text": "all the procedure for the mfa will be"
+    },
+    {
+      "start": 344.24,
+      "duration": 6.399,
+      "text": "explained you in the next"
+    },
+    {
+      "start": 347.12,
+      "duration": 5.519,
+      "text": "section of the hands-on of im service"
+    },
+    {
+      "start": 350.639,
+      "duration": 4.4,
+      "text": "just remember that this is"
+    },
+    {
+      "start": 352.639,
+      "duration": 4.081,
+      "text": "an extra security provided to keep your"
+    },
+    {
+      "start": 355.039,
+      "duration": 3.841,
+      "text": "account safe"
+    },
+    {
+      "start": 356.72,
+      "duration": 5.36,
+      "text": "and third is do not share your root"
+    },
+    {
+      "start": 358.88,
+      "duration": 6.159,
+      "text": "credentials with anyone"
+    },
+    {
+      "start": 362.08,
+      "duration": 4.64,
+      "text": "im groups groups is a collection of"
+    },
+    {
+      "start": 365.039,
+      "duration": 3.6,
+      "text": "users"
+    },
+    {
+      "start": 366.72,
+      "duration": 4.64,
+      "text": "policies are attached to groups and"
+    },
+    {
+      "start": 368.639,
+      "duration": 5.921,
+      "text": "applied to every user in that group"
+    },
+    {
+      "start": 371.36,
+      "duration": 5.839,
+      "text": "so we have two groups here the first is"
+    },
+    {
+      "start": 374.56,
+      "duration": 3.84,
+      "text": "admins and the second is the developers"
+    },
+    {
+      "start": 377.199,
+      "duration": 3.521,
+      "text": "group"
+    },
+    {
+      "start": 378.4,
+      "duration": 4.88,
+      "text": "we use groups when we want to"
+    },
+    {
+      "start": 380.72,
+      "duration": 3.919,
+      "text": "attach permissions to many users"
+    },
+    {
+      "start": 383.28,
+      "duration": 3.759,
+      "text": "let's say we have"
+    },
+    {
+      "start": 384.639,
+      "duration": 4.56,
+      "text": "40 developers in our company"
+    },
+    {
+      "start": 387.039,
+      "duration": 3.761,
+      "text": "and we want all the developers to have"
+    },
+    {
+      "start": 389.199,
+      "duration": 4.641,
+      "text": "same permission"
+    },
+    {
+      "start": 390.8,
+      "duration": 6.32,
+      "text": "this group has the permission"
+    },
+    {
+      "start": 393.84,
+      "duration": 5.28,
+      "text": "that is amazon rds full access"
+    },
+    {
+      "start": 397.12,
+      "duration": 3.84,
+      "text": "and we have a user"
+    },
+    {
+      "start": 399.12,
+      "duration": 4.88,
+      "text": "cloud ninja"
+    },
+    {
+      "start": 400.96,
+      "duration": 4.959,
+      "text": "let's try to add the"
+    },
+    {
+      "start": 404.0,
+      "duration": 4.24,
+      "text": "user in this group"
+    },
+    {
+      "start": 405.919,
+      "duration": 3.28,
+      "text": "we will select the user and click on add"
+    },
+    {
+      "start": 408.24,
+      "duration": 2.72,
+      "text": "user"
+    },
+    {
+      "start": 409.199,
+      "duration": 4.0,
+      "text": "we will select the user which we want to"
+    },
+    {
+      "start": 410.96,
+      "duration": 5.04,
+      "text": "put in the"
+    },
+    {
+      "start": 413.199,
+      "duration": 5.921,
+      "text": "group now for now if you see there's no"
+    },
+    {
+      "start": 416.0,
+      "duration": 5.12,
+      "text": "role attached to cloud ninja"
+    },
+    {
+      "start": 419.12,
+      "duration": 4.16,
+      "text": "there's no role attached to cloud ninja"
+    },
+    {
+      "start": 421.12,
+      "duration": 3.12,
+      "text": "and it is not in any of the groups no"
+    },
+    {
+      "start": 423.28,
+      "duration": 3.199,
+      "text": "groups"
+    },
+    {
+      "start": 424.24,
+      "duration": 3.519,
+      "text": "so you can add this user to group from"
+    },
+    {
+      "start": 426.479,
+      "duration": 3.041,
+      "text": "here as well"
+    },
+    {
+      "start": 427.759,
+      "duration": 3.361,
+      "text": "click on the"
+    },
+    {
+      "start": 429.52,
+      "duration": 3.2,
+      "text": "user and"
+    },
+    {
+      "start": 431.12,
+      "duration": 2.639,
+      "text": "select the"
+    },
+    {
+      "start": 432.72,
+      "duration": 2.96,
+      "text": "group"
+    },
+    {
+      "start": 433.759,
+      "duration": 3.681,
+      "text": "add to groups"
+    },
+    {
+      "start": 435.68,
+      "duration": 4.0,
+      "text": "now if you see"
+    },
+    {
+      "start": 437.44,
+      "duration": 4.479,
+      "text": "in the for the cloud ninja you'll see"
+    },
+    {
+      "start": 439.68,
+      "duration": 3.919,
+      "text": "the permission as rds"
+    },
+    {
+      "start": 441.919,
+      "duration": 3.521,
+      "text": "so this is how"
+    },
+    {
+      "start": 443.599,
+      "duration": 3.761,
+      "text": "groups work"
+    },
+    {
+      "start": 445.44,
+      "duration": 3.84,
+      "text": "policies are attached to the groups and"
+    },
+    {
+      "start": 447.36,
+      "duration": 4.88,
+      "text": "they are applied to every user in that"
+    },
+    {
+      "start": 449.28,
+      "duration": 6.08,
+      "text": "group best practice is to use groups to"
+    },
+    {
+      "start": 452.24,
+      "duration": 5.2,
+      "text": "assign permissions to user"
+    },
+    {
+      "start": 455.36,
+      "duration": 5.04,
+      "text": "and when assigning a permission you need"
+    },
+    {
+      "start": 457.44,
+      "duration": 5.12,
+      "text": "use the principle of lease privilege"
+    },
+    {
+      "start": 460.4,
+      "duration": 3.919,
+      "text": "means you should only give"
+    },
+    {
+      "start": 462.56,
+      "duration": 4.479,
+      "text": "permissions which are required to the"
+    },
+    {
+      "start": 464.319,
+      "duration": 5.041,
+      "text": "user no unnecessary permission should be"
+    },
+    {
+      "start": 467.039,
+      "duration": 4.72,
+      "text": "given and that's the principle of least"
+    },
+    {
+      "start": 469.36,
+      "duration": 5.519,
+      "text": "privilege"
+    },
+    {
+      "start": 471.759,
+      "duration": 5.84,
+      "text": "the next topic is i am role"
+    },
+    {
+      "start": 474.879,
+      "duration": 5.201,
+      "text": "and i am role is an im identity with"
+    },
+    {
+      "start": 477.599,
+      "duration": 6.0,
+      "text": "specific permission that you can assign"
+    },
+    {
+      "start": 480.08,
+      "duration": 6.08,
+      "text": "to users or services or any application"
+    },
+    {
+      "start": 483.599,
+      "duration": 5.04,
+      "text": "outside aws without using any"
+    },
+    {
+      "start": 486.16,
+      "duration": 4.56,
+      "text": "credentials"
+    },
+    {
+      "start": 488.639,
+      "duration": 3.921,
+      "text": "as you can see in the dashboard there"
+    },
+    {
+      "start": 490.72,
+      "duration": 5.44,
+      "text": "are many rules"
+    },
+    {
+      "start": 492.56,
+      "duration": 6.479,
+      "text": "provided by aws to us using rules we can"
+    },
+    {
+      "start": 496.16,
+      "duration": 5.84,
+      "text": "give permissions to users or any other"
+    },
+    {
+      "start": 499.039,
+      "duration": 5.44,
+      "text": "services in the aws console"
+    },
+    {
+      "start": 502.0,
+      "duration": 5.12,
+      "text": "let's consider one of the role"
+    },
+    {
+      "start": 504.479,
+      "duration": 3.761,
+      "text": "let's consider this role as 3d only"
+    },
+    {
+      "start": 507.12,
+      "duration": 3.84,
+      "text": "access"
+    },
+    {
+      "start": 508.24,
+      "duration": 4.96,
+      "text": "this means the ec2 instance will have a"
+    },
+    {
+      "start": 510.96,
+      "duration": 5.519,
+      "text": "rule to access"
+    },
+    {
+      "start": 513.2,
+      "duration": 6.639,
+      "text": "s3 buckets read s3 buckets and this can"
+    },
+    {
+      "start": 516.479,
+      "duration": 6.161,
+      "text": "be provided to any service or any user"
+    },
+    {
+      "start": 519.839,
+      "duration": 6.241,
+      "text": "or any application outside the ews"
+    },
+    {
+      "start": 522.64,
+      "duration": 5.6,
+      "text": "without using any credentials"
+    },
+    {
+      "start": 526.08,
+      "duration": 4.08,
+      "text": "so the rule does not have standard long"
+    },
+    {
+      "start": 528.24,
+      "duration": 4.96,
+      "text": "term credentials such as password or"
+    },
+    {
+      "start": 530.16,
+      "duration": 5.119,
+      "text": "access key associated with it"
+    },
+    {
+      "start": 533.2,
+      "duration": 4.319,
+      "text": "and when you assume a role it provides"
+    },
+    {
+      "start": 535.279,
+      "duration": 5.281,
+      "text": "you with temporary security credentials"
+    },
+    {
+      "start": 537.519,
+      "duration": 3.041,
+      "text": "for your role session"
+    },
+    {
+      "start": 544.32,
+      "duration": 5.68,
+      "text": "the next is the policies policies are"
+    },
+    {
+      "start": 547.04,
+      "duration": 5.6,
+      "text": "json document that define permissions"
+    },
+    {
+      "start": 550.0,
+      "duration": 3.519,
+      "text": "and can be applied to users groups and"
+    },
+    {
+      "start": 552.64,
+      "duration": 3.36,
+      "text": "roles"
+    },
+    {
+      "start": 553.519,
+      "duration": 4.961,
+      "text": "this is what the policy look like"
+    },
+    {
+      "start": 556.0,
+      "duration": 5.279,
+      "text": "the permission in the policies determine"
+    },
+    {
+      "start": 558.48,
+      "duration": 5.44,
+      "text": "whether the request is allowed or denied"
+    },
+    {
+      "start": 561.279,
+      "duration": 5.601,
+      "text": "so the policies are attached to users"
+    },
+    {
+      "start": 563.92,
+      "duration": 4.96,
+      "text": "groups and the roles defining what they"
+    },
+    {
+      "start": 566.88,
+      "duration": 3.92,
+      "text": "can do and what they cannot"
+    },
+    {
+      "start": 568.88,
+      "duration": 4.24,
+      "text": "in the policies section we can see there"
+    },
+    {
+      "start": 570.8,
+      "duration": 4.96,
+      "text": "are a lot of policies we can create our"
+    },
+    {
+      "start": 573.12,
+      "duration": 6.32,
+      "text": "own or we can use the one provided by"
+    },
+    {
+      "start": 575.76,
+      "duration": 6.32,
+      "text": "aws so this is aws managed and this is"
+    },
+    {
+      "start": 579.44,
+      "duration": 4.16,
+      "text": "customer managed created by me"
+    },
+    {
+      "start": 582.08,
+      "duration": 4.64,
+      "text": "so"
+    },
+    {
+      "start": 583.6,
+      "duration": 4.4,
+      "text": "let's see if what policy this user has"
+    },
+    {
+      "start": 586.72,
+      "duration": 3.28,
+      "text": "as you can see"
+    },
+    {
+      "start": 588.0,
+      "duration": 4.08,
+      "text": "here in the permission section the"
+    },
+    {
+      "start": 590.0,
+      "duration": 4.56,
+      "text": "permission policies we have the"
+    },
+    {
+      "start": 592.08,
+      "duration": 3.439,
+      "text": "administrative access policy"
+    },
+    {
+      "start": 594.56,
+      "duration": 3.76,
+      "text": "and"
+    },
+    {
+      "start": 595.519,
+      "duration": 5.521,
+      "text": "if you click on this you can see this"
+    },
+    {
+      "start": 598.32,
+      "duration": 4.4,
+      "text": "the this is the json document"
+    },
+    {
+      "start": 601.04,
+      "duration": 2.72,
+      "text": "this policy says"
+    },
+    {
+      "start": 602.72,
+      "duration": 4.0,
+      "text": "allow"
+    },
+    {
+      "start": 603.76,
+      "duration": 5.36,
+      "text": "all actions on all the resources so this"
+    },
+    {
+      "start": 606.72,
+      "duration": 4.48,
+      "text": "is the administrative access policy"
+    },
+    {
+      "start": 609.12,
+      "duration": 3.279,
+      "text": "which allows everything on all the"
+    },
+    {
+      "start": 611.2,
+      "duration": 3.84,
+      "text": "resources"
+    },
+    {
+      "start": 612.399,
+      "duration": 6.961,
+      "text": "so this is how the policy look like"
+    },
+    {
+      "start": 615.04,
+      "duration": 7.12,
+      "text": "we have covered im roles policies and"
+    },
+    {
+      "start": 619.36,
+      "duration": 4.64,
+      "text": "users groups now we will learn about the"
+    },
+    {
+      "start": 622.16,
+      "duration": 4.56,
+      "text": "features of iam"
+    },
+    {
+      "start": 624.0,
+      "duration": 5.44,
+      "text": "so using im you can have centralized"
+    },
+    {
+      "start": 626.72,
+      "duration": 5.44,
+      "text": "control of your aws account"
+    },
+    {
+      "start": 629.44,
+      "duration": 5.28,
+      "text": "what this means is you can control"
+    },
+    {
+      "start": 632.16,
+      "duration": 5.44,
+      "text": "creation rotation and cancellation of"
+    },
+    {
+      "start": 634.72,
+      "duration": 4.48,
+      "text": "each user's security credentials you can"
+    },
+    {
+      "start": 637.6,
+      "duration": 2.88,
+      "text": "change them you can create them or"
+    },
+    {
+      "start": 639.2,
+      "duration": 3.759,
+      "text": "rotate them"
+    },
+    {
+      "start": 640.48,
+      "duration": 6.08,
+      "text": "the second is you can share you can have"
+    },
+    {
+      "start": 642.959,
+      "duration": 5.041,
+      "text": "shared access to your aws account users"
+    },
+    {
+      "start": 646.56,
+      "duration": 3.36,
+      "text": "can share the resources for the"
+    },
+    {
+      "start": 648.0,
+      "duration": 3.76,
+      "text": "collaborative project"
+    },
+    {
+      "start": 649.92,
+      "duration": 3.68,
+      "text": "if you have developers"
+    },
+    {
+      "start": 651.76,
+      "duration": 4.079,
+      "text": "and testers"
+    },
+    {
+      "start": 653.6,
+      "duration": 5.12,
+      "text": "so you want them to work on the same"
+    },
+    {
+      "start": 655.839,
+      "duration": 5.361,
+      "text": "project which is uploaded on your aws"
+    },
+    {
+      "start": 658.72,
+      "duration": 5.28,
+      "text": "cloud account so you can use"
+    },
+    {
+      "start": 661.2,
+      "duration": 4.0,
+      "text": "im to have shared access to your aws"
+    },
+    {
+      "start": 664.0,
+      "duration": 3.519,
+      "text": "account"
+    },
+    {
+      "start": 665.2,
+      "duration": 3.52,
+      "text": "the third is granule granular"
+    },
+    {
+      "start": 667.519,
+      "duration": 3.921,
+      "text": "permissions"
+    },
+    {
+      "start": 668.72,
+      "duration": 5.28,
+      "text": "what this means is you can use to set a"
+    },
+    {
+      "start": 671.44,
+      "duration": 3.92,
+      "text": "permission that users can use a"
+    },
+    {
+      "start": 674.0,
+      "duration": 3.92,
+      "text": "particular"
+    },
+    {
+      "start": 675.36,
+      "duration": 4.8,
+      "text": "service but not the other service so you"
+    },
+    {
+      "start": 677.92,
+      "duration": 4.96,
+      "text": "want developers only to access a certain"
+    },
+    {
+      "start": 680.16,
+      "duration": 6.48,
+      "text": "service and a tester to access a certain"
+    },
+    {
+      "start": 682.88,
+      "duration": 6.399,
+      "text": "service you can use it through im"
+    },
+    {
+      "start": 686.64,
+      "duration": 5.28,
+      "text": "the next is identity federation"
+    },
+    {
+      "start": 689.279,
+      "duration": 5.841,
+      "text": "what this means is we can use facebook"
+    },
+    {
+      "start": 691.92,
+      "duration": 5.84,
+      "text": "or active directory or linkedin to login"
+    },
+    {
+      "start": 695.12,
+      "duration": 4.08,
+      "text": "into our aws account rather than using"
+    },
+    {
+      "start": 697.76,
+      "duration": 4.4,
+      "text": "any"
+    },
+    {
+      "start": 699.2,
+      "duration": 6.319,
+      "text": "password or credentials so identity"
+    },
+    {
+      "start": 702.16,
+      "duration": 5.04,
+      "text": "federation is a feature provided in iem"
+    },
+    {
+      "start": 705.519,
+      "duration": 3.841,
+      "text": "the next is the multi-factor"
+    },
+    {
+      "start": 707.2,
+      "duration": 3.6,
+      "text": "authentication which is an extra"
+    },
+    {
+      "start": 709.36,
+      "duration": 3.68,
+      "text": "security"
+    },
+    {
+      "start": 710.8,
+      "duration": 4.8,
+      "text": "by putting a security code along with"
+    },
+    {
+      "start": 713.04,
+      "duration": 4.32,
+      "text": "the password and the username to keep"
+    },
+    {
+      "start": 715.6,
+      "duration": 4.64,
+      "text": "our account secure"
+    },
+    {
+      "start": 717.36,
+      "duration": 6.56,
+      "text": "the next is you can provide temporary"
+    },
+    {
+      "start": 720.24,
+      "duration": 6.32,
+      "text": "access for users devices and services"
+    },
+    {
+      "start": 723.92,
+      "duration": 6.08,
+      "text": "where necessary this can be done using"
+    },
+    {
+      "start": 726.56,
+      "duration": 4.959,
+      "text": "roles or amazon sts service which will"
+    },
+    {
+      "start": 730.0,
+      "duration": 3.279,
+      "text": "be explained in the"
+    },
+    {
+      "start": 731.519,
+      "duration": 5.041,
+      "text": "upcoming sessions"
+    },
+    {
+      "start": 733.279,
+      "duration": 7.36,
+      "text": "the last feature of the iams it suppose"
+    },
+    {
+      "start": 736.56,
+      "duration": 7.519,
+      "text": "it supports pci dss compliance what pci"
+    },
+    {
+      "start": 740.639,
+      "duration": 5.121,
+      "text": "dss compliance is it stands for payment"
+    },
+    {
+      "start": 744.079,
+      "duration": 4.161,
+      "text": "card industry"
+    },
+    {
+      "start": 745.76,
+      "duration": 4.96,
+      "text": "data security standard"
+    },
+    {
+      "start": 748.24,
+      "duration": 5.2,
+      "text": "and it is a compliance framework if you"
+    },
+    {
+      "start": 750.72,
+      "duration": 4.96,
+      "text": "are taking credit card information then"
+    },
+    {
+      "start": 753.44,
+      "duration": 3.399,
+      "text": "you should have this compliance"
+    },
+    {
+      "start": 755.68,
+      "duration": 4.399,
+      "text": "so this"
+    },
+    {
+      "start": 756.839,
+      "duration": 6.601,
+      "text": "was the overview of"
+    },
+    {
+      "start": 760.079,
+      "duration": 7.121,
+      "text": "aws iam we covered aws im"
+    },
+    {
+      "start": 763.44,
+      "duration": 4.639,
+      "text": "users groups roles and policies we also"
+    },
+    {
+      "start": 767.2,
+      "duration": 3.759,
+      "text": "looked"
+    },
+    {
+      "start": 768.079,
+      "duration": 5.601,
+      "text": "about what are the features of ia"
+    },
+    {
+      "start": 770.959,
+      "duration": 4.961,
+      "text": "if you have any questions or any queries"
+    },
+    {
+      "start": 773.68,
+      "duration": 3.599,
+      "text": "or any advice anything to say please"
+    },
+    {
+      "start": 775.92,
+      "duration": 2.479,
+      "text": "comment"
+    },
+    {
+      "start": 777.279,
+      "duration": 3.281,
+      "text": "and"
+    },
+    {
+      "start": 778.399,
+      "duration": 4.721,
+      "text": "for more cloud and devops videos you can"
+    },
+    {
+      "start": 780.56,
+      "duration": 5.839,
+      "text": "subscribe to this channel the next video"
+    },
+    {
+      "start": 783.12,
+      "duration": 5.92,
+      "text": "will be hands-on lab for the im service"
+    },
+    {
+      "start": 786.399,
+      "duration": 4.161,
+      "text": "where we will create new users"
+    },
+    {
+      "start": 789.04,
+      "duration": 3.359,
+      "text": "new groups"
+    },
+    {
+      "start": 790.56,
+      "duration": 3.92,
+      "text": "and how to set up"
+    },
+    {
+      "start": 792.399,
+      "duration": 4.88,
+      "text": "mfa and all the things that are"
+    },
+    {
+      "start": 794.48,
+      "duration": 4.32,
+      "text": "discussed in this video so"
+    },
+    {
+      "start": 797.279,
+      "duration": 3.281,
+      "text": "for hands up"
+    },
+    {
+      "start": 798.8,
+      "duration": 5.76,
+      "text": "check the next video"
+    },
+    {
+      "start": 800.56,
+      "duration": 4.0,
+      "text": "thank you and have a good day"
+    }
+  ]
+}

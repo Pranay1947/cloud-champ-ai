@@ -1,0 +1,571 @@
+{
+  "video": {
+    "id": "GMCi8IrWE5Y",
+    "title": "Part 2: How ANSIBLE Works? Ansible Playbooks and Inventory file Explained!",
+    "url": "https://www.youtube.com/watch?v=GMCi8IrWE5Y",
+    "duration": 252,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.799,
+      "duration": 4.241,
+      "text": "welcome back in the previous video we"
+    },
+    {
+      "start": 2.639,
+      "duration": 4.24,
+      "text": "saw why ansible is important and why you"
+    },
+    {
+      "start": 5.04,
+      "duration": 2.879,
+      "text": "should learn it in this video we're"
+    },
+    {
+      "start": 6.879,
+      "duration": 3.601,
+      "text": "going to learn"
+    },
+    {
+      "start": 7.919,
+      "duration": 4.72,
+      "text": "how ansible actually works what happens"
+    },
+    {
+      "start": 10.48,
+      "duration": 3.84,
+      "text": "under the hood what is control node what"
+    },
+    {
+      "start": 12.639,
+      "duration": 3.12,
+      "text": "is manage node how does the connection"
+    },
+    {
+      "start": 14.32,
+      "duration": 4.32,
+      "text": "between the control and manage node"
+    },
+    {
+      "start": 15.759,
+      "duration": 4.881,
+      "text": "takes place and a theory about ansible"
+    },
+    {
+      "start": 18.64,
+      "duration": 3.52,
+      "text": "so stick to this video"
+    },
+    {
+      "start": 20.64,
+      "duration": 4.0,
+      "text": "in the next video we're going to learn"
+    },
+    {
+      "start": 22.16,
+      "duration": 4.64,
+      "text": "how to install ansible so let's start so"
+    },
+    {
+      "start": 24.64,
+      "duration": 4.719,
+      "text": "let's learn how ansible actually works"
+    },
+    {
+      "start": 26.8,
+      "duration": 7.84,
+      "text": "i've wasted many pages explaining you"
+    },
+    {
+      "start": 29.359,
+      "duration": 6.801,
+      "text": "this so please subscribe to my channel"
+    },
+    {
+      "start": 34.64,
+      "duration": 3.599,
+      "text": "please subscribe to my channel because i"
+    },
+    {
+      "start": 36.16,
+      "duration": 3.6,
+      "text": "have wasted a lot of pages"
+    },
+    {
+      "start": 38.239,
+      "duration": 2.961,
+      "text": "so let's start"
+    },
+    {
+      "start": 39.76,
+      "duration": 4.16,
+      "text": "so actually"
+    },
+    {
+      "start": 41.2,
+      "duration": 5.359,
+      "text": "you will have a single server or the"
+    },
+    {
+      "start": 43.92,
+      "duration": 5.2,
+      "text": "main server which will configure all of"
+    },
+    {
+      "start": 46.559,
+      "duration": 4.48,
+      "text": "our different servers so this is known"
+    },
+    {
+      "start": 49.12,
+      "duration": 3.36,
+      "text": "as controller node"
+    },
+    {
+      "start": 51.039,
+      "duration": 4.401,
+      "text": "and this is the main server where you"
+    },
+    {
+      "start": 52.48,
+      "duration": 3.919,
+      "text": "will be actually installing your ansible"
+    },
+    {
+      "start": 55.44,
+      "duration": 3.119,
+      "text": "and"
+    },
+    {
+      "start": 56.399,
+      "duration": 3.121,
+      "text": "the this server is going to configure"
+    },
+    {
+      "start": 58.559,
+      "duration": 2.16,
+      "text": "all the"
+    },
+    {
+      "start": 59.52,
+      "duration": 3.359,
+      "text": "other servers"
+    },
+    {
+      "start": 60.719,
+      "duration": 4.16,
+      "text": "and this can be"
+    },
+    {
+      "start": 62.879,
+      "duration": 4.961,
+      "text": "anything and they are called as"
+    },
+    {
+      "start": 64.879,
+      "duration": 4.721,
+      "text": "managed host"
+    },
+    {
+      "start": 67.84,
+      "duration": 3.36,
+      "text": "so you're going to install ansible on"
+    },
+    {
+      "start": 69.6,
+      "duration": 4.16,
+      "text": "this controller node and this controller"
+    },
+    {
+      "start": 71.2,
+      "duration": 4.64,
+      "text": "node has to be linux you cannot install"
+    },
+    {
+      "start": 73.76,
+      "duration": 4.64,
+      "text": "ansible on windows so this has to be"
+    },
+    {
+      "start": 75.84,
+      "duration": 3.52,
+      "text": "linux instance or linux server"
+    },
+    {
+      "start": 78.4,
+      "duration": 2.56,
+      "text": "and"
+    },
+    {
+      "start": 79.36,
+      "duration": 4.079,
+      "text": "let's start with the theory the first"
+    },
+    {
+      "start": 80.96,
+      "duration": 4.64,
+      "text": "one is it is agentless what do you mean"
+    },
+    {
+      "start": 83.439,
+      "duration": 5.441,
+      "text": "by agentless you don't have to install"
+    },
+    {
+      "start": 85.6,
+      "duration": 4.879,
+      "text": "anything on the managed host"
+    },
+    {
+      "start": 88.88,
+      "duration": 3.84,
+      "text": "unlike chef and puppet in chef and"
+    },
+    {
+      "start": 90.479,
+      "duration": 4.96,
+      "text": "puppet you have to install agent so they"
+    },
+    {
+      "start": 92.72,
+      "duration": 4.0,
+      "text": "can pull things from the controller node"
+    },
+    {
+      "start": 95.439,
+      "duration": 2.801,
+      "text": "so this is"
+    },
+    {
+      "start": 96.72,
+      "duration": 3.92,
+      "text": "agentless"
+    },
+    {
+      "start": 98.24,
+      "duration": 4.64,
+      "text": "and ansible is also push based mechanism"
+    },
+    {
+      "start": 100.64,
+      "duration": 4.08,
+      "text": "as you don't have any agent you're not"
+    },
+    {
+      "start": 102.88,
+      "duration": 3.44,
+      "text": "going to pull anything the controller is"
+    },
+    {
+      "start": 104.72,
+      "duration": 3.52,
+      "text": "going to push"
+    },
+    {
+      "start": 106.32,
+      "duration": 4.079,
+      "text": "the task on the"
+    },
+    {
+      "start": 108.24,
+      "duration": 3.68,
+      "text": "managed host so it is pushed based"
+    },
+    {
+      "start": 110.399,
+      "duration": 3.841,
+      "text": "mechanism"
+    },
+    {
+      "start": 111.92,
+      "duration": 4.96,
+      "text": "right let's take an example of the same"
+    },
+    {
+      "start": 114.24,
+      "duration": 5.36,
+      "text": "web server so you want to install apache"
+    },
+    {
+      "start": 116.88,
+      "duration": 4.72,
+      "text": "web server on all of this managed host"
+    },
+    {
+      "start": 119.6,
+      "duration": 3.839,
+      "text": "what you will do is you have install"
+    },
+    {
+      "start": 121.6,
+      "duration": 5.44,
+      "text": "ansible on the controller node now you"
+    },
+    {
+      "start": 123.439,
+      "duration": 5.6,
+      "text": "will define a set of tasks"
+    },
+    {
+      "start": 127.04,
+      "duration": 4.4,
+      "text": "so you will define you want"
+    },
+    {
+      "start": 129.039,
+      "duration": 4.721,
+      "text": "ansible you want to install apache on"
+    },
+    {
+      "start": 131.44,
+      "duration": 4.48,
+      "text": "this so you will define this set of"
+    },
+    {
+      "start": 133.76,
+      "duration": 4.4,
+      "text": "tasks this is called as playbook so"
+    },
+    {
+      "start": 135.92,
+      "duration": 4.72,
+      "text": "playbook has"
+    },
+    {
+      "start": 138.16,
+      "duration": 5.2,
+      "text": "a file which contains the set of tasks"
+    },
+    {
+      "start": 140.64,
+      "duration": 5.04,
+      "text": "to be executed on the managed host and"
+    },
+    {
+      "start": 143.36,
+      "duration": 5.04,
+      "text": "how will the controller node"
+    },
+    {
+      "start": 145.68,
+      "duration": 5.199,
+      "text": "understand on which host they want to"
+    },
+    {
+      "start": 148.4,
+      "duration": 5.199,
+      "text": "execute so it will be configured using a"
+    },
+    {
+      "start": 150.879,
+      "duration": 5.201,
+      "text": "file which is called as inventory or the"
+    },
+    {
+      "start": 153.599,
+      "duration": 6.081,
+      "text": "host file this inventory will consist of"
+    },
+    {
+      "start": 156.08,
+      "duration": 6.159,
+      "text": "the all the ips of the managed host"
+    },
+    {
+      "start": 159.68,
+      "duration": 4.559,
+      "text": "so if you want to add more host"
+    },
+    {
+      "start": 162.239,
+      "duration": 4.321,
+      "text": "you can you just need to edit the"
+    },
+    {
+      "start": 164.239,
+      "duration": 4.72,
+      "text": "inventory file you need to add it or if"
+    },
+    {
+      "start": 166.56,
+      "duration": 5.52,
+      "text": "you want to cancel it you just need to"
+    },
+    {
+      "start": 168.959,
+      "duration": 5.121,
+      "text": "remove the ip from the inventory file"
+    },
+    {
+      "start": 172.08,
+      "duration": 3.6,
+      "text": "this is how actually ansible works the"
+    },
+    {
+      "start": 174.08,
+      "duration": 4.64,
+      "text": "connection between the controller and"
+    },
+    {
+      "start": 175.68,
+      "duration": 3.839,
+      "text": "the manage node happens using ssh"
+    },
+    {
+      "start": 178.72,
+      "duration": 1.84,
+      "text": "so"
+    },
+    {
+      "start": 179.519,
+      "duration": 3.681,
+      "text": "controller"
+    },
+    {
+      "start": 180.56,
+      "duration": 4.72,
+      "text": "node creates a ssh key pair which is"
+    },
+    {
+      "start": 183.2,
+      "duration": 3.679,
+      "text": "then transferred to managed host"
+    },
+    {
+      "start": 185.28,
+      "duration": 3.52,
+      "text": "and if the key pair is there the"
+    },
+    {
+      "start": 186.879,
+      "duration": 3.921,
+      "text": "connection is established after the"
+    },
+    {
+      "start": 188.8,
+      "duration": 4.719,
+      "text": "connection is established the playbook"
+    },
+    {
+      "start": 190.8,
+      "duration": 5.439,
+      "text": "is executed on all the host whose ips"
+    },
+    {
+      "start": 193.519,
+      "duration": 6.401,
+      "text": "are present in the inventory file"
+    },
+    {
+      "start": 196.239,
+      "duration": 5.521,
+      "text": "right so it also uses ssh or python you"
+    },
+    {
+      "start": 199.92,
+      "duration": 4.239,
+      "text": "can use python scripting for advanced"
+    },
+    {
+      "start": 201.76,
+      "duration": 5.44,
+      "text": "once configurations"
+    },
+    {
+      "start": 204.159,
+      "duration": 5.201,
+      "text": "so this is how actually ansible works"
+    },
+    {
+      "start": 207.2,
+      "duration": 4.319,
+      "text": "controller node is used for installing"
+    },
+    {
+      "start": 209.36,
+      "duration": 3.92,
+      "text": "ansible for creating playbooks and for"
+    },
+    {
+      "start": 211.519,
+      "duration": 4.0,
+      "text": "creating inventory file"
+    },
+    {
+      "start": 213.28,
+      "duration": 4.72,
+      "text": "and it checks the inventory"
+    },
+    {
+      "start": 215.519,
+      "duration": 5.681,
+      "text": "connects the managed host using ssh"
+    },
+    {
+      "start": 218.0,
+      "duration": 5.84,
+      "text": "connection and it performs all the tasks"
+    },
+    {
+      "start": 221.2,
+      "duration": 4.8,
+      "text": "so this is how ansible can be used to"
+    },
+    {
+      "start": 223.84,
+      "duration": 5.039,
+      "text": "configure thousands and hundreds of"
+    },
+    {
+      "start": 226.0,
+      "duration": 4.72,
+      "text": "servers with just a single command used"
+    },
+    {
+      "start": 228.879,
+      "duration": 4.72,
+      "text": "to run a playbook so i hope you"
+    },
+    {
+      "start": 230.72,
+      "duration": 5.599,
+      "text": "understood the video and"
+    },
+    {
+      "start": 233.599,
+      "duration": 5.441,
+      "text": "you got the idea how ansible works so in"
+    },
+    {
+      "start": 236.319,
+      "duration": 4.961,
+      "text": "the next video we are going to install"
+    },
+    {
+      "start": 239.04,
+      "duration": 5.52,
+      "text": "our ansible we are going to install"
+    },
+    {
+      "start": 241.28,
+      "duration": 5.36,
+      "text": "ansible on our linux ec2 instance"
+    },
+    {
+      "start": 244.56,
+      "duration": 4.319,
+      "text": "so please like to this video"
+    },
+    {
+      "start": 246.64,
+      "duration": 6.12,
+      "text": "and subscribe to this channel"
+    },
+    {
+      "start": 248.879,
+      "duration": 3.881,
+      "text": "and have a good day"
+    }
+  ]
+}

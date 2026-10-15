@@ -1,0 +1,321 @@
+{
+  "video": {
+    "id": "A3m9LOrkzqo",
+    "title": "Ansible 101 | Learn Ansible right now!! Ansible tool tutorial for Beginners",
+    "url": "https://www.youtube.com/watch?v=A3m9LOrkzqo",
+    "duration": 138,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.799,
+      "duration": 5.04,
+      "text": "you need to learn ansible right now so"
+    },
+    {
+      "start": 3.6,
+      "duration": 4.48,
+      "text": "ansible is a configuration management"
+    },
+    {
+      "start": 5.839,
+      "duration": 5.601,
+      "text": "tool which is at high demand today in"
+    },
+    {
+      "start": 8.08,
+      "duration": 6.479,
+      "text": "the market every job role for cloud or"
+    },
+    {
+      "start": 11.44,
+      "duration": 6.4,
+      "text": "devops engineer is asking for skills in"
+    },
+    {
+      "start": 14.559,
+      "duration": 5.601,
+      "text": "this tool and there are many companies"
+    },
+    {
+      "start": 17.84,
+      "duration": 5.04,
+      "text": "who are using this and high demand"
+    },
+    {
+      "start": 20.16,
+      "duration": 4.72,
+      "text": "because it is making their production"
+    },
+    {
+      "start": 22.88,
+      "duration": 5.04,
+      "text": "very fast and it is making life of"
+    },
+    {
+      "start": 24.88,
+      "duration": 5.84,
+      "text": "devops engineer very easy"
+    },
+    {
+      "start": 27.92,
+      "duration": 4.88,
+      "text": "why is ansible so useful and why is that"
+    },
+    {
+      "start": 30.72,
+      "duration": 4.16,
+      "text": "so demand because let me explain you"
+    },
+    {
+      "start": 32.8,
+      "duration": 5.04,
+      "text": "this with a scenario consider you are"
+    },
+    {
+      "start": 34.88,
+      "duration": 5.04,
+      "text": "working as a cloud engineer at a certain"
+    },
+    {
+      "start": 37.84,
+      "duration": 4.96,
+      "text": "company and you want to install apache"
+    },
+    {
+      "start": 39.92,
+      "duration": 5.36,
+      "text": "web servers on thousands of ec2 instance"
+    },
+    {
+      "start": 42.8,
+      "duration": 4.56,
+      "text": "what you will do is you will ssh into"
+    },
+    {
+      "start": 45.28,
+      "duration": 4.4,
+      "text": "each of the instance run the command to"
+    },
+    {
+      "start": 47.36,
+      "duration": 4.32,
+      "text": "install apache on first instance and the"
+    },
+    {
+      "start": 49.68,
+      "duration": 4.48,
+      "text": "same for second instance for third"
+    },
+    {
+      "start": 51.68,
+      "duration": 4.8,
+      "text": "instance fourth fifth sixth and"
+    },
+    {
+      "start": 54.16,
+      "duration": 4.879,
+      "text": "thousands so you will be doing this"
+    },
+    {
+      "start": 56.48,
+      "duration": 4.96,
+      "text": "process repeatably and most of the time"
+    },
+    {
+      "start": 59.039,
+      "duration": 4.641,
+      "text": "you might run into some errors and it is"
+    },
+    {
+      "start": 61.44,
+      "duration": 3.28,
+      "text": "very quite time consuming so the"
+    },
+    {
+      "start": 63.68,
+      "duration": 3.04,
+      "text": "production"
+    },
+    {
+      "start": 64.72,
+      "duration": 4.96,
+      "text": "the company's work will be"
+    },
+    {
+      "start": 66.72,
+      "duration": 4.88,
+      "text": "slow and there might be many errors and"
+    },
+    {
+      "start": 69.68,
+      "duration": 4.16,
+      "text": "that is where ansible comes into play"
+    },
+    {
+      "start": 71.6,
+      "duration": 3.6,
+      "text": "you can just tell ansible you can tell"
+    },
+    {
+      "start": 73.84,
+      "duration": 4.48,
+      "text": "ansible what you want you want to"
+    },
+    {
+      "start": 75.2,
+      "duration": 4.88,
+      "text": "install web servers on thousands of pc2"
+    },
+    {
+      "start": 78.32,
+      "duration": 3.6,
+      "text": "instances you just need to"
+    },
+    {
+      "start": 80.08,
+      "duration": 2.88,
+      "text": "tell it to ansible and ansible will do"
+    },
+    {
+      "start": 81.92,
+      "duration": 3.12,
+      "text": "the magic"
+    },
+    {
+      "start": 82.96,
+      "duration": 3.6,
+      "text": "ansible can install"
+    },
+    {
+      "start": 85.04,
+      "duration": 3.84,
+      "text": "applications or web servers and"
+    },
+    {
+      "start": 86.56,
+      "duration": 4.8,
+      "text": "thousands of ec2 instance using just a"
+    },
+    {
+      "start": 88.88,
+      "duration": 5.52,
+      "text": "single command and that is why ansible"
+    },
+    {
+      "start": 91.36,
+      "duration": 4.56,
+      "text": "is so demanded in the market today i'm"
+    },
+    {
+      "start": 94.4,
+      "duration": 3.2,
+      "text": "creating a playlist where i'll be"
+    },
+    {
+      "start": 95.92,
+      "duration": 4.239,
+      "text": "explaining you everything that is there"
+    },
+    {
+      "start": 97.6,
+      "duration": 4.559,
+      "text": "to know about ansible i'll start with"
+    },
+    {
+      "start": 100.159,
+      "duration": 3.761,
+      "text": "how ansible actually works"
+    },
+    {
+      "start": 102.159,
+      "duration": 4.32,
+      "text": "then we will see how to create how to"
+    },
+    {
+      "start": 103.92,
+      "duration": 4.64,
+      "text": "install ansible on linux machines"
+    },
+    {
+      "start": 106.479,
+      "duration": 4.161,
+      "text": "what is ansible host file how to create"
+    },
+    {
+      "start": 108.56,
+      "duration": 3.68,
+      "text": "one what is ansible playbook how to"
+    },
+    {
+      "start": 110.64,
+      "duration": 3.68,
+      "text": "create ansible playbooks all the"
+    },
+    {
+      "start": 112.24,
+      "duration": 4.0,
+      "text": "commands to run playbooks and things by"
+    },
+    {
+      "start": 114.32,
+      "duration": 2.799,
+      "text": "the end of this ansible playlist"
+    },
+    {
+      "start": 116.24,
+      "duration": 2.559,
+      "text": "i will"
+    },
+    {
+      "start": 117.119,
+      "duration": 2.801,
+      "text": "give you guarantee that you will know"
+    },
+    {
+      "start": 118.799,
+      "duration": 3.6,
+      "text": "everything"
+    },
+    {
+      "start": 119.92,
+      "duration": 4.96,
+      "text": "in and out about ansible and it will"
+    },
+    {
+      "start": 122.399,
+      "duration": 4.72,
+      "text": "make you one step further for your cloud"
+    },
+    {
+      "start": 124.88,
+      "duration": 5.12,
+      "text": "or devops engineer role"
+    },
+    {
+      "start": 127.119,
+      "duration": 4.641,
+      "text": "so watch the next video to know how"
+    },
+    {
+      "start": 130.0,
+      "duration": 3.52,
+      "text": "ansible actually works where i'll be"
+    },
+    {
+      "start": 131.76,
+      "duration": 3.92,
+      "text": "explaining you what is ansible control"
+    },
+    {
+      "start": 133.52,
+      "duration": 5.76,
+      "text": "load what is water ansible magnetic"
+    },
+    {
+      "start": 135.68,
+      "duration": 3.6,
+      "text": "stored see you in the next video"
+    }
+  ]
+}

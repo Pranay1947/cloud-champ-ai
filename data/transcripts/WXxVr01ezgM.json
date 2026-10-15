@@ -1,0 +1,1041 @@
+{
+  "video": {
+    "id": "WXxVr01ezgM",
+    "title": "How to Launch AWS EC2 server with Userdata Script | Bootstrap EC2 instance using Userdata",
+    "url": "https://www.youtube.com/watch?v=WXxVr01ezgM",
+    "duration": 461,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.64,
+      "duration": 4.08,
+      "text": "hello and welcome back in this video i'm"
+    },
+    {
+      "start": 2.639,
+      "duration": 4.961,
+      "text": "going to show you how to automate your"
+    },
+    {
+      "start": 4.72,
+      "duration": 4.48,
+      "text": "ec2 instance setup with user data script"
+    },
+    {
+      "start": 7.6,
+      "duration": 4.48,
+      "text": "which means i will show you how to"
+    },
+    {
+      "start": 9.2,
+      "duration": 6.399,
+      "text": "launch an instance using a user data in"
+    },
+    {
+      "start": 12.08,
+      "duration": 5.119,
+      "text": "aws ec2 so right now i'm in my aws"
+    },
+    {
+      "start": 15.599,
+      "duration": 3.76,
+      "text": "console and i'm going to click on the"
+    },
+    {
+      "start": 17.199,
+      "duration": 4.0,
+      "text": "launch instance option"
+    },
+    {
+      "start": 19.359,
+      "duration": 3.281,
+      "text": "so user data is used for bootstrapping"
+    },
+    {
+      "start": 21.199,
+      "duration": 3.361,
+      "text": "your instances and there are a lot of"
+    },
+    {
+      "start": 22.64,
+      "duration": 3.84,
+      "text": "advantages to it if you want some"
+    },
+    {
+      "start": 24.56,
+      "duration": 3.28,
+      "text": "packages to be installed"
+    },
+    {
+      "start": 26.48,
+      "duration": 3.76,
+      "text": "whenever you launch your instance you"
+    },
+    {
+      "start": 27.84,
+      "duration": 3.839,
+      "text": "can use user data so if i go to the"
+    },
+    {
+      "start": 30.24,
+      "duration": 5.44,
+      "text": "definition by"
+    },
+    {
+      "start": 31.679,
+      "duration": 5.841,
+      "text": "aws if i type in user data aws here"
+    },
+    {
+      "start": 35.68,
+      "duration": 3.039,
+      "text": "here you can see aws user data is a set"
+    },
+    {
+      "start": 37.52,
+      "duration": 2.8,
+      "text": "of commands"
+    },
+    {
+      "start": 38.719,
+      "duration": 3.52,
+      "text": "slash data you can provide to an"
+    },
+    {
+      "start": 40.32,
+      "duration": 4.079,
+      "text": "instance at the launch time"
+    },
+    {
+      "start": 42.239,
+      "duration": 3.84,
+      "text": "so that you can download packages or"
+    },
+    {
+      "start": 44.399,
+      "duration": 3.441,
+      "text": "software that you want and you should be"
+    },
+    {
+      "start": 46.079,
+      "duration": 3.281,
+      "text": "ready to work with it you don't have to"
+    },
+    {
+      "start": 47.84,
+      "duration": 3.6,
+      "text": "access into instance you can just put"
+    },
+    {
+      "start": 49.36,
+      "duration": 3.6,
+      "text": "the user data and all these scripts or"
+    },
+    {
+      "start": 51.44,
+      "duration": 2.32,
+      "text": "the commands that you have entered will"
+    },
+    {
+      "start": 52.96,
+      "duration": 2.56,
+      "text": "be"
+    },
+    {
+      "start": 53.76,
+      "duration": 3.68,
+      "text": "uh will be executed whenever you launch"
+    },
+    {
+      "start": 55.52,
+      "duration": 3.839,
+      "text": "the instance so i'm going to click on"
+    },
+    {
+      "start": 57.44,
+      "duration": 3.52,
+      "text": "launch and instance and i'm going to"
+    },
+    {
+      "start": 59.359,
+      "duration": 3.921,
+      "text": "name this my"
+    },
+    {
+      "start": 60.96,
+      "duration": 2.32,
+      "text": "first"
+    },
+    {
+      "start": 64.559,
+      "duration": 3.92,
+      "text": "server"
+    },
+    {
+      "start": 66.4,
+      "duration": 5.44,
+      "text": "and it's going to be amazon linux t2"
+    },
+    {
+      "start": 68.479,
+      "duration": 4.96,
+      "text": "micro keypad i'm going to add a key pair"
+    },
+    {
+      "start": 71.84,
+      "duration": 3.12,
+      "text": "easy to key"
+    },
+    {
+      "start": 73.439,
+      "duration": 3.921,
+      "text": "network settings i want it to be in"
+    },
+    {
+      "start": 74.96,
+      "duration": 3.92,
+      "text": "default i want to have"
+    },
+    {
+      "start": 77.36,
+      "duration": 3.759,
+      "text": "a web security"
+    },
+    {
+      "start": 78.88,
+      "duration": 4.16,
+      "text": "security group"
+    },
+    {
+      "start": 81.119,
+      "duration": 4.081,
+      "text": "that has port 80 enabled so i have the"
+    },
+    {
+      "start": 83.04,
+      "duration": 3.84,
+      "text": "security group which has port 80 enabled"
+    },
+    {
+      "start": 85.2,
+      "duration": 2.64,
+      "text": "because i want to test out my user data"
+    },
+    {
+      "start": 86.88,
+      "duration": 3.279,
+      "text": "script"
+    },
+    {
+      "start": 87.84,
+      "duration": 4.8,
+      "text": "and in the advanced details if you"
+    },
+    {
+      "start": 90.159,
+      "duration": 5.121,
+      "text": "scroll down at the bottom you'll see"
+    },
+    {
+      "start": 92.64,
+      "duration": 4.88,
+      "text": "user data where you can either input"
+    },
+    {
+      "start": 95.28,
+      "duration": 4.24,
+      "text": "your script or if you have a file stored"
+    },
+    {
+      "start": 97.52,
+      "duration": 4.639,
+      "text": "in your machine you can also do that but"
+    },
+    {
+      "start": 99.52,
+      "duration": 4.639,
+      "text": "now let's go and write down our script"
+    },
+    {
+      "start": 102.159,
+      "duration": 5.681,
+      "text": "so to write a script it starts with"
+    },
+    {
+      "start": 104.159,
+      "duration": 5.251,
+      "text": "shabang or slash an exclamation mark"
+    },
+    {
+      "start": 107.84,
+      "duration": 2.959,
+      "text": "slash pin"
+    },
+    {
+      "start": 109.41,
+      "duration": 3.709,
+      "text": "[Music]"
+    },
+    {
+      "start": 110.799,
+      "duration": 4.881,
+      "text": "slash bash"
+    },
+    {
+      "start": 113.119,
+      "duration": 5.6,
+      "text": "then i want to first update all the"
+    },
+    {
+      "start": 115.68,
+      "duration": 5.119,
+      "text": "packages vm update hyphen y"
+    },
+    {
+      "start": 118.719,
+      "duration": 5.44,
+      "text": "and then i want to install"
+    },
+    {
+      "start": 120.799,
+      "duration": 6.161,
+      "text": "apache web server or httpd web server m"
+    },
+    {
+      "start": 124.159,
+      "duration": 5.121,
+      "text": "install hyphen y http so this is the"
+    },
+    {
+      "start": 126.96,
+      "duration": 3.999,
+      "text": "command to install apache web server so"
+    },
+    {
+      "start": 129.28,
+      "duration": 3.84,
+      "text": "whenever i launch the instance with this"
+    },
+    {
+      "start": 130.959,
+      "duration": 5.681,
+      "text": "user data script i want the apache web"
+    },
+    {
+      "start": 133.12,
+      "duration": 9.88,
+      "text": "server to be installed next i want to"
+    },
+    {
+      "start": 136.64,
+      "duration": 6.36,
+      "text": "start this service so service http start"
+    },
+    {
+      "start": 145.599,
+      "duration": 4.321,
+      "text": "and enable this so that whenever if i"
+    },
+    {
+      "start": 147.599,
+      "duration": 4.081,
+      "text": "stop the instance and start it again the"
+    },
+    {
+      "start": 149.92,
+      "duration": 4.92,
+      "text": "service should be automatically started"
+    },
+    {
+      "start": 151.68,
+      "duration": 5.52,
+      "text": "so system ctl enable"
+    },
+    {
+      "start": 154.84,
+      "duration": 3.88,
+      "text": "http and lastly so i want to show a"
+    },
+    {
+      "start": 157.2,
+      "duration": 2.96,
+      "text": "message so i'm going to type in echo"
+    },
+    {
+      "start": 158.72,
+      "duration": 4.799,
+      "text": "command echo"
+    },
+    {
+      "start": 160.16,
+      "duration": 7.28,
+      "text": "and heading i want"
+    },
+    {
+      "start": 163.519,
+      "duration": 6.961,
+      "text": "this is my first"
+    },
+    {
+      "start": 167.44,
+      "duration": 5.2,
+      "text": "instance using user data"
+    },
+    {
+      "start": 170.48,
+      "duration": 4.479,
+      "text": "script"
+    },
+    {
+      "start": 172.64,
+      "duration": 3.36,
+      "text": "okay and in this h1"
+    },
+    {
+      "start": 174.959,
+      "duration": 4.801,
+      "text": "tag"
+    },
+    {
+      "start": 176.0,
+      "duration": 5.12,
+      "text": "and put this inside the slash var slash"
+    },
+    {
+      "start": 179.76,
+      "duration": 2.8,
+      "text": "www"
+    },
+    {
+      "start": 181.12,
+      "duration": 2.44,
+      "text": "html"
+    },
+    {
+      "start": 182.56,
+      "duration": 3.599,
+      "text": "and"
+    },
+    {
+      "start": 183.56,
+      "duration": 4.599,
+      "text": "index.html so whatever message you have"
+    },
+    {
+      "start": 186.159,
+      "duration": 3.201,
+      "text": "on this index.html is going to be shown"
+    },
+    {
+      "start": 188.159,
+      "duration": 3.761,
+      "text": "on your"
+    },
+    {
+      "start": 189.36,
+      "duration": 4.0,
+      "text": "webpage so now we have created a script"
+    },
+    {
+      "start": 191.92,
+      "duration": 4.56,
+      "text": "which is going to update all the"
+    },
+    {
+      "start": 193.36,
+      "duration": 5.92,
+      "text": "packages then install http web server"
+    },
+    {
+      "start": 196.48,
+      "duration": 5.28,
+      "text": "start that web server and enable it so"
+    },
+    {
+      "start": 199.28,
+      "duration": 4.0,
+      "text": "this is a sample script but you can do"
+    },
+    {
+      "start": 201.76,
+      "duration": 3.36,
+      "text": "anything you want with the user data"
+    },
+    {
+      "start": 203.28,
+      "duration": 3.519,
+      "text": "script if you have the commands for it"
+    },
+    {
+      "start": 205.12,
+      "duration": 3.759,
+      "text": "so i'm going to launch this instance and"
+    },
+    {
+      "start": 206.799,
+      "duration": 3.681,
+      "text": "this instance should have all of this"
+    },
+    {
+      "start": 208.879,
+      "duration": 5.92,
+      "text": "things mentioned so i'm going to click"
+    },
+    {
+      "start": 210.48,
+      "duration": 4.319,
+      "text": "on launch instance so launch an instance"
+    },
+    {
+      "start": 216.48,
+      "duration": 3.2,
+      "text": "so let's wait for this to come up now"
+    },
+    {
+      "start": 218.08,
+      "duration": 3.04,
+      "text": "it's in the pending state we will wait"
+    },
+    {
+      "start": 219.68,
+      "duration": 2.639,
+      "text": "for it to come up and then we will be"
+    },
+    {
+      "start": 221.12,
+      "duration": 3.28,
+      "text": "pasting this"
+    },
+    {
+      "start": 222.319,
+      "duration": 4.161,
+      "text": "inside the browser and we should see the"
+    },
+    {
+      "start": 224.4,
+      "duration": 4.96,
+      "text": "message that was this is my first"
+    },
+    {
+      "start": 226.48,
+      "duration": 4.8,
+      "text": "instance using user data so i'm going to"
+    },
+    {
+      "start": 229.36,
+      "duration": 4.4,
+      "text": "pause this video and come back when it"
+    },
+    {
+      "start": 231.28,
+      "duration": 2.48,
+      "text": "is ready"
+    },
+    {
+      "start": 234.08,
+      "duration": 5.04,
+      "text": "now my instance of my instance so i'm"
+    },
+    {
+      "start": 236.48,
+      "duration": 4.64,
+      "text": "back and now my instance is running so"
+    },
+    {
+      "start": 239.12,
+      "duration": 4.64,
+      "text": "i'm going to copy this ip"
+    },
+    {
+      "start": 241.12,
+      "duration": 4.24,
+      "text": "and paste it in the new tab"
+    },
+    {
+      "start": 243.76,
+      "duration": 3.28,
+      "text": "if i paste this in a new tab i see the"
+    },
+    {
+      "start": 245.36,
+      "duration": 3.84,
+      "text": "message which is this is my first"
+    },
+    {
+      "start": 247.04,
+      "duration": 3.919,
+      "text": "instance using user data script which"
+    },
+    {
+      "start": 249.2,
+      "duration": 3.92,
+      "text": "means without we going into the instance"
+    },
+    {
+      "start": 250.959,
+      "duration": 4.56,
+      "text": "and running the command it is it has"
+    },
+    {
+      "start": 253.12,
+      "duration": 4.32,
+      "text": "installed apache web server and it has"
+    },
+    {
+      "start": 255.519,
+      "duration": 4.321,
+      "text": "shown us this message which is which"
+    },
+    {
+      "start": 257.44,
+      "duration": 3.68,
+      "text": "means our user data is working perfectly"
+    },
+    {
+      "start": 259.84,
+      "duration": 3.12,
+      "text": "fine"
+    },
+    {
+      "start": 261.12,
+      "duration": 4.4,
+      "text": "so if you're doing this and you get an"
+    },
+    {
+      "start": 262.96,
+      "duration": 4.799,
+      "text": "error message uh show any error message"
+    },
+    {
+      "start": 265.52,
+      "duration": 5.119,
+      "text": "make sure you have the security group"
+    },
+    {
+      "start": 267.759,
+      "duration": 5.761,
+      "text": "with port 80 enabled and you you are"
+    },
+    {
+      "start": 270.639,
+      "duration": 5.761,
+      "text": "using http not https because you don't"
+    },
+    {
+      "start": 273.52,
+      "duration": 4.48,
+      "text": "have ssl here so let's go ahead and try"
+    },
+    {
+      "start": 276.4,
+      "duration": 3.44,
+      "text": "to launch an instance with a different"
+    },
+    {
+      "start": 278.0,
+      "duration": 3.919,
+      "text": "user data script so i'm going to go and"
+    },
+    {
+      "start": 279.84,
+      "duration": 5.2,
+      "text": "click on launch instance option and"
+    },
+    {
+      "start": 281.919,
+      "duration": 3.121,
+      "text": "second instance"
+    },
+    {
+      "start": 286.16,
+      "duration": 5.039,
+      "text": "it's going to be amazon linux t2 micro"
+    },
+    {
+      "start": 288.479,
+      "duration": 4.16,
+      "text": "keypair ec2 key"
+    },
+    {
+      "start": 291.199,
+      "duration": 4.56,
+      "text": "and i'm going to use the same security"
+    },
+    {
+      "start": 292.639,
+      "duration": 4.481,
+      "text": "group because i have port enabled so web"
+    },
+    {
+      "start": 295.759,
+      "duration": 3.201,
+      "text": "for cg"
+    },
+    {
+      "start": 297.12,
+      "duration": 3.44,
+      "text": "and then in the user data section i can"
+    },
+    {
+      "start": 298.96,
+      "duration": 2.88,
+      "text": "pass in my script so your script can be"
+    },
+    {
+      "start": 300.56,
+      "duration": 3.919,
+      "text": "anything you want"
+    },
+    {
+      "start": 301.84,
+      "duration": 3.919,
+      "text": "so whatever task you want to do using"
+    },
+    {
+      "start": 304.479,
+      "duration": 2.881,
+      "text": "the user data should be there in the"
+    },
+    {
+      "start": 305.759,
+      "duration": 3.841,
+      "text": "script so now i'm going to paste a"
+    },
+    {
+      "start": 307.36,
+      "duration": 4.08,
+      "text": "script which will be"
+    },
+    {
+      "start": 309.6,
+      "duration": 3.039,
+      "text": "is to install"
+    },
+    {
+      "start": 311.44,
+      "duration": 5.12,
+      "text": "apache"
+    },
+    {
+      "start": 312.639,
+      "duration": 6.321,
+      "text": "and show us this php info page so php"
+    },
+    {
+      "start": 316.56,
+      "duration": 4.72,
+      "text": "info page is something like this like"
+    },
+    {
+      "start": 318.96,
+      "duration": 6.32,
+      "text": "this is what you would get if you"
+    },
+    {
+      "start": 321.28,
+      "duration": 6.56,
+      "text": "check your php info.php page"
+    },
+    {
+      "start": 325.28,
+      "duration": 5.12,
+      "text": "so this user data is going to install"
+    },
+    {
+      "start": 327.84,
+      "duration": 4.799,
+      "text": "all the package then install the lamp"
+    },
+    {
+      "start": 330.4,
+      "duration": 5.359,
+      "text": "server mariadb"
+    },
+    {
+      "start": 332.639,
+      "duration": 4.56,
+      "text": "database and php 7.2"
+    },
+    {
+      "start": 335.759,
+      "duration": 4.321,
+      "text": "all these commands so i'm going to"
+    },
+    {
+      "start": 337.199,
+      "duration": 2.881,
+      "text": "launch the instance"
+    },
+    {
+      "start": 341.68,
+      "duration": 4.56,
+      "text": "so now you have learned how to create an"
+    },
+    {
+      "start": 344.16,
+      "duration": 4.16,
+      "text": "instance using user data but let's say"
+    },
+    {
+      "start": 346.24,
+      "duration": 4.08,
+      "text": "you want to edit any user data that you"
+    },
+    {
+      "start": 348.32,
+      "duration": 5.76,
+      "text": "have already created you can click on"
+    },
+    {
+      "start": 350.32,
+      "duration": 3.76,
+      "text": "the instance stop it first"
+    },
+    {
+      "start": 354.8,
+      "duration": 4.239,
+      "text": "and then go to the actions in here you"
+    },
+    {
+      "start": 357.039,
+      "duration": 4.72,
+      "text": "can go to instant settings and here you"
+    },
+    {
+      "start": 359.039,
+      "duration": 5.041,
+      "text": "have an option to edit the user data"
+    },
+    {
+      "start": 361.759,
+      "duration": 4.081,
+      "text": "so you can edit the user data by"
+    },
+    {
+      "start": 364.08,
+      "duration": 3.52,
+      "text": "stopping it first so you make sure the"
+    },
+    {
+      "start": 365.84,
+      "duration": 3.76,
+      "text": "instance is stopped"
+    },
+    {
+      "start": 367.6,
+      "duration": 3.76,
+      "text": "completely before you can edit your"
+    },
+    {
+      "start": 369.6,
+      "duration": 4.56,
+      "text": "instance data you can make a change here"
+    },
+    {
+      "start": 371.36,
+      "duration": 4.64,
+      "text": "and then your user data will be changed"
+    },
+    {
+      "start": 374.16,
+      "duration": 3.68,
+      "text": "okay so i instance in running state"
+    },
+    {
+      "start": 376.0,
+      "duration": 3.199,
+      "text": "right now and if i paste this ip in a"
+    },
+    {
+      "start": 377.84,
+      "duration": 2.88,
+      "text": "new tab"
+    },
+    {
+      "start": 379.199,
+      "duration": 4.161,
+      "text": "so i'm going to paste the ip in a new"
+    },
+    {
+      "start": 380.72,
+      "duration": 4.24,
+      "text": "tab and i would get the test page for"
+    },
+    {
+      "start": 383.36,
+      "duration": 3.839,
+      "text": "apache which means apache has been"
+    },
+    {
+      "start": 384.96,
+      "duration": 5.04,
+      "text": "successfully installed and if i type in"
+    },
+    {
+      "start": 387.199,
+      "duration": 6.081,
+      "text": "the path which is going to be phpinfo"
+    },
+    {
+      "start": 390.0,
+      "duration": 6.08,
+      "text": "dot php it should show me the php info"
+    },
+    {
+      "start": 393.28,
+      "duration": 4.639,
+      "text": "page which is this which means our"
+    },
+    {
+      "start": 396.08,
+      "duration": 4.16,
+      "text": "instance has been successfully"
+    },
+    {
+      "start": 397.919,
+      "duration": 3.84,
+      "text": "configured using the user data script if"
+    },
+    {
+      "start": 400.24,
+      "duration": 3.84,
+      "text": "you want to double check you can go and"
+    },
+    {
+      "start": 401.759,
+      "duration": 4.481,
+      "text": "connect to the instance and see if the"
+    },
+    {
+      "start": 404.08,
+      "duration": 3.92,
+      "text": "http service or mariadb whatever you"
+    },
+    {
+      "start": 406.24,
+      "duration": 3.44,
+      "text": "have defined in the user data is"
+    },
+    {
+      "start": 408.0,
+      "duration": 5.199,
+      "text": "installed or not so i'm going to check"
+    },
+    {
+      "start": 409.68,
+      "duration": 5.04,
+      "text": "if my http is installed or not"
+    },
+    {
+      "start": 413.199,
+      "duration": 4.641,
+      "text": "so let's wait for this to establish"
+    },
+    {
+      "start": 414.72,
+      "duration": 5.919,
+      "text": "connection and if i type in which"
+    },
+    {
+      "start": 417.84,
+      "duration": 3.759,
+      "text": "httpd"
+    },
+    {
+      "start": 420.639,
+      "duration": 3.201,
+      "text": "okay"
+    },
+    {
+      "start": 421.599,
+      "duration": 2.241,
+      "text": "sorry"
+    },
+    {
+      "start": 424.0,
+      "duration": 4.08,
+      "text": "which http is going to show me that the"
+    },
+    {
+      "start": 426.0,
+      "duration": 4.08,
+      "text": "http is in this path which means it is"
+    },
+    {
+      "start": 428.08,
+      "duration": 5.64,
+      "text": "installed even if i check the command"
+    },
+    {
+      "start": 430.08,
+      "duration": 5.28,
+      "text": "sudo system ctl"
+    },
+    {
+      "start": 433.72,
+      "duration": 3.0,
+      "text": "[Music]"
+    },
+    {
+      "start": 435.36,
+      "duration": 3.6,
+      "text": "status"
+    },
+    {
+      "start": 436.72,
+      "duration": 4.4,
+      "text": "http"
+    },
+    {
+      "start": 438.96,
+      "duration": 3.84,
+      "text": "it says it's running which means http is"
+    },
+    {
+      "start": 441.12,
+      "duration": 3.76,
+      "text": "installed and our instance has been"
+    },
+    {
+      "start": 442.8,
+      "duration": 4.32,
+      "text": "successfully launched using user data"
+    },
+    {
+      "start": 444.88,
+      "duration": 5.12,
+      "text": "script so i hope you have understood"
+    },
+    {
+      "start": 447.12,
+      "duration": 4.4,
+      "text": "this video and you got you have now the"
+    },
+    {
+      "start": 450.0,
+      "duration": 3.919,
+      "text": "knowledge of how to launch an instance"
+    },
+    {
+      "start": 451.52,
+      "duration": 4.72,
+      "text": "using user data script so please like"
+    },
+    {
+      "start": 453.919,
+      "duration": 5.12,
+      "text": "this video and subscribe to this channel"
+    },
+    {
+      "start": 456.24,
+      "duration": 5.84,
+      "text": "also check out for more cloud and devops"
+    },
+    {
+      "start": 459.039,
+      "duration": 3.041,
+      "text": "videos thank you"
+    }
+  ]
+}

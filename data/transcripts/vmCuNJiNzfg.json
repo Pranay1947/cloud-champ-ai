@@ -1,0 +1,1021 @@
+{
+  "video": {
+    "id": "vmCuNJiNzfg",
+    "title": "Kubernetes Architecture in 7 minutes | K8s explained",
+    "url": "https://www.youtube.com/watch?v=vmCuNJiNzfg",
+    "duration": 425,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 3.6,
+      "text": "in this video I will explain you"
+    },
+    {
+      "start": 1.68,
+      "duration": 4.4,
+      "text": "kubernetes architecture in simplest"
+    },
+    {
+      "start": 3.76,
+      "duration": 3.8,
+      "text": "manner possible we go deep down in the"
+    },
+    {
+      "start": 6.08,
+      "duration": 3.08,
+      "text": "kubernetes cluster understanding"
+    },
+    {
+      "start": 7.56,
+      "duration": 3.32,
+      "text": "different components and how they"
+    },
+    {
+      "start": 9.16,
+      "duration": 4.639,
+      "text": "actually work so make sure you watch"
+    },
+    {
+      "start": 10.88,
+      "duration": 4.719,
+      "text": "this video till the end let's start so"
+    },
+    {
+      "start": 13.799,
+      "duration": 3.64,
+      "text": "we start with creating a cluster you can"
+    },
+    {
+      "start": 15.599,
+      "duration": 3.561,
+      "text": "create a kubernetes cluster locally"
+    },
+    {
+      "start": 17.439,
+      "duration": 3.881,
+      "text": "either using tools like mini Cube or"
+    },
+    {
+      "start": 19.16,
+      "duration": 3.959,
+      "text": "cube ADM optionally you can also use"
+    },
+    {
+      "start": 21.32,
+      "duration": 5.199,
+      "text": "probably cloud provider services like"
+    },
+    {
+      "start": 23.119,
+      "duration": 6.041,
+      "text": "eks and AWS AKs in aure gka in Google"
+    },
+    {
+      "start": 26.519,
+      "duration": 4.041,
+      "text": "Cloud to create kubernetes clusters"
+    },
+    {
+      "start": 29.16,
+      "duration": 3.68,
+      "text": "inside this kubernetes this cluster we"
+    },
+    {
+      "start": 30.56,
+      "duration": 5.159,
+      "text": "have two different types of machines or"
+    },
+    {
+      "start": 32.84,
+      "duration": 4.84,
+      "text": "as we call them nodes so we have a"
+    },
+    {
+      "start": 35.719,
+      "duration": 4.721,
+      "text": "master node which is responsible to"
+    },
+    {
+      "start": 37.68,
+      "duration": 4.559,
+      "text": "handled everything inside the cluster"
+    },
+    {
+      "start": 40.44,
+      "duration": 4.52,
+      "text": "along with Master node we also have"
+    },
+    {
+      "start": 42.239,
+      "duration": 5.16,
+      "text": "another kind of node known as worker"
+    },
+    {
+      "start": 44.96,
+      "duration": 4.079,
+      "text": "node this worker node is actually"
+    },
+    {
+      "start": 47.399,
+      "duration": 5.0,
+      "text": "responsible to run your application"
+    },
+    {
+      "start": 49.039,
+      "duration": 5.121,
+      "text": "containers inside kubernetes cluster so"
+    },
+    {
+      "start": 52.399,
+      "duration": 3.8,
+      "text": "you have Master node that is when to"
+    },
+    {
+      "start": 54.16,
+      "duration": 3.64,
+      "text": "handle everything inside the cluster and"
+    },
+    {
+      "start": 56.199,
+      "duration": 3.16,
+      "text": "you have worker notes which are"
+    },
+    {
+      "start": 57.8,
+      "duration": 4.239,
+      "text": "responsible to run your application"
+    },
+    {
+      "start": 59.359,
+      "duration": 4.601,
+      "text": "containers inside the kubernetes cluster"
+    },
+    {
+      "start": 62.039,
+      "duration": 4.44,
+      "text": "let's start with worker nodes and look"
+    },
+    {
+      "start": 63.96,
+      "duration": 4.24,
+      "text": "at different components inside it as we"
+    },
+    {
+      "start": 66.479,
+      "duration": 3.561,
+      "text": "all know worker nodes are responsible to"
+    },
+    {
+      "start": 68.2,
+      "duration": 3.72,
+      "text": "run application containers and they run"
+    },
+    {
+      "start": 70.04,
+      "duration": 4.28,
+      "text": "this application containers inside"
+    },
+    {
+      "start": 71.92,
+      "duration": 4.04,
+      "text": "something known as pods pods are"
+    },
+    {
+      "start": 74.32,
+      "duration": 3.96,
+      "text": "smallest Deployable units in the"
+    },
+    {
+      "start": 75.96,
+      "duration": 4.92,
+      "text": "kubernetes tester and the Pod can hold"
+    },
+    {
+      "start": 78.28,
+      "duration": 4.32,
+      "text": "one or more containers a single worker"
+    },
+    {
+      "start": 80.88,
+      "duration": 4.72,
+      "text": "node can have more than one pods or it"
+    },
+    {
+      "start": 82.6,
+      "duration": 5.559,
+      "text": "can have a single pod as well so these"
+    },
+    {
+      "start": 85.6,
+      "duration": 5.64,
+      "text": "containers are actually running inside"
+    },
+    {
+      "start": 88.159,
+      "duration": 4.96,
+      "text": "object kuet is object known as pods to"
+    },
+    {
+      "start": 91.24,
+      "duration": 4.48,
+      "text": "deploy and manage pods inside this"
+    },
+    {
+      "start": 93.119,
+      "duration": 5.241,
+      "text": "worker node we have an agent named as"
+    },
+    {
+      "start": 95.72,
+      "duration": 4.8,
+      "text": "cuet this cuet agent is running on all"
+    },
+    {
+      "start": 98.36,
+      "duration": 4.039,
+      "text": "worker nodes and it gets information"
+    },
+    {
+      "start": 100.52,
+      "duration": 3.599,
+      "text": "from the master node to decide where"
+    },
+    {
+      "start": 102.399,
+      "duration": 4.241,
+      "text": "should be the P running and how to"
+    },
+    {
+      "start": 104.119,
+      "duration": 4.521,
+      "text": "manage it along with this for a worker"
+    },
+    {
+      "start": 106.64,
+      "duration": 3.72,
+      "text": "machine to create and manage containers"
+    },
+    {
+      "start": 108.64,
+      "duration": 4.2,
+      "text": "we need to have a container runtime"
+    },
+    {
+      "start": 110.36,
+      "duration": 5.2,
+      "text": "interface or a software like Docker so"
+    },
+    {
+      "start": 112.84,
+      "duration": 4.599,
+      "text": "worker machine will also contain CRI or"
+    },
+    {
+      "start": 115.56,
+      "duration": 3.96,
+      "text": "container Endtime interface such as"
+    },
+    {
+      "start": 117.439,
+      "duration": 5.241,
+      "text": "Docker here other options are container"
+    },
+    {
+      "start": 119.52,
+      "duration": 6.04,
+      "text": "d locket Etc which is supported by cetes"
+    },
+    {
+      "start": 122.68,
+      "duration": 4.56,
+      "text": "as well also to enable communication"
+    },
+    {
+      "start": 125.56,
+      "duration": 4.36,
+      "text": "between these two ports or to make these"
+    },
+    {
+      "start": 127.24,
+      "duration": 4.52,
+      "text": "pods or application accessible to the Ed"
+    },
+    {
+      "start": 129.92,
+      "duration": 3.88,
+      "text": "users we have another networking"
+    },
+    {
+      "start": 131.76,
+      "duration": 5.44,
+      "text": "component in the worker node which is"
+    },
+    {
+      "start": 133.8,
+      "duration": 5.48,
+      "text": "known as cube proxy qoxy is used for"
+    },
+    {
+      "start": 137.2,
+      "duration": 4.44,
+      "text": "Port toport communication also for load"
+    },
+    {
+      "start": 139.28,
+      "duration": 5.12,
+      "text": "balancing service proxy and to make your"
+    },
+    {
+      "start": 141.64,
+      "duration": 4.4,
+      "text": "application accessible to the end users"
+    },
+    {
+      "start": 144.4,
+      "duration": 3.72,
+      "text": "so these are different components inside"
+    },
+    {
+      "start": 146.04,
+      "duration": 4.279,
+      "text": "the worker nodes you have q proxy for"
+    },
+    {
+      "start": 148.12,
+      "duration": 3.839,
+      "text": "port-to-port communication and expose"
+    },
+    {
+      "start": 150.319,
+      "duration": 3.64,
+      "text": "your application you have container"
+    },
+    {
+      "start": 151.959,
+      "duration": 4.56,
+      "text": "runtime interface to create and delete"
+    },
+    {
+      "start": 153.959,
+      "duration": 4.441,
+      "text": "containers you have cuet an agent that"
+    },
+    {
+      "start": 156.519,
+      "duration": 4.0,
+      "text": "is running on every worker node which"
+    },
+    {
+      "start": 158.4,
+      "duration": 3.919,
+      "text": "get information from the master node and"
+    },
+    {
+      "start": 160.519,
+      "duration": 4.121,
+      "text": "handle the workloads inside the worker"
+    },
+    {
+      "start": 162.319,
+      "duration": 4.28,
+      "text": "nodes along with this you can have more"
+    },
+    {
+      "start": 164.64,
+      "duration": 4.04,
+      "text": "add-ons or plugins that you install on"
+    },
+    {
+      "start": 166.599,
+      "duration": 4.161,
+      "text": "your worker notes but these are all the"
+    },
+    {
+      "start": 168.68,
+      "duration": 4.12,
+      "text": "important components inside your worker"
+    },
+    {
+      "start": 170.76,
+      "duration": 4.08,
+      "text": "notes now that we have understood the"
+    },
+    {
+      "start": 172.8,
+      "duration": 4.0,
+      "text": "different components inside worker nodes"
+    },
+    {
+      "start": 174.84,
+      "duration": 4.08,
+      "text": "and how they actually work let's look at"
+    },
+    {
+      "start": 176.8,
+      "duration": 4.4,
+      "text": "the different components inside Master"
+    },
+    {
+      "start": 178.92,
+      "duration": 4.679,
+      "text": "node so so Master node or control plane"
+    },
+    {
+      "start": 181.2,
+      "duration": 3.88,
+      "text": "has four very important components that"
+    },
+    {
+      "start": 183.599,
+      "duration": 3.801,
+      "text": "are responsible to manage everything"
+    },
+    {
+      "start": 185.08,
+      "duration": 5.64,
+      "text": "inside the cluster the first component"
+    },
+    {
+      "start": 187.4,
+      "duration": 4.88,
+      "text": "is the cube API server this Cube API"
+    },
+    {
+      "start": 190.72,
+      "duration": 3.4,
+      "text": "server is like an entry point for"
+    },
+    {
+      "start": 192.28,
+      "duration": 3.2,
+      "text": "everything you do inside the cluster so"
+    },
+    {
+      "start": 194.12,
+      "duration": 3.28,
+      "text": "let's say you are a devops engineer and"
+    },
+    {
+      "start": 195.48,
+      "duration": 3.96,
+      "text": "you want to create a new pod or maybe"
+    },
+    {
+      "start": 197.4,
+      "duration": 3.52,
+      "text": "delete a pod or just get the status if"
+    },
+    {
+      "start": 199.44,
+      "duration": 4.079,
+      "text": "you want to do anything inside cluster"
+    },
+    {
+      "start": 200.92,
+      "duration": 4.72,
+      "text": "you will have to talk to the cube API"
+    },
+    {
+      "start": 203.519,
+      "duration": 3.841,
+      "text": "server so you can talk to cube API"
+    },
+    {
+      "start": 205.64,
+      "duration": 4.159,
+      "text": "server either by running commands using"
+    },
+    {
+      "start": 207.36,
+      "duration": 4.56,
+      "text": "Cube CTL command line tool either using"
+    },
+    {
+      "start": 209.799,
+      "duration": 4.44,
+      "text": "Cube uh Cube it is dashboard or maybe"
+    },
+    {
+      "start": 211.92,
+      "duration": 4.599,
+      "text": "using sdks or anything so you will talk"
+    },
+    {
+      "start": 214.239,
+      "duration": 4.681,
+      "text": "to the cube API server Cube API server"
+    },
+    {
+      "start": 216.519,
+      "duration": 4.681,
+      "text": "will validate if the request is okay if"
+    },
+    {
+      "start": 218.92,
+      "duration": 3.56,
+      "text": "the user is authenticated or not and if"
+    },
+    {
+      "start": 221.2,
+      "duration": 3.119,
+      "text": "it works then it will get the"
+    },
+    {
+      "start": 222.48,
+      "duration": 4.08,
+      "text": "information from the other components"
+    },
+    {
+      "start": 224.319,
+      "duration": 4.161,
+      "text": "and provide it to the end user or to the"
+    },
+    {
+      "start": 226.56,
+      "duration": 4.44,
+      "text": "dev"
+    },
+    {
+      "start": 228.48,
+      "duration": 3.959,
+      "text": "optionor so API server is like an entry"
+    },
+    {
+      "start": 231.0,
+      "duration": 4.599,
+      "text": "point which validates the request and"
+    },
+    {
+      "start": 232.439,
+      "duration": 5.241,
+      "text": "also authenticates the user next Master"
+    },
+    {
+      "start": 235.599,
+      "duration": 4.401,
+      "text": "node component is the scheduler"
+    },
+    {
+      "start": 237.68,
+      "duration": 3.919,
+      "text": "scheduler is used to assign pods to the"
+    },
+    {
+      "start": 240.0,
+      "duration": 3.519,
+      "text": "worker nodes let's say you made a"
+    },
+    {
+      "start": 241.599,
+      "duration": 4.601,
+      "text": "request to the API server to create a"
+    },
+    {
+      "start": 243.519,
+      "duration": 4.481,
+      "text": "new pod scheder is going to check which"
+    },
+    {
+      "start": 246.2,
+      "duration": 2.84,
+      "text": "nodes have enough capacity to launch"
+    },
+    {
+      "start": 248.0,
+      "duration": 3.879,
+      "text": "this new"
+    },
+    {
+      "start": 249.04,
+      "duration": 4.119,
+      "text": "pod once the nodes on which the pods are"
+    },
+    {
+      "start": 251.879,
+      "duration": 2.841,
+      "text": "going to be run is decided by the"
+    },
+    {
+      "start": 253.159,
+      "duration": 3.8,
+      "text": "scheduler scheduler provides this"
+    },
+    {
+      "start": 254.72,
+      "duration": 5.0,
+      "text": "information to the cube API server Cube"
+    },
+    {
+      "start": 256.959,
+      "duration": 5.321,
+      "text": "API server gives this information to the"
+    },
+    {
+      "start": 259.72,
+      "duration": 5.44,
+      "text": "cubet running on that particular node"
+    },
+    {
+      "start": 262.28,
+      "duration": 5.08,
+      "text": "and thus it creates the new pod on the"
+    },
+    {
+      "start": 265.16,
+      "duration": 4.8,
+      "text": "worker note so scheder is used to assign"
+    },
+    {
+      "start": 267.36,
+      "duration": 4.48,
+      "text": "pods on the notes based on resource"
+    },
+    {
+      "start": 269.96,
+      "duration": 3.679,
+      "text": "capacity all the Manifest files that you"
+    },
+    {
+      "start": 271.84,
+      "duration": 3.96,
+      "text": "have defined for your"
+    },
+    {
+      "start": 273.639,
+      "duration": 4.081,
+      "text": "cluster now what if there's an issue"
+    },
+    {
+      "start": 275.8,
+      "duration": 4.32,
+      "text": "inside the cluster or one of these ports"
+    },
+    {
+      "start": 277.72,
+      "duration": 3.96,
+      "text": "shows an error or gets deleted that's"
+    },
+    {
+      "start": 280.12,
+      "duration": 3.799,
+      "text": "when the next kubernetes Master node"
+    },
+    {
+      "start": 281.68,
+      "duration": 3.64,
+      "text": "components comes into play so next"
+    },
+    {
+      "start": 283.919,
+      "duration": 3.361,
+      "text": "kubernetes component is the controller"
+    },
+    {
+      "start": 285.32,
+      "duration": 4.08,
+      "text": "manager controller manager is used to"
+    },
+    {
+      "start": 287.28,
+      "duration": 4.52,
+      "text": "monitor the entire cluster and it makes"
+    },
+    {
+      "start": 289.4,
+      "duration": 5.239,
+      "text": "sures that everything is as you have"
+    },
+    {
+      "start": 291.8,
+      "duration": 3.92,
+      "text": "defined inside your manifested files so"
+    },
+    {
+      "start": 294.639,
+      "duration": 2.881,
+      "text": "let's say you have said you want to have"
+    },
+    {
+      "start": 295.72,
+      "duration": 3.64,
+      "text": "four pods running it will make sure that"
+    },
+    {
+      "start": 297.52,
+      "duration": 3.72,
+      "text": "the four pods are running all the times"
+    },
+    {
+      "start": 299.36,
+      "duration": 3.88,
+      "text": "if that's not the case it'll tell API"
+    },
+    {
+      "start": 301.24,
+      "duration": 3.2,
+      "text": "server which will recreate the P"
+    },
+    {
+      "start": 303.24,
+      "duration": 3.399,
+      "text": "following the same procedure with the"
+    },
+    {
+      "start": 304.44,
+      "duration": 3.96,
+      "text": "scheduler first decides what nodes to"
+    },
+    {
+      "start": 306.639,
+      "duration": 4.241,
+      "text": "create the pods on then gives the"
+    },
+    {
+      "start": 308.4,
+      "duration": 4.639,
+      "text": "information to API server and then cuade"
+    },
+    {
+      "start": 310.88,
+      "duration": 3.599,
+      "text": "creates it so controller manager is used"
+    },
+    {
+      "start": 313.039,
+      "duration": 3.6,
+      "text": "to Monitor and make sure everything is"
+    },
+    {
+      "start": 314.479,
+      "duration": 4.56,
+      "text": "working as you have defined and it does"
+    },
+    {
+      "start": 316.639,
+      "duration": 4.921,
+      "text": "that by comparing the desired state with"
+    },
+    {
+      "start": 319.039,
+      "duration": 4.041,
+      "text": "the actual state of the cluster but"
+    },
+    {
+      "start": 321.56,
+      "duration": 4.079,
+      "text": "where is this cluster information or"
+    },
+    {
+      "start": 323.08,
+      "duration": 4.559,
+      "text": "cluster data stored it is stored inside"
+    },
+    {
+      "start": 325.639,
+      "duration": 4.921,
+      "text": "the new it is stored inside the next"
+    },
+    {
+      "start": 327.639,
+      "duration": 4.761,
+      "text": "Master node component which is hcd hcd"
+    },
+    {
+      "start": 330.56,
+      "duration": 3.68,
+      "text": "is a key value store that stores all the"
+    },
+    {
+      "start": 332.4,
+      "duration": 3.6,
+      "text": "information about the cluster what"
+    },
+    {
+      "start": 334.24,
+      "duration": 3.2,
+      "text": "application is running what pods are"
+    },
+    {
+      "start": 336.0,
+      "duration": 4.919,
+      "text": "running on which nodes and everything"
+    },
+    {
+      "start": 337.44,
+      "duration": 5.479,
+      "text": "else one thing to note is hcd can only"
+    },
+    {
+      "start": 340.919,
+      "duration": 4.041,
+      "text": "talk to the cube API server so if you"
+    },
+    {
+      "start": 342.919,
+      "duration": 4.801,
+      "text": "want to get any information from the hcd"
+    },
+    {
+      "start": 344.96,
+      "duration": 4.48,
+      "text": "it has to be through the cube API server"
+    },
+    {
+      "start": 347.72,
+      "duration": 3.88,
+      "text": "so you can see Cube API server is like a"
+    },
+    {
+      "start": 349.44,
+      "duration": 4.12,
+      "text": "center of communication for every"
+    },
+    {
+      "start": 351.6,
+      "duration": 4.0,
+      "text": "component inside the master node as well"
+    },
+    {
+      "start": 353.56,
+      "duration": 4.759,
+      "text": "as to the CET which is running on the"
+    },
+    {
+      "start": 355.6,
+      "duration": 5.48,
+      "text": "worker node so this is the kubernetes"
+    },
+    {
+      "start": 358.319,
+      "duration": 4.681,
+      "text": "architecture we have Master node and the"
+    },
+    {
+      "start": 361.08,
+      "duration": 3.399,
+      "text": "worker node Master node is responsible"
+    },
+    {
+      "start": 363.0,
+      "duration": 3.599,
+      "text": "for handling workloads inside the"
+    },
+    {
+      "start": 364.479,
+      "duration": 4.241,
+      "text": "cluster worker nodes are actually"
+    },
+    {
+      "start": 366.599,
+      "duration": 4.04,
+      "text": "running the application workloads here"
+    },
+    {
+      "start": 368.72,
+      "duration": 3.68,
+      "text": "inside worker node we have the parts"
+    },
+    {
+      "start": 370.639,
+      "duration": 3.601,
+      "text": "which is the smallest unit responsible"
+    },
+    {
+      "start": 372.4,
+      "duration": 4.0,
+      "text": "to run the application container we have"
+    },
+    {
+      "start": 374.24,
+      "duration": 3.76,
+      "text": "cuate and agent which is going to run on"
+    },
+    {
+      "start": 376.4,
+      "duration": 4.12,
+      "text": "all the worker nodes and also"
+    },
+    {
+      "start": 378.0,
+      "duration": 4.08,
+      "text": "responsible to create pods next we have"
+    },
+    {
+      "start": 380.52,
+      "duration": 3.76,
+      "text": "con the runtime interface and we also"
+    },
+    {
+      "start": 382.08,
+      "duration": 4.36,
+      "text": "have q proxy for networking and for"
+    },
+    {
+      "start": 384.28,
+      "duration": 4.199,
+      "text": "exposing our application inside Master"
+    },
+    {
+      "start": 386.44,
+      "duration": 3.479,
+      "text": "node we have QBE API server which is the"
+    },
+    {
+      "start": 388.479,
+      "duration": 3.44,
+      "text": "entry point and the authentic ation"
+    },
+    {
+      "start": 389.919,
+      "duration": 4.28,
+      "text": "system for every request that you make"
+    },
+    {
+      "start": 391.919,
+      "duration": 4.241,
+      "text": "it also exposes a kubernetes API for the"
+    },
+    {
+      "start": 394.199,
+      "duration": 3.481,
+      "text": "end user to start using it next"
+    },
+    {
+      "start": 396.16,
+      "duration": 4.24,
+      "text": "component is a scheder which is used to"
+    },
+    {
+      "start": 397.68,
+      "duration": 4.48,
+      "text": "assign ports to the notes then we have"
+    },
+    {
+      "start": 400.4,
+      "duration": 3.76,
+      "text": "controller manager that makes sure"
+    },
+    {
+      "start": 402.16,
+      "duration": 3.84,
+      "text": "everything is working as you want or as"
+    },
+    {
+      "start": 404.16,
+      "duration": 4.52,
+      "text": "you have desired and all the cluster"
+    },
+    {
+      "start": 406.0,
+      "duration": 4.72,
+      "text": "information is stored inside hcd so so"
+    },
+    {
+      "start": 408.68,
+      "duration": 3.72,
+      "text": "this is a simplified explanation on ku's"
+    },
+    {
+      "start": 410.72,
+      "duration": 3.479,
+      "text": "architecture I hope this video was"
+    },
+    {
+      "start": 412.4,
+      "duration": 3.519,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 414.199,
+      "duration": 3.601,
+      "text": "any doubt do let me know in the comment"
+    },
+    {
+      "start": 415.919,
+      "duration": 3.801,
+      "text": "section and for more information I would"
+    },
+    {
+      "start": 417.8,
+      "duration": 3.399,
+      "text": "recommend checking out my another video"
+    },
+    {
+      "start": 419.72,
+      "duration": 3.319,
+      "text": "which explains what is kubernetes and"
+    },
+    {
+      "start": 421.199,
+      "duration": 5.481,
+      "text": "how it actually works do check it out"
+    },
+    {
+      "start": 423.039,
+      "duration": 3.641,
+      "text": "thank you and have a good day"
+    }
+  ]
+}

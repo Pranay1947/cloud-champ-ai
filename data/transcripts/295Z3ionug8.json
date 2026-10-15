@@ -1,0 +1,96 @@
+{
+  "video": {
+    "id": "295Z3ionug8",
+    "title": "Supply Chain Attack via GitHub Action! 😳 #devsecops #github",
+    "url": "https://www.youtube.com/watch?v=295Z3ionug8",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.119,
+      "text": "if you are using this in your GitHub"
+    },
+    {
+      "start": 1.92,
+      "duration": 4.56,
+      "text": "actions workflow your cicd secrets are"
+    },
+    {
+      "start": 4.279,
+      "duration": 4.4,
+      "text": "leaked recently a supply chain attack"
+    },
+    {
+      "start": 6.48,
+      "duration": 4.36,
+      "text": "compromised a very popular GitHub action"
+    },
+    {
+      "start": 8.679,
+      "duration": 5.12,
+      "text": "which was used in 23,000 repositories"
+    },
+    {
+      "start": 10.84,
+      "duration": 6.0,
+      "text": "exposing AWS Keys GitHub tokens npm"
+    },
+    {
+      "start": 13.799,
+      "duration": 4.801,
+      "text": "credentials and even private RSA keys so"
+    },
+    {
+      "start": 16.84,
+      "duration": 3.48,
+      "text": "what actually happened attackers"
+    },
+    {
+      "start": 18.6,
+      "duration": 4.2,
+      "text": "hijacked gith her personal access token"
+    },
+    {
+      "start": 20.32,
+      "duration": 4.08,
+      "text": "for TJ actions bought then they modified"
+    },
+    {
+      "start": 22.8,
+      "duration": 3.96,
+      "text": "the version stack to pointed to a"
+    },
+    {
+      "start": 24.4,
+      "duration": 4.719,
+      "text": "malicious commit and later on python"
+    },
+    {
+      "start": 26.76,
+      "duration": 4.96,
+      "text": "script extracted all secrets from cicd"
+    },
+    {
+      "start": 29.119,
+      "duration": 4.44,
+      "text": "Runner if you are using TJ actions in"
+    },
+    {
+      "start": 31.72,
+      "duration": 3.72,
+      "text": "your GitHub workflows make sure to"
+    },
+    {
+      "start": 33.559,
+      "duration": 6.361,
+      "text": "rotate all exposed Secrets audit"
+    },
+    {
+      "start": 35.44,
+      "duration": 4.48,
+      "text": "workflow logs stay safe and subscribe"
+    }
+  ]
+}

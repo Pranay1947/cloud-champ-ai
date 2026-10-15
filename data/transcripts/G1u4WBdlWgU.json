@@ -1,0 +1,1891 @@
+{
+  "video": {
+    "id": "G1u4WBdlWgU",
+    "title": "What is CICD Pipeline? CICD process explained with Hands On Project",
+    "url": "https://www.youtube.com/watch?v=G1u4WBdlWgU",
+    "duration": 838,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 1.439,
+      "duration": 5.88,
+      "text": "what is cicd this is one of the most"
+    },
+    {
+      "start": 5.22,
+      "duration": 4.56,
+      "text": "asked devops interviews question and"
+    },
+    {
+      "start": 7.319,
+      "duration": 4.2,
+      "text": "also a very popular devops practice that"
+    },
+    {
+      "start": 9.78,
+      "duration": 4.439,
+      "text": "every company is following these days"
+    },
+    {
+      "start": 11.519,
+      "duration": 5.161,
+      "text": "now if I ask you what is CI CD process"
+    },
+    {
+      "start": 14.219,
+      "duration": 4.021,
+      "text": "most of you will stop by saying it is a"
+    },
+    {
+      "start": 16.68,
+      "duration": 3.599,
+      "text": "continuous integration and continuous"
+    },
+    {
+      "start": 18.24,
+      "duration": 4.32,
+      "text": "deployment process or you might see a"
+    },
+    {
+      "start": 20.279,
+      "duration": 4.801,
+      "text": "complex definition from a blog or a"
+    },
+    {
+      "start": 22.56,
+      "duration": 3.9,
+      "text": "website that might not make sense so in"
+    },
+    {
+      "start": 25.08,
+      "duration": 3.959,
+      "text": "this video I am going to explain you"
+    },
+    {
+      "start": 26.46,
+      "duration": 4.68,
+      "text": "what is cicd in very simple manner along"
+    },
+    {
+      "start": 29.039,
+      "duration": 5.341,
+      "text": "with different stages in cicd pipeline"
+    },
+    {
+      "start": 31.14,
+      "duration": 5.46,
+      "text": "benefits of using CI CD in devops some"
+    },
+    {
+      "start": 34.38,
+      "duration": 4.56,
+      "text": "popular CX data tools and also a"
+    },
+    {
+      "start": 36.6,
+      "duration": 4.56,
+      "text": "Hands-On demo to set up cicd pipeline"
+    },
+    {
+      "start": 38.94,
+      "duration": 4.26,
+      "text": "for a python application using GitHub"
+    },
+    {
+      "start": 41.16,
+      "duration": 3.719,
+      "text": "actions if you want to understand CSD"
+    },
+    {
+      "start": 43.2,
+      "duration": 4.019,
+      "text": "completely make sure you watch this"
+    },
+    {
+      "start": 44.879,
+      "duration": 4.2,
+      "text": "video till the end and also practice by"
+    },
+    {
+      "start": 47.219,
+      "duration": 3.84,
+      "text": "doing Hands-On demo that you have in the"
+    },
+    {
+      "start": 49.079,
+      "duration": 5.0,
+      "text": "end if you are new to my Channel Please"
+    },
+    {
+      "start": 51.059,
+      "duration": 3.02,
+      "text": "Subscribe let's start"
+    },
+    {
+      "start": 61.32,
+      "duration": 4.38,
+      "text": "so let's begin with what acicd and I am"
+    },
+    {
+      "start": 64.14,
+      "duration": 4.32,
+      "text": "going to explain you this in very simple"
+    },
+    {
+      "start": 65.7,
+      "duration": 5.94,
+      "text": "and short manner so cic is a way to make"
+    },
+    {
+      "start": 68.46,
+      "duration": 4.979,
+      "text": "software faster safer and efficient by"
+    },
+    {
+      "start": 71.64,
+      "duration": 3.9,
+      "text": "streamlining and automating process like"
+    },
+    {
+      "start": 73.439,
+      "duration": 4.081,
+      "text": "building testing and delivering of the"
+    },
+    {
+      "start": 75.54,
+      "duration": 3.72,
+      "text": "software to understand this properly"
+    },
+    {
+      "start": 77.52,
+      "duration": 3.54,
+      "text": "let's look at the traditional way of"
+    },
+    {
+      "start": 79.26,
+      "duration": 4.8,
+      "text": "deploying an application or a website"
+    },
+    {
+      "start": 81.06,
+      "duration": 4.68,
+      "text": "without using CI CD so imagine you are"
+    },
+    {
+      "start": 84.06,
+      "duration": 4.68,
+      "text": "working in the team responsible for"
+    },
+    {
+      "start": 85.74,
+      "duration": 4.5,
+      "text": "deployed application without using CI CD"
+    },
+    {
+      "start": 88.74,
+      "duration": 4.08,
+      "text": "and to do that there are going to be"
+    },
+    {
+      "start": 90.24,
+      "duration": 4.559,
+      "text": "different phases or stages the first"
+    },
+    {
+      "start": 92.82,
+      "duration": 3.9,
+      "text": "phase is going to be the coding phase or"
+    },
+    {
+      "start": 94.799,
+      "duration": 3.18,
+      "text": "development phase where the developers"
+    },
+    {
+      "start": 96.72,
+      "duration": 3.18,
+      "text": "are going to write the code for the"
+    },
+    {
+      "start": 97.979,
+      "duration": 4.081,
+      "text": "application and there can be multiple"
+    },
+    {
+      "start": 99.9,
+      "duration": 3.539,
+      "text": "developers site in the code so they need"
+    },
+    {
+      "start": 102.06,
+      "duration": 3.3,
+      "text": "to make sure that the code is integrated"
+    },
+    {
+      "start": 103.439,
+      "duration": 4.561,
+      "text": "at a central page which can be done"
+    },
+    {
+      "start": 105.36,
+      "duration": 4.38,
+      "text": "using FTP to manually put the code on a"
+    },
+    {
+      "start": 108.0,
+      "duration": 4.079,
+      "text": "synthesized server or they might use"
+    },
+    {
+      "start": 109.74,
+      "duration": 4.5,
+      "text": "Version Control Systems like git so they"
+    },
+    {
+      "start": 112.079,
+      "duration": 5.04,
+      "text": "can store their application code on"
+    },
+    {
+      "start": 114.24,
+      "duration": 4.98,
+      "text": "GitHub auditlab now when the source code"
+    },
+    {
+      "start": 117.119,
+      "duration": 3.96,
+      "text": "is ready they need to compile it which"
+    },
+    {
+      "start": 119.22,
+      "duration": 4.079,
+      "text": "is known as compilation space where you"
+    },
+    {
+      "start": 121.079,
+      "duration": 4.441,
+      "text": "combine file the code to create a build"
+    },
+    {
+      "start": 123.299,
+      "duration": 4.5,
+      "text": "a where is something which has code"
+    },
+    {
+      "start": 125.52,
+      "duration": 4.62,
+      "text": "along with dependencies libraries which"
+    },
+    {
+      "start": 127.799,
+      "duration": 5.401,
+      "text": "runs the software Android code will have"
+    },
+    {
+      "start": 130.14,
+      "duration": 5.34,
+      "text": "APK as a built Java code has jar or"
+    },
+    {
+      "start": 133.2,
+      "duration": 4.2,
+      "text": "Wi-Fi is built Docker image is also one"
+    },
+    {
+      "start": 135.48,
+      "duration": 3.3,
+      "text": "kind of pink now when the brick is ready"
+    },
+    {
+      "start": 137.4,
+      "duration": 3.66,
+      "text": "and your software is running as you"
+    },
+    {
+      "start": 138.78,
+      "duration": 4.92,
+      "text": "expected you need to test it out the"
+    },
+    {
+      "start": 141.06,
+      "duration": 4.14,
+      "text": "third phase is testing phase here the QA"
+    },
+    {
+      "start": 143.7,
+      "duration": 3.06,
+      "text": "Engineers are going to manually test the"
+    },
+    {
+      "start": 145.2,
+      "duration": 3.6,
+      "text": "application to make sure everything is"
+    },
+    {
+      "start": 146.76,
+      "duration": 4.08,
+      "text": "working fine and this is also a manual"
+    },
+    {
+      "start": 148.8,
+      "duration": 3.84,
+      "text": "process once the testing is done and"
+    },
+    {
+      "start": 150.84,
+      "duration": 3.479,
+      "text": "everything is okay you need to plan the"
+    },
+    {
+      "start": 152.64,
+      "duration": 3.54,
+      "text": "deployment now is the deployment space"
+    },
+    {
+      "start": 154.319,
+      "duration": 3.901,
+      "text": "so in this you need to set up a staging"
+    },
+    {
+      "start": 156.18,
+      "duration": 3.72,
+      "text": "server which should replicate the exact"
+    },
+    {
+      "start": 158.22,
+      "duration": 4.2,
+      "text": "production environment and you will"
+    },
+    {
+      "start": 159.9,
+      "duration": 4.559,
+      "text": "deploy your build or your application in"
+    },
+    {
+      "start": 162.42,
+      "duration": 4.14,
+      "text": "this staging server you need to manually"
+    },
+    {
+      "start": 164.459,
+      "duration": 4.021,
+      "text": "check and test out if everything is"
+    },
+    {
+      "start": 166.56,
+      "duration": 3.72,
+      "text": "working in the staging server before you"
+    },
+    {
+      "start": 168.48,
+      "duration": 3.42,
+      "text": "deploy your application on the"
+    },
+    {
+      "start": 170.28,
+      "duration": 3.36,
+      "text": "production environment if everything is"
+    },
+    {
+      "start": 171.9,
+      "duration": 3.24,
+      "text": "working as you want on the staging"
+    },
+    {
+      "start": 173.64,
+      "duration": 3.42,
+      "text": "server you will plan a maintenance"
+    },
+    {
+      "start": 175.14,
+      "duration": 3.84,
+      "text": "window order downtime to deploy an"
+    },
+    {
+      "start": 177.06,
+      "duration": 3.539,
+      "text": "application on production after"
+    },
+    {
+      "start": 178.98,
+      "duration": 3.479,
+      "text": "deployment to production is done and"
+    },
+    {
+      "start": 180.599,
+      "duration": 3.541,
+      "text": "your application is up you still need to"
+    },
+    {
+      "start": 182.459,
+      "duration": 3.301,
+      "text": "create a new monitoring and testing"
+    },
+    {
+      "start": 184.14,
+      "duration": 3.84,
+      "text": "manually to make sure that your"
+    },
+    {
+      "start": 185.76,
+      "duration": 3.9,
+      "text": "application is working fine but if there"
+    },
+    {
+      "start": 187.98,
+      "duration": 3.78,
+      "text": "are any issues you need to manually roll"
+    },
+    {
+      "start": 189.66,
+      "duration": 4.079,
+      "text": "back and go back to the previous version"
+    },
+    {
+      "start": 191.76,
+      "duration": 3.119,
+      "text": "so you see there are so many manual"
+    },
+    {
+      "start": 193.739,
+      "duration": 3.36,
+      "text": "processes there are so many human"
+    },
+    {
+      "start": 194.879,
+      "duration": 4.86,
+      "text": "interventions which can cause issues and"
+    },
+    {
+      "start": 197.099,
+      "duration": 4.021,
+      "text": "errors in the deployment process not"
+    },
+    {
+      "start": 199.739,
+      "duration": 2.821,
+      "text": "just this if you wanted to play a new"
+    },
+    {
+      "start": 201.12,
+      "duration": 3.36,
+      "text": "version of your application you will"
+    },
+    {
+      "start": 202.56,
+      "duration": 4.44,
+      "text": "have to continue the same cycle again"
+    },
+    {
+      "start": 204.48,
+      "duration": 4.74,
+      "text": "and again this can cause so much issues"
+    },
+    {
+      "start": 207.0,
+      "duration": 5.04,
+      "text": "and can take so much time this is why"
+    },
+    {
+      "start": 209.22,
+      "duration": 4.62,
+      "text": "companies are using cicd because cicd"
+    },
+    {
+      "start": 212.04,
+      "duration": 3.66,
+      "text": "can automate all this process it can"
+    },
+    {
+      "start": 213.84,
+      "duration": 4.319,
+      "text": "automate the building testing and"
+    },
+    {
+      "start": 215.7,
+      "duration": 4.92,
+      "text": "deploying of an application so now let's"
+    },
+    {
+      "start": 218.159,
+      "duration": 4.621,
+      "text": "look at the definition CI CD stands for"
+    },
+    {
+      "start": 220.62,
+      "duration": 4.199,
+      "text": "continuous integration and continuous"
+    },
+    {
+      "start": 222.78,
+      "duration": 4.019,
+      "text": "digivz also a continuous deployment"
+    },
+    {
+      "start": 224.819,
+      "duration": 4.381,
+      "text": "which is a devops process to automate"
+    },
+    {
+      "start": 226.799,
+      "duration": 5.041,
+      "text": "software delivery using cicd pipeline"
+    },
+    {
+      "start": 229.2,
+      "duration": 4.56,
+      "text": "you can build code run test and save the"
+    },
+    {
+      "start": 231.84,
+      "duration": 3.84,
+      "text": "deploy your applications on various"
+    },
+    {
+      "start": 233.76,
+      "duration": 4.38,
+      "text": "different platforms or Cloud"
+    },
+    {
+      "start": 235.68,
+      "duration": 3.72,
+      "text": "environments so now you know cicd is a"
+    },
+    {
+      "start": 238.14,
+      "duration": 3.0,
+      "text": "process of continuous integration"
+    },
+    {
+      "start": 239.4,
+      "duration": 3.66,
+      "text": "continuous delivery and continuous"
+    },
+    {
+      "start": 241.14,
+      "duration": 4.08,
+      "text": "deployment but what is actually"
+    },
+    {
+      "start": 243.06,
+      "duration": 4.08,
+      "text": "continuous integration so continuous"
+    },
+    {
+      "start": 245.22,
+      "duration": 3.78,
+      "text": "integration is a process in CI CD"
+    },
+    {
+      "start": 247.14,
+      "duration": 3.9,
+      "text": "pipeline where the members are going to"
+    },
+    {
+      "start": 249.0,
+      "duration": 4.739,
+      "text": "integrate their work or push their code"
+    },
+    {
+      "start": 251.04,
+      "duration": 4.199,
+      "text": "on Center repository systems where their"
+    },
+    {
+      "start": 253.739,
+      "duration": 4.141,
+      "text": "code or their work is going to be"
+    },
+    {
+      "start": 255.239,
+      "duration": 4.081,
+      "text": "checked automatically tested out next is"
+    },
+    {
+      "start": 257.88,
+      "duration": 3.0,
+      "text": "continuous delivery where you compile"
+    },
+    {
+      "start": 259.32,
+      "duration": 3.72,
+      "text": "the code that you got from the"
+    },
+    {
+      "start": 260.88,
+      "duration": 4.02,
+      "text": "repository and you create the build test"
+    },
+    {
+      "start": 263.04,
+      "duration": 3.659,
+      "text": "it out and be readily deployed"
+    },
+    {
+      "start": 264.9,
+      "duration": 3.48,
+      "text": "continuous delivery is a process of"
+    },
+    {
+      "start": 266.699,
+      "duration": 3.72,
+      "text": "making sure that the software is ready"
+    },
+    {
+      "start": 268.38,
+      "duration": 4.319,
+      "text": "and it can be released anytime you want"
+    },
+    {
+      "start": 270.419,
+      "duration": 3.961,
+      "text": "last one is continuous deployment which"
+    },
+    {
+      "start": 272.699,
+      "duration": 3.841,
+      "text": "is the process of deploying your"
+    },
+    {
+      "start": 274.38,
+      "duration": 4.02,
+      "text": "application or a software or you have"
+    },
+    {
+      "start": 276.54,
+      "duration": 3.54,
+      "text": "built all the cloud or servers or"
+    },
+    {
+      "start": 278.4,
+      "duration": 4.32,
+      "text": "kubernetes cluster whatever you intend"
+    },
+    {
+      "start": 280.08,
+      "duration": 4.2,
+      "text": "to this is used to automatically deploy"
+    },
+    {
+      "start": 282.72,
+      "duration": 3.18,
+      "text": "new features and new versions of your"
+    },
+    {
+      "start": 284.28,
+      "duration": 4.199,
+      "text": "application whenever the code is"
+    },
+    {
+      "start": 285.9,
+      "duration": 4.2,
+      "text": "integrated in the repository and then it"
+    },
+    {
+      "start": 288.479,
+      "duration": 3.78,
+      "text": "can be deployed on any server whenever"
+    },
+    {
+      "start": 290.1,
+      "duration": 5.099,
+      "text": "you push it this three process together"
+    },
+    {
+      "start": 292.259,
+      "duration": 4.5,
+      "text": "creates a chcd pipeline a cicd pipeline"
+    },
+    {
+      "start": 295.199,
+      "duration": 5.041,
+      "text": "will have different stages including"
+    },
+    {
+      "start": 296.759,
+      "duration": 5.821,
+      "text": "Source stage build stage test stage and"
+    },
+    {
+      "start": 300.24,
+      "duration": 4.14,
+      "text": "deploy stage the first one is solar"
+    },
+    {
+      "start": 302.58,
+      "duration": 3.96,
+      "text": "stage which is the starting point of the"
+    },
+    {
+      "start": 304.38,
+      "duration": 3.84,
+      "text": "cicd pipeline when any change is made"
+    },
+    {
+      "start": 306.54,
+      "duration": 3.78,
+      "text": "into your code and pushed to your"
+    },
+    {
+      "start": 308.22,
+      "duration": 4.259,
+      "text": "repository a CSD python will be"
+    },
+    {
+      "start": 310.32,
+      "duration": 4.02,
+      "text": "triggered to go into next stage which is"
+    },
+    {
+      "start": 312.479,
+      "duration": 3.841,
+      "text": "the build stage now what happens in the"
+    },
+    {
+      "start": 314.34,
+      "duration": 3.72,
+      "text": "bin stage in the bin stage your code is"
+    },
+    {
+      "start": 316.32,
+      "duration": 3.84,
+      "text": "combined with dependencies and libraries"
+    },
+    {
+      "start": 318.06,
+      "duration": 5.34,
+      "text": "to create a build or an artifact that"
+    },
+    {
+      "start": 320.16,
+      "duration": 5.16,
+      "text": "can be deployed in your in your platform"
+    },
+    {
+      "start": 323.4,
+      "duration": 3.359,
+      "text": "but after the build is created it is"
+    },
+    {
+      "start": 325.32,
+      "duration": 3.54,
+      "text": "going to go in the next stage which is"
+    },
+    {
+      "start": 326.759,
+      "duration": 3.961,
+      "text": "the test stage in the test stage there"
+    },
+    {
+      "start": 328.86,
+      "duration": 4.2,
+      "text": "are going to be automated tests to test"
+    },
+    {
+      "start": 330.72,
+      "duration": 4.02,
+      "text": "your application code and to check if it"
+    },
+    {
+      "start": 333.06,
+      "duration": 3.18,
+      "text": "behaves correctly if there are any"
+    },
+    {
+      "start": 334.74,
+      "duration": 3.84,
+      "text": "issues to your application you can find"
+    },
+    {
+      "start": 336.24,
+      "duration": 4.26,
+      "text": "them in your test stage and also resolve"
+    },
+    {
+      "start": 338.58,
+      "duration": 3.36,
+      "text": "them once the test day is done it is"
+    },
+    {
+      "start": 340.5,
+      "duration": 3.66,
+      "text": "going to move to the next stage which is"
+    },
+    {
+      "start": 341.94,
+      "duration": 3.599,
+      "text": "the deploy stage finally in the deploy"
+    },
+    {
+      "start": 344.16,
+      "duration": 3.479,
+      "text": "stage your application goes light"
+    },
+    {
+      "start": 345.539,
+      "duration": 4.141,
+      "text": "because in this your application will be"
+    },
+    {
+      "start": 347.639,
+      "duration": 3.9,
+      "text": "deployed on a server after it has passed"
+    },
+    {
+      "start": 349.68,
+      "duration": 3.48,
+      "text": "all the tests and everything works as"
+    },
+    {
+      "start": 351.539,
+      "duration": 3.901,
+      "text": "you want so these are all the different"
+    },
+    {
+      "start": 353.16,
+      "duration": 3.78,
+      "text": "stages in cicd pipeline now that you"
+    },
+    {
+      "start": 355.44,
+      "duration": 3.84,
+      "text": "understand what a cicd and different"
+    },
+    {
+      "start": 356.94,
+      "duration": 4.92,
+      "text": "state is in cicd Pipeline and before we"
+    },
+    {
+      "start": 359.28,
+      "duration": 4.5,
+      "text": "move a while to look at popular CX tools"
+    },
+    {
+      "start": 361.86,
+      "duration": 4.08,
+      "text": "along with Hands-On let's look at the"
+    },
+    {
+      "start": 363.78,
+      "duration": 4.259,
+      "text": "benefits of using cicd Concepts in your"
+    },
+    {
+      "start": 365.94,
+      "duration": 3.9,
+      "text": "application deployment the first benefit"
+    },
+    {
+      "start": 368.039,
+      "duration": 4.38,
+      "text": "is obviously quicker time to Market"
+    },
+    {
+      "start": 369.84,
+      "duration": 5.1,
+      "text": "using cicd we can automate the process"
+    },
+    {
+      "start": 372.419,
+      "duration": 4.62,
+      "text": "reduce manual Intervention which allows"
+    },
+    {
+      "start": 374.94,
+      "duration": 4.199,
+      "text": "us to deploy application faster and"
+    },
+    {
+      "start": 377.039,
+      "duration": 4.741,
+      "text": "bring software releases quicker second"
+    },
+    {
+      "start": 379.139,
+      "duration": 5.101,
+      "text": "is higher quantity automated testing in"
+    },
+    {
+      "start": 381.78,
+      "duration": 4.44,
+      "text": "cicd can help us find buns and issues"
+    },
+    {
+      "start": 384.24,
+      "duration": 5.16,
+      "text": "early in the development process third"
+    },
+    {
+      "start": 386.22,
+      "duration": 5.34,
+      "text": "is reduced risk using cicd we can push"
+    },
+    {
+      "start": 389.4,
+      "duration": 4.139,
+      "text": "smaller changes and more frequent"
+    },
+    {
+      "start": 391.56,
+      "duration": 4.38,
+      "text": "updates which are less likely to cause"
+    },
+    {
+      "start": 393.539,
+      "duration": 5.16,
+      "text": "major problems or bring production down"
+    },
+    {
+      "start": 395.94,
+      "duration": 4.68,
+      "text": "for this collaboration using cicd"
+    },
+    {
+      "start": 398.699,
+      "duration": 4.261,
+      "text": "developers testers and operation teams"
+    },
+    {
+      "start": 400.62,
+      "duration": 4.139,
+      "text": "can collaborate more effectively another"
+    },
+    {
+      "start": 402.96,
+      "duration": 4.14,
+      "text": "benefit could be continuous Improvement"
+    },
+    {
+      "start": 404.759,
+      "duration": 5.401,
+      "text": "the syntax that you get throughout the"
+    },
+    {
+      "start": 407.1,
+      "duration": 5.28,
+      "text": "cicd stages can be useful to improve"
+    },
+    {
+      "start": 410.16,
+      "duration": 3.479,
+      "text": "future releases these are just some of"
+    },
+    {
+      "start": 412.38,
+      "duration": 3.42,
+      "text": "the benefits that you can get through"
+    },
+    {
+      "start": 413.639,
+      "duration": 4.021,
+      "text": "cicd but there are many big companies"
+    },
+    {
+      "start": 415.8,
+      "duration": 4.619,
+      "text": "that have seen drastic changes after"
+    },
+    {
+      "start": 417.66,
+      "duration": 5.94,
+      "text": "implementing cicd so companies like HC"
+    },
+    {
+      "start": 420.419,
+      "duration": 5.461,
+      "text": "Netflix Adobe deploy more than 50 times"
+    },
+    {
+      "start": 423.6,
+      "duration": 5.7,
+      "text": "every day not just this Amazon deploys"
+    },
+    {
+      "start": 425.88,
+      "duration": 5.939,
+      "text": "new releases every 11.7 seconds and this"
+    },
+    {
+      "start": 429.3,
+      "duration": 4.5,
+      "text": "is Possible only through CI CD now let's"
+    },
+    {
+      "start": 431.819,
+      "duration": 4.5,
+      "text": "look at some of the popular search Tools"
+    },
+    {
+      "start": 433.8,
+      "duration": 5.94,
+      "text": "in devops some popular cxd tools in"
+    },
+    {
+      "start": 436.319,
+      "duration": 6.541,
+      "text": "devops include Jenkins gitlab CI GitHub"
+    },
+    {
+      "start": 439.74,
+      "duration": 6.78,
+      "text": "actions Travis CI AWS code pipeline"
+    },
+    {
+      "start": 442.86,
+      "duration": 5.52,
+      "text": "Azure devops Services team CT bamboo and"
+    },
+    {
+      "start": 446.52,
+      "duration": 3.54,
+      "text": "lot more your company might be using any"
+    },
+    {
+      "start": 448.38,
+      "duration": 3.78,
+      "text": "of these tools which can depend on the"
+    },
+    {
+      "start": 450.06,
+      "duration": 3.6,
+      "text": "requirement if you want to learn CCT I"
+    },
+    {
+      "start": 452.16,
+      "duration": 4.8,
+      "text": "would recommend you doing with with"
+    },
+    {
+      "start": 453.66,
+      "duration": 5.52,
+      "text": "either Jenkins or gitlab or GitHub which"
+    },
+    {
+      "start": 456.96,
+      "duration": 3.78,
+      "text": "I'm one of the most used the ICA tools"
+    },
+    {
+      "start": 459.18,
+      "duration": 3.54,
+      "text": "in the market right now now that you"
+    },
+    {
+      "start": 460.74,
+      "duration": 3.66,
+      "text": "understand what is CI CD along with its"
+    },
+    {
+      "start": 462.72,
+      "duration": 4.259,
+      "text": "benefits and different stages of it"
+    },
+    {
+      "start": 464.4,
+      "duration": 4.98,
+      "text": "let's do a Hands-On demo to set up cicd"
+    },
+    {
+      "start": 466.979,
+      "duration": 4.921,
+      "text": "pipeline for a python application on"
+    },
+    {
+      "start": 469.38,
+      "duration": 4.379,
+      "text": "GitHub let's go"
+    },
+    {
+      "start": 471.9,
+      "duration": 3.78,
+      "text": "all right so I'm here on my computer"
+    },
+    {
+      "start": 473.759,
+      "duration": 4.5,
+      "text": "screen and I have GitHub actions open"
+    },
+    {
+      "start": 475.68,
+      "duration": 4.32,
+      "text": "here GitHub actions is a very popular CI"
+    },
+    {
+      "start": 478.259,
+      "duration": 3.541,
+      "text": "CD tool that you can use to automate"
+    },
+    {
+      "start": 480.0,
+      "duration": 4.199,
+      "text": "building testing and deploying of your"
+    },
+    {
+      "start": 481.8,
+      "duration": 5.04,
+      "text": "application for this demo I have a very"
+    },
+    {
+      "start": 484.199,
+      "duration": 5.22,
+      "text": "simple python application created using"
+    },
+    {
+      "start": 486.84,
+      "duration": 5.88,
+      "text": "flask module to show us hello world"
+    },
+    {
+      "start": 489.419,
+      "duration": 5.581,
+      "text": "message on our website and"
+    },
+    {
+      "start": 492.72,
+      "duration": 3.84,
+      "text": "this application is containerized so I'm"
+    },
+    {
+      "start": 495.0,
+      "duration": 4.74,
+      "text": "creating a Docker container using this"
+    },
+    {
+      "start": 496.56,
+      "duration": 5.039,
+      "text": "topify and uploading it on my Docker Hub"
+    },
+    {
+      "start": 499.74,
+      "duration": 3.78,
+      "text": "repository here"
+    },
+    {
+      "start": 501.599,
+      "duration": 4.081,
+      "text": "so if I were to do this manually I need"
+    },
+    {
+      "start": 503.52,
+      "duration": 5.1,
+      "text": "to run the commands Docker build Docker"
+    },
+    {
+      "start": 505.68,
+      "duration": 4.859,
+      "text": "uh push to push this image on Docker app"
+    },
+    {
+      "start": 508.62,
+      "duration": 4.32,
+      "text": "but I'm going to automate all of it"
+    },
+    {
+      "start": 510.539,
+      "duration": 4.92,
+      "text": "along with some test so I have a test"
+    },
+    {
+      "start": 512.94,
+      "duration": 4.08,
+      "text": "dot Pi if I created to run the test on"
+    },
+    {
+      "start": 515.459,
+      "duration": 4.02,
+      "text": "this particular application"
+    },
+    {
+      "start": 517.02,
+      "duration": 4.079,
+      "text": "so this in this test file I am running a"
+    },
+    {
+      "start": 519.479,
+      "duration": 3.721,
+      "text": "test to check that the message should"
+    },
+    {
+      "start": 521.099,
+      "duration": 3.721,
+      "text": "always be hello world and if it is"
+    },
+    {
+      "start": 523.2,
+      "duration": 3.42,
+      "text": "something else than hello world you"
+    },
+    {
+      "start": 524.82,
+      "duration": 4.26,
+      "text": "should give an error you can see there's"
+    },
+    {
+      "start": 526.62,
+      "duration": 4.68,
+      "text": "a function created to check that the"
+    },
+    {
+      "start": 529.08,
+      "duration": 5.16,
+      "text": "test should always have hello world and"
+    },
+    {
+      "start": 531.3,
+      "duration": 4.86,
+      "text": "it should also have a 200 series code so"
+    },
+    {
+      "start": 534.24,
+      "duration": 3.599,
+      "text": "now to test this out I am going to"
+    },
+    {
+      "start": 536.16,
+      "duration": 3.48,
+      "text": "change make some change in app.pi but"
+    },
+    {
+      "start": 537.839,
+      "duration": 5.161,
+      "text": "before I do that let me show you the CI"
+    },
+    {
+      "start": 539.64,
+      "duration": 5.759,
+      "text": "CD pipeline file so here is the CHP file"
+    },
+    {
+      "start": 543.0,
+      "duration": 4.56,
+      "text": "the name is cicd Pipeline and it will be"
+    },
+    {
+      "start": 545.399,
+      "duration": 4.38,
+      "text": "triggered whenever this push made on the"
+    },
+    {
+      "start": 547.56,
+      "duration": 4.44,
+      "text": "main branch now in this there are two"
+    },
+    {
+      "start": 549.779,
+      "duration": 3.961,
+      "text": "jobs the first is a build job and then"
+    },
+    {
+      "start": 552.0,
+      "duration": 3.839,
+      "text": "there's a test job"
+    },
+    {
+      "start": 553.74,
+      "duration": 3.96,
+      "text": "in the build job there are some steps"
+    },
+    {
+      "start": 555.839,
+      "duration": 4.201,
+      "text": "here and this cha pipeline is going to"
+    },
+    {
+      "start": 557.7,
+      "duration": 4.44,
+      "text": "run on Ubuntu latest a few steps like"
+    },
+    {
+      "start": 560.04,
+      "duration": 3.84,
+      "text": "check out the code log into Docker Hub"
+    },
+    {
+      "start": 562.14,
+      "duration": 3.6,
+      "text": "you can see this this command going to"
+    },
+    {
+      "start": 563.88,
+      "duration": 3.42,
+      "text": "run I also need to put username and"
+    },
+    {
+      "start": 565.74,
+      "duration": 3.0,
+      "text": "password in my secrets so you can do"
+    },
+    {
+      "start": 567.3,
+      "duration": 3.78,
+      "text": "that by going into settings I'll show"
+    },
+    {
+      "start": 568.74,
+      "duration": 4.02,
+      "text": "you that in a second after this I am"
+    },
+    {
+      "start": 571.08,
+      "duration": 4.14,
+      "text": "going to build tag and push the image to"
+    },
+    {
+      "start": 572.76,
+      "duration": 4.5,
+      "text": "Docker up so when the app is ready the"
+    },
+    {
+      "start": 575.22,
+      "duration": 4.679,
+      "text": "CHD pipeline is going to go ahead and"
+    },
+    {
+      "start": 577.26,
+      "duration": 4.38,
+      "text": "create a image and push it on Docker up"
+    },
+    {
+      "start": 579.899,
+      "duration": 4.021,
+      "text": "to show that in action I'm going to go"
+    },
+    {
+      "start": 581.64,
+      "duration": 4.62,
+      "text": "ahead and delete this repository so I'll"
+    },
+    {
+      "start": 583.92,
+      "duration": 4.5,
+      "text": "go here and delete this repository to"
+    },
+    {
+      "start": 586.26,
+      "duration": 4.079,
+      "text": "make sure that cicd pipeline will create"
+    },
+    {
+      "start": 588.42,
+      "duration": 3.3,
+      "text": "a new image whenever there's a push made"
+    },
+    {
+      "start": 590.339,
+      "duration": 3.481,
+      "text": "to our Repository"
+    },
+    {
+      "start": 591.72,
+      "duration": 4.619,
+      "text": "so I'm going to go ahead type my image"
+    },
+    {
+      "start": 593.82,
+      "duration": 4.86,
+      "text": "to delete this okay"
+    },
+    {
+      "start": 596.339,
+      "duration": 4.261,
+      "text": "and this will go ahead and delete it"
+    },
+    {
+      "start": 598.68,
+      "duration": 3.839,
+      "text": "now when the build is done it is going"
+    },
+    {
+      "start": 600.6,
+      "duration": 3.9,
+      "text": "to test the code so it will test by"
+    },
+    {
+      "start": 602.519,
+      "duration": 4.44,
+      "text": "check out the code so then install"
+    },
+    {
+      "start": 604.5,
+      "duration": 5.82,
+      "text": "dependencies in requirement.txt and then"
+    },
+    {
+      "start": 606.959,
+      "duration": 5.221,
+      "text": "using pi test I am going to test the so"
+    },
+    {
+      "start": 610.32,
+      "duration": 4.139,
+      "text": "here in this we have a test created"
+    },
+    {
+      "start": 612.18,
+      "duration": 4.339,
+      "text": "let's go ahead and try that out so in my"
+    },
+    {
+      "start": 614.459,
+      "duration": 5.521,
+      "text": "app.pi I'm going to make a change here"
+    },
+    {
+      "start": 616.519,
+      "duration": 8.38,
+      "text": "instead of hello world I'll say hello CI"
+    },
+    {
+      "start": 619.98,
+      "duration": 6.6,
+      "text": "CD world so let's make it c i c d world"
+    },
+    {
+      "start": 624.899,
+      "duration": 4.5,
+      "text": "I'm going to commit and push this change"
+    },
+    {
+      "start": 626.58,
+      "duration": 6.8,
+      "text": "now so update app.player let's make it"
+    },
+    {
+      "start": 629.399,
+      "duration": 3.981,
+      "text": "test CI CD pipeline"
+    },
+    {
+      "start": 633.959,
+      "duration": 3.961,
+      "text": "uh cicd demo"
+    },
+    {
+      "start": 636.6,
+      "duration": 3.6,
+      "text": "I'm going to go ahead and commit this"
+    },
+    {
+      "start": 637.92,
+      "duration": 4.08,
+      "text": "change now when I commit this change it"
+    },
+    {
+      "start": 640.2,
+      "duration": 4.02,
+      "text": "should trigger the pipeline"
+    },
+    {
+      "start": 642.0,
+      "duration": 3.36,
+      "text": "so you'll see a pipeline being created"
+    },
+    {
+      "start": 644.22,
+      "duration": 3.72,
+      "text": "here"
+    },
+    {
+      "start": 645.36,
+      "duration": 5.159,
+      "text": "which has been"
+    },
+    {
+      "start": 647.94,
+      "duration": 4.98,
+      "text": "defined now so in this pipeline there"
+    },
+    {
+      "start": 650.519,
+      "duration": 3.961,
+      "text": "are two jobs the build job and the test"
+    },
+    {
+      "start": 652.92,
+      "duration": 3.359,
+      "text": "show"
+    },
+    {
+      "start": 654.48,
+      "duration": 3.12,
+      "text": "so the bill is and the test job is"
+    },
+    {
+      "start": 656.279,
+      "duration": 4.221,
+      "text": "running very soon we'll see that the"
+    },
+    {
+      "start": 657.6,
+      "duration": 2.9,
+      "text": "build has been created"
+    },
+    {
+      "start": 661.86,
+      "duration": 4.62,
+      "text": "and you can see the desktops field now"
+    },
+    {
+      "start": 663.779,
+      "duration": 4.74,
+      "text": "so why why is the test field is if you"
+    },
+    {
+      "start": 666.48,
+      "duration": 4.56,
+      "text": "see here it says hello cicd world"
+    },
+    {
+      "start": 668.519,
+      "duration": 5.041,
+      "text": "instead of hello world and this is the"
+    },
+    {
+      "start": 671.04,
+      "duration": 5.039,
+      "text": "problem so this is because in the pi"
+    },
+    {
+      "start": 673.56,
+      "duration": 3.959,
+      "text": "test we have created a test to see that"
+    },
+    {
+      "start": 676.079,
+      "duration": 3.961,
+      "text": "the message should always be hello wood"
+    },
+    {
+      "start": 677.519,
+      "duration": 4.56,
+      "text": "now in the build stage"
+    },
+    {
+      "start": 680.04,
+      "duration": 4.08,
+      "text": "you can see it has check out the code"
+    },
+    {
+      "start": 682.079,
+      "duration": 4.38,
+      "text": "now it is going to login it has created"
+    },
+    {
+      "start": 684.12,
+      "duration": 4.5,
+      "text": "the build and now uh very soon we should"
+    },
+    {
+      "start": 686.459,
+      "duration": 4.081,
+      "text": "see an image created here I'm going to"
+    },
+    {
+      "start": 688.62,
+      "duration": 4.98,
+      "text": "refresh the page and we should have a"
+    },
+    {
+      "start": 690.54,
+      "duration": 5.58,
+      "text": "repository with an image my image which"
+    },
+    {
+      "start": 693.6,
+      "duration": 4.38,
+      "text": "is here all right let's go ahead and so"
+    },
+    {
+      "start": 696.12,
+      "duration": 5.1,
+      "text": "you can see it's pushed ready a few"
+    },
+    {
+      "start": 697.98,
+      "duration": 5.64,
+      "text": "seconds ago which is 12 35 right now I'm"
+    },
+    {
+      "start": 701.22,
+      "duration": 5.28,
+      "text": "going to go ahead and"
+    },
+    {
+      "start": 703.62,
+      "duration": 5.1,
+      "text": "pull it along with this I also get"
+    },
+    {
+      "start": 706.5,
+      "duration": 4.98,
+      "text": "I also get a notification on my mail"
+    },
+    {
+      "start": 708.72,
+      "duration": 4.619,
+      "text": "saying that the cicd pipeline has failed"
+    },
+    {
+      "start": 711.48,
+      "duration": 3.9,
+      "text": "as you can see it"
+    },
+    {
+      "start": 713.339,
+      "duration": 3.361,
+      "text": "this way you can be notified and the"
+    },
+    {
+      "start": 715.38,
+      "duration": 2.699,
+      "text": "developers can make the change whenever"
+    },
+    {
+      "start": 716.7,
+      "duration": 4.62,
+      "text": "they want now I'm going to open my"
+    },
+    {
+      "start": 718.079,
+      "duration": 5.401,
+      "text": "terminal to test out that the my new uh"
+    },
+    {
+      "start": 721.32,
+      "duration": 4.5,
+      "text": "that the app shows me the new message or"
+    },
+    {
+      "start": 723.48,
+      "duration": 4.979,
+      "text": "not so I'll say docker"
+    },
+    {
+      "start": 725.82,
+      "duration": 4.5,
+      "text": "pull and this will pull the image in my"
+    },
+    {
+      "start": 728.459,
+      "duration": 3.781,
+      "text": "local machine once it is built I can"
+    },
+    {
+      "start": 730.32,
+      "duration": 4.639,
+      "text": "also run it"
+    },
+    {
+      "start": 732.24,
+      "duration": 2.719,
+      "text": "set it"
+    },
+    {
+      "start": 741.48,
+      "duration": 3.12,
+      "text": "okay now the pool is ready I'm going to"
+    },
+    {
+      "start": 743.279,
+      "duration": 6.081,
+      "text": "go ahead and run this app so I'll say"
+    },
+    {
+      "start": 744.6,
+      "duration": 4.76,
+      "text": "Docker run and the name of the image"
+    },
+    {
+      "start": 750.18,
+      "duration": 4.2,
+      "text": "now it is going to run it here let's"
+    },
+    {
+      "start": 751.92,
+      "duration": 4.38,
+      "text": "open it and it says hello cicd world"
+    },
+    {
+      "start": 754.38,
+      "duration": 4.5,
+      "text": "this is how cicd can make your"
+    },
+    {
+      "start": 756.3,
+      "duration": 4.32,
+      "text": "application deployment very very fast so"
+    },
+    {
+      "start": 758.88,
+      "duration": 3.6,
+      "text": "this was our demo if you want to try"
+    },
+    {
+      "start": 760.62,
+      "duration": 3.839,
+      "text": "this out I am going to paste the link of"
+    },
+    {
+      "start": 762.48,
+      "duration": 4.32,
+      "text": "this repository below you can clone the"
+    },
+    {
+      "start": 764.459,
+      "duration": 4.56,
+      "text": "code and try it out but make sure to"
+    },
+    {
+      "start": 766.8,
+      "duration": 4.32,
+      "text": "insert secrets"
+    },
+    {
+      "start": 769.019,
+      "duration": 4.38,
+      "text": "and Docker app username and Docker a"
+    },
+    {
+      "start": 771.12,
+      "duration": 4.08,
+      "text": "password in this secrets and variables"
+    },
+    {
+      "start": 773.399,
+      "duration": 3.481,
+      "text": "section so I have few variables created"
+    },
+    {
+      "start": 775.2,
+      "duration": 3.9,
+      "text": "you can also do the same you don't need"
+    },
+    {
+      "start": 776.88,
+      "duration": 5.22,
+      "text": "any access key ID or seed access key"
+    },
+    {
+      "start": 779.1,
+      "duration": 5.4,
+      "text": "unless you are deploying this app on ECS"
+    },
+    {
+      "start": 782.1,
+      "duration": 4.799,
+      "text": "or eks or ec2 instances you just need"
+    },
+    {
+      "start": 784.5,
+      "duration": 5.459,
+      "text": "Docker Hub uh token Docker up username"
+    },
+    {
+      "start": 786.899,
+      "duration": 5.221,
+      "text": "and also check other variables if needed"
+    },
+    {
+      "start": 789.959,
+      "duration": 4.981,
+      "text": "so I hope this video this demo has"
+    },
+    {
+      "start": 792.12,
+      "duration": 4.38,
+      "text": "helped you demonstrate how cicd work in"
+    },
+    {
+      "start": 794.94,
+      "duration": 4.32,
+      "text": "real life if you want more position"
+    },
+    {
+      "start": 796.5,
+      "duration": 5.1,
+      "text": "series make sure to drop a comment to"
+    },
+    {
+      "start": 799.26,
+      "duration": 3.54,
+      "text": "let me know if you want some projects so"
+    },
+    {
+      "start": 801.6,
+      "duration": 2.82,
+      "text": "I hope now you have a complete"
+    },
+    {
+      "start": 802.8,
+      "duration": 3.479,
+      "text": "understanding of what is CI CD and you"
+    },
+    {
+      "start": 804.42,
+      "duration": 3.719,
+      "text": "can explain it to anyone also you can"
+    },
+    {
+      "start": 806.279,
+      "duration": 4.381,
+      "text": "download how to set up a Ci City"
+    },
+    {
+      "start": 808.139,
+      "duration": 4.26,
+      "text": "pipeline using GitHub actions but cicd"
+    },
+    {
+      "start": 810.66,
+      "duration": 4.08,
+      "text": "is not just limited to automating"
+    },
+    {
+      "start": 812.399,
+      "duration": 4.321,
+      "text": "building testing and deployment you can"
+    },
+    {
+      "start": 814.74,
+      "duration": 4.08,
+      "text": "also use cicd with tools like terraform"
+    },
+    {
+      "start": 816.72,
+      "duration": 3.9,
+      "text": "ansible to automate infrastructure"
+    },
+    {
+      "start": 818.82,
+      "duration": 4.079,
+      "text": "provisioning configuration management"
+    },
+    {
+      "start": 820.62,
+      "duration": 4.5,
+      "text": "and much more if you want to see more"
+    },
+    {
+      "start": 822.899,
+      "duration": 4.261,
+      "text": "advanced projects on cicd let me know in"
+    },
+    {
+      "start": 825.12,
+      "duration": 3.899,
+      "text": "the comment sections and do subscribe to"
+    },
+    {
+      "start": 827.16,
+      "duration": 4.04,
+      "text": "Cloud champ thank you and have a good"
+    },
+    {
+      "start": 829.019,
+      "duration": 2.181,
+      "text": "day"
+    }
+  ]
+}

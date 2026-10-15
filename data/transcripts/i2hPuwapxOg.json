@@ -1,0 +1,706 @@
+{
+  "video": {
+    "id": "i2hPuwapxOg",
+    "title": "Generative AI vs AI Agents vs Agentic AI Explained Simply with Example in 5 Mins!",
+    "url": "https://www.youtube.com/watch?v=i2hPuwapxOg",
+    "duration": 290,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 3.519,
+      "text": "Hi everyone, in this video you will"
+    },
+    {
+      "start": 2.24,
+      "duration": 4.559,
+      "text": "understand the clear difference between"
+    },
+    {
+      "start": 3.679,
+      "duration": 5.441,
+      "text": "Gen AI, AI agents and agentic AI with a"
+    },
+    {
+      "start": 6.799,
+      "duration": 3.92,
+      "text": "real world example. Understanding the"
+    },
+    {
+      "start": 9.12,
+      "duration": 3.76,
+      "text": "difference between these three is super"
+    },
+    {
+      "start": 10.719,
+      "duration": 4.161,
+      "text": "important for anyone learning or using"
+    },
+    {
+      "start": 12.88,
+      "duration": 3.6,
+      "text": "AI tools. So make sure you like this"
+    },
+    {
+      "start": 14.88,
+      "duration": 3.2,
+      "text": "video and watch it till the end. Let's"
+    },
+    {
+      "start": 16.48,
+      "duration": 3.6,
+      "text": "imagine you work in a company as a"
+    },
+    {
+      "start": 18.08,
+      "duration": 4.16,
+      "text": "DevOps engineer and you are given a task"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.72,
+      "text": "to migrate a microservices application"
+    },
+    {
+      "start": 22.24,
+      "duration": 4.24,
+      "text": "from virtual machine to Kubernetes by"
+    },
+    {
+      "start": 24.8,
+      "duration": 3.68,
+      "text": "creating health charts, deploying"
+    },
+    {
+      "start": 26.48,
+      "duration": 4.799,
+      "text": "services, implementing, monitoring and"
+    },
+    {
+      "start": 28.48,
+      "duration": 4.8,
+      "text": "also resolving if any issues arise. Now"
+    },
+    {
+      "start": 31.279,
+      "duration": 3.601,
+      "text": "this task is a complex task that"
+    },
+    {
+      "start": 33.28,
+      "duration": 3.279,
+      "text": "requires thinking, planning, writing"
+    },
+    {
+      "start": 34.88,
+      "duration": 3.519,
+      "text": "code, running commands, debugging and"
+    },
+    {
+      "start": 36.559,
+      "duration": 4.16,
+      "text": "also validating if the migration is"
+    },
+    {
+      "start": 38.399,
+      "duration": 5.121,
+      "text": "successful or not. Using this example,"
+    },
+    {
+      "start": 40.719,
+      "duration": 5.52,
+      "text": "let's understand how Gen AI or AI agents"
+    },
+    {
+      "start": 43.52,
+      "duration": 4.32,
+      "text": "or agentic AI would handle this task and"
+    },
+    {
+      "start": 46.239,
+      "duration": 4.561,
+      "text": "through this the difference will become"
+    },
+    {
+      "start": 47.84,
+      "duration": 5.28,
+      "text": "very clear. Let's start with Gen AI. So"
+    },
+    {
+      "start": 50.8,
+      "duration": 4.239,
+      "text": "Gen AI or generative AI is a type of"
+    },
+    {
+      "start": 53.12,
+      "duration": 4.32,
+      "text": "artificial intelligence that is trained"
+    },
+    {
+      "start": 55.039,
+      "duration": 5.04,
+      "text": "on huge massive data sets to generate"
+    },
+    {
+      "start": 57.44,
+      "duration": 5.919,
+      "text": "new content like text, images, music,"
+    },
+    {
+      "start": 60.079,
+      "duration": 5.36,
+      "text": "videos, etc. Responding to simple human"
+    },
+    {
+      "start": 63.359,
+      "duration": 4.241,
+      "text": "prompts. For example, these are all the"
+    },
+    {
+      "start": 65.439,
+      "duration": 3.841,
+      "text": "popular geni tools used in the market."
+    },
+    {
+      "start": 67.6,
+      "duration": 3.36,
+      "text": "Everyone knows about chat GPT and"
+    },
+    {
+      "start": 69.28,
+      "duration": 3.519,
+      "text": "Claude. If you are a software engineer,"
+    },
+    {
+      "start": 70.96,
+      "duration": 3.92,
+      "text": "you also know about GitHub copilot. If"
+    },
+    {
+      "start": 72.799,
+      "duration": 4.721,
+      "text": "you're a designer, you might use Dolly"
+    },
+    {
+      "start": 74.88,
+      "duration": 4.8,
+      "text": "or Canva AI as well. Popular Gen AI"
+    },
+    {
+      "start": 77.52,
+      "duration": 4.4,
+      "text": "models like GPT4 or Claude is used by"
+    },
+    {
+      "start": 79.68,
+      "duration": 4.4,
+      "text": "software engineers to create code,"
+    },
+    {
+      "start": 81.92,
+      "duration": 4.08,
+      "text": "documentation, even explanations. But"
+    },
+    {
+      "start": 84.08,
+      "duration": 4.16,
+      "text": "the problem is Gen AI can create"
+    },
+    {
+      "start": 86.0,
+      "duration": 4.32,
+      "text": "content. It cannot perform actual task"
+    },
+    {
+      "start": 88.24,
+      "duration": 4.08,
+      "text": "or it cannot interact with the systems."
+    },
+    {
+      "start": 90.32,
+      "duration": 4.24,
+      "text": "What do I mean is for example if I give"
+    },
+    {
+      "start": 92.32,
+      "duration": 4.0,
+      "text": "the same migration task to chat GPT"
+    },
+    {
+      "start": 94.56,
+      "duration": 4.16,
+      "text": "asking it to help me out it will"
+    },
+    {
+      "start": 96.32,
+      "duration": 4.0,
+      "text": "generate helm charts yl configuration it"
+    },
+    {
+      "start": 98.72,
+      "duration": 3.84,
+      "text": "will also create kubernetes manifest"
+    },
+    {
+      "start": 100.32,
+      "duration": 4.24,
+      "text": "files for deployment it will explain me"
+    },
+    {
+      "start": 102.56,
+      "duration": 3.919,
+      "text": "all the best practices for migration but"
+    },
+    {
+      "start": 104.56,
+      "duration": 3.519,
+      "text": "it cannot build the image it cannot"
+    },
+    {
+      "start": 106.479,
+      "duration": 3.441,
+      "text": "connect to the cluster it cannot run the"
+    },
+    {
+      "start": 108.079,
+      "duration": 3.521,
+      "text": "commands for me or it cannot verify if"
+    },
+    {
+      "start": 109.92,
+      "duration": 3.519,
+      "text": "everything is done or not so this is the"
+    },
+    {
+      "start": 111.6,
+      "duration": 3.519,
+      "text": "flow when working with genai you will"
+    },
+    {
+      "start": 113.439,
+      "duration": 3.441,
+      "text": "ask what you want and it will generate"
+    },
+    {
+      "start": 115.119,
+      "duration": 3.36,
+      "text": "the content for you but you have to"
+    },
+    {
+      "start": 116.88,
+      "duration": 3.12,
+      "text": "implement it you have to run the command"
+    },
+    {
+      "start": 118.479,
+      "duration": 3.68,
+      "text": "you will also have to fix if there are"
+    },
+    {
+      "start": 120.0,
+      "duration": 4.24,
+      "text": "any issues. So these Gen AI tools are"
+    },
+    {
+      "start": 122.159,
+      "duration": 4.24,
+      "text": "smart but they don't plan, they cannot"
+    },
+    {
+      "start": 124.24,
+      "duration": 4.079,
+      "text": "use APIs, they cannot execute workflows"
+    },
+    {
+      "start": 126.399,
+      "duration": 4.961,
+      "text": "on their own. You have to do it as a"
+    },
+    {
+      "start": 128.319,
+      "duration": 5.521,
+      "text": "user. Now let's talk about AI agents. AI"
+    },
+    {
+      "start": 131.36,
+      "duration": 4.4,
+      "text": "agents are built on top of Gen AI. But"
+    },
+    {
+      "start": 133.84,
+      "duration": 4.24,
+      "text": "they also have ability to use tools,"
+    },
+    {
+      "start": 135.76,
+      "duration": 4.72,
+      "text": "call APIs, execute commands and also"
+    },
+    {
+      "start": 138.08,
+      "duration": 4.799,
+      "text": "interact with system. Which means unlike"
+    },
+    {
+      "start": 140.48,
+      "duration": 4.56,
+      "text": "Gen AI which can only create content, AI"
+    },
+    {
+      "start": 142.879,
+      "duration": 4.641,
+      "text": "agents can create content and also take"
+    },
+    {
+      "start": 145.04,
+      "duration": 4.48,
+      "text": "actions on your behalf. So if I give the"
+    },
+    {
+      "start": 147.52,
+      "duration": 4.0,
+      "text": "same migration example to an AI agent"
+    },
+    {
+      "start": 149.52,
+      "duration": 3.52,
+      "text": "created maybe using N10. So it will"
+    },
+    {
+      "start": 151.52,
+      "duration": 3.76,
+      "text": "generate all the code and the manifest"
+    },
+    {
+      "start": 153.04,
+      "duration": 4.0,
+      "text": "file required for migration through GNI"
+    },
+    {
+      "start": 155.28,
+      "duration": 3.36,
+      "text": "capabilities and then also connect to"
+    },
+    {
+      "start": 157.04,
+      "duration": 3.68,
+      "text": "your cluster using the cubernetes API"
+    },
+    {
+      "start": 158.64,
+      "duration": 3.76,
+      "text": "and your credentials. Next, it will run"
+    },
+    {
+      "start": 160.72,
+      "duration": 3.36,
+      "text": "the commands to apply all the changes,"
+    },
+    {
+      "start": 162.4,
+      "duration": 4.8,
+      "text": "verify if everything is working properly"
+    },
+    {
+      "start": 164.08,
+      "duration": 4.879,
+      "text": "and also notify you using Slack API."
+    },
+    {
+      "start": 167.2,
+      "duration": 3.6,
+      "text": "This means AI agents are able to"
+    },
+    {
+      "start": 168.959,
+      "duration": 3.841,
+      "text": "understand the prompt given by the user"
+    },
+    {
+      "start": 170.8,
+      "duration": 4.4,
+      "text": "also decide what steps to take and"
+    },
+    {
+      "start": 172.8,
+      "duration": 4.079,
+      "text": "actually take actions on your behalf."
+    },
+    {
+      "start": 175.2,
+      "duration": 3.52,
+      "text": "But the problem with AI agents are they"
+    },
+    {
+      "start": 176.879,
+      "duration": 3.601,
+      "text": "are mostly used for single task that"
+    },
+    {
+      "start": 178.72,
+      "duration": 4.64,
+      "text": "once the task is done AI agents will"
+    },
+    {
+      "start": 180.48,
+      "duration": 5.119,
+      "text": "stop and that's why using AI agents for"
+    },
+    {
+      "start": 183.36,
+      "duration": 4.72,
+      "text": "long or complex task is not the right"
+    },
+    {
+      "start": 185.599,
+      "duration": 4.72,
+      "text": "choice. So you should use agentic AI."
+    },
+    {
+      "start": 188.08,
+      "duration": 4.72,
+      "text": "Agentic AI is more advanced and takes"
+    },
+    {
+      "start": 190.319,
+      "duration": 5.441,
+      "text": "the AI agent concept further by being"
+    },
+    {
+      "start": 192.8,
+      "duration": 5.04,
+      "text": "fully autonomous which means agentic AI"
+    },
+    {
+      "start": 195.76,
+      "duration": 4.96,
+      "text": "can work without user instructions for"
+    },
+    {
+      "start": 197.84,
+      "duration": 5.039,
+      "text": "hours or even for days until the task is"
+    },
+    {
+      "start": 200.72,
+      "duration": 3.92,
+      "text": "achieved. It also uses multi-step"
+    },
+    {
+      "start": 202.879,
+      "duration": 3.201,
+      "text": "planning by understanding the complete"
+    },
+    {
+      "start": 204.64,
+      "duration": 3.92,
+      "text": "goal and breaking them into small"
+    },
+    {
+      "start": 206.08,
+      "duration": 4.32,
+      "text": "pieces. It has long-term memory also"
+    },
+    {
+      "start": 208.56,
+      "duration": 4.239,
+      "text": "selfcorrection which means if there are"
+    },
+    {
+      "start": 210.4,
+      "duration": 4.559,
+      "text": "any issues agentic AI will solve it. Now"
+    },
+    {
+      "start": 212.799,
+      "duration": 4.481,
+      "text": "unlike AI agent rather than following"
+    },
+    {
+      "start": 214.959,
+      "duration": 4.56,
+      "text": "stepby-step instruction agentic AI"
+    },
+    {
+      "start": 217.28,
+      "duration": 4.0,
+      "text": "operates like a self-managed DevOps team"
+    },
+    {
+      "start": 219.519,
+      "duration": 3.521,
+      "text": "understanding the complete goal doing"
+    },
+    {
+      "start": 221.28,
+      "duration": 4.08,
+      "text": "things on their own. So they understand"
+    },
+    {
+      "start": 223.04,
+      "duration": 4.559,
+      "text": "the highle goal and autonomously work"
+    },
+    {
+      "start": 225.36,
+      "duration": 4.48,
+      "text": "towards them. For example, if I give the"
+    },
+    {
+      "start": 227.599,
+      "duration": 4.161,
+      "text": "same migration task to an agentic AI,"
+    },
+    {
+      "start": 229.84,
+      "duration": 3.36,
+      "text": "this is how it will behave. It will"
+    },
+    {
+      "start": 231.76,
+      "duration": 3.44,
+      "text": "first understand the high level goal"
+    },
+    {
+      "start": 233.2,
+      "duration": 4.08,
+      "text": "which is to deploy a microser from VM to"
+    },
+    {
+      "start": 235.2,
+      "duration": 4.88,
+      "text": "Kubernetes. Then create a plan with 10"
+    },
+    {
+      "start": 237.28,
+      "duration": 5.2,
+      "text": "or 50 subtask. Spin up specialized agent"
+    },
+    {
+      "start": 240.08,
+      "duration": 4.159,
+      "text": "for specific task and then use different"
+    },
+    {
+      "start": 242.48,
+      "duration": 3.839,
+      "text": "tools like GitHub, Docker, Cubectl,"
+    },
+    {
+      "start": 244.239,
+      "duration": 4.241,
+      "text": "Terapform etc. If there are any issues,"
+    },
+    {
+      "start": 246.319,
+      "duration": 3.601,
+      "text": "it will also fix it on their own. Let's"
+    },
+    {
+      "start": 248.48,
+      "duration": 3.52,
+      "text": "say if the deployment is failed, it will"
+    },
+    {
+      "start": 249.92,
+      "duration": 3.44,
+      "text": "also roll back to the previous version."
+    },
+    {
+      "start": 252.0,
+      "duration": 3.12,
+      "text": "It will monitor the rollout for"
+    },
+    {
+      "start": 253.36,
+      "duration": 3.68,
+      "text": "stability. It will also update the"
+    },
+    {
+      "start": 255.12,
+      "duration": 4.0,
+      "text": "documentation to to include all the"
+    },
+    {
+      "start": 257.04,
+      "duration": 4.479,
+      "text": "operation that it has done. Create a PR"
+    },
+    {
+      "start": 259.12,
+      "duration": 4.96,
+      "text": "in GitHub and also notify you on Slack"
+    },
+    {
+      "start": 261.519,
+      "duration": 4.24,
+      "text": "when everything is done. So, agent AI"
+    },
+    {
+      "start": 264.08,
+      "duration": 3.44,
+      "text": "does not just complete task, it runs"
+    },
+    {
+      "start": 265.759,
+      "duration": 3.201,
+      "text": "operation. It will update documentation"
+    },
+    {
+      "start": 267.52,
+      "duration": 3.679,
+      "text": "for you. It will create pull requests."
+    },
+    {
+      "start": 268.96,
+      "duration": 4.48,
+      "text": "It will notify on its own and that's why"
+    },
+    {
+      "start": 271.199,
+      "duration": 4.161,
+      "text": "it is called as fully autonomous. So, in"
+    },
+    {
+      "start": 273.44,
+      "duration": 4.64,
+      "text": "short, use Gen AI tools to create"
+    },
+    {
+      "start": 275.36,
+      "duration": 5.44,
+      "text": "content or code files. Use AI agents for"
+    },
+    {
+      "start": 278.08,
+      "duration": 5.6,
+      "text": "single specific task and use agentic AI"
+    },
+    {
+      "start": 280.8,
+      "duration": 4.56,
+      "text": "for long complex operations. I hope this"
+    },
+    {
+      "start": 283.68,
+      "duration": 3.519,
+      "text": "video was informative. If you have any"
+    },
+    {
+      "start": 285.36,
+      "duration": 3.6,
+      "text": "questions, any doubt, let me know in the"
+    },
+    {
+      "start": 287.199,
+      "duration": 4.161,
+      "text": "comment section and subscribe to Cloud"
+    },
+    {
+      "start": 288.96,
+      "duration": 2.4,
+      "text": "Champ."
+    }
+  ]
+}

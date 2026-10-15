@@ -1,0 +1,1031 @@
+{
+  "video": {
+    "id": "ItBo31-uha8",
+    "title": "Is Coding Required for DevOps? Programming Usecases in Devops",
+    "url": "https://www.youtube.com/watch?v=ItBo31-uha8",
+    "duration": 428,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.48,
+      "duration": 3.76,
+      "text": "One of the most asked questions by"
+    },
+    {
+      "start": 2.24,
+      "duration": 4.559,
+      "text": "people learning DevOps is how much"
+    },
+    {
+      "start": 4.24,
+      "duration": 4.319,
+      "text": "programming do I need to know or what"
+    },
+    {
+      "start": 6.799,
+      "duration": 4.081,
+      "text": "programming languages should I learn for"
+    },
+    {
+      "start": 8.559,
+      "duration": 4.481,
+      "text": "DevOps. So in this video I will explain"
+    },
+    {
+      "start": 10.88,
+      "duration": 4.799,
+      "text": "you how much coding is actually needed"
+    },
+    {
+      "start": 13.04,
+      "duration": 4.48,
+      "text": "in DevOps, what languages are useful and"
+    },
+    {
+      "start": 15.679,
+      "duration": 3.6,
+      "text": "also tell you where you will use this"
+    },
+    {
+      "start": 17.52,
+      "duration": 5.96,
+      "text": "programming languages in your DevOps"
+    },
+    {
+      "start": 19.279,
+      "duration": 4.201,
+      "text": "role. So let's get started."
+    },
+    {
+      "start": 29.92,
+      "duration": 3.44,
+      "text": "Some of you might be confused if you"
+    },
+    {
+      "start": 31.679,
+      "duration": 4.001,
+      "text": "need to be a developer to do DevOps"
+    },
+    {
+      "start": 33.36,
+      "duration": 4.56,
+      "text": "task. The answer is no. Because in"
+    },
+    {
+      "start": 35.68,
+      "duration": 4.64,
+      "text": "DevOps, we don't create front-end UIs or"
+    },
+    {
+      "start": 37.92,
+      "duration": 3.84,
+      "text": "complex back end. Instead, as a DevOps"
+    },
+    {
+      "start": 40.32,
+      "duration": 3.28,
+      "text": "engineer, you will be automating the"
+    },
+    {
+      "start": 41.76,
+      "duration": 3.44,
+      "text": "software delivery process, managing"
+    },
+    {
+      "start": 43.6,
+      "duration": 3.68,
+      "text": "infrastructure, and making sure"
+    },
+    {
+      "start": 45.2,
+      "duration": 3.44,
+      "text": "everything is running smoothly. So in"
+    },
+    {
+      "start": 47.28,
+      "duration": 3.599,
+      "text": "DevOps you will use programming"
+    },
+    {
+      "start": 48.64,
+      "duration": 4.239,
+      "text": "languages to automate repetitive task"
+    },
+    {
+      "start": 50.879,
+      "duration": 4.241,
+      "text": "like provisioning servers installing"
+    },
+    {
+      "start": 52.879,
+      "duration": 4.081,
+      "text": "application also deploying code to"
+    },
+    {
+      "start": 55.12,
+      "duration": 3.599,
+      "text": "production without any manual step"
+    },
+    {
+      "start": 56.96,
+      "duration": 4.399,
+      "text": "creating infrastructure using code"
+    },
+    {
+      "start": 58.719,
+      "duration": 4.241,
+      "text": "creating CI/CD pipelines. So yes as a"
+    },
+    {
+      "start": 61.359,
+      "duration": 3.601,
+      "text": "DevOps engineer you will have to write"
+    },
+    {
+      "start": 62.96,
+      "duration": 3.28,
+      "text": "code but it's not like being a software"
+    },
+    {
+      "start": 64.96,
+      "duration": 3.36,
+      "text": "engineer where you create the entire"
+    },
+    {
+      "start": 66.24,
+      "duration": 3.919,
+      "text": "application it will be task specific"
+    },
+    {
+      "start": 68.32,
+      "duration": 3.36,
+      "text": "scripting and automation. So understand"
+    },
+    {
+      "start": 70.159,
+      "duration": 3.121,
+      "text": "that coding in DevOps is going to be"
+    },
+    {
+      "start": 71.68,
+      "duration": 3.28,
+      "text": "used to connect different tools speed up"
+    },
+    {
+      "start": 73.28,
+      "duration": 3.519,
+      "text": "process but not to create the entire"
+    },
+    {
+      "start": 74.96,
+      "duration": 3.839,
+      "text": "application. This means coding is"
+    },
+    {
+      "start": 76.799,
+      "duration": 3.761,
+      "text": "required in DevOps. But let me tell you"
+    },
+    {
+      "start": 78.799,
+      "duration": 4.0,
+      "text": "how much programming knowledge is enough"
+    },
+    {
+      "start": 80.56,
+      "duration": 3.919,
+      "text": "for you as a DevOps engineer. You don't"
+    },
+    {
+      "start": 82.799,
+      "duration": 3.121,
+      "text": "need to be a software engineer, but you"
+    },
+    {
+      "start": 84.479,
+      "duration": 3.521,
+      "text": "should be comfortable with writing"
+    },
+    {
+      "start": 85.92,
+      "duration": 4.0,
+      "text": "scripts to automate common tasks that"
+    },
+    {
+      "start": 88.0,
+      "duration": 4.0,
+      "text": "you do every day. You should also be"
+    },
+    {
+      "start": 89.92,
+      "duration": 3.92,
+      "text": "able to understand the code snippets and"
+    },
+    {
+      "start": 92.0,
+      "duration": 3.759,
+      "text": "logs whenever there's an issue. So you"
+    },
+    {
+      "start": 93.84,
+      "duration": 3.36,
+      "text": "can easily troubleshoot or modify"
+    },
+    {
+      "start": 95.759,
+      "duration": 3.601,
+      "text": "different kind of codes which could be"
+    },
+    {
+      "start": 97.2,
+      "duration": 5.2,
+      "text": "pipeline code, configuration code or"
+    },
+    {
+      "start": 99.36,
+      "duration": 4.64,
+      "text": "infrastructure code. Lastly, as a DevOps"
+    },
+    {
+      "start": 102.4,
+      "duration": 3.359,
+      "text": "engineer, you will also be working with"
+    },
+    {
+      "start": 104.0,
+      "duration": 3.52,
+      "text": "different APIs and different third party"
+    },
+    {
+      "start": 105.759,
+      "duration": 4.72,
+      "text": "tools. So, you need to understand how"
+    },
+    {
+      "start": 107.52,
+      "duration": 4.8,
+      "text": "APIs work and how to use them. Here is"
+    },
+    {
+      "start": 110.479,
+      "duration": 3.361,
+      "text": "an example. So, let's say you have an"
+    },
+    {
+      "start": 112.32,
+      "duration": 3.36,
+      "text": "application which is a microservices"
+    },
+    {
+      "start": 113.84,
+      "duration": 4.48,
+      "text": "application and you deploy a Docker"
+    },
+    {
+      "start": 115.68,
+      "duration": 4.719,
+      "text": "container on AWS. Whenever a developer"
+    },
+    {
+      "start": 118.32,
+      "duration": 3.68,
+      "text": "makes a change to this Docker container,"
+    },
+    {
+      "start": 120.399,
+      "duration": 3.921,
+      "text": "you want to automate the process to"
+    },
+    {
+      "start": 122.0,
+      "duration": 4.24,
+      "text": "automatically pull the image, push the"
+    },
+    {
+      "start": 124.32,
+      "duration": 3.84,
+      "text": "image and deploy the application. So to"
+    },
+    {
+      "start": 126.24,
+      "duration": 3.999,
+      "text": "do this you will use Python to create a"
+    },
+    {
+      "start": 128.16,
+      "duration": 4.079,
+      "text": "script or you might use a CI/CD tool"
+    },
+    {
+      "start": 130.239,
+      "duration": 3.921,
+      "text": "like GitHub actions. For Python you need"
+    },
+    {
+      "start": 132.239,
+      "duration": 4.08,
+      "text": "Python programming language knowledge"
+    },
+    {
+      "start": 134.16,
+      "duration": 4.719,
+      "text": "and for CI/CD tool you will need to have"
+    },
+    {
+      "start": 136.319,
+      "duration": 4.241,
+      "text": "YAML programming language knowledge. So"
+    },
+    {
+      "start": 138.879,
+      "duration": 4.481,
+      "text": "let's understand what are most common"
+    },
+    {
+      "start": 140.56,
+      "duration": 4.24,
+      "text": "programming languages used in DevOps. So"
+    },
+    {
+      "start": 143.36,
+      "duration": 3.12,
+      "text": "the most common languages include"
+    },
+    {
+      "start": 144.8,
+      "duration": 3.92,
+      "text": "different languages starting with bash"
+    },
+    {
+      "start": 146.48,
+      "duration": 3.92,
+      "text": "or shell scripting. So bash is the"
+    },
+    {
+      "start": 148.72,
+      "duration": 3.36,
+      "text": "language that is used in Linux systems"
+    },
+    {
+      "start": 150.4,
+      "duration": 3.28,
+      "text": "to automate different task. So you can"
+    },
+    {
+      "start": 152.08,
+      "duration": 3.36,
+      "text": "see bash is your go-to language when"
+    },
+    {
+      "start": 153.68,
+      "duration": 4.48,
+      "text": "working on Linux systems. You can use"
+    },
+    {
+      "start": 155.44,
+      "duration": 4.799,
+      "text": "bash or shell scripting for bootstrap"
+    },
+    {
+      "start": 158.16,
+      "duration": 4.159,
+      "text": "scripts or startup scripts for your EC2"
+    },
+    {
+      "start": 160.239,
+      "duration": 3.841,
+      "text": "or cloud servers. You can also create"
+    },
+    {
+      "start": 162.319,
+      "duration": 4.161,
+      "text": "bash scripts to automate your backups"
+    },
+    {
+      "start": 164.08,
+      "duration": 4.48,
+      "text": "for your databases. Bash scripts to"
+    },
+    {
+      "start": 166.48,
+      "duration": 4.0,
+      "text": "create chron jobs to do schedule task"
+    },
+    {
+      "start": 168.56,
+      "duration": 3.84,
+      "text": "and also for performing log files"
+    },
+    {
+      "start": 170.48,
+      "duration": 4.0,
+      "text": "cleanup or monitoring. Here's an example"
+    },
+    {
+      "start": 172.4,
+      "duration": 4.04,
+      "text": "of using bashcript to automate server"
+    },
+    {
+      "start": 174.48,
+      "duration": 4.16,
+      "text": "updates or restart a service if it"
+    },
+    {
+      "start": 176.44,
+      "duration": 4.76,
+      "text": "crashes. Another most used programming"
+    },
+    {
+      "start": 178.64,
+      "duration": 4.16,
+      "text": "language in DevOps is Python. So, Python"
+    },
+    {
+      "start": 181.2,
+      "duration": 3.36,
+      "text": "is the most beginner friendly and"
+    },
+    {
+      "start": 182.8,
+      "duration": 4.079,
+      "text": "powerful scripting language and we use"
+    },
+    {
+      "start": 184.56,
+      "duration": 4.399,
+      "text": "it in DevOps to write automation tools"
+    },
+    {
+      "start": 186.879,
+      "duration": 3.841,
+      "text": "and scripts. We also use it to talk to"
+    },
+    {
+      "start": 188.959,
+      "duration": 4.64,
+      "text": "different cloud providers like AWS,"
+    },
+    {
+      "start": 190.72,
+      "duration": 5.68,
+      "text": "Azure, GCP. In AWS, you can use Python"
+    },
+    {
+      "start": 193.599,
+      "duration": 4.56,
+      "text": "using the boto3 module. So, using boto3,"
+    },
+    {
+      "start": 196.4,
+      "duration": 3.6,
+      "text": "you can talk to AWS using Python"
+    },
+    {
+      "start": 198.159,
+      "duration": 3.601,
+      "text": "programming language. Uh you can use"
+    },
+    {
+      "start": 200.0,
+      "duration": 3.92,
+      "text": "Python to create Lambda functions in the"
+    },
+    {
+      "start": 201.76,
+      "duration": 3.52,
+      "text": "cloud or other serverless code."
+    },
+    {
+      "start": 203.92,
+      "duration": 3.36,
+      "text": "Additionally, if you want to create a"
+    },
+    {
+      "start": 205.28,
+      "duration": 4.16,
+      "text": "tool in your own internal company, you"
+    },
+    {
+      "start": 207.28,
+      "duration": 4.56,
+      "text": "can use Python to create internal CLI"
+    },
+    {
+      "start": 209.44,
+      "duration": 4.56,
+      "text": "tool or dashboard. Here's an example of"
+    },
+    {
+      "start": 211.84,
+      "duration": 4.72,
+      "text": "how you can use Python script to detect"
+    },
+    {
+      "start": 214.0,
+      "duration": 5.2,
+      "text": "unused EC2 instances and shut them down"
+    },
+    {
+      "start": 216.56,
+      "duration": 4.0,
+      "text": "to save cost in your AWS. Similarly, you"
+    },
+    {
+      "start": 219.2,
+      "duration": 4.16,
+      "text": "can also automate different types of"
+    },
+    {
+      "start": 220.56,
+      "duration": 4.0,
+      "text": "task. Maybe you are changing password"
+    },
+    {
+      "start": 223.36,
+      "duration": 2.64,
+      "text": "for your databases and you want to"
+    },
+    {
+      "start": 224.56,
+      "duration": 3.44,
+      "text": "automate this process. You can use"
+    },
+    {
+      "start": 226.0,
+      "duration": 4.64,
+      "text": "Python for it or you can use bash as"
+    },
+    {
+      "start": 228.0,
+      "duration": 4.64,
+      "text": "well. Along with this, there's also YAML"
+    },
+    {
+      "start": 230.64,
+      "duration": 3.679,
+      "text": "and JSON. YAML and JSON are two"
+    },
+    {
+      "start": 232.64,
+      "duration": 3.76,
+      "text": "different languages that we use a lot in"
+    },
+    {
+      "start": 234.319,
+      "duration": 5.041,
+      "text": "DevOps. So I haven't mentioned Yam JSON"
+    },
+    {
+      "start": 236.4,
+      "duration": 5.6,
+      "text": "here but JSON is also another language"
+    },
+    {
+      "start": 239.36,
+      "duration": 4.4,
+      "text": "that we use a lot. So YAML is used"
+    },
+    {
+      "start": 242.0,
+      "duration": 3.92,
+      "text": "generally for Kubernetes manifest file"
+    },
+    {
+      "start": 243.76,
+      "duration": 4.24,
+      "text": "to create deployment service ingress"
+    },
+    {
+      "start": 245.92,
+      "duration": 3.84,
+      "text": "etc. It is also used with other DevOps"
+    },
+    {
+      "start": 248.0,
+      "duration": 4.959,
+      "text": "tools like GitHub actions, GitLab,"
+    },
+    {
+      "start": 249.76,
+      "duration": 5.759,
+      "text": "CI/CD, anible playbook and to create or"
+    },
+    {
+      "start": 252.959,
+      "duration": 4.96,
+      "text": "define Teraphform modules. Whereas JSON"
+    },
+    {
+      "start": 255.519,
+      "duration": 4.481,
+      "text": "is also similarly used in to create IM"
+    },
+    {
+      "start": 257.919,
+      "duration": 3.6,
+      "text": "policies. All the data that is stored in"
+    },
+    {
+      "start": 260.0,
+      "duration": 2.88,
+      "text": "DevOps tools are generally stored in"
+    },
+    {
+      "start": 261.519,
+      "duration": 3.361,
+      "text": "JSON language. So it's very important"
+    },
+    {
+      "start": 262.88,
+      "duration": 4.0,
+      "text": "for you to understand YAML and JSON as"
+    },
+    {
+      "start": 264.88,
+      "duration": 3.44,
+      "text": "well which might not be a programming"
+    },
+    {
+      "start": 266.88,
+      "duration": 3.52,
+      "text": "language but they are used in DevOps"
+    },
+    {
+      "start": 268.32,
+      "duration": 4.0,
+      "text": "everywhere. So YAML is like a language"
+    },
+    {
+      "start": 270.4,
+      "duration": 3.92,
+      "text": "of DevOps tools. You must understand how"
+    },
+    {
+      "start": 272.32,
+      "duration": 3.84,
+      "text": "to write and debug it. Example could be"
+    },
+    {
+      "start": 274.32,
+      "duration": 4.159,
+      "text": "defining how your application should run"
+    },
+    {
+      "start": 276.16,
+      "duration": 4.96,
+      "text": "inside a Kubernetes cluster by defining"
+    },
+    {
+      "start": 278.479,
+      "duration": 5.28,
+      "text": "deployment manifest in YAML language."
+    },
+    {
+      "start": 281.12,
+      "duration": 4.48,
+      "text": "Lastly, Golang is another very much used"
+    },
+    {
+      "start": 283.759,
+      "duration": 2.88,
+      "text": "programming language in DevOps. If you"
+    },
+    {
+      "start": 285.6,
+      "duration": 2.879,
+      "text": "are someone who's trying to learn"
+    },
+    {
+      "start": 286.639,
+      "duration": 4.0,
+      "text": "programming language for DevOps, you"
+    },
+    {
+      "start": 288.479,
+      "duration": 3.921,
+      "text": "should consider Golang because every new"
+    },
+    {
+      "start": 290.639,
+      "duration": 4.0,
+      "text": "DevOps tool that we look at, let's say"
+    },
+    {
+      "start": 292.4,
+      "duration": 5.84,
+      "text": "Kubernetes, Terraform, Docker, all of"
+    },
+    {
+      "start": 294.639,
+      "duration": 5.681,
+      "text": "them are created in Golang. So, Golang"
+    },
+    {
+      "start": 298.24,
+      "duration": 3.6,
+      "text": "use cases could be contributing to open"
+    },
+    {
+      "start": 300.32,
+      "duration": 2.8,
+      "text": "source DevOps tools because mostly all"
+    },
+    {
+      "start": 301.84,
+      "duration": 3.359,
+      "text": "these DevOps tools are created in"
+    },
+    {
+      "start": 303.12,
+      "duration": 4.56,
+      "text": "Golang. You can also use Golang to"
+    },
+    {
+      "start": 305.199,
+      "duration": 4.56,
+      "text": "create custom Kubernetes operator. You"
+    },
+    {
+      "start": 307.68,
+      "duration": 4.48,
+      "text": "can use Golang to create fast CLI tools"
+    },
+    {
+      "start": 309.759,
+      "duration": 4.401,
+      "text": "or exporters for Prometheus. So example"
+    },
+    {
+      "start": 312.16,
+      "duration": 4.08,
+      "text": "of using Golang is if you want to build"
+    },
+    {
+      "start": 314.16,
+      "duration": 4.0,
+      "text": "a new plug-in for Terraform or modify"
+    },
+    {
+      "start": 316.24,
+      "duration": 4.32,
+      "text": "Kubernetes internals, Golang is the"
+    },
+    {
+      "start": 318.16,
+      "duration": 4.319,
+      "text": "language that you can use. Okay. So far"
+    },
+    {
+      "start": 320.56,
+      "duration": 3.44,
+      "text": "I've given you different examples of how"
+    },
+    {
+      "start": 322.479,
+      "duration": 4.081,
+      "text": "programming languages are used in"
+    },
+    {
+      "start": 324.0,
+      "duration": 4.24,
+      "text": "DevOps. But let's look at some more real"
+    },
+    {
+      "start": 326.56,
+      "duration": 3.76,
+      "text": "DevOps use cases where you will have to"
+    },
+    {
+      "start": 328.24,
+      "duration": 3.6,
+      "text": "write code. So you will have to write"
+    },
+    {
+      "start": 330.32,
+      "duration": 3.439,
+      "text": "bash script to restart a crashed"
+    },
+    {
+      "start": 331.84,
+      "duration": 3.28,
+      "text": "application or a server. You might be"
+    },
+    {
+      "start": 333.759,
+      "duration": 4.081,
+      "text": "asked to create a Python script to"
+    },
+    {
+      "start": 335.12,
+      "duration": 4.4,
+      "text": "upload logs to S3 or trigger a genkins"
+    },
+    {
+      "start": 337.84,
+      "duration": 3.12,
+      "text": "job. Generally something that you do"
+    },
+    {
+      "start": 339.52,
+      "duration": 3.679,
+      "text": "every day can be automated through"
+    },
+    {
+      "start": 340.96,
+      "duration": 4.079,
+      "text": "script. Uh you can also be asked to"
+    },
+    {
+      "start": 343.199,
+      "duration": 3.761,
+      "text": "create Kubernetes manifest file using"
+    },
+    {
+      "start": 345.039,
+      "duration": 3.841,
+      "text": "YAML language. So write YAML for"
+    },
+    {
+      "start": 346.96,
+      "duration": 3.84,
+      "text": "Kubernetes deployment or GitHub actions"
+    },
+    {
+      "start": 348.88,
+      "duration": 4.0,
+      "text": "workflow. You might be asked to"
+    },
+    {
+      "start": 350.8,
+      "duration": 4.16,
+      "text": "contribute to a go patch to open source"
+    },
+    {
+      "start": 352.88,
+      "duration": 4.159,
+      "text": "DevOps tool like Helm. Uh so you need to"
+    },
+    {
+      "start": 354.96,
+      "duration": 3.84,
+      "text": "know Golang language for that. And maybe"
+    },
+    {
+      "start": 357.039,
+      "duration": 3.921,
+      "text": "if you are someone who knows NodeJS"
+    },
+    {
+      "start": 358.8,
+      "duration": 4.399,
+      "text": "language, you might be asked to use"
+    },
+    {
+      "start": 360.96,
+      "duration": 5.84,
+      "text": "NodeJS to write an alert handler that"
+    },
+    {
+      "start": 363.199,
+      "duration": 6.321,
+      "text": "send messages to Slack channel. So"
+    },
+    {
+      "start": 366.8,
+      "duration": 4.8,
+      "text": "lastly understand that programming in"
+    },
+    {
+      "start": 369.52,
+      "duration": 4.32,
+      "text": "DevOps is used to automate repetitive"
+    },
+    {
+      "start": 371.6,
+      "duration": 4.4,
+      "text": "task. It is used to debug and modify"
+    },
+    {
+      "start": 373.84,
+      "duration": 3.76,
+      "text": "existing scripts and you should know"
+    },
+    {
+      "start": 376.0,
+      "duration": 3.199,
+      "text": "programming languages to understand how"
+    },
+    {
+      "start": 377.6,
+      "duration": 3.599,
+      "text": "these DevOps tools work behind the"
+    },
+    {
+      "start": 379.199,
+      "duration": 3.761,
+      "text": "scenes. Also programming languages is"
+    },
+    {
+      "start": 381.199,
+      "duration": 5.041,
+      "text": "used to glue together all the different"
+    },
+    {
+      "start": 382.96,
+      "duration": 5.04,
+      "text": "API scripts and configuration files. So"
+    },
+    {
+      "start": 386.24,
+      "duration": 3.84,
+      "text": "in a nutshell you will be using"
+    },
+    {
+      "start": 388.0,
+      "duration": 3.759,
+      "text": "programming languages not to build the"
+    },
+    {
+      "start": 390.08,
+      "duration": 3.36,
+      "text": "product but you will be using it to"
+    },
+    {
+      "start": 391.759,
+      "duration": 3.601,
+      "text": "build the pipeline that delivers the"
+    },
+    {
+      "start": 393.44,
+      "duration": 3.44,
+      "text": "product. So as a DevOps engineer, you"
+    },
+    {
+      "start": 395.36,
+      "duration": 3.52,
+      "text": "use programming languages not to create"
+    },
+    {
+      "start": 396.88,
+      "duration": 4.0,
+      "text": "the application but to automate the"
+    },
+    {
+      "start": 398.88,
+      "duration": 4.56,
+      "text": "process of building, configuring and"
+    },
+    {
+      "start": 400.88,
+      "duration": 4.56,
+      "text": "managing it. I hope this makes sense."
+    },
+    {
+      "start": 403.44,
+      "duration": 3.84,
+      "text": "All right. So this was our video to help"
+    },
+    {
+      "start": 405.44,
+      "duration": 4.0,
+      "text": "you understand how much coding is"
+    },
+    {
+      "start": 407.28,
+      "duration": 3.919,
+      "text": "required in DevOps. I hope this video"
+    },
+    {
+      "start": 409.44,
+      "duration": 3.599,
+      "text": "was informative. If you have any"
+    },
+    {
+      "start": 411.199,
+      "duration": 3.44,
+      "text": "questions, any doubt, feel free to let"
+    },
+    {
+      "start": 413.039,
+      "duration": 3.041,
+      "text": "me know in the comment section. And if"
+    },
+    {
+      "start": 414.639,
+      "duration": 3.12,
+      "text": "you found this video helpful, please"
+    },
+    {
+      "start": 416.08,
+      "duration": 5.32,
+      "text": "like this video and subscribe to Cloud"
+    },
+    {
+      "start": 417.759,
+      "duration": 3.641,
+      "text": "Champ. Thank you."
+    }
+  ]
+}

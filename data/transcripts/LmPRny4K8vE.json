@@ -1,0 +1,3136 @@
+{
+  "video": {
+    "id": "LmPRny4K8vE",
+    "title": "AWS Solutions Architect Associate Exam Questions with Explanations | AWS SAA Tips and Tricks 2025",
+    "url": "https://www.youtube.com/watch?v=LmPRny4K8vE",
+    "duration": 1418,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.12,
+      "duration": 4.36,
+      "text": "recently I got a mail from Amazon web"
+    },
+    {
+      "start": 2.08,
+      "duration": 4.799,
+      "text": "services that my AWS Solutions architect"
+    },
+    {
+      "start": 4.48,
+      "duration": 4.48,
+      "text": "associate exam is going to expire soon"
+    },
+    {
+      "start": 6.879,
+      "duration": 3.84,
+      "text": "so I thought why not test my knowledge"
+    },
+    {
+      "start": 8.96,
+      "duration": 3.96,
+      "text": "and create something that will help you"
+    },
+    {
+      "start": 10.719,
+      "duration": 4.281,
+      "text": "prepare for your exam as well so after a"
+    },
+    {
+      "start": 12.92,
+      "duration": 4.08,
+      "text": "lot of research we created an exam"
+    },
+    {
+      "start": 15.0,
+      "duration": 4.119,
+      "text": "practice test which is very very close"
+    },
+    {
+      "start": 17.0,
+      "duration": 4.72,
+      "text": "to the real exam and in this video we"
+    },
+    {
+      "start": 19.119,
+      "duration": 4.32,
+      "text": "are going to look at important AWS exam"
+    },
+    {
+      "start": 21.72,
+      "duration": 3.6,
+      "text": "questions so if you are preparing for"
+    },
+    {
+      "start": 23.439,
+      "duration": 3.801,
+      "text": "the AWS Solutions architect associate"
+    },
+    {
+      "start": 25.32,
+      "duration": 4.039,
+      "text": "exam make sure to watch this video till"
+    },
+    {
+      "start": 27.24,
+      "duration": 4.72,
+      "text": "the end and also check out the link for"
+    },
+    {
+      "start": 29.359,
+      "duration": 4.281,
+      "text": "the ud practice test let's go this is"
+    },
+    {
+      "start": 31.96,
+      "duration": 3.84,
+      "text": "the practice exam that I have published"
+    },
+    {
+      "start": 33.64,
+      "duration": 4.32,
+      "text": "to help you pass for your AWS Solutions"
+    },
+    {
+      "start": 35.8,
+      "duration": 4.96,
+      "text": "architect associate exam this practice"
+    },
+    {
+      "start": 37.96,
+      "duration": 5.439,
+      "text": "exam consists six sets of practice test"
+    },
+    {
+      "start": 40.76,
+      "duration": 4.76,
+      "text": "all containing 65 questions each which"
+    },
+    {
+      "start": 43.399,
+      "duration": 5.081,
+      "text": "should be very similar to the real exam"
+    },
+    {
+      "start": 45.52,
+      "duration": 5.92,
+      "text": "questions if you pass this exam you will"
+    },
+    {
+      "start": 48.48,
+      "duration": 4.879,
+      "text": "definitely pass the real AWS Solutions"
+    },
+    {
+      "start": 51.44,
+      "duration": 4.32,
+      "text": "architect exam so the first question we"
+    },
+    {
+      "start": 53.359,
+      "duration": 4.921,
+      "text": "have here is a company needs the ability"
+    },
+    {
+      "start": 55.76,
+      "duration": 4.639,
+      "text": "to analyze the log files of its proppr"
+    },
+    {
+      "start": 58.28,
+      "duration": 5.079,
+      "text": "application the log files are stored in"
+    },
+    {
+      "start": 60.399,
+      "duration": 4.72,
+      "text": "gson format in the Amazon S3 bucket"
+    },
+    {
+      "start": 63.359,
+      "duration": 3.841,
+      "text": "queries will be simple and will run all"
+    },
+    {
+      "start": 65.119,
+      "duration": 3.561,
+      "text": "demand a Solutions architect needs to"
+    },
+    {
+      "start": 67.2,
+      "duration": 3.68,
+      "text": "perform the analysis with minimal"
+    },
+    {
+      "start": 68.68,
+      "duration": 4.119,
+      "text": "changes to the existing architecture"
+    },
+    {
+      "start": 70.88,
+      "duration": 3.68,
+      "text": "what should the solutions architect do"
+    },
+    {
+      "start": 72.799,
+      "duration": 3.96,
+      "text": "to meet this requirement with least"
+    },
+    {
+      "start": 74.56,
+      "duration": 3.72,
+      "text": "amount of operational overhead to show"
+    },
+    {
+      "start": 76.759,
+      "duration": 3.801,
+      "text": "you this with a Solutions architect"
+    },
+    {
+      "start": 78.28,
+      "duration": 4.0,
+      "text": "diagram do you have an application here"
+    },
+    {
+      "start": 80.56,
+      "duration": 4.8,
+      "text": "and this application is giving out log"
+    },
+    {
+      "start": 82.28,
+      "duration": 5.36,
+      "text": "files which you're storing in Amazon S3"
+    },
+    {
+      "start": 85.36,
+      "duration": 4.16,
+      "text": "bucket on this S3 bucket the data is"
+    },
+    {
+      "start": 87.64,
+      "duration": 4.68,
+      "text": "stored in Json format and you need to"
+    },
+    {
+      "start": 89.52,
+      "duration": 5.04,
+      "text": "run some some queries on it so whenever"
+    },
+    {
+      "start": 92.32,
+      "duration": 4.96,
+      "text": "you want to analyze data through SQL"
+    },
+    {
+      "start": 94.56,
+      "duration": 5.64,
+      "text": "queries on Amazon S3 bucket it will"
+    },
+    {
+      "start": 97.28,
+      "duration": 5.199,
+      "text": "always be through aena in the exam so if"
+    },
+    {
+      "start": 100.2,
+      "duration": 4.76,
+      "text": "you search for Amazon"
+    },
+    {
+      "start": 102.479,
+      "duration": 4.6,
+      "text": "aena you will see Amazon aena is a"
+    },
+    {
+      "start": 104.96,
+      "duration": 4.64,
+      "text": "serverless analytics service that allows"
+    },
+    {
+      "start": 107.079,
+      "duration": 5.801,
+      "text": "user to analyze data in Amazon S3 using"
+    },
+    {
+      "start": 109.6,
+      "duration": 6.92,
+      "text": "SQL so the correct answer will be using"
+    },
+    {
+      "start": 112.88,
+      "duration": 5.199,
+      "text": "Amazon aena let's also understand why"
+    },
+    {
+      "start": 116.52,
+      "duration": 3.76,
+      "text": "these are not the correct answer so in"
+    },
+    {
+      "start": 118.079,
+      "duration": 4.0,
+      "text": "the practice test you will also see"
+    },
+    {
+      "start": 120.28,
+      "duration": 3.68,
+      "text": "explanations on why red shift is not the"
+    },
+    {
+      "start": 122.079,
+      "duration": 3.36,
+      "text": "correct answer because red shift is a"
+    },
+    {
+      "start": 123.96,
+      "duration": 4.12,
+      "text": "data warehousing and it is generally"
+    },
+    {
+      "start": 125.439,
+      "duration": 4.481,
+      "text": "used for complex analytics so redshift"
+    },
+    {
+      "start": 128.08,
+      "duration": 4.08,
+      "text": "is data warehousing service designed for"
+    },
+    {
+      "start": 129.92,
+      "duration": 4.84,
+      "text": "complex analytics and large scale data"
+    },
+    {
+      "start": 132.16,
+      "duration": 5.48,
+      "text": "processing for simple on demand queries"
+    },
+    {
+      "start": 134.76,
+      "duration": 5.199,
+      "text": "as mentioned in this question red shift"
+    },
+    {
+      "start": 137.64,
+      "duration": 4.48,
+      "text": "is not the correct answer next is cloud"
+    },
+    {
+      "start": 139.959,
+      "duration": 4.481,
+      "text": "watch so Cloud watch in AWS is a service"
+    },
+    {
+      "start": 142.12,
+      "duration": 4.92,
+      "text": "that will Monitor and also collect locks"
+    },
+    {
+      "start": 144.44,
+      "duration": 4.56,
+      "text": "it is not used for running analyzing or"
+    },
+    {
+      "start": 147.04,
+      "duration": 4.04,
+      "text": "running queries on it so cloudwatch is"
+    },
+    {
+      "start": 149.0,
+      "duration": 3.56,
+      "text": "primarily deciding for collecting and"
+    },
+    {
+      "start": 151.08,
+      "duration": 3.92,
+      "text": "monitoring application not for"
+    },
+    {
+      "start": 152.56,
+      "duration": 4.36,
+      "text": "performing interactive SQL queries we"
+    },
+    {
+      "start": 155.0,
+      "duration": 4.28,
+      "text": "want to run some queries on the data"
+    },
+    {
+      "start": 156.92,
+      "duration": 4.679,
+      "text": "that is why we are using aena aena is a"
+    },
+    {
+      "start": 159.28,
+      "duration": 6.239,
+      "text": "serverless query service that allows you"
+    },
+    {
+      "start": 161.599,
+      "duration": 6.28,
+      "text": "to query data using standard SQL lastly"
+    },
+    {
+      "start": 165.519,
+      "duration": 4.841,
+      "text": "we have glue as well so you can use glue"
+    },
+    {
+      "start": 167.879,
+      "duration": 4.161,
+      "text": "but you need to do extra things the glue"
+    },
+    {
+      "start": 170.36,
+      "duration": 4.32,
+      "text": "will require you to create catalog and"
+    },
+    {
+      "start": 172.04,
+      "duration": 5.199,
+      "text": "then you need to use Amazon EMR which is"
+    },
+    {
+      "start": 174.68,
+      "duration": 4.479,
+      "text": "more work whereas in the exam question"
+    },
+    {
+      "start": 177.239,
+      "duration": 3.801,
+      "text": "it is asking you to use least amount of"
+    },
+    {
+      "start": 179.159,
+      "duration": 3.681,
+      "text": "operational over overhead so this answer"
+    },
+    {
+      "start": 181.04,
+      "duration": 3.919,
+      "text": "is wrong because it involves creating a"
+    },
+    {
+      "start": 182.84,
+      "duration": 4.2,
+      "text": "data catalog and launching an EMR"
+    },
+    {
+      "start": 184.959,
+      "duration": 4.401,
+      "text": "cluster on each query as you can see"
+    },
+    {
+      "start": 187.04,
+      "duration": 4.32,
+      "text": "this practice test is created to explain"
+    },
+    {
+      "start": 189.36,
+      "duration": 3.84,
+      "text": "you and learn things not just pass the"
+    },
+    {
+      "start": 191.36,
+      "duration": 3.799,
+      "text": "exam and you have all the explanations"
+    },
+    {
+      "start": 193.2,
+      "duration": 4.72,
+      "text": "here for correct and incorrect options"
+    },
+    {
+      "start": 195.159,
+      "duration": 4.961,
+      "text": "also overall explanation and a link for"
+    },
+    {
+      "start": 197.92,
+      "duration": 3.959,
+      "text": "you to read from the official AWS"
+    },
+    {
+      "start": 200.12,
+      "duration": 4.0,
+      "text": "documentation so when you click on this"
+    },
+    {
+      "start": 201.879,
+      "duration": 4.64,
+      "text": "you can understand how you can query Jon"
+    },
+    {
+      "start": 204.12,
+      "duration": 4.839,
+      "text": "data using Amazon Athena which is going"
+    },
+    {
+      "start": 206.519,
+      "duration": 4.72,
+      "text": "to be stored on S3 bucket so we run"
+    },
+    {
+      "start": 208.959,
+      "duration": 5.081,
+      "text": "queries like this on the S3 bucket and"
+    },
+    {
+      "start": 211.239,
+      "duration": 5.121,
+      "text": "then we can analyze data as mentioned in"
+    },
+    {
+      "start": 214.04,
+      "duration": 4.68,
+      "text": "this question here so let's move on to"
+    },
+    {
+      "start": 216.36,
+      "duration": 4.879,
+      "text": "the next question now in this question a"
+    },
+    {
+      "start": 218.72,
+      "duration": 4.28,
+      "text": "company uses AWS organization to manage"
+    },
+    {
+      "start": 221.239,
+      "duration": 3.481,
+      "text": "multiple AWS account from different"
+    },
+    {
+      "start": 223.0,
+      "duration": 3.4,
+      "text": "departments and the main or the"
+    },
+    {
+      "start": 224.72,
+      "duration": 3.439,
+      "text": "management account has Amazon is three"
+    },
+    {
+      "start": 226.4,
+      "duration": 2.6,
+      "text": "bucket so let's try to understand this"
+    },
+    {
+      "start": 228.159,
+      "duration": 2.961,
+      "text": "with a"
+    },
+    {
+      "start": 229.0,
+      "duration": 3.959,
+      "text": "diagram so you working in a company"
+    },
+    {
+      "start": 231.12,
+      "duration": 4.039,
+      "text": "where you have AWS organization and"
+    },
+    {
+      "start": 232.959,
+      "duration": 6.92,
+      "text": "there are multiple AWS accounts that are"
+    },
+    {
+      "start": 235.159,
+      "duration": 6.28,
+      "text": "managed inside these AWS organization"
+    },
+    {
+      "start": 239.879,
+      "duration": 4.601,
+      "text": "the main account or the management"
+    },
+    {
+      "start": 241.439,
+      "duration": 6.041,
+      "text": "account here has S3 bucket which"
+    },
+    {
+      "start": 244.48,
+      "duration": 4.44,
+      "text": "contains all your project files okay so"
+    },
+    {
+      "start": 247.48,
+      "duration": 4.0,
+      "text": "this is the S3 bucket that is containing"
+    },
+    {
+      "start": 248.92,
+      "duration": 5.2,
+      "text": "all the project files this management"
+    },
+    {
+      "start": 251.48,
+      "duration": 4.96,
+      "text": "account wants accounts from this"
+    },
+    {
+      "start": 254.12,
+      "duration": 4.16,
+      "text": "organization only to access this S3"
+    },
+    {
+      "start": 256.44,
+      "duration": 5.36,
+      "text": "bucket no one outside the organization"
+    },
+    {
+      "start": 258.28,
+      "duration": 6.04,
+      "text": "should be able to access it so we want"
+    },
+    {
+      "start": 261.8,
+      "duration": 4.56,
+      "text": "only these accounts to be able to access"
+    },
+    {
+      "start": 264.32,
+      "duration": 5.52,
+      "text": "it how can you do"
+    },
+    {
+      "start": 266.36,
+      "duration": 5.72,
+      "text": "it so the company wants to limit access"
+    },
+    {
+      "start": 269.84,
+      "duration": 4.199,
+      "text": "to this S3 bucket to only users of the"
+    },
+    {
+      "start": 272.08,
+      "duration": 4.16,
+      "text": "account within the organization which"
+    },
+    {
+      "start": 274.039,
+      "duration": 3.88,
+      "text": "Solutions meet this requirement to do"
+    },
+    {
+      "start": 276.24,
+      "duration": 4.239,
+      "text": "this we can set a global condition of"
+    },
+    {
+      "start": 277.919,
+      "duration": 4.481,
+      "text": "AWS equals to Pro principal organization"
+    },
+    {
+      "start": 280.479,
+      "duration": 4.16,
+      "text": "ID which will check the ID and if it"
+    },
+    {
+      "start": 282.4,
+      "duration": 3.96,
+      "text": "belongs to that organization only then"
+    },
+    {
+      "start": 284.639,
+      "duration": 4.12,
+      "text": "the account will have access to S3"
+    },
+    {
+      "start": 286.36,
+      "duration": 4.92,
+      "text": "bucket so this is the correct answer"
+    },
+    {
+      "start": 288.759,
+      "duration": 5.201,
+      "text": "access to AWS using the AWS"
+    },
+    {
+      "start": 291.28,
+      "duration": 4.16,
+      "text": "organizations of I IM principle and this"
+    },
+    {
+      "start": 293.96,
+      "duration": 3.88,
+      "text": "is the blog that explains how you can"
+    },
+    {
+      "start": 295.44,
+      "duration": 5.12,
+      "text": "use this condition key uh to give access"
+    },
+    {
+      "start": 297.84,
+      "duration": 4.76,
+      "text": "to a particular service in your organ"
+    },
+    {
+      "start": 300.56,
+      "duration": 4.68,
+      "text": "ization let's move on to the next"
+    },
+    {
+      "start": 302.6,
+      "duration": 4.52,
+      "text": "question now all right the third"
+    },
+    {
+      "start": 305.24,
+      "duration": 5.679,
+      "text": "question we have here is an application"
+    },
+    {
+      "start": 307.12,
+      "duration": 5.28,
+      "text": "runs on Amazon ec2 instance in a VPC the"
+    },
+    {
+      "start": 310.919,
+      "duration": 4.161,
+      "text": "application processes logs that are"
+    },
+    {
+      "start": 312.4,
+      "duration": 4.96,
+      "text": "stored in Amazon S3 bucket the ec2"
+    },
+    {
+      "start": 315.08,
+      "duration": 4.6,
+      "text": "instance need access to the S3 bucket"
+    },
+    {
+      "start": 317.36,
+      "duration": 3.839,
+      "text": "without connectivity to the internet"
+    },
+    {
+      "start": 319.68,
+      "duration": 4.04,
+      "text": "which solution will provide private"
+    },
+    {
+      "start": 321.199,
+      "duration": 4.401,
+      "text": "network connectivity to Amazon S3 let's"
+    },
+    {
+      "start": 323.72,
+      "duration": 3.52,
+      "text": "try to understand the question now so we"
+    },
+    {
+      "start": 325.6,
+      "duration": 6.0,
+      "text": "have an application that is running on"
+    },
+    {
+      "start": 327.24,
+      "duration": 7.239,
+      "text": "Amazon ec2 instance inside a VPC so then"
+    },
+    {
+      "start": 331.6,
+      "duration": 7.24,
+      "text": "we want this ec2 instance to connect or"
+    },
+    {
+      "start": 334.479,
+      "duration": 6.521,
+      "text": "to access S3 bucket privately without"
+    },
+    {
+      "start": 338.84,
+      "duration": 3.52,
+      "text": "the internet so how can you do that"
+    },
+    {
+      "start": 341.0,
+      "duration": 3.44,
+      "text": "whenever you have a question about"
+    },
+    {
+      "start": 342.36,
+      "duration": 3.8,
+      "text": "connecting an aw service through private"
+    },
+    {
+      "start": 344.44,
+      "duration": 3.599,
+      "text": "connection you will always look for"
+    },
+    {
+      "start": 346.16,
+      "duration": 3.96,
+      "text": "endpoints so in first option we have"
+    },
+    {
+      "start": 348.039,
+      "duration": 4.44,
+      "text": "here is create a Gateway VPC endpoint to"
+    },
+    {
+      "start": 350.12,
+      "duration": 5.12,
+      "text": "S3 bucket a VPC endpoint lets you"
+    },
+    {
+      "start": 352.479,
+      "duration": 4.481,
+      "text": "connect to S3 bucket without connecting"
+    },
+    {
+      "start": 355.24,
+      "duration": 4.0,
+      "text": "to the internet so this is most likely"
+    },
+    {
+      "start": 356.96,
+      "duration": 4.32,
+      "text": "the right answer but the next option is"
+    },
+    {
+      "start": 359.24,
+      "duration": 4.56,
+      "text": "stream the logs to Amazon cloudwatch"
+    },
+    {
+      "start": 361.28,
+      "duration": 5.08,
+      "text": "logs and Export the log to A3 bucket"
+    },
+    {
+      "start": 363.8,
+      "duration": 4.64,
+      "text": "this is adding extra step of putting the"
+    },
+    {
+      "start": 366.36,
+      "duration": 3.399,
+      "text": "logs in Amazon cloudwatch and then this"
+    },
+    {
+      "start": 368.44,
+      "duration": 3.28,
+      "text": "is not private so this is not the"
+    },
+    {
+      "start": 369.759,
+      "duration": 4.321,
+      "text": "correct answer instant profile can"
+    },
+    {
+      "start": 371.72,
+      "duration": 3.84,
+      "text": "actually let you access S3 bucket but"
+    },
+    {
+      "start": 374.08,
+      "duration": 4.16,
+      "text": "again this is not private this is going"
+    },
+    {
+      "start": 375.56,
+      "duration": 4.72,
+      "text": "to be public create an Amazon API"
+    },
+    {
+      "start": 378.24,
+      "duration": 3.76,
+      "text": "Gateway API Gateway is not used for"
+    },
+    {
+      "start": 380.28,
+      "duration": 4.4,
+      "text": "accessing different Services it is"
+    },
+    {
+      "start": 382.0,
+      "duration": 5.12,
+      "text": "usually to create API so again this is"
+    },
+    {
+      "start": 384.68,
+      "duration": 4.12,
+      "text": "not the right answer let's check it so"
+    },
+    {
+      "start": 387.12,
+      "duration": 3.56,
+      "text": "you can see this is actually a correct"
+    },
+    {
+      "start": 388.8,
+      "duration": 3.72,
+      "text": "answer again Gateway VPC endpoint"
+    },
+    {
+      "start": 390.68,
+      "duration": 4.76,
+      "text": "enables private communication between"
+    },
+    {
+      "start": 392.52,
+      "duration": 5.16,
+      "text": "your VPC and supported AWS services in"
+    },
+    {
+      "start": 395.44,
+      "duration": 4.159,
+      "text": "AWS there are two types of endpoints VPC"
+    },
+    {
+      "start": 397.68,
+      "duration": 3.959,
+      "text": "endpoints and you also have S3 endpoint"
+    },
+    {
+      "start": 399.599,
+      "duration": 4.281,
+      "text": "if you want to access S3 services"
+    },
+    {
+      "start": 401.639,
+      "duration": 3.921,
+      "text": "without internet you can use S3 endpoint"
+    },
+    {
+      "start": 403.88,
+      "duration": 4.4,
+      "text": "but here we are talking about connecting"
+    },
+    {
+      "start": 405.56,
+      "duration": 4.84,
+      "text": "e to instance in a VPC to an S3 bucket"
+    },
+    {
+      "start": 408.28,
+      "duration": 3.52,
+      "text": "privately so that's why we using Gateway"
+    },
+    {
+      "start": 410.4,
+      "duration": 3.56,
+      "text": "VPC"
+    },
+    {
+      "start": 411.8,
+      "duration": 3.6,
+      "text": "endpoint as you can see this is not the"
+    },
+    {
+      "start": 413.96,
+      "duration": 3.359,
+      "text": "correct answer because this is not going"
+    },
+    {
+      "start": 415.4,
+      "duration": 4.199,
+      "text": "to be private it is going to be through"
+    },
+    {
+      "start": 417.319,
+      "duration": 4.201,
+      "text": "public internet uh this is again not"
+    },
+    {
+      "start": 419.599,
+      "duration": 4.28,
+      "text": "private that's why we cannot use"
+    },
+    {
+      "start": 421.52,
+      "duration": 4.16,
+      "text": "instance profile API Gateway is used for"
+    },
+    {
+      "start": 423.879,
+      "duration": 4.281,
+      "text": "creating and managing apis it is not"
+    },
+    {
+      "start": 425.68,
+      "duration": 4.44,
+      "text": "used for connection so we have overall"
+    },
+    {
+      "start": 428.16,
+      "duration": 4.12,
+      "text": "explanation here and we also have a"
+    },
+    {
+      "start": 430.12,
+      "duration": 4.12,
+      "text": "documentation link mentioned in the"
+    },
+    {
+      "start": 432.28,
+      "duration": 4.359,
+      "text": "practice test so you can see how you can"
+    },
+    {
+      "start": 434.24,
+      "duration": 4.32,
+      "text": "use Gateway endpoints for Amazon S3 so"
+    },
+    {
+      "start": 436.639,
+      "duration": 4.201,
+      "text": "you can access Amazon S3 from your VPC"
+    },
+    {
+      "start": 438.56,
+      "duration": 4.039,
+      "text": "using Gateway VPC endpoint and you can"
+    },
+    {
+      "start": 440.84,
+      "duration": 4.039,
+      "text": "do this without connecting to the"
+    },
+    {
+      "start": 442.599,
+      "duration": 4.801,
+      "text": "internet so now let's move on to the"
+    },
+    {
+      "start": 444.879,
+      "duration": 4.241,
+      "text": "next question the next question here is"
+    },
+    {
+      "start": 447.4,
+      "duration": 5.199,
+      "text": "a company is hosting a web application"
+    },
+    {
+      "start": 449.12,
+      "duration": 5.6,
+      "text": "on AWS using single Amazon ec2 instance"
+    },
+    {
+      "start": 452.599,
+      "duration": 4.201,
+      "text": "that stores user uploaded documents in"
+    },
+    {
+      "start": 454.72,
+      "duration": 4.319,
+      "text": "Amazon EBS volume so we have an"
+    },
+    {
+      "start": 456.8,
+      "duration": 5.399,
+      "text": "application on E2 that stores data on"
+    },
+    {
+      "start": 459.039,
+      "duration": 5.12,
+      "text": "Amazon EBS EBS stands for elastic block"
+    },
+    {
+      "start": 462.199,
+      "duration": 3.72,
+      "text": "storage for better scalability and"
+    },
+    {
+      "start": 464.159,
+      "duration": 4.48,
+      "text": "availability the company duplicated the"
+    },
+    {
+      "start": 465.919,
+      "duration": 5.28,
+      "text": "architecture and created a second ac2"
+    },
+    {
+      "start": 468.639,
+      "duration": 5.161,
+      "text": "instance and also an EBS volume in"
+    },
+    {
+      "start": 471.199,
+      "duration": 4.72,
+      "text": "another a placing them both behind the"
+    },
+    {
+      "start": 473.8,
+      "duration": 4.119,
+      "text": "load balancer after completing this"
+    },
+    {
+      "start": 475.919,
+      "duration": 4.24,
+      "text": "change user reported that each time they"
+    },
+    {
+      "start": 477.919,
+      "duration": 5.0,
+      "text": "refresh the website they could see only"
+    },
+    {
+      "start": 480.159,
+      "duration": 4.6,
+      "text": "one subset of this document or the other"
+    },
+    {
+      "start": 482.919,
+      "duration": 3.761,
+      "text": "but never all the document at the same"
+    },
+    {
+      "start": 484.759,
+      "duration": 4.28,
+      "text": "time what should a Solutions architect"
+    },
+    {
+      "start": 486.68,
+      "duration": 4.28,
+      "text": "propose to ensure users see all of their"
+    },
+    {
+      "start": 489.039,
+      "duration": 3.0,
+      "text": "documents at once this is a very"
+    },
+    {
+      "start": 490.96,
+      "duration": 2.919,
+      "text": "interesting question and actually"
+    },
+    {
+      "start": 492.039,
+      "duration": 3.6,
+      "text": "something that people face on everyday"
+    },
+    {
+      "start": 493.879,
+      "duration": 4.401,
+      "text": "thing so let me explain you this with a"
+    },
+    {
+      "start": 495.639,
+      "duration": 4.96,
+      "text": "diagram here according to this question"
+    },
+    {
+      "start": 498.28,
+      "duration": 4.359,
+      "text": "you have an ac2 instance and this E2"
+    },
+    {
+      "start": 500.599,
+      "duration": 4.961,
+      "text": "instance is attached to a elastic Block"
+    },
+    {
+      "start": 502.639,
+      "duration": 5.641,
+      "text": "store which is storing all the user data"
+    },
+    {
+      "start": 505.56,
+      "duration": 4.72,
+      "text": "now the company has added replicated the"
+    },
+    {
+      "start": 508.28,
+      "duration": 4.36,
+      "text": "same thing and"
+    },
+    {
+      "start": 510.28,
+      "duration": 5.48,
+      "text": "they have two different instances also"
+    },
+    {
+      "start": 512.64,
+      "duration": 6.6,
+      "text": "another EBS and these are behind a load"
+    },
+    {
+      "start": 515.76,
+      "duration": 6.079,
+      "text": "balancer so when a user tries to access"
+    },
+    {
+      "start": 519.24,
+      "duration": 4.919,
+      "text": "the data they either get some part of"
+    },
+    {
+      "start": 521.839,
+      "duration": 3.641,
+      "text": "their data not like some part which"
+    },
+    {
+      "start": 524.159,
+      "duration": 3.281,
+      "text": "might be stored here or which might be"
+    },
+    {
+      "start": 525.48,
+      "duration": 4.0,
+      "text": "stored here not the complete information"
+    },
+    {
+      "start": 527.44,
+      "duration": 4.28,
+      "text": "so how can you solve this issue so the"
+    },
+    {
+      "start": 529.48,
+      "duration": 4.68,
+      "text": "problem here is with the storage EBS or"
+    },
+    {
+      "start": 531.72,
+      "duration": 4.84,
+      "text": "elastic Block store if you have multiple"
+    },
+    {
+      "start": 534.16,
+      "duration": 4.919,
+      "text": "ec2 instances and you want to share the"
+    },
+    {
+      "start": 536.56,
+      "duration": 5.88,
+      "text": "data between them instead of using EBS"
+    },
+    {
+      "start": 539.079,
+      "duration": 5.681,
+      "text": "you should be using EFS so EFS is"
+    },
+    {
+      "start": 542.44,
+      "duration": 4.44,
+      "text": "elastic file system that will make sure"
+    },
+    {
+      "start": 544.76,
+      "duration": 4.24,
+      "text": "that the data is present complete"
+    },
+    {
+      "start": 546.88,
+      "duration": 4.56,
+      "text": "accurate for both of these servers so"
+    },
+    {
+      "start": 549.0,
+      "duration": 5.32,
+      "text": "the answer here is going to be using EB"
+    },
+    {
+      "start": 551.44,
+      "duration": 6.0,
+      "text": "EFS instead of using EFS so copy the"
+    },
+    {
+      "start": 554.32,
+      "duration": 5.68,
+      "text": "data from both EBS volume to Amazon EFS"
+    },
+    {
+      "start": 557.44,
+      "duration": 5.079,
+      "text": "let's check the answer and it's correct"
+    },
+    {
+      "start": 560.0,
+      "duration": 4.88,
+      "text": "because Amazon EFS provides a shared"
+    },
+    {
+      "start": 562.519,
+      "duration": 4.601,
+      "text": "file system accessible by both ec2"
+    },
+    {
+      "start": 564.88,
+      "duration": 3.92,
+      "text": "instances ensuring all users can access"
+    },
+    {
+      "start": 567.12,
+      "duration": 3.48,
+      "text": "all documents regardless of which"
+    },
+    {
+      "start": 568.8,
+      "duration": 3.36,
+      "text": "instance they are outout it to this will"
+    },
+    {
+      "start": 570.6,
+      "duration": 3.72,
+      "text": "be most likely in your exam so make sure"
+    },
+    {
+      "start": 572.16,
+      "duration": 4.56,
+      "text": "you practice this moving on to the next"
+    },
+    {
+      "start": 574.32,
+      "duration": 4.8,
+      "text": "question now in this question a company"
+    },
+    {
+      "start": 576.72,
+      "duration": 4.4,
+      "text": "uses Network file storage to store large"
+    },
+    {
+      "start": 579.12,
+      "duration": 4.36,
+      "text": "video files in on premise network"
+    },
+    {
+      "start": 581.12,
+      "duration": 5.44,
+      "text": "attached storage each video file ranges"
+    },
+    {
+      "start": 583.48,
+      "duration": 6.88,
+      "text": "in size from 1 MB to 500 GB and the"
+    },
+    {
+      "start": 586.56,
+      "duration": 6.0,
+      "text": "total storage is 70 TB or terabytes and"
+    },
+    {
+      "start": 590.36,
+      "duration": 4.64,
+      "text": "is no longer growing the company decides"
+    },
+    {
+      "start": 592.56,
+      "duration": 4.399,
+      "text": "to migrate the video files to Amazon S3"
+    },
+    {
+      "start": 595.0,
+      "duration": 3.48,
+      "text": "bucket so according to this question we"
+    },
+    {
+      "start": 596.959,
+      "duration": 4.56,
+      "text": "have a company which is storing all"
+    },
+    {
+      "start": 598.48,
+      "duration": 6.28,
+      "text": "their video files on premises and each"
+    },
+    {
+      "start": 601.519,
+      "duration": 5.681,
+      "text": "video file ranges from 1 MB to 500 GB"
+    },
+    {
+      "start": 604.76,
+      "duration": 4.44,
+      "text": "and the total storage is 70tb and they"
+    },
+    {
+      "start": 607.2,
+      "duration": 4.96,
+      "text": "want to migrate this on promise storage"
+    },
+    {
+      "start": 609.2,
+      "duration": 4.92,
+      "text": "to S3 bucket the company must migrate"
+    },
+    {
+      "start": 612.16,
+      "duration": 3.76,
+      "text": "the video files as soon as possible"
+    },
+    {
+      "start": 614.12,
+      "duration": 4.0,
+      "text": "while using the least possible Network"
+    },
+    {
+      "start": 615.92,
+      "duration": 3.88,
+      "text": "bandwidth which solution will meet this"
+    },
+    {
+      "start": 618.12,
+      "duration": 3.399,
+      "text": "requirement so whenever it is about"
+    },
+    {
+      "start": 619.8,
+      "duration": 3.2,
+      "text": "least possible Network bandwidth most"
+    },
+    {
+      "start": 621.519,
+      "duration": 3.801,
+      "text": "likely it will not be through the public"
+    },
+    {
+      "start": 623.0,
+      "duration": 4.32,
+      "text": "internet it will be privately and"
+    },
+    {
+      "start": 625.32,
+      "duration": 3.8,
+      "text": "whenever it is a huge amount of data"
+    },
+    {
+      "start": 627.32,
+      "duration": 4.079,
+      "text": "that you need to migrate you will most"
+    },
+    {
+      "start": 629.12,
+      "duration": 4.6,
+      "text": "like use the snow devices so in this"
+    },
+    {
+      "start": 631.399,
+      "duration": 4.761,
+      "text": "question or in the answer here we have a"
+    },
+    {
+      "start": 633.72,
+      "duration": 4.48,
+      "text": "snowball Edge mentioned and I think most"
+    },
+    {
+      "start": 636.16,
+      "duration": 4.76,
+      "text": "likely this is the answer so let's check"
+    },
+    {
+      "start": 638.2,
+      "duration": 4.48,
+      "text": "the answer the answer here is snowball I"
+    },
+    {
+      "start": 640.92,
+      "duration": 4.8,
+      "text": "provides high bandwidth local transfers"
+    },
+    {
+      "start": 642.68,
+      "duration": 4.64,
+      "text": "and minimizes network usage during the"
+    },
+    {
+      "start": 645.72,
+      "duration": 3.559,
+      "text": "this is ideal for last data sets like"
+    },
+    {
+      "start": 647.32,
+      "duration": 3.6,
+      "text": "video files accelerating the transfer"
+    },
+    {
+      "start": 649.279,
+      "duration": 4.24,
+      "text": "let's also see why direct connect is not"
+    },
+    {
+      "start": 650.92,
+      "duration": 4.2,
+      "text": "the right answer because Direct Connect"
+    },
+    {
+      "start": 653.519,
+      "duration": 4.44,
+      "text": "offers higher bandwidth than the public"
+    },
+    {
+      "start": 655.12,
+      "duration": 4.519,
+      "text": "internet but it still be slower than"
+    },
+    {
+      "start": 657.959,
+      "duration": 4.521,
+      "text": "snowball Edge for very large files and"
+    },
+    {
+      "start": 659.639,
+      "duration": 4.88,
+      "text": "made invol higher setup and ongoing cost"
+    },
+    {
+      "start": 662.48,
+      "duration": 4.72,
+      "text": "so we want to have low cost we also want"
+    },
+    {
+      "start": 664.519,
+      "duration": 4.601,
+      "text": "to have least possible Network bandwidth"
+    },
+    {
+      "start": 667.2,
+      "duration": 3.759,
+      "text": "and as soon as possible that's why"
+    },
+    {
+      "start": 669.12,
+      "duration": 3.68,
+      "text": "snowball Edge is the right answer you"
+    },
+    {
+      "start": 670.959,
+      "duration": 4.161,
+      "text": "can read the complete explanation here"
+    },
+    {
+      "start": 672.8,
+      "duration": 4.0,
+      "text": "or you can also click on this link to"
+    },
+    {
+      "start": 675.12,
+      "duration": 5.08,
+      "text": "learn about how you can use snowball"
+    },
+    {
+      "start": 676.8,
+      "duration": 5.76,
+      "text": "Edge to migrate data to Amazon"
+    },
+    {
+      "start": 680.2,
+      "duration": 3.84,
+      "text": "S3 again a very important question and I"
+    },
+    {
+      "start": 682.56,
+      "duration": 3.04,
+      "text": "think most likely this will be there"
+    },
+    {
+      "start": 684.04,
+      "duration": 3.479,
+      "text": "will always be a question maybe not on"
+    },
+    {
+      "start": 685.6,
+      "duration": 4.239,
+      "text": "Snowball Edge or maybe snow other"
+    },
+    {
+      "start": 687.519,
+      "duration": 3.921,
+      "text": "snowball devices but there will always"
+    },
+    {
+      "start": 689.839,
+      "duration": 5.081,
+      "text": "be a question on how you can migrate"
+    },
+    {
+      "start": 691.44,
+      "duration": 5.24,
+      "text": "data from on premise to AWS now let's"
+    },
+    {
+      "start": 694.92,
+      "duration": 3.56,
+      "text": "move on to the next question so we are"
+    },
+    {
+      "start": 696.68,
+      "duration": 3.92,
+      "text": "going to cover 10 questions from this"
+    },
+    {
+      "start": 698.48,
+      "duration": 3.96,
+      "text": "practice test and if you wish to do more"
+    },
+    {
+      "start": 700.6,
+      "duration": 3.359,
+      "text": "the L link for this practice test is in"
+    },
+    {
+      "start": 702.44,
+      "duration": 3.079,
+      "text": "this video description if you are a"
+    },
+    {
+      "start": 703.959,
+      "duration": 3.56,
+      "text": "subscriber let me know and I can share"
+    },
+    {
+      "start": 705.519,
+      "duration": 4.481,
+      "text": "you some coupon code but let's move on"
+    },
+    {
+      "start": 707.519,
+      "duration": 4.801,
+      "text": "to this next question a company has an"
+    },
+    {
+      "start": 710.0,
+      "duration": 5.279,
+      "text": "application that runs on Amazon E2"
+    },
+    {
+      "start": 712.32,
+      "duration": 4.72,
+      "text": "instance and uses Amazon Aurora database"
+    },
+    {
+      "start": 715.279,
+      "duration": 4.441,
+      "text": "the ec2 instances connect to the"
+    },
+    {
+      "start": 717.04,
+      "duration": 4.76,
+      "text": "database by using username and password"
+    },
+    {
+      "start": 719.72,
+      "duration": 3.48,
+      "text": "that has stored locally the company"
+    },
+    {
+      "start": 721.8,
+      "duration": 4.08,
+      "text": "wants to minimize the operational"
+    },
+    {
+      "start": 723.2,
+      "duration": 4.24,
+      "text": "overhead of credential Management in AWS"
+    },
+    {
+      "start": 725.88,
+      "duration": 3.88,
+      "text": "whenever it is a credential management"
+    },
+    {
+      "start": 727.44,
+      "duration": 4.8,
+      "text": "it is always talking about AWS secret"
+    },
+    {
+      "start": 729.76,
+      "duration": 4.759,
+      "text": "manager service secret manager service"
+    },
+    {
+      "start": 732.24,
+      "duration": 5.959,
+      "text": "in AWS are generally used to store API"
+    },
+    {
+      "start": 734.519,
+      "duration": 5.401,
+      "text": "Keys access Keys database passwords Etc"
+    },
+    {
+      "start": 738.199,
+      "duration": 3.561,
+      "text": "in the question the company has ec2"
+    },
+    {
+      "start": 739.92,
+      "duration": 3.8,
+      "text": "instance that is connecting to an Amazon"
+    },
+    {
+      "start": 741.76,
+      "duration": 4.4,
+      "text": "Aurora database through username and"
+    },
+    {
+      "start": 743.72,
+      "duration": 3.919,
+      "text": "password which are stored in file but"
+    },
+    {
+      "start": 746.16,
+      "duration": 3.239,
+      "text": "you should be storing it in Amazon"
+    },
+    {
+      "start": 747.639,
+      "duration": 2.841,
+      "text": "Secrets manager because secrets it"
+    },
+    {
+      "start": 749.399,
+      "duration": 4.201,
+      "text": "provides you with many different"
+    },
+    {
+      "start": 750.48,
+      "duration": 5.24,
+      "text": "features like password rotation um"
+    },
+    {
+      "start": 753.6,
+      "duration": 5.0,
+      "text": "access management lot more so I will be"
+    },
+    {
+      "start": 755.72,
+      "duration": 5.28,
+      "text": "using this the second option use System"
+    },
+    {
+      "start": 758.6,
+      "duration": 4.72,
+      "text": "Manager parameters store is also a"
+    },
+    {
+      "start": 761.0,
+      "duration": 3.959,
+      "text": "correct option but it is not it does not"
+    },
+    {
+      "start": 763.32,
+      "duration": 3.519,
+      "text": "have an option of automatic rotation so"
+    },
+    {
+      "start": 764.959,
+      "duration": 3.481,
+      "text": "this is not the correct answer here"
+    },
+    {
+      "start": 766.839,
+      "duration": 4.68,
+      "text": "whereas uh"
+    },
+    {
+      "start": 768.44,
+      "duration": 5.56,
+      "text": "using KMS or using elastic Block store"
+    },
+    {
+      "start": 771.519,
+      "duration": 3.88,
+      "text": "is not easier compared to Secrets"
+    },
+    {
+      "start": 774.0,
+      "duration": 2.639,
+      "text": "manager you can easily do it with"
+    },
+    {
+      "start": 775.399,
+      "duration": 3.12,
+      "text": "Secrets manager so I think that's the"
+    },
+    {
+      "start": 776.639,
+      "duration": 3.961,
+      "text": "correct answer but you can always read"
+    },
+    {
+      "start": 778.519,
+      "duration": 3.841,
+      "text": "the explanation for it here this"
+    },
+    {
+      "start": 780.6,
+      "duration": 3.919,
+      "text": "practice test has explanations for"
+    },
+    {
+      "start": 782.36,
+      "duration": 5.279,
+      "text": "incorrect answers as well and you can"
+    },
+    {
+      "start": 784.519,
+      "duration": 4.521,
+      "text": "also read about aw Secrets manager more"
+    },
+    {
+      "start": 787.639,
+      "duration": 4.121,
+      "text": "if you want by clicking on this"
+    },
+    {
+      "start": 789.04,
+      "duration": 5.32,
+      "text": "resources link let's move on to the next"
+    },
+    {
+      "start": 791.76,
+      "duration": 5.04,
+      "text": "question now in this question a company"
+    },
+    {
+      "start": 794.36,
+      "duration": 5.08,
+      "text": "has an application that ingests incoming"
+    },
+    {
+      "start": 796.8,
+      "duration": 4.56,
+      "text": "messages dozens of their application and"
+    },
+    {
+      "start": 799.44,
+      "duration": 4.12,
+      "text": "microservices then quickly consume these"
+    },
+    {
+      "start": 801.36,
+      "duration": 4.039,
+      "text": "messages the number of messages varies"
+    },
+    {
+      "start": 803.56,
+      "duration": 4.48,
+      "text": "drastically and sometimes increases"
+    },
+    {
+      "start": 805.399,
+      "duration": 4.56,
+      "text": "suddenly to 100,000 each second a"
+    },
+    {
+      "start": 808.04,
+      "duration": 4.32,
+      "text": "company wants to decouple solution and"
+    },
+    {
+      "start": 809.959,
+      "duration": 4.24,
+      "text": "increase scalability which solution meet"
+    },
+    {
+      "start": 812.36,
+      "duration": 3.719,
+      "text": "this requirement so I will tell you a"
+    },
+    {
+      "start": 814.199,
+      "duration": 4.2,
+      "text": "trick now whenever you have a question"
+    },
+    {
+      "start": 816.079,
+      "duration": 4.44,
+      "text": "in the exam look for the keywords in"
+    },
+    {
+      "start": 818.399,
+      "duration": 4.521,
+      "text": "this question they're talking about"
+    },
+    {
+      "start": 820.519,
+      "duration": 4.56,
+      "text": "messages incoming messages and they want"
+    },
+    {
+      "start": 822.92,
+      "duration": 4.52,
+      "text": "a solution that will decouple the"
+    },
+    {
+      "start": 825.079,
+      "duration": 5.12,
+      "text": "decouple it and increase scalability so"
+    },
+    {
+      "start": 827.44,
+      "duration": 5.199,
+      "text": "whenever I look at this keyword here"
+    },
+    {
+      "start": 830.199,
+      "duration": 5.041,
+      "text": "decouple I immediately get to know that"
+    },
+    {
+      "start": 832.639,
+      "duration": 4.12,
+      "text": "this is something about Amazon sqs"
+    },
+    {
+      "start": 835.24,
+      "duration": 5.279,
+      "text": "because if you generally search for"
+    },
+    {
+      "start": 836.759,
+      "duration": 7.52,
+      "text": "Amazon sqs here so if I search for AWS"
+    },
+    {
+      "start": 840.519,
+      "duration": 5.68,
+      "text": "sqs see here Amazon sqs offers secure"
+    },
+    {
+      "start": 844.279,
+      "duration": 4.521,
+      "text": "durable and available hosted queue that"
+    },
+    {
+      "start": 846.199,
+      "duration": 5.041,
+      "text": "lets you integrate and decouple"
+    },
+    {
+      "start": 848.8,
+      "duration": 4.279,
+      "text": "distributed software so whenever it is"
+    },
+    {
+      "start": 851.24,
+      "duration": 4.8,
+      "text": "about decoupling and it is about"
+    },
+    {
+      "start": 853.079,
+      "duration": 5.721,
+      "text": "messaging you will always check for"
+    },
+    {
+      "start": 856.04,
+      "duration": 4.599,
+      "text": "Amazon sqs so according to this question"
+    },
+    {
+      "start": 858.8,
+      "duration": 5.56,
+      "text": "I think publishing the message to Amazon"
+    },
+    {
+      "start": 860.639,
+      "duration": 6.12,
+      "text": "SNS topic with multiple sqs Q configure"
+    },
+    {
+      "start": 864.36,
+      "duration": 4.399,
+      "text": "the consumer application to process and"
+    },
+    {
+      "start": 866.759,
+      "duration": 3.921,
+      "text": "message from the cues this is a correct"
+    },
+    {
+      "start": 868.759,
+      "duration": 3.841,
+      "text": "answer and if you see this is the"
+    },
+    {
+      "start": 870.68,
+      "duration": 3.599,
+      "text": "correct answer because look for the"
+    },
+    {
+      "start": 872.6,
+      "duration": 3.72,
+      "text": "keywords if you don't know the answer"
+    },
+    {
+      "start": 874.279,
+      "duration": 4.201,
+      "text": "completely so the architecture provides"
+    },
+    {
+      "start": 876.32,
+      "duration": 3.519,
+      "text": "excellent decoupling and scalability and"
+    },
+    {
+      "start": 878.48,
+      "duration": 3.4,
+      "text": "if you want to scroll down you can"
+    },
+    {
+      "start": 879.839,
+      "duration": 5.841,
+      "text": "always like click on this and read more"
+    },
+    {
+      "start": 881.88,
+      "duration": 6.759,
+      "text": "about how sqs SNS work and how they can"
+    },
+    {
+      "start": 885.68,
+      "duration": 4.04,
+      "text": "be used so if you look at sqs uh you"
+    },
+    {
+      "start": 888.639,
+      "duration": 4.361,
+      "text": "will always"
+    },
+    {
+      "start": 889.72,
+      "duration": 5.32,
+      "text": "find how sqs is used for decoupling micr"
+    },
+    {
+      "start": 893.0,
+      "duration": 3.6,
+      "text": "services so you can see decoupling"
+    },
+    {
+      "start": 895.04,
+      "duration": 3.68,
+      "text": "microservices this is the selling point"
+    },
+    {
+      "start": 896.6,
+      "duration": 5.039,
+      "text": "of sqs so whenever in the exam you see"
+    },
+    {
+      "start": 898.72,
+      "duration": 5.6,
+      "text": "DEC coupling it will always be"
+    },
+    {
+      "start": 901.639,
+      "duration": 4.841,
+      "text": "sqs in this question we have a global"
+    },
+    {
+      "start": 904.32,
+      "duration": 4.519,
+      "text": "company hosts its web application on"
+    },
+    {
+      "start": 906.48,
+      "duration": 4.44,
+      "text": "Amazon ec2 instance behind an"
+    },
+    {
+      "start": 908.839,
+      "duration": 4.8,
+      "text": "application load balancer the web"
+    },
+    {
+      "start": 910.92,
+      "duration": 4.68,
+      "text": "application has static and dynamic data"
+    },
+    {
+      "start": 913.639,
+      "duration": 4.401,
+      "text": "the company stores its static data in"
+    },
+    {
+      "start": 915.6,
+      "duration": 4.039,
+      "text": "Amazon S3 bucket and the company wants"
+    },
+    {
+      "start": 918.04,
+      "duration": 4.0,
+      "text": "to improve performance and reduce"
+    },
+    {
+      "start": 919.639,
+      "duration": 5.0,
+      "text": "latency for the static data and dynamic"
+    },
+    {
+      "start": 922.04,
+      "duration": 5.32,
+      "text": "data companies using its own domain name"
+    },
+    {
+      "start": 924.639,
+      "duration": 4.801,
+      "text": "registered with Amazon Route 53 what"
+    },
+    {
+      "start": 927.36,
+      "duration": 4.12,
+      "text": "should a Solutions architect do to meet"
+    },
+    {
+      "start": 929.44,
+      "duration": 3.56,
+      "text": "this requirement let me explain you this"
+    },
+    {
+      "start": 931.48,
+      "duration": 6.279,
+      "text": "question properly so you can answer them"
+    },
+    {
+      "start": 933.0,
+      "duration": 8.8,
+      "text": "easily so in this question a company has"
+    },
+    {
+      "start": 937.759,
+      "duration": 5.121,
+      "text": "an application on Amazon ec2 instance so"
+    },
+    {
+      "start": 941.8,
+      "duration": 4.0,
+      "text": "they have their application running on"
+    },
+    {
+      "start": 942.88,
+      "duration": 6.12,
+      "text": "Amazon ec2 instance and this application"
+    },
+    {
+      "start": 945.8,
+      "duration": 6.08,
+      "text": "has Dynamic data also static data the"
+    },
+    {
+      "start": 949.0,
+      "duration": 4.639,
+      "text": "static data is stored on S3 bucket so"
+    },
+    {
+      "start": 951.88,
+      "duration": 3.92,
+      "text": "here we have S3 bucket that is storing"
+    },
+    {
+      "start": 953.639,
+      "duration": 3.721,
+      "text": "all the static data and this application"
+    },
+    {
+      "start": 955.8,
+      "duration": 3.839,
+      "text": "is behind a load"
+    },
+    {
+      "start": 957.36,
+      "duration": 5.12,
+      "text": "balancer so this is a load balancer"
+    },
+    {
+      "start": 959.639,
+      "duration": 6.841,
+      "text": "behind which we have our application"
+    },
+    {
+      "start": 962.48,
+      "duration": 7.839,
+      "text": "running on the AWS ec2"
+    },
+    {
+      "start": 966.48,
+      "duration": 6.279,
+      "text": "instance now according to the question"
+    },
+    {
+      "start": 970.319,
+      "duration": 4.281,
+      "text": "the company uh wants to improve"
+    },
+    {
+      "start": 972.759,
+      "duration": 4.76,
+      "text": "performance and reduce latency for"
+    },
+    {
+      "start": 974.6,
+      "duration": 4.88,
+      "text": "static data and dynamic data both a"
+    },
+    {
+      "start": 977.519,
+      "duration": 3.32,
+      "text": "company is using its own domain name so"
+    },
+    {
+      "start": 979.48,
+      "duration": 3.839,
+      "text": "they also want to be using their own"
+    },
+    {
+      "start": 980.839,
+      "duration": 4.401,
+      "text": "domain name how can you use it so in AWS"
+    },
+    {
+      "start": 983.319,
+      "duration": 4.161,
+      "text": "there's something known as cloudfront a"
+    },
+    {
+      "start": 985.24,
+      "duration": 4.719,
+      "text": "cloudfront is a service which is used as"
+    },
+    {
+      "start": 987.48,
+      "duration": 4.799,
+      "text": "a Content delivery Network so if you"
+    },
+    {
+      "start": 989.959,
+      "duration": 4.281,
+      "text": "search for"
+    },
+    {
+      "start": 992.279,
+      "duration": 4.161,
+      "text": "cloudfront in"
+    },
+    {
+      "start": 994.24,
+      "duration": 3.8,
+      "text": "AWS uh so cloudfront service is a"
+    },
+    {
+      "start": 996.44,
+      "duration": 3.68,
+      "text": "Content delivery Network used to speed"
+    },
+    {
+      "start": 998.04,
+      "duration": 4.56,
+      "text": "up the delivery of web content to the"
+    },
+    {
+      "start": 1000.12,
+      "duration": 4.159,
+      "text": "user so you can use cloudfront for this"
+    },
+    {
+      "start": 1002.6,
+      "duration": 4.2,
+      "text": "use case and you can use it to"
+    },
+    {
+      "start": 1004.279,
+      "duration": 5.92,
+      "text": "distribute both your static and dynamic"
+    },
+    {
+      "start": 1006.8,
+      "duration": 6.56,
+      "text": "content quickly so when using cloudfront"
+    },
+    {
+      "start": 1010.199,
+      "duration": 5.801,
+      "text": "you can put cloudfront in front of this"
+    },
+    {
+      "start": 1013.36,
+      "duration": 5.0,
+      "text": "and cloudfront will be used or you can"
+    },
+    {
+      "start": 1016.0,
+      "duration": 4.959,
+      "text": "use load balancer for your Dynamic data"
+    },
+    {
+      "start": 1018.36,
+      "duration": 4.279,
+      "text": "S3 for your static data as an origin for"
+    },
+    {
+      "start": 1020.959,
+      "duration": 4.641,
+      "text": "the cloudfront and whenever user tries"
+    },
+    {
+      "start": 1022.639,
+      "duration": 4.521,
+      "text": "to reach out your website all the static"
+    },
+    {
+      "start": 1025.6,
+      "duration": 3.52,
+      "text": "and the dynamic data is going to be"
+    },
+    {
+      "start": 1027.16,
+      "duration": 4.32,
+      "text": "stored in the edge location inside this"
+    },
+    {
+      "start": 1029.12,
+      "duration": 4.64,
+      "text": "Cloud front so this is how you can use"
+    },
+    {
+      "start": 1031.48,
+      "duration": 5.319,
+      "text": "cloud front to make your content"
+    },
+    {
+      "start": 1033.76,
+      "duration": 5.12,
+      "text": "distribution faster so in the options"
+    },
+    {
+      "start": 1036.799,
+      "duration": 4.4,
+      "text": "you can see cloudfront here cloudfront"
+    },
+    {
+      "start": 1038.88,
+      "duration": 5.199,
+      "text": "that has S3 bucket and ALB as the origin"
+    },
+    {
+      "start": 1041.199,
+      "duration": 5.0,
+      "text": "which can be used to manage both static"
+    },
+    {
+      "start": 1044.079,
+      "duration": 4.041,
+      "text": "and dynamic data because cloudfront"
+    },
+    {
+      "start": 1046.199,
+      "duration": 5.36,
+      "text": "supports both whereas the second option"
+    },
+    {
+      "start": 1048.12,
+      "duration": 5.919,
+      "text": "says use cloud front that has ALB as a"
+    },
+    {
+      "start": 1051.559,
+      "duration": 4.441,
+      "text": "origin and AWS Global accelerator that"
+    },
+    {
+      "start": 1054.039,
+      "duration": 4.201,
+      "text": "has S3 bucket as a origin not not"
+    },
+    {
+      "start": 1056.0,
+      "duration": 4.96,
+      "text": "required because cloudfront can manage"
+    },
+    {
+      "start": 1058.24,
+      "duration": 5.36,
+      "text": "both S3 and ALB static and dynamic data"
+    },
+    {
+      "start": 1060.96,
+      "duration": 4.52,
+      "text": "both so this is not required similarly"
+    },
+    {
+      "start": 1063.6,
+      "duration": 4.64,
+      "text": "cloudfront that has S3 has the origin"
+    },
+    {
+      "start": 1065.48,
+      "duration": 4.76,
+      "text": "create Global accelerator that is ALB"
+    },
+    {
+      "start": 1068.24,
+      "duration": 4.92,
+      "text": "and cloudfront as endpoint not required"
+    },
+    {
+      "start": 1070.24,
+      "duration": 5.64,
+      "text": "this is going to be extra service so we"
+    },
+    {
+      "start": 1073.16,
+      "duration": 4.68,
+      "text": "can do the same thing with this with"
+    },
+    {
+      "start": 1075.88,
+      "duration": 4.56,
+      "text": "less operational overhead so the correct"
+    },
+    {
+      "start": 1077.84,
+      "duration": 4.959,
+      "text": "answer is cloudfront to manage both S3"
+    },
+    {
+      "start": 1080.44,
+      "duration": 4.96,
+      "text": "and ALB so you can see cloud is Global"
+    },
+    {
+      "start": 1082.799,
+      "duration": 5.201,
+      "text": "Network content delivery Network that"
+    },
+    {
+      "start": 1085.4,
+      "duration": 4.44,
+      "text": "cash static from S3 and dynamic data"
+    },
+    {
+      "start": 1088.0,
+      "duration": 3.36,
+      "text": "from ALB at Edge location reducing"
+    },
+    {
+      "start": 1089.84,
+      "duration": 3.44,
+      "text": "latency and improving performance of the"
+    },
+    {
+      "start": 1091.36,
+      "duration": 3.559,
+      "text": "users while worldwide whereas all these"
+    },
+    {
+      "start": 1093.28,
+      "duration": 3.08,
+      "text": "options are wrong and you can always"
+    },
+    {
+      "start": 1094.919,
+      "duration": 3.321,
+      "text": "read the explanations here on this"
+    },
+    {
+      "start": 1096.36,
+      "duration": 3.319,
+      "text": "practice test and if you want to learn"
+    },
+    {
+      "start": 1098.24,
+      "duration": 4.52,
+      "text": "more about cloudfront you can always"
+    },
+    {
+      "start": 1099.679,
+      "duration": 4.36,
+      "text": "click on this link so if you try to"
+    },
+    {
+      "start": 1102.76,
+      "duration": 3.48,
+      "text": "understand the questions properly in the"
+    },
+    {
+      "start": 1104.039,
+      "duration": 4.12,
+      "text": "exam you can easily answer them the"
+    },
+    {
+      "start": 1106.24,
+      "duration": 4.28,
+      "text": "questions are not that difficult and if"
+    },
+    {
+      "start": 1108.159,
+      "duration": 3.601,
+      "text": "you these options are very much similar"
+    },
+    {
+      "start": 1110.52,
+      "duration": 3.32,
+      "text": "to each other you just need to"
+    },
+    {
+      "start": 1111.76,
+      "duration": 3.919,
+      "text": "understand what service is used for what"
+    },
+    {
+      "start": 1113.84,
+      "duration": 3.36,
+      "text": "what are different features and so on I"
+    },
+    {
+      "start": 1115.679,
+      "duration": 3.48,
+      "text": "hope this video will help you pass your"
+    },
+    {
+      "start": 1117.2,
+      "duration": 4.92,
+      "text": "exam with that being said let's move on"
+    },
+    {
+      "start": 1119.159,
+      "duration": 5.321,
+      "text": "to the next question a company performs"
+    },
+    {
+      "start": 1122.12,
+      "duration": 4.4,
+      "text": "monthly maintenance on its AWS"
+    },
+    {
+      "start": 1124.48,
+      "duration": 4.36,
+      "text": "infrastructure during this maintenance"
+    },
+    {
+      "start": 1126.52,
+      "duration": 5.36,
+      "text": "activities the company need to rotate"
+    },
+    {
+      "start": 1128.84,
+      "duration": 5.6,
+      "text": "the credentials for its Amazon RDS for"
+    },
+    {
+      "start": 1131.88,
+      "duration": 4.24,
+      "text": "mySQL database across multiple AWS"
+    },
+    {
+      "start": 1134.44,
+      "duration": 3.359,
+      "text": "region so in the previous question we"
+    },
+    {
+      "start": 1136.12,
+      "duration": 4.36,
+      "text": "saw whenever you want to rotate your"
+    },
+    {
+      "start": 1137.799,
+      "duration": 5.161,
+      "text": "credential you will always be using AWS"
+    },
+    {
+      "start": 1140.48,
+      "duration": 4.559,
+      "text": "Secrets manager because AWS systems"
+    },
+    {
+      "start": 1142.96,
+      "duration": 3.64,
+      "text": "manager which is also used to store"
+    },
+    {
+      "start": 1145.039,
+      "duration": 3.64,
+      "text": "credentials does not have the rotation"
+    },
+    {
+      "start": 1146.6,
+      "duration": 4.8,
+      "text": "option so we will be using Secrets"
+    },
+    {
+      "start": 1148.679,
+      "duration": 5.081,
+      "text": "manager and in this option here Secrets"
+    },
+    {
+      "start": 1151.4,
+      "duration": 3.84,
+      "text": "manager is present here so store the"
+    },
+    {
+      "start": 1153.76,
+      "duration": 4.08,
+      "text": "credential as secrets in the secret"
+    },
+    {
+      "start": 1155.24,
+      "duration": 5.36,
+      "text": "manager and use multi- regions secret"
+    },
+    {
+      "start": 1157.84,
+      "duration": 4.24,
+      "text": "replication for required regions so"
+    },
+    {
+      "start": 1160.6,
+      "duration": 3.24,
+      "text": "let's click on check answer and this is"
+    },
+    {
+      "start": 1162.08,
+      "duration": 3.839,
+      "text": "the correct answer so you can use"
+    },
+    {
+      "start": 1163.84,
+      "duration": 4.079,
+      "text": "Secrets manager which provides built-in"
+    },
+    {
+      "start": 1165.919,
+      "duration": 4.481,
+      "text": "support for automatic secret rotation"
+    },
+    {
+      "start": 1167.919,
+      "duration": 4.0,
+      "text": "with minimal operation overhead it also"
+    },
+    {
+      "start": 1170.4,
+      "duration": 4.12,
+      "text": "allows for multi- region secret"
+    },
+    {
+      "start": 1171.919,
+      "duration": 5.281,
+      "text": "replication as mentioned in this uh"
+    },
+    {
+      "start": 1174.52,
+      "duration": 5.32,
+      "text": "question here so the company needs to"
+    },
+    {
+      "start": 1177.2,
+      "duration": 4.64,
+      "text": "rotate credentials for its my database"
+    },
+    {
+      "start": 1179.84,
+      "duration": 4.36,
+      "text": "across multiple regions so this is also"
+    },
+    {
+      "start": 1181.84,
+      "duration": 4.079,
+      "text": "supported in AWS Secrets manager and you"
+    },
+    {
+      "start": 1184.2,
+      "duration": 3.64,
+      "text": "can again read the explanation here or"
+    },
+    {
+      "start": 1185.919,
+      "duration": 5.561,
+      "text": "read about how to rotate AWS Secrets"
+    },
+    {
+      "start": 1187.84,
+      "duration": 5.839,
+      "text": "manager Secrets uh on this official AWS"
+    },
+    {
+      "start": 1191.48,
+      "duration": 4.48,
+      "text": "documentation moving on let's look at"
+    },
+    {
+      "start": 1193.679,
+      "duration": 4.161,
+      "text": "the last question for this video and if"
+    },
+    {
+      "start": 1195.96,
+      "duration": 4.28,
+      "text": "you want to read more or practice more"
+    },
+    {
+      "start": 1197.84,
+      "duration": 4.4,
+      "text": "you can always check out the Udi course"
+    },
+    {
+      "start": 1200.24,
+      "duration": 3.84,
+      "text": "the link is in description the last"
+    },
+    {
+      "start": 1202.24,
+      "duration": 4.0,
+      "text": "question here says a company runs an"
+    },
+    {
+      "start": 1204.08,
+      "duration": 4.24,
+      "text": "e-commerce application on Amazon ec2"
+    },
+    {
+      "start": 1206.24,
+      "duration": 4.36,
+      "text": "instance behind application load"
+    },
+    {
+      "start": 1208.32,
+      "duration": 6.2,
+      "text": "balancer the instance is run in Amazon"
+    },
+    {
+      "start": 1210.6,
+      "duration": 7.16,
+      "text": "E2 autoscaling group across multiple azs"
+    },
+    {
+      "start": 1214.52,
+      "duration": 5.279,
+      "text": "and scaling group Scale based on the CPU"
+    },
+    {
+      "start": 1217.76,
+      "duration": 3.64,
+      "text": "utilization metrics and the e-commerce"
+    },
+    {
+      "start": 1219.799,
+      "duration": 4.801,
+      "text": "application store transaction data in"
+    },
+    {
+      "start": 1221.4,
+      "duration": 5.8,
+      "text": "mySQL 8. database that is hosted on a"
+    },
+    {
+      "start": 1224.6,
+      "duration": 4.76,
+      "text": "large ec2 instance okay to understand"
+    },
+    {
+      "start": 1227.2,
+      "duration": 4.24,
+      "text": "this so far we have an application that"
+    },
+    {
+      "start": 1229.36,
+      "duration": 3.96,
+      "text": "is running on Amazon ec2 behind a load"
+    },
+    {
+      "start": 1231.44,
+      "duration": 3.68,
+      "text": "balancer and his Autos scaling group is"
+    },
+    {
+      "start": 1233.32,
+      "duration": 4.12,
+      "text": "also used to automatically create these"
+    },
+    {
+      "start": 1235.12,
+      "duration": 5.439,
+      "text": "servers uh the Autos Skilling group uses"
+    },
+    {
+      "start": 1237.44,
+      "duration": 5.719,
+      "text": "CPU utilization and the application also"
+    },
+    {
+      "start": 1240.559,
+      "duration": 5.401,
+      "text": "have a database which is MySQL 8.0"
+    },
+    {
+      "start": 1243.159,
+      "duration": 5.241,
+      "text": "database on a large ec2 instance all"
+    },
+    {
+      "start": 1245.96,
+      "duration": 4.8,
+      "text": "right the database performance degrades"
+    },
+    {
+      "start": 1248.4,
+      "duration": 3.92,
+      "text": "quickly as application load increases"
+    },
+    {
+      "start": 1250.76,
+      "duration": 3.64,
+      "text": "the application handles more read"
+    },
+    {
+      "start": 1252.32,
+      "duration": 3.56,
+      "text": "requests than the right transaction the"
+    },
+    {
+      "start": 1254.4,
+      "duration": 3.48,
+      "text": "company wants a solution that will"
+    },
+    {
+      "start": 1255.88,
+      "duration": 3.799,
+      "text": "automatically scale the database to meet"
+    },
+    {
+      "start": 1257.88,
+      "duration": 3.64,
+      "text": "the demand of unpredictable read"
+    },
+    {
+      "start": 1259.679,
+      "duration": 4.161,
+      "text": "workloads while maintaining High"
+    },
+    {
+      "start": 1261.52,
+      "duration": 4.56,
+      "text": "availability so if you try to understand"
+    },
+    {
+      "start": 1263.84,
+      "duration": 4.28,
+      "text": "this AWS will always be selling their"
+    },
+    {
+      "start": 1266.08,
+      "duration": 4.76,
+      "text": "services to the customers they will"
+    },
+    {
+      "start": 1268.12,
+      "duration": 4.88,
+      "text": "always be selling the managed Solutions"
+    },
+    {
+      "start": 1270.84,
+      "duration": 4.4,
+      "text": "so in the question here we the"
+    },
+    {
+      "start": 1273.0,
+      "duration": 4.52,
+      "text": "e-commerce application is using mySQL"
+    },
+    {
+      "start": 1275.24,
+      "duration": 4.28,
+      "text": "database on ec2 instance and the company"
+    },
+    {
+      "start": 1277.52,
+      "duration": 4.48,
+      "text": "wants to have something that should be"
+    },
+    {
+      "start": 1279.52,
+      "duration": 5.399,
+      "text": "automatically scaled and should also be"
+    },
+    {
+      "start": 1282.0,
+      "duration": 6.72,
+      "text": "highly available so all these is leading"
+    },
+    {
+      "start": 1284.919,
+      "duration": 6.921,
+      "text": "you to the RDS database RDS database is"
+    },
+    {
+      "start": 1288.72,
+      "duration": 6.12,
+      "text": "a manage service in AWS that can be used"
+    },
+    {
+      "start": 1291.84,
+      "duration": 6.76,
+      "text": "to create SQL databases like MySQL"
+    },
+    {
+      "start": 1294.84,
+      "duration": 6.719,
+      "text": "postgress uh Oracle DB Etc so you can"
+    },
+    {
+      "start": 1298.6,
+      "duration": 4.559,
+      "text": "use RDS but here in the RDS say single a"
+    },
+    {
+      "start": 1301.559,
+      "duration": 4.281,
+      "text": "whereas they want to have high"
+    },
+    {
+      "start": 1303.159,
+      "duration": 4.64,
+      "text": "availability so we have to use mul easy"
+    },
+    {
+      "start": 1305.84,
+      "duration": 3.839,
+      "text": "whereas Amazon Aurora is actually right"
+    },
+    {
+      "start": 1307.799,
+      "duration": 4.601,
+      "text": "answer because Amazon Aurora has two"
+    },
+    {
+      "start": 1309.679,
+      "duration": 5.161,
+      "text": "flavors MySQL and post Aurora is highly"
+    },
+    {
+      "start": 1312.4,
+      "duration": 4.759,
+      "text": "available it has Auto scaling options so"
+    },
+    {
+      "start": 1314.84,
+      "duration": 5.0,
+      "text": "all this things lead us to this Amazon"
+    },
+    {
+      "start": 1317.159,
+      "duration": 5.0,
+      "text": "Aurora and Aurora is available for MySQL"
+    },
+    {
+      "start": 1319.84,
+      "duration": 4.199,
+      "text": "it is a bit pricey but it is also it can"
+    },
+    {
+      "start": 1322.159,
+      "duration": 3.841,
+      "text": "help you for automatic scaling and can"
+    },
+    {
+      "start": 1324.039,
+      "duration": 3.801,
+      "text": "also help you for a high availity so I"
+    },
+    {
+      "start": 1326.0,
+      "duration": 3.96,
+      "text": "think this is the right answer let's"
+    },
+    {
+      "start": 1327.84,
+      "duration": 4.68,
+      "text": "check the answer and you can see it's"
+    },
+    {
+      "start": 1329.96,
+      "duration": 4.599,
+      "text": "the correct answer because Amazon Aurora"
+    },
+    {
+      "start": 1332.52,
+      "duration": 4.759,
+      "text": "is a MySQL compatible managed database"
+    },
+    {
+      "start": 1334.559,
+      "duration": 4.761,
+      "text": "service that offers High availability"
+    },
+    {
+      "start": 1337.279,
+      "duration": 3.64,
+      "text": "and scalability Aurora allows automatic"
+    },
+    {
+      "start": 1339.32,
+      "duration": 3.76,
+      "text": "Skilling and so on and you can always"
+    },
+    {
+      "start": 1340.919,
+      "duration": 3.281,
+      "text": "read the explanations here so this is"
+    },
+    {
+      "start": 1343.08,
+      "duration": 2.68,
+      "text": "how you should be answering your"
+    },
+    {
+      "start": 1344.2,
+      "duration": 4.44,
+      "text": "questions if you don't know the correct"
+    },
+    {
+      "start": 1345.76,
+      "duration": 5.0,
+      "text": "answer you can always try to find the"
+    },
+    {
+      "start": 1348.64,
+      "duration": 4.88,
+      "text": "answer by looking at the keywords in the"
+    },
+    {
+      "start": 1350.76,
+      "duration": 4.56,
+      "text": "questions or by omitting the answer for"
+    },
+    {
+      "start": 1353.52,
+      "duration": 4.68,
+      "text": "example like elastic case does not"
+    },
+    {
+      "start": 1355.32,
+      "duration": 5.28,
+      "text": "support MySQL so you cannot use this"
+    },
+    {
+      "start": 1358.2,
+      "duration": 5.079,
+      "text": "whereas red shift again is not an SQL"
+    },
+    {
+      "start": 1360.6,
+      "duration": 4.16,
+      "text": "database it is a warehousing so you"
+    },
+    {
+      "start": 1363.279,
+      "duration": 3.121,
+      "text": "cannot use this these two are the"
+    },
+    {
+      "start": 1364.76,
+      "duration": 3.159,
+      "text": "correct answers but here it is"
+    },
+    {
+      "start": 1366.4,
+      "duration": 3.399,
+      "text": "mentioning single a so this is not the"
+    },
+    {
+      "start": 1367.919,
+      "duration": 3.601,
+      "text": "correct answer which makes Amazon Aurora"
+    },
+    {
+      "start": 1369.799,
+      "duration": 4.081,
+      "text": "the correct answer so I try to use this"
+    },
+    {
+      "start": 1371.52,
+      "duration": 4.48,
+      "text": "tactic and you can also use the same for"
+    },
+    {
+      "start": 1373.88,
+      "duration": 3.96,
+      "text": "now let's go and click on finish test to"
+    },
+    {
+      "start": 1376.0,
+      "duration": 4.88,
+      "text": "see what is a score and if I click on"
+    },
+    {
+      "start": 1377.84,
+      "duration": 5.199,
+      "text": "finish test you can see we have answered"
+    },
+    {
+      "start": 1380.88,
+      "duration": 4.12,
+      "text": "10 out of 10 questions correct and the"
+    },
+    {
+      "start": 1383.039,
+      "duration": 3.76,
+      "text": "score is 15% you can always review your"
+    },
+    {
+      "start": 1385.0,
+      "duration": 3.6,
+      "text": "answers here by clicking on the review"
+    },
+    {
+      "start": 1386.799,
+      "duration": 3.76,
+      "text": "option and then go through the answers"
+    },
+    {
+      "start": 1388.6,
+      "duration": 3.959,
+      "text": "in this and this will help you prepare"
+    },
+    {
+      "start": 1390.559,
+      "duration": 3.561,
+      "text": "for your exam I hope this video was"
+    },
+    {
+      "start": 1392.559,
+      "duration": 3.841,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 1394.12,
+      "duration": 4.48,
+      "text": "any doubt about this practice test or"
+    },
+    {
+      "start": 1396.4,
+      "duration": 3.639,
+      "text": "about the aw Solutions architect exam"
+    },
+    {
+      "start": 1398.6,
+      "duration": 3.199,
+      "text": "let me know in the comment section and"
+    },
+    {
+      "start": 1400.039,
+      "duration": 3.76,
+      "text": "if you wish to buy this course the link"
+    },
+    {
+      "start": 1401.799,
+      "duration": 4.24,
+      "text": "is in description thank you and have a"
+    },
+    {
+      "start": 1403.799,
+      "duration": 2.24,
+      "text": "good"
+    },
+    {
+      "start": 1407.44,
+      "duration": 4.04,
+      "text": "day e"
+    }
+  ]
+}

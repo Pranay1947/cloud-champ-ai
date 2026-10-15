@@ -1,0 +1,2676 @@
+{
+  "video": {
+    "id": "p_g-zxZ0eL0",
+    "title": "Real CKAD Exam questions with Answers | Certified Kubernetes Application Developer",
+    "url": "https://www.youtube.com/watch?v=p_g-zxZ0eL0",
+    "duration": 1239,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.399,
+      "duration": 4.721,
+      "text": "hey everyone and Welcome to Cloud champ"
+    },
+    {
+      "start": 2.32,
+      "duration": 4.959,
+      "text": "in this video we look at important ckad"
+    },
+    {
+      "start": 5.12,
+      "duration": 4.16,
+      "text": "exam questions to help you pass your"
+    },
+    {
+      "start": 7.279,
+      "duration": 4.32,
+      "text": "certified kubernetes application"
+    },
+    {
+      "start": 9.28,
+      "duration": 4.12,
+      "text": "developer certificate throughout this"
+    },
+    {
+      "start": 11.599,
+      "duration": 4.12,
+      "text": "video I will help you solve these most"
+    },
+    {
+      "start": 13.4,
+      "duration": 5.0,
+      "text": "asked CK questions with the help of"
+    },
+    {
+      "start": 15.719,
+      "duration": 4.361,
+      "text": "official kubernetes documentation so"
+    },
+    {
+      "start": 18.4,
+      "duration": 5.08,
+      "text": "that you can understand how to solve"
+    },
+    {
+      "start": 20.08,
+      "duration": 5.039,
+      "text": "these questions in your real CK exam so"
+    },
+    {
+      "start": 23.48,
+      "duration": 4.639,
+      "text": "without wasting anytime let's get"
+    },
+    {
+      "start": 25.119,
+      "duration": 3.0,
+      "text": "started"
+    },
+    {
+      "start": 34.84,
+      "duration": 3.44,
+      "text": "all right so I'm here on my computer"
+    },
+    {
+      "start": 36.559,
+      "duration": 4.32,
+      "text": "screen and I have all these different"
+    },
+    {
+      "start": 38.28,
+      "duration": 5.68,
+      "text": "important cked exam questions that you"
+    },
+    {
+      "start": 40.879,
+      "duration": 4.641,
+      "text": "will definitely get in your real cked"
+    },
+    {
+      "start": 43.96,
+      "duration": 3.72,
+      "text": "exam if you want me to share this"
+    },
+    {
+      "start": 45.52,
+      "duration": 4.12,
+      "text": "document do comment down in the comment"
+    },
+    {
+      "start": 47.68,
+      "duration": 4.24,
+      "text": "section and let's start with solving"
+    },
+    {
+      "start": 49.64,
+      "duration": 4.439,
+      "text": "these one by one the first question is"
+    },
+    {
+      "start": 51.92,
+      "duration": 3.88,
+      "text": "about how developers occasionally need"
+    },
+    {
+      "start": 54.079,
+      "duration": 3.561,
+      "text": "to submit the parts that run"
+    },
+    {
+      "start": 55.8,
+      "duration": 4.16,
+      "text": "periodically in this question we are"
+    },
+    {
+      "start": 57.64,
+      "duration": 3.68,
+      "text": "given a task to follow the steps below"
+    },
+    {
+      "start": 59.96,
+      "duration": 3.0,
+      "text": "to create a p that will start at a"
+    },
+    {
+      "start": 61.32,
+      "duration": 4.32,
+      "text": "predetermined time and which runs to"
+    },
+    {
+      "start": 62.96,
+      "duration": 5.04,
+      "text": "completion only once each time it is"
+    },
+    {
+      "start": 65.64,
+      "duration": 5.2,
+      "text": "started so we are supposed to create a"
+    },
+    {
+      "start": 68.0,
+      "duration": 5.159,
+      "text": "yaml formatted kubernetes manifest that"
+    },
+    {
+      "start": 70.84,
+      "duration": 3.52,
+      "text": "runs the following shell command date a"
+    },
+    {
+      "start": 73.159,
+      "duration": 4.0,
+      "text": "date command is a command that will"
+    },
+    {
+      "start": 74.36,
+      "duration": 5.799,
+      "text": "output the current date in the terminal"
+    },
+    {
+      "start": 77.159,
+      "duration": 5.201,
+      "text": "you can see here is the date"
+    },
+    {
+      "start": 80.159,
+      "duration": 4.081,
+      "text": "command and we are supposed to use a"
+    },
+    {
+      "start": 82.36,
+      "duration": 3.56,
+      "text": "single bsy box container the command"
+    },
+    {
+      "start": 84.24,
+      "duration": 3.64,
+      "text": "should run every minute and must"
+    },
+    {
+      "start": 85.92,
+      "duration": 4.159,
+      "text": "complete within 22 seconds or be"
+    },
+    {
+      "start": 87.88,
+      "duration": 3.239,
+      "text": "terminated by kubernetes so this command"
+    },
+    {
+      "start": 90.079,
+      "duration": 3.4,
+      "text": "should be running every minute which"
+    },
+    {
+      "start": 91.119,
+      "duration": 4.68,
+      "text": "means this is a crown job kubernetes"
+    },
+    {
+      "start": 93.479,
+      "duration": 4.401,
+      "text": "object and the crown job name container"
+    },
+    {
+      "start": 95.799,
+      "duration": 4.121,
+      "text": "name should both be hello create the"
+    },
+    {
+      "start": 97.88,
+      "duration": 3.84,
+      "text": "resource number manifest and verify that"
+    },
+    {
+      "start": 99.92,
+      "duration": 3.8,
+      "text": "the job executes successfully at least"
+    },
+    {
+      "start": 101.72,
+      "duration": 3.759,
+      "text": "once okay so we are supposed to create a"
+    },
+    {
+      "start": 103.72,
+      "duration": 4.6,
+      "text": "crown job that should run every minute"
+    },
+    {
+      "start": 105.479,
+      "duration": 4.92,
+      "text": "it should run uh till 22 seconds it"
+    },
+    {
+      "start": 108.32,
+      "duration": 3.799,
+      "text": "should have the image as busy box and"
+    },
+    {
+      "start": 110.399,
+      "duration": 2.841,
+      "text": "the command running should be date to"
+    },
+    {
+      "start": 112.119,
+      "duration": 2.521,
+      "text": "solve this question I'm going to be"
+    },
+    {
+      "start": 113.24,
+      "duration": 3.239,
+      "text": "using the official kubernetes"
+    },
+    {
+      "start": 114.64,
+      "duration": 3.96,
+      "text": "documentation and you will be given"
+    },
+    {
+      "start": 116.479,
+      "duration": 3.721,
+      "text": "access to this kubernetes documentation"
+    },
+    {
+      "start": 118.6,
+      "duration": 3.839,
+      "text": "even in your real exam so you need to"
+    },
+    {
+      "start": 120.2,
+      "duration": 5.0,
+      "text": "know how to solve this so we are going"
+    },
+    {
+      "start": 122.439,
+      "duration": 4.201,
+      "text": "to create a kubernetes cronjob object"
+    },
+    {
+      "start": 125.2,
+      "duration": 3.52,
+      "text": "and to create this I'm going to be using"
+    },
+    {
+      "start": 126.64,
+      "duration": 6.0,
+      "text": "the imperative command so let's search"
+    },
+    {
+      "start": 128.72,
+      "duration": 6.84,
+      "text": "for kubernetes command reference"
+    },
+    {
+      "start": 132.64,
+      "duration": 6.599,
+      "text": "commands and let's click on this one I'm"
+    },
+    {
+      "start": 135.56,
+      "duration": 4.92,
+      "text": "going to search for create Crown job so"
+    },
+    {
+      "start": 139.239,
+      "duration": 3.241,
+      "text": "we get the exact command that we are"
+    },
+    {
+      "start": 140.48,
+      "duration": 3.56,
+      "text": "going to use so this is the command this"
+    },
+    {
+      "start": 142.48,
+      "duration": 3.72,
+      "text": "command is used to create a crown job"
+    },
+    {
+      "start": 144.04,
+      "duration": 4.199,
+      "text": "that prints hello world every minute"
+    },
+    {
+      "start": 146.2,
+      "duration": 4.319,
+      "text": "okay we'll use this and change this"
+    },
+    {
+      "start": 148.239,
+      "duration": 3.72,
+      "text": "to we will use this"
+    },
+    {
+      "start": 150.519,
+      "duration": 3.881,
+      "text": "and make sure that we run the date"
+    },
+    {
+      "start": 151.959,
+      "duration": 4.521,
+      "text": "command not the hello world command so"
+    },
+    {
+      "start": 154.4,
+      "duration": 4.36,
+      "text": "I'm going to change this command to"
+    },
+    {
+      "start": 156.48,
+      "duration": 4.6,
+      "text": "date because the question is asking us"
+    },
+    {
+      "start": 158.76,
+      "duration": 4.839,
+      "text": "to uh run the following shell command"
+    },
+    {
+      "start": 161.08,
+      "duration": 3.84,
+      "text": "which is date also the crown job name is"
+    },
+    {
+      "start": 163.599,
+      "duration": 2.681,
+      "text": "hello as we have mentioned here the"
+    },
+    {
+      "start": 164.92,
+      "duration": 3.399,
+      "text": "crown job name and the container name"
+    },
+    {
+      "start": 166.28,
+      "duration": 3.76,
+      "text": "should both be hello it should run every"
+    },
+    {
+      "start": 168.319,
+      "duration": 4.041,
+      "text": "minute so this is the schedule set to"
+    },
+    {
+      "start": 170.04,
+      "duration": 5.0,
+      "text": "every minute as well the image is busy"
+    },
+    {
+      "start": 172.36,
+      "duration": 5.08,
+      "text": "box I'm going to change that to busy box"
+    },
+    {
+      "start": 175.04,
+      "duration": 4.32,
+      "text": "in removing the version and they're also"
+    },
+    {
+      "start": 177.44,
+      "duration": 3.799,
+      "text": "asking us that this should complete"
+    },
+    {
+      "start": 179.36,
+      "duration": 3.28,
+      "text": "Within seconds we cannot do it here so"
+    },
+    {
+      "start": 181.239,
+      "duration": 2.841,
+      "text": "I'm going to create the Manifest and"
+    },
+    {
+      "start": 182.64,
+      "duration": 4.08,
+      "text": "then edit it manually to add this"
+    },
+    {
+      "start": 184.08,
+      "duration": 3.799,
+      "text": "setting so if I run this command it will"
+    },
+    {
+      "start": 186.72,
+      "duration": 3.72,
+      "text": "go ahead and create a crown job but I"
+    },
+    {
+      "start": 187.879,
+      "duration": 4.961,
+      "text": "don't want to create it so I'll say dry"
+    },
+    {
+      "start": 190.44,
+      "duration": 5.6,
+      "text": "run equals to"
+    },
+    {
+      "start": 192.84,
+      "duration": 6.08,
+      "text": "client and I want this output as y I'll"
+    },
+    {
+      "start": 196.04,
+      "duration": 5.44,
+      "text": "say h y okay let's copy and paste this"
+    },
+    {
+      "start": 198.92,
+      "duration": 3.8,
+      "text": "here in the killer Koda playground"
+    },
+    {
+      "start": 201.48,
+      "duration": 3.2,
+      "text": "throughout this video I'll be using"
+    },
+    {
+      "start": 202.72,
+      "duration": 3.239,
+      "text": "killer Koda playground to try all these"
+    },
+    {
+      "start": 204.68,
+      "duration": 3.04,
+      "text": "questions we have also discussed"
+    },
+    {
+      "start": 205.959,
+      "duration": 3.441,
+      "text": "different kubernetes playgrounds in the"
+    },
+    {
+      "start": 207.72,
+      "duration": 3.56,
+      "text": "previous video if you haven't checked"
+    },
+    {
+      "start": 209.4,
+      "duration": 3.399,
+      "text": "out make sure to check it out let's"
+    },
+    {
+      "start": 211.28,
+      "duration": 3.72,
+      "text": "paste this command you can see this is"
+    },
+    {
+      "start": 212.799,
+      "duration": 4.16,
+      "text": "the Manifest that we get so we have a"
+    },
+    {
+      "start": 215.0,
+      "duration": 4.84,
+      "text": "manifest that Crown job with the name"
+    },
+    {
+      "start": 216.959,
+      "duration": 4.881,
+      "text": "hello image as busy box command as date"
+    },
+    {
+      "start": 219.84,
+      "duration": 4.16,
+      "text": "and it is running every minute so let's"
+    },
+    {
+      "start": 221.84,
+      "duration": 6.2,
+      "text": "put this inside a file I'm going to name"
+    },
+    {
+      "start": 224.0,
+      "duration": 6.08,
+      "text": "this file as Crown job do yam okay let's"
+    },
+    {
+      "start": 228.04,
+      "duration": 4.64,
+      "text": "edit"
+    },
+    {
+      "start": 230.08,
+      "duration": 4.239,
+      "text": "it so everything is as we want in the"
+    },
+    {
+      "start": 232.68,
+      "duration": 3.36,
+      "text": "question except that it should complete"
+    },
+    {
+      "start": 234.319,
+      "duration": 3.401,
+      "text": "within 22 seconds to enable this we are"
+    },
+    {
+      "start": 236.04,
+      "duration": 4.16,
+      "text": "going to go to the documentation again"
+    },
+    {
+      "start": 237.72,
+      "duration": 4.28,
+      "text": "let's go to the jobs documentation in"
+    },
+    {
+      "start": 240.2,
+      "duration": 3.399,
+      "text": "this jobs documentation if you search"
+    },
+    {
+      "start": 242.0,
+      "duration": 4.28,
+      "text": "for"
+    },
+    {
+      "start": 243.599,
+      "duration": 5.121,
+      "text": "active deadline"
+    },
+    {
+      "start": 246.28,
+      "duration": 4.56,
+      "text": "seconds this active deadline second"
+    },
+    {
+      "start": 248.72,
+      "duration": 4.68,
+      "text": "applies to the duration of job no matter"
+    },
+    {
+      "start": 250.84,
+      "duration": 3.959,
+      "text": "how many pods are created once the job"
+    },
+    {
+      "start": 253.4,
+      "duration": 2.92,
+      "text": "reaches active deadlines all of its"
+    },
+    {
+      "start": 254.799,
+      "duration": 3.481,
+      "text": "running pods are terminated and the job"
+    },
+    {
+      "start": 256.32,
+      "duration": 3.68,
+      "text": "status will be failed this is what we"
+    },
+    {
+      "start": 258.28,
+      "duration": 4.08,
+      "text": "want we are going to set the active"
+    },
+    {
+      "start": 260.0,
+      "duration": 3.88,
+      "text": "deadline seconds as 22 because the"
+    },
+    {
+      "start": 262.36,
+      "duration": 4.399,
+      "text": "question is asking us to complete within"
+    },
+    {
+      "start": 263.88,
+      "duration": 5.039,
+      "text": "22 seconds so we have to put this active"
+    },
+    {
+      "start": 266.759,
+      "duration": 4.081,
+      "text": "deadline seconds in the spec for the job"
+    },
+    {
+      "start": 268.919,
+      "duration": 4.201,
+      "text": "which is here so I'll put this in the"
+    },
+    {
+      "start": 270.84,
+      "duration": 5.48,
+      "text": "same indentation level as container"
+    },
+    {
+      "start": 273.12,
+      "duration": 6.2,
+      "text": "paste and set the value as 22 let's save"
+    },
+    {
+      "start": 276.32,
+      "duration": 5.28,
+      "text": "this and apply it so I'll say k applyf"
+    },
+    {
+      "start": 279.32,
+      "duration": 4.04,
+      "text": "name of the file crown job. camble and"
+    },
+    {
+      "start": 281.6,
+      "duration": 3.599,
+      "text": "we have a crown job with the hello name"
+    },
+    {
+      "start": 283.36,
+      "duration": 3.8,
+      "text": "Creator now in this question they're"
+    },
+    {
+      "start": 285.199,
+      "duration": 4.081,
+      "text": "also asking us to create the resource"
+    },
+    {
+      "start": 287.16,
+      "duration": 5.319,
+      "text": "and verify the job execut successfully"
+    },
+    {
+      "start": 289.28,
+      "duration": 6.199,
+      "text": "at least once so I'm going to show you"
+    },
+    {
+      "start": 292.479,
+      "duration": 4.521,
+      "text": "first let's run C get Crown job and we"
+    },
+    {
+      "start": 295.479,
+      "duration": 3.201,
+      "text": "see a crown job with the name hello is"
+    },
+    {
+      "start": 297.0,
+      "duration": 4.88,
+      "text": "created which will be running every"
+    },
+    {
+      "start": 298.68,
+      "duration": 5.2,
+      "text": "minute let's also see the jobs so if I"
+    },
+    {
+      "start": 301.88,
+      "duration": 4.2,
+      "text": "do K jobs right now there are no jobs"
+    },
+    {
+      "start": 303.88,
+      "duration": 4.319,
+      "text": "because one minute haven't been passed"
+    },
+    {
+      "start": 306.08,
+      "duration": 4.04,
+      "text": "I'm going to wait for sometime and then"
+    },
+    {
+      "start": 308.199,
+      "duration": 4.761,
+      "text": "we'll see that the job has been executed"
+    },
+    {
+      "start": 310.12,
+      "duration": 4.76,
+      "text": "at least once or not okay let's try"
+    },
+    {
+      "start": 312.96,
+      "duration": 4.959,
+      "text": "again I'm going to say run the K get"
+    },
+    {
+      "start": 314.88,
+      "duration": 4.72,
+      "text": "jobs command again and now we have uh"
+    },
+    {
+      "start": 317.919,
+      "duration": 4.881,
+      "text": "the job has been completed twice you can"
+    },
+    {
+      "start": 319.6,
+      "duration": 5.56,
+      "text": "also see G get pods and we have two pods"
+    },
+    {
+      "start": 322.8,
+      "duration": 4.04,
+      "text": "here to check if the command date is"
+    },
+    {
+      "start": 325.16,
+      "duration": 4.2,
+      "text": "actually executed by this Crown job we"
+    },
+    {
+      "start": 326.84,
+      "duration": 4.72,
+      "text": "can run the command K logs and then the"
+    },
+    {
+      "start": 329.36,
+      "duration": 4.279,
+      "text": "part we get the output of the date"
+    },
+    {
+      "start": 331.56,
+      "duration": 3.52,
+      "text": "command which means the crown job has"
+    },
+    {
+      "start": 333.639,
+      "duration": 3.521,
+      "text": "been created and it has also been"
+    },
+    {
+      "start": 335.08,
+      "duration": 4.32,
+      "text": "successfully executed so this is how you"
+    },
+    {
+      "start": 337.16,
+      "duration": 4.28,
+      "text": "solve the first question which is to"
+    },
+    {
+      "start": 339.4,
+      "duration": 3.76,
+      "text": "create a crown job that should run every"
+    },
+    {
+      "start": 341.44,
+      "duration": 3.64,
+      "text": "minute and should be completed within 22"
+    },
+    {
+      "start": 343.16,
+      "duration": 3.479,
+      "text": "seconds I hope you understood this if"
+    },
+    {
+      "start": 345.08,
+      "duration": 4.399,
+      "text": "you did please like this video and let's"
+    },
+    {
+      "start": 346.639,
+      "duration": 4.601,
+      "text": "move on to the next question moving on"
+    },
+    {
+      "start": 349.479,
+      "duration": 3.761,
+      "text": "the next question is you are required to"
+    },
+    {
+      "start": 351.24,
+      "duration": 4.16,
+      "text": "create a pod that requests a certain"
+    },
+    {
+      "start": 353.24,
+      "duration": 4.04,
+      "text": "amount of CPU and memory so it get"
+    },
+    {
+      "start": 355.4,
+      "duration": 3.88,
+      "text": "scheduled to a node that has those"
+    },
+    {
+      "start": 357.28,
+      "duration": 3.8,
+      "text": "resources available so we are supposed"
+    },
+    {
+      "start": 359.28,
+      "duration": 4.919,
+      "text": "to create pod with a certain amount of"
+    },
+    {
+      "start": 361.08,
+      "duration": 4.92,
+      "text": "CPU and memory so we can create a pod"
+    },
+    {
+      "start": 364.199,
+      "duration": 3.481,
+      "text": "with using the imperative command but to"
+    },
+    {
+      "start": 366.0,
+      "duration": 3.56,
+      "text": "add CPU and memory we need to manually"
+    },
+    {
+      "start": 367.68,
+      "duration": 4.76,
+      "text": "edited same as we did in the previous"
+    },
+    {
+      "start": 369.56,
+      "duration": 5.28,
+      "text": "question so the P should be named as"
+    },
+    {
+      "start": 372.44,
+      "duration": 5.56,
+      "text": "engine X resources and it should request"
+    },
+    {
+      "start": 374.84,
+      "duration": 4.96,
+      "text": "200 M of CPU 1 gii memory for its"
+    },
+    {
+      "start": 378.0,
+      "duration": 3.68,
+      "text": "container and the P should be using ngx"
+    },
+    {
+      "start": 379.8,
+      "duration": 3.399,
+      "text": "image let's solve this in the rear exam"
+    },
+    {
+      "start": 381.68,
+      "duration": 3.639,
+      "text": "you'll be asked to connect to different"
+    },
+    {
+      "start": 383.199,
+      "duration": 4.961,
+      "text": "kubernetes clusters make sure to run the"
+    },
+    {
+      "start": 385.319,
+      "duration": 4.841,
+      "text": "SSH command in the question before you"
+    },
+    {
+      "start": 388.16,
+      "duration": 3.92,
+      "text": "actually Implement any"
+    },
+    {
+      "start": 390.16,
+      "duration": 3.879,
+      "text": "question or start answering them for now"
+    },
+    {
+      "start": 392.08,
+      "duration": 4.839,
+      "text": "we using the killer kod so it's okay but"
+    },
+    {
+      "start": 394.039,
+      "duration": 4.841,
+      "text": "remember that in the in the exam so the"
+    },
+    {
+      "start": 396.919,
+      "duration": 5.84,
+      "text": "part name should be engine X resources"
+    },
+    {
+      "start": 398.88,
+      "duration": 6.8,
+      "text": "I'm going to say k run engine X hyphen"
+    },
+    {
+      "start": 402.759,
+      "duration": 4.601,
+      "text": "resources also make sure to copy and"
+    },
+    {
+      "start": 405.68,
+      "duration": 4.6,
+      "text": "paste instead of typing it yourself"
+    },
+    {
+      "start": 407.36,
+      "duration": 4.92,
+      "text": "because sometimes you might uh make a"
+    },
+    {
+      "start": 410.28,
+      "duration": 4.24,
+      "text": "make a mistake that might cost you to"
+    },
+    {
+      "start": 412.28,
+      "duration": 4.759,
+      "text": "lose the marks so instead of typing it"
+    },
+    {
+      "start": 414.52,
+      "duration": 4.519,
+      "text": "you can simply copy and paste the image"
+    },
+    {
+      "start": 417.039,
+      "duration": 3.201,
+      "text": "should be enginex so I'm going to add"
+    },
+    {
+      "start": 419.039,
+      "duration": 4.88,
+      "text": "the image"
+    },
+    {
+      "start": 420.24,
+      "duration": 6.679,
+      "text": "as engine X I'm not actually creating"
+    },
+    {
+      "start": 423.919,
+      "duration": 5.081,
+      "text": "this so I'll say dry run hyphen client"
+    },
+    {
+      "start": 426.919,
+      "duration": 3.801,
+      "text": "and hyphen o this is the Manifest that"
+    },
+    {
+      "start": 429.0,
+      "duration": 3.4,
+      "text": "we are going to be creating in this we"
+    },
+    {
+      "start": 430.72,
+      "duration": 4.159,
+      "text": "need to add the resources specifying"
+    },
+    {
+      "start": 432.4,
+      "duration": 4.519,
+      "text": "that the CPU should be this amount"
+    },
+    {
+      "start": 434.879,
+      "duration": 3.44,
+      "text": "memory should be this amount so let's do"
+    },
+    {
+      "start": 436.919,
+      "duration": 3.441,
+      "text": "that I'm going to save this manifest"
+    },
+    {
+      "start": 438.319,
+      "duration": 4.481,
+      "text": "inside a file the file name is going to"
+    },
+    {
+      "start": 440.36,
+      "duration": 5.239,
+      "text": "be pod. yaml you can name this anything"
+    },
+    {
+      "start": 442.8,
+      "duration": 4.16,
+      "text": "you want but I do it with the question"
+    },
+    {
+      "start": 445.599,
+      "duration": 5.641,
+      "text": "name so let's say the question number is"
+    },
+    {
+      "start": 446.96,
+      "duration": 6.0,
+      "text": "one I do it q1 yaml Q2 . yaml q3. yaml"
+    },
+    {
+      "start": 451.24,
+      "duration": 4.399,
+      "text": "so I don't have multiple files with the"
+    },
+    {
+      "start": 452.96,
+      "duration": 5.0,
+      "text": "same name now let's press enter and then"
+    },
+    {
+      "start": 455.639,
+      "duration": 3.84,
+      "text": "edit this I'm going to say nanopod yaml"
+    },
+    {
+      "start": 457.96,
+      "duration": 3.0,
+      "text": "and this is what we get if you don't"
+    },
+    {
+      "start": 459.479,
+      "duration": 2.84,
+      "text": "know how to specify the resources you"
+    },
+    {
+      "start": 460.96,
+      "duration": 5.679,
+      "text": "can obviously use the official"
+    },
+    {
+      "start": 462.319,
+      "duration": 6.681,
+      "text": "documentation and you can search for pod"
+    },
+    {
+      "start": 466.639,
+      "duration": 5.601,
+      "text": "resources and you will be click on this"
+    },
+    {
+      "start": 469.0,
+      "duration": 4.68,
+      "text": "resource management for pods scroll down"
+    },
+    {
+      "start": 472.24,
+      "duration": 3.919,
+      "text": "and you will see a manifest file that"
+    },
+    {
+      "start": 473.68,
+      "duration": 4.16,
+      "text": "should be using CPU and memory right now"
+    },
+    {
+      "start": 476.159,
+      "duration": 5.201,
+      "text": "in the question it's only asking you to"
+    },
+    {
+      "start": 477.84,
+      "duration": 5.28,
+      "text": "request a minimum compound of CPN CPM"
+    },
+    {
+      "start": 481.36,
+      "duration": 3.76,
+      "text": "memory it's not asking to limit it so we"
+    },
+    {
+      "start": 483.12,
+      "duration": 3.88,
+      "text": "are just going to use this part of the"
+    },
+    {
+      "start": 485.12,
+      "duration": 4.24,
+      "text": "Manifest which is requesting the"
+    },
+    {
+      "start": 487.0,
+      "duration": 3.68,
+      "text": "resources not limiting them but in the"
+    },
+    {
+      "start": 489.36,
+      "duration": 2.839,
+      "text": "question there might be a question where"
+    },
+    {
+      "start": 490.68,
+      "duration": 3.68,
+      "text": "they might ask you to limit something so"
+    },
+    {
+      "start": 492.199,
+      "duration": 6.241,
+      "text": "make sure to read the question properly"
+    },
+    {
+      "start": 494.36,
+      "duration": 5.559,
+      "text": "so I'll use this and paste it here make"
+    },
+    {
+      "start": 498.44,
+      "duration": 3.199,
+      "text": "sure the indentation is correct as well"
+    },
+    {
+      "start": 499.919,
+      "duration": 3.28,
+      "text": "so it should be in the same indentation"
+    },
+    {
+      "start": 501.639,
+      "duration": 4.161,
+      "text": "I'll remove this resources because it is"
+    },
+    {
+      "start": 503.199,
+      "duration": 3.96,
+      "text": "now repeated uh change the value to what"
+    },
+    {
+      "start": 505.8,
+      "duration": 4.32,
+      "text": "we want in the question the question is"
+    },
+    {
+      "start": 507.159,
+      "duration": 6.841,
+      "text": "asking you to put the 200 mcpu so CPU is"
+    },
+    {
+      "start": 510.12,
+      "duration": 7.32,
+      "text": "going to be 200 not 250 put this here"
+    },
+    {
+      "start": 514.0,
+      "duration": 7.599,
+      "text": "and the memory is going to be 1"
+    },
+    {
+      "start": 517.44,
+      "duration": 6.64,
+      "text": "gii so I'll put it one GI"
+    },
+    {
+      "start": 521.599,
+      "duration": 5.201,
+      "text": "here okay let's save this and I'm going"
+    },
+    {
+      "start": 524.08,
+      "duration": 5.439,
+      "text": "to run K apply"
+    },
+    {
+      "start": 526.8,
+      "duration": 6.8,
+      "text": "ip. now the Pod is created to confirm"
+    },
+    {
+      "start": 529.519,
+      "duration": 6.561,
+      "text": "you can see K get pods uh and the name"
+    },
+    {
+      "start": 533.6,
+      "duration": 4.919,
+      "text": "of the P which is engine X resources o"
+    },
+    {
+      "start": 536.08,
+      "duration": 4.199,
+      "text": "yaml and inside this we have a pod"
+    },
+    {
+      "start": 538.519,
+      "duration": 4.76,
+      "text": "created with"
+    },
+    {
+      "start": 540.279,
+      "duration": 3.0,
+      "text": "sources"
+    },
+    {
+      "start": 543.32,
+      "duration": 5.959,
+      "text": "as 200 mcpu 1 GI memory so this is how"
+    },
+    {
+      "start": 546.8,
+      "duration": 3.88,
+      "text": "you solve the question where we need to"
+    },
+    {
+      "start": 549.279,
+      "duration": 3.721,
+      "text": "specify the resources we want to"
+    },
+    {
+      "start": 550.68,
+      "duration": 4.44,
+      "text": "allocate to a port I hope you understood"
+    },
+    {
+      "start": 553.0,
+      "duration": 3.44,
+      "text": "this and if if you understood it please"
+    },
+    {
+      "start": 555.12,
+      "duration": 3.12,
+      "text": "make sure to like the video If you"
+    },
+    {
+      "start": 556.44,
+      "duration": 4.48,
+      "text": "haven't moving on to the next question"
+    },
+    {
+      "start": 558.24,
+      "duration": 4.76,
+      "text": "now all right okay so the next question"
+    },
+    {
+      "start": 560.92,
+      "duration": 3.76,
+      "text": "is question number three you are tked to"
+    },
+    {
+      "start": 563.0,
+      "duration": 4.279,
+      "text": "create a config map and consume the"
+    },
+    {
+      "start": 564.68,
+      "duration": 4.279,
+      "text": "config map in the P using volume Mount"
+    },
+    {
+      "start": 567.279,
+      "duration": 3.601,
+      "text": "this is a very very important question"
+    },
+    {
+      "start": 568.959,
+      "duration": 4.12,
+      "text": "and I have got many issues solving this"
+    },
+    {
+      "start": 570.88,
+      "duration": 4.48,
+      "text": "questions and understanding this so make"
+    },
+    {
+      "start": 573.079,
+      "duration": 6.081,
+      "text": "sure to properly understand this because"
+    },
+    {
+      "start": 575.36,
+      "duration": 4.96,
+      "text": "this will be there in your exam 100% so"
+    },
+    {
+      "start": 579.16,
+      "duration": 3.88,
+      "text": "the question is asking you to create a"
+    },
+    {
+      "start": 580.32,
+      "duration": 5.079,
+      "text": "config map where and also use this"
+    },
+    {
+      "start": 583.04,
+      "duration": 3.64,
+      "text": "config map as a volume Mount inside a PA"
+    },
+    {
+      "start": 585.399,
+      "duration": 3.041,
+      "text": "so we are first going to create a config"
+    },
+    {
+      "start": 586.68,
+      "duration": 4.0,
+      "text": "map and then create a pod use that"
+    },
+    {
+      "start": 588.44,
+      "duration": 3.959,
+      "text": "config map inside the Pod so create a"
+    },
+    {
+      "start": 590.68,
+      "duration": 4.599,
+      "text": "config map named another config and"
+    },
+    {
+      "start": 592.399,
+      "duration": 4.721,
+      "text": "containing the key value as key4 value"
+    },
+    {
+      "start": 595.279,
+      "duration": 4.321,
+      "text": "three okay let's create that using"
+    },
+    {
+      "start": 597.12,
+      "duration": 4.279,
+      "text": "imperative command again"
+    },
+    {
+      "start": 599.6,
+      "duration": 3.4,
+      "text": "if you don't know about imperative"
+    },
+    {
+      "start": 601.399,
+      "duration": 4.361,
+      "text": "command if you don't know important Cube"
+    },
+    {
+      "start": 603.0,
+      "duration": 4.68,
+      "text": "IND command always uh make sure to check"
+    },
+    {
+      "start": 605.76,
+      "duration": 3.759,
+      "text": "out my previous videos I've created a"
+    },
+    {
+      "start": 607.68,
+      "duration": 3.36,
+      "text": "video about important Cube Cal commands"
+    },
+    {
+      "start": 609.519,
+      "duration": 3.081,
+      "text": "I've also created a video on imperative"
+    },
+    {
+      "start": 611.04,
+      "duration": 4.44,
+      "text": "commands which is going to help you a"
+    },
+    {
+      "start": 612.6,
+      "duration": 5.72,
+      "text": "lot in these exams so let's create a"
+    },
+    {
+      "start": 615.48,
+      "duration": 5.88,
+      "text": "config map to create it I'll say cubet"
+    },
+    {
+      "start": 618.32,
+      "duration": 6.36,
+      "text": "Cube CTL create config map name of the"
+    },
+    {
+      "start": 621.36,
+      "duration": 6.719,
+      "text": "config map is another config let's copy"
+    },
+    {
+      "start": 624.68,
+      "duration": 4.96,
+      "text": "it and paste it here uh we are going to"
+    },
+    {
+      "start": 628.079,
+      "duration": 3.721,
+      "text": "be creating conf map using the value"
+    },
+    {
+      "start": 629.64,
+      "duration": 7.4,
+      "text": "present here so key value"
+    },
+    {
+      "start": 631.8,
+      "duration": 8.24,
+      "text": "pair right so it's going to be from"
+    },
+    {
+      "start": 637.04,
+      "duration": 7.68,
+      "text": "literal equals to"
+    },
+    {
+      "start": 640.04,
+      "duration": 7.68,
+      "text": "key 4 value three key 4 equals to Value"
+    },
+    {
+      "start": 644.72,
+      "duration": 6.359,
+      "text": "three it's better to put this in a"
+    },
+    {
+      "start": 647.72,
+      "duration": 6.44,
+      "text": "single quotation so I'll put this here"
+    },
+    {
+      "start": 651.079,
+      "duration": 5.76,
+      "text": "and if you want to check you can simply"
+    },
+    {
+      "start": 654.16,
+      "duration": 4.0,
+      "text": "use the dry run equals to client instead"
+    },
+    {
+      "start": 656.839,
+      "duration": 3.721,
+      "text": "of creating it but I'm going to create"
+    },
+    {
+      "start": 658.16,
+      "duration": 4.44,
+      "text": "it and now we have con map created to"
+    },
+    {
+      "start": 660.56,
+      "duration": 4.0,
+      "text": "confirm we can see K get config map and"
+    },
+    {
+      "start": 662.6,
+      "duration": 4.0,
+      "text": "we will be able to see a config map"
+    },
+    {
+      "start": 664.56,
+      "duration": 4.6,
+      "text": "created with the name as another config"
+    },
+    {
+      "start": 666.6,
+      "duration": 4.6,
+      "text": "6 seconds ago now the next part of the"
+    },
+    {
+      "start": 669.16,
+      "duration": 4.52,
+      "text": "question is to create a pod and then use"
+    },
+    {
+      "start": 671.2,
+      "duration": 4.879,
+      "text": "this config map inside the Pod so let's"
+    },
+    {
+      "start": 673.68,
+      "duration": 3.839,
+      "text": "create a pod named as enginex conf map"
+    },
+    {
+      "start": 676.079,
+      "duration": 4.241,
+      "text": "containing a single container using the"
+    },
+    {
+      "start": 677.519,
+      "duration": 5.12,
+      "text": "engx image and mount the key you just"
+    },
+    {
+      "start": 680.32,
+      "duration": 4.319,
+      "text": "created into the Pod under directory"
+    },
+    {
+      "start": 682.639,
+      "duration": 4.76,
+      "text": "also a part so we also need to define a"
+    },
+    {
+      "start": 684.639,
+      "duration": 5.2,
+      "text": "part as well in the mount so I'll say k"
+    },
+    {
+      "start": 687.399,
+      "duration": 4.081,
+      "text": "run name of the Pod image is going to be"
+    },
+    {
+      "start": 689.839,
+      "duration": 5.56,
+      "text": "engine"
+    },
+    {
+      "start": 691.48,
+      "duration": 5.479,
+      "text": "X engine X and we don't have any"
+    },
+    {
+      "start": 695.399,
+      "duration": 4.721,
+      "text": "commands or anything to run so let's go"
+    },
+    {
+      "start": 696.959,
+      "duration": 6.201,
+      "text": "ahead and create a manifest for this so"
+    },
+    {
+      "start": 700.12,
+      "duration": 4.839,
+      "text": "I say dyun equals to client and I want"
+    },
+    {
+      "start": 703.16,
+      "duration": 5.16,
+      "text": "the"
+    },
+    {
+      "start": 704.959,
+      "duration": 4.961,
+      "text": "output o y so I can save it in manifest"
+    },
+    {
+      "start": 708.32,
+      "duration": 3.639,
+      "text": "so this is the Manifest files and here"
+    },
+    {
+      "start": 709.92,
+      "duration": 3.24,
+      "text": "we need to add a volume amount"
+    },
+    {
+      "start": 711.959,
+      "duration": 3.921,
+      "text": "specifying that the volume amount should"
+    },
+    {
+      "start": 713.16,
+      "duration": 7.2,
+      "text": "be config map so I'll put this inside"
+    },
+    {
+      "start": 715.88,
+      "duration": 7.48,
+      "text": "for file name name it as q3. yaml"
+    },
+    {
+      "start": 720.36,
+      "duration": 6.32,
+      "text": "let's edit it Nano q3."
+    },
+    {
+      "start": 723.36,
+      "duration": 6.24,
+      "text": "yam and we need to add the config map as"
+    },
+    {
+      "start": 726.68,
+      "duration": 4.08,
+      "text": "the mount mened inside this exam so if"
+    },
+    {
+      "start": 729.6,
+      "duration": 3.32,
+      "text": "you don't know how to do this obviously"
+    },
+    {
+      "start": 730.76,
+      "duration": 5.36,
+      "text": "you can use the documentation so I'll"
+    },
+    {
+      "start": 732.92,
+      "duration": 3.2,
+      "text": "say config map volume"
+    },
+    {
+      "start": 736.24,
+      "duration": 6.039,
+      "text": "Mount and let's click on this first"
+    },
+    {
+      "start": 740.279,
+      "duration": 4.761,
+      "text": "documentation so in this documentation"
+    },
+    {
+      "start": 742.279,
+      "duration": 2.761,
+      "text": "I'm going to search for"
+    },
+    {
+      "start": 745.36,
+      "duration": 3.8,
+      "text": "volume Mount and you can see this is how"
+    },
+    {
+      "start": 747.639,
+      "duration": 3.56,
+      "text": "you can Define the volume mount spef"
+    },
+    {
+      "start": 749.16,
+      "duration": 4.28,
+      "text": "speing the part part as well you'll have"
+    },
+    {
+      "start": 751.199,
+      "duration": 5.601,
+      "text": "to first create a volume as well so I'll"
+    },
+    {
+      "start": 753.44,
+      "duration": 6.16,
+      "text": "copy this here the volumes and also the"
+    },
+    {
+      "start": 756.8,
+      "duration": 5.399,
+      "text": "volume amount so let's copy it and paste"
+    },
+    {
+      "start": 759.6,
+      "duration": 5.88,
+      "text": "it here make sure to have the current"
+    },
+    {
+      "start": 762.199,
+      "duration": 5.32,
+      "text": "indentation level so now this volume"
+    },
+    {
+      "start": 765.48,
+      "duration": 3.28,
+      "text": "amount should be in the same level as"
+    },
+    {
+      "start": 767.519,
+      "duration": 3.76,
+      "text": "images and"
+    },
+    {
+      "start": 768.76,
+      "duration": 5.519,
+      "text": "resources I edit"
+    },
+    {
+      "start": 771.279,
+      "duration": 3.0,
+      "text": "that"
+    },
+    {
+      "start": 777.04,
+      "duration": 4.44,
+      "text": "okay and this should be in the same"
+    },
+    {
+      "start": 778.92,
+      "duration": 5.2,
+      "text": "level as container which is fine so we"
+    },
+    {
+      "start": 781.48,
+      "duration": 5.32,
+      "text": "are not going to change that let's move"
+    },
+    {
+      "start": 784.12,
+      "duration": 5.719,
+      "text": "this the name of the config map we had"
+    },
+    {
+      "start": 786.8,
+      "duration": 5.2,
+      "text": "was another config so I'll put that here"
+    },
+    {
+      "start": 789.839,
+      "duration": 5.68,
+      "text": "another I"
+    },
+    {
+      "start": 792.0,
+      "duration": 7.36,
+      "text": "config same name as here another iph"
+    },
+    {
+      "start": 795.519,
+      "duration": 5.68,
+      "text": "config and I also put change this so you"
+    },
+    {
+      "start": 799.36,
+      "duration": 3.8,
+      "text": "can either put this here as you want you"
+    },
+    {
+      "start": 801.199,
+      "duration": 3.281,
+      "text": "can put whatever you want but this name"
+    },
+    {
+      "start": 803.16,
+      "duration": 3.16,
+      "text": "should be similar to what you put here"
+    },
+    {
+      "start": 804.48,
+      "duration": 3.64,
+      "text": "in the volume Mount as well so I'll"
+    },
+    {
+      "start": 806.32,
+      "duration": 3.6,
+      "text": "leave this as config volume and the"
+    },
+    {
+      "start": 808.12,
+      "duration": 3.88,
+      "text": "mount path is"
+    },
+    {
+      "start": 809.92,
+      "duration": 4.12,
+      "text": "slash also a"
+    },
+    {
+      "start": 812.0,
+      "duration": 4.92,
+      "text": "path so that's what I'm going to put"
+    },
+    {
+      "start": 814.04,
+      "duration": 2.88,
+      "text": "here inside the mount"
+    },
+    {
+      "start": 817.16,
+      "duration": 6.96,
+      "text": "path okay let's save this and apply this"
+    },
+    {
+      "start": 821.199,
+      "duration": 6.121,
+      "text": "file i f"
+    },
+    {
+      "start": 824.12,
+      "duration": 4.24,
+      "text": "q3. and this is how we create a pod now"
+    },
+    {
+      "start": 827.32,
+      "duration": 3.36,
+      "text": "this"
+    },
+    {
+      "start": 828.36,
+      "duration": 5.56,
+      "text": "pod engine X"
+    },
+    {
+      "start": 830.68,
+      "duration": 5.079,
+      "text": "config config map hyphen Y and you can"
+    },
+    {
+      "start": 833.92,
+      "duration": 3.0,
+      "text": "see in the volume Mount we will have a"
+    },
+    {
+      "start": 835.759,
+      "duration": 4.921,
+      "text": "config"
+    },
+    {
+      "start": 836.92,
+      "duration": 6.08,
+      "text": "map amounted"
+    },
+    {
+      "start": 840.68,
+      "duration": 4.8,
+      "text": "we have a config map mounted with the"
+    },
+    {
+      "start": 843.0,
+      "duration": 4.44,
+      "text": "name as config volume so this is how you"
+    },
+    {
+      "start": 845.48,
+      "duration": 3.08,
+      "text": "will solve this question so this is a"
+    },
+    {
+      "start": 847.44,
+      "duration": 3.079,
+      "text": "very important question and this has"
+    },
+    {
+      "start": 848.56,
+      "duration": 3.839,
+      "text": "been coming in the CKD exam very very"
+    },
+    {
+      "start": 850.519,
+      "duration": 4.041,
+      "text": "often so make sure you understand how to"
+    },
+    {
+      "start": 852.399,
+      "duration": 4.401,
+      "text": "solve this and also how to use the"
+    },
+    {
+      "start": 854.56,
+      "duration": 4.399,
+      "text": "documentation uh in order if you have"
+    },
+    {
+      "start": 856.8,
+      "duration": 3.44,
+      "text": "any issues or any questions now with"
+    },
+    {
+      "start": 858.959,
+      "duration": 3.961,
+      "text": "that being said let's move on to the"
+    },
+    {
+      "start": 860.24,
+      "duration": 4.599,
+      "text": "next question all right moving on the"
+    },
+    {
+      "start": 862.92,
+      "duration": 3.88,
+      "text": "next question we have in this document"
+    },
+    {
+      "start": 864.839,
+      "duration": 3.961,
+      "text": "is your application's name space"
+    },
+    {
+      "start": 866.8,
+      "duration": 4.599,
+      "text": "requires a specific service account to"
+    },
+    {
+      "start": 868.8,
+      "duration": 4.719,
+      "text": "be us used and the task is to update the"
+    },
+    {
+      "start": 871.399,
+      "duration": 4.44,
+      "text": "app a deployment in the production Nam"
+    },
+    {
+      "start": 873.519,
+      "duration": 4.12,
+      "text": "space to run a restricted service"
+    },
+    {
+      "start": 875.839,
+      "duration": 3.641,
+      "text": "account the service account has already"
+    },
+    {
+      "start": 877.639,
+      "duration": 4.56,
+      "text": "been created so this is a question that"
+    },
+    {
+      "start": 879.48,
+      "duration": 4.719,
+      "text": "I cannot do on on killer Koda because I"
+    },
+    {
+      "start": 882.199,
+      "duration": 3.721,
+      "text": "don't have this deployment or I don't"
+    },
+    {
+      "start": 884.199,
+      "duration": 4.08,
+      "text": "have this name space but I will show you"
+    },
+    {
+      "start": 885.92,
+      "duration": 4.64,
+      "text": "how to tackle this question or how do"
+    },
+    {
+      "start": 888.279,
+      "duration": 5.161,
+      "text": "you solve it because this is a very"
+    },
+    {
+      "start": 890.56,
+      "duration": 5.639,
+      "text": "important question that will be there in"
+    },
+    {
+      "start": 893.44,
+      "duration": 3.959,
+      "text": "your exam as well those to use a"
+    },
+    {
+      "start": 896.199,
+      "duration": 4.08,
+      "text": "particular service account in your"
+    },
+    {
+      "start": 897.399,
+      "duration": 4.56,
+      "text": "deployment you can use the command K set"
+    },
+    {
+      "start": 900.279,
+      "duration": 3.641,
+      "text": "service"
+    },
+    {
+      "start": 901.959,
+      "duration": 3.721,
+      "text": "account if you don't know how to use it"
+    },
+    {
+      "start": 903.92,
+      "duration": 4.4,
+      "text": "you can simply use the help command so"
+    },
+    {
+      "start": 905.68,
+      "duration": 5.24,
+      "text": "you say k set service"
+    },
+    {
+      "start": 908.32,
+      "duration": 5.519,
+      "text": "account D- help and you can see an"
+    },
+    {
+      "start": 910.92,
+      "duration": 4.44,
+      "text": "example here so Cube CTL set service"
+    },
+    {
+      "start": 913.839,
+      "duration": 3.0,
+      "text": "account deployment the name of the"
+    },
+    {
+      "start": 915.36,
+      "duration": 3.52,
+      "text": "deployment and then the service account"
+    },
+    {
+      "start": 916.839,
+      "duration": 4.041,
+      "text": "name this is how easy it is to solve"
+    },
+    {
+      "start": 918.88,
+      "duration": 4.16,
+      "text": "this question you can either do it using"
+    },
+    {
+      "start": 920.88,
+      "duration": 3.84,
+      "text": "the imperative command or you can simply"
+    },
+    {
+      "start": 923.04,
+      "duration": 4.28,
+      "text": "put the service account in the"
+    },
+    {
+      "start": 924.72,
+      "duration": 4.64,
+      "text": "deployment manifest file as well I"
+    },
+    {
+      "start": 927.32,
+      "duration": 3.72,
+      "text": "usually do it this way and I recommend"
+    },
+    {
+      "start": 929.36,
+      "duration": 4.279,
+      "text": "you to do do this this way rather than"
+    },
+    {
+      "start": 931.04,
+      "duration": 3.88,
+      "text": "editing the Manifest file so it's Cas"
+    },
+    {
+      "start": 933.639,
+      "duration": 3.64,
+      "text": "set service account the name of the"
+    },
+    {
+      "start": 934.92,
+      "duration": 5.0,
+      "text": "service name of the deployment so we'll"
+    },
+    {
+      "start": 937.279,
+      "duration": 4.521,
+      "text": "say k at service account"
+    },
+    {
+      "start": 939.92,
+      "duration": 3.64,
+      "text": "deployment name of the deployment that"
+    },
+    {
+      "start": 941.8,
+      "duration": 4.279,
+      "text": "this app a and then the service account"
+    },
+    {
+      "start": 943.56,
+      "duration": 5.279,
+      "text": "name which is restricted"
+    },
+    {
+      "start": 946.079,
+      "duration": 5.44,
+      "text": "service this is how easy it is to solve"
+    },
+    {
+      "start": 948.839,
+      "duration": 5.321,
+      "text": "and you can easily solve this and get"
+    },
+    {
+      "start": 951.519,
+      "duration": 4.12,
+      "text": "marks in your CP exam all right let's"
+    },
+    {
+      "start": 954.16,
+      "duration": 3.32,
+      "text": "move on to the last question of this"
+    },
+    {
+      "start": 955.639,
+      "duration": 3.361,
+      "text": "video I have more questions to cover so"
+    },
+    {
+      "start": 957.48,
+      "duration": 4.0,
+      "text": "if you want me to create a part two of"
+    },
+    {
+      "start": 959.0,
+      "duration": 3.92,
+      "text": "the CK exam questions do let me know in"
+    },
+    {
+      "start": 961.48,
+      "duration": 3.2,
+      "text": "the do let me know in the comment"
+    },
+    {
+      "start": 962.92,
+      "duration": 3.76,
+      "text": "section and let's move on to solve this"
+    },
+    {
+      "start": 964.68,
+      "duration": 3.639,
+      "text": "last question so question number five is"
+    },
+    {
+      "start": 966.68,
+      "duration": 4.0,
+      "text": "to create a deployment named back end"
+    },
+    {
+      "start": 968.319,
+      "duration": 4.76,
+      "text": "deployment with engine X image that runs"
+    },
+    {
+      "start": 970.68,
+      "duration": 5.079,
+      "text": "a web application on Port 8081 having"
+    },
+    {
+      "start": 973.079,
+      "duration": 4.521,
+      "text": "four replicas specifying a Readiness"
+    },
+    {
+      "start": 975.759,
+      "duration": 3.281,
+      "text": "probe using the path helc so in this"
+    },
+    {
+      "start": 977.6,
+      "duration": 3.479,
+      "text": "question we have to create a deployment"
+    },
+    {
+      "start": 979.04,
+      "duration": 4.239,
+      "text": "and specify the Readiness probe there"
+    },
+    {
+      "start": 981.079,
+      "duration": 4.68,
+      "text": "are three probes in kubernetes Readiness"
+    },
+    {
+      "start": 983.279,
+      "duration": 3.841,
+      "text": "liveness and startup after we created"
+    },
+    {
+      "start": 985.759,
+      "duration": 3.361,
+      "text": "read probe we also need to set the"
+    },
+    {
+      "start": 987.12,
+      "duration": 4.32,
+      "text": "initial delay seconds to eight and perod"
+    },
+    {
+      "start": 989.12,
+      "duration": 4.519,
+      "text": "seconds to five so let's solve this we"
+    },
+    {
+      "start": 991.44,
+      "duration": 3.879,
+      "text": "first create a deployment and then edit"
+    },
+    {
+      "start": 993.639,
+      "duration": 4.12,
+      "text": "the Manifest file to do this so I'm"
+    },
+    {
+      "start": 995.319,
+      "duration": 4.2,
+      "text": "going to go here in the killer Koda"
+    },
+    {
+      "start": 997.759,
+      "duration": 3.601,
+      "text": "create a deployment using using"
+    },
+    {
+      "start": 999.519,
+      "duration": 5.12,
+      "text": "imperative commands I'll say k create"
+    },
+    {
+      "start": 1001.36,
+      "duration": 5.479,
+      "text": "deployment name of the deployment is"
+    },
+    {
+      "start": 1004.639,
+      "duration": 4.801,
+      "text": "backin"
+    },
+    {
+      "start": 1006.839,
+      "duration": 5.841,
+      "text": "deployment and the image is engine X so"
+    },
+    {
+      "start": 1009.44,
+      "duration": 6.199,
+      "text": "I'll say engine X replicas is4 replicas"
+    },
+    {
+      "start": 1012.68,
+      "duration": 5.44,
+      "text": "is4 and yeah that's all we have for now"
+    },
+    {
+      "start": 1015.639,
+      "duration": 6.32,
+      "text": "we also have a port which is 8081 so"
+    },
+    {
+      "start": 1018.12,
+      "duration": 5.959,
+      "text": "I'll say Port is"
+    },
+    {
+      "start": 1021.959,
+      "duration": 4.08,
+      "text": "8081 I don't want to actually create"
+    },
+    {
+      "start": 1024.079,
+      "duration": 5.48,
+      "text": "this I'll say dry run equals to client"
+    },
+    {
+      "start": 1026.039,
+      "duration": 5.121,
+      "text": "and hyphen o yam make sure to not add"
+    },
+    {
+      "start": 1029.559,
+      "duration": 3.681,
+      "text": "space here so let's press enter and we"
+    },
+    {
+      "start": 1031.16,
+      "duration": 4.0,
+      "text": "have this manifest ready we are going to"
+    },
+    {
+      "start": 1033.24,
+      "duration": 4.36,
+      "text": "edit this manifest to add the Readiness"
+    },
+    {
+      "start": 1035.16,
+      "duration": 4.679,
+      "text": "Pro as asked in the question so I put"
+    },
+    {
+      "start": 1037.6,
+      "duration": 5.959,
+      "text": "this inside a file name it as"
+    },
+    {
+      "start": 1039.839,
+      "duration": 6.48,
+      "text": "Q5 do yam"
+    },
+    {
+      "start": 1043.559,
+      "duration": 4.561,
+      "text": "okay now that this is done let's see if"
+    },
+    {
+      "start": 1046.319,
+      "duration": 5.441,
+      "text": "the file is ready and I'm going to edit"
+    },
+    {
+      "start": 1048.12,
+      "duration": 6.72,
+      "text": "that file using Nano so q5l you can use"
+    },
+    {
+      "start": 1051.76,
+      "duration": 4.44,
+      "text": "Nano VI whatever you like so we are"
+    },
+    {
+      "start": 1054.84,
+      "duration": 4.56,
+      "text": "going to put the Readiness probe here"
+    },
+    {
+      "start": 1056.2,
+      "duration": 3.2,
+      "text": "inside the container"
+    },
+    {
+      "start": 1059.799,
+      "duration": 5.081,
+      "text": "spec and you can official obviously use"
+    },
+    {
+      "start": 1062.6,
+      "duration": 4.64,
+      "text": "the uh official documentation this is a"
+    },
+    {
+      "start": 1064.88,
+      "duration": 4.32,
+      "text": "documentation for probes and you can see"
+    },
+    {
+      "start": 1067.24,
+      "duration": 3.84,
+      "text": "this is how you define Readiness probe"
+    },
+    {
+      "start": 1069.2,
+      "duration": 4.24,
+      "text": "so I'm going to copy"
+    },
+    {
+      "start": 1071.08,
+      "duration": 3.959,
+      "text": "this so we are not using actually a"
+    },
+    {
+      "start": 1073.44,
+      "duration": 3.92,
+      "text": "command we using a path so I'll be using"
+    },
+    {
+      "start": 1075.039,
+      "duration": 5.281,
+      "text": "a path instead of the command here so"
+    },
+    {
+      "start": 1077.36,
+      "duration": 4.64,
+      "text": "you can see path uh we can also use this"
+    },
+    {
+      "start": 1080.32,
+      "duration": 5.719,
+      "text": "example in of lightness I'm just going"
+    },
+    {
+      "start": 1082.0,
+      "duration": 6.12,
+      "text": "to make it Readiness so I'll copy this"
+    },
+    {
+      "start": 1086.039,
+      "duration": 4.081,
+      "text": "and paste it here make sure to have the"
+    },
+    {
+      "start": 1088.12,
+      "duration": 4.96,
+      "text": "indentation correct like this probe"
+    },
+    {
+      "start": 1090.12,
+      "duration": 5.799,
+      "text": "indentation should be as is same as the"
+    },
+    {
+      "start": 1093.08,
+      "duration": 4.719,
+      "text": "in name and the image indentation so"
+    },
+    {
+      "start": 1095.919,
+      "duration": 4.281,
+      "text": "I'll put this here in the same"
+    },
+    {
+      "start": 1097.799,
+      "duration": 6.36,
+      "text": "indentation and instead of liveness I"
+    },
+    {
+      "start": 1100.2,
+      "duration": 6.12,
+      "text": "want it to be Readiness so I'll make it"
+    },
+    {
+      "start": 1104.159,
+      "duration": 6.161,
+      "text": "Readiness hopefully"
+    },
+    {
+      "start": 1106.32,
+      "duration": 4.0,
+      "text": "the yes"
+    },
+    {
+      "start": 1110.52,
+      "duration": 5.76,
+      "text": "so it is R AI n type uh and then put"
+    },
+    {
+      "start": 1114.76,
+      "duration": 4.56,
+      "text": "this in the current internation level as"
+    },
+    {
+      "start": 1116.28,
+      "duration": 5.399,
+      "text": "well which is"
+    },
+    {
+      "start": 1119.32,
+      "duration": 5.719,
+      "text": "this I don't want any headers so I'm"
+    },
+    {
+      "start": 1121.679,
+      "duration": 5.12,
+      "text": "going to remove that initial delay"
+    },
+    {
+      "start": 1125.039,
+      "duration": 5.321,
+      "text": "seconds should be in the same"
+    },
+    {
+      "start": 1126.799,
+      "duration": 5.76,
+      "text": "indentation level as HTTP get so HTTP"
+    },
+    {
+      "start": 1130.36,
+      "duration": 5.799,
+      "text": "get is here that is"
+    },
+    {
+      "start": 1132.559,
+      "duration": 3.6,
+      "text": "correct P should"
+    },
+    {
+      "start": 1137.0,
+      "duration": 4.96,
+      "text": "be and also period delay period seconds"
+    },
+    {
+      "start": 1140.48,
+      "duration": 4.199,
+      "text": "so we have the value of initial delay"
+    },
+    {
+      "start": 1141.96,
+      "duration": 4.599,
+      "text": "seconds as 8 and period seconds as five"
+    },
+    {
+      "start": 1144.679,
+      "duration": 4.88,
+      "text": "so I'm going to edit that as well so"
+    },
+    {
+      "start": 1146.559,
+      "duration": 5.401,
+      "text": "period seconds are set to be five and"
+    },
+    {
+      "start": 1149.559,
+      "duration": 7.081,
+      "text": "initial delay seconds are set to be"
+    },
+    {
+      "start": 1151.96,
+      "duration": 7.52,
+      "text": "8 the port is 8081 the path is SL"
+    },
+    {
+      "start": 1156.64,
+      "duration": 4.72,
+      "text": "Hy as we have in the question the path"
+    },
+    {
+      "start": 1159.48,
+      "duration": 3.16,
+      "text": "is slz so this means this is how you"
+    },
+    {
+      "start": 1161.36,
+      "duration": 3.28,
+      "text": "will be adding"
+    },
+    {
+      "start": 1162.64,
+      "duration": 4.0,
+      "text": "your hopefully the indentation is"
+    },
+    {
+      "start": 1164.64,
+      "duration": 5.519,
+      "text": "correct and I'm going to save this apply"
+    },
+    {
+      "start": 1166.64,
+      "duration": 6.32,
+      "text": "it if there's any issue or error uh"
+    },
+    {
+      "start": 1170.159,
+      "duration": 4.561,
+      "text": "kubernetes will tell us so it is Q5 yaml"
+    },
+    {
+      "start": 1172.96,
+      "duration": 3.04,
+      "text": "and we have a deployment created let's"
+    },
+    {
+      "start": 1174.72,
+      "duration": 5.0,
+      "text": "check if the Readiness is also"
+    },
+    {
+      "start": 1176.0,
+      "duration": 4.64,
+      "text": "implemented in this or not so I'll be"
+    },
+    {
+      "start": 1179.72,
+      "duration": 3.4,
+      "text": "saying"
+    },
+    {
+      "start": 1180.64,
+      "duration": 5.08,
+      "text": "I and you should be able to see writing"
+    },
+    {
+      "start": 1183.12,
+      "duration": 4.96,
+      "text": "this prob mentioned here which means"
+    },
+    {
+      "start": 1185.72,
+      "duration": 3.72,
+      "text": "this is how you will be solving this so"
+    },
+    {
+      "start": 1188.08,
+      "duration": 3.32,
+      "text": "I hope you have understood how to solve"
+    },
+    {
+      "start": 1189.44,
+      "duration": 4.08,
+      "text": "these important five questions that you"
+    },
+    {
+      "start": 1191.4,
+      "duration": 4.159,
+      "text": "will get in your ckad exam if you have"
+    },
+    {
+      "start": 1193.52,
+      "duration": 3.6,
+      "text": "any questions any doubt feel free to let"
+    },
+    {
+      "start": 1195.559,
+      "duration": 3.641,
+      "text": "me know and if you want me to create"
+    },
+    {
+      "start": 1197.12,
+      "duration": 4.36,
+      "text": "another part of this video"
+    },
+    {
+      "start": 1199.2,
+      "duration": 3.599,
+      "text": "do let me know in the comment section if"
+    },
+    {
+      "start": 1201.48,
+      "duration": 4.84,
+      "text": "you're someone who's also going to apply"
+    },
+    {
+      "start": 1202.799,
+      "duration": 5.641,
+      "text": "for cka exam you can also watch my video"
+    },
+    {
+      "start": 1206.32,
+      "duration": 4.68,
+      "text": "on CK exam"
+    },
+    {
+      "start": 1208.44,
+      "duration": 3.8,
+      "text": "questions uh which is there on YouTube"
+    },
+    {
+      "start": 1211.0,
+      "duration": 4.039,
+      "text": "the link is going to be there in the"
+    },
+    {
+      "start": 1212.24,
+      "duration": 4.4,
+      "text": "description but you can also uh check it"
+    },
+    {
+      "start": 1215.039,
+      "duration": 5.161,
+      "text": "out this is the video I'm talking about"
+    },
+    {
+      "start": 1216.64,
+      "duration": 6.36,
+      "text": "so real CK exam questions that I've have"
+    },
+    {
+      "start": 1220.2,
+      "duration": 5.28,
+      "text": "solved using documentation with that"
+    },
+    {
+      "start": 1223.0,
+      "duration": 5.0,
+      "text": "being said that's all I hope this video"
+    },
+    {
+      "start": 1225.48,
+      "duration": 4.319,
+      "text": "was informative thank you like this"
+    },
+    {
+      "start": 1228.0,
+      "duration": 5.039,
+      "text": "video and subscri to Cloud Cham for more"
+    },
+    {
+      "start": 1229.799,
+      "duration": 3.24,
+      "text": "such videos"
+    }
+  ]
+}

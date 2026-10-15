@@ -1,0 +1,1691 @@
+{
+  "video": {
+    "id": "TptbZ-ak55U",
+    "title": "Every Important Networking Protocol in DevOps Explained!",
+    "url": "https://www.youtube.com/watch?v=TptbZ-ak55U",
+    "duration": 689,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.12,
+      "duration": 3.759,
+      "text": "in this video we look at all important"
+    },
+    {
+      "start": 2.24,
+      "duration": 3.92,
+      "text": "protocols that you should definitely"
+    },
+    {
+      "start": 3.879,
+      "duration": 3.761,
+      "text": "know as a devops engineer these"
+    },
+    {
+      "start": 6.16,
+      "duration": 2.96,
+      "text": "Protocols are something that you use"
+    },
+    {
+      "start": 7.64,
+      "duration": 3.48,
+      "text": "every day when working on different"
+    },
+    {
+      "start": 9.12,
+      "duration": 3.72,
+      "text": "devops tools so understanding them and"
+    },
+    {
+      "start": 11.12,
+      "duration": 3.759,
+      "text": "knowing how they actually work is"
+    },
+    {
+      "start": 12.84,
+      "duration": 4.16,
+      "text": "fundamental and very important for all"
+    },
+    {
+      "start": 14.879,
+      "duration": 3.641,
+      "text": "devops engineers in this video I will"
+    },
+    {
+      "start": 17.0,
+      "duration": 3.48,
+      "text": "cover different types of protocols"
+    },
+    {
+      "start": 18.52,
+      "duration": 3.919,
+      "text": "including web protocols authentication"
+    },
+    {
+      "start": 20.48,
+      "duration": 3.879,
+      "text": "protocols security protocols protocols"
+    },
+    {
+      "start": 22.439,
+      "duration": 4.801,
+      "text": "used by monitoring tools protocols used"
+    },
+    {
+      "start": 24.359,
+      "duration": 4.281,
+      "text": "by cicd tools kubernetes and lot more so"
+    },
+    {
+      "start": 27.24,
+      "duration": 3.359,
+      "text": "make sure you watch this video till the"
+    },
+    {
+      "start": 28.64,
+      "duration": 4.4,
+      "text": "end let's go the the first devop"
+    },
+    {
+      "start": 30.599,
+      "duration": 5.441,
+      "text": "protocol we have on the list is HTTP and"
+    },
+    {
+      "start": 33.04,
+      "duration": 4.4,
+      "text": "https HTTP stands for hypertext transfer"
+    },
+    {
+      "start": 36.04,
+      "duration": 3.359,
+      "text": "protocol and it is used for"
+    },
+    {
+      "start": 37.44,
+      "duration": 4.279,
+      "text": "communication between web clients and"
+    },
+    {
+      "start": 39.399,
+      "duration": 4.881,
+      "text": "servers it enables the exchange of data"
+    },
+    {
+      "start": 41.719,
+      "duration": 4.721,
+      "text": "over the Internet https is a secure"
+    },
+    {
+      "start": 44.28,
+      "duration": 5.439,
+      "text": "version of HTTP which encrypts data"
+    },
+    {
+      "start": 46.44,
+      "duration": 5.72,
+      "text": "using TLS in devops HTTP and https are"
+    },
+    {
+      "start": 49.719,
+      "duration": 3.84,
+      "text": "widely used for rest API communication"
+    },
+    {
+      "start": 52.16,
+      "duration": 3.64,
+      "text": "between different services such as"
+    },
+    {
+      "start": 53.559,
+      "duration": 4.48,
+      "text": "interacting with Cloud providers cicd"
+    },
+    {
+      "start": 55.8,
+      "duration": 4.8,
+      "text": "pipelines and monitoring Tools load"
+    },
+    {
+      "start": 58.039,
+      "duration": 5.2,
+      "text": "balancers like enginex use HT P to Route"
+    },
+    {
+      "start": 60.6,
+      "duration": 5.04,
+      "text": "traffic efficiently whereas kubernetes"
+    },
+    {
+      "start": 63.239,
+      "duration": 4.481,
+      "text": "Ingress controllers also manage HTTP"
+    },
+    {
+      "start": 65.64,
+      "duration": 4.44,
+      "text": "based service Communications to expose"
+    },
+    {
+      "start": 67.72,
+      "duration": 4.68,
+      "text": "application securely next devops"
+    },
+    {
+      "start": 70.08,
+      "duration": 4.12,
+      "text": "protocol is websockets websocket is a"
+    },
+    {
+      "start": 72.4,
+      "duration": 3.56,
+      "text": "real-time bidirectional communication"
+    },
+    {
+      "start": 74.2,
+      "duration": 3.959,
+      "text": "protocol that allows persistent"
+    },
+    {
+      "start": 75.96,
+      "duration": 4.119,
+      "text": "connection between client and server"
+    },
+    {
+      "start": 78.159,
+      "duration": 3.96,
+      "text": "unlike HTTP which requires multiple"
+    },
+    {
+      "start": 80.079,
+      "duration": 4.521,
+      "text": "requests for continuous updates web"
+    },
+    {
+      "start": 82.119,
+      "duration": 4.68,
+      "text": "sockets establish a long lift connection"
+    },
+    {
+      "start": 84.6,
+      "duration": 4.12,
+      "text": "enabling efficient Communication in"
+    },
+    {
+      "start": 86.799,
+      "duration": 3.841,
+      "text": "devops websockets are used in real-time"
+    },
+    {
+      "start": 88.72,
+      "duration": 3.439,
+      "text": "monitoring dashboards like Gra"
+    },
+    {
+      "start": 90.64,
+      "duration": 3.68,
+      "text": "where live data is streamed without"
+    },
+    {
+      "start": 92.159,
+      "duration": 4.121,
+      "text": "requiring page refreshes they are also"
+    },
+    {
+      "start": 94.32,
+      "duration": 4.52,
+      "text": "used in cicd tools to provide live"
+    },
+    {
+      "start": 96.28,
+      "duration": 4.6,
+      "text": "updates on Pipeline execution kubernetes"
+    },
+    {
+      "start": 98.84,
+      "duration": 3.84,
+      "text": "uses websockets for lock streaming"
+    },
+    {
+      "start": 100.88,
+      "duration": 4.72,
+      "text": "allowing developers to view real-time"
+    },
+    {
+      "start": 102.68,
+      "duration": 4.32,
+      "text": "locks from running containers grpc"
+    },
+    {
+      "start": 105.6,
+      "duration": 3.519,
+      "text": "protocol is something that is used by"
+    },
+    {
+      "start": 107.0,
+      "duration": 3.56,
+      "text": "almost every devops tool these days it"
+    },
+    {
+      "start": 109.119,
+      "duration": 4.441,
+      "text": "is a high performance communication"
+    },
+    {
+      "start": 110.56,
+      "duration": 5.08,
+      "text": "protocol designed for microservices grpc"
+    },
+    {
+      "start": 113.56,
+      "duration": 4.599,
+      "text": "enables remote procedure calls using"
+    },
+    {
+      "start": 115.64,
+      "duration": 5.159,
+      "text": "protocol buffers instead of Json making"
+    },
+    {
+      "start": 118.159,
+      "duration": 4.761,
+      "text": "data exchange faster and more efficient"
+    },
+    {
+      "start": 120.799,
+      "duration": 4.0,
+      "text": "in devops grpc is used for service to"
+    },
+    {
+      "start": 122.92,
+      "duration": 3.839,
+      "text": "service Communication in microservices"
+    },
+    {
+      "start": 124.799,
+      "duration": 5.561,
+      "text": "architecture commonly seen in tools like"
+    },
+    {
+      "start": 126.759,
+      "duration": 6.761,
+      "text": "stto and Envoy cicd tools like Argo CD"
+    },
+    {
+      "start": 130.36,
+      "duration": 5.239,
+      "text": "also use grpc to execute pipeline tasks"
+    },
+    {
+      "start": 133.52,
+      "duration": 3.48,
+      "text": "quickly not just this monitoring and"
+    },
+    {
+      "start": 135.599,
+      "duration": 3.881,
+      "text": "observability tools such as open"
+    },
+    {
+      "start": 137.0,
+      "duration": 5.4,
+      "text": "Telemetry also use grpc to collect and"
+    },
+    {
+      "start": 139.48,
+      "duration": 4.399,
+      "text": "transmit Telemetry data efficiently now"
+    },
+    {
+      "start": 142.4,
+      "duration": 3.28,
+      "text": "let's learn about security and"
+    },
+    {
+      "start": 143.879,
+      "duration": 4.801,
+      "text": "authentication protocols starting with"
+    },
+    {
+      "start": 145.68,
+      "duration": 4.839,
+      "text": "SSH ssh is a secure protocol used for"
+    },
+    {
+      "start": 148.68,
+      "duration": 3.8,
+      "text": "remote access and AD administration of"
+    },
+    {
+      "start": 150.519,
+      "duration": 3.72,
+      "text": "servers it provides encrypted"
+    },
+    {
+      "start": 152.48,
+      "duration": 4.8,
+      "text": "communication between a client and a"
+    },
+    {
+      "start": 154.239,
+      "duration": 5.08,
+      "text": "server preventing unauthorized access in"
+    },
+    {
+      "start": 157.28,
+      "duration": 4.12,
+      "text": "devops SS is used for securely"
+    },
+    {
+      "start": 159.319,
+      "duration": 4.361,
+      "text": "connecting to Cloud servers managing"
+    },
+    {
+      "start": 161.4,
+      "duration": 4.24,
+      "text": "infrastructure remotely and executing"
+    },
+    {
+      "start": 163.68,
+      "duration": 4.32,
+      "text": "automated deployments using tools like"
+    },
+    {
+      "start": 165.64,
+      "duration": 4.239,
+      "text": "anible many Version Control Systems"
+    },
+    {
+      "start": 168.0,
+      "duration": 4.28,
+      "text": "including GitHub and gitlab allow"
+    },
+    {
+      "start": 169.879,
+      "duration": 5.121,
+      "text": "developers to authenticate and push code"
+    },
+    {
+      "start": 172.28,
+      "duration": 5.08,
+      "text": "securely using SSH Keys Next"
+    },
+    {
+      "start": 175.0,
+      "duration": 4.56,
+      "text": "Authentication Protocol is oo or open"
+    },
+    {
+      "start": 177.36,
+      "duration": 4.48,
+      "text": "authorization that allows application to"
+    },
+    {
+      "start": 179.56,
+      "duration": 5.2,
+      "text": "access access resources without exposing"
+    },
+    {
+      "start": 181.84,
+      "duration": 6.28,
+      "text": "passwords oo relies on access tokens for"
+    },
+    {
+      "start": 184.76,
+      "duration": 5.399,
+      "text": "secure API interactions in devops oo is"
+    },
+    {
+      "start": 188.12,
+      "duration": 4.0,
+      "text": "commonly used for authentication in cicd"
+    },
+    {
+      "start": 190.159,
+      "duration": 3.881,
+      "text": "pipelines where tools like genkins and"
+    },
+    {
+      "start": 192.12,
+      "duration": 4.72,
+      "text": "GitHub actions authenticate against"
+    },
+    {
+      "start": 194.04,
+      "duration": 4.68,
+      "text": "cloud services it is also used for API"
+    },
+    {
+      "start": 196.84,
+      "duration": 4.0,
+      "text": "Access Control in Cloud environments"
+    },
+    {
+      "start": 198.72,
+      "duration": 4.239,
+      "text": "ensuring that only authorized users can"
+    },
+    {
+      "start": 200.84,
+      "duration": 3.759,
+      "text": "perform specific actions you can also"
+    },
+    {
+      "start": 202.959,
+      "duration": 4.64,
+      "text": "see container Registries like dockerhub"
+    },
+    {
+      "start": 204.599,
+      "duration": 5.321,
+      "text": "or ECR using oo for secure"
+    },
+    {
+      "start": 207.599,
+      "duration": 4.401,
+      "text": "authentication next up is Sam or"
+    },
+    {
+      "start": 209.92,
+      "duration": 3.879,
+      "text": "security assertion markup language which"
+    },
+    {
+      "start": 212.0,
+      "duration": 4.12,
+      "text": "is an Authentication Protocol used for"
+    },
+    {
+      "start": 213.799,
+      "duration": 4.481,
+      "text": "single sign on allowing users to access"
+    },
+    {
+      "start": 216.12,
+      "duration": 4.92,
+      "text": "multiple applications with a single set"
+    },
+    {
+      "start": 218.28,
+      "duration": 4.72,
+      "text": "of credentials in devops saml is widely"
+    },
+    {
+      "start": 221.04,
+      "duration": 3.88,
+      "text": "used for Enterprise authentication"
+    },
+    {
+      "start": 223.0,
+      "duration": 4.879,
+      "text": "across various platforms including cloud"
+    },
+    {
+      "start": 224.92,
+      "duration": 5.2,
+      "text": "services like AWS am Google cloud and"
+    },
+    {
+      "start": 227.879,
+      "duration": 4.481,
+      "text": "Microsoft Azure talking about security"
+    },
+    {
+      "start": 230.12,
+      "duration": 4.28,
+      "text": "you should definitely know about ztna or"
+    },
+    {
+      "start": 232.36,
+      "duration": 4.28,
+      "text": "zero trust network access which is a"
+    },
+    {
+      "start": 234.4,
+      "duration": 4.52,
+      "text": "security model that enforces strict"
+    },
+    {
+      "start": 236.64,
+      "duration": 4.12,
+      "text": "Access Control based on identity and"
+    },
+    {
+      "start": 238.92,
+      "duration": 5.56,
+      "text": "context for following the principle of"
+    },
+    {
+      "start": 240.76,
+      "duration": 5.8,
+      "text": "never trust always verify in devops ztna"
+    },
+    {
+      "start": 244.48,
+      "duration": 4.8,
+      "text": "is used to secure access to Cloud"
+    },
+    {
+      "start": 246.56,
+      "duration": 4.8,
+      "text": "resources cicd pipelines and even"
+    },
+    {
+      "start": 249.28,
+      "duration": 3.64,
+      "text": "kubernetes cluster you might already"
+    },
+    {
+      "start": 251.36,
+      "duration": 3.28,
+      "text": "know one of the biggest challenge in"
+    },
+    {
+      "start": 252.92,
+      "duration": 4.159,
+      "text": "Cloud environments these days is"
+    },
+    {
+      "start": 254.64,
+      "duration": 4.319,
+      "text": "ensuring secure access to resources"
+    },
+    {
+      "start": 257.079,
+      "duration": 4.56,
+      "text": "without exposing them to unnecessary"
+    },
+    {
+      "start": 258.959,
+      "duration": 4.881,
+      "text": "risk traditional vpns and firewall rules"
+    },
+    {
+      "start": 261.639,
+      "duration": 4.801,
+      "text": "often give too much access which makes"
+    },
+    {
+      "start": 263.84,
+      "duration": 5.359,
+      "text": "systems easier to hack and that's where"
+    },
+    {
+      "start": 266.44,
+      "duration": 5.599,
+      "text": "ztna or zero trust network access model"
+    },
+    {
+      "start": 269.199,
+      "duration": 5.241,
+      "text": "works ztna only gives access based on"
+    },
+    {
+      "start": 272.039,
+      "duration": 4.561,
+      "text": "person's identity and situation twin"
+    },
+    {
+      "start": 274.44,
+      "duration": 4.0,
+      "text": "gate is a great tool that follows ztna"
+    },
+    {
+      "start": 276.6,
+      "duration": 4.879,
+      "text": "access and let me show you how you can"
+    },
+    {
+      "start": 278.44,
+      "duration": 5.319,
+      "text": "set up Z TNA in kubernetes cluster using"
+    },
+    {
+      "start": 281.479,
+      "duration": 3.921,
+      "text": "twin Gate's kubernetes operator twin"
+    },
+    {
+      "start": 283.759,
+      "duration": 3.561,
+      "text": "gate is an excellent tool that follows"
+    },
+    {
+      "start": 285.4,
+      "duration": 3.72,
+      "text": "zero trust model and provide access to"
+    },
+    {
+      "start": 287.32,
+      "duration": 3.92,
+      "text": "your applications based on different"
+    },
+    {
+      "start": 289.12,
+      "duration": 3.519,
+      "text": "roles in the company this is my twin"
+    },
+    {
+      "start": 291.24,
+      "duration": 3.399,
+      "text": "gate account and I have a group of"
+    },
+    {
+      "start": 292.639,
+      "duration": 4.321,
+      "text": "admins created to whom I want to provide"
+    },
+    {
+      "start": 294.639,
+      "duration": 4.12,
+      "text": "access to my kubernetes cluster we start"
+    },
+    {
+      "start": 296.96,
+      "duration": 3.04,
+      "text": "by creating a remote Network so I'm"
+    },
+    {
+      "start": 298.759,
+      "duration": 2.921,
+      "text": "going to click on remote Network Network"
+    },
+    {
+      "start": 300.0,
+      "duration": 3.36,
+      "text": "this is going to be on promise and the"
+    },
+    {
+      "start": 301.68,
+      "duration": 4.079,
+      "text": "name of the network is going to be Brad"
+    },
+    {
+      "start": 303.36,
+      "duration": 4.32,
+      "text": "cluster once you create a remote Network"
+    },
+    {
+      "start": 305.759,
+      "duration": 3.401,
+      "text": "you have two connectors here previously"
+    },
+    {
+      "start": 307.68,
+      "duration": 4.16,
+      "text": "we used to deploy this connector by"
+    },
+    {
+      "start": 309.16,
+      "duration": 4.84,
+      "text": "adding access token but now twin gate"
+    },
+    {
+      "start": 311.84,
+      "duration": 4.12,
+      "text": "has its own kubernetes operator which we"
+    },
+    {
+      "start": 314.0,
+      "duration": 4.12,
+      "text": "can use to provide access also to create"
+    },
+    {
+      "start": 315.96,
+      "duration": 3.92,
+      "text": "resources and a lot more so the GitHub"
+    },
+    {
+      "start": 318.12,
+      "duration": 3.639,
+      "text": "repository has all the steps on how you"
+    },
+    {
+      "start": 319.88,
+      "duration": 3.96,
+      "text": "can install kubernetes operator for twin"
+    },
+    {
+      "start": 321.759,
+      "duration": 3.681,
+      "text": "gate and start using it the first step"
+    },
+    {
+      "start": 323.84,
+      "duration": 3.28,
+      "text": "is obviously to clone this"
+    },
+    {
+      "start": 325.44,
+      "duration": 3.24,
+      "text": "repository after you clone the"
+    },
+    {
+      "start": 327.12,
+      "duration": 3.079,
+      "text": "repository you need to add the values in"
+    },
+    {
+      "start": 328.68,
+      "duration": 3.4,
+      "text": "the values. yaml"
+    },
+    {
+      "start": 330.199,
+      "duration": 3.28,
+      "text": "this is the values. yaml file inside"
+    },
+    {
+      "start": 332.08,
+      "duration": 3.36,
+      "text": "this file you can make changes in the"
+    },
+    {
+      "start": 333.479,
+      "duration": 3.961,
+      "text": "Twin Gade operator section we need to"
+    },
+    {
+      "start": 335.44,
+      "duration": 4.24,
+      "text": "add the API key we also need to add the"
+    },
+    {
+      "start": 337.44,
+      "duration": 4.039,
+      "text": "network slug here and the remote network"
+    },
+    {
+      "start": 339.68,
+      "duration": 3.639,
+      "text": "name remember to remove the curly"
+    },
+    {
+      "start": 341.479,
+      "duration": 3.801,
+      "text": "brackets you can get the API key from"
+    },
+    {
+      "start": 343.319,
+      "duration": 4.561,
+      "text": "the Twin gate dashboard go to Twin gate"
+    },
+    {
+      "start": 345.28,
+      "duration": 4.52,
+      "text": "click on settings go to API and then"
+    },
+    {
+      "start": 347.88,
+      "duration": 3.759,
+      "text": "click on generate token for label I'm"
+    },
+    {
+      "start": 349.8,
+      "duration": 3.0,
+      "text": "going to name this as token and the"
+    },
+    {
+      "start": 351.639,
+      "duration": 3.56,
+      "text": "permission is going to be read write"
+    },
+    {
+      "start": 352.8,
+      "duration": 5.88,
+      "text": "provision and click on generate copy"
+    },
+    {
+      "start": 355.199,
+      "duration": 5.041,
+      "text": "this token paste it here next the"
+    },
+    {
+      "start": 358.68,
+      "duration": 4.079,
+      "text": "network slug is the the same name that"
+    },
+    {
+      "start": 360.24,
+      "duration": 4.0,
+      "text": "you have on your twin account and the"
+    },
+    {
+      "start": 362.759,
+      "duration": 3.121,
+      "text": "remote network name is your remote"
+    },
+    {
+      "start": 364.24,
+      "duration": 4.44,
+      "text": "network"
+    },
+    {
+      "start": 365.88,
+      "duration": 4.52,
+      "text": "name all right after you add the values"
+    },
+    {
+      "start": 368.68,
+      "duration": 3.28,
+      "text": "in values. yaml you are now ready to"
+    },
+    {
+      "start": 370.4,
+      "duration": 3.519,
+      "text": "install kubernetes operator through this"
+    },
+    {
+      "start": 371.96,
+      "duration": 3.4,
+      "text": "Helm command it's always good practice"
+    },
+    {
+      "start": 373.919,
+      "duration": 2.68,
+      "text": "to create a separate name space so I'm"
+    },
+    {
+      "start": 375.36,
+      "duration": 2.839,
+      "text": "going to create a separate name space"
+    },
+    {
+      "start": 376.599,
+      "duration": 4.121,
+      "text": "for twin"
+    },
+    {
+      "start": 378.199,
+      "duration": 5.801,
+      "text": "gate and then run the helm command"
+    },
+    {
+      "start": 380.72,
+      "duration": 4.599,
+      "text": "inside the twin gate Nam space perfect"
+    },
+    {
+      "start": 384.0,
+      "duration": 3.16,
+      "text": "you can see the twin gate operator is"
+    },
+    {
+      "start": 385.319,
+      "duration": 3.401,
+      "text": "now installed and we can also say qu C"
+    },
+    {
+      "start": 387.16,
+      "duration": 4.4,
+      "text": "get pods in the Twin gate namespace to"
+    },
+    {
+      "start": 388.72,
+      "duration": 4.64,
+      "text": "see that the operator is now running to"
+    },
+    {
+      "start": 391.56,
+      "duration": 4.039,
+      "text": "test out twin gate I have a simple"
+    },
+    {
+      "start": 393.36,
+      "duration": 3.76,
+      "text": "manifest for engine X deployment and"
+    },
+    {
+      "start": 395.599,
+      "duration": 2.761,
+      "text": "engine X service we are going to be"
+    },
+    {
+      "start": 397.12,
+      "duration": 3.519,
+      "text": "deploying this inside twin gate"
+    },
+    {
+      "start": 398.36,
+      "duration": 4.44,
+      "text": "namespace and use twin gate kubernetes"
+    },
+    {
+      "start": 400.639,
+      "duration": 3.84,
+      "text": "operator to provide access to this all"
+    },
+    {
+      "start": 402.8,
+      "duration": 4.28,
+      "text": "through manifest file so I'm going to"
+    },
+    {
+      "start": 404.479,
+      "duration": 4.28,
+      "text": "save this and apply now you can see a"
+    },
+    {
+      "start": 407.08,
+      "duration": 3.519,
+      "text": "pod for enginex is running and we also"
+    },
+    {
+      "start": 408.759,
+      "duration": 3.361,
+      "text": "have a service here next step is to add"
+    },
+    {
+      "start": 410.599,
+      "duration": 3.16,
+      "text": "a resource inside our twin gate"
+    },
+    {
+      "start": 412.12,
+      "duration": 3.6,
+      "text": "dashboard and we can do this using the"
+    },
+    {
+      "start": 413.759,
+      "duration": 4.041,
+      "text": "kubernetes operator so go to the GitHub"
+    },
+    {
+      "start": 415.72,
+      "duration": 4.12,
+      "text": "repository click on getting started here"
+    },
+    {
+      "start": 417.8,
+      "duration": 3.839,
+      "text": "and then scroll down you can find the"
+    },
+    {
+      "start": 419.84,
+      "duration": 3.72,
+      "text": "twin gate connector option as well as"
+    },
+    {
+      "start": 421.639,
+      "duration": 3.321,
+      "text": "twin gate resource we already have two"
+    },
+    {
+      "start": 423.56,
+      "duration": 3.0,
+      "text": "connectors here that are automatically"
+    },
+    {
+      "start": 424.96,
+      "duration": 2.919,
+      "text": "created when you create a remote network"
+    },
+    {
+      "start": 426.56,
+      "duration": 3.199,
+      "text": "but we are not going to be using this"
+    },
+    {
+      "start": 427.879,
+      "duration": 3.641,
+      "text": "instead we will be using kubernetes"
+    },
+    {
+      "start": 429.759,
+      "duration": 2.921,
+      "text": "manifest to create a connector so I'm"
+    },
+    {
+      "start": 431.52,
+      "duration": 3.04,
+      "text": "going to remove all these connectors"
+    },
+    {
+      "start": 432.68,
+      "duration": 3.239,
+      "text": "here and then use this manifest file to"
+    },
+    {
+      "start": 434.56,
+      "duration": 3.759,
+      "text": "create a connector using the operator"
+    },
+    {
+      "start": 435.919,
+      "duration": 4.0,
+      "text": "itself so let's copy this so this is our"
+    },
+    {
+      "start": 438.319,
+      "duration": 3.961,
+      "text": "twin gate connector resource and we are"
+    },
+    {
+      "start": 439.919,
+      "duration": 3.521,
+      "text": "creating this in the namespace Twin gate"
+    },
+    {
+      "start": 442.28,
+      "duration": 2.84,
+      "text": "additionally if you want to know more"
+    },
+    {
+      "start": 443.44,
+      "duration": 3.4,
+      "text": "about any of these different resources"
+    },
+    {
+      "start": 445.12,
+      "duration": 3.919,
+      "text": "you can click on the API reference and"
+    },
+    {
+      "start": 446.84,
+      "duration": 3.96,
+      "text": "find out the fields which are required"
+    },
+    {
+      "start": 449.039,
+      "duration": 3.401,
+      "text": "so you can see see provider is required"
+    },
+    {
+      "start": 450.8,
+      "duration": 3.04,
+      "text": "so we need to add this provider here and"
+    },
+    {
+      "start": 452.44,
+      "duration": 3.68,
+      "text": "the value for provider could be either"
+    },
+    {
+      "start": 453.84,
+      "duration": 5.0,
+      "text": "dockerhub or Google so I'm going to name"
+    },
+    {
+      "start": 456.12,
+      "duration": 4.56,
+      "text": "it as dockerhub okay now let's apply"
+    },
+    {
+      "start": 458.84,
+      "duration": 3.039,
+      "text": "this and you can see the twin gate"
+    },
+    {
+      "start": 460.68,
+      "duration": 2.84,
+      "text": "connector is now running which is my"
+    },
+    {
+      "start": 461.879,
+      "duration": 3.28,
+      "text": "connector here and we can also confirm"
+    },
+    {
+      "start": 463.52,
+      "duration": 3.56,
+      "text": "by refreshing this page inside our"
+    },
+    {
+      "start": 465.159,
+      "duration": 4.44,
+      "text": "remote Network we should be having a"
+    },
+    {
+      "start": 467.08,
+      "duration": 5.079,
+      "text": "twin gate connector ready next step is"
+    },
+    {
+      "start": 469.599,
+      "duration": 4.241,
+      "text": "to add an engine XP inside the resource"
+    },
+    {
+      "start": 472.159,
+      "duration": 3.48,
+      "text": "here and for that we are going to be"
+    },
+    {
+      "start": 473.84,
+      "duration": 3.359,
+      "text": "using the twin gate resource manifest so"
+    },
+    {
+      "start": 475.639,
+      "duration": 3.081,
+      "text": "I'm going to copy this manifest here I"
+    },
+    {
+      "start": 477.199,
+      "duration": 2.801,
+      "text": "will make changes to this manifest so"
+    },
+    {
+      "start": 478.72,
+      "duration": 2.72,
+      "text": "name it enginex"
+    },
+    {
+      "start": 480.0,
+      "duration": 3.8,
+      "text": "okay so we have the twin gate resource"
+    },
+    {
+      "start": 481.44,
+      "duration": 3.8,
+      "text": "manifest created let's save it and apply"
+    },
+    {
+      "start": 483.8,
+      "duration": 3.28,
+      "text": "so you can see now twin gate resource is"
+    },
+    {
+      "start": 485.24,
+      "duration": 4.04,
+      "text": "created and we can also see it here"
+    },
+    {
+      "start": 487.08,
+      "duration": 4.32,
+      "text": "inside our resources section updated"
+    },
+    {
+      "start": 489.28,
+      "duration": 4.0,
+      "text": "just now so far we have everything ready"
+    },
+    {
+      "start": 491.4,
+      "duration": 3.479,
+      "text": "all we need to do is provide access by"
+    },
+    {
+      "start": 493.28,
+      "duration": 3.4,
+      "text": "using the twin gate resource access so"
+    },
+    {
+      "start": 494.879,
+      "duration": 3.561,
+      "text": "I'm going to copy this manifest again in"
+    },
+    {
+      "start": 496.68,
+      "duration": 3.359,
+      "text": "this twin gate resource access manifest"
+    },
+    {
+      "start": 498.44,
+      "duration": 3.52,
+      "text": "we need to provide the principal ID and"
+    },
+    {
+      "start": 500.039,
+      "duration": 3.28,
+      "text": "the security policy ID the security"
+    },
+    {
+      "start": 501.96,
+      "duration": 2.959,
+      "text": "policy ID is something that you can get"
+    },
+    {
+      "start": 503.319,
+      "duration": 3.28,
+      "text": "from the Twin gate dashboard so click on"
+    },
+    {
+      "start": 504.919,
+      "duration": 3.56,
+      "text": "policies and depending on what policy"
+    },
+    {
+      "start": 506.599,
+      "duration": 3.361,
+      "text": "you want to use you need to click on it"
+    },
+    {
+      "start": 508.479,
+      "duration": 3.641,
+      "text": "this is your policy ID"
+    },
+    {
+      "start": 509.96,
+      "duration": 3.8,
+      "text": "paste it here and then also change your"
+    },
+    {
+      "start": 512.12,
+      "duration": 3.359,
+      "text": "principal ID the principal ID is going"
+    },
+    {
+      "start": 513.76,
+      "duration": 3.199,
+      "text": "to be the group to whom you want to"
+    },
+    {
+      "start": 515.479,
+      "duration": 3.161,
+      "text": "provide access so I want to provide"
+    },
+    {
+      "start": 516.959,
+      "duration": 4.88,
+      "text": "access to my admins I'm going to click"
+    },
+    {
+      "start": 518.64,
+      "duration": 5.84,
+      "text": "on admins and then copy this ID here"
+    },
+    {
+      "start": 521.839,
+      "duration": 5.12,
+      "text": "okay let's save this"
+    },
+    {
+      "start": 524.48,
+      "duration": 4.799,
+      "text": "apply Let's test this out to see if our"
+    },
+    {
+      "start": 526.959,
+      "duration": 4.681,
+      "text": "enginex application is being accessed by"
+    },
+    {
+      "start": 529.279,
+      "duration": 4.0,
+      "text": "everyone or only by our admin so I'm"
+    },
+    {
+      "start": 531.64,
+      "duration": 3.68,
+      "text": "going to copy this allias here in my"
+    },
+    {
+      "start": 533.279,
+      "duration": 3.601,
+      "text": "browser I'm going to space this and see"
+    },
+    {
+      "start": 535.32,
+      "duration": 3.04,
+      "text": "if it can be accessed by everyone on the"
+    },
+    {
+      "start": 536.88,
+      "duration": 3.16,
+      "text": "internet you can see it's not being"
+    },
+    {
+      "start": 538.36,
+      "duration": 3.2,
+      "text": "accessed by the public internet"
+    },
+    {
+      "start": 540.04,
+      "duration": 3.16,
+      "text": "I'm going to be using my tablet and"
+    },
+    {
+      "start": 541.56,
+      "duration": 3.399,
+      "text": "connect to my twin gate Network to"
+    },
+    {
+      "start": 543.2,
+      "duration": 3.72,
+      "text": "confirm that our enginex application is"
+    },
+    {
+      "start": 544.959,
+      "duration": 4.081,
+      "text": "only accessed by admins you can see the"
+    },
+    {
+      "start": 546.92,
+      "duration": 3.479,
+      "text": "resource which is engin x.l and when I"
+    },
+    {
+      "start": 549.04,
+      "duration": 3.359,
+      "text": "click on this it's asking me to"
+    },
+    {
+      "start": 550.399,
+      "duration": 3.68,
+      "text": "authenticate once I'm authenticated and"
+    },
+    {
+      "start": 552.399,
+      "duration": 3.481,
+      "text": "it is confirmed that I belong to the"
+    },
+    {
+      "start": 554.079,
+      "duration": 5.0,
+      "text": "admins group you can see I'm able to"
+    },
+    {
+      "start": 555.88,
+      "duration": 4.92,
+      "text": "access nx. loal amazing right this is"
+    },
+    {
+      "start": 559.079,
+      "duration": 3.641,
+      "text": "how you can use tools like twin gate"
+    },
+    {
+      "start": 560.8,
+      "duration": 3.76,
+      "text": "which follows zero trust model to"
+    },
+    {
+      "start": 562.72,
+      "duration": 4.32,
+      "text": "provide access to your applications"
+    },
+    {
+      "start": 564.56,
+      "duration": 4.0,
+      "text": "based on roles make sure to try out twin"
+    },
+    {
+      "start": 567.04,
+      "duration": 3.479,
+      "text": "gate and secure your applications the"
+    },
+    {
+      "start": 568.56,
+      "duration": 3.719,
+      "text": "link is in description coming back the"
+    },
+    {
+      "start": 570.519,
+      "duration": 4.401,
+      "text": "most important protocol on the Internet"
+    },
+    {
+      "start": 572.279,
+      "duration": 5.0,
+      "text": "is DNS protocol DNS stands for domain"
+    },
+    {
+      "start": 574.92,
+      "duration": 4.84,
+      "text": "name system and it translates domain"
+    },
+    {
+      "start": 577.279,
+      "duration": 4.56,
+      "text": "names into IP addresses enabling users"
+    },
+    {
+      "start": 579.76,
+      "duration": 4.68,
+      "text": "and applications to locate Services"
+    },
+    {
+      "start": 581.839,
+      "duration": 4.56,
+      "text": "efficiently in devops DNS is used in"
+    },
+    {
+      "start": 584.44,
+      "duration": 3.32,
+      "text": "service Discovery for kubernetes"
+    },
+    {
+      "start": 586.399,
+      "duration": 3.321,
+      "text": "allowing internal services to"
+    },
+    {
+      "start": 587.76,
+      "duration": 4.56,
+      "text": "communicate using domain names instead"
+    },
+    {
+      "start": 589.72,
+      "duration": 4.96,
+      "text": "of IP addresses also Cloud platforms"
+    },
+    {
+      "start": 592.32,
+      "duration": 4.519,
+      "text": "like AWS and Google Cloud have their own"
+    },
+    {
+      "start": 594.68,
+      "duration": 5.04,
+      "text": "DNS services for managing domain names"
+    },
+    {
+      "start": 596.839,
+      "duration": 4.641,
+      "text": "and traffic routing next is am QP"
+    },
+    {
+      "start": 599.72,
+      "duration": 3.76,
+      "text": "messaging protocol which stands for"
+    },
+    {
+      "start": 601.48,
+      "duration": 3.919,
+      "text": "advanced message queuing protocol"
+    },
+    {
+      "start": 603.48,
+      "duration": 4.12,
+      "text": "designed for asynchronous communication"
+    },
+    {
+      "start": 605.399,
+      "duration": 4.521,
+      "text": "between distributed applications in"
+    },
+    {
+      "start": 607.6,
+      "duration": 4.28,
+      "text": "devops amqp is widely used in message"
+    },
+    {
+      "start": 609.92,
+      "duration": 4.12,
+      "text": "Brokers like rabbit mq for handling"
+    },
+    {
+      "start": 611.88,
+      "duration": 4.24,
+      "text": "event driven workflows in cicd pipelines"
+    },
+    {
+      "start": 614.04,
+      "duration": 4.32,
+      "text": "and microservices architecture the last"
+    },
+    {
+      "start": 616.12,
+      "duration": 4.48,
+      "text": "two Protocols of this video are based on"
+    },
+    {
+      "start": 618.36,
+      "duration": 4.159,
+      "text": "observability responsible for logging"
+    },
+    {
+      "start": 620.6,
+      "duration": 3.919,
+      "text": "and monitoring of your application the"
+    },
+    {
+      "start": 622.519,
+      "duration": 4.0,
+      "text": "first is CIS log which stands for system"
+    },
+    {
+      "start": 624.519,
+      "duration": 3.681,
+      "text": "logging protocol and it is used for"
+    },
+    {
+      "start": 626.519,
+      "duration": 3.681,
+      "text": "collecting and forwarding logs from"
+    },
+    {
+      "start": 628.2,
+      "duration": 4.96,
+      "text": "system processes applications and"
+    },
+    {
+      "start": 630.2,
+      "duration": 4.759,
+      "text": "network devices in devops Cy log is"
+    },
+    {
+      "start": 633.16,
+      "duration": 4.56,
+      "text": "widely used in logging and monitoring"
+    },
+    {
+      "start": 634.959,
+      "duration": 5.081,
+      "text": "tools such as elk stack flu andd and"
+    },
+    {
+      "start": 637.72,
+      "duration": 4.4,
+      "text": "Splunk to aggregate logs for"
+    },
+    {
+      "start": 640.04,
+      "duration": 4.599,
+      "text": "troubleshooting also Cloud providers"
+    },
+    {
+      "start": 642.12,
+      "duration": 5.08,
+      "text": "like AWS and gcp use CIS log based"
+    },
+    {
+      "start": 644.639,
+      "duration": 4.841,
+      "text": "solutions for log management the last"
+    },
+    {
+      "start": 647.2,
+      "duration": 4.24,
+      "text": "protocol of this video is SNMP which"
+    },
+    {
+      "start": 649.48,
+      "duration": 4.12,
+      "text": "stands for simple Network management"
+    },
+    {
+      "start": 651.44,
+      "duration": 4.0,
+      "text": "protocol and it is used for monior and"
+    },
+    {
+      "start": 653.6,
+      "duration": 5.039,
+      "text": "managing network devices like servers"
+    },
+    {
+      "start": 655.44,
+      "duration": 5.76,
+      "text": "switches and routers in devops SNMP is"
+    },
+    {
+      "start": 658.639,
+      "duration": 4.88,
+      "text": "used in monitor tools such as naio zavix"
+    },
+    {
+      "start": 661.2,
+      "duration": 5.16,
+      "text": "and Prometheus to collect system metrics"
+    },
+    {
+      "start": 663.519,
+      "duration": 5.401,
+      "text": "from servers and network devices also"
+    },
+    {
+      "start": 666.36,
+      "duration": 5.08,
+      "text": "Cloud networking Solutions rely on SNMP"
+    },
+    {
+      "start": 668.92,
+      "duration": 4.479,
+      "text": "to monitor infrastructure help so this"
+    },
+    {
+      "start": 671.44,
+      "duration": 4.32,
+      "text": "was our video on how different Protocols"
+    },
+    {
+      "start": 673.399,
+      "duration": 4.321,
+      "text": "are used in devops I hope now you have"
+    },
+    {
+      "start": 675.76,
+      "duration": 3.44,
+      "text": "some idea of how different devops tools"
+    },
+    {
+      "start": 677.72,
+      "duration": 3.239,
+      "text": "use these protocols and how they"
+    },
+    {
+      "start": 679.2,
+      "duration": 3.639,
+      "text": "actually function if you have any"
+    },
+    {
+      "start": 680.959,
+      "duration": 3.521,
+      "text": "questions any doubt do let me know in"
+    },
+    {
+      "start": 682.839,
+      "duration": 3.361,
+      "text": "the comment section and also make sure"
+    },
+    {
+      "start": 684.48,
+      "duration": 3.44,
+      "text": "to try out twin gate the link is in"
+    },
+    {
+      "start": 686.2,
+      "duration": 4.16,
+      "text": "description thank you and have a good"
+    },
+    {
+      "start": 687.92,
+      "duration": 2.44,
+      "text": "day"
+    }
+  ]
+}

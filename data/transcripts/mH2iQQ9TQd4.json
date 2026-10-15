@@ -1,0 +1,1606 @@
+{
+  "video": {
+    "id": "mH2iQQ9TQd4",
+    "title": "Day 1- FREE AWS Cloud Course from Scratch | Complete AWS Playlist 2024",
+    "url": "https://www.youtube.com/watch?v=mH2iQQ9TQd4",
+    "duration": 715,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.32,
+      "duration": 4.72,
+      "text": "hey everyone and welcome to this brand"
+    },
+    {
+      "start": 2.12,
+      "duration": 5.719,
+      "text": "new AWS course in this course I will"
+    },
+    {
+      "start": 5.04,
+      "duration": 5.32,
+      "text": "teach you Amazon web services or AWS"
+    },
+    {
+      "start": 7.839,
+      "duration": 4.241,
+      "text": "Cloud right from the beginning so you"
+    },
+    {
+      "start": 10.36,
+      "duration": 4.6,
+      "text": "don't need any prior knowledge or"
+    },
+    {
+      "start": 12.08,
+      "duration": 4.44,
+      "text": "prerequisites to start this course now"
+    },
+    {
+      "start": 14.96,
+      "duration": 3.319,
+      "text": "this is going to be a complete playlist"
+    },
+    {
+      "start": 16.52,
+      "duration": 3.96,
+      "text": "for the AWS cloud and I will be"
+    },
+    {
+      "start": 18.279,
+      "duration": 5.121,
+      "text": "uploading series of videos explaining"
+    },
+    {
+      "start": 20.48,
+      "duration": 4.4,
+      "text": "every AWS service with Hands-On practice"
+    },
+    {
+      "start": 23.4,
+      "duration": 3.639,
+      "text": "so make sure you follow this playlist"
+    },
+    {
+      "start": 24.88,
+      "duration": 4.08,
+      "text": "till the end this is the first video of"
+    },
+    {
+      "start": 27.039,
+      "duration": 4.0,
+      "text": "the playlist where I'm going to explain"
+    },
+    {
+      "start": 28.96,
+      "duration": 3.84,
+      "text": "what can you expect from this course"
+    },
+    {
+      "start": 31.039,
+      "duration": 2.881,
+      "text": "what services are we going to learn what"
+    },
+    {
+      "start": 32.8,
+      "duration": 3.88,
+      "text": "are different projects that you're going"
+    },
+    {
+      "start": 33.92,
+      "duration": 4.72,
+      "text": "to do and why you should do this course"
+    },
+    {
+      "start": 36.68,
+      "duration": 3.719,
+      "text": "so without wasting any time let's get"
+    },
+    {
+      "start": 38.64,
+      "duration": 3.599,
+      "text": "into it but if you're new to this"
+    },
+    {
+      "start": 40.399,
+      "duration": 4.561,
+      "text": "Channel please subscribe to Cloud Cham"
+    },
+    {
+      "start": 42.239,
+      "duration": 5.121,
+      "text": "and like this video let's go so why"
+    },
+    {
+      "start": 44.96,
+      "duration": 4.84,
+      "text": "should you learn AWS if I tell you my"
+    },
+    {
+      "start": 47.36,
+      "duration": 4.56,
+      "text": "story I started learning AWS when I was"
+    },
+    {
+      "start": 49.8,
+      "duration": 4.36,
+      "text": "in my college and learning AWS has"
+    },
+    {
+      "start": 51.92,
+      "duration": 4.639,
+      "text": "completely changed my life I got my"
+    },
+    {
+      "start": 54.16,
+      "duration": 5.16,
+      "text": "first internship as a devops engineer"
+    },
+    {
+      "start": 56.559,
+      "duration": 5.401,
+      "text": "because of AWS certification and now I"
+    },
+    {
+      "start": 59.32,
+      "duration": 5.159,
+      "text": "work as a Dev freelancer full-time using"
+    },
+    {
+      "start": 61.96,
+      "duration": 5.4,
+      "text": "my AWS skills in fact my first"
+    },
+    {
+      "start": 64.479,
+      "duration": 5.041,
+      "text": "freelancing gig was also on AWS so"
+    },
+    {
+      "start": 67.36,
+      "duration": 4.72,
+      "text": "learning AWS will help you get your job"
+    },
+    {
+      "start": 69.52,
+      "duration": 4.279,
+      "text": "or promotions you can learn new skills"
+    },
+    {
+      "start": 72.08,
+      "duration": 4.679,
+      "text": "or maybe you can start a freelancing"
+    },
+    {
+      "start": 73.799,
+      "duration": 5.721,
+      "text": "career like me now the question is why"
+    },
+    {
+      "start": 76.759,
+      "duration": 4.68,
+      "text": "should you learn AWS from this playlist"
+    },
+    {
+      "start": 79.52,
+      "duration": 4.599,
+      "text": "because this playlist is Hands-On"
+    },
+    {
+      "start": 81.439,
+      "duration": 4.561,
+      "text": "focused I believe you learn things only"
+    },
+    {
+      "start": 84.119,
+      "duration": 4.441,
+      "text": "when you do it so we are going to be"
+    },
+    {
+      "start": 86.0,
+      "duration": 4.52,
+      "text": "learning AWS Services doing it on the"
+    },
+    {
+      "start": 88.56,
+      "duration": 4.44,
+      "text": "console and I will re request you to"
+    },
+    {
+      "start": 90.52,
+      "duration": 4.48,
+      "text": "follow along with me so watch me while"
+    },
+    {
+      "start": 93.0,
+      "duration": 4.88,
+      "text": "doing it and also do it in your AWS"
+    },
+    {
+      "start": 95.0,
+      "duration": 5.24,
+      "text": "account next I will be giving you real"
+    },
+    {
+      "start": 97.88,
+      "duration": 4.76,
+      "text": "world examples I have been doing AWS and"
+    },
+    {
+      "start": 100.24,
+      "duration": 4.4,
+      "text": "devops since four years and I have"
+    },
+    {
+      "start": 102.64,
+      "duration": 4.04,
+      "text": "worked on multiple projects so why we"
+    },
+    {
+      "start": 104.64,
+      "duration": 3.519,
+      "text": "come across different AWS Services I"
+    },
+    {
+      "start": 106.68,
+      "duration": 3.68,
+      "text": "will be providing you with real world"
+    },
+    {
+      "start": 108.159,
+      "duration": 5.28,
+      "text": "examples to help you understand how you"
+    },
+    {
+      "start": 110.36,
+      "duration": 4.399,
+      "text": "will be using that service in your job"
+    },
+    {
+      "start": 113.439,
+      "duration": 3.121,
+      "text": "throughout this playlist we will be"
+    },
+    {
+      "start": 114.759,
+      "duration": 3.72,
+      "text": "doing projects I will provide you with"
+    },
+    {
+      "start": 116.56,
+      "duration": 4.4,
+      "text": "notes and different resources that can"
+    },
+    {
+      "start": 118.479,
+      "duration": 4.481,
+      "text": "help you learn things more more easily"
+    },
+    {
+      "start": 120.96,
+      "duration": 5.36,
+      "text": "and lastly I can teach you in a way"
+    },
+    {
+      "start": 122.96,
+      "duration": 4.6,
+      "text": "where you will say AWS is easy so now"
+    },
+    {
+      "start": 126.32,
+      "duration": 3.719,
+      "text": "that you know why you should be learning"
+    },
+    {
+      "start": 127.56,
+      "duration": 3.8,
+      "text": "AWS from this playlist let's see what"
+    },
+    {
+      "start": 130.039,
+      "duration": 4.28,
+      "text": "are the different Services you will"
+    },
+    {
+      "start": 131.36,
+      "duration": 5.0,
+      "text": "learn from this playlist here is the r"
+    },
+    {
+      "start": 134.319,
+      "duration": 3.92,
+      "text": "AWS course outline to help you"
+    },
+    {
+      "start": 136.36,
+      "duration": 5.68,
+      "text": "understand what you can expect from this"
+    },
+    {
+      "start": 138.239,
+      "duration": 5.241,
+      "text": "AWS playlist so I have this PDF created"
+    },
+    {
+      "start": 142.04,
+      "duration": 3.32,
+      "text": "which includes all the services we are"
+    },
+    {
+      "start": 143.48,
+      "duration": 4.32,
+      "text": "going to be covering in this playlist"
+    },
+    {
+      "start": 145.36,
+      "duration": 4.2,
+      "text": "and in case you want this course outline"
+    },
+    {
+      "start": 147.8,
+      "duration": 4.0,
+      "text": "let me know in the comment section"
+    },
+    {
+      "start": 149.56,
+      "duration": 5.0,
+      "text": "comment down AWS course and I will share"
+    },
+    {
+      "start": 151.8,
+      "duration": 5.36,
+      "text": "this course outline as a PDF on LinkedIn"
+    },
+    {
+      "start": 154.56,
+      "duration": 5.0,
+      "text": "or in the video description you can also"
+    },
+    {
+      "start": 157.16,
+      "duration": 4.04,
+      "text": "expect similar kind of notes for every"
+    },
+    {
+      "start": 159.56,
+      "duration": 3.64,
+      "text": "service that we will be doing in this"
+    },
+    {
+      "start": 161.2,
+      "duration": 4.36,
+      "text": "playlist so I will be sharing you notes"
+    },
+    {
+      "start": 163.2,
+      "duration": 5.039,
+      "text": "as well now let me explain this course"
+    },
+    {
+      "start": 165.56,
+      "duration": 4.88,
+      "text": "outline so to learn AWS Cloud we will"
+    },
+    {
+      "start": 168.239,
+      "duration": 3.801,
+      "text": "start with understanding what is cloud"
+    },
+    {
+      "start": 170.44,
+      "duration": 4.159,
+      "text": "computing we will look at different"
+    },
+    {
+      "start": 172.04,
+      "duration": 4.88,
+      "text": "types of clouds different Cloud models"
+    },
+    {
+      "start": 174.599,
+      "duration": 5.321,
+      "text": "and all of that in the first video to"
+    },
+    {
+      "start": 176.92,
+      "duration": 4.88,
+      "text": "help you get started with the cloud in"
+    },
+    {
+      "start": 179.92,
+      "duration": 4.239,
+      "text": "to learn AWS Cloud we will start with"
+    },
+    {
+      "start": 181.8,
+      "duration": 4.24,
+      "text": "learning what is cloud computing we will"
+    },
+    {
+      "start": 184.159,
+      "duration": 3.921,
+      "text": "look at different types of clouds what"
+    },
+    {
+      "start": 186.04,
+      "duration": 4.44,
+      "text": "are different cloud moders in this"
+    },
+    {
+      "start": 188.08,
+      "duration": 5.12,
+      "text": "particular domain moving on we will then"
+    },
+    {
+      "start": 190.48,
+      "duration": 4.88,
+      "text": "set up an AWS Cloud for you because you"
+    },
+    {
+      "start": 193.2,
+      "duration": 4.84,
+      "text": "cannot learn AWS Cloud without actually"
+    },
+    {
+      "start": 195.36,
+      "duration": 4.32,
+      "text": "doing things on the AWS account so you"
+    },
+    {
+      "start": 198.04,
+      "duration": 3.44,
+      "text": "will need to have an AWS account for"
+    },
+    {
+      "start": 199.68,
+      "duration": 4.72,
+      "text": "yourself and I will show you how to"
+    },
+    {
+      "start": 201.48,
+      "duration": 5.119,
+      "text": "create an AWS free tier account in this"
+    },
+    {
+      "start": 204.4,
+      "duration": 4.52,
+      "text": "video once you have the AWS account"
+    },
+    {
+      "start": 206.599,
+      "duration": 3.681,
+      "text": "created we will then go ahead with"
+    },
+    {
+      "start": 208.92,
+      "duration": 3.76,
+      "text": "understanding the aw"
+    },
+    {
+      "start": 210.28,
+      "duration": 4.4,
+      "text": "Global infrastructure why do you need"
+    },
+    {
+      "start": 212.68,
+      "duration": 3.559,
+      "text": "this because when you start with a"
+    },
+    {
+      "start": 214.68,
+      "duration": 3.36,
+      "text": "project you first need to choose the"
+    },
+    {
+      "start": 216.239,
+      "duration": 3.36,
+      "text": "region where you want to deploy this"
+    },
+    {
+      "start": 218.04,
+      "duration": 3.88,
+      "text": "project so you need to understand what"
+    },
+    {
+      "start": 219.599,
+      "duration": 4.881,
+      "text": "are regions what are availability zones"
+    },
+    {
+      "start": 221.92,
+      "duration": 5.0,
+      "text": "what is Edge location so the AWS Global"
+    },
+    {
+      "start": 224.48,
+      "duration": 4.839,
+      "text": "infrastructure will be explained in this"
+    },
+    {
+      "start": 226.92,
+      "duration": 4.12,
+      "text": "particular video we Mo on once you"
+    },
+    {
+      "start": 229.319,
+      "duration": 3.56,
+      "text": "understand what are regions and EES we"
+    },
+    {
+      "start": 231.04,
+      "duration": 4.44,
+      "text": "will start with our first service which"
+    },
+    {
+      "start": 232.879,
+      "duration": 5.121,
+      "text": "is I am or identity and access"
+    },
+    {
+      "start": 235.48,
+      "duration": 5.28,
+      "text": "management in this video I will explain"
+    },
+    {
+      "start": 238.0,
+      "duration": 5.599,
+      "text": "how we will use IM am in your devops"
+    },
+    {
+      "start": 240.76,
+      "duration": 4.88,
+      "text": "works most how to create IM users how to"
+    },
+    {
+      "start": 243.599,
+      "duration": 4.92,
+      "text": "create rules what are permissions how do"
+    },
+    {
+      "start": 245.64,
+      "duration": 5.56,
+      "text": "you attach them and everything has on in"
+    },
+    {
+      "start": 248.519,
+      "duration": 4.44,
+      "text": "this video Once you understand I we"
+    },
+    {
+      "start": 251.2,
+      "duration": 4.8,
+      "text": "going to be going ahead with learning"
+    },
+    {
+      "start": 252.959,
+      "duration": 6.041,
+      "text": "what is ews CLI and how do you use it so"
+    },
+    {
+      "start": 256.0,
+      "duration": 5.32,
+      "text": "AWS C stands for AWS command L interface"
+    },
+    {
+      "start": 259.0,
+      "duration": 5.36,
+      "text": "tool and I will show you how to use AWS"
+    },
+    {
+      "start": 261.32,
+      "duration": 5.12,
+      "text": "C what things you can do with AWS C how"
+    },
+    {
+      "start": 264.36,
+      "duration": 4.08,
+      "text": "do you connect yours account with your"
+    },
+    {
+      "start": 266.44,
+      "duration": 4.16,
+      "text": "terminal or your command line interface"
+    },
+    {
+      "start": 268.44,
+      "duration": 4.8,
+      "text": "how to create access keys everything"
+    },
+    {
+      "start": 270.6,
+      "duration": 5.48,
+      "text": "handson in this domain I will also show"
+    },
+    {
+      "start": 273.24,
+      "duration": 4.84,
+      "text": "you what is a sdks and how can you use"
+    },
+    {
+      "start": 276.08,
+      "duration": 5.679,
+      "text": "programming languages like python"
+    },
+    {
+      "start": 278.08,
+      "duration": 6.679,
+      "text": "JavaScript Etc to create services in AWS"
+    },
+    {
+      "start": 281.759,
+      "duration": 5.921,
+      "text": "using AWS sdks you will also be using"
+    },
+    {
+      "start": 284.759,
+      "duration": 4.28,
+      "text": "AWS CLI for your devop tools like"
+    },
+    {
+      "start": 287.68,
+      "duration": 4.16,
+      "text": "terraform"
+    },
+    {
+      "start": 289.039,
+      "duration": 5.281,
+      "text": "genkins gitlab everything so you need to"
+    },
+    {
+      "start": 291.84,
+      "duration": 4.0,
+      "text": "understand how to create AWS keys and"
+    },
+    {
+      "start": 294.32,
+      "duration": 3.08,
+      "text": "how to connect them with your AWS"
+    },
+    {
+      "start": 295.84,
+      "duration": 4.079,
+      "text": "account so this is what I will be"
+    },
+    {
+      "start": 297.4,
+      "duration": 3.92,
+      "text": "teaching you in this particular video"
+    },
+    {
+      "start": 299.919,
+      "duration": 3.601,
+      "text": "all of these videos are going to be"
+    },
+    {
+      "start": 301.32,
+      "duration": 4.04,
+      "text": "focused on devops and I will be sharing"
+    },
+    {
+      "start": 303.52,
+      "duration": 4.28,
+      "text": "you my experiences throughout the"
+    },
+    {
+      "start": 305.36,
+      "duration": 5.04,
+      "text": "playlist so make sure you follow them"
+    },
+    {
+      "start": 307.8,
+      "duration": 3.8,
+      "text": "completely till the end moving on once"
+    },
+    {
+      "start": 310.4,
+      "duration": 3.84,
+      "text": "you understand this we going to be"
+    },
+    {
+      "start": 311.6,
+      "duration": 5.56,
+      "text": "learning a very popular AWS tool or AWS"
+    },
+    {
+      "start": 314.24,
+      "duration": 5.48,
+      "text": "service which is ec2 Amazon elastic"
+    },
+    {
+      "start": 317.16,
+      "duration": 4.56,
+      "text": "compute cloud in this service you create"
+    },
+    {
+      "start": 319.72,
+      "duration": 4.72,
+      "text": "servers so I will show you how you"
+    },
+    {
+      "start": 321.72,
+      "duration": 5.039,
+      "text": "create Linux servers inro servers Mac"
+    },
+    {
+      "start": 324.44,
+      "duration": 4.08,
+      "text": "servers how do you connect with them and"
+    },
+    {
+      "start": 326.759,
+      "duration": 3.44,
+      "text": "also how do you install different"
+    },
+    {
+      "start": 328.52,
+      "duration": 5.04,
+      "text": "databases web server"
+    },
+    {
+      "start": 330.199,
+      "duration": 5.961,
+      "text": "open devop tools like genkins Pras dra"
+    },
+    {
+      "start": 333.56,
+      "duration": 4.919,
+      "text": "all these ec2 instances I will also be"
+    },
+    {
+      "start": 336.16,
+      "duration": 4.12,
+      "text": "explaining you different ec2 features or"
+    },
+    {
+      "start": 338.479,
+      "duration": 4.72,
+      "text": "also what is Security Group what is"
+    },
+    {
+      "start": 340.28,
+      "duration": 5.6,
+      "text": "elastic IPS all of them in this"
+    },
+    {
+      "start": 343.199,
+      "duration": 5.081,
+      "text": "particular D once you do this video you"
+    },
+    {
+      "start": 345.88,
+      "duration": 4.68,
+      "text": "will have real doubts real questions on"
+    },
+    {
+      "start": 348.28,
+      "duration": 4.44,
+      "text": "E2 so this is what we are covering in"
+    },
+    {
+      "start": 350.56,
+      "duration": 4.0,
+      "text": "this particular module moving on we will"
+    },
+    {
+      "start": 352.72,
+      "duration": 4.12,
+      "text": "understand what is high avilability and"
+    },
+    {
+      "start": 354.56,
+      "duration": 4.04,
+      "text": "scalability also as elasticity in the"
+    },
+    {
+      "start": 356.84,
+      "duration": 3.84,
+      "text": "cloud so we will learn the concept of"
+    },
+    {
+      "start": 358.6,
+      "duration": 5.599,
+      "text": "high availability elas elasticity why do"
+    },
+    {
+      "start": 360.68,
+      "duration": 5.079,
+      "text": "we need it what benefits do we get and"
+    },
+    {
+      "start": 364.199,
+      "duration": 4.521,
+      "text": "while doing that we will also learn"
+    },
+    {
+      "start": 365.759,
+      "duration": 5.0,
+      "text": "elastic loan balancing service which is"
+    },
+    {
+      "start": 368.72,
+      "duration": 3.599,
+      "text": "L balancers in the cloud and also Autos"
+    },
+    {
+      "start": 370.759,
+      "duration": 3.681,
+      "text": "scanning Group which lets you create"
+    },
+    {
+      "start": 372.319,
+      "duration": 4.081,
+      "text": "servers automatically depending on"
+    },
+    {
+      "start": 374.44,
+      "duration": 3.599,
+      "text": "particular conditions so this is what we"
+    },
+    {
+      "start": 376.4,
+      "duration": 3.4,
+      "text": "are going to be covering in this higher"
+    },
+    {
+      "start": 378.039,
+      "duration": 4.241,
+      "text": "avability and elasticity"
+    },
+    {
+      "start": 379.8,
+      "duration": 4.48,
+      "text": "module once you understand this we will"
+    },
+    {
+      "start": 382.28,
+      "duration": 4.72,
+      "text": "move on with learning the storage"
+    },
+    {
+      "start": 384.28,
+      "duration": 5.319,
+      "text": "service in the cloud which is Amazon S3"
+    },
+    {
+      "start": 387.0,
+      "duration": 4.599,
+      "text": "Amazon S3 stands for simple storage Serv"
+    },
+    {
+      "start": 389.599,
+      "duration": 6.201,
+      "text": "service and we use it to store all kind"
+    },
+    {
+      "start": 391.599,
+      "duration": 6.401,
+      "text": "of data which could be PDF images songs"
+    },
+    {
+      "start": 395.8,
+      "duration": 4.28,
+      "text": "anything we also use S3 to store our"
+    },
+    {
+      "start": 398.0,
+      "duration": 4.12,
+      "text": "terraform remote State backend so in"
+    },
+    {
+      "start": 400.08,
+      "duration": 4.08,
+      "text": "this module I will show you handson on"
+    },
+    {
+      "start": 402.12,
+      "duration": 4.16,
+      "text": "how to create S3 buckets how do you"
+    },
+    {
+      "start": 404.16,
+      "duration": 4.24,
+      "text": "manage access to your S3 buckets how do"
+    },
+    {
+      "start": 406.28,
+      "duration": 4.52,
+      "text": "you set up S3 starting website hosting"
+    },
+    {
+      "start": 408.4,
+      "duration": 5.16,
+      "text": "versional all different features about"
+    },
+    {
+      "start": 410.8,
+      "duration": 5.119,
+      "text": "S3 one more thing to note while we do"
+    },
+    {
+      "start": 413.56,
+      "duration": 4.68,
+      "text": "this sessions or why we do this videos I"
+    },
+    {
+      "start": 415.919,
+      "duration": 4.72,
+      "text": "will be giving you tips or questions"
+    },
+    {
+      "start": 418.24,
+      "duration": 4.56,
+      "text": "that might appear in your certification"
+    },
+    {
+      "start": 420.639,
+      "duration": 4.521,
+      "text": "so these videos or this playlist can"
+    },
+    {
+      "start": 422.8,
+      "duration": 5.119,
+      "text": "help you learn AWS can also help you get"
+    },
+    {
+      "start": 425.16,
+      "duration": 6.28,
+      "text": "AWS certifications and also help to get"
+    },
+    {
+      "start": 427.919,
+      "duration": 4.68,
+      "text": "freelancing jobs so now once we cover S3"
+    },
+    {
+      "start": 431.44,
+      "duration": 3.879,
+      "text": "we are going to be moving on with"
+    },
+    {
+      "start": 432.599,
+      "duration": 4.681,
+      "text": "learning VPC or networking in the cloud"
+    },
+    {
+      "start": 435.319,
+      "duration": 4.641,
+      "text": "this is very very important because when"
+    },
+    {
+      "start": 437.28,
+      "duration": 4.72,
+      "text": "you deploy S3 buckets or ec2 instances"
+    },
+    {
+      "start": 439.96,
+      "duration": 4.239,
+      "text": "you need to select which VPC do you want"
+    },
+    {
+      "start": 442.0,
+      "duration": 3.879,
+      "text": "to launch this ec2 instance in what"
+    },
+    {
+      "start": 444.199,
+      "duration": 3.56,
+      "text": "should be the satellite so you need to"
+    },
+    {
+      "start": 445.879,
+      "duration": 3.521,
+      "text": "have networking in the cloud and I will"
+    },
+    {
+      "start": 447.759,
+      "duration": 3.321,
+      "text": "explain you everything you don't need to"
+    },
+    {
+      "start": 449.4,
+      "duration": 4.04,
+      "text": "have have any prior knowledge I will be"
+    },
+    {
+      "start": 451.08,
+      "duration": 5.2,
+      "text": "explaining IP addresses I will I will be"
+    },
+    {
+      "start": 453.44,
+      "duration": 4.759,
+      "text": "explaining fire ranges what are VPC how"
+    },
+    {
+      "start": 456.28,
+      "duration": 3.479,
+      "text": "do we create them what is sub how do you"
+    },
+    {
+      "start": 458.199,
+      "duration": 3.72,
+      "text": "create them what are rout tables what is"
+    },
+    {
+      "start": 459.759,
+      "duration": 3.961,
+      "text": "internet gateway that Gateway everything"
+    },
+    {
+      "start": 461.919,
+      "duration": 4.24,
+      "text": "is going to be explained in this"
+    },
+    {
+      "start": 463.72,
+      "duration": 4.52,
+      "text": "particular module moving on we going to"
+    },
+    {
+      "start": 466.159,
+      "duration": 4.281,
+      "text": "be learning about databases in the cloud"
+    },
+    {
+      "start": 468.24,
+      "duration": 4.2,
+      "text": "so we are going to be starting with RDS"
+    },
+    {
+      "start": 470.44,
+      "duration": 4.479,
+      "text": "which is rational databases so if you"
+    },
+    {
+      "start": 472.44,
+      "duration": 5.319,
+      "text": "want to create Ys database or post SQL"
+    },
+    {
+      "start": 474.919,
+      "duration": 5.161,
+      "text": "or Oracle databases we will be using RDS"
+    },
+    {
+      "start": 477.759,
+      "duration": 4.88,
+      "text": "for that so I will show you hands on and"
+    },
+    {
+      "start": 480.08,
+      "duration": 5.079,
+      "text": "how to create RDS how is RDS different"
+    },
+    {
+      "start": 482.639,
+      "duration": 4.601,
+      "text": "from ec2 how do you create a database"
+    },
+    {
+      "start": 485.159,
+      "duration": 4.081,
+      "text": "and connect to it to start stor your"
+    },
+    {
+      "start": 487.24,
+      "duration": 4.959,
+      "text": "data inside and I will also show you how"
+    },
+    {
+      "start": 489.24,
+      "duration": 4.32,
+      "text": "do you use I RS to connect ec2 instances"
+    },
+    {
+      "start": 492.199,
+      "duration": 3.601,
+      "text": "with IBS"
+    },
+    {
+      "start": 493.56,
+      "duration": 3.599,
+      "text": "databases moving on the next database"
+    },
+    {
+      "start": 495.8,
+      "duration": 5.079,
+      "text": "service that we going to learn is Dynamo"
+    },
+    {
+      "start": 497.159,
+      "duration": 5.801,
+      "text": "DB so this is RDS is SQL or structured"
+    },
+    {
+      "start": 500.879,
+      "duration": 3.921,
+      "text": "query language whereas Dynamo DB is"
+    },
+    {
+      "start": 502.96,
+      "duration": 5.44,
+      "text": "nonstructured query language on their"
+    },
+    {
+      "start": 504.8,
+      "duration": 5.72,
+      "text": "SQL database so dyp is very very popular"
+    },
+    {
+      "start": 508.4,
+      "duration": 3.999,
+      "text": "and it is used many big companies to"
+    },
+    {
+      "start": 510.52,
+      "duration": 3.879,
+      "text": "store their data and I'm going to show"
+    },
+    {
+      "start": 512.399,
+      "duration": 5.08,
+      "text": "you how to use Dynamo DB how do you"
+    },
+    {
+      "start": 514.399,
+      "duration": 6.0,
+      "text": "create databas tables in Dynamo"
+    },
+    {
+      "start": 517.479,
+      "duration": 5.721,
+      "text": "DB next we will be learning about kuet"
+    },
+    {
+      "start": 520.399,
+      "duration": 4.521,
+      "text": "is a very very popular service or"
+    },
+    {
+      "start": 523.2,
+      "duration": 4.24,
+      "text": "popular tool right now in the domain in"
+    },
+    {
+      "start": 524.92,
+      "duration": 4.28,
+      "text": "the devops domain so I will tell you"
+    },
+    {
+      "start": 527.44,
+      "duration": 4.079,
+      "text": "what is eeks how do you create a eks"
+    },
+    {
+      "start": 529.2,
+      "duration": 4.36,
+      "text": "cluster how do you deploy applications"
+    },
+    {
+      "start": 531.519,
+      "duration": 3.481,
+      "text": "but if you're completely new I can also"
+    },
+    {
+      "start": 533.56,
+      "duration": 3.88,
+      "text": "explain you what a containers what a"
+    },
+    {
+      "start": 535.0,
+      "duration": 4.48,
+      "text": "Docker what is Docker and if you want me"
+    },
+    {
+      "start": 537.44,
+      "duration": 3.16,
+      "text": "to explain you all these videos from"
+    },
+    {
+      "start": 539.48,
+      "duration": 2.88,
+      "text": "scratch you can let me know in the"
+    },
+    {
+      "start": 540.6,
+      "duration": 4.64,
+      "text": "comment section if you have any issues"
+    },
+    {
+      "start": 542.36,
+      "duration": 4.4,
+      "text": "any qu queries any request put down them"
+    },
+    {
+      "start": 545.24,
+      "duration": 3.68,
+      "text": "in your in the comment"
+    },
+    {
+      "start": 546.76,
+      "duration": 3.759,
+      "text": "section moving on once you understand"
+    },
+    {
+      "start": 548.92,
+      "duration": 3.8,
+      "text": "eks and how do you create a cluster we"
+    },
+    {
+      "start": 550.519,
+      "duration": 4.56,
+      "text": "will be looking at another devops"
+    },
+    {
+      "start": 552.72,
+      "duration": 4.96,
+      "text": "principle which is IAC or infrastructure"
+    },
+    {
+      "start": 555.079,
+      "duration": 5.641,
+      "text": "as code using cloud formation so similar"
+    },
+    {
+      "start": 557.68,
+      "duration": 4.96,
+      "text": "to terraform AWS has their own IC tool"
+    },
+    {
+      "start": 560.72,
+      "duration": 4.32,
+      "text": "which is cloud formation and using cloud"
+    },
+    {
+      "start": 562.64,
+      "duration": 4.16,
+      "text": "formation you can create interv Services"
+    },
+    {
+      "start": 565.04,
+      "duration": 4.479,
+      "text": "through the code rather than using"
+    },
+    {
+      "start": 566.8,
+      "duration": 4.36,
+      "text": "console or CLI so I will tell you how"
+    },
+    {
+      "start": 569.519,
+      "duration": 3.76,
+      "text": "use cloud formation and how can you"
+    },
+    {
+      "start": 571.16,
+      "duration": 4.88,
+      "text": "create services using ploud formation in"
+    },
+    {
+      "start": 573.279,
+      "duration": 4.441,
+      "text": "this module here but if you want videos"
+    },
+    {
+      "start": 576.04,
+      "duration": 3.4,
+      "text": "on terraform let me know in the comment"
+    },
+    {
+      "start": 577.72,
+      "duration": 4.239,
+      "text": "section I can also create a playlist"
+    },
+    {
+      "start": 579.44,
+      "duration": 4.88,
+      "text": "similar to AWS for terraform for Docker"
+    },
+    {
+      "start": 581.959,
+      "duration": 3.401,
+      "text": "kubernetes but only if you want it and"
+    },
+    {
+      "start": 584.32,
+      "duration": 3.32,
+      "text": "if you want it let me know in the"
+    },
+    {
+      "start": 585.36,
+      "duration": 4.76,
+      "text": "comment section so moving on after cloud"
+    },
+    {
+      "start": 587.64,
+      "duration": 5.24,
+      "text": "formation I'm going to teach you cicd in"
+    },
+    {
+      "start": 590.12,
+      "duration": 4.36,
+      "text": "AWS so cicd again is a very important"
+    },
+    {
+      "start": 592.88,
+      "duration": 4.44,
+      "text": "thing that any devops engineer should"
+    },
+    {
+      "start": 594.48,
+      "duration": 5.72,
+      "text": "know and AWS has services for it so we"
+    },
+    {
+      "start": 597.32,
+      "duration": 5.36,
+      "text": "we learning about code commit code DE"
+    },
+    {
+      "start": 600.2,
+      "duration": 5.319,
+      "text": "code pipeline moving on we will learn"
+    },
+    {
+      "start": 602.68,
+      "duration": 4.839,
+      "text": "Security Management in AWS using AWS"
+    },
+    {
+      "start": 605.519,
+      "duration": 4.56,
+      "text": "Secrets manager which is used to store"
+    },
+    {
+      "start": 607.519,
+      "duration": 5.281,
+      "text": "your database credential API Keys all"
+    },
+    {
+      "start": 610.079,
+      "duration": 5.561,
+      "text": "your secure data is stored inside AWS"
+    },
+    {
+      "start": 612.8,
+      "duration": 4.599,
+      "text": "secret manager also AWS KMS or key"
+    },
+    {
+      "start": 615.64,
+      "duration": 3.96,
+      "text": "management system which is used for"
+    },
+    {
+      "start": 617.399,
+      "duration": 5.641,
+      "text": "encryption you can use KMS to encrypt"
+    },
+    {
+      "start": 619.6,
+      "duration": 5.479,
+      "text": "your RDS databases your EBS volumes S3"
+    },
+    {
+      "start": 623.04,
+      "duration": 4.96,
+      "text": "buckets so I will also show you how to"
+    },
+    {
+      "start": 625.079,
+      "duration": 4.641,
+      "text": "do that in this model year next thing we"
+    },
+    {
+      "start": 628.0,
+      "duration": 3.88,
+      "text": "to learn is going to be monitoring"
+    },
+    {
+      "start": 629.72,
+      "duration": 3.48,
+      "text": "logging and cost management this is very"
+    },
+    {
+      "start": 631.88,
+      "duration": 3.04,
+      "text": "very important for every devops"
+    },
+    {
+      "start": 633.2,
+      "duration": 3.92,
+      "text": "Engineers to know how to monitor your"
+    },
+    {
+      "start": 634.92,
+      "duration": 3.96,
+      "text": "applications how to check logs how to"
+    },
+    {
+      "start": 637.12,
+      "duration": 3.44,
+      "text": "manage cost and we're going to do that"
+    },
+    {
+      "start": 638.88,
+      "duration": 4.04,
+      "text": "using Amazon cloudwatch which is a"
+    },
+    {
+      "start": 640.56,
+      "duration": 4.399,
+      "text": "monitoring service in AWS Cloud train"
+    },
+    {
+      "start": 642.92,
+      "duration": 3.84,
+      "text": "which is going to track user activity so"
+    },
+    {
+      "start": 644.959,
+      "duration": 4.0,
+      "text": "let's say someone has deleted a server"
+    },
+    {
+      "start": 646.76,
+      "duration": 4.92,
+      "text": "you can check which user has deleted it"
+    },
+    {
+      "start": 648.959,
+      "duration": 4.68,
+      "text": "using Cloud trade you can also manage"
+    },
+    {
+      "start": 651.68,
+      "duration": 4.88,
+      "text": "cost using cost Management Services in"
+    },
+    {
+      "start": 653.639,
+      "duration": 6.0,
+      "text": "AWS and also using AWS budgets so I will"
+    },
+    {
+      "start": 656.56,
+      "duration": 4.56,
+      "text": "explain all of that inside this mod here"
+    },
+    {
+      "start": 659.639,
+      "duration": 3.401,
+      "text": "this is a very rough overview we are"
+    },
+    {
+      "start": 661.12,
+      "duration": 3.8,
+      "text": "going to be adding more services or more"
+    },
+    {
+      "start": 663.04,
+      "duration": 4.039,
+      "text": "things inside this course outline but"
+    },
+    {
+      "start": 664.92,
+      "duration": 4.919,
+      "text": "this is only for you to get an idea of"
+    },
+    {
+      "start": 667.079,
+      "duration": 5.121,
+      "text": "what can we expect in this particular"
+    },
+    {
+      "start": 669.839,
+      "duration": 4.401,
+      "text": "AWS course if you want me to cover any"
+    },
+    {
+      "start": 672.2,
+      "duration": 3.8,
+      "text": "other service you can also let me know"
+    },
+    {
+      "start": 674.24,
+      "duration": 3.76,
+      "text": "in the comment section moving on we're"
+    },
+    {
+      "start": 676.0,
+      "duration": 4.44,
+      "text": "going to be learning about serverless a"
+    },
+    {
+      "start": 678.0,
+      "duration": 5.0,
+      "text": "very popular architecture pattern which"
+    },
+    {
+      "start": 680.44,
+      "duration": 3.76,
+      "text": "we use to create applications so in"
+    },
+    {
+      "start": 683.0,
+      "duration": 4.44,
+      "text": "serverless we are going to be learning"
+    },
+    {
+      "start": 684.2,
+      "duration": 5.759,
+      "text": "about Lambda API Gateway also Dynamo D"
+    },
+    {
+      "start": 687.44,
+      "duration": 4.519,
+      "text": "which we have already covered so Lambda"
+    },
+    {
+      "start": 689.959,
+      "duration": 3.56,
+      "text": "API Gateway and also a project on how"
+    },
+    {
+      "start": 691.959,
+      "duration": 3.12,
+      "text": "you can use Lambda API Gateway to create"
+    },
+    {
+      "start": 693.519,
+      "duration": 3.56,
+      "text": "a serverless"
+    },
+    {
+      "start": 695.079,
+      "duration": 4.161,
+      "text": "application and lastly we going to be"
+    },
+    {
+      "start": 697.079,
+      "duration": 4.241,
+      "text": "adding more services on it as I've told"
+    },
+    {
+      "start": 699.24,
+      "duration": 4.12,
+      "text": "you in this course outline but here is a"
+    },
+    {
+      "start": 701.32,
+      "duration": 4.28,
+      "text": "very rough overview of what what you can"
+    },
+    {
+      "start": 703.36,
+      "duration": 3.88,
+      "text": "expect as I said if you want me to cover"
+    },
+    {
+      "start": 705.6,
+      "duration": 3.72,
+      "text": "any particular service you can let me"
+    },
+    {
+      "start": 707.24,
+      "duration": 4.159,
+      "text": "know make sure you follow this playlist"
+    },
+    {
+      "start": 709.32,
+      "duration": 4.16,
+      "text": "till the end and I will see you in the"
+    },
+    {
+      "start": 711.399,
+      "duration": 4.961,
+      "text": "next video to learn what is cloud"
+    },
+    {
+      "start": 713.48,
+      "duration": 2.88,
+      "text": "computing"
+    }
+  ]
+}

@@ -1,0 +1,6756 @@
+{
+  "video": {
+    "id": "kBWCsHEcWnc",
+    "title": "DevOps Project from scratch- Deploy Cloud Native Monitoring Application on Kubernetes (Step by Step)",
+    "url": "https://www.youtube.com/watch?v=kBWCsHEcWnc",
+    "duration": 2684,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 1.979,
+      "duration": 4.201,
+      "text": "finally the cloud native monitoring"
+    },
+    {
+      "start": 4.02,
+      "duration": 4.079,
+      "text": "application is ready this devops project"
+    },
+    {
+      "start": 6.18,
+      "duration": 3.72,
+      "text": "is all you need you will learn how to"
+    },
+    {
+      "start": 8.099,
+      "duration": 3.901,
+      "text": "build an application and deploy it on"
+    },
+    {
+      "start": 9.9,
+      "duration": 4.14,
+      "text": "kubernetes from scratch"
+    },
+    {
+      "start": 12.0,
+      "duration": 3.54,
+      "text": "doing this project can help you get a"
+    },
+    {
+      "start": 14.04,
+      "duration": 3.96,
+      "text": "job faster and it will make your resume"
+    },
+    {
+      "start": 15.54,
+      "duration": 4.319,
+      "text": "shine so complete this project and"
+    },
+    {
+      "start": 18.0,
+      "duration": 3.06,
+      "text": "showcase your skill let me explain you"
+    },
+    {
+      "start": 19.859,
+      "duration": 4.141,
+      "text": "what we will be doing in this project"
+    },
+    {
+      "start": 21.06,
+      "duration": 4.44,
+      "text": "using architecture diagram"
+    },
+    {
+      "start": 24.0,
+      "duration": 3.119,
+      "text": "throughout this project we will learn"
+    },
+    {
+      "start": 25.5,
+      "duration": 4.439,
+      "text": "how to create a monitoring application"
+    },
+    {
+      "start": 27.119,
+      "duration": 4.56,
+      "text": "in Python using flask we will start by"
+    },
+    {
+      "start": 29.939,
+      "duration": 3.96,
+      "text": "building the application and then"
+    },
+    {
+      "start": 31.679,
+      "duration": 4.081,
+      "text": "containerize it using Docker we will"
+    },
+    {
+      "start": 33.899,
+      "duration": 3.601,
+      "text": "create a Docker file after that we will"
+    },
+    {
+      "start": 35.76,
+      "duration": 3.72,
+      "text": "build the image and run the container"
+    },
+    {
+      "start": 37.5,
+      "duration": 3.84,
+      "text": "locally once we have our application"
+    },
+    {
+      "start": 39.48,
+      "duration": 3.54,
+      "text": "containerized and running locally we"
+    },
+    {
+      "start": 41.34,
+      "duration": 4.14,
+      "text": "will then create an ECR or elastic"
+    },
+    {
+      "start": 43.02,
+      "duration": 4.4,
+      "text": "container registry using python Moto 3"
+    },
+    {
+      "start": 45.48,
+      "duration": 4.8,
+      "text": "module"
+    },
+    {
+      "start": 47.42,
+      "duration": 4.72,
+      "text": "Docker image to store retrieve and use"
+    },
+    {
+      "start": 50.28,
+      "duration": 3.84,
+      "text": "the docker images in insecure and"
+    },
+    {
+      "start": 52.14,
+      "duration": 3.599,
+      "text": "efficient manner next we will move to"
+    },
+    {
+      "start": 54.12,
+      "duration": 3.9,
+      "text": "the deployment phase where we will"
+    },
+    {
+      "start": 55.739,
+      "duration": 3.84,
+      "text": "create elastic kubernetes cluster with"
+    },
+    {
+      "start": 58.02,
+      "duration": 3.66,
+      "text": "nodes and deploy the application on"
+    },
+    {
+      "start": 59.579,
+      "duration": 4.081,
+      "text": "kubernetes we will create deployment and"
+    },
+    {
+      "start": 61.68,
+      "duration": 3.6,
+      "text": "service using python so that our"
+    },
+    {
+      "start": 63.66,
+      "duration": 4.8,
+      "text": "application can be accessed from the"
+    },
+    {
+      "start": 65.28,
+      "duration": 6.0,
+      "text": "internet which is deployed on kubernetes"
+    },
+    {
+      "start": 68.46,
+      "duration": 4.62,
+      "text": "so excited for this project I know you"
+    },
+    {
+      "start": 71.28,
+      "duration": 3.36,
+      "text": "are but there are a few important things"
+    },
+    {
+      "start": 73.08,
+      "duration": 2.82,
+      "text": "that I want to share with you this"
+    },
+    {
+      "start": 74.64,
+      "duration": 4.019,
+      "text": "project is going to teach you a lot of"
+    },
+    {
+      "start": 75.9,
+      "duration": 3.96,
+      "text": "things kubernetes python Docker a lot of"
+    },
+    {
+      "start": 78.659,
+      "duration": 3.121,
+      "text": "things and this is going to be a"
+    },
+    {
+      "start": 79.86,
+      "duration": 3.66,
+      "text": "difficult one so you will face issues"
+    },
+    {
+      "start": 81.78,
+      "duration": 3.36,
+      "text": "when You Face problems try to"
+    },
+    {
+      "start": 83.52,
+      "duration": 4.02,
+      "text": "troubleshoot it by finding Solutions"
+    },
+    {
+      "start": 85.14,
+      "duration": 4.5,
+      "text": "online read a Blog watch a video Read"
+    },
+    {
+      "start": 87.54,
+      "duration": 4.2,
+      "text": "documentation anything before you ask"
+    },
+    {
+      "start": 89.64,
+      "duration": 4.14,
+      "text": "anyone for help or before you drop a"
+    },
+    {
+      "start": 91.74,
+      "duration": 3.839,
+      "text": "comment for help so try to search online"
+    },
+    {
+      "start": 93.78,
+      "duration": 3.72,
+      "text": "when you search things online it will"
+    },
+    {
+      "start": 95.579,
+      "duration": 3.841,
+      "text": "make your Concepts clear and you will be"
+    },
+    {
+      "start": 97.5,
+      "duration": 4.619,
+      "text": "able to understand things more in depth"
+    },
+    {
+      "start": 99.42,
+      "duration": 5.1,
+      "text": "so try to find your Solutions yourself"
+    },
+    {
+      "start": 102.119,
+      "duration": 4.741,
+      "text": "but if you still don't get any answers"
+    },
+    {
+      "start": 104.52,
+      "duration": 4.559,
+      "text": "feel free to drop your comment and I'll"
+    },
+    {
+      "start": 106.86,
+      "duration": 3.539,
+      "text": "help you out and if you are if you have"
+    },
+    {
+      "start": 109.079,
+      "duration": 2.701,
+      "text": "a membership for cloud champ I'll"
+    },
+    {
+      "start": 110.399,
+      "duration": 4.441,
+      "text": "explain you things more thoroughly in"
+    },
+    {
+      "start": 111.78,
+      "duration": 4.74,
+      "text": "depth so get your membership today make"
+    },
+    {
+      "start": 114.84,
+      "duration": 3.0,
+      "text": "sure you complete this project and share"
+    },
+    {
+      "start": 116.52,
+      "duration": 2.76,
+      "text": "this on your LinkedIn I'm going to see"
+    },
+    {
+      "start": 117.84,
+      "duration": 2.94,
+      "text": "how many of you can complete this"
+    },
+    {
+      "start": 119.28,
+      "duration": 3.6,
+      "text": "project and deploy your application on"
+    },
+    {
+      "start": 120.78,
+      "duration": 4.08,
+      "text": "kubernetes tag me to check how many of"
+    },
+    {
+      "start": 122.88,
+      "duration": 5.059,
+      "text": "you can do this Challenge and let's see"
+    },
+    {
+      "start": 124.86,
+      "duration": 3.079,
+      "text": "so let's start with the video"
+    },
+    {
+      "start": 128.399,
+      "duration": 2.181,
+      "text": "foreign"
+    },
+    {
+      "start": 131.48,
+      "duration": 3.52,
+      "text": "and we can start with the project but"
+    },
+    {
+      "start": 133.739,
+      "duration": 3.121,
+      "text": "before we do that there are a few things"
+    },
+    {
+      "start": 135.0,
+      "duration": 4.62,
+      "text": "that you need to have in order to get"
+    },
+    {
+      "start": 136.86,
+      "duration": 4.56,
+      "text": "started the first one is to have an AWS"
+    },
+    {
+      "start": 139.62,
+      "duration": 4.199,
+      "text": "account so we're going to do things on"
+    },
+    {
+      "start": 141.42,
+      "duration": 3.959,
+      "text": "the AWS Cloud so we need to have an AWS"
+    },
+    {
+      "start": 143.819,
+      "duration": 4.261,
+      "text": "account because we will be creating"
+    },
+    {
+      "start": 145.379,
+      "duration": 4.981,
+      "text": "kubernetes service ECR and deploying it"
+    },
+    {
+      "start": 148.08,
+      "duration": 4.62,
+      "text": "on AWS so we need to have AWS account"
+    },
+    {
+      "start": 150.36,
+      "duration": 4.68,
+      "text": "after we have the count we need to give"
+    },
+    {
+      "start": 152.7,
+      "duration": 5.16,
+      "text": "programmatic access so that we can do"
+    },
+    {
+      "start": 155.04,
+      "duration": 4.38,
+      "text": "things on the CLI or using python so we"
+    },
+    {
+      "start": 157.86,
+      "duration": 4.32,
+      "text": "need to give programmatic access and"
+    },
+    {
+      "start": 159.42,
+      "duration": 4.62,
+      "text": "configure it with a CLI to do this you"
+    },
+    {
+      "start": 162.18,
+      "duration": 3.96,
+      "text": "will need to create access key and"
+    },
+    {
+      "start": 164.04,
+      "duration": 4.199,
+      "text": "secret access key in your AWS if you"
+    },
+    {
+      "start": 166.14,
+      "duration": 3.66,
+      "text": "don't know how to do it just go to im or"
+    },
+    {
+      "start": 168.239,
+      "duration": 3.481,
+      "text": "click on security credentials option"
+    },
+    {
+      "start": 169.8,
+      "duration": 3.54,
+      "text": "here and you will find the option where"
+    },
+    {
+      "start": 171.72,
+      "duration": 4.62,
+      "text": "you can create access keys and secret"
+    },
+    {
+      "start": 173.34,
+      "duration": 6.42,
+      "text": "access Keys these keys are required for"
+    },
+    {
+      "start": 176.34,
+      "duration": 4.86,
+      "text": "us to have programmatic access so in AWS"
+    },
+    {
+      "start": 179.76,
+      "duration": 3.119,
+      "text": "whenever you want programmatic access"
+    },
+    {
+      "start": 181.2,
+      "duration": 3.78,
+      "text": "you need to put the access keys and you"
+    },
+    {
+      "start": 182.879,
+      "duration": 4.021,
+      "text": "can create it from here I've already two"
+    },
+    {
+      "start": 184.98,
+      "duration": 3.839,
+      "text": "created so I cannot create it but you"
+    },
+    {
+      "start": 186.9,
+      "duration": 5.28,
+      "text": "can create it by clicking here and then"
+    },
+    {
+      "start": 188.819,
+      "duration": 6.601,
+      "text": "put those keys on your terminal or in"
+    },
+    {
+      "start": 192.18,
+      "duration": 5.279,
+      "text": "your vs code by running AWS configure"
+    },
+    {
+      "start": 195.42,
+      "duration": 3.0,
+      "text": "command and this will ask you for access"
+    },
+    {
+      "start": 197.459,
+      "duration": 3.42,
+      "text": "key"
+    },
+    {
+      "start": 198.42,
+      "duration": 4.8,
+      "text": "put your access key here there's seek"
+    },
+    {
+      "start": 200.879,
+      "duration": 4.5,
+      "text": "taxes key here your region name output"
+    },
+    {
+      "start": 203.22,
+      "duration": 5.519,
+      "text": "and boom you are now connected to cross"
+    },
+    {
+      "start": 205.379,
+      "duration": 6.661,
+      "text": "check you can just run AWS I am list"
+    },
+    {
+      "start": 208.739,
+      "duration": 4.561,
+      "text": "Dash users this is one of the command to"
+    },
+    {
+      "start": 212.04,
+      "duration": 3.419,
+      "text": "check which users are present in your"
+    },
+    {
+      "start": 213.3,
+      "duration": 3.6,
+      "text": "account if you get the user that are"
+    },
+    {
+      "start": 215.459,
+      "duration": 2.821,
+      "text": "already in your account which means you"
+    },
+    {
+      "start": 216.9,
+      "duration": 3.419,
+      "text": "are successfully connected so you can I"
+    },
+    {
+      "start": 218.28,
+      "duration": 3.599,
+      "text": "can see all my accounts this is to cross"
+    },
+    {
+      "start": 220.319,
+      "duration": 4.14,
+      "text": "check so that you are not using any of"
+    },
+    {
+      "start": 221.879,
+      "duration": 5.821,
+      "text": "your company's AWS account or you might"
+    },
+    {
+      "start": 224.459,
+      "duration": 4.801,
+      "text": "get fired so I want you to check that"
+    },
+    {
+      "start": 227.7,
+      "duration": 4.2,
+      "text": "you are using the correct account for me"
+    },
+    {
+      "start": 229.26,
+      "duration": 5.28,
+      "text": "if I show you here I have an account"
+    },
+    {
+      "start": 231.9,
+      "duration": 3.899,
+      "text": "with named as Nasi and you can see this"
+    },
+    {
+      "start": 234.54,
+      "duration": 3.479,
+      "text": "is the same one so I am correctly"
+    },
+    {
+      "start": 235.799,
+      "duration": 4.321,
+      "text": "connected to my account this is the step"
+    },
+    {
+      "start": 238.019,
+      "duration": 4.14,
+      "text": "you need to be doing because we are"
+    },
+    {
+      "start": 240.12,
+      "duration": 3.6,
+      "text": "going to use Python to manage some AWS"
+    },
+    {
+      "start": 242.159,
+      "duration": 4.08,
+      "text": "service and we need to have programmatic"
+    },
+    {
+      "start": 243.72,
+      "duration": 4.079,
+      "text": "access so after you have programmatic"
+    },
+    {
+      "start": 246.239,
+      "duration": 3.301,
+      "text": "access you also need to check if you"
+    },
+    {
+      "start": 247.799,
+      "duration": 4.08,
+      "text": "have Python 3 installed in your machine"
+    },
+    {
+      "start": 249.54,
+      "duration": 5.64,
+      "text": "or not and to check this you just need"
+    },
+    {
+      "start": 251.879,
+      "duration": 3.301,
+      "text": "to run python"
+    },
+    {
+      "start": 255.78,
+      "duration": 4.739,
+      "text": "three dash dash version this command"
+    },
+    {
+      "start": 258.959,
+      "duration": 3.12,
+      "text": "will tell you if you have python"
+    },
+    {
+      "start": 260.519,
+      "duration": 3.9,
+      "text": "installed or not so I have python here"
+    },
+    {
+      "start": 262.079,
+      "duration": 3.961,
+      "text": "with 3.8.10 which means python is"
+    },
+    {
+      "start": 264.419,
+      "duration": 3.181,
+      "text": "installed for me if you don't have it go"
+    },
+    {
+      "start": 266.04,
+      "duration": 3.78,
+      "text": "to the official documentation of python"
+    },
+    {
+      "start": 267.6,
+      "duration": 4.62,
+      "text": "and install it from there along with"
+    },
+    {
+      "start": 269.82,
+      "duration": 4.92,
+      "text": "python you also need Docker and Cube CTL"
+    },
+    {
+      "start": 272.22,
+      "duration": 4.74,
+      "text": "we are going to use Docker commands to"
+    },
+    {
+      "start": 274.74,
+      "duration": 3.959,
+      "text": "create a Docker file for which because"
+    },
+    {
+      "start": 276.96,
+      "duration": 3.179,
+      "text": "we're going to dockerize our application"
+    },
+    {
+      "start": 278.699,
+      "duration": 2.581,
+      "text": "the one we are going to create we're"
+    },
+    {
+      "start": 280.139,
+      "duration": 3.301,
+      "text": "going to create Docker file and run"
+    },
+    {
+      "start": 281.28,
+      "duration": 3.96,
+      "text": "Docker commands like Docker build Docker"
+    },
+    {
+      "start": 283.44,
+      "duration": 6.06,
+      "text": "run so we need to have Docker installed"
+    },
+    {
+      "start": 285.24,
+      "duration": 6.6,
+      "text": "and to check that simply type Docker or"
+    },
+    {
+      "start": 289.5,
+      "duration": 4.02,
+      "text": "doctor dash dash version"
+    },
+    {
+      "start": 291.84,
+      "duration": 3.72,
+      "text": "command and it will give you that Docker"
+    },
+    {
+      "start": 293.52,
+      "duration": 3.78,
+      "text": "installed for me it is 20 you can choose"
+    },
+    {
+      "start": 295.56,
+      "duration": 3.54,
+      "text": "to install any version but you need to"
+    },
+    {
+      "start": 297.3,
+      "duration": 4.14,
+      "text": "have Docker installed along with Docker"
+    },
+    {
+      "start": 299.1,
+      "duration": 4.08,
+      "text": "we also need Cube CTL so Cube CTL is a"
+    },
+    {
+      "start": 301.44,
+      "duration": 3.0,
+      "text": "command line tool for kubernetes and"
+    },
+    {
+      "start": 303.18,
+      "duration": 3.299,
+      "text": "we're going to run this commands to see"
+    },
+    {
+      "start": 304.44,
+      "duration": 4.14,
+      "text": "if our pods are up or not if our nodes"
+    },
+    {
+      "start": 306.479,
+      "duration": 4.141,
+      "text": "are ready or not if our service is ready"
+    },
+    {
+      "start": 308.58,
+      "duration": 4.38,
+      "text": "or not so we need to have Cube CTL as"
+    },
+    {
+      "start": 310.62,
+      "duration": 4.98,
+      "text": "well and to check qctl is just three to"
+    },
+    {
+      "start": 312.96,
+      "duration": 5.04,
+      "text": "run Cube CTL and version command this"
+    },
+    {
+      "start": 315.6,
+      "duration": 4.62,
+      "text": "will give you the version I can see here"
+    },
+    {
+      "start": 318.0,
+      "duration": 4.02,
+      "text": "uh I have cubic installed and I get this"
+    },
+    {
+      "start": 320.22,
+      "duration": 3.419,
+      "text": "output which means cubect is installed"
+    },
+    {
+      "start": 322.02,
+      "duration": 4.2,
+      "text": "for me so you need to have Docker and"
+    },
+    {
+      "start": 323.639,
+      "duration": 4.441,
+      "text": "Cube CT as well lastly you need to have"
+    },
+    {
+      "start": 326.22,
+      "duration": 3.36,
+      "text": "a code editor because that that's where"
+    },
+    {
+      "start": 328.08,
+      "duration": 3.24,
+      "text": "you have to write the code so I have a"
+    },
+    {
+      "start": 329.58,
+      "duration": 4.02,
+      "text": "code editor which is vs code here and"
+    },
+    {
+      "start": 331.32,
+      "duration": 4.379,
+      "text": "I'm going to use that so now after you"
+    },
+    {
+      "start": 333.6,
+      "duration": 4.379,
+      "text": "have it everything installed you are"
+    },
+    {
+      "start": 335.699,
+      "duration": 4.681,
+      "text": "ready to get started so I'm going to now"
+    },
+    {
+      "start": 337.979,
+      "duration": 4.681,
+      "text": "get started let's"
+    },
+    {
+      "start": 340.38,
+      "duration": 3.72,
+      "text": "create a folder for our application so"
+    },
+    {
+      "start": 342.66,
+      "duration": 4.56,
+      "text": "in my home directory I'm going to go"
+    },
+    {
+      "start": 344.1,
+      "duration": 5.84,
+      "text": "ahead and create a new folder say 895"
+    },
+    {
+      "start": 347.22,
+      "duration": 2.72,
+      "text": "Cloud native"
+    },
+    {
+      "start": 351.3,
+      "duration": 2.899,
+      "text": "monitoring app"
+    },
+    {
+      "start": 354.3,
+      "duration": 3.54,
+      "text": "okay so this is my folder and I'm going"
+    },
+    {
+      "start": 356.28,
+      "duration": 3.3,
+      "text": "to create all my files here so I'm going"
+    },
+    {
+      "start": 357.84,
+      "duration": 4.32,
+      "text": "to open this in my vs code so let's open"
+    },
+    {
+      "start": 359.58,
+      "duration": 5.339,
+      "text": "the vs code here and I'm going to"
+    },
+    {
+      "start": 362.16,
+      "duration": 4.259,
+      "text": "click on file open folder"
+    },
+    {
+      "start": 364.919,
+      "duration": 2.881,
+      "text": "and I'm going to choose my cloud native"
+    },
+    {
+      "start": 366.419,
+      "duration": 3.72,
+      "text": "monitoring application folder that I"
+    },
+    {
+      "start": 367.8,
+      "duration": 4.32,
+      "text": "created right now perfect"
+    },
+    {
+      "start": 370.139,
+      "duration": 3.84,
+      "text": "so click on open here now I'm inside my"
+    },
+    {
+      "start": 372.12,
+      "duration": 3.0,
+      "text": "folder which is completely empty as you"
+    },
+    {
+      "start": 373.979,
+      "duration": 3.301,
+      "text": "can see and inside this I'm going to"
+    },
+    {
+      "start": 375.12,
+      "duration": 3.66,
+      "text": "write a code for my application so this"
+    },
+    {
+      "start": 377.28,
+      "duration": 2.94,
+      "text": "application is a python application so"
+    },
+    {
+      "start": 378.78,
+      "duration": 4.62,
+      "text": "I'm going to create a new file name it"
+    },
+    {
+      "start": 380.22,
+      "duration": 4.68,
+      "text": "app dot Pi so every python application"
+    },
+    {
+      "start": 383.4,
+      "duration": 3.0,
+      "text": "should end with DOT pi as an extension"
+    },
+    {
+      "start": 384.9,
+      "duration": 2.579,
+      "text": "and I'm going to do that so this"
+    },
+    {
+      "start": 386.4,
+      "duration": 2.76,
+      "text": "application is a monitoring application"
+    },
+    {
+      "start": 387.479,
+      "duration": 3.06,
+      "text": "which is going to get the CPU and memory"
+    },
+    {
+      "start": 389.16,
+      "duration": 3.06,
+      "text": "metric so in Python you have different"
+    },
+    {
+      "start": 390.539,
+      "duration": 3.361,
+      "text": "modules to do some tasks if you want to"
+    },
+    {
+      "start": 392.22,
+      "duration": 3.96,
+      "text": "get CPU and memory metric you need to"
+    },
+    {
+      "start": 393.9,
+      "duration": 4.139,
+      "text": "have a module name as PS util so I'm"
+    },
+    {
+      "start": 396.18,
+      "duration": 4.519,
+      "text": "going to import that on the first line"
+    },
+    {
+      "start": 398.039,
+      "duration": 2.66,
+      "text": "so I'm going to say import"
+    },
+    {
+      "start": 401.3,
+      "duration": 4.179,
+      "text": "and if I show you this it says PhD is a"
+    },
+    {
+      "start": 404.28,
+      "duration": 2.4,
+      "text": "cross platform library for retrieving"
+    },
+    {
+      "start": 405.479,
+      "duration": 2.94,
+      "text": "information on running processes system"
+    },
+    {
+      "start": 406.68,
+      "duration": 2.88,
+      "text": "utilization like CPU memory so this"
+    },
+    {
+      "start": 408.419,
+      "duration": 2.941,
+      "text": "module is going to be used to get the"
+    },
+    {
+      "start": 409.56,
+      "duration": 3.66,
+      "text": "CPU and memory of my server on which"
+    },
+    {
+      "start": 411.36,
+      "duration": 3.6,
+      "text": "this application is going to run so we"
+    },
+    {
+      "start": 413.22,
+      "duration": 3.3,
+      "text": "have it imported next thing this"
+    },
+    {
+      "start": 414.96,
+      "duration": 2.76,
+      "text": "application is going to be run in flask"
+    },
+    {
+      "start": 416.52,
+      "duration": 2.82,
+      "text": "so we're going to use flask frame"
+    },
+    {
+      "start": 417.72,
+      "duration": 3.3,
+      "text": "framework to create this application so"
+    },
+    {
+      "start": 419.34,
+      "duration": 3.72,
+      "text": "we need to have flash module as well so"
+    },
+    {
+      "start": 421.02,
+      "duration": 5.519,
+      "text": "I'm going to say from"
+    },
+    {
+      "start": 423.06,
+      "duration": 5.22,
+      "text": "flask input"
+    },
+    {
+      "start": 426.539,
+      "duration": 3.6,
+      "text": "import flask"
+    },
+    {
+      "start": 428.28,
+      "duration": 3.66,
+      "text": "okay so we have two modules here one is"
+    },
+    {
+      "start": 430.139,
+      "duration": 3.06,
+      "text": "ps50 to get the CPU and the memory and"
+    },
+    {
+      "start": 431.94,
+      "duration": 2.94,
+      "text": "Flash to create the application itself"
+    },
+    {
+      "start": 433.199,
+      "duration": 3.181,
+      "text": "now that we have this two ready I'm"
+    },
+    {
+      "start": 434.88,
+      "duration": 4.259,
+      "text": "going to create an app here so I'm going"
+    },
+    {
+      "start": 436.38,
+      "duration": 4.319,
+      "text": "to say app equals to flask and inside"
+    },
+    {
+      "start": 439.139,
+      "duration": 3.301,
+      "text": "this I'm going to say underscore"
+    },
+    {
+      "start": 440.699,
+      "duration": 3.601,
+      "text": "underscore name and you will understand"
+    },
+    {
+      "start": 442.44,
+      "duration": 3.479,
+      "text": "this once we do the few other lines in"
+    },
+    {
+      "start": 444.3,
+      "duration": 3.119,
+      "text": "the code so I have an app created which"
+    },
+    {
+      "start": 445.919,
+      "duration": 4.081,
+      "text": "is last application and I have given"
+    },
+    {
+      "start": 447.419,
+      "duration": 4.141,
+      "text": "this parameter as name here so now now"
+    },
+    {
+      "start": 450.0,
+      "duration": 3.18,
+      "text": "that the app is created let's set the"
+    },
+    {
+      "start": 451.56,
+      "duration": 2.759,
+      "text": "path of where the application you have"
+    },
+    {
+      "start": 453.18,
+      "duration": 4.62,
+      "text": "to run so I'm going to say at the rate"
+    },
+    {
+      "start": 454.319,
+      "duration": 5.641,
+      "text": "app dot root is going to be the slash"
+    },
+    {
+      "start": 457.8,
+      "duration": 5.459,
+      "text": "which means it will run on home path so"
+    },
+    {
+      "start": 459.96,
+      "duration": 5.28,
+      "text": "this slash says Home Path so whenever a"
+    },
+    {
+      "start": 463.259,
+      "duration": 3.961,
+      "text": "user comes in at the Home Path the"
+    },
+    {
+      "start": 465.24,
+      "duration": 3.179,
+      "text": "application is going to run and what are"
+    },
+    {
+      "start": 467.22,
+      "duration": 2.099,
+      "text": "we going to show it so let's get a"
+    },
+    {
+      "start": 468.419,
+      "duration": 3.361,
+      "text": "function here"
+    },
+    {
+      "start": 469.319,
+      "duration": 3.6,
+      "text": "I'm going to say a function which is"
+    },
+    {
+      "start": 471.78,
+      "duration": 2.46,
+      "text": "going to be index the name of function"
+    },
+    {
+      "start": 472.919,
+      "duration": 3.06,
+      "text": "is index and we're going to run this"
+    },
+    {
+      "start": 474.24,
+      "duration": 2.94,
+      "text": "when user comes at this path so inside"
+    },
+    {
+      "start": 475.979,
+      "duration": 3.72,
+      "text": "this function I'm going to Define three"
+    },
+    {
+      "start": 477.18,
+      "duration": 4.56,
+      "text": "variables one is CPU I'm going to say"
+    },
+    {
+      "start": 479.699,
+      "duration": 3.961,
+      "text": "CPU underscore percent"
+    },
+    {
+      "start": 481.74,
+      "duration": 6.06,
+      "text": "equals to"
+    },
+    {
+      "start": 483.66,
+      "duration": 7.08,
+      "text": "psutil dot CPU so I want this CPU person"
+    },
+    {
+      "start": 487.8,
+      "duration": 4.98,
+      "text": "to hold the value of uh know the value"
+    },
+    {
+      "start": 490.74,
+      "duration": 4.44,
+      "text": "of my CPU usage so I'm going to say that"
+    },
+    {
+      "start": 492.78,
+      "duration": 3.6,
+      "text": "and then next I want to also store the"
+    },
+    {
+      "start": 495.18,
+      "duration": 3.359,
+      "text": "memory utilization so I'm going to say"
+    },
+    {
+      "start": 496.38,
+      "duration": 4.98,
+      "text": "mem underscore percent"
+    },
+    {
+      "start": 498.539,
+      "duration": 5.461,
+      "text": "equals to PS util"
+    },
+    {
+      "start": 501.36,
+      "duration": 4.98,
+      "text": "dot virtual memory here"
+    },
+    {
+      "start": 504.0,
+      "duration": 3.84,
+      "text": "so virtual memory and just virtual"
+    },
+    {
+      "start": 506.34,
+      "duration": 2.759,
+      "text": "memory I want it in the format of"
+    },
+    {
+      "start": 507.84,
+      "duration": 4.439,
+      "text": "percent so I'm going to say dot percent"
+    },
+    {
+      "start": 509.099,
+      "duration": 5.401,
+      "text": "here okay so we have two variables now"
+    },
+    {
+      "start": 512.279,
+      "duration": 4.68,
+      "text": "one is CPU one is memory CPU to get the"
+    },
+    {
+      "start": 514.5,
+      "duration": 5.159,
+      "text": "CPU use usage and then memory to get the"
+    },
+    {
+      "start": 516.959,
+      "duration": 4.32,
+      "text": "memory usage so uh next I'm going to say"
+    },
+    {
+      "start": 519.659,
+      "duration": 5.521,
+      "text": "message"
+    },
+    {
+      "start": 521.279,
+      "duration": 5.641,
+      "text": "equals to none for now but let's include"
+    },
+    {
+      "start": 525.18,
+      "duration": 4.02,
+      "text": "a functionality in here saying that if"
+    },
+    {
+      "start": 526.92,
+      "duration": 3.84,
+      "text": "the memory is more than 80 or its CPU is"
+    },
+    {
+      "start": 529.2,
+      "duration": 3.9,
+      "text": "more than 80 we should get a message"
+    },
+    {
+      "start": 530.76,
+      "duration": 4.34,
+      "text": "that CPU is high or memory is high and"
+    },
+    {
+      "start": 533.1,
+      "duration": 5.16,
+      "text": "then scale up so let's see that so if"
+    },
+    {
+      "start": 535.1,
+      "duration": 5.5,
+      "text": "CPU underscore percent is greater than"
+    },
+    {
+      "start": 538.26,
+      "duration": 3.9,
+      "text": "80 so if the CPU percentage is more than"
+    },
+    {
+      "start": 540.6,
+      "duration": 5.76,
+      "text": "88 percent or"
+    },
+    {
+      "start": 542.16,
+      "duration": 6.299,
+      "text": "memory percent is more than 80. then"
+    },
+    {
+      "start": 546.36,
+      "duration": 4.64,
+      "text": "do a message say a message that message"
+    },
+    {
+      "start": 548.459,
+      "duration": 2.541,
+      "text": "equals to"
+    },
+    {
+      "start": 555.18,
+      "duration": 6.36,
+      "text": "equals to high CPU"
+    },
+    {
+      "start": 558.0,
+      "duration": 6.3,
+      "text": "memory utilization something like that"
+    },
+    {
+      "start": 561.54,
+      "duration": 4.02,
+      "text": "utilization detected"
+    },
+    {
+      "start": 564.3,
+      "duration": 4.099,
+      "text": "please"
+    },
+    {
+      "start": 565.56,
+      "duration": 2.839,
+      "text": "scale up"
+    },
+    {
+      "start": 568.8,
+      "duration": 3.719,
+      "text": "okay so we have a function here which is"
+    },
+    {
+      "start": 570.899,
+      "duration": 3.06,
+      "text": "going to store CPU memory and a message"
+    },
+    {
+      "start": 572.519,
+      "duration": 4.201,
+      "text": "and if the memory of CPU is more than 80"
+    },
+    {
+      "start": 573.959,
+      "duration": 3.841,
+      "text": "we want this to be shown this function"
+    },
+    {
+      "start": 576.72,
+      "duration": 2.16,
+      "text": "is not returning anything so we're not"
+    },
+    {
+      "start": 577.8,
+      "duration": 2.4,
+      "text": "going to get any output so let's get a"
+    },
+    {
+      "start": 578.88,
+      "duration": 2.94,
+      "text": "return statement so I'm going to say"
+    },
+    {
+      "start": 580.2,
+      "duration": 5.16,
+      "text": "return"
+    },
+    {
+      "start": 581.82,
+      "duration": 5.88,
+      "text": "a statement saying that CPU utilization"
+    },
+    {
+      "start": 585.36,
+      "duration": 4.44,
+      "text": "[Music]"
+    },
+    {
+      "start": 587.7,
+      "duration": 3.72,
+      "text": "equals to the value stored inside this"
+    },
+    {
+      "start": 589.8,
+      "duration": 6.0,
+      "text": "so I'm going to say"
+    },
+    {
+      "start": 591.42,
+      "duration": 6.62,
+      "text": "CPU percentage and"
+    },
+    {
+      "start": 595.8,
+      "duration": 4.68,
+      "text": "memory"
+    },
+    {
+      "start": 598.04,
+      "duration": 4.66,
+      "text": "utilization is going to be the value"
+    },
+    {
+      "start": 600.48,
+      "duration": 4.5,
+      "text": "stored inside this mem percent so the"
+    },
+    {
+      "start": 602.7,
+      "duration": 4.68,
+      "text": "value here inside members it"
+    },
+    {
+      "start": 604.98,
+      "duration": 3.78,
+      "text": "perfect now we have a function ready to"
+    },
+    {
+      "start": 607.38,
+      "duration": 2.82,
+      "text": "get the CPU and the memory and to show"
+    },
+    {
+      "start": 608.76,
+      "duration": 2.88,
+      "text": "if it is more than 80 we will get this"
+    },
+    {
+      "start": 610.2,
+      "duration": 2.94,
+      "text": "message and once the function is called"
+    },
+    {
+      "start": 611.64,
+      "duration": 3.54,
+      "text": "we're going to get this statement here"
+    },
+    {
+      "start": 613.14,
+      "duration": 3.54,
+      "text": "so whenever user goes into this path he"
+    },
+    {
+      "start": 615.18,
+      "duration": 3.3,
+      "text": "will get the CPU and the memory as"
+    },
+    {
+      "start": 616.68,
+      "duration": 4.08,
+      "text": "defined inside this function so we have"
+    },
+    {
+      "start": 618.48,
+      "duration": 6.74,
+      "text": "a function ready let's say if"
+    },
+    {
+      "start": 620.76,
+      "duration": 4.46,
+      "text": "name of the app which is here if this"
+    },
+    {
+      "start": 625.74,
+      "duration": 4.82,
+      "text": "equal to equals to"
+    },
+    {
+      "start": 627.899,
+      "duration": 2.661,
+      "text": "Main"
+    },
+    {
+      "start": 631.26,
+      "duration": 5.04,
+      "text": "then run the app so say app dot run in"
+    },
+    {
+      "start": 634.32,
+      "duration": 4.98,
+      "text": "debug mode so debug equals to true"
+    },
+    {
+      "start": 636.3,
+      "duration": 4.32,
+      "text": "debug equals to true and the host of the"
+    },
+    {
+      "start": 639.3,
+      "duration": 3.86,
+      "text": "application is going to be 0.0 so that"
+    },
+    {
+      "start": 640.62,
+      "duration": 5.04,
+      "text": "it can run my local machine so I can say"
+    },
+    {
+      "start": 643.16,
+      "duration": 4.0,
+      "text": "host.0.0.0.0 okay so this is our"
+    },
+    {
+      "start": 645.66,
+      "duration": 3.9,
+      "text": "application here which is going to use"
+    },
+    {
+      "start": 647.16,
+      "duration": 3.9,
+      "text": "PS util flask uh to get the CPU and the"
+    },
+    {
+      "start": 649.56,
+      "duration": 3.36,
+      "text": "memory and then show this message"
+    },
+    {
+      "start": 651.06,
+      "duration": 3.0,
+      "text": "whenever we come at the slash path so"
+    },
+    {
+      "start": 652.92,
+      "duration": 3.12,
+      "text": "this is our application I can go ahead"
+    },
+    {
+      "start": 654.06,
+      "duration": 4.2,
+      "text": "and try to run it uh opening my terminal"
+    },
+    {
+      "start": 656.04,
+      "duration": 4.919,
+      "text": "I can just say"
+    },
+    {
+      "start": 658.26,
+      "duration": 4.56,
+      "text": "Python 3 and the app.bi it will run for"
+    },
+    {
+      "start": 660.959,
+      "duration": 3.781,
+      "text": "me for you if you try learning this you"
+    },
+    {
+      "start": 662.82,
+      "duration": 3.36,
+      "text": "will get another saying module not found"
+    },
+    {
+      "start": 664.74,
+      "duration": 2.82,
+      "text": "for PSU till the model not found your"
+    },
+    {
+      "start": 666.18,
+      "duration": 2.099,
+      "text": "flask so what you need to do is to just"
+    },
+    {
+      "start": 667.56,
+      "duration": 3.899,
+      "text": "run"
+    },
+    {
+      "start": 668.279,
+      "duration": 4.62,
+      "text": "tip 3 install and the name of the module"
+    },
+    {
+      "start": 671.459,
+      "duration": 3.481,
+      "text": "which is psut here so I'm going to say"
+    },
+    {
+      "start": 672.899,
+      "duration": 4.201,
+      "text": "flip 3 install psutil or pip3 install"
+    },
+    {
+      "start": 674.94,
+      "duration": 3.24,
+      "text": "flask and then it will install it so for"
+    },
+    {
+      "start": 677.1,
+      "duration": 2.46,
+      "text": "me I have already installed it says"
+    },
+    {
+      "start": 678.18,
+      "duration": 2.58,
+      "text": "requirement already satisfied if you"
+    },
+    {
+      "start": 679.56,
+      "duration": 3.24,
+      "text": "don't have it installed you need to run"
+    },
+    {
+      "start": 680.76,
+      "duration": 2.94,
+      "text": "the command pip3 install psutil and what"
+    },
+    {
+      "start": 682.8,
+      "duration": 3.659,
+      "text": "I can do is I can create a"
+    },
+    {
+      "start": 683.7,
+      "duration": 4.5,
+      "text": "requirements.txt file here to add all"
+    },
+    {
+      "start": 686.459,
+      "duration": 2.94,
+      "text": "the necessary dependencies or the"
+    },
+    {
+      "start": 688.2,
+      "duration": 2.759,
+      "text": "modules that you will be using"
+    },
+    {
+      "start": 689.399,
+      "duration": 2.94,
+      "text": "throughout this course so I'm going to"
+    },
+    {
+      "start": 690.959,
+      "duration": 4.201,
+      "text": "add all the modules that you will be"
+    },
+    {
+      "start": 692.339,
+      "duration": 5.101,
+      "text": "using so here is all the modules we're"
+    },
+    {
+      "start": 695.16,
+      "duration": 4.08,
+      "text": "using flask a markup save and then all"
+    },
+    {
+      "start": 697.44,
+      "duration": 4.139,
+      "text": "this different along with psutil plotly"
+    },
+    {
+      "start": 699.24,
+      "duration": 3.719,
+      "text": "and kubernetes and Moto 3 because in the"
+    },
+    {
+      "start": 701.579,
+      "duration": 2.7,
+      "text": "earlier part in the next in the later"
+    },
+    {
+      "start": 702.959,
+      "duration": 3.241,
+      "text": "sections of the video we will be"
+    },
+    {
+      "start": 704.279,
+      "duration": 3.0,
+      "text": "creating ECR using Moto 3 and we are"
+    },
+    {
+      "start": 706.2,
+      "duration": 3.3,
+      "text": "going to manage kubernetes deployment"
+    },
+    {
+      "start": 707.279,
+      "duration": 4.381,
+      "text": "using kubernetes python client so what"
+    },
+    {
+      "start": 709.5,
+      "duration": 3.54,
+      "text": "you need to do now is just run pip after"
+    },
+    {
+      "start": 711.66,
+      "duration": 2.64,
+      "text": "you clone this repository or after you"
+    },
+    {
+      "start": 713.04,
+      "duration": 4.76,
+      "text": "have this file in your local machine"
+    },
+    {
+      "start": 714.3,
+      "duration": 5.159,
+      "text": "just do pip 3 install hyphen R"
+    },
+    {
+      "start": 717.8,
+      "duration": 2.92,
+      "text": "requirements.txt and it will start"
+    },
+    {
+      "start": 719.459,
+      "duration": 2.281,
+      "text": "installing everything for you for me"
+    },
+    {
+      "start": 720.72,
+      "duration": 2.52,
+      "text": "everything is there so it's not"
+    },
+    {
+      "start": 721.74,
+      "duration": 3.24,
+      "text": "installing anything but for you it will"
+    },
+    {
+      "start": 723.24,
+      "duration": 3.0,
+      "text": "start installing it okay so now we have"
+    },
+    {
+      "start": 724.98,
+      "duration": 2.64,
+      "text": "application ready and if you after you"
+    },
+    {
+      "start": 726.24,
+      "duration": 2.88,
+      "text": "install all the modules you just need to"
+    },
+    {
+      "start": 727.62,
+      "duration": 5.279,
+      "text": "run pythons"
+    },
+    {
+      "start": 729.12,
+      "duration": 6.3,
+      "text": "the app dot pi and this application it"
+    },
+    {
+      "start": 732.899,
+      "duration": 5.421,
+      "text": "says okay there is an issue saying"
+    },
+    {
+      "start": 735.42,
+      "duration": 2.9,
+      "text": "import name is wrong"
+    },
+    {
+      "start": 738.66,
+      "duration": 5.28,
+      "text": "equals to equals to Main"
+    },
+    {
+      "start": 741.12,
+      "duration": 5.64,
+      "text": "so it says f equals to flask"
+    },
+    {
+      "start": 743.94,
+      "duration": 6.06,
+      "text": "okay sorry my bad I just removed it from"
+    },
+    {
+      "start": 746.76,
+      "duration": 5.46,
+      "text": "here I have to copy and I cut it out"
+    },
+    {
+      "start": 750.0,
+      "duration": 6.44,
+      "text": "so I'm going to say"
+    },
+    {
+      "start": 752.22,
+      "duration": 4.22,
+      "text": "here underscore underscore name"
+    },
+    {
+      "start": 758.1,
+      "duration": 4.02,
+      "text": "okay let's save this now I'm going to"
+    },
+    {
+      "start": 759.54,
+      "duration": 4.26,
+      "text": "exit from here python shell and run the"
+    },
+    {
+      "start": 762.12,
+      "duration": 4.32,
+      "text": "command again so"
+    },
+    {
+      "start": 763.8,
+      "duration": 4.46,
+      "text": "I'm going to say"
+    },
+    {
+      "start": 766.44,
+      "duration": 4.62,
+      "text": "Python 3"
+    },
+    {
+      "start": 768.26,
+      "duration": 5.5,
+      "text": "app.5 and now you can see it's running"
+    },
+    {
+      "start": 771.06,
+      "duration": 7.16,
+      "text": "on Port 5000 so I can open my browser"
+    },
+    {
+      "start": 773.76,
+      "duration": 4.46,
+      "text": "here and run localhost"
+    },
+    {
+      "start": 780.12,
+      "duration": 5.519,
+      "text": "code 5000."
+    },
+    {
+      "start": 782.639,
+      "duration": 4.561,
+      "text": "so you can see I have an application or"
+    },
+    {
+      "start": 785.639,
+      "duration": 3.181,
+      "text": "it is showing me the CPU relation and"
+    },
+    {
+      "start": 787.2,
+      "duration": 3.66,
+      "text": "memory utilization which is 21 CPU"
+    },
+    {
+      "start": 788.82,
+      "duration": 3.72,
+      "text": "memory is 55 if I refresh I'm going to"
+    },
+    {
+      "start": 790.86,
+      "duration": 2.7,
+      "text": "get the real-time metric which means my"
+    },
+    {
+      "start": 792.54,
+      "duration": 2.4,
+      "text": "application is running properly and you"
+    },
+    {
+      "start": 793.56,
+      "duration": 2.94,
+      "text": "can also see the logs here so every time"
+    },
+    {
+      "start": 794.94,
+      "duration": 2.579,
+      "text": "I refresh I will get a lock here which"
+    },
+    {
+      "start": 796.5,
+      "duration": 3.18,
+      "text": "means I have a monitoring application"
+    },
+    {
+      "start": 797.519,
+      "duration": 3.721,
+      "text": "created in Python using PS util and"
+    },
+    {
+      "start": 799.68,
+      "duration": 3.24,
+      "text": "flask so this is how you can create it"
+    },
+    {
+      "start": 801.24,
+      "duration": 3.12,
+      "text": "even though this does not look so fancy"
+    },
+    {
+      "start": 802.92,
+      "duration": 3.359,
+      "text": "but we still have the information that"
+    },
+    {
+      "start": 804.36,
+      "duration": 3.659,
+      "text": "we want so we have the CPU here and the"
+    },
+    {
+      "start": 806.279,
+      "duration": 3.3,
+      "text": "memory here which means we have our"
+    },
+    {
+      "start": 808.019,
+      "duration": 2.94,
+      "text": "application running and everything is"
+    },
+    {
+      "start": 809.579,
+      "duration": 2.88,
+      "text": "performing properly so this is how you"
+    },
+    {
+      "start": 810.959,
+      "duration": 3.361,
+      "text": "can create a application in 16 lines"
+    },
+    {
+      "start": 812.459,
+      "duration": 4.44,
+      "text": "where you can get the CPU and the memory"
+    },
+    {
+      "start": 814.32,
+      "duration": 4.199,
+      "text": "now let's try to change this style and"
+    },
+    {
+      "start": 816.899,
+      "duration": 3.601,
+      "text": "add something so that we can make it"
+    },
+    {
+      "start": 818.519,
+      "duration": 4.741,
+      "text": "look good so I'm going to stop this app"
+    },
+    {
+      "start": 820.5,
+      "duration": 4.2,
+      "text": "for now clear everything and to add a"
+    },
+    {
+      "start": 823.26,
+      "duration": 2.819,
+      "text": "style in your flask application you need"
+    },
+    {
+      "start": 824.7,
+      "duration": 5.04,
+      "text": "to use something with a render template"
+    },
+    {
+      "start": 826.079,
+      "duration": 5.401,
+      "text": "so render underscore template"
+    },
+    {
+      "start": 829.74,
+      "duration": 3.48,
+      "text": "and I'm going to use a file nameless"
+    },
+    {
+      "start": 831.48,
+      "duration": 3.9,
+      "text": "index.html so I need to first get a"
+    },
+    {
+      "start": 833.22,
+      "duration": 3.66,
+      "text": "folder name it has templates"
+    },
+    {
+      "start": 835.38,
+      "duration": 5.579,
+      "text": "inside this template folder I'm going to"
+    },
+    {
+      "start": 836.88,
+      "duration": 6.42,
+      "text": "create a file name it index dot HTML"
+    },
+    {
+      "start": 840.959,
+      "duration": 4.141,
+      "text": "okay so I messed it here I'm going to"
+    },
+    {
+      "start": 843.3,
+      "duration": 3.96,
+      "text": "rename it make it"
+    },
+    {
+      "start": 845.1,
+      "duration": 3.6,
+      "text": "just index.html perfect now in the in"
+    },
+    {
+      "start": 847.26,
+      "duration": 3.48,
+      "text": "the settings.html I'm going to give you"
+    },
+    {
+      "start": 848.7,
+      "duration": 3.3,
+      "text": "the code that you need to enter and I'm"
+    },
+    {
+      "start": 850.74,
+      "duration": 3.839,
+      "text": "going to explain you that as well so"
+    },
+    {
+      "start": 852.0,
+      "duration": 4.62,
+      "text": "this is a index.html page where you're"
+    },
+    {
+      "start": 854.579,
+      "duration": 3.901,
+      "text": "going to set the style in the form of"
+    },
+    {
+      "start": 856.62,
+      "duration": 3.36,
+      "text": "gorge or the indicator to show us the"
+    },
+    {
+      "start": 858.48,
+      "duration": 2.64,
+      "text": "memory and the CPU so here there are a"
+    },
+    {
+      "start": 859.98,
+      "duration": 2.82,
+      "text": "few parameters that we need to enter one"
+    },
+    {
+      "start": 861.12,
+      "duration": 3.779,
+      "text": "of them is CPU percent the second is"
+    },
+    {
+      "start": 862.8,
+      "duration": 4.02,
+      "text": "message here and then the memory percent"
+    },
+    {
+      "start": 864.899,
+      "duration": 3.901,
+      "text": "so this is a different file and we need"
+    },
+    {
+      "start": 866.82,
+      "duration": 3.959,
+      "text": "to make the change here in the app.pi so"
+    },
+    {
+      "start": 868.8,
+      "duration": 2.94,
+      "text": "that it can use this index.html so I'm"
+    },
+    {
+      "start": 870.779,
+      "duration": 3.901,
+      "text": "going to change this return statement"
+    },
+    {
+      "start": 871.74,
+      "duration": 5.7,
+      "text": "here remove this part and say render"
+    },
+    {
+      "start": 874.68,
+      "duration": 4.62,
+      "text": "template user file which is index.html"
+    },
+    {
+      "start": 877.44,
+      "duration": 4.8,
+      "text": "so I'm going to say index"
+    },
+    {
+      "start": 879.3,
+      "duration": 4.5,
+      "text": "dot HTML use this file inside this file"
+    },
+    {
+      "start": 882.24,
+      "duration": 2.7,
+      "text": "we have certain parameters that we need"
+    },
+    {
+      "start": 883.8,
+      "duration": 3.599,
+      "text": "to"
+    },
+    {
+      "start": 884.94,
+      "duration": 4.139,
+      "text": "add so we have CPU percent in this if"
+    },
+    {
+      "start": 887.399,
+      "duration": 3.361,
+      "text": "you can see here it is asking for mem"
+    },
+    {
+      "start": 889.079,
+      "duration": 3.0,
+      "text": "percent and CPU percent so what is the"
+    },
+    {
+      "start": 890.76,
+      "duration": 4.319,
+      "text": "value of this I'm going to set the value"
+    },
+    {
+      "start": 892.079,
+      "duration": 4.5,
+      "text": "as CPU underscore percent equals to the"
+    },
+    {
+      "start": 895.079,
+      "duration": 3.361,
+      "text": "value that is stored in this variable so"
+    },
+    {
+      "start": 896.579,
+      "duration": 3.601,
+      "text": "equals to the same CPU person equal to"
+    },
+    {
+      "start": 898.44,
+      "duration": 3.3,
+      "text": "CPU percent"
+    },
+    {
+      "start": 900.18,
+      "duration": 2.94,
+      "text": "if you had something else here you need"
+    },
+    {
+      "start": 901.74,
+      "duration": 2.82,
+      "text": "to put let's say if you had CPU metric"
+    },
+    {
+      "start": 903.12,
+      "duration": 3.659,
+      "text": "here so you would be setting CPU metric"
+    },
+    {
+      "start": 904.56,
+      "duration": 3.48,
+      "text": "cables to CPU percent if you have mem"
+    },
+    {
+      "start": 906.779,
+      "duration": 2.761,
+      "text": "metric here then you would be seeing mem"
+    },
+    {
+      "start": 908.04,
+      "duration": 3.599,
+      "text": "metric equals to members I'm going to"
+    },
+    {
+      "start": 909.54,
+      "duration": 3.239,
+      "text": "say mem percent equals to main person"
+    },
+    {
+      "start": 911.639,
+      "duration": 3.781,
+      "text": "again which is going to store the value"
+    },
+    {
+      "start": 912.779,
+      "duration": 5.581,
+      "text": "of memory and then message equals to so"
+    },
+    {
+      "start": 915.42,
+      "duration": 4.919,
+      "text": "I'm going to this here we have a small M"
+    },
+    {
+      "start": 918.36,
+      "duration": 4.8,
+      "text": "you can see small M so I'm going to say"
+    },
+    {
+      "start": 920.339,
+      "duration": 3.961,
+      "text": "message equals to"
+    },
+    {
+      "start": 923.16,
+      "duration": 3.72,
+      "text": "the value that is going to be stored"
+    },
+    {
+      "start": 924.3,
+      "duration": 3.719,
+      "text": "here so if the CPU is more than 80 it"
+    },
+    {
+      "start": 926.88,
+      "duration": 4.44,
+      "text": "should show us this value so I'm going"
+    },
+    {
+      "start": 928.019,
+      "duration": 5.94,
+      "text": "to say message equals to message"
+    },
+    {
+      "start": 931.32,
+      "duration": 4.62,
+      "text": "here okay all right now we have added"
+    },
+    {
+      "start": 933.959,
+      "duration": 4.201,
+      "text": "some style to our application so we have"
+    },
+    {
+      "start": 935.94,
+      "duration": 3.42,
+      "text": "added template to use this index.html"
+    },
+    {
+      "start": 938.16,
+      "duration": 2.7,
+      "text": "which is going to show us in some kind"
+    },
+    {
+      "start": 939.36,
+      "duration": 2.58,
+      "text": "of formats I'm going to save this and"
+    },
+    {
+      "start": 940.86,
+      "duration": 4.08,
+      "text": "here's my file I'm going to save it as"
+    },
+    {
+      "start": 941.94,
+      "duration": 4.399,
+      "text": "well and then now the app again and it"
+    },
+    {
+      "start": 944.94,
+      "duration": 3.42,
+      "text": "is"
+    },
+    {
+      "start": 946.339,
+      "duration": 4.3,
+      "text": "refresh now"
+    },
+    {
+      "start": 948.36,
+      "duration": 3.9,
+      "text": "if I refresh now I can see you can see"
+    },
+    {
+      "start": 950.639,
+      "duration": 3.601,
+      "text": "that this CPU and memory is shown in a"
+    },
+    {
+      "start": 952.26,
+      "duration": 4.259,
+      "text": "good format so we have CPU here in the"
+    },
+    {
+      "start": 954.24,
+      "duration": 4.98,
+      "text": "in this percentage symbol and we have"
+    },
+    {
+      "start": 956.519,
+      "duration": 4.801,
+      "text": "memory area if I refresh I will get the"
+    },
+    {
+      "start": 959.22,
+      "duration": 3.419,
+      "text": "updated real-time value so this is how"
+    },
+    {
+      "start": 961.32,
+      "duration": 3.66,
+      "text": "you can create your own by some"
+    },
+    {
+      "start": 962.639,
+      "duration": 4.56,
+      "text": "monitoring application and it is using"
+    },
+    {
+      "start": 964.98,
+      "duration": 4.08,
+      "text": "the style stored in index.html which"
+    },
+    {
+      "start": 967.199,
+      "duration": 3.781,
+      "text": "means everything is working fine"
+    },
+    {
+      "start": 969.06,
+      "duration": 4.26,
+      "text": "so now that you have this application"
+    },
+    {
+      "start": 970.98,
+      "duration": 5.06,
+      "text": "ready and it is now running in the"
+    },
+    {
+      "start": 973.32,
+      "duration": 5.94,
+      "text": "index it is now running in localhost or"
+    },
+    {
+      "start": 976.04,
+      "duration": 4.539,
+      "text": "127 which is in my local machine how can"
+    },
+    {
+      "start": 979.26,
+      "duration": 3.18,
+      "text": "I run this in Docker container or how"
+    },
+    {
+      "start": 980.579,
+      "duration": 3.601,
+      "text": "can I run this and kubernetes cluster so"
+    },
+    {
+      "start": 982.44,
+      "duration": 3.48,
+      "text": "to do that we will need to dockerize"
+    },
+    {
+      "start": 984.18,
+      "duration": 3.18,
+      "text": "this application now so let's try to"
+    },
+    {
+      "start": 985.92,
+      "duration": 2.7,
+      "text": "create a Docker file so that we can"
+    },
+    {
+      "start": 987.36,
+      "duration": 3.06,
+      "text": "deploy this application in the form of"
+    },
+    {
+      "start": 988.62,
+      "duration": 4.079,
+      "text": "container so I'm going to stop this"
+    },
+    {
+      "start": 990.42,
+      "duration": 4.26,
+      "text": "application now and let's try to create"
+    },
+    {
+      "start": 992.699,
+      "duration": 2.94,
+      "text": "Docker file for this so we have now see"
+    },
+    {
+      "start": 994.68,
+      "duration": 2.339,
+      "text": "we have now seen how to create a"
+    },
+    {
+      "start": 995.639,
+      "duration": 4.32,
+      "text": "monitoring application which is going to"
+    },
+    {
+      "start": 997.019,
+      "duration": 4.62,
+      "text": "run on localhost let's try to deploy"
+    },
+    {
+      "start": 999.959,
+      "duration": 3.18,
+      "text": "this as a container and to do and to do"
+    },
+    {
+      "start": 1001.639,
+      "duration": 2.88,
+      "text": "that we are going to have to create a"
+    },
+    {
+      "start": 1003.139,
+      "duration": 3.181,
+      "text": "Docker file so I'm going to say Docker"
+    },
+    {
+      "start": 1004.519,
+      "duration": 3.421,
+      "text": "file here"
+    },
+    {
+      "start": 1006.32,
+      "duration": 3.18,
+      "text": "inside this Docker file we need to"
+    },
+    {
+      "start": 1007.94,
+      "duration": 3.24,
+      "text": "define the instructions so that our"
+    },
+    {
+      "start": 1009.5,
+      "duration": 3.36,
+      "text": "application here can run in the form of"
+    },
+    {
+      "start": 1011.18,
+      "duration": 3.659,
+      "text": "can create an image and then run in the"
+    },
+    {
+      "start": 1012.86,
+      "duration": 3.479,
+      "text": "form of container so this is the python"
+    },
+    {
+      "start": 1014.839,
+      "duration": 3.12,
+      "text": "application and we're going to use"
+    },
+    {
+      "start": 1016.339,
+      "duration": 3.721,
+      "text": "python as our base image so if I go here"
+    },
+    {
+      "start": 1017.959,
+      "duration": 3.781,
+      "text": "in my browser and go to Docker app so"
+    },
+    {
+      "start": 1020.06,
+      "duration": 3.899,
+      "text": "Docker Hub is here I'm going to Docker"
+    },
+    {
+      "start": 1021.74,
+      "duration": 3.599,
+      "text": "Hub and then search for the python image"
+    },
+    {
+      "start": 1023.959,
+      "duration": 2.821,
+      "text": "so you will find all the different"
+    },
+    {
+      "start": 1025.339,
+      "duration": 2.761,
+      "text": "images in your pipe in your Docker app"
+    },
+    {
+      "start": 1026.78,
+      "duration": 4.08,
+      "text": "if you don't know what Docker app is so"
+    },
+    {
+      "start": 1028.1,
+      "duration": 4.56,
+      "text": "I'm going to search for Python and you"
+    },
+    {
+      "start": 1030.86,
+      "duration": 3.719,
+      "text": "can see that this is the official python"
+    },
+    {
+      "start": 1032.66,
+      "duration": 3.299,
+      "text": "image and inside this image you have"
+    },
+    {
+      "start": 1034.579,
+      "duration": 3.781,
+      "text": "different versions so we're going to use"
+    },
+    {
+      "start": 1035.959,
+      "duration": 4.261,
+      "text": "the version which is 3.9 slim Buster"
+    },
+    {
+      "start": 1038.36,
+      "duration": 3.599,
+      "text": "this one so I'm going to say in my"
+    },
+    {
+      "start": 1040.22,
+      "duration": 3.78,
+      "text": "Docker file I'm going to say"
+    },
+    {
+      "start": 1041.959,
+      "duration": 3.781,
+      "text": "from"
+    },
+    {
+      "start": 1044.0,
+      "duration": 3.12,
+      "text": "we need to define the base image so the"
+    },
+    {
+      "start": 1045.74,
+      "duration": 3.2,
+      "text": "base image is python"
+    },
+    {
+      "start": 1047.12,
+      "duration": 5.939,
+      "text": "colon"
+    },
+    {
+      "start": 1048.94,
+      "duration": 6.4,
+      "text": "3.9 hyphen Slim"
+    },
+    {
+      "start": 1053.059,
+      "duration": 5.221,
+      "text": "hyphen Buster so we are going to use"
+    },
+    {
+      "start": 1055.34,
+      "duration": 4.44,
+      "text": "this one here so we are saying that use"
+    },
+    {
+      "start": 1058.28,
+      "duration": 2.759,
+      "text": "this as a base image so you can see"
+    },
+    {
+      "start": 1059.78,
+      "duration": 2.94,
+      "text": "since set the base image to use for"
+    },
+    {
+      "start": 1061.039,
+      "duration": 3.0,
+      "text": "subsequent instruction and after we set"
+    },
+    {
+      "start": 1062.72,
+      "duration": 2.94,
+      "text": "the base image we're going to say set"
+    },
+    {
+      "start": 1064.039,
+      "duration": 2.821,
+      "text": "the working directory so when a"
+    },
+    {
+      "start": 1065.66,
+      "duration": 2.639,
+      "text": "container is running where which"
+    },
+    {
+      "start": 1066.86,
+      "duration": 3.179,
+      "text": "directory should it work in so I'm going"
+    },
+    {
+      "start": 1068.299,
+      "duration": 4.201,
+      "text": "to say it work directory is going to be"
+    },
+    {
+      "start": 1070.039,
+      "duration": 4.321,
+      "text": "slash app so we have sent the working"
+    },
+    {
+      "start": 1072.5,
+      "duration": 3.0,
+      "text": "directory AS Slash app here so set the"
+    },
+    {
+      "start": 1074.36,
+      "duration": 3.059,
+      "text": "working directory for any subsequent"
+    },
+    {
+      "start": 1075.5,
+      "duration": 3.179,
+      "text": "commands that you're going to run so"
+    },
+    {
+      "start": 1077.419,
+      "duration": 2.401,
+      "text": "with all the commands that are going to"
+    },
+    {
+      "start": 1078.679,
+      "duration": 3.421,
+      "text": "be below here are going to be running in"
+    },
+    {
+      "start": 1079.82,
+      "duration": 3.42,
+      "text": "the slash app part so now I have the"
+    },
+    {
+      "start": 1082.1,
+      "duration": 2.699,
+      "text": "base image ready I have the working"
+    },
+    {
+      "start": 1083.24,
+      "duration": 3.299,
+      "text": "directory set I am going to say that"
+    },
+    {
+      "start": 1084.799,
+      "duration": 3.361,
+      "text": "this requirement.txt should be inside my"
+    },
+    {
+      "start": 1086.539,
+      "duration": 3.541,
+      "text": "app so that my container should be"
+    },
+    {
+      "start": 1088.16,
+      "duration": 3.66,
+      "text": "having all the dependencies and this is"
+    },
+    {
+      "start": 1090.08,
+      "duration": 3.719,
+      "text": "this is why Docker is very much used"
+    },
+    {
+      "start": 1091.82,
+      "duration": 3.12,
+      "text": "because Docker has a container which has"
+    },
+    {
+      "start": 1093.799,
+      "duration": 2.581,
+      "text": "the application code and the"
+    },
+    {
+      "start": 1094.94,
+      "duration": 3.06,
+      "text": "dependencies which can run in any"
+    },
+    {
+      "start": 1096.38,
+      "duration": 3.299,
+      "text": "platform no matter if you have the model"
+    },
+    {
+      "start": 1098.0,
+      "duration": 2.88,
+      "text": "installing your machine or not so that"
+    },
+    {
+      "start": 1099.679,
+      "duration": 2.88,
+      "text": "is what we're going to do we're now"
+    },
+    {
+      "start": 1100.88,
+      "duration": 3.539,
+      "text": "going to copy this requirement.txt from"
+    },
+    {
+      "start": 1102.559,
+      "duration": 3.781,
+      "text": "a local machine inside this image so I'm"
+    },
+    {
+      "start": 1104.419,
+      "duration": 4.921,
+      "text": "going to say copy"
+    },
+    {
+      "start": 1106.34,
+      "duration": 3.0,
+      "text": "requirements.txt"
+    },
+    {
+      "start": 1110.539,
+      "duration": 3.421,
+      "text": "in the app so they're saying dot so we"
+    },
+    {
+      "start": 1112.7,
+      "duration": 2.339,
+      "text": "are right now in the app if I copy it"
+    },
+    {
+      "start": 1113.96,
+      "duration": 2.099,
+      "text": "from here I'm going to copy it inside"
+    },
+    {
+      "start": 1115.039,
+      "duration": 3.241,
+      "text": "yeah"
+    },
+    {
+      "start": 1116.059,
+      "duration": 4.801,
+      "text": "okay so now I've copied this let's go"
+    },
+    {
+      "start": 1118.28,
+      "duration": 4.259,
+      "text": "and run this command which is going to"
+    },
+    {
+      "start": 1120.86,
+      "duration": 2.699,
+      "text": "be to install all this so we run the"
+    },
+    {
+      "start": 1122.539,
+      "duration": 2.88,
+      "text": "command paper install hyphen"
+    },
+    {
+      "start": 1123.559,
+      "duration": 4.801,
+      "text": "requirement.txt similarly I'm going to"
+    },
+    {
+      "start": 1125.419,
+      "duration": 4.321,
+      "text": "say run so run is the parameter to run"
+    },
+    {
+      "start": 1128.36,
+      "duration": 2.52,
+      "text": "the commands execute any commands on the"
+    },
+    {
+      "start": 1129.74,
+      "duration": 4.74,
+      "text": "top of the current image so I'm going to"
+    },
+    {
+      "start": 1130.88,
+      "duration": 5.039,
+      "text": "say run pip 3 install"
+    },
+    {
+      "start": 1134.48,
+      "duration": 3.059,
+      "text": "hyphen hyphen I'm going to add a new"
+    },
+    {
+      "start": 1135.919,
+      "duration": 3.901,
+      "text": "parameter saying no cache so that"
+    },
+    {
+      "start": 1137.539,
+      "duration": 4.861,
+      "text": "there's no caching issues no cache"
+    },
+    {
+      "start": 1139.82,
+      "duration": 5.58,
+      "text": "hyphen dir and then hyphen r"
+    },
+    {
+      "start": 1142.4,
+      "duration": 3.0,
+      "text": "requirements.txt"
+    },
+    {
+      "start": 1146.48,
+      "duration": 4.199,
+      "text": "okay this instruction here is going to"
+    },
+    {
+      "start": 1149.24,
+      "duration": 3.299,
+      "text": "install everything that is here which is"
+    },
+    {
+      "start": 1150.679,
+      "duration": 3.301,
+      "text": "required for application to run"
+    },
+    {
+      "start": 1152.539,
+      "duration": 3.121,
+      "text": "so after the installation of the"
+    },
+    {
+      "start": 1153.98,
+      "duration": 3.48,
+      "text": "requirement.txt we want the code which"
+    },
+    {
+      "start": 1155.66,
+      "duration": 2.7,
+      "text": "is app.pi the template everything inside"
+    },
+    {
+      "start": 1157.46,
+      "duration": 2.459,
+      "text": "our"
+    },
+    {
+      "start": 1158.36,
+      "duration": 4.62,
+      "text": "this folder so I'm going to say copy"
+    },
+    {
+      "start": 1159.919,
+      "duration": 4.5,
+      "text": "again so copy everything that is there"
+    },
+    {
+      "start": 1162.98,
+      "duration": 3.96,
+      "text": "inside this directory to be app"
+    },
+    {
+      "start": 1164.419,
+      "duration": 3.901,
+      "text": "directory so copy Dot and Dot perfect"
+    },
+    {
+      "start": 1166.94,
+      "duration": 2.7,
+      "text": "now we have all the application code"
+    },
+    {
+      "start": 1168.32,
+      "duration": 3.9,
+      "text": "inside our working directory with the"
+    },
+    {
+      "start": 1169.64,
+      "duration": 4.02,
+      "text": "slash app here and we are now ready to"
+    },
+    {
+      "start": 1172.22,
+      "duration": 4.319,
+      "text": "run the application but before we do"
+    },
+    {
+      "start": 1173.66,
+      "duration": 4.139,
+      "text": "that we need to set the host as 0.0 so"
+    },
+    {
+      "start": 1176.539,
+      "duration": 4.26,
+      "text": "I'm going to define the environment"
+    },
+    {
+      "start": 1177.799,
+      "duration": 4.681,
+      "text": "variable saying e and V equals to uh"
+    },
+    {
+      "start": 1180.799,
+      "duration": 3.24,
+      "text": "let's say it's flask"
+    },
+    {
+      "start": 1182.48,
+      "duration": 5.12,
+      "text": "underscore run"
+    },
+    {
+      "start": 1184.039,
+      "duration": 5.581,
+      "text": "underscore host equals to"
+    },
+    {
+      "start": 1187.6,
+      "duration": 3.34,
+      "text": "0.0.0.0 which means even though I'm"
+    },
+    {
+      "start": 1189.62,
+      "duration": 2.939,
+      "text": "running this in document it should work"
+    },
+    {
+      "start": 1190.94,
+      "duration": 3.9,
+      "text": "fine because I'm setting the host as 0.0"
+    },
+    {
+      "start": 1192.559,
+      "duration": 4.561,
+      "text": "which is not restricting restricting my"
+    },
+    {
+      "start": 1194.84,
+      "duration": 3.839,
+      "text": "application so after I do this I'm going"
+    },
+    {
+      "start": 1197.12,
+      "duration": 3.179,
+      "text": "to expose some ports so this application"
+    },
+    {
+      "start": 1198.679,
+      "duration": 4.441,
+      "text": "that we were running was running on Port"
+    },
+    {
+      "start": 1200.299,
+      "duration": 5.281,
+      "text": "5000 so we need to expose support saying"
+    },
+    {
+      "start": 1203.12,
+      "duration": 3.6,
+      "text": "uh so expose if you see here it says the"
+    },
+    {
+      "start": 1205.58,
+      "duration": 2.64,
+      "text": "instruction is to define the network"
+    },
+    {
+      "start": 1206.72,
+      "duration": 3.48,
+      "text": "Port that is container will listen on at"
+    },
+    {
+      "start": 1208.22,
+      "duration": 3.6,
+      "text": "the runtime so container is going to run"
+    },
+    {
+      "start": 1210.2,
+      "duration": 4.859,
+      "text": "on 5000 so I'm going to say five"
+    },
+    {
+      "start": 1211.82,
+      "duration": 4.5,
+      "text": "thousand here okay and lastly we want"
+    },
+    {
+      "start": 1215.059,
+      "duration": 2.701,
+      "text": "the command to be running so that this"
+    },
+    {
+      "start": 1216.32,
+      "duration": 4.4,
+      "text": "last application to run so here we have"
+    },
+    {
+      "start": 1217.76,
+      "duration": 6.06,
+      "text": "app.run similarly we will say"
+    },
+    {
+      "start": 1220.72,
+      "duration": 5.92,
+      "text": "CMD and then inside this"
+    },
+    {
+      "start": 1223.82,
+      "duration": 4.32,
+      "text": "square bracket I'm going to say flask"
+    },
+    {
+      "start": 1226.64,
+      "duration": 3.0,
+      "text": "and then"
+    },
+    {
+      "start": 1228.14,
+      "duration": 2.64,
+      "text": "so we have executable and the parameters"
+    },
+    {
+      "start": 1229.64,
+      "duration": 3.12,
+      "text": "executed this class here and the"
+    },
+    {
+      "start": 1230.78,
+      "duration": 4.44,
+      "text": "parameter is run so I'm going to say run"
+    },
+    {
+      "start": 1232.76,
+      "duration": 3.9,
+      "text": "okay so we have our Docker file ready"
+    },
+    {
+      "start": 1235.22,
+      "duration": 2.64,
+      "text": "you can see first we Define the base"
+    },
+    {
+      "start": 1236.66,
+      "duration": 2.399,
+      "text": "image then we Define the working"
+    },
+    {
+      "start": 1237.86,
+      "duration": 3.36,
+      "text": "directory where the application is going"
+    },
+    {
+      "start": 1239.059,
+      "duration": 3.901,
+      "text": "to run so copy the requirement.tc from"
+    },
+    {
+      "start": 1241.22,
+      "duration": 2.94,
+      "text": "here inside the slash app run the"
+    },
+    {
+      "start": 1242.96,
+      "duration": 3.36,
+      "text": "command to install everything inside the"
+    },
+    {
+      "start": 1244.16,
+      "duration": 3.78,
+      "text": "requirement.txt copy the code from here"
+    },
+    {
+      "start": 1246.32,
+      "duration": 3.42,
+      "text": "inside the image set the environment"
+    },
+    {
+      "start": 1247.94,
+      "duration": 2.94,
+      "text": "variable expose the port and then lastly"
+    },
+    {
+      "start": 1249.74,
+      "duration": 3.84,
+      "text": "we are going to run the commands to"
+    },
+    {
+      "start": 1250.88,
+      "duration": 4.02,
+      "text": "start the flask cap okay so we have our"
+    },
+    {
+      "start": 1253.58,
+      "duration": 3.24,
+      "text": "Docker file ready as you can see we have"
+    },
+    {
+      "start": 1254.9,
+      "duration": 3.18,
+      "text": "defined everything here so let me show"
+    },
+    {
+      "start": 1256.82,
+      "duration": 2.88,
+      "text": "you the workflow if you see here"
+    },
+    {
+      "start": 1258.08,
+      "duration": 3.3,
+      "text": "whenever you want to create a container"
+    },
+    {
+      "start": 1259.7,
+      "duration": 3.18,
+      "text": "out of your application you need to"
+    },
+    {
+      "start": 1261.38,
+      "duration": 2.88,
+      "text": "First create a Docker file and using"
+    },
+    {
+      "start": 1262.88,
+      "duration": 3.06,
+      "text": "that Docker file you can run the command"
+    },
+    {
+      "start": 1264.26,
+      "duration": 3.419,
+      "text": "Docker build to create an image which"
+    },
+    {
+      "start": 1265.94,
+      "duration": 3.119,
+      "text": "will then be used to run a container so"
+    },
+    {
+      "start": 1267.679,
+      "duration": 2.641,
+      "text": "now we have a Docker file we need to"
+    },
+    {
+      "start": 1269.059,
+      "duration": 3.901,
+      "text": "create an image out of it so we're going"
+    },
+    {
+      "start": 1270.32,
+      "duration": 5.82,
+      "text": "to go here in the vs code and say Docker"
+    },
+    {
+      "start": 1272.96,
+      "duration": 5.76,
+      "text": "build hyphen T to give the name of the"
+    },
+    {
+      "start": 1276.14,
+      "duration": 4.08,
+      "text": "image I'm going to say my flask"
+    },
+    {
+      "start": 1278.72,
+      "duration": 4.199,
+      "text": "at"
+    },
+    {
+      "start": 1280.22,
+      "duration": 4.14,
+      "text": "and then we need to say dot dot to tell"
+    },
+    {
+      "start": 1282.919,
+      "duration": 3.361,
+      "text": "Docker that user Docker file that is"
+    },
+    {
+      "start": 1284.36,
+      "duration": 3.179,
+      "text": "present inside this directory so I'm"
+    },
+    {
+      "start": 1286.28,
+      "duration": 3.36,
+      "text": "going to say Docker will hyphen T my"
+    },
+    {
+      "start": 1287.539,
+      "duration": 3.901,
+      "text": "flash cap and then dot once I press dot"
+    },
+    {
+      "start": 1289.64,
+      "duration": 3.659,
+      "text": "everything that is defined here will run"
+    },
+    {
+      "start": 1291.44,
+      "duration": 3.599,
+      "text": "one by one so I'm going to save yes and"
+    },
+    {
+      "start": 1293.299,
+      "duration": 4.201,
+      "text": "then it is going to pull the image which"
+    },
+    {
+      "start": 1295.039,
+      "duration": 3.841,
+      "text": "is python 3.9 slim Blaster from Docker"
+    },
+    {
+      "start": 1297.5,
+      "duration": 2.94,
+      "text": "Hub so we're going to pull it so you can"
+    },
+    {
+      "start": 1298.88,
+      "duration": 3.84,
+      "text": "see it's downloading the image from the"
+    },
+    {
+      "start": 1300.44,
+      "duration": 3.54,
+      "text": "docker app to use the use the base for"
+    },
+    {
+      "start": 1302.72,
+      "duration": 3.12,
+      "text": "this image or for the container that we"
+    },
+    {
+      "start": 1303.98,
+      "duration": 2.939,
+      "text": "can do that after it pulls it up it's"
+    },
+    {
+      "start": 1305.84,
+      "duration": 2.819,
+      "text": "going to then Define the working"
+    },
+    {
+      "start": 1306.919,
+      "duration": 3.481,
+      "text": "directory as app copy this"
+    },
+    {
+      "start": 1308.659,
+      "duration": 4.321,
+      "text": "requirement.txt thing and then start"
+    },
+    {
+      "start": 1310.4,
+      "duration": 3.779,
+      "text": "installing it so it has I defined it now"
+    },
+    {
+      "start": 1312.98,
+      "duration": 3.12,
+      "text": "it is installing all the requirement or"
+    },
+    {
+      "start": 1314.179,
+      "duration": 3.421,
+      "text": "txt things which are markup save flask"
+    },
+    {
+      "start": 1316.1,
+      "duration": 3.6,
+      "text": "this is very important so that our"
+    },
+    {
+      "start": 1317.6,
+      "duration": 3.959,
+      "text": "application is full of dependencies and"
+    },
+    {
+      "start": 1319.7,
+      "duration": 3.78,
+      "text": "code and it should not show us any error"
+    },
+    {
+      "start": 1321.559,
+      "duration": 3.181,
+      "text": "now it is installing Moto 3 as you can"
+    },
+    {
+      "start": 1323.48,
+      "duration": 3.48,
+      "text": "see here and lastly to install"
+    },
+    {
+      "start": 1324.74,
+      "duration": 3.9,
+      "text": "kubernetes which is here and then I"
+    },
+    {
+      "start": 1326.96,
+      "duration": 3.36,
+      "text": "didn't go to the next step which is to"
+    },
+    {
+      "start": 1328.64,
+      "duration": 3.18,
+      "text": "copy the application code inside the app"
+    },
+    {
+      "start": 1330.32,
+      "duration": 3.66,
+      "text": "directory set up the environment"
+    },
+    {
+      "start": 1331.82,
+      "duration": 4.08,
+      "text": "variable expose the port to 5000 and"
+    },
+    {
+      "start": 1333.98,
+      "duration": 3.179,
+      "text": "then lastly run the command so you can"
+    },
+    {
+      "start": 1335.9,
+      "duration": 2.94,
+      "text": "see here it's going to install all the"
+    },
+    {
+      "start": 1337.159,
+      "duration": 2.88,
+      "text": "dependencies it has installed all of"
+    },
+    {
+      "start": 1338.84,
+      "duration": 2.76,
+      "text": "these dependencies here which are going"
+    },
+    {
+      "start": 1340.039,
+      "duration": 2.941,
+      "text": "to be required for this application to"
+    },
+    {
+      "start": 1341.6,
+      "duration": 3.42,
+      "text": "run properly"
+    },
+    {
+      "start": 1342.98,
+      "duration": 4.14,
+      "text": "once it is done it will move to the next"
+    },
+    {
+      "start": 1345.02,
+      "duration": 3.96,
+      "text": "step which is here so it is showing as a"
+    },
+    {
+      "start": 1347.12,
+      "duration": 5.22,
+      "text": "warning which is not a problem because"
+    },
+    {
+      "start": 1348.98,
+      "duration": 4.62,
+      "text": "it's not an error so no problem so now"
+    },
+    {
+      "start": 1352.34,
+      "duration": 2.579,
+      "text": "you can see it has copied all the code"
+    },
+    {
+      "start": 1353.6,
+      "duration": 3.18,
+      "text": "and now we have an application here"
+    },
+    {
+      "start": 1354.919,
+      "duration": 4.38,
+      "text": "which is my so I'm going to run doctor"
+    },
+    {
+      "start": 1356.78,
+      "duration": 3.66,
+      "text": "images to check how many images do I"
+    },
+    {
+      "start": 1359.299,
+      "duration": 2.521,
+      "text": "have so you can see there are two images"
+    },
+    {
+      "start": 1360.44,
+      "duration": 3.599,
+      "text": "one of them is just created nine seconds"
+    },
+    {
+      "start": 1361.82,
+      "duration": 4.08,
+      "text": "ago which is here so we have an image"
+    },
+    {
+      "start": 1364.039,
+      "duration": 3.721,
+      "text": "created from our Docker file so we have"
+    },
+    {
+      "start": 1365.9,
+      "duration": 3.06,
+      "text": "a Docker file we created an image now we"
+    },
+    {
+      "start": 1367.76,
+      "duration": 2.7,
+      "text": "have an image let's create a Docker"
+    },
+    {
+      "start": 1368.96,
+      "duration": 3.06,
+      "text": "container so for that you need to run"
+    },
+    {
+      "start": 1370.46,
+      "duration": 3.9,
+      "text": "the command which is Docker run command"
+    },
+    {
+      "start": 1372.02,
+      "duration": 4.56,
+      "text": "so I'm going to say Docker run hyphen"
+    },
+    {
+      "start": 1374.36,
+      "duration": 3.54,
+      "text": "beep Define the port so the port is 5000"
+    },
+    {
+      "start": 1376.58,
+      "duration": 4.02,
+      "text": "here in the container I'm going to say"
+    },
+    {
+      "start": 1377.9,
+      "duration": 4.74,
+      "text": "bind it with my port 5000 as a local"
+    },
+    {
+      "start": 1380.6,
+      "duration": 3.959,
+      "text": "machine so which means"
+    },
+    {
+      "start": 1382.64,
+      "duration": 3.96,
+      "text": "when I run this container it should work"
+    },
+    {
+      "start": 1384.559,
+      "duration": 3.48,
+      "text": "on 5000 in my localhost as well so and"
+    },
+    {
+      "start": 1386.6,
+      "duration": 2.76,
+      "text": "then lastly I need to put the image ID"
+    },
+    {
+      "start": 1388.039,
+      "duration": 3.541,
+      "text": "or the image name so I'm going to copy"
+    },
+    {
+      "start": 1389.36,
+      "duration": 4.799,
+      "text": "this ID and paste it here so it's going"
+    },
+    {
+      "start": 1391.58,
+      "duration": 4.2,
+      "text": "to be Docker run hyphen p uh the port"
+    },
+    {
+      "start": 1394.159,
+      "duration": 3.361,
+      "text": "number and the image ID once I do this"
+    },
+    {
+      "start": 1395.78,
+      "duration": 3.06,
+      "text": "and press enter the container is going"
+    },
+    {
+      "start": 1397.52,
+      "duration": 2.88,
+      "text": "to run now so you can see a container is"
+    },
+    {
+      "start": 1398.84,
+      "duration": 3.839,
+      "text": "running on this port and I can open my"
+    },
+    {
+      "start": 1400.4,
+      "duration": 4.44,
+      "text": "terminal open my browser do localhost"
+    },
+    {
+      "start": 1402.679,
+      "duration": 3.841,
+      "text": "5000 and you can see here this"
+    },
+    {
+      "start": 1404.84,
+      "duration": 4.38,
+      "text": "application is now running on Docker"
+    },
+    {
+      "start": 1406.52,
+      "duration": 3.899,
+      "text": "container so we get the we get the CPU"
+    },
+    {
+      "start": 1409.22,
+      "duration": 3.06,
+      "text": "and the memory of the docker container"
+    },
+    {
+      "start": 1410.419,
+      "duration": 3.061,
+      "text": "that is running here and you can see"
+    },
+    {
+      "start": 1412.28,
+      "duration": 3.3,
+      "text": "we're also getting the logs which means"
+    },
+    {
+      "start": 1413.48,
+      "duration": 4.559,
+      "text": "a Docker container is running our"
+    },
+    {
+      "start": 1415.58,
+      "duration": 4.26,
+      "text": "application very properly so we have our"
+    },
+    {
+      "start": 1418.039,
+      "duration": 4.321,
+      "text": "container application containerized and"
+    },
+    {
+      "start": 1419.84,
+      "duration": 4.26,
+      "text": "run in the form of Docker container I"
+    },
+    {
+      "start": 1422.36,
+      "duration": 3.12,
+      "text": "hope you have your application now in"
+    },
+    {
+      "start": 1424.1,
+      "duration": 3.12,
+      "text": "the form of container following this"
+    },
+    {
+      "start": 1425.48,
+      "duration": 3.54,
+      "text": "video if you have it just take a"
+    },
+    {
+      "start": 1427.22,
+      "duration": 2.939,
+      "text": "screenshot upload it on your LinkedIn on"
+    },
+    {
+      "start": 1429.02,
+      "duration": 2.639,
+      "text": "your resume and put it on your resume"
+    },
+    {
+      "start": 1430.159,
+      "duration": 3.301,
+      "text": "showing that you have knowledge of"
+    },
+    {
+      "start": 1431.659,
+      "duration": 3.301,
+      "text": "creating an application in Python then"
+    },
+    {
+      "start": 1433.46,
+      "duration": 3.18,
+      "text": "containerizing it using Docker file"
+    },
+    {
+      "start": 1434.96,
+      "duration": 3.66,
+      "text": "Docker image and then Docker container"
+    },
+    {
+      "start": 1436.64,
+      "duration": 3.6,
+      "text": "so now that we have a Docker image"
+    },
+    {
+      "start": 1438.62,
+      "duration": 4.02,
+      "text": "created and a Docker container let's put"
+    },
+    {
+      "start": 1440.24,
+      "duration": 4.2,
+      "text": "this image which is here to the"
+    },
+    {
+      "start": 1442.64,
+      "duration": 4.5,
+      "text": "repository we can use we can push this"
+    },
+    {
+      "start": 1444.44,
+      "duration": 4.8,
+      "text": "either on Docker Hub or on ECR but we"
+    },
+    {
+      "start": 1447.14,
+      "duration": 4.26,
+      "text": "are going to push this on ECR because"
+    },
+    {
+      "start": 1449.24,
+      "duration": 4.08,
+      "text": "we are going to deploy application in"
+    },
+    {
+      "start": 1451.4,
+      "duration": 4.5,
+      "text": "the form of kubernetes cluster so I'm"
+    },
+    {
+      "start": 1453.32,
+      "duration": 6.18,
+      "text": "going to open my AWS"
+    },
+    {
+      "start": 1455.9,
+      "duration": 5.279,
+      "text": "and you can find it here let's go to ECR"
+    },
+    {
+      "start": 1459.5,
+      "duration": 3.299,
+      "text": "repository so this is the place where"
+    },
+    {
+      "start": 1461.179,
+      "duration": 2.821,
+      "text": "you're going to push your Docker image"
+    },
+    {
+      "start": 1462.799,
+      "duration": 2.341,
+      "text": "which is going to be required to host"
+    },
+    {
+      "start": 1464.0,
+      "duration": 4.08,
+      "text": "your application in the kubernetes"
+    },
+    {
+      "start": 1465.14,
+      "duration": 5.1,
+      "text": "cluster so let me show you how it looks"
+    },
+    {
+      "start": 1468.08,
+      "duration": 3.78,
+      "text": "and what we need to do now so but till"
+    },
+    {
+      "start": 1470.24,
+      "duration": 2.64,
+      "text": "now I hope you don't have any confusion"
+    },
+    {
+      "start": 1471.86,
+      "duration": 2.58,
+      "text": "and you have an application running in"
+    },
+    {
+      "start": 1472.88,
+      "duration": 4.86,
+      "text": "the form of container which was running"
+    },
+    {
+      "start": 1474.44,
+      "duration": 4.739,
+      "text": "locally earlier so now let's deploy this"
+    },
+    {
+      "start": 1477.74,
+      "duration": 3.179,
+      "text": "in kubernetes and you don't need to have"
+    },
+    {
+      "start": 1479.179,
+      "duration": 3.061,
+      "text": "any prior knowledge of kubernetes to do"
+    },
+    {
+      "start": 1480.919,
+      "duration": 2.88,
+      "text": "this task it's I'm going to show you and"
+    },
+    {
+      "start": 1482.24,
+      "duration": 3.48,
+      "text": "explain you everything from step by step"
+    },
+    {
+      "start": 1483.799,
+      "duration": 4.561,
+      "text": "so don't worry about it so here we have"
+    },
+    {
+      "start": 1485.72,
+      "duration": 4.199,
+      "text": "ECR which is to share deploy a container"
+    },
+    {
+      "start": 1488.36,
+      "duration": 3.36,
+      "text": "software publicly or privately and we"
+    },
+    {
+      "start": 1489.919,
+      "duration": 3.181,
+      "text": "can go ahead create a repository which"
+    },
+    {
+      "start": 1491.72,
+      "duration": 3.42,
+      "text": "is going to store that image which will"
+    },
+    {
+      "start": 1493.1,
+      "duration": 4.62,
+      "text": "then be used by containers in kubernetes"
+    },
+    {
+      "start": 1495.14,
+      "duration": 3.779,
+      "text": "so I can easily go here and click on"
+    },
+    {
+      "start": 1497.72,
+      "duration": 3.3,
+      "text": "create fill with other details and"
+    },
+    {
+      "start": 1498.919,
+      "duration": 3.24,
+      "text": "create repository but that is no fun so"
+    },
+    {
+      "start": 1501.02,
+      "duration": 4.92,
+      "text": "I'm going to show you how you can create"
+    },
+    {
+      "start": 1502.159,
+      "duration": 5.281,
+      "text": "ECR repository in this in in my vs code"
+    },
+    {
+      "start": 1505.94,
+      "duration": 3.239,
+      "text": "using python so using this you will"
+    },
+    {
+      "start": 1507.44,
+      "duration": 3.78,
+      "text": "learn how to use border 3 module to"
+    },
+    {
+      "start": 1509.179,
+      "duration": 4.801,
+      "text": "create stuff in AWS and let me show you"
+    },
+    {
+      "start": 1511.22,
+      "duration": 3.959,
+      "text": "what boto3 is so if I go here and show"
+    },
+    {
+      "start": 1513.98,
+      "duration": 2.88,
+      "text": "you the documentation here is the"
+    },
+    {
+      "start": 1515.179,
+      "duration": 3.961,
+      "text": "documentation for voter 3 which is an"
+    },
+    {
+      "start": 1516.86,
+      "duration": 4.38,
+      "text": "AWS SDK for python to create configure"
+    },
+    {
+      "start": 1519.14,
+      "duration": 4.2,
+      "text": "and manage AWS services so you will find"
+    },
+    {
+      "start": 1521.24,
+      "duration": 3.84,
+      "text": "all the documentation here let's go to"
+    },
+    {
+      "start": 1523.34,
+      "duration": 5.52,
+      "text": "ECR so if I search for ECR here you can"
+    },
+    {
+      "start": 1525.08,
+      "duration": 6.0,
+      "text": "see ACR should be present here so I have"
+    },
+    {
+      "start": 1528.86,
+      "duration": 3.6,
+      "text": "TCR here and when I'm going to use"
+    },
+    {
+      "start": 1531.08,
+      "duration": 3.54,
+      "text": "Portal 3 I need to First Define the"
+    },
+    {
+      "start": 1532.46,
+      "duration": 4.38,
+      "text": "client as ECR and then I can use any of"
+    },
+    {
+      "start": 1534.62,
+      "duration": 3.36,
+      "text": "these API calls so we're going to create"
+    },
+    {
+      "start": 1536.84,
+      "duration": 3.12,
+      "text": "a repositories I'm going to choose this"
+    },
+    {
+      "start": 1537.98,
+      "duration": 3.54,
+      "text": "API call which is create repository and"
+    },
+    {
+      "start": 1539.96,
+      "duration": 3.0,
+      "text": "you can find all the information on the"
+    },
+    {
+      "start": 1541.52,
+      "duration": 2.94,
+      "text": "parameters here so using this parameter"
+    },
+    {
+      "start": 1542.96,
+      "duration": 5.54,
+      "text": "and information let's try to create a"
+    },
+    {
+      "start": 1544.46,
+      "duration": 4.04,
+      "text": "repository in our python image"
+    },
+    {
+      "start": 1548.72,
+      "duration": 2.6,
+      "text": "same"
+    },
+    {
+      "start": 1552.5,
+      "duration": 5.279,
+      "text": "so and here I'm going to create a new"
+    },
+    {
+      "start": 1554.12,
+      "duration": 5.34,
+      "text": "file name it ACR dot pi and for us to"
+    },
+    {
+      "start": 1557.779,
+      "duration": 3.14,
+      "text": "create anything in AWS we need to use"
+    },
+    {
+      "start": 1559.46,
+      "duration": 5.04,
+      "text": "Moto 3 modules I'm going to say import"
+    },
+    {
+      "start": 1560.919,
+      "duration": 6.161,
+      "text": "portal 3. so photo 3 is the SDK used to"
+    },
+    {
+      "start": 1564.5,
+      "duration": 4.38,
+      "text": "create AWS resources in the cloud so I'm"
+    },
+    {
+      "start": 1567.08,
+      "duration": 3.12,
+      "text": "going to say that and then next if you"
+    },
+    {
+      "start": 1568.88,
+      "duration": 3.179,
+      "text": "go to the documentation first thing you"
+    },
+    {
+      "start": 1570.2,
+      "duration": 3.599,
+      "text": "need to do is to send the client as ECR"
+    },
+    {
+      "start": 1572.059,
+      "duration": 3.901,
+      "text": "repo so you can see this is what we need"
+    },
+    {
+      "start": 1573.799,
+      "duration": 6.201,
+      "text": "to do so I'm going to say ECR underscore"
+    },
+    {
+      "start": 1575.96,
+      "duration": 6.18,
+      "text": "client equals to go to three"
+    },
+    {
+      "start": 1580.0,
+      "duration": 3.34,
+      "text": "dot client"
+    },
+    {
+      "start": 1582.14,
+      "duration": 2.279,
+      "text": "and the client is going to be easier"
+    },
+    {
+      "start": 1583.34,
+      "duration": 2.64,
+      "text": "because that is where we are going to"
+    },
+    {
+      "start": 1584.419,
+      "duration": 3.0,
+      "text": "run so if you remember my previous video"
+    },
+    {
+      "start": 1585.98,
+      "duration": 2.699,
+      "text": "I've shown you how to create ec2"
+    },
+    {
+      "start": 1587.419,
+      "duration": 3.421,
+      "text": "instance and we have also set a client"
+    },
+    {
+      "start": 1588.679,
+      "duration": 4.561,
+      "text": "something like this uh for ec2 so now"
+    },
+    {
+      "start": 1590.84,
+      "duration": 3.66,
+      "text": "we're going to run ECR so let's go and"
+    },
+    {
+      "start": 1593.24,
+      "duration": 3.24,
+      "text": "Define it so I'm going to now create a"
+    },
+    {
+      "start": 1594.5,
+      "duration": 3.12,
+      "text": "repository so I'm going to say first"
+    },
+    {
+      "start": 1596.48,
+      "duration": 2.42,
+      "text": "Define the repository name so I'm going"
+    },
+    {
+      "start": 1597.62,
+      "duration": 3.78,
+      "text": "to say Repository"
+    },
+    {
+      "start": 1598.9,
+      "duration": 3.7,
+      "text": "repository underscore name is going to"
+    },
+    {
+      "start": 1601.4,
+      "duration": 3.779,
+      "text": "be"
+    },
+    {
+      "start": 1602.6,
+      "duration": 5.3,
+      "text": "uh let's give it"
+    },
+    {
+      "start": 1605.179,
+      "duration": 2.721,
+      "text": "my"
+    },
+    {
+      "start": 1608.48,
+      "duration": 5.16,
+      "text": "my cloud native"
+    },
+    {
+      "start": 1611.419,
+      "duration": 3.36,
+      "text": "repo something like this after I Define"
+    },
+    {
+      "start": 1613.64,
+      "duration": 2.94,
+      "text": "the repository I'm going to call the"
+    },
+    {
+      "start": 1614.779,
+      "duration": 3.9,
+      "text": "create repository function here so I'm"
+    },
+    {
+      "start": 1616.58,
+      "duration": 5.219,
+      "text": "going to say response"
+    },
+    {
+      "start": 1618.679,
+      "duration": 4.141,
+      "text": "equals to ECR underscore client dot"
+    },
+    {
+      "start": 1621.799,
+      "duration": 3.541,
+      "text": "create"
+    },
+    {
+      "start": 1622.82,
+      "duration": 4.32,
+      "text": "underscore repository so create"
+    },
+    {
+      "start": 1625.34,
+      "duration": 4.38,
+      "text": "underscore repository so we're going to"
+    },
+    {
+      "start": 1627.14,
+      "duration": 4.08,
+      "text": "use this API here which is this one"
+    },
+    {
+      "start": 1629.72,
+      "duration": 3.36,
+      "text": "create repository and it wants us to put"
+    },
+    {
+      "start": 1631.22,
+      "duration": 3.24,
+      "text": "some data like repository name so"
+    },
+    {
+      "start": 1633.08,
+      "duration": 3.079,
+      "text": "repository name here is the name of the"
+    },
+    {
+      "start": 1634.46,
+      "duration": 3.9,
+      "text": "repository so I'm going to say create"
+    },
+    {
+      "start": 1636.159,
+      "duration": 4.721,
+      "text": "repository inside this I'm going to"
+    },
+    {
+      "start": 1638.36,
+      "duration": 4.76,
+      "text": "define the name of the repository as so"
+    },
+    {
+      "start": 1640.88,
+      "duration": 6.12,
+      "text": "I'm going to say let's copy this here"
+    },
+    {
+      "start": 1643.12,
+      "duration": 5.439,
+      "text": "repository name equals to this value"
+    },
+    {
+      "start": 1647.0,
+      "duration": 4.38,
+      "text": "stored here so I'm going to copy this"
+    },
+    {
+      "start": 1648.559,
+      "duration": 4.201,
+      "text": "paste it here okay now this is going to"
+    },
+    {
+      "start": 1651.38,
+      "duration": 2.64,
+      "text": "create a repository for me but I want to"
+    },
+    {
+      "start": 1652.76,
+      "duration": 2.46,
+      "text": "have few things in my console after"
+    },
+    {
+      "start": 1654.02,
+      "duration": 4.56,
+      "text": "things I created so I want to get the"
+    },
+    {
+      "start": 1655.22,
+      "duration": 5.64,
+      "text": "repository URI which is"
+    },
+    {
+      "start": 1658.58,
+      "duration": 4.76,
+      "text": "somewhere here and where it is opposite"
+    },
+    {
+      "start": 1660.86,
+      "duration": 2.48,
+      "text": "to URI"
+    },
+    {
+      "start": 1664.82,
+      "duration": 3.3,
+      "text": "okay so you can find it here this is the"
+    },
+    {
+      "start": 1666.62,
+      "duration": 2.939,
+      "text": "repository URI URI for your repository"
+    },
+    {
+      "start": 1668.12,
+      "duration": 3.12,
+      "text": "which are going to be used in the next"
+    },
+    {
+      "start": 1669.559,
+      "duration": 3.12,
+      "text": "sessions when we are going to deploy"
+    },
+    {
+      "start": 1671.24,
+      "duration": 3.299,
+      "text": "this application is kubernetes so I'm"
+    },
+    {
+      "start": 1672.679,
+      "duration": 4.441,
+      "text": "going to copy a printed here in my"
+    },
+    {
+      "start": 1674.539,
+      "duration": 5.281,
+      "text": "terminal so I'm going to say Repository"
+    },
+    {
+      "start": 1677.12,
+      "duration": 5.52,
+      "text": "underscore URI equals to"
+    },
+    {
+      "start": 1679.82,
+      "duration": 4.38,
+      "text": "from the response I want you to give me"
+    },
+    {
+      "start": 1682.64,
+      "duration": 5.1,
+      "text": "repository UI so I'm going to say"
+    },
+    {
+      "start": 1684.2,
+      "duration": 3.54,
+      "text": "repository here"
+    },
+    {
+      "start": 1688.64,
+      "duration": 3.96,
+      "text": "and I want to get the URI so I'm going"
+    },
+    {
+      "start": 1690.98,
+      "duration": 4.799,
+      "text": "to say"
+    },
+    {
+      "start": 1692.6,
+      "duration": 5.4,
+      "text": "copy this and paste it here"
+    },
+    {
+      "start": 1695.779,
+      "duration": 3.721,
+      "text": "all right so this will store the value"
+    },
+    {
+      "start": 1698.0,
+      "duration": 3.72,
+      "text": "of repository URL let's print it out"
+    },
+    {
+      "start": 1699.5,
+      "duration": 4.799,
+      "text": "there is a print in the bracket I want"
+    },
+    {
+      "start": 1701.72,
+      "duration": 5.4,
+      "text": "to have repository URI"
+    },
+    {
+      "start": 1704.299,
+      "duration": 4.921,
+      "text": "okay all right so this is the code to"
+    },
+    {
+      "start": 1707.12,
+      "duration": 3.96,
+      "text": "create uh ECR repository which is going"
+    },
+    {
+      "start": 1709.22,
+      "duration": 4.319,
+      "text": "to hold our image so I'm going to now"
+    },
+    {
+      "start": 1711.08,
+      "duration": 4.92,
+      "text": "run this code so let me clear this here"
+    },
+    {
+      "start": 1713.539,
+      "duration": 4.321,
+      "text": "and say after I save it I'm going to say"
+    },
+    {
+      "start": 1716.0,
+      "duration": 3.659,
+      "text": "python"
+    },
+    {
+      "start": 1717.86,
+      "duration": 4.799,
+      "text": "three and then the name of this file"
+    },
+    {
+      "start": 1719.659,
+      "duration": 6.061,
+      "text": "which is ECR dot Pi so ECR dot Pi once I"
+    },
+    {
+      "start": 1722.659,
+      "duration": 5.101,
+      "text": "run this it should give me a repository"
+    },
+    {
+      "start": 1725.72,
+      "duration": 3.959,
+      "text": "URI so you can see this repository URI"
+    },
+    {
+      "start": 1727.76,
+      "duration": 3.72,
+      "text": "seeing this this is my account IDK or"
+    },
+    {
+      "start": 1729.679,
+      "duration": 3.901,
+      "text": "something my cloud native and to show"
+    },
+    {
+      "start": 1731.48,
+      "duration": 3.54,
+      "text": "you this in my console we should have a"
+    },
+    {
+      "start": 1733.58,
+      "duration": 3.599,
+      "text": "repository created here if everything is"
+    },
+    {
+      "start": 1735.02,
+      "duration": 3.72,
+      "text": "okay so you should see a repository here"
+    },
+    {
+      "start": 1737.179,
+      "duration": 3.181,
+      "text": "which we have created and there's no"
+    },
+    {
+      "start": 1738.74,
+      "duration": 4.14,
+      "text": "images right now in this but we have"
+    },
+    {
+      "start": 1740.36,
+      "duration": 4.02,
+      "text": "successfully created a ECR repo using"
+    },
+    {
+      "start": 1742.88,
+      "duration": 4.02,
+      "text": "python so this way you have learned how"
+    },
+    {
+      "start": 1744.38,
+      "duration": 5.159,
+      "text": "to use moto3 module in Python to create"
+    },
+    {
+      "start": 1746.9,
+      "duration": 4.139,
+      "text": "to create stuff in AWS so we have"
+    },
+    {
+      "start": 1749.539,
+      "duration": 4.02,
+      "text": "successfully created a repository let's"
+    },
+    {
+      "start": 1751.039,
+      "duration": 4.201,
+      "text": "try to push our image in here so if you"
+    },
+    {
+      "start": 1753.559,
+      "duration": 3.72,
+      "text": "see here and we have Push commands"
+    },
+    {
+      "start": 1755.24,
+      "duration": 3.48,
+      "text": "present and let me explain you this one"
+    },
+    {
+      "start": 1757.279,
+      "duration": 3.301,
+      "text": "by one so we need to run the command one"
+    },
+    {
+      "start": 1758.72,
+      "duration": 3.839,
+      "text": "by one to push our image that was there"
+    },
+    {
+      "start": 1760.58,
+      "duration": 4.26,
+      "text": "inside our local machine in this repo so"
+    },
+    {
+      "start": 1762.559,
+      "duration": 4.141,
+      "text": "first copy this and go to your vs code"
+    },
+    {
+      "start": 1764.84,
+      "duration": 3.66,
+      "text": "paste this this command is going to get"
+    },
+    {
+      "start": 1766.7,
+      "duration": 3.479,
+      "text": "the password and store it here and the"
+    },
+    {
+      "start": 1768.5,
+      "duration": 3.12,
+      "text": "output should be login succeeded if"
+    },
+    {
+      "start": 1770.179,
+      "duration": 3.0,
+      "text": "everything is okay so I'm going to run"
+    },
+    {
+      "start": 1771.62,
+      "duration": 3.36,
+      "text": "this command and it should show me login"
+    },
+    {
+      "start": 1773.179,
+      "duration": 3.421,
+      "text": "login succeeded"
+    },
+    {
+      "start": 1774.98,
+      "duration": 2.699,
+      "text": "sure I can run the next command so it"
+    },
+    {
+      "start": 1776.6,
+      "duration": 2.64,
+      "text": "says login succeeded which means"
+    },
+    {
+      "start": 1777.679,
+      "duration": 3.781,
+      "text": "everything is okay now let's run the"
+    },
+    {
+      "start": 1779.24,
+      "duration": 4.02,
+      "text": "command Docker build hyphen T to create"
+    },
+    {
+      "start": 1781.46,
+      "duration": 3.36,
+      "text": "an image out of this Docker file so I'm"
+    },
+    {
+      "start": 1783.26,
+      "duration": 2.58,
+      "text": "going to say Docker build and the name"
+    },
+    {
+      "start": 1784.82,
+      "duration": 2.52,
+      "text": "of the image is going to be this my"
+    },
+    {
+      "start": 1785.84,
+      "duration": 2.88,
+      "text": "cloud native wrapper I'm going to press"
+    },
+    {
+      "start": 1787.34,
+      "duration": 3.3,
+      "text": "enter and it has successfully created"
+    },
+    {
+      "start": 1788.72,
+      "duration": 3.78,
+      "text": "the image now after I came to Playmate"
+    },
+    {
+      "start": 1790.64,
+      "duration": 3.899,
+      "text": "I'm going to tag it to use the name as"
+    },
+    {
+      "start": 1792.5,
+      "duration": 3.84,
+      "text": "this so this is the name and we want"
+    },
+    {
+      "start": 1794.539,
+      "duration": 3.481,
+      "text": "this to have a name because ECR will"
+    },
+    {
+      "start": 1796.34,
+      "duration": 3.24,
+      "text": "store the image into this link so I'm"
+    },
+    {
+      "start": 1798.02,
+      "duration": 3.42,
+      "text": "going to run this saying Docker tag"
+    },
+    {
+      "start": 1799.58,
+      "duration": 3.9,
+      "text": "change the name of my cloud native repo"
+    },
+    {
+      "start": 1801.44,
+      "duration": 3.66,
+      "text": "into this name so once I do this it will"
+    },
+    {
+      "start": 1803.48,
+      "duration": 3.6,
+      "text": "change it and then I can push the"
+    },
+    {
+      "start": 1805.1,
+      "duration": 3.299,
+      "text": "command so I can run Docker push the"
+    },
+    {
+      "start": 1807.08,
+      "duration": 3.3,
+      "text": "name of the image which is this one"
+    },
+    {
+      "start": 1808.399,
+      "duration": 3.181,
+      "text": "after we changed it here so I'm going to"
+    },
+    {
+      "start": 1810.38,
+      "duration": 2.88,
+      "text": "run Docker push and it will start"
+    },
+    {
+      "start": 1811.58,
+      "duration": 4.74,
+      "text": "pushing the image from my local machine"
+    },
+    {
+      "start": 1813.26,
+      "duration": 4.74,
+      "text": "to my Docker to my ECR so you can see"
+    },
+    {
+      "start": 1816.32,
+      "duration": 3.78,
+      "text": "right now it does there is no image but"
+    },
+    {
+      "start": 1818.0,
+      "duration": 3.36,
+      "text": "it has started pushing to my PCR repo"
+    },
+    {
+      "start": 1820.1,
+      "duration": 2.939,
+      "text": "you can see all the steps here so it"
+    },
+    {
+      "start": 1821.36,
+      "duration": 3.72,
+      "text": "says the push refers to repository this"
+    },
+    {
+      "start": 1823.039,
+      "duration": 4.14,
+      "text": "one and it is starting to push once this"
+    },
+    {
+      "start": 1825.08,
+      "duration": 4.02,
+      "text": "is push we can see it here in the images"
+    },
+    {
+      "start": 1827.179,
+      "duration": 3.6,
+      "text": "section which will then be used to"
+    },
+    {
+      "start": 1829.1,
+      "duration": 2.88,
+      "text": "deploy our application in the form of"
+    },
+    {
+      "start": 1830.779,
+      "duration": 3.12,
+      "text": "kubernetes"
+    },
+    {
+      "start": 1831.98,
+      "duration": 3.9,
+      "text": "so now as it is going to be pushed let's"
+    },
+    {
+      "start": 1833.899,
+      "duration": 3.961,
+      "text": "go and go to kubernetes because it will"
+    },
+    {
+      "start": 1835.88,
+      "duration": 3.48,
+      "text": "take time for us to create a cluster and"
+    },
+    {
+      "start": 1837.86,
+      "duration": 2.819,
+      "text": "node so I'm going to go here click on"
+    },
+    {
+      "start": 1839.36,
+      "duration": 3.059,
+      "text": "ADD cluster click on Create list option"
+    },
+    {
+      "start": 1840.679,
+      "duration": 3.901,
+      "text": "here give this cluster a name so I'm"
+    },
+    {
+      "start": 1842.419,
+      "duration": 4.081,
+      "text": "going to say it python"
+    },
+    {
+      "start": 1844.58,
+      "duration": 4.88,
+      "text": "or let's name it Cloud native Cloud"
+    },
+    {
+      "start": 1846.5,
+      "duration": 2.96,
+      "text": "native"
+    },
+    {
+      "start": 1849.679,
+      "duration": 3.781,
+      "text": "cluster"
+    },
+    {
+      "start": 1851.48,
+      "duration": 3.54,
+      "text": "okay so I'm going to use the default"
+    },
+    {
+      "start": 1853.46,
+      "duration": 4.52,
+      "text": "version this is the rule I'm going to"
+    },
+    {
+      "start": 1855.02,
+      "duration": 5.34,
+      "text": "Define no tags here click on next option"
+    },
+    {
+      "start": 1857.98,
+      "duration": 3.88,
+      "text": "default here I'm going to select some of"
+    },
+    {
+      "start": 1860.36,
+      "duration": 3.84,
+      "text": "them so I'm going to not select one e"
+    },
+    {
+      "start": 1861.86,
+      "duration": 4.26,
+      "text": "only one a b so you can choose any"
+    },
+    {
+      "start": 1864.2,
+      "duration": 3.66,
+      "text": "subnet you want I don't have capacity in"
+    },
+    {
+      "start": 1866.12,
+      "duration": 4.14,
+      "text": "one case I'm not choosing that I'm just"
+    },
+    {
+      "start": 1867.86,
+      "duration": 4.559,
+      "text": "using one a one B one C and One D which"
+    },
+    {
+      "start": 1870.26,
+      "duration": 4.98,
+      "text": "is okay all right now I have four"
+    },
+    {
+      "start": 1872.419,
+      "duration": 4.26,
+      "text": "subnets here sorry five subnets so one F"
+    },
+    {
+      "start": 1875.24,
+      "duration": 3.299,
+      "text": "I'm going to remove that as well so four"
+    },
+    {
+      "start": 1876.679,
+      "duration": 3.541,
+      "text": "subnets it is okay you can launch it any"
+    },
+    {
+      "start": 1878.539,
+      "duration": 3.181,
+      "text": "uh any number of subnets that's not a"
+    },
+    {
+      "start": 1880.22,
+      "duration": 2.76,
+      "text": "problem I'm just selecting here so and"
+    },
+    {
+      "start": 1881.72,
+      "duration": 2.76,
+      "text": "then I'm going to select my security"
+    },
+    {
+      "start": 1882.98,
+      "duration": 3.54,
+      "text": "group make sure the security group has"
+    },
+    {
+      "start": 1884.48,
+      "duration": 3.9,
+      "text": "proper ports which is 5000 here to run"
+    },
+    {
+      "start": 1886.52,
+      "duration": 4.2,
+      "text": "your application and click on next here"
+    },
+    {
+      "start": 1888.38,
+      "duration": 5.519,
+      "text": "click on next I don't want any login no"
+    },
+    {
+      "start": 1890.72,
+      "duration": 4.86,
+      "text": "add-ons and then after I do this I'm"
+    },
+    {
+      "start": 1893.899,
+      "duration": 3.301,
+      "text": "going to scroll down to click on next"
+    },
+    {
+      "start": 1895.58,
+      "duration": 4.079,
+      "text": "option and then review and create this"
+    },
+    {
+      "start": 1897.2,
+      "duration": 4.02,
+      "text": "will create my cluster and I will have a"
+    },
+    {
+      "start": 1899.659,
+      "duration": 3.12,
+      "text": "cluster in my account and sometimes it"
+    },
+    {
+      "start": 1901.22,
+      "duration": 3.12,
+      "text": "is now in creating state"
+    },
+    {
+      "start": 1902.779,
+      "duration": 3.181,
+      "text": "so let's wait for this to come up and"
+    },
+    {
+      "start": 1904.34,
+      "duration": 3.54,
+      "text": "then officially here it says the push"
+    },
+    {
+      "start": 1905.96,
+      "duration": 3.719,
+      "text": "has been done so if I go to my ECR I"
+    },
+    {
+      "start": 1907.88,
+      "duration": 5.039,
+      "text": "should see a con image I'm going to go"
+    },
+    {
+      "start": 1909.679,
+      "duration": 5.281,
+      "text": "to my ECR open this in a new tab"
+    },
+    {
+      "start": 1912.919,
+      "duration": 3.421,
+      "text": "and if I show you here you have inside"
+    },
+    {
+      "start": 1914.96,
+      "duration": 2.4,
+      "text": "this I have an image here which is the"
+    },
+    {
+      "start": 1916.34,
+      "duration": 3.54,
+      "text": "latest image so you can see we have"
+    },
+    {
+      "start": 1917.36,
+      "duration": 4.919,
+      "text": "successfully created an image we have"
+    },
+    {
+      "start": 1919.88,
+      "duration": 3.6,
+      "text": "also deployed this in the form of"
+    },
+    {
+      "start": 1922.279,
+      "duration": 3.601,
+      "text": "container and we have pushed the image"
+    },
+    {
+      "start": 1923.48,
+      "duration": 4.5,
+      "text": "in the ACI so I hope you have learned a"
+    },
+    {
+      "start": 1925.88,
+      "duration": 3.419,
+      "text": "lot till here in this point of the video"
+    },
+    {
+      "start": 1927.98,
+      "duration": 3.12,
+      "text": "you have learned how to create an"
+    },
+    {
+      "start": 1929.299,
+      "duration": 3.48,
+      "text": "application how to dockerize it how to"
+    },
+    {
+      "start": 1931.1,
+      "duration": 2.88,
+      "text": "deploy a Docker container how to prepare"
+    },
+    {
+      "start": 1932.779,
+      "duration": 2.64,
+      "text": "the image how to write Docker file"
+    },
+    {
+      "start": 1933.98,
+      "duration": 3.66,
+      "text": "everything and lastly how to push an"
+    },
+    {
+      "start": 1935.419,
+      "duration": 3.48,
+      "text": "image to an ECR repo once it is pushed"
+    },
+    {
+      "start": 1937.64,
+      "duration": 3.24,
+      "text": "we are going to use the elastic"
+    },
+    {
+      "start": 1938.899,
+      "duration": 3.66,
+      "text": "kubernetes service which is zks to"
+    },
+    {
+      "start": 1940.88,
+      "duration": 3.72,
+      "text": "deploy our containers in the form of"
+    },
+    {
+      "start": 1942.559,
+      "duration": 4.86,
+      "text": "kubernetes cluster so kubernetes model"
+    },
+    {
+      "start": 1944.6,
+      "duration": 5.4,
+      "text": "so for that we need to have Cube CTL"
+    },
+    {
+      "start": 1947.419,
+      "duration": 5.461,
+      "text": "so right now if I do Cube CTL uh"
+    },
+    {
+      "start": 1950.0,
+      "duration": 4.98,
+      "text": "anything the second Parts hyphen and"
+    },
+    {
+      "start": 1952.88,
+      "duration": 3.48,
+      "text": "default"
+    },
+    {
+      "start": 1954.98,
+      "duration": 2.46,
+      "text": "in order to show me that unable to"
+    },
+    {
+      "start": 1956.36,
+      "duration": 3.6,
+      "text": "connect to the server because we haven't"
+    },
+    {
+      "start": 1957.44,
+      "duration": 4.8,
+      "text": "created the cluster yet once the cluster"
+    },
+    {
+      "start": 1959.96,
+      "duration": 3.959,
+      "text": "is created we need to authenticate or we"
+    },
+    {
+      "start": 1962.24,
+      "duration": 3.659,
+      "text": "need to connect it by running the"
+    },
+    {
+      "start": 1963.919,
+      "duration": 2.941,
+      "text": "command AWS cqs config command so let's"
+    },
+    {
+      "start": 1965.899,
+      "duration": 2.4,
+      "text": "wait for this to come up with running"
+    },
+    {
+      "start": 1966.86,
+      "duration": 2.52,
+      "text": "state after it is in running state I'm"
+    },
+    {
+      "start": 1968.299,
+      "duration": 2.521,
+      "text": "going to go ahead and create a node"
+    },
+    {
+      "start": 1969.38,
+      "duration": 2.82,
+      "text": "group so we are not able to create it"
+    },
+    {
+      "start": 1970.82,
+      "duration": 2.4,
+      "text": "unless it comes up in running state so"
+    },
+    {
+      "start": 1972.2,
+      "duration": 2.28,
+      "text": "I'm going to pause the video and come"
+    },
+    {
+      "start": 1973.22,
+      "duration": 2.579,
+      "text": "back again when this is in learning"
+    },
+    {
+      "start": 1974.48,
+      "duration": 3.419,
+      "text": "state"
+    },
+    {
+      "start": 1975.799,
+      "duration": 3.721,
+      "text": "okay so after waiting some time we have"
+    },
+    {
+      "start": 1977.899,
+      "duration": 2.701,
+      "text": "cluster in active State let's go and"
+    },
+    {
+      "start": 1979.52,
+      "duration": 2.7,
+      "text": "create a node group so I'm going to go"
+    },
+    {
+      "start": 1980.6,
+      "duration": 5.1,
+      "text": "to here go to the cluster and go to node"
+    },
+    {
+      "start": 1982.22,
+      "duration": 4.62,
+      "text": "groups here give it a name as uh nodes"
+    },
+    {
+      "start": 1985.7,
+      "duration": 3.54,
+      "text": "or anything you can name it anything"
+    },
+    {
+      "start": 1986.84,
+      "duration": 4.98,
+      "text": "attach an if role and I'm going to go"
+    },
+    {
+      "start": 1989.24,
+      "duration": 4.2,
+      "text": "ahead and click on next option here"
+    },
+    {
+      "start": 1991.82,
+      "duration": 4.26,
+      "text": "in the next I'm going to select Amazon D"
+    },
+    {
+      "start": 1993.44,
+      "duration": 3.78,
+      "text": "next to Ami T2 micro you don't need to"
+    },
+    {
+      "start": 1996.08,
+      "duration": 3.479,
+      "text": "have T3 medium because that's"
+    },
+    {
+      "start": 1997.22,
+      "duration": 3.54,
+      "text": "unnecessary so I'm going to stay in free"
+    },
+    {
+      "start": 1999.559,
+      "duration": 2.941,
+      "text": "tier and I don't want you to waste money"
+    },
+    {
+      "start": 2000.76,
+      "duration": 4.74,
+      "text": "so we use T2 micro"
+    },
+    {
+      "start": 2002.5,
+      "duration": 4.38,
+      "text": "next uh remove T3 medium from here and"
+    },
+    {
+      "start": 2005.5,
+      "duration": 3.179,
+      "text": "select the desired sizes two two is"
+    },
+    {
+      "start": 2006.88,
+      "duration": 3.299,
+      "text": "enough and now I'm going to click the"
+    },
+    {
+      "start": 2008.679,
+      "duration": 5.421,
+      "text": "next option here"
+    },
+    {
+      "start": 2010.179,
+      "duration": 3.921,
+      "text": "select next to select the wings subnet"
+    },
+    {
+      "start": 2014.2,
+      "duration": 3.839,
+      "text": "and here I'm going to Define click on"
+    },
+    {
+      "start": 2016.6,
+      "duration": 4.74,
+      "text": "create option which will create the node"
+    },
+    {
+      "start": 2018.039,
+      "duration": 4.921,
+      "text": "groups having two nodes inside it which"
+    },
+    {
+      "start": 2021.34,
+      "duration": 2.819,
+      "text": "is okay now if you go here in the notes"
+    },
+    {
+      "start": 2022.96,
+      "duration": 2.459,
+      "text": "you can find after some time that there"
+    },
+    {
+      "start": 2024.159,
+      "duration": 3.421,
+      "text": "are two nodes so it is still in creating"
+    },
+    {
+      "start": 2025.419,
+      "duration": 4.14,
+      "text": "state which is okay let's go to our vs"
+    },
+    {
+      "start": 2027.58,
+      "duration": 4.68,
+      "text": "code and create kubernetes deployment"
+    },
+    {
+      "start": 2029.559,
+      "duration": 4.86,
+      "text": "and services so if I explain you what do"
+    },
+    {
+      "start": 2032.26,
+      "duration": 3.899,
+      "text": "you mean by the deployment let's go to"
+    },
+    {
+      "start": 2034.419,
+      "duration": 3.421,
+      "text": "kubernetes with official documentation"
+    },
+    {
+      "start": 2036.159,
+      "duration": 3.061,
+      "text": "to understand what do you mean by"
+    },
+    {
+      "start": 2037.84,
+      "duration": 3.6,
+      "text": "deployment and what do you mean by"
+    },
+    {
+      "start": 2039.22,
+      "duration": 3.54,
+      "text": "quality service so we will require these"
+    },
+    {
+      "start": 2041.44,
+      "duration": 3.06,
+      "text": "two things to deploy our application on"
+    },
+    {
+      "start": 2042.76,
+      "duration": 3.48,
+      "text": "the kubernetes cluster so first let's"
+    },
+    {
+      "start": 2044.5,
+      "duration": 4.56,
+      "text": "see what is deployment so deployment"
+    },
+    {
+      "start": 2046.24,
+      "duration": 4.379,
+      "text": "refers to a regularity update of parts"
+    },
+    {
+      "start": 2049.06,
+      "duration": 2.819,
+      "text": "and application in the deployment you"
+    },
+    {
+      "start": 2050.619,
+      "duration": 2.22,
+      "text": "will Define what image do you want to"
+    },
+    {
+      "start": 2051.879,
+      "duration": 2.341,
+      "text": "use what should be the name of the"
+    },
+    {
+      "start": 2052.839,
+      "duration": 3.961,
+      "text": "application how many replica should be"
+    },
+    {
+      "start": 2054.22,
+      "duration": 4.56,
+      "text": "there all of that stuff so inside this"
+    },
+    {
+      "start": 2056.8,
+      "duration": 3.359,
+      "text": "deployment you will be defining that"
+    },
+    {
+      "start": 2058.78,
+      "duration": 3.42,
+      "text": "you're going to be using the image that"
+    },
+    {
+      "start": 2060.159,
+      "duration": 3.901,
+      "text": "you push to our ECR repository we want"
+    },
+    {
+      "start": 2062.2,
+      "duration": 3.06,
+      "text": "to have one replica or two replica of"
+    },
+    {
+      "start": 2064.06,
+      "duration": 3.0,
+      "text": "the application this is the name of the"
+    },
+    {
+      "start": 2065.26,
+      "duration": 3.48,
+      "text": "application it should run and put 80 or"
+    },
+    {
+      "start": 2067.06,
+      "duration": 3.96,
+      "text": "5000 everything that is going to be"
+    },
+    {
+      "start": 2068.74,
+      "duration": 3.659,
+      "text": "defined in the form of deployment and"
+    },
+    {
+      "start": 2071.02,
+      "duration": 2.819,
+      "text": "kubernetes will be using that deployment"
+    },
+    {
+      "start": 2072.399,
+      "duration": 3.24,
+      "text": "to maintain the state so that there"
+    },
+    {
+      "start": 2073.839,
+      "duration": 3.241,
+      "text": "should always be a replica three"
+    },
+    {
+      "start": 2075.639,
+      "duration": 3.181,
+      "text": "replicas running all the time it should"
+    },
+    {
+      "start": 2077.08,
+      "duration": 3.36,
+      "text": "use this particular image so that is"
+    },
+    {
+      "start": 2078.82,
+      "duration": 3.96,
+      "text": "what I'm going to show you how to create"
+    },
+    {
+      "start": 2080.44,
+      "duration": 4.199,
+      "text": "a deployment using python so we're going"
+    },
+    {
+      "start": 2082.78,
+      "duration": 3.119,
+      "text": "to integrate kubernetes with python if"
+    },
+    {
+      "start": 2084.639,
+      "duration": 2.581,
+      "text": "you were to do it manually you have to"
+    },
+    {
+      "start": 2085.899,
+      "duration": 2.881,
+      "text": "create a file something like this and"
+    },
+    {
+      "start": 2087.22,
+      "duration": 3.48,
+      "text": "then run the command Cube CTL apply"
+    },
+    {
+      "start": 2088.78,
+      "duration": 3.54,
+      "text": "hyphen f and then the name of this file"
+    },
+    {
+      "start": 2090.7,
+      "duration": 4.38,
+      "text": "similarly let's see what is the service"
+    },
+    {
+      "start": 2092.32,
+      "duration": 4.14,
+      "text": "I'm going to search service here"
+    },
+    {
+      "start": 2095.08,
+      "duration": 4.019,
+      "text": "and"
+    },
+    {
+      "start": 2096.46,
+      "duration": 3.96,
+      "text": "you can find service and kubernetes so"
+    },
+    {
+      "start": 2099.099,
+      "duration": 2.461,
+      "text": "service in kubernetes is a method of"
+    },
+    {
+      "start": 2100.42,
+      "duration": 2.64,
+      "text": "exposing a network application that is"
+    },
+    {
+      "start": 2101.56,
+      "duration": 2.52,
+      "text": "running on one or more pods so our"
+    },
+    {
+      "start": 2103.06,
+      "duration": 3.779,
+      "text": "application is going to be run on the"
+    },
+    {
+      "start": 2104.08,
+      "duration": 4.92,
+      "text": "Pod but for everyone else to ex everyone"
+    },
+    {
+      "start": 2106.839,
+      "duration": 3.721,
+      "text": "has to access it outside the cluster we"
+    },
+    {
+      "start": 2109.0,
+      "duration": 3.78,
+      "text": "need to have a service so we have to"
+    },
+    {
+      "start": 2110.56,
+      "duration": 3.72,
+      "text": "create a service so that our pod can be"
+    },
+    {
+      "start": 2112.78,
+      "duration": 3.42,
+      "text": "accessed to the outside world either"
+    },
+    {
+      "start": 2114.28,
+      "duration": 4.5,
+      "text": "using load balancer or using IP address"
+    },
+    {
+      "start": 2116.2,
+      "duration": 4.56,
+      "text": "so we need to create a service and then"
+    },
+    {
+      "start": 2118.78,
+      "duration": 4.26,
+      "text": "we will be able to run this application"
+    },
+    {
+      "start": 2120.76,
+      "duration": 4.8,
+      "text": "on the browser or on IP address or on"
+    },
+    {
+      "start": 2123.04,
+      "duration": 7.1,
+      "text": "local load balances DNS"
+    },
+    {
+      "start": 2125.56,
+      "duration": 4.58,
+      "text": "I'm going to go to the vs code here and"
+    },
+    {
+      "start": 2130.78,
+      "duration": 3.299,
+      "text": "to do that I'm going to first get a file"
+    },
+    {
+      "start": 2132.4,
+      "duration": 3.36,
+      "text": "name as kubernetes dot Pi where we are"
+    },
+    {
+      "start": 2134.079,
+      "duration": 3.721,
+      "text": "going to Define all our deployments and"
+    },
+    {
+      "start": 2135.76,
+      "duration": 4.44,
+      "text": "services so I'm going to say kubernetes"
+    },
+    {
+      "start": 2137.8,
+      "duration": 3.72,
+      "text": "dot pi and to use kubernetes using with"
+    },
+    {
+      "start": 2140.2,
+      "duration": 2.76,
+      "text": "python we need to use something known as"
+    },
+    {
+      "start": 2141.52,
+      "duration": 2.88,
+      "text": "kubernetes client so this is the"
+    },
+    {
+      "start": 2142.96,
+      "duration": 3.6,
+      "text": "kubernetes client used to manage"
+    },
+    {
+      "start": 2144.4,
+      "duration": 4.679,
+      "text": "deployment services using python so I'm"
+    },
+    {
+      "start": 2146.56,
+      "duration": 5.059,
+      "text": "going to say from kubernetes"
+    },
+    {
+      "start": 2149.079,
+      "duration": 2.54,
+      "text": "import"
+    },
+    {
+      "start": 2151.66,
+      "duration": 4.679,
+      "text": "client and config so client comma"
+    },
+    {
+      "start": 2154.66,
+      "duration": 3.54,
+      "text": "conflict we're going to use client to"
+    },
+    {
+      "start": 2156.339,
+      "duration": 3.481,
+      "text": "update to create deployments and"
+    },
+    {
+      "start": 2158.2,
+      "duration": 3.12,
+      "text": "services and config to use the cluster"
+    },
+    {
+      "start": 2159.82,
+      "duration": 3.06,
+      "text": "so the first thing is to load the"
+    },
+    {
+      "start": 2161.32,
+      "duration": 3.12,
+      "text": "kubernetes config so I'm going to say"
+    },
+    {
+      "start": 2162.88,
+      "duration": 3.0,
+      "text": "load the kubernetes config and use the"
+    },
+    {
+      "start": 2164.44,
+      "duration": 4.5,
+      "text": "one that we created right now which is"
+    },
+    {
+      "start": 2165.88,
+      "duration": 5.76,
+      "text": "here and this one sorry this python"
+    },
+    {
+      "start": 2168.94,
+      "duration": 4.32,
+      "text": "Cloud native so you're going to get the"
+    },
+    {
+      "start": 2171.64,
+      "duration": 3.84,
+      "text": "config which is stored here so you can"
+    },
+    {
+      "start": 2173.26,
+      "duration": 5.579,
+      "text": "find all the config in the dot config"
+    },
+    {
+      "start": 2175.48,
+      "duration": 4.98,
+      "text": "file so if I go to CD dot Cube"
+    },
+    {
+      "start": 2178.839,
+      "duration": 2.76,
+      "text": "inside this you can find a folder that's"
+    },
+    {
+      "start": 2180.46,
+      "duration": 2.639,
+      "text": "config which you have which you have to"
+    },
+    {
+      "start": 2181.599,
+      "duration": 2.341,
+      "text": "have the data about a cluster so this is"
+    },
+    {
+      "start": 2183.099,
+      "duration": 3.0,
+      "text": "what we're going to do we're going to"
+    },
+    {
+      "start": 2183.94,
+      "duration": 3.6,
+      "text": "fetch the config and if we do it here in"
+    },
+    {
+      "start": 2186.099,
+      "duration": 3.541,
+      "text": "the terminal we do it using this command"
+    },
+    {
+      "start": 2187.54,
+      "duration": 4.02,
+      "text": "so AWS cks update keep config and then"
+    },
+    {
+      "start": 2189.64,
+      "duration": 3.78,
+      "text": "the name so now we have loaded the"
+    },
+    {
+      "start": 2191.56,
+      "duration": 4.08,
+      "text": "config I'm going to set the client as"
+    },
+    {
+      "start": 2193.42,
+      "duration": 3.659,
+      "text": "this so I'm going to say create a"
+    },
+    {
+      "start": 2195.64,
+      "duration": 2.58,
+      "text": "kubernetes API client and now we're"
+    },
+    {
+      "start": 2197.079,
+      "duration": 2.461,
+      "text": "going to define the deployment so we've"
+    },
+    {
+      "start": 2198.22,
+      "duration": 2.399,
+      "text": "already seen what is deployment a"
+    },
+    {
+      "start": 2199.54,
+      "duration": 2.52,
+      "text": "deployment is a file which is going to"
+    },
+    {
+      "start": 2200.619,
+      "duration": 3.061,
+      "text": "contain the image name number of"
+    },
+    {
+      "start": 2202.06,
+      "duration": 3.12,
+      "text": "replicas report which is always the"
+    },
+    {
+      "start": 2203.68,
+      "duration": 3.48,
+      "text": "application going to run so let's define"
+    },
+    {
+      "start": 2205.18,
+      "duration": 4.56,
+      "text": "the deployment here in Python to do it"
+    },
+    {
+      "start": 2207.16,
+      "duration": 3.54,
+      "text": "here I am going to show you so this is"
+    },
+    {
+      "start": 2209.74,
+      "duration": 2.22,
+      "text": "the code which is going to define the"
+    },
+    {
+      "start": 2210.7,
+      "duration": 3.0,
+      "text": "requirement and the name of the app is"
+    },
+    {
+      "start": 2211.96,
+      "duration": 4.02,
+      "text": "going to be my flask app and then we're"
+    },
+    {
+      "start": 2213.7,
+      "duration": 3.659,
+      "text": "going to use the container image which"
+    },
+    {
+      "start": 2215.98,
+      "duration": 3.48,
+      "text": "is this I'm going to remove this and use"
+    },
+    {
+      "start": 2217.359,
+      "duration": 4.201,
+      "text": "the one that we have in our ECR"
+    },
+    {
+      "start": 2219.46,
+      "duration": 4.98,
+      "text": "repository so I'm going to go to my ECR"
+    },
+    {
+      "start": 2221.56,
+      "duration": 7.14,
+      "text": "and copy this URI so copy this and paste"
+    },
+    {
+      "start": 2224.44,
+      "duration": 5.88,
+      "text": "it in your code so paste it here"
+    },
+    {
+      "start": 2228.7,
+      "duration": 2.58,
+      "text": "and now save it this is going to define"
+    },
+    {
+      "start": 2230.32,
+      "duration": 2.7,
+      "text": "the"
+    },
+    {
+      "start": 2231.28,
+      "duration": 3.36,
+      "text": "deployment but not actually created to"
+    },
+    {
+      "start": 2233.02,
+      "duration": 5.0,
+      "text": "create you need to run a command in the"
+    },
+    {
+      "start": 2234.64,
+      "duration": 5.34,
+      "text": "terminal which is qctl apply hyphen f"
+    },
+    {
+      "start": 2238.02,
+      "duration": 4.54,
+      "text": "deployment.yaml and then the namespace"
+    },
+    {
+      "start": 2239.98,
+      "duration": 3.9,
+      "text": "but in Python you will be doing it using"
+    },
+    {
+      "start": 2242.56,
+      "duration": 3.48,
+      "text": "Code so I'm going to show you how can"
+    },
+    {
+      "start": 2243.88,
+      "duration": 4.26,
+      "text": "you do it so here is the code to create"
+    },
+    {
+      "start": 2246.04,
+      "duration": 3.78,
+      "text": "a deployment so you will say create this"
+    },
+    {
+      "start": 2248.14,
+      "duration": 3.78,
+      "text": "deployment inside the default namespace"
+    },
+    {
+      "start": 2249.82,
+      "duration": 3.84,
+      "text": "right now if I show you I don't have"
+    },
+    {
+      "start": 2251.92,
+      "duration": 7.74,
+      "text": "anything in my default namespace so if I"
+    },
+    {
+      "start": 2253.66,
+      "duration": 8.459,
+      "text": "do Cube CTL get deployment"
+    },
+    {
+      "start": 2259.66,
+      "duration": 4.199,
+      "text": "hyphen and default"
+    },
+    {
+      "start": 2262.119,
+      "duration": 3.421,
+      "text": "you can see that there is no resources"
+    },
+    {
+      "start": 2263.859,
+      "duration": 2.881,
+      "text": "found in my defaulting space but after I"
+    },
+    {
+      "start": 2265.54,
+      "duration": 3.059,
+      "text": "run this file I will have a default"
+    },
+    {
+      "start": 2266.74,
+      "duration": 3.24,
+      "text": "names deployment in my default namespace"
+    },
+    {
+      "start": 2268.599,
+      "duration": 3.121,
+      "text": "along with deployment I also need"
+    },
+    {
+      "start": 2269.98,
+      "duration": 3.24,
+      "text": "services so I'm going to define a"
+    },
+    {
+      "start": 2271.72,
+      "duration": 3.0,
+      "text": "service here the service is used to"
+    },
+    {
+      "start": 2273.22,
+      "duration": 3.18,
+      "text": "expose your application to the outside"
+    },
+    {
+      "start": 2274.72,
+      "duration": 2.879,
+      "text": "world and it will not work unless you"
+    },
+    {
+      "start": 2276.4,
+      "duration": 3.12,
+      "text": "and Define a service so I'm going to"
+    },
+    {
+      "start": 2277.599,
+      "duration": 2.881,
+      "text": "define a service for my flask app the"
+    },
+    {
+      "start": 2279.52,
+      "duration": 2.64,
+      "text": "name of the service is going to be my"
+    },
+    {
+      "start": 2280.48,
+      "duration": 3.42,
+      "text": "class service and the port is going to"
+    },
+    {
+      "start": 2282.16,
+      "duration": 3.179,
+      "text": "be 5000 on which the application is"
+    },
+    {
+      "start": 2283.9,
+      "duration": 2.64,
+      "text": "going to run now to create this"
+    },
+    {
+      "start": 2285.339,
+      "duration": 3.121,
+      "text": "similarly you need to use run the"
+    },
+    {
+      "start": 2286.54,
+      "duration": 3.36,
+      "text": "command Cube CTL create and the name of"
+    },
+    {
+      "start": 2288.46,
+      "duration": 3.0,
+      "text": "the file having this but as we are doing"
+    },
+    {
+      "start": 2289.9,
+      "duration": 3.06,
+      "text": "this in Python we are going to use this"
+    },
+    {
+      "start": 2291.46,
+      "duration": 2.94,
+      "text": "code all of this code is going to be"
+    },
+    {
+      "start": 2292.96,
+      "duration": 3.18,
+      "text": "there in the GitHub so don't worry about"
+    },
+    {
+      "start": 2294.4,
+      "duration": 3.48,
+      "text": "it I'm going to push this on GitHub and"
+    },
+    {
+      "start": 2296.14,
+      "duration": 3.9,
+      "text": "you can have access to it so now we are"
+    },
+    {
+      "start": 2297.88,
+      "duration": 3.9,
+      "text": "in this file we have said career"
+    },
+    {
+      "start": 2300.04,
+      "duration": 5.059,
+      "text": "deployment and a service so let's go and"
+    },
+    {
+      "start": 2301.78,
+      "duration": 5.579,
+      "text": "run this so I'm going to say Python 3"
+    },
+    {
+      "start": 2305.099,
+      "duration": 4.061,
+      "text": "once I do this I'm getting an error"
+    },
+    {
+      "start": 2307.359,
+      "duration": 3.121,
+      "text": "saying"
+    },
+    {
+      "start": 2309.16,
+      "duration": 2.64,
+      "text": "cannot import line from partially"
+    },
+    {
+      "start": 2310.48,
+      "duration": 2.599,
+      "text": "initialized kubernetes most likely to do"
+    },
+    {
+      "start": 2311.8,
+      "duration": 4.2,
+      "text": "circular import"
+    },
+    {
+      "start": 2313.079,
+      "duration": 4.78,
+      "text": "finding few things I'm I got a solution"
+    },
+    {
+      "start": 2316.0,
+      "duration": 3.24,
+      "text": "saying that we need to make change name"
+    },
+    {
+      "start": 2317.859,
+      "duration": 3.661,
+      "text": "the change the name of the file to"
+    },
+    {
+      "start": 2319.24,
+      "duration": 4.44,
+      "text": "something else rather than using"
+    },
+    {
+      "start": 2321.52,
+      "duration": 4.26,
+      "text": "kubernetes I'm going to"
+    },
+    {
+      "start": 2323.68,
+      "duration": 3.24,
+      "text": "make it case dot Pi let's save it and"
+    },
+    {
+      "start": 2325.78,
+      "duration": 6.0,
+      "text": "try to run it again I'm going to say"
+    },
+    {
+      "start": 2326.92,
+      "duration": 6.72,
+      "text": "python 3. uh three eks dot Pi once I do"
+    },
+    {
+      "start": 2331.78,
+      "duration": 3.96,
+      "text": "this it's going to create deployment for"
+    },
+    {
+      "start": 2333.64,
+      "duration": 4.8,
+      "text": "me and now if I show you here it says"
+    },
+    {
+      "start": 2335.74,
+      "duration": 6.78,
+      "text": "Cube let's try to run and see qctl get"
+    },
+    {
+      "start": 2338.44,
+      "duration": 5.7,
+      "text": "parts hyphen and default and iPhone W to"
+    },
+    {
+      "start": 2342.52,
+      "duration": 3.24,
+      "text": "chain watch mode"
+    },
+    {
+      "start": 2344.14,
+      "duration": 3.42,
+      "text": "and you can see after some time there"
+    },
+    {
+      "start": 2345.76,
+      "duration": 3.66,
+      "text": "will be a deployment you can see a flask"
+    },
+    {
+      "start": 2347.56,
+      "duration": 3.66,
+      "text": "app is here it is showing us image"
+    },
+    {
+      "start": 2349.42,
+      "duration": 3.12,
+      "text": "status pullback off for now but let's"
+    },
+    {
+      "start": 2351.22,
+      "duration": 4.02,
+      "text": "see if there's any"
+    },
+    {
+      "start": 2352.54,
+      "duration": 4.74,
+      "text": "is there deployment rate or not so Cube"
+    },
+    {
+      "start": 2355.24,
+      "duration": 5.04,
+      "text": "serial get deployment"
+    },
+    {
+      "start": 2357.28,
+      "duration": 4.26,
+      "text": "hyphen and default"
+    },
+    {
+      "start": 2360.28,
+      "duration": 2.819,
+      "text": "and you can see your deployment is there"
+    },
+    {
+      "start": 2361.54,
+      "duration": 3.539,
+      "text": "which is going to be not in ready state"
+    },
+    {
+      "start": 2363.099,
+      "duration": 3.181,
+      "text": "yet but will come up in some time and"
+    },
+    {
+      "start": 2365.079,
+      "duration": 3.061,
+      "text": "let's see the service as well so I'm"
+    },
+    {
+      "start": 2366.28,
+      "duration": 4.94,
+      "text": "going to see the service if I do Cube"
+    },
+    {
+      "start": 2368.14,
+      "duration": 3.08,
+      "text": "CDL get SVC"
+    },
+    {
+      "start": 2375.04,
+      "duration": 2.64,
+      "text": "so we have a service here as well my"
+    },
+    {
+      "start": 2376.42,
+      "duration": 2.699,
+      "text": "flash service which we created using"
+    },
+    {
+      "start": 2377.68,
+      "duration": 3.84,
+      "text": "python so you can see you can also"
+    },
+    {
+      "start": 2379.119,
+      "duration": 3.841,
+      "text": "manage kubernetes application or any"
+    },
+    {
+      "start": 2381.52,
+      "duration": 3.54,
+      "text": "other devops using python which is very"
+    },
+    {
+      "start": 2382.96,
+      "duration": 3.96,
+      "text": "easy now that we have it here let's try"
+    },
+    {
+      "start": 2385.06,
+      "duration": 3.779,
+      "text": "to see if our application is up or not"
+    },
+    {
+      "start": 2386.92,
+      "duration": 3.179,
+      "text": "if you face any issues like image"
+    },
+    {
+      "start": 2388.839,
+      "duration": 5.78,
+      "text": "pullback or something you can just go"
+    },
+    {
+      "start": 2390.099,
+      "duration": 4.52,
+      "text": "copy this and run the command Cube CTL"
+    },
+    {
+      "start": 2397.98,
+      "duration": 5.2,
+      "text": "so I'm going to say"
+    },
+    {
+      "start": 2400.18,
+      "duration": 4.62,
+      "text": "hyphen in default and this will give me"
+    },
+    {
+      "start": 2403.18,
+      "duration": 3.3,
+      "text": "all the detail about my part if there's"
+    },
+    {
+      "start": 2404.8,
+      "duration": 4.02,
+      "text": "any issue on any error it will also tell"
+    },
+    {
+      "start": 2406.48,
+      "duration": 4.74,
+      "text": "me that so it says back of pulling this"
+    },
+    {
+      "start": 2408.82,
+      "duration": 4.62,
+      "text": "maybe the image is not correct so I'm"
+    },
+    {
+      "start": 2411.22,
+      "duration": 4.619,
+      "text": "going to check the image once again"
+    },
+    {
+      "start": 2413.44,
+      "duration": 4.5,
+      "text": "and use a new one so I'm going to copy"
+    },
+    {
+      "start": 2415.839,
+      "duration": 5.221,
+      "text": "this"
+    },
+    {
+      "start": 2417.94,
+      "duration": 5.159,
+      "text": "remove this and used one in my"
+    },
+    {
+      "start": 2421.06,
+      "duration": 4.019,
+      "text": "here so I'm going to copy this so let's"
+    },
+    {
+      "start": 2423.099,
+      "duration": 3.541,
+      "text": "see first if it is showing me the pods"
+    },
+    {
+      "start": 2425.079,
+      "duration": 3.121,
+      "text": "or not"
+    },
+    {
+      "start": 2426.64,
+      "duration": 3.6,
+      "text": "so it's a image pullback what I can do"
+    },
+    {
+      "start": 2428.2,
+      "duration": 5.0,
+      "text": "is change the deployment right from here"
+    },
+    {
+      "start": 2430.24,
+      "duration": 2.96,
+      "text": "so clear"
+    },
+    {
+      "start": 2433.3,
+      "duration": 5.84,
+      "text": "qctl"
+    },
+    {
+      "start": 2435.64,
+      "duration": 3.5,
+      "text": "first get deployment"
+    },
+    {
+      "start": 2439.48,
+      "duration": 3.379,
+      "text": "hyphen and default"
+    },
+    {
+      "start": 2442.96,
+      "duration": 2.94,
+      "text": "and I'm going to get this deployment I'm"
+    },
+    {
+      "start": 2444.16,
+      "duration": 5.179,
+      "text": "going to say Cube CTL"
+    },
+    {
+      "start": 2445.9,
+      "duration": 3.439,
+      "text": "edit deployment"
+    },
+    {
+      "start": 2449.5,
+      "duration": 2.94,
+      "text": "and then the name of this deployment"
+    },
+    {
+      "start": 2450.94,
+      "duration": 2.46,
+      "text": "which is my flask app you might not need"
+    },
+    {
+      "start": 2452.44,
+      "duration": 3.72,
+      "text": "to do this because you might have"
+    },
+    {
+      "start": 2453.4,
+      "duration": 4.74,
+      "text": "already created and put the right image"
+    },
+    {
+      "start": 2456.16,
+      "duration": 3.78,
+      "text": "here somehow I have changed this image"
+    },
+    {
+      "start": 2458.14,
+      "duration": 4.8,
+      "text": "so I'm going to edit it here"
+    },
+    {
+      "start": 2459.94,
+      "duration": 5.34,
+      "text": "I'm going to say iPhone n default and"
+    },
+    {
+      "start": 2462.94,
+      "duration": 7.22,
+      "text": "then it will open this in the edit mode"
+    },
+    {
+      "start": 2465.28,
+      "duration": 4.88,
+      "text": "I'm going to go below so this is a"
+    },
+    {
+      "start": 2470.32,
+      "duration": 7.68,
+      "text": "I'm going to go to here in this section"
+    },
+    {
+      "start": 2474.579,
+      "duration": 8.161,
+      "text": "and delete everything put my correct"
+    },
+    {
+      "start": 2478.0,
+      "duration": 7.44,
+      "text": "image URI so sorry the URL from here"
+    },
+    {
+      "start": 2482.74,
+      "duration": 5.7,
+      "text": "and paste it here okay once I save it"
+    },
+    {
+      "start": 2485.44,
+      "duration": 7.5,
+      "text": "I'm going to say Escape colon WQ and"
+    },
+    {
+      "start": 2488.44,
+      "duration": 6.54,
+      "text": "then done once I do this let's try to"
+    },
+    {
+      "start": 2492.94,
+      "duration": 4.98,
+      "text": "let's try to see if our pod is up or not"
+    },
+    {
+      "start": 2494.98,
+      "duration": 4.08,
+      "text": "so I'm going to now check this and"
+    },
+    {
+      "start": 2497.92,
+      "duration": 2.76,
+      "text": "within some time it's you can see"
+    },
+    {
+      "start": 2499.06,
+      "duration": 2.7,
+      "text": "container is creating now after some"
+    },
+    {
+      "start": 2500.68,
+      "duration": 2.82,
+      "text": "time this container will be in running"
+    },
+    {
+      "start": 2501.76,
+      "duration": 2.819,
+      "text": "State and we can then access it using so"
+    },
+    {
+      "start": 2503.5,
+      "duration": 2.339,
+      "text": "you can see it is now in running state"
+    },
+    {
+      "start": 2504.579,
+      "duration": 3.241,
+      "text": "which means the problem was with the"
+    },
+    {
+      "start": 2505.839,
+      "duration": 4.081,
+      "text": "image okay now that it is in running"
+    },
+    {
+      "start": 2507.82,
+      "duration": 5.46,
+      "text": "State let's try to expose our service so"
+    },
+    {
+      "start": 2509.92,
+      "duration": 5.1,
+      "text": "I'm going to say Cube CTL get SVC hyphen"
+    },
+    {
+      "start": 2513.28,
+      "duration": 3.9,
+      "text": "and default"
+    },
+    {
+      "start": 2515.02,
+      "duration": 4.26,
+      "text": "we have the service here so the service"
+    },
+    {
+      "start": 2517.18,
+      "duration": 3.96,
+      "text": "is this I'm going to export forward this"
+    },
+    {
+      "start": 2519.28,
+      "duration": 3.18,
+      "text": "so that I can use this pod in my local"
+    },
+    {
+      "start": 2521.14,
+      "duration": 2.82,
+      "text": "machine as well you can also choose this"
+    },
+    {
+      "start": 2522.46,
+      "duration": 2.82,
+      "text": "to change it to load balancer but that"
+    },
+    {
+      "start": 2523.96,
+      "duration": 2.94,
+      "text": "is not needed for now so I'm going to"
+    },
+    {
+      "start": 2525.28,
+      "duration": 4.44,
+      "text": "say Cube CTL"
+    },
+    {
+      "start": 2526.9,
+      "duration": 5.16,
+      "text": "uh port"
+    },
+    {
+      "start": 2529.72,
+      "duration": 5.28,
+      "text": "hyphen forward"
+    },
+    {
+      "start": 2532.06,
+      "duration": 5.58,
+      "text": "SVC slash the service name which is this"
+    },
+    {
+      "start": 2535.0,
+      "duration": 6.54,
+      "text": "one copy paste and then I'm going to say"
+    },
+    {
+      "start": 2537.64,
+      "duration": 5.4,
+      "text": "hyphen P 5000 colon 5000 so I want this"
+    },
+    {
+      "start": 2541.54,
+      "duration": 3.48,
+      "text": "application which is running on 5000 to"
+    },
+    {
+      "start": 2543.04,
+      "duration": 4.02,
+      "text": "be running on my localhost on 5000. so"
+    },
+    {
+      "start": 2545.02,
+      "duration": 3.48,
+      "text": "for now if I show you before I run this"
+    },
+    {
+      "start": 2547.06,
+      "duration": 2.82,
+      "text": "if I show you there's nothing running on"
+    },
+    {
+      "start": 2548.5,
+      "duration": 5.599,
+      "text": "my localhost but once I port forward"
+    },
+    {
+      "start": 2549.88,
+      "duration": 4.219,
+      "text": "this and press enter okay I think"
+    },
+    {
+      "start": 2554.38,
+      "duration": 3.38,
+      "text": "let me control the command"
+    },
+    {
+      "start": 2563.619,
+      "duration": 4.561,
+      "text": "okay it does not have to be hyphen P"
+    },
+    {
+      "start": 2565.599,
+      "duration": 4.321,
+      "text": "just this and press enter once I do this"
+    },
+    {
+      "start": 2568.18,
+      "duration": 3.179,
+      "text": "it will start port forwarding my"
+    },
+    {
+      "start": 2569.92,
+      "duration": 3.0,
+      "text": "application on my localhost and you can"
+    },
+    {
+      "start": 2571.359,
+      "duration": 3.541,
+      "text": "see it is saying that if I refresh I"
+    },
+    {
+      "start": 2572.92,
+      "duration": 3.54,
+      "text": "will have the application here so this"
+    },
+    {
+      "start": 2574.9,
+      "duration": 4.5,
+      "text": "is our application hosted on kubernetes"
+    },
+    {
+      "start": 2576.46,
+      "duration": 4.56,
+      "text": "cluster and we have we have learned a"
+    },
+    {
+      "start": 2579.4,
+      "duration": 4.199,
+      "text": "lot in this so if you have this"
+    },
+    {
+      "start": 2581.02,
+      "duration": 3.839,
+      "text": "application in your kubernetes in your"
+    },
+    {
+      "start": 2583.599,
+      "duration": 2.641,
+      "text": "if you see this application on your"
+    },
+    {
+      "start": 2584.859,
+      "duration": 3.24,
+      "text": "localhost make sure you take a"
+    },
+    {
+      "start": 2586.24,
+      "duration": 3.72,
+      "text": "screenshot post this on your LinkedIn or"
+    },
+    {
+      "start": 2588.099,
+      "duration": 3.061,
+      "text": "you can also include this project in"
+    },
+    {
+      "start": 2589.96,
+      "duration": 2.58,
+      "text": "your resume because this is an excellent"
+    },
+    {
+      "start": 2591.16,
+      "duration": 4.02,
+      "text": "project where you have learned"
+    },
+    {
+      "start": 2592.54,
+      "duration": 3.779,
+      "text": "everything from scratch on how to how to"
+    },
+    {
+      "start": 2595.18,
+      "duration": 2.58,
+      "text": "create a Docker application how to"
+    },
+    {
+      "start": 2596.319,
+      "duration": 3.241,
+      "text": "create a monitoring application how to"
+    },
+    {
+      "start": 2597.76,
+      "duration": 4.02,
+      "text": "internalize it how to write Docker file"
+    },
+    {
+      "start": 2599.56,
+      "duration": 3.66,
+      "text": "everything you have defined so I hope"
+    },
+    {
+      "start": 2601.78,
+      "duration": 2.819,
+      "text": "this was very informative I'm going to"
+    },
+    {
+      "start": 2603.22,
+      "duration": 3.599,
+      "text": "push this code and you can find this"
+    },
+    {
+      "start": 2604.599,
+      "duration": 3.24,
+      "text": "code on GitHub so if you go to GitHub"
+    },
+    {
+      "start": 2606.819,
+      "duration": 2.821,
+      "text": "I'm going to paste the link in the"
+    },
+    {
+      "start": 2607.839,
+      "duration": 4.681,
+      "text": "description as well so you can find all"
+    },
+    {
+      "start": 2609.64,
+      "duration": 4.74,
+      "text": "everything in this repository which is"
+    },
+    {
+      "start": 2612.52,
+      "duration": 4.079,
+      "text": "cloud native monitoring app I have"
+    },
+    {
+      "start": 2614.38,
+      "duration": 4.08,
+      "text": "pushed the docker file app.buy eks dot"
+    },
+    {
+      "start": 2616.599,
+      "duration": 3.181,
+      "text": "by everything inside this repo I'm going"
+    },
+    {
+      "start": 2618.46,
+      "duration": 2.639,
+      "text": "to update this readme so that you can"
+    },
+    {
+      "start": 2619.78,
+      "duration": 2.88,
+      "text": "have all the steps but if you have any"
+    },
+    {
+      "start": 2621.099,
+      "duration": 4.321,
+      "text": "questions any doubt you can let me know"
+    },
+    {
+      "start": 2622.66,
+      "duration": 3.959,
+      "text": "in the comment section now let's once"
+    },
+    {
+      "start": 2625.42,
+      "duration": 2.64,
+      "text": "the application is once you have"
+    },
+    {
+      "start": 2626.619,
+      "duration": 3.181,
+      "text": "deployed this application on kubernetes"
+    },
+    {
+      "start": 2628.06,
+      "duration": 3.96,
+      "text": "and you have to you have took screenshot"
+    },
+    {
+      "start": 2629.8,
+      "duration": 4.08,
+      "text": "of this post it on LinkedIn tag me and"
+    },
+    {
+      "start": 2632.02,
+      "duration": 3.48,
+      "text": "defined in your resume all you need to"
+    },
+    {
+      "start": 2633.88,
+      "duration": 3.54,
+      "text": "do is to clear your things so you can go"
+    },
+    {
+      "start": 2635.5,
+      "duration": 3.24,
+      "text": "ahead and delete your kubernetes cluster"
+    },
+    {
+      "start": 2637.42,
+      "duration": 2.58,
+      "text": "so first thing you need to do is to"
+    },
+    {
+      "start": 2638.74,
+      "duration": 2.28,
+      "text": "delete your node group so I'm going to"
+    },
+    {
+      "start": 2640.0,
+      "duration": 3.359,
+      "text": "go to"
+    },
+    {
+      "start": 2641.02,
+      "duration": 4.2,
+      "text": "uh node groups here compute select this"
+    },
+    {
+      "start": 2643.359,
+      "duration": 3.061,
+      "text": "node group delete it so that you don't"
+    },
+    {
+      "start": 2645.22,
+      "duration": 3.78,
+      "text": "get charged with the name of the node"
+    },
+    {
+      "start": 2646.42,
+      "duration": 4.02,
+      "text": "group it just notes here delete now"
+    },
+    {
+      "start": 2649.0,
+      "duration": 2.16,
+      "text": "after some time once it is deleted then"
+    },
+    {
+      "start": 2650.44,
+      "duration": 1.86,
+      "text": "you can go ahead and delete your"
+    },
+    {
+      "start": 2651.16,
+      "duration": 2.64,
+      "text": "question as well"
+    },
+    {
+      "start": 2652.3,
+      "duration": 3.539,
+      "text": "but now if you try to delete it it will"
+    },
+    {
+      "start": 2653.8,
+      "duration": 3.36,
+      "text": "show you that this nodes present which"
+    },
+    {
+      "start": 2655.839,
+      "duration": 4.02,
+      "text": "you need to delete so I'm going to"
+    },
+    {
+      "start": 2657.16,
+      "duration": 4.14,
+      "text": "delete this so it says it is going to be"
+    },
+    {
+      "start": 2659.859,
+      "duration": 3.361,
+      "text": "deleted list lastly you also need to"
+    },
+    {
+      "start": 2661.3,
+      "duration": 4.319,
+      "text": "delete your ECR repository so select the"
+    },
+    {
+      "start": 2663.22,
+      "duration": 4.08,
+      "text": "repository click on delete and then type"
+    },
+    {
+      "start": 2665.619,
+      "duration": 3.48,
+      "text": "delete here"
+    },
+    {
+      "start": 2667.3,
+      "duration": 2.88,
+      "text": "so this is how you will complete your"
+    },
+    {
+      "start": 2669.099,
+      "duration": 2.461,
+      "text": "project make sure you delete all the"
+    },
+    {
+      "start": 2670.18,
+      "duration": 2.52,
+      "text": "resources that you have done and I hope"
+    },
+    {
+      "start": 2671.56,
+      "duration": 3.0,
+      "text": "this was informative if you have any"
+    },
+    {
+      "start": 2672.7,
+      "duration": 4.08,
+      "text": "questions any doubt let me know in the"
+    },
+    {
+      "start": 2674.56,
+      "duration": 3.48,
+      "text": "comment section uh and showcase your"
+    },
+    {
+      "start": 2676.78,
+      "duration": 3.42,
+      "text": "skills you showcase your knowledge of"
+    },
+    {
+      "start": 2678.04,
+      "duration": 3.72,
+      "text": "Docker kubernetes uh python everywhere"
+    },
+    {
+      "start": 2680.2,
+      "duration": 4.52,
+      "text": "on your LinkedIn or your resume thank"
+    },
+    {
+      "start": 2681.76,
+      "duration": 2.96,
+      "text": "you and have a good day"
+    }
+  ]
+}

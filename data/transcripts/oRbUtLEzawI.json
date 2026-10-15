@@ -1,0 +1,1226 @@
+{
+  "video": {
+    "id": "oRbUtLEzawI",
+    "title": "AWS CodeCommit Tutorial: How to Create, Clone, and Push Repositories",
+    "url": "https://www.youtube.com/watch?v=oRbUtLEzawI",
+    "duration": 533,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.179,
+      "duration": 3.48,
+      "text": "hey everyone Welcome to Cloud Jam in"
+    },
+    {
+      "start": 2.399,
+      "duration": 3.96,
+      "text": "this tutorial video we are going to"
+    },
+    {
+      "start": 3.659,
+      "duration": 4.561,
+      "text": "learn about AWS code commit so AWS code"
+    },
+    {
+      "start": 6.359,
+      "duration": 4.261,
+      "text": "commit is a managed service which lets"
+    },
+    {
+      "start": 8.22,
+      "duration": 4.02,
+      "text": "you create git repositories on the cloud"
+    },
+    {
+      "start": 10.62,
+      "duration": 3.059,
+      "text": "in this tutorial video we are going to"
+    },
+    {
+      "start": 12.24,
+      "duration": 3.359,
+      "text": "learn how to create code cabinet"
+    },
+    {
+      "start": 13.679,
+      "duration": 3.36,
+      "text": "repository how to generate credentials"
+    },
+    {
+      "start": 15.599,
+      "duration": 3.961,
+      "text": "to clone the repository in your local"
+    },
+    {
+      "start": 17.039,
+      "duration": 4.681,
+      "text": "machine how to push files on this code"
+    },
+    {
+      "start": 19.56,
+      "duration": 4.379,
+      "text": "commit repository and more options that"
+    },
+    {
+      "start": 21.72,
+      "duration": 4.979,
+      "text": "code commit has so let's start with the"
+    },
+    {
+      "start": 23.939,
+      "duration": 4.801,
+      "text": "video to get started on my AWS dashboard"
+    },
+    {
+      "start": 26.699,
+      "duration": 4.381,
+      "text": "and I'm going to search for code commit"
+    },
+    {
+      "start": 28.74,
+      "duration": 4.019,
+      "text": "so code commit it's a store code in"
+    },
+    {
+      "start": 31.08,
+      "duration": 3.18,
+      "text": "private git repositories which means you"
+    },
+    {
+      "start": 32.759,
+      "duration": 3.841,
+      "text": "can create private git repositories"
+    },
+    {
+      "start": 34.26,
+      "duration": 3.54,
+      "text": "using Code commit service so now that"
+    },
+    {
+      "start": 36.6,
+      "duration": 3.119,
+      "text": "I'm here you can see there are no"
+    },
+    {
+      "start": 37.8,
+      "duration": 3.24,
+      "text": "repositories created and to create a"
+    },
+    {
+      "start": 39.719,
+      "duration": 3.601,
+      "text": "repository you need to click on create"
+    },
+    {
+      "start": 41.04,
+      "duration": 4.38,
+      "text": "repository option here so to create"
+    },
+    {
+      "start": 43.32,
+      "duration": 3.72,
+      "text": "creating a repository in code commit is"
+    },
+    {
+      "start": 45.42,
+      "duration": 3.6,
+      "text": "very easy you just need to enter the"
+    },
+    {
+      "start": 47.04,
+      "duration": 4.26,
+      "text": "name of the repository and the"
+    },
+    {
+      "start": 49.02,
+      "duration": 5.34,
+      "text": "description so I'm going to add the name"
+    },
+    {
+      "start": 51.3,
+      "duration": 3.779,
+      "text": "as my repo and the description as this"
+    },
+    {
+      "start": 54.36,
+      "duration": 2.94,
+      "text": "is"
+    },
+    {
+      "start": 55.079,
+      "duration": 4.98,
+      "text": "my"
+    },
+    {
+      "start": 57.3,
+      "duration": 4.079,
+      "text": "repo for my app"
+    },
+    {
+      "start": 60.059,
+      "duration": 3.3,
+      "text": "and I'm going to click on create"
+    },
+    {
+      "start": 61.379,
+      "duration": 3.841,
+      "text": "repository here once you click on it"
+    },
+    {
+      "start": 63.359,
+      "duration": 3.421,
+      "text": "this it says successfully created the"
+    },
+    {
+      "start": 65.22,
+      "duration": 3.3,
+      "text": "repository but this is an empty"
+    },
+    {
+      "start": 66.78,
+      "duration": 4.56,
+      "text": "repository and if you want to clone this"
+    },
+    {
+      "start": 68.52,
+      "duration": 6.66,
+      "text": "repository you can use https SSH and"
+    },
+    {
+      "start": 71.34,
+      "duration": 6.24,
+      "text": "https with GRC or get remote code commit"
+    },
+    {
+      "start": 75.18,
+      "duration": 4.92,
+      "text": "so these two options you can find on on"
+    },
+    {
+      "start": 77.58,
+      "duration": 4.679,
+      "text": "GitHub on gitlab bitbucket as well so"
+    },
+    {
+      "start": 80.1,
+      "duration": 5.22,
+      "text": "similarly you can clone your repository"
+    },
+    {
+      "start": 82.259,
+      "duration": 5.341,
+      "text": "using https and SSH so let's try to"
+    },
+    {
+      "start": 85.32,
+      "duration": 3.9,
+      "text": "clone your repository using https to"
+    },
+    {
+      "start": 87.6,
+      "duration": 4.44,
+      "text": "clone you need to require this command"
+    },
+    {
+      "start": 89.22,
+      "duration": 4.62,
+      "text": "which is git clone and the name of T and"
+    },
+    {
+      "start": 92.04,
+      "duration": 4.14,
+      "text": "the URL of the repository so I'm going"
+    },
+    {
+      "start": 93.84,
+      "duration": 4.62,
+      "text": "to copy this Open my"
+    },
+    {
+      "start": 96.18,
+      "duration": 6.06,
+      "text": "terminal inside my terminal I'm going to"
+    },
+    {
+      "start": 98.46,
+      "duration": 6.479,
+      "text": "create a new directory for this"
+    },
+    {
+      "start": 102.24,
+      "duration": 6.199,
+      "text": "I'm going to do mkdir"
+    },
+    {
+      "start": 104.939,
+      "duration": 3.5,
+      "text": "code comment"
+    },
+    {
+      "start": 109.079,
+      "duration": 5.4,
+      "text": "all right here I'm going to paste this"
+    },
+    {
+      "start": 110.7,
+      "duration": 6.0,
+      "text": "command git clone and the URL of my repo"
+    },
+    {
+      "start": 114.479,
+      "duration": 4.201,
+      "text": "so once I press enter it's going to"
+    },
+    {
+      "start": 116.7,
+      "duration": 4.379,
+      "text": "start cloning but this requires you to"
+    },
+    {
+      "start": 118.68,
+      "duration": 3.719,
+      "text": "enter the username and the password so"
+    },
+    {
+      "start": 121.079,
+      "duration": 3.061,
+      "text": "how would you get this username and"
+    },
+    {
+      "start": 122.399,
+      "duration": 4.381,
+      "text": "password to get this username and"
+    },
+    {
+      "start": 124.14,
+      "duration": 5.52,
+      "text": "password you need to use IM service so"
+    },
+    {
+      "start": 126.78,
+      "duration": 4.44,
+      "text": "IM is where you can generate credentials"
+    },
+    {
+      "start": 129.66,
+      "duration": 4.079,
+      "text": "or the username and password required"
+    },
+    {
+      "start": 131.22,
+      "duration": 4.14,
+      "text": "for you to clone this repository and"
+    },
+    {
+      "start": 133.739,
+      "duration": 3.781,
+      "text": "this username and password is specific"
+    },
+    {
+      "start": 135.36,
+      "duration": 4.86,
+      "text": "for a particular user so I'm going to go"
+    },
+    {
+      "start": 137.52,
+      "duration": 4.62,
+      "text": "to users in inside IM and select the"
+    },
+    {
+      "start": 140.22,
+      "duration": 3.96,
+      "text": "user for which I want to create the get"
+    },
+    {
+      "start": 142.14,
+      "duration": 3.84,
+      "text": "credentials so I'm going to select my"
+    },
+    {
+      "start": 144.18,
+      "duration": 4.86,
+      "text": "user which is Nasi here and inside"
+    },
+    {
+      "start": 145.98,
+      "duration": 5.88,
+      "text": "security credentials scroll down"
+    },
+    {
+      "start": 149.04,
+      "duration": 4.68,
+      "text": "you can find this option SSH public keys"
+    },
+    {
+      "start": 151.86,
+      "duration": 3.72,
+      "text": "for code commit and https grid"
+    },
+    {
+      "start": 153.72,
+      "duration": 3.18,
+      "text": "credentials for code commit so you have"
+    },
+    {
+      "start": 155.58,
+      "duration": 4.2,
+      "text": "two options here you can either choose"
+    },
+    {
+      "start": 156.9,
+      "duration": 4.559,
+      "text": "to clone your repository using SSH so"
+    },
+    {
+      "start": 159.78,
+      "duration": 3.539,
+      "text": "where you need to enter your keys so you"
+    },
+    {
+      "start": 161.459,
+      "duration": 4.201,
+      "text": "need to generate the keys using SSH"
+    },
+    {
+      "start": 163.319,
+      "duration": 4.261,
+      "text": "keypad generation command and then you"
+    },
+    {
+      "start": 165.66,
+      "duration": 3.96,
+      "text": "need to enter the"
+    },
+    {
+      "start": 167.58,
+      "duration": 5.34,
+      "text": "public key here so that is how you can"
+    },
+    {
+      "start": 169.62,
+      "duration": 5.1,
+      "text": "clone your repository using SSH but here"
+    },
+    {
+      "start": 172.92,
+      "duration": 3.78,
+      "text": "we are going to choose the https method"
+    },
+    {
+      "start": 174.72,
+      "duration": 4.2,
+      "text": "so click on this generate credentials"
+    },
+    {
+      "start": 176.7,
+      "duration": 3.66,
+      "text": "button once you click on it a username"
+    },
+    {
+      "start": 178.92,
+      "duration": 3.84,
+      "text": "and password will be generated so I'm"
+    },
+    {
+      "start": 180.36,
+      "duration": 5.28,
+      "text": "going to use this username and enter it"
+    },
+    {
+      "start": 182.76,
+      "duration": 4.38,
+      "text": "in here so next I'm going to copy the"
+    },
+    {
+      "start": 185.64,
+      "duration": 4.26,
+      "text": "password"
+    },
+    {
+      "start": 187.14,
+      "duration": 5.64,
+      "text": "so password is here one if I press enter"
+    },
+    {
+      "start": 189.9,
+      "duration": 5.16,
+      "text": "it should be cloned so it says warning"
+    },
+    {
+      "start": 192.78,
+      "duration": 5.16,
+      "text": "you appear to have cloned DMT repository"
+    },
+    {
+      "start": 195.06,
+      "duration": 4.56,
+      "text": "and if I do LS hyphen l a"
+    },
+    {
+      "start": 197.94,
+      "duration": 2.939,
+      "text": "you can see my repo is here which means"
+    },
+    {
+      "start": 199.62,
+      "duration": 2.88,
+      "text": "we have successfully cloned our"
+    },
+    {
+      "start": 200.879,
+      "duration": 3.301,
+      "text": "repository which is empty right now so"
+    },
+    {
+      "start": 202.5,
+      "duration": 3.78,
+      "text": "you can see it is empty that is why it's"
+    },
+    {
+      "start": 204.18,
+      "duration": 4.199,
+      "text": "shown it has shown as this warning but"
+    },
+    {
+      "start": 206.28,
+      "duration": 4.98,
+      "text": "we have successfully cloned our report"
+    },
+    {
+      "start": 208.379,
+      "duration": 4.801,
+      "text": "and now we are inside our repo so you"
+    },
+    {
+      "start": 211.26,
+      "duration": 3.899,
+      "text": "can see it is a god dot get reposit file"
+    },
+    {
+      "start": 213.18,
+      "duration": 4.559,
+      "text": "but no files present so let's go and"
+    },
+    {
+      "start": 215.159,
+      "duration": 4.561,
+      "text": "create a new file and then see how we"
+    },
+    {
+      "start": 217.739,
+      "duration": 3.241,
+      "text": "can commit a push to this repository so"
+    },
+    {
+      "start": 219.72,
+      "duration": 2.7,
+      "text": "I'm going to create a new file name it"
+    },
+    {
+      "start": 220.98,
+      "duration": 5.52,
+      "text": "Nano"
+    },
+    {
+      "start": 222.42,
+      "duration": 8.12,
+      "text": "test dot pi and in this I can type"
+    },
+    {
+      "start": 226.5,
+      "duration": 4.04,
+      "text": "anything let's say print command print"
+    },
+    {
+      "start": 231.78,
+      "duration": 3.56,
+      "text": "subscribe to Cloud champ"
+    },
+    {
+      "start": 237.12,
+      "duration": 4.679,
+      "text": "all right this is okay so I'm going to"
+    },
+    {
+      "start": 238.86,
+      "duration": 5.28,
+      "text": "just save this and right now we have a"
+    },
+    {
+      "start": 241.799,
+      "duration": 4.321,
+      "text": "file named as test.pi let's push this"
+    },
+    {
+      "start": 244.14,
+      "duration": 3.84,
+      "text": "file in our repository right now the"
+    },
+    {
+      "start": 246.12,
+      "duration": 4.08,
+      "text": "repository is completely empty and I"
+    },
+    {
+      "start": 247.98,
+      "duration": 5.339,
+      "text": "want this file the desk dot Pi file from"
+    },
+    {
+      "start": 250.2,
+      "duration": 5.759,
+      "text": "my local machine to be pushed on my repo"
+    },
+    {
+      "start": 253.319,
+      "duration": 3.48,
+      "text": "which is on code comment so I'm going to"
+    },
+    {
+      "start": 255.959,
+      "duration": 3.361,
+      "text": "do"
+    },
+    {
+      "start": 256.799,
+      "duration": 4.381,
+      "text": "get add and the name of the file so test"
+    },
+    {
+      "start": 259.32,
+      "duration": 3.599,
+      "text": "dot Pi once I do that you can check the"
+    },
+    {
+      "start": 261.18,
+      "duration": 4.86,
+      "text": "status by running get status and it says"
+    },
+    {
+      "start": 262.919,
+      "duration": 5.401,
+      "text": "one file is to be committed so now let's"
+    },
+    {
+      "start": 266.04,
+      "duration": 5.82,
+      "text": "go and do the git commit command so get"
+    },
+    {
+      "start": 268.32,
+      "duration": 4.74,
+      "text": "comment hyphen M and message is going to"
+    },
+    {
+      "start": 271.86,
+      "duration": 4.2,
+      "text": "be add"
+    },
+    {
+      "start": 273.06,
+      "duration": 5.48,
+      "text": "test file it can be anything so add test"
+    },
+    {
+      "start": 276.06,
+      "duration": 2.48,
+      "text": "file"
+    },
+    {
+      "start": 278.58,
+      "duration": 4.98,
+      "text": "ADD test file once I do that it's going"
+    },
+    {
+      "start": 280.8,
+      "duration": 4.26,
+      "text": "to be committed and now I can push it so"
+    },
+    {
+      "start": 283.56,
+      "duration": 5.1,
+      "text": "get push"
+    },
+    {
+      "start": 285.06,
+      "duration": 5.28,
+      "text": "should push this file from my local to"
+    },
+    {
+      "start": 288.66,
+      "duration": 3.84,
+      "text": "my uh"
+    },
+    {
+      "start": 290.34,
+      "duration": 3.359,
+      "text": "repo after I put my username so I need"
+    },
+    {
+      "start": 292.5,
+      "duration": 3.6,
+      "text": "to put the username and the password"
+    },
+    {
+      "start": 293.699,
+      "duration": 3.901,
+      "text": "again so I'm going to go to my IM copy"
+    },
+    {
+      "start": 296.1,
+      "duration": 3.48,
+      "text": "this I can also save the credentials if"
+    },
+    {
+      "start": 297.6,
+      "duration": 4.92,
+      "text": "I want to but as this is for demo I'm"
+    },
+    {
+      "start": 299.58,
+      "duration": 5.64,
+      "text": "going to delete this later on so this is"
+    },
+    {
+      "start": 302.52,
+      "duration": 5.28,
+      "text": "the username and this is the password"
+    },
+    {
+      "start": 305.22,
+      "duration": 4.86,
+      "text": "so once I do this it should be pushed to"
+    },
+    {
+      "start": 307.8,
+      "duration": 4.14,
+      "text": "my repo now it's you can see it says"
+    },
+    {
+      "start": 310.08,
+      "duration": 3.899,
+      "text": "pushed and if I want to check it in my"
+    },
+    {
+      "start": 311.94,
+      "duration": 3.84,
+      "text": "code comment dashboard I can refresh"
+    },
+    {
+      "start": 313.979,
+      "duration": 3.061,
+      "text": "this page and a file should be shown"
+    },
+    {
+      "start": 315.78,
+      "duration": 3.0,
+      "text": "here"
+    },
+    {
+      "start": 317.04,
+      "duration": 3.54,
+      "text": "so once after I refresh you can see your"
+    },
+    {
+      "start": 318.78,
+      "duration": 4.08,
+      "text": "file is present here which is test.pi"
+    },
+    {
+      "start": 320.58,
+      "duration": 4.32,
+      "text": "and inside test dot Pi which we have the"
+    },
+    {
+      "start": 322.86,
+      "duration": 3.839,
+      "text": "same message which we entered which was"
+    },
+    {
+      "start": 324.9,
+      "duration": 3.0,
+      "text": "subscribed to Cloud champ and if you"
+    },
+    {
+      "start": 326.699,
+      "duration": 2.881,
+      "text": "want to check the comments you can click"
+    },
+    {
+      "start": 327.9,
+      "duration": 3.299,
+      "text": "on this you can see all these options"
+    },
+    {
+      "start": 329.58,
+      "duration": 3.959,
+      "text": "here so comments are going to be shown"
+    },
+    {
+      "start": 331.199,
+      "duration": 3.601,
+      "text": "here any commit that you made so you can"
+    },
+    {
+      "start": 333.539,
+      "duration": 3.66,
+      "text": "see this is the latest command which is"
+    },
+    {
+      "start": 334.8,
+      "duration": 4.2,
+      "text": "ADD test file and if you have any extra"
+    },
+    {
+      "start": 337.199,
+      "duration": 3.361,
+      "text": "branches you can find all the branches"
+    },
+    {
+      "start": 339.0,
+      "duration": 3.78,
+      "text": "here right now we might have only one"
+    },
+    {
+      "start": 340.56,
+      "duration": 4.44,
+      "text": "branch which is Master Branch if you"
+    },
+    {
+      "start": 342.78,
+      "duration": 3.54,
+      "text": "have any pull request created you all"
+    },
+    {
+      "start": 345.0,
+      "duration": 2.58,
+      "text": "pull requests are going to be shown here"
+    },
+    {
+      "start": 346.32,
+      "duration": 3.84,
+      "text": "or if you want to create a new pull"
+    },
+    {
+      "start": 347.58,
+      "duration": 4.26,
+      "text": "request you can do it from here but pull"
+    },
+    {
+      "start": 350.16,
+      "duration": 3.479,
+      "text": "request requires two branches so we only"
+    },
+    {
+      "start": 351.84,
+      "duration": 4.199,
+      "text": "have one so we don't need we don't have"
+    },
+    {
+      "start": 353.639,
+      "duration": 3.601,
+      "text": "anything to compare so that's okay so"
+    },
+    {
+      "start": 356.039,
+      "duration": 4.261,
+      "text": "these are all the things if you want to"
+    },
+    {
+      "start": 357.24,
+      "duration": 4.38,
+      "text": "let's say modify this file so let's say"
+    },
+    {
+      "start": 360.3,
+      "duration": 3.3,
+      "text": "we want to modify the file and then"
+    },
+    {
+      "start": 361.62,
+      "duration": 3.84,
+      "text": "commit the changes how way can we do"
+    },
+    {
+      "start": 363.6,
+      "duration": 4.439,
+      "text": "this so I'm going to do Nano test dot pi"
+    },
+    {
+      "start": 365.46,
+      "duration": 5.9,
+      "text": "and"
+    },
+    {
+      "start": 368.039,
+      "duration": 3.321,
+      "text": "and let's modify this file"
+    },
+    {
+      "start": 374.699,
+      "duration": 4.201,
+      "text": "okay so now that I've changed this if I"
+    },
+    {
+      "start": 376.44,
+      "duration": 4.199,
+      "text": "do git status"
+    },
+    {
+      "start": 378.9,
+      "duration": 4.739,
+      "text": "it will show me that this file has been"
+    },
+    {
+      "start": 380.639,
+      "duration": 4.801,
+      "text": "modified and I I can then commit and"
+    },
+    {
+      "start": 383.639,
+      "duration": 4.141,
+      "text": "push this to my"
+    },
+    {
+      "start": 385.44,
+      "duration": 7.039,
+      "text": "repository so I'm going to do git ADD"
+    },
+    {
+      "start": 387.78,
+      "duration": 4.699,
+      "text": "test dot pi and then get commit"
+    },
+    {
+      "start": 395.4,
+      "duration": 5.04,
+      "text": "modified"
+    },
+    {
+      "start": 398.039,
+      "duration": 4.021,
+      "text": "so git commit hyphen M modify test file"
+    },
+    {
+      "start": 400.44,
+      "duration": 2.879,
+      "text": "and then get"
+    },
+    {
+      "start": 402.06,
+      "duration": 2.94,
+      "text": "push"
+    },
+    {
+      "start": 403.319,
+      "duration": 3.6,
+      "text": "once I do get push it's going to ask me"
+    },
+    {
+      "start": 405.0,
+      "duration": 4.199,
+      "text": "for the username and password every time"
+    },
+    {
+      "start": 406.919,
+      "duration": 3.541,
+      "text": "I do clone or push I'm going to enter"
+    },
+    {
+      "start": 409.199,
+      "duration": 4.081,
+      "text": "that"
+    },
+    {
+      "start": 410.46,
+      "duration": 5.28,
+      "text": "so username"
+    },
+    {
+      "start": 413.28,
+      "duration": 4.32,
+      "text": "password"
+    },
+    {
+      "start": 415.74,
+      "duration": 4.92,
+      "text": "now that we have made a new comment we"
+    },
+    {
+      "start": 417.6,
+      "duration": 5.58,
+      "text": "should see the extra commit in our"
+    },
+    {
+      "start": 420.66,
+      "duration": 4.08,
+      "text": "comment section here so we should have"
+    },
+    {
+      "start": 423.18,
+      "duration": 4.98,
+      "text": "two comments now you can see there are"
+    },
+    {
+      "start": 424.74,
+      "duration": 4.92,
+      "text": "two commets so everything uh can be seen"
+    },
+    {
+      "start": 428.16,
+      "duration": 2.94,
+      "text": "on the code comment dashboard you can"
+    },
+    {
+      "start": 429.66,
+      "duration": 4.319,
+      "text": "see the code has been updated as well so"
+    },
+    {
+      "start": 431.1,
+      "duration": 5.4,
+      "text": "test.pi now has the message subscribe to"
+    },
+    {
+      "start": 433.979,
+      "duration": 4.801,
+      "text": "Cloud champ and like this code commit"
+    },
+    {
+      "start": 436.5,
+      "duration": 4.02,
+      "text": "video so this is how you can create a"
+    },
+    {
+      "start": 438.78,
+      "duration": 3.479,
+      "text": "code commit repository generate"
+    },
+    {
+      "start": 440.52,
+      "duration": 3.54,
+      "text": "credentials clone the repository in your"
+    },
+    {
+      "start": 442.259,
+      "duration": 4.321,
+      "text": "local Machine push the files from your"
+    },
+    {
+      "start": 444.06,
+      "duration": 3.66,
+      "text": "local to your repository and let's see"
+    },
+    {
+      "start": 446.58,
+      "duration": 3.0,
+      "text": "what are the other options that you can"
+    },
+    {
+      "start": 447.72,
+      "duration": 3.3,
+      "text": "use with code commit so code commit is"
+    },
+    {
+      "start": 449.58,
+      "duration": 3.66,
+      "text": "AWS managed service so you have"
+    },
+    {
+      "start": 451.02,
+      "duration": 4.92,
+      "text": "different features like integration with"
+    },
+    {
+      "start": 453.24,
+      "duration": 4.739,
+      "text": "services like Lambda code deploy or"
+    },
+    {
+      "start": 455.94,
+      "duration": 3.659,
+      "text": "other CI CD tools so let's see what are"
+    },
+    {
+      "start": 457.979,
+      "duration": 3.361,
+      "text": "the features that we have so here you"
+    },
+    {
+      "start": 459.599,
+      "duration": 3.061,
+      "text": "have notification sections you can"
+    },
+    {
+      "start": 461.34,
+      "duration": 4.799,
+      "text": "create notifications that you can"
+    },
+    {
+      "start": 462.66,
+      "duration": 5.64,
+      "text": "receive on your emails using SNS so you"
+    },
+    {
+      "start": 466.139,
+      "duration": 3.78,
+      "text": "can create notifications on it actions"
+    },
+    {
+      "start": 468.3,
+      "duration": 3.299,
+      "text": "like on commits and pull requests"
+    },
+    {
+      "start": 469.919,
+      "duration": 3.421,
+      "text": "whenever the status is changed whenever"
+    },
+    {
+      "start": 471.599,
+      "duration": 3.841,
+      "text": "the rule is override or all of these"
+    },
+    {
+      "start": 473.34,
+      "duration": 5.52,
+      "text": "options so you can create notification"
+    },
+    {
+      "start": 475.44,
+      "duration": 6.12,
+      "text": "on each of them using SNS or using AWS"
+    },
+    {
+      "start": 478.86,
+      "duration": 5.339,
+      "text": "chatbot which uses Slack"
+    },
+    {
+      "start": 481.56,
+      "duration": 5.039,
+      "text": "next we have is events or you can create"
+    },
+    {
+      "start": 484.199,
+      "duration": 4.201,
+      "text": "triggers so let's say you want to create"
+    },
+    {
+      "start": 486.599,
+      "duration": 3.72,
+      "text": "a trigger or you want to run a Lambda"
+    },
+    {
+      "start": 488.4,
+      "duration": 3.96,
+      "text": "code whenever someone pushed the code in"
+    },
+    {
+      "start": 490.319,
+      "duration": 4.38,
+      "text": "this repository you can do that so you"
+    },
+    {
+      "start": 492.36,
+      "duration": 5.58,
+      "text": "have two options here using aw Amazon"
+    },
+    {
+      "start": 494.699,
+      "duration": 5.041,
+      "text": "SMS or using Lambda so you can create a"
+    },
+    {
+      "start": 497.94,
+      "duration": 3.36,
+      "text": "trigger based on the events that has"
+    },
+    {
+      "start": 499.74,
+      "duration": 3.72,
+      "text": "been happened it can be editing so"
+    },
+    {
+      "start": 501.3,
+      "duration": 3.6,
+      "text": "events can be either pushing to an"
+    },
+    {
+      "start": 503.46,
+      "duration": 3.84,
+      "text": "existing Branch creating a new Branch or"
+    },
+    {
+      "start": 504.9,
+      "duration": 3.96,
+      "text": "deleting and deleting a branch you can"
+    },
+    {
+      "start": 507.3,
+      "duration": 2.76,
+      "text": "create event for that"
+    },
+    {
+      "start": 508.86,
+      "duration": 3.78,
+      "text": "so"
+    },
+    {
+      "start": 510.06,
+      "duration": 5.219,
+      "text": "this is all I hope this was informative"
+    },
+    {
+      "start": 512.64,
+      "duration": 4.319,
+      "text": "if you have any questions any doubt you"
+    },
+    {
+      "start": 515.279,
+      "duration": 4.2,
+      "text": "can let me know in the comment section"
+    },
+    {
+      "start": 516.959,
+      "duration": 5.341,
+      "text": "I'm going to post more videos on AWS"
+    },
+    {
+      "start": 519.479,
+      "duration": 4.141,
+      "text": "code Pipeline and AWS code built so"
+    },
+    {
+      "start": 522.3,
+      "duration": 3.06,
+      "text": "please subscribe to Cloud shop if you"
+    },
+    {
+      "start": 523.62,
+      "duration": 3.48,
+      "text": "haven't I post videos on AWS Cloud"
+    },
+    {
+      "start": 525.36,
+      "duration": 3.9,
+      "text": "devops tools like terraform and simple"
+    },
+    {
+      "start": 527.1,
+      "duration": 3.78,
+      "text": "kubernetes so please subscribe and like"
+    },
+    {
+      "start": 529.26,
+      "duration": 4.22,
+      "text": "this video see you in the next video"
+    },
+    {
+      "start": 530.88,
+      "duration": 2.6,
+      "text": "thank you"
+    }
+  ]
+}

@@ -1,0 +1,1451 @@
+{
+  "video": {
+    "id": "OrpTRmQU6UA",
+    "title": "5 EFFECTIVE ways to use ChatGPT as a DevOps Engineer",
+    "url": "https://www.youtube.com/watch?v=OrpTRmQU6UA",
+    "duration": 653,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.199,
+      "duration": 5.321,
+      "text": "Jack GPT has completely changed the way"
+    },
+    {
+      "start": 3.24,
+      "duration": 4.679,
+      "text": "people create Solutions and develop code"
+    },
+    {
+      "start": 5.52,
+      "duration": 4.619,
+      "text": "however most software engineers and"
+    },
+    {
+      "start": 7.919,
+      "duration": 4.861,
+      "text": "devops engineer are still not using chat"
+    },
+    {
+      "start": 10.139,
+      "duration": 4.021,
+      "text": "GPT to improve their work and make their"
+    },
+    {
+      "start": 12.78,
+      "duration": 3.48,
+      "text": "life easy"
+    },
+    {
+      "start": 14.16,
+      "duration": 4.26,
+      "text": "that is why today I am creating this"
+    },
+    {
+      "start": 16.26,
+      "duration": 4.92,
+      "text": "video to show you five different ways"
+    },
+    {
+      "start": 18.42,
+      "duration": 5.279,
+      "text": "how you can use chat GPD as a devops"
+    },
+    {
+      "start": 21.18,
+      "duration": 5.46,
+      "text": "engineer to increase productivity and"
+    },
+    {
+      "start": 23.699,
+      "duration": 4.801,
+      "text": "quality of your work every day"
+    },
+    {
+      "start": 26.64,
+      "duration": 4.08,
+      "text": "before we go ahead and start with the"
+    },
+    {
+      "start": 28.5,
+      "duration": 4.38,
+      "text": "video and learn how you can use cat CPT"
+    },
+    {
+      "start": 30.72,
+      "duration": 3.839,
+      "text": "as devops engineer I want you to please"
+    },
+    {
+      "start": 32.88,
+      "duration": 4.32,
+      "text": "subscribe if you haven't subscribed to"
+    },
+    {
+      "start": 34.559,
+      "duration": 5.221,
+      "text": "cloudchamp I post videos on AWS cloud"
+    },
+    {
+      "start": 37.2,
+      "duration": 5.699,
+      "text": "and devops tools like terraform ansible"
+    },
+    {
+      "start": 39.78,
+      "duration": 4.98,
+      "text": "Docker kubernetes so please subscribe to"
+    },
+    {
+      "start": 42.899,
+      "duration": 4.081,
+      "text": "Cloud champ and we are very close to"
+    },
+    {
+      "start": 44.76,
+      "duration": 5.16,
+      "text": "4000 subscriber so please show some love"
+    },
+    {
+      "start": 46.98,
+      "duration": 6.059,
+      "text": "and support let's start with learning"
+    },
+    {
+      "start": 49.92,
+      "duration": 5.279,
+      "text": "chat GPT so chat GPT is my secret weapon"
+    },
+    {
+      "start": 53.039,
+      "duration": 4.261,
+      "text": "and I use it every day you can see so"
+    },
+    {
+      "start": 55.199,
+      "duration": 3.661,
+      "text": "many tabs open here and you can also use"
+    },
+    {
+      "start": 57.3,
+      "duration": 4.2,
+      "text": "it too in this video I'm going to show"
+    },
+    {
+      "start": 58.86,
+      "duration": 4.499,
+      "text": "you five ways on how chat GPT can make"
+    },
+    {
+      "start": 61.5,
+      "duration": 3.54,
+      "text": "your life easy and increase your"
+    },
+    {
+      "start": 63.359,
+      "duration": 3.961,
+      "text": "productivity"
+    },
+    {
+      "start": 65.04,
+      "duration": 4.079,
+      "text": "so chat GPT is my secret weapon when it"
+    },
+    {
+      "start": 67.32,
+      "duration": 4.38,
+      "text": "comes to creating project from scratch"
+    },
+    {
+      "start": 69.119,
+      "duration": 5.521,
+      "text": "because with a single prompt you can"
+    },
+    {
+      "start": 71.7,
+      "duration": 4.86,
+      "text": "create Solutions so let's see how you"
+    },
+    {
+      "start": 74.64,
+      "duration": 3.78,
+      "text": "can create Solutions using chat GPT"
+    },
+    {
+      "start": 76.56,
+      "duration": 4.14,
+      "text": "imagine you want to deploy an"
+    },
+    {
+      "start": 78.42,
+      "duration": 4.86,
+      "text": "application on AWS and for that you need"
+    },
+    {
+      "start": 80.7,
+      "duration": 4.44,
+      "text": "to create a VPC with public private"
+    },
+    {
+      "start": 83.28,
+      "duration": 4.74,
+      "text": "subnets internet gateway in that Gateway"
+    },
+    {
+      "start": 85.14,
+      "duration": 4.92,
+      "text": "and you can use chat GPT and ask chat"
+    },
+    {
+      "start": 88.02,
+      "duration": 4.08,
+      "text": "GPT to do that with just a single block"
+    },
+    {
+      "start": 90.06,
+      "duration": 4.62,
+      "text": "let me show you an example"
+    },
+    {
+      "start": 92.1,
+      "duration": 4.86,
+      "text": "create a terraform code with VPC having"
+    },
+    {
+      "start": 94.68,
+      "duration": 4.2,
+      "text": "public and private subnet attach"
+    },
+    {
+      "start": 96.96,
+      "duration": 4.019,
+      "text": "internet gateway and that gateway to the"
+    },
+    {
+      "start": 98.88,
+      "duration": 4.5,
+      "text": "subnets also launch our instance inside"
+    },
+    {
+      "start": 100.979,
+      "duration": 4.081,
+      "text": "the public subnet so if I do this it"
+    },
+    {
+      "start": 103.38,
+      "duration": 3.48,
+      "text": "should start creating the solution for"
+    },
+    {
+      "start": 105.06,
+      "duration": 3.9,
+      "text": "me and giving me the code"
+    },
+    {
+      "start": 106.86,
+      "duration": 4.02,
+      "text": "so let's see what activity has to offer"
+    },
+    {
+      "start": 108.96,
+      "duration": 4.08,
+      "text": "and you can see it has started right in"
+    },
+    {
+      "start": 110.88,
+      "duration": 4.26,
+      "text": "the code we have provided I can see the"
+    },
+    {
+      "start": 113.04,
+      "duration": 5.52,
+      "text": "provider here VPC is also being created"
+    },
+    {
+      "start": 115.14,
+      "duration": 5.28,
+      "text": "so you can see how amazing chat GPT is"
+    },
+    {
+      "start": 118.56,
+      "duration": 4.019,
+      "text": "at how easy it is to create Solutions"
+    },
+    {
+      "start": 120.42,
+      "duration": 4.5,
+      "text": "using chat GPT with writing a single"
+    },
+    {
+      "start": 122.579,
+      "duration": 4.801,
+      "text": "prompt if you were to write this code on"
+    },
+    {
+      "start": 124.92,
+      "duration": 5.819,
+      "text": "your own you would take around 20 to 10"
+    },
+    {
+      "start": 127.38,
+      "duration": 5.76,
+      "text": "to 20 minutes maximum and using chat GPT"
+    },
+    {
+      "start": 130.739,
+      "duration": 5.101,
+      "text": "you can create this with just a single"
+    },
+    {
+      "start": 133.14,
+      "duration": 5.819,
+      "text": "prompt so here it gives you the example"
+    },
+    {
+      "start": 135.84,
+      "duration": 6.539,
+      "text": "of how what this code does and"
+    },
+    {
+      "start": 138.959,
+      "duration": 6.541,
+      "text": "what it is about so I actually copied"
+    },
+    {
+      "start": 142.379,
+      "duration": 5.22,
+      "text": "this code and ran this in my vs code and"
+    },
+    {
+      "start": 145.5,
+      "duration": 3.84,
+      "text": "if I show you it act it worked for me"
+    },
+    {
+      "start": 147.599,
+      "duration": 4.081,
+      "text": "you can see seven resources being"
+    },
+    {
+      "start": 149.34,
+      "duration": 4.259,
+      "text": "created all of these are here and I use"
+    },
+    {
+      "start": 151.68,
+      "duration": 5.34,
+      "text": "the exact same code that was given by"
+    },
+    {
+      "start": 153.599,
+      "duration": 5.161,
+      "text": "chat GPT so you can use chatgpt to"
+    },
+    {
+      "start": 157.02,
+      "duration": 4.02,
+      "text": "create solutions that was the first way"
+    },
+    {
+      "start": 158.76,
+      "duration": 4.979,
+      "text": "of how you can use chat GPT not only"
+    },
+    {
+      "start": 161.04,
+      "duration": 5.339,
+      "text": "this along with terraform you can also"
+    },
+    {
+      "start": 163.739,
+      "duration": 5.661,
+      "text": "create stuff for ansible playbooks so"
+    },
+    {
+      "start": 166.379,
+      "duration": 9.481,
+      "text": "let's see create actionable Playbook"
+    },
+    {
+      "start": 169.4,
+      "duration": 9.94,
+      "text": "to set up lamp on this instance so lamb"
+    },
+    {
+      "start": 175.86,
+      "duration": 5.82,
+      "text": "stands for Linux Apache MySQL phpmyadmin"
+    },
+    {
+      "start": 179.34,
+      "duration": 4.979,
+      "text": "and we're going to ask chat TPT to"
+    },
+    {
+      "start": 181.68,
+      "duration": 5.46,
+      "text": "create ansible Playbook to install lamp"
+    },
+    {
+      "start": 184.319,
+      "duration": 4.081,
+      "text": "on this instance being created so you"
+    },
+    {
+      "start": 187.14,
+      "duration": 4.379,
+      "text": "can see it I started writing the"
+    },
+    {
+      "start": 188.4,
+      "duration": 5.22,
+      "text": "Playbook which has all the steps using"
+    },
+    {
+      "start": 191.519,
+      "duration": 4.321,
+      "text": "chat GPT we"
+    },
+    {
+      "start": 193.62,
+      "duration": 3.899,
+      "text": "it saves us time with like with a single"
+    },
+    {
+      "start": 195.84,
+      "duration": 3.179,
+      "text": "prompt you get what you want and it"
+    },
+    {
+      "start": 197.519,
+      "duration": 3.121,
+      "text": "saves you time not only does it save"
+    },
+    {
+      "start": 199.019,
+      "duration": 3.841,
+      "text": "time but it also gives you the best"
+    },
+    {
+      "start": 200.64,
+      "duration": 3.959,
+      "text": "solution you can use for to get the job"
+    },
+    {
+      "start": 202.86,
+      "duration": 3.48,
+      "text": "tab so here you can see it has also"
+    },
+    {
+      "start": 204.599,
+      "duration": 4.14,
+      "text": "explained you what this ansible Playbook"
+    },
+    {
+      "start": 206.34,
+      "duration": 4.319,
+      "text": "is going to do so I hope you have now"
+    },
+    {
+      "start": 208.739,
+      "duration": 4.441,
+      "text": "understood how to use chat GPT to create"
+    },
+    {
+      "start": 210.659,
+      "duration": 5.58,
+      "text": "Solutions let's go to the second feature"
+    },
+    {
+      "start": 213.18,
+      "duration": 5.1,
+      "text": "of how you can use Jack GPT for research"
+    },
+    {
+      "start": 216.239,
+      "duration": 3.901,
+      "text": "and pucs"
+    },
+    {
+      "start": 218.28,
+      "duration": 3.959,
+      "text": "being a devops engineer you need to"
+    },
+    {
+      "start": 220.14,
+      "duration": 4.98,
+      "text": "create pocs and better solutions for the"
+    },
+    {
+      "start": 222.239,
+      "duration": 4.801,
+      "text": "applications so making decisions on how"
+    },
+    {
+      "start": 225.12,
+      "duration": 3.36,
+      "text": "to implement something or an application"
+    },
+    {
+      "start": 227.04,
+      "duration": 3.779,
+      "text": "can be very tough when you have"
+    },
+    {
+      "start": 228.48,
+      "duration": 3.839,
+      "text": "different options to compare for my"
+    },
+    {
+      "start": 230.819,
+      "duration": 3.361,
+      "text": "basic idea is to create proof of"
+    },
+    {
+      "start": 232.319,
+      "duration": 4.681,
+      "text": "concepts for every solution and then"
+    },
+    {
+      "start": 234.18,
+      "duration": 5.46,
+      "text": "compare it but with chat GPT it's this"
+    },
+    {
+      "start": 237.0,
+      "duration": 4.62,
+      "text": "process makes very very easy let me show"
+    },
+    {
+      "start": 239.64,
+      "duration": 3.9,
+      "text": "you an example let's consider we have a"
+    },
+    {
+      "start": 241.62,
+      "duration": 4.679,
+      "text": "media sharing application and we want to"
+    },
+    {
+      "start": 243.54,
+      "duration": 4.8,
+      "text": "deploy it on AWS so we need to see what"
+    },
+    {
+      "start": 246.299,
+      "duration": 4.14,
+      "text": "is the best instance type for this media"
+    },
+    {
+      "start": 248.34,
+      "duration": 4.92,
+      "text": "sharing application so let's ask chat"
+    },
+    {
+      "start": 250.439,
+      "duration": 5.821,
+      "text": "GPT to give us the best solution of how"
+    },
+    {
+      "start": 253.26,
+      "duration": 5.219,
+      "text": "we can deploy this node.js media sharing"
+    },
+    {
+      "start": 256.26,
+      "duration": 4.199,
+      "text": "application so I'm going to write a"
+    },
+    {
+      "start": 258.479,
+      "duration": 4.261,
+      "text": "prompt and ask chat GPT for the best"
+    },
+    {
+      "start": 260.459,
+      "duration": 3.96,
+      "text": "solution so we have our stat GPT which"
+    },
+    {
+      "start": 262.74,
+      "duration": 4.98,
+      "text": "instance type is better for my video"
+    },
+    {
+      "start": 264.419,
+      "duration": 4.921,
+      "text": "sharing node.js app serving 10 000 users"
+    },
+    {
+      "start": 267.72,
+      "duration": 3.78,
+      "text": "daily Solutions should be highly"
+    },
+    {
+      "start": 269.34,
+      "duration": 3.78,
+      "text": "scalable and available so we want the"
+    },
+    {
+      "start": 271.5,
+      "duration": 3.54,
+      "text": "chat GPT to give us the best solution"
+    },
+    {
+      "start": 273.12,
+      "duration": 4.2,
+      "text": "along with this it should be highly"
+    },
+    {
+      "start": 275.04,
+      "duration": 5.219,
+      "text": "scalable and available so let's see what"
+    },
+    {
+      "start": 277.32,
+      "duration": 4.62,
+      "text": "chat GPT has to offer foot"
+    },
+    {
+      "start": 280.259,
+      "duration": 4.681,
+      "text": "so you can see it start giving us the"
+    },
+    {
+      "start": 281.94,
+      "duration": 4.8,
+      "text": "response it says uh it depends on"
+    },
+    {
+      "start": 284.94,
+      "duration": 3.84,
+      "text": "specific requirements which is true but"
+    },
+    {
+      "start": 286.74,
+      "duration": 3.959,
+      "text": "to ensure higher availability I would"
+    },
+    {
+      "start": 288.78,
+      "duration": 3.78,
+      "text": "recommend to go with load balancer which"
+    },
+    {
+      "start": 290.699,
+      "duration": 3.72,
+      "text": "is the best option for handling traffic"
+    },
+    {
+      "start": 292.56,
+      "duration": 3.6,
+      "text": "on different servers you can use Auto"
+    },
+    {
+      "start": 294.419,
+      "duration": 3.961,
+      "text": "scaling for automatically increasing and"
+    },
+    {
+      "start": 296.16,
+      "duration": 4.319,
+      "text": "decreasing the number of instances that"
+    },
+    {
+      "start": 298.38,
+      "duration": 4.379,
+      "text": "is correct you can also use Amazon EFS"
+    },
+    {
+      "start": 300.479,
+      "duration": 4.081,
+      "text": "which is used by multiple instances at"
+    },
+    {
+      "start": 302.759,
+      "duration": 4.141,
+      "text": "the same type Additionally you can"
+    },
+    {
+      "start": 304.56,
+      "duration": 4.74,
+      "text": "consider using Amazon ECS ticket to the"
+    },
+    {
+      "start": 306.9,
+      "duration": 4.859,
+      "text": "service which is used for Docker"
+    },
+    {
+      "start": 309.3,
+      "duration": 5.04,
+      "text": "containers and you can go with all these"
+    },
+    {
+      "start": 311.759,
+      "duration": 4.681,
+      "text": "different instance type if you have more"
+    },
+    {
+      "start": 314.34,
+      "duration": 3.9,
+      "text": "compute intensive workload you can go"
+    },
+    {
+      "start": 316.44,
+      "duration": 3.78,
+      "text": "with this so"
+    },
+    {
+      "start": 318.24,
+      "duration": 3.54,
+      "text": "chat TPT has given us different options"
+    },
+    {
+      "start": 320.22,
+      "duration": 3.479,
+      "text": "and it has given us the idea as well you"
+    },
+    {
+      "start": 321.78,
+      "duration": 4.259,
+      "text": "can ask more prompts to get the better"
+    },
+    {
+      "start": 323.699,
+      "duration": 4.5,
+      "text": "solution or to get the exact solution so"
+    },
+    {
+      "start": 326.039,
+      "duration": 5.281,
+      "text": "now with the help of chat CPT I can"
+    },
+    {
+      "start": 328.199,
+      "duration": 4.801,
+      "text": "directly ask for its expert opinion and"
+    },
+    {
+      "start": 331.32,
+      "duration": 3.48,
+      "text": "for which option is best for my"
+    },
+    {
+      "start": 333.0,
+      "duration": 4.56,
+      "text": "application and not only this it saves"
+    },
+    {
+      "start": 334.8,
+      "duration": 5.28,
+      "text": "my type in decision making and my effort"
+    },
+    {
+      "start": 337.56,
+      "duration": 4.44,
+      "text": "so which lets me focus on the"
+    },
+    {
+      "start": 340.08,
+      "duration": 4.86,
+      "text": "application itself this so this is how"
+    },
+    {
+      "start": 342.0,
+      "duration": 5.4,
+      "text": "you can use chat GPT for research pocs"
+    },
+    {
+      "start": 344.94,
+      "duration": 4.38,
+      "text": "and for comparing Solutions let's go"
+    },
+    {
+      "start": 347.4,
+      "duration": 4.799,
+      "text": "ahead and see how you can use chat GPT"
+    },
+    {
+      "start": 349.32,
+      "duration": 5.04,
+      "text": "for understanding codes and logs"
+    },
+    {
+      "start": 352.199,
+      "duration": 4.201,
+      "text": "being a devops engineer you have to"
+    },
+    {
+      "start": 354.36,
+      "duration": 3.42,
+      "text": "constantly check code you can you have"
+    },
+    {
+      "start": 356.4,
+      "duration": 3.78,
+      "text": "to check how your application is working"
+    },
+    {
+      "start": 357.78,
+      "duration": 4.62,
+      "text": "check the logs of your Docker container"
+    },
+    {
+      "start": 360.18,
+      "duration": 4.38,
+      "text": "your kubernetes spots all of these and"
+    },
+    {
+      "start": 362.4,
+      "duration": 4.2,
+      "text": "this can be complex sometimes even right"
+    },
+    {
+      "start": 364.56,
+      "duration": 3.54,
+      "text": "now the struggle of understand of"
+    },
+    {
+      "start": 366.6,
+      "duration": 3.84,
+      "text": "understanding a code that is not written"
+    },
+    {
+      "start": 368.1,
+      "duration": 4.56,
+      "text": "by you or by someone else which is not"
+    },
+    {
+      "start": 370.44,
+      "duration": 4.38,
+      "text": "in correct format but no problem you can"
+    },
+    {
+      "start": 372.66,
+      "duration": 4.5,
+      "text": "use chat GPT to help you understand code"
+    },
+    {
+      "start": 374.82,
+      "duration": 4.98,
+      "text": "blocks or logs as well let me show you"
+    },
+    {
+      "start": 377.16,
+      "duration": 5.159,
+      "text": "an example let's ask chatgpt to help us"
+    },
+    {
+      "start": 379.8,
+      "duration": 4.26,
+      "text": "explain a block of code it will tell us"
+    },
+    {
+      "start": 382.319,
+      "duration": 4.741,
+      "text": "everything what this code is going to do"
+    },
+    {
+      "start": 384.06,
+      "duration": 6.0,
+      "text": "a lot with the explanation so let's ask"
+    },
+    {
+      "start": 387.06,
+      "duration": 5.52,
+      "text": "chat GPT to explain us a block of code"
+    },
+    {
+      "start": 390.06,
+      "duration": 5.46,
+      "text": "that is trying to do something"
+    },
+    {
+      "start": 392.58,
+      "duration": 5.64,
+      "text": "so I have a code here and I want chat"
+    },
+    {
+      "start": 395.52,
+      "duration": 4.38,
+      "text": "GPT to explain us what this code is"
+    },
+    {
+      "start": 398.22,
+      "duration": 3.24,
+      "text": "going to do so it actually pretty should"
+    },
+    {
+      "start": 399.9,
+      "duration": 4.019,
+      "text": "I start explaining us let's see what"
+    },
+    {
+      "start": 401.46,
+      "duration": 5.1,
+      "text": "charge GPT tells so it says this code"
+    },
+    {
+      "start": 403.919,
+      "duration": 5.641,
+      "text": "block is for rotating a secret stored in"
+    },
+    {
+      "start": 406.56,
+      "duration": 4.62,
+      "text": "AWS Secrets manager which is true uh it"
+    },
+    {
+      "start": 409.56,
+      "duration": 3.6,
+      "text": "start explaining the function which is"
+    },
+    {
+      "start": 411.18,
+      "duration": 3.84,
+      "text": "get secret this function is to retrieve"
+    },
+    {
+      "start": 413.16,
+      "duration": 4.2,
+      "text": "the secret from Secrets manager then"
+    },
+    {
+      "start": 415.02,
+      "duration": 4.08,
+      "text": "this is to rotate the function you can"
+    },
+    {
+      "start": 417.36,
+      "duration": 4.26,
+      "text": "see chat Deputy has given us brief"
+    },
+    {
+      "start": 419.1,
+      "duration": 4.92,
+      "text": "information about what it does which"
+    },
+    {
+      "start": 421.62,
+      "duration": 4.079,
+      "text": "which helps us understand the code in"
+    },
+    {
+      "start": 424.02,
+      "duration": 3.78,
+      "text": "simple language and then you can use"
+    },
+    {
+      "start": 425.699,
+      "duration": 4.321,
+      "text": "this code to create your own Solutions"
+    },
+    {
+      "start": 427.8,
+      "duration": 4.5,
+      "text": "so this is the best part I can I use"
+    },
+    {
+      "start": 430.02,
+      "duration": 3.899,
+      "text": "this every day to understand logs to"
+    },
+    {
+      "start": 432.3,
+      "duration": 3.6,
+      "text": "understand codes which can be complex"
+    },
+    {
+      "start": 433.919,
+      "duration": 4.021,
+      "text": "sometimes so"
+    },
+    {
+      "start": 435.9,
+      "duration": 3.78,
+      "text": "this is how you can use chat GPT to"
+    },
+    {
+      "start": 437.94,
+      "duration": 5.159,
+      "text": "understand code let's also use an"
+    },
+    {
+      "start": 439.68,
+      "duration": 6.239,
+      "text": "example to explain Docker container"
+    },
+    {
+      "start": 443.099,
+      "duration": 4.981,
+      "text": "locks so I have"
+    },
+    {
+      "start": 445.919,
+      "duration": 4.921,
+      "text": "I have logs here for Docker container"
+    },
+    {
+      "start": 448.08,
+      "duration": 5.82,
+      "text": "and lets us chat GPD to explain what"
+    },
+    {
+      "start": 450.84,
+      "duration": 4.799,
+      "text": "this lines of logs are being showing so"
+    },
+    {
+      "start": 453.9,
+      "duration": 5.519,
+      "text": "I'm going to copy this"
+    },
+    {
+      "start": 455.639,
+      "duration": 6.241,
+      "text": "and ask chatgp to explain that to us"
+    },
+    {
+      "start": 459.419,
+      "duration": 4.68,
+      "text": "and I've entered the logs and charity"
+    },
+    {
+      "start": 461.88,
+      "duration": 4.02,
+      "text": "started giving us the information about"
+    },
+    {
+      "start": 464.099,
+      "duration": 4.44,
+      "text": "this so it says these like these logs"
+    },
+    {
+      "start": 465.9,
+      "duration": 4.739,
+      "text": "are from gunagon which is a python web"
+    },
+    {
+      "start": 468.539,
+      "duration": 3.841,
+      "text": "server and these lock shows that the"
+    },
+    {
+      "start": 470.639,
+      "duration": 4.081,
+      "text": "server is starting up listing on Port 80"
+    },
+    {
+      "start": 472.38,
+      "duration": 3.9,
+      "text": "so everything is working good and this"
+    },
+    {
+      "start": 474.72,
+      "duration": 3.12,
+      "text": "can help you understand what how your"
+    },
+    {
+      "start": 476.28,
+      "duration": 3.66,
+      "text": "application is behaving and what should"
+    },
+    {
+      "start": 477.84,
+      "duration": 4.799,
+      "text": "be done so this is how you can use"
+    },
+    {
+      "start": 479.94,
+      "duration": 5.099,
+      "text": "chatgpt to create to understand code and"
+    },
+    {
+      "start": 482.639,
+      "duration": 5.101,
+      "text": "logs let's go ahead and see how we can"
+    },
+    {
+      "start": 485.039,
+      "duration": 5.28,
+      "text": "use chat GPT to automate the repetitive"
+    },
+    {
+      "start": 487.74,
+      "duration": 4.92,
+      "text": "tasks that we do every day"
+    },
+    {
+      "start": 490.319,
+      "duration": 4.621,
+      "text": "let's see how we can use chat GPD to"
+    },
+    {
+      "start": 492.66,
+      "duration": 4.86,
+      "text": "automate some of the manual tasks for"
+    },
+    {
+      "start": 494.94,
+      "duration": 4.68,
+      "text": "example let's say we have a we have a"
+    },
+    {
+      "start": 497.52,
+      "duration": 4.2,
+      "text": "requirement where you need to take mySQL"
+    },
+    {
+      "start": 499.62,
+      "duration": 5.1,
+      "text": "database backup every day and store it"
+    },
+    {
+      "start": 501.72,
+      "duration": 5.34,
+      "text": "on S3 so our devops engineer was using"
+    },
+    {
+      "start": 504.72,
+      "duration": 5.28,
+      "text": "doing this manually but we can use chat"
+    },
+    {
+      "start": 507.06,
+      "duration": 5.339,
+      "text": "GPT to automate this stuff so let's ask"
+    },
+    {
+      "start": 510.0,
+      "duration": 4.02,
+      "text": "chargpt to create a bash script"
+    },
+    {
+      "start": 512.399,
+      "duration": 3.421,
+      "text": "to automate this process and I'm going"
+    },
+    {
+      "start": 514.02,
+      "duration": 4.319,
+      "text": "to ask chatgpt to create a basket to"
+    },
+    {
+      "start": 515.82,
+      "duration": 6.779,
+      "text": "take my SQL database daily and save it"
+    },
+    {
+      "start": 518.339,
+      "duration": 6.661,
+      "text": "on S3 bucket so let's see if charge apt"
+    },
+    {
+      "start": 522.599,
+      "duration": 3.961,
+      "text": "can create a basket for this or not"
+    },
+    {
+      "start": 525.0,
+      "duration": 3.3,
+      "text": "so here's a batch script that can be"
+    },
+    {
+      "start": 526.56,
+      "duration": 3.6,
+      "text": "used for daily backup of MySQL and save"
+    },
+    {
+      "start": 528.3,
+      "duration": 4.08,
+      "text": "it to S3 you can see it has started"
+    },
+    {
+      "start": 530.16,
+      "duration": 4.14,
+      "text": "writing the best script along with every"
+    },
+    {
+      "start": 532.38,
+      "duration": 4.32,
+      "text": "parameter what should be into your S3"
+    },
+    {
+      "start": 534.3,
+      "duration": 4.8,
+      "text": "bucket path everything is there and you"
+    },
+    {
+      "start": 536.7,
+      "duration": 4.319,
+      "text": "can see it is using my sequel dump so"
+    },
+    {
+      "start": 539.1,
+      "duration": 4.2,
+      "text": "charge Equity can also help you automate"
+    },
+    {
+      "start": 541.019,
+      "duration": 4.021,
+      "text": "stuff which is the main motive of a"
+    },
+    {
+      "start": 543.3,
+      "duration": 4.32,
+      "text": "devops engineer to automate everything"
+    },
+    {
+      "start": 545.04,
+      "duration": 5.1,
+      "text": "so rather than going and doing manually"
+    },
+    {
+      "start": 547.62,
+      "duration": 5.58,
+      "text": "manual things you can use chat GPT to"
+    },
+    {
+      "start": 550.14,
+      "duration": 6.36,
+      "text": "automate your daily task like"
+    },
+    {
+      "start": 553.2,
+      "duration": 4.68,
+      "text": "taking backups or taking web backups to"
+    },
+    {
+      "start": 556.5,
+      "duration": 2.82,
+      "text": "rotate your password everything that"
+    },
+    {
+      "start": 557.88,
+      "duration": 5.04,
+      "text": "you're doing manually right now can be"
+    },
+    {
+      "start": 559.32,
+      "duration": 5.639,
+      "text": "automated with the help of chat GPT"
+    },
+    {
+      "start": 562.92,
+      "duration": 5.28,
+      "text": "so that's that's how you can use stat"
+    },
+    {
+      "start": 564.959,
+      "duration": 5.101,
+      "text": "GPT for uh automating stuff let's see"
+    },
+    {
+      "start": 568.2,
+      "duration": 4.139,
+      "text": "how we can use chat GPT for creating"
+    },
+    {
+      "start": 570.06,
+      "duration": 4.08,
+      "text": "better documentation so we have an"
+    },
+    {
+      "start": 572.339,
+      "duration": 3.301,
+      "text": "example of media sharing application"
+    },
+    {
+      "start": 574.14,
+      "duration": 3.78,
+      "text": "let's say we want to create a"
+    },
+    {
+      "start": 575.64,
+      "duration": 5.52,
+      "text": "documentation so that our users can help"
+    },
+    {
+      "start": 577.92,
+      "duration": 5.16,
+      "text": "use the app so let's ask chatgpt to"
+    },
+    {
+      "start": 581.16,
+      "duration": 3.6,
+      "text": "create a documentation for our media"
+    },
+    {
+      "start": 583.08,
+      "duration": 3.18,
+      "text": "sharing application let me write a"
+    },
+    {
+      "start": 584.76,
+      "duration": 4.259,
+      "text": "prompt for that so I'm going to ask"
+    },
+    {
+      "start": 586.26,
+      "duration": 6.84,
+      "text": "chargpt to create a good document so"
+    },
+    {
+      "start": 589.019,
+      "duration": 6.181,
+      "text": "that everyone uh can use our app easily"
+    },
+    {
+      "start": 593.1,
+      "duration": 3.84,
+      "text": "so let's see what activity has to offer"
+    },
+    {
+      "start": 595.2,
+      "duration": 3.24,
+      "text": "it has started writing documentation as"
+    },
+    {
+      "start": 596.94,
+      "duration": 2.94,
+      "text": "you can see here so welcome to the"
+    },
+    {
+      "start": 598.44,
+      "duration": 3.06,
+      "text": "documentation for our media sharing"
+    },
+    {
+      "start": 599.88,
+      "duration": 3.84,
+      "text": "application it gives us all the"
+    },
+    {
+      "start": 601.5,
+      "duration": 3.899,
+      "text": "information about the features so our"
+    },
+    {
+      "start": 603.72,
+      "duration": 2.52,
+      "text": "application has user registration and"
+    },
+    {
+      "start": 605.399,
+      "duration": 3.301,
+      "text": "login"
+    },
+    {
+      "start": 606.24,
+      "duration": 5.039,
+      "text": "to get started you need to click the"
+    },
+    {
+      "start": 608.7,
+      "duration": 4.8,
+      "text": "sign up button so which is actually it"
+    },
+    {
+      "start": 611.279,
+      "duration": 4.56,
+      "text": "looks so real to me I'm so excited to"
+    },
+    {
+      "start": 613.5,
+      "duration": 4.08,
+      "text": "have how chat CPT can help us so I"
+    },
+    {
+      "start": 615.839,
+      "duration": 3.781,
+      "text": "wanted to please follow all the steps"
+    },
+    {
+      "start": 617.58,
+      "duration": 3.72,
+      "text": "I've better and become a good devops"
+    },
+    {
+      "start": 619.62,
+      "duration": 3.06,
+      "text": "engineer I hope this was very"
+    },
+    {
+      "start": 621.3,
+      "duration": 3.12,
+      "text": "informative"
+    },
+    {
+      "start": 622.68,
+      "duration": 3.3,
+      "text": "and it makes you realize that chat"
+    },
+    {
+      "start": 624.42,
+      "duration": 4.14,
+      "text": "Jeopardy can help us become more"
+    },
+    {
+      "start": 625.98,
+      "duration": 5.64,
+      "text": "productive and create more high quality"
+    },
+    {
+      "start": 628.56,
+      "duration": 5.52,
+      "text": "so let me know if you think chatgpt can"
+    },
+    {
+      "start": 631.62,
+      "duration": 4.32,
+      "text": "save us or take our jobs in the comment"
+    },
+    {
+      "start": 634.08,
+      "duration": 3.6,
+      "text": "section and I hope this was informative"
+    },
+    {
+      "start": 635.94,
+      "duration": 3.48,
+      "text": "if you like the video if you have"
+    },
+    {
+      "start": 637.68,
+      "duration": 3.3,
+      "text": "understood it and if you think this was"
+    },
+    {
+      "start": 639.42,
+      "duration": 3.66,
+      "text": "interesting please like this video"
+    },
+    {
+      "start": 640.98,
+      "duration": 2.78,
+      "text": "subscribe to Cloud champ and see you in"
+    },
+    {
+      "start": 643.08,
+      "duration": 2.879,
+      "text": "the next video"
+    },
+    {
+      "start": 643.76,
+      "duration": 4.09,
+      "text": "[Music]"
+    },
+    {
+      "start": 645.959,
+      "duration": 7.58,
+      "text": "foreign"
+    },
+    {
+      "start": 647.85,
+      "duration": 5.689,
+      "text": "[Music]"
+    }
+  ]
+}

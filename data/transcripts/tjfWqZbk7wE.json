@@ -1,0 +1,476 @@
+{
+  "video": {
+    "id": "tjfWqZbk7wE",
+    "title": "Part 3: How to Install ANSIBLE on LINUX? Ansible Installation on Ubuntu AWS EC2 Instance",
+    "url": "https://www.youtube.com/watch?v=tjfWqZbk7wE",
+    "duration": 214,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 4.24,
+      "text": "welcome back to cloudchamp so in the"
+    },
+    {
+      "start": 2.0,
+      "duration": 4.399,
+      "text": "previous video we saw how ansible"
+    },
+    {
+      "start": 4.48,
+      "duration": 4.32,
+      "text": "actually works and i've explained"
+    },
+    {
+      "start": 6.399,
+      "duration": 5.041,
+      "text": "everything in this video we are going to"
+    },
+    {
+      "start": 8.8,
+      "duration": 4.64,
+      "text": "install ansible on ubuntu instance"
+    },
+    {
+      "start": 11.44,
+      "duration": 4.72,
+      "text": "if if you don't have ubuntu you can"
+    },
+    {
+      "start": 13.44,
+      "duration": 4.24,
+      "text": "launch an instance in the ec2 and if you"
+    },
+    {
+      "start": 16.16,
+      "duration": 3.52,
+      "text": "don't know how to launch an instance do"
+    },
+    {
+      "start": 17.68,
+      "duration": 4.72,
+      "text": "not worry i have created a video i'll"
+    },
+    {
+      "start": 19.68,
+      "duration": 5.28,
+      "text": "link it here and you can go check it out"
+    },
+    {
+      "start": 22.4,
+      "duration": 4.48,
+      "text": "so this is an open to instance in my ec2"
+    },
+    {
+      "start": 24.96,
+      "duration": 3.88,
+      "text": "console if you have any other operating"
+    },
+    {
+      "start": 26.88,
+      "duration": 5.04,
+      "text": "system you can use"
+    },
+    {
+      "start": 28.84,
+      "duration": 5.559,
+      "text": "this documentation which shows how to"
+    },
+    {
+      "start": 31.92,
+      "duration": 4.159,
+      "text": "install ansible on ubuntu red hat arc"
+    },
+    {
+      "start": 34.399,
+      "duration": 3.921,
+      "text": "linux mac os and different operating"
+    },
+    {
+      "start": 36.079,
+      "duration": 4.401,
+      "text": "system so we have open to here and we"
+    },
+    {
+      "start": 38.32,
+      "duration": 3.68,
+      "text": "will ssh into it so i'm going to connect"
+    },
+    {
+      "start": 40.48,
+      "duration": 5.04,
+      "text": "to my instance"
+    },
+    {
+      "start": 42.0,
+      "duration": 6.239,
+      "text": "and we are inside the instance here"
+    },
+    {
+      "start": 45.52,
+      "duration": 4.32,
+      "text": "so to check if ansible is present or not"
+    },
+    {
+      "start": 48.239,
+      "duration": 5.201,
+      "text": "you can run a command"
+    },
+    {
+      "start": 49.84,
+      "duration": 5.76,
+      "text": "that is ansible hyphen hyphen version so"
+    },
+    {
+      "start": 53.44,
+      "duration": 4.4,
+      "text": "this shows that there is no ansible"
+    },
+    {
+      "start": 55.6,
+      "duration": 4.56,
+      "text": "present in my system and installing"
+    },
+    {
+      "start": 57.84,
+      "duration": 4.0,
+      "text": "ansible on ubuntu is quite easy"
+    },
+    {
+      "start": 60.16,
+      "duration": 3.52,
+      "text": "there's only two command you just need"
+    },
+    {
+      "start": 61.84,
+      "duration": 4.56,
+      "text": "to run two commands to install ansible"
+    },
+    {
+      "start": 63.68,
+      "duration": 5.04,
+      "text": "so the first is sudo apt update you need"
+    },
+    {
+      "start": 66.4,
+      "duration": 3.12,
+      "text": "to update this is best practice and"
+    },
+    {
+      "start": 68.72,
+      "duration": 2.399,
+      "text": "every"
+    },
+    {
+      "start": 69.52,
+      "duration": 3.84,
+      "text": "cloud or devops engineer should do this"
+    },
+    {
+      "start": 71.119,
+      "duration": 5.36,
+      "text": "before starting so let's just update"
+    },
+    {
+      "start": 73.36,
+      "duration": 3.119,
+      "text": "everything and"
+    },
+    {
+      "start": 78.159,
+      "duration": 3.761,
+      "text": "after this we are going to install"
+    },
+    {
+      "start": 79.439,
+      "duration": 4.401,
+      "text": "ansible using a single command so here"
+    },
+    {
+      "start": 81.92,
+      "duration": 3.839,
+      "text": "everything is update updated"
+    },
+    {
+      "start": 83.84,
+      "duration": 4.8,
+      "text": "now let's just install ansible with a"
+    },
+    {
+      "start": 85.759,
+      "duration": 4.4,
+      "text": "single command that is sudo apt install"
+    },
+    {
+      "start": 88.64,
+      "duration": 2.72,
+      "text": "ansible"
+    },
+    {
+      "start": 90.159,
+      "duration": 3.441,
+      "text": "so"
+    },
+    {
+      "start": 91.36,
+      "duration": 5.36,
+      "text": "sorry"
+    },
+    {
+      "start": 93.6,
+      "duration": 5.6,
+      "text": "sudo apt install ansible so you're going"
+    },
+    {
+      "start": 96.72,
+      "duration": 3.759,
+      "text": "to prompt and you have to type y here to"
+    },
+    {
+      "start": 99.2,
+      "duration": 2.8,
+      "text": "continue"
+    },
+    {
+      "start": 100.479,
+      "duration": 3.361,
+      "text": "and now if you see"
+    },
+    {
+      "start": 102.0,
+      "duration": 3.92,
+      "text": "your python is going to be installed"
+    },
+    {
+      "start": 103.84,
+      "duration": 4.319,
+      "text": "because ansible is made on python and"
+    },
+    {
+      "start": 105.92,
+      "duration": 4.0,
+      "text": "python is quite strong language"
+    },
+    {
+      "start": 108.159,
+      "duration": 4.561,
+      "text": "and you need to learn python i'm i've"
+    },
+    {
+      "start": 109.92,
+      "duration": 4.479,
+      "text": "started you learning python for cloud"
+    },
+    {
+      "start": 112.72,
+      "duration": 3.999,
+      "text": "and hopefully i'll make more videos in"
+    },
+    {
+      "start": 114.399,
+      "duration": 5.121,
+      "text": "python in future so"
+    },
+    {
+      "start": 116.719,
+      "duration": 5.121,
+      "text": "it is setting up ansible here"
+    },
+    {
+      "start": 119.52,
+      "duration": 3.44,
+      "text": "and it has been downloaded"
+    },
+    {
+      "start": 121.84,
+      "duration": 5.4,
+      "text": "let's see"
+    },
+    {
+      "start": 122.96,
+      "duration": 4.28,
+      "text": "what version do we have here"
+    },
+    {
+      "start": 128.72,
+      "duration": 4.4,
+      "text": "by running the same command that is"
+    },
+    {
+      "start": 130.72,
+      "duration": 4.08,
+      "text": "ansible version so"
+    },
+    {
+      "start": 133.12,
+      "duration": 3.44,
+      "text": "it is the latest version and we have"
+    },
+    {
+      "start": 134.8,
+      "duration": 3.84,
+      "text": "successfully downloaded ansible on our"
+    },
+    {
+      "start": 136.56,
+      "duration": 4.399,
+      "text": "ubuntu machine i hope this was quite"
+    },
+    {
+      "start": 138.64,
+      "duration": 4.959,
+      "text": "easy and you have installed ansible on"
+    },
+    {
+      "start": 140.959,
+      "duration": 4.241,
+      "text": "your machine so if you"
+    },
+    {
+      "start": 143.599,
+      "duration": 4.081,
+      "text": "got the ansible on your machine please"
+    },
+    {
+      "start": 145.2,
+      "duration": 4.399,
+      "text": "subscribe to this channel and after"
+    },
+    {
+      "start": 147.68,
+      "duration": 5.12,
+      "text": "installing there's more to the video"
+    },
+    {
+      "start": 149.599,
+      "duration": 6.401,
+      "text": "after installing you can check out this"
+    },
+    {
+      "start": 152.8,
+      "duration": 6.24,
+      "text": "folder that is etsy and there will be a"
+    },
+    {
+      "start": 156.0,
+      "duration": 4.879,
+      "text": "folder created under the name of ansible"
+    },
+    {
+      "start": 159.04,
+      "duration": 5.279,
+      "text": "and if you list down the elements you"
+    },
+    {
+      "start": 160.879,
+      "duration": 5.36,
+      "text": "have host and ansible.config file so in"
+    },
+    {
+      "start": 164.319,
+      "duration": 2.64,
+      "text": "this host file you just need if you want"
+    },
+    {
+      "start": 166.239,
+      "duration": 2.961,
+      "text": "to"
+    },
+    {
+      "start": 166.959,
+      "duration": 4.0,
+      "text": "execute our task on the remote machines"
+    },
+    {
+      "start": 169.2,
+      "duration": 4.08,
+      "text": "if you don't know what"
+    },
+    {
+      "start": 170.959,
+      "duration": 4.241,
+      "text": "managed holds or remote machines are"
+    },
+    {
+      "start": 173.28,
+      "duration": 4.959,
+      "text": "please check the previous video so we"
+    },
+    {
+      "start": 175.2,
+      "duration": 6.24,
+      "text": "are going to enter the eyepiece of"
+    },
+    {
+      "start": 178.239,
+      "duration": 6.321,
+      "text": "managed nodes in this host file and like"
+    },
+    {
+      "start": 181.44,
+      "duration": 5.879,
+      "text": "this so there's an example here the host"
+    },
+    {
+      "start": 184.56,
+      "duration": 5.44,
+      "text": "file the host file and the next one is"
+    },
+    {
+      "start": 187.319,
+      "duration": 4.681,
+      "text": "ansible.config file you can make changes"
+    },
+    {
+      "start": 190.0,
+      "duration": 5.12,
+      "text": "in this config file according to your"
+    },
+    {
+      "start": 192.0,
+      "duration": 5.04,
+      "text": "needs and this is advanced we will"
+    },
+    {
+      "start": 195.12,
+      "duration": 3.199,
+      "text": "look into ansible config file in the"
+    },
+    {
+      "start": 197.04,
+      "duration": 3.839,
+      "text": "further sessions in the next video"
+    },
+    {
+      "start": 198.319,
+      "duration": 4.481,
+      "text": "hopefully and that's it i hope you have"
+    },
+    {
+      "start": 200.879,
+      "duration": 3.681,
+      "text": "understood the video and also subscribe"
+    },
+    {
+      "start": 202.8,
+      "duration": 3.68,
+      "text": "to this channel please subscribe to this"
+    },
+    {
+      "start": 204.56,
+      "duration": 4.56,
+      "text": "channel it is very important so that you"
+    },
+    {
+      "start": 206.48,
+      "duration": 7.36,
+      "text": "can get content on devops and cloud"
+    },
+    {
+      "start": 209.12,
+      "duration": 4.72,
+      "text": "and that's it have a good day thank you"
+    }
+  ]
+}

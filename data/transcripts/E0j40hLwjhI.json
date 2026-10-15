@@ -1,0 +1,1626 @@
+{
+  "video": {
+    "id": "E0j40hLwjhI",
+    "title": "How to create Amazon EC2 instance using Terraform | Launch multiple ec2 instance with terraform code",
+    "url": "https://www.youtube.com/watch?v=E0j40hLwjhI",
+    "duration": 677,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 3.919,
+      "text": "hello everyone in this video we are"
+    },
+    {
+      "start": 1.839,
+      "duration": 5.281,
+      "text": "going to launch an ec2 instance in our"
+    },
+    {
+      "start": 3.919,
+      "duration": 5.521,
+      "text": "aws account using terraform so terraform"
+    },
+    {
+      "start": 7.12,
+      "duration": 4.88,
+      "text": "is absolutely amazing and i will show"
+    },
+    {
+      "start": 9.44,
+      "duration": 5.04,
+      "text": "you why i love it so before terraform we"
+    },
+    {
+      "start": 12.0,
+      "duration": 4.64,
+      "text": "used to create our aws ec2 instance"
+    },
+    {
+      "start": 14.48,
+      "duration": 4.08,
+      "text": "using the console and we used to go"
+    },
+    {
+      "start": 16.64,
+      "duration": 4.08,
+      "text": "through all the steps that is choosing"
+    },
+    {
+      "start": 18.56,
+      "duration": 4.16,
+      "text": "ami instant type configuring instance"
+    },
+    {
+      "start": 20.72,
+      "duration": 4.16,
+      "text": "adding storage adding tags configure"
+    },
+    {
+      "start": 22.72,
+      "duration": 3.84,
+      "text": "security groups and all the steps which"
+    },
+    {
+      "start": 24.88,
+      "duration": 3.6,
+      "text": "was very time consuming i've explained"
+    },
+    {
+      "start": 26.56,
+      "duration": 3.76,
+      "text": "all of them in this but now in this"
+    },
+    {
+      "start": 28.48,
+      "duration": 4.16,
+      "text": "video we're going to see how we can"
+    },
+    {
+      "start": 30.32,
+      "duration": 4.0,
+      "text": "launch an aws instance using terraform"
+    },
+    {
+      "start": 32.64,
+      "duration": 3.36,
+      "text": "you will absolutely love this video"
+    },
+    {
+      "start": 34.32,
+      "duration": 3.919,
+      "text": "before going ahead there are few things"
+    },
+    {
+      "start": 36.0,
+      "duration": 4.32,
+      "text": "that you need to have to go ahead the"
+    },
+    {
+      "start": 38.239,
+      "duration": 4.0,
+      "text": "first is going to be you should have a"
+    },
+    {
+      "start": 40.32,
+      "duration": 3.759,
+      "text": "code editor i am using visual studio"
+    },
+    {
+      "start": 42.239,
+      "duration": 3.761,
+      "text": "code the second is you should have a"
+    },
+    {
+      "start": 44.079,
+      "duration": 3.201,
+      "text": "terraform installed in your machine to"
+    },
+    {
+      "start": 46.0,
+      "duration": 2.719,
+      "text": "check this you can run this command"
+    },
+    {
+      "start": 47.28,
+      "duration": 3.52,
+      "text": "terraform version so i've already"
+    },
+    {
+      "start": 48.719,
+      "duration": 3.68,
+      "text": "installed terraform in my machine if you"
+    },
+    {
+      "start": 50.8,
+      "duration": 4.239,
+      "text": "want to install you can go check it out"
+    },
+    {
+      "start": 52.399,
+      "duration": 4.48,
+      "text": "this video where i explain how you can"
+    },
+    {
+      "start": 55.039,
+      "duration": 4.081,
+      "text": "install data form the third is you need"
+    },
+    {
+      "start": 56.879,
+      "duration": 3.921,
+      "text": "to set up your secret keys and access"
+    },
+    {
+      "start": 59.12,
+      "duration": 3.599,
+      "text": "keys i have also explained that in this"
+    },
+    {
+      "start": 60.8,
+      "duration": 3.439,
+      "text": "video and you can go check it out using"
+    },
+    {
+      "start": 62.719,
+      "duration": 3.041,
+      "text": "this command as well so it was"
+    },
+    {
+      "start": 64.239,
+      "duration": 2.641,
+      "text": "configured you need to put your access"
+    },
+    {
+      "start": 65.76,
+      "duration": 2.96,
+      "text": "key here"
+    },
+    {
+      "start": 66.88,
+      "duration": 4.0,
+      "text": "your secret access key here your region"
+    },
+    {
+      "start": 68.72,
+      "duration": 4.96,
+      "text": "name and your default output so we are"
+    },
+    {
+      "start": 70.88,
+      "duration": 4.64,
+      "text": "all set up now and we are good to go to"
+    },
+    {
+      "start": 73.68,
+      "duration": 4.0,
+      "text": "launch our first instance using"
+    },
+    {
+      "start": 75.52,
+      "duration": 4.4,
+      "text": "terraform so i'm going to clear this so"
+    },
+    {
+      "start": 77.68,
+      "duration": 4.24,
+      "text": "to work in terraform the first thing you"
+    },
+    {
+      "start": 79.92,
+      "duration": 3.519,
+      "text": "need is going to be provider so i'm"
+    },
+    {
+      "start": 81.92,
+      "duration": 2.48,
+      "text": "going to create a file and i'm going to"
+    },
+    {
+      "start": 83.439,
+      "duration": 3.36,
+      "text": "name it"
+    },
+    {
+      "start": 84.4,
+      "duration": 4.16,
+      "text": "provider provider.tf"
+    },
+    {
+      "start": 86.799,
+      "duration": 5.201,
+      "text": "when working with terraform your"
+    },
+    {
+      "start": 88.56,
+      "duration": 5.84,
+      "text": "extension should always be dot tf so"
+    },
+    {
+      "start": 92.0,
+      "duration": 4.479,
+      "text": "provider.tf and to explain your provider"
+    },
+    {
+      "start": 94.4,
+      "duration": 4.48,
+      "text": "i'm going to create my instance in aws"
+    },
+    {
+      "start": 96.479,
+      "duration": 4.401,
+      "text": "right so the provider is aws if i'm"
+    },
+    {
+      "start": 98.88,
+      "duration": 4.559,
+      "text": "creating resources in google cloud the"
+    },
+    {
+      "start": 100.88,
+      "duration": 5.599,
+      "text": "provider is google cloud and there are a"
+    },
+    {
+      "start": 103.439,
+      "duration": 5.761,
+      "text": "lot of providers in terraform aws azure"
+    },
+    {
+      "start": 106.479,
+      "duration": 4.561,
+      "text": "gcp kubernetes a lot of providers there"
+    },
+    {
+      "start": 109.2,
+      "duration": 4.16,
+      "text": "are extensive list of nine one nine"
+    },
+    {
+      "start": 111.04,
+      "duration": 4.88,
+      "text": "seven five providers you name it you get"
+    },
+    {
+      "start": 113.36,
+      "duration": 4.32,
+      "text": "it you can get help null random anything"
+    },
+    {
+      "start": 115.92,
+      "duration": 3.76,
+      "text": "you want so there are a lot of providers"
+    },
+    {
+      "start": 117.68,
+      "duration": 3.84,
+      "text": "we are going to use aws because we are"
+    },
+    {
+      "start": 119.68,
+      "duration": 3.36,
+      "text": "going to create instance in aws so i'm"
+    },
+    {
+      "start": 121.52,
+      "duration": 3.76,
+      "text": "going to click on this i'm going to"
+    },
+    {
+      "start": 123.04,
+      "duration": 4.16,
+      "text": "click on the documentation so here is"
+    },
+    {
+      "start": 125.28,
+      "duration": 4.0,
+      "text": "the aws provider so if you're using"
+    },
+    {
+      "start": 127.2,
+      "duration": 3.44,
+      "text": "terraform with version 0.13 and later"
+    },
+    {
+      "start": 129.28,
+      "duration": 3.039,
+      "text": "you can use this"
+    },
+    {
+      "start": 130.64,
+      "duration": 3.599,
+      "text": "or if you're using less you can use this"
+    },
+    {
+      "start": 132.319,
+      "duration": 4.64,
+      "text": "as well but we're going to scroll down"
+    },
+    {
+      "start": 134.239,
+      "duration": 5.521,
+      "text": "and we're going to use this one"
+    },
+    {
+      "start": 136.959,
+      "duration": 5.441,
+      "text": "i'm going to paste this here and it says"
+    },
+    {
+      "start": 139.76,
+      "duration": 3.44,
+      "text": "the provider is aws region is us best"
+    },
+    {
+      "start": 142.4,
+      "duration": 3.199,
+      "text": "too"
+    },
+    {
+      "start": 143.2,
+      "duration": 4.399,
+      "text": "and the access key is you have to enter"
+    },
+    {
+      "start": 145.599,
+      "duration": 3.761,
+      "text": "your access key or secret access key so"
+    },
+    {
+      "start": 147.599,
+      "duration": 3.36,
+      "text": "this is another way to enter your access"
+    },
+    {
+      "start": 149.36,
+      "duration": 3.68,
+      "text": "and secret access key but i do not"
+    },
+    {
+      "start": 150.959,
+      "duration": 3.841,
+      "text": "recommend it neither does a terraform"
+    },
+    {
+      "start": 153.04,
+      "duration": 3.199,
+      "text": "terraform says that the hard coded"
+    },
+    {
+      "start": 154.8,
+      "duration": 3.36,
+      "text": "credentials are not recommended in the"
+    },
+    {
+      "start": 156.239,
+      "duration": 3.681,
+      "text": "entire form configuration so you should"
+    },
+    {
+      "start": 158.16,
+      "duration": 4.799,
+      "text": "not do this rather you can go ahead and"
+    },
+    {
+      "start": 159.92,
+      "duration": 4.72,
+      "text": "use the aws configure command and set up"
+    },
+    {
+      "start": 162.959,
+      "duration": 3.441,
+      "text": "your secret access keys and access keys"
+    },
+    {
+      "start": 164.64,
+      "duration": 3.04,
+      "text": "there right so i'm going to"
+    },
+    {
+      "start": 166.4,
+      "duration": 2.16,
+      "text": "cut out this"
+    },
+    {
+      "start": 167.68,
+      "duration": 4.16,
+      "text": "block"
+    },
+    {
+      "start": 168.56,
+      "duration": 3.28,
+      "text": "i'm going to remove this"
+    },
+    {
+      "start": 172.0,
+      "duration": 4.16,
+      "text": "perfect so"
+    },
+    {
+      "start": 173.599,
+      "duration": 4.0,
+      "text": "now i have my provider set up and how is"
+    },
+    {
+      "start": 176.16,
+      "duration": 3.6,
+      "text": "terraform going to know that this is the"
+    },
+    {
+      "start": 177.599,
+      "duration": 4.161,
+      "text": "provider so we have to run this command"
+    },
+    {
+      "start": 179.76,
+      "duration": 3.6,
+      "text": "first and whenever you work on terraform"
+    },
+    {
+      "start": 181.76,
+      "duration": 4.0,
+      "text": "the first command that you need to run"
+    },
+    {
+      "start": 183.36,
+      "duration": 3.76,
+      "text": "is going to be terraform init so now"
+    },
+    {
+      "start": 185.76,
+      "duration": 3.04,
+      "text": "terraform is going to initialize the"
+    },
+    {
+      "start": 187.12,
+      "duration": 3.68,
+      "text": "back end it is going to get the"
+    },
+    {
+      "start": 188.8,
+      "duration": 4.56,
+      "text": "information about the provider it is"
+    },
+    {
+      "start": 190.8,
+      "duration": 4.96,
+      "text": "finding the latest version of hashicorp"
+    },
+    {
+      "start": 193.36,
+      "duration": 5.28,
+      "text": "aws provider and it is installing so if"
+    },
+    {
+      "start": 195.76,
+      "duration": 4.72,
+      "text": "you see here you'll see a new folder"
+    },
+    {
+      "start": 198.64,
+      "duration": 3.84,
+      "text": "terraform which has the details about"
+    },
+    {
+      "start": 200.48,
+      "duration": 4.479,
+      "text": "the providers and it is encoded in"
+    },
+    {
+      "start": 202.48,
+      "duration": 5.6,
+      "text": "binary and you also have a terraform log"
+    },
+    {
+      "start": 204.959,
+      "duration": 5.84,
+      "text": "so now we have set up our aws provider"
+    },
+    {
+      "start": 208.08,
+      "duration": 4.719,
+      "text": "right so to check if your code or if"
+    },
+    {
+      "start": 210.799,
+      "duration": 3.44,
+      "text": "your syntax is valid or not the another"
+    },
+    {
+      "start": 212.799,
+      "duration": 2.641,
+      "text": "command is going to be terraform"
+    },
+    {
+      "start": 214.239,
+      "duration": 3.521,
+      "text": "validate"
+    },
+    {
+      "start": 215.44,
+      "duration": 4.4,
+      "text": "says that the configuration is valid"
+    },
+    {
+      "start": 217.76,
+      "duration": 4.32,
+      "text": "right so we have our provider setup"
+    },
+    {
+      "start": 219.84,
+      "duration": 3.92,
+      "text": "let's create our ec2 instance so i'm"
+    },
+    {
+      "start": 222.08,
+      "duration": 3.76,
+      "text": "going to create a new file and i'm going"
+    },
+    {
+      "start": 223.76,
+      "duration": 3.839,
+      "text": "to name it"
+    },
+    {
+      "start": 225.84,
+      "duration": 4.479,
+      "text": "so you have to name all the"
+    },
+    {
+      "start": 227.599,
+      "duration": 5.28,
+      "text": "configuration files in dot tf extension"
+    },
+    {
+      "start": 230.319,
+      "duration": 4.881,
+      "text": "only so to create an aws instance let's"
+    },
+    {
+      "start": 232.879,
+      "duration": 5.36,
+      "text": "go to the documentation so this is going"
+    },
+    {
+      "start": 235.2,
+      "duration": 5.039,
+      "text": "to be documentation for aws instance so"
+    },
+    {
+      "start": 238.239,
+      "duration": 4.0,
+      "text": "you can search all the resources here in"
+    },
+    {
+      "start": 240.239,
+      "duration": 4.961,
+      "text": "aws and you get it everything that you"
+    },
+    {
+      "start": 242.239,
+      "duration": 5.041,
+      "text": "want easy to fleet easy to host tags"
+    },
+    {
+      "start": 245.2,
+      "duration": 4.72,
+      "text": "traffic mirror anything you want right"
+    },
+    {
+      "start": 247.28,
+      "duration": 3.519,
+      "text": "so we're going to use this as an example"
+    },
+    {
+      "start": 249.92,
+      "duration": 2.8,
+      "text": "so"
+    },
+    {
+      "start": 250.799,
+      "duration": 3.041,
+      "text": "it has data resource that we are not"
+    },
+    {
+      "start": 252.72,
+      "duration": 3.44,
+      "text": "going to use because it is going to"
+    },
+    {
+      "start": 253.84,
+      "duration": 4.0,
+      "text": "complicate things and let's copy this"
+    },
+    {
+      "start": 256.16,
+      "duration": 4.0,
+      "text": "block here"
+    },
+    {
+      "start": 257.84,
+      "duration": 5.359,
+      "text": "all right and i'm going to paste it here"
+    },
+    {
+      "start": 260.16,
+      "duration": 5.599,
+      "text": "so it says resource aws instance"
+    },
+    {
+      "start": 263.199,
+      "duration": 4.801,
+      "text": "and the name of the resource the ami is"
+    },
+    {
+      "start": 265.759,
+      "duration": 3.601,
+      "text": "data.aws ami we don't do we don't have"
+    },
+    {
+      "start": 268.0,
+      "duration": 3.12,
+      "text": "any data block so we're going to cut"
+    },
+    {
+      "start": 269.36,
+      "duration": 4.16,
+      "text": "this i'll show you how you can insert"
+    },
+    {
+      "start": 271.12,
+      "duration": 4.639,
+      "text": "your ami id the instance type is going"
+    },
+    {
+      "start": 273.52,
+      "duration": 3.76,
+      "text": "to be t3 micro and the tag says hello"
+    },
+    {
+      "start": 275.759,
+      "duration": 3.201,
+      "text": "world"
+    },
+    {
+      "start": 277.28,
+      "duration": 3.919,
+      "text": "so first i'll show that i don't have any"
+    },
+    {
+      "start": 278.96,
+      "duration": 5.28,
+      "text": "instance named as hello world in my aws"
+    },
+    {
+      "start": 281.199,
+      "duration": 4.081,
+      "text": "u.s west 2 region so i'm here in my us"
+    },
+    {
+      "start": 284.24,
+      "duration": 2.88,
+      "text": "west 2"
+    },
+    {
+      "start": 285.28,
+      "duration": 4.0,
+      "text": "oregon region as you can see i don't"
+    },
+    {
+      "start": 287.12,
+      "duration": 4.4,
+      "text": "have any ec2 instance so i'm not going"
+    },
+    {
+      "start": 289.28,
+      "duration": 4.4,
+      "text": "to trick you so to get the ami id you"
+    },
+    {
+      "start": 291.52,
+      "duration": 4.239,
+      "text": "have to first click on launch instance"
+    },
+    {
+      "start": 293.68,
+      "duration": 5.92,
+      "text": "and when you launch your instance every"
+    },
+    {
+      "start": 295.759,
+      "duration": 6.481,
+      "text": "instance every ami has an ami id right"
+    },
+    {
+      "start": 299.6,
+      "duration": 3.76,
+      "text": "here so i'm going to copy it"
+    },
+    {
+      "start": 302.24,
+      "duration": 3.28,
+      "text": "and"
+    },
+    {
+      "start": 303.36,
+      "duration": 4.48,
+      "text": "you can copy any mi you want if you want"
+    },
+    {
+      "start": 305.52,
+      "duration": 4.959,
+      "text": "to launch an ubuntu using terraform you"
+    },
+    {
+      "start": 307.84,
+      "duration": 4.639,
+      "text": "can search for ubuntu press enter and"
+    },
+    {
+      "start": 310.479,
+      "duration": 3.681,
+      "text": "you get the ami id here"
+    },
+    {
+      "start": 312.479,
+      "duration": 4.16,
+      "text": "right but i'm going to"
+    },
+    {
+      "start": 314.16,
+      "duration": 5.36,
+      "text": "switch for amazon linux and this is"
+    },
+    {
+      "start": 316.639,
+      "duration": 6.4,
+      "text": "amazon linux i'm going to copy this"
+    },
+    {
+      "start": 319.52,
+      "duration": 6.8,
+      "text": "and paste it here in my ec2.ts"
+    },
+    {
+      "start": 323.039,
+      "duration": 5.6,
+      "text": "ami section right so i have i have my"
+    },
+    {
+      "start": 326.32,
+      "duration": 4.879,
+      "text": "ami i have my instance type so this"
+    },
+    {
+      "start": 328.639,
+      "duration": 3.601,
+      "text": "should be okay to see what is terraform"
+    },
+    {
+      "start": 331.199,
+      "duration": 2.801,
+      "text": "going to create according to the"
+    },
+    {
+      "start": 332.24,
+      "duration": 4.0,
+      "text": "configuration there is a command name as"
+    },
+    {
+      "start": 334.0,
+      "duration": 3.919,
+      "text": "terraform plan which shows what"
+    },
+    {
+      "start": 336.24,
+      "duration": 4.799,
+      "text": "resources are going to be created and it"
+    },
+    {
+      "start": 337.919,
+      "duration": 5.441,
+      "text": "has also uh put some files to reform"
+    },
+    {
+      "start": 341.039,
+      "duration": 4.081,
+      "text": "state so yeah it says that when the"
+    },
+    {
+      "start": 343.36,
+      "duration": 4.48,
+      "text": "resource is going to be added and if you"
+    },
+    {
+      "start": 345.12,
+      "duration": 5.2,
+      "text": "scroll up and if you can see the details"
+    },
+    {
+      "start": 347.84,
+      "duration": 3.76,
+      "text": "the instance type is t3 micro"
+    },
+    {
+      "start": 350.32,
+      "duration": 3.2,
+      "text": "the name is going to be hello world"
+    },
+    {
+      "start": 351.6,
+      "duration": 3.2,
+      "text": "right so we know that this is what is"
+    },
+    {
+      "start": 353.52,
+      "duration": 4.32,
+      "text": "going to be created and so now we have"
+    },
+    {
+      "start": 354.8,
+      "duration": 4.399,
+      "text": "the plan so to get this plan running you"
+    },
+    {
+      "start": 357.84,
+      "duration": 4.32,
+      "text": "have to use this command that is"
+    },
+    {
+      "start": 359.199,
+      "duration": 3.761,
+      "text": "terraform apply terraform apply"
+    },
+    {
+      "start": 362.16,
+      "duration": 2.879,
+      "text": "and"
+    },
+    {
+      "start": 362.96,
+      "duration": 3.44,
+      "text": "click here so again you'll get the plan"
+    },
+    {
+      "start": 365.039,
+      "duration": 3.041,
+      "text": "on what is going to be created according"
+    },
+    {
+      "start": 366.4,
+      "duration": 3.519,
+      "text": "to the configuration file"
+    },
+    {
+      "start": 368.08,
+      "duration": 4.16,
+      "text": "so you can review if you want and if"
+    },
+    {
+      "start": 369.919,
+      "duration": 4.801,
+      "text": "you're okay type yes so it will start"
+    },
+    {
+      "start": 372.24,
+      "duration": 6.0,
+      "text": "creating the aws instance so if you can"
+    },
+    {
+      "start": 374.72,
+      "duration": 7.12,
+      "text": "see aws instance is creating and let me"
+    },
+    {
+      "start": 378.24,
+      "duration": 3.6,
+      "text": "just go back here"
+    },
+    {
+      "start": 383.28,
+      "duration": 3.359,
+      "text": "so if you can see yeah it is"
+    },
+    {
+      "start": 385.12,
+      "duration": 3.76,
+      "text": "initializing"
+    },
+    {
+      "start": 386.639,
+      "duration": 4.081,
+      "text": "it is creating 10 seconds has passed and"
+    },
+    {
+      "start": 388.88,
+      "duration": 4.0,
+      "text": "your instance is created in just 15"
+    },
+    {
+      "start": 390.72,
+      "duration": 4.24,
+      "text": "seconds right isn't that amazing if you"
+    },
+    {
+      "start": 392.88,
+      "duration": 3.84,
+      "text": "go through that traditional way of"
+    },
+    {
+      "start": 394.96,
+      "duration": 3.359,
+      "text": "launching an instance using"
+    },
+    {
+      "start": 396.72,
+      "duration": 3.759,
+      "text": "console it would have taken a lot of"
+    },
+    {
+      "start": 398.319,
+      "duration": 4.88,
+      "text": "time so if you see here it is"
+    },
+    {
+      "start": 400.479,
+      "duration": 4.881,
+      "text": "initializing it is and we have the"
+    },
+    {
+      "start": 403.199,
+      "duration": 4.081,
+      "text": "instance that is hello world it is a t3"
+    },
+    {
+      "start": 405.36,
+      "duration": 5.119,
+      "text": "micro instance so that's how you create"
+    },
+    {
+      "start": 407.28,
+      "duration": 5.52,
+      "text": "your aws instance with terraform and"
+    },
+    {
+      "start": 410.479,
+      "duration": 4.72,
+      "text": "let's just try more things let's say you"
+    },
+    {
+      "start": 412.8,
+      "duration": 3.839,
+      "text": "want five instances at once if you're"
+    },
+    {
+      "start": 415.199,
+      "duration": 3.921,
+      "text": "creating it with the console you will go"
+    },
+    {
+      "start": 416.639,
+      "duration": 4.801,
+      "text": "ahead and launch your instance five"
+    },
+    {
+      "start": 419.12,
+      "duration": 4.4,
+      "text": "times right but with terraform it is"
+    },
+    {
+      "start": 421.44,
+      "duration": 4.24,
+      "text": "like magic you just have to give the"
+    },
+    {
+      "start": 423.52,
+      "duration": 4.48,
+      "text": "argument that is count is equal to five"
+    },
+    {
+      "start": 425.68,
+      "duration": 3.76,
+      "text": "so you don't have to delete the existing"
+    },
+    {
+      "start": 428.0,
+      "duration": 3.52,
+      "text": "one you just need to run the terraform"
+    },
+    {
+      "start": 429.44,
+      "duration": 3.92,
+      "text": "apply again or first you can check out"
+    },
+    {
+      "start": 431.52,
+      "duration": 3.6,
+      "text": "terraform plan to see what exactly is"
+    },
+    {
+      "start": 433.36,
+      "duration": 3.36,
+      "text": "going to be created so if i run reform"
+    },
+    {
+      "start": 435.12,
+      "duration": 3.44,
+      "text": "plan i should see four"
+    },
+    {
+      "start": 436.72,
+      "duration": 3.599,
+      "text": "resources to be created because i"
+    },
+    {
+      "start": 438.56,
+      "duration": 3.359,
+      "text": "already have one"
+    },
+    {
+      "start": 440.319,
+      "duration": 2.401,
+      "text": "right so"
+    },
+    {
+      "start": 441.919,
+      "duration": 3.441,
+      "text": "yeah"
+    },
+    {
+      "start": 442.72,
+      "duration": 5.599,
+      "text": "four resources are going to be added so"
+    },
+    {
+      "start": 445.36,
+      "duration": 4.399,
+      "text": "if i run terraform apply"
+    },
+    {
+      "start": 448.319,
+      "duration": 3.921,
+      "text": "and if you see there is only one"
+    },
+    {
+      "start": 449.759,
+      "duration": 3.921,
+      "text": "instances right now here"
+    },
+    {
+      "start": 452.24,
+      "duration": 3.519,
+      "text": "it is refreshing the state it is"
+    },
+    {
+      "start": 453.68,
+      "duration": 3.68,
+      "text": "checking what is there in the console"
+    },
+    {
+      "start": 455.759,
+      "duration": 4.72,
+      "text": "and it says four is going to be added if"
+    },
+    {
+      "start": 457.36,
+      "duration": 5.36,
+      "text": "you are okay type yes so i'm typing yes"
+    },
+    {
+      "start": 460.479,
+      "duration": 5.28,
+      "text": "and it will start creating the"
+    },
+    {
+      "start": 462.72,
+      "duration": 5.599,
+      "text": "four instances so one two three four it"
+    },
+    {
+      "start": 465.759,
+      "duration": 2.56,
+      "text": "is creating"
+    },
+    {
+      "start": 470.319,
+      "duration": 3.921,
+      "text": "10 seconds passed"
+    },
+    {
+      "start": 472.4,
+      "duration": 3.76,
+      "text": "right so it has successfully created and"
+    },
+    {
+      "start": 474.24,
+      "duration": 5.519,
+      "text": "if i refresh this i can see five"
+    },
+    {
+      "start": 476.16,
+      "duration": 6.08,
+      "text": "instances of t3 micro in my console"
+    },
+    {
+      "start": 479.759,
+      "duration": 4.401,
+      "text": "using terraform isn't that amazing right"
+    },
+    {
+      "start": 482.24,
+      "duration": 3.84,
+      "text": "so if you want to make any changes you"
+    },
+    {
+      "start": 484.16,
+      "duration": 3.599,
+      "text": "can just type it here in your"
+    },
+    {
+      "start": 486.08,
+      "duration": 4.32,
+      "text": "configuration files let's say if i want"
+    },
+    {
+      "start": 487.759,
+      "duration": 4.641,
+      "text": "all the uh five instances to be too"
+    },
+    {
+      "start": 490.4,
+      "duration": 3.6,
+      "text": "small so i don't need to go ahead and"
+    },
+    {
+      "start": 492.4,
+      "duration": 3.68,
+      "text": "destroy this or i don't need to delete"
+    },
+    {
+      "start": 494.0,
+      "duration": 3.599,
+      "text": "this first i just need to apply and"
+    },
+    {
+      "start": 496.08,
+      "duration": 3.119,
+      "text": "terraform is going to check what is the"
+    },
+    {
+      "start": 497.599,
+      "duration": 3.841,
+      "text": "changes made and according to the"
+    },
+    {
+      "start": 499.199,
+      "duration": 5.68,
+      "text": "changes it will see and do the things in"
+    },
+    {
+      "start": 501.44,
+      "duration": 6.08,
+      "text": "the console right so it says 5 5 has to"
+    },
+    {
+      "start": 504.879,
+      "duration": 5.04,
+      "text": "be changed twice type yes and it is"
+    },
+    {
+      "start": 507.52,
+      "duration": 4.239,
+      "text": "going to start changing it"
+    },
+    {
+      "start": 509.919,
+      "duration": 3.6,
+      "text": "it is starting modifying if any new"
+    },
+    {
+      "start": 511.759,
+      "duration": 5.361,
+      "text": "resources is created it is going to be"
+    },
+    {
+      "start": 513.519,
+      "duration": 4.96,
+      "text": "in green color plus symbol and if"
+    },
+    {
+      "start": 517.12,
+      "duration": 2.799,
+      "text": "anything is going to be changed it is"
+    },
+    {
+      "start": 518.479,
+      "duration": 4.0,
+      "text": "going to be in yellow color till day"
+    },
+    {
+      "start": 519.919,
+      "duration": 4.48,
+      "text": "sign and if it if it is going to be"
+    },
+    {
+      "start": 522.479,
+      "duration": 4.161,
+      "text": "destroyed it is going to be in red color"
+    },
+    {
+      "start": 524.399,
+      "duration": 3.761,
+      "text": "minus sign but let's just see it is now"
+    },
+    {
+      "start": 526.64,
+      "duration": 2.72,
+      "text": "t2 micro"
+    },
+    {
+      "start": 528.16,
+      "duration": 3.119,
+      "text": "and"
+    },
+    {
+      "start": 529.36,
+      "duration": 3.52,
+      "text": "it has changed t2 small for the first"
+    },
+    {
+      "start": 531.279,
+      "duration": 3.521,
+      "text": "and the second instance so it has"
+    },
+    {
+      "start": 532.88,
+      "duration": 3.76,
+      "text": "changed for the three instances now so"
+    },
+    {
+      "start": 534.8,
+      "duration": 3.12,
+      "text": "using terraform you can pretty much do"
+    },
+    {
+      "start": 536.64,
+      "duration": 3.199,
+      "text": "anything that you can do with console"
+    },
+    {
+      "start": 537.92,
+      "duration": 4.72,
+      "text": "you can launch instances you can create"
+    },
+    {
+      "start": 539.839,
+      "duration": 4.721,
+      "text": "vpcs you can do security groups and we"
+    },
+    {
+      "start": 542.64,
+      "duration": 3.52,
+      "text": "have not used security groups in this"
+    },
+    {
+      "start": 544.56,
+      "duration": 3.12,
+      "text": "code here so if you don't use any"
+    },
+    {
+      "start": 546.16,
+      "duration": 4.16,
+      "text": "security group the default one is going"
+    },
+    {
+      "start": 547.68,
+      "duration": 4.48,
+      "text": "to be attached so if i see here the"
+    },
+    {
+      "start": 550.32,
+      "duration": 4.639,
+      "text": "security up group attached to my"
+    },
+    {
+      "start": 552.16,
+      "duration": 4.4,
+      "text": "instances is default so in the next"
+    },
+    {
+      "start": 554.959,
+      "duration": 3.361,
+      "text": "video i will teach you how you can"
+    },
+    {
+      "start": 556.56,
+      "duration": 4.32,
+      "text": "attach your security groups with your"
+    },
+    {
+      "start": 558.32,
+      "duration": 4.959,
+      "text": "ports and protocols whichever you want"
+    },
+    {
+      "start": 560.88,
+      "duration": 3.76,
+      "text": "but if you don't attach it the default"
+    },
+    {
+      "start": 563.279,
+      "duration": 3.921,
+      "text": "one is going to be attached to the"
+    },
+    {
+      "start": 564.64,
+      "duration": 5.36,
+      "text": "instances so it's still modifying and it"
+    },
+    {
+      "start": 567.2,
+      "duration": 5.199,
+      "text": "has modified for almost everyone except"
+    },
+    {
+      "start": 570.0,
+      "duration": 4.24,
+      "text": "this so it's in pending state now so"
+    },
+    {
+      "start": 572.399,
+      "duration": 3.601,
+      "text": "this is how you can launch your instance"
+    },
+    {
+      "start": 574.24,
+      "duration": 3.599,
+      "text": "and it is not only restricted to"
+    },
+    {
+      "start": 576.0,
+      "duration": 4.56,
+      "text": "instance you can launch your rds"
+    },
+    {
+      "start": 577.839,
+      "duration": 4.641,
+      "text": "databases you can launch your s3 packets"
+    },
+    {
+      "start": 580.56,
+      "duration": 3.44,
+      "text": "or you can do anything you want in the"
+    },
+    {
+      "start": 582.48,
+      "duration": 3.44,
+      "text": "upcoming videos we'll see how we can"
+    },
+    {
+      "start": 584.0,
+      "duration": 5.12,
+      "text": "create easy tools we can see how we can"
+    },
+    {
+      "start": 585.92,
+      "duration": 5.68,
+      "text": "create vpcs uh your s3 packets rds"
+    },
+    {
+      "start": 589.12,
+      "duration": 4.719,
+      "text": "instances and a lot more if you want me"
+    },
+    {
+      "start": 591.6,
+      "duration": 3.84,
+      "text": "to make any more videos you can let me"
+    },
+    {
+      "start": 593.839,
+      "duration": 4.481,
+      "text": "know in the comment sections so if you"
+    },
+    {
+      "start": 595.44,
+      "duration": 4.959,
+      "text": "see here we have successfully five"
+    },
+    {
+      "start": 598.32,
+      "duration": 4.72,
+      "text": "instances that have been changed from t"
+    },
+    {
+      "start": 600.399,
+      "duration": 4.0,
+      "text": "three micro to t2 small if you are done"
+    },
+    {
+      "start": 603.04,
+      "duration": 3.12,
+      "text": "with this if you want to delete all the"
+    },
+    {
+      "start": 604.399,
+      "duration": 3.761,
+      "text": "resources at once you don't have to go"
+    },
+    {
+      "start": 606.16,
+      "duration": 4.32,
+      "text": "here and click on terminate for each of"
+    },
+    {
+      "start": 608.16,
+      "duration": 4.96,
+      "text": "them you have a command that is going to"
+    },
+    {
+      "start": 610.48,
+      "duration": 4.08,
+      "text": "be terraform destroy right it will check"
+    },
+    {
+      "start": 613.12,
+      "duration": 3.04,
+      "text": "the state and it will see what are the"
+    },
+    {
+      "start": 614.56,
+      "duration": 3.519,
+      "text": "resources that are"
+    },
+    {
+      "start": 616.16,
+      "duration": 3.76,
+      "text": "present here and if you are okay with it"
+    },
+    {
+      "start": 618.079,
+      "duration": 3.601,
+      "text": "you can go ahead and type yes and if you"
+    },
+    {
+      "start": 619.92,
+      "duration": 4.4,
+      "text": "don't want you to be prompted again and"
+    },
+    {
+      "start": 621.68,
+      "duration": 6.8,
+      "text": "again what you can do is you can just"
+    },
+    {
+      "start": 624.32,
+      "duration": 5.84,
+      "text": "write terraform of destroy hyphen auto"
+    },
+    {
+      "start": 628.48,
+      "duration": 3.44,
+      "text": "approve"
+    },
+    {
+      "start": 630.16,
+      "duration": 3.28,
+      "text": "and this can work with terraform apply"
+    },
+    {
+      "start": 631.92,
+      "duration": 3.039,
+      "text": "as well you can use"
+    },
+    {
+      "start": 633.44,
+      "duration": 4.079,
+      "text": "therefore apply auto approve and it is"
+    },
+    {
+      "start": 634.959,
+      "duration": 4.56,
+      "text": "not going to ask you for confirmation it"
+    },
+    {
+      "start": 637.519,
+      "duration": 3.921,
+      "text": "will directly go ahead and destroy or"
+    },
+    {
+      "start": 639.519,
+      "duration": 3.76,
+      "text": "apply your changes"
+    },
+    {
+      "start": 641.44,
+      "duration": 2.639,
+      "text": "so this is how you create or destroy"
+    },
+    {
+      "start": 643.279,
+      "duration": 3.201,
+      "text": "your"
+    },
+    {
+      "start": 644.079,
+      "duration": 4.561,
+      "text": "instances or any resources in your"
+    },
+    {
+      "start": 646.48,
+      "duration": 3.76,
+      "text": "terraform for more videos about cloud"
+    },
+    {
+      "start": 648.64,
+      "duration": 3.36,
+      "text": "and devops please subscribe to this"
+    },
+    {
+      "start": 650.24,
+      "duration": 3.92,
+      "text": "channel if you understood what is taught"
+    },
+    {
+      "start": 652.0,
+      "duration": 4.72,
+      "text": "in this video please like to this video"
+    },
+    {
+      "start": 654.16,
+      "duration": 3.84,
+      "text": "subscribe to this channel and"
+    },
+    {
+      "start": 656.72,
+      "duration": 2.88,
+      "text": "i'm going to create a playlist about the"
+    },
+    {
+      "start": 658.0,
+      "duration": 3.519,
+      "text": "rafa where i teach everything about the"
+    },
+    {
+      "start": 659.6,
+      "duration": 3.76,
+      "text": "reform like variables outputs meant"
+    },
+    {
+      "start": 661.519,
+      "duration": 4.0,
+      "text": "arguments and things everything as you"
+    },
+    {
+      "start": 663.36,
+      "duration": 4.719,
+      "text": "can see the firm has successfully"
+    },
+    {
+      "start": 665.519,
+      "duration": 5.44,
+      "text": "destroyed so isn't terraform amazing you"
+    },
+    {
+      "start": 668.079,
+      "duration": 4.801,
+      "text": "can create or destroy instances in"
+    },
+    {
+      "start": 670.959,
+      "duration": 3.921,
+      "text": "few seconds using your configuration"
+    },
+    {
+      "start": 672.88,
+      "duration": 5.12,
+      "text": "files please subscribe to this channel"
+    },
+    {
+      "start": 674.88,
+      "duration": 3.12,
+      "text": "and have a good day"
+    }
+  ]
+}

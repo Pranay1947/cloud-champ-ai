@@ -1,0 +1,146 @@
+{
+  "video": {
+    "id": "jWTE-sR3kig",
+    "title": "NemoClaw by Nvidia Explained in 60 seconds! Openclaw vs nemoclaw",
+    "url": "https://www.youtube.com/watch?v=jWTE-sR3kig",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.4,
+      "duration": 5.44,
+      "text": "What is NVIDIA Nemo Guard? So, recently"
+    },
+    {
+      "start": 3.56,
+      "duration": 4.2,
+      "text": "Open Guard, an AI agent framework,"
+    },
+    {
+      "start": 5.84,
+      "duration": 4.4,
+      "text": "became the fastest growing open source"
+    },
+    {
+      "start": 7.76,
+      "duration": 4.28,
+      "text": "project in history. But, enterprises"
+    },
+    {
+      "start": 10.24,
+      "duration": 4.56,
+      "text": "still blocked it on day one due to"
+    },
+    {
+      "start": 12.04,
+      "duration": 4.88,
+      "text": "security concerns. Why? Because Open"
+    },
+    {
+      "start": 14.8,
+      "duration": 4.48,
+      "text": "Guard had no proper sandboxing, no"
+    },
+    {
+      "start": 16.92,
+      "duration": 4.48,
+      "text": "auditing, and no way to control what an"
+    },
+    {
+      "start": 19.28,
+      "duration": 4.16,
+      "text": "AI agent could access. In a real"
+    },
+    {
+      "start": 21.4,
+      "duration": 4.08,
+      "text": "environment, one compromised agent can"
+    },
+    {
+      "start": 23.44,
+      "duration": 4.84,
+      "text": "take over your entire system. And to"
+    },
+    {
+      "start": 25.48,
+      "duration": 5.12,
+      "text": "solve this, NVIDIA launched Nemo Guard."
+    },
+    {
+      "start": 28.28,
+      "duration": 4.2,
+      "text": "So, Nemo Guard is a security layer that"
+    },
+    {
+      "start": 30.6,
+      "duration": 3.72,
+      "text": "wraps Open Guard without changing how"
+    },
+    {
+      "start": 32.48,
+      "duration": 4.04,
+      "text": "agents are built. Using Nemo Guard,"
+    },
+    {
+      "start": 34.32,
+      "duration": 4.32,
+      "text": "every AI agent now runs in a sandbox"
+    },
+    {
+      "start": 36.52,
+      "duration": 4.2,
+      "text": "container, and all network access is"
+    },
+    {
+      "start": 38.64,
+      "duration": 4.6,
+      "text": "blocked by default. You can define"
+    },
+    {
+      "start": 40.72,
+      "duration": 4.96,
+      "text": "exactly what each agent is allowed to do"
+    },
+    {
+      "start": 43.24,
+      "duration": 3.84,
+      "text": "using a simple YAML policy file, and the"
+    },
+    {
+      "start": 45.68,
+      "duration": 3.68,
+      "text": "model is deployed locally on your"
+    },
+    {
+      "start": 47.08,
+      "duration": 4.04,
+      "text": "infrastructure, so the data never leaves"
+    },
+    {
+      "start": 49.36,
+      "duration": 4.0,
+      "text": "unless you choose to send it. So, the"
+    },
+    {
+      "start": 51.12,
+      "duration": 4.6,
+      "text": "idea is simple. Use Open Guard to build"
+    },
+    {
+      "start": 53.36,
+      "duration": 4.36,
+      "text": "your AI agents, and use Nemo Guard to"
+    },
+    {
+      "start": 55.72,
+      "duration": 4.68,
+      "text": "run them securely in production."
+    },
+    {
+      "start": 57.72,
+      "duration": 2.68,
+      "text": "Subscribe."
+    }
+  ]
+}

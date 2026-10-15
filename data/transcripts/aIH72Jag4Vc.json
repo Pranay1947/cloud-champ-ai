@@ -1,0 +1,876 @@
+{
+  "video": {
+    "id": "aIH72Jag4Vc",
+    "title": "How Linux is used in devops | Linux for DevOps",
+    "url": "https://www.youtube.com/watch?v=aIH72Jag4Vc",
+    "duration": 427,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 6.639,
+      "text": "lenux is by far the most used operating"
+    },
+    {
+      "start": 3.679,
+      "duration": 5.681,
+      "text": "system in the cloud and above space so"
+    },
+    {
+      "start": 6.799,
+      "duration": 5.281,
+      "text": "in this video we look at how lenux is"
+    },
+    {
+      "start": 9.36,
+      "duration": 5.0,
+      "text": "actually used in devops with real world"
+    },
+    {
+      "start": 12.08,
+      "duration": 4.52,
+      "text": "examples although Linux is important"
+    },
+    {
+      "start": 14.36,
+      "duration": 4.32,
+      "text": "there are so many things and it can be"
+    },
+    {
+      "start": 16.6,
+      "duration": 4.4,
+      "text": "difficult for beginners so in this video"
+    },
+    {
+      "start": 18.68,
+      "duration": 5.12,
+      "text": "we will also touch upon what things or"
+    },
+    {
+      "start": 21.0,
+      "duration": 5.16,
+      "text": "topic you should know about l in devops"
+    },
+    {
+      "start": 23.8,
+      "duration": 4.559,
+      "text": "and how to learn there this is going to"
+    },
+    {
+      "start": 26.16,
+      "duration": 4.24,
+      "text": "be super insightful video for anyone"
+    },
+    {
+      "start": 28.359,
+      "duration": 4.121,
+      "text": "learning lenux or getting started with"
+    },
+    {
+      "start": 30.4,
+      "duration": 4.479,
+      "text": "devops so make sure you watch it till"
+    },
+    {
+      "start": 32.48,
+      "duration": 6.72,
+      "text": "the end like this video And subscribe to"
+    },
+    {
+      "start": 34.879,
+      "duration": 4.321,
+      "text": "Cloud sham for more SE videos let's"
+    },
+    {
+      "start": 40.44,
+      "duration": 5.2,
+      "text": "start do you know most of the computers"
+    },
+    {
+      "start": 43.32,
+      "duration": 4.2,
+      "text": "on the internet use lenux to run their"
+    },
+    {
+      "start": 45.64,
+      "duration": 4.239,
+      "text": "applications this video that you're"
+    },
+    {
+      "start": 47.52,
+      "duration": 4.8,
+      "text": "watching on YouTube is roosted all the"
+    },
+    {
+      "start": 49.879,
+      "duration": 5.16,
+      "text": "this machine but not just YouTube"
+    },
+    {
+      "start": 52.32,
+      "duration": 5.399,
+      "text": "Facebook LinkedIn Twitter reded almost"
+    },
+    {
+      "start": 55.039,
+      "duration": 5.84,
+      "text": "entire internet uses XX to run their"
+    },
+    {
+      "start": 57.719,
+      "duration": 4.921,
+      "text": "application but what makes xux so much"
+    },
+    {
+      "start": 60.879,
+      "duration": 5.24,
+      "text": "important let's look at different"
+    },
+    {
+      "start": 62.64,
+      "duration": 6.0,
+      "text": "features of why is n used in devops the"
+    },
+    {
+      "start": 66.119,
+      "duration": 5.241,
+      "text": "primary reason why n is used a lot is"
+    },
+    {
+      "start": 68.64,
+      "duration": 5.76,
+      "text": "because leex is open source which makes"
+    },
+    {
+      "start": 71.36,
+      "duration": 5.04,
+      "text": "it very cost effective for organizations"
+    },
+    {
+      "start": 74.4,
+      "duration": 4.2,
+      "text": "so reex is open source and it is free to"
+    },
+    {
+      "start": 76.4,
+      "duration": 4.679,
+      "text": "use a modified also there is no"
+    },
+    {
+      "start": 78.6,
+      "duration": 4.96,
+      "text": "licensing fees which significantly"
+    },
+    {
+      "start": 81.079,
+      "duration": 4.36,
+      "text": "reduces cost compared to other propriety"
+    },
+    {
+      "start": 83.56,
+      "duration": 4.16,
+      "text": "optic systems like"
+    },
+    {
+      "start": 85.439,
+      "duration": 4.32,
+      "text": "Windows another reason why the Miss is"
+    },
+    {
+      "start": 87.72,
+      "duration": 4.719,
+      "text": "used a lot is because of its stability"
+    },
+    {
+      "start": 89.759,
+      "duration": 4.881,
+      "text": "and performance Linux is very stable and"
+    },
+    {
+      "start": 92.439,
+      "duration": 4.801,
+      "text": "it can run for long periods without"
+    },
+    {
+      "start": 94.64,
+      "duration": 4.68,
+      "text": "requiring any reboot making it perfect"
+    },
+    {
+      "start": 97.24,
+      "duration": 5.44,
+      "text": "for servers and application that needs"
+    },
+    {
+      "start": 99.32,
+      "duration": 5.72,
+      "text": "to be available all the time Linux is"
+    },
+    {
+      "start": 102.68,
+      "duration": 5.32,
+      "text": "also very secure it provides robust"
+    },
+    {
+      "start": 105.04,
+      "duration": 6.0,
+      "text": "security features like user permissions"
+    },
+    {
+      "start": 108.0,
+      "duration": 5.079,
+      "text": "app armor SD Linux that helps protect"
+    },
+    {
+      "start": 111.04,
+      "duration": 5.039,
+      "text": "our unauthorized access and viabilities"
+    },
+    {
+      "start": 113.079,
+      "duration": 5.841,
+      "text": "which makes vux the best solution for"
+    },
+    {
+      "start": 116.079,
+      "duration": 5.32,
+      "text": "the W tasks another very important"
+    },
+    {
+      "start": 118.92,
+      "duration": 4.68,
+      "text": "reason why this is user not and devops"
+    },
+    {
+      "start": 121.399,
+      "duration": 4.32,
+      "text": "is because of its powerful terminant"
+    },
+    {
+      "start": 123.6,
+      "duration": 4.04,
+      "text": "Linux as a terminal or a command line"
+    },
+    {
+      "start": 125.719,
+      "duration": 4.561,
+      "text": "interface where you can Le commands to"
+    },
+    {
+      "start": 127.64,
+      "duration": 4.599,
+      "text": "execute this devops task like creating"
+    },
+    {
+      "start": 130.28,
+      "duration": 4.28,
+      "text": "users installing packages troubles"
+    },
+    {
+      "start": 132.239,
+      "duration": 4.561,
+      "text": "shipping issues and do more these"
+    },
+    {
+      "start": 134.56,
+      "duration": 5.08,
+      "text": "commands can also be put together to"
+    },
+    {
+      "start": 136.8,
+      "duration": 5.519,
+      "text": "create script also as a bass script"
+    },
+    {
+      "start": 139.64,
+      "duration": 5.04,
+      "text": "which can be used for Automation and"
+    },
+    {
+      "start": 142.319,
+      "duration": 3.961,
+      "text": "automation through scripts using inex"
+    },
+    {
+      "start": 144.68,
+      "duration": 4.919,
+      "text": "commands is something that Dev option"
+    },
+    {
+      "start": 146.28,
+      "duration": 5.679,
+      "text": "GDs have to do almost every day so now"
+    },
+    {
+      "start": 149.599,
+      "duration": 4.601,
+      "text": "that know different features of why in"
+    },
+    {
+      "start": 151.959,
+      "duration": 4.681,
+      "text": "is used in devops let's look at"
+    },
+    {
+      "start": 154.2,
+      "duration": 5.72,
+      "text": "different examples to understand how is"
+    },
+    {
+      "start": 156.64,
+      "duration": 5.04,
+      "text": "inex actually used in devops try to"
+    },
+    {
+      "start": 159.92,
+      "duration": 4.039,
+      "text": "understand this first a devops engineer"
+    },
+    {
+      "start": 161.68,
+      "duration": 4.88,
+      "text": "is someone who is responsible to create"
+    },
+    {
+      "start": 163.959,
+      "duration": 4.321,
+      "text": "applications right from the server layer"
+    },
+    {
+      "start": 166.56,
+      "duration": 3.56,
+      "text": "where you set have a server install"
+    },
+    {
+      "start": 168.28,
+      "duration": 4.599,
+      "text": "packages dependencies everything"
+    },
+    {
+      "start": 170.12,
+      "duration": 4.64,
+      "text": "necessary to host the application to the"
+    },
+    {
+      "start": 172.879,
+      "duration": 4.601,
+      "text": "application layer where the application"
+    },
+    {
+      "start": 174.76,
+      "duration": 5.24,
+      "text": "is ready to be used by end user and in"
+    },
+    {
+      "start": 177.48,
+      "duration": 5.92,
+      "text": "this process Linux is used almost"
+    },
+    {
+      "start": 180.0,
+      "duration": 5.92,
+      "text": "everywhere let's see how is Linux used"
+    },
+    {
+      "start": 183.4,
+      "duration": 5.16,
+      "text": "hosting Linux is the best choice for"
+    },
+    {
+      "start": 185.92,
+      "duration": 4.599,
+      "text": "hosting web applications databases and"
+    },
+    {
+      "start": 188.56,
+      "duration": 4.08,
+      "text": "other programs required to run your"
+    },
+    {
+      "start": 190.519,
+      "duration": 4.28,
+      "text": "application this can be done by running"
+    },
+    {
+      "start": 192.64,
+      "duration": 4.44,
+      "text": "commands to install and configure them"
+    },
+    {
+      "start": 194.799,
+      "duration": 4.121,
+      "text": "on the machines if you want to know how"
+    },
+    {
+      "start": 197.08,
+      "duration": 3.719,
+      "text": "to do that you can check out this video"
+    },
+    {
+      "start": 198.92,
+      "duration": 5.239,
+      "text": "where I've showed how to install web"
+    },
+    {
+      "start": 200.799,
+      "duration": 4.921,
+      "text": "server to set up your website but noways"
+    },
+    {
+      "start": 204.159,
+      "duration": 3.921,
+      "text": "water applications are deployed as"
+    },
+    {
+      "start": 205.72,
+      "duration": 5.519,
+      "text": "containers using tools like talker and"
+    },
+    {
+      "start": 208.08,
+      "duration": 6.12,
+      "text": "kues that run 8 video on Linux making it"
+    },
+    {
+      "start": 211.239,
+      "duration": 5.401,
+      "text": "the goto operating system next use case"
+    },
+    {
+      "start": 214.2,
+      "duration": 4.759,
+      "text": "of Linux in devops is Automation and"
+    },
+    {
+      "start": 216.64,
+      "duration": 5.08,
+      "text": "scripting Linux has its own scripting"
+    },
+    {
+      "start": 218.959,
+      "duration": 4.521,
+      "text": "language which is Bash but also supports"
+    },
+    {
+      "start": 221.72,
+      "duration": 3.84,
+      "text": "Python and pull which is used to"
+    },
+    {
+      "start": 223.48,
+      "duration": 3.959,
+      "text": "automate all the repetitive task like"
+    },
+    {
+      "start": 225.56,
+      "duration": 3.599,
+      "text": "Ping up databases running a script or"
+    },
+    {
+      "start": 227.439,
+      "duration": 3.281,
+      "text": "anything along with this other"
+    },
+    {
+      "start": 229.159,
+      "duration": 4.28,
+      "text": "configuration management tools like"
+    },
+    {
+      "start": 230.72,
+      "duration": 6.0,
+      "text": "answerable St or puppet are designed to"
+    },
+    {
+      "start": 233.439,
+      "duration": 5.88,
+      "text": "be run natively on leux lenux is also"
+    },
+    {
+      "start": 236.72,
+      "duration": 5.28,
+      "text": "used in skicb tools like it laab genkins"
+    },
+    {
+      "start": 239.319,
+      "duration": 4.401,
+      "text": "circles C are often deployed on lenux"
+    },
+    {
+      "start": 242.0,
+      "duration": 3.48,
+      "text": "machines these tools are used to"
+    },
+    {
+      "start": 243.72,
+      "duration": 4.439,
+      "text": "automate the process of testing building"
+    },
+    {
+      "start": 245.48,
+      "duration": 4.64,
+      "text": "and deployment of applications lenux C"
+    },
+    {
+      "start": 248.159,
+      "duration": 4.241,
+      "text": "utilities are also used in pipeline"
+    },
+    {
+      "start": 250.12,
+      "duration": 4.8,
+      "text": "scripts to add various tasks like code"
+    },
+    {
+      "start": 252.4,
+      "duration": 5.0,
+      "text": "compilation testing deployment which"
+    },
+    {
+      "start": 254.92,
+      "duration": 5.24,
+      "text": "makes the process more efficient and"
+    },
+    {
+      "start": 257.4,
+      "duration": 5.72,
+      "text": "reliable Linux also offers powerful"
+    },
+    {
+      "start": 260.16,
+      "duration": 5.2,
+      "text": "networking tools like IP D NE fter and"
+    },
+    {
+      "start": 263.12,
+      "duration": 4.72,
+      "text": "app AR which can be used to configure"
+    },
+    {
+      "start": 265.36,
+      "duration": 5.36,
+      "text": "and secure network connections apart"
+    },
+    {
+      "start": 267.84,
+      "duration": 5.56,
+      "text": "from this g a very popular po version"
+    },
+    {
+      "start": 270.72,
+      "duration": 5.319,
+      "text": "control system which is widely used is"
+    },
+    {
+      "start": 273.4,
+      "duration": 4.72,
+      "text": "also built on lenux in fact it is"
+    },
+    {
+      "start": 276.039,
+      "duration": 5.041,
+      "text": "created by the same person who created"
+    },
+    {
+      "start": 278.12,
+      "duration": 5.359,
+      "text": "Linux so now you understand Linux is"
+    },
+    {
+      "start": 281.08,
+      "duration": 5.399,
+      "text": "used almost everywhere in devops and all"
+    },
+    {
+      "start": 283.479,
+      "duration": 5.321,
+      "text": "the devops tools are also great upon LX"
+    },
+    {
+      "start": 286.479,
+      "duration": 4.641,
+      "text": "so this is why you should be learning L"
+    },
+    {
+      "start": 288.8,
+      "duration": 5.239,
+      "text": "now let's look at what L topics should"
+    },
+    {
+      "start": 291.12,
+      "duration": 4.72,
+      "text": "you be learning as a demo Eng here if"
+    },
+    {
+      "start": 294.039,
+      "duration": 3.88,
+      "text": "you are someone who is learning devops"
+    },
+    {
+      "start": 295.84,
+      "duration": 4.84,
+      "text": "or trying to become a devops engineer"
+    },
+    {
+      "start": 297.919,
+      "duration": 4.801,
+      "text": "you should start with Linux in Linux you"
+    },
+    {
+      "start": 300.68,
+      "duration": 4.28,
+      "text": "should start with fundamentals knowing"
+    },
+    {
+      "start": 302.72,
+      "duration": 4.64,
+      "text": "the different distributions or flavors"
+    },
+    {
+      "start": 304.96,
+      "duration": 5.2,
+      "text": "Linux have like Debi and Fedora open to"
+    },
+    {
+      "start": 307.36,
+      "duration": 5.279,
+      "text": "Etc then learn how to install or setup"
+    },
+    {
+      "start": 310.16,
+      "duration": 4.759,
+      "text": "Linux servers on the cloud even on local"
+    },
+    {
+      "start": 312.639,
+      "duration": 5.201,
+      "text": "machine using virtualization tools like"
+    },
+    {
+      "start": 314.919,
+      "duration": 4.801,
+      "text": "virtual box or VMware Etc learn the"
+    },
+    {
+      "start": 317.84,
+      "duration": 4.32,
+      "text": "different important commands on how to"
+    },
+    {
+      "start": 319.72,
+      "duration": 4.88,
+      "text": "create a file how to manage user how to"
+    },
+    {
+      "start": 322.16,
+      "duration": 5.599,
+      "text": "install packages how to check processes"
+    },
+    {
+      "start": 324.6,
+      "duration": 5.56,
+      "text": "and all that also understand the Linux"
+    },
+    {
+      "start": 327.759,
+      "duration": 3.761,
+      "text": "file structure or Theory structure"
+    },
+    {
+      "start": 330.16,
+      "duration": 4.44,
+      "text": "to understand where are the different"
+    },
+    {
+      "start": 331.52,
+      "duration": 4.799,
+      "text": "files going to be stored inside machine"
+    },
+    {
+      "start": 334.6,
+      "duration": 3.48,
+      "text": "once you get that done go to the"
+    },
+    {
+      "start": 336.319,
+      "duration": 3.72,
+      "text": "advanced part where you need to know how"
+    },
+    {
+      "start": 338.08,
+      "duration": 5.28,
+      "text": "to use all this commands to create a"
+    },
+    {
+      "start": 340.039,
+      "duration": 5.041,
+      "text": "script or know how to do shell scripting"
+    },
+    {
+      "start": 343.36,
+      "duration": 4.279,
+      "text": "moving on you also need to know"
+    },
+    {
+      "start": 345.08,
+      "duration": 4.52,
+      "text": "different networking command to check or"
+    },
+    {
+      "start": 347.639,
+      "duration": 4.28,
+      "text": "configure networks whenever there's an"
+    },
+    {
+      "start": 349.6,
+      "duration": 4.4,
+      "text": "issue apart from this you also need to"
+    },
+    {
+      "start": 351.919,
+      "duration": 4.081,
+      "text": "know how to create and manage users"
+    },
+    {
+      "start": 354.0,
+      "duration": 3.84,
+      "text": "permissions and rules I have this"
+    },
+    {
+      "start": 356.0,
+      "duration": 3.96,
+      "text": "document which has a list of all Linux"
+    },
+    {
+      "start": 357.84,
+      "duration": 4.04,
+      "text": "topics you should know as a devops"
+    },
+    {
+      "start": 359.96,
+      "duration": 3.679,
+      "text": "engineer if you want me to share this"
+    },
+    {
+      "start": 361.88,
+      "duration": 4.0,
+      "text": "with you let me know in the comment"
+    },
+    {
+      "start": 363.639,
+      "duration": 4.321,
+      "text": "section now that you understood what"
+    },
+    {
+      "start": 365.88,
+      "duration": 5.039,
+      "text": "topics you should be doing as a devop"
+    },
+    {
+      "start": 367.96,
+      "duration": 5.16,
+      "text": "engineer if you ask me advice on how to"
+    },
+    {
+      "start": 370.919,
+      "duration": 4.321,
+      "text": "learn called Master Linux fastest I"
+    },
+    {
+      "start": 373.12,
+      "duration": 4.44,
+      "text": "would suggest you to change your primary"
+    },
+    {
+      "start": 375.24,
+      "duration": 5.2,
+      "text": "operating system to Linux if you have"
+    },
+    {
+      "start": 377.56,
+      "duration": 5.32,
+      "text": "Windows remove windows and install Linux"
+    },
+    {
+      "start": 380.44,
+      "duration": 4.84,
+      "text": "on it this is the best way to learn"
+    },
+    {
+      "start": 382.88,
+      "duration": 4.0,
+      "text": "Linux faster this is something I TR"
+    },
+    {
+      "start": 385.28,
+      "duration": 3.44,
+      "text": "myself and I haven't changed my"
+    },
+    {
+      "start": 386.88,
+      "duration": 5.28,
+      "text": "operating system from the next two"
+    },
+    {
+      "start": 388.72,
+      "duration": 6.52,
+      "text": "windows now and us a UB 222 you can"
+    },
+    {
+      "start": 392.16,
+      "duration": 5.96,
+      "text": "either use a w Fedora ARX any flavor"
+    },
+    {
+      "start": 395.24,
+      "duration": 7.44,
+      "text": "that you want but usually in devops we"
+    },
+    {
+      "start": 398.12,
+      "duration": 6.32,
+      "text": "use mostly U Fedora and SE so yeah that"
+    },
+    {
+      "start": 402.68,
+      "duration": 4.639,
+      "text": "is all I hope now you have an"
+    },
+    {
+      "start": 404.44,
+      "duration": 5.039,
+      "text": "understanding of how L is used in devops"
+    },
+    {
+      "start": 407.319,
+      "duration": 3.801,
+      "text": "what is the role of n in devops what"
+    },
+    {
+      "start": 409.479,
+      "duration": 4.16,
+      "text": "topic should you know as a devops"
+    },
+    {
+      "start": 411.12,
+      "duration": 4.4,
+      "text": "engineer if you have any questions any"
+    },
+    {
+      "start": 413.639,
+      "duration": 4.0,
+      "text": "doubt feele free to let me know in the"
+    },
+    {
+      "start": 415.52,
+      "duration": 7.359,
+      "text": "comment section I hope this video was"
+    },
+    {
+      "start": 417.639,
+      "duration": 5.24,
+      "text": "informative thank you and have good day"
+    }
+  ]
+}

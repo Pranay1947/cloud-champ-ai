@@ -1,0 +1,5071 @@
+{
+  "video": {
+    "id": "_kwJ2GCafuA",
+    "title": "Complete Git and Github Hands On Tutorial with Commands",
+    "url": "https://www.youtube.com/watch?v=_kwJ2GCafuA",
+    "duration": 1884,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.599,
+      "duration": 4.921,
+      "text": "learn it right now get something every"
+    },
+    {
+      "start": 3.72,
+      "duration": 3.119,
+      "text": "developer devops Engineers or anyone"
+    },
+    {
+      "start": 5.52,
+      "duration": 3.6,
+      "text": "working with code should know about"
+    },
+    {
+      "start": 6.839,
+      "duration": 4.26,
+      "text": "chances are if you don't know Git You"
+    },
+    {
+      "start": 9.12,
+      "duration": 3.78,
+      "text": "might not be hired because employers"
+    },
+    {
+      "start": 11.099,
+      "duration": 3.96,
+      "text": "prefer people who have knowledge of git"
+    },
+    {
+      "start": 12.9,
+      "duration": 3.719,
+      "text": "and know how to work with branches what"
+    },
+    {
+      "start": 15.059,
+      "duration": 3.601,
+      "text": "is most request pull request and"
+    },
+    {
+      "start": 16.619,
+      "duration": 3.42,
+      "text": "everything about it so in this video I'm"
+    },
+    {
+      "start": 18.66,
+      "duration": 2.76,
+      "text": "going to explain you everything you need"
+    },
+    {
+      "start": 20.039,
+      "duration": 3.061,
+      "text": "to know about get how to work with"
+    },
+    {
+      "start": 21.42,
+      "duration": 3.48,
+      "text": "GitHub what are different git commands"
+    },
+    {
+      "start": 23.1,
+      "duration": 4.2,
+      "text": "and also a Hands-On practice to help you"
+    },
+    {
+      "start": 24.9,
+      "duration": 5.6,
+      "text": "understand git Concepts very clearly so"
+    },
+    {
+      "start": 27.3,
+      "duration": 3.2,
+      "text": "watch this video till the end"
+    },
+    {
+      "start": 30.96,
+      "duration": 3.599,
+      "text": "thank you"
+    },
+    {
+      "start": 32.34,
+      "duration": 3.36,
+      "text": "hey everyone Welcome to Cloud Jam in"
+    },
+    {
+      "start": 34.559,
+      "duration": 4.321,
+      "text": "this video we are going to learn about"
+    },
+    {
+      "start": 35.7,
+      "duration": 4.62,
+      "text": "git which is very very very important in"
+    },
+    {
+      "start": 38.88,
+      "duration": 3.3,
+      "text": "this video I'll be explaining you what"
+    },
+    {
+      "start": 40.32,
+      "duration": 3.66,
+      "text": "is get how is it different from GitHub"
+    },
+    {
+      "start": 42.18,
+      "duration": 3.96,
+      "text": "what are different git commands you need"
+    },
+    {
+      "start": 43.98,
+      "duration": 4.079,
+      "text": "to know along with Hands-On practice to"
+    },
+    {
+      "start": 46.14,
+      "duration": 4.5,
+      "text": "demonstrate how you will be using these"
+    },
+    {
+      "start": 48.059,
+      "duration": 3.961,
+      "text": "commands in your job not only this at"
+    },
+    {
+      "start": 50.64,
+      "duration": 3.0,
+      "text": "the end of the video I'll be sharing"
+    },
+    {
+      "start": 52.02,
+      "duration": 3.66,
+      "text": "with you an excellent game to practice"
+    },
+    {
+      "start": 53.64,
+      "duration": 3.059,
+      "text": "and master your git Concepts and by the"
+    },
+    {
+      "start": 55.68,
+      "duration": 2.879,
+      "text": "end of the video you will have clear"
+    },
+    {
+      "start": 56.699,
+      "duration": 4.2,
+      "text": "idea on how to push your code from your"
+    },
+    {
+      "start": 58.559,
+      "duration": 4.14,
+      "text": "local machine to git repositories also"
+    },
+    {
+      "start": 60.899,
+      "duration": 3.72,
+      "text": "how to clone your code from git"
+    },
+    {
+      "start": 62.699,
+      "duration": 3.6,
+      "text": "repositories in your local machine what"
+    },
+    {
+      "start": 64.619,
+      "duration": 3.961,
+      "text": "is branching what is merge request pull"
+    },
+    {
+      "start": 66.299,
+      "duration": 4.741,
+      "text": "request and a lot more so watch this"
+    },
+    {
+      "start": 68.58,
+      "duration": 4.32,
+      "text": "video till the end let's understand what"
+    },
+    {
+      "start": 71.04,
+      "duration": 4.079,
+      "text": "is git and I'm going to explain you this"
+    },
+    {
+      "start": 72.9,
+      "duration": 4.079,
+      "text": "in very simple terms rather than using"
+    },
+    {
+      "start": 75.119,
+      "duration": 4.081,
+      "text": "complex words according to definition"
+    },
+    {
+      "start": 76.979,
+      "duration": 4.201,
+      "text": "git is version control system used to"
+    },
+    {
+      "start": 79.2,
+      "duration": 3.84,
+      "text": "keep track of changes made in your code"
+    },
+    {
+      "start": 81.18,
+      "duration": 4.439,
+      "text": "but why is it actually called version"
+    },
+    {
+      "start": 83.04,
+      "duration": 4.8,
+      "text": "control system because the main feature"
+    },
+    {
+      "start": 85.619,
+      "duration": 3.961,
+      "text": "of git is to manage different version to"
+    },
+    {
+      "start": 87.84,
+      "duration": 3.18,
+      "text": "help you understand this let's consider"
+    },
+    {
+      "start": 89.58,
+      "duration": 3.12,
+      "text": "an example you want to create an"
+    },
+    {
+      "start": 91.02,
+      "duration": 3.06,
+      "text": "application and for that application and"
+    },
+    {
+      "start": 92.7,
+      "duration": 2.58,
+      "text": "you have to write the code so you wrote"
+    },
+    {
+      "start": 94.08,
+      "duration": 2.76,
+      "text": "the code for your application which is"
+    },
+    {
+      "start": 95.28,
+      "duration": 3.42,
+      "text": "the first version now you made some"
+    },
+    {
+      "start": 96.84,
+      "duration": 3.419,
+      "text": "changes you have second version after"
+    },
+    {
+      "start": 98.7,
+      "duration": 3.419,
+      "text": "you make changes there is third version"
+    },
+    {
+      "start": 100.259,
+      "duration": 3.421,
+      "text": "git is used to manage all the different"
+    },
+    {
+      "start": 102.119,
+      "duration": 3.481,
+      "text": "versions you have for your application"
+    },
+    {
+      "start": 103.68,
+      "duration": 3.66,
+      "text": "not only this you can also revert back"
+    },
+    {
+      "start": 105.6,
+      "duration": 3.72,
+      "text": "to any previous version if you have any"
+    },
+    {
+      "start": 107.34,
+      "duration": 3.84,
+      "text": "issues with the current version so git"
+    },
+    {
+      "start": 109.32,
+      "duration": 3.72,
+      "text": "helps you manage different versions also"
+    },
+    {
+      "start": 111.18,
+      "duration": 3.78,
+      "text": "reward changes if there are any issues"
+    },
+    {
+      "start": 113.04,
+      "duration": 4.02,
+      "text": "git also provides you with branching and"
+    },
+    {
+      "start": 114.96,
+      "duration": 4.32,
+      "text": "merging system using branches you can"
+    },
+    {
+      "start": 117.06,
+      "duration": 4.14,
+      "text": "work on new feature and Bug fixes"
+    },
+    {
+      "start": 119.28,
+      "duration": 4.019,
+      "text": "independently without affecting the main"
+    },
+    {
+      "start": 121.2,
+      "duration": 3.72,
+      "text": "code base that might be running on your"
+    },
+    {
+      "start": 123.299,
+      "duration": 3.18,
+      "text": "application once you are done you can"
+    },
+    {
+      "start": 124.92,
+      "duration": 3.24,
+      "text": "then merge that Branch into the main"
+    },
+    {
+      "start": 126.479,
+      "duration": 3.181,
+      "text": "code base to make sure that your"
+    },
+    {
+      "start": 128.16,
+      "duration": 2.939,
+      "text": "application is working properly with the"
+    },
+    {
+      "start": 129.66,
+      "duration": 3.06,
+      "text": "new version of your code along with this"
+    },
+    {
+      "start": 131.099,
+      "duration": 3.601,
+      "text": "git allows multiple developers to"
+    },
+    {
+      "start": 132.72,
+      "duration": 3.84,
+      "text": "collaborate to a single code base which"
+    },
+    {
+      "start": 134.7,
+      "duration": 4.98,
+      "text": "can help for more collaboration and"
+    },
+    {
+      "start": 136.56,
+      "duration": 4.56,
+      "text": "teamwork using git we can try manage and"
+    },
+    {
+      "start": 139.68,
+      "duration": 3.48,
+      "text": "collaborate on source code very"
+    },
+    {
+      "start": 141.12,
+      "duration": 4.32,
+      "text": "effectively now let's look at history of"
+    },
+    {
+      "start": 143.16,
+      "duration": 4.38,
+      "text": "git git was created in 2005 by Lena"
+    },
+    {
+      "start": 145.44,
+      "duration": 4.98,
+      "text": "stovalls the same person who created"
+    },
+    {
+      "start": 147.54,
+      "duration": 4.62,
+      "text": "Linux so in 2005 Lina store walls was"
+    },
+    {
+      "start": 150.42,
+      "duration": 3.78,
+      "text": "working on Linux and he wanted to have a"
+    },
+    {
+      "start": 152.16,
+      "duration": 3.9,
+      "text": "Version Control Systems to handle big"
+    },
+    {
+      "start": 154.2,
+      "duration": 3.84,
+      "text": "Linux files that is when he started"
+    },
+    {
+      "start": 156.06,
+      "duration": 4.8,
+      "text": "working on git after initial development"
+    },
+    {
+      "start": 158.04,
+      "duration": 4.5,
+      "text": "Linus released get as open source it"
+    },
+    {
+      "start": 160.86,
+      "duration": 3.72,
+      "text": "became famous and everyone started using"
+    },
+    {
+      "start": 162.54,
+      "duration": 3.839,
+      "text": "and contributing to it since then every"
+    },
+    {
+      "start": 164.58,
+      "duration": 3.06,
+      "text": "company uses git to manage their code"
+    },
+    {
+      "start": 166.379,
+      "duration": 2.821,
+      "text": "base and that is why it is very"
+    },
+    {
+      "start": 167.64,
+      "duration": 3.48,
+      "text": "important for you to understand and"
+    },
+    {
+      "start": 169.2,
+      "duration": 3.72,
+      "text": "learn git to someone who is a devops"
+    },
+    {
+      "start": 171.12,
+      "duration": 3.54,
+      "text": "engineer you will have to understand git"
+    },
+    {
+      "start": 172.92,
+      "duration": 3.48,
+      "text": "because git is used in every devops task"
+    },
+    {
+      "start": 174.66,
+      "duration": 3.78,
+      "text": "if you look at cicd git is the central"
+    },
+    {
+      "start": 176.4,
+      "duration": 3.9,
+      "text": "component ncicd whenever the code is"
+    },
+    {
+      "start": 178.44,
+      "duration": 4.079,
+      "text": "pushed only then the cicd pipeline will"
+    },
+    {
+      "start": 180.3,
+      "duration": 4.56,
+      "text": "run also whenever you create terraform"
+    },
+    {
+      "start": 182.519,
+      "duration": 4.141,
+      "text": "scripts or Jenkins pipeline or ansible"
+    },
+    {
+      "start": 184.86,
+      "duration": 3.18,
+      "text": "playbooks you have to push them on git"
+    },
+    {
+      "start": 186.66,
+      "duration": 3.24,
+      "text": "repository so you will need to have"
+    },
+    {
+      "start": 188.04,
+      "duration": 3.24,
+      "text": "understanding of git if you're someone"
+    },
+    {
+      "start": 189.9,
+      "duration": 2.759,
+      "text": "who wants to contribute to open source"
+    },
+    {
+      "start": 191.28,
+      "duration": 3.84,
+      "text": "it is very crucial for you to understand"
+    },
+    {
+      "start": 192.659,
+      "duration": 4.5,
+      "text": "Git You cannot do open source without"
+    },
+    {
+      "start": 195.12,
+      "duration": 4.199,
+      "text": "learning it because contributors have to"
+    },
+    {
+      "start": 197.159,
+      "duration": 3.66,
+      "text": "clone the projects and and then make the"
+    },
+    {
+      "start": 199.319,
+      "duration": 3.121,
+      "text": "changes and submit the pull request so"
+    },
+    {
+      "start": 200.819,
+      "duration": 3.181,
+      "text": "they will only be able to do that when"
+    },
+    {
+      "start": 202.44,
+      "duration": 3.36,
+      "text": "they understand get there's a huge"
+    },
+    {
+      "start": 204.0,
+      "duration": 4.2,
+      "text": "confusion among a lot of people between"
+    },
+    {
+      "start": 205.8,
+      "duration": 3.9,
+      "text": "get and GitHub so some of them think"
+    },
+    {
+      "start": 208.2,
+      "duration": 3.0,
+      "text": "that great and GitHub is one thing but"
+    },
+    {
+      "start": 209.7,
+      "duration": 2.7,
+      "text": "that's not true let me help you"
+    },
+    {
+      "start": 211.2,
+      "duration": 3.42,
+      "text": "understand the difference between git"
+    },
+    {
+      "start": 212.4,
+      "duration": 3.72,
+      "text": "and GitHub so in simple terms git is"
+    },
+    {
+      "start": 214.62,
+      "duration": 3.3,
+      "text": "this command line tool used for version"
+    },
+    {
+      "start": 216.12,
+      "duration": 4.14,
+      "text": "control system that is in your computer"
+    },
+    {
+      "start": 217.92,
+      "duration": 4.2,
+      "text": "but GitHub is a web-based platform that"
+    },
+    {
+      "start": 220.26,
+      "duration": 3.899,
+      "text": "is used to host and collaborate on on"
+    },
+    {
+      "start": 222.12,
+      "duration": 4.199,
+      "text": "gate repositories online so it's a"
+    },
+    {
+      "start": 224.159,
+      "duration": 4.201,
+      "text": "web-based platform whereas git is a CLI"
+    },
+    {
+      "start": 226.319,
+      "duration": 3.961,
+      "text": "tool so we use bid for Version Control"
+    },
+    {
+      "start": 228.36,
+      "duration": 3.659,
+      "text": "and GitHub to host and collaborate on"
+    },
+    {
+      "start": 230.28,
+      "duration": 3.3,
+      "text": "git repositories however you should know"
+    },
+    {
+      "start": 232.019,
+      "duration": 4.44,
+      "text": "that there are different alternatives"
+    },
+    {
+      "start": 233.58,
+      "duration": 4.079,
+      "text": "for GitHub such as gitlab or bed bucket"
+    },
+    {
+      "start": 236.459,
+      "duration": 3.661,
+      "text": "or code command so if you understand"
+    },
+    {
+      "start": 237.659,
+      "duration": 4.321,
+      "text": "GitHub you can also work with gitlab you"
+    },
+    {
+      "start": 240.12,
+      "duration": 3.66,
+      "text": "can also work with bitbucket but all of"
+    },
+    {
+      "start": 241.98,
+      "duration": 3.179,
+      "text": "them will have get as an underlying"
+    },
+    {
+      "start": 243.78,
+      "duration": 2.64,
+      "text": "technology to work with so you need to"
+    },
+    {
+      "start": 245.159,
+      "duration": 3.241,
+      "text": "understand get if you want to work with"
+    },
+    {
+      "start": 246.42,
+      "duration": 3.66,
+      "text": "GitHub or gitlab or bitbucket or"
+    },
+    {
+      "start": 248.4,
+      "duration": 3.059,
+      "text": "anything in the upcoming demo I'm going"
+    },
+    {
+      "start": 250.08,
+      "duration": 3.18,
+      "text": "to show you how you can create git"
+    },
+    {
+      "start": 251.459,
+      "duration": 3.661,
+      "text": "repositories on GitHub how you can push"
+    },
+    {
+      "start": 253.26,
+      "duration": 3.659,
+      "text": "your code clone the code create branches"
+    },
+    {
+      "start": 255.12,
+      "duration": 3.959,
+      "text": "and lot more so let's start with the"
+    },
+    {
+      "start": 256.919,
+      "duration": 3.241,
+      "text": "Hands-On all right so I'm here on my"
+    },
+    {
+      "start": 259.079,
+      "duration": 2.4,
+      "text": "computer screen now we are going to do"
+    },
+    {
+      "start": 260.16,
+      "duration": 3.3,
+      "text": "Hands-On to understand all the different"
+    },
+    {
+      "start": 261.479,
+      "duration": 3.361,
+      "text": "git commands and how they are used along"
+    },
+    {
+      "start": 263.46,
+      "duration": 3.66,
+      "text": "with that I'm also going to share with"
+    },
+    {
+      "start": 264.84,
+      "duration": 3.66,
+      "text": "you some notes to learn git and a game"
+    },
+    {
+      "start": 267.12,
+      "duration": 2.94,
+      "text": "to practice and understand all the git"
+    },
+    {
+      "start": 268.5,
+      "duration": 3.419,
+      "text": "Concepts in this Hands-On we are going"
+    },
+    {
+      "start": 270.06,
+      "duration": 3.72,
+      "text": "to understand how how you can create get"
+    },
+    {
+      "start": 271.919,
+      "duration": 3.481,
+      "text": "repositories on GitHub how to clone the"
+    },
+    {
+      "start": 273.78,
+      "duration": 3.3,
+      "text": "code from GitHub repositories to local"
+    },
+    {
+      "start": 275.4,
+      "duration": 3.0,
+      "text": "machine how to push your code what is"
+    },
+    {
+      "start": 277.08,
+      "duration": 2.82,
+      "text": "branching how to create new Branch push"
+    },
+    {
+      "start": 278.4,
+      "duration": 2.88,
+      "text": "your code on your particular Branch what"
+    },
+    {
+      "start": 279.9,
+      "duration": 3.239,
+      "text": "is most requestful request and all of"
+    },
+    {
+      "start": 281.28,
+      "duration": 3.479,
+      "text": "that so let's get started first thing to"
+    },
+    {
+      "start": 283.139,
+      "duration": 3.84,
+      "text": "work with Git is to have git installed"
+    },
+    {
+      "start": 284.759,
+      "duration": 3.901,
+      "text": "in your laptop so I'm using Ubuntu right"
+    },
+    {
+      "start": 286.979,
+      "duration": 3.601,
+      "text": "now and let me show you if it is"
+    },
+    {
+      "start": 288.66,
+      "duration": 3.96,
+      "text": "installed for me or not a terminal here"
+    },
+    {
+      "start": 290.58,
+      "duration": 3.72,
+      "text": "this is my terminal and if I run get and"
+    },
+    {
+      "start": 292.62,
+      "duration": 3.24,
+      "text": "it shows me all the different commands"
+    },
+    {
+      "start": 294.3,
+      "duration": 3.959,
+      "text": "which means git is installed you can"
+    },
+    {
+      "start": 295.86,
+      "duration": 3.6,
+      "text": "also run git dash dash version and if it"
+    },
+    {
+      "start": 298.259,
+      "duration": 3.0,
+      "text": "is not installed for you you can install"
+    },
+    {
+      "start": 299.46,
+      "duration": 3.78,
+      "text": "it from the official documentation so I"
+    },
+    {
+      "start": 301.259,
+      "duration": 3.601,
+      "text": "can just do get downloads and this is"
+    },
+    {
+      "start": 303.24,
+      "duration": 3.239,
+      "text": "the link from where you can download it"
+    },
+    {
+      "start": 304.86,
+      "duration": 3.18,
+      "text": "if you're using Linux or Mac OS or"
+    },
+    {
+      "start": 306.479,
+      "duration": 3.541,
+      "text": "windows so if you're not using Windows"
+    },
+    {
+      "start": 308.04,
+      "duration": 4.68,
+      "text": "you can go to this website"
+    },
+    {
+      "start": 310.02,
+      "duration": 4.619,
+      "text": "and download 64-bit or 32-bit according"
+    },
+    {
+      "start": 312.72,
+      "duration": 3.539,
+      "text": "to your laptop but most likely nowadays"
+    },
+    {
+      "start": 314.639,
+      "duration": 2.821,
+      "text": "every laptop comes with Git install in"
+    },
+    {
+      "start": 316.259,
+      "duration": 3.301,
+      "text": "it if you're using Windows you can"
+    },
+    {
+      "start": 317.46,
+      "duration": 3.78,
+      "text": "install something known as git bash or"
+    },
+    {
+      "start": 319.56,
+      "duration": 3.0,
+      "text": "you can also use it in your vs code I'll"
+    },
+    {
+      "start": 321.24,
+      "duration": 3.0,
+      "text": "be showing you all the things mostly in"
+    },
+    {
+      "start": 322.56,
+      "duration": 4.38,
+      "text": "vs code and the terminal but you can"
+    },
+    {
+      "start": 324.24,
+      "duration": 5.28,
+      "text": "also use and install git bash which is a"
+    },
+    {
+      "start": 326.94,
+      "duration": 5.58,
+      "text": "tool for you to work with Git on windows"
+    },
+    {
+      "start": 329.52,
+      "duration": 4.98,
+      "text": "so now let us confirm that I have I have"
+    },
+    {
+      "start": 332.52,
+      "duration": 5.16,
+      "text": "get installed I can start with creating"
+    },
+    {
+      "start": 334.5,
+      "duration": 5.16,
+      "text": "a repository and trying to write some"
+    },
+    {
+      "start": 337.68,
+      "duration": 3.42,
+      "text": "code and push it on GitHub so to create"
+    },
+    {
+      "start": 339.66,
+      "duration": 3.36,
+      "text": "repositories on GitHub you can use"
+    },
+    {
+      "start": 341.1,
+      "duration": 4.26,
+      "text": "GitHub similar to GitHub Market lab and"
+    },
+    {
+      "start": 343.02,
+      "duration": 4.019,
+      "text": "bitbucket so if I go to gitlab you have"
+    },
+    {
+      "start": 345.36,
+      "duration": 3.3,
+      "text": "different UI but you can create"
+    },
+    {
+      "start": 347.039,
+      "duration": 3.681,
+      "text": "repositories similar to what you can do"
+    },
+    {
+      "start": 348.66,
+      "duration": 5.099,
+      "text": "on GitHub you can also use bitbucket"
+    },
+    {
+      "start": 350.72,
+      "duration": 4.9,
+      "text": "bitbucket is another tool to get to use"
+    },
+    {
+      "start": 353.759,
+      "duration": 3.901,
+      "text": "your git repositories along with this"
+    },
+    {
+      "start": 355.62,
+      "duration": 3.6,
+      "text": "you also have code comment and lot of"
+    },
+    {
+      "start": 357.66,
+      "duration": 3.12,
+      "text": "other tools for this plans on I'm going"
+    },
+    {
+      "start": 359.22,
+      "duration": 4.319,
+      "text": "to use GitHub which is one of the most"
+    },
+    {
+      "start": 360.78,
+      "duration": 4.38,
+      "text": "used platform so right now I'm going to"
+    },
+    {
+      "start": 363.539,
+      "duration": 3.72,
+      "text": "click on new repositories here to create"
+    },
+    {
+      "start": 365.16,
+      "duration": 5.22,
+      "text": "a new one let's name this repo as"
+    },
+    {
+      "start": 367.259,
+      "duration": 5.401,
+      "text": "learning git so learning underscore git"
+    },
+    {
+      "start": 370.38,
+      "duration": 3.42,
+      "text": "is what we can name so this is name is"
+    },
+    {
+      "start": 372.66,
+      "duration": 4.44,
+      "text": "available which means we can use it"
+    },
+    {
+      "start": 373.8,
+      "duration": 5.339,
+      "text": "let's give a description this is my repo"
+    },
+    {
+      "start": 377.1,
+      "duration": 3.18,
+      "text": "to learn and practice get all right once"
+    },
+    {
+      "start": 379.139,
+      "duration": 2.521,
+      "text": "you do this you have two options you can"
+    },
+    {
+      "start": 380.28,
+      "duration": 3.06,
+      "text": "either create repository public or"
+    },
+    {
+      "start": 381.66,
+      "duration": 3.3,
+      "text": "private if it is public anyone on the"
+    },
+    {
+      "start": 383.34,
+      "duration": 4.139,
+      "text": "internet can get the code from it if it"
+    },
+    {
+      "start": 384.96,
+      "duration": 4.38,
+      "text": "is private only you can Define who can"
+    },
+    {
+      "start": 387.479,
+      "duration": 3.601,
+      "text": "access it maybe your own organization"
+    },
+    {
+      "start": 389.34,
+      "duration": 3.6,
+      "text": "people can access it then you have an"
+    },
+    {
+      "start": 391.08,
+      "duration": 3.48,
+      "text": "option to add a readme file readme is"
+    },
+    {
+      "start": 392.94,
+      "duration": 2.94,
+      "text": "something which tells about what is this"
+    },
+    {
+      "start": 394.56,
+      "duration": 2.759,
+      "text": "repository what is the project inside"
+    },
+    {
+      "start": 395.88,
+      "duration": 3.0,
+      "text": "the suppository so so it's a good"
+    },
+    {
+      "start": 397.319,
+      "duration": 2.761,
+      "text": "practice if I treat me but I'm not going"
+    },
+    {
+      "start": 398.88,
+      "duration": 3.659,
+      "text": "to do that and if you see here there's"
+    },
+    {
+      "start": 400.08,
+      "duration": 4.38,
+      "text": "something more named as docket ignore so"
+    },
+    {
+      "start": 402.539,
+      "duration": 3.421,
+      "text": "when which whichever file you don't want"
+    },
+    {
+      "start": 404.46,
+      "duration": 3.12,
+      "text": "the git to handle is what you will"
+    },
+    {
+      "start": 405.96,
+      "duration": 3.359,
+      "text": "insert in dot get ignore sometimes there"
+    },
+    {
+      "start": 407.58,
+      "duration": 2.82,
+      "text": "are files consisting your passwords or"
+    },
+    {
+      "start": 409.319,
+      "duration": 2.1,
+      "text": "sometimes there are extra files or"
+    },
+    {
+      "start": 410.4,
+      "duration": 2.94,
+      "text": "dependencies that you don't want to push"
+    },
+    {
+      "start": 411.419,
+      "duration": 3.361,
+      "text": "on your repository or you don't want the"
+    },
+    {
+      "start": 413.34,
+      "duration": 2.94,
+      "text": "git to handle then you can put them in"
+    },
+    {
+      "start": 414.78,
+      "duration": 2.88,
+      "text": "dot getting your file so choose which"
+    },
+    {
+      "start": 416.28,
+      "duration": 2.88,
+      "text": "files not to track from the list of"
+    },
+    {
+      "start": 417.66,
+      "duration": 2.879,
+      "text": "templates you can learn more about it by"
+    },
+    {
+      "start": 419.16,
+      "duration": 3.42,
+      "text": "clicking here and then going to"
+    },
+    {
+      "start": 420.539,
+      "duration": 3.241,
+      "text": "documentation so you can say it says you"
+    },
+    {
+      "start": 422.58,
+      "duration": 3.36,
+      "text": "can create a getting your file in your"
+    },
+    {
+      "start": 423.78,
+      "duration": 3.359,
+      "text": "repository to tell which files and"
+    },
+    {
+      "start": 425.94,
+      "duration": 2.759,
+      "text": "directories to ignore when you make a"
+    },
+    {
+      "start": 427.139,
+      "duration": 2.761,
+      "text": "comment I'll be explaining you what is a"
+    },
+    {
+      "start": 428.699,
+      "duration": 3.0,
+      "text": "comment what is a push what is pull"
+    },
+    {
+      "start": 429.9,
+      "duration": 3.18,
+      "text": "everything in this Hands-On so no"
+    },
+    {
+      "start": 431.699,
+      "duration": 3.361,
+      "text": "problem now that everything is ready"
+    },
+    {
+      "start": 433.08,
+      "duration": 3.899,
+      "text": "let's click on create repository once"
+    },
+    {
+      "start": 435.06,
+      "duration": 3.06,
+      "text": "this repository is created it will be"
+    },
+    {
+      "start": 436.979,
+      "duration": 2.641,
+      "text": "completely empty so if you see this"
+    },
+    {
+      "start": 438.12,
+      "duration": 3.359,
+      "text": "repository is completely empty no code"
+    },
+    {
+      "start": 439.62,
+      "duration": 3.419,
+      "text": "at all and you have some instructions to"
+    },
+    {
+      "start": 441.479,
+      "duration": 3.0,
+      "text": "start working on it so I'm going to use"
+    },
+    {
+      "start": 443.039,
+      "duration": 3.241,
+      "text": "this instructions to set it up in my"
+    },
+    {
+      "start": 444.479,
+      "duration": 3.421,
+      "text": "local machine and then we have some"
+    },
+    {
+      "start": 446.28,
+      "duration": 3.359,
+      "text": "commands here let's understand that and"
+    },
+    {
+      "start": 447.9,
+      "duration": 3.419,
+      "text": "try to use it so"
+    },
+    {
+      "start": 449.639,
+      "duration": 2.941,
+      "text": "right now we have a new repository"
+    },
+    {
+      "start": 451.319,
+      "duration": 3.6,
+      "text": "created so I'm going to use this"
+    },
+    {
+      "start": 452.58,
+      "duration": 3.899,
+      "text": "commands so I'm going to go to my uh you"
+    },
+    {
+      "start": 454.919,
+      "duration": 4.381,
+      "text": "can open a vs code if you have vs code"
+    },
+    {
+      "start": 456.479,
+      "duration": 4.56,
+      "text": "if not you should install it or else I"
+    },
+    {
+      "start": 459.3,
+      "duration": 2.7,
+      "text": "can run these commands in my terminal as"
+    },
+    {
+      "start": 461.039,
+      "duration": 4.56,
+      "text": "well so I'm going to open my terminal"
+    },
+    {
+      "start": 462.0,
+      "duration": 5.52,
+      "text": "here maximize it and then copy this this"
+    },
+    {
+      "start": 465.599,
+      "duration": 3.361,
+      "text": "is creating a readme.md file in my local"
+    },
+    {
+      "start": 467.52,
+      "duration": 3.6,
+      "text": "machine so I'm going to run this command"
+    },
+    {
+      "start": 468.96,
+      "duration": 3.959,
+      "text": "which is going to create a readme.md to"
+    },
+    {
+      "start": 471.12,
+      "duration": 2.82,
+      "text": "make things simple let me create a wrap"
+    },
+    {
+      "start": 472.919,
+      "duration": 3.301,
+      "text": "up so I'm going to create a wrapper"
+    },
+    {
+      "start": 473.94,
+      "duration": 4.319,
+      "text": "saying learn get"
+    },
+    {
+      "start": 476.22,
+      "duration": 5.0,
+      "text": "all right let's go inside this repo and"
+    },
+    {
+      "start": 478.259,
+      "duration": 2.961,
+      "text": "start to run the commands"
+    },
+    {
+      "start": 482.22,
+      "duration": 2.819,
+      "text": "okay so I'm inside the learn git wrapper"
+    },
+    {
+      "start": 483.9,
+      "duration": 2.46,
+      "text": "and I'm going to run this command which"
+    },
+    {
+      "start": 485.039,
+      "duration": 2.88,
+      "text": "is going to insert which is going to"
+    },
+    {
+      "start": 486.36,
+      "duration": 3.42,
+      "text": "create a readme.md right now if I show"
+    },
+    {
+      "start": 487.919,
+      "duration": 3.541,
+      "text": "you there's no file created but after I"
+    },
+    {
+      "start": 489.78,
+      "duration": 3.359,
+      "text": "run this command it will start creating"
+    },
+    {
+      "start": 491.46,
+      "duration": 3.84,
+      "text": "a file so the file will be there which"
+    },
+    {
+      "start": 493.139,
+      "duration": 3.601,
+      "text": "is not in my GitHub repository but this"
+    },
+    {
+      "start": 495.3,
+      "duration": 2.28,
+      "text": "is my it's in my local machine so you"
+    },
+    {
+      "start": 496.74,
+      "duration": 2.88,
+      "text": "can see there is a file named as"
+    },
+    {
+      "start": 497.58,
+      "duration": 3.6,
+      "text": "readme.md let's open this in a vs code"
+    },
+    {
+      "start": 499.62,
+      "duration": 4.019,
+      "text": "so I'm going to say code dot which will"
+    },
+    {
+      "start": 501.18,
+      "duration": 4.38,
+      "text": "open this file in vs code all right now"
+    },
+    {
+      "start": 503.639,
+      "duration": 3.541,
+      "text": "I can start managing my things so I have"
+    },
+    {
+      "start": 505.56,
+      "duration": 3.9,
+      "text": "a file named as readme.md inside this"
+    },
+    {
+      "start": 507.18,
+      "duration": 3.959,
+      "text": "directory after I run that I can run the"
+    },
+    {
+      "start": 509.46,
+      "duration": 2.939,
+      "text": "next command which is to get in it this"
+    },
+    {
+      "start": 511.139,
+      "duration": 3.301,
+      "text": "command is to initialize a gate"
+    },
+    {
+      "start": 512.399,
+      "duration": 4.981,
+      "text": "repository for example if you see right"
+    },
+    {
+      "start": 514.44,
+      "duration": 4.74,
+      "text": "now if I do LS La there are no files"
+    },
+    {
+      "start": 517.38,
+      "duration": 3.48,
+      "text": "apart from readme.md but if you want to"
+    },
+    {
+      "start": 519.18,
+      "duration": 3.12,
+      "text": "work with Git there has to be a folder"
+    },
+    {
+      "start": 520.86,
+      "duration": 3.419,
+      "text": "named as dot git which has all the"
+    },
+    {
+      "start": 522.3,
+      "duration": 3.96,
+      "text": "information to work so if I do anything"
+    },
+    {
+      "start": 524.279,
+      "duration": 3.781,
+      "text": "here it will not work because git is not"
+    },
+    {
+      "start": 526.26,
+      "duration": 3.66,
+      "text": "until initialized so I need to do git"
+    },
+    {
+      "start": 528.06,
+      "duration": 3.6,
+      "text": "init once I do get in it it says"
+    },
+    {
+      "start": 529.92,
+      "duration": 4.14,
+      "text": "initialize M take it repository in this"
+    },
+    {
+      "start": 531.66,
+      "duration": 3.72,
+      "text": "part and if I do LS La now you will see"
+    },
+    {
+      "start": 534.06,
+      "duration": 2.7,
+      "text": "there's a folder named this dot kit"
+    },
+    {
+      "start": 535.38,
+      "duration": 2.88,
+      "text": "which is very important for you to have"
+    },
+    {
+      "start": 536.76,
+      "duration": 3.48,
+      "text": "if you want to work and run the get"
+    },
+    {
+      "start": 538.26,
+      "duration": 3.36,
+      "text": "commands so after I initialize it I'm"
+    },
+    {
+      "start": 540.24,
+      "duration": 3.719,
+      "text": "going to say git add what is this"
+    },
+    {
+      "start": 541.62,
+      "duration": 4.38,
+      "text": "command get added me right now this"
+    },
+    {
+      "start": 543.959,
+      "duration": 4.32,
+      "text": "readme.md file is in my local machine"
+    },
+    {
+      "start": 546.0,
+      "duration": 3.779,
+      "text": "but not in my uh not in my get"
+    },
+    {
+      "start": 548.279,
+      "duration": 2.881,
+      "text": "repository so if I want to push this I"
+    },
+    {
+      "start": 549.779,
+      "duration": 3.12,
+      "text": "need to First add it in staging area"
+    },
+    {
+      "start": 551.16,
+      "duration": 3.0,
+      "text": "this might be confusing but if you watch"
+    },
+    {
+      "start": 552.899,
+      "duration": 2.521,
+      "text": "this completely it you will have a good"
+    },
+    {
+      "start": 554.16,
+      "duration": 2.64,
+      "text": "understanding of how to push your things"
+    },
+    {
+      "start": 555.42,
+      "duration": 3.3,
+      "text": "so whenever you want to push your things"
+    },
+    {
+      "start": 556.8,
+      "duration": 4.74,
+      "text": "you need to say git add first so right"
+    },
+    {
+      "start": 558.72,
+      "duration": 4.32,
+      "text": "now I have only one Phi which is present"
+    },
+    {
+      "start": 561.54,
+      "duration": 4.08,
+      "text": "in my local but not in my remote"
+    },
+    {
+      "start": 563.04,
+      "duration": 4.32,
+      "text": "repository so I need to say get add and"
+    },
+    {
+      "start": 565.62,
+      "duration": 4.56,
+      "text": "the name of the file which is readme.mdn"
+    },
+    {
+      "start": 567.36,
+      "duration": 4.56,
+      "text": "so once I do this and I do get status"
+    },
+    {
+      "start": 570.18,
+      "duration": 3.659,
+      "text": "I'll be able to see that there is one"
+    },
+    {
+      "start": 571.92,
+      "duration": 3.3,
+      "text": "file which is ready to be committed but"
+    },
+    {
+      "start": 573.839,
+      "duration": 3.601,
+      "text": "hasn't been committed so first you need"
+    },
+    {
+      "start": 575.22,
+      "duration": 4.619,
+      "text": "to say get add and then get comment so"
+    },
+    {
+      "start": 577.44,
+      "duration": 3.48,
+      "text": "get comment hyphen M to say what is this"
+    },
+    {
+      "start": 579.839,
+      "duration": 2.94,
+      "text": "comment about and if you see here it"
+    },
+    {
+      "start": 580.92,
+      "duration": 3.78,
+      "text": "says my first comment you can either say"
+    },
+    {
+      "start": 582.779,
+      "duration": 3.481,
+      "text": "first commit or initial commit or"
+    },
+    {
+      "start": 584.7,
+      "duration": 5.16,
+      "text": "anything so I'm going to say initial"
+    },
+    {
+      "start": 586.26,
+      "duration": 5.639,
+      "text": "commit and then press enter now the"
+    },
+    {
+      "start": 589.86,
+      "duration": 3.659,
+      "text": "commit has been made and it has after"
+    },
+    {
+      "start": 591.899,
+      "duration": 3.301,
+      "text": "the community need to push it so get add"
+    },
+    {
+      "start": 593.519,
+      "duration": 2.88,
+      "text": "get commit and get push is how you can"
+    },
+    {
+      "start": 595.2,
+      "duration": 4.259,
+      "text": "push your code from your local machine"
+    },
+    {
+      "start": 596.399,
+      "duration": 5.101,
+      "text": "to repository if I do get push now I"
+    },
+    {
+      "start": 599.459,
+      "duration": 3.481,
+      "text": "need to say get push hyphen U origin and"
+    },
+    {
+      "start": 601.5,
+      "duration": 2.76,
+      "text": "the name of the branch but what is the"
+    },
+    {
+      "start": 602.94,
+      "duration": 2.76,
+      "text": "name of the branch so if you want to"
+    },
+    {
+      "start": 604.26,
+      "duration": 3.6,
+      "text": "check which branch are you on you need"
+    },
+    {
+      "start": 605.7,
+      "duration": 3.6,
+      "text": "to say get Branch once you do this it"
+    },
+    {
+      "start": 607.86,
+      "duration": 2.7,
+      "text": "says you're on Master Branch so right"
+    },
+    {
+      "start": 609.3,
+      "duration": 3.659,
+      "text": "now I want to push things on my master"
+    },
+    {
+      "start": 610.56,
+      "duration": 4.92,
+      "text": "branches I can say git push hyphen U"
+    },
+    {
+      "start": 612.959,
+      "duration": 4.621,
+      "text": "origin and then Master what is this"
+    },
+    {
+      "start": 615.48,
+      "duration": 3.84,
+      "text": "origin and how the why why are we using"
+    },
+    {
+      "start": 617.58,
+      "duration": 3.18,
+      "text": "it here to understand that let me show"
+    },
+    {
+      "start": 619.32,
+      "duration": 3.78,
+      "text": "you what repository are we connected to"
+    },
+    {
+      "start": 620.76,
+      "duration": 3.84,
+      "text": "right now so if I do get remote hyphen V"
+    },
+    {
+      "start": 623.1,
+      "duration": 3.179,
+      "text": "this is the command to check which"
+    },
+    {
+      "start": 624.6,
+      "duration": 3.48,
+      "text": "repository are you going to push or are"
+    },
+    {
+      "start": 626.279,
+      "duration": 3.361,
+      "text": "you going to pull from so when I do get"
+    },
+    {
+      "start": 628.08,
+      "duration": 3.18,
+      "text": "remote hyphen v i I see there is nothing"
+    },
+    {
+      "start": 629.64,
+      "duration": 3.42,
+      "text": "here right which means I will not be"
+    },
+    {
+      "start": 631.26,
+      "duration": 3.6,
+      "text": "able to push my terminal does not know"
+    },
+    {
+      "start": 633.06,
+      "duration": 4.14,
+      "text": "which which repository to push on this"
+    },
+    {
+      "start": 634.86,
+      "duration": 4.62,
+      "text": "is why you need to use this command get"
+    },
+    {
+      "start": 637.2,
+      "duration": 3.72,
+      "text": "remote add origin and then the URL of"
+    },
+    {
+      "start": 639.48,
+      "duration": 3.9,
+      "text": "this particular repository which is"
+    },
+    {
+      "start": 640.92,
+      "duration": 5.28,
+      "text": "learning it so once I do this I'll set"
+    },
+    {
+      "start": 643.38,
+      "duration": 3.959,
+      "text": "remote to to this repository which means"
+    },
+    {
+      "start": 646.2,
+      "duration": 3.06,
+      "text": "I'm going to push and pull to that"
+    },
+    {
+      "start": 647.339,
+      "duration": 3.781,
+      "text": "repository once I do remote you can see"
+    },
+    {
+      "start": 649.26,
+      "duration": 3.6,
+      "text": "now I have an option here and this is"
+    },
+    {
+      "start": 651.12,
+      "duration": 4.8,
+      "text": "this is the origin so to push things I'm"
+    },
+    {
+      "start": 652.86,
+      "duration": 4.38,
+      "text": "going to say git push hyphen U origin"
+    },
+    {
+      "start": 655.92,
+      "duration": 3.9,
+      "text": "and the name of the brand which is"
+    },
+    {
+      "start": 657.24,
+      "duration": 4.56,
+      "text": "Master here after I play press enter it"
+    },
+    {
+      "start": 659.82,
+      "duration": 4.5,
+      "text": "will start pushing and now if I refresh"
+    },
+    {
+      "start": 661.8,
+      "duration": 4.14,
+      "text": "you should be able to see that a full"
+    },
+    {
+      "start": 664.32,
+      "duration": 3.84,
+      "text": "file has been added which is an initial"
+    },
+    {
+      "start": 665.94,
+      "duration": 4.019,
+      "text": "commit one minute ago right this is how"
+    },
+    {
+      "start": 668.16,
+      "duration": 3.239,
+      "text": "you can push things let's try one more"
+    },
+    {
+      "start": 669.959,
+      "duration": 3.601,
+      "text": "thing right now this is my first version"
+    },
+    {
+      "start": 671.399,
+      "duration": 5.821,
+      "text": "of my application let's create another"
+    },
+    {
+      "start": 673.56,
+      "duration": 7.1,
+      "text": "file make it app dot pi"
+    },
+    {
+      "start": 677.22,
+      "duration": 3.44,
+      "text": "and let's say print"
+    },
+    {
+      "start": 680.94,
+      "duration": 5.7,
+      "text": "this is my second version"
+    },
+    {
+      "start": 684.779,
+      "duration": 2.881,
+      "text": "so using it you can you can manage"
+    },
+    {
+      "start": 686.64,
+      "duration": 2.699,
+      "text": "different version of your application"
+    },
+    {
+      "start": 687.66,
+      "duration": 2.88,
+      "text": "and if you think you can also come you"
+    },
+    {
+      "start": 689.339,
+      "duration": 2.581,
+      "text": "can also revert your commit and go back"
+    },
+    {
+      "start": 690.54,
+      "duration": 3.299,
+      "text": "to the previous version right now if you"
+    },
+    {
+      "start": 691.92,
+      "duration": 3.9,
+      "text": "see there's a u here which means"
+    },
+    {
+      "start": 693.839,
+      "duration": 3.421,
+      "text": "untracked file you get has interacted"
+    },
+    {
+      "start": 695.82,
+      "duration": 3.24,
+      "text": "you have made a change you have modified"
+    },
+    {
+      "start": 697.26,
+      "duration": 3.9,
+      "text": "something but there's no track of it so"
+    },
+    {
+      "start": 699.06,
+      "duration": 4.019,
+      "text": "to to see now that we added a file this"
+    },
+    {
+      "start": 701.16,
+      "duration": 4.08,
+      "text": "which is not there in our repository how"
+    },
+    {
+      "start": 703.079,
+      "duration": 4.081,
+      "text": "do we push it so remember get add get"
+    },
+    {
+      "start": 705.24,
+      "duration": 3.599,
+      "text": "commit get push these are three steps"
+    },
+    {
+      "start": 707.16,
+      "duration": 3.299,
+      "text": "but now if I want to see what is the"
+    },
+    {
+      "start": 708.839,
+      "duration": 4.081,
+      "text": "change made here I can then get status"
+    },
+    {
+      "start": 710.459,
+      "duration": 3.901,
+      "text": "command this command will tell me"
+    },
+    {
+      "start": 712.92,
+      "duration": 3.479,
+      "text": "this command is telling me that you're"
+    },
+    {
+      "start": 714.36,
+      "duration": 3.84,
+      "text": "on main you're on the master branch and"
+    },
+    {
+      "start": 716.399,
+      "duration": 3.241,
+      "text": "then you have a filing Creator which is"
+    },
+    {
+      "start": 718.2,
+      "duration": 2.639,
+      "text": "after five which hasn't been tracked so"
+    },
+    {
+      "start": 719.64,
+      "duration": 2.939,
+      "text": "to track it you need to run the command"
+    },
+    {
+      "start": 720.839,
+      "duration": 3.361,
+      "text": "get add and the name of the file so I"
+    },
+    {
+      "start": 722.579,
+      "duration": 4.141,
+      "text": "can say get add name of the file which"
+    },
+    {
+      "start": 724.2,
+      "duration": 4.8,
+      "text": "is app.pi but I can also say git add dot"
+    },
+    {
+      "start": 726.72,
+      "duration": 3.6,
+      "text": "which means track all the files present"
+    },
+    {
+      "start": 729.0,
+      "duration": 3.06,
+      "text": "in this cartoon folder which hasn't been"
+    },
+    {
+      "start": 730.32,
+      "duration": 3.36,
+      "text": "tracked yet so when I do get add dot it"
+    },
+    {
+      "start": 732.06,
+      "duration": 3.18,
+      "text": "will put the app.pi in the staging area"
+    },
+    {
+      "start": 733.68,
+      "duration": 3.24,
+      "text": "what do you mean by staging area let me"
+    },
+    {
+      "start": 735.24,
+      "duration": 3.659,
+      "text": "help you understand that so if I show"
+    },
+    {
+      "start": 736.92,
+      "duration": 3.96,
+      "text": "you the git workflow if you look at this"
+    },
+    {
+      "start": 738.899,
+      "duration": 3.421,
+      "text": "diagram here uh"
+    },
+    {
+      "start": 740.88,
+      "duration": 2.82,
+      "text": "this is our local machine this is a"
+    },
+    {
+      "start": 742.32,
+      "duration": 2.519,
+      "text": "remote repository whenever I want to"
+    },
+    {
+      "start": 743.7,
+      "duration": 2.94,
+      "text": "push some things from my local machine"
+    },
+    {
+      "start": 744.839,
+      "duration": 3.361,
+      "text": "to repository I need to First say git"
+    },
+    {
+      "start": 746.64,
+      "duration": 2.759,
+      "text": "add when I do get that it is going to be"
+    },
+    {
+      "start": 748.2,
+      "duration": 3.0,
+      "text": "tracked and put in the staging area"
+    },
+    {
+      "start": 749.399,
+      "duration": 3.481,
+      "text": "after it is in staging area I can do it"
+    },
+    {
+      "start": 751.2,
+      "duration": 3.3,
+      "text": "comment to put it in local repo and then"
+    },
+    {
+      "start": 752.88,
+      "duration": 3.12,
+      "text": "get pushed to put it in on GitHub"
+    },
+    {
+      "start": 754.5,
+      "duration": 3.72,
+      "text": "repository this is what we are doing so"
+    },
+    {
+      "start": 756.0,
+      "duration": 3.899,
+      "text": "get that get commit get push now we have"
+    },
+    {
+      "start": 758.22,
+      "duration": 4.02,
+      "text": "this file created which is not in our"
+    },
+    {
+      "start": 759.899,
+      "duration": 4.44,
+      "text": "room which is not in a GitHub repository"
+    },
+    {
+      "start": 762.24,
+      "duration": 3.36,
+      "text": "so I can say git add Dot and now if I do"
+    },
+    {
+      "start": 764.339,
+      "duration": 3.06,
+      "text": "get status you will see the change in"
+    },
+    {
+      "start": 765.6,
+      "duration": 3.239,
+      "text": "the status now so once I took it status"
+    },
+    {
+      "start": 767.399,
+      "duration": 3.12,
+      "text": "it says your branch is up to date and"
+    },
+    {
+      "start": 768.839,
+      "duration": 4.021,
+      "text": "change is has been committed so you have"
+    },
+    {
+      "start": 770.519,
+      "duration": 3.481,
+      "text": "the color has been changed from red to"
+    },
+    {
+      "start": 772.86,
+      "duration": 2.82,
+      "text": "Green which means you have added the"
+    },
+    {
+      "start": 774.0,
+      "duration": 4.8,
+      "text": "fire and staging area you can do git"
+    },
+    {
+      "start": 775.68,
+      "duration": 7.14,
+      "text": "commit and hyphen M to say what you have"
+    },
+    {
+      "start": 778.8,
+      "duration": 5.82,
+      "text": "made so I can see I added add app.py"
+    },
+    {
+      "start": 782.82,
+      "duration": 3.54,
+      "text": "once I do this I can press enter which"
+    },
+    {
+      "start": 784.62,
+      "duration": 3.18,
+      "text": "means I have created a comment let's try"
+    },
+    {
+      "start": 786.36,
+      "duration": 3.9,
+      "text": "to push it so the push command is get"
+    },
+    {
+      "start": 787.8,
+      "duration": 4.62,
+      "text": "push hyphen U origin and the name of the"
+    },
+    {
+      "start": 790.26,
+      "duration": 4.259,
+      "text": "branches Master once I press enter this"
+    },
+    {
+      "start": 792.42,
+      "duration": 3.719,
+      "text": "file app.pi so you can see the U has"
+    },
+    {
+      "start": 794.519,
+      "duration": 3.12,
+      "text": "been gone which means it is tracked and"
+    },
+    {
+      "start": 796.139,
+      "duration": 3.541,
+      "text": "it has been pushed I can confirm by"
+    },
+    {
+      "start": 797.639,
+      "duration": 4.5,
+      "text": "going to my repository so right now it"
+    },
+    {
+      "start": 799.68,
+      "duration": 4.62,
+      "text": "says readme.md only one file but if I"
+    },
+    {
+      "start": 802.139,
+      "duration": 4.14,
+      "text": "refresh I should be able to see two"
+    },
+    {
+      "start": 804.3,
+      "duration": 3.719,
+      "text": "files so this is a new file which has"
+    },
+    {
+      "start": 806.279,
+      "duration": 3.24,
+      "text": "been added this is the commit message"
+    },
+    {
+      "start": 808.019,
+      "duration": 3.421,
+      "text": "and you can see this is the commit"
+    },
+    {
+      "start": 809.519,
+      "duration": 3.601,
+      "text": "number here and it has been pushed now"
+    },
+    {
+      "start": 811.44,
+      "duration": 2.76,
+      "text": "there are two comments in total I can"
+    },
+    {
+      "start": 813.12,
+      "duration": 2.58,
+      "text": "see all the different comments and what"
+    },
+    {
+      "start": 814.2,
+      "duration": 3.36,
+      "text": "change has been made so if I show you"
+    },
+    {
+      "start": 815.7,
+      "duration": 3.72,
+      "text": "here this says green in color which"
+    },
+    {
+      "start": 817.56,
+      "duration": 3.24,
+      "text": "means this thing has been added if I try"
+    },
+    {
+      "start": 819.42,
+      "duration": 3.84,
+      "text": "to edit something if I try to make it"
+    },
+    {
+      "start": 820.8,
+      "duration": 4.56,
+      "text": "this is my third version and save this"
+    },
+    {
+      "start": 823.26,
+      "duration": 3.6,
+      "text": "file now you can see this is uncommitted"
+    },
+    {
+      "start": 825.36,
+      "duration": 4.14,
+      "text": "change or it has been modified m stands"
+    },
+    {
+      "start": 826.86,
+      "duration": 3.719,
+      "text": "for modified right so now the thing has"
+    },
+    {
+      "start": 829.5,
+      "duration": 3.42,
+      "text": "been modified if I want to push this"
+    },
+    {
+      "start": 830.579,
+      "duration": 4.921,
+      "text": "modified change on on GitHub I can do"
+    },
+    {
+      "start": 832.92,
+      "duration": 5.94,
+      "text": "the same thing git add dot then get"
+    },
+    {
+      "start": 835.5,
+      "duration": 6.24,
+      "text": "commit hyphen M which is modified to"
+    },
+    {
+      "start": 838.86,
+      "duration": 5.479,
+      "text": "file so modify app.py and then once I do"
+    },
+    {
+      "start": 841.74,
+      "duration": 6.18,
+      "text": "this I'm going to say get push"
+    },
+    {
+      "start": 844.339,
+      "duration": 5.981,
+      "text": "is Master once I run this it will show"
+    },
+    {
+      "start": 847.92,
+      "duration": 3.78,
+      "text": "me a new comment so let's go back and"
+    },
+    {
+      "start": 850.32,
+      "duration": 3.0,
+      "text": "refresh this page you will see a new"
+    },
+    {
+      "start": 851.7,
+      "duration": 3.72,
+      "text": "comment appearing here which is modify"
+    },
+    {
+      "start": 853.32,
+      "duration": 3.54,
+      "text": "update by so git is able to"
+    },
+    {
+      "start": 855.42,
+      "duration": 2.82,
+      "text": "keep different versions and you can see"
+    },
+    {
+      "start": 856.86,
+      "duration": 2.88,
+      "text": "the comment message here and you can see"
+    },
+    {
+      "start": 858.24,
+      "duration": 3.0,
+      "text": "what change has been made so it changes"
+    },
+    {
+      "start": 859.74,
+      "duration": 3.18,
+      "text": "earlier it was second now it is third"
+    },
+    {
+      "start": 861.24,
+      "duration": 3.3,
+      "text": "version this is how you will be pushing"
+    },
+    {
+      "start": 862.92,
+      "duration": 4.2,
+      "text": "and if I show you the different branches"
+    },
+    {
+      "start": 864.54,
+      "duration": 4.68,
+      "text": "I have in my particular repo so right"
+    },
+    {
+      "start": 867.12,
+      "duration": 3.659,
+      "text": "now I only have one branch and whenever"
+    },
+    {
+      "start": 869.22,
+      "duration": 3.96,
+      "text": "you work in a company you should never"
+    },
+    {
+      "start": 870.779,
+      "duration": 3.841,
+      "text": "ever push your things in a master Branch"
+    },
+    {
+      "start": 873.18,
+      "duration": 3.36,
+      "text": "you should always create your own branch"
+    },
+    {
+      "start": 874.62,
+      "duration": 3.48,
+      "text": "and push things on it because usually on"
+    },
+    {
+      "start": 876.54,
+      "duration": 3.12,
+      "text": "the master Branch you have cicd enabled"
+    },
+    {
+      "start": 878.1,
+      "duration": 2.82,
+      "text": "and if you make changes here it can be"
+    },
+    {
+      "start": 879.66,
+      "duration": 3.179,
+      "text": "directly applied on your production"
+    },
+    {
+      "start": 880.92,
+      "duration": 4.2,
+      "text": "which can break your production or bring"
+    },
+    {
+      "start": 882.839,
+      "duration": 3.721,
+      "text": "it down so you should always create a"
+    },
+    {
+      "start": 885.12,
+      "duration": 2.82,
+      "text": "new branch and then merge the changes if"
+    },
+    {
+      "start": 886.56,
+      "duration": 3.06,
+      "text": "everything is okay let me show you how"
+    },
+    {
+      "start": 887.94,
+      "duration": 2.459,
+      "text": "you will be doing that right if I show"
+    },
+    {
+      "start": 889.62,
+      "duration": 2.279,
+      "text": "you"
+    },
+    {
+      "start": 890.399,
+      "duration": 3.421,
+      "text": "if I don't get Branch command to check"
+    },
+    {
+      "start": 891.899,
+      "duration": 3.601,
+      "text": "which branch am I on I can see there's a"
+    },
+    {
+      "start": 893.82,
+      "duration": 3.0,
+      "text": "master Branch I'm working on so let's"
+    },
+    {
+      "start": 895.5,
+      "duration": 2.399,
+      "text": "get a price for ourselves I'm going to"
+    },
+    {
+      "start": 896.82,
+      "duration": 2.94,
+      "text": "create a new Branch you will be saying"
+    },
+    {
+      "start": 897.899,
+      "duration": 3.721,
+      "text": "git branch and the name of the branch so"
+    },
+    {
+      "start": 899.76,
+      "duration": 3.42,
+      "text": "let's say cloud chat"
+    },
+    {
+      "start": 901.62,
+      "duration": 3.12,
+      "text": "once I do this it is going to create a"
+    },
+    {
+      "start": 903.18,
+      "duration": 3.18,
+      "text": "branch but it has not changed it if I do"
+    },
+    {
+      "start": 904.74,
+      "duration": 3.18,
+      "text": "get Branch it is still using the master"
+    },
+    {
+      "start": 906.36,
+      "duration": 3.06,
+      "text": "punch if you want to switch a branch"
+    },
+    {
+      "start": 907.92,
+      "duration": 3.779,
+      "text": "from one branch to another you need to"
+    },
+    {
+      "start": 909.42,
+      "duration": 4.5,
+      "text": "use git checkout command so git check"
+    },
+    {
+      "start": 911.699,
+      "duration": 4.5,
+      "text": "out Hi and then name of the branch which"
+    },
+    {
+      "start": 913.92,
+      "duration": 3.719,
+      "text": "is cloud champ once I do this it has"
+    },
+    {
+      "start": 916.199,
+      "duration": 2.82,
+      "text": "switched my Branch from Master to Cloud"
+    },
+    {
+      "start": 917.639,
+      "duration": 3.241,
+      "text": "champ and you can confirm that by"
+    },
+    {
+      "start": 919.019,
+      "duration": 3.32,
+      "text": "running git Branch once you create a"
+    },
+    {
+      "start": 920.88,
+      "duration": 3.84,
+      "text": "branch it will not be shown on your"
+    },
+    {
+      "start": 922.339,
+      "duration": 4.481,
+      "text": "GitHub unless you push your things there"
+    },
+    {
+      "start": 924.72,
+      "duration": 6.479,
+      "text": "so let's try to make a change so let's"
+    },
+    {
+      "start": 926.82,
+      "duration": 6.42,
+      "text": "say this is my fourth version in"
+    },
+    {
+      "start": 931.199,
+      "duration": 4.44,
+      "text": "Cloud champ"
+    },
+    {
+      "start": 933.24,
+      "duration": 5.099,
+      "text": "branch"
+    },
+    {
+      "start": 935.639,
+      "duration": 4.5,
+      "text": "right now I want to get this thing to be"
+    },
+    {
+      "start": 938.339,
+      "duration": 3.421,
+      "text": "pushed in my GitHub usually it is"
+    },
+    {
+      "start": 940.139,
+      "duration": 3.361,
+      "text": "modified I want this to be pushed in my"
+    },
+    {
+      "start": 941.76,
+      "duration": 3.12,
+      "text": "GitHub in my own Branch not in the"
+    },
+    {
+      "start": 943.5,
+      "duration": 3.899,
+      "text": "master Branch so I'm going to say git"
+    },
+    {
+      "start": 944.88,
+      "duration": 4.699,
+      "text": "add same as I did for master plan so"
+    },
+    {
+      "start": 947.399,
+      "duration": 4.68,
+      "text": "guitar dot which means which will add"
+    },
+    {
+      "start": 949.579,
+      "duration": 3.94,
+      "text": "this in the staging area so get status"
+    },
+    {
+      "start": 952.079,
+      "duration": 2.94,
+      "text": "which says that this has modified and"
+    },
+    {
+      "start": 953.519,
+      "duration": 2.76,
+      "text": "added in the stitching area which has to"
+    },
+    {
+      "start": 955.019,
+      "duration": 4.5,
+      "text": "be committed so I'm going to say get"
+    },
+    {
+      "start": 956.279,
+      "duration": 4.62,
+      "text": "comment hyphen M and put the message in"
+    },
+    {
+      "start": 959.519,
+      "duration": 3.801,
+      "text": "double quotes so it can be anything any"
+    },
+    {
+      "start": 960.899,
+      "duration": 4.081,
+      "text": "message let's say"
+    },
+    {
+      "start": 963.32,
+      "duration": 4.12,
+      "text": "adding"
+    },
+    {
+      "start": 964.98,
+      "duration": 5.159,
+      "text": "add app.pi"
+    },
+    {
+      "start": 967.44,
+      "duration": 4.32,
+      "text": "in Cloud champ"
+    },
+    {
+      "start": 970.139,
+      "duration": 3.481,
+      "text": "notch"
+    },
+    {
+      "start": 971.76,
+      "duration": 3.24,
+      "text": "once I do this and press enter it will"
+    },
+    {
+      "start": 973.62,
+      "duration": 2.94,
+      "text": "be committed let's push it so to push"
+    },
+    {
+      "start": 975.0,
+      "duration": 3.66,
+      "text": "you need to run the same command but"
+    },
+    {
+      "start": 976.56,
+      "duration": 4.079,
+      "text": "change the branch name so I earlier I"
+    },
+    {
+      "start": 978.66,
+      "duration": 3.6,
+      "text": "was using get push hyphen U origin"
+    },
+    {
+      "start": 980.639,
+      "duration": 3.901,
+      "text": "Master but now I'm going to say get push"
+    },
+    {
+      "start": 982.26,
+      "duration": 3.54,
+      "text": "hyphen e origin Cloud champ to push that"
+    },
+    {
+      "start": 984.54,
+      "duration": 2.94,
+      "text": "particular thing in a particular branch"
+    },
+    {
+      "start": 985.8,
+      "duration": 3.659,
+      "text": "which is cloud Champion once I press"
+    },
+    {
+      "start": 987.48,
+      "duration": 3.659,
+      "text": "enter you can see it starts pushing and"
+    },
+    {
+      "start": 989.459,
+      "duration": 2.82,
+      "text": "then it has pushed it let's try to"
+    },
+    {
+      "start": 991.139,
+      "duration": 3.481,
+      "text": "refresh and you can see this message"
+    },
+    {
+      "start": 992.279,
+      "duration": 3.961,
+      "text": "appeared here it says Cloud champ has"
+    },
+    {
+      "start": 994.62,
+      "duration": 3.12,
+      "text": "recent pushes less than a minute ago"
+    },
+    {
+      "start": 996.24,
+      "duration": 3.18,
+      "text": "which means if I refresh the page I"
+    },
+    {
+      "start": 997.74,
+      "duration": 3.48,
+      "text": "should see two branches rather than once"
+    },
+    {
+      "start": 999.42,
+      "duration": 3.06,
+      "text": "so you can see it says two branches the"
+    },
+    {
+      "start": 1001.22,
+      "duration": 3.6,
+      "text": "first branch is Master second is cloud"
+    },
+    {
+      "start": 1002.48,
+      "duration": 3.84,
+      "text": "champ so in the in the master Branch"
+    },
+    {
+      "start": 1004.82,
+      "duration": 2.879,
+      "text": "there is nothing it's the same as it was"
+    },
+    {
+      "start": 1006.32,
+      "duration": 3.36,
+      "text": "earlier which is this is my third"
+    },
+    {
+      "start": 1007.699,
+      "duration": 3.721,
+      "text": "version but if I show you the same file"
+    },
+    {
+      "start": 1009.68,
+      "duration": 3.48,
+      "text": "in Cloud shap it will have a different"
+    },
+    {
+      "start": 1011.42,
+      "duration": 3.3,
+      "text": "version which means you can work on"
+    },
+    {
+      "start": 1013.16,
+      "duration": 3.359,
+      "text": "features and bugs on your different"
+    },
+    {
+      "start": 1014.72,
+      "duration": 3.419,
+      "text": "branches without affecting the without"
+    },
+    {
+      "start": 1016.519,
+      "duration": 3.661,
+      "text": "affecting uh the main branch or the"
+    },
+    {
+      "start": 1018.139,
+      "duration": 3.241,
+      "text": "master Branch so this is the change in"
+    },
+    {
+      "start": 1020.18,
+      "duration": 3.12,
+      "text": "the cloud champ you can see it says this"
+    },
+    {
+      "start": 1021.38,
+      "duration": 3.539,
+      "text": "is my fourth version Branch if I want"
+    },
+    {
+      "start": 1023.3,
+      "duration": 3.36,
+      "text": "these things to be replicated in the"
+    },
+    {
+      "start": 1024.919,
+      "duration": 3.42,
+      "text": "main branch or in the master Branch I"
+    },
+    {
+      "start": 1026.66,
+      "duration": 3.48,
+      "text": "need to merge it and how do you do that"
+    },
+    {
+      "start": 1028.339,
+      "duration": 3.421,
+      "text": "so the best proper way is to create a"
+    },
+    {
+      "start": 1030.14,
+      "duration": 3.179,
+      "text": "merge is to create a pull request so you"
+    },
+    {
+      "start": 1031.76,
+      "duration": 2.64,
+      "text": "see this build request option here you"
+    },
+    {
+      "start": 1033.319,
+      "duration": 2.64,
+      "text": "can click on compare and pull request"
+    },
+    {
+      "start": 1034.4,
+      "duration": 2.939,
+      "text": "let me give you a scenario let's say you"
+    },
+    {
+      "start": 1035.959,
+      "duration": 2.88,
+      "text": "are working as a devops engineer or a"
+    },
+    {
+      "start": 1037.339,
+      "duration": 3.36,
+      "text": "developer and someone who asked you to"
+    },
+    {
+      "start": 1038.839,
+      "duration": 3.72,
+      "text": "make a change in the repository and Pull"
+    },
+    {
+      "start": 1040.699,
+      "duration": 3.781,
+      "text": "and push it so you will create a branch"
+    },
+    {
+      "start": 1042.559,
+      "duration": 4.321,
+      "text": "same as we did here by running it Branch"
+    },
+    {
+      "start": 1044.48,
+      "duration": 3.54,
+      "text": "command uh get Branch name of the branch"
+    },
+    {
+      "start": 1046.88,
+      "duration": 2.7,
+      "text": "to create a new Branch then get check"
+    },
+    {
+      "start": 1048.02,
+      "duration": 3.659,
+      "text": "out to switch here to your branch make"
+    },
+    {
+      "start": 1049.58,
+      "duration": 3.599,
+      "text": "the change push it and then create a"
+    },
+    {
+      "start": 1051.679,
+      "duration": 5.461,
+      "text": "pull request like this so you can Define"
+    },
+    {
+      "start": 1053.179,
+      "duration": 7.101,
+      "text": "what you made so this is the change made"
+    },
+    {
+      "start": 1057.14,
+      "duration": 3.14,
+      "text": "for our fourth version"
+    },
+    {
+      "start": 1060.44,
+      "duration": 4.32,
+      "text": "please review and a merge so once you do"
+    },
+    {
+      "start": 1064.039,
+      "duration": 3.121,
+      "text": "this"
+    },
+    {
+      "start": 1064.76,
+      "duration": 3.659,
+      "text": "please review and merge once you do this"
+    },
+    {
+      "start": 1067.16,
+      "duration": 2.46,
+      "text": "you can click on create pull request and"
+    },
+    {
+      "start": 1068.419,
+      "duration": 3.361,
+      "text": "you can also see the things and the"
+    },
+    {
+      "start": 1069.62,
+      "duration": 3.6,
+      "text": "changes made so the change is this in"
+    },
+    {
+      "start": 1071.78,
+      "duration": 3.12,
+      "text": "the main other Master you have this but"
+    },
+    {
+      "start": 1073.22,
+      "duration": 4.26,
+      "text": "in outram you have this so you can"
+    },
+    {
+      "start": 1074.9,
+      "duration": 4.26,
+      "text": "compare and then after you give create"
+    },
+    {
+      "start": 1077.48,
+      "duration": 3.9,
+      "text": "the school request you can give this to"
+    },
+    {
+      "start": 1079.16,
+      "duration": 4.56,
+      "text": "anyone who can approve it so you could"
+    },
+    {
+      "start": 1081.38,
+      "duration": 3.72,
+      "text": "have to copy this link and share it to"
+    },
+    {
+      "start": 1083.72,
+      "duration": 3.6,
+      "text": "person who can review it so once"
+    },
+    {
+      "start": 1085.1,
+      "duration": 3.36,
+      "text": "everything is reviewed let's say your"
+    },
+    {
+      "start": 1087.32,
+      "duration": 2.76,
+      "text": "manager has reviewed and everything is"
+    },
+    {
+      "start": 1088.46,
+      "duration": 2.82,
+      "text": "okay you can then click on multiple"
+    },
+    {
+      "start": 1090.08,
+      "duration": 2.459,
+      "text": "request once I click on merge will"
+    },
+    {
+      "start": 1091.28,
+      "duration": 2.82,
+      "text": "request everything in the cloud sham"
+    },
+    {
+      "start": 1092.539,
+      "duration": 2.941,
+      "text": "Branch will be transferred to the main"
+    },
+    {
+      "start": 1094.1,
+      "duration": 3.06,
+      "text": "branch or it will be merged inside the"
+    },
+    {
+      "start": 1095.48,
+      "duration": 3.18,
+      "text": "main branch so I can either do this from"
+    },
+    {
+      "start": 1097.16,
+      "duration": 3.78,
+      "text": "here or I can run the command which is"
+    },
+    {
+      "start": 1098.66,
+      "duration": 3.6,
+      "text": "git merge let me show you that so if I"
+    },
+    {
+      "start": 1100.94,
+      "duration": 2.76,
+      "text": "show you this is the command which means"
+    },
+    {
+      "start": 1102.26,
+      "duration": 2.82,
+      "text": "join two or more development histories"
+    },
+    {
+      "start": 1103.7,
+      "duration": 2.76,
+      "text": "together you can do it through the UI"
+    },
+    {
+      "start": 1105.08,
+      "duration": 3.78,
+      "text": "which is more easy so once I click on"
+    },
+    {
+      "start": 1106.46,
+      "duration": 5.64,
+      "text": "merge pull request I can then click on"
+    },
+    {
+      "start": 1108.86,
+      "duration": 4.679,
+      "text": "confirm merge and now if you see merge"
+    },
+    {
+      "start": 1112.1,
+      "duration": 3.0,
+      "text": "has been done into the master from the"
+    },
+    {
+      "start": 1113.539,
+      "duration": 3.541,
+      "text": "cloud champ so let me show you the"
+    },
+    {
+      "start": 1115.1,
+      "duration": 4.199,
+      "text": "master Branch now"
+    },
+    {
+      "start": 1117.08,
+      "duration": 3.719,
+      "text": "inside Master Branch you can see the"
+    },
+    {
+      "start": 1119.299,
+      "duration": 3.24,
+      "text": "change has been shown and this is Master"
+    },
+    {
+      "start": 1120.799,
+      "duration": 4.201,
+      "text": "Branch this is how you will be creating"
+    },
+    {
+      "start": 1122.539,
+      "duration": 4.5,
+      "text": "pull request to make sure your changes"
+    },
+    {
+      "start": 1125.0,
+      "duration": 3.419,
+      "text": "are create are created and merged"
+    },
+    {
+      "start": 1127.039,
+      "duration": 3.841,
+      "text": "properly without affecting any Master"
+    },
+    {
+      "start": 1128.419,
+      "duration": 3.601,
+      "text": "Branch this is very very crucial so you"
+    },
+    {
+      "start": 1130.88,
+      "duration": 3.299,
+      "text": "need to understand how to create pull"
+    },
+    {
+      "start": 1132.02,
+      "duration": 3.779,
+      "text": "request and how to merge them properly"
+    },
+    {
+      "start": 1134.179,
+      "duration": 3.36,
+      "text": "you will not be merging them in your"
+    },
+    {
+      "start": 1135.799,
+      "duration": 3.181,
+      "text": "company maybe your senior managers or"
+    },
+    {
+      "start": 1137.539,
+      "duration": 3.121,
+      "text": "your senior devops Engineers will be"
+    },
+    {
+      "start": 1138.98,
+      "duration": 3.12,
+      "text": "doing it but this is a proper way of how"
+    },
+    {
+      "start": 1140.66,
+      "duration": 2.94,
+      "text": "you can create a change without"
+    },
+    {
+      "start": 1142.1,
+      "duration": 3.0,
+      "text": "affecting the main or the master branch"
+    },
+    {
+      "start": 1143.6,
+      "duration": 4.26,
+      "text": "and you need to understand this because"
+    },
+    {
+      "start": 1145.1,
+      "duration": 4.56,
+      "text": "this is very very important all right so"
+    },
+    {
+      "start": 1147.86,
+      "duration": 3.12,
+      "text": "now that we have more requests you can"
+    },
+    {
+      "start": 1149.66,
+      "duration": 2.519,
+      "text": "learn about you can learn more about"
+    },
+    {
+      "start": 1150.98,
+      "duration": 2.699,
+      "text": "full request here and the difference"
+    },
+    {
+      "start": 1152.179,
+      "duration": 4.021,
+      "text": "between pull request and merge request"
+    },
+    {
+      "start": 1153.679,
+      "duration": 4.321,
+      "text": "is nothing uh they both are the same"
+    },
+    {
+      "start": 1156.2,
+      "duration": 3.24,
+      "text": "thing just in GitHub if you create a"
+    },
+    {
+      "start": 1158.0,
+      "duration": 3.299,
+      "text": "pull request if you created the question"
+    },
+    {
+      "start": 1159.44,
+      "duration": 2.94,
+      "text": "is a full request if you use gitlab same"
+    },
+    {
+      "start": 1161.299,
+      "duration": 3.421,
+      "text": "thing is called as merge request in"
+    },
+    {
+      "start": 1162.38,
+      "duration": 3.659,
+      "text": "gitlab so both of the uh terms are"
+    },
+    {
+      "start": 1164.72,
+      "duration": 3.12,
+      "text": "different but actually do the same thing"
+    },
+    {
+      "start": 1166.039,
+      "duration": 3.961,
+      "text": "so whenever you want to merge your"
+    },
+    {
+      "start": 1167.84,
+      "duration": 3.6,
+      "text": "particular Branch into the main you can"
+    },
+    {
+      "start": 1170.0,
+      "duration": 2.82,
+      "text": "either create pull request in GitHub or"
+    },
+    {
+      "start": 1171.44,
+      "duration": 2.82,
+      "text": "you can create more as a question gitlab"
+    },
+    {
+      "start": 1172.82,
+      "duration": 3.54,
+      "text": "so they don't they both do the same"
+    },
+    {
+      "start": 1174.26,
+      "duration": 4.26,
+      "text": "thing but the names are different so"
+    },
+    {
+      "start": 1176.36,
+      "duration": 3.42,
+      "text": "pull request lets you tell lets you tell"
+    },
+    {
+      "start": 1178.52,
+      "duration": 3.06,
+      "text": "others about changes you have pushed to"
+    },
+    {
+      "start": 1179.78,
+      "duration": 4.08,
+      "text": "the branch in the repository so you can"
+    },
+    {
+      "start": 1181.58,
+      "duration": 3.599,
+      "text": "create it to just merge your Branch from"
+    },
+    {
+      "start": 1183.86,
+      "duration": 3.42,
+      "text": "your branch to the main branch this is"
+    },
+    {
+      "start": 1185.179,
+      "duration": 3.36,
+      "text": "what pull request actually is you have"
+    },
+    {
+      "start": 1187.28,
+      "duration": 3.3,
+      "text": "understood how to create a file and then"
+    },
+    {
+      "start": 1188.539,
+      "duration": 3.781,
+      "text": "get add get comment get pushed to have"
+    },
+    {
+      "start": 1190.58,
+      "duration": 3.479,
+      "text": "that file from your local machine into"
+    },
+    {
+      "start": 1192.32,
+      "duration": 3.54,
+      "text": "your remote repository let's try to get"
+    },
+    {
+      "start": 1194.059,
+      "duration": 4.201,
+      "text": "this code on some other machine so I'm"
+    },
+    {
+      "start": 1195.86,
+      "duration": 3.9,
+      "text": "going to go to my AWS dashboard"
+    },
+    {
+      "start": 1198.26,
+      "duration": 3.419,
+      "text": "to show you how you can get the code"
+    },
+    {
+      "start": 1199.76,
+      "duration": 4.38,
+      "text": "from your GitHub repository to your"
+    },
+    {
+      "start": 1201.679,
+      "duration": 3.781,
+      "text": "local machine so we have now understood"
+    },
+    {
+      "start": 1204.14,
+      "duration": 3.48,
+      "text": "how to push your code from your local"
+    },
+    {
+      "start": 1205.46,
+      "duration": 3.599,
+      "text": "machine to GitHub repositories but how"
+    },
+    {
+      "start": 1207.62,
+      "duration": 3.36,
+      "text": "can you clone your code in different"
+    },
+    {
+      "start": 1209.059,
+      "duration": 3.421,
+      "text": "machine let's say a developer has made"
+    },
+    {
+      "start": 1210.98,
+      "duration": 3.48,
+      "text": "some change and you as a devops engineer"
+    },
+    {
+      "start": 1212.48,
+      "duration": 3.54,
+      "text": "have to get the code in your server or"
+    },
+    {
+      "start": 1214.46,
+      "duration": 3.42,
+      "text": "on your local machine so to test that"
+    },
+    {
+      "start": 1216.02,
+      "duration": 3.72,
+      "text": "out I'm going to get the code from here"
+    },
+    {
+      "start": 1217.88,
+      "duration": 3.299,
+      "text": "into my ec2 instance this is my ec2"
+    },
+    {
+      "start": 1219.74,
+      "duration": 3.179,
+      "text": "instance which is all fresh so I don't"
+    },
+    {
+      "start": 1221.179,
+      "duration": 3.721,
+      "text": "have any files inside it node folders"
+    },
+    {
+      "start": 1222.919,
+      "duration": 3.721,
+      "text": "let me see if it is installed or not so"
+    },
+    {
+      "start": 1224.9,
+      "duration": 3.48,
+      "text": "I'm going to maximize the screen and"
+    },
+    {
+      "start": 1226.64,
+      "duration": 3.0,
+      "text": "type get if I press get and get all"
+    },
+    {
+      "start": 1228.38,
+      "duration": 2.58,
+      "text": "these commands which means it is"
+    },
+    {
+      "start": 1229.64,
+      "duration": 4.08,
+      "text": "installed if it is not installed for you"
+    },
+    {
+      "start": 1230.96,
+      "duration": 5.28,
+      "text": "you can just do sudo apt install get"
+    },
+    {
+      "start": 1233.72,
+      "duration": 4.02,
+      "text": "hyphen y this is Ubuntu so I'm using apt"
+    },
+    {
+      "start": 1236.24,
+      "duration": 3.42,
+      "text": "if it was something else I would have"
+    },
+    {
+      "start": 1237.74,
+      "duration": 3.6,
+      "text": "used different but it says it is already"
+    },
+    {
+      "start": 1239.66,
+      "duration": 2.82,
+      "text": "newest version so I can start working"
+    },
+    {
+      "start": 1241.34,
+      "duration": 2.64,
+      "text": "with Git"
+    },
+    {
+      "start": 1242.48,
+      "duration": 3.24,
+      "text": "so for you to get the code from your"
+    },
+    {
+      "start": 1243.98,
+      "duration": 4.02,
+      "text": "repository to your local machine so the"
+    },
+    {
+      "start": 1245.72,
+      "duration": 3.18,
+      "text": "code is present here I want this code in"
+    },
+    {
+      "start": 1248.0,
+      "duration": 3.059,
+      "text": "my"
+    },
+    {
+      "start": 1248.9,
+      "duration": 3.84,
+      "text": "in myself Warrior so how can I do this"
+    },
+    {
+      "start": 1251.059,
+      "duration": 3.721,
+      "text": "to get the code to click on this option"
+    },
+    {
+      "start": 1252.74,
+      "duration": 3.9,
+      "text": "here and you can choose on clone so"
+    },
+    {
+      "start": 1254.78,
+      "duration": 3.779,
+      "text": "cloning the means getting the code to"
+    },
+    {
+      "start": 1256.64,
+      "duration": 3.419,
+      "text": "your server so there are three options"
+    },
+    {
+      "start": 1258.559,
+      "duration": 4.74,
+      "text": "for you I can you can either use https"
+    },
+    {
+      "start": 1260.059,
+      "duration": 5.641,
+      "text": "SSH or GitHub CLI https it requires you"
+    },
+    {
+      "start": 1263.299,
+      "duration": 3.541,
+      "text": "to have password and username if it is a"
+    },
+    {
+      "start": 1265.7,
+      "duration": 3.359,
+      "text": "private repository if it is a public one"
+    },
+    {
+      "start": 1266.84,
+      "duration": 4.44,
+      "text": "you don't require that SSH will use will"
+    },
+    {
+      "start": 1269.059,
+      "duration": 3.781,
+      "text": "require you to add the SSH key and then"
+    },
+    {
+      "start": 1271.28,
+      "duration": 3.12,
+      "text": "you have GitHub CLI which we are not"
+    },
+    {
+      "start": 1272.84,
+      "duration": 3.36,
+      "text": "going to use so let's use the https"
+    },
+    {
+      "start": 1274.4,
+      "duration": 3.72,
+      "text": "option and this is a public repository"
+    },
+    {
+      "start": 1276.2,
+      "duration": 3.24,
+      "text": "so I don't need to do anything to get"
+    },
+    {
+      "start": 1278.12,
+      "duration": 3.36,
+      "text": "the to get the code you need to run the"
+    },
+    {
+      "start": 1279.44,
+      "duration": 3.72,
+      "text": "command get close and paste what you"
+    },
+    {
+      "start": 1281.48,
+      "duration": 4.02,
+      "text": "copied which is the link so once I press"
+    },
+    {
+      "start": 1283.16,
+      "duration": 5.16,
+      "text": "enter it will start cloning and now if I"
+    },
+    {
+      "start": 1285.5,
+      "duration": 4.38,
+      "text": "do LS I should see a folder I should see"
+    },
+    {
+      "start": 1288.32,
+      "duration": 3.0,
+      "text": "a folder named as learning git which"
+    },
+    {
+      "start": 1289.88,
+      "duration": 2.46,
+      "text": "should have all the files so if I do LS"
+    },
+    {
+      "start": 1291.32,
+      "duration": 2.7,
+      "text": "you can see the photo name that's"
+    },
+    {
+      "start": 1292.34,
+      "duration": 3.36,
+      "text": "learning it let's see what is inside it"
+    },
+    {
+      "start": 1294.02,
+      "duration": 4.019,
+      "text": "if I do LS I can see the file which is"
+    },
+    {
+      "start": 1295.7,
+      "duration": 3.9,
+      "text": "readme.md and app.pi this is how you can"
+    },
+    {
+      "start": 1298.039,
+      "duration": 4.02,
+      "text": "get the code and let me show you some"
+    },
+    {
+      "start": 1299.6,
+      "duration": 4.5,
+      "text": "other example let's try to clone some"
+    },
+    {
+      "start": 1302.059,
+      "duration": 4.561,
+      "text": "other repository let's say kubernetes so"
+    },
+    {
+      "start": 1304.1,
+      "duration": 4.199,
+      "text": "I'm going to say kubernetes GitHub and"
+    },
+    {
+      "start": 1306.62,
+      "duration": 2.939,
+      "text": "if you were to work on open source"
+    },
+    {
+      "start": 1308.299,
+      "duration": 2.341,
+      "text": "project and you want to make some change"
+    },
+    {
+      "start": 1309.559,
+      "duration": 3.061,
+      "text": "let's say you want to contribute to"
+    },
+    {
+      "start": 1310.64,
+      "duration": 3.419,
+      "text": "kubernetes how can you do it you can get"
+    },
+    {
+      "start": 1312.62,
+      "duration": 2.64,
+      "text": "the code first in your local machine so"
+    },
+    {
+      "start": 1314.059,
+      "duration": 2.881,
+      "text": "you can see how this is how people are"
+    },
+    {
+      "start": 1315.26,
+      "duration": 5.039,
+      "text": "contributing to it people are going to"
+    },
+    {
+      "start": 1316.94,
+      "duration": 5.4,
+      "text": "so this is uh tytc the user he has made"
+    },
+    {
+      "start": 1320.299,
+      "duration": 4.021,
+      "text": "some change in the kubernetes code and"
+    },
+    {
+      "start": 1322.34,
+      "duration": 3.36,
+      "text": "then created a pull request so someone"
+    },
+    {
+      "start": 1324.32,
+      "duration": 3.06,
+      "text": "from the kubernetes team is going to"
+    },
+    {
+      "start": 1325.7,
+      "duration": 3.959,
+      "text": "either review it so you can see they"
+    },
+    {
+      "start": 1327.38,
+      "duration": 4.32,
+      "text": "have added a comment so if they make the"
+    },
+    {
+      "start": 1329.659,
+      "duration": 3.361,
+      "text": "change this can be approved and then"
+    },
+    {
+      "start": 1331.7,
+      "duration": 3.0,
+      "text": "merged in the main repository which"
+    },
+    {
+      "start": 1333.02,
+      "duration": 3.659,
+      "text": "means you can become a contributor doing"
+    },
+    {
+      "start": 1334.7,
+      "duration": 3.12,
+      "text": "that so how can I get this code same day"
+    },
+    {
+      "start": 1336.679,
+      "duration": 3.421,
+      "text": "I'm going to click on code option here"
+    },
+    {
+      "start": 1337.82,
+      "duration": 4.68,
+      "text": "so let's click on"
+    },
+    {
+      "start": 1340.1,
+      "duration": 5.88,
+      "text": "code option here copy the link which is"
+    },
+    {
+      "start": 1342.5,
+      "duration": 5.22,
+      "text": "https link so I'm going to copy this"
+    },
+    {
+      "start": 1345.98,
+      "duration": 3.0,
+      "text": "and I can either paste it here or in my"
+    },
+    {
+      "start": 1347.72,
+      "duration": 2.579,
+      "text": "local machine wherever I want to get the"
+    },
+    {
+      "start": 1348.98,
+      "duration": 3.12,
+      "text": "code so I'm going to say git clone and"
+    },
+    {
+      "start": 1350.299,
+      "duration": 3.36,
+      "text": "then copy this once I do this it will"
+    },
+    {
+      "start": 1352.1,
+      "duration": 3.3,
+      "text": "start cloning so you can see cloning"
+    },
+    {
+      "start": 1353.659,
+      "duration": 3.481,
+      "text": "into kubernetes and after some time so"
+    },
+    {
+      "start": 1355.4,
+      "duration": 3.48,
+      "text": "this is a huge code if that is why it's"
+    },
+    {
+      "start": 1357.14,
+      "duration": 3.419,
+      "text": "going to take some time so there are so"
+    },
+    {
+      "start": 1358.88,
+      "duration": 2.7,
+      "text": "many files here it's going to clone all"
+    },
+    {
+      "start": 1360.559,
+      "duration": 2.881,
+      "text": "of them and then you can start working"
+    },
+    {
+      "start": 1361.58,
+      "duration": 3.599,
+      "text": "and contributing to it and then create a"
+    },
+    {
+      "start": 1363.44,
+      "duration": 3.619,
+      "text": "pull request to let someone accept it"
+    },
+    {
+      "start": 1365.179,
+      "duration": 4.561,
+      "text": "and then you can become a kubernetes"
+    },
+    {
+      "start": 1367.059,
+      "duration": 4.961,
+      "text": "kubernetes contributor and this is how"
+    },
+    {
+      "start": 1369.74,
+      "duration": 3.9,
+      "text": "we do open source projects uh you cannot"
+    },
+    {
+      "start": 1372.02,
+      "duration": 3.24,
+      "text": "do open source projects without learning"
+    },
+    {
+      "start": 1373.64,
+      "duration": 3.3,
+      "text": "git without learning how to make changes"
+    },
+    {
+      "start": 1375.26,
+      "duration": 2.94,
+      "text": "and push to it always make sure when you"
+    },
+    {
+      "start": 1376.94,
+      "duration": 3.119,
+      "text": "push your changes you don't do it on"
+    },
+    {
+      "start": 1378.2,
+      "duration": 3.18,
+      "text": "Master you can create different branches"
+    },
+    {
+      "start": 1380.059,
+      "duration": 3.0,
+      "text": "as you can see here there are different"
+    },
+    {
+      "start": 1381.38,
+      "duration": 3.419,
+      "text": "branches for different releases and"
+    },
+    {
+      "start": 1383.059,
+      "duration": 3.061,
+      "text": "people also create and make changes on"
+    },
+    {
+      "start": 1384.799,
+      "duration": 3.421,
+      "text": "the on their own particular branches"
+    },
+    {
+      "start": 1386.12,
+      "duration": 3.36,
+      "text": "they don't do it on Master Branch so if"
+    },
+    {
+      "start": 1388.22,
+      "duration": 3.78,
+      "text": "you see here"
+    },
+    {
+      "start": 1389.48,
+      "duration": 5.1,
+      "text": "uh this guy"
+    },
+    {
+      "start": 1392.0,
+      "duration": 5.58,
+      "text": "has made some changes"
+    },
+    {
+      "start": 1394.58,
+      "duration": 4.56,
+      "text": "so if I click on this"
+    },
+    {
+      "start": 1397.58,
+      "duration": 2.94,
+      "text": "so he this guy has made some changes in"
+    },
+    {
+      "start": 1399.14,
+      "duration": 2.82,
+      "text": "this particular branch and he wants it"
+    },
+    {
+      "start": 1400.52,
+      "duration": 2.639,
+      "text": "to be merged in the master Branch once"
+    },
+    {
+      "start": 1401.96,
+      "duration": 3.3,
+      "text": "this is merged then he can become a"
+    },
+    {
+      "start": 1403.159,
+      "duration": 3.541,
+      "text": "contributor to kubernetes so always make"
+    },
+    {
+      "start": 1405.26,
+      "duration": 2.88,
+      "text": "your changes on your own branch and then"
+    },
+    {
+      "start": 1406.7,
+      "duration": 3.78,
+      "text": "if someone approves they will merge it"
+    },
+    {
+      "start": 1408.14,
+      "duration": 3.96,
+      "text": "in the master bench so now this is still"
+    },
+    {
+      "start": 1410.48,
+      "duration": 3.059,
+      "text": "cloning you can see it's still cloning"
+    },
+    {
+      "start": 1412.1,
+      "duration": 3.36,
+      "text": "here once it is cloned I will get all"
+    },
+    {
+      "start": 1413.539,
+      "duration": 4.26,
+      "text": "the data in my local machine and then I"
+    },
+    {
+      "start": 1415.46,
+      "duration": 4.38,
+      "text": "can push it to uh GitHub create full"
+    },
+    {
+      "start": 1417.799,
+      "duration": 3.36,
+      "text": "request all that stuff I hope now you"
+    },
+    {
+      "start": 1419.84,
+      "duration": 2.819,
+      "text": "have understood how to push your code"
+    },
+    {
+      "start": 1421.159,
+      "duration": 4.621,
+      "text": "from your local Machine by running get"
+    },
+    {
+      "start": 1422.659,
+      "duration": 5.041,
+      "text": "ad uh get commit and get push so this is"
+    },
+    {
+      "start": 1425.78,
+      "duration": 4.8,
+      "text": "the workflow whenever you want to push"
+    },
+    {
+      "start": 1427.7,
+      "duration": 4.56,
+      "text": "to GitHub repositories you do get ad get"
+    },
+    {
+      "start": 1430.58,
+      "duration": 3.78,
+      "text": "comment get push and it is there if you"
+    },
+    {
+      "start": 1432.26,
+      "duration": 4.14,
+      "text": "want to get something from your code you"
+    },
+    {
+      "start": 1434.36,
+      "duration": 3.9,
+      "text": "can do just get pull and then it will be"
+    },
+    {
+      "start": 1436.4,
+      "duration": 4.8,
+      "text": "updated let's say someone developer has"
+    },
+    {
+      "start": 1438.26,
+      "duration": 4.26,
+      "text": "made some change and then uh you you"
+    },
+    {
+      "start": 1441.2,
+      "duration": 2.64,
+      "text": "also made some change so if you want if"
+    },
+    {
+      "start": 1442.52,
+      "duration": 2.46,
+      "text": "you want to get your changes you can"
+    },
+    {
+      "start": 1443.84,
+      "duration": 2.64,
+      "text": "just do get pull and we'll get all the"
+    },
+    {
+      "start": 1444.98,
+      "duration": 3.96,
+      "text": "operated changes"
+    },
+    {
+      "start": 1446.48,
+      "duration": 4.199,
+      "text": "so now kubernetes repository has been"
+    },
+    {
+      "start": 1448.94,
+      "duration": 2.88,
+      "text": "cloned properly if I do LS here you"
+    },
+    {
+      "start": 1450.679,
+      "duration": 2.761,
+      "text": "should see there's another folder named"
+    },
+    {
+      "start": 1451.82,
+      "duration": 3.3,
+      "text": "as kubernetes and if I go inside this"
+    },
+    {
+      "start": 1453.44,
+      "duration": 3.66,
+      "text": "folder you can see all the different"
+    },
+    {
+      "start": 1455.12,
+      "duration": 4.559,
+      "text": "files that are present which are same as"
+    },
+    {
+      "start": 1457.1,
+      "duration": 4.14,
+      "text": "what you have on the repository on the"
+    },
+    {
+      "start": 1459.679,
+      "duration": 3.36,
+      "text": "GitHub so all these files in the master"
+    },
+    {
+      "start": 1461.24,
+      "duration": 2.88,
+      "text": "Branch are present in here let's try to"
+    },
+    {
+      "start": 1463.039,
+      "duration": 2.88,
+      "text": "make some changes and push it from our"
+    },
+    {
+      "start": 1464.12,
+      "duration": 2.939,
+      "text": "from our server to GitHub so I'm going"
+    },
+    {
+      "start": 1465.919,
+      "duration": 2.701,
+      "text": "to go inside my particular directory"
+    },
+    {
+      "start": 1467.059,
+      "duration": 2.761,
+      "text": "which is here right now I am on Master"
+    },
+    {
+      "start": 1468.62,
+      "duration": 2.34,
+      "text": "Branch I can get checkout to use the"
+    },
+    {
+      "start": 1469.82,
+      "duration": 2.099,
+      "text": "cloud Channel Branch get check out the"
+    },
+    {
+      "start": 1470.96,
+      "duration": 2.099,
+      "text": "command to switch your branches second"
+    },
+    {
+      "start": 1471.919,
+      "duration": 2.521,
+      "text": "to check out and then I will rank which"
+    },
+    {
+      "start": 1473.059,
+      "duration": 3.661,
+      "text": "is cloud chat once I do this it has been"
+    },
+    {
+      "start": 1474.44,
+      "duration": 3.239,
+      "text": "changed you can see let's just change"
+    },
+    {
+      "start": 1476.72,
+      "duration": 2.339,
+      "text": "let's say you want to create a branches"
+    },
+    {
+      "start": 1477.679,
+      "duration": 3.081,
+      "text": "to it both in one command you can go"
+    },
+    {
+      "start": 1479.059,
+      "duration": 3.661,
+      "text": "check out"
+    },
+    {
+      "start": 1480.76,
+      "duration": 3.279,
+      "text": "bunch"
+    },
+    {
+      "start": 1482.72,
+      "duration": 2.819,
+      "text": "and this will get a new Branch along"
+    },
+    {
+      "start": 1484.039,
+      "duration": 2.64,
+      "text": "with and also to switch to it I'm going"
+    },
+    {
+      "start": 1485.539,
+      "duration": 4.081,
+      "text": "to say easy to Branch press enter so it"
+    },
+    {
+      "start": 1486.679,
+      "duration": 4.141,
+      "text": "says command I will be switched to easy"
+    },
+    {
+      "start": 1489.62,
+      "duration": 2.88,
+      "text": "punch let's try to make some change"
+    },
+    {
+      "start": 1490.82,
+      "duration": 3.239,
+      "text": "let's add new fight and make it uh"
+    },
+    {
+      "start": 1492.5,
+      "duration": 4.32,
+      "text": "modify or txt something"
+    },
+    {
+      "start": 1494.059,
+      "duration": 6.901,
+      "text": "right so I'm gonna say this is my new"
+    },
+    {
+      "start": 1496.82,
+      "duration": 5.7,
+      "text": "file please push it to git"
+    },
+    {
+      "start": 1500.96,
+      "duration": 5.0,
+      "text": "from easy to do this can be anything it"
+    },
+    {
+      "start": 1502.52,
+      "duration": 5.34,
+      "text": "can be a code files yes"
+    },
+    {
+      "start": 1505.96,
+      "duration": 3.099,
+      "text": "if you are doing it for the first time"
+    },
+    {
+      "start": 1507.86,
+      "duration": 2.34,
+      "text": "you will also need to use the get config"
+    },
+    {
+      "start": 1509.059,
+      "duration": 2.581,
+      "text": "command what is the good config command"
+    },
+    {
+      "start": 1510.2,
+      "duration": 2.64,
+      "text": "if I show you so using git config"
+    },
+    {
+      "start": 1511.64,
+      "duration": 2.399,
+      "text": "command you can set your username and"
+    },
+    {
+      "start": 1512.84,
+      "duration": 2.88,
+      "text": "email right now I'm just pushing this"
+    },
+    {
+      "start": 1514.039,
+      "duration": 3.12,
+      "text": "pushing the file for the first time so"
+    },
+    {
+      "start": 1515.72,
+      "duration": 2.819,
+      "text": "let's see what is the status here when I"
+    },
+    {
+      "start": 1517.159,
+      "duration": 3.0,
+      "text": "look at status it says there's a new"
+    },
+    {
+      "start": 1518.539,
+      "duration": 3.301,
+      "text": "file which is created but not tracked"
+    },
+    {
+      "start": 1520.159,
+      "duration": 3.781,
+      "text": "and not committed yet so I'm going to"
+    },
+    {
+      "start": 1521.84,
+      "duration": 3.959,
+      "text": "say get add and then the dot or the name"
+    },
+    {
+      "start": 1523.94,
+      "duration": 4.14,
+      "text": "of the file so I'm going to say dot and"
+    },
+    {
+      "start": 1525.799,
+      "duration": 3.781,
+      "text": "then if I do get status now you can see"
+    },
+    {
+      "start": 1528.08,
+      "duration": 3.24,
+      "text": "the file has been added in the staging"
+    },
+    {
+      "start": 1529.58,
+      "duration": 3.719,
+      "text": "area let's comment it once I do get"
+    },
+    {
+      "start": 1531.32,
+      "duration": 5.4,
+      "text": "commit I'm going to get"
+    },
+    {
+      "start": 1533.299,
+      "duration": 4.98,
+      "text": "let's say add text file this is the"
+    },
+    {
+      "start": 1536.72,
+      "duration": 3.42,
+      "text": "comment message press enter and you get"
+    },
+    {
+      "start": 1538.279,
+      "duration": 3.301,
+      "text": "this in a sync git config is not there"
+    },
+    {
+      "start": 1540.14,
+      "duration": 2.58,
+      "text": "so your name and email address will"
+    },
+    {
+      "start": 1541.58,
+      "duration": 2.82,
+      "text": "configure automatically based on your"
+    },
+    {
+      "start": 1542.72,
+      "duration": 3.18,
+      "text": "username and password hostname please"
+    },
+    {
+      "start": 1544.4,
+      "duration": 3.3,
+      "text": "check that they are accurate so whenever"
+    },
+    {
+      "start": 1545.9,
+      "duration": 3.72,
+      "text": "you make a comment you get to see"
+    },
+    {
+      "start": 1547.7,
+      "duration": 3.599,
+      "text": "something here so if I show you uh the"
+    },
+    {
+      "start": 1549.62,
+      "duration": 3.36,
+      "text": "two comments that I made till now so"
+    },
+    {
+      "start": 1551.299,
+      "duration": 3.841,
+      "text": "these are the comments let's click on"
+    },
+    {
+      "start": 1552.98,
+      "duration": 3.72,
+      "text": "five comments here so when I make the"
+    },
+    {
+      "start": 1555.14,
+      "duration": 3.659,
+      "text": "comment it defines who has made the"
+    },
+    {
+      "start": 1556.7,
+      "duration": 3.9,
+      "text": "comment so here I'm saying nasi.c has"
+    },
+    {
+      "start": 1558.799,
+      "duration": 3.12,
+      "text": "made the comment which is my username so"
+    },
+    {
+      "start": 1560.6,
+      "duration": 2.88,
+      "text": "if I want this to be appearing correctly"
+    },
+    {
+      "start": 1561.919,
+      "duration": 3.481,
+      "text": "I need to change that using the git"
+    },
+    {
+      "start": 1563.48,
+      "duration": 3.26,
+      "text": "config command you need to do that by"
+    },
+    {
+      "start": 1565.4,
+      "duration": 3.84,
+      "text": "using git config Dash Dash"
+    },
+    {
+      "start": 1566.74,
+      "duration": 4.12,
+      "text": "globaluser.name or user.email to set the"
+    },
+    {
+      "start": 1569.24,
+      "duration": 3.12,
+      "text": "things if I don't do that and directly"
+    },
+    {
+      "start": 1570.86,
+      "duration": 3.78,
+      "text": "push it you will see what happened so"
+    },
+    {
+      "start": 1572.36,
+      "duration": 3.72,
+      "text": "you can push hyphen U origin and then"
+    },
+    {
+      "start": 1574.64,
+      "duration": 2.76,
+      "text": "ec2"
+    },
+    {
+      "start": 1576.08,
+      "duration": 4.979,
+      "text": "batch"
+    },
+    {
+      "start": 1577.4,
+      "duration": 5.279,
+      "text": "once I do this it says let me check to"
+    },
+    {
+      "start": 1581.059,
+      "duration": 4.321,
+      "text": "get a remote repository if everything is"
+    },
+    {
+      "start": 1582.679,
+      "duration": 5.641,
+      "text": "connected so this is properly"
+    },
+    {
+      "start": 1585.38,
+      "duration": 4.919,
+      "text": "okay I didn't enter the origin correctly"
+    },
+    {
+      "start": 1588.32,
+      "duration": 3.44,
+      "text": "I'm going to say get push"
+    },
+    {
+      "start": 1590.299,
+      "duration": 3.601,
+      "text": "hyphen U"
+    },
+    {
+      "start": 1591.76,
+      "duration": 4.24,
+      "text": "origin and then the name of the branch"
+    },
+    {
+      "start": 1593.9,
+      "duration": 3.659,
+      "text": "is easy to catch once I do this without"
+    },
+    {
+      "start": 1596.0,
+      "duration": 3.059,
+      "text": "configuring my username it's going to"
+    },
+    {
+      "start": 1597.559,
+      "duration": 3.661,
+      "text": "ask me for that here so I'm going to say"
+    },
+    {
+      "start": 1599.059,
+      "duration": 3.541,
+      "text": "nasi.c and then the password I don't"
+    },
+    {
+      "start": 1601.22,
+      "duration": 3.6,
+      "text": "know the password so if you if you're"
+    },
+    {
+      "start": 1602.6,
+      "duration": 3.72,
+      "text": "stuck here uh it does not accept"
+    },
+    {
+      "start": 1604.82,
+      "duration": 3.9,
+      "text": "password here so you need to go to your"
+    },
+    {
+      "start": 1606.32,
+      "duration": 4.14,
+      "text": "GitHub to create a personal access token"
+    },
+    {
+      "start": 1608.72,
+      "duration": 4.92,
+      "text": "which I've already defined in my video"
+    },
+    {
+      "start": 1610.46,
+      "duration": 4.98,
+      "text": "so you can check out this video how on"
+    },
+    {
+      "start": 1613.64,
+      "duration": 3.6,
+      "text": "how you can create personal access token"
+    },
+    {
+      "start": 1615.44,
+      "duration": 3.06,
+      "text": "by going in the developer settings and"
+    },
+    {
+      "start": 1617.24,
+      "duration": 2.819,
+      "text": "uh"
+    },
+    {
+      "start": 1618.5,
+      "duration": 3.539,
+      "text": "creating a personal access token to"
+    },
+    {
+      "start": 1620.059,
+      "duration": 3.901,
+      "text": "fetch it so let me do that real quick"
+    },
+    {
+      "start": 1622.039,
+      "duration": 3.961,
+      "text": "for you to show it here so I'm going to"
+    },
+    {
+      "start": 1623.96,
+      "duration": 4.199,
+      "text": "click on generate new token I need to"
+    },
+    {
+      "start": 1626.0,
+      "duration": 5.34,
+      "text": "enter the password so this is my"
+    },
+    {
+      "start": 1628.159,
+      "duration": 4.741,
+      "text": "password now I'm going to say get"
+    },
+    {
+      "start": 1631.34,
+      "duration": 4.26,
+      "text": "tutorial"
+    },
+    {
+      "start": 1632.9,
+      "duration": 4.8,
+      "text": "I want to have access for repo"
+    },
+    {
+      "start": 1635.6,
+      "duration": 3.9,
+      "text": "also workflow I'm not using actually"
+    },
+    {
+      "start": 1637.7,
+      "duration": 3.66,
+      "text": "workflow but it's okay I'm going to add"
+    },
+    {
+      "start": 1639.5,
+      "duration": 3.6,
+      "text": "all these access here"
+    },
+    {
+      "start": 1641.36,
+      "duration": 3.48,
+      "text": "it should be okay enough I'm going to"
+    },
+    {
+      "start": 1643.1,
+      "duration": 3.0,
+      "text": "click on create one second generate"
+    },
+    {
+      "start": 1644.84,
+      "duration": 3.0,
+      "text": "token I get a token which can be used"
+    },
+    {
+      "start": 1646.1,
+      "duration": 3.84,
+      "text": "instead of password so I can use this to"
+    },
+    {
+      "start": 1647.84,
+      "duration": 4.199,
+      "text": "push and pull things so I'm going to"
+    },
+    {
+      "start": 1649.94,
+      "duration": 4.26,
+      "text": "paste this here and press enter it says"
+    },
+    {
+      "start": 1652.039,
+      "duration": 3.24,
+      "text": "starting to push once it push sets it I"
+    },
+    {
+      "start": 1654.2,
+      "duration": 3.3,
+      "text": "should be able to see it in my"
+    },
+    {
+      "start": 1655.279,
+      "duration": 5.221,
+      "text": "repository so I should see a file named"
+    },
+    {
+      "start": 1657.5,
+      "duration": 6.02,
+      "text": "as something.txt my file.txt in my repo"
+    },
+    {
+      "start": 1660.5,
+      "duration": 3.02,
+      "text": "so let's see that"
+    },
+    {
+      "start": 1665.2,
+      "duration": 2.859,
+      "text": "branch has something which is not there"
+    },
+    {
+      "start": 1667.1,
+      "duration": 3.179,
+      "text": "in the main so I can create a pull"
+    },
+    {
+      "start": 1668.059,
+      "duration": 4.86,
+      "text": "request and then merge it in the main"
+    },
+    {
+      "start": 1670.279,
+      "duration": 4.14,
+      "text": "branch so that is this file which is new"
+    },
+    {
+      "start": 1672.919,
+      "duration": 3.541,
+      "text": "and this is how you can do it let's say"
+    },
+    {
+      "start": 1674.419,
+      "duration": 4.321,
+      "text": "you want to set your uh username and"
+    },
+    {
+      "start": 1676.46,
+      "duration": 4.14,
+      "text": "password how will be doing that"
+    },
+    {
+      "start": 1678.74,
+      "duration": 3.66,
+      "text": "so if it is your first time working on"
+    },
+    {
+      "start": 1680.6,
+      "duration": 3.6,
+      "text": "working get in your machine you need to"
+    },
+    {
+      "start": 1682.4,
+      "duration": 4.74,
+      "text": "run this command which is get config"
+    },
+    {
+      "start": 1684.2,
+      "duration": 4.44,
+      "text": "hyphen hyphen global"
+    },
+    {
+      "start": 1687.14,
+      "duration": 5.18,
+      "text": "so if you go through this you can see"
+    },
+    {
+      "start": 1688.64,
+      "duration": 6.48,
+      "text": "the same thing is here so Global user"
+    },
+    {
+      "start": 1692.32,
+      "duration": 6.04,
+      "text": "dot name you put your username so my"
+    },
+    {
+      "start": 1695.12,
+      "duration": 4.559,
+      "text": "username is nasi.c and then if you want"
+    },
+    {
+      "start": 1698.36,
+      "duration": 3.96,
+      "text": "to set your email address you need to do"
+    },
+    {
+      "start": 1699.679,
+      "duration": 5.641,
+      "text": "the same thing but now with email ID so"
+    },
+    {
+      "start": 1702.32,
+      "duration": 6.599,
+      "text": "my email is cloud champ"
+    },
+    {
+      "start": 1705.32,
+      "duration": 5.459,
+      "text": "4 4 at the rate gmail.com and then this"
+    },
+    {
+      "start": 1708.919,
+      "duration": 3.721,
+      "text": "should be done so next time whenever I"
+    },
+    {
+      "start": 1710.779,
+      "duration": 4.26,
+      "text": "push it I should be able to see my name"
+    },
+    {
+      "start": 1712.64,
+      "duration": 4.26,
+      "text": "and this email in the comment so if I"
+    },
+    {
+      "start": 1715.039,
+      "duration": 4.201,
+      "text": "show you in this comment it says Ubuntu"
+    },
+    {
+      "start": 1716.9,
+      "duration": 3.48,
+      "text": "not my name so people are not able to"
+    },
+    {
+      "start": 1719.24,
+      "duration": 2.64,
+      "text": "know who made the comment or who has"
+    },
+    {
+      "start": 1720.38,
+      "duration": 2.76,
+      "text": "made the change now if I made the change"
+    },
+    {
+      "start": 1721.88,
+      "duration": 2.94,
+      "text": "I should be able to see in the C.C"
+    },
+    {
+      "start": 1723.14,
+      "duration": 3.419,
+      "text": "rather than Ubuntu so let's try to do"
+    },
+    {
+      "start": 1724.82,
+      "duration": 3.9,
+      "text": "that I'm going to say LS let's try to"
+    },
+    {
+      "start": 1726.559,
+      "duration": 4.801,
+      "text": "make some change in the file.txt let's"
+    },
+    {
+      "start": 1728.72,
+      "duration": 5.52,
+      "text": "rename the file so I'm going to MV my"
+    },
+    {
+      "start": 1731.36,
+      "duration": 4.62,
+      "text": "file that txt to my file dot txt with a"
+    },
+    {
+      "start": 1734.24,
+      "duration": 3.299,
+      "text": "single T once I do that and I do get"
+    },
+    {
+      "start": 1735.98,
+      "duration": 3.0,
+      "text": "status it should show me that there's a"
+    },
+    {
+      "start": 1737.539,
+      "duration": 3.181,
+      "text": "change made which is the name of the"
+    },
+    {
+      "start": 1738.98,
+      "duration": 3.78,
+      "text": "file has been changed and then I can do"
+    },
+    {
+      "start": 1740.72,
+      "duration": 5.88,
+      "text": "it add dot to put this in staging area"
+    },
+    {
+      "start": 1742.76,
+      "duration": 4.919,
+      "text": "get comment hyphen M to Define what is"
+    },
+    {
+      "start": 1746.6,
+      "duration": 4.14,
+      "text": "this comment about so I'm going to say"
+    },
+    {
+      "start": 1747.679,
+      "duration": 5.041,
+      "text": "name changed"
+    },
+    {
+      "start": 1750.74,
+      "duration": 4.799,
+      "text": "and then I'm going to say get push"
+    },
+    {
+      "start": 1752.72,
+      "duration": 3.959,
+      "text": "hyphen U origin and the black which I'm"
+    },
+    {
+      "start": 1755.539,
+      "duration": 2.76,
+      "text": "going to push I'm going to push this on"
+    },
+    {
+      "start": 1756.679,
+      "duration": 3.24,
+      "text": "ec2 branch"
+    },
+    {
+      "start": 1758.299,
+      "duration": 3.721,
+      "text": "so I'm going to do that and then put the"
+    },
+    {
+      "start": 1759.919,
+      "duration": 4.62,
+      "text": "username again one more time"
+    },
+    {
+      "start": 1762.02,
+      "duration": 4.98,
+      "text": "okay now it has been pushed let's see"
+    },
+    {
+      "start": 1764.539,
+      "duration": 5.101,
+      "text": "the new comment so once I refresh this"
+    },
+    {
+      "start": 1767.0,
+      "duration": 4.62,
+      "text": "it will add the comment in the ec2"
+    },
+    {
+      "start": 1769.64,
+      "duration": 3.6,
+      "text": "branch so you see now this time this has"
+    },
+    {
+      "start": 1771.62,
+      "duration": 3.539,
+      "text": "entered my name because I set it using"
+    },
+    {
+      "start": 1773.24,
+      "duration": 4.02,
+      "text": "git config command this is how you'll be"
+    },
+    {
+      "start": 1775.159,
+      "duration": 3.541,
+      "text": "using git config command I hope you have"
+    },
+    {
+      "start": 1777.26,
+      "duration": 3.48,
+      "text": "everything is cleared if you have any"
+    },
+    {
+      "start": 1778.7,
+      "duration": 3.719,
+      "text": "questions any doubt till now you can let"
+    },
+    {
+      "start": 1780.74,
+      "duration": 3.6,
+      "text": "me know so if you understood this and"
+    },
+    {
+      "start": 1782.419,
+      "duration": 3.541,
+      "text": "you want me to create create a tutorial"
+    },
+    {
+      "start": 1784.34,
+      "duration": 3.9,
+      "text": "on more complex things explaining you"
+    },
+    {
+      "start": 1785.96,
+      "duration": 3.599,
+      "text": "about get three base a git stash all"
+    },
+    {
+      "start": 1788.24,
+      "duration": 2.7,
+      "text": "that different commands you can let me"
+    },
+    {
+      "start": 1789.559,
+      "duration": 2.821,
+      "text": "know in the comment section but to help"
+    },
+    {
+      "start": 1790.94,
+      "duration": 3.359,
+      "text": "you out I've already posted few things"
+    },
+    {
+      "start": 1792.38,
+      "duration": 3.419,
+      "text": "I've already posted a resource for you"
+    },
+    {
+      "start": 1794.299,
+      "duration": 3.6,
+      "text": "on LinkedIn so if you're not connected"
+    },
+    {
+      "start": 1795.799,
+      "duration": 3.541,
+      "text": "with me on LinkedIn please do so because"
+    },
+    {
+      "start": 1797.899,
+      "duration": 3.541,
+      "text": "I because I share things and resources"
+    },
+    {
+      "start": 1799.34,
+      "duration": 3.959,
+      "text": "on my LinkedIn so if you see here I've"
+    },
+    {
+      "start": 1801.44,
+      "duration": 3.719,
+      "text": "updated I've uploaded a great checkbook"
+    },
+    {
+      "start": 1803.299,
+      "duration": 3.781,
+      "text": "yesterday which explains everything"
+    },
+    {
+      "start": 1805.159,
+      "duration": 3.481,
+      "text": "about different situations you can face"
+    },
+    {
+      "start": 1807.08,
+      "duration": 3.36,
+      "text": "when working with Git so if you work"
+    },
+    {
+      "start": 1808.64,
+      "duration": 3.36,
+      "text": "with Git and you want to clone a project"
+    },
+    {
+      "start": 1810.44,
+      "duration": 3.18,
+      "text": "start going through so you can see all"
+    },
+    {
+      "start": 1812.0,
+      "duration": 3.779,
+      "text": "the Hands-On details are present here"
+    },
+    {
+      "start": 1813.62,
+      "duration": 3.419,
+      "text": "this is for cloning you can I have clone"
+    },
+    {
+      "start": 1815.779,
+      "duration": 3.361,
+      "text": "there but I'm not able to see the proper"
+    },
+    {
+      "start": 1817.039,
+      "duration": 4.081,
+      "text": "code you can do status so depending on"
+    },
+    {
+      "start": 1819.14,
+      "duration": 4.019,
+      "text": "the situation you have all these answers"
+    },
+    {
+      "start": 1821.12,
+      "duration": 3.12,
+      "text": "in which screenshots so you can go"
+    },
+    {
+      "start": 1823.159,
+      "duration": 3.181,
+      "text": "through this document which can help you"
+    },
+    {
+      "start": 1824.24,
+      "duration": 3.9,
+      "text": "understand and work with Git if you are"
+    },
+    {
+      "start": 1826.34,
+      "duration": 3.0,
+      "text": "facing any issues along with this if you"
+    },
+    {
+      "start": 1828.14,
+      "duration": 3.84,
+      "text": "want to practice what you have learned"
+    },
+    {
+      "start": 1829.34,
+      "duration": 3.959,
+      "text": "today you can go to a game you can"
+    },
+    {
+      "start": 1831.98,
+      "duration": 2.699,
+      "text": "access the game the link is going to be"
+    },
+    {
+      "start": 1833.299,
+      "duration": 3.181,
+      "text": "in the description or you can just say"
+    },
+    {
+      "start": 1834.679,
+      "duration": 4.681,
+      "text": "get game"
+    },
+    {
+      "start": 1836.48,
+      "duration": 4.98,
+      "text": "once you do this this is the this is the"
+    },
+    {
+      "start": 1839.36,
+      "duration": 4.08,
+      "text": "SE are two different uh games you can"
+    },
+    {
+      "start": 1841.46,
+      "duration": 4.319,
+      "text": "use to learn about git so if you see"
+    },
+    {
+      "start": 1843.44,
+      "duration": 3.66,
+      "text": "here you can understand and learn about"
+    },
+    {
+      "start": 1845.779,
+      "duration": 3.12,
+      "text": "kids so here is Introduction to get"
+    },
+    {
+      "start": 1847.1,
+      "duration": 4.92,
+      "text": "comments detach your head all this"
+    },
+    {
+      "start": 1848.899,
+      "duration": 4.561,
+      "text": "Advanced topics starting from the basics"
+    },
+    {
+      "start": 1852.02,
+      "duration": 2.879,
+      "text": "here so you can learn about what is a"
+    },
+    {
+      "start": 1853.46,
+      "duration": 3.0,
+      "text": "comment a comment doesn't get repository"
+    },
+    {
+      "start": 1854.899,
+      "duration": 3.78,
+      "text": "record the Sam start and you can start"
+    },
+    {
+      "start": 1856.46,
+      "duration": 3.18,
+      "text": "doing that by running the commands and"
+    },
+    {
+      "start": 1858.679,
+      "duration": 2.641,
+      "text": "understanding and reading about things"
+    },
+    {
+      "start": 1859.64,
+      "duration": 2.82,
+      "text": "this is how you can do it so I would"
+    },
+    {
+      "start": 1861.32,
+      "duration": 2.4,
+      "text": "recommend you practicing your get"
+    },
+    {
+      "start": 1862.46,
+      "duration": 3.3,
+      "text": "knowledge because it is very important"
+    },
+    {
+      "start": 1863.72,
+      "duration": 4.26,
+      "text": "you can also use the other other URL"
+    },
+    {
+      "start": 1865.76,
+      "duration": 3.659,
+      "text": "which is oh my kit and this is also one"
+    },
+    {
+      "start": 1867.98,
+      "duration": 3.6,
+      "text": "of the great game to learn about how you"
+    },
+    {
+      "start": 1869.419,
+      "duration": 4.321,
+      "text": "can use git properly if you have any"
+    },
+    {
+      "start": 1871.58,
+      "duration": 3.599,
+      "text": "questions any doubt feel free to let me"
+    },
+    {
+      "start": 1873.74,
+      "duration": 3.419,
+      "text": "know in the comment section I hope this"
+    },
+    {
+      "start": 1875.179,
+      "duration": 4.281,
+      "text": "video was helpful thank you and have a"
+    },
+    {
+      "start": 1877.159,
+      "duration": 2.301,
+      "text": "good day"
+    }
+  ]
+}

@@ -1,0 +1,2146 @@
+{
+  "video": {
+    "id": "fZuxp_pOzgI",
+    "title": "AWS Tutorial to create Application Load Balancer and Auto Scaling Group",
+    "url": "https://www.youtube.com/watch?v=fZuxp_pOzgI",
+    "duration": 763,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.48,
+      "duration": 4.319,
+      "text": "load balances and auto scaling group are"
+    },
+    {
+      "start": 2.639,
+      "duration": 4.501,
+      "text": "used in every application these days for"
+    },
+    {
+      "start": 4.799,
+      "duration": 4.141,
+      "text": "high availability and scalability in"
+    },
+    {
+      "start": 7.14,
+      "duration": 3.72,
+      "text": "this video I am going to show you how"
+    },
+    {
+      "start": 8.94,
+      "duration": 4.199,
+      "text": "you can create load balances and auto"
+    },
+    {
+      "start": 10.86,
+      "duration": 3.979,
+      "text": "scaling group in AWS for your"
+    },
+    {
+      "start": 13.139,
+      "duration": 4.681,
+      "text": "applications to ensure High availability"
+    },
+    {
+      "start": 14.839,
+      "duration": 4.78,
+      "text": "scalability and fault tolerance so watch"
+    },
+    {
+      "start": 17.82,
+      "duration": 4.4,
+      "text": "this step-by-step video till the end"
+    },
+    {
+      "start": 19.619,
+      "duration": 2.601,
+      "text": "let's start"
+    },
+    {
+      "start": 25.56,
+      "duration": 2.879,
+      "text": "all right so I'm here on my computer"
+    },
+    {
+      "start": 26.88,
+      "duration": 3.059,
+      "text": "screen and to create load balances and"
+    },
+    {
+      "start": 28.439,
+      "duration": 2.941,
+      "text": "auto scaling Loop you need to go into"
+    },
+    {
+      "start": 29.939,
+      "duration": 3.181,
+      "text": "ec2 service"
+    },
+    {
+      "start": 31.38,
+      "duration": 3.3,
+      "text": "and you can find your practices and auto"
+    },
+    {
+      "start": 33.12,
+      "duration": 2.64,
+      "text": "scaling group below here so here is the"
+    },
+    {
+      "start": 34.68,
+      "duration": 2.76,
+      "text": "load balancer and this is the auto"
+    },
+    {
+      "start": 35.76,
+      "duration": 3.84,
+      "text": "scaling group right now if I show you I"
+    },
+    {
+      "start": 37.44,
+      "duration": 3.959,
+      "text": "have two servers running let me show you"
+    },
+    {
+      "start": 39.6,
+      "duration": 4.08,
+      "text": "what do I have on this service if I copy"
+    },
+    {
+      "start": 41.399,
+      "duration": 5.281,
+      "text": "my public IP and paste it in a new tab"
+    },
+    {
+      "start": 43.68,
+      "duration": 4.379,
+      "text": "let me close this and paste it here so"
+    },
+    {
+      "start": 46.68,
+      "duration": 3.059,
+      "text": "if I paste it you can see there's an"
+    },
+    {
+      "start": 48.059,
+      "duration": 3.18,
+      "text": "application which shows instance ID and"
+    },
+    {
+      "start": 49.739,
+      "duration": 3.0,
+      "text": "the availability Zone in which my server"
+    },
+    {
+      "start": 51.239,
+      "duration": 3.241,
+      "text": "is so here is the instance ID of the"
+    },
+    {
+      "start": 52.739,
+      "duration": 2.941,
+      "text": "first server and if I copy the second"
+    },
+    {
+      "start": 54.48,
+      "duration": 2.94,
+      "text": "one's IP"
+    },
+    {
+      "start": 55.68,
+      "duration": 3.539,
+      "text": "let me do that so I'm going to copy the"
+    },
+    {
+      "start": 57.42,
+      "duration": 3.72,
+      "text": "second one's IP and paste it here which"
+    },
+    {
+      "start": 59.219,
+      "duration": 3.84,
+      "text": "has the same kind of application but it"
+    },
+    {
+      "start": 61.14,
+      "duration": 3.419,
+      "text": "has its own IP address sorry it has its"
+    },
+    {
+      "start": 63.059,
+      "duration": 3.841,
+      "text": "own instance ID so here is the first"
+    },
+    {
+      "start": 64.559,
+      "duration": 4.801,
+      "text": "server having one c84 something and the"
+    },
+    {
+      "start": 66.9,
+      "duration": 4.14,
+      "text": "second server having one C90 something"
+    },
+    {
+      "start": 69.36,
+      "duration": 2.82,
+      "text": "so why do we use load balances we use"
+    },
+    {
+      "start": 71.04,
+      "duration": 2.82,
+      "text": "good balances to distribute traffic"
+    },
+    {
+      "start": 72.18,
+      "duration": 2.82,
+      "text": "among different servers there can be a"
+    },
+    {
+      "start": 73.86,
+      "duration": 2.52,
+      "text": "scenario where you are hosting your"
+    },
+    {
+      "start": 75.0,
+      "duration": 2.7,
+      "text": "applications on a server and there is"
+    },
+    {
+      "start": 76.38,
+      "duration": 2.7,
+      "text": "millions of traffic and the server is"
+    },
+    {
+      "start": 77.7,
+      "duration": 3.3,
+      "text": "not able to handle the traffic so you"
+    },
+    {
+      "start": 79.08,
+      "duration": 3.3,
+      "text": "can create more servers and distribute"
+    },
+    {
+      "start": 81.0,
+      "duration": 2.88,
+      "text": "the load using load balancer so when"
+    },
+    {
+      "start": 82.38,
+      "duration": 3.0,
+      "text": "using load balancer if I refresh I"
+    },
+    {
+      "start": 83.88,
+      "duration": 2.94,
+      "text": "should go to This Server first and then"
+    },
+    {
+      "start": 85.38,
+      "duration": 3.0,
+      "text": "to the second server and then to the"
+    },
+    {
+      "start": 86.82,
+      "duration": 3.119,
+      "text": "third server another benefit is rather"
+    },
+    {
+      "start": 88.38,
+      "duration": 3.48,
+      "text": "than having multiple IP address you can"
+    },
+    {
+      "start": 89.939,
+      "duration": 3.601,
+      "text": "have one single domain which is what you"
+    },
+    {
+      "start": 91.86,
+      "duration": 3.299,
+      "text": "can get when using load balancers so"
+    },
+    {
+      "start": 93.54,
+      "duration": 2.759,
+      "text": "let's go and create it real quick so I'm"
+    },
+    {
+      "start": 95.159,
+      "duration": 2.64,
+      "text": "going to click on load balances here and"
+    },
+    {
+      "start": 96.299,
+      "duration": 3.541,
+      "text": "AWS provides you with different load"
+    },
+    {
+      "start": 97.799,
+      "duration": 3.421,
+      "text": "balances there are different references"
+    },
+    {
+      "start": 99.84,
+      "duration": 3.18,
+      "text": "like application or balancer Network"
+    },
+    {
+      "start": 101.22,
+      "duration": 2.82,
+      "text": "load balances get failure balancer and"
+    },
+    {
+      "start": 103.02,
+      "duration": 2.94,
+      "text": "the previous generation which is"
+    },
+    {
+      "start": 104.04,
+      "duration": 3.48,
+      "text": "classical dancer usually all the time"
+    },
+    {
+      "start": 105.96,
+      "duration": 3.299,
+      "text": "you'll be using and creating application"
+    },
+    {
+      "start": 107.52,
+      "duration": 3.239,
+      "text": "or balancer but you there might be a"
+    },
+    {
+      "start": 109.259,
+      "duration": 3.0,
+      "text": "scenario where you need more performance"
+    },
+    {
+      "start": 110.759,
+      "duration": 3.121,
+      "text": "and high speed so you can you might be"
+    },
+    {
+      "start": 112.259,
+      "duration": 2.82,
+      "text": "using network dancer but the creation of"
+    },
+    {
+      "start": 113.88,
+      "duration": 3.68,
+      "text": "these two are very similar so if you"
+    },
+    {
+      "start": 115.079,
+      "duration": 2.481,
+      "text": "understand what is"
+    },
+    {
+      "start": 118.34,
+      "duration": 4.3,
+      "text": "balances so if you want to know why when"
+    },
+    {
+      "start": 121.14,
+      "duration": 3.24,
+      "text": "to use what you can just read this"
+    },
+    {
+      "start": 122.64,
+      "duration": 3.479,
+      "text": "description which says if you're using"
+    },
+    {
+      "start": 124.38,
+      "duration": 3.54,
+      "text": "HTTP and https traffic use application"
+    },
+    {
+      "start": 126.119,
+      "duration": 2.881,
+      "text": "if you're using TCP UDP traffic use this"
+    },
+    {
+      "start": 127.92,
+      "duration": 2.46,
+      "text": "and if you want to use third-party"
+    },
+    {
+      "start": 129.0,
+      "duration": 2.52,
+      "text": "applications you can use this for now"
+    },
+    {
+      "start": 130.38,
+      "duration": 2.999,
+      "text": "I'm going to create an application"
+    },
+    {
+      "start": 131.52,
+      "duration": 4.079,
+      "text": "called balancer and I am going to write"
+    },
+    {
+      "start": 133.379,
+      "duration": 4.86,
+      "text": "the name as my"
+    },
+    {
+      "start": 135.599,
+      "duration": 3.961,
+      "text": "ALB so this is my app load balance I'm"
+    },
+    {
+      "start": 138.239,
+      "duration": 3.121,
+      "text": "going to make it internet facing which"
+    },
+    {
+      "start": 139.56,
+      "duration": 3.6,
+      "text": "is going to be public load balancer not"
+    },
+    {
+      "start": 141.36,
+      "duration": 3.48,
+      "text": "an internal load balancer I'm going to"
+    },
+    {
+      "start": 143.16,
+      "duration": 3.84,
+      "text": "use ipv for address type if you have"
+    },
+    {
+      "start": 144.84,
+      "duration": 3.18,
+      "text": "IPv6 as well you can use dual stack I"
+    },
+    {
+      "start": 147.0,
+      "duration": 3.0,
+      "text": "don't have any so I'm not going to use"
+    },
+    {
+      "start": 148.02,
+      "duration": 3.42,
+      "text": "that next you need to select what VPC we"
+    },
+    {
+      "start": 150.0,
+      "duration": 3.18,
+      "text": "want to launch I have my servers inside"
+    },
+    {
+      "start": 151.44,
+      "duration": 3.659,
+      "text": "the default VPC so I'll be selecting"
+    },
+    {
+      "start": 153.18,
+      "duration": 4.68,
+      "text": "that and also the subnets in which I"
+    },
+    {
+      "start": 155.099,
+      "duration": 5.64,
+      "text": "have my servers inside so my servers are"
+    },
+    {
+      "start": 157.86,
+      "duration": 4.62,
+      "text": "in US West 1C this one is also in USBS"
+    },
+    {
+      "start": 160.739,
+      "duration": 3.78,
+      "text": "1C so no problem but even though I'm"
+    },
+    {
+      "start": 162.48,
+      "duration": 3.479,
+      "text": "selecting both of these azs next I need"
+    },
+    {
+      "start": 164.519,
+      "duration": 3.121,
+      "text": "to select the security group make sure"
+    },
+    {
+      "start": 165.959,
+      "duration": 2.581,
+      "text": "you have Security Group selected which"
+    },
+    {
+      "start": 167.64,
+      "duration": 3.84,
+      "text": "has"
+    },
+    {
+      "start": 168.54,
+      "duration": 4.08,
+      "text": "which has port a HTTP or https open if"
+    },
+    {
+      "start": 171.48,
+      "duration": 3.66,
+      "text": "you have SSL certificates you can use"
+    },
+    {
+      "start": 172.62,
+      "duration": 4.14,
+      "text": "https for me I'm using HTTP because I am"
+    },
+    {
+      "start": 175.14,
+      "duration": 3.78,
+      "text": "not using any SSL certificate if you use"
+    },
+    {
+      "start": 176.76,
+      "duration": 4.8,
+      "text": "https you can see here it's going to ask"
+    },
+    {
+      "start": 178.92,
+      "duration": 4.98,
+      "text": "you for a SSL but if I use HTTP it will"
+    },
+    {
+      "start": 181.56,
+      "duration": 3.78,
+      "text": "not require any SSL certificates so I'm"
+    },
+    {
+      "start": 183.9,
+      "duration": 3.18,
+      "text": "going to create a new security group for"
+    },
+    {
+      "start": 185.34,
+      "duration": 2.64,
+      "text": "my load balancer which is kind of a good"
+    },
+    {
+      "start": 187.08,
+      "duration": 2.7,
+      "text": "practice so I'm going to click on create"
+    },
+    {
+      "start": 187.98,
+      "duration": 3.119,
+      "text": "a new security group and let's get a"
+    },
+    {
+      "start": 189.78,
+      "duration": 3.06,
+      "text": "security group for Alp so I'm going to"
+    },
+    {
+      "start": 191.099,
+      "duration": 3.901,
+      "text": "name this as alsb Security Group and"
+    },
+    {
+      "start": 192.84,
+      "duration": 4.14,
+      "text": "give a description as this is my"
+    },
+    {
+      "start": 195.0,
+      "duration": 3.78,
+      "text": "security group for"
+    },
+    {
+      "start": 196.98,
+      "duration": 3.96,
+      "text": "load balancer"
+    },
+    {
+      "start": 198.78,
+      "duration": 3.36,
+      "text": "okay so it's going to be created in the"
+    },
+    {
+      "start": 200.94,
+      "duration": 3.12,
+      "text": "default VPC I'm going to add a rule"
+    },
+    {
+      "start": 202.14,
+      "duration": 5.22,
+      "text": "saying HTTP traffic because this"
+    },
+    {
+      "start": 204.06,
+      "duration": 4.679,
+      "text": "application runs on http so this is fine"
+    },
+    {
+      "start": 207.36,
+      "duration": 2.879,
+      "text": "I'm going to make it all IP which is"
+    },
+    {
+      "start": 208.739,
+      "duration": 4.381,
+      "text": "correct and click on create Security"
+    },
+    {
+      "start": 210.239,
+      "duration": 4.021,
+      "text": "Group so let me select anywhere ipv4 and"
+    },
+    {
+      "start": 213.12,
+      "duration": 2.82,
+      "text": "then click on create Security Group"
+    },
+    {
+      "start": 214.26,
+      "duration": 2.94,
+      "text": "perfect so now I have my security code"
+    },
+    {
+      "start": 215.94,
+      "duration": 3.18,
+      "text": "created I'm going to go back to my load"
+    },
+    {
+      "start": 217.2,
+      "duration": 3.179,
+      "text": "balances screen refresh this and select"
+    },
+    {
+      "start": 219.12,
+      "duration": 2.64,
+      "text": "the security group which I created right"
+    },
+    {
+      "start": 220.379,
+      "duration": 2.701,
+      "text": "now you can create multiple you can"
+    },
+    {
+      "start": 221.76,
+      "duration": 3.72,
+      "text": "attach multiple Security Group but I'm"
+    },
+    {
+      "start": 223.08,
+      "duration": 4.32,
+      "text": "going to just attach one here and you"
+    },
+    {
+      "start": 225.48,
+      "duration": 3.96,
+      "text": "also need to have Target group if you"
+    },
+    {
+      "start": 227.4,
+      "duration": 3.419,
+      "text": "want to put the instances behind the"
+    },
+    {
+      "start": 229.44,
+      "duration": 2.939,
+      "text": "load balancer and for that you need to"
+    },
+    {
+      "start": 230.819,
+      "duration": 3.06,
+      "text": "create one let's go ahead create Target"
+    },
+    {
+      "start": 232.379,
+      "duration": 3.42,
+      "text": "group inside Target group you can put"
+    },
+    {
+      "start": 233.879,
+      "duration": 3.061,
+      "text": "instances you can also put IP addresses"
+    },
+    {
+      "start": 235.799,
+      "duration": 3.0,
+      "text": "you can put Lambda functions or"
+    },
+    {
+      "start": 236.94,
+      "duration": 2.879,
+      "text": "different applications for now we are"
+    },
+    {
+      "start": 238.799,
+      "duration": 2.58,
+      "text": "using load analysis to distribute"
+    },
+    {
+      "start": 239.819,
+      "duration": 3.181,
+      "text": "traffic among these two servers so we"
+    },
+    {
+      "start": 241.379,
+      "duration": 3.181,
+      "text": "are going to use instances and I'm going"
+    },
+    {
+      "start": 243.0,
+      "duration": 4.319,
+      "text": "to name this target group as anything"
+    },
+    {
+      "start": 244.56,
+      "duration": 4.319,
+      "text": "let's say my target group"
+    },
+    {
+      "start": 247.319,
+      "duration": 3.721,
+      "text": "and this target is going to run on Port"
+    },
+    {
+      "start": 248.879,
+      "duration": 4.201,
+      "text": "80 which is HTTP that is correct and I"
+    },
+    {
+      "start": 251.04,
+      "duration": 3.479,
+      "text": "need to do the health check on slash"
+    },
+    {
+      "start": 253.08,
+      "duration": 3.059,
+      "text": "health check means if you want to check"
+    },
+    {
+      "start": 254.519,
+      "duration": 3.301,
+      "text": "this page you can use slash if you want"
+    },
+    {
+      "start": 256.139,
+      "duration": 3.78,
+      "text": "to check some other let's say this page"
+    },
+    {
+      "start": 257.82,
+      "duration": 4.5,
+      "text": "which has slash uh something let's say"
+    },
+    {
+      "start": 259.919,
+      "duration": 3.84,
+      "text": "slash load.php I can also Implement I"
+    },
+    {
+      "start": 262.32,
+      "duration": 3.0,
+      "text": "can also Implement a health check on"
+    },
+    {
+      "start": 263.759,
+      "duration": 4.44,
+      "text": "here but I want to check"
+    },
+    {
+      "start": 265.32,
+      "duration": 4.379,
+      "text": "at the home part which is just slash so"
+    },
+    {
+      "start": 268.199,
+      "duration": 4.201,
+      "text": "I'm going to put my target group health"
+    },
+    {
+      "start": 269.699,
+      "duration": 4.321,
+      "text": "check on slash if any time this path is"
+    },
+    {
+      "start": 272.4,
+      "duration": 3.06,
+      "text": "not working it will give me an error and"
+    },
+    {
+      "start": 274.02,
+      "duration": 3.0,
+      "text": "load balancer will not show that"
+    },
+    {
+      "start": 275.46,
+      "duration": 3.6,
+      "text": "instance so if you can you need to"
+    },
+    {
+      "start": 277.02,
+      "duration": 3.6,
+      "text": "configure this properly you can probably"
+    },
+    {
+      "start": 279.06,
+      "duration": 2.76,
+      "text": "you can also edit more settings like how"
+    },
+    {
+      "start": 280.62,
+      "duration": 2.4,
+      "text": "many times it should be healthy how many"
+    },
+    {
+      "start": 281.82,
+      "duration": 2.28,
+      "text": "times it should be an healthy what"
+    },
+    {
+      "start": 283.02,
+      "duration": 3.179,
+      "text": "should be the timeout and what should be"
+    },
+    {
+      "start": 284.1,
+      "duration": 4.8,
+      "text": "the success code some applications uh"
+    },
+    {
+      "start": 286.199,
+      "duration": 4.56,
+      "text": "might be intensely showing error error"
+    },
+    {
+      "start": 288.9,
+      "duration": 3.48,
+      "text": "responses like connection refused or 404"
+    },
+    {
+      "start": 290.759,
+      "duration": 3.061,
+      "text": "but if you if you want to have success"
+    },
+    {
+      "start": 292.38,
+      "duration": 3.539,
+      "text": "code like 200 which means it's working"
+    },
+    {
+      "start": 293.82,
+      "duration": 4.26,
+      "text": "then you can set the port as success"
+    },
+    {
+      "start": 295.919,
+      "duration": 4.381,
+      "text": "code AS 200 so that is fine and I'm"
+    },
+    {
+      "start": 298.08,
+      "duration": 4.2,
+      "text": "going to click on next here to create it"
+    },
+    {
+      "start": 300.3,
+      "duration": 3.54,
+      "text": "once this is done I need to select what"
+    },
+    {
+      "start": 302.28,
+      "duration": 3.24,
+      "text": "service I need to put here so these are"
+    },
+    {
+      "start": 303.84,
+      "duration": 3.24,
+      "text": "the two servers I want to be behind Road"
+    },
+    {
+      "start": 305.52,
+      "duration": 3.54,
+      "text": "dancers so I'm going to select them and"
+    },
+    {
+      "start": 307.08,
+      "duration": 3.24,
+      "text": "choose as include by spending below once"
+    },
+    {
+      "start": 309.06,
+      "duration": 3.0,
+      "text": "I do this let's click on create Target"
+    },
+    {
+      "start": 310.32,
+      "duration": 3.84,
+      "text": "group and this target group is now"
+    },
+    {
+      "start": 312.06,
+      "duration": 4.62,
+      "text": "created now let's go back to the load"
+    },
+    {
+      "start": 314.16,
+      "duration": 4.56,
+      "text": "balancer screen and refresh this again"
+    },
+    {
+      "start": 316.68,
+      "duration": 3.72,
+      "text": "after I refresh I can select this and"
+    },
+    {
+      "start": 318.72,
+      "duration": 2.64,
+      "text": "scroll down I don't need any of these"
+    },
+    {
+      "start": 320.4,
+      "duration": 3.06,
+      "text": "and now I'm going to click on create"
+    },
+    {
+      "start": 321.36,
+      "duration": 3.72,
+      "text": "your balancer once I create this okay so"
+    },
+    {
+      "start": 323.46,
+      "duration": 3.0,
+      "text": "once my load balance is created is going"
+    },
+    {
+      "start": 325.08,
+      "duration": 2.7,
+      "text": "to be in the provisioning state let me"
+    },
+    {
+      "start": 326.46,
+      "duration": 2.76,
+      "text": "show you that so this is in provisioning"
+    },
+    {
+      "start": 327.78,
+      "duration": 3.06,
+      "text": "state we have to wait till it comes to"
+    },
+    {
+      "start": 329.22,
+      "duration": 3.419,
+      "text": "an active State once it is active you"
+    },
+    {
+      "start": 330.84,
+      "duration": 3.48,
+      "text": "can copy this DNS name and you might you"
+    },
+    {
+      "start": 332.639,
+      "duration": 5.041,
+      "text": "will be able to see your application let"
+    },
+    {
+      "start": 334.32,
+      "duration": 4.86,
+      "text": "me just paste it in my new tab here if I"
+    },
+    {
+      "start": 337.68,
+      "duration": 2.76,
+      "text": "paste it right now it says DNS Pro"
+    },
+    {
+      "start": 339.18,
+      "duration": 3.18,
+      "text": "because it's still in producing state"
+    },
+    {
+      "start": 340.44,
+      "duration": 4.44,
+      "text": "but after some time you can you should"
+    },
+    {
+      "start": 342.36,
+      "duration": 4.559,
+      "text": "be able to see your application here one"
+    },
+    {
+      "start": 344.88,
+      "duration": 3.42,
+      "text": "more thing to notice is you will get DNS"
+    },
+    {
+      "start": 346.919,
+      "duration": 3.06,
+      "text": "not an IP address when you create load"
+    },
+    {
+      "start": 348.3,
+      "duration": 3.3,
+      "text": "balances so just make sure that whenever"
+    },
+    {
+      "start": 349.979,
+      "duration": 3.481,
+      "text": "you do it you need to map your domain"
+    },
+    {
+      "start": 351.6,
+      "duration": 3.18,
+      "text": "name with your load balancer here let's"
+    },
+    {
+      "start": 353.46,
+      "duration": 3.36,
+      "text": "wait for some time and then we should be"
+    },
+    {
+      "start": 354.78,
+      "duration": 3.919,
+      "text": "able to see our application that we see"
+    },
+    {
+      "start": 356.82,
+      "duration": 5.04,
+      "text": "here on our load balancer"
+    },
+    {
+      "start": 358.699,
+      "duration": 6.101,
+      "text": "is ready let's check if this is ready or"
+    },
+    {
+      "start": 361.86,
+      "duration": 3.899,
+      "text": "not so it says active like if I refresh"
+    },
+    {
+      "start": 364.8,
+      "duration": 1.739,
+      "text": "I should be able to see my application"
+    },
+    {
+      "start": 365.759,
+      "duration": 2.16,
+      "text": "here"
+    },
+    {
+      "start": 366.539,
+      "duration": 3.061,
+      "text": "so you can see"
+    },
+    {
+      "start": 367.919,
+      "duration": 4.861,
+      "text": "it says the application which is having"
+    },
+    {
+      "start": 369.6,
+      "duration": 4.379,
+      "text": "instance id10c90 if I refresh it should"
+    },
+    {
+      "start": 372.78,
+      "duration": 2.16,
+      "text": "show me the second server which means it"
+    },
+    {
+      "start": 373.979,
+      "duration": 3.0,
+      "text": "is traffic balancing the traffic"
+    },
+    {
+      "start": 374.94,
+      "duration": 4.14,
+      "text": "properly uh"
+    },
+    {
+      "start": 376.979,
+      "duration": 3.841,
+      "text": "you can see it says 84 now so every time"
+    },
+    {
+      "start": 379.08,
+      "duration": 3.2,
+      "text": "I do it it's first it will show me the"
+    },
+    {
+      "start": 380.82,
+      "duration": 3.719,
+      "text": "first server then the second server"
+    },
+    {
+      "start": 382.28,
+      "duration": 3.82,
+      "text": "refreshing second first so this is known"
+    },
+    {
+      "start": 384.539,
+      "duration": 2.701,
+      "text": "as round robin fashion where you can"
+    },
+    {
+      "start": 386.1,
+      "duration": 3.24,
+      "text": "distribute traffic among these two"
+    },
+    {
+      "start": 387.24,
+      "duration": 3.12,
+      "text": "different servers so if anytime you are"
+    },
+    {
+      "start": 389.34,
+      "duration": 2.82,
+      "text": "having issues come back to your target"
+    },
+    {
+      "start": 390.36,
+      "duration": 3.119,
+      "text": "group and check if your instances are"
+    },
+    {
+      "start": 392.16,
+      "duration": 2.34,
+      "text": "healthy or not if they're not healthy"
+    },
+    {
+      "start": 393.479,
+      "duration": 2.641,
+      "text": "you will not be able to see the traffic"
+    },
+    {
+      "start": 394.5,
+      "duration": 2.819,
+      "text": "you will not be able to see your home"
+    },
+    {
+      "start": 396.12,
+      "duration": 2.88,
+      "text": "page you can see here both of my"
+    },
+    {
+      "start": 397.319,
+      "duration": 3.421,
+      "text": "instances are healthy and I'm able to"
+    },
+    {
+      "start": 399.0,
+      "duration": 4.8,
+      "text": "see them through my"
+    },
+    {
+      "start": 400.74,
+      "duration": 4.38,
+      "text": "uh through my load balances DNS so this"
+    },
+    {
+      "start": 403.8,
+      "duration": 3.72,
+      "text": "is how you can create your balances and"
+    },
+    {
+      "start": 405.12,
+      "duration": 3.6,
+      "text": "distribute traffic but from I have"
+    },
+    {
+      "start": 407.52,
+      "duration": 3.0,
+      "text": "created these two servers manually"
+    },
+    {
+      "start": 408.72,
+      "duration": 2.94,
+      "text": "myself if my traffic is increased and I"
+    },
+    {
+      "start": 410.52,
+      "duration": 2.7,
+      "text": "want to have more servers let's say"
+    },
+    {
+      "start": 411.66,
+      "duration": 3.3,
+      "text": "server three server four five six seven"
+    },
+    {
+      "start": 413.22,
+      "duration": 3.419,
+      "text": "eight how can I do that and to do that"
+    },
+    {
+      "start": 414.96,
+      "duration": 3.179,
+      "text": "we need to use something known as Auto"
+    },
+    {
+      "start": 416.639,
+      "duration": 2.941,
+      "text": "scaling Group which can which can"
+    },
+    {
+      "start": 418.139,
+      "duration": 3.06,
+      "text": "automatically create servers depending"
+    },
+    {
+      "start": 419.58,
+      "duration": 2.88,
+      "text": "on the traffic and also might also"
+    },
+    {
+      "start": 421.199,
+      "duration": 3.541,
+      "text": "delete the servers if the traffic is"
+    },
+    {
+      "start": 422.46,
+      "duration": 4.14,
+      "text": "less so to demonstrate this let's go and"
+    },
+    {
+      "start": 424.74,
+      "duration": 3.42,
+      "text": "create an auto scaling group"
+    },
+    {
+      "start": 426.6,
+      "duration": 2.52,
+      "text": "before creating Auto selling group you"
+    },
+    {
+      "start": 428.16,
+      "duration": 3.0,
+      "text": "also need something on this launch"
+    },
+    {
+      "start": 429.12,
+      "duration": 3.419,
+      "text": "template or launch configuration let me"
+    },
+    {
+      "start": 431.16,
+      "duration": 2.879,
+      "text": "show you how so I'm going to click on"
+    },
+    {
+      "start": 432.539,
+      "duration": 3.421,
+      "text": "auto scanning group here you can read"
+    },
+    {
+      "start": 434.039,
+      "duration": 2.821,
+      "text": "about it so Auto scaling group helps"
+    },
+    {
+      "start": 435.96,
+      "duration": 2.519,
+      "text": "maintain the availability of your"
+    },
+    {
+      "start": 436.86,
+      "duration": 2.94,
+      "text": "applications and I'm going to click on"
+    },
+    {
+      "start": 438.479,
+      "duration": 3.181,
+      "text": "create auto scaling group here let's"
+    },
+    {
+      "start": 439.8,
+      "duration": 4.92,
+      "text": "give a name so I'm going to say this as"
+    },
+    {
+      "start": 441.66,
+      "duration": 4.08,
+      "text": "my ASG or my auto scaling group uh we"
+    },
+    {
+      "start": 444.72,
+      "duration": 2.22,
+      "text": "need to have launch template launch"
+    },
+    {
+      "start": 445.74,
+      "duration": 3.12,
+      "text": "template is kind of a template which"
+    },
+    {
+      "start": 446.94,
+      "duration": 3.24,
+      "text": "defines what should be the settings for"
+    },
+    {
+      "start": 448.86,
+      "duration": 2.58,
+      "text": "the new instances created by Auto"
+    },
+    {
+      "start": 450.18,
+      "duration": 3.18,
+      "text": "scaling group so I'm going to click on"
+    },
+    {
+      "start": 451.44,
+      "duration": 4.68,
+      "text": "create launch template here and give all"
+    },
+    {
+      "start": 453.36,
+      "duration": 4.32,
+      "text": "the details on how it should be created"
+    },
+    {
+      "start": 456.12,
+      "duration": 3.6,
+      "text": "but before we actually do this we have"
+    },
+    {
+      "start": 457.68,
+      "duration": 3.54,
+      "text": "to also create an image of our server so"
+    },
+    {
+      "start": 459.72,
+      "duration": 3.24,
+      "text": "if you see here it's going to ask us"
+    },
+    {
+      "start": 461.22,
+      "duration": 4.44,
+      "text": "what should be the Ami so I'm going to"
+    },
+    {
+      "start": 462.96,
+      "duration": 4.62,
+      "text": "go back to my servers here let's go to"
+    },
+    {
+      "start": 465.66,
+      "duration": 4.379,
+      "text": "servers instances I'm going to create a"
+    },
+    {
+      "start": 467.58,
+      "duration": 4.44,
+      "text": "copy or an image of my server so that"
+    },
+    {
+      "start": 470.039,
+      "duration": 3.901,
+      "text": "every new instance should have this"
+    },
+    {
+      "start": 472.02,
+      "duration": 3.6,
+      "text": "application on it without me configuring"
+    },
+    {
+      "start": 473.94,
+      "duration": 3.24,
+      "text": "and installing Apache or everything that"
+    },
+    {
+      "start": 475.62,
+      "duration": 3.84,
+      "text": "I've done on This Server so I'm going to"
+    },
+    {
+      "start": 477.18,
+      "duration": 3.9,
+      "text": "go here click on actions click on image"
+    },
+    {
+      "start": 479.46,
+      "duration": 5.579,
+      "text": "and templates and click on create image"
+    },
+    {
+      "start": 481.08,
+      "duration": 5.88,
+      "text": "let's name this as launch image and"
+    },
+    {
+      "start": 485.039,
+      "duration": 3.241,
+      "text": "I'm going to just add description saying"
+    },
+    {
+      "start": 486.96,
+      "duration": 5.16,
+      "text": "image"
+    },
+    {
+      "start": 488.28,
+      "duration": 5.34,
+      "text": "for auto scaling group you need to do"
+    },
+    {
+      "start": 492.12,
+      "duration": 2.639,
+      "text": "this or else every server that is going"
+    },
+    {
+      "start": 493.62,
+      "duration": 2.34,
+      "text": "to be created by Auto scaling group will"
+    },
+    {
+      "start": 494.759,
+      "duration": 2.701,
+      "text": "be fresh and will not have your"
+    },
+    {
+      "start": 495.96,
+      "duration": 2.82,
+      "text": "application which is not what you want"
+    },
+    {
+      "start": 497.46,
+      "duration": 2.639,
+      "text": "so I'm going to create an image so that"
+    },
+    {
+      "start": 498.78,
+      "duration": 2.699,
+      "text": "every time a new server is created you"
+    },
+    {
+      "start": 500.099,
+      "duration": 2.82,
+      "text": "should have the application ready on it"
+    },
+    {
+      "start": 501.479,
+      "duration": 3.06,
+      "text": "so I'm going to click on create image"
+    },
+    {
+      "start": 502.919,
+      "duration": 3.301,
+      "text": "and now go back to the launch template"
+    },
+    {
+      "start": 504.539,
+      "duration": 3.78,
+      "text": "screen let's give this a name saying my"
+    },
+    {
+      "start": 506.22,
+      "duration": 4.319,
+      "text": "template and I'm going to see this"
+    },
+    {
+      "start": 508.319,
+      "duration": 6.541,
+      "text": "description template"
+    },
+    {
+      "start": 510.539,
+      "duration": 5.821,
+      "text": "for auto scaling group okay this is done"
+    },
+    {
+      "start": 514.86,
+      "duration": 3.179,
+      "text": "I'm going to select my emis and select"
+    },
+    {
+      "start": 516.36,
+      "duration": 3.539,
+      "text": "the Ami that I created right now which"
+    },
+    {
+      "start": 518.039,
+      "duration": 3.36,
+      "text": "is launch image"
+    },
+    {
+      "start": 519.899,
+      "duration": 2.94,
+      "text": "and next I need to select the instance"
+    },
+    {
+      "start": 521.399,
+      "duration": 3.481,
+      "text": "type if I want all instances to be T2"
+    },
+    {
+      "start": 522.839,
+      "duration": 3.241,
+      "text": "micro I can select T to micro here I"
+    },
+    {
+      "start": 524.88,
+      "duration": 3.18,
+      "text": "want all instances to have a keypad"
+    },
+    {
+      "start": 526.08,
+      "duration": 5.04,
+      "text": "which is this key I want all instances"
+    },
+    {
+      "start": 528.06,
+      "duration": 5.459,
+      "text": "to have a security group which is my SG"
+    },
+    {
+      "start": 531.12,
+      "duration": 4.44,
+      "text": "and I also want all security all"
+    },
+    {
+      "start": 533.519,
+      "duration": 3.181,
+      "text": "instances to have 8GB which is fine once"
+    },
+    {
+      "start": 535.56,
+      "duration": 2.58,
+      "text": "I do this let's click on create launch"
+    },
+    {
+      "start": 536.7,
+      "duration": 3.24,
+      "text": "template and the template will be"
+    },
+    {
+      "start": 538.14,
+      "duration": 3.24,
+      "text": "created this template is required for"
+    },
+    {
+      "start": 539.94,
+      "duration": 3.0,
+      "text": "the order scaling group so now I'm going"
+    },
+    {
+      "start": 541.38,
+      "duration": 2.76,
+      "text": "to refresh this and add the temperature"
+    },
+    {
+      "start": 542.94,
+      "duration": 3.899,
+      "text": "that I created right now which is my"
+    },
+    {
+      "start": 544.14,
+      "duration": 3.72,
+      "text": "template next after creating this if you"
+    },
+    {
+      "start": 546.839,
+      "duration": 1.861,
+      "text": "want to edit something you can also"
+    },
+    {
+      "start": 547.86,
+      "duration": 2.28,
+      "text": "create different versions which is"
+    },
+    {
+      "start": 548.7,
+      "duration": 2.579,
+      "text": "supported by launch template and not"
+    },
+    {
+      "start": 550.14,
+      "duration": 2.759,
+      "text": "supported by something which is known as"
+    },
+    {
+      "start": 551.279,
+      "duration": 3.301,
+      "text": "launch configuration which is a previous"
+    },
+    {
+      "start": 552.899,
+      "duration": 3.601,
+      "text": "version of launch template I'm going to"
+    },
+    {
+      "start": 554.58,
+      "duration": 2.939,
+      "text": "click on next now and choose the VPC in"
+    },
+    {
+      "start": 556.5,
+      "duration": 2.58,
+      "text": "which I want to launch this make sure"
+    },
+    {
+      "start": 557.519,
+      "duration": 3.061,
+      "text": "you have the VPC similar to what you"
+    },
+    {
+      "start": 559.08,
+      "duration": 3.3,
+      "text": "have created a servers and your load"
+    },
+    {
+      "start": 560.58,
+      "duration": 3.42,
+      "text": "balances inside so choose the same APC"
+    },
+    {
+      "start": 562.38,
+      "duration": 3.18,
+      "text": "for ACS I'm going to select all the easy"
+    },
+    {
+      "start": 564.0,
+      "duration": 3.36,
+      "text": "so that it should be highly available"
+    },
+    {
+      "start": 565.56,
+      "duration": 3.18,
+      "text": "and I'm going to click on next option"
+    },
+    {
+      "start": 567.36,
+      "duration": 3.12,
+      "text": "here"
+    },
+    {
+      "start": 568.74,
+      "duration": 3.36,
+      "text": "I I do have a load balances so you can"
+    },
+    {
+      "start": 570.48,
+      "duration": 3.6,
+      "text": "also attach your load balances such that"
+    },
+    {
+      "start": 572.1,
+      "duration": 3.299,
+      "text": "every instance is created by Auto"
+    },
+    {
+      "start": 574.08,
+      "duration": 2.759,
+      "text": "scaling groups should be behind the load"
+    },
+    {
+      "start": 575.399,
+      "duration": 2.701,
+      "text": "balances and should be managed every"
+    },
+    {
+      "start": 576.839,
+      "duration": 3.421,
+      "text": "time if I refresh I should see the"
+    },
+    {
+      "start": 578.1,
+      "duration": 3.239,
+      "text": "instances here as well so if I I'm going"
+    },
+    {
+      "start": 580.26,
+      "duration": 2.579,
+      "text": "to say attach it to one existing load"
+    },
+    {
+      "start": 581.339,
+      "duration": 2.581,
+      "text": "balancer which is here and to do that"
+    },
+    {
+      "start": 582.839,
+      "duration": 3.601,
+      "text": "you need to select your site Target"
+    },
+    {
+      "start": 583.92,
+      "duration": 4.02,
+      "text": "Group which is this uh now I need to you"
+    },
+    {
+      "start": 586.44,
+      "duration": 3.48,
+      "text": "can also enable health checks on load"
+    },
+    {
+      "start": 587.94,
+      "duration": 3.12,
+      "text": "balances as well as on instance level I"
+    },
+    {
+      "start": 589.92,
+      "duration": 2.16,
+      "text": "don't need to enable monitoring but you"
+    },
+    {
+      "start": 591.06,
+      "duration": 3.779,
+      "text": "can also do that if you want to have"
+    },
+    {
+      "start": 592.08,
+      "duration": 5.22,
+      "text": "more metrics you can now you can select"
+    },
+    {
+      "start": 594.839,
+      "duration": 3.781,
+      "text": "how many instances do you want to uh do"
+    },
+    {
+      "start": 597.3,
+      "duration": 3.3,
+      "text": "you want Auto scaling group to create so"
+    },
+    {
+      "start": 598.62,
+      "duration": 3.42,
+      "text": "you can select Mini maximum it can it"
+    },
+    {
+      "start": 600.6,
+      "duration": 2.46,
+      "text": "should create five or a minimum it"
+    },
+    {
+      "start": 602.04,
+      "duration": 2.46,
+      "text": "should have two instances running all"
+    },
+    {
+      "start": 603.06,
+      "duration": 3.06,
+      "text": "the time so depending on this Auto"
+    },
+    {
+      "start": 604.5,
+      "duration": 3.36,
+      "text": "scaling group will create maximum five"
+    },
+    {
+      "start": 606.12,
+      "duration": 3.12,
+      "text": "servers after five servers even if the"
+    },
+    {
+      "start": 607.86,
+      "duration": 2.94,
+      "text": "traffic is more it will not create any"
+    },
+    {
+      "start": 609.24,
+      "duration": 3.539,
+      "text": "server you can do this to save your cost"
+    },
+    {
+      "start": 610.8,
+      "duration": 3.84,
+      "text": "next you can also select Target tracking"
+    },
+    {
+      "start": 612.779,
+      "duration": 3.481,
+      "text": "policy which means you can create more"
+    },
+    {
+      "start": 614.64,
+      "duration": 3.24,
+      "text": "servers or launch servers depending on"
+    },
+    {
+      "start": 616.26,
+      "duration": 3.42,
+      "text": "some certain criteria like CPU"
+    },
+    {
+      "start": 617.88,
+      "duration": 3.84,
+      "text": "utilization Network and network out or"
+    },
+    {
+      "start": 619.68,
+      "duration": 3.24,
+      "text": "application bouncer so for example here"
+    },
+    {
+      "start": 621.72,
+      "duration": 2.94,
+      "text": "if I explain you what is happening here"
+    },
+    {
+      "start": 622.92,
+      "duration": 3.78,
+      "text": "according to this if the CPU of the"
+    },
+    {
+      "start": 624.66,
+      "duration": 3.78,
+      "text": "first server is 50 then launch a new"
+    },
+    {
+      "start": 626.7,
+      "duration": 2.72,
+      "text": "server if the CPU of next second server"
+    },
+    {
+      "start": 628.44,
+      "duration": 4.32,
+      "text": "is 15"
+    },
+    {
+      "start": 629.42,
+      "duration": 5.8,
+      "text": "you can change this value to 50 to 75 or"
+    },
+    {
+      "start": 632.76,
+      "duration": 4.079,
+      "text": "anything also 80 whatever you want so"
+    },
+    {
+      "start": 635.22,
+      "duration": 2.94,
+      "text": "I'm going to click on next"
+    },
+    {
+      "start": 636.839,
+      "duration": 2.581,
+      "text": "and then if you want to set"
+    },
+    {
+      "start": 638.16,
+      "duration": 2.4,
+      "text": "notifications every time Auto ceiling"
+    },
+    {
+      "start": 639.42,
+      "duration": 3.539,
+      "text": "group is creating something you can also"
+    },
+    {
+      "start": 640.56,
+      "duration": 4.86,
+      "text": "do that here by choosing SNS which is"
+    },
+    {
+      "start": 642.959,
+      "duration": 3.421,
+      "text": "simple notification service for AWS I"
+    },
+    {
+      "start": 645.42,
+      "duration": 2.7,
+      "text": "don't want I don't want to do that so"
+    },
+    {
+      "start": 646.38,
+      "duration": 3.6,
+      "text": "I'm going to click on next here and then"
+    },
+    {
+      "start": 648.12,
+      "duration": 3.719,
+      "text": "I can click on next again to skip ad"
+    },
+    {
+      "start": 649.98,
+      "duration": 4.32,
+      "text": "skip adding tags and then create auto"
+    },
+    {
+      "start": 651.839,
+      "duration": 4.081,
+      "text": "scaling group once I do this"
+    },
+    {
+      "start": 654.3,
+      "duration": 3.0,
+      "text": "you can see"
+    },
+    {
+      "start": 655.92,
+      "duration": 3.359,
+      "text": "uh Auto scaling group is going to be"
+    },
+    {
+      "start": 657.3,
+      "duration": 4.08,
+      "text": "created and then I should have one"
+    },
+    {
+      "start": 659.279,
+      "duration": 3.901,
+      "text": "instance running as well so you can"
+    },
+    {
+      "start": 661.38,
+      "duration": 3.24,
+      "text": "check all the information about what is"
+    },
+    {
+      "start": 663.18,
+      "duration": 3.24,
+      "text": "link up here every time an instance is"
+    },
+    {
+      "start": 664.62,
+      "duration": 4.02,
+      "text": "created it will be seen in this section"
+    },
+    {
+      "start": 666.42,
+      "duration": 3.359,
+      "text": "activity so you can see the capacity we"
+    },
+    {
+      "start": 668.64,
+      "duration": 2.879,
+      "text": "have set the capacity to one so it's"
+    },
+    {
+      "start": 669.779,
+      "duration": 3.421,
+      "text": "going to change from zero to one and"
+    },
+    {
+      "start": 671.519,
+      "duration": 5.06,
+      "text": "after some time in our Target group as"
+    },
+    {
+      "start": 673.2,
+      "duration": 3.379,
+      "text": "well we will have new instances"
+    },
+    {
+      "start": 677.339,
+      "duration": 2.481,
+      "text": "so"
+    },
+    {
+      "start": 680.82,
+      "duration": 3.18,
+      "text": "you can see the new instance which has"
+    },
+    {
+      "start": 682.2,
+      "duration": 3.6,
+      "text": "been created is also in the Target group"
+    },
+    {
+      "start": 684.0,
+      "duration": 3.12,
+      "text": "so this is the instance created by Auto"
+    },
+    {
+      "start": 685.8,
+      "duration": 2.76,
+      "text": "scaling group even if I delete this"
+    },
+    {
+      "start": 687.12,
+      "duration": 2.94,
+      "text": "instance Auto scaling group will create"
+    },
+    {
+      "start": 688.56,
+      "duration": 2.94,
+      "text": "a new one to maintain the to maintain"
+    },
+    {
+      "start": 690.06,
+      "duration": 3.36,
+      "text": "the count of one"
+    },
+    {
+      "start": 691.5,
+      "duration": 3.779,
+      "text": "uh not only this once this instance is"
+    },
+    {
+      "start": 693.42,
+      "duration": 4.14,
+      "text": "created and healthy I should be able to"
+    },
+    {
+      "start": 695.279,
+      "duration": 3.781,
+      "text": "see it when I refresh when I refresh so"
+    },
+    {
+      "start": 697.56,
+      "duration": 2.88,
+      "text": "I should see three different instances"
+    },
+    {
+      "start": 699.06,
+      "duration": 3.18,
+      "text": "behind load balancer so I'm going to"
+    },
+    {
+      "start": 700.44,
+      "duration": 3.42,
+      "text": "refresh this is the first instance now"
+    },
+    {
+      "start": 702.24,
+      "duration": 3.539,
+      "text": "you can see this has been changed to Fe"
+    },
+    {
+      "start": 703.86,
+      "duration": 4.26,
+      "text": "which is second instance if I refresh"
+    },
+    {
+      "start": 705.779,
+      "duration": 3.661,
+      "text": "this has been changed to yeah this is"
+    },
+    {
+      "start": 708.12,
+      "duration": 3.6,
+      "text": "third difference so three different"
+    },
+    {
+      "start": 709.44,
+      "duration": 3.42,
+      "text": "instances I have here this is how you"
+    },
+    {
+      "start": 711.72,
+      "duration": 2.58,
+      "text": "can set up your load balances in order"
+    },
+    {
+      "start": 712.86,
+      "duration": 3.419,
+      "text": "scaling group to make your applications"
+    },
+    {
+      "start": 714.3,
+      "duration": 3.84,
+      "text": "highly available scalable and resilient"
+    },
+    {
+      "start": 716.279,
+      "duration": 4.56,
+      "text": "to failure uh resilient failure in the"
+    },
+    {
+      "start": 718.14,
+      "duration": 4.199,
+      "text": "sense means if I delete this server here"
+    },
+    {
+      "start": 720.839,
+      "duration": 3.481,
+      "text": "and"
+    },
+    {
+      "start": 722.339,
+      "duration": 3.421,
+      "text": "terminated Auto scaling group is going"
+    },
+    {
+      "start": 724.32,
+      "duration": 3.12,
+      "text": "to detect that and create a new one so"
+    },
+    {
+      "start": 725.76,
+      "duration": 3.0,
+      "text": "if I show you here in the auto scaling"
+    },
+    {
+      "start": 727.44,
+      "duration": 2.82,
+      "text": "group section here now in the order"
+    },
+    {
+      "start": 728.76,
+      "duration": 2.639,
+      "text": "scaling group I have defined it should"
+    },
+    {
+      "start": 730.26,
+      "duration": 2.519,
+      "text": "have one instance running all the time"
+    },
+    {
+      "start": 731.399,
+      "duration": 2.161,
+      "text": "no matter what so desired capacity is"
+    },
+    {
+      "start": 732.779,
+      "duration": 2.961,
+      "text": "one"
+    },
+    {
+      "start": 733.56,
+      "duration": 2.18,
+      "text": "foreign"
+    },
+    {
+      "start": 739.1,
+      "duration": 5.919,
+      "text": "so if you see here within some time"
+    },
+    {
+      "start": 742.5,
+      "duration": 4.98,
+      "text": "it is going to detect that and create a"
+    },
+    {
+      "start": 745.019,
+      "duration": 3.781,
+      "text": "new one right this is how you can set up"
+    },
+    {
+      "start": 747.48,
+      "duration": 3.419,
+      "text": "your appliances and auto screening group"
+    },
+    {
+      "start": 748.8,
+      "duration": 3.599,
+      "text": "if you have any questions any doubt feel"
+    },
+    {
+      "start": 750.899,
+      "duration": 3.12,
+      "text": "free to drop in the comment section make"
+    },
+    {
+      "start": 752.399,
+      "duration": 3.301,
+      "text": "sure I answer all of them I hope this"
+    },
+    {
+      "start": 754.019,
+      "duration": 3.961,
+      "text": "was informative thank you and have a"
+    },
+    {
+      "start": 755.7,
+      "duration": 5.28,
+      "text": "good day bye"
+    },
+    {
+      "start": 757.98,
+      "duration": 3.0,
+      "text": "foreign"
+    }
+  ]
+}

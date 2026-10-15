@@ -1,0 +1,5471 @@
+{
+  "video": {
+    "id": "nWDCWe5OwjQ",
+    "title": "Observability Devops Project - Opentelemetry Demo Application",
+    "url": "https://www.youtube.com/watch?v=nWDCWe5OwjQ",
+    "duration": 2480,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.599,
+      "duration": 4.521,
+      "text": "hey everyone and welcome to this brand"
+    },
+    {
+      "start": 2.48,
+      "duration": 4.439,
+      "text": "new devops project in this observability"
+    },
+    {
+      "start": 5.12,
+      "duration": 4.2,
+      "text": "project we are going to be deploying an"
+    },
+    {
+      "start": 6.919,
+      "duration": 5.361,
+      "text": "open Telemetry astronomy shop which"
+    },
+    {
+      "start": 9.32,
+      "duration": 4.88,
+      "text": "consists of 18 different microservices"
+    },
+    {
+      "start": 12.28,
+      "duration": 4.44,
+      "text": "talking about this particular project"
+    },
+    {
+      "start": 14.2,
+      "duration": 5.079,
+      "text": "I'm super excited I rated this project"
+    },
+    {
+      "start": 16.72,
+      "duration": 5.12,
+      "text": "as the first one like this is the number"
+    },
+    {
+      "start": 19.279,
+      "duration": 4.961,
+      "text": "one project on my list out of 10"
+    },
+    {
+      "start": 21.84,
+      "duration": 5.439,
+      "text": "projects because it's a very cool one we"
+    },
+    {
+      "start": 24.24,
+      "duration": 5.039,
+      "text": "will see as we progress in the video but"
+    },
+    {
+      "start": 27.279,
+      "duration": 4.16,
+      "text": "yeah very excited in this project we"
+    },
+    {
+      "start": 29.279,
+      "duration": 4.761,
+      "text": "will be collecting Petry data such as"
+    },
+    {
+      "start": 31.439,
+      "duration": 4.601,
+      "text": "logs traces and metrics from this"
+    },
+    {
+      "start": 34.04,
+      "duration": 4.519,
+      "text": "application to Showcase them on"
+    },
+    {
+      "start": 36.04,
+      "duration": 5.92,
+      "text": "Prometheus grafana for metrics open"
+    },
+    {
+      "start": 38.559,
+      "duration": 5.361,
+      "text": "search for logs Tres using Jager Locust"
+    },
+    {
+      "start": 41.96,
+      "duration": 4.2,
+      "text": "for load generation and many other"
+    },
+    {
+      "start": 43.92,
+      "duration": 4.279,
+      "text": "devops tools this is going to be an"
+    },
+    {
+      "start": 46.16,
+      "duration": 4.239,
+      "text": "amazing project which will showcase your"
+    },
+    {
+      "start": 48.199,
+      "duration": 3.961,
+      "text": "monitoring and observability skills so"
+    },
+    {
+      "start": 50.399,
+      "duration": 4.361,
+      "text": "make sure you complete this project and"
+    },
+    {
+      "start": 52.16,
+      "duration": 4.36,
+      "text": "also put this project on your resum"
+    },
+    {
+      "start": 54.76,
+      "duration": 3.759,
+      "text": "having this project on your resume can"
+    },
+    {
+      "start": 56.52,
+      "duration": 4.4,
+      "text": "definitely increase your chances of"
+    },
+    {
+      "start": 58.519,
+      "duration": 3.801,
+      "text": "getting a job or promotion"
+    },
+    {
+      "start": 60.92,
+      "duration": 3.72,
+      "text": "now to make sure you complete this"
+    },
+    {
+      "start": 62.32,
+      "duration": 4.56,
+      "text": "project without any problems or issues I"
+    },
+    {
+      "start": 64.64,
+      "duration": 4.2,
+      "text": "have this document created for you which"
+    },
+    {
+      "start": 66.88,
+      "duration": 4.44,
+      "text": "includes all the information along with"
+    },
+    {
+      "start": 68.84,
+      "duration": 4.44,
+      "text": "screenshots important links explaining"
+    },
+    {
+      "start": 71.32,
+      "duration": 3.64,
+      "text": "different important files so if you want"
+    },
+    {
+      "start": 73.28,
+      "duration": 4.0,
+      "text": "me to share this document with you"
+    },
+    {
+      "start": 74.96,
+      "duration": 4.28,
+      "text": "comment down observability devops"
+    },
+    {
+      "start": 77.28,
+      "duration": 4.4,
+      "text": "project in the comment section and I"
+    },
+    {
+      "start": 79.24,
+      "duration": 5.0,
+      "text": "will share this document as a PDF on"
+    },
+    {
+      "start": 81.68,
+      "duration": 5.759,
+      "text": "LinkedIn or in the video description"
+    },
+    {
+      "start": 84.24,
+      "duration": 5.8,
+      "text": "let's start okay so I'm here on my"
+    },
+    {
+      "start": 87.439,
+      "duration": 5.04,
+      "text": "computer screen and we are all set to to"
+    },
+    {
+      "start": 90.04,
+      "duration": 4.2,
+      "text": "get started with our devops project but"
+    },
+    {
+      "start": 92.479,
+      "duration": 3.441,
+      "text": "before we start with this observability"
+    },
+    {
+      "start": 94.24,
+      "duration": 3.28,
+      "text": "project I want to provide you with some"
+    },
+    {
+      "start": 95.92,
+      "duration": 4.159,
+      "text": "information that can help you complete"
+    },
+    {
+      "start": 97.52,
+      "duration": 3.84,
+      "text": "this project without any problem so if"
+    },
+    {
+      "start": 100.079,
+      "duration": 3.68,
+      "text": "you want to complete this project you"
+    },
+    {
+      "start": 101.36,
+      "duration": 4.399,
+      "text": "can use the official documentation from"
+    },
+    {
+      "start": 103.759,
+      "duration": 3.841,
+      "text": "the open Telemetry which has all the"
+    },
+    {
+      "start": 105.759,
+      "duration": 3.601,
+      "text": "information about the project different"
+    },
+    {
+      "start": 107.6,
+      "duration": 4.159,
+      "text": "microservices used in it what are"
+    },
+    {
+      "start": 109.36,
+      "duration": 4.039,
+      "text": "different programming languages U used"
+    },
+    {
+      "start": 111.759,
+      "duration": 3.32,
+      "text": "how do you deploy this application"
+    },
+    {
+      "start": 113.399,
+      "duration": 3.801,
+      "text": "everything is present on this official"
+    },
+    {
+      "start": 115.079,
+      "duration": 4.121,
+      "text": "documentation although I have created my"
+    },
+    {
+      "start": 117.2,
+      "duration": 3.72,
+      "text": "own document to make it more easy"
+    },
+    {
+      "start": 119.2,
+      "duration": 4.32,
+      "text": "providing you more information about the"
+    },
+    {
+      "start": 120.92,
+      "duration": 4.68,
+      "text": "files that are important with respect to"
+    },
+    {
+      "start": 123.52,
+      "duration": 4.4,
+      "text": "devops engineer so I've also explained"
+    },
+    {
+      "start": 125.6,
+      "duration": 3.68,
+      "text": "Dr compos file in this and the conflict"
+    },
+    {
+      "start": 127.92,
+      "duration": 3.6,
+      "text": "file so if you want me to share this"
+    },
+    {
+      "start": 129.28,
+      "duration": 4.72,
+      "text": "document com and down observability"
+    },
+    {
+      "start": 131.52,
+      "duration": 4.719,
+      "text": "devops project and we are also going to"
+    },
+    {
+      "start": 134.0,
+      "duration": 3.959,
+      "text": "be using this GitHub repository this is"
+    },
+    {
+      "start": 136.239,
+      "duration": 4.161,
+      "text": "the official repository for the open"
+    },
+    {
+      "start": 137.959,
+      "duration": 4.721,
+      "text": "Telemetry demo app and we will be using"
+    },
+    {
+      "start": 140.4,
+      "duration": 4.24,
+      "text": "this to deploy our application now that"
+    },
+    {
+      "start": 142.68,
+      "duration": 4.96,
+      "text": "you understood this let's get into the"
+    },
+    {
+      "start": 144.64,
+      "duration": 5.76,
+      "text": "project so what is open Telemetry open"
+    },
+    {
+      "start": 147.64,
+      "duration": 5.28,
+      "text": "Telemetry is a cloud native tool used to"
+    },
+    {
+      "start": 150.4,
+      "duration": 5.76,
+      "text": "collect Telemetry data which includes"
+    },
+    {
+      "start": 152.92,
+      "duration": 5.319,
+      "text": "traces metrics logs from an application"
+    },
+    {
+      "start": 156.16,
+      "duration": 4.68,
+      "text": "and then show it onto different"
+    },
+    {
+      "start": 158.239,
+      "duration": 5.881,
+      "text": "monitoring platforms like romeus grafana"
+    },
+    {
+      "start": 160.84,
+      "duration": 5.08,
+      "text": "Splunk data dog anything open Telemetry"
+    },
+    {
+      "start": 164.12,
+      "duration": 3.52,
+      "text": "is supported by many different"
+    },
+    {
+      "start": 165.92,
+      "duration": 4.399,
+      "text": "Monitoring Solutions so you can see the"
+    },
+    {
+      "start": 167.64,
+      "duration": 7.0,
+      "text": "list here it includes Alibaba Cloud app"
+    },
+    {
+      "start": 170.319,
+      "duration": 6.28,
+      "text": "Dynamics aspecto launch. din TR data do"
+    },
+    {
+      "start": 174.64,
+      "duration": 4.04,
+      "text": "coral Logics all the different platforms"
+    },
+    {
+      "start": 176.599,
+      "duration": 4.72,
+      "text": "are supported by open Telemetry which"
+    },
+    {
+      "start": 178.68,
+      "duration": 4.16,
+      "text": "makes open telemetry vendor agnostic so"
+    },
+    {
+      "start": 181.319,
+      "duration": 4.28,
+      "text": "you don't have to be using a particular"
+    },
+    {
+      "start": 182.84,
+      "duration": 4.759,
+      "text": "tool to get started with open dietry you"
+    },
+    {
+      "start": 185.599,
+      "duration": 4.321,
+      "text": "can use any tool by default this"
+    },
+    {
+      "start": 187.599,
+      "duration": 5.521,
+      "text": "application uses promethus grafana per"
+    },
+    {
+      "start": 189.92,
+      "duration": 5.879,
+      "text": "metric logs are done by open search and"
+    },
+    {
+      "start": 193.12,
+      "duration": 5.24,
+      "text": "traces are done using Jager although you"
+    },
+    {
+      "start": 195.799,
+      "duration": 4.921,
+      "text": "can integrate open Telemetry demo"
+    },
+    {
+      "start": 198.36,
+      "duration": 4.28,
+      "text": "project with any of these tools I will"
+    },
+    {
+      "start": 200.72,
+      "duration": 4.28,
+      "text": "show you an example as well along with"
+    },
+    {
+      "start": 202.64,
+      "duration": 5.2,
+      "text": "this open Telemetry is also the second"
+    },
+    {
+      "start": 205.0,
+      "duration": 4.92,
+      "text": "best project in the cncf landscape after"
+    },
+    {
+      "start": 207.84,
+      "duration": 4.16,
+      "text": "kubernetes which makes this project"
+    },
+    {
+      "start": 209.92,
+      "duration": 4.64,
+      "text": "special so you need to have open"
+    },
+    {
+      "start": 212.0,
+      "duration": 4.519,
+      "text": "Telemetry knowledge as a devops engineer"
+    },
+    {
+      "start": 214.56,
+      "duration": 4.44,
+      "text": "because it is a very popular tool and"
+    },
+    {
+      "start": 216.519,
+      "duration": 4.8,
+      "text": "having this project on your resume will"
+    },
+    {
+      "start": 219.0,
+      "duration": 4.519,
+      "text": "obviously make it shine this is how open"
+    },
+    {
+      "start": 221.319,
+      "duration": 3.881,
+      "text": "Telemetry work so open Telemetry has a"
+    },
+    {
+      "start": 223.519,
+      "duration": 3.761,
+      "text": "collector which is going to receive the"
+    },
+    {
+      "start": 225.2,
+      "duration": 4.72,
+      "text": "data which includes the monitoring data"
+    },
+    {
+      "start": 227.28,
+      "duration": 4.12,
+      "text": "such as logs traces and metrics from an"
+    },
+    {
+      "start": 229.92,
+      "duration": 4.239,
+      "text": "application which could be running on a"
+    },
+    {
+      "start": 231.4,
+      "duration": 4.839,
+      "text": "system or a kubernetes cluster process"
+    },
+    {
+      "start": 234.159,
+      "duration": 4.16,
+      "text": "that data and then export it onto"
+    },
+    {
+      "start": 236.239,
+      "duration": 4.321,
+      "text": "monitoring platform and it can work with"
+    },
+    {
+      "start": 238.319,
+      "duration": 4.84,
+      "text": "any monitoring platform it can also work"
+    },
+    {
+      "start": 240.56,
+      "duration": 5.399,
+      "text": "with any programming language in fact if"
+    },
+    {
+      "start": 243.159,
+      "duration": 4.28,
+      "text": "you check this document here all these"
+    },
+    {
+      "start": 245.959,
+      "duration": 3.321,
+      "text": "different microservices which includes"
+    },
+    {
+      "start": 247.439,
+      "duration": 4.08,
+      "text": "Accounting Service ad service card"
+    },
+    {
+      "start": 249.28,
+      "duration": 3.56,
+      "text": "service checkout email frontend all of"
+    },
+    {
+      "start": 251.519,
+      "duration": 3.481,
+      "text": "them are created using different"
+    },
+    {
+      "start": 252.84,
+      "duration": 4.56,
+      "text": "programming language just to Showcase"
+    },
+    {
+      "start": 255.0,
+      "duration": 4.359,
+      "text": "that open Telemetry can work properly"
+    },
+    {
+      "start": 257.4,
+      "duration": 3.72,
+      "text": "even with different programming language"
+    },
+    {
+      "start": 259.359,
+      "duration": 4.161,
+      "text": "so we can see net is used to create"
+    },
+    {
+      "start": 261.12,
+      "duration": 4.72,
+      "text": "Accounting Service also card service"
+    },
+    {
+      "start": 263.52,
+      "duration": 4.44,
+      "text": "goang is used for checkout product"
+    },
+    {
+      "start": 265.84,
+      "duration": 3.96,
+      "text": "catalog service Java is used for ad"
+    },
+    {
+      "start": 267.96,
+      "duration": 4.2,
+      "text": "service JavaScript for front end and"
+    },
+    {
+      "start": 269.8,
+      "duration": 3.92,
+      "text": "payment service so these are all the"
+    },
+    {
+      "start": 272.16,
+      "duration": 3.599,
+      "text": "information about different programming"
+    },
+    {
+      "start": 273.72,
+      "duration": 3.96,
+      "text": "languages used to create this"
+    },
+    {
+      "start": 275.759,
+      "duration": 4.041,
+      "text": "microservices although as a devops"
+    },
+    {
+      "start": 277.68,
+      "duration": 4.28,
+      "text": "engineer you don't need to go deep or"
+    },
+    {
+      "start": 279.8,
+      "duration": 3.959,
+      "text": "understand the code used to create these"
+    },
+    {
+      "start": 281.96,
+      "duration": 3.959,
+      "text": "microservices because we are only"
+    },
+    {
+      "start": 283.759,
+      "duration": 3.841,
+      "text": "responsible to deploy the application"
+    },
+    {
+      "start": 285.919,
+      "duration": 3.28,
+      "text": "and to monitor them to make sure"
+    },
+    {
+      "start": 287.6,
+      "duration": 3.84,
+      "text": "everything is working fine so you don't"
+    },
+    {
+      "start": 289.199,
+      "duration": 4.641,
+      "text": "need to necessarily understand each and"
+    },
+    {
+      "start": 291.44,
+      "duration": 4.64,
+      "text": "every code about these microservice it"
+    },
+    {
+      "start": 293.84,
+      "duration": 3.639,
+      "text": "is out of scope so now that we have all"
+    },
+    {
+      "start": 296.08,
+      "duration": 3.36,
+      "text": "this information about the project we"
+    },
+    {
+      "start": 297.479,
+      "duration": 5.0,
+      "text": "are ready to get started and to start"
+    },
+    {
+      "start": 299.44,
+      "duration": 5.479,
+      "text": "this project you will require an AWS"
+    },
+    {
+      "start": 302.479,
+      "duration": 5.201,
+      "text": "Cloud because we are doing this on AWS"
+    },
+    {
+      "start": 304.919,
+      "duration": 4.921,
+      "text": "Cloud using Docker and you can do this"
+    },
+    {
+      "start": 307.68,
+      "duration": 4.16,
+      "text": "project either using Docker or using"
+    },
+    {
+      "start": 309.84,
+      "duration": 4.12,
+      "text": "kubernetes so there are two options you"
+    },
+    {
+      "start": 311.84,
+      "duration": 5.0,
+      "text": "can use we are going to be doing this"
+    },
+    {
+      "start": 313.96,
+      "duration": 4.959,
+      "text": "using Docker on AWS Cloud if you have a"
+    },
+    {
+      "start": 316.84,
+      "duration": 4.4,
+      "text": "good machine you can also do it locally"
+    },
+    {
+      "start": 318.919,
+      "duration": 3.881,
+      "text": "on your local machine if you want to or"
+    },
+    {
+      "start": 321.24,
+      "duration": 3.92,
+      "text": "you can also use mini Cube if you want"
+    },
+    {
+      "start": 322.8,
+      "duration": 4.36,
+      "text": "to do it on kubernetes but for now to"
+    },
+    {
+      "start": 325.16,
+      "duration": 4.64,
+      "text": "make things easy we will do it on the"
+    },
+    {
+      "start": 327.16,
+      "duration": 4.24,
+      "text": "cloud so you will need an AWS Cloud for"
+    },
+    {
+      "start": 329.8,
+      "duration": 4.48,
+      "text": "this and I'm going to log into my cloud"
+    },
+    {
+      "start": 331.4,
+      "duration": 5.2,
+      "text": "now so this is my AWS account let's go"
+    },
+    {
+      "start": 334.28,
+      "duration": 3.919,
+      "text": "to ec2 service it stands for elastic"
+    },
+    {
+      "start": 336.6,
+      "duration": 3.4,
+      "text": "compute Cloud we are going to be"
+    },
+    {
+      "start": 338.199,
+      "duration": 3.56,
+      "text": "creating a Linux server to deploy our"
+    },
+    {
+      "start": 340.0,
+      "duration": 4.4,
+      "text": "application so I'm going to click on"
+    },
+    {
+      "start": 341.759,
+      "duration": 4.56,
+      "text": "instances here right now we don't have"
+    },
+    {
+      "start": 344.4,
+      "duration": 3.639,
+      "text": "any instances let's click on launch"
+    },
+    {
+      "start": 346.319,
+      "duration": 5.0,
+      "text": "instance for this project you will"
+    },
+    {
+      "start": 348.039,
+      "duration": 4.841,
+      "text": "require an instance of minimum 8 GB Ram"
+    },
+    {
+      "start": 351.319,
+      "duration": 3.961,
+      "text": "because we are going to be deploying"
+    },
+    {
+      "start": 352.88,
+      "duration": 3.96,
+      "text": "different microservices along with Kafka"
+    },
+    {
+      "start": 355.28,
+      "duration": 3.639,
+      "text": "Kafka requires you to have good amount"
+    },
+    {
+      "start": 356.84,
+      "duration": 4.32,
+      "text": "of ram so we will be using a bigger"
+    },
+    {
+      "start": 358.919,
+      "duration": 4.481,
+      "text": "instance which makes this project not"
+    },
+    {
+      "start": 361.16,
+      "duration": 4.44,
+      "text": "free so this project is not free to your"
+    },
+    {
+      "start": 363.4,
+      "duration": 4.079,
+      "text": "project you will get some charge but the"
+    },
+    {
+      "start": 365.6,
+      "duration": 3.28,
+      "text": "charge is worth it because this is an"
+    },
+    {
+      "start": 367.479,
+      "duration": 3.201,
+      "text": "excellent project that will teach you a"
+    },
+    {
+      "start": 368.88,
+      "duration": 3.439,
+      "text": "lot of things so don't worry about the"
+    },
+    {
+      "start": 370.68,
+      "duration": 4.16,
+      "text": "charge just do this project and showcase"
+    },
+    {
+      "start": 372.319,
+      "duration": 6.16,
+      "text": "your learnings on LinkedIn Twitter or on"
+    },
+    {
+      "start": 374.84,
+      "duration": 6.32,
+      "text": "your resume let's name This Server as"
+    },
+    {
+      "start": 378.479,
+      "duration": 5.16,
+      "text": "otel observability"
+    },
+    {
+      "start": 381.16,
+      "duration": 5.4,
+      "text": "project you can name this anything you"
+    },
+    {
+      "start": 383.639,
+      "duration": 6.56,
+      "text": "like so I'm going to be using UB 2 and I"
+    },
+    {
+      "start": 386.56,
+      "duration": 6.759,
+      "text": "will be using UB 222"
+    },
+    {
+      "start": 390.199,
+      "duration": 5.44,
+      "text": "so this is the ub22 version let's click"
+    },
+    {
+      "start": 393.319,
+      "duration": 5.081,
+      "text": "on confirm"
+    },
+    {
+      "start": 395.639,
+      "duration": 4.921,
+      "text": "changes all right as I said we want to"
+    },
+    {
+      "start": 398.4,
+      "duration": 4.68,
+      "text": "be using a server that should have more"
+    },
+    {
+      "start": 400.56,
+      "duration": 5.199,
+      "text": "than 8 GB of RAM we will go with t2x"
+    },
+    {
+      "start": 403.08,
+      "duration": 5.64,
+      "text": "large which is 16 GB of RAM and 4"
+    },
+    {
+      "start": 405.759,
+      "duration": 4.84,
+      "text": "CPU so this is not free tier as we can"
+    },
+    {
+      "start": 408.72,
+      "duration": 3.12,
+      "text": "see here once you complete this project"
+    },
+    {
+      "start": 410.599,
+      "duration": 2.72,
+      "text": "you can go ahead with deleting the"
+    },
+    {
+      "start": 411.84,
+      "duration": 3.16,
+      "text": "server and I will also show you how to"
+    },
+    {
+      "start": 413.319,
+      "duration": 3.961,
+      "text": "delete it but don't worry about the"
+    },
+    {
+      "start": 415.0,
+      "duration": 4.199,
+      "text": "charge for now because this is a project"
+    },
+    {
+      "start": 417.28,
+      "duration": 3.639,
+      "text": "that is worth the charge after you"
+    },
+    {
+      "start": 419.199,
+      "duration": 3.161,
+      "text": "select the instance type you also need"
+    },
+    {
+      "start": 420.919,
+      "duration": 3.361,
+      "text": "to attach a key pair because we are"
+    },
+    {
+      "start": 422.36,
+      "duration": 3.72,
+      "text": "going to be connecting to this instance"
+    },
+    {
+      "start": 424.28,
+      "duration": 3.12,
+      "text": "and running some commands so if you"
+    },
+    {
+      "start": 426.08,
+      "duration": 3.559,
+      "text": "don't have a key pair you can create a"
+    },
+    {
+      "start": 427.4,
+      "duration": 4.4,
+      "text": "new key PAAD but if you have an existing"
+    },
+    {
+      "start": 429.639,
+      "duration": 4.28,
+      "text": "one you can attach that from here so I'm"
+    },
+    {
+      "start": 431.8,
+      "duration": 4.0,
+      "text": "going to be using this key and we are"
+    },
+    {
+      "start": 433.919,
+      "duration": 5.241,
+      "text": "going to set the network settings as"
+    },
+    {
+      "start": 435.8,
+      "duration": 6.32,
+      "text": "default default VPC default subnet just"
+    },
+    {
+      "start": 439.16,
+      "duration": 4.28,
+      "text": "make sure your IP address is enabled for"
+    },
+    {
+      "start": 442.12,
+      "duration": 3.28,
+      "text": "Security Group I'm going to be creating"
+    },
+    {
+      "start": 443.44,
+      "duration": 4.36,
+      "text": "a new Security Group this application"
+    },
+    {
+      "start": 445.4,
+      "duration": 5.04,
+      "text": "runs on Port 880 so we need to have Port"
+    },
+    {
+      "start": 447.8,
+      "duration": 4.56,
+      "text": "880 allowed in our security group I'm"
+    },
+    {
+      "start": 450.44,
+      "duration": 4.56,
+      "text": "going to be adding that Security Group"
+    },
+    {
+      "start": 452.36,
+      "duration": 4.119,
+      "text": "rule after the instance is created so"
+    },
+    {
+      "start": 455.0,
+      "duration": 4.28,
+      "text": "let's go ahead for storage I'm going to"
+    },
+    {
+      "start": 456.479,
+      "duration": 5.12,
+      "text": "be giving 15 GB of storage and then"
+    },
+    {
+      "start": 459.28,
+      "duration": 4.759,
+      "text": "click on launch instance this will go"
+    },
+    {
+      "start": 461.599,
+      "duration": 4.081,
+      "text": "ahead and start our instance once the"
+    },
+    {
+      "start": 464.039,
+      "duration": 3.88,
+      "text": "instance is ready we are going to be"
+    },
+    {
+      "start": 465.68,
+      "duration": 4.959,
+      "text": "deploying our application and then check"
+    },
+    {
+      "start": 467.919,
+      "duration": 6.521,
+      "text": "metrics logs and traces so this is our"
+    },
+    {
+      "start": 470.639,
+      "duration": 6.201,
+      "text": "instance ID let's go to the instance"
+    },
+    {
+      "start": 474.44,
+      "duration": 4.319,
+      "text": "now so you can see instance is right now"
+    },
+    {
+      "start": 476.84,
+      "duration": 4.079,
+      "text": "in pending State we have to wait for the"
+    },
+    {
+      "start": 478.759,
+      "duration": 3.521,
+      "text": "instance to come up in running State"
+    },
+    {
+      "start": 480.919,
+      "duration": 2.881,
+      "text": "till the time it is going to come up in"
+    },
+    {
+      "start": 482.28,
+      "duration": 4.039,
+      "text": "running State let's change the security"
+    },
+    {
+      "start": 483.8,
+      "duration": 5.0,
+      "text": "group by adding a security group rule"
+    },
+    {
+      "start": 486.319,
+      "duration": 3.56,
+      "text": "for port 8080 because the application is"
+    },
+    {
+      "start": 488.8,
+      "duration": 3.92,
+      "text": "running on"
+    },
+    {
+      "start": 489.879,
+      "duration": 6.16,
+      "text": "4880 click on edit inbound"
+    },
+    {
+      "start": 492.72,
+      "duration": 4.879,
+      "text": "rules and add a rule custom"
+    },
+    {
+      "start": 496.039,
+      "duration": 4.961,
+      "text": "TCP"
+    },
+    {
+      "start": 497.599,
+      "duration": 6.241,
+      "text": "8080 okay let's click on anywhere ipv4"
+    },
+    {
+      "start": 501.0,
+      "duration": 5.44,
+      "text": "and choose this as app"
+    },
+    {
+      "start": 503.84,
+      "duration": 5.12,
+      "text": "Port okay let's click on Save rules now"
+    },
+    {
+      "start": 506.44,
+      "duration": 3.8,
+      "text": "and wait for the instance to be ready so"
+    },
+    {
+      "start": 508.96,
+      "duration": 3.24,
+      "text": "as We Know we can deploy this"
+    },
+    {
+      "start": 510.24,
+      "duration": 4.12,
+      "text": "application either using Docker or"
+    },
+    {
+      "start": 512.2,
+      "duration": 4.0,
+      "text": "kubernetes in fact you can also deploy"
+    },
+    {
+      "start": 514.36,
+      "duration": 4.76,
+      "text": "this application using make if you have"
+    },
+    {
+      "start": 516.2,
+      "duration": 4.24,
+      "text": "make installed in your machine once you"
+    },
+    {
+      "start": 519.12,
+      "duration": 5.279,
+      "text": "have this application deployed you can"
+    },
+    {
+      "start": 520.44,
+      "duration": 6.12,
+      "text": "access application on at8 grafana on 8/"
+    },
+    {
+      "start": 524.399,
+      "duration": 5.88,
+      "text": "grafana the fake load generator which is"
+    },
+    {
+      "start": 526.56,
+      "duration": 5.839,
+      "text": "Locust using 8/ load gen Jagger using"
+    },
+    {
+      "start": 530.279,
+      "duration": 3.12,
+      "text": "this URL so these are the different end"
+    },
+    {
+      "start": 532.399,
+      "duration": 3.281,
+      "text": "points on which we are going to be"
+    },
+    {
+      "start": 533.399,
+      "duration": 4.361,
+      "text": "accessing all the applications we are"
+    },
+    {
+      "start": 535.68,
+      "duration": 4.0,
+      "text": "going to be doing this through Docker so"
+    },
+    {
+      "start": 537.76,
+      "duration": 5.12,
+      "text": "we also need to have Docker composed"
+    },
+    {
+      "start": 539.68,
+      "duration": 5.719,
+      "text": "installed in our uh machine or in our"
+    },
+    {
+      "start": 542.88,
+      "duration": 4.84,
+      "text": "server to instance as you can see this"
+    },
+    {
+      "start": 545.399,
+      "duration": 4.88,
+      "text": "is why we using a bigger instance other"
+    },
+    {
+      "start": 547.72,
+      "duration": 3.96,
+      "text": "than using a T2 micro free tier option"
+    },
+    {
+      "start": 550.279,
+      "duration": 3.321,
+      "text": "so let's go back and connect to our"
+    },
+    {
+      "start": 551.68,
+      "duration": 3.839,
+      "text": "instance I hope now it is ready so I'm"
+    },
+    {
+      "start": 553.6,
+      "duration": 4.08,
+      "text": "going to refresh this"
+    },
+    {
+      "start": 555.519,
+      "duration": 4.201,
+      "text": "page and it is running so I'm going to"
+    },
+    {
+      "start": 557.68,
+      "duration": 3.279,
+      "text": "click on connect to connect this"
+    },
+    {
+      "start": 559.72,
+      "duration": 3.16,
+      "text": "instance you can either do it through"
+    },
+    {
+      "start": 560.959,
+      "duration": 4.32,
+      "text": "your local machine like using your"
+    },
+    {
+      "start": 562.88,
+      "duration": 4.84,
+      "text": "terminal or a Powers shell using puty"
+    },
+    {
+      "start": 565.279,
+      "duration": 4.721,
+      "text": "mobile EXT anything it will still work"
+    },
+    {
+      "start": 567.72,
+      "duration": 4.64,
+      "text": "the same for now to make easy I'm going"
+    },
+    {
+      "start": 570.0,
+      "duration": 4.2,
+      "text": "to be using ec2 instance connect so"
+    },
+    {
+      "start": 572.36,
+      "duration": 4.36,
+      "text": "let's click on connect option and this"
+    },
+    {
+      "start": 574.2,
+      "duration": 5.16,
+      "text": "will bring us inside the"
+    },
+    {
+      "start": 576.72,
+      "duration": 5.92,
+      "text": "server okay so the server is ready I'm"
+    },
+    {
+      "start": 579.36,
+      "duration": 7.8,
+      "text": "going to run the command sudo AP"
+    },
+    {
+      "start": 582.64,
+      "duration": 6.8,
+      "text": "update iph Y and AP upgrade to make sure"
+    },
+    {
+      "start": 587.16,
+      "duration": 5.08,
+      "text": "I'm using all the updated packages so"
+    },
+    {
+      "start": 589.44,
+      "duration": 4.6,
+      "text": "this is a good practice uh before you"
+    },
+    {
+      "start": 592.24,
+      "duration": 4.08,
+      "text": "start with any new server to make sure"
+    },
+    {
+      "start": 594.04,
+      "duration": 3.96,
+      "text": "all the packages are updated in case you"
+    },
+    {
+      "start": 596.32,
+      "duration": 3.72,
+      "text": "got some issues later on when you do"
+    },
+    {
+      "start": 598.0,
+      "duration": 4.0,
+      "text": "this project so we to update all the"
+    },
+    {
+      "start": 600.04,
+      "duration": 3.72,
+      "text": "packages once the packages update we are"
+    },
+    {
+      "start": 602.0,
+      "duration": 4.04,
+      "text": "going to go ahead with next commands"
+    },
+    {
+      "start": 603.76,
+      "duration": 3.759,
+      "text": "which is to clone the repository so we"
+    },
+    {
+      "start": 606.04,
+      "duration": 3.76,
+      "text": "are going to be using the official"
+    },
+    {
+      "start": 607.519,
+      "duration": 4.32,
+      "text": "repository uh provided by open"
+    },
+    {
+      "start": 609.8,
+      "duration": 3.08,
+      "text": "Elementary team which you can find here"
+    },
+    {
+      "start": 611.839,
+      "duration": 3.201,
+      "text": "the link is going to be in the"
+    },
+    {
+      "start": 612.88,
+      "duration": 3.68,
+      "text": "description so we will be using this"
+    },
+    {
+      "start": 615.04,
+      "duration": 4.039,
+      "text": "repo and we need to clone this"
+    },
+    {
+      "start": 616.56,
+      "duration": 4.839,
+      "text": "repository to get all these files from"
+    },
+    {
+      "start": 619.079,
+      "duration": 6.32,
+      "text": "here into our server so I'm going to"
+    },
+    {
+      "start": 621.399,
+      "duration": 7.161,
+      "text": "copy this and run the get clone command"
+    },
+    {
+      "start": 625.399,
+      "duration": 6.201,
+      "text": "get clone and the repository all these"
+    },
+    {
+      "start": 628.56,
+      "duration": 5.519,
+      "text": "commands are already mentioned in the uh"
+    },
+    {
+      "start": 631.6,
+      "duration": 4.0,
+      "text": "documentation here so I've already"
+    },
+    {
+      "start": 634.079,
+      "duration": 3.521,
+      "text": "mentioned the different commands that"
+    },
+    {
+      "start": 635.6,
+      "duration": 4.239,
+      "text": "you were going to run which is to close"
+    },
+    {
+      "start": 637.6,
+      "duration": 4.28,
+      "text": "the repository and then run the open"
+    },
+    {
+      "start": 639.839,
+      "duration": 4.161,
+      "text": "Telemetry demo also explaining the"
+    },
+    {
+      "start": 641.88,
+      "duration": 4.079,
+      "text": "docker compos file so I will explain you"
+    },
+    {
+      "start": 644.0,
+      "duration": 4.12,
+      "text": "Docker compos file as well because that"
+    },
+    {
+      "start": 645.959,
+      "duration": 4.521,
+      "text": "is a file which we will use to deploy"
+    },
+    {
+      "start": 648.12,
+      "duration": 4.76,
+      "text": "our application so now Theo is cloned if"
+    },
+    {
+      "start": 650.48,
+      "duration": 5.039,
+      "text": "I do LS you can see a folder created"
+    },
+    {
+      "start": 652.88,
+      "duration": 4.6,
+      "text": "let's go inside this and if I do LS now"
+    },
+    {
+      "start": 655.519,
+      "duration": 4.041,
+      "text": "you can see all the different files the"
+    },
+    {
+      "start": 657.48,
+      "duration": 4.28,
+      "text": "most important file now is going to be"
+    },
+    {
+      "start": 659.56,
+      "duration": 3.44,
+      "text": "Docker compos file so if you're new to"
+    },
+    {
+      "start": 661.76,
+      "duration": 3.84,
+      "text": "Docker or if you don't know what is"
+    },
+    {
+      "start": 663.0,
+      "duration": 4.36,
+      "text": "Docker compose file a Docker compos file"
+    },
+    {
+      "start": 665.6,
+      "duration": 3.88,
+      "text": "is a file that contains information"
+    },
+    {
+      "start": 667.36,
+      "duration": 3.52,
+      "text": "about different services and how do you"
+    },
+    {
+      "start": 669.48,
+      "duration": 3.76,
+      "text": "want to deploy them what should be the"
+    },
+    {
+      "start": 670.88,
+      "duration": 3.759,
+      "text": "dependency what image should be used"
+    },
+    {
+      "start": 673.24,
+      "duration": 3.159,
+      "text": "what network should be used all the"
+    },
+    {
+      "start": 674.639,
+      "duration": 4.44,
+      "text": "information is there let me show you"
+    },
+    {
+      "start": 676.399,
+      "duration": 4.601,
+      "text": "this file and also explain you so this"
+    },
+    {
+      "start": 679.079,
+      "duration": 3.721,
+      "text": "is the do compos file we will be using"
+    },
+    {
+      "start": 681.0,
+      "duration": 4.56,
+      "text": "to deploy all the different services"
+    },
+    {
+      "start": 682.8,
+      "duration": 4.08,
+      "text": "like accounting service ad service"
+    },
+    {
+      "start": 685.56,
+      "duration": 3.44,
+      "text": "everything that is required for our"
+    },
+    {
+      "start": 686.88,
+      "duration": 4.24,
+      "text": "application to run in this Docker compos"
+    },
+    {
+      "start": 689.0,
+      "duration": 3.6,
+      "text": "file but it starts with loging"
+    },
+    {
+      "start": 691.12,
+      "duration": 3.8,
+      "text": "information that is going to be used by"
+    },
+    {
+      "start": 692.6,
+      "duration": 4.359,
+      "text": "every service so here is a loging"
+    },
+    {
+      "start": 694.92,
+      "duration": 3.32,
+      "text": "information then we Define a network"
+    },
+    {
+      "start": 696.959,
+      "duration": 3.201,
+      "text": "that is going to be used by different"
+    },
+    {
+      "start": 698.24,
+      "duration": 3.159,
+      "text": "services so that they can talk to each"
+    },
+    {
+      "start": 700.16,
+      "duration": 3.08,
+      "text": "other and communication should be"
+    },
+    {
+      "start": 701.399,
+      "duration": 4.401,
+      "text": "handled properly so we are creating a"
+    },
+    {
+      "start": 703.24,
+      "duration": 4.64,
+      "text": "network Docker network of the type"
+    },
+    {
+      "start": 705.8,
+      "duration": 3.839,
+      "text": "bridge and the name as open Telemetry"
+    },
+    {
+      "start": 707.88,
+      "duration": 3.12,
+      "text": "demo then we are defining all the"
+    },
+    {
+      "start": 709.639,
+      "duration": 3.481,
+      "text": "different services so we start with"
+    },
+    {
+      "start": 711.0,
+      "duration": 4.24,
+      "text": "Accounting Service Define what image is"
+    },
+    {
+      "start": 713.12,
+      "duration": 4.56,
+      "text": "going to be used what are the dependency"
+    },
+    {
+      "start": 715.24,
+      "duration": 3.64,
+      "text": "for this particular service what are"
+    },
+    {
+      "start": 717.68,
+      "duration": 2.2,
+      "text": "environment variables all this"
+    },
+    {
+      "start": 718.88,
+      "duration": 3.36,
+      "text": "information"
+    },
+    {
+      "start": 719.88,
+      "duration": 4.04,
+      "text": "so we create a dependency in order to"
+    },
+    {
+      "start": 722.24,
+      "duration": 3.24,
+      "text": "which server should be deployed first"
+    },
+    {
+      "start": 723.92,
+      "duration": 3.64,
+      "text": "which should be deployed second and so"
+    },
+    {
+      "start": 725.48,
+      "duration": 4.0,
+      "text": "on so you can see all the information"
+    },
+    {
+      "start": 727.56,
+      "duration": 4.32,
+      "text": "about different services in this Docker"
+    },
+    {
+      "start": 729.48,
+      "duration": 4.76,
+      "text": "composed. yml file if you want to know"
+    },
+    {
+      "start": 731.88,
+      "duration": 4.72,
+      "text": "more information you can read them here"
+    },
+    {
+      "start": 734.24,
+      "duration": 5.12,
+      "text": "in this document so I've explained the"
+    },
+    {
+      "start": 736.6,
+      "duration": 5.479,
+      "text": "logging Information Network Services in"
+    },
+    {
+      "start": 739.36,
+      "duration": 4.52,
+      "text": "fact I've explained each service U with"
+    },
+    {
+      "start": 742.079,
+      "duration": 3.921,
+      "text": "proper information so if you want to go"
+    },
+    {
+      "start": 743.88,
+      "duration": 4.72,
+      "text": "deep and understand Locker compos file"
+    },
+    {
+      "start": 746.0,
+      "duration": 3.72,
+      "text": "properly you can check this document out"
+    },
+    {
+      "start": 748.6,
+      "duration": 3.12,
+      "text": "because I don't want you to just"
+    },
+    {
+      "start": 749.72,
+      "duration": 3.559,
+      "text": "complete the project watching this video"
+    },
+    {
+      "start": 751.72,
+      "duration": 3.52,
+      "text": "you should be able to understand what"
+    },
+    {
+      "start": 753.279,
+      "duration": 3.601,
+      "text": "you are doing and why you are doing it"
+    },
+    {
+      "start": 755.24,
+      "duration": 3.599,
+      "text": "that's what will make you learn this"
+    },
+    {
+      "start": 756.88,
+      "duration": 3.36,
+      "text": "project and understand things properly"
+    },
+    {
+      "start": 758.839,
+      "duration": 3.521,
+      "text": "so make sure you understand this Docker"
+    },
+    {
+      "start": 760.24,
+      "duration": 5.8,
+      "text": "compos file now that you understood this"
+    },
+    {
+      "start": 762.36,
+      "duration": 5.36,
+      "text": "let's go and deploy this but to deploy"
+    },
+    {
+      "start": 766.04,
+      "duration": 3.039,
+      "text": "this application using Docker compos we"
+    },
+    {
+      "start": 767.72,
+      "duration": 3.2,
+      "text": "need to have Docker installed in the"
+    },
+    {
+      "start": 769.079,
+      "duration": 3.801,
+      "text": "server and there's no Docker here so"
+    },
+    {
+      "start": 770.92,
+      "duration": 3.84,
+      "text": "let's go ahead and install it so I have"
+    },
+    {
+      "start": 772.88,
+      "duration": 4.12,
+      "text": "the commands ready in this so I'm going"
+    },
+    {
+      "start": 774.76,
+      "duration": 5.24,
+      "text": "to go ahead and run this command Docker"
+    },
+    {
+      "start": 777.0,
+      "duration": 3.0,
+      "text": "compose"
+    },
+    {
+      "start": 780.04,
+      "duration": 4.32,
+      "text": "so this is a command to install Docker"
+    },
+    {
+      "start": 781.839,
+      "duration": 4.56,
+      "text": "in your laptop along with Docker compose"
+    },
+    {
+      "start": 784.36,
+      "duration": 4.88,
+      "text": "uh so you can see we also installing"
+    },
+    {
+      "start": 786.399,
+      "duration": 4.88,
+      "text": "Docker compose here let's press"
+    },
+    {
+      "start": 789.24,
+      "duration": 3.8,
+      "text": "enter and this will go ahead with"
+    },
+    {
+      "start": 791.279,
+      "duration": 3.721,
+      "text": "installing Docker along with Docker"
+    },
+    {
+      "start": 793.04,
+      "duration": 4.039,
+      "text": "compos so we should be ready to deploy"
+    },
+    {
+      "start": 795.0,
+      "duration": 4.48,
+      "text": "this application along with Docker"
+    },
+    {
+      "start": 797.079,
+      "duration": 4.601,
+      "text": "compos there also another important file"
+    },
+    {
+      "start": 799.48,
+      "duration": 5.96,
+      "text": "that I want you to know which is inside"
+    },
+    {
+      "start": 801.68,
+      "duration": 6.76,
+      "text": "this SRC folder under open Telemetry"
+    },
+    {
+      "start": 805.44,
+      "duration": 4.24,
+      "text": "collector and then the config file this"
+    },
+    {
+      "start": 808.44,
+      "duration": 3.6,
+      "text": "is the file"
+    },
+    {
+      "start": 809.68,
+      "duration": 4.04,
+      "text": "that defines what Monitoring Solutions"
+    },
+    {
+      "start": 812.04,
+      "duration": 4.359,
+      "text": "do you want to use so if you make"
+    },
+    {
+      "start": 813.72,
+      "duration": 5.16,
+      "text": "changes to this file you can use data"
+    },
+    {
+      "start": 816.399,
+      "duration": 5.401,
+      "text": "dog or D tray or Splunk or any other"
+    },
+    {
+      "start": 818.88,
+      "duration": 5.04,
+      "text": "tool in place of the default promethus"
+    },
+    {
+      "start": 821.8,
+      "duration": 6.36,
+      "text": "monitoring solution so if you want to"
+    },
+    {
+      "start": 823.92,
+      "duration": 6.56,
+      "text": "use Splunk Sumo logic data dog log. I U"
+    },
+    {
+      "start": 828.16,
+      "duration": 4.919,
+      "text": "any any monitoring tool you need to make"
+    },
+    {
+      "start": 830.48,
+      "duration": 6.64,
+      "text": "changes inside this particular config do"
+    },
+    {
+      "start": 833.079,
+      "duration": 7.801,
+      "text": "yl file and this file is also explained"
+    },
+    {
+      "start": 837.12,
+      "duration": 5.88,
+      "text": "here so this is the of the file of what"
+    },
+    {
+      "start": 840.88,
+      "duration": 4.24,
+      "text": "is this file and what is this TLP"
+    },
+    {
+      "start": 843.0,
+      "duration": 6.04,
+      "text": "protocol this is the protocol basically"
+    },
+    {
+      "start": 845.12,
+      "duration": 5.159,
+      "text": "to you collect Telemetry data and all"
+    },
+    {
+      "start": 849.04,
+      "duration": 3.0,
+      "text": "the other things are explained here so"
+    },
+    {
+      "start": 850.279,
+      "duration": 3.321,
+      "text": "if you want to know more or go deeper"
+    },
+    {
+      "start": 852.04,
+      "duration": 4.08,
+      "text": "into what our collectors what our"
+    },
+    {
+      "start": 853.6,
+      "duration": 5.4,
+      "text": "exporters what our processor in open"
+    },
+    {
+      "start": 856.12,
+      "duration": 4.719,
+      "text": "Telemetry you can check that out and you"
+    },
+    {
+      "start": 859.0,
+      "duration": 4.519,
+      "text": "can also read them on the official"
+    },
+    {
+      "start": 860.839,
+      "duration": 4.641,
+      "text": "documentation but but to give you quick"
+    },
+    {
+      "start": 863.519,
+      "duration": 3.601,
+      "text": "context receivers are used to collect"
+    },
+    {
+      "start": 865.48,
+      "duration": 3.599,
+      "text": "the data which includes Tris metric"
+    },
+    {
+      "start": 867.12,
+      "duration": 4.079,
+      "text": "clocks from various sources like"
+    },
+    {
+      "start": 869.079,
+      "duration": 4.281,
+      "text": "application of endpoints exporters then"
+    },
+    {
+      "start": 871.199,
+      "duration": 4.361,
+      "text": "send this data to external system or"
+    },
+    {
+      "start": 873.36,
+      "duration": 4.279,
+      "text": "storage such as login systems or metric"
+    },
+    {
+      "start": 875.56,
+      "duration": 4.92,
+      "text": "platforms then processor are used to"
+    },
+    {
+      "start": 877.639,
+      "duration": 5.601,
+      "text": "transform them or modify them uh and"
+    },
+    {
+      "start": 880.48,
+      "duration": 4.68,
+      "text": "then export it to the applications you"
+    },
+    {
+      "start": 883.24,
+      "duration": 4.56,
+      "text": "also have connectors which is used for"
+    },
+    {
+      "start": 885.16,
+      "duration": 4.919,
+      "text": "extracting metrics from T TR data for"
+    },
+    {
+      "start": 887.8,
+      "duration": 4.399,
+      "text": "further processing or exporting and then"
+    },
+    {
+      "start": 890.079,
+      "duration": 3.641,
+      "text": "you have Services which Define how"
+    },
+    {
+      "start": 892.199,
+      "duration": 3.801,
+      "text": "telemetric data should flow through the"
+    },
+    {
+      "start": 893.72,
+      "duration": 4.4,
+      "text": "system specifying which receivers or"
+    },
+    {
+      "start": 896.0,
+      "duration": 5.519,
+      "text": "processor or exporters are used for"
+    },
+    {
+      "start": 898.12,
+      "duration": 5.24,
+      "text": "Braes metrics and lock so I hope you"
+    },
+    {
+      "start": 901.519,
+      "duration": 3.721,
+      "text": "will go through this properly and"
+    },
+    {
+      "start": 903.36,
+      "duration": 3.56,
+      "text": "understand each component so that you"
+    },
+    {
+      "start": 905.24,
+      "duration": 2.48,
+      "text": "can properly understand how this product"
+    },
+    {
+      "start": 906.92,
+      "duration": 2.8,
+      "text": "is"
+    },
+    {
+      "start": 907.72,
+      "duration": 3.76,
+      "text": "working now that we have done this and"
+    },
+    {
+      "start": 909.72,
+      "duration": 3.479,
+      "text": "we have our Docker installed we are"
+    },
+    {
+      "start": 911.48,
+      "duration": 4.24,
+      "text": "going to be running the docker compos up"
+    },
+    {
+      "start": 913.199,
+      "duration": 5.32,
+      "text": "command so I'll copy this command and"
+    },
+    {
+      "start": 915.72,
+      "duration": 5.0,
+      "text": "paste it in my server so now Docker is"
+    },
+    {
+      "start": 918.519,
+      "duration": 5.361,
+      "text": "installed to confirm you can run sudo"
+    },
+    {
+      "start": 920.72,
+      "duration": 4.919,
+      "text": "Docker PS Docker PS is the command to"
+    },
+    {
+      "start": 923.88,
+      "duration": 3.68,
+      "text": "see any running instance any running"
+    },
+    {
+      "start": 925.639,
+      "duration": 3.921,
+      "text": "containers we don't have any containers"
+    },
+    {
+      "start": 927.56,
+      "duration": 4.519,
+      "text": "as of now so I'm going to sudo doer"
+    },
+    {
+      "start": 929.56,
+      "duration": 5.36,
+      "text": "compose up command which will create the"
+    },
+    {
+      "start": 932.079,
+      "duration": 7.721,
+      "text": "containers from the compose file as we"
+    },
+    {
+      "start": 934.92,
+      "duration": 6.76,
+      "text": "can see in this uh vs code here so I'm"
+    },
+    {
+      "start": 939.8,
+      "duration": 3.92,
+      "text": "going to be running s do compos up and"
+    },
+    {
+      "start": 941.68,
+      "duration": 4.12,
+      "text": "press enter now you can see it's going"
+    },
+    {
+      "start": 943.72,
+      "duration": 5.08,
+      "text": "to pull up all the images and then very"
+    },
+    {
+      "start": 945.8,
+      "duration": 6.519,
+      "text": "soon they will have all the services"
+    },
+    {
+      "start": 948.8,
+      "duration": 5.399,
+      "text": "created which includes Jager for placing"
+    },
+    {
+      "start": 952.319,
+      "duration": 5.721,
+      "text": "all this microservices product catalog"
+    },
+    {
+      "start": 954.199,
+      "duration": 6.08,
+      "text": "checkout payment currency Kafka grafana"
+    },
+    {
+      "start": 958.04,
+      "duration": 3.96,
+      "text": "Cod Service shipping service so there"
+    },
+    {
+      "start": 960.279,
+      "duration": 4.24,
+      "text": "are so many different services and which"
+    },
+    {
+      "start": 962.0,
+      "duration": 4.319,
+      "text": "is why this devops project is a bit"
+    },
+    {
+      "start": 964.519,
+      "duration": 3.76,
+      "text": "complex but if you follow this video"
+    },
+    {
+      "start": 966.319,
+      "duration": 3.64,
+      "text": "till the end it should not be a problem"
+    },
+    {
+      "start": 968.279,
+      "duration": 3.36,
+      "text": "for you you should be able to do this"
+    },
+    {
+      "start": 969.959,
+      "duration": 3.281,
+      "text": "project without any issues and you"
+    },
+    {
+      "start": 971.639,
+      "duration": 3.841,
+      "text": "should also be able to understand how"
+    },
+    {
+      "start": 973.24,
+      "duration": 4.56,
+      "text": "observability works so to give you a"
+    },
+    {
+      "start": 975.48,
+      "duration": 4.32,
+      "text": "real real world example while this is"
+    },
+    {
+      "start": 977.8,
+      "duration": 3.479,
+      "text": "coming up observability is generally"
+    },
+    {
+      "start": 979.8,
+      "duration": 3.279,
+      "text": "used to understand how is the"
+    },
+    {
+      "start": 981.279,
+      "duration": 3.281,
+      "text": "application performing and there are"
+    },
+    {
+      "start": 983.079,
+      "duration": 3.2,
+      "text": "many big companies who are investing"
+    },
+    {
+      "start": 984.56,
+      "duration": 3.8,
+      "text": "millions of dollars just on"
+    },
+    {
+      "start": 986.279,
+      "duration": 4.04,
+      "text": "observability platforms to make sure"
+    },
+    {
+      "start": 988.36,
+      "duration": 4.52,
+      "text": "that their appli is working properly"
+    },
+    {
+      "start": 990.319,
+      "duration": 4.801,
+      "text": "without any issues because there might"
+    },
+    {
+      "start": 992.88,
+      "duration": 4.319,
+      "text": "be a company which is selling a product"
+    },
+    {
+      "start": 995.12,
+      "duration": 4.6,
+      "text": "and if their website is down for 2"
+    },
+    {
+      "start": 997.199,
+      "duration": 3.801,
+      "text": "minutes it could be a huge business loss"
+    },
+    {
+      "start": 999.72,
+      "duration": 2.76,
+      "text": "so they want to make sure that their"
+    },
+    {
+      "start": 1001.0,
+      "duration": 3.959,
+      "text": "websites or applications are always"
+    },
+    {
+      "start": 1002.48,
+      "duration": 4.799,
+      "text": "available always reliable and this is"
+    },
+    {
+      "start": 1004.959,
+      "duration": 4.281,
+      "text": "why they used observability tools to"
+    },
+    {
+      "start": 1007.279,
+      "duration": 4.761,
+      "text": "check if there is any latency issue or"
+    },
+    {
+      "start": 1009.24,
+      "duration": 6.519,
+      "text": "if there is any uh CPU problem memory"
+    },
+    {
+      "start": 1012.04,
+      "duration": 5.799,
+      "text": "problem anything this is why you need to"
+    },
+    {
+      "start": 1015.759,
+      "duration": 4.56,
+      "text": "understand observability as a devops"
+    },
+    {
+      "start": 1017.839,
+      "duration": 4.841,
+      "text": "engineer because your job as a devops"
+    },
+    {
+      "start": 1020.319,
+      "duration": 3.961,
+      "text": "engineer or SRE is to make sure that"
+    },
+    {
+      "start": 1022.68,
+      "duration": 4.04,
+      "text": "your applications are always available"
+    },
+    {
+      "start": 1024.28,
+      "duration": 4.279,
+      "text": "and always reliable so doing this"
+    },
+    {
+      "start": 1026.72,
+      "duration": 4.56,
+      "text": "project will help you understand more"
+    },
+    {
+      "start": 1028.559,
+      "duration": 5.161,
+      "text": "properly how things work and as I said"
+    },
+    {
+      "start": 1031.28,
+      "duration": 4.759,
+      "text": "if your company is using any of the"
+    },
+    {
+      "start": 1033.72,
+      "duration": 4.88,
+      "text": "different Monitoring Solutions present"
+    },
+    {
+      "start": 1036.039,
+      "duration": 4.961,
+      "text": "here then you could also do this project"
+    },
+    {
+      "start": 1038.6,
+      "duration": 4.359,
+      "text": "on that monitoring platform so if your"
+    },
+    {
+      "start": 1041.0,
+      "duration": 4.12,
+      "text": "compan is using New Relic you can click"
+    },
+    {
+      "start": 1042.959,
+      "duration": 3.96,
+      "text": "on this and you get the files related to"
+    },
+    {
+      "start": 1045.12,
+      "duration": 4.0,
+      "text": "new relics which will include"
+    },
+    {
+      "start": 1046.919,
+      "duration": 3.441,
+      "text": "configurations that you can set up in"
+    },
+    {
+      "start": 1049.12,
+      "duration": 3.64,
+      "text": "there are many different Monitoring"
+    },
+    {
+      "start": 1050.36,
+      "duration": 5.08,
+      "text": "Solutions that have created demo on this"
+    },
+    {
+      "start": 1052.76,
+      "duration": 8.0,
+      "text": "project so if I search for"
+    },
+    {
+      "start": 1055.44,
+      "duration": 8.92,
+      "text": "oel uh demo you can see blogs from data"
+    },
+    {
+      "start": 1060.76,
+      "duration": 7.08,
+      "text": "dog dinat TR stackify"
+    },
+    {
+      "start": 1064.36,
+      "duration": 7.04,
+      "text": "Splunk uh then there is Sumo logic here"
+    },
+    {
+      "start": 1067.84,
+      "duration": 5.6,
+      "text": "there is also Coral Logics honeycomb in"
+    },
+    {
+      "start": 1071.4,
+      "duration": 3.72,
+      "text": "fact this has become a norm so every"
+    },
+    {
+      "start": 1073.44,
+      "duration": 3.719,
+      "text": "monitoring tool that is in the market"
+    },
+    {
+      "start": 1075.12,
+      "duration": 4.72,
+      "text": "they are showcasing their tools or how"
+    },
+    {
+      "start": 1077.159,
+      "duration": 4.081,
+      "text": "it works using this open telling demo"
+    },
+    {
+      "start": 1079.84,
+      "duration": 3.56,
+      "text": "this is why it is so popular and you"
+    },
+    {
+      "start": 1081.24,
+      "duration": 3.64,
+      "text": "should be doing this because this will"
+    },
+    {
+      "start": 1083.4,
+      "duration": 3.24,
+      "text": "help recruiters know that you have"
+    },
+    {
+      "start": 1084.88,
+      "duration": 3.44,
+      "text": "knowledge of observability and you can"
+    },
+    {
+      "start": 1086.64,
+      "duration": 4.279,
+      "text": "work with their Monitoring"
+    },
+    {
+      "start": 1088.32,
+      "duration": 5.359,
+      "text": "Solutions so this application has been"
+    },
+    {
+      "start": 1090.919,
+      "duration": 4.961,
+      "text": "started you can see uh notifications"
+    },
+    {
+      "start": 1093.679,
+      "duration": 4.961,
+      "text": "here so it is getting started we have"
+    },
+    {
+      "start": 1095.88,
+      "duration": 4.76,
+      "text": "all of these Works working if your Kafka"
+    },
+    {
+      "start": 1098.64,
+      "duration": 3.919,
+      "text": "is showing error or if there is any"
+    },
+    {
+      "start": 1100.64,
+      "duration": 4.919,
+      "text": "issue with Kafka you need to check the"
+    },
+    {
+      "start": 1102.559,
+      "duration": 6.521,
+      "text": "ram of your server so Ram should be more"
+    },
+    {
+      "start": 1105.559,
+      "duration": 4.961,
+      "text": "than 6gb or more than 8 GB so make sure"
+    },
+    {
+      "start": 1109.08,
+      "duration": 3.44,
+      "text": "if there's any issue with Kafka it's"
+    },
+    {
+      "start": 1110.52,
+      "duration": 3.56,
+      "text": "always a ram so we going to wait for"
+    },
+    {
+      "start": 1112.52,
+      "duration": 2.92,
+      "text": "this to completely start and then we can"
+    },
+    {
+      "start": 1114.08,
+      "duration": 3.92,
+      "text": "check our"
+    },
+    {
+      "start": 1115.44,
+      "duration": 5.52,
+      "text": "application so it's all ready now to"
+    },
+    {
+      "start": 1118.0,
+      "duration": 4.24,
+      "text": "confirm you can run sudo Docker PS which"
+    },
+    {
+      "start": 1120.96,
+      "duration": 3.36,
+      "text": "will show you all the different"
+    },
+    {
+      "start": 1122.24,
+      "duration": 5.919,
+      "text": "containers are running right now so we"
+    },
+    {
+      "start": 1124.32,
+      "duration": 8.12,
+      "text": "have containers for payment service for"
+    },
+    {
+      "start": 1128.159,
+      "duration": 6.4,
+      "text": "accounting service Kota service checkout"
+    },
+    {
+      "start": 1132.44,
+      "duration": 4.08,
+      "text": "service all of it to access the"
+    },
+    {
+      "start": 1134.559,
+      "duration": 7.36,
+      "text": "application you're going to copy the IP"
+    },
+    {
+      "start": 1136.52,
+      "duration": 5.399,
+      "text": "address and open this app on Port"
+    },
+    {
+      "start": 1143.6,
+      "duration": 5.24,
+      "text": "80 so this is our application here it's"
+    },
+    {
+      "start": 1146.44,
+      "duration": 5.8,
+      "text": "an open Telemetry application which is a"
+    },
+    {
+      "start": 1148.84,
+      "duration": 5.839,
+      "text": "e-commerce application to buy telescopes"
+    },
+    {
+      "start": 1152.24,
+      "duration": 4.04,
+      "text": "binoculars all of this and it has"
+    },
+    {
+      "start": 1154.679,
+      "duration": 4.161,
+      "text": "different microservices so there's a"
+    },
+    {
+      "start": 1156.28,
+      "duration": 4.96,
+      "text": "Currency Service here you can which you"
+    },
+    {
+      "start": 1158.84,
+      "duration": 4.64,
+      "text": "can use to change your currency you also"
+    },
+    {
+      "start": 1161.24,
+      "duration": 4.439,
+      "text": "have a card service so you can go to"
+    },
+    {
+      "start": 1163.48,
+      "duration": 5.48,
+      "text": "cart or add your products in the cart"
+    },
+    {
+      "start": 1165.679,
+      "duration": 5.401,
+      "text": "let's buy some binoculars I'm going to"
+    },
+    {
+      "start": 1168.96,
+      "duration": 5.12,
+      "text": "buy 10"
+    },
+    {
+      "start": 1171.08,
+      "duration": 4.92,
+      "text": "binoculars and add to card here is some"
+    },
+    {
+      "start": 1174.08,
+      "duration": 3.76,
+      "text": "demo data and you can change this data"
+    },
+    {
+      "start": 1176.0,
+      "duration": 3.96,
+      "text": "if you want to see your particular data"
+    },
+    {
+      "start": 1177.84,
+      "duration": 4.0,
+      "text": "Maybe in logs uh but I'm going to go"
+    },
+    {
+      "start": 1179.96,
+      "duration": 2.52,
+      "text": "ahead with click on Place orders and"
+    },
+    {
+      "start": 1181.84,
+      "duration": 2.88,
+      "text": "this"
+    },
+    {
+      "start": 1182.48,
+      "duration": 4.04,
+      "text": "will place an order so this is an"
+    },
+    {
+      "start": 1184.72,
+      "duration": 3.64,
+      "text": "application here a simple e-commerce"
+    },
+    {
+      "start": 1186.52,
+      "duration": 3.88,
+      "text": "application written in different"
+    },
+    {
+      "start": 1188.36,
+      "duration": 3.96,
+      "text": "programming languages consisting of"
+    },
+    {
+      "start": 1190.4,
+      "duration": 4.519,
+      "text": "different microservices so this will"
+    },
+    {
+      "start": 1192.32,
+      "duration": 4.56,
+      "text": "give you a real world idea of how"
+    },
+    {
+      "start": 1194.919,
+      "duration": 4.041,
+      "text": "observability works because this is a"
+    },
+    {
+      "start": 1196.88,
+      "duration": 3.36,
+      "text": "very complex application so you can go"
+    },
+    {
+      "start": 1198.96,
+      "duration": 3.599,
+      "text": "ahead check out this application"
+    },
+    {
+      "start": 1200.24,
+      "duration": 4.439,
+      "text": "properly if you have deployed it in your"
+    },
+    {
+      "start": 1202.559,
+      "duration": 5.24,
+      "text": "server you can check out different"
+    },
+    {
+      "start": 1204.679,
+      "duration": 4.921,
+      "text": "things card service Currency Service"
+    },
+    {
+      "start": 1207.799,
+      "duration": 4.681,
+      "text": "checkout service ad service payment"
+    },
+    {
+      "start": 1209.6,
+      "duration": 6.4,
+      "text": "service recommendation service all of"
+    },
+    {
+      "start": 1212.48,
+      "duration": 6.079,
+      "text": "this so once I make this request uh you"
+    },
+    {
+      "start": 1216.0,
+      "duration": 4.4,
+      "text": "can then see the generated data either"
+    },
+    {
+      "start": 1218.559,
+      "duration": 3.961,
+      "text": "on Jer or"
+    },
+    {
+      "start": 1220.4,
+      "duration": 4.56,
+      "text": "grafana all of that so let's try to"
+    },
+    {
+      "start": 1222.52,
+      "duration": 3.84,
+      "text": "access grafana now so grafana is"
+    },
+    {
+      "start": 1224.96,
+      "duration": 4.32,
+      "text": "available"
+    },
+    {
+      "start": 1226.36,
+      "duration": 4.52,
+      "text": "on this 8/"
+    },
+    {
+      "start": 1229.28,
+      "duration": 4.2,
+      "text": "grafana"
+    },
+    {
+      "start": 1230.88,
+      "duration": 4.799,
+      "text": "slash once I do this grafana dashboard"
+    },
+    {
+      "start": 1233.48,
+      "duration": 4.72,
+      "text": "will open up grafana is an open source"
+    },
+    {
+      "start": 1235.679,
+      "duration": 4.281,
+      "text": "monitoring tool that is used to create"
+    },
+    {
+      "start": 1238.2,
+      "duration": 4.04,
+      "text": "dashboards where you can see our"
+    },
+    {
+      "start": 1239.96,
+      "duration": 4.52,
+      "text": "different metrics in nice charts or"
+    },
+    {
+      "start": 1242.24,
+      "duration": 4.52,
+      "text": "graph format grafana is actually very"
+    },
+    {
+      "start": 1244.48,
+      "duration": 5.84,
+      "text": "popular and used by many big companies"
+    },
+    {
+      "start": 1246.76,
+      "duration": 5.24,
+      "text": "including NASA SpaceX and lot more so"
+    },
+    {
+      "start": 1250.32,
+      "duration": 4.719,
+      "text": "they have Community Edition which is"
+    },
+    {
+      "start": 1252.0,
+      "duration": 4.6,
+      "text": "free and also PA version so in here we"
+    },
+    {
+      "start": 1255.039,
+      "duration": 3.441,
+      "text": "have our dashboards created we are going"
+    },
+    {
+      "start": 1256.6,
+      "duration": 3.76,
+      "text": "to have four different dashboards which"
+    },
+    {
+      "start": 1258.48,
+      "duration": 4.199,
+      "text": "is you can see in this demo folder here"
+    },
+    {
+      "start": 1260.36,
+      "duration": 4.6,
+      "text": "so we have demo dashboard we also have"
+    },
+    {
+      "start": 1262.679,
+      "duration": 4.88,
+      "text": "open Telemetry dashboard open collector"
+    },
+    {
+      "start": 1264.96,
+      "duration": 4.719,
+      "text": "dashboard and then span metric demo"
+    },
+    {
+      "start": 1267.559,
+      "duration": 3.961,
+      "text": "dashboard if you in fact if you want to"
+    },
+    {
+      "start": 1269.679,
+      "duration": 4.521,
+      "text": "create your own dashboards you can also"
+    },
+    {
+      "start": 1271.52,
+      "duration": 4.84,
+      "text": "do that in grafana you get information"
+    },
+    {
+      "start": 1274.2,
+      "duration": 5.479,
+      "text": "like latency so how much is the latency"
+    },
+    {
+      "start": 1276.36,
+      "duration": 6.319,
+      "text": "for the FR 10 service request span error"
+    },
+    {
+      "start": 1279.679,
+      "duration": 5.961,
+      "text": "rate all this information is here"
+    },
+    {
+      "start": 1282.679,
+      "duration": 4.801,
+      "text": "recommendation red CPU memory so this"
+    },
+    {
+      "start": 1285.64,
+      "duration": 4.639,
+      "text": "way you can check your metric and nice"
+    },
+    {
+      "start": 1287.48,
+      "duration": 4.64,
+      "text": "dashboards like this uh so you can also"
+    },
+    {
+      "start": 1290.279,
+      "duration": 4.481,
+      "text": "filter out based on different Services"
+    },
+    {
+      "start": 1292.12,
+      "duration": 5.039,
+      "text": "if you want to see memory or latency for"
+    },
+    {
+      "start": 1294.76,
+      "duration": 5.68,
+      "text": "an act service you can change that here"
+    },
+    {
+      "start": 1297.159,
+      "duration": 5.921,
+      "text": "also for flag B service or maybe email"
+    },
+    {
+      "start": 1300.44,
+      "duration": 4.119,
+      "text": "service all the information or all the"
+    },
+    {
+      "start": 1303.08,
+      "duration": 3.36,
+      "text": "different metrics for every micro"
+    },
+    {
+      "start": 1304.559,
+      "duration": 3.841,
+      "text": "Services present here this is how you"
+    },
+    {
+      "start": 1306.44,
+      "duration": 3.64,
+      "text": "will be doing in your real DeVos project"
+    },
+    {
+      "start": 1308.4,
+      "duration": 3.519,
+      "text": "as well so you can check out metrics for"
+    },
+    {
+      "start": 1310.08,
+      "duration": 3.64,
+      "text": "all the different services and explore"
+    },
+    {
+      "start": 1311.919,
+      "duration": 4.041,
+      "text": "this properly to understand how grafana"
+    },
+    {
+      "start": 1313.72,
+      "duration": 4.92,
+      "text": "Works what are different dashboards and"
+    },
+    {
+      "start": 1315.96,
+      "duration": 4.4,
+      "text": "all that let's go on and check other"
+    },
+    {
+      "start": 1318.64,
+      "duration": 4.12,
+      "text": "dashboards you present here so I'm going"
+    },
+    {
+      "start": 1320.36,
+      "duration": 3.799,
+      "text": "to check span Matrix demo dashboard and"
+    },
+    {
+      "start": 1322.76,
+      "duration": 3.919,
+      "text": "here you can see information like"
+    },
+    {
+      "start": 1324.159,
+      "duration": 4.52,
+      "text": "latency for flag D top seven services"
+    },
+    {
+      "start": 1326.679,
+      "duration": 3.321,
+      "text": "with mean dat over range there are"
+    },
+    {
+      "start": 1328.679,
+      "duration": 3.081,
+      "text": "different dashboard which are properly"
+    },
+    {
+      "start": 1330.0,
+      "duration": 4.88,
+      "text": "showing different metrics that might be"
+    },
+    {
+      "start": 1331.76,
+      "duration": 5.68,
+      "text": "important for your business so this is"
+    },
+    {
+      "start": 1334.88,
+      "duration": 4.76,
+      "text": "what Graf is doing for us along with"
+    },
+    {
+      "start": 1337.44,
+      "duration": 4.4,
+      "text": "this we also have some Dash particular"
+    },
+    {
+      "start": 1339.64,
+      "duration": 4.44,
+      "text": "component like open Telemetry collector"
+    },
+    {
+      "start": 1341.84,
+      "duration": 4.28,
+      "text": "so we got uh all this information just"
+    },
+    {
+      "start": 1344.08,
+      "duration": 3.959,
+      "text": "for open Telemetry connector that is"
+    },
+    {
+      "start": 1346.12,
+      "duration": 4.439,
+      "text": "used to collect data from our"
+    },
+    {
+      "start": 1348.039,
+      "duration": 4.561,
+      "text": "application here but to make this"
+    },
+    {
+      "start": 1350.559,
+      "duration": 5.48,
+      "text": "project more realistic open Telemetry"
+    },
+    {
+      "start": 1352.6,
+      "duration": 5.84,
+      "text": "also provides some fake data or loads so"
+    },
+    {
+      "start": 1356.039,
+      "duration": 5.401,
+      "text": "generates some fake load using load"
+    },
+    {
+      "start": 1358.44,
+      "duration": 5.719,
+      "text": "generator which you can access on load"
+    },
+    {
+      "start": 1361.44,
+      "duration": 5.4,
+      "text": "gen slash this is using"
+    },
+    {
+      "start": 1364.159,
+      "duration": 4.12,
+      "text": "Locust tool so you can see that the"
+    },
+    {
+      "start": 1366.84,
+      "duration": 3.88,
+      "text": "requests are being made on the"
+    },
+    {
+      "start": 1368.279,
+      "duration": 4.361,
+      "text": "application these are all fake loads"
+    },
+    {
+      "start": 1370.72,
+      "duration": 3.64,
+      "text": "just to demonstrate or make it more"
+    },
+    {
+      "start": 1372.64,
+      "duration": 4.44,
+      "text": "realistic that the traffic is coming on"
+    },
+    {
+      "start": 1374.36,
+      "duration": 7.52,
+      "text": "our application so you can access that"
+    },
+    {
+      "start": 1377.08,
+      "duration": 7.64,
+      "text": "from uh IP address colum 880 load load"
+    },
+    {
+      "start": 1381.88,
+      "duration": 5.36,
+      "text": "gen along with this for tracing we have"
+    },
+    {
+      "start": 1384.72,
+      "duration": 5.04,
+      "text": "Jager a very popular distributed tracing"
+    },
+    {
+      "start": 1387.24,
+      "duration": 4.2,
+      "text": "tool traces are used to understand how"
+    },
+    {
+      "start": 1389.76,
+      "duration": 3.36,
+      "text": "different microservices communicate with"
+    },
+    {
+      "start": 1391.44,
+      "duration": 3.359,
+      "text": "each other how the requests are being"
+    },
+    {
+      "start": 1393.12,
+      "duration": 3.799,
+      "text": "made and in this project we're using"
+    },
+    {
+      "start": 1394.799,
+      "duration": 3.841,
+      "text": "Jagger to check that so you can check"
+    },
+    {
+      "start": 1396.919,
+      "duration": 3.841,
+      "text": "traces for a particular micros service"
+    },
+    {
+      "start": 1398.64,
+      "duration": 3.72,
+      "text": "such as ad service account service you"
+    },
+    {
+      "start": 1400.76,
+      "duration": 3.2,
+      "text": "can also select what operation do you"
+    },
+    {
+      "start": 1402.36,
+      "duration": 5.08,
+      "text": "want to check so do you want to check"
+    },
+    {
+      "start": 1403.96,
+      "duration": 5.079,
+      "text": "for the get ads or get random ads H ad"
+    },
+    {
+      "start": 1407.44,
+      "duration": 3.96,
+      "text": "service so any particular operation you"
+    },
+    {
+      "start": 1409.039,
+      "duration": 4.481,
+      "text": "can check places for you can also look"
+    },
+    {
+      "start": 1411.4,
+      "duration": 4.8,
+      "text": "back on a particular time stamp maybe 5"
+    },
+    {
+      "start": 1413.52,
+      "duration": 4.759,
+      "text": "minutes ago last 15 minutes uh you can"
+    },
+    {
+      "start": 1416.2,
+      "duration": 4.32,
+      "text": "also limit results so let's check how"
+    },
+    {
+      "start": 1418.279,
+      "duration": 4.201,
+      "text": "the ad service is communicating how the"
+    },
+    {
+      "start": 1420.52,
+      "duration": 4.72,
+      "text": "request is being made to ad service so"
+    },
+    {
+      "start": 1422.48,
+      "duration": 4.24,
+      "text": "when I click on find traces you can see"
+    },
+    {
+      "start": 1425.24,
+      "duration": 3.439,
+      "text": "all the different faces here so when I"
+    },
+    {
+      "start": 1426.72,
+      "duration": 4.079,
+      "text": "click on this we can understand that the"
+    },
+    {
+      "start": 1428.679,
+      "duration": 4.841,
+      "text": "load is coming from load generator then"
+    },
+    {
+      "start": 1430.799,
+      "duration": 5.161,
+      "text": "to frontend proxy then fronted and then"
+    },
+    {
+      "start": 1433.52,
+      "duration": 3.72,
+      "text": "moving on to add service using traces"
+    },
+    {
+      "start": 1435.96,
+      "duration": 3.16,
+      "text": "you can understand the flow of the"
+    },
+    {
+      "start": 1437.24,
+      "duration": 3.52,
+      "text": "request and if there is any issue or"
+    },
+    {
+      "start": 1439.12,
+      "duration": 3.84,
+      "text": "maybe the information is not sent"
+    },
+    {
+      "start": 1440.76,
+      "duration": 4.88,
+      "text": "request is not made you can actually"
+    },
+    {
+      "start": 1442.96,
+      "duration": 4.44,
+      "text": "find where is the problem inside places"
+    },
+    {
+      "start": 1445.64,
+      "duration": 3.56,
+      "text": "so this is how important it is using"
+    },
+    {
+      "start": 1447.4,
+      "duration": 3.56,
+      "text": "tracing in the microservices"
+    },
+    {
+      "start": 1449.2,
+      "duration": 3.64,
+      "text": "architecture along with this you can"
+    },
+    {
+      "start": 1450.96,
+      "duration": 4.199,
+      "text": "also compare two different traces using"
+    },
+    {
+      "start": 1452.84,
+      "duration": 4.48,
+      "text": "Yer tool and you can also look at the"
+    },
+    {
+      "start": 1455.159,
+      "duration": 3.76,
+      "text": "graph on how the request is being made"
+    },
+    {
+      "start": 1457.32,
+      "duration": 3.8,
+      "text": "so the request comes from load generator"
+    },
+    {
+      "start": 1458.919,
+      "duration": 4.841,
+      "text": "to front end proxy then to front end and"
+    },
+    {
+      "start": 1461.12,
+      "duration": 4.439,
+      "text": "then to other micro services so this"
+    },
+    {
+      "start": 1463.76,
+      "duration": 3.68,
+      "text": "will help you understand more about how"
+    },
+    {
+      "start": 1465.559,
+      "duration": 3.72,
+      "text": "communication is being made and in case"
+    },
+    {
+      "start": 1467.44,
+      "duration": 3.839,
+      "text": "there is any issue you can always check"
+    },
+    {
+      "start": 1469.279,
+      "duration": 4.681,
+      "text": "here we will be making some changes in"
+    },
+    {
+      "start": 1471.279,
+      "duration": 4.321,
+      "text": "our architecture to see some errors and"
+    },
+    {
+      "start": 1473.96,
+      "duration": 3.52,
+      "text": "then we can troubleshoot where is the"
+    },
+    {
+      "start": 1475.6,
+      "duration": 3.64,
+      "text": "actual issue which microservice is"
+    },
+    {
+      "start": 1477.48,
+      "duration": 4.24,
+      "text": "showing an error so you can also check"
+    },
+    {
+      "start": 1479.24,
+      "duration": 7.12,
+      "text": "traces for any other microservices and"
+    },
+    {
+      "start": 1481.72,
+      "duration": 7.439,
+      "text": "along with eer Lo generator Gana there"
+    },
+    {
+      "start": 1486.36,
+      "duration": 4.08,
+      "text": "is also open search Prometheus so you"
+    },
+    {
+      "start": 1489.159,
+      "duration": 3.12,
+      "text": "can look for all the different"
+    },
+    {
+      "start": 1490.44,
+      "duration": 3.52,
+      "text": "containers that are created when we ran"
+    },
+    {
+      "start": 1492.279,
+      "duration": 3.361,
+      "text": "the docker compost command so you can"
+    },
+    {
+      "start": 1493.96,
+      "duration": 4.04,
+      "text": "see you have container for promethus"
+    },
+    {
+      "start": 1495.64,
+      "duration": 5.8,
+      "text": "which is running on 9090 Port you also"
+    },
+    {
+      "start": 1498.0,
+      "duration": 6.039,
+      "text": "have container for flag D for open"
+    },
+    {
+      "start": 1501.44,
+      "duration": 4.8,
+      "text": "search so loging in this project is done"
+    },
+    {
+      "start": 1504.039,
+      "duration": 5.561,
+      "text": "using open search which is present on"
+    },
+    {
+      "start": 1506.24,
+      "duration": 5.679,
+      "text": "this 327 97 Port so if you have Port"
+    },
+    {
+      "start": 1509.6,
+      "duration": 4.48,
+      "text": "open you can also check the open search"
+    },
+    {
+      "start": 1511.919,
+      "duration": 3.841,
+      "text": "dashboard so this is what we have in our"
+    },
+    {
+      "start": 1514.08,
+      "duration": 3.199,
+      "text": "project after you deploy the project you"
+    },
+    {
+      "start": 1515.76,
+      "duration": 4.0,
+      "text": "should be able to see all these things"
+    },
+    {
+      "start": 1517.279,
+      "duration": 5.081,
+      "text": "along with the dashboards on grafana so"
+    },
+    {
+      "start": 1519.76,
+      "duration": 4.519,
+      "text": "we have dashboards for different uh"
+    },
+    {
+      "start": 1522.36,
+      "duration": 3.319,
+      "text": "different or components in our project"
+    },
+    {
+      "start": 1524.279,
+      "duration": 3.161,
+      "text": "we have dashboards for the open"
+    },
+    {
+      "start": 1525.679,
+      "duration": 3.6,
+      "text": "Telemetry connector so if you want to"
+    },
+    {
+      "start": 1527.44,
+      "duration": 3.4,
+      "text": "see if the open t collector is working"
+    },
+    {
+      "start": 1529.279,
+      "duration": 3.28,
+      "text": "properly or not you can check the"
+    },
+    {
+      "start": 1530.84,
+      "duration": 3.6,
+      "text": "dashboard here so we can also see"
+    },
+    {
+      "start": 1532.559,
+      "duration": 6.281,
+      "text": "processor"
+    },
+    {
+      "start": 1534.44,
+      "duration": 7.359,
+      "text": "exporter bat for it uh all the important"
+    },
+    {
+      "start": 1538.84,
+      "duration": 5.319,
+      "text": "metrics that might be useful to see how"
+    },
+    {
+      "start": 1541.799,
+      "duration": 3.88,
+      "text": "our open telemetric collector is working"
+    },
+    {
+      "start": 1544.159,
+      "duration": 3.52,
+      "text": "now that our application is deployed"
+    },
+    {
+      "start": 1545.679,
+      "duration": 4.561,
+      "text": "completely let's go ahead and make some"
+    },
+    {
+      "start": 1547.679,
+      "duration": 5.36,
+      "text": "errors in this project so that we can"
+    },
+    {
+      "start": 1550.24,
+      "duration": 5.72,
+      "text": "get some data or like metrics changing"
+    },
+    {
+      "start": 1553.039,
+      "duration": 4.64,
+      "text": "or maybe logs or traces showing some"
+    },
+    {
+      "start": 1555.96,
+      "duration": 3.719,
+      "text": "errors so that we can understand how"
+    },
+    {
+      "start": 1557.679,
+      "duration": 4.72,
+      "text": "observability actually works so to make"
+    },
+    {
+      "start": 1559.679,
+      "duration": 5.161,
+      "text": "the changes in your application you need"
+    },
+    {
+      "start": 1562.399,
+      "duration": 5.081,
+      "text": "to be enabling feature"
+    },
+    {
+      "start": 1564.84,
+      "duration": 5.079,
+      "text": "Flags so in the official documentation"
+    },
+    {
+      "start": 1567.48,
+      "duration": 6.04,
+      "text": "if you search for feature"
+    },
+    {
+      "start": 1569.919,
+      "duration": 6.521,
+      "text": "Flags o this is also present on my"
+    },
+    {
+      "start": 1573.52,
+      "duration": 5.48,
+      "text": "documentation that I have"
+    },
+    {
+      "start": 1576.44,
+      "duration": 3.76,
+      "text": "here if you scroll down to the end you"
+    },
+    {
+      "start": 1579.0,
+      "duration": 4.44,
+      "text": "can see that you need to make some"
+    },
+    {
+      "start": 1580.2,
+      "duration": 6.359,
+      "text": "changes inside a file named"
+    },
+    {
+      "start": 1583.44,
+      "duration": 6.32,
+      "text": "as if you scroll down in this"
+    },
+    {
+      "start": 1586.559,
+      "duration": 5.48,
+      "text": "documentation you can see we have a"
+    },
+    {
+      "start": 1589.76,
+      "duration": 3.519,
+      "text": "service a micros service named as flag"
+    },
+    {
+      "start": 1592.039,
+      "duration": 3.601,
+      "text": "which is responsible to make some"
+    },
+    {
+      "start": 1593.279,
+      "duration": 4.4,
+      "text": "changes where you can increase CPU where"
+    },
+    {
+      "start": 1595.64,
+      "duration": 3.24,
+      "text": "you can fail a service so which is known"
+    },
+    {
+      "start": 1597.679,
+      "duration": 3.6,
+      "text": "as feature"
+    },
+    {
+      "start": 1598.88,
+      "duration": 3.44,
+      "text": "flags and you can read about all the"
+    },
+    {
+      "start": 1601.279,
+      "duration": 3.321,
+      "text": "different feature flags that we can"
+    },
+    {
+      "start": 1602.32,
+      "duration": 5.68,
+      "text": "enable here so we can make the ad"
+    },
+    {
+      "start": 1604.6,
+      "duration": 4.88,
+      "text": "service fail we can increase the CPU we"
+    },
+    {
+      "start": 1608.0,
+      "duration": 3.559,
+      "text": "can make card service fail product"
+    },
+    {
+      "start": 1609.48,
+      "duration": 5.679,
+      "text": "service fail all we need to do is change"
+    },
+    {
+      "start": 1611.559,
+      "duration": 5.6,
+      "text": "the value in this flag b. Json file"
+    },
+    {
+      "start": 1615.159,
+      "duration": 4.081,
+      "text": "these flags are enabled using a service"
+    },
+    {
+      "start": 1617.159,
+      "duration": 5.4,
+      "text": "or a tool named as flag flag D which is"
+    },
+    {
+      "start": 1619.24,
+      "duration": 4.84,
+      "text": "a separate uh tool used inside our"
+    },
+    {
+      "start": 1622.559,
+      "duration": 3.321,
+      "text": "project so we are going to make some"
+    },
+    {
+      "start": 1624.08,
+      "duration": 4.92,
+      "text": "changes inside this flag d. Json and"
+    },
+    {
+      "start": 1625.88,
+      "duration": 5.32,
+      "text": "then see what uh changes are made on the"
+    },
+    {
+      "start": 1629.0,
+      "duration": 6.039,
+      "text": "different monitoring tools I'm going to"
+    },
+    {
+      "start": 1631.2,
+      "duration": 6.76,
+      "text": "copy this let's go to our server again"
+    },
+    {
+      "start": 1635.039,
+      "duration": 6.24,
+      "text": "and we need to say suro Nano name of the"
+    },
+    {
+      "start": 1637.96,
+      "duration": 6.76,
+      "text": "file which is inside source flag D demo"
+    },
+    {
+      "start": 1641.279,
+      "duration": 4.801,
+      "text": "flag d. Json once I press enter okay I"
+    },
+    {
+      "start": 1644.72,
+      "duration": 2.679,
+      "text": "need to go inside the correct folder I'm"
+    },
+    {
+      "start": 1646.08,
+      "duration": 2.92,
+      "text": "not in the correct folder so I need to"
+    },
+    {
+      "start": 1647.399,
+      "duration": 4.201,
+      "text": "First go inside the"
+    },
+    {
+      "start": 1649.0,
+      "duration": 3.52,
+      "text": "and then run this command so sudo Nano"
+    },
+    {
+      "start": 1651.6,
+      "duration": 3.72,
+      "text": "and you can see there are different"
+    },
+    {
+      "start": 1652.52,
+      "duration": 4.6,
+      "text": "flags here so product catalog failure"
+    },
+    {
+      "start": 1655.32,
+      "duration": 3.599,
+      "text": "this has a description saying fail"
+    },
+    {
+      "start": 1657.12,
+      "duration": 3.88,
+      "text": "product catalog service on a specific"
+    },
+    {
+      "start": 1658.919,
+      "duration": 4.041,
+      "text": "product uh recommendation service is"
+    },
+    {
+      "start": 1661.0,
+      "duration": 4.32,
+      "text": "going to fail when you enable this so"
+    },
+    {
+      "start": 1662.96,
+      "duration": 4.68,
+      "text": "let's try to make some changes and"
+    },
+    {
+      "start": 1665.32,
+      "duration": 3.76,
+      "text": "enable this Flags you can do that by"
+    },
+    {
+      "start": 1667.64,
+      "duration": 4.279,
+      "text": "specifying that the default variant"
+    },
+    {
+      "start": 1669.08,
+      "duration": 5.839,
+      "text": "should be on I'm going to make this on"
+    },
+    {
+      "start": 1671.919,
+      "duration": 5.76,
+      "text": "also I'll try to fail the ad service so"
+    },
+    {
+      "start": 1674.919,
+      "duration": 5.76,
+      "text": "ad service High CPU I'll say default"
+    },
+    {
+      "start": 1677.679,
+      "duration": 3.0,
+      "text": "variant equals to"
+    },
+    {
+      "start": 1681.32,
+      "duration": 6.4,
+      "text": "on so we are trying to depict a real"
+    },
+    {
+      "start": 1685.44,
+      "duration": 3.959,
+      "text": "application because when working on an"
+    },
+    {
+      "start": 1687.72,
+      "duration": 5.079,
+      "text": "application when you get more traffic"
+    },
+    {
+      "start": 1689.399,
+      "duration": 5.76,
+      "text": "you get CPU increased your services"
+    },
+    {
+      "start": 1692.799,
+      "duration": 4.201,
+      "text": "failed and that's how you can check in"
+    },
+    {
+      "start": 1695.159,
+      "duration": 3.681,
+      "text": "different tracing tools or different"
+    },
+    {
+      "start": 1697.0,
+      "duration": 4.399,
+      "text": "monitoring tools to understand what is"
+    },
+    {
+      "start": 1698.84,
+      "duration": 5.6,
+      "text": "the actual problem along with this I'm"
+    },
+    {
+      "start": 1701.399,
+      "duration": 4.64,
+      "text": "also going to cka Q problem I going to"
+    },
+    {
+      "start": 1704.44,
+      "duration": 3.68,
+      "text": "enable that variant as well or the flag"
+    },
+    {
+      "start": 1706.039,
+      "duration": 5.201,
+      "text": "as well so once you save this do control"
+    },
+    {
+      "start": 1708.12,
+      "duration": 5.24,
+      "text": "contr s and control X to save the file"
+    },
+    {
+      "start": 1711.24,
+      "duration": 4.919,
+      "text": "and wait for some time I'm going to do"
+    },
+    {
+      "start": 1713.36,
+      "duration": 6.799,
+      "text": "some operations on my open Telemetry"
+    },
+    {
+      "start": 1716.159,
+      "duration": 7.441,
+      "text": "shop so let's try to buy this telescope"
+    },
+    {
+      "start": 1720.159,
+      "duration": 6.0,
+      "text": "let's buy seven of 10 so we have seen"
+    },
+    {
+      "start": 1723.6,
+      "duration": 3.88,
+      "text": "different Docker containers created but"
+    },
+    {
+      "start": 1726.159,
+      "duration": 3.041,
+      "text": "you can also do this project using"
+    },
+    {
+      "start": 1727.48,
+      "duration": 3.64,
+      "text": "kubernetes if you want me to do this"
+    },
+    {
+      "start": 1729.2,
+      "duration": 4.44,
+      "text": "project using kubernetes let me know in"
+    },
+    {
+      "start": 1731.12,
+      "duration": 4.76,
+      "text": "the comment section you can do this on"
+    },
+    {
+      "start": 1733.64,
+      "duration": 3.519,
+      "text": "your local machine using mini Cube but"
+    },
+    {
+      "start": 1735.88,
+      "duration": 3.399,
+      "text": "the only problem that you're going to"
+    },
+    {
+      "start": 1737.159,
+      "duration": 4.081,
+      "text": "face is if you you want to access any of"
+    },
+    {
+      "start": 1739.279,
+      "duration": 4.24,
+      "text": "these application you need to Port"
+    },
+    {
+      "start": 1741.24,
+      "duration": 3.76,
+      "text": "export it like port forward it so that"
+    },
+    {
+      "start": 1743.519,
+      "duration": 3.801,
+      "text": "you can expose the application and then"
+    },
+    {
+      "start": 1745.0,
+      "duration": 4.32,
+      "text": "access it as in Min Cube you cannot use"
+    },
+    {
+      "start": 1747.32,
+      "duration": 4.64,
+      "text": "a load balancer service so you have to"
+    },
+    {
+      "start": 1749.32,
+      "duration": 4.839,
+      "text": "use load port or maybe cluster IP and"
+    },
+    {
+      "start": 1751.96,
+      "duration": 4.52,
+      "text": "then port forward"
+    },
+    {
+      "start": 1754.159,
+      "duration": 4.52,
+      "text": "it so let's wait for some time and then"
+    },
+    {
+      "start": 1756.48,
+      "duration": 7.439,
+      "text": "coming back to Jer here we are going to"
+    },
+    {
+      "start": 1758.679,
+      "duration": 8.0,
+      "text": "check our ad service for all operations"
+    },
+    {
+      "start": 1763.919,
+      "duration": 4.441,
+      "text": "from last 5 minutes and very soon we"
+    },
+    {
+      "start": 1766.679,
+      "duration": 3.281,
+      "text": "should be able to see a red dots like"
+    },
+    {
+      "start": 1768.36,
+      "duration": 3.4,
+      "text": "this which indicates that there's an"
+    },
+    {
+      "start": 1769.96,
+      "duration": 4.0,
+      "text": "issue or there's a problem with any of"
+    },
+    {
+      "start": 1771.76,
+      "duration": 4.32,
+      "text": "the service so I'm going to search click"
+    },
+    {
+      "start": 1773.96,
+      "duration": 4.719,
+      "text": "on find traces option right now there's"
+    },
+    {
+      "start": 1776.08,
+      "duration": 4.479,
+      "text": "no failure but let's wait for some time"
+    },
+    {
+      "start": 1778.679,
+      "duration": 4.041,
+      "text": "and then we should be able to see some"
+    },
+    {
+      "start": 1780.559,
+      "duration": 5.321,
+      "text": "red spots here which can help us"
+    },
+    {
+      "start": 1782.72,
+      "duration": 5.48,
+      "text": "understand why is the issue cost or why"
+    },
+    {
+      "start": 1785.88,
+      "duration": 3.44,
+      "text": "is the service fail if you want to"
+    },
+    {
+      "start": 1788.2,
+      "duration": 2.599,
+      "text": "understand things more properly make"
+    },
+    {
+      "start": 1789.32,
+      "duration": 3.28,
+      "text": "sure you go through the feature flax"
+    },
+    {
+      "start": 1790.799,
+      "duration": 3.961,
+      "text": "page and understand what is going to"
+    },
+    {
+      "start": 1792.6,
+      "duration": 4.079,
+      "text": "happen when you enable a particular flag"
+    },
+    {
+      "start": 1794.76,
+      "duration": 3.6,
+      "text": "so when you enable card service failure"
+    },
+    {
+      "start": 1796.679,
+      "duration": 5.641,
+      "text": "this is going to generate an end error"
+    },
+    {
+      "start": 1798.36,
+      "duration": 5.799,
+      "text": "saying mty card one out of 10 time so"
+    },
+    {
+      "start": 1802.32,
+      "duration": 4.44,
+      "text": "now let's go and check our traces in"
+    },
+    {
+      "start": 1804.159,
+      "duration": 4.88,
+      "text": "Jager and if I click on find traces here"
+    },
+    {
+      "start": 1806.76,
+      "duration": 4.039,
+      "text": "you can see there's a red dot which"
+    },
+    {
+      "start": 1809.039,
+      "duration": 4.12,
+      "text": "indicates that there's an error so there"
+    },
+    {
+      "start": 1810.799,
+      "duration": 4.281,
+      "text": "are seven errors now and using traces"
+    },
+    {
+      "start": 1813.159,
+      "duration": 3.721,
+      "text": "you can understand where is the error so"
+    },
+    {
+      "start": 1815.08,
+      "duration": 4.12,
+      "text": "error starts from load generator here"
+    },
+    {
+      "start": 1816.88,
+      "duration": 4.039,
+      "text": "and you can also get more information on"
+    },
+    {
+      "start": 1819.2,
+      "duration": 3.88,
+      "text": "why this is coming up here then we can"
+    },
+    {
+      "start": 1820.919,
+      "duration": 5.441,
+      "text": "see the error in the front end"
+    },
+    {
+      "start": 1823.08,
+      "duration": 5.199,
+      "text": "proxy also in the ad service here so"
+    },
+    {
+      "start": 1826.36,
+      "duration": 4.12,
+      "text": "using this you can understand why the"
+    },
+    {
+      "start": 1828.279,
+      "duration": 4.601,
+      "text": "error is received let's also check other"
+    },
+    {
+      "start": 1830.48,
+      "duration": 4.4,
+      "text": "few other microservices so let's check"
+    },
+    {
+      "start": 1832.88,
+      "duration": 3.88,
+      "text": "the traces for microservice named as"
+    },
+    {
+      "start": 1834.88,
+      "duration": 3.32,
+      "text": "frontend and going to click on find"
+    },
+    {
+      "start": 1836.76,
+      "duration": 4.48,
+      "text": "traces"
+    },
+    {
+      "start": 1838.2,
+      "duration": 5.4,
+      "text": "here and you can see right front end is"
+    },
+    {
+      "start": 1841.24,
+      "duration": 5.2,
+      "text": "working properly as of now let's check"
+    },
+    {
+      "start": 1843.6,
+      "duration": 2.84,
+      "text": "for the front end"
+    },
+    {
+      "start": 1846.519,
+      "duration": 5.121,
+      "text": "proxy and you can see there's an error"
+    },
+    {
+      "start": 1848.64,
+      "duration": 5.519,
+      "text": "here so when I click on this I get the"
+    },
+    {
+      "start": 1851.64,
+      "duration": 4.96,
+      "text": "error saying recommendation service is"
+    },
+    {
+      "start": 1854.159,
+      "duration": 5.681,
+      "text": "failing and you get more information"
+    },
+    {
+      "start": 1856.6,
+      "duration": 5.48,
+      "text": "about what the application where is it"
+    },
+    {
+      "start": 1859.84,
+      "duration": 3.679,
+      "text": "running easy to instance all of that and"
+    },
+    {
+      "start": 1862.08,
+      "duration": 3.479,
+      "text": "we got all these errors here so you can"
+    },
+    {
+      "start": 1863.519,
+      "duration": 3.841,
+      "text": "see there are it's all red which means"
+    },
+    {
+      "start": 1865.559,
+      "duration": 3.041,
+      "text": "something is not working by clicking on"
+    },
+    {
+      "start": 1867.36,
+      "duration": 4.159,
+      "text": "them and then you can see the"
+    },
+    {
+      "start": 1868.6,
+      "duration": 5.079,
+      "text": "recommendation service is not working"
+    },
+    {
+      "start": 1871.519,
+      "duration": 4.12,
+      "text": "properly you can see it says inactive"
+    },
+    {
+      "start": 1873.679,
+      "duration": 4.921,
+      "text": "this is because of the Kafka service"
+    },
+    {
+      "start": 1875.639,
+      "duration": 4.601,
+      "text": "being failed also if you check in your"
+    },
+    {
+      "start": 1878.6,
+      "duration": 3.799,
+      "text": "grafana dashboard let's check for the"
+    },
+    {
+      "start": 1880.24,
+      "duration": 5.159,
+      "text": "service which is add service and if I"
+    },
+    {
+      "start": 1882.399,
+      "duration": 5.16,
+      "text": "refresh this you can see that the CPU"
+    },
+    {
+      "start": 1885.399,
+      "duration": 4.321,
+      "text": "has been increased so now that you have"
+    },
+    {
+      "start": 1887.559,
+      "duration": 4.0,
+      "text": "enabled some feature Flags to get errors"
+    },
+    {
+      "start": 1889.72,
+      "duration": 3.919,
+      "text": "on our application let me do some"
+    },
+    {
+      "start": 1891.559,
+      "duration": 5.521,
+      "text": "operations buy some binocular teliscope"
+    },
+    {
+      "start": 1893.639,
+      "duration": 5.841,
+      "text": "and then we can check Matrix and ra logs"
+    },
+    {
+      "start": 1897.08,
+      "duration": 4.199,
+      "text": "as well as traces on Jager so I'm going"
+    },
+    {
+      "start": 1899.48,
+      "duration": 3.76,
+      "text": "to go ahead and do some operations just"
+    },
+    {
+      "start": 1901.279,
+      "duration": 5.12,
+      "text": "to get generate some data so I'll go"
+    },
+    {
+      "start": 1903.24,
+      "duration": 7.08,
+      "text": "ahead and buy this Comet book and then"
+    },
+    {
+      "start": 1906.399,
+      "duration": 7.481,
+      "text": "click on place order I'll also buy a"
+    },
+    {
+      "start": 1910.32,
+      "duration": 7.56,
+      "text": "flashlight so let's buy six of them add"
+    },
+    {
+      "start": 1913.88,
+      "duration": 5.799,
+      "text": "to card and then click on place order"
+    },
+    {
+      "start": 1917.88,
+      "duration": 4.159,
+      "text": "hopefully now after some time when once"
+    },
+    {
+      "start": 1919.679,
+      "duration": 6.24,
+      "text": "you make the change in the flag uh B"
+    },
+    {
+      "start": 1922.039,
+      "duration": 6.041,
+      "text": "file you can check your dashboards for"
+    },
+    {
+      "start": 1925.919,
+      "duration": 4.6,
+      "text": "different metrics so we can check the"
+    },
+    {
+      "start": 1928.08,
+      "duration": 4.719,
+      "text": "metrics here or also here span metric"
+    },
+    {
+      "start": 1930.519,
+      "duration": 4.04,
+      "text": "I'm going to click on demo dashboard and"
+    },
+    {
+      "start": 1932.799,
+      "duration": 3.321,
+      "text": "in this dashboard you can check metrics"
+    },
+    {
+      "start": 1934.559,
+      "duration": 3.561,
+      "text": "for different microservices so this is"
+    },
+    {
+      "start": 1936.12,
+      "duration": 4.48,
+      "text": "the front end microservice and you can"
+    },
+    {
+      "start": 1938.12,
+      "duration": 5.0,
+      "text": "see error rate for front end by spam"
+    },
+    {
+      "start": 1940.6,
+      "duration": 4.4,
+      "text": "name so you're getting some errors here"
+    },
+    {
+      "start": 1943.12,
+      "duration": 3.64,
+      "text": "also you can also check logs right now"
+    },
+    {
+      "start": 1945.0,
+      "duration": 3.72,
+      "text": "this is not creating any logs but you"
+    },
+    {
+      "start": 1946.76,
+      "duration": 5.32,
+      "text": "can check CPU"
+    },
+    {
+      "start": 1948.72,
+      "duration": 5.72,
+      "text": "uh for your front end service memory is"
+    },
+    {
+      "start": 1952.08,
+      "duration": 3.76,
+      "text": "also here but if you want to check"
+    },
+    {
+      "start": 1954.44,
+      "duration": 3.28,
+      "text": "metrics for a particular service let's"
+    },
+    {
+      "start": 1955.84,
+      "duration": 4.799,
+      "text": "say for ad service I can click on add"
+    },
+    {
+      "start": 1957.72,
+      "duration": 5.079,
+      "text": "service here and you can see the data"
+    },
+    {
+      "start": 1960.639,
+      "duration": 5.16,
+      "text": "for ad Service as well you can see it"
+    },
+    {
+      "start": 1962.799,
+      "duration": 5.441,
+      "text": "says High CPU load pattern enabled so we"
+    },
+    {
+      "start": 1965.799,
+      "duration": 4.681,
+      "text": "get an error or a log saying High CPU"
+    },
+    {
+      "start": 1968.24,
+      "duration": 5.72,
+      "text": "load because we have increased the CPU"
+    },
+    {
+      "start": 1970.48,
+      "duration": 5.36,
+      "text": "or enabled the CPU flag in the file so"
+    },
+    {
+      "start": 1973.96,
+      "duration": 3.76,
+      "text": "we also get get ads failed with the"
+    },
+    {
+      "start": 1975.84,
+      "duration": 4.04,
+      "text": "status this this this which means you"
+    },
+    {
+      "start": 1977.72,
+      "duration": 3.959,
+      "text": "get getting the information uh to"
+    },
+    {
+      "start": 1979.88,
+      "duration": 3.6,
+      "text": "understand why is this issue coming up"
+    },
+    {
+      "start": 1981.679,
+      "duration": 3.48,
+      "text": "so whenever you get get failed ad which"
+    },
+    {
+      "start": 1983.48,
+      "duration": 3.559,
+      "text": "means there's some problem with your ad"
+    },
+    {
+      "start": 1985.159,
+      "duration": 3.681,
+      "text": "service whenever you see high CPU load"
+    },
+    {
+      "start": 1987.039,
+      "duration": 4.281,
+      "text": "for ad service which means you need to"
+    },
+    {
+      "start": 1988.84,
+      "duration": 4.24,
+      "text": "scale it up so these are the information"
+    },
+    {
+      "start": 1991.32,
+      "duration": 3.68,
+      "text": "that helps you understand what is"
+    },
+    {
+      "start": 1993.08,
+      "duration": 3.88,
+      "text": "failing in your application rather than"
+    },
+    {
+      "start": 1995.0,
+      "duration": 5.399,
+      "text": "checking each service so you can also"
+    },
+    {
+      "start": 1996.96,
+      "duration": 5.52,
+      "text": "see other things here so let's say C"
+    },
+    {
+      "start": 2000.399,
+      "duration": 3.921,
+      "text": "service so when I click on card service"
+    },
+    {
+      "start": 2002.48,
+      "duration": 4.76,
+      "text": "I can see the latency information here"
+    },
+    {
+      "start": 2004.32,
+      "duration": 6.68,
+      "text": "also error rates coming up I can also"
+    },
+    {
+      "start": 2007.24,
+      "duration": 7.6,
+      "text": "see service is getting these different"
+    },
+    {
+      "start": 2011.0,
+      "duration": 6.6,
+      "text": "logs this is a CPU and so on along with"
+    },
+    {
+      "start": 2014.84,
+      "duration": 2.76,
+      "text": "this if you check other"
+    },
+    {
+      "start": 2018.72,
+      "duration": 7.36,
+      "text": "dashport you can also see latency uh"
+    },
+    {
+      "start": 2022.84,
+      "duration": 5.48,
+      "text": "then span names everything else let's"
+    },
+    {
+      "start": 2026.08,
+      "duration": 5.079,
+      "text": "check out traces and see if there's any"
+    },
+    {
+      "start": 2028.32,
+      "duration": 5.319,
+      "text": "issue or a problem made when setting"
+    },
+    {
+      "start": 2031.159,
+      "duration": 3.801,
+      "text": "request among different microservices"
+    },
+    {
+      "start": 2033.639,
+      "duration": 3.601,
+      "text": "I'm going to click on find traces for"
+    },
+    {
+      "start": 2034.96,
+      "duration": 5.0,
+      "text": "the ad service and right now ad service"
+    },
+    {
+      "start": 2037.24,
+      "duration": 5.439,
+      "text": "is not showing err but let's go to front"
+    },
+    {
+      "start": 2039.96,
+      "duration": 6.04,
+      "text": "end and click on find traces"
+    },
+    {
+      "start": 2042.679,
+      "duration": 4.521,
+      "text": "now so front end is also working fine we"
+    },
+    {
+      "start": 2046.0,
+      "duration": 3.04,
+      "text": "have to wait for some time before it"
+    },
+    {
+      "start": 2047.2,
+      "duration": 4.679,
+      "text": "shows an error because as you have seen"
+    },
+    {
+      "start": 2049.04,
+      "duration": 5.28,
+      "text": "inside the flag it can show you an error"
+    },
+    {
+      "start": 2051.879,
+      "duration": 4.96,
+      "text": "one out of 10th time like out of 10 it"
+    },
+    {
+      "start": 2054.32,
+      "duration": 5.319,
+      "text": "can show you an error once so you need"
+    },
+    {
+      "start": 2056.839,
+      "duration": 4.441,
+      "text": "to wait and check all the time so let's"
+    },
+    {
+      "start": 2059.639,
+      "duration": 3.24,
+      "text": "check for the load generation service"
+    },
+    {
+      "start": 2061.28,
+      "duration": 4.48,
+      "text": "first so I'm going to go and click on"
+    },
+    {
+      "start": 2062.879,
+      "duration": 4.48,
+      "text": "load generator here click on find traces"
+    },
+    {
+      "start": 2065.76,
+      "duration": 4.599,
+      "text": "and we can see that there is an error"
+    },
+    {
+      "start": 2067.359,
+      "duration": 5.081,
+      "text": "here also an error here and an error"
+    },
+    {
+      "start": 2070.359,
+      "duration": 4.361,
+      "text": "here so when you click on these red"
+    },
+    {
+      "start": 2072.44,
+      "duration": 3.959,
+      "text": "spots which will Define you what is the"
+    },
+    {
+      "start": 2074.72,
+      "duration": 3.24,
+      "text": "error so you can see the error is inside"
+    },
+    {
+      "start": 2076.399,
+      "duration": 4.081,
+      "text": "the recommendation"
+    },
+    {
+      "start": 2077.96,
+      "duration": 4.28,
+      "text": "service so in this you can check logs"
+    },
+    {
+      "start": 2080.48,
+      "duration": 3.28,
+      "text": "you can also check processes which will"
+    },
+    {
+      "start": 2082.24,
+      "duration": 3.599,
+      "text": "give you more information about the"
+    },
+    {
+      "start": 2083.76,
+      "duration": 3.079,
+      "text": "microservice so you also read this laws"
+    },
+    {
+      "start": 2085.839,
+      "duration": 3.04,
+      "text": "which will help you understand and"
+    },
+    {
+      "start": 2086.839,
+      "duration": 4.121,
+      "text": "troubleshoot things properly so it says"
+    },
+    {
+      "start": 2088.879,
+      "duration": 5.0,
+      "text": "deadline exceeded this is more likely a"
+    },
+    {
+      "start": 2090.96,
+      "duration": 5.08,
+      "text": "Kafka issue uh because they have also"
+    },
+    {
+      "start": 2093.879,
+      "duration": 3.96,
+      "text": "stopped Kafka so this is how you can"
+    },
+    {
+      "start": 2096.04,
+      "duration": 3.799,
+      "text": "understand or get to know whether the"
+    },
+    {
+      "start": 2097.839,
+      "duration": 7.041,
+      "text": "problem is what to check what not to"
+    },
+    {
+      "start": 2099.839,
+      "duration": 7.321,
+      "text": "check by checking places in your leer"
+    },
+    {
+      "start": 2104.88,
+      "duration": 5.959,
+      "text": "dashboard ad service works fine there's"
+    },
+    {
+      "start": 2107.16,
+      "duration": 6.12,
+      "text": "no issue in ad service yet as I said the"
+    },
+    {
+      "start": 2110.839,
+      "duration": 4.361,
+      "text": "flags are enabled to show you error only"
+    },
+    {
+      "start": 2113.28,
+      "duration": 4.12,
+      "text": "periodically so you need to try out and"
+    },
+    {
+      "start": 2115.2,
+      "duration": 4.639,
+      "text": "change different flags to understand"
+    },
+    {
+      "start": 2117.4,
+      "duration": 5.32,
+      "text": "things I'm going to choose flag D this"
+    },
+    {
+      "start": 2119.839,
+      "duration": 6.081,
+      "text": "service and there is an issue here so we"
+    },
+    {
+      "start": 2122.72,
+      "duration": 5.24,
+      "text": "got an eror here so let's click on this"
+    },
+    {
+      "start": 2125.92,
+      "duration": 4.36,
+      "text": "option when you click here you can see"
+    },
+    {
+      "start": 2127.96,
+      "duration": 5.399,
+      "text": "the error is in the front end proxy and"
+    },
+    {
+      "start": 2130.28,
+      "duration": 5.72,
+      "text": "it has a warning also a process"
+    },
+    {
+      "start": 2133.359,
+      "duration": 4.401,
+      "text": "here so we got an error saying clock Q"
+    },
+    {
+      "start": 2136.0,
+      "duration": 5.32,
+      "text": "has been disabled not applying"
+    },
+    {
+      "start": 2137.76,
+      "duration": 5.079,
+      "text": "calculated data for flag so let's say"
+    },
+    {
+      "start": 2141.32,
+      "duration": 4.32,
+      "text": "your company is using something else"
+    },
+    {
+      "start": 2142.839,
+      "duration": 5.121,
+      "text": "other than prus maybe din Trace data dog"
+    },
+    {
+      "start": 2145.64,
+      "duration": 4.52,
+      "text": "new relics plank you can check this open"
+    },
+    {
+      "start": 2147.96,
+      "duration": 4.44,
+      "text": "tary repository and if you scroll down"
+    },
+    {
+      "start": 2150.16,
+      "duration": 4.52,
+      "text": "below you can see the same application"
+    },
+    {
+      "start": 2152.4,
+      "duration": 4.12,
+      "text": "can be done on all these different"
+    },
+    {
+      "start": 2154.68,
+      "duration": 3.48,
+      "text": "vendors or all these different"
+    },
+    {
+      "start": 2156.52,
+      "duration": 4.0,
+      "text": "monitoring tools so so you can do the"
+    },
+    {
+      "start": 2158.16,
+      "duration": 5.04,
+      "text": "same with New Relic elastic Google Cloud"
+    },
+    {
+      "start": 2160.52,
+      "duration": 6.599,
+      "text": "open search Sentry Spang sum logic"
+    },
+    {
+      "start": 2163.2,
+      "duration": 6.96,
+      "text": "Telemetry vatrio logs. I uppr Cloud fuse"
+    },
+    {
+      "start": 2167.119,
+      "duration": 4.641,
+      "text": "data dog Das zero everything for example"
+    },
+    {
+      "start": 2170.16,
+      "duration": 4.0,
+      "text": "let's say you want to do this with data"
+    },
+    {
+      "start": 2171.76,
+      "duration": 6.16,
+      "text": "dog so you can just search for otal demo"
+    },
+    {
+      "start": 2174.16,
+      "duration": 5.24,
+      "text": "data dog so I'll say oel demo data dog"
+    },
+    {
+      "start": 2177.92,
+      "duration": 3.32,
+      "text": "and all these different companies have"
+    },
+    {
+      "start": 2179.4,
+      "duration": 3.919,
+      "text": "their own blogs and demos explaining how"
+    },
+    {
+      "start": 2181.24,
+      "duration": 4.72,
+      "text": "you can use the same application on"
+    },
+    {
+      "start": 2183.319,
+      "duration": 5.28,
+      "text": "their platform so you can see sending"
+    },
+    {
+      "start": 2185.96,
+      "duration": 4.84,
+      "text": "data from open Petry to data dog in fact"
+    },
+    {
+      "start": 2188.599,
+      "duration": 4.041,
+      "text": "there's also a video created to explain"
+    },
+    {
+      "start": 2190.8,
+      "duration": 3.88,
+      "text": "you all these things so we have the same"
+    },
+    {
+      "start": 2192.64,
+      "duration": 4.56,
+      "text": "thing all you need to do is to change"
+    },
+    {
+      "start": 2194.68,
+      "duration": 4.679,
+      "text": "the file that I explained you earlier"
+    },
+    {
+      "start": 2197.2,
+      "duration": 4.68,
+      "text": "which is the open simetry config.yml"
+    },
+    {
+      "start": 2199.359,
+      "duration": 4.321,
+      "text": "apart from this this demo also uses"
+    },
+    {
+      "start": 2201.88,
+      "duration": 3.64,
+      "text": "their own connector so they're also"
+    },
+    {
+      "start": 2203.68,
+      "duration": 4.96,
+      "text": "adding a connector here in the docker"
+    },
+    {
+      "start": 2205.52,
+      "duration": 4.799,
+      "text": "compos file so you can follow this demo"
+    },
+    {
+      "start": 2208.64,
+      "duration": 4.16,
+      "text": "if you want to do the demo or this"
+    },
+    {
+      "start": 2210.319,
+      "duration": 4.681,
+      "text": "project on data dock similarly let's say"
+    },
+    {
+      "start": 2212.8,
+      "duration": 4.84,
+      "text": "you have Splunk you can see this say the"
+    },
+    {
+      "start": 2215.0,
+      "duration": 4.96,
+      "text": "same thing and say Splunk here so now"
+    },
+    {
+      "start": 2217.64,
+      "duration": 4.36,
+      "text": "you can see how to deploy the open"
+    },
+    {
+      "start": 2219.96,
+      "duration": 4.119,
+      "text": "collector how to set up the opened demo"
+    },
+    {
+      "start": 2222.0,
+      "duration": 3.56,
+      "text": "in the kubernetes so then it will give"
+    },
+    {
+      "start": 2224.079,
+      "duration": 3.361,
+      "text": "you the steps on how to set up this"
+    },
+    {
+      "start": 2225.56,
+      "duration": 4.12,
+      "text": "application and you will have the same"
+    },
+    {
+      "start": 2227.44,
+      "duration": 4.28,
+      "text": "application that we have done right now"
+    },
+    {
+      "start": 2229.68,
+      "duration": 4.08,
+      "text": "using Splunk so you will have their own"
+    },
+    {
+      "start": 2231.72,
+      "duration": 7.599,
+      "text": "dashboard to check traces metrics and"
+    },
+    {
+      "start": 2233.76,
+      "duration": 9.24,
+      "text": "logs so similarly if I search for logs"
+    },
+    {
+      "start": 2239.319,
+      "duration": 6.481,
+      "text": "doio I also have a demo here so this"
+    },
+    {
+      "start": 2243.0,
+      "duration": 4.64,
+      "text": "demo explains me how I can go ahead with"
+    },
+    {
+      "start": 2245.8,
+      "duration": 3.48,
+      "text": "doing the same project using the the"
+    },
+    {
+      "start": 2247.64,
+      "duration": 5.0,
+      "text": "logs. IO this is the same that we have"
+    },
+    {
+      "start": 2249.28,
+      "duration": 6.0,
+      "text": "done so all we need to do is change uh"
+    },
+    {
+      "start": 2252.64,
+      "duration": 6.08,
+      "text": "some settings in the files so we have to"
+    },
+    {
+      "start": 2255.28,
+      "duration": 6.12,
+      "text": "add the tokens from my log. IO uh"
+    },
+    {
+      "start": 2258.72,
+      "duration": 5.24,
+      "text": "account to the server so I can start"
+    },
+    {
+      "start": 2261.4,
+      "duration": 4.919,
+      "text": "using log. iio service or monting tool"
+    },
+    {
+      "start": 2263.96,
+      "duration": 4.399,
+      "text": "in place of the default whenas grafana"
+    },
+    {
+      "start": 2266.319,
+      "duration": 4.201,
+      "text": "tools so all I need to do is change the"
+    },
+    {
+      "start": 2268.359,
+      "duration": 3.881,
+      "text": "file in the config.yml file that I have"
+    },
+    {
+      "start": 2270.52,
+      "duration": 3.559,
+      "text": "explained you in the start of this"
+    },
+    {
+      "start": 2272.24,
+      "duration": 4.52,
+      "text": "project and we need to put this data"
+    },
+    {
+      "start": 2274.079,
+      "duration": 5.361,
+      "text": "here so to quickly show you let's go"
+    },
+    {
+      "start": 2276.76,
+      "duration": 2.68,
+      "text": "into source"
+    },
+    {
+      "start": 2279.88,
+      "duration": 5.32,
+      "text": "LS the you need to change the file"
+    },
+    {
+      "start": 2282.56,
+      "duration": 4.799,
+      "text": "inside the open chetry collector which"
+    },
+    {
+      "start": 2285.2,
+      "duration": 4.08,
+      "text": "is oel collector here so if I do oel"
+    },
+    {
+      "start": 2287.359,
+      "duration": 3.521,
+      "text": "collector you can see there are three"
+    },
+    {
+      "start": 2289.28,
+      "duration": 3.36,
+      "text": "two files here this is the file that"
+    },
+    {
+      "start": 2290.88,
+      "duration": 3.04,
+      "text": "defines what tools to be used this is"
+    },
+    {
+      "start": 2292.64,
+      "duration": 3.439,
+      "text": "the same file with the backup so I'm"
+    },
+    {
+      "start": 2293.92,
+      "duration": 5.28,
+      "text": "going to edit this file just to have"
+    },
+    {
+      "start": 2296.079,
+      "duration": 5.0,
+      "text": "things securely so I'm going to say sudo"
+    },
+    {
+      "start": 2299.2,
+      "duration": 5.879,
+      "text": "Nano and"
+    },
+    {
+      "start": 2301.079,
+      "duration": 5.561,
+      "text": "otel select the config extras. yml now I"
+    },
+    {
+      "start": 2305.079,
+      "duration": 3.0,
+      "text": "need to copy the same thing from the"
+    },
+    {
+      "start": 2306.64,
+      "duration": 3.6,
+      "text": "documentation here"
+    },
+    {
+      "start": 2308.079,
+      "duration": 4.601,
+      "text": "so here we defining the log should be"
+    },
+    {
+      "start": 2310.24,
+      "duration": 3.96,
+      "text": "logs should be stored inside logs iio"
+    },
+    {
+      "start": 2312.68,
+      "duration": 4.88,
+      "text": "Tres should also be stored inside"
+    },
+    {
+      "start": 2314.2,
+      "duration": 5.84,
+      "text": "places. iio same for VPS so I'm going to"
+    },
+    {
+      "start": 2317.56,
+      "duration": 4.36,
+      "text": "just copy this and paste it once I paste"
+    },
+    {
+      "start": 2320.04,
+      "duration": 5.12,
+      "text": "it I need to add some information which"
+    },
+    {
+      "start": 2321.92,
+      "duration": 4.96,
+      "text": "includes the tokens listener URL uh and"
+    },
+    {
+      "start": 2325.16,
+      "duration": 3.679,
+      "text": "so on so if you don't have an account"
+    },
+    {
+      "start": 2326.88,
+      "duration": 3.719,
+      "text": "you can create an account with launch. I"
+    },
+    {
+      "start": 2328.839,
+      "duration": 3.161,
+      "text": "so I'm now signed in with launch. and"
+    },
+    {
+      "start": 2330.599,
+      "duration": 3.72,
+      "text": "I'm going to be using this monitoring"
+    },
+    {
+      "start": 2332.0,
+      "duration": 4.04,
+      "text": "dashboard or this monitoring tool to set"
+    },
+    {
+      "start": 2334.319,
+      "duration": 4.321,
+      "text": "up our application so I'm going to go"
+    },
+    {
+      "start": 2336.04,
+      "duration": 5.12,
+      "text": "into settings and manage click on manage"
+    },
+    {
+      "start": 2338.64,
+      "duration": 4.199,
+      "text": "tokens here this will provide me with"
+    },
+    {
+      "start": 2341.16,
+      "duration": 3.8,
+      "text": "tokens that I can use so I'm going to"
+    },
+    {
+      "start": 2342.839,
+      "duration": 4.841,
+      "text": "quickly put my tokens that is present in"
+    },
+    {
+      "start": 2344.96,
+      "duration": 4.2,
+      "text": "this data shipping tokens okay so now"
+    },
+    {
+      "start": 2347.68,
+      "duration": 3.12,
+      "text": "I've added the information inside this"
+    },
+    {
+      "start": 2349.16,
+      "duration": 3.52,
+      "text": "file and you can always refer to this"
+    },
+    {
+      "start": 2350.8,
+      "duration": 3.44,
+      "text": "document to understand what to enter so"
+    },
+    {
+      "start": 2352.68,
+      "duration": 3.24,
+      "text": "you need to add your shipping token and"
+    },
+    {
+      "start": 2354.24,
+      "duration": 3.44,
+      "text": "the account region which is going to be"
+    },
+    {
+      "start": 2355.92,
+      "duration": 3.439,
+      "text": "us East one but you can check your"
+    },
+    {
+      "start": 2357.68,
+      "duration": 3.84,
+      "text": "dashboard and check your region as well"
+    },
+    {
+      "start": 2359.359,
+      "duration": 5.441,
+      "text": "once you do that you need to run this"
+    },
+    {
+      "start": 2361.52,
+      "duration": 4.76,
+      "text": "command Docker compose up D- no- build"
+    },
+    {
+      "start": 2364.8,
+      "duration": 4.2,
+      "text": "so I'm going to run this command here"
+    },
+    {
+      "start": 2366.28,
+      "duration": 6.24,
+      "text": "coming in the right folder which is dot"
+    },
+    {
+      "start": 2369.0,
+      "duration": 4.76,
+      "text": "SL dot dot so this is where my Docker"
+    },
+    {
+      "start": 2372.52,
+      "duration": 4.0,
+      "text": "compose file is I'm going to run the"
+    },
+    {
+      "start": 2373.76,
+      "duration": 3.88,
+      "text": "docker compose up D- no build file and I"
+    },
+    {
+      "start": 2376.52,
+      "duration": 3.2,
+      "text": "need to use"
+    },
+    {
+      "start": 2377.64,
+      "duration": 3.76,
+      "text": "sudo I get permission denied so I'm"
+    },
+    {
+      "start": 2379.72,
+      "duration": 5.04,
+      "text": "going to say sudo and this will go ahead"
+    },
+    {
+      "start": 2381.4,
+      "duration": 6.52,
+      "text": "with redeploying my containers and this"
+    },
+    {
+      "start": 2384.76,
+      "duration": 4.68,
+      "text": "time it will use launch. to Showcase my"
+    },
+    {
+      "start": 2387.92,
+      "duration": 4.439,
+      "text": "traces so you can see traces are going"
+    },
+    {
+      "start": 2389.44,
+      "duration": 6.0,
+      "text": "to be generated here uh same for metrics"
+    },
+    {
+      "start": 2392.359,
+      "duration": 6.161,
+      "text": "logs so log I uses Yer by default also"
+    },
+    {
+      "start": 2395.44,
+      "duration": 6.2,
+      "text": "prus as a back end so very same but you"
+    },
+    {
+      "start": 2398.52,
+      "duration": 5.44,
+      "text": "can understand how to use other monting"
+    },
+    {
+      "start": 2401.64,
+      "duration": 5.0,
+      "text": "Solutions so I wanted to try out this"
+    },
+    {
+      "start": 2403.96,
+      "duration": 3.96,
+      "text": "maybe with data dog or din tray of spunk"
+    },
+    {
+      "start": 2406.64,
+      "duration": 3.08,
+      "text": "and also share your learnings on"
+    },
+    {
+      "start": 2407.92,
+      "duration": 4.6,
+      "text": "LinkedIn once you are done with the"
+    },
+    {
+      "start": 2409.72,
+      "duration": 5.399,
+      "text": "project don't forget to delete the"
+    },
+    {
+      "start": 2412.52,
+      "duration": 4.0,
+      "text": "instance you can go ahead with just uh"
+    },
+    {
+      "start": 2415.119,
+      "duration": 2.96,
+      "text": "terminating this instance or if you want"
+    },
+    {
+      "start": 2416.52,
+      "duration": 4.2,
+      "text": "to stop and come back work on it you can"
+    },
+    {
+      "start": 2418.079,
+      "duration": 4.881,
+      "text": "stop the instance as well so once my"
+    },
+    {
+      "start": 2420.72,
+      "duration": 4.84,
+      "text": "application is deployed I can get some"
+    },
+    {
+      "start": 2422.96,
+      "duration": 4.76,
+      "text": "data generated on"
+    },
+    {
+      "start": 2425.56,
+      "duration": 3.519,
+      "text": "the dashboard here you can can see we"
+    },
+    {
+      "start": 2427.72,
+      "duration": 3.8,
+      "text": "are now able to see all the different"
+    },
+    {
+      "start": 2429.079,
+      "duration": 5.081,
+      "text": "services on lock I here click on find"
+    },
+    {
+      "start": 2431.52,
+      "duration": 5.88,
+      "text": "traces and we can find traces after some"
+    },
+    {
+      "start": 2434.16,
+      "duration": 4.88,
+      "text": "time because it is just set up now so"
+    },
+    {
+      "start": 2437.4,
+      "duration": 3.28,
+      "text": "similar to this you can do it on any"
+    },
+    {
+      "start": 2439.04,
+      "duration": 5.44,
+      "text": "other dashboards or any other monitoring"
+    },
+    {
+      "start": 2440.68,
+      "duration": 7.56,
+      "text": "tools so this is how we need to set up"
+    },
+    {
+      "start": 2444.48,
+      "duration": 6.08,
+      "text": "observability using open Telemetry demo"
+    },
+    {
+      "start": 2448.24,
+      "duration": 4.48,
+      "text": "application so this is the end of our"
+    },
+    {
+      "start": 2450.56,
+      "duration": 4.24,
+      "text": "devops project if you have any questions"
+    },
+    {
+      "start": 2452.72,
+      "duration": 3.68,
+      "text": "any doubt about the project let me know"
+    },
+    {
+      "start": 2454.8,
+      "duration": 3.6,
+      "text": "in the comment section if you"
+    },
+    {
+      "start": 2456.4,
+      "duration": 3.48,
+      "text": "successfully completed the project make"
+    },
+    {
+      "start": 2458.4,
+      "duration": 4.32,
+      "text": "sure to share your learnings on your"
+    },
+    {
+      "start": 2459.88,
+      "duration": 4.6,
+      "text": "resume also on LinkedIn don't forget to"
+    },
+    {
+      "start": 2462.72,
+      "duration": 3.48,
+      "text": "tag me along with this if you want me to"
+    },
+    {
+      "start": 2464.48,
+      "duration": 3.28,
+      "text": "share the document comment down"
+    },
+    {
+      "start": 2466.2,
+      "duration": 3.32,
+      "text": "observability project and I will share"
+    },
+    {
+      "start": 2467.76,
+      "duration": 3.599,
+      "text": "this document with you I hope you"
+    },
+    {
+      "start": 2469.52,
+      "duration": 3.96,
+      "text": "complete this project till the end and"
+    },
+    {
+      "start": 2471.359,
+      "duration": 4.521,
+      "text": "also integrate it with your own"
+    },
+    {
+      "start": 2473.48,
+      "duration": 4.639,
+      "text": "monitoring tool let's see who completes"
+    },
+    {
+      "start": 2475.88,
+      "duration": 5.6,
+      "text": "this project first thank you and have a"
+    },
+    {
+      "start": 2478.119,
+      "duration": 3.361,
+      "text": "good day bye"
+    }
+  ]
+}

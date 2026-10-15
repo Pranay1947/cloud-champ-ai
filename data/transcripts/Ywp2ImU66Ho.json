@@ -1,0 +1,436 @@
+{
+  "video": {
+    "id": "Ywp2ImU66Ho",
+    "title": "100 Days of DevOps Challenge by KodeKloud! #devops",
+    "url": "https://www.youtube.com/watch?v=Ywp2ImU66Ho",
+    "duration": 169,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.32,
+      "duration": 4.56,
+      "text": "Hello everyone. Let me take a guess. You"
+    },
+    {
+      "start": 2.879,
+      "duration": 3.521,
+      "text": "have been learning DevOps for months now"
+    },
+    {
+      "start": 4.88,
+      "duration": 3.52,
+      "text": "and now you understand what is a"
+    },
+    {
+      "start": 6.4,
+      "duration": 4.319,
+      "text": "container or you know what does CI/CD"
+    },
+    {
+      "start": 8.4,
+      "duration": 4.319,
+      "text": "stand for. But tell me something. If I"
+    },
+    {
+      "start": 10.719,
+      "duration": 4.161,
+      "text": "put you in a real DevOps engineer role"
+    },
+    {
+      "start": 12.719,
+      "duration": 3.761,
+      "text": "tomorrow, can you do the job or would"
+    },
+    {
+      "start": 14.88,
+      "duration": 3.6,
+      "text": "you end up searching for basic Linux"
+    },
+    {
+      "start": 16.48,
+      "duration": 4.0,
+      "text": "commands on the internet? So here's the"
+    },
+    {
+      "start": 18.48,
+      "duration": 3.76,
+      "text": "truth. Most people learn DevOps the"
+    },
+    {
+      "start": 20.48,
+      "duration": 4.16,
+      "text": "wrong way. They spend months watching"
+    },
+    {
+      "start": 22.24,
+      "duration": 4.48,
+      "text": "tutorials, reading blogs, collecting"
+    },
+    {
+      "start": 24.64,
+      "duration": 3.68,
+      "text": "certificates. And to be honest, I"
+    },
+    {
+      "start": 26.72,
+      "duration": 4.559,
+      "text": "started the same. I thought that was"
+    },
+    {
+      "start": 28.32,
+      "duration": 4.64,
+      "text": "enough until I got my first real task to"
+    },
+    {
+      "start": 31.279,
+      "duration": 3.921,
+      "text": "set up a CI/CD pipeline for this"
+    },
+    {
+      "start": 32.96,
+      "duration": 4.16,
+      "text": "application and I completely froze"
+    },
+    {
+      "start": 35.2,
+      "duration": 3.519,
+      "text": "because learning theory does not give"
+    },
+    {
+      "start": 37.12,
+      "duration": 3.52,
+      "text": "you the real skill to apply in"
+    },
+    {
+      "start": 38.719,
+      "duration": 3.441,
+      "text": "production. You need to understand that"
+    },
+    {
+      "start": 40.64,
+      "duration": 3.68,
+      "text": "watching someone else type the command"
+    },
+    {
+      "start": 42.16,
+      "duration": 4.0,
+      "text": "is not the same as typing yourself."
+    },
+    {
+      "start": 44.32,
+      "duration": 4.0,
+      "text": "Also, reading about Docker is not the"
+    },
+    {
+      "start": 46.16,
+      "duration": 3.84,
+      "text": "same as running or building containers."
+    },
+    {
+      "start": 48.32,
+      "duration": 3.919,
+      "text": "The best and the fastest way to learn"
+    },
+    {
+      "start": 50.0,
+      "duration": 4.239,
+      "text": "DevOps is by actually doing hands-on"
+    },
+    {
+      "start": 52.239,
+      "duration": 4.401,
+      "text": "practice. And that's why CodeCloud"
+    },
+    {
+      "start": 54.239,
+      "duration": 4.16,
+      "text": "started 100 days of DevOps challenge. So"
+    },
+    {
+      "start": 56.64,
+      "duration": 3.36,
+      "text": "this is the landing page for 100 days"
+    },
+    {
+      "start": 58.399,
+      "duration": 3.521,
+      "text": "DevOps and you can check it out. The"
+    },
+    {
+      "start": 60.0,
+      "duration": 3.6,
+      "text": "link is in video description. It's"
+    },
+    {
+      "start": 61.92,
+      "duration": 3.84,
+      "text": "actually very simple. Every day you are"
+    },
+    {
+      "start": 63.6,
+      "duration": 4.24,
+      "text": "given a practical task. Not a video to"
+    },
+    {
+      "start": 65.76,
+      "duration": 4.399,
+      "text": "watch or a book to read but a real task"
+    },
+    {
+      "start": 67.84,
+      "duration": 4.48,
+      "text": "to do hands-on practice. Which means"
+    },
+    {
+      "start": 70.159,
+      "duration": 4.481,
+      "text": "from day one you are actually working in"
+    },
+    {
+      "start": 72.32,
+      "duration": 4.24,
+      "text": "real environments. And by day 15 you"
+    },
+    {
+      "start": 74.64,
+      "duration": 3.68,
+      "text": "will be writing scripts. By day 30 you"
+    },
+    {
+      "start": 76.56,
+      "duration": 4.0,
+      "text": "are building Docker containers. By day"
+    },
+    {
+      "start": 78.32,
+      "duration": 4.72,
+      "text": "50 you are debugging Kubernetes pods. By"
+    },
+    {
+      "start": 80.56,
+      "duration": 5.12,
+      "text": "day 75 you are running your first CI/CD"
+    },
+    {
+      "start": 83.04,
+      "duration": 4.88,
+      "text": "pipeline. And by day 100 you have built"
+    },
+    {
+      "start": 85.68,
+      "duration": 4.799,
+      "text": "the complete portfolio with 100 DevOps"
+    },
+    {
+      "start": 87.92,
+      "duration": 4.32,
+      "text": "tools which means there's no time pass"
+    },
+    {
+      "start": 90.479,
+      "duration": 3.921,
+      "text": "just real practice that will make you"
+    },
+    {
+      "start": 92.24,
+      "duration": 4.08,
+      "text": "job ready. This 100 days of DevOps"
+    },
+    {
+      "start": 94.4,
+      "duration": 3.92,
+      "text": "challenge is created like a game. You"
+    },
+    {
+      "start": 96.32,
+      "duration": 3.839,
+      "text": "have different levels. So starting from"
+    },
+    {
+      "start": 98.32,
+      "duration": 3.6,
+      "text": "day 1 to 25 you will be at a"
+    },
+    {
+      "start": 100.159,
+      "duration": 3.681,
+      "text": "foundational level or a basic level"
+    },
+    {
+      "start": 101.92,
+      "duration": 4.08,
+      "text": "where you will learn Linux commands,"
+    },
+    {
+      "start": 103.84,
+      "duration": 4.319,
+      "text": "create bash scripts, manage users,"
+    },
+    {
+      "start": 106.0,
+      "duration": 3.28,
+      "text": "schedule pod, master git basics. So"
+    },
+    {
+      "start": 108.159,
+      "duration": 2.801,
+      "text": "which means by the end you will"
+    },
+    {
+      "start": 109.28,
+      "duration": 3.199,
+      "text": "understand everything about servers and"
+    },
+    {
+      "start": 110.96,
+      "duration": 4.4,
+      "text": "you can also handle them without any"
+    },
+    {
+      "start": 112.479,
+      "duration": 4.32,
+      "text": "fear. Next from day 26 to 50 you will"
+    },
+    {
+      "start": 115.36,
+      "duration": 3.039,
+      "text": "learn about Docker containers and"
+    },
+    {
+      "start": 116.799,
+      "duration": 3.68,
+      "text": "Kubernetes. You will build Docker"
+    },
+    {
+      "start": 118.399,
+      "duration": 4.0,
+      "text": "images, debug them, deploy applications"
+    },
+    {
+      "start": 120.479,
+      "duration": 3.841,
+      "text": "on Kubernetes. So by the end you will"
+    },
+    {
+      "start": 122.399,
+      "duration": 4.641,
+      "text": "understand how containers and pod"
+    },
+    {
+      "start": 124.32,
+      "duration": 5.12,
+      "text": "actually work. After that from day 51 to"
+    },
+    {
+      "start": 127.04,
+      "duration": 4.48,
+      "text": "day 75 you will learn about CI/CD and"
+    },
+    {
+      "start": 129.44,
+      "duration": 3.6,
+      "text": "automation. In this DevOps challenge you"
+    },
+    {
+      "start": 131.52,
+      "duration": 3.12,
+      "text": "will set up Genkins pipeline, connect"
+    },
+    {
+      "start": 133.04,
+      "duration": 3.6,
+      "text": "your applications using Kubernetes"
+    },
+    {
+      "start": 134.64,
+      "duration": 3.52,
+      "text": "features like config map secrets and"
+    },
+    {
+      "start": 136.64,
+      "duration": 4.4,
+      "text": "this is where you can learn and build"
+    },
+    {
+      "start": 138.16,
+      "duration": 4.56,
+      "text": "software like a pro. Lastly, from day 76"
+    },
+    {
+      "start": 141.04,
+      "duration": 3.52,
+      "text": "to 100, you will be learning about"
+    },
+    {
+      "start": 142.72,
+      "duration": 4.4,
+      "text": "infrastructure as code and tools like"
+    },
+    {
+      "start": 144.56,
+      "duration": 4.0,
+      "text": "Terraform, Anible. Not just this,"
+    },
+    {
+      "start": 147.12,
+      "duration": 3.04,
+      "text": "through this 100 days of DevOps"
+    },
+    {
+      "start": 148.56,
+      "duration": 3.84,
+      "text": "challenge. You will add every of your"
+    },
+    {
+      "start": 150.16,
+      "duration": 4.24,
+      "text": "DevOps task in your GitHub portfolio."
+    },
+    {
+      "start": 152.4,
+      "duration": 3.52,
+      "text": "Which means by day 100, you don't just"
+    },
+    {
+      "start": 154.4,
+      "duration": 2.64,
+      "text": "say you know DevOps, you can actually"
+    },
+    {
+      "start": 155.92,
+      "duration": 3.44,
+      "text": "show them through your GitHub"
+    },
+    {
+      "start": 157.04,
+      "duration": 4.559,
+      "text": "portfolios. So you decide now 100 days"
+    },
+    {
+      "start": 159.36,
+      "duration": 4.56,
+      "text": "from now either you have excuses or a"
+    },
+    {
+      "start": 161.599,
+      "duration": 4.241,
+      "text": "portfolio with 100 DevOps task. Start"
+    },
+    {
+      "start": 163.92,
+      "duration": 3.599,
+      "text": "doing it today. Take the 100 days DevOps"
+    },
+    {
+      "start": 165.84,
+      "duration": 4.8,
+      "text": "challenge. The link is in description."
+    },
+    {
+      "start": 167.519,
+      "duration": 3.121,
+      "text": "Thank you and have a good"
+    }
+  ]
+}

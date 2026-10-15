@@ -1,0 +1,111 @@
+{
+  "video": {
+    "id": "AEStHHZm0Ok",
+    "title": "Terraform vs Ansible! #devops #iac",
+    "url": "https://www.youtube.com/watch?v=AEStHHZm0Ok",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.08,
+      "duration": 4.48,
+      "text": "Terafform versus Ansible. What is the"
+    },
+    {
+      "start": 2.48,
+      "duration": 4.08,
+      "text": "difference? Hashikorp Terapform is an"
+    },
+    {
+      "start": 4.56,
+      "duration": 3.76,
+      "text": "infrastructure as code tool used to"
+    },
+    {
+      "start": 6.56,
+      "duration": 4.159,
+      "text": "create cloud infrastructures like"
+    },
+    {
+      "start": 8.32,
+      "duration": 4.96,
+      "text": "servers, databases, network, storage,"
+    },
+    {
+      "start": 10.719,
+      "duration": 4.0,
+      "text": "etc. Once the infrastructure is created,"
+    },
+    {
+      "start": 13.28,
+      "duration": 3.52,
+      "text": "you can configure them using"
+    },
+    {
+      "start": 14.719,
+      "duration": 4.32,
+      "text": "configuration management tool like"
+    },
+    {
+      "start": 16.8,
+      "duration": 3.92,
+      "text": "anible. So, Ansible is a configuration"
+    },
+    {
+      "start": 19.039,
+      "duration": 4.24,
+      "text": "management tool that can be used to"
+    },
+    {
+      "start": 20.72,
+      "duration": 4.88,
+      "text": "install software, start, stop services,"
+    },
+    {
+      "start": 23.279,
+      "duration": 4.24,
+      "text": "manage configuration files and lot more."
+    },
+    {
+      "start": 25.6,
+      "duration": 3.599,
+      "text": "In short, Teraphform is used to create"
+    },
+    {
+      "start": 27.519,
+      "duration": 3.76,
+      "text": "infrastructure. Anible is used to"
+    },
+    {
+      "start": 29.199,
+      "duration": 3.761,
+      "text": "configure it. For example, a DevOps"
+    },
+    {
+      "start": 31.279,
+      "duration": 3.921,
+      "text": "engineer will use Terapform to create"
+    },
+    {
+      "start": 32.96,
+      "duration": 4.72,
+      "text": "EC2 instance in the cloud and then use"
+    },
+    {
+      "start": 35.2,
+      "duration": 4.879,
+      "text": "Ansible to install and configure EngineX"
+    },
+    {
+      "start": 37.68,
+      "duration": 4.719,
+      "text": "server on that EC2 instance created by"
+    },
+    {
+      "start": 40.079,
+      "duration": 2.32,
+      "text": "Terapform."
+    }
+  ]
+}

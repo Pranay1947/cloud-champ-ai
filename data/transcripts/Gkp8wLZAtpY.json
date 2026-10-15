@@ -1,0 +1,1971 @@
+{
+  "video": {
+    "id": "Gkp8wLZAtpY",
+    "title": "What is DevOps? Understanding DevOps terms and Tools",
+    "url": "https://www.youtube.com/watch?v=Gkp8wLZAtpY",
+    "duration": 763,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 2.82,
+      "duration": 4.86,
+      "text": "devops is confusing with so many"
+    },
+    {
+      "start": 5.819,
+      "duration": 3.721,
+      "text": "different terms like infrastructure as"
+    },
+    {
+      "start": 7.68,
+      "duration": 3.6,
+      "text": "code containerization configuration"
+    },
+    {
+      "start": 9.54,
+      "duration": 5.099,
+      "text": "management Version Control Systems"
+    },
+    {
+      "start": 11.28,
+      "duration": 4.919,
+      "text": "microservices cicd and so much more not"
+    },
+    {
+      "start": 14.639,
+      "duration": 3.241,
+      "text": "to mention the different devops schools"
+    },
+    {
+      "start": 16.199,
+      "duration": 5.101,
+      "text": "like terraform ansible kubernetes"
+    },
+    {
+      "start": 17.88,
+      "duration": 6.239,
+      "text": "Jenkins GitHub gitlab Prometheus grafana"
+    },
+    {
+      "start": 21.3,
+      "duration": 4.26,
+      "text": "and so much more so in this video I am"
+    },
+    {
+      "start": 24.119,
+      "duration": 3.721,
+      "text": "going to explain you all these different"
+    },
+    {
+      "start": 25.56,
+      "duration": 3.959,
+      "text": "terms with the real world example to"
+    },
+    {
+      "start": 27.84,
+      "duration": 3.12,
+      "text": "make you understand where to use all"
+    },
+    {
+      "start": 29.519,
+      "duration": 3.54,
+      "text": "these different tools in the deployment"
+    },
+    {
+      "start": 30.96,
+      "duration": 4.259,
+      "text": "process this video is going to be very"
+    },
+    {
+      "start": 33.059,
+      "duration": 4.52,
+      "text": "helpful for you so watch this video till"
+    },
+    {
+      "start": 35.219,
+      "duration": 2.36,
+      "text": "the end"
+    },
+    {
+      "start": 37.82,
+      "duration": 4.239,
+      "text": "hey everyone Welcome to Cloud champ in"
+    },
+    {
+      "start": 40.739,
+      "duration": 3.781,
+      "text": "this video we are going to understand"
+    },
+    {
+      "start": 42.059,
+      "duration": 4.261,
+      "text": "devops completely so if you're new to"
+    },
+    {
+      "start": 44.52,
+      "duration": 3.84,
+      "text": "devops and have no idea what are these"
+    },
+    {
+      "start": 46.32,
+      "duration": 3.96,
+      "text": "different devops terms or don't know"
+    },
+    {
+      "start": 48.36,
+      "duration": 4.199,
+      "text": "when to use terraform or Jenkins or"
+    },
+    {
+      "start": 50.28,
+      "duration": 4.14,
+      "text": "Prometheus in the devops process then"
+    },
+    {
+      "start": 52.559,
+      "duration": 3.421,
+      "text": "this video is for you throughout this"
+    },
+    {
+      "start": 54.42,
+      "duration": 3.54,
+      "text": "video we are going to take an example"
+    },
+    {
+      "start": 55.98,
+      "duration": 4.259,
+      "text": "and understand how is an application"
+    },
+    {
+      "start": 57.96,
+      "duration": 3.9,
+      "text": "deployed from scratch discussing all the"
+    },
+    {
+      "start": 60.239,
+      "duration": 4.441,
+      "text": "different devops terms and the tools"
+    },
+    {
+      "start": 61.86,
+      "duration": 4.92,
+      "text": "used along with best practices so please"
+    },
+    {
+      "start": 64.68,
+      "duration": 4.38,
+      "text": "like this video if you're new subscribe"
+    },
+    {
+      "start": 66.78,
+      "duration": 3.78,
+      "text": "to the channel and let's start before we"
+    },
+    {
+      "start": 69.06,
+      "duration": 3.0,
+      "text": "move ahead let's understand what is"
+    },
+    {
+      "start": 70.56,
+      "duration": 3.12,
+      "text": "devops which is one of the most"
+    },
+    {
+      "start": 72.06,
+      "duration": 3.599,
+      "text": "confusing terms and there are so many"
+    },
+    {
+      "start": 73.68,
+      "duration": 3.66,
+      "text": "different definitions for it so to"
+    },
+    {
+      "start": 75.659,
+      "duration": 3.541,
+      "text": "explain your devops in very simple way"
+    },
+    {
+      "start": 77.34,
+      "duration": 4.139,
+      "text": "devops is a process of delivering"
+    },
+    {
+      "start": 79.2,
+      "duration": 4.5,
+      "text": "applications or softwares in a fast and"
+    },
+    {
+      "start": 81.479,
+      "duration": 3.481,
+      "text": "reliable Manner and a devops engineer is"
+    },
+    {
+      "start": 83.7,
+      "duration": 3.419,
+      "text": "a person who is responsible for"
+    },
+    {
+      "start": 84.96,
+      "duration": 4.5,
+      "text": "application building testing and"
+    },
+    {
+      "start": 87.119,
+      "duration": 4.201,
+      "text": "deployment also some stages after"
+    },
+    {
+      "start": 89.46,
+      "duration": 3.12,
+      "text": "deployment like monitoring and logging"
+    },
+    {
+      "start": 91.32,
+      "duration": 3.479,
+      "text": "to make sure your application is running"
+    },
+    {
+      "start": 92.58,
+      "duration": 4.32,
+      "text": "fine now that we have an idea of what is"
+    },
+    {
+      "start": 94.799,
+      "duration": 3.601,
+      "text": "devops so let's take a scenario consider"
+    },
+    {
+      "start": 96.9,
+      "duration": 3.42,
+      "text": "you are working as a developer engineer"
+    },
+    {
+      "start": 98.4,
+      "duration": 4.679,
+      "text": "at a company where you are given a task"
+    },
+    {
+      "start": 100.32,
+      "duration": 4.439,
+      "text": "to deploy an application so the code for"
+    },
+    {
+      "start": 103.079,
+      "duration": 4.08,
+      "text": "this application has been written and"
+    },
+    {
+      "start": 104.759,
+      "duration": 4.261,
+      "text": "given it to you by developer you have"
+    },
+    {
+      "start": 107.159,
+      "duration": 3.661,
+      "text": "your code in your local machine and now"
+    },
+    {
+      "start": 109.02,
+      "duration": 3.239,
+      "text": "you are ready to deploy it but there are"
+    },
+    {
+      "start": 110.82,
+      "duration": 3.42,
+      "text": "issues when you have your code in your"
+    },
+    {
+      "start": 112.259,
+      "duration": 3.72,
+      "text": "local machine so if you lose your"
+    },
+    {
+      "start": 114.24,
+      "duration": 3.0,
+      "text": "machine your code is gone if you don't"
+    },
+    {
+      "start": 115.979,
+      "duration": 3.18,
+      "text": "have access to your machine you don't"
+    },
+    {
+      "start": 117.24,
+      "duration": 4.5,
+      "text": "have access to your code and that is why"
+    },
+    {
+      "start": 119.159,
+      "duration": 4.621,
+      "text": "it's a best practice to First create a"
+    },
+    {
+      "start": 121.74,
+      "duration": 4.32,
+      "text": "repository and push your code on Version"
+    },
+    {
+      "start": 123.78,
+      "duration": 4.08,
+      "text": "Control Systems like GitHub gitlab or"
+    },
+    {
+      "start": 126.06,
+      "duration": 3.539,
+      "text": "bitbucket pushing your code to Version"
+    },
+    {
+      "start": 127.86,
+      "duration": 3.179,
+      "text": "Control Systems like GitHub and gitlab"
+    },
+    {
+      "start": 129.599,
+      "duration": 3.661,
+      "text": "can provide you with so many different"
+    },
+    {
+      "start": 131.039,
+      "duration": 3.241,
+      "text": "benefits you can have different branches"
+    },
+    {
+      "start": 133.26,
+      "duration": 2.88,
+      "text": "for different versions of your"
+    },
+    {
+      "start": 134.28,
+      "duration": 4.02,
+      "text": "applications different people working on"
+    },
+    {
+      "start": 136.14,
+      "duration": 4.14,
+      "text": "your application you can also have a way"
+    },
+    {
+      "start": 138.3,
+      "duration": 3.6,
+      "text": "to roll back if there's an issue and you"
+    },
+    {
+      "start": 140.28,
+      "duration": 3.179,
+      "text": "also have a place where you can securely"
+    },
+    {
+      "start": 141.9,
+      "duration": 3.9,
+      "text": "push your code and access it from"
+    },
+    {
+      "start": 143.459,
+      "duration": 3.721,
+      "text": "anywhere in the world so first thing you"
+    },
+    {
+      "start": 145.8,
+      "duration": 2.939,
+      "text": "should always do when starting with an"
+    },
+    {
+      "start": 147.18,
+      "duration": 4.26,
+      "text": "application is pushing your code on"
+    },
+    {
+      "start": 148.739,
+      "duration": 4.681,
+      "text": "GitHub and gitlab or bitbucket anything"
+    },
+    {
+      "start": 151.44,
+      "duration": 4.019,
+      "text": "so you decided to push your code on"
+    },
+    {
+      "start": 153.42,
+      "duration": 3.72,
+      "text": "GitHub repositories and for that you use"
+    },
+    {
+      "start": 155.459,
+      "duration": 3.541,
+      "text": "git to push your code on GitHub"
+    },
+    {
+      "start": 157.14,
+      "duration": 3.84,
+      "text": "repositories understand there is a"
+    },
+    {
+      "start": 159.0,
+      "duration": 3.54,
+      "text": "difference between git and GitHub GitHub"
+    },
+    {
+      "start": 160.98,
+      "duration": 3.24,
+      "text": "is a web-based platform where you can"
+    },
+    {
+      "start": 162.54,
+      "duration": 3.54,
+      "text": "create repositories and push your code"
+    },
+    {
+      "start": 164.22,
+      "duration": 4.5,
+      "text": "but for you to push the code you require"
+    },
+    {
+      "start": 166.08,
+      "duration": 5.34,
+      "text": "git which is created by Lena store walls"
+    },
+    {
+      "start": 168.72,
+      "duration": 4.32,
+      "text": "the same person who created Linux so get"
+    },
+    {
+      "start": 171.42,
+      "duration": 4.14,
+      "text": "is the underlying Version Control System"
+    },
+    {
+      "start": 173.04,
+      "duration": 4.08,
+      "text": "whereas GitHub or gitlab or bitbucket"
+    },
+    {
+      "start": 175.56,
+      "duration": 3.0,
+      "text": "are all web-based platforms where you"
+    },
+    {
+      "start": 177.12,
+      "duration": 3.78,
+      "text": "can create repositories and store your"
+    },
+    {
+      "start": 178.56,
+      "duration": 4.5,
+      "text": "code these repositories can also be used"
+    },
+    {
+      "start": 180.9,
+      "duration": 4.32,
+      "text": "for CI CD purposes which we are going to"
+    },
+    {
+      "start": 183.06,
+      "duration": 4.319,
+      "text": "learn later on but for now we are using"
+    },
+    {
+      "start": 185.22,
+      "duration": 4.26,
+      "text": "GitHub to push our code from a local"
+    },
+    {
+      "start": 187.379,
+      "duration": 3.481,
+      "text": "machine to GitHub repositories through"
+    },
+    {
+      "start": 189.48,
+      "duration": 3.66,
+      "text": "which we can access our code from"
+    },
+    {
+      "start": 190.86,
+      "duration": 4.2,
+      "text": "anywhere now the code is on GitHub and"
+    },
+    {
+      "start": 193.14,
+      "duration": 4.019,
+      "text": "we can clone it on any machine and try"
+    },
+    {
+      "start": 195.06,
+      "duration": 3.78,
+      "text": "to run it locally when we run an"
+    },
+    {
+      "start": 197.159,
+      "duration": 3.481,
+      "text": "application locally it's only accessible"
+    },
+    {
+      "start": 198.84,
+      "duration": 3.24,
+      "text": "to us it's not accessible to the"
+    },
+    {
+      "start": 200.64,
+      "duration": 3.72,
+      "text": "internet and for you to make it"
+    },
+    {
+      "start": 202.08,
+      "duration": 3.0,
+      "text": "accessible you have to deploy it on the"
+    },
+    {
+      "start": 204.36,
+      "duration": 2.22,
+      "text": "cloud"
+    },
+    {
+      "start": 205.08,
+      "duration": 2.879,
+      "text": "so to reply the cloud you have two"
+    },
+    {
+      "start": 206.58,
+      "duration": 4.739,
+      "text": "options you can either deploy this"
+    },
+    {
+      "start": 207.959,
+      "duration": 5.461,
+      "text": "application on servers or on containers"
+    },
+    {
+      "start": 211.319,
+      "duration": 3.541,
+      "text": "let's say for now you don't have much"
+    },
+    {
+      "start": 213.42,
+      "duration": 3.48,
+      "text": "traffic and you don't want to have"
+    },
+    {
+      "start": 214.86,
+      "duration": 3.72,
+      "text": "scaling so you decided to go with the"
+    },
+    {
+      "start": 216.9,
+      "duration": 3.24,
+      "text": "servers so you want to deploy this"
+    },
+    {
+      "start": 218.58,
+      "duration": 3.719,
+      "text": "application on servers and for that you"
+    },
+    {
+      "start": 220.14,
+      "duration": 3.3,
+      "text": "need to create servers on the cloud and"
+    },
+    {
+      "start": 222.299,
+      "duration": 2.281,
+      "text": "to create a service on the cloud you"
+    },
+    {
+      "start": 223.44,
+      "duration": 3.24,
+      "text": "need to go to the cloud provider let's"
+    },
+    {
+      "start": 224.58,
+      "duration": 4.019,
+      "text": "say AWS you went to ec2 dashboard"
+    },
+    {
+      "start": 226.68,
+      "duration": 3.3,
+      "text": "clicked on launch instance fill in all"
+    },
+    {
+      "start": 228.599,
+      "duration": 3.06,
+      "text": "the details what operating system you"
+    },
+    {
+      "start": 229.98,
+      "duration": 3.179,
+      "text": "want what Security Group should be there"
+    },
+    {
+      "start": 231.659,
+      "duration": 3.061,
+      "text": "what should be the key keypad what"
+    },
+    {
+      "start": 233.159,
+      "duration": 3.901,
+      "text": "should be the volume and all of that and"
+    },
+    {
+      "start": 234.72,
+      "duration": 4.799,
+      "text": "you created an instance but that's not"
+    },
+    {
+      "start": 237.06,
+      "duration": 3.66,
+      "text": "how devops Engineers do so if you want"
+    },
+    {
+      "start": 239.519,
+      "duration": 3.481,
+      "text": "to create a server you will be using"
+    },
+    {
+      "start": 240.72,
+      "duration": 3.78,
+      "text": "tools like terraform cloud formation or"
+    },
+    {
+      "start": 243.0,
+      "duration": 3.36,
+      "text": "pulumi where you write the"
+    },
+    {
+      "start": 244.5,
+      "duration": 3.239,
+      "text": "infrastructure in the form of code so"
+    },
+    {
+      "start": 246.36,
+      "duration": 3.239,
+      "text": "you will be defining I want to have two"
+    },
+    {
+      "start": 247.739,
+      "duration": 4.441,
+      "text": "ec2 instances with Linux operating"
+    },
+    {
+      "start": 249.599,
+      "duration": 4.621,
+      "text": "systems 8GB storage and all of that in"
+    },
+    {
+      "start": 252.18,
+      "duration": 3.899,
+      "text": "the form of code something like this and"
+    },
+    {
+      "start": 254.22,
+      "duration": 4.139,
+      "text": "then you can run the command turn off"
+    },
+    {
+      "start": 256.079,
+      "duration": 4.741,
+      "text": "apply to have that server on the cloud"
+    },
+    {
+      "start": 258.359,
+      "duration": 4.801,
+      "text": "using infrastructure as code tools like"
+    },
+    {
+      "start": 260.82,
+      "duration": 4.14,
+      "text": "terraform you can easily reuse the code"
+    },
+    {
+      "start": 263.16,
+      "duration": 3.36,
+      "text": "to create infrastructure in different"
+    },
+    {
+      "start": 264.96,
+      "duration": 3.6,
+      "text": "environments like staging development"
+    },
+    {
+      "start": 266.52,
+      "duration": 3.84,
+      "text": "and Broad also reducing the time and"
+    },
+    {
+      "start": 268.56,
+      "duration": 3.9,
+      "text": "effort required to set up your"
+    },
+    {
+      "start": 270.36,
+      "duration": 3.96,
+      "text": "infrastructure now only this you can"
+    },
+    {
+      "start": 272.46,
+      "duration": 3.66,
+      "text": "also store your code on Version Control"
+    },
+    {
+      "start": 274.32,
+      "duration": 4.74,
+      "text": "Systems to maintain versions and"
+    },
+    {
+      "start": 276.12,
+      "duration": 4.74,
+      "text": "rollbacks if necessary so companies use"
+    },
+    {
+      "start": 279.06,
+      "duration": 3.84,
+      "text": "different infrastructure as code tools"
+    },
+    {
+      "start": 280.86,
+      "duration": 3.96,
+      "text": "like terraform pulumi cloudformation"
+    },
+    {
+      "start": 282.9,
+      "duration": 3.96,
+      "text": "Azure Ram templates Google Cloud"
+    },
+    {
+      "start": 284.82,
+      "duration": 3.78,
+      "text": "deployment manager and much more now you"
+    },
+    {
+      "start": 286.86,
+      "duration": 3.42,
+      "text": "have your server ready which is created"
+    },
+    {
+      "start": 288.6,
+      "duration": 3.48,
+      "text": "through infrastructure as code practice"
+    },
+    {
+      "start": 290.28,
+      "duration": 3.54,
+      "text": "but there is something more you need to"
+    },
+    {
+      "start": 292.08,
+      "duration": 4.02,
+      "text": "do before you deploy your application on"
+    },
+    {
+      "start": 293.82,
+      "duration": 4.2,
+      "text": "the server so this application is"
+    },
+    {
+      "start": 296.1,
+      "duration": 3.72,
+      "text": "written in Python language and for you"
+    },
+    {
+      "start": 298.02,
+      "duration": 3.72,
+      "text": "to run it on server you need to install"
+    },
+    {
+      "start": 299.82,
+      "duration": 3.96,
+      "text": "python on it along with some other"
+    },
+    {
+      "start": 301.74,
+      "duration": 4.14,
+      "text": "dependencies that might be required for"
+    },
+    {
+      "start": 303.78,
+      "duration": 3.72,
+      "text": "the application to run so you can run"
+    },
+    {
+      "start": 305.88,
+      "duration": 4.319,
+      "text": "the commands to configure it or to"
+    },
+    {
+      "start": 307.5,
+      "duration": 4.38,
+      "text": "install python or any other database or"
+    },
+    {
+      "start": 310.199,
+      "duration": 4.381,
+      "text": "any dependencies let's say flask or"
+    },
+    {
+      "start": 311.88,
+      "duration": 5.039,
+      "text": "Django but a devops Engineers won't be"
+    },
+    {
+      "start": 314.58,
+      "duration": 4.32,
+      "text": "doing it manually so to automate this"
+    },
+    {
+      "start": 316.919,
+      "duration": 4.261,
+      "text": "configuration you can use configuration"
+    },
+    {
+      "start": 318.9,
+      "duration": 5.34,
+      "text": "management tools like ansible Chef"
+    },
+    {
+      "start": 321.18,
+      "duration": 4.98,
+      "text": "puppet salt and a lot more using these"
+    },
+    {
+      "start": 324.24,
+      "duration": 3.959,
+      "text": "tools you can configure your servers and"
+    },
+    {
+      "start": 326.16,
+      "duration": 3.12,
+      "text": "install the necessary software so the"
+    },
+    {
+      "start": 328.199,
+      "duration": 2.821,
+      "text": "idea is you need to define the"
+    },
+    {
+      "start": 329.28,
+      "duration": 4.259,
+      "text": "configuration in the form of code so you"
+    },
+    {
+      "start": 331.02,
+      "duration": 4.739,
+      "text": "can tell install python install this"
+    },
+    {
+      "start": 333.539,
+      "duration": 4.141,
+      "text": "database start the database add this"
+    },
+    {
+      "start": 335.759,
+      "duration": 4.261,
+      "text": "query all that stuff in the form of code"
+    },
+    {
+      "start": 337.68,
+      "duration": 4.62,
+      "text": "and run it on the service when you do"
+    },
+    {
+      "start": 340.02,
+      "duration": 4.019,
+      "text": "this you can configure multiple servers"
+    },
+    {
+      "start": 342.3,
+      "duration": 3.3,
+      "text": "at once so you can configure your"
+    },
+    {
+      "start": 344.039,
+      "duration": 5.461,
+      "text": "infrastructure using tools like ansible"
+    },
+    {
+      "start": 345.6,
+      "duration": 6.0,
+      "text": "puppet Chef salt and lot more so now you"
+    },
+    {
+      "start": 349.5,
+      "duration": 3.9,
+      "text": "have your server ready and configured to"
+    },
+    {
+      "start": 351.6,
+      "duration": 3.659,
+      "text": "run your application so you cloned the"
+    },
+    {
+      "start": 353.4,
+      "duration": 3.359,
+      "text": "code from the repository on the server"
+    },
+    {
+      "start": 355.259,
+      "duration": 2.94,
+      "text": "now and you have deployed your"
+    },
+    {
+      "start": 356.759,
+      "duration": 3.72,
+      "text": "application which is running properly"
+    },
+    {
+      "start": 358.199,
+      "duration": 5.101,
+      "text": "you also connected your IP address with"
+    },
+    {
+      "start": 360.479,
+      "duration": 3.841,
+      "text": "the domain name using DNS so now anyone"
+    },
+    {
+      "start": 363.3,
+      "duration": 2.82,
+      "text": "on the internet can access your"
+    },
+    {
+      "start": 364.32,
+      "duration": 3.42,
+      "text": "application through your domain name so"
+    },
+    {
+      "start": 366.12,
+      "duration": 3.54,
+      "text": "now your application is working properly"
+    },
+    {
+      "start": 367.74,
+      "duration": 3.66,
+      "text": "on the servers and your users are happy"
+    },
+    {
+      "start": 369.66,
+      "duration": 3.599,
+      "text": "as well let's say you want to include"
+    },
+    {
+      "start": 371.4,
+      "duration": 3.42,
+      "text": "some feature or new version of your"
+    },
+    {
+      "start": 373.259,
+      "duration": 3.541,
+      "text": "application so you will get the code"
+    },
+    {
+      "start": 374.82,
+      "duration": 3.719,
+      "text": "from the developer create a build and"
+    },
+    {
+      "start": 376.8,
+      "duration": 3.54,
+      "text": "deploy it on your server get the code"
+    },
+    {
+      "start": 378.539,
+      "duration": 3.121,
+      "text": "create a build Deploy on server get the"
+    },
+    {
+      "start": 380.34,
+      "duration": 3.359,
+      "text": "code create the build and deployment"
+    },
+    {
+      "start": 381.66,
+      "duration": 4.319,
+      "text": "server so this is all manual process and"
+    },
+    {
+      "start": 383.699,
+      "duration": 4.321,
+      "text": "to automate all of this you can use CI"
+    },
+    {
+      "start": 385.979,
+      "duration": 4.44,
+      "text": "CD or continuous integration and"
+    },
+    {
+      "start": 388.02,
+      "duration": 4.08,
+      "text": "continuous deployment using CI CD"
+    },
+    {
+      "start": 390.419,
+      "duration": 3.601,
+      "text": "pipeline you can automate the process of"
+    },
+    {
+      "start": 392.1,
+      "duration": 3.9,
+      "text": "building testing and deploying your"
+    },
+    {
+      "start": 394.02,
+      "duration": 3.959,
+      "text": "application on the server so everything"
+    },
+    {
+      "start": 396.0,
+      "duration": 3.479,
+      "text": "done automatically so the idea is you"
+    },
+    {
+      "start": 397.979,
+      "duration": 3.301,
+      "text": "can connect it with your version control"
+    },
+    {
+      "start": 399.479,
+      "duration": 4.621,
+      "text": "system whenever there's a push mate to"
+    },
+    {
+      "start": 401.28,
+      "duration": 4.5,
+      "text": "GitHub or gitlab the build should be"
+    },
+    {
+      "start": 404.1,
+      "duration": 3.599,
+      "text": "created and automatically deployed on"
+    },
+    {
+      "start": 405.78,
+      "duration": 4.139,
+      "text": "the servers this can be done using"
+    },
+    {
+      "start": 407.699,
+      "duration": 5.701,
+      "text": "different tools like Jenkins GitHub"
+    },
+    {
+      "start": 409.919,
+      "duration": 6.481,
+      "text": "actions gitlab cicd Travis CI Circle CI"
+    },
+    {
+      "start": 413.4,
+      "duration": 5.16,
+      "text": "and a lot more CI CD is one of the most"
+    },
+    {
+      "start": 416.4,
+      "duration": 4.68,
+      "text": "important aspect of devops and is used"
+    },
+    {
+      "start": 418.56,
+      "duration": 4.74,
+      "text": "by all the companies now so you should"
+    },
+    {
+      "start": 421.08,
+      "duration": 4.38,
+      "text": "have an idea of what is a CI CD till now"
+    },
+    {
+      "start": 423.3,
+      "duration": 4.32,
+      "text": "we have discussed everything required to"
+    },
+    {
+      "start": 425.46,
+      "duration": 3.78,
+      "text": "deploy an application on the servers we"
+    },
+    {
+      "start": 427.62,
+      "duration": 4.139,
+      "text": "have seen how you can push your code on"
+    },
+    {
+      "start": 429.24,
+      "duration": 4.38,
+      "text": "repositories how to create a server"
+    },
+    {
+      "start": 431.759,
+      "duration": 4.261,
+      "text": "using infrastructure as code tools like"
+    },
+    {
+      "start": 433.62,
+      "duration": 4.019,
+      "text": "terraform you can you have also seen how"
+    },
+    {
+      "start": 436.02,
+      "duration": 3.119,
+      "text": "to configure your servers using"
+    },
+    {
+      "start": 437.639,
+      "duration": 3.721,
+      "text": "configuration management tools like"
+    },
+    {
+      "start": 439.139,
+      "duration": 4.081,
+      "text": "ansible we have seen how to deploy our"
+    },
+    {
+      "start": 441.36,
+      "duration": 3.72,
+      "text": "applications on the servers and to"
+    },
+    {
+      "start": 443.22,
+      "duration": 4.14,
+      "text": "automate all of this stuff we have seen"
+    },
+    {
+      "start": 445.08,
+      "duration": 4.8,
+      "text": "how we can use CI CD pipelines using"
+    },
+    {
+      "start": 447.36,
+      "duration": 5.94,
+      "text": "tools like Jenkins gitlab or GitHub"
+    },
+    {
+      "start": 449.88,
+      "duration": 5.879,
+      "text": "right now now let's consider that your"
+    },
+    {
+      "start": 453.3,
+      "duration": 4.32,
+      "text": "application is viral and you have a lot"
+    },
+    {
+      "start": 455.759,
+      "duration": 3.601,
+      "text": "more traffic so you want to convert your"
+    },
+    {
+      "start": 457.62,
+      "duration": 3.54,
+      "text": "application in a micro service"
+    },
+    {
+      "start": 459.36,
+      "duration": 4.02,
+      "text": "architecture where you want to deploy"
+    },
+    {
+      "start": 461.16,
+      "duration": 4.319,
+      "text": "all of your components in separate"
+    },
+    {
+      "start": 463.38,
+      "duration": 3.18,
+      "text": "containers using Docker so let's"
+    },
+    {
+      "start": 465.479,
+      "duration": 2.641,
+      "text": "understand what is a microservice"
+    },
+    {
+      "start": 466.56,
+      "duration": 3.419,
+      "text": "architecture and what is a monolith"
+    },
+    {
+      "start": 468.12,
+      "duration": 3.12,
+      "text": "architecture so monolith is an"
+    },
+    {
+      "start": 469.979,
+      "duration": 3.241,
+      "text": "architecture where your application is"
+    },
+    {
+      "start": 471.24,
+      "duration": 3.959,
+      "text": "deployed as a single unit and there are"
+    },
+    {
+      "start": 473.22,
+      "duration": 4.44,
+      "text": "some disadvantages whereas some"
+    },
+    {
+      "start": 475.199,
+      "duration": 4.141,
+      "text": "advantages as well for this so Advantage"
+    },
+    {
+      "start": 477.66,
+      "duration": 3.24,
+      "text": "is that it is very easy for you to"
+    },
+    {
+      "start": 479.34,
+      "duration": 3.6,
+      "text": "develop and deploy your application"
+    },
+    {
+      "start": 480.9,
+      "duration": 4.5,
+      "text": "whereas it is difficult for you to"
+    },
+    {
+      "start": 482.94,
+      "duration": 3.72,
+      "text": "maintain and scale this also if one of"
+    },
+    {
+      "start": 485.4,
+      "duration": 3.18,
+      "text": "the component in the monolith"
+    },
+    {
+      "start": 486.66,
+      "duration": 4.259,
+      "text": "architecture fails the entire"
+    },
+    {
+      "start": 488.58,
+      "duration": 4.26,
+      "text": "application is brought down whereas if"
+    },
+    {
+      "start": 490.919,
+      "duration": 3.601,
+      "text": "you look at microservices micro service"
+    },
+    {
+      "start": 492.84,
+      "duration": 3.12,
+      "text": "architecture microservice architecture"
+    },
+    {
+      "start": 494.52,
+      "duration": 3.239,
+      "text": "is a collection of small and independent"
+    },
+    {
+      "start": 495.96,
+      "duration": 3.54,
+      "text": "services that work together to form a"
+    },
+    {
+      "start": 497.759,
+      "duration": 3.361,
+      "text": "large application each service is"
+    },
+    {
+      "start": 499.5,
+      "duration": 3.9,
+      "text": "responsible for different functions so"
+    },
+    {
+      "start": 501.12,
+      "duration": 4.079,
+      "text": "let's say one of the container or one of"
+    },
+    {
+      "start": 503.4,
+      "duration": 3.479,
+      "text": "the service is a database second is a"
+    },
+    {
+      "start": 505.199,
+      "duration": 4.201,
+      "text": "message queue it can be a web"
+    },
+    {
+      "start": 506.879,
+      "duration": 4.561,
+      "text": "application or anything and all of them"
+    },
+    {
+      "start": 509.4,
+      "duration": 3.78,
+      "text": "talk to each other through apis so they"
+    },
+    {
+      "start": 511.44,
+      "duration": 3.479,
+      "text": "are very Loosely coupled unlike monolith"
+    },
+    {
+      "start": 513.18,
+      "duration": 3.0,
+      "text": "which are very tightly coupled even if"
+    },
+    {
+      "start": 514.919,
+      "duration": 3.48,
+      "text": "one of the application one of the"
+    },
+    {
+      "start": 516.18,
+      "duration": 4.02,
+      "text": "service is down the other services are"
+    },
+    {
+      "start": 518.399,
+      "duration": 4.32,
+      "text": "not affected where you can easily scale"
+    },
+    {
+      "start": 520.2,
+      "duration": 4.44,
+      "text": "and maintain it but disadvantage is you"
+    },
+    {
+      "start": 522.719,
+      "duration": 3.12,
+      "text": "have to have lot of knowledge and it's"
+    },
+    {
+      "start": 524.64,
+      "duration": 3.06,
+      "text": "very complex for you to develop and"
+    },
+    {
+      "start": 525.839,
+      "duration": 3.541,
+      "text": "deploy microservices application so"
+    },
+    {
+      "start": 527.7,
+      "duration": 3.12,
+      "text": "let's say you decided to my create an"
+    },
+    {
+      "start": 529.38,
+      "duration": 3.54,
+      "text": "application in the form of microservices"
+    },
+    {
+      "start": 530.82,
+      "duration": 3.959,
+      "text": "and you want to deploy it in the form of"
+    },
+    {
+      "start": 532.92,
+      "duration": 2.88,
+      "text": "containers and whenever you want to"
+    },
+    {
+      "start": 534.779,
+      "duration": 3.18,
+      "text": "deploy application in the form of"
+    },
+    {
+      "start": 535.8,
+      "duration": 3.9,
+      "text": "container the most popular tool is"
+    },
+    {
+      "start": 537.959,
+      "duration": 3.421,
+      "text": "Docker so using Docker you can"
+    },
+    {
+      "start": 539.7,
+      "duration": 3.9,
+      "text": "containerize your application to make it"
+    },
+    {
+      "start": 541.38,
+      "duration": 3.899,
+      "text": "run on containers so now your"
+    },
+    {
+      "start": 543.6,
+      "duration": 3.179,
+      "text": "application was running on servers but"
+    },
+    {
+      "start": 545.279,
+      "duration": 2.941,
+      "text": "you won't deploy it on containers and"
+    },
+    {
+      "start": 546.779,
+      "duration": 4.261,
+      "text": "for you to do that you need to create"
+    },
+    {
+      "start": 548.22,
+      "duration": 4.32,
+      "text": "Docker file so a Docker file what is a"
+    },
+    {
+      "start": 551.04,
+      "duration": 3.78,
+      "text": "Docker file Docker file is a"
+    },
+    {
+      "start": 552.54,
+      "duration": 4.2,
+      "text": "instructions written down in a file for"
+    },
+    {
+      "start": 554.82,
+      "duration": 3.9,
+      "text": "your application to make it run as a"
+    },
+    {
+      "start": 556.74,
+      "duration": 3.779,
+      "text": "Docker container using Docker file you"
+    },
+    {
+      "start": 558.72,
+      "duration": 3.66,
+      "text": "can create an image so you will create a"
+    },
+    {
+      "start": 560.519,
+      "duration": 4.081,
+      "text": "Docker file run the build command Docker"
+    },
+    {
+      "start": 562.38,
+      "duration": 3.78,
+      "text": "build hyphen T my image name and then it"
+    },
+    {
+      "start": 564.6,
+      "duration": 3.12,
+      "text": "will create an image for you now you"
+    },
+    {
+      "start": 566.16,
+      "duration": 4.14,
+      "text": "have your image which you can store on"
+    },
+    {
+      "start": 567.72,
+      "duration": 4.38,
+      "text": "Docker Hub or ECR repositories this"
+    },
+    {
+      "start": 570.3,
+      "duration": 3.3,
+      "text": "image can be pulled by anyone if it is a"
+    },
+    {
+      "start": 572.1,
+      "duration": 3.419,
+      "text": "Public Image but if it isn't private"
+    },
+    {
+      "start": 573.6,
+      "duration": 4.32,
+      "text": "people in your organization can pull"
+    },
+    {
+      "start": 575.519,
+      "duration": 4.44,
+      "text": "that image and run your application in"
+    },
+    {
+      "start": 577.92,
+      "duration": 3.3,
+      "text": "the form of container after you have"
+    },
+    {
+      "start": 579.959,
+      "duration": 3.241,
+      "text": "your image you will now you can running"
+    },
+    {
+      "start": 581.22,
+      "duration": 3.72,
+      "text": "the containers and your application has"
+    },
+    {
+      "start": 583.2,
+      "duration": 3.78,
+      "text": "multiple containers one container for"
+    },
+    {
+      "start": 584.94,
+      "duration": 4.2,
+      "text": "database one for message queue one for"
+    },
+    {
+      "start": 586.98,
+      "duration": 3.72,
+      "text": "your application and a lot more so there"
+    },
+    {
+      "start": 589.14,
+      "duration": 3.06,
+      "text": "are multiple containers and for you to"
+    },
+    {
+      "start": 590.7,
+      "duration": 4.199,
+      "text": "manage them you need to use something"
+    },
+    {
+      "start": 592.2,
+      "duration": 4.199,
+      "text": "known as container orchestration and"
+    },
+    {
+      "start": 594.899,
+      "duration": 3.541,
+      "text": "there are different tools for container"
+    },
+    {
+      "start": 596.399,
+      "duration": 4.62,
+      "text": "orchestration like kubernetes openshift"
+    },
+    {
+      "start": 598.44,
+      "duration": 4.14,
+      "text": "mezos launcher and a lot more the most"
+    },
+    {
+      "start": 601.019,
+      "duration": 2.88,
+      "text": "popular One is kubernetes using"
+    },
+    {
+      "start": 602.58,
+      "duration": 2.879,
+      "text": "kubernetes you can manage different"
+    },
+    {
+      "start": 603.899,
+      "duration": 3.241,
+      "text": "containers of your application you can"
+    },
+    {
+      "start": 605.459,
+      "duration": 2.88,
+      "text": "Define how much replica should be"
+    },
+    {
+      "start": 607.14,
+      "duration": 2.819,
+      "text": "running what should be the image running"
+    },
+    {
+      "start": 608.339,
+      "duration": 3.18,
+      "text": "for your application how much should be"
+    },
+    {
+      "start": 609.959,
+      "duration": 2.88,
+      "text": "the volume and all of that stuff so"
+    },
+    {
+      "start": 611.519,
+      "duration": 3.481,
+      "text": "overall the container orchestration"
+    },
+    {
+      "start": 612.839,
+      "duration": 4.021,
+      "text": "tools like kubernetes are responsible to"
+    },
+    {
+      "start": 615.0,
+      "duration": 3.18,
+      "text": "provide a way to manage and automate the"
+    },
+    {
+      "start": 616.86,
+      "duration": 3.12,
+      "text": "deployment of applications that are"
+    },
+    {
+      "start": 618.18,
+      "duration": 2.88,
+      "text": "running on Docker containers now you"
+    },
+    {
+      "start": 619.98,
+      "duration": 3.419,
+      "text": "have your application running on"
+    },
+    {
+      "start": 621.06,
+      "duration": 3.839,
+      "text": "containers using kubernetes which is"
+    },
+    {
+      "start": 623.399,
+      "duration": 3.481,
+      "text": "very awesome so I hope you have"
+    },
+    {
+      "start": 624.899,
+      "duration": 3.361,
+      "text": "understood everything till now if you"
+    },
+    {
+      "start": 626.88,
+      "duration": 3.6,
+      "text": "have any questions feel free to note"
+    },
+    {
+      "start": 628.26,
+      "duration": 3.42,
+      "text": "down in the comment section after you"
+    },
+    {
+      "start": 630.48,
+      "duration": 3.299,
+      "text": "have kubernetes you can use something"
+    },
+    {
+      "start": 631.68,
+      "duration": 3.36,
+      "text": "known as git Ops using githubs with"
+    },
+    {
+      "start": 633.779,
+      "duration": 2.521,
+      "text": "kubernetes you can automate the"
+    },
+    {
+      "start": 635.04,
+      "duration": 3.12,
+      "text": "deployment and management of"
+    },
+    {
+      "start": 636.3,
+      "duration": 5.159,
+      "text": "containerized applications so the main"
+    },
+    {
+      "start": 638.16,
+      "duration": 5.7,
+      "text": "popular GitHub foreign city and the idea"
+    },
+    {
+      "start": 641.459,
+      "duration": 3.721,
+      "text": "is you define your manifest files on git"
+    },
+    {
+      "start": 643.86,
+      "duration": 2.58,
+      "text": "repositories and whenever there's a"
+    },
+    {
+      "start": 645.18,
+      "duration": 3.36,
+      "text": "change the change is going to be"
+    },
+    {
+      "start": 646.44,
+      "duration": 3.66,
+      "text": "reflected on your kubernetes cluster so"
+    },
+    {
+      "start": 648.54,
+      "duration": 3.18,
+      "text": "if you added a new service it will be"
+    },
+    {
+      "start": 650.1,
+      "duration": 3.299,
+      "text": "shown on here you don't need to run any"
+    },
+    {
+      "start": 651.72,
+      "duration": 3.84,
+      "text": "commands you don't need to run cubicle"
+    },
+    {
+      "start": 653.399,
+      "duration": 4.261,
+      "text": "apply as well and everything will be"
+    },
+    {
+      "start": 655.56,
+      "duration": 3.24,
+      "text": "defined on your kubernetes cluster when"
+    },
+    {
+      "start": 657.66,
+      "duration": 2.58,
+      "text": "you make the change in your git"
+    },
+    {
+      "start": 658.8,
+      "duration": 3.06,
+      "text": "repositories because the git"
+    },
+    {
+      "start": 660.24,
+      "duration": 4.26,
+      "text": "repositories are usually connected with"
+    },
+    {
+      "start": 661.86,
+      "duration": 4.08,
+      "text": "these get offs tools now your"
+    },
+    {
+      "start": 664.5,
+      "duration": 3.3,
+      "text": "application is running on kubernetes you"
+    },
+    {
+      "start": 665.94,
+      "duration": 3.18,
+      "text": "can also enable CI CD to automate all"
+    },
+    {
+      "start": 667.8,
+      "duration": 2.94,
+      "text": "this process whenever you have a new"
+    },
+    {
+      "start": 669.12,
+      "duration": 4.38,
+      "text": "application that should be deployed on"
+    },
+    {
+      "start": 670.74,
+      "duration": 5.099,
+      "text": "kubernetes so cicdu using tools like"
+    },
+    {
+      "start": 673.5,
+      "duration": 4.26,
+      "text": "Jenkins or Travis Ci or GitHub actions"
+    },
+    {
+      "start": 675.839,
+      "duration": 3.06,
+      "text": "or gitlab cicd you can automate the"
+    },
+    {
+      "start": 677.76,
+      "duration": 3.54,
+      "text": "process of deploying your applications"
+    },
+    {
+      "start": 678.899,
+      "duration": 4.741,
+      "text": "on kubernetes now once your application"
+    },
+    {
+      "start": 681.3,
+      "duration": 3.9,
+      "text": "is ready you need to make sure that it"
+    },
+    {
+      "start": 683.64,
+      "duration": 3.42,
+      "text": "is running properly so you need to"
+    },
+    {
+      "start": 685.2,
+      "duration": 3.18,
+      "text": "monitor them and monitoring means"
+    },
+    {
+      "start": 687.06,
+      "duration": 3.0,
+      "text": "checking the health of your applications"
+    },
+    {
+      "start": 688.38,
+      "duration": 3.48,
+      "text": "and making sure that an application is"
+    },
+    {
+      "start": 690.06,
+      "duration": 3.24,
+      "text": "responsing to all the requests you can"
+    },
+    {
+      "start": 691.86,
+      "duration": 3.479,
+      "text": "use different tools like Prometheus"
+    },
+    {
+      "start": 693.3,
+      "duration": 3.0,
+      "text": "grafana nagios for your monitoring"
+    },
+    {
+      "start": 695.339,
+      "duration": 3.24,
+      "text": "purposes"
+    },
+    {
+      "start": 696.3,
+      "duration": 5.039,
+      "text": "or you can also use alerting tools like"
+    },
+    {
+      "start": 698.579,
+      "duration": 4.741,
+      "text": "SNS on AWS you can use slack you can use"
+    },
+    {
+      "start": 701.339,
+      "duration": 3.901,
+      "text": "pager Duty so whenever there's an issue"
+    },
+    {
+      "start": 703.32,
+      "duration": 4.32,
+      "text": "or your application is down cluster is"
+    },
+    {
+      "start": 705.24,
+      "duration": 4.26,
+      "text": "down or container is not creating you"
+    },
+    {
+      "start": 707.64,
+      "duration": 3.9,
+      "text": "can get a notification on slack and you"
+    },
+    {
+      "start": 709.5,
+      "duration": 3.54,
+      "text": "can easily look into it so these are all"
+    },
+    {
+      "start": 711.54,
+      "duration": 3.239,
+      "text": "the different steps all the processes"
+    },
+    {
+      "start": 713.04,
+      "duration": 4.68,
+      "text": "required for deploying your applications"
+    },
+    {
+      "start": 714.779,
+      "duration": 4.74,
+      "text": "on servers or on containers including"
+    },
+    {
+      "start": 717.72,
+      "duration": 3.54,
+      "text": "different terms like infrastructure as"
+    },
+    {
+      "start": 719.519,
+      "duration": 3.26,
+      "text": "code configuration management Version"
+    },
+    {
+      "start": 721.26,
+      "duration": 4.86,
+      "text": "Control System"
+    },
+    {
+      "start": 722.779,
+      "duration": 5.141,
+      "text": "containerization CI CD and a lot more I"
+    },
+    {
+      "start": 726.12,
+      "duration": 3.36,
+      "text": "hope this video was helpful throughout"
+    },
+    {
+      "start": 727.92,
+      "duration": 3.78,
+      "text": "the video we have learned everything"
+    },
+    {
+      "start": 729.48,
+      "duration": 3.72,
+      "text": "from the start right from the start from"
+    },
+    {
+      "start": 731.7,
+      "duration": 4.5,
+      "text": "building the application to pushing or"
+    },
+    {
+      "start": 733.2,
+      "duration": 5.759,
+      "text": "pushing on git repositories to deploying"
+    },
+    {
+      "start": 736.2,
+      "duration": 5.579,
+      "text": "on servers setting up CI CD then"
+    },
+    {
+      "start": 738.959,
+      "duration": 4.62,
+      "text": "deploying on containers using kubernetes"
+    },
+    {
+      "start": 741.779,
+      "duration": 4.261,
+      "text": "to for container orchestration"
+    },
+    {
+      "start": 743.579,
+      "duration": 5.521,
+      "text": "monitoring your application using tools"
+    },
+    {
+      "start": 746.04,
+      "duration": 5.4,
+      "text": "like Prometheus grafana and alerting as"
+    },
+    {
+      "start": 749.1,
+      "duration": 4.56,
+      "text": "well so I hope this video was helpful if"
+    },
+    {
+      "start": 751.44,
+      "duration": 4.5,
+      "text": "you have any questions any doubt to feel"
+    },
+    {
+      "start": 753.66,
+      "duration": 4.32,
+      "text": "free to drop a comment below and you can"
+    },
+    {
+      "start": 755.94,
+      "duration": 3.72,
+      "text": "also reach me on LinkedIn I hope this"
+    },
+    {
+      "start": 757.98,
+      "duration": 3.9,
+      "text": "was informative please like this video"
+    },
+    {
+      "start": 759.66,
+      "duration": 4.34,
+      "text": "subscribe to my channel and have a good"
+    },
+    {
+      "start": 761.88,
+      "duration": 2.12,
+      "text": "day"
+    }
+  ]
+}

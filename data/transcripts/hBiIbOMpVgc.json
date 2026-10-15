@@ -1,0 +1,1076 @@
+{
+  "video": {
+    "id": "hBiIbOMpVgc",
+    "title": "How does an Application Work? Backend Development Explained for DevOps Engineers",
+    "url": "https://www.youtube.com/watch?v=hBiIbOMpVgc",
+    "duration": 481,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.52,
+      "duration": 3.759,
+      "text": "understanding how backend applications"
+    },
+    {
+      "start": 2.159,
+      "duration": 4.521,
+      "text": "actually work is very important for all"
+    },
+    {
+      "start": 4.279,
+      "duration": 4.201,
+      "text": "devops and backend Engineers so in this"
+    },
+    {
+      "start": 6.68,
+      "duration": 3.28,
+      "text": "video I will explain you what happens"
+    },
+    {
+      "start": 8.48,
+      "duration": 3.0,
+      "text": "when you make a request to a backend"
+    },
+    {
+      "start": 9.96,
+      "duration": 3.759,
+      "text": "application what are different"
+    },
+    {
+      "start": 11.48,
+      "duration": 4.159,
+      "text": "components used in backend and lot more"
+    },
+    {
+      "start": 13.719,
+      "duration": 4.4,
+      "text": "with a Hands-On diagram so make sure you"
+    },
+    {
+      "start": 15.639,
+      "duration": 4.361,
+      "text": "watch this video till the end let's go"
+    },
+    {
+      "start": 18.119,
+      "duration": 3.801,
+      "text": "all right so before you learn how an"
+    },
+    {
+      "start": 20.0,
+      "duration": 3.48,
+      "text": "application actually works you need to"
+    },
+    {
+      "start": 21.92,
+      "duration": 4.599,
+      "text": "know that every website or an"
+    },
+    {
+      "start": 23.48,
+      "duration": 5.799,
+      "text": "application consist of two main things a"
+    },
+    {
+      "start": 26.519,
+      "duration": 5.08,
+      "text": "front end and a back end a front end is"
+    },
+    {
+      "start": 29.279,
+      "duration": 3.921,
+      "text": "what a user get to see on the screen and"
+    },
+    {
+      "start": 31.599,
+      "duration": 5.081,
+      "text": "it is usually written in languages such"
+    },
+    {
+      "start": 33.2,
+      "duration": 5.039,
+      "text": "as HTML CSS or JavaScript the front end"
+    },
+    {
+      "start": 36.68,
+      "duration": 3.719,
+      "text": "is also used to interact with the"
+    },
+    {
+      "start": 38.239,
+      "duration": 4.361,
+      "text": "backend application while the backend"
+    },
+    {
+      "start": 40.399,
+      "duration": 4.441,
+      "text": "application handles all operations it"
+    },
+    {
+      "start": 42.6,
+      "duration": 4.799,
+      "text": "consists of the application for logic"
+    },
+    {
+      "start": 44.84,
+      "duration": 5.039,
+      "text": "and it is also used to store user data"
+    },
+    {
+      "start": 47.399,
+      "duration": 3.8,
+      "text": "so a backend way consist of a server"
+    },
+    {
+      "start": 49.879,
+      "duration": 3.36,
+      "text": "which is hosting your backend"
+    },
+    {
+      "start": 51.199,
+      "duration": 5.081,
+      "text": "application in backend application"
+    },
+    {
+      "start": 53.239,
+      "duration": 5.521,
+      "text": "itself and also a database to store all"
+    },
+    {
+      "start": 56.28,
+      "duration": 4.72,
+      "text": "your data in this video we have focused"
+    },
+    {
+      "start": 58.76,
+      "duration": 3.92,
+      "text": "more on the back end because as a devops"
+    },
+    {
+      "start": 61.0,
+      "duration": 3.879,
+      "text": "engineer we are responsible to set up"
+    },
+    {
+      "start": 62.68,
+      "duration": 4.16,
+      "text": "servers for our application we are also"
+    },
+    {
+      "start": 64.879,
+      "duration": 3.401,
+      "text": "responsible to deploy applications and"
+    },
+    {
+      "start": 66.84,
+      "duration": 3.68,
+      "text": "we are also responsible to set up"
+    },
+    {
+      "start": 68.28,
+      "duration": 3.64,
+      "text": "databases to store all the data so we"
+    },
+    {
+      "start": 70.52,
+      "duration": 3.279,
+      "text": "are going to be focusing more on the"
+    },
+    {
+      "start": 71.92,
+      "duration": 4.48,
+      "text": "back end because that is what we care"
+    },
+    {
+      "start": 73.799,
+      "duration": 5.64,
+      "text": "about now these days every company is"
+    },
+    {
+      "start": 76.4,
+      "duration": 7.0,
+      "text": "creating server using a cloud provider"
+    },
+    {
+      "start": 79.439,
+      "duration": 5.921,
+      "text": "such as AWS gcp or aure on This Server"
+    },
+    {
+      "start": 83.4,
+      "duration": 3.44,
+      "text": "you will host your backend application"
+    },
+    {
+      "start": 85.36,
+      "duration": 3.32,
+      "text": "and the application should be returned"
+    },
+    {
+      "start": 86.84,
+      "duration": 5.639,
+      "text": "in a programming language which might be"
+    },
+    {
+      "start": 88.68,
+      "duration": 5.96,
+      "text": "python nodejs or Java creating a backend"
+    },
+    {
+      "start": 92.479,
+      "duration": 3.721,
+      "text": "application is not feasible with just a"
+    },
+    {
+      "start": 94.64,
+      "duration": 4.24,
+      "text": "programming language you will also need"
+    },
+    {
+      "start": 96.2,
+      "duration": 4.64,
+      "text": "a backend framework and package managers"
+    },
+    {
+      "start": 98.88,
+      "duration": 4.76,
+      "text": "some popular Frameworks include Jango"
+    },
+    {
+      "start": 100.84,
+      "duration": 5.4,
+      "text": "when using python Express for nodejs or"
+    },
+    {
+      "start": 103.64,
+      "duration": 4.56,
+      "text": "springboard for Java along with this you"
+    },
+    {
+      "start": 106.24,
+      "duration": 3.28,
+      "text": "will also need package managers for your"
+    },
+    {
+      "start": 108.2,
+      "duration": 3.36,
+      "text": "backend application to do some"
+    },
+    {
+      "start": 109.52,
+      "duration": 3.639,
+      "text": "operations for example if you want your"
+    },
+    {
+      "start": 111.56,
+      "duration": 4.239,
+      "text": "application to connect to a postgress"
+    },
+    {
+      "start": 113.159,
+      "duration": 5.361,
+      "text": "database you might use a package manager"
+    },
+    {
+      "start": 115.799,
+      "duration": 5.081,
+      "text": "test iob G2 or if you want to collect"
+    },
+    {
+      "start": 118.52,
+      "duration": 4.8,
+      "text": "information from your operating system"
+    },
+    {
+      "start": 120.88,
+      "duration": 4.32,
+      "text": "you will use PSU now in this diagram we"
+    },
+    {
+      "start": 123.32,
+      "duration": 3.92,
+      "text": "don't have a database connected yet so"
+    },
+    {
+      "start": 125.2,
+      "duration": 4.32,
+      "text": "I'm will to be adding the database which"
+    },
+    {
+      "start": 127.24,
+      "duration": 4.4,
+      "text": "is going to store all the information"
+    },
+    {
+      "start": 129.52,
+      "duration": 3.64,
+      "text": "from our user depending on your"
+    },
+    {
+      "start": 131.64,
+      "duration": 4.56,
+      "text": "application you might select if it is a"
+    },
+    {
+      "start": 133.16,
+      "duration": 7.48,
+      "text": "relational database or SQL database such"
+    },
+    {
+      "start": 136.2,
+      "duration": 9.16,
+      "text": "as postgress MySQL anything or maybe a"
+    },
+    {
+      "start": 140.64,
+      "duration": 6.879,
+      "text": "nosql database such as Mar DB or"
+    },
+    {
+      "start": 145.36,
+      "duration": 4.519,
+      "text": "asandra if you want me to create a"
+    },
+    {
+      "start": 147.519,
+      "duration": 3.8,
+      "text": "dedicated video on databases for devops"
+    },
+    {
+      "start": 149.879,
+      "duration": 2.961,
+      "text": "engineer let me know in the comment"
+    },
+    {
+      "start": 151.319,
+      "duration": 3.801,
+      "text": "section I will create a video which"
+    },
+    {
+      "start": 152.84,
+      "duration": 3.36,
+      "text": "describes different types of databases"
+    },
+    {
+      "start": 155.12,
+      "duration": 3.24,
+      "text": "what things you should know about"
+    },
+    {
+      "start": 156.2,
+      "duration": 3.84,
+      "text": "databases as a devops engineer what are"
+    },
+    {
+      "start": 158.36,
+      "duration": 3.56,
+      "text": "different common devops task for a"
+    },
+    {
+      "start": 160.04,
+      "duration": 3.64,
+      "text": "database engineer if you want let me"
+    },
+    {
+      "start": 161.92,
+      "duration": 3.84,
+      "text": "know in the comment section and let's go"
+    },
+    {
+      "start": 163.68,
+      "duration": 4.199,
+      "text": "back to the video now okay so this is"
+    },
+    {
+      "start": 165.76,
+      "duration": 4.119,
+      "text": "what we have in our backend we have a"
+    },
+    {
+      "start": 167.879,
+      "duration": 4.801,
+      "text": "server hosting our backend application"
+    },
+    {
+      "start": 169.879,
+      "duration": 5.201,
+      "text": "and also a database to store user data"
+    },
+    {
+      "start": 172.68,
+      "duration": 4.839,
+      "text": "creating a server and also the database"
+    },
+    {
+      "start": 175.08,
+      "duration": 5.0,
+      "text": "is easier to do it on the cloud compared"
+    },
+    {
+      "start": 177.519,
+      "duration": 3.8,
+      "text": "to doing it physically on premise"
+    },
+    {
+      "start": 180.08,
+      "duration": 3.4,
+      "text": "because Cloud provides you with many"
+    },
+    {
+      "start": 181.319,
+      "duration": 4.241,
+      "text": "features and it is very easy you also"
+    },
+    {
+      "start": 183.48,
+      "duration": 4.64,
+      "text": "get managed Solutions such as Amazon RTS"
+    },
+    {
+      "start": 185.56,
+      "duration": 5.399,
+      "text": "to set up your database or you can use"
+    },
+    {
+      "start": 188.12,
+      "duration": 5.0,
+      "text": "services like Amazon ec2 by which lets"
+    },
+    {
+      "start": 190.959,
+      "duration": 4.0,
+      "text": "you create servers similar services are"
+    },
+    {
+      "start": 193.12,
+      "duration": 4.96,
+      "text": "also provided by other Cloud providers"
+    },
+    {
+      "start": 194.959,
+      "duration": 5.0,
+      "text": "as ECP or Azure perfect so we have our"
+    },
+    {
+      "start": 198.08,
+      "duration": 3.719,
+      "text": "backend application deployed and let's"
+    },
+    {
+      "start": 199.959,
+      "duration": 4.2,
+      "text": "consider what happens when a user makes"
+    },
+    {
+      "start": 201.799,
+      "duration": 4.36,
+      "text": "a request to a backend application so we"
+    },
+    {
+      "start": 204.159,
+      "duration": 3.921,
+      "text": "have a user here who is making a request"
+    },
+    {
+      "start": 206.159,
+      "duration": 4.041,
+      "text": "on the internet to this backend"
+    },
+    {
+      "start": 208.08,
+      "duration": 4.04,
+      "text": "application so when the request is made"
+    },
+    {
+      "start": 210.2,
+      "duration": 5.319,
+      "text": "a backend application gets the request"
+    },
+    {
+      "start": 212.12,
+      "duration": 6.52,
+      "text": "and it gives out the response a user is"
+    },
+    {
+      "start": 215.519,
+      "duration": 6.08,
+      "text": "making a request and the backend server"
+    },
+    {
+      "start": 218.64,
+      "duration": 6.36,
+      "text": "is giving back the"
+    },
+    {
+      "start": 221.599,
+      "duration": 5.121,
+      "text": "response in this scenario the user or"
+    },
+    {
+      "start": 225.0,
+      "duration": 5.2,
+      "text": "the machine that is making the request"
+    },
+    {
+      "start": 226.72,
+      "duration": 5.079,
+      "text": "is known as client whereas the machine"
+    },
+    {
+      "start": 230.2,
+      "duration": 4.48,
+      "text": "which is getting the request and sending"
+    },
+    {
+      "start": 231.799,
+      "duration": 4.601,
+      "text": "the response is known as server so we"
+    },
+    {
+      "start": 234.68,
+      "duration": 3.559,
+      "text": "have a client and a server client is"
+    },
+    {
+      "start": 236.4,
+      "duration": 3.559,
+      "text": "sending the request server is sending"
+    },
+    {
+      "start": 238.239,
+      "duration": 5.321,
+      "text": "back the response and this is known as"
+    },
+    {
+      "start": 239.959,
+      "duration": 6.2,
+      "text": "as request response cycle but a client"
+    },
+    {
+      "start": 243.56,
+      "duration": 5.679,
+      "text": "cannot directly talk to the server it"
+    },
+    {
+      "start": 246.159,
+      "duration": 5.64,
+      "text": "will need something known as API that"
+    },
+    {
+      "start": 249.239,
+      "duration": 5.241,
+      "text": "stands for application programming"
+    },
+    {
+      "start": 251.799,
+      "duration": 4.801,
+      "text": "interface and API is responsible for"
+    },
+    {
+      "start": 254.48,
+      "duration": 4.319,
+      "text": "client server communication depending on"
+    },
+    {
+      "start": 256.6,
+      "duration": 4.359,
+      "text": "the request made by the client the API"
+    },
+    {
+      "start": 258.799,
+      "duration": 3.68,
+      "text": "method will be used so if a user or a"
+    },
+    {
+      "start": 260.959,
+      "duration": 3.8,
+      "text": "client is trying to get something from"
+    },
+    {
+      "start": 262.479,
+      "duration": 3.881,
+      "text": "the server a get method would be used"
+    },
+    {
+      "start": 264.759,
+      "duration": 4.561,
+      "text": "similarly there are other methods such"
+    },
+    {
+      "start": 266.36,
+      "duration": 4.92,
+      "text": "as post would delete and more these are"
+    },
+    {
+      "start": 269.32,
+      "duration": 4.159,
+      "text": "all AP methods that a devop engineer"
+    },
+    {
+      "start": 271.28,
+      "duration": 4.68,
+      "text": "should know now when a client makes a"
+    },
+    {
+      "start": 273.479,
+      "duration": 4.601,
+      "text": "request and the server has the data it"
+    },
+    {
+      "start": 275.96,
+      "duration": 4.76,
+      "text": "checks the request it is valid gives"
+    },
+    {
+      "start": 278.08,
+      "duration": 5.559,
+      "text": "back the response then it is called as"
+    },
+    {
+      "start": 280.72,
+      "duration": 5.24,
+      "text": "200 status code which means status is"
+    },
+    {
+      "start": 283.639,
+      "duration": 4.601,
+      "text": "okay similarly if a client is trying to"
+    },
+    {
+      "start": 285.96,
+      "duration": 4.0,
+      "text": "make a request which is invalid then a"
+    },
+    {
+      "start": 288.24,
+      "duration": 5.72,
+      "text": "server will give you a error response"
+    },
+    {
+      "start": 289.96,
+      "duration": 6.079,
+      "text": "such as 400 status code so this is error"
+    },
+    {
+      "start": 293.96,
+      "duration": 6.079,
+      "text": "response similar to this you have other"
+    },
+    {
+      "start": 296.039,
+      "duration": 5.681,
+      "text": "status quotes for just 500 100 300 Etc"
+    },
+    {
+      "start": 300.039,
+      "duration": 3.44,
+      "text": "which will help you understand what"
+    },
+    {
+      "start": 301.72,
+      "duration": 3.16,
+      "text": "happened when you make a request now"
+    },
+    {
+      "start": 303.479,
+      "duration": 3.201,
+      "text": "that you understood how a request"
+    },
+    {
+      "start": 304.88,
+      "duration": 4.4,
+      "text": "response model work let's take an"
+    },
+    {
+      "start": 306.68,
+      "duration": 5.32,
+      "text": "example of amazon.com in your browser if"
+    },
+    {
+      "start": 309.28,
+      "duration": 5.359,
+      "text": "you search for amazon.com the request is"
+    },
+    {
+      "start": 312.0,
+      "duration": 4.919,
+      "text": "made from your machine to the server"
+    },
+    {
+      "start": 314.639,
+      "duration": 4.12,
+      "text": "which has the Amazon application this"
+    },
+    {
+      "start": 316.919,
+      "duration": 3.681,
+      "text": "domain name is taken by the Amazon"
+    },
+    {
+      "start": 318.759,
+      "duration": 3.761,
+      "text": "company and it is connected with the"
+    },
+    {
+      "start": 320.6,
+      "duration": 3.84,
+      "text": "server that has the Amazon application"
+    },
+    {
+      "start": 322.52,
+      "duration": 3.36,
+      "text": "running on it now if you try to search"
+    },
+    {
+      "start": 324.44,
+      "duration": 4.12,
+      "text": "for something which means you're getting"
+    },
+    {
+      "start": 325.88,
+      "duration": 4.879,
+      "text": "some data from the Amazon application if"
+    },
+    {
+      "start": 328.56,
+      "duration": 4.88,
+      "text": "you search for cat food you get all the"
+    },
+    {
+      "start": 330.759,
+      "duration": 5.16,
+      "text": "data which means you're making a get API"
+    },
+    {
+      "start": 333.44,
+      "duration": 4.64,
+      "text": "call from your client to the server"
+    },
+    {
+      "start": 335.919,
+      "duration": 3.961,
+      "text": "which is giving you back the response"
+    },
+    {
+      "start": 338.08,
+      "duration": 4.44,
+      "text": "and if you want to check you can also"
+    },
+    {
+      "start": 339.88,
+      "duration": 5.12,
+      "text": "check that the status code is 200 status"
+    },
+    {
+      "start": 342.52,
+      "duration": 4.399,
+      "text": "code when you make a request from your"
+    },
+    {
+      "start": 345.0,
+      "duration": 4.84,
+      "text": "client to the server you can see all the"
+    },
+    {
+      "start": 346.919,
+      "duration": 6.0,
+      "text": "200 stus here and this is the request"
+    },
+    {
+      "start": 349.84,
+      "duration": 5.0,
+      "text": "made to the server but if you try to do"
+    },
+    {
+      "start": 352.919,
+      "duration": 4.081,
+      "text": "something invalid which is not present"
+    },
+    {
+      "start": 354.84,
+      "duration": 5.16,
+      "text": "on the application for example I'm"
+    },
+    {
+      "start": 357.0,
+      "duration": 5.28,
+      "text": "trying to access or request some data"
+    },
+    {
+      "start": 360.0,
+      "duration": 4.6,
+      "text": "that is not there so I'll get an error"
+    },
+    {
+      "start": 362.28,
+      "duration": 3.919,
+      "text": "of 404 that you can see here and it"
+    },
+    {
+      "start": 364.6,
+      "duration": 3.319,
+      "text": "gives me an error saying the thing that"
+    },
+    {
+      "start": 366.199,
+      "duration": 4.201,
+      "text": "you're requesting is not there so this"
+    },
+    {
+      "start": 367.919,
+      "duration": 4.641,
+      "text": "is how an application actually works now"
+    },
+    {
+      "start": 370.4,
+      "duration": 4.16,
+      "text": "moving on let's say your application has"
+    },
+    {
+      "start": 372.56,
+      "duration": 4.079,
+      "text": "a lot of traffic and you want to scale"
+    },
+    {
+      "start": 374.56,
+      "duration": 4.28,
+      "text": "up in this case you will have your"
+    },
+    {
+      "start": 376.639,
+      "duration": 4.96,
+      "text": "application replicated on multiple"
+    },
+    {
+      "start": 378.84,
+      "duration": 5.16,
+      "text": "servers to handle SK BP and then in"
+    },
+    {
+      "start": 381.599,
+      "duration": 5.361,
+      "text": "front of this you will have an load"
+    },
+    {
+      "start": 384.0,
+      "duration": 5.639,
+      "text": "balancer to distribute traffic onto this"
+    },
+    {
+      "start": 386.96,
+      "duration": 4.799,
+      "text": "backend applications so this those"
+    },
+    {
+      "start": 389.639,
+      "duration": 4.601,
+      "text": "balancer will get the traffic from the"
+    },
+    {
+      "start": 391.759,
+      "duration": 4.961,
+      "text": "internet and then this traffic is going"
+    },
+    {
+      "start": 394.24,
+      "duration": 4.799,
+      "text": "to be separated onto these backend"
+    },
+    {
+      "start": 396.72,
+      "duration": 3.879,
+      "text": "servers so if you want to add scaling"
+    },
+    {
+      "start": 399.039,
+      "duration": 3.0,
+      "text": "you might be using load Balan along with"
+    },
+    {
+      "start": 400.599,
+      "duration": 3.241,
+      "text": "auto scaling group and if you want to"
+    },
+    {
+      "start": 402.039,
+      "duration": 3.201,
+      "text": "know how to set it up I have uploaded a"
+    },
+    {
+      "start": 403.84,
+      "duration": 4.4,
+      "text": "video where you can learn how to set up"
+    },
+    {
+      "start": 405.24,
+      "duration": 5.679,
+      "text": "load balancer and auto scaling group on"
+    },
+    {
+      "start": 408.24,
+      "duration": 4.44,
+      "text": "AWS similarly if you want to send emails"
+    },
+    {
+      "start": 410.919,
+      "duration": 3.4,
+      "text": "for the users whenever the subscription"
+    },
+    {
+      "start": 412.68,
+      "duration": 4.32,
+      "text": "end you might use something known as"
+    },
+    {
+      "start": 414.319,
+      "duration": 4.201,
+      "text": "rabbit MP oras if you want to monitor"
+    },
+    {
+      "start": 417.0,
+      "duration": 3.56,
+      "text": "your backend applications you will be"
+    },
+    {
+      "start": 418.52,
+      "duration": 4.76,
+      "text": "using Monitoring Solutions such as"
+    },
+    {
+      "start": 420.56,
+      "duration": 4.84,
+      "text": "Prometheus and grafana and so on if you"
+    },
+    {
+      "start": 423.28,
+      "duration": 4.4,
+      "text": "want to add more features in your back"
+    },
+    {
+      "start": 425.4,
+      "duration": 4.68,
+      "text": "end you'll be using other devops tools"
+    },
+    {
+      "start": 427.68,
+      "duration": 4.16,
+      "text": "as well but in the L shell this is how a"
+    },
+    {
+      "start": 430.08,
+      "duration": 3.559,
+      "text": "backend application actually works a"
+    },
+    {
+      "start": 431.84,
+      "duration": 3.72,
+      "text": "client makes a request and the server"
+    },
+    {
+      "start": 433.639,
+      "duration": 3.161,
+      "text": "gives back the response all the DAT is"
+    },
+    {
+      "start": 435.56,
+      "duration": 3.24,
+      "text": "store High"
+    },
+    {
+      "start": 436.8,
+      "duration": 4.079,
+      "text": "database understanding this is very"
+    },
+    {
+      "start": 438.8,
+      "duration": 4.0,
+      "text": "important for all devops engineers and"
+    },
+    {
+      "start": 440.879,
+      "duration": 4.0,
+      "text": "to make it easier I have created a"
+    },
+    {
+      "start": 442.8,
+      "duration": 3.839,
+      "text": "document explaining all the steps that"
+    },
+    {
+      "start": 444.879,
+      "duration": 3.241,
+      "text": "we have discussed in this video so if"
+    },
+    {
+      "start": 446.639,
+      "duration": 3.521,
+      "text": "you want me to share this document with"
+    },
+    {
+      "start": 448.12,
+      "duration": 3.6,
+      "text": "you come and down back and application"
+    },
+    {
+      "start": 450.16,
+      "duration": 4.36,
+      "text": "in the comment section and I will share"
+    },
+    {
+      "start": 451.72,
+      "duration": 4.599,
+      "text": "this document as a PDF so this was our"
+    },
+    {
+      "start": 454.52,
+      "duration": 3.799,
+      "text": "video on understanding how backend"
+    },
+    {
+      "start": 456.319,
+      "duration": 3.801,
+      "text": "applications actually work I hope this"
+    },
+    {
+      "start": 458.319,
+      "duration": 3.801,
+      "text": "video was informative if you have any"
+    },
+    {
+      "start": 460.12,
+      "duration": 3.96,
+      "text": "questions any doubt do let me know in"
+    },
+    {
+      "start": 462.12,
+      "duration": 3.84,
+      "text": "the comment section and also let me know"
+    },
+    {
+      "start": 464.08,
+      "duration": 4.04,
+      "text": "if you want me to share the document in"
+    },
+    {
+      "start": 465.96,
+      "duration": 3.959,
+      "text": "PDF on LinkedIn or I will post the link"
+    },
+    {
+      "start": 468.12,
+      "duration": 3.639,
+      "text": "in the video description I hope this"
+    },
+    {
+      "start": 469.919,
+      "duration": 5.24,
+      "text": "video was informative thank you and have"
+    },
+    {
+      "start": 471.759,
+      "duration": 3.4,
+      "text": "a good day"
+    }
+  ]
+}

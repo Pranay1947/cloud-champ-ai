@@ -1,0 +1,146 @@
+{
+  "video": {
+    "id": "8xwNxgi3iJs",
+    "title": "AI Pipeline Explained! How Ai pipeline works? #ai",
+    "url": "https://www.youtube.com/watch?v=8xwNxgi3iJs",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 5.76,
+      "text": "What is AI pipeline and how does it"
+    },
+    {
+      "start": 2.68,
+      "duration": 4.72,
+      "text": "work? Just like how CICD pipeline turns"
+    },
+    {
+      "start": 5.76,
+      "duration": 4.12,
+      "text": "code into a deployed application in"
+    },
+    {
+      "start": 7.4,
+      "duration": 5.16,
+      "text": "DevOps, an AI pipeline is a process that"
+    },
+    {
+      "start": 9.88,
+      "duration": 5.12,
+      "text": "turns raw data into a working AI feature"
+    },
+    {
+      "start": 12.56,
+      "duration": 4.2,
+      "text": "in production. So, here's how it works."
+    },
+    {
+      "start": 15.0,
+      "duration": 3.36,
+      "text": "It starts with data collection where"
+    },
+    {
+      "start": 16.76,
+      "duration": 5.08,
+      "text": "data is gathered from different sources"
+    },
+    {
+      "start": 18.36,
+      "duration": 5.36,
+      "text": "like databases, APIs, or logs. This data"
+    },
+    {
+      "start": 21.84,
+      "duration": 4.2,
+      "text": "is then cleaned and prepared so the"
+    },
+    {
+      "start": 23.72,
+      "duration": 4.28,
+      "text": "model can learn from it properly. Next,"
+    },
+    {
+      "start": 26.04,
+      "duration": 4.52,
+      "text": "an AI model is trained on this data to"
+    },
+    {
+      "start": 28.0,
+      "duration": 4.4,
+      "text": "learn patterns or make predictions."
+    },
+    {
+      "start": 30.56,
+      "duration": 3.84,
+      "text": "After training, the model is evaluated"
+    },
+    {
+      "start": 32.4,
+      "duration": 4.44,
+      "text": "using metrics like accuracy and"
+    },
+    {
+      "start": 34.4,
+      "duration": 4.48,
+      "text": "precision to make sure it performs well."
+    },
+    {
+      "start": 36.84,
+      "duration": 3.92,
+      "text": "If it passes the accuracy threshold, the"
+    },
+    {
+      "start": 38.88,
+      "duration": 4.16,
+      "text": "model is then deployed into production"
+    },
+    {
+      "start": 40.76,
+      "duration": 3.8,
+      "text": "to make predictions. After deployment,"
+    },
+    {
+      "start": 43.04,
+      "duration": 3.76,
+      "text": "monitoring will track the performance of"
+    },
+    {
+      "start": 44.56,
+      "duration": 4.32,
+      "text": "your model detecting issues like"
+    },
+    {
+      "start": 46.8,
+      "duration": 4.28,
+      "text": "performance drop or data drift. In"
+    },
+    {
+      "start": 48.88,
+      "duration": 4.64,
+      "text": "short, this feedback of the AI pipeline"
+    },
+    {
+      "start": 51.08,
+      "duration": 4.44,
+      "text": "is super important to retrain or improve"
+    },
+    {
+      "start": 53.52,
+      "duration": 4.52,
+      "text": "the model over time making the pipeline"
+    },
+    {
+      "start": 55.52,
+      "duration": 5.2,
+      "text": "continuous just like CICD pipeline."
+    },
+    {
+      "start": 58.04,
+      "duration": 2.68,
+      "text": "Subscribe."
+    }
+  ]
+}

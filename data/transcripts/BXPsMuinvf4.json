@@ -1,0 +1,451 @@
+{
+  "video": {
+    "id": "BXPsMuinvf4",
+    "title": "Infrastructure as Code vs Configuration as Code: Difference between Ansible and Terraform",
+    "url": "https://www.youtube.com/watch?v=BXPsMuinvf4",
+    "duration": 210,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 3.84,
+      "text": "is a confusion in the market between"
+    },
+    {
+      "start": 1.62,
+      "duration": 4.739,
+      "text": "infrastructure as code and configuration"
+    },
+    {
+      "start": 3.84,
+      "duration": 4.5,
+      "text": "management as a code so these are two"
+    },
+    {
+      "start": 6.359,
+      "duration": 4.081,
+      "text": "different things but there's a huge"
+    },
+    {
+      "start": 8.34,
+      "duration": 3.48,
+      "text": "conflict confusion between these two so"
+    },
+    {
+      "start": 10.44,
+      "duration": 2.699,
+      "text": "what what do you mean by infrastructure"
+    },
+    {
+      "start": 11.82,
+      "duration": 3.26,
+      "text": "as a code and what do you mean by"
+    },
+    {
+      "start": 13.139,
+      "duration": 4.14,
+      "text": "configuration as management as a code"
+    },
+    {
+      "start": 15.08,
+      "duration": 4.0,
+      "text": "infrastructure as a code is managing and"
+    },
+    {
+      "start": 17.279,
+      "duration": 4.021,
+      "text": "provisioning of infrastructure through"
+    },
+    {
+      "start": 19.08,
+      "duration": 4.699,
+      "text": "code instead of using a manual process"
+    },
+    {
+      "start": 21.3,
+      "duration": 4.86,
+      "text": "to configure device so considering this"
+    },
+    {
+      "start": 23.779,
+      "duration": 4.481,
+      "text": "let me give an example if you want to"
+    },
+    {
+      "start": 26.16,
+      "duration": 4.22,
+      "text": "create an ec2 instance you will be using"
+    },
+    {
+      "start": 28.26,
+      "duration": 4.799,
+      "text": "terraform but if you want to install"
+    },
+    {
+      "start": 30.38,
+      "duration": 5.32,
+      "text": "database on it then you will be using"
+    },
+    {
+      "start": 33.059,
+      "duration": 3.961,
+      "text": "configuration management code so here"
+    },
+    {
+      "start": 35.7,
+      "duration": 3.3,
+      "text": "you will just provision the"
+    },
+    {
+      "start": 37.02,
+      "duration": 4.32,
+      "text": "infrastructure but you will configure"
+    },
+    {
+      "start": 39.0,
+      "duration": 5.82,
+      "text": "the infrastructure here so configuration"
+    },
+    {
+      "start": 41.34,
+      "duration": 4.92,
+      "text": "is done at this part so in creating an"
+    },
+    {
+      "start": 44.82,
+      "duration": 4.38,
+      "text": "ec2 instance will be done through"
+    },
+    {
+      "start": 46.26,
+      "duration": 5.4,
+      "text": "terraform but installing mySQL database"
+    },
+    {
+      "start": 49.2,
+      "duration": 4.62,
+      "text": "or postgres or any database would be"
+    },
+    {
+      "start": 51.66,
+      "duration": 5.76,
+      "text": "done through ansible puppet or any other"
+    },
+    {
+      "start": 53.82,
+      "duration": 5.399,
+      "text": "thing okay so configuration as a code is"
+    },
+    {
+      "start": 57.42,
+      "duration": 4.1,
+      "text": "a practice of managing configuration"
+    },
+    {
+      "start": 59.219,
+      "duration": 4.561,
+      "text": "files and preposition"
+    },
+    {
+      "start": 61.52,
+      "duration": 5.02,
+      "text": "parameters and settings for application"
+    },
+    {
+      "start": 63.78,
+      "duration": 4.32,
+      "text": "server processing operating system using"
+    },
+    {
+      "start": 66.54,
+      "duration": 3.899,
+      "text": "configuration management tool you can do"
+    },
+    {
+      "start": 68.1,
+      "duration": 4.68,
+      "text": "anything you want we are doing a project"
+    },
+    {
+      "start": 70.439,
+      "duration": 5.401,
+      "text": "where we are installing databases on our"
+    },
+    {
+      "start": 72.78,
+      "duration": 4.98,
+      "text": "ec2 instances using ansible so that is"
+    },
+    {
+      "start": 75.84,
+      "duration": 4.94,
+      "text": "one of the use case of configuration"
+    },
+    {
+      "start": 77.76,
+      "duration": 5.039,
+      "text": "management as code so don't be confused"
+    },
+    {
+      "start": 80.78,
+      "duration": 3.879,
+      "text": "infrastructure as code is to provision"
+    },
+    {
+      "start": 82.799,
+      "duration": 3.601,
+      "text": "infrastructure but configuration"
+    },
+    {
+      "start": 84.659,
+      "duration": 3.78,
+      "text": "management is code is to"
+    },
+    {
+      "start": 86.4,
+      "duration": 3.6,
+      "text": "install some things or configure the"
+    },
+    {
+      "start": 88.439,
+      "duration": 3.481,
+      "text": "servers"
+    },
+    {
+      "start": 90.0,
+      "duration": 4.159,
+      "text": "for example like"
+    },
+    {
+      "start": 91.92,
+      "duration": 5.58,
+      "text": "um RDS"
+    },
+    {
+      "start": 94.159,
+      "duration": 5.701,
+      "text": "so for RDS I have deployed with"
+    },
+    {
+      "start": 97.5,
+      "duration": 5.34,
+      "text": "terraform that means that it's just to"
+    },
+    {
+      "start": 99.86,
+      "duration": 5.14,
+      "text": "deploy it's not just to configure the"
+    },
+    {
+      "start": 102.84,
+      "duration": 5.819,
+      "text": "whole audience yeah that's a very good"
+    },
+    {
+      "start": 105.0,
+      "duration": 7.14,
+      "text": "question so in case of RDS RDS is a"
+    },
+    {
+      "start": 108.659,
+      "duration": 6.6,
+      "text": "relational database service and it's AWS"
+    },
+    {
+      "start": 112.14,
+      "duration": 5.159,
+      "text": "managed service so when you use RDS you"
+    },
+    {
+      "start": 115.259,
+      "duration": 4.021,
+      "text": "don't have to install anything it comes"
+    },
+    {
+      "start": 117.299,
+      "duration": 4.981,
+      "text": "pre-installed by AWS you just need to"
+    },
+    {
+      "start": 119.28,
+      "duration": 4.799,
+      "text": "select what what engine do you want do"
+    },
+    {
+      "start": 122.28,
+      "duration": 3.659,
+      "text": "you want my SQL to even postgres do you"
+    },
+    {
+      "start": 124.079,
+      "duration": 4.261,
+      "text": "want to rackle so everything is managed"
+    },
+    {
+      "start": 125.939,
+      "duration": 3.901,
+      "text": "by AWS so you don't have to use ansible"
+    },
+    {
+      "start": 128.34,
+      "duration": 3.78,
+      "text": "for that or any configuration management"
+    },
+    {
+      "start": 129.84,
+      "duration": 4.619,
+      "text": "tool you will be using terraform for it"
+    },
+    {
+      "start": 132.12,
+      "duration": 4.44,
+      "text": "so in terraform we will add a parameter"
+    },
+    {
+      "start": 134.459,
+      "duration": 3.841,
+      "text": "mentioning what engine do you want so"
+    },
+    {
+      "start": 136.56,
+      "duration": 2.66,
+      "text": "you will Define I want the instance type"
+    },
+    {
+      "start": 138.3,
+      "duration": 3.6,
+      "text": "as"
+    },
+    {
+      "start": 139.22,
+      "duration": 4.32,
+      "text": "T3 small or anything you want and then"
+    },
+    {
+      "start": 141.9,
+      "duration": 4.26,
+      "text": "you will have a parameter mentioning"
+    },
+    {
+      "start": 143.54,
+      "duration": 5.14,
+      "text": "that the engine should be MySQL or"
+    },
+    {
+      "start": 146.16,
+      "duration": 4.62,
+      "text": "postgresql or Oracle because"
+    },
+    {
+      "start": 148.68,
+      "duration": 4.62,
+      "text": "even when you do it through Management"
+    },
+    {
+      "start": 150.78,
+      "duration": 4.319,
+      "text": "console you don't install anything you"
+    },
+    {
+      "start": 153.3,
+      "duration": 3.42,
+      "text": "just Define what you want and the"
+    },
+    {
+      "start": 155.099,
+      "duration": 4.021,
+      "text": "installation part patching everything is"
+    },
+    {
+      "start": 156.72,
+      "duration": 5.76,
+      "text": "done by RDS"
+    },
+    {
+      "start": 159.12,
+      "duration": 5.22,
+      "text": "or by AWS right so that's just the"
+    },
+    {
+      "start": 162.48,
+      "duration": 3.6,
+      "text": "provisioning of database it's not"
+    },
+    {
+      "start": 164.34,
+      "duration": 4.14,
+      "text": "configuration"
+    },
+    {
+      "start": 166.08,
+      "duration": 4.739,
+      "text": "okay but if you do it through ec2"
+    },
+    {
+      "start": 168.48,
+      "duration": 4.979,
+      "text": "instance like you will launch a Ubuntu"
+    },
+    {
+      "start": 170.819,
+      "duration": 6.541,
+      "text": "instance and then install lamp setup"
+    },
+    {
+      "start": 173.459,
+      "duration": 6.901,
+      "text": "then you would use ansible"
+    },
+    {
+      "start": 177.36,
+      "duration": 5.22,
+      "text": "okay all right okay and all of these are"
+    },
+    {
+      "start": 180.36,
+      "duration": 4.2,
+      "text": "also config In First Class code but they"
+    },
+    {
+      "start": 182.58,
+      "duration": 4.439,
+      "text": "are limited like if you use cloud"
+    },
+    {
+      "start": 184.56,
+      "duration": 5.1,
+      "text": "formation you won't be able to create"
+    },
+    {
+      "start": 187.019,
+      "duration": 4.981,
+      "text": "stuff in Google cloud or in Azure Cloud"
+    },
+    {
+      "start": 189.66,
+      "duration": 4.079,
+      "text": "but if you use"
+    },
+    {
+      "start": 192.0,
+      "duration": 3.9,
+      "text": "any others like if you use terraform"
+    },
+    {
+      "start": 193.739,
+      "duration": 4.201,
+      "text": "it's going to you can use you can use to"
+    },
+    {
+      "start": 195.9,
+      "duration": 6.14,
+      "text": "deploy it on any Cloud you want because"
+    },
+    {
+      "start": 197.94,
+      "duration": 4.1,
+      "text": "it's multi-cloud supporter"
+    }
+  ]
+}

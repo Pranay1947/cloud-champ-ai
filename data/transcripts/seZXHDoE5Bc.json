@@ -1,0 +1,3116 @@
+{
+  "video": {
+    "id": "seZXHDoE5Bc",
+    "title": "Day 4 : Terraform Variables and Outputs Tutorial",
+    "url": "https://www.youtube.com/watch?v=seZXHDoE5Bc",
+    "duration": 1376,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 1.04,
+      "duration": 4.54,
+      "text": "variables and outputs in terraform are"
+    },
+    {
+      "start": 3.24,
+      "duration": 4.619,
+      "text": "very important to Define values and also"
+    },
+    {
+      "start": 5.58,
+      "duration": 3.599,
+      "text": "to follow terraform best practice if you"
+    },
+    {
+      "start": 7.859,
+      "duration": 2.881,
+      "text": "are a devops engineer working on"
+    },
+    {
+      "start": 9.179,
+      "duration": 3.42,
+      "text": "dataform learn how you can Define"
+    },
+    {
+      "start": 10.74,
+      "duration": 3.779,
+      "text": "variable in different ways and how you"
+    },
+    {
+      "start": 12.599,
+      "duration": 3.721,
+      "text": "can get values through outputs in this"
+    },
+    {
+      "start": 14.519,
+      "duration": 3.721,
+      "text": "video Let's Start"
+    },
+    {
+      "start": 16.32,
+      "duration": 3.539,
+      "text": "Welcome to Cloud champ in this video we"
+    },
+    {
+      "start": 18.24,
+      "duration": 3.42,
+      "text": "are going to learn about variables and"
+    },
+    {
+      "start": 19.859,
+      "duration": 3.721,
+      "text": "outputs in terraform which are very"
+    },
+    {
+      "start": 21.66,
+      "duration": 3.72,
+      "text": "important for you to know and to work"
+    },
+    {
+      "start": 23.58,
+      "duration": 3.779,
+      "text": "with itera from Best Practices rather"
+    },
+    {
+      "start": 25.38,
+      "duration": 3.899,
+      "text": "than defining your values hard-coded"
+    },
+    {
+      "start": 27.359,
+      "duration": 3.361,
+      "text": "inside the code this is the fourth video"
+    },
+    {
+      "start": 29.279,
+      "duration": 3.421,
+      "text": "in the terraform playlist if you haven't"
+    },
+    {
+      "start": 30.72,
+      "duration": 3.78,
+      "text": "checked out the playlist the link is in"
+    },
+    {
+      "start": 32.7,
+      "duration": 3.539,
+      "text": "description do check out to learn data"
+    },
+    {
+      "start": 34.5,
+      "duration": 3.78,
+      "text": "from from scratch let's start with"
+    },
+    {
+      "start": 36.239,
+      "duration": 3.361,
+      "text": "learning variables in terraform so"
+    },
+    {
+      "start": 38.28,
+      "duration": 2.82,
+      "text": "interaction there are three types of"
+    },
+    {
+      "start": 39.6,
+      "duration": 4.02,
+      "text": "different variables input variables"
+    },
+    {
+      "start": 41.1,
+      "duration": 3.959,
+      "text": "output variables and local variables for"
+    },
+    {
+      "start": 43.62,
+      "duration": 3.36,
+      "text": "this video we are covering input and"
+    },
+    {
+      "start": 45.059,
+      "duration": 3.84,
+      "text": "output variables but let's also look"
+    },
+    {
+      "start": 46.98,
+      "duration": 3.599,
+      "text": "what are local variables so local"
+    },
+    {
+      "start": 48.899,
+      "duration": 3.541,
+      "text": "variables are declared using locals"
+    },
+    {
+      "start": 50.579,
+      "duration": 3.421,
+      "text": "block as you can see here this is a"
+    },
+    {
+      "start": 52.44,
+      "duration": 3.48,
+      "text": "local variable defined using locals"
+    },
+    {
+      "start": 54.0,
+      "duration": 3.96,
+      "text": "block having some values but these"
+    },
+    {
+      "start": 55.92,
+      "duration": 3.72,
+      "text": "values are only accessible within the"
+    },
+    {
+      "start": 57.96,
+      "duration": 3.36,
+      "text": "module or the configuration where they"
+    },
+    {
+      "start": 59.64,
+      "duration": 3.419,
+      "text": "are declared you cannot use these"
+    },
+    {
+      "start": 61.32,
+      "duration": 3.659,
+      "text": "variables outside the modules or the"
+    },
+    {
+      "start": 63.059,
+      "duration": 3.841,
+      "text": "configuration but you can use them"
+    },
+    {
+      "start": 64.979,
+      "duration": 3.781,
+      "text": "inside the own file or their own"
+    },
+    {
+      "start": 66.9,
+      "duration": 3.6,
+      "text": "configuration as you can see here we are"
+    },
+    {
+      "start": 68.76,
+      "duration": 4.2,
+      "text": "creating a resource and using the values"
+    },
+    {
+      "start": 70.5,
+      "duration": 5.22,
+      "text": "from this local block similar to this is"
+    },
+    {
+      "start": 72.96,
+      "duration": 5.159,
+      "text": "variable block so input variables in"
+    },
+    {
+      "start": 75.72,
+      "duration": 3.6,
+      "text": "terraform that users specify specific"
+    },
+    {
+      "start": 78.119,
+      "duration": 2.82,
+      "text": "values when creating their"
+    },
+    {
+      "start": 79.32,
+      "duration": 3.06,
+      "text": "infrastructure"
+    },
+    {
+      "start": 80.939,
+      "duration": 3.36,
+      "text": "so this is how you can Define your"
+    },
+    {
+      "start": 82.38,
+      "duration": 3.36,
+      "text": "variable reading slides are very boring"
+    },
+    {
+      "start": 84.299,
+      "duration": 2.701,
+      "text": "so let's do some answer I'm going to"
+    },
+    {
+      "start": 85.74,
+      "duration": 3.36,
+      "text": "open my terminal"
+    },
+    {
+      "start": 87.0,
+      "duration": 3.36,
+      "text": "and let's open the same folder that we"
+    },
+    {
+      "start": 89.1,
+      "duration": 3.659,
+      "text": "created yesterday so I'm going to say"
+    },
+    {
+      "start": 90.36,
+      "duration": 4.38,
+      "text": "terraform course"
+    },
+    {
+      "start": 92.759,
+      "duration": 5.161,
+      "text": "in this let's open this in vs code now"
+    },
+    {
+      "start": 94.74,
+      "duration": 5.04,
+      "text": "so here's my vs code yesterday we have"
+    },
+    {
+      "start": 97.92,
+      "duration": 3.36,
+      "text": "defined provider in AWS if you don't"
+    },
+    {
+      "start": 99.78,
+      "duration": 2.82,
+      "text": "know what a provider is do check out the"
+    },
+    {
+      "start": 101.28,
+      "duration": 3.06,
+      "text": "previous video"
+    },
+    {
+      "start": 102.6,
+      "duration": 3.659,
+      "text": "and we also created an instance which I"
+    },
+    {
+      "start": 104.34,
+      "duration": 3.66,
+      "text": "have deleted right now so let's try to"
+    },
+    {
+      "start": 106.259,
+      "duration": 3.781,
+      "text": "use variables for this particular"
+    },
+    {
+      "start": 108.0,
+      "duration": 4.02,
+      "text": "instance here so in this instance we are"
+    },
+    {
+      "start": 110.04,
+      "duration": 4.859,
+      "text": "creating an Ami so here we are creating"
+    },
+    {
+      "start": 112.02,
+      "duration": 4.739,
+      "text": "an instance with Ubuntu Ami instance"
+    },
+    {
+      "start": 114.899,
+      "duration": 3.661,
+      "text": "type HD to micro and the name of the"
+    },
+    {
+      "start": 116.759,
+      "duration": 3.841,
+      "text": "instance is Hello World all these values"
+    },
+    {
+      "start": 118.56,
+      "duration": 3.9,
+      "text": "are hard coded which terraform does not"
+    },
+    {
+      "start": 120.6,
+      "duration": 4.379,
+      "text": "want you to do so let's create variable"
+    },
+    {
+      "start": 122.46,
+      "duration": 4.38,
+      "text": "for everything here so first I'm going"
+    },
+    {
+      "start": 124.979,
+      "duration": 3.181,
+      "text": "to create a variable for AMI and to"
+    },
+    {
+      "start": 126.84,
+      "duration": 4.38,
+      "text": "create a variable you need to Define"
+    },
+    {
+      "start": 128.16,
+      "duration": 5.04,
+      "text": "variable block which is this so variable"
+    },
+    {
+      "start": 131.22,
+      "duration": 3.96,
+      "text": "and it automatically creates a block"
+    },
+    {
+      "start": 133.2,
+      "duration": 4.2,
+      "text": "because I have extension installed you"
+    },
+    {
+      "start": 135.18,
+      "duration": 4.74,
+      "text": "can install this hashicob extension to"
+    },
+    {
+      "start": 137.4,
+      "duration": 4.26,
+      "text": "have extra features when using or when"
+    },
+    {
+      "start": 139.92,
+      "duration": 5.039,
+      "text": "working with terraform"
+    },
+    {
+      "start": 141.66,
+      "duration": 4.68,
+      "text": "okay so if you check the slide here as"
+    },
+    {
+      "start": 144.959,
+      "duration": 3.541,
+      "text": "well input variables are declared"
+    },
+    {
+      "start": 146.34,
+      "duration": 4.44,
+      "text": "through variable block but there are"
+    },
+    {
+      "start": 148.5,
+      "duration": 3.72,
+      "text": "many other ways you can use to define a"
+    },
+    {
+      "start": 150.78,
+      "duration": 3.3,
+      "text": "variable and I'm going to show you all"
+    },
+    {
+      "start": 152.22,
+      "duration": 3.0,
+      "text": "the different ways in this video so make"
+    },
+    {
+      "start": 154.08,
+      "duration": 3.06,
+      "text": "sure you watch it"
+    },
+    {
+      "start": 155.22,
+      "duration": 3.42,
+      "text": "so here to define the value in the"
+    },
+    {
+      "start": 157.14,
+      "duration": 3.239,
+      "text": "variable I need to define the name first"
+    },
+    {
+      "start": 158.64,
+      "duration": 3.599,
+      "text": "so the name can be anything it can be"
+    },
+    {
+      "start": 160.379,
+      "duration": 4.44,
+      "text": "Ami it can be operating system it can be"
+    },
+    {
+      "start": 162.239,
+      "duration": 4.681,
+      "text": "anything you like so I would say OS here"
+    },
+    {
+      "start": 164.819,
+      "duration": 3.541,
+      "text": "so let's say OS and inside this variable"
+    },
+    {
+      "start": 166.92,
+      "duration": 3.36,
+      "text": "there are different attributes like type"
+    },
+    {
+      "start": 168.36,
+      "duration": 4.14,
+      "text": "default"
+    },
+    {
+      "start": 170.28,
+      "duration": 4.679,
+      "text": "there are different attributes like type"
+    },
+    {
+      "start": 172.5,
+      "duration": 4.319,
+      "text": "default description validation sensitive"
+    },
+    {
+      "start": 174.959,
+      "duration": 3.901,
+      "text": "and all these attributes are optional"
+    },
+    {
+      "start": 176.819,
+      "duration": 3.541,
+      "text": "and this will make sense in a minute so"
+    },
+    {
+      "start": 178.86,
+      "duration": 3.3,
+      "text": "let's try to add some attribute here"
+    },
+    {
+      "start": 180.36,
+      "duration": 3.78,
+      "text": "first I'm going to say type which will"
+    },
+    {
+      "start": 182.16,
+      "duration": 3.78,
+      "text": "Define what should be the data type for"
+    },
+    {
+      "start": 184.14,
+      "duration": 3.179,
+      "text": "this particular variable so the data"
+    },
+    {
+      "start": 185.94,
+      "duration": 4.26,
+      "text": "type is string because here you can see"
+    },
+    {
+      "start": 187.319,
+      "duration": 5.041,
+      "text": "this is a string and then the next"
+    },
+    {
+      "start": 190.2,
+      "duration": 4.02,
+      "text": "attribute is default default is where"
+    },
+    {
+      "start": 192.36,
+      "duration": 3.84,
+      "text": "you put the actual value of the variable"
+    },
+    {
+      "start": 194.22,
+      "duration": 4.56,
+      "text": "so the variable value is this one the"
+    },
+    {
+      "start": 196.2,
+      "duration": 3.899,
+      "text": "long string which having Ami and the"
+    },
+    {
+      "start": 198.78,
+      "duration": 3.84,
+      "text": "number so I'm going to put this inside"
+    },
+    {
+      "start": 200.099,
+      "duration": 4.381,
+      "text": "here and remove this from here so I"
+    },
+    {
+      "start": 202.62,
+      "duration": 3.72,
+      "text": "don't want to hard code the Ami value"
+    },
+    {
+      "start": 204.48,
+      "duration": 3.66,
+      "text": "anymore so I'm going to put that in the"
+    },
+    {
+      "start": 206.34,
+      "duration": 3.539,
+      "text": "variable along with this you can add"
+    },
+    {
+      "start": 208.14,
+      "duration": 5.4,
+      "text": "description for this particular variable"
+    },
+    {
+      "start": 209.879,
+      "duration": 5.041,
+      "text": "so I can say this is my Amy"
+    },
+    {
+      "start": 213.54,
+      "duration": 3.839,
+      "text": "ID"
+    },
+    {
+      "start": 214.92,
+      "duration": 5.099,
+      "text": "okay apart from this you can also add"
+    },
+    {
+      "start": 217.379,
+      "duration": 4.741,
+      "text": "validation or sensitive sensitive is to"
+    },
+    {
+      "start": 220.019,
+      "duration": 3.661,
+      "text": "mask your value so that no one else can"
+    },
+    {
+      "start": 222.12,
+      "duration": 3.66,
+      "text": "see in the UI so if I do sensitive"
+    },
+    {
+      "start": 223.68,
+      "duration": 4.02,
+      "text": "equals to true you can see the"
+    },
+    {
+      "start": 225.78,
+      "duration": 3.36,
+      "text": "description here it says you can use"
+    },
+    {
+      "start": 227.7,
+      "duration": 2.88,
+      "text": "sensitive when the variable contains"
+    },
+    {
+      "start": 229.14,
+      "duration": 2.94,
+      "text": "sensitive material and should be hidden"
+    },
+    {
+      "start": 230.58,
+      "duration": 3.54,
+      "text": "in the UI but even though it is"
+    },
+    {
+      "start": 232.08,
+      "duration": 4.5,
+      "text": "sensitive you will be able to see it in"
+    },
+    {
+      "start": 234.12,
+      "duration": 3.96,
+      "text": "the state file or state file so this is"
+    },
+    {
+      "start": 236.58,
+      "duration": 3.299,
+      "text": "an exam question when you make things"
+    },
+    {
+      "start": 238.08,
+      "duration": 3.659,
+      "text": "sensitive where do you see it you can"
+    },
+    {
+      "start": 239.879,
+      "duration": 3.0,
+      "text": "see it in the state file I'm going to"
+    },
+    {
+      "start": 241.739,
+      "duration": 3.181,
+      "text": "tell you what a state file in the"
+    },
+    {
+      "start": 242.879,
+      "duration": 4.621,
+      "text": "upcoming videos so don't need to worry"
+    },
+    {
+      "start": 244.92,
+      "duration": 4.739,
+      "text": "about it right now so for this example"
+    },
+    {
+      "start": 247.5,
+      "duration": 3.959,
+      "text": "I'm not going to add sensitive and last"
+    },
+    {
+      "start": 249.659,
+      "duration": 4.201,
+      "text": "thing is validation this is to Define"
+    },
+    {
+      "start": 251.459,
+      "duration": 4.2,
+      "text": "that the value should be same or exactly"
+    },
+    {
+      "start": 253.86,
+      "duration": 3.42,
+      "text": "what we want to understand this let's go"
+    },
+    {
+      "start": 255.659,
+      "duration": 4.561,
+      "text": "to the terraform official documentation"
+    },
+    {
+      "start": 257.28,
+      "duration": 3.84,
+      "text": "which is here and let's search for"
+    },
+    {
+      "start": 260.22,
+      "duration": 2.58,
+      "text": "validation"
+    },
+    {
+      "start": 261.12,
+      "duration": 3.54,
+      "text": "so you can see validation is here a"
+    },
+    {
+      "start": 262.8,
+      "duration": 4.74,
+      "text": "block to Define validation rules usually"
+    },
+    {
+      "start": 264.66,
+      "duration": 4.02,
+      "text": "in addition to type constants so there"
+    },
+    {
+      "start": 267.54,
+      "duration": 2.7,
+      "text": "is the validation there is a condition"
+    },
+    {
+      "start": 268.68,
+      "duration": 3.48,
+      "text": "saying to the left that the length of"
+    },
+    {
+      "start": 270.24,
+      "duration": 3.6,
+      "text": "the variable should be greater than four"
+    },
+    {
+      "start": 272.16,
+      "duration": 4.02,
+      "text": "and it should have"
+    },
+    {
+      "start": 273.84,
+      "duration": 4.44,
+      "text": "do this at the start of it so this means"
+    },
+    {
+      "start": 276.18,
+      "duration": 3.959,
+      "text": "it is an Ami ID so you can add this if"
+    },
+    {
+      "start": 278.28,
+      "duration": 3.78,
+      "text": "you want I'm not going to add it now so"
+    },
+    {
+      "start": 280.139,
+      "duration": 4.321,
+      "text": "this is my variable ready if I want to"
+    },
+    {
+      "start": 282.06,
+      "duration": 4.44,
+      "text": "use this variable inside this thing so"
+    },
+    {
+      "start": 284.46,
+      "duration": 4.799,
+      "text": "that you can get the value of the Emi"
+    },
+    {
+      "start": 286.5,
+      "duration": 4.979,
+      "text": "from here I need to say VAR which is"
+    },
+    {
+      "start": 289.259,
+      "duration": 4.741,
+      "text": "your dot name of the Opera name of the"
+    },
+    {
+      "start": 291.479,
+      "duration": 5.16,
+      "text": "variable which is OS here so y dot OS"
+    },
+    {
+      "start": 294.0,
+      "duration": 5.46,
+      "text": "and if I save it try to rent a reform"
+    },
+    {
+      "start": 296.639,
+      "duration": 4.56,
+      "text": "plan it should get the value of the Ami"
+    },
+    {
+      "start": 299.46,
+      "duration": 2.7,
+      "text": "from this variable if it shows some"
+    },
+    {
+      "start": 301.199,
+      "duration": 3.421,
+      "text": "error which means we are not doing"
+    },
+    {
+      "start": 302.16,
+      "duration": 4.979,
+      "text": "things right so let's do plan and okay"
+    },
+    {
+      "start": 304.62,
+      "duration": 4.26,
+      "text": "we haven't installed uh the provider yet"
+    },
+    {
+      "start": 307.139,
+      "duration": 4.081,
+      "text": "so need to enter off a minute command"
+    },
+    {
+      "start": 308.88,
+      "duration": 4.74,
+      "text": "first so let's run terraform init and it"
+    },
+    {
+      "start": 311.22,
+      "duration": 3.66,
+      "text": "will start installing AWS provider once"
+    },
+    {
+      "start": 313.62,
+      "duration": 3.84,
+      "text": "it is installed you will see some files"
+    },
+    {
+      "start": 314.88,
+      "duration": 5.3,
+      "text": "here as well so let's install it you can"
+    },
+    {
+      "start": 317.46,
+      "duration": 6.299,
+      "text": "see installing hashicop AWS version"
+    },
+    {
+      "start": 320.18,
+      "duration": 5.2,
+      "text": "5.8.0 which we have explained how which"
+    },
+    {
+      "start": 323.759,
+      "duration": 3.061,
+      "text": "I've explained in the previous video so"
+    },
+    {
+      "start": 325.38,
+      "duration": 4.02,
+      "text": "if you haven't checked out make sure you"
+    },
+    {
+      "start": 326.82,
+      "duration": 3.9,
+      "text": "do let's wait for this to install and"
+    },
+    {
+      "start": 329.4,
+      "duration": 3.06,
+      "text": "then we can start with our other"
+    },
+    {
+      "start": 330.72,
+      "duration": 3.9,
+      "text": "commands which are terraform plan for"
+    },
+    {
+      "start": 332.46,
+      "duration": 4.44,
+      "text": "black commands to see if I variable is"
+    },
+    {
+      "start": 334.62,
+      "duration": 3.359,
+      "text": "working properly or not so you can see"
+    },
+    {
+      "start": 336.9,
+      "duration": 3.359,
+      "text": "down here"
+    },
+    {
+      "start": 337.979,
+      "duration": 4.861,
+      "text": "there's a file created with the"
+    },
+    {
+      "start": 340.259,
+      "duration": 3.72,
+      "text": "terraform provider for AWS and here you"
+    },
+    {
+      "start": 342.84,
+      "duration": 2.88,
+      "text": "can see there are from a successful"
+    },
+    {
+      "start": 343.979,
+      "duration": 4.021,
+      "text": "initialized you may now begin working"
+    },
+    {
+      "start": 345.72,
+      "duration": 3.479,
+      "text": "with the terraform and try the interform"
+    },
+    {
+      "start": 348.0,
+      "duration": 3.479,
+      "text": "plan to see what changes are going to be"
+    },
+    {
+      "start": 349.199,
+      "duration": 4.381,
+      "text": "done so let's enter our phone plan"
+    },
+    {
+      "start": 351.479,
+      "duration": 4.081,
+      "text": "and according to the plan it should say"
+    },
+    {
+      "start": 353.58,
+      "duration": 3.66,
+      "text": "one instance is going to be created and"
+    },
+    {
+      "start": 355.56,
+      "duration": 3.72,
+      "text": "the value of the Ami should be picked up"
+    },
+    {
+      "start": 357.24,
+      "duration": 4.62,
+      "text": "from here so it says one thing to be"
+    },
+    {
+      "start": 359.28,
+      "duration": 4.859,
+      "text": "added and the value of the Ami let's try"
+    },
+    {
+      "start": 361.86,
+      "duration": 4.38,
+      "text": "to see it in the plan so in the plan"
+    },
+    {
+      "start": 364.139,
+      "duration": 3.0,
+      "text": "here we can see the Ami value is this"
+    },
+    {
+      "start": 366.24,
+      "duration": 2.459,
+      "text": "one"
+    },
+    {
+      "start": 367.139,
+      "duration": 4.681,
+      "text": "correct which is absolutely correct"
+    },
+    {
+      "start": 368.699,
+      "duration": 5.22,
+      "text": "let's try to add variables for other"
+    },
+    {
+      "start": 371.82,
+      "duration": 3.84,
+      "text": "blocks other things as well I'm going to"
+    },
+    {
+      "start": 373.919,
+      "duration": 4.741,
+      "text": "add variable for this"
+    },
+    {
+      "start": 375.66,
+      "duration": 4.62,
+      "text": "and for this so let's create a variable"
+    },
+    {
+      "start": 378.66,
+      "duration": 4.5,
+      "text": "block similar to what we did I'm going"
+    },
+    {
+      "start": 380.28,
+      "duration": 4.979,
+      "text": "to say size for instance type and inside"
+    },
+    {
+      "start": 383.16,
+      "duration": 4.92,
+      "text": "this size I'm going to say default"
+    },
+    {
+      "start": 385.259,
+      "duration": 5.761,
+      "text": "equals to"
+    },
+    {
+      "start": 388.08,
+      "duration": 5.7,
+      "text": "T2 dot micro"
+    },
+    {
+      "start": 391.02,
+      "duration": 5.58,
+      "text": "save it and you can use it by saying VAR"
+    },
+    {
+      "start": 393.78,
+      "duration": 6.359,
+      "text": "dot size similar to this I can also do"
+    },
+    {
+      "start": 396.6,
+      "duration": 6.78,
+      "text": "this per year so y dot name"
+    },
+    {
+      "start": 400.139,
+      "duration": 5.701,
+      "text": "and let's create a variable for that so"
+    },
+    {
+      "start": 403.38,
+      "duration": 6.14,
+      "text": "variable block saying name and the value"
+    },
+    {
+      "start": 405.84,
+      "duration": 3.68,
+      "text": "is going to be default"
+    },
+    {
+      "start": 409.74,
+      "duration": 5.28,
+      "text": "equals to terraform"
+    },
+    {
+      "start": 413.039,
+      "duration": 5.341,
+      "text": "ec2 make sure it is in double quotes"
+    },
+    {
+      "start": 415.02,
+      "duration": 5.94,
+      "text": "because it is a string so now we have"
+    },
+    {
+      "start": 418.38,
+      "duration": 4.259,
+      "text": "defined three variables and we are not"
+    },
+    {
+      "start": 420.96,
+      "duration": 3.42,
+      "text": "used hard coding any values here which"
+    },
+    {
+      "start": 422.639,
+      "duration": 3.721,
+      "text": "is what terraform actually wants us from"
+    },
+    {
+      "start": 424.38,
+      "duration": 4.2,
+      "text": "one size so this is the best practice"
+    },
+    {
+      "start": 426.36,
+      "duration": 4.619,
+      "text": "and now if I run an FM plan it will show"
+    },
+    {
+      "start": 428.58,
+      "duration": 4.92,
+      "text": "me everything and all the values fetch"
+    },
+    {
+      "start": 430.979,
+      "duration": 5.22,
+      "text": "from these variables here"
+    },
+    {
+      "start": 433.5,
+      "duration": 4.38,
+      "text": "so if I don't plan now you can see the"
+    },
+    {
+      "start": 436.199,
+      "duration": 4.021,
+      "text": "name of the instance"
+    },
+    {
+      "start": 437.88,
+      "duration": 4.08,
+      "text": "is going to be shown here"
+    },
+    {
+      "start": 440.22,
+      "duration": 3.599,
+      "text": "so the name of the instance is set up"
+    },
+    {
+      "start": 441.96,
+      "duration": 2.7,
+      "text": "for me C2 which is picked up from the"
+    },
+    {
+      "start": 443.819,
+      "duration": 3.061,
+      "text": "variable"
+    },
+    {
+      "start": 444.66,
+      "duration": 4.08,
+      "text": "then you have T2 micro picked up from"
+    },
+    {
+      "start": 446.88,
+      "duration": 3.539,
+      "text": "variable and the Emi ID let's try to"
+    },
+    {
+      "start": 448.74,
+      "duration": 3.42,
+      "text": "create it and see what happens in our"
+    },
+    {
+      "start": 450.419,
+      "duration": 3.961,
+      "text": "console so I'm going to say turn off"
+    },
+    {
+      "start": 452.16,
+      "duration": 3.42,
+      "text": "apply hyphen R2"
+    },
+    {
+      "start": 454.38,
+      "duration": 3.24,
+      "text": "sorry"
+    },
+    {
+      "start": 455.58,
+      "duration": 4.679,
+      "text": "Auto"
+    },
+    {
+      "start": 457.62,
+      "duration": 4.68,
+      "text": "hyphen approve so you can see I don't"
+    },
+    {
+      "start": 460.259,
+      "duration": 4.56,
+      "text": "have any instances present in my machine"
+    },
+    {
+      "start": 462.3,
+      "duration": 4.32,
+      "text": "and once it is created I'll see an"
+    },
+    {
+      "start": 464.819,
+      "duration": 4.081,
+      "text": "instance here so right now it is in"
+    },
+    {
+      "start": 466.62,
+      "duration": 4.38,
+      "text": "creating state within 30 seconds or so I"
+    },
+    {
+      "start": 468.9,
+      "duration": 3.48,
+      "text": "should have an instance present in my"
+    },
+    {
+      "start": 471.0,
+      "duration": 4.44,
+      "text": "console here"
+    },
+    {
+      "start": 472.38,
+      "duration": 4.319,
+      "text": "so still creating let's remove this"
+    },
+    {
+      "start": 475.44,
+      "duration": 5.099,
+      "text": "stack for running and you'll see"
+    },
+    {
+      "start": 476.699,
+      "duration": 5.641,
+      "text": "instance right now is in pending state"
+    },
+    {
+      "start": 480.539,
+      "duration": 3.72,
+      "text": "and after some time which the name is"
+    },
+    {
+      "start": 482.34,
+      "duration": 4.919,
+      "text": "also terraform ac2 same as what we have"
+    },
+    {
+      "start": 484.259,
+      "duration": 7.041,
+      "text": "described in our"
+    },
+    {
+      "start": 487.259,
+      "duration": 4.041,
+      "text": "in a variable here so"
+    },
+    {
+      "start": 492.18,
+      "duration": 4.079,
+      "text": "you can see now it is a running state"
+    },
+    {
+      "start": 494.34,
+      "duration": 4.5,
+      "text": "and after some time it will be created"
+    },
+    {
+      "start": 496.259,
+      "duration": 4.62,
+      "text": "according to terraform so now the"
+    },
+    {
+      "start": 498.84,
+      "duration": 3.24,
+      "text": "terraform has created our instance and"
+    },
+    {
+      "start": 500.879,
+      "duration": 2.94,
+      "text": "the values are picked up from the"
+    },
+    {
+      "start": 502.08,
+      "duration": 4.44,
+      "text": "variables which is absolutely what you"
+    },
+    {
+      "start": 503.819,
+      "duration": 4.921,
+      "text": "want let's try to see other ways you can"
+    },
+    {
+      "start": 506.52,
+      "duration": 4.079,
+      "text": "Define your variable before we do that"
+    },
+    {
+      "start": 508.74,
+      "duration": 2.88,
+      "text": "we can also Define the variables with"
+    },
+    {
+      "start": 510.599,
+      "duration": 2.161,
+      "text": "different interacts like numbers"
+    },
+    {
+      "start": 511.62,
+      "duration": 2.64,
+      "text": "booleans"
+    },
+    {
+      "start": 512.76,
+      "duration": 4.079,
+      "text": "so here you have seen that this variable"
+    },
+    {
+      "start": 514.26,
+      "duration": 4.68,
+      "text": "is a has a type of string you can choose"
+    },
+    {
+      "start": 516.839,
+      "duration": 3.781,
+      "text": "to either type or you can choose to"
+    },
+    {
+      "start": 518.94,
+      "duration": 4.019,
+      "text": "remove it as well all these values are"
+    },
+    {
+      "start": 520.62,
+      "duration": 4.56,
+      "text": "optional but you can have variable of"
+    },
+    {
+      "start": 522.959,
+      "duration": 4.5,
+      "text": "data type with numbers booleans strings"
+    },
+    {
+      "start": 525.18,
+      "duration": 4.74,
+      "text": "Maps objects and so much more here are"
+    },
+    {
+      "start": 527.459,
+      "duration": 5.401,
+      "text": "some examples with string with number"
+    },
+    {
+      "start": 529.92,
+      "duration": 5.58,
+      "text": "with Boolean list but you can also have"
+    },
+    {
+      "start": 532.86,
+      "duration": 4.979,
+      "text": "more than that of list of strings list"
+    },
+    {
+      "start": 535.5,
+      "duration": 5.88,
+      "text": "of numbers set of strings map of strings"
+    },
+    {
+      "start": 537.839,
+      "duration": 5.521,
+      "text": "objects pupils and much more"
+    },
+    {
+      "start": 541.38,
+      "duration": 3.66,
+      "text": "now let's see what are different ways"
+    },
+    {
+      "start": 543.36,
+      "duration": 3.0,
+      "text": "you can Define variables so if we have"
+    },
+    {
+      "start": 545.04,
+      "duration": 3.299,
+      "text": "already seen how to define variables"
+    },
+    {
+      "start": 546.36,
+      "duration": 3.96,
+      "text": "using variable block let's try to see"
+    },
+    {
+      "start": 548.339,
+      "duration": 3.721,
+      "text": "how you can Define variables with a CLI"
+    },
+    {
+      "start": 550.32,
+      "duration": 4.44,
+      "text": "prompt during terraform initialization"
+    },
+    {
+      "start": 552.06,
+      "duration": 4.38,
+      "text": "or execution to show this let's try to"
+    },
+    {
+      "start": 554.76,
+      "duration": 3.78,
+      "text": "create another bucket but before I do"
+    },
+    {
+      "start": 556.44,
+      "duration": 4.44,
+      "text": "this let me put this all variables in a"
+    },
+    {
+      "start": 558.54,
+      "duration": 4.44,
+      "text": "separate file and rather than defining"
+    },
+    {
+      "start": 560.88,
+      "duration": 3.48,
+      "text": "it in main.tf so I'm going to say"
+    },
+    {
+      "start": 562.98,
+      "duration": 4.979,
+      "text": "variable"
+    },
+    {
+      "start": 564.36,
+      "duration": 4.979,
+      "text": "dot TF and put this here okay this"
+    },
+    {
+      "start": 567.959,
+      "duration": 3.301,
+      "text": "variable should be outside terraform"
+    },
+    {
+      "start": 569.339,
+      "duration": 4.261,
+      "text": "block make sure you do that so I'm going"
+    },
+    {
+      "start": 571.26,
+      "duration": 3.3,
+      "text": "to say move and this is not inside it"
+    },
+    {
+      "start": 573.6,
+      "duration": 2.22,
+      "text": "okay"
+    },
+    {
+      "start": 574.56,
+      "duration": 2.76,
+      "text": "all right so now we have created"
+    },
+    {
+      "start": 575.82,
+      "duration": 3.32,
+      "text": "variable.tf which is storing all the"
+    },
+    {
+      "start": 577.32,
+      "duration": 5.94,
+      "text": "variable I am going to create a new"
+    },
+    {
+      "start": 579.14,
+      "duration": 6.94,
+      "text": "resource let's create S3 bucket and we"
+    },
+    {
+      "start": 583.26,
+      "duration": 4.8,
+      "text": "need to use this option which is to give"
+    },
+    {
+      "start": 586.08,
+      "duration": 3.78,
+      "text": "the value of the variable through CLI"
+    },
+    {
+      "start": 588.06,
+      "duration": 5.16,
+      "text": "prompt during terraform initialization"
+    },
+    {
+      "start": 589.86,
+      "duration": 5.58,
+      "text": "or execution so to create a bucket you"
+    },
+    {
+      "start": 593.22,
+      "duration": 3.78,
+      "text": "need to define the resource and if you"
+    },
+    {
+      "start": 595.44,
+      "duration": 3.959,
+      "text": "want to get idea on how to create it you"
+    },
+    {
+      "start": 597.0,
+      "duration": 5.339,
+      "text": "can use this documentation on terraform"
+    },
+    {
+      "start": 599.399,
+      "duration": 5.461,
+      "text": "which is AWS S3 bucket so the resource"
+    },
+    {
+      "start": 602.339,
+      "duration": 3.541,
+      "text": "name is AWS underscore S3 underscore"
+    },
+    {
+      "start": 604.86,
+      "duration": 3.9,
+      "text": "bucket"
+    },
+    {
+      "start": 605.88,
+      "duration": 4.56,
+      "text": "as you can see here so I'm going to use"
+    },
+    {
+      "start": 608.76,
+      "duration": 3.24,
+      "text": "that and inside this bucket there are"
+    },
+    {
+      "start": 610.44,
+      "duration": 2.82,
+      "text": "some attributes you can get to know what"
+    },
+    {
+      "start": 612.0,
+      "duration": 3.06,
+      "text": "are the attributes that you require to"
+    },
+    {
+      "start": 613.26,
+      "duration": 3.6,
+      "text": "create a bucket buy here's argument"
+    },
+    {
+      "start": 615.06,
+      "duration": 3.42,
+      "text": "reference a year this is optional this"
+    },
+    {
+      "start": 616.86,
+      "duration": 3.539,
+      "text": "is optional you can get to know what it"
+    },
+    {
+      "start": 618.48,
+      "duration": 3.78,
+      "text": "is but I can get a bucket with just with"
+    },
+    {
+      "start": 620.399,
+      "duration": 3.421,
+      "text": "just one attribute and I need to put the"
+    },
+    {
+      "start": 622.26,
+      "duration": 2.88,
+      "text": "name of the bucket here remember this is"
+    },
+    {
+      "start": 623.82,
+      "duration": 3.42,
+      "text": "not the name of the bucket this is only"
+    },
+    {
+      "start": 625.14,
+      "duration": 4.199,
+      "text": "the name that terraform uses so I'm"
+    },
+    {
+      "start": 627.24,
+      "duration": 4.14,
+      "text": "going to say bucket and in this I need"
+    },
+    {
+      "start": 629.339,
+      "duration": 3.721,
+      "text": "to have a unique name that I'm going to"
+    },
+    {
+      "start": 631.38,
+      "duration": 3.959,
+      "text": "use that I'm going to provide using a"
+    },
+    {
+      "start": 633.06,
+      "duration": 3.42,
+      "text": "terraform variable so let's create a"
+    },
+    {
+      "start": 635.339,
+      "duration": 3.241,
+      "text": "variable"
+    },
+    {
+      "start": 636.48,
+      "duration": 6.479,
+      "text": "for bucket name I'm going to say"
+    },
+    {
+      "start": 638.58,
+      "duration": 6.36,
+      "text": "variable and bucket name"
+    },
+    {
+      "start": 642.959,
+      "duration": 3.421,
+      "text": "as I said in the previous thing all"
+    },
+    {
+      "start": 644.94,
+      "duration": 3.54,
+      "text": "these attributes are optional so you can"
+    },
+    {
+      "start": 646.38,
+      "duration": 4.5,
+      "text": "choose to keep the variable block empty"
+    },
+    {
+      "start": 648.48,
+      "duration": 4.919,
+      "text": "completely when I keep this block empty"
+    },
+    {
+      "start": 650.88,
+      "duration": 3.84,
+      "text": "let me show you what happens so now I"
+    },
+    {
+      "start": 653.399,
+      "duration": 3.241,
+      "text": "have created this variable I'm going to"
+    },
+    {
+      "start": 654.72,
+      "duration": 3.66,
+      "text": "save the file and reference that"
+    },
+    {
+      "start": 656.64,
+      "duration": 3.48,
+      "text": "variable here so I'm going to say VAR"
+    },
+    {
+      "start": 658.38,
+      "duration": 3.72,
+      "text": "dot bucket name"
+    },
+    {
+      "start": 660.12,
+      "duration": 3.48,
+      "text": "now the block has been created but no"
+    },
+    {
+      "start": 662.1,
+      "duration": 4.08,
+      "text": "values has been defined so when I enter"
+    },
+    {
+      "start": 663.6,
+      "duration": 6.359,
+      "text": "a phone plan CLI is going to ask me to"
+    },
+    {
+      "start": 666.18,
+      "duration": 6.42,
+      "text": "put the value so terraform plan"
+    },
+    {
+      "start": 669.959,
+      "duration": 4.141,
+      "text": "and then you can see the CLI is asking"
+    },
+    {
+      "start": 672.6,
+      "duration": 2.82,
+      "text": "me what should be the name of the bucket"
+    },
+    {
+      "start": 674.1,
+      "duration": 6.02,
+      "text": "you want to create so let's try to add"
+    },
+    {
+      "start": 675.42,
+      "duration": 6.38,
+      "text": "some name here my cloud sham terraform"
+    },
+    {
+      "start": 680.12,
+      "duration": 3.94,
+      "text": "bucket"
+    },
+    {
+      "start": 681.8,
+      "duration": 5.02,
+      "text": "2023. hopefully this is unique so it"
+    },
+    {
+      "start": 684.06,
+      "duration": 4.56,
+      "text": "should show us a plant and now once the"
+    },
+    {
+      "start": 686.82,
+      "duration": 5.579,
+      "text": "plan is done it should take the value of"
+    },
+    {
+      "start": 688.62,
+      "duration": 5.82,
+      "text": "the variable defined here from from here"
+    },
+    {
+      "start": 692.399,
+      "duration": 3.901,
+      "text": "so now you can see a bucket has been"
+    },
+    {
+      "start": 694.44,
+      "duration": 4.92,
+      "text": "created bucket is going to be created"
+    },
+    {
+      "start": 696.3,
+      "duration": 6.18,
+      "text": "and the name of the bucket should be my"
+    },
+    {
+      "start": 699.36,
+      "duration": 4.919,
+      "text": "cloud champ terraform bucket 2023 this"
+    },
+    {
+      "start": 702.48,
+      "duration": 4.32,
+      "text": "is the second way of defining your block"
+    },
+    {
+      "start": 704.279,
+      "duration": 4.74,
+      "text": "variables through CLI prompt during"
+    },
+    {
+      "start": 706.8,
+      "duration": 4.62,
+      "text": "initialization or execution so this is"
+    },
+    {
+      "start": 709.019,
+      "duration": 4.201,
+      "text": "how you can define a variable when you"
+    },
+    {
+      "start": 711.42,
+      "duration": 4.5,
+      "text": "don't Define it in the variable block so"
+    },
+    {
+      "start": 713.22,
+      "duration": 4.32,
+      "text": "the terraform will ask you in the CLI"
+    },
+    {
+      "start": 715.92,
+      "duration": 3.419,
+      "text": "prompt and then you can divide it this"
+    },
+    {
+      "start": 717.54,
+      "duration": 4.5,
+      "text": "this is how you can do it"
+    },
+    {
+      "start": 719.339,
+      "duration": 4.44,
+      "text": "another way to define it is using hyphen"
+    },
+    {
+      "start": 722.04,
+      "duration": 4.26,
+      "text": "wire option so let me show you how to do"
+    },
+    {
+      "start": 723.779,
+      "duration": 4.861,
+      "text": "that so I'm going to set a from plan and"
+    },
+    {
+      "start": 726.3,
+      "duration": 4.32,
+      "text": "now I haven't created this bucket I have"
+    },
+    {
+      "start": 728.64,
+      "duration": 3.12,
+      "text": "just ran a plan so if I enter FM plan"
+    },
+    {
+      "start": 730.62,
+      "duration": 3.0,
+      "text": "again it's going to ask me the same"
+    },
+    {
+      "start": 731.76,
+      "duration": 6.0,
+      "text": "thing again so if I don't want it to be"
+    },
+    {
+      "start": 733.62,
+      "duration": 8.0,
+      "text": "asking me I can just add a VAR flag"
+    },
+    {
+      "start": 737.76,
+      "duration": 6.84,
+      "text": "so I can say it terraform plan Dash VAR"
+    },
+    {
+      "start": 741.62,
+      "duration": 5.32,
+      "text": "equals to what is the name variable"
+    },
+    {
+      "start": 744.6,
+      "duration": 6.66,
+      "text": "variable name is bucket name so bucket"
+    },
+    {
+      "start": 746.94,
+      "duration": 8.0,
+      "text": "name equals to some value so my"
+    },
+    {
+      "start": 751.26,
+      "duration": 5.519,
+      "text": "Cloud champ bucket"
+    },
+    {
+      "start": 754.94,
+      "duration": 3.579,
+      "text": "2023"
+    },
+    {
+      "start": 756.779,
+      "duration": 3.721,
+      "text": "and"
+    },
+    {
+      "start": 758.519,
+      "duration": 3.841,
+      "text": "if everything is okay it should not give"
+    },
+    {
+      "start": 760.5,
+      "duration": 3.36,
+      "text": "us error it should not ask us for the"
+    },
+    {
+      "start": 762.36,
+      "duration": 3.719,
+      "text": "value because now we are using hyphen"
+    },
+    {
+      "start": 763.86,
+      "duration": 4.62,
+      "text": "water thing so and if it shows the plan"
+    },
+    {
+      "start": 766.079,
+      "duration": 4.801,
+      "text": "directly now you can see it's not asking"
+    },
+    {
+      "start": 768.48,
+      "duration": 4.62,
+      "text": "us for any prompt and within few seconds"
+    },
+    {
+      "start": 770.88,
+      "duration": 3.84,
+      "text": "it is now going to show us the plan as"
+    },
+    {
+      "start": 773.1,
+      "duration": 3.6,
+      "text": "well this is the third way of you"
+    },
+    {
+      "start": 774.72,
+      "duration": 4.2,
+      "text": "defining there are four variable using"
+    },
+    {
+      "start": 776.7,
+      "duration": 4.68,
+      "text": "hyphen wire thing so let's go and apply"
+    },
+    {
+      "start": 778.92,
+      "duration": 4.2,
+      "text": "this and let's see if a bucket has been"
+    },
+    {
+      "start": 781.38,
+      "duration": 4.139,
+      "text": "going to be created or not so I'm going"
+    },
+    {
+      "start": 783.12,
+      "duration": 5.6,
+      "text": "to say apply"
+    },
+    {
+      "start": 785.519,
+      "duration": 3.201,
+      "text": "hyphen Auto"
+    },
+    {
+      "start": 790.68,
+      "duration": 3.26,
+      "text": "hyphen approved"
+    },
+    {
+      "start": 793.98,
+      "duration": 3.9,
+      "text": "and now our bucket will be created using"
+    },
+    {
+      "start": 795.72,
+      "duration": 5.76,
+      "text": "this name if I show you I don't have any"
+    },
+    {
+      "start": 797.88,
+      "duration": 6.0,
+      "text": "buckets right now in my S3 but S3 with"
+    },
+    {
+      "start": 801.48,
+      "duration": 4.26,
+      "text": "this name nameless Cloud sham and you"
+    },
+    {
+      "start": 803.88,
+      "duration": 4.56,
+      "text": "can see one thing going to be added zero"
+    },
+    {
+      "start": 805.74,
+      "duration": 3.899,
+      "text": "to change Zero to destroy uh you can see"
+    },
+    {
+      "start": 808.44,
+      "duration": 4.32,
+      "text": "there's no bucket with Cloud champ"
+    },
+    {
+      "start": 809.639,
+      "duration": 4.741,
+      "text": "terraform 2023 name and now terraform is"
+    },
+    {
+      "start": 812.76,
+      "duration": 4.019,
+      "text": "going to create it"
+    },
+    {
+      "start": 814.38,
+      "duration": 6.06,
+      "text": "so terraform says creation operated in"
+    },
+    {
+      "start": 816.779,
+      "duration": 6.481,
+      "text": "just six seconds now if I refresh my"
+    },
+    {
+      "start": 820.44,
+      "duration": 5.94,
+      "text": "S3 here you can see a bucket has been"
+    },
+    {
+      "start": 823.26,
+      "duration": 4.5,
+      "text": "created right now which is completely"
+    },
+    {
+      "start": 826.38,
+      "duration": 4.199,
+      "text": "empty because I haven't added anything"
+    },
+    {
+      "start": 827.76,
+      "duration": 4.62,
+      "text": "so this is how you can create buckets in"
+    },
+    {
+      "start": 830.579,
+      "duration": 3.121,
+      "text": "terraform using variables we have seen"
+    },
+    {
+      "start": 832.38,
+      "duration": 3.42,
+      "text": "three different ways on how you can"
+    },
+    {
+      "start": 833.7,
+      "duration": 4.199,
+      "text": "define a variable by using a variable"
+    },
+    {
+      "start": 835.8,
+      "duration": 4.26,
+      "text": "block by adding the value of the CLI"
+    },
+    {
+      "start": 837.899,
+      "duration": 5.461,
+      "text": "prompt and by also using the variable"
+    },
+    {
+      "start": 840.06,
+      "duration": 4.74,
+      "text": "Dash war flag"
+    },
+    {
+      "start": 843.36,
+      "duration": 3.9,
+      "text": "so this is how you can use Dash"
+    },
+    {
+      "start": 844.8,
+      "duration": 4.979,
+      "text": "waterflac you can read more about it on"
+    },
+    {
+      "start": 847.26,
+      "duration": 3.96,
+      "text": "the documentation itself as well so the"
+    },
+    {
+      "start": 849.779,
+      "duration": 3.18,
+      "text": "first way is to create a block second is"
+    },
+    {
+      "start": 851.22,
+      "duration": 3.119,
+      "text": "for CLI Prime Third Way is to use the"
+    },
+    {
+      "start": 852.959,
+      "duration": 4.141,
+      "text": "command line flag"
+    },
+    {
+      "start": 854.339,
+      "duration": 5.221,
+      "text": "next you can also use a tfos file which"
+    },
+    {
+      "start": 857.1,
+      "duration": 4.52,
+      "text": "is very very common when working with"
+    },
+    {
+      "start": 859.56,
+      "duration": 5.16,
+      "text": "different environments like staging prod"
+    },
+    {
+      "start": 861.62,
+      "duration": 4.959,
+      "text": "test development so so let me show you"
+    },
+    {
+      "start": 864.72,
+      "duration": 4.32,
+      "text": "this with an example as well I am going"
+    },
+    {
+      "start": 866.579,
+      "duration": 5.341,
+      "text": "to create another resource"
+    },
+    {
+      "start": 869.04,
+      "duration": 4.859,
+      "text": "and this resource is now going to be a"
+    },
+    {
+      "start": 871.92,
+      "duration": 5.099,
+      "text": "let's say"
+    },
+    {
+      "start": 873.899,
+      "duration": 5.761,
+      "text": "I am user okay let's try to use that so"
+    },
+    {
+      "start": 877.019,
+      "duration": 4.56,
+      "text": "to create IM user you need to create a"
+    },
+    {
+      "start": 879.66,
+      "duration": 3.539,
+      "text": "resource again so resource"
+    },
+    {
+      "start": 881.579,
+      "duration": 5.221,
+      "text": "in this resource I'm going to create an"
+    },
+    {
+      "start": 883.199,
+      "duration": 6.661,
+      "text": "AWS IEM user so I'll say AWS IM"
+    },
+    {
+      "start": 886.8,
+      "duration": 5.339,
+      "text": "underscore user and this is going to be"
+    },
+    {
+      "start": 889.86,
+      "duration": 4.38,
+      "text": "my user the name that I want the"
+    },
+    {
+      "start": 892.139,
+      "duration": 3.601,
+      "text": "terraform to use inside this I need to"
+    },
+    {
+      "start": 894.24,
+      "duration": 3.42,
+      "text": "pass an attribute saying name of the"
+    },
+    {
+      "start": 895.74,
+      "duration": 3.599,
+      "text": "user which can be anything so I can"
+    },
+    {
+      "start": 897.66,
+      "duration": 4.02,
+      "text": "Define this in directly or I can also"
+    },
+    {
+      "start": 899.339,
+      "duration": 4.44,
+      "text": "use a variable block like I did but I'm"
+    },
+    {
+      "start": 901.68,
+      "duration": 3.48,
+      "text": "going to use terraform TF was file and"
+    },
+    {
+      "start": 903.779,
+      "duration": 4.261,
+      "text": "I'm going to create two files one for"
+    },
+    {
+      "start": 905.16,
+      "duration": 7.7,
+      "text": "prod one for staging so let's try to"
+    },
+    {
+      "start": 908.04,
+      "duration": 7.68,
+      "text": "create a file here I'm going to say prod"
+    },
+    {
+      "start": 912.86,
+      "duration": 4.38,
+      "text": "dot TF Wars"
+    },
+    {
+      "start": 915.72,
+      "duration": 3.479,
+      "text": "and"
+    },
+    {
+      "start": 917.24,
+      "duration": 5.44,
+      "text": "staging"
+    },
+    {
+      "start": 919.199,
+      "duration": 6.781,
+      "text": "dot TF was okay"
+    },
+    {
+      "start": 922.68,
+      "duration": 6.36,
+      "text": "in this main.tf I have a very I have a"
+    },
+    {
+      "start": 925.98,
+      "duration": 5.58,
+      "text": "resource created for AWS IM user and I"
+    },
+    {
+      "start": 929.04,
+      "duration": 4.62,
+      "text": "want this user to be named as user"
+    },
+    {
+      "start": 931.56,
+      "duration": 4.32,
+      "text": "producer or stage user something like"
+    },
+    {
+      "start": 933.66,
+      "duration": 3.96,
+      "text": "this so I'll say Define a variable"
+    },
+    {
+      "start": 935.88,
+      "duration": 4.019,
+      "text": "similar to what you did here without"
+    },
+    {
+      "start": 937.62,
+      "duration": 4.98,
+      "text": "defining the value so I'll say variable"
+    },
+    {
+      "start": 939.899,
+      "duration": 4.62,
+      "text": "variable username"
+    },
+    {
+      "start": 942.6,
+      "duration": 4.2,
+      "text": "and nothing inside it"
+    },
+    {
+      "start": 944.519,
+      "duration": 3.901,
+      "text": "then I'm going to go here and say"
+    },
+    {
+      "start": 946.8,
+      "duration": 3.839,
+      "text": "username"
+    },
+    {
+      "start": 948.42,
+      "duration": 3.859,
+      "text": "equals to prod"
+    },
+    {
+      "start": 950.639,
+      "duration": 6.481,
+      "text": "similarly in staging I would say"
+    },
+    {
+      "start": 952.279,
+      "duration": 6.581,
+      "text": "username equals to Stage okay and in"
+    },
+    {
+      "start": 957.12,
+      "duration": 3.3,
+      "text": "this main.tf I'll say"
+    },
+    {
+      "start": 958.86,
+      "duration": 5.039,
+      "text": "the user should be"
+    },
+    {
+      "start": 960.42,
+      "duration": 5.46,
+      "text": "the variable first so prod user or stage"
+    },
+    {
+      "start": 963.899,
+      "duration": 7.021,
+      "text": "user so I can use it like this I can do"
+    },
+    {
+      "start": 965.88,
+      "duration": 9.06,
+      "text": "it like this so VAR dot username"
+    },
+    {
+      "start": 970.92,
+      "duration": 6.12,
+      "text": "and python user so the value should be"
+    },
+    {
+      "start": 974.94,
+      "duration": 5.459,
+      "text": "if it is applaud if you're using product"
+    },
+    {
+      "start": 977.04,
+      "duration": 6.659,
+      "text": "file it should be like Discord Dash user"
+    },
+    {
+      "start": 980.399,
+      "duration": 5.401,
+      "text": "if it is a stage file we're using then"
+    },
+    {
+      "start": 983.699,
+      "duration": 5.7,
+      "text": "it should be stage dot user and the user"
+    },
+    {
+      "start": 985.8,
+      "duration": 5.46,
+      "text": "should be created all right so now if I"
+    },
+    {
+      "start": 989.399,
+      "duration": 4.5,
+      "text": "want to use broad file I need to say"
+    },
+    {
+      "start": 991.26,
+      "duration": 4.56,
+      "text": "hyphen wire hyphen 5 equals to prod.tfs"
+    },
+    {
+      "start": 993.899,
+      "duration": 4.981,
+      "text": "if I want to use staging I need to say"
+    },
+    {
+      "start": 995.82,
+      "duration": 5.579,
+      "text": "hyphen wire hyphen 5 staging.tfs so"
+    },
+    {
+      "start": 998.88,
+      "duration": 4.8,
+      "text": "let's try to check that out I'm going to"
+    },
+    {
+      "start": 1001.399,
+      "duration": 4.021,
+      "text": "use the same thing and iPhone you are"
+    },
+    {
+      "start": 1003.68,
+      "duration": 3.719,
+      "text": "hyphens file"
+    },
+    {
+      "start": 1005.42,
+      "duration": 3.479,
+      "text": "equals to"
+    },
+    {
+      "start": 1007.399,
+      "duration": 4.261,
+      "text": "staging"
+    },
+    {
+      "start": 1008.899,
+      "duration": 5.341,
+      "text": "dot TFS let's use this to check the plan"
+    },
+    {
+      "start": 1011.66,
+      "duration": 4.44,
+      "text": "first I'm going to first select a plan"
+    },
+    {
+      "start": 1014.24,
+      "duration": 3.12,
+      "text": "and according to the plan it should show"
+    },
+    {
+      "start": 1016.1,
+      "duration": 4.08,
+      "text": "me that the user is going to be created"
+    },
+    {
+      "start": 1017.36,
+      "duration": 5.099,
+      "text": "which would have stage Dash user so it"
+    },
+    {
+      "start": 1020.18,
+      "duration": 3.659,
+      "text": "gives us an error saying hyphen Auto but"
+    },
+    {
+      "start": 1022.459,
+      "duration": 3.96,
+      "text": "not defined okay sorry I need to remove"
+    },
+    {
+      "start": 1023.839,
+      "duration": 4.321,
+      "text": "this iPhone Auto as well"
+    },
+    {
+      "start": 1026.419,
+      "duration": 3.241,
+      "text": "so now we are creating a terraform plan"
+    },
+    {
+      "start": 1028.16,
+      "duration": 4.259,
+      "text": "uh"
+    },
+    {
+      "start": 1029.66,
+      "duration": 5.1,
+      "text": "with using staging.tfos file which has"
+    },
+    {
+      "start": 1032.419,
+      "duration": 5.04,
+      "text": "username value as stage so when the user"
+    },
+    {
+      "start": 1034.76,
+      "duration": 4.679,
+      "text": "is created it should be stage Dash user"
+    },
+    {
+      "start": 1037.459,
+      "duration": 4.261,
+      "text": "in the plan so once I run this let's"
+    },
+    {
+      "start": 1039.439,
+      "duration": 4.201,
+      "text": "check the plan what does it say so the"
+    },
+    {
+      "start": 1041.72,
+      "duration": 3.839,
+      "text": "player is saying input variable name has"
+    },
+    {
+      "start": 1043.64,
+      "duration": 3.72,
+      "text": "not been declared okay"
+    },
+    {
+      "start": 1045.559,
+      "duration": 3.961,
+      "text": "oh sorry it should be in double quotes"
+    },
+    {
+      "start": 1047.36,
+      "duration": 5.04,
+      "text": "make sure you have stage"
+    },
+    {
+      "start": 1049.52,
+      "duration": 5.039,
+      "text": "and here it should also be in double"
+    },
+    {
+      "start": 1052.4,
+      "duration": 5.94,
+      "text": "quotes"
+    },
+    {
+      "start": 1054.559,
+      "duration": 5.961,
+      "text": "let's save this and save this and try"
+    },
+    {
+      "start": 1058.34,
+      "duration": 2.18,
+      "text": "again"
+    },
+    {
+      "start": 1062.78,
+      "duration": 5.1,
+      "text": "uh bye okay so now it will show me a"
+    },
+    {
+      "start": 1066.2,
+      "duration": 3.9,
+      "text": "plan and according to the plan it says"
+    },
+    {
+      "start": 1067.88,
+      "duration": 5.46,
+      "text": "one thing is going to be created and the"
+    },
+    {
+      "start": 1070.1,
+      "duration": 5.1,
+      "text": "user name is stage Dash user so if I go"
+    },
+    {
+      "start": 1073.34,
+      "duration": 3.66,
+      "text": "ahead and apply this plan"
+    },
+    {
+      "start": 1075.2,
+      "duration": 2.94,
+      "text": "if I go ahead and apply it'll apply"
+    },
+    {
+      "start": 1077.0,
+      "duration": 3.72,
+      "text": "command"
+    },
+    {
+      "start": 1078.14,
+      "duration": 4.68,
+      "text": "it will create a user with name stage"
+    },
+    {
+      "start": 1080.72,
+      "duration": 4.88,
+      "text": "Dash user if I use something else let's"
+    },
+    {
+      "start": 1082.82,
+      "duration": 6.239,
+      "text": "try to use a prod.user here no"
+    },
+    {
+      "start": 1085.6,
+      "duration": 5.52,
+      "text": "broad.tfos file so using plot.tfr that"
+    },
+    {
+      "start": 1089.059,
+      "duration": 3.901,
+      "text": "will it will create a user with the name"
+    },
+    {
+      "start": 1091.12,
+      "duration": 4.9,
+      "text": "asprod.tfs and this is very common"
+    },
+    {
+      "start": 1092.96,
+      "duration": 5.099,
+      "text": "practice we use in real life having"
+    },
+    {
+      "start": 1096.02,
+      "duration": 4.08,
+      "text": "different TF was file for different"
+    },
+    {
+      "start": 1098.059,
+      "duration": 3.661,
+      "text": "environments so here I've shown you this"
+    },
+    {
+      "start": 1100.1,
+      "duration": 3.48,
+      "text": "example as well if you have any"
+    },
+    {
+      "start": 1101.72,
+      "duration": 4.079,
+      "text": "questions regarding this feel free to"
+    },
+    {
+      "start": 1103.58,
+      "duration": 3.78,
+      "text": "let me know I can explain you things in"
+    },
+    {
+      "start": 1105.799,
+      "duration": 3.061,
+      "text": "more easy easier way so you can see the"
+    },
+    {
+      "start": 1107.36,
+      "duration": 3.66,
+      "text": "user has been created let's go and check"
+    },
+    {
+      "start": 1108.86,
+      "duration": 4.679,
+      "text": "what is the username now so I'm going to"
+    },
+    {
+      "start": 1111.02,
+      "duration": 4.26,
+      "text": "go in my IM dashboard and check the"
+    },
+    {
+      "start": 1113.539,
+      "duration": 4.321,
+      "text": "users created"
+    },
+    {
+      "start": 1115.28,
+      "duration": 4.5,
+      "text": "according to this plan it says a broad"
+    },
+    {
+      "start": 1117.86,
+      "duration": 5.64,
+      "text": "Dash user should be created which is"
+    },
+    {
+      "start": 1119.78,
+      "duration": 6.06,
+      "text": "what we have here in the main.ts as well"
+    },
+    {
+      "start": 1123.5,
+      "duration": 5.039,
+      "text": "so you can see users"
+    },
+    {
+      "start": 1125.84,
+      "duration": 5.28,
+      "text": "and the username is"
+    },
+    {
+      "start": 1128.539,
+      "duration": 6.361,
+      "text": "prod Dash user that has been created"
+    },
+    {
+      "start": 1131.12,
+      "duration": 6.12,
+      "text": "right now uh so this is how you can"
+    },
+    {
+      "start": 1134.9,
+      "duration": 4.2,
+      "text": "Define variables using dashboard TF"
+    },
+    {
+      "start": 1137.24,
+      "duration": 4.439,
+      "text": "first Phi there's also another way where"
+    },
+    {
+      "start": 1139.1,
+      "duration": 4.26,
+      "text": "you can use environment variables which"
+    },
+    {
+      "start": 1141.679,
+      "duration": 3.841,
+      "text": "is which starts with Dash DF TF"
+    },
+    {
+      "start": 1143.36,
+      "duration": 4.92,
+      "text": "underscore wire underscore so to show"
+    },
+    {
+      "start": 1145.52,
+      "duration": 4.32,
+      "text": "you that in the CLI uh whenever we"
+    },
+    {
+      "start": 1148.28,
+      "duration": 3.96,
+      "text": "declare environment variable we need to"
+    },
+    {
+      "start": 1149.84,
+      "duration": 4.8,
+      "text": "use export command so export TF"
+    },
+    {
+      "start": 1152.24,
+      "duration": 4.16,
+      "text": "underscore VAR underscore and then name"
+    },
+    {
+      "start": 1154.64,
+      "duration": 5.1,
+      "text": "of the variable let's say username"
+    },
+    {
+      "start": 1156.4,
+      "duration": 5.56,
+      "text": "equals to Broad or equals to Stage"
+    },
+    {
+      "start": 1159.74,
+      "duration": 3.72,
+      "text": "something like this so this is how you"
+    },
+    {
+      "start": 1161.96,
+      "duration": 3.839,
+      "text": "can Define it and if you want to know"
+    },
+    {
+      "start": 1163.46,
+      "duration": 3.9,
+      "text": "more you can obviously check the"
+    },
+    {
+      "start": 1165.799,
+      "duration": 3.061,
+      "text": "documentation again so in the"
+    },
+    {
+      "start": 1167.36,
+      "duration": 3.179,
+      "text": "documentation you can see this is how"
+    },
+    {
+      "start": 1168.86,
+      "duration": 4.02,
+      "text": "you can Define the word environment"
+    },
+    {
+      "start": 1170.539,
+      "duration": 5.581,
+      "text": "variable using export command TFR and"
+    },
+    {
+      "start": 1172.88,
+      "duration": 5.4,
+      "text": "then the image ID equals to this"
+    },
+    {
+      "start": 1176.12,
+      "duration": 3.54,
+      "text": "lastly you can also use the cloud and"
+    },
+    {
+      "start": 1178.28,
+      "duration": 2.7,
+      "text": "Enterprise which is out of scope because"
+    },
+    {
+      "start": 1179.66,
+      "duration": 3.66,
+      "text": "I don't have terraform cloud or"
+    },
+    {
+      "start": 1180.98,
+      "duration": 3.84,
+      "text": "Enterprise account but this if you learn"
+    },
+    {
+      "start": 1183.32,
+      "duration": 3.3,
+      "text": "these things this is all you need and"
+    },
+    {
+      "start": 1184.82,
+      "duration": 4.38,
+      "text": "this is what we use every day in our"
+    },
+    {
+      "start": 1186.62,
+      "duration": 4.14,
+      "text": "terraform code when working in"
+    },
+    {
+      "start": 1189.2,
+      "duration": 4.2,
+      "text": "Industries so make sure you understand"
+    },
+    {
+      "start": 1190.76,
+      "duration": 4.86,
+      "text": "how to use how to use variables and why"
+    },
+    {
+      "start": 1193.4,
+      "duration": 4.62,
+      "text": "to use it how to declare this in"
+    },
+    {
+      "start": 1195.62,
+      "duration": 4.62,
+      "text": "different ways as shown in this video"
+    },
+    {
+      "start": 1198.02,
+      "duration": 4.08,
+      "text": "now let's look at outputs and what do"
+    },
+    {
+      "start": 1200.24,
+      "duration": 3.9,
+      "text": "you mean by outputs so sometimes there"
+    },
+    {
+      "start": 1202.1,
+      "duration": 4.319,
+      "text": "can be an application that you deployed"
+    },
+    {
+      "start": 1204.14,
+      "duration": 4.08,
+      "text": "on AWS which can be on ec2 and you might"
+    },
+    {
+      "start": 1206.419,
+      "duration": 4.021,
+      "text": "need to get the IP address or database"
+    },
+    {
+      "start": 1208.22,
+      "duration": 4.319,
+      "text": "credentials or database endpoint or"
+    },
+    {
+      "start": 1210.44,
+      "duration": 4.739,
+      "text": "anything like that and for you to get"
+    },
+    {
+      "start": 1212.539,
+      "duration": 3.961,
+      "text": "the things in the cons in the CLI so if"
+    },
+    {
+      "start": 1215.179,
+      "duration": 4.141,
+      "text": "you want to get the things right here in"
+    },
+    {
+      "start": 1216.5,
+      "duration": 5.4,
+      "text": "your CLI you can use outputs so let's"
+    },
+    {
+      "start": 1219.32,
+      "duration": 4.5,
+      "text": "try to let me show you that let's say"
+    },
+    {
+      "start": 1221.9,
+      "duration": 3.659,
+      "text": "here I'm creating this instance and I"
+    },
+    {
+      "start": 1223.82,
+      "duration": 5.04,
+      "text": "want to get the IP address of that"
+    },
+    {
+      "start": 1225.559,
+      "duration": 6.0,
+      "text": "instance here in my CLI to create an"
+    },
+    {
+      "start": 1228.86,
+      "duration": 4.74,
+      "text": "output I need to create an output block"
+    },
+    {
+      "start": 1231.559,
+      "duration": 3.661,
+      "text": "so this is the output block it will have"
+    },
+    {
+      "start": 1233.6,
+      "duration": 4.14,
+      "text": "some name you can see the example here"
+    },
+    {
+      "start": 1235.22,
+      "duration": 6.839,
+      "text": "output output name value description"
+    },
+    {
+      "start": 1237.74,
+      "duration": 7.38,
+      "text": "sensitive so I'm going to say IP address"
+    },
+    {
+      "start": 1242.059,
+      "duration": 6.12,
+      "text": "IP address and inside this I need to say"
+    },
+    {
+      "start": 1245.12,
+      "duration": 4.62,
+      "text": "value what value do I want so I want the"
+    },
+    {
+      "start": 1248.179,
+      "duration": 2.88,
+      "text": "value of the IP address of this"
+    },
+    {
+      "start": 1249.74,
+      "duration": 5.04,
+      "text": "particular instance so I'm going to copy"
+    },
+    {
+      "start": 1251.059,
+      "duration": 7.021,
+      "text": "this here AWS instance dot web"
+    },
+    {
+      "start": 1254.78,
+      "duration": 6.72,
+      "text": "copy it and then paste it here"
+    },
+    {
+      "start": 1258.08,
+      "duration": 6.78,
+      "text": "and I need to say AWS instance dot web"
+    },
+    {
+      "start": 1261.5,
+      "duration": 6.12,
+      "text": "so what do I want I want public IP"
+    },
+    {
+      "start": 1264.86,
+      "duration": 4.5,
+      "text": "I'll sell public underscore IP and save"
+    },
+    {
+      "start": 1267.62,
+      "duration": 4.34,
+      "text": "it once I run this and run terraform"
+    },
+    {
+      "start": 1269.36,
+      "duration": 2.6,
+      "text": "plan command"
+    },
+    {
+      "start": 1272.0,
+      "duration": 3.48,
+      "text": "with the bucket name let's say it with"
+    },
+    {
+      "start": 1273.799,
+      "duration": 3.901,
+      "text": "any bucket name for now username"
+    },
+    {
+      "start": 1275.48,
+      "duration": 3.84,
+      "text": "anything because we haven't defined any"
+    },
+    {
+      "start": 1277.7,
+      "duration": 4.02,
+      "text": "variables so it's asking us in the CLI"
+    },
+    {
+      "start": 1279.32,
+      "duration": 4.62,
+      "text": "so once this is done it will show you"
+    },
+    {
+      "start": 1281.72,
+      "duration": 3.9,
+      "text": "uh that an output is going to be"
+    },
+    {
+      "start": 1283.94,
+      "duration": 3.78,
+      "text": "generated so you can see this instance"
+    },
+    {
+      "start": 1285.62,
+      "duration": 4.26,
+      "text": "is already created so we get the output"
+    },
+    {
+      "start": 1287.72,
+      "duration": 3.959,
+      "text": "directly here"
+    },
+    {
+      "start": 1289.88,
+      "duration": 3.179,
+      "text": "so now if I run data from output I'll be"
+    },
+    {
+      "start": 1291.679,
+      "duration": 3.0,
+      "text": "able to see all the outputs that I have"
+    },
+    {
+      "start": 1293.059,
+      "duration": 6.74,
+      "text": "defined here right now I already defined"
+    },
+    {
+      "start": 1294.679,
+      "duration": 5.12,
+      "text": "the IP address output so I'll see uh"
+    },
+    {
+      "start": 1301.34,
+      "duration": 3.0,
+      "text": "here"
+    },
+    {
+      "start": 1304.4,
+      "duration": 4.08,
+      "text": "so this is the IP address I misspelled"
+    },
+    {
+      "start": 1307.34,
+      "duration": 2.699,
+      "text": "it so this is the IP address of the"
+    },
+    {
+      "start": 1308.48,
+      "duration": 3.9,
+      "text": "instance similarly I can get more things"
+    },
+    {
+      "start": 1310.039,
+      "duration": 4.741,
+      "text": "like DNS as well so let's try to get the"
+    },
+    {
+      "start": 1312.38,
+      "duration": 5.34,
+      "text": "DNS of the IP of the instance so I can"
+    },
+    {
+      "start": 1314.78,
+      "duration": 5.279,
+      "text": "make it DNS and instead of public IP I"
+    },
+    {
+      "start": 1317.72,
+      "duration": 3.12,
+      "text": "need to get the public DNS so I can save"
+    },
+    {
+      "start": 1320.059,
+      "duration": 3.12,
+      "text": "it"
+    },
+    {
+      "start": 1320.84,
+      "duration": 4.199,
+      "text": "so now you can see if I enter for output"
+    },
+    {
+      "start": 1323.179,
+      "duration": 3.661,
+      "text": "I'll be able to see DNS as well as the"
+    },
+    {
+      "start": 1325.039,
+      "duration": 4.26,
+      "text": "IP address and this is how you can"
+    },
+    {
+      "start": 1326.84,
+      "duration": 4.14,
+      "text": "Define your variables and outputs in"
+    },
+    {
+      "start": 1329.299,
+      "duration": 3.721,
+      "text": "terraform this is very important for you"
+    },
+    {
+      "start": 1330.98,
+      "duration": 4.74,
+      "text": "to know because you will you will also"
+    },
+    {
+      "start": 1333.02,
+      "duration": 4.8,
+      "text": "be using this in the module section in"
+    },
+    {
+      "start": 1335.72,
+      "duration": 4.86,
+      "text": "the module section which is which is"
+    },
+    {
+      "start": 1337.82,
+      "duration": 4.5,
+      "text": "very important so you can see here works"
+    },
+    {
+      "start": 1340.58,
+      "duration": 3.06,
+      "text": "you have to use outputs and variables to"
+    },
+    {
+      "start": 1342.32,
+      "duration": 3.42,
+      "text": "pass values between the different"
+    },
+    {
+      "start": 1343.64,
+      "duration": 3.539,
+      "text": "modules so this is very important for"
+    },
+    {
+      "start": 1345.74,
+      "duration": 2.819,
+      "text": "you to know I hope this video was"
+    },
+    {
+      "start": 1347.179,
+      "duration": 3.48,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 1348.559,
+      "duration": 4.081,
+      "text": "any doubt feel free to let me know in"
+    },
+    {
+      "start": 1350.659,
+      "duration": 4.281,
+      "text": "the comment section thank you and have a"
+    },
+    {
+      "start": 1352.64,
+      "duration": 2.3,
+      "text": "good day"
+    },
+    {
+      "start": 1370.64,
+      "duration": 4.8,
+      "text": "laughs"
+    },
+    {
+      "start": 1372.36,
+      "duration": 3.08,
+      "text": "[Applause]"
+    }
+  ]
+}

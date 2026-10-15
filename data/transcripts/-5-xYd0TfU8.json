@@ -1,0 +1,141 @@
+{
+  "video": {
+    "id": "-5-xYd0TfU8",
+    "title": "♾️ CICD Explained for Dummies! CICD Pipeline in 60 seconds #devops #cicd",
+    "url": "https://www.youtube.com/watch?v=-5-xYd0TfU8",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.32,
+      "duration": 4.519,
+      "text": "what is cicd cicd is a process to"
+    },
+    {
+      "start": 3.24,
+      "duration": 3.519,
+      "text": "automate the building testing and"
+    },
+    {
+      "start": 4.839,
+      "duration": 3.601,
+      "text": "deploying of applications every time you"
+    },
+    {
+      "start": 6.759,
+      "duration": 3.281,
+      "text": "make a code change so that you can"
+    },
+    {
+      "start": 8.44,
+      "duration": 3.359,
+      "text": "update and deliver your applications"
+    },
+    {
+      "start": 10.04,
+      "duration": 3.799,
+      "text": "faster let's understand this more"
+    },
+    {
+      "start": 11.799,
+      "duration": 3.681,
+      "text": "clearly with a diagram whenever a"
+    },
+    {
+      "start": 13.839,
+      "duration": 3.761,
+      "text": "developer makes some changes and pushes"
+    },
+    {
+      "start": 15.48,
+      "duration": 4.12,
+      "text": "it to get repository like GitHub an"
+    },
+    {
+      "start": 17.6,
+      "duration": 4.4,
+      "text": "automated CI server like genkins will"
+    },
+    {
+      "start": 19.6,
+      "duration": 4.4,
+      "text": "continuously monitor this repository for"
+    },
+    {
+      "start": 22.0,
+      "duration": 3.84,
+      "text": "any new code changes and if they"
+    },
+    {
+      "start": 24.0,
+      "duration": 4.08,
+      "text": "detected it triggers the pipeline which"
+    },
+    {
+      "start": 25.84,
+      "duration": 4.199,
+      "text": "automatically builds and tests the code"
+    },
+    {
+      "start": 28.08,
+      "duration": 3.359,
+      "text": "every time you make a change this"
+    },
+    {
+      "start": 30.039,
+      "duration": 4.04,
+      "text": "process of automatically building and"
+    },
+    {
+      "start": 31.439,
+      "duration": 4.96,
+      "text": "testing the codee is known as continuous"
+    },
+    {
+      "start": 34.079,
+      "duration": 4.521,
+      "text": "integration once the code is built and"
+    },
+    {
+      "start": 36.399,
+      "duration": 4.081,
+      "text": "test it is then ready for the next part"
+    },
+    {
+      "start": 38.6,
+      "duration": 3.279,
+      "text": "which is the deployment part you can"
+    },
+    {
+      "start": 40.48,
+      "duration": 4.12,
+      "text": "deploy your applications either on"
+    },
+    {
+      "start": 41.879,
+      "duration": 4.921,
+      "text": "kubernetes or on servers and this"
+    },
+    {
+      "start": 44.6,
+      "duration": 3.84,
+      "text": "complete process is known as cicd"
+    },
+    {
+      "start": 46.8,
+      "duration": 3.52,
+      "text": "pipeline for more information on"
+    },
+    {
+      "start": 48.44,
+      "duration": 5.52,
+      "text": "Hands-On cicd projects check out the"
+    },
+    {
+      "start": 50.32,
+      "duration": 3.64,
+      "text": "videos on my channel"
+    }
+  ]
+}

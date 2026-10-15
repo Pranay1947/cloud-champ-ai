@@ -1,0 +1,2281 @@
+{
+  "video": {
+    "id": "f_u1PfAyDnY",
+    "title": "AWS Elastic beanstalk Tutorial | What is Elastic Beanstalk Service | Deploy Application on Beanstalk",
+    "url": "https://www.youtube.com/watch?v=f_u1PfAyDnY",
+    "duration": 932,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 4.02,
+      "text": "and welcome back in this video we are"
+    },
+    {
+      "start": 2.22,
+      "duration": 4.74,
+      "text": "going to learn about elastic bean stock"
+    },
+    {
+      "start": 4.02,
+      "duration": 4.56,
+      "text": "service in AWS I'm going to explain all"
+    },
+    {
+      "start": 6.96,
+      "duration": 3.66,
+      "text": "the topics and the components of this"
+    },
+    {
+      "start": 8.58,
+      "duration": 3.72,
+      "text": "service along with the Hands-On lab"
+    },
+    {
+      "start": 10.62,
+      "duration": 3.899,
+      "text": "where we will be deploying python"
+    },
+    {
+      "start": 12.3,
+      "duration": 4.02,
+      "text": "application on elastic Beanstalk so"
+    },
+    {
+      "start": 14.519,
+      "duration": 2.941,
+      "text": "watch this video till the end if you"
+    },
+    {
+      "start": 16.32,
+      "duration": 3.24,
+      "text": "want to know how to deploy an"
+    },
+    {
+      "start": 17.46,
+      "duration": 4.079,
+      "text": "application on Beanstalk which will be"
+    },
+    {
+      "start": 19.56,
+      "duration": 3.42,
+      "text": "helpful if you are giving your AWS"
+    },
+    {
+      "start": 21.539,
+      "duration": 4.441,
+      "text": "certifications or if you just want to"
+    },
+    {
+      "start": 22.98,
+      "duration": 5.1,
+      "text": "learn this service let's get started AWS"
+    },
+    {
+      "start": 25.98,
+      "duration": 4.2,
+      "text": "elastic bean stock is platform as a"
+    },
+    {
+      "start": 28.08,
+      "duration": 3.9,
+      "text": "service which means you just need to"
+    },
+    {
+      "start": 30.18,
+      "duration": 3.66,
+      "text": "deploy your application source code and"
+    },
+    {
+      "start": 31.98,
+      "duration": 3.599,
+      "text": "AWS is going to manage all the"
+    },
+    {
+      "start": 33.84,
+      "duration": 3.3,
+      "text": "infrastructure components to help you"
+    },
+    {
+      "start": 35.579,
+      "duration": 3.301,
+      "text": "explain this let's go to the Management"
+    },
+    {
+      "start": 37.14,
+      "duration": 3.419,
+      "text": "console I'm here in my Management"
+    },
+    {
+      "start": 38.88,
+      "duration": 3.06,
+      "text": "console if you want to visit elastic"
+    },
+    {
+      "start": 40.559,
+      "duration": 3.481,
+      "text": "Beanstalk you can search for elastic"
+    },
+    {
+      "start": 41.94,
+      "duration": 3.9,
+      "text": "bean stock in the search box or you can"
+    },
+    {
+      "start": 44.04,
+      "duration": 3.539,
+      "text": "also find it in the compute section here"
+    },
+    {
+      "start": 45.84,
+      "duration": 3.3,
+      "text": "so I'm going to click on elastic bean"
+    },
+    {
+      "start": 47.579,
+      "duration": 2.761,
+      "text": "stock and let's do the Hands-On along"
+    },
+    {
+      "start": 49.14,
+      "duration": 3.419,
+      "text": "with the Hands-On I'm going to explain"
+    },
+    {
+      "start": 50.34,
+      "duration": 4.199,
+      "text": "all the components and the things you"
+    },
+    {
+      "start": 52.559,
+      "duration": 4.14,
+      "text": "need to know about this service so as"
+    },
+    {
+      "start": 54.539,
+      "duration": 4.981,
+      "text": "mentioned elastic bin stock is a"
+    },
+    {
+      "start": 56.699,
+      "duration": 5.641,
+      "text": "platform as a service so AWS intent of"
+    },
+    {
+      "start": 59.52,
+      "duration": 4.8,
+      "text": "you using this service is just focus on"
+    },
+    {
+      "start": 62.34,
+      "duration": 3.599,
+      "text": "the code and AWS is going to manage all"
+    },
+    {
+      "start": 64.32,
+      "duration": 3.0,
+      "text": "the infrastructure components let's"
+    },
+    {
+      "start": 65.939,
+      "duration": 2.821,
+      "text": "create an application I'm going to click"
+    },
+    {
+      "start": 67.32,
+      "duration": 3.299,
+      "text": "on create application here and let's"
+    },
+    {
+      "start": 68.76,
+      "duration": 5.96,
+      "text": "give it a name so I'm going to name this"
+    },
+    {
+      "start": 70.619,
+      "duration": 7.081,
+      "text": "as Cloud champ"
+    },
+    {
+      "start": 74.72,
+      "duration": 5.68,
+      "text": "POC something like this"
+    },
+    {
+      "start": 77.7,
+      "duration": 3.959,
+      "text": "so Cloud champ you see and then you can"
+    },
+    {
+      "start": 80.4,
+      "duration": 2.82,
+      "text": "add tags if you want to they are"
+    },
+    {
+      "start": 81.659,
+      "duration": 3.721,
+      "text": "optional I'm going to skip tags for now"
+    },
+    {
+      "start": 83.22,
+      "duration": 4.259,
+      "text": "AWS elastic bean stock supports all"
+    },
+    {
+      "start": 85.38,
+      "duration": 4.8,
+      "text": "these different languages or platforms"
+    },
+    {
+      "start": 87.479,
+      "duration": 5.221,
+      "text": "you have.net on Windows Docker go Java"
+    },
+    {
+      "start": 90.18,
+      "duration": 4.799,
+      "text": "node.js PHP python Ruby Tomcat all of"
+    },
+    {
+      "start": 92.7,
+      "duration": 4.2,
+      "text": "these let's go and try out with python"
+    },
+    {
+      "start": 94.979,
+      "duration": 3.361,
+      "text": "application first once you select the"
+    },
+    {
+      "start": 96.9,
+      "duration": 3.179,
+      "text": "platform you also get the option to"
+    },
+    {
+      "start": 98.34,
+      "duration": 3.48,
+      "text": "select the version and the platform"
+    },
+    {
+      "start": 100.079,
+      "duration": 2.941,
+      "text": "Branch so I'm going to go with the"
+    },
+    {
+      "start": 101.82,
+      "duration": 3.78,
+      "text": "latest one"
+    },
+    {
+      "start": 103.02,
+      "duration": 4.2,
+      "text": "here you have an option to select deploy"
+    },
+    {
+      "start": 105.6,
+      "duration": 3.54,
+      "text": "your application so you can either use"
+    },
+    {
+      "start": 107.22,
+      "duration": 3.96,
+      "text": "application code or you can upload your"
+    },
+    {
+      "start": 109.14,
+      "duration": 4.619,
+      "text": "own code so you can upload a code from"
+    },
+    {
+      "start": 111.18,
+      "duration": 4.86,
+      "text": "your own machine or you can choose from"
+    },
+    {
+      "start": 113.759,
+      "duration": 3.72,
+      "text": "S3 bucket so let's let me show you how"
+    },
+    {
+      "start": 116.04,
+      "duration": 3.719,
+      "text": "you can do it from your local machine so"
+    },
+    {
+      "start": 117.479,
+      "duration": 4.5,
+      "text": "if I click on local file I need to put"
+    },
+    {
+      "start": 119.759,
+      "duration": 4.101,
+      "text": "the zip or the war file to of my"
+    },
+    {
+      "start": 121.979,
+      "duration": 3.78,
+      "text": "application so I'm going to deploy"
+    },
+    {
+      "start": 123.86,
+      "duration": 3.34,
+      "text": "an application which is going to be"
+    },
+    {
+      "start": 125.759,
+      "duration": 3.241,
+      "text": "python application so I'm going to"
+    },
+    {
+      "start": 127.2,
+      "duration": 3.839,
+      "text": "choose the file name which is python.zip"
+    },
+    {
+      "start": 129.0,
+      "duration": 3.599,
+      "text": "you can choose your own file or you can"
+    },
+    {
+      "start": 131.039,
+      "duration": 4.381,
+      "text": "get started with the sample application"
+    },
+    {
+      "start": 132.599,
+      "duration": 4.5,
+      "text": "so once you do this you can add tags for"
+    },
+    {
+      "start": 135.42,
+      "duration": 3.36,
+      "text": "application code you also have options"
+    },
+    {
+      "start": 137.099,
+      "duration": 3.901,
+      "text": "to configure more options which we will"
+    },
+    {
+      "start": 138.78,
+      "duration": 3.78,
+      "text": "be learning in the later later on but"
+    },
+    {
+      "start": 141.0,
+      "duration": 3.599,
+      "text": "for now let's go let's get started and"
+    },
+    {
+      "start": 142.56,
+      "duration": 4.56,
+      "text": "create application here"
+    },
+    {
+      "start": 144.599,
+      "duration": 3.841,
+      "text": "once I click on the application AWS"
+    },
+    {
+      "start": 147.12,
+      "duration": 3.24,
+      "text": "elastic bean stock is now going to"
+    },
+    {
+      "start": 148.44,
+      "duration": 4.32,
+      "text": "create the application without me"
+    },
+    {
+      "start": 150.36,
+      "duration": 3.9,
+      "text": "managing any instances without me"
+    },
+    {
+      "start": 152.76,
+      "duration": 4.38,
+      "text": "managing any load balancers or anything"
+    },
+    {
+      "start": 154.26,
+      "duration": 5.04,
+      "text": "you can see it says creating cloudsham"
+    },
+    {
+      "start": 157.14,
+      "duration": 4.26,
+      "text": "POC environment using elastic Beanstalk"
+    },
+    {
+      "start": 159.3,
+      "duration": 4.62,
+      "text": "this so environment is starting and if"
+    },
+    {
+      "start": 161.4,
+      "duration": 4.32,
+      "text": "you see now everything else ec2"
+    },
+    {
+      "start": 163.92,
+      "duration": 3.599,
+      "text": "instances load balances Auto scaling"
+    },
+    {
+      "start": 165.72,
+      "duration": 4.2,
+      "text": "group elastic IP security groups"
+    },
+    {
+      "start": 167.519,
+      "duration": 5.281,
+      "text": "everything will be created and managed"
+    },
+    {
+      "start": 169.92,
+      "duration": 5.039,
+      "text": "by elastic Beanstalk you as a developer"
+    },
+    {
+      "start": 172.8,
+      "duration": 3.42,
+      "text": "don't need to manage anything if you see"
+    },
+    {
+      "start": 174.959,
+      "duration": 4.681,
+      "text": "here it says"
+    },
+    {
+      "start": 176.22,
+      "duration": 5.58,
+      "text": "create a Target group named this so if I"
+    },
+    {
+      "start": 179.64,
+      "duration": 4.5,
+      "text": "open my target group in the new tab"
+    },
+    {
+      "start": 181.8,
+      "duration": 4.14,
+      "text": "let's go here in the ec2 dashboard and"
+    },
+    {
+      "start": 184.14,
+      "duration": 4.14,
+      "text": "if I scroll down you can see a Target"
+    },
+    {
+      "start": 185.94,
+      "duration": 5.04,
+      "text": "group should be created and a Target"
+    },
+    {
+      "start": 188.28,
+      "duration": 5.28,
+      "text": "group has created AWS EB"
+    },
+    {
+      "start": 190.98,
+      "duration": 5.339,
+      "text": "so right now we don't have any"
+    },
+    {
+      "start": 193.56,
+      "duration": 4.86,
+      "text": "Targets in here but if you wait for some"
+    },
+    {
+      "start": 196.319,
+      "duration": 3.541,
+      "text": "time you will see that the security all"
+    },
+    {
+      "start": 198.42,
+      "duration": 3.42,
+      "text": "the instances and the target group along"
+    },
+    {
+      "start": 199.86,
+      "duration": 3.239,
+      "text": "with load balancer will be created so"
+    },
+    {
+      "start": 201.84,
+      "duration": 4.02,
+      "text": "the idea is when you create an"
+    },
+    {
+      "start": 203.099,
+      "duration": 4.741,
+      "text": "environment you elastic Beanstalk uses"
+    },
+    {
+      "start": 205.86,
+      "duration": 4.2,
+      "text": "cloud formation in the backend so if I"
+    },
+    {
+      "start": 207.84,
+      "duration": 4.08,
+      "text": "go to cloudformation here you should see"
+    },
+    {
+      "start": 210.06,
+      "duration": 5.399,
+      "text": "a template or a stack should be created"
+    },
+    {
+      "start": 211.92,
+      "duration": 5.72,
+      "text": "so cloud formation"
+    },
+    {
+      "start": 215.459,
+      "duration": 2.181,
+      "text": "foreign"
+    },
+    {
+      "start": 217.879,
+      "duration": 5.741,
+      "text": "that lets you create an infrastructure"
+    },
+    {
+      "start": 220.08,
+      "duration": 6.9,
+      "text": "as code and if you see here this is the"
+    },
+    {
+      "start": 223.62,
+      "duration": 5.64,
+      "text": "one which is create in service right now"
+    },
+    {
+      "start": 226.98,
+      "duration": 4.38,
+      "text": "and you can see it is in progress"
+    },
+    {
+      "start": 229.26,
+      "duration": 3.539,
+      "text": "creating progress so once the"
+    },
+    {
+      "start": 231.36,
+      "duration": 2.76,
+      "text": "application is created this will be in"
+    },
+    {
+      "start": 232.799,
+      "duration": 4.201,
+      "text": "complete state"
+    },
+    {
+      "start": 234.12,
+      "duration": 4.86,
+      "text": "so right now we will wait and we can"
+    },
+    {
+      "start": 237.0,
+      "duration": 4.86,
+      "text": "then see that the application is created"
+    },
+    {
+      "start": 238.98,
+      "duration": 4.74,
+      "text": "by elastic bin stock so in exam if you"
+    },
+    {
+      "start": 241.86,
+      "duration": 4.14,
+      "text": "have a question like if a developer"
+    },
+    {
+      "start": 243.72,
+      "duration": 5.159,
+      "text": "wants to deploy an application on AWS"
+    },
+    {
+      "start": 246.0,
+      "duration": 4.68,
+      "text": "without managing any AWS services or"
+    },
+    {
+      "start": 248.879,
+      "duration": 3.541,
+      "text": "infrastructure then the answer is going"
+    },
+    {
+      "start": 250.68,
+      "duration": 3.9,
+      "text": "to be elastic bean stock so remember"
+    },
+    {
+      "start": 252.42,
+      "duration": 4.14,
+      "text": "this there will be an exam question on"
+    },
+    {
+      "start": 254.58,
+      "duration": 3.899,
+      "text": "elastic Beanstalk so I hope you"
+    },
+    {
+      "start": 256.56,
+      "duration": 5.04,
+      "text": "understood what is elastic bean stock"
+    },
+    {
+      "start": 258.479,
+      "duration": 4.141,
+      "text": "and how can we use it to get more idea"
+    },
+    {
+      "start": 261.6,
+      "duration": 3.06,
+      "text": "let's see"
+    },
+    {
+      "start": 262.62,
+      "duration": 4.26,
+      "text": "what is the definition of elastic being"
+    },
+    {
+      "start": 264.66,
+      "duration": 4.86,
+      "text": "start by AWS itself so I'm going to go"
+    },
+    {
+      "start": 266.88,
+      "duration": 4.02,
+      "text": "to database documentation and let's see"
+    },
+    {
+      "start": 269.52,
+      "duration": 4.8,
+      "text": "what does"
+    },
+    {
+      "start": 270.9,
+      "duration": 5.64,
+      "text": "AWS has to tell about insta pin stock so"
+    },
+    {
+      "start": 274.32,
+      "duration": 3.54,
+      "text": "here it says with elastic bean stock you"
+    },
+    {
+      "start": 276.54,
+      "duration": 3.54,
+      "text": "can quickly deploy and manage"
+    },
+    {
+      "start": 277.86,
+      "duration": 4.26,
+      "text": "application in AWS Cloud without"
+    },
+    {
+      "start": 280.08,
+      "duration": 3.72,
+      "text": "worrying about infrastructure that runs"
+    },
+    {
+      "start": 282.12,
+      "duration": 3.18,
+      "text": "the application elastic bin stock"
+    },
+    {
+      "start": 283.8,
+      "duration": 3.06,
+      "text": "reduces the management complexity"
+    },
+    {
+      "start": 285.3,
+      "duration": 3.48,
+      "text": "without restricting choice or control"
+    },
+    {
+      "start": 286.86,
+      "duration": 4.5,
+      "text": "which means just deploy your application"
+    },
+    {
+      "start": 288.78,
+      "duration": 4.68,
+      "text": "code and don't think about any"
+    },
+    {
+      "start": 291.36,
+      "duration": 4.38,
+      "text": "infrastructure components AWS pin stock"
+    },
+    {
+      "start": 293.46,
+      "duration": 3.9,
+      "text": "is going to do that for you so you can"
+    },
+    {
+      "start": 295.74,
+      "duration": 3.78,
+      "text": "read about being stuck if you want to"
+    },
+    {
+      "start": 297.36,
+      "duration": 3.96,
+      "text": "from here it from the AWS documentation"
+    },
+    {
+      "start": 299.52,
+      "duration": 4.619,
+      "text": "it's a good resource"
+    },
+    {
+      "start": 301.32,
+      "duration": 5.159,
+      "text": "but now if you see here Beanstalk has"
+    },
+    {
+      "start": 304.139,
+      "duration": 4.441,
+      "text": "created Auto scaling group and load"
+    },
+    {
+      "start": 306.479,
+      "duration": 4.021,
+      "text": "balancer Cloud watch alarm Cloud wash"
+    },
+    {
+      "start": 308.58,
+      "duration": 4.98,
+      "text": "alarm another Cloud wash alarm and then"
+    },
+    {
+      "start": 310.5,
+      "duration": 4.199,
+      "text": "instance deployment so let's see all of"
+    },
+    {
+      "start": 313.56,
+      "duration": 3.78,
+      "text": "these components here so I'm going to go"
+    },
+    {
+      "start": 314.699,
+      "duration": 5.28,
+      "text": "to ec2 dashboard now and we should see"
+    },
+    {
+      "start": 317.34,
+      "duration": 5.04,
+      "text": "an instance a load balancer Auto scaling"
+    },
+    {
+      "start": 319.979,
+      "duration": 4.081,
+      "text": "group all of these things so I'm going"
+    },
+    {
+      "start": 322.38,
+      "duration": 3.3,
+      "text": "to go to my instances and I should have"
+    },
+    {
+      "start": 324.06,
+      "duration": 4.26,
+      "text": "so you can see one instance is running"
+    },
+    {
+      "start": 325.68,
+      "duration": 4.019,
+      "text": "Cloud shampooc environment it's in the"
+    },
+    {
+      "start": 328.32,
+      "duration": 3.06,
+      "text": "status checks are in the initializing"
+    },
+    {
+      "start": 329.699,
+      "duration": 4.201,
+      "text": "State you can see a role has been"
+    },
+    {
+      "start": 331.38,
+      "duration": 4.98,
+      "text": "attached to them as well uh Security"
+    },
+    {
+      "start": 333.9,
+      "duration": 4.079,
+      "text": "Group is attached all of these are done"
+    },
+    {
+      "start": 336.36,
+      "duration": 3.24,
+      "text": "automatically Without You managing all"
+    },
+    {
+      "start": 337.979,
+      "duration": 3.06,
+      "text": "of these if you don't use elastic bean"
+    },
+    {
+      "start": 339.6,
+      "duration": 3.06,
+      "text": "stock you have to manually create this"
+    },
+    {
+      "start": 341.039,
+      "duration": 4.141,
+      "text": "instances deploy your application on"
+    },
+    {
+      "start": 342.66,
+      "duration": 5.64,
+      "text": "this and you also see there should be a"
+    },
+    {
+      "start": 345.18,
+      "duration": 4.68,
+      "text": "load balancer created here so we have a"
+    },
+    {
+      "start": 348.3,
+      "duration": 3.119,
+      "text": "load balancer created which is in active"
+    },
+    {
+      "start": 349.86,
+      "duration": 3.72,
+      "text": "State this is the DNS name for load"
+    },
+    {
+      "start": 351.419,
+      "duration": 3.72,
+      "text": "balancer a Target group is created Auto"
+    },
+    {
+      "start": 353.58,
+      "duration": 3.36,
+      "text": "scaling groups"
+    },
+    {
+      "start": 355.139,
+      "duration": 3.541,
+      "text": "should also be there"
+    },
+    {
+      "start": 356.94,
+      "duration": 4.319,
+      "text": "so an auto scaling group is also created"
+    },
+    {
+      "start": 358.68,
+      "duration": 4.2,
+      "text": "all is done by elastic Beanstalk so"
+    },
+    {
+      "start": 361.259,
+      "duration": 4.38,
+      "text": "after some time it will be created and"
+    },
+    {
+      "start": 362.88,
+      "duration": 5.819,
+      "text": "we should get a DNS name to so you can"
+    },
+    {
+      "start": 365.639,
+      "duration": 5.821,
+      "text": "say it says successfully launched POC"
+    },
+    {
+      "start": 368.699,
+      "duration": 4.801,
+      "text": "environment so we have launched our"
+    },
+    {
+      "start": 371.46,
+      "duration": 5.579,
+      "text": "first application using elastic"
+    },
+    {
+      "start": 373.5,
+      "duration": 5.22,
+      "text": "Beanstalk so this is how easy it is you"
+    },
+    {
+      "start": 377.039,
+      "duration": 3.72,
+      "text": "just deploy your application code and"
+    },
+    {
+      "start": 378.72,
+      "duration": 3.72,
+      "text": "elastic bean stock will manage all the"
+    },
+    {
+      "start": 380.759,
+      "duration": 4.021,
+      "text": "infrastructure components so once this"
+    },
+    {
+      "start": 382.44,
+      "duration": 5.039,
+      "text": "is done we should get a DNS name or a c"
+    },
+    {
+      "start": 384.78,
+      "duration": 4.5,
+      "text": "name which will be used to access our"
+    },
+    {
+      "start": 387.479,
+      "duration": 5.041,
+      "text": "application"
+    },
+    {
+      "start": 389.28,
+      "duration": 4.62,
+      "text": "so inside uh elastic bean stock you have"
+    },
+    {
+      "start": 392.52,
+      "duration": 3.54,
+      "text": "things like environment application"
+    },
+    {
+      "start": 393.9,
+      "duration": 4.38,
+      "text": "change history all of these so right now"
+    },
+    {
+      "start": 396.06,
+      "duration": 3.84,
+      "text": "we have created an application and it is"
+    },
+    {
+      "start": 398.28,
+      "duration": 3.9,
+      "text": "a python application running on Amazon"
+    },
+    {
+      "start": 399.9,
+      "duration": 4.079,
+      "text": "Linux so if you see here this is the"
+    },
+    {
+      "start": 402.18,
+      "duration": 4.019,
+      "text": "cname I was talking about you can access"
+    },
+    {
+      "start": 403.979,
+      "duration": 4.56,
+      "text": "your application through this and the"
+    },
+    {
+      "start": 406.199,
+      "duration": 3.78,
+      "text": "application name is cloud shampooc so if"
+    },
+    {
+      "start": 408.539,
+      "duration": 4.141,
+      "text": "I click on this I should be inside my"
+    },
+    {
+      "start": 409.979,
+      "duration": 4.56,
+      "text": "python application so let's click on it"
+    },
+    {
+      "start": 412.68,
+      "duration": 3.72,
+      "text": "and see what has elastic Beanstalk"
+    },
+    {
+      "start": 414.539,
+      "duration": 4.621,
+      "text": "created for us"
+    },
+    {
+      "start": 416.4,
+      "duration": 4.56,
+      "text": "so this is what this is what a python"
+    },
+    {
+      "start": 419.16,
+      "duration": 3.72,
+      "text": "application is uh"
+    },
+    {
+      "start": 420.96,
+      "duration": 3.66,
+      "text": "it has it has a basic python application"
+    },
+    {
+      "start": 422.88,
+      "duration": 3.48,
+      "text": "so it says congratulations your first"
+    },
+    {
+      "start": 424.62,
+      "duration": 3.299,
+      "text": "Beanstalk python application is now"
+    },
+    {
+      "start": 426.36,
+      "duration": 4.5,
+      "text": "running with your own dedicated"
+    },
+    {
+      "start": 427.919,
+      "duration": 4.56,
+      "text": "environment in AWS Cloud you can deploy"
+    },
+    {
+      "start": 430.86,
+      "duration": 3.66,
+      "text": "your own application code and it can be"
+    },
+    {
+      "start": 432.479,
+      "duration": 4.261,
+      "text": "anything it can be either python it can"
+    },
+    {
+      "start": 434.52,
+      "duration": 4.14,
+      "text": "be Java it can be node.js it can be"
+    },
+    {
+      "start": 436.74,
+      "duration": 5.28,
+      "text": "Docker container anything everything is"
+    },
+    {
+      "start": 438.66,
+      "duration": 5.46,
+      "text": "supported by Cloud chat so you can see"
+    },
+    {
+      "start": 442.02,
+      "duration": 3.959,
+      "text": "all the details are present here which"
+    },
+    {
+      "start": 444.12,
+      "duration": 4.32,
+      "text": "instance is present what is the instance"
+    },
+    {
+      "start": 445.979,
+      "duration": 3.541,
+      "text": "deployment everything is here you can go"
+    },
+    {
+      "start": 448.44,
+      "duration": 3.3,
+      "text": "to the environment you can see"
+    },
+    {
+      "start": 449.52,
+      "duration": 4.679,
+      "text": "configuration settings here"
+    },
+    {
+      "start": 451.74,
+      "duration": 4.019,
+      "text": "so we have configuration settings like"
+    },
+    {
+      "start": 454.199,
+      "duration": 3.301,
+      "text": "what is the software what are the what"
+    },
+    {
+      "start": 455.759,
+      "duration": 4.28,
+      "text": "is the instance how much capacity is"
+    },
+    {
+      "start": 457.5,
+      "duration": 5.34,
+      "text": "provided to the load balancer or to the"
+    },
+    {
+      "start": 460.039,
+      "duration": 4.72,
+      "text": "instances then you have load balancer"
+    },
+    {
+      "start": 462.84,
+      "duration": 4.02,
+      "text": "option here listener"
+    },
+    {
+      "start": 464.759,
+      "duration": 3.361,
+      "text": "rolling update security group monitoring"
+    },
+    {
+      "start": 466.86,
+      "duration": 3.54,
+      "text": "all of these are present here you can"
+    },
+    {
+      "start": 468.12,
+      "duration": 4.62,
+      "text": "also check the logs of your environment"
+    },
+    {
+      "start": 470.4,
+      "duration": 4.739,
+      "text": "if you want you can get logs last 100"
+    },
+    {
+      "start": 472.74,
+      "duration": 4.859,
+      "text": "lines of logs and then you can download"
+    },
+    {
+      "start": 475.139,
+      "duration": 4.741,
+      "text": "this lot files in your local machine so"
+    },
+    {
+      "start": 477.599,
+      "duration": 4.801,
+      "text": "if I click on download here I should get"
+    },
+    {
+      "start": 479.88,
+      "duration": 4.98,
+      "text": "all the logs here which is very amazing"
+    },
+    {
+      "start": 482.4,
+      "duration": 4.019,
+      "text": "feature of cloud of AWS elastic"
+    },
+    {
+      "start": 484.86,
+      "duration": 3.119,
+      "text": "Beanstalk and then you have health"
+    },
+    {
+      "start": 486.419,
+      "duration": 3.541,
+      "text": "checks you can check all your health"
+    },
+    {
+      "start": 487.979,
+      "duration": 3.361,
+      "text": "about the instance if you're in the"
+    },
+    {
+      "start": 489.96,
+      "duration": 3.0,
+      "text": "health section then you have monitoring"
+    },
+    {
+      "start": 491.34,
+      "duration": 3.78,
+      "text": "you can check the monitoring status of"
+    },
+    {
+      "start": 492.96,
+      "duration": 4.26,
+      "text": "the application of your instances what"
+    },
+    {
+      "start": 495.12,
+      "duration": 3.9,
+      "text": "is the health check and you also have"
+    },
+    {
+      "start": 497.22,
+      "duration": 3.419,
+      "text": "alarms if you have any alarm set up you"
+    },
+    {
+      "start": 499.02,
+      "duration": 3.66,
+      "text": "can see it here right now we don't have"
+    },
+    {
+      "start": 500.639,
+      "duration": 4.441,
+      "text": "any Cloud wash alarms so we we don't"
+    },
+    {
+      "start": 502.68,
+      "duration": 3.78,
+      "text": "have it here next you have updates you"
+    },
+    {
+      "start": 505.08,
+      "duration": 3.299,
+      "text": "can also manage update on the history of"
+    },
+    {
+      "start": 506.46,
+      "duration": 3.959,
+      "text": "the update will be shown here"
+    },
+    {
+      "start": 508.379,
+      "duration": 4.921,
+      "text": "then cloudwatch events are present here"
+    },
+    {
+      "start": 510.419,
+      "duration": 5.461,
+      "text": "or not Cloud watch Even Stevens by"
+    },
+    {
+      "start": 513.3,
+      "duration": 4.26,
+      "text": "elastic Beanstalk you can filter this"
+    },
+    {
+      "start": 515.88,
+      "duration": 4.26,
+      "text": "out by Trace debug all these different"
+    },
+    {
+      "start": 517.56,
+      "duration": 5.82,
+      "text": "options and lastly you can see tags we"
+    },
+    {
+      "start": 520.14,
+      "duration": 4.56,
+      "text": "don't have any tags here so that's all"
+    },
+    {
+      "start": 523.38,
+      "duration": 2.94,
+      "text": "so this is how you deploy our"
+    },
+    {
+      "start": 524.7,
+      "duration": 3.96,
+      "text": "application on elastic Beanstalk I hope"
+    },
+    {
+      "start": 526.32,
+      "duration": 4.44,
+      "text": "you have the clear idea of what elastic"
+    },
+    {
+      "start": 528.66,
+      "duration": 3.9,
+      "text": "bean stock is and how how you can deploy"
+    },
+    {
+      "start": 530.76,
+      "duration": 4.56,
+      "text": "your applications so right now if I show"
+    },
+    {
+      "start": 532.56,
+      "duration": 4.98,
+      "text": "you here right we have a application"
+    },
+    {
+      "start": 535.32,
+      "duration": 3.42,
+      "text": "which is right now running so this is a"
+    },
+    {
+      "start": 537.54,
+      "duration": 2.94,
+      "text": "previous application which I created"
+    },
+    {
+      "start": 538.74,
+      "duration": 4.02,
+      "text": "earlier but you just need to focus on"
+    },
+    {
+      "start": 540.48,
+      "duration": 3.6,
+      "text": "this Cloud champ POC environment if I"
+    },
+    {
+      "start": 542.76,
+      "duration": 3.54,
+      "text": "click on this"
+    },
+    {
+      "start": 544.08,
+      "duration": 4.08,
+      "text": "you should see the health is okay it was"
+    },
+    {
+      "start": 546.3,
+      "duration": 4.2,
+      "text": "created this time last modified at this"
+    },
+    {
+      "start": 548.16,
+      "duration": 4.5,
+      "text": "time the URL is this running version is"
+    },
+    {
+      "start": 550.5,
+      "duration": 3.959,
+      "text": "this and the platform is python all of"
+    },
+    {
+      "start": 552.66,
+      "duration": 3.6,
+      "text": "these options are present here you can"
+    },
+    {
+      "start": 554.459,
+      "duration": 3.661,
+      "text": "also see the tra so I'm going to explain"
+    },
+    {
+      "start": 556.26,
+      "duration": 4.5,
+      "text": "what is application tier there are two"
+    },
+    {
+      "start": 558.12,
+      "duration": 4.32,
+      "text": "different tiers web server and worker uh"
+    },
+    {
+      "start": 560.76,
+      "duration": 4.56,
+      "text": "TS so we're going to learn about that"
+    },
+    {
+      "start": 562.44,
+      "duration": 4.98,
+      "text": "later on but if I go inside this"
+    },
+    {
+      "start": 565.32,
+      "duration": 3.959,
+      "text": "you can see all the all the information"
+    },
+    {
+      "start": 567.42,
+      "duration": 3.479,
+      "text": "about it let's say you have an"
+    },
+    {
+      "start": 569.279,
+      "duration": 3.18,
+      "text": "application and you have made some"
+    },
+    {
+      "start": 570.899,
+      "duration": 3.361,
+      "text": "changes so you have a second version of"
+    },
+    {
+      "start": 572.459,
+      "duration": 4.681,
+      "text": "the application you can also update it"
+    },
+    {
+      "start": 574.26,
+      "duration": 4.92,
+      "text": "by providing the new source code here"
+    },
+    {
+      "start": 577.14,
+      "duration": 3.84,
+      "text": "and you have deployment preferences so"
+    },
+    {
+      "start": 579.18,
+      "duration": 3.659,
+      "text": "we have different deployment policies"
+    },
+    {
+      "start": 580.98,
+      "duration": 3.96,
+      "text": "and elastic bean stock you have all at"
+    },
+    {
+      "start": 582.839,
+      "duration": 4.141,
+      "text": "once rolling rolling with additional"
+    },
+    {
+      "start": 584.94,
+      "duration": 4.079,
+      "text": "patch immutable and traffic splitting"
+    },
+    {
+      "start": 586.98,
+      "duration": 3.84,
+      "text": "all at once means when you deploy your"
+    },
+    {
+      "start": 589.019,
+      "duration": 4.621,
+      "text": "application it changes the motion for"
+    },
+    {
+      "start": 590.82,
+      "duration": 4.86,
+      "text": "every instance or every application at a"
+    },
+    {
+      "start": 593.64,
+      "duration": 4.139,
+      "text": "time with rolling you do it in batches"
+    },
+    {
+      "start": 595.68,
+      "duration": 3.659,
+      "text": "you will complete update of version in a"
+    },
+    {
+      "start": 597.779,
+      "duration": 3.541,
+      "text": "single batch and then continue in the"
+    },
+    {
+      "start": 599.339,
+      "duration": 3.841,
+      "text": "second batch this means if there's no"
+    },
+    {
+      "start": 601.32,
+      "duration": 3.6,
+      "text": "problem with downtime or anything when"
+    },
+    {
+      "start": 603.18,
+      "duration": 2.88,
+      "text": "you use rolling same with rolling with"
+    },
+    {
+      "start": 604.92,
+      "duration": 3.96,
+      "text": "additional batch where you will create"
+    },
+    {
+      "start": 606.06,
+      "duration": 4.16,
+      "text": "an extra instances while deploying or"
+    },
+    {
+      "start": 608.88,
+      "duration": 3.78,
+      "text": "while updating your application"
+    },
+    {
+      "start": 610.22,
+      "duration": 3.88,
+      "text": "immutable means the whole infrastructure"
+    },
+    {
+      "start": 612.66,
+      "duration": 3.299,
+      "text": "is going to be replicated on a new"
+    },
+    {
+      "start": 614.1,
+      "duration": 3.84,
+      "text": "infrastructure will be created when you"
+    },
+    {
+      "start": 615.959,
+      "duration": 3.601,
+      "text": "update your application from version 1"
+    },
+    {
+      "start": 617.94,
+      "duration": 3.36,
+      "text": "to version two I'm going to show you"
+    },
+    {
+      "start": 619.56,
+      "duration": 3.959,
+      "text": "that later on but for now these are all"
+    },
+    {
+      "start": 621.3,
+      "duration": 3.719,
+      "text": "the deployment policies you get let's go"
+    },
+    {
+      "start": 623.519,
+      "duration": 3.241,
+      "text": "and"
+    },
+    {
+      "start": 625.019,
+      "duration": 3.241,
+      "text": "see your application which is here then"
+    },
+    {
+      "start": 626.76,
+      "duration": 2.82,
+      "text": "you have environments so I have an"
+    },
+    {
+      "start": 628.26,
+      "duration": 2.519,
+      "text": "environment created which is cloud champ"
+    },
+    {
+      "start": 629.58,
+      "duration": 3.36,
+      "text": "environment"
+    },
+    {
+      "start": 630.779,
+      "duration": 3.301,
+      "text": "so if I click on this and show you all"
+    },
+    {
+      "start": 632.94,
+      "duration": 2.82,
+      "text": "the actions you have all these different"
+    },
+    {
+      "start": 634.08,
+      "duration": 3.12,
+      "text": "options like cloning your environment if"
+    },
+    {
+      "start": 635.76,
+      "duration": 3.12,
+      "text": "you want to copy the same environment in"
+    },
+    {
+      "start": 637.2,
+      "duration": 3.18,
+      "text": "another region you can do that using"
+    },
+    {
+      "start": 638.88,
+      "duration": 3.24,
+      "text": "clone environment you can also delete"
+    },
+    {
+      "start": 640.38,
+      "duration": 3.66,
+      "text": "all of these by using terminate"
+    },
+    {
+      "start": 642.12,
+      "duration": 3.54,
+      "text": "environment but not now"
+    },
+    {
+      "start": 644.04,
+      "duration": 3.239,
+      "text": "create a new environment"
+    },
+    {
+      "start": 645.66,
+      "duration": 3.06,
+      "text": "and I'm going to choose the so you have"
+    },
+    {
+      "start": 647.279,
+      "duration": 3.961,
+      "text": "two different environmentals here web"
+    },
+    {
+      "start": 648.72,
+      "duration": 4.619,
+      "text": "server and worker environment so if you"
+    },
+    {
+      "start": 651.24,
+      "duration": 4.74,
+      "text": "see here it says run a website web"
+    },
+    {
+      "start": 653.339,
+      "duration": 4.44,
+      "text": "application or web API that says HTTP"
+    },
+    {
+      "start": 655.98,
+      "duration": 3.96,
+      "text": "request whenever you have website a web"
+    },
+    {
+      "start": 657.779,
+      "duration": 3.781,
+      "text": "application or web server that is going"
+    },
+    {
+      "start": 659.94,
+      "duration": 3.72,
+      "text": "to use HTTP request it is going to be"
+    },
+    {
+      "start": 661.56,
+      "duration": 5.459,
+      "text": "web server environment usually it has a"
+    },
+    {
+      "start": 663.66,
+      "duration": 5.88,
+      "text": "load balancer and an auto instance AWS"
+    },
+    {
+      "start": 667.019,
+      "duration": 4.26,
+      "text": "ec2 instance the next you have worker"
+    },
+    {
+      "start": 669.54,
+      "duration": 3.539,
+      "text": "environment so worker environments are"
+    },
+    {
+      "start": 671.279,
+      "duration": 4.62,
+      "text": "are suitable for workloads where you"
+    },
+    {
+      "start": 673.079,
+      "duration": 4.141,
+      "text": "have sqsq and it it is used for running"
+    },
+    {
+      "start": 675.899,
+      "duration": 2.88,
+      "text": "another worker application that"
+    },
+    {
+      "start": 677.22,
+      "duration": 4.08,
+      "text": "processes long-running workloads on"
+    },
+    {
+      "start": 678.779,
+      "duration": 4.56,
+      "text": "demand or perform tasks on a schedule so"
+    },
+    {
+      "start": 681.3,
+      "duration": 4.26,
+      "text": "whenever you have a application which is"
+    },
+    {
+      "start": 683.339,
+      "duration": 4.321,
+      "text": "doing some task or performing some"
+    },
+    {
+      "start": 685.56,
+      "duration": 4.019,
+      "text": "applications using different Services"
+    },
+    {
+      "start": 687.66,
+      "duration": 2.82,
+      "text": "you can use worker environment we are"
+    },
+    {
+      "start": 689.579,
+      "duration": 2.341,
+      "text": "going to choose the web server"
+    },
+    {
+      "start": 690.48,
+      "duration": 3.06,
+      "text": "environment because I want to just"
+    },
+    {
+      "start": 691.92,
+      "duration": 5.7,
+      "text": "deploy an application which will be"
+    },
+    {
+      "start": 693.54,
+      "duration": 6.18,
+      "text": "hosted on HTTP websites or web server"
+    },
+    {
+      "start": 697.62,
+      "duration": 4.26,
+      "text": "so click on select option here I'm going"
+    },
+    {
+      "start": 699.72,
+      "duration": 4.22,
+      "text": "to name this as"
+    },
+    {
+      "start": 701.88,
+      "duration": 4.38,
+      "text": "broad let's say I'm going to"
+    },
+    {
+      "start": 703.94,
+      "duration": 4.6,
+      "text": "update my existing environment you can"
+    },
+    {
+      "start": 706.26,
+      "duration": 3.9,
+      "text": "also choose the domain if you want to or"
+    },
+    {
+      "start": 708.54,
+      "duration": 4.08,
+      "text": "else you can leave it blank for auto"
+    },
+    {
+      "start": 710.16,
+      "duration": 4.26,
+      "text": "generated domain by elastic Beanstalk"
+    },
+    {
+      "start": 712.62,
+      "duration": 3.6,
+      "text": "then I'm going to choose the python"
+    },
+    {
+      "start": 714.42,
+      "duration": 3.3,
+      "text": "application again because the updated"
+    },
+    {
+      "start": 716.22,
+      "duration": 3.54,
+      "text": "version is going to be in Python but you"
+    },
+    {
+      "start": 717.72,
+      "duration": 3.54,
+      "text": "have different options to choose next"
+    },
+    {
+      "start": 719.76,
+      "duration": 3.12,
+      "text": "I'm going to upload my own code so"
+    },
+    {
+      "start": 721.26,
+      "duration": 3.36,
+      "text": "upload your own code and I'm this time"
+    },
+    {
+      "start": 722.88,
+      "duration": 3.66,
+      "text": "I'm going to upload the second version"
+    },
+    {
+      "start": 724.62,
+      "duration": 4.08,
+      "text": "of my file"
+    },
+    {
+      "start": 726.54,
+      "duration": 3.479,
+      "text": "so I'm going to choose file and then"
+    },
+    {
+      "start": 728.7,
+      "duration": 3.24,
+      "text": "inside this I'm going to choose the"
+    },
+    {
+      "start": 730.019,
+      "duration": 3.721,
+      "text": "python v2.zip here I have made some"
+    },
+    {
+      "start": 731.94,
+      "duration": 4.74,
+      "text": "changes from to the existing environment"
+    },
+    {
+      "start": 733.74,
+      "duration": 4.44,
+      "text": "and I'm going to choose that then you"
+    },
+    {
+      "start": 736.68,
+      "duration": 3.779,
+      "text": "have configured more options which you"
+    },
+    {
+      "start": 738.18,
+      "duration": 3.839,
+      "text": "would so here you can make changes to"
+    },
+    {
+      "start": 740.459,
+      "duration": 3.301,
+      "text": "your applications or you can make"
+    },
+    {
+      "start": 742.019,
+      "duration": 4.021,
+      "text": "changes of what infrastructure do you"
+    },
+    {
+      "start": 743.76,
+      "duration": 4.199,
+      "text": "want so you can choose to have single"
+    },
+    {
+      "start": 746.04,
+      "duration": 3.6,
+      "text": "instance or single instance with spot"
+    },
+    {
+      "start": 747.959,
+      "duration": 3.601,
+      "text": "instance High availability where you get"
+    },
+    {
+      "start": 749.64,
+      "duration": 3.84,
+      "text": "options like load balances or Auto"
+    },
+    {
+      "start": 751.56,
+      "duration": 3.779,
+      "text": "scaling group you also have options with"
+    },
+    {
+      "start": 753.48,
+      "duration": 3.84,
+      "text": "high availability using spot instances"
+    },
+    {
+      "start": 755.339,
+      "duration": 3.721,
+      "text": "and On Demand or you can choose custom"
+    },
+    {
+      "start": 757.32,
+      "duration": 3.9,
+      "text": "configurations where you can Define how"
+    },
+    {
+      "start": 759.06,
+      "duration": 3.42,
+      "text": "do you want the configuration to be but"
+    },
+    {
+      "start": 761.22,
+      "duration": 4.2,
+      "text": "I'm going to go with single instance"
+    },
+    {
+      "start": 762.48,
+      "duration": 5.34,
+      "text": "just to keep my bill low and be in the"
+    },
+    {
+      "start": 765.42,
+      "duration": 5.7,
+      "text": "free tier eligible option"
+    },
+    {
+      "start": 767.82,
+      "duration": 5.16,
+      "text": "so I'm going to click on create"
+    },
+    {
+      "start": 771.12,
+      "duration": 4.2,
+      "text": "environment option here once the"
+    },
+    {
+      "start": 772.98,
+      "duration": 3.299,
+      "text": "environment is created uh you can see"
+    },
+    {
+      "start": 775.32,
+      "duration": 2.579,
+      "text": "the same things are going to be"
+    },
+    {
+      "start": 776.279,
+      "duration": 4.56,
+      "text": "replicated everything is going to be"
+    },
+    {
+      "start": 777.899,
+      "duration": 4.38,
+      "text": "managed by elastic bean stock so the"
+    },
+    {
+      "start": 780.839,
+      "duration": 4.021,
+      "text": "environment is now going to be created"
+    },
+    {
+      "start": 782.279,
+      "duration": 5.101,
+      "text": "so you can deploy applications like this"
+    },
+    {
+      "start": 784.86,
+      "duration": 4.44,
+      "text": "on elastic bin stock so we have seen how"
+    },
+    {
+      "start": 787.38,
+      "duration": 2.82,
+      "text": "to deploy an application and what are"
+    },
+    {
+      "start": 789.3,
+      "duration": 2.82,
+      "text": "the different components like"
+    },
+    {
+      "start": 790.2,
+      "duration": 3.96,
+      "text": "environments web server environment web"
+    },
+    {
+      "start": 792.12,
+      "duration": 3.899,
+      "text": "tier worker environment what are the"
+    },
+    {
+      "start": 794.16,
+      "duration": 4.739,
+      "text": "employment policies so you can see right"
+    },
+    {
+      "start": 796.019,
+      "duration": 4.981,
+      "text": "now this for this environment is now in"
+    },
+    {
+      "start": 798.899,
+      "duration": 4.921,
+      "text": "pending state so once it is in OK State"
+    },
+    {
+      "start": 801.0,
+      "duration": 4.62,
+      "text": "we can then access it you can also"
+    },
+    {
+      "start": 803.82,
+      "duration": 3.36,
+      "text": "you can also update the existing one so"
+    },
+    {
+      "start": 805.62,
+      "duration": 3.54,
+      "text": "let's go and update this one as well so"
+    },
+    {
+      "start": 807.18,
+      "duration": 5.459,
+      "text": "I'm going to choose file option here and"
+    },
+    {
+      "start": 809.16,
+      "duration": 5.88,
+      "text": "choose the same python zip version"
+    },
+    {
+      "start": 812.639,
+      "duration": 3.541,
+      "text": "and I'm going to choose the if you have"
+    },
+    {
+      "start": 815.04,
+      "duration": 3.239,
+      "text": "an option to choose the deployment"
+    },
+    {
+      "start": 816.18,
+      "duration": 3.54,
+      "text": "policy so we can choose rolling rolling"
+    },
+    {
+      "start": 818.279,
+      "duration": 3.661,
+      "text": "with additional batch immutable traffic"
+    },
+    {
+      "start": 819.72,
+      "duration": 4.619,
+      "text": "splitting or all at once I'm going to"
+    },
+    {
+      "start": 821.94,
+      "duration": 4.5,
+      "text": "choose all at once and"
+    },
+    {
+      "start": 824.339,
+      "duration": 3.481,
+      "text": "then click on deploy option here once"
+    },
+    {
+      "start": 826.44,
+      "duration": 3.78,
+      "text": "you click on deploy option the same"
+    },
+    {
+      "start": 827.82,
+      "duration": 4.92,
+      "text": "python application that we had is going"
+    },
+    {
+      "start": 830.22,
+      "duration": 4.02,
+      "text": "to be updated to another version so"
+    },
+    {
+      "start": 832.74,
+      "duration": 4.38,
+      "text": "let's wait for that to happen you can"
+    },
+    {
+      "start": 834.24,
+      "duration": 5.219,
+      "text": "see the health check is now running and"
+    },
+    {
+      "start": 837.12,
+      "duration": 4.04,
+      "text": "you can find the events here as well so"
+    },
+    {
+      "start": 839.459,
+      "duration": 4.44,
+      "text": "deploying a new version to the instance"
+    },
+    {
+      "start": 841.16,
+      "duration": 4.9,
+      "text": "environment update is starting so you"
+    },
+    {
+      "start": 843.899,
+      "duration": 3.361,
+      "text": "can find all the uh all the events"
+    },
+    {
+      "start": 846.06,
+      "duration": 3.899,
+      "text": "action here"
+    },
+    {
+      "start": 847.26,
+      "duration": 4.74,
+      "text": "we can also refresh it so right now it"
+    },
+    {
+      "start": 849.959,
+      "duration": 4.141,
+      "text": "says it has been done and if I go here"
+    },
+    {
+      "start": 852.0,
+      "duration": 3.959,
+      "text": "open the app you can see an update is"
+    },
+    {
+      "start": 854.1,
+      "duration": 4.38,
+      "text": "present which means earlier it was"
+    },
+    {
+      "start": 855.959,
+      "duration": 4.44,
+      "text": "uh green color now it is red in color so"
+    },
+    {
+      "start": 858.48,
+      "duration": 4.14,
+      "text": "this is how you update the environment"
+    },
+    {
+      "start": 860.399,
+      "duration": 4.62,
+      "text": "version or the application version from"
+    },
+    {
+      "start": 862.62,
+      "duration": 3.899,
+      "text": "version one to version two using all the"
+    },
+    {
+      "start": 865.019,
+      "duration": 3.901,
+      "text": "different deployment policies like like"
+    },
+    {
+      "start": 866.519,
+      "duration": 5.401,
+      "text": "all at once or rolling or rolling with"
+    },
+    {
+      "start": 868.92,
+      "duration": 5.58,
+      "text": "batches immutable and traffic splitting"
+    },
+    {
+      "start": 871.92,
+      "duration": 4.919,
+      "text": "so this is very important for you to"
+    },
+    {
+      "start": 874.5,
+      "duration": 5.1,
+      "text": "understand when you when you want to"
+    },
+    {
+      "start": 876.839,
+      "duration": 5.041,
+      "text": "prepare for your certification exam I"
+    },
+    {
+      "start": 879.6,
+      "duration": 5.099,
+      "text": "hope you have an idea of how to deploy"
+    },
+    {
+      "start": 881.88,
+      "duration": 4.319,
+      "text": "an application on elastic Beanstalk in"
+    },
+    {
+      "start": 884.699,
+      "duration": 3.661,
+      "text": "the next video I am going to show you"
+    },
+    {
+      "start": 886.199,
+      "duration": 4.801,
+      "text": "how to deploy a Docker application where"
+    },
+    {
+      "start": 888.36,
+      "duration": 4.38,
+      "text": "we will be deploying a game using Docker"
+    },
+    {
+      "start": 891.0,
+      "duration": 3.72,
+      "text": "on elastic bean stock so watch this"
+    },
+    {
+      "start": 892.74,
+      "duration": 4.08,
+      "text": "watch the video if you want to learn how"
+    },
+    {
+      "start": 894.72,
+      "duration": 3.54,
+      "text": "to deploy an apple Docker application on"
+    },
+    {
+      "start": 896.82,
+      "duration": 3.6,
+      "text": "elastic Beanstalk if you have any"
+    },
+    {
+      "start": 898.26,
+      "duration": 3.9,
+      "text": "questions any doubt let me know in the"
+    },
+    {
+      "start": 900.42,
+      "duration": 3.3,
+      "text": "comment section all right so I hope you"
+    },
+    {
+      "start": 902.16,
+      "duration": 3.179,
+      "text": "understood the video and you now have"
+    },
+    {
+      "start": 903.72,
+      "duration": 3.72,
+      "text": "understanding of how to deploy an"
+    },
+    {
+      "start": 905.339,
+      "duration": 3.601,
+      "text": "application on elastic bean stock if you"
+    },
+    {
+      "start": 907.44,
+      "duration": 3.66,
+      "text": "understood the video please subscribe to"
+    },
+    {
+      "start": 908.94,
+      "duration": 4.56,
+      "text": "my channel I post videos on AWS cloud"
+    },
+    {
+      "start": 911.1,
+      "duration": 4.5,
+      "text": "and devops also if you want you can"
+    },
+    {
+      "start": 913.5,
+      "duration": 5.16,
+      "text": "connect with me on LinkedIn I all I post"
+    },
+    {
+      "start": 915.6,
+      "duration": 6.479,
+      "text": "a notes related to devops tools like"
+    },
+    {
+      "start": 918.66,
+      "duration": 4.919,
+      "text": "kubernetes and devops other tools so"
+    },
+    {
+      "start": 922.079,
+      "duration": 3.481,
+      "text": "please you can connect with me on"
+    },
+    {
+      "start": 923.579,
+      "duration": 3.241,
+      "text": "LinkedIn yeah that's all what's your"
+    },
+    {
+      "start": 925.56,
+      "duration": 2.88,
+      "text": "next video if you want to see how to"
+    },
+    {
+      "start": 926.82,
+      "duration": 3.42,
+      "text": "deploy a Docker application or elastic"
+    },
+    {
+      "start": 928.44,
+      "duration": 4.04,
+      "text": "be installed thank you and have a good"
+    },
+    {
+      "start": 930.24,
+      "duration": 2.24,
+      "text": "day"
+    }
+  ]
+}

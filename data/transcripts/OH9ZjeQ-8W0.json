@@ -1,0 +1,1491 @@
+{
+  "video": {
+    "id": "OH9ZjeQ-8W0",
+    "title": "What is Scalability and High Availability in the CLOUD Computing? Vertical vs Horizontal Scaling",
+    "url": "https://www.youtube.com/watch?v=OH9ZjeQ-8W0",
+    "duration": 632,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.28,
+      "duration": 4.559,
+      "text": "hey everyone and welcome to this new"
+    },
+    {
+      "start": 2.12,
+      "duration": 5.08,
+      "text": "video in the AWS playlist this video is"
+    },
+    {
+      "start": 4.839,
+      "duration": 4.121,
+      "text": "super important for all cloud and devops"
+    },
+    {
+      "start": 7.2,
+      "duration": 4.8,
+      "text": "Engineers because you get questions"
+    },
+    {
+      "start": 8.96,
+      "duration": 4.48,
+      "text": "about this topic in the interviews a lot"
+    },
+    {
+      "start": 12.0,
+      "duration": 4.199,
+      "text": "you will also get questions on this"
+    },
+    {
+      "start": 13.44,
+      "duration": 4.32,
+      "text": "topic in the AWS certification exams so"
+    },
+    {
+      "start": 16.199,
+      "duration": 3.321,
+      "text": "make sure you follow this video till the"
+    },
+    {
+      "start": 17.76,
+      "duration": 3.64,
+      "text": "end in this video we are going to"
+    },
+    {
+      "start": 19.52,
+      "duration": 3.96,
+      "text": "discuss scalability and high"
+    },
+    {
+      "start": 21.4,
+      "duration": 4.52,
+      "text": "availability so in the previous video we"
+    },
+    {
+      "start": 23.48,
+      "duration": 5.199,
+      "text": "have seen how to create an E2 instance"
+    },
+    {
+      "start": 25.92,
+      "duration": 4.24,
+      "text": "and we have created only one E2 instance"
+    },
+    {
+      "start": 28.679,
+      "duration": 3.4,
+      "text": "what if you have more customers coming"
+    },
+    {
+      "start": 30.16,
+      "duration": 4.12,
+      "text": "to your website and you want to increase"
+    },
+    {
+      "start": 32.079,
+      "duration": 6.041,
+      "text": "the size of your instance you can do it"
+    },
+    {
+      "start": 34.28,
+      "duration": 5.68,
+      "text": "using scalability so what is scalability"
+    },
+    {
+      "start": 38.12,
+      "duration": 4.24,
+      "text": "scalability is a system's ability to"
+    },
+    {
+      "start": 39.96,
+      "duration": 5.36,
+      "text": "handle more users or task by expanding"
+    },
+    {
+      "start": 42.36,
+      "duration": 5.199,
+      "text": "resources like CPU and RAM of your"
+    },
+    {
+      "start": 45.32,
+      "duration": 4.759,
+      "text": "server ensuring it continues to run"
+    },
+    {
+      "start": 47.559,
+      "duration": 4.8,
+      "text": "smoothly as the demand grows as traffic"
+    },
+    {
+      "start": 50.079,
+      "duration": 5.28,
+      "text": "goes so scalability means increasing the"
+    },
+    {
+      "start": 52.359,
+      "duration": 5.121,
+      "text": "server capacity to handle more traffic"
+    },
+    {
+      "start": 55.359,
+      "duration": 4.321,
+      "text": "now scalability are of two type vertical"
+    },
+    {
+      "start": 57.48,
+      "duration": 3.8,
+      "text": "scaling and horizontal scaling I will be"
+    },
+    {
+      "start": 59.68,
+      "duration": 4.559,
+      "text": "explain exping you both these scaling"
+    },
+    {
+      "start": 61.28,
+      "duration": 5.4,
+      "text": "with an example so what is the vertical"
+    },
+    {
+      "start": 64.239,
+      "duration": 4.481,
+      "text": "scaling consider an example where in a"
+    },
+    {
+      "start": 66.68,
+      "duration": 4.2,
+      "text": "company there are two type ofs engineer"
+    },
+    {
+      "start": 68.72,
+      "duration": 4.36,
+      "text": "one is a junior devops engineer and here"
+    },
+    {
+      "start": 70.88,
+      "duration": 3.76,
+      "text": "we have a senior devops engineer Junior"
+    },
+    {
+      "start": 73.08,
+      "duration": 3.56,
+      "text": "devops engineer can complete two"
+    },
+    {
+      "start": 74.64,
+      "duration": 3.88,
+      "text": "projects in a day whereas senior devops"
+    },
+    {
+      "start": 76.64,
+      "duration": 4.2,
+      "text": "engineer can complete four projects in a"
+    },
+    {
+      "start": 78.52,
+      "duration": 3.88,
+      "text": "day so now in the company you have more"
+    },
+    {
+      "start": 80.84,
+      "duration": 3.48,
+      "text": "workload and you want the task to be"
+    },
+    {
+      "start": 82.4,
+      "duration": 3.52,
+      "text": "done very quickly you can replace the"
+    },
+    {
+      "start": 84.32,
+      "duration": 4.2,
+      "text": "junior devops engineer to the senior"
+    },
+    {
+      "start": 85.92,
+      "duration": 4.0,
+      "text": "devops engineer who can do more task so"
+    },
+    {
+      "start": 88.52,
+      "duration": 3.0,
+      "text": "vertical scaling means increas"
+    },
+    {
+      "start": 89.92,
+      "duration": 3.32,
+      "text": "increasing the size here we are"
+    },
+    {
+      "start": 91.52,
+      "duration": 4.04,
+      "text": "increasing the size from Junior devops"
+    },
+    {
+      "start": 93.24,
+      "duration": 4.64,
+      "text": "engineer to senior devops engineer now"
+    },
+    {
+      "start": 95.56,
+      "duration": 4.559,
+      "text": "talking this in terms of AWS Cloud if"
+    },
+    {
+      "start": 97.88,
+      "duration": 5.08,
+      "text": "you are using a ec2 instance of T2 micro"
+    },
+    {
+      "start": 100.119,
+      "duration": 5.6,
+      "text": "which consist of 1 vcpu and 1 GB Ram you"
+    },
+    {
+      "start": 102.96,
+      "duration": 5.92,
+      "text": "can increase the size from T2 micro to"
+    },
+    {
+      "start": 105.719,
+      "duration": 5.68,
+      "text": "M5 large which is having two vcpus and 8"
+    },
+    {
+      "start": 108.88,
+      "duration": 4.32,
+      "text": "GB Ram so this is what vertical scaling"
+    },
+    {
+      "start": 111.399,
+      "duration": 4.64,
+      "text": "means let me quickly show you how you"
+    },
+    {
+      "start": 113.2,
+      "duration": 4.519,
+      "text": "can vertically scale your instance okay"
+    },
+    {
+      "start": 116.039,
+      "duration": 3.281,
+      "text": "so I'm here in the ec2 instance"
+    },
+    {
+      "start": 117.719,
+      "duration": 4.4,
+      "text": "dashboard and you can see this is my"
+    },
+    {
+      "start": 119.32,
+      "duration": 5.04,
+      "text": "instance which is a T2 micro instance"
+    },
+    {
+      "start": 122.119,
+      "duration": 4.161,
+      "text": "running my website let's say now the"
+    },
+    {
+      "start": 124.36,
+      "duration": 4.0,
+      "text": "website has more traffic millions of"
+    },
+    {
+      "start": 126.28,
+      "duration": 3.959,
+      "text": "traffic coming in T2 micro is not enough"
+    },
+    {
+      "start": 128.36,
+      "duration": 4.12,
+      "text": "I want to scale up so I will be scaling"
+    },
+    {
+      "start": 130.239,
+      "duration": 4.561,
+      "text": "up from T to micro which is just a one"
+    },
+    {
+      "start": 132.48,
+      "duration": 3.92,
+      "text": "CPU to maybe something bigger instance"
+    },
+    {
+      "start": 134.8,
+      "duration": 3.6,
+      "text": "to vertically scale an instance you need"
+    },
+    {
+      "start": 136.4,
+      "duration": 3.52,
+      "text": "to first stop it let me show you so I'm"
+    },
+    {
+      "start": 138.4,
+      "duration": 3.36,
+      "text": "going to click on actions click on"
+    },
+    {
+      "start": 139.92,
+      "duration": 3.679,
+      "text": "instance settings and then when I click"
+    },
+    {
+      "start": 141.76,
+      "duration": 3.96,
+      "text": "on change instance type you cannot"
+    },
+    {
+      "start": 143.599,
+      "duration": 4.121,
+      "text": "change your instance type unless the"
+    },
+    {
+      "start": 145.72,
+      "duration": 4.28,
+      "text": "instance is stopped so I'm going to stop"
+    },
+    {
+      "start": 147.72,
+      "duration": 3.68,
+      "text": "this instance first"
+    },
+    {
+      "start": 150.0,
+      "duration": 3.84,
+      "text": "once it is stopped then I can change the"
+    },
+    {
+      "start": 151.4,
+      "duration": 4.8,
+      "text": "instance type from T to micro to maybe"
+    },
+    {
+      "start": 153.84,
+      "duration": 4.679,
+      "text": "T2 large T2 2x large or something which"
+    },
+    {
+      "start": 156.2,
+      "duration": 5.039,
+      "text": "has more CPU more RAM that could handle"
+    },
+    {
+      "start": 158.519,
+      "duration": 4.401,
+      "text": "the traffic coming into my website so"
+    },
+    {
+      "start": 161.239,
+      "duration": 4.241,
+      "text": "you can find all the different instance"
+    },
+    {
+      "start": 162.92,
+      "duration": 4.12,
+      "text": "types in this section so you can find"
+    },
+    {
+      "start": 165.48,
+      "duration": 3.6,
+      "text": "instance types and also know how much"
+    },
+    {
+      "start": 167.04,
+      "duration": 4.32,
+      "text": "CPU and RAM are given for every instance"
+    },
+    {
+      "start": 169.08,
+      "duration": 4.68,
+      "text": "type so right now our instance is"
+    },
+    {
+      "start": 171.36,
+      "duration": 5.08,
+      "text": "running T2 micro you can see T2 micro"
+    },
+    {
+      "start": 173.76,
+      "duration": 4.88,
+      "text": "here which consists of one vcpu one GB"
+    },
+    {
+      "start": 176.44,
+      "duration": 4.32,
+      "text": "memory now I can vertically scale my"
+    },
+    {
+      "start": 178.64,
+      "duration": 5.159,
+      "text": "instance to maybe like t2x large which"
+    },
+    {
+      "start": 180.76,
+      "duration": 5.399,
+      "text": "has four CPUs and 16 GP of memory or"
+    },
+    {
+      "start": 183.799,
+      "duration": 6.481,
+      "text": "maybe if I want more I can go with t 32x"
+    },
+    {
+      "start": 186.159,
+      "duration": 5.72,
+      "text": "large which has 8 V CPUs 13 GB of RAM so"
+    },
+    {
+      "start": 190.28,
+      "duration": 3.48,
+      "text": "I can scale up anything I want but"
+    },
+    {
+      "start": 191.879,
+      "duration": 4.36,
+      "text": "remember when you scale up you also pay"
+    },
+    {
+      "start": 193.76,
+      "duration": 5.0,
+      "text": "more because you're using more of AWS"
+    },
+    {
+      "start": 196.239,
+      "duration": 4.321,
+      "text": "resources so now the instance should be"
+    },
+    {
+      "start": 198.76,
+      "duration": 4.16,
+      "text": "in stop State you can see it is in stop"
+    },
+    {
+      "start": 200.56,
+      "duration": 4.28,
+      "text": "state I'm going to click on actions and"
+    },
+    {
+      "start": 202.92,
+      "duration": 4.599,
+      "text": "click on instance settings click on"
+    },
+    {
+      "start": 204.84,
+      "duration": 4.72,
+      "text": "change instance type from T to micro I"
+    },
+    {
+      "start": 207.519,
+      "duration": 4.0,
+      "text": "can change this instance to any I can"
+    },
+    {
+      "start": 209.56,
+      "duration": 4.08,
+      "text": "either vertically scale up or vertically"
+    },
+    {
+      "start": 211.519,
+      "duration": 5.401,
+      "text": "scale down I can make it from T2 micro"
+    },
+    {
+      "start": 213.64,
+      "duration": 7.519,
+      "text": "to T2 Nano or T2 small but I'm not going"
+    },
+    {
+      "start": 216.92,
+      "duration": 6.679,
+      "text": "to do that now I'm going to make it T2 x"
+    },
+    {
+      "start": 221.159,
+      "duration": 4.881,
+      "text": "large which"
+    },
+    {
+      "start": 223.599,
+      "duration": 4.92,
+      "text": "is which is this one here having four"
+    },
+    {
+      "start": 226.04,
+      "duration": 4.08,
+      "text": "vcpus and 16 GP of ram once you have"
+    },
+    {
+      "start": 228.519,
+      "duration": 3.681,
+      "text": "selected the right instance type click"
+    },
+    {
+      "start": 230.12,
+      "duration": 5.039,
+      "text": "on change and this will now change your"
+    },
+    {
+      "start": 232.2,
+      "duration": 4.72,
+      "text": "instance type from T to micro to t2x"
+    },
+    {
+      "start": 235.159,
+      "duration": 3.8,
+      "text": "slge you can see the new instance type"
+    },
+    {
+      "start": 236.92,
+      "duration": 3.72,
+      "text": "is here now when you want to make it"
+    },
+    {
+      "start": 238.959,
+      "duration": 3.521,
+      "text": "work again you can start the instance"
+    },
+    {
+      "start": 240.64,
+      "duration": 4.239,
+      "text": "now your instance will start working"
+    },
+    {
+      "start": 242.48,
+      "duration": 5.88,
+      "text": "with more capacity more CPU and more"
+    },
+    {
+      "start": 244.879,
+      "duration": 5.961,
+      "text": "memory so when I refresh I can go ahead"
+    },
+    {
+      "start": 248.36,
+      "duration": 3.959,
+      "text": "and start using my website and my"
+    },
+    {
+      "start": 250.84,
+      "duration": 3.72,
+      "text": "website should be able to handle the"
+    },
+    {
+      "start": 252.319,
+      "duration": 4.32,
+      "text": "traffic coming in so this is how you"
+    },
+    {
+      "start": 254.56,
+      "duration": 5.199,
+      "text": "scale up an instance from T2 micro to"
+    },
+    {
+      "start": 256.639,
+      "duration": 4.961,
+      "text": "t2x large which is vertical scaling also"
+    },
+    {
+      "start": 259.759,
+      "duration": 3.72,
+      "text": "notice this instance does not have an"
+    },
+    {
+      "start": 261.6,
+      "duration": 3.879,
+      "text": "elastic IP address so now that I have"
+    },
+    {
+      "start": 263.479,
+      "duration": 4.841,
+      "text": "started the instance after stopping it"
+    },
+    {
+      "start": 265.479,
+      "duration": 6.28,
+      "text": "the IP address is changed it's 52 now"
+    },
+    {
+      "start": 268.32,
+      "duration": 5.2,
+      "text": "but earlier it was 18233 something so"
+    },
+    {
+      "start": 271.759,
+      "duration": 4.041,
+      "text": "I've explained you this in the previous"
+    },
+    {
+      "start": 273.52,
+      "duration": 4.28,
+      "text": "ec2 instance video make sure to check it"
+    },
+    {
+      "start": 275.8,
+      "duration": 4.48,
+      "text": "out let's go and move on with the next"
+    },
+    {
+      "start": 277.8,
+      "duration": 4.36,
+      "text": "scaling option the next scaling type is"
+    },
+    {
+      "start": 280.28,
+      "duration": 3.52,
+      "text": "horizontal scaling horizontal scaling"
+    },
+    {
+      "start": 282.16,
+      "duration": 3.8,
+      "text": "means increasing the number of servers"
+    },
+    {
+      "start": 283.8,
+      "duration": 4.0,
+      "text": "to handle the increased load considering"
+    },
+    {
+      "start": 285.96,
+      "duration": 4.32,
+      "text": "the same example we know a junior devops"
+    },
+    {
+      "start": 287.8,
+      "duration": 4.2,
+      "text": "engineer can do two projects in one day"
+    },
+    {
+      "start": 290.28,
+      "duration": 3.28,
+      "text": "if you want to do four projects we can"
+    },
+    {
+      "start": 292.0,
+      "duration": 3.08,
+      "text": "add another Junior devops engineer if"
+    },
+    {
+      "start": 293.56,
+      "duration": 3.4,
+      "text": "you want to do six projects we can add"
+    },
+    {
+      "start": 295.08,
+      "duration": 3.52,
+      "text": "another one if you want to do eight"
+    },
+    {
+      "start": 296.96,
+      "duration": 3.16,
+      "text": "projects we can add another one and if"
+    },
+    {
+      "start": 298.6,
+      "duration": 3.08,
+      "text": "you want to do 10 projects we can add"
+    },
+    {
+      "start": 300.12,
+      "duration": 3.24,
+      "text": "another one so we are adding Junior"
+    },
+    {
+      "start": 301.68,
+      "duration": 3.92,
+      "text": "devops Engineers to handle the project"
+    },
+    {
+      "start": 303.36,
+      "duration": 4.399,
+      "text": "load coming in similarly if you have"
+    },
+    {
+      "start": 305.6,
+      "duration": 4.2,
+      "text": "more traffic coming inside your instance"
+    },
+    {
+      "start": 307.759,
+      "duration": 4.241,
+      "text": "you can add more number of servers to"
+    },
+    {
+      "start": 309.8,
+      "duration": 4.64,
+      "text": "handle that traffic so instead of having"
+    },
+    {
+      "start": 312.0,
+      "duration": 4.16,
+      "text": "one T2 micro you can have two T2 micro"
+    },
+    {
+      "start": 314.44,
+      "duration": 4.96,
+      "text": "or maybe three T2 micro to handle the"
+    },
+    {
+      "start": 316.16,
+      "duration": 5.72,
+      "text": "load coming in so we can do this by"
+    },
+    {
+      "start": 319.4,
+      "duration": 5.16,
+      "text": "creating similar instances multiple"
+    },
+    {
+      "start": 321.88,
+      "duration": 4.72,
+      "text": "times so we can have 4 T2 micros serving"
+    },
+    {
+      "start": 324.56,
+      "duration": 3.68,
+      "text": "the same website so that when the"
+    },
+    {
+      "start": 326.6,
+      "duration": 4.12,
+      "text": "traffic is increased it can be"
+    },
+    {
+      "start": 328.24,
+      "duration": 4.519,
+      "text": "distributed among different servers"
+    },
+    {
+      "start": 330.72,
+      "duration": 5.0,
+      "text": "backend and you can distribute traffic"
+    },
+    {
+      "start": 332.759,
+      "duration": 4.761,
+      "text": "using a load balancer so when you have"
+    },
+    {
+      "start": 335.72,
+      "duration": 3.759,
+      "text": "horizontal scaling you will be creating"
+    },
+    {
+      "start": 337.52,
+      "duration": 3.84,
+      "text": "new instances automatically using"
+    },
+    {
+      "start": 339.479,
+      "duration": 3.641,
+      "text": "autoscaling group and when these"
+    },
+    {
+      "start": 341.36,
+      "duration": 4.119,
+      "text": "instances are created they will have"
+    },
+    {
+      "start": 343.12,
+      "duration": 4.359,
+      "text": "their own IP addresses and you cannot"
+    },
+    {
+      "start": 345.479,
+      "duration": 4.28,
+      "text": "connect a single domain to multiple IP"
+    },
+    {
+      "start": 347.479,
+      "duration": 4.84,
+      "text": "address so you need a single endpoint"
+    },
+    {
+      "start": 349.759,
+      "duration": 4.321,
+      "text": "such as load balancer so when you have"
+    },
+    {
+      "start": 352.319,
+      "duration": 3.561,
+      "text": "multiple instances it will usually be"
+    },
+    {
+      "start": 354.08,
+      "duration": 3.48,
+      "text": "behind a load balancer and it will"
+    },
+    {
+      "start": 355.88,
+      "duration": 3.48,
+      "text": "usually be created using Autos scaling"
+    },
+    {
+      "start": 357.56,
+      "duration": 4.0,
+      "text": "group so you need to understand how to"
+    },
+    {
+      "start": 359.36,
+      "duration": 3.6,
+      "text": "create a load balancer and how do you"
+    },
+    {
+      "start": 361.56,
+      "duration": 3.6,
+      "text": "create Autos scaling group that will"
+    },
+    {
+      "start": 362.96,
+      "duration": 4.239,
+      "text": "automatically create servers based on"
+    },
+    {
+      "start": 365.16,
+      "duration": 3.28,
+      "text": "the increased traffic I have explained"
+    },
+    {
+      "start": 367.199,
+      "duration": 3.241,
+      "text": "how to create load balancer and"
+    },
+    {
+      "start": 368.44,
+      "duration": 3.479,
+      "text": "autoscaling group in this particular"
+    },
+    {
+      "start": 370.44,
+      "duration": 3.319,
+      "text": "video the link is going to be in"
+    },
+    {
+      "start": 371.919,
+      "duration": 3.481,
+      "text": "description as a devops engineer you"
+    },
+    {
+      "start": 373.759,
+      "duration": 3.801,
+      "text": "need to understand what is a load"
+    },
+    {
+      "start": 375.4,
+      "duration": 4.0,
+      "text": "balancer how do you create it what is"
+    },
+    {
+      "start": 377.56,
+      "duration": 4.199,
+      "text": "autoscaling group how do you create it"
+    },
+    {
+      "start": 379.4,
+      "duration": 4.519,
+      "text": "and connect them together load balances"
+    },
+    {
+      "start": 381.759,
+      "duration": 4.88,
+      "text": "are also used in kubernetes which is"
+    },
+    {
+      "start": 383.919,
+      "duration": 4.641,
+      "text": "something Advanced once you learn AWS"
+    },
+    {
+      "start": 386.639,
+      "duration": 3.84,
+      "text": "properly you can also learn kubernetes"
+    },
+    {
+      "start": 388.56,
+      "duration": 3.6,
+      "text": "later on but this is the video which"
+    },
+    {
+      "start": 390.479,
+      "duration": 3.761,
+      "text": "will teach you how to create load"
+    },
+    {
+      "start": 392.16,
+      "duration": 4.319,
+      "text": "balancers and Security Group the link is"
+    },
+    {
+      "start": 394.24,
+      "duration": 4.48,
+      "text": "in description so we have understood"
+    },
+    {
+      "start": 396.479,
+      "duration": 4.84,
+      "text": "what is horizontal scaling horizontal"
+    },
+    {
+      "start": 398.72,
+      "duration": 5.24,
+      "text": "scaling means adding more servers so"
+    },
+    {
+      "start": 401.319,
+      "duration": 4.681,
+      "text": "that it can have more CPU more RAM to"
+    },
+    {
+      "start": 403.96,
+      "duration": 3.799,
+      "text": "handle the traffic coming in next"
+    },
+    {
+      "start": 406.0,
+      "duration": 3.72,
+      "text": "important topic that we need to know is"
+    },
+    {
+      "start": 407.759,
+      "duration": 4.0,
+      "text": "high availability every company wants"
+    },
+    {
+      "start": 409.72,
+      "duration": 3.84,
+      "text": "their application to be highly available"
+    },
+    {
+      "start": 411.759,
+      "duration": 3.961,
+      "text": "and this is why all Cloud engineers and"
+    },
+    {
+      "start": 413.56,
+      "duration": 4.319,
+      "text": "devops Engineers needs to understand"
+    },
+    {
+      "start": 415.72,
+      "duration": 4.039,
+      "text": "what is high availability High"
+    },
+    {
+      "start": 417.879,
+      "duration": 3.72,
+      "text": "availability means a system is designed"
+    },
+    {
+      "start": 419.759,
+      "duration": 3.72,
+      "text": "to stay online and working even if"
+    },
+    {
+      "start": 421.599,
+      "duration": 3.401,
+      "text": "something goes wrong your website"
+    },
+    {
+      "start": 423.479,
+      "duration": 3.681,
+      "text": "application should always be available"
+    },
+    {
+      "start": 425.0,
+      "duration": 4.84,
+      "text": "for the users for the customers if they"
+    },
+    {
+      "start": 427.16,
+      "duration": 5.0,
+      "text": "are not it can cause you business loss"
+    },
+    {
+      "start": 429.84,
+      "duration": 3.96,
+      "text": "or it can cause customer dissatisfaction"
+    },
+    {
+      "start": 432.16,
+      "duration": 4.52,
+      "text": "so make sure your applications or"
+    },
+    {
+      "start": 433.8,
+      "duration": 4.88,
+      "text": "systems are always available to explain"
+    },
+    {
+      "start": 436.68,
+      "duration": 3.68,
+      "text": "High availability with a diagram let's"
+    },
+    {
+      "start": 438.68,
+      "duration": 3.4,
+      "text": "say you are a company offering services"
+    },
+    {
+      "start": 440.36,
+      "duration": 4.119,
+      "text": "to your customers and you have two"
+    },
+    {
+      "start": 442.08,
+      "duration": 5.16,
+      "text": "offices one office in New York second"
+    },
+    {
+      "start": 444.479,
+      "duration": 5.16,
+      "text": "one in San Francisco due to some issues"
+    },
+    {
+      "start": 447.24,
+      "duration": 4.76,
+      "text": "maybe fire or earthquake your New York"
+    },
+    {
+      "start": 449.639,
+      "duration": 4.321,
+      "text": "office is not operable or you cannot or"
+    },
+    {
+      "start": 452.0,
+      "duration": 4.199,
+      "text": "customers cannot contact to you on yor"
+    },
+    {
+      "start": 453.96,
+      "duration": 4.72,
+      "text": "office they can still contact to you on"
+    },
+    {
+      "start": 456.199,
+      "duration": 4.4,
+      "text": "San Francisco so high availability means"
+    },
+    {
+      "start": 458.68,
+      "duration": 4.4,
+      "text": "running your application in at least two"
+    },
+    {
+      "start": 460.599,
+      "duration": 4.761,
+      "text": "data centers or two A's or maybe"
+    },
+    {
+      "start": 463.08,
+      "duration": 4.64,
+      "text": "multiple regions so when launching your"
+    },
+    {
+      "start": 465.36,
+      "duration": 4.959,
+      "text": "servers you can create your first server"
+    },
+    {
+      "start": 467.72,
+      "duration": 5.479,
+      "text": "in Us East 1A and the second one in Us"
+    },
+    {
+      "start": 470.319,
+      "duration": 4.6,
+      "text": "East 1B so that even if Us East 1A is"
+    },
+    {
+      "start": 473.199,
+      "duration": 4.201,
+      "text": "down you can have your application"
+    },
+    {
+      "start": 474.919,
+      "duration": 5.161,
+      "text": "running on us East 1B this is what you"
+    },
+    {
+      "start": 477.4,
+      "duration": 4.199,
+      "text": "call as multi-az deployment and when you"
+    },
+    {
+      "start": 480.08,
+      "duration": 2.839,
+      "text": "have applications deployed in multiple"
+    },
+    {
+      "start": 481.599,
+      "duration": 3.16,
+      "text": "region it is called as multi- region"
+    },
+    {
+      "start": 482.919,
+      "duration": 4.081,
+      "text": "deployment to give you an example this"
+    },
+    {
+      "start": 484.759,
+      "duration": 4.241,
+      "text": "is a multi-az deployment where you have"
+    },
+    {
+      "start": 487.0,
+      "duration": 3.879,
+      "text": "RDS databases deployed in three"
+    },
+    {
+      "start": 489.0,
+      "duration": 4.8,
+      "text": "different AES so you have Master"
+    },
+    {
+      "start": 490.879,
+      "duration": 5.081,
+      "text": "database deployed in availability Zone a"
+    },
+    {
+      "start": 493.8,
+      "duration": 4.359,
+      "text": "the read replica in availability Zone B"
+    },
+    {
+      "start": 495.96,
+      "duration": 4.199,
+      "text": "and re replicas also in availability"
+    },
+    {
+      "start": 498.159,
+      "duration": 4.44,
+      "text": "Zone C so you have applications deployed"
+    },
+    {
+      "start": 500.159,
+      "duration": 5.361,
+      "text": "in Us East one North Virginia region"
+    },
+    {
+      "start": 502.599,
+      "duration": 5.44,
+      "text": "also in US West 2 and also in US West"
+    },
+    {
+      "start": 505.52,
+      "duration": 3.679,
+      "text": "one so if the entire region is down you"
+    },
+    {
+      "start": 508.039,
+      "duration": 3.72,
+      "text": "will still have your applications"
+    },
+    {
+      "start": 509.199,
+      "duration": 3.72,
+      "text": "running on USBS 2 if this region is down"
+    },
+    {
+      "start": 511.759,
+      "duration": 3.801,
+      "text": "you will still have your applications"
+    },
+    {
+      "start": 512.919,
+      "duration": 5.401,
+      "text": "running on USBS one so that if one of"
+    },
+    {
+      "start": 515.56,
+      "duration": 4.719,
+      "text": "this database is down you can still use"
+    },
+    {
+      "start": 518.32,
+      "duration": 3.959,
+      "text": "this as your database which is a standby"
+    },
+    {
+      "start": 520.279,
+      "duration": 4.0,
+      "text": "instance so this is how you can make"
+    },
+    {
+      "start": 522.279,
+      "duration": 4.041,
+      "text": "sure your applications databases are"
+    },
+    {
+      "start": 524.279,
+      "duration": 4.24,
+      "text": "highly available when you deploy them in"
+    },
+    {
+      "start": 526.32,
+      "duration": 5.28,
+      "text": "more than one data center or more than"
+    },
+    {
+      "start": 528.519,
+      "duration": 4.561,
+      "text": "one a so this is a multi- a deployment"
+    },
+    {
+      "start": 531.6,
+      "duration": 3.239,
+      "text": "and this is what you call as multi-"
+    },
+    {
+      "start": 533.08,
+      "duration": 3.08,
+      "text": "region deployment where you're deploying"
+    },
+    {
+      "start": 534.839,
+      "duration": 3.401,
+      "text": "your applications in more than one"
+    },
+    {
+      "start": 536.16,
+      "duration": 3.6,
+      "text": "region companies who have their"
+    },
+    {
+      "start": 538.24,
+      "duration": 3.44,
+      "text": "important applications of production"
+    },
+    {
+      "start": 539.76,
+      "duration": 4.28,
+      "text": "application they deploy it in more than"
+    },
+    {
+      "start": 541.68,
+      "duration": 4.52,
+      "text": "one region so that their customer should"
+    },
+    {
+      "start": 544.04,
+      "duration": 3.52,
+      "text": "always access their application no"
+    },
+    {
+      "start": 546.2,
+      "duration": 3.12,
+      "text": "matter what so you can achieve"
+    },
+    {
+      "start": 547.56,
+      "duration": 3.44,
+      "text": "scalability and high availability by"
+    },
+    {
+      "start": 549.32,
+      "duration": 4.8,
+      "text": "deploying your applications or your"
+    },
+    {
+      "start": 551.0,
+      "duration": 5.16,
+      "text": "servers in multiple ACS and also talking"
+    },
+    {
+      "start": 554.12,
+      "duration": 3.56,
+      "text": "to them through a single load balancer"
+    },
+    {
+      "start": 556.16,
+      "duration": 3.4,
+      "text": "which you can learn in this particular"
+    },
+    {
+      "start": 557.68,
+      "duration": 3.64,
+      "text": "video so the link is in description make"
+    },
+    {
+      "start": 559.56,
+      "duration": 3.279,
+      "text": "sure you follow this video and create"
+    },
+    {
+      "start": 561.32,
+      "duration": 3.959,
+      "text": "your own load balancer and Autos scaling"
+    },
+    {
+      "start": 562.839,
+      "duration": 4.0,
+      "text": "group now before we end this video it's"
+    },
+    {
+      "start": 565.279,
+      "duration": 3.481,
+      "text": "time for a quiz to make sure you"
+    },
+    {
+      "start": 566.839,
+      "duration": 3.841,
+      "text": "understood what is scalability and high"
+    },
+    {
+      "start": 568.76,
+      "duration": 3.88,
+      "text": "availability so the first question is"
+    },
+    {
+      "start": 570.68,
+      "duration": 4.24,
+      "text": "which method is commonly used to achieve"
+    },
+    {
+      "start": 572.64,
+      "duration": 4.4,
+      "text": "High availability in Cloud environment"
+    },
+    {
+      "start": 574.92,
+      "duration": 4.24,
+      "text": "the options are using a single powerful"
+    },
+    {
+      "start": 577.04,
+      "duration": 4.76,
+      "text": "server deploying Services across"
+    },
+    {
+      "start": 579.16,
+      "duration": 4.16,
+      "text": "multiple regions or zones or frequently"
+    },
+    {
+      "start": 581.8,
+      "duration": 3.56,
+      "text": "restarting the systems to prevent"
+    },
+    {
+      "start": 583.32,
+      "duration": 3.8,
+      "text": "failures which of these options will"
+    },
+    {
+      "start": 585.36,
+      "duration": 3.599,
+      "text": "make sure your applications are highly"
+    },
+    {
+      "start": 587.12,
+      "duration": 3.719,
+      "text": "available the next question is on"
+    },
+    {
+      "start": 588.959,
+      "duration": 3.721,
+      "text": "scalability so which scenario would"
+    },
+    {
+      "start": 590.839,
+      "duration": 3.721,
+      "text": "require vertical scaling instead of"
+    },
+    {
+      "start": 592.68,
+      "duration": 3.8,
+      "text": "horizontal scaling when will you be"
+    },
+    {
+      "start": 594.56,
+      "duration": 4.279,
+      "text": "using vertical scaling rather than"
+    },
+    {
+      "start": 596.48,
+      "duration": 4.44,
+      "text": "horizontal scaling is it when you want a"
+    },
+    {
+      "start": 598.839,
+      "duration": 4.481,
+      "text": "single application needing more CPU and"
+    },
+    {
+      "start": 600.92,
+      "duration": 5.0,
+      "text": "Ram or a website needing to handle more"
+    },
+    {
+      "start": 603.32,
+      "duration": 5.28,
+      "text": "concurent users or a database requiring"
+    },
+    {
+      "start": 605.92,
+      "duration": 4.56,
+      "text": "more storage but no change in CPU or Ram"
+    },
+    {
+      "start": 608.6,
+      "duration": 3.359,
+      "text": "if you are a good devops engineer and"
+    },
+    {
+      "start": 610.48,
+      "duration": 3.359,
+      "text": "you have understood what scalability and"
+    },
+    {
+      "start": 611.959,
+      "duration": 3.88,
+      "text": "high availability is you should be able"
+    },
+    {
+      "start": 613.839,
+      "duration": 3.68,
+      "text": "to answer this question this is also a"
+    },
+    {
+      "start": 615.839,
+      "duration": 3.721,
+      "text": "question that you might get in your"
+    },
+    {
+      "start": 617.519,
+      "duration": 4.281,
+      "text": "interview so put the answer in the"
+    },
+    {
+      "start": 619.56,
+      "duration": 4.24,
+      "text": "comment section also if you want me to"
+    },
+    {
+      "start": 621.8,
+      "duration": 4.12,
+      "text": "create a project of setting up WordPress"
+    },
+    {
+      "start": 623.8,
+      "duration": 4.0,
+      "text": "website on ec2 instance let me know in"
+    },
+    {
+      "start": 625.92,
+      "duration": 3.919,
+      "text": "the comment section and see you in the"
+    },
+    {
+      "start": 627.8,
+      "duration": 5.24,
+      "text": "next video bye thanks Thank you And"
+    },
+    {
+      "start": 629.839,
+      "duration": 3.201,
+      "text": "subscribe to Cloud champ"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "video": {
+    "id": "4PSHheukIW0",
+    "title": "Docker Container Services in AWS ☁️ #docker #devops #aws",
+    "url": "https://www.youtube.com/watch?v=4PSHheukIW0",
+    "duration": null,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.5,
+      "duration": 4.02,
+      "text": "Docker services in AWS to deploy Docker"
+    },
+    {
+      "start": 3.26,
+      "duration": 2.999,
+      "text": "container or a full-fledged"
+    },
+    {
+      "start": 4.52,
+      "duration": 3.66,
+      "text": "containerized application AWS office"
+    },
+    {
+      "start": 6.259,
+      "duration": 4.201,
+      "text": "with variety of services number one is"
+    },
+    {
+      "start": 8.18,
+      "duration": 4.2,
+      "text": "Amazon ECS or elastic container service"
+    },
+    {
+      "start": 10.46,
+      "duration": 3.54,
+      "text": "ECS is a fully managed container"
+    },
+    {
+      "start": 12.38,
+      "duration": 3.6,
+      "text": "orchestration service which makes it"
+    },
+    {
+      "start": 14.0,
+      "duration": 3.779,
+      "text": "easy to run and deploy Docker containers"
+    },
+    {
+      "start": 15.98,
+      "duration": 3.12,
+      "text": "on the cloud ECS provides you with two"
+    },
+    {
+      "start": 17.779,
+      "duration": 3.301,
+      "text": "different launch type easy to launch"
+    },
+    {
+      "start": 19.1,
+      "duration": 3.42,
+      "text": "type and Target launch type using ec2"
+    },
+    {
+      "start": 21.08,
+      "duration": 4.14,
+      "text": "you can deploy your Docker containers on"
+    },
+    {
+      "start": 22.52,
+      "duration": 4.44,
+      "text": "AWS ec2 instances whereas using fargate"
+    },
+    {
+      "start": 25.22,
+      "duration": 3.54,
+      "text": "you can deploy your Docker containers in"
+    },
+    {
+      "start": 26.96,
+      "duration": 4.26,
+      "text": "serverless fashion without managing any"
+    },
+    {
+      "start": 28.76,
+      "duration": 4.319,
+      "text": "servers number two is Amazon ECR or"
+    },
+    {
+      "start": 31.22,
+      "duration": 4.38,
+      "text": "elastic container registry which is"
+    },
+    {
+      "start": 33.079,
+      "duration": 4.681,
+      "text": "darker Hub but for AWS using Amazon ECR"
+    },
+    {
+      "start": 35.6,
+      "duration": 4.68,
+      "text": "you can easily store manage and deploy"
+    },
+    {
+      "start": 37.76,
+      "duration": 4.02,
+      "text": "Docker images in the cloud ECR also"
+    },
+    {
+      "start": 40.28,
+      "duration": 3.48,
+      "text": "integrates with ECS which makes"
+    },
+    {
+      "start": 41.78,
+      "duration": 4.68,
+      "text": "deployment of containerized applications"
+    },
+    {
+      "start": 43.76,
+      "duration": 4.5,
+      "text": "very easy number three is Amazon eks or"
+    },
+    {
+      "start": 46.46,
+      "duration": 3.66,
+      "text": "elastic kubernetes service which is the"
+    },
+    {
+      "start": 48.26,
+      "duration": 3.42,
+      "text": "manage kubernetes service in AWS that"
+    },
+    {
+      "start": 50.12,
+      "duration": 3.66,
+      "text": "lets you deploy manage and scale your"
+    },
+    {
+      "start": 51.68,
+      "duration": 3.96,
+      "text": "containerized application without any"
+    },
+    {
+      "start": 53.78,
+      "duration": 4.759,
+      "text": "need of installing operating or scaling"
+    },
+    {
+      "start": 55.64,
+      "duration": 2.899,
+      "text": "your kubernetes cluster"
+    }
+  ]
+}

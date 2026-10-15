@@ -1,0 +1,1786 @@
+{
+  "video": {
+    "id": "cQtudMvEYOU",
+    "title": "AI Based Observability Project using Honeycomb MCP server | DevOps Project 2025",
+    "url": "https://www.youtube.com/watch?v=cQtudMvEYOU",
+    "duration": 723,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.0,
+      "text": "Hi everyone. In this video, we are going"
+    },
+    {
+      "start": 2.159,
+      "duration": 4.881,
+      "text": "to be doing a complete observability"
+    },
+    {
+      "start": 4.16,
+      "duration": 5.12,
+      "text": "project on Kubernetes using AI, open"
+    },
+    {
+      "start": 7.04,
+      "duration": 4.24,
+      "text": "telemetry and honeycomb. So"
+    },
+    {
+      "start": 9.28,
+      "duration": 3.6,
+      "text": "observability is a hot topic lately."
+    },
+    {
+      "start": 11.28,
+      "duration": 4.08,
+      "text": "Every other week, there's a major app"
+    },
+    {
+      "start": 12.88,
+      "duration": 5.2,
+      "text": "outage caused due to slow request, API"
+    },
+    {
+      "start": 15.36,
+      "duration": 5.2,
+      "text": "failures or random 500. And that's when"
+    },
+    {
+      "start": 18.08,
+      "duration": 4.88,
+      "text": "entire internet freaks out on Twitter."
+    },
+    {
+      "start": 20.56,
+      "duration": 4.32,
+      "text": "Why? Because modern systems are too"
+    },
+    {
+      "start": 22.96,
+      "duration": 3.84,
+      "text": "complex to debug manually. If you have"
+    },
+    {
+      "start": 24.88,
+      "duration": 3.36,
+      "text": "ever debugged a distributed system, you"
+    },
+    {
+      "start": 26.8,
+      "duration": 3.76,
+      "text": "know the pain. There are too many"
+    },
+    {
+      "start": 28.24,
+      "duration": 4.479,
+      "text": "dashboards, too many metrics, too many"
+    },
+    {
+      "start": 30.56,
+      "duration": 4.64,
+      "text": "logs and too little time. And that's"
+    },
+    {
+      "start": 32.719,
+      "duration": 4.161,
+      "text": "exactly why I am making this video. In"
+    },
+    {
+      "start": 35.2,
+      "duration": 3.28,
+      "text": "this project, we will be building a full"
+    },
+    {
+      "start": 36.88,
+      "duration": 4.16,
+      "text": "observability environment using"
+    },
+    {
+      "start": 38.48,
+      "duration": 5.36,
+      "text": "Kubernetes, Open Telemetry, Honeycomb,"
+    },
+    {
+      "start": 41.04,
+      "duration": 4.48,
+      "text": "and Honeycomb MCP server. Then I will"
+    },
+    {
+      "start": 43.84,
+      "duration": 4.16,
+      "text": "show you how you can literally ask your"
+    },
+    {
+      "start": 45.52,
+      "duration": 4.08,
+      "text": "AI assistant why is my service slow and"
+    },
+    {
+      "start": 48.0,
+      "duration": 3.6,
+      "text": "it will pull telemetry data from"
+    },
+    {
+      "start": 49.6,
+      "duration": 4.4,
+      "text": "honeycomb and give it to you. This is"
+    },
+    {
+      "start": 51.6,
+      "duration": 4.24,
+      "text": "future of debugging. Let's get into it."
+    },
+    {
+      "start": 54.0,
+      "duration": 4.0,
+      "text": "All right. So I'm here on my computer"
+    },
+    {
+      "start": 55.84,
+      "duration": 3.76,
+      "text": "screen and before I type any command,"
+    },
+    {
+      "start": 58.0,
+      "duration": 3.12,
+      "text": "let me tell you everything that we are"
+    },
+    {
+      "start": 59.6,
+      "duration": 3.599,
+      "text": "going to do in this observability"
+    },
+    {
+      "start": 61.12,
+      "duration": 4.72,
+      "text": "project. We start by creating a local"
+    },
+    {
+      "start": 63.199,
+      "duration": 4.161,
+      "text": "cubernetes cluster using mini cube. Then"
+    },
+    {
+      "start": 65.84,
+      "duration": 3.44,
+      "text": "on this mini cube cluster, we going to"
+    },
+    {
+      "start": 67.36,
+      "duration": 4.079,
+      "text": "be deploying open telemetry demo"
+    },
+    {
+      "start": 69.28,
+      "duration": 3.76,
+      "text": "application. Next, we also need a"
+    },
+    {
+      "start": 71.439,
+      "duration": 4.081,
+      "text": "honeycomb account. So if you don't have"
+    },
+    {
+      "start": 73.04,
+      "duration": 4.8,
+      "text": "an account, go create it. The link is in"
+    },
+    {
+      "start": 75.52,
+      "duration": 3.84,
+      "text": "description. Once we have our honeycomb"
+    },
+    {
+      "start": 77.84,
+      "duration": 3.68,
+      "text": "account created, we will route all the"
+    },
+    {
+      "start": 79.36,
+      "duration": 4.48,
+      "text": "telemetry data. So all the metrics,"
+    },
+    {
+      "start": 81.52,
+      "duration": 4.239,
+      "text": "logs, traces from this open telemetry"
+    },
+    {
+      "start": 83.84,
+      "duration": 3.919,
+      "text": "application is going to be routed to"
+    },
+    {
+      "start": 85.759,
+      "duration": 3.601,
+      "text": "honeycomb account. After that we are"
+    },
+    {
+      "start": 87.759,
+      "duration": 4.32,
+      "text": "going to be integrating the honeycomb"
+    },
+    {
+      "start": 89.36,
+      "duration": 4.32,
+      "text": "MCP server in VS code. So instead of"
+    },
+    {
+      "start": 92.079,
+      "duration": 3.601,
+      "text": "going through the logs and dashboards"
+    },
+    {
+      "start": 93.68,
+      "duration": 4.799,
+      "text": "inside honeycomb account, we can simply"
+    },
+    {
+      "start": 95.68,
+      "duration": 4.96,
+      "text": "ask the MCP server and for that we need"
+    },
+    {
+      "start": 98.479,
+      "duration": 3.521,
+      "text": "to first authenticate using OOTH. So you"
+    },
+    {
+      "start": 100.64,
+      "duration": 3.36,
+      "text": "need to confirm your username and"
+    },
+    {
+      "start": 102.0,
+      "duration": 3.84,
+      "text": "password of your honeycomb account and"
+    },
+    {
+      "start": 104.0,
+      "duration": 4.64,
+      "text": "finally we will debug our system using"
+    },
+    {
+      "start": 105.84,
+      "duration": 4.48,
+      "text": "natural language. So let's get started."
+    },
+    {
+      "start": 108.64,
+      "duration": 3.439,
+      "text": "All right. So the first step is to"
+    },
+    {
+      "start": 110.32,
+      "duration": 4.88,
+      "text": "create a cubernetes cluster in my local"
+    },
+    {
+      "start": 112.079,
+      "duration": 5.04,
+      "text": "machine using mini cube. Since this open"
+    },
+    {
+      "start": 115.2,
+      "duration": 4.239,
+      "text": "telemetry demo application has too many"
+    },
+    {
+      "start": 117.119,
+      "duration": 4.161,
+      "text": "microservices in it for example"
+    },
+    {
+      "start": 119.439,
+      "duration": 3.68,
+      "text": "accounting service, ad service, card"
+    },
+    {
+      "start": 121.28,
+      "duration": 3.92,
+      "text": "service, checkout, email, front end and"
+    },
+    {
+      "start": 123.119,
+      "duration": 3.841,
+      "text": "so many more. We need to make sure that"
+    },
+    {
+      "start": 125.2,
+      "duration": 3.6,
+      "text": "our cubernetes cluster has enough"
+    },
+    {
+      "start": 126.96,
+      "duration": 4.32,
+      "text": "resources. So I'm going to say mini cube"
+    },
+    {
+      "start": 128.8,
+      "duration": 5.2,
+      "text": "start and also provide CPUs equals to"
+    },
+    {
+      "start": 131.28,
+      "duration": 5.2,
+      "text": "six, memory equals to 1228 and disk size"
+    },
+    {
+      "start": 134.0,
+      "duration": 3.92,
+      "text": "as 40. Now when I run this command, it"
+    },
+    {
+      "start": 136.48,
+      "duration": 3.04,
+      "text": "will start creating a cubernetes"
+    },
+    {
+      "start": 137.92,
+      "duration": 3.36,
+      "text": "cluster. Till the time this is going to"
+    },
+    {
+      "start": 139.52,
+      "duration": 3.28,
+      "text": "be created, let's go and create our"
+    },
+    {
+      "start": 141.28,
+      "duration": 4.0,
+      "text": "honeycomb account. So go to"
+    },
+    {
+      "start": 142.8,
+      "duration": 4.48,
+      "text": "honeycomb.io. Honeycomb is a very"
+    },
+    {
+      "start": 145.28,
+      "duration": 4.08,
+      "text": "popular modern observability platform"
+    },
+    {
+      "start": 147.28,
+      "duration": 3.84,
+      "text": "used to debug distributed application"
+    },
+    {
+      "start": 149.36,
+      "duration": 4.64,
+      "text": "and it is also used by companies like"
+    },
+    {
+      "start": 151.12,
+      "duration": 5.36,
+      "text": "Dualingo, Intercom, Slack, Vanguard and"
+    },
+    {
+      "start": 154.0,
+      "duration": 3.68,
+      "text": "lot more. I already have my account. If"
+    },
+    {
+      "start": 156.48,
+      "duration": 3.36,
+      "text": "you want to create an account, click on"
+    },
+    {
+      "start": 157.68,
+      "duration": 4.08,
+      "text": "this start for free button or also check"
+    },
+    {
+      "start": 159.84,
+      "duration": 3.52,
+      "text": "out the link in the video description."
+    },
+    {
+      "start": 161.76,
+      "duration": 3.28,
+      "text": "So when you click on this, enter your"
+    },
+    {
+      "start": 163.36,
+      "duration": 4.0,
+      "text": "details and this is the page you will"
+    },
+    {
+      "start": 165.04,
+      "duration": 3.6,
+      "text": "see after you have your account created."
+    },
+    {
+      "start": 167.36,
+      "duration": 3.36,
+      "text": "Now on this side you can see"
+    },
+    {
+      "start": 168.64,
+      "duration": 3.84,
+      "text": "environments. Right now I have a single"
+    },
+    {
+      "start": 170.72,
+      "duration": 3.2,
+      "text": "environment with the name new. I'm going"
+    },
+    {
+      "start": 172.48,
+      "duration": 3.2,
+      "text": "to be creating a new environment for"
+    },
+    {
+      "start": 173.92,
+      "duration": 3.2,
+      "text": "this particular demo. And click on this"
+    },
+    {
+      "start": 175.68,
+      "duration": 3.839,
+      "text": "create environment button. Let's name"
+    },
+    {
+      "start": 177.12,
+      "duration": 3.759,
+      "text": "this as hotel demo."
+    },
+    {
+      "start": 179.519,
+      "duration": 2.64,
+      "text": "If you want you can also describe your"
+    },
+    {
+      "start": 180.879,
+      "duration": 2.72,
+      "text": "environment. I'm going to leave this"
+    },
+    {
+      "start": 182.159,
+      "duration": 4.401,
+      "text": "empty. And let's click on create"
+    },
+    {
+      "start": 183.599,
+      "duration": 4.241,
+      "text": "environment. Now this is the page you"
+    },
+    {
+      "start": 186.56,
+      "duration": 2.959,
+      "text": "will see when you have an environment"
+    },
+    {
+      "start": 187.84,
+      "duration": 3.84,
+      "text": "and your account ready. We are going to"
+    },
+    {
+      "start": 189.519,
+      "duration": 4.321,
+      "text": "be using the API key from here. So let's"
+    },
+    {
+      "start": 191.68,
+      "duration": 4.479,
+      "text": "keep this tab open and then come back"
+    },
+    {
+      "start": 193.84,
+      "duration": 4.0,
+      "text": "later on in some time. Now here we have"
+    },
+    {
+      "start": 196.159,
+      "duration": 3.44,
+      "text": "a mini cube cluster created. You can"
+    },
+    {
+      "start": 197.84,
+      "duration": 3.119,
+      "text": "also confirm by running mini cube status"
+    },
+    {
+      "start": 199.599,
+      "duration": 3.601,
+      "text": "command and you should see the same"
+    },
+    {
+      "start": 200.959,
+      "duration": 3.601,
+      "text": "output as me which is control plane"
+    },
+    {
+      "start": 203.2,
+      "duration": 4.0,
+      "text": "running host running everything"
+    },
+    {
+      "start": 204.56,
+      "duration": 4.48,
+      "text": "configured. To run this application we"
+    },
+    {
+      "start": 207.2,
+      "duration": 3.599,
+      "text": "need to also have cubectl installed. If"
+    },
+    {
+      "start": 209.04,
+      "duration": 3.839,
+      "text": "you don't have cubectl installed go and"
+    },
+    {
+      "start": 210.799,
+      "duration": 4.241,
+      "text": "get it. If I do cubectl get pods it will"
+    },
+    {
+      "start": 212.879,
+      "duration": 4.481,
+      "text": "show me no resources found since this is"
+    },
+    {
+      "start": 215.04,
+      "duration": 3.759,
+      "text": "a new cluster. Before we go ahead to"
+    },
+    {
+      "start": 217.36,
+      "duration": 2.879,
+      "text": "make things easier for you and to make"
+    },
+    {
+      "start": 218.799,
+      "duration": 3.52,
+      "text": "sure that you complete this project, I"
+    },
+    {
+      "start": 220.239,
+      "duration": 4.0,
+      "text": "have a notion document created with all"
+    },
+    {
+      "start": 222.319,
+      "duration": 4.0,
+      "text": "the commands and every step to follow to"
+    },
+    {
+      "start": 224.239,
+      "duration": 3.92,
+      "text": "complete this project with me and also"
+    },
+    {
+      "start": 226.319,
+      "duration": 3.28,
+      "text": "showcase it on LinkedIn. So if you want"
+    },
+    {
+      "start": 228.159,
+      "duration": 3.44,
+      "text": "me to share that document with you,"
+    },
+    {
+      "start": 229.599,
+      "duration": 4.0,
+      "text": "comment below AI observability in the"
+    },
+    {
+      "start": 231.599,
+      "duration": 3.841,
+      "text": "comment section. Now that we have our"
+    },
+    {
+      "start": 233.599,
+      "duration": 4.0,
+      "text": "cluster created, we are ready to deploy"
+    },
+    {
+      "start": 235.44,
+      "duration": 3.68,
+      "text": "this open telem demo application and we"
+    },
+    {
+      "start": 237.599,
+      "duration": 2.961,
+      "text": "are deploying this on Kubernetes. I'm"
+    },
+    {
+      "start": 239.12,
+      "duration": 2.96,
+      "text": "going to select this setting here. We"
+    },
+    {
+      "start": 240.56,
+      "duration": 2.959,
+      "text": "are deploying this application using"
+    },
+    {
+      "start": 242.08,
+      "duration": 4.4,
+      "text": "helm. So I'm going to run the command"
+    },
+    {
+      "start": 243.519,
+      "duration": 4.72,
+      "text": "helm repo add open telemetry"
+    },
+    {
+      "start": 246.48,
+      "duration": 3.839,
+      "text": "this chart. Since we want all this"
+    },
+    {
+      "start": 248.239,
+      "duration": 4.0,
+      "text": "telemetry data like logs, metric, traces"
+    },
+    {
+      "start": 250.319,
+      "duration": 3.84,
+      "text": "in honeycomb, we are not going to be"
+    },
+    {
+      "start": 252.239,
+      "duration": 4.4,
+      "text": "using this command directly. We will"
+    },
+    {
+      "start": 254.159,
+      "duration": 4.161,
+      "text": "instead use honeycomb configuration. And"
+    },
+    {
+      "start": 256.639,
+      "duration": 3.921,
+      "text": "if you go to open telemetry demo"
+    },
+    {
+      "start": 258.32,
+      "duration": 3.759,
+      "text": "application on GitHub, you can see this"
+    },
+    {
+      "start": 260.56,
+      "duration": 3.359,
+      "text": "demo application can be used by"
+    },
+    {
+      "start": 262.079,
+      "duration": 3.84,
+      "text": "different observability platforms and"
+    },
+    {
+      "start": 263.919,
+      "duration": 3.921,
+      "text": "you can see graphana etc. Here we are"
+    },
+    {
+      "start": 265.919,
+      "duration": 3.761,
+      "text": "going to be using honeycomb. So this is"
+    },
+    {
+      "start": 267.84,
+      "duration": 3.6,
+      "text": "the repository. If you want to use"
+    },
+    {
+      "start": 269.68,
+      "duration": 3.6,
+      "text": "honeycomb and pass all the telemetry"
+    },
+    {
+      "start": 271.44,
+      "duration": 3.92,
+      "text": "data to honeycomb, we need to provide"
+    },
+    {
+      "start": 273.28,
+      "duration": 4.4,
+      "text": "our own configuration and for that I"
+    },
+    {
+      "start": 275.36,
+      "duration": 4.64,
+      "text": "have a file already created which is"
+    },
+    {
+      "start": 277.68,
+      "duration": 4.16,
+      "text": "valid.yamel. You can see this is the"
+    },
+    {
+      "start": 280.0,
+      "duration": 5.28,
+      "text": "configuration data and here I also need"
+    },
+    {
+      "start": 281.84,
+      "duration": 4.799,
+      "text": "to pass my API key. I'm using my own API"
+    },
+    {
+      "start": 285.28,
+      "duration": 2.8,
+      "text": "key and I will show you how things work"
+    },
+    {
+      "start": 286.639,
+      "duration": 3.12,
+      "text": "here. But if you want this"
+    },
+    {
+      "start": 288.08,
+      "duration": 3.36,
+      "text": "configuration, it's already present in"
+    },
+    {
+      "start": 289.759,
+      "duration": 3.601,
+      "text": "the notion document and if you want me"
+    },
+    {
+      "start": 291.44,
+      "duration": 4.24,
+      "text": "to share that notion document as PDF"
+    },
+    {
+      "start": 293.36,
+      "duration": 4.16,
+      "text": "comment below AI observability. For now"
+    },
+    {
+      "start": 295.68,
+      "duration": 4.239,
+      "text": "I'm going to open this project in my VS"
+    },
+    {
+      "start": 297.52,
+      "duration": 4.959,
+      "text": "code. So this is my VS code and this is"
+    },
+    {
+      "start": 299.919,
+      "duration": 4.56,
+      "text": "the configuration here. You need to"
+    },
+    {
+      "start": 302.479,
+      "duration": 4.241,
+      "text": "change your API key to your own API key"
+    },
+    {
+      "start": 304.479,
+      "duration": 4.961,
+      "text": "from the honeycomb account. So I'm going"
+    },
+    {
+      "start": 306.72,
+      "duration": 4.0,
+      "text": "to go to honeycom account and then in"
+    },
+    {
+      "start": 309.44,
+      "duration": 4.24,
+      "text": "the honeycomb account you can see the"
+    },
+    {
+      "start": 310.72,
+      "duration": 5.28,
+      "text": "API key here. So let's copy this API"
+    },
+    {
+      "start": 313.68,
+      "duration": 3.519,
+      "text": "key. So now I have my own API key. After"
+    },
+    {
+      "start": 316.0,
+      "duration": 2.639,
+      "text": "you have this configuration, we are"
+    },
+    {
+      "start": 317.199,
+      "duration": 3.44,
+      "text": "going to then run the helm install"
+    },
+    {
+      "start": 318.639,
+      "duration": 4.801,
+      "text": "command to install the open telemetry"
+    },
+    {
+      "start": 320.639,
+      "duration": 5.681,
+      "text": "application using this configuration. So"
+    },
+    {
+      "start": 323.44,
+      "duration": 5.039,
+      "text": "the command is helm upgrade install. the"
+    },
+    {
+      "start": 326.32,
+      "duration": 3.92,
+      "text": "name of the application this is the path"
+    },
+    {
+      "start": 328.479,
+      "duration": 4.56,
+      "text": "and I'm saying use my file which is"
+    },
+    {
+      "start": 330.24,
+      "duration": 4.16,
+      "text": "valid.yamel camel let's press enter all"
+    },
+    {
+      "start": 333.039,
+      "duration": 2.481,
+      "text": "right we don't have a name space"
+    },
+    {
+      "start": 334.4,
+      "duration": 2.32,
+      "text": "obviously we need to first create a"
+    },
+    {
+      "start": 335.52,
+      "duration": 4.72,
+      "text": "namespace that in which we are going to"
+    },
+    {
+      "start": 336.72,
+      "duration": 7.039,
+      "text": "be creating so I'm say cubectl create"
+    },
+    {
+      "start": 340.24,
+      "duration": 5.76,
+      "text": "ns oel demo so now the namespace is"
+    },
+    {
+      "start": 343.759,
+      "duration": 4.16,
+      "text": "created let's rerun the command and this"
+    },
+    {
+      "start": 346.0,
+      "duration": 3.759,
+      "text": "time it will go ahead and install the"
+    },
+    {
+      "start": 347.919,
+      "duration": 3.601,
+      "text": "open telemetry application if you get"
+    },
+    {
+      "start": 349.759,
+      "duration": 3.361,
+      "text": "the same output as me where you can see"
+    },
+    {
+      "start": 351.52,
+      "duration": 3.76,
+      "text": "this"
+    },
+    {
+      "start": 353.12,
+      "duration": 4.0,
+      "text": "demo which means it's running and this"
+    },
+    {
+      "start": 355.28,
+      "duration": 4.8,
+      "text": "application is available on the path"
+    },
+    {
+      "start": 357.12,
+      "duration": 4.88,
+      "text": "localhost at80 it also has a jagger"
+    },
+    {
+      "start": 360.08,
+      "duration": 3.52,
+      "text": "endpoint point at this particular path."
+    },
+    {
+      "start": 362.0,
+      "duration": 3.039,
+      "text": "Jagger is a very popular tool for"
+    },
+    {
+      "start": 363.6,
+      "duration": 5.039,
+      "text": "tracing. Then you have graphana"
+    },
+    {
+      "start": 365.039,
+      "duration": 4.88,
+      "text": "dashboards at localhost at80/graphana."
+    },
+    {
+      "start": 368.639,
+      "duration": 3.761,
+      "text": "Then there's load generator feature"
+    },
+    {
+      "start": 369.919,
+      "duration": 3.921,
+      "text": "flags etc. Right now as you can see the"
+    },
+    {
+      "start": 372.4,
+      "duration": 3.12,
+      "text": "application is still in container"
+    },
+    {
+      "start": 373.84,
+      "duration": 3.44,
+      "text": "creating state. The pods are still being"
+    },
+    {
+      "start": 375.52,
+      "duration": 3.28,
+      "text": "created and if you want to access this"
+    },
+    {
+      "start": 377.28,
+      "duration": 4.32,
+      "text": "application you need to run this command"
+    },
+    {
+      "start": 378.8,
+      "duration": 4.0,
+      "text": "cubectl namespaceal demo port forward"
+    },
+    {
+      "start": 381.6,
+      "duration": 4.4,
+      "text": "and then the application will be"
+    },
+    {
+      "start": 382.8,
+      "duration": 5.519,
+      "text": "available on localhost at80. So if I run"
+    },
+    {
+      "start": 386.0,
+      "duration": 4.24,
+      "text": "this command right now,"
+    },
+    {
+      "start": 388.319,
+      "duration": 3.521,
+      "text": "I will get an error saying the pod is"
+    },
+    {
+      "start": 390.24,
+      "duration": 3.6,
+      "text": "still in pending state. So we need to"
+    },
+    {
+      "start": 391.84,
+      "duration": 3.44,
+      "text": "wait for 3 to 4 minutes before this pod"
+    },
+    {
+      "start": 393.84,
+      "duration": 3.199,
+      "text": "comes up. And if you go to your"
+    },
+    {
+      "start": 395.28,
+      "duration": 3.44,
+      "text": "honeycomb account, right now there's no"
+    },
+    {
+      "start": 397.039,
+      "duration": 3.361,
+      "text": "data here because the application is not"
+    },
+    {
+      "start": 398.72,
+      "duration": 3.199,
+      "text": "running. Honeycomb can be used with"
+    },
+    {
+      "start": 400.4,
+      "duration": 3.359,
+      "text": "NodeJS application with Python"
+    },
+    {
+      "start": 401.919,
+      "duration": 4.0,
+      "text": "application, Java application, net,"
+    },
+    {
+      "start": 403.759,
+      "duration": 3.921,
+      "text": "Ruby, etc., etc. We are running this on"
+    },
+    {
+      "start": 405.919,
+      "duration": 4.081,
+      "text": "Kubernetes and that's why we are using a"
+    },
+    {
+      "start": 407.68,
+      "duration": 3.76,
+      "text": "valid.yamel file. You can also use"
+    },
+    {
+      "start": 410.0,
+      "duration": 3.36,
+      "text": "environment variables if you want to get"
+    },
+    {
+      "start": 411.44,
+      "duration": 4.319,
+      "text": "the telemetry data transported to"
+    },
+    {
+      "start": 413.36,
+      "duration": 5.2,
+      "text": "honeycomb. For now, let's wait till all"
+    },
+    {
+      "start": 415.759,
+      "duration": 4.401,
+      "text": "the pod comes up. Okay, finally all the"
+    },
+    {
+      "start": 418.56,
+      "duration": 3.52,
+      "text": "pods are now running and you can also"
+    },
+    {
+      "start": 420.16,
+      "duration": 4.08,
+      "text": "see the application is up on localhost"
+    },
+    {
+      "start": 422.08,
+      "duration": 4.48,
+      "text": "AT80. This is the open telemetry demo"
+    },
+    {
+      "start": 424.24,
+      "duration": 5.12,
+      "text": "application which is an astronomy shop."
+    },
+    {
+      "start": 426.56,
+      "duration": 5.199,
+      "text": "You can go ahead and play with it. Along"
+    },
+    {
+      "start": 429.36,
+      "duration": 4.959,
+      "text": "with this, you can also access"
+    },
+    {
+      "start": 431.759,
+      "duration": 5.201,
+      "text": "the Jagger which is a tracing tool on"
+    },
+    {
+      "start": 434.319,
+      "duration": 4.561,
+      "text": "Jagger/ UI. Since we are going to be"
+    },
+    {
+      "start": 436.96,
+      "duration": 4.239,
+      "text": "routing all the telemetry data from here"
+    },
+    {
+      "start": 438.88,
+      "duration": 4.08,
+      "text": "to honeycomb, you can see now honeycomb"
+    },
+    {
+      "start": 441.199,
+      "duration": 4.241,
+      "text": "also has some data here. So we have"
+    },
+    {
+      "start": 442.96,
+      "duration": 4.72,
+      "text": "traces coming in, incoming spans and lot"
+    },
+    {
+      "start": 445.44,
+      "duration": 4.56,
+      "text": "more. Spend some time in this honeycomb"
+    },
+    {
+      "start": 447.68,
+      "duration": 4.56,
+      "text": "dashboard. Go through all the traces. So"
+    },
+    {
+      "start": 450.0,
+      "duration": 3.919,
+      "text": "we have different services here. This is"
+    },
+    {
+      "start": 452.24,
+      "duration": 4.239,
+      "text": "for load generation. You can see traces"
+    },
+    {
+      "start": 453.919,
+      "duration": 4.161,
+      "text": "here. You can also see logs coming in."
+    },
+    {
+      "start": 456.479,
+      "duration": 4.081,
+      "text": "And if you want to query, you can go to"
+    },
+    {
+      "start": 458.08,
+      "duration": 4.32,
+      "text": "this query tab and check out different"
+    },
+    {
+      "start": 460.56,
+      "duration": 4.32,
+      "text": "slow request, what are the errors and"
+    },
+    {
+      "start": 462.4,
+      "duration": 4.239,
+      "text": "lot more. Now for someone who does not"
+    },
+    {
+      "start": 464.88,
+      "duration": 4.4,
+      "text": "understand how this actually works or"
+    },
+    {
+      "start": 466.639,
+      "duration": 5.521,
+      "text": "how to check traces, log etc. We can use"
+    },
+    {
+      "start": 469.28,
+      "duration": 4.639,
+      "text": "honeycomb MCP. Using honeycomb mcp you"
+    },
+    {
+      "start": 472.16,
+      "duration": 3.599,
+      "text": "can simply ask questions like show me"
+    },
+    {
+      "start": 473.919,
+      "duration": 3.761,
+      "text": "all the different slow requests or tell"
+    },
+    {
+      "start": 475.759,
+      "duration": 3.201,
+      "text": "me about where the latency is low rather"
+    },
+    {
+      "start": 477.68,
+      "duration": 3.359,
+      "text": "than wasting your time through this"
+    },
+    {
+      "start": 478.96,
+      "duration": 4.079,
+      "text": "dashboard. Think about it you normally"
+    },
+    {
+      "start": 481.039,
+      "duration": 4.241,
+      "text": "debug by opening up honeycomb then"
+    },
+    {
+      "start": 483.039,
+      "duration": 4.321,
+      "text": "clicking on queries selecting a data set"
+    },
+    {
+      "start": 485.28,
+      "duration": 3.84,
+      "text": "filter by service filter by error type"
+    },
+    {
+      "start": 487.36,
+      "duration": 4.0,
+      "text": "and lot more. So rather than this we can"
+    },
+    {
+      "start": 489.12,
+      "duration": 4.799,
+      "text": "simply use honeycomb mcp and to use it"
+    },
+    {
+      "start": 491.36,
+      "duration": 5.119,
+      "text": "click on the account section here go to"
+    },
+    {
+      "start": 493.919,
+      "duration": 4.4,
+      "text": "my account and here you can see mcp or"
+    },
+    {
+      "start": 496.479,
+      "duration": 3.521,
+      "text": "model context protocol. I already have"
+    },
+    {
+      "start": 498.319,
+      "duration": 3.761,
+      "text": "it. I'm going to rework it and show you"
+    },
+    {
+      "start": 500.0,
+      "duration": 4.4,
+      "text": "so I can show you from scratch. So copy"
+    },
+    {
+      "start": 502.08,
+      "duration": 4.48,
+      "text": "this server URL and go to your VS code."
+    },
+    {
+      "start": 504.4,
+      "duration": 4.239,
+      "text": "You can do this either in VS code or in"
+    },
+    {
+      "start": 506.56,
+      "duration": 4.16,
+      "text": "cloud cursor anything. So I'm going to"
+    },
+    {
+      "start": 508.639,
+      "duration": 5.121,
+      "text": "click on this and click on show and run"
+    },
+    {
+      "start": 510.72,
+      "duration": 4.72,
+      "text": "command. Add server http and paste the"
+    },
+    {
+      "start": 513.76,
+      "duration": 3.199,
+      "text": "URL that you just copied. Click on"
+    },
+    {
+      "start": 515.44,
+      "duration": 3.92,
+      "text": "enter. You can give this a name. So I'm"
+    },
+    {
+      "start": 516.959,
+      "duration": 5.44,
+      "text": "going to name this as honeycomb"
+    },
+    {
+      "start": 519.36,
+      "duration": 5.84,
+      "text": "and press enter. Let's make it global."
+    },
+    {
+      "start": 522.399,
+      "duration": 4.481,
+      "text": "And this is my MCP server configuration."
+    },
+    {
+      "start": 525.2,
+      "duration": 3.12,
+      "text": "Once you add your MCP server, it will"
+    },
+    {
+      "start": 526.88,
+      "duration": 3.519,
+      "text": "ask you to authenticate. So click on"
+    },
+    {
+      "start": 528.32,
+      "duration": 4.24,
+      "text": "allow. Click on open button here and"
+    },
+    {
+      "start": 530.399,
+      "duration": 3.681,
+      "text": "this will open up the browser. Now here"
+    },
+    {
+      "start": 532.56,
+      "duration": 3.04,
+      "text": "I'm going to select my team and then"
+    },
+    {
+      "start": 534.08,
+      "duration": 4.4,
+      "text": "select permissions. Click on read and"
+    },
+    {
+      "start": 535.6,
+      "duration": 4.799,
+      "text": "write and then authorize it. This is how"
+    },
+    {
+      "start": 538.48,
+      "duration": 3.76,
+      "text": "you will add your honeycomb MCP server."
+    },
+    {
+      "start": 540.399,
+      "duration": 4.721,
+      "text": "Click on open Visual Studio Code again."
+    },
+    {
+      "start": 542.24,
+      "duration": 4.719,
+      "text": "Now I can go ahead and ask questions."
+    },
+    {
+      "start": 545.12,
+      "duration": 3.68,
+      "text": "So I'm going to choose this agent option"
+    },
+    {
+      "start": 546.959,
+      "duration": 4.161,
+      "text": "and you can see tools. In the tool"
+    },
+    {
+      "start": 548.8,
+      "duration": 4.32,
+      "text": "section if I scroll down I can find"
+    },
+    {
+      "start": 551.12,
+      "duration": 3.839,
+      "text": "Honeycomb here. These are all the"
+    },
+    {
+      "start": 553.12,
+      "duration": 3.44,
+      "text": "different tools that Honeycom MCP server"
+    },
+    {
+      "start": 554.959,
+      "duration": 3.681,
+      "text": "is able to do. So it can create a new"
+    },
+    {
+      "start": 556.56,
+      "duration": 4.16,
+      "text": "flexible board with fixed grid. It can"
+    },
+    {
+      "start": 558.64,
+      "duration": 4.319,
+      "text": "submit feedback about honeycomb's MCP"
+    },
+    {
+      "start": 560.72,
+      "duration": 4.32,
+      "text": "server. You can find relevant columns"
+    },
+    {
+      "start": 562.959,
+      "duration": 4.161,
+      "text": "across data sets. Find relevant queries,"
+    },
+    {
+      "start": 565.04,
+      "duration": 4.239,
+      "text": "get data sets and lot more. Let me show"
+    },
+    {
+      "start": 567.12,
+      "duration": 3.68,
+      "text": "you an example. In this honeycomb"
+    },
+    {
+      "start": 569.279,
+      "duration": 4.321,
+      "text": "account, you can see we have different"
+    },
+    {
+      "start": 570.8,
+      "duration": 5.039,
+      "text": "services like load generator, demo,"
+    },
+    {
+      "start": 573.6,
+      "duration": 4.799,
+      "text": "payment, quote, etc. We also get the"
+    },
+    {
+      "start": 575.839,
+      "duration": 4.081,
+      "text": "logs and traces for every service here."
+    },
+    {
+      "start": 578.399,
+      "duration": 3.12,
+      "text": "If you are an expert, you will obviously"
+    },
+    {
+      "start": 579.92,
+      "duration": 3.28,
+      "text": "understand what's going on here going"
+    },
+    {
+      "start": 581.519,
+      "duration": 3.201,
+      "text": "through the graphs. But instead of going"
+    },
+    {
+      "start": 583.2,
+      "duration": 4.0,
+      "text": "through the graphs and wasting our time,"
+    },
+    {
+      "start": 584.72,
+      "duration": 3.92,
+      "text": "we can either use the query here. So you"
+    },
+    {
+      "start": 587.2,
+      "duration": 3.199,
+      "text": "can click on query and then you can also"
+    },
+    {
+      "start": 588.64,
+      "duration": 3.52,
+      "text": "see slow request, what are my errors,"
+    },
+    {
+      "start": 590.399,
+      "duration": 3.521,
+      "text": "latency distribution, a lot more. But"
+    },
+    {
+      "start": 592.16,
+      "duration": 3.92,
+      "text": "here the output is again in the form of"
+    },
+    {
+      "start": 593.92,
+      "duration": 4.32,
+      "text": "graph. To make things more easy, we can"
+    },
+    {
+      "start": 596.08,
+      "duration": 4.96,
+      "text": "use the honeycom MCP server. Let me show"
+    },
+    {
+      "start": 598.24,
+      "duration": 4.719,
+      "text": "you an example. So I'm going to ask list"
+    },
+    {
+      "start": 601.04,
+      "duration": 4.08,
+      "text": "all the data sets in my honeycomb"
+    },
+    {
+      "start": 602.959,
+      "duration": 4.0,
+      "text": "project. And now honeycomb mcp server is"
+    },
+    {
+      "start": 605.12,
+      "duration": 4.24,
+      "text": "working. It will give us the list of all"
+    },
+    {
+      "start": 606.959,
+      "duration": 5.401,
+      "text": "the data sets present inside honeycomb"
+    },
+    {
+      "start": 609.36,
+      "duration": 3.0,
+      "text": "server."
+    },
+    {
+      "start": 612.56,
+      "duration": 3.2,
+      "text": "So you can see the output here. It gave"
+    },
+    {
+      "start": 614.16,
+      "duration": 3.2,
+      "text": "us all the data sets present inside"
+    },
+    {
+      "start": 615.76,
+      "duration": 3.759,
+      "text": "honeycomb project and these are all the"
+    },
+    {
+      "start": 617.36,
+      "duration": 3.919,
+      "text": "different environments. That's amazing."
+    },
+    {
+      "start": 619.519,
+      "duration": 3.521,
+      "text": "Let's try to run a query now. So I'm"
+    },
+    {
+      "start": 621.279,
+      "duration": 4.56,
+      "text": "going to ask it to run a query to find"
+    },
+    {
+      "start": 623.04,
+      "duration": 4.4,
+      "text": "10 slowest endpoints in last 30 minutes."
+    },
+    {
+      "start": 625.839,
+      "duration": 2.721,
+      "text": "If you were to do this in the honeycomb"
+    },
+    {
+      "start": 627.44,
+      "duration": 3.28,
+      "text": "dashboard, you have to go through the"
+    },
+    {
+      "start": 628.56,
+      "duration": 4.16,
+      "text": "query and then find out the 10 slowest"
+    },
+    {
+      "start": 630.72,
+      "duration": 3.76,
+      "text": "one. But here you can simply ask a"
+    },
+    {
+      "start": 632.72,
+      "duration": 4.0,
+      "text": "question to your LLM and it will give"
+    },
+    {
+      "start": 634.48,
+      "duration": 4.479,
+      "text": "you the output right here. This makes"
+    },
+    {
+      "start": 636.72,
+      "duration": 4.88,
+      "text": "observability so easy. So you can see"
+    },
+    {
+      "start": 638.959,
+      "duration": 4.721,
+      "text": "the 10 slowest endpoint are all these 10"
+    },
+    {
+      "start": 641.6,
+      "duration": 4.799,
+      "text": "one here. So we have SL API/checkout"
+    },
+    {
+      "start": 643.68,
+      "duration": 5.2,
+      "text": "which takes around 83.77 milliseconds"
+    },
+    {
+      "start": 646.399,
+      "duration": 4.961,
+      "text": "and so on. Can you give me which service"
+    },
+    {
+      "start": 648.88,
+      "duration": 5.28,
+      "text": "has handled the most request in last"
+    },
+    {
+      "start": 651.36,
+      "duration": 4.96,
+      "text": "hour?"
+    },
+    {
+      "start": 654.16,
+      "duration": 3.84,
+      "text": "So it says the service that handled most"
+    },
+    {
+      "start": 656.32,
+      "duration": 3.84,
+      "text": "request is the front- end service with"
+    },
+    {
+      "start": 658.0,
+      "duration": 5.04,
+      "text": "about 12,161"
+    },
+    {
+      "start": 660.16,
+      "duration": 4.88,
+      "text": "request. That's crazy. Let's try with"
+    },
+    {
+      "start": 663.04,
+      "duration": 6.4,
+      "text": "some more examples. Let's ask which is"
+    },
+    {
+      "start": 665.04,
+      "duration": 4.4,
+      "text": "the slowest endpoint in last 15 minutes."
+    },
+    {
+      "start": 670.0,
+      "duration": 3.68,
+      "text": "So the slowest endpoints in last 15"
+    },
+    {
+      "start": 671.839,
+      "duration": 3.841,
+      "text": "minutes are API checkout. Again we got"
+    },
+    {
+      "start": 673.68,
+      "duration": 3.76,
+      "text": "this also if you want to go deeper like"
+    },
+    {
+      "start": 675.68,
+      "duration": 4.0,
+      "text": "for example let's retrieve the trace for"
+    },
+    {
+      "start": 677.44,
+      "duration": 4.079,
+      "text": "the single slowest request in last 30"
+    },
+    {
+      "start": 679.68,
+      "duration": 4.159,
+      "text": "minutes and show me the full trace"
+    },
+    {
+      "start": 681.519,
+      "duration": 5.681,
+      "text": "details like trace ID spans timeouts"
+    },
+    {
+      "start": 683.839,
+      "duration": 5.68,
+      "text": "etc. This is amazing. It gave me the"
+    },
+    {
+      "start": 687.2,
+      "duration": 4.16,
+      "text": "complete information about the trace ID"
+    },
+    {
+      "start": 689.519,
+      "duration": 3.041,
+      "text": "which is the slowest single endpoint and"
+    },
+    {
+      "start": 691.36,
+      "duration": 3.52,
+      "text": "it also gave me all this information"
+    },
+    {
+      "start": 692.56,
+      "duration": 3.6,
+      "text": "like span ID, time stamp. If I were to"
+    },
+    {
+      "start": 694.88,
+      "duration": 2.56,
+      "text": "do this in the console, it will take me"
+    },
+    {
+      "start": 696.16,
+      "duration": 2.799,
+      "text": "so much time. But along with this"
+    },
+    {
+      "start": 697.44,
+      "duration": 3.28,
+      "text": "information, it also gave me a link"
+    },
+    {
+      "start": 698.959,
+      "duration": 4.161,
+      "text": "where I can go and check this trace"
+    },
+    {
+      "start": 700.72,
+      "duration": 4.239,
+      "text": "details in honeycomb. Honeycomb MCP"
+    },
+    {
+      "start": 703.12,
+      "duration": 3.6,
+      "text": "gives you result in natural language"
+    },
+    {
+      "start": 704.959,
+      "duration": 3.361,
+      "text": "answer along with a link to the"
+    },
+    {
+      "start": 706.72,
+      "duration": 3.76,
+      "text": "dashboard. So, it makes observability"
+    },
+    {
+      "start": 708.32,
+      "duration": 4.079,
+      "text": "very very easy. Make sure you try out"
+    },
+    {
+      "start": 710.48,
+      "duration": 3.28,
+      "text": "honeycomb MCP for yourself. To do that,"
+    },
+    {
+      "start": 712.399,
+      "duration": 3.201,
+      "text": "you need to create an account and the"
+    },
+    {
+      "start": 713.76,
+      "duration": 3.519,
+      "text": "link is in description. Also, if you"
+    },
+    {
+      "start": 715.6,
+      "duration": 3.919,
+      "text": "want a step-by-step document for this"
+    },
+    {
+      "start": 717.279,
+      "duration": 4.24,
+      "text": "project, comment below AI observability"
+    },
+    {
+      "start": 719.519,
+      "duration": 4.56,
+      "text": "and I will see you in the next video."
+    },
+    {
+      "start": 721.519,
+      "duration": 2.56,
+      "text": "Bye."
+    }
+  ]
+}

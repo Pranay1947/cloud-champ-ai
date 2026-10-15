@@ -1,0 +1,3531 @@
+{
+  "video": {
+    "id": "CdujWKyms4c",
+    "title": "AWS Certified Solutions Architect Associate Exam Practice Questions",
+    "url": "https://www.youtube.com/watch?v=CdujWKyms4c",
+    "duration": 1649,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.799,
+      "duration": 5.52,
+      "text": "hello and welcome to cloud champ this is"
+    },
+    {
+      "start": 3.28,
+      "duration": 5.44,
+      "text": "the first video in the playlist aws real"
+    },
+    {
+      "start": 6.319,
+      "duration": 3.521,
+      "text": "exam questions for solutions architect"
+    },
+    {
+      "start": 8.72,
+      "duration": 4.24,
+      "text": "associate"
+    },
+    {
+      "start": 9.84,
+      "duration": 4.879,
+      "text": "in this playlist we will cover questions"
+    },
+    {
+      "start": 12.96,
+      "duration": 4.319,
+      "text": "to practice for the solutions architect"
+    },
+    {
+      "start": 14.719,
+      "duration": 4.48,
+      "text": "exam and most of these questions will be"
+    },
+    {
+      "start": 17.279,
+      "duration": 3.92,
+      "text": "there in your exam or similar questions"
+    },
+    {
+      "start": 19.199,
+      "duration": 4.721,
+      "text": "like this so if you practice these"
+    },
+    {
+      "start": 21.199,
+      "duration": 4.801,
+      "text": "questions i will give you 100 guarantee"
+    },
+    {
+      "start": 23.92,
+      "duration": 4.8,
+      "text": "that you will pass your exam with"
+    },
+    {
+      "start": 26.0,
+      "duration": 4.72,
+      "text": "a good score follow a pattern where we i"
+    },
+    {
+      "start": 28.72,
+      "duration": 4.4,
+      "text": "will show you question along with the"
+    },
+    {
+      "start": 30.72,
+      "duration": 3.76,
+      "text": "answers you can pause the video try to"
+    },
+    {
+      "start": 33.12,
+      "duration": 3.279,
+      "text": "guess the answer"
+    },
+    {
+      "start": 34.48,
+      "duration": 2.96,
+      "text": "all right so you will see a screen like"
+    },
+    {
+      "start": 36.399,
+      "duration": 4.0,
+      "text": "this"
+    },
+    {
+      "start": 37.44,
+      "duration": 5.68,
+      "text": "and i will read out the question for you"
+    },
+    {
+      "start": 40.399,
+      "duration": 5.201,
+      "text": "you can pause the video and try to guess"
+    },
+    {
+      "start": 43.12,
+      "duration": 4.72,
+      "text": "the correct option among this then we"
+    },
+    {
+      "start": 45.6,
+      "duration": 4.08,
+      "text": "will go through each of the option and"
+    },
+    {
+      "start": 47.84,
+      "duration": 3.76,
+      "text": "find the correct one i'll explain you"
+    },
+    {
+      "start": 49.68,
+      "duration": 3.92,
+      "text": "why it is the correct option"
+    },
+    {
+      "start": 51.6,
+      "duration": 3.68,
+      "text": "and why others are wrong"
+    },
+    {
+      "start": 53.6,
+      "duration": 3.92,
+      "text": "so even if you have not learned the"
+    },
+    {
+      "start": 55.28,
+      "duration": 4.16,
+      "text": "topic you can learn the topic as well as"
+    },
+    {
+      "start": 57.52,
+      "duration": 3.76,
+      "text": "you can get the questions so it's a"
+    },
+    {
+      "start": 59.44,
+      "duration": 2.639,
+      "text": "win-win situation"
+    },
+    {
+      "start": 61.28,
+      "duration": 3.04,
+      "text": "so"
+    },
+    {
+      "start": 62.079,
+      "duration": 4.481,
+      "text": "please subscribe and let's get started"
+    },
+    {
+      "start": 64.32,
+      "duration": 4.96,
+      "text": "this is the part one for the aws"
+    },
+    {
+      "start": 66.56,
+      "duration": 4.879,
+      "text": "solutions architect real exam questions"
+    },
+    {
+      "start": 69.28,
+      "duration": 4.72,
+      "text": "i'll be uploading videos like this and"
+    },
+    {
+      "start": 71.439,
+      "duration": 3.841,
+      "text": "if you like the videos please subscribe"
+    },
+    {
+      "start": 74.0,
+      "duration": 3.84,
+      "text": "to the channel"
+    },
+    {
+      "start": 75.28,
+      "duration": 4.56,
+      "text": "so let's get started"
+    },
+    {
+      "start": 77.84,
+      "duration": 5.04,
+      "text": "the first question is"
+    },
+    {
+      "start": 79.84,
+      "duration": 4.16,
+      "text": "an application saves the logs to an s3"
+    },
+    {
+      "start": 82.88,
+      "duration": 3.76,
+      "text": "bucket"
+    },
+    {
+      "start": 84.0,
+      "duration": 5.28,
+      "text": "a user wants to keep the logs for one"
+    },
+    {
+      "start": 86.64,
+      "duration": 5.36,
+      "text": "month for troubleshooting purposes"
+    },
+    {
+      "start": 89.28,
+      "duration": 4.799,
+      "text": "and then purge the locks what feature"
+    },
+    {
+      "start": 92.0,
+      "duration": 4.479,
+      "text": "will enable this"
+    },
+    {
+      "start": 94.079,
+      "duration": 4.801,
+      "text": "so the question is asking that the user"
+    },
+    {
+      "start": 96.479,
+      "duration": 5.121,
+      "text": "wants to keep the lock for one month and"
+    },
+    {
+      "start": 98.88,
+      "duration": 4.4,
+      "text": "after that he wants to delete the log"
+    },
+    {
+      "start": 101.6,
+      "duration": 4.08,
+      "text": "after one month"
+    },
+    {
+      "start": 103.28,
+      "duration": 6.0,
+      "text": "so you can pause the video and try to"
+    },
+    {
+      "start": 105.68,
+      "duration": 3.6,
+      "text": "figure out the right answer"
+    },
+    {
+      "start": 110.159,
+      "duration": 2.881,
+      "text": "okay"
+    },
+    {
+      "start": 111.119,
+      "duration": 4.481,
+      "text": "so according to the question"
+    },
+    {
+      "start": 113.04,
+      "duration": 4.719,
+      "text": "this is a feature of s3 that is called"
+    },
+    {
+      "start": 115.6,
+      "duration": 5.36,
+      "text": "as life cycle management"
+    },
+    {
+      "start": 117.759,
+      "duration": 5.601,
+      "text": "so let's look at the options one by one"
+    },
+    {
+      "start": 120.96,
+      "duration": 4.56,
+      "text": "the first option is adding a bucket"
+    },
+    {
+      "start": 123.36,
+      "duration": 4.8,
+      "text": "policy on s3 bucket"
+    },
+    {
+      "start": 125.52,
+      "duration": 5.439,
+      "text": "bucket policy is permission granted to"
+    },
+    {
+      "start": 128.16,
+      "duration": 4.719,
+      "text": "the bucket in s3 so the question is not"
+    },
+    {
+      "start": 130.959,
+      "duration": 3.681,
+      "text": "asking for any permissions so this is"
+    },
+    {
+      "start": 132.879,
+      "duration": 4.401,
+      "text": "not a valid answer"
+    },
+    {
+      "start": 134.64,
+      "duration": 5.2,
+      "text": "the second is configuring lifecycle"
+    },
+    {
+      "start": 137.28,
+      "duration": 4.56,
+      "text": "configuration rules on the s3 bucket"
+    },
+    {
+      "start": 139.84,
+      "duration": 3.68,
+      "text": "so lifecycle configuration is what the"
+    },
+    {
+      "start": 141.84,
+      "duration": 3.759,
+      "text": "question is asking for"
+    },
+    {
+      "start": 143.52,
+      "duration": 3.92,
+      "text": "but let's look at the other"
+    },
+    {
+      "start": 145.599,
+      "duration": 5.201,
+      "text": "options as well"
+    },
+    {
+      "start": 147.44,
+      "duration": 5.76,
+      "text": "creating an im policy for the s3 bucket"
+    },
+    {
+      "start": 150.8,
+      "duration": 3.92,
+      "text": "this does not apply for this question we"
+    },
+    {
+      "start": 153.2,
+      "duration": 3.759,
+      "text": "are not asking for any policy or"
+    },
+    {
+      "start": 154.72,
+      "duration": 3.2,
+      "text": "permissions so iem policy is not asked"
+    },
+    {
+      "start": 156.959,
+      "duration": 4.0,
+      "text": "here"
+    },
+    {
+      "start": 157.92,
+      "duration": 6.0,
+      "text": "the last is enabling course or cross"
+    },
+    {
+      "start": 160.959,
+      "duration": 5.121,
+      "text": "origin resource sharing on the s3 bucket"
+    },
+    {
+      "start": 163.92,
+      "duration": 4.72,
+      "text": "cross origin resource sharing is enabled"
+    },
+    {
+      "start": 166.08,
+      "duration": 4.56,
+      "text": "when you want to access your s3 bucket"
+    },
+    {
+      "start": 168.64,
+      "duration": 4.4,
+      "text": "from another account"
+    },
+    {
+      "start": 170.64,
+      "duration": 4.0,
+      "text": "or another region so this is not what"
+    },
+    {
+      "start": 173.04,
+      "duration": 3.279,
+      "text": "the question is asking"
+    },
+    {
+      "start": 174.64,
+      "duration": 4.72,
+      "text": "so the correct answer is the second"
+    },
+    {
+      "start": 176.319,
+      "duration": 5.681,
+      "text": "answer that is configuring life cycle"
+    },
+    {
+      "start": 179.36,
+      "duration": 6.159,
+      "text": "configuration rules on the s3 bucket"
+    },
+    {
+      "start": 182.0,
+      "duration": 7.04,
+      "text": "you can read this explanation here"
+    },
+    {
+      "start": 185.519,
+      "duration": 6.72,
+      "text": "now let's switch to the second question"
+    },
+    {
+      "start": 189.04,
+      "duration": 5.839,
+      "text": "so a company is storing an access key"
+    },
+    {
+      "start": 192.239,
+      "duration": 4.481,
+      "text": "and secret access key in text file on"
+    },
+    {
+      "start": 194.879,
+      "duration": 4.321,
+      "text": "the custom ami"
+    },
+    {
+      "start": 196.72,
+      "duration": 5.84,
+      "text": "the company uses access key to access"
+    },
+    {
+      "start": 199.2,
+      "duration": 5.28,
+      "text": "dynamodb tables from instances created"
+    },
+    {
+      "start": 202.56,
+      "duration": 4.239,
+      "text": "from the ami"
+    },
+    {
+      "start": 204.48,
+      "duration": 3.92,
+      "text": "the security team has mandated a more"
+    },
+    {
+      "start": 206.799,
+      "duration": 3.52,
+      "text": "secure solution"
+    },
+    {
+      "start": 208.4,
+      "duration": 4.479,
+      "text": "which solution will meet the security"
+    },
+    {
+      "start": 210.319,
+      "duration": 3.521,
+      "text": "team's mandate so according to the"
+    },
+    {
+      "start": 212.879,
+      "duration": 3.44,
+      "text": "question"
+    },
+    {
+      "start": 213.84,
+      "duration": 4.16,
+      "text": "the user is using access key id and"
+    },
+    {
+      "start": 216.319,
+      "duration": 4.241,
+      "text": "secret access key"
+    },
+    {
+      "start": 218.0,
+      "duration": 5.44,
+      "text": "on the custom ami which is not best"
+    },
+    {
+      "start": 220.56,
+      "duration": 5.2,
+      "text": "practice according to aws pause the"
+    },
+    {
+      "start": 223.44,
+      "duration": 6.0,
+      "text": "video and read the question carefully"
+    },
+    {
+      "start": 225.76,
+      "duration": 3.68,
+      "text": "and try to guess the correct answer"
+    },
+    {
+      "start": 232.0,
+      "duration": 4.799,
+      "text": "so the first option is put the access"
+    },
+    {
+      "start": 234.48,
+      "duration": 5.52,
+      "text": "key in an s3 bucket and retrieve the"
+    },
+    {
+      "start": 236.799,
+      "duration": 5.44,
+      "text": "access key on boot from the instance so"
+    },
+    {
+      "start": 240.0,
+      "duration": 4.64,
+      "text": "this is not a valid answer you should"
+    },
+    {
+      "start": 242.239,
+      "duration": 4.56,
+      "text": "never put or expose your access or"
+    },
+    {
+      "start": 244.64,
+      "duration": 4.08,
+      "text": "secret access key"
+    },
+    {
+      "start": 246.799,
+      "duration": 4.481,
+      "text": "the second is pass the access key to the"
+    },
+    {
+      "start": 248.72,
+      "duration": 5.2,
+      "text": "instance through instance user data"
+    },
+    {
+      "start": 251.28,
+      "duration": 4.64,
+      "text": "not good practice not best practice when"
+    },
+    {
+      "start": 253.92,
+      "duration": 3.839,
+      "text": "you want to use when you want to provide"
+    },
+    {
+      "start": 255.92,
+      "duration": 4.319,
+      "text": "a rule to any service"
+    },
+    {
+      "start": 257.759,
+      "duration": 5.121,
+      "text": "in this case we want the ami to access"
+    },
+    {
+      "start": 260.239,
+      "duration": 6.001,
+      "text": "dynamo tv table so we can give the ami a"
+    },
+    {
+      "start": 262.88,
+      "duration": 6.4,
+      "text": "role i am role we should never expose"
+    },
+    {
+      "start": 266.24,
+      "duration": 4.8,
+      "text": "access key the third option is obtain"
+    },
+    {
+      "start": 269.28,
+      "duration": 3.919,
+      "text": "the access key from a key server"
+    },
+    {
+      "start": 271.04,
+      "duration": 2.879,
+      "text": "launched in a private subnet"
+    },
+    {
+      "start": 273.199,
+      "duration": 2.801,
+      "text": "no"
+    },
+    {
+      "start": 273.919,
+      "duration": 4.161,
+      "text": "you should never do that"
+    },
+    {
+      "start": 276.0,
+      "duration": 4.16,
+      "text": "the fourth is create an iem role with"
+    },
+    {
+      "start": 278.08,
+      "duration": 4.32,
+      "text": "permissions to access the table and"
+    },
+    {
+      "start": 280.16,
+      "duration": 3.2,
+      "text": "launch all instance with it with the new"
+    },
+    {
+      "start": 282.4,
+      "duration": 3.68,
+      "text": "rule"
+    },
+    {
+      "start": 283.36,
+      "duration": 4.0,
+      "text": "this is the correct answers aws suggest"
+    },
+    {
+      "start": 286.08,
+      "duration": 2.72,
+      "text": "you to use"
+    },
+    {
+      "start": 287.36,
+      "duration": 4.16,
+      "text": "rules whenever you want to give"
+    },
+    {
+      "start": 288.8,
+      "duration": 5.839,
+      "text": "permissions to access other services"
+    },
+    {
+      "start": 291.52,
+      "duration": 4.8,
+      "text": "so the correct answer is create an im"
+    },
+    {
+      "start": 294.639,
+      "duration": 2.56,
+      "text": "rule with permissions to access the"
+    },
+    {
+      "start": 296.32,
+      "duration": 3.12,
+      "text": "table"
+    },
+    {
+      "start": 297.199,
+      "duration": 4.56,
+      "text": "here is the explanation let's move to"
+    },
+    {
+      "start": 299.44,
+      "duration": 5.12,
+      "text": "the next question"
+    },
+    {
+      "start": 301.759,
+      "duration": 6.641,
+      "text": "a company has deployed amazon redshift"
+    },
+    {
+      "start": 304.56,
+      "duration": 6.16,
+      "text": "for performing analytics on user data"
+    },
+    {
+      "start": 308.4,
+      "duration": 4.48,
+      "text": "when using amazon redshift which of the"
+    },
+    {
+      "start": 310.72,
+      "duration": 5.44,
+      "text": "following statements are correct in"
+    },
+    {
+      "start": 312.88,
+      "duration": 5.68,
+      "text": "relation to availability and durability"
+    },
+    {
+      "start": 316.16,
+      "duration": 4.4,
+      "text": "so these are the options given we have"
+    },
+    {
+      "start": 318.56,
+      "duration": 3.919,
+      "text": "to check which are the correct features"
+    },
+    {
+      "start": 320.56,
+      "duration": 3.919,
+      "text": "about amazon right shift"
+    },
+    {
+      "start": 322.479,
+      "duration": 5.121,
+      "text": "so you can pause the video and read the"
+    },
+    {
+      "start": 324.479,
+      "duration": 5.28,
+      "text": "question carefully now"
+    },
+    {
+      "start": 327.6,
+      "duration": 5.2,
+      "text": "so the options we have here is the first"
+    },
+    {
+      "start": 329.759,
+      "duration": 4.961,
+      "text": "is redshift always keeps three copies of"
+    },
+    {
+      "start": 332.8,
+      "duration": 4.08,
+      "text": "your data"
+    },
+    {
+      "start": 334.72,
+      "duration": 4.8,
+      "text": "the second is single node clusters"
+    },
+    {
+      "start": 336.88,
+      "duration": 5.52,
+      "text": "support data replication"
+    },
+    {
+      "start": 339.52,
+      "duration": 5.519,
+      "text": "the third is redshift provide continuous"
+    },
+    {
+      "start": 342.4,
+      "duration": 5.28,
+      "text": "or incremental backups"
+    },
+    {
+      "start": 345.039,
+      "duration": 4.16,
+      "text": "manual backups are automatically deleted"
+    },
+    {
+      "start": 347.68,
+      "duration": 4.239,
+      "text": "when"
+    },
+    {
+      "start": 349.199,
+      "duration": 5.44,
+      "text": "manual backups are automatically deleted"
+    },
+    {
+      "start": 351.919,
+      "duration": 5.041,
+      "text": "when you delete a cluster"
+    },
+    {
+      "start": 354.639,
+      "duration": 4.241,
+      "text": "red shift always keeps five copies of"
+    },
+    {
+      "start": 356.96,
+      "duration": 4.16,
+      "text": "your data"
+    },
+    {
+      "start": 358.88,
+      "duration": 5.12,
+      "text": "so redshift always keeps three copies of"
+    },
+    {
+      "start": 361.12,
+      "duration": 5.28,
+      "text": "your data the single node clusters do"
+    },
+    {
+      "start": 364.0,
+      "duration": 4.08,
+      "text": "not support data replication"
+    },
+    {
+      "start": 366.4,
+      "duration": 4.4,
+      "text": "redshift provides continuous or"
+    },
+    {
+      "start": 368.08,
+      "duration": 5.44,
+      "text": "incremental backup incremental means if"
+    },
+    {
+      "start": 370.8,
+      "duration": 4.16,
+      "text": "you have already created a backup the"
+    },
+    {
+      "start": 373.52,
+      "duration": 4.08,
+      "text": "changes that you have made after"
+    },
+    {
+      "start": 374.96,
+      "duration": 4.48,
+      "text": "creating the backup will only add so it"
+    },
+    {
+      "start": 377.6,
+      "duration": 3.68,
+      "text": "is incremental"
+    },
+    {
+      "start": 379.44,
+      "duration": 3.52,
+      "text": "this for this manual backups are"
+    },
+    {
+      "start": 381.28,
+      "duration": 4.32,
+      "text": "automatically deleted when you delete a"
+    },
+    {
+      "start": 382.96,
+      "duration": 5.12,
+      "text": "cluster the manual backups do not get"
+    },
+    {
+      "start": 385.6,
+      "duration": 5.039,
+      "text": "deleted automatically you have to delete"
+    },
+    {
+      "start": 388.08,
+      "duration": 4.8,
+      "text": "it from console or from cli"
+    },
+    {
+      "start": 390.639,
+      "duration": 4.481,
+      "text": "and the fifth is redshift always keeps"
+    },
+    {
+      "start": 392.88,
+      "duration": 4.319,
+      "text": "five copies of your data is wrong"
+    },
+    {
+      "start": 395.12,
+      "duration": 4.56,
+      "text": "because redshift always keeps three"
+    },
+    {
+      "start": 397.199,
+      "duration": 6.72,
+      "text": "copies of your data so the right answer"
+    },
+    {
+      "start": 399.68,
+      "duration": 4.239,
+      "text": "is the first and the third option"
+    },
+    {
+      "start": 404.56,
+      "duration": 4.88,
+      "text": "next question is"
+    },
+    {
+      "start": 407.199,
+      "duration": 4.161,
+      "text": "a company is developing a highly"
+    },
+    {
+      "start": 409.44,
+      "duration": 3.92,
+      "text": "available web application using"
+    },
+    {
+      "start": 411.36,
+      "duration": 4.399,
+      "text": "stateless web servers"
+    },
+    {
+      "start": 413.36,
+      "duration": 4.16,
+      "text": "which services are suitable for storing"
+    },
+    {
+      "start": 415.759,
+      "duration": 3.921,
+      "text": "session state data"
+    },
+    {
+      "start": 417.52,
+      "duration": 3.04,
+      "text": "so we need a database which is suitable"
+    },
+    {
+      "start": 419.68,
+      "duration": 3.519,
+      "text": "for"
+    },
+    {
+      "start": 420.56,
+      "duration": 4.32,
+      "text": "storing user session data"
+    },
+    {
+      "start": 423.199,
+      "duration": 4.641,
+      "text": "so please pause the video and try to"
+    },
+    {
+      "start": 424.88,
+      "duration": 2.96,
+      "text": "guess the right answer"
+    },
+    {
+      "start": 430.479,
+      "duration": 5.681,
+      "text": "the options we have here is cloudwatch"
+    },
+    {
+      "start": 433.199,
+      "duration": 4.961,
+      "text": "cloudwatch is a monitoring system by aws"
+    },
+    {
+      "start": 436.16,
+      "duration": 4.879,
+      "text": "and it is not a database or a storage"
+    },
+    {
+      "start": 438.16,
+      "duration": 6.56,
+      "text": "system so this is not the right answer"
+    },
+    {
+      "start": 441.039,
+      "duration": 5.361,
+      "text": "dynamodb is a nosql database"
+    },
+    {
+      "start": 444.72,
+      "duration": 4.16,
+      "text": "in aws"
+    },
+    {
+      "start": 446.4,
+      "duration": 5.12,
+      "text": "so this can be an option but let's check"
+    },
+    {
+      "start": 448.88,
+      "duration": 5.2,
+      "text": "the other other option as well"
+    },
+    {
+      "start": 451.52,
+      "duration": 4.959,
+      "text": "elastic load balancing elastic load"
+    },
+    {
+      "start": 454.08,
+      "duration": 4.88,
+      "text": "balancing is used to manage the load"
+    },
+    {
+      "start": 456.479,
+      "duration": 4.56,
+      "text": "between instances it is not a storage or"
+    },
+    {
+      "start": 458.96,
+      "duration": 3.679,
+      "text": "database service so this is not the"
+    },
+    {
+      "start": 461.039,
+      "duration": 3.44,
+      "text": "right answer"
+    },
+    {
+      "start": 462.639,
+      "duration": 4.96,
+      "text": "elastic cache"
+    },
+    {
+      "start": 464.479,
+      "duration": 6.0,
+      "text": "is a in-memory database service"
+    },
+    {
+      "start": 467.599,
+      "duration": 5.121,
+      "text": "which has radish or memcached"
+    },
+    {
+      "start": 470.479,
+      "duration": 4.481,
+      "text": "this can be an answer but let's check"
+    },
+    {
+      "start": 472.72,
+      "duration": 5.039,
+      "text": "the last one as well"
+    },
+    {
+      "start": 474.96,
+      "duration": 5.84,
+      "text": "storage gateway storage gateway is used"
+    },
+    {
+      "start": 477.759,
+      "duration": 4.481,
+      "text": "to integrate between the aws and the"
+    },
+    {
+      "start": 480.8,
+      "duration": 2.799,
+      "text": "on-premise"
+    },
+    {
+      "start": 482.24,
+      "duration": 3.359,
+      "text": "storage"
+    },
+    {
+      "start": 483.599,
+      "duration": 3.841,
+      "text": "and it is not suitable for"
+    },
+    {
+      "start": 485.599,
+      "duration": 4.641,
+      "text": "storing session"
+    },
+    {
+      "start": 487.44,
+      "duration": 5.68,
+      "text": "data so the correct answer is dynamodb"
+    },
+    {
+      "start": 490.24,
+      "duration": 5.76,
+      "text": "and elastic cache"
+    },
+    {
+      "start": 493.12,
+      "duration": 6.24,
+      "text": "you can read out the explanation here"
+    },
+    {
+      "start": 496.0,
+      "duration": 5.44,
+      "text": "let's move on to the next question"
+    },
+    {
+      "start": 499.36,
+      "duration": 4.399,
+      "text": "a client from a large multinational"
+    },
+    {
+      "start": 501.44,
+      "duration": 4.64,
+      "text": "corporation is working on a deployment"
+    },
+    {
+      "start": 503.759,
+      "duration": 3.84,
+      "text": "of significant amount of resources into"
+    },
+    {
+      "start": 506.08,
+      "duration": 3.28,
+      "text": "aws"
+    },
+    {
+      "start": 507.599,
+      "duration": 4.641,
+      "text": "the client would like to be able to"
+    },
+    {
+      "start": 509.36,
+      "duration": 4.08,
+      "text": "deploy resources across multiple aws"
+    },
+    {
+      "start": 512.24,
+      "duration": 4.0,
+      "text": "accounts"
+    },
+    {
+      "start": 513.44,
+      "duration": 3.92,
+      "text": "and regions using a single tool set and"
+    },
+    {
+      "start": 516.24,
+      "duration": 2.96,
+      "text": "template"
+    },
+    {
+      "start": 517.36,
+      "duration": 3.52,
+      "text": "you have been asked to suggest a tool"
+    },
+    {
+      "start": 519.2,
+      "duration": 4.16,
+      "text": "set that you can provide this"
+    },
+    {
+      "start": 520.88,
+      "duration": 3.92,
+      "text": "functionality"
+    },
+    {
+      "start": 523.36,
+      "duration": 3.28,
+      "text": "so client is working on different"
+    },
+    {
+      "start": 524.8,
+      "duration": 3.52,
+      "text": "regions and different accounts he wants"
+    },
+    {
+      "start": 526.64,
+      "duration": 3.52,
+      "text": "to have a single tool set that he can"
+    },
+    {
+      "start": 528.32,
+      "duration": 4.32,
+      "text": "use in all the accounts you don't want"
+    },
+    {
+      "start": 530.16,
+      "duration": 4.16,
+      "text": "to repeat the task again and again so"
+    },
+    {
+      "start": 532.64,
+      "duration": 4.24,
+      "text": "this can be done using a service called"
+    },
+    {
+      "start": 534.32,
+      "duration": 4.959,
+      "text": "as cloud formation which lets you create"
+    },
+    {
+      "start": 536.88,
+      "duration": 5.2,
+      "text": "templates or stacks so that you can use"
+    },
+    {
+      "start": 539.279,
+      "duration": 4.401,
+      "text": "the same stack everywhere you can pause"
+    },
+    {
+      "start": 542.08,
+      "duration": 5.8,
+      "text": "the video now and"
+    },
+    {
+      "start": 543.68,
+      "duration": 4.2,
+      "text": "try to figure out the right answer"
+    },
+    {
+      "start": 549.2,
+      "duration": 4.4,
+      "text": "the first option we have is use a"
+    },
+    {
+      "start": 551.279,
+      "duration": 5.041,
+      "text": "cloudfront formation template that"
+    },
+    {
+      "start": 553.6,
+      "duration": 5.44,
+      "text": "creates a stack and specify the logical"
+    },
+    {
+      "start": 556.32,
+      "duration": 5.68,
+      "text": "ids of each account and region"
+    },
+    {
+      "start": 559.04,
+      "duration": 5.52,
+      "text": "according to aws regular cloud formation"
+    },
+    {
+      "start": 562.0,
+      "duration": 4.48,
+      "text": "template cannot be used across regions"
+    },
+    {
+      "start": 564.56,
+      "duration": 3.92,
+      "text": "and account you would need to create"
+    },
+    {
+      "start": 566.48,
+      "duration": 4.4,
+      "text": "copies of template and then manage the"
+    },
+    {
+      "start": 568.48,
+      "duration": 5.039,
+      "text": "updates so this is not the suitable"
+    },
+    {
+      "start": 570.88,
+      "duration": 5.44,
+      "text": "option the second is use a cloud"
+    },
+    {
+      "start": 573.519,
+      "duration": 5.281,
+      "text": "formation stack set and specify the"
+    },
+    {
+      "start": 576.32,
+      "duration": 5.28,
+      "text": "target accounts and regions in which the"
+    },
+    {
+      "start": 578.8,
+      "duration": 4.719,
+      "text": "stacks will be created so the aws cloud"
+    },
+    {
+      "start": 581.6,
+      "duration": 3.84,
+      "text": "formation stack sets"
+    },
+    {
+      "start": 583.519,
+      "duration": 4.401,
+      "text": "extend the functionality of stacks by"
+    },
+    {
+      "start": 585.44,
+      "duration": 5.44,
+      "text": "enabling you to create update or delete"
+    },
+    {
+      "start": 587.92,
+      "duration": 6.16,
+      "text": "stacks across multiple accounts and"
+    },
+    {
+      "start": 590.88,
+      "duration": 5.44,
+      "text": "regions with it with a single operation"
+    },
+    {
+      "start": 594.08,
+      "duration": 5.36,
+      "text": "so you can create the same resources"
+    },
+    {
+      "start": 596.32,
+      "duration": 5.36,
+      "text": "using stack set you just need to"
+    },
+    {
+      "start": 599.44,
+      "duration": 3.76,
+      "text": "specify the target account"
+    },
+    {
+      "start": 601.68,
+      "duration": 3.76,
+      "text": "and the region in which you want to"
+    },
+    {
+      "start": 603.2,
+      "duration": 4.0,
+      "text": "create it this seems to be a correct"
+    },
+    {
+      "start": 605.44,
+      "duration": 4.0,
+      "text": "answer but let's just check the other"
+    },
+    {
+      "start": 607.2,
+      "duration": 4.56,
+      "text": "answers as well you can use a"
+    },
+    {
+      "start": 609.44,
+      "duration": 4.56,
+      "text": "third-party product such as terraform"
+    },
+    {
+      "start": 611.76,
+      "duration": 4.16,
+      "text": "that has support for multiple aws"
+    },
+    {
+      "start": 614.0,
+      "duration": 3.519,
+      "text": "accounts and region"
+    },
+    {
+      "start": 615.92,
+      "duration": 2.56,
+      "text": "you don't need to use terraform even"
+    },
+    {
+      "start": 617.519,
+      "duration": 3.921,
+      "text": "though"
+    },
+    {
+      "start": 618.48,
+      "duration": 5.2,
+      "text": "aws has its own service cloud formation"
+    },
+    {
+      "start": 621.44,
+      "duration": 4.079,
+      "text": "so you don't need to do this so this is"
+    },
+    {
+      "start": 623.68,
+      "duration": 3.92,
+      "text": "the wrong answer as well"
+    },
+    {
+      "start": 625.519,
+      "duration": 4.641,
+      "text": "so last is this cannot be done use"
+    },
+    {
+      "start": 627.6,
+      "duration": 5.28,
+      "text": "separate cloud formation templates"
+    },
+    {
+      "start": 630.16,
+      "duration": 3.44,
+      "text": "this can absolutely be done and"
+    },
+    {
+      "start": 632.88,
+      "duration": 3.6,
+      "text": "so"
+    },
+    {
+      "start": 633.6,
+      "duration": 6.239,
+      "text": "the right answer according to the"
+    },
+    {
+      "start": 636.48,
+      "duration": 6.0,
+      "text": "question is the second one that is use"
+    },
+    {
+      "start": 639.839,
+      "duration": 5.361,
+      "text": "cloud formation temp stack sets and"
+    },
+    {
+      "start": 642.48,
+      "duration": 6.08,
+      "text": "specify the targets and region in which"
+    },
+    {
+      "start": 645.2,
+      "duration": 3.36,
+      "text": "the stacks will be created"
+    },
+    {
+      "start": 649.12,
+      "duration": 4.959,
+      "text": "next question is a new big data"
+    },
+    {
+      "start": 651.519,
+      "duration": 5.041,
+      "text": "application you are developing will use"
+    },
+    {
+      "start": 654.079,
+      "duration": 5.361,
+      "text": "hundreds of vc2 instances"
+    },
+    {
+      "start": 656.56,
+      "duration": 4.399,
+      "text": "to write data to a shared file system"
+    },
+    {
+      "start": 659.44,
+      "duration": 5.12,
+      "text": "the file system must be stored"
+    },
+    {
+      "start": 660.959,
+      "duration": 5.841,
+      "text": "redundantly across multiple acs"
+    },
+    {
+      "start": 664.56,
+      "duration": 4.56,
+      "text": "within a region and allow the ec2"
+    },
+    {
+      "start": 666.8,
+      "duration": 3.52,
+      "text": "instance to concurrently access the file"
+    },
+    {
+      "start": 669.12,
+      "duration": 3.2,
+      "text": "system"
+    },
+    {
+      "start": 670.32,
+      "duration": 3.199,
+      "text": "the required throughput is multiple gb"
+    },
+    {
+      "start": 672.32,
+      "duration": 3.68,
+      "text": "per second"
+    },
+    {
+      "start": 673.519,
+      "duration": 5.601,
+      "text": "from the options presented which storage"
+    },
+    {
+      "start": 676.0,
+      "duration": 4.88,
+      "text": "solution can deliver this requirements"
+    },
+    {
+      "start": 679.12,
+      "duration": 3.04,
+      "text": "so the question is asking for a shared"
+    },
+    {
+      "start": 680.88,
+      "duration": 3.199,
+      "text": "file system"
+    },
+    {
+      "start": 682.16,
+      "duration": 4.64,
+      "text": "that should be"
+    },
+    {
+      "start": 684.079,
+      "duration": 5.361,
+      "text": "available across multiple ac's"
+    },
+    {
+      "start": 686.8,
+      "duration": 5.84,
+      "text": "so you can pause the video and try to"
+    },
+    {
+      "start": 689.44,
+      "duration": 3.2,
+      "text": "figure out the right answer"
+    },
+    {
+      "start": 698.56,
+      "duration": 5.68,
+      "text": "so the first option we have here is"
+    },
+    {
+      "start": 700.32,
+      "duration": 6.32,
+      "text": "amazon ebs using multiple volumes in a"
+    },
+    {
+      "start": 704.24,
+      "duration": 4.64,
+      "text": "raid 0 configuration"
+    },
+    {
+      "start": 706.64,
+      "duration": 4.08,
+      "text": "amazon ebs"
+    },
+    {
+      "start": 708.88,
+      "duration": 5.44,
+      "text": "volumes cannot be accessed by"
+    },
+    {
+      "start": 710.72,
+      "duration": 6.08,
+      "text": "concurrently many or multiple instances"
+    },
+    {
+      "start": 714.32,
+      "duration": 5.199,
+      "text": "so it can be accessed only by a single"
+    },
+    {
+      "start": 716.8,
+      "duration": 5.12,
+      "text": "instance amazon ebs is a block store"
+    },
+    {
+      "start": 719.519,
+      "duration": 4.401,
+      "text": "which can be accessed by only a single"
+    },
+    {
+      "start": 721.92,
+      "duration": 3.919,
+      "text": "instance question is asking for file"
+    },
+    {
+      "start": 723.92,
+      "duration": 4.479,
+      "text": "system which is going to be attached to"
+    },
+    {
+      "start": 725.839,
+      "duration": 5.12,
+      "text": "multiple ec2 instances"
+    },
+    {
+      "start": 728.399,
+      "duration": 5.041,
+      "text": "so this is not the correct answer"
+    },
+    {
+      "start": 730.959,
+      "duration": 4.961,
+      "text": "the second is amazon efs"
+    },
+    {
+      "start": 733.44,
+      "duration": 4.959,
+      "text": "amazon efs is the best solution"
+    },
+    {
+      "start": 735.92,
+      "duration": 4.719,
+      "text": "as it is high level storage"
+    },
+    {
+      "start": 738.399,
+      "duration": 4.481,
+      "text": "and stores data redundantly across"
+    },
+    {
+      "start": 740.639,
+      "duration": 4.081,
+      "text": "multiple acs"
+    },
+    {
+      "start": 742.88,
+      "duration": 4.24,
+      "text": "within a region and you can concurrently"
+    },
+    {
+      "start": 744.72,
+      "duration": 4.16,
+      "text": "connect up to thousands of instances to"
+    },
+    {
+      "start": 747.12,
+      "duration": 4.32,
+      "text": "a single file system"
+    },
+    {
+      "start": 748.88,
+      "duration": 4.32,
+      "text": "so this seems to be a correct answer but"
+    },
+    {
+      "start": 751.44,
+      "duration": 2.639,
+      "text": "let's just check out the other answers"
+    },
+    {
+      "start": 753.2,
+      "duration": 2.4,
+      "text": "as well"
+    },
+    {
+      "start": 754.079,
+      "duration": 3.601,
+      "text": "amazon s3"
+    },
+    {
+      "start": 755.6,
+      "duration": 4.799,
+      "text": "s3 is object store and not a file"
+    },
+    {
+      "start": 757.68,
+      "duration": 5.52,
+      "text": "gateway so this is not the right answer"
+    },
+    {
+      "start": 760.399,
+      "duration": 5.12,
+      "text": "the fourth is amazon storage gateway"
+    },
+    {
+      "start": 763.2,
+      "duration": 4.48,
+      "text": "a storage gateway is a range of products"
+    },
+    {
+      "start": 765.519,
+      "duration": 4.56,
+      "text": "used for on-premise data storage"
+    },
+    {
+      "start": 767.68,
+      "duration": 4.08,
+      "text": "management and can be configured to"
+    },
+    {
+      "start": 770.079,
+      "duration": 3.281,
+      "text": "cache data locally"
+    },
+    {
+      "start": 771.76,
+      "duration": 4.48,
+      "text": "backup data to the cloud and also"
+    },
+    {
+      "start": 773.36,
+      "duration": 5.2,
+      "text": "provide a virtual tape backup solution"
+    },
+    {
+      "start": 776.24,
+      "duration": 4.88,
+      "text": "so this is not the right answer as well"
+    },
+    {
+      "start": 778.56,
+      "duration": 5.04,
+      "text": "the correct answer is amazon efs which"
+    },
+    {
+      "start": 781.12,
+      "duration": 3.719,
+      "text": "is a file system and can be attached to"
+    },
+    {
+      "start": 783.6,
+      "duration": 5.12,
+      "text": "multiple"
+    },
+    {
+      "start": 784.839,
+      "duration": 6.12,
+      "text": "ec2's the next question is"
+    },
+    {
+      "start": 788.72,
+      "duration": 5.04,
+      "text": "you need to configure an application to"
+    },
+    {
+      "start": 790.959,
+      "duration": 6.081,
+      "text": "retain information about user session"
+    },
+    {
+      "start": 793.76,
+      "duration": 5.6,
+      "text": "and have decided to implement a layer"
+    },
+    {
+      "start": 797.04,
+      "duration": 4.16,
+      "text": "within the application architecture to"
+    },
+    {
+      "start": 799.36,
+      "duration": 5.039,
+      "text": "store this information"
+    },
+    {
+      "start": 801.2,
+      "duration": 3.92,
+      "text": "which of the option below could be used"
+    },
+    {
+      "start": 804.399,
+      "duration": 2.641,
+      "text": "so"
+    },
+    {
+      "start": 805.12,
+      "duration": 3.92,
+      "text": "you want to store"
+    },
+    {
+      "start": 807.04,
+      "duration": 4.96,
+      "text": "user session"
+    },
+    {
+      "start": 809.04,
+      "duration": 5.599,
+      "text": "and you need to implement a layer"
+    },
+    {
+      "start": 812.0,
+      "duration": 4.399,
+      "text": "within the application architecture"
+    },
+    {
+      "start": 814.639,
+      "duration": 5.44,
+      "text": "so you can pause the video and try to"
+    },
+    {
+      "start": 816.399,
+      "duration": 3.68,
+      "text": "figure out the right answer for this"
+    },
+    {
+      "start": 822.399,
+      "duration": 5.44,
+      "text": "the first option we have is a workflow"
+    },
+    {
+      "start": 825.04,
+      "duration": 5.359,
+      "text": "service such as amazon simple workflow"
+    },
+    {
+      "start": 827.839,
+      "duration": 5.601,
+      "text": "service are used for carrying out"
+    },
+    {
+      "start": 830.399,
+      "duration": 4.56,
+      "text": "series of tasks in coordinated task flow"
+    },
+    {
+      "start": 833.44,
+      "duration": 3.92,
+      "text": "they are not suitable for storing"
+    },
+    {
+      "start": 834.959,
+      "duration": 3.361,
+      "text": "session data so this is not the correct"
+    },
+    {
+      "start": 837.36,
+      "duration": 3.44,
+      "text": "answer"
+    },
+    {
+      "start": 838.32,
+      "duration": 4.079,
+      "text": "the second is sticky session on elastic"
+    },
+    {
+      "start": 840.8,
+      "duration": 3.599,
+      "text": "load balancer"
+    },
+    {
+      "start": 842.399,
+      "duration": 5.041,
+      "text": "so sticky session also known as session"
+    },
+    {
+      "start": 844.399,
+      "duration": 5.041,
+      "text": "affinity allows you to route a site user"
+    },
+    {
+      "start": 847.44,
+      "duration": 4.959,
+      "text": "to a particular web server"
+    },
+    {
+      "start": 849.44,
+      "duration": 4.0,
+      "text": "that is managing that individual users"
+    },
+    {
+      "start": 852.399,
+      "duration": 3.12,
+      "text": "session"
+    },
+    {
+      "start": 853.44,
+      "duration": 4.32,
+      "text": "the sessions validity can be determined"
+    },
+    {
+      "start": 855.519,
+      "duration": 4.481,
+      "text": "by number of methods including the"
+    },
+    {
+      "start": 857.76,
+      "duration": 3.84,
+      "text": "client side cookie or wire configurable"
+    },
+    {
+      "start": 860.0,
+      "duration": 3.68,
+      "text": "duration parameter"
+    },
+    {
+      "start": 861.6,
+      "duration": 3.919,
+      "text": "so when you enable sticky session"
+    },
+    {
+      "start": 863.68,
+      "duration": 4.24,
+      "text": "elastic load balancer"
+    },
+    {
+      "start": 865.519,
+      "duration": 5.041,
+      "text": "your user will be directed only to a"
+    },
+    {
+      "start": 867.92,
+      "duration": 4.96,
+      "text": "particular instance and this can be used"
+    },
+    {
+      "start": 870.56,
+      "duration": 4.719,
+      "text": "to store the session to get the session"
+    },
+    {
+      "start": 872.88,
+      "duration": 5.92,
+      "text": "data as well so this seems to be a right"
+    },
+    {
+      "start": 875.279,
+      "duration": 4.961,
+      "text": "answer let's move on to the next option"
+    },
+    {
+      "start": 878.8,
+      "duration": 5.2,
+      "text": "a relational"
+    },
+    {
+      "start": 880.24,
+      "duration": 5.68,
+      "text": "data store such as amazon rds"
+    },
+    {
+      "start": 884.0,
+      "duration": 4.48,
+      "text": "relational databases are not typically"
+    },
+    {
+      "start": 885.92,
+      "duration": 5.12,
+      "text": "used for storing session data due to the"
+    },
+    {
+      "start": 888.48,
+      "duration": 3.919,
+      "text": "rigid schema that tightly control the"
+    },
+    {
+      "start": 891.04,
+      "duration": 3.44,
+      "text": "format in which"
+    },
+    {
+      "start": 892.399,
+      "duration": 3.921,
+      "text": "the data can be stored"
+    },
+    {
+      "start": 894.48,
+      "duration": 2.719,
+      "text": "so this does not seem to be the perfect"
+    },
+    {
+      "start": 896.32,
+      "duration": 3.04,
+      "text": "answer"
+    },
+    {
+      "start": 897.199,
+      "duration": 5.521,
+      "text": "and the last option we have is key value"
+    },
+    {
+      "start": 899.36,
+      "duration": 5.76,
+      "text": "stores such as elastic cache redis and"
+    },
+    {
+      "start": 902.72,
+      "duration": 4.64,
+      "text": "elastic cache redis is a key value store"
+    },
+    {
+      "start": 905.12,
+      "duration": 5.04,
+      "text": "which is perfect for"
+    },
+    {
+      "start": 907.36,
+      "duration": 5.12,
+      "text": "storing session data so the two options"
+    },
+    {
+      "start": 910.16,
+      "duration": 4.88,
+      "text": "which are correct is the second and the"
+    },
+    {
+      "start": 912.48,
+      "duration": 4.96,
+      "text": "fourth option that is sticky session on"
+    },
+    {
+      "start": 915.04,
+      "duration": 4.4,
+      "text": "elastic load balancer and key value"
+    },
+    {
+      "start": 917.44,
+      "duration": 5.36,
+      "text": "store such as elastic cache for"
+    },
+    {
+      "start": 919.44,
+      "duration": 3.36,
+      "text": "implementing a cache layer"
+    },
+    {
+      "start": 923.6,
+      "duration": 4.799,
+      "text": "the next question is a data scientist in"
+    },
+    {
+      "start": 925.6,
+      "duration": 5.599,
+      "text": "your company looking for a service that"
+    },
+    {
+      "start": 928.399,
+      "duration": 5.921,
+      "text": "can process and analyze real time"
+    },
+    {
+      "start": 931.199,
+      "duration": 7.121,
+      "text": "streaming data so the question is asking"
+    },
+    {
+      "start": 934.32,
+      "duration": 6.0,
+      "text": "to analyze real time streaming data"
+    },
+    {
+      "start": 938.32,
+      "duration": 4.4,
+      "text": "and whenever you see real time streaming"
+    },
+    {
+      "start": 940.32,
+      "duration": 4.48,
+      "text": "data or anything real time in the"
+    },
+    {
+      "start": 942.72,
+      "duration": 4.32,
+      "text": "question you should always choose"
+    },
+    {
+      "start": 944.8,
+      "duration": 4.399,
+      "text": "kinesis to store"
+    },
+    {
+      "start": 947.04,
+      "duration": 4.88,
+      "text": "real-time data we use kinesis data"
+    },
+    {
+      "start": 949.199,
+      "duration": 5.76,
+      "text": "stream and to analyze or to do analytics"
+    },
+    {
+      "start": 951.92,
+      "duration": 5.279,
+      "text": "on real-time data we use channel kinesis"
+    },
+    {
+      "start": 954.959,
+      "duration": 4.721,
+      "text": "data analytics"
+    },
+    {
+      "start": 957.199,
+      "duration": 4.721,
+      "text": "so the first option seems to be correct"
+    },
+    {
+      "start": 959.68,
+      "duration": 4.959,
+      "text": "but let's check the other option as well"
+    },
+    {
+      "start": 961.92,
+      "duration": 4.4,
+      "text": "the kinesis data streams and kinesis"
+    },
+    {
+      "start": 964.639,
+      "duration": 4.88,
+      "text": "fire hose"
+    },
+    {
+      "start": 966.32,
+      "duration": 5.439,
+      "text": "data stream is used to store the"
+    },
+    {
+      "start": 969.519,
+      "duration": 4.24,
+      "text": "custom app to store or analyze streaming"
+    },
+    {
+      "start": 971.759,
+      "duration": 2.801,
+      "text": "data for specialized need"
+    },
+    {
+      "start": 973.759,
+      "duration": 3.601,
+      "text": "and"
+    },
+    {
+      "start": 974.56,
+      "duration": 5.36,
+      "text": "fire hose on the other hand fire hose"
+    },
+    {
+      "start": 977.36,
+      "duration": 5.44,
+      "text": "cannot be used for running sql service"
+    },
+    {
+      "start": 979.92,
+      "duration": 4.96,
+      "text": "so this combination is not the right one"
+    },
+    {
+      "start": 982.8,
+      "duration": 5.039,
+      "text": "elastic cache and emr"
+    },
+    {
+      "start": 984.88,
+      "duration": 5.04,
+      "text": "elastic cache is an in-memory database"
+    },
+    {
+      "start": 987.839,
+      "duration": 3.201,
+      "text": "so it is not used for real-time"
+    },
+    {
+      "start": 989.92,
+      "duration": 3.839,
+      "text": "streaming"
+    },
+    {
+      "start": 991.04,
+      "duration": 5.52,
+      "text": "and emr is a hadoop framework for big"
+    },
+    {
+      "start": 993.759,
+      "duration": 4.88,
+      "text": "data which cannot do"
+    },
+    {
+      "start": 996.56,
+      "duration": 3.68,
+      "text": "analytics as well so this is not the"
+    },
+    {
+      "start": 998.639,
+      "duration": 5.521,
+      "text": "right answer"
+    },
+    {
+      "start": 1000.24,
+      "duration": 6.8,
+      "text": "the last option is dynamodb and emr"
+    },
+    {
+      "start": 1004.16,
+      "duration": 5.52,
+      "text": "so dynamodb is a nosql database that can"
+    },
+    {
+      "start": 1007.04,
+      "duration": 5.12,
+      "text": "be used for storing data from a stream"
+    },
+    {
+      "start": 1009.68,
+      "duration": 3.68,
+      "text": "but cannot be used to process or analyze"
+    },
+    {
+      "start": 1012.16,
+      "duration": 4.16,
+      "text": "the data"
+    },
+    {
+      "start": 1013.36,
+      "duration": 6.24,
+      "text": "or to query it with sql service whereas"
+    },
+    {
+      "start": 1016.32,
+      "duration": 5.6,
+      "text": "emr is a hosted hadoop framework and not"
+    },
+    {
+      "start": 1019.6,
+      "duration": 4.719,
+      "text": "suitable for analytics as well"
+    },
+    {
+      "start": 1021.92,
+      "duration": 4.56,
+      "text": "so the right answer is the first option"
+    },
+    {
+      "start": 1024.319,
+      "duration": 5.841,
+      "text": "kinesis data stream and"
+    },
+    {
+      "start": 1026.48,
+      "duration": 3.68,
+      "text": "kinesis data analytics"
+    },
+    {
+      "start": 1030.64,
+      "duration": 3.36,
+      "text": "the next question is"
+    },
+    {
+      "start": 1032.24,
+      "duration": 4.799,
+      "text": "which of the following approaches"
+    },
+    {
+      "start": 1034.0,
+      "duration": 5.839,
+      "text": "provides lowest cost for amazon elastic"
+    },
+    {
+      "start": 1037.039,
+      "duration": 6.0,
+      "text": "block store snapshots while giving you"
+    },
+    {
+      "start": 1039.839,
+      "duration": 5.041,
+      "text": "the ability to fully restore data"
+    },
+    {
+      "start": 1043.039,
+      "duration": 3.361,
+      "text": "so the question wants you to find out"
+    },
+    {
+      "start": 1044.88,
+      "duration": 2.48,
+      "text": "the lowest cost"
+    },
+    {
+      "start": 1046.4,
+      "duration": 4.88,
+      "text": "for"
+    },
+    {
+      "start": 1047.36,
+      "duration": 6.4,
+      "text": "amazon ebs snapshots"
+    },
+    {
+      "start": 1051.28,
+      "duration": 5.2,
+      "text": "so pause the video and try to figure out"
+    },
+    {
+      "start": 1053.76,
+      "duration": 2.72,
+      "text": "the right answer"
+    },
+    {
+      "start": 1060.64,
+      "duration": 4.72,
+      "text": "the first option is maintain a single"
+    },
+    {
+      "start": 1062.559,
+      "duration": 4.961,
+      "text": "snapshot the latest snapshot is both"
+    },
+    {
+      "start": 1065.36,
+      "duration": 4.64,
+      "text": "incremental and complete"
+    },
+    {
+      "start": 1067.52,
+      "duration": 4.88,
+      "text": "so in ebs you can take snapshot"
+    },
+    {
+      "start": 1070.0,
+      "duration": 4.16,
+      "text": "periodically the scenario is that you"
+    },
+    {
+      "start": 1072.4,
+      "duration": 4.24,
+      "text": "need to reduce storage cost by"
+    },
+    {
+      "start": 1074.16,
+      "duration": 5.2,
+      "text": "maintaining a few eba snapshot so you"
+    },
+    {
+      "start": 1076.64,
+      "duration": 5.68,
+      "text": "can also maintain a single snapshot and"
+    },
+    {
+      "start": 1079.36,
+      "duration": 5.36,
+      "text": "it is always the latest snapshot is both"
+    },
+    {
+      "start": 1082.32,
+      "duration": 4.56,
+      "text": "incremental and complete incremental in"
+    },
+    {
+      "start": 1084.72,
+      "duration": 4.64,
+      "text": "the sense means you took a snapshot and"
+    },
+    {
+      "start": 1086.88,
+      "duration": 5.039,
+      "text": "if you made changes only the changes is"
+    },
+    {
+      "start": 1089.36,
+      "duration": 3.76,
+      "text": "going to be saved not the whole"
+    },
+    {
+      "start": 1091.919,
+      "duration": 3.521,
+      "text": "again"
+    },
+    {
+      "start": 1093.12,
+      "duration": 4.559,
+      "text": "so this is the first option seems to be"
+    },
+    {
+      "start": 1095.44,
+      "duration": 4.479,
+      "text": "correct the second is maintain the most"
+    },
+    {
+      "start": 1097.679,
+      "duration": 4.801,
+      "text": "current snapshot and archive the"
+    },
+    {
+      "start": 1099.919,
+      "duration": 4.401,
+      "text": "original to amazon glacier"
+    },
+    {
+      "start": 1102.48,
+      "duration": 4.88,
+      "text": "there is no need to archive the original"
+    },
+    {
+      "start": 1104.32,
+      "duration": 6.239,
+      "text": "snapshot to amazon glacier ebs copies"
+    },
+    {
+      "start": 1107.36,
+      "duration": 5.679,
+      "text": "your data across multiple servers in 80"
+    },
+    {
+      "start": 1110.559,
+      "duration": 4.801,
+      "text": "in different availability zones for"
+    },
+    {
+      "start": 1113.039,
+      "duration": 4.401,
+      "text": "durability so this is not the right"
+    },
+    {
+      "start": 1115.36,
+      "duration": 2.96,
+      "text": "answer and this is not a cost effective"
+    },
+    {
+      "start": 1117.44,
+      "duration": 3.599,
+      "text": "as well"
+    },
+    {
+      "start": 1118.32,
+      "duration": 5.44,
+      "text": "the third is maintain two snapshots the"
+    },
+    {
+      "start": 1121.039,
+      "duration": 6.401,
+      "text": "original snapshot and latest incremental"
+    },
+    {
+      "start": 1123.76,
+      "duration": 5.44,
+      "text": "snapshot this is also not the right"
+    },
+    {
+      "start": 1127.44,
+      "duration": 4.32,
+      "text": "answer because"
+    },
+    {
+      "start": 1129.2,
+      "duration": 4.719,
+      "text": "a single snapshot is both"
+    },
+    {
+      "start": 1131.76,
+      "duration": 4.159,
+      "text": "incremental and complete"
+    },
+    {
+      "start": 1133.919,
+      "duration": 3.841,
+      "text": "so this is not the correct answer the"
+    },
+    {
+      "start": 1135.919,
+      "duration": 4.64,
+      "text": "last option is maintain the original"
+    },
+    {
+      "start": 1137.76,
+      "duration": 5.12,
+      "text": "snapshot subsequent snapshot will"
+    },
+    {
+      "start": 1140.559,
+      "duration": 4.0,
+      "text": "overwrite one another this is not the"
+    },
+    {
+      "start": 1142.88,
+      "duration": 3.44,
+      "text": "correct answer as well"
+    },
+    {
+      "start": 1144.559,
+      "duration": 4.081,
+      "text": "the correct answer is maintain a single"
+    },
+    {
+      "start": 1146.32,
+      "duration": 4.88,
+      "text": "snapshot and the latest snapshot with"
+    },
+    {
+      "start": 1148.64,
+      "duration": 5.039,
+      "text": "both incremental and complete"
+    },
+    {
+      "start": 1151.2,
+      "duration": 4.4,
+      "text": "the next option next question is"
+    },
+    {
+      "start": 1153.679,
+      "duration": 4.481,
+      "text": "you are looking for cost effective way"
+    },
+    {
+      "start": 1155.6,
+      "duration": 5.199,
+      "text": "to convert the files from their current"
+    },
+    {
+      "start": 1158.16,
+      "duration": 5.6,
+      "text": "format into format that are compatible"
+    },
+    {
+      "start": 1160.799,
+      "duration": 5.12,
+      "text": "with smartphone and tablets the files"
+    },
+    {
+      "start": 1163.76,
+      "duration": 5.279,
+      "text": "are currently stored in an s3 bucket"
+    },
+    {
+      "start": 1165.919,
+      "duration": 4.721,
+      "text": "what aws service can help with conv"
+    },
+    {
+      "start": 1169.039,
+      "duration": 3.681,
+      "text": "converting the files"
+    },
+    {
+      "start": 1170.64,
+      "duration": 4.88,
+      "text": "so the question is asking for a service"
+    },
+    {
+      "start": 1172.72,
+      "duration": 3.92,
+      "text": "that can convert file from one format to"
+    },
+    {
+      "start": 1175.52,
+      "duration": 3.36,
+      "text": "another"
+    },
+    {
+      "start": 1176.64,
+      "duration": 6.399,
+      "text": "so you can pause the video now and try"
+    },
+    {
+      "start": 1178.88,
+      "duration": 4.159,
+      "text": "to figure out the correct answer"
+    },
+    {
+      "start": 1185.28,
+      "duration": 3.36,
+      "text": "the first option we have is"
+    },
+    {
+      "start": 1187.28,
+      "duration": 4.0,
+      "text": "recognition"
+    },
+    {
+      "start": 1188.64,
+      "duration": 5.68,
+      "text": "so recognition is a deep learning based"
+    },
+    {
+      "start": 1191.28,
+      "duration": 5.12,
+      "text": "visual analysis service it is not used"
+    },
+    {
+      "start": 1194.32,
+      "duration": 4.8,
+      "text": "for converting"
+    },
+    {
+      "start": 1196.4,
+      "duration": 6.159,
+      "text": "files from one format to another"
+    },
+    {
+      "start": 1199.12,
+      "duration": 5.6,
+      "text": "the second is amazon elastic transcoder"
+    },
+    {
+      "start": 1202.559,
+      "duration": 3.841,
+      "text": "which is highly scalable easy to use and"
+    },
+    {
+      "start": 1204.72,
+      "duration": 4.4,
+      "text": "cost effective way"
+    },
+    {
+      "start": 1206.4,
+      "duration": 4.8,
+      "text": "for developers to convert videos and"
+    },
+    {
+      "start": 1209.12,
+      "duration": 4.32,
+      "text": "audio files from the source format to"
+    },
+    {
+      "start": 1211.2,
+      "duration": 3.92,
+      "text": "other formats so this seems to be a"
+    },
+    {
+      "start": 1213.44,
+      "duration": 4.08,
+      "text": "right answer"
+    },
+    {
+      "start": 1215.12,
+      "duration": 4.24,
+      "text": "the next option is data pipeline"
+    },
+    {
+      "start": 1217.52,
+      "duration": 4.56,
+      "text": "data pipeline helps you to move"
+    },
+    {
+      "start": 1219.36,
+      "duration": 5.52,
+      "text": "integrate and process data across aws"
+    },
+    {
+      "start": 1222.08,
+      "duration": 4.32,
+      "text": "compute and storage resources so this is"
+    },
+    {
+      "start": 1224.88,
+      "duration": 4.24,
+      "text": "not something that you can use for"
+    },
+    {
+      "start": 1226.4,
+      "duration": 4.48,
+      "text": "converting files the last is the amazon"
+    },
+    {
+      "start": 1229.12,
+      "duration": 3.52,
+      "text": "personalize"
+    },
+    {
+      "start": 1230.88,
+      "duration": 3.919,
+      "text": "which is a machine learning service that"
+    },
+    {
+      "start": 1232.64,
+      "duration": 4.32,
+      "text": "makes easy for developers to create"
+    },
+    {
+      "start": 1234.799,
+      "duration": 4.641,
+      "text": "individualized recommendation for"
+    },
+    {
+      "start": 1236.96,
+      "duration": 4.32,
+      "text": "customers within the application"
+    },
+    {
+      "start": 1239.44,
+      "duration": 5.28,
+      "text": "so the second option that is elastic"
+    },
+    {
+      "start": 1241.28,
+      "duration": 5.2,
+      "text": "transporter is the correct option"
+    },
+    {
+      "start": 1244.72,
+      "duration": 3.839,
+      "text": "the next question is a large"
+    },
+    {
+      "start": 1246.48,
+      "duration": 4.16,
+      "text": "multinational client has requested a"
+    },
+    {
+      "start": 1248.559,
+      "duration": 4.641,
+      "text": "design for multi-region"
+    },
+    {
+      "start": 1250.64,
+      "duration": 5.039,
+      "text": "multi-master database the client has"
+    },
+    {
+      "start": 1253.2,
+      "duration": 5.2,
+      "text": "requested that the database be designed"
+    },
+    {
+      "start": 1255.679,
+      "duration": 5.201,
+      "text": "for a fast massively scaled application"
+    },
+    {
+      "start": 1258.4,
+      "duration": 4.8,
+      "text": "for a global user base the database"
+    },
+    {
+      "start": 1260.88,
+      "duration": 4.32,
+      "text": "should be fully managed service"
+    },
+    {
+      "start": 1263.2,
+      "duration": 3.68,
+      "text": "including the replication so the"
+    },
+    {
+      "start": 1265.2,
+      "duration": 3.68,
+      "text": "question asks for multi-region and"
+    },
+    {
+      "start": 1266.88,
+      "duration": 3.919,
+      "text": "multi-master database and it should be"
+    },
+    {
+      "start": 1268.88,
+      "duration": 3.76,
+      "text": "global user-based so you can pause the"
+    },
+    {
+      "start": 1270.799,
+      "duration": 4.041,
+      "text": "video now and try to figure out the"
+    },
+    {
+      "start": 1272.64,
+      "duration": 5.44,
+      "text": "right"
+    },
+    {
+      "start": 1274.84,
+      "duration": 5.88,
+      "text": "answer the first option we have is s3"
+    },
+    {
+      "start": 1278.08,
+      "duration": 4.8,
+      "text": "with cross region replication"
+    },
+    {
+      "start": 1280.72,
+      "duration": 4.079,
+      "text": "s3 is object store"
+    },
+    {
+      "start": 1282.88,
+      "duration": 3.44,
+      "text": "and it is not a database"
+    },
+    {
+      "start": 1284.799,
+      "duration": 3.441,
+      "text": "so this is not the"
+    },
+    {
+      "start": 1286.32,
+      "duration": 4.8,
+      "text": "right answer"
+    },
+    {
+      "start": 1288.24,
+      "duration": 5.76,
+      "text": "rds with multi-ac"
+    },
+    {
+      "start": 1291.12,
+      "duration": 5.28,
+      "text": "rds database is not a multi-master"
+    },
+    {
+      "start": 1294.0,
+      "duration": 3.36,
+      "text": "database which the question is asking"
+    },
+    {
+      "start": 1296.4,
+      "duration": 3.6,
+      "text": "for"
+    },
+    {
+      "start": 1297.36,
+      "duration": 5.28,
+      "text": "so this is not the correct answer either"
+    },
+    {
+      "start": 1300.0,
+      "duration": 4.799,
+      "text": "the third option is dynamodb"
+    },
+    {
+      "start": 1302.64,
+      "duration": 3.6,
+      "text": "with global tables and cross region"
+    },
+    {
+      "start": 1304.799,
+      "duration": 3.041,
+      "text": "replication"
+    },
+    {
+      "start": 1306.24,
+      "duration": 4.0,
+      "text": "dynamodb"
+    },
+    {
+      "start": 1307.84,
+      "duration": 4.64,
+      "text": "has a feature of multi master and is"
+    },
+    {
+      "start": 1310.24,
+      "duration": 5.52,
+      "text": "very fast massively skilled application"
+    },
+    {
+      "start": 1312.48,
+      "duration": 5.28,
+      "text": "database this seems to be a right answer"
+    },
+    {
+      "start": 1315.76,
+      "duration": 2.799,
+      "text": "but let's check the fourth option as"
+    },
+    {
+      "start": 1317.76,
+      "duration": 3.52,
+      "text": "well"
+    },
+    {
+      "start": 1318.559,
+      "duration": 4.321,
+      "text": "that is ec2 instances with ebs"
+    },
+    {
+      "start": 1321.28,
+      "duration": 5.04,
+      "text": "replication"
+    },
+    {
+      "start": 1322.88,
+      "duration": 5.919,
+      "text": "so ebs replication is not a thing in aws"
+    },
+    {
+      "start": 1326.32,
+      "duration": 5.2,
+      "text": "so this is not a correct answer either"
+    },
+    {
+      "start": 1328.799,
+      "duration": 5.041,
+      "text": "the correct answer is dynamodb table"
+    },
+    {
+      "start": 1331.52,
+      "duration": 4.88,
+      "text": "with global tables and cross region"
+    },
+    {
+      "start": 1333.84,
+      "duration": 5.44,
+      "text": "replication"
+    },
+    {
+      "start": 1336.4,
+      "duration": 2.88,
+      "text": "next question is"
+    },
+    {
+      "start": 1339.44,
+      "duration": 4.56,
+      "text": "customer has asked you"
+    },
+    {
+      "start": 1341.28,
+      "duration": 4.0,
+      "text": "the best solution for highly available"
+    },
+    {
+      "start": 1344.0,
+      "duration": 4.0,
+      "text": "database"
+    },
+    {
+      "start": 1345.28,
+      "duration": 5.04,
+      "text": "the database is relational oltp type of"
+    },
+    {
+      "start": 1348.0,
+      "duration": 3.12,
+      "text": "database and the customer does not want"
+    },
+    {
+      "start": 1350.32,
+      "duration": 3.04,
+      "text": "to"
+    },
+    {
+      "start": 1351.12,
+      "duration": 3.439,
+      "text": "manage the operating system the database"
+    },
+    {
+      "start": 1353.36,
+      "duration": 4.799,
+      "text": "runs on"
+    },
+    {
+      "start": 1354.559,
+      "duration": 5.041,
+      "text": "failover between easys must be automatic"
+    },
+    {
+      "start": 1358.159,
+      "duration": 4.481,
+      "text": "which of the below options would you"
+    },
+    {
+      "start": 1359.6,
+      "duration": 5.36,
+      "text": "suggest to the customer"
+    },
+    {
+      "start": 1362.64,
+      "duration": 4.0,
+      "text": "so the question is asking for oltp"
+    },
+    {
+      "start": 1364.96,
+      "duration": 3.44,
+      "text": "relational database"
+    },
+    {
+      "start": 1366.64,
+      "duration": 3.36,
+      "text": "and the customer does not want to manage"
+    },
+    {
+      "start": 1368.4,
+      "duration": 4.639,
+      "text": "the operating system"
+    },
+    {
+      "start": 1370.0,
+      "duration": 4.799,
+      "text": "so he wants a managed database"
+    },
+    {
+      "start": 1373.039,
+      "duration": 3.841,
+      "text": "and the failover between the"
+    },
+    {
+      "start": 1374.799,
+      "duration": 3.441,
+      "text": "availability zones must be"
+    },
+    {
+      "start": 1376.88,
+      "duration": 3.919,
+      "text": "automatic"
+    },
+    {
+      "start": 1378.24,
+      "duration": 4.0,
+      "text": "so it should be multi easy"
+    },
+    {
+      "start": 1380.799,
+      "duration": 3.281,
+      "text": "database"
+    },
+    {
+      "start": 1382.24,
+      "duration": 5.36,
+      "text": "so you can pause the video now and try"
+    },
+    {
+      "start": 1384.08,
+      "duration": 6.16,
+      "text": "to guess the right answer"
+    },
+    {
+      "start": 1387.6,
+      "duration": 4.72,
+      "text": "so the first option we have is rds in"
+    },
+    {
+      "start": 1390.24,
+      "duration": 5.2,
+      "text": "multi-ac configuration"
+    },
+    {
+      "start": 1392.32,
+      "duration": 4.239,
+      "text": "so rds is managed oltp relational"
+    },
+    {
+      "start": 1395.44,
+      "duration": 3.599,
+      "text": "database"
+    },
+    {
+      "start": 1396.559,
+      "duration": 4.721,
+      "text": "and we also have multi-ac configuration"
+    },
+    {
+      "start": 1399.039,
+      "duration": 3.601,
+      "text": "here which can failover between acs"
+    },
+    {
+      "start": 1401.28,
+      "duration": 3.36,
+      "text": "automatically"
+    },
+    {
+      "start": 1402.64,
+      "duration": 4.88,
+      "text": "so this seems to be a right answer but"
+    },
+    {
+      "start": 1404.64,
+      "duration": 4.8,
+      "text": "let's check the other options as well"
+    },
+    {
+      "start": 1407.52,
+      "duration": 4.639,
+      "text": "use dynamodb"
+    },
+    {
+      "start": 1409.44,
+      "duration": 4.4,
+      "text": "dynamodb is oltp but it is not a"
+    },
+    {
+      "start": 1412.159,
+      "duration": 4.0,
+      "text": "relational database"
+    },
+    {
+      "start": 1413.84,
+      "duration": 4.24,
+      "text": "so this is uh this is not the correct"
+    },
+    {
+      "start": 1416.159,
+      "duration": 4.64,
+      "text": "answer"
+    },
+    {
+      "start": 1418.08,
+      "duration": 4.079,
+      "text": "the third is use redshift in multi-ac"
+    },
+    {
+      "start": 1420.799,
+      "duration": 5.201,
+      "text": "configuration"
+    },
+    {
+      "start": 1422.159,
+      "duration": 5.681,
+      "text": "redshift is not an oltp database it is"
+    },
+    {
+      "start": 1426.0,
+      "duration": 4.48,
+      "text": "olab database"
+    },
+    {
+      "start": 1427.84,
+      "duration": 4.64,
+      "text": "so this is not the correct answer either"
+    },
+    {
+      "start": 1430.48,
+      "duration": 5.199,
+      "text": "the last option is install the"
+    },
+    {
+      "start": 1432.48,
+      "duration": 6.64,
+      "text": "relational database on ec2 instance"
+    },
+    {
+      "start": 1435.679,
+      "duration": 6.48,
+      "text": "and multiple acs and create a cluster"
+    },
+    {
+      "start": 1439.12,
+      "duration": 5.2,
+      "text": "so the question is asking for"
+    },
+    {
+      "start": 1442.159,
+      "duration": 4.4,
+      "text": "managed database the customer does not"
+    },
+    {
+      "start": 1444.32,
+      "duration": 3.04,
+      "text": "want to manage the operating system"
+    },
+    {
+      "start": 1446.559,
+      "duration": 3.041,
+      "text": "and"
+    },
+    {
+      "start": 1447.36,
+      "duration": 5.04,
+      "text": "here we have to manage the ec2 instance"
+    },
+    {
+      "start": 1449.6,
+      "duration": 4.88,
+      "text": "on which we will install the database so"
+    },
+    {
+      "start": 1452.4,
+      "duration": 4.399,
+      "text": "this is not the correct answer the"
+    },
+    {
+      "start": 1454.48,
+      "duration": 3.12,
+      "text": "correct answer is the first option that"
+    },
+    {
+      "start": 1456.799,
+      "duration": 5.041,
+      "text": "is"
+    },
+    {
+      "start": 1457.6,
+      "duration": 4.24,
+      "text": "rds in multi-ac configuration"
+    },
+    {
+      "start": 1463.12,
+      "duration": 4.32,
+      "text": "next question is"
+    },
+    {
+      "start": 1464.88,
+      "duration": 4.96,
+      "text": "an application uses auto scaling and"
+    },
+    {
+      "start": 1467.44,
+      "duration": 4.4,
+      "text": "fleet of ec2 instances"
+    },
+    {
+      "start": 1469.84,
+      "duration": 3.52,
+      "text": "you recently noticed that the auto"
+    },
+    {
+      "start": 1471.84,
+      "duration": 4.16,
+      "text": "scaling is killing the number of"
+    },
+    {
+      "start": 1473.36,
+      "duration": 4.559,
+      "text": "instances up and down multiple times in"
+    },
+    {
+      "start": 1476.0,
+      "duration": 3.76,
+      "text": "the same r"
+    },
+    {
+      "start": 1477.919,
+      "duration": 4.561,
+      "text": "you need to implement a solution to"
+    },
+    {
+      "start": 1479.76,
+      "duration": 5.36,
+      "text": "reduce the amount of scaling events"
+    },
+    {
+      "start": 1482.48,
+      "duration": 5.12,
+      "text": "the solution must be cost effective"
+    },
+    {
+      "start": 1485.12,
+      "duration": 5.12,
+      "text": "and preserve elasticity"
+    },
+    {
+      "start": 1487.6,
+      "duration": 4.64,
+      "text": "what changes would you implement"
+    },
+    {
+      "start": 1490.24,
+      "duration": 3.6,
+      "text": "so the question is asking that the auto"
+    },
+    {
+      "start": 1492.24,
+      "duration": 4.16,
+      "text": "scaling is"
+    },
+    {
+      "start": 1493.84,
+      "duration": 4.719,
+      "text": "launching and terminating instances very"
+    },
+    {
+      "start": 1496.4,
+      "duration": 4.639,
+      "text": "quickly in one hour so you want to"
+    },
+    {
+      "start": 1498.559,
+      "duration": 5.441,
+      "text": "change the settings and it should be"
+    },
+    {
+      "start": 1501.039,
+      "duration": 5.52,
+      "text": "cost effective preserve elasticity"
+    },
+    {
+      "start": 1504.0,
+      "duration": 5.039,
+      "text": "that means auto scaling should work as"
+    },
+    {
+      "start": 1506.559,
+      "duration": 6.521,
+      "text": "well so you can pause the video and try"
+    },
+    {
+      "start": 1509.039,
+      "duration": 4.041,
+      "text": "to guess the right answer"
+    },
+    {
+      "start": 1518.72,
+      "duration": 4.64,
+      "text": "the first option is modify the auto"
+    },
+    {
+      "start": 1520.799,
+      "duration": 6.321,
+      "text": "scaling group termination policy to"
+    },
+    {
+      "start": 1523.36,
+      "duration": 5.199,
+      "text": "terminate the newest instance first"
+    },
+    {
+      "start": 1527.12,
+      "duration": 4.0,
+      "text": "the order in which auto scaling"
+    },
+    {
+      "start": 1528.559,
+      "duration": 5.041,
+      "text": "terminates instances it is not the issue"
+    },
+    {
+      "start": 1531.12,
+      "duration": 5.439,
+      "text": "here the problem is that the workload is"
+    },
+    {
+      "start": 1533.6,
+      "duration": 5.36,
+      "text": "dynamic and auto scaling is constantly"
+    },
+    {
+      "start": 1536.559,
+      "duration": 3.201,
+      "text": "terminating and launching the instance"
+    },
+    {
+      "start": 1538.96,
+      "duration": 3.44,
+      "text": "so"
+    },
+    {
+      "start": 1539.76,
+      "duration": 4.799,
+      "text": "even if the terminate it terminates the"
+    },
+    {
+      "start": 1542.4,
+      "duration": 4.72,
+      "text": "newest instance this is not going to"
+    },
+    {
+      "start": 1544.559,
+      "duration": 4.161,
+      "text": "solve the problem so this is not the"
+    },
+    {
+      "start": 1547.12,
+      "duration": 3.84,
+      "text": "correct option"
+    },
+    {
+      "start": 1548.72,
+      "duration": 4.4,
+      "text": "the second is modify the auto scaling"
+    },
+    {
+      "start": 1550.96,
+      "duration": 4.24,
+      "text": "group cooldown timers"
+    },
+    {
+      "start": 1553.12,
+      "duration": 4.64,
+      "text": "the cooldown period is a configurable"
+    },
+    {
+      "start": 1555.2,
+      "duration": 4.4,
+      "text": "setting for an auto scaling group"
+    },
+    {
+      "start": 1557.76,
+      "duration": 4.56,
+      "text": "that helps to ensure that it doesn't"
+    },
+    {
+      "start": 1559.6,
+      "duration": 5.36,
+      "text": "launch or terminate additional instance"
+    },
+    {
+      "start": 1562.32,
+      "duration": 4.88,
+      "text": "before the previous instance has been"
+    },
+    {
+      "start": 1564.96,
+      "duration": 3.28,
+      "text": "terminated this seems to be a right"
+    },
+    {
+      "start": 1567.2,
+      "duration": 3.2,
+      "text": "answer"
+    },
+    {
+      "start": 1568.24,
+      "duration": 4.72,
+      "text": "the third option is modify the cloud"
+    },
+    {
+      "start": 1570.4,
+      "duration": 5.36,
+      "text": "watch alarm period that triggers your"
+    },
+    {
+      "start": 1572.96,
+      "duration": 5.36,
+      "text": "auto scaling scale down policy so the"
+    },
+    {
+      "start": 1575.76,
+      "duration": 4.799,
+      "text": "cloud watch alarm is responsible for the"
+    },
+    {
+      "start": 1578.32,
+      "duration": 4.32,
+      "text": "scaling events or the scaling because"
+    },
+    {
+      "start": 1580.559,
+      "duration": 4.401,
+      "text": "auto scaling is based on the cloud wash"
+    },
+    {
+      "start": 1582.64,
+      "duration": 4.399,
+      "text": "alarms this will help as you can"
+    },
+    {
+      "start": 1584.96,
+      "duration": 4.319,
+      "text": "increase the number of data points"
+    },
+    {
+      "start": 1587.039,
+      "duration": 3.201,
+      "text": "required to trigger an alarm the fourth"
+    },
+    {
+      "start": 1589.279,
+      "duration": 3.041,
+      "text": "is"
+    },
+    {
+      "start": 1590.24,
+      "duration": 3.439,
+      "text": "modify auto scaling to use schedule"
+    },
+    {
+      "start": 1592.32,
+      "duration": 3.28,
+      "text": "scaling actions"
+    },
+    {
+      "start": 1593.679,
+      "duration": 4.0,
+      "text": "there is no problem in the"
+    },
+    {
+      "start": 1595.6,
+      "duration": 4.88,
+      "text": "scaling policy so we don't need to"
+    },
+    {
+      "start": 1597.679,
+      "duration": 4.961,
+      "text": "change it to schedules healing actions"
+    },
+    {
+      "start": 1600.48,
+      "duration": 6.24,
+      "text": "the last is modified auto scaling to"
+    },
+    {
+      "start": 1602.64,
+      "duration": 6.32,
+      "text": "terminate the oldest instance first"
+    },
+    {
+      "start": 1606.72,
+      "duration": 3.28,
+      "text": "the order of termination is not an issue"
+    },
+    {
+      "start": 1608.96,
+      "duration": 2.56,
+      "text": "here"
+    },
+    {
+      "start": 1610.0,
+      "duration": 2.96,
+      "text": "so that's not the"
+    },
+    {
+      "start": 1611.52,
+      "duration": 3.759,
+      "text": "right answer as well"
+    },
+    {
+      "start": 1612.96,
+      "duration": 4.959,
+      "text": "the correct answer seems to be"
+    },
+    {
+      "start": 1615.279,
+      "duration": 4.481,
+      "text": "second and the third that is modify auto"
+    },
+    {
+      "start": 1617.919,
+      "duration": 4.081,
+      "text": "scaling cooldown timers"
+    },
+    {
+      "start": 1619.76,
+      "duration": 4.32,
+      "text": "and cloud wash alarm period that"
+    },
+    {
+      "start": 1622.0,
+      "duration": 3.12,
+      "text": "triggers your auto skilling scale down"
+    },
+    {
+      "start": 1624.08,
+      "duration": 3.04,
+      "text": "policy"
+    },
+    {
+      "start": 1625.12,
+      "duration": 3.28,
+      "text": "this is the end of the part once i hope"
+    },
+    {
+      "start": 1627.12,
+      "duration": 3.2,
+      "text": "you liked the video and learned"
+    },
+    {
+      "start": 1628.4,
+      "duration": 3.92,
+      "text": "something please subscribe to the"
+    },
+    {
+      "start": 1630.32,
+      "duration": 4.8,
+      "text": "channel and if you have any doubts or"
+    },
+    {
+      "start": 1632.32,
+      "duration": 3.68,
+      "text": "anything you want to say please comment"
+    },
+    {
+      "start": 1635.12,
+      "duration": 3.6,
+      "text": "down"
+    },
+    {
+      "start": 1636.0,
+      "duration": 5.44,
+      "text": "also check out the part two of the aws"
+    },
+    {
+      "start": 1638.72,
+      "duration": 4.8,
+      "text": "practice questions where we will learn"
+    },
+    {
+      "start": 1641.44,
+      "duration": 3.68,
+      "text": "all the real exam question"
+    },
+    {
+      "start": 1643.52,
+      "duration": 4.08,
+      "text": "and this will help you"
+    },
+    {
+      "start": 1645.12,
+      "duration": 5.279,
+      "text": "for your aws certification"
+    },
+    {
+      "start": 1647.6,
+      "duration": 2.799,
+      "text": "have a good day"
+    }
+  ]
+}

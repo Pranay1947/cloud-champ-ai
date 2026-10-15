@@ -1,0 +1,7616 @@
+{
+  "video": {
+    "id": "lCq4mYQL0WY",
+    "title": "Linux commands for Cloud and Devops engineers",
+    "url": "https://www.youtube.com/watch?v=lCq4mYQL0WY",
+    "duration": 3439,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.16,
+      "duration": 4.0,
+      "text": "hello and welcome to my youtube channel"
+    },
+    {
+      "start": 2.32,
+      "duration": 4.64,
+      "text": "in this video i am going to teach you"
+    },
+    {
+      "start": 4.16,
+      "duration": 4.96,
+      "text": "about all the important linux commands"
+    },
+    {
+      "start": 6.96,
+      "duration": 4.24,
+      "text": "that every devops or a cloud engineer"
+    },
+    {
+      "start": 9.12,
+      "duration": 4.16,
+      "text": "should know in this video i'm covering"
+    },
+    {
+      "start": 11.2,
+      "duration": 4.16,
+      "text": "all the topics like creating a file"
+    },
+    {
+      "start": 13.28,
+      "duration": 4.16,
+      "text": "directory editing them installing"
+    },
+    {
+      "start": 15.36,
+      "duration": 4.72,
+      "text": "packages from internet and connecting to"
+    },
+    {
+      "start": 17.44,
+      "duration": 4.32,
+      "text": "a remote server all the advanced stuff"
+    },
+    {
+      "start": 20.08,
+      "duration": 3.92,
+      "text": "is going to be cleared so if you want to"
+    },
+    {
+      "start": 21.76,
+      "duration": 4.64,
+      "text": "become a linux expert watch this video"
+    },
+    {
+      "start": 24.0,
+      "duration": 3.84,
+      "text": "till the end and let's get started and"
+    },
+    {
+      "start": 26.4,
+      "duration": 3.84,
+      "text": "learn linux"
+    },
+    {
+      "start": 27.84,
+      "duration": 4.0,
+      "text": "i can see what are the different folders"
+    },
+    {
+      "start": 30.24,
+      "duration": 3.999,
+      "text": "or what are the different directories or"
+    },
+    {
+      "start": 31.84,
+      "duration": 4.399,
+      "text": "files present in my current path"
+    },
+    {
+      "start": 34.239,
+      "duration": 4.16,
+      "text": "so if i do ls and i do"
+    },
+    {
+      "start": 36.239,
+      "duration": 4.241,
+      "text": "enter you can see that i can see all the"
+    },
+    {
+      "start": 38.399,
+      "duration": 4.48,
+      "text": "different folders so let me show you"
+    },
+    {
+      "start": 40.48,
+      "duration": 4.48,
+      "text": "that with an example of"
+    },
+    {
+      "start": 42.879,
+      "duration": 4.0,
+      "text": "while showing this"
+    },
+    {
+      "start": 44.96,
+      "duration": 3.52,
+      "text": "by side as well so you can see that the"
+    },
+    {
+      "start": 46.879,
+      "duration": 4.32,
+      "text": "all these different files are present"
+    },
+    {
+      "start": 48.48,
+      "duration": 4.64,
+      "text": "here so you can see ansible app started"
+    },
+    {
+      "start": 51.199,
+      "duration": 4.641,
+      "text": "and bin desktop everything is present"
+    },
+    {
+      "start": 53.12,
+      "duration": 4.32,
+      "text": "here so when i do ls i can see the"
+    },
+    {
+      "start": 55.84,
+      "duration": 2.64,
+      "text": "different files present in my current"
+    },
+    {
+      "start": 57.44,
+      "duration": 3.04,
+      "text": "directory"
+    },
+    {
+      "start": 58.48,
+      "duration": 2.879,
+      "text": "so let's create a folder so that we can"
+    },
+    {
+      "start": 60.48,
+      "duration": 2.32,
+      "text": "learn"
+    },
+    {
+      "start": 61.359,
+      "duration": 3.281,
+      "text": "so that we can learn about all the"
+    },
+    {
+      "start": 62.8,
+      "duration": 3.52,
+      "text": "different commands so if to create a"
+    },
+    {
+      "start": 64.64,
+      "duration": 2.96,
+      "text": "folder i have to run a command which is"
+    },
+    {
+      "start": 66.32,
+      "duration": 3.2,
+      "text": "make directory"
+    },
+    {
+      "start": 67.6,
+      "duration": 3.199,
+      "text": "which is mk make"
+    },
+    {
+      "start": 69.52,
+      "duration": 3.12,
+      "text": "dir"
+    },
+    {
+      "start": 70.799,
+      "duration": 3.761,
+      "text": "so this means make directory and"
+    },
+    {
+      "start": 72.64,
+      "duration": 3.76,
+      "text": "directory is also known as folder so"
+    },
+    {
+      "start": 74.56,
+      "duration": 4.239,
+      "text": "whenever you heard about directory just"
+    },
+    {
+      "start": 76.4,
+      "duration": 6.399,
+      "text": "consider it it as a folder so let's"
+    },
+    {
+      "start": 78.799,
+      "duration": 5.601,
+      "text": "create a folder named as uh learn linux"
+    },
+    {
+      "start": 82.799,
+      "duration": 3.68,
+      "text": "so you can see right now i don't have"
+    },
+    {
+      "start": 84.4,
+      "duration": 4.48,
+      "text": "any folder which is named as learn linux"
+    },
+    {
+      "start": 86.479,
+      "duration": 4.32,
+      "text": "so if i go here so you cannot see any"
+    },
+    {
+      "start": 88.88,
+      "duration": 4.879,
+      "text": "folder which is learn linux here and if"
+    },
+    {
+      "start": 90.799,
+      "duration": 5.201,
+      "text": "i do enter i a folder which is named as"
+    },
+    {
+      "start": 93.759,
+      "duration": 4.641,
+      "text": "learn linux will be created so let me"
+    },
+    {
+      "start": 96.0,
+      "duration": 2.4,
+      "text": "show you"
+    },
+    {
+      "start": 98.84,
+      "duration": 4.919,
+      "text": "that so if i search for"
+    },
+    {
+      "start": 101.92,
+      "duration": 3.44,
+      "text": "learn so you can see there is a folder"
+    },
+    {
+      "start": 103.759,
+      "duration": 3.761,
+      "text": "which is learn linux it is created right"
+    },
+    {
+      "start": 105.36,
+      "duration": 3.92,
+      "text": "now and it does not have any"
+    },
+    {
+      "start": 107.52,
+      "duration": 5.279,
+      "text": "items in it"
+    },
+    {
+      "start": 109.28,
+      "duration": 5.44,
+      "text": "right so it says zero zero item so let's"
+    },
+    {
+      "start": 112.799,
+      "duration": 3.441,
+      "text": "go inside this learned linux if you go"
+    },
+    {
+      "start": 114.72,
+      "duration": 3.039,
+      "text": "through a"
+    },
+    {
+      "start": 116.24,
+      "duration": 2.879,
+      "text": "graphical interface you just have to"
+    },
+    {
+      "start": 117.759,
+      "duration": 2.801,
+      "text": "click on it but if you want to go"
+    },
+    {
+      "start": 119.119,
+      "duration": 4.161,
+      "text": "through terminal you have to run a"
+    },
+    {
+      "start": 120.56,
+      "duration": 4.239,
+      "text": "command which is cd also stands for"
+    },
+    {
+      "start": 123.28,
+      "duration": 3.519,
+      "text": "change directory"
+    },
+    {
+      "start": 124.799,
+      "duration": 4.16,
+      "text": "so if you want to go in any of the"
+    },
+    {
+      "start": 126.799,
+      "duration": 3.68,
+      "text": "directory let's say for this learn linux"
+    },
+    {
+      "start": 128.959,
+      "duration": 3.681,
+      "text": "i you just have to type in the cd"
+    },
+    {
+      "start": 130.479,
+      "duration": 4.881,
+      "text": "command and the name of the directory so"
+    },
+    {
+      "start": 132.64,
+      "duration": 5.52,
+      "text": "i can just type learn and i can press"
+    },
+    {
+      "start": 135.36,
+      "duration": 4.56,
+      "text": "tab to auto complete so if i do learn"
+    },
+    {
+      "start": 138.16,
+      "duration": 4.96,
+      "text": "and i press tab it will automatically"
+    },
+    {
+      "start": 139.92,
+      "duration": 5.12,
+      "text": "type the linux which is it will do"
+    },
+    {
+      "start": 143.12,
+      "duration": 3.759,
+      "text": "autocomplete and we can get the whole"
+    },
+    {
+      "start": 145.04,
+      "duration": 3.52,
+      "text": "name of the directory and if i do"
+    },
+    {
+      "start": 146.879,
+      "duration": 3.201,
+      "text": "present if i do enter you'll see that"
+    },
+    {
+      "start": 148.56,
+      "duration": 3.44,
+      "text": "there is a change now"
+    },
+    {
+      "start": 150.08,
+      "duration": 4.08,
+      "text": "and now you can see that here you can"
+    },
+    {
+      "start": 152.0,
+      "duration": 4.64,
+      "text": "see there is learn linux which means i"
+    },
+    {
+      "start": 154.16,
+      "duration": 4.48,
+      "text": "am inside my learn linux directory or"
+    },
+    {
+      "start": 156.64,
+      "duration": 4.0,
+      "text": "learn linux folder"
+    },
+    {
+      "start": 158.64,
+      "duration": 4.08,
+      "text": "right"
+    },
+    {
+      "start": 160.64,
+      "duration": 4.48,
+      "text": "yes so this till design that you see"
+    },
+    {
+      "start": 162.72,
+      "duration": 4.32,
+      "text": "here stands for the home directory so in"
+    },
+    {
+      "start": 165.12,
+      "duration": 3.199,
+      "text": "home directory you are inside the learn"
+    },
+    {
+      "start": 167.04,
+      "duration": 2.32,
+      "text": "linux"
+    },
+    {
+      "start": 168.319,
+      "duration": 3.521,
+      "text": "folder"
+    },
+    {
+      "start": 169.36,
+      "duration": 4.4,
+      "text": "now if you want to create a file you can"
+    },
+    {
+      "start": 171.84,
+      "duration": 2.8,
+      "text": "do it with the command which is known as"
+    },
+    {
+      "start": 173.76,
+      "duration": 2.72,
+      "text": "touch"
+    },
+    {
+      "start": 174.64,
+      "duration": 3.84,
+      "text": "touch and the name of the file so let's"
+    },
+    {
+      "start": 176.48,
+      "duration": 4.8,
+      "text": "say i want to create a file which is one"
+    },
+    {
+      "start": 178.48,
+      "duration": 4.64,
+      "text": "dot txt so if you see there is no file"
+    },
+    {
+      "start": 181.28,
+      "duration": 3.92,
+      "text": "currently here and once i run this"
+    },
+    {
+      "start": 183.12,
+      "duration": 4.24,
+      "text": "command there will be a file here so"
+    },
+    {
+      "start": 185.2,
+      "duration": 4.72,
+      "text": "touch is the command to create a file"
+    },
+    {
+      "start": 187.36,
+      "duration": 5.12,
+      "text": "and it will create an empty file"
+    },
+    {
+      "start": 189.92,
+      "duration": 4.8,
+      "text": "so touch one dot txt will create a file"
+    },
+    {
+      "start": 192.48,
+      "duration": 4.72,
+      "text": "and if i do ls i should see a file"
+    },
+    {
+      "start": 194.72,
+      "duration": 4.56,
+      "text": "inside so you can see that one dot txt"
+    },
+    {
+      "start": 197.2,
+      "duration": 5.28,
+      "text": "is present now and if you see here there"
+    },
+    {
+      "start": 199.28,
+      "duration": 5.679,
+      "text": "is one dot txt inside here as well"
+    },
+    {
+      "start": 202.48,
+      "duration": 5.119,
+      "text": "right so touch is a command to create a"
+    },
+    {
+      "start": 204.959,
+      "duration": 4.161,
+      "text": "file which should be empty so if i go"
+    },
+    {
+      "start": 207.599,
+      "duration": 3.521,
+      "text": "here you can see that there is no"
+    },
+    {
+      "start": 209.12,
+      "duration": 3.28,
+      "text": "content present here"
+    },
+    {
+      "start": 211.12,
+      "duration": 3.52,
+      "text": "right but"
+    },
+    {
+      "start": 212.4,
+      "duration": 4.16,
+      "text": "if you have if you if you have like done"
+    },
+    {
+      "start": 214.64,
+      "duration": 5.36,
+      "text": "the previous sessions you know about the"
+    },
+    {
+      "start": 216.56,
+      "duration": 6.8,
+      "text": "command which is nano so nano nano is a"
+    },
+    {
+      "start": 220.0,
+      "duration": 6.56,
+      "text": "text editor which can be used to edit or"
+    },
+    {
+      "start": 223.36,
+      "duration": 5.68,
+      "text": "insert test text inside a file so i can"
+    },
+    {
+      "start": 226.56,
+      "duration": 4.319,
+      "text": "go here and type in nano1.txt"
+    },
+    {
+      "start": 229.04,
+      "duration": 4.479,
+      "text": "and i can start writing anything so like"
+    },
+    {
+      "start": 230.879,
+      "duration": 5.521,
+      "text": "and i can say this is a linux file"
+    },
+    {
+      "start": 233.519,
+      "duration": 3.841,
+      "text": "right so"
+    },
+    {
+      "start": 236.4,
+      "duration": 2.72,
+      "text": "i am"
+    },
+    {
+      "start": 237.36,
+      "duration": 5.12,
+      "text": "inputting some text here and i can save"
+    },
+    {
+      "start": 239.12,
+      "duration": 4.399,
+      "text": "it by doing exit control x and y and now"
+    },
+    {
+      "start": 242.48,
+      "duration": 3.36,
+      "text": "i have"
+    },
+    {
+      "start": 243.519,
+      "duration": 4.64,
+      "text": "some text written in my one dot txt"
+    },
+    {
+      "start": 245.84,
+      "duration": 4.16,
+      "text": "which if i'm using graphical interface i"
+    },
+    {
+      "start": 248.159,
+      "duration": 3.36,
+      "text": "can double click on it and i can see"
+    },
+    {
+      "start": 250.0,
+      "duration": 4.319,
+      "text": "that i have written"
+    },
+    {
+      "start": 251.519,
+      "duration": 4.481,
+      "text": "this is a linux file but how do i read"
+    },
+    {
+      "start": 254.319,
+      "duration": 4.001,
+      "text": "it through my"
+    },
+    {
+      "start": 256.0,
+      "duration": 5.04,
+      "text": "terminal so i can use the command which"
+    },
+    {
+      "start": 258.32,
+      "duration": 5.12,
+      "text": "is known as cat so cat and the name of"
+    },
+    {
+      "start": 261.04,
+      "duration": 4.96,
+      "text": "the file so one if i type in one it will"
+    },
+    {
+      "start": 263.44,
+      "duration": 4.96,
+      "text": "autocomplete and give me the file name"
+    },
+    {
+      "start": 266.0,
+      "duration": 5.12,
+      "text": "and if i run cad 1.txt you can see that"
+    },
+    {
+      "start": 268.4,
+      "duration": 4.799,
+      "text": "it shows me the output which is this is"
+    },
+    {
+      "start": 271.12,
+      "duration": 3.76,
+      "text": "a linux file"
+    },
+    {
+      "start": 273.199,
+      "duration": 3.601,
+      "text": "right"
+    },
+    {
+      "start": 274.88,
+      "duration": 4.319,
+      "text": "so touch is used to create an empty file"
+    },
+    {
+      "start": 276.8,
+      "duration": 5.6,
+      "text": "nano is used to create manage a text"
+    },
+    {
+      "start": 279.199,
+      "duration": 5.361,
+      "text": "editor which can write or edit text"
+    },
+    {
+      "start": 282.4,
+      "duration": 4.72,
+      "text": "right but you can also create a file"
+    },
+    {
+      "start": 284.56,
+      "duration": 4.0,
+      "text": "using nano and you can also let let's"
+    },
+    {
+      "start": 287.12,
+      "duration": 3.92,
+      "text": "say there is no other file like there is"
+    },
+    {
+      "start": 288.56,
+      "duration": 5.359,
+      "text": "only one.txt i want to create a file and"
+    },
+    {
+      "start": 291.04,
+      "duration": 6.32,
+      "text": "i also want to input some text in it so"
+    },
+    {
+      "start": 293.919,
+      "duration": 6.0,
+      "text": "i will do nano nano.2.txt so i am"
+    },
+    {
+      "start": 297.36,
+      "duration": 5.44,
+      "text": "creating a second file and i am also"
+    },
+    {
+      "start": 299.919,
+      "duration": 5.361,
+      "text": "editing it right right now so if i type"
+    },
+    {
+      "start": 302.8,
+      "duration": 4.64,
+      "text": "in enter it will open the text editor"
+    },
+    {
+      "start": 305.28,
+      "duration": 4.24,
+      "text": "and i'm going to type in this is second"
+    },
+    {
+      "start": 307.44,
+      "duration": 4.72,
+      "text": "file"
+    },
+    {
+      "start": 309.52,
+      "duration": 5.6,
+      "text": "right and i save it i press enter and i"
+    },
+    {
+      "start": 312.16,
+      "duration": 6.0,
+      "text": "save it now if i do ls i should see two"
+    },
+    {
+      "start": 315.12,
+      "duration": 5.04,
+      "text": "files right now so i have two files one"
+    },
+    {
+      "start": 318.16,
+      "duration": 4.8,
+      "text": "of them is created using touch and the"
+    },
+    {
+      "start": 320.16,
+      "duration": 5.759,
+      "text": "second one is creating using nano"
+    },
+    {
+      "start": 322.96,
+      "duration": 6.56,
+      "text": "right so if i do cat2.ext i should see"
+    },
+    {
+      "start": 325.919,
+      "duration": 5.28,
+      "text": "the content inside the 2.txt"
+    },
+    {
+      "start": 329.52,
+      "duration": 4.0,
+      "text": "if i press enter now i should see that"
+    },
+    {
+      "start": 331.199,
+      "duration": 4.401,
+      "text": "this is the second file same as what i"
+    },
+    {
+      "start": 333.52,
+      "duration": 3.76,
+      "text": "have entered while creating the file"
+    },
+    {
+      "start": 335.6,
+      "duration": 4.0,
+      "text": "same way if you see here you can see two"
+    },
+    {
+      "start": 337.28,
+      "duration": 3.28,
+      "text": "files created now"
+    },
+    {
+      "start": 339.6,
+      "duration": 3.68,
+      "text": "using"
+    },
+    {
+      "start": 340.56,
+      "duration": 4.56,
+      "text": "using linux you can create a lot of"
+    },
+    {
+      "start": 343.28,
+      "duration": 4.16,
+      "text": "files in just a fraction of seconds so"
+    },
+    {
+      "start": 345.12,
+      "duration": 6.72,
+      "text": "let's say i want to create a lot of"
+    },
+    {
+      "start": 347.44,
+      "duration": 6.88,
+      "text": "files so three dot txt and four dot"
+    },
+    {
+      "start": 351.84,
+      "duration": 4.32,
+      "text": "and 5 dot txt all of them in a single"
+    },
+    {
+      "start": 354.32,
+      "duration": 4.4,
+      "text": "command if i do enter i don't get any"
+    },
+    {
+      "start": 356.16,
+      "duration": 5.36,
+      "text": "error and now if you see i have five"
+    },
+    {
+      "start": 358.72,
+      "duration": 2.8,
+      "text": "files right now"
+    },
+    {
+      "start": 361.6,
+      "duration": 4.8,
+      "text": "right so using linux commands you can"
+    },
+    {
+      "start": 364.16,
+      "duration": 4.159,
+      "text": "create a lot of files you it is very"
+    },
+    {
+      "start": 366.4,
+      "duration": 4.799,
+      "text": "easy for you to work with linux when you"
+    },
+    {
+      "start": 368.319,
+      "duration": 5.281,
+      "text": "use commands and now we have learned how"
+    },
+    {
+      "start": 371.199,
+      "duration": 4.641,
+      "text": "to create a file how to list the files"
+    },
+    {
+      "start": 373.6,
+      "duration": 5.28,
+      "text": "in the directory how to edit a file or"
+    },
+    {
+      "start": 375.84,
+      "duration": 5.12,
+      "text": "how to create a file using nano as well"
+    },
+    {
+      "start": 378.88,
+      "duration": 3.68,
+      "text": "so let's learn how to delete a file so"
+    },
+    {
+      "start": 380.96,
+      "duration": 4.4,
+      "text": "to delete a file you have to run this"
+    },
+    {
+      "start": 382.56,
+      "duration": 4.32,
+      "text": "command which is rm also stands for"
+    },
+    {
+      "start": 385.36,
+      "duration": 3.44,
+      "text": "remove"
+    },
+    {
+      "start": 386.88,
+      "duration": 3.92,
+      "text": "so if i want to remove any of the files"
+    },
+    {
+      "start": 388.8,
+      "duration": 3.92,
+      "text": "let's say i want to remove the one.txt"
+    },
+    {
+      "start": 390.8,
+      "duration": 2.6,
+      "text": "file here i just need to type in the"
+    },
+    {
+      "start": 392.72,
+      "duration": 4.16,
+      "text": "name"
+    },
+    {
+      "start": 393.4,
+      "duration": 6.2,
+      "text": "rm1.txt and if i press enter"
+    },
+    {
+      "start": 396.88,
+      "duration": 5.039,
+      "text": "it will remove the file now if i do ls i"
+    },
+    {
+      "start": 399.6,
+      "duration": 4.719,
+      "text": "should see all the files except one dot"
+    },
+    {
+      "start": 401.919,
+      "duration": 3.201,
+      "text": "txt so you can see that one.txt is gone"
+    },
+    {
+      "start": 404.319,
+      "duration": 3.841,
+      "text": "now"
+    },
+    {
+      "start": 405.12,
+      "duration": 5.12,
+      "text": "but it doesn't give confirmation"
+    },
+    {
+      "start": 408.16,
+      "duration": 4.56,
+      "text": "no no it won't give you confirmation if"
+    },
+    {
+      "start": 410.24,
+      "duration": 4.399,
+      "text": "you if it gets gives you any error so if"
+    },
+    {
+      "start": 412.72,
+      "duration": 4.0,
+      "text": "you if it gives you any error then it is"
+    },
+    {
+      "start": 414.639,
+      "duration": 3.921,
+      "text": "a problem if it does not gives you any"
+    },
+    {
+      "start": 416.72,
+      "duration": 4.16,
+      "text": "output if it does not gives you any"
+    },
+    {
+      "start": 418.56,
+      "duration": 5.28,
+      "text": "error which means your command has run"
+    },
+    {
+      "start": 420.88,
+      "duration": 2.96,
+      "text": "successfully"
+    },
+    {
+      "start": 424.0,
+      "duration": 3.84,
+      "text": "right so now you have learned that how"
+    },
+    {
+      "start": 425.68,
+      "duration": 4.239,
+      "text": "to delete a file so if you want to"
+    },
+    {
+      "start": 427.84,
+      "duration": 4.24,
+      "text": "delete any single file you can just run"
+    },
+    {
+      "start": 429.919,
+      "duration": 3.921,
+      "text": "rm and the name of the file if you want"
+    },
+    {
+      "start": 432.08,
+      "duration": 3.519,
+      "text": "to delete all of the files i have"
+    },
+    {
+      "start": 433.84,
+      "duration": 4.799,
+      "text": "already told you about this mark which"
+    },
+    {
+      "start": 435.599,
+      "duration": 5.201,
+      "text": "stands for asterisk or all the files so"
+    },
+    {
+      "start": 438.639,
+      "duration": 4.0,
+      "text": "if i run this everything inside this"
+    },
+    {
+      "start": 440.8,
+      "duration": 3.839,
+      "text": "folder should be deleted"
+    },
+    {
+      "start": 442.639,
+      "duration": 4.4,
+      "text": "so if i run this command you should you"
+    },
+    {
+      "start": 444.639,
+      "duration": 4.56,
+      "text": "have got no error no output which means"
+    },
+    {
+      "start": 447.039,
+      "duration": 5.361,
+      "text": "your command has run successfully and if"
+    },
+    {
+      "start": 449.199,
+      "duration": 6.241,
+      "text": "i do ls you should see that no files are"
+    },
+    {
+      "start": 452.4,
+      "duration": 4.72,
+      "text": "present now if i show you in the"
+    },
+    {
+      "start": 455.44,
+      "duration": 4.319,
+      "text": "graphical user interface it says that"
+    },
+    {
+      "start": 457.12,
+      "duration": 4.56,
+      "text": "folder is empty"
+    },
+    {
+      "start": 459.759,
+      "duration": 4.641,
+      "text": "right so now you have learned how to"
+    },
+    {
+      "start": 461.68,
+      "duration": 5.199,
+      "text": "create a file how to edit a file how to"
+    },
+    {
+      "start": 464.4,
+      "duration": 3.919,
+      "text": "delete a file and how to build multiple"
+    },
+    {
+      "start": 466.879,
+      "duration": 3.121,
+      "text": "files as well"
+    },
+    {
+      "start": 468.319,
+      "duration": 4.88,
+      "text": "right so let's go ahead and create more"
+    },
+    {
+      "start": 470.0,
+      "duration": 5.039,
+      "text": "files right now so one dot txt"
+    },
+    {
+      "start": 473.199,
+      "duration": 3.201,
+      "text": "two dot txt"
+    },
+    {
+      "start": 475.039,
+      "duration": 4.241,
+      "text": "and three"
+    },
+    {
+      "start": 476.4,
+      "duration": 5.12,
+      "text": "dot txt so this file will create three"
+    },
+    {
+      "start": 479.28,
+      "duration": 4.16,
+      "text": "files at once so if i do ls you can see"
+    },
+    {
+      "start": 481.52,
+      "duration": 3.519,
+      "text": "three files are created right now let's"
+    },
+    {
+      "start": 483.44,
+      "duration": 3.84,
+      "text": "go ahead and create a directory inside"
+    },
+    {
+      "start": 485.039,
+      "duration": 5.041,
+      "text": "this directory and i'm going to create a"
+    },
+    {
+      "start": 487.28,
+      "duration": 4.479,
+      "text": "directory named as test or test let's"
+    },
+    {
+      "start": 490.08,
+      "duration": 3.04,
+      "text": "create a directory inside this learn"
+    },
+    {
+      "start": 491.759,
+      "duration": 3.361,
+      "text": "linux command"
+    },
+    {
+      "start": 493.12,
+      "duration": 4.32,
+      "text": "it learns linux directory and to create"
+    },
+    {
+      "start": 495.12,
+      "duration": 4.799,
+      "text": "a directory the command is mkdir and the"
+    },
+    {
+      "start": 497.44,
+      "duration": 5.52,
+      "text": "name of the directory which is test1 so"
+    },
+    {
+      "start": 499.919,
+      "duration": 6.321,
+      "text": "if i go and type so you can see that"
+    },
+    {
+      "start": 502.96,
+      "duration": 6.4,
+      "text": "test1 is created and the test one is in"
+    },
+    {
+      "start": 506.24,
+      "duration": 3.84,
+      "text": "blue color whereas"
+    },
+    {
+      "start": 509.36,
+      "duration": 2.239,
+      "text": "the"
+    },
+    {
+      "start": 510.08,
+      "duration": 3.68,
+      "text": "all the other files are in green color"
+    },
+    {
+      "start": 511.599,
+      "duration": 3.68,
+      "text": "so this indicates that test"
+    },
+    {
+      "start": 513.76,
+      "duration": 3.68,
+      "text": "one is a directory and all the other"
+    },
+    {
+      "start": 515.279,
+      "duration": 4.401,
+      "text": "files all the others are files but if"
+    },
+    {
+      "start": 517.44,
+      "duration": 4.24,
+      "text": "you want to still see like"
+    },
+    {
+      "start": 519.68,
+      "duration": 3.52,
+      "text": "what are the types so you can do ls"
+    },
+    {
+      "start": 521.68,
+      "duration": 3.599,
+      "text": "hyphen l"
+    },
+    {
+      "start": 523.2,
+      "duration": 4.079,
+      "text": "and this will tell you that"
+    },
+    {
+      "start": 525.279,
+      "duration": 3.761,
+      "text": "this is the directory so if you see here"
+    },
+    {
+      "start": 527.279,
+      "duration": 3.601,
+      "text": "d which is directory and if you don't"
+    },
+    {
+      "start": 529.04,
+      "duration": 4.84,
+      "text": "see anything else which means it is a"
+    },
+    {
+      "start": 530.88,
+      "duration": 3.0,
+      "text": "file"
+    },
+    {
+      "start": 534.08,
+      "duration": 5.439,
+      "text": "and this are the permissions of the file"
+    },
+    {
+      "start": 536.48,
+      "duration": 4.88,
+      "text": "so r stands for read w stands for write"
+    },
+    {
+      "start": 539.519,
+      "duration": 4.561,
+      "text": "and the x that you see here stands for"
+    },
+    {
+      "start": 541.36,
+      "duration": 4.8,
+      "text": "executable so read write execute read"
+    },
+    {
+      "start": 544.08,
+      "duration": 4.879,
+      "text": "write execute and read write execute the"
+    },
+    {
+      "start": 546.16,
+      "duration": 4.72,
+      "text": "first column is for the group and then"
+    },
+    {
+      "start": 548.959,
+      "duration": 3.44,
+      "text": "for the organization and then for the"
+    },
+    {
+      "start": 550.88,
+      "duration": 3.92,
+      "text": "people so i'll be teaching you that"
+    },
+    {
+      "start": 552.399,
+      "duration": 4.321,
+      "text": "later on but for now just remember that"
+    },
+    {
+      "start": 554.8,
+      "duration": 3.12,
+      "text": "we have created a directory which is"
+    },
+    {
+      "start": 556.72,
+      "duration": 3.2,
+      "text": "test one"
+    },
+    {
+      "start": 557.92,
+      "duration": 3.84,
+      "text": "so let's go inside the directory so to"
+    },
+    {
+      "start": 559.92,
+      "duration": 3.919,
+      "text": "go inside directory you have to run cd"
+    },
+    {
+      "start": 561.76,
+      "duration": 3.92,
+      "text": "command or change directory command and"
+    },
+    {
+      "start": 563.839,
+      "duration": 4.881,
+      "text": "the name of the directory which is test"
+    },
+    {
+      "start": 565.68,
+      "duration": 5.279,
+      "text": "one so now i have only press the tab key"
+    },
+    {
+      "start": 568.72,
+      "duration": 4.16,
+      "text": "and it has entered the name of the"
+    },
+    {
+      "start": 570.959,
+      "duration": 3.841,
+      "text": "directory that is test one because that"
+    },
+    {
+      "start": 572.88,
+      "duration": 3.6,
+      "text": "is there is only one test one directory"
+    },
+    {
+      "start": 574.8,
+      "duration": 3.76,
+      "text": "in inside this"
+    },
+    {
+      "start": 576.48,
+      "duration": 4.32,
+      "text": "so if i press enter which means i am"
+    },
+    {
+      "start": 578.56,
+      "duration": 3.839,
+      "text": "inside my test one directory"
+    },
+    {
+      "start": 580.8,
+      "duration": 4.08,
+      "text": "right so this path will tell you where"
+    },
+    {
+      "start": 582.399,
+      "duration": 4.321,
+      "text": "you are right now"
+    },
+    {
+      "start": 584.88,
+      "duration": 3.92,
+      "text": "so now we have learned how to create"
+    },
+    {
+      "start": 586.72,
+      "duration": 4.32,
+      "text": "directory how to create files how to"
+    },
+    {
+      "start": 588.8,
+      "duration": 4.8,
+      "text": "edit how to remove all of the stuff so"
+    },
+    {
+      "start": 591.04,
+      "duration": 4.72,
+      "text": "how if i want to go back to my learn"
+    },
+    {
+      "start": 593.6,
+      "duration": 5.2,
+      "text": "linux command learn linux directory how"
+    },
+    {
+      "start": 595.76,
+      "duration": 6.16,
+      "text": "am i going to go back so to go back to a"
+    },
+    {
+      "start": 598.8,
+      "duration": 5.92,
+      "text": "previous folder you have to run cd as"
+    },
+    {
+      "start": 601.92,
+      "duration": 5.039,
+      "text": "space dot dot this means you are going"
+    },
+    {
+      "start": 604.72,
+      "duration": 4.32,
+      "text": "to go back to the learn linux directory"
+    },
+    {
+      "start": 606.959,
+      "duration": 4.721,
+      "text": "if i press enter you should you will see"
+    },
+    {
+      "start": 609.04,
+      "duration": 4.72,
+      "text": "that i am back inside my learn linux i"
+    },
+    {
+      "start": 611.68,
+      "duration": 3.68,
+      "text": "am no more into my yeah i am one step"
+    },
+    {
+      "start": 613.76,
+      "duration": 4.079,
+      "text": "back"
+    },
+    {
+      "start": 615.36,
+      "duration": 4.159,
+      "text": "right if you want to go go two step back"
+    },
+    {
+      "start": 617.839,
+      "duration": 3.44,
+      "text": "let's go back to the test one directory"
+    },
+    {
+      "start": 619.519,
+      "duration": 4.161,
+      "text": "now and if you want to go to the two"
+    },
+    {
+      "start": 621.279,
+      "duration": 5.601,
+      "text": "step back you can do two dosh and a"
+    },
+    {
+      "start": 623.68,
+      "duration": 5.2,
+      "text": "separator slash and if i press again two"
+    },
+    {
+      "start": 626.88,
+      "duration": 4.32,
+      "text": "dot i will be back again to my home"
+    },
+    {
+      "start": 628.88,
+      "duration": 5.04,
+      "text": "directory this directory here"
+    },
+    {
+      "start": 631.2,
+      "duration": 6.24,
+      "text": "right so if i do here i am back again"
+    },
+    {
+      "start": 633.92,
+      "duration": 6.64,
+      "text": "inside my test home directory so this"
+    },
+    {
+      "start": 637.44,
+      "duration": 6.56,
+      "text": "cd will take you one dot one step back"
+    },
+    {
+      "start": 640.56,
+      "duration": 5.44,
+      "text": "this will take you two step back"
+    },
+    {
+      "start": 644.0,
+      "duration": 3.519,
+      "text": "right and if let's say i'm i want to go"
+    },
+    {
+      "start": 646.0,
+      "duration": 3.6,
+      "text": "back to the test directory again so i'm"
+    },
+    {
+      "start": 647.519,
+      "duration": 4.241,
+      "text": "going to do learn linux"
+    },
+    {
+      "start": 649.6,
+      "duration": 2.16,
+      "text": "so"
+    },
+    {
+      "start": 652.56,
+      "duration": 4.08,
+      "text": "learn linux and test i am inside my"
+    },
+    {
+      "start": 655.279,
+      "duration": 3.841,
+      "text": "directory"
+    },
+    {
+      "start": 656.64,
+      "duration": 5.28,
+      "text": "so if i if i am anywhere no matt no"
+    },
+    {
+      "start": 659.12,
+      "duration": 4.08,
+      "text": "matter anywhere if i just type cd"
+    },
+    {
+      "start": 661.92,
+      "duration": 3.68,
+      "text": "it will take me back to the home"
+    },
+    {
+      "start": 663.2,
+      "duration": 4.72,
+      "text": "directory no matter i am anywhere so if"
+    },
+    {
+      "start": 665.6,
+      "duration": 5.52,
+      "text": "i do cd i am back again to my home"
+    },
+    {
+      "start": 667.92,
+      "duration": 4.88,
+      "text": "directory so this is one of the uh thing"
+    },
+    {
+      "start": 671.12,
+      "duration": 3.2,
+      "text": "you need to know that no matter where"
+    },
+    {
+      "start": 672.8,
+      "duration": 3.76,
+      "text": "you are so let's say i'm inside my app"
+    },
+    {
+      "start": 674.32,
+      "duration": 4.32,
+      "text": "directory and what do i have in there so"
+    },
+    {
+      "start": 676.56,
+      "duration": 3.92,
+      "text": "i have test in that also why do i what"
+    },
+    {
+      "start": 678.64,
+      "duration": 3.439,
+      "text": "do i have in test i don't have anything"
+    },
+    {
+      "start": 680.48,
+      "duration": 4.0,
+      "text": "so i'm inside my app directory i'm"
+    },
+    {
+      "start": 682.079,
+      "duration": 5.361,
+      "text": "inside my test directory so if i do just"
+    },
+    {
+      "start": 684.48,
+      "duration": 4.88,
+      "text": "cd i'm back again to my home directory"
+    },
+    {
+      "start": 687.44,
+      "duration": 4.8,
+      "text": "oh it's like cd"
+    },
+    {
+      "start": 689.36,
+      "duration": 4.96,
+      "text": "spell dot dot slash dot dot exactly"
+    },
+    {
+      "start": 692.24,
+      "duration": 3.76,
+      "text": "yeah same same so"
+    },
+    {
+      "start": 694.32,
+      "duration": 3.92,
+      "text": "let's say let's go back to the learn"
+    },
+    {
+      "start": 696.0,
+      "duration": 4.88,
+      "text": "linux again and let's go back to the"
+    },
+    {
+      "start": 698.24,
+      "duration": 5.92,
+      "text": "test one again so inside let me let me"
+    },
+    {
+      "start": 700.88,
+      "duration": 6.32,
+      "text": "make more directories so if let's say i"
+    },
+    {
+      "start": 704.16,
+      "duration": 6.239,
+      "text": "want to make test 2 and i want to make"
+    },
+    {
+      "start": 707.2,
+      "duration": 5.84,
+      "text": "test 3 and i want to make test 4 and i"
+    },
+    {
+      "start": 710.399,
+      "duration": 4.56,
+      "text": "want to make test 5"
+    },
+    {
+      "start": 713.04,
+      "duration": 4.72,
+      "text": "so i cannot do it i just want to pass in"
+    },
+    {
+      "start": 714.959,
+      "duration": 5.041,
+      "text": "the uh hyphen r command"
+    },
+    {
+      "start": 717.76,
+      "duration": 2.24,
+      "text": "so"
+    },
+    {
+      "start": 720.32,
+      "duration": 3.759,
+      "text": "let's say i'm going to create only a"
+    },
+    {
+      "start": 721.839,
+      "duration": 3.68,
+      "text": "directory inside a test one directory"
+    },
+    {
+      "start": 724.079,
+      "duration": 2.961,
+      "text": "which is test2"
+    },
+    {
+      "start": 725.519,
+      "duration": 3.32,
+      "text": "and i need to go into the test to"
+    },
+    {
+      "start": 727.04,
+      "duration": 4.4,
+      "text": "directory"
+    },
+    {
+      "start": 728.839,
+      "duration": 5.161,
+      "text": "so i am inside my test to directory"
+    },
+    {
+      "start": 731.44,
+      "duration": 4.8,
+      "text": "right now so if you want to do this two"
+    },
+    {
+      "start": 734.0,
+      "duration": 3.519,
+      "text": "commands at on a single line you can do"
+    },
+    {
+      "start": 736.24,
+      "duration": 3.12,
+      "text": "like this as well so let's say we are"
+    },
+    {
+      "start": 737.519,
+      "duration": 3.841,
+      "text": "going to create another test three"
+    },
+    {
+      "start": 739.36,
+      "duration": 4.0,
+      "text": "directory and i also want to go into"
+    },
+    {
+      "start": 741.36,
+      "duration": 4.56,
+      "text": "that directory in on a single command so"
+    },
+    {
+      "start": 743.36,
+      "duration": 4.479,
+      "text": "how can i do this i can do it by running"
+    },
+    {
+      "start": 745.92,
+      "duration": 4.96,
+      "text": "two commands separating it using this"
+    },
+    {
+      "start": 747.839,
+      "duration": 5.841,
+      "text": "symbol so mkd directory test three and"
+    },
+    {
+      "start": 750.88,
+      "duration": 4.56,
+      "text": "cd into test three"
+    },
+    {
+      "start": 753.68,
+      "duration": 6.159,
+      "text": "right so you can see now i have also"
+    },
+    {
+      "start": 755.44,
+      "duration": 4.399,
+      "text": "created and i'm also inside my directory"
+    },
+    {
+      "start": 759.92,
+      "duration": 4.24,
+      "text": "right so if i am here"
+    },
+    {
+      "start": 762.079,
+      "duration": 5.921,
+      "text": "i if i want to go back to this home"
+    },
+    {
+      "start": 764.16,
+      "duration": 6.0,
+      "text": "directory i can do it by running cd only"
+    },
+    {
+      "start": 768.0,
+      "duration": 5.2,
+      "text": "or else i can also do it by going back"
+    },
+    {
+      "start": 770.16,
+      "duration": 5.28,
+      "text": "so if i do this i'll be back in test two"
+    },
+    {
+      "start": 773.2,
+      "duration": 3.12,
+      "text": "then if i do this i'll be back in test"
+    },
+    {
+      "start": 775.44,
+      "duration": 2.72,
+      "text": "one"
+    },
+    {
+      "start": 776.32,
+      "duration": 4.0,
+      "text": "then if i do this i'll be back into"
+    },
+    {
+      "start": 778.16,
+      "duration": 4.72,
+      "text": "learn linux command and if i do this"
+    },
+    {
+      "start": 780.32,
+      "duration": 3.519,
+      "text": "i'll be back in my home directory now"
+    },
+    {
+      "start": 782.88,
+      "duration": 3.44,
+      "text": "all right"
+    },
+    {
+      "start": 783.839,
+      "duration": 4.8,
+      "text": "but if you do cd you will go back yeah"
+    },
+    {
+      "start": 786.32,
+      "duration": 5.199,
+      "text": "if i no matter where i am no matter"
+    },
+    {
+      "start": 788.639,
+      "duration": 6.561,
+      "text": "inside wherever i am if i just do cd"
+    },
+    {
+      "start": 791.519,
+      "duration": 3.681,
+      "text": "i'll be back to my home directory"
+    },
+    {
+      "start": 795.44,
+      "duration": 3.76,
+      "text": "right so now i hope you have"
+    },
+    {
+      "start": 797.279,
+      "duration": 4.56,
+      "text": "learned about the cd cd command"
+    },
+    {
+      "start": 799.2,
+      "duration": 6.24,
+      "text": "correctly so let's go back to our learn"
+    },
+    {
+      "start": 801.839,
+      "duration": 4.8,
+      "text": "linux test one command and let's go and"
+    },
+    {
+      "start": 805.44,
+      "duration": 2.72,
+      "text": "delete"
+    },
+    {
+      "start": 806.639,
+      "duration": 3.921,
+      "text": "uh the"
+    },
+    {
+      "start": 808.16,
+      "duration": 4.64,
+      "text": "folders inside it so let's go let's see"
+    },
+    {
+      "start": 810.56,
+      "duration": 3.92,
+      "text": "what do we have here so we have test2"
+    },
+    {
+      "start": 812.8,
+      "duration": 3.92,
+      "text": "i'm going to go into test two what do i"
+    },
+    {
+      "start": 814.48,
+      "duration": 3.84,
+      "text": "have here i have test three so let's go"
+    },
+    {
+      "start": 816.72,
+      "duration": 3.28,
+      "text": "and see what do i have in test three i"
+    },
+    {
+      "start": 818.32,
+      "duration": 3.68,
+      "text": "have nothing in test three now so i'm"
+    },
+    {
+      "start": 820.0,
+      "duration": 3.68,
+      "text": "going to go back one step back and i'm"
+    },
+    {
+      "start": 822.0,
+      "duration": 4.88,
+      "text": "going to delete this"
+    },
+    {
+      "start": 823.68,
+      "duration": 5.44,
+      "text": "delete this folder here test three"
+    },
+    {
+      "start": 826.88,
+      "duration": 4.8,
+      "text": "so to delete any folder or any directory"
+    },
+    {
+      "start": 829.12,
+      "duration": 3.839,
+      "text": "you have the command remove directory so"
+    },
+    {
+      "start": 831.68,
+      "duration": 3.04,
+      "text": "remove directory and the name of"
+    },
+    {
+      "start": 832.959,
+      "duration": 4.161,
+      "text": "directory which is test three year so"
+    },
+    {
+      "start": 834.72,
+      "duration": 4.799,
+      "text": "i'm going to press enter and i see that"
+    },
+    {
+      "start": 837.12,
+      "duration": 4.0,
+      "text": "there is no test three now let's go back"
+    },
+    {
+      "start": 839.519,
+      "duration": 4.401,
+      "text": "again to my"
+    },
+    {
+      "start": 841.12,
+      "duration": 4.8,
+      "text": "test two and if you see here you can see"
+    },
+    {
+      "start": 843.92,
+      "duration": 4.0,
+      "text": "test two is present but let's say i want"
+    },
+    {
+      "start": 845.92,
+      "duration": 4.56,
+      "text": "to delete the test one and test two at a"
+    },
+    {
+      "start": 847.92,
+      "duration": 5.039,
+      "text": "time so i can go back here and"
+    },
+    {
+      "start": 850.48,
+      "duration": 5.44,
+      "text": "i am inside my learn linux i have test"
+    },
+    {
+      "start": 852.959,
+      "duration": 4.961,
+      "text": "one and inside test one i have test two"
+    },
+    {
+      "start": 855.92,
+      "duration": 3.84,
+      "text": "right"
+    },
+    {
+      "start": 857.92,
+      "duration": 4.64,
+      "text": "so if i want to delete i can run the"
+    },
+    {
+      "start": 859.76,
+      "duration": 4.56,
+      "text": "command test one like i have done"
+    },
+    {
+      "start": 862.56,
+      "duration": 5.12,
+      "text": "previously but it will show me an error"
+    },
+    {
+      "start": 864.32,
+      "duration": 6.48,
+      "text": "it says that directory is not empty so"
+    },
+    {
+      "start": 867.68,
+      "duration": 5.04,
+      "text": "you cannot delete the directories which"
+    },
+    {
+      "start": 870.8,
+      "duration": 3.12,
+      "text": "are not empty so to delete them you can"
+    },
+    {
+      "start": 872.72,
+      "duration": 4.64,
+      "text": "run"
+    },
+    {
+      "start": 873.92,
+      "duration": 5.84,
+      "text": "hyphen r and the name of the"
+    },
+    {
+      "start": 877.36,
+      "duration": 4.88,
+      "text": "directory so if i do ls you can see the"
+    },
+    {
+      "start": 879.76,
+      "duration": 5.519,
+      "text": "test one has gone so this hyphen r"
+    },
+    {
+      "start": 882.24,
+      "duration": 4.88,
+      "text": "stands for recursive and this can be"
+    },
+    {
+      "start": 885.279,
+      "duration": 3.92,
+      "text": "this can be confusing like when to use"
+    },
+    {
+      "start": 887.12,
+      "duration": 4.56,
+      "text": "what and there is another command which"
+    },
+    {
+      "start": 889.199,
+      "duration": 5.041,
+      "text": "every one should know which is man which"
+    },
+    {
+      "start": 891.68,
+      "duration": 4.0,
+      "text": "stands for manual and man and the name"
+    },
+    {
+      "start": 894.24,
+      "duration": 3.68,
+      "text": "of the command so let's say i am running"
+    },
+    {
+      "start": 895.68,
+      "duration": 4.08,
+      "text": "rm this will tell you everything about"
+    },
+    {
+      "start": 897.92,
+      "duration": 4.56,
+      "text": "this command every detail about this"
+    },
+    {
+      "start": 899.76,
+      "duration": 5.519,
+      "text": "command if i run manual rm so i will get"
+    },
+    {
+      "start": 902.48,
+      "duration": 5.12,
+      "text": "the detail like what is the name rm rm"
+    },
+    {
+      "start": 905.279,
+      "duration": 4.401,
+      "text": "is to remove files or directories so you"
+    },
+    {
+      "start": 907.6,
+      "duration": 3.52,
+      "text": "this is the syntax and it gives you the"
+    },
+    {
+      "start": 909.68,
+      "duration": 4.48,
+      "text": "description that this manual page"
+    },
+    {
+      "start": 911.12,
+      "duration": 5.2,
+      "text": "documents is the gnu version rm removes"
+    },
+    {
+      "start": 914.16,
+      "duration": 4.0,
+      "text": "each specified file and it will give you"
+    },
+    {
+      "start": 916.32,
+      "duration": 4.56,
+      "text": "all the other options you have like f is"
+    },
+    {
+      "start": 918.16,
+      "duration": 5.039,
+      "text": "for force i is to prompt every removable"
+    },
+    {
+      "start": 920.88,
+      "duration": 4.48,
+      "text": "hyphen i so if you see iphone r is"
+    },
+    {
+      "start": 923.199,
+      "duration": 4.08,
+      "text": "recursive which removes directories and"
+    },
+    {
+      "start": 925.36,
+      "duration": 5.12,
+      "text": "their contents as well"
+    },
+    {
+      "start": 927.279,
+      "duration": 4.881,
+      "text": "so whenever we use iphone r we have"
+    },
+    {
+      "start": 930.48,
+      "duration": 5.039,
+      "text": "deleted the directory as well as"
+    },
+    {
+      "start": 932.16,
+      "duration": 3.359,
+      "text": "whatever was inside it"
+    },
+    {
+      "start": 935.839,
+      "duration": 5.44,
+      "text": "right so you can also get"
+    },
+    {
+      "start": 937.92,
+      "duration": 5.44,
+      "text": "yes recursive so yes"
+    },
+    {
+      "start": 941.279,
+      "duration": 4.321,
+      "text": "you don't need to remember this you will"
+    },
+    {
+      "start": 943.36,
+      "duration": 3.76,
+      "text": "learn this when you do it practice you"
+    },
+    {
+      "start": 945.6,
+      "duration": 2.479,
+      "text": "when you practice it"
+    },
+    {
+      "start": 947.12,
+      "duration": 3.279,
+      "text": "and"
+    },
+    {
+      "start": 948.079,
+      "duration": 4.801,
+      "text": "so it says like this manual page if you"
+    },
+    {
+      "start": 950.399,
+      "duration": 4.161,
+      "text": "want to get more help you can press edge"
+    },
+    {
+      "start": 952.88,
+      "duration": 4.56,
+      "text": "if you want to quit you can press q so"
+    },
+    {
+      "start": 954.56,
+      "duration": 5.199,
+      "text": "i'm i press q and i'm back inside my"
+    },
+    {
+      "start": 957.44,
+      "duration": 4.16,
+      "text": "inside my terminal again so now you can"
+    },
+    {
+      "start": 959.759,
+      "duration": 3.76,
+      "text": "see that it is quite a mess and if you"
+    },
+    {
+      "start": 961.6,
+      "duration": 3.359,
+      "text": "want to create clear everything out if"
+    },
+    {
+      "start": 963.519,
+      "duration": 3.041,
+      "text": "you want to delete everything out and"
+    },
+    {
+      "start": 964.959,
+      "duration": 3.68,
+      "text": "clear the screen you can run this"
+    },
+    {
+      "start": 966.56,
+      "duration": 4.88,
+      "text": "command clear and you're back again with"
+    },
+    {
+      "start": 968.639,
+      "duration": 2.801,
+      "text": "the fresh screen"
+    },
+    {
+      "start": 971.759,
+      "duration": 2.561,
+      "text": "right so now"
+    },
+    {
+      "start": 973.199,
+      "duration": 2.961,
+      "text": "you have learned how to create"
+    },
+    {
+      "start": 974.32,
+      "duration": 4.16,
+      "text": "directories how to create files how to"
+    },
+    {
+      "start": 976.16,
+      "duration": 4.72,
+      "text": "edit them everything and now i have"
+    },
+    {
+      "start": 978.48,
+      "duration": 4.799,
+      "text": "three files inside my"
+    },
+    {
+      "start": 980.88,
+      "duration": 3.84,
+      "text": "learn linux directory"
+    },
+    {
+      "start": 983.279,
+      "duration": 3.92,
+      "text": "all right"
+    },
+    {
+      "start": 984.72,
+      "duration": 4.479,
+      "text": "so let's create another directory to"
+    },
+    {
+      "start": 987.199,
+      "duration": 5.681,
+      "text": "learn some more commands like copy and"
+    },
+    {
+      "start": 989.199,
+      "duration": 5.601,
+      "text": "move so let's create a file to"
+    },
+    {
+      "start": 992.88,
+      "duration": 3.759,
+      "text": "let's test one"
+    },
+    {
+      "start": 994.8,
+      "duration": 4.32,
+      "text": "so i'm create a directory which is test"
+    },
+    {
+      "start": 996.639,
+      "duration": 4.481,
+      "text": "one so if i do ls i should see all the"
+    },
+    {
+      "start": 999.12,
+      "duration": 4.48,
+      "text": "files and the directory test one so"
+    },
+    {
+      "start": 1001.12,
+      "duration": 6.719,
+      "text": "let's say i want to copy this file one"
+    },
+    {
+      "start": 1003.6,
+      "duration": 7.12,
+      "text": "dot txt from learn linux and copy it to"
+    },
+    {
+      "start": 1007.839,
+      "duration": 5.44,
+      "text": "test one so to copy any files i have to"
+    },
+    {
+      "start": 1010.72,
+      "duration": 5.84,
+      "text": "pass in this cp command cp stands for"
+    },
+    {
+      "start": 1013.279,
+      "duration": 4.961,
+      "text": "copy name of the file one dot txt and"
+    },
+    {
+      "start": 1016.56,
+      "duration": 4.16,
+      "text": "where do i want to copy it i want to"
+    },
+    {
+      "start": 1018.24,
+      "duration": 4.64,
+      "text": "copy it in my test one so this slash"
+    },
+    {
+      "start": 1020.72,
+      "duration": 5.599,
+      "text": "that you see at the end means it will be"
+    },
+    {
+      "start": 1022.88,
+      "duration": 6.88,
+      "text": "inside inside that directory"
+    },
+    {
+      "start": 1026.319,
+      "duration": 5.6,
+      "text": "right so if i do enter you should this"
+    },
+    {
+      "start": 1029.76,
+      "duration": 4.559,
+      "text": "has shown me no error which means i have"
+    },
+    {
+      "start": 1031.919,
+      "duration": 4.481,
+      "text": "copied the file inside text one so let's"
+    },
+    {
+      "start": 1034.319,
+      "duration": 4.161,
+      "text": "go back to the graphical user interface"
+    },
+    {
+      "start": 1036.4,
+      "duration": 4.639,
+      "text": "so i am here this is the test one i have"
+    },
+    {
+      "start": 1038.48,
+      "duration": 4.319,
+      "text": "copied my file from my learn linux to"
+    },
+    {
+      "start": 1041.039,
+      "duration": 4.321,
+      "text": "the test one so i should see a file name"
+    },
+    {
+      "start": 1042.799,
+      "duration": 5.601,
+      "text": "as one dot txt inside this so if i you"
+    },
+    {
+      "start": 1045.36,
+      "duration": 5.12,
+      "text": "can see that there is a file one dot txt"
+    },
+    {
+      "start": 1048.4,
+      "duration": 4.8,
+      "text": "right so"
+    },
+    {
+      "start": 1050.48,
+      "duration": 4.88,
+      "text": "cp command is used to copy the file and"
+    },
+    {
+      "start": 1053.2,
+      "duration": 4.32,
+      "text": "when you copy the file is also present"
+    },
+    {
+      "start": 1055.36,
+      "duration": 5.199,
+      "text": "in the original directory as well as"
+    },
+    {
+      "start": 1057.52,
+      "duration": 5.2,
+      "text": "there in the directory that you have"
+    },
+    {
+      "start": 1060.559,
+      "duration": 4.48,
+      "text": "logged into so if i do here and you can"
+    },
+    {
+      "start": 1062.72,
+      "duration": 4.8,
+      "text": "also ls directly from here rather than"
+    },
+    {
+      "start": 1065.039,
+      "duration": 4.401,
+      "text": "going into so i can just check what are"
+    },
+    {
+      "start": 1067.52,
+      "duration": 4.159,
+      "text": "the present what are the files listed in"
+    },
+    {
+      "start": 1069.44,
+      "duration": 4.08,
+      "text": "the test one so i can do ls and i can"
+    },
+    {
+      "start": 1071.679,
+      "duration": 2.801,
+      "text": "see that one dot txt is present in test"
+    },
+    {
+      "start": 1073.52,
+      "duration": 2.96,
+      "text": "one"
+    },
+    {
+      "start": 1074.48,
+      "duration": 4.16,
+      "text": "so this is this is copy command let's"
+    },
+    {
+      "start": 1076.48,
+      "duration": 4.0,
+      "text": "say we want to move a comma move a file"
+    },
+    {
+      "start": 1078.64,
+      "duration": 4.64,
+      "text": "so to move a file let's say i want to"
+    },
+    {
+      "start": 1080.48,
+      "duration": 5.76,
+      "text": "move two dot txt from learnlinux to the"
+    },
+    {
+      "start": 1083.28,
+      "duration": 6.639,
+      "text": "test1 directory so i can run mvcommand"
+    },
+    {
+      "start": 1086.24,
+      "duration": 6.96,
+      "text": "which stands for move mv2.txt"
+    },
+    {
+      "start": 1089.919,
+      "duration": 5.201,
+      "text": "inside the test1 so if i press enter it"
+    },
+    {
+      "start": 1093.2,
+      "duration": 4.4,
+      "text": "showed me no error which means my"
+    },
+    {
+      "start": 1095.12,
+      "duration": 5.439,
+      "text": "command has run successfully my"
+    },
+    {
+      "start": 1097.6,
+      "duration": 5.36,
+      "text": "uh my file has been moved to the test1"
+    },
+    {
+      "start": 1100.559,
+      "duration": 5.201,
+      "text": "directory so if i do ls now you should"
+    },
+    {
+      "start": 1102.96,
+      "duration": 4.48,
+      "text": "see that two dot txt is not now is not"
+    },
+    {
+      "start": 1105.76,
+      "duration": 3.2,
+      "text": "present right now in the learn linux"
+    },
+    {
+      "start": 1107.44,
+      "duration": 4.88,
+      "text": "because it has been moved to the test"
+    },
+    {
+      "start": 1108.96,
+      "duration": 5.36,
+      "text": "one directory so if i do ls test one i"
+    },
+    {
+      "start": 1112.32,
+      "duration": 4.16,
+      "text": "should see two dot txt present here as"
+    },
+    {
+      "start": 1114.32,
+      "duration": 4.719,
+      "text": "well"
+    },
+    {
+      "start": 1116.48,
+      "duration": 4.4,
+      "text": "right so this was how to copy or move a"
+    },
+    {
+      "start": 1119.039,
+      "duration": 3.841,
+      "text": "file from one directory to another"
+    },
+    {
+      "start": 1120.88,
+      "duration": 4.88,
+      "text": "directory so let's say you want to move"
+    },
+    {
+      "start": 1122.88,
+      "duration": 3.76,
+      "text": "this file to lay to the home directory"
+    },
+    {
+      "start": 1125.76,
+      "duration": 2.24,
+      "text": "or"
+    },
+    {
+      "start": 1126.64,
+      "duration": 3.44,
+      "text": "let's go to the home directory and i"
+    },
+    {
+      "start": 1128.0,
+      "duration": 4.08,
+      "text": "want to move the two dot txt in my this"
+    },
+    {
+      "start": 1130.08,
+      "duration": 4.8,
+      "text": "folder app folder"
+    },
+    {
+      "start": 1132.08,
+      "duration": 4.56,
+      "text": "so how can i do this so i can do this by"
+    },
+    {
+      "start": 1134.88,
+      "duration": 4.64,
+      "text": "let's say three dot txt i want to move"
+    },
+    {
+      "start": 1136.64,
+      "duration": 3.919,
+      "text": "this file to from home"
+    },
+    {
+      "start": 1139.52,
+      "duration": 3.2,
+      "text": "you have to"
+    },
+    {
+      "start": 1140.559,
+      "duration": 4.561,
+      "text": "you have to paste in the full path like"
+    },
+    {
+      "start": 1142.72,
+      "duration": 4.319,
+      "text": "the path is from home to the app so the"
+    },
+    {
+      "start": 1145.12,
+      "duration": 4.16,
+      "text": "home directory is also known as this"
+    },
+    {
+      "start": 1147.039,
+      "duration": 4.241,
+      "text": "side right we can also call this this is"
+    },
+    {
+      "start": 1149.28,
+      "duration": 3.6,
+      "text": "our home directory"
+    },
+    {
+      "start": 1151.28,
+      "duration": 3.92,
+      "text": "and what do we have inside our home"
+    },
+    {
+      "start": 1152.88,
+      "duration": 4.56,
+      "text": "directory so that we have 112 files so"
+    },
+    {
+      "start": 1155.2,
+      "duration": 4.16,
+      "text": "we don't want to do that so let's say i"
+    },
+    {
+      "start": 1157.44,
+      "duration": 3.92,
+      "text": "want to pass in the app so which what"
+    },
+    {
+      "start": 1159.36,
+      "duration": 3.6,
+      "text": "are the files that starts with a so i"
+    },
+    {
+      "start": 1161.36,
+      "duration": 3.36,
+      "text": "can press tab key"
+    },
+    {
+      "start": 1162.96,
+      "duration": 5.2,
+      "text": "and i can see that all these files all"
+    },
+    {
+      "start": 1164.72,
+      "duration": 3.44,
+      "text": "this directory starts with a"
+    },
+    {
+      "start": 1168.96,
+      "duration": 5.68,
+      "text": "so i want to pass this in the app folder"
+    },
+    {
+      "start": 1171.039,
+      "duration": 6.241,
+      "text": "here so i can do tab again and this file"
+    },
+    {
+      "start": 1174.64,
+      "duration": 5.44,
+      "text": "will be transferred from learn linux"
+    },
+    {
+      "start": 1177.28,
+      "duration": 5.04,
+      "text": "directory to the app directory which has"
+    },
+    {
+      "start": 1180.08,
+      "duration": 6.0,
+      "text": "which is from home to the app directory"
+    },
+    {
+      "start": 1182.32,
+      "duration": 6.479,
+      "text": "so if i press enter it has given me no"
+    },
+    {
+      "start": 1186.08,
+      "duration": 4.959,
+      "text": "no errors which means my file has been"
+    },
+    {
+      "start": 1188.799,
+      "duration": 4.24,
+      "text": "transferred successfully so let's do ls"
+    },
+    {
+      "start": 1191.039,
+      "duration": 3.441,
+      "text": "and see if three is present or not so"
+    },
+    {
+      "start": 1193.039,
+      "duration": 4.961,
+      "text": "you can see that three has been gone"
+    },
+    {
+      "start": 1194.48,
+      "duration": 4.48,
+      "text": "from here and if i do ls home"
+    },
+    {
+      "start": 1198.0,
+      "duration": 2.96,
+      "text": "app"
+    },
+    {
+      "start": 1198.96,
+      "duration": 3.199,
+      "text": "i should see that three is should be"
+    },
+    {
+      "start": 1200.96,
+      "duration": 2.88,
+      "text": "moved in here"
+    },
+    {
+      "start": 1202.159,
+      "duration": 4.481,
+      "text": "so you can see that three has been moved"
+    },
+    {
+      "start": 1203.84,
+      "duration": 4.8,
+      "text": "here"
+    },
+    {
+      "start": 1206.64,
+      "duration": 4.32,
+      "text": "right so whenever you are working in"
+    },
+    {
+      "start": 1208.64,
+      "duration": 4.08,
+      "text": "some other directory which is one step"
+    },
+    {
+      "start": 1210.96,
+      "duration": 5.36,
+      "text": "back from here you have to pass in the"
+    },
+    {
+      "start": 1212.72,
+      "duration": 5.36,
+      "text": "full path of that directory"
+    },
+    {
+      "start": 1216.32,
+      "duration": 3.2,
+      "text": "right because this app is not present in"
+    },
+    {
+      "start": 1218.08,
+      "duration": 3.2,
+      "text": "the learn linux directory it's present"
+    },
+    {
+      "start": 1219.52,
+      "duration": 3.68,
+      "text": "in the home directory so you have to"
+    },
+    {
+      "start": 1221.28,
+      "duration": 3.68,
+      "text": "first move to the home directory and"
+    },
+    {
+      "start": 1223.2,
+      "duration": 5.359,
+      "text": "then search for the app directory then"
+    },
+    {
+      "start": 1224.96,
+      "duration": 5.52,
+      "text": "paste it or do any command you want"
+    },
+    {
+      "start": 1228.559,
+      "duration": 4.48,
+      "text": "right so even if i want to delete the"
+    },
+    {
+      "start": 1230.48,
+      "duration": 4.8,
+      "text": "file 3.txt from my learn linux command"
+    },
+    {
+      "start": 1233.039,
+      "duration": 3.041,
+      "text": "here i can learn the next directory here"
+    },
+    {
+      "start": 1235.28,
+      "duration": 3.12,
+      "text": "i can"
+    },
+    {
+      "start": 1236.08,
+      "duration": 5.599,
+      "text": "do it by passing in the full path so"
+    },
+    {
+      "start": 1238.4,
+      "duration": 6.24,
+      "text": "let's say i want to delete the rm.txt"
+    },
+    {
+      "start": 1241.679,
+      "duration": 5.441,
+      "text": "which is inside this"
+    },
+    {
+      "start": 1244.64,
+      "duration": 5.76,
+      "text": "this path here right so i have to fasten"
+    },
+    {
+      "start": 1247.12,
+      "duration": 5.28,
+      "text": "full path that is app"
+    },
+    {
+      "start": 1250.4,
+      "duration": 4.32,
+      "text": "so"
+    },
+    {
+      "start": 1252.4,
+      "duration": 4.0,
+      "text": "app and what files do i have i have"
+    },
+    {
+      "start": 1254.72,
+      "duration": 3.28,
+      "text": "three dot txt i have all these different"
+    },
+    {
+      "start": 1256.4,
+      "duration": 4.48,
+      "text": "files i just need to delete the three"
+    },
+    {
+      "start": 1258.0,
+      "duration": 6.24,
+      "text": "dot ext so i can pass this here and if"
+    },
+    {
+      "start": 1260.88,
+      "duration": 5.84,
+      "text": "you do ls so if i press up arrow key and"
+    },
+    {
+      "start": 1264.24,
+      "duration": 6.559,
+      "text": "i see the contents of app folder here i"
+    },
+    {
+      "start": 1266.72,
+      "duration": 4.079,
+      "text": "can see that three dot txt is gone now"
+    },
+    {
+      "start": 1270.88,
+      "duration": 4.24,
+      "text": "right so i hope you have learned all the"
+    },
+    {
+      "start": 1273.52,
+      "duration": 4.159,
+      "text": "file commands which is"
+    },
+    {
+      "start": 1275.12,
+      "duration": 4.4,
+      "text": "ls which is cd which is rm to remove"
+    },
+    {
+      "start": 1277.679,
+      "duration": 4.081,
+      "text": "which is mkdir to create directories"
+    },
+    {
+      "start": 1279.52,
+      "duration": 3.84,
+      "text": "which is test command to create files"
+    },
+    {
+      "start": 1281.76,
+      "duration": 2.799,
+      "text": "nano command to create files with"
+    },
+    {
+      "start": 1283.36,
+      "duration": 3.6,
+      "text": "content"
+    },
+    {
+      "start": 1284.559,
+      "duration": 4.561,
+      "text": "and mv command to move"
+    },
+    {
+      "start": 1286.96,
+      "duration": 4.16,
+      "text": "cp command to copy as well"
+    },
+    {
+      "start": 1289.12,
+      "duration": 5.12,
+      "text": "right so let's clear it out clear is to"
+    },
+    {
+      "start": 1291.12,
+      "duration": 5.6,
+      "text": "clear all the things so let me check"
+    },
+    {
+      "start": 1294.24,
+      "duration": 5.28,
+      "text": "what do i have here to ls to list all of"
+    },
+    {
+      "start": 1296.72,
+      "duration": 5.6,
+      "text": "the things so i have one dot txt so you"
+    },
+    {
+      "start": 1299.52,
+      "duration": 5.519,
+      "text": "now know that move command is to"
+    },
+    {
+      "start": 1302.32,
+      "duration": 4.8,
+      "text": "move the files"
+    },
+    {
+      "start": 1305.039,
+      "duration": 4.0,
+      "text": "yes but there is also one more thing"
+    },
+    {
+      "start": 1307.12,
+      "duration": 4.799,
+      "text": "that you can do with move commands"
+    },
+    {
+      "start": 1309.039,
+      "duration": 4.321,
+      "text": "which is you can rename the file"
+    },
+    {
+      "start": 1311.919,
+      "duration": 4.961,
+      "text": "so let's say i want to rename the one"
+    },
+    {
+      "start": 1313.36,
+      "duration": 6.48,
+      "text": "dot txt to my new file"
+    },
+    {
+      "start": 1316.88,
+      "duration": 5.12,
+      "text": "my new file.txt"
+    },
+    {
+      "start": 1319.84,
+      "duration": 3.76,
+      "text": "so i can also do it without so i can"
+    },
+    {
+      "start": 1322.0,
+      "duration": 3.679,
+      "text": "move and rename"
+    },
+    {
+      "start": 1323.6,
+      "duration": 4.319,
+      "text": "the files with the same command so if i"
+    },
+    {
+      "start": 1325.679,
+      "duration": 4.0,
+      "text": "press enter you can see that there's no"
+    },
+    {
+      "start": 1327.919,
+      "duration": 4.481,
+      "text": "output or there's no error given out and"
+    },
+    {
+      "start": 1329.679,
+      "duration": 4.961,
+      "text": "if i do ls you can see that my file has"
+    },
+    {
+      "start": 1332.4,
+      "duration": 4.0,
+      "text": "been changed from one dot txt to my new"
+    },
+    {
+      "start": 1334.64,
+      "duration": 4.96,
+      "text": "file dot txt"
+    },
+    {
+      "start": 1336.4,
+      "duration": 5.12,
+      "text": "so this mv file can be used to move also"
+    },
+    {
+      "start": 1339.6,
+      "duration": 3.92,
+      "text": "to rename the files so and if you want"
+    },
+    {
+      "start": 1341.52,
+      "duration": 3.44,
+      "text": "to get the information about any"
+    },
+    {
+      "start": 1343.52,
+      "duration": 4.32,
+      "text": "commands i have already taught you about"
+    },
+    {
+      "start": 1344.96,
+      "duration": 4.4,
+      "text": "this manual command which is man and"
+    },
+    {
+      "start": 1347.84,
+      "duration": 3.6,
+      "text": "let's say i want to learn about the mv"
+    },
+    {
+      "start": 1349.36,
+      "duration": 3.439,
+      "text": "command or the move command so i can"
+    },
+    {
+      "start": 1351.44,
+      "duration": 3.52,
+      "text": "press here and you can see that this"
+    },
+    {
+      "start": 1352.799,
+      "duration": 5.041,
+      "text": "command is used to move as well as"
+    },
+    {
+      "start": 1354.96,
+      "duration": 2.88,
+      "text": "rename the file"
+    },
+    {
+      "start": 1358.08,
+      "duration": 3.44,
+      "text": "right so you can go here and learn about"
+    },
+    {
+      "start": 1359.679,
+      "duration": 4.321,
+      "text": "the options you want you can check who"
+    },
+    {
+      "start": 1361.52,
+      "duration": 5.279,
+      "text": "was the author so this mike parker david"
+    },
+    {
+      "start": 1364.0,
+      "duration": 5.039,
+      "text": "mckenzie and jim maring has created this"
+    },
+    {
+      "start": 1366.799,
+      "duration": 4.321,
+      "text": "command and you can also learn about it"
+    },
+    {
+      "start": 1369.039,
+      "duration": 3.361,
+      "text": "but that's that's of no use you only"
+    },
+    {
+      "start": 1371.12,
+      "duration": 2.4,
+      "text": "need to know like how the command"
+    },
+    {
+      "start": 1372.4,
+      "duration": 3.84,
+      "text": "actually works"
+    },
+    {
+      "start": 1373.52,
+      "duration": 6.08,
+      "text": "so i'm going to press q and i have now"
+    },
+    {
+      "start": 1376.24,
+      "duration": 5.919,
+      "text": "learned a lot of commands for the file"
+    },
+    {
+      "start": 1379.6,
+      "duration": 4.16,
+      "text": "right yes yes so"
+    },
+    {
+      "start": 1382.159,
+      "duration": 3.921,
+      "text": "now we are going to learn how to"
+    },
+    {
+      "start": 1383.76,
+      "duration": 4.799,
+      "text": "actually install packages which is very"
+    },
+    {
+      "start": 1386.08,
+      "duration": 4.88,
+      "text": "important for every devops and every"
+    },
+    {
+      "start": 1388.559,
+      "duration": 4.081,
+      "text": "cloud engineer because in your job role"
+    },
+    {
+      "start": 1390.96,
+      "duration": 2.959,
+      "text": "you'll be installing a lot of packages"
+    },
+    {
+      "start": 1392.64,
+      "duration": 2.56,
+      "text": "you'll be installing docker you'll be"
+    },
+    {
+      "start": 1393.919,
+      "duration": 3.921,
+      "text": "installing git you'll be installing"
+    },
+    {
+      "start": 1395.2,
+      "duration": 8.359,
+      "text": "jenkins all the different tools"
+    },
+    {
+      "start": 1397.84,
+      "duration": 5.719,
+      "text": "right so okay who will be installing"
+    },
+    {
+      "start": 1408.159,
+      "duration": 3.281,
+      "text": "they might ask you to install because"
+    },
+    {
+      "start": 1409.679,
+      "duration": 4.561,
+      "text": "there there might be a company which"
+    },
+    {
+      "start": 1411.44,
+      "duration": 4.239,
+      "text": "does not have a devops or cloud engineer"
+    },
+    {
+      "start": 1414.24,
+      "duration": 3.04,
+      "text": "they only have a single person to"
+    },
+    {
+      "start": 1415.679,
+      "duration": 3.921,
+      "text": "perform all the actions so they can ask"
+    },
+    {
+      "start": 1417.28,
+      "duration": 3.6,
+      "text": "you to do it and when you are giving"
+    },
+    {
+      "start": 1419.6,
+      "duration": 2.24,
+      "text": "interviews they're going to ask you"
+    },
+    {
+      "start": 1420.88,
+      "duration": 2.48,
+      "text": "linux"
+    },
+    {
+      "start": 1421.84,
+      "duration": 3.28,
+      "text": "knowledge so if you're learning all of"
+    },
+    {
+      "start": 1423.36,
+      "duration": 4.0,
+      "text": "the things why not to learn the"
+    },
+    {
+      "start": 1425.12,
+      "duration": 4.64,
+      "text": "installing packages as well"
+    },
+    {
+      "start": 1427.36,
+      "duration": 5.04,
+      "text": "yeah your ideas yes so"
+    },
+    {
+      "start": 1429.76,
+      "duration": 5.279,
+      "text": "to install any packages you have to"
+    },
+    {
+      "start": 1432.4,
+      "duration": 4.8,
+      "text": "run a command which is apt install in"
+    },
+    {
+      "start": 1435.039,
+      "duration": 4.0,
+      "text": "ubuntu so there are in linux there are"
+    },
+    {
+      "start": 1437.2,
+      "duration": 3.52,
+      "text": "different flavors like there is centos"
+    },
+    {
+      "start": 1439.039,
+      "duration": 3.601,
+      "text": "there is fedora there is debian there is"
+    },
+    {
+      "start": 1440.72,
+      "duration": 3.68,
+      "text": "ubuntu there is red hat all the"
+    },
+    {
+      "start": 1442.64,
+      "duration": 4.24,
+      "text": "different flavors in"
+    },
+    {
+      "start": 1444.4,
+      "duration": 4.96,
+      "text": "linux right"
+    },
+    {
+      "start": 1446.88,
+      "duration": 4.64,
+      "text": "so for ubuntu you have apt"
+    },
+    {
+      "start": 1449.36,
+      "duration": 3.84,
+      "text": "and if i do man apt"
+    },
+    {
+      "start": 1451.52,
+      "duration": 3.759,
+      "text": "manual apt it will show you that this is"
+    },
+    {
+      "start": 1453.2,
+      "duration": 3.599,
+      "text": "a command line interface which provides"
+    },
+    {
+      "start": 1455.279,
+      "duration": 5.041,
+      "text": "you high level command line interface"
+    },
+    {
+      "start": 1456.799,
+      "duration": 7.041,
+      "text": "for package management system so apt is"
+    },
+    {
+      "start": 1460.32,
+      "duration": 6.0,
+      "text": "the packet manager of the ubuntu"
+    },
+    {
+      "start": 1463.84,
+      "duration": 4.079,
+      "text": "right but for different flavors you have"
+    },
+    {
+      "start": 1466.32,
+      "duration": 4.08,
+      "text": "different packet managers so let's say"
+    },
+    {
+      "start": 1467.919,
+      "duration": 3.76,
+      "text": "if i search for package managers"
+    },
+    {
+      "start": 1470.4,
+      "duration": 2.56,
+      "text": "in"
+    },
+    {
+      "start": 1471.679,
+      "duration": 3.201,
+      "text": "in"
+    },
+    {
+      "start": 1472.96,
+      "duration": 3.28,
+      "text": "linux"
+    },
+    {
+      "start": 1474.88,
+      "duration": 3.679,
+      "text": "so it will give me different packet"
+    },
+    {
+      "start": 1476.24,
+      "duration": 4.799,
+      "text": "managers so let's say apt is for is for"
+    },
+    {
+      "start": 1478.559,
+      "duration": 4.081,
+      "text": "ubuntu em is for centos d package is for"
+    },
+    {
+      "start": 1481.039,
+      "duration": 3.52,
+      "text": "another oh"
+    },
+    {
+      "start": 1482.64,
+      "duration": 5.2,
+      "text": "another linux"
+    },
+    {
+      "start": 1484.559,
+      "duration": 5.841,
+      "text": "linux flavor rpm is for red hat linux"
+    },
+    {
+      "start": 1487.84,
+      "duration": 6.0,
+      "text": "and dnf is for debian so all of this are"
+    },
+    {
+      "start": 1490.4,
+      "duration": 6.24,
+      "text": "different package managers for different"
+    },
+    {
+      "start": 1493.84,
+      "duration": 4.079,
+      "text": "linux flavors"
+    },
+    {
+      "start": 1496.64,
+      "duration": 5.6,
+      "text": "right"
+    },
+    {
+      "start": 1497.919,
+      "duration": 6.161,
+      "text": "yeah so we are using ubuntu here so"
+    },
+    {
+      "start": 1502.24,
+      "duration": 6.64,
+      "text": "we are using ubuntu here so we are going"
+    },
+    {
+      "start": 1504.08,
+      "duration": 6.4,
+      "text": "to use the apt package manager right so"
+    },
+    {
+      "start": 1508.88,
+      "duration": 2.88,
+      "text": "if i show you"
+    },
+    {
+      "start": 1510.48,
+      "duration": 3.679,
+      "text": "let's see now"
+    },
+    {
+      "start": 1511.76,
+      "duration": 3.519,
+      "text": "you say apt and i've seen one is npt"
+    },
+    {
+      "start": 1514.159,
+      "duration": 4.481,
+      "text": "dash"
+    },
+    {
+      "start": 1515.279,
+      "duration": 4.64,
+      "text": "get apt get is for different linux"
+    },
+    {
+      "start": 1518.64,
+      "duration": 3.519,
+      "text": "flavors"
+    },
+    {
+      "start": 1519.919,
+      "duration": 6.321,
+      "text": "okay okay so you have all the different"
+    },
+    {
+      "start": 1522.159,
+      "duration": 6.241,
+      "text": "types like apt apt-get m rpm dnf pac-man"
+    },
+    {
+      "start": 1526.24,
+      "duration": 4.319,
+      "text": "synaptic zip aptitude all of the"
+    },
+    {
+      "start": 1528.4,
+      "duration": 5.68,
+      "text": "different stuff so if you're using"
+    },
+    {
+      "start": 1530.559,
+      "duration": 6.401,
+      "text": "let's say you're using amazon linux ami"
+    },
+    {
+      "start": 1534.08,
+      "duration": 6.4,
+      "text": "so amazon linux is based on fedora and"
+    },
+    {
+      "start": 1536.96,
+      "duration": 7.839,
+      "text": "fedora uses the yum package so let's say"
+    },
+    {
+      "start": 1540.48,
+      "duration": 8.0,
+      "text": "if i search for uh install docker on"
+    },
+    {
+      "start": 1544.799,
+      "duration": 3.681,
+      "text": "on amazon linux ami"
+    },
+    {
+      "start": 1548.559,
+      "duration": 3.36,
+      "text": "so amazon linux"
+    },
+    {
+      "start": 1552.4,
+      "duration": 3.279,
+      "text": "ami"
+    },
+    {
+      "start": 1553.76,
+      "duration": 3.919,
+      "text": "all right so i'm going to get this blog"
+    },
+    {
+      "start": 1555.679,
+      "duration": 5.281,
+      "text": "here and they're going to show me so if"
+    },
+    {
+      "start": 1557.679,
+      "duration": 6.641,
+      "text": "you see here it it says sudo m update"
+    },
+    {
+      "start": 1560.96,
+      "duration": 5.36,
+      "text": "sudo m search sudo m info right so you"
+    },
+    {
+      "start": 1564.32,
+      "duration": 4.56,
+      "text": "can see that yum is the packet manager"
+    },
+    {
+      "start": 1566.32,
+      "duration": 5.28,
+      "text": "so you do sudo m install docker if i"
+    },
+    {
+      "start": 1568.88,
+      "duration": 5.36,
+      "text": "copy this command and i paste it in my"
+    },
+    {
+      "start": 1571.6,
+      "duration": 4.559,
+      "text": "in my terminal which is not"
+    },
+    {
+      "start": 1574.24,
+      "duration": 4.48,
+      "text": "amazon linux which is not"
+    },
+    {
+      "start": 1576.159,
+      "duration": 4.561,
+      "text": "fedora or centos it is this is a ubuntu"
+    },
+    {
+      "start": 1578.72,
+      "duration": 4.959,
+      "text": "image so if i paste this i'm going to"
+    },
+    {
+      "start": 1580.72,
+      "duration": 4.88,
+      "text": "get an error and if i i'm getting a"
+    },
+    {
+      "start": 1583.679,
+      "duration": 4.24,
+      "text": "prompt to enter the password because i'm"
+    },
+    {
+      "start": 1585.6,
+      "duration": 4.559,
+      "text": "using sudo and i'm also going to tell"
+    },
+    {
+      "start": 1587.919,
+      "duration": 4.161,
+      "text": "you about what sudo actually is so if i"
+    },
+    {
+      "start": 1590.159,
+      "duration": 3.921,
+      "text": "press enter it says that command not"
+    },
+    {
+      "start": 1592.08,
+      "duration": 6.24,
+      "text": "found for yum"
+    },
+    {
+      "start": 1594.08,
+      "duration": 5.599,
+      "text": "but if i do sudo apt install docker so i"
+    },
+    {
+      "start": 1598.32,
+      "duration": 3.599,
+      "text": "already have docker installed but i'll"
+    },
+    {
+      "start": 1599.679,
+      "duration": 4.801,
+      "text": "still get the output so if i do sudo apd"
+    },
+    {
+      "start": 1601.919,
+      "duration": 4.401,
+      "text": "docker install it will say tell me that"
+    },
+    {
+      "start": 1604.48,
+      "duration": 3.76,
+      "text": "okay this is the packages which will be"
+    },
+    {
+      "start": 1606.32,
+      "duration": 4.08,
+      "text": "installed and if you are sure you want"
+    },
+    {
+      "start": 1608.24,
+      "duration": 3.6,
+      "text": "to continue just press y so it is going"
+    },
+    {
+      "start": 1610.4,
+      "duration": 2.879,
+      "text": "to install some of this stuff that is"
+    },
+    {
+      "start": 1611.84,
+      "duration": 2.16,
+      "text": "only 58"
+    },
+    {
+      "start": 1613.279,
+      "duration": 1.681,
+      "text": "uh"
+    },
+    {
+      "start": 1614.0,
+      "duration": 3.76,
+      "text": "kb"
+    },
+    {
+      "start": 1614.96,
+      "duration": 4.719,
+      "text": "so i'm going to press enter y and press"
+    },
+    {
+      "start": 1617.76,
+      "duration": 4.72,
+      "text": "enter so it is going to install all of"
+    },
+    {
+      "start": 1619.679,
+      "duration": 5.761,
+      "text": "the stuff required for my docker so now"
+    },
+    {
+      "start": 1622.48,
+      "duration": 5.6,
+      "text": "you can see that docker has installed"
+    },
+    {
+      "start": 1625.44,
+      "duration": 4.16,
+      "text": "right because i'm using the apt packet"
+    },
+    {
+      "start": 1628.08,
+      "duration": 4.16,
+      "text": "manager i cannot do it through yum"
+    },
+    {
+      "start": 1629.6,
+      "duration": 4.4,
+      "text": "packet manager because that is not used"
+    },
+    {
+      "start": 1632.24,
+      "duration": 4.559,
+      "text": "in ubuntu"
+    },
+    {
+      "start": 1634.0,
+      "duration": 4.48,
+      "text": "but the command is stream so if you use"
+    },
+    {
+      "start": 1636.799,
+      "duration": 3.201,
+      "text": "yum you just have to type in sudo um"
+    },
+    {
+      "start": 1638.48,
+      "duration": 3.36,
+      "text": "install docker or if you are using"
+    },
+    {
+      "start": 1640.0,
+      "duration": 4.559,
+      "text": "ubuntu you just need to change the"
+    },
+    {
+      "start": 1641.84,
+      "duration": 4.0,
+      "text": "package manager but the command is same"
+    },
+    {
+      "start": 1644.559,
+      "duration": 3.521,
+      "text": "so yeah"
+    },
+    {
+      "start": 1645.84,
+      "duration": 5.199,
+      "text": "you can install it do you install as a"
+    },
+    {
+      "start": 1648.08,
+      "duration": 5.44,
+      "text": "user or a rule as a normal user so you"
+    },
+    {
+      "start": 1651.039,
+      "duration": 4.961,
+      "text": "can do it with your normal user as well"
+    },
+    {
+      "start": 1653.52,
+      "duration": 3.84,
+      "text": "but most of the time there is an issue"
+    },
+    {
+      "start": 1656.0,
+      "duration": 3.279,
+      "text": "like there is an issue something like"
+    },
+    {
+      "start": 1657.36,
+      "duration": 4.319,
+      "text": "this right so there is an issue like"
+    },
+    {
+      "start": 1659.279,
+      "duration": 5.12,
+      "text": "this which says permission denied"
+    },
+    {
+      "start": 1661.679,
+      "duration": 4.48,
+      "text": "so if you want to do the task and you"
+    },
+    {
+      "start": 1664.399,
+      "duration": 3.441,
+      "text": "don't want to get an error like this so"
+    },
+    {
+      "start": 1666.159,
+      "duration": 4.721,
+      "text": "there might be a term where i'm using"
+    },
+    {
+      "start": 1667.84,
+      "duration": 4.719,
+      "text": "the nasi user and i don't get i i get an"
+    },
+    {
+      "start": 1670.88,
+      "duration": 3.039,
+      "text": "error here right i don't want to get an"
+    },
+    {
+      "start": 1672.559,
+      "duration": 4.801,
+      "text": "error if i don't want to get an error i"
+    },
+    {
+      "start": 1673.919,
+      "duration": 5.841,
+      "text": "can run sudo sudo means super user do"
+    },
+    {
+      "start": 1677.36,
+      "duration": 4.319,
+      "text": "so super user or the root account root"
+    },
+    {
+      "start": 1679.76,
+      "duration": 3.84,
+      "text": "user it has all the privileges it has"
+    },
+    {
+      "start": 1681.679,
+      "duration": 4.0,
+      "text": "all the permissions so if you're using"
+    },
+    {
+      "start": 1683.6,
+      "duration": 4.64,
+      "text": "sudo you are using a root account to"
+    },
+    {
+      "start": 1685.679,
+      "duration": 5.281,
+      "text": "perform that task so if i do sudo apt"
+    },
+    {
+      "start": 1688.24,
+      "duration": 5.36,
+      "text": "install docker it is not going to ask me"
+    },
+    {
+      "start": 1690.96,
+      "duration": 4.8,
+      "text": "for any like it is not going to show me"
+    },
+    {
+      "start": 1693.6,
+      "duration": 4.0,
+      "text": "any permission denied errors"
+    },
+    {
+      "start": 1695.76,
+      "duration": 4.72,
+      "text": "and it is also asking me are you root so"
+    },
+    {
+      "start": 1697.6,
+      "duration": 5.28,
+      "text": "if i do sudo apt install it is going to"
+    },
+    {
+      "start": 1700.48,
+      "duration": 4.319,
+      "text": "run the command as it is so it it has"
+    },
+    {
+      "start": 1702.88,
+      "duration": 4.0,
+      "text": "run the command and it says now that"
+    },
+    {
+      "start": 1704.799,
+      "duration": 4.0,
+      "text": "suit zero updated zero installed and"
+    },
+    {
+      "start": 1706.88,
+      "duration": 3.919,
+      "text": "zero to remove"
+    },
+    {
+      "start": 1708.799,
+      "duration": 3.841,
+      "text": "right so you're doing sudo apt you can"
+    },
+    {
+      "start": 1710.799,
+      "duration": 4.081,
+      "text": "install any packages you want you just"
+    },
+    {
+      "start": 1712.64,
+      "duration": 4.159,
+      "text": "need to know the package name and if"
+    },
+    {
+      "start": 1714.88,
+      "duration": 3.76,
+      "text": "you're not sure you can always use"
+    },
+    {
+      "start": 1716.799,
+      "duration": 4.961,
+      "text": "google like let's say if you want to"
+    },
+    {
+      "start": 1718.64,
+      "duration": 4.96,
+      "text": "install git in uh"
+    },
+    {
+      "start": 1721.76,
+      "duration": 4.08,
+      "text": "install get an ubuntu you can just do"
+    },
+    {
+      "start": 1723.6,
+      "duration": 4.4,
+      "text": "install git in ubuntu and you will get"
+    },
+    {
+      "start": 1725.84,
+      "duration": 5.199,
+      "text": "the package name so if you go here at"
+    },
+    {
+      "start": 1728.0,
+      "duration": 4.64,
+      "text": "atlantian uh block it will go it will"
+    },
+    {
+      "start": 1731.039,
+      "duration": 2.721,
+      "text": "show you the command so let's say go"
+    },
+    {
+      "start": 1732.64,
+      "duration": 3.6,
+      "text": "here"
+    },
+    {
+      "start": 1733.76,
+      "duration": 4.56,
+      "text": "and scroll down so it is going to this"
+    },
+    {
+      "start": 1736.24,
+      "duration": 4.08,
+      "text": "is for the mac mac has the package"
+    },
+    {
+      "start": 1738.32,
+      "duration": 3.12,
+      "text": "installed or package manager which is"
+    },
+    {
+      "start": 1740.32,
+      "duration": 3.839,
+      "text": "brew"
+    },
+    {
+      "start": 1741.44,
+      "duration": 5.44,
+      "text": "this is the max package manager but if"
+    },
+    {
+      "start": 1744.159,
+      "duration": 3.621,
+      "text": "you scroll down you can see"
+    },
+    {
+      "start": 1746.88,
+      "duration": 2.64,
+      "text": "that"
+    },
+    {
+      "start": 1747.78,
+      "duration": 3.499,
+      "text": "[Music]"
+    },
+    {
+      "start": 1749.52,
+      "duration": 4.8,
+      "text": "there is going to be a command which is"
+    },
+    {
+      "start": 1751.279,
+      "duration": 3.041,
+      "text": "installing get"
+    },
+    {
+      "start": 1756.399,
+      "duration": 5.681,
+      "text": "so you can see sudo apt-get update and"
+    },
+    {
+      "start": 1758.399,
+      "duration": 3.681,
+      "text": "sudo apt get installed get"
+    },
+    {
+      "start": 1762.88,
+      "duration": 4.32,
+      "text": "right so if i do sudo apt install gate i"
+    },
+    {
+      "start": 1765.6,
+      "duration": 2.4,
+      "text": "will get the"
+    },
+    {
+      "start": 1767.2,
+      "duration": 2.959,
+      "text": "uh"
+    },
+    {
+      "start": 1768.0,
+      "duration": 3.44,
+      "text": "i will get the status or i will get the"
+    },
+    {
+      "start": 1770.159,
+      "duration": 2.961,
+      "text": "output and it is showing me that zero"
+    },
+    {
+      "start": 1771.44,
+      "duration": 3.599,
+      "text": "updated seo installed because i already"
+    },
+    {
+      "start": 1773.12,
+      "duration": 3.76,
+      "text": "have the git installed here so git is"
+    },
+    {
+      "start": 1775.039,
+      "duration": 3.36,
+      "text": "already installed gate is already the"
+    },
+    {
+      "start": 1776.88,
+      "duration": 2.24,
+      "text": "newest version"
+    },
+    {
+      "start": 1778.399,
+      "duration": 3.201,
+      "text": "so"
+    },
+    {
+      "start": 1779.12,
+      "duration": 5.279,
+      "text": "you can download any packages you want"
+    },
+    {
+      "start": 1781.6,
+      "duration": 4.799,
+      "text": "with this command sudo apt and even if"
+    },
+    {
+      "start": 1784.399,
+      "duration": 4.0,
+      "text": "you let's say you have packages"
+    },
+    {
+      "start": 1786.399,
+      "duration": 4.4,
+      "text": "installed and you are working"
+    },
+    {
+      "start": 1788.399,
+      "duration": 4.561,
+      "text": "on any linux machine the first thing you"
+    },
+    {
+      "start": 1790.799,
+      "duration": 4.24,
+      "text": "should do is update all the packages so"
+    },
+    {
+      "start": 1792.96,
+      "duration": 4.079,
+      "text": "you can sudo apt update and it will give"
+    },
+    {
+      "start": 1795.039,
+      "duration": 3.52,
+      "text": "you all the updates like what what are"
+    },
+    {
+      "start": 1797.039,
+      "duration": 3.921,
+      "text": "the updates present and if you want to"
+    },
+    {
+      "start": 1798.559,
+      "duration": 4.401,
+      "text": "upgrade it you can do sudo ability"
+    },
+    {
+      "start": 1800.96,
+      "duration": 3.92,
+      "text": "upgrade but let's do it all in a single"
+    },
+    {
+      "start": 1802.96,
+      "duration": 4.16,
+      "text": "command so both the commands in a single"
+    },
+    {
+      "start": 1804.88,
+      "duration": 4.72,
+      "text": "command so sudo apt update and"
+    },
+    {
+      "start": 1807.12,
+      "duration": 4.64,
+      "text": "sudo apt upgrade"
+    },
+    {
+      "start": 1809.6,
+      "duration": 3.92,
+      "text": "so if i run this it is going to update"
+    },
+    {
+      "start": 1811.76,
+      "duration": 3.6,
+      "text": "and upgrade all the packages that i have"
+    },
+    {
+      "start": 1813.52,
+      "duration": 3.759,
+      "text": "here so i have all the packages likes"
+    },
+    {
+      "start": 1815.36,
+      "duration": 3.559,
+      "text": "universe like docker and is saying me"
+    },
+    {
+      "start": 1817.279,
+      "duration": 4.321,
+      "text": "that it is asking me for"
+    },
+    {
+      "start": 1818.919,
+      "duration": 5.161,
+      "text": "526 mb so i'm going to press y and it"
+    },
+    {
+      "start": 1821.6,
+      "duration": 7.04,
+      "text": "will start updating all the packages so"
+    },
+    {
+      "start": 1824.08,
+      "duration": 7.44,
+      "text": "dev stable kden live kubernetes updates"
+    },
+    {
+      "start": 1828.64,
+      "duration": 4.32,
+      "text": "so amd64 libcom all the packages that i"
+    },
+    {
+      "start": 1831.52,
+      "duration": 3.84,
+      "text": "have here is going to be updated and"
+    },
+    {
+      "start": 1832.96,
+      "duration": 2.4,
+      "text": "upgraded"
+    },
+    {
+      "start": 1835.76,
+      "duration": 3.68,
+      "text": "right so now we have learned about the"
+    },
+    {
+      "start": 1837.52,
+      "duration": 4.32,
+      "text": "packet managers like how to install"
+    },
+    {
+      "start": 1839.44,
+      "duration": 4.4,
+      "text": "packages in linux how to update them how"
+    },
+    {
+      "start": 1841.84,
+      "duration": 4.16,
+      "text": "to upgrade them"
+    },
+    {
+      "start": 1843.84,
+      "duration": 4.079,
+      "text": "right and if you want to let's say"
+    },
+    {
+      "start": 1846.0,
+      "duration": 4.08,
+      "text": "delete one of the packages so for that"
+    },
+    {
+      "start": 1847.919,
+      "duration": 4.721,
+      "text": "you have a command name as sudo apt"
+    },
+    {
+      "start": 1850.08,
+      "duration": 5.04,
+      "text": "purge or sudo apt-clean so let me show"
+    },
+    {
+      "start": 1852.64,
+      "duration": 4.08,
+      "text": "you that with then once i have done this"
+    },
+    {
+      "start": 1855.12,
+      "duration": 3.76,
+      "text": "so if you want let's say you are working"
+    },
+    {
+      "start": 1856.72,
+      "duration": 3.28,
+      "text": "you can also click here to open a new"
+    },
+    {
+      "start": 1858.88,
+      "duration": 3.039,
+      "text": "terminal"
+    },
+    {
+      "start": 1860.0,
+      "duration": 3.919,
+      "text": "right so"
+    },
+    {
+      "start": 1861.919,
+      "duration": 4.48,
+      "text": "so if i want to let's say delete any of"
+    },
+    {
+      "start": 1863.919,
+      "duration": 5.36,
+      "text": "the packages so i want i can do this by"
+    },
+    {
+      "start": 1866.399,
+      "duration": 3.601,
+      "text": "sudo apt purge and"
+    },
+    {
+      "start": 1869.279,
+      "duration": 3.28,
+      "text": "and"
+    },
+    {
+      "start": 1870.0,
+      "duration": 4.64,
+      "text": "i can press here so it will give me the"
+    },
+    {
+      "start": 1872.559,
+      "duration": 5.081,
+      "text": "options like what do i need to enter"
+    },
+    {
+      "start": 1874.64,
+      "duration": 3.0,
+      "text": "so"
+    },
+    {
+      "start": 1878.48,
+      "duration": 5.199,
+      "text": "like sudo"
+    },
+    {
+      "start": 1879.679,
+      "duration": 4.0,
+      "text": "apt purge and get"
+    },
+    {
+      "start": 1884.159,
+      "duration": 3.52,
+      "text": "so it is showing me an error because"
+    },
+    {
+      "start": 1886.08,
+      "duration": 3.76,
+      "text": "this is working this is going on the"
+    },
+    {
+      "start": 1887.679,
+      "duration": 3.681,
+      "text": "process is going on here and let's wait"
+    },
+    {
+      "start": 1889.84,
+      "duration": 2.959,
+      "text": "so it decided that it is held by a"
+    },
+    {
+      "start": 1891.36,
+      "duration": 3.28,
+      "text": "process the pseudo apt is held by"
+    },
+    {
+      "start": 1892.799,
+      "duration": 3.681,
+      "text": "process so we have to wait for it to"
+    },
+    {
+      "start": 1894.64,
+      "duration": 3.279,
+      "text": "complete so let's wait we can also close"
+    },
+    {
+      "start": 1896.48,
+      "duration": 3.679,
+      "text": "the terminal here and let's wait so it"
+    },
+    {
+      "start": 1897.919,
+      "duration": 3.921,
+      "text": "is 65 percent done"
+    },
+    {
+      "start": 1900.159,
+      "duration": 4.0,
+      "text": "it is it is"
+    },
+    {
+      "start": 1901.84,
+      "duration": 5.719,
+      "text": "updating the packages for brave browser"
+    },
+    {
+      "start": 1904.159,
+      "duration": 3.4,
+      "text": "which i'm using"
+    },
+    {
+      "start": 1909.84,
+      "duration": 3.92,
+      "text": "so ubuntu is the most common and the"
+    },
+    {
+      "start": 1912.159,
+      "duration": 4.24,
+      "text": "most used"
+    },
+    {
+      "start": 1913.76,
+      "duration": 4.88,
+      "text": "linux most simplest as well so if you're"
+    },
+    {
+      "start": 1916.399,
+      "duration": 4.081,
+      "text": "starting out and if you"
+    },
+    {
+      "start": 1918.64,
+      "duration": 4.399,
+      "text": "using linux i would recommend you to use"
+    },
+    {
+      "start": 1920.48,
+      "duration": 4.319,
+      "text": "ubuntu once you get the idea of ubuntu"
+    },
+    {
+      "start": 1923.039,
+      "duration": 2.721,
+      "text": "then you can try out like other flavors"
+    },
+    {
+      "start": 1924.799,
+      "duration": 3.681,
+      "text": "maybe a"
+    },
+    {
+      "start": 1925.76,
+      "duration": 5.039,
+      "text": "kali linux maybe fedora or arc linux"
+    },
+    {
+      "start": 1928.48,
+      "duration": 3.84,
+      "text": "anything you want but start with ubuntu"
+    },
+    {
+      "start": 1930.799,
+      "duration": 4.401,
+      "text": "ubuntu the simplest you also have the"
+    },
+    {
+      "start": 1932.32,
+      "duration": 5.28,
+      "text": "graphical user interface like in windows"
+    },
+    {
+      "start": 1935.2,
+      "duration": 4.319,
+      "text": "you can also choose to do it graphically"
+    },
+    {
+      "start": 1937.6,
+      "duration": 3.84,
+      "text": "but if you are using linux i would"
+    },
+    {
+      "start": 1939.519,
+      "duration": 4.481,
+      "text": "recommend you to go with the terminal"
+    },
+    {
+      "start": 1941.44,
+      "duration": 6.0,
+      "text": "because you get a lot of permissions you"
+    },
+    {
+      "start": 1944.0,
+      "duration": 5.36,
+      "text": "get a lot of features using terminals"
+    },
+    {
+      "start": 1947.44,
+      "duration": 4.16,
+      "text": "that you now know right you now have"
+    },
+    {
+      "start": 1949.36,
+      "duration": 5.36,
+      "text": "learned about all the file commands you"
+    },
+    {
+      "start": 1951.6,
+      "duration": 5.12,
+      "text": "have learned about the copy move rename"
+    },
+    {
+      "start": 1954.72,
+      "duration": 4.16,
+      "text": "and delete commands"
+    },
+    {
+      "start": 1956.72,
+      "duration": 5.679,
+      "text": "you also know about the"
+    },
+    {
+      "start": 1958.88,
+      "duration": 3.519,
+      "text": "installing packages command"
+    },
+    {
+      "start": 1965.12,
+      "duration": 3.76,
+      "text": "so now uh"
+    },
+    {
+      "start": 1966.96,
+      "duration": 4.559,
+      "text": "you already"
+    },
+    {
+      "start": 1968.88,
+      "duration": 4.72,
+      "text": "when you create an aws instance if you"
+    },
+    {
+      "start": 1971.519,
+      "duration": 3.321,
+      "text": "want to connect it you use"
+    },
+    {
+      "start": 1973.6,
+      "duration": 2.88,
+      "text": "putty or"
+    },
+    {
+      "start": 1974.84,
+      "duration": 3.959,
+      "text": "the uh"
+    },
+    {
+      "start": 1976.48,
+      "duration": 4.96,
+      "text": "mbox term right which"
+    },
+    {
+      "start": 1978.799,
+      "duration": 2.641,
+      "text": "yeah yeah"
+    },
+    {
+      "start": 1981.679,
+      "duration": 3.84,
+      "text": "yeah so"
+    },
+    {
+      "start": 1982.88,
+      "duration": 4.56,
+      "text": "when you use windows you use putty or"
+    },
+    {
+      "start": 1985.519,
+      "duration": 4.481,
+      "text": "the other third party tools to connect"
+    },
+    {
+      "start": 1987.44,
+      "duration": 4.16,
+      "text": "to the instance that is there on the aws"
+    },
+    {
+      "start": 1990.0,
+      "duration": 3.36,
+      "text": "account"
+    },
+    {
+      "start": 1991.6,
+      "duration": 3.199,
+      "text": "right so we also call this ssh"
+    },
+    {
+      "start": 1993.36,
+      "duration": 4.559,
+      "text": "connection"
+    },
+    {
+      "start": 1994.799,
+      "duration": 5.76,
+      "text": "because we put in the we we browse the"
+    },
+    {
+      "start": 1997.919,
+      "duration": 4.161,
+      "text": "file and we find our key file and we"
+    },
+    {
+      "start": 2000.559,
+      "duration": 2.96,
+      "text": "paste it there right"
+    },
+    {
+      "start": 2002.08,
+      "duration": 3.04,
+      "text": "and then we are connected to the"
+    },
+    {
+      "start": 2003.519,
+      "duration": 2.4,
+      "text": "instance"
+    },
+    {
+      "start": 2005.12,
+      "duration": 3.2,
+      "text": "so"
+    },
+    {
+      "start": 2005.919,
+      "duration": 4.961,
+      "text": "in so that is the graphical user"
+    },
+    {
+      "start": 2008.32,
+      "duration": 4.479,
+      "text": "interface where you open the installer"
+    },
+    {
+      "start": 2010.88,
+      "duration": 3.84,
+      "text": "and then you load your key then you"
+    },
+    {
+      "start": 2012.799,
+      "duration": 3.921,
+      "text": "enter your ip address you enter your"
+    },
+    {
+      "start": 2014.72,
+      "duration": 4.0,
+      "text": "username so all of that is a graphical"
+    },
+    {
+      "start": 2016.72,
+      "duration": 5.04,
+      "text": "user interface but the same thing you"
+    },
+    {
+      "start": 2018.72,
+      "duration": 5.04,
+      "text": "can do it using"
+    },
+    {
+      "start": 2021.76,
+      "duration": 4.72,
+      "text": "using the terminal as well so for that"
+    },
+    {
+      "start": 2023.76,
+      "duration": 6.56,
+      "text": "you have a command which is ssh which"
+    },
+    {
+      "start": 2026.48,
+      "duration": 8.24,
+      "text": "also stands for secure shell login"
+    },
+    {
+      "start": 2030.32,
+      "duration": 6.16,
+      "text": "right so ssh stands for secure shell and"
+    },
+    {
+      "start": 2034.72,
+      "duration": 4.48,
+      "text": "i am going to teach you like how you can"
+    },
+    {
+      "start": 2036.48,
+      "duration": 5.199,
+      "text": "connect to an ubuntu instance or any"
+    },
+    {
+      "start": 2039.2,
+      "duration": 3.44,
+      "text": "linux instance that is there on the"
+    },
+    {
+      "start": 2041.679,
+      "duration": 3.281,
+      "text": "uh"
+    },
+    {
+      "start": 2042.64,
+      "duration": 4.399,
+      "text": "on the aws so let's go ahead and launch"
+    },
+    {
+      "start": 2044.96,
+      "duration": 5.439,
+      "text": "an instance first so i'm going to go"
+    },
+    {
+      "start": 2047.039,
+      "duration": 5.761,
+      "text": "here and sign into my open amazon"
+    },
+    {
+      "start": 2050.399,
+      "duration": 2.401,
+      "text": "account"
+    },
+    {
+      "start": 2053.599,
+      "duration": 3.881,
+      "text": "so"
+    },
+    {
+      "start": 2054.32,
+      "duration": 3.16,
+      "text": "all right"
+    },
+    {
+      "start": 2071.839,
+      "duration": 4.08,
+      "text": "so i'm going to go here and i'm going to"
+    },
+    {
+      "start": 2074.32,
+      "duration": 4.559,
+      "text": "if i want i can do it through terraform"
+    },
+    {
+      "start": 2075.919,
+      "duration": 4.96,
+      "text": "but just to get it done correct fastly"
+    },
+    {
+      "start": 2078.879,
+      "duration": 4.0,
+      "text": "so i'm going to use it so if you or else"
+    },
+    {
+      "start": 2080.879,
+      "duration": 3.76,
+      "text": "we can if you want we can do it through"
+    },
+    {
+      "start": 2082.879,
+      "duration": 3.52,
+      "text": "but we have to type in the key and all"
+    },
+    {
+      "start": 2084.639,
+      "duration": 3.28,
+      "text": "the other stuff so let's go this one is"
+    },
+    {
+      "start": 2086.399,
+      "duration": 4.561,
+      "text": "okay"
+    },
+    {
+      "start": 2087.919,
+      "duration": 5.68,
+      "text": "my server let's give it a name my server"
+    },
+    {
+      "start": 2090.96,
+      "duration": 5.119,
+      "text": "and i'm choosing ubuntu i am going to"
+    },
+    {
+      "start": 2093.599,
+      "duration": 4.24,
+      "text": "use t2 micro i'm going to use my key"
+    },
+    {
+      "start": 2096.079,
+      "duration": 4.081,
+      "text": "which i have demo i guess i have it"
+    },
+    {
+      "start": 2097.839,
+      "duration": 5.121,
+      "text": "somewhere safe yeah i have it in demo"
+    },
+    {
+      "start": 2100.16,
+      "duration": 4.48,
+      "text": "key so and all the other stuff i'm only"
+    },
+    {
+      "start": 2102.96,
+      "duration": 3.68,
+      "text": "allowing ssh"
+    },
+    {
+      "start": 2104.64,
+      "duration": 4.0,
+      "text": "okay okay and i'm going to create an"
+    },
+    {
+      "start": 2106.64,
+      "duration": 4.479,
+      "text": "instance so in some time this instance"
+    },
+    {
+      "start": 2108.64,
+      "duration": 4.16,
+      "text": "will be created and we can use ssh"
+    },
+    {
+      "start": 2111.119,
+      "duration": 4.48,
+      "text": "command to go into this instance"
+    },
+    {
+      "start": 2112.8,
+      "duration": 3.92,
+      "text": "directly using our"
+    },
+    {
+      "start": 2115.599,
+      "duration": 2.961,
+      "text": "using our"
+    },
+    {
+      "start": 2116.72,
+      "duration": 3.84,
+      "text": "terminal"
+    },
+    {
+      "start": 2118.56,
+      "duration": 3.44,
+      "text": "so but for that we have to have the file"
+    },
+    {
+      "start": 2120.56,
+      "duration": 2.88,
+      "text": "present in our"
+    },
+    {
+      "start": 2122.0,
+      "duration": 3.119,
+      "text": "in our computer so you can see that i"
+    },
+    {
+      "start": 2123.44,
+      "duration": 3.6,
+      "text": "have a demo key file present which is"
+    },
+    {
+      "start": 2125.119,
+      "duration": 3.72,
+      "text": "here"
+    },
+    {
+      "start": 2127.04,
+      "duration": 4.64,
+      "text": "inside my"
+    },
+    {
+      "start": 2128.839,
+      "duration": 5.0,
+      "text": "folder so let's see if it is done or not"
+    },
+    {
+      "start": 2131.68,
+      "duration": 3.679,
+      "text": "so it's almost done"
+    },
+    {
+      "start": 2133.839,
+      "duration": 3.441,
+      "text": "and 99"
+    },
+    {
+      "start": 2135.359,
+      "duration": 4.081,
+      "text": "so this is how you update our pdf file"
+    },
+    {
+      "start": 2137.28,
+      "duration": 4.0,
+      "text": "so now i have everything upgraded"
+    },
+    {
+      "start": 2139.44,
+      "duration": 3.76,
+      "text": "everything is up to date now all of"
+    },
+    {
+      "start": 2141.28,
+      "duration": 3.12,
+      "text": "there are on in latest versions so let"
+    },
+    {
+      "start": 2143.2,
+      "duration": 3.52,
+      "text": "me clear it out"
+    },
+    {
+      "start": 2144.4,
+      "duration": 5.36,
+      "text": "and let me go back to the"
+    },
+    {
+      "start": 2146.72,
+      "duration": 5.28,
+      "text": "folder where my key is present so"
+    },
+    {
+      "start": 2149.76,
+      "duration": 4.4,
+      "text": "if i do cd i'm back into my home"
+    },
+    {
+      "start": 2152.0,
+      "duration": 3.28,
+      "text": "directory if i do ls i should see a"
+    },
+    {
+      "start": 2154.16,
+      "duration": 3.52,
+      "text": "folder"
+    },
+    {
+      "start": 2155.28,
+      "duration": 5.2,
+      "text": "so let me search where my demo key is"
+    },
+    {
+      "start": 2157.68,
+      "duration": 5.919,
+      "text": "again so it is in home and messy folder"
+    },
+    {
+      "start": 2160.48,
+      "duration": 3.119,
+      "text": "so let's go to this"
+    },
+    {
+      "start": 2165.359,
+      "duration": 5.041,
+      "text": "demo key demo key demo key"
+    },
+    {
+      "start": 2168.72,
+      "duration": 4.56,
+      "text": "all right so you can see that i have a"
+    },
+    {
+      "start": 2170.4,
+      "duration": 5.6,
+      "text": "key here demo key dot pen"
+    },
+    {
+      "start": 2173.28,
+      "duration": 5.839,
+      "text": "right so let me wait for it to"
+    },
+    {
+      "start": 2176.0,
+      "duration": 7.28,
+      "text": "come up so for it to running so the"
+    },
+    {
+      "start": 2179.119,
+      "duration": 6.881,
+      "text": "command or the syntax is ssh sorry ssh"
+    },
+    {
+      "start": 2183.28,
+      "duration": 2.72,
+      "text": "username"
+    },
+    {
+      "start": 2186.64,
+      "duration": 3.36,
+      "text": "address"
+    },
+    {
+      "start": 2187.92,
+      "duration": 4.56,
+      "text": "so this is the syntax like how you can"
+    },
+    {
+      "start": 2190.0,
+      "duration": 4.32,
+      "text": "connect so for here the username is"
+    },
+    {
+      "start": 2192.48,
+      "duration": 4.0,
+      "text": "going to be ubuntu"
+    },
+    {
+      "start": 2194.32,
+      "duration": 3.44,
+      "text": "and the ip address is going to my ip"
+    },
+    {
+      "start": 2196.48,
+      "duration": 3.52,
+      "text": "address which is"
+    },
+    {
+      "start": 2197.76,
+      "duration": 3.92,
+      "text": "this one here so if i go here and click"
+    },
+    {
+      "start": 2200.0,
+      "duration": 3.599,
+      "text": "on connect you'll get the command as"
+    },
+    {
+      "start": 2201.68,
+      "duration": 3.679,
+      "text": "well so if i go here and so you can see"
+    },
+    {
+      "start": 2203.599,
+      "duration": 3.441,
+      "text": "that this is the command which has the"
+    },
+    {
+      "start": 2205.359,
+      "duration": 3.601,
+      "text": "username at the rate"
+    },
+    {
+      "start": 2207.04,
+      "duration": 4.88,
+      "text": "you can also use your public domain"
+    },
+    {
+      "start": 2208.96,
+      "duration": 5.52,
+      "text": "public dns or you can also use your"
+    },
+    {
+      "start": 2211.92,
+      "duration": 4.8,
+      "text": "ip address so if i copy this i can get"
+    },
+    {
+      "start": 2214.48,
+      "duration": 4.24,
+      "text": "the same same but i'm going to type it"
+    },
+    {
+      "start": 2216.72,
+      "duration": 4.879,
+      "text": "type in everything but you can see here"
+    },
+    {
+      "start": 2218.72,
+      "duration": 4.8,
+      "text": "the hyphen i which is asking us for the"
+    },
+    {
+      "start": 2221.599,
+      "duration": 3.841,
+      "text": "demo key or the key file"
+    },
+    {
+      "start": 2223.52,
+      "duration": 5.44,
+      "text": "so let's use that but before that let's"
+    },
+    {
+      "start": 2225.44,
+      "duration": 5.679,
+      "text": "see if our instance is up or not"
+    },
+    {
+      "start": 2228.96,
+      "duration": 3.76,
+      "text": "so"
+    },
+    {
+      "start": 2231.119,
+      "duration": 3.841,
+      "text": "it is still initializing but let's try"
+    },
+    {
+      "start": 2232.72,
+      "duration": 5.84,
+      "text": "to connect it anyways so i'm going to"
+    },
+    {
+      "start": 2234.96,
+      "duration": 4.8,
+      "text": "copy this here and i'm going to run ssh"
+    },
+    {
+      "start": 2238.56,
+      "duration": 4.16,
+      "text": "hyphen i"
+    },
+    {
+      "start": 2239.76,
+      "duration": 4.8,
+      "text": "what is my key file so i can run so i"
+    },
+    {
+      "start": 2242.72,
+      "duration": 3.76,
+      "text": "can give the path of the key file which"
+    },
+    {
+      "start": 2244.56,
+      "duration": 4.4,
+      "text": "is demo"
+    },
+    {
+      "start": 2246.48,
+      "duration": 4.48,
+      "text": "key dot pim and i'm going to type in the"
+    },
+    {
+      "start": 2248.96,
+      "duration": 3.28,
+      "text": "username which is ubuntu"
+    },
+    {
+      "start": 2250.96,
+      "duration": 3.52,
+      "text": "at the rate"
+    },
+    {
+      "start": 2252.24,
+      "duration": 4.32,
+      "text": "so"
+    },
+    {
+      "start": 2254.48,
+      "duration": 4.879,
+      "text": "at the rate the name of the uh the ip"
+    },
+    {
+      "start": 2256.56,
+      "duration": 4.24,
+      "text": "address so if i pass in here enter it"
+    },
+    {
+      "start": 2259.359,
+      "duration": 3.681,
+      "text": "will ask me are you sure you want to"
+    },
+    {
+      "start": 2260.8,
+      "duration": 5.84,
+      "text": "continue connecting yes i am sure so if"
+    },
+    {
+      "start": 2263.04,
+      "duration": 5.6,
+      "text": "i do yes i should be inside my instance"
+    },
+    {
+      "start": 2266.64,
+      "duration": 4.88,
+      "text": "so you can see that i am inside my"
+    },
+    {
+      "start": 2268.64,
+      "duration": 5.6,
+      "text": "instance the username is ubuntu and this"
+    },
+    {
+      "start": 2271.52,
+      "duration": 4.24,
+      "text": "is the host or the ip address so now you"
+    },
+    {
+      "start": 2274.24,
+      "duration": 3.44,
+      "text": "can see that i am inside my ubuntu"
+    },
+    {
+      "start": 2275.76,
+      "duration": 4.56,
+      "text": "instance i can do anything i want so you"
+    },
+    {
+      "start": 2277.68,
+      "duration": 4.8,
+      "text": "can you have learned ssh command ssh is"
+    },
+    {
+      "start": 2280.32,
+      "duration": 4.88,
+      "text": "a command which will help you to remote"
+    },
+    {
+      "start": 2282.48,
+      "duration": 5.2,
+      "text": "logging into any server that is there"
+    },
+    {
+      "start": 2285.2,
+      "duration": 5.12,
+      "text": "inside unless so if you have the key"
+    },
+    {
+      "start": 2287.68,
+      "duration": 4.399,
+      "text": "file or if you have so this one was the"
+    },
+    {
+      "start": 2290.32,
+      "duration": 4.08,
+      "text": "protected so this one was protected this"
+    },
+    {
+      "start": 2292.079,
+      "duration": 4.081,
+      "text": "was one not public so i needed a key"
+    },
+    {
+      "start": 2294.4,
+      "duration": 3.52,
+      "text": "file but most of the"
+    },
+    {
+      "start": 2296.16,
+      "duration": 4.24,
+      "text": "servers all over the world they might be"
+    },
+    {
+      "start": 2297.92,
+      "duration": 5.28,
+      "text": "public so you might not need any key"
+    },
+    {
+      "start": 2300.4,
+      "duration": 3.679,
+      "text": "file you can just do it by ssh username"
+    },
+    {
+      "start": 2303.2,
+      "duration": 3.84,
+      "text": "and"
+    },
+    {
+      "start": 2304.079,
+      "duration": 5.52,
+      "text": "uh at the rate the host so you heard it"
+    },
+    {
+      "start": 2307.04,
+      "duration": 4.0,
+      "text": "was the ip address it can be anything"
+    },
+    {
+      "start": 2309.599,
+      "duration": 4.0,
+      "text": "so this command"
+    },
+    {
+      "start": 2311.04,
+      "duration": 4.799,
+      "text": "so if i do man ssh here you can get a"
+    },
+    {
+      "start": 2313.599,
+      "duration": 3.921,
+      "text": "lot detail about it as well so open sss"
+    },
+    {
+      "start": 2315.839,
+      "duration": 4.401,
+      "text": "remote login client you can remote"
+    },
+    {
+      "start": 2317.52,
+      "duration": 4.079,
+      "text": "logging into any server just by using"
+    },
+    {
+      "start": 2320.24,
+      "duration": 2.72,
+      "text": "this command and this is one of the most"
+    },
+    {
+      "start": 2321.599,
+      "duration": 3.841,
+      "text": "important command if you're working as a"
+    },
+    {
+      "start": 2322.96,
+      "duration": 4.8,
+      "text": "cloud or devops engineer because you"
+    },
+    {
+      "start": 2325.44,
+      "duration": 4.72,
+      "text": "will be remote logging into the"
+    },
+    {
+      "start": 2327.76,
+      "duration": 6.079,
+      "text": "instances or into any others machines to"
+    },
+    {
+      "start": 2330.16,
+      "duration": 3.679,
+      "text": "maybe configure or do some tasks"
+    },
+    {
+      "start": 2334.4,
+      "duration": 4.4,
+      "text": "right so now you have learned ls command"
+    },
+    {
+      "start": 2336.72,
+      "duration": 4.56,
+      "text": "you have learn make directory command to"
+    },
+    {
+      "start": 2338.8,
+      "duration": 4.48,
+      "text": "create a directory which is test so you"
+    },
+    {
+      "start": 2341.28,
+      "duration": 4.079,
+      "text": "have learn the command to create a file"
+    },
+    {
+      "start": 2343.28,
+      "duration": 5.52,
+      "text": "touch file dot txt"
+    },
+    {
+      "start": 2345.359,
+      "duration": 5.361,
+      "text": "so now so this is it has created a file"
+    },
+    {
+      "start": 2348.8,
+      "duration": 4.24,
+      "text": "you have run a command you have learn a"
+    },
+    {
+      "start": 2350.72,
+      "duration": 4.08,
+      "text": "command to remove the file so this one"
+    },
+    {
+      "start": 2353.04,
+      "duration": 3.84,
+      "text": "has removed it now"
+    },
+    {
+      "start": 2354.8,
+      "duration": 3.36,
+      "text": "and you have blender command to ssh you"
+    },
+    {
+      "start": 2356.88,
+      "duration": 2.88,
+      "text": "have learned a command to install"
+    },
+    {
+      "start": 2358.16,
+      "duration": 3.52,
+      "text": "anything so let's say i want to install"
+    },
+    {
+      "start": 2359.76,
+      "duration": 4.24,
+      "text": "sudo apt installed"
+    },
+    {
+      "start": 2361.68,
+      "duration": 4.159,
+      "text": "docker"
+    },
+    {
+      "start": 2364.0,
+      "duration": 4.56,
+      "text": "right so it will start installing docker"
+    },
+    {
+      "start": 2365.839,
+      "duration": 4.881,
+      "text": "now so it says unable to package stalker"
+    },
+    {
+      "start": 2368.56,
+      "duration": 4.24,
+      "text": "so let's go and install git so you need"
+    },
+    {
+      "start": 2370.72,
+      "duration": 4.16,
+      "text": "to know like what is the exact"
+    },
+    {
+      "start": 2372.8,
+      "duration": 4.16,
+      "text": "uh package name so it says git is"
+    },
+    {
+      "start": 2374.88,
+      "duration": 4.479,
+      "text": "already installed so using apt you can"
+    },
+    {
+      "start": 2376.96,
+      "duration": 6.28,
+      "text": "install you can also use apt2"
+    },
+    {
+      "start": 2379.359,
+      "duration": 3.881,
+      "text": "sudo apt update"
+    },
+    {
+      "start": 2384.96,
+      "duration": 4.159,
+      "text": "yeah you can use both in a single line"
+    },
+    {
+      "start": 2386.96,
+      "duration": 4.56,
+      "text": "but you have to pass in the"
+    },
+    {
+      "start": 2389.119,
+      "duration": 4.48,
+      "text": "uh and sign to separate so you can run"
+    },
+    {
+      "start": 2391.52,
+      "duration": 3.04,
+      "text": "two commands in a single file like"
+    },
+    {
+      "start": 2393.599,
+      "duration": 3.52,
+      "text": "sudo"
+    },
+    {
+      "start": 2394.56,
+      "duration": 3.44,
+      "text": "apt update"
+    },
+    {
+      "start": 2397.119,
+      "duration": 3.361,
+      "text": "and"
+    },
+    {
+      "start": 2398.0,
+      "duration": 2.48,
+      "text": "sudo"
+    },
+    {
+      "start": 2400.56,
+      "duration": 2.559,
+      "text": "apt"
+    },
+    {
+      "start": 2404.079,
+      "duration": 3.52,
+      "text": "upgrade"
+    },
+    {
+      "start": 2405.76,
+      "duration": 3.92,
+      "text": "right so this will also update and"
+    },
+    {
+      "start": 2407.599,
+      "duration": 4.081,
+      "text": "upgrade the files so i don't want to"
+    },
+    {
+      "start": 2409.68,
+      "duration": 4.24,
+      "text": "waste time so i'm not going to do it"
+    },
+    {
+      "start": 2411.68,
+      "duration": 4.159,
+      "text": "so let's say if i want to create a file"
+    },
+    {
+      "start": 2413.92,
+      "duration": 4.88,
+      "text": "and create a directory and go inside it"
+    },
+    {
+      "start": 2415.839,
+      "duration": 3.921,
+      "text": "in it so i can do mkdir test"
+    },
+    {
+      "start": 2418.8,
+      "duration": 3.36,
+      "text": "2"
+    },
+    {
+      "start": 2419.76,
+      "duration": 4.64,
+      "text": "and i also want to go in it so i also"
+    },
+    {
+      "start": 2422.16,
+      "duration": 3.199,
+      "text": "want to let's say create a file in it so"
+    },
+    {
+      "start": 2424.4,
+      "duration": 3.36,
+      "text": "touch"
+    },
+    {
+      "start": 2425.359,
+      "duration": 2.401,
+      "text": "file"
+    },
+    {
+      "start": 2428.0,
+      "duration": 2.24,
+      "text": "one"
+    },
+    {
+      "start": 2431.28,
+      "duration": 3.92,
+      "text": "so i have to pass in the full path so"
+    },
+    {
+      "start": 2433.44,
+      "duration": 5.12,
+      "text": "which is going to be test"
+    },
+    {
+      "start": 2435.2,
+      "duration": 5.68,
+      "text": "to hyphen file"
+    },
+    {
+      "start": 2438.56,
+      "duration": 5.279,
+      "text": "dot txt so this command is going to"
+    },
+    {
+      "start": 2440.88,
+      "duration": 4.8,
+      "text": "create a mk directory uh which is test2"
+    },
+    {
+      "start": 2443.839,
+      "duration": 5.121,
+      "text": "and it is also going to create a file in"
+    },
+    {
+      "start": 2445.68,
+      "duration": 5.52,
+      "text": "it so let's go inside this test2 file so"
+    },
+    {
+      "start": 2448.96,
+      "duration": 5.52,
+      "text": "test2 i am and if you see here you can"
+    },
+    {
+      "start": 2451.2,
+      "duration": 5.44,
+      "text": "see that file.txt is created as well"
+    },
+    {
+      "start": 2454.48,
+      "duration": 3.92,
+      "text": "so you can also use the pipe pipe is one"
+    },
+    {
+      "start": 2456.64,
+      "duration": 3.36,
+      "text": "of the separator as well"
+    },
+    {
+      "start": 2458.4,
+      "duration": 4.16,
+      "text": "to"
+    },
+    {
+      "start": 2460.0,
+      "duration": 5.04,
+      "text": "launch more like run more commands in a"
+    },
+    {
+      "start": 2462.56,
+      "duration": 4.96,
+      "text": "single line"
+    },
+    {
+      "start": 2465.04,
+      "duration": 5.6,
+      "text": "so now you use white so you can use pipe"
+    },
+    {
+      "start": 2467.52,
+      "duration": 5.599,
+      "text": "let's say like this echo so i have also"
+    },
+    {
+      "start": 2470.64,
+      "duration": 4.08,
+      "text": "taught you this in uh"
+    },
+    {
+      "start": 2473.119,
+      "duration": 3.041,
+      "text": "let me show you that so when we were"
+    },
+    {
+      "start": 2474.72,
+      "duration": 3.68,
+      "text": "like using the"
+    },
+    {
+      "start": 2476.16,
+      "duration": 3.36,
+      "text": "user data script"
+    },
+    {
+      "start": 2478.4,
+      "duration": 3.04,
+      "text": "you might have"
+    },
+    {
+      "start": 2479.52,
+      "duration": 3.52,
+      "text": "you might have seen it but let me show"
+    },
+    {
+      "start": 2481.44,
+      "duration": 4.56,
+      "text": "you that as well so i'm going to show"
+    },
+    {
+      "start": 2483.04,
+      "duration": 4.319,
+      "text": "you an example uh yes this one is here"
+    },
+    {
+      "start": 2486.0,
+      "duration": 2.56,
+      "text": "so if you see"
+    },
+    {
+      "start": 2487.359,
+      "duration": 3.921,
+      "text": "in this"
+    },
+    {
+      "start": 2488.56,
+      "duration": 6.0,
+      "text": "in this we are using a file pipe here so"
+    },
+    {
+      "start": 2491.28,
+      "duration": 5.36,
+      "text": "you can see here there is a pipe here"
+    },
+    {
+      "start": 2494.56,
+      "duration": 4.16,
+      "text": "yeah right"
+    },
+    {
+      "start": 2496.64,
+      "duration": 4.32,
+      "text": "so you can also use a file"
+    },
+    {
+      "start": 2498.72,
+      "duration": 2.24,
+      "text": "to"
+    },
+    {
+      "start": 2501.52,
+      "duration": 2.319,
+      "text": "have"
+    },
+    {
+      "start": 2503.04,
+      "duration": 3.039,
+      "text": "yes"
+    },
+    {
+      "start": 2503.839,
+      "duration": 3.601,
+      "text": "so no no you can use file to like you"
+    },
+    {
+      "start": 2506.079,
+      "duration": 4.321,
+      "text": "can use pipe to run more than one"
+    },
+    {
+      "start": 2507.44,
+      "duration": 5.36,
+      "text": "commands in a single line"
+    },
+    {
+      "start": 2510.4,
+      "duration": 4.88,
+      "text": "so now let's if you run exit i am going"
+    },
+    {
+      "start": 2512.8,
+      "duration": 4.72,
+      "text": "to go back into my own terminal the"
+    },
+    {
+      "start": 2515.28,
+      "duration": 3.68,
+      "text": "local terminal i am inside my ubuntu"
+    },
+    {
+      "start": 2517.52,
+      "duration": 3.599,
+      "text": "instance which was created so if i do"
+    },
+    {
+      "start": 2518.96,
+      "duration": 4.879,
+      "text": "exit i am back again to my"
+    },
+    {
+      "start": 2521.119,
+      "duration": 5.441,
+      "text": "home nasi that note"
+    },
+    {
+      "start": 2523.839,
+      "duration": 4.561,
+      "text": "right so it says connection has been"
+    },
+    {
+      "start": 2526.56,
+      "duration": 3.2,
+      "text": "closed so let's go and delete the"
+    },
+    {
+      "start": 2528.4,
+      "duration": 2.959,
+      "text": "instance first"
+    },
+    {
+      "start": 2529.76,
+      "duration": 4.16,
+      "text": "so i'm going to do"
+    },
+    {
+      "start": 2531.359,
+      "duration": 4.641,
+      "text": "and terminate the instance so now you"
+    },
+    {
+      "start": 2533.92,
+      "duration": 3.439,
+      "text": "have learned a lot"
+    },
+    {
+      "start": 2536.0,
+      "duration": 3.76,
+      "text": "and if you want to check like which"
+    },
+    {
+      "start": 2537.359,
+      "duration": 4.561,
+      "text": "commands have you run till now there's a"
+    },
+    {
+      "start": 2539.76,
+      "duration": 3.839,
+      "text": "command so let's first clear it out so"
+    },
+    {
+      "start": 2541.92,
+      "duration": 3.679,
+      "text": "there is a command to check what are the"
+    },
+    {
+      "start": 2543.599,
+      "duration": 3.76,
+      "text": "different commands you have run till now"
+    },
+    {
+      "start": 2545.599,
+      "duration": 3.121,
+      "text": "so if i do history i can see what i've"
+    },
+    {
+      "start": 2547.359,
+      "duration": 3.121,
+      "text": "done i have done history i have done"
+    },
+    {
+      "start": 2548.72,
+      "duration": 3.359,
+      "text": "clear so these are all the different"
+    },
+    {
+      "start": 2550.48,
+      "duration": 3.76,
+      "text": "commands that i have run so i can see"
+    },
+    {
+      "start": 2552.079,
+      "duration": 3.841,
+      "text": "like up to"
+    },
+    {
+      "start": 2554.24,
+      "duration": 3.839,
+      "text": "let me take the excuse for this one the"
+    },
+    {
+      "start": 2555.92,
+      "duration": 3.679,
+      "text": "command yeah you if you yeah you can"
+    },
+    {
+      "start": 2558.079,
+      "duration": 3.121,
+      "text": "take a screenshot"
+    },
+    {
+      "start": 2559.599,
+      "duration": 4.961,
+      "text": "or else i am recording this session"
+    },
+    {
+      "start": 2561.2,
+      "duration": 3.36,
+      "text": "right now if you want i can pronounce it"
+    },
+    {
+      "start": 2568.16,
+      "duration": 4.32,
+      "text": "so people can get help"
+    },
+    {
+      "start": 2570.64,
+      "duration": 3.36,
+      "text": "and i'm also going to sell it to someone"
+    },
+    {
+      "start": 2572.48,
+      "duration": 2.96,
+      "text": "because i have a few people who don't"
+    },
+    {
+      "start": 2574.0,
+      "duration": 3.52,
+      "text": "who cannot who don't have time to like"
+    },
+    {
+      "start": 2575.44,
+      "duration": 3.84,
+      "text": "attend sessions they want me to record"
+    },
+    {
+      "start": 2577.52,
+      "duration": 2.799,
+      "text": "it and give it to them so i'm going to"
+    },
+    {
+      "start": 2579.28,
+      "duration": 2.24,
+      "text": "do that"
+    },
+    {
+      "start": 2580.319,
+      "duration": 2.641,
+      "text": "so"
+    },
+    {
+      "start": 2581.52,
+      "duration": 3.04,
+      "text": "now you have learned a lot of this"
+    },
+    {
+      "start": 2582.96,
+      "duration": 2.879,
+      "text": "commands"
+    },
+    {
+      "start": 2584.56,
+      "duration": 2.08,
+      "text": "let's go"
+    },
+    {
+      "start": 2585.839,
+      "duration": 2.561,
+      "text": "and"
+    },
+    {
+      "start": 2586.64,
+      "duration": 3.28,
+      "text": "learn some of the commands that should"
+    },
+    {
+      "start": 2588.4,
+      "duration": 4.0,
+      "text": "be"
+    },
+    {
+      "start": 2589.92,
+      "duration": 4.8,
+      "text": "known to all the devops engineer so one"
+    },
+    {
+      "start": 2592.4,
+      "duration": 4.48,
+      "text": "of the command is first let's go to"
+    },
+    {
+      "start": 2594.72,
+      "duration": 3.76,
+      "text": "learn linux folder so i'm inside my"
+    },
+    {
+      "start": 2596.88,
+      "duration": 3.92,
+      "text": "loneliness folder"
+    },
+    {
+      "start": 2598.48,
+      "duration": 4.8,
+      "text": "so there might be a case where you're"
+    },
+    {
+      "start": 2600.8,
+      "duration": 5.12,
+      "text": "working on an application where you have"
+    },
+    {
+      "start": 2603.28,
+      "duration": 4.72,
+      "text": "to give the path of a certain file"
+    },
+    {
+      "start": 2605.92,
+      "duration": 3.679,
+      "text": "inside that application right there"
+    },
+    {
+      "start": 2608.0,
+      "duration": 3.44,
+      "text": "might be a scenario like this where you"
+    },
+    {
+      "start": 2609.599,
+      "duration": 5.281,
+      "text": "have let's say what do i have in here i"
+    },
+    {
+      "start": 2611.44,
+      "duration": 5.84,
+      "text": "have my my new file.txt"
+    },
+    {
+      "start": 2614.88,
+      "duration": 4.64,
+      "text": "right i want to give the path of my new"
+    },
+    {
+      "start": 2617.28,
+      "duration": 3.839,
+      "text": "file.txt inside"
+    },
+    {
+      "start": 2619.52,
+      "duration": 3.44,
+      "text": "inside an application or let's say to"
+    },
+    {
+      "start": 2621.119,
+      "duration": 4.641,
+      "text": "any developer who wants to know the path"
+    },
+    {
+      "start": 2622.96,
+      "duration": 5.52,
+      "text": "of my file dot txt how am i going to do"
+    },
+    {
+      "start": 2625.76,
+      "duration": 5.68,
+      "text": "this i can run this command pwd which"
+    },
+    {
+      "start": 2628.48,
+      "duration": 5.359,
+      "text": "stands for present working directory so"
+    },
+    {
+      "start": 2631.44,
+      "duration": 4.72,
+      "text": "it will give me the path from the start"
+    },
+    {
+      "start": 2633.839,
+      "duration": 4.561,
+      "text": "to the end so if i do it will go give me"
+    },
+    {
+      "start": 2636.16,
+      "duration": 4.64,
+      "text": "that path like i am in my home inside"
+    },
+    {
+      "start": 2638.4,
+      "duration": 3.199,
+      "text": "nasi inside learn linux and this is the"
+    },
+    {
+      "start": 2640.8,
+      "duration": 3.68,
+      "text": "path"
+    },
+    {
+      "start": 2641.599,
+      "duration": 5.361,
+      "text": "so if i let's say go in the test"
+    },
+    {
+      "start": 2644.48,
+      "duration": 4.56,
+      "text": "one and i run the pwd again again it is"
+    },
+    {
+      "start": 2646.96,
+      "duration": 4.96,
+      "text": "going to give give me the whole path for"
+    },
+    {
+      "start": 2649.04,
+      "duration": 5.44,
+      "text": "all of the uh whole path"
+    },
+    {
+      "start": 2651.92,
+      "duration": 5.36,
+      "text": "right and i can also use this path to"
+    },
+    {
+      "start": 2654.48,
+      "duration": 5.76,
+      "text": "let's say i want to delete my file dot"
+    },
+    {
+      "start": 2657.28,
+      "duration": 5.2,
+      "text": "new file.txt from anywhere so let's i'm"
+    },
+    {
+      "start": 2660.24,
+      "duration": 4.48,
+      "text": "here in my home directory now and i want"
+    },
+    {
+      "start": 2662.48,
+      "duration": 4.96,
+      "text": "to delete this my new file.txt i can"
+    },
+    {
+      "start": 2664.72,
+      "duration": 6.0,
+      "text": "copy this one here so let me copy it let"
+    },
+    {
+      "start": 2667.44,
+      "duration": 4.08,
+      "text": "me paste it and i can"
+    },
+    {
+      "start": 2670.72,
+      "duration": 3.28,
+      "text": "do"
+    },
+    {
+      "start": 2671.52,
+      "duration": 4.319,
+      "text": "let's say my new file.txt so i'm not i"
+    },
+    {
+      "start": 2674.0,
+      "duration": 4.16,
+      "text": "have not put in anything here so let's"
+    },
+    {
+      "start": 2675.839,
+      "duration": 5.28,
+      "text": "say i want to remove a file"
+    },
+    {
+      "start": 2678.16,
+      "duration": 5.52,
+      "text": "right so i have i in my learn linux i"
+    },
+    {
+      "start": 2681.119,
+      "duration": 5.361,
+      "text": "have my new file i can put it so using"
+    },
+    {
+      "start": 2683.68,
+      "duration": 4.96,
+      "text": "this path i can delete a file and let's"
+    },
+    {
+      "start": 2686.48,
+      "duration": 2.16,
+      "text": "say"
+    },
+    {
+      "start": 2689.119,
+      "duration": 4.401,
+      "text": "i do"
+    },
+    {
+      "start": 2690.88,
+      "duration": 5.6,
+      "text": "ls inside my learn linux i should get"
+    },
+    {
+      "start": 2693.52,
+      "duration": 3.839,
+      "text": "that my new file.txt has gone now so to"
+    },
+    {
+      "start": 2696.48,
+      "duration": 2.8,
+      "text": "check"
+    },
+    {
+      "start": 2697.359,
+      "duration": 4.401,
+      "text": "the far the path"
+    },
+    {
+      "start": 2699.28,
+      "duration": 8.079,
+      "text": "uh of the current working directory you"
+    },
+    {
+      "start": 2701.76,
+      "duration": 7.839,
+      "text": "can use pwd present working directory"
+    },
+    {
+      "start": 2707.359,
+      "duration": 3.681,
+      "text": "okay"
+    },
+    {
+      "start": 2709.599,
+      "duration": 3.041,
+      "text": "and if you want to know that who is the"
+    },
+    {
+      "start": 2711.04,
+      "duration": 3.12,
+      "text": "current user you can run this command"
+    },
+    {
+      "start": 2712.64,
+      "duration": 4.88,
+      "text": "who m i"
+    },
+    {
+      "start": 2714.16,
+      "duration": 5.919,
+      "text": "m i i m nasi so to check what is the"
+    },
+    {
+      "start": 2717.52,
+      "duration": 4.72,
+      "text": "user so if i want this command sudo su"
+    },
+    {
+      "start": 2720.079,
+      "duration": 4.881,
+      "text": "is going to change you from the user to"
+    },
+    {
+      "start": 2722.24,
+      "duration": 2.72,
+      "text": "the root user"
+    },
+    {
+      "start": 2725.04,
+      "duration": 3.6,
+      "text": "so if i run sudo su i'm going to ask"
+    },
+    {
+      "start": 2727.119,
+      "duration": 3.2,
+      "text": "they are going to ask me a password i'm"
+    },
+    {
+      "start": 2728.64,
+      "duration": 2.959,
+      "text": "going to enter the password and if you"
+    },
+    {
+      "start": 2730.319,
+      "duration": 4.401,
+      "text": "see here"
+    },
+    {
+      "start": 2731.599,
+      "duration": 6.801,
+      "text": "i am inside my i am logged in as a root"
+    },
+    {
+      "start": 2734.72,
+      "duration": 3.68,
+      "text": "user if i run who m i"
+    },
+    {
+      "start": 2738.48,
+      "duration": 2.72,
+      "text": "i am root"
+    },
+    {
+      "start": 2742.24,
+      "duration": 2.24,
+      "text": "right"
+    },
+    {
+      "start": 2744.839,
+      "duration": 5.0,
+      "text": "yeah so if i do exit i'm back again to"
+    },
+    {
+      "start": 2747.599,
+      "duration": 5.041,
+      "text": "my user and if i run who am i again so"
+    },
+    {
+      "start": 2749.839,
+      "duration": 4.961,
+      "text": "i'm going to get that i am nessie"
+    },
+    {
+      "start": 2752.64,
+      "duration": 3.679,
+      "text": "so if you want to check who is the user"
+    },
+    {
+      "start": 2754.8,
+      "duration": 3.12,
+      "text": "or what is the current user you can use"
+    },
+    {
+      "start": 2756.319,
+      "duration": 2.881,
+      "text": "who am i if you want to check the"
+    },
+    {
+      "start": 2757.92,
+      "duration": 3.6,
+      "text": "current path you are going to use the"
+    },
+    {
+      "start": 2759.2,
+      "duration": 3.52,
+      "text": "pwd"
+    },
+    {
+      "start": 2761.52,
+      "duration": 2.799,
+      "text": "if you want to check what are the"
+    },
+    {
+      "start": 2762.72,
+      "duration": 4.16,
+      "text": "different commands you have used till"
+    },
+    {
+      "start": 2764.319,
+      "duration": 4.561,
+      "text": "now you can use history command"
+    },
+    {
+      "start": 2766.88,
+      "duration": 4.32,
+      "text": "and let's say you want to"
+    },
+    {
+      "start": 2768.88,
+      "duration": 3.92,
+      "text": "you want to check if"
+    },
+    {
+      "start": 2771.2,
+      "duration": 2.72,
+      "text": "some packages are installed or not let's"
+    },
+    {
+      "start": 2772.8,
+      "duration": 2.799,
+      "text": "say i want to check if docker is"
+    },
+    {
+      "start": 2773.92,
+      "duration": 3.439,
+      "text": "installed or not i can just type in"
+    },
+    {
+      "start": 2775.599,
+      "duration": 4.401,
+      "text": "docker and if i get some output like"
+    },
+    {
+      "start": 2777.359,
+      "duration": 5.041,
+      "text": "this i get the options this means docker"
+    },
+    {
+      "start": 2780.0,
+      "duration": 4.8,
+      "text": "is installed or i can also check with"
+    },
+    {
+      "start": 2782.4,
+      "duration": 4.719,
+      "text": "docker hyphen iphone version"
+    },
+    {
+      "start": 2784.8,
+      "duration": 4.72,
+      "text": "which will give me the version of the"
+    },
+    {
+      "start": 2787.119,
+      "duration": 3.601,
+      "text": "of the tool which means that docker is"
+    },
+    {
+      "start": 2789.52,
+      "duration": 3.44,
+      "text": "installed"
+    },
+    {
+      "start": 2790.72,
+      "duration": 3.92,
+      "text": "right but let's say you"
+    },
+    {
+      "start": 2792.96,
+      "duration": 4.96,
+      "text": "you can also use this command which is"
+    },
+    {
+      "start": 2794.64,
+      "duration": 5.6,
+      "text": "which docker which will give you where"
+    },
+    {
+      "start": 2797.92,
+      "duration": 4.96,
+      "text": "docker is actually placed inside our"
+    },
+    {
+      "start": 2800.24,
+      "duration": 5.2,
+      "text": "machine so if i run witch docker it"
+    },
+    {
+      "start": 2802.88,
+      "duration": 5.04,
+      "text": "shows that docker is inside user slash"
+    },
+    {
+      "start": 2805.44,
+      "duration": 4.32,
+      "text": "pin slash docker this also tells you"
+    },
+    {
+      "start": 2807.92,
+      "duration": 3.199,
+      "text": "like docker is already installed but it"
+    },
+    {
+      "start": 2809.76,
+      "duration": 3.52,
+      "text": "also gives you the path of where the"
+    },
+    {
+      "start": 2811.119,
+      "duration": 4.401,
+      "text": "docker is present so i can also use this"
+    },
+    {
+      "start": 2813.28,
+      "duration": 4.24,
+      "text": "command to locate any other package so"
+    },
+    {
+      "start": 2815.52,
+      "duration": 4.72,
+      "text": "let's say which git git is also stored"
+    },
+    {
+      "start": 2817.52,
+      "duration": 2.72,
+      "text": "in the same package"
+    },
+    {
+      "start": 2822.319,
+      "duration": 5.04,
+      "text": "so i can run sudo apt"
+    },
+    {
+      "start": 2824.56,
+      "duration": 6.08,
+      "text": "update docker or anything or i can just"
+    },
+    {
+      "start": 2827.359,
+      "duration": 7.921,
+      "text": "run to update anything"
+    },
+    {
+      "start": 2830.64,
+      "duration": 5.76,
+      "text": "so like i can run to apt all or upgrade"
+    },
+    {
+      "start": 2835.28,
+      "duration": 2.24,
+      "text": "right so everything is going to be"
+    },
+    {
+      "start": 2836.4,
+      "duration": 2.959,
+      "text": "upgraded"
+    },
+    {
+      "start": 2837.52,
+      "duration": 3.2,
+      "text": "this command which is going to show you"
+    },
+    {
+      "start": 2839.359,
+      "duration": 2.561,
+      "text": "like where is"
+    },
+    {
+      "start": 2840.72,
+      "duration": 3.28,
+      "text": "it present"
+    },
+    {
+      "start": 2841.92,
+      "duration": 4.24,
+      "text": "so i can also run let's say i have do i"
+    },
+    {
+      "start": 2844.0,
+      "duration": 3.92,
+      "text": "have kubernetes i have cube ctl so which"
+    },
+    {
+      "start": 2846.16,
+      "duration": 5.76,
+      "text": "qbctl it is"
+    },
+    {
+      "start": 2847.92,
+      "duration": 4.0,
+      "text": "inside user local bin cube ctm"
+    },
+    {
+      "start": 2852.24,
+      "duration": 2.24,
+      "text": "right"
+    },
+    {
+      "start": 2856.0,
+      "duration": 3.2,
+      "text": "and there is another command date which"
+    },
+    {
+      "start": 2857.68,
+      "duration": 2.72,
+      "text": "is going to tell you the current date so"
+    },
+    {
+      "start": 2859.2,
+      "duration": 4.32,
+      "text": "it's july"
+    },
+    {
+      "start": 2860.4,
+      "duration": 6.08,
+      "text": "thursday 7 july and then"
+    },
+    {
+      "start": 2863.52,
+      "duration": 3.92,
+      "text": "you have you already know about nano now"
+    },
+    {
+      "start": 2866.48,
+      "duration": 2.96,
+      "text": "yeah"
+    },
+    {
+      "start": 2867.44,
+      "duration": 4.0,
+      "text": "so there's also another editor which is"
+    },
+    {
+      "start": 2869.44,
+      "duration": 4.399,
+      "text": "wem so let's go to the"
+    },
+    {
+      "start": 2871.44,
+      "duration": 4.32,
+      "text": "cd change directory to learn linux first"
+    },
+    {
+      "start": 2873.839,
+      "duration": 4.24,
+      "text": "so inside what do i have i have test"
+    },
+    {
+      "start": 2875.76,
+      "duration": 4.799,
+      "text": "let's create a file and let's create it"
+    },
+    {
+      "start": 2878.079,
+      "duration": 4.161,
+      "text": "with the use of web so i can also create"
+    },
+    {
+      "start": 2880.559,
+      "duration": 4.081,
+      "text": "and edit it at the same time so let's"
+    },
+    {
+      "start": 2882.24,
+      "duration": 5.68,
+      "text": "say i am creating a file.txt"
+    },
+    {
+      "start": 2884.64,
+      "duration": 4.24,
+      "text": "so dot txt so i am inside my wim editor"
+    },
+    {
+      "start": 2887.92,
+      "duration": 2.639,
+      "text": "now"
+    },
+    {
+      "start": 2888.88,
+      "duration": 4.239,
+      "text": "so if you see something like this it"
+    },
+    {
+      "start": 2890.559,
+      "duration": 4.321,
+      "text": "means you are inside a directory in a"
+    },
+    {
+      "start": 2893.119,
+      "duration": 3.601,
+      "text": "vim editor and it says that it is a new"
+    },
+    {
+      "start": 2894.88,
+      "duration": 4.16,
+      "text": "file which is created right now so if"
+    },
+    {
+      "start": 2896.72,
+      "duration": 3.92,
+      "text": "you want to edit something if i type in"
+    },
+    {
+      "start": 2899.04,
+      "duration": 4.96,
+      "text": "if i'm typing something but it is not"
+    },
+    {
+      "start": 2900.64,
+      "duration": 5.679,
+      "text": "showing me another so unless like it"
+    },
+    {
+      "start": 2904.0,
+      "duration": 5.319,
+      "text": "let me"
+    },
+    {
+      "start": 2906.319,
+      "duration": 3.0,
+      "text": "exit"
+    },
+    {
+      "start": 2917.119,
+      "duration": 4.601,
+      "text": "so just a second and"
+    },
+    {
+      "start": 2936.8,
+      "duration": 5.44,
+      "text": "okay so let's learn let's"
+    },
+    {
+      "start": 2939.04,
+      "duration": 4.96,
+      "text": "use dvi again so if i am typing anything"
+    },
+    {
+      "start": 2942.24,
+      "duration": 4.079,
+      "text": "it can say that no"
+    },
+    {
+      "start": 2944.0,
+      "duration": 4.24,
+      "text": "under cursor so if you want to actually"
+    },
+    {
+      "start": 2946.319,
+      "duration": 4.24,
+      "text": "start working with the vim editor you"
+    },
+    {
+      "start": 2948.24,
+      "duration": 5.359,
+      "text": "have to first type in the i comma i"
+    },
+    {
+      "start": 2950.559,
+      "duration": 5.441,
+      "text": "which stands for insert so let me"
+    },
+    {
+      "start": 2953.599,
+      "duration": 5.041,
+      "text": "let me let me go back again and to show"
+    },
+    {
+      "start": 2956.0,
+      "duration": 4.72,
+      "text": "you so if"
+    },
+    {
+      "start": 2958.64,
+      "duration": 4.8,
+      "text": "so now if i want to type in anything i"
+    },
+    {
+      "start": 2960.72,
+      "duration": 5.119,
+      "text": "just have to first type in y i in on my"
+    },
+    {
+      "start": 2963.44,
+      "duration": 4.0,
+      "text": "keyboard so once i type in i i can"
+    },
+    {
+      "start": 2965.839,
+      "duration": 3.681,
+      "text": "actually start"
+    },
+    {
+      "start": 2967.44,
+      "duration": 5.76,
+      "text": "working on it so i can create anything i"
+    },
+    {
+      "start": 2969.52,
+      "duration": 3.68,
+      "text": "want so this is my new file"
+    },
+    {
+      "start": 2973.68,
+      "duration": 4.879,
+      "text": "right and if i want to exit this editor"
+    },
+    {
+      "start": 2975.92,
+      "duration": 5.199,
+      "text": "i have to first press the escape key"
+    },
+    {
+      "start": 2978.559,
+      "duration": 4.321,
+      "text": "once i press the escape key i can do"
+    },
+    {
+      "start": 2981.119,
+      "duration": 6.24,
+      "text": "this colon as you can see here at the"
+    },
+    {
+      "start": 2982.88,
+      "duration": 5.84,
+      "text": "end wq means saving and exiting"
+    },
+    {
+      "start": 2987.359,
+      "duration": 4.401,
+      "text": "qa"
+    },
+    {
+      "start": 2988.72,
+      "duration": 5.839,
+      "text": "means qa in this marks means exiting"
+    },
+    {
+      "start": 2991.76,
+      "duration": 2.799,
+      "text": "without saving"
+    },
+    {
+      "start": 2995.44,
+      "duration": 4.32,
+      "text": "so now you might have seen that i"
+    },
+    {
+      "start": 2997.119,
+      "duration": 4.641,
+      "text": "already did the q a exclamation mark"
+    },
+    {
+      "start": 2999.76,
+      "duration": 4.559,
+      "text": "which has not saved anything but if i do"
+    },
+    {
+      "start": 3001.76,
+      "duration": 4.24,
+      "text": "w key and i press enter and if i do ls"
+    },
+    {
+      "start": 3004.319,
+      "duration": 3.04,
+      "text": "you can see that file has been created"
+    },
+    {
+      "start": 3006.0,
+      "duration": 3.52,
+      "text": "and if i do cat"
+    },
+    {
+      "start": 3007.359,
+      "duration": 4.881,
+      "text": "file.txt i can see whatever was written"
+    },
+    {
+      "start": 3009.52,
+      "duration": 5.36,
+      "text": "inside it"
+    },
+    {
+      "start": 3012.24,
+      "duration": 3.839,
+      "text": "yeah similar to nano but a bit complex"
+    },
+    {
+      "start": 3014.88,
+      "duration": 1.92,
+      "text": "because"
+    },
+    {
+      "start": 3016.079,
+      "duration": 2.24,
+      "text": "you"
+    },
+    {
+      "start": 3016.8,
+      "duration": 3.68,
+      "text": "you can get a file like this but if you"
+    },
+    {
+      "start": 3018.319,
+      "duration": 4.721,
+      "text": "start typing you cannot like do anything"
+    },
+    {
+      "start": 3020.48,
+      "duration": 5.92,
+      "text": "in it so you can see unless i type in i"
+    },
+    {
+      "start": 3023.04,
+      "duration": 6.0,
+      "text": "i cannot do anything in it"
+    },
+    {
+      "start": 3026.4,
+      "duration": 4.8,
+      "text": "right so it is a bit confusing and if"
+    },
+    {
+      "start": 3029.04,
+      "duration": 3.84,
+      "text": "you want to escape uh"
+    },
+    {
+      "start": 3031.2,
+      "duration": 4.08,
+      "text": "you have to type in like if you want to"
+    },
+    {
+      "start": 3032.88,
+      "duration": 3.76,
+      "text": "save it just type in wq if you don't"
+    },
+    {
+      "start": 3035.28,
+      "duration": 3.76,
+      "text": "want to save it"
+    },
+    {
+      "start": 3036.64,
+      "duration": 4.08,
+      "text": "so if you don't want to save it qa and"
+    },
+    {
+      "start": 3039.04,
+      "duration": 3.84,
+      "text": "this so this can be confusing but i"
+    },
+    {
+      "start": 3040.72,
+      "duration": 3.839,
+      "text": "would suggest you to use nano"
+    },
+    {
+      "start": 3042.88,
+      "duration": 4.959,
+      "text": "because nano is very very easy compared"
+    },
+    {
+      "start": 3044.559,
+      "duration": 6.641,
+      "text": "to vi but you can also use vi now"
+    },
+    {
+      "start": 3047.839,
+      "duration": 5.201,
+      "text": "because i have taught you vi"
+    },
+    {
+      "start": 3051.2,
+      "duration": 3.52,
+      "text": "okay so we have learned a lot of file"
+    },
+    {
+      "start": 3053.04,
+      "duration": 2.559,
+      "text": "commands lot of good to know commands"
+    },
+    {
+      "start": 3054.72,
+      "duration": 2.16,
+      "text": "and"
+    },
+    {
+      "start": 3055.599,
+      "duration": 4.641,
+      "text": "we have also learned about how to"
+    },
+    {
+      "start": 3056.88,
+      "duration": 4.88,
+      "text": "install how to ssh let's learn a bit"
+    },
+    {
+      "start": 3060.24,
+      "duration": 3.76,
+      "text": "about network commands which you might"
+    },
+    {
+      "start": 3061.76,
+      "duration": 4.24,
+      "text": "be using so network command one of them"
+    },
+    {
+      "start": 3064.0,
+      "duration": 3.92,
+      "text": "is the ping command ping is used to"
+    },
+    {
+      "start": 3066.0,
+      "duration": 5.119,
+      "text": "check if the connection is established"
+    },
+    {
+      "start": 3067.92,
+      "duration": 4.8,
+      "text": "or not so let's say i'm going to ping uh"
+    },
+    {
+      "start": 3071.119,
+      "duration": 4.081,
+      "text": "google"
+    },
+    {
+      "start": 3072.72,
+      "duration": 5.839,
+      "text": "google.com so if i am connected to my"
+    },
+    {
+      "start": 3075.2,
+      "duration": 5.2,
+      "text": "internet or if google.com is up and"
+    },
+    {
+      "start": 3078.559,
+      "duration": 3.28,
+      "text": "running right now it should give me"
+    },
+    {
+      "start": 3080.4,
+      "duration": 4.08,
+      "text": "response"
+    },
+    {
+      "start": 3081.839,
+      "duration": 4.801,
+      "text": "right so if i do enter you can see that"
+    },
+    {
+      "start": 3084.48,
+      "duration": 4.32,
+      "text": "it is giving me response so 64 bytes"
+    },
+    {
+      "start": 3086.64,
+      "duration": 3.679,
+      "text": "from this so google is giving me"
+    },
+    {
+      "start": 3088.8,
+      "duration": 3.84,
+      "text": "commands"
+    },
+    {
+      "start": 3090.319,
+      "duration": 4.8,
+      "text": "right so if i do control c i am going to"
+    },
+    {
+      "start": 3092.64,
+      "duration": 4.8,
+      "text": "exit this now if i do ping"
+    },
+    {
+      "start": 3095.119,
+      "duration": 5.281,
+      "text": "let's say"
+    },
+    {
+      "start": 3097.44,
+      "duration": 5.76,
+      "text": "let's say let's say amazon amazon.com so"
+    },
+    {
+      "start": 3100.4,
+      "duration": 5.12,
+      "text": "if amazon.com is up right now i can get"
+    },
+    {
+      "start": 3103.2,
+      "duration": 4.56,
+      "text": "i should get the packets back from them"
+    },
+    {
+      "start": 3105.52,
+      "duration": 6.079,
+      "text": "so you can see that 64 bytes are getting"
+    },
+    {
+      "start": 3107.76,
+      "duration": 7.599,
+      "text": "back from this which is the path or the"
+    },
+    {
+      "start": 3111.599,
+      "duration": 4.641,
+      "text": "ip address for amazon.com"
+    },
+    {
+      "start": 3115.359,
+      "duration": 2.561,
+      "text": "right"
+    },
+    {
+      "start": 3116.24,
+      "duration": 3.2,
+      "text": "so this is one of the command to check"
+    },
+    {
+      "start": 3117.92,
+      "duration": 3.28,
+      "text": "if there is a connection between the"
+    },
+    {
+      "start": 3119.44,
+      "duration": 3.44,
+      "text": "servers or not ping is one of the"
+    },
+    {
+      "start": 3121.2,
+      "duration": 3.6,
+      "text": "command if you want to check what is"
+    },
+    {
+      "start": 3122.88,
+      "duration": 3.679,
+      "text": "your ip address you can run this command"
+    },
+    {
+      "start": 3124.8,
+      "duration": 3.92,
+      "text": "it will give you the ip address so this"
+    },
+    {
+      "start": 3126.559,
+      "duration": 4.641,
+      "text": "is one so you can get the ip address so"
+    },
+    {
+      "start": 3128.72,
+      "duration": 4.72,
+      "text": "this is your ip address"
+    },
+    {
+      "start": 3131.2,
+      "duration": 3.76,
+      "text": "and the other details about the"
+    },
+    {
+      "start": 3133.44,
+      "duration": 3.399,
+      "text": "so it is also giving you the docker ip"
+    },
+    {
+      "start": 3134.96,
+      "duration": 3.44,
+      "text": "address"
+    },
+    {
+      "start": 3136.839,
+      "duration": 4.441,
+      "text": "here"
+    },
+    {
+      "start": 3138.4,
+      "duration": 4.64,
+      "text": "so another command is ns lookup"
+    },
+    {
+      "start": 3141.28,
+      "duration": 4.88,
+      "text": "so let's say i want to get the details"
+    },
+    {
+      "start": 3143.04,
+      "duration": 5.2,
+      "text": "about some domain uh which is let's say"
+    },
+    {
+      "start": 3146.16,
+      "duration": 4.08,
+      "text": "google.com maybe"
+    },
+    {
+      "start": 3148.24,
+      "duration": 4.72,
+      "text": "so i'm going to run google.com"
+    },
+    {
+      "start": 3150.24,
+      "duration": 5.92,
+      "text": "and it is giving me the ip address of it"
+    },
+    {
+      "start": 3152.96,
+      "duration": 4.879,
+      "text": "this is the ipv6 address and let's say i"
+    },
+    {
+      "start": 3156.16,
+      "duration": 2.959,
+      "text": "am going to get"
+    },
+    {
+      "start": 3157.839,
+      "duration": 4.641,
+      "text": "the"
+    },
+    {
+      "start": 3159.119,
+      "duration": 6.561,
+      "text": "so what can i search for any so"
+    },
+    {
+      "start": 3162.48,
+      "duration": 6.0,
+      "text": "shout me out is one of the blog"
+    },
+    {
+      "start": 3165.68,
+      "duration": 4.399,
+      "text": "so if i want to get the idea of what is"
+    },
+    {
+      "start": 3168.48,
+      "duration": 3.52,
+      "text": "so i can run here shout me loud and it"
+    },
+    {
+      "start": 3170.079,
+      "duration": 3.361,
+      "text": "will give me that this is the name this"
+    },
+    {
+      "start": 3172.0,
+      "duration": 4.0,
+      "text": "is the address this is the name this is"
+    },
+    {
+      "start": 3173.44,
+      "duration": 4.56,
+      "text": "the address so a bit more about what"
+    },
+    {
+      "start": 3176.0,
+      "duration": 3.839,
+      "text": "this host"
+    },
+    {
+      "start": 3178.0,
+      "duration": 3.839,
+      "text": "right so nslookup is one of the"
+    },
+    {
+      "start": 3179.839,
+      "duration": 4.72,
+      "text": "networking commands another command is"
+    },
+    {
+      "start": 3181.839,
+      "duration": 5.361,
+      "text": "curl command so if i want to get uh the"
+    },
+    {
+      "start": 3184.559,
+      "duration": 4.0,
+      "text": "contents so if i let's say if i do it"
+    },
+    {
+      "start": 3187.2,
+      "duration": 5.76,
+      "text": "graphically"
+    },
+    {
+      "start": 3188.559,
+      "duration": 6.161,
+      "text": "i can go here i can go to google.com"
+    },
+    {
+      "start": 3192.96,
+      "duration": 4.0,
+      "text": "and i what what can i see here i can see"
+    },
+    {
+      "start": 3194.72,
+      "duration": 3.839,
+      "text": "a logo google i can see a search box i"
+    },
+    {
+      "start": 3196.96,
+      "duration": 3.44,
+      "text": "can see google search i'm feeling like"
+    },
+    {
+      "start": 3198.559,
+      "duration": 3.921,
+      "text": "everything so i can do the same thing"
+    },
+    {
+      "start": 3200.4,
+      "duration": 4.959,
+      "text": "using commands as well so if i call"
+    },
+    {
+      "start": 3202.48,
+      "duration": 4.32,
+      "text": "google.com"
+    },
+    {
+      "start": 3205.359,
+      "duration": 3.2,
+      "text": "google.com"
+    },
+    {
+      "start": 3206.8,
+      "duration": 3.44,
+      "text": "i can see that"
+    },
+    {
+      "start": 3208.559,
+      "duration": 5.52,
+      "text": "so here it says the document has been"
+    },
+    {
+      "start": 3210.24,
+      "duration": 5.119,
+      "text": "moved so let's copy this here"
+    },
+    {
+      "start": 3214.079,
+      "duration": 4.081,
+      "text": "so curl"
+    },
+    {
+      "start": 3215.359,
+      "duration": 2.801,
+      "text": "and paste it"
+    },
+    {
+      "start": 3221.68,
+      "duration": 3.52,
+      "text": "so you can see that this is the same"
+    },
+    {
+      "start": 3223.44,
+      "duration": 5.119,
+      "text": "thing that is there but it is this is"
+    },
+    {
+      "start": 3225.2,
+      "duration": 5.04,
+      "text": "this is in form of html but still that"
+    },
+    {
+      "start": 3228.559,
+      "duration": 4.161,
+      "text": "you can see something so yeah google"
+    },
+    {
+      "start": 3230.24,
+      "duration": 4.56,
+      "text": "search which is same as here google"
+    },
+    {
+      "start": 3232.72,
+      "duration": 3.76,
+      "text": "search and you can also find something"
+    },
+    {
+      "start": 3234.8,
+      "duration": 3.279,
+      "text": "more like i am feeling lucky you can see"
+    },
+    {
+      "start": 3236.48,
+      "duration": 3.52,
+      "text": "it here"
+    },
+    {
+      "start": 3238.079,
+      "duration": 4.48,
+      "text": "so this is the same context but this is"
+    },
+    {
+      "start": 3240.0,
+      "duration": 4.48,
+      "text": "in the form of html this is how the"
+    },
+    {
+      "start": 3242.559,
+      "duration": 3.52,
+      "text": "websites are actually made"
+    },
+    {
+      "start": 3244.48,
+      "duration": 3.839,
+      "text": "so if you want to get the contents of"
+    },
+    {
+      "start": 3246.079,
+      "duration": 5.441,
+      "text": "the website or anything you can run curl"
+    },
+    {
+      "start": 3248.319,
+      "duration": 4.561,
+      "text": "command to actually get it"
+    },
+    {
+      "start": 3251.52,
+      "duration": 3.52,
+      "text": "right so let's take an example let's"
+    },
+    {
+      "start": 3252.88,
+      "duration": 4.32,
+      "text": "take an example of aws"
+    },
+    {
+      "start": 3255.04,
+      "duration": 4.88,
+      "text": "dot com"
+    },
+    {
+      "start": 3257.2,
+      "duration": 5.2,
+      "text": "so i am here inside my aws amazon.com if"
+    },
+    {
+      "start": 3259.92,
+      "duration": 4.159,
+      "text": "i want to get this get this hole"
+    },
+    {
+      "start": 3262.4,
+      "duration": 4.0,
+      "text": "without going to the website without"
+    },
+    {
+      "start": 3264.079,
+      "duration": 3.201,
+      "text": "searching it on the internet i can go"
+    },
+    {
+      "start": 3266.4,
+      "duration": 4.4,
+      "text": "here"
+    },
+    {
+      "start": 3267.28,
+      "duration": 3.52,
+      "text": "and let me clear it out first"
+    },
+    {
+      "start": 3271.839,
+      "duration": 5.28,
+      "text": "so i can do curl and paste the link"
+    },
+    {
+      "start": 3275.68,
+      "duration": 2.96,
+      "text": "so it will give me everything so if you"
+    },
+    {
+      "start": 3277.119,
+      "duration": 4.24,
+      "text": "can see that"
+    },
+    {
+      "start": 3278.64,
+      "duration": 3.679,
+      "text": "it is exactly what is shown on the on"
+    },
+    {
+      "start": 3281.359,
+      "duration": 3.76,
+      "text": "the"
+    },
+    {
+      "start": 3282.319,
+      "duration": 5.201,
+      "text": "website so if i scroll up to the"
+    },
+    {
+      "start": 3285.119,
+      "duration": 5.68,
+      "text": "so you can see that there was something"
+    },
+    {
+      "start": 3287.52,
+      "duration": 5.76,
+      "text": "like amazon builders library so if i do"
+    },
+    {
+      "start": 3290.799,
+      "duration": 4.32,
+      "text": "amazon"
+    },
+    {
+      "start": 3293.28,
+      "duration": 3.92,
+      "text": "builders so you can see amazon builders"
+    },
+    {
+      "start": 3295.119,
+      "duration": 3.68,
+      "text": "library here"
+    },
+    {
+      "start": 3297.2,
+      "duration": 3.599,
+      "text": "so this is the exact thing what is there"
+    },
+    {
+      "start": 3298.799,
+      "duration": 3.441,
+      "text": "but you can get the idea like you can"
+    },
+    {
+      "start": 3300.799,
+      "duration": 3.441,
+      "text": "get the contents of the website by"
+    },
+    {
+      "start": 3302.24,
+      "duration": 5.04,
+      "text": "running running the curl command so if"
+    },
+    {
+      "start": 3304.24,
+      "duration": 4.8,
+      "text": "you do do man curl you can get a lot"
+    },
+    {
+      "start": 3307.28,
+      "duration": 3.44,
+      "text": "more information about it so you can see"
+    },
+    {
+      "start": 3309.04,
+      "duration": 3.92,
+      "text": "that transfers a url is a tool to"
+    },
+    {
+      "start": 3310.72,
+      "duration": 4.399,
+      "text": "transfer data from one server to another"
+    },
+    {
+      "start": 3312.96,
+      "duration": 5.839,
+      "text": "and you can also use all the different"
+    },
+    {
+      "start": 3315.119,
+      "duration": 6.401,
+      "text": "uh components to get id about it so curl"
+    },
+    {
+      "start": 3318.799,
+      "duration": 4.56,
+      "text": "is to get the contents of the website"
+    },
+    {
+      "start": 3321.52,
+      "duration": 5.92,
+      "text": "right and there's another command which"
+    },
+    {
+      "start": 3323.359,
+      "duration": 6.081,
+      "text": "is wget so wget can be used to download"
+    },
+    {
+      "start": 3327.44,
+      "duration": 3.52,
+      "text": "the files"
+    },
+    {
+      "start": 3329.44,
+      "duration": 5.44,
+      "text": "right so let's say"
+    },
+    {
+      "start": 3330.96,
+      "duration": 6.639,
+      "text": "i want to download python in my in my"
+    },
+    {
+      "start": 3334.88,
+      "duration": 4.08,
+      "text": "in my machine ubuntu machine so i have"
+    },
+    {
+      "start": 3337.599,
+      "duration": 3.681,
+      "text": "already opened"
+    },
+    {
+      "start": 3338.96,
+      "duration": 4.56,
+      "text": "a website so if you go here"
+    },
+    {
+      "start": 3341.28,
+      "duration": 5.279,
+      "text": "so you can run this command w get"
+    },
+    {
+      "start": 3343.52,
+      "duration": 4.799,
+      "text": "and if i just open this you if i just"
+    },
+    {
+      "start": 3346.559,
+      "duration": 4.401,
+      "text": "open this it will start downloading this"
+    },
+    {
+      "start": 3348.319,
+      "duration": 5.201,
+      "text": "in my local machine so if i go to go to"
+    },
+    {
+      "start": 3350.96,
+      "duration": 3.28,
+      "text": "and it start it is downloading it my in"
+    },
+    {
+      "start": 3353.52,
+      "duration": 3.12,
+      "text": "my"
+    },
+    {
+      "start": 3354.24,
+      "duration": 5.2,
+      "text": "machine right but if i do this"
+    },
+    {
+      "start": 3356.64,
+      "duration": 3.52,
+      "text": "so let's say i want to w get and i paste"
+    },
+    {
+      "start": 3359.44,
+      "duration": 3.679,
+      "text": "it"
+    },
+    {
+      "start": 3360.16,
+      "duration": 4.159,
+      "text": "here let me erase this so dublicate is"
+    },
+    {
+      "start": 3363.119,
+      "duration": 3.281,
+      "text": "to get"
+    },
+    {
+      "start": 3364.319,
+      "duration": 4.48,
+      "text": "the package or whatever is there so it"
+    },
+    {
+      "start": 3366.4,
+      "duration": 4.48,
+      "text": "can be anything it can be a image file"
+    },
+    {
+      "start": 3368.799,
+      "duration": 3.76,
+      "text": "it can be a video it can be a package it"
+    },
+    {
+      "start": 3370.88,
+      "duration": 3.6,
+      "text": "can be anything you can download it"
+    },
+    {
+      "start": 3372.559,
+      "duration": 4.081,
+      "text": "using wget you just need to get the"
+    },
+    {
+      "start": 3374.48,
+      "duration": 3.92,
+      "text": "exact link which is actually downloading"
+    },
+    {
+      "start": 3376.64,
+      "duration": 3.36,
+      "text": "it"
+    },
+    {
+      "start": 3378.4,
+      "duration": 4.399,
+      "text": "all right so for the link you use the"
+    },
+    {
+      "start": 3380.0,
+      "duration": 4.799,
+      "text": "view game yeah no you don't get use wk"
+    },
+    {
+      "start": 3382.799,
+      "duration": 4.401,
+      "text": "to link to get the link you get you use"
+    },
+    {
+      "start": 3384.799,
+      "duration": 3.201,
+      "text": "wk to actually download it"
+    },
+    {
+      "start": 3387.2,
+      "duration": 3.28,
+      "text": "so"
+    },
+    {
+      "start": 3388.0,
+      "duration": 4.48,
+      "text": "now i am using this to like i am using"
+    },
+    {
+      "start": 3390.48,
+      "duration": 3.52,
+      "text": "it to open a file and this is done"
+    },
+    {
+      "start": 3392.48,
+      "duration": 3.68,
+      "text": "through graphical user interface right"
+    },
+    {
+      "start": 3394.0,
+      "duration": 3.839,
+      "text": "if i go here and i open it this is run"
+    },
+    {
+      "start": 3396.16,
+      "duration": 3.12,
+      "text": "through graphical interface so i have to"
+    },
+    {
+      "start": 3397.839,
+      "duration": 2.801,
+      "text": "save it and i have then it will start"
+    },
+    {
+      "start": 3399.28,
+      "duration": 3.519,
+      "text": "downloading"
+    },
+    {
+      "start": 3400.64,
+      "duration": 4.64,
+      "text": "right but i can do it the same way using"
+    },
+    {
+      "start": 3402.799,
+      "duration": 4.881,
+      "text": "wget so if i press enter here now it has"
+    },
+    {
+      "start": 3405.28,
+      "duration": 5.2,
+      "text": "start downloading it so you can see that"
+    },
+    {
+      "start": 3407.68,
+      "duration": 4.96,
+      "text": "it is downloading 3.52 mb or something"
+    },
+    {
+      "start": 3410.48,
+      "duration": 4.639,
+      "text": "and it says that it has been saved so if"
+    },
+    {
+      "start": 3412.64,
+      "duration": 4.8,
+      "text": "i do ls you can see so"
+    },
+    {
+      "start": 3415.119,
+      "duration": 5.361,
+      "text": "ls you can see that python is present"
+    },
+    {
+      "start": 3417.44,
+      "duration": 4.8,
+      "text": "here it means to get"
+    },
+    {
+      "start": 3420.48,
+      "duration": 4.56,
+      "text": "whatever you have pasted in the link for"
+    },
+    {
+      "start": 3422.24,
+      "duration": 4.64,
+      "text": "so non-interactive network downloader"
+    },
+    {
+      "start": 3425.04,
+      "duration": 3.44,
+      "text": "is a free utility for non-interactive"
+    },
+    {
+      "start": 3426.88,
+      "duration": 3.199,
+      "text": "download of files from the web so"
+    },
+    {
+      "start": 3428.48,
+      "duration": 3.52,
+      "text": "without going to the web you are"
+    },
+    {
+      "start": 3430.079,
+      "duration": 4.24,
+      "text": "actually downloading stuff you just need"
+    },
+    {
+      "start": 3432.0,
+      "duration": 5.44,
+      "text": "to have the link for it"
+    },
+    {
+      "start": 3434.319,
+      "duration": 6.0,
+      "text": "so i hope you have learned a lot about"
+    },
+    {
+      "start": 3437.44,
+      "duration": 2.879,
+      "text": "linux commands to"
+    }
+  ]
+}

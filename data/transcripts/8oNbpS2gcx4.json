@@ -1,0 +1,3746 @@
+{
+  "video": {
+    "id": "8oNbpS2gcx4",
+    "title": "Terraform Scenario Based Interview Questions and Answers | DevOps Interview",
+    "url": "https://www.youtube.com/watch?v=8oNbpS2gcx4",
+    "duration": 1529,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.12,
+      "duration": 4.159,
+      "text": "in this video we look at most asked"
+    },
+    {
+      "start": 2.159,
+      "duration": 4.281,
+      "text": "terraform interview questions along with"
+    },
+    {
+      "start": 4.279,
+      "duration": 4.681,
+      "text": "answers and also learning resources to"
+    },
+    {
+      "start": 6.44,
+      "duration": 4.159,
+      "text": "help you out all right so I'm here on my"
+    },
+    {
+      "start": 8.96,
+      "duration": 3.719,
+      "text": "computer screen and I have all this"
+    },
+    {
+      "start": 10.599,
+      "duration": 4.641,
+      "text": "different terraform interview questions"
+    },
+    {
+      "start": 12.679,
+      "duration": 4.401,
+      "text": "along with answers and also learning"
+    },
+    {
+      "start": 15.24,
+      "duration": 4.28,
+      "text": "materials to help you understand each"
+    },
+    {
+      "start": 17.08,
+      "duration": 4.08,
+      "text": "topic properly now in this document I"
+    },
+    {
+      "start": 19.52,
+      "duration": 3.599,
+      "text": "have mostly realtime scenario based"
+    },
+    {
+      "start": 21.16,
+      "duration": 3.76,
+      "text": "terraform interview questions but I've"
+    },
+    {
+      "start": 23.119,
+      "duration": 3.32,
+      "text": "also included some Advanced terraform"
+    },
+    {
+      "start": 24.92,
+      "duration": 4.119,
+      "text": "interview questions like cicd with"
+    },
+    {
+      "start": 26.439,
+      "duration": 4.84,
+      "text": "terraform automated testing in terraform"
+    },
+    {
+      "start": 29.039,
+      "duration": 3.881,
+      "text": "upgrading terraform version and lot more"
+    },
+    {
+      "start": 31.279,
+      "duration": 3.6,
+      "text": "so make sure you watch this video till"
+    },
+    {
+      "start": 32.92,
+      "duration": 4.159,
+      "text": "the end and if you want me to share this"
+    },
+    {
+      "start": 34.879,
+      "duration": 4.161,
+      "text": "document with you comment down terrafirm"
+    },
+    {
+      "start": 37.079,
+      "duration": 3.881,
+      "text": "interview questions and answers and I"
+    },
+    {
+      "start": 39.04,
+      "duration": 4.32,
+      "text": "will share this document as a PDF on"
+    },
+    {
+      "start": 40.96,
+      "duration": 5.04,
+      "text": "LinkedIn and also share the link of this"
+    },
+    {
+      "start": 43.36,
+      "duration": 4.28,
+      "text": "document in the video description now"
+    },
+    {
+      "start": 46.0,
+      "duration": 3.36,
+      "text": "with that being said let's get started"
+    },
+    {
+      "start": 47.64,
+      "duration": 4.559,
+      "text": "with this terraform interview questions"
+    },
+    {
+      "start": 49.36,
+      "duration": 4.359,
+      "text": "and answers video let's go so whenever"
+    },
+    {
+      "start": 52.199,
+      "duration": 3.481,
+      "text": "you sit for a terraform interview the"
+    },
+    {
+      "start": 53.719,
+      "duration": 4.401,
+      "text": "first typical question that you will get"
+    },
+    {
+      "start": 55.68,
+      "duration": 4.8,
+      "text": "is going to be what is terraform and how"
+    },
+    {
+      "start": 58.12,
+      "duration": 4.32,
+      "text": "it works so we all know terraform is an"
+    },
+    {
+      "start": 60.48,
+      "duration": 3.2,
+      "text": "infrastructure ased code tool that lets"
+    },
+    {
+      "start": 62.44,
+      "duration": 2.88,
+      "text": "you write the code for the"
+    },
+    {
+      "start": 63.68,
+      "duration": 3.88,
+      "text": "infrastructure that you want to create"
+    },
+    {
+      "start": 65.32,
+      "duration": 3.92,
+      "text": "in the cloud when you write the code you"
+    },
+    {
+      "start": 67.56,
+      "duration": 2.919,
+      "text": "then run the terraform commands and"
+    },
+    {
+      "start": 69.24,
+      "duration": 3.559,
+      "text": "terraform will create this"
+    },
+    {
+      "start": 70.479,
+      "duration": 4.28,
+      "text": "infrastructure in the cloud terraform"
+    },
+    {
+      "start": 72.799,
+      "duration": 3.561,
+      "text": "does this using the state file so a"
+    },
+    {
+      "start": 74.759,
+      "duration": 3.4,
+      "text": "state file in terraform is a file that"
+    },
+    {
+      "start": 76.36,
+      "duration": 4.24,
+      "text": "will store the data of all the"
+    },
+    {
+      "start": 78.159,
+      "duration": 4.201,
+      "text": "infrastructure managed through terraform"
+    },
+    {
+      "start": 80.6,
+      "duration": 4.0,
+      "text": "and terraform uses the state file to"
+    },
+    {
+      "start": 82.36,
+      "duration": 4.04,
+      "text": "compare with the actual infrastructure"
+    },
+    {
+      "start": 84.6,
+      "duration": 4.04,
+      "text": "on the cloud to tell us what is going to"
+    },
+    {
+      "start": 86.4,
+      "duration": 4.359,
+      "text": "be created or deleted according to the"
+    },
+    {
+      "start": 88.64,
+      "duration": 3.96,
+      "text": "configuration you have in these files so"
+    },
+    {
+      "start": 90.759,
+      "duration": 3.561,
+      "text": "this is how terraform works and if you"
+    },
+    {
+      "start": 92.6,
+      "duration": 3.64,
+      "text": "look at the answer here terraform is an"
+    },
+    {
+      "start": 94.32,
+      "duration": 3.64,
+      "text": "IC tool that lets you write code to"
+    },
+    {
+      "start": 96.24,
+      "duration": 3.36,
+      "text": "Define and manage your infrastructure"
+    },
+    {
+      "start": 97.96,
+      "duration": 3.56,
+      "text": "you describe your desired infrastructure"
+    },
+    {
+      "start": 99.6,
+      "duration": 4.04,
+      "text": "in the configuration files which are"
+    },
+    {
+      "start": 101.52,
+      "duration": 4.48,
+      "text": "these files here the TF"
+    },
+    {
+      "start": 103.64,
+      "duration": 3.839,
+      "text": "files and then terraform figures out"
+    },
+    {
+      "start": 106.0,
+      "duration": 3.119,
+      "text": "what needs to be done to achieve the"
+    },
+    {
+      "start": 107.479,
+      "duration": 3.6,
+      "text": "state and then make it happen by"
+    },
+    {
+      "start": 109.119,
+      "duration": 4.441,
+      "text": "interacting with Cloud providers or"
+    },
+    {
+      "start": 111.079,
+      "duration": 4.241,
+      "text": "other infrastructure platform here is"
+    },
+    {
+      "start": 113.56,
+      "duration": 3.879,
+      "text": "the workflow you you first write the"
+    },
+    {
+      "start": 115.32,
+      "duration": 4.079,
+      "text": "code you then plan to check what is"
+    },
+    {
+      "start": 117.439,
+      "duration": 4.32,
+      "text": "going to be created or deleted and then"
+    },
+    {
+      "start": 119.399,
+      "duration": 5.281,
+      "text": "you apply to have that infrastructure on"
+    },
+    {
+      "start": 121.759,
+      "duration": 4.36,
+      "text": "the cloud so this is how terraform Works"
+    },
+    {
+      "start": 124.68,
+      "duration": 3.719,
+      "text": "moving on the next question is a"
+    },
+    {
+      "start": 126.119,
+      "duration": 4.2,
+      "text": "scenario based question where it says a"
+    },
+    {
+      "start": 128.399,
+      "duration": 4.441,
+      "text": "devops engineer manually created"
+    },
+    {
+      "start": 130.319,
+      "duration": 4.321,
+      "text": "infrastructure on AWS and now there is a"
+    },
+    {
+      "start": 132.84,
+      "duration": 3.92,
+      "text": "requirement to use terraform to manage"
+    },
+    {
+      "start": 134.64,
+      "duration": 4.84,
+      "text": "it how would you import this resources"
+    },
+    {
+      "start": 136.76,
+      "duration": 4.759,
+      "text": "in the terraform code okay so according"
+    },
+    {
+      "start": 139.48,
+      "duration": 5.16,
+      "text": "to this question engineer has created"
+    },
+    {
+      "start": 141.519,
+      "duration": 4.841,
+      "text": "some infrastructure on AWS manually and"
+    },
+    {
+      "start": 144.64,
+      "duration": 4.04,
+      "text": "now they want this infrastructure to be"
+    },
+    {
+      "start": 146.36,
+      "duration": 3.92,
+      "text": "managed through terraform so how can you"
+    },
+    {
+      "start": 148.68,
+      "duration": 4.32,
+      "text": "do that so let's consider either this is"
+    },
+    {
+      "start": 150.28,
+      "duration": 5.0,
+      "text": "an infrastructure or an ec2 instance"
+    },
+    {
+      "start": 153.0,
+      "duration": 4.04,
+      "text": "created manually through AWS console and"
+    },
+    {
+      "start": 155.28,
+      "duration": 4.239,
+      "text": "now you want this to be managed through"
+    },
+    {
+      "start": 157.04,
+      "duration": 4.24,
+      "text": "terraform so for an infrastructure to be"
+    },
+    {
+      "start": 159.519,
+      "duration": 3.881,
+      "text": "managed through terraform it has to be"
+    },
+    {
+      "start": 161.28,
+      "duration": 4.2,
+      "text": "present inside the state file which is"
+    },
+    {
+      "start": 163.4,
+      "duration": 4.32,
+      "text": "this state file here so we will start"
+    },
+    {
+      "start": 165.48,
+      "duration": 4.24,
+      "text": "with creating the configuration first it"
+    },
+    {
+      "start": 167.72,
+      "duration": 3.64,
+      "text": "will create the code which is going to"
+    },
+    {
+      "start": 169.72,
+      "duration": 4.2,
+      "text": "be a resource block for this particular"
+    },
+    {
+      "start": 171.36,
+      "duration": 4.92,
+      "text": "instance specifying the instance type"
+    },
+    {
+      "start": 173.92,
+      "duration": 4.56,
+      "text": "specifying uh the Ami used and all the"
+    },
+    {
+      "start": 176.28,
+      "duration": 3.8,
+      "text": "other things once you write the code for"
+    },
+    {
+      "start": 178.48,
+      "duration": 4.399,
+      "text": "this to be inside the state file we will"
+    },
+    {
+      "start": 180.08,
+      "duration": 5.4,
+      "text": "run the terraform import command so if"
+    },
+    {
+      "start": 182.879,
+      "duration": 4.36,
+      "text": "you look at the answer here we we first"
+    },
+    {
+      "start": 185.48,
+      "duration": 3.479,
+      "text": "write the terraform configuration for"
+    },
+    {
+      "start": 187.239,
+      "duration": 3.881,
+      "text": "the resources that we want to be managed"
+    },
+    {
+      "start": 188.959,
+      "duration": 4.0,
+      "text": "through terraform once we write the code"
+    },
+    {
+      "start": 191.12,
+      "duration": 3.36,
+      "text": "then we run the terraform import command"
+    },
+    {
+      "start": 192.959,
+      "duration": 3.721,
+      "text": "and here is the command here so"
+    },
+    {
+      "start": 194.48,
+      "duration": 4.36,
+      "text": "terraform import with the resource type"
+    },
+    {
+      "start": 196.68,
+      "duration": 4.04,
+      "text": "and the unique ID so we run terraform"
+    },
+    {
+      "start": 198.84,
+      "duration": 3.72,
+      "text": "import command for each resource"
+    },
+    {
+      "start": 200.72,
+      "duration": 3.96,
+      "text": "specifying the resource type and its"
+    },
+    {
+      "start": 202.56,
+      "duration": 4.44,
+      "text": "unique identifier once you follow these"
+    },
+    {
+      "start": 204.68,
+      "duration": 4.04,
+      "text": "two steps then the infrastructure will"
+    },
+    {
+      "start": 207.0,
+      "duration": 3.599,
+      "text": "be managed through terraform and not"
+    },
+    {
+      "start": 208.72,
+      "duration": 4.04,
+      "text": "manually so we have to repeat these"
+    },
+    {
+      "start": 210.599,
+      "duration": 3.881,
+      "text": "steps or repeat this process for each"
+    },
+    {
+      "start": 212.76,
+      "duration": 3.72,
+      "text": "resource that we want to manage through"
+    },
+    {
+      "start": 214.48,
+      "duration": 3.88,
+      "text": "terraform now if you want to learn more"
+    },
+    {
+      "start": 216.48,
+      "duration": 4.399,
+      "text": "about how terraform import works here is"
+    },
+    {
+      "start": 218.36,
+      "duration": 3.879,
+      "text": "a great blog by terraform itself where"
+    },
+    {
+      "start": 220.879,
+      "duration": 4.481,
+      "text": "they will tell you how you can use"
+    },
+    {
+      "start": 222.239,
+      "duration": 5.241,
+      "text": "terraform uh import command to manage"
+    },
+    {
+      "start": 225.36,
+      "duration": 3.76,
+      "text": "infrastructure through terraform rather"
+    },
+    {
+      "start": 227.48,
+      "duration": 3.839,
+      "text": "than"
+    },
+    {
+      "start": 229.12,
+      "duration": 3.839,
+      "text": "manually moving on the next scenario"
+    },
+    {
+      "start": 231.319,
+      "duration": 4.081,
+      "text": "based question is you have multiple"
+    },
+    {
+      "start": 232.959,
+      "duration": 4.56,
+      "text": "environments Dev stage fraud for your"
+    },
+    {
+      "start": 235.4,
+      "duration": 3.919,
+      "text": "application and you want to use the same"
+    },
+    {
+      "start": 237.519,
+      "duration": 2.841,
+      "text": "code for all these environments how can"
+    },
+    {
+      "start": 239.319,
+      "duration": 2.321,
+      "text": "you do that"
+    },
+    {
+      "start": 240.36,
+      "duration": 2.28,
+      "text": "so according to the question there are"
+    },
+    {
+      "start": 241.64,
+      "duration": 2.72,
+      "text": "different environments for an"
+    },
+    {
+      "start": 242.64,
+      "duration": 3.519,
+      "text": "application and you want to use the same"
+    },
+    {
+      "start": 244.36,
+      "duration": 3.84,
+      "text": "terraform code for all these different"
+    },
+    {
+      "start": 246.159,
+      "duration": 3.36,
+      "text": "environments how can you do that to"
+    },
+    {
+      "start": 248.2,
+      "duration": 3.239,
+      "text": "achieve this we have actually two"
+    },
+    {
+      "start": 249.519,
+      "duration": 3.72,
+      "text": "different approaches the first is using"
+    },
+    {
+      "start": 251.439,
+      "duration": 3.961,
+      "text": "terraform modules and the second is"
+    },
+    {
+      "start": 253.239,
+      "duration": 4.081,
+      "text": "using terraform workspaces so what is"
+    },
+    {
+      "start": 255.4,
+      "duration": 3.92,
+      "text": "terraform module a terraform model is a"
+    },
+    {
+      "start": 257.32,
+      "duration": 4.52,
+      "text": "block of code or a code template for"
+    },
+    {
+      "start": 259.32,
+      "duration": 4.72,
+      "text": "infrastructure components and you define"
+    },
+    {
+      "start": 261.84,
+      "duration": 4.0,
+      "text": "them once and then you can use them with"
+    },
+    {
+      "start": 264.04,
+      "duration": 3.439,
+      "text": "different configurations for various"
+    },
+    {
+      "start": 265.84,
+      "duration": 4.24,
+      "text": "environments by passing in different"
+    },
+    {
+      "start": 267.479,
+      "duration": 4.041,
+      "text": "parameters or different variables so"
+    },
+    {
+      "start": 270.08,
+      "duration": 2.72,
+      "text": "this is the first approach where you can"
+    },
+    {
+      "start": 271.52,
+      "duration": 2.92,
+      "text": "use the same code for different"
+    },
+    {
+      "start": 272.8,
+      "duration": 3.88,
+      "text": "environments the second one is using"
+    },
+    {
+      "start": 274.44,
+      "duration": 4.12,
+      "text": "terraform workspaces using workspaces"
+    },
+    {
+      "start": 276.68,
+      "duration": 3.64,
+      "text": "you will have different state files for"
+    },
+    {
+      "start": 278.56,
+      "duration": 4.479,
+      "text": "different environments using the same"
+    },
+    {
+      "start": 280.32,
+      "duration": 5.48,
+      "text": "code so you terraform workspace provides"
+    },
+    {
+      "start": 283.039,
+      "duration": 5.081,
+      "text": "a way to manage separate states for same"
+    },
+    {
+      "start": 285.8,
+      "duration": 4.64,
+      "text": "set of configuration file each workspace"
+    },
+    {
+      "start": 288.12,
+      "duration": 3.919,
+      "text": "maintains its own safe file allowing you"
+    },
+    {
+      "start": 290.44,
+      "duration": 3.479,
+      "text": "to work on different environments"
+    },
+    {
+      "start": 292.039,
+      "duration": 4.841,
+      "text": "concurrently without interfering with"
+    },
+    {
+      "start": 293.919,
+      "duration": 4.481,
+      "text": "each other here is a great block that"
+    },
+    {
+      "start": 296.88,
+      "duration": 3.52,
+      "text": "will help you understand how you can use"
+    },
+    {
+      "start": 298.4,
+      "duration": 4.079,
+      "text": "the same code with with different"
+    },
+    {
+      "start": 300.4,
+      "duration": 4.239,
+      "text": "multiple environments using uh the"
+    },
+    {
+      "start": 302.479,
+      "duration": 4.041,
+      "text": "terraform module approach and also using"
+    },
+    {
+      "start": 304.639,
+      "duration": 3.28,
+      "text": "the terraform workspace approach I"
+    },
+    {
+      "start": 306.52,
+      "duration": 3.08,
+      "text": "recommend you checking this out if you"
+    },
+    {
+      "start": 307.919,
+      "duration": 3.681,
+      "text": "want to learn more about how you can use"
+    },
+    {
+      "start": 309.6,
+      "duration": 4.08,
+      "text": "the same code with different"
+    },
+    {
+      "start": 311.6,
+      "duration": 4.159,
+      "text": "environments moving on the next question"
+    },
+    {
+      "start": 313.68,
+      "duration": 4.04,
+      "text": "is what is terraform State file and why"
+    },
+    {
+      "start": 315.759,
+      "duration": 3.88,
+      "text": "it is important so we already know State"
+    },
+    {
+      "start": 317.72,
+      "duration": 3.84,
+      "text": "file is something that is going to have"
+    },
+    {
+      "start": 319.639,
+      "duration": 5.28,
+      "text": "information about the resources managed"
+    },
+    {
+      "start": 321.56,
+      "duration": 6.04,
+      "text": "through terraform and this is usually a"
+    },
+    {
+      "start": 324.919,
+      "duration": 4.84,
+      "text": "Json file so if you look here terraform"
+    },
+    {
+      "start": 327.6,
+      "duration": 3.719,
+      "text": "State file is a Json or a binary file"
+    },
+    {
+      "start": 329.759,
+      "duration": 4.121,
+      "text": "that stores the current state of the"
+    },
+    {
+      "start": 331.319,
+      "duration": 4.201,
+      "text": "managed infrastructure State file is"
+    },
+    {
+      "start": 333.88,
+      "duration": 3.8,
+      "text": "like a blueprint that stores information"
+    },
+    {
+      "start": 335.52,
+      "duration": 4.2,
+      "text": "about the infrastructure you manage and"
+    },
+    {
+      "start": 337.68,
+      "duration": 3.92,
+      "text": "it is crucial because it helps teram"
+    },
+    {
+      "start": 339.72,
+      "duration": 4.16,
+      "text": "understand what's already set up what"
+    },
+    {
+      "start": 341.6,
+      "duration": 3.84,
+      "text": "changes need to be made by comparing the"
+    },
+    {
+      "start": 343.88,
+      "duration": 3.08,
+      "text": "desired state with the current one in"
+    },
+    {
+      "start": 345.44,
+      "duration": 3.92,
+      "text": "the state file terraform can make"
+    },
+    {
+      "start": 346.96,
+      "duration": 4.0,
+      "text": "accurate updates to your infrastructure"
+    },
+    {
+      "start": 349.36,
+      "duration": 3.36,
+      "text": "so this means terraform State file is"
+    },
+    {
+      "start": 350.96,
+      "duration": 3.359,
+      "text": "very important for terraform to work"
+    },
+    {
+      "start": 352.72,
+      "duration": 4.0,
+      "text": "because using State file terraform"
+    },
+    {
+      "start": 354.319,
+      "duration": 4.201,
+      "text": "actually compares the configuration with"
+    },
+    {
+      "start": 356.72,
+      "duration": 4.199,
+      "text": "what you have on the cloud and then it"
+    },
+    {
+      "start": 358.52,
+      "duration": 4.56,
+      "text": "will actually create to delete stuff so"
+    },
+    {
+      "start": 360.919,
+      "duration": 4.041,
+      "text": "terraform State file is a Json file"
+    },
+    {
+      "start": 363.08,
+      "duration": 5.16,
+      "text": "which is very important for terraform to"
+    },
+    {
+      "start": 364.96,
+      "duration": 5.239,
+      "text": "work so next question is a scenario"
+    },
+    {
+      "start": 368.24,
+      "duration": 3.88,
+      "text": "based question a junior devops engineer"
+    },
+    {
+      "start": 370.199,
+      "duration": 3.761,
+      "text": "accidentally deleted a state file what"
+    },
+    {
+      "start": 372.12,
+      "duration": 3.32,
+      "text": "step should we take to resolve this so"
+    },
+    {
+      "start": 373.96,
+      "duration": 3.359,
+      "text": "we already know State file is very very"
+    },
+    {
+      "start": 375.44,
+      "duration": 4.159,
+      "text": "important and in this question a junior"
+    },
+    {
+      "start": 377.319,
+      "duration": 4.521,
+      "text": "devops engineer has accidentally deleted"
+    },
+    {
+      "start": 379.599,
+      "duration": 5.241,
+      "text": "a state file what step should we take to"
+    },
+    {
+      "start": 381.84,
+      "duration": 4.4,
+      "text": "recreate it or resolve this so as we"
+    },
+    {
+      "start": 384.84,
+      "duration": 2.919,
+      "text": "know state is import State file is"
+    },
+    {
+      "start": 386.24,
+      "duration": 3.519,
+      "text": "important it is always recommended to"
+    },
+    {
+      "start": 387.759,
+      "duration": 4.56,
+      "text": "take backups so the first step is going"
+    },
+    {
+      "start": 389.759,
+      "duration": 4.28,
+      "text": "to recover backup if there is a backup"
+    },
+    {
+      "start": 392.319,
+      "duration": 4.121,
+      "text": "available try to restore the state file"
+    },
+    {
+      "start": 394.039,
+      "duration": 4.641,
+      "text": "from the backup if there is no backup"
+    },
+    {
+      "start": 396.44,
+      "duration": 4.08,
+      "text": "then you need to manually create State"
+    },
+    {
+      "start": 398.68,
+      "duration": 3.28,
+      "text": "file which is very timec consuming and"
+    },
+    {
+      "start": 400.52,
+      "duration": 3.64,
+      "text": "you can do this by using terraform"
+    },
+    {
+      "start": 401.96,
+      "duration": 3.76,
+      "text": "import command so you will check what"
+    },
+    {
+      "start": 404.16,
+      "duration": 3.72,
+      "text": "resources are there on the cloud and"
+    },
+    {
+      "start": 405.72,
+      "duration": 4.44,
+      "text": "using terraform import command you will"
+    },
+    {
+      "start": 407.88,
+      "duration": 4.0,
+      "text": "import every single resource and put"
+    },
+    {
+      "start": 410.16,
+      "duration": 4.599,
+      "text": "them into the state file to recreate the"
+    },
+    {
+      "start": 411.88,
+      "duration": 4.84,
+      "text": "state file here is another great blog"
+    },
+    {
+      "start": 414.759,
+      "duration": 4.0,
+      "text": "where the author accidentally deleted"
+    },
+    {
+      "start": 416.72,
+      "duration": 4.08,
+      "text": "the state file and then using terao"
+    },
+    {
+      "start": 418.759,
+      "duration": 4.521,
+      "text": "import command they recreated the state"
+    },
+    {
+      "start": 420.8,
+      "duration": 4.44,
+      "text": "file so here is the terraform import"
+    },
+    {
+      "start": 423.28,
+      "duration": 3.84,
+      "text": "command on how they use terraform import"
+    },
+    {
+      "start": 425.24,
+      "duration": 3.359,
+      "text": "to recreate State file so make sure you"
+    },
+    {
+      "start": 427.12,
+      "duration": 3.12,
+      "text": "always take backups if there are no"
+    },
+    {
+      "start": 428.599,
+      "duration": 3.72,
+      "text": "backups you will have to recreate it"
+    },
+    {
+      "start": 430.24,
+      "duration": 4.44,
+      "text": "manually using terraform import command"
+    },
+    {
+      "start": 432.319,
+      "duration": 4.081,
+      "text": "checking each resource on the cloud once"
+    },
+    {
+      "start": 434.68,
+      "duration": 3.72,
+      "text": "you do that make make sure to review and"
+    },
+    {
+      "start": 436.4,
+      "duration": 3.28,
+      "text": "monitor if everything is working fine if"
+    },
+    {
+      "start": 438.4,
+      "duration": 3.199,
+      "text": "you get this question in the interview"
+    },
+    {
+      "start": 439.68,
+      "duration": 3.6,
+      "text": "the followup question would be what are"
+    },
+    {
+      "start": 441.599,
+      "duration": 3.961,
+      "text": "some best practices to manage terraform"
+    },
+    {
+      "start": 443.28,
+      "duration": 3.759,
+      "text": "State file so as we know terraform State"
+    },
+    {
+      "start": 445.56,
+      "duration": 3.079,
+      "text": "file is important and I've been"
+    },
+    {
+      "start": 447.039,
+      "duration": 2.961,
+      "text": "continuously saying this here are some"
+    },
+    {
+      "start": 448.639,
+      "duration": 3.521,
+      "text": "best practices to make make sure that"
+    },
+    {
+      "start": 450.0,
+      "duration": 3.84,
+      "text": "you properly manage your state file the"
+    },
+    {
+      "start": 452.16,
+      "duration": 3.479,
+      "text": "first best practice is to use remote"
+    },
+    {
+      "start": 453.84,
+      "duration": 3.479,
+      "text": "storage so rather than storing your"
+    },
+    {
+      "start": 455.639,
+      "duration": 3.68,
+      "text": "state file locally in your local machine"
+    },
+    {
+      "start": 457.319,
+      "duration": 4.481,
+      "text": "like this you can store your state file"
+    },
+    {
+      "start": 459.319,
+      "duration": 5.0,
+      "text": "on remote backends like S3 Azure blob"
+    },
+    {
+      "start": 461.8,
+      "duration": 4.959,
+      "text": "storage console and lot more so you"
+    },
+    {
+      "start": 464.319,
+      "duration": 4.961,
+      "text": "should always store the state file"
+    },
+    {
+      "start": 466.759,
+      "duration": 4.84,
+      "text": "remotely for safety collaboration and"
+    },
+    {
+      "start": 469.28,
+      "duration": 3.879,
+      "text": "Version Control second is State locking"
+    },
+    {
+      "start": 471.599,
+      "duration": 3.681,
+      "text": "when you store your state files on"
+    },
+    {
+      "start": 473.159,
+      "duration": 3.6,
+      "text": "remote backends you will obviously have"
+    },
+    {
+      "start": 475.28,
+      "duration": 3.599,
+      "text": "collaboration which means multiple"
+    },
+    {
+      "start": 476.759,
+      "duration": 3.88,
+      "text": "people will constantly update the state"
+    },
+    {
+      "start": 478.879,
+      "duration": 3.44,
+      "text": "file by running different terraform"
+    },
+    {
+      "start": 480.639,
+      "duration": 3.52,
+      "text": "commands so you need to enable State"
+    },
+    {
+      "start": 482.319,
+      "duration": 3.801,
+      "text": "locking to make sure there are no"
+    },
+    {
+      "start": 484.159,
+      "duration": 5.081,
+      "text": "conflicts whenever multiple people are"
+    },
+    {
+      "start": 486.12,
+      "duration": 4.84,
+      "text": "changing the state file uh so State"
+    },
+    {
+      "start": 489.24,
+      "duration": 4.72,
+      "text": "locking will prevent conflicts in"
+    },
+    {
+      "start": 490.96,
+      "duration": 5.16,
+      "text": "concurrent operations next is to access"
+    },
+    {
+      "start": 493.96,
+      "duration": 4.4,
+      "text": "control make sure only authorized people"
+    },
+    {
+      "start": 496.12,
+      "duration": 5.359,
+      "text": "or Services have access to the state"
+    },
+    {
+      "start": 498.36,
+      "duration": 6.119,
+      "text": "file to avoid deletion or Corruption of"
+    },
+    {
+      "start": 501.479,
+      "duration": 4.641,
+      "text": "the state file next is automated backups"
+    },
+    {
+      "start": 504.479,
+      "duration": 3.881,
+      "text": "make sure to set up automated backups to"
+    },
+    {
+      "start": 506.12,
+      "duration": 3.96,
+      "text": "prevent data loss for the state file and"
+    },
+    {
+      "start": 508.36,
+      "duration": 4.159,
+      "text": "lastly"
+    },
+    {
+      "start": 510.08,
+      "duration": 4.28,
+      "text": "environment separation maintain separate"
+    },
+    {
+      "start": 512.519,
+      "duration": 3.52,
+      "text": "State files for each environments or"
+    },
+    {
+      "start": 514.36,
+      "duration": 3.52,
+      "text": "utilize terraform workspace to manage"
+    },
+    {
+      "start": 516.039,
+      "duration": 3.44,
+      "text": "multiple State file so here are some"
+    },
+    {
+      "start": 517.88,
+      "duration": 4.2,
+      "text": "different best practices to manage"
+    },
+    {
+      "start": 519.479,
+      "duration": 4.321,
+      "text": "terraform State five let let's move on"
+    },
+    {
+      "start": 522.08,
+      "duration": 3.72,
+      "text": "the next question is your team is"
+    },
+    {
+      "start": 523.8,
+      "duration": 4.52,
+      "text": "adopting a multicloud strategy and you"
+    },
+    {
+      "start": 525.8,
+      "duration": 4.76,
+      "text": "need to manage resources on both AWS and"
+    },
+    {
+      "start": 528.32,
+      "duration": 3.8,
+      "text": "Azure using terraform so how do you"
+    },
+    {
+      "start": 530.56,
+      "duration": 3.68,
+      "text": "structure your terraform code to handle"
+    },
+    {
+      "start": 532.12,
+      "duration": 3.719,
+      "text": "this so according to the question your"
+    },
+    {
+      "start": 534.24,
+      "duration": 4.279,
+      "text": "team is adopting multicloud strategy"
+    },
+    {
+      "start": 535.839,
+      "duration": 5.041,
+      "text": "where you want to create code on AWS as"
+    },
+    {
+      "start": 538.519,
+      "duration": 4.281,
+      "text": "well as on azure so how can you do that"
+    },
+    {
+      "start": 540.88,
+      "duration": 4.079,
+      "text": "so we already know terraform is a cloud"
+    },
+    {
+      "start": 542.8,
+      "duration": 4.68,
+      "text": "agnostic which means terraform can work"
+    },
+    {
+      "start": 544.959,
+      "duration": 4.681,
+      "text": "on different clouds at once so you can"
+    },
+    {
+      "start": 547.48,
+      "duration": 4.2,
+      "text": "also create resources on AWS also on"
+    },
+    {
+      "start": 549.64,
+      "duration": 4.12,
+      "text": "Azure also on"
+    },
+    {
+      "start": 551.68,
+      "duration": 3.44,
+      "text": "gcp so you will do that by first"
+    },
+    {
+      "start": 553.76,
+      "duration": 3.88,
+      "text": "defining the providers if you want to"
+    },
+    {
+      "start": 555.12,
+      "duration": 5.0,
+      "text": "create resources in AWS you will have to"
+    },
+    {
+      "start": 557.64,
+      "duration": 4.92,
+      "text": "Define AWS as a provider in this case we"
+    },
+    {
+      "start": 560.12,
+      "duration": 4.52,
+      "text": "are creating resources in AWS and Azure"
+    },
+    {
+      "start": 562.56,
+      "duration": 4.279,
+      "text": "so we will Define provider for AWS and"
+    },
+    {
+      "start": 564.64,
+      "duration": 3.48,
+      "text": "Azure as well once you define the"
+    },
+    {
+      "start": 566.839,
+      "duration": 3.201,
+      "text": "provider you will then start with"
+    },
+    {
+      "start": 568.12,
+      "duration": 4.24,
+      "text": "writing the code for the resources you"
+    },
+    {
+      "start": 570.04,
+      "duration": 4.039,
+      "text": "want to create in AWS and Azure so here"
+    },
+    {
+      "start": 572.36,
+      "duration": 3.64,
+      "text": "are two steps first you define the"
+    },
+    {
+      "start": 574.079,
+      "duration": 4.521,
+      "text": "provider then you write the code for"
+    },
+    {
+      "start": 576.0,
+      "duration": 5.16,
+      "text": "different resources you want to"
+    },
+    {
+      "start": 578.6,
+      "duration": 4.6,
+      "text": "create moving on the next scenario based"
+    },
+    {
+      "start": 581.16,
+      "duration": 3.799,
+      "text": "question is there are some bash scripts"
+    },
+    {
+      "start": 583.2,
+      "duration": 4.36,
+      "text": "that you want to run after creating your"
+    },
+    {
+      "start": 584.959,
+      "duration": 4.32,
+      "text": "resources with terraform how how would"
+    },
+    {
+      "start": 587.56,
+      "duration": 2.959,
+      "text": "you achieve this so you have some bat"
+    },
+    {
+      "start": 589.279,
+      "duration": 3.161,
+      "text": "scripts that you want to run after the"
+    },
+    {
+      "start": 590.519,
+      "duration": 4.121,
+      "text": "resources are created you can do this"
+    },
+    {
+      "start": 592.44,
+      "duration": 3.24,
+      "text": "using provisioners in terraform so there"
+    },
+    {
+      "start": 594.64,
+      "duration": 3.4,
+      "text": "are three different types of"
+    },
+    {
+      "start": 595.68,
+      "duration": 4.399,
+      "text": "provisioners in terraform there is file"
+    },
+    {
+      "start": 598.04,
+      "duration": 4.359,
+      "text": "provisioner local ex provisional and"
+    },
+    {
+      "start": 600.079,
+      "duration": 4.681,
+      "text": "remote exact provisional for us to run"
+    },
+    {
+      "start": 602.399,
+      "duration": 4.12,
+      "text": "bash scripts we can use local exact"
+    },
+    {
+      "start": 604.76,
+      "duration": 3.28,
+      "text": "provisional and remote exec provisional"
+    },
+    {
+      "start": 606.519,
+      "duration": 3.641,
+      "text": "the difference between these two are"
+    },
+    {
+      "start": 608.04,
+      "duration": 4.68,
+      "text": "local exec provisioners are used to run"
+    },
+    {
+      "start": 610.16,
+      "duration": 4.08,
+      "text": "commands in your local machine remote"
+    },
+    {
+      "start": 612.72,
+      "duration": 4.48,
+      "text": "exec provisioners are used to run"
+    },
+    {
+      "start": 614.24,
+      "duration": 5.68,
+      "text": "commands or run scripts inside your"
+    },
+    {
+      "start": 617.2,
+      "duration": 5.12,
+      "text": "remote machines so here is a simple"
+    },
+    {
+      "start": 619.92,
+      "duration": 3.8,
+      "text": "example we are using a provisioner which"
+    },
+    {
+      "start": 622.32,
+      "duration": 3.16,
+      "text": "is a remote exec provisioner and we"
+    },
+    {
+      "start": 623.72,
+      "duration": 3.799,
+      "text": "using we are running some commands here"
+    },
+    {
+      "start": 625.48,
+      "duration": 3.64,
+      "text": "the first command is to give permissions"
+    },
+    {
+      "start": 627.519,
+      "duration": 3.041,
+      "text": "for the script that you want to run and"
+    },
+    {
+      "start": 629.12,
+      "duration": 3.64,
+      "text": "the second command is to actually run"
+    },
+    {
+      "start": 630.56,
+      "duration": 3.56,
+      "text": "the script when you use remote or file"
+    },
+    {
+      "start": 632.76,
+      "duration": 3.319,
+      "text": "provisional you also need to define the"
+    },
+    {
+      "start": 634.12,
+      "duration": 3.48,
+      "text": "connection block which is how you will"
+    },
+    {
+      "start": 636.079,
+      "duration": 3.56,
+      "text": "connect to the remote machine where you"
+    },
+    {
+      "start": 637.6,
+      "duration": 3.239,
+      "text": "want to run your scripts so you can see"
+    },
+    {
+      "start": 639.639,
+      "duration": 2.721,
+      "text": "the explanation here in this"
+    },
+    {
+      "start": 640.839,
+      "duration": 3.161,
+      "text": "configuration we using a remote exit"
+    },
+    {
+      "start": 642.36,
+      "duration": 3.719,
+      "text": "provisioner which executes A bash"
+    },
+    {
+      "start": 644.0,
+      "duration": 4.24,
+      "text": "command on a remote machine via"
+    },
+    {
+      "start": 646.079,
+      "duration": 5.161,
+      "text": "SSH you need to provide the necessary"
+    },
+    {
+      "start": 648.24,
+      "duration": 5.76,
+      "text": "connection details such as SSH user"
+    },
+    {
+      "start": 651.24,
+      "duration": 6.0,
+      "text": "private key and the host so this is how"
+    },
+    {
+      "start": 654.0,
+      "duration": 4.639,
+      "text": "you can run bash scripts uh using remote"
+    },
+    {
+      "start": 657.24,
+      "duration": 2.88,
+      "text": "exact provisioner if you want to run it"
+    },
+    {
+      "start": 658.639,
+      "duration": 3.241,
+      "text": "on remote machine if you want to run it"
+    },
+    {
+      "start": 660.12,
+      "duration": 2.68,
+      "text": "toally you can use local exact provision"
+    },
+    {
+      "start": 661.88,
+      "duration": 3.92,
+      "text": "as"
+    },
+    {
+      "start": 662.8,
+      "duration": 4.96,
+      "text": "well moving on the next question is your"
+    },
+    {
+      "start": 665.8,
+      "duration": 4.0,
+      "text": "company is looking ways to enable High"
+    },
+    {
+      "start": 667.76,
+      "duration": 4.16,
+      "text": "availability how can you perform blue"
+    },
+    {
+      "start": 669.8,
+      "duration": 4.12,
+      "text": "green deployments using terraform this"
+    },
+    {
+      "start": 671.92,
+      "duration": 3.599,
+      "text": "is a very nice question and I have got"
+    },
+    {
+      "start": 673.92,
+      "duration": 3.52,
+      "text": "this question a lot of times when"
+    },
+    {
+      "start": 675.519,
+      "duration": 3.681,
+      "text": "sitting for interviews so what is Blu"
+    },
+    {
+      "start": 677.44,
+      "duration": 3.48,
+      "text": "green deployment a Blu green deployment"
+    },
+    {
+      "start": 679.2,
+      "duration": 3.8,
+      "text": "is a strategy where you have two"
+    },
+    {
+      "start": 680.92,
+      "duration": 4.919,
+      "text": "identical environments a blue one and a"
+    },
+    {
+      "start": 683.0,
+      "duration": 4.2,
+      "text": "green one like this according to the"
+    },
+    {
+      "start": 685.839,
+      "duration": 4.68,
+      "text": "question the question is asking how can"
+    },
+    {
+      "start": 687.2,
+      "duration": 5.439,
+      "text": "you use terraform to set up a blue green"
+    },
+    {
+      "start": 690.519,
+      "duration": 3.481,
+      "text": "environment so you can use terraform you"
+    },
+    {
+      "start": 692.639,
+      "duration": 3.281,
+      "text": "can actually you can obviously use"
+    },
+    {
+      "start": 694.0,
+      "duration": 4.04,
+      "text": "terraform to do this so terraform"
+    },
+    {
+      "start": 695.92,
+      "duration": 4.479,
+      "text": "facilitates this by defining two sets of"
+    },
+    {
+      "start": 698.04,
+      "duration": 4.12,
+      "text": "infrastructure Resources with slight"
+    },
+    {
+      "start": 700.399,
+      "duration": 3.721,
+      "text": "variation so maybe you can have two"
+    },
+    {
+      "start": 702.16,
+      "duration": 4.119,
+      "text": "different Autos scaling groups or two"
+    },
+    {
+      "start": 704.12,
+      "duration": 3.959,
+      "text": "different Azure virtual machine scale"
+    },
+    {
+      "start": 706.279,
+      "duration": 3.321,
+      "text": "sets what you can do is you can create a"
+    },
+    {
+      "start": 708.079,
+      "duration": 3.281,
+      "text": "new environment alongside with the"
+    },
+    {
+      "start": 709.6,
+      "duration": 3.88,
+      "text": "existing one which is going to be the"
+    },
+    {
+      "start": 711.36,
+      "duration": 3.159,
+      "text": "green one and you will test if"
+    },
+    {
+      "start": 713.48,
+      "duration": 2.919,
+      "text": "everything is working in the new"
+    },
+    {
+      "start": 714.519,
+      "duration": 3.76,
+      "text": "environment if everything works properly"
+    },
+    {
+      "start": 716.399,
+      "duration": 4.641,
+      "text": "you can then switch the traffic either"
+    },
+    {
+      "start": 718.279,
+      "duration": 5.401,
+      "text": "using uh load balances or using DNS"
+    },
+    {
+      "start": 721.04,
+      "duration": 4.28,
+      "text": "records so you can see you first create"
+    },
+    {
+      "start": 723.68,
+      "duration": 3.68,
+      "text": "the new environment alongside with the"
+    },
+    {
+      "start": 725.32,
+      "duration": 3.84,
+      "text": "existing one you validate if everything"
+    },
+    {
+      "start": 727.36,
+      "duration": 3.12,
+      "text": "is working fine in the green environment"
+    },
+    {
+      "start": 729.16,
+      "duration": 3.52,
+      "text": "and if it is working fine you can then"
+    },
+    {
+      "start": 730.48,
+      "duration": 3.88,
+      "text": "use application Road balancer or DNS"
+    },
+    {
+      "start": 732.68,
+      "duration": 3.959,
+      "text": "records to switch traffic between these"
+    },
+    {
+      "start": 734.36,
+      "duration": 5.719,
+      "text": "two again to understand this more"
+    },
+    {
+      "start": 736.639,
+      "duration": 4.88,
+      "text": "clearly I also have another uh blog or"
+    },
+    {
+      "start": 740.079,
+      "duration": 3.681,
+      "text": "documentation"
+    },
+    {
+      "start": 741.519,
+      "duration": 4.12,
+      "text": "by by terraform itself and they have"
+    },
+    {
+      "start": 743.76,
+      "duration": 3.96,
+      "text": "defined how you can use terraform for"
+    },
+    {
+      "start": 745.639,
+      "duration": 3.961,
+      "text": "bluprint deployment or for Canary and"
+    },
+    {
+      "start": 747.72,
+      "duration": 3.88,
+      "text": "rolling deployment as well so go through"
+    },
+    {
+      "start": 749.6,
+      "duration": 5.08,
+      "text": "this to understand more on how you can"
+    },
+    {
+      "start": 751.6,
+      "duration": 4.919,
+      "text": "use terraform to set this up moving on"
+    },
+    {
+      "start": 754.68,
+      "duration": 3.68,
+      "text": "the next question is your company wants"
+    },
+    {
+      "start": 756.519,
+      "duration": 3.44,
+      "text": "to automate terraform through cicd"
+    },
+    {
+      "start": 758.36,
+      "duration": 3.68,
+      "text": "pipelines how can you integrate"
+    },
+    {
+      "start": 759.959,
+      "duration": 3.921,
+      "text": "terraform with cicd pipelines this is"
+    },
+    {
+      "start": 762.04,
+      "duration": 4.08,
+      "text": "again very very important because every"
+    },
+    {
+      "start": 763.88,
+      "duration": 4.24,
+      "text": "company is using cicd pipelines to"
+    },
+    {
+      "start": 766.12,
+      "duration": 4.0,
+      "text": "automate the terraform infrastructure"
+    },
+    {
+      "start": 768.12,
+      "duration": 4.079,
+      "text": "provisioning so make sure you go through"
+    },
+    {
+      "start": 770.12,
+      "duration": 3.92,
+      "text": "this answer very properly I have also"
+    },
+    {
+      "start": 772.199,
+      "duration": 3.481,
+      "text": "explained this very thoroughly in this"
+    },
+    {
+      "start": 774.04,
+      "duration": 4.32,
+      "text": "particular video where we have used"
+    },
+    {
+      "start": 775.68,
+      "duration": 4.959,
+      "text": "gitlab cicd to automate terraform"
+    },
+    {
+      "start": 778.36,
+      "duration": 4.08,
+      "text": "resource creation and deletion so inside"
+    },
+    {
+      "start": 780.639,
+      "duration": 3.961,
+      "text": "this video we have created a cicd"
+    },
+    {
+      "start": 782.44,
+      "duration": 4.199,
+      "text": "pipeline using gitlab in this cicd"
+    },
+    {
+      "start": 784.6,
+      "duration": 5.56,
+      "text": "pipeline we have different stages for in"
+    },
+    {
+      "start": 786.639,
+      "duration": 5.88,
+      "text": "it for a plan apply and Destroy so"
+    },
+    {
+      "start": 790.16,
+      "duration": 4.52,
+      "text": "similarly for you to set up or automate"
+    },
+    {
+      "start": 792.519,
+      "duration": 4.841,
+      "text": "your terraform through cicd pipeline you"
+    },
+    {
+      "start": 794.68,
+      "duration": 5.48,
+      "text": "need to First push the terraform code"
+    },
+    {
+      "start": 797.36,
+      "duration": 4.24,
+      "text": "this code onto uh remote repository like"
+    },
+    {
+      "start": 800.16,
+      "duration": 3.479,
+      "text": "GitHub or gitlab wherever you want to"
+    },
+    {
+      "start": 801.6,
+      "duration": 4.28,
+      "text": "set up your cicd pipeline once you have"
+    },
+    {
+      "start": 803.639,
+      "duration": 4.76,
+      "text": "your code there you can then start with"
+    },
+    {
+      "start": 805.88,
+      "duration": 4.28,
+      "text": "writing the cicd script uh which will"
+    },
+    {
+      "start": 808.399,
+      "duration": 4.281,
+      "text": "have different stages for in it for"
+    },
+    {
+      "start": 810.16,
+      "duration": 4.64,
+      "text": "validate for plan for apply for apply"
+    },
+    {
+      "start": 812.68,
+      "duration": 4.2,
+      "text": "you can either do it manually where you"
+    },
+    {
+      "start": 814.8,
+      "duration": 3.599,
+      "text": "will create uh where you will create"
+    },
+    {
+      "start": 816.88,
+      "duration": 3.44,
+      "text": "merge request every time there's a"
+    },
+    {
+      "start": 818.399,
+      "duration": 4.201,
+      "text": "change in the terraform code and once it"
+    },
+    {
+      "start": 820.32,
+      "duration": 4.759,
+      "text": "is approved only then resource should be"
+    },
+    {
+      "start": 822.6,
+      "duration": 4.96,
+      "text": "created also you can set up approval for"
+    },
+    {
+      "start": 825.079,
+      "duration": 3.961,
+      "text": "deletion as well so here are the"
+    },
+    {
+      "start": 827.56,
+      "duration": 3.719,
+      "text": "different steps you first commit the"
+    },
+    {
+      "start": 829.04,
+      "duration": 4.32,
+      "text": "code to Version Control System set up a"
+    },
+    {
+      "start": 831.279,
+      "duration": 3.641,
+      "text": "cicd pipeline that will check every time"
+    },
+    {
+      "start": 833.36,
+      "duration": 3.839,
+      "text": "you make a change inside your terraform"
+    },
+    {
+      "start": 834.92,
+      "duration": 4.68,
+      "text": "code and you push it to this repository"
+    },
+    {
+      "start": 837.199,
+      "duration": 3.64,
+      "text": "terraform the CD pipeline will run"
+    },
+    {
+      "start": 839.6,
+      "duration": 3.12,
+      "text": "in the pipeline you can execute"
+    },
+    {
+      "start": 840.839,
+      "duration": 3.841,
+      "text": "terraform commands such as init validate"
+    },
+    {
+      "start": 842.72,
+      "duration": 3.84,
+      "text": "and plan to ensure the configurations"
+    },
+    {
+      "start": 844.68,
+      "duration": 3.24,
+      "text": "are valid and generate an execution plan"
+    },
+    {
+      "start": 846.56,
+      "duration": 3.36,
+      "text": "you can do this by defining different"
+    },
+    {
+      "start": 847.92,
+      "duration": 4.359,
+      "text": "stages in the"
+    },
+    {
+      "start": 849.92,
+      "duration": 4.56,
+      "text": "pipeline use Terra forly command to"
+    },
+    {
+      "start": 852.279,
+      "duration": 5.36,
+      "text": "create or modify infrastructure based on"
+    },
+    {
+      "start": 854.48,
+      "duration": 4.479,
+      "text": "approved changes so whenever whenever"
+    },
+    {
+      "start": 857.639,
+      "duration": 3.161,
+      "text": "you make a change you can then create a"
+    },
+    {
+      "start": 858.959,
+      "duration": 4.12,
+      "text": "merge request when this merge request is"
+    },
+    {
+      "start": 860.8,
+      "duration": 4.159,
+      "text": "accepted only then the apply stage"
+    },
+    {
+      "start": 863.079,
+      "duration": 3.921,
+      "text": "should be done optionally you can also"
+    },
+    {
+      "start": 864.959,
+      "duration": 3.921,
+      "text": "use testing and verification tool to"
+    },
+    {
+      "start": 867.0,
+      "duration": 4.0,
+      "text": "validate and deploy infrastructure so"
+    },
+    {
+      "start": 868.88,
+      "duration": 4.48,
+      "text": "you can include different uh different"
+    },
+    {
+      "start": 871.0,
+      "duration": 4.24,
+      "text": "Frameworks or different tools to include"
+    },
+    {
+      "start": 873.36,
+      "duration": 5.0,
+      "text": "testing or to make sure your your"
+    },
+    {
+      "start": 875.24,
+      "duration": 4.88,
+      "text": "terraform syntax is correct finally"
+    },
+    {
+      "start": 878.36,
+      "duration": 3.599,
+      "text": "trigger additional pipeline stages for"
+    },
+    {
+      "start": 880.12,
+      "duration": 3.519,
+      "text": "application deployment and testing and"
+    },
+    {
+      "start": 881.959,
+      "duration": 5.0,
+      "text": "release optionally you can also have"
+    },
+    {
+      "start": 883.639,
+      "duration": 5.0,
+      "text": "other cicd pipelines where you can use"
+    },
+    {
+      "start": 886.959,
+      "duration": 3.12,
+      "text": "you can also add other cicd pipelines"
+    },
+    {
+      "start": 888.639,
+      "duration": 3.32,
+      "text": "for application deployment testing and"
+    },
+    {
+      "start": 890.079,
+      "duration": 4.12,
+      "text": "release so this is how you can integrate"
+    },
+    {
+      "start": 891.959,
+      "duration": 4.041,
+      "text": "cicd pipelines with terraform I highly"
+    },
+    {
+      "start": 894.199,
+      "duration": 3.44,
+      "text": "recommend you checking out this video"
+    },
+    {
+      "start": 896.0,
+      "duration": 4.16,
+      "text": "where I've explained step by step on how"
+    },
+    {
+      "start": 897.639,
+      "duration": 4.921,
+      "text": "you can use cicd with terraform to"
+    },
+    {
+      "start": 900.16,
+      "duration": 5.08,
+      "text": "automate deployment on the"
+    },
+    {
+      "start": 902.56,
+      "duration": 4.36,
+      "text": "cloud moving on the next question is"
+    },
+    {
+      "start": 905.24,
+      "duration": 3.279,
+      "text": "describe how you can use terraform with"
+    },
+    {
+      "start": 906.92,
+      "duration": 3.96,
+      "text": "infrastructure deployment tools like"
+    },
+    {
+      "start": 908.519,
+      "duration": 4.32,
+      "text": "anible or Chef so in this question it is"
+    },
+    {
+      "start": 910.88,
+      "duration": 3.399,
+      "text": "asking how you can use terraform with"
+    },
+    {
+      "start": 912.839,
+      "duration": 4.521,
+      "text": "configuration management tools like"
+    },
+    {
+      "start": 914.279,
+      "duration": 4.401,
+      "text": "Terra like anible or Chef so we all know"
+    },
+    {
+      "start": 917.36,
+      "duration": 2.76,
+      "text": "terraform is an infrastructure"
+    },
+    {
+      "start": 918.68,
+      "duration": 4.04,
+      "text": "provisioning tool which is used to"
+    },
+    {
+      "start": 920.12,
+      "duration": 4.76,
+      "text": "create infrastructure whereas anible or"
+    },
+    {
+      "start": 922.72,
+      "duration": 3.96,
+      "text": "Chef are configuration management tools"
+    },
+    {
+      "start": 924.88,
+      "duration": 3.519,
+      "text": "which are used to configure stuff so"
+    },
+    {
+      "start": 926.68,
+      "duration": 3.839,
+      "text": "using terraform you can create E2"
+    },
+    {
+      "start": 928.399,
+      "duration": 4.321,
+      "text": "instances but using anible you can"
+    },
+    {
+      "start": 930.519,
+      "duration": 3.401,
+      "text": "install something on it so terraform can"
+    },
+    {
+      "start": 932.72,
+      "duration": 2.76,
+      "text": "be used in conjunction with"
+    },
+    {
+      "start": 933.92,
+      "duration": 3.88,
+      "text": "infrastructure deployment tools like"
+    },
+    {
+      "start": 935.48,
+      "duration": 4.44,
+      "text": "anible or Chef to manage infrastructure"
+    },
+    {
+      "start": 937.8,
+      "duration": 3.76,
+      "text": "provisioning and configuration anible"
+    },
+    {
+      "start": 939.92,
+      "duration": 3.479,
+      "text": "and Chef can handle tasks such as"
+    },
+    {
+      "start": 941.56,
+      "duration": 3.759,
+      "text": "installing a software configuring"
+    },
+    {
+      "start": 943.399,
+      "duration": 3.961,
+      "text": "servers managing Services while"
+    },
+    {
+      "start": 945.319,
+      "duration": 4.241,
+      "text": "terraform focuses on infrastructure"
+    },
+    {
+      "start": 947.36,
+      "duration": 4.039,
+      "text": "provisioning and orchestration so it is"
+    },
+    {
+      "start": 949.56,
+      "duration": 4.839,
+      "text": "a very good practice to use these two"
+    },
+    {
+      "start": 951.399,
+      "duration": 5.0,
+      "text": "tools together to create or achieve a"
+    },
+    {
+      "start": 954.399,
+      "duration": 3.8,
+      "text": "comprehensive infrastructure automation"
+    },
+    {
+      "start": 956.399,
+      "duration": 3.321,
+      "text": "solution now if you have confusion"
+    },
+    {
+      "start": 958.199,
+      "duration": 3.241,
+      "text": "between what what is terraform and what"
+    },
+    {
+      "start": 959.72,
+      "duration": 3.359,
+      "text": "is anible and how they are different you"
+    },
+    {
+      "start": 961.44,
+      "duration": 3.44,
+      "text": "can check out this video where I've"
+    },
+    {
+      "start": 963.079,
+      "duration": 4.32,
+      "text": "explained how terraform and anible are"
+    },
+    {
+      "start": 964.88,
+      "duration": 3.879,
+      "text": "different from each other and what is"
+    },
+    {
+      "start": 967.399,
+      "duration": 5.0,
+      "text": "what do they actually"
+    },
+    {
+      "start": 968.759,
+      "duration": 6.0,
+      "text": "do so you can use terraform with anible"
+    },
+    {
+      "start": 972.399,
+      "duration": 4.601,
+      "text": "and that we have answered here moving on"
+    },
+    {
+      "start": 974.759,
+      "duration": 4.281,
+      "text": "the next question is your infrastructure"
+    },
+    {
+      "start": 977.0,
+      "duration": 4.12,
+      "text": "contains database passwords and other"
+    },
+    {
+      "start": 979.04,
+      "duration": 4.239,
+      "text": "sensitive information how can you manage"
+    },
+    {
+      "start": 981.12,
+      "duration": 4.12,
+      "text": "secrets and sensitive data in terraform"
+    },
+    {
+      "start": 983.279,
+      "duration": 3.761,
+      "text": "this is a very very important question"
+    },
+    {
+      "start": 985.24,
+      "duration": 3.68,
+      "text": "compan companies are very concerned"
+    },
+    {
+      "start": 987.04,
+      "duration": 3.64,
+      "text": "about how you manage Secrets when"
+    },
+    {
+      "start": 988.92,
+      "duration": 3.8,
+      "text": "working with terraform so you need to"
+    },
+    {
+      "start": 990.68,
+      "duration": 4.159,
+      "text": "know how to manage Secrets like database"
+    },
+    {
+      "start": 992.72,
+      "duration": 4.28,
+      "text": "passwords credentials when working with"
+    },
+    {
+      "start": 994.839,
+      "duration": 4.36,
+      "text": "terraform here are some best practices"
+    },
+    {
+      "start": 997.0,
+      "duration": 4.079,
+      "text": "that you can follow to manage Secrets"
+    },
+    {
+      "start": 999.199,
+      "duration": 3.76,
+      "text": "when working in terraform the first best"
+    },
+    {
+      "start": 1001.079,
+      "duration": 4.281,
+      "text": "practice is never hard Cod secrets in"
+    },
+    {
+      "start": 1002.959,
+      "duration": 4.841,
+      "text": "your terraform code never put your uh"
+    },
+    {
+      "start": 1005.36,
+      "duration": 4.039,
+      "text": "database passwords never put your"
+    },
+    {
+      "start": 1007.8,
+      "duration": 3.64,
+      "text": "credentials inside terraform code"
+    },
+    {
+      "start": 1009.399,
+      "duration": 4.521,
+      "text": "because anyone will be able to see it"
+    },
+    {
+      "start": 1011.44,
+      "duration": 3.879,
+      "text": "even if you push it on uh repositories"
+    },
+    {
+      "start": 1013.92,
+      "duration": 4.08,
+      "text": "everyone will be able to see it so never"
+    },
+    {
+      "start": 1015.319,
+      "duration": 4.721,
+      "text": "hardcoded in your code you can store"
+    },
+    {
+      "start": 1018.0,
+      "duration": 4.88,
+      "text": "Secrets outside Version Control files"
+    },
+    {
+      "start": 1020.04,
+      "duration": 5.08,
+      "text": "never push them on GitHub as well and"
+    },
+    {
+      "start": 1022.88,
+      "duration": 3.76,
+      "text": "you can rather than rather than storing"
+    },
+    {
+      "start": 1025.12,
+      "duration": 3.88,
+      "text": "it inside the code you can use tools"
+    },
+    {
+      "start": 1026.64,
+      "duration": 4.36,
+      "text": "like hashiko Vault or also Cloud"
+    },
+    {
+      "start": 1029.0,
+      "duration": 5.679,
+      "text": "specific secret Management Services like"
+    },
+    {
+      "start": 1031.0,
+      "duration": 5.36,
+      "text": "Secrets manager in AWS also opt you can"
+    },
+    {
+      "start": 1034.679,
+      "duration": 4.041,
+      "text": "also use terraform input variables or"
+    },
+    {
+      "start": 1036.36,
+      "duration": 3.959,
+      "text": "environment variables where you can pass"
+    },
+    {
+      "start": 1038.72,
+      "duration": 3.16,
+      "text": "this information while you run the"
+    },
+    {
+      "start": 1040.319,
+      "duration": 3.801,
+      "text": "commands rather than storing them in the"
+    },
+    {
+      "start": 1041.88,
+      "duration": 3.88,
+      "text": "code so here are few uh different best"
+    },
+    {
+      "start": 1044.12,
+      "duration": 3.64,
+      "text": "practices that you can use to make sure"
+    },
+    {
+      "start": 1045.76,
+      "duration": 3.48,
+      "text": "that you can protect sensitive"
+    },
+    {
+      "start": 1047.76,
+      "duration": 3.76,
+      "text": "information and minimize the risk of"
+    },
+    {
+      "start": 1049.24,
+      "duration": 5.439,
+      "text": "exposing Secrets"
+    },
+    {
+      "start": 1051.52,
+      "duration": 5.0,
+      "text": "intentionally or unintentionally so"
+    },
+    {
+      "start": 1054.679,
+      "duration": 4.88,
+      "text": "moving on the next question is you have"
+    },
+    {
+      "start": 1056.52,
+      "duration": 5.24,
+      "text": "RDS database and ec2 instance created"
+    },
+    {
+      "start": 1059.559,
+      "duration": 5.201,
+      "text": "using terraform ec2 instance should be"
+    },
+    {
+      "start": 1061.76,
+      "duration": 5.64,
+      "text": "created before RDS how can you specify"
+    },
+    {
+      "start": 1064.76,
+      "duration": 4.64,
+      "text": "dependencies between two resources so"
+    },
+    {
+      "start": 1067.4,
+      "duration": 4.159,
+      "text": "you have RDS database and you also have"
+    },
+    {
+      "start": 1069.4,
+      "duration": 4.88,
+      "text": "ec2 instances you want this ec2 instance"
+    },
+    {
+      "start": 1071.559,
+      "duration": 3.961,
+      "text": "to be created before the RDS is created"
+    },
+    {
+      "start": 1074.28,
+      "duration": 2.8,
+      "text": "so to do that you can use a meta"
+    },
+    {
+      "start": 1075.52,
+      "duration": 3.48,
+      "text": "argument which is a depends on meta"
+    },
+    {
+      "start": 1077.08,
+      "duration": 3.599,
+      "text": "arguments using this depends on met"
+    },
+    {
+      "start": 1079.0,
+      "duration": 3.679,
+      "text": "argument you can Define that the ec2"
+    },
+    {
+      "start": 1080.679,
+      "duration": 3.761,
+      "text": "should be created first and then the Rd"
+    },
+    {
+      "start": 1082.679,
+      "duration": 3.201,
+      "text": "should be created so in terraform you"
+    },
+    {
+      "start": 1084.44,
+      "duration": 3.96,
+      "text": "can specify dependencies between"
+    },
+    {
+      "start": 1085.88,
+      "duration": 4.279,
+      "text": "resources using dependon attribute"
+    },
+    {
+      "start": 1088.4,
+      "duration": 4.32,
+      "text": "within the resource block and I've"
+    },
+    {
+      "start": 1090.159,
+      "duration": 4.201,
+      "text": "explained this again in this video where"
+    },
+    {
+      "start": 1092.72,
+      "duration": 4.199,
+      "text": "I've shown how you can use dependon"
+    },
+    {
+      "start": 1094.36,
+      "duration": 3.679,
+      "text": "argument to create resources first so"
+    },
+    {
+      "start": 1096.919,
+      "duration": 2.921,
+      "text": "make sure to watch this video if you"
+    },
+    {
+      "start": 1098.039,
+      "duration": 4.201,
+      "text": "want to learn how you can use dependon"
+    },
+    {
+      "start": 1099.84,
+      "duration": 4.16,
+      "text": "meta argument to create resources before"
+    },
+    {
+      "start": 1102.24,
+      "duration": 4.439,
+      "text": "any other"
+    },
+    {
+      "start": 1104.0,
+      "duration": 5.32,
+      "text": "resource moving on the next question is"
+    },
+    {
+      "start": 1106.679,
+      "duration": 4.401,
+      "text": "you have 20 servers you have 20 servers"
+    },
+    {
+      "start": 1109.32,
+      "duration": 4.16,
+      "text": "created through terraform but you want"
+    },
+    {
+      "start": 1111.08,
+      "duration": 3.8,
+      "text": "to delete one of them is it possible to"
+    },
+    {
+      "start": 1113.48,
+      "duration": 4.12,
+      "text": "destroy a single resource out of"
+    },
+    {
+      "start": 1114.88,
+      "duration": 4.4,
+      "text": "multiple resources using terraform so"
+    },
+    {
+      "start": 1117.6,
+      "duration": 3.36,
+      "text": "this is again a very tricky question"
+    },
+    {
+      "start": 1119.28,
+      "duration": 3.16,
+      "text": "whenever you want to delete stuff"
+    },
+    {
+      "start": 1120.96,
+      "duration": 3.24,
+      "text": "through terraform you will run the"
+    },
+    {
+      "start": 1122.44,
+      "duration": 3.8,
+      "text": "terraform destroy command but when you"
+    },
+    {
+      "start": 1124.2,
+      "duration": 3.2,
+      "text": "run terraform destroy command everything"
+    },
+    {
+      "start": 1126.24,
+      "duration": 3.439,
+      "text": "that is defined inside your"
+    },
+    {
+      "start": 1127.4,
+      "duration": 3.8,
+      "text": "configuration will be deleted so let's"
+    },
+    {
+      "start": 1129.679,
+      "duration": 3.321,
+      "text": "say you have 20 servers how can you"
+    },
+    {
+      "start": 1131.2,
+      "duration": 4.359,
+      "text": "delete one of them so if you want to"
+    },
+    {
+      "start": 1133.0,
+      "duration": 5.2,
+      "text": "delete just one of the resources defined"
+    },
+    {
+      "start": 1135.559,
+      "duration": 4.401,
+      "text": "among the 20 resources in the terraform"
+    },
+    {
+      "start": 1138.2,
+      "duration": 4.32,
+      "text": "you can use terraform destroy command"
+    },
+    {
+      "start": 1139.96,
+      "duration": 4.24,
+      "text": "with a Target attribute here so it is"
+    },
+    {
+      "start": 1142.52,
+      "duration": 3.8,
+      "text": "possible we can use terraform destroy"
+    },
+    {
+      "start": 1144.2,
+      "duration": 4.32,
+      "text": "Target command followed by the resource"
+    },
+    {
+      "start": 1146.32,
+      "duration": 4.52,
+      "text": "type and the name to destroy a specific"
+    },
+    {
+      "start": 1148.52,
+      "duration": 3.639,
+      "text": "resource so you can use Target with the"
+    },
+    {
+      "start": 1150.84,
+      "duration": 2.719,
+      "text": "instance that you want to create that"
+    },
+    {
+      "start": 1152.159,
+      "duration": 3.361,
+      "text": "you want to delete and it will only"
+    },
+    {
+      "start": 1153.559,
+      "duration": 3.561,
+      "text": "delete the particular instance rather"
+    },
+    {
+      "start": 1155.52,
+      "duration": 3.519,
+      "text": "than deleting all the 20"
+    },
+    {
+      "start": 1157.12,
+      "duration": 4.36,
+      "text": "servers and again there's a"
+    },
+    {
+      "start": 1159.039,
+      "duration": 4.481,
+      "text": "documentation by ashiko which will tell"
+    },
+    {
+      "start": 1161.48,
+      "duration": 4.92,
+      "text": "you how you can use terraform destroy"
+    },
+    {
+      "start": 1163.52,
+      "duration": 4.68,
+      "text": "with a Target attribute here so make"
+    },
+    {
+      "start": 1166.4,
+      "duration": 3.32,
+      "text": "sure you go through this if you want to"
+    },
+    {
+      "start": 1168.2,
+      "duration": 3.32,
+      "text": "understand more on how you can destroy a"
+    },
+    {
+      "start": 1169.72,
+      "duration": 4.04,
+      "text": "particular resource rather than"
+    },
+    {
+      "start": 1171.52,
+      "duration": 4.32,
+      "text": "destroying"
+    },
+    {
+      "start": 1173.76,
+      "duration": 4.2,
+      "text": "everything now moving on the next"
+    },
+    {
+      "start": 1175.84,
+      "duration": 4.839,
+      "text": "question is what are advantages of using"
+    },
+    {
+      "start": 1177.96,
+      "duration": 4.599,
+      "text": "terraforms count feature over resource"
+    },
+    {
+      "start": 1180.679,
+      "duration": 3.681,
+      "text": "duplication so in this question they're"
+    },
+    {
+      "start": 1182.559,
+      "duration": 3.841,
+      "text": "asking you what is the advantage of"
+    },
+    {
+      "start": 1184.36,
+      "duration": 4.559,
+      "text": "using count instead of resource"
+    },
+    {
+      "start": 1186.4,
+      "duration": 4.96,
+      "text": "duplication so a count feature or count"
+    },
+    {
+      "start": 1188.919,
+      "duration": 4.401,
+      "text": "meta argument is used to define how many"
+    },
+    {
+      "start": 1191.36,
+      "duration": 3.76,
+      "text": "resources you want to create for example"
+    },
+    {
+      "start": 1193.32,
+      "duration": 5.12,
+      "text": "you can check here here is the code to"
+    },
+    {
+      "start": 1195.12,
+      "duration": 5.919,
+      "text": "create AWS instance in this block of"
+    },
+    {
+      "start": 1198.44,
+      "duration": 5.08,
+      "text": "code we are defining count as four which"
+    },
+    {
+      "start": 1201.039,
+      "duration": 4.801,
+      "text": "means it will create four instances of"
+    },
+    {
+      "start": 1203.52,
+      "duration": 4.96,
+      "text": "these configuration other way to do this"
+    },
+    {
+      "start": 1205.84,
+      "duration": 4.12,
+      "text": "is to rewrite the code four time with"
+    },
+    {
+      "start": 1208.48,
+      "duration": 4.199,
+      "text": "this I'm not writing this code four"
+    },
+    {
+      "start": 1209.96,
+      "duration": 5.12,
+      "text": "times so this is the benefit using count"
+    },
+    {
+      "start": 1212.679,
+      "duration": 4.281,
+      "text": "you are you can create as many resources"
+    },
+    {
+      "start": 1215.08,
+      "duration": 4.12,
+      "text": "as you want without actually writing the"
+    },
+    {
+      "start": 1216.96,
+      "duration": 4.199,
+      "text": "code so using using terraforms count"
+    },
+    {
+      "start": 1219.2,
+      "duration": 3.479,
+      "text": "feature provides advantage over resource"
+    },
+    {
+      "start": 1221.159,
+      "duration": 3.76,
+      "text": "duplication by allowing you to"
+    },
+    {
+      "start": 1222.679,
+      "duration": 4.681,
+      "text": "dynamically create multiple instances of"
+    },
+    {
+      "start": 1224.919,
+      "duration": 4.401,
+      "text": "a resource based on given condition or a"
+    },
+    {
+      "start": 1227.36,
+      "duration": 3.559,
+      "text": "variable with count you can define a"
+    },
+    {
+      "start": 1229.32,
+      "duration": 3.8,
+      "text": "resource block with the count value that"
+    },
+    {
+      "start": 1230.919,
+      "duration": 4.521,
+      "text": "evaluates an expression such as variable"
+    },
+    {
+      "start": 1233.12,
+      "duration": 5.039,
+      "text": "or conditional statement this reduces"
+    },
+    {
+      "start": 1235.44,
+      "duration": 4.04,
+      "text": "code duplication and enable more"
+    },
+    {
+      "start": 1238.159,
+      "duration": 3.441,
+      "text": "efficient resource management and"
+    },
+    {
+      "start": 1239.48,
+      "duration": 4.8,
+      "text": "scalability so it is always always"
+    },
+    {
+      "start": 1241.6,
+      "duration": 5.439,
+      "text": "advised to use count rather than"
+    },
+    {
+      "start": 1244.28,
+      "duration": 4.08,
+      "text": "defining your code blocks multiple times"
+    },
+    {
+      "start": 1247.039,
+      "duration": 2.921,
+      "text": "you can also add some Advanced"
+    },
+    {
+      "start": 1248.36,
+      "duration": 3.96,
+      "text": "Expressions to enhance your terraform"
+    },
+    {
+      "start": 1249.96,
+      "duration": 4.88,
+      "text": "code here is the official documentation"
+    },
+    {
+      "start": 1252.32,
+      "duration": 4.32,
+      "text": "by terraform on count met argument I"
+    },
+    {
+      "start": 1254.84,
+      "duration": 3.6,
+      "text": "also have a short video on how you can"
+    },
+    {
+      "start": 1256.64,
+      "duration": 3.24,
+      "text": "use count and count. index so if you"
+    },
+    {
+      "start": 1258.44,
+      "duration": 3.84,
+      "text": "want you can check it"
+    },
+    {
+      "start": 1259.88,
+      "duration": 4.72,
+      "text": "out moving on the next question is what"
+    },
+    {
+      "start": 1262.28,
+      "duration": 4.0,
+      "text": "is terraforms module registry and how"
+    },
+    {
+      "start": 1264.6,
+      "duration": 2.959,
+      "text": "can you leverage it this is again"
+    },
+    {
+      "start": 1266.28,
+      "duration": 3.639,
+      "text": "something that you need to know if you"
+    },
+    {
+      "start": 1267.559,
+      "duration": 3.641,
+      "text": "are working on terraform module registry"
+    },
+    {
+      "start": 1269.919,
+      "duration": 2.961,
+      "text": "is a place where you can find different"
+    },
+    {
+      "start": 1271.2,
+      "duration": 3.56,
+      "text": "modules that you can use rather than"
+    },
+    {
+      "start": 1272.88,
+      "duration": 3.32,
+      "text": "writing the code yourself so here is the"
+    },
+    {
+      "start": 1274.76,
+      "duration": 2.799,
+      "text": "module registry where are different"
+    },
+    {
+      "start": 1276.2,
+      "duration": 2.92,
+      "text": "where you have different modules there"
+    },
+    {
+      "start": 1277.559,
+      "duration": 4.401,
+      "text": "is a module for IM IM there is a module"
+    },
+    {
+      "start": 1279.12,
+      "duration": 4.64,
+      "text": "for VPC for S3 bucket for eks everything"
+    },
+    {
+      "start": 1281.96,
+      "duration": 3.64,
+      "text": "so let's say you want to create eks"
+    },
+    {
+      "start": 1283.76,
+      "duration": 3.76,
+      "text": "cluster rather than writing the code"
+    },
+    {
+      "start": 1285.6,
+      "duration": 3.64,
+      "text": "yourself you can just go ahead and use"
+    },
+    {
+      "start": 1287.52,
+      "duration": 3.12,
+      "text": "this module if you want to check the"
+    },
+    {
+      "start": 1289.24,
+      "duration": 3.559,
+      "text": "code for the module you can also check"
+    },
+    {
+      "start": 1290.64,
+      "duration": 4.72,
+      "text": "the code here this module is created by"
+    },
+    {
+      "start": 1292.799,
+      "duration": 4.561,
+      "text": "Anton uh and then the code is present"
+    },
+    {
+      "start": 1295.36,
+      "duration": 3.439,
+      "text": "here on the GitHub so module registry is"
+    },
+    {
+      "start": 1297.36,
+      "duration": 3.6,
+      "text": "like a place where you can find all the"
+    },
+    {
+      "start": 1298.799,
+      "duration": 5.0,
+      "text": "different modules that you can reuse"
+    },
+    {
+      "start": 1300.96,
+      "duration": 4.599,
+      "text": "rather than writing the code yourself so"
+    },
+    {
+      "start": 1303.799,
+      "duration": 3.721,
+      "text": "terraforms module registry is a central"
+    },
+    {
+      "start": 1305.559,
+      "duration": 3.961,
+      "text": "repository for sharing and discovering"
+    },
+    {
+      "start": 1307.52,
+      "duration": 3.88,
+      "text": "terraform modules the module registry"
+    },
+    {
+      "start": 1309.52,
+      "duration": 3.32,
+      "text": "allow users to publish their modules"
+    },
+    {
+      "start": 1311.4,
+      "duration": 3.68,
+      "text": "which are reusable and sharable"
+    },
+    {
+      "start": 1312.84,
+      "duration": 3.68,
+      "text": "components of terraform configuration by"
+    },
+    {
+      "start": 1315.08,
+      "duration": 3.0,
+      "text": "leveraging the module register you can"
+    },
+    {
+      "start": 1316.52,
+      "duration": 3.88,
+      "text": "easily discover existing modules that"
+    },
+    {
+      "start": 1318.08,
+      "duration": 4.28,
+      "text": "address your your infrastructure need"
+    },
+    {
+      "start": 1320.4,
+      "duration": 3.2,
+      "text": "reducing the duplication of f word and"
+    },
+    {
+      "start": 1322.36,
+      "duration": 4.76,
+      "text": "you can reference modules in your"
+    },
+    {
+      "start": 1323.6,
+      "duration": 5.8,
+      "text": "terraform code using their registry URL"
+    },
+    {
+      "start": 1327.12,
+      "duration": 4.08,
+      "text": "andion for you to use any particular"
+    },
+    {
+      "start": 1329.4,
+      "duration": 3.56,
+      "text": "module you can see a block here inside"
+    },
+    {
+      "start": 1331.2,
+      "duration": 3.68,
+      "text": "the module block you can define a source"
+    },
+    {
+      "start": 1332.96,
+      "duration": 4.88,
+      "text": "as the module that you want to"
+    },
+    {
+      "start": 1334.88,
+      "duration": 4.72,
+      "text": "use now moving on the next question is"
+    },
+    {
+      "start": 1337.84,
+      "duration": 3.92,
+      "text": "how can you implement automated testing"
+    },
+    {
+      "start": 1339.6,
+      "duration": 4.04,
+      "text": "for terraform code this is again very"
+    },
+    {
+      "start": 1341.76,
+      "duration": 3.72,
+      "text": "important security is something that you"
+    },
+    {
+      "start": 1343.64,
+      "duration": 3.84,
+      "text": "need to put everywhere even in your"
+    },
+    {
+      "start": 1345.48,
+      "duration": 4.199,
+      "text": "terraform code so how can you implement"
+    },
+    {
+      "start": 1347.48,
+      "duration": 4.079,
+      "text": "automated testing by default terraform"
+    },
+    {
+      "start": 1349.679,
+      "duration": 3.88,
+      "text": "provides you with terraform validate and"
+    },
+    {
+      "start": 1351.559,
+      "duration": 3.72,
+      "text": "terraform format command which will"
+    },
+    {
+      "start": 1353.559,
+      "duration": 3.921,
+      "text": "check the syntax and also format the"
+    },
+    {
+      "start": 1355.279,
+      "duration": 3.961,
+      "text": "code according to terraform best"
+    },
+    {
+      "start": 1357.48,
+      "duration": 4.319,
+      "text": "practice but along with this you can"
+    },
+    {
+      "start": 1359.24,
+      "duration": 4.919,
+      "text": "also use other code other tools like"
+    },
+    {
+      "start": 1361.799,
+      "duration": 4.24,
+      "text": "terat test uh TF lint there's also"
+    },
+    {
+      "start": 1364.159,
+      "duration": 5.361,
+      "text": "kitchen terraform and a lot more I have"
+    },
+    {
+      "start": 1366.039,
+      "duration": 5.281,
+      "text": "defined all the tools here so for you to"
+    },
+    {
+      "start": 1369.52,
+      "duration": 3.759,
+      "text": "a for you to enable or Implement"
+    },
+    {
+      "start": 1371.32,
+      "duration": 4.04,
+      "text": "automated testing uh you can use all"
+    },
+    {
+      "start": 1373.279,
+      "duration": 4.52,
+      "text": "these different tools"
+    },
+    {
+      "start": 1375.36,
+      "duration": 4.88,
+      "text": "so why do we use automated testing we"
+    },
+    {
+      "start": 1377.799,
+      "duration": 4.321,
+      "text": "use automated t tting to validate if the"
+    },
+    {
+      "start": 1380.24,
+      "duration": 4.039,
+      "text": "syntax is correct or if there are any"
+    },
+    {
+      "start": 1382.12,
+      "duration": 4.0,
+      "text": "infrastructure changes to validate if"
+    },
+    {
+      "start": 1384.279,
+      "duration": 3.961,
+      "text": "the syntax is correct to detect issues"
+    },
+    {
+      "start": 1386.12,
+      "duration": 4.72,
+      "text": "earlier and also to ensure the desired"
+    },
+    {
+      "start": 1388.24,
+      "duration": 5.319,
+      "text": "State matches the actual State uh this"
+    },
+    {
+      "start": 1390.84,
+      "duration": 4.6,
+      "text": "involves creating text fixtures test"
+    },
+    {
+      "start": 1393.559,
+      "duration": 3.401,
+      "text": "fixtures defining test scenarios"
+    },
+    {
+      "start": 1395.44,
+      "duration": 4.04,
+      "text": "executing terraform operations and all"
+    },
+    {
+      "start": 1396.96,
+      "duration": 4.28,
+      "text": "this so different tools that are used"
+    },
+    {
+      "start": 1399.48,
+      "duration": 4.0,
+      "text": "for unit testing you can use terraform"
+    },
+    {
+      "start": 1401.24,
+      "duration": 3.64,
+      "text": "Terra compliance or Terra test for"
+    },
+    {
+      "start": 1403.48,
+      "duration": 3.319,
+      "text": "integration testing you can use Terra"
+    },
+    {
+      "start": 1404.88,
+      "duration": 4.72,
+      "text": "Test Kitchen terraform for linting you"
+    },
+    {
+      "start": 1406.799,
+      "duration": 5.601,
+      "text": "can use TF lint or check off and then"
+    },
+    {
+      "start": 1409.6,
+      "duration": 5.199,
+      "text": "other tools as well for static analysis"
+    },
+    {
+      "start": 1412.4,
+      "duration": 5.48,
+      "text": "for mocking for everything else here is"
+    },
+    {
+      "start": 1414.799,
+      "duration": 5.441,
+      "text": "another great block on medium uh for"
+    },
+    {
+      "start": 1417.88,
+      "duration": 4.48,
+      "text": "testing on terraform so you can go and"
+    },
+    {
+      "start": 1420.24,
+      "duration": 4.4,
+      "text": "check it out if you want to know how to"
+    },
+    {
+      "start": 1422.36,
+      "duration": 4.799,
+      "text": "enable automated"
+    },
+    {
+      "start": 1424.64,
+      "duration": 4.48,
+      "text": "testing moving on the last question we"
+    },
+    {
+      "start": 1427.159,
+      "duration": 3.4,
+      "text": "have is you are tasked with migrating"
+    },
+    {
+      "start": 1429.12,
+      "duration": 4.76,
+      "text": "your existing infrastructure from"
+    },
+    {
+      "start": 1430.559,
+      "duration": 5.401,
+      "text": "terraform version 1.7 to version 1.8"
+    },
+    {
+      "start": 1433.88,
+      "duration": 4.039,
+      "text": "which is the latest version as of now so"
+    },
+    {
+      "start": 1435.96,
+      "duration": 4.079,
+      "text": "what kind of considerations would you"
+    },
+    {
+      "start": 1437.919,
+      "duration": 4.481,
+      "text": "take so whenever you are tasked with"
+    },
+    {
+      "start": 1440.039,
+      "duration": 3.88,
+      "text": "migration how would you do the migration"
+    },
+    {
+      "start": 1442.4,
+      "duration": 3.519,
+      "text": "from a particular version to another"
+    },
+    {
+      "start": 1443.919,
+      "duration": 3.481,
+      "text": "version so whenever upgrading a"
+    },
+    {
+      "start": 1445.919,
+      "duration": 3.681,
+      "text": "terraform version from a particular"
+    },
+    {
+      "start": 1447.4,
+      "duration": 3.759,
+      "text": "version to another version always the"
+    },
+    {
+      "start": 1449.6,
+      "duration": 3.199,
+      "text": "first step is to always review the"
+    },
+    {
+      "start": 1451.159,
+      "duration": 3.0,
+      "text": "upgrade guide whenever terraform"
+    },
+    {
+      "start": 1452.799,
+      "duration": 3.441,
+      "text": "releases a new version there is always"
+    },
+    {
+      "start": 1454.159,
+      "duration": 4.961,
+      "text": "going to be a documentation similar to"
+    },
+    {
+      "start": 1456.24,
+      "duration": 4.72,
+      "text": "this so you can see you can find how you"
+    },
+    {
+      "start": 1459.12,
+      "duration": 4.439,
+      "text": "can upgrade a terraform to a particular"
+    },
+    {
+      "start": 1460.96,
+      "duration": 5.52,
+      "text": "version which is version 1.8 the latest"
+    },
+    {
+      "start": 1463.559,
+      "duration": 4.441,
+      "text": "one as of now so first step is to review"
+    },
+    {
+      "start": 1466.48,
+      "duration": 4.12,
+      "text": "upgrade guide to understand what changes"
+    },
+    {
+      "start": 1468.0,
+      "duration": 4.84,
+      "text": "are there what what has been deprecated"
+    },
+    {
+      "start": 1470.6,
+      "duration": 3.72,
+      "text": "and then new features once you do that"
+    },
+    {
+      "start": 1472.84,
+      "duration": 3.68,
+      "text": "you will then update your configuration"
+    },
+    {
+      "start": 1474.32,
+      "duration": 4.239,
+      "text": "files according to the changes of the"
+    },
+    {
+      "start": 1476.52,
+      "duration": 5.399,
+      "text": "new syntax and to handle deprecated"
+    },
+    {
+      "start": 1478.559,
+      "duration": 4.761,
+      "text": "features as well ensure thorough testing"
+    },
+    {
+      "start": 1481.919,
+      "duration": 3.12,
+      "text": "monitor after you make the change"
+    },
+    {
+      "start": 1483.32,
+      "duration": 3.76,
+      "text": "monitor if everything is working fine"
+    },
+    {
+      "start": 1485.039,
+      "duration": 4.12,
+      "text": "always check on the nonpr environments"
+    },
+    {
+      "start": 1487.08,
+      "duration": 4.56,
+      "text": "before you shift to the prod environment"
+    },
+    {
+      "start": 1489.159,
+      "duration": 4.24,
+      "text": "obviously and then document any changes"
+    },
+    {
+      "start": 1491.64,
+      "duration": 3.8,
+      "text": "and also provide training to your Terra"
+    },
+    {
+      "start": 1493.399,
+      "duration": 3.241,
+      "text": "to your team members this this is how"
+    },
+    {
+      "start": 1495.44,
+      "duration": 3.32,
+      "text": "you should be upgrading a terraform"
+    },
+    {
+      "start": 1496.64,
+      "duration": 4.039,
+      "text": "version from one version to another so"
+    },
+    {
+      "start": 1498.76,
+      "duration": 3.279,
+      "text": "now in this video we have now covered a"
+    },
+    {
+      "start": 1500.679,
+      "duration": 2.88,
+      "text": "very important terraform interview"
+    },
+    {
+      "start": 1502.039,
+      "duration": 3.401,
+      "text": "questions I hope this video was"
+    },
+    {
+      "start": 1503.559,
+      "duration": 3.72,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 1505.44,
+      "duration": 3.88,
+      "text": "any doubt do let me know in the comment"
+    },
+    {
+      "start": 1507.279,
+      "duration": 4.52,
+      "text": "section also comment down if you want me"
+    },
+    {
+      "start": 1509.32,
+      "duration": 5.04,
+      "text": "to share this document with you and also"
+    },
+    {
+      "start": 1511.799,
+      "duration": 3.681,
+      "text": "comment down what should we cover next"
+    },
+    {
+      "start": 1514.36,
+      "duration": 3.559,
+      "text": "should we"
+    },
+    {
+      "start": 1515.48,
+      "duration": 4.12,
+      "text": "cover Docker interview questions or"
+    },
+    {
+      "start": 1517.919,
+      "duration": 3.081,
+      "text": "kubernetes interview question let me"
+    },
+    {
+      "start": 1519.6,
+      "duration": 3.319,
+      "text": "know in the com let me know in the"
+    },
+    {
+      "start": 1521.0,
+      "duration": 5.12,
+      "text": "comment section thank you and have a"
+    },
+    {
+      "start": 1522.919,
+      "duration": 3.201,
+      "text": "good day"
+    }
+  ]
+}

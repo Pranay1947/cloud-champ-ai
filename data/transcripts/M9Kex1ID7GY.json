@@ -1,0 +1,2416 @@
+{
+  "video": {
+    "id": "M9Kex1ID7GY",
+    "title": "Networking Fundamentals for DevOps Engineers | DevOps Networking",
+    "url": "https://www.youtube.com/watch?v=M9Kex1ID7GY",
+    "duration": 1090,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.199,
+      "duration": 5.201,
+      "text": "networking is really important for you"
+    },
+    {
+      "start": 2.8,
+      "duration": 4.8,
+      "text": "to know as a devops engineer you will be"
+    },
+    {
+      "start": 5.4,
+      "duration": 4.76,
+      "text": "working and creating systems that should"
+    },
+    {
+      "start": 7.6,
+      "duration": 5.079,
+      "text": "be secured should be scalable with low"
+    },
+    {
+      "start": 10.16,
+      "duration": 5.16,
+      "text": "latency and you can do all of this only"
+    },
+    {
+      "start": 12.679,
+      "duration": 4.401,
+      "text": "through networking so in this video I'm"
+    },
+    {
+      "start": 15.32,
+      "duration": 4.24,
+      "text": "going to explain all the important"
+    },
+    {
+      "start": 17.08,
+      "duration": 4.959,
+      "text": "networking Concepts you should know as a"
+    },
+    {
+      "start": 19.56,
+      "duration": 4.039,
+      "text": "devops engineer not just this I'm also"
+    },
+    {
+      "start": 22.039,
+      "duration": 3.841,
+      "text": "going to share some learning resources"
+    },
+    {
+      "start": 23.599,
+      "duration": 4.68,
+      "text": "to help you cleared your Concepts so"
+    },
+    {
+      "start": 25.88,
+      "duration": 4.28,
+      "text": "without wasting any time let's start"
+    },
+    {
+      "start": 28.279,
+      "duration": 4.681,
+      "text": "with learning networking for called"
+    },
+    {
+      "start": 30.16,
+      "duration": 4.48,
+      "text": "devops engus all right so I'm here on my"
+    },
+    {
+      "start": 32.96,
+      "duration": 3.96,
+      "text": "screen and I have a notion document"
+    },
+    {
+      "start": 34.64,
+      "duration": 4.599,
+      "text": "created with all networking Concepts"
+    },
+    {
+      "start": 36.92,
+      "duration": 4.799,
+      "text": "that every devops engineer should know"
+    },
+    {
+      "start": 39.239,
+      "duration": 4.281,
+      "text": "along with some learning resources so if"
+    },
+    {
+      "start": 41.719,
+      "duration": 3.761,
+      "text": "you want me to share this document do"
+    },
+    {
+      "start": 43.52,
+      "duration": 3.92,
+      "text": "let me know in the comment section if"
+    },
+    {
+      "start": 45.48,
+      "duration": 4.599,
+      "text": "most of you want it I will share this as"
+    },
+    {
+      "start": 47.44,
+      "duration": 4.48,
+      "text": "a PDF on LinkedIn so without wasting any"
+    },
+    {
+      "start": 50.079,
+      "duration": 3.561,
+      "text": "time let's start with networking"
+    },
+    {
+      "start": 51.92,
+      "duration": 4.88,
+      "text": "Concepts that every devops engineer"
+    },
+    {
+      "start": 53.64,
+      "duration": 4.84,
+      "text": "should know starting with OSI model the"
+    },
+    {
+      "start": 56.8,
+      "duration": 3.399,
+      "text": "First Fundamental networking concept"
+    },
+    {
+      "start": 58.48,
+      "duration": 4.0,
+      "text": "that every devops engineer should know"
+    },
+    {
+      "start": 60.199,
+      "duration": 4.121,
+      "text": "is the OSI model and if you are a"
+    },
+    {
+      "start": 62.48,
+      "duration": 4.48,
+      "text": "computer sized student I'm pretty sure"
+    },
+    {
+      "start": 64.32,
+      "duration": 4.52,
+      "text": "you have heard about the OSI or Open"
+    },
+    {
+      "start": 66.96,
+      "duration": 4.0,
+      "text": "System interconnection model which is a"
+    },
+    {
+      "start": 68.84,
+      "duration": 4.2,
+      "text": "set of standards that defines how"
+    },
+    {
+      "start": 70.96,
+      "duration": 4.92,
+      "text": "different computer systems communicate"
+    },
+    {
+      "start": 73.04,
+      "duration": 4.52,
+      "text": "over a network in this OSI model the"
+    },
+    {
+      "start": 75.88,
+      "duration": 3.919,
+      "text": "data that is flowed all the information"
+    },
+    {
+      "start": 77.56,
+      "duration": 4.04,
+      "text": "transferred is broken down into seven"
+    },
+    {
+      "start": 79.799,
+      "duration": 3.521,
+      "text": "different layers starting from physical"
+    },
+    {
+      "start": 81.6,
+      "duration": 3.28,
+      "text": "layer to data link layer to network"
+    },
+    {
+      "start": 83.32,
+      "duration": 3.4,
+      "text": "layer to transport layer session layer"
+    },
+    {
+      "start": 84.88,
+      "duration": 4.12,
+      "text": "presentation and lastly as an"
+    },
+    {
+      "start": 86.72,
+      "duration": 4.32,
+      "text": "application layer to the end user so it"
+    },
+    {
+      "start": 89.0,
+      "duration": 3.68,
+      "text": "starts from physical layer or the"
+    },
+    {
+      "start": 91.04,
+      "duration": 4.2,
+      "text": "physical connection which is the layer"
+    },
+    {
+      "start": 92.68,
+      "duration": 5.64,
+      "text": "one to end user Services which is layer"
+    },
+    {
+      "start": 95.24,
+      "duration": 5.239,
+      "text": "seven and each layer has its own"
+    },
+    {
+      "start": 98.32,
+      "duration": 4.32,
+      "text": "specific role in managing aspects like"
+    },
+    {
+      "start": 100.479,
+      "duration": 4.081,
+      "text": "Hardware addressing routing and"
+    },
+    {
+      "start": 102.64,
+      "duration": 3.56,
+      "text": "application Level interactions so you"
+    },
+    {
+      "start": 104.56,
+      "duration": 3.559,
+      "text": "can read about this here in this"
+    },
+    {
+      "start": 106.2,
+      "duration": 5.04,
+      "text": "Learning Resource which has information"
+    },
+    {
+      "start": 108.119,
+      "duration": 5.081,
+      "text": "about each layer so you can read about"
+    },
+    {
+      "start": 111.24,
+      "duration": 4.0,
+      "text": "it here the physical layer what it does"
+    },
+    {
+      "start": 113.2,
+      "duration": 4.4,
+      "text": "what does the datering layer does and"
+    },
+    {
+      "start": 115.24,
+      "duration": 4.08,
+      "text": "similarly for the other layers to"
+    },
+    {
+      "start": 117.6,
+      "duration": 3.64,
+      "text": "understand different layers in"
+    },
+    {
+      "start": 119.32,
+      "duration": 3.479,
+      "text": "networking this is very important for"
+    },
+    {
+      "start": 121.24,
+      "duration": 3.199,
+      "text": "devops engineer to know because you will"
+    },
+    {
+      "start": 122.799,
+      "duration": 3.201,
+      "text": "be able to understand and troubleshoot"
+    },
+    {
+      "start": 124.439,
+      "duration": 4.88,
+      "text": "Network processes only when you have"
+    },
+    {
+      "start": 126.0,
+      "duration": 5.239,
+      "text": "your ideas cleared about OSI model but"
+    },
+    {
+      "start": 129.319,
+      "duration": 3.56,
+      "text": "there is still a problem this OSI model"
+    },
+    {
+      "start": 131.239,
+      "duration": 3.481,
+      "text": "is great to understand how data is"
+    },
+    {
+      "start": 132.879,
+      "duration": 3.561,
+      "text": "flowed or to have a theoretical"
+    },
+    {
+      "start": 134.72,
+      "duration": 4.4,
+      "text": "understanding of network but it's very"
+    },
+    {
+      "start": 136.44,
+      "duration": 6.32,
+      "text": "challenging to use in practice this is"
+    },
+    {
+      "start": 139.12,
+      "duration": 6.16,
+      "text": "why we use PCP IP model in which the"
+    },
+    {
+      "start": 142.76,
+      "duration": 4.4,
+      "text": "three top layers of OI model are"
+    },
+    {
+      "start": 145.28,
+      "duration": 3.36,
+      "text": "combined into one layer which is the"
+    },
+    {
+      "start": 147.16,
+      "duration": 3.28,
+      "text": "application layer and these two"
+    },
+    {
+      "start": 148.64,
+      "duration": 4.8,
+      "text": "bottommost layer which data link and"
+    },
+    {
+      "start": 150.44,
+      "duration": 5.4,
+      "text": "physical layer are network access in TCP"
+    },
+    {
+      "start": 153.44,
+      "duration": 5.799,
+      "text": "IP layer so now instead of having seven"
+    },
+    {
+      "start": 155.84,
+      "duration": 5.8,
+      "text": "layers we have four layers in TCP I"
+    },
+    {
+      "start": 159.239,
+      "duration": 3.881,
+      "text": "model and it's quite easy to practice"
+    },
+    {
+      "start": 161.64,
+      "duration": 4.16,
+      "text": "and as a devops engineer you should also"
+    },
+    {
+      "start": 163.12,
+      "duration": 4.28,
+      "text": "know TCP IP model to troubleshoot some"
+    },
+    {
+      "start": 165.8,
+      "duration": 4.359,
+      "text": "networking issues because we are using"
+    },
+    {
+      "start": 167.4,
+      "duration": 4.8,
+      "text": "this but OSI is great to understand how"
+    },
+    {
+      "start": 170.159,
+      "duration": 4.561,
+      "text": "is a data transferred or are different"
+    },
+    {
+      "start": 172.2,
+      "duration": 4.0,
+      "text": "things happening in the back end now"
+    },
+    {
+      "start": 174.72,
+      "duration": 4.439,
+      "text": "most of you might have a question what"
+    },
+    {
+      "start": 176.2,
+      "duration": 5.319,
+      "text": "is TCP what is IP so TCP stands for"
+    },
+    {
+      "start": 179.159,
+      "duration": 4.561,
+      "text": "transmation control protocol and IP"
+    },
+    {
+      "start": 181.519,
+      "duration": 4.241,
+      "text": "stands for Internet Protocol and as a"
+    },
+    {
+      "start": 183.72,
+      "duration": 4.599,
+      "text": "devops engineer it is very important for"
+    },
+    {
+      "start": 185.76,
+      "duration": 5.24,
+      "text": "you to understand protocols so what are"
+    },
+    {
+      "start": 188.319,
+      "duration": 5.441,
+      "text": "protocols a protocol is a set of rules"
+    },
+    {
+      "start": 191.0,
+      "duration": 5.2,
+      "text": "that defines how data is transmitted and"
+    },
+    {
+      "start": 193.76,
+      "duration": 4.559,
+      "text": "received between devices in the network"
+    },
+    {
+      "start": 196.2,
+      "duration": 5.36,
+      "text": "for example I am reading this from an"
+    },
+    {
+      "start": 198.319,
+      "duration": 6.521,
+      "text": "ocean block on my browser which is using"
+    },
+    {
+      "start": 201.56,
+      "duration": 5.56,
+      "text": "https protocol it is https because it"
+    },
+    {
+      "start": 204.84,
+      "duration": 5.599,
+      "text": "has SSL certificate or else it might be"
+    },
+    {
+      "start": 207.12,
+      "duration": 5.52,
+      "text": "HTTP so HTTP and https web browser"
+    },
+    {
+      "start": 210.439,
+      "duration": 5.641,
+      "text": "protocols similarly if you send a mail"
+    },
+    {
+      "start": 212.64,
+      "duration": 5.239,
+      "text": "to your friend it uses SMTP protocol so"
+    },
+    {
+      "start": 216.08,
+      "duration": 3.879,
+      "text": "protocol is a set of rules that Define"
+    },
+    {
+      "start": 217.879,
+      "duration": 4.041,
+      "text": "how data is transmitted and received"
+    },
+    {
+      "start": 219.959,
+      "duration": 4.92,
+      "text": "between different devices the two main"
+    },
+    {
+      "start": 221.92,
+      "duration": 5.08,
+      "text": "Protocols are TCP and UDP TCP"
+    },
+    {
+      "start": 224.879,
+      "duration": 4.44,
+      "text": "transmission control protocol and UDP"
+    },
+    {
+      "start": 227.0,
+      "duration": 4.68,
+      "text": "user datagram protocol these two"
+    },
+    {
+      "start": 229.319,
+      "duration": 4.92,
+      "text": "protocols Define how the data should be"
+    },
+    {
+      "start": 231.68,
+      "duration": 4.72,
+      "text": "transferred and these two work on the"
+    },
+    {
+      "start": 234.239,
+      "duration": 4.161,
+      "text": "fourth layer which is a transport layer"
+    },
+    {
+      "start": 236.4,
+      "duration": 3.64,
+      "text": "so if you read here it says transmits"
+    },
+    {
+      "start": 238.4,
+      "duration": 4.399,
+      "text": "data using transmission protocols"
+    },
+    {
+      "start": 240.04,
+      "duration": 6.279,
+      "text": "including TCP and UDP so let's read"
+    },
+    {
+      "start": 242.799,
+      "duration": 5.44,
+      "text": "about them so TCP as we know stands for"
+    },
+    {
+      "start": 246.319,
+      "duration": 3.84,
+      "text": "transmission control protocol and it"
+    },
+    {
+      "start": 248.239,
+      "duration": 3.28,
+      "text": "operates at the transport layer it"
+    },
+    {
+      "start": 250.159,
+      "duration": 3.8,
+      "text": "establishes connection between two"
+    },
+    {
+      "start": 251.519,
+      "duration": 5.361,
+      "text": "devices before data exchanges and it"
+    },
+    {
+      "start": 253.959,
+      "duration": 5.761,
+      "text": "ensures reliable and ordered delivery of"
+    },
+    {
+      "start": 256.88,
+      "duration": 4.68,
+      "text": "information so it will First Connect and"
+    },
+    {
+      "start": 259.72,
+      "duration": 3.6,
+      "text": "the connection is initiated only then"
+    },
+    {
+      "start": 261.56,
+      "duration": 3.88,
+      "text": "the data should be transferred so it"
+    },
+    {
+      "start": 263.32,
+      "duration": 3.879,
+      "text": "breaks data into packages assign sequin"
+    },
+    {
+      "start": 265.44,
+      "duration": 4.72,
+      "text": "numbers and uses acknowledgement"
+    },
+    {
+      "start": 267.199,
+      "duration": 4.84,
+      "text": "messages to guarantee delivery"
+    },
+    {
+      "start": 270.16,
+      "duration": 3.68,
+      "text": "it is connection oriented meaning it"
+    },
+    {
+      "start": 272.039,
+      "duration": 4.401,
+      "text": "sets up maintains and terminates a"
+    },
+    {
+      "start": 273.84,
+      "duration": 4.52,
+      "text": "connection for data exchange so remember"
+    },
+    {
+      "start": 276.44,
+      "duration": 4.36,
+      "text": "connection oriented TCP will first"
+    },
+    {
+      "start": 278.36,
+      "duration": 4.04,
+      "text": "initiate a connection and only send the"
+    },
+    {
+      "start": 280.8,
+      "duration": 4.44,
+      "text": "data after the connection has been set"
+    },
+    {
+      "start": 282.4,
+      "duration": 5.12,
+      "text": "up and it will guarantee delivery next"
+    },
+    {
+      "start": 285.24,
+      "duration": 4.88,
+      "text": "is UDP which is user datagram protocol"
+    },
+    {
+      "start": 287.52,
+      "duration": 4.28,
+      "text": "and it also operates on layer 4 as TCP"
+    },
+    {
+      "start": 290.12,
+      "duration": 4.04,
+      "text": "which is a transport layer and it is"
+    },
+    {
+      "start": 291.8,
+      "duration": 4.119,
+      "text": "connectionless protocol so it's like"
+    },
+    {
+      "start": 294.16,
+      "duration": 3.2,
+      "text": "fire and forget it will send the data"
+    },
+    {
+      "start": 295.919,
+      "duration": 3.12,
+      "text": "but does not care if the data is"
+    },
+    {
+      "start": 297.36,
+      "duration": 4.36,
+      "text": "transferred or if the data has received"
+    },
+    {
+      "start": 299.039,
+      "duration": 4.401,
+      "text": "completely or not so it sells data"
+    },
+    {
+      "start": 301.72,
+      "duration": 4.08,
+      "text": "without establishing a connection"
+    },
+    {
+      "start": 303.44,
+      "duration": 4.24,
+      "text": "providing low latency communication"
+    },
+    {
+      "start": 305.8,
+      "duration": 3.679,
+      "text": "however it doesn't guarantee delivery or"
+    },
+    {
+      "start": 307.68,
+      "duration": 3.6,
+      "text": "order making it suitable for realtime"
+    },
+    {
+      "start": 309.479,
+      "duration": 4.041,
+      "text": "applications like video streaming or"
+    },
+    {
+      "start": 311.28,
+      "duration": 3.96,
+      "text": "online gaming so remember whenever you"
+    },
+    {
+      "start": 313.52,
+      "duration": 3.48,
+      "text": "have an application where the data is"
+    },
+    {
+      "start": 315.24,
+      "duration": 4.239,
+      "text": "very critical and has to be transferred"
+    },
+    {
+      "start": 317.0,
+      "duration": 4.6,
+      "text": "in ordered manner you will be using TCP"
+    },
+    {
+      "start": 319.479,
+      "duration": 4.681,
+      "text": "some examples could be be web browsing"
+    },
+    {
+      "start": 321.6,
+      "duration": 3.879,
+      "text": "email database connections and on the"
+    },
+    {
+      "start": 324.16,
+      "duration": 2.879,
+      "text": "other hand if the data is not so"
+    },
+    {
+      "start": 325.479,
+      "duration": 4.081,
+      "text": "critical and you can handle some data"
+    },
+    {
+      "start": 327.039,
+      "duration": 5.28,
+      "text": "loss you could use UDP which can be"
+    },
+    {
+      "start": 329.56,
+      "duration": 5.199,
+      "text": "running on low latency as well some"
+    },
+    {
+      "start": 332.319,
+      "duration": 5.44,
+      "text": "examples could be online gaming or video"
+    },
+    {
+      "start": 334.759,
+      "duration": 5.28,
+      "text": "calls Etc and I also have an example"
+    },
+    {
+      "start": 337.759,
+      "duration": 4.481,
+      "text": "here so TCP as we all know is connection"
+    },
+    {
+      "start": 340.039,
+      "duration": 3.921,
+      "text": "oriented it is connectionless slow fast"
+    },
+    {
+      "start": 342.24,
+      "duration": 3.44,
+      "text": "reporting errors non- reporting errors"
+    },
+    {
+      "start": 343.96,
+      "duration": 3.16,
+      "text": "and this image here defines that this"
+    },
+    {
+      "start": 345.68,
+      "duration": 3.079,
+      "text": "girl is drinking your water which is"
+    },
+    {
+      "start": 347.12,
+      "duration": 4.04,
+      "text": "going directly in the mouth this is why"
+    },
+    {
+      "start": 348.759,
+      "duration": 4.0,
+      "text": "it is TCP whereas UDP here she's"
+    },
+    {
+      "start": 351.16,
+      "duration": 4.08,
+      "text": "drinking the water but it does not go in"
+    },
+    {
+      "start": 352.759,
+      "duration": 4.601,
+      "text": "the mouth which means it's UDP and if"
+    },
+    {
+      "start": 355.24,
+      "duration": 5.44,
+      "text": "you don't get this joke you might be UDP"
+    },
+    {
+      "start": 357.36,
+      "duration": 5.24,
+      "text": "as well another kind of protoc is IP or"
+    },
+    {
+      "start": 360.68,
+      "duration": 4.2,
+      "text": "Internet Protocol which works on layer"
+    },
+    {
+      "start": 362.6,
+      "duration": 4.319,
+      "text": "three the network layer and it handles"
+    },
+    {
+      "start": 364.88,
+      "duration": 4.4,
+      "text": "addressing and routing to ensure the"
+    },
+    {
+      "start": 366.919,
+      "duration": 4.521,
+      "text": "data packets or information should read"
+    },
+    {
+      "start": 369.28,
+      "duration": 4.039,
+      "text": "their intendent destinations the"
+    },
+    {
+      "start": 371.44,
+      "duration": 4.479,
+      "text": "function of this IP or Internet Protocol"
+    },
+    {
+      "start": 373.319,
+      "duration": 4.561,
+      "text": "is to assign IP addresses to the devices"
+    },
+    {
+      "start": 375.919,
+      "duration": 4.12,
+      "text": "and uses routing table to direct data"
+    },
+    {
+      "start": 377.88,
+      "duration": 4.4,
+      "text": "across networks so we all know that"
+    },
+    {
+      "start": 380.039,
+      "duration": 3.841,
+      "text": "every computer has its own IP addresses"
+    },
+    {
+      "start": 382.28,
+      "duration": 3.24,
+      "text": "and we share information through IP"
+    },
+    {
+      "start": 383.88,
+      "duration": 3.599,
+      "text": "addresses and this is done using"
+    },
+    {
+      "start": 385.52,
+      "duration": 4.48,
+      "text": "Internet Protocol to learn more about"
+    },
+    {
+      "start": 387.479,
+      "duration": 4.481,
+      "text": "TCP UDP or IP you can go through"
+    },
+    {
+      "start": 390.0,
+      "duration": 4.199,
+      "text": "a Learning Resource and if you want me"
+    },
+    {
+      "start": 391.96,
+      "duration": 4.56,
+      "text": "to share this document do let me know in"
+    },
+    {
+      "start": 394.199,
+      "duration": 3.84,
+      "text": "the comment section next networking"
+    },
+    {
+      "start": 396.52,
+      "duration": 4.36,
+      "text": "concept that every devop engineer should"
+    },
+    {
+      "start": 398.039,
+      "duration": 4.72,
+      "text": "know is ports so ports are communication"
+    },
+    {
+      "start": 400.88,
+      "duration": 4.4,
+      "text": "endpoints that allow different services"
+    },
+    {
+      "start": 402.759,
+      "duration": 4.641,
+      "text": "or a device to send and receive data for"
+    },
+    {
+      "start": 405.28,
+      "duration": 3.88,
+      "text": "example we know https is a protocol that"
+    },
+    {
+      "start": 407.4,
+      "duration": 4.32,
+      "text": "is used to access web pages on the"
+    },
+    {
+      "start": 409.16,
+      "duration": 5.319,
+      "text": "browser and https is a protocol but it"
+    },
+    {
+      "start": 411.72,
+      "duration": 4.08,
+      "text": "has a port number which is 443 similarly"
+    },
+    {
+      "start": 414.479,
+      "duration": 3.361,
+      "text": "we have done many projects on this"
+    },
+    {
+      "start": 415.8,
+      "duration": 3.959,
+      "text": "channel and we use different ports for"
+    },
+    {
+      "start": 417.84,
+      "duration": 4.759,
+      "text": "different Services we all know Jenkins"
+    },
+    {
+      "start": 419.759,
+      "duration": 7.041,
+      "text": "run on port 8080 whereas MySQL runs on"
+    },
+    {
+      "start": 422.599,
+      "duration": 7.201,
+      "text": "Port 3306 MB runs on 27017 and similarly"
+    },
+    {
+      "start": 426.8,
+      "duration": 6.839,
+      "text": "other services or other protocols run on"
+    },
+    {
+      "start": 429.8,
+      "duration": 7.48,
+      "text": "specific port number SSH runs on Port 22"
+    },
+    {
+      "start": 433.639,
+      "duration": 6.12,
+      "text": "similarly DNS runs on 53 HTTP while Z on"
+    },
+    {
+      "start": 437.28,
+      "duration": 4.16,
+      "text": "80 so a doops engineer should know about"
+    },
+    {
+      "start": 439.759,
+      "duration": 3.801,
+      "text": "vots because they are important in"
+    },
+    {
+      "start": 441.44,
+      "duration": 4.24,
+      "text": "configuring networking settings defining"
+    },
+    {
+      "start": 443.56,
+      "duration": 4.44,
+      "text": "rules for firewalls managing container"
+    },
+    {
+      "start": 445.68,
+      "duration": 4.239,
+      "text": "communication orchestrating services and"
+    },
+    {
+      "start": 448.0,
+      "duration": 3.639,
+      "text": "troubleshooting network issues you don't"
+    },
+    {
+      "start": 449.919,
+      "duration": 3.761,
+      "text": "have to remember all the numbers but you"
+    },
+    {
+      "start": 451.639,
+      "duration": 3.12,
+      "text": "still have to know the most common ones"
+    },
+    {
+      "start": 453.68,
+      "duration": 3.4,
+      "text": "where and if you're not sure you can"
+    },
+    {
+      "start": 454.759,
+      "duration": 4.401,
+      "text": "always serve the internet so port number"
+    },
+    {
+      "start": 457.08,
+      "duration": 4.32,
+      "text": "are communication endpoints for a"
+    },
+    {
+      "start": 459.16,
+      "duration": 4.439,
+      "text": "particular service or a protocol and you"
+    },
+    {
+      "start": 461.4,
+      "duration": 5.44,
+      "text": "can read more about it here on this"
+    },
+    {
+      "start": 463.599,
+      "duration": 5.801,
+      "text": "Learning Resource which is in the"
+    },
+    {
+      "start": 466.84,
+      "duration": 4.6,
+      "text": "document next very important networking"
+    },
+    {
+      "start": 469.4,
+      "duration": 4.639,
+      "text": "topic for devops engineer is IP"
+    },
+    {
+      "start": 471.44,
+      "duration": 4.4,
+      "text": "submitting and side range so this is a"
+    },
+    {
+      "start": 474.039,
+      "duration": 4.88,
+      "text": "process where you divide the used"
+    },
+    {
+      "start": 475.84,
+      "duration": 5.079,
+      "text": "Network into smaller sub networks and we"
+    },
+    {
+      "start": 478.919,
+      "duration": 4.28,
+      "text": "use this a lot when managing networks on"
+    },
+    {
+      "start": 480.919,
+      "duration": 4.28,
+      "text": "the cloud a deop engineer should"
+    },
+    {
+      "start": 483.199,
+      "duration": 4.12,
+      "text": "understand IP addressing subnetting and"
+    },
+    {
+      "start": 485.199,
+      "duration": 3.801,
+      "text": "side notation this knowledge is crucial"
+    },
+    {
+      "start": 487.319,
+      "duration": 4.44,
+      "text": "for Designing and managing IP address"
+    },
+    {
+      "start": 489.0,
+      "duration": 4.919,
+      "text": "spaces effectively for example if I show"
+    },
+    {
+      "start": 491.759,
+      "duration": 3.961,
+      "text": "you I'm here in the AWS dashboard and"
+    },
+    {
+      "start": 493.919,
+      "duration": 3.921,
+      "text": "I'm inside VPC service if I click on"
+    },
+    {
+      "start": 495.72,
+      "duration": 5.479,
+      "text": "create VPC this is the process where I"
+    },
+    {
+      "start": 497.84,
+      "duration": 5.0,
+      "text": "need to allocate the ipv4 side range and"
+    },
+    {
+      "start": 501.199,
+      "duration": 4.56,
+      "text": "you will able to understand or you will"
+    },
+    {
+      "start": 502.84,
+      "duration": 5.359,
+      "text": "be able to assign this IP Ider only when"
+    },
+    {
+      "start": 505.759,
+      "duration": 4.601,
+      "text": "you understand subnetting so subnetting"
+    },
+    {
+      "start": 508.199,
+      "duration": 4.72,
+      "text": "is a technique used in computer network"
+    },
+    {
+      "start": 510.36,
+      "duration": 5.039,
+      "text": "to divide a larger IP network into"
+    },
+    {
+      "start": 512.919,
+      "duration": 4.48,
+      "text": "smaller more manageable sub networks or"
+    },
+    {
+      "start": 515.399,
+      "duration": 4.32,
+      "text": "subnets or you can see this picture here"
+    },
+    {
+      "start": 517.399,
+      "duration": 4.52,
+      "text": "which defines that if you use SL 17 you"
+    },
+    {
+      "start": 519.719,
+      "duration": 5.041,
+      "text": "will have 32 K IP addresses to use"
+    },
+    {
+      "start": 521.919,
+      "duration": 5.641,
+      "text": "similarly if you use SL 18 SL 16 K IPS"
+    },
+    {
+      "start": 524.76,
+      "duration": 4.28,
+      "text": "can be used sl9 will have 8K so when you"
+    },
+    {
+      "start": 527.56,
+      "duration": 3.48,
+      "text": "create side range here let's say"
+    },
+    {
+      "start": 529.04,
+      "duration": 5.359,
+      "text": "10.0.0.0"
+    },
+    {
+      "start": 531.04,
+      "duration": 6.359,
+      "text": "sl17 means you get 32,000 IP addresses"
+    },
+    {
+      "start": 534.399,
+      "duration": 7.521,
+      "text": "to use in this particular Network so CER"
+    },
+    {
+      "start": 537.399,
+      "duration": 7.401,
+      "text": "block size must be 16 /6 and sl28 sl28"
+    },
+    {
+      "start": 541.92,
+      "duration": 4.76,
+      "text": "here means you will least a 16 IP"
+    },
+    {
+      "start": 544.8,
+      "duration": 4.24,
+      "text": "addresses and I have explained this very"
+    },
+    {
+      "start": 546.68,
+      "duration": 4.44,
+      "text": "easily in this YouTube video so you can"
+    },
+    {
+      "start": 549.04,
+      "duration": 4.799,
+      "text": "go check it out understand IP subnetting"
+    },
+    {
+      "start": 551.12,
+      "duration": 4.12,
+      "text": "and side arrange now answer of this how"
+    },
+    {
+      "start": 553.839,
+      "duration": 4.0,
+      "text": "do you think an information is"
+    },
+    {
+      "start": 555.24,
+      "duration": 5.4,
+      "text": "transferred from one place to another on"
+    },
+    {
+      "start": 557.839,
+      "duration": 5.12,
+      "text": "the internet through routing so routing"
+    },
+    {
+      "start": 560.64,
+      "duration": 4.68,
+      "text": "is a process of directing data packets"
+    },
+    {
+      "start": 562.959,
+      "duration": 5.201,
+      "text": "from a source to destination across a"
+    },
+    {
+      "start": 565.32,
+      "duration": 5.639,
+      "text": "network and routers uses routing tables"
+    },
+    {
+      "start": 568.16,
+      "duration": 4.88,
+      "text": "and protocols to side the bath for data"
+    },
+    {
+      "start": 570.959,
+      "duration": 4.201,
+      "text": "transmission ensuring efficient and"
+    },
+    {
+      "start": 573.04,
+      "duration": 3.56,
+      "text": "reliable communication between devices"
+    },
+    {
+      "start": 575.16,
+      "duration": 3.44,
+      "text": "so you can see your routers are using"
+    },
+    {
+      "start": 576.6,
+      "duration": 4.04,
+      "text": "routing tables and and it defines where"
+    },
+    {
+      "start": 578.6,
+      "duration": 4.6,
+      "text": "should the data be transferred from one"
+    },
+    {
+      "start": 580.64,
+      "duration": 4.24,
+      "text": "source to another and there's a diagram"
+    },
+    {
+      "start": 583.2,
+      "duration": 3.879,
+      "text": "here where you have computer a and the"
+    },
+    {
+      "start": 584.88,
+      "duration": 4.36,
+      "text": "router is defining how should the data"
+    },
+    {
+      "start": 587.079,
+      "duration": 4.2,
+      "text": "be transferred to computer B using"
+    },
+    {
+      "start": 589.24,
+      "duration": 4.08,
+      "text": "different networks if I show you this in"
+    },
+    {
+      "start": 591.279,
+      "duration": 5.361,
+      "text": "the cloud let's go back to our AWS"
+    },
+    {
+      "start": 593.32,
+      "duration": 5.88,
+      "text": "dashboard in our AWS inside VPC we have"
+    },
+    {
+      "start": 596.64,
+      "duration": 4.439,
+      "text": "something known as route tables in this"
+    },
+    {
+      "start": 599.2,
+      "duration": 4.0,
+      "text": "route tables would Define where should"
+    },
+    {
+      "start": 601.079,
+      "duration": 3.681,
+      "text": "the data go so if you look at this"
+    },
+    {
+      "start": 603.2,
+      "duration": 4.68,
+      "text": "particular route table which is RDS"
+    },
+    {
+      "start": 604.76,
+      "duration": 5.759,
+      "text": "private route table I have routes"
+    },
+    {
+      "start": 607.88,
+      "duration": 5.48,
+      "text": "created which is saying this particular"
+    },
+    {
+      "start": 610.519,
+      "duration": 5.241,
+      "text": "range should have a target of local but"
+    },
+    {
+      "start": 613.36,
+      "duration": 4.32,
+      "text": "I can create more routes to it and I can"
+    },
+    {
+      "start": 615.76,
+      "duration": 4.6,
+      "text": "click on ADD route option here in this I"
+    },
+    {
+      "start": 617.68,
+      "duration": 5.76,
+      "text": "can Define the uh IP range so let's say"
+    },
+    {
+      "start": 620.36,
+      "duration": 5.56,
+      "text": "all IPS in this particular range should"
+    },
+    {
+      "start": 623.44,
+      "duration": 4.6,
+      "text": "go either to internet gateway or to n"
+    },
+    {
+      "start": 625.92,
+      "duration": 5.52,
+      "text": "Gateway or to Gateway balancer endpoint"
+    },
+    {
+      "start": 628.04,
+      "duration": 5.239,
+      "text": "and this is how you can Define the path"
+    },
+    {
+      "start": 631.44,
+      "duration": 4.76,
+      "text": "where the data should be flowed and this"
+    },
+    {
+      "start": 633.279,
+      "duration": 5.8,
+      "text": "process is called as routing I also have"
+    },
+    {
+      "start": 636.2,
+      "duration": 4.8,
+      "text": "a very nice documentation by AWS which"
+    },
+    {
+      "start": 639.079,
+      "duration": 4.521,
+      "text": "explains what is routing why is it"
+    },
+    {
+      "start": 641.0,
+      "duration": 3.92,
+      "text": "important what is router and also other"
+    },
+    {
+      "start": 643.6,
+      "duration": 3.76,
+      "text": "information on different types of"
+    },
+    {
+      "start": 644.92,
+      "duration": 4.88,
+      "text": "routing so you can go check it out"
+    },
+    {
+      "start": 647.36,
+      "duration": 4.2,
+      "text": "another important concept is DNS and"
+    },
+    {
+      "start": 649.8,
+      "duration": 4.279,
+      "text": "every devops engineer should know what"
+    },
+    {
+      "start": 651.56,
+      "duration": 5.48,
+      "text": "is DNS how DNS Works what are different"
+    },
+    {
+      "start": 654.079,
+      "duration": 5.32,
+      "text": "DNS records so to understand DNS or"
+    },
+    {
+      "start": 657.04,
+      "duration": 3.84,
+      "text": "domain name system translates easy to"
+    },
+    {
+      "start": 659.399,
+      "duration": 3.841,
+      "text": "remember domain names to computer"
+    },
+    {
+      "start": 660.88,
+      "duration": 4.399,
+      "text": "friendly IP addresses but it's not just"
+    },
+    {
+      "start": 663.24,
+      "duration": 3.8,
+      "text": "limited to that you can also help find"
+    },
+    {
+      "start": 665.279,
+      "duration": 3.961,
+      "text": "mail servers balance web traffic among"
+    },
+    {
+      "start": 667.04,
+      "duration": 3.919,
+      "text": "servers youir request perform reverse"
+    },
+    {
+      "start": 669.24,
+      "duration": 4.599,
+      "text": "lookups and speed up responses through"
+    },
+    {
+      "start": 670.959,
+      "duration": 4.361,
+      "text": "caching using DNS for example whenever"
+    },
+    {
+      "start": 673.839,
+      "duration": 3.601,
+      "text": "you buy a domain name which canb"
+    },
+    {
+      "start": 675.32,
+      "duration": 4.84,
+      "text": "website.com it is actually connected to"
+    },
+    {
+      "start": 677.44,
+      "duration": 5.28,
+      "text": "a server's IP address and you as a human"
+    },
+    {
+      "start": 680.16,
+      "duration": 5.76,
+      "text": "do not remember the IP address which is"
+    },
+    {
+      "start": 682.72,
+      "duration": 5.32,
+      "text": "why we use DNS to map our IP addresses"
+    },
+    {
+      "start": 685.92,
+      "duration": 4.28,
+      "text": "with our domain names for example let me"
+    },
+    {
+      "start": 688.04,
+      "duration": 4.039,
+      "text": "show you this is IP address which is"
+    },
+    {
+      "start": 690.2,
+      "duration": 3.8,
+      "text": "actually Google's IP address if I ask"
+    },
+    {
+      "start": 692.079,
+      "duration": 5.2,
+      "text": "you to access google.com you will go"
+    },
+    {
+      "start": 694.0,
+      "duration": 5.72,
+      "text": "ahead and do it by running google.com"
+    },
+    {
+      "start": 697.279,
+      "duration": 4.8,
+      "text": "but I can also do it by IP address and"
+    },
+    {
+      "start": 699.72,
+      "duration": 4.76,
+      "text": "you will not remember this IP address"
+    },
+    {
+      "start": 702.079,
+      "duration": 5.121,
+      "text": "maybe after watching this video so using"
+    },
+    {
+      "start": 704.48,
+      "duration": 4.64,
+      "text": "DNS you can map an IP address with a"
+    },
+    {
+      "start": 707.2,
+      "duration": 3.84,
+      "text": "domain name and it's not just limited to"
+    },
+    {
+      "start": 709.12,
+      "duration": 4.159,
+      "text": "IP to domain you can also do that"
+    },
+    {
+      "start": 711.04,
+      "duration": 4.44,
+      "text": "mapping a domain name to IP V6 address"
+    },
+    {
+      "start": 713.279,
+      "duration": 5.161,
+      "text": "or mapping a domain name to a domain"
+    },
+    {
+      "start": 715.48,
+      "duration": 4.919,
+      "text": "name mapping all subdomains to another"
+    },
+    {
+      "start": 718.44,
+      "duration": 3.639,
+      "text": "domain name and similarly there are"
+    },
+    {
+      "start": 720.399,
+      "duration": 4.721,
+      "text": "other records as well to show you an"
+    },
+    {
+      "start": 722.079,
+      "duration": 5.841,
+      "text": "example in AWS we have a service named"
+    },
+    {
+      "start": 725.12,
+      "duration": 5.12,
+      "text": "as Route 53 which is a DNS service in"
+    },
+    {
+      "start": 727.92,
+      "duration": 4.84,
+      "text": "this I have a hosted Zone created named"
+    },
+    {
+      "start": 730.24,
+      "duration": 4.48,
+      "text": "as my website.com this is my website if"
+    },
+    {
+      "start": 732.76,
+      "duration": 4.28,
+      "text": "I want to create records I can goe click"
+    },
+    {
+      "start": 734.72,
+      "duration": 4.44,
+      "text": "on create records option here in this I"
+    },
+    {
+      "start": 737.04,
+      "duration": 4.12,
+      "text": "can map my domain name to an IP address"
+    },
+    {
+      "start": 739.16,
+      "duration": 3.799,
+      "text": "using a record or I can go ahead and"
+    },
+    {
+      "start": 741.16,
+      "duration": 5.2,
+      "text": "choose different records to do different"
+    },
+    {
+      "start": 742.959,
+      "duration": 6.041,
+      "text": "task as mentioned here in this part so"
+    },
+    {
+      "start": 746.36,
+      "duration": 4.76,
+      "text": "you can translate domain name to IP"
+    },
+    {
+      "start": 749.0,
+      "duration": 4.399,
+      "text": "address find mail servers balance"
+    },
+    {
+      "start": 751.12,
+      "duration": 5.44,
+      "text": "traffic redirect request and a lot more"
+    },
+    {
+      "start": 753.399,
+      "duration": 5.161,
+      "text": "using DNS and this is very very crucial"
+    },
+    {
+      "start": 756.56,
+      "duration": 3.68,
+      "text": "for a devops engineer to know because"
+    },
+    {
+      "start": 758.56,
+      "duration": 4.279,
+      "text": "you will be managing DNS records you'll"
+    },
+    {
+      "start": 760.24,
+      "duration": 4.48,
+      "text": "be creating hosted Zone a lot in your"
+    },
+    {
+      "start": 762.839,
+      "duration": 3.601,
+      "text": "role so to understand this I have"
+    },
+    {
+      "start": 764.72,
+      "duration": 4.239,
+      "text": "excellent resource attached here which"
+    },
+    {
+      "start": 766.44,
+      "duration": 4.56,
+      "text": "is by AWS again and in this you will"
+    },
+    {
+      "start": 768.959,
+      "duration": 4.12,
+      "text": "understand what is DNS or DNS Basics"
+    },
+    {
+      "start": 771.0,
+      "duration": 4.36,
+      "text": "different types of DNS service and lot"
+    },
+    {
+      "start": 773.079,
+      "duration": 6.041,
+      "text": "more so you can also learn more about"
+    },
+    {
+      "start": 775.36,
+      "duration": 6.2,
+      "text": "DNS from here till now we have covered a"
+    },
+    {
+      "start": 779.12,
+      "duration": 5.04,
+      "text": "lot of important networking Concepts"
+    },
+    {
+      "start": 781.56,
+      "duration": 5.24,
+      "text": "that you should know let's go ahead and"
+    },
+    {
+      "start": 784.16,
+      "duration": 5.76,
+      "text": "understand the next important concept"
+    },
+    {
+      "start": 786.8,
+      "duration": 5.52,
+      "text": "which is VPN or virtual private"
+    },
+    {
+      "start": 789.92,
+      "duration": 3.88,
+      "text": "network security is a very important"
+    },
+    {
+      "start": 792.32,
+      "duration": 3.72,
+      "text": "factor these days when deploying"
+    },
+    {
+      "start": 793.8,
+      "duration": 4.399,
+      "text": "application and we use VPN on the"
+    },
+    {
+      "start": 796.04,
+      "duration": 4.76,
+      "text": "networking site to make sure things are"
+    },
+    {
+      "start": 798.199,
+      "duration": 4.961,
+      "text": "very secure so VPN or virtual private"
+    },
+    {
+      "start": 800.8,
+      "duration": 4.399,
+      "text": "network is like a secure tunnel for your"
+    },
+    {
+      "start": 803.16,
+      "duration": 4.039,
+      "text": "internet connection it encrypts your"
+    },
+    {
+      "start": 805.199,
+      "duration": 3.921,
+      "text": "data and Roots it through a server"
+    },
+    {
+      "start": 807.199,
+      "duration": 4.281,
+      "text": "making your online activities more"
+    },
+    {
+      "start": 809.12,
+      "duration": 4.959,
+      "text": "private and secure and this is a diagram"
+    },
+    {
+      "start": 811.48,
+      "duration": 4.039,
+      "text": "here which defines how VPN works if you"
+    },
+    {
+      "start": 814.079,
+      "duration": 2.841,
+      "text": "look here this is the part where VPN is"
+    },
+    {
+      "start": 815.519,
+      "duration": 3.361,
+      "text": "used and this is the part where VPN is"
+    },
+    {
+      "start": 816.92,
+      "duration": 3.919,
+      "text": "not used when you use VPN you have VPN"
+    },
+    {
+      "start": 818.88,
+      "duration": 3.8,
+      "text": "client and a VPN server and the data"
+    },
+    {
+      "start": 820.839,
+      "duration": 4.44,
+      "text": "transferred from the VPN client is"
+    },
+    {
+      "start": 822.68,
+      "duration": 4.2,
+      "text": "encrypted so the data is secure whereas"
+    },
+    {
+      "start": 825.279,
+      "duration": 4.721,
+      "text": "when you don't use VPN it's not so"
+    },
+    {
+      "start": 826.88,
+      "duration": 4.8,
+      "text": "encrypted not so secure so vpns allow"
+    },
+    {
+      "start": 830.0,
+      "duration": 4.36,
+      "text": "professionals to securely connect to a"
+    },
+    {
+      "start": 831.68,
+      "duration": 4.48,
+      "text": "remote server access Cloud resources and"
+    },
+    {
+      "start": 834.36,
+      "duration": 4.12,
+      "text": "perform maintenance task without"
+    },
+    {
+      "start": 836.16,
+      "duration": 4.72,
+      "text": "compromising data security it ensures a"
+    },
+    {
+      "start": 838.48,
+      "duration": 3.719,
+      "text": "private an encrypted connection crucial"
+    },
+    {
+      "start": 840.88,
+      "duration": 3.6,
+      "text": "when dealing with sensitive"
+    },
+    {
+      "start": 842.199,
+      "duration": 4.721,
+      "text": "configurations deployments or"
+    },
+    {
+      "start": 844.48,
+      "duration": 5.039,
+      "text": "infrastructure management Dusk to know"
+    },
+    {
+      "start": 846.92,
+      "duration": 4.24,
+      "text": "more on why you should be using vpns as"
+    },
+    {
+      "start": 849.519,
+      "duration": 3.841,
+      "text": "a devops engineer you can check out this"
+    },
+    {
+      "start": 851.16,
+      "duration": 5.239,
+      "text": "resource which explains five different"
+    },
+    {
+      "start": 853.36,
+      "duration": 5.2,
+      "text": "reasons on why devops needs to use a VPN"
+    },
+    {
+      "start": 856.399,
+      "duration": 4.921,
+      "text": "for stronger security protocol to"
+    },
+    {
+      "start": 858.56,
+      "duration": 4.36,
+      "text": "control who sees what you're doing and"
+    },
+    {
+      "start": 861.32,
+      "duration": 3.04,
+      "text": "for work regardless of location"
+    },
+    {
+      "start": 862.92,
+      "duration": 2.88,
+      "text": "Limitless internet and all the other"
+    },
+    {
+      "start": 864.36,
+      "duration": 3.76,
+      "text": "reasons so you can go and check out this"
+    },
+    {
+      "start": 865.8,
+      "duration": 5.2,
+      "text": "resource not just this if you look at"
+    },
+    {
+      "start": 868.12,
+      "duration": 5.159,
+      "text": "the aw us VPC dashboard we have a VPN"
+    },
+    {
+      "start": 871.0,
+      "duration": 4.12,
+      "text": "section where there are different vpns"
+    },
+    {
+      "start": 873.279,
+      "duration": 4.401,
+      "text": "which are used by companies to ensure"
+    },
+    {
+      "start": 875.12,
+      "duration": 4.399,
+      "text": "security now we are almost at the end of"
+    },
+    {
+      "start": 877.68,
+      "duration": 3.44,
+      "text": "our networking for devops and genius"
+    },
+    {
+      "start": 879.519,
+      "duration": 4.081,
+      "text": "video but along with this different"
+    },
+    {
+      "start": 881.12,
+      "duration": 5.0,
+      "text": "concepts I also have a section which is"
+    },
+    {
+      "start": 883.6,
+      "duration": 4.159,
+      "text": "networking tools and I have listed down"
+    },
+    {
+      "start": 886.12,
+      "duration": 3.959,
+      "text": "important networking tools that you"
+    },
+    {
+      "start": 887.759,
+      "duration": 4.32,
+      "text": "should know as a devops engineer because"
+    },
+    {
+      "start": 890.079,
+      "duration": 3.841,
+      "text": "these are very very helpful tools when"
+    },
+    {
+      "start": 892.079,
+      "duration": 5.161,
+      "text": "you're working or troubleshooting your"
+    },
+    {
+      "start": 893.92,
+      "duration": 5.12,
+      "text": "networking tasks the first is Ping tool"
+    },
+    {
+      "start": 897.24,
+      "duration": 4.08,
+      "text": "or the Ping command and this is is used"
+    },
+    {
+      "start": 899.04,
+      "duration": 4.359,
+      "text": "to check if the website or the server is"
+    },
+    {
+      "start": 901.32,
+      "duration": 3.6,
+      "text": "reachable or not let's say you have an"
+    },
+    {
+      "start": 903.399,
+      "duration": 2.961,
+      "text": "application if it is not working fine"
+    },
+    {
+      "start": 904.92,
+      "duration": 3.2,
+      "text": "and you need to check it out if it is"
+    },
+    {
+      "start": 906.36,
+      "duration": 3.719,
+      "text": "reachable you can simply run the Ping"
+    },
+    {
+      "start": 908.12,
+      "duration": 4.48,
+      "text": "command let me show you an example if I"
+    },
+    {
+      "start": 910.079,
+      "duration": 4.721,
+      "text": "do ping google.com and if Google is"
+    },
+    {
+      "start": 912.6,
+      "duration": 4.599,
+      "text": "responsive or is rebled it should give"
+    },
+    {
+      "start": 914.8,
+      "duration": 4.52,
+      "text": "me back some response so when I do this"
+    },
+    {
+      "start": 917.199,
+      "duration": 4.161,
+      "text": "it gives me back responses like this"
+    },
+    {
+      "start": 919.32,
+      "duration": 3.759,
+      "text": "which means Google is recabled so using"
+    },
+    {
+      "start": 921.36,
+      "duration": 4.24,
+      "text": "pin command you can check out if the"
+    },
+    {
+      "start": 923.079,
+      "duration": 5.841,
+      "text": "service or the website is reachable or"
+    },
+    {
+      "start": 925.6,
+      "duration": 5.32,
+      "text": "not next you have is trace route using"
+    },
+    {
+      "start": 928.92,
+      "duration": 4.039,
+      "text": "test route you can see the different"
+    },
+    {
+      "start": 930.92,
+      "duration": 4.359,
+      "text": "path your data takes to reach a"
+    },
+    {
+      "start": 932.959,
+      "duration": 3.8,
+      "text": "destination so you can see what"
+    },
+    {
+      "start": 935.279,
+      "duration": 3.441,
+      "text": "different paths and also how much time"
+    },
+    {
+      "start": 936.759,
+      "duration": 3.76,
+      "text": "it takes so let's try to run it I'm"
+    },
+    {
+      "start": 938.72,
+      "duration": 6.679,
+      "text": "going to say trace"
+    },
+    {
+      "start": 940.519,
+      "duration": 7.041,
+      "text": "route and H to google.com again so let's"
+    },
+    {
+      "start": 945.399,
+      "duration": 4.641,
+      "text": "see and using Trace rout google.com you"
+    },
+    {
+      "start": 947.56,
+      "duration": 4.079,
+      "text": "can find the different path it took for"
+    },
+    {
+      "start": 950.04,
+      "duration": 3.599,
+      "text": "the data to be transferred also how much"
+    },
+    {
+      "start": 951.639,
+      "duration": 4.281,
+      "text": "time it took so this is another great"
+    },
+    {
+      "start": 953.639,
+      "duration": 4.361,
+      "text": "networking tool apart from this you have"
+    },
+    {
+      "start": 955.92,
+      "duration": 4.359,
+      "text": "netstat using netstat you can list all"
+    },
+    {
+      "start": 958.0,
+      "duration": 3.8,
+      "text": "the network connections on your computer"
+    },
+    {
+      "start": 960.279,
+      "duration": 5.081,
+      "text": "you can also find different processes"
+    },
+    {
+      "start": 961.8,
+      "duration": 6.279,
+      "text": "running so I'm going to open up netstat"
+    },
+    {
+      "start": 965.36,
+      "duration": 4.32,
+      "text": "uh hyphen a is the command you can also"
+    },
+    {
+      "start": 968.079,
+      "duration": 4.281,
+      "text": "add use another attributes different"
+    },
+    {
+      "start": 969.68,
+      "duration": 4.519,
+      "text": "attributes to get the response so when I"
+    },
+    {
+      "start": 972.36,
+      "duration": 4.24,
+      "text": "do net start iph you can see different"
+    },
+    {
+      "start": 974.199,
+      "duration": 3.88,
+      "text": "connections running in my computer and"
+    },
+    {
+      "start": 976.6,
+      "duration": 3.52,
+      "text": "these are all the process ID for them so"
+    },
+    {
+      "start": 978.079,
+      "duration": 4.841,
+      "text": "if I want to stop them I can also stop"
+    },
+    {
+      "start": 980.12,
+      "duration": 4.519,
+      "text": "it I use netstat usually to check"
+    },
+    {
+      "start": 982.92,
+      "duration": 5.0,
+      "text": "different ports that I used and like you"
+    },
+    {
+      "start": 984.639,
+      "duration": 5.601,
+      "text": "can do that by running net stat hyph Tu"
+    },
+    {
+      "start": 987.92,
+      "duration": 4.8,
+      "text": "LNP using this you can find out that the"
+    },
+    {
+      "start": 990.24,
+      "duration": 5.12,
+      "text": "port 80 is used Port 631 is used Port"
+    },
+    {
+      "start": 992.72,
+      "duration": 4.52,
+      "text": "543 is used so if I'm running an"
+    },
+    {
+      "start": 995.36,
+      "duration": 4.44,
+      "text": "application and if 8 is already used I"
+    },
+    {
+      "start": 997.24,
+      "duration": 5.279,
+      "text": "can simply go and delete the process so"
+    },
+    {
+      "start": 999.8,
+      "duration": 5.959,
+      "text": "this this port is available for me to"
+    },
+    {
+      "start": 1002.519,
+      "duration": 5.401,
+      "text": "use next time similar to this we have"
+    },
+    {
+      "start": 1005.759,
+      "duration": 4.44,
+      "text": "next which is nmap that is used to"
+    },
+    {
+      "start": 1007.92,
+      "duration": 4.839,
+      "text": "discover host and services they offer on"
+    },
+    {
+      "start": 1010.199,
+      "duration": 5.2,
+      "text": "your network next we have TCP D to"
+    },
+    {
+      "start": 1012.759,
+      "duration": 4.801,
+      "text": "capture analyze Network traffic then we"
+    },
+    {
+      "start": 1015.399,
+      "duration": 4.281,
+      "text": "have ip config for Windows or if config"
+    },
+    {
+      "start": 1017.56,
+      "duration": 4.519,
+      "text": "for Linux to check different networking"
+    },
+    {
+      "start": 1019.68,
+      "duration": 4.399,
+      "text": "information of your computer deck"
+    },
+    {
+      "start": 1022.079,
+      "duration": 3.521,
+      "text": "command is used to query DNS main"
+    },
+    {
+      "start": 1024.079,
+      "duration": 3.36,
+      "text": "servers for information about host"
+    },
+    {
+      "start": 1025.6,
+      "duration": 3.079,
+      "text": "address mail exchanges so if you have"
+    },
+    {
+      "start": 1027.439,
+      "duration": 2.921,
+      "text": "domain name and you want to find more"
+    },
+    {
+      "start": 1028.679,
+      "duration": 4.24,
+      "text": "information about it you can use the"
+    },
+    {
+      "start": 1030.36,
+      "duration": 4.839,
+      "text": "dick command similar to dick is NS"
+    },
+    {
+      "start": 1032.919,
+      "duration": 4.561,
+      "text": "lookup which is again used to P DNS"
+    },
+    {
+      "start": 1035.199,
+      "duration": 4.84,
+      "text": "servers for domain information then we"
+    },
+    {
+      "start": 1037.48,
+      "duration": 4.28,
+      "text": "have wi wi Shack and wire Shack is a"
+    },
+    {
+      "start": 1040.039,
+      "duration": 3.121,
+      "text": "very good tool for Network protocol"
+    },
+    {
+      "start": 1041.76,
+      "duration": 3.199,
+      "text": "analyzer for troubleshooting and"
+    },
+    {
+      "start": 1043.16,
+      "duration": 4.159,
+      "text": "Analysis of interactions between Network"
+    },
+    {
+      "start": 1044.959,
+      "duration": 5.441,
+      "text": "component it captures analyzes packets"
+    },
+    {
+      "start": 1047.319,
+      "duration": 5.641,
+      "text": "of specific n network interface last you"
+    },
+    {
+      "start": 1050.4,
+      "duration": 4.639,
+      "text": "have is I this is used to measure how"
+    },
+    {
+      "start": 1052.96,
+      "duration": 4.16,
+      "text": "much time it takes for the data to be"
+    },
+    {
+      "start": 1055.039,
+      "duration": 4.721,
+      "text": "transferred so it measures the TCP and"
+    },
+    {
+      "start": 1057.12,
+      "duration": 4.52,
+      "text": "UDP performance of a network so these"
+    },
+    {
+      "start": 1059.76,
+      "duration": 4.12,
+      "text": "are all the different networking"
+    },
+    {
+      "start": 1061.64,
+      "duration": 5.08,
+      "text": "Concepts and networking tools you should"
+    },
+    {
+      "start": 1063.88,
+      "duration": 5.48,
+      "text": "know as a devops engineer so this is the"
+    },
+    {
+      "start": 1066.72,
+      "duration": 4.52,
+      "text": "end of our networking for devops video I"
+    },
+    {
+      "start": 1069.36,
+      "duration": 3.88,
+      "text": "hope this video was informative if you"
+    },
+    {
+      "start": 1071.24,
+      "duration": 4.48,
+      "text": "found this video helpful do like this"
+    },
+    {
+      "start": 1073.24,
+      "duration": 4.439,
+      "text": "video subscribe to Cloud champ and let"
+    },
+    {
+      "start": 1075.72,
+      "duration": 4.36,
+      "text": "me know if you have any questions any"
+    },
+    {
+      "start": 1077.679,
+      "duration": 5.081,
+      "text": "doubt in the comment section thank you"
+    },
+    {
+      "start": 1080.08,
+      "duration": 2.68,
+      "text": "and have a good"
+    },
+    {
+      "start": 1088.28,
+      "duration": 3.0,
+      "text": "day"
+    }
+  ]
+}

@@ -1,0 +1,2646 @@
+{
+  "video": {
+    "id": "0zo45jvYQW0",
+    "title": "Day 3 : Understanding Providers and Resources in Terraform with Hands On tutorial",
+    "url": "https://www.youtube.com/watch?v=0zo45jvYQW0",
+    "duration": 1157,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.359,
+      "duration": 3.241,
+      "text": "providers and terraform are the first"
+    },
+    {
+      "start": 2.22,
+      "duration": 2.88,
+      "text": "thing you define in your code when"
+    },
+    {
+      "start": 3.6,
+      "duration": 3.719,
+      "text": "creating resources on various"
+    },
+    {
+      "start": 5.1,
+      "duration": 3.78,
+      "text": "infrastructure platform so in this video"
+    },
+    {
+      "start": 7.319,
+      "duration": 3.601,
+      "text": "I'll be teaching you what are providers"
+    },
+    {
+      "start": 8.88,
+      "duration": 3.66,
+      "text": "how can you use them in your code and"
+    },
+    {
+      "start": 10.92,
+      "duration": 3.78,
+      "text": "how to create resources using distant"
+    },
+    {
+      "start": 12.54,
+      "duration": 4.079,
+      "text": "providers also a Hands-On lab where I'll"
+    },
+    {
+      "start": 14.7,
+      "duration": 4.32,
+      "text": "be showing you how you can create ec2"
+    },
+    {
+      "start": 16.619,
+      "duration": 4.32,
+      "text": "instance using AWS provider and GitHub"
+    },
+    {
+      "start": 19.02,
+      "duration": 3.54,
+      "text": "repository using GitHub provider so"
+    },
+    {
+      "start": 20.939,
+      "duration": 3.901,
+      "text": "watch this video till the end let's"
+    },
+    {
+      "start": 22.56,
+      "duration": 3.36,
+      "text": "start Welcome to Cloud champ in this"
+    },
+    {
+      "start": 24.84,
+      "duration": 3.179,
+      "text": "video we are going to learn about"
+    },
+    {
+      "start": 25.92,
+      "duration": 4.08,
+      "text": "providers in terraform we will be"
+    },
+    {
+      "start": 28.019,
+      "duration": 3.84,
+      "text": "looking at what are providers how to use"
+    },
+    {
+      "start": 30.0,
+      "duration": 3.719,
+      "text": "them how to create different resources"
+    },
+    {
+      "start": 31.859,
+      "duration": 3.54,
+      "text": "and providers and this is all going to"
+    },
+    {
+      "start": 33.719,
+      "duration": 4.52,
+      "text": "be Hands-On and we are going to create"
+    },
+    {
+      "start": 35.399,
+      "duration": 5.82,
+      "text": "resources in AWS instance and also"
+    },
+    {
+      "start": 38.239,
+      "duration": 4.84,
+      "text": "resources in GitHub I'll show you how to"
+    },
+    {
+      "start": 41.219,
+      "duration": 4.141,
+      "text": "create a GitHub repository using"
+    },
+    {
+      "start": 43.079,
+      "duration": 4.5,
+      "text": "terraform and we will be posting all our"
+    },
+    {
+      "start": 45.36,
+      "duration": 3.539,
+      "text": "code in that particular repository so"
+    },
+    {
+      "start": 47.579,
+      "duration": 3.0,
+      "text": "you can see this is the repository I"
+    },
+    {
+      "start": 48.899,
+      "duration": 3.301,
+      "text": "created through terraform and I'll show"
+    },
+    {
+      "start": 50.579,
+      "duration": 3.421,
+      "text": "you how to do that along with that I'll"
+    },
+    {
+      "start": 52.2,
+      "duration": 4.199,
+      "text": "also show you how to create ec2"
+    },
+    {
+      "start": 54.0,
+      "duration": 4.44,
+      "text": "instances and different stuff in this"
+    },
+    {
+      "start": 56.399,
+      "duration": 3.721,
+      "text": "and also in the next video so make sure"
+    },
+    {
+      "start": 58.44,
+      "duration": 3.48,
+      "text": "you watch this video till the end this"
+    },
+    {
+      "start": 60.12,
+      "duration": 3.3,
+      "text": "video is the third video in our"
+    },
+    {
+      "start": 61.92,
+      "duration": 3.36,
+      "text": "terraform playlist so if you haven't"
+    },
+    {
+      "start": 63.42,
+      "duration": 3.66,
+      "text": "checked out the terraform full course do"
+    },
+    {
+      "start": 65.28,
+      "duration": 3.9,
+      "text": "check out to learn terraform from"
+    },
+    {
+      "start": 67.08,
+      "duration": 3.84,
+      "text": "scratch so let's start with providers"
+    },
+    {
+      "start": 69.18,
+      "duration": 3.06,
+      "text": "what do you mean by providers in"
+    },
+    {
+      "start": 70.92,
+      "duration": 3.6,
+      "text": "terraform"
+    },
+    {
+      "start": 72.24,
+      "duration": 4.739,
+      "text": "so providers are actually plugins that"
+    },
+    {
+      "start": 74.52,
+      "duration": 3.959,
+      "text": "help you define or create resources in"
+    },
+    {
+      "start": 76.979,
+      "duration": 4.861,
+      "text": "different platforms and Cloud providers"
+    },
+    {
+      "start": 78.479,
+      "duration": 6.481,
+      "text": "like AWS Azure gcp kubernetes a long"
+    },
+    {
+      "start": 81.84,
+      "duration": 4.74,
+      "text": "list of 3000 different providers and in"
+    },
+    {
+      "start": 84.96,
+      "duration": 3.54,
+      "text": "simple terms if I write explain users in"
+    },
+    {
+      "start": 86.58,
+      "duration": 4.679,
+      "text": "very very simple manner if you want to"
+    },
+    {
+      "start": 88.5,
+      "duration": 4.74,
+      "text": "create resources in AWS use AWS as a"
+    },
+    {
+      "start": 91.259,
+      "duration": 4.261,
+      "text": "provider if you want to create resources"
+    },
+    {
+      "start": 93.24,
+      "duration": 3.9,
+      "text": "in a short Azure as a provider if you"
+    },
+    {
+      "start": 95.52,
+      "duration": 4.32,
+      "text": "want to create servers databases in"
+    },
+    {
+      "start": 97.14,
+      "duration": 5.22,
+      "text": "Google Cloud use Google as a provider so"
+    },
+    {
+      "start": 99.84,
+      "duration": 5.16,
+      "text": "let's try to use AWS as a provider and"
+    },
+    {
+      "start": 102.36,
+      "duration": 4.68,
+      "text": "create some ec2 instances I'm going to"
+    },
+    {
+      "start": 105.0,
+      "duration": 4.32,
+      "text": "open my terminal and create a folder"
+    },
+    {
+      "start": 107.04,
+      "duration": 3.859,
+      "text": "that we'll be using throughout the"
+    },
+    {
+      "start": 109.32,
+      "duration": 6.119,
+      "text": "terraform pre-list so I'm going to say"
+    },
+    {
+      "start": 110.899,
+      "duration": 7.781,
+      "text": "mkdir and terraform course"
+    },
+    {
+      "start": 115.439,
+      "duration": 6.301,
+      "text": "let's open this in vs code so I'm going"
+    },
+    {
+      "start": 118.68,
+      "duration": 6.24,
+      "text": "to open this in vs code code dot okay"
+    },
+    {
+      "start": 121.74,
+      "duration": 6.239,
+      "text": "I'm here in my vs code and let's try to"
+    },
+    {
+      "start": 124.92,
+      "duration": 4.86,
+      "text": "create some ec2 instances in AWS and for"
+    },
+    {
+      "start": 127.979,
+      "duration": 3.84,
+      "text": "us to use AWS with terraform we need to"
+    },
+    {
+      "start": 129.78,
+      "duration": 5.4,
+      "text": "Define AWS as a provider so I'm going to"
+    },
+    {
+      "start": 131.819,
+      "duration": 4.981,
+      "text": "create a new file name it main.ts the"
+    },
+    {
+      "start": 135.18,
+      "duration": 4.38,
+      "text": "terraform file should always end with"
+    },
+    {
+      "start": 136.8,
+      "duration": 4.939,
+      "text": "DOT TF extension so the task is to"
+    },
+    {
+      "start": 139.56,
+      "duration": 2.179,
+      "text": "create"
+    },
+    {
+      "start": 141.9,
+      "duration": 3.72,
+      "text": "ec2 instances"
+    },
+    {
+      "start": 143.58,
+      "duration": 3.54,
+      "text": "let's try to imagine this and how we"
+    },
+    {
+      "start": 145.62,
+      "duration": 3.24,
+      "text": "could be doing it if we were not using"
+    },
+    {
+      "start": 147.12,
+      "duration": 5.28,
+      "text": "terraform so first thing we would do is"
+    },
+    {
+      "start": 148.86,
+      "duration": 5.16,
+      "text": "to login into our AWS console and if"
+    },
+    {
+      "start": 152.4,
+      "duration": 4.02,
+      "text": "you're logging it into console we would"
+    },
+    {
+      "start": 154.02,
+      "duration": 4.98,
+      "text": "be requiring username and password but"
+    },
+    {
+      "start": 156.42,
+      "duration": 5.34,
+      "text": "that is not what we use in our terraform"
+    },
+    {
+      "start": 159.0,
+      "duration": 5.599,
+      "text": "so we need to Define access key and"
+    },
+    {
+      "start": 161.76,
+      "duration": 2.839,
+      "text": "secret access key"
+    },
+    {
+      "start": 164.879,
+      "duration": 3.72,
+      "text": "secret access key"
+    },
+    {
+      "start": 166.44,
+      "duration": 4.26,
+      "text": "okay so these are the two things they"
+    },
+    {
+      "start": 168.599,
+      "duration": 5.461,
+      "text": "require and then we can start working"
+    },
+    {
+      "start": 170.7,
+      "duration": 5.16,
+      "text": "with AWS so we can log into AWS we also"
+    },
+    {
+      "start": 174.06,
+      "duration": 3.66,
+      "text": "need to have a user which has access to"
+    },
+    {
+      "start": 175.86,
+      "duration": 4.14,
+      "text": "the particular Services we are trying to"
+    },
+    {
+      "start": 177.72,
+      "duration": 4.32,
+      "text": "create using terraform if this Nasi user"
+    },
+    {
+      "start": 180.0,
+      "duration": 4.92,
+      "text": "does not have access to ec2 I cannot use"
+    },
+    {
+      "start": 182.04,
+      "duration": 4.68,
+      "text": "the keys to create a ec2 using terraform"
+    },
+    {
+      "start": 184.92,
+      "duration": 3.84,
+      "text": "so make sure you have authentication and"
+    },
+    {
+      "start": 186.72,
+      "duration": 4.439,
+      "text": "authorization done authentication means"
+    },
+    {
+      "start": 188.76,
+      "duration": 4.5,
+      "text": "having the proper keys and authorization"
+    },
+    {
+      "start": 191.159,
+      "duration": 4.08,
+      "text": "means having permissions to use that"
+    },
+    {
+      "start": 193.26,
+      "duration": 4.32,
+      "text": "particular service so for me I've"
+    },
+    {
+      "start": 195.239,
+      "duration": 4.621,
+      "text": "already done it by using AWS configure"
+    },
+    {
+      "start": 197.58,
+      "duration": 3.9,
+      "text": "command if I show you I have used AWS"
+    },
+    {
+      "start": 199.86,
+      "duration": 3.78,
+      "text": "configure command to put my keys here"
+    },
+    {
+      "start": 201.48,
+      "duration": 3.539,
+      "text": "and this is the right way to do it but"
+    },
+    {
+      "start": 203.64,
+      "duration": 4.2,
+      "text": "you can also store it in your providers"
+    },
+    {
+      "start": 205.019,
+      "duration": 4.86,
+      "text": "let me show you so if I want to use AWS"
+    },
+    {
+      "start": 207.84,
+      "duration": 4.38,
+      "text": "as a provider I need to First declare it"
+    },
+    {
+      "start": 209.879,
+      "duration": 4.14,
+      "text": "and terraform documentation stays the"
+    },
+    {
+      "start": 212.22,
+      "duration": 3.54,
+      "text": "same so terraform configuration must"
+    },
+    {
+      "start": 214.019,
+      "duration": 3.3,
+      "text": "declare which provider they require so"
+    },
+    {
+      "start": 215.76,
+      "duration": 3.18,
+      "text": "that terraform can install and use them"
+    },
+    {
+      "start": 217.319,
+      "duration": 4.261,
+      "text": "so we need to First declare them and"
+    },
+    {
+      "start": 218.94,
+      "duration": 4.859,
+      "text": "then install it to use it and create"
+    },
+    {
+      "start": 221.58,
+      "duration": 4.14,
+      "text": "resources so to use the particular"
+    },
+    {
+      "start": 223.799,
+      "duration": 3.421,
+      "text": "provider I need to click on it so if I"
+    },
+    {
+      "start": 225.72,
+      "duration": 4.26,
+      "text": "click on this I'll be going to the"
+    },
+    {
+      "start": 227.22,
+      "duration": 5.519,
+      "text": "provider page of AWS which is managed by"
+    },
+    {
+      "start": 229.98,
+      "duration": 4.319,
+      "text": "hashicop and has 1.8 billions installs"
+    },
+    {
+      "start": 232.739,
+      "duration": 2.701,
+      "text": "you can see more detail about the"
+    },
+    {
+      "start": 234.299,
+      "duration": 3.061,
+      "text": "version so this is the particular"
+    },
+    {
+      "start": 235.44,
+      "duration": 3.48,
+      "text": "version of the provider this is the"
+    },
+    {
+      "start": 237.36,
+      "duration": 4.08,
+      "text": "latest version published five days ago"
+    },
+    {
+      "start": 238.92,
+      "duration": 3.72,
+      "text": "you can use any version you want and if"
+    },
+    {
+      "start": 241.44,
+      "duration": 2.82,
+      "text": "you want to use this with provider you"
+    },
+    {
+      "start": 242.64,
+      "duration": 3.54,
+      "text": "need to click on the use provider button"
+    },
+    {
+      "start": 244.26,
+      "duration": 3.479,
+      "text": "and you can read this to install the"
+    },
+    {
+      "start": 246.18,
+      "duration": 4.08,
+      "text": "provider you copy and paste this code"
+    },
+    {
+      "start": 247.739,
+      "duration": 4.261,
+      "text": "into your configuration so there are two"
+    },
+    {
+      "start": 250.26,
+      "duration": 3.78,
+      "text": "blocks here terraform block and there is"
+    },
+    {
+      "start": 252.0,
+      "duration": 3.48,
+      "text": "a provider block they use we use"
+    },
+    {
+      "start": 254.04,
+      "duration": 4.02,
+      "text": "terraform block to Define what version"
+    },
+    {
+      "start": 255.48,
+      "duration": 4.439,
+      "text": "of AWS provider do we want and this is"
+    },
+    {
+      "start": 258.06,
+      "duration": 3.239,
+      "text": "where you define the provider itself if"
+    },
+    {
+      "start": 259.919,
+      "duration": 2.941,
+      "text": "I want to use the latest version I can"
+    },
+    {
+      "start": 261.299,
+      "duration": 3.9,
+      "text": "choose three lines or just to provide a"
+    },
+    {
+      "start": 262.86,
+      "duration": 3.6,
+      "text": "block rather than having this but if I"
+    },
+    {
+      "start": 265.199,
+      "duration": 4.44,
+      "text": "want to use any particular version let's"
+    },
+    {
+      "start": 266.46,
+      "duration": 5.58,
+      "text": "say 5.7 or 6 or 1 I need to Define that"
+    },
+    {
+      "start": 269.639,
+      "duration": 5.581,
+      "text": "here in the version attribute so let's"
+    },
+    {
+      "start": 272.04,
+      "duration": 7.2,
+      "text": "just use these three lines here for now"
+    },
+    {
+      "start": 275.22,
+      "duration": 5.88,
+      "text": "and paste it in our code so I'm going to"
+    },
+    {
+      "start": 279.24,
+      "duration": 3.78,
+      "text": "just comment this out because"
+    },
+    {
+      "start": 281.1,
+      "duration": 4.26,
+      "text": "we know we require this"
+    },
+    {
+      "start": 283.02,
+      "duration": 3.66,
+      "text": "all right so provider AWS has been"
+    },
+    {
+      "start": 285.36,
+      "duration": 2.94,
+      "text": "defined but inside this tennis"
+    },
+    {
+      "start": 286.68,
+      "duration": 3.66,
+      "text": "configuration options and if you go back"
+    },
+    {
+      "start": 288.3,
+      "duration": 4.26,
+      "text": "to the documentation again it says some"
+    },
+    {
+      "start": 290.34,
+      "duration": 4.26,
+      "text": "providers require a configuration like"
+    },
+    {
+      "start": 292.56,
+      "duration": 3.9,
+      "text": "endpoint URLs or Cloud regions before"
+    },
+    {
+      "start": 294.6,
+      "duration": 4.08,
+      "text": "they can be used which is very much true"
+    },
+    {
+      "start": 296.46,
+      "duration": 4.32,
+      "text": "if I want to create resources or ec2"
+    },
+    {
+      "start": 298.68,
+      "duration": 3.9,
+      "text": "instance in AWS I need to First select"
+    },
+    {
+      "start": 300.78,
+      "duration": 3.84,
+      "text": "what region do I want to use do I want"
+    },
+    {
+      "start": 302.58,
+      "duration": 4.2,
+      "text": "to use North Virginia or Mumbai or"
+    },
+    {
+      "start": 304.62,
+      "duration": 5.519,
+      "text": "Pacific or anything like that so I'm"
+    },
+    {
+      "start": 306.78,
+      "duration": 6.66,
+      "text": "going to first Define what is the reason"
+    },
+    {
+      "start": 310.139,
+      "duration": 5.041,
+      "text": "region is going to be us Dash East dash"
+    },
+    {
+      "start": 313.44,
+      "duration": 3.78,
+      "text": "one and I'll show you how you can use"
+    },
+    {
+      "start": 315.18,
+      "duration": 4.5,
+      "text": "multiple regions as well using provider"
+    },
+    {
+      "start": 317.22,
+      "duration": 4.44,
+      "text": "using Elias attribute and provider in"
+    },
+    {
+      "start": 319.68,
+      "duration": 3.84,
+      "text": "some time but for now we have defined"
+    },
+    {
+      "start": 321.66,
+      "duration": 4.62,
+      "text": "region as U.S east one we can also"
+    },
+    {
+      "start": 323.52,
+      "duration": 5.22,
+      "text": "Define uh things like access key"
+    },
+    {
+      "start": 326.28,
+      "duration": 5.16,
+      "text": "and putting the access key here as a"
+    },
+    {
+      "start": 328.74,
+      "duration": 5.58,
+      "text": "string similarly secret access key"
+    },
+    {
+      "start": 331.44,
+      "duration": 4.68,
+      "text": "and putting it as your hard coded in"
+    },
+    {
+      "start": 334.32,
+      "duration": 3.599,
+      "text": "your configuration which is not I would"
+    },
+    {
+      "start": 336.12,
+      "duration": 4.139,
+      "text": "recommend so I always want you to have"
+    },
+    {
+      "start": 337.919,
+      "duration": 4.021,
+      "text": "it here in the AWS configure command and"
+    },
+    {
+      "start": 340.259,
+      "duration": 3.961,
+      "text": "putting your keys here if you don't know"
+    },
+    {
+      "start": 341.94,
+      "duration": 4.5,
+      "text": "how to connect your terraform with AWS"
+    },
+    {
+      "start": 344.22,
+      "duration": 4.38,
+      "text": "make sure you write down a comment and I"
+    },
+    {
+      "start": 346.44,
+      "duration": 4.319,
+      "text": "can create a video for you to help you"
+    },
+    {
+      "start": 348.6,
+      "duration": 3.659,
+      "text": "understand and properly connect your"
+    },
+    {
+      "start": 350.759,
+      "duration": 3.241,
+      "text": "data form with AWS so you can start"
+    },
+    {
+      "start": 352.259,
+      "duration": 3.241,
+      "text": "working with it so this is not a good"
+    },
+    {
+      "start": 354.0,
+      "duration": 4.38,
+      "text": "practice I'm going to remove that and"
+    },
+    {
+      "start": 355.5,
+      "duration": 4.919,
+      "text": "you should always use AWS configure uh"
+    },
+    {
+      "start": 358.38,
+      "duration": 3.48,
+      "text": "command to put your access key and"
+    },
+    {
+      "start": 360.419,
+      "duration": 4.321,
+      "text": "secret access key if you don't do this"
+    },
+    {
+      "start": 361.86,
+      "duration": 5.16,
+      "text": "you will not be able to create resources"
+    },
+    {
+      "start": 364.74,
+      "duration": 4.56,
+      "text": "using providers so now that I've added"
+    },
+    {
+      "start": 367.02,
+      "duration": 4.08,
+      "text": "this let's try to open a terminal and to"
+    },
+    {
+      "start": 369.3,
+      "duration": 3.6,
+      "text": "install your terraform and to install"
+    },
+    {
+      "start": 371.1,
+      "duration": 3.48,
+      "text": "your database provider or any provider"
+    },
+    {
+      "start": 372.9,
+      "duration": 3.359,
+      "text": "you need to run the command terraform in"
+    },
+    {
+      "start": 374.58,
+      "duration": 3.48,
+      "text": "it this command is to initialize"
+    },
+    {
+      "start": 376.259,
+      "duration": 3.72,
+      "text": "directory and I can show you what it"
+    },
+    {
+      "start": 378.06,
+      "duration": 3.9,
+      "text": "does by just citing terraform and then"
+    },
+    {
+      "start": 379.979,
+      "duration": 3.241,
+      "text": "you can see the information so init"
+    },
+    {
+      "start": 381.96,
+      "duration": 3.179,
+      "text": "command is to prepare your working"
+    },
+    {
+      "start": 383.22,
+      "duration": 4.02,
+      "text": "directory for other commands and this is"
+    },
+    {
+      "start": 385.139,
+      "duration": 5.221,
+      "text": "the same command you will be using to"
+    },
+    {
+      "start": 387.24,
+      "duration": 4.44,
+      "text": "install AWS as a provider so it says run"
+    },
+    {
+      "start": 390.36,
+      "duration": 3.6,
+      "text": "turn off a minute after you add this"
+    },
+    {
+      "start": 391.68,
+      "duration": 4.139,
+      "text": "configuration so we add the provider"
+    },
+    {
+      "start": 393.96,
+      "duration": 3.959,
+      "text": "defined now let's try to run the command"
+    },
+    {
+      "start": 395.819,
+      "duration": 5.121,
+      "text": "which is terraform init and you can see"
+    },
+    {
+      "start": 397.919,
+      "duration": 5.761,
+      "text": "it is going to install hashicorp AWS"
+    },
+    {
+      "start": 400.94,
+      "duration": 4.42,
+      "text": "5.8.0 version because we haven't defined"
+    },
+    {
+      "start": 403.68,
+      "duration": 5.459,
+      "text": "any previous version we have just used"
+    },
+    {
+      "start": 405.36,
+      "duration": 5.64,
+      "text": "this block so it installed version 5.8.0"
+    },
+    {
+      "start": 409.139,
+      "duration": 3.541,
+      "text": "and once this is done we will have some"
+    },
+    {
+      "start": 411.0,
+      "duration": 3.539,
+      "text": "files present here and they will be"
+    },
+    {
+      "start": 412.68,
+      "duration": 3.48,
+      "text": "ready to create resources so let's wait"
+    },
+    {
+      "start": 414.539,
+      "duration": 4.44,
+      "text": "for it to be successfully initialized"
+    },
+    {
+      "start": 416.16,
+      "duration": 4.62,
+      "text": "and then we can start creating resources"
+    },
+    {
+      "start": 418.979,
+      "duration": 3.241,
+      "text": "on AWS"
+    },
+    {
+      "start": 420.78,
+      "duration": 3.359,
+      "text": "so you can see there's a folder image"
+    },
+    {
+      "start": 422.22,
+      "duration": 3.72,
+      "text": "dot terraform and inside this there is"
+    },
+    {
+      "start": 424.139,
+      "duration": 5.521,
+      "text": "provider and inside this provider you"
+    },
+    {
+      "start": 425.94,
+      "duration": 5.28,
+      "text": "have AWS a version 5.8.0 and you can see"
+    },
+    {
+      "start": 429.66,
+      "duration": 3.36,
+      "text": "it says terraform has been successfully"
+    },
+    {
+      "start": 431.22,
+      "duration": 4.08,
+      "text": "initialized you may now begin to working"
+    },
+    {
+      "start": 433.02,
+      "duration": 4.14,
+      "text": "with data form title from plan to see"
+    },
+    {
+      "start": 435.3,
+      "duration": 3.06,
+      "text": "what changes required for the"
+    },
+    {
+      "start": 437.16,
+      "duration": 3.18,
+      "text": "infrastructure but this will only be"
+    },
+    {
+      "start": 438.36,
+      "duration": 4.86,
+      "text": "applicable when we first write the"
+    },
+    {
+      "start": 440.34,
+      "duration": 4.919,
+      "text": "configuration for our resource so now we"
+    },
+    {
+      "start": 443.22,
+      "duration": 4.199,
+      "text": "have successfully initialized it let's"
+    },
+    {
+      "start": 445.259,
+      "duration": 3.601,
+      "text": "try to create a resource which is going"
+    },
+    {
+      "start": 447.419,
+      "duration": 3.18,
+      "text": "to be an instance so everything you want"
+    },
+    {
+      "start": 448.86,
+      "duration": 2.7,
+      "text": "to create using terraform has to be"
+    },
+    {
+      "start": 450.599,
+      "duration": 2.94,
+      "text": "researched if you want to create"
+    },
+    {
+      "start": 451.56,
+      "duration": 3.66,
+      "text": "instance it has to be resource if you"
+    },
+    {
+      "start": 453.539,
+      "duration": 3.181,
+      "text": "want to create Security Group if you"
+    },
+    {
+      "start": 455.22,
+      "duration": 3.72,
+      "text": "want to create load balances RDS"
+    },
+    {
+      "start": 456.72,
+      "duration": 4.319,
+      "text": "databases S3 buckets everything are"
+    },
+    {
+      "start": 458.94,
+      "duration": 4.14,
+      "text": "resources and you can use the"
+    },
+    {
+      "start": 461.039,
+      "duration": 4.38,
+      "text": "documentation to properly see how to"
+    },
+    {
+      "start": 463.08,
+      "duration": 4.32,
+      "text": "create them so you can see this is the"
+    },
+    {
+      "start": 465.419,
+      "duration": 3.18,
+      "text": "provider documentation and you will see"
+    },
+    {
+      "start": 467.4,
+      "duration": 3.96,
+      "text": "the list of all the different Services"
+    },
+    {
+      "start": 468.599,
+      "duration": 5.88,
+      "text": "let's go to ec2 here"
+    },
+    {
+      "start": 471.36,
+      "duration": 4.739,
+      "text": "so this is ec2 or elastic compute cloud"
+    },
+    {
+      "start": 474.479,
+      "duration": 5.641,
+      "text": "and I can see different resources like"
+    },
+    {
+      "start": 476.099,
+      "duration": 6.421,
+      "text": "Ami EIP last instance keeper let's try"
+    },
+    {
+      "start": 480.12,
+      "duration": 5.579,
+      "text": "to use this instance and I'm going to"
+    },
+    {
+      "start": 482.52,
+      "duration": 5.459,
+      "text": "use this block here to create a instance"
+    },
+    {
+      "start": 485.699,
+      "duration": 4.321,
+      "text": "so we need to First create a resource"
+    },
+    {
+      "start": 487.979,
+      "duration": 4.201,
+      "text": "block so inside it says block we need to"
+    },
+    {
+      "start": 490.02,
+      "duration": 4.679,
+      "text": "define the resource type which is AWS"
+    },
+    {
+      "start": 492.18,
+      "duration": 4.44,
+      "text": "instance and then we need to Define some"
+    },
+    {
+      "start": 494.699,
+      "duration": 4.081,
+      "text": "attribute so let me explain you this"
+    },
+    {
+      "start": 496.62,
+      "duration": 4.56,
+      "text": "attribute why we explore our console"
+    },
+    {
+      "start": 498.78,
+      "duration": 3.78,
+      "text": "here so if I want to create ec2 using"
+    },
+    {
+      "start": 501.18,
+      "duration": 3.239,
+      "text": "conserve I need to first go to the"
+    },
+    {
+      "start": 502.56,
+      "duration": 4.8,
+      "text": "service we have been to the service by"
+    },
+    {
+      "start": 504.419,
+      "duration": 5.161,
+      "text": "selecting the in resource type which is"
+    },
+    {
+      "start": 507.36,
+      "duration": 4.26,
+      "text": "AWS instance inside this I'm going to"
+    },
+    {
+      "start": 509.58,
+      "duration": 3.6,
+      "text": "click on launch instance option and we"
+    },
+    {
+      "start": 511.62,
+      "duration": 4.26,
+      "text": "have some attribute here"
+    },
+    {
+      "start": 513.18,
+      "duration": 4.38,
+      "text": "we need to select Ami what operating"
+    },
+    {
+      "start": 515.88,
+      "duration": 3.48,
+      "text": "system do you want we also need to"
+    },
+    {
+      "start": 517.56,
+      "duration": 4.14,
+      "text": "select what keypad to attach what"
+    },
+    {
+      "start": 519.36,
+      "duration": 4.619,
+      "text": "instance type to use what should be my"
+    },
+    {
+      "start": 521.7,
+      "duration": 5.94,
+      "text": "security group what should be my storage"
+    },
+    {
+      "start": 523.979,
+      "duration": 5.521,
+      "text": "and so much things so for AMI you need"
+    },
+    {
+      "start": 527.64,
+      "duration": 3.36,
+      "text": "to Define what particular Ami you want"
+    },
+    {
+      "start": 529.5,
+      "duration": 4.08,
+      "text": "if I want to use Amazon Linux in my"
+    },
+    {
+      "start": 531.0,
+      "duration": 4.86,
+      "text": "terraform I need to use this ID if I"
+    },
+    {
+      "start": 533.58,
+      "duration": 4.02,
+      "text": "want to use Ubuntu I need to use this ID"
+    },
+    {
+      "start": 535.86,
+      "duration": 3.599,
+      "text": "and this is way to be different for"
+    },
+    {
+      "start": 537.6,
+      "duration": 3.9,
+      "text": "everyone so try to use your own if you"
+    },
+    {
+      "start": 539.459,
+      "duration": 4.801,
+      "text": "try to use this one you will get invalid"
+    },
+    {
+      "start": 541.5,
+      "duration": 4.98,
+      "text": "Ami error so I'm going to copy this ID"
+    },
+    {
+      "start": 544.26,
+      "duration": 3.6,
+      "text": "and paste it and here you can see"
+    },
+    {
+      "start": 546.48,
+      "duration": 2.46,
+      "text": "they're using data block which we"
+    },
+    {
+      "start": 547.86,
+      "duration": 2.88,
+      "text": "haven't learned about so I'm going to"
+    },
+    {
+      "start": 548.94,
+      "duration": 4.079,
+      "text": "remove that for now we will learn about"
+    },
+    {
+      "start": 550.74,
+      "duration": 5.46,
+      "text": "data block later on so I'm using my own"
+    },
+    {
+      "start": 553.019,
+      "duration": 5.161,
+      "text": "Emi here and I want to use T3 micro or"
+    },
+    {
+      "start": 556.2,
+      "duration": 4.38,
+      "text": "let's make it T2 micro the instance type"
+    },
+    {
+      "start": 558.18,
+      "duration": 3.659,
+      "text": "should be T2 micro"
+    },
+    {
+      "start": 560.58,
+      "duration": 3.66,
+      "text": "and you can see there are no other"
+    },
+    {
+      "start": 561.839,
+      "duration": 4.321,
+      "text": "things like keypads or security groups"
+    },
+    {
+      "start": 564.24,
+      "duration": 3.779,
+      "text": "or network settings because if you don't"
+    },
+    {
+      "start": 566.16,
+      "duration": 4.5,
+      "text": "choose these things it the default"
+    },
+    {
+      "start": 568.019,
+      "duration": 5.461,
+      "text": "option is to proceed without keypad for"
+    },
+    {
+      "start": 570.66,
+      "duration": 4.26,
+      "text": "keeper if you don't choose any VPC the"
+    },
+    {
+      "start": 573.48,
+      "duration": 3.419,
+      "text": "default AVC will be selected if you"
+    },
+    {
+      "start": 574.92,
+      "duration": 3.599,
+      "text": "don't choose any the security group a"
+    },
+    {
+      "start": 576.899,
+      "duration": 4.141,
+      "text": "default Security Group will be attached"
+    },
+    {
+      "start": 578.519,
+      "duration": 4.32,
+      "text": "and same for storage so this is all we"
+    },
+    {
+      "start": 581.04,
+      "duration": 3.96,
+      "text": "want I'm going to save this and run the"
+    },
+    {
+      "start": 582.839,
+      "duration": 3.841,
+      "text": "terraform key plan command to see what"
+    },
+    {
+      "start": 585.0,
+      "duration": 3.06,
+      "text": "will happen or what is setup I'm going"
+    },
+    {
+      "start": 586.68,
+      "duration": 3.36,
+      "text": "to create so according to the"
+    },
+    {
+      "start": 588.06,
+      "duration": 4.44,
+      "text": "configuration it should be creating an"
+    },
+    {
+      "start": 590.04,
+      "duration": 6.359,
+      "text": "instance which should be Ubuntu so this"
+    },
+    {
+      "start": 592.5,
+      "duration": 6.06,
+      "text": "is Ubuntu Ami which should be creating"
+    },
+    {
+      "start": 596.399,
+      "duration": 3.961,
+      "text": "an instance type T2 micro and it should"
+    },
+    {
+      "start": 598.56,
+      "duration": 3.959,
+      "text": "have a named as hello world this is a"
+    },
+    {
+      "start": 600.36,
+      "duration": 3.419,
+      "text": "name instance will show this is not the"
+    },
+    {
+      "start": 602.519,
+      "duration": 3.901,
+      "text": "name this is just the name for terraform"
+    },
+    {
+      "start": 603.779,
+      "duration": 4.5,
+      "text": "reference so make sure you uh you're not"
+    },
+    {
+      "start": 606.42,
+      "duration": 3.06,
+      "text": "confused so I'm going to run terraform"
+    },
+    {
+      "start": 608.279,
+      "duration": 3.12,
+      "text": "plan and should show me that one"
+    },
+    {
+      "start": 609.48,
+      "duration": 3.9,
+      "text": "instance is going to be created"
+    },
+    {
+      "start": 611.399,
+      "duration": 4.62,
+      "text": "so let's run terraform plan it will show"
+    },
+    {
+      "start": 613.38,
+      "duration": 4.32,
+      "text": "AWS instance.web is going to be created"
+    },
+    {
+      "start": 616.019,
+      "duration": 4.201,
+      "text": "according to the terraform configuration"
+    },
+    {
+      "start": 617.7,
+      "duration": 5.04,
+      "text": "if by any chance you're not seeing uh"
+    },
+    {
+      "start": 620.22,
+      "duration": 3.78,
+      "text": "the same plan as I'm going to see make"
+    },
+    {
+      "start": 622.74,
+      "duration": 4.02,
+      "text": "sure you save your configurations"
+    },
+    {
+      "start": 624.0,
+      "duration": 4.8,
+      "text": "because terraform is not going to show"
+    },
+    {
+      "start": 626.76,
+      "duration": 3.6,
+      "text": "you unless you save it so you see it"
+    },
+    {
+      "start": 628.8,
+      "duration": 4.68,
+      "text": "says one thing going to be added and if"
+    },
+    {
+      "start": 630.36,
+      "duration": 4.86,
+      "text": "I show you what is it so it is AWS"
+    },
+    {
+      "start": 633.48,
+      "duration": 4.5,
+      "text": "instance dot web"
+    },
+    {
+      "start": 635.22,
+      "duration": 4.739,
+      "text": "and explain you more about plan command"
+    },
+    {
+      "start": 637.98,
+      "duration": 3.9,
+      "text": "later on but remember that whenever you"
+    },
+    {
+      "start": 639.959,
+      "duration": 3.601,
+      "text": "see this plus symbol green color which"
+    },
+    {
+      "start": 641.88,
+      "duration": 3.3,
+      "text": "means something is going to be added if"
+    },
+    {
+      "start": 643.56,
+      "duration": 3.0,
+      "text": "you are seeing red color minus symbol"
+    },
+    {
+      "start": 645.18,
+      "duration": 3.42,
+      "text": "which means something is going to be"
+    },
+    {
+      "start": 646.56,
+      "duration": 4.019,
+      "text": "deleted and if it is yellow color wavy"
+    },
+    {
+      "start": 648.6,
+      "duration": 4.2,
+      "text": "symbol or the tilde symbol it means"
+    },
+    {
+      "start": 650.579,
+      "duration": 4.081,
+      "text": "something has to be modified so here it"
+    },
+    {
+      "start": 652.8,
+      "duration": 3.719,
+      "text": "is saying one has to be changed and if"
+    },
+    {
+      "start": 654.66,
+      "duration": 4.38,
+      "text": "you want to it to be created here in"
+    },
+    {
+      "start": 656.519,
+      "duration": 4.201,
+      "text": "your console it should be you need to"
+    },
+    {
+      "start": 659.04,
+      "duration": 3.84,
+      "text": "run the another command so right now if"
+    },
+    {
+      "start": 660.72,
+      "duration": 4.26,
+      "text": "I show you I don't have any instance"
+    },
+    {
+      "start": 662.88,
+      "duration": 4.62,
+      "text": "named as hello world and none of them"
+    },
+    {
+      "start": 664.98,
+      "duration": 4.62,
+      "text": "are running once I create this it will"
+    },
+    {
+      "start": 667.5,
+      "duration": 4.019,
+      "text": "have a new I will have a new instance"
+    },
+    {
+      "start": 669.6,
+      "duration": 4.26,
+      "text": "named as hello world which will be T2"
+    },
+    {
+      "start": 671.519,
+      "duration": 5.041,
+      "text": "micro Ubuntu server"
+    },
+    {
+      "start": 673.86,
+      "duration": 4.74,
+      "text": "in D4 VPC having default Security Group"
+    },
+    {
+      "start": 676.56,
+      "duration": 6.6,
+      "text": "so I'm going to say terraform apply"
+    },
+    {
+      "start": 678.6,
+      "duration": 6.979,
+      "text": "hyphen Auto hyphen approve and then this"
+    },
+    {
+      "start": 683.16,
+      "duration": 2.419,
+      "text": "will create"
+    },
+    {
+      "start": 686.16,
+      "duration": 4.2,
+      "text": "it will start creating uh"
+    },
+    {
+      "start": 688.68,
+      "duration": 4.92,
+      "text": "instance you can see it says AWS"
+    },
+    {
+      "start": 690.36,
+      "duration": 5.58,
+      "text": "instance.web dot creating and then you"
+    },
+    {
+      "start": 693.6,
+      "duration": 4.26,
+      "text": "can see here the name sense has been"
+    },
+    {
+      "start": 695.94,
+      "duration": 3.78,
+      "text": "created named as hello world which is in"
+    },
+    {
+      "start": 697.86,
+      "duration": 3.78,
+      "text": "pending state right now because it is"
+    },
+    {
+      "start": 699.72,
+      "duration": 3.66,
+      "text": "still creating after some time when it"
+    },
+    {
+      "start": 701.64,
+      "duration": 4.199,
+      "text": "is completed it will go in running state"
+    },
+    {
+      "start": 703.38,
+      "duration": 3.84,
+      "text": "so let's wait for it to come up and you"
+    },
+    {
+      "start": 705.839,
+      "duration": 3.481,
+      "text": "can see it takes around like 30 seconds"
+    },
+    {
+      "start": 707.22,
+      "duration": 4.26,
+      "text": "or 20 seconds to create and single nc2"
+    },
+    {
+      "start": 709.32,
+      "duration": 3.959,
+      "text": "instances uh"
+    },
+    {
+      "start": 711.48,
+      "duration": 3.419,
+      "text": "and now you can see it's still creating"
+    },
+    {
+      "start": 713.279,
+      "duration": 3.481,
+      "text": "it will give you the message 10 seconds"
+    },
+    {
+      "start": 714.899,
+      "duration": 4.141,
+      "text": "after 8 seconds 10 seconds"
+    },
+    {
+      "start": 716.76,
+      "duration": 4.44,
+      "text": "let's refresh and now you can see the"
+    },
+    {
+      "start": 719.04,
+      "duration": 4.62,
+      "text": "instances in the running state"
+    },
+    {
+      "start": 721.2,
+      "duration": 4.56,
+      "text": "and I can see uh that this is a default"
+    },
+    {
+      "start": 723.66,
+      "duration": 5.04,
+      "text": "engine default VPC this is a T2 micro"
+    },
+    {
+      "start": 725.76,
+      "duration": 4.68,
+      "text": "instance Ubuntu Server same as what we"
+    },
+    {
+      "start": 728.7,
+      "duration": 6.18,
+      "text": "have defined so this is how you can"
+    },
+    {
+      "start": 730.44,
+      "duration": 6.839,
+      "text": "create resources in AWS using terraform"
+    },
+    {
+      "start": 734.88,
+      "duration": 5.639,
+      "text": "we have learned how to define a provider"
+    },
+    {
+      "start": 737.279,
+      "duration": 5.041,
+      "text": "water providers so provider just used to"
+    },
+    {
+      "start": 740.519,
+      "duration": 4.201,
+      "text": "define where should terraform create"
+    },
+    {
+      "start": 742.32,
+      "duration": 4.98,
+      "text": "resources if it is AWS you will be using"
+    },
+    {
+      "start": 744.72,
+      "duration": 4.2,
+      "text": "AWS as a provider if it is azure you"
+    },
+    {
+      "start": 747.3,
+      "duration": 3.96,
+      "text": "will be using Azure as a provider let's"
+    },
+    {
+      "start": 748.92,
+      "duration": 4.14,
+      "text": "try to add another provider and to make"
+    },
+    {
+      "start": 751.26,
+      "duration": 5.16,
+      "text": "things more clear let's"
+    },
+    {
+      "start": 753.06,
+      "duration": 5.219,
+      "text": "add another file named as provider.tf to"
+    },
+    {
+      "start": 756.42,
+      "duration": 3.599,
+      "text": "hold all the providers that we are using"
+    },
+    {
+      "start": 758.279,
+      "duration": 4.5,
+      "text": "in this configuration so I'm going to"
+    },
+    {
+      "start": 760.019,
+      "duration": 3.661,
+      "text": "say provider.ts and I'll copy this from"
+    },
+    {
+      "start": 762.779,
+      "duration": 3.18,
+      "text": "here"
+    },
+    {
+      "start": 763.68,
+      "duration": 4.02,
+      "text": "paste it here"
+    },
+    {
+      "start": 765.959,
+      "duration": 5.581,
+      "text": "I missed the spelling I'm going to"
+    },
+    {
+      "start": 767.7,
+      "duration": 5.819,
+      "text": "rename it and make it provider okay"
+    },
+    {
+      "start": 771.54,
+      "duration": 3.72,
+      "text": "so we're using provider which is AWS"
+    },
+    {
+      "start": 773.519,
+      "duration": 3.481,
+      "text": "let's try to create a repository as I've"
+    },
+    {
+      "start": 775.26,
+      "duration": 3.96,
+      "text": "mentioned we need we can also create a"
+    },
+    {
+      "start": 777.0,
+      "duration": 4.079,
+      "text": "repository using GitHub provider so I'm"
+    },
+    {
+      "start": 779.22,
+      "duration": 3.6,
+      "text": "going to say provider and the name of"
+    },
+    {
+      "start": 781.079,
+      "duration": 3.721,
+      "text": "the provider is GitHub if you want to"
+    },
+    {
+      "start": 782.82,
+      "duration": 6.18,
+      "text": "see the official documentation you can"
+    },
+    {
+      "start": 784.8,
+      "duration": 6.8,
+      "text": "check it from uh here so let's go to"
+    },
+    {
+      "start": 789.0,
+      "duration": 2.6,
+      "text": "providers"
+    },
+    {
+      "start": 792.38,
+      "duration": 4.72,
+      "text": "systems I'm going to say PCS and you can"
+    },
+    {
+      "start": 795.6,
+      "duration": 3.66,
+      "text": "find GitHub here"
+    },
+    {
+      "start": 797.1,
+      "duration": 4.919,
+      "text": "so GitHub is by partnered and you can"
+    },
+    {
+      "start": 799.26,
+      "duration": 4.5,
+      "text": "see how to use it by checking the config"
+    },
+    {
+      "start": 802.019,
+      "duration": 3.901,
+      "text": "this is how you can use it inside the"
+    },
+    {
+      "start": 803.76,
+      "duration": 5.28,
+      "text": "configuration you need to add tokens or"
+    },
+    {
+      "start": 805.92,
+      "duration": 5.219,
+      "text": "GitHub uh tokens so you can get the"
+    },
+    {
+      "start": 809.04,
+      "duration": 3.72,
+      "text": "tokens by clicking on the profile going"
+    },
+    {
+      "start": 811.139,
+      "duration": 5.101,
+      "text": "to settings"
+    },
+    {
+      "start": 812.76,
+      "duration": 5.759,
+      "text": "going in the developer settings below"
+    },
+    {
+      "start": 816.24,
+      "duration": 4.14,
+      "text": "and in here you will have options to"
+    },
+    {
+      "start": 818.519,
+      "duration": 4.741,
+      "text": "create personal access token you can"
+    },
+    {
+      "start": 820.38,
+      "duration": 5.579,
+      "text": "create token classic and use that here"
+    },
+    {
+      "start": 823.26,
+      "duration": 4.86,
+      "text": "so let me try to create a new token"
+    },
+    {
+      "start": 825.959,
+      "duration": 4.44,
+      "text": "and I'll give this token some access so"
+    },
+    {
+      "start": 828.12,
+      "duration": 3.959,
+      "text": "a repo I can make this value for seven"
+    },
+    {
+      "start": 830.399,
+      "duration": 3.721,
+      "text": "days"
+    },
+    {
+      "start": 832.079,
+      "duration": 4.801,
+      "text": "and I can also give access to delete"
+    },
+    {
+      "start": 834.12,
+      "duration": 4.8,
+      "text": "repository which is"
+    },
+    {
+      "start": 836.88,
+      "duration": 4.139,
+      "text": "here okay"
+    },
+    {
+      "start": 838.92,
+      "duration": 3.84,
+      "text": "and I can also give an repository for"
+    },
+    {
+      "start": 841.019,
+      "duration": 4.021,
+      "text": "organization"
+    },
+    {
+      "start": 842.76,
+      "duration": 3.9,
+      "text": "which is not necessary but that's my so"
+    },
+    {
+      "start": 845.04,
+      "duration": 5.34,
+      "text": "I'm going to now create generate token"
+    },
+    {
+      "start": 846.66,
+      "duration": 6.239,
+      "text": "and I'll add rough form"
+    },
+    {
+      "start": 850.38,
+      "duration": 4.079,
+      "text": "here as a name and let's click on"
+    },
+    {
+      "start": 852.899,
+      "duration": 3.361,
+      "text": "generate token once I click on this I"
+    },
+    {
+      "start": 854.459,
+      "duration": 4.981,
+      "text": "get this token and now I'm going to use"
+    },
+    {
+      "start": 856.26,
+      "duration": 6.78,
+      "text": "that in here so I'll say token"
+    },
+    {
+      "start": 859.44,
+      "duration": 5.88,
+      "text": "equals to testing in double Goods okay"
+    },
+    {
+      "start": 863.04,
+      "duration": 3.18,
+      "text": "so now I've added another provider if I"
+    },
+    {
+      "start": 865.32,
+      "duration": 4.44,
+      "text": "want to install it I need to say"
+    },
+    {
+      "start": 866.22,
+      "duration": 6.54,
+      "text": "terraform init and it will then uh okay"
+    },
+    {
+      "start": 869.76,
+      "duration": 4.92,
+      "text": "I think I didn't save this or I didn't"
+    },
+    {
+      "start": 872.76,
+      "duration": 3.9,
+      "text": "remove this all right whenever you're"
+    },
+    {
+      "start": 874.68,
+      "duration": 3.839,
+      "text": "using two providers with same name you"
+    },
+    {
+      "start": 876.66,
+      "duration": 3.179,
+      "text": "need to use a layers that you have not"
+    },
+    {
+      "start": 878.519,
+      "duration": 3.481,
+      "text": "defined so I'm going to save and now it"
+    },
+    {
+      "start": 879.839,
+      "duration": 4.5,
+      "text": "should not show me the same error and it"
+    },
+    {
+      "start": 882.0,
+      "duration": 4.139,
+      "text": "should start installing GitHub provider"
+    },
+    {
+      "start": 884.339,
+      "duration": 4.44,
+      "text": "so you can see it is now installing"
+    },
+    {
+      "start": 886.139,
+      "duration": 3.661,
+      "text": "provider for GitHub finding and"
+    },
+    {
+      "start": 888.779,
+      "duration": 2.941,
+      "text": "installing and now it has been"
+    },
+    {
+      "start": 889.8,
+      "duration": 4.62,
+      "text": "successfully initialized so I can create"
+    },
+    {
+      "start": 891.72,
+      "duration": 4.14,
+      "text": "a GitHub repository here as well so"
+    },
+    {
+      "start": 894.42,
+      "duration": 3.479,
+      "text": "let's get another resource name it"
+    },
+    {
+      "start": 895.86,
+      "duration": 5.82,
+      "text": "resource and the name of the resource is"
+    },
+    {
+      "start": 897.899,
+      "duration": 6.421,
+      "text": "going to be GitHub underscore Repository"
+    },
+    {
+      "start": 901.68,
+      "duration": 5.04,
+      "text": "if you're in doubt all any time you can"
+    },
+    {
+      "start": 904.32,
+      "duration": 4.379,
+      "text": "always use the documentation so I can"
+    },
+    {
+      "start": 906.72,
+      "duration": 4.14,
+      "text": "have the documentation here by GitHub"
+    },
+    {
+      "start": 908.699,
+      "duration": 5.82,
+      "text": "you can see resources and I can go to"
+    },
+    {
+      "start": 910.86,
+      "duration": 4.979,
+      "text": "GitHub repository resource which is here"
+    },
+    {
+      "start": 914.519,
+      "duration": 4.081,
+      "text": "and let's try to create a GitHub"
+    },
+    {
+      "start": 915.839,
+      "duration": 5.821,
+      "text": "repository using this example here so"
+    },
+    {
+      "start": 918.6,
+      "duration": 5.16,
+      "text": "I'm going to just use this four lines"
+    },
+    {
+      "start": 921.66,
+      "duration": 3.78,
+      "text": "and paste it so resource is GitHub"
+    },
+    {
+      "start": 923.76,
+      "duration": 3.66,
+      "text": "repository this is the name of the"
+    },
+    {
+      "start": 925.44,
+      "duration": 3.42,
+      "text": "resource the name of the repository can"
+    },
+    {
+      "start": 927.42,
+      "duration": 4.159,
+      "text": "be anything let's say my"
+    },
+    {
+      "start": 928.86,
+      "duration": 2.719,
+      "text": "awesome"
+    },
+    {
+      "start": 931.74,
+      "duration": 3.959,
+      "text": "GitHub"
+    },
+    {
+      "start": 933.6,
+      "duration": 4.32,
+      "text": "for a book you can choose to use another"
+    },
+    {
+      "start": 935.699,
+      "duration": 4.5,
+      "text": "name because this might not be available"
+    },
+    {
+      "start": 937.92,
+      "duration": 3.84,
+      "text": "so"
+    },
+    {
+      "start": 940.199,
+      "duration": 4.681,
+      "text": "here in the description I'm going to say"
+    },
+    {
+      "start": 941.76,
+      "duration": 7.74,
+      "text": "this repo"
+    },
+    {
+      "start": 944.88,
+      "duration": 5.94,
+      "text": "is created using terraform"
+    },
+    {
+      "start": 949.5,
+      "duration": 2.94,
+      "text": "and now I'm going to close this because"
+    },
+    {
+      "start": 950.82,
+      "duration": 4.62,
+      "text": "here you can see it gives you a syntax"
+    },
+    {
+      "start": 952.44,
+      "duration": 4.38,
+      "text": "issue if you don't close it so once I"
+    },
+    {
+      "start": 955.44,
+      "duration": 3.3,
+      "text": "close it let's turn data from plan"
+    },
+    {
+      "start": 956.82,
+      "duration": 4.259,
+      "text": "according to the plan it should say one"
+    },
+    {
+      "start": 958.74,
+      "duration": 5.779,
+      "text": "repository is going to be created and"
+    },
+    {
+      "start": 961.079,
+      "duration": 3.44,
+      "text": "now when I run an FM plan"
+    },
+    {
+      "start": 967.44,
+      "duration": 3.06,
+      "text": "you can see it's going to check the"
+    },
+    {
+      "start": 969.0,
+      "duration": 3.36,
+      "text": "state file we're going to learn about"
+    },
+    {
+      "start": 970.5,
+      "duration": 3.6,
+      "text": "State as well so once the state is"
+    },
+    {
+      "start": 972.36,
+      "duration": 3.9,
+      "text": "checked it is going to show that a"
+    },
+    {
+      "start": 974.1,
+      "duration": 4.2,
+      "text": "GitHub repository.example will be"
+    },
+    {
+      "start": 976.26,
+      "duration": 4.74,
+      "text": "created GitHub repository dot example"
+    },
+    {
+      "start": 978.3,
+      "duration": 4.32,
+      "text": "will be created and then if you're fine"
+    },
+    {
+      "start": 981.0,
+      "duration": 3.12,
+      "text": "let's go over therefore apply command so"
+    },
+    {
+      "start": 982.62,
+      "duration": 4.38,
+      "text": "therefore apply command and then it will"
+    },
+    {
+      "start": 984.12,
+      "duration": 4.8,
+      "text": "ask me am I sure so I'll type yes and it"
+    },
+    {
+      "start": 987.0,
+      "duration": 4.92,
+      "text": "will then create a GitHub repository in"
+    },
+    {
+      "start": 988.92,
+      "duration": 5.46,
+      "text": "my profile so let's wait for it to ask"
+    },
+    {
+      "start": 991.92,
+      "duration": 4.919,
+      "text": "us I'm going to say yes as a value yes"
+    },
+    {
+      "start": 994.38,
+      "duration": 4.5,
+      "text": "will be accepted once I do that let me"
+    },
+    {
+      "start": 996.839,
+      "duration": 3.56,
+      "text": "show you that"
+    },
+    {
+      "start": 998.88,
+      "duration": 5.639,
+      "text": "a new"
+    },
+    {
+      "start": 1000.399,
+      "duration": 6.161,
+      "text": "repository will be created"
+    },
+    {
+      "start": 1004.519,
+      "duration": 3.961,
+      "text": "so you can see my awesome GitHub repo"
+    },
+    {
+      "start": 1006.56,
+      "duration": 4.74,
+      "text": "has been updated now and it has been"
+    },
+    {
+      "start": 1008.48,
+      "duration": 4.799,
+      "text": "created using terraform so this is"
+    },
+    {
+      "start": 1011.3,
+      "duration": 4.86,
+      "text": "awesome you can you have now learned how"
+    },
+    {
+      "start": 1013.279,
+      "duration": 4.321,
+      "text": "to create repositories a on GitHub using"
+    },
+    {
+      "start": 1016.16,
+      "duration": 4.2,
+      "text": "terraform we have used two different"
+    },
+    {
+      "start": 1017.6,
+      "duration": 5.64,
+      "text": "providers in this thing we have used AWS"
+    },
+    {
+      "start": 1020.36,
+      "duration": 4.86,
+      "text": "provider to create an ec2 instance in"
+    },
+    {
+      "start": 1023.24,
+      "duration": 4.14,
+      "text": "AWS we have also used GitHub provider to"
+    },
+    {
+      "start": 1025.22,
+      "duration": 3.66,
+      "text": "create a repository using terraform"
+    },
+    {
+      "start": 1027.38,
+      "duration": 3.36,
+      "text": "which is awesome I hope you have"
+    },
+    {
+      "start": 1028.88,
+      "duration": 3.36,
+      "text": "understood how terraform Works let's say"
+    },
+    {
+      "start": 1030.74,
+      "duration": 3.36,
+      "text": "you want to use another provider with"
+    },
+    {
+      "start": 1032.24,
+      "duration": 4.02,
+      "text": "the same name there can be a situation"
+    },
+    {
+      "start": 1034.1,
+      "duration": 4.26,
+      "text": "where you are creating resources in U.S"
+    },
+    {
+      "start": 1036.26,
+      "duration": 4.319,
+      "text": "east but also in US West or some other"
+    },
+    {
+      "start": 1038.36,
+      "duration": 5.219,
+      "text": "region so if you want to use that you"
+    },
+    {
+      "start": 1040.579,
+      "duration": 5.22,
+      "text": "need to Define Elias in provider so I'm"
+    },
+    {
+      "start": 1043.579,
+      "duration": 4.081,
+      "text": "going to say AWS and I'm going to say"
+    },
+    {
+      "start": 1045.799,
+      "duration": 5.88,
+      "text": "region is going to be"
+    },
+    {
+      "start": 1047.66,
+      "duration": 5.639,
+      "text": "is going to be us Dash West Dash 2 or"
+    },
+    {
+      "start": 1051.679,
+      "duration": 4.201,
+      "text": "something else you can use anything but"
+    },
+    {
+      "start": 1053.299,
+      "duration": 4.321,
+      "text": "if I want to use the same provider and"
+    },
+    {
+      "start": 1055.88,
+      "duration": 3.9,
+      "text": "if I try to run 10 of a minute command"
+    },
+    {
+      "start": 1057.62,
+      "duration": 3.36,
+      "text": "you'll see whatever I got so I'm going"
+    },
+    {
+      "start": 1059.78,
+      "duration": 4.08,
+      "text": "to say"
+    },
+    {
+      "start": 1060.98,
+      "duration": 5.46,
+      "text": "terraform init and you'll see it says"
+    },
+    {
+      "start": 1063.86,
+      "duration": 4.199,
+      "text": "duplicate provider configuration if you"
+    },
+    {
+      "start": 1066.44,
+      "duration": 3.119,
+      "text": "want to use the same name again and"
+    },
+    {
+      "start": 1068.059,
+      "duration": 3.841,
+      "text": "again you need to use"
+    },
+    {
+      "start": 1069.559,
+      "duration": 4.021,
+      "text": "Elias set dlis argument for alternative"
+    },
+    {
+      "start": 1071.9,
+      "duration": 2.76,
+      "text": "configuration so in the Allies I'm going"
+    },
+    {
+      "start": 1073.58,
+      "duration": 2.88,
+      "text": "to say"
+    },
+    {
+      "start": 1074.66,
+      "duration": 4.68,
+      "text": "unless"
+    },
+    {
+      "start": 1076.46,
+      "duration": 4.44,
+      "text": "is going to be let's say West"
+    },
+    {
+      "start": 1079.34,
+      "duration": 3.06,
+      "text": "so if I want to create a resource"
+    },
+    {
+      "start": 1080.9,
+      "duration": 5.46,
+      "text": "similar to this in different region I"
+    },
+    {
+      "start": 1082.4,
+      "duration": 8.04,
+      "text": "need to Define provider as provider is"
+    },
+    {
+      "start": 1086.36,
+      "duration": 5.699,
+      "text": "going to be AWS dot name of the Elias"
+    },
+    {
+      "start": 1090.44,
+      "duration": 4.2,
+      "text": "which is West here"
+    },
+    {
+      "start": 1092.059,
+      "duration": 4.921,
+      "text": "right so using this I can create this"
+    },
+    {
+      "start": 1094.64,
+      "duration": 4.62,
+      "text": "resource in different region and this is"
+    },
+    {
+      "start": 1096.98,
+      "duration": 4.8,
+      "text": "how you can Define you can Define tooths"
+    },
+    {
+      "start": 1099.26,
+      "duration": 4.68,
+      "text": "same provider in data for if you have"
+    },
+    {
+      "start": 1101.78,
+      "duration": 3.72,
+      "text": "any questions any doubt let me know in"
+    },
+    {
+      "start": 1103.94,
+      "duration": 3.239,
+      "text": "the comment section"
+    },
+    {
+      "start": 1105.5,
+      "duration": 3.419,
+      "text": "I hope your registered providers"
+    },
+    {
+      "start": 1107.179,
+      "duration": 3.24,
+      "text": "properly and this is the documentation"
+    },
+    {
+      "start": 1108.919,
+      "duration": 3.421,
+      "text": "the link is going to be there in the"
+    },
+    {
+      "start": 1110.419,
+      "duration": 3.721,
+      "text": "description if you have any questions"
+    },
+    {
+      "start": 1112.34,
+      "duration": 3.6,
+      "text": "regarding providers let me know in the"
+    },
+    {
+      "start": 1114.14,
+      "duration": 3.02,
+      "text": "comment section in the next video we are"
+    },
+    {
+      "start": 1115.94,
+      "duration": 6.239,
+      "text": "going to learn how to create different"
+    },
+    {
+      "start": 1117.16,
+      "duration": 7.0,
+      "text": "AWS resources like ec2 S3 VPC RDS IEM"
+    },
+    {
+      "start": 1122.179,
+      "duration": 4.441,
+      "text": "and so much more so make sure you watch"
+    },
+    {
+      "start": 1124.16,
+      "duration": 4.32,
+      "text": "the video but using this video you have"
+    },
+    {
+      "start": 1126.62,
+      "duration": 4.08,
+      "text": "learned how to create your ec2 instances"
+    },
+    {
+      "start": 1128.48,
+      "duration": 5.04,
+      "text": "so I want you to practice along and try"
+    },
+    {
+      "start": 1130.7,
+      "duration": 5.46,
+      "text": "to create easy to instance and GitHub uh"
+    },
+    {
+      "start": 1133.52,
+      "duration": 4.88,
+      "text": "using terraform so thank you and have a"
+    },
+    {
+      "start": 1136.16,
+      "duration": 2.24,
+      "text": "good day"
+    },
+    {
+      "start": 1142.6,
+      "duration": 3.0,
+      "text": "thank you"
+    },
+    {
+      "start": 1145.94,
+      "duration": 3.0,
+      "text": "foreign"
+    },
+    {
+      "start": 1149.96,
+      "duration": 4.749,
+      "text": "laughs"
+    },
+    {
+      "start": 1151.63,
+      "duration": 3.079,
+      "text": "[Applause]"
+    }
+  ]
+}

@@ -1,0 +1,2176 @@
+{
+  "video": {
+    "id": "1hF-HRq5Mww",
+    "title": "What is GitOps | GitOps explained with ArgoCD project",
+    "url": "https://www.youtube.com/watch?v=1hF-HRq5Mww",
+    "duration": 951,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.76,
+      "duration": 4.92,
+      "text": "if you are a devops engineer you might"
+    },
+    {
+      "start": 2.48,
+      "duration": 6.84,
+      "text": "have heard about a very popular term"
+    },
+    {
+      "start": 5.68,
+      "duration": 5.4,
+      "text": "gitops but what the is kops so in"
+    },
+    {
+      "start": 9.32,
+      "duration": 4.199,
+      "text": "this video I will be explaining you what"
+    },
+    {
+      "start": 11.08,
+      "duration": 4.4,
+      "text": "gitops is how we use it in real world"
+    },
+    {
+      "start": 13.519,
+      "duration": 4.52,
+      "text": "applications what are benefits of using"
+    },
+    {
+      "start": 15.48,
+      "duration": 4.6,
+      "text": "gitops and also a Hands-On project where"
+    },
+    {
+      "start": 18.039,
+      "duration": 4.641,
+      "text": "we deploy a simple application on"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.92,
+      "text": "kubernetes using a very popular gitops"
+    },
+    {
+      "start": 22.68,
+      "duration": 4.679,
+      "text": "tool Argo CD this is going to be the"
+    },
+    {
+      "start": 25.0,
+      "duration": 4.24,
+      "text": "only video you need to understand giops"
+    },
+    {
+      "start": 27.359,
+      "duration": 4.601,
+      "text": "from scratch so watch this video till"
+    },
+    {
+      "start": 29.24,
+      "duration": 2.72,
+      "text": "the end let's"
+    },
+    {
+      "start": 39.12,
+      "duration": 4.88,
+      "text": "start hey everyone and Welcome to Cloud"
+    },
+    {
+      "start": 41.68,
+      "duration": 4.28,
+      "text": "champ let's start with understanding"
+    },
+    {
+      "start": 44.0,
+      "duration": 3.6,
+      "text": "what is gitops before we move ahead with"
+    },
+    {
+      "start": 45.96,
+      "duration": 3.119,
+      "text": "different benefits and the Practical"
+    },
+    {
+      "start": 47.6,
+      "duration": 4.959,
+      "text": "example of deploying an application"
+    },
+    {
+      "start": 49.079,
+      "duration": 5.64,
+      "text": "using giops technology what is giops so"
+    },
+    {
+      "start": 52.559,
+      "duration": 4.601,
+      "text": "giops as the name suggest combines of"
+    },
+    {
+      "start": 54.719,
+      "duration": 4.48,
+      "text": "git and Ops which is a devops practice"
+    },
+    {
+      "start": 57.16,
+      "duration": 3.32,
+      "text": "that uses git repositories as a single"
+    },
+    {
+      "start": 59.199,
+      "duration": 2.88,
+      "text": "source of Truth"
+    },
+    {
+      "start": 60.48,
+      "duration": 3.399,
+      "text": "as a devops engineer you might already"
+    },
+    {
+      "start": 62.079,
+      "duration": 3.481,
+      "text": "be familiar with Git which is a Version"
+    },
+    {
+      "start": 63.879,
+      "duration": 3.521,
+      "text": "Control tool that lets you store your"
+    },
+    {
+      "start": 65.56,
+      "duration": 4.72,
+      "text": "code on different repositories like"
+    },
+    {
+      "start": 67.4,
+      "duration": 4.68,
+      "text": "GitHub or gitlab or bid bucket so giops"
+    },
+    {
+      "start": 70.28,
+      "duration": 3.6,
+      "text": "is a devops practice where you have git"
+    },
+    {
+      "start": 72.08,
+      "duration": 4.359,
+      "text": "as a single source of Tru to deploy your"
+    },
+    {
+      "start": 73.88,
+      "duration": 4.919,
+      "text": "applications to manage infrastructure or"
+    },
+    {
+      "start": 76.439,
+      "duration": 3.961,
+      "text": "also to configure them let's try to"
+    },
+    {
+      "start": 78.799,
+      "duration": 3.601,
+      "text": "understand this with real world examples"
+    },
+    {
+      "start": 80.4,
+      "duration": 4.28,
+      "text": "and see how giops can be used with"
+    },
+    {
+      "start": 82.4,
+      "duration": 5.44,
+      "text": "popular devops tools like kubernetes"
+    },
+    {
+      "start": 84.68,
+      "duration": 4.84,
+      "text": "Anil or terraform to make this easier"
+    },
+    {
+      "start": 87.84,
+      "duration": 4.239,
+      "text": "let's understand what happens when we"
+    },
+    {
+      "start": 89.52,
+      "duration": 4.4,
+      "text": "don't use giops starting with kubernetes"
+    },
+    {
+      "start": 92.079,
+      "duration": 3.841,
+      "text": "so in kubernetes we have to write down"
+    },
+    {
+      "start": 93.92,
+      "duration": 4.36,
+      "text": "our manifest file to create different"
+    },
+    {
+      "start": 95.92,
+      "duration": 4.879,
+      "text": "components like Services deployments"
+    },
+    {
+      "start": 98.28,
+      "duration": 4.68,
+      "text": "boards nodes config map and ultimately"
+    },
+    {
+      "start": 100.799,
+      "duration": 3.96,
+      "text": "deploy your application similarly in"
+    },
+    {
+      "start": 102.96,
+      "duration": 3.759,
+      "text": "terraform you have to write down your"
+    },
+    {
+      "start": 104.759,
+      "duration": 4.4,
+      "text": "scripts that will create resources in"
+    },
+    {
+      "start": 106.719,
+      "duration": 4.4,
+      "text": "different Cloud providers and in anible"
+    },
+    {
+      "start": 109.159,
+      "duration": 4.721,
+      "text": "we have to write down playbooks that can"
+    },
+    {
+      "start": 111.119,
+      "duration": 5.04,
+      "text": "configure servers but after you create"
+    },
+    {
+      "start": 113.88,
+      "duration": 4.879,
+      "text": "manifest files you have to manually run"
+    },
+    {
+      "start": 116.159,
+      "duration": 4.24,
+      "text": "CBE C create or apply to have that"
+    },
+    {
+      "start": 118.759,
+      "duration": 3.32,
+      "text": "component in your clust"
+    },
+    {
+      "start": 120.399,
+      "duration": 3.561,
+      "text": "similarly in terraform you need to run"
+    },
+    {
+      "start": 122.079,
+      "duration": 4.4,
+      "text": "terraform apply command to create"
+    },
+    {
+      "start": 123.96,
+      "duration": 4.519,
+      "text": "resources in the cloud and in anible you"
+    },
+    {
+      "start": 126.479,
+      "duration": 3.681,
+      "text": "need to run anible Playbook command to"
+    },
+    {
+      "start": 128.479,
+      "duration": 4.521,
+      "text": "configure servers and run the Playbook"
+    },
+    {
+      "start": 130.16,
+      "duration": 5.4,
+      "text": "on different servers and gitops automate"
+    },
+    {
+      "start": 133.0,
+      "duration": 4.08,
+      "text": "exactly this process now deploying an"
+    },
+    {
+      "start": 135.56,
+      "duration": 3.24,
+      "text": "application manually or creating"
+    },
+    {
+      "start": 137.08,
+      "duration": 3.799,
+      "text": "infrastructure or configuring servers"
+    },
+    {
+      "start": 138.8,
+      "duration": 5.2,
+      "text": "manually can cause a lot of issues like"
+    },
+    {
+      "start": 140.879,
+      "duration": 4.841,
+      "text": "increase risk slower deployment time uh"
+    },
+    {
+      "start": 144.0,
+      "duration": 3.28,
+      "text": "difficulty in roll back and lot more"
+    },
+    {
+      "start": 145.72,
+      "duration": 4.96,
+      "text": "instead of doing this manually you can"
+    },
+    {
+      "start": 147.28,
+      "duration": 5.4,
+      "text": "use giops tools like AR CD and CD which"
+    },
+    {
+      "start": 150.68,
+      "duration": 3.96,
+      "text": "uses your git repository as single"
+    },
+    {
+      "start": 152.68,
+      "duration": 3.559,
+      "text": "source of Truth so how this actually"
+    },
+    {
+      "start": 154.64,
+      "duration": 3.48,
+      "text": "works is you will connect your git"
+    },
+    {
+      "start": 156.239,
+      "duration": 3.961,
+      "text": "repository with giops tool and it will"
+    },
+    {
+      "start": 158.12,
+      "duration": 4.0,
+      "text": "constantly check your repository if you"
+    },
+    {
+      "start": 160.2,
+      "duration": 3.56,
+      "text": "have made any changes so let's say you"
+    },
+    {
+      "start": 162.12,
+      "duration": 3.56,
+      "text": "changed the image in the deployment"
+    },
+    {
+      "start": 163.76,
+      "duration": 3.92,
+      "text": "manifest you don't have to manually run"
+    },
+    {
+      "start": 165.68,
+      "duration": 3.8,
+      "text": "Cube apply the giops tool will"
+    },
+    {
+      "start": 167.68,
+      "duration": 3.559,
+      "text": "automatically detect any changes you"
+    },
+    {
+      "start": 169.48,
+      "duration": 4.039,
+      "text": "made and synchronizes your application"
+    },
+    {
+      "start": 171.239,
+      "duration": 4.64,
+      "text": "or infrastructure to match the desired"
+    },
+    {
+      "start": 173.519,
+      "duration": 4.561,
+      "text": "state that you have defined in your git"
+    },
+    {
+      "start": 175.879,
+      "duration": 4.201,
+      "text": "repository this is why definition says"
+    },
+    {
+      "start": 178.08,
+      "duration": 3.84,
+      "text": "that gitops uses git as a a single"
+    },
+    {
+      "start": 180.08,
+      "duration": 3.56,
+      "text": "source of Tru because anything that you"
+    },
+    {
+      "start": 181.92,
+      "duration": 4.12,
+      "text": "have mentioned in your git repository"
+    },
+    {
+      "start": 183.64,
+      "duration": 4.44,
+      "text": "will be shown in your application and if"
+    },
+    {
+      "start": 186.04,
+      "duration": 3.479,
+      "text": "there is any issue it can roll back as"
+    },
+    {
+      "start": 188.08,
+      "duration": 4.519,
+      "text": "well now let's look at different"
+    },
+    {
+      "start": 189.519,
+      "duration": 5.28,
+      "text": "advantages you can get when using giops"
+    },
+    {
+      "start": 192.599,
+      "duration": 3.92,
+      "text": "the first benefit of giops is obviously"
+    },
+    {
+      "start": 194.799,
+      "duration": 3.561,
+      "text": "automation with get offs you can"
+    },
+    {
+      "start": 196.519,
+      "duration": 4.041,
+      "text": "automate the deployment and management"
+    },
+    {
+      "start": 198.36,
+      "duration": 3.959,
+      "text": "of infrastructure reducing the need of"
+    },
+    {
+      "start": 200.56,
+      "duration": 4.319,
+      "text": "any manual intervention and minimizing"
+    },
+    {
+      "start": 202.319,
+      "duration": 4.761,
+      "text": "human errors second benefit is Version"
+    },
+    {
+      "start": 204.879,
+      "duration": 4.44,
+      "text": "Control with Git as a foundation in"
+    },
+    {
+      "start": 207.08,
+      "duration": 4.56,
+      "text": "gitops you have full version control and"
+    },
+    {
+      "start": 209.319,
+      "duration": 5.081,
+      "text": "you can easily track any changes or roll"
+    },
+    {
+      "start": 211.64,
+      "duration": 4.679,
+      "text": "back if any issue arises next is"
+    },
+    {
+      "start": 214.4,
+      "duration": 3.559,
+      "text": "consistency when you use gitops with"
+    },
+    {
+      "start": 216.319,
+      "duration": 3.881,
+      "text": "your different environments like staging"
+    },
+    {
+      "start": 217.959,
+      "duration": 4.56,
+      "text": "production and development all of them"
+    },
+    {
+      "start": 220.2,
+      "duration": 3.72,
+      "text": "will have same configuration settings"
+    },
+    {
+      "start": 222.519,
+      "duration": 3.241,
+      "text": "that you have defined in your git"
+    },
+    {
+      "start": 223.92,
+      "duration": 3.879,
+      "text": "repositories which will avoid any"
+    },
+    {
+      "start": 225.76,
+      "duration": 4.72,
+      "text": "configuration issues that might occur if"
+    },
+    {
+      "start": 227.799,
+      "duration": 5.0,
+      "text": "you do it manually another benefit of"
+    },
+    {
+      "start": 230.48,
+      "duration": 4.36,
+      "text": "using giops could be security so you can"
+    },
+    {
+      "start": 232.799,
+      "duration": 4.0,
+      "text": "control access to your get repositories"
+    },
+    {
+      "start": 234.84,
+      "duration": 3.8,
+      "text": "providing robust security and only"
+    },
+    {
+      "start": 236.799,
+      "duration": 3.881,
+      "text": "allowing authorized users to make"
+    },
+    {
+      "start": 238.64,
+      "duration": 4.48,
+      "text": "changes to your app applications or to"
+    },
+    {
+      "start": 240.68,
+      "duration": 4.36,
+      "text": "your infrastructure last benefit could"
+    },
+    {
+      "start": 243.12,
+      "duration": 3.759,
+      "text": "be efficiency or faster time to"
+    },
+    {
+      "start": 245.04,
+      "duration": 3.24,
+      "text": "deployments when using giops you don't"
+    },
+    {
+      "start": 246.879,
+      "duration": 2.681,
+      "text": "have to manually run the commands"
+    },
+    {
+      "start": 248.28,
+      "duration": 3.72,
+      "text": "reducing the time that it takes to"
+    },
+    {
+      "start": 249.56,
+      "duration": 4.72,
+      "text": "deploy your changes or your updates it's"
+    },
+    {
+      "start": 252.0,
+      "duration": 4.6,
+      "text": "time for Hands-On project at this point"
+    },
+    {
+      "start": 254.28,
+      "duration": 4.04,
+      "text": "I am hoping you understood what is giops"
+    },
+    {
+      "start": 256.6,
+      "duration": 3.0,
+      "text": "along with different benefits of it if"
+    },
+    {
+      "start": 258.32,
+      "duration": 3.0,
+      "text": "you didn't understand it let me know in"
+    },
+    {
+      "start": 259.6,
+      "duration": 3.8,
+      "text": "the comment section that this video has"
+    },
+    {
+      "start": 261.32,
+      "duration": 4.24,
+      "text": "helped you understand gitops let's go"
+    },
+    {
+      "start": 263.4,
+      "duration": 4.56,
+      "text": "with practicing itops in action using"
+    },
+    {
+      "start": 265.56,
+      "duration": 4.44,
+      "text": "Argo CD and deploying a game on"
+    },
+    {
+      "start": 267.96,
+      "duration": 3.32,
+      "text": "kubernetes all right so I'm here on my"
+    },
+    {
+      "start": 270.0,
+      "duration": 3.759,
+      "text": "computer screen and let's start with"
+    },
+    {
+      "start": 271.28,
+      "duration": 5.44,
+      "text": "deploying a Tetris game on elastic"
+    },
+    {
+      "start": 273.759,
+      "duration": 4.88,
+      "text": "kubernetes service using Argo CD so we"
+    },
+    {
+      "start": 276.72,
+      "duration": 3.88,
+      "text": "will go ahead and create a cluster to"
+    },
+    {
+      "start": 278.639,
+      "duration": 4.481,
+      "text": "create a cluster you can go to elastic"
+    },
+    {
+      "start": 280.6,
+      "duration": 4.76,
+      "text": "kubernetes service in Amazon Cloud and"
+    },
+    {
+      "start": 283.12,
+      "duration": 4.76,
+      "text": "then click on create for this let's name"
+    },
+    {
+      "start": 285.36,
+      "duration": 4.0,
+      "text": "this cluster as kops and I'm going to"
+    },
+    {
+      "start": 287.88,
+      "duration": 3.72,
+      "text": "choose the version which is the latest"
+    },
+    {
+      "start": 289.36,
+      "duration": 5.04,
+      "text": "one this is the rule for the cluster and"
+    },
+    {
+      "start": 291.6,
+      "duration": 4.12,
+      "text": "click on next option here for VPC I'm"
+    },
+    {
+      "start": 294.4,
+      "duration": 3.48,
+      "text": "going to choose the default VPC you can"
+    },
+    {
+      "start": 295.72,
+      "duration": 3.88,
+      "text": "choose any one and I'll avoid using my"
+    },
+    {
+      "start": 297.88,
+      "duration": 4.0,
+      "text": "private subnets so let's choose the"
+    },
+    {
+      "start": 299.6,
+      "duration": 2.28,
+      "text": "public"
+    },
+    {
+      "start": 302.68,
+      "duration": 5.959,
+      "text": "one okay for Security Group I'm going to"
+    },
+    {
+      "start": 305.479,
+      "duration": 4.681,
+      "text": "use my uh Security Group which is this"
+    },
+    {
+      "start": 308.639,
+      "duration": 4.4,
+      "text": "one you can choose any and let's go"
+    },
+    {
+      "start": 310.16,
+      "duration": 5.4,
+      "text": "ahead with creating next no need to"
+    },
+    {
+      "start": 313.039,
+      "duration": 5.44,
+      "text": "enable logging add-ons I'm going to keep"
+    },
+    {
+      "start": 315.56,
+      "duration": 5.44,
+      "text": "the default once let's click on next and"
+    },
+    {
+      "start": 318.479,
+      "duration": 4.881,
+      "text": "this is going to create our kubernetes"
+    },
+    {
+      "start": 321.0,
+      "duration": 4.84,
+      "text": "cluster kubernetes cluster usually takes"
+    },
+    {
+      "start": 323.36,
+      "duration": 4.0,
+      "text": "10 to 15 minutes to create so we have to"
+    },
+    {
+      "start": 325.84,
+      "duration": 3.88,
+      "text": "wait for it to be creating so that we"
+    },
+    {
+      "start": 327.36,
+      "duration": 4.08,
+      "text": "can go ahead and add our nodes till the"
+    },
+    {
+      "start": 329.72,
+      "duration": 4.039,
+      "text": "time this is going to be created let me"
+    },
+    {
+      "start": 331.44,
+      "duration": 4.08,
+      "text": "show you this tetr scheme Docker images"
+    },
+    {
+      "start": 333.759,
+      "duration": 3.801,
+      "text": "created on my Docker Hub which we will"
+    },
+    {
+      "start": 335.52,
+      "duration": 5.04,
+      "text": "be using in our manifest file we will be"
+    },
+    {
+      "start": 337.56,
+      "duration": 5.359,
+      "text": "using this image on dockerhub to deploy"
+    },
+    {
+      "start": 340.56,
+      "duration": 5.0,
+      "text": "our tedra scheme I have the Manifest"
+    },
+    {
+      "start": 342.919,
+      "duration": 5.081,
+      "text": "file ready in my vs code and don't worry"
+    },
+    {
+      "start": 345.56,
+      "duration": 3.359,
+      "text": "I'll be sharing this with you on GitHub"
+    },
+    {
+      "start": 348.0,
+      "duration": 2.84,
+      "text": "the link is going to be in the"
+    },
+    {
+      "start": 348.919,
+      "duration": 4.72,
+      "text": "description so we have a deployment file"
+    },
+    {
+      "start": 350.84,
+      "duration": 4.76,
+      "text": "which is using Tetris uh as an image and"
+    },
+    {
+      "start": 353.639,
+      "duration": 4.28,
+      "text": "we want this to be deployed through Argo"
+    },
+    {
+      "start": 355.6,
+      "duration": 4.039,
+      "text": "CD automatically using gitops along with"
+    },
+    {
+      "start": 357.919,
+      "duration": 4.0,
+      "text": "this deployment to expose it I have a"
+    },
+    {
+      "start": 359.639,
+      "duration": 4.4,
+      "text": "service file and this two manifest file"
+    },
+    {
+      "start": 361.919,
+      "duration": 4.041,
+      "text": "are inside a folder named as Manifest we"
+    },
+    {
+      "start": 364.039,
+      "duration": 3.481,
+      "text": "will have to create a GitHub repository"
+    },
+    {
+      "start": 365.96,
+      "duration": 3.2,
+      "text": "similar to what I have here so I have a"
+    },
+    {
+      "start": 367.52,
+      "duration": 3.84,
+      "text": "GitHub repository created you can also"
+    },
+    {
+      "start": 369.16,
+      "duration": 4.8,
+      "text": "go ahead and folk this repository or"
+    },
+    {
+      "start": 371.36,
+      "duration": 4.64,
+      "text": "clone the code to use the same so in"
+    },
+    {
+      "start": 373.96,
+      "duration": 3.799,
+      "text": "this manifest folder I have two manifest"
+    },
+    {
+      "start": 376.0,
+      "duration": 4.639,
+      "text": "one for deployment one for service"
+    },
+    {
+      "start": 377.759,
+      "duration": 5.121,
+      "text": "deployment is using the uh first version"
+    },
+    {
+      "start": 380.639,
+      "duration": 3.68,
+      "text": "of Tetris and we will then deploy the"
+    },
+    {
+      "start": 382.88,
+      "duration": 4.28,
+      "text": "second version of Tetris we want the"
+    },
+    {
+      "start": 384.319,
+      "duration": 4.921,
+      "text": "Argo CD to automatically deploy it using"
+    },
+    {
+      "start": 387.16,
+      "duration": 3.96,
+      "text": "gitops so I will wait for this cluster"
+    },
+    {
+      "start": 389.24,
+      "duration": 3.56,
+      "text": "to to come up in active State then go"
+    },
+    {
+      "start": 391.12,
+      "duration": 3.72,
+      "text": "ahead add the node groups and install"
+    },
+    {
+      "start": 392.8,
+      "duration": 3.92,
+      "text": "Argo CD on it I'll pause the video now"
+    },
+    {
+      "start": 394.84,
+      "duration": 4.28,
+      "text": "and come back when it's"
+    },
+    {
+      "start": 396.72,
+      "duration": 4.199,
+      "text": "ready okay now the cluster is in active"
+    },
+    {
+      "start": 399.12,
+      "duration": 3.199,
+      "text": "State let's go ahead and add node group"
+    },
+    {
+      "start": 400.919,
+      "duration": 3.68,
+      "text": "so I'm going to go in compute section"
+    },
+    {
+      "start": 402.319,
+      "duration": 3.801,
+      "text": "here and click on ADD node group we can"
+    },
+    {
+      "start": 404.599,
+      "duration": 3.281,
+      "text": "name this node groups as anything let's"
+    },
+    {
+      "start": 406.12,
+      "duration": 3.799,
+      "text": "name is nodes and for the IM rule I'm"
+    },
+    {
+      "start": 407.88,
+      "duration": 5.48,
+      "text": "choosing the Amazon eks node"
+    },
+    {
+      "start": 409.919,
+      "duration": 4.84,
+      "text": "Ru click on next option here and for the"
+    },
+    {
+      "start": 413.36,
+      "duration": 4.679,
+      "text": "instance type we will have to choose"
+    },
+    {
+      "start": 414.759,
+      "duration": 8.041,
+      "text": "something in the medium because Argo CD"
+    },
+    {
+      "start": 418.039,
+      "duration": 6.6,
+      "text": "requires a server with 2 CPU and 4GB of"
+    },
+    {
+      "start": 422.8,
+      "duration": 3.16,
+      "text": "RAM and that you can get only in medium"
+    },
+    {
+      "start": 424.639,
+      "duration": 2.96,
+      "text": "if you choose to go with micro which is"
+    },
+    {
+      "start": 425.96,
+      "duration": 3.639,
+      "text": "the free tier application you cannot"
+    },
+    {
+      "start": 427.599,
+      "duration": 4.521,
+      "text": "install Argo in it so we will go with"
+    },
+    {
+      "start": 429.599,
+      "duration": 5.081,
+      "text": "the medium which has two vcpus and 4GB"
+    },
+    {
+      "start": 432.12,
+      "duration": 5.199,
+      "text": "of ram which is required for Argo CD"
+    },
+    {
+      "start": 434.68,
+      "duration": 6.56,
+      "text": "installation so let's add that and click"
+    },
+    {
+      "start": 437.319,
+      "duration": 5.44,
+      "text": "on next so we have two nodes of T2 uh T3"
+    },
+    {
+      "start": 441.24,
+      "duration": 3.72,
+      "text": "medium we will select the subnets click"
+    },
+    {
+      "start": 442.759,
+      "duration": 4.16,
+      "text": "on next option here and then create this"
+    },
+    {
+      "start": 444.96,
+      "duration": 3.239,
+      "text": "node group node group also takes some"
+    },
+    {
+      "start": 446.919,
+      "duration": 2.881,
+      "text": "time so till the time node group is"
+    },
+    {
+      "start": 448.199,
+      "duration": 3.321,
+      "text": "going to be created so let's go ahead"
+    },
+    {
+      "start": 449.8,
+      "duration": 3.72,
+      "text": "and connect our cluster with the"
+    },
+    {
+      "start": 451.52,
+      "duration": 3.32,
+      "text": "terminal for this you need to have Cube"
+    },
+    {
+      "start": 453.52,
+      "duration": 2.519,
+      "text": "C installed and if you don't have it"
+    },
+    {
+      "start": 454.84,
+      "duration": 2.52,
+      "text": "installed you can go to the official"
+    },
+    {
+      "start": 456.039,
+      "duration": 3.241,
+      "text": "documentation or you can check my"
+    },
+    {
+      "start": 457.36,
+      "duration": 4.16,
+      "text": "previous videos which has the commands"
+    },
+    {
+      "start": 459.28,
+      "duration": 4.28,
+      "text": "to install Cube CTL so once you have"
+    },
+    {
+      "start": 461.52,
+      "duration": 3.48,
+      "text": "your Cube CTL and AWS CLI installed you"
+    },
+    {
+      "start": 463.56,
+      "duration": 3.0,
+      "text": "need to connect your cluster with the"
+    },
+    {
+      "start": 465.0,
+      "duration": 3.68,
+      "text": "terminal and I can do that by running"
+    },
+    {
+      "start": 466.56,
+      "duration": 4.88,
+      "text": "this command which is AWS eks update"
+    },
+    {
+      "start": 468.68,
+      "duration": 4.84,
+      "text": "Cube config D- name cluster name and the"
+    },
+    {
+      "start": 471.44,
+      "duration": 3.439,
+      "text": "region let's press enter and this will"
+    },
+    {
+      "start": 473.52,
+      "duration": 4.28,
+      "text": "give you an output saying added new"
+    },
+    {
+      "start": 474.879,
+      "duration": 5.04,
+      "text": "context and you can now run Cube CTL get"
+    },
+    {
+      "start": 477.8,
+      "duration": 4.28,
+      "text": "pods to get the pods in your C"
+    },
+    {
+      "start": 479.919,
+      "duration": 4.24,
+      "text": "we will see no resources found because"
+    },
+    {
+      "start": 482.08,
+      "duration": 3.76,
+      "text": "we don't have anything created yet let's"
+    },
+    {
+      "start": 484.159,
+      "duration": 3.88,
+      "text": "go ahead and install Argo CD for"
+    },
+    {
+      "start": 485.84,
+      "duration": 3.799,
+      "text": "installation I'm going to use this"
+    },
+    {
+      "start": 488.039,
+      "duration": 3.321,
+      "text": "documentation and the link for this will"
+    },
+    {
+      "start": 489.639,
+      "duration": 3.801,
+      "text": "be in the description so you can go"
+    },
+    {
+      "start": 491.36,
+      "duration": 4.559,
+      "text": "ahead and copy this commands which will"
+    },
+    {
+      "start": 493.44,
+      "duration": 5.28,
+      "text": "create namespace Argo CD and install AG"
+    },
+    {
+      "start": 495.919,
+      "duration": 6.68,
+      "text": "CD with the Manifest files so copy and"
+    },
+    {
+      "start": 498.72,
+      "duration": 5.72,
+      "text": "paste it here so as you can see it has"
+    },
+    {
+      "start": 502.599,
+      "duration": 3.921,
+      "text": "created name space and also creating all"
+    },
+    {
+      "start": 504.44,
+      "duration": 3.84,
+      "text": "the other stuff which means Aro CD is"
+    },
+    {
+      "start": 506.52,
+      "duration": 3.799,
+      "text": "installed you can optionally go ahead"
+    },
+    {
+      "start": 508.28,
+      "duration": 4.28,
+      "text": "and install the Aro CD CLI as well to"
+    },
+    {
+      "start": 510.319,
+      "duration": 4.041,
+      "text": "manage your applications on Argo CD"
+    },
+    {
+      "start": 512.56,
+      "duration": 3.279,
+      "text": "through CLI but I'm not going to do that"
+    },
+    {
+      "start": 514.36,
+      "duration": 3.08,
+      "text": "let's move ahead with exposing the Argo"
+    },
+    {
+      "start": 515.839,
+      "duration": 3.961,
+      "text": "CD and this is the command which will"
+    },
+    {
+      "start": 517.44,
+      "duration": 5.24,
+      "text": "create a load balancer and next we can"
+    },
+    {
+      "start": 519.8,
+      "duration": 4.8,
+      "text": "run this command to put the DNS of the"
+    },
+    {
+      "start": 522.68,
+      "duration": 4.0,
+      "text": "load balancer in the Argo CD server"
+    },
+    {
+      "start": 524.6,
+      "duration": 3.6,
+      "text": "variable and it has to take around 2 to"
+    },
+    {
+      "start": 526.68,
+      "duration": 3.32,
+      "text": "3 minutes because load balancer takes"
+    },
+    {
+      "start": 528.2,
+      "duration": 3.759,
+      "text": "time so I'm going to copy this after"
+    },
+    {
+      "start": 530.0,
+      "duration": 3.48,
+      "text": "some time I can run this command when"
+    },
+    {
+      "start": 531.959,
+      "duration": 4.081,
+      "text": "the load balancer is ready just to show"
+    },
+    {
+      "start": 533.48,
+      "duration": 4.12,
+      "text": "you let's come back to our ec2 dashboard"
+    },
+    {
+      "start": 536.04,
+      "duration": 3.44,
+      "text": "and go to load balancer to see if any"
+    },
+    {
+      "start": 537.6,
+      "duration": 3.72,
+      "text": "load balancer is in creating state date"
+    },
+    {
+      "start": 539.48,
+      "duration": 5.28,
+      "text": "or not as you can see there's a load"
+    },
+    {
+      "start": 541.32,
+      "duration": 7.639,
+      "text": "balancer created right now which is uh"
+    },
+    {
+      "start": 544.76,
+      "duration": 5.96,
+      "text": "152 or 153 so after waiting for 2"
+    },
+    {
+      "start": 548.959,
+      "duration": 4.521,
+      "text": "minutes you can run the next command"
+    },
+    {
+      "start": 550.72,
+      "duration": 4.32,
+      "text": "which is to put the load balancer DNS in"
+    },
+    {
+      "start": 553.48,
+      "duration": 5.2,
+      "text": "this particular variable so I'm going to"
+    },
+    {
+      "start": 555.04,
+      "duration": 5.76,
+      "text": "run it and press enter so it's giving me"
+    },
+    {
+      "start": 558.68,
+      "duration": 5.2,
+      "text": "an error because I don't have JQ which I"
+    },
+    {
+      "start": 560.8,
+      "duration": 3.08,
+      "text": "can install by running this"
+    },
+    {
+      "start": 564.88,
+      "duration": 4.0,
+      "text": "command Okay so JQ is installed and I'm"
+    },
+    {
+      "start": 567.36,
+      "duration": 3.919,
+      "text": "going to run the same command again"
+    },
+    {
+      "start": 568.88,
+      "duration": 5.48,
+      "text": "which is to store the load balances DNS"
+    },
+    {
+      "start": 571.279,
+      "duration": 6.481,
+      "text": "in the Argo CD server once I do this you"
+    },
+    {
+      "start": 574.36,
+      "duration": 5.32,
+      "text": "can confirm by running Echo dollar Argo"
+    },
+    {
+      "start": 577.76,
+      "duration": 4.44,
+      "text": "CD server and you have the load balancer"
+    },
+    {
+      "start": 579.68,
+      "duration": 4.839,
+      "text": "DNS here which which means it works now"
+    },
+    {
+      "start": 582.2,
+      "duration": 4.72,
+      "text": "let's go to the next command uh which is"
+    },
+    {
+      "start": 584.519,
+      "duration": 4.641,
+      "text": "to put the password in this particular"
+    },
+    {
+      "start": 586.92,
+      "duration": 4.12,
+      "text": "variable which is Argo PWD so I'm going"
+    },
+    {
+      "start": 589.16,
+      "duration": 3.08,
+      "text": "to copy the same thing and paste it in"
+    },
+    {
+      "start": 591.04,
+      "duration": 3.88,
+      "text": "my"
+    },
+    {
+      "start": 592.24,
+      "duration": 5.839,
+      "text": "terminal this will go ahead and"
+    },
+    {
+      "start": 594.92,
+      "duration": 5.32,
+      "text": "save uh my password and you can confirm"
+    },
+    {
+      "start": 598.079,
+      "duration": 5.32,
+      "text": "by running Echo"
+    },
+    {
+      "start": 600.24,
+      "duration": 4.64,
+      "text": "aroor PWD so this is the password we"
+    },
+    {
+      "start": 603.399,
+      "duration": 4.761,
+      "text": "will be using to login and to login you"
+    },
+    {
+      "start": 604.88,
+      "duration": 5.16,
+      "text": "need to copy your load balances DNS and"
+    },
+    {
+      "start": 608.16,
+      "duration": 4.52,
+      "text": "paste it in a new"
+    },
+    {
+      "start": 610.04,
+      "duration": 4.44,
+      "text": "tab once you paste it you should be able"
+    },
+    {
+      "start": 612.68,
+      "duration": 3.399,
+      "text": "to see this page which says connection"
+    },
+    {
+      "start": 614.48,
+      "duration": 4.72,
+      "text": "is not private click on Advance section"
+    },
+    {
+      "start": 616.079,
+      "duration": 6.041,
+      "text": "and proceed to this link which will open"
+    },
+    {
+      "start": 619.2,
+      "duration": 4.759,
+      "text": "up Argo CD UI this is what it looks like"
+    },
+    {
+      "start": 622.12,
+      "duration": 4.0,
+      "text": "we need to log in and for the login"
+    },
+    {
+      "start": 623.959,
+      "duration": 4.361,
+      "text": "username is always admin password is the"
+    },
+    {
+      "start": 626.12,
+      "duration": 5.04,
+      "text": "same which you have stored in your Argo"
+    },
+    {
+      "start": 628.32,
+      "duration": 4.92,
+      "text": "PWD so I'm going to copy this password"
+    },
+    {
+      "start": 631.16,
+      "duration": 4.32,
+      "text": "and paste it in the password section"
+    },
+    {
+      "start": 633.24,
+      "duration": 5.68,
+      "text": "here this should log you in inside your"
+    },
+    {
+      "start": 635.48,
+      "duration": 5.2,
+      "text": "Argo CD and here you go we are logged in"
+    },
+    {
+      "start": 638.92,
+      "duration": 4.0,
+      "text": "this is how the UI looks if you want to"
+    },
+    {
+      "start": 640.68,
+      "duration": 4.04,
+      "text": "manage anything through Argo CD may you"
+    },
+    {
+      "start": 642.92,
+      "duration": 3.479,
+      "text": "need to create an application but before"
+    },
+    {
+      "start": 644.72,
+      "duration": 4.2,
+      "text": "I do that I need to connect my GitHub"
+    },
+    {
+      "start": 646.399,
+      "duration": 4.0,
+      "text": "repository so that Argo CD should use"
+    },
+    {
+      "start": 648.92,
+      "duration": 4.479,
+      "text": "kops to manage any change we are going"
+    },
+    {
+      "start": 650.399,
+      "duration": 6.081,
+      "text": "to connect our repo using https so I'm"
+    },
+    {
+      "start": 653.399,
+      "duration": 6.081,
+      "text": "going to say connect repo with https and"
+    },
+    {
+      "start": 656.48,
+      "duration": 5.08,
+      "text": "project name could be anything let's"
+    },
+    {
+      "start": 659.48,
+      "duration": 4.359,
+      "text": "choose default the URL is what you can"
+    },
+    {
+      "start": 661.56,
+      "duration": 4.8,
+      "text": "get from your repository I'm going to go"
+    },
+    {
+      "start": 663.839,
+      "duration": 4.721,
+      "text": "to my repository you can choose to fog"
+    },
+    {
+      "start": 666.36,
+      "duration": 4.96,
+      "text": "this or use the use my as well because"
+    },
+    {
+      "start": 668.56,
+      "duration": 5.88,
+      "text": "this is public so I'm going to copy and"
+    },
+    {
+      "start": 671.32,
+      "duration": 5.319,
+      "text": "paste this in my Argo CD"
+    },
+    {
+      "start": 674.44,
+      "duration": 3.6,
+      "text": "configuration this is optional because"
+    },
+    {
+      "start": 676.639,
+      "duration": 2.561,
+      "text": "this is a public one if it was Private"
+    },
+    {
+      "start": 678.04,
+      "duration": 3.479,
+      "text": "you need to put the username and"
+    },
+    {
+      "start": 679.2,
+      "duration": 4.72,
+      "text": "password so this is all you need and"
+    },
+    {
+      "start": 681.519,
+      "duration": 4.32,
+      "text": "click on connect once it is connected it"
+    },
+    {
+      "start": 683.92,
+      "duration": 3.599,
+      "text": "should show successful which means you"
+    },
+    {
+      "start": 685.839,
+      "duration": 3.961,
+      "text": "have successfully connected your repo"
+    },
+    {
+      "start": 687.519,
+      "duration": 4.601,
+      "text": "and now Argo is going to fetch or sync"
+    },
+    {
+      "start": 689.8,
+      "duration": 4.44,
+      "text": "from this particular EO so let's go and"
+    },
+    {
+      "start": 692.12,
+      "duration": 5.159,
+      "text": "create an application so that Argo CD"
+    },
+    {
+      "start": 694.24,
+      "duration": 5.12,
+      "text": "can manage deployment of this CIS on eks"
+    },
+    {
+      "start": 697.279,
+      "duration": 4.961,
+      "text": "cluster so for application name I'm"
+    },
+    {
+      "start": 699.36,
+      "duration": 5.64,
+      "text": "going to name it as Tetris make sure the"
+    },
+    {
+      "start": 702.24,
+      "duration": 5.279,
+      "text": "name is in lowercase because it does not"
+    },
+    {
+      "start": 705.0,
+      "duration": 5.24,
+      "text": "support uppercase for project name I can"
+    },
+    {
+      "start": 707.519,
+      "duration": 4.641,
+      "text": "name this default choose default for"
+    },
+    {
+      "start": 710.24,
+      "duration": 5.599,
+      "text": "sync policy you can either choose manual"
+    },
+    {
+      "start": 712.16,
+      "duration": 5.76,
+      "text": "or automatic or you can also try to sync"
+    },
+    {
+      "start": 715.839,
+      "duration": 4.12,
+      "text": "here if you want to do it manually uh"
+    },
+    {
+      "start": 717.92,
+      "duration": 3.44,
+      "text": "all the other options are complex and if"
+    },
+    {
+      "start": 719.959,
+      "duration": 2.961,
+      "text": "you want me to explain this let me know"
+    },
+    {
+      "start": 721.36,
+      "duration": 3.599,
+      "text": "in the comment section to create a new"
+    },
+    {
+      "start": 722.92,
+      "duration": 4.0,
+      "text": "video but I'm not going to explain you"
+    },
+    {
+      "start": 724.959,
+      "duration": 4.481,
+      "text": "this for now which can make this video"
+    },
+    {
+      "start": 726.92,
+      "duration": 4.12,
+      "text": "longer so for now repository URL is the"
+    },
+    {
+      "start": 729.44,
+      "duration": 3.72,
+      "text": "same that we have used so I'm going to"
+    },
+    {
+      "start": 731.04,
+      "duration": 4.52,
+      "text": "select the tetris game.get which is"
+    },
+    {
+      "start": 733.16,
+      "duration": 4.76,
+      "text": "going to use the main branch of our repo"
+    },
+    {
+      "start": 735.56,
+      "duration": 4.68,
+      "text": "and path is where are your manifest"
+    },
+    {
+      "start": 737.92,
+      "duration": 4.039,
+      "text": "files so in our repo the Manifest file"
+    },
+    {
+      "start": 740.24,
+      "duration": 4.36,
+      "text": "is in this folder which is Manifest"
+    },
+    {
+      "start": 741.959,
+      "duration": 3.88,
+      "text": "folder so let's add let's add the name"
+    },
+    {
+      "start": 744.6,
+      "duration": 4.44,
+      "text": "which is"
+    },
+    {
+      "start": 745.839,
+      "duration": 4.721,
+      "text": "Manifest and cluster URL is going to be"
+    },
+    {
+      "start": 749.04,
+      "duration": 3.76,
+      "text": "the option that you have here by default"
+    },
+    {
+      "start": 750.56,
+      "duration": 3.56,
+      "text": "which is kubernetes default. SVC"
+    },
+    {
+      "start": 752.8,
+      "duration": 2.76,
+      "text": "namespace you can choose to use the"
+    },
+    {
+      "start": 754.12,
+      "duration": 3.36,
+      "text": "default namespace or if you have any"
+    },
+    {
+      "start": 755.56,
+      "duration": 3.56,
+      "text": "particular namespace you created you can"
+    },
+    {
+      "start": 757.48,
+      "duration": 3.68,
+      "text": "add that for now I'm going to choose the"
+    },
+    {
+      "start": 759.12,
+      "duration": 4.159,
+      "text": "default namespace and this is all you"
+    },
+    {
+      "start": 761.16,
+      "duration": 3.479,
+      "text": "need let's click on create option this"
+    },
+    {
+      "start": 763.279,
+      "duration": 3.881,
+      "text": "should create an application and"
+    },
+    {
+      "start": 764.639,
+      "duration": 4.521,
+      "text": "automatically deploy our application on"
+    },
+    {
+      "start": 767.16,
+      "duration": 5.44,
+      "text": "the kubernetes cluster just to let you"
+    },
+    {
+      "start": 769.16,
+      "duration": 6.72,
+      "text": "know uh we don't have any pods and I can"
+    },
+    {
+      "start": 772.6,
+      "duration": 4.799,
+      "text": "show you Cube CTL get pods as you can"
+    },
+    {
+      "start": 775.88,
+      "duration": 3.319,
+      "text": "see we don't have any pods once we apply"
+    },
+    {
+      "start": 777.399,
+      "duration": 4.401,
+      "text": "it Argo CD should aut automatically"
+    },
+    {
+      "start": 779.199,
+      "duration": 5.361,
+      "text": "fetch the deployment and deploy the"
+    },
+    {
+      "start": 781.8,
+      "duration": 5.96,
+      "text": "application here so I'm going to create"
+    },
+    {
+      "start": 784.56,
+      "duration": 4.8,
+      "text": "it and you will see that an app has been"
+    },
+    {
+      "start": 787.76,
+      "duration": 3.68,
+      "text": "created it is syncing and now"
+    },
+    {
+      "start": 789.36,
+      "duration": 3.76,
+      "text": "progressing once it is done you can see"
+    },
+    {
+      "start": 791.44,
+      "duration": 4.24,
+      "text": "it has been synced and now it has"
+    },
+    {
+      "start": 793.12,
+      "duration": 5.0,
+      "text": "created deployment as well as service"
+    },
+    {
+      "start": 795.68,
+      "duration": 4.36,
+      "text": "this is also using the commit which is"
+    },
+    {
+      "start": 798.12,
+      "duration": 4.399,
+      "text": "version one commit if I click on this it"
+    },
+    {
+      "start": 800.04,
+      "duration": 4.08,
+      "text": "should open the commit which is this so"
+    },
+    {
+      "start": 802.519,
+      "duration": 4.241,
+      "text": "now we are using the first version of"
+    },
+    {
+      "start": 804.12,
+      "duration": 4.2,
+      "text": "Tetris once it is created you can access"
+    },
+    {
+      "start": 806.76,
+      "duration": 5.079,
+      "text": "your application through this service"
+    },
+    {
+      "start": 808.32,
+      "duration": 6.24,
+      "text": "endpoint which is a load balancer uh DNS"
+    },
+    {
+      "start": 811.839,
+      "duration": 4.761,
+      "text": "because we are using load balancer as a"
+    },
+    {
+      "start": 814.56,
+      "duration": 3.36,
+      "text": "service type here as you can see so we"
+    },
+    {
+      "start": 816.6,
+      "duration": 3.56,
+      "text": "have to wait for some time because load"
+    },
+    {
+      "start": 817.92,
+      "duration": 4.08,
+      "text": "balancer takes usually 2 to 3 minutes"
+    },
+    {
+      "start": 820.16,
+      "duration": 3.96,
+      "text": "once it is ready we can open this in the"
+    },
+    {
+      "start": 822.0,
+      "duration": 4.519,
+      "text": "new tab and we should have our Tetris"
+    },
+    {
+      "start": 824.12,
+      "duration": 4.839,
+      "text": "application deployed Tetris game"
+    },
+    {
+      "start": 826.519,
+      "duration": 4.641,
+      "text": "deployed on our cluster once this is"
+    },
+    {
+      "start": 828.959,
+      "duration": 3.481,
+      "text": "done we are going to update image to use"
+    },
+    {
+      "start": 831.16,
+      "duration": 2.72,
+      "text": "the new one and giop should"
+    },
+    {
+      "start": 832.44,
+      "duration": 3.72,
+      "text": "automatically sync it and have the new"
+    },
+    {
+      "start": 833.88,
+      "duration": 4.199,
+      "text": "version created so let's wait for some"
+    },
+    {
+      "start": 836.16,
+      "duration": 4.52,
+      "text": "time after waiting for some time you can"
+    },
+    {
+      "start": 838.079,
+      "duration": 4.281,
+      "text": "copy this and paste it you can copy this"
+    },
+    {
+      "start": 840.68,
+      "duration": 3.279,
+      "text": "and paste it in the new tab and we"
+    },
+    {
+      "start": 842.36,
+      "duration": 3.08,
+      "text": "should be able to access our Tetris"
+    },
+    {
+      "start": 843.959,
+      "duration": 4.0,
+      "text": "application you can see it's here so"
+    },
+    {
+      "start": 845.44,
+      "duration": 4.56,
+      "text": "let's play Let's play some Tetris"
+    },
+    {
+      "start": 847.959,
+      "duration": 6.081,
+      "text": "so you can see this is our"
+    },
+    {
+      "start": 850.0,
+      "duration": 5.6,
+      "text": "app this is our game uh and you can play"
+    },
+    {
+      "start": 854.04,
+      "duration": 4.479,
+      "text": "it if you want or let's move ahead with"
+    },
+    {
+      "start": 855.6,
+      "duration": 5.159,
+      "text": "changing the version type so now I'm"
+    },
+    {
+      "start": 858.519,
+      "duration": 4.32,
+      "text": "going to go ahead and make the change so"
+    },
+    {
+      "start": 860.759,
+      "duration": 3.44,
+      "text": "this is our first version of the game if"
+    },
+    {
+      "start": 862.839,
+      "duration": 3.041,
+      "text": "I want to have a new version which means"
+    },
+    {
+      "start": 864.199,
+      "duration": 3.041,
+      "text": "I need to change the deployment to"
+    },
+    {
+      "start": 865.88,
+      "duration": 3.16,
+      "text": "deploy new version of application I'm"
+    },
+    {
+      "start": 867.24,
+      "duration": 3.599,
+      "text": "going to change the deployment file in"
+    },
+    {
+      "start": 869.04,
+      "duration": 3.88,
+      "text": "the Manifest and rather than using"
+    },
+    {
+      "start": 870.839,
+      "duration": 5.201,
+      "text": "Tetris version one we will be using the"
+    },
+    {
+      "start": 872.92,
+      "duration": 5.32,
+      "text": "tetris V2 after making the change kop"
+    },
+    {
+      "start": 876.04,
+      "duration": 3.64,
+      "text": "tool Argo CD should automatically detect"
+    },
+    {
+      "start": 878.24,
+      "duration": 2.959,
+      "text": "it and deploy the new version so let's"
+    },
+    {
+      "start": 879.68,
+      "duration": 3.48,
+      "text": "go and make the change here in the"
+    },
+    {
+      "start": 881.199,
+      "duration": 4.481,
+      "text": "GitHub and rather than using Tetris we"
+    },
+    {
+      "start": 883.16,
+      "duration": 5.599,
+      "text": "are going to say V2 let's commit the"
+    },
+    {
+      "start": 885.68,
+      "duration": 6.24,
+      "text": "change by saying version"
+    },
+    {
+      "start": 888.759,
+      "duration": 4.681,
+      "text": "two and commit this change once you do"
+    },
+    {
+      "start": 891.92,
+      "duration": 3.32,
+      "text": "this we can come back to Argo CD and"
+    },
+    {
+      "start": 893.44,
+      "duration": 3.56,
+      "text": "check all right let's see if the new"
+    },
+    {
+      "start": 895.24,
+      "duration": 3.68,
+      "text": "version has been deployed now that the"
+    },
+    {
+      "start": 897.0,
+      "duration": 3.279,
+      "text": "giops is using new commit which says"
+    },
+    {
+      "start": 898.92,
+      "duration": 3.56,
+      "text": "version two so I'm going to click on"
+    },
+    {
+      "start": 900.279,
+      "duration": 5.8,
+      "text": "details option here and open this"
+    },
+    {
+      "start": 902.48,
+      "duration": 5.56,
+      "text": "endpoint in a new tab okay as you can"
+    },
+    {
+      "start": 906.079,
+      "duration": 4.361,
+      "text": "see this is the new version of Tetris"
+    },
+    {
+      "start": 908.04,
+      "duration": 4.44,
+      "text": "and this is how giops actually syncs"
+    },
+    {
+      "start": 910.44,
+      "duration": 3.88,
+      "text": "your git repository to detect any"
+    },
+    {
+      "start": 912.48,
+      "duration": 4.4,
+      "text": "changes you have made and automatically"
+    },
+    {
+      "start": 914.32,
+      "duration": 5.519,
+      "text": "deployed I hope this video has helped"
+    },
+    {
+      "start": 916.88,
+      "duration": 4.84,
+      "text": "you understand what getop says so there"
+    },
+    {
+      "start": 919.839,
+      "duration": 4.081,
+      "text": "you have it this is how simple it is to"
+    },
+    {
+      "start": 921.72,
+      "duration": 3.88,
+      "text": "deploy an application using gitops and"
+    },
+    {
+      "start": 923.92,
+      "duration": 3.359,
+      "text": "if you have any questions about this let"
+    },
+    {
+      "start": 925.6,
+      "duration": 3.479,
+      "text": "me know in the comment section now"
+    },
+    {
+      "start": 927.279,
+      "duration": 3.321,
+      "text": "here's the challenge now now here's the"
+    },
+    {
+      "start": 929.079,
+      "duration": 2.961,
+      "text": "challenge I want to deploy the other"
+    },
+    {
+      "start": 930.6,
+      "duration": 4.4,
+      "text": "projects that I have in my YouTube"
+    },
+    {
+      "start": 932.04,
+      "duration": 4.96,
+      "text": "channel using Argo CD now that you know"
+    },
+    {
+      "start": 935.0,
+      "duration": 3.6,
+      "text": "how to deploy it I hope this video was"
+    },
+    {
+      "start": 937.0,
+      "duration": 3.16,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 938.6,
+      "duration": 5.88,
+      "text": "any doubt let me know in the comment"
+    },
+    {
+      "start": 940.16,
+      "duration": 4.32,
+      "text": "section thank you and have a good day"
+    },
+    {
+      "start": 949.92,
+      "duration": 3.0,
+      "text": "bye"
+    }
+  ]
+}

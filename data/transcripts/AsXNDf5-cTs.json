@@ -1,0 +1,1891 @@
+{
+  "video": {
+    "id": "AsXNDf5-cTs",
+    "title": "IMPORTANT Deployment Strategies in DevOps! (Example & Code)",
+    "url": "https://www.youtube.com/watch?v=AsXNDf5-cTs",
+    "duration": 775,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.52,
+      "duration": 3.56,
+      "text": "deployment strategies are super"
+    },
+    {
+      "start": 2.04,
+      "duration": 3.6,
+      "text": "important to know as a devops engineer"
+    },
+    {
+      "start": 4.08,
+      "duration": 3.679,
+      "text": "to understand how to deploy your"
+    },
+    {
+      "start": 5.64,
+      "duration": 4.32,
+      "text": "applications properly and it is also"
+    },
+    {
+      "start": 7.759,
+      "duration": 4.361,
+      "text": "something which is asked a lot in devops"
+    },
+    {
+      "start": 9.96,
+      "duration": 4.16,
+      "text": "interviews so make sure you know them"
+    },
+    {
+      "start": 12.12,
+      "duration": 4.12,
+      "text": "and this is why in this video I will"
+    },
+    {
+      "start": 14.12,
+      "duration": 4.36,
+      "text": "explain five most used deployment"
+    },
+    {
+      "start": 16.24,
+      "duration": 3.84,
+      "text": "strategies along with examples and when"
+    },
+    {
+      "start": 18.48,
+      "duration": 3.32,
+      "text": "to use them depending on your"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.76,
+      "text": "application so make sure you watch this"
+    },
+    {
+      "start": 21.8,
+      "duration": 4.92,
+      "text": "video till the end let's start all right"
+    },
+    {
+      "start": 24.84,
+      "duration": 3.8,
+      "text": "so I'm here on my computer screen and I"
+    },
+    {
+      "start": 26.72,
+      "duration": 3.639,
+      "text": "have this very good document that has"
+    },
+    {
+      "start": 28.64,
+      "duration": 4.04,
+      "text": "information about all the different"
+    },
+    {
+      "start": 30.359,
+      "duration": 5.681,
+      "text": "deployment strategies along with"
+    },
+    {
+      "start": 32.68,
+      "duration": 5.0,
+      "text": "examples when to use it and also how to"
+    },
+    {
+      "start": 36.04,
+      "duration": 3.56,
+      "text": "use it if you want me to share this"
+    },
+    {
+      "start": 37.68,
+      "duration": 4.44,
+      "text": "document do let me know in the comment"
+    },
+    {
+      "start": 39.6,
+      "duration": 5.16,
+      "text": "section and I will share it to you and"
+    },
+    {
+      "start": 42.12,
+      "duration": 4.36,
+      "text": "if you haven't subscribed to Cloud champ"
+    },
+    {
+      "start": 44.76,
+      "duration": 4.119,
+      "text": "please subscribe to Cloud champ we are"
+    },
+    {
+      "start": 46.48,
+      "duration": 4.04,
+      "text": "very very close to 100,000 subscribers"
+    },
+    {
+      "start": 48.879,
+      "duration": 4.121,
+      "text": "so please subscribe to Cloud champ I"
+    },
+    {
+      "start": 50.52,
+      "duration": 4.12,
+      "text": "post videos on cloud and devops with"
+    },
+    {
+      "start": 53.0,
+      "duration": 3.12,
+      "text": "that being said now let's start with the"
+    },
+    {
+      "start": 54.64,
+      "duration": 3.439,
+      "text": "video and understand different"
+    },
+    {
+      "start": 56.12,
+      "duration": 5.32,
+      "text": "deployment strategies that you should"
+    },
+    {
+      "start": 58.079,
+      "duration": 5.081,
+      "text": "know as a devops engineer let's start as"
+    },
+    {
+      "start": 61.44,
+      "duration": 3.679,
+      "text": "a devops engineer we deploy our"
+    },
+    {
+      "start": 63.16,
+      "duration": 3.76,
+      "text": "application using different methods or"
+    },
+    {
+      "start": 65.119,
+      "duration": 3.761,
+      "text": "strategies to make sure that the"
+    },
+    {
+      "start": 66.92,
+      "duration": 4.68,
+      "text": "application is deployed successfully"
+    },
+    {
+      "start": 68.88,
+      "duration": 4.76,
+      "text": "with less or no downtime and no issues"
+    },
+    {
+      "start": 71.6,
+      "duration": 3.72,
+      "text": "caused to the end user so it is very"
+    },
+    {
+      "start": 73.64,
+      "duration": 4.44,
+      "text": "important to understand which deployment"
+    },
+    {
+      "start": 75.32,
+      "duration": 4.04,
+      "text": "strategy is best for your application"
+    },
+    {
+      "start": 78.08,
+      "duration": 3.88,
+      "text": "and in this video we are going to be"
+    },
+    {
+      "start": 79.36,
+      "duration": 4.2,
+      "text": "learning five important strategies to"
+    },
+    {
+      "start": 81.96,
+      "duration": 3.76,
+      "text": "help you deploy your applications"
+    },
+    {
+      "start": 83.56,
+      "duration": 3.879,
+      "text": "properly but before we get started with"
+    },
+    {
+      "start": 85.72,
+      "duration": 3.759,
+      "text": "learning different deployment strategies"
+    },
+    {
+      "start": 87.439,
+      "duration": 4.201,
+      "text": "it is very important for you to know"
+    },
+    {
+      "start": 89.479,
+      "duration": 4.201,
+      "text": "what is is a deployment so a deployment"
+    },
+    {
+      "start": 91.64,
+      "duration": 4.439,
+      "text": "is nothing but just releasing or"
+    },
+    {
+      "start": 93.68,
+      "duration": 4.719,
+      "text": "upgrading a software so that people can"
+    },
+    {
+      "start": 96.079,
+      "duration": 4.32,
+      "text": "use it in simple words deployment could"
+    },
+    {
+      "start": 98.399,
+      "duration": 4.281,
+      "text": "be creating a new application and making"
+    },
+    {
+      "start": 100.399,
+      "duration": 4.201,
+      "text": "it available to the end user or it could"
+    },
+    {
+      "start": 102.68,
+      "duration": 4.119,
+      "text": "also be upgrading an application from"
+    },
+    {
+      "start": 104.6,
+      "duration": 3.839,
+      "text": "version one to version two deploying an"
+    },
+    {
+      "start": 106.799,
+      "duration": 3.28,
+      "text": "application is a very critical process"
+    },
+    {
+      "start": 108.439,
+      "duration": 4.241,
+      "text": "so you need to be extra careful when"
+    },
+    {
+      "start": 110.079,
+      "duration": 4.481,
+      "text": "doing it or else if there are any issues"
+    },
+    {
+      "start": 112.68,
+      "duration": 4.039,
+      "text": "it will cause many problems and you will"
+    },
+    {
+      "start": 114.56,
+      "duration": 4.08,
+      "text": "not like it this is why it is very"
+    },
+    {
+      "start": 116.719,
+      "duration": 3.72,
+      "text": "important to create a plan on how you"
+    },
+    {
+      "start": 118.64,
+      "duration": 4.0,
+      "text": "would deploy your application"
+    },
+    {
+      "start": 120.439,
+      "duration": 4.241,
+      "text": "or create a deployment strategy so what"
+    },
+    {
+      "start": 122.64,
+      "duration": 4.399,
+      "text": "is a deployment strategy a deployment"
+    },
+    {
+      "start": 124.68,
+      "duration": 5.04,
+      "text": "strategy is a plan for how to release"
+    },
+    {
+      "start": 127.039,
+      "duration": 4.961,
+      "text": "and update software carefully to avoid"
+    },
+    {
+      "start": 129.72,
+      "duration": 4.12,
+      "text": "problems for users and there are"
+    },
+    {
+      "start": 132.0,
+      "duration": 4.44,
+      "text": "different deployment strategies the most"
+    },
+    {
+      "start": 133.84,
+      "duration": 5.24,
+      "text": "popular ones are recreate gring update"
+    },
+    {
+      "start": 136.44,
+      "duration": 4.96,
+      "text": "Blu grain deployment Canary deployment"
+    },
+    {
+      "start": 139.08,
+      "duration": 4.439,
+      "text": "or AB testing and in this video we are"
+    },
+    {
+      "start": 141.4,
+      "duration": 3.8,
+      "text": "going to learn all these important ones"
+    },
+    {
+      "start": 143.519,
+      "duration": 3.561,
+      "text": "there are many interviews when you're"
+    },
+    {
+      "start": 145.2,
+      "duration": 3.759,
+      "text": "going to be asked questions on these"
+    },
+    {
+      "start": 147.08,
+      "duration": 4.12,
+      "text": "different deployment strategies so make"
+    },
+    {
+      "start": 148.959,
+      "duration": 4.201,
+      "text": "sure you understand all of them I do"
+    },
+    {
+      "start": 151.2,
+      "duration": 4.319,
+      "text": "have examples and extra notes to help"
+    },
+    {
+      "start": 153.16,
+      "duration": 3.92,
+      "text": "you understand all of them very properly"
+    },
+    {
+      "start": 155.519,
+      "duration": 4.401,
+      "text": "now let's start with understanding what"
+    },
+    {
+      "start": 157.08,
+      "duration": 4.64,
+      "text": "is recreate deployment the first"
+    },
+    {
+      "start": 159.92,
+      "duration": 4.0,
+      "text": "deployment strategy is the recreate"
+    },
+    {
+      "start": 161.72,
+      "duration": 4.159,
+      "text": "deployment strategy which is very simple"
+    },
+    {
+      "start": 163.92,
+      "duration": 3.319,
+      "text": "and straightforward let's say you want"
+    },
+    {
+      "start": 165.879,
+      "duration": 3.601,
+      "text": "to update your application using"
+    },
+    {
+      "start": 167.239,
+      "duration": 4.321,
+      "text": "recreate it will delete the previous"
+    },
+    {
+      "start": 169.48,
+      "duration": 3.88,
+      "text": "version of your application deploy the"
+    },
+    {
+      "start": 171.56,
+      "duration": 3.959,
+      "text": "new version and then start giving"
+    },
+    {
+      "start": 173.36,
+      "duration": 3.64,
+      "text": "traffic to it for example if you look at"
+    },
+    {
+      "start": 175.519,
+      "duration": 3.321,
+      "text": "this diagram this is the version one of"
+    },
+    {
+      "start": 177.0,
+      "duration": 4.0,
+      "text": "your application using recreate it will"
+    },
+    {
+      "start": 178.84,
+      "duration": 4.24,
+      "text": "delete the previous version deploy the"
+    },
+    {
+      "start": 181.0,
+      "duration": 4.0,
+      "text": "new version and then start giving"
+    },
+    {
+      "start": 183.08,
+      "duration": 3.92,
+      "text": "traffic to it so this is version one it"
+    },
+    {
+      "start": 185.0,
+      "duration": 4.12,
+      "text": "has been deleted now this new version"
+    },
+    {
+      "start": 187.0,
+      "duration": 4.0,
+      "text": "and the traffic is routed here if you"
+    },
+    {
+      "start": 189.12,
+      "duration": 3.8,
+      "text": "look at the definition in recreate"
+    },
+    {
+      "start": 191.0,
+      "duration": 4.56,
+      "text": "strategy the existing instances of the"
+    },
+    {
+      "start": 192.92,
+      "duration": 4.8,
+      "text": "applications are terminated all at once"
+    },
+    {
+      "start": 195.56,
+      "duration": 4.28,
+      "text": "and then the new instances are created"
+    },
+    {
+      "start": 197.72,
+      "duration": 3.92,
+      "text": "with the updated configuration so this"
+    },
+    {
+      "start": 199.84,
+      "duration": 3.6,
+      "text": "is a recate strategy where all the old"
+    },
+    {
+      "start": 201.64,
+      "duration": 4.0,
+      "text": "stuff is thrown away and the new stuff"
+    },
+    {
+      "start": 203.44,
+      "duration": 4.24,
+      "text": "is put in place now benefits of using"
+    },
+    {
+      "start": 205.64,
+      "duration": 4.56,
+      "text": "this strategy is it is very simple and"
+    },
+    {
+      "start": 207.68,
+      "duration": 4.919,
+      "text": "straightforward and it also ensures that"
+    },
+    {
+      "start": 210.2,
+      "duration": 3.92,
+      "text": "all the instances or parts are going to"
+    },
+    {
+      "start": 212.599,
+      "duration": 3.601,
+      "text": "be running the same version of your"
+    },
+    {
+      "start": 214.12,
+      "duration": 3.44,
+      "text": "application either version one or"
+    },
+    {
+      "start": 216.2,
+      "duration": 2.64,
+      "text": "version two there is not going to be an"
+    },
+    {
+      "start": 217.56,
+      "duration": 3.08,
+      "text": "issue where some parts are showing"
+    },
+    {
+      "start": 218.84,
+      "duration": 4.36,
+      "text": "version one and some parts are showing"
+    },
+    {
+      "start": 220.64,
+      "duration": 4.12,
+      "text": "version two the disadvantage of using"
+    },
+    {
+      "start": 223.2,
+      "duration": 3.56,
+      "text": "this strategy is there is going to be"
+    },
+    {
+      "start": 224.76,
+      "duration": 3.8,
+      "text": "down time during transition so when you"
+    },
+    {
+      "start": 226.76,
+      "duration": 4.0,
+      "text": "delete the version one and the time it"
+    },
+    {
+      "start": 228.56,
+      "duration": 3.64,
+      "text": "takes to create new version it there's"
+    },
+    {
+      "start": 230.76,
+      "duration": 3.319,
+      "text": "going to be downtime and the customers"
+    },
+    {
+      "start": 232.2,
+      "duration": 3.92,
+      "text": "are going to face issues so this is the"
+    },
+    {
+      "start": 234.079,
+      "duration": 4.201,
+      "text": "disadvantage when using recreate"
+    },
+    {
+      "start": 236.12,
+      "duration": 4.36,
+      "text": "strategy now to help you understand this"
+    },
+    {
+      "start": 238.28,
+      "duration": 4.159,
+      "text": "strategy more with an example if you"
+    },
+    {
+      "start": 240.48,
+      "duration": 4.56,
+      "text": "have version 1.0 of your application"
+    },
+    {
+      "start": 242.439,
+      "duration": 4.8,
+      "text": "deployed updating it to version 2.0"
+    },
+    {
+      "start": 245.04,
+      "duration": 4.039,
+      "text": "using recreate strategy would involve"
+    },
+    {
+      "start": 247.239,
+      "duration": 4.2,
+      "text": "terminating all the instances running"
+    },
+    {
+      "start": 249.079,
+      "duration": 5.321,
+      "text": "version 1.0 and then deploying the new"
+    },
+    {
+      "start": 251.439,
+      "duration": 4.841,
+      "text": "version which is 2.0 so this is how you"
+    },
+    {
+      "start": 254.4,
+      "duration": 4.519,
+      "text": "can do it and now you might be asking"
+    },
+    {
+      "start": 256.28,
+      "duration": 4.519,
+      "text": "when to use recreate or other strategies"
+    },
+    {
+      "start": 258.919,
+      "duration": 4.161,
+      "text": "so you can use recreate strategy"
+    },
+    {
+      "start": 260.799,
+      "duration": 4.321,
+      "text": "whenever you have an application that is"
+    },
+    {
+      "start": 263.08,
+      "duration": 3.96,
+      "text": "okay with some downtime so if your"
+    },
+    {
+      "start": 265.12,
+      "duration": 3.56,
+      "text": "application is stateless and can afford"
+    },
+    {
+      "start": 267.04,
+      "duration": 3.64,
+      "text": "to be temporarily available during"
+    },
+    {
+      "start": 268.68,
+      "duration": 4.12,
+      "text": "updates you can use the recreate"
+    },
+    {
+      "start": 270.68,
+      "duration": 4.76,
+      "text": "strategy and this is how you can use it"
+    },
+    {
+      "start": 272.8,
+      "duration": 4.44,
+      "text": "this is a kues deployment manifest in"
+    },
+    {
+      "start": 275.44,
+      "duration": 4.319,
+      "text": "this manifest we have a strategy type of"
+    },
+    {
+      "start": 277.24,
+      "duration": 5.36,
+      "text": "recreate and using this strategy it will"
+    },
+    {
+      "start": 279.759,
+      "duration": 5.561,
+      "text": "update the application from version one"
+    },
+    {
+      "start": 282.6,
+      "duration": 4.879,
+      "text": "to version two this is what recreate"
+    },
+    {
+      "start": 285.32,
+      "duration": 3.84,
+      "text": "strategy is moving on the second"
+    },
+    {
+      "start": 287.479,
+      "duration": 3.801,
+      "text": "deployment strategy is the rolling"
+    },
+    {
+      "start": 289.16,
+      "duration": 3.52,
+      "text": "update which is the default strategy"
+    },
+    {
+      "start": 291.28,
+      "duration": 3.84,
+      "text": "when deploying applications on"
+    },
+    {
+      "start": 292.68,
+      "duration": 3.959,
+      "text": "kubernetes so how does this work when"
+    },
+    {
+      "start": 295.12,
+      "duration": 3.799,
+      "text": "using rolling update to deploy your"
+    },
+    {
+      "start": 296.639,
+      "duration": 4.84,
+      "text": "application it will create a new board"
+    },
+    {
+      "start": 298.919,
+      "duration": 4.84,
+      "text": "or a new instance of your next version"
+    },
+    {
+      "start": 301.479,
+      "duration": 3.681,
+      "text": "before it deletes the previous one to"
+    },
+    {
+      "start": 303.759,
+      "duration": 2.961,
+      "text": "help you understand this more better"
+    },
+    {
+      "start": 305.16,
+      "duration": 3.56,
+      "text": "look at this diagram we have version one"
+    },
+    {
+      "start": 306.72,
+      "duration": 3.479,
+      "text": "of our application we create a new Port"
+    },
+    {
+      "start": 308.72,
+      "duration": 3.36,
+      "text": "of version two before we delete the"
+    },
+    {
+      "start": 310.199,
+      "duration": 4.121,
+      "text": "version one if everything works fine we"
+    },
+    {
+      "start": 312.08,
+      "duration": 4.08,
+      "text": "able to delete the entire V1 and our"
+    },
+    {
+      "start": 314.32,
+      "duration": 4.68,
+      "text": "application is now upgraded to version"
+    },
+    {
+      "start": 316.16,
+      "duration": 4.84,
+      "text": "two using rolling update so in Rolling"
+    },
+    {
+      "start": 319.0,
+      "duration": 4.039,
+      "text": "update we first update our applications"
+    },
+    {
+      "start": 321.0,
+      "duration": 3.84,
+      "text": "and then delete the previous one so if"
+    },
+    {
+      "start": 323.039,
+      "duration": 3.761,
+      "text": "you look at this definition in Rolling"
+    },
+    {
+      "start": 324.84,
+      "duration": 3.96,
+      "text": "update new instances are gradually"
+    },
+    {
+      "start": 326.8,
+      "duration": 4.679,
+      "text": "created while own instances are"
+    },
+    {
+      "start": 328.8,
+      "duration": 5.399,
+      "text": "gradually ter minated ensuring a smooth"
+    },
+    {
+      "start": 331.479,
+      "duration": 4.881,
+      "text": "transition without any downtime so"
+    },
+    {
+      "start": 334.199,
+      "duration": 4.041,
+      "text": "benefits of using rolling update is"
+    },
+    {
+      "start": 336.36,
+      "duration": 3.64,
+      "text": "there is not going to be any downtime so"
+    },
+    {
+      "start": 338.24,
+      "duration": 3.959,
+      "text": "zero downtime deployment because we are"
+    },
+    {
+      "start": 340.0,
+      "duration": 4.639,
+      "text": "also creating before we delete the"
+    },
+    {
+      "start": 342.199,
+      "duration": 3.921,
+      "text": "previous instance also it is very easy"
+    },
+    {
+      "start": 344.639,
+      "duration": 3.201,
+      "text": "to roll back in case there are any"
+    },
+    {
+      "start": 346.12,
+      "duration": 3.799,
+      "text": "issues so if the version two is not"
+    },
+    {
+      "start": 347.84,
+      "duration": 4.799,
+      "text": "working properly we can always go back"
+    },
+    {
+      "start": 349.919,
+      "duration": 4.521,
+      "text": "and start using the version one the"
+    },
+    {
+      "start": 352.639,
+      "duration": 3.961,
+      "text": "problem with this deployment time is"
+    },
+    {
+      "start": 354.44,
+      "duration": 4.44,
+      "text": "longer than recreate because here we are"
+    },
+    {
+      "start": 356.6,
+      "duration": 4.36,
+      "text": "not deleting all the instances at once"
+    },
+    {
+      "start": 358.88,
+      "duration": 3.68,
+      "text": "we are first creating next version and"
+    },
+    {
+      "start": 360.96,
+      "duration": 3.359,
+      "text": "then creating the previous one so"
+    },
+    {
+      "start": 362.56,
+      "duration": 4.16,
+      "text": "obviously it will take time but it will"
+    },
+    {
+      "start": 364.319,
+      "duration": 4.0,
+      "text": "not have any downtime so you will use"
+    },
+    {
+      "start": 366.72,
+      "duration": 3.96,
+      "text": "this deployment strategy whenever you"
+    },
+    {
+      "start": 368.319,
+      "duration": 4.44,
+      "text": "have applications that require zero to"
+    },
+    {
+      "start": 370.68,
+      "duration": 4.44,
+      "text": "time during deployment and can also"
+    },
+    {
+      "start": 372.759,
+      "duration": 4.121,
+      "text": "handle multiple versions running"
+    },
+    {
+      "start": 375.12,
+      "duration": 4.0,
+      "text": "simultaneously so how can you use"
+    },
+    {
+      "start": 376.88,
+      "duration": 4.52,
+      "text": "rolling update here is the kubernetes"
+    },
+    {
+      "start": 379.12,
+      "duration": 4.24,
+      "text": "Manifest file that is using strategy of"
+    },
+    {
+      "start": 381.4,
+      "duration": 4.239,
+      "text": "rolling update and also has Max"
+    },
+    {
+      "start": 383.36,
+      "duration": 4.0,
+      "text": "unavailable Max search which provides"
+    },
+    {
+      "start": 385.639,
+      "duration": 4.161,
+      "text": "instructions on how many instances"
+    },
+    {
+      "start": 387.36,
+      "duration": 3.959,
+      "text": "report should be available all the time"
+    },
+    {
+      "start": 389.8,
+      "duration": 3.119,
+      "text": "so this is rolling update strategy if"
+    },
+    {
+      "start": 391.319,
+      "duration": 3.481,
+      "text": "you have any issues or questions about"
+    },
+    {
+      "start": 392.919,
+      "duration": 3.761,
+      "text": "any strategies do let me know in the"
+    },
+    {
+      "start": 394.8,
+      "duration": 4.799,
+      "text": "comment section and let's move to the"
+    },
+    {
+      "start": 396.68,
+      "duration": 5.4,
+      "text": "next strategy which is the blue green"
+    },
+    {
+      "start": 399.599,
+      "duration": 4.521,
+      "text": "strategy this blue green deployment is"
+    },
+    {
+      "start": 402.08,
+      "duration": 3.959,
+      "text": "actually a very popular strategy that is"
+    },
+    {
+      "start": 404.12,
+      "duration": 3.68,
+      "text": "also used when deploying applications"
+    },
+    {
+      "start": 406.039,
+      "duration": 3.921,
+      "text": "from different environments like staging"
+    },
+    {
+      "start": 407.8,
+      "duration": 4.04,
+      "text": "to development to production also"
+    },
+    {
+      "start": 409.96,
+      "duration": 4.16,
+      "text": "something which is asked a lot in"
+    },
+    {
+      "start": 411.84,
+      "duration": 4.919,
+      "text": "interviews so make sure you understand"
+    },
+    {
+      "start": 414.12,
+      "duration": 3.799,
+      "text": "properly what is a blue green deployment"
+    },
+    {
+      "start": 416.759,
+      "duration": 3.481,
+      "text": "so what actually is blue green"
+    },
+    {
+      "start": 417.919,
+      "duration": 4.081,
+      "text": "deployment and how it works in blue"
+    },
+    {
+      "start": 420.24,
+      "duration": 3.959,
+      "text": "deployment you will have two identical"
+    },
+    {
+      "start": 422.0,
+      "duration": 3.919,
+      "text": "environments having same version of your"
+    },
+    {
+      "start": 424.199,
+      "duration": 3.72,
+      "text": "application and if you want to upgrade"
+    },
+    {
+      "start": 425.919,
+      "duration": 4.441,
+      "text": "your application from version one to"
+    },
+    {
+      "start": 427.919,
+      "duration": 4.241,
+      "text": "version two using Blu grain deployment"
+    },
+    {
+      "start": 430.36,
+      "duration": 3.92,
+      "text": "you will first update one of the"
+    },
+    {
+      "start": 432.16,
+      "duration": 3.8,
+      "text": "environments let's say both of your"
+    },
+    {
+      "start": 434.28,
+      "duration": 3.479,
+      "text": "environments have version one you want"
+    },
+    {
+      "start": 435.96,
+      "duration": 4.28,
+      "text": "to upgrade using blue gr environment you"
+    },
+    {
+      "start": 437.759,
+      "duration": 4.88,
+      "text": "will first upgrade this to version two"
+    },
+    {
+      "start": 440.24,
+      "duration": 4.079,
+      "text": "perform all the checks all the test and"
+    },
+    {
+      "start": 442.639,
+      "duration": 3.921,
+      "text": "if everything works fine then you"
+    },
+    {
+      "start": 444.319,
+      "duration": 4.521,
+      "text": "redirect your traffic from version one"
+    },
+    {
+      "start": 446.56,
+      "duration": 4.079,
+      "text": "to version two once you have one"
+    },
+    {
+      "start": 448.84,
+      "duration": 3.759,
+      "text": "environment having version two and"
+    },
+    {
+      "start": 450.639,
+      "duration": 4.0,
+      "text": "everything works fine you will also do"
+    },
+    {
+      "start": 452.599,
+      "duration": 3.6,
+      "text": "the same to the other environment to"
+    },
+    {
+      "start": 454.639,
+      "duration": 4.041,
+      "text": "make sure you have two identical"
+    },
+    {
+      "start": 456.199,
+      "duration": 4.84,
+      "text": "environments for the next update so this"
+    },
+    {
+      "start": 458.68,
+      "duration": 4.359,
+      "text": "is how blue green deployment works if"
+    },
+    {
+      "start": 461.039,
+      "duration": 4.321,
+      "text": "you look at this definition here blue"
+    },
+    {
+      "start": 463.039,
+      "duration": 4.321,
+      "text": "green deployment involves running two"
+    },
+    {
+      "start": 465.36,
+      "duration": 4.64,
+      "text": "identical production environments the"
+    },
+    {
+      "start": 467.36,
+      "duration": 4.2,
+      "text": "blue one and the green one with only one"
+    },
+    {
+      "start": 470.0,
+      "duration": 3.639,
+      "text": "active at a time the inactive"
+    },
+    {
+      "start": 471.56,
+      "duration": 4.12,
+      "text": "environment can be updated without"
+    },
+    {
+      "start": 473.639,
+      "duration": 3.96,
+      "text": "affecting the users and then traffic is"
+    },
+    {
+      "start": 475.68,
+      "duration": 4.04,
+      "text": "switched to the updated environment so"
+    },
+    {
+      "start": 477.599,
+      "duration": 4.16,
+      "text": "this is how blue green deployment works"
+    },
+    {
+      "start": 479.72,
+      "duration": 4.199,
+      "text": "user switch from old version to new"
+    },
+    {
+      "start": 481.759,
+      "duration": 4.201,
+      "text": "version without even noticing the"
+    },
+    {
+      "start": 483.919,
+      "duration": 3.761,
+      "text": "benefits of using blue deployment is"
+    },
+    {
+      "start": 485.96,
+      "duration": 4.079,
+      "text": "there's not going to be any downtime so"
+    },
+    {
+      "start": 487.68,
+      "duration": 4.239,
+      "text": "zero downtime deployment and it is also"
+    },
+    {
+      "start": 490.039,
+      "duration": 3.401,
+      "text": "easy to roll back by switching traffic"
+    },
+    {
+      "start": 491.919,
+      "duration": 3.361,
+      "text": "back to the previous"
+    },
+    {
+      "start": 493.44,
+      "duration": 3.56,
+      "text": "environment so if you deployed an"
+    },
+    {
+      "start": 495.28,
+      "duration": 3.52,
+      "text": "application using blue green deployment"
+    },
+    {
+      "start": 497.0,
+      "duration": 3.919,
+      "text": "and there's any issue to the new version"
+    },
+    {
+      "start": 498.8,
+      "duration": 4.28,
+      "text": "you can always reect your traffic back"
+    },
+    {
+      "start": 500.919,
+      "duration": 4.161,
+      "text": "to the old version this is one of the"
+    },
+    {
+      "start": 503.08,
+      "duration": 3.239,
+      "text": "benefits of using blue green deployment"
+    },
+    {
+      "start": 505.08,
+      "duration": 2.679,
+      "text": "the problem with using blue green"
+    },
+    {
+      "start": 506.319,
+      "duration": 3.28,
+      "text": "deployment is you require double"
+    },
+    {
+      "start": 507.759,
+      "duration": 4.081,
+      "text": "resources to maintain identical lments"
+    },
+    {
+      "start": 509.599,
+      "duration": 4.68,
+      "text": "which will cost you money it will have"
+    },
+    {
+      "start": 511.84,
+      "duration": 4.48,
+      "text": "to pay more Cloud bills if you're using"
+    },
+    {
+      "start": 514.279,
+      "duration": 4.281,
+      "text": "blue green deployment and when can you"
+    },
+    {
+      "start": 516.32,
+      "duration": 4.48,
+      "text": "use it you can use Blen deployment when"
+    },
+    {
+      "start": 518.56,
+      "duration": 5.359,
+      "text": "you need to ensure minimal downtime and"
+    },
+    {
+      "start": 520.8,
+      "duration": 4.96,
+      "text": "easy roll back capabilities so how can"
+    },
+    {
+      "start": 523.919,
+      "duration": 3.36,
+      "text": "you implement this here is an example"
+    },
+    {
+      "start": 525.76,
+      "duration": 2.96,
+      "text": "you see there's a manifest file having"
+    },
+    {
+      "start": 527.279,
+      "duration": 3.361,
+      "text": "service deployment there are two"
+    },
+    {
+      "start": 528.72,
+      "duration": 2.92,
+      "text": "deployments one is the blue deployment"
+    },
+    {
+      "start": 530.64,
+      "duration": 3.52,
+      "text": "and the other one is the green"
+    },
+    {
+      "start": 531.64,
+      "duration": 4.24,
+      "text": "deployment so using this manifest file"
+    },
+    {
+      "start": 534.16,
+      "duration": 3.64,
+      "text": "you can have two identical environments"
+    },
+    {
+      "start": 535.88,
+      "duration": 3.92,
+      "text": "and you can switch traffic between both"
+    },
+    {
+      "start": 537.8,
+      "duration": 4.24,
+      "text": "of them or updated up application so you"
+    },
+    {
+      "start": 539.8,
+      "duration": 4.56,
+      "text": "can see the green application has"
+    },
+    {
+      "start": 542.04,
+      "duration": 4.479,
+      "text": "version 2.0 whereas the blue one has"
+    },
+    {
+      "start": 544.36,
+      "duration": 4.36,
+      "text": "version 1.0 if everything works fine in"
+    },
+    {
+      "start": 546.519,
+      "duration": 4.081,
+      "text": "the green one you can do the same to"
+    },
+    {
+      "start": 548.72,
+      "duration": 4.0,
+      "text": "your blue environment and you will have"
+    },
+    {
+      "start": 550.6,
+      "duration": 4.4,
+      "text": "two identical environments for the next"
+    },
+    {
+      "start": 552.72,
+      "duration": 4.119,
+      "text": "update as well so this is blue green"
+    },
+    {
+      "start": 555.0,
+      "duration": 4.24,
+      "text": "deployment now the next deployment"
+    },
+    {
+      "start": 556.839,
+      "duration": 4.081,
+      "text": "strategy is Canary deployment strategy"
+    },
+    {
+      "start": 559.24,
+      "duration": 3.44,
+      "text": "which was very confusing for me when I"
+    },
+    {
+      "start": 560.92,
+      "duration": 4.2,
+      "text": "heard it for the first time but it's"
+    },
+    {
+      "start": 562.68,
+      "duration": 4.44,
+      "text": "actually very simple so what is can"
+    },
+    {
+      "start": 565.12,
+      "duration": 3.12,
+      "text": "deployment in can deployment you will"
+    },
+    {
+      "start": 567.12,
+      "duration": 3.76,
+      "text": "have two environments of your"
+    },
+    {
+      "start": 568.24,
+      "duration": 4.2,
+      "text": "application one having the old version"
+    },
+    {
+      "start": 570.88,
+      "duration": 3.32,
+      "text": "and second having the new version of"
+    },
+    {
+      "start": 572.44,
+      "duration": 3.76,
+      "text": "your application that you want to make"
+    },
+    {
+      "start": 574.2,
+      "duration": 4.04,
+      "text": "available to everyone but before you"
+    },
+    {
+      "start": 576.2,
+      "duration": 4.4,
+      "text": "make it available to everyone you just"
+    },
+    {
+      "start": 578.24,
+      "duration": 4.36,
+      "text": "want to test out with few users and this"
+    },
+    {
+      "start": 580.6,
+      "duration": 3.96,
+      "text": "is where you can use Canary deployment"
+    },
+    {
+      "start": 582.6,
+      "duration": 3.52,
+      "text": "so in Canary deployment you can test out"
+    },
+    {
+      "start": 584.56,
+      "duration": 3.56,
+      "text": "your new version with some amount of"
+    },
+    {
+      "start": 586.12,
+      "duration": 3.68,
+      "text": "your users and then if everything works"
+    },
+    {
+      "start": 588.12,
+      "duration": 3.52,
+      "text": "fine you can make it available to"
+    },
+    {
+      "start": 589.8,
+      "duration": 3.12,
+      "text": "everyone so if you look at this example"
+    },
+    {
+      "start": 591.64,
+      "duration": 2.92,
+      "text": "here we have version one of our"
+    },
+    {
+      "start": 592.92,
+      "duration": 3.68,
+      "text": "application deploying a new version"
+    },
+    {
+      "start": 594.56,
+      "duration": 4.04,
+      "text": "using Canary would be giving some amount"
+    },
+    {
+      "start": 596.6,
+      "duration": 4.359,
+      "text": "of users if everything works fine then"
+    },
+    {
+      "start": 598.6,
+      "duration": 4.76,
+      "text": "give 100% % of the user and this is how"
+    },
+    {
+      "start": 600.959,
+      "duration": 4.601,
+      "text": "Canon works if you look at the"
+    },
+    {
+      "start": 603.36,
+      "duration": 4.28,
+      "text": "definition you will see Canon deployment"
+    },
+    {
+      "start": 605.56,
+      "duration": 5.04,
+      "text": "involves rolling out updates to a small"
+    },
+    {
+      "start": 607.64,
+      "duration": 4.68,
+      "text": "subset of users or servers before Runing"
+    },
+    {
+      "start": 610.6,
+      "duration": 3.52,
+      "text": "it out to the to the larger group"
+    },
+    {
+      "start": 612.32,
+      "duration": 4.24,
+      "text": "allowing for testing in real world"
+    },
+    {
+      "start": 614.12,
+      "duration": 4.0,
+      "text": "scenario before full deployment so using"
+    },
+    {
+      "start": 616.56,
+      "duration": 3.48,
+      "text": "candidate deployment you can test out"
+    },
+    {
+      "start": 618.12,
+      "duration": 4.279,
+      "text": "your new version before you make it"
+    },
+    {
+      "start": 620.04,
+      "duration": 4.72,
+      "text": "available to everyone now benefits of"
+    },
+    {
+      "start": 622.399,
+      "duration": 4.361,
+      "text": "using candate deployment includes risk"
+    },
+    {
+      "start": 624.76,
+      "duration": 4.4,
+      "text": "mitigation by testing with a small"
+    },
+    {
+      "start": 626.76,
+      "duration": 5.319,
+      "text": "subset of user and you can also quickly"
+    },
+    {
+      "start": 629.16,
+      "duration": 4.76,
+      "text": "detect issues before affecting all users"
+    },
+    {
+      "start": 632.079,
+      "duration": 4.32,
+      "text": "this disadvantage of using can"
+    },
+    {
+      "start": 633.92,
+      "duration": 4.64,
+      "text": "deployment is can deployment requires"
+    },
+    {
+      "start": 636.399,
+      "duration": 4.56,
+      "text": "careful monior and management of traffic"
+    },
+    {
+      "start": 638.56,
+      "duration": 5.2,
+      "text": "routing luckily Canada deployment is"
+    },
+    {
+      "start": 640.959,
+      "duration": 5.201,
+      "text": "supported by sto and you can see here is"
+    },
+    {
+      "start": 643.76,
+      "duration": 4.319,
+      "text": "the sto manifest that is using Canary"
+    },
+    {
+      "start": 646.16,
+      "duration": 3.84,
+      "text": "when we can Define different weight or"
+    },
+    {
+      "start": 648.079,
+      "duration": 3.641,
+      "text": "the percentage of how much traffic"
+    },
+    {
+      "start": 650.0,
+      "duration": 3.519,
+      "text": "should be given to version two of your"
+    },
+    {
+      "start": 651.72,
+      "duration": 3.76,
+      "text": "application and how much should be given"
+    },
+    {
+      "start": 653.519,
+      "duration": 3.76,
+      "text": "to version one of your application so"
+    },
+    {
+      "start": 655.48,
+      "duration": 4.039,
+      "text": "when should you use it you will be using"
+    },
+    {
+      "start": 657.279,
+      "duration": 4.401,
+      "text": "C deployment when you want to test out"
+    },
+    {
+      "start": 659.519,
+      "duration": 4.44,
+      "text": "new features or changes with small"
+    },
+    {
+      "start": 661.68,
+      "duration": 4.44,
+      "text": "subset of users before rolling out to"
+    },
+    {
+      "start": 663.959,
+      "duration": 4.361,
+      "text": "everyone and deploying a canary can be"
+    },
+    {
+      "start": 666.12,
+      "duration": 4.159,
+      "text": "done by gradually rting a percentage of"
+    },
+    {
+      "start": 668.32,
+      "duration": 4.12,
+      "text": "traffic to the new version the next"
+    },
+    {
+      "start": 670.279,
+      "duration": 4.281,
+      "text": "deployment strategy is AB testing"
+    },
+    {
+      "start": 672.44,
+      "duration": 3.8,
+      "text": "deployment in which you deploy different"
+    },
+    {
+      "start": 674.56,
+      "duration": 4.24,
+      "text": "variations or versions of your"
+    },
+    {
+      "start": 676.24,
+      "duration": 4.719,
+      "text": "application to decide which one is best"
+    },
+    {
+      "start": 678.8,
+      "duration": 3.839,
+      "text": "for your users in this deployment"
+    },
+    {
+      "start": 680.959,
+      "duration": 3.801,
+      "text": "strategy we have two different"
+    },
+    {
+      "start": 682.639,
+      "duration": 4.161,
+      "text": "variations the A variation and the B"
+    },
+    {
+      "start": 684.76,
+      "duration": 4.639,
+      "text": "variation and if 50% of traffic is"
+    },
+    {
+      "start": 686.8,
+      "duration": 5.32,
+      "text": "coming on the A1 you get around 15 %"
+    },
+    {
+      "start": 689.399,
+      "duration": 5.081,
+      "text": "conversion whereas on the B if 50%"
+    },
+    {
+      "start": 692.12,
+      "duration": 4.719,
+      "text": "traffic is coming you get around 35%"
+    },
+    {
+      "start": 694.48,
+      "duration": 4.84,
+      "text": "conversion which means B is better than"
+    },
+    {
+      "start": 696.839,
+      "duration": 4.0,
+      "text": "a so this is how you can decide which"
+    },
+    {
+      "start": 699.32,
+      "duration": 3.4,
+      "text": "variation or which version of your"
+    },
+    {
+      "start": 700.839,
+      "duration": 4.281,
+      "text": "application is going to be beneficial"
+    },
+    {
+      "start": 702.72,
+      "duration": 4.2,
+      "text": "for you so AB testing invols deploying"
+    },
+    {
+      "start": 705.12,
+      "duration": 3.88,
+      "text": "multiple versions of your application"
+    },
+    {
+      "start": 706.92,
+      "duration": 4.359,
+      "text": "simultaneously and directing different"
+    },
+    {
+      "start": 709.0,
+      "duration": 5.16,
+      "text": "users or request to each version to"
+    },
+    {
+      "start": 711.279,
+      "duration": 5.041,
+      "text": "compare performance or features benefits"
+    },
+    {
+      "start": 714.16,
+      "duration": 3.88,
+      "text": "of using AP testing is it allows for"
+    },
+    {
+      "start": 716.32,
+      "duration": 3.24,
+      "text": "comparison of different versions in real"
+    },
+    {
+      "start": 718.04,
+      "duration": 3.64,
+      "text": "world scenarios"
+    },
+    {
+      "start": 719.56,
+      "duration": 4.839,
+      "text": "it also enables data driven decision-"
+    },
+    {
+      "start": 721.68,
+      "duration": 4.399,
+      "text": "making based on user Behavior the only"
+    },
+    {
+      "start": 724.399,
+      "duration": 3.161,
+      "text": "problem with AB testing is there is"
+    },
+    {
+      "start": 726.079,
+      "duration": 3.961,
+      "text": "going to be complexity in managing"
+    },
+    {
+      "start": 727.56,
+      "duration": 5.519,
+      "text": "multiple versions of your application"
+    },
+    {
+      "start": 730.04,
+      "duration": 4.56,
+      "text": "simultaneously so when to use this is a"
+    },
+    {
+      "start": 733.079,
+      "duration": 3.921,
+      "text": "testing is appropriate when you want to"
+    },
+    {
+      "start": 734.6,
+      "duration": 4.08,
+      "text": "compare the performance or effectiveness"
+    },
+    {
+      "start": 737.0,
+      "duration": 3.959,
+      "text": "of two different versions of your"
+    },
+    {
+      "start": 738.68,
+      "duration": 4.48,
+      "text": "application and how to use this so you"
+    },
+    {
+      "start": 740.959,
+      "duration": 4.0,
+      "text": "can use a testing deployment strategy in"
+    },
+    {
+      "start": 743.16,
+      "duration": 3.919,
+      "text": "the code base rather than in the"
+    },
+    {
+      "start": 744.959,
+      "duration": 4.281,
+      "text": "kubernetes and here is an example of"
+    },
+    {
+      "start": 747.079,
+      "duration": 3.961,
+      "text": "python code if a particular feature is"
+    },
+    {
+      "start": 749.24,
+      "duration": 3.76,
+      "text": "enabled then use the new version or else"
+    },
+    {
+      "start": 751.04,
+      "duration": 3.96,
+      "text": "use the old version you would have to"
+    },
+    {
+      "start": 753.0,
+      "duration": 4.279,
+      "text": "deploy both the versions of the code and"
+    },
+    {
+      "start": 755.0,
+      "duration": 4.279,
+      "text": "control which version is executed based"
+    },
+    {
+      "start": 757.279,
+      "duration": 3.721,
+      "text": "on the feature flag or any other"
+    },
+    {
+      "start": 759.279,
+      "duration": 3.841,
+      "text": "condition that you set so these are all"
+    },
+    {
+      "start": 761.0,
+      "duration": 4.92,
+      "text": "the different deployment strategies that"
+    },
+    {
+      "start": 763.12,
+      "duration": 5.0,
+      "text": "I used in devops I hope this video was"
+    },
+    {
+      "start": 765.92,
+      "duration": 4.279,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 768.12,
+      "duration": 4.0,
+      "text": "any doubt do let me know in the comment"
+    },
+    {
+      "start": 770.199,
+      "duration": 4.041,
+      "text": "section please like this video subscribe"
+    },
+    {
+      "start": 772.12,
+      "duration": 4.6,
+      "text": "to Cloud champ thank you and have a good"
+    },
+    {
+      "start": 774.24,
+      "duration": 2.48,
+      "text": "day"
+    }
+  ]
+}

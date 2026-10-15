@@ -1,0 +1,3706 @@
+{
+  "video": {
+    "id": "weM2bObz7iI",
+    "title": "Kubernetes Interview Questions | Scenario Based K8s Interview Questions and Answers for Devops",
+    "url": "https://www.youtube.com/watch?v=weM2bObz7iI",
+    "duration": 1554,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.56,
+      "duration": 4.199,
+      "text": "kubernetes is a very popular container"
+    },
+    {
+      "start": 2.84,
+      "duration": 4.2,
+      "text": "orchestration tool and there are so many"
+    },
+    {
+      "start": 4.759,
+      "duration": 4.641,
+      "text": "jobs for kubernetes admins kubernetes"
+    },
+    {
+      "start": 7.04,
+      "duration": 5.04,
+      "text": "developers so in this video we look at"
+    },
+    {
+      "start": 9.4,
+      "duration": 4.72,
+      "text": "most asked kubernetes interview question"
+    },
+    {
+      "start": 12.08,
+      "duration": 3.679,
+      "text": "along with answers providing you with"
+    },
+    {
+      "start": 14.12,
+      "duration": 3.56,
+      "text": "real world examples and practical"
+    },
+    {
+      "start": 15.759,
+      "duration": 4.721,
+      "text": "Solutions so make sure you watch this"
+    },
+    {
+      "start": 17.68,
+      "duration": 4.64,
+      "text": "video till the end let's start okay so"
+    },
+    {
+      "start": 20.48,
+      "duration": 4.24,
+      "text": "we are here on my computer screen and I"
+    },
+    {
+      "start": 22.32,
+      "duration": 4.84,
+      "text": "have this document which includes most"
+    },
+    {
+      "start": 24.72,
+      "duration": 4.799,
+      "text": "asked kubernetes interview questions"
+    },
+    {
+      "start": 27.16,
+      "duration": 4.84,
+      "text": "along with answers now this document"
+    },
+    {
+      "start": 29.519,
+      "duration": 3.961,
+      "text": "mostly scenario based question but there"
+    },
+    {
+      "start": 32.0,
+      "duration": 4.04,
+      "text": "are also questions on troubleshooting"
+    },
+    {
+      "start": 33.48,
+      "duration": 4.8,
+      "text": "kubernetes clusters how to scale monitor"
+    },
+    {
+      "start": 36.04,
+      "duration": 5.28,
+      "text": "or secure your kubernetes cluster also"
+    },
+    {
+      "start": 38.28,
+      "duration": 4.64,
+      "text": "giops cicd and lot many Advanced topics"
+    },
+    {
+      "start": 41.32,
+      "duration": 4.0,
+      "text": "so make sure you watch this video till"
+    },
+    {
+      "start": 42.92,
+      "duration": 4.84,
+      "text": "the end along with this this document"
+    },
+    {
+      "start": 45.32,
+      "duration": 4.559,
+      "text": "also includes learning resources or"
+    },
+    {
+      "start": 47.76,
+      "duration": 4.119,
+      "text": "projects to help you understand topics"
+    },
+    {
+      "start": 49.879,
+      "duration": 3.961,
+      "text": "more deeper so if you want me to share"
+    },
+    {
+      "start": 51.879,
+      "duration": 3.641,
+      "text": "this document with you comment down"
+    },
+    {
+      "start": 53.84,
+      "duration": 3.559,
+      "text": "kubernetes interview questions and"
+    },
+    {
+      "start": 55.52,
+      "duration": 3.92,
+      "text": "answers and I will share this document"
+    },
+    {
+      "start": 57.399,
+      "duration": 5.0,
+      "text": "as a PDF on LinkedIn or share this"
+    },
+    {
+      "start": 59.44,
+      "duration": 4.439,
+      "text": "notion Link in the video description so"
+    },
+    {
+      "start": 62.399,
+      "duration": 3.4,
+      "text": "with that being said now let's start"
+    },
+    {
+      "start": 63.879,
+      "duration": 4.321,
+      "text": "with the first kubernetes interview"
+    },
+    {
+      "start": 65.799,
+      "duration": 4.481,
+      "text": "question so the first few questions in"
+    },
+    {
+      "start": 68.2,
+      "duration": 3.84,
+      "text": "your kubernetes interview will always be"
+    },
+    {
+      "start": 70.28,
+      "duration": 3.44,
+      "text": "the questions to test your kubernetes"
+    },
+    {
+      "start": 72.04,
+      "duration": 3.88,
+      "text": "knowledge or to check your past"
+    },
+    {
+      "start": 73.72,
+      "duration": 4.039,
+      "text": "experiences working on kubernetes so you"
+    },
+    {
+      "start": 75.92,
+      "duration": 3.96,
+      "text": "will get questions like how kubernetes"
+    },
+    {
+      "start": 77.759,
+      "duration": 4.04,
+      "text": "work what is kubernetes what does it do"
+    },
+    {
+      "start": 79.88,
+      "duration": 3.96,
+      "text": "and all similar questions and to help"
+    },
+    {
+      "start": 81.799,
+      "duration": 3.881,
+      "text": "you answer them all I have this video"
+    },
+    {
+      "start": 83.84,
+      "duration": 4.4,
+      "text": "which explains what is kubernetes and"
+    },
+    {
+      "start": 85.68,
+      "duration": 3.64,
+      "text": "how it works it is around 28 minutes so"
+    },
+    {
+      "start": 88.24,
+      "duration": 2.559,
+      "text": "it will help you clear all your"
+    },
+    {
+      "start": 89.32,
+      "duration": 3.759,
+      "text": "kubernetes con Concepts and also help"
+    },
+    {
+      "start": 90.799,
+      "duration": 3.721,
+      "text": "you answer these kind of questions so I"
+    },
+    {
+      "start": 93.079,
+      "duration": 3.4,
+      "text": "would recommend you checking out this"
+    },
+    {
+      "start": 94.52,
+      "duration": 3.44,
+      "text": "video but to answer this particular"
+    },
+    {
+      "start": 96.479,
+      "duration": 3.721,
+      "text": "question what is kubernetes and what"
+    },
+    {
+      "start": 97.96,
+      "duration": 4.64,
+      "text": "does it do kubernetes as we all know is"
+    },
+    {
+      "start": 100.2,
+      "duration": 4.32,
+      "text": "an open-source container orchestration"
+    },
+    {
+      "start": 102.6,
+      "duration": 3.64,
+      "text": "or container management tool that"
+    },
+    {
+      "start": 104.52,
+      "duration": 4.32,
+      "text": "automates the deployment Skilling and"
+    },
+    {
+      "start": 106.24,
+      "duration": 3.839,
+      "text": "management of containers along with this"
+    },
+    {
+      "start": 108.84,
+      "duration": 3.04,
+      "text": "you will also have a question on"
+    },
+    {
+      "start": 110.079,
+      "duration": 3.201,
+      "text": "kubernetes architecture so make sure you"
+    },
+    {
+      "start": 111.88,
+      "duration": 3.08,
+      "text": "go through the kubernetes architecture"
+    },
+    {
+      "start": 113.28,
+      "duration": 3.759,
+      "text": "properly understand what is inside"
+    },
+    {
+      "start": 114.96,
+      "duration": 4.199,
+      "text": "Master node what is inside worker node"
+    },
+    {
+      "start": 117.039,
+      "duration": 3.521,
+      "text": "how they work together so I also have"
+    },
+    {
+      "start": 119.159,
+      "duration": 3.64,
+      "text": "this video which explains kuber"
+    },
+    {
+      "start": 120.56,
+      "duration": 3.919,
+      "text": "architecture in 7 minutes I have drawn"
+    },
+    {
+      "start": 122.799,
+      "duration": 3.521,
+      "text": "out the architecture so it is very easy"
+    },
+    {
+      "start": 124.479,
+      "duration": 3.721,
+      "text": "to understand and to answer this"
+    },
+    {
+      "start": 126.32,
+      "duration": 3.799,
+      "text": "question the main components of kuber is"
+    },
+    {
+      "start": 128.2,
+      "duration": 3.759,
+      "text": "architecture are the master node and the"
+    },
+    {
+      "start": 130.119,
+      "duration": 3.241,
+      "text": "worker node Master node is something"
+    },
+    {
+      "start": 131.959,
+      "duration": 3.521,
+      "text": "that will handle everything inside the"
+    },
+    {
+      "start": 133.36,
+      "duration": 5.159,
+      "text": "cluster and it consists of cube API"
+    },
+    {
+      "start": 135.48,
+      "duration": 5.68,
+      "text": "server hcd scheduler and controller"
+    },
+    {
+      "start": 138.519,
+      "duration": 4.08,
+      "text": "manager whereas worker node is something"
+    },
+    {
+      "start": 141.16,
+      "duration": 3.84,
+      "text": "which is running your application in the"
+    },
+    {
+      "start": 142.599,
+      "duration": 4.92,
+      "text": "cluster so it consists of cubelet cube"
+    },
+    {
+      "start": 145.0,
+      "duration": 5.12,
+      "text": "proxy container runtime and the pods on"
+    },
+    {
+      "start": 147.519,
+      "duration": 4.08,
+      "text": "which your containers are running so"
+    },
+    {
+      "start": 150.12,
+      "duration": 3.32,
+      "text": "these are two different questions that"
+    },
+    {
+      "start": 151.599,
+      "duration": 3.28,
+      "text": "you will obviously get now that we have"
+    },
+    {
+      "start": 153.44,
+      "duration": 3.96,
+      "text": "covered this let's move on to the"
+    },
+    {
+      "start": 154.879,
+      "duration": 4.401,
+      "text": "scenario based questions so we have"
+    },
+    {
+      "start": 157.4,
+      "duration": 3.52,
+      "text": "first scenario based question which says"
+    },
+    {
+      "start": 159.28,
+      "duration": 3.72,
+      "text": "you have an application deployed on"
+    },
+    {
+      "start": 160.92,
+      "duration": 4.319,
+      "text": "kubon netes that is experiencing"
+    },
+    {
+      "start": 163.0,
+      "duration": 3.76,
+      "text": "increased traffic how would you scale"
+    },
+    {
+      "start": 165.239,
+      "duration": 3.321,
+      "text": "the application to handle the increased"
+    },
+    {
+      "start": 166.76,
+      "duration": 3.6,
+      "text": "load so you have an application running"
+    },
+    {
+      "start": 168.56,
+      "duration": 3.92,
+      "text": "on kubernetes which is getting a lot of"
+    },
+    {
+      "start": 170.36,
+      "duration": 4.64,
+      "text": "traffic and you want to scale up so you"
+    },
+    {
+      "start": 172.48,
+      "duration": 4.839,
+      "text": "can scale the pods either horizontally"
+    },
+    {
+      "start": 175.0,
+      "duration": 4.28,
+      "text": "or scale it vertically to scale the"
+    },
+    {
+      "start": 177.319,
+      "duration": 4.321,
+      "text": "application I would follow these steps"
+    },
+    {
+      "start": 179.28,
+      "duration": 4.08,
+      "text": "first I identify the bottle NE so I will"
+    },
+    {
+      "start": 181.64,
+      "duration": 4.72,
+      "text": "check the cluster to analyze resource"
+    },
+    {
+      "start": 183.36,
+      "duration": 5.36,
+      "text": "utilization including CPU memory Network"
+    },
+    {
+      "start": 186.36,
+      "duration": 4.36,
+      "text": "to determine the limiting factor once I"
+    },
+    {
+      "start": 188.72,
+      "duration": 4.28,
+      "text": "know this and if the bottleneck is CPU"
+    },
+    {
+      "start": 190.72,
+      "duration": 4.36,
+      "text": "or memory I would scale the application"
+    },
+    {
+      "start": 193.0,
+      "duration": 4.64,
+      "text": "horizontally by increasing the number of"
+    },
+    {
+      "start": 195.08,
+      "duration": 4.48,
+      "text": "replicas using horizontal pod"
+    },
+    {
+      "start": 197.64,
+      "duration": 3.4,
+      "text": "autoscaler but if the bottom leg is"
+    },
+    {
+      "start": 199.56,
+      "duration": 3.84,
+      "text": "resource specific I would vertically"
+    },
+    {
+      "start": 201.04,
+      "duration": 4.8,
+      "text": "scale the application by upgrading the"
+    },
+    {
+      "start": 203.4,
+      "duration": 3.839,
+      "text": "resources allocated to each Port so this"
+    },
+    {
+      "start": 205.84,
+      "duration": 3.64,
+      "text": "is how you can scale your application"
+    },
+    {
+      "start": 207.239,
+      "duration": 3.801,
+      "text": "either horizontally or vertically once"
+    },
+    {
+      "start": 209.48,
+      "duration": 3.399,
+      "text": "you scale it you can then Monitor and"
+    },
+    {
+      "start": 211.04,
+      "duration": 3.399,
+      "text": "validate to check the application"
+    },
+    {
+      "start": 212.879,
+      "duration": 3.761,
+      "text": "performance if everything is working"
+    },
+    {
+      "start": 214.439,
+      "duration": 4.52,
+      "text": "fine after scaling other than this in"
+    },
+    {
+      "start": 216.64,
+      "duration": 4.28,
+      "text": "kubernetes you can also scale your nodes"
+    },
+    {
+      "start": 218.959,
+      "duration": 3.401,
+      "text": "and that can be done using autoscaler or"
+    },
+    {
+      "start": 220.92,
+      "duration": 3.599,
+      "text": "also tools like"
+    },
+    {
+      "start": 222.36,
+      "duration": 3.72,
+      "text": "K now that you have understood this"
+    },
+    {
+      "start": 224.519,
+      "duration": 3.961,
+      "text": "let's move on to the next question which"
+    },
+    {
+      "start": 226.08,
+      "duration": 4.359,
+      "text": "is a troubleshooting question so while"
+    },
+    {
+      "start": 228.48,
+      "duration": 4.039,
+      "text": "troubleshooting a network issue in the"
+    },
+    {
+      "start": 230.439,
+      "duration": 5.0,
+      "text": "cluster you noticed Cube proxy in the"
+    },
+    {
+      "start": 232.519,
+      "duration": 5.121,
+      "text": "logs what is the role of Q proxy so this"
+    },
+    {
+      "start": 235.439,
+      "duration": 4.041,
+      "text": "is as I said a kubernetes architecture"
+    },
+    {
+      "start": 237.64,
+      "duration": 5.519,
+      "text": "kind of question asking you what is Q"
+    },
+    {
+      "start": 239.48,
+      "duration": 5.36,
+      "text": "proxy proy so Q proxy is a component"
+    },
+    {
+      "start": 243.159,
+      "duration": 3.961,
+      "text": "that runs on every node and it is a"
+    },
+    {
+      "start": 244.84,
+      "duration": 4.679,
+      "text": "network component that handles TCP and"
+    },
+    {
+      "start": 247.12,
+      "duration": 4.56,
+      "text": "UDP packets forwarding between the"
+    },
+    {
+      "start": 249.519,
+      "duration": 3.681,
+      "text": "backend Network Services it is very"
+    },
+    {
+      "start": 251.68,
+      "duration": 3.6,
+      "text": "important for Reliable communication"
+    },
+    {
+      "start": 253.2,
+      "duration": 4.4,
+      "text": "between pods and the services within the"
+    },
+    {
+      "start": 255.28,
+      "duration": 4.0,
+      "text": "cluster it does that by routing traffic"
+    },
+    {
+      "start": 257.6,
+      "duration": 3.96,
+      "text": "to the right destination and if you want"
+    },
+    {
+      "start": 259.28,
+      "duration": 5.639,
+      "text": "to go deep understand how Q proxy"
+    },
+    {
+      "start": 261.56,
+      "duration": 4.6,
+      "text": "handles TCP UDP traffic using IP tables"
+    },
+    {
+      "start": 264.919,
+      "duration": 3.201,
+      "text": "you can check out the official"
+    },
+    {
+      "start": 266.16,
+      "duration": 4.0,
+      "text": "documentation where it explains what is"
+    },
+    {
+      "start": 268.12,
+      "duration": 4.56,
+      "text": "Cube proxy and how it actually works"
+    },
+    {
+      "start": 270.16,
+      "duration": 4.8,
+      "text": "Works moving on the next scenario based"
+    },
+    {
+      "start": 272.68,
+      "duration": 4.519,
+      "text": "question is your team is planning a high"
+    },
+    {
+      "start": 274.96,
+      "duration": 3.84,
+      "text": "availability kubernetes cluster describe"
+    },
+    {
+      "start": 277.199,
+      "duration": 3.681,
+      "text": "the process and considerations for"
+    },
+    {
+      "start": 278.8,
+      "duration": 4.16,
+      "text": "designing a highly available kubernetes"
+    },
+    {
+      "start": 280.88,
+      "duration": 3.879,
+      "text": "cluster so this is a scenario based"
+    },
+    {
+      "start": 282.96,
+      "duration": 4.0,
+      "text": "porion to create a high availability"
+    },
+    {
+      "start": 284.759,
+      "duration": 4.481,
+      "text": "kubernetes cluster and we do this in"
+    },
+    {
+      "start": 286.96,
+      "duration": 4.16,
+      "text": "production for our critical application"
+    },
+    {
+      "start": 289.24,
+      "duration": 4.08,
+      "text": "so whenever we create a highly available"
+    },
+    {
+      "start": 291.12,
+      "duration": 4.72,
+      "text": "cluster we need to deploy the nodes and"
+    },
+    {
+      "start": 293.32,
+      "duration": 4.56,
+      "text": "the pods in three different or many"
+    },
+    {
+      "start": 295.84,
+      "duration": 4.04,
+      "text": "different ACS so to create a highly"
+    },
+    {
+      "start": 297.88,
+      "duration": 3.759,
+      "text": "available cluster we first do the"
+    },
+    {
+      "start": 299.88,
+      "duration": 3.759,
+      "text": "multimaster setup where we deploy"
+    },
+    {
+      "start": 301.639,
+      "duration": 4.161,
+      "text": "multiple Master nodes across three"
+    },
+    {
+      "start": 303.639,
+      "duration": 4.801,
+      "text": "different AES to ensure redundancy and"
+    },
+    {
+      "start": 305.8,
+      "duration": 4.52,
+      "text": "fall tolerance this is the diagram here"
+    },
+    {
+      "start": 308.44,
+      "duration": 3.68,
+      "text": "so we have three different Master nodes"
+    },
+    {
+      "start": 310.32,
+      "duration": 3.12,
+      "text": "which is known as multimaster setup if"
+    },
+    {
+      "start": 312.12,
+      "duration": 3.919,
+      "text": "we have three different Master nodes we"
+    },
+    {
+      "start": 313.44,
+      "duration": 4.28,
+      "text": "also need to distribute the hcd which is"
+    },
+    {
+      "start": 316.039,
+      "duration": 3.361,
+      "text": "the data storage that stores all the"
+    },
+    {
+      "start": 317.72,
+      "duration": 4.199,
+      "text": "information about the cluster so we"
+    },
+    {
+      "start": 319.4,
+      "duration": 4.2,
+      "text": "distribute hcd members across the as's"
+    },
+    {
+      "start": 321.919,
+      "duration": 4.321,
+      "text": "in the similar fashion as the master"
+    },
+    {
+      "start": 323.6,
+      "duration": 5.8,
+      "text": "node this ensures data redundency and"
+    },
+    {
+      "start": 326.24,
+      "duration": 4.28,
+      "text": "resilience against Zone failures now if"
+    },
+    {
+      "start": 329.4,
+      "duration": 2.919,
+      "text": "you have have three different Master"
+    },
+    {
+      "start": 330.52,
+      "duration": 4.399,
+      "text": "node to distribute the traffic we also"
+    },
+    {
+      "start": 332.319,
+      "duration": 5.921,
+      "text": "need a load balancer so we configured a"
+    },
+    {
+      "start": 334.919,
+      "duration": 5.761,
+      "text": "TCP load balancer such as AWS Network"
+    },
+    {
+      "start": 338.24,
+      "duration": 5.239,
+      "text": "load balancer to evenly distribute API"
+    },
+    {
+      "start": 340.68,
+      "duration": 5.04,
+      "text": "request among the API server this setup"
+    },
+    {
+      "start": 343.479,
+      "duration": 4.121,
+      "text": "eliminates the risk of single API server"
+    },
+    {
+      "start": 345.72,
+      "duration": 3.72,
+      "text": "becoming a bottleneck or a point of"
+    },
+    {
+      "start": 347.6,
+      "duration": 3.719,
+      "text": "failure along with this we also enable"
+    },
+    {
+      "start": 349.44,
+      "duration": 4.0,
+      "text": "node Auto Repair which is a feature by"
+    },
+    {
+      "start": 351.319,
+      "duration": 3.961,
+      "text": "kubernetes engine to make sure that it"
+    },
+    {
+      "start": 353.44,
+      "duration": 4.039,
+      "text": "automatically detects and replaces the"
+    },
+    {
+      "start": 355.28,
+      "duration": 3.84,
+      "text": "unhealthy nodes so this is how you can"
+    },
+    {
+      "start": 357.479,
+      "duration": 3.481,
+      "text": "set up a highly available kubernetes"
+    },
+    {
+      "start": 359.12,
+      "duration": 3.4,
+      "text": "cluster something you should definitely"
+    },
+    {
+      "start": 360.96,
+      "duration": 3.679,
+      "text": "know and you can also check out this"
+    },
+    {
+      "start": 362.52,
+      "duration": 4.64,
+      "text": "blog which explains how to create a"
+    },
+    {
+      "start": 364.639,
+      "duration": 5.081,
+      "text": "kubernetes highly available"
+    },
+    {
+      "start": 367.16,
+      "duration": 4.92,
+      "text": "cluster now moving on the next question"
+    },
+    {
+      "start": 369.72,
+      "duration": 4.479,
+      "text": "is again a scenario based question in"
+    },
+    {
+      "start": 372.08,
+      "duration": 4.239,
+      "text": "your kubernetes environment a master or"
+    },
+    {
+      "start": 374.199,
+      "duration": 3.84,
+      "text": "a worker node suddenly fails what"
+    },
+    {
+      "start": 376.319,
+      "duration": 3.761,
+      "text": "happens when the master or worker node"
+    },
+    {
+      "start": 378.039,
+      "duration": 4.201,
+      "text": "fails so this is a question that I got"
+    },
+    {
+      "start": 380.08,
+      "duration": 4.0,
+      "text": "recently in my kubernetes interviews so"
+    },
+    {
+      "start": 382.24,
+      "duration": 3.76,
+      "text": "make sure you understand this properly"
+    },
+    {
+      "start": 384.08,
+      "duration": 3.88,
+      "text": "what will happen if one of the nodes"
+    },
+    {
+      "start": 386.0,
+      "duration": 3.8,
+      "text": "fail if the master node fails what"
+    },
+    {
+      "start": 387.96,
+      "duration": 3.6,
+      "text": "happens if worker node fails what"
+    },
+    {
+      "start": 389.8,
+      "duration": 2.959,
+      "text": "happens so we all know Master node is"
+    },
+    {
+      "start": 391.56,
+      "duration": 3.039,
+      "text": "something that is used to handle"
+    },
+    {
+      "start": 392.759,
+      "duration": 3.921,
+      "text": "everything inside the cluster and if the"
+    },
+    {
+      "start": 394.599,
+      "duration": 4.481,
+      "text": "master node fails the cluster continues"
+    },
+    {
+      "start": 396.68,
+      "duration": 4.48,
+      "text": "to operate normally but the Pod"
+    },
+    {
+      "start": 399.08,
+      "duration": 3.6,
+      "text": "management is lost so if the master node"
+    },
+    {
+      "start": 401.16,
+      "duration": 3.08,
+      "text": "fails there's no management for the pods"
+    },
+    {
+      "start": 402.68,
+      "duration": 4.16,
+      "text": "there are no nude pods going to be"
+    },
+    {
+      "start": 404.24,
+      "duration": 3.92,
+      "text": "created whereas if the worker node fails"
+    },
+    {
+      "start": 406.84,
+      "duration": 3.079,
+      "text": "worker node is something that is running"
+    },
+    {
+      "start": 408.16,
+      "duration": 3.52,
+      "text": "your application so if the worker node"
+    },
+    {
+      "start": 409.919,
+      "duration": 3.521,
+      "text": "fails obviously the application running"
+    },
+    {
+      "start": 411.68,
+      "duration": 4.32,
+      "text": "on it will also be failed so you will"
+    },
+    {
+      "start": 413.44,
+      "duration": 5.12,
+      "text": "get DNS failures on the worker node but"
+    },
+    {
+      "start": 416.0,
+      "duration": 4.28,
+      "text": "the master node is going to run properly"
+    },
+    {
+      "start": 418.56,
+      "duration": 3.68,
+      "text": "kubernetes when finds out that the"
+    },
+    {
+      "start": 420.28,
+      "duration": 4.359,
+      "text": "worker node is failing it will Mark that"
+    },
+    {
+      "start": 422.24,
+      "duration": 4.72,
+      "text": "node as not ready so that the new pods"
+    },
+    {
+      "start": 424.639,
+      "duration": 4.721,
+      "text": "are not going to be created on that and"
+    },
+    {
+      "start": 426.96,
+      "duration": 4.6,
+      "text": "the scheduler is going to remove that"
+    },
+    {
+      "start": 429.36,
+      "duration": 3.76,
+      "text": "pods which are on the failed worker node"
+    },
+    {
+      "start": 431.56,
+      "duration": 3.56,
+      "text": "and it will launch it somewhere else on"
+    },
+    {
+      "start": 433.12,
+      "duration": 4.359,
+      "text": "the other nodes so this is what happens"
+    },
+    {
+      "start": 435.12,
+      "duration": 3.639,
+      "text": "when the worker or the master node fails"
+    },
+    {
+      "start": 437.479,
+      "duration": 3.481,
+      "text": "now that we know this let's move on to"
+    },
+    {
+      "start": 438.759,
+      "duration": 5.041,
+      "text": "the next question which is how does"
+    },
+    {
+      "start": 440.96,
+      "duration": 4.519,
+      "text": "ingress help in kubernetes so Ingress is"
+    },
+    {
+      "start": 443.8,
+      "duration": 4.04,
+      "text": "a kubernetes object that is used to"
+    },
+    {
+      "start": 445.479,
+      "duration": 4.201,
+      "text": "expose the services to the external"
+    },
+    {
+      "start": 447.84,
+      "duration": 4.039,
+      "text": "world so Ingress is a resource that that"
+    },
+    {
+      "start": 449.68,
+      "duration": 3.919,
+      "text": "defines rule to expose services to"
+    },
+    {
+      "start": 451.879,
+      "duration": 3.44,
+      "text": "external traffic and it also provides"
+    },
+    {
+      "start": 453.599,
+      "duration": 3.681,
+      "text": "you all these features it Expos the"
+    },
+    {
+      "start": 455.319,
+      "duration": 4.241,
+      "text": "services to the internet using a single"
+    },
+    {
+      "start": 457.28,
+      "duration": 4.359,
+      "text": "IP address or a domain name it routes"
+    },
+    {
+      "start": 459.56,
+      "duration": 4.319,
+      "text": "the traffic to your services based on"
+    },
+    {
+      "start": 461.639,
+      "duration": 3.96,
+      "text": "host name or host path it also provides"
+    },
+    {
+      "start": 463.879,
+      "duration": 4.0,
+      "text": "features like load balancing SSL"
+    },
+    {
+      "start": 465.599,
+      "duration": 3.681,
+      "text": "termination name based virtual hosting"
+    },
+    {
+      "start": 467.879,
+      "duration": 3.28,
+      "text": "and it simplifies the management and"
+    },
+    {
+      "start": 469.28,
+      "duration": 4.639,
+      "text": "configuration of your services so this"
+    },
+    {
+      "start": 471.159,
+      "duration": 5.081,
+      "text": "is what Ingress does moving on the next"
+    },
+    {
+      "start": 473.919,
+      "duration": 4.041,
+      "text": "question is you are selecting a service"
+    },
+    {
+      "start": 476.24,
+      "duration": 3.84,
+      "text": "to expose your application hosted on"
+    },
+    {
+      "start": 477.96,
+      "duration": 4.4,
+      "text": "kubernetes list the different types of"
+    },
+    {
+      "start": 480.08,
+      "duration": 4.04,
+      "text": "services in kubernetes so service is a"
+    },
+    {
+      "start": 482.36,
+      "duration": 4.119,
+      "text": "kubernetes object that is used to expose"
+    },
+    {
+      "start": 484.12,
+      "duration": 3.759,
+      "text": "your application running on the nodes to"
+    },
+    {
+      "start": 486.479,
+      "duration": 3.4,
+      "text": "the outside world and there are"
+    },
+    {
+      "start": 487.879,
+      "duration": 4.561,
+      "text": "different types of services like cluster"
+    },
+    {
+      "start": 489.879,
+      "duration": 4.76,
+      "text": "IP node Port load balancer and external"
+    },
+    {
+      "start": 492.44,
+      "duration": 4.36,
+      "text": "name so cluster IP here is the default"
+    },
+    {
+      "start": 494.639,
+      "duration": 4.481,
+      "text": "kubernetes service which exposes the"
+    },
+    {
+      "start": 496.8,
+      "duration": 4.2,
+      "text": "application on cluster's internal IP"
+    },
+    {
+      "start": 499.12,
+      "duration": 3.919,
+      "text": "address which means the application is"
+    },
+    {
+      "start": 501.0,
+      "duration": 4.72,
+      "text": "only accessible inside the cluster"
+    },
+    {
+      "start": 503.039,
+      "duration": 4.401,
+      "text": "within the cluster next is node port in"
+    },
+    {
+      "start": 505.72,
+      "duration": 3.96,
+      "text": "this service type you expose your"
+    },
+    {
+      "start": 507.44,
+      "duration": 4.24,
+      "text": "application on the node's IP address"
+    },
+    {
+      "start": 509.68,
+      "duration": 4.719,
+      "text": "colon some particular Port so worker"
+    },
+    {
+      "start": 511.68,
+      "duration": 4.839,
+      "text": "node IP address some Port it exposes a"
+    },
+    {
+      "start": 514.399,
+      "duration": 3.76,
+      "text": "service on a static port on each node in"
+    },
+    {
+      "start": 516.519,
+      "duration": 4.041,
+      "text": "the cluster making it accessible from"
+    },
+    {
+      "start": 518.159,
+      "duration": 3.961,
+      "text": "the outside cluster and we also have"
+    },
+    {
+      "start": 520.56,
+      "duration": 4.04,
+      "text": "projects which are using nodeport the"
+    },
+    {
+      "start": 522.12,
+      "duration": 5.04,
+      "text": "project microservices python application"
+    },
+    {
+      "start": 524.6,
+      "duration": 4.96,
+      "text": "to convert video to audio is using node"
+    },
+    {
+      "start": 527.16,
+      "duration": 4.56,
+      "text": "Port as a service next service is load"
+    },
+    {
+      "start": 529.56,
+      "duration": 4.32,
+      "text": "balancer in this you provision an"
+    },
+    {
+      "start": 531.72,
+      "duration": 3.88,
+      "text": "external load balancer in the cloud uh"
+    },
+    {
+      "start": 533.88,
+      "duration": 3.12,
+      "text": "directing traffic to your the kubet"
+    },
+    {
+      "start": 535.6,
+      "duration": 3.08,
+      "text": "service so when you use load balancer as"
+    },
+    {
+      "start": 537.0,
+      "duration": 2.92,
+      "text": "a service type you will be creating a"
+    },
+    {
+      "start": 538.68,
+      "duration": 3.44,
+      "text": "load balancer in the CL Cloud that will"
+    },
+    {
+      "start": 539.92,
+      "duration": 4.44,
+      "text": "be used to expose our application lastly"
+    },
+    {
+      "start": 542.12,
+      "duration": 4.88,
+      "text": "we have external name in this you map"
+    },
+    {
+      "start": 544.36,
+      "duration": 4.28,
+      "text": "the service to an external DNS name"
+    },
+    {
+      "start": 547.0,
+      "duration": 3.56,
+      "text": "enabling referencing of external"
+    },
+    {
+      "start": 548.64,
+      "duration": 4.08,
+      "text": "Services by the name from within the"
+    },
+    {
+      "start": 550.56,
+      "duration": 4.44,
+      "text": "cluster so these are different service"
+    },
+    {
+      "start": 552.72,
+      "duration": 4.08,
+      "text": "type in kubernetes once you understand"
+    },
+    {
+      "start": 555.0,
+      "duration": 4.12,
+      "text": "this or you answer this the followup"
+    },
+    {
+      "start": 556.8,
+      "duration": 4.24,
+      "text": "question could be what do you know about"
+    },
+    {
+      "start": 559.12,
+      "duration": 4.08,
+      "text": "headless service so this is again"
+    },
+    {
+      "start": 561.04,
+      "duration": 4.28,
+      "text": "another type of service which where the"
+    },
+    {
+      "start": 563.2,
+      "duration": 4.199,
+      "text": "type is cluster IP but there is no IP"
+    },
+    {
+      "start": 565.32,
+      "duration": 3.639,
+      "text": "address attached to the service so"
+    },
+    {
+      "start": 567.399,
+      "duration": 3.481,
+      "text": "headless service in kubernetes is the"
+    },
+    {
+      "start": 568.959,
+      "duration": 4.481,
+      "text": "type of service that doesn't allocate a"
+    },
+    {
+      "start": 570.88,
+      "duration": 4.8,
+      "text": "cluster IP so here the spec cluster IP"
+    },
+    {
+      "start": 573.44,
+      "duration": 4.04,
+      "text": "set to none and the spec type is cluster"
+    },
+    {
+      "start": 575.68,
+      "duration": 3.96,
+      "text": "IP to understand this more properly I"
+    },
+    {
+      "start": 577.48,
+      "duration": 4.28,
+      "text": "can show you the docu the Manifest for"
+    },
+    {
+      "start": 579.64,
+      "duration": 4.12,
+      "text": "this particular headless service so this"
+    },
+    {
+      "start": 581.76,
+      "duration": 4.16,
+      "text": "is what the Manifest looks like you have"
+    },
+    {
+      "start": 583.76,
+      "duration": 3.84,
+      "text": "the service and the type is cluster IP"
+    },
+    {
+      "start": 585.92,
+      "duration": 3.44,
+      "text": "but it said To None which means the"
+    },
+    {
+      "start": 587.6,
+      "duration": 3.72,
+      "text": "service is not going to have any IP and"
+    },
+    {
+      "start": 589.36,
+      "duration": 3.32,
+      "text": "if you want to access anything you can"
+    },
+    {
+      "start": 591.32,
+      "duration": 3.56,
+      "text": "directly access the parts behind the"
+    },
+    {
+      "start": 592.68,
+      "duration": 4.2,
+      "text": "services we have also used this type of"
+    },
+    {
+      "start": 594.88,
+      "duration": 3.6,
+      "text": "service in this particular project so if"
+    },
+    {
+      "start": 596.88,
+      "duration": 3.48,
+      "text": "you want to see how it works you can go"
+    },
+    {
+      "start": 598.48,
+      "duration": 4.24,
+      "text": "through and do this Pro project as"
+    },
+    {
+      "start": 600.36,
+      "duration": 4.4,
+      "text": "well now this type of services are used"
+    },
+    {
+      "start": 602.72,
+      "duration": 4.52,
+      "text": "for databases as we have used inside our"
+    },
+    {
+      "start": 604.76,
+      "duration": 4.639,
+      "text": "project for mongod DP databases and the"
+    },
+    {
+      "start": 607.24,
+      "duration": 3.64,
+      "text": "next question we have is your manager"
+    },
+    {
+      "start": 609.399,
+      "duration": 3.12,
+      "text": "has instructed you to run several"
+    },
+    {
+      "start": 610.88,
+      "duration": 3.84,
+      "text": "scripts before starting the main"
+    },
+    {
+      "start": 612.519,
+      "duration": 4.521,
+      "text": "application in your kubernetes SP and"
+    },
+    {
+      "start": 614.72,
+      "duration": 4.4,
+      "text": "suggested using init containers what are"
+    },
+    {
+      "start": 617.04,
+      "duration": 3.56,
+      "text": "init containers so init containers and"
+    },
+    {
+      "start": 619.12,
+      "duration": 4.0,
+      "text": "kubernetes are something that will run"
+    },
+    {
+      "start": 620.6,
+      "duration": 4.64,
+      "text": "before your main application runs so you"
+    },
+    {
+      "start": 623.12,
+      "duration": 3.92,
+      "text": "have two containers inside a pod one is"
+    },
+    {
+      "start": 625.24,
+      "duration": 3.76,
+      "text": "init container another is application"
+    },
+    {
+      "start": 627.04,
+      "duration": 3.56,
+      "text": "container this init container will run"
+    },
+    {
+      "start": 629.0,
+      "duration": 3.64,
+      "text": "before before the main application"
+    },
+    {
+      "start": 630.6,
+      "duration": 3.4,
+      "text": "container is running and we use this for"
+    },
+    {
+      "start": 632.64,
+      "duration": 3.96,
+      "text": "different use cases like running a"
+    },
+    {
+      "start": 634.0,
+      "duration": 4.68,
+      "text": "script setting up network configuration"
+    },
+    {
+      "start": 636.6,
+      "duration": 3.56,
+      "text": "or downloading configuration file or"
+    },
+    {
+      "start": 638.68,
+      "duration": 4.0,
+      "text": "anything that needs to be done before"
+    },
+    {
+      "start": 640.16,
+      "duration": 4.2,
+      "text": "the application starts so init container"
+    },
+    {
+      "start": 642.68,
+      "duration": 3.56,
+      "text": "is a type of container in kubernetes"
+    },
+    {
+      "start": 644.36,
+      "duration": 3.88,
+      "text": "that runs before the main application"
+    },
+    {
+      "start": 646.24,
+      "duration": 3.56,
+      "text": "container in the PA runs and the purpose"
+    },
+    {
+      "start": 648.24,
+      "duration": 3.92,
+      "text": "of init container is to perform"
+    },
+    {
+      "start": 649.8,
+      "duration": 4.159,
+      "text": "initialization stask or setup procedures"
+    },
+    {
+      "start": 652.16,
+      "duration": 4.4,
+      "text": "that are not present inside the"
+    },
+    {
+      "start": 653.959,
+      "duration": 4.921,
+      "text": "application container images so this is"
+    },
+    {
+      "start": 656.56,
+      "duration": 3.399,
+      "text": "how unit containers are used apart from"
+    },
+    {
+      "start": 658.88,
+      "duration": 3.16,
+      "text": "this there are also other types of"
+    },
+    {
+      "start": 659.959,
+      "duration": 3.761,
+      "text": "containers like Ambassador or sidecar"
+    },
+    {
+      "start": 662.04,
+      "duration": 3.56,
+      "text": "containers I've explained sidec car"
+    },
+    {
+      "start": 663.72,
+      "duration": 4.2,
+      "text": "containers in one of the shots recently"
+    },
+    {
+      "start": 665.6,
+      "duration": 4.12,
+      "text": "so you can also check that out moving on"
+    },
+    {
+      "start": 667.92,
+      "duration": 3.52,
+      "text": "the next question is a critical"
+    },
+    {
+      "start": 669.72,
+      "duration": 3.6,
+      "text": "application running on one of the node"
+    },
+    {
+      "start": 671.44,
+      "duration": 4.04,
+      "text": "is not working properly how do you"
+    },
+    {
+      "start": 673.32,
+      "duration": 3.68,
+      "text": "monitor applications in kubernetes so"
+    },
+    {
+      "start": 675.48,
+      "duration": 3.52,
+      "text": "this question is on how you monitor"
+    },
+    {
+      "start": 677.0,
+      "duration": 4.32,
+      "text": "applications for monitoring application"
+    },
+    {
+      "start": 679.0,
+      "duration": 3.72,
+      "text": "you can use tools like Romas grafana"
+    },
+    {
+      "start": 681.32,
+      "duration": 3.88,
+      "text": "spunk and there are also other"
+    },
+    {
+      "start": 682.72,
+      "duration": 4.919,
+      "text": "monitoring tools for kubernetes uh which"
+    },
+    {
+      "start": 685.2,
+      "duration": 4.28,
+      "text": "you can use but here I've mentioned some"
+    },
+    {
+      "start": 687.639,
+      "duration": 3.521,
+      "text": "few points that you can explain in your"
+    },
+    {
+      "start": 689.48,
+      "duration": 4.479,
+      "text": "interviews so to collect container"
+    },
+    {
+      "start": 691.16,
+      "duration": 4.359,
+      "text": "metrics you can use tools like C advisor"
+    },
+    {
+      "start": 693.959,
+      "duration": 3.44,
+      "text": "or container run times you can also use"
+    },
+    {
+      "start": 695.519,
+      "duration": 4.801,
+      "text": "tools like you can also use commands"
+    },
+    {
+      "start": 697.399,
+      "duration": 5.68,
+      "text": "like Cube CTL top or cube CTL"
+    },
+    {
+      "start": 700.32,
+      "duration": 4.12,
+      "text": "stat next for getting cluster level"
+    },
+    {
+      "start": 703.079,
+      "duration": 3.0,
+      "text": "metrics you can use kubernetes"
+    },
+    {
+      "start": 704.44,
+      "duration": 3.639,
+      "text": "monitoring tools like Cube State metrix"
+    },
+    {
+      "start": 706.079,
+      "duration": 5.601,
+      "text": "metrix server to get the logs you can"
+    },
+    {
+      "start": 708.079,
+      "duration": 5.681,
+      "text": "use efk uh or low Kei or other tools you"
+    },
+    {
+      "start": 711.68,
+      "duration": 4.04,
+      "text": "can also use Readiness and livess pro"
+    },
+    {
+      "start": 713.76,
+      "duration": 4.56,
+      "text": "for health check to monitor the"
+    },
+    {
+      "start": 715.72,
+      "duration": 5.72,
+      "text": "application you can also set up alerting"
+    },
+    {
+      "start": 718.32,
+      "duration": 5.959,
+      "text": "to get alerts on on slack teams mails"
+    },
+    {
+      "start": 721.44,
+      "duration": 4.28,
+      "text": "Etc using Prometheus alert manager and"
+    },
+    {
+      "start": 724.279,
+      "duration": 3.68,
+      "text": "optionally you can also use third party"
+    },
+    {
+      "start": 725.72,
+      "duration": 3.799,
+      "text": "tools like all the different uh"
+    },
+    {
+      "start": 727.959,
+      "duration": 3.12,
+      "text": "monitoring tools that we have so this is"
+    },
+    {
+      "start": 729.519,
+      "duration": 3.0,
+      "text": "how you can monitor your application"
+    },
+    {
+      "start": 731.079,
+      "duration": 3.801,
+      "text": "running on"
+    },
+    {
+      "start": 732.519,
+      "duration": 4.56,
+      "text": "kubernetes next we have another scenario"
+    },
+    {
+      "start": 734.88,
+      "duration": 4.0,
+      "text": "based question on gitops so your manager"
+    },
+    {
+      "start": 737.079,
+      "duration": 4.401,
+      "text": "read an article on gitops and want you"
+    },
+    {
+      "start": 738.88,
+      "duration": 5.04,
+      "text": "to do a POC on it what is gitops and how"
+    },
+    {
+      "start": 741.48,
+      "duration": 4.039,
+      "text": "do you implement it so we all know giops"
+    },
+    {
+      "start": 743.92,
+      "duration": 4.159,
+      "text": "is something that is used to automate"
+    },
+    {
+      "start": 745.519,
+      "duration": 5.201,
+      "text": "your deployments on kubernetes so how it"
+    },
+    {
+      "start": 748.079,
+      "duration": 4.241,
+      "text": "works is you the you push your manifest"
+    },
+    {
+      "start": 750.72,
+      "duration": 4.479,
+      "text": "files on a"
+    },
+    {
+      "start": 752.32,
+      "duration": 5.24,
+      "text": "repository like GitHub and once you push"
+    },
+    {
+      "start": 755.199,
+      "duration": 4.32,
+      "text": "this every anytime you make a change the"
+    },
+    {
+      "start": 757.56,
+      "duration": 3.88,
+      "text": "giops tool will check get that and"
+    },
+    {
+      "start": 759.519,
+      "duration": 4.12,
+      "text": "update it in your kubernetes cluster so"
+    },
+    {
+      "start": 761.44,
+      "duration": 3.519,
+      "text": "I've mentioned here for kubernetes giops"
+    },
+    {
+      "start": 763.639,
+      "duration": 3.361,
+      "text": "is a practice where all the"
+    },
+    {
+      "start": 764.959,
+      "duration": 3.32,
+      "text": "configuration include manifest file or"
+    },
+    {
+      "start": 767.0,
+      "duration": 3.36,
+      "text": "Helm charts are stored in Gate"
+    },
+    {
+      "start": 768.279,
+      "duration": 4.12,
+      "text": "repository changes to this repository"
+    },
+    {
+      "start": 770.36,
+      "duration": 4.0,
+      "text": "will trigger a configuration using"
+    },
+    {
+      "start": 772.399,
+      "duration": 4.041,
+      "text": "deployment pipelines ensuring that the"
+    },
+    {
+      "start": 774.36,
+      "duration": 3.919,
+      "text": "cluster desired State matches the code"
+    },
+    {
+      "start": 776.44,
+      "duration": 3.68,
+      "text": "in the repository and this approach"
+    },
+    {
+      "start": 778.279,
+      "duration": 3.401,
+      "text": "streams line management promote coll"
+    },
+    {
+      "start": 780.12,
+      "duration": 3.519,
+      "text": "collaboration and provides a clear audit"
+    },
+    {
+      "start": 781.68,
+      "duration": 4.36,
+      "text": "Trail you can do this using tools like"
+    },
+    {
+      "start": 783.639,
+      "duration": 5.0,
+      "text": "Argo CD flux CD I have this video which"
+    },
+    {
+      "start": 786.04,
+      "duration": 4.56,
+      "text": "explains kops very properly with project"
+    },
+    {
+      "start": 788.639,
+      "duration": 3.841,
+      "text": "to deploy Tetris game on kubernetes"
+    },
+    {
+      "start": 790.6,
+      "duration": 3.239,
+      "text": "using Argo CD so I recommend you"
+    },
+    {
+      "start": 792.48,
+      "duration": 2.52,
+      "text": "checking it out if you have no clue"
+    },
+    {
+      "start": 793.839,
+      "duration": 3.761,
+      "text": "about"
+    },
+    {
+      "start": 795.0,
+      "duration": 4.92,
+      "text": "gitops next the company is very"
+    },
+    {
+      "start": 797.6,
+      "duration": 5.76,
+      "text": "concerned about securing cluster least"
+    },
+    {
+      "start": 799.92,
+      "duration": 4.919,
+      "text": "some list some list some security"
+    },
+    {
+      "start": 803.36,
+      "duration": 3.279,
+      "text": "measures that you can take while using"
+    },
+    {
+      "start": 804.839,
+      "duration": 3.761,
+      "text": "kubernetes so this question is on"
+    },
+    {
+      "start": 806.639,
+      "duration": 3.2,
+      "text": "securing kubernetes cluster very"
+    },
+    {
+      "start": 808.6,
+      "duration": 2.76,
+      "text": "important thing thing that a devops"
+    },
+    {
+      "start": 809.839,
+      "duration": 3.521,
+      "text": "engineer should know so how can you"
+    },
+    {
+      "start": 811.36,
+      "duration": 4.039,
+      "text": "secure your kubernetes clusters you can"
+    },
+    {
+      "start": 813.36,
+      "duration": 4.839,
+      "text": "secure using all these different ways"
+    },
+    {
+      "start": 815.399,
+      "duration": 5.361,
+      "text": "first is rbac so you restrict users"
+    },
+    {
+      "start": 818.199,
+      "duration": 4.721,
+      "text": "access based on their roles then you can"
+    },
+    {
+      "start": 820.76,
+      "duration": 4.92,
+      "text": "use Network policies to determine or to"
+    },
+    {
+      "start": 822.92,
+      "duration": 5.4,
+      "text": "handle the traffic inside the P or even"
+    },
+    {
+      "start": 825.68,
+      "duration": 4.88,
+      "text": "to external external communication as"
+    },
+    {
+      "start": 828.32,
+      "duration": 4.639,
+      "text": "well your container security ensure"
+    },
+    {
+      "start": 830.56,
+      "duration": 4.0,
+      "text": "secure run times and image scanning uh"
+    },
+    {
+      "start": 832.959,
+      "duration": 3.56,
+      "text": "Secrets management you should always"
+    },
+    {
+      "start": 834.56,
+      "duration": 4.0,
+      "text": "secure your secrets either using"
+    },
+    {
+      "start": 836.519,
+      "duration": 5.161,
+      "text": "kubernetes Secrets or using other tools"
+    },
+    {
+      "start": 838.56,
+      "duration": 5.519,
+      "text": "like hashiko wal AWS Secrets manager"
+    },
+    {
+      "start": 841.68,
+      "duration": 4.32,
+      "text": "audit logging always track activities"
+    },
+    {
+      "start": 844.079,
+      "duration": 4.401,
+      "text": "for security monitoring update and"
+    },
+    {
+      "start": 846.0,
+      "duration": 4.32,
+      "text": "patching make sure your clusters are up"
+    },
+    {
+      "start": 848.48,
+      "duration": 4.2,
+      "text": "to date and maintain the component and"
+    },
+    {
+      "start": 850.32,
+      "duration": 4.4,
+      "text": "notes current version as well you can"
+    },
+    {
+      "start": 852.68,
+      "duration": 4.12,
+      "text": "also use third party security tools"
+    },
+    {
+      "start": 854.72,
+      "duration": 4.4,
+      "text": "which are lot of them right now in the"
+    },
+    {
+      "start": 856.8,
+      "duration": 3.839,
+      "text": "cncf landscape so I don't want to name"
+    },
+    {
+      "start": 859.12,
+      "duration": 4.519,
+      "text": "all of them but this is how you can"
+    },
+    {
+      "start": 860.639,
+      "duration": 5.401,
+      "text": "secure your kubernetes clusters now the"
+    },
+    {
+      "start": 863.639,
+      "duration": 6.0,
+      "text": "followup question could be explain what"
+    },
+    {
+      "start": 866.04,
+      "duration": 5.799,
+      "text": "is kubernetes rback so RB stands for"
+    },
+    {
+      "start": 869.639,
+      "duration": 5.32,
+      "text": "role based access control and it is a"
+    },
+    {
+      "start": 871.839,
+      "duration": 5.0,
+      "text": "kubernetes uh way to restrict access to"
+    },
+    {
+      "start": 874.959,
+      "duration": 4.641,
+      "text": "different resources like deployments SPS"
+    },
+    {
+      "start": 876.839,
+      "duration": 4.041,
+      "text": "manifest in rbac you can Define what are"
+    },
+    {
+      "start": 879.6,
+      "duration": 3.0,
+      "text": "the different roles attached to a"
+    },
+    {
+      "start": 880.88,
+      "duration": 3.879,
+      "text": "particular user so let's say this user"
+    },
+    {
+      "start": 882.6,
+      "duration": 4.359,
+      "text": "can only create deployments but it"
+    },
+    {
+      "start": 884.759,
+      "duration": 4.361,
+      "text": "cannot access nodes or it cannot access"
+    },
+    {
+      "start": 886.959,
+      "duration": 4.12,
+      "text": "pods so this is what you can do using"
+    },
+    {
+      "start": 889.12,
+      "duration": 3.959,
+      "text": "arbac you define roles with specific"
+    },
+    {
+      "start": 891.079,
+      "duration": 5.041,
+      "text": "permissions like create delete and bind"
+    },
+    {
+      "start": 893.079,
+      "duration": 5.401,
+      "text": "them to users or Ro or groups using role"
+    },
+    {
+      "start": 896.12,
+      "duration": 4.0,
+      "text": "bindings arbac ensures users and"
+    },
+    {
+      "start": 898.48,
+      "duration": 3.56,
+      "text": "application have access only to"
+    },
+    {
+      "start": 900.12,
+      "duration": 3.44,
+      "text": "necessary resources following the"
+    },
+    {
+      "start": 902.04,
+      "duration": 3.88,
+      "text": "principle of least privilege and"
+    },
+    {
+      "start": 903.56,
+      "duration": 4.8,
+      "text": "enhancing security so this is what our"
+    },
+    {
+      "start": 905.92,
+      "duration": 4.4,
+      "text": "back is and I've also explained or ran"
+    },
+    {
+      "start": 908.36,
+      "duration": 4.719,
+      "text": "the commands to create roles and role"
+    },
+    {
+      "start": 910.32,
+      "duration": 4.759,
+      "text": "binding in the CK exam question so if"
+    },
+    {
+      "start": 913.079,
+      "duration": 4.56,
+      "text": "you want to know how to create roles and"
+    },
+    {
+      "start": 915.079,
+      "duration": 4.481,
+      "text": "attach them you can check that out"
+    },
+    {
+      "start": 917.639,
+      "duration": 3.721,
+      "text": "moving on the next question is how do"
+    },
+    {
+      "start": 919.56,
+      "duration": 3.959,
+      "text": "you perform maintenance on the"
+    },
+    {
+      "start": 921.36,
+      "duration": 3.8,
+      "text": "kubernetes noes so to perform the"
+    },
+    {
+      "start": 923.519,
+      "duration": 3.481,
+      "text": "maintenance you first need to make sure"
+    },
+    {
+      "start": 925.16,
+      "duration": 5.159,
+      "text": "that the application running on that"
+    },
+    {
+      "start": 927.0,
+      "duration": 5.72,
+      "text": "node is removed so you first uh make the"
+    },
+    {
+      "start": 930.319,
+      "duration": 3.88,
+      "text": "node unschedulable which means no New"
+    },
+    {
+      "start": 932.72,
+      "duration": 4.039,
+      "text": "Port should be running on it and you can"
+    },
+    {
+      "start": 934.199,
+      "duration": 4.56,
+      "text": "do that using Cube CTL Cod and command"
+    },
+    {
+      "start": 936.759,
+      "duration": 4.281,
+      "text": "once you do this next step is to remove"
+    },
+    {
+      "start": 938.759,
+      "duration": 3.88,
+      "text": "all the existing pod using the cube CTL"
+    },
+    {
+      "start": 941.04,
+      "duration": 3.599,
+      "text": "drain command then perform your"
+    },
+    {
+      "start": 942.639,
+      "duration": 4.32,
+      "text": "maintenance optionally you can reboot"
+    },
+    {
+      "start": 944.639,
+      "duration": 4.12,
+      "text": "the a node once everything is done"
+    },
+    {
+      "start": 946.959,
+      "duration": 3.601,
+      "text": "properly you can then uncoding it to"
+    },
+    {
+      "start": 948.759,
+      "duration": 3.921,
+      "text": "make sure that the pods are pods are"
+    },
+    {
+      "start": 950.56,
+      "duration": 4.399,
+      "text": "deployed on the nodes again and you can"
+    },
+    {
+      "start": 952.68,
+      "duration": 7.159,
+      "text": "also verify the status using Cube CTL"
+    },
+    {
+      "start": 954.959,
+      "duration": 4.88,
+      "text": "get nodes or cube CTL describe command"
+    },
+    {
+      "start": 960.319,
+      "duration": 4.361,
+      "text": "okay moving on the next question is"
+    },
+    {
+      "start": 962.319,
+      "duration": 5.0,
+      "text": "explain demon sets so demon sets in"
+    },
+    {
+      "start": 964.68,
+      "duration": 4.8,
+      "text": "kubernetes are used to deploy pods on"
+    },
+    {
+      "start": 967.319,
+      "duration": 3.921,
+      "text": "every node inside the cluster so demon"
+    },
+    {
+      "start": 969.48,
+      "duration": 3.88,
+      "text": "set ensures that the specific part runs"
+    },
+    {
+      "start": 971.24,
+      "duration": 3.8,
+      "text": "on every nodes in the cluster and they"
+    },
+    {
+      "start": 973.36,
+      "duration": 3.76,
+      "text": "are used for system level tasks like"
+    },
+    {
+      "start": 975.04,
+      "duration": 4.2,
+      "text": "logging or"
+    },
+    {
+      "start": 977.12,
+      "duration": 3.68,
+      "text": "monitoring that needs to be deployed on"
+    },
+    {
+      "start": 979.24,
+      "duration": 4.36,
+      "text": "each node so when you create a demon set"
+    },
+    {
+      "start": 980.8,
+      "duration": 5.36,
+      "text": "manifest like this and you run it this"
+    },
+    {
+      "start": 983.6,
+      "duration": 4.56,
+      "text": "pod which is fluent D image is going to"
+    },
+    {
+      "start": 986.16,
+      "duration": 4.0,
+      "text": "be running on every node and this is"
+    },
+    {
+      "start": 988.16,
+      "duration": 3.84,
+      "text": "what demon said does it will make sure"
+    },
+    {
+      "start": 990.16,
+      "duration": 3.239,
+      "text": "that the Pod is running on every node"
+    },
+    {
+      "start": 992.0,
+      "duration": 3.839,
+      "text": "each matching node has exactly one"
+    },
+    {
+      "start": 993.399,
+      "duration": 4.601,
+      "text": "instance of the Pod created by demon set"
+    },
+    {
+      "start": 995.839,
+      "duration": 3.841,
+      "text": "running on it and you can run learn more"
+    },
+    {
+      "start": 998.0,
+      "duration": 4.16,
+      "text": "about demon set here from the official"
+    },
+    {
+      "start": 999.68,
+      "duration": 5.56,
+      "text": "documentation you can also see demon set"
+    },
+    {
+      "start": 1002.16,
+      "duration": 5.039,
+      "text": "ensures that all nodes run a copy of the"
+    },
+    {
+      "start": 1005.24,
+      "duration": 3.12,
+      "text": "Pod that is defined inside this team ins"
+    },
+    {
+      "start": 1007.199,
+      "duration": 4.281,
+      "text": "set"
+    },
+    {
+      "start": 1008.36,
+      "duration": 5.159,
+      "text": "here moving on the next question is a"
+    },
+    {
+      "start": 1011.48,
+      "duration": 4.479,
+      "text": "junior engineer working with database on"
+    },
+    {
+      "start": 1013.519,
+      "duration": 4.081,
+      "text": "kubernetes is confused and asks you to"
+    },
+    {
+      "start": 1015.959,
+      "duration": 3.521,
+      "text": "differentiate between config maps and"
+    },
+    {
+      "start": 1017.6,
+      "duration": 3.84,
+      "text": "secret again a very important question"
+    },
+    {
+      "start": 1019.48,
+      "duration": 4.279,
+      "text": "people are confused about config maps"
+    },
+    {
+      "start": 1021.44,
+      "duration": 4.68,
+      "text": "and secrets what does config Maps hold"
+    },
+    {
+      "start": 1023.759,
+      "duration": 4.56,
+      "text": "what does secret hold so config maps are"
+    },
+    {
+      "start": 1026.12,
+      "duration": 4.16,
+      "text": "generally used to save the application"
+    },
+    {
+      "start": 1028.319,
+      "duration": 4.52,
+      "text": "configuration whereas secrets are used"
+    },
+    {
+      "start": 1030.28,
+      "duration": 6.12,
+      "text": "to store credentials like database"
+    },
+    {
+      "start": 1032.839,
+      "duration": 4.96,
+      "text": "passwords usernames AP keys and Etc so"
+    },
+    {
+      "start": 1036.4,
+      "duration": 3.0,
+      "text": "config map ideally storees the"
+    },
+    {
+      "start": 1037.799,
+      "duration": 3.961,
+      "text": "application configuration in the plain"
+    },
+    {
+      "start": 1039.4,
+      "duration": 4.2,
+      "text": "text whereas Secrets store sensitive"
+    },
+    {
+      "start": 1041.76,
+      "duration": 4.6,
+      "text": "data like passwords in an encrypted"
+    },
+    {
+      "start": 1043.6,
+      "duration": 4.959,
+      "text": "format both config map and secrets can"
+    },
+    {
+      "start": 1046.36,
+      "duration": 4.559,
+      "text": "be used as a volume and mounted inside"
+    },
+    {
+      "start": 1048.559,
+      "duration": 4.081,
+      "text": "the through a p definition file which is"
+    },
+    {
+      "start": 1050.919,
+      "duration": 3.681,
+      "text": "true so here's an example of how you can"
+    },
+    {
+      "start": 1052.64,
+      "duration": 4.12,
+      "text": "create a config map so we are creating a"
+    },
+    {
+      "start": 1054.6,
+      "duration": 4.52,
+      "text": "config map that is holding a value"
+    },
+    {
+      "start": 1056.76,
+      "duration": 4.6,
+      "text": "environment equals to Dev here we have a"
+    },
+    {
+      "start": 1059.12,
+      "duration": 4.64,
+      "text": "secret that is first encrypted and then"
+    },
+    {
+      "start": 1061.36,
+      "duration": 3.72,
+      "text": "stored inside the secret uh this is how"
+    },
+    {
+      "start": 1063.76,
+      "duration": 4.159,
+      "text": "you can create"
+    },
+    {
+      "start": 1065.08,
+      "duration": 5.719,
+      "text": "it and you can then use both of them"
+    },
+    {
+      "start": 1067.919,
+      "duration": 4.801,
+      "text": "inside the Pod manifest as a volume"
+    },
+    {
+      "start": 1070.799,
+      "duration": 4.201,
+      "text": "moving on the next question is what is"
+    },
+    {
+      "start": 1072.72,
+      "duration": 3.959,
+      "text": "the purpose of operators again a very"
+    },
+    {
+      "start": 1075.0,
+      "duration": 3.12,
+      "text": "important topic that a devops engineer"
+    },
+    {
+      "start": 1076.679,
+      "duration": 4.321,
+      "text": "should know you will get this question"
+    },
+    {
+      "start": 1078.12,
+      "duration": 5.2,
+      "text": "in advance kubernetes interviews so the"
+    },
+    {
+      "start": 1081.0,
+      "duration": 4.44,
+      "text": "purpose of operators we use operators to"
+    },
+    {
+      "start": 1083.32,
+      "duration": 4.359,
+      "text": "package complex application that needs"
+    },
+    {
+      "start": 1085.44,
+      "duration": 3.8,
+      "text": "to be run on kubernetes cluster so a"
+    },
+    {
+      "start": 1087.679,
+      "duration": 3.12,
+      "text": "kubernetes operator is a method of"
+    },
+    {
+      "start": 1089.24,
+      "duration": 4.28,
+      "text": "packaging deploying and managing"
+    },
+    {
+      "start": 1090.799,
+      "duration": 4.76,
+      "text": "kubernetes application operators uses"
+    },
+    {
+      "start": 1093.52,
+      "duration": 4.159,
+      "text": "the kubernetes API to automate tasks"
+    },
+    {
+      "start": 1095.559,
+      "duration": 4.281,
+      "text": "such as deployment scaling implementing"
+    },
+    {
+      "start": 1097.679,
+      "duration": 4.401,
+      "text": "custom controllers enabling selfhealing"
+    },
+    {
+      "start": 1099.84,
+      "duration": 4.28,
+      "text": "systems supporting declarative"
+    },
+    {
+      "start": 1102.08,
+      "duration": 3.56,
+      "text": "management practices so in short if you"
+    },
+    {
+      "start": 1104.12,
+      "duration": 3.439,
+      "text": "want to deploy something on kubernetes"
+    },
+    {
+      "start": 1105.64,
+      "duration": 4.72,
+      "text": "you can use operators which can help you"
+    },
+    {
+      "start": 1107.559,
+      "duration": 4.881,
+      "text": "deploy complex applications you can find"
+    },
+    {
+      "start": 1110.36,
+      "duration": 5.6,
+      "text": "all the different operators simil on"
+    },
+    {
+      "start": 1112.44,
+      "duration": 7.239,
+      "text": "operator Hub so if I show you uh this is"
+    },
+    {
+      "start": 1115.96,
+      "duration": 6.28,
+      "text": "operator hub.io where you can use you"
+    },
+    {
+      "start": 1119.679,
+      "duration": 4.88,
+      "text": "can use operators to deploy them on your"
+    },
+    {
+      "start": 1122.24,
+      "duration": 4.4,
+      "text": "clusters so if you want to deploy Aro CD"
+    },
+    {
+      "start": 1124.559,
+      "duration": 4.641,
+      "text": "you can directly do it you can also use"
+    },
+    {
+      "start": 1126.64,
+      "duration": 3.8,
+      "text": "promethus uh if you want to monitor your"
+    },
+    {
+      "start": 1129.2,
+      "duration": 4.24,
+      "text": "applications you can use promethus"
+    },
+    {
+      "start": 1130.44,
+      "duration": 5.4,
+      "text": "operator which is given by Red Hat here"
+    },
+    {
+      "start": 1133.44,
+      "duration": 3.96,
+      "text": "so for example the Prometheus operators"
+    },
+    {
+      "start": 1135.84,
+      "duration": 3.64,
+      "text": "automate the deployment and management"
+    },
+    {
+      "start": 1137.4,
+      "duration": 3.8,
+      "text": "of Prometheus monitoring instances on"
+    },
+    {
+      "start": 1139.48,
+      "duration": 4.079,
+      "text": "kubernetes handling task such as"
+    },
+    {
+      "start": 1141.2,
+      "duration": 4.32,
+      "text": "configuration scaling and sell feeling"
+    },
+    {
+      "start": 1143.559,
+      "duration": 3.721,
+      "text": "so you can customize them as well you"
+    },
+    {
+      "start": 1145.52,
+      "duration": 3.96,
+      "text": "can customize the customer resource"
+    },
+    {
+      "start": 1147.28,
+      "duration": 5.519,
+      "text": "definitions and then deploy them on your"
+    },
+    {
+      "start": 1149.48,
+      "duration": 4.679,
+      "text": "kubernetes clusters to to need to learn"
+    },
+    {
+      "start": 1152.799,
+      "duration": 4.081,
+      "text": "more about it you can go through this"
+    },
+    {
+      "start": 1154.159,
+      "duration": 5.0,
+      "text": "cncf blog which explains what are C what"
+    },
+    {
+      "start": 1156.88,
+      "duration": 3.919,
+      "text": "are operators and how to use them along"
+    },
+    {
+      "start": 1159.159,
+      "duration": 4.361,
+      "text": "with some examples as"
+    },
+    {
+      "start": 1160.799,
+      "duration": 4.801,
+      "text": "well moving on the next question is how"
+    },
+    {
+      "start": 1163.52,
+      "duration": 3.48,
+      "text": "can you run a pod on a specific node so"
+    },
+    {
+      "start": 1165.6,
+      "duration": 3.559,
+      "text": "you have a pod that you want to run on a"
+    },
+    {
+      "start": 1167.0,
+      "duration": 4.32,
+      "text": "specific node how can you do that you"
+    },
+    {
+      "start": 1169.159,
+      "duration": 4.121,
+      "text": "can do that using node Affinity or node"
+    },
+    {
+      "start": 1171.32,
+      "duration": 5.479,
+      "text": "selectors and you can also do that using"
+    },
+    {
+      "start": 1173.28,
+      "duration": 5.44,
+      "text": "node name so how this works is you first"
+    },
+    {
+      "start": 1176.799,
+      "duration": 4.081,
+      "text": "label the node so you can label the node"
+    },
+    {
+      "start": 1178.72,
+      "duration": 4.4,
+      "text": "using label so I'm labeling a node which"
+    },
+    {
+      "start": 1180.88,
+      "duration": 3.799,
+      "text": "is node 01 uh the label is node location"
+    },
+    {
+      "start": 1183.12,
+      "duration": 3.439,
+      "text": "equal to Germany once you do that you"
+    },
+    {
+      "start": 1184.679,
+      "duration": 3.88,
+      "text": "can then set the Affinity Rules by"
+    },
+    {
+      "start": 1186.559,
+      "duration": 3.961,
+      "text": "saying that the part should be running"
+    },
+    {
+      "start": 1188.559,
+      "duration": 3.961,
+      "text": "on the Node which has the label as"
+    },
+    {
+      "start": 1190.52,
+      "duration": 4.24,
+      "text": "Germany whereas you can also use node"
+    },
+    {
+      "start": 1192.52,
+      "duration": 4.399,
+      "text": "name where you can specify that the node"
+    },
+    {
+      "start": 1194.76,
+      "duration": 4.279,
+      "text": "name equals to node 01 and the Pod will"
+    },
+    {
+      "start": 1196.919,
+      "duration": 5.601,
+      "text": "run on that particular node so this is"
+    },
+    {
+      "start": 1199.039,
+      "duration": 7.201,
+      "text": "how you can run a pod on a specific"
+    },
+    {
+      "start": 1202.52,
+      "duration": 6.399,
+      "text": "node now here is also an example so node"
+    },
+    {
+      "start": 1206.24,
+      "duration": 4.28,
+      "text": "Affinity said as node name equals to app"
+    },
+    {
+      "start": 1208.919,
+      "duration": 3.441,
+      "text": "worker node and this is the node which"
+    },
+    {
+      "start": 1210.52,
+      "duration": 3.92,
+      "text": "has the label app worker node this has"
+    },
+    {
+      "start": 1212.36,
+      "duration": 4.28,
+      "text": "app web node so the Pod will be running"
+    },
+    {
+      "start": 1214.44,
+      "duration": 4.599,
+      "text": "on this particular node this is using"
+    },
+    {
+      "start": 1216.64,
+      "duration": 5.039,
+      "text": "Affinity rules moving on the next"
+    },
+    {
+      "start": 1219.039,
+      "duration": 4.921,
+      "text": "question is suppose a pod exceeds its"
+    },
+    {
+      "start": 1221.679,
+      "duration": 4.761,
+      "text": "memory limit what signal will be sent to"
+    },
+    {
+      "start": 1223.96,
+      "duration": 3.719,
+      "text": "the process so if you work on kubernetes"
+    },
+    {
+      "start": 1226.44,
+      "duration": 4.8,
+      "text": "you will obviously see an error"
+    },
+    {
+      "start": 1227.679,
+      "duration": 5.721,
+      "text": "something like o killed or out of memory"
+    },
+    {
+      "start": 1231.24,
+      "duration": 4.4,
+      "text": "killed you get this and if you get this"
+    },
+    {
+      "start": 1233.4,
+      "duration": 4.72,
+      "text": "the application is stopped so when a pod"
+    },
+    {
+      "start": 1235.64,
+      "duration": 5.0,
+      "text": "exceeds its memory limit the kernels out"
+    },
+    {
+      "start": 1238.12,
+      "duration": 4.84,
+      "text": "of memory Killers may send the S kill"
+    },
+    {
+      "start": 1240.64,
+      "duration": 4.36,
+      "text": "signal to process and terminates it"
+    },
+    {
+      "start": 1242.96,
+      "duration": 3.76,
+      "text": "immediately so in kubernetes when a"
+    },
+    {
+      "start": 1245.0,
+      "duration": 4.32,
+      "text": "container in the Pod is terminated to"
+    },
+    {
+      "start": 1246.72,
+      "duration": 4.36,
+      "text": "memory limits uh in the container"
+    },
+    {
+      "start": 1249.32,
+      "duration": 4.64,
+      "text": "runtime which is Docker or container D"
+    },
+    {
+      "start": 1251.08,
+      "duration": 4.36,
+      "text": "may send the signal two main process"
+    },
+    {
+      "start": 1253.96,
+      "duration": 3.04,
+      "text": "with the container leading to immediate"
+    },
+    {
+      "start": 1255.44,
+      "duration": 3.8,
+      "text": "termination"
+    },
+    {
+      "start": 1257.0,
+      "duration": 4.919,
+      "text": "so this is what you you get whenever the"
+    },
+    {
+      "start": 1259.24,
+      "duration": 4.16,
+      "text": "memory is out of uh out of the limit"
+    },
+    {
+      "start": 1261.919,
+      "duration": 3.561,
+      "text": "that is mentioned inside the Pod"
+    },
+    {
+      "start": 1263.4,
+      "duration": 4.24,
+      "text": "manifest the next question is you need"
+    },
+    {
+      "start": 1265.48,
+      "duration": 4.52,
+      "text": "to ensure that the specific pod remains"
+    },
+    {
+      "start": 1267.64,
+      "duration": 4.12,
+      "text": "operational at all times how to make"
+    },
+    {
+      "start": 1270.0,
+      "duration": 4.159,
+      "text": "sure that the Pod is always running to"
+    },
+    {
+      "start": 1271.76,
+      "duration": 4.12,
+      "text": "do this you can use probes so here is an"
+    },
+    {
+      "start": 1274.159,
+      "duration": 3.281,
+      "text": "example of how you can use liveness"
+    },
+    {
+      "start": 1275.88,
+      "duration": 3.72,
+      "text": "probes to make sure that the application"
+    },
+    {
+      "start": 1277.44,
+      "duration": 4.119,
+      "text": "is running all times so this is one of"
+    },
+    {
+      "start": 1279.6,
+      "duration": 4.079,
+      "text": "the most frequently Asked kubernetes"
+    },
+    {
+      "start": 1281.559,
+      "duration": 4.841,
+      "text": "interview questions and the answer here"
+    },
+    {
+      "start": 1283.679,
+      "duration": 4.921,
+      "text": "is we can use probes a liveness probe"
+    },
+    {
+      "start": 1286.4,
+      "duration": 4.159,
+      "text": "within the Pod is ideal in this scenario"
+    },
+    {
+      "start": 1288.6,
+      "duration": 3.8,
+      "text": "liveness probe always checks if an"
+    },
+    {
+      "start": 1290.559,
+      "duration": 4.321,
+      "text": "application in the Pod is running if"
+    },
+    {
+      "start": 1292.4,
+      "duration": 4.399,
+      "text": "this checks fails the container gets"
+    },
+    {
+      "start": 1294.88,
+      "duration": 3.64,
+      "text": "restarted and this is ideal in many"
+    },
+    {
+      "start": 1296.799,
+      "duration": 3.321,
+      "text": "scenarios where the container is running"
+    },
+    {
+      "start": 1298.52,
+      "duration": 4.24,
+      "text": "but somehow the application inside the"
+    },
+    {
+      "start": 1300.12,
+      "duration": 3.919,
+      "text": "container crashes so you can make sure"
+    },
+    {
+      "start": 1302.76,
+      "duration": 4.519,
+      "text": "that the application is running all the"
+    },
+    {
+      "start": 1304.039,
+      "duration": 3.24,
+      "text": "time using livess"
+    },
+    {
+      "start": 1308.52,
+      "duration": 4.2,
+      "text": "probes now let's move on the next"
+    },
+    {
+      "start": 1310.76,
+      "duration": 3.96,
+      "text": "question is what will you do to upgrade"
+    },
+    {
+      "start": 1312.72,
+      "duration": 3.48,
+      "text": "a kubernetes cluster this is a very"
+    },
+    {
+      "start": 1314.72,
+      "duration": 3.24,
+      "text": "important question and you should know"
+    },
+    {
+      "start": 1316.2,
+      "duration": 3.959,
+      "text": "how to upgrade a kubernetes cluster"
+    },
+    {
+      "start": 1317.96,
+      "duration": 4.12,
+      "text": "because kuber releases new version every"
+    },
+    {
+      "start": 1320.159,
+      "duration": 4.321,
+      "text": "4 months and this is something a devops"
+    },
+    {
+      "start": 1322.08,
+      "duration": 4.079,
+      "text": "engineer does in their day-to-day"
+    },
+    {
+      "start": 1324.48,
+      "duration": 3.28,
+      "text": "activities so you can upgrade a"
+    },
+    {
+      "start": 1326.159,
+      "duration": 3.561,
+      "text": "kubernetes cluster using the help of the"
+    },
+    {
+      "start": 1327.76,
+      "duration": 4.56,
+      "text": "official documentation if you search for"
+    },
+    {
+      "start": 1329.72,
+      "duration": 4.48,
+      "text": "upgrade kubernetes cluster you will find"
+    },
+    {
+      "start": 1332.32,
+      "duration": 3.959,
+      "text": "the official documentation which has the"
+    },
+    {
+      "start": 1334.2,
+      "duration": 3.8,
+      "text": "steps on how you can upgrade it so if"
+    },
+    {
+      "start": 1336.279,
+      "duration": 3.64,
+      "text": "you check this it will show you that you"
+    },
+    {
+      "start": 1338.0,
+      "duration": 3.48,
+      "text": "need to first start with upgrading the"
+    },
+    {
+      "start": 1339.919,
+      "duration": 3.201,
+      "text": "master node and then go with upgrading"
+    },
+    {
+      "start": 1341.48,
+      "duration": 3.84,
+      "text": "the worker nodes and that's what"
+    },
+    {
+      "start": 1343.12,
+      "duration": 3.76,
+      "text": "mentioned in this answer here as well so"
+    },
+    {
+      "start": 1345.32,
+      "duration": 2.92,
+      "text": "to update the kubernetes cluster one"
+    },
+    {
+      "start": 1346.88,
+      "duration": 3.48,
+      "text": "needs to update the components of the"
+    },
+    {
+      "start": 1348.24,
+      "duration": 4.319,
+      "text": "cluster and The Specific Instructions to"
+    },
+    {
+      "start": 1350.36,
+      "duration": 4.199,
+      "text": "upgrade the same depends on the specific"
+    },
+    {
+      "start": 1352.559,
+      "duration": 4.681,
+      "text": "setup and configuration used that you"
+    },
+    {
+      "start": 1354.559,
+      "duration": 4.641,
+      "text": "can check in this year so documentation"
+    },
+    {
+      "start": 1357.24,
+      "duration": 3.76,
+      "text": "has different pages for you to upgrade"
+    },
+    {
+      "start": 1359.2,
+      "duration": 4.32,
+      "text": "from one version to another and the"
+    },
+    {
+      "start": 1361.0,
+      "duration": 4.279,
+      "text": "steps mentioned here is first find the"
+    },
+    {
+      "start": 1363.52,
+      "duration": 4.2,
+      "text": "desired Target version and the upgrade"
+    },
+    {
+      "start": 1365.279,
+      "duration": 4.601,
+      "text": "plan save all the data always take"
+    },
+    {
+      "start": 1367.72,
+      "duration": 4.24,
+      "text": "backup now upgrade the control plane"
+    },
+    {
+      "start": 1369.88,
+      "duration": 3.76,
+      "text": "which is the master node components also"
+    },
+    {
+      "start": 1371.96,
+      "duration": 3.839,
+      "text": "upgrade the worker node components one"
+    },
+    {
+      "start": 1373.64,
+      "duration": 4.2,
+      "text": "by one through a rolling upgrade process"
+    },
+    {
+      "start": 1375.799,
+      "duration": 3.801,
+      "text": "which is the default process and finally"
+    },
+    {
+      "start": 1377.84,
+      "duration": 3.0,
+      "text": "when the upgrade is is done verify"
+    },
+    {
+      "start": 1379.6,
+      "duration": 3.199,
+      "text": "whether the cluster and the components"
+    },
+    {
+      "start": 1380.84,
+      "duration": 3.36,
+      "text": "are working properly or not so this is"
+    },
+    {
+      "start": 1382.799,
+      "duration": 3.0,
+      "text": "the step by step on how you need to"
+    },
+    {
+      "start": 1384.2,
+      "duration": 3.56,
+      "text": "upgrade a kubernetes"
+    },
+    {
+      "start": 1385.799,
+      "duration": 3.721,
+      "text": "cluster again if you want to see in"
+    },
+    {
+      "start": 1387.76,
+      "duration": 3.76,
+      "text": "Practical how to upgrade a cluster I"
+    },
+    {
+      "start": 1389.52,
+      "duration": 3.8,
+      "text": "have shown that in the CK questions"
+    },
+    {
+      "start": 1391.52,
+      "duration": 4.08,
+      "text": "video you can check how to upgrade a"
+    },
+    {
+      "start": 1393.32,
+      "duration": 4.359,
+      "text": "kubernetes cluster moving on the next"
+    },
+    {
+      "start": 1395.6,
+      "duration": 4.24,
+      "text": "question is why should we use custom"
+    },
+    {
+      "start": 1397.679,
+      "duration": 3.761,
+      "text": "name spaces so by default whenever you"
+    },
+    {
+      "start": 1399.84,
+      "duration": 3.56,
+      "text": "create a kubernetes cluster you get some"
+    },
+    {
+      "start": 1401.44,
+      "duration": 3.88,
+      "text": "name spaces and you can also launch your"
+    },
+    {
+      "start": 1403.4,
+      "duration": 4.32,
+      "text": "applications in that but why should we"
+    },
+    {
+      "start": 1405.32,
+      "duration": 4.64,
+      "text": "use our own custom name spaces we should"
+    },
+    {
+      "start": 1407.72,
+      "duration": 4.92,
+      "text": "use this to properly distribute our"
+    },
+    {
+      "start": 1409.96,
+      "duration": 4.88,
+      "text": "application according to their uh actual"
+    },
+    {
+      "start": 1412.64,
+      "duration": 4.279,
+      "text": "use case so by creating custom name"
+    },
+    {
+      "start": 1414.84,
+      "duration": 4.079,
+      "text": "spaces you can logically group your"
+    },
+    {
+      "start": 1416.919,
+      "duration": 3.321,
+      "text": "resources based on your needs such as"
+    },
+    {
+      "start": 1418.919,
+      "duration": 3.24,
+      "text": "separating production and development"
+    },
+    {
+      "start": 1420.24,
+      "duration": 3.919,
+      "text": "environments or separating applications"
+    },
+    {
+      "start": 1422.159,
+      "duration": 3.361,
+      "text": "by team and Department this makes it"
+    },
+    {
+      "start": 1424.159,
+      "duration": 3.4,
+      "text": "easier to manage and maintain your"
+    },
+    {
+      "start": 1425.52,
+      "duration": 3.6,
+      "text": "resources within the cluster and also"
+    },
+    {
+      "start": 1427.559,
+      "duration": 3.281,
+      "text": "provides better security and resource"
+    },
+    {
+      "start": 1429.12,
+      "duration": 3.679,
+      "text": "isolation in this diagram here you can"
+    },
+    {
+      "start": 1430.84,
+      "duration": 4.12,
+      "text": "see we have some resources deployed in"
+    },
+    {
+      "start": 1432.799,
+      "duration": 4.36,
+      "text": "default namespace some in Dev namespace"
+    },
+    {
+      "start": 1434.96,
+      "duration": 3.959,
+      "text": "some in QA namespace using this we"
+    },
+    {
+      "start": 1437.159,
+      "duration": 4.041,
+      "text": "understand that this belongs to Dev Nam"
+    },
+    {
+      "start": 1438.919,
+      "duration": 4.201,
+      "text": "dep environment this belongs to QA"
+    },
+    {
+      "start": 1441.2,
+      "duration": 5.44,
+      "text": "environment so using custom name space"
+    },
+    {
+      "start": 1443.12,
+      "duration": 6.679,
+      "text": "you can logically group them and also uh"
+    },
+    {
+      "start": 1446.64,
+      "duration": 6.0,
+      "text": "also separate them moving on the next"
+    },
+    {
+      "start": 1449.799,
+      "duration": 5.441,
+      "text": "question is can you shedu the Pod to a"
+    },
+    {
+      "start": 1452.64,
+      "duration": 4.519,
+      "text": "node if the node is Tainted so what do"
+    },
+    {
+      "start": 1455.24,
+      "duration": 3.96,
+      "text": "you mean by a tainted node and how can"
+    },
+    {
+      "start": 1457.159,
+      "duration": 4.081,
+      "text": "you shedule the pod on it so if you look"
+    },
+    {
+      "start": 1459.2,
+      "duration": 4.16,
+      "text": "here in the diagram this node is Tainted"
+    },
+    {
+      "start": 1461.24,
+      "duration": 5.439,
+      "text": "which means no pod is going to be"
+    },
+    {
+      "start": 1463.36,
+      "duration": 5.24,
+      "text": "deployed on this particular node but the"
+    },
+    {
+      "start": 1466.679,
+      "duration": 4.201,
+      "text": "question is asking how can you shed will"
+    },
+    {
+      "start": 1468.6,
+      "duration": 4.679,
+      "text": "a pod to the node if the node is Tainted"
+    },
+    {
+      "start": 1470.88,
+      "duration": 4.6,
+      "text": "so you can do that by using tolerations"
+    },
+    {
+      "start": 1473.279,
+      "duration": 4.12,
+      "text": "so if you want a pod to be deployed here"
+    },
+    {
+      "start": 1475.48,
+      "duration": 4.679,
+      "text": "it should have the Toleration for this"
+    },
+    {
+      "start": 1477.399,
+      "duration": 4.52,
+      "text": "particular tint so you can see if the"
+    },
+    {
+      "start": 1480.159,
+      "duration": 3.721,
+      "text": "node is tinted pods will not be"
+    },
+    {
+      "start": 1481.919,
+      "duration": 4.36,
+      "text": "scheduled on it by default but you can"
+    },
+    {
+      "start": 1483.88,
+      "duration": 4.08,
+      "text": "use tolerations in the Pod spec to allow"
+    },
+    {
+      "start": 1486.279,
+      "duration": 3.88,
+      "text": "specific pods to be scheduled on that"
+    },
+    {
+      "start": 1487.96,
+      "duration": 4.839,
+      "text": "tainted node tolerations are used to"
+    },
+    {
+      "start": 1490.159,
+      "duration": 4.76,
+      "text": "specify the Pod uh tolerations are used"
+    },
+    {
+      "start": 1492.799,
+      "duration": 4.441,
+      "text": "to specify that the Pod can tolerate or"
+    },
+    {
+      "start": 1494.919,
+      "duration": 4.201,
+      "text": "ignore a certain taint allowing it to be"
+    },
+    {
+      "start": 1497.24,
+      "duration": 3.52,
+      "text": "scheduled on that tainted so how it"
+    },
+    {
+      "start": 1499.12,
+      "duration": 3.64,
+      "text": "works you can taint a node using the"
+    },
+    {
+      "start": 1500.76,
+      "duration": 4.76,
+      "text": "command Cube CTL taint with this"
+    },
+    {
+      "start": 1502.76,
+      "duration": 4.56,
+      "text": "particular uh taint information once you"
+    },
+    {
+      "start": 1505.52,
+      "duration": 4.24,
+      "text": "add a taint and if you want to add a pod"
+    },
+    {
+      "start": 1507.32,
+      "duration": 4.239,
+      "text": "on that you can add Toleration like this"
+    },
+    {
+      "start": 1509.76,
+      "duration": 3.84,
+      "text": "if the Pod has this Toleration it can be"
+    },
+    {
+      "start": 1511.559,
+      "duration": 3.561,
+      "text": "deployed on the Node which is Tainted so"
+    },
+    {
+      "start": 1513.6,
+      "duration": 3.52,
+      "text": "this can be useful in scenarios where"
+    },
+    {
+      "start": 1515.12,
+      "duration": 4.4,
+      "text": "you want to reserve certain nodes for"
+    },
+    {
+      "start": 1517.12,
+      "duration": 4.559,
+      "text": "specific types of workloads or to Mark"
+    },
+    {
+      "start": 1519.52,
+      "duration": 4.6,
+      "text": "nodes as unsuitable for certain"
+    },
+    {
+      "start": 1521.679,
+      "duration": 5.24,
+      "text": "workloads so this is how you can deploy"
+    },
+    {
+      "start": 1524.12,
+      "duration": 5.2,
+      "text": "a pod on a tainted node so yeah that"
+    },
+    {
+      "start": 1526.919,
+      "duration": 4.24,
+      "text": "that is all we have"
+    },
+    {
+      "start": 1529.32,
+      "duration": 3.239,
+      "text": "so I hope this all these questions that"
+    },
+    {
+      "start": 1531.159,
+      "duration": 3.481,
+      "text": "we have discussed in this particular"
+    },
+    {
+      "start": 1532.559,
+      "duration": 4.041,
+      "text": "video are helpful and this will help you"
+    },
+    {
+      "start": 1534.64,
+      "duration": 4.399,
+      "text": "in your kubernetes interviews if you"
+    },
+    {
+      "start": 1536.6,
+      "duration": 4.0,
+      "text": "have any questions any doubts do let me"
+    },
+    {
+      "start": 1539.039,
+      "duration": 3.24,
+      "text": "know and if you want me to share this"
+    },
+    {
+      "start": 1540.6,
+      "duration": 3.439,
+      "text": "document with you let me know in the"
+    },
+    {
+      "start": 1542.279,
+      "duration": 3.921,
+      "text": "comment section I hope this video was"
+    },
+    {
+      "start": 1544.039,
+      "duration": 4.941,
+      "text": "informative thank you and have a good"
+    },
+    {
+      "start": 1546.2,
+      "duration": 9.03,
+      "text": "day bye"
+    },
+    {
+      "start": 1548.98,
+      "duration": 6.25,
+      "text": "[Music]"
+    }
+  ]
+}

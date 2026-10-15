@@ -1,0 +1,2146 @@
+{
+  "video": {
+    "id": "mPqzf1oIXu8",
+    "title": "Day 5- AWS CLI Tutorial with Commands | Learn AWS CLI commands with Notes",
+    "url": "https://www.youtube.com/watch?v=mPqzf1oIXu8",
+    "duration": 969,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.399,
+      "duration": 5.081,
+      "text": "in this video we will learn about AWS"
+    },
+    {
+      "start": 2.8,
+      "duration": 4.92,
+      "text": "command line interface AWS command line"
+    },
+    {
+      "start": 5.48,
+      "duration": 5.159,
+      "text": "interface is a CLI tool which lets you"
+    },
+    {
+      "start": 7.72,
+      "duration": 4.919,
+      "text": "manage your AWS Services by running"
+    },
+    {
+      "start": 10.639,
+      "duration": 4.04,
+      "text": "commands if you haven't checked out the"
+    },
+    {
+      "start": 12.639,
+      "duration": 3.961,
+      "text": "other videos make sure to check it out"
+    },
+    {
+      "start": 14.679,
+      "duration": 4.52,
+      "text": "and also subscribe to Cloud Cham"
+    },
+    {
+      "start": 16.6,
+      "duration": 4.8,
+      "text": "learning AWS CLI is important for all"
+    },
+    {
+      "start": 19.199,
+      "duration": 4.4,
+      "text": "cloud and devops Engineers so make sure"
+    },
+    {
+      "start": 21.4,
+      "duration": 5.879,
+      "text": "you watch this video till the end let's"
+    },
+    {
+      "start": 23.599,
+      "duration": 5.401,
+      "text": "go okay I'm here in my AWS Management"
+    },
+    {
+      "start": 27.279,
+      "duration": 3.361,
+      "text": "console and if I want to create"
+    },
+    {
+      "start": 29.0,
+      "duration": 3.399,
+      "text": "something in this let's say an E2"
+    },
+    {
+      "start": 30.64,
+      "duration": 3.8,
+      "text": "instance I have to first start with"
+    },
+    {
+      "start": 32.399,
+      "duration": 3.801,
+      "text": "searching the service once I search for"
+    },
+    {
+      "start": 34.44,
+      "duration": 4.36,
+      "text": "the service I will then need to click on"
+    },
+    {
+      "start": 36.2,
+      "duration": 4.56,
+      "text": "the buttons put the configuration of the"
+    },
+    {
+      "start": 38.8,
+      "duration": 4.04,
+      "text": "server I want to create so like what is"
+    },
+    {
+      "start": 40.76,
+      "duration": 4.6,
+      "text": "the name of the server what is the Ami"
+    },
+    {
+      "start": 42.84,
+      "duration": 4.0,
+      "text": "instance type and everything else once I"
+    },
+    {
+      "start": 45.36,
+      "duration": 3.28,
+      "text": "put that then I need to click on launch"
+    },
+    {
+      "start": 46.84,
+      "duration": 4.48,
+      "text": "instance and it will create a server for"
+    },
+    {
+      "start": 48.64,
+      "duration": 4.16,
+      "text": "me this is fine for a single server but"
+    },
+    {
+      "start": 51.32,
+      "duration": 3.68,
+      "text": "what if you want to create servers"
+    },
+    {
+      "start": 52.8,
+      "duration": 4.559,
+      "text": "databases storage and multiple AWS"
+    },
+    {
+      "start": 55.0,
+      "duration": 4.559,
+      "text": "services or maybe you want to automate"
+    },
+    {
+      "start": 57.359,
+      "duration": 4.081,
+      "text": "all of this through a script then you"
+    },
+    {
+      "start": 59.559,
+      "duration": 4.56,
+      "text": "cannot use your console you will have to"
+    },
+    {
+      "start": 61.44,
+      "duration": 6.039,
+      "text": "use something known as CLI or command"
+    },
+    {
+      "start": 64.119,
+      "duration": 5.521,
+      "text": "line interface such as AWS CLI so in"
+    },
+    {
+      "start": 67.479,
+      "duration": 5.121,
+      "text": "this video I will teach you what is AWS"
+    },
+    {
+      "start": 69.64,
+      "duration": 4.92,
+      "text": "CLI how to use AWS CLI what can you do"
+    },
+    {
+      "start": 72.6,
+      "duration": 5.08,
+      "text": "with it how do you connect your AWS"
+    },
+    {
+      "start": 74.56,
+      "duration": 5.48,
+      "text": "account with your CLI and lot more I"
+    },
+    {
+      "start": 77.68,
+      "duration": 4.36,
+      "text": "also have this AWS CLI command cheat"
+    },
+    {
+      "start": 80.04,
+      "duration": 3.92,
+      "text": "sheet which includes all the important"
+    },
+    {
+      "start": 82.04,
+      "duration": 4.2,
+      "text": "commands you need to know as a devops"
+    },
+    {
+      "start": 83.96,
+      "duration": 4.479,
+      "text": "engineer to manage your AWS services"
+    },
+    {
+      "start": 86.24,
+      "duration": 4.68,
+      "text": "using the CLI and if you want me to"
+    },
+    {
+      "start": 88.439,
+      "duration": 4.64,
+      "text": "share this with you comment down AWS CLI"
+    },
+    {
+      "start": 90.92,
+      "duration": 3.68,
+      "text": "cheat sheet in the comment section now"
+    },
+    {
+      "start": 93.079,
+      "duration": 5.921,
+      "text": "with that being said let's start with"
+    },
+    {
+      "start": 94.6,
+      "duration": 6.32,
+      "text": "learning AWS CLI so what is AWS clii AWS"
+    },
+    {
+      "start": 99.0,
+      "duration": 5.119,
+      "text": "CLI is a tool which lets you manage your"
+    },
+    {
+      "start": 100.92,
+      "duration": 5.559,
+      "text": "AWS services using a command for example"
+    },
+    {
+      "start": 104.119,
+      "duration": 5.04,
+      "text": "if I show you this is my terminal I'm"
+    },
+    {
+      "start": 106.479,
+      "duration": 4.92,
+      "text": "using ubben 2 right now AWS CLI works"
+    },
+    {
+      "start": 109.159,
+      "duration": 4.361,
+      "text": "with ubben 2 it also works with Windows"
+    },
+    {
+      "start": 111.399,
+      "duration": 4.961,
+      "text": "Mac OS so you can see it's you can"
+    },
+    {
+      "start": 113.52,
+      "duration": 4.879,
+      "text": "install AWS CLI on any operating system"
+    },
+    {
+      "start": 116.36,
+      "duration": 5.119,
+      "text": "I have AWS CLI already installed so if I"
+    },
+    {
+      "start": 118.399,
+      "duration": 5.801,
+      "text": "show you that I can run aw-- version and"
+    },
+    {
+      "start": 121.479,
+      "duration": 5.24,
+      "text": "my AWS CLI is installed I have installed"
+    },
+    {
+      "start": 124.2,
+      "duration": 5.039,
+      "text": "AWS CLI version 2 and you should also be"
+    },
+    {
+      "start": 126.719,
+      "duration": 5.961,
+      "text": "installing AWS C version two which is"
+    },
+    {
+      "start": 129.239,
+      "duration": 4.881,
+      "text": "the new one AWS also has version one CLI"
+    },
+    {
+      "start": 132.68,
+      "duration": 3.6,
+      "text": "but we are not going to be using that"
+    },
+    {
+      "start": 134.12,
+      "duration": 4.44,
+      "text": "you should be installing AWS CLI version"
+    },
+    {
+      "start": 136.28,
+      "duration": 5.039,
+      "text": "two now if I want to check what are the"
+    },
+    {
+      "start": 138.56,
+      "duration": 4.679,
+      "text": "different IM users present in my account"
+    },
+    {
+      "start": 141.319,
+      "duration": 5.601,
+      "text": "we have learned about IM in the previous"
+    },
+    {
+      "start": 143.239,
+      "duration": 5.441,
+      "text": "section and we could create any IM user"
+    },
+    {
+      "start": 146.92,
+      "duration": 4.0,
+      "text": "through the console but you can also do"
+    },
+    {
+      "start": 148.68,
+      "duration": 4.32,
+      "text": "it easily through your CLI and I will"
+    },
+    {
+      "start": 150.92,
+      "duration": 3.76,
+      "text": "show you that in this video so if I want"
+    },
+    {
+      "start": 153.0,
+      "duration": 4.879,
+      "text": "to check all the users in my account I"
+    },
+    {
+      "start": 154.68,
+      "duration": 5.16,
+      "text": "can do AWS IM list users and this will"
+    },
+    {
+      "start": 157.879,
+      "duration": 4.201,
+      "text": "tell me the list of the users in my"
+    },
+    {
+      "start": 159.84,
+      "duration": 5.399,
+      "text": "account so I have Alex I have Brian that"
+    },
+    {
+      "start": 162.08,
+      "duration": 5.799,
+      "text": "I created yesterday I also have intern"
+    },
+    {
+      "start": 165.239,
+      "duration": 5.72,
+      "text": "and rajes user here so this is how you"
+    },
+    {
+      "start": 167.879,
+      "duration": 5.561,
+      "text": "can use AWS commands through AWS CLI to"
+    },
+    {
+      "start": 170.959,
+      "duration": 4.041,
+      "text": "manage and create Services we will be"
+    },
+    {
+      "start": 173.44,
+      "duration": 4.519,
+      "text": "going through different examples of how"
+    },
+    {
+      "start": 175.0,
+      "duration": 5.12,
+      "text": "to create servers S3 buckets using AWS"
+    },
+    {
+      "start": 177.959,
+      "duration": 4.841,
+      "text": "CLI but before you actually go go ahead"
+    },
+    {
+      "start": 180.12,
+      "duration": 4.679,
+      "text": "and use AWS CLI you need to install it"
+    },
+    {
+      "start": 182.8,
+      "duration": 4.159,
+      "text": "and you can install AWS CLI from this"
+    },
+    {
+      "start": 184.799,
+      "duration": 3.841,
+      "text": "page here I will put this link in the"
+    },
+    {
+      "start": 186.959,
+      "duration": 4.56,
+      "text": "description or else you can simply"
+    },
+    {
+      "start": 188.64,
+      "duration": 5.36,
+      "text": "search for AWS CLI download and you will"
+    },
+    {
+      "start": 191.519,
+      "duration": 4.401,
+      "text": "be taken to this AWS page or AWS"
+    },
+    {
+      "start": 194.0,
+      "duration": 4.92,
+      "text": "documentation where you can follow steps"
+    },
+    {
+      "start": 195.92,
+      "duration": 5.56,
+      "text": "to install AWS CLI either in Linux Mac"
+    },
+    {
+      "start": 198.92,
+      "duration": 5.64,
+      "text": "OS or Windows I am using Linux so I have"
+    },
+    {
+      "start": 201.48,
+      "duration": 5.52,
+      "text": "ran this commands to install awsa in my"
+    },
+    {
+      "start": 204.56,
+      "duration": 4.84,
+      "text": "UB 2 machine if you're using Windows you"
+    },
+    {
+      "start": 207.0,
+      "duration": 5.12,
+      "text": "can follow the same steps of mentioned"
+    },
+    {
+      "start": 209.4,
+      "duration": 5.039,
+      "text": "here to install AWS CLI in your machine"
+    },
+    {
+      "start": 212.12,
+      "duration": 4.08,
+      "text": "and you can start using AWS CLI right in"
+    },
+    {
+      "start": 214.439,
+      "duration": 4.72,
+      "text": "your command prompt or"
+    },
+    {
+      "start": 216.2,
+      "duration": 4.759,
+      "text": "Powershell once you have install AWS CLI"
+    },
+    {
+      "start": 219.159,
+      "duration": 3.28,
+      "text": "how will you connect it with your AWS"
+    },
+    {
+      "start": 220.959,
+      "duration": 3.761,
+      "text": "account so this is again a very"
+    },
+    {
+      "start": 222.439,
+      "duration": 4.201,
+      "text": "important thing how will the CLI know"
+    },
+    {
+      "start": 224.72,
+      "duration": 4.519,
+      "text": "which account to create services on or"
+    },
+    {
+      "start": 226.64,
+      "duration": 4.84,
+      "text": "which account to list the users from and"
+    },
+    {
+      "start": 229.239,
+      "duration": 5.2,
+      "text": "that is where you will require to run"
+    },
+    {
+      "start": 231.48,
+      "duration": 5.599,
+      "text": "AWS configure command so AWS configure"
+    },
+    {
+      "start": 234.439,
+      "duration": 4.16,
+      "text": "command is similar to login or signning"
+    },
+    {
+      "start": 237.079,
+      "duration": 3.921,
+      "text": "that you do with your AWS Management"
+    },
+    {
+      "start": 238.599,
+      "duration": 5.0,
+      "text": "console so when you again you put your"
+    },
+    {
+      "start": 241.0,
+      "duration": 5.2,
+      "text": "username and password but if I run AWS"
+    },
+    {
+      "start": 243.599,
+      "duration": 5.72,
+      "text": "configure command here in my terminal if"
+    },
+    {
+      "start": 246.2,
+      "duration": 4.84,
+      "text": "I run AWS configure command here it is"
+    },
+    {
+      "start": 249.319,
+      "duration": 3.601,
+      "text": "not going to ask me to put the username"
+    },
+    {
+      "start": 251.04,
+      "duration": 4.6,
+      "text": "and password instead it will ask me to"
+    },
+    {
+      "start": 252.92,
+      "duration": 5.159,
+      "text": "put the access key and secret access key"
+    },
+    {
+      "start": 255.64,
+      "duration": 4.279,
+      "text": "access key here is similar to username"
+    },
+    {
+      "start": 258.079,
+      "duration": 3.601,
+      "text": "and secret access key here is similar to"
+    },
+    {
+      "start": 259.919,
+      "duration": 3.681,
+      "text": "password so where can you get this"
+    },
+    {
+      "start": 261.68,
+      "duration": 4.2,
+      "text": "access key and secret access key this"
+    },
+    {
+      "start": 263.6,
+      "duration": 3.96,
+      "text": "AWS configure command is also required"
+    },
+    {
+      "start": 265.88,
+      "duration": 4.599,
+      "text": "when you work with other devops tools"
+    },
+    {
+      "start": 267.56,
+      "duration": 4.56,
+      "text": "like terraform genkins and will you will"
+    },
+    {
+      "start": 270.479,
+      "duration": 3.641,
+      "text": "have to connect your terraform with your"
+    },
+    {
+      "start": 272.12,
+      "duration": 4.4,
+      "text": "AWS account and you do this using the"
+    },
+    {
+      "start": 274.12,
+      "duration": 4.88,
+      "text": "AWS configure command so how do you get"
+    },
+    {
+      "start": 276.52,
+      "duration": 5.08,
+      "text": "this Keys you can get this keys from the"
+    },
+    {
+      "start": 279.0,
+      "duration": 4.68,
+      "text": "IM dashboard so in the previous video we"
+    },
+    {
+      "start": 281.6,
+      "duration": 5.24,
+      "text": "have learned what is IM service how to"
+    },
+    {
+      "start": 283.68,
+      "duration": 5.6,
+      "text": "create IM users and how do you U manage"
+    },
+    {
+      "start": 286.84,
+      "duration": 4.199,
+      "text": "them so to create the keys you need to"
+    },
+    {
+      "start": 289.28,
+      "duration": 3.96,
+      "text": "click on the name of the user you can"
+    },
+    {
+      "start": 291.039,
+      "duration": 4.921,
+      "text": "create Keys either for your root user or"
+    },
+    {
+      "start": 293.24,
+      "duration": 4.36,
+      "text": "for your IM user Make sure you have"
+    },
+    {
+      "start": 295.96,
+      "duration": 4.12,
+      "text": "enough permissions that you want to do"
+    },
+    {
+      "start": 297.6,
+      "duration": 4.08,
+      "text": "through CLI what do I mean by this let's"
+    },
+    {
+      "start": 300.08,
+      "duration": 4.16,
+      "text": "say you want to create an S3 bucket"
+    },
+    {
+      "start": 301.68,
+      "duration": 5.2,
+      "text": "through CLI you should be using the keys"
+    },
+    {
+      "start": 304.24,
+      "duration": 4.799,
+      "text": "from the user who has access to S3 if"
+    },
+    {
+      "start": 306.88,
+      "duration": 4.8,
+      "text": "you don't have permissions attached for"
+    },
+    {
+      "start": 309.039,
+      "duration": 4.041,
+      "text": "S3 you cannot create it through CLI if"
+    },
+    {
+      "start": 311.68,
+      "duration": 3.64,
+      "text": "you have the permission click on the"
+    },
+    {
+      "start": 313.08,
+      "duration": 4.76,
+      "text": "name here and go to security credentials"
+    },
+    {
+      "start": 315.32,
+      "duration": 5.28,
+      "text": "this will take you back to am dashboard"
+    },
+    {
+      "start": 317.84,
+      "duration": 4.88,
+      "text": "where you can create your keys so I'm"
+    },
+    {
+      "start": 320.6,
+      "duration": 4.48,
+      "text": "back in my IM am service and if you"
+    },
+    {
+      "start": 322.72,
+      "duration": 4.4,
+      "text": "scroll down you can see access Keys here"
+    },
+    {
+      "start": 325.08,
+      "duration": 5.679,
+      "text": "so use access keys to send programmatic"
+    },
+    {
+      "start": 327.12,
+      "duration": 7.359,
+      "text": "calls to AWS from AWS CLI AWS tools for"
+    },
+    {
+      "start": 330.759,
+      "duration": 6.121,
+      "text": "Powershell sdks direct AWS API calls and"
+    },
+    {
+      "start": 334.479,
+      "duration": 4.56,
+      "text": "lot more as I've already mentioned you"
+    },
+    {
+      "start": 336.88,
+      "duration": 4.319,
+      "text": "can manage AWS through your console or"
+    },
+    {
+      "start": 339.039,
+      "duration": 4.201,
+      "text": "your CLI or programming languages"
+    },
+    {
+      "start": 341.199,
+      "duration": 3.84,
+      "text": "anything but if you want to manage it"
+    },
+    {
+      "start": 343.24,
+      "duration": 3.799,
+      "text": "through CLI or programming languages you"
+    },
+    {
+      "start": 345.039,
+      "duration": 3.841,
+      "text": "will have to create an access key so I"
+    },
+    {
+      "start": 347.039,
+      "duration": 3.88,
+      "text": "can click on create access keys and this"
+    },
+    {
+      "start": 348.88,
+      "duration": 4.56,
+      "text": "will go ahead and create access keys for"
+    },
+    {
+      "start": 350.919,
+      "duration": 4.601,
+      "text": "me at times you can have two access Keys"
+    },
+    {
+      "start": 353.44,
+      "duration": 4.28,
+      "text": "only and this is my access key this is"
+    },
+    {
+      "start": 355.52,
+      "duration": 3.88,
+      "text": "my secret access key make sure you never"
+    },
+    {
+      "start": 357.72,
+      "duration": 4.12,
+      "text": "share your access keys or secret access"
+    },
+    {
+      "start": 359.4,
+      "duration": 4.6,
+      "text": "keys with anyone because they are very"
+    },
+    {
+      "start": 361.84,
+      "duration": 4.6,
+      "text": "very confidential if someone has your"
+    },
+    {
+      "start": 364.0,
+      "duration": 5.24,
+      "text": "access keys or secret access keys they"
+    },
+    {
+      "start": 366.44,
+      "duration": 4.599,
+      "text": "can create instances or they can create"
+    },
+    {
+      "start": 369.24,
+      "duration": 3.88,
+      "text": "storage databases that can cost you"
+    },
+    {
+      "start": 371.039,
+      "duration": 3.961,
+      "text": "money so I will show you what happens if"
+    },
+    {
+      "start": 373.12,
+      "duration": 3.6,
+      "text": "you I will show you what you can do if"
+    },
+    {
+      "start": 375.0,
+      "duration": 3.68,
+      "text": "your secret access keys or access keys"
+    },
+    {
+      "start": 376.72,
+      "duration": 4.599,
+      "text": "are exposed but let me first show you"
+    },
+    {
+      "start": 378.68,
+      "duration": 5.04,
+      "text": "how to connect your account so this is"
+    },
+    {
+      "start": 381.319,
+      "duration": 4.521,
+      "text": "the command AWS configure if I run AWS"
+    },
+    {
+      "start": 383.72,
+      "duration": 4.879,
+      "text": "configure command as I've already"
+    },
+    {
+      "start": 385.84,
+      "duration": 5.04,
+      "text": "entered my keys I get this as an output"
+    },
+    {
+      "start": 388.599,
+      "duration": 4.641,
+      "text": "for you it might be none because there's"
+    },
+    {
+      "start": 390.88,
+      "duration": 4.52,
+      "text": "no key added previously so I'm going to"
+    },
+    {
+      "start": 393.24,
+      "duration": 5.079,
+      "text": "put my access Keys here and I'm exposing"
+    },
+    {
+      "start": 395.4,
+      "duration": 4.239,
+      "text": "it in front of you in this video which"
+    },
+    {
+      "start": 398.319,
+      "duration": 3.961,
+      "text": "is fine because I'm going to delete the"
+    },
+    {
+      "start": 399.639,
+      "duration": 4.441,
+      "text": "keys this is my secret access keys if"
+    },
+    {
+      "start": 402.28,
+      "duration": 3.28,
+      "text": "you want you can use it but it's not"
+    },
+    {
+      "start": 404.08,
+      "duration": 3.44,
+      "text": "going to work because I'm going to"
+    },
+    {
+      "start": 405.56,
+      "duration": 3.72,
+      "text": "delete it so this is my access key this"
+    },
+    {
+      "start": 407.52,
+      "duration": 3.6,
+      "text": "is my secret access key and this is a"
+    },
+    {
+      "start": 409.28,
+      "duration": 3.8,
+      "text": "region if you remember the global"
+    },
+    {
+      "start": 411.12,
+      "duration": 4.32,
+      "text": "infrastructure video in this AWS"
+    },
+    {
+      "start": 413.08,
+      "duration": 5.239,
+      "text": "playlist we know that we can call North"
+    },
+    {
+      "start": 415.44,
+      "duration": 4.84,
+      "text": "Virginia also as us East one Ohio as us"
+    },
+    {
+      "start": 418.319,
+      "duration": 4.761,
+      "text": "East 2 so I'm saying I want to connect"
+    },
+    {
+      "start": 420.28,
+      "duration": 5.24,
+      "text": "to my CLI on North Virginia which is US"
+    },
+    {
+      "start": 423.08,
+      "duration": 4.119,
+      "text": "e so I'm going to press enter so it"
+    },
+    {
+      "start": 425.52,
+      "duration": 4.079,
+      "text": "takes the same value and the default"
+    },
+    {
+      "start": 427.199,
+      "duration": 4.601,
+      "text": "output format is going to be Json once"
+    },
+    {
+      "start": 429.599,
+      "duration": 4.72,
+      "text": "you do this your CLI is now connected to"
+    },
+    {
+      "start": 431.8,
+      "duration": 3.6,
+      "text": "AWS and you can start working with CLI"
+    },
+    {
+      "start": 434.319,
+      "duration": 4.761,
+      "text": "you can also start working with"
+    },
+    {
+      "start": 435.4,
+      "duration": 5.4,
+      "text": "terraform anible or any CLI tools so"
+    },
+    {
+      "start": 439.08,
+      "duration": 4.16,
+      "text": "let's say I want to check all the"
+    },
+    {
+      "start": 440.8,
+      "duration": 5.2,
+      "text": "buckets in my account if you remember in"
+    },
+    {
+      "start": 443.24,
+      "duration": 4.679,
+      "text": "the I video we have created a bucket so"
+    },
+    {
+      "start": 446.0,
+      "duration": 3.919,
+      "text": "let's see if we can see that from our"
+    },
+    {
+      "start": 447.919,
+      "duration": 4.521,
+      "text": "CLI or not so we can you can actually"
+    },
+    {
+      "start": 449.919,
+      "duration": 4.4,
+      "text": "see that here now let's try out some"
+    },
+    {
+      "start": 452.44,
+      "duration": 4.12,
+      "text": "more examples let's say I want to create"
+    },
+    {
+      "start": 454.319,
+      "duration": 4.0,
+      "text": "an S3 bucket if you want to create it in"
+    },
+    {
+      "start": 456.56,
+      "duration": 4.479,
+      "text": "the console you need to go and then"
+    },
+    {
+      "start": 458.319,
+      "duration": 4.801,
+      "text": "choose S3 click on create bucket put the"
+    },
+    {
+      "start": 461.039,
+      "duration": 4.16,
+      "text": "name configuration and you create it"
+    },
+    {
+      "start": 463.12,
+      "duration": 5.6,
+      "text": "whereas using CLI I'm just going to run"
+    },
+    {
+      "start": 465.199,
+      "duration": 5.921,
+      "text": "a command AWS S3 MB which is a m bucket"
+    },
+    {
+      "start": 468.72,
+      "duration": 4.36,
+      "text": "S3 URI which is going to be this and"
+    },
+    {
+      "start": 471.12,
+      "duration": 3.359,
+      "text": "then the name of your bucket let's say"
+    },
+    {
+      "start": 473.08,
+      "duration": 4.679,
+      "text": "my"
+    },
+    {
+      "start": 474.479,
+      "duration": 6.28,
+      "text": "bucket Cloud champ"
+    },
+    {
+      "start": 477.759,
+      "duration": 5.481,
+      "text": "2024 once I do this I will get an output"
+    },
+    {
+      "start": 480.759,
+      "duration": 4.481,
+      "text": "if the name is valid I get this output"
+    },
+    {
+      "start": 483.24,
+      "duration": 4.12,
+      "text": "which means the bucket is created and I"
+    },
+    {
+      "start": 485.24,
+      "duration": 4.519,
+      "text": "can refresh you to show that the bucket"
+    },
+    {
+      "start": 487.36,
+      "duration": 6.559,
+      "text": "is indeed here so this is how easy it is"
+    },
+    {
+      "start": 489.759,
+      "duration": 6.081,
+      "text": "to create resources in AWS using AWS CLI"
+    },
+    {
+      "start": 493.919,
+      "duration": 4.28,
+      "text": "often times you will not have access to"
+    },
+    {
+      "start": 495.84,
+      "duration": 3.919,
+      "text": "the console so you will as a devops"
+    },
+    {
+      "start": 498.199,
+      "duration": 4.241,
+      "text": "engineer you might get access only to"
+    },
+    {
+      "start": 499.759,
+      "duration": 4.321,
+      "text": "CLI so you will need to know how to use"
+    },
+    {
+      "start": 502.44,
+      "duration": 3.92,
+      "text": "CLI what are different commands to"
+    },
+    {
+      "start": 504.08,
+      "duration": 3.959,
+      "text": "manage AWS let's say you don't know what"
+    },
+    {
+      "start": 506.36,
+      "duration": 2.839,
+      "text": "is a command to create a bucket or let's"
+    },
+    {
+      "start": 508.039,
+      "duration": 3.44,
+      "text": "say you don't know what is a command to"
+    },
+    {
+      "start": 509.199,
+      "duration": 4.2,
+      "text": "create ec2 or anything you can simply"
+    },
+    {
+      "start": 511.479,
+      "duration": 4.04,
+      "text": "use the help option let's say I want to"
+    },
+    {
+      "start": 513.399,
+      "duration": 4.76,
+      "text": "get all the commands for S3 I'll say AWS"
+    },
+    {
+      "start": 515.519,
+      "duration": 4.52,
+      "text": "S3 and help this will give me the list"
+    },
+    {
+      "start": 518.159,
+      "duration": 5.041,
+      "text": "of the commands also explaining me what"
+    },
+    {
+      "start": 520.039,
+      "duration": 4.841,
+      "text": "it does so I can see this is what it"
+    },
+    {
+      "start": 523.2,
+      "duration": 3.96,
+      "text": "wants you which is going to be the S3"
+    },
+    {
+      "start": 524.88,
+      "duration": 4.16,
+      "text": "colon colon URI the name of the bucket"
+    },
+    {
+      "start": 527.16,
+      "duration": 3.72,
+      "text": "and then which folder do you want to put"
+    },
+    {
+      "start": 529.04,
+      "duration": 4.52,
+      "text": "the data or which folder do you want to"
+    },
+    {
+      "start": 530.88,
+      "duration": 4.12,
+      "text": "get the data for next you can also see"
+    },
+    {
+      "start": 533.56,
+      "duration": 3.279,
+      "text": "these are all the existing command CP"
+    },
+    {
+      "start": 535.0,
+      "duration": 4.12,
+      "text": "command which is to copy an object from"
+    },
+    {
+      "start": 536.839,
+      "duration": 4.56,
+      "text": "your local machine to the bucket you can"
+    },
+    {
+      "start": 539.12,
+      "duration": 4.44,
+      "text": "also do do that which makes it so so"
+    },
+    {
+      "start": 541.399,
+      "duration": 3.56,
+      "text": "easier so when you have large files in"
+    },
+    {
+      "start": 543.56,
+      "duration": 4.12,
+      "text": "your local machine and you want to move"
+    },
+    {
+      "start": 544.959,
+      "duration": 4.801,
+      "text": "it to S3 bucket you can simply use CP"
+    },
+    {
+      "start": 547.68,
+      "duration": 4.839,
+      "text": "which can directly move your objects"
+    },
+    {
+      "start": 549.76,
+      "duration": 4.199,
+      "text": "from local machine to the S3 bucket I"
+    },
+    {
+      "start": 552.519,
+      "duration": 4.401,
+      "text": "will be explaining you all of that in"
+    },
+    {
+      "start": 553.959,
+      "duration": 5.041,
+      "text": "the S3 domain or S3 video so don't worry"
+    },
+    {
+      "start": 556.92,
+      "duration": 4.76,
+      "text": "about it if you don't understand much"
+    },
+    {
+      "start": 559.0,
+      "duration": 4.6,
+      "text": "these are all the commands you can use"
+    },
+    {
+      "start": 561.68,
+      "duration": 5.48,
+      "text": "uh and this is the description so if"
+    },
+    {
+      "start": 563.6,
+      "duration": 5.2,
+      "text": "anytime you don't know how to use S3 uh"
+    },
+    {
+      "start": 567.16,
+      "duration": 3.08,
+      "text": "with the CLI you can run the help"
+    },
+    {
+      "start": 568.8,
+      "duration": 3.84,
+      "text": "command"
+    },
+    {
+      "start": 570.24,
+      "duration": 4.96,
+      "text": "so now we know how you can use AWS CLI"
+    },
+    {
+      "start": 572.64,
+      "duration": 4.639,
+      "text": "to create services in the cloud I've"
+    },
+    {
+      "start": 575.2,
+      "duration": 4.12,
+      "text": "also mentioned how you can use AWS CLI"
+    },
+    {
+      "start": 577.279,
+      "duration": 3.921,
+      "text": "to create scripts and automate it to"
+    },
+    {
+      "start": 579.32,
+      "duration": 4.04,
+      "text": "show you an example let me create a"
+    },
+    {
+      "start": 581.2,
+      "duration": 4.84,
+      "text": "script which is going to create an IM"
+    },
+    {
+      "start": 583.36,
+      "duration": 5.2,
+      "text": "user and also save the details of this"
+    },
+    {
+      "start": 586.04,
+      "duration": 4.72,
+      "text": "user inside a file in my local machine"
+    },
+    {
+      "start": 588.56,
+      "duration": 3.92,
+      "text": "so to create an IM user I've already"
+    },
+    {
+      "start": 590.76,
+      "duration": 3.519,
+      "text": "taught you how to create an IM user in"
+    },
+    {
+      "start": 592.48,
+      "duration": 3.2,
+      "text": "the previous section but I'm going to"
+    },
+    {
+      "start": 594.279,
+      "duration": 3.641,
+      "text": "show you how you can do it through the"
+    },
+    {
+      "start": 595.68,
+      "duration": 4.76,
+      "text": "AWS CLI here so I'm going to create a"
+    },
+    {
+      "start": 597.92,
+      "duration": 4.12,
+      "text": "script now so let's create a script"
+    },
+    {
+      "start": 600.44,
+      "duration": 3.92,
+      "text": "named as"
+    },
+    {
+      "start": 602.04,
+      "duration": 4.6,
+      "text": "create user"
+    },
+    {
+      "start": 604.36,
+      "duration": 4.24,
+      "text": "Dosh inside this file I'm going to paste"
+    },
+    {
+      "start": 606.64,
+      "duration": 4.6,
+      "text": "my script here and let me explain you"
+    },
+    {
+      "start": 608.6,
+      "duration": 4.679,
+      "text": "this script before I run it so this is a"
+    },
+    {
+      "start": 611.24,
+      "duration": 4.039,
+      "text": "bash script I am specifying the username"
+    },
+    {
+      "start": 613.279,
+      "duration": 4.0,
+      "text": "which is a variable to add the username"
+    },
+    {
+      "start": 615.279,
+      "duration": 4.24,
+      "text": "it is going to be admin user today's"
+    },
+    {
+      "start": 617.279,
+      "duration": 3.601,
+      "text": "state or something and then the policy I"
+    },
+    {
+      "start": 619.519,
+      "duration": 3.721,
+      "text": "want to attach to this user is going to"
+    },
+    {
+      "start": 620.88,
+      "duration": 4.28,
+      "text": "be administrator access just for an"
+    },
+    {
+      "start": 623.24,
+      "duration": 4.159,
+      "text": "example then it will show you me a"
+    },
+    {
+      "start": 625.16,
+      "duration": 3.76,
+      "text": "message saying creating I am user and in"
+    },
+    {
+      "start": 627.399,
+      "duration": 3.201,
+      "text": "the background is going to run this"
+    },
+    {
+      "start": 628.92,
+      "duration": 3.96,
+      "text": "command which is to create a user with"
+    },
+    {
+      "start": 630.6,
+      "duration": 4.0,
+      "text": "the username inside this variable next"
+    },
+    {
+      "start": 632.88,
+      "duration": 3.84,
+      "text": "it is going to attach the policy which"
+    },
+    {
+      "start": 634.6,
+      "duration": 4.799,
+      "text": "is the admin policy using this command I"
+    },
+    {
+      "start": 636.72,
+      "duration": 3.919,
+      "text": "am attach policy once the policy is"
+    },
+    {
+      "start": 639.399,
+      "duration": 3.321,
+      "text": "attached it's going to create access"
+    },
+    {
+      "start": 640.639,
+      "duration": 6.161,
+      "text": "keys for the user and then store this"
+    },
+    {
+      "start": 642.72,
+      "duration": 6.559,
+      "text": "access key inside a file named as uh"
+    },
+    {
+      "start": 646.8,
+      "duration": 4.719,
+      "text": "this so we are going to be creating the"
+    },
+    {
+      "start": 649.279,
+      "duration": 3.8,
+      "text": "user also attaching the policy creating"
+    },
+    {
+      "start": 651.519,
+      "duration": 4.361,
+      "text": "access keys and saving the access key"
+    },
+    {
+      "start": 653.079,
+      "duration": 5.041,
+      "text": "files inside this credential files so"
+    },
+    {
+      "start": 655.88,
+      "duration": 4.04,
+      "text": "let's actually run this so I'm going to"
+    },
+    {
+      "start": 658.12,
+      "duration": 3.519,
+      "text": "close and save this"
+    },
+    {
+      "start": 659.92,
+      "duration": 5.76,
+      "text": "give this file executing permission so"
+    },
+    {
+      "start": 661.639,
+      "duration": 5.841,
+      "text": "I'll say CH mod 777 and create user Dosh"
+    },
+    {
+      "start": 665.68,
+      "duration": 3.719,
+      "text": "let's try to run this and you should be"
+    },
+    {
+      "start": 667.48,
+      "duration": 4.159,
+      "text": "able to see that this will create a user"
+    },
+    {
+      "start": 669.399,
+      "duration": 4.601,
+      "text": "with the username this now the user is"
+    },
+    {
+      "start": 671.639,
+      "duration": 4.0,
+      "text": "created it is attaching a policy it is"
+    },
+    {
+      "start": 674.0,
+      "duration": 4.0,
+      "text": "now creating a keys and the keys are"
+    },
+    {
+      "start": 675.639,
+      "duration": 5.481,
+      "text": "stored inside this file so if I show you"
+    },
+    {
+      "start": 678.0,
+      "duration": 4.72,
+      "text": "this file let's cat it and you can see"
+    },
+    {
+      "start": 681.12,
+      "duration": 3.2,
+      "text": "the user is created and the keys are"
+    },
+    {
+      "start": 682.72,
+      "duration": 3.559,
+      "text": "also stored so this is how you can"
+    },
+    {
+      "start": 684.32,
+      "duration": 3.639,
+      "text": "automate everything if I was to do it"
+    },
+    {
+      "start": 686.279,
+      "duration": 4.081,
+      "text": "through the console it would take me"
+    },
+    {
+      "start": 687.959,
+      "duration": 4.481,
+      "text": "around 5 to 10 minutes but using CLI it"
+    },
+    {
+      "start": 690.36,
+      "duration": 4.36,
+      "text": "just took me a minute so you can see now"
+    },
+    {
+      "start": 692.44,
+      "duration": 4.24,
+      "text": "the user is also created and this is the"
+    },
+    {
+      "start": 694.72,
+      "duration": 4.48,
+      "text": "same user that we created through our"
+    },
+    {
+      "start": 696.68,
+      "duration": 2.52,
+      "text": "terminal"
+    },
+    {
+      "start": 699.399,
+      "duration": 5.081,
+      "text": "here so this is an example of how you"
+    },
+    {
+      "start": 701.839,
+      "duration": 5.361,
+      "text": "can use AWS CLI for your devops"
+    },
+    {
+      "start": 704.48,
+      "duration": 4.479,
+      "text": "work now that you know how to use AWS"
+    },
+    {
+      "start": 707.2,
+      "duration": 4.319,
+      "text": "CLI commands to create and manage"
+    },
+    {
+      "start": 708.959,
+      "duration": 5.201,
+      "text": "services in AWS let me explain you the"
+    },
+    {
+      "start": 711.519,
+      "duration": 4.961,
+      "text": "benefits of using AWS CLI as a devops"
+    },
+    {
+      "start": 714.16,
+      "duration": 4.679,
+      "text": "engineer the first benefit is Automation"
+    },
+    {
+      "start": 716.48,
+      "duration": 4.44,
+      "text": "and scripting using CLI you can write"
+    },
+    {
+      "start": 718.839,
+      "duration": 3.68,
+      "text": "down scpt scripts putting all the AWS"
+    },
+    {
+      "start": 720.92,
+      "duration": 4.08,
+      "text": "commands and which can help you with"
+    },
+    {
+      "start": 722.519,
+      "duration": 4.681,
+      "text": "deployment of ec2 instance S3 buckets IM"
+    },
+    {
+      "start": 725.0,
+      "duration": 4.48,
+      "text": "IM users everything with just a single"
+    },
+    {
+      "start": 727.2,
+      "duration": 4.199,
+      "text": "script so it will help you faster"
+    },
+    {
+      "start": 729.48,
+      "duration": 4.08,
+      "text": "execution of task compared to using the"
+    },
+    {
+      "start": 731.399,
+      "duration": 5.201,
+      "text": "AWS Management console next is"
+    },
+    {
+      "start": 733.56,
+      "duration": 5.079,
+      "text": "crossplatform consistency as AWS C can"
+    },
+    {
+      "start": 736.6,
+      "duration": 3.84,
+      "text": "work with Windows Mac OS and Linux you"
+    },
+    {
+      "start": 738.639,
+      "duration": 4.041,
+      "text": "can use the same commands in different"
+    },
+    {
+      "start": 740.44,
+      "duration": 4.839,
+      "text": "OS so consistent environment management"
+    },
+    {
+      "start": 742.68,
+      "duration": 4.56,
+      "text": "across different operating systems next"
+    },
+    {
+      "start": 745.279,
+      "duration": 4.881,
+      "text": "AWS CLI can also integrate with your"
+    },
+    {
+      "start": 747.24,
+      "duration": 5.44,
+      "text": "cicd pipelines so in your cicd pipeline"
+    },
+    {
+      "start": 750.16,
+      "duration": 5.64,
+      "text": "files you can mention CLI commands to do"
+    },
+    {
+      "start": 752.68,
+      "duration": 6.36,
+      "text": "operations on AWS or to deploy code to"
+    },
+    {
+      "start": 755.8,
+      "duration": 5.24,
+      "text": "AWS you can also save cost using AWS CLI"
+    },
+    {
+      "start": 759.04,
+      "duration": 4.359,
+      "text": "how can you save cost so you can create"
+    },
+    {
+      "start": 761.04,
+      "duration": 4.84,
+      "text": "scripts to shut down the instances all"
+    },
+    {
+      "start": 763.399,
+      "duration": 4.761,
+      "text": "RDS databases when it is not in use"
+    },
+    {
+      "start": 765.88,
+      "duration": 3.639,
+      "text": "using the crown jobs so you can optimize"
+    },
+    {
+      "start": 768.16,
+      "duration": 4.32,
+      "text": "resource usage and also lower your"
+    },
+    {
+      "start": 769.519,
+      "duration": 4.721,
+      "text": "expenses not just this AWS CLI can also"
+    },
+    {
+      "start": 772.48,
+      "duration": 4.84,
+      "text": "work with devop tools like terraform"
+    },
+    {
+      "start": 774.24,
+      "duration": 5.36,
+      "text": "genkins anci Docker kubernetes which are"
+    },
+    {
+      "start": 777.32,
+      "duration": 5.48,
+      "text": "all mentioned here I have the list of"
+    },
+    {
+      "start": 779.6,
+      "duration": 5.08,
+      "text": "CLI commands that is used most by devops"
+    },
+    {
+      "start": 782.8,
+      "duration": 4.039,
+      "text": "Engineers so here is a comprehensive"
+    },
+    {
+      "start": 784.68,
+      "duration": 5.279,
+      "text": "cheat sheet specifically tailored for"
+    },
+    {
+      "start": 786.839,
+      "duration": 5.201,
+      "text": "devops task which includes creation of"
+    },
+    {
+      "start": 789.959,
+      "duration": 4.24,
+      "text": "S3 bucket D2 instances kubernetes"
+    },
+    {
+      "start": 792.04,
+      "duration": 4.28,
+      "text": "cluster and everything else if you want"
+    },
+    {
+      "start": 794.199,
+      "duration": 4.88,
+      "text": "me to share this with you please comment"
+    },
+    {
+      "start": 796.32,
+      "duration": 5.12,
+      "text": "AWS CLI cheat sheet one thing to"
+    },
+    {
+      "start": 799.079,
+      "duration": 4.361,
+      "text": "remember about AWS CLI as a devops"
+    },
+    {
+      "start": 801.44,
+      "duration": 4.16,
+      "text": "engineer is when you run your AWS"
+    },
+    {
+      "start": 803.44,
+      "duration": 4.839,
+      "text": "configure command and you put your keys"
+    },
+    {
+      "start": 805.6,
+      "duration": 5.76,
+      "text": "these keys are stored inside your local"
+    },
+    {
+      "start": 808.279,
+      "duration": 5.441,
+      "text": "machine in in the folder which is AWS so"
+    },
+    {
+      "start": 811.36,
+      "duration": 3.919,
+      "text": "if I show you that folder which is AWS"
+    },
+    {
+      "start": 813.72,
+      "duration": 3.96,
+      "text": "you can see there are two folders inside"
+    },
+    {
+      "start": 815.279,
+      "duration": 7.0,
+      "text": "this config and credential if I do cat"
+    },
+    {
+      "start": 817.68,
+      "duration": 6.48,
+      "text": "credential command do/ AWS"
+    },
+    {
+      "start": 822.279,
+      "duration": 4.201,
+      "text": "credentials you can see the keys are"
+    },
+    {
+      "start": 824.16,
+      "duration": 4.56,
+      "text": "stored here and this is why you are not"
+    },
+    {
+      "start": 826.48,
+      "duration": 4.84,
+      "text": "supposed to use AWS configure when"
+    },
+    {
+      "start": 828.72,
+      "duration": 5.52,
+      "text": "giving access to different Services"
+    },
+    {
+      "start": 831.32,
+      "duration": 5.16,
+      "text": "instead you should be using AWS IM Ro so"
+    },
+    {
+      "start": 834.24,
+      "duration": 4.88,
+      "text": "I mentioned this in the previous IM IM"
+    },
+    {
+      "start": 836.48,
+      "duration": 4.599,
+      "text": "service on why you should be using IM Ro"
+    },
+    {
+      "start": 839.12,
+      "duration": 4.04,
+      "text": "instead of using IM keys because the"
+    },
+    {
+      "start": 841.079,
+      "duration": 4.281,
+      "text": "keys are stored inside this folder and"
+    },
+    {
+      "start": 843.16,
+      "duration": 4.239,
+      "text": "anyone who has access to your server can"
+    },
+    {
+      "start": 845.36,
+      "duration": 4.24,
+      "text": "also get access to your keys so make"
+    },
+    {
+      "start": 847.399,
+      "duration": 3.44,
+      "text": "sure you always use IM am Ro when you"
+    },
+    {
+      "start": 849.6,
+      "duration": 3.44,
+      "text": "want to give access to different"
+    },
+    {
+      "start": 850.839,
+      "duration": 4.721,
+      "text": "Services when it is a physical user then"
+    },
+    {
+      "start": 853.04,
+      "duration": 4.039,
+      "text": "you can create IM user for them now my"
+    },
+    {
+      "start": 855.56,
+      "duration": 3.6,
+      "text": "keys are exposed and you should never"
+    },
+    {
+      "start": 857.079,
+      "duration": 3.641,
+      "text": "expose or share your keys if your keys"
+    },
+    {
+      "start": 859.16,
+      "duration": 3.56,
+      "text": "are shared you can just go and delete it"
+    },
+    {
+      "start": 860.72,
+      "duration": 3.88,
+      "text": "so just do the same thing which is going"
+    },
+    {
+      "start": 862.72,
+      "duration": 3.84,
+      "text": "to security credentials and you will be"
+    },
+    {
+      "start": 864.6,
+      "duration": 3.84,
+      "text": "taken to the same IM page where you"
+    },
+    {
+      "start": 866.56,
+      "duration": 3.48,
+      "text": "created your keys so I'm going to go"
+    },
+    {
+      "start": 868.44,
+      "duration": 4.28,
+      "text": "here and I can see this is the key that"
+    },
+    {
+      "start": 870.04,
+      "duration": 4.159,
+      "text": "I created 39 minutes ago it was last"
+    },
+    {
+      "start": 872.72,
+      "duration": 3.72,
+      "text": "used 13 minutes ago so I'm going to"
+    },
+    {
+      "start": 874.199,
+      "duration": 4.76,
+      "text": "click on actions and then click on"
+    },
+    {
+      "start": 876.44,
+      "duration": 4.639,
+      "text": "delete but to delete you need to put the"
+    },
+    {
+      "start": 878.959,
+      "duration": 4.32,
+      "text": "access key here I'm going to first"
+    },
+    {
+      "start": 881.079,
+      "duration": 4.12,
+      "text": "deactivate it before I delete I need to"
+    },
+    {
+      "start": 883.279,
+      "duration": 3.761,
+      "text": "deactivate it once it is deactivated I'm"
+    },
+    {
+      "start": 885.199,
+      "duration": 3.44,
+      "text": "then going to click on delete option and"
+    },
+    {
+      "start": 887.04,
+      "duration": 3.159,
+      "text": "this will delete it so once it is"
+    },
+    {
+      "start": 888.639,
+      "duration": 4.041,
+      "text": "deleted you can always create a new key"
+    },
+    {
+      "start": 890.199,
+      "duration": 4.401,
+      "text": "pair uh so no problem even if you delete"
+    },
+    {
+      "start": 892.68,
+      "duration": 4.32,
+      "text": "a key you can always create a new one"
+    },
+    {
+      "start": 894.6,
+      "duration": 4.44,
+      "text": "these keys are also used when you work"
+    },
+    {
+      "start": 897.0,
+      "duration": 4.079,
+      "text": "with genkins so if you have done my"
+    },
+    {
+      "start": 899.04,
+      "duration": 4.359,
+      "text": "Netflix Dev secops project you might"
+    },
+    {
+      "start": 901.079,
+      "duration": 4.601,
+      "text": "have seen that I added my access keys"
+    },
+    {
+      "start": 903.399,
+      "duration": 4.201,
+      "text": "and secret access keys inside genkins"
+    },
+    {
+      "start": 905.68,
+      "duration": 4.2,
+      "text": "credential similarly when you work with"
+    },
+    {
+      "start": 907.6,
+      "duration": 5.56,
+      "text": "terraform you also need to put the keys"
+    },
+    {
+      "start": 909.88,
+      "duration": 5.639,
+      "text": "so if I show you terraform AWS provider"
+    },
+    {
+      "start": 913.16,
+      "duration": 4.08,
+      "text": "this is the AWS provider for terraform"
+    },
+    {
+      "start": 915.519,
+      "duration": 2.961,
+      "text": "and if you scroll down you can see this"
+    },
+    {
+      "start": 917.24,
+      "duration": 3.159,
+      "text": "is where you need to put your access"
+    },
+    {
+      "start": 918.48,
+      "duration": 3.76,
+      "text": "keys and secret access key although this"
+    },
+    {
+      "start": 920.399,
+      "duration": 3.56,
+      "text": "is not a best practice but still you"
+    },
+    {
+      "start": 922.24,
+      "duration": 4.599,
+      "text": "will require Keys when you want to"
+    },
+    {
+      "start": 923.959,
+      "duration": 5.32,
+      "text": "connect terraform with your AWS and this"
+    },
+    {
+      "start": 926.839,
+      "duration": 4.48,
+      "text": "is how you create the keys so we have OD"
+    },
+    {
+      "start": 929.279,
+      "duration": 3.881,
+      "text": "what is AWS CLI how do you connect your"
+    },
+    {
+      "start": 931.319,
+      "duration": 4.121,
+      "text": "CLI with your account how do you run"
+    },
+    {
+      "start": 933.16,
+      "duration": 5.72,
+      "text": "different commands how to create scripts"
+    },
+    {
+      "start": 935.44,
+      "duration": 5.399,
+      "text": "and automate repetitive task in your AWS"
+    },
+    {
+      "start": 938.88,
+      "duration": 4.36,
+      "text": "so this video was just a quick overview"
+    },
+    {
+      "start": 940.839,
+      "duration": 4.841,
+      "text": "of what is AWS CLI and how do you use it"
+    },
+    {
+      "start": 943.24,
+      "duration": 4.92,
+      "text": "in your devops workflow as a task I"
+    },
+    {
+      "start": 945.68,
+      "duration": 5.279,
+      "text": "request you to create an IM user using"
+    },
+    {
+      "start": 948.16,
+      "duration": 4.799,
+      "text": "AWS CLI just to check your knowledge if"
+    },
+    {
+      "start": 950.959,
+      "duration": 4.401,
+      "text": "you face any issues in installing or"
+    },
+    {
+      "start": 952.959,
+      "duration": 4.68,
+      "text": "configuring AWS CLI let me know in the"
+    },
+    {
+      "start": 955.36,
+      "duration": 5.279,
+      "text": "comment section and in the next video we"
+    },
+    {
+      "start": 957.639,
+      "duration": 5.481,
+      "text": "are going to be learning about AWS ec2"
+    },
+    {
+      "start": 960.639,
+      "duration": 5.521,
+      "text": "which is elastic compute Cloud on how to"
+    },
+    {
+      "start": 963.12,
+      "duration": 6.519,
+      "text": "create servers using AWS ec2 so see you"
+    },
+    {
+      "start": 966.16,
+      "duration": 3.479,
+      "text": "in the next video"
+    }
+  ]
+}

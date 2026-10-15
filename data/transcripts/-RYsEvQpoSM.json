@@ -1,0 +1,306 @@
+{
+  "video": {
+    "id": "-RYsEvQpoSM",
+    "title": "Difference Between Dedicated Host vs Dedicated Instances AWS Tutorial",
+    "url": "https://www.youtube.com/watch?v=-RYsEvQpoSM",
+    "duration": 128,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 3.679,
+      "text": "hello and welcome back"
+    },
+    {
+      "start": 1.92,
+      "duration": 3.839,
+      "text": "so in the previous video we learned what"
+    },
+    {
+      "start": 3.919,
+      "duration": 3.681,
+      "text": "are the different launch types"
+    },
+    {
+      "start": 5.759,
+      "duration": 4.561,
+      "text": "the two different launch types that are"
+    },
+    {
+      "start": 7.6,
+      "duration": 4.159,
+      "text": "dedicated host and dedicated instance"
+    },
+    {
+      "start": 10.32,
+      "duration": 4.479,
+      "text": "are somewhat same and it can be"
+    },
+    {
+      "start": 11.759,
+      "duration": 5.921,
+      "text": "confusing so this video is to compare"
+    },
+    {
+      "start": 14.799,
+      "duration": 6.4,
+      "text": "dedicated host and dedicated instances"
+    },
+    {
+      "start": 17.68,
+      "duration": 5.599,
+      "text": "so let's start with the video"
+    },
+    {
+      "start": 21.199,
+      "duration": 4.4,
+      "text": "so dedicated host and dedicated instance"
+    },
+    {
+      "start": 23.279,
+      "duration": 4.881,
+      "text": "are both used to launch ec2 instance on"
+    },
+    {
+      "start": 25.599,
+      "duration": 4.721,
+      "text": "physical servers that are dedicated for"
+    },
+    {
+      "start": 28.16,
+      "duration": 4.399,
+      "text": "your use no one else can launch their"
+    },
+    {
+      "start": 30.32,
+      "duration": 3.919,
+      "text": "instance in this in that server"
+    },
+    {
+      "start": 32.559,
+      "duration": 3.52,
+      "text": "the important difference between the"
+    },
+    {
+      "start": 34.239,
+      "duration": 3.041,
+      "text": "dedicated host and the dedicated"
+    },
+    {
+      "start": 36.079,
+      "duration": 3.601,
+      "text": "instance is"
+    },
+    {
+      "start": 37.28,
+      "duration": 4.72,
+      "text": "the dedicated host gives you additional"
+    },
+    {
+      "start": 39.68,
+      "duration": 4.32,
+      "text": "visibility and control over"
+    },
+    {
+      "start": 42.0,
+      "duration": 3.44,
+      "text": "how your instances are placed on the"
+    },
+    {
+      "start": 44.0,
+      "duration": 3.44,
+      "text": "physical server"
+    },
+    {
+      "start": 45.44,
+      "duration": 4.959,
+      "text": "as a result dedicated host enable you to"
+    },
+    {
+      "start": 47.44,
+      "duration": 5.52,
+      "text": "use your existing licenses and address"
+    },
+    {
+      "start": 50.399,
+      "duration": 5.041,
+      "text": "com corporate compliance and regulatory"
+    },
+    {
+      "start": 52.96,
+      "duration": 4.64,
+      "text": "requirements let's understand this with"
+    },
+    {
+      "start": 55.44,
+      "duration": 4.16,
+      "text": "the help of a table here is a table"
+    },
+    {
+      "start": 57.6,
+      "duration": 4.24,
+      "text": "which describes the differences between"
+    },
+    {
+      "start": 59.6,
+      "duration": 4.72,
+      "text": "the dedicated host and the dedicated"
+    },
+    {
+      "start": 61.84,
+      "duration": 4.959,
+      "text": "instances in both of them enables the"
+    },
+    {
+      "start": 64.32,
+      "duration": 4.56,
+      "text": "use of dedicated physical servers so"
+    },
+    {
+      "start": 66.799,
+      "duration": 4.561,
+      "text": "it's you can use physical servers in"
+    },
+    {
+      "start": 68.88,
+      "duration": 5.279,
+      "text": "both of them you pay per instance"
+    },
+    {
+      "start": 71.36,
+      "duration": 5.04,
+      "text": "billing in dedicated instances and you"
+    },
+    {
+      "start": 74.159,
+      "duration": 3.28,
+      "text": "pay per host billing in the dedicated"
+    },
+    {
+      "start": 76.4,
+      "duration": 4.24,
+      "text": "host"
+    },
+    {
+      "start": 77.439,
+      "duration": 5.36,
+      "text": "visibility of sockets course host id is"
+    },
+    {
+      "start": 80.64,
+      "duration": 4.4,
+      "text": "available in dedicated host you don't"
+    },
+    {
+      "start": 82.799,
+      "duration": 4.561,
+      "text": "have control of these things in the"
+    },
+    {
+      "start": 85.04,
+      "duration": 4.399,
+      "text": "dedicated instance same for affinity"
+    },
+    {
+      "start": 87.36,
+      "duration": 4.24,
+      "text": "between host and instance you don't have"
+    },
+    {
+      "start": 89.439,
+      "duration": 4.161,
+      "text": "control in dedicated instance"
+    },
+    {
+      "start": 91.6,
+      "duration": 4.08,
+      "text": "you get targeted instance placement in"
+    },
+    {
+      "start": 93.6,
+      "duration": 4.159,
+      "text": "dedicated host you can decide where you"
+    },
+    {
+      "start": 95.68,
+      "duration": 5.119,
+      "text": "want to place your instances"
+    },
+    {
+      "start": 97.759,
+      "duration": 4.0,
+      "text": "and automatic instance placement is done"
+    },
+    {
+      "start": 100.799,
+      "duration": 3.201,
+      "text": "in both"
+    },
+    {
+      "start": 101.759,
+      "duration": 4.161,
+      "text": "dedicated as well as dedicated host you"
+    },
+    {
+      "start": 104.0,
+      "duration": 4.479,
+      "text": "can add capacity using allocation"
+    },
+    {
+      "start": 105.92,
+      "duration": 4.239,
+      "text": "request only in dedicated host"
+    },
+    {
+      "start": 108.479,
+      "duration": 2.481,
+      "text": "so this this is the difference between"
+    },
+    {
+      "start": 110.159,
+      "duration": 3.201,
+      "text": "the"
+    },
+    {
+      "start": 110.96,
+      "duration": 5.199,
+      "text": "dedicated host and dedicated instance i"
+    },
+    {
+      "start": 113.36,
+      "duration": 4.64,
+      "text": "hope you got the clear idea and you now"
+    },
+    {
+      "start": 116.159,
+      "duration": 3.92,
+      "text": "know why dedicated host and why"
+    },
+    {
+      "start": 118.0,
+      "duration": 4.479,
+      "text": "dedicated incense are different if you"
+    },
+    {
+      "start": 120.079,
+      "duration": 5.281,
+      "text": "like the video please subscribe to this"
+    },
+    {
+      "start": 122.479,
+      "duration": 4.081,
+      "text": "channel and follow along for more aws"
+    },
+    {
+      "start": 125.36,
+      "duration": 4.24,
+      "text": "and devops"
+    },
+    {
+      "start": 126.56,
+      "duration": 3.04,
+      "text": "videos thank you"
+    }
+  ]
+}

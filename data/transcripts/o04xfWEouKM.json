@@ -1,0 +1,1976 @@
+{
+  "video": {
+    "id": "o04xfWEouKM",
+    "title": "Terraform Remote State Backend using S3 and DynamoDB",
+    "url": "https://www.youtube.com/watch?v=o04xfWEouKM",
+    "duration": 933,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 3.72,
+      "text": "is do you want to copy the existing"
+    },
+    {
+      "start": 1.979,
+      "duration": 4.021,
+      "text": "state file to the new backend which is"
+    },
+    {
+      "start": 3.72,
+      "duration": 4.44,
+      "text": "S3 hello and welcome back in this video"
+    },
+    {
+      "start": 6.0,
+      "duration": 5.46,
+      "text": "I am going to show you how you can use"
+    },
+    {
+      "start": 8.16,
+      "duration": 5.519,
+      "text": "S3 bucket and dynamodb table to store"
+    },
+    {
+      "start": 11.46,
+      "duration": 5.159,
+      "text": "your terraform State file from your"
+    },
+    {
+      "start": 13.679,
+      "duration": 4.801,
+      "text": "local machine to S3 backend so storing"
+    },
+    {
+      "start": 16.619,
+      "duration": 4.92,
+      "text": "your terraform State file on backends"
+    },
+    {
+      "start": 18.48,
+      "duration": 4.86,
+      "text": "like S3 is a good practice so that you"
+    },
+    {
+      "start": 21.539,
+      "duration": 4.201,
+      "text": "can work with your teams you can have"
+    },
+    {
+      "start": 23.34,
+      "duration": 4.8,
+      "text": "features like State locking versioning"
+    },
+    {
+      "start": 25.74,
+      "duration": 5.22,
+      "text": "encryption and a lot of other features"
+    },
+    {
+      "start": 28.14,
+      "duration": 5.52,
+      "text": "so you can use options like S3 Azure"
+    },
+    {
+      "start": 30.96,
+      "duration": 4.98,
+      "text": "blob storage workout storage hashic up"
+    },
+    {
+      "start": 33.66,
+      "duration": 5.16,
+      "text": "console terraform cloud and large"
+    },
+    {
+      "start": 35.94,
+      "duration": 5.7,
+      "text": "options so store your terraform state"
+    },
+    {
+      "start": 38.82,
+      "duration": 5.64,
+      "text": "but we are going to use S3 bucket to"
+    },
+    {
+      "start": 41.64,
+      "duration": 6.06,
+      "text": "store our terraform State file I'm going"
+    },
+    {
+      "start": 44.46,
+      "duration": 5.4,
+      "text": "to show you everything step by step so"
+    },
+    {
+      "start": 47.7,
+      "duration": 3.9,
+      "text": "please watch this video till the end if"
+    },
+    {
+      "start": 49.86,
+      "duration": 4.44,
+      "text": "you want to know how we can store our"
+    },
+    {
+      "start": 51.6,
+      "duration": 4.2,
+      "text": "terraform State file on S3 so before we"
+    },
+    {
+      "start": 54.3,
+      "duration": 3.779,
+      "text": "start with the video if you are new to"
+    },
+    {
+      "start": 55.8,
+      "duration": 5.22,
+      "text": "my Channel please subscribe to my"
+    },
+    {
+      "start": 58.079,
+      "duration": 5.401,
+      "text": "channel I post videos on AWS terraform"
+    },
+    {
+      "start": 61.02,
+      "duration": 3.959,
+      "text": "devops cloud and everything that you"
+    },
+    {
+      "start": 63.48,
+      "duration": 3.48,
+      "text": "might be interested in so please"
+    },
+    {
+      "start": 64.979,
+      "duration": 5.401,
+      "text": "subscribe to my channel like this video"
+    },
+    {
+      "start": 66.96,
+      "duration": 4.979,
+      "text": "and let's start so for us to store us at"
+    },
+    {
+      "start": 70.38,
+      "duration": 4.559,
+      "text": "State file first thing we need to do is"
+    },
+    {
+      "start": 71.939,
+      "duration": 4.5,
+      "text": "to create S3 bucket and dynamodb table"
+    },
+    {
+      "start": 74.939,
+      "duration": 2.54,
+      "text": "so I'm going to create a new file name"
+    },
+    {
+      "start": 76.439,
+      "duration": 3.841,
+      "text": "it as"
+    },
+    {
+      "start": 77.479,
+      "duration": 5.201,
+      "text": "backend.tf so let me just show you that"
+    },
+    {
+      "start": 80.28,
+      "duration": 4.32,
+      "text": "this is my state file and we are going"
+    },
+    {
+      "start": 82.68,
+      "duration": 5.22,
+      "text": "to migrate all of this"
+    },
+    {
+      "start": 84.6,
+      "duration": 5.879,
+      "text": "in our S3 and let's go and see let's go"
+    },
+    {
+      "start": 87.9,
+      "duration": 5.52,
+      "text": "to our my market"
+    },
+    {
+      "start": 90.479,
+      "duration": 4.741,
+      "text": "so I am here in my S3 dashboard I only"
+    },
+    {
+      "start": 93.42,
+      "duration": 3.48,
+      "text": "have one of the bucket that I'm using"
+    },
+    {
+      "start": 95.22,
+      "duration": 4.079,
+      "text": "right now but we are going to create a"
+    },
+    {
+      "start": 96.9,
+      "duration": 4.44,
+      "text": "new bucket and we will be using that to"
+    },
+    {
+      "start": 99.299,
+      "duration": 4.261,
+      "text": "store our state file so I'm going to go"
+    },
+    {
+      "start": 101.34,
+      "duration": 4.739,
+      "text": "to my terraform document I'm going to go"
+    },
+    {
+      "start": 103.56,
+      "duration": 5.64,
+      "text": "to my vs code in the backend.tf first"
+    },
+    {
+      "start": 106.079,
+      "duration": 4.5,
+      "text": "thing we need to do is to create S3 and"
+    },
+    {
+      "start": 109.2,
+      "duration": 2.36,
+      "text": "the next thing we need to do is to"
+    },
+    {
+      "start": 110.579,
+      "duration": 3.781,
+      "text": "create"
+    },
+    {
+      "start": 111.56,
+      "duration": 4.419,
+      "text": "dynamodb so we are using S3 bucket to"
+    },
+    {
+      "start": 114.36,
+      "duration": 4.14,
+      "text": "store the state file here but we are"
+    },
+    {
+      "start": 115.979,
+      "duration": 4.741,
+      "text": "using dynamodb to enable State locking"
+    },
+    {
+      "start": 118.5,
+      "duration": 4.74,
+      "text": "what do I mean by state locking so there"
+    },
+    {
+      "start": 120.72,
+      "duration": 5.28,
+      "text": "can be a chance where multiple people"
+    },
+    {
+      "start": 123.24,
+      "duration": 4.799,
+      "text": "are working on the same code and"
+    },
+    {
+      "start": 126.0,
+      "duration": 3.84,
+      "text": "they might be pushing or making the"
+    },
+    {
+      "start": 128.039,
+      "duration": 4.621,
+      "text": "change in the state file simultaneously"
+    },
+    {
+      "start": 129.84,
+      "duration": 5.28,
+      "text": "So to avoid Corruption of the state file"
+    },
+    {
+      "start": 132.66,
+      "duration": 5.04,
+      "text": "we can enable dynamodb table for State"
+    },
+    {
+      "start": 135.12,
+      "duration": 4.56,
+      "text": "locking so that when someone applies or"
+    },
+    {
+      "start": 137.7,
+      "duration": 4.14,
+      "text": "someone makes changes to the state file"
+    },
+    {
+      "start": 139.68,
+      "duration": 4.02,
+      "text": "it should be locked for everyone else so"
+    },
+    {
+      "start": 141.84,
+      "duration": 4.56,
+      "text": "if I'm applying or making the change to"
+    },
+    {
+      "start": 143.7,
+      "duration": 4.32,
+      "text": "a state file it will not be you cannot"
+    },
+    {
+      "start": 146.4,
+      "duration": 4.68,
+      "text": "make the change to State file at the"
+    },
+    {
+      "start": 148.02,
+      "duration": 5.1,
+      "text": "same time so dynamodb table is used for"
+    },
+    {
+      "start": 151.08,
+      "duration": 4.2,
+      "text": "State locking to avoid Corruption of the"
+    },
+    {
+      "start": 153.12,
+      "duration": 3.72,
+      "text": "state file I hope that is clear and"
+    },
+    {
+      "start": 155.28,
+      "duration": 4.26,
+      "text": "let's create a resource which is going"
+    },
+    {
+      "start": 156.84,
+      "duration": 6.36,
+      "text": "to be AWS underscore S3 underscore"
+    },
+    {
+      "start": 159.54,
+      "duration": 6.0,
+      "text": "bucket so underscore"
+    },
+    {
+      "start": 163.2,
+      "duration": 4.02,
+      "text": "bucket if you're not sure how to create"
+    },
+    {
+      "start": 165.54,
+      "duration": 3.72,
+      "text": "an SD bucket you can check out my videos"
+    },
+    {
+      "start": 167.22,
+      "duration": 5.7,
+      "text": "or you can always use the terraform"
+    },
+    {
+      "start": 169.26,
+      "duration": 6.0,
+      "text": "official documentation to see how you"
+    },
+    {
+      "start": 172.92,
+      "duration": 3.84,
+      "text": "can create an S3 bucket"
+    },
+    {
+      "start": 175.26,
+      "duration": 2.64,
+      "text": "so we're going to create a bucket let's"
+    },
+    {
+      "start": 176.76,
+      "duration": 4.22,
+      "text": "name this"
+    },
+    {
+      "start": 177.9,
+      "duration": 6.36,
+      "text": "my bucket this is the name used by"
+    },
+    {
+      "start": 180.98,
+      "duration": 4.899,
+      "text": "terraform next thing I'm going to add an"
+    },
+    {
+      "start": 184.26,
+      "duration": 4.259,
+      "text": "argument which is I'm going to add an"
+    },
+    {
+      "start": 185.879,
+      "duration": 4.261,
+      "text": "argument saying name name this name"
+    },
+    {
+      "start": 188.519,
+      "duration": 2.94,
+      "text": "should be globally unique because this"
+    },
+    {
+      "start": 190.14,
+      "duration": 3.66,
+      "text": "is the name that even that you're going"
+    },
+    {
+      "start": 191.459,
+      "duration": 3.681,
+      "text": "to give to an S3 bucket so the name is"
+    },
+    {
+      "start": 193.8,
+      "duration": 4.76,
+      "text": "going to be"
+    },
+    {
+      "start": 195.14,
+      "duration": 6.58,
+      "text": "S3 uh State"
+    },
+    {
+      "start": 198.56,
+      "duration": 5.08,
+      "text": "back end some random numbers to make it"
+    },
+    {
+      "start": 201.72,
+      "duration": 4.2,
+      "text": "globally unique make sure this is"
+    },
+    {
+      "start": 203.64,
+      "duration": 5.04,
+      "text": "globally unique haven't taken by anyone"
+    },
+    {
+      "start": 205.92,
+      "duration": 4.86,
+      "text": "else in the world so next Once I add a"
+    },
+    {
+      "start": 208.68,
+      "duration": 4.74,
+      "text": "name I am going to add another argument"
+    },
+    {
+      "start": 210.78,
+      "duration": 4.379,
+      "text": "to enable versioning versioning is used"
+    },
+    {
+      "start": 213.42,
+      "duration": 4.08,
+      "text": "to have different versions of your"
+    },
+    {
+      "start": 215.159,
+      "duration": 3.841,
+      "text": "objects inside the S3 bucket so we're"
+    },
+    {
+      "start": 217.5,
+      "duration": 3.9,
+      "text": "going to enable versioning so that we"
+    },
+    {
+      "start": 219.0,
+      "duration": 5.159,
+      "text": "can have different versions of a state"
+    },
+    {
+      "start": 221.4,
+      "duration": 4.5,
+      "text": "file we can always go back and revert to"
+    },
+    {
+      "start": 224.159,
+      "duration": 4.821,
+      "text": "any version if you want so that's a good"
+    },
+    {
+      "start": 225.9,
+      "duration": 4.919,
+      "text": "thing so reversioning enabled"
+    },
+    {
+      "start": 228.98,
+      "duration": 4.36,
+      "text": "equals to"
+    },
+    {
+      "start": 230.819,
+      "duration": 5.161,
+      "text": "equals to true this will enable"
+    },
+    {
+      "start": 233.34,
+      "duration": 3.6,
+      "text": "versioning in our S3 bucket which is"
+    },
+    {
+      "start": 235.98,
+      "duration": 3.66,
+      "text": "great"
+    },
+    {
+      "start": 236.94,
+      "duration": 5.76,
+      "text": "next I am also going to add encryption"
+    },
+    {
+      "start": 239.64,
+      "duration": 4.14,
+      "text": "so that our state file is encrypted"
+    },
+    {
+      "start": 242.7,
+      "duration": 2.88,
+      "text": "so"
+    },
+    {
+      "start": 243.78,
+      "duration": 3.599,
+      "text": "our encryption you have two different"
+    },
+    {
+      "start": 245.58,
+      "duration": 3.96,
+      "text": "types of encryption server side and side"
+    },
+    {
+      "start": 247.379,
+      "duration": 4.801,
+      "text": "site you can always use terraform"
+    },
+    {
+      "start": 249.54,
+      "duration": 4.32,
+      "text": "official documentation to see how you"
+    },
+    {
+      "start": 252.18,
+      "duration": 3.54,
+      "text": "can do that so we're going to use this"
+    },
+    {
+      "start": 253.86,
+      "duration": 4.2,
+      "text": "argument which is server side encryption"
+    },
+    {
+      "start": 255.72,
+      "duration": 4.62,
+      "text": "configuration so I'm going to use that"
+    },
+    {
+      "start": 258.06,
+      "duration": 5.639,
+      "text": "and put it in my code server side"
+    },
+    {
+      "start": 260.34,
+      "duration": 7.32,
+      "text": "encryption encryption configuration and"
+    },
+    {
+      "start": 263.699,
+      "duration": 7.261,
+      "text": "I am going to add few rules so let's put"
+    },
+    {
+      "start": 267.66,
+      "duration": 5.4,
+      "text": "this here and see what arguments do we"
+    },
+    {
+      "start": 270.96,
+      "duration": 4.26,
+      "text": "need so we are going to use the rule"
+    },
+    {
+      "start": 273.06,
+      "duration": 3.54,
+      "text": "apply by default I'm not going to use"
+    },
+    {
+      "start": 275.22,
+      "duration": 3.18,
+      "text": "the KMS because I don't want to create"
+    },
+    {
+      "start": 276.6,
+      "duration": 3.84,
+      "text": "any other resource we are going to use"
+    },
+    {
+      "start": 278.4,
+      "duration": 4.5,
+      "text": "the algorithm you can use KMS if you"
+    },
+    {
+      "start": 280.44,
+      "duration": 5.84,
+      "text": "want but for this demo I'm not using KMS"
+    },
+    {
+      "start": 282.9,
+      "duration": 3.38,
+      "text": "and here I'm going to add a rule"
+    },
+    {
+      "start": 286.68,
+      "duration": 2.72,
+      "text": "apply"
+    },
+    {
+      "start": 289.919,
+      "duration": 3.541,
+      "text": "underscore"
+    },
+    {
+      "start": 291.96,
+      "duration": 3.9,
+      "text": "server"
+    },
+    {
+      "start": 293.46,
+      "duration": 4.5,
+      "text": "underscore side so you can use it from"
+    },
+    {
+      "start": 295.86,
+      "duration": 4.279,
+      "text": "here as well so no need to type that"
+    },
+    {
+      "start": 297.96,
+      "duration": 2.179,
+      "text": "much"
+    },
+    {
+      "start": 300.72,
+      "duration": 3.78,
+      "text": "so we're going to use the server-side"
+    },
+    {
+      "start": 302.22,
+      "duration": 6.36,
+      "text": "encryption and I am going to copy this"
+    },
+    {
+      "start": 304.5,
+      "duration": 6.54,
+      "text": "from here so copy it from here"
+    },
+    {
+      "start": 308.58,
+      "duration": 5.52,
+      "text": "and I'm going to make the change in this"
+    },
+    {
+      "start": 311.04,
+      "duration": 4.2,
+      "text": "so I'm going to make the change in"
+    },
+    {
+      "start": 314.1,
+      "duration": 3.92,
+      "text": "this"
+    },
+    {
+      "start": 315.24,
+      "duration": 2.78,
+      "text": "okay"
+    },
+    {
+      "start": 324.0,
+      "duration": 6.06,
+      "text": "all right so I don't have any KMS key so"
+    },
+    {
+      "start": 327.539,
+      "duration": 4.94,
+      "text": "I'm going to remove that and I don't"
+    },
+    {
+      "start": 330.06,
+      "duration": 6.0,
+      "text": "want to use KMS I want to use SES"
+    },
+    {
+      "start": 332.479,
+      "duration": 5.041,
+      "text": "algorithm which is going to be AES 256"
+    },
+    {
+      "start": 336.06,
+      "duration": 5.639,
+      "text": "so AES"
+    },
+    {
+      "start": 337.52,
+      "duration": 7.3,
+      "text": "256 so this is going to create a bucket"
+    },
+    {
+      "start": 341.699,
+      "duration": 5.521,
+      "text": "and enable versioning also have"
+    },
+    {
+      "start": 344.82,
+      "duration": 4.98,
+      "text": "encryption enabled as well so I'm going"
+    },
+    {
+      "start": 347.22,
+      "duration": 4.08,
+      "text": "to save this run terraform validate to"
+    },
+    {
+      "start": 349.8,
+      "duration": 3.42,
+      "text": "see if all the syntax is correct or not"
+    },
+    {
+      "start": 351.3,
+      "duration": 4.679,
+      "text": "and I'm getting"
+    },
+    {
+      "start": 353.22,
+      "duration": 4.259,
+      "text": "an error saying that the name is not"
+    },
+    {
+      "start": 355.979,
+      "duration": 3.601,
+      "text": "expected here"
+    },
+    {
+      "start": 357.479,
+      "duration": 5.581,
+      "text": "sorry this argument is not name but"
+    },
+    {
+      "start": 359.58,
+      "duration": 5.58,
+      "text": "bucket I am sorry so bucket is this and"
+    },
+    {
+      "start": 363.06,
+      "duration": 4.62,
+      "text": "if I run terraform validate now I'm"
+    },
+    {
+      "start": 365.16,
+      "duration": 4.74,
+      "text": "going to get the okay which uh next"
+    },
+    {
+      "start": 367.68,
+      "duration": 5.04,
+      "text": "thing I need I'm going to do"
+    },
+    {
+      "start": 369.9,
+      "duration": 4.26,
+      "text": "is to create a dynamodb table so to"
+    },
+    {
+      "start": 372.72,
+      "duration": 4.08,
+      "text": "create a random interview table I am"
+    },
+    {
+      "start": 374.16,
+      "duration": 6.18,
+      "text": "going to define the resource resource is"
+    },
+    {
+      "start": 376.8,
+      "duration": 5.16,
+      "text": "going to be AWS underscore dynamodb"
+    },
+    {
+      "start": 380.34,
+      "duration": 3.78,
+      "text": "underscore"
+    },
+    {
+      "start": 381.96,
+      "duration": 4.92,
+      "text": "table if you're not sure how to create"
+    },
+    {
+      "start": 384.12,
+      "duration": 4.32,
+      "text": "that you can always use the official"
+    },
+    {
+      "start": 386.88,
+      "duration": 4.98,
+      "text": "documentation I'm going to paste the"
+    },
+    {
+      "start": 388.44,
+      "duration": 6.539,
+      "text": "link in the description below so you can"
+    },
+    {
+      "start": 391.86,
+      "duration": 5.94,
+      "text": "see the resource to create AWS dynamodb"
+    },
+    {
+      "start": 394.979,
+      "duration": 4.621,
+      "text": "table is this AWS underscore Dynamo DB"
+    },
+    {
+      "start": 397.8,
+      "duration": 4.019,
+      "text": "underscore table so we are going to"
+    },
+    {
+      "start": 399.6,
+      "duration": 4.08,
+      "text": "create an autom table for State locking"
+    },
+    {
+      "start": 401.819,
+      "duration": 3.901,
+      "text": "so I'm going to give"
+    },
+    {
+      "start": 403.68,
+      "duration": 3.66,
+      "text": "this a state lock"
+    },
+    {
+      "start": 405.72,
+      "duration": 4.259,
+      "text": "and inside this we are going to pass"
+    },
+    {
+      "start": 407.34,
+      "duration": 4.38,
+      "text": "some parameters the first parameter that"
+    },
+    {
+      "start": 409.979,
+      "duration": 4.201,
+      "text": "we're going to pass is going to be the"
+    },
+    {
+      "start": 411.72,
+      "duration": 5.9,
+      "text": "name so name of the dynamodb table is"
+    },
+    {
+      "start": 414.18,
+      "duration": 3.44,
+      "text": "going to be state"
+    },
+    {
+      "start": 418.56,
+      "duration": 5.699,
+      "text": "State hyphen lock"
+    },
+    {
+      "start": 421.62,
+      "duration": 3.84,
+      "text": "okay next thing I'm going to pass is the"
+    },
+    {
+      "start": 424.259,
+      "duration": 3.601,
+      "text": "billing mode"
+    },
+    {
+      "start": 425.46,
+      "duration": 3.179,
+      "text": "so billing underscore mode is going to"
+    },
+    {
+      "start": 427.86,
+      "duration": 2.459,
+      "text": "be"
+    },
+    {
+      "start": 428.639,
+      "duration": 3.12,
+      "text": "pay"
+    },
+    {
+      "start": 430.319,
+      "duration": 3.66,
+      "text": "per"
+    },
+    {
+      "start": 431.759,
+      "duration": 3.961,
+      "text": "request you have two different types of"
+    },
+    {
+      "start": 433.979,
+      "duration": 3.181,
+      "text": "billing mode one is provisioned one is"
+    },
+    {
+      "start": 435.72,
+      "duration": 3.539,
+      "text": "paper request I'm going to use paper"
+    },
+    {
+      "start": 437.16,
+      "duration": 4.979,
+      "text": "request here you can use any of them"
+    },
+    {
+      "start": 439.259,
+      "duration": 5.16,
+      "text": "then I'm going to use hash key so hash"
+    },
+    {
+      "start": 442.139,
+      "duration": 4.921,
+      "text": "underscore key you have two different"
+    },
+    {
+      "start": 444.419,
+      "duration": 6.241,
+      "text": "cache keys lock ID and user ID so we're"
+    },
+    {
+      "start": 447.06,
+      "duration": 5.579,
+      "text": "going to use lock ID here so lock ID all"
+    },
+    {
+      "start": 450.66,
+      "duration": 6.08,
+      "text": "right next thing we need to add is the"
+    },
+    {
+      "start": 452.639,
+      "duration": 4.101,
+      "text": "attribute section so attribute"
+    },
+    {
+      "start": 457.199,
+      "duration": 5.94,
+      "text": "and here I'm going to add name name is"
+    },
+    {
+      "start": 459.9,
+      "duration": 4.98,
+      "text": "going to be the lock ID so"
+    },
+    {
+      "start": 463.139,
+      "duration": 3.78,
+      "text": "lock"
+    },
+    {
+      "start": 464.88,
+      "duration": 7.08,
+      "text": "sorry lock"
+    },
+    {
+      "start": 466.919,
+      "duration": 7.261,
+      "text": "ID and the type here is going to be S so"
+    },
+    {
+      "start": 471.96,
+      "duration": 4.62,
+      "text": "I'm not in India and depth of what all"
+    },
+    {
+      "start": 474.18,
+      "duration": 4.5,
+      "text": "of these things are but"
+    },
+    {
+      "start": 476.58,
+      "duration": 4.92,
+      "text": "I hope you understood so these two"
+    },
+    {
+      "start": 478.68,
+      "duration": 5.88,
+      "text": "resources we need to create first before"
+    },
+    {
+      "start": 481.5,
+      "duration": 5.28,
+      "text": "we enable our backend or before we make"
+    },
+    {
+      "start": 484.56,
+      "duration": 4.5,
+      "text": "the change to store our terraform state"
+    },
+    {
+      "start": 486.78,
+      "duration": 3.419,
+      "text": "in the S3 so these two resources are"
+    },
+    {
+      "start": 489.06,
+      "duration": 3.24,
+      "text": "required you can either create it"
+    },
+    {
+      "start": 490.199,
+      "duration": 3.9,
+      "text": "manually if you want to or you can"
+    },
+    {
+      "start": 492.3,
+      "duration": 4.26,
+      "text": "create in terraform which is recommended"
+    },
+    {
+      "start": 494.099,
+      "duration": 4.261,
+      "text": "so always create indirect terraform so"
+    },
+    {
+      "start": 496.56,
+      "duration": 3.539,
+      "text": "now that it is ready let's run terraform"
+    },
+    {
+      "start": 498.36,
+      "duration": 4.26,
+      "text": "plan to see what is going to happen so"
+    },
+    {
+      "start": 500.099,
+      "duration": 5.22,
+      "text": "I'm going to run terraform plan and"
+    },
+    {
+      "start": 502.62,
+      "duration": 4.259,
+      "text": "it should tell us that this S3 bucket"
+    },
+    {
+      "start": 505.319,
+      "duration": 4.021,
+      "text": "and Dynamo deep table is going to be"
+    },
+    {
+      "start": 506.879,
+      "duration": 5.821,
+      "text": "created let's see it's refreshing and we"
+    },
+    {
+      "start": 509.34,
+      "duration": 4.74,
+      "text": "get uh we get the plan as 2 is going to"
+    },
+    {
+      "start": 512.7,
+      "duration": 4.98,
+      "text": "be added let's see what these two"
+    },
+    {
+      "start": 514.08,
+      "duration": 6.139,
+      "text": "resources are so one is S3 packet which"
+    },
+    {
+      "start": 517.68,
+      "duration": 4.859,
+      "text": "is what which is this and the second is"
+    },
+    {
+      "start": 520.219,
+      "duration": 5.081,
+      "text": "dynamodb table so I'm going to terraform"
+    },
+    {
+      "start": 522.539,
+      "duration": 6.141,
+      "text": "apply this and let's see uh this in the"
+    },
+    {
+      "start": 525.3,
+      "duration": 5.58,
+      "text": "console so terraform Auto hyphen approve"
+    },
+    {
+      "start": 528.68,
+      "duration": 3.94,
+      "text": "editing so you can see it's in creating"
+    },
+    {
+      "start": 530.88,
+      "duration": 4.8,
+      "text": "state right now and the bucket is ready"
+    },
+    {
+      "start": 532.62,
+      "duration": 4.92,
+      "text": "so let's see so now it is created if I"
+    },
+    {
+      "start": 535.68,
+      "duration": 4.62,
+      "text": "refresh I should see that the bucket"
+    },
+    {
+      "start": 537.54,
+      "duration": 5.58,
+      "text": "State lock is active which is okay so we"
+    },
+    {
+      "start": 540.3,
+      "duration": 6.599,
+      "text": "have the dynamodp table and I believe we"
+    },
+    {
+      "start": 543.12,
+      "duration": 6.24,
+      "text": "also have the S3 bucket as well so S3 we"
+    },
+    {
+      "start": 546.899,
+      "duration": 4.5,
+      "text": "also have the S3 bucket which is here so"
+    },
+    {
+      "start": 549.36,
+      "duration": 4.56,
+      "text": "now we are okay and we can now make the"
+    },
+    {
+      "start": 551.399,
+      "duration": 4.5,
+      "text": "configurations in the terraform block"
+    },
+    {
+      "start": 553.92,
+      "duration": 3.479,
+      "text": "present here in terraform in the"
+    },
+    {
+      "start": 555.899,
+      "duration": 3.301,
+      "text": "provider.tf so this is the terraform"
+    },
+    {
+      "start": 557.399,
+      "duration": 3.841,
+      "text": "block where you have to make the change"
+    },
+    {
+      "start": 559.2,
+      "duration": 4.259,
+      "text": "you have to define a block named as"
+    },
+    {
+      "start": 561.24,
+      "duration": 4.2,
+      "text": "backend so I'm going to"
+    },
+    {
+      "start": 563.459,
+      "duration": 4.081,
+      "text": "I'm going to make the configurations"
+    },
+    {
+      "start": 565.44,
+      "duration": 4.079,
+      "text": "here back end we are going to use the"
+    },
+    {
+      "start": 567.54,
+      "duration": 4.62,
+      "text": "backend as S3 so I have entered that"
+    },
+    {
+      "start": 569.519,
+      "duration": 4.681,
+      "text": "here so S3 Kit which we have entered"
+    },
+    {
+      "start": 572.16,
+      "duration": 4.859,
+      "text": "here next is dynamodb table we need to"
+    },
+    {
+      "start": 574.2,
+      "duration": 4.86,
+      "text": "add the details about dynamodb table so"
+    },
+    {
+      "start": 577.019,
+      "duration": 4.021,
+      "text": "dynamodb underscore"
+    },
+    {
+      "start": 579.06,
+      "duration": 3.66,
+      "text": "table equals to the name of the table"
+    },
+    {
+      "start": 581.04,
+      "duration": 4.14,
+      "text": "which is"
+    },
+    {
+      "start": 582.72,
+      "duration": 6.119,
+      "text": "which is"
+    },
+    {
+      "start": 585.18,
+      "duration": 6.54,
+      "text": "State hyphen lock so I can use this I'm"
+    },
+    {
+      "start": 588.839,
+      "duration": 5.701,
+      "text": "going to copy it and paste it inside my"
+    },
+    {
+      "start": 591.72,
+      "duration": 5.58,
+      "text": "dynamodb table once we do that bucket"
+    },
+    {
+      "start": 594.54,
+      "duration": 4.919,
+      "text": "dynamodb table key key is going to be"
+    },
+    {
+      "start": 597.3,
+      "duration": 4.68,
+      "text": "the path where you want to store your"
+    },
+    {
+      "start": 599.459,
+      "duration": 5.761,
+      "text": "state file so inside S3 what part do you"
+    },
+    {
+      "start": 601.98,
+      "duration": 6.78,
+      "text": "want to store so I'm going to put global"
+    },
+    {
+      "start": 605.22,
+      "duration": 6.9,
+      "text": "uh Slash my state"
+    },
+    {
+      "start": 608.76,
+      "duration": 5.16,
+      "text": "my state file slash terraform"
+    },
+    {
+      "start": 612.12,
+      "duration": 5.339,
+      "text": "Dot"
+    },
+    {
+      "start": 613.92,
+      "duration": 5.88,
+      "text": "TF state so by key I mean I want to"
+    },
+    {
+      "start": 617.459,
+      "duration": 4.681,
+      "text": "store my state file terraform State file"
+    },
+    {
+      "start": 619.8,
+      "duration": 5.64,
+      "text": "in this path inside Global inside my"
+    },
+    {
+      "start": 622.14,
+      "duration": 5.4,
+      "text": "state file inside terraform.tf state so"
+    },
+    {
+      "start": 625.44,
+      "duration": 3.839,
+      "text": "we have bucket we have dynamodp table we"
+    },
+    {
+      "start": 627.54,
+      "duration": 3.54,
+      "text": "have key I'm going to add a reason we"
+    },
+    {
+      "start": 629.279,
+      "duration": 5.101,
+      "text": "need to add a region as well so region"
+    },
+    {
+      "start": 631.08,
+      "duration": 6.0,
+      "text": "is going to be us Dash East dash one you"
+    },
+    {
+      "start": 634.38,
+      "duration": 5.36,
+      "text": "can use your own region region then we"
+    },
+    {
+      "start": 637.08,
+      "duration": 6.72,
+      "text": "need to also have encrypt so encrypt"
+    },
+    {
+      "start": 639.74,
+      "duration": 6.4,
+      "text": "equals to true and we can save this now"
+    },
+    {
+      "start": 643.8,
+      "duration": 5.46,
+      "text": "we are ready to store our state"
+    },
+    {
+      "start": 646.14,
+      "duration": 6.0,
+      "text": "terraform state from a local machine to"
+    },
+    {
+      "start": 649.26,
+      "duration": 4.38,
+      "text": "the S3 bucket that we created here so"
+    },
+    {
+      "start": 652.14,
+      "duration": 3.48,
+      "text": "right now"
+    },
+    {
+      "start": 653.64,
+      "duration": 3.24,
+      "text": "I have added the back end first I'm"
+    },
+    {
+      "start": 655.62,
+      "duration": 2.7,
+      "text": "going to return from validate to see"
+    },
+    {
+      "start": 656.88,
+      "duration": 3.3,
+      "text": "everything is correct or not so"
+    },
+    {
+      "start": 658.32,
+      "duration": 4.56,
+      "text": "terraform validate to see that syntax is"
+    },
+    {
+      "start": 660.18,
+      "duration": 6.779,
+      "text": "correct and I got everything is correct"
+    },
+    {
+      "start": 662.88,
+      "duration": 7.079,
+      "text": "clear here and terraform in it"
+    },
+    {
+      "start": 666.959,
+      "duration": 5.041,
+      "text": "to now store this on S3 so if I show you"
+    },
+    {
+      "start": 669.959,
+      "duration": 3.961,
+      "text": "in this in this state bucket S3 State"
+    },
+    {
+      "start": 672.0,
+      "duration": 3.899,
+      "text": "bucket backend I don't have anything"
+    },
+    {
+      "start": 673.92,
+      "duration": 3.9,
+      "text": "right now so I'm going to run terraform"
+    },
+    {
+      "start": 675.899,
+      "duration": 4.141,
+      "text": "a plan first to see what is going to"
+    },
+    {
+      "start": 677.82,
+      "duration": 4.139,
+      "text": "happen so terraform plan says that"
+    },
+    {
+      "start": 680.04,
+      "duration": 4.14,
+      "text": "there's a change in the back end uh"
+    },
+    {
+      "start": 681.959,
+      "duration": 4.921,
+      "text": "configuration if you want to you have"
+    },
+    {
+      "start": 684.18,
+      "duration": 4.02,
+      "text": "requested to use the S3 as a backend so"
+    },
+    {
+      "start": 686.88,
+      "duration": 2.399,
+      "text": "if you want to do that run there are"
+    },
+    {
+      "start": 688.2,
+      "duration": 3.6,
+      "text": "some init commands I'm internet"
+    },
+    {
+      "start": 689.279,
+      "duration": 4.261,
+      "text": "terraform in it so terraform init"
+    },
+    {
+      "start": 691.8,
+      "duration": 3.12,
+      "text": "initializing the back end and it will"
+    },
+    {
+      "start": 693.54,
+      "duration": 3.419,
+      "text": "ask your message if you want to store"
+    },
+    {
+      "start": 694.92,
+      "duration": 4.8,
+      "text": "all your state file from your local to"
+    },
+    {
+      "start": 696.959,
+      "duration": 4.861,
+      "text": "S3 so let's see acquiring the state lock"
+    },
+    {
+      "start": 699.72,
+      "duration": 3.84,
+      "text": "this may take minute so it says do you"
+    },
+    {
+      "start": 701.82,
+      "duration": 3.72,
+      "text": "want to copy the existing state file to"
+    },
+    {
+      "start": 703.56,
+      "duration": 4.14,
+      "text": "the new backend which is S3 so if you"
+    },
+    {
+      "start": 705.54,
+      "duration": 3.84,
+      "text": "want to do that level dot IPS and I work"
+    },
+    {
+      "start": 707.7,
+      "duration": 4.68,
+      "text": "emulate IPS so everything that is stored"
+    },
+    {
+      "start": 709.38,
+      "duration": 5.34,
+      "text": "here is going to be copied from here to"
+    },
+    {
+      "start": 712.38,
+      "duration": 5.24,
+      "text": "S3 bucket so I'm going to type yes and"
+    },
+    {
+      "start": 714.72,
+      "duration": 2.9,
+      "text": "let's see what happens"
+    },
+    {
+      "start": 720.12,
+      "duration": 5.76,
+      "text": "so now it is doing the process it says"
+    },
+    {
+      "start": 723.6,
+      "duration": 4.38,
+      "text": "successfully configured backend as S3"
+    },
+    {
+      "start": 725.88,
+      "duration": 5.16,
+      "text": "terraform will automatically use this"
+    },
+    {
+      "start": 727.98,
+      "duration": 5.28,
+      "text": "packets if you so this has this has done"
+    },
+    {
+      "start": 731.04,
+      "duration": 4.799,
+      "text": "the thing we can see if I refresh your"
+    },
+    {
+      "start": 733.26,
+      "duration": 4.139,
+      "text": "own I can see that if there's a path"
+    },
+    {
+      "start": 735.839,
+      "duration": 5.761,
+      "text": "global"
+    },
+    {
+      "start": 737.399,
+      "duration": 6.861,
+      "text": "my state file and the terraform.th state"
+    },
+    {
+      "start": 741.6,
+      "duration": 5.28,
+      "text": "which is what we have described in our"
+    },
+    {
+      "start": 744.26,
+      "duration": 4.48,
+      "text": "provider.tf in the key path"
+    },
+    {
+      "start": 746.88,
+      "duration": 3.78,
+      "text": "if you have the same configuration as me"
+    },
+    {
+      "start": 748.74,
+      "duration": 3.719,
+      "text": "please like this video and let's"
+    },
+    {
+      "start": 750.66,
+      "duration": 3.9,
+      "text": "continue so if you see here the data"
+    },
+    {
+      "start": 752.459,
+      "duration": 3.841,
+      "text": "from TF state is completely empty which"
+    },
+    {
+      "start": 754.56,
+      "duration": 4.44,
+      "text": "means everything is migrated from here"
+    },
+    {
+      "start": 756.3,
+      "duration": 5.099,
+      "text": "to S3 bucket and if I open this file and"
+    },
+    {
+      "start": 759.0,
+      "duration": 4.32,
+      "text": "I click on open here"
+    },
+    {
+      "start": 761.399,
+      "duration": 3.18,
+      "text": "you should see that everything is"
+    },
+    {
+      "start": 763.32,
+      "duration": 4.98,
+      "text": "present here which means we have"
+    },
+    {
+      "start": 764.579,
+      "duration": 5.461,
+      "text": "successfully initiated our backend as S3"
+    },
+    {
+      "start": 768.3,
+      "duration": 5.039,
+      "text": "let's try this out let's make a change"
+    },
+    {
+      "start": 770.04,
+      "duration": 5.88,
+      "text": "I'm going to make a change here in my"
+    },
+    {
+      "start": 773.339,
+      "duration": 5.341,
+      "text": "so I have I have"
+    },
+    {
+      "start": 775.92,
+      "duration": 6.0,
+      "text": "I have a AWS instance created I'm going"
+    },
+    {
+      "start": 778.68,
+      "duration": 6.779,
+      "text": "to make a change that this is"
+    },
+    {
+      "start": 781.92,
+      "duration": 5.28,
+      "text": "my new terraform instance hello S3"
+    },
+    {
+      "start": 785.459,
+      "duration": 4.68,
+      "text": "backend"
+    },
+    {
+      "start": 787.2,
+      "duration": 5.22,
+      "text": "something like this so if I"
+    },
+    {
+      "start": 790.139,
+      "duration": 4.621,
+      "text": "apply a tariff first let's do terraform"
+    },
+    {
+      "start": 792.42,
+      "duration": 5.28,
+      "text": "plan it should show me that I'm doing a"
+    },
+    {
+      "start": 794.76,
+      "duration": 4.44,
+      "text": "modification in S3 in AWS instance it"
+    },
+    {
+      "start": 797.7,
+      "duration": 4.86,
+      "text": "should show that one is to be modified"
+    },
+    {
+      "start": 799.2,
+      "duration": 5.699,
+      "text": "and one is to be changed let's see"
+    },
+    {
+      "start": 802.56,
+      "duration": 4.56,
+      "text": "so there is acquiring state law it is"
+    },
+    {
+      "start": 804.899,
+      "duration": 4.201,
+      "text": "refreshing everything from the S3 bucket"
+    },
+    {
+      "start": 807.12,
+      "duration": 3.659,
+      "text": "backend it is not using our local"
+    },
+    {
+      "start": 809.1,
+      "duration": 5.1,
+      "text": "backend which is amazing so we have"
+    },
+    {
+      "start": 810.779,
+      "duration": 5.041,
+      "text": "successfully initiated our S3 backend uh"
+    },
+    {
+      "start": 814.2,
+      "duration": 4.68,
+      "text": "so it's refreshing everything and it's"
+    },
+    {
+      "start": 815.82,
+      "duration": 4.74,
+      "text": "going to show us that one thing is going"
+    },
+    {
+      "start": 818.88,
+      "duration": 2.759,
+      "text": "to be modified so you can see one thing"
+    },
+    {
+      "start": 820.56,
+      "duration": 2.64,
+      "text": "is going to be changed if I run"
+    },
+    {
+      "start": 821.639,
+      "duration": 3.481,
+      "text": "terraform apply hyphen Auto hyphen"
+    },
+    {
+      "start": 823.2,
+      "duration": 3.96,
+      "text": "approve it's going to do the same thing"
+    },
+    {
+      "start": 825.12,
+      "duration": 4.14,
+      "text": "and we can see the change here in our"
+    },
+    {
+      "start": 827.16,
+      "duration": 4.679,
+      "text": "state file as well so this state file"
+    },
+    {
+      "start": 829.26,
+      "duration": 4.5,
+      "text": "has a lot of features it has bucket"
+    },
+    {
+      "start": 831.839,
+      "duration": 4.56,
+      "text": "versioning enabled as well it has"
+    },
+    {
+      "start": 833.76,
+      "duration": 4.379,
+      "text": "encryption enabled as well so you can do"
+    },
+    {
+      "start": 836.399,
+      "duration": 3.901,
+      "text": "that only when you use remote backends"
+    },
+    {
+      "start": 838.139,
+      "duration": 4.921,
+      "text": "like S3 you cannot do it in your local"
+    },
+    {
+      "start": 840.3,
+      "duration": 5.94,
+      "text": "backend that is why recommended to use"
+    },
+    {
+      "start": 843.06,
+      "duration": 5.76,
+      "text": "backends like S3 and Azure blob storage"
+    },
+    {
+      "start": 846.24,
+      "duration": 4.26,
+      "text": "and Cloud pool Cloud Etc"
+    },
+    {
+      "start": 848.82,
+      "duration": 3.3,
+      "text": "so you can see the modification has been"
+    },
+    {
+      "start": 850.5,
+      "duration": 4.2,
+      "text": "completed"
+    },
+    {
+      "start": 852.12,
+      "duration": 3.719,
+      "text": "and if I go here and just run"
+    },
+    {
+      "start": 854.7,
+      "duration": 4.259,
+      "text": "uh"
+    },
+    {
+      "start": 855.839,
+      "duration": 5.401,
+      "text": "S3 back end"
+    },
+    {
+      "start": 858.959,
+      "duration": 6.06,
+      "text": "once I refresh this obviously after I"
+    },
+    {
+      "start": 861.24,
+      "duration": 5.7,
+      "text": "refresh and I search for S3 back end I"
+    },
+    {
+      "start": 865.019,
+      "duration": 4.021,
+      "text": "can see this is a change made and it is"
+    },
+    {
+      "start": 866.94,
+      "duration": 4.68,
+      "text": "recorded in the state file present in my"
+    },
+    {
+      "start": 869.04,
+      "duration": 4.08,
+      "text": "S3 bucket so this is how you do it if"
+    },
+    {
+      "start": 871.62,
+      "duration": 3.24,
+      "text": "you want to go back to your local file"
+    },
+    {
+      "start": 873.12,
+      "duration": 4.019,
+      "text": "you just need to go here in the"
+    },
+    {
+      "start": 874.86,
+      "duration": 3.779,
+      "text": "provider.tf either delete this or"
+    },
+    {
+      "start": 877.139,
+      "duration": 3.06,
+      "text": "comment this out so I'm going to comment"
+    },
+    {
+      "start": 878.639,
+      "duration": 4.021,
+      "text": "this out if I enter up on plan it's"
+    },
+    {
+      "start": 880.199,
+      "duration": 5.94,
+      "text": "going to show me that you have chose to"
+    },
+    {
+      "start": 882.66,
+      "duration": 7.94,
+      "text": "use a different backend not using S3 so"
+    },
+    {
+      "start": 886.139,
+      "duration": 4.461,
+      "text": "I'm going to run terraform in it"
+    },
+    {
+      "start": 890.88,
+      "duration": 3.36,
+      "text": "and if it is going to ask me if I want"
+    },
+    {
+      "start": 892.8,
+      "duration": 3.24,
+      "text": "to migrate the state I'm going to I want"
+    },
+    {
+      "start": 894.24,
+      "duration": 4.08,
+      "text": "to enter a minute hyphen migrate hyphen"
+    },
+    {
+      "start": 896.04,
+      "duration": 4.32,
+      "text": "state so I'm going to run that and this"
+    },
+    {
+      "start": 898.32,
+      "duration": 4.259,
+      "text": "will"
+    },
+    {
+      "start": 900.36,
+      "duration": 3.839,
+      "text": "this will push all the state file all"
+    },
+    {
+      "start": 902.579,
+      "duration": 4.021,
+      "text": "the state configurations or all"
+    },
+    {
+      "start": 904.199,
+      "duration": 4.981,
+      "text": "everything that wants there uh to pack"
+    },
+    {
+      "start": 906.6,
+      "duration": 4.38,
+      "text": "in our in my local machine"
+    },
+    {
+      "start": 909.18,
+      "duration": 4.32,
+      "text": "this is how you create S3 bucket"
+    },
+    {
+      "start": 910.98,
+      "duration": 4.859,
+      "text": "dynamodb table to store your terraform"
+    },
+    {
+      "start": 913.5,
+      "duration": 4.98,
+      "text": "State file from your local machine to"
+    },
+    {
+      "start": 915.839,
+      "duration": 4.8,
+      "text": "the state machine to the remote machine"
+    },
+    {
+      "start": 918.48,
+      "duration": 3.96,
+      "text": "so now you can see everything is there"
+    },
+    {
+      "start": 920.639,
+      "duration": 3.661,
+      "text": "in my local machine this is how you do"
+    },
+    {
+      "start": 922.44,
+      "duration": 4.38,
+      "text": "it if you if you understood the video"
+    },
+    {
+      "start": 924.3,
+      "duration": 4.74,
+      "text": "please like this video subscribe to my"
+    },
+    {
+      "start": 926.82,
+      "duration": 4.139,
+      "text": "channel and see you in the next video"
+    },
+    {
+      "start": 929.04,
+      "duration": 4.88,
+      "text": "thank you have a good day"
+    },
+    {
+      "start": 930.959,
+      "duration": 2.961,
+      "text": "thank you"
+    }
+  ]
+}

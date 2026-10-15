@@ -1,0 +1,2156 @@
+{
+  "video": {
+    "id": "dHXgg9fbP8E",
+    "title": "How I passed the Certified Kubernetes Administrator (CKA) Exam in 2025 [Must Watch!]",
+    "url": "https://www.youtube.com/watch?v=dHXgg9fbP8E",
+    "duration": 888,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.48,
+      "duration": 4.16,
+      "text": "I passed the CK exam and in this video"
+    },
+    {
+      "start": 3.04,
+      "duration": 4.08,
+      "text": "I'm going to share with you my"
+    },
+    {
+      "start": 4.64,
+      "duration": 4.24,
+      "text": "experience on how I passed the exam what"
+    },
+    {
+      "start": 7.12,
+      "duration": 3.32,
+      "text": "resources I used to prepare some"
+    },
+    {
+      "start": 8.88,
+      "duration": 3.879,
+      "text": "important tips and tricks to help you"
+    },
+    {
+      "start": 10.44,
+      "duration": 4.56,
+      "text": "pass your exam and also discuss the"
+    },
+    {
+      "start": 12.759,
+      "duration": 5.161,
+      "text": "topics on which I got questions in the"
+    },
+    {
+      "start": 15.0,
+      "duration": 4.92,
+      "text": "real cka exam this video is going to be"
+    },
+    {
+      "start": 17.92,
+      "duration": 4.56,
+      "text": "super informative so make sure you watch"
+    },
+    {
+      "start": 19.92,
+      "duration": 4.48,
+      "text": "this video till the end also please like"
+    },
+    {
+      "start": 22.48,
+      "duration": 4.119,
+      "text": "this video subscribe to cloud shamp and"
+    },
+    {
+      "start": 24.4,
+      "duration": 3.76,
+      "text": "let's start so I'm here on my computer"
+    },
+    {
+      "start": 26.599,
+      "duration": 3.84,
+      "text": "screen and I have a very nice"
+    },
+    {
+      "start": 28.16,
+      "duration": 3.84,
+      "text": "documentation created which in includes"
+    },
+    {
+      "start": 30.439,
+      "duration": 3.681,
+      "text": "all the important links for the"
+    },
+    {
+      "start": 32.0,
+      "duration": 3.879,
+      "text": "resources I used the important topics"
+    },
+    {
+      "start": 34.12,
+      "duration": 4.72,
+      "text": "that you should know and lot more that"
+    },
+    {
+      "start": 35.879,
+      "duration": 4.041,
+      "text": "will help you prepare for your cka exam"
+    },
+    {
+      "start": 38.84,
+      "duration": 3.0,
+      "text": "and if you want me to share this"
+    },
+    {
+      "start": 39.92,
+      "duration": 3.56,
+      "text": "document do let me know in the comment"
+    },
+    {
+      "start": 41.84,
+      "duration": 3.48,
+      "text": "section so let's begin with"
+    },
+    {
+      "start": 43.48,
+      "duration": 4.16,
+      "text": "understanding what is cka or certified"
+    },
+    {
+      "start": 45.32,
+      "duration": 4.28,
+      "text": "kubernetes administrator exam or what"
+    },
+    {
+      "start": 47.64,
+      "duration": 4.2,
+      "text": "things you should know before setting"
+    },
+    {
+      "start": 49.6,
+      "duration": 4.04,
+      "text": "for the exam so I have a certification"
+    },
+    {
+      "start": 51.84,
+      "duration": 3.8,
+      "text": "page attached here which has all the"
+    },
+    {
+      "start": 53.64,
+      "duration": 3.52,
+      "text": "information you will require to know"
+    },
+    {
+      "start": 55.64,
+      "duration": 2.84,
+      "text": "before sitting for the exam and you can"
+    },
+    {
+      "start": 57.16,
+      "duration": 2.919,
+      "text": "go ahead and read about it if you want"
+    },
+    {
+      "start": 58.48,
+      "duration": 4.16,
+      "text": "to but there are few things I want want"
+    },
+    {
+      "start": 60.079,
+      "duration": 3.961,
+      "text": "to point out the first is the price of"
+    },
+    {
+      "start": 62.64,
+      "duration": 3.68,
+      "text": "the exam is"
+    },
+    {
+      "start": 64.04,
+      "duration": 3.719,
+      "text": "$395 but there are always discounts"
+    },
+    {
+      "start": 66.32,
+      "duration": 3.799,
+      "text": "which can help you get this exam for a"
+    },
+    {
+      "start": 67.759,
+      "duration": 5.0,
+      "text": "lower price I bought the cka and the"
+    },
+    {
+      "start": 70.119,
+      "duration": 4.68,
+      "text": "ckad bundle for about $400 something"
+    },
+    {
+      "start": 72.759,
+      "duration": 3.801,
+      "text": "dollar in the discount so you can always"
+    },
+    {
+      "start": 74.799,
+      "duration": 4.0,
+      "text": "check for that second thing I want to"
+    },
+    {
+      "start": 76.56,
+      "duration": 4.68,
+      "text": "point out is the domains this exam will"
+    },
+    {
+      "start": 78.799,
+      "duration": 4.441,
+      "text": "have questions on all this like storage"
+    },
+    {
+      "start": 81.24,
+      "duration": 3.68,
+      "text": "troubleshooting workload scheduling"
+    },
+    {
+      "start": 83.24,
+      "duration": 3.48,
+      "text": "cluster architecture and all this make"
+    },
+    {
+      "start": 84.92,
+      "duration": 3.839,
+      "text": "sure you go through these topics very"
+    },
+    {
+      "start": 86.72,
+      "duration": 3.84,
+      "text": "thoroughly so that you understand what"
+    },
+    {
+      "start": 88.759,
+      "duration": 5.121,
+      "text": "questions you can expect in the real"
+    },
+    {
+      "start": 90.56,
+      "duration": 5.28,
+      "text": "exam the cka exam is an online proctored"
+    },
+    {
+      "start": 93.88,
+      "duration": 4.199,
+      "text": "web browser based exam where you need to"
+    },
+    {
+      "start": 95.84,
+      "duration": 4.2,
+      "text": "install the PSI browser and somewhere is"
+    },
+    {
+      "start": 98.079,
+      "duration": 3.801,
+      "text": "going to watch you throughout the exam"
+    },
+    {
+      "start": 100.04,
+      "duration": 3.68,
+      "text": "in the exam you given around 17"
+    },
+    {
+      "start": 101.88,
+      "duration": 4.599,
+      "text": "questions that you need to solve in 2"
+    },
+    {
+      "start": 103.72,
+      "duration": 4.24,
+      "text": "hours which is 120 minutes and to solve"
+    },
+    {
+      "start": 106.479,
+      "duration": 4.041,
+      "text": "these questions you're also given access"
+    },
+    {
+      "start": 107.96,
+      "duration": 3.96,
+      "text": "to the official kubernetes documentation"
+    },
+    {
+      "start": 110.52,
+      "duration": 3.639,
+      "text": "so you can use and refer this"
+    },
+    {
+      "start": 111.92,
+      "duration": 4.239,
+      "text": "documentation to find answers which is"
+    },
+    {
+      "start": 114.159,
+      "duration": 3.761,
+      "text": "very very helpful the kubernetes version"
+    },
+    {
+      "start": 116.159,
+      "duration": 4.441,
+      "text": "used in the exam is going to be version"
+    },
+    {
+      "start": 117.92,
+      "duration": 4.28,
+      "text": "1.28 and you are given two attempts for"
+    },
+    {
+      "start": 120.6,
+      "duration": 3.479,
+      "text": "this exam so even if you fail the exam"
+    },
+    {
+      "start": 122.2,
+      "duration": 4.36,
+      "text": "in the first attempt you can try again"
+    },
+    {
+      "start": 124.079,
+      "duration": 4.121,
+      "text": "in the second attempt and pass the exam"
+    },
+    {
+      "start": 126.56,
+      "duration": 3.44,
+      "text": "in the exam we will get around 17"
+    },
+    {
+      "start": 128.2,
+      "duration": 3.6,
+      "text": "questions to solve in 120 minutes and"
+    },
+    {
+      "start": 130.0,
+      "duration": 3.28,
+      "text": "these questions are not McQ but scenario"
+    },
+    {
+      "start": 131.8,
+      "duration": 3.159,
+      "text": "based questions where you are asked to"
+    },
+    {
+      "start": 133.28,
+      "duration": 4.239,
+      "text": "complete a task which can be upgrading"
+    },
+    {
+      "start": 134.959,
+      "duration": 5.041,
+      "text": "cluster or taking backup or finding CPU"
+    },
+    {
+      "start": 137.519,
+      "duration": 4.241,
+      "text": "memory anything then next important"
+    },
+    {
+      "start": 140.0,
+      "duration": 4.04,
+      "text": "update to know is questions don't have"
+    },
+    {
+      "start": 141.76,
+      "duration": 4.199,
+      "text": "weightage anymore earlier CK exam"
+    },
+    {
+      "start": 144.04,
+      "duration": 3.76,
+      "text": "questions had weightage which explains"
+    },
+    {
+      "start": 145.959,
+      "duration": 3.521,
+      "text": "how important the question is but now"
+    },
+    {
+      "start": 147.8,
+      "duration": 3.56,
+      "text": "they don't have weightage anymore so you"
+    },
+    {
+      "start": 149.48,
+      "duration": 3.68,
+      "text": "need to understand and prioritize based"
+    },
+    {
+      "start": 151.36,
+      "duration": 4.08,
+      "text": "on the question asked you will not have"
+    },
+    {
+      "start": 153.16,
+      "duration": 5.04,
+      "text": "weightage anymore you get two retakes"
+    },
+    {
+      "start": 155.44,
+      "duration": 4.439,
+      "text": "and the passing score is 66% I failed my"
+    },
+    {
+      "start": 158.2,
+      "duration": 4.0,
+      "text": "exam in the first attempt I got around"
+    },
+    {
+      "start": 159.879,
+      "duration": 5.601,
+      "text": "61% with the second attempt I passed the"
+    },
+    {
+      "start": 162.2,
+      "duration": 6.2,
+      "text": "exam where I got 89% so you get two"
+    },
+    {
+      "start": 165.48,
+      "duration": 4.8,
+      "text": "retakes and this is all about CK exam"
+    },
+    {
+      "start": 168.4,
+      "duration": 4.64,
+      "text": "now let's look at the resources I used"
+    },
+    {
+      "start": 170.28,
+      "duration": 4.84,
+      "text": "to prepare for my exam so the resources"
+    },
+    {
+      "start": 173.04,
+      "duration": 3.88,
+      "text": "I used to prepare for the cka exam"
+    },
+    {
+      "start": 175.12,
+      "duration": 4.44,
+      "text": "include kubernetes official"
+    },
+    {
+      "start": 176.92,
+      "duration": 5.399,
+      "text": "documentation the cka mock practice test"
+    },
+    {
+      "start": 179.56,
+      "duration": 4.36,
+      "text": "by code Cloud killer s practice test"
+    },
+    {
+      "start": 182.319,
+      "duration": 3.84,
+      "text": "that you get when you pay for the"
+    },
+    {
+      "start": 183.92,
+      "duration": 4.36,
+      "text": "certification and also the free killer"
+    },
+    {
+      "start": 186.159,
+      "duration": 4.36,
+      "text": "Koda scenarios that you get from this"
+    },
+    {
+      "start": 188.28,
+      "duration": 4.0,
+      "text": "website here as I already had experience"
+    },
+    {
+      "start": 190.519,
+      "duration": 3.8,
+      "text": "working with kubernetes I knew most of"
+    },
+    {
+      "start": 192.28,
+      "duration": 4.72,
+      "text": "the stuff and this is why I didn't took"
+    },
+    {
+      "start": 194.319,
+      "duration": 4.321,
+      "text": "any dedicated course for kubernetes"
+    },
+    {
+      "start": 197.0,
+      "duration": 3.48,
+      "text": "instead I started practicing with these"
+    },
+    {
+      "start": 198.64,
+      "duration": 3.879,
+      "text": "practice tests and I used to come back"
+    },
+    {
+      "start": 200.48,
+      "duration": 3.759,
+      "text": "and read about a certain topic if I'm"
+    },
+    {
+      "start": 202.519,
+      "duration": 3.521,
+      "text": "confused so let's say I had a doubt"
+    },
+    {
+      "start": 204.239,
+      "duration": 3.521,
+      "text": "about tains and Toleration I used to go"
+    },
+    {
+      "start": 206.04,
+      "duration": 3.52,
+      "text": "and read on the kubernetes official"
+    },
+    {
+      "start": 207.76,
+      "duration": 3.679,
+      "text": "documentation but if you're someone who"
+    },
+    {
+      "start": 209.56,
+      "duration": 3.759,
+      "text": "is very new to kubernetes I would"
+    },
+    {
+      "start": 211.439,
+      "duration": 4.401,
+      "text": "obviously recommend you doing a"
+    },
+    {
+      "start": 213.319,
+      "duration": 5.56,
+      "text": "dedicated course I recommend doing the"
+    },
+    {
+      "start": 215.84,
+      "duration": 4.84,
+      "text": "kubernetes course by mumshad manabat on"
+    },
+    {
+      "start": 218.879,
+      "duration": 4.041,
+      "text": "on Udi or you can also do it from his"
+    },
+    {
+      "start": 220.68,
+      "duration": 3.479,
+      "text": "own platform which is code Cloud but if"
+    },
+    {
+      "start": 222.92,
+      "duration": 3.039,
+      "text": "you already have experience and you want"
+    },
+    {
+      "start": 224.159,
+      "duration": 3.64,
+      "text": "to save time you can directly jump on"
+    },
+    {
+      "start": 225.959,
+      "duration": 3.441,
+      "text": "the practice test and start reading"
+    },
+    {
+      "start": 227.799,
+      "duration": 3.761,
+      "text": "things on the cooperates official"
+    },
+    {
+      "start": 229.4,
+      "duration": 4.679,
+      "text": "documentation for me it took around 20"
+    },
+    {
+      "start": 231.56,
+      "duration": 4.28,
+      "text": "to 25 days because I was also working"
+    },
+    {
+      "start": 234.079,
+      "duration": 3.921,
+      "text": "and preparing at the same time so it"
+    },
+    {
+      "start": 235.84,
+      "duration": 4.52,
+      "text": "took me around 20 to 25 days for this"
+    },
+    {
+      "start": 238.0,
+      "duration": 5.0,
+      "text": "exam preparation but if you're new you"
+    },
+    {
+      "start": 240.36,
+      "duration": 4.599,
+      "text": "might take around 2 to 3 months which"
+    },
+    {
+      "start": 243.0,
+      "duration": 3.84,
+      "text": "depends now let me give you some"
+    },
+    {
+      "start": 244.959,
+      "duration": 4.28,
+      "text": "important tips that will help you save"
+    },
+    {
+      "start": 246.84,
+      "duration": 4.56,
+      "text": "so much time in the exam and also help"
+    },
+    {
+      "start": 249.239,
+      "duration": 4.241,
+      "text": "you from failing the exam and I know"
+    },
+    {
+      "start": 251.4,
+      "duration": 4.44,
+      "text": "this because I already failed once so"
+    },
+    {
+      "start": 253.48,
+      "duration": 4.479,
+      "text": "the first step is practice practice"
+    },
+    {
+      "start": 255.84,
+      "duration": 4.359,
+      "text": "practice there is no other way apart"
+    },
+    {
+      "start": 257.959,
+      "duration": 4.841,
+      "text": "from practicing that will help you pass"
+    },
+    {
+      "start": 260.199,
+      "duration": 4.801,
+      "text": "this exam as this exam is not McQ you"
+    },
+    {
+      "start": 262.8,
+      "duration": 4.399,
+      "text": "don't have to memorize stuff the only"
+    },
+    {
+      "start": 265.0,
+      "duration": 3.72,
+      "text": "way to pass is by practicing and you can"
+    },
+    {
+      "start": 267.199,
+      "duration": 3.761,
+      "text": "practice by using the killer Koda"
+    },
+    {
+      "start": 268.72,
+      "duration": 4.319,
+      "text": "scenarios which is to free you also get"
+    },
+    {
+      "start": 270.96,
+      "duration": 3.76,
+      "text": "two sets of killer asset practice test"
+    },
+    {
+      "start": 273.039,
+      "duration": 3.521,
+      "text": "when you pay for the exam and if you"
+    },
+    {
+      "start": 274.72,
+      "duration": 4.36,
+      "text": "want to practice more you can also buy"
+    },
+    {
+      "start": 276.56,
+      "duration": 4.24,
+      "text": "the cka practice test by code Cloud"
+    },
+    {
+      "start": 279.08,
+      "duration": 3.8,
+      "text": "these practice tests are bit difficult"
+    },
+    {
+      "start": 280.8,
+      "duration": 4.16,
+      "text": "from the real exam but it will help you"
+    },
+    {
+      "start": 282.88,
+      "duration": 3.759,
+      "text": "prepare for the exam better so make sure"
+    },
+    {
+      "start": 284.96,
+      "duration": 3.799,
+      "text": "you practice thoroughly before setting"
+    },
+    {
+      "start": 286.639,
+      "duration": 4.521,
+      "text": "for the exam the second tip is to"
+    },
+    {
+      "start": 288.759,
+      "duration": 4.481,
+      "text": "familiarize yourself with documentation"
+    },
+    {
+      "start": 291.16,
+      "duration": 4.0,
+      "text": "as we already know the CK exam is an"
+    },
+    {
+      "start": 293.24,
+      "duration": 4.08,
+      "text": "open book exam where you get access to"
+    },
+    {
+      "start": 295.16,
+      "duration": 3.12,
+      "text": "the official documentation make sure"
+    },
+    {
+      "start": 297.32,
+      "duration": 3.04,
+      "text": "you're very familiar with the"
+    },
+    {
+      "start": 298.28,
+      "duration": 3.759,
+      "text": "documentation and you also know where to"
+    },
+    {
+      "start": 300.36,
+      "duration": 3.32,
+      "text": "find the answers let's say you have a"
+    },
+    {
+      "start": 302.039,
+      "duration": 4.081,
+      "text": "question where you're asked to create"
+    },
+    {
+      "start": 303.68,
+      "duration": 4.76,
+      "text": "persistent volume for a p then you need"
+    },
+    {
+      "start": 306.12,
+      "duration": 4.56,
+      "text": "to know that if I search for PV year I"
+    },
+    {
+      "start": 308.44,
+      "duration": 4.36,
+      "text": "will get list of documentations and I"
+    },
+    {
+      "start": 310.68,
+      "duration": 3.959,
+      "text": "need to check the right ones so if I"
+    },
+    {
+      "start": 312.8,
+      "duration": 4.399,
+      "text": "click on this this will give you the"
+    },
+    {
+      "start": 314.639,
+      "duration": 4.241,
+      "text": "Manifest file to create PV but to get"
+    },
+    {
+      "start": 317.199,
+      "duration": 3.401,
+      "text": "the actual manifest instead of clicking"
+    },
+    {
+      "start": 318.88,
+      "duration": 4.159,
+      "text": "on the first link I would say click on"
+    },
+    {
+      "start": 320.6,
+      "duration": 4.64,
+      "text": "the second link because this link has"
+    },
+    {
+      "start": 323.039,
+      "duration": 4.241,
+      "text": "persistent volume manifest along with"
+    },
+    {
+      "start": 325.24,
+      "duration": 4.28,
+      "text": "position volume claim manifest along"
+    },
+    {
+      "start": 327.28,
+      "duration": 4.039,
+      "text": "with how to attach it to your pod using"
+    },
+    {
+      "start": 329.52,
+      "duration": 3.239,
+      "text": "volume mounts so you need to be very"
+    },
+    {
+      "start": 331.319,
+      "duration": 3.241,
+      "text": "familiar with the documentation and you"
+    },
+    {
+      "start": 332.759,
+      "duration": 3.801,
+      "text": "need to understand which document will"
+    },
+    {
+      "start": 334.56,
+      "duration": 3.44,
+      "text": "help you find the right solution so make"
+    },
+    {
+      "start": 336.56,
+      "duration": 3.8,
+      "text": "sure you're familiar with the"
+    },
+    {
+      "start": 338.0,
+      "duration": 4.16,
+      "text": "documentation I have links attached here"
+    },
+    {
+      "start": 340.36,
+      "duration": 4.52,
+      "text": "and go through them thoroughly before"
+    },
+    {
+      "start": 342.16,
+      "duration": 5.36,
+      "text": "setting for your exam the next tip is to"
+    },
+    {
+      "start": 344.88,
+      "duration": 4.08,
+      "text": "be fast we know the exam contains 17"
+    },
+    {
+      "start": 347.52,
+      "duration": 3.6,
+      "text": "questions that you need to complete in"
+    },
+    {
+      "start": 348.96,
+      "duration": 4.28,
+      "text": "120 minutes which is not going to be"
+    },
+    {
+      "start": 351.12,
+      "duration": 4.799,
+      "text": "enough if you don't follow these tips"
+    },
+    {
+      "start": 353.24,
+      "duration": 4.399,
+      "text": "which is to use imperative commands you"
+    },
+    {
+      "start": 355.919,
+      "duration": 3.881,
+      "text": "should use imperative commands rather"
+    },
+    {
+      "start": 357.639,
+      "duration": 3.961,
+      "text": "than writing manifest files yourself or"
+    },
+    {
+      "start": 359.8,
+      "duration": 3.92,
+      "text": "from the documentation which will help"
+    },
+    {
+      "start": 361.6,
+      "duration": 4.08,
+      "text": "you save so much time for example the"
+    },
+    {
+      "start": 363.72,
+      "duration": 4.4,
+      "text": "question is to create a deployment using"
+    },
+    {
+      "start": 365.68,
+      "duration": 4.239,
+      "text": "engine X image having two replicas the"
+    },
+    {
+      "start": 368.12,
+      "duration": 3.68,
+      "text": "first way is to go in the documentation"
+    },
+    {
+      "start": 369.919,
+      "duration": 4.68,
+      "text": "search for deployment then search for"
+    },
+    {
+      "start": 371.8,
+      "duration": 4.88,
+      "text": "the Manifest file copy it edit it and"
+    },
+    {
+      "start": 374.599,
+      "duration": 3.761,
+      "text": "then you can apply uh to create the"
+    },
+    {
+      "start": 376.68,
+      "duration": 3.84,
+      "text": "deployment the second way is to use"
+    },
+    {
+      "start": 378.36,
+      "duration": 3.92,
+      "text": "imperative command which is CBE CDL"
+    },
+    {
+      "start": 380.52,
+      "duration": 3.56,
+      "text": "create to create a deployment let me"
+    },
+    {
+      "start": 382.28,
+      "duration": 6.0,
+      "text": "show you an example you can simply run"
+    },
+    {
+      "start": 384.08,
+      "duration": 5.959,
+      "text": "the command Cube CTL create deployment"
+    },
+    {
+      "start": 388.28,
+      "duration": 5.12,
+      "text": "name of the deployment my"
+    },
+    {
+      "start": 390.039,
+      "duration": 6.201,
+      "text": "deploy D- image which is going to be"
+    },
+    {
+      "start": 393.4,
+      "duration": 5.6,
+      "text": "enginex D-"
+    },
+    {
+      "start": 396.24,
+      "duration": 4.48,
+      "text": "replicas is going to be two and you can"
+    },
+    {
+      "start": 399.0,
+      "duration": 5.0,
+      "text": "see deployment is now created we can"
+    },
+    {
+      "start": 400.72,
+      "duration": 5.68,
+      "text": "confirm by running Cube CTL get"
+    },
+    {
+      "start": 404.0,
+      "duration": 5.08,
+      "text": "deployment now my deploy is ready having"
+    },
+    {
+      "start": 406.4,
+      "duration": 4.6,
+      "text": "two replicas created 11 seconds ago so"
+    },
+    {
+      "start": 409.08,
+      "duration": 3.88,
+      "text": "this is how you can save time rather"
+    },
+    {
+      "start": 411.0,
+      "duration": 3.84,
+      "text": "than writing manifest file yourself you"
+    },
+    {
+      "start": 412.96,
+      "duration": 3.12,
+      "text": "can use imperative command and and there"
+    },
+    {
+      "start": 414.84,
+      "duration": 2.479,
+      "text": "are different imperative commands which"
+    },
+    {
+      "start": 416.08,
+      "duration": 2.839,
+      "text": "I have discussed in this particular"
+    },
+    {
+      "start": 417.319,
+      "duration": 3.401,
+      "text": "video so I would highly recommend you"
+    },
+    {
+      "start": 418.919,
+      "duration": 4.28,
+      "text": "checking out this important kubernetes"
+    },
+    {
+      "start": 420.72,
+      "duration": 4.56,
+      "text": "Cube CTL commands before setting for the"
+    },
+    {
+      "start": 423.199,
+      "duration": 3.641,
+      "text": "exam which will help use so much time"
+    },
+    {
+      "start": 425.28,
+      "duration": 3.4,
+      "text": "you can also check out the commands from"
+    },
+    {
+      "start": 426.84,
+      "duration": 3.84,
+      "text": "this documentation here which has the"
+    },
+    {
+      "start": 428.68,
+      "duration": 4.12,
+      "text": "list of all the different commands so we"
+    },
+    {
+      "start": 430.68,
+      "duration": 3.68,
+      "text": "have run command to create a pod we have"
+    },
+    {
+      "start": 432.8,
+      "duration": 3.64,
+      "text": "create commands to create deployments"
+    },
+    {
+      "start": 434.36,
+      "duration": 4.44,
+      "text": "replica sets everything else using"
+    },
+    {
+      "start": 436.44,
+      "duration": 3.64,
+      "text": "imperative commands so the first tip is"
+    },
+    {
+      "start": 438.8,
+      "duration": 3.839,
+      "text": "to use imperative command which will"
+    },
+    {
+      "start": 440.08,
+      "duration": 4.0,
+      "text": "help you save time the second is to flag"
+    },
+    {
+      "start": 442.639,
+      "duration": 3.081,
+      "text": "difficult questions and solve them at"
+    },
+    {
+      "start": 444.08,
+      "duration": 3.72,
+      "text": "the last now we know that the questions"
+    },
+    {
+      "start": 445.72,
+      "duration": 4.319,
+      "text": "don't have weightage anymore we don't"
+    },
+    {
+      "start": 447.8,
+      "duration": 4.679,
+      "text": "know if the question is of 10 10 marks"
+    },
+    {
+      "start": 450.039,
+      "duration": 4.28,
+      "text": "or 15 marks or just two marks so you"
+    },
+    {
+      "start": 452.479,
+      "duration": 3.681,
+      "text": "need to read the question and understand"
+    },
+    {
+      "start": 454.319,
+      "duration": 3.521,
+      "text": "how much is the weightage and if it is"
+    },
+    {
+      "start": 456.16,
+      "duration": 3.56,
+      "text": "important and you still don't know how"
+    },
+    {
+      "start": 457.84,
+      "duration": 4.0,
+      "text": "to do it you can flag the question and"
+    },
+    {
+      "start": 459.72,
+      "duration": 3.84,
+      "text": "come back to it at the end of the exam"
+    },
+    {
+      "start": 461.84,
+      "duration": 3.68,
+      "text": "rather than wasting your time on that"
+    },
+    {
+      "start": 463.56,
+      "duration": 3.919,
+      "text": "because we just have 120 minutes so you"
+    },
+    {
+      "start": 465.52,
+      "duration": 4.0,
+      "text": "can always flag the difficult questions"
+    },
+    {
+      "start": 467.479,
+      "duration": 4.601,
+      "text": "that might take time and solve them at"
+    },
+    {
+      "start": 469.52,
+      "duration": 4.32,
+      "text": "the last next thing is to use CRF to"
+    },
+    {
+      "start": 472.08,
+      "duration": 3.48,
+      "text": "search through the documentation for"
+    },
+    {
+      "start": 473.84,
+      "duration": 3.0,
+      "text": "example you will be having a browser"
+    },
+    {
+      "start": 475.56,
+      "duration": 2.319,
+      "text": "something like this and you want to"
+    },
+    {
+      "start": 476.84,
+      "duration": 3.4,
+      "text": "search for something let's say you want"
+    },
+    {
+      "start": 477.879,
+      "duration": 4.241,
+      "text": "to search for uh kind so you can simply"
+    },
+    {
+      "start": 480.24,
+      "duration": 4.32,
+      "text": "search for kind here and you can see"
+    },
+    {
+      "start": 482.12,
+      "duration": 3.96,
+      "text": "that you have a search bar like this and"
+    },
+    {
+      "start": 484.56,
+      "duration": 3.319,
+      "text": "this browser is similar to what you will"
+    },
+    {
+      "start": 486.08,
+      "duration": 3.399,
+      "text": "see in the real browser as well so you"
+    },
+    {
+      "start": 487.879,
+      "duration": 3.681,
+      "text": "can use control F to search throughout"
+    },
+    {
+      "start": 489.479,
+      "duration": 4.041,
+      "text": "the documentation rather than scrolling"
+    },
+    {
+      "start": 491.56,
+      "duration": 5.8,
+      "text": "it and trying to find the Manifest files"
+    },
+    {
+      "start": 493.52,
+      "duration": 5.639,
+      "text": "yourself so use crlf Flack the questions"
+    },
+    {
+      "start": 497.36,
+      "duration": 3.76,
+      "text": "and use imperative command to save your"
+    },
+    {
+      "start": 499.159,
+      "duration": 4.241,
+      "text": "time apart from this you might have"
+    },
+    {
+      "start": 501.12,
+      "duration": 4.359,
+      "text": "heard or read about setting up a liis or"
+    },
+    {
+      "start": 503.4,
+      "duration": 4.199,
+      "text": "enabling autocomplete before you start"
+    },
+    {
+      "start": 505.479,
+      "duration": 3.321,
+      "text": "your exam but that's not required"
+    },
+    {
+      "start": 507.599,
+      "duration": 2.201,
+      "text": "because the environment is already"
+    },
+    {
+      "start": 508.8,
+      "duration": 4.2,
+      "text": "configured"
+    },
+    {
+      "start": 509.8,
+      "duration": 4.76,
+      "text": "with autocomplete enabled and aliis set"
+    },
+    {
+      "start": 513.0,
+      "duration": 3.56,
+      "text": "but if you want to have your own Allis"
+    },
+    {
+      "start": 514.56,
+      "duration": 3.599,
+      "text": "you can do it but I don't recommend that"
+    },
+    {
+      "start": 516.56,
+      "duration": 4.2,
+      "text": "and I haven't done it because that's not"
+    },
+    {
+      "start": 518.159,
+      "duration": 4.721,
+      "text": "actually required next tip is to copy"
+    },
+    {
+      "start": 520.76,
+      "duration": 3.96,
+      "text": "paste everything you can rather than"
+    },
+    {
+      "start": 522.88,
+      "duration": 3.079,
+      "text": "typing it yourself so let's say you have"
+    },
+    {
+      "start": 524.72,
+      "duration": 4.48,
+      "text": "a question where you're asked to create"
+    },
+    {
+      "start": 525.959,
+      "duration": 5.841,
+      "text": "a deployment named 757 something and you"
+    },
+    {
+      "start": 529.2,
+      "duration": 5.16,
+      "text": "asked to use the image engine X coolon"
+    },
+    {
+      "start": 531.8,
+      "duration": 4.12,
+      "text": "1.17 and you want to have three replicas"
+    },
+    {
+      "start": 534.36,
+      "duration": 3.84,
+      "text": "so rather than you typing the names of"
+    },
+    {
+      "start": 535.92,
+      "duration": 4.56,
+      "text": "the deployments or the images you should"
+    },
+    {
+      "start": 538.2,
+      "duration": 3.8,
+      "text": "be copying and pasting it similarly even"
+    },
+    {
+      "start": 540.48,
+      "duration": 3.64,
+      "text": "you are using manifest files from the"
+    },
+    {
+      "start": 542.0,
+      "duration": 4.68,
+      "text": "documentation you can simply copy and"
+    },
+    {
+      "start": 544.12,
+      "duration": 4.839,
+      "text": "paste which will help you save time also"
+    },
+    {
+      "start": 546.68,
+      "duration": 4.52,
+      "text": "save you from avoiding mistakes so make"
+    },
+    {
+      "start": 548.959,
+      "duration": 4.601,
+      "text": "sure to copy paste everywhere everything"
+    },
+    {
+      "start": 551.2,
+      "duration": 4.0,
+      "text": "you can the next tip is very important"
+    },
+    {
+      "start": 553.56,
+      "duration": 3.04,
+      "text": "which if I would have followed I would"
+    },
+    {
+      "start": 555.2,
+      "duration": 3.28,
+      "text": "have passed the exam in the first"
+    },
+    {
+      "start": 556.6,
+      "duration": 4.679,
+      "text": "attempt which is to read and understand"
+    },
+    {
+      "start": 558.48,
+      "duration": 5.08,
+      "text": "the questions before answering them the"
+    },
+    {
+      "start": 561.279,
+      "duration": 3.761,
+      "text": "questions in the real exam are tricky"
+    },
+    {
+      "start": 563.56,
+      "duration": 3.68,
+      "text": "you might be confused if the question is"
+    },
+    {
+      "start": 565.04,
+      "duration": 4.359,
+      "text": "asking you to do a single task or two"
+    },
+    {
+      "start": 567.24,
+      "duration": 4.0,
+      "text": "task or three task so make sure you read"
+    },
+    {
+      "start": 569.399,
+      "duration": 4.161,
+      "text": "the questions thoroughly understand what"
+    },
+    {
+      "start": 571.24,
+      "duration": 4.159,
+      "text": "is asked and then perform the solutions"
+    },
+    {
+      "start": 573.56,
+      "duration": 3.76,
+      "text": "the last step is to always recheck"
+    },
+    {
+      "start": 575.399,
+      "duration": 3.601,
+      "text": "before moving to the next question what"
+    },
+    {
+      "start": 577.32,
+      "duration": 3.759,
+      "text": "do I mean by this let's say the question"
+    },
+    {
+      "start": 579.0,
+      "duration": 4.24,
+      "text": "is asked to create a deployment with the"
+    },
+    {
+      "start": 581.079,
+      "duration": 4.2,
+      "text": "name my deploy having image enginex you"
+    },
+    {
+      "start": 583.24,
+      "duration": 4.0,
+      "text": "should always confirm by running Cube CT"
+    },
+    {
+      "start": 585.279,
+      "duration": 4.041,
+      "text": "get deployment to check if the"
+    },
+    {
+      "start": 587.24,
+      "duration": 3.76,
+      "text": "deployment has been created if you have"
+    },
+    {
+      "start": 589.32,
+      "duration": 4.44,
+      "text": "done actually what is asked in the"
+    },
+    {
+      "start": 591.0,
+      "duration": 4.279,
+      "text": "question to avoid losing marks so always"
+    },
+    {
+      "start": 593.76,
+      "duration": 3.199,
+      "text": "recheck before moving to the next"
+    },
+    {
+      "start": 595.279,
+      "duration": 3.0,
+      "text": "question and so these are all the"
+    },
+    {
+      "start": 596.959,
+      "duration": 3.041,
+      "text": "important tips that I would highly"
+    },
+    {
+      "start": 598.279,
+      "duration": 3.761,
+      "text": "recommend you to follow follow to make"
+    },
+    {
+      "start": 600.0,
+      "duration": 4.399,
+      "text": "sure you pass your exam with a good"
+    },
+    {
+      "start": 602.04,
+      "duration": 3.96,
+      "text": "score lastly now let's look at the"
+    },
+    {
+      "start": 604.399,
+      "duration": 3.321,
+      "text": "important topics that you don't want to"
+    },
+    {
+      "start": 606.0,
+      "duration": 3.839,
+      "text": "miss if you want to get good score in"
+    },
+    {
+      "start": 607.72,
+      "duration": 4.28,
+      "text": "cka so these are all the important"
+    },
+    {
+      "start": 609.839,
+      "duration": 3.761,
+      "text": "topics that you will get questions from"
+    },
+    {
+      "start": 612.0,
+      "duration": 3.68,
+      "text": "and I'm very sure about this because I"
+    },
+    {
+      "start": 613.6,
+      "duration": 3.88,
+      "text": "have sat for the exam twice and I also"
+    },
+    {
+      "start": 615.68,
+      "duration": 3.159,
+      "text": "have seen many questions from these"
+    },
+    {
+      "start": 617.48,
+      "duration": 3.52,
+      "text": "topics so I would recommend you"
+    },
+    {
+      "start": 618.839,
+      "duration": 4.401,
+      "text": "practicing all these topics because I'm"
+    },
+    {
+      "start": 621.0,
+      "duration": 4.76,
+      "text": "100% sure that the questions are going"
+    },
+    {
+      "start": 623.24,
+      "duration": 4.92,
+      "text": "to come from these different topics the"
+    },
+    {
+      "start": 625.76,
+      "duration": 4.4,
+      "text": "first is hcd backup and restore if you"
+    },
+    {
+      "start": 628.16,
+      "duration": 4.2,
+      "text": "don't know what hcd is you might need to"
+    },
+    {
+      "start": 630.16,
+      "duration": 4.04,
+      "text": "check out my previous video but etcd is"
+    },
+    {
+      "start": 632.36,
+      "duration": 3.88,
+      "text": "where you store all the information and"
+    },
+    {
+      "start": 634.2,
+      "duration": 4.28,
+      "text": "in the C exam you're going to be asked"
+    },
+    {
+      "start": 636.24,
+      "duration": 3.8,
+      "text": "to create a backup and then restore that"
+    },
+    {
+      "start": 638.48,
+      "duration": 3.56,
+      "text": "backup so I have the link attached for"
+    },
+    {
+      "start": 640.04,
+      "duration": 4.12,
+      "text": "the documentation which will tell you"
+    },
+    {
+      "start": 642.04,
+      "duration": 4.56,
+      "text": "how you can create backups for R CD"
+    },
+    {
+      "start": 644.16,
+      "duration": 4.64,
+      "text": "using this command and also tell you how"
+    },
+    {
+      "start": 646.6,
+      "duration": 4.28,
+      "text": "to restore that backup using this"
+    },
+    {
+      "start": 648.8,
+      "duration": 3.4,
+      "text": "command here or using this command if"
+    },
+    {
+      "start": 650.88,
+      "duration": 3.44,
+      "text": "the question does not have the data"
+    },
+    {
+      "start": 652.2,
+      "duration": 3.24,
+      "text": "directory mentioned so this is one very"
+    },
+    {
+      "start": 654.32,
+      "duration": 2.759,
+      "text": "important question that you should"
+    },
+    {
+      "start": 655.44,
+      "duration": 3.839,
+      "text": "obviously know before sitting for the"
+    },
+    {
+      "start": 657.079,
+      "duration": 3.601,
+      "text": "exam the next one is cluster upgrade"
+    },
+    {
+      "start": 659.279,
+      "duration": 2.961,
+      "text": "there is obviously a question which will"
+    },
+    {
+      "start": 660.68,
+      "duration": 3.56,
+      "text": "ask you to upgrade the cluster from"
+    },
+    {
+      "start": 662.24,
+      "duration": 3.64,
+      "text": "version this to version that and you"
+    },
+    {
+      "start": 664.24,
+      "duration": 3.76,
+      "text": "need to know how to do this which you"
+    },
+    {
+      "start": 665.88,
+      "duration": 3.68,
+      "text": "can find from this documentation here in"
+    },
+    {
+      "start": 668.0,
+      "duration": 4.88,
+      "text": "this documentation you will have steps"
+    },
+    {
+      "start": 669.56,
+      "duration": 5.519,
+      "text": "to upgrade Cube ADM from version 1.26 to"
+    },
+    {
+      "start": 672.88,
+      "duration": 4.28,
+      "text": "1.27 or from any other version and you"
+    },
+    {
+      "start": 675.079,
+      "duration": 3.921,
+      "text": "can follow the steps mentioned here to"
+    },
+    {
+      "start": 677.16,
+      "duration": 4.239,
+      "text": "upgrade your clusters from one version"
+    },
+    {
+      "start": 679.0,
+      "duration": 3.839,
+      "text": "to another the next important topic is"
+    },
+    {
+      "start": 681.399,
+      "duration": 3.281,
+      "text": "working with persistent volumes and"
+    },
+    {
+      "start": 682.839,
+      "duration": 3.161,
+      "text": "persistent volume claims there are many"
+    },
+    {
+      "start": 684.68,
+      "duration": 3.719,
+      "text": "questions in the exam where you're asked"
+    },
+    {
+      "start": 686.0,
+      "duration": 5.0,
+      "text": "to create a persistent volume of 10gb"
+    },
+    {
+      "start": 688.399,
+      "duration": 4.801,
+      "text": "having read right only access uh using"
+    },
+    {
+      "start": 691.0,
+      "duration": 3.48,
+      "text": "this host path or even you might have a"
+    },
+    {
+      "start": 693.2,
+      "duration": 2.879,
+      "text": "question whether the persistent volume"
+    },
+    {
+      "start": 694.48,
+      "duration": 3.4,
+      "text": "is already created and you're asked to"
+    },
+    {
+      "start": 696.079,
+      "duration": 3.841,
+      "text": "create PVCs so you can use this"
+    },
+    {
+      "start": 697.88,
+      "duration": 3.639,
+      "text": "documentation here which will help you"
+    },
+    {
+      "start": 699.92,
+      "duration": 4.24,
+      "text": "show how you can create persistent"
+    },
+    {
+      "start": 701.519,
+      "duration": 4.681,
+      "text": "volume of 10gb with read write once"
+    },
+    {
+      "start": 704.16,
+      "duration": 4.04,
+      "text": "access mode having a host path at this"
+    },
+    {
+      "start": 706.2,
+      "duration": 4.079,
+      "text": "path something like this or a question"
+    },
+    {
+      "start": 708.2,
+      "duration": 4.24,
+      "text": "which might be create a persistent"
+    },
+    {
+      "start": 710.279,
+      "duration": 4.8,
+      "text": "volume claim with the storage class name"
+    },
+    {
+      "start": 712.44,
+      "duration": 6.079,
+      "text": "as manual or attach the persistent"
+    },
+    {
+      "start": 715.079,
+      "duration": 4.56,
+      "text": "volume to a pod using this so this is a"
+    },
+    {
+      "start": 718.519,
+      "duration": 3.281,
+      "text": "very important topic and I would"
+    },
+    {
+      "start": 719.639,
+      "duration": 3.721,
+      "text": "recommend you going through it next is"
+    },
+    {
+      "start": 721.8,
+      "duration": 3.2,
+      "text": "Network policies this is one of the"
+    },
+    {
+      "start": 723.36,
+      "duration": 3.96,
+      "text": "tricky question that I got which is to"
+    },
+    {
+      "start": 725.0,
+      "duration": 4.519,
+      "text": "create a network policy for a pod and"
+    },
+    {
+      "start": 727.32,
+      "duration": 3.48,
+      "text": "you can go through this documentation in"
+    },
+    {
+      "start": 729.519,
+      "duration": 2.88,
+      "text": "this documentation if you click on this"
+    },
+    {
+      "start": 730.8,
+      "duration": 4.12,
+      "text": "network policy resource you get a"
+    },
+    {
+      "start": 732.399,
+      "duration": 4.88,
+      "text": "manifest which will help you answer the"
+    },
+    {
+      "start": 734.92,
+      "duration": 4.12,
+      "text": "question asked in the exam you can edit"
+    },
+    {
+      "start": 737.279,
+      "duration": 4.92,
+      "text": "this manifest according to what is asked"
+    },
+    {
+      "start": 739.04,
+      "duration": 4.799,
+      "text": "in the exam next is ingress Ingress is"
+    },
+    {
+      "start": 742.199,
+      "duration": 3.64,
+      "text": "also something that will appear in your"
+    },
+    {
+      "start": 743.839,
+      "duration": 4.081,
+      "text": "exam in my exam I got a question where I"
+    },
+    {
+      "start": 745.839,
+      "duration": 4.081,
+      "text": "need to create an Ingress which exposes"
+    },
+    {
+      "start": 747.92,
+      "duration": 4.52,
+      "text": "a backend service and you can use this"
+    },
+    {
+      "start": 749.92,
+      "duration": 5.2,
+      "text": "manifest P I use the same exact manifest"
+    },
+    {
+      "start": 752.44,
+      "duration": 5.04,
+      "text": "P just changing the values to create"
+    },
+    {
+      "start": 755.12,
+      "duration": 4.079,
+      "text": "Ingress and next is Json path in the"
+    },
+    {
+      "start": 757.48,
+      "duration": 4.44,
+      "text": "exam you will get questions where you"
+    },
+    {
+      "start": 759.199,
+      "duration": 5.281,
+      "text": "asked to fetch the values from manifest"
+    },
+    {
+      "start": 761.92,
+      "duration": 5.12,
+      "text": "file using Json path so you need to know"
+    },
+    {
+      "start": 764.48,
+      "duration": 4.08,
+      "text": "what is Json path how to use them you're"
+    },
+    {
+      "start": 767.04,
+      "duration": 3.359,
+      "text": "also expected to know what is custom"
+    },
+    {
+      "start": 768.56,
+      "duration": 4.079,
+      "text": "columns and how you can use them so I"
+    },
+    {
+      "start": 770.399,
+      "duration": 4.321,
+      "text": "have a reference document attached here"
+    },
+    {
+      "start": 772.639,
+      "duration": 4.041,
+      "text": "and if you search for Json path you will"
+    },
+    {
+      "start": 774.72,
+      "duration": 4.799,
+      "text": "find examples on how you can get"
+    },
+    {
+      "start": 776.68,
+      "duration": 4.56,
+      "text": "internal IP or maybe C CPU or anything"
+    },
+    {
+      "start": 779.519,
+      "duration": 5.081,
+      "text": "like that this is how you can use Json"
+    },
+    {
+      "start": 781.24,
+      "duration": 5.48,
+      "text": "path to get the password for E users or"
+    },
+    {
+      "start": 784.6,
+      "duration": 4.16,
+      "text": "other stuff next important topic is"
+    },
+    {
+      "start": 786.72,
+      "duration": 3.359,
+      "text": "monitoring and logging of PODS and notes"
+    },
+    {
+      "start": 788.76,
+      "duration": 3.439,
+      "text": "you will have questions where they are"
+    },
+    {
+      "start": 790.079,
+      "duration": 4.0,
+      "text": "going to ask you find the Pod having"
+    },
+    {
+      "start": 792.199,
+      "duration": 4.241,
+      "text": "most CPU and put the name in a"
+    },
+    {
+      "start": 794.079,
+      "duration": 4.481,
+      "text": "particular file or find the logs for the"
+    },
+    {
+      "start": 796.44,
+      "duration": 3.68,
+      "text": "Pod and put the logs in a file something"
+    },
+    {
+      "start": 798.56,
+      "duration": 3.56,
+      "text": "like that so you will need to know how"
+    },
+    {
+      "start": 800.12,
+      "duration": 3.88,
+      "text": "to how to check logs and how to get how"
+    },
+    {
+      "start": 802.12,
+      "duration": 3.719,
+      "text": "to monitor pods to monitor you can use"
+    },
+    {
+      "start": 804.0,
+      "duration": 3.72,
+      "text": "the cube CTL top command for logs you"
+    },
+    {
+      "start": 805.839,
+      "duration": 3.921,
+      "text": "can use the cube CTL log command"
+    },
+    {
+      "start": 807.72,
+      "duration": 3.44,
+      "text": "similarly it's very important for you to"
+    },
+    {
+      "start": 809.76,
+      "duration": 3.199,
+      "text": "understand how to work with whim and"
+    },
+    {
+      "start": 811.16,
+      "duration": 3.919,
+      "text": "Nano because you're going to be asked to"
+    },
+    {
+      "start": 812.959,
+      "duration": 4.601,
+      "text": "edit manifest file and if you don't know"
+    },
+    {
+      "start": 815.079,
+      "duration": 4.281,
+      "text": "how to use whim and Nano you will waste"
+    },
+    {
+      "start": 817.56,
+      "duration": 4.04,
+      "text": "a lot of time so I would recommend you"
+    },
+    {
+      "start": 819.36,
+      "duration": 4.0,
+      "text": "knowing some shortcuts on how to go to a"
+    },
+    {
+      "start": 821.6,
+      "duration": 5.479,
+      "text": "particular line how to find a particular"
+    },
+    {
+      "start": 823.36,
+      "duration": 5.08,
+      "text": "ter in whim or Nano whatever you use"
+    },
+    {
+      "start": 827.079,
+      "duration": 3.2,
+      "text": "lastly this is also something which is"
+    },
+    {
+      "start": 828.44,
+      "duration": 4.199,
+      "text": "very important you need to know how to"
+    },
+    {
+      "start": 830.279,
+      "duration": 3.961,
+      "text": "create cluster roles uh role bitings"
+    },
+    {
+      "start": 832.639,
+      "duration": 3.921,
+      "text": "what a service account how to create a"
+    },
+    {
+      "start": 834.24,
+      "duration": 4.599,
+      "text": "role having permissions for a particular"
+    },
+    {
+      "start": 836.56,
+      "duration": 3.76,
+      "text": "resource and all that so these year are"
+    },
+    {
+      "start": 838.839,
+      "duration": 4.161,
+      "text": "all the important topics and you will"
+    },
+    {
+      "start": 840.32,
+      "duration": 4.28,
+      "text": "get questions from these topics 100% so"
+    },
+    {
+      "start": 843.0,
+      "duration": 3.6,
+      "text": "make sure you practice them and I have"
+    },
+    {
+      "start": 844.6,
+      "duration": 3.84,
+      "text": "links for all this documentation here if"
+    },
+    {
+      "start": 846.6,
+      "duration": 4.0,
+      "text": "you want me to share this document do"
+    },
+    {
+      "start": 848.44,
+      "duration": 4.16,
+      "text": "let me know in the comment section and"
+    },
+    {
+      "start": 850.6,
+      "duration": 5.08,
+      "text": "this was our video I hope now you have"
+    },
+    {
+      "start": 852.6,
+      "duration": 4.28,
+      "text": "an idea of how I passed my C ke exam and"
+    },
+    {
+      "start": 855.68,
+      "duration": 3.24,
+      "text": "if you follow everything that we have"
+    },
+    {
+      "start": 856.88,
+      "duration": 4.12,
+      "text": "discussed in this video I'm pretty sure"
+    },
+    {
+      "start": 858.92,
+      "duration": 3.839,
+      "text": "you will pass your exam as well with"
+    },
+    {
+      "start": 861.0,
+      "duration": 3.639,
+      "text": "that being said I wish you best luck for"
+    },
+    {
+      "start": 862.759,
+      "duration": 3.721,
+      "text": "your CK exam and if you have any"
+    },
+    {
+      "start": 864.639,
+      "duration": 3.601,
+      "text": "questions any doubt do let me know in"
+    },
+    {
+      "start": 866.48,
+      "duration": 4.0,
+      "text": "the comment section and if you passed"
+    },
+    {
+      "start": 868.24,
+      "duration": 4.44,
+      "text": "your exam do share it on LinkedIn don't"
+    },
+    {
+      "start": 870.48,
+      "duration": 4.44,
+      "text": "forget to tag me thank you and have a"
+    },
+    {
+      "start": 872.68,
+      "duration": 2.24,
+      "text": "good"
+    },
+    {
+      "start": 886.92,
+      "duration": 3.0,
+      "text": "day"
+    }
+  ]
+}

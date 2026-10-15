@@ -1,0 +1,4081 @@
+{
+  "video": {
+    "id": "q5S14cfOWfE",
+    "title": "Complete Docker course in 30 mins | Docker Tutorial for Beginners 2025 [Updated]",
+    "url": "https://www.youtube.com/watch?v=q5S14cfOWfE",
+    "duration": 1814,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.799,
+      "duration": 4.161,
+      "text": "Docker a very popular conization"
+    },
+    {
+      "start": 3.08,
+      "duration": 4.12,
+      "text": "platform that is used to deploy almost"
+    },
+    {
+      "start": 4.96,
+      "duration": 4.08,
+      "text": "every model application these days so in"
+    },
+    {
+      "start": 7.2,
+      "duration": 4.399,
+      "text": "this video I will be teaching you Docker"
+    },
+    {
+      "start": 9.04,
+      "duration": 4.559,
+      "text": "from scratch along with a Hands-On demo"
+    },
+    {
+      "start": 11.599,
+      "duration": 3.761,
+      "text": "where we will be koniz a node GS"
+    },
+    {
+      "start": 13.599,
+      "duration": 4.361,
+      "text": "application so make sure you watch this"
+    },
+    {
+      "start": 15.36,
+      "duration": 5.079,
+      "text": "video till the end let's start welcome"
+    },
+    {
+      "start": 17.96,
+      "duration": 4.159,
+      "text": "to complete Docker course for beginners"
+    },
+    {
+      "start": 20.439,
+      "duration": 4.041,
+      "text": "in this course you will learn what is"
+    },
+    {
+      "start": 22.119,
+      "duration": 3.961,
+      "text": "Docker and why is it so popular"
+    },
+    {
+      "start": 24.48,
+      "duration": 3.719,
+      "text": "understanding the problem that Docker is"
+    },
+    {
+      "start": 26.08,
+      "duration": 4.16,
+      "text": "actually solving next we learn the"
+    },
+    {
+      "start": 28.199,
+      "duration": 2.881,
+      "text": "concept of containerization to"
+    },
+    {
+      "start": 30.24,
+      "duration": 3.999,
+      "text": "understand the difference between"
+    },
+    {
+      "start": 31.08,
+      "duration": 4.88,
+      "text": "containers and virtual machines moving"
+    },
+    {
+      "start": 34.239,
+      "duration": 3.84,
+      "text": "on we go deep in the docker architecture"
+    },
+    {
+      "start": 35.96,
+      "duration": 3.599,
+      "text": "to understand how Docker actually works"
+    },
+    {
+      "start": 38.079,
+      "duration": 4.041,
+      "text": "what is Docker client what is Docker"
+    },
+    {
+      "start": 39.559,
+      "duration": 4.241,
+      "text": "demon and lot more and to to make sure"
+    },
+    {
+      "start": 42.12,
+      "duration": 3.56,
+      "text": "that you understand things more properly"
+    },
+    {
+      "start": 43.8,
+      "duration": 3.599,
+      "text": "we will be doing a Hands-On demo where"
+    },
+    {
+      "start": 45.68,
+      "duration": 4.16,
+      "text": "we create and containerize our first"
+    },
+    {
+      "start": 47.399,
+      "duration": 4.601,
+      "text": "application to deploy it as a Docker"
+    },
+    {
+      "start": 49.84,
+      "duration": 3.92,
+      "text": "container doing so we will learn"
+    },
+    {
+      "start": 52.0,
+      "duration": 4.32,
+      "text": "important Docker commands that you will"
+    },
+    {
+      "start": 53.76,
+      "duration": 4.52,
+      "text": "be using everyday as a devops engineer"
+    },
+    {
+      "start": 56.32,
+      "duration": 4.12,
+      "text": "and lastly we will understand how Docker"
+    },
+    {
+      "start": 58.28,
+      "duration": 3.56,
+      "text": "is used in real life deployment because"
+    },
+    {
+      "start": 60.44,
+      "duration": 3.679,
+      "text": "learning Docker is not enough you need"
+    },
+    {
+      "start": 61.84,
+      "duration": 4.44,
+      "text": "to understand where is Docker used in"
+    },
+    {
+      "start": 64.119,
+      "duration": 4.241,
+      "text": "real life deployments so make sure you"
+    },
+    {
+      "start": 66.28,
+      "duration": 3.76,
+      "text": "watch this video till the end and to"
+    },
+    {
+      "start": 68.36,
+      "duration": 3.84,
+      "text": "make things easy for you I have notes"
+    },
+    {
+      "start": 70.04,
+      "duration": 3.68,
+      "text": "created for this Docker course if you"
+    },
+    {
+      "start": 72.2,
+      "duration": 3.0,
+      "text": "want me to share this notes with you"
+    },
+    {
+      "start": 73.72,
+      "duration": 3.039,
+      "text": "comment down Docker course in the"
+    },
+    {
+      "start": 75.2,
+      "duration": 2.68,
+      "text": "comment section and I will share this"
+    },
+    {
+      "start": 76.759,
+      "duration": 3.601,
+      "text": "notes with"
+    },
+    {
+      "start": 77.88,
+      "duration": 4.16,
+      "text": "you with that being said make sure you"
+    },
+    {
+      "start": 80.36,
+      "duration": 4.119,
+      "text": "like this video And subscribe to Cloud"
+    },
+    {
+      "start": 82.04,
+      "duration": 4.24,
+      "text": "sham for more s devops courses now let's"
+    },
+    {
+      "start": 84.479,
+      "duration": 4.28,
+      "text": "start with our Docker"
+    },
+    {
+      "start": 86.28,
+      "duration": 4.159,
+      "text": "course okay now before we look at the"
+    },
+    {
+      "start": 88.759,
+      "duration": 3.241,
+      "text": "definition to learn what is Docker I"
+    },
+    {
+      "start": 90.439,
+      "duration": 3.72,
+      "text": "want you to understand the process of"
+    },
+    {
+      "start": 92.0,
+      "duration": 4.479,
+      "text": "how an application was deployed before"
+    },
+    {
+      "start": 94.159,
+      "duration": 3.721,
+      "text": "Docker came into existence so before"
+    },
+    {
+      "start": 96.479,
+      "duration": 3.041,
+      "text": "Docker the developer used to write"
+    },
+    {
+      "start": 97.88,
+      "duration": 3.239,
+      "text": "application code in their preferred"
+    },
+    {
+      "start": 99.52,
+      "duration": 3.84,
+      "text": "language which could be python"
+    },
+    {
+      "start": 101.119,
+      "duration": 3.801,
+      "text": "JavaScript nodejs anything along with"
+    },
+    {
+      "start": 103.36,
+      "duration": 3.52,
+      "text": "the code we also require necessary"
+    },
+    {
+      "start": 104.92,
+      "duration": 4.08,
+      "text": "dependencies and libraries for the"
+    },
+    {
+      "start": 106.88,
+      "duration": 4.0,
+      "text": "application to work so we could test"
+    },
+    {
+      "start": 109.0,
+      "duration": 3.32,
+      "text": "this application locally if it works"
+    },
+    {
+      "start": 110.88,
+      "duration": 3.879,
+      "text": "fine we then create the deployment"
+    },
+    {
+      "start": 112.32,
+      "duration": 4.64,
+      "text": "artifacts also known as builds which"
+    },
+    {
+      "start": 114.759,
+      "duration": 3.521,
+      "text": "could be deployed on production server"
+    },
+    {
+      "start": 116.96,
+      "duration": 3.079,
+      "text": "but for this application to run on"
+    },
+    {
+      "start": 118.28,
+      "duration": 3.879,
+      "text": "production machine we need to have the"
+    },
+    {
+      "start": 120.039,
+      "duration": 4.36,
+      "text": "same dependencies same libraries with"
+    },
+    {
+      "start": 122.159,
+      "duration": 4.56,
+      "text": "the same version or else it will work on"
+    },
+    {
+      "start": 124.399,
+      "duration": 4.041,
+      "text": "your local machine but not on production"
+    },
+    {
+      "start": 126.719,
+      "duration": 4.201,
+      "text": "and this was very common before Docker"
+    },
+    {
+      "start": 128.44,
+      "duration": 3.92,
+      "text": "was introduced whereas after Docker the"
+    },
+    {
+      "start": 130.92,
+      "duration": 3.56,
+      "text": "developer used to write the application"
+    },
+    {
+      "start": 132.36,
+      "duration": 3.84,
+      "text": "code then create a Docker file which"
+    },
+    {
+      "start": 134.48,
+      "duration": 3.88,
+      "text": "would have instructions of how you want"
+    },
+    {
+      "start": 136.2,
+      "duration": 4.16,
+      "text": "your application to be from this Docker"
+    },
+    {
+      "start": 138.36,
+      "duration": 3.959,
+      "text": "file we used to create an image and then"
+    },
+    {
+      "start": 140.36,
+      "duration": 4.44,
+      "text": "this image was deployed as a container"
+    },
+    {
+      "start": 142.319,
+      "duration": 4.321,
+      "text": "on production server using this approach"
+    },
+    {
+      "start": 144.8,
+      "duration": 4.64,
+      "text": "the application would run fine in any"
+    },
+    {
+      "start": 146.64,
+      "duration": 4.64,
+      "text": "environment without any issues so this"
+    },
+    {
+      "start": 149.44,
+      "duration": 3.48,
+      "text": "is the problem that Docker has solved"
+    },
+    {
+      "start": 151.28,
+      "duration": 3.76,
+      "text": "using Docker containers you can deploy"
+    },
+    {
+      "start": 152.92,
+      "duration": 3.76,
+      "text": "your application in all environments"
+    },
+    {
+      "start": 155.04,
+      "duration": 2.68,
+      "text": "without having any dependencies or"
+    },
+    {
+      "start": 156.68,
+      "duration": 3.4,
+      "text": "Library"
+    },
+    {
+      "start": 157.72,
+      "duration": 4.2,
+      "text": "issues now that you have general idea of"
+    },
+    {
+      "start": 160.08,
+      "duration": 3.84,
+      "text": "why Docker is used and what problem it's"
+    },
+    {
+      "start": 161.92,
+      "duration": 4.16,
+      "text": "solving let's look at the definition of"
+    },
+    {
+      "start": 163.92,
+      "duration": 4.08,
+      "text": "what is Docker and according to the"
+    },
+    {
+      "start": 166.08,
+      "duration": 4.159,
+      "text": "official documentation Docker is a"
+    },
+    {
+      "start": 168.0,
+      "duration": 4.519,
+      "text": "containerization platform for packaging"
+    },
+    {
+      "start": 170.239,
+      "duration": 4.841,
+      "text": "deploying and running applications as"
+    },
+    {
+      "start": 172.519,
+      "duration": 4.121,
+      "text": "containers so what is containerization"
+    },
+    {
+      "start": 175.08,
+      "duration": 3.76,
+      "text": "if if you have worked on virtualization"
+    },
+    {
+      "start": 176.64,
+      "duration": 3.72,
+      "text": "tools like virtual box and VMware"
+    },
+    {
+      "start": 178.84,
+      "duration": 3.2,
+      "text": "containerization is a lightweight form"
+    },
+    {
+      "start": 180.36,
+      "duration": 4.159,
+      "text": "of virtualization that allows you to"
+    },
+    {
+      "start": 182.04,
+      "duration": 5.0,
+      "text": "encapsulate an application and its"
+    },
+    {
+      "start": 184.519,
+      "duration": 4.561,
+      "text": "dependencies into a self-contained unit"
+    },
+    {
+      "start": 187.04,
+      "duration": 4.0,
+      "text": "called as container so inside this"
+    },
+    {
+      "start": 189.08,
+      "duration": 4.519,
+      "text": "container you will have the code along"
+    },
+    {
+      "start": 191.04,
+      "duration": 4.6,
+      "text": "with other things like runtime libraries"
+    },
+    {
+      "start": 193.599,
+      "duration": 4.36,
+      "text": "environment configurations it will also"
+    },
+    {
+      "start": 195.64,
+      "duration": 3.879,
+      "text": "have its own operating system and this"
+    },
+    {
+      "start": 197.959,
+      "duration": 3.961,
+      "text": "is why it is called as lightweight form"
+    },
+    {
+      "start": 199.519,
+      "duration": 5.121,
+      "text": "of virtualization so Docker applications"
+    },
+    {
+      "start": 201.92,
+      "duration": 5.039,
+      "text": "run in containers that can be used on"
+    },
+    {
+      "start": 204.64,
+      "duration": 4.36,
+      "text": "any system any operating system any"
+    },
+    {
+      "start": 206.959,
+      "duration": 4.321,
+      "text": "environment a developers laptop system"
+    },
+    {
+      "start": 209.0,
+      "duration": 3.72,
+      "text": "on premise or in cloud and it will run"
+    },
+    {
+      "start": 211.28,
+      "duration": 3.8,
+      "text": "the"
+    },
+    {
+      "start": 212.72,
+      "duration": 3.879,
+      "text": "same so here is an example of how"
+    },
+    {
+      "start": 215.08,
+      "duration": 3.68,
+      "text": "containerization works and how"
+    },
+    {
+      "start": 216.599,
+      "duration": 3.681,
+      "text": "containers are created we have an"
+    },
+    {
+      "start": 218.76,
+      "duration": 3.64,
+      "text": "operating system on which we install"
+    },
+    {
+      "start": 220.28,
+      "duration": 3.8,
+      "text": "Docker or any container runtime and"
+    },
+    {
+      "start": 222.4,
+      "duration": 3.399,
+      "text": "using that container runtime we create"
+    },
+    {
+      "start": 224.08,
+      "duration": 2.96,
+      "text": "three different containers here is a"
+    },
+    {
+      "start": 225.799,
+      "duration": 3.961,
+      "text": "container which is running a Java"
+    },
+    {
+      "start": 227.04,
+      "duration": 4.399,
+      "text": "application on red hat operating system"
+    },
+    {
+      "start": 229.76,
+      "duration": 4.119,
+      "text": "second container is running engine X web"
+    },
+    {
+      "start": 231.439,
+      "duration": 4.16,
+      "text": "server on uben 2 operating system and"
+    },
+    {
+      "start": 233.879,
+      "duration": 4.56,
+      "text": "the third container is running PHP with"
+    },
+    {
+      "start": 235.599,
+      "duration": 4.36,
+      "text": "mySQL on Windows operating system so on"
+    },
+    {
+      "start": 238.439,
+      "duration": 2.681,
+      "text": "the same machine we have three different"
+    },
+    {
+      "start": 239.959,
+      "duration": 2.881,
+      "text": "containers having three different"
+    },
+    {
+      "start": 241.12,
+      "duration": 3.52,
+      "text": "operating system and this is what"
+    },
+    {
+      "start": 242.84,
+      "duration": 4.28,
+      "text": "containerization is which is a"
+    },
+    {
+      "start": 244.64,
+      "duration": 3.679,
+      "text": "lightweight form of virtualization to"
+    },
+    {
+      "start": 247.12,
+      "duration": 3.24,
+      "text": "understand this more better let's look"
+    },
+    {
+      "start": 248.319,
+      "duration": 4.12,
+      "text": "at the architecture of how virtual"
+    },
+    {
+      "start": 250.36,
+      "duration": 4.04,
+      "text": "machines are created and how containers"
+    },
+    {
+      "start": 252.439,
+      "duration": 4.2,
+      "text": "are created to create virtual machines"
+    },
+    {
+      "start": 254.4,
+      "duration": 4.64,
+      "text": "we require a hypervisor technology like"
+    },
+    {
+      "start": 256.639,
+      "duration": 4.401,
+      "text": "VMware or virtual box using that we can"
+    },
+    {
+      "start": 259.04,
+      "duration": 4.719,
+      "text": "create different operating systems like"
+    },
+    {
+      "start": 261.04,
+      "duration": 4.92,
+      "text": "ubben 2 red hat Khali whatever you want"
+    },
+    {
+      "start": 263.759,
+      "duration": 4.321,
+      "text": "in your base operating system so here's"
+    },
+    {
+      "start": 265.96,
+      "duration": 4.44,
+      "text": "an example you can see in this picture"
+    },
+    {
+      "start": 268.08,
+      "duration": 3.76,
+      "text": "we have Oracle virtual box where we are"
+    },
+    {
+      "start": 270.4,
+      "duration": 3.68,
+      "text": "creating three different operating"
+    },
+    {
+      "start": 271.84,
+      "duration": 4.04,
+      "text": "systems inside it when we create these"
+    },
+    {
+      "start": 274.08,
+      "duration": 4.119,
+      "text": "operating system we need to Define how"
+    },
+    {
+      "start": 275.88,
+      "duration": 4.44,
+      "text": "much CPU and RAM should be given to each"
+    },
+    {
+      "start": 278.199,
+      "duration": 4.161,
+      "text": "operating system so we are dividing"
+    },
+    {
+      "start": 280.32,
+      "duration": 3.76,
+      "text": "Hardware requirements to every operating"
+    },
+    {
+      "start": 282.36,
+      "duration": 3.6,
+      "text": "system that we have in this virtual box"
+    },
+    {
+      "start": 284.08,
+      "duration": 3.72,
+      "text": "here whereas in the case of containers"
+    },
+    {
+      "start": 285.96,
+      "duration": 3.679,
+      "text": "we don't do that we have a container"
+    },
+    {
+      "start": 287.8,
+      "duration": 3.76,
+      "text": "engine and we only separate containers"
+    },
+    {
+      "start": 289.639,
+      "duration": 3.761,
+      "text": "on the basis of what applications are we"
+    },
+    {
+      "start": 291.56,
+      "duration": 4.0,
+      "text": "running on it this is why it is called"
+    },
+    {
+      "start": 293.4,
+      "duration": 4.6,
+      "text": "as lightweight virtualization because we"
+    },
+    {
+      "start": 295.56,
+      "duration": 4.44,
+      "text": "are not assigning CPU or CPU or memory"
+    },
+    {
+      "start": 298.0,
+      "duration": 3.84,
+      "text": "requirements to each of these containers"
+    },
+    {
+      "start": 300.0,
+      "duration": 3.36,
+      "text": "and due to this containers are"
+    },
+    {
+      "start": 301.84,
+      "duration": 3.32,
+      "text": "lightweight and more efficient compared"
+    },
+    {
+      "start": 303.36,
+      "duration": 3.24,
+      "text": "to Virtual machines as they are"
+    },
+    {
+      "start": 305.16,
+      "duration": 3.039,
+      "text": "lightweight containers are very quick to"
+    },
+    {
+      "start": 306.6,
+      "duration": 3.96,
+      "text": "start whereas virtual machines are"
+    },
+    {
+      "start": 308.199,
+      "duration": 4.241,
+      "text": "slower to start containers are separated"
+    },
+    {
+      "start": 310.56,
+      "duration": 4.479,
+      "text": "by processes whereas virtual machines"
+    },
+    {
+      "start": 312.44,
+      "duration": 4.68,
+      "text": "are full OS isolation containers are"
+    },
+    {
+      "start": 315.039,
+      "duration": 4.641,
+      "text": "highly portable whereas virtual machines"
+    },
+    {
+      "start": 317.12,
+      "duration": 4.799,
+      "text": "has compatibility concerns resource"
+    },
+    {
+      "start": 319.68,
+      "duration": 4.44,
+      "text": "overhead is less containers will use"
+    },
+    {
+      "start": 321.919,
+      "duration": 4.521,
+      "text": "less CPU and memory compared to Virtual"
+    },
+    {
+      "start": 324.12,
+      "duration": 3.84,
+      "text": "machines and containers have lighter"
+    },
+    {
+      "start": 326.44,
+      "duration": 2.96,
+      "text": "isolation as well if you want to learn"
+    },
+    {
+      "start": 327.96,
+      "duration": 4.32,
+      "text": "more about difference between containers"
+    },
+    {
+      "start": 329.4,
+      "duration": 5.6,
+      "text": "and M AWS has explained how containers"
+    },
+    {
+      "start": 332.28,
+      "duration": 4.52,
+      "text": "are different from virtual machines due"
+    },
+    {
+      "start": 335.0,
+      "duration": 3.68,
+      "text": "to all the differences here are"
+    },
+    {
+      "start": 336.8,
+      "duration": 4.119,
+      "text": "different advantages of containerization"
+    },
+    {
+      "start": 338.68,
+      "duration": 3.92,
+      "text": "over virualization containerization is"
+    },
+    {
+      "start": 340.919,
+      "duration": 3.761,
+      "text": "consistent test environment for"
+    },
+    {
+      "start": 342.6,
+      "duration": 4.68,
+      "text": "development and QA crossplatform"
+    },
+    {
+      "start": 344.68,
+      "duration": 4.56,
+      "text": "isolation ability to scale a lot more"
+    },
+    {
+      "start": 347.28,
+      "duration": 3.88,
+      "text": "now to start using Docker you need to"
+    },
+    {
+      "start": 349.24,
+      "duration": 4.519,
+      "text": "First install it and you can do that"
+    },
+    {
+      "start": 351.16,
+      "duration": 4.039,
+      "text": "from the official documentation so you"
+    },
+    {
+      "start": 353.759,
+      "duration": 3.121,
+      "text": "can install Docker based on your"
+    },
+    {
+      "start": 355.199,
+      "duration": 4.28,
+      "text": "operating system you have Docker desktop"
+    },
+    {
+      "start": 356.88,
+      "duration": 4.2,
+      "text": "for Mac for Windows for Linux I'm using"
+    },
+    {
+      "start": 359.479,
+      "duration": 4.16,
+      "text": "a to Linux I can go ahead with"
+    },
+    {
+      "start": 361.08,
+      "duration": 5.28,
+      "text": "installing Docker desktop on Linux all I"
+    },
+    {
+      "start": 363.639,
+      "duration": 4.761,
+      "text": "need to do is to CH choose my platform"
+    },
+    {
+      "start": 366.36,
+      "duration": 3.36,
+      "text": "then download the step package this is"
+    },
+    {
+      "start": 368.4,
+      "duration": 4.199,
+      "text": "going to be similar for you if you're"
+    },
+    {
+      "start": 369.72,
+      "duration": 5.36,
+      "text": "using Windows or Mac you need to install"
+    },
+    {
+      "start": 372.599,
+      "duration": 4.081,
+      "text": "the exe file or run a command in command"
+    },
+    {
+      "start": 375.08,
+      "duration": 3.679,
+      "text": "prompt make sure you go through the"
+    },
+    {
+      "start": 376.68,
+      "duration": 3.84,
+      "text": "system requirements before you install"
+    },
+    {
+      "start": 378.759,
+      "duration": 3.72,
+      "text": "it optionally I can also run this"
+    },
+    {
+      "start": 380.52,
+      "duration": 4.079,
+      "text": "commands here but I'm installing the de"
+    },
+    {
+      "start": 382.479,
+      "duration": 4.481,
+      "text": "package once I do that Docker will be"
+    },
+    {
+      "start": 384.599,
+      "duration": 4.241,
+      "text": "installed in my machine and I can start"
+    },
+    {
+      "start": 386.96,
+      "duration": 5.0,
+      "text": "working with Docker running Docker"
+    },
+    {
+      "start": 388.84,
+      "duration": 4.759,
+      "text": "commands to prize my application to"
+    },
+    {
+      "start": 391.96,
+      "duration": 4.12,
+      "text": "pause the video and come back after the"
+    },
+    {
+      "start": 393.599,
+      "duration": 4.081,
+      "text": "installation is done after you install"
+    },
+    {
+      "start": 396.08,
+      "duration": 3.6,
+      "text": "Docker and Docker desktop from the"
+    },
+    {
+      "start": 397.68,
+      "duration": 4.239,
+      "text": "official website you can open up Docker"
+    },
+    {
+      "start": 399.68,
+      "duration": 4.4,
+      "text": "desktop on your laptop this is Docker"
+    },
+    {
+      "start": 401.919,
+      "duration": 4.161,
+      "text": "desktop a graphical user interface where"
+    },
+    {
+      "start": 404.08,
+      "duration": 4.119,
+      "text": "you can see all your images containers"
+    },
+    {
+      "start": 406.08,
+      "duration": 4.04,
+      "text": "and volumes running in your local"
+    },
+    {
+      "start": 408.199,
+      "duration": 4.521,
+      "text": "machine optionally you can also use"
+    },
+    {
+      "start": 410.12,
+      "duration": 5.4,
+      "text": "Docker CLI which is a command line tool"
+    },
+    {
+      "start": 412.72,
+      "duration": 4.72,
+      "text": "and that lets you run that lets you"
+    },
+    {
+      "start": 415.52,
+      "duration": 4.119,
+      "text": "manage Docker containers using commands"
+    },
+    {
+      "start": 417.44,
+      "duration": 4.159,
+      "text": "to confirm you can simply run Docker D-"
+    },
+    {
+      "start": 419.639,
+      "duration": 3.521,
+      "text": "version command this is this will let"
+    },
+    {
+      "start": 421.599,
+      "duration": 4.88,
+      "text": "you Docker is installed and the version"
+    },
+    {
+      "start": 423.16,
+      "duration": 5.0,
+      "text": "is 25.0.2 this is Docker desktop the"
+    },
+    {
+      "start": 426.479,
+      "duration": 5.201,
+      "text": "graphical user interface this is Docker"
+    },
+    {
+      "start": 428.16,
+      "duration": 4.8,
+      "text": "CLI command line interface now in this"
+    },
+    {
+      "start": 431.68,
+      "duration": 2.799,
+      "text": "Docker desktop you can see the"
+    },
+    {
+      "start": 432.96,
+      "duration": 4.079,
+      "text": "containers right now we don't have any"
+    },
+    {
+      "start": 434.479,
+      "duration": 4.16,
+      "text": "containers but I can con I can create"
+    },
+    {
+      "start": 437.039,
+      "duration": 3.761,
+      "text": "and we will be able to see it here"
+    },
+    {
+      "start": 438.639,
+      "duration": 4.84,
+      "text": "similarly you can see the images volumes"
+    },
+    {
+      "start": 440.8,
+      "duration": 4.239,
+      "text": "Dev environments and Docker Scout Docker"
+    },
+    {
+      "start": 443.479,
+      "duration": 3.681,
+      "text": "Scout is a feature by Docker that lets"
+    },
+    {
+      "start": 445.039,
+      "duration": 4.041,
+      "text": "you scan your images for any security"
+    },
+    {
+      "start": 447.16,
+      "duration": 4.08,
+      "text": "issues and I have explained Docker Scout"
+    },
+    {
+      "start": 449.08,
+      "duration": 4.2,
+      "text": "along with other features like Docker"
+    },
+    {
+      "start": 451.24,
+      "duration": 4.639,
+      "text": "and it in my previous video you can"
+    },
+    {
+      "start": 453.28,
+      "duration": 2.599,
+      "text": "check it out"
+    },
+    {
+      "start": 456.479,
+      "duration": 4.28,
+      "text": "here now once we have Docker installed"
+    },
+    {
+      "start": 458.84,
+      "duration": 4.199,
+      "text": "in our machine we are ready to start"
+    },
+    {
+      "start": 460.759,
+      "duration": 3.521,
+      "text": "with learning Docker handson and also to"
+    },
+    {
+      "start": 463.039,
+      "duration": 3.401,
+      "text": "containerize our"
+    },
+    {
+      "start": 464.28,
+      "duration": 4.28,
+      "text": "application we create and containerize"
+    },
+    {
+      "start": 466.44,
+      "duration": 4.08,
+      "text": "our application but before we do that"
+    },
+    {
+      "start": 468.56,
+      "duration": 3.52,
+      "text": "being a good devops engineer you should"
+    },
+    {
+      "start": 470.52,
+      "duration": 3.88,
+      "text": "be understanding what does Docker"
+    },
+    {
+      "start": 472.08,
+      "duration": 3.88,
+      "text": "consist of how Docker actually works so"
+    },
+    {
+      "start": 474.4,
+      "duration": 4.0,
+      "text": "let's go deep in understanding the"
+    },
+    {
+      "start": 475.96,
+      "duration": 4.6,
+      "text": "docker architecture Docker consists of"
+    },
+    {
+      "start": 478.4,
+      "duration": 4.359,
+      "text": "three important things Cent Docker host"
+    },
+    {
+      "start": 480.56,
+      "duration": 4.4,
+      "text": "and registry inside Docker host we have"
+    },
+    {
+      "start": 482.759,
+      "duration": 4.44,
+      "text": "a Docker demon which is a background"
+    },
+    {
+      "start": 484.96,
+      "duration": 4.28,
+      "text": "process responsible for managing Docker"
+    },
+    {
+      "start": 487.199,
+      "duration": 4.881,
+      "text": "objects like Docker containers Docker"
+    },
+    {
+      "start": 489.24,
+      "duration": 4.2,
+      "text": "images and then you have Docker client a"
+    },
+    {
+      "start": 492.08,
+      "duration": 3.76,
+      "text": "a client is a tool that could be"
+    },
+    {
+      "start": 493.44,
+      "duration": 4.92,
+      "text": "graphical user interface or CLI command"
+    },
+    {
+      "start": 495.84,
+      "duration": 4.079,
+      "text": "line interface that is used by the users"
+    },
+    {
+      "start": 498.36,
+      "duration": 3.2,
+      "text": "to interact with the docker demon"
+    },
+    {
+      "start": 499.919,
+      "duration": 3.56,
+      "text": "through API calls so you run the"
+    },
+    {
+      "start": 501.56,
+      "duration": 3.68,
+      "text": "commands like Docker build Docker pull"
+    },
+    {
+      "start": 503.479,
+      "duration": 4.881,
+      "text": "through the client which in return will"
+    },
+    {
+      "start": 505.24,
+      "duration": 5.56,
+      "text": "create containers or create images using"
+    },
+    {
+      "start": 508.36,
+      "duration": 4.52,
+      "text": "Docker demon processor"
+    },
+    {
+      "start": 510.8,
+      "duration": 4.159,
+      "text": "next once you have your images created"
+    },
+    {
+      "start": 512.88,
+      "duration": 4.88,
+      "text": "you can also store it on registry which"
+    },
+    {
+      "start": 514.959,
+      "duration": 4.88,
+      "text": "is dockerhub the default registry"
+    },
+    {
+      "start": 517.76,
+      "duration": 4.6,
+      "text": "Registries let you create repositories"
+    },
+    {
+      "start": 519.839,
+      "duration": 4.641,
+      "text": "which are of two types public repository"
+    },
+    {
+      "start": 522.36,
+      "duration": 3.84,
+      "text": "private repository same as GitHub and we"
+    },
+    {
+      "start": 524.48,
+      "duration": 4.6,
+      "text": "use it to store and distribute Docker"
+    },
+    {
+      "start": 526.2,
+      "duration": 4.4,
+      "text": "images so Registries let you version"
+    },
+    {
+      "start": 529.08,
+      "duration": 3.92,
+      "text": "distribute and share images across"
+    },
+    {
+      "start": 530.6,
+      "duration": 2.4,
+      "text": "different"
+    },
+    {
+      "start": 533.04,
+      "duration": 4.479,
+      "text": "platforms and that is explained here in"
+    },
+    {
+      "start": 535.839,
+      "duration": 3.721,
+      "text": "the text so if you want me to share this"
+    },
+    {
+      "start": 537.519,
+      "duration": 4.641,
+      "text": "notes with you commment Docker Co and in"
+    },
+    {
+      "start": 539.56,
+      "duration": 4.519,
+      "text": "the comment section moving on let's do a"
+    },
+    {
+      "start": 542.16,
+      "duration": 4.28,
+      "text": "Hands-On project where we containerize a"
+    },
+    {
+      "start": 544.079,
+      "duration": 4.681,
+      "text": "nodejs application and deploy it as"
+    },
+    {
+      "start": 546.44,
+      "duration": 4.16,
+      "text": "Docker container also we will be pushing"
+    },
+    {
+      "start": 548.76,
+      "duration": 3.319,
+      "text": "that Docker image on dockerhub so you"
+    },
+    {
+      "start": 550.6,
+      "duration": 4.44,
+      "text": "will learn how to containerize an"
+    },
+    {
+      "start": 552.079,
+      "duration": 5.161,
+      "text": "application how to push the image from"
+    },
+    {
+      "start": 555.04,
+      "duration": 3.76,
+      "text": "your local machine to dockerhub uh"
+    },
+    {
+      "start": 557.24,
+      "duration": 4.719,
+      "text": "similarly you can also do it to other"
+    },
+    {
+      "start": 558.8,
+      "duration": 4.96,
+      "text": "repositories like ECR for this Docker"
+    },
+    {
+      "start": 561.959,
+      "duration": 4.44,
+      "text": "project we will be creating a nodejs"
+    },
+    {
+      "start": 563.76,
+      "duration": 4.84,
+      "text": "application that is a Todo application"
+    },
+    {
+      "start": 566.399,
+      "duration": 4.44,
+      "text": "where we can create list of items and"
+    },
+    {
+      "start": 568.6,
+      "duration": 5.28,
+      "text": "also check them once we do it we can"
+    },
+    {
+      "start": 570.839,
+      "duration": 4.24,
+      "text": "also delete them if we want to so we so"
+    },
+    {
+      "start": 573.88,
+      "duration": 3.079,
+      "text": "we will be containerizing this"
+    },
+    {
+      "start": 575.079,
+      "duration": 3.841,
+      "text": "application the code for this is present"
+    },
+    {
+      "start": 576.959,
+      "duration": 4.201,
+      "text": "on my GitHub repo and I will put the"
+    },
+    {
+      "start": 578.92,
+      "duration": 4.08,
+      "text": "link in the description so go ahead and"
+    },
+    {
+      "start": 581.16,
+      "duration": 3.72,
+      "text": "clone this code to start with"
+    },
+    {
+      "start": 583.0,
+      "duration": 3.32,
+      "text": "containerizing this application if you"
+    },
+    {
+      "start": 584.88,
+      "duration": 3.24,
+      "text": "want to learn how to containerize a"
+    },
+    {
+      "start": 586.32,
+      "duration": 3.519,
+      "text": "python application you can check out"
+    },
+    {
+      "start": 588.12,
+      "duration": 4.0,
+      "text": "this video where I've explained how you"
+    },
+    {
+      "start": 589.839,
+      "duration": 4.44,
+      "text": "can containerize a python application"
+    },
+    {
+      "start": 592.12,
+      "duration": 4.0,
+      "text": "using Docker commands so if you want to"
+    },
+    {
+      "start": 594.279,
+      "duration": 3.841,
+      "text": "learn about python you can check it here"
+    },
+    {
+      "start": 596.12,
+      "duration": 4.399,
+      "text": "in this demo we are containerizing a"
+    },
+    {
+      "start": 598.12,
+      "duration": 4.52,
+      "text": "node GS application and the code is here"
+    },
+    {
+      "start": 600.519,
+      "duration": 4.801,
+      "text": "so I'm going to go ahead with cloning"
+    },
+    {
+      "start": 602.64,
+      "duration": 5.52,
+      "text": "this code in my local"
+    },
+    {
+      "start": 605.32,
+      "duration": 5.0,
+      "text": "machine so let's go to projects"
+    },
+    {
+      "start": 608.16,
+      "duration": 4.679,
+      "text": "folder and inside this I'm going to run"
+    },
+    {
+      "start": 610.32,
+      "duration": 4.639,
+      "text": "the command get clone which will get all"
+    },
+    {
+      "start": 612.839,
+      "duration": 4.041,
+      "text": "the code inside my local machine once"
+    },
+    {
+      "start": 614.959,
+      "duration": 4.44,
+      "text": "the code is there I'm going to open that"
+    },
+    {
+      "start": 616.88,
+      "duration": 5.92,
+      "text": "that repository which is learn Docker"
+    },
+    {
+      "start": 619.399,
+      "duration": 6.521,
+      "text": "and let's open this in my vs"
+    },
+    {
+      "start": 622.8,
+      "duration": 5.8,
+      "text": "code so here is the code you can go"
+    },
+    {
+      "start": 625.92,
+      "duration": 5.8,
+      "text": "ahead and go through it this code uh is"
+    },
+    {
+      "start": 628.6,
+      "duration": 4.96,
+      "text": "written in JavaScript this is a nodejs"
+    },
+    {
+      "start": 631.72,
+      "duration": 4.76,
+      "text": "application which is going to create a"
+    },
+    {
+      "start": 633.56,
+      "duration": 5.68,
+      "text": "too app Todo app uh which also uses"
+    },
+    {
+      "start": 636.48,
+      "duration": 4.32,
+      "text": "postest database to insert data into now"
+    },
+    {
+      "start": 639.24,
+      "duration": 3.279,
+      "text": "to run this application locally you need"
+    },
+    {
+      "start": 640.8,
+      "duration": 3.88,
+      "text": "to run some commands and I'm going to"
+    },
+    {
+      "start": 642.519,
+      "duration": 3.801,
+      "text": "show you how to run it locally then how"
+    },
+    {
+      "start": 644.68,
+      "duration": 3.92,
+      "text": "to containerize it and run it as a"
+    },
+    {
+      "start": 646.32,
+      "duration": 2.28,
+      "text": "Docker"
+    },
+    {
+      "start": 649.18,
+      "duration": 4.54,
+      "text": "[Music]"
+    },
+    {
+      "start": 651.36,
+      "duration": 4.52,
+      "text": "container in this code we have list of"
+    },
+    {
+      "start": 653.72,
+      "duration": 4.16,
+      "text": "dependencies present inside package.json"
+    },
+    {
+      "start": 655.88,
+      "duration": 3.56,
+      "text": "that we need to install in order to run"
+    },
+    {
+      "start": 657.88,
+      "duration": 3.6,
+      "text": "this application if we don't have have"
+    },
+    {
+      "start": 659.44,
+      "duration": 4.32,
+      "text": "this installed it will not run so I'm"
+    },
+    {
+      "start": 661.48,
+      "duration": 4.12,
+      "text": "going to open up my terminal to run a"
+    },
+    {
+      "start": 663.76,
+      "duration": 4.8,
+      "text": "node GS application we use the command"
+    },
+    {
+      "start": 665.6,
+      "duration": 5.0,
+      "text": "npm start but before we start it it will"
+    },
+    {
+      "start": 668.56,
+      "duration": 3.12,
+      "text": "give an error saying module not found so"
+    },
+    {
+      "start": 670.6,
+      "duration": 3.64,
+      "text": "we need to install all these"
+    },
+    {
+      "start": 671.68,
+      "duration": 3.839,
+      "text": "dependencies or else it will not work so"
+    },
+    {
+      "start": 674.24,
+      "duration": 3.279,
+      "text": "to install all the dependencies I'm"
+    },
+    {
+      "start": 675.519,
+      "duration": 3.841,
+      "text": "going to run the command npm"
+    },
+    {
+      "start": 677.519,
+      "duration": 3.841,
+      "text": "install and this will go ahead and"
+    },
+    {
+      "start": 679.36,
+      "duration": 4.36,
+      "text": "install all the dependencies creating a"
+    },
+    {
+      "start": 681.36,
+      "duration": 4.719,
+      "text": "folder named as node modules here which"
+    },
+    {
+      "start": 683.72,
+      "duration": 4.2,
+      "text": "will make sure that the application runs"
+    },
+    {
+      "start": 686.079,
+      "duration": 4.481,
+      "text": "having all the dependencies installed so"
+    },
+    {
+      "start": 687.92,
+      "duration": 5.28,
+      "text": "now if I run npm start command you can"
+    },
+    {
+      "start": 690.56,
+      "duration": 5.0,
+      "text": "see it gave us the log output saying the"
+    },
+    {
+      "start": 693.2,
+      "duration": 5.199,
+      "text": "application is running on Port 3,000 so"
+    },
+    {
+      "start": 695.56,
+      "duration": 6.399,
+      "text": "let's go to our browser and open port"
+    },
+    {
+      "start": 698.399,
+      "duration": 6.481,
+      "text": "3000 so I'm going to say Local Host and"
+    },
+    {
+      "start": 701.959,
+      "duration": 6.0,
+      "text": "3,000 and this is our too application"
+    },
+    {
+      "start": 704.88,
+      "duration": 3.079,
+      "text": "where we can create"
+    },
+    {
+      "start": 708.279,
+      "duration": 5.201,
+      "text": "stuff and also delete it this is what we"
+    },
+    {
+      "start": 711.72,
+      "duration": 4.08,
+      "text": "want to containerize so rather than"
+    },
+    {
+      "start": 713.48,
+      "duration": 4.64,
+      "text": "running it locally on our machine like"
+    },
+    {
+      "start": 715.8,
+      "duration": 4.479,
+      "text": "we are doing it now we want it to run it"
+    },
+    {
+      "start": 718.12,
+      "duration": 3.959,
+      "text": "as a Docker container there so how can"
+    },
+    {
+      "start": 720.279,
+      "duration": 3.881,
+      "text": "we do that to do that we need to follow"
+    },
+    {
+      "start": 722.079,
+      "duration": 3.88,
+      "text": "the docker workflow what is a Docker"
+    },
+    {
+      "start": 724.16,
+      "duration": 3.119,
+      "text": "workflow so you want toize an"
+    },
+    {
+      "start": 725.959,
+      "duration": 3.361,
+      "text": "application you need to follow this"
+    },
+    {
+      "start": 727.279,
+      "duration": 3.601,
+      "text": "stalker workflow where you first write"
+    },
+    {
+      "start": 729.32,
+      "duration": 3.519,
+      "text": "the code so the developer is going to"
+    },
+    {
+      "start": 730.88,
+      "duration": 3.639,
+      "text": "write the code for the application we"
+    },
+    {
+      "start": 732.839,
+      "duration": 3.921,
+      "text": "already have the code present so we are"
+    },
+    {
+      "start": 734.519,
+      "duration": 4.081,
+      "text": "skipping this part now second is to"
+    },
+    {
+      "start": 736.76,
+      "duration": 3.72,
+      "text": "create a Docker file so we need to"
+    },
+    {
+      "start": 738.6,
+      "duration": 4.239,
+      "text": "create a Docker file which is a file"
+    },
+    {
+      "start": 740.48,
+      "duration": 4.64,
+      "text": "that includes set of instructions on how"
+    },
+    {
+      "start": 742.839,
+      "duration": 3.8,
+      "text": "you want your Docker image to be once"
+    },
+    {
+      "start": 745.12,
+      "duration": 4.2,
+      "text": "you have the docker file you can run the"
+    },
+    {
+      "start": 746.639,
+      "duration": 4.601,
+      "text": "command to create a Docker image a"
+    },
+    {
+      "start": 749.32,
+      "duration": 4.759,
+      "text": "Docker image is kind of a snapshot or a"
+    },
+    {
+      "start": 751.24,
+      "duration": 5.24,
+      "text": "screenshot of your application which you"
+    },
+    {
+      "start": 754.079,
+      "duration": 4.081,
+      "text": "can share uh which you can share using"
+    },
+    {
+      "start": 756.48,
+      "duration": 3.64,
+      "text": "dockerhub or which you can directly run"
+    },
+    {
+      "start": 758.16,
+      "duration": 4.52,
+      "text": "as a Docker container so out of this"
+    },
+    {
+      "start": 760.12,
+      "duration": 4.12,
+      "text": "code we need to First create Docker file"
+    },
+    {
+      "start": 762.68,
+      "duration": 3.76,
+      "text": "through using which we can create Docker"
+    },
+    {
+      "start": 764.24,
+      "duration": 4.44,
+      "text": "image and then we can share this image"
+    },
+    {
+      "start": 766.44,
+      "duration": 4.92,
+      "text": "or run it as a Docker container so let's"
+    },
+    {
+      "start": 768.68,
+      "duration": 4.32,
+      "text": "start with creating a Docker file now so"
+    },
+    {
+      "start": 771.36,
+      "duration": 5.56,
+      "text": "inside my vs code I'm going to create a"
+    },
+    {
+      "start": 773.0,
+      "duration": 5.959,
+      "text": "new file and name it as Docker file make"
+    },
+    {
+      "start": 776.92,
+      "duration": 4.2,
+      "text": "sure to use the same naming Convention"
+    },
+    {
+      "start": 778.959,
+      "duration": 4.161,
+      "text": "of naming format and you can see there's"
+    },
+    {
+      "start": 781.12,
+      "duration": 4.159,
+      "text": "a Docker symbol here which means this is"
+    },
+    {
+      "start": 783.12,
+      "duration": 3.839,
+      "text": "this is a Docker file one more thing to"
+    },
+    {
+      "start": 785.279,
+      "duration": 3.321,
+      "text": "note if you're trying to run this npm"
+    },
+    {
+      "start": 786.959,
+      "duration": 3.68,
+      "text": "command or try to run this node"
+    },
+    {
+      "start": 788.6,
+      "duration": 4.28,
+      "text": "application you need to have node"
+    },
+    {
+      "start": 790.639,
+      "duration": 4.041,
+      "text": "installed in your machine I already have"
+    },
+    {
+      "start": 792.88,
+      "duration": 5.44,
+      "text": "node installed so if I run node DV"
+    },
+    {
+      "start": 794.68,
+      "duration": 3.64,
+      "text": "command you can see node"
+    },
+    {
+      "start": 809.12,
+      "duration": 4.279,
+      "text": "node and you can install node for your"
+    },
+    {
+      "start": 811.839,
+      "duration": 2.841,
+      "text": "operating system I have it already"
+    },
+    {
+      "start": 813.399,
+      "duration": 3.0,
+      "text": "installed if you're trying to run it"
+    },
+    {
+      "start": 814.68,
+      "duration": 3.519,
+      "text": "locally make sure you have it installed"
+    },
+    {
+      "start": 816.399,
+      "duration": 4.921,
+      "text": "in your machine and only then you can"
+    },
+    {
+      "start": 818.199,
+      "duration": 5.481,
+      "text": "run this nodejs application so now let's"
+    },
+    {
+      "start": 821.32,
+      "duration": 4.04,
+      "text": "start with writing our Docker file"
+    },
+    {
+      "start": 823.68,
+      "duration": 3.44,
+      "text": "inside Docker file we will have set of"
+    },
+    {
+      "start": 825.36,
+      "duration": 4.12,
+      "text": "instructions on how we want our"
+    },
+    {
+      "start": 827.12,
+      "duration": 4.0,
+      "text": "container to be so I'm going to quickly"
+    },
+    {
+      "start": 829.48,
+      "duration": 3.64,
+      "text": "create a Docker file for you if you want"
+    },
+    {
+      "start": 831.12,
+      "duration": 3.8,
+      "text": "me to explain if if you want me to"
+    },
+    {
+      "start": 833.12,
+      "duration": 3.68,
+      "text": "create an in-depth video explaining all"
+    },
+    {
+      "start": 834.92,
+      "duration": 3.359,
+      "text": "the different Docker file instructions"
+    },
+    {
+      "start": 836.8,
+      "duration": 3.959,
+      "text": "let me know in the comment section and I"
+    },
+    {
+      "start": 838.279,
+      "duration": 3.56,
+      "text": "will create a video where I go deep down"
+    },
+    {
+      "start": 840.759,
+      "duration": 3.88,
+      "text": "understanding all the different"
+    },
+    {
+      "start": 841.839,
+      "duration": 3.961,
+      "text": "instructions to create a Docker file so"
+    },
+    {
+      "start": 844.639,
+      "duration": 3.161,
+      "text": "what are different instructions that we"
+    },
+    {
+      "start": 845.8,
+      "duration": 4.32,
+      "text": "can use to create a Docker file if I go"
+    },
+    {
+      "start": 847.8,
+      "duration": 4.24,
+      "text": "to the official documentation by Docker"
+    },
+    {
+      "start": 850.12,
+      "duration": 4.959,
+      "text": "and search for Docker file"
+    },
+    {
+      "start": 852.04,
+      "duration": 4.32,
+      "text": "instructions you can see to create a"
+    },
+    {
+      "start": 855.079,
+      "duration": 3.68,
+      "text": "Docker file you have to use all these"
+    },
+    {
+      "start": 856.36,
+      "duration": 4.36,
+      "text": "different instructions like from uh"
+    },
+    {
+      "start": 858.759,
+      "duration": 4.08,
+      "text": "label environment entry point and these"
+    },
+    {
+      "start": 860.72,
+      "duration": 4.32,
+      "text": "are used for different use cases we use"
+    },
+    {
+      "start": 862.839,
+      "duration": 4.481,
+      "text": "the from instructions to set the base"
+    },
+    {
+      "start": 865.04,
+      "duration": 5.0,
+      "text": "image on which our container is going to"
+    },
+    {
+      "start": 867.32,
+      "duration": 4.12,
+      "text": "be created then we use the EnV"
+    },
+    {
+      "start": 870.04,
+      "duration": 3.84,
+      "text": "instruction to set the environment"
+    },
+    {
+      "start": 871.44,
+      "duration": 5.16,
+      "text": "variable we use copy instructions to"
+    },
+    {
+      "start": 873.88,
+      "duration": 5.519,
+      "text": "copy files or folders from one one place"
+    },
+    {
+      "start": 876.6,
+      "duration": 4.88,
+      "text": "to another similarly we use CMD argument"
+    },
+    {
+      "start": 879.399,
+      "duration": 3.921,
+      "text": "add and all that as I said if you want"
+    },
+    {
+      "start": 881.48,
+      "duration": 3.84,
+      "text": "me to create an in-depth video on all"
+    },
+    {
+      "start": 883.32,
+      "duration": 3.4,
+      "text": "these different instructions let me know"
+    },
+    {
+      "start": 885.32,
+      "duration": 3.6,
+      "text": "in the comment section and I can create"
+    },
+    {
+      "start": 886.72,
+      "duration": 4.559,
+      "text": "a practical video explaining each of"
+    },
+    {
+      "start": 888.92,
+      "duration": 3.719,
+      "text": "these instructions step by step with"
+    },
+    {
+      "start": 891.279,
+      "duration": 2.841,
+      "text": "that being said now let's start with"
+    },
+    {
+      "start": 892.639,
+      "duration": 3.921,
+      "text": "creating a Docker file for our"
+    },
+    {
+      "start": 894.12,
+      "duration": 3.8,
+      "text": "application so we can containerize it so"
+    },
+    {
+      "start": 896.56,
+      "duration": 4.12,
+      "text": "the first thing is going to be setting a"
+    },
+    {
+      "start": 897.92,
+      "duration": 4.2,
+      "text": "base image so I'm going to say from so"
+    },
+    {
+      "start": 900.68,
+      "duration": 4.599,
+      "text": "as this is a node application I'm going"
+    },
+    {
+      "start": 902.12,
+      "duration": 5.48,
+      "text": "to use the base image as node uh and you"
+    },
+    {
+      "start": 905.279,
+      "duration": 4.721,
+      "text": "can find all the images on dockerhub so"
+    },
+    {
+      "start": 907.6,
+      "duration": 4.52,
+      "text": "if you go to dockerhub which is a public"
+    },
+    {
+      "start": 910.0,
+      "duration": 5.04,
+      "text": "registry where you can file all the"
+    },
+    {
+      "start": 912.12,
+      "duration": 5.04,
+      "text": "different images you can search for node"
+    },
+    {
+      "start": 915.04,
+      "duration": 4.96,
+      "text": "so I'm going to search for node"
+    },
+    {
+      "start": 917.16,
+      "duration": 4.799,
+      "text": "here and you see node is here which is"
+    },
+    {
+      "start": 920.0,
+      "duration": 4.6,
+      "text": "the official Docker image these are the"
+    },
+    {
+      "start": 921.959,
+      "duration": 4.521,
+      "text": "official images maintained by node"
+    },
+    {
+      "start": 924.6,
+      "duration": 4.44,
+      "text": "itself or the company itself so I can"
+    },
+    {
+      "start": 926.48,
+      "duration": 4.479,
+      "text": "click on this and now if I want to use"
+    },
+    {
+      "start": 929.04,
+      "duration": 4.479,
+      "text": "this I can simply say Docker pull node"
+    },
+    {
+      "start": 930.959,
+      "duration": 4.281,
+      "text": "which will get this image in my local"
+    },
+    {
+      "start": 933.519,
+      "duration": 3.56,
+      "text": "machine but I'm going to create Docker"
+    },
+    {
+      "start": 935.24,
+      "duration": 3.92,
+      "text": "file so I want to use an image or the"
+    },
+    {
+      "start": 937.079,
+      "duration": 3.801,
+      "text": "base image from all these different"
+    },
+    {
+      "start": 939.16,
+      "duration": 5.799,
+      "text": "versions here so I can choose to use"
+    },
+    {
+      "start": 940.88,
+      "duration": 7.24,
+      "text": "Docker 21 hyphen Alpine or anything here"
+    },
+    {
+      "start": 944.959,
+      "duration": 6.201,
+      "text": "let's try to use something uh let's say"
+    },
+    {
+      "start": 948.12,
+      "duration": 4.519,
+      "text": "21 hyphen Alpine here so I'm going to"
+    },
+    {
+      "start": 951.16,
+      "duration": 8.039,
+      "text": "save"
+    },
+    {
+      "start": 952.639,
+      "duration": 8.601,
+      "text": "from node colon 21 hon Alpine so I'm"
+    },
+    {
+      "start": 959.199,
+      "duration": 4.44,
+      "text": "saying I want to create my container"
+    },
+    {
+      "start": 961.24,
+      "duration": 5.48,
+      "text": "based on this particular image so you"
+    },
+    {
+      "start": 963.639,
+      "duration": 5.12,
+      "text": "can see the from instruction is used to"
+    },
+    {
+      "start": 966.72,
+      "duration": 4.119,
+      "text": "set the base image for subsequent"
+    },
+    {
+      "start": 968.759,
+      "duration": 3.601,
+      "text": "instructions once we have the base image"
+    },
+    {
+      "start": 970.839,
+      "duration": 3.721,
+      "text": "set I'm going to set the working"
+    },
+    {
+      "start": 972.36,
+      "duration": 3.839,
+      "text": "directory which is the folder inside the"
+    },
+    {
+      "start": 974.56,
+      "duration": 3.16,
+      "text": "container where I want to start working"
+    },
+    {
+      "start": 976.199,
+      "duration": 3.521,
+      "text": "from so you can see work directory is"
+    },
+    {
+      "start": 977.72,
+      "duration": 4.919,
+      "text": "setting the working directory for any"
+    },
+    {
+      "start": 979.72,
+      "duration": 4.84,
+      "text": "subsequent add copy command that follow"
+    },
+    {
+      "start": 982.639,
+      "duration": 3.401,
+      "text": "in the docker file so once I set this"
+    },
+    {
+      "start": 984.56,
+      "duration": 3.04,
+      "text": "working directory all the next"
+    },
+    {
+      "start": 986.04,
+      "duration": 3.719,
+      "text": "instructions will be running inside this"
+    },
+    {
+      "start": 987.6,
+      "duration": 5.84,
+      "text": "particular folder which I'm going to set"
+    },
+    {
+      "start": 989.759,
+      "duration": 6.361,
+      "text": "as/ user slsrc"
+    },
+    {
+      "start": 993.44,
+      "duration": 4.16,
+      "text": "SLA next I'm going to copy my"
+    },
+    {
+      "start": 996.12,
+      "duration": 3.44,
+      "text": "package.json which has all the"
+    },
+    {
+      "start": 997.6,
+      "duration": 6.08,
+      "text": "dependencies from my local machine"
+    },
+    {
+      "start": 999.56,
+      "duration": 7.36,
+      "text": "inside my container so I'll say copy"
+    },
+    {
+      "start": 1003.68,
+      "duration": 4.959,
+      "text": "package dot along with uh package I also"
+    },
+    {
+      "start": 1006.92,
+      "duration": 4.159,
+      "text": "want to copy the package lock so I'll"
+    },
+    {
+      "start": 1008.639,
+      "duration": 4.32,
+      "text": "say package star which means every file"
+    },
+    {
+      "start": 1011.079,
+      "duration": 4.281,
+      "text": "starting with package should be copied"
+    },
+    {
+      "start": 1012.959,
+      "duration": 7.041,
+      "text": "from here into the Container so packet"
+    },
+    {
+      "start": 1015.36,
+      "duration": 7.56,
+      "text": "star. Json from here inside user slsrc"
+    },
+    {
+      "start": 1020.0,
+      "duration": 4.48,
+      "text": "slapp folder now once I have this I'm"
+    },
+    {
+      "start": 1022.92,
+      "duration": 4.36,
+      "text": "going to run the command to install all"
+    },
+    {
+      "start": 1024.48,
+      "duration": 4.8,
+      "text": "the dependencies which was npm install"
+    },
+    {
+      "start": 1027.28,
+      "duration": 4.24,
+      "text": "command if you see we run the npm"
+    },
+    {
+      "start": 1029.28,
+      "duration": 4.2,
+      "text": "install command uh to install all the"
+    },
+    {
+      "start": 1031.52,
+      "duration": 4.72,
+      "text": "dependencies present inside package.json"
+    },
+    {
+      "start": 1033.48,
+      "duration": 4.599,
+      "text": "so I'm going to say run instruction"
+    },
+    {
+      "start": 1036.24,
+      "duration": 4.48,
+      "text": "which is the instruction to run a"
+    },
+    {
+      "start": 1038.079,
+      "duration": 6.161,
+      "text": "command so using run you can execute any"
+    },
+    {
+      "start": 1040.72,
+      "duration": 5.0,
+      "text": "command so I'm saying run npm install"
+    },
+    {
+      "start": 1044.24,
+      "duration": 3.88,
+      "text": "this will install all the dependencies"
+    },
+    {
+      "start": 1045.72,
+      "duration": 4.8,
+      "text": "to make sure our application uh to make"
+    },
+    {
+      "start": 1048.12,
+      "duration": 3.679,
+      "text": "sure our application is ready to run"
+    },
+    {
+      "start": 1050.52,
+      "duration": 3.72,
+      "text": "once I have that I'm going to copy"
+    },
+    {
+      "start": 1051.799,
+      "duration": 4.841,
+      "text": "everything from here to my container"
+    },
+    {
+      "start": 1054.24,
+      "duration": 4.48,
+      "text": "using the same copy command so copy Dot"
+    },
+    {
+      "start": 1056.64,
+      "duration": 4.76,
+      "text": "from dot dot means everything all the"
+    },
+    {
+      "start": 1058.72,
+      "duration": 7.12,
+      "text": "files and the folders from here inside"
+    },
+    {
+      "start": 1061.4,
+      "duration": 6.519,
+      "text": "the/ user slsrc slapp folder once I do"
+    },
+    {
+      "start": 1065.84,
+      "duration": 4.0,
+      "text": "this I am now ready to run my"
+    },
+    {
+      "start": 1067.919,
+      "duration": 4.321,
+      "text": "application but before I do that let's"
+    },
+    {
+      "start": 1069.84,
+      "duration": 4.8,
+      "text": "expose the port uh we run our"
+    },
+    {
+      "start": 1072.24,
+      "duration": 4.16,
+      "text": "application on local host on the port"
+    },
+    {
+      "start": 1074.64,
+      "duration": 4.84,
+      "text": "3,000 so I'm going to expose the same"
+    },
+    {
+      "start": 1076.4,
+      "duration": 6.0,
+      "text": "application using 3,000 Port here"
+    },
+    {
+      "start": 1079.48,
+      "duration": 5.8,
+      "text": "once I do that I'm going to execute or"
+    },
+    {
+      "start": 1082.4,
+      "duration": 7.32,
+      "text": "run my node application using CMD so"
+    },
+    {
+      "start": 1085.28,
+      "duration": 6.84,
+      "text": "I'll say npm start so"
+    },
+    {
+      "start": 1089.72,
+      "duration": 5.4,
+      "text": "npm comma"
+    },
+    {
+      "start": 1092.12,
+      "duration": 5.64,
+      "text": "start so this is our Docker file which"
+    },
+    {
+      "start": 1095.12,
+      "duration": 4.679,
+      "text": "has different instructions first we are"
+    },
+    {
+      "start": 1097.76,
+      "duration": 4.039,
+      "text": "setting the base image which is node"
+    },
+    {
+      "start": 1099.799,
+      "duration": 4.561,
+      "text": "Alpine node 21 Alpine then we are"
+    },
+    {
+      "start": 1101.799,
+      "duration": 4.921,
+      "text": "setting the working directory on which"
+    },
+    {
+      "start": 1104.36,
+      "duration": 3.52,
+      "text": "folder do we want need to start working"
+    },
+    {
+      "start": 1106.72,
+      "duration": 3.959,
+      "text": "next we are going to copy our"
+    },
+    {
+      "start": 1107.88,
+      "duration": 4.72,
+      "text": "package.json files and we then run the"
+    },
+    {
+      "start": 1110.679,
+      "duration": 5.041,
+      "text": "command to install the dependency we"
+    },
+    {
+      "start": 1112.6,
+      "duration": 5.4,
+      "text": "copy everything from here inside the"
+    },
+    {
+      "start": 1115.72,
+      "duration": 4.72,
+      "text": "container expose Port 3,000 and then"
+    },
+    {
+      "start": 1118.0,
+      "duration": 4.679,
+      "text": "command to start our"
+    },
+    {
+      "start": 1120.44,
+      "duration": 4.119,
+      "text": "application so we have our Docker file"
+    },
+    {
+      "start": 1122.679,
+      "duration": 3.601,
+      "text": "ready now we are going to run the"
+    },
+    {
+      "start": 1124.559,
+      "duration": 4.041,
+      "text": "command to create an image out of this"
+    },
+    {
+      "start": 1126.28,
+      "duration": 4.56,
+      "text": "Docker file so if you follow the docker"
+    },
+    {
+      "start": 1128.6,
+      "duration": 3.72,
+      "text": "workflow after we have the code we now"
+    },
+    {
+      "start": 1130.84,
+      "duration": 3.719,
+      "text": "have the docker file so we are going to"
+    },
+    {
+      "start": 1132.32,
+      "duration": 5.16,
+      "text": "run the commands to create a Docker"
+    },
+    {
+      "start": 1134.559,
+      "duration": 5.401,
+      "text": "image from this Docker"
+    },
+    {
+      "start": 1137.48,
+      "duration": 3.6,
+      "text": "file so so to create an image out of the"
+    },
+    {
+      "start": 1139.96,
+      "duration": 3.16,
+      "text": "docker file we are going to use the"
+    },
+    {
+      "start": 1141.08,
+      "duration": 3.479,
+      "text": "command which is Docker build if you"
+    },
+    {
+      "start": 1143.12,
+      "duration": 2.84,
+      "text": "want to see all the different commands"
+    },
+    {
+      "start": 1144.559,
+      "duration": 4.0,
+      "text": "you can just type Docker and you will"
+    },
+    {
+      "start": 1145.96,
+      "duration": 5.16,
+      "text": "get the list of commands build an image"
+    },
+    {
+      "start": 1148.559,
+      "duration": 4.321,
+      "text": "from a Docker file so the build command"
+    },
+    {
+      "start": 1151.12,
+      "duration": 3.28,
+      "text": "is used to create an image from a Docker"
+    },
+    {
+      "start": 1152.88,
+      "duration": 3.48,
+      "text": "file we have a Docker file ready so I'm"
+    },
+    {
+      "start": 1154.4,
+      "duration": 6.2,
+      "text": "going to say"
+    },
+    {
+      "start": 1156.36,
+      "duration": 6.799,
+      "text": "Docker so I'm going to say Docker build"
+    },
+    {
+      "start": 1160.6,
+      "duration": 4.28,
+      "text": "hyphen T stands for tag which means you"
+    },
+    {
+      "start": 1163.159,
+      "duration": 6.76,
+      "text": "can give the name to your image so I'm"
+    },
+    {
+      "start": 1164.88,
+      "duration": 7.159,
+      "text": "going to say my Todo app so my too"
+    },
+    {
+      "start": 1169.919,
+      "duration": 3.841,
+      "text": "app and then I'm going to say use the"
+    },
+    {
+      "start": 1172.039,
+      "duration": 4.201,
+      "text": "docker image present inside this folder"
+    },
+    {
+      "start": 1173.76,
+      "duration": 5.08,
+      "text": "which is here so I'm saying Docker build"
+    },
+    {
+      "start": 1176.24,
+      "duration": 4.72,
+      "text": "hyphen T create an image from a Docker"
+    },
+    {
+      "start": 1178.84,
+      "duration": 4.319,
+      "text": "file present inside this folder having"
+    },
+    {
+      "start": 1180.96,
+      "duration": 5.16,
+      "text": "the name my Todo app once I run this"
+    },
+    {
+      "start": 1183.159,
+      "duration": 4.921,
+      "text": "Docker will start creating the image"
+    },
+    {
+      "start": 1186.12,
+      "duration": 4.2,
+      "text": "layer by layer so you can see it's now"
+    },
+    {
+      "start": 1188.08,
+      "duration": 4.76,
+      "text": "in building stage and this is the first"
+    },
+    {
+      "start": 1190.32,
+      "duration": 4.32,
+      "text": "layer which is the from instruction then"
+    },
+    {
+      "start": 1192.84,
+      "duration": 4.4,
+      "text": "it will go and execute the next layers"
+    },
+    {
+      "start": 1194.64,
+      "duration": 5.32,
+      "text": "to create a Docker image so very soon we"
+    },
+    {
+      "start": 1197.24,
+      "duration": 4.84,
+      "text": "will have an image named as my to do app"
+    },
+    {
+      "start": 1199.96,
+      "duration": 4.8,
+      "text": "which we can share on dockerhub or also"
+    },
+    {
+      "start": 1202.08,
+      "duration": 5.959,
+      "text": "run it as a container so you can see it"
+    },
+    {
+      "start": 1204.76,
+      "duration": 3.279,
+      "text": "is installing the packages"
+    },
+    {
+      "start": 1218.96,
+      "duration": 4.44,
+      "text": "here okay Docker build command has"
+    },
+    {
+      "start": 1221.48,
+      "duration": 4.559,
+      "text": "executed successfully let's run the"
+    },
+    {
+      "start": 1223.4,
+      "duration": 4.399,
+      "text": "docker images command this command is to"
+    },
+    {
+      "start": 1226.039,
+      "duration": 3.721,
+      "text": "show you the list of images you have in"
+    },
+    {
+      "start": 1227.799,
+      "duration": 4.321,
+      "text": "your local machine so when I run Docker"
+    },
+    {
+      "start": 1229.76,
+      "duration": 5.12,
+      "text": "images I will be able to see that I do I"
+    },
+    {
+      "start": 1232.12,
+      "duration": 5.76,
+      "text": "have a image created named as my Todo"
+    },
+    {
+      "start": 1234.88,
+      "duration": 6.64,
+      "text": "app which was created 14 seconds ago you"
+    },
+    {
+      "start": 1237.88,
+      "duration": 5.2,
+      "text": "can also see this in your uh Docker"
+    },
+    {
+      "start": 1241.52,
+      "duration": 3.6,
+      "text": "desktop which is the graphical user"
+    },
+    {
+      "start": 1243.08,
+      "duration": 4.0,
+      "text": "interface so now I have a to-do app"
+    },
+    {
+      "start": 1245.12,
+      "duration": 4.28,
+      "text": "which is created and the status is"
+    },
+    {
+      "start": 1247.08,
+      "duration": 5.32,
+      "text": "unused it was created less than a minute"
+    },
+    {
+      "start": 1249.4,
+      "duration": 5.759,
+      "text": "ago the size is this so now I can go"
+    },
+    {
+      "start": 1252.4,
+      "duration": 5.0,
+      "text": "ahead and push this to my Docker Hub or"
+    },
+    {
+      "start": 1255.159,
+      "duration": 4.161,
+      "text": "I can also run it as a Docker container"
+    },
+    {
+      "start": 1257.4,
+      "duration": 4.6,
+      "text": "before I push it to docker up let's test"
+    },
+    {
+      "start": 1259.32,
+      "duration": 4.88,
+      "text": "out if the container if the image is"
+    },
+    {
+      "start": 1262.0,
+      "duration": 4.76,
+      "text": "doing exactly what we wanted so when I"
+    },
+    {
+      "start": 1264.2,
+      "duration": 4.92,
+      "text": "run it I should be able to see the to-do"
+    },
+    {
+      "start": 1266.76,
+      "duration": 4.76,
+      "text": "application uh on my"
+    },
+    {
+      "start": 1269.12,
+      "duration": 3.96,
+      "text": "browser so to run an image as a Docker"
+    },
+    {
+      "start": 1271.52,
+      "duration": 4.44,
+      "text": "container we need to run the command"
+    },
+    {
+      "start": 1273.08,
+      "duration": 4.88,
+      "text": "Docker run and we can pass in some"
+    },
+    {
+      "start": 1275.96,
+      "duration": 5.0,
+      "text": "arguments like hyphen it to use the"
+    },
+    {
+      "start": 1277.96,
+      "duration": 5.52,
+      "text": "interactive shell hyphen D to run it as"
+    },
+    {
+      "start": 1280.96,
+      "duration": 5.48,
+      "text": "a detach mode in the background and"
+    },
+    {
+      "start": 1283.48,
+      "duration": 4.679,
+      "text": "hyphen P to attach ports or map the"
+    },
+    {
+      "start": 1286.44,
+      "duration": 3.2,
+      "text": "ports so I'm going to say run this"
+    },
+    {
+      "start": 1288.159,
+      "duration": 3.52,
+      "text": "application"
+    },
+    {
+      "start": 1289.64,
+      "duration": 4.639,
+      "text": "as a Docker container running on Port"
+    },
+    {
+      "start": 1291.679,
+      "duration": 5.681,
+      "text": "3,000 in my local machine map to the"
+    },
+    {
+      "start": 1294.279,
+      "duration": 5.161,
+      "text": "port 3,000 on the docker container and"
+    },
+    {
+      "start": 1297.36,
+      "duration": 4.6,
+      "text": "with this I'm going to now put the image"
+    },
+    {
+      "start": 1299.44,
+      "duration": 3.8,
+      "text": "ID or the image name so that it can run"
+    },
+    {
+      "start": 1301.96,
+      "duration": 2.719,
+      "text": "it as a Docker container so I'm going to"
+    },
+    {
+      "start": 1303.24,
+      "duration": 4.84,
+      "text": "say the name of the image which is my"
+    },
+    {
+      "start": 1304.679,
+      "duration": 6.201,
+      "text": "Todo app so I'll say my Todo app once I"
+    },
+    {
+      "start": 1308.08,
+      "duration": 5.32,
+      "text": "do this you can see the it is going to"
+    },
+    {
+      "start": 1310.88,
+      "duration": 5.36,
+      "text": "run it it is going to run as a container"
+    },
+    {
+      "start": 1313.4,
+      "duration": 5.759,
+      "text": "so now once I press enter I get this"
+    },
+    {
+      "start": 1316.24,
+      "duration": 4.96,
+      "text": "random number and inside my ER desktop"
+    },
+    {
+      "start": 1319.159,
+      "duration": 3.88,
+      "text": "you will be able to see that a container"
+    },
+    {
+      "start": 1321.2,
+      "duration": 4.76,
+      "text": "is running with the name happy night"
+    },
+    {
+      "start": 1323.039,
+      "duration": 6.161,
+      "text": "angle you can also check that inside"
+    },
+    {
+      "start": 1325.96,
+      "duration": 5.16,
+      "text": "your terminal by running Docker PS"
+    },
+    {
+      "start": 1329.2,
+      "duration": 3.16,
+      "text": "command the docker PS will give you all"
+    },
+    {
+      "start": 1331.12,
+      "duration": 3.159,
+      "text": "the existing containers which are"
+    },
+    {
+      "start": 1332.36,
+      "duration": 5.4,
+      "text": "running so this container is running on"
+    },
+    {
+      "start": 1334.279,
+      "duration": 6.121,
+      "text": "Port 3,000 as you can see here on using"
+    },
+    {
+      "start": 1337.76,
+      "duration": 5.0,
+      "text": "TCP uh you can also see it here so if I"
+    },
+    {
+      "start": 1340.4,
+      "duration": 5.399,
+      "text": "open up my local L 3,000 I should be"
+    },
+    {
+      "start": 1342.76,
+      "duration": 6.2,
+      "text": "able to see a too application here which"
+    },
+    {
+      "start": 1345.799,
+      "duration": 4.601,
+      "text": "is running as a Docker container so this"
+    },
+    {
+      "start": 1348.96,
+      "duration": 3.56,
+      "text": "is how you can containerize your"
+    },
+    {
+      "start": 1350.4,
+      "duration": 4.0,
+      "text": "application you need to First create a"
+    },
+    {
+      "start": 1352.52,
+      "duration": 3.6,
+      "text": "Docker file using that Docker file you"
+    },
+    {
+      "start": 1354.4,
+      "duration": 4.0,
+      "text": "build an image and using that image you"
+    },
+    {
+      "start": 1356.12,
+      "duration": 4.84,
+      "text": "run a container so now we have learned"
+    },
+    {
+      "start": 1358.4,
+      "duration": 4.8,
+      "text": "the steps on how Docker books how do you"
+    },
+    {
+      "start": 1360.96,
+      "duration": 4.24,
+      "text": "containerize your"
+    },
+    {
+      "start": 1363.2,
+      "duration": 4.079,
+      "text": "application I want you to try this"
+    },
+    {
+      "start": 1365.2,
+      "duration": 3.52,
+      "text": "project the link for the repository is"
+    },
+    {
+      "start": 1367.279,
+      "duration": 4.441,
+      "text": "going to be in the description make sure"
+    },
+    {
+      "start": 1368.72,
+      "duration": 5.079,
+      "text": "you try this out to understand Docker"
+    },
+    {
+      "start": 1371.72,
+      "duration": 3.68,
+      "text": "properly optionally if you don't want to"
+    },
+    {
+      "start": 1373.799,
+      "duration": 3.441,
+      "text": "create this Docker file or if you don't"
+    },
+    {
+      "start": 1375.4,
+      "duration": 3.879,
+      "text": "know how to create a Docker file you can"
+    },
+    {
+      "start": 1377.24,
+      "duration": 3.799,
+      "text": "use the docker in it command which is"
+    },
+    {
+      "start": 1379.279,
+      "duration": 4.361,
+      "text": "the new command by Docker that will"
+    },
+    {
+      "start": 1381.039,
+      "duration": 5.041,
+      "text": "create Docker file compose file do"
+    },
+    {
+      "start": 1383.64,
+      "duration": 4.24,
+      "text": "Docker ignore file all automatically for"
+    },
+    {
+      "start": 1386.08,
+      "duration": 3.479,
+      "text": "you once you run the docker init command"
+    },
+    {
+      "start": 1387.88,
+      "duration": 3.52,
+      "text": "if you want to see how it works make"
+    },
+    {
+      "start": 1389.559,
+      "duration": 4.041,
+      "text": "sure to check out the video in this I've"
+    },
+    {
+      "start": 1391.4,
+      "duration": 4.56,
+      "text": "explained how Docker init can be used to"
+    },
+    {
+      "start": 1393.6,
+      "duration": 4.36,
+      "text": "automatically create Docker files for"
+    },
+    {
+      "start": 1395.96,
+      "duration": 4.199,
+      "text": "you uh and you can also use this"
+    },
+    {
+      "start": 1397.96,
+      "duration": 4.199,
+      "text": "documentation by Docker where we have"
+    },
+    {
+      "start": 1400.159,
+      "duration": 3.841,
+      "text": "used the same application and use Docker"
+    },
+    {
+      "start": 1402.159,
+      "duration": 4.601,
+      "text": "in it to create Docker files Docker"
+    },
+    {
+      "start": 1404.0,
+      "duration": 4.919,
+      "text": "compose file and run it using Docker"
+    },
+    {
+      "start": 1406.76,
+      "duration": 4.08,
+      "text": "compose here so this was our application"
+    },
+    {
+      "start": 1408.919,
+      "duration": 3.161,
+      "text": "I hope you try it out the link is going"
+    },
+    {
+      "start": 1410.84,
+      "duration": 3.64,
+      "text": "to be in the description for the"
+    },
+    {
+      "start": 1412.08,
+      "duration": 4.28,
+      "text": "repository make sure to try this out and"
+    },
+    {
+      "start": 1414.48,
+      "duration": 3.76,
+      "text": "share it with share it with your friends"
+    },
+    {
+      "start": 1416.36,
+      "duration": 4.36,
+      "text": "or connections on"
+    },
+    {
+      "start": 1418.24,
+      "duration": 4.559,
+      "text": "LinkedIn so now to understand how Docker"
+    },
+    {
+      "start": 1420.72,
+      "duration": 4.28,
+      "text": "is used in real life deployments we"
+    },
+    {
+      "start": 1422.799,
+      "duration": 3.601,
+      "text": "first test our application locally we"
+    },
+    {
+      "start": 1425.0,
+      "duration": 3.679,
+      "text": "first create an image and test it"
+    },
+    {
+      "start": 1426.4,
+      "duration": 4.159,
+      "text": "locally if it works fine then we push"
+    },
+    {
+      "start": 1428.679,
+      "duration": 4.201,
+      "text": "public Registries like dockerhub or"
+    },
+    {
+      "start": 1430.559,
+      "duration": 3.641,
+      "text": "private Registries like ECR as well so"
+    },
+    {
+      "start": 1432.88,
+      "duration": 3.32,
+      "text": "let me show you how you can push this"
+    },
+    {
+      "start": 1434.2,
+      "duration": 4.4,
+      "text": "image on Docker Hub similar same way you"
+    },
+    {
+      "start": 1436.2,
+      "duration": 4.16,
+      "text": "can also push your Docker images to ECR"
+    },
+    {
+      "start": 1438.6,
+      "duration": 3.4,
+      "text": "as well which is a elastic container"
+    },
+    {
+      "start": 1440.36,
+      "duration": 4.28,
+      "text": "registry which lets you store Docker"
+    },
+    {
+      "start": 1442.0,
+      "duration": 4.44,
+      "text": "images on AWS Cloud now to push this"
+    },
+    {
+      "start": 1444.64,
+      "duration": 3.56,
+      "text": "image from your local machine to"
+    },
+    {
+      "start": 1446.44,
+      "duration": 4.28,
+      "text": "dockerhub you first need to have a"
+    },
+    {
+      "start": 1448.2,
+      "duration": 4.68,
+      "text": "dockerhub account so to cre you need to"
+    },
+    {
+      "start": 1450.72,
+      "duration": 4.439,
+      "text": "go ahead and create dockerhub account if"
+    },
+    {
+      "start": 1452.88,
+      "duration": 4.64,
+      "text": "you don't have already I have my"
+    },
+    {
+      "start": 1455.159,
+      "duration": 4.961,
+      "text": "dockerhub account so I'm going to go and"
+    },
+    {
+      "start": 1457.52,
+      "duration": 2.6,
+      "text": "sign into"
+    },
+    {
+      "start": 1461.76,
+      "duration": 4.36,
+      "text": "it so this is my dockerhub account and"
+    },
+    {
+      "start": 1464.24,
+      "duration": 4.76,
+      "text": "you can see I've already pushed many of"
+    },
+    {
+      "start": 1466.12,
+      "duration": 5.279,
+      "text": "my Docker images this images are for my"
+    },
+    {
+      "start": 1469.0,
+      "duration": 4.36,
+      "text": "previous devops projects uploaded on"
+    },
+    {
+      "start": 1471.399,
+      "duration": 4.961,
+      "text": "YouTube this is the microservices"
+    },
+    {
+      "start": 1473.36,
+      "duration": 4.919,
+      "text": "projects images and this is the project"
+    },
+    {
+      "start": 1476.36,
+      "duration": 3.84,
+      "text": "from the cloud native monitoring"
+    },
+    {
+      "start": 1478.279,
+      "duration": 5.681,
+      "text": "application this is Netflix Dev secops"
+    },
+    {
+      "start": 1480.2,
+      "duration": 5.4,
+      "text": "project pulled by 700 people so you can"
+    },
+    {
+      "start": 1483.96,
+      "duration": 3.64,
+      "text": "uh push your images on dockerhub and"
+    },
+    {
+      "start": 1485.6,
+      "duration": 3.439,
+      "text": "people can pull it as well I'm going to"
+    },
+    {
+      "start": 1487.6,
+      "duration": 3.959,
+      "text": "push this image and I want you to pull"
+    },
+    {
+      "start": 1489.039,
+      "duration": 4.88,
+      "text": "it and see if you can run that image in"
+    },
+    {
+      "start": 1491.559,
+      "duration": 4.72,
+      "text": "your machine by running this particular"
+    },
+    {
+      "start": 1493.919,
+      "duration": 4.041,
+      "text": "command which is Docker run hyphen it so"
+    },
+    {
+      "start": 1496.279,
+      "duration": 2.961,
+      "text": "let's go ahead and push this image to"
+    },
+    {
+      "start": 1497.96,
+      "duration": 3.439,
+      "text": "push an image I'm going to create a"
+    },
+    {
+      "start": 1499.24,
+      "duration": 3.559,
+      "text": "repository repositories are of two type"
+    },
+    {
+      "start": 1501.399,
+      "duration": 3.28,
+      "text": "public repository and private"
+    },
+    {
+      "start": 1502.799,
+      "duration": 3.721,
+      "text": "repositories I'm going to make this"
+    },
+    {
+      "start": 1504.679,
+      "duration": 3.72,
+      "text": "public so that everyone on the internet"
+    },
+    {
+      "start": 1506.52,
+      "duration": 3.8,
+      "text": "can push so that everyone on the"
+    },
+    {
+      "start": 1508.399,
+      "duration": 4.361,
+      "text": "internet can pull that image and try to"
+    },
+    {
+      "start": 1510.32,
+      "duration": 5.76,
+      "text": "run it locally on their machine so let's"
+    },
+    {
+      "start": 1512.76,
+      "duration": 7.12,
+      "text": "name this as my to-do app and I'm going"
+    },
+    {
+      "start": 1516.08,
+      "duration": 6.36,
+      "text": "to say uh short description image for"
+    },
+    {
+      "start": 1519.88,
+      "duration": 5.44,
+      "text": "Docker project and I'm I'm going to"
+    },
+    {
+      "start": 1522.44,
+      "duration": 5.4,
+      "text": "click on create once I have this created"
+    },
+    {
+      "start": 1525.32,
+      "duration": 5.64,
+      "text": "I can go ahead with pushing my image"
+    },
+    {
+      "start": 1527.84,
+      "duration": 4.88,
+      "text": "from my local machine to my Docker Hub"
+    },
+    {
+      "start": 1530.96,
+      "duration": 4.16,
+      "text": "here you can see this is the command to"
+    },
+    {
+      "start": 1532.72,
+      "duration": 5.559,
+      "text": "do it so we need to have the image with"
+    },
+    {
+      "start": 1535.12,
+      "duration": 6.96,
+      "text": "the name as N1 or else Docker will not"
+    },
+    {
+      "start": 1538.279,
+      "duration": 5.601,
+      "text": "recognize where to push it so before we"
+    },
+    {
+      "start": 1542.08,
+      "duration": 4.24,
+      "text": "do that we also need to Docker login or"
+    },
+    {
+      "start": 1543.88,
+      "duration": 4.76,
+      "text": "connect our terminal with the docker Hub"
+    },
+    {
+      "start": 1546.32,
+      "duration": 4.239,
+      "text": "so I can say do Docker login and it is"
+    },
+    {
+      "start": 1548.64,
+      "duration": 3.44,
+      "text": "asking me for my username and then my"
+    },
+    {
+      "start": 1550.559,
+      "duration": 3.441,
+      "text": "password so I'm going to put my username"
+    },
+    {
+      "start": 1552.08,
+      "duration": 4.12,
+      "text": "which is"
+    },
+    {
+      "start": 1554.0,
+      "duration": 5.08,
+      "text": "this optionally you can also connect to"
+    },
+    {
+      "start": 1556.2,
+      "duration": 4.52,
+      "text": "your Docker hub using your Docker"
+    },
+    {
+      "start": 1559.08,
+      "duration": 3.68,
+      "text": "desktop you can see it says not"
+    },
+    {
+      "start": 1560.72,
+      "duration": 3.76,
+      "text": "connected to the hub and you can connect"
+    },
+    {
+      "start": 1562.76,
+      "duration": 3.919,
+      "text": "to it by clicking on sign in and then"
+    },
+    {
+      "start": 1564.48,
+      "duration": 3.84,
+      "text": "putting your email ID I'm showing so"
+    },
+    {
+      "start": 1566.679,
+      "duration": 3.12,
+      "text": "let's connect to our Docker hub using"
+    },
+    {
+      "start": 1568.32,
+      "duration": 4.88,
+      "text": "the docker desktop I'm going to click on"
+    },
+    {
+      "start": 1569.799,
+      "duration": 3.401,
+      "text": "sign in option which will open"
+    },
+    {
+      "start": 1580.48,
+      "duration": 5.04,
+      "text": "up once I do that it's going to verify"
+    },
+    {
+      "start": 1582.679,
+      "duration": 5.201,
+      "text": "credential and very soon our Docker Hub"
+    },
+    {
+      "start": 1585.52,
+      "duration": 5.279,
+      "text": "will be connected you can see now we are"
+    },
+    {
+      "start": 1587.88,
+      "duration": 5.279,
+      "text": "connected to our repository so let me"
+    },
+    {
+      "start": 1590.799,
+      "duration": 4.641,
+      "text": "show you the images we have right now in"
+    },
+    {
+      "start": 1593.159,
+      "duration": 4.281,
+      "text": "our in our machine we have a Docker"
+    },
+    {
+      "start": 1595.44,
+      "duration": 4.16,
+      "text": "image named as my too app I want to push"
+    },
+    {
+      "start": 1597.44,
+      "duration": 4.44,
+      "text": "this image from my local machine to my"
+    },
+    {
+      "start": 1599.6,
+      "duration": 3.439,
+      "text": "dockerhub repository to do that first we"
+    },
+    {
+      "start": 1601.88,
+      "duration": 4.919,
+      "text": "are going to change the name of the"
+    },
+    {
+      "start": 1603.039,
+      "duration": 5.921,
+      "text": "image from my too app to username slm my"
+    },
+    {
+      "start": 1606.799,
+      "duration": 4.401,
+      "text": "too app or else Docker will consider"
+    },
+    {
+      "start": 1608.96,
+      "duration": 3.52,
+      "text": "this as an official image and it will"
+    },
+    {
+      "start": 1611.2,
+      "duration": 4.52,
+      "text": "not be able to push so I'm going to"
+    },
+    {
+      "start": 1612.48,
+      "duration": 6.48,
+      "text": "First tag it saying togger tag my Todo"
+    },
+    {
+      "start": 1615.72,
+      "duration": 8.079,
+      "text": "app to use"
+    },
+    {
+      "start": 1618.96,
+      "duration": 6.64,
+      "text": "username slm my too app you can also"
+    },
+    {
+      "start": 1623.799,
+      "duration": 4.24,
+      "text": "check that in the"
+    },
+    {
+      "start": 1625.6,
+      "duration": 4.959,
+      "text": "off you can also check that here I need"
+    },
+    {
+      "start": 1628.039,
+      "duration": 6.0,
+      "text": "to tag it first and then I can push it"
+    },
+    {
+      "start": 1630.559,
+      "duration": 5.441,
+      "text": "to my Docker Hub here so let's do that"
+    },
+    {
+      "start": 1634.039,
+      "duration": 3.52,
+      "text": "once I press enter it is now changed the"
+    },
+    {
+      "start": 1636.0,
+      "duration": 3.919,
+      "text": "name has been changed so when I Docker"
+    },
+    {
+      "start": 1637.559,
+      "duration": 4.641,
+      "text": "images I have a new image with the name"
+    },
+    {
+      "start": 1639.919,
+      "duration": 5.401,
+      "text": "this and to push this I'm now going to"
+    },
+    {
+      "start": 1642.2,
+      "duration": 5.68,
+      "text": "Simply say Docker"
+    },
+    {
+      "start": 1645.32,
+      "duration": 5.16,
+      "text": "push and this is now going to push from"
+    },
+    {
+      "start": 1647.88,
+      "duration": 4.919,
+      "text": "my local machine to my Docker Hub"
+    },
+    {
+      "start": 1650.48,
+      "duration": 4.439,
+      "text": "repository which is here only when my"
+    },
+    {
+      "start": 1652.799,
+      "duration": 5.36,
+      "text": "Docker login has succeeded so we have"
+    },
+    {
+      "start": 1654.919,
+      "duration": 5.281,
+      "text": "connected to uh a Docker hub from here"
+    },
+    {
+      "start": 1658.159,
+      "duration": 4.161,
+      "text": "and you will see very soon the image is"
+    },
+    {
+      "start": 1660.2,
+      "duration": 4.16,
+      "text": "going to be pushed from my local machine"
+    },
+    {
+      "start": 1662.32,
+      "duration": 4.56,
+      "text": "to my Docker Hub this is something which"
+    },
+    {
+      "start": 1664.36,
+      "duration": 4.799,
+      "text": "we do in production although this all"
+    },
+    {
+      "start": 1666.88,
+      "duration": 4.56,
+      "text": "this process is automated using cicd"
+    },
+    {
+      "start": 1669.159,
+      "duration": 3.961,
+      "text": "pipeline the creation of Docker image"
+    },
+    {
+      "start": 1671.44,
+      "duration": 3.28,
+      "text": "the creation of container and the"
+    },
+    {
+      "start": 1673.12,
+      "duration": 5.159,
+      "text": "deployment of containers on kubernetes"
+    },
+    {
+      "start": 1674.72,
+      "duration": 5.04,
+      "text": "is all automated using cicd pipeline and"
+    },
+    {
+      "start": 1678.279,
+      "duration": 3.361,
+      "text": "if you want to learn how to create that"
+    },
+    {
+      "start": 1679.76,
+      "duration": 4.039,
+      "text": "you can check out my previous videos"
+    },
+    {
+      "start": 1681.64,
+      "duration": 3.72,
+      "text": "this is how we do it in the production"
+    },
+    {
+      "start": 1683.799,
+      "duration": 3.801,
+      "text": "and I hope now you have clear idea of"
+    },
+    {
+      "start": 1685.36,
+      "duration": 5.28,
+      "text": "how you can create a container how you"
+    },
+    {
+      "start": 1687.6,
+      "duration": 5.0,
+      "text": "can create image and so on so now you"
+    },
+    {
+      "start": 1690.64,
+      "duration": 3.72,
+      "text": "can see in my to-do app repository I"
+    },
+    {
+      "start": 1692.6,
+      "duration": 3.72,
+      "text": "have an image which is pushed a minute"
+    },
+    {
+      "start": 1694.36,
+      "duration": 4.199,
+      "text": "ago and now you can go ahead with"
+    },
+    {
+      "start": 1696.32,
+      "duration": 4.239,
+      "text": "cloning this or pulling this image and"
+    },
+    {
+      "start": 1698.559,
+      "duration": 3.281,
+      "text": "it will work fine for you so to pull the"
+    },
+    {
+      "start": 1700.559,
+      "duration": 3.401,
+      "text": "image all you need to do is to run the"
+    },
+    {
+      "start": 1701.84,
+      "duration": 5.28,
+      "text": "command Docker pull and the image name"
+    },
+    {
+      "start": 1703.96,
+      "duration": 5.12,
+      "text": "so Docker pull the image name which"
+    },
+    {
+      "start": 1707.12,
+      "duration": 3.48,
+      "text": "is"
+    },
+    {
+      "start": 1709.08,
+      "duration": 2.959,
+      "text": "which is this so once you run this"
+    },
+    {
+      "start": 1710.6,
+      "duration": 3.079,
+      "text": "command it will pull up an image and you"
+    },
+    {
+      "start": 1712.039,
+      "duration": 3.081,
+      "text": "can start running it using Docker run"
+    },
+    {
+      "start": 1713.679,
+      "duration": 3.12,
+      "text": "command so we have learned different"
+    },
+    {
+      "start": 1715.12,
+      "duration": 4.08,
+      "text": "commands like Docker run Docker pull"
+    },
+    {
+      "start": 1716.799,
+      "duration": 4.641,
+      "text": "Docker images Docker PS to check"
+    },
+    {
+      "start": 1719.2,
+      "duration": 3.68,
+      "text": "existing C containers if I want to stop"
+    },
+    {
+      "start": 1721.44,
+      "duration": 4.76,
+      "text": "this container I'm going to say Docker"
+    },
+    {
+      "start": 1722.88,
+      "duration": 4.919,
+      "text": "stop and the container ID which is this"
+    },
+    {
+      "start": 1726.2,
+      "duration": 4.12,
+      "text": "uh and I can also delete this container"
+    },
+    {
+      "start": 1727.799,
+      "duration": 4.561,
+      "text": "if I want to by running Docker RM"
+    },
+    {
+      "start": 1730.32,
+      "duration": 4.8,
+      "text": "command when I stop it you will not be"
+    },
+    {
+      "start": 1732.36,
+      "duration": 4.6,
+      "text": "able to see in the docker PS command but"
+    },
+    {
+      "start": 1735.12,
+      "duration": 3.52,
+      "text": "you can see it in the docker ps- a"
+    },
+    {
+      "start": 1736.96,
+      "duration": 3.839,
+      "text": "command which will show you all the"
+    },
+    {
+      "start": 1738.64,
+      "duration": 5.24,
+      "text": "stopped containers to delete this I'm"
+    },
+    {
+      "start": 1740.799,
+      "duration": 5.961,
+      "text": "going to say Docker RM and then the"
+    },
+    {
+      "start": 1743.88,
+      "duration": 4.88,
+      "text": "container ID which is this once I do"
+    },
+    {
+      "start": 1746.76,
+      "duration": 4.039,
+      "text": "that Docker you you will not be able to"
+    },
+    {
+      "start": 1748.76,
+      "duration": 3.919,
+      "text": "see the container anymore similarly if"
+    },
+    {
+      "start": 1750.799,
+      "duration": 5.161,
+      "text": "you want to delete any images you can"
+    },
+    {
+      "start": 1752.679,
+      "duration": 6.921,
+      "text": "use the docker RMI command so"
+    },
+    {
+      "start": 1755.96,
+      "duration": 5.8,
+      "text": "Docker RMI and the image ID will delete"
+    },
+    {
+      "start": 1759.6,
+      "duration": 2.16,
+      "text": "the"
+    },
+    {
+      "start": 1761.96,
+      "duration": 6.199,
+      "text": "image and you can"
+    },
+    {
+      "start": 1765.2,
+      "duration": 5.719,
+      "text": "see you can also use hyphen f to force"
+    },
+    {
+      "start": 1768.159,
+      "duration": 4.481,
+      "text": "delete Force forcefully delete an image"
+    },
+    {
+      "start": 1770.919,
+      "duration": 3.401,
+      "text": "and that's how you can delete it all the"
+    },
+    {
+      "start": 1772.64,
+      "duration": 4.279,
+      "text": "commands are present inside this notes"
+    },
+    {
+      "start": 1774.32,
+      "duration": 4.52,
+      "text": "here so the commands to pull build image"
+    },
+    {
+      "start": 1776.919,
+      "duration": 4.681,
+      "text": "and everything is present here I also"
+    },
+    {
+      "start": 1778.84,
+      "duration": 4.559,
+      "text": "have a LinkedIn post created where all"
+    },
+    {
+      "start": 1781.6,
+      "duration": 4.16,
+      "text": "the different commands on Docker is"
+    },
+    {
+      "start": 1783.399,
+      "duration": 4.28,
+      "text": "presented very carefully uh very nicely"
+    },
+    {
+      "start": 1785.76,
+      "duration": 3.279,
+      "text": "you can check out this post if you want"
+    },
+    {
+      "start": 1787.679,
+      "duration": 2.6,
+      "text": "me to share it let me know in the"
+    },
+    {
+      "start": 1789.039,
+      "duration": 2.801,
+      "text": "comment section and these are the"
+    },
+    {
+      "start": 1790.279,
+      "duration": 4.52,
+      "text": "commands to build an image from a Docker"
+    },
+    {
+      "start": 1791.84,
+      "duration": 6.679,
+      "text": "file to list all image to pull an image"
+    },
+    {
+      "start": 1794.799,
+      "duration": 5.48,
+      "text": "uh to remove a local image and so on so"
+    },
+    {
+      "start": 1798.519,
+      "duration": 3.52,
+      "text": "so this is the end of our Docker"
+    },
+    {
+      "start": 1800.279,
+      "duration": 3.161,
+      "text": "complete course I hope this video was"
+    },
+    {
+      "start": 1802.039,
+      "duration": 3.161,
+      "text": "informative and I've taught you"
+    },
+    {
+      "start": 1803.44,
+      "duration": 3.4,
+      "text": "everything about Docker along with the"
+    },
+    {
+      "start": 1805.2,
+      "duration": 3.44,
+      "text": "Hands-On project if you have any"
+    },
+    {
+      "start": 1806.84,
+      "duration": 3.4,
+      "text": "questions any doubt do let me know in"
+    },
+    {
+      "start": 1808.64,
+      "duration": 3.639,
+      "text": "the comment section and make sure to"
+    },
+    {
+      "start": 1810.24,
+      "duration": 5.0,
+      "text": "subscribe Cloud Chan thank you and have"
+    },
+    {
+      "start": 1812.279,
+      "duration": 2.961,
+      "text": "a good day"
+    }
+  ]
+}

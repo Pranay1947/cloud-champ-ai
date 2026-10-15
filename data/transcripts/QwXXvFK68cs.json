@@ -1,0 +1,7571 @@
+{
+  "video": {
+    "id": "QwXXvFK68cs",
+    "title": "Relational Database Service in AWS | Amazon RDS tutorial",
+    "url": "https://www.youtube.com/watch?v=QwXXvFK68cs",
+    "duration": 3639,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.24,
+      "duration": 3.84,
+      "text": "So today we're going to learn about"
+    },
+    {
+      "start": 1.52,
+      "duration": 4.52,
+      "text": "Amazon RDS RDS is a service which is"
+    },
+    {
+      "start": 4.08,
+      "duration": 4.36,
+      "text": "relational database service on AWS that"
+    },
+    {
+      "start": 6.04,
+      "duration": 4.88,
+      "text": "lets you create databases you have two"
+    },
+    {
+      "start": 8.44,
+      "duration": 4.92,
+      "text": "options to create databases on the cloud"
+    },
+    {
+      "start": 10.92,
+      "duration": 5.48,
+      "text": "you can either choose RDS or you can"
+    },
+    {
+      "start": 13.36,
+      "duration": 5.72,
+      "text": "choose ec2 instance so RDS is a manage"
+    },
+    {
+      "start": 16.4,
+      "duration": 5.32,
+      "text": "service which lets you create SQL"
+    },
+    {
+      "start": 19.08,
+      "duration": 4.56,
+      "text": "server and here on ec2 you need to run"
+    },
+    {
+      "start": 21.72,
+      "duration": 4.76,
+      "text": "the commands to install any SQL Server"
+    },
+    {
+      "start": 23.64,
+      "duration": 5.28,
+      "text": "Like postgress or MySQL or Oracle"
+    },
+    {
+      "start": 26.48,
+      "duration": 4.0,
+      "text": "anything but when you use RDS you click"
+    },
+    {
+      "start": 28.92,
+      "duration": 3.92,
+      "text": "on create database option"
+    },
+    {
+      "start": 30.48,
+      "duration": 4.48,
+      "text": "you get the option to select what SQL"
+    },
+    {
+      "start": 32.84,
+      "duration": 4.399,
+      "text": "engine do you want so for example you"
+    },
+    {
+      "start": 34.96,
+      "duration": 6.119,
+      "text": "can select if you want to have my SQL or"
+    },
+    {
+      "start": 37.239,
+      "duration": 6.16,
+      "text": "Mar or post Oracle Microsoft anything or"
+    },
+    {
+      "start": 41.079,
+      "duration": 5.8,
+      "text": "you can also use the Amazon Aurora which"
+    },
+    {
+      "start": 43.399,
+      "duration": 5.48,
+      "text": "is Amazon's own database which has two"
+    },
+    {
+      "start": 46.879,
+      "duration": 3.881,
+      "text": "flavors which has two flavors which is"
+    },
+    {
+      "start": 48.879,
+      "duration": 5.52,
+      "text": "MySQL or post so you can see there are"
+    },
+    {
+      "start": 50.76,
+      "duration": 5.88,
+      "text": "two compatible Edition my SQL and Aurora"
+    },
+    {
+      "start": 54.399,
+      "duration": 4.601,
+      "text": "so this is very easy to go with"
+    },
+    {
+      "start": 56.64,
+      "duration": 3.8,
+      "text": "everything is managed by AWS but when"
+    },
+    {
+      "start": 59.0,
+      "duration": 3.16,
+      "text": "you do it on E2"
+    },
+    {
+      "start": 60.44,
+      "duration": 4.999,
+      "text": "you need to run the commands because ec2"
+    },
+    {
+      "start": 62.16,
+      "duration": 5.2,
+      "text": "is like this where you have terminal and"
+    },
+    {
+      "start": 65.439,
+      "duration": 3.961,
+      "text": "you need to run some commands to install"
+    },
+    {
+      "start": 67.36,
+      "duration": 4.119,
+      "text": "any uh"
+    },
+    {
+      "start": 69.4,
+      "duration": 4.48,
+      "text": "database right so it's very easy to so"
+    },
+    {
+      "start": 71.479,
+      "duration": 5.041,
+      "text": "let's go and let's go and create a"
+    },
+    {
+      "start": 73.88,
+      "duration": 4.8,
+      "text": "database so we saw how to create MySQL"
+    },
+    {
+      "start": 76.52,
+      "duration": 4.239,
+      "text": "and postgress earlier so I'm going to"
+    },
+    {
+      "start": 78.68,
+      "duration": 5.04,
+      "text": "quickly so I hope you have MySQL"
+    },
+    {
+      "start": 80.759,
+      "duration": 7.961,
+      "text": "workbench installed in your machine"
+    },
+    {
+      "start": 83.72,
+      "duration": 7.52,
+      "text": "right no no no or PG admin anything yeah"
+    },
+    {
+      "start": 88.72,
+      "duration": 5.16,
+      "text": "I can install that but doesn't Tey yes"
+    },
+    {
+      "start": 91.24,
+      "duration": 4.12,
+      "text": "so we'll do that so let's install this"
+    },
+    {
+      "start": 93.88,
+      "duration": 3.64,
+      "text": "so I'm going to choose the free tier you"
+    },
+    {
+      "start": 95.36,
+      "duration": 4.399,
+      "text": "can choose any of them production dep"
+    },
+    {
+      "start": 97.52,
+      "duration": 4.0,
+      "text": "test or free tier so I'm going to go"
+    },
+    {
+      "start": 99.759,
+      "duration": 5.881,
+      "text": "with free tier because I don't want to"
+    },
+    {
+      "start": 101.52,
+      "duration": 6.559,
+      "text": "pay much much money so free tier will"
+    },
+    {
+      "start": 105.64,
+      "duration": 4.72,
+      "text": "only give you DBT T3 micro whereas if"
+    },
+    {
+      "start": 108.079,
+      "duration": 4.201,
+      "text": "you use Dev tast of production it will"
+    },
+    {
+      "start": 110.36,
+      "duration": 4.32,
+      "text": "give you big instances as well instance"
+    },
+    {
+      "start": 112.28,
+      "duration": 6.879,
+      "text": "size greater than T T3"
+    },
+    {
+      "start": 114.68,
+      "duration": 6.92,
+      "text": "micro so how expensive if if I yes it is"
+    },
+    {
+      "start": 119.159,
+      "duration": 4.401,
+      "text": "expensive and has lot of features like"
+    },
+    {
+      "start": 121.6,
+      "duration": 3.68,
+      "text": "multi- a and everything else but in free"
+    },
+    {
+      "start": 123.56,
+      "duration": 3.44,
+      "text": "tier you don't get much features so if"
+    },
+    {
+      "start": 125.28,
+      "duration": 3.16,
+      "text": "you're doing any production workloads"
+    },
+    {
+      "start": 127.0,
+      "duration": 3.92,
+      "text": "you should always go with either dep"
+    },
+    {
+      "start": 128.44,
+      "duration": 5.36,
+      "text": "test or production so for now as we're"
+    },
+    {
+      "start": 130.92,
+      "duration": 6.56,
+      "text": "just practicing we will go with the free"
+    },
+    {
+      "start": 133.8,
+      "duration": 6.84,
+      "text": "tier okay then this is a database I"
+    },
+    {
+      "start": 137.48,
+      "duration": 5.28,
+      "text": "sorry okay the options are the same yeah"
+    },
+    {
+      "start": 140.64,
+      "duration": 3.72,
+      "text": "options are same but if I choose this"
+    },
+    {
+      "start": 142.76,
+      "duration": 5.119,
+      "text": "let's say I choose production rather"
+    },
+    {
+      "start": 144.36,
+      "duration": 7.48,
+      "text": "than free tier I get the options like so"
+    },
+    {
+      "start": 147.879,
+      "duration": 3.961,
+      "text": "default settings for"
+    },
+    {
+      "start": 152.16,
+      "duration": 3.159,
+      "text": "so these are the default settings"
+    },
+    {
+      "start": 153.36,
+      "duration": 6.32,
+      "text": "whenever you use the easy create so I'm"
+    },
+    {
+      "start": 155.319,
+      "duration": 5.881,
+      "text": "going to choose the standard create yeah"
+    },
+    {
+      "start": 159.68,
+      "duration": 4.16,
+      "text": "so you need to choose a standard create"
+    },
+    {
+      "start": 161.2,
+      "duration": 4.28,
+      "text": "because if you choose easy create a AWS"
+    },
+    {
+      "start": 163.84,
+      "duration": 3.28,
+      "text": "will recommend you all the settings but"
+    },
+    {
+      "start": 165.48,
+      "duration": 3.16,
+      "text": "if you choose standard you can customize"
+    },
+    {
+      "start": 167.12,
+      "duration": 3.88,
+      "text": "whatever you want so let's say I want"
+    },
+    {
+      "start": 168.64,
+      "duration": 4.44,
+      "text": "for production I have multi- a database"
+    },
+    {
+      "start": 171.0,
+      "duration": 2.92,
+      "text": "instance but if I choose free tier this"
+    },
+    {
+      "start": 173.08,
+      "duration": 3.84,
+      "text": "will be"
+    },
+    {
+      "start": 173.92,
+      "duration": 4.52,
+      "text": "gone okay yeah I got you so so with"
+    },
+    {
+      "start": 176.92,
+      "duration": 3.76,
+      "text": "production or def test you get more"
+    },
+    {
+      "start": 178.44,
+      "duration": 4.0,
+      "text": "features compared to fre tier so use"
+    },
+    {
+      "start": 180.68,
+      "duration": 3.4,
+      "text": "free tier to develop new application"
+    },
+    {
+      "start": 182.44,
+      "duration": 4.359,
+      "text": "test existing application or gain"
+    },
+    {
+      "start": 184.08,
+      "duration": 4.36,
+      "text": "hands-on experience and Def test"
+    },
+    {
+      "start": 186.799,
+      "duration": 3.921,
+      "text": "whenever you want to use this instance"
+    },
+    {
+      "start": 188.44,
+      "duration": 4.48,
+      "text": "is intended for development use outside"
+    },
+    {
+      "start": 190.72,
+      "duration": 4.239,
+      "text": "of production environment and production"
+    },
+    {
+      "start": 192.92,
+      "duration": 4.48,
+      "text": "use defaults for high availability and"
+    },
+    {
+      "start": 194.959,
+      "duration": 3.56,
+      "text": "fast cons consistent performance so"
+    },
+    {
+      "start": 197.4,
+      "duration": 3.479,
+      "text": "whenever you want to have good"
+    },
+    {
+      "start": 198.519,
+      "duration": 4.44,
+      "text": "performance go with production whenever"
+    },
+    {
+      "start": 200.879,
+      "duration": 4.241,
+      "text": "you want to try out and learn the RDS"
+    },
+    {
+      "start": 202.959,
+      "duration": 4.681,
+      "text": "service go with free tier so we're going"
+    },
+    {
+      "start": 205.12,
+      "duration": 5.64,
+      "text": "to choose the free tier"
+    },
+    {
+      "start": 207.64,
+      "duration": 4.92,
+      "text": "option this is database identif fire and"
+    },
+    {
+      "start": 210.76,
+      "duration": 4.08,
+      "text": "if you see it specifies the name that is"
+    },
+    {
+      "start": 212.56,
+      "duration": 4.12,
+      "text": "unique for all database uh instances"
+    },
+    {
+      "start": 214.84,
+      "duration": 3.759,
+      "text": "owned by your AWS account in the current"
+    },
+    {
+      "start": 216.68,
+      "duration": 3.639,
+      "text": "region you need to give the name of the"
+    },
+    {
+      "start": 218.599,
+      "duration": 4.56,
+      "text": "database so you can give it anything"
+    },
+    {
+      "start": 220.319,
+      "duration": 5.521,
+      "text": "let's say I give it my"
+    },
+    {
+      "start": 223.159,
+      "duration": 5.321,
+      "text": "database and then this is a username the"
+    },
+    {
+      "start": 225.84,
+      "duration": 7.319,
+      "text": "master username and the master password"
+    },
+    {
+      "start": 228.48,
+      "duration": 7.0,
+      "text": "that will be used to sign in into your"
+    },
+    {
+      "start": 233.159,
+      "duration": 4.681,
+      "text": "database so I'm going to give it admin"
+    },
+    {
+      "start": 235.48,
+      "duration": 4.56,
+      "text": "like let's keep it admin and the"
+    },
+    {
+      "start": 237.84,
+      "duration": 3.959,
+      "text": "password you can either choose Auto or"
+    },
+    {
+      "start": 240.04,
+      "duration": 4.0,
+      "text": "you can give your own custom"
+    },
+    {
+      "start": 241.799,
+      "duration": 4.881,
+      "text": "password okay but it should be at least"
+    },
+    {
+      "start": 244.04,
+      "duration": 6.279,
+      "text": "eight uh characters and it should not"
+    },
+    {
+      "start": 246.68,
+      "duration": 5.479,
+      "text": "contain slash or at the rate sign or"
+    },
+    {
+      "start": 250.319,
+      "duration": 3.681,
+      "text": "double quotation mark so make sure you"
+    },
+    {
+      "start": 252.159,
+      "duration": 7.001,
+      "text": "follow the password policy I'm going to"
+    },
+    {
+      "start": 254.0,
+      "duration": 10.12,
+      "text": "pass in p a s s w ald And1"
+    },
+    {
+      "start": 259.16,
+      "duration": 8.88,
+      "text": "123 same for here as well so confirm"
+    },
+    {
+      "start": 264.12,
+      "duration": 5.6,
+      "text": "password 1 2 3 okay now I have the"
+    },
+    {
+      "start": 268.04,
+      "duration": 4.32,
+      "text": "option to select what instance conf"
+    },
+    {
+      "start": 269.72,
+      "duration": 4.16,
+      "text": "configuration do I want which means what"
+    },
+    {
+      "start": 272.36,
+      "duration": 4.2,
+      "text": "size do I want so as we are selecting"
+    },
+    {
+      "start": 273.88,
+      "duration": 5.92,
+      "text": "only free tier we only get T2 micro and"
+    },
+    {
+      "start": 276.56,
+      "duration": 6.479,
+      "text": "T3 micro or all the micro Serv micro we"
+    },
+    {
+      "start": 279.8,
+      "duration": 5.679,
+      "text": "don't get large or extra large or 2x"
+    },
+    {
+      "start": 283.039,
+      "duration": 4.72,
+      "text": "large so we're going to select the T3"
+    },
+    {
+      "start": 285.479,
+      "duration": 5.521,
+      "text": "micro here we have the option to select"
+    },
+    {
+      "start": 287.759,
+      "duration": 4.88,
+      "text": "what EBS volumes do you want what"
+    },
+    {
+      "start": 291.0,
+      "duration": 3.44,
+      "text": "storage type do you want so you have"
+    },
+    {
+      "start": 292.639,
+      "duration": 4.921,
+      "text": "general purpose SSD you have provision"
+    },
+    {
+      "start": 294.44,
+      "duration": 4.4,
+      "text": "Diop SD and you have magnetic so general"
+    },
+    {
+      "start": 297.56,
+      "duration": 3.479,
+      "text": "purpose are used whenever you want to"
+    },
+    {
+      "start": 298.84,
+      "duration": 3.96,
+      "text": "have a general use case"
+    },
+    {
+      "start": 301.039,
+      "duration": 3.44,
+      "text": "so you can see general purpose SSD is"
+    },
+    {
+      "start": 302.8,
+      "duration": 4.0,
+      "text": "suitable for broad range of database"
+    },
+    {
+      "start": 304.479,
+      "duration": 4.72,
+      "text": "workload and provides the Baseline of"
+    },
+    {
+      "start": 306.8,
+      "duration": 4.92,
+      "text": "three uh three input and output"
+    },
+    {
+      "start": 309.199,
+      "duration": 4.961,
+      "text": "operations per second and per per GB and"
+    },
+    {
+      "start": 311.72,
+      "duration": 5.84,
+      "text": "it can burst up to 3,000 iops so you"
+    },
+    {
+      "start": 314.16,
+      "duration": 5.28,
+      "text": "have a good uh good storage capacity"
+    },
+    {
+      "start": 317.56,
+      "duration": 3.04,
+      "text": "here and good storage and performance in"
+    },
+    {
+      "start": 319.44,
+      "duration": 2.879,
+      "text": "general purpose but if you want to"
+    },
+    {
+      "start": 320.6,
+      "duration": 3.56,
+      "text": "exceed your storage exceed your"
+    },
+    {
+      "start": 322.319,
+      "duration": 4.521,
+      "text": "performance you can go with the"
+    },
+    {
+      "start": 324.16,
+      "duration": 5.039,
+      "text": "provision iops so provision iops sist"
+    },
+    {
+      "start": 326.84,
+      "duration": 4.88,
+      "text": "storage is suitable for Io intensive I"
+    },
+    {
+      "start": 329.199,
+      "duration": 4.72,
+      "text": "input output intensive database"
+    },
+    {
+      "start": 331.72,
+      "duration": 6.199,
+      "text": "workloads and it provides flexibility to"
+    },
+    {
+      "start": 333.919,
+      "duration": 6.521,
+      "text": "provision ranging from 1,000 to 80,000"
+    },
+    {
+      "start": 337.919,
+      "duration": 4.881,
+      "text": "iops IOP stands for input output"
+    },
+    {
+      "start": 340.44,
+      "duration": 5.039,
+      "text": "operations per second so input output"
+    },
+    {
+      "start": 342.8,
+      "duration": 5.8,
+      "text": "operations means every in one second how"
+    },
+    {
+      "start": 345.479,
+      "duration": 4.881,
+      "text": "much data can be written or read through"
+    },
+    {
+      "start": 348.6,
+      "duration": 4.84,
+      "text": "the"
+    },
+    {
+      "start": 350.36,
+      "duration": 5.559,
+      "text": "database so if you see here it has 3,000"
+    },
+    {
+      "start": 353.44,
+      "duration": 6.759,
+      "text": "but if I choose provision iops I don't I"
+    },
+    {
+      "start": 355.919,
+      "duration": 5.961,
+      "text": "get uh I don't get that option"
+    },
+    {
+      "start": 360.199,
+      "duration": 3.601,
+      "text": "right yeah then you can also Define how"
+    },
+    {
+      "start": 361.88,
+      "duration": 3.52,
+      "text": "much storage should be allocated to this"
+    },
+    {
+      "start": 363.8,
+      "duration": 4.119,
+      "text": "database so if your database is not"
+    },
+    {
+      "start": 365.4,
+      "duration": 5.04,
+      "text": "going to exceed much it is limited to"
+    },
+    {
+      "start": 367.919,
+      "duration": 3.921,
+      "text": "let's say only 20 you can keep it 20 or"
+    },
+    {
+      "start": 370.44,
+      "duration": 3.92,
+      "text": "else you can enable the storage Auto"
+    },
+    {
+      "start": 371.84,
+      "duration": 4.84,
+      "text": "scaling option which will increase the"
+    },
+    {
+      "start": 374.36,
+      "duration": 4.8,
+      "text": "storage every time it is let's say you"
+    },
+    {
+      "start": 376.68,
+      "duration": 6.239,
+      "text": "have defined the storage of 20 GP but"
+    },
+    {
+      "start": 379.16,
+      "duration": 6.8,
+      "text": "now your data you have entered more data"
+    },
+    {
+      "start": 382.919,
+      "duration": 4.601,
+      "text": "and it is 21 GB now right if you have"
+    },
+    {
+      "start": 385.96,
+      "duration": 4.0,
+      "text": "not enabled this Auto scaling the"
+    },
+    {
+      "start": 387.52,
+      "duration": 3.679,
+      "text": "database will stop performing there"
+    },
+    {
+      "start": 389.96,
+      "duration": 2.959,
+      "text": "might there might be a chance where your"
+    },
+    {
+      "start": 391.199,
+      "duration": 4.801,
+      "text": "services have been stopped as well if"
+    },
+    {
+      "start": 392.919,
+      "duration": 5.441,
+      "text": "you have website it will be down as well"
+    },
+    {
+      "start": 396.0,
+      "duration": 4.4,
+      "text": "so if you know your if you know the"
+    },
+    {
+      "start": 398.36,
+      "duration": 4.279,
+      "text": "fixed size you can choose that if not"
+    },
+    {
+      "start": 400.4,
+      "duration": 4.56,
+      "text": "you can go with the storage scaling"
+    },
+    {
+      "start": 402.639,
+      "duration": 6.321,
+      "text": "where you don't know the uh where your"
+    },
+    {
+      "start": 404.96,
+      "duration": 4.0,
+      "text": "where your database storage is"
+    },
+    {
+      "start": 409.08,
+      "duration": 3.36,
+      "text": "unpredictable so for now I'm not going"
+    },
+    {
+      "start": 411.16,
+      "duration": 4.52,
+      "text": "to enable it but if you enable it you"
+    },
+    {
+      "start": 412.44,
+      "duration": 5.96,
+      "text": "can Define how much should it go so it"
+    },
+    {
+      "start": 415.68,
+      "duration": 5.88,
+      "text": "can go up to 1,000"
+    },
+    {
+      "start": 418.4,
+      "duration": 5.079,
+      "text": "GB right right and here the minimum"
+    },
+    {
+      "start": 421.56,
+      "duration": 3.44,
+      "text": "allocated storage can be 20 GB if you"
+    },
+    {
+      "start": 423.479,
+      "duration": 4.601,
+      "text": "put anything less than 20 it will show"
+    },
+    {
+      "start": 425.0,
+      "duration": 7.039,
+      "text": "you an error it should be 20 GB minimum"
+    },
+    {
+      "start": 428.08,
+      "duration": 5.76,
+      "text": "and maximum can go up to 6tb so 6144 GB"
+    },
+    {
+      "start": 432.039,
+      "duration": 3.681,
+      "text": "which is"
+    },
+    {
+      "start": 433.84,
+      "duration": 3.84,
+      "text": "6tb"
+    },
+    {
+      "start": 435.72,
+      "duration": 4.8,
+      "text": "right then you have the option to"
+    },
+    {
+      "start": 437.68,
+      "duration": 5.079,
+      "text": "connect to the database uh with an N2"
+    },
+    {
+      "start": 440.52,
+      "duration": 3.64,
+      "text": "compute resource so choose whether to"
+    },
+    {
+      "start": 442.759,
+      "duration": 3.761,
+      "text": "set up a connection to a computer"
+    },
+    {
+      "start": 444.16,
+      "duration": 3.599,
+      "text": "resource for this database and setting"
+    },
+    {
+      "start": 446.52,
+      "duration": 2.6,
+      "text": "up a connection will automatically"
+    },
+    {
+      "start": 447.759,
+      "duration": 3.241,
+      "text": "change the connectivity settings so that"
+    },
+    {
+      "start": 449.12,
+      "duration": 3.24,
+      "text": "the computer resource can connect to"
+    },
+    {
+      "start": 451.0,
+      "duration": 2.72,
+      "text": "this database so if you want an ac2"
+    },
+    {
+      "start": 452.36,
+      "duration": 3.04,
+      "text": "instance to connect to the database that"
+    },
+    {
+      "start": 453.72,
+      "duration": 3.28,
+      "text": "you're creating here you can choose the"
+    },
+    {
+      "start": 455.4,
+      "duration": 3.56,
+      "text": "option to connect to an ac2 compute"
+    },
+    {
+      "start": 457.0,
+      "duration": 4.16,
+      "text": "resource if not you can choose this"
+    },
+    {
+      "start": 458.96,
+      "duration": 4.04,
+      "text": "which says don't set a connection to a"
+    },
+    {
+      "start": 461.16,
+      "duration": 3.24,
+      "text": "compute resource for this database you"
+    },
+    {
+      "start": 463.0,
+      "duration": 3.52,
+      "text": "can manually set up a connection to a"
+    },
+    {
+      "start": 464.4,
+      "duration": 4.28,
+      "text": "compute resource later on you can also"
+    },
+    {
+      "start": 466.52,
+      "duration": 4.28,
+      "text": "do that later on but for now I'm just"
+    },
+    {
+      "start": 468.68,
+      "duration": 3.76,
+      "text": "going to choose this and choose which E2"
+    },
+    {
+      "start": 470.8,
+      "duration": 3.04,
+      "text": "instance so you have to have an E2"
+    },
+    {
+      "start": 472.44,
+      "duration": 4.08,
+      "text": "instance in your in"
+    },
+    {
+      "start": 473.84,
+      "duration": 5.96,
+      "text": "your uh machine launched so you need to"
+    },
+    {
+      "start": 476.52,
+      "duration": 5.119,
+      "text": "have it so I can make it uh this but"
+    },
+    {
+      "start": 479.8,
+      "duration": 4.119,
+      "text": "this is launched inside a subnet which"
+    },
+    {
+      "start": 481.639,
+      "duration": 3.641,
+      "text": "does not have so I'm going to skip this"
+    },
+    {
+      "start": 483.919,
+      "duration": 3.801,
+      "text": "for"
+    },
+    {
+      "start": 485.28,
+      "duration": 3.84,
+      "text": "now then you have a database subnet"
+    },
+    {
+      "start": 487.72,
+      "duration": 3.039,
+      "text": "group so choose the database subnet"
+    },
+    {
+      "start": 489.12,
+      "duration": 4.039,
+      "text": "group the database subnet group defines"
+    },
+    {
+      "start": 490.759,
+      "duration": 5.321,
+      "text": "which subnets and IP ranges the database"
+    },
+    {
+      "start": 493.159,
+      "duration": 4.88,
+      "text": "can use in the VPC that you selected so"
+    },
+    {
+      "start": 496.08,
+      "duration": 5.64,
+      "text": "if you know VPC have something known as"
+    },
+    {
+      "start": 498.039,
+      "duration": 6.641,
+      "text": "side range cidr a classless inter domain"
+    },
+    {
+      "start": 501.72,
+      "duration": 5.24,
+      "text": "routing so that side range Define how"
+    },
+    {
+      "start": 504.68,
+      "duration": 4.079,
+      "text": "much what IP should be given to the"
+    },
+    {
+      "start": 506.96,
+      "duration": 4.0,
+      "text": "instance or this database launched in"
+    },
+    {
+      "start": 508.759,
+      "duration": 3.481,
+      "text": "that subnet"
+    },
+    {
+      "start": 510.96,
+      "duration": 2.959,
+      "text": "so you can choose if you have created"
+    },
+    {
+      "start": 512.24,
+      "duration": 3.279,
+      "text": "any subnet group you can choose that we"
+    },
+    {
+      "start": 513.919,
+      "duration": 3.721,
+      "text": "haven't created any so we're going to"
+    },
+    {
+      "start": 515.519,
+      "duration": 4.841,
+      "text": "choose"
+    },
+    {
+      "start": 517.64,
+      "duration": 5.079,
+      "text": "default next we have the parameter is"
+    },
+    {
+      "start": 520.36,
+      "duration": 4.32,
+      "text": "Public Access so which means if you want"
+    },
+    {
+      "start": 522.719,
+      "duration": 4.081,
+      "text": "to provide public access to your"
+    },
+    {
+      "start": 524.68,
+      "duration": 4.76,
+      "text": "database database can be accessible to"
+    },
+    {
+      "start": 526.8,
+      "duration": 4.28,
+      "text": "anyone on the public internet if if they"
+    },
+    {
+      "start": 529.44,
+      "duration": 3.72,
+      "text": "have the right permissions you can"
+    },
+    {
+      "start": 531.08,
+      "duration": 4.4,
+      "text": "choose yes if you don't want you can"
+    },
+    {
+      "start": 533.16,
+      "duration": 4.119,
+      "text": "choose no so here it says RDS is"
+    },
+    {
+      "start": 535.48,
+      "duration": 3.599,
+      "text": "assigned a public IP address to the"
+    },
+    {
+      "start": 537.279,
+      "duration": 4.201,
+      "text": "database Amazon is2 instance and other"
+    },
+    {
+      "start": 539.079,
+      "duration": 4.361,
+      "text": "resources outside the VPC can connect to"
+    },
+    {
+      "start": 541.48,
+      "duration": 4.2,
+      "text": "your database and resources inside the"
+    },
+    {
+      "start": 543.44,
+      "duration": 4.16,
+      "text": "VPC can also connect to the database so"
+    },
+    {
+      "start": 545.68,
+      "duration": 4.48,
+      "text": "when you choose yes resources outside"
+    },
+    {
+      "start": 547.6,
+      "duration": 4.04,
+      "text": "the VPC can also talk to your database"
+    },
+    {
+      "start": 550.16,
+      "duration": 3.679,
+      "text": "and your database will have a public IP"
+    },
+    {
+      "start": 551.64,
+      "duration": 4.52,
+      "text": "address because it is publicly"
+    },
+    {
+      "start": 553.839,
+      "duration": 3.841,
+      "text": "accessible which is not a good thing if"
+    },
+    {
+      "start": 556.16,
+      "duration": 3.96,
+      "text": "you're doing it in production so you"
+    },
+    {
+      "start": 557.68,
+      "duration": 4.24,
+      "text": "should always make it nonpublic access"
+    },
+    {
+      "start": 560.12,
+      "duration": 3.279,
+      "text": "if it is not if it is in production"
+    },
+    {
+      "start": 561.92,
+      "duration": 4.52,
+      "text": "because you want to keep your database"
+    },
+    {
+      "start": 563.399,
+      "duration": 5.521,
+      "text": "safe and you don't want them to be"
+    },
+    {
+      "start": 566.44,
+      "duration": 5.0,
+      "text": "accessible with from the hackers or or"
+    },
+    {
+      "start": 568.92,
+      "duration": 5.359,
+      "text": "or bad people on the"
+    },
+    {
+      "start": 571.44,
+      "duration": 4.639,
+      "text": "internet right so for now as it is for"
+    },
+    {
+      "start": 574.279,
+      "duration": 4.161,
+      "text": "testing purpose and we need to connect"
+    },
+    {
+      "start": 576.079,
+      "duration": 3.801,
+      "text": "it through outside the data VPC we going"
+    },
+    {
+      "start": 578.44,
+      "duration": 3.8,
+      "text": "to choose"
+    },
+    {
+      "start": 579.88,
+      "duration": 4.0,
+      "text": "yes so here if you choose no it says it"
+    },
+    {
+      "start": 582.24,
+      "duration": 4.039,
+      "text": "does not give you a public IP address to"
+    },
+    {
+      "start": 583.88,
+      "duration": 4.079,
+      "text": "the database and only the Amazon ec2"
+    },
+    {
+      "start": 586.279,
+      "duration": 4.361,
+      "text": "instance that you have selected here"
+    },
+    {
+      "start": 587.959,
+      "duration": 6.041,
+      "text": "will be used to connect your"
+    },
+    {
+      "start": 590.64,
+      "duration": 5.52,
+      "text": "database okay next you can choose what"
+    },
+    {
+      "start": 594.0,
+      "duration": 4.839,
+      "text": "Security Group do you want so I'm me you"
+    },
+    {
+      "start": 596.16,
+      "duration": 4.2,
+      "text": "can choose existing ones if you have any"
+    },
+    {
+      "start": 598.839,
+      "duration": 4.361,
+      "text": "or you can choose the default one so I'm"
+    },
+    {
+      "start": 600.36,
+      "duration": 4.0,
+      "text": "going to choose a VPC Security Group"
+    },
+    {
+      "start": 603.2,
+      "duration": 2.36,
+      "text": "okay so this is the another region so"
+    },
+    {
+      "start": 604.36,
+      "duration": 3.56,
+      "text": "I'm going to choose the default one and"
+    },
+    {
+      "start": 605.56,
+      "duration": 4.44,
+      "text": "let's see if what uh Security Group"
+    },
+    {
+      "start": 607.92,
+      "duration": 4.56,
+      "text": "rules we have here so it should have it"
+    },
+    {
+      "start": 610.0,
+      "duration": 5.64,
+      "text": "should have the security group rule for"
+    },
+    {
+      "start": 612.48,
+      "duration": 6.44,
+      "text": "the port for example we using MySQL so"
+    },
+    {
+      "start": 615.64,
+      "duration": 6.92,
+      "text": "it should have 3306 in it because 3306"
+    },
+    {
+      "start": 618.92,
+      "duration": 5.4,
+      "text": "is the port number of the my SQL"
+    },
+    {
+      "start": 622.56,
+      "duration": 3.92,
+      "text": "database"
+    },
+    {
+      "start": 624.32,
+      "duration": 3.88,
+      "text": "right then you can Define what"
+    },
+    {
+      "start": 626.48,
+      "duration": 3.08,
+      "text": "availability Zone do you want to launch"
+    },
+    {
+      "start": 628.2,
+      "duration": 3.639,
+      "text": "this database in so if you if you don't"
+    },
+    {
+      "start": 629.56,
+      "duration": 4.48,
+      "text": "Define anything AWS will randomly select"
+    },
+    {
+      "start": 631.839,
+      "duration": 4.8,
+      "text": "any of them but if you want to Define"
+    },
+    {
+      "start": 634.04,
+      "duration": 3.919,
+      "text": "let's say in 2 a or 2 b or 2 C or 2D you"
+    },
+    {
+      "start": 636.639,
+      "duration": 4.561,
+      "text": "can choose"
+    },
+    {
+      "start": 637.959,
+      "duration": 5.88,
+      "text": "that so I'm going to choose two"
+    },
+    {
+      "start": 641.2,
+      "duration": 6.079,
+      "text": "way then this is the port you can see"
+    },
+    {
+      "start": 643.839,
+      "duration": 4.961,
+      "text": "here 3306 you can enable authentication"
+    },
+    {
+      "start": 647.279,
+      "duration": 3.281,
+      "text": "so how can you connect to your database"
+    },
+    {
+      "start": 648.8,
+      "duration": 4.08,
+      "text": "you can have password authentication you"
+    },
+    {
+      "start": 650.56,
+      "duration": 4.6,
+      "text": "can also have password plus IM database"
+    },
+    {
+      "start": 652.88,
+      "duration": 3.84,
+      "text": "authentication so authenticates using"
+    },
+    {
+      "start": 655.16,
+      "duration": 3.84,
+      "text": "the database password and the user"
+    },
+    {
+      "start": 656.72,
+      "duration": 3.2,
+      "text": "credentials through the AWS IM users and"
+    },
+    {
+      "start": 659.0,
+      "duration": 2.88,
+      "text": "r"
+    },
+    {
+      "start": 659.92,
+      "duration": 4.96,
+      "text": "so AWS IM is a service which lets you"
+    },
+    {
+      "start": 661.88,
+      "duration": 4.8,
+      "text": "create users and groups with certain"
+    },
+    {
+      "start": 664.88,
+      "duration": 3.639,
+      "text": "permissions so if you want your database"
+    },
+    {
+      "start": 666.68,
+      "duration": 4.24,
+      "text": "to be connected with password plus the"
+    },
+    {
+      "start": 668.519,
+      "duration": 3.961,
+      "text": "IM uh user so that the user should have"
+    },
+    {
+      "start": 670.92,
+      "duration": 3.359,
+      "text": "access to database only then it can"
+    },
+    {
+      "start": 672.48,
+      "duration": 4.0,
+      "text": "connect to it then you can do that as"
+    },
+    {
+      "start": 674.279,
+      "duration": 3.961,
+      "text": "well or something known as kuas"
+    },
+    {
+      "start": 676.48,
+      "duration": 3.96,
+      "text": "authentication choose a directory in"
+    },
+    {
+      "start": 678.24,
+      "duration": 3.88,
+      "text": "which you want to allow authorized users"
+    },
+    {
+      "start": 680.44,
+      "duration": 4.36,
+      "text": "to authenticate with this database"
+    },
+    {
+      "start": 682.12,
+      "duration": 5.839,
+      "text": "instance using kubas authentication so"
+    },
+    {
+      "start": 684.8,
+      "duration": 4.8,
+      "text": "kuros I don't know how to spell that but"
+    },
+    {
+      "start": 687.959,
+      "duration": 4.761,
+      "text": "that is also a kind of directory similar"
+    },
+    {
+      "start": 689.6,
+      "duration": 4.28,
+      "text": "to active directory or ad uh so you can"
+    },
+    {
+      "start": 692.72,
+      "duration": 3.88,
+      "text": "in that directory you can put in the"
+    },
+    {
+      "start": 693.88,
+      "duration": 3.92,
+      "text": "names or the user list who can access"
+    },
+    {
+      "start": 696.6,
+      "duration": 2.64,
+      "text": "database but for now we're going to"
+    },
+    {
+      "start": 697.8,
+      "duration": 6.12,
+      "text": "choose the password database because we"
+    },
+    {
+      "start": 699.24,
+      "duration": 7.599,
+      "text": "have already set up the password Here"
+    },
+    {
+      "start": 703.92,
+      "duration": 6.039,
+      "text": "Yeah right so uh next"
+    },
+    {
+      "start": 706.839,
+      "duration": 4.601,
+      "text": "is monitoring so you can enable enhanced"
+    },
+    {
+      "start": 709.959,
+      "duration": 3.32,
+      "text": "monitor monitoring to check how your"
+    },
+    {
+      "start": 711.44,
+      "duration": 3.399,
+      "text": "database is performing so enabling"
+    },
+    {
+      "start": 713.279,
+      "duration": 3.12,
+      "text": "enhance monitoring metrics are useful"
+    },
+    {
+      "start": 714.839,
+      "duration": 4.401,
+      "text": "when you want to see how different"
+    },
+    {
+      "start": 716.399,
+      "duration": 4.521,
+      "text": "processes or the threads to use use the"
+    },
+    {
+      "start": 719.24,
+      "duration": 3.24,
+      "text": "the CPU so if you want to see how your"
+    },
+    {
+      "start": 720.92,
+      "duration": 5.479,
+      "text": "database is performing and how the CPU"
+    },
+    {
+      "start": 722.48,
+      "duration": 6.56,
+      "text": "is utilized you can choose enhance"
+    },
+    {
+      "start": 726.399,
+      "duration": 4.321,
+      "text": "monitoring then you have configurations"
+    },
+    {
+      "start": 729.04,
+      "duration": 3.52,
+      "text": "like uh what should be the name of the"
+    },
+    {
+      "start": 730.72,
+      "duration": 4.119,
+      "text": "database so if you have not specified"
+    },
+    {
+      "start": 732.56,
+      "duration": 3.92,
+      "text": "the database Amazon RDS does not create"
+    },
+    {
+      "start": 734.839,
+      "duration": 5.081,
+      "text": "a database so let's create let's give a"
+    },
+    {
+      "start": 736.48,
+      "duration": 4.84,
+      "text": "database my DB and the parameter group"
+    },
+    {
+      "start": 739.92,
+      "duration": 3.039,
+      "text": "is going to be this option group is"
+    },
+    {
+      "start": 741.32,
+      "duration": 3.199,
+      "text": "going to be this so if you want to know"
+    },
+    {
+      "start": 742.959,
+      "duration": 3.081,
+      "text": "what parameter groups are choose a"
+    },
+    {
+      "start": 744.519,
+      "duration": 2.88,
+      "text": "database parameter group that defines"
+    },
+    {
+      "start": 746.04,
+      "duration": 3.359,
+      "text": "the configuration settings you have"
+    },
+    {
+      "start": 747.399,
+      "duration": 3.521,
+      "text": "applied to this database instance so you"
+    },
+    {
+      "start": 749.399,
+      "duration": 4.12,
+      "text": "need to create one if you want to have"
+    },
+    {
+      "start": 750.92,
+      "duration": 4.96,
+      "text": "or else we will be using the default one"
+    },
+    {
+      "start": 753.519,
+      "duration": 4.12,
+      "text": "then you have options so choose the"
+    },
+    {
+      "start": 755.88,
+      "duration": 3.12,
+      "text": "database option group that enables any"
+    },
+    {
+      "start": 757.639,
+      "duration": 3.32,
+      "text": "optional functionality you want the"
+    },
+    {
+      "start": 759.0,
+      "duration": 5.959,
+      "text": "database to support such as Oracle or"
+    },
+    {
+      "start": 760.959,
+      "duration": 7.761,
+      "text": "SQL or uh data encryption or my SQL 5.6"
+    },
+    {
+      "start": 764.959,
+      "duration": 5.12,
+      "text": "mcash T support so depending on the my"
+    },
+    {
+      "start": 768.72,
+      "duration": 2.919,
+      "text": "depending on the database you can select"
+    },
+    {
+      "start": 770.079,
+      "duration": 3.161,
+      "text": "your option group so we're going to go"
+    },
+    {
+      "start": 771.639,
+      "duration": 4.601,
+      "text": "with the default"
+    },
+    {
+      "start": 773.24,
+      "duration": 5.24,
+      "text": "one then you can also enable backups so"
+    },
+    {
+      "start": 776.24,
+      "duration": 3.92,
+      "text": "backups means creating a copy of your"
+    },
+    {
+      "start": 778.48,
+      "duration": 4.479,
+      "text": "database so that you can come back you"
+    },
+    {
+      "start": 780.16,
+      "duration": 4.76,
+      "text": "can create a new database if this is uh"
+    },
+    {
+      "start": 782.959,
+      "duration": 4.761,
+      "text": "facing any problems or"
+    },
+    {
+      "start": 784.92,
+      "duration": 4.76,
+      "text": "anything okay so if you want you can"
+    },
+    {
+      "start": 787.72,
+      "duration": 4.559,
+      "text": "enable a database which is automatic"
+    },
+    {
+      "start": 789.68,
+      "duration": 5.24,
+      "text": "automated enable database uh so if you"
+    },
+    {
+      "start": 792.279,
+      "duration": 4.641,
+      "text": "enable that every 7 days it will create"
+    },
+    {
+      "start": 794.92,
+      "duration": 5.24,
+      "text": "a new backup and store it in the"
+    },
+    {
+      "start": 796.92,
+      "duration": 5.359,
+      "text": "snapshot which is uh"
+    },
+    {
+      "start": 800.16,
+      "duration": 4.359,
+      "text": "here right so this is good for"
+    },
+    {
+      "start": 802.279,
+      "duration": 3.92,
+      "text": "production database but if you're uh"
+    },
+    {
+      "start": 804.519,
+      "duration": 3.601,
+      "text": "doing it for practice make sure you"
+    },
+    {
+      "start": 806.199,
+      "duration": 3.561,
+      "text": "disable it because it will automatically"
+    },
+    {
+      "start": 808.12,
+      "duration": 3.0,
+      "text": "create the snap app shot which will"
+    },
+    {
+      "start": 809.76,
+      "duration": 4.519,
+      "text": "charge you"
+    },
+    {
+      "start": 811.12,
+      "duration": 6.279,
+      "text": "money okay"
+    },
+    {
+      "start": 814.279,
+      "duration": 4.481,
+      "text": "yeah then you have uh encryption"
+    },
+    {
+      "start": 817.399,
+      "duration": 3.68,
+      "text": "encryption"
+    },
+    {
+      "start": 818.76,
+      "duration": 3.28,
+      "text": "means encrypting the data that is stored"
+    },
+    {
+      "start": 821.079,
+      "duration": 3.401,
+      "text": "inside the"
+    },
+    {
+      "start": 822.04,
+      "duration": 4.479,
+      "text": "database or the data that is passed"
+    },
+    {
+      "start": 824.48,
+      "duration": 4.76,
+      "text": "between the database and the application"
+    },
+    {
+      "start": 826.519,
+      "duration": 4.921,
+      "text": "so you can choose to encrypt the service"
+    },
+    {
+      "start": 829.24,
+      "duration": 3.719,
+      "text": "using the using the KMS so every"
+    },
+    {
+      "start": 831.44,
+      "duration": 4.519,
+      "text": "encryption in the AWS is mostly done"
+    },
+    {
+      "start": 832.959,
+      "duration": 4.56,
+      "text": "with KMS or key management service so if"
+    },
+    {
+      "start": 835.959,
+      "duration": 3.961,
+      "text": "you enable that you can also Define what"
+    },
+    {
+      "start": 837.519,
+      "duration": 4.521,
+      "text": "key you want to use"
+    },
+    {
+      "start": 839.92,
+      "duration": 4.24,
+      "text": "so choose the encrypt choose to encrypt"
+    },
+    {
+      "start": 842.04,
+      "duration": 4.44,
+      "text": "the given instance master key ID and the"
+    },
+    {
+      "start": 844.16,
+      "duration": 5.44,
+      "text": "allias appear in the list after they"
+    },
+    {
+      "start": 846.48,
+      "duration": 5.159,
+      "text": "have been created using the AWS Key"
+    },
+    {
+      "start": 849.6,
+      "duration": 3.72,
+      "text": "Management Service console so I'm going"
+    },
+    {
+      "start": 851.639,
+      "duration": 2.961,
+      "text": "to select this but I'm not enabling"
+    },
+    {
+      "start": 853.32,
+      "duration": 3.199,
+      "text": "encryption because this is also going to"
+    },
+    {
+      "start": 854.6,
+      "duration": 3.919,
+      "text": "charge you money but you have an option"
+    },
+    {
+      "start": 856.519,
+      "duration": 3.921,
+      "text": "to select encryption to create backups"
+    },
+    {
+      "start": 858.519,
+      "duration": 4.961,
+      "text": "to enable monitoring and a lot more"
+    },
+    {
+      "start": 860.44,
+      "duration": 5.6,
+      "text": "function which is why RDS is so popular"
+    },
+    {
+      "start": 863.48,
+      "duration": 4.52,
+      "text": "because if you do that in ec2 instance"
+    },
+    {
+      "start": 866.04,
+      "duration": 4.32,
+      "text": "it will require a lot of configurations"
+    },
+    {
+      "start": 868.0,
+      "duration": 4.8,
+      "text": "and manual work but you can do that in"
+    },
+    {
+      "start": 870.36,
+      "duration": 5.76,
+      "text": "RDS with just a single"
+    },
+    {
+      "start": 872.8,
+      "duration": 5.2,
+      "text": "click so which one is most common use so"
+    },
+    {
+      "start": 876.12,
+      "duration": 3.76,
+      "text": "if you want to save money and you have"
+    },
+    {
+      "start": 878.0,
+      "duration": 4.56,
+      "text": "someone with technical knowledge you can"
+    },
+    {
+      "start": 879.88,
+      "duration": 3.8,
+      "text": "go with ec2 if you have if you don't"
+    },
+    {
+      "start": 882.56,
+      "duration": 2.92,
+      "text": "have technical knowledge and you don't"
+    },
+    {
+      "start": 883.68,
+      "duration": 4.12,
+      "text": "want to have a lot of headache you can"
+    },
+    {
+      "start": 885.48,
+      "duration": 3.88,
+      "text": "go with RDS because it's easy to use"
+    },
+    {
+      "start": 887.8,
+      "duration": 4.24,
+      "text": "production in the production in the"
+    },
+    {
+      "start": 889.36,
+      "duration": 4.0,
+      "text": "production uh depends in the production"
+    },
+    {
+      "start": 892.04,
+      "duration": 3.76,
+      "text": "if you have money and you want to have"
+    },
+    {
+      "start": 893.36,
+      "duration": 4.96,
+      "text": "extra features you usually go with RDS"
+    },
+    {
+      "start": 895.8,
+      "duration": 4.719,
+      "text": "and mostly the Amazon Aurora RDS because"
+    },
+    {
+      "start": 898.32,
+      "duration": 4.92,
+      "text": "that is that gives you a lot of"
+    },
+    {
+      "start": 900.519,
+      "duration": 6.801,
+      "text": "features and we will be looking that in"
+    },
+    {
+      "start": 903.24,
+      "duration": 5.56,
+      "text": "these slides so we have seen RDS and ec2"
+    },
+    {
+      "start": 907.32,
+      "duration": 3.48,
+      "text": "so it is a manage SQL servers which"
+    },
+    {
+      "start": 908.8,
+      "duration": 3.36,
+      "text": "handles a lot of thing and here this is"
+    },
+    {
+      "start": 910.8,
+      "duration": 3.279,
+      "text": "a customer manage where you have to"
+    },
+    {
+      "start": 912.16,
+      "duration": 4.32,
+      "text": "install and configure everything"
+    },
+    {
+      "start": 914.079,
+      "duration": 4.12,
+      "text": "yourself AWS manages the database"
+    },
+    {
+      "start": 916.48,
+      "duration": 3.599,
+      "text": "installation you just need to select"
+    },
+    {
+      "start": 918.199,
+      "duration": 4.76,
+      "text": "what database engine you want and here"
+    },
+    {
+      "start": 920.079,
+      "duration": 6.68,
+      "text": "you have to run the commands to install"
+    },
+    {
+      "start": 922.959,
+      "duration": 5.521,
+      "text": "database right then backups High"
+    },
+    {
+      "start": 926.759,
+      "duration": 4.601,
+      "text": "availability OS patching scaling"
+    },
+    {
+      "start": 928.48,
+      "duration": 5.0,
+      "text": "resources like memory CPU storage can"
+    },
+    {
+      "start": 931.36,
+      "duration": 3.8,
+      "text": "all all be done by AWS so you select"
+    },
+    {
+      "start": 933.48,
+      "duration": 3.719,
+      "text": "auto scaling you select automated"
+    },
+    {
+      "start": 935.16,
+      "duration": 4.32,
+      "text": "backups you select multiac deployment"
+    },
+    {
+      "start": 937.199,
+      "duration": 5.2,
+      "text": "for high availability so all is done by"
+    },
+    {
+      "start": 939.48,
+      "duration": 5.2,
+      "text": "AWS and here you have to set set up"
+    },
+    {
+      "start": 942.399,
+      "duration": 4.641,
+      "text": "yourself so database professionals does"
+    },
+    {
+      "start": 944.68,
+      "duration": 4.079,
+      "text": "the cql installation patching defines"
+    },
+    {
+      "start": 947.04,
+      "duration": 3.159,
+      "text": "and implements the backup High"
+    },
+    {
+      "start": 948.759,
+      "duration": 3.801,
+      "text": "availability solutions by creating"
+    },
+    {
+      "start": 950.199,
+      "duration": 4.241,
+      "text": "replications and scaling resources"
+    },
+    {
+      "start": 952.56,
+      "duration": 4.0,
+      "text": "manually so all of these are done"
+    },
+    {
+      "start": 954.44,
+      "duration": 4.56,
+      "text": "manually when you use ec2 which requires"
+    },
+    {
+      "start": 956.56,
+      "duration": 4.12,
+      "text": "a technical knowledge so if you have the"
+    },
+    {
+      "start": 959.0,
+      "duration": 4.12,
+      "text": "technical expertise and you have the"
+    },
+    {
+      "start": 960.68,
+      "duration": 5.0,
+      "text": "team you can go with tc2 because that"
+    },
+    {
+      "start": 963.12,
+      "duration": 4.68,
+      "text": "will save you money RDS is costly but it"
+    },
+    {
+      "start": 965.68,
+      "duration": 4.68,
+      "text": "gives you a lot of features as"
+    },
+    {
+      "start": 967.8,
+      "duration": 4.68,
+      "text": "well okay then database professionals"
+    },
+    {
+      "start": 970.36,
+      "duration": 4.36,
+      "text": "has limited access for performing tasks"
+    },
+    {
+      "start": 972.48,
+      "duration": 4.44,
+      "text": "certain tasks require AWS provided store"
+    },
+    {
+      "start": 974.72,
+      "duration": 4.919,
+      "text": "procedure so the only drawback with this"
+    },
+    {
+      "start": 976.92,
+      "duration": 4.32,
+      "text": "is like you cannot go into the server"
+    },
+    {
+      "start": 979.639,
+      "duration": 5.0,
+      "text": "even though this is launched in a server"
+    },
+    {
+      "start": 981.24,
+      "duration": 5.88,
+      "text": "behind uh the RDS you cannot SS into it"
+    },
+    {
+      "start": 984.639,
+      "duration": 3.921,
+      "text": "and go and run commands but here you can"
+    },
+    {
+      "start": 987.12,
+      "duration": 2.519,
+      "text": "go inside the server you have full"
+    },
+    {
+      "start": 988.56,
+      "duration": 2.639,
+      "text": "access"
+    },
+    {
+      "start": 989.639,
+      "duration": 5.601,
+      "text": "on the SQL"
+    },
+    {
+      "start": 991.199,
+      "duration": 6.0,
+      "text": "instance right all right okay so let's"
+    },
+    {
+      "start": 995.24,
+      "duration": 4.32,
+      "text": "go and complete our installation first"
+    },
+    {
+      "start": 997.199,
+      "duration": 4.521,
+      "text": "so we have seen all the configuration"
+    },
+    {
+      "start": 999.56,
+      "duration": 4.279,
+      "text": "and let's go and so you also have"
+    },
+    {
+      "start": 1001.72,
+      "duration": 4.799,
+      "text": "something known as log exports so every"
+    },
+    {
+      "start": 1003.839,
+      "duration": 5.041,
+      "text": "database or every service is going to"
+    },
+    {
+      "start": 1006.519,
+      "duration": 4.8,
+      "text": "give you logs logs will tell you what is"
+    },
+    {
+      "start": 1008.88,
+      "duration": 4.759,
+      "text": "happening why what is the error why the"
+    },
+    {
+      "start": 1011.319,
+      "duration": 3.96,
+      "text": "error have came everything right so you"
+    },
+    {
+      "start": 1013.639,
+      "duration": 4.32,
+      "text": "can select so there are different kind"
+    },
+    {
+      "start": 1015.279,
+      "duration": 4.401,
+      "text": "of logs audit log error log General log"
+    },
+    {
+      "start": 1017.959,
+      "duration": 3.24,
+      "text": "and slow query log"
+    },
+    {
+      "start": 1019.68,
+      "duration": 4.0,
+      "text": "so if you want this logs to be stored"
+    },
+    {
+      "start": 1021.199,
+      "duration": 4.6,
+      "text": "somewhere like Amazon cloudwatch logs"
+    },
+    {
+      "start": 1023.68,
+      "duration": 3.519,
+      "text": "you can enable that when you enable this"
+    },
+    {
+      "start": 1025.799,
+      "duration": 3.081,
+      "text": "all the logs that are created are stored"
+    },
+    {
+      "start": 1027.199,
+      "duration": 3.441,
+      "text": "in the Amazon Cloud was locks so"
+    },
+    {
+      "start": 1028.88,
+      "duration": 3.6,
+      "text": "whenever there is a problem you can go"
+    },
+    {
+      "start": 1030.64,
+      "duration": 3.439,
+      "text": "and check that locks and then configure"
+    },
+    {
+      "start": 1032.48,
+      "duration": 3.76,
+      "text": "that"
+    },
+    {
+      "start": 1034.079,
+      "duration": 4.24,
+      "text": "problem but you don't have the access to"
+    },
+    {
+      "start": 1036.24,
+      "duration": 3.839,
+      "text": "go into the server so you need to find a"
+    },
+    {
+      "start": 1038.319,
+      "duration": 3.681,
+      "text": "way on how to do that depending on what"
+    },
+    {
+      "start": 1040.079,
+      "duration": 4.801,
+      "text": "the problem"
+    },
+    {
+      "start": 1042.0,
+      "duration": 5.28,
+      "text": "is then you can also enable maintenance"
+    },
+    {
+      "start": 1044.88,
+      "duration": 4.2,
+      "text": "so maintenance is auto minor version"
+    },
+    {
+      "start": 1047.28,
+      "duration": 3.96,
+      "text": "upgrade so specify yes to enable"
+    },
+    {
+      "start": 1049.08,
+      "duration": 4.4,
+      "text": "automatic upgrades to minor versions as"
+    },
+    {
+      "start": 1051.24,
+      "duration": 3.72,
+      "text": "they are released that's automatic"
+    },
+    {
+      "start": 1053.48,
+      "duration": 2.96,
+      "text": "upgrades once during the maintenance"
+    },
+    {
+      "start": 1054.96,
+      "duration": 3.04,
+      "text": "window for the database instance which"
+    },
+    {
+      "start": 1056.44,
+      "duration": 3.4,
+      "text": "means if you want to upgrade something"
+    },
+    {
+      "start": 1058.0,
+      "duration": 4.48,
+      "text": "and you want to like maintenance window"
+    },
+    {
+      "start": 1059.84,
+      "duration": 4.44,
+      "text": "if you for example uh let's take an"
+    },
+    {
+      "start": 1062.48,
+      "duration": 2.92,
+      "text": "example of an application so let's say"
+    },
+    {
+      "start": 1064.28,
+      "duration": 3.72,
+      "text": "you have an application which you're"
+    },
+    {
+      "start": 1065.4,
+      "duration": 5.76,
+      "text": "using all the time right and the"
+    },
+    {
+      "start": 1068.0,
+      "duration": 4.72,
+      "text": "application has has uh grown a lot and"
+    },
+    {
+      "start": 1071.16,
+      "duration": 4.36,
+      "text": "now the user base is around millions or"
+    },
+    {
+      "start": 1072.72,
+      "duration": 4.959,
+      "text": "trillions of users every month so they"
+    },
+    {
+      "start": 1075.52,
+      "duration": 4.399,
+      "text": "might be upgrading something to enable"
+    },
+    {
+      "start": 1077.679,
+      "duration": 5.321,
+      "text": "more functions and more per performance"
+    },
+    {
+      "start": 1079.919,
+      "duration": 5.401,
+      "text": "right so if you if you see in some apps"
+    },
+    {
+      "start": 1083.0,
+      "duration": 4.08,
+      "text": "when they are doing something they"
+    },
+    {
+      "start": 1085.32,
+      "duration": 3.92,
+      "text": "provide a maintenance window like you"
+    },
+    {
+      "start": 1087.08,
+      "duration": 4.2,
+      "text": "cannot use this application on Sunday at"
+    },
+    {
+      "start": 1089.24,
+      "duration": 3.919,
+      "text": "5:00 because we are doing some upgrades"
+    },
+    {
+      "start": 1091.28,
+      "duration": 4.56,
+      "text": "for your user"
+    },
+    {
+      "start": 1093.159,
+      "duration": 4.601,
+      "text": "experience yeah same way if you want to"
+    },
+    {
+      "start": 1095.84,
+      "duration": 3.719,
+      "text": "do an upgrade or anything you can set up"
+    },
+    {
+      "start": 1097.76,
+      "duration": 3.2,
+      "text": "a maintenance window and you can choose"
+    },
+    {
+      "start": 1099.559,
+      "duration": 3.321,
+      "text": "when do you want so you can choose a"
+    },
+    {
+      "start": 1100.96,
+      "duration": 4.959,
+      "text": "window and you can select on Monday on"
+    },
+    {
+      "start": 1102.88,
+      "duration": 5.2,
+      "text": "this uh on this time at for for 30"
+    },
+    {
+      "start": 1105.919,
+      "duration": 4.401,
+      "text": "minutes or for 1 hour depending on what"
+    },
+    {
+      "start": 1108.08,
+      "duration": 4.56,
+      "text": "you want so for now I'm not going to"
+    },
+    {
+      "start": 1110.32,
+      "duration": 4.4,
+      "text": "enable"
+    },
+    {
+      "start": 1112.64,
+      "duration": 4.279,
+      "text": "maintenance then you can also enable"
+    },
+    {
+      "start": 1114.72,
+      "duration": 4.56,
+      "text": "auto prodution if you enable this it"
+    },
+    {
+      "start": 1116.919,
+      "duration": 4.081,
+      "text": "protects the data from being deleted"
+    },
+    {
+      "start": 1119.28,
+      "duration": 4.04,
+      "text": "accidentally while this option is"
+    },
+    {
+      "start": 1121.0,
+      "duration": 3.48,
+      "text": "enabled you cannot delete the database"
+    },
+    {
+      "start": 1123.32,
+      "duration": 2.599,
+      "text": "so this is a good thing if you don't"
+    },
+    {
+      "start": 1124.48,
+      "duration": 3.52,
+      "text": "want someone to accidentally delete your"
+    },
+    {
+      "start": 1125.919,
+      "duration": 3.561,
+      "text": "database you can enable this because the"
+    },
+    {
+      "start": 1128.0,
+      "duration": 4.96,
+      "text": "database won't be deleted unless you"
+    },
+    {
+      "start": 1129.48,
+      "duration": 3.48,
+      "text": "have disabled this"
+    },
+    {
+      "start": 1133.12,
+      "duration": 4.52,
+      "text": "option right lastly the RDS gives you"
+    },
+    {
+      "start": 1135.96,
+      "duration": 3.4,
+      "text": "how much would be the cost so you can"
+    },
+    {
+      "start": 1137.64,
+      "duration": 4.919,
+      "text": "see the Amazon RDS free tier is"
+    },
+    {
+      "start": 1139.36,
+      "duration": 5.559,
+      "text": "available for you for free uh for 12"
+    },
+    {
+      "start": 1142.559,
+      "duration": 4.48,
+      "text": "months each calendar month will allow"
+    },
+    {
+      "start": 1144.919,
+      "duration": 3.401,
+      "text": "you to use the Amazon RDS for free so we"
+    },
+    {
+      "start": 1147.039,
+      "duration": 2.76,
+      "text": "are not paying any charge because we"
+    },
+    {
+      "start": 1148.32,
+      "duration": 3.239,
+      "text": "using the free tier but if you're using"
+    },
+    {
+      "start": 1149.799,
+      "duration": 3.521,
+      "text": "anything else other than free tier you"
+    },
+    {
+      "start": 1151.559,
+      "duration": 4.24,
+      "text": "will get what would be the estimated"
+    },
+    {
+      "start": 1153.32,
+      "duration": 3.44,
+      "text": "cost for the RDS and the configuration"
+    },
+    {
+      "start": 1155.799,
+      "duration": 4.201,
+      "text": "you have"
+    },
+    {
+      "start": 1156.76,
+      "duration": 4.96,
+      "text": "selected oh okay oh it show you there"
+    },
+    {
+      "start": 1160.0,
+      "duration": 3.76,
+      "text": "all right yeah you can or else you can"
+    },
+    {
+      "start": 1161.72,
+      "duration": 5.16,
+      "text": "go to this RDS pricing page which will"
+    },
+    {
+      "start": 1163.76,
+      "duration": 5.68,
+      "text": "give you more idea about how uh so for"
+    },
+    {
+      "start": 1166.88,
+      "duration": 5.159,
+      "text": "example if I go with my SQL"
+    },
+    {
+      "start": 1169.44,
+      "duration": 4.359,
+      "text": "pricing and we have single AC deployment"
+    },
+    {
+      "start": 1172.039,
+      "duration": 4.361,
+      "text": "we have multi a deployment with one"
+    },
+    {
+      "start": 1173.799,
+      "duration": 4.721,
+      "text": "standby and with two standby I'll show"
+    },
+    {
+      "start": 1176.4,
+      "duration": 4.759,
+      "text": "you what standby are and we will learn"
+    },
+    {
+      "start": 1178.52,
+      "duration": 4.519,
+      "text": "about that so when you select single a"
+    },
+    {
+      "start": 1181.159,
+      "duration": 5.321,
+      "text": "deployment for this instance class which"
+    },
+    {
+      "start": 1183.039,
+      "duration": 5.88,
+      "text": "is t4g micro you have to pay 0.16 per"
+    },
+    {
+      "start": 1186.48,
+      "duration": 4.439,
+      "text": "hour in Us East so depending on the"
+    },
+    {
+      "start": 1188.919,
+      "duration": 4.88,
+      "text": "region as well so you can see all the"
+    },
+    {
+      "start": 1190.919,
+      "duration": 5.961,
+      "text": "pricing here and memory optimized"
+    },
+    {
+      "start": 1193.799,
+      "duration": 4.521,
+      "text": "instances are this then you have you can"
+    },
+    {
+      "start": 1196.88,
+      "duration": 3.36,
+      "text": "also have reserved instance where you"
+    },
+    {
+      "start": 1198.32,
+      "duration": 4.719,
+      "text": "can take the database for either one"
+    },
+    {
+      "start": 1200.24,
+      "duration": 4.96,
+      "text": "year or 3 years and you can save some"
+    },
+    {
+      "start": 1203.039,
+      "duration": 3.76,
+      "text": "money so you have different options"
+    },
+    {
+      "start": 1205.2,
+      "duration": 3.0,
+      "text": "present here you can go and check like"
+    },
+    {
+      "start": 1206.799,
+      "duration": 2.76,
+      "text": "depending on what storage you want if"
+    },
+    {
+      "start": 1208.2,
+      "duration": 2.76,
+      "text": "you're using general purpose the price"
+    },
+    {
+      "start": 1209.559,
+      "duration": 3.721,
+      "text": "would be this"
+    },
+    {
+      "start": 1210.96,
+      "duration": 4.0,
+      "text": "0.115 if you're using provision iops"
+    },
+    {
+      "start": 1213.28,
+      "duration": 4.2,
+      "text": "with greater performance the price would"
+    },
+    {
+      "start": 1214.96,
+      "duration": 5.76,
+      "text": "be 125"
+    },
+    {
+      "start": 1217.48,
+      "duration": 4.48,
+      "text": "uh so this is all about RDS pricing if"
+    },
+    {
+      "start": 1220.72,
+      "duration": 2.8,
+      "text": "you want you can always come here and"
+    },
+    {
+      "start": 1221.96,
+      "duration": 3.56,
+      "text": "check so you also have the charge for"
+    },
+    {
+      "start": 1223.52,
+      "duration": 4.44,
+      "text": "data transfer depending on how much data"
+    },
+    {
+      "start": 1225.52,
+      "duration": 3.88,
+      "text": "is transferred uh from the database and"
+    },
+    {
+      "start": 1227.96,
+      "duration": 5.48,
+      "text": "to the database"
+    },
+    {
+      "start": 1229.4,
+      "duration": 7.72,
+      "text": "so for first 10 TB you pay around 0.09"
+    },
+    {
+      "start": 1233.44,
+      "duration": 6.4,
+      "text": "for next 40 TB you pay 0.85 for next 100"
+    },
+    {
+      "start": 1237.12,
+      "duration": 6.2,
+      "text": "TP you pay 0.07 and"
+    },
+    {
+      "start": 1239.84,
+      "duration": 5.04,
+      "text": "depending right and also if your RDS is"
+    },
+    {
+      "start": 1243.32,
+      "duration": 3.4,
+      "text": "transferring data to uh different"
+    },
+    {
+      "start": 1244.88,
+      "duration": 5.08,
+      "text": "services like Cloud front you have to"
+    },
+    {
+      "start": 1246.72,
+      "duration": 6.0,
+      "text": "pay zero but if it is transferred to uh"
+    },
+    {
+      "start": 1249.96,
+      "duration": 5.0,
+      "text": "this regions which is government Cloud"
+    },
+    {
+      "start": 1252.72,
+      "duration": 4.319,
+      "text": "Us West you have to pay this this so all"
+    },
+    {
+      "start": 1254.96,
+      "duration": 4.8,
+      "text": "the prices are mentioned on the RDS"
+    },
+    {
+      "start": 1257.039,
+      "duration": 5.081,
+      "text": "pricing page and you can check that out"
+    },
+    {
+      "start": 1259.76,
+      "duration": 3.84,
+      "text": "so now we should create this database"
+    },
+    {
+      "start": 1262.12,
+      "duration": 5.0,
+      "text": "I'm going to click on create database it"
+    },
+    {
+      "start": 1263.6,
+      "duration": 4.92,
+      "text": "takes around 5 to uh 6 minutes to make"
+    },
+    {
+      "start": 1267.12,
+      "duration": 2.36,
+      "text": "it available so right now it is in"
+    },
+    {
+      "start": 1268.52,
+      "duration": 3.2,
+      "text": "creating"
+    },
+    {
+      "start": 1269.48,
+      "duration": 5.12,
+      "text": "state so we have created a database"
+    },
+    {
+      "start": 1271.72,
+      "duration": 5.12,
+      "text": "which is my database and it is a MySQL"
+    },
+    {
+      "start": 1274.6,
+      "duration": 5.92,
+      "text": "engine and we have launched it in the US"
+    },
+    {
+      "start": 1276.84,
+      "duration": 6.12,
+      "text": "West 2A the size is tb. t3micro"
+    },
+    {
+      "start": 1280.52,
+      "duration": 4.08,
+      "text": "and we have not enabled maintenance the"
+    },
+    {
+      "start": 1282.96,
+      "duration": 3.959,
+      "text": "VPC is this and we have not enabled"
+    },
+    {
+      "start": 1284.6,
+      "duration": 5.92,
+      "text": "multi-az as well so you know what multi"
+    },
+    {
+      "start": 1286.919,
+      "duration": 3.601,
+      "text": "a is right right"
+    },
+    {
+      "start": 1290.919,
+      "duration": 3.281,
+      "text": "yeah"
+    },
+    {
+      "start": 1291.72,
+      "duration": 5.52,
+      "text": "multi yes because we do this in"
+    },
+    {
+      "start": 1294.2,
+      "duration": 6.479,
+      "text": "production so that if this a which is Us"
+    },
+    {
+      "start": 1297.24,
+      "duration": 5.319,
+      "text": "West 2A is down due to any reason our"
+    },
+    {
+      "start": 1300.679,
+      "duration": 5.641,
+      "text": "database should Al always be up in the"
+    },
+    {
+      "start": 1302.559,
+      "duration": 3.761,
+      "text": "other a which is still"
+    },
+    {
+      "start": 1306.679,
+      "duration": 6.041,
+      "text": "available yeah so we are going to see"
+    },
+    {
+      "start": 1310.52,
+      "duration": 4.32,
+      "text": "what options we have uh using the slid"
+    },
+    {
+      "start": 1312.72,
+      "duration": 4.319,
+      "text": "so we have seen there are two ways then"
+    },
+    {
+      "start": 1314.84,
+      "duration": 3.959,
+      "text": "let's go and do the overview so RDS"
+    },
+    {
+      "start": 1317.039,
+      "duration": 3.681,
+      "text": "stands for relational database service"
+    },
+    {
+      "start": 1318.799,
+      "duration": 3.521,
+      "text": "and it is managed database service which"
+    },
+    {
+      "start": 1320.72,
+      "duration": 4.4,
+      "text": "means everything is going to be managed"
+    },
+    {
+      "start": 1322.32,
+      "duration": 5.08,
+      "text": "by AWS and it allows you to create"
+    },
+    {
+      "start": 1325.12,
+      "duration": 5.36,
+      "text": "database like postgress my SQ marad DB"
+    },
+    {
+      "start": 1327.4,
+      "duration": 5.36,
+      "text": "Oracle Microsoft and Aurora as well"
+    },
+    {
+      "start": 1330.48,
+      "duration": 4.52,
+      "text": "which is AWS own"
+    },
+    {
+      "start": 1332.76,
+      "duration": 4.12,
+      "text": "database so what are the advantages of"
+    },
+    {
+      "start": 1335.0,
+      "duration": 4.2,
+      "text": "using RDS we have already discussed that"
+    },
+    {
+      "start": 1336.88,
+      "duration": 4.64,
+      "text": "but let's go over them again so RDS is a"
+    },
+    {
+      "start": 1339.2,
+      "duration": 3.92,
+      "text": "manage service which which automatically"
+    },
+    {
+      "start": 1341.52,
+      "duration": 3.48,
+      "text": "uh do all this configurations like"
+    },
+    {
+      "start": 1343.12,
+      "duration": 3.72,
+      "text": "automated provisioning always patching"
+    },
+    {
+      "start": 1345.0,
+      "duration": 4.12,
+      "text": "continuous backups and restore them to"
+    },
+    {
+      "start": 1346.84,
+      "duration": 4.8,
+      "text": "any specific time stamp monitoring"
+    },
+    {
+      "start": 1349.12,
+      "duration": 4.439,
+      "text": "dashboards read replicas so I'm going to"
+    },
+    {
+      "start": 1351.64,
+      "duration": 3.84,
+      "text": "tell you what read replicas are read"
+    },
+    {
+      "start": 1353.559,
+      "duration": 4.12,
+      "text": "replicas for improved read performance"
+    },
+    {
+      "start": 1355.48,
+      "duration": 4.48,
+      "text": "multiac setup for Disaster Recovery"
+    },
+    {
+      "start": 1357.679,
+      "duration": 5.24,
+      "text": "maintenance windows for upgrades scaling"
+    },
+    {
+      "start": 1359.96,
+      "duration": 4.56,
+      "text": "capacity so you can uh enable auto auto"
+    },
+    {
+      "start": 1362.919,
+      "duration": 3.401,
+      "text": "scaling as well you can also set up"
+    },
+    {
+      "start": 1364.52,
+      "duration": 4.84,
+      "text": "scaling policy like vertical and"
+    },
+    {
+      "start": 1366.32,
+      "duration": 4.959,
+      "text": "horizontal and storage is backed by EPS"
+    },
+    {
+      "start": 1369.36,
+      "duration": 6.08,
+      "text": "volumes which can be either general"
+    },
+    {
+      "start": 1371.279,
+      "duration": 6.28,
+      "text": "purpose gp2 or provision iops io1 or io1"
+    },
+    {
+      "start": 1375.44,
+      "duration": 4.92,
+      "text": "but the only drawback is you cannot SSH"
+    },
+    {
+      "start": 1377.559,
+      "duration": 5.521,
+      "text": "into your instance"
+    },
+    {
+      "start": 1380.36,
+      "duration": 5.12,
+      "text": "okay so RDS backups you have seen that"
+    },
+    {
+      "start": 1383.08,
+      "duration": 4.24,
+      "text": "there's an option to enable RDS backups"
+    },
+    {
+      "start": 1385.48,
+      "duration": 3.72,
+      "text": "backups means creating a copy so that"
+    },
+    {
+      "start": 1387.32,
+      "duration": 4.76,
+      "text": "whenever your primary database is down"
+    },
+    {
+      "start": 1389.2,
+      "duration": 5.28,
+      "text": "you can create a new database with the"
+    },
+    {
+      "start": 1392.08,
+      "duration": 5.12,
+      "text": "backup and backups are automatically"
+    },
+    {
+      "start": 1394.48,
+      "duration": 4.52,
+      "text": "enabled in RDS and automated backups"
+    },
+    {
+      "start": 1397.2,
+      "duration": 3.4,
+      "text": "means daily full backup of your database"
+    },
+    {
+      "start": 1399.0,
+      "duration": 3.6,
+      "text": "during the maintenance window"
+    },
+    {
+      "start": 1400.6,
+      "duration": 4.24,
+      "text": "transaction locks are backed by RDS"
+    },
+    {
+      "start": 1402.6,
+      "duration": 4.16,
+      "text": "every 5 minutes and you have the ability"
+    },
+    {
+      "start": 1404.84,
+      "duration": 4.319,
+      "text": "to restore to any point in time from the"
+    },
+    {
+      "start": 1406.76,
+      "duration": 4.159,
+      "text": "oldest backup to the 5 minutes AG"
+    },
+    {
+      "start": 1409.159,
+      "duration": 4.041,
+      "text": "so when you have the backup you can Auto"
+    },
+    {
+      "start": 1410.919,
+      "duration": 4.88,
+      "text": "you can regain your database with any"
+    },
+    {
+      "start": 1413.2,
+      "duration": 4.4,
+      "text": "point of time like if you want to uh you"
+    },
+    {
+      "start": 1415.799,
+      "duration": 5.841,
+      "text": "want to have the database that was on"
+    },
+    {
+      "start": 1417.6,
+      "duration": 6.559,
+      "text": "last wedness day 5:00 you can also do"
+    },
+    {
+      "start": 1421.64,
+      "duration": 3.399,
+      "text": "that then you have 7 Days retention"
+    },
+    {
+      "start": 1424.159,
+      "duration": 4.52,
+      "text": "which"
+    },
+    {
+      "start": 1425.039,
+      "duration": 5.041,
+      "text": "means uh your database would be like if"
+    },
+    {
+      "start": 1428.679,
+      "duration": 4.88,
+      "text": "I go show you that option here in the"
+    },
+    {
+      "start": 1430.08,
+      "duration": 3.479,
+      "text": "database in create database"
+    },
+    {
+      "start": 1434.08,
+      "duration": 3.839,
+      "text": "option so we have seen that when we"
+    },
+    {
+      "start": 1436.159,
+      "duration": 7.081,
+      "text": "choose automated we choose the backup"
+    },
+    {
+      "start": 1437.919,
+      "duration": 7.64,
+      "text": "option uh here is the option for backup"
+    },
+    {
+      "start": 1443.24,
+      "duration": 2.319,
+      "text": "which"
+    },
+    {
+      "start": 1446.72,
+      "duration": 4.559,
+      "text": "is option for backup and"
+    },
+    {
+      "start": 1449.2,
+      "duration": 3.599,
+      "text": "snapshot yeah so when you create SN"
+    },
+    {
+      "start": 1451.279,
+      "duration": 3.601,
+      "text": "backup it creates a snapshot so you can"
+    },
+    {
+      "start": 1452.799,
+      "duration": 3.961,
+      "text": "see a copy taxt to snapshot which means"
+    },
+    {
+      "start": 1454.88,
+      "duration": 3.6,
+      "text": "a snapshot is going to be created and"
+    },
+    {
+      "start": 1456.76,
+      "duration": 3.56,
+      "text": "you have retention option which is one"
+    },
+    {
+      "start": 1458.48,
+      "duration": 4.16,
+      "text": "here the option is one day number of"
+    },
+    {
+      "start": 1460.32,
+      "duration": 3.88,
+      "text": "days which for which automatics backups"
+    },
+    {
+      "start": 1462.64,
+      "duration": 3.36,
+      "text": "are kept so how long do you want the"
+    },
+    {
+      "start": 1464.2,
+      "duration": 3.16,
+      "text": "backup to be kept that is what backup"
+    },
+    {
+      "start": 1466.0,
+      "duration": 4.88,
+      "text": "retention period"
+    },
+    {
+      "start": 1467.36,
+      "duration": 5.039,
+      "text": "is so choose the number of days yeah"
+    },
+    {
+      "start": 1470.88,
+      "duration": 3.48,
+      "text": "after one days it will delete and then"
+    },
+    {
+      "start": 1472.399,
+      "duration": 3.361,
+      "text": "you will create then one day it will"
+    },
+    {
+      "start": 1474.36,
+      "duration": 4.4,
+      "text": "delete and then you will create so you"
+    },
+    {
+      "start": 1475.76,
+      "duration": 5.279,
+      "text": "can extend this up to 35 days so if you"
+    },
+    {
+      "start": 1478.76,
+      "duration": 4.039,
+      "text": "want the backups to be kept for next 35"
+    },
+    {
+      "start": 1481.039,
+      "duration": 4.481,
+      "text": "days you can keep"
+    },
+    {
+      "start": 1482.799,
+      "duration": 4.201,
+      "text": "that okay so backup retention period"
+    },
+    {
+      "start": 1485.52,
+      "duration": 3.759,
+      "text": "determines the period for which you can"
+    },
+    {
+      "start": 1487.0,
+      "duration": 4.48,
+      "text": "perform the point in time recovery and"
+    },
+    {
+      "start": 1489.279,
+      "duration": 4.64,
+      "text": "Aurora offers one day backup retention"
+    },
+    {
+      "start": 1491.48,
+      "duration": 4.72,
+      "text": "for free so this is for Aurora and for"
+    },
+    {
+      "start": 1493.919,
+      "duration": 5.76,
+      "text": "other databases you need to pay some"
+    },
+    {
+      "start": 1496.2,
+      "duration": 5.359,
+      "text": "money then you have database shot so"
+    },
+    {
+      "start": 1499.679,
+      "duration": 3.441,
+      "text": "when you like for example right now we"
+    },
+    {
+      "start": 1501.559,
+      "duration": 3.48,
+      "text": "already have a database created and if I"
+    },
+    {
+      "start": 1503.12,
+      "duration": 4.039,
+      "text": "want to create the databas database"
+    },
+    {
+      "start": 1505.039,
+      "duration": 4.561,
+      "text": "backup"
+    },
+    {
+      "start": 1507.159,
+      "duration": 5.561,
+      "text": "manually it will be created inside this"
+    },
+    {
+      "start": 1509.6,
+      "duration": 5.079,
+      "text": "sub snapshot so you can also manually"
+    },
+    {
+      "start": 1512.72,
+      "duration": 3.48,
+      "text": "create a database snapshot database"
+    },
+    {
+      "start": 1514.679,
+      "duration": 3.761,
+      "text": "backup like this for you can see now it"
+    },
+    {
+      "start": 1516.2,
+      "duration": 7.12,
+      "text": "is in available state so if I click on"
+    },
+    {
+      "start": 1518.44,
+      "duration": 7.16,
+      "text": "this I have an action uh to take a"
+    },
+    {
+      "start": 1523.32,
+      "duration": 4.8,
+      "text": "snapshot okay take a snapshot means"
+    },
+    {
+      "start": 1525.6,
+      "duration": 4.079,
+      "text": "create a database so if I click on this"
+    },
+    {
+      "start": 1528.12,
+      "duration": 4.0,
+      "text": "uh the feature is currently supported by"
+    },
+    {
+      "start": 1529.679,
+      "duration": 4.041,
+      "text": "in or setting to take a snapshot of this"
+    },
+    {
+      "start": 1532.12,
+      "duration": 3.439,
+      "text": "database you must provide a name so we"
+    },
+    {
+      "start": 1533.72,
+      "duration": 5.199,
+      "text": "need to give the name of the database"
+    },
+    {
+      "start": 1535.559,
+      "duration": 5.84,
+      "text": "snapshot let's say my"
+    },
+    {
+      "start": 1538.919,
+      "duration": 3.921,
+      "text": "backup and I'm going to take snapshot so"
+    },
+    {
+      "start": 1541.399,
+      "duration": 2.76,
+      "text": "once the snapshot is taken everything is"
+    },
+    {
+      "start": 1542.84,
+      "duration": 3.439,
+      "text": "going to be replicated inside the"
+    },
+    {
+      "start": 1544.159,
+      "duration": 3.801,
+      "text": "snapshot and we will have a backup which"
+    },
+    {
+      "start": 1546.279,
+      "duration": 3.681,
+      "text": "is my"
+    },
+    {
+      "start": 1547.96,
+      "duration": 3.599,
+      "text": "backup so right now you can see it's in"
+    },
+    {
+      "start": 1549.96,
+      "duration": 3.48,
+      "text": "creating State because it is replicating"
+    },
+    {
+      "start": 1551.559,
+      "duration": 4.72,
+      "text": "everything is there on"
+    },
+    {
+      "start": 1553.44,
+      "duration": 4.32,
+      "text": "the current database so you can see it's"
+    },
+    {
+      "start": 1556.279,
+      "duration": 3.161,
+      "text": "a manual backup because we have created"
+    },
+    {
+      "start": 1557.76,
+      "duration": 3.279,
+      "text": "it manually but you can also have"
+    },
+    {
+      "start": 1559.44,
+      "duration": 4.0,
+      "text": "automated backup you can have backups"
+    },
+    {
+      "start": 1561.039,
+      "duration": 5.36,
+      "text": "that is shared from another account to"
+    },
+    {
+      "start": 1563.44,
+      "duration": 6.88,
+      "text": "you you can have public backups and like"
+    },
+    {
+      "start": 1566.399,
+      "duration": 3.921,
+      "text": "this so all of"
+    },
+    {
+      "start": 1576.399,
+      "duration": 4.601,
+      "text": "those all right so uh let's go back to"
+    },
+    {
+      "start": 1579.559,
+      "duration": 3.521,
+      "text": "the"
+    },
+    {
+      "start": 1581.0,
+      "duration": 5.039,
+      "text": "screen so we have created a manual"
+    },
+    {
+      "start": 1583.08,
+      "duration": 5.76,
+      "text": "backup which is which is there in the"
+    },
+    {
+      "start": 1586.039,
+      "duration": 4.481,
+      "text": "screen snapshot so manual triggered by"
+    },
+    {
+      "start": 1588.84,
+      "duration": 3.16,
+      "text": "the user retention of the backup for as"
+    },
+    {
+      "start": 1590.52,
+      "duration": 3.92,
+      "text": "long as you want it does not get deleted"
+    },
+    {
+      "start": 1592.0,
+      "duration": 3.399,
+      "text": "unless unless you delete it yourself"
+    },
+    {
+      "start": 1594.44,
+      "duration": 2.32,
+      "text": "right so when this is going to be"
+    },
+    {
+      "start": 1595.399,
+      "duration": 3.52,
+      "text": "available I'm going to delete it myself"
+    },
+    {
+      "start": 1596.76,
+      "duration": 4.84,
+      "text": "because I don't want to get"
+    },
+    {
+      "start": 1598.919,
+      "duration": 5.081,
+      "text": "charged then you have Auto scaling so"
+    },
+    {
+      "start": 1601.6,
+      "duration": 5.679,
+      "text": "you have seen that whenever by default"
+    },
+    {
+      "start": 1604.0,
+      "duration": 7.72,
+      "text": "ALDS gives you 20 GB of storage which"
+    },
+    {
+      "start": 1607.279,
+      "duration": 6.4,
+      "text": "you can increase up to 64 GB 64 TB but"
+    },
+    {
+      "start": 1611.72,
+      "duration": 4.4,
+      "text": "you also have an option to enable auto"
+    },
+    {
+      "start": 1613.679,
+      "duration": 5.761,
+      "text": "scaling Auto scaling means it helps you"
+    },
+    {
+      "start": 1616.12,
+      "duration": 5.88,
+      "text": "increase storage on the Rd RDS instance"
+    },
+    {
+      "start": 1619.44,
+      "duration": 5.52,
+      "text": "dynamically which means like whenever"
+    },
+    {
+      "start": 1622.0,
+      "duration": 4.44,
+      "text": "the amount of data in your RDS is"
+    },
+    {
+      "start": 1624.96,
+      "duration": 3.04,
+      "text": "increased the storage should be increase"
+    },
+    {
+      "start": 1626.44,
+      "duration": 4.239,
+      "text": "at the back end as"
+    },
+    {
+      "start": 1628.0,
+      "duration": 4.72,
+      "text": "well okay and when RDS detects you"
+    },
+    {
+      "start": 1630.679,
+      "duration": 4.201,
+      "text": "running out of free storage it it scals"
+    },
+    {
+      "start": 1632.72,
+      "duration": 4.319,
+      "text": "automatically avoid manual scaling of"
+    },
+    {
+      "start": 1634.88,
+      "duration": 4.519,
+      "text": "your database storage and you have to"
+    },
+    {
+      "start": 1637.039,
+      "duration": 4.88,
+      "text": "set up you have to set maximum storage"
+    },
+    {
+      "start": 1639.399,
+      "duration": 4.441,
+      "text": "threshold where we have set like uh if I"
+    },
+    {
+      "start": 1641.919,
+      "duration": 4.36,
+      "text": "go here in the Rd section again click on"
+    },
+    {
+      "start": 1643.84,
+      "duration": 6.319,
+      "text": "create database and if I go to the Autos"
+    },
+    {
+      "start": 1646.279,
+      "duration": 3.88,
+      "text": "scaning option which is here"
+    },
+    {
+      "start": 1654.52,
+      "duration": 3.96,
+      "text": "yeah so this is automatically enabled"
+    },
+    {
+      "start": 1655.88,
+      "duration": 6.639,
+      "text": "for Aurora so I need to change it to"
+    },
+    {
+      "start": 1658.48,
+      "duration": 4.039,
+      "text": "like my SQL standard"
+    },
+    {
+      "start": 1663.32,
+      "duration": 5.56,
+      "text": "create free tier and if I go to"
+    },
+    {
+      "start": 1665.76,
+      "duration": 5.84,
+      "text": "autoscaling option now I have the option"
+    },
+    {
+      "start": 1668.88,
+      "duration": 6.12,
+      "text": "to select the threshold so this database"
+    },
+    {
+      "start": 1671.6,
+      "duration": 7.319,
+      "text": "should exceed up to 1"
+    },
+    {
+      "start": 1675.0,
+      "duration": 6.039,
+      "text": "TBB but I can have it up to 64 TP as"
+    },
+    {
+      "start": 1678.919,
+      "duration": 5.201,
+      "text": "well so you have to Define you have to"
+    },
+    {
+      "start": 1681.039,
+      "duration": 5.88,
+      "text": "set the maximum threshold limit uh for"
+    },
+    {
+      "start": 1684.12,
+      "duration": 4.919,
+      "text": "your database storage and you will"
+    },
+    {
+      "start": 1686.919,
+      "duration": 4.0,
+      "text": "automatically modify storage if the free"
+    },
+    {
+      "start": 1689.039,
+      "duration": 4.441,
+      "text": "storage is less than 10% of the"
+    },
+    {
+      "start": 1690.919,
+      "duration": 5.36,
+      "text": "allocated storage so we have 20 GB when"
+    },
+    {
+      "start": 1693.48,
+      "duration": 4.84,
+      "text": "the storage is left only 10% out of the"
+    },
+    {
+      "start": 1696.279,
+      "duration": 4.201,
+      "text": "20 GP the storage will automatically be"
+    },
+    {
+      "start": 1698.32,
+      "duration": 3.839,
+      "text": "increased or you have the low storage"
+    },
+    {
+      "start": 1700.48,
+      "duration": 3.76,
+      "text": "for last 5 minutes it will be"
+    },
+    {
+      "start": 1702.159,
+      "duration": 4.081,
+      "text": "automatically increased or 6 hours have"
+    },
+    {
+      "start": 1704.24,
+      "duration": 3.64,
+      "text": "been passed since the last modification"
+    },
+    {
+      "start": 1706.24,
+      "duration": 3.52,
+      "text": "then it will automatically increase as"
+    },
+    {
+      "start": 1707.88,
+      "duration": 4.08,
+      "text": "well so these are the three criteria to"
+    },
+    {
+      "start": 1709.76,
+      "duration": 4.759,
+      "text": "increase the storage automatically and"
+    },
+    {
+      "start": 1711.96,
+      "duration": 4.0,
+      "text": "it is used for applications where the"
+    },
+    {
+      "start": 1714.519,
+      "duration": 3.121,
+      "text": "storage is"
+    },
+    {
+      "start": 1715.96,
+      "duration": 3.16,
+      "text": "unpredictable right you don't know how"
+    },
+    {
+      "start": 1717.64,
+      "duration": 2.96,
+      "text": "much the storage would grow then you can"
+    },
+    {
+      "start": 1719.12,
+      "duration": 2.88,
+      "text": "select auto scaling because you don't"
+    },
+    {
+      "start": 1720.6,
+      "duration": 4.319,
+      "text": "want the application to be stopped when"
+    },
+    {
+      "start": 1722.0,
+      "duration": 5.48,
+      "text": "the data is in a large"
+    },
+    {
+      "start": 1724.919,
+      "duration": 5.041,
+      "text": "amount okay then this is supported by"
+    },
+    {
+      "start": 1727.48,
+      "duration": 6.0,
+      "text": "all the RDS engines like Maria DP my SQL"
+    },
+    {
+      "start": 1729.96,
+      "duration": 9.0,
+      "text": "post SQL and every Oracle as"
+    },
+    {
+      "start": 1733.48,
+      "duration": 5.48,
+      "text": "well okay those are the all alls"
+    },
+    {
+      "start": 1739.84,
+      "duration": 6.079,
+      "text": "yeah so all of these"
+    },
+    {
+      "start": 1741.76,
+      "duration": 7.2,
+      "text": "are yeah all all of them and the Aurora"
+    },
+    {
+      "start": 1745.919,
+      "duration": 4.561,
+      "text": "it automatically have by default so but"
+    },
+    {
+      "start": 1748.96,
+      "duration": 3.36,
+      "text": "this is supported so you can either"
+    },
+    {
+      "start": 1750.48,
+      "duration": 4.079,
+      "text": "choose them if you want if not you can"
+    },
+    {
+      "start": 1752.32,
+      "duration": 5.16,
+      "text": "disable it but Aurora is automatically"
+    },
+    {
+      "start": 1754.559,
+      "duration": 4.96,
+      "text": "enabl you cannot change"
+    },
+    {
+      "start": 1757.48,
+      "duration": 3.799,
+      "text": "that then you have something known as"
+    },
+    {
+      "start": 1759.519,
+      "duration": 5.841,
+      "text": "read replicas for read"
+    },
+    {
+      "start": 1761.279,
+      "duration": 6.12,
+      "text": "scalability so read replica whenever you"
+    },
+    {
+      "start": 1765.36,
+      "duration": 4.52,
+      "text": "whenever you see read replica remember"
+    },
+    {
+      "start": 1767.399,
+      "duration": 4.4,
+      "text": "that we use it for increasing"
+    },
+    {
+      "start": 1769.88,
+      "duration": 3.88,
+      "text": "performance and I'm going to explain you"
+    },
+    {
+      "start": 1771.799,
+      "duration": 4.561,
+      "text": "how how we use it so let's take an"
+    },
+    {
+      "start": 1773.76,
+      "duration": 4.96,
+      "text": "example of uh a social media"
+    },
+    {
+      "start": 1776.36,
+      "duration": 6.88,
+      "text": "application right like an"
+    },
+    {
+      "start": 1778.72,
+      "duration": 7.799,
+      "text": "Instagram so Instagram let's take uh a"
+    },
+    {
+      "start": 1783.24,
+      "duration": 5.72,
+      "text": "famous influencer uh let's say who is"
+    },
+    {
+      "start": 1786.519,
+      "duration": 2.441,
+      "text": "the famous"
+    },
+    {
+      "start": 1789.32,
+      "duration": 5.839,
+      "text": "influencer Kylie Jenner okay you know"
+    },
+    {
+      "start": 1792.679,
+      "duration": 5.84,
+      "text": "Kylie you watch your"
+    },
+    {
+      "start": 1795.159,
+      "duration": 6.921,
+      "text": "videos yeah yeah yeah okay so k uploads"
+    },
+    {
+      "start": 1798.519,
+      "duration": 5.681,
+      "text": "a video on Instagram right people go and"
+    },
+    {
+      "start": 1802.08,
+      "duration": 3.479,
+      "text": "people watch it so this video that she"
+    },
+    {
+      "start": 1804.2,
+      "duration": 4.16,
+      "text": "has shared is going to be stored on a"
+    },
+    {
+      "start": 1805.559,
+      "duration": 6.84,
+      "text": "database inside the Instagram's uh"
+    },
+    {
+      "start": 1808.36,
+      "duration": 6.0,
+      "text": "Instagram's servers or databases right"
+    },
+    {
+      "start": 1812.399,
+      "duration": 4.561,
+      "text": "so when she uploads this when she post"
+    },
+    {
+      "start": 1814.36,
+      "duration": 5.199,
+      "text": "it which means she's writing to the"
+    },
+    {
+      "start": 1816.96,
+      "duration": 4.439,
+      "text": "database the photo is uploaded to the"
+    },
+    {
+      "start": 1819.559,
+      "duration": 3.161,
+      "text": "database which is coming from the"
+    },
+    {
+      "start": 1821.399,
+      "duration": 3.52,
+      "text": "application which means it is writing to"
+    },
+    {
+      "start": 1822.72,
+      "duration": 4.04,
+      "text": "the database it is stored in the"
+    },
+    {
+      "start": 1824.919,
+      "duration": 4.801,
+      "text": "database"
+    },
+    {
+      "start": 1826.76,
+      "duration": 4.56,
+      "text": "correct yeah but now you went to her"
+    },
+    {
+      "start": 1829.72,
+      "duration": 3.48,
+      "text": "Instagram profile I went to her"
+    },
+    {
+      "start": 1831.32,
+      "duration": 3.239,
+      "text": "Instagram profile people all all the"
+    },
+    {
+      "start": 1833.2,
+      "duration": 3.479,
+      "text": "world went to her Instagram profile and"
+    },
+    {
+      "start": 1834.559,
+      "duration": 3.681,
+      "text": "they are actually accessing that video"
+    },
+    {
+      "start": 1836.679,
+      "duration": 3.321,
+      "text": "seeing that video which means they are"
+    },
+    {
+      "start": 1838.24,
+      "duration": 4.52,
+      "text": "reading from the database fetching the"
+    },
+    {
+      "start": 1840.0,
+      "duration": 5.039,
+      "text": "video from the database yeah so whenever"
+    },
+    {
+      "start": 1842.76,
+      "duration": 4.08,
+      "text": "you put something to database it means"
+    },
+    {
+      "start": 1845.039,
+      "duration": 3.401,
+      "text": "writing to the database whenever you fet"
+    },
+    {
+      "start": 1846.84,
+      "duration": 2.8,
+      "text": "something from the database which means"
+    },
+    {
+      "start": 1848.44,
+      "duration": 4.76,
+      "text": "reading from the"
+    },
+    {
+      "start": 1849.64,
+      "duration": 5.519,
+      "text": "database yeah so when there is a single"
+    },
+    {
+      "start": 1853.2,
+      "duration": 4.439,
+      "text": "database Master database which is used"
+    },
+    {
+      "start": 1855.159,
+      "duration": 5.601,
+      "text": "for reading and writing there will be a"
+    },
+    {
+      "start": 1857.639,
+      "duration": 4.241,
+      "text": "problem sometime that the database will"
+    },
+    {
+      "start": 1860.76,
+      "duration": 3.159,
+      "text": "decrease the"
+    },
+    {
+      "start": 1861.88,
+      "duration": 5.039,
+      "text": "performance because reading and writing"
+    },
+    {
+      "start": 1863.919,
+      "duration": 5.48,
+      "text": "is done on the same uh database and when"
+    },
+    {
+      "start": 1866.919,
+      "duration": 6.12,
+      "text": "the operations of reading and writings"
+    },
+    {
+      "start": 1869.399,
+      "duration": 6.24,
+      "text": "are more the database can reduce its"
+    },
+    {
+      "start": 1873.039,
+      "duration": 4.12,
+      "text": "performance so to to maintain that and"
+    },
+    {
+      "start": 1875.639,
+      "duration": 3.64,
+      "text": "to solve this problem we can use"
+    },
+    {
+      "start": 1877.159,
+      "duration": 5.24,
+      "text": "something known as read"
+    },
+    {
+      "start": 1879.279,
+      "duration": 5.4,
+      "text": "replica so read replica is the master"
+    },
+    {
+      "start": 1882.399,
+      "duration": 4.601,
+      "text": "database is going to be replicated in"
+    },
+    {
+      "start": 1884.679,
+      "duration": 4.84,
+      "text": "another database like this which is"
+    },
+    {
+      "start": 1887.0,
+      "duration": 5.639,
+      "text": "going to be used to to fetch the"
+    },
+    {
+      "start": 1889.519,
+      "duration": 5.28,
+      "text": "data okay so every time a user wants to"
+    },
+    {
+      "start": 1892.639,
+      "duration": 4.121,
+      "text": "see a Kylie Jen's video he's going to go"
+    },
+    {
+      "start": 1894.799,
+      "duration": 4.281,
+      "text": "to Instagram and Instagram is going to"
+    },
+    {
+      "start": 1896.76,
+      "duration": 4.0,
+      "text": "then transfer the user to this database"
+    },
+    {
+      "start": 1899.08,
+      "duration": 3.559,
+      "text": "not to the primary one he's going to"
+    },
+    {
+      "start": 1900.76,
+      "duration": 3.6,
+      "text": "transfer it to this database so that the"
+    },
+    {
+      "start": 1902.639,
+      "duration": 3.481,
+      "text": "primary one should not be affected and"
+    },
+    {
+      "start": 1904.36,
+      "duration": 3.679,
+      "text": "the performance should not be degraded"
+    },
+    {
+      "start": 1906.12,
+      "duration": 3.32,
+      "text": "so we use R replica whenever you want to"
+    },
+    {
+      "start": 1908.039,
+      "duration": 5.841,
+      "text": "increase the"
+    },
+    {
+      "start": 1909.44,
+      "duration": 6.68,
+      "text": "performance okay and it is you can have"
+    },
+    {
+      "start": 1913.88,
+      "duration": 4.519,
+      "text": "up to five read replicas it can be"
+    },
+    {
+      "start": 1916.12,
+      "duration": 3.799,
+      "text": "either in the same a same availability"
+    },
+    {
+      "start": 1918.399,
+      "duration": 4.601,
+      "text": "Zone it can be in different availability"
+    },
+    {
+      "start": 1919.919,
+      "duration": 7.041,
+      "text": "Zone it can be in different region as"
+    },
+    {
+      "start": 1923.0,
+      "duration": 5.279,
+      "text": "well okay yeah within as cross a and"
+    },
+    {
+      "start": 1926.96,
+      "duration": 3.559,
+      "text": "cross"
+    },
+    {
+      "start": 1928.279,
+      "duration": 3.801,
+      "text": "region then you have the replication"
+    },
+    {
+      "start": 1930.519,
+      "duration": 3.721,
+      "text": "replication means whenever you create a"
+    },
+    {
+      "start": 1932.08,
+      "duration": 3.959,
+      "text": "re replica the data that is stored here"
+    },
+    {
+      "start": 1934.24,
+      "duration": 3.84,
+      "text": "is going to be replicated so whenever"
+    },
+    {
+      "start": 1936.039,
+      "duration": 4.36,
+      "text": "she uploads a video we and if you are"
+    },
+    {
+      "start": 1938.08,
+      "duration": 4.319,
+      "text": "accessing it here the Instagram is going"
+    },
+    {
+      "start": 1940.399,
+      "duration": 4.361,
+      "text": "to transport it here the data should be"
+    },
+    {
+      "start": 1942.399,
+      "duration": 4.441,
+      "text": "present here right so that can be"
+    },
+    {
+      "start": 1944.76,
+      "duration": 5.72,
+      "text": "present only when the replication is"
+    },
+    {
+      "start": 1946.84,
+      "duration": 6.36,
+      "text": "done so this replication is done"
+    },
+    {
+      "start": 1950.48,
+      "duration": 4.52,
+      "text": "asynchronously by asynchronous this"
+    },
+    {
+      "start": 1953.2,
+      "duration": 4.959,
+      "text": "asynchronously"
+    },
+    {
+      "start": 1955.0,
+      "duration": 5.279,
+      "text": "means the data can sometimes be older"
+    },
+    {
+      "start": 1958.159,
+      "duration": 5.201,
+      "text": "and there can be a problem where you can"
+    },
+    {
+      "start": 1960.279,
+      "duration": 5.601,
+      "text": "get the old data but that is how it is"
+    },
+    {
+      "start": 1963.36,
+      "duration": 4.6,
+      "text": "so a synchronous"
+    },
+    {
+      "start": 1965.88,
+      "duration": 3.84,
+      "text": "replication but that is not all the case"
+    },
+    {
+      "start": 1967.96,
+      "duration": 3.16,
+      "text": "like it takes some time to get the"
+    },
+    {
+      "start": 1969.72,
+      "duration": 3.48,
+      "text": "replication so replication in read"
+    },
+    {
+      "start": 1971.12,
+      "duration": 5.0,
+      "text": "replica is asynchronous so reads are"
+    },
+    {
+      "start": 1973.2,
+      "duration": 4.8,
+      "text": "eventually consistent and replicas can"
+    },
+    {
+      "start": 1976.12,
+      "duration": 5.279,
+      "text": "also be promoted to their own database"
+    },
+    {
+      "start": 1978.0,
+      "duration": 5.44,
+      "text": "so let's say Instagram uh is using this"
+    },
+    {
+      "start": 1981.399,
+      "duration": 3.921,
+      "text": "master database right and it has"
+    },
+    {
+      "start": 1983.44,
+      "duration": 3.76,
+      "text": "replicated all the data here now he"
+    },
+    {
+      "start": 1985.32,
+      "duration": 3.92,
+      "text": "wants to set up another Master database"
+    },
+    {
+      "start": 1987.2,
+      "duration": 3.439,
+      "text": "in another region or anywhere else maybe"
+    },
+    {
+      "start": 1989.24,
+      "duration": 3.72,
+      "text": "in another application so he created"
+    },
+    {
+      "start": 1990.639,
+      "duration": 4.561,
+      "text": "another application like Instagram Pro"
+    },
+    {
+      "start": 1992.96,
+      "duration": 4.079,
+      "text": "or anything else so if he wants this"
+    },
+    {
+      "start": 1995.2,
+      "duration": 3.959,
+      "text": "database that is storing all the data"
+    },
+    {
+      "start": 1997.039,
+      "duration": 5.041,
+      "text": "replicated from here we can also create"
+    },
+    {
+      "start": 1999.159,
+      "duration": 4.441,
+      "text": "another database from this read"
+    },
+    {
+      "start": 2002.08,
+      "duration": 4.4,
+      "text": "replica"
+    },
+    {
+      "start": 2003.6,
+      "duration": 5.959,
+      "text": "Okay then if I show you that how to"
+    },
+    {
+      "start": 2006.48,
+      "duration": 5.799,
+      "text": "create sorry"
+    },
+    {
+      "start": 2009.559,
+      "duration": 4.36,
+      "text": "create from master or from replica yeah"
+    },
+    {
+      "start": 2012.279,
+      "duration": 3.481,
+      "text": "so if I create a read replica from the"
+    },
+    {
+      "start": 2013.919,
+      "duration": 3.321,
+      "text": "existing database so like right now we"
+    },
+    {
+      "start": 2015.76,
+      "duration": 5.0,
+      "text": "have a database which is my database"
+    },
+    {
+      "start": 2017.24,
+      "duration": 6.279,
+      "text": "here if I click on actions here I can"
+    },
+    {
+      "start": 2020.76,
+      "duration": 6.519,
+      "text": "here I have an option to create read a"
+    },
+    {
+      "start": 2023.519,
+      "duration": 6.681,
+      "text": "read repca right yeah yeah yeah we also"
+    },
+    {
+      "start": 2027.279,
+      "duration": 5.88,
+      "text": "have an option read replica which is"
+    },
+    {
+      "start": 2030.2,
+      "duration": 5.88,
+      "text": "committed out I don't know"
+    },
+    {
+      "start": 2033.159,
+      "duration": 5.52,
+      "text": "why because we have not uh selected"
+    },
+    {
+      "start": 2036.08,
+      "duration": 4.839,
+      "text": "multi or we have not enabled so when you"
+    },
+    {
+      "start": 2038.679,
+      "duration": 4.921,
+      "text": "use the production uh use case like we"
+    },
+    {
+      "start": 2040.919,
+      "duration": 4.36,
+      "text": "are using the free tier so that is a"
+    },
+    {
+      "start": 2043.6,
+      "duration": 4.36,
+      "text": "problem but when you use any other you"
+    },
+    {
+      "start": 2045.279,
+      "duration": 4.481,
+      "text": "can always uh do that you can also"
+    },
+    {
+      "start": 2047.96,
+      "duration": 5.399,
+      "text": "modify your database settings even after"
+    },
+    {
+      "start": 2049.76,
+      "duration": 6.319,
+      "text": "it is created you can modify settings uh"
+    },
+    {
+      "start": 2053.359,
+      "duration": 4.201,
+      "text": "like we going we going to see here what"
+    },
+    {
+      "start": 2056.079,
+      "duration": 3.28,
+      "text": "settings you can modify so you can"
+    },
+    {
+      "start": 2057.56,
+      "duration": 3.559,
+      "text": "modify the engine version you can modify"
+    },
+    {
+      "start": 2059.359,
+      "duration": 4.24,
+      "text": "the name you can change the password if"
+    },
+    {
+      "start": 2061.119,
+      "duration": 4.56,
+      "text": "you want uh if you have forgotten it you"
+    },
+    {
+      "start": 2063.599,
+      "duration": 4.201,
+      "text": "can directly change it from here then"
+    },
+    {
+      "start": 2065.679,
+      "duration": 3.92,
+      "text": "you can select change what scaling is"
+    },
+    {
+      "start": 2067.8,
+      "duration": 4.279,
+      "text": "storage you want you can select if you"
+    },
+    {
+      "start": 2069.599,
+      "duration": 5.24,
+      "text": "want to have a multi deployment so you"
+    },
+    {
+      "start": 2072.079,
+      "duration": 4.84,
+      "text": "can create a standby and the master in"
+    },
+    {
+      "start": 2074.839,
+      "duration": 2.921,
+      "text": "somewhere else so this is all settings"
+    },
+    {
+      "start": 2076.919,
+      "duration": 3.0,
+      "text": "you can"
+    },
+    {
+      "start": 2077.76,
+      "duration": 5.56,
+      "text": "change right"
+    },
+    {
+      "start": 2079.919,
+      "duration": 5.2,
+      "text": "so read replica I hope it you understood"
+    },
+    {
+      "start": 2083.32,
+      "duration": 3.68,
+      "text": "why we use it we use it so that the"
+    },
+    {
+      "start": 2085.119,
+      "duration": 4.081,
+      "text": "master database should not decrease the"
+    },
+    {
+      "start": 2087.0,
+      "duration": 3.56,
+      "text": "performance and reads should be done"
+    },
+    {
+      "start": 2089.2,
+      "duration": 4.36,
+      "text": "from the read"
+    },
+    {
+      "start": 2090.56,
+      "duration": 5.839,
+      "text": "replica yeah whenever you want the"
+    },
+    {
+      "start": 2093.56,
+      "duration": 4.32,
+      "text": "application to transport the user on the"
+    },
+    {
+      "start": 2096.399,
+      "duration": 3.361,
+      "text": "read replica whenever the user want to"
+    },
+    {
+      "start": 2097.88,
+      "duration": 4.12,
+      "text": "fetch it you have to use a connection"
+    },
+    {
+      "start": 2099.76,
+      "duration": 3.52,
+      "text": "string to leverage that re replica which"
+    },
+    {
+      "start": 2102.0,
+      "duration": 3.079,
+      "text": "the connection string would be something"
+    },
+    {
+      "start": 2103.28,
+      "duration": 3.04,
+      "text": "like this if you see the database here I"
+    },
+    {
+      "start": 2105.079,
+      "duration": 3.361,
+      "text": "have an"
+    },
+    {
+      "start": 2106.32,
+      "duration": 4.6,
+      "text": "endpoint which is my database some"
+    },
+    {
+      "start": 2108.44,
+      "duration": 5.679,
+      "text": "random string and the region name."
+    },
+    {
+      "start": 2110.92,
+      "duration": 4.679,
+      "text": "Amazon aws.com so this is a string that"
+    },
+    {
+      "start": 2114.119,
+      "duration": 3.641,
+      "text": "is going to be used whenever I want to"
+    },
+    {
+      "start": 2115.599,
+      "duration": 4.24,
+      "text": "create uh whenever I want to connect to"
+    },
+    {
+      "start": 2117.76,
+      "duration": 4.48,
+      "text": "my database or whenever I want an"
+    },
+    {
+      "start": 2119.839,
+      "duration": 4.921,
+      "text": "application to use this"
+    },
+    {
+      "start": 2122.24,
+      "duration": 4.56,
+      "text": "database okay similarly when we create a"
+    },
+    {
+      "start": 2124.76,
+      "duration": 4.599,
+      "text": "read replica we will have something end"
+    },
+    {
+      "start": 2126.8,
+      "duration": 4.68,
+      "text": "point like this which we have to enter"
+    },
+    {
+      "start": 2129.359,
+      "duration": 4.201,
+      "text": "which we have to enter in our database"
+    },
+    {
+      "start": 2131.48,
+      "duration": 4.72,
+      "text": "so that which we have to enter in our"
+    },
+    {
+      "start": 2133.56,
+      "duration": 4.88,
+      "text": "application so that the application"
+    },
+    {
+      "start": 2136.2,
+      "duration": 4.04,
+      "text": "should start using read replica for all"
+    },
+    {
+      "start": 2138.44,
+      "duration": 4.84,
+      "text": "the read"
+    },
+    {
+      "start": 2140.24,
+      "duration": 4.359,
+      "text": "operations okay if any doubt any"
+    },
+    {
+      "start": 2143.28,
+      "duration": 2.52,
+      "text": "questions you can always ask me but I"
+    },
+    {
+      "start": 2144.599,
+      "duration": 2.641,
+      "text": "think this is pretty clear with the"
+    },
+    {
+      "start": 2145.8,
+      "duration": 3.88,
+      "text": "Kylie Jenner"
+    },
+    {
+      "start": 2147.24,
+      "duration": 5.64,
+      "text": "example yeah yeah that's"
+    },
+    {
+      "start": 2149.68,
+      "duration": 5.32,
+      "text": "clear so let's take an example use case"
+    },
+    {
+      "start": 2152.88,
+      "duration": 4.0,
+      "text": "as well so let's say you have a"
+    },
+    {
+      "start": 2155.0,
+      "duration": 4.52,
+      "text": "production database which is this that"
+    },
+    {
+      "start": 2156.88,
+      "duration": 4.76,
+      "text": "is taking a norm normal load so you are"
+    },
+    {
+      "start": 2159.52,
+      "duration": 4.24,
+      "text": "reading to it you are writing to it and"
+    },
+    {
+      "start": 2161.64,
+      "duration": 5.28,
+      "text": "everything is performing very good right"
+    },
+    {
+      "start": 2163.76,
+      "duration": 5.319,
+      "text": "your application is working fine now the"
+    },
+    {
+      "start": 2166.92,
+      "duration": 4.64,
+      "text": "database is storing some data and you"
+    },
+    {
+      "start": 2169.079,
+      "duration": 4.24,
+      "text": "want to run some operations on it let's"
+    },
+    {
+      "start": 2171.56,
+      "duration": 2.68,
+      "text": "say this is an e-commerce application"
+    },
+    {
+      "start": 2173.319,
+      "duration": 4.601,
+      "text": "which is"
+    },
+    {
+      "start": 2174.24,
+      "duration": 6.72,
+      "text": "selling uh which is selling clothes and"
+    },
+    {
+      "start": 2177.92,
+      "duration": 5.36,
+      "text": "uh shoes to people all over the"
+    },
+    {
+      "start": 2180.96,
+      "duration": 4.159,
+      "text": "world right so when people come here"
+    },
+    {
+      "start": 2183.28,
+      "duration": 3.0,
+      "text": "they see all they see all the shoes and"
+    },
+    {
+      "start": 2185.119,
+      "duration": 3.041,
+      "text": "all the clothes that is stored in this"
+    },
+    {
+      "start": 2186.28,
+      "duration": 4.48,
+      "text": "database and they're also entering their"
+    },
+    {
+      "start": 2188.16,
+      "duration": 5.0,
+      "text": "name their address their card details"
+    },
+    {
+      "start": 2190.76,
+      "duration": 4.2,
+      "text": "and everything else right so everything"
+    },
+    {
+      "start": 2193.16,
+      "duration": 3.679,
+      "text": "is going to be stored here now you want"
+    },
+    {
+      "start": 2194.96,
+      "duration": 4.159,
+      "text": "to run some operations because you want"
+    },
+    {
+      "start": 2196.839,
+      "duration": 4.321,
+      "text": "to increase your sales you want to know"
+    },
+    {
+      "start": 2199.119,
+      "duration": 5.561,
+      "text": "how many users are from India how many"
+    },
+    {
+      "start": 2201.16,
+      "duration": 5.72,
+      "text": "users are from Pakistan or any other"
+    },
+    {
+      "start": 2204.68,
+      "duration": 4.2,
+      "text": "country so you can run some operations"
+    },
+    {
+      "start": 2206.88,
+      "duration": 3.84,
+      "text": "on this data and then you can get the"
+    },
+    {
+      "start": 2208.88,
+      "duration": 3.36,
+      "text": "idea of how your user is behaving and"
+    },
+    {
+      "start": 2210.72,
+      "duration": 4.599,
+      "text": "what you can show them so that you can"
+    },
+    {
+      "start": 2212.24,
+      "duration": 4.68,
+      "text": "increase your sales so you want to run a"
+    },
+    {
+      "start": 2215.319,
+      "duration": 4.52,
+      "text": "reporting application to run some"
+    },
+    {
+      "start": 2216.92,
+      "duration": 4.32,
+      "text": "Analytics and if you run this if you run"
+    },
+    {
+      "start": 2219.839,
+      "duration": 4.161,
+      "text": "the reporting application on the master"
+    },
+    {
+      "start": 2221.24,
+      "duration": 4.48,
+      "text": "database there can be a problem because"
+    },
+    {
+      "start": 2224.0,
+      "duration": 3.16,
+      "text": "the performance can be reduced because"
+    },
+    {
+      "start": 2225.72,
+      "duration": 2.8,
+      "text": "you're already using this for production"
+    },
+    {
+      "start": 2227.16,
+      "duration": 3.6,
+      "text": "application and you don't want to do"
+    },
+    {
+      "start": 2228.52,
+      "duration": 4.28,
+      "text": "that so you can create a read replica"
+    },
+    {
+      "start": 2230.76,
+      "duration": 4.359,
+      "text": "and then run the applic run the uh"
+    },
+    {
+      "start": 2232.8,
+      "duration": 4.16,
+      "text": "reporting application on this one so"
+    },
+    {
+      "start": 2235.119,
+      "duration": 2.681,
+      "text": "that this production database should not"
+    },
+    {
+      "start": 2236.96,
+      "duration": 2.399,
+      "text": "be"
+    },
+    {
+      "start": 2237.8,
+      "duration": 4.12,
+      "text": "affected"
+    },
+    {
+      "start": 2239.359,
+      "duration": 4.921,
+      "text": "okay so you remember we use it only for"
+    },
+    {
+      "start": 2241.92,
+      "duration": 5.28,
+      "text": "the read repli for the read of the data"
+    },
+    {
+      "start": 2244.28,
+      "duration": 5.319,
+      "text": "only for the read not for the right for"
+    },
+    {
+      "start": 2247.2,
+      "duration": 5.36,
+      "text": "the right and one for reading must"
+    },
+    {
+      "start": 2249.599,
+      "duration": 5.0,
+      "text": "writing and read for reading so this"
+    },
+    {
+      "start": 2252.56,
+      "duration": 4.44,
+      "text": "arrow is reading sorry writing which"
+    },
+    {
+      "start": 2254.599,
+      "duration": 3.161,
+      "text": "means you are inserting the data inside"
+    },
+    {
+      "start": 2257.0,
+      "duration": 4.079,
+      "text": "the"
+    },
+    {
+      "start": 2257.76,
+      "duration": 6.0,
+      "text": "database yeah user came in he wants to"
+    },
+    {
+      "start": 2261.079,
+      "duration": 4.121,
+      "text": "get the shoes so he's reading the shoes"
+    },
+    {
+      "start": 2263.76,
+      "duration": 4.16,
+      "text": "like reading the data of the shoes from"
+    },
+    {
+      "start": 2265.2,
+      "duration": 4.6,
+      "text": "the database now he wants to buy it so"
+    },
+    {
+      "start": 2267.92,
+      "duration": 4.199,
+      "text": "he goes to the order page he wants to"
+    },
+    {
+      "start": 2269.8,
+      "duration": 4.12,
+      "text": "enter his name address card ID"
+    },
+    {
+      "start": 2272.119,
+      "duration": 3.96,
+      "text": "everything else so now he's entering the"
+    },
+    {
+      "start": 2273.92,
+      "duration": 5.6,
+      "text": "data which means he's writing to the"
+    },
+    {
+      "start": 2276.079,
+      "duration": 4.961,
+      "text": "database yeah Master yeah so this is the"
+    },
+    {
+      "start": 2279.52,
+      "duration": 2.76,
+      "text": "master database which is reading and"
+    },
+    {
+      "start": 2281.04,
+      "duration": 3.0,
+      "text": "writing if you want to run any"
+    },
+    {
+      "start": 2282.28,
+      "duration": 3.2,
+      "text": "application you won't be writing it you"
+    },
+    {
+      "start": 2284.04,
+      "duration": 3.52,
+      "text": "won't be running it on this master"
+    },
+    {
+      "start": 2285.48,
+      "duration": 4.24,
+      "text": "database you can create a read replica"
+    },
+    {
+      "start": 2287.56,
+      "duration": 3.039,
+      "text": "which will be a replication of the"
+    },
+    {
+      "start": 2289.72,
+      "duration": 3.76,
+      "text": "master"
+    },
+    {
+      "start": 2290.599,
+      "duration": 5.201,
+      "text": "database and then you can run it so read"
+    },
+    {
+      "start": 2293.48,
+      "duration": 4.04,
+      "text": "replicas are used only for the select"
+    },
+    {
+      "start": 2295.8,
+      "duration": 3.68,
+      "text": "kind of statement you cannot insert"
+    },
+    {
+      "start": 2297.52,
+      "duration": 4.36,
+      "text": "update or delete so you know there are"
+    },
+    {
+      "start": 2299.48,
+      "duration": 4.4,
+      "text": "different query statements in the"
+    },
+    {
+      "start": 2301.88,
+      "duration": 5.76,
+      "text": "databases you have select you have"
+    },
+    {
+      "start": 2303.88,
+      "duration": 5.88,
+      "text": "insert update create alter and all of"
+    },
+    {
+      "start": 2307.64,
+      "duration": 3.479,
+      "text": "the other databases depending on what it"
+    },
+    {
+      "start": 2309.76,
+      "duration": 3.88,
+      "text": "is"
+    },
+    {
+      "start": 2311.119,
+      "duration": 4.0,
+      "text": "so whenever you use read replica you get"
+    },
+    {
+      "start": 2313.64,
+      "duration": 3.92,
+      "text": "only select which is used for reading"
+    },
+    {
+      "start": 2315.119,
+      "duration": 5.0,
+      "text": "the data data not for writing writings"
+    },
+    {
+      "start": 2317.56,
+      "duration": 4.72,
+      "text": "are insert update delete you cannot"
+    },
+    {
+      "start": 2320.119,
+      "duration": 3.841,
+      "text": "write to the database you cannot make"
+    },
+    {
+      "start": 2322.28,
+      "duration": 5.28,
+      "text": "any changes to the database you can only"
+    },
+    {
+      "start": 2323.96,
+      "duration": 5.32,
+      "text": "read through it so it is read only"
+    },
+    {
+      "start": 2327.56,
+      "duration": 4.32,
+      "text": "database"
+    },
+    {
+      "start": 2329.28,
+      "duration": 6.24,
+      "text": "okay so there is always a cost whenever"
+    },
+    {
+      "start": 2331.88,
+      "duration": 6.12,
+      "text": "the data is transferred but in read"
+    },
+    {
+      "start": 2335.52,
+      "duration": 5.36,
+      "text": "replica if the data is if the read"
+    },
+    {
+      "start": 2338.0,
+      "duration": 5.56,
+      "text": "replica is in the same region but"
+    },
+    {
+      "start": 2340.88,
+      "duration": 5.12,
+      "text": "different a or same region same a you"
+    },
+    {
+      "start": 2343.56,
+      "duration": 6.279,
+      "text": "don't have to pay any"
+    },
+    {
+      "start": 2346.0,
+      "duration": 7.88,
+      "text": "money okay so same region same a same"
+    },
+    {
+      "start": 2349.839,
+      "duration": 6.841,
+      "text": "region different a no charge for uh"
+    },
+    {
+      "start": 2353.88,
+      "duration": 6.4,
+      "text": "network no charge for the data but if"
+    },
+    {
+      "start": 2356.68,
+      "duration": 5.08,
+      "text": "your database a master replica a master"
+    },
+    {
+      "start": 2360.28,
+      "duration": 3.72,
+      "text": "instance and the read replica is in"
+    },
+    {
+      "start": 2361.76,
+      "duration": 4.079,
+      "text": "different region in different region you"
+    },
+    {
+      "start": 2364.0,
+      "duration": 4.88,
+      "text": "have to pay the"
+    },
+    {
+      "start": 2365.839,
+      "duration": 4.921,
+      "text": "price Okay so in AWS there's a network"
+    },
+    {
+      "start": 2368.88,
+      "duration": 3.719,
+      "text": "cost when data goes from one a to"
+    },
+    {
+      "start": 2370.76,
+      "duration": 3.839,
+      "text": "another but for read replicas you don't"
+    },
+    {
+      "start": 2372.599,
+      "duration": 3.921,
+      "text": "pay for different a but for different"
+    },
+    {
+      "start": 2374.599,
+      "duration": 3.641,
+      "text": "region you have to pay so for read"
+    },
+    {
+      "start": 2376.52,
+      "duration": 3.48,
+      "text": "replicas within the same region you"
+    },
+    {
+      "start": 2378.24,
+      "duration": 3.2,
+      "text": "don't pay the fee but if it is in"
+    },
+    {
+      "start": 2380.0,
+      "duration": 3.359,
+      "text": "different region you pay the"
+    },
+    {
+      "start": 2381.44,
+      "duration": 5.12,
+      "text": "fee"
+    },
+    {
+      "start": 2383.359,
+      "duration": 5.321,
+      "text": "okay then you have multi e disas multi"
+    },
+    {
+      "start": 2386.56,
+      "duration": 4.24,
+      "text": "easy so we have seen what read replica"
+    },
+    {
+      "start": 2388.68,
+      "duration": 4.679,
+      "text": "is and why we use it we use it because"
+    },
+    {
+      "start": 2390.8,
+      "duration": 5.08,
+      "text": "we want to increase the performance of"
+    },
+    {
+      "start": 2393.359,
+      "duration": 6.401,
+      "text": "our database we don't want our Master"
+    },
+    {
+      "start": 2395.88,
+      "duration": 3.88,
+      "text": "database to be affected due to to any"
+    },
+    {
+      "start": 2399.839,
+      "duration": 5.76,
+      "text": "reason yeah so we use read replica for"
+    },
+    {
+      "start": 2402.76,
+      "duration": 5.2,
+      "text": "performance then we have something uh"
+    },
+    {
+      "start": 2405.599,
+      "duration": 4.641,
+      "text": "known as multi-az which is used for"
+    },
+    {
+      "start": 2407.96,
+      "duration": 4.76,
+      "text": "disaster"
+    },
+    {
+      "start": 2410.24,
+      "duration": 5.2,
+      "text": "recovery so just a second let's see what"
+    },
+    {
+      "start": 2412.72,
+      "duration": 4.76,
+      "text": "the time is is"
+    },
+    {
+      "start": 2415.44,
+      "duration": 5.12,
+      "text": "it you"
+    },
+    {
+      "start": 2417.48,
+      "duration": 5.76,
+      "text": "going we have we have we have"
+    },
+    {
+      "start": 2420.56,
+      "duration": 5.36,
+      "text": "time okay so multi a"
+    },
+    {
+      "start": 2423.24,
+      "duration": 5.32,
+      "text": "deployment multi- a is used whenever you"
+    },
+    {
+      "start": 2425.92,
+      "duration": 5.32,
+      "text": "want to have disaster recovery"
+    },
+    {
+      "start": 2428.56,
+      "duration": 3.759,
+      "text": "so giving so let's Let me Give an"
+    },
+    {
+      "start": 2431.24,
+      "duration": 4.4,
+      "text": "example for"
+    },
+    {
+      "start": 2432.319,
+      "duration": 6.201,
+      "text": "this let's say you have application like"
+    },
+    {
+      "start": 2435.64,
+      "duration": 4.439,
+      "text": "Instagram again right so Instagram has a"
+    },
+    {
+      "start": 2438.52,
+      "duration": 3.16,
+      "text": "database which is very important for it"
+    },
+    {
+      "start": 2440.079,
+      "duration": 4.121,
+      "text": "because it does not wants the database"
+    },
+    {
+      "start": 2441.68,
+      "duration": 5.12,
+      "text": "to be deleted or made any changes if it"
+    },
+    {
+      "start": 2444.2,
+      "duration": 4.56,
+      "text": "is deleted user will user will not able"
+    },
+    {
+      "start": 2446.8,
+      "duration": 3.799,
+      "text": "to log in user will face any problems"
+    },
+    {
+      "start": 2448.76,
+      "duration": 3.16,
+      "text": "might be their photos are deleted or"
+    },
+    {
+      "start": 2450.599,
+      "duration": 3.681,
+      "text": "their videos are deleted which is not a"
+    },
+    {
+      "start": 2451.92,
+      "duration": 5.919,
+      "text": "good experience Instagram will lose a"
+    },
+    {
+      "start": 2454.28,
+      "duration": 6.4,
+      "text": "lot of money if it does that right so"
+    },
+    {
+      "start": 2457.839,
+      "duration": 5.681,
+      "text": "this database loss can be of can be done"
+    },
+    {
+      "start": 2460.68,
+      "duration": 5.52,
+      "text": "by any any reasons it can be because of"
+    },
+    {
+      "start": 2463.52,
+      "duration": 4.64,
+      "text": "the uh it can be because the database"
+    },
+    {
+      "start": 2466.2,
+      "duration": 5.08,
+      "text": "which is stored in the data center has"
+    },
+    {
+      "start": 2468.16,
+      "duration": 5.24,
+      "text": "caught fire or someone has uh some"
+    },
+    {
+      "start": 2471.28,
+      "duration": 4.839,
+      "text": "database administrator made any changes"
+    },
+    {
+      "start": 2473.4,
+      "duration": 4.88,
+      "text": "or anything right database can be gone"
+    },
+    {
+      "start": 2476.119,
+      "duration": 4.321,
+      "text": "so for that you can set up something"
+    },
+    {
+      "start": 2478.28,
+      "duration": 5.079,
+      "text": "known as multi-az which"
+    },
+    {
+      "start": 2480.44,
+      "duration": 5.72,
+      "text": "means the data is replicated in a"
+    },
+    {
+      "start": 2483.359,
+      "duration": 5.76,
+      "text": "standby instance which is kept in"
+    },
+    {
+      "start": 2486.16,
+      "duration": 6.76,
+      "text": "another a so that if this master"
+    },
+    {
+      "start": 2489.119,
+      "duration": 5.321,
+      "text": "database is gone through any reason the"
+    },
+    {
+      "start": 2492.92,
+      "duration": 3.04,
+      "text": "uh the application will start using the"
+    },
+    {
+      "start": 2494.44,
+      "duration": 3.28,
+      "text": "standby automatically you don't have to"
+    },
+    {
+      "start": 2495.96,
+      "duration": 6.04,
+      "text": "do any"
+    },
+    {
+      "start": 2497.72,
+      "duration": 7.359,
+      "text": "configuration okay and here whenever you"
+    },
+    {
+      "start": 2502.0,
+      "duration": 5.4,
+      "text": "sorry two identical the Bas yes very"
+    },
+    {
+      "start": 2505.079,
+      "duration": 5.0,
+      "text": "identical so whenever you read like when"
+    },
+    {
+      "start": 2507.4,
+      "duration": 4.32,
+      "text": "you create a standby or multi deployment"
+    },
+    {
+      "start": 2510.079,
+      "duration": 3.321,
+      "text": "anything that you read and write is"
+    },
+    {
+      "start": 2511.72,
+      "duration": 3.119,
+      "text": "going to be automatically stored here"
+    },
+    {
+      "start": 2513.4,
+      "duration": 3.959,
+      "text": "and this is going to be a synchronous"
+    },
+    {
+      "start": 2514.839,
+      "duration": 4.201,
+      "text": "replication not asynchronous replication"
+    },
+    {
+      "start": 2517.359,
+      "duration": 3.441,
+      "text": "like read replica it's going to be a"
+    },
+    {
+      "start": 2519.04,
+      "duration": 3.0,
+      "text": "synchronous replication which means the"
+    },
+    {
+      "start": 2520.8,
+      "duration": 2.519,
+      "text": "data is going to be stored and it is"
+    },
+    {
+      "start": 2522.04,
+      "duration": 3.64,
+      "text": "going to be"
+    },
+    {
+      "start": 2523.319,
+      "duration": 4.321,
+      "text": "accurate okay so everything is going to"
+    },
+    {
+      "start": 2525.68,
+      "duration": 5.36,
+      "text": "be as soon as someone writes here the"
+    },
+    {
+      "start": 2527.64,
+      "duration": 5.32,
+      "text": "application is done as well okay so if"
+    },
+    {
+      "start": 2531.04,
+      "duration": 4.44,
+      "text": "there is a problem with this"
+    },
+    {
+      "start": 2532.96,
+      "duration": 4.92,
+      "text": "database application is going to use"
+    },
+    {
+      "start": 2535.48,
+      "duration": 4.96,
+      "text": "this one automatically the DNS is"
+    },
+    {
+      "start": 2537.88,
+      "duration": 4.12,
+      "text": "automatic FL is done so whenever you"
+    },
+    {
+      "start": 2540.44,
+      "duration": 2.84,
+      "text": "create multi it is a synchronous"
+    },
+    {
+      "start": 2542.0,
+      "duration": 4.319,
+      "text": "replication everything is going to be"
+    },
+    {
+      "start": 2543.28,
+      "duration": 5.12,
+      "text": "replicated and you have one DNS name so"
+    },
+    {
+      "start": 2546.319,
+      "duration": 4.561,
+      "text": "the DNS name which is the end point that"
+    },
+    {
+      "start": 2548.4,
+      "duration": 6.56,
+      "text": "we have seen this is the end point is"
+    },
+    {
+      "start": 2550.88,
+      "duration": 6.679,
+      "text": "going to be the same for uh both of them"
+    },
+    {
+      "start": 2554.96,
+      "duration": 4.599,
+      "text": "so the if this is gone application is"
+    },
+    {
+      "start": 2557.559,
+      "duration": 5.04,
+      "text": "going to start using this uh and you can"
+    },
+    {
+      "start": 2559.559,
+      "duration": 5.401,
+      "text": "enable multi by going here clicking on"
+    },
+    {
+      "start": 2562.599,
+      "duration": 3.601,
+      "text": "actions if you have like you also have"
+    },
+    {
+      "start": 2564.96,
+      "duration": 2.72,
+      "text": "the option when you click on the create"
+    },
+    {
+      "start": 2566.2,
+      "duration": 4.2,
+      "text": "database"
+    },
+    {
+      "start": 2567.68,
+      "duration": 6.08,
+      "text": "option when you select anything apart"
+    },
+    {
+      "start": 2570.4,
+      "duration": 6.36,
+      "text": "from the free tire a free tier you can"
+    },
+    {
+      "start": 2573.76,
+      "duration": 5.4,
+      "text": "see if I use my SQL I go to production I"
+    },
+    {
+      "start": 2576.76,
+      "duration": 5.4,
+      "text": "have mult m a"
+    },
+    {
+      "start": 2579.16,
+      "duration": 3.0,
+      "text": "deployment"
+    },
+    {
+      "start": 2583.48,
+      "duration": 4.72,
+      "text": "right so multi a whenever you want to"
+    },
+    {
+      "start": 2585.96,
+      "duration": 5.32,
+      "text": "have Disaster Recovery whenever you want"
+    },
+    {
+      "start": 2588.2,
+      "duration": 5.6,
+      "text": "to have high availability we use multi-"
+    },
+    {
+      "start": 2591.28,
+      "duration": 4.36,
+      "text": "AZ whenever you want to have performance"
+    },
+    {
+      "start": 2593.8,
+      "duration": 4.84,
+      "text": "we go with read"
+    },
+    {
+      "start": 2595.64,
+      "duration": 4.719,
+      "text": "replica okay so it increases"
+    },
+    {
+      "start": 2598.64,
+      "duration": 4.0,
+      "text": "availability you give you get high"
+    },
+    {
+      "start": 2600.359,
+      "duration": 4.841,
+      "text": "availability failover is done in case of"
+    },
+    {
+      "start": 2602.64,
+      "duration": 4.959,
+      "text": "the loss of the a or loss of network or"
+    },
+    {
+      "start": 2605.2,
+      "duration": 3.68,
+      "text": "instance or storage failure any problem"
+    },
+    {
+      "start": 2607.599,
+      "duration": 3.161,
+      "text": "the failover is going to be done"
+    },
+    {
+      "start": 2608.88,
+      "duration": 3.12,
+      "text": "automatically and there is no manual"
+    },
+    {
+      "start": 2610.76,
+      "duration": 2.48,
+      "text": "intervention in the apps you don't have"
+    },
+    {
+      "start": 2612.0,
+      "duration": 3.48,
+      "text": "to do anything in the application as"
+    },
+    {
+      "start": 2613.24,
+      "duration": 3.64,
+      "text": "well and it is not used for scaling it"
+    },
+    {
+      "start": 2615.48,
+      "duration": 2.96,
+      "text": "is not used for scaling it is just used"
+    },
+    {
+      "start": 2616.88,
+      "duration": 3.28,
+      "text": "for Disaster Recovery it does not"
+    },
+    {
+      "start": 2618.44,
+      "duration": 3.32,
+      "text": "increase any performance anything but"
+    },
+    {
+      "start": 2620.16,
+      "duration": 4.399,
+      "text": "only for Disaster"
+    },
+    {
+      "start": 2621.76,
+      "duration": 6.24,
+      "text": "Recovery okay and multi-az replication"
+    },
+    {
+      "start": 2624.559,
+      "duration": 5.921,
+      "text": "is free read replicas be set up as multi"
+    },
+    {
+      "start": 2628.0,
+      "duration": 4.44,
+      "text": "a for Disaster Recovery only so read"
+    },
+    {
+      "start": 2630.48,
+      "duration": 4.04,
+      "text": "replicas can be set up for multi so you"
+    },
+    {
+      "start": 2632.44,
+      "duration": 4.679,
+      "text": "can like you you know what why read"
+    },
+    {
+      "start": 2634.52,
+      "duration": 5.2,
+      "text": "replica is used right to increase the"
+    },
+    {
+      "start": 2637.119,
+      "duration": 4.0,
+      "text": "performance but you can also have multi"
+    },
+    {
+      "start": 2639.72,
+      "duration": 3.72,
+      "text": "for read replica which means a read"
+    },
+    {
+      "start": 2641.119,
+      "duration": 4.881,
+      "text": "replica is also will also have a standby"
+    },
+    {
+      "start": 2643.44,
+      "duration": 4.399,
+      "text": "instance of itself which will be a very"
+    },
+    {
+      "start": 2646.0,
+      "duration": 4.16,
+      "text": "strong architecture but it will cost you"
+    },
+    {
+      "start": 2647.839,
+      "duration": 2.321,
+      "text": "a lot of"
+    },
+    {
+      "start": 2651.16,
+      "duration": 5.84,
+      "text": "money so how can"
+    },
+    {
+      "start": 2653.4,
+      "duration": 5.919,
+      "text": "you go go from single ay to multi ay so"
+    },
+    {
+      "start": 2657.0,
+      "duration": 5.079,
+      "text": "right now let's say you have multi you"
+    },
+    {
+      "start": 2659.319,
+      "duration": 4.481,
+      "text": "have a master database right and it does"
+    },
+    {
+      "start": 2662.079,
+      "duration": 3.721,
+      "text": "not take you like it does not take any"
+    },
+    {
+      "start": 2663.8,
+      "duration": 3.279,
+      "text": "time it is zero time operation which"
+    },
+    {
+      "start": 2665.8,
+      "duration": 3.2,
+      "text": "means you don't have to stop your dat"
+    },
+    {
+      "start": 2667.079,
+      "duration": 4.881,
+      "text": "database so how can you go with multi"
+    },
+    {
+      "start": 2669.0,
+      "duration": 4.76,
+      "text": "you can create a snapshot by automat by"
+    },
+    {
+      "start": 2671.96,
+      "duration": 4.52,
+      "text": "manually creating a snapshot and then"
+    },
+    {
+      "start": 2673.76,
+      "duration": 5.24,
+      "text": "restore a snapshot in different a or"
+    },
+    {
+      "start": 2676.48,
+      "duration": 4.44,
+      "text": "different uh different region so you"
+    },
+    {
+      "start": 2679.0,
+      "duration": 3.88,
+      "text": "know how to create snapshot right we"
+    },
+    {
+      "start": 2680.92,
+      "duration": 4.919,
+      "text": "have seen that"
+    },
+    {
+      "start": 2682.88,
+      "duration": 5.16,
+      "text": "yeah so we go here we have a snapshot we"
+    },
+    {
+      "start": 2685.839,
+      "duration": 3.801,
+      "text": "can click on actions here and then we"
+    },
+    {
+      "start": 2688.04,
+      "duration": 3.16,
+      "text": "can migrate the snapshot or copy that"
+    },
+    {
+      "start": 2689.64,
+      "duration": 3.52,
+      "text": "snapshot to another region and then"
+    },
+    {
+      "start": 2691.2,
+      "duration": 4.32,
+      "text": "create a database from"
+    },
+    {
+      "start": 2693.16,
+      "duration": 6.56,
+      "text": "this"
+    },
+    {
+      "start": 2695.52,
+      "duration": 6.68,
+      "text": "okay similar ac2 inst snapshot the"
+    },
+    {
+      "start": 2699.72,
+      "duration": 4.28,
+      "text": "snapshot yeah we also have we also have"
+    },
+    {
+      "start": 2702.2,
+      "duration": 4.72,
+      "text": "uh we don't have snapshots in ac2"
+    },
+    {
+      "start": 2704.0,
+      "duration": 7.079,
+      "text": "instance we have we have EBS uh snapshot"
+    },
+    {
+      "start": 2706.92,
+      "duration": 6.84,
+      "text": "for EBS volumes so if I go here in the"
+    },
+    {
+      "start": 2711.079,
+      "duration": 2.681,
+      "text": "ec2"
+    },
+    {
+      "start": 2719.559,
+      "duration": 4.081,
+      "text": "part so we have snapshots here in the"
+    },
+    {
+      "start": 2721.92,
+      "duration": 2.8,
+      "text": "EBS Block store which is creating the"
+    },
+    {
+      "start": 2723.64,
+      "duration": 5.12,
+      "text": "backup of the"
+    },
+    {
+      "start": 2724.72,
+      "duration": 6.32,
+      "text": "volumes EBS volumes"
+    },
+    {
+      "start": 2728.76,
+      "duration": 4.319,
+      "text": "so let's see what multi a is multi is"
+    },
+    {
+      "start": 2731.04,
+      "duration": 4.2,
+      "text": "used whenever you want to have Disaster"
+    },
+    {
+      "start": 2733.079,
+      "duration": 3.841,
+      "text": "Recovery you can create multi deployment"
+    },
+    {
+      "start": 2735.24,
+      "duration": 4.599,
+      "text": "by creating a snapshot and then"
+    },
+    {
+      "start": 2736.92,
+      "duration": 4.08,
+      "text": "restoring the snapshot in different a"
+    },
+    {
+      "start": 2739.839,
+      "duration": 3.201,
+      "text": "following things that will happen as"
+    },
+    {
+      "start": 2741.0,
+      "duration": 4.599,
+      "text": "snapshot will taken a new database is"
+    },
+    {
+      "start": 2743.04,
+      "duration": 3.92,
+      "text": "restored from a snapshot in a new a and"
+    },
+    {
+      "start": 2745.599,
+      "duration": 2.681,
+      "text": "sychronization is going to be"
+    },
+    {
+      "start": 2746.96,
+      "duration": 2.68,
+      "text": "established between the two database"
+    },
+    {
+      "start": 2748.28,
+      "duration": 3.0,
+      "text": "which means whenever someone writes to"
+    },
+    {
+      "start": 2749.64,
+      "duration": 4.24,
+      "text": "this database it will automatically be"
+    },
+    {
+      "start": 2751.28,
+      "duration": 4.64,
+      "text": "replicated to this one"
+    },
+    {
+      "start": 2753.88,
+      "duration": 6.719,
+      "text": "standby"
+    },
+    {
+      "start": 2755.92,
+      "duration": 7.6,
+      "text": "okay then we have encryption which is uh"
+    },
+    {
+      "start": 2760.599,
+      "duration": 5.281,
+      "text": "which means encrypting your data"
+    },
+    {
+      "start": 2763.52,
+      "duration": 5.12,
+      "text": "securing your data encryption is done in"
+    },
+    {
+      "start": 2765.88,
+      "duration": 5.0,
+      "text": "two ways it is done at rest and in"
+    },
+    {
+      "start": 2768.64,
+      "duration": 4.04,
+      "text": "flight at rest means whatever data that"
+    },
+    {
+      "start": 2770.88,
+      "duration": 5.08,
+      "text": "is kept inside the database is going to"
+    },
+    {
+      "start": 2772.68,
+      "duration": 6.159,
+      "text": "be encrypted using the AWS KMS"
+    },
+    {
+      "start": 2775.96,
+      "duration": 4.76,
+      "text": "key okay so possibility to encrypt the"
+    },
+    {
+      "start": 2778.839,
+      "duration": 4.881,
+      "text": "master and the read replica with the AWS"
+    },
+    {
+      "start": 2780.72,
+      "duration": 5.24,
+      "text": "KMS using this encryption which is a256"
+    },
+    {
+      "start": 2783.72,
+      "duration": 3.359,
+      "text": "encryption encryption has to be defined"
+    },
+    {
+      "start": 2785.96,
+      "duration": 2.599,
+      "text": "at the launch time so you can you can"
+    },
+    {
+      "start": 2787.079,
+      "duration": 5.0,
+      "text": "Define that when you were creating the"
+    },
+    {
+      "start": 2788.559,
+      "duration": 6.401,
+      "text": "instance RDS instance you can choose uh"
+    },
+    {
+      "start": 2792.079,
+      "duration": 4.401,
+      "text": "if it you want it to be encrypted or not"
+    },
+    {
+      "start": 2794.96,
+      "duration": 3.96,
+      "text": "you can go here while creating the dat"
+    },
+    {
+      "start": 2796.48,
+      "duration": 3.52,
+      "text": "we have already seen that so we can"
+    },
+    {
+      "start": 2798.92,
+      "duration": 5.6,
+      "text": "enable"
+    },
+    {
+      "start": 2800.0,
+      "duration": 7.0,
+      "text": "encryption if I click my SQL I go to"
+    },
+    {
+      "start": 2804.52,
+      "duration": 3.96,
+      "text": "encryption we have an option to enable"
+    },
+    {
+      "start": 2807.0,
+      "duration": 3.839,
+      "text": "encryption here which is going to be"
+    },
+    {
+      "start": 2808.48,
+      "duration": 4.16,
+      "text": "done by AWS kmsk"
+    },
+    {
+      "start": 2810.839,
+      "duration": 4.681,
+      "text": "key"
+    },
+    {
+      "start": 2812.64,
+      "duration": 4.56,
+      "text": "yeah encryption then if the master is"
+    },
+    {
+      "start": 2815.52,
+      "duration": 3.48,
+      "text": "not encrypted the read replica will not"
+    },
+    {
+      "start": 2817.2,
+      "duration": 4.56,
+      "text": "be encrypted as well same as we have in"
+    },
+    {
+      "start": 2819.0,
+      "duration": 4.2,
+      "text": "EBS if the master is not encrypted the"
+    },
+    {
+      "start": 2821.76,
+      "duration": 4.04,
+      "text": "read replica that is Created from this"
+    },
+    {
+      "start": 2823.2,
+      "duration": 4.119,
+      "text": "master will not be encrypted but if it"
+    },
+    {
+      "start": 2825.8,
+      "duration": 4.4,
+      "text": "is encrypted then the read replica will"
+    },
+    {
+      "start": 2827.319,
+      "duration": 4.76,
+      "text": "be encrypted as well then you have uh"
+    },
+    {
+      "start": 2830.2,
+      "duration": 3.2,
+      "text": "for a raal and SQL Server you have"
+    },
+    {
+      "start": 2832.079,
+      "duration": 3.321,
+      "text": "something known as transparent data"
+    },
+    {
+      "start": 2833.4,
+      "duration": 4.88,
+      "text": "encryption which you don't have for"
+    },
+    {
+      "start": 2835.4,
+      "duration": 4.76,
+      "text": "MySQL so this is what encryption is at"
+    },
+    {
+      "start": 2838.28,
+      "duration": 3.64,
+      "text": "rest but you also have inlight"
+    },
+    {
+      "start": 2840.16,
+      "duration": 3.24,
+      "text": "encryption which means data when"
+    },
+    {
+      "start": 2841.92,
+      "duration": 3.36,
+      "text": "transferred between the application and"
+    },
+    {
+      "start": 2843.4,
+      "duration": 3.679,
+      "text": "the database is going to be encrypted"
+    },
+    {
+      "start": 2845.28,
+      "duration": 3.839,
+      "text": "using"
+    },
+    {
+      "start": 2847.079,
+      "duration": 4.081,
+      "text": "SSL"
+    },
+    {
+      "start": 2849.119,
+      "duration": 6.041,
+      "text": "certificates"
+    },
+    {
+      "start": 2851.16,
+      "duration": 8.0,
+      "text": "okay yes so this is SSL https like what"
+    },
+    {
+      "start": 2855.16,
+      "duration": 7.56,
+      "text": "we use for the uh what we use for the"
+    },
+    {
+      "start": 2859.16,
+      "duration": 5.679,
+      "text": "for the websites yeah we use we use the"
+    },
+    {
+      "start": 2862.72,
+      "duration": 6.16,
+      "text": "certificates same way we can also use"
+    },
+    {
+      "start": 2864.839,
+      "duration": 7.72,
+      "text": "certificates for uh encryption in"
+    },
+    {
+      "start": 2868.88,
+      "duration": 3.679,
+      "text": "the encryption in the"
+    },
+    {
+      "start": 2874.839,
+      "duration": 5.161,
+      "text": "database so to enrose to enforce SSL in"
+    },
+    {
+      "start": 2878.16,
+      "duration": 3.76,
+      "text": "postgress you need to pass this in the"
+    },
+    {
+      "start": 2880.0,
+      "duration": 3.76,
+      "text": "parameter group and if you want to do it"
+    },
+    {
+      "start": 2881.92,
+      "duration": 3.52,
+      "text": "with my SQL you need to run this command"
+    },
+    {
+      "start": 2883.76,
+      "duration": 4.52,
+      "text": "run this"
+    },
+    {
+      "start": 2885.44,
+      "duration": 5.48,
+      "text": "query okay within the"
+    },
+    {
+      "start": 2888.28,
+      "duration": 4.839,
+      "text": "database so we have already seen that"
+    },
+    {
+      "start": 2890.92,
+      "duration": 4.28,
+      "text": "and now I've already shown you how to"
+    },
+    {
+      "start": 2893.119,
+      "duration": 3.72,
+      "text": "create this database as well so we have"
+    },
+    {
+      "start": 2895.2,
+      "duration": 3.8,
+      "text": "seen how to create a database we already"
+    },
+    {
+      "start": 2896.839,
+      "duration": 4.921,
+      "text": "have a database running so I'm going to"
+    },
+    {
+      "start": 2899.0,
+      "duration": 6.76,
+      "text": "first cancel"
+    },
+    {
+      "start": 2901.76,
+      "duration": 4.0,
+      "text": "this okay"
+    },
+    {
+      "start": 2907.96,
+      "duration": 4.599,
+      "text": "so I've already shown you how to create"
+    },
+    {
+      "start": 2909.599,
+      "duration": 4.0,
+      "text": "a database and let's try to connect to"
+    },
+    {
+      "start": 2912.559,
+      "duration": 3.241,
+      "text": "this"
+    },
+    {
+      "start": 2913.599,
+      "duration": 6.441,
+      "text": "database"
+    },
+    {
+      "start": 2915.8,
+      "duration": 4.24,
+      "text": "yeah so I'm going to copy"
+    },
+    {
+      "start": 2930.119,
+      "duration": 5.761,
+      "text": "this so if you if you have a MySQL"
+    },
+    {
+      "start": 2933.079,
+      "duration": 5.801,
+      "text": "workbench you can download that MySQL"
+    },
+    {
+      "start": 2935.88,
+      "duration": 7.719,
+      "text": "workbench which is a client"
+    },
+    {
+      "start": 2938.88,
+      "duration": 6.4,
+      "text": "for which is a client for uh my SQL"
+    },
+    {
+      "start": 2943.599,
+      "duration": 4.801,
+      "text": "right so I don't have that I have"
+    },
+    {
+      "start": 2945.28,
+      "duration": 6.96,
+      "text": "postgress PPG admin so I'm going to"
+    },
+    {
+      "start": 2948.4,
+      "duration": 5.52,
+      "text": "let's go and first uh start create a new"
+    },
+    {
+      "start": 2952.24,
+      "duration": 4.72,
+      "text": "postgress database which is kind of"
+    },
+    {
+      "start": 2953.92,
+      "duration": 6.04,
+      "text": "similar to how we did the my SQL as well"
+    },
+    {
+      "start": 2956.96,
+      "duration": 4.8,
+      "text": "so I'm going to delete this yeah but"
+    },
+    {
+      "start": 2959.96,
+      "duration": 4.68,
+      "text": "before I do that I need to also delete"
+    },
+    {
+      "start": 2961.76,
+      "duration": 4.68,
+      "text": "the snapshot as well because if I forget"
+    },
+    {
+      "start": 2964.64,
+      "duration": 4.64,
+      "text": "that I'm going to get CH so I'm going to"
+    },
+    {
+      "start": 2966.44,
+      "duration": 4.8,
+      "text": "go here here and delete"
+    },
+    {
+      "start": 2969.28,
+      "duration": 3.64,
+      "text": "Snapshot then I'm going to go to the"
+    },
+    {
+      "start": 2971.24,
+      "duration": 6.319,
+      "text": "dashboard database I'm going to delete"
+    },
+    {
+      "start": 2972.92,
+      "duration": 8.0,
+      "text": "the database as well so delete and"
+    },
+    {
+      "start": 2977.559,
+      "duration": 5.681,
+      "text": "delete so now we can after some time it"
+    },
+    {
+      "start": 2980.92,
+      "duration": 4.679,
+      "text": "should be in deleting state so let's"
+    },
+    {
+      "start": 2983.24,
+      "duration": 4.76,
+      "text": "wait so now I'm going to go in the"
+    },
+    {
+      "start": 2985.599,
+      "duration": 3.96,
+      "text": "create database"
+    },
+    {
+      "start": 2988.0,
+      "duration": 5.799,
+      "text": "connect"
+    },
+    {
+      "start": 2989.559,
+      "duration": 5.841,
+      "text": "sorry you how so I'm going to create an"
+    },
+    {
+      "start": 2993.799,
+      "duration": 3.161,
+      "text": "postgress which I'm going to create"
+    },
+    {
+      "start": 2995.4,
+      "duration": 4.12,
+      "text": "because I'm don't have the my equal"
+    },
+    {
+      "start": 2996.96,
+      "duration": 5.72,
+      "text": "workbench so you can launch you can"
+    },
+    {
+      "start": 2999.52,
+      "duration": 5.24,
+      "text": "launch you can launch yours and if you"
+    },
+    {
+      "start": 3002.68,
+      "duration": 3.84,
+      "text": "face any problem you can let me know but"
+    },
+    {
+      "start": 3004.76,
+      "duration": 2.799,
+      "text": "I'm going to show you how to we do that"
+    },
+    {
+      "start": 3006.52,
+      "duration": 4.52,
+      "text": "for"
+    },
+    {
+      "start": 3007.559,
+      "duration": 4.921,
+      "text": "post so we're going to use free tier as"
+    },
+    {
+      "start": 3011.04,
+      "duration": 2.88,
+      "text": "we use free tier we don't have the"
+    },
+    {
+      "start": 3012.48,
+      "duration": 3.16,
+      "text": "multi-az deployment option but you"
+    },
+    {
+      "start": 3013.92,
+      "duration": 6.96,
+      "text": "should always go for multi a when you're"
+    },
+    {
+      "start": 3015.64,
+      "duration": 5.24,
+      "text": "using the uh production"
+    },
+    {
+      "start": 3021.68,
+      "duration": 4.24,
+      "text": "workload then I have the setting to"
+    },
+    {
+      "start": 3024.24,
+      "duration": 3.72,
+      "text": "provide the name of my database which is"
+    },
+    {
+      "start": 3025.92,
+      "duration": 6.48,
+      "text": "going to be my d"
+    },
+    {
+      "start": 3027.96,
+      "duration": 6.44,
+      "text": "again my DB postest the username is"
+    },
+    {
+      "start": 3032.4,
+      "duration": 7.439,
+      "text": "postest password can be anything so I'm"
+    },
+    {
+      "start": 3034.4,
+      "duration": 8.439,
+      "text": "going to pass word 1 2"
+    },
+    {
+      "start": 3039.839,
+      "duration": 5.161,
+      "text": "3 password one"
+    },
+    {
+      "start": 3042.839,
+      "duration": 5.361,
+      "text": "2"
+    },
+    {
+      "start": 3045.0,
+      "duration": 5.96,
+      "text": "three okay db3 micro storage is going to"
+    },
+    {
+      "start": 3048.2,
+      "duration": 4.44,
+      "text": "be a general purpose a allocated storage"
+    },
+    {
+      "start": 3050.96,
+      "duration": 3.08,
+      "text": "is 20gb I don't want to enable auto"
+    },
+    {
+      "start": 3052.64,
+      "duration": 5.679,
+      "text": "scaling but you can enable Autos scaling"
+    },
+    {
+      "start": 3054.04,
+      "duration": 5.759,
+      "text": "if your workload is unpredictable"
+    },
+    {
+      "start": 3058.319,
+      "duration": 4.641,
+      "text": "then if you want to connect to an Amazon"
+    },
+    {
+      "start": 3059.799,
+      "duration": 4.481,
+      "text": "ac2 compute resource you can do that uh"
+    },
+    {
+      "start": 3062.96,
+      "duration": 2.639,
+      "text": "don't set up a connection to compute"
+    },
+    {
+      "start": 3064.28,
+      "duration": 2.44,
+      "text": "resource for this database you can"
+    },
+    {
+      "start": 3065.599,
+      "duration": 4.401,
+      "text": "manually set up a connection to a"
+    },
+    {
+      "start": 3066.72,
+      "duration": 6.879,
+      "text": "computer resource later on so"
+    },
+    {
+      "start": 3070.0,
+      "duration": 5.119,
+      "text": "now I'm going to choose this VPC subnet"
+    },
+    {
+      "start": 3073.599,
+      "duration": 3.281,
+      "text": "group default publicly accessible"
+    },
+    {
+      "start": 3075.119,
+      "duration": 5.081,
+      "text": "because I want to connect it outside the"
+    },
+    {
+      "start": 3076.88,
+      "duration": 3.32,
+      "text": "VPC through my local"
+    },
+    {
+      "start": 3083.28,
+      "duration": 6.68,
+      "text": "machine then I can choose Security Group"
+    },
+    {
+      "start": 3085.88,
+      "duration": 4.08,
+      "text": "Security Group should have a port number"
+    },
+    {
+      "start": 3091.119,
+      "duration": 4.0,
+      "text": "5432 you can choose what AC do you want"
+    },
+    {
+      "start": 3093.44,
+      "duration": 4.159,
+      "text": "to launch in I can I want to launch it"
+    },
+    {
+      "start": 3095.119,
+      "duration": 4.0,
+      "text": "in USBS 2A then you can choose a"
+    },
+    {
+      "start": 3097.599,
+      "duration": 3.401,
+      "text": "database authentication how should the"
+    },
+    {
+      "start": 3099.119,
+      "duration": 5.801,
+      "text": "user be connected to this database using"
+    },
+    {
+      "start": 3101.0,
+      "duration": 3.92,
+      "text": "password so I'm going to choose password"
+    },
+    {
+      "start": 3105.52,
+      "duration": 3.76,
+      "text": "authentication then you can enable"
+    },
+    {
+      "start": 3107.359,
+      "duration": 4.0,
+      "text": "encryption if you want and you can also"
+    },
+    {
+      "start": 3109.28,
+      "duration": 3.839,
+      "text": "enable performance uh inside but I'm not"
+    },
+    {
+      "start": 3111.359,
+      "duration": 3.881,
+      "text": "going to enable that additional"
+    },
+    {
+      "start": 3113.119,
+      "duration": 4.96,
+      "text": "configuration you can enable monitoring"
+    },
+    {
+      "start": 3115.24,
+      "duration": 6.4,
+      "text": "additional configuration you have uh so"
+    },
+    {
+      "start": 3118.079,
+      "duration": 7.201,
+      "text": "I'm going to name this my DB again so"
+    },
+    {
+      "start": 3121.64,
+      "duration": 5.439,
+      "text": "it's a default uh post DB I don't want"
+    },
+    {
+      "start": 3125.28,
+      "duration": 3.24,
+      "text": "to enable backups I don't want to have"
+    },
+    {
+      "start": 3127.079,
+      "duration": 3.881,
+      "text": "encryption but you have an option to"
+    },
+    {
+      "start": 3128.52,
+      "duration": 4.24,
+      "text": "enable backups any which will be stored"
+    },
+    {
+      "start": 3130.96,
+      "duration": 4.56,
+      "text": "till 7"
+    },
+    {
+      "start": 3132.76,
+      "duration": 4.319,
+      "text": "days you have the option to enable it so"
+    },
+    {
+      "start": 3135.52,
+      "duration": 2.799,
+      "text": "that the data inside this database"
+    },
+    {
+      "start": 3137.079,
+      "duration": 3.76,
+      "text": "should be"
+    },
+    {
+      "start": 3138.319,
+      "duration": 4.8,
+      "text": "secured then you can also store logs in"
+    },
+    {
+      "start": 3140.839,
+      "duration": 4.52,
+      "text": "the cloudwatch logs you can enable"
+    },
+    {
+      "start": 3143.119,
+      "duration": 5.401,
+      "text": "maintenance and that is all so I'm going"
+    },
+    {
+      "start": 3145.359,
+      "duration": 3.161,
+      "text": "to click on create database option"
+    },
+    {
+      "start": 3149.68,
+      "duration": 4.639,
+      "text": "if you want to"
+    },
+    {
+      "start": 3151.2,
+      "duration": 4.52,
+      "text": "create going to be a lot a lot of code"
+    },
+    {
+      "start": 3154.319,
+      "duration": 3.201,
+      "text": "no no no it won't be a lot of code I"
+    },
+    {
+      "start": 3155.72,
+      "duration": 4.079,
+      "text": "will also show you that that in the next"
+    },
+    {
+      "start": 3157.52,
+      "duration": 4.12,
+      "text": "session on how to create database using"
+    },
+    {
+      "start": 3159.799,
+      "duration": 3.8,
+      "text": "terraform that will be a very easy once"
+    },
+    {
+      "start": 3161.64,
+      "duration": 4.56,
+      "text": "we know how the all the configurations"
+    },
+    {
+      "start": 3163.599,
+      "duration": 4.561,
+      "text": "present in here that will be very easy"
+    },
+    {
+      "start": 3166.2,
+      "duration": 4.72,
+      "text": "in next session I'll show you how to"
+    },
+    {
+      "start": 3168.16,
+      "duration": 5.0,
+      "text": "create a RDS database using"
+    },
+    {
+      "start": 3170.92,
+      "duration": 6.12,
+      "text": "terraform"
+    },
+    {
+      "start": 3173.16,
+      "duration": 5.52,
+      "text": "so this one is not deleted yet to be"
+    },
+    {
+      "start": 3177.04,
+      "duration": 3.519,
+      "text": "able to delete modify the database and"
+    },
+    {
+      "start": 3178.68,
+      "duration": 4.8,
+      "text": "disable Okay so you remember we enabled"
+    },
+    {
+      "start": 3180.559,
+      "duration": 5.28,
+      "text": "deletion protection oh yeah yeah that is"
+    },
+    {
+      "start": 3183.48,
+      "duration": 5.2,
+      "text": "why it is not deleted so you can go here"
+    },
+    {
+      "start": 3185.839,
+      "duration": 2.841,
+      "text": "and modify"
+    },
+    {
+      "start": 3189.44,
+      "duration": 4.96,
+      "text": "section this option is available E2 inst"
+    },
+    {
+      "start": 3192.24,
+      "duration": 4.559,
+      "text": "also yes it is for E2 instance as well"
+    },
+    {
+      "start": 3194.4,
+      "duration": 5.0,
+      "text": "if you enable that you can't delete it"
+    },
+    {
+      "start": 3196.799,
+      "duration": 7.52,
+      "text": "unless you disable that option so you"
+    },
+    {
+      "start": 3199.4,
+      "duration": 7.959,
+      "text": "can find that option here in the last"
+    },
+    {
+      "start": 3204.319,
+      "duration": 8.76,
+      "text": "which is here so enable it dis able it"
+    },
+    {
+      "start": 3207.359,
+      "duration": 5.72,
+      "text": "and then I can delete my database"
+    },
+    {
+      "start": 3213.28,
+      "duration": 6.319,
+      "text": "easily so if I go to my database now and"
+    },
+    {
+      "start": 3216.96,
+      "duration": 7.599,
+      "text": "choose on actions CL delete so it's"
+    },
+    {
+      "start": 3219.599,
+      "duration": 4.96,
+      "text": "still modifying it will take some time"
+    },
+    {
+      "start": 3246.119,
+      "duration": 3.121,
+      "text": "apply"
+    },
+    {
+      "start": 3247.04,
+      "duration": 7.12,
+      "text": "immediately I'm going to modify this"
+    },
+    {
+      "start": 3249.24,
+      "duration": 4.92,
+      "text": "database instance so now I can delete"
+    },
+    {
+      "start": 3254.48,
+      "duration": 3.8,
+      "text": "it so I don't want to create final"
+    },
+    {
+      "start": 3256.839,
+      "duration": 3.041,
+      "text": "snapshot I acknowledge that upon"
+    },
+    {
+      "start": 3258.28,
+      "duration": 5.12,
+      "text": "deleting everything will be deleted and"
+    },
+    {
+      "start": 3259.88,
+      "duration": 3.52,
+      "text": "I'm going to type delete"
+    },
+    {
+      "start": 3264.76,
+      "duration": 5.319,
+      "text": "me then this is going to be deleted so"
+    },
+    {
+      "start": 3267.559,
+      "duration": 4.601,
+      "text": "if I refresh it is"
+    },
+    {
+      "start": 3270.079,
+      "duration": 4.72,
+      "text": "deleting"
+    },
+    {
+      "start": 3272.16,
+      "duration": 5.639,
+      "text": "yeah and this one is"
+    },
+    {
+      "start": 3274.799,
+      "duration": 4.56,
+      "text": "creating so uh let me show you now like"
+    },
+    {
+      "start": 3277.799,
+      "duration": 3.401,
+      "text": "this is going to take some time I"
+    },
+    {
+      "start": 3279.359,
+      "duration": 4.881,
+      "text": "already have an instance which has"
+    },
+    {
+      "start": 3281.2,
+      "duration": 5.599,
+      "text": "postgress on it so let's let's see let's"
+    },
+    {
+      "start": 3284.24,
+      "duration": 4.16,
+      "text": "see let's see I also have a python code"
+    },
+    {
+      "start": 3286.799,
+      "duration": 3.601,
+      "text": "which is going to create and connect to"
+    },
+    {
+      "start": 3288.4,
+      "duration": 3.64,
+      "text": "the database I'll also show you that"
+    },
+    {
+      "start": 3290.4,
+      "duration": 3.52,
+      "text": "later on on how to connect to a"
+    },
+    {
+      "start": 3292.04,
+      "duration": 3.96,
+      "text": "postgress database using python so you"
+    },
+    {
+      "start": 3293.92,
+      "duration": 4.32,
+      "text": "can see this is a this is a postgress"
+    },
+    {
+      "start": 3296.0,
+      "duration": 6.04,
+      "text": "database if I show you if I have post on"
+    },
+    {
+      "start": 3298.24,
+      "duration": 3.8,
+      "text": "it or not so let's"
+    },
+    {
+      "start": 3310.96,
+      "duration": 5.56,
+      "text": "see so if I run psql"
+    },
+    {
+      "start": 3314.4,
+      "duration": 5.24,
+      "text": "hyphen is going to show me that I have a"
+    },
+    {
+      "start": 3316.52,
+      "duration": 5.36,
+      "text": "postgress version 14 installed on this"
+    },
+    {
+      "start": 3319.64,
+      "duration": 4.84,
+      "text": "machine right so if you're in the"
+    },
+    {
+      "start": 3321.88,
+      "duration": 5.199,
+      "text": "current machine you can run this command"
+    },
+    {
+      "start": 3324.48,
+      "duration": 3.44,
+      "text": "sudo hyphen hyphen U postest which is"
+    },
+    {
+      "start": 3327.079,
+      "duration": 4.641,
+      "text": "the"
+    },
+    {
+      "start": 3327.92,
+      "duration": 6.52,
+      "text": "username and if I type enter I am like I"
+    },
+    {
+      "start": 3331.72,
+      "duration": 5.599,
+      "text": "am in the post user right when I in the"
+    },
+    {
+      "start": 3334.44,
+      "duration": 5.72,
+      "text": "post user I can run this command psql"
+    },
+    {
+      "start": 3337.319,
+      "duration": 5.841,
+      "text": "and now I inside the post so here I can"
+    },
+    {
+      "start": 3340.16,
+      "duration": 4.56,
+      "text": "run commands to see what database I'm"
+    },
+    {
+      "start": 3343.16,
+      "duration": 4.72,
+      "text": "connected to I'm connected to database"
+    },
+    {
+      "start": 3344.72,
+      "duration": 5.96,
+      "text": "postgress and if I run the /d I can see"
+    },
+    {
+      "start": 3347.88,
+      "duration": 4.679,
+      "text": "what tables are present here uh if I"
+    },
+    {
+      "start": 3350.68,
+      "duration": 3.72,
+      "text": "want to see like what are the users"
+    },
+    {
+      "start": 3352.559,
+      "duration": 4.201,
+      "text": "present here these are all the users if"
+    },
+    {
+      "start": 3354.4,
+      "duration": 4.56,
+      "text": "I want to see the tables I can this"
+    },
+    {
+      "start": 3356.76,
+      "duration": 4.839,
+      "text": "which is/ L and it's going to show me"
+    },
+    {
+      "start": 3358.96,
+      "duration": 5.24,
+      "text": "what are the different databases"
+    },
+    {
+      "start": 3361.599,
+      "duration": 4.24,
+      "text": "present okay and if I want to connect to"
+    },
+    {
+      "start": 3364.2,
+      "duration": 3.119,
+      "text": "it through any other for example if I"
+    },
+    {
+      "start": 3365.839,
+      "duration": 4.24,
+      "text": "want to connect it through my local"
+    },
+    {
+      "start": 3367.319,
+      "duration": 7.28,
+      "text": "machine right this is my local machine I"
+    },
+    {
+      "start": 3370.079,
+      "duration": 6.96,
+      "text": "can connect to it using the string so"
+    },
+    {
+      "start": 3374.599,
+      "duration": 4.801,
+      "text": "the string is going to be let me show"
+    },
+    {
+      "start": 3377.039,
+      "duration": 8.201,
+      "text": "you that so post"
+    },
+    {
+      "start": 3379.4,
+      "duration": 5.84,
+      "text": "CR string for remote connection"
+    },
+    {
+      "start": 3399.559,
+      "duration": 5.52,
+      "text": "what"
+    },
+    {
+      "start": 3401.359,
+      "duration": 7.361,
+      "text": "sorry the string"
+    },
+    {
+      "start": 3405.079,
+      "duration": 6.24,
+      "text": "uhhuh where in it's in"
+    },
+    {
+      "start": 3408.72,
+      "duration": 4.16,
+      "text": "post yeah so every every database is"
+    },
+    {
+      "start": 3411.319,
+      "duration": 3.561,
+      "text": "going to have a string which will in the"
+    },
+    {
+      "start": 3412.88,
+      "duration": 4.239,
+      "text": "string you will have to enter the"
+    },
+    {
+      "start": 3414.88,
+      "duration": 4.919,
+      "text": "username and the password word and"
+    },
+    {
+      "start": 3417.119,
+      "duration": 5.121,
+      "text": "sometimes also Port as well so that you"
+    },
+    {
+      "start": 3419.799,
+      "duration": 5.401,
+      "text": "can connect to that"
+    },
+    {
+      "start": 3422.24,
+      "duration": 4.96,
+      "text": "database all right for example if I show"
+    },
+    {
+      "start": 3425.2,
+      "duration": 5.919,
+      "text": "you this code here that I have"
+    },
+    {
+      "start": 3427.2,
+      "duration": 7.44,
+      "text": "created uh few days back so you do you"
+    },
+    {
+      "start": 3431.119,
+      "duration": 7.361,
+      "text": "have any like knowledge of uh"
+    },
+    {
+      "start": 3434.64,
+      "duration": 7.8,
+      "text": "python yeah yeah python yeah yeah okay"
+    },
+    {
+      "start": 3438.48,
+      "duration": 6.319,
+      "text": "let me let me show you that Lang"
+    },
+    {
+      "start": 3442.44,
+      "duration": 5.52,
+      "text": "understand I start I haven't finished I"
+    },
+    {
+      "start": 3444.799,
+      "duration": 6.361,
+      "text": "start B I can also teach you python if"
+    },
+    {
+      "start": 3447.96,
+      "duration": 4.96,
+      "text": "you want but depends so let me show you"
+    },
+    {
+      "start": 3451.16,
+      "duration": 5.6,
+      "text": "this"
+    },
+    {
+      "start": 3452.92,
+      "duration": 7.879,
+      "text": "code okay so you can see my screen"
+    },
+    {
+      "start": 3456.76,
+      "duration": 5.359,
+      "text": "right yeah so this is python uh module"
+    },
+    {
+      "start": 3460.799,
+      "duration": 4.121,
+      "text": "to connect"
+    },
+    {
+      "start": 3462.119,
+      "duration": 4.601,
+      "text": "to to connect to postgress you can use"
+    },
+    {
+      "start": 3464.92,
+      "duration": 3.6,
+      "text": "cyop G.C connect and then you have to"
+    },
+    {
+      "start": 3466.72,
+      "duration": 5.119,
+      "text": "pass in the parameters like database"
+    },
+    {
+      "start": 3468.52,
+      "duration": 5.559,
+      "text": "host name then uh for now I used Local"
+    },
+    {
+      "start": 3471.839,
+      "duration": 4.96,
+      "text": "Host I can but I can use host which is"
+    },
+    {
+      "start": 3474.079,
+      "duration": 7.0,
+      "text": "going to be the use public IP of my my"
+    },
+    {
+      "start": 3476.799,
+      "duration": 7.76,
+      "text": "instance if it is on RDS I can use my"
+    },
+    {
+      "start": 3481.079,
+      "duration": 5.601,
+      "text": "endpoint which is"
+    },
+    {
+      "start": 3484.559,
+      "duration": 4.161,
+      "text": "this one okay this is how you connect"
+    },
+    {
+      "start": 3486.68,
+      "duration": 4.56,
+      "text": "you just have to change the host name"
+    },
+    {
+      "start": 3488.72,
+      "duration": 5.839,
+      "text": "and then the user is post the password"
+    },
+    {
+      "start": 3491.24,
+      "duration": 7.119,
+      "text": "is password 1 1234 so let's try to"
+    },
+    {
+      "start": 3494.559,
+      "duration": 8.04,
+      "text": "connect it with PG admin so PG admin 4"
+    },
+    {
+      "start": 3498.359,
+      "duration": 4.24,
+      "text": "which is this"
+    },
+    {
+      "start": 3510.72,
+      "duration": 4.0,
+      "text": "for me to connect to the database this"
+    },
+    {
+      "start": 3512.4,
+      "duration": 4.719,
+      "text": "is required to unlock saved password so"
+    },
+    {
+      "start": 3514.72,
+      "duration": 3.72,
+      "text": "I'm going to pass in my password I'm not"
+    },
+    {
+      "start": 3517.119,
+      "duration": 3.281,
+      "text": "sure if this is the right one okay this"
+    },
+    {
+      "start": 3518.44,
+      "duration": 4.56,
+      "text": "is the right one so I want to connect to"
+    },
+    {
+      "start": 3520.4,
+      "duration": 2.6,
+      "text": "a"
+    },
+    {
+      "start": 3523.72,
+      "duration": 5.92,
+      "text": "server"
+    },
+    {
+      "start": 3526.4,
+      "duration": 5.84,
+      "text": "so connect to a server how do I do that"
+    },
+    {
+      "start": 3529.64,
+      "duration": 6.439,
+      "text": "add new server option in here I need to"
+    },
+    {
+      "start": 3532.24,
+      "duration": 6.44,
+      "text": "pass in the name connection SSL SS"
+    },
+    {
+      "start": 3536.079,
+      "duration": 6.28,
+      "text": "external so in s in host I need to pass"
+    },
+    {
+      "start": 3538.68,
+      "duration": 7.48,
+      "text": "in the string the endpoint string the"
+    },
+    {
+      "start": 3542.359,
+      "duration": 9.0,
+      "text": "port is 5432 this is a username password"
+    },
+    {
+      "start": 3546.16,
+      "duration": 7.679,
+      "text": "is password 1 2 3 and I'm going to save"
+    },
+    {
+      "start": 3551.359,
+      "duration": 7.401,
+      "text": "this password I don't have any rule"
+    },
+    {
+      "start": 3553.839,
+      "duration": 8.76,
+      "text": "let's see if this works or not so my"
+    },
+    {
+      "start": 3558.76,
+      "duration": 6.319,
+      "text": "DB and let's try to save it and see what"
+    },
+    {
+      "start": 3562.599,
+      "duration": 4.281,
+      "text": "happens so it says unable to connect to"
+    },
+    {
+      "start": 3565.079,
+      "duration": 4.24,
+      "text": "the server password authentication I"
+    },
+    {
+      "start": 3566.88,
+      "duration": 4.8,
+      "text": "guess I'm using the wrong password so"
+    },
+    {
+      "start": 3569.319,
+      "duration": 5.601,
+      "text": "let's try with that"
+    },
+    {
+      "start": 3571.68,
+      "duration": 8.52,
+      "text": "again so"
+    },
+    {
+      "start": 3574.92,
+      "duration": 5.28,
+      "text": "password 1 2 3 and"
+    },
+    {
+      "start": 3580.799,
+      "duration": 4.961,
+      "text": "now now it is"
+    },
+    {
+      "start": 3582.88,
+      "duration": 4.84,
+      "text": "connected oh yeah it's connected right"
+    },
+    {
+      "start": 3585.76,
+      "duration": 3.4,
+      "text": "you can see this is this is the database"
+    },
+    {
+      "start": 3587.72,
+      "duration": 3.96,
+      "text": "right now I don't have any databases but"
+    },
+    {
+      "start": 3589.16,
+      "duration": 4.48,
+      "text": "I can con create more and I can start"
+    },
+    {
+      "start": 3591.68,
+      "duration": 4.119,
+      "text": "using it so this is how you connect to"
+    },
+    {
+      "start": 3593.64,
+      "duration": 4.8,
+      "text": "post database you can see the user which"
+    },
+    {
+      "start": 3595.799,
+      "duration": 5.441,
+      "text": "we have have currently and I can uh"
+    },
+    {
+      "start": 3598.44,
+      "duration": 5.24,
+      "text": "create more databases and more tables in"
+    },
+    {
+      "start": 3601.24,
+      "duration": 4.68,
+      "text": "it same way if you do for MySQL you can"
+    },
+    {
+      "start": 3603.68,
+      "duration": 4.159,
+      "text": "use myql workbench if you want to have"
+    },
+    {
+      "start": 3605.92,
+      "duration": 4.399,
+      "text": "like this or else you can also connect"
+    },
+    {
+      "start": 3607.839,
+      "duration": 5.681,
+      "text": "to your database"
+    },
+    {
+      "start": 3610.319,
+      "duration": 6.321,
+      "text": "using using uh terminal so I'm going to"
+    },
+    {
+      "start": 3613.52,
+      "duration": 5.079,
+      "text": "show you using terminal tomorrow so I"
+    },
+    {
+      "start": 3616.64,
+      "duration": 3.36,
+      "text": "hope everything is cleared up to what we"
+    },
+    {
+      "start": 3618.599,
+      "duration": 2.44,
+      "text": "have learned today so in the next"
+    },
+    {
+      "start": 3620.0,
+      "duration": 3.119,
+      "text": "session we're going to see how to"
+    },
+    {
+      "start": 3621.039,
+      "duration": 5.441,
+      "text": "connect to your database using terminal"
+    },
+    {
+      "start": 3623.119,
+      "duration": 5.72,
+      "text": "how to uh do it through ter form how to"
+    },
+    {
+      "start": 3626.48,
+      "duration": 4.04,
+      "text": "create RDS through terraform and then we"
+    },
+    {
+      "start": 3628.839,
+      "duration": 6.72,
+      "text": "will also see how to create a program to"
+    },
+    {
+      "start": 3630.52,
+      "duration": 5.039,
+      "text": "connect it through python"
+    }
+  ]
+}

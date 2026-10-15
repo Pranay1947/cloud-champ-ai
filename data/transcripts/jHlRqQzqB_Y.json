@@ -1,0 +1,6066 @@
+{
+  "video": {
+    "id": "jHlRqQzqB_Y",
+    "title": "DevOps Project: Video to Audio Python Microservices App on Kubernetes",
+    "url": "https://www.youtube.com/watch?v=jHlRqQzqB_Y",
+    "duration": 2913,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.719,
+      "duration": 3.921,
+      "text": "microservices a very popular"
+    },
+    {
+      "start": 2.76,
+      "duration": 4.48,
+      "text": "architectural style that is used by many"
+    },
+    {
+      "start": 4.64,
+      "duration": 5.2,
+      "text": "big companies including Netflix Google"
+    },
+    {
+      "start": 7.24,
+      "duration": 4.559,
+      "text": "Spotify Amazon Uber and pretty much"
+    },
+    {
+      "start": 9.84,
+      "duration": 3.4,
+      "text": "every company these days are using"
+    },
+    {
+      "start": 11.799,
+      "duration": 3.681,
+      "text": "microservices to deploy their"
+    },
+    {
+      "start": 13.24,
+      "duration": 4.08,
+      "text": "application so in this devops project we"
+    },
+    {
+      "start": 15.48,
+      "duration": 4.12,
+      "text": "are going to learn how you can create"
+    },
+    {
+      "start": 17.32,
+      "duration": 5.0,
+      "text": "python microservices application which"
+    },
+    {
+      "start": 19.6,
+      "duration": 5.12,
+      "text": "is going to convert video into audio and"
+    },
+    {
+      "start": 22.32,
+      "duration": 6.08,
+      "text": "deploy it on AWS Cloud using tools like"
+    },
+    {
+      "start": 24.72,
+      "duration": 6.479,
+      "text": "kubernetes Helm Docker rapit mq and also"
+    },
+    {
+      "start": 28.4,
+      "duration": 4.48,
+      "text": "databases including post C Longo DB so"
+    },
+    {
+      "start": 31.199,
+      "duration": 4.001,
+      "text": "let's go ahead and deploy this but"
+    },
+    {
+      "start": 32.88,
+      "duration": 4.72,
+      "text": "before we deploy to make things easy let"
+    },
+    {
+      "start": 35.2,
+      "duration": 3.96,
+      "text": "me explain you the architecture diagram"
+    },
+    {
+      "start": 37.6,
+      "duration": 2.88,
+      "text": "so this is our application in our"
+    },
+    {
+      "start": 39.16,
+      "duration": 3.96,
+      "text": "application we have four different"
+    },
+    {
+      "start": 40.48,
+      "duration": 4.84,
+      "text": "microservices the OD service converter"
+    },
+    {
+      "start": 43.12,
+      "duration": 4.16,
+      "text": "service Gateway service and notification"
+    },
+    {
+      "start": 45.32,
+      "duration": 5.52,
+      "text": "service along with this we also have"
+    },
+    {
+      "start": 47.28,
+      "duration": 5.959,
+      "text": "Helm charts to deploy rabbit mq mongodb"
+    },
+    {
+      "start": 50.84,
+      "duration": 3.96,
+      "text": "and for so the application works in a"
+    },
+    {
+      "start": 53.239,
+      "duration": 4.201,
+      "text": "way where the user is going to send a"
+    },
+    {
+      "start": 54.8,
+      "duration": 5.759,
+      "text": "request on API Gateway API Gateway have"
+    },
+    {
+      "start": 57.44,
+      "duration": 4.88,
+      "text": "three endpoint login upload and download"
+    },
+    {
+      "start": 60.559,
+      "duration": 3.241,
+      "text": "first the user is going to log in and if"
+    },
+    {
+      "start": 62.32,
+      "duration": 3.44,
+      "text": "the user is correct checking the"
+    },
+    {
+      "start": 63.8,
+      "duration": 4.12,
+      "text": "credentials in the post it is going to"
+    },
+    {
+      "start": 65.76,
+      "duration": 4.719,
+      "text": "then generate a JWT token which will"
+    },
+    {
+      "start": 67.92,
+      "duration": 4.44,
+      "text": "allow user to upload a video when a user"
+    },
+    {
+      "start": 70.479,
+      "duration": 3.96,
+      "text": "uploads a video on this path it's going"
+    },
+    {
+      "start": 72.36,
+      "duration": 3.52,
+      "text": "to be stored in the rabbit mq which is"
+    },
+    {
+      "start": 74.439,
+      "duration": 3.801,
+      "text": "then transferred to the converter"
+    },
+    {
+      "start": 75.88,
+      "duration": 5.32,
+      "text": "service that converts the video into"
+    },
+    {
+      "start": 78.24,
+      "duration": 4.559,
+      "text": "audio and then store the data in mongodb"
+    },
+    {
+      "start": 81.2,
+      "duration": 3.48,
+      "text": "which is again deployed through H chart"
+    },
+    {
+      "start": 82.799,
+      "duration": 4.0,
+      "text": "once the video is converted into audio"
+    },
+    {
+      "start": 84.68,
+      "duration": 4.56,
+      "text": "we are going to get notification or our"
+    },
+    {
+      "start": 86.799,
+      "duration": 4.0,
+      "text": "email ID using the notification service"
+    },
+    {
+      "start": 89.24,
+      "duration": 3.8,
+      "text": "and they can also go ahead and download"
+    },
+    {
+      "start": 90.799,
+      "duration": 4.6,
+      "text": "it through the download path and we can"
+    },
+    {
+      "start": 93.04,
+      "duration": 4.359,
+      "text": "then have our converted audio using this"
+    },
+    {
+      "start": 95.399,
+      "duration": 4.921,
+      "text": "application so this is our python"
+    },
+    {
+      "start": 97.399,
+      "duration": 5.881,
+      "text": "microservices to convert video into"
+    },
+    {
+      "start": 100.32,
+      "duration": 4.479,
+      "text": "audio let's deploy this all right I hope"
+    },
+    {
+      "start": 103.28,
+      "duration": 3.4,
+      "text": "now you have an idea of what this"
+    },
+    {
+      "start": 104.799,
+      "duration": 3.6,
+      "text": "project is and you are excited to do"
+    },
+    {
+      "start": 106.68,
+      "duration": 3.479,
+      "text": "this project but before we start there"
+    },
+    {
+      "start": 108.399,
+      "duration": 4.0,
+      "text": "are a few points that you need to know"
+    },
+    {
+      "start": 110.159,
+      "duration": 4.6,
+      "text": "this project is not a free project you"
+    },
+    {
+      "start": 112.399,
+      "duration": 4.32,
+      "text": "will get charged for eks clusters as"
+    },
+    {
+      "start": 114.759,
+      "duration": 3.441,
+      "text": "it's not a free tier service but I still"
+    },
+    {
+      "start": 116.719,
+      "duration": 3.641,
+      "text": "encourage you to do it because you will"
+    },
+    {
+      "start": 118.2,
+      "duration": 4.239,
+      "text": "learn how micro services are deployed"
+    },
+    {
+      "start": 120.36,
+      "duration": 3.84,
+      "text": "and how they work so do this project so"
+    },
+    {
+      "start": 122.439,
+      "duration": 4.0,
+      "text": "I hope you complete this project most of"
+    },
+    {
+      "start": 124.2,
+      "duration": 4.039,
+      "text": "you will face issues in this project if"
+    },
+    {
+      "start": 126.439,
+      "duration": 4.16,
+      "text": "you face issues try to go through the"
+    },
+    {
+      "start": 128.239,
+      "duration": 4.08,
+      "text": "readme GitHub readme section properly"
+    },
+    {
+      "start": 130.599,
+      "duration": 3.121,
+      "text": "troubleshoot it but if you still face"
+    },
+    {
+      "start": 132.319,
+      "duration": 3.481,
+      "text": "issues let me know in the comment"
+    },
+    {
+      "start": 133.72,
+      "duration": 3.64,
+      "text": "section I will help you out I hope you"
+    },
+    {
+      "start": 135.8,
+      "duration": 4.28,
+      "text": "complete this video share it on your"
+    },
+    {
+      "start": 137.36,
+      "duration": 6.4,
+      "text": "resume even on your LinkedIn profile so"
+    },
+    {
+      "start": 140.08,
+      "duration": 3.68,
+      "text": "all the best let's start with this"
+    },
+    {
+      "start": 148.76,
+      "duration": 3.0,
+      "text": "project"
+    },
+    {
+      "start": 151.84,
+      "duration": 3.399,
+      "text": "all right so I'm here on my computer"
+    },
+    {
+      "start": 153.48,
+      "duration": 4.36,
+      "text": "screen and let's start with deploying"
+    },
+    {
+      "start": 155.239,
+      "duration": 5.64,
+      "text": "our python micro Services application on"
+    },
+    {
+      "start": 157.84,
+      "duration": 6.24,
+      "text": "AWS Cloud using tools like kubernetes"
+    },
+    {
+      "start": 160.879,
+      "duration": 5.681,
+      "text": "Helm Docker rabit mq and also databases"
+    },
+    {
+      "start": 164.08,
+      "duration": 3.84,
+      "text": "including MV and pogus so let's start"
+    },
+    {
+      "start": 166.56,
+      "duration": 3.039,
+      "text": "with deploying this application but"
+    },
+    {
+      "start": 167.92,
+      "duration": 3.88,
+      "text": "before we actually start there are some"
+    },
+    {
+      "start": 169.599,
+      "duration": 3.92,
+      "text": "prerequisites all tools that you need to"
+    },
+    {
+      "start": 171.8,
+      "duration": 3.359,
+      "text": "have to be installed in your machine in"
+    },
+    {
+      "start": 173.519,
+      "duration": 4.121,
+      "text": "order to do this project so the first"
+    },
+    {
+      "start": 175.159,
+      "duration": 4.16,
+      "text": "thing you need is an AWS account as we"
+    },
+    {
+      "start": 177.64,
+      "duration": 3.84,
+      "text": "are deploying this application on AWS"
+    },
+    {
+      "start": 179.319,
+      "duration": 4.241,
+      "text": "cloud and we using elastic kubernetes"
+    },
+    {
+      "start": 181.48,
+      "duration": 3.28,
+      "text": "service you need to have an account and"
+    },
+    {
+      "start": 183.56,
+      "duration": 3.0,
+      "text": "if you don't have it you can follow the"
+    },
+    {
+      "start": 184.76,
+      "duration": 4.399,
+      "text": "steps here in this documentation"
+    },
+    {
+      "start": 186.56,
+      "duration": 5.08,
+      "text": "similarly you require Helm we are using"
+    },
+    {
+      "start": 189.159,
+      "duration": 6.401,
+      "text": "Helm the kubernetes package manager to"
+    },
+    {
+      "start": 191.64,
+      "duration": 5.92,
+      "text": "install mongodb rabbit mq and postgress"
+    },
+    {
+      "start": 195.56,
+      "duration": 3.44,
+      "text": "so you require Helm to be installed I"
+    },
+    {
+      "start": 197.56,
+      "duration": 3.56,
+      "text": "already have Helm installed in my"
+    },
+    {
+      "start": 199.0,
+      "duration": 3.879,
+      "text": "machine let me show you if I I'm Helm"
+    },
+    {
+      "start": 201.12,
+      "duration": 3.96,
+      "text": "version command you can see Helm is"
+    },
+    {
+      "start": 202.879,
+      "duration": 4.36,
+      "text": "installed along with hel we also require"
+    },
+    {
+      "start": 205.08,
+      "duration": 3.439,
+      "text": "Docker because we have Docker files and"
+    },
+    {
+      "start": 207.239,
+      "duration": 3.64,
+      "text": "we are going to be creating Docker"
+    },
+    {
+      "start": 208.519,
+      "duration": 4.121,
+      "text": "images and pushing them on Docker app so"
+    },
+    {
+      "start": 210.879,
+      "duration": 3.681,
+      "text": "you need to have Docker installed and if"
+    },
+    {
+      "start": 212.64,
+      "duration": 4.04,
+      "text": "you don't know how to install Docker you"
+    },
+    {
+      "start": 214.56,
+      "duration": 4.2,
+      "text": "can go to the official documentation or"
+    },
+    {
+      "start": 216.68,
+      "duration": 3.6,
+      "text": "watch my previous Netflix video which"
+    },
+    {
+      "start": 218.76,
+      "duration": 3.72,
+      "text": "has the commands to install Docker in"
+    },
+    {
+      "start": 220.28,
+      "duration": 4.44,
+      "text": "your machine along with this you also"
+    },
+    {
+      "start": 222.48,
+      "duration": 4.28,
+      "text": "require python as this project is in"
+    },
+    {
+      "start": 224.72,
+      "duration": 4.84,
+      "text": "Python uh we you need to have python"
+    },
+    {
+      "start": 226.76,
+      "duration": 4.479,
+      "text": "installed mostly every laptop or machine"
+    },
+    {
+      "start": 229.56,
+      "duration": 4.84,
+      "text": "comes with python installed if you don't"
+    },
+    {
+      "start": 231.239,
+      "duration": 4.521,
+      "text": "have it just search for Python 3 and you"
+    },
+    {
+      "start": 234.4,
+      "duration": 3.52,
+      "text": "should be inside the shell if you have"
+    },
+    {
+      "start": 235.76,
+      "duration": 5.319,
+      "text": "python installed along with this you"
+    },
+    {
+      "start": 237.92,
+      "duration": 5.599,
+      "text": "also require uh a AWS CLI we are running"
+    },
+    {
+      "start": 241.079,
+      "duration": 4.201,
+      "text": "some AWS commands so we need to have AWS"
+    },
+    {
+      "start": 243.519,
+      "duration": 3.521,
+      "text": "CLI installed as well I have it"
+    },
+    {
+      "start": 245.28,
+      "duration": 4.799,
+      "text": "installed and if I run AWS version"
+    },
+    {
+      "start": 247.04,
+      "duration": 4.96,
+      "text": "command you can see AWS C install along"
+    },
+    {
+      "start": 250.079,
+      "duration": 3.641,
+      "text": "with CI you also need Cube CTL we are"
+    },
+    {
+      "start": 252.0,
+      "duration": 3.879,
+      "text": "running some Cube C apply commands so"
+    },
+    {
+      "start": 253.72,
+      "duration": 3.759,
+      "text": "Cube C is a tool to manage kubernetes"
+    },
+    {
+      "start": 255.879,
+      "duration": 3.401,
+      "text": "through command line and I already have"
+    },
+    {
+      "start": 257.479,
+      "duration": 3.28,
+      "text": "it installed again if you don't have it"
+    },
+    {
+      "start": 259.28,
+      "duration": 4.28,
+      "text": "installed you can watch my previous"
+    },
+    {
+      "start": 260.759,
+      "duration": 5.321,
+      "text": "Cloud native W application project which"
+    },
+    {
+      "start": 263.56,
+      "duration": 4.84,
+      "text": "has the commands to install kubernetes"
+    },
+    {
+      "start": 266.08,
+      "duration": 4.72,
+      "text": "or C CDL so if I show you CDL version"
+    },
+    {
+      "start": 268.4,
+      "duration": 5.72,
+      "text": "command you can see it's"
+    },
+    {
+      "start": 270.8,
+      "duration": 5.08,
+      "text": "there all right let's uh along with this"
+    },
+    {
+      "start": 274.12,
+      "duration": 3.6,
+      "text": "lastly you also need to have postgressql"
+    },
+    {
+      "start": 275.88,
+      "duration": 3.0,
+      "text": "and morod be installed in your machine"
+    },
+    {
+      "start": 277.72,
+      "duration": 3.319,
+      "text": "because we are going to test some"
+    },
+    {
+      "start": 278.88,
+      "duration": 4.08,
+      "text": "connections and also run some queries"
+    },
+    {
+      "start": 281.039,
+      "duration": 4.361,
+      "text": "inside the database so you need to have"
+    },
+    {
+      "start": 282.96,
+      "duration": 4.12,
+      "text": "postgress and longb installed once you"
+    },
+    {
+      "start": 285.4,
+      "duration": 3.68,
+      "text": "have this installed you are then ready"
+    },
+    {
+      "start": 287.08,
+      "duration": 3.839,
+      "text": "to start with the project to start this"
+    },
+    {
+      "start": 289.08,
+      "duration": 3.6,
+      "text": "project we I'm going to clone this repo"
+    },
+    {
+      "start": 290.919,
+      "duration": 3.84,
+      "text": "in my local machine so I'm going to copy"
+    },
+    {
+      "start": 292.68,
+      "duration": 5.68,
+      "text": "this link open my"
+    },
+    {
+      "start": 294.759,
+      "duration": 6.241,
+      "text": "terminal and I'm going to say get clone"
+    },
+    {
+      "start": 298.36,
+      "duration": 4.76,
+      "text": "paste this so so I already have it"
+    },
+    {
+      "start": 301.0,
+      "duration": 4.0,
+      "text": "cloned so it says already exist and is"
+    },
+    {
+      "start": 303.12,
+      "duration": 3.76,
+      "text": "not an empty directory so if you clone"
+    },
+    {
+      "start": 305.0,
+      "duration": 4.28,
+      "text": "it you will see the code let's go inside"
+    },
+    {
+      "start": 306.88,
+      "duration": 5.24,
+      "text": "this particular folder and if I show you"
+    },
+    {
+      "start": 309.28,
+      "duration": 5.44,
+      "text": "there are different folders assets hel"
+    },
+    {
+      "start": 312.12,
+      "duration": 4.519,
+      "text": "charts project documentation and Source"
+    },
+    {
+      "start": 314.72,
+      "duration": 3.68,
+      "text": "folder before I explain you what is"
+    },
+    {
+      "start": 316.639,
+      "duration": 3.441,
+      "text": "there inside these particular folders"
+    },
+    {
+      "start": 318.4,
+      "duration": 4.239,
+      "text": "let's go and create our kubernetes"
+    },
+    {
+      "start": 320.08,
+      "duration": 4.8,
+      "text": "cluster because creating a cluster takes"
+    },
+    {
+      "start": 322.639,
+      "duration": 5.081,
+      "text": "time so I'm going to go to AWS dashboard"
+    },
+    {
+      "start": 324.88,
+      "duration": 4.2,
+      "text": "click on elastic kubernetes service we"
+    },
+    {
+      "start": 327.72,
+      "duration": 4.319,
+      "text": "are going to be creating a kubernetes"
+    },
+    {
+      "start": 329.08,
+      "duration": 5.6,
+      "text": "cluster on AWS and we are deploying this"
+    },
+    {
+      "start": 332.039,
+      "duration": 4.121,
+      "text": "micr Services application on our cluster"
+    },
+    {
+      "start": 334.68,
+      "duration": 3.88,
+      "text": "so I'm going to click on ADD cluster"
+    },
+    {
+      "start": 336.16,
+      "duration": 5.599,
+      "text": "option click on create let's give a name"
+    },
+    {
+      "start": 338.56,
+      "duration": 5.52,
+      "text": "so I'm going to name this as micro"
+    },
+    {
+      "start": 341.759,
+      "duration": 3.88,
+      "text": "services and then for the version I'm"
+    },
+    {
+      "start": 344.08,
+      "duration": 3.6,
+      "text": "choosing the default one no need to"
+    },
+    {
+      "start": 345.639,
+      "duration": 4.081,
+      "text": "change it for cluster role I'm choosing"
+    },
+    {
+      "start": 347.68,
+      "duration": 3.799,
+      "text": "my Amazon eks cluster role and if you"
+    },
+    {
+      "start": 349.72,
+      "duration": 3.84,
+      "text": "don't have this Ro you're not sure what"
+    },
+    {
+      "start": 351.479,
+      "duration": 4.361,
+      "text": "are the policies inside this go through"
+    },
+    {
+      "start": 353.56,
+      "duration": 4.52,
+      "text": "the readme Section in this readme I have"
+    },
+    {
+      "start": 355.84,
+      "duration": 3.76,
+      "text": "some screenshots which explains you what"
+    },
+    {
+      "start": 358.08,
+      "duration": 3.36,
+      "text": "policies you need to have in this"
+    },
+    {
+      "start": 359.6,
+      "duration": 3.719,
+      "text": "particular role similarly also for the"
+    },
+    {
+      "start": 361.44,
+      "duration": 4.0,
+      "text": "node role that we going to be attaching"
+    },
+    {
+      "start": 363.319,
+      "duration": 3.841,
+      "text": "to our node group so after you attach"
+    },
+    {
+      "start": 365.44,
+      "duration": 3.879,
+      "text": "the service role click on"
+    },
+    {
+      "start": 367.16,
+      "duration": 4.08,
+      "text": "next for networking I'm choosing the"
+    },
+    {
+      "start": 369.319,
+      "duration": 4.28,
+      "text": "default VPC and I'm only allowing my"
+    },
+    {
+      "start": 371.24,
+      "duration": 4.359,
+      "text": "public suets so I'm removing all my"
+    },
+    {
+      "start": 373.599,
+      "duration": 4.921,
+      "text": "private ones for you it might be only"
+    },
+    {
+      "start": 375.599,
+      "duration": 4.32,
+      "text": "public because I created them extra so"
+    },
+    {
+      "start": 378.52,
+      "duration": 4.119,
+      "text": "these are all my public subs for"
+    },
+    {
+      "start": 379.919,
+      "duration": 4.641,
+      "text": "Security Group I choosing my SG you can"
+    },
+    {
+      "start": 382.639,
+      "duration": 4.361,
+      "text": "choose your any Security"
+    },
+    {
+      "start": 384.56,
+      "duration": 6.199,
+      "text": "Group for cluster Endo I'm choosing it"
+    },
+    {
+      "start": 387.0,
+      "duration": 5.72,
+      "text": "public and then no need for knock loging"
+    },
+    {
+      "start": 390.759,
+      "duration": 3.521,
+      "text": "no need to attach any extra add-ons"
+    },
+    {
+      "start": 392.72,
+      "duration": 4.08,
+      "text": "apart from what you have here so I'm"
+    },
+    {
+      "start": 394.28,
+      "duration": 4.199,
+      "text": "going to click on next no need to change"
+    },
+    {
+      "start": 396.8,
+      "duration": 3.76,
+      "text": "the version for the addons I'm choosing"
+    },
+    {
+      "start": 398.479,
+      "duration": 5.0,
+      "text": "next now you can review everything and"
+    },
+    {
+      "start": 400.56,
+      "duration": 5.079,
+      "text": "then click on create option so this will"
+    },
+    {
+      "start": 403.479,
+      "duration": 3.761,
+      "text": "now start creating the cluster and"
+    },
+    {
+      "start": 405.639,
+      "duration": 3.68,
+      "text": "creating a cluster usually takes around"
+    },
+    {
+      "start": 407.24,
+      "duration": 4.2,
+      "text": "5 to 10 minutes so till the time the"
+    },
+    {
+      "start": 409.319,
+      "duration": 4.44,
+      "text": "cluster comes up in active State let me"
+    },
+    {
+      "start": 411.44,
+      "duration": 6.28,
+      "text": "explain you the code so I'll open this"
+    },
+    {
+      "start": 413.759,
+      "duration": 6.401,
+      "text": "uh folder on my vs code so let's open vs"
+    },
+    {
+      "start": 417.72,
+      "duration": 4.919,
+      "text": "code uh yeah"
+    },
+    {
+      "start": 420.16,
+      "duration": 4.8,
+      "text": "already okay so as you can see there are"
+    },
+    {
+      "start": 422.639,
+      "duration": 4.881,
+      "text": "four folders assets H charts project"
+    },
+    {
+      "start": 424.96,
+      "duration": 3.919,
+      "text": "documentation and Source assets has the"
+    },
+    {
+      "start": 427.52,
+      "duration": 4.239,
+      "text": "video which we are going to be"
+    },
+    {
+      "start": 428.879,
+      "duration": 4.641,
+      "text": "converting from video to the audio after"
+    },
+    {
+      "start": 431.759,
+      "duration": 4.0,
+      "text": "we deploy this application and to"
+    },
+    {
+      "start": 433.52,
+      "duration": 4.399,
+      "text": "convert this video into audio we have"
+    },
+    {
+      "start": 435.759,
+      "duration": 4.681,
+      "text": "some micro Services here as you can see"
+    },
+    {
+      "start": 437.919,
+      "duration": 4.201,
+      "text": "this is the odd service U and you can"
+    },
+    {
+      "start": 440.44,
+      "duration": 4.56,
+      "text": "find the code for the OD service here it"
+    },
+    {
+      "start": 442.12,
+      "duration": 4.84,
+      "text": "is used for authentication and the"
+    },
+    {
+      "start": 445.0,
+      "duration": 4.919,
+      "text": "credentials are stored in the postgress"
+    },
+    {
+      "start": 446.96,
+      "duration": 5.519,
+      "text": "database this is why we have cyle G2"
+    },
+    {
+      "start": 449.919,
+      "duration": 5.241,
+      "text": "Library which is a postgress library"
+    },
+    {
+      "start": 452.479,
+      "duration": 4.361,
+      "text": "that can be used with python so this is"
+    },
+    {
+      "start": 455.16,
+      "duration": 3.439,
+      "text": "use required for authentication and if"
+    },
+    {
+      "start": 456.84,
+      "duration": 3.359,
+      "text": "it is authenticated then the user can"
+    },
+    {
+      "start": 458.599,
+      "duration": 3.04,
+      "text": "put their video which is going to be"
+    },
+    {
+      "start": 460.199,
+      "duration": 4.041,
+      "text": "converted and we will also get the"
+    },
+    {
+      "start": 461.639,
+      "duration": 4.321,
+      "text": "notification so for you to upload the"
+    },
+    {
+      "start": 464.24,
+      "duration": 3.32,
+      "text": "video we have a Gateway service in this"
+    },
+    {
+      "start": 465.96,
+      "duration": 4.32,
+      "text": "Gateway service you can see there are"
+    },
+    {
+      "start": 467.56,
+      "duration": 4.479,
+      "text": "different endpoints login upload and"
+    },
+    {
+      "start": 470.28,
+      "duration": 4.039,
+      "text": "download so first the user is going to"
+    },
+    {
+      "start": 472.039,
+      "duration": 4.12,
+      "text": "loog log in if he's the correct user is"
+    },
+    {
+      "start": 474.319,
+      "duration": 3.84,
+      "text": "going to then upload the video Once the"
+    },
+    {
+      "start": 476.159,
+      "duration": 4.241,
+      "text": "video is uploaded the converter service"
+    },
+    {
+      "start": 478.159,
+      "duration": 4.401,
+      "text": "is going to convert the the video into"
+    },
+    {
+      "start": 480.4,
+      "duration": 4.359,
+      "text": "audio and then notification service will"
+    },
+    {
+      "start": 482.56,
+      "duration": 3.599,
+      "text": "send us a message on the mail this is"
+    },
+    {
+      "start": 484.759,
+      "duration": 2.921,
+      "text": "already discussed in the architecture"
+    },
+    {
+      "start": 486.159,
+      "duration": 3.561,
+      "text": "diagram but I'm just trying to explain"
+    },
+    {
+      "start": 487.68,
+      "duration": 3.519,
+      "text": "you the code here so if you have any"
+    },
+    {
+      "start": 489.72,
+      "duration": 3.56,
+      "text": "issues feel free to let me know in the"
+    },
+    {
+      "start": 491.199,
+      "duration": 4.081,
+      "text": "comment section but this is the code we"
+    },
+    {
+      "start": 493.28,
+      "duration": 3.639,
+      "text": "also have Docker file for each service"
+    },
+    {
+      "start": 495.28,
+      "duration": 3.919,
+      "text": "so we are going to create Docker image"
+    },
+    {
+      "start": 496.919,
+      "duration": 4.041,
+      "text": "and push them on Docker app so I'll show"
+    },
+    {
+      "start": 499.199,
+      "duration": 3.921,
+      "text": "you that as well along with this you can"
+    },
+    {
+      "start": 500.96,
+      "duration": 4.76,
+      "text": "see there are hel charts so hel charts"
+    },
+    {
+      "start": 503.12,
+      "duration": 4.519,
+      "text": "have three different charts for Marb for"
+    },
+    {
+      "start": 505.72,
+      "duration": 3.68,
+      "text": "postgress for abbit mq and we are"
+    },
+    {
+      "start": 507.639,
+      "duration": 3.441,
+      "text": "deploying this on our cluster using us"
+    },
+    {
+      "start": 509.4,
+      "duration": 3.319,
+      "text": "hel charts you can see templates here"
+    },
+    {
+      "start": 511.08,
+      "duration": 3.639,
+      "text": "these are templates for persistent"
+    },
+    {
+      "start": 512.719,
+      "duration": 4.081,
+      "text": "volumes persist volume claims Secret"
+    },
+    {
+      "start": 514.719,
+      "duration": 3.601,
+      "text": "Service stateful set so using this chart"
+    },
+    {
+      "start": 516.8,
+      "duration": 3.599,
+      "text": "we can deploy all of these kubernetes"
+    },
+    {
+      "start": 518.32,
+      "duration": 3.36,
+      "text": "object and you can find the values here"
+    },
+    {
+      "start": 520.399,
+      "duration": 3.801,
+      "text": "and we are going to change this when we"
+    },
+    {
+      "start": 521.68,
+      "duration": 4.76,
+      "text": "deploy it similarly for postgress and"
+    },
+    {
+      "start": 524.2,
+      "duration": 4.12,
+      "text": "similarly for Abit mcbe so once the"
+    },
+    {
+      "start": 526.44,
+      "duration": 3.8,
+      "text": "cluster is ready we are going to create"
+    },
+    {
+      "start": 528.32,
+      "duration": 4.4,
+      "text": "load groups and then start deploying"
+    },
+    {
+      "start": 530.24,
+      "duration": 4.039,
+      "text": "these one by one in our cluster and then"
+    },
+    {
+      "start": 532.72,
+      "duration": 3.92,
+      "text": "we will have our app ready so this is"
+    },
+    {
+      "start": 534.279,
+      "duration": 4.401,
+      "text": "going to be a very fun project if you"
+    },
+    {
+      "start": 536.64,
+      "duration": 3.84,
+      "text": "want this is going to be a very fun"
+    },
+    {
+      "start": 538.68,
+      "duration": 3.96,
+      "text": "project if you you're excited please"
+    },
+    {
+      "start": 540.48,
+      "duration": 4.16,
+      "text": "like this video right now and comment"
+    },
+    {
+      "start": 542.64,
+      "duration": 4.56,
+      "text": "microservices in the comment section"
+    },
+    {
+      "start": 544.64,
+      "duration": 4.759,
+      "text": "let's go and check if our cluster is"
+    },
+    {
+      "start": 547.2,
+      "duration": 3.72,
+      "text": "ready so it's still in creating State"
+    },
+    {
+      "start": 549.399,
+      "duration": 3.281,
+      "text": "and I have to wait for it to come back"
+    },
+    {
+      "start": 550.92,
+      "duration": 4.76,
+      "text": "in active state so let's pause the video"
+    },
+    {
+      "start": 552.68,
+      "duration": 4.68,
+      "text": "and come back when this is active all"
+    },
+    {
+      "start": 555.68,
+      "duration": 4.159,
+      "text": "right now the cluster is in active State"
+    },
+    {
+      "start": 557.36,
+      "duration": 3.96,
+      "text": "let's go to compute and start let's go"
+    },
+    {
+      "start": 559.839,
+      "duration": 3.161,
+      "text": "to compute section and create a node"
+    },
+    {
+      "start": 561.32,
+      "duration": 3.48,
+      "text": "group for our cluster so I'm going to"
+    },
+    {
+      "start": 563.0,
+      "duration": 4.56,
+      "text": "click on ADD node group"
+    },
+    {
+      "start": 564.8,
+      "duration": 5.719,
+      "text": "button for name I'm going to say node"
+    },
+    {
+      "start": 567.56,
+      "duration": 4.6,
+      "text": "group I am r going to be my Amazon exps"
+    },
+    {
+      "start": 570.519,
+      "duration": 4.081,
+      "text": "node rule again if you don't know what"
+    },
+    {
+      "start": 572.16,
+      "duration": 5.6,
+      "text": "policies are there this is the policies"
+    },
+    {
+      "start": 574.6,
+      "duration": 5.6,
+      "text": "attached to this particular rule next we"
+    },
+    {
+      "start": 577.76,
+      "duration": 4.48,
+      "text": "have next we going to select compute and"
+    },
+    {
+      "start": 580.2,
+      "duration": 4.68,
+      "text": "scaling configuration for AMI I'm"
+    },
+    {
+      "start": 582.24,
+      "duration": 5.24,
+      "text": "choosing Amazon Linux on demand T3"
+    },
+    {
+      "start": 584.88,
+      "duration": 4.92,
+      "text": "medium but for scaling configuration I'm"
+    },
+    {
+      "start": 587.48,
+      "duration": 5.08,
+      "text": "just I'm just choosing one node here so"
+    },
+    {
+      "start": 589.8,
+      "duration": 5.0,
+      "text": "one node is enough for your"
+    },
+    {
+      "start": 592.56,
+      "duration": 4.76,
+      "text": "application so let's choose one and then"
+    },
+    {
+      "start": 594.8,
+      "duration": 4.08,
+      "text": "click on next for subnets I'm choosing"
+    },
+    {
+      "start": 597.32,
+      "duration": 4.4,
+      "text": "let I'm choosing all the subnets here"
+    },
+    {
+      "start": 598.88,
+      "duration": 5.079,
+      "text": "click on next review everything and then"
+    },
+    {
+      "start": 601.72,
+      "duration": 4.32,
+      "text": "click on create this will start creating"
+    },
+    {
+      "start": 603.959,
+      "duration": 4.521,
+      "text": "our node group and we will soon have one"
+    },
+    {
+      "start": 606.04,
+      "duration": 4.479,
+      "text": "node running so now it is the node is"
+    },
+    {
+      "start": 608.48,
+      "duration": 4.76,
+      "text": "going to be created let's go ahead and"
+    },
+    {
+      "start": 610.519,
+      "duration": 5.241,
+      "text": "connect our cluster with our CLI so I"
+    },
+    {
+      "start": 613.24,
+      "duration": 9.2,
+      "text": "want to open my terminal here and then"
+    },
+    {
+      "start": 615.76,
+      "duration": 9.0,
+      "text": "the command AWS eks update I Cube config"
+    },
+    {
+      "start": 622.44,
+      "duration": 4.639,
+      "text": "D- name and the name is going to be"
+    },
+    {
+      "start": 624.76,
+      "duration": 4.639,
+      "text": "micro services so whatever name you have"
+    },
+    {
+      "start": 627.079,
+      "duration": 3.88,
+      "text": "for the cluster is what you put here so"
+    },
+    {
+      "start": 629.399,
+      "duration": 4.12,
+      "text": "micro"
+    },
+    {
+      "start": 630.959,
+      "duration": 5.481,
+      "text": "services-- region and we using a region"
+    },
+    {
+      "start": 633.519,
+      "duration": 5.56,
+      "text": "which is North Virginia also known as us"
+    },
+    {
+      "start": 636.44,
+      "duration": 6.079,
+      "text": "East one so I'll be putting us east1 as"
+    },
+    {
+      "start": 639.079,
+      "duration": 6.56,
+      "text": "a region so region is going to be us-"
+    },
+    {
+      "start": 642.519,
+      "duration": 5.521,
+      "text": "east-1 okay once I do this it should"
+    },
+    {
+      "start": 645.639,
+      "duration": 4.76,
+      "text": "give me a message saying updated added"
+    },
+    {
+      "start": 648.04,
+      "duration": 5.039,
+      "text": "new context which means now our cluster"
+    },
+    {
+      "start": 650.399,
+      "duration": 5.481,
+      "text": "is create connected with our CLI so if I"
+    },
+    {
+      "start": 653.079,
+      "duration": 6.241,
+      "text": "do Cube CTL get parts you'll see there"
+    },
+    {
+      "start": 655.88,
+      "duration": 5.519,
+      "text": "are no parts because this is a fresh new"
+    },
+    {
+      "start": 659.32,
+      "duration": 5.079,
+      "text": "uh cluster so we don't have any parts"
+    },
+    {
+      "start": 661.399,
+      "duration": 6.361,
+      "text": "right now also if I show"
+    },
+    {
+      "start": 664.399,
+      "duration": 7.24,
+      "text": "you name spaces we only get the default"
+    },
+    {
+      "start": 667.76,
+      "duration": 5.8,
+      "text": "name spaces that we have okay all right"
+    },
+    {
+      "start": 671.639,
+      "duration": 4.32,
+      "text": "let's go and try to deploy our"
+    },
+    {
+      "start": 673.56,
+      "duration": 4.0,
+      "text": "application now and once the node is"
+    },
+    {
+      "start": 675.959,
+      "duration": 3.401,
+      "text": "ready we will also be able to see that"
+    },
+    {
+      "start": 677.56,
+      "duration": 4.6,
+      "text": "so right now the node is not"
+    },
+    {
+      "start": 679.36,
+      "duration": 4.159,
+      "text": "ready so I'm going to go to my folder"
+    },
+    {
+      "start": 682.16,
+      "duration": 4.16,
+      "text": "which has the code in it so it's"
+    },
+    {
+      "start": 683.519,
+      "duration": 6.44,
+      "text": "microservices python app if you you can"
+    },
+    {
+      "start": 686.32,
+      "duration": 7.44,
+      "text": "do it from here or either from your"
+    },
+    {
+      "start": 689.959,
+      "duration": 5.961,
+      "text": "vs code do uh it will work the same so"
+    },
+    {
+      "start": 693.76,
+      "duration": 3.759,
+      "text": "right now we are first going to deploy"
+    },
+    {
+      "start": 695.92,
+      "duration": 3.8,
+      "text": "so first we will start with deploying"
+    },
+    {
+      "start": 697.519,
+      "duration": 4.641,
+      "text": "the helm charts first we'll go ahead and"
+    },
+    {
+      "start": 699.72,
+      "duration": 4.64,
+      "text": "deploy the mongod DB in mongod DB as you"
+    },
+    {
+      "start": 702.16,
+      "duration": 4.52,
+      "text": "can see these are the values which we"
+    },
+    {
+      "start": 704.36,
+      "duration": 4.479,
+      "text": "used which we using in this templates so"
+    },
+    {
+      "start": 706.68,
+      "duration": 4.399,
+      "text": "I'm using the username as Nasi the"
+    },
+    {
+      "start": 708.839,
+      "duration": 4.44,
+      "text": "password as NY1 1234 which you can"
+    },
+    {
+      "start": 711.079,
+      "duration": 3.521,
+      "text": "choose to change if you want to because"
+    },
+    {
+      "start": 713.279,
+      "duration": 3.961,
+      "text": "we are going to be connecting to our"
+    },
+    {
+      "start": 714.6,
+      "duration": 6.359,
+      "text": "mongodb database using that username and"
+    },
+    {
+      "start": 717.24,
+      "duration": 3.719,
+      "text": "password so if I show you"
+    },
+    {
+      "start": 721.12,
+      "duration": 3.959,
+      "text": "pongos so this is the string and we are"
+    },
+    {
+      "start": 723.8,
+      "duration": 3.12,
+      "text": "going to be using that username and"
+    },
+    {
+      "start": 725.079,
+      "duration": 3.44,
+      "text": "password here so you can choose to use"
+    },
+    {
+      "start": 726.92,
+      "duration": 3.52,
+      "text": "the same if you want to or you can"
+    },
+    {
+      "start": 728.519,
+      "duration": 5.041,
+      "text": "choose to put your own username and"
+    },
+    {
+      "start": 730.44,
+      "duration": 5.839,
+      "text": "password and then try to connect to your"
+    },
+    {
+      "start": 733.56,
+      "duration": 4.36,
+      "text": "uh W DB database later on but if you see"
+    },
+    {
+      "start": 736.279,
+      "duration": 3.68,
+      "text": "here in this read me I have all the"
+    },
+    {
+      "start": 737.92,
+      "duration": 4.32,
+      "text": "steps and things noted down so you need"
+    },
+    {
+      "start": 739.959,
+      "duration": 4.481,
+      "text": "to run this command to connect your"
+    },
+    {
+      "start": 742.24,
+      "duration": 4.48,
+      "text": "cluster with the CLI once you do that we"
+    },
+    {
+      "start": 744.44,
+      "duration": 4.199,
+      "text": "will start with deploying our hel chart"
+    },
+    {
+      "start": 746.72,
+      "duration": 3.799,
+      "text": "so we are going to start with mongodb"
+    },
+    {
+      "start": 748.639,
+      "duration": 4.56,
+      "text": "and you need to go into the folder which"
+    },
+    {
+      "start": 750.519,
+      "duration": 5.801,
+      "text": "has the charts in it so I'm going to go"
+    },
+    {
+      "start": 753.199,
+      "duration": 6.08,
+      "text": "inside my folder which is CD Helm charts"
+    },
+    {
+      "start": 756.32,
+      "duration": 5.519,
+      "text": "so let's go here see the helm charts in"
+    },
+    {
+      "start": 759.279,
+      "duration": 5.321,
+      "text": "this I have three Helm charts mongodb"
+    },
+    {
+      "start": 761.839,
+      "duration": 4.36,
+      "text": "post and rabit mcbe if I want to install"
+    },
+    {
+      "start": 764.6,
+      "duration": 4.32,
+      "text": "mongodb through Helm I'm going to go"
+    },
+    {
+      "start": 766.199,
+      "duration": 4.76,
+      "text": "inside this and if I do LS you should be"
+    },
+    {
+      "start": 768.92,
+      "duration": 4.039,
+      "text": "in the correct directory which has chart"
+    },
+    {
+      "start": 770.959,
+      "duration": 6.201,
+      "text": "and all these things so I'll be running"
+    },
+    {
+      "start": 772.959,
+      "duration": 6.761,
+      "text": "Helm install name of the chart and"
+    },
+    {
+      "start": 777.16,
+      "duration": 4.119,
+      "text": "then dot make sure sure you can run this"
+    },
+    {
+      "start": 779.72,
+      "duration": 3.84,
+      "text": "command only when you have Helm"
+    },
+    {
+      "start": 781.279,
+      "duration": 4.92,
+      "text": "installed so once I do this it will give"
+    },
+    {
+      "start": 783.56,
+      "duration": 5.44,
+      "text": "me an output saying deployed and then we"
+    },
+    {
+      "start": 786.199,
+      "duration": 5.2,
+      "text": "should have a p running for not"
+    },
+    {
+      "start": 789.0,
+      "duration": 4.639,
+      "text": "just pod but everything that we have"
+    },
+    {
+      "start": 791.399,
+      "duration": 5.041,
+      "text": "here in the template so pod PV PVC"
+    },
+    {
+      "start": 793.639,
+      "duration": 4.841,
+      "text": "Secret Service stateful set everything"
+    },
+    {
+      "start": 796.44,
+      "duration": 3.519,
+      "text": "created so let's wait for this to show"
+    },
+    {
+      "start": 798.48,
+      "duration": 4.56,
+      "text": "us the deployed State and then we can"
+    },
+    {
+      "start": 799.959,
+      "duration": 5.921,
+      "text": "check if the pods are ready for or"
+    },
+    {
+      "start": 803.04,
+      "duration": 5.919,
+      "text": "not you might also need to wait for the"
+    },
+    {
+      "start": 805.88,
+      "duration": 5.959,
+      "text": "notes to be ready CI and Cube CTL get"
+    },
+    {
+      "start": 808.959,
+      "duration": 5.32,
+      "text": "pods let's see if our M pod is ready or"
+    },
+    {
+      "start": 811.839,
+      "duration": 5.0,
+      "text": "not so it's in container creating State"
+    },
+    {
+      "start": 814.279,
+      "duration": 5.881,
+      "text": "and if I do hyphen W to go in watch mode"
+    },
+    {
+      "start": 816.839,
+      "duration": 5.521,
+      "text": "we should be able to see it running now"
+    },
+    {
+      "start": 820.16,
+      "duration": 4.08,
+      "text": "okay so mongodb is running along with"
+    },
+    {
+      "start": 822.36,
+      "duration": 6.8,
+      "text": "the Pod let's see what other things do"
+    },
+    {
+      "start": 824.24,
+      "duration": 6.24,
+      "text": "we have so I'll say Cube CTL get all and"
+    },
+    {
+      "start": 829.16,
+      "duration": 3.479,
+      "text": "then we should be seeing everything that"
+    },
+    {
+      "start": 830.48,
+      "duration": 3.799,
+      "text": "is defined in the 10 chart template this"
+    },
+    {
+      "start": 832.639,
+      "duration": 3.841,
+      "text": "is how easy it is to deploy things"
+    },
+    {
+      "start": 834.279,
+      "duration": 4.641,
+      "text": "through H chart and H chart is a package"
+    },
+    {
+      "start": 836.48,
+      "duration": 4.479,
+      "text": "manager for kubernetes very very very"
+    },
+    {
+      "start": 838.92,
+      "duration": 3.96,
+      "text": "important to learn so you can see hel"
+    },
+    {
+      "start": 840.959,
+      "duration": 4.12,
+      "text": "chart has created pod it also created"
+    },
+    {
+      "start": 842.88,
+      "duration": 5.399,
+      "text": "service and a stateful set along with"
+    },
+    {
+      "start": 845.079,
+      "duration": 7.241,
+      "text": "this we also have PV or persist to"
+    },
+    {
+      "start": 848.279,
+      "duration": 7.161,
+      "text": "volume so I say PV and you can see a PV"
+    },
+    {
+      "start": 852.32,
+      "duration": 6.439,
+      "text": "has been created for mongodb awesome"
+    },
+    {
+      "start": 855.44,
+      "duration": 6.199,
+      "text": "let's deploy rabbit mq and postgress"
+    },
+    {
+      "start": 858.759,
+      "duration": 5.241,
+      "text": "similar to this so in longer DB we don't"
+    },
+    {
+      "start": 861.639,
+      "duration": 4.32,
+      "text": "have to make any change apart from uh"
+    },
+    {
+      "start": 864.0,
+      "duration": 4.04,
+      "text": "the secrets or the values here so you"
+    },
+    {
+      "start": 865.959,
+      "duration": 5.601,
+      "text": "can change this because this is what we"
+    },
+    {
+      "start": 868.04,
+      "duration": 4.84,
+      "text": "use here in our username password uh"
+    },
+    {
+      "start": 871.56,
+      "duration": 2.519,
+      "text": "stuff so if you want to change it you"
+    },
+    {
+      "start": 872.88,
+      "duration": 3.48,
+      "text": "can change it or else you can use the"
+    },
+    {
+      "start": 874.079,
+      "duration": 3.921,
+      "text": "same to avoid any issues and later on"
+    },
+    {
+      "start": 876.36,
+      "duration": 4.479,
+      "text": "when you practice it again you might"
+    },
+    {
+      "start": 878.0,
+      "duration": 6.44,
+      "text": "then try changing it so let's go and"
+    },
+    {
+      "start": 880.839,
+      "duration": 6.321,
+      "text": "deploy postest similar way so I'm going"
+    },
+    {
+      "start": 884.44,
+      "duration": 6.36,
+      "text": "to go inside the postgress chart now so"
+    },
+    {
+      "start": 887.16,
+      "duration": 7.2,
+      "text": "I'll say CD postgress in this you'll see"
+    },
+    {
+      "start": 890.8,
+      "duration": 5.839,
+      "text": "chart init SQL templates and values so"
+    },
+    {
+      "start": 894.36,
+      "duration": 5.24,
+      "text": "let's see here in the PS"
+    },
+    {
+      "start": 896.639,
+      "duration": 6.241,
+      "text": "code so values hold everything again we"
+    },
+    {
+      "start": 899.6,
+      "duration": 5.159,
+      "text": "have a username for the database also"
+    },
+    {
+      "start": 902.88,
+      "duration": 3.44,
+      "text": "the password and what database do I want"
+    },
+    {
+      "start": 904.759,
+      "duration": 3.88,
+      "text": "to use so you can change the username"
+    },
+    {
+      "start": 906.32,
+      "duration": 3.84,
+      "text": "and password if you want to uh but let"
+    },
+    {
+      "start": 908.639,
+      "duration": 3.961,
+      "text": "let the database be same because we"
+    },
+    {
+      "start": 910.16,
+      "duration": 5.039,
+      "text": "using that in the code along with this"
+    },
+    {
+      "start": 912.6,
+      "duration": 6.56,
+      "text": "you have ali. SQL which has some query"
+    },
+    {
+      "start": 915.199,
+      "duration": 6.64,
+      "text": "in it and I'm using my email ID and my"
+    },
+    {
+      "start": 919.16,
+      "duration": 5.56,
+      "text": "password so if you want the email to be"
+    },
+    {
+      "start": 921.839,
+      "duration": 5.521,
+      "text": "received on your own on your own email"
+    },
+    {
+      "start": 924.72,
+      "duration": 4.84,
+      "text": "ID put your own email ID here and also"
+    },
+    {
+      "start": 927.36,
+      "duration": 5.64,
+      "text": "we are using that in the notification"
+    },
+    {
+      "start": 929.56,
+      "duration": 5.8,
+      "text": "service so if I show you we are using uh"
+    },
+    {
+      "start": 933.0,
+      "duration": 4.04,
+      "text": "this is the email address that I'm using"
+    },
+    {
+      "start": 935.36,
+      "duration": 3.839,
+      "text": "and I'm going to get the mail on here so"
+    },
+    {
+      "start": 937.04,
+      "duration": 6.64,
+      "text": "I already have it in my local machine"
+    },
+    {
+      "start": 939.199,
+      "duration": 6.281,
+      "text": "you can see there is a Batman uh Batman"
+    },
+    {
+      "start": 943.68,
+      "duration": 3.92,
+      "text": "account and I'm going to get the email"
+    },
+    {
+      "start": 945.48,
+      "duration": 4.08,
+      "text": "here in this particular Gmail if you"
+    },
+    {
+      "start": 947.6,
+      "duration": 3.84,
+      "text": "don't know how to get this password uh"
+    },
+    {
+      "start": 949.56,
+      "duration": 4.399,
+      "text": "you have to check the previous Netflix"
+    },
+    {
+      "start": 951.44,
+      "duration": 5.28,
+      "text": "video where I shown you along with this"
+    },
+    {
+      "start": 953.959,
+      "duration": 4.761,
+      "text": "values. we also have in. SQL which has"
+    },
+    {
+      "start": 956.72,
+      "duration": 4.359,
+      "text": "some queries to create a table and and"
+    },
+    {
+      "start": 958.72,
+      "duration": 4.28,
+      "text": "to add this particular data inside this"
+    },
+    {
+      "start": 961.079,
+      "duration": 5.641,
+      "text": "table so I'm putting my credential which"
+    },
+    {
+      "start": 963.0,
+      "duration": 5.72,
+      "text": "are the U email ID and the password if"
+    },
+    {
+      "start": 966.72,
+      "duration": 3.4,
+      "text": "you want to put if you want to use your"
+    },
+    {
+      "start": 968.72,
+      "duration": 3.44,
+      "text": "own you can use your own put your own"
+    },
+    {
+      "start": 970.12,
+      "duration": 4.159,
+      "text": "email ID here and we are also using this"
+    },
+    {
+      "start": 972.16,
+      "duration": 3.4,
+      "text": "email ID for notification service so if"
+    },
+    {
+      "start": 974.279,
+      "duration": 4.281,
+      "text": "I show you this is a notification"
+    },
+    {
+      "start": 975.56,
+      "duration": 5.44,
+      "text": "service it has a secret. AML and in this"
+    },
+    {
+      "start": 978.56,
+      "duration": 4.12,
+      "text": "I'm passing my gmail address and"
+    },
+    {
+      "start": 981.0,
+      "duration": 2.839,
+      "text": "password so if you don't know how to get"
+    },
+    {
+      "start": 982.68,
+      "duration": 2.959,
+      "text": "this password you need to check the"
+    },
+    {
+      "start": 983.839,
+      "duration": 3.521,
+      "text": "previous video where I've shown you how"
+    },
+    {
+      "start": 985.639,
+      "duration": 4.281,
+      "text": "to create app passwords after"
+    },
+    {
+      "start": 987.36,
+      "duration": 4.719,
+      "text": "authenticating the after doing this 2"
+    },
+    {
+      "start": 989.92,
+      "duration": 4.12,
+      "text": "FAA or two fat authentication so I"
+    },
+    {
+      "start": 992.079,
+      "duration": 3.961,
+      "text": "explained you that in the Netflix in the"
+    },
+    {
+      "start": 994.04,
+      "duration": 3.96,
+      "text": "previous Netflix Dev secops video so you"
+    },
+    {
+      "start": 996.04,
+      "duration": 3.44,
+      "text": "can get to know how to put this you need"
+    },
+    {
+      "start": 998.0,
+      "duration": 4.88,
+      "text": "this because we are going to get"
+    },
+    {
+      "start": 999.48,
+      "duration": 4.719,
+      "text": "notification on our email ID but for now"
+    },
+    {
+      "start": 1002.88,
+      "duration": 3.68,
+      "text": "let's go ahead with deploying our"
+    },
+    {
+      "start": 1004.199,
+      "duration": 4.08,
+      "text": "postest without making things complex so"
+    },
+    {
+      "start": 1006.56,
+      "duration": 3.959,
+      "text": "in the templates we have two things"
+    },
+    {
+      "start": 1008.279,
+      "duration": 4.0,
+      "text": "deployment and service and then once it"
+    },
+    {
+      "start": 1010.519,
+      "duration": 4.041,
+      "text": "is created we are going to connect and"
+    },
+    {
+      "start": 1012.279,
+      "duration": 4.48,
+      "text": "also run the queries inside the database"
+    },
+    {
+      "start": 1014.56,
+      "duration": 4.24,
+      "text": "so let's go here I'll say LS you can see"
+    },
+    {
+      "start": 1016.759,
+      "duration": 4.361,
+      "text": "the charts in it and template stes and"
+    },
+    {
+      "start": 1018.8,
+      "duration": 4.279,
+      "text": "values so I'll say"
+    },
+    {
+      "start": 1021.12,
+      "duration": 5.4,
+      "text": "h"
+    },
+    {
+      "start": 1023.079,
+      "duration": 6.321,
+      "text": "insall name of the chart I'll say B and"
+    },
+    {
+      "start": 1026.52,
+      "duration": 4.48,
+      "text": "then dot dot means I want to install the"
+    },
+    {
+      "start": 1029.4,
+      "duration": 3.76,
+      "text": "chart that is present in this particular"
+    },
+    {
+      "start": 1031.0,
+      "duration": 4.64,
+      "text": "folder so we have a folder here and it"
+    },
+    {
+      "start": 1033.16,
+      "duration": 3.96,
+      "text": "has all these things so I'm pressing dot"
+    },
+    {
+      "start": 1035.64,
+      "duration": 3.48,
+      "text": "if you are not in the correct folder you"
+    },
+    {
+      "start": 1037.12,
+      "duration": 4.799,
+      "text": "need to put the exact value instead of"
+    },
+    {
+      "start": 1039.12,
+      "duration": 6.719,
+      "text": "the dot so I'll press enter now and this"
+    },
+    {
+      "start": 1041.919,
+      "duration": 5.201,
+      "text": "will go ahead and start uh creating the"
+    },
+    {
+      "start": 1045.839,
+      "duration": 3.361,
+      "text": "things in the templates of this"
+    },
+    {
+      "start": 1047.12,
+      "duration": 5.6,
+      "text": "particular chart so you can see it says"
+    },
+    {
+      "start": 1049.2,
+      "duration": 6.839,
+      "text": "deployed and if I do Cube"
+    },
+    {
+      "start": 1052.72,
+      "duration": 5.319,
+      "text": "CTL get all you will be able to see"
+    },
+    {
+      "start": 1056.039,
+      "duration": 4.88,
+      "text": "postgress along with mongodb things that"
+    },
+    {
+      "start": 1058.039,
+      "duration": 5.201,
+      "text": "were created earlier so let's see so you"
+    },
+    {
+      "start": 1060.919,
+      "duration": 4.481,
+      "text": "can see post is also running it has a"
+    },
+    {
+      "start": 1063.24,
+      "duration": 4.92,
+      "text": "service created uh it also has a"
+    },
+    {
+      "start": 1065.4,
+      "duration": 4.56,
+      "text": "deployment created and a replica set so"
+    },
+    {
+      "start": 1068.16,
+      "duration": 3.519,
+      "text": "now that this is created let's go ahead"
+    },
+    {
+      "start": 1069.96,
+      "duration": 4.28,
+      "text": "and connect to it and then we are going"
+    },
+    {
+      "start": 1071.679,
+      "duration": 4.161,
+      "text": "to run the queries in the in it. SQL so"
+    },
+    {
+      "start": 1074.24,
+      "duration": 3.48,
+      "text": "how do you connect to it we are going to"
+    },
+    {
+      "start": 1075.84,
+      "duration": 3.319,
+      "text": "connect with a scint with the we are"
+    },
+    {
+      "start": 1077.72,
+      "duration": 3.68,
+      "text": "going to be connecting to this to a"
+    },
+    {
+      "start": 1079.159,
+      "duration": 3.801,
+      "text": "string and you can find the string here"
+    },
+    {
+      "start": 1081.4,
+      "duration": 3.96,
+      "text": "in the read me section so this is a"
+    },
+    {
+      "start": 1082.96,
+      "duration": 4.16,
+      "text": "string to connect to mongod DB and then"
+    },
+    {
+      "start": 1085.36,
+      "duration": 3.559,
+      "text": "we have a string to connect to our"
+    },
+    {
+      "start": 1087.12,
+      "duration": 2.72,
+      "text": "postgress TV do so if you want to"
+    },
+    {
+      "start": 1088.919,
+      "duration": 4.481,
+      "text": "connect"
+    },
+    {
+      "start": 1089.84,
+      "duration": 6.079,
+      "text": "to um if you want to connect to mongodb"
+    },
+    {
+      "start": 1093.4,
+      "duration": 4.48,
+      "text": "or postgress TV you need to have"
+    },
+    {
+      "start": 1095.919,
+      "duration": 4.321,
+      "text": "and post installed in your machine so"
+    },
+    {
+      "start": 1097.88,
+      "duration": 4.64,
+      "text": "let's first go ahead and connect to our"
+    },
+    {
+      "start": 1100.24,
+      "duration": 5.16,
+      "text": "and then we will go and try to"
+    },
+    {
+      "start": 1102.52,
+      "duration": 5.48,
+      "text": "connect to our uh post as well so I'm"
+    },
+    {
+      "start": 1105.4,
+      "duration": 4.32,
+      "text": "going to copy this and paste it here if"
+    },
+    {
+      "start": 1108.0,
+      "duration": 4.08,
+      "text": "you see here in this we need to change"
+    },
+    {
+      "start": 1109.72,
+      "duration": 4.8,
+      "text": "few things first is to put our username"
+    },
+    {
+      "start": 1112.08,
+      "duration": 7.12,
+      "text": "and I'm have the username in the values"
+    },
+    {
+      "start": 1114.52,
+      "duration": 6.6,
+      "text": "do yaml so I go here uh in the Mobb"
+    },
+    {
+      "start": 1119.2,
+      "duration": 6.4,
+      "text": "value start here with my username is"
+    },
+    {
+      "start": 1121.12,
+      "duration": 7.36,
+      "text": "Nasi so I say Ny and the"
+    },
+    {
+      "start": 1125.6,
+      "duration": 7.72,
+      "text": "password the password"
+    },
+    {
+      "start": 1128.48,
+      "duration": 7.8,
+      "text": "is the C1 2 3 4 so I say n C1 2 34 for"
+    },
+    {
+      "start": 1133.32,
+      "duration": 5.239,
+      "text": "node IP I need to get the IP address of"
+    },
+    {
+      "start": 1136.28,
+      "duration": 4.96,
+      "text": "my node so how can I get this I can go"
+    },
+    {
+      "start": 1138.559,
+      "duration": 5.081,
+      "text": "here in the node group in the node group"
+    },
+    {
+      "start": 1141.24,
+      "duration": 4.48,
+      "text": "I'm going to"
+    },
+    {
+      "start": 1143.64,
+      "duration": 4.2,
+      "text": "refresh and you can see the status is"
+    },
+    {
+      "start": 1145.72,
+      "duration": 4.24,
+      "text": "active I also have a node created so I'm"
+    },
+    {
+      "start": 1147.84,
+      "duration": 5.4,
+      "text": "going to click on this and then click on"
+    },
+    {
+      "start": 1149.96,
+      "duration": 6.24,
+      "text": "the instance ID here in the instance E2"
+    },
+    {
+      "start": 1153.24,
+      "duration": 5.16,
+      "text": "dashboard I going to get the IP address"
+    },
+    {
+      "start": 1156.2,
+      "duration": 5.32,
+      "text": "of my node which is what I will be using"
+    },
+    {
+      "start": 1158.4,
+      "duration": 5.04,
+      "text": "because this is a node Port service type"
+    },
+    {
+      "start": 1161.52,
+      "duration": 3.8,
+      "text": "if you can see this is a node Port"
+    },
+    {
+      "start": 1163.44,
+      "duration": 4.32,
+      "text": "service type along with this it's also"
+    },
+    {
+      "start": 1165.32,
+      "duration": 5.479,
+      "text": "running on some particular node so this"
+    },
+    {
+      "start": 1167.76,
+      "duration": 5.96,
+      "text": "postgress has been mapped on Port 303"
+    },
+    {
+      "start": 1170.799,
+      "duration": 5.521,
+      "text": "whereas mongod TV is mapped on Port 30,5"
+    },
+    {
+      "start": 1173.72,
+      "duration": 6.079,
+      "text": "which is why we using 30,5 here so I'll"
+    },
+    {
+      "start": 1176.32,
+      "duration": 6.0,
+      "text": "put my IP address and for us to connect"
+    },
+    {
+      "start": 1179.799,
+      "duration": 5.441,
+      "text": "to this we also need to have 30,5 open"
+    },
+    {
+      "start": 1182.32,
+      "duration": 5.96,
+      "text": "in our security group so if I go here on"
+    },
+    {
+      "start": 1185.24,
+      "duration": 6.04,
+      "text": "the dashboard you can see Security Group"
+    },
+    {
+      "start": 1188.28,
+      "duration": 5.48,
+      "text": "does not have 30,5 so I'm going to open"
+    },
+    {
+      "start": 1191.28,
+      "duration": 3.96,
+      "text": "that and there are list of different"
+    },
+    {
+      "start": 1193.76,
+      "duration": 6.279,
+      "text": "Security Group rules that you need to"
+    },
+    {
+      "start": 1195.24,
+      "duration": 6.919,
+      "text": "add uh let me show you"
+    },
+    {
+      "start": 1200.039,
+      "duration": 4.921,
+      "text": "so I have a screenshot created yeah this"
+    },
+    {
+      "start": 1202.159,
+      "duration": 5.601,
+      "text": "is the screenshot which is"
+    },
+    {
+      "start": 1204.96,
+      "duration": 4.719,
+      "text": "to which is to show you what particular"
+    },
+    {
+      "start": 1207.76,
+      "duration": 5.12,
+      "text": "nod you ports you will require so we"
+    },
+    {
+      "start": 1209.679,
+      "duration": 6.281,
+      "text": "require 30,2 3 4 and 5 this is for"
+    },
+    {
+      "start": 1212.88,
+      "duration": 5.32,
+      "text": "Gateway this is for post this is for rmq"
+    },
+    {
+      "start": 1215.96,
+      "duration": 5.28,
+      "text": "and this is for mongodb so let's go"
+    },
+    {
+      "start": 1218.2,
+      "duration": 5.76,
+      "text": "ahead and add all of them right"
+    },
+    {
+      "start": 1221.24,
+      "duration": 5.16,
+      "text": "now so I'll go here click on ENT bound"
+    },
+    {
+      "start": 1223.96,
+      "duration": 6.079,
+      "text": "rules and I'll click on ADD rule custom"
+    },
+    {
+      "start": 1226.4,
+      "duration": 9.32,
+      "text": "TCP 30,000"
+    },
+    {
+      "start": 1230.039,
+      "duration": 8.281,
+      "text": "2 it's anywhere ipv4 and 30,2 is"
+    },
+    {
+      "start": 1235.72,
+      "duration": 4.16,
+      "text": "for Gateway so I'll put this Gateway we"
+    },
+    {
+      "start": 1238.32,
+      "duration": 3.12,
+      "text": "are using Gateway service later on to"
+    },
+    {
+      "start": 1239.88,
+      "duration": 4.56,
+      "text": "validate our application so I'm adding"
+    },
+    {
+      "start": 1241.44,
+      "duration": 3.0,
+      "text": "it right now"
+    },
+    {
+      "start": 1246.08,
+      "duration": 7.04,
+      "text": "303"
+    },
+    {
+      "start": 1248.44,
+      "duration": 6.599,
+      "text": "for rabid M pogress 3,3 for"
+    },
+    {
+      "start": 1253.12,
+      "duration": 7.0,
+      "text": "postgress again this will be from"
+    },
+    {
+      "start": 1255.039,
+      "duration": 5.081,
+      "text": "anywhere ipv4 allow rule 30,00"
+    },
+    {
+      "start": 1261.679,
+      "duration": 7.12,
+      "text": "04 anywhere ipv4 and this is"
+    },
+    {
+      "start": 1265.28,
+      "duration": 5.44,
+      "text": "for rabbit mq we are going to create"
+    },
+    {
+      "start": 1268.799,
+      "duration": 3.521,
+      "text": "Hues after we deploy rabbit mq through"
+    },
+    {
+      "start": 1270.72,
+      "duration": 3.64,
+      "text": "hel chart so we also need to have this"
+    },
+    {
+      "start": 1272.32,
+      "duration": 4.2,
+      "text": "open if any point of time you face"
+    },
+    {
+      "start": 1274.36,
+      "duration": 4.679,
+      "text": "timeout issue this is because you don't"
+    },
+    {
+      "start": 1276.52,
+      "duration": 5.12,
+      "text": "have ports open in your uh Security"
+    },
+    {
+      "start": 1279.039,
+      "duration": 5.161,
+      "text": "Group then we have lastly we have 30,5"
+    },
+    {
+      "start": 1281.64,
+      "duration": 5.56,
+      "text": "which is mong DB if I show you right now"
+    },
+    {
+      "start": 1284.2,
+      "duration": 5.359,
+      "text": "if I try to run this I'm going to get an"
+    },
+    {
+      "start": 1287.2,
+      "duration": 4.04,
+      "text": "error it is to try to connect and after"
+    },
+    {
+      "start": 1289.559,
+      "duration": 2.921,
+      "text": "some time it will show me an error and"
+    },
+    {
+      "start": 1291.24,
+      "duration": 4.16,
+      "text": "it will not be able to connect because"
+    },
+    {
+      "start": 1292.48,
+      "duration": 4.28,
+      "text": "we don't have 30,5 opened yet so let's"
+    },
+    {
+      "start": 1295.4,
+      "duration": 3.96,
+      "text": "go and add that and I'll show you it"
+    },
+    {
+      "start": 1296.76,
+      "duration": 4.88,
+      "text": "will connect in a second after we apply"
+    },
+    {
+      "start": 1299.36,
+      "duration": 5.16,
+      "text": "or we add the security group rule so"
+    },
+    {
+      "start": 1301.64,
+      "duration": 5.6,
+      "text": "I'll go here add"
+    },
+    {
+      "start": 1304.52,
+      "duration": 4.72,
+      "text": "30,5 so"
+    },
+    {
+      "start": 1307.24,
+      "duration": 5.559,
+      "text": "30,5 anywhere"
+    },
+    {
+      "start": 1309.24,
+      "duration": 7.799,
+      "text": "ipv4 War go and if once I save this rule"
+    },
+    {
+      "start": 1312.799,
+      "duration": 7.24,
+      "text": "you can see let's try to connect"
+    },
+    {
+      "start": 1317.039,
+      "duration": 3.0,
+      "text": "again"
+    },
+    {
+      "start": 1321.919,
+      "duration": 4.801,
+      "text": "and you can see I'm inside the MP3"
+    },
+    {
+      "start": 1326.76,
+      "duration": 3.919,
+      "text": "database so we are able to connect to"
+    },
+    {
+      "start": 1328.799,
+      "duration": 3.721,
+      "text": "our Marb database which means we have"
+    },
+    {
+      "start": 1330.679,
+      "duration": 3.841,
+      "text": "our database properly configured and"
+    },
+    {
+      "start": 1332.52,
+      "duration": 4.039,
+      "text": "these credentials are also working so"
+    },
+    {
+      "start": 1334.52,
+      "duration": 3.88,
+      "text": "let's go and exit from here and try to"
+    },
+    {
+      "start": 1336.559,
+      "duration": 3.12,
+      "text": "connect to our post Crest database"
+    },
+    {
+      "start": 1338.4,
+      "duration": 3.84,
+      "text": "because we are going to running the"
+    },
+    {
+      "start": 1339.679,
+      "duration": 4.641,
+      "text": "queries because we a to run the queries"
+    },
+    {
+      "start": 1342.24,
+      "duration": 4.48,
+      "text": "inside the database for now this morv"
+    },
+    {
+      "start": 1344.32,
+      "duration": 5.599,
+      "text": "database has nothing it will be storing"
+    },
+    {
+      "start": 1346.72,
+      "duration": 4.76,
+      "text": "our MP3 and we videos after we converted"
+    },
+    {
+      "start": 1349.919,
+      "duration": 3.561,
+      "text": "so for now we are going to just store"
+    },
+    {
+      "start": 1351.48,
+      "duration": 4.52,
+      "text": "our credentials which are the username"
+    },
+    {
+      "start": 1353.48,
+      "duration": 4.6,
+      "text": "and password inside post database and to"
+    },
+    {
+      "start": 1356.0,
+      "duration": 4.279,
+      "text": "connect to your post database we need to"
+    },
+    {
+      "start": 1358.08,
+      "duration": 5.52,
+      "text": "use a string which is psql string so"
+    },
+    {
+      "start": 1360.279,
+      "duration": 5.081,
+      "text": "let's go back to our read me section and"
+    },
+    {
+      "start": 1363.6,
+      "duration": 4.4,
+      "text": "in here if I search"
+    },
+    {
+      "start": 1365.36,
+      "duration": 5.12,
+      "text": "for psql you can see this is the string"
+    },
+    {
+      "start": 1368.0,
+      "duration": 5.24,
+      "text": "we're using which has postgress username"
+    },
+    {
+      "start": 1370.48,
+      "duration": 4.88,
+      "text": "password load IP running on Port 3003"
+    },
+    {
+      "start": 1373.24,
+      "duration": 4.12,
+      "text": "and then connecting to OD DB so I'm"
+    },
+    {
+      "start": 1375.36,
+      "duration": 4.4,
+      "text": "going to copy this and paste in my"
+    },
+    {
+      "start": 1377.36,
+      "duration": 4.919,
+      "text": "terminal let clear the screen paste it"
+    },
+    {
+      "start": 1379.76,
+      "duration": 5.56,
+      "text": "here I'm going to put my node IP first"
+    },
+    {
+      "start": 1382.279,
+      "duration": 6.041,
+      "text": "so node IP I can get from the node which"
+    },
+    {
+      "start": 1385.32,
+      "duration": 5.839,
+      "text": "is here going to"
+    },
+    {
+      "start": 1388.32,
+      "duration": 5.959,
+      "text": "the load clicking on instance ID and I"
+    },
+    {
+      "start": 1391.159,
+      "duration": 6.161,
+      "text": "get this here on the ec2 instance"
+    },
+    {
+      "start": 1394.279,
+      "duration": 4.601,
+      "text": "dashboard so let's copy this paste it"
+    },
+    {
+      "start": 1397.32,
+      "duration": 3.52,
+      "text": "here in this I'm going to pass my"
+    },
+    {
+      "start": 1398.88,
+      "duration": 3.76,
+      "text": "password and username so the username"
+    },
+    {
+      "start": 1400.84,
+      "duration": 3.88,
+      "text": "and password is already stored in this"
+    },
+    {
+      "start": 1402.64,
+      "duration": 4.84,
+      "text": "values. AML and you can change it if you"
+    },
+    {
+      "start": 1404.72,
+      "duration": 4.439,
+      "text": "want to so the username is uh password"
+    },
+    {
+      "start": 1407.48,
+      "duration": 4.88,
+      "text": "is CN D"
+    },
+    {
+      "start": 1409.159,
+      "duration": 5.361,
+      "text": "2023 it has cndd 2023 because I did this"
+    },
+    {
+      "start": 1412.36,
+      "duration": 5.319,
+      "text": "project in the cloud native day"
+    },
+    {
+      "start": 1414.52,
+      "duration": 4.88,
+      "text": "recently uh the username is Nasi so I'll"
+    },
+    {
+      "start": 1417.679,
+      "duration": 4.081,
+      "text": "pass that"
+    },
+    {
+      "start": 1419.4,
+      "duration": 4.56,
+      "text": "here okay once I do this I should be"
+    },
+    {
+      "start": 1421.76,
+      "duration": 4.48,
+      "text": "able to connect to my postris database"
+    },
+    {
+      "start": 1423.96,
+      "duration": 4.839,
+      "text": "if it is properly set up if the port is"
+    },
+    {
+      "start": 1426.24,
+      "duration": 4.72,
+      "text": "opened in the security group so if I"
+    },
+    {
+      "start": 1428.799,
+      "duration": 4.681,
+      "text": "press enter it should bring me inside R"
+    },
+    {
+      "start": 1430.96,
+      "duration": 4.28,
+      "text": "DB which is where V are right now so if"
+    },
+    {
+      "start": 1433.48,
+      "duration": 4.0,
+      "text": "I show you right now it's completely"
+    },
+    {
+      "start": 1435.24,
+      "duration": 5.919,
+      "text": "empty there are no relations there are"
+    },
+    {
+      "start": 1437.48,
+      "duration": 7.079,
+      "text": "nothing so if I copy the things from"
+    },
+    {
+      "start": 1441.159,
+      "duration": 5.921,
+      "text": "here so I'm do contr a copy everything"
+    },
+    {
+      "start": 1444.559,
+      "duration": 4.161,
+      "text": "and then paste it here so once I paste"
+    },
+    {
+      "start": 1447.08,
+      "duration": 3.44,
+      "text": "this it will go ahead and create a table"
+    },
+    {
+      "start": 1448.72,
+      "duration": 5.439,
+      "text": "and also insert the data in it so once"
+    },
+    {
+      "start": 1450.52,
+      "duration": 5.279,
+      "text": "now if I do SL D let's do it small so if"
+    },
+    {
+      "start": 1454.159,
+      "duration": 3.721,
+      "text": "I do SLT you can see a table has been"
+    },
+    {
+      "start": 1455.799,
+      "duration": 6.041,
+      "text": "created and if I show you what is inside"
+    },
+    {
+      "start": 1457.88,
+      "duration": 5.96,
+      "text": "this table I'll say select star from all"
+    },
+    {
+      "start": 1461.84,
+      "duration": 3.76,
+      "text": "user and you will be able to see that"
+    },
+    {
+      "start": 1463.84,
+      "duration": 3.8,
+      "text": "this particular thing has been inserted"
+    },
+    {
+      "start": 1465.6,
+      "duration": 3.6,
+      "text": "because we used the insert query here so"
+    },
+    {
+      "start": 1467.64,
+      "duration": 3.68,
+      "text": "when inside do this you can see an"
+    },
+    {
+      "start": 1469.2,
+      "duration": 5.16,
+      "text": "insert has been made and we have the"
+    },
+    {
+      "start": 1471.32,
+      "duration": 5.239,
+      "text": "data inside this Au user so this is what"
+    },
+    {
+      "start": 1474.36,
+      "duration": 5.84,
+      "text": "you need to do in the post side uh so"
+    },
+    {
+      "start": 1476.559,
+      "duration": 6.561,
+      "text": "let's go and exit from here so and say"
+    },
+    {
+      "start": 1480.2,
+      "duration": 6.56,
+      "text": "exit uh or"
+    },
+    {
+      "start": 1483.12,
+      "duration": 5.919,
+      "text": "slq okay let's clear the screen now MB"
+    },
+    {
+      "start": 1486.76,
+      "duration": 4.72,
+      "text": "is created we also have postgress"
+    },
+    {
+      "start": 1489.039,
+      "duration": 5.36,
+      "text": "created let's go and deploy our rabbit"
+    },
+    {
+      "start": 1491.48,
+      "duration": 5.4,
+      "text": "mq rabbit mq is a q service which lets"
+    },
+    {
+      "start": 1494.399,
+      "duration": 4.961,
+      "text": "you process things so in our project we"
+    },
+    {
+      "start": 1496.88,
+      "duration": 4.6,
+      "text": "using rabbit mq to hold the video which"
+    },
+    {
+      "start": 1499.36,
+      "duration": 4.28,
+      "text": "is going to be converted from the uh"
+    },
+    {
+      "start": 1501.48,
+      "duration": 4.88,
+      "text": "converter service and then put it in M"
+    },
+    {
+      "start": 1503.64,
+      "duration": 6.6,
+      "text": "DB so right now we have moo created post"
+    },
+    {
+      "start": 1506.36,
+      "duration": 7.0,
+      "text": "created let's go and deploy our rapid mq"
+    },
+    {
+      "start": 1510.24,
+      "duration": 5.039,
+      "text": "as well so rapid mq we are also going to"
+    },
+    {
+      "start": 1513.36,
+      "duration": 4.08,
+      "text": "deploy through Helm chart so if I show"
+    },
+    {
+      "start": 1515.279,
+      "duration": 4.441,
+      "text": "you this is the folder which has rapid"
+    },
+    {
+      "start": 1517.44,
+      "duration": 4.119,
+      "text": "mq charts in it so I'll say rapid mq"
+    },
+    {
+      "start": 1519.72,
+      "duration": 4.199,
+      "text": "here in this you can see charts"
+    },
+    {
+      "start": 1521.559,
+      "duration": 5.0,
+      "text": "templates values for templates we are"
+    },
+    {
+      "start": 1523.919,
+      "duration": 5.801,
+      "text": "going to be creating config map PV PVCs"
+    },
+    {
+      "start": 1526.559,
+      "duration": 4.321,
+      "text": "and all this stuff so you don't need to"
+    },
+    {
+      "start": 1529.72,
+      "duration": 3.92,
+      "text": "change anything here we are going to"
+    },
+    {
+      "start": 1530.88,
+      "duration": 5.159,
+      "text": "deploy this and also create the cues on"
+    },
+    {
+      "start": 1533.64,
+      "duration": 4.44,
+      "text": "the UI dashboard of rabbit mq which we"
+    },
+    {
+      "start": 1536.039,
+      "duration": 4.401,
+      "text": "are going to see very soon so let's say"
+    },
+    {
+      "start": 1538.08,
+      "duration": 4.479,
+      "text": "hel"
+    },
+    {
+      "start": 1540.44,
+      "duration": 5.359,
+      "text": "install"
+    },
+    {
+      "start": 1542.559,
+      "duration": 5.961,
+      "text": "rabbit and then dot once I do this it"
+    },
+    {
+      "start": 1545.799,
+      "duration": 4.201,
+      "text": "will start creating all the kubernetes"
+    },
+    {
+      "start": 1548.52,
+      "duration": 3.24,
+      "text": "objects and we should be able to see a"
+    },
+    {
+      "start": 1550.0,
+      "duration": 4.52,
+      "text": "board config map and other things that"
+    },
+    {
+      "start": 1551.76,
+      "duration": 5.0,
+      "text": "are present in this templates so you can"
+    },
+    {
+      "start": 1554.52,
+      "duration": 4.48,
+      "text": "see it is says deployed and if I run Cub"
+    },
+    {
+      "start": 1556.76,
+      "duration": 4.68,
+      "text": "C get all command again I should be"
+    },
+    {
+      "start": 1559.0,
+      "duration": 4.36,
+      "text": "seeing more things apart from what we"
+    },
+    {
+      "start": 1561.44,
+      "duration": 5.599,
+      "text": "have"
+    },
+    {
+      "start": 1563.36,
+      "duration": 7.6,
+      "text": "here so you can see rabbit mkod has been"
+    },
+    {
+      "start": 1567.039,
+      "duration": 6.481,
+      "text": "created a service on Port nodeport 30,4"
+    },
+    {
+      "start": 1570.96,
+      "duration": 6.92,
+      "text": "has been created so let's go and try to"
+    },
+    {
+      "start": 1573.52,
+      "duration": 8.159,
+      "text": "access our rabit mq on Port 30,4 so I'll"
+    },
+    {
+      "start": 1577.88,
+      "duration": 7.32,
+      "text": "go here in the UI in on the browser copy"
+    },
+    {
+      "start": 1581.679,
+      "duration": 6.801,
+      "text": "my load IP address and open it on"
+    },
+    {
+      "start": 1585.2,
+      "duration": 4.76,
+      "text": "30,4 this is where our RIT mq is running"
+    },
+    {
+      "start": 1588.48,
+      "duration": 4.199,
+      "text": "once if it is running properly we should"
+    },
+    {
+      "start": 1589.96,
+      "duration": 5.24,
+      "text": "be able to see this login page and we"
+    },
+    {
+      "start": 1592.679,
+      "duration": 4.921,
+      "text": "should be go go inside this to create"
+    },
+    {
+      "start": 1595.2,
+      "duration": 4.719,
+      "text": "our cues so I'm here in the login page"
+    },
+    {
+      "start": 1597.6,
+      "duration": 5.24,
+      "text": "by default the username and password is"
+    },
+    {
+      "start": 1599.919,
+      "duration": 6.961,
+      "text": "guest so I'll say guest and I also pass"
+    },
+    {
+      "start": 1602.84,
+      "duration": 6.0,
+      "text": "guest here so guest and login once you"
+    },
+    {
+      "start": 1606.88,
+      "duration": 3.6,
+      "text": "logged in you should be able to see a"
+    },
+    {
+      "start": 1608.84,
+      "duration": 2.959,
+      "text": "screen something like this and now in"
+    },
+    {
+      "start": 1610.48,
+      "duration": 3.679,
+      "text": "this screen we are going to be creating"
+    },
+    {
+      "start": 1611.799,
+      "duration": 4.76,
+      "text": "cues right now we don't have any cues so"
+    },
+    {
+      "start": 1614.159,
+      "duration": 5.601,
+      "text": "I'll click on cues here and create two"
+    },
+    {
+      "start": 1616.559,
+      "duration": 5.441,
+      "text": "cues one for mp3 one for video so I"
+    },
+    {
+      "start": 1619.76,
+      "duration": 4.48,
+      "text": "click on add a new queue"
+    },
+    {
+      "start": 1622.0,
+      "duration": 4.279,
+      "text": "option once I click on this I'm going to"
+    },
+    {
+      "start": 1624.24,
+      "duration": 4.4,
+      "text": "create a queue so the virtual host is"
+    },
+    {
+      "start": 1626.279,
+      "duration": 4.441,
+      "text": "slash for default I'm going to click uh"
+    },
+    {
+      "start": 1628.64,
+      "duration": 3.72,
+      "text": "for type I going to click chassic name"
+    },
+    {
+      "start": 1630.72,
+      "duration": 3.72,
+      "text": "is going to be the name of the queue so"
+    },
+    {
+      "start": 1632.36,
+      "duration": 3.6,
+      "text": "the first queue is MP3 and this is all"
+    },
+    {
+      "start": 1634.44,
+      "duration": 3.8,
+      "text": "you need I'm going to click on ADD Q"
+    },
+    {
+      "start": 1635.96,
+      "duration": 3.8,
+      "text": "option similarly I going to create"
+    },
+    {
+      "start": 1638.24,
+      "duration": 4.52,
+      "text": "another queue which is going to be of"
+    },
+    {
+      "start": 1639.76,
+      "duration": 5.399,
+      "text": "video so let's click on ADD queue here"
+    },
+    {
+      "start": 1642.76,
+      "duration": 4.88,
+      "text": "and a queue has been created I'll do the"
+    },
+    {
+      "start": 1645.159,
+      "duration": 5.721,
+      "text": "same and fast of name as video now so"
+    },
+    {
+      "start": 1647.64,
+      "duration": 5.279,
+      "text": "MP3 and video and click on ADD Q the"
+    },
+    {
+      "start": 1650.88,
+      "duration": 3.88,
+      "text": "second queue has also been created so"
+    },
+    {
+      "start": 1652.919,
+      "duration": 5.961,
+      "text": "this is all you need for RIT and Q site"
+    },
+    {
+      "start": 1654.76,
+      "duration": 8.039,
+      "text": "right now so we have our rabbit mq our"
+    },
+    {
+      "start": 1658.88,
+      "duration": 5.84,
+      "text": "BOS our MB created through Helen chart"
+    },
+    {
+      "start": 1662.799,
+      "duration": 4.201,
+      "text": "so I hope now you have an idea of how to"
+    },
+    {
+      "start": 1664.72,
+      "duration": 4.24,
+      "text": "install hel charts and what are hel"
+    },
+    {
+      "start": 1667.0,
+      "duration": 5.2,
+      "text": "charts actually so let's go and deploy"
+    },
+    {
+      "start": 1668.96,
+      "duration": 5.76,
+      "text": "our microservices individually to create"
+    },
+    {
+      "start": 1672.2,
+      "duration": 4.4,
+      "text": "our application and also to validate if"
+    },
+    {
+      "start": 1674.72,
+      "duration": 5.52,
+      "text": "we are able to convert a video into"
+    },
+    {
+      "start": 1676.6,
+      "duration": 8.04,
+      "text": "audio or not so let's go and go inside"
+    },
+    {
+      "start": 1680.24,
+      "duration": 4.4,
+      "text": "every in this Source directory so I'll"
+    },
+    {
+      "start": 1685.36,
+      "duration": 5.36,
+      "text": "go so this is a sour directory or Source"
+    },
+    {
+      "start": 1688.12,
+      "duration": 4.96,
+      "text": "folder let's go inside this folder and"
+    },
+    {
+      "start": 1690.72,
+      "duration": 5.839,
+      "text": "you can see four different microservices"
+    },
+    {
+      "start": 1693.08,
+      "duration": 5.56,
+      "text": "the O converter Gateway and notification"
+    },
+    {
+      "start": 1696.559,
+      "duration": 3.84,
+      "text": "let's go first in the OD service and I"
+    },
+    {
+      "start": 1698.64,
+      "duration": 3.279,
+      "text": "already explained you the code but if I"
+    },
+    {
+      "start": 1700.399,
+      "duration": 3.0,
+      "text": "show you right now here in the art"
+    },
+    {
+      "start": 1701.919,
+      "duration": 4.201,
+      "text": "service we"
+    },
+    {
+      "start": 1703.399,
+      "duration": 4.52,
+      "text": "have in the art service we have manifest"
+    },
+    {
+      "start": 1706.12,
+      "duration": 3.96,
+      "text": "which are the kubernetes Manifest file"
+    },
+    {
+      "start": 1707.919,
+      "duration": 4.36,
+      "text": "responsible for creating config map"
+    },
+    {
+      "start": 1710.08,
+      "duration": 4.479,
+      "text": "deployment secret and service then we"
+    },
+    {
+      "start": 1712.279,
+      "duration": 4.961,
+      "text": "have Docker file which will let you"
+    },
+    {
+      "start": 1714.559,
+      "duration": 5.401,
+      "text": "create a Docker file out of the S server"
+    },
+    {
+      "start": 1717.24,
+      "duration": 4.96,
+      "text": "bu and push it on uh Docker Hub so we"
+    },
+    {
+      "start": 1719.96,
+      "duration": 3.88,
+      "text": "also going to do that I already have the"
+    },
+    {
+      "start": 1722.2,
+      "duration": 4.04,
+      "text": "images created you can see I'm using my"
+    },
+    {
+      "start": 1723.84,
+      "duration": 4.719,
+      "text": "own image which you can also find here"
+    },
+    {
+      "start": 1726.24,
+      "duration": 4.08,
+      "text": "on dockerhub so you can choose to create"
+    },
+    {
+      "start": 1728.559,
+      "duration": 5.281,
+      "text": "create own or you can also choose to use"
+    },
+    {
+      "start": 1730.32,
+      "duration": 4.8,
+      "text": "my uh images if you want to but I'll"
+    },
+    {
+      "start": 1733.84,
+      "duration": 2.64,
+      "text": "show you how to create an image and also"
+    },
+    {
+      "start": 1735.12,
+      "duration": 3.88,
+      "text": "push it on Docker app so it should not"
+    },
+    {
+      "start": 1736.48,
+      "duration": 3.76,
+      "text": "be a problem so if if I show you my"
+    },
+    {
+      "start": 1739.0,
+      "duration": 3.96,
+      "text": "profile"
+    },
+    {
+      "start": 1740.24,
+      "duration": 4.439,
+      "text": "here this is my profile and I also I"
+    },
+    {
+      "start": 1742.96,
+      "duration": 4.719,
+      "text": "have all the images that you want so"
+    },
+    {
+      "start": 1744.679,
+      "duration": 4.72,
+      "text": "it's the Gateway is here Au is here we"
+    },
+    {
+      "start": 1747.679,
+      "duration": 3.84,
+      "text": "also have converter and also a"
+    },
+    {
+      "start": 1749.399,
+      "duration": 3.481,
+      "text": "notification image so now I'm going to"
+    },
+    {
+      "start": 1751.519,
+      "duration": 2.921,
+      "text": "show you how you can create an image and"
+    },
+    {
+      "start": 1752.88,
+      "duration": 3.639,
+      "text": "also push it on Docker up and then use"
+    },
+    {
+      "start": 1754.44,
+      "duration": 3.719,
+      "text": "it in your micros servic application"
+    },
+    {
+      "start": 1756.519,
+      "duration": 5.961,
+      "text": "deployer application and then validate"
+    },
+    {
+      "start": 1758.159,
+      "duration": 7.441,
+      "text": "it so let's go back to vs code and in"
+    },
+    {
+      "start": 1762.48,
+      "duration": 5.4,
+      "text": "this we have this code which is going to"
+    },
+    {
+      "start": 1765.6,
+      "duration": 3.559,
+      "text": "log in uh n IFD"
+    },
+    {
+      "start": 1767.88,
+      "duration": 4.08,
+      "text": "user is correct which is stored in the"
+    },
+    {
+      "start": 1769.159,
+      "duration": 6.041,
+      "text": "post database we are going to get a JWT"
+    },
+    {
+      "start": 1771.96,
+      "duration": 6.24,
+      "text": "token this JWT token or Json web token"
+    },
+    {
+      "start": 1775.2,
+      "duration": 4.959,
+      "text": "is going to be used to upload the video"
+    },
+    {
+      "start": 1778.2,
+      "duration": 4.12,
+      "text": "and also download the video so make sure"
+    },
+    {
+      "start": 1780.159,
+      "duration": 4.561,
+      "text": "you are passing it correctly or you are"
+    },
+    {
+      "start": 1782.32,
+      "duration": 4.88,
+      "text": "using the same uh user which is present"
+    },
+    {
+      "start": 1784.72,
+      "duration": 4.6,
+      "text": "in the post database that is holding our"
+    },
+    {
+      "start": 1787.2,
+      "duration": 5.68,
+      "text": "credential so I'm going to now go ahead"
+    },
+    {
+      "start": 1789.32,
+      "duration": 6.04,
+      "text": "and create Docker image and then push it"
+    },
+    {
+      "start": 1792.88,
+      "duration": 4.44,
+      "text": "on Docker app for OD service and then"
+    },
+    {
+      "start": 1795.36,
+      "duration": 3.559,
+      "text": "we'll do the same for other services as"
+    },
+    {
+      "start": 1797.32,
+      "duration": 4.32,
+      "text": "as"
+    },
+    {
+      "start": 1798.919,
+      "duration": 4.88,
+      "text": "well all right let's start with creating"
+    },
+    {
+      "start": 1801.64,
+      "duration": 3.639,
+      "text": "our Docker image as you can see Docker f"
+    },
+    {
+      "start": 1803.799,
+      "duration": 3.641,
+      "text": "is here and if I show you the content"
+    },
+    {
+      "start": 1805.279,
+      "duration": 4.201,
+      "text": "inside the docker file this is the"
+    },
+    {
+      "start": 1807.44,
+      "duration": 3.56,
+      "text": "docker file which is using a Python 3"
+    },
+    {
+      "start": 1809.48,
+      "duration": 3.559,
+      "text": "image they're using the commands to"
+    },
+    {
+      "start": 1811.0,
+      "duration": 4.159,
+      "text": "update all the packages to install uh"
+    },
+    {
+      "start": 1813.039,
+      "duration": 4.041,
+      "text": "these all these stuff using the Work"
+    },
+    {
+      "start": 1815.159,
+      "duration": 4.24,
+      "text": "Direct as app copying the requirement."
+    },
+    {
+      "start": 1817.08,
+      "duration": 4.68,
+      "text": "txt installing it and exposing the"
+    },
+    {
+      "start": 1819.399,
+      "duration": 3.961,
+      "text": "application on Port 5000 so this is the"
+    },
+    {
+      "start": 1821.76,
+      "duration": 6.759,
+      "text": "image for now I'm going to run the"
+    },
+    {
+      "start": 1823.36,
+      "duration": 8.12,
+      "text": "command Docker build hyphen t Au and"
+    },
+    {
+      "start": 1828.519,
+      "duration": 4.201,
+      "text": "then dot to start creating a image from"
+    },
+    {
+      "start": 1831.48,
+      "duration": 3.24,
+      "text": "the docker file present in this"
+    },
+    {
+      "start": 1832.72,
+      "duration": 3.72,
+      "text": "particular folder once it is created we"
+    },
+    {
+      "start": 1834.72,
+      "duration": 3.679,
+      "text": "should be able to see in our local"
+    },
+    {
+      "start": 1836.44,
+      "duration": 5.119,
+      "text": "machine and then we will be pushing it"
+    },
+    {
+      "start": 1838.399,
+      "duration": 4.921,
+      "text": "on our Docker Hub as well so I already"
+    },
+    {
+      "start": 1841.559,
+      "duration": 3.521,
+      "text": "have it pushed but once I push it again"
+    },
+    {
+      "start": 1843.32,
+      "duration": 4.32,
+      "text": "it will show me a it will show me"
+    },
+    {
+      "start": 1845.08,
+      "duration": 5.36,
+      "text": "updated 1 second ago or 2 second ago so"
+    },
+    {
+      "start": 1847.64,
+      "duration": 2.8,
+      "text": "let me show you"
+    },
+    {
+      "start": 1853.84,
+      "duration": 4.719,
+      "text": "that so I already have it uploaded you"
+    },
+    {
+      "start": 1856.12,
+      "duration": 4.64,
+      "text": "can see it's been uploaded 20 days ago"
+    },
+    {
+      "start": 1858.559,
+      "duration": 3.921,
+      "text": "21 days ago once I upload it again it"
+    },
+    {
+      "start": 1860.76,
+      "duration": 4.24,
+      "text": "will show me updated a minute ago"
+    },
+    {
+      "start": 1862.48,
+      "duration": 4.64,
+      "text": "seconds ago so let's go back to our"
+    },
+    {
+      "start": 1865.0,
+      "duration": 4.519,
+      "text": "terminal and you can see it's still in"
+    },
+    {
+      "start": 1867.12,
+      "duration": 5.039,
+      "text": "creating state it has six layers so it"
+    },
+    {
+      "start": 1869.519,
+      "duration": 2.64,
+      "text": "will take some"
+    },
+    {
+      "start": 1886.159,
+      "duration": 3.0,
+      "text": "time"
+    },
+    {
+      "start": 1895.32,
+      "duration": 4.52,
+      "text": "okay so it's almost done and now we"
+    },
+    {
+      "start": 1898.24,
+      "duration": 3.279,
+      "text": "should be able to see this image being"
+    },
+    {
+      "start": 1899.84,
+      "duration": 4.959,
+      "text": "created in our local machine after we"
+    },
+    {
+      "start": 1901.519,
+      "duration": 4.841,
+      "text": "run the docker images command so it's"
+    },
+    {
+      "start": 1904.799,
+      "duration": 3.921,
+      "text": "right now it's installing all the"
+    },
+    {
+      "start": 1906.36,
+      "duration": 3.159,
+      "text": "requirements requirements required for"
+    },
+    {
+      "start": 1908.72,
+      "duration": 3.28,
+      "text": "this"
+    },
+    {
+      "start": 1909.519,
+      "duration": 4.16,
+      "text": "particular this particular project we"
+    },
+    {
+      "start": 1912.0,
+      "duration": 3.559,
+      "text": "can see the requirements here in the"
+    },
+    {
+      "start": 1913.679,
+      "duration": 4.24,
+      "text": "requirement of txt so we using asteroid"
+    },
+    {
+      "start": 1915.559,
+      "duration": 4.08,
+      "text": "click cryptography on this thing"
+    },
+    {
+      "start": 1917.919,
+      "duration": 3.72,
+      "text": "for this particular project so now the"
+    },
+    {
+      "start": 1919.639,
+      "duration": 4.92,
+      "text": "image has been ready I run Docker images"
+    },
+    {
+      "start": 1921.639,
+      "duration": 6.28,
+      "text": "I should be able to see an image created"
+    },
+    {
+      "start": 1924.559,
+      "duration": 5.24,
+      "text": "9 seconds ago Let's uh push this and to"
+    },
+    {
+      "start": 1927.919,
+      "duration": 5.12,
+      "text": "push it we first need"
+    },
+    {
+      "start": 1929.799,
+      "duration": 5.441,
+      "text": "to tag it with this name and then do it"
+    },
+    {
+      "start": 1933.039,
+      "duration": 4.841,
+      "text": "while say Docker login first to see if"
+    },
+    {
+      "start": 1935.24,
+      "duration": 5.039,
+      "text": "I'm logged in or not"
+    },
+    {
+      "start": 1937.88,
+      "duration": 5.279,
+      "text": "so okay it says login succeeded I'm"
+    },
+    {
+      "start": 1940.279,
+      "duration": 4.76,
+      "text": "inside I now say Docker tag and you can"
+    },
+    {
+      "start": 1943.159,
+      "duration": 6.041,
+      "text": "also see the commands on how you can"
+    },
+    {
+      "start": 1945.039,
+      "duration": 6.401,
+      "text": "push this here on the docker Hub"
+    },
+    {
+      "start": 1949.2,
+      "duration": 3.88,
+      "text": "so so in the docker Hub you need to"
+    },
+    {
+      "start": 1951.44,
+      "duration": 3.76,
+      "text": "click on create repository and give the"
+    },
+    {
+      "start": 1953.08,
+      "duration": 4.04,
+      "text": "name let's say you creating an O so"
+    },
+    {
+      "start": 1955.2,
+      "duration": 3.959,
+      "text": "you'll say a here and I already have it"
+    },
+    {
+      "start": 1957.12,
+      "duration": 4.64,
+      "text": "created once you create it you will get"
+    },
+    {
+      "start": 1959.159,
+      "duration": 4.4,
+      "text": "a command here that you need to push so"
+    },
+    {
+      "start": 1961.76,
+      "duration": 3.879,
+      "text": "I'll say Docker tag name of the image"
+    },
+    {
+      "start": 1963.559,
+      "duration": 4.521,
+      "text": "that is locally and then the name that"
+    },
+    {
+      "start": 1965.639,
+      "duration": 6.76,
+      "text": "you want to put here so I'll"
+    },
+    {
+      "start": 1968.08,
+      "duration": 8.16,
+      "text": "say Docker tag the image name locally is"
+    },
+    {
+      "start": 1972.399,
+      "duration": 5.4,
+      "text": "a so I'll say a here and then I will"
+    },
+    {
+      "start": 1976.24,
+      "duration": 5.039,
+      "text": "have to use the new name that I want to"
+    },
+    {
+      "start": 1977.799,
+      "duration": 8.521,
+      "text": "put here in my repo so I'll be using so"
+    },
+    {
+      "start": 1981.279,
+      "duration": 6.28,
+      "text": "Docker tag o comma latest so say latest"
+    },
+    {
+      "start": 1986.32,
+      "duration": 2.959,
+      "text": "and the new name that you want to be"
+    },
+    {
+      "start": 1987.559,
+      "duration": 3.881,
+      "text": "using and we have to use the name as"
+    },
+    {
+      "start": 1989.279,
+      "duration": 4.12,
+      "text": "username slash the name that you want to"
+    },
+    {
+      "start": 1991.44,
+      "duration": 5.32,
+      "text": "push so I'm going to copy and push this"
+    },
+    {
+      "start": 1993.399,
+      "duration": 5.441,
+      "text": "so Docker tag local name tag new repo"
+    },
+    {
+      "start": 1996.76,
+      "duration": 4.84,
+      "text": "the repo name which is a here and then"
+    },
+    {
+      "start": 1998.84,
+      "duration": 5.28,
+      "text": "the tag name so the repo name is the"
+    },
+    {
+      "start": 2001.6,
+      "duration": 4.72,
+      "text": "one/ so I'll press enter and it will tag"
+    },
+    {
+      "start": 2004.12,
+      "duration": 3.48,
+      "text": "me and then if I do Docker images you'll"
+    },
+    {
+      "start": 2006.32,
+      "duration": 4.479,
+      "text": "see a new image"
+    },
+    {
+      "start": 2007.6,
+      "duration": 5.679,
+      "text": "has been created so you can see a new"
+    },
+    {
+      "start": 2010.799,
+      "duration": 5.76,
+      "text": "image here which is 2 minutes ago let's"
+    },
+    {
+      "start": 2013.279,
+      "duration": 6.601,
+      "text": "push this I'll say Docker push and then"
+    },
+    {
+      "start": 2016.559,
+      "duration": 5.84,
+      "text": "the name so it's going to be ny11"
+    },
+    {
+      "start": 2019.88,
+      "duration": 4.88,
+      "text": "o once I do this it will go ahead and"
+    },
+    {
+      "start": 2022.399,
+      "duration": 5.201,
+      "text": "push it in my repo and you'll see very"
+    },
+    {
+      "start": 2024.76,
+      "duration": 5.96,
+      "text": "soon that the repo for a has been"
+    },
+    {
+      "start": 2027.6,
+      "duration": 5.679,
+      "text": "updated so this is a right now once it"
+    },
+    {
+      "start": 2030.72,
+      "duration": 4.199,
+      "text": "is pushed we should be able to see that"
+    },
+    {
+      "start": 2033.279,
+      "duration": 3.481,
+      "text": "it has been updated and we will be doing"
+    },
+    {
+      "start": 2034.919,
+      "duration": 3.6,
+      "text": "the same for every other service I"
+    },
+    {
+      "start": 2036.76,
+      "duration": 3.48,
+      "text": "already already have it created so you"
+    },
+    {
+      "start": 2038.519,
+      "duration": 3.601,
+      "text": "can follow the steps to do it and I'm"
+    },
+    {
+      "start": 2040.24,
+      "duration": 3.2,
+      "text": "not going to repeat that just to save"
+    },
+    {
+      "start": 2042.12,
+      "duration": 3.48,
+      "text": "time so you need to First click on"
+    },
+    {
+      "start": 2043.44,
+      "duration": 4.719,
+      "text": "create repository copy the commands to"
+    },
+    {
+      "start": 2045.6,
+      "duration": 4.44,
+      "text": "tag it uh and if you face issues make"
+    },
+    {
+      "start": 2048.159,
+      "duration": 3.641,
+      "text": "sure you're logged in and then after you"
+    },
+    {
+      "start": 2050.04,
+      "duration": 4.879,
+      "text": "create an image you able to run Docker"
+    },
+    {
+      "start": 2051.8,
+      "duration": 5.079,
+      "text": "push for all the images that you have"
+    },
+    {
+      "start": 2054.919,
+      "duration": 3.801,
+      "text": "now these images are used in the"
+    },
+    {
+      "start": 2056.879,
+      "duration": 4.2,
+      "text": "Manifest file so if you see OD service"
+    },
+    {
+      "start": 2058.72,
+      "duration": 4.24,
+      "text": "has manifest which is deployment and we"
+    },
+    {
+      "start": 2061.079,
+      "duration": 4.241,
+      "text": "using it here similarly it also has"
+    },
+    {
+      "start": 2062.96,
+      "duration": 5.159,
+      "text": "secret uh which is the"
+    },
+    {
+      "start": 2065.32,
+      "duration": 4.519,
+      "text": "jwd this is the B password and gwd"
+    },
+    {
+      "start": 2068.119,
+      "duration": 3.48,
+      "text": "secret you can choose to keep it as it"
+    },
+    {
+      "start": 2069.839,
+      "duration": 3.84,
+      "text": "is if you want to or else if you want to"
+    },
+    {
+      "start": 2071.599,
+      "duration": 4.24,
+      "text": "change you can change it next you have"
+    },
+    {
+      "start": 2073.679,
+      "duration": 5.641,
+      "text": "service we have a cluster IP service"
+    },
+    {
+      "start": 2075.839,
+      "duration": 5.361,
+      "text": "which is running on Port 5000 so yeah"
+    },
+    {
+      "start": 2079.32,
+      "duration": 3.96,
+      "text": "that's what it is let's refresh the page"
+    },
+    {
+      "start": 2081.2,
+      "duration": 4.28,
+      "text": "once it is pushed so it's still pushing"
+    },
+    {
+      "start": 2083.28,
+      "duration": 2.2,
+      "text": "right"
+    },
+    {
+      "start": 2087.399,
+      "duration": 4.96,
+      "text": "now okay it's pushed and if I refresh"
+    },
+    {
+      "start": 2090.28,
+      "duration": 4.599,
+      "text": "the page I be able to see that the odd"
+    },
+    {
+      "start": 2092.359,
+      "duration": 5.201,
+      "text": "service has been updated right now so"
+    },
+    {
+      "start": 2094.879,
+      "duration": 4.641,
+      "text": "updated a few seconds ago so you do the"
+    },
+    {
+      "start": 2097.56,
+      "duration": 4.32,
+      "text": "same for every other service for a for"
+    },
+    {
+      "start": 2099.52,
+      "duration": 4.319,
+      "text": "Gateway for converter for notification"
+    },
+    {
+      "start": 2101.88,
+      "duration": 3.44,
+      "text": "if you want to use your own image or"
+    },
+    {
+      "start": 2103.839,
+      "duration": 3.76,
+      "text": "else you can use the same image that I"
+    },
+    {
+      "start": 2105.32,
+      "duration": 4.519,
+      "text": "have here just to avoid facing any"
+    },
+    {
+      "start": 2107.599,
+      "duration": 4.961,
+      "text": "issues you can see converter also has a"
+    },
+    {
+      "start": 2109.839,
+      "duration": 5.841,
+      "text": "manifest file and Ching my own image the"
+    },
+    {
+      "start": 2112.56,
+      "duration": 6.44,
+      "text": "C1 one converter similarly for Gateway I"
+    },
+    {
+      "start": 2115.68,
+      "duration": 5.8,
+      "text": "have manifest files and it is using my"
+    },
+    {
+      "start": 2119.0,
+      "duration": 3.839,
+      "text": "own Gateway image so you can use my own"
+    },
+    {
+      "start": 2121.48,
+      "duration": 3.16,
+      "text": "image if you want to or you can create"
+    },
+    {
+      "start": 2122.839,
+      "duration": 3.76,
+      "text": "your own so on the o these are all the"
+    },
+    {
+      "start": 2124.64,
+      "duration": 3.68,
+      "text": "Manifest so let's go and upload let's go"
+    },
+    {
+      "start": 2126.599,
+      "duration": 4.52,
+      "text": "and up all this manifest to have config"
+    },
+    {
+      "start": 2128.32,
+      "duration": 5.88,
+      "text": "map deployment secret and service I'll"
+    },
+    {
+      "start": 2131.119,
+      "duration": 5.121,
+      "text": "go here on my terminal clear the screen"
+    },
+    {
+      "start": 2134.2,
+      "duration": 4.08,
+      "text": "if I do LS you can see a manifest folder"
+    },
+    {
+      "start": 2136.24,
+      "duration": 6.24,
+      "text": "here let's go inside this manifest and"
+    },
+    {
+      "start": 2138.28,
+      "duration": 6.079,
+      "text": "run the command Cube CDL apply hyphen f"
+    },
+    {
+      "start": 2142.48,
+      "duration": 3.8,
+      "text": "and Dot so apply everything present in"
+    },
+    {
+      "start": 2144.359,
+      "duration": 4.281,
+      "text": "this manifest file which"
+    },
+    {
+      "start": 2146.28,
+      "duration": 4.2,
+      "text": "are which are config map deployment"
+    },
+    {
+      "start": 2148.64,
+      "duration": 4.719,
+      "text": "secrets and service once I do this I"
+    },
+    {
+      "start": 2150.48,
+      "duration": 4.639,
+      "text": "should be able to have all these things"
+    },
+    {
+      "start": 2153.359,
+      "duration": 3.681,
+      "text": "created so you can see conf map created"
+    },
+    {
+      "start": 2155.119,
+      "duration": 4.401,
+      "text": "deployment created secret created"
+    },
+    {
+      "start": 2157.04,
+      "duration": 4.96,
+      "text": "service created as well so I say Cube C"
+    },
+    {
+      "start": 2159.52,
+      "duration": 4.36,
+      "text": "get all and I should be able to have"
+    },
+    {
+      "start": 2162.0,
+      "duration": 6.0,
+      "text": "Parts running so if I show you"
+    },
+    {
+      "start": 2163.88,
+      "duration": 6.08,
+      "text": "deployment has uh replicas of two so we"
+    },
+    {
+      "start": 2168.0,
+      "duration": 4.76,
+      "text": "should have two ports running so you can"
+    },
+    {
+      "start": 2169.96,
+      "duration": 4.639,
+      "text": "see two ports are in creating State and"
+    },
+    {
+      "start": 2172.76,
+      "duration": 6.4,
+      "text": "if I do the watch board I will will be"
+    },
+    {
+      "start": 2174.599,
+      "duration": 4.561,
+      "text": "able to see so get"
+    },
+    {
+      "start": 2180.72,
+      "duration": 4.2,
+      "text": "pods and you can see o has been created"
+    },
+    {
+      "start": 2183.4,
+      "duration": 4.56,
+      "text": "and also running which is what we"
+    },
+    {
+      "start": 2184.92,
+      "duration": 5.08,
+      "text": "actually want okay next we are going to"
+    },
+    {
+      "start": 2187.96,
+      "duration": 5.2,
+      "text": "deploy the Gateway service so I'll go"
+    },
+    {
+      "start": 2190.0,
+      "duration": 6.359,
+      "text": "back and go inside the Gateway service"
+    },
+    {
+      "start": 2193.16,
+      "duration": 5.919,
+      "text": "so CD Gateway similarly I'll have to go"
+    },
+    {
+      "start": 2196.359,
+      "duration": 5.681,
+      "text": "inside the Manifest file for Gateway"
+    },
+    {
+      "start": 2199.079,
+      "duration": 5.801,
+      "text": "which is here sorry Gateway is here"
+    },
+    {
+      "start": 2202.04,
+      "duration": 5.48,
+      "text": "inside this we have confli map Gateway"
+    },
+    {
+      "start": 2204.88,
+      "duration": 4.479,
+      "text": "Secret Service so you don't need to"
+    },
+    {
+      "start": 2207.52,
+      "duration": 4.16,
+      "text": "change anything let's go to manifest"
+    },
+    {
+      "start": 2209.359,
+      "duration": 4.201,
+      "text": "folder if I do LS you can see on the"
+    },
+    {
+      "start": 2211.68,
+      "duration": 6.36,
+      "text": "things here so run the same command Cube"
+    },
+    {
+      "start": 2213.56,
+      "duration": 6.519,
+      "text": "C apply hyphen f Dot once you do this it"
+    },
+    {
+      "start": 2218.04,
+      "duration": 4.44,
+      "text": "will create concept map deployment"
+    },
+    {
+      "start": 2220.079,
+      "duration": 4.201,
+      "text": "secret and service so if I do cubes it"
+    },
+    {
+      "start": 2222.48,
+      "duration": 6.359,
+      "text": "will get all command we should be able"
+    },
+    {
+      "start": 2224.28,
+      "duration": 4.559,
+      "text": "to see uh new things created for"
+    },
+    {
+      "start": 2230.56,
+      "duration": 7.12,
+      "text": "Gateway so yeah you can see here a"
+    },
+    {
+      "start": 2234.56,
+      "duration": 6.08,
+      "text": "service for Gateway of notb is created"
+    },
+    {
+      "start": 2237.68,
+      "duration": 4.32,
+      "text": "deployment has been created similarly"
+    },
+    {
+      "start": 2240.64,
+      "duration": 3.84,
+      "text": "there are two parts which are still in"
+    },
+    {
+      "start": 2242.0,
+      "duration": 4.64,
+      "text": "creating state if I do it again it"
+    },
+    {
+      "start": 2244.48,
+      "duration": 3.28,
+      "text": "should be now in running state so my"
+    },
+    {
+      "start": 2246.64,
+      "duration": 2.84,
+      "text": "micro Services the benefit of"
+    },
+    {
+      "start": 2247.76,
+      "duration": 3.88,
+      "text": "microservices you can individually scale"
+    },
+    {
+      "start": 2249.48,
+      "duration": 5.08,
+      "text": "a particular service or descale it so if"
+    },
+    {
+      "start": 2251.64,
+      "duration": 6.24,
+      "text": "you're using o very much you can make it"
+    },
+    {
+      "start": 2254.56,
+      "duration": 4.84,
+      "text": "uh three or four rather than just two uh"
+    },
+    {
+      "start": 2257.88,
+      "duration": 3.8,
+      "text": "similarly if you're not using Gateway"
+    },
+    {
+      "start": 2259.4,
+      "duration": 4.56,
+      "text": "much you can make it one to save"
+    },
+    {
+      "start": 2261.68,
+      "duration": 3.84,
+      "text": "resources on your notes so this is what"
+    },
+    {
+      "start": 2263.96,
+      "duration": 3.28,
+      "text": "the benefit of micros Services you can"
+    },
+    {
+      "start": 2265.52,
+      "duration": 3.28,
+      "text": "individually scale up scale down and if"
+    },
+    {
+      "start": 2267.24,
+      "duration": 3.32,
+      "text": "there any problem you just need to"
+    },
+    {
+      "start": 2268.8,
+      "duration": 3.88,
+      "text": "configure that particular thing rather"
+    },
+    {
+      "start": 2270.56,
+      "duration": 3.799,
+      "text": "than configuring the exact application"
+    },
+    {
+      "start": 2272.68,
+      "duration": 5.04,
+      "text": "this is why companies are shifting from"
+    },
+    {
+      "start": 2274.359,
+      "duration": 5.48,
+      "text": "monolith to microservices okay let's go"
+    },
+    {
+      "start": 2277.72,
+      "duration": 4.879,
+      "text": "and deploy our next service which is the"
+    },
+    {
+      "start": 2279.839,
+      "duration": 6.401,
+      "text": "converter here so I'll"
+    },
+    {
+      "start": 2282.599,
+      "duration": 5.321,
+      "text": "go and go inside converter in this I'll"
+    },
+    {
+      "start": 2286.24,
+      "duration": 3.64,
+      "text": "have to go to manifest in the Manifest"
+    },
+    {
+      "start": 2287.92,
+      "duration": 4.159,
+      "text": "we have conflict map converter and"
+    },
+    {
+      "start": 2289.88,
+      "duration": 3.0,
+      "text": "secret so let's go and apply it so say"
+    },
+    {
+      "start": 2292.079,
+      "duration": 5.0,
+      "text": "Cube"
+    },
+    {
+      "start": 2292.88,
+      "duration": 5.76,
+      "text": "CTL apply Hess and Dot this will start"
+    },
+    {
+      "start": 2297.079,
+      "duration": 4.641,
+      "text": "creating config map and everything that"
+    },
+    {
+      "start": 2298.64,
+      "duration": 4.959,
+      "text": "is there inside this particular path so"
+    },
+    {
+      "start": 2301.72,
+      "duration": 5.0,
+      "text": "let's go and check again if we have"
+    },
+    {
+      "start": 2303.599,
+      "duration": 4.841,
+      "text": "everything created for converter or not"
+    },
+    {
+      "start": 2306.72,
+      "duration": 4.119,
+      "text": "so we should have conf map we should"
+    },
+    {
+      "start": 2308.44,
+      "duration": 5.44,
+      "text": "have deployment we should have"
+    },
+    {
+      "start": 2310.839,
+      "duration": 5.52,
+      "text": "secret so you have a SE deployment for"
+    },
+    {
+      "start": 2313.88,
+      "duration": 5.8,
+      "text": "converter which is running three parts"
+    },
+    {
+      "start": 2316.359,
+      "duration": 5.76,
+      "text": "you can see uh sorry four parts and very"
+    },
+    {
+      "start": 2319.68,
+      "duration": 4.12,
+      "text": "soon it will create all those we will"
+    },
+    {
+      "start": 2322.119,
+      "duration": 3.081,
+      "text": "have all those pods running again if you"
+    },
+    {
+      "start": 2323.8,
+      "duration": 3.24,
+      "text": "don't require these many parts per"
+    },
+    {
+      "start": 2325.2,
+      "duration": 4.04,
+      "text": "converter you can always scale up or"
+    },
+    {
+      "start": 2327.04,
+      "duration": 4.52,
+      "text": "scale down so you can either check"
+    },
+    {
+      "start": 2329.24,
+      "duration": 4.04,
+      "text": "change the replicas here in the"
+    },
+    {
+      "start": 2331.56,
+      "duration": 3.84,
+      "text": "converter section so if I go to"
+    },
+    {
+      "start": 2333.28,
+      "duration": 4.12,
+      "text": "converter service which is here rather"
+    },
+    {
+      "start": 2335.4,
+      "duration": 4.04,
+      "text": "than having four replica CL I can make"
+    },
+    {
+      "start": 2337.4,
+      "duration": 6.199,
+      "text": "it two or I can make it one or I can"
+    },
+    {
+      "start": 2339.44,
+      "duration": 6.56,
+      "text": "also done the command Cube CDL scale"
+    },
+    {
+      "start": 2343.599,
+      "duration": 6.0,
+      "text": "deployment name of the deployment is"
+    },
+    {
+      "start": 2346.0,
+      "duration": 6.839,
+      "text": "converter so I can make it converter Das"
+    },
+    {
+      "start": 2349.599,
+      "duration": 5.081,
+      "text": "Das replicas and make it two rather than"
+    },
+    {
+      "start": 2352.839,
+      "duration": 4.0,
+      "text": "four so once I do this it will give me a"
+    },
+    {
+      "start": 2354.68,
+      "duration": 4.399,
+      "text": "command saying deployment scaled now if"
+    },
+    {
+      "start": 2356.839,
+      "duration": 4.441,
+      "text": "I run Cube at all instead of four I will"
+    },
+    {
+      "start": 2359.079,
+      "duration": 3.961,
+      "text": "have just two because I scaled and this"
+    },
+    {
+      "start": 2361.28,
+      "duration": 3.799,
+      "text": "is how you can do it in microservices"
+    },
+    {
+      "start": 2363.04,
+      "duration": 4.44,
+      "text": "using the command so right now we only"
+    },
+    {
+      "start": 2365.079,
+      "duration": 4.921,
+      "text": "have two parts which are running and the"
+    },
+    {
+      "start": 2367.48,
+      "duration": 4.16,
+      "text": "other two are terminated similarly let's"
+    },
+    {
+      "start": 2370.0,
+      "duration": 3.599,
+      "text": "deploy the last service before we go"
+    },
+    {
+      "start": 2371.64,
+      "duration": 4.52,
+      "text": "ahead and test out our application the"
+    },
+    {
+      "start": 2373.599,
+      "duration": 4.801,
+      "text": "last one is notification service in this"
+    },
+    {
+      "start": 2376.16,
+      "duration": 3.6,
+      "text": "notification Service as I said you need"
+    },
+    {
+      "start": 2378.4,
+      "duration": 5.04,
+      "text": "to put your"
+    },
+    {
+      "start": 2379.76,
+      "duration": 5.599,
+      "text": "own uh email ID and your password the"
+    },
+    {
+      "start": 2383.44,
+      "duration": 4.159,
+      "text": "password is how you can create it from"
+    },
+    {
+      "start": 2385.359,
+      "duration": 4.201,
+      "text": "the app password so this is my email and"
+    },
+    {
+      "start": 2387.599,
+      "duration": 4.441,
+      "text": "this is my password once I do this I"
+    },
+    {
+      "start": 2389.56,
+      "duration": 5.6,
+      "text": "should be able to get an email here in"
+    },
+    {
+      "start": 2392.04,
+      "duration": 5.76,
+      "text": "my email ID so let's go here let me show"
+    },
+    {
+      "start": 2395.16,
+      "duration": 4.24,
+      "text": "you I don't have any email as of now"
+    },
+    {
+      "start": 2397.8,
+      "duration": 3.84,
+      "text": "these are all the previous ones so I'm"
+    },
+    {
+      "start": 2399.4,
+      "duration": 4.439,
+      "text": "going to delete them right now uh if you"
+    },
+    {
+      "start": 2401.64,
+      "duration": 3.24,
+      "text": "can see other as well these are the ones"
+    },
+    {
+      "start": 2403.839,
+      "duration": 3.361,
+      "text": "from the"
+    },
+    {
+      "start": 2404.88,
+      "duration": 3.959,
+      "text": "previous project which is Netflix once"
+    },
+    {
+      "start": 2407.2,
+      "duration": 3.919,
+      "text": "I'm going to select everything and"
+    },
+    {
+      "start": 2408.839,
+      "duration": 4.921,
+      "text": "delete it just to have a"
+    },
+    {
+      "start": 2411.119,
+      "duration": 5.48,
+      "text": "fresh Gmail and after we convert it we"
+    },
+    {
+      "start": 2413.76,
+      "duration": 5.68,
+      "text": "should be able to see an email here so"
+    },
+    {
+      "start": 2416.599,
+      "duration": 5.561,
+      "text": "let's go back and try to deploy"
+    },
+    {
+      "start": 2419.44,
+      "duration": 5.8,
+      "text": "everything in the notification part make"
+    },
+    {
+      "start": 2422.16,
+      "duration": 5.32,
+      "text": "sure you are putting your own email and"
+    },
+    {
+      "start": 2425.24,
+      "duration": 5.44,
+      "text": "your own password to get the emails in"
+    },
+    {
+      "start": 2427.48,
+      "duration": 4.56,
+      "text": "your own email ID so I'm going to deploy"
+    },
+    {
+      "start": 2430.68,
+      "duration": 4.08,
+      "text": "this which is going to convert create"
+    },
+    {
+      "start": 2432.04,
+      "duration": 4.76,
+      "text": "config map notification deployment and"
+    },
+    {
+      "start": 2434.76,
+      "duration": 5.599,
+      "text": "secret as well sorry I'm inside the"
+    },
+    {
+      "start": 2436.8,
+      "duration": 7.2,
+      "text": "converter again so I need to go back and"
+    },
+    {
+      "start": 2440.359,
+      "duration": 6.401,
+      "text": "run it in the notification so I'll go"
+    },
+    {
+      "start": 2444.0,
+      "duration": 5.599,
+      "text": "manifest and then the same command now"
+    },
+    {
+      "start": 2446.76,
+      "duration": 8.28,
+      "text": "once I do this it will"
+    },
+    {
+      "start": 2449.599,
+      "duration": 7.641,
+      "text": "be it will be created s Cube CTL get all"
+    },
+    {
+      "start": 2455.04,
+      "duration": 3.84,
+      "text": "and you will see parts for notification"
+    },
+    {
+      "start": 2457.24,
+      "duration": 5.24,
+      "text": "as"
+    },
+    {
+      "start": 2458.88,
+      "duration": 6.199,
+      "text": "well okay yeah so we have notification"
+    },
+    {
+      "start": 2462.48,
+      "duration": 4.4,
+      "text": "ready uh along with all the ports so"
+    },
+    {
+      "start": 2465.079,
+      "duration": 3.401,
+      "text": "let's go ahead and test out our"
+    },
+    {
+      "start": 2466.88,
+      "duration": 4.479,
+      "text": "application if it is actually going to"
+    },
+    {
+      "start": 2468.48,
+      "duration": 4.839,
+      "text": "convert a video into audio or not so if"
+    },
+    {
+      "start": 2471.359,
+      "duration": 3.561,
+      "text": "you remember we have the audio we have"
+    },
+    {
+      "start": 2473.319,
+      "duration": 4.28,
+      "text": "the video present in this particular"
+    },
+    {
+      "start": 2474.92,
+      "duration": 5.439,
+      "text": "assets so I'm going to go in that folder"
+    },
+    {
+      "start": 2477.599,
+      "duration": 2.76,
+      "text": "so let's go"
+    },
+    {
+      "start": 2482.359,
+      "duration": 4.841,
+      "text": "back LS this is the asset so I'll go"
+    },
+    {
+      "start": 2485.16,
+      "duration": 5.72,
+      "text": "inside the assets folder and if I show"
+    },
+    {
+      "start": 2487.2,
+      "duration": 5.72,
+      "text": "you this is the video. MP4 that we have"
+    },
+    {
+      "start": 2490.88,
+      "duration": 5.04,
+      "text": "so I'm going to convert this video into"
+    },
+    {
+      "start": 2492.92,
+      "duration": 5.8,
+      "text": "audio and we should be able to uh see"
+    },
+    {
+      "start": 2495.92,
+      "duration": 5.399,
+      "text": "that as well so when you are here at"
+    },
+    {
+      "start": 2498.72,
+      "duration": 5.96,
+      "text": "this point you need to go to the GitHub"
+    },
+    {
+      "start": 2501.319,
+      "duration": 5.881,
+      "text": "repo and this GitHub repo you can find"
+    },
+    {
+      "start": 2504.68,
+      "duration": 4.28,
+      "text": "the validation apis here below so once"
+    },
+    {
+      "start": 2507.2,
+      "duration": 3.28,
+      "text": "you deploy everything we have the API"
+    },
+    {
+      "start": 2508.96,
+      "duration": 3.68,
+      "text": "definition and I also have the steps on"
+    },
+    {
+      "start": 2510.48,
+      "duration": 3.359,
+      "text": "how you can create the app password if"
+    },
+    {
+      "start": 2512.64,
+      "duration": 2.92,
+      "text": "you don't know how to create this you"
+    },
+    {
+      "start": 2513.839,
+      "duration": 3.681,
+      "text": "can follow the steps or you can also"
+    },
+    {
+      "start": 2515.56,
+      "duration": 3.92,
+      "text": "check it out in the the Netflix video"
+    },
+    {
+      "start": 2517.52,
+      "duration": 3.44,
+      "text": "where I've shown you how to do it so"
+    },
+    {
+      "start": 2519.48,
+      "duration": 3.28,
+      "text": "once we apply everything and we have"
+    },
+    {
+      "start": 2520.96,
+      "duration": 3.68,
+      "text": "everything being created we are then"
+    },
+    {
+      "start": 2522.76,
+      "duration": 4.96,
+      "text": "going to go ahead with this API"
+    },
+    {
+      "start": 2524.64,
+      "duration": 5.8,
+      "text": "definition first we need to login so we"
+    },
+    {
+      "start": 2527.72,
+      "duration": 4.72,
+      "text": "have to login uh using our email and"
+    },
+    {
+      "start": 2530.44,
+      "duration": 4.48,
+      "text": "password that is stored in the post CR"
+    },
+    {
+      "start": 2532.44,
+      "duration": 6.0,
+      "text": "database so I'm going to copy"
+    },
+    {
+      "start": 2534.92,
+      "duration": 6.439,
+      "text": "this so let's copy and we are going to"
+    },
+    {
+      "start": 2538.44,
+      "duration": 5.919,
+      "text": "paste it here in this C we going to pass"
+    },
+    {
+      "start": 2541.359,
+      "duration": 6.0,
+      "text": "our username and password for postgress"
+    },
+    {
+      "start": 2544.359,
+      "duration": 4.801,
+      "text": "it's here so I'm going to copy my email"
+    },
+    {
+      "start": 2547.359,
+      "duration": 7.081,
+      "text": "and my password the password is 1 2 3 4"
+    },
+    {
+      "start": 2549.16,
+      "duration": 9.72,
+      "text": "5 6 I'll say 1 2 3 4 5 6 and this is my"
+    },
+    {
+      "start": 2554.44,
+      "duration": 4.44,
+      "text": "email so my email is this let's"
+    },
+    {
+      "start": 2559.48,
+      "duration": 3.639,
+      "text": "copy you need to put your own email"
+    },
+    {
+      "start": 2561.64,
+      "duration": 3.959,
+      "text": "because these are things that are stored"
+    },
+    {
+      "start": 2563.119,
+      "duration": 5.0,
+      "text": "inside the uh postgress if you remember"
+    },
+    {
+      "start": 2565.599,
+      "duration": 4.641,
+      "text": "when we created the Au user we had"
+    },
+    {
+      "start": 2568.119,
+      "duration": 4.24,
+      "text": "inserted something so we require to put"
+    },
+    {
+      "start": 2570.24,
+      "duration": 4.0,
+      "text": "the same thing here the email and the"
+    },
+    {
+      "start": 2572.359,
+      "duration": 5.76,
+      "text": "password once you do that you need to"
+    },
+    {
+      "start": 2574.24,
+      "duration": 6.0,
+      "text": "copy the you you need to copy the uh"
+    },
+    {
+      "start": 2578.119,
+      "duration": 5.44,
+      "text": "node IP so I'll also do that from here"
+    },
+    {
+      "start": 2580.24,
+      "duration": 5.4,
+      "text": "this is my node IP so I'll copy this you"
+    },
+    {
+      "start": 2583.559,
+      "duration": 4.161,
+      "text": "can get it from the dashboard from the"
+    },
+    {
+      "start": 2585.64,
+      "duration": 4.56,
+      "text": "UI uh Management console if you don't"
+    },
+    {
+      "start": 2587.72,
+      "duration": 4.76,
+      "text": "know so let's go here and paste our node"
+    },
+    {
+      "start": 2590.2,
+      "duration": 4.879,
+      "text": "IP once I do this if my user name and"
+    },
+    {
+      "start": 2592.48,
+      "duration": 4.96,
+      "text": "password is correct we should get a JWT"
+    },
+    {
+      "start": 2595.079,
+      "duration": 4.561,
+      "text": "token which is a long string as you can"
+    },
+    {
+      "start": 2597.44,
+      "duration": 6.8,
+      "text": "see here in the odd section we are going"
+    },
+    {
+      "start": 2599.64,
+      "duration": 6.84,
+      "text": "to get a JWT token created if everything"
+    },
+    {
+      "start": 2604.24,
+      "duration": 3.56,
+      "text": "is correct according to the dat database"
+    },
+    {
+      "start": 2606.48,
+      "duration": 4.2,
+      "text": "stored according to the credentials"
+    },
+    {
+      "start": 2607.8,
+      "duration": 5.0,
+      "text": "stored in our post database so let's"
+    },
+    {
+      "start": 2610.68,
+      "duration": 5.439,
+      "text": "press enter if it is correct I should"
+    },
+    {
+      "start": 2612.8,
+      "duration": 5.799,
+      "text": "get a string like this which is what jwd"
+    },
+    {
+      "start": 2616.119,
+      "duration": 4.561,
+      "text": "is so if I copy this and I show you what"
+    },
+    {
+      "start": 2618.599,
+      "duration": 6.641,
+      "text": "it holds let's go"
+    },
+    {
+      "start": 2620.68,
+      "duration": 6.28,
+      "text": "to uh let's code to base"
+    },
+    {
+      "start": 2625.24,
+      "duration": 4.119,
+      "text": "64"
+    },
+    {
+      "start": 2626.96,
+      "duration": 4.879,
+      "text": "decode and go to this website in this"
+    },
+    {
+      "start": 2629.359,
+      "duration": 4.881,
+      "text": "website I'm going to paste my string and"
+    },
+    {
+      "start": 2631.839,
+      "duration": 4.601,
+      "text": "if I click on decode option you can see"
+    },
+    {
+      "start": 2634.24,
+      "duration": 5.72,
+      "text": "the data inside it so it's an algorithm"
+    },
+    {
+      "start": 2636.44,
+      "duration": 6.119,
+      "text": "using hs256 the type is JWT username is"
+    },
+    {
+      "start": 2639.96,
+      "duration": 4.48,
+      "text": "I am Batman and this is expir date and"
+    },
+    {
+      "start": 2642.559,
+      "duration": 3.8,
+      "text": "all the other things so if you have the"
+    },
+    {
+      "start": 2644.44,
+      "duration": 3.8,
+      "text": "correct one you can get this kind of uh"
+    },
+    {
+      "start": 2646.359,
+      "duration": 4.2,
+      "text": "jwd token which is what we're going to"
+    },
+    {
+      "start": 2648.24,
+      "duration": 4.4,
+      "text": "be using to upload and download after"
+    },
+    {
+      "start": 2650.559,
+      "duration": 4.401,
+      "text": "the video is converted let's copy this"
+    },
+    {
+      "start": 2652.64,
+      "duration": 3.199,
+      "text": "and let's go to the next endpoint which"
+    },
+    {
+      "start": 2654.96,
+      "duration": 3.639,
+      "text": "is"
+    },
+    {
+      "start": 2655.839,
+      "duration": 5.081,
+      "text": "the upload endpoint so I'm now going to"
+    },
+    {
+      "start": 2658.599,
+      "duration": 4.401,
+      "text": "upload my video which is going to be"
+    },
+    {
+      "start": 2660.92,
+      "duration": 3.8,
+      "text": "converted using the converter service so"
+    },
+    {
+      "start": 2663.0,
+      "duration": 4.76,
+      "text": "let's copy"
+    },
+    {
+      "start": 2664.72,
+      "duration": 5.28,
+      "text": "this and paste it here in this we need"
+    },
+    {
+      "start": 2667.76,
+      "duration": 4.76,
+      "text": "to change few things again so let's"
+    },
+    {
+      "start": 2670.0,
+      "duration": 5.119,
+      "text": "clear this first to avoid unnecessary"
+    },
+    {
+      "start": 2672.52,
+      "duration": 4.319,
+      "text": "things so I copy and paste it I need to"
+    },
+    {
+      "start": 2675.119,
+      "duration": 5.2,
+      "text": "paste my node IP so I can get the node"
+    },
+    {
+      "start": 2676.839,
+      "duration": 7.361,
+      "text": "IP here uh in this part in this in this"
+    },
+    {
+      "start": 2680.319,
+      "duration": 5.201,
+      "text": "SS part so let's copy this paste it here"
+    },
+    {
+      "start": 2684.2,
+      "duration": 4.32,
+      "text": "along with this I also need to put my"
+    },
+    {
+      "start": 2685.52,
+      "duration": 4.52,
+      "text": "GWT token that I got right now so I'll"
+    },
+    {
+      "start": 2688.52,
+      "duration": 6.2,
+      "text": "copy the GWT"
+    },
+    {
+      "start": 2690.04,
+      "duration": 6.72,
+      "text": "token uh from the from here copy and"
+    },
+    {
+      "start": 2694.72,
+      "duration": 4.839,
+      "text": "paste on side of this if everything is"
+    },
+    {
+      "start": 2696.76,
+      "duration": 4.72,
+      "text": "okay it should give me a success message"
+    },
+    {
+      "start": 2699.559,
+      "duration": 4.241,
+      "text": "as you can see here if the upload has"
+    },
+    {
+      "start": 2701.48,
+      "duration": 4.56,
+      "text": "been done um we should get a success"
+    },
+    {
+      "start": 2703.8,
+      "duration": 3.88,
+      "text": "message and then the converter should"
+    },
+    {
+      "start": 2706.04,
+      "duration": 4.36,
+      "text": "also convert it and we should also get"
+    },
+    {
+      "start": 2707.68,
+      "duration": 5.32,
+      "text": "an email ID email on our mail so once I"
+    },
+    {
+      "start": 2710.4,
+      "duration": 4.0,
+      "text": "do this uh we should get a success"
+    },
+    {
+      "start": 2713.0,
+      "duration": 3.28,
+      "text": "message if everything is okay you need"
+    },
+    {
+      "start": 2714.4,
+      "duration": 5.08,
+      "text": "to make sure you're in the same path"
+    },
+    {
+      "start": 2716.28,
+      "duration": 5.76,
+      "text": "where you have video. MP4 as well so"
+    },
+    {
+      "start": 2719.48,
+      "duration": 4.2,
+      "text": "let's wait for see what output do we get"
+    },
+    {
+      "start": 2722.04,
+      "duration": 4.12,
+      "text": "and make sure these are all ports are"
+    },
+    {
+      "start": 2723.68,
+      "duration": 4.2,
+      "text": "also opened so we get a success message"
+    },
+    {
+      "start": 2726.16,
+      "duration": 3.88,
+      "text": "and let's go here in"
+    },
+    {
+      "start": 2727.88,
+      "duration": 4.36,
+      "text": "our in our email and you can see an"
+    },
+    {
+      "start": 2730.04,
+      "duration": 5.279,
+      "text": "email has been we have got an email"
+    },
+    {
+      "start": 2732.24,
+      "duration": 5.119,
+      "text": "right now it's 12:13 we it's 1214 and in"
+    },
+    {
+      "start": 2735.319,
+      "duration": 5.641,
+      "text": "this email we have an ID which is what"
+    },
+    {
+      "start": 2737.359,
+      "duration": 6.48,
+      "text": "we going to use to get the MP3 that is"
+    },
+    {
+      "start": 2740.96,
+      "duration": 5.399,
+      "text": "stored in our mongod DB"
+    },
+    {
+      "start": 2743.839,
+      "duration": 4.961,
+      "text": "database so I'm going to go here and"
+    },
+    {
+      "start": 2746.359,
+      "duration": 4.521,
+      "text": "copy the endpoint for download which is"
+    },
+    {
+      "start": 2748.8,
+      "duration": 5.48,
+      "text": "here so download endpoint I'm going to"
+    },
+    {
+      "start": 2750.88,
+      "duration": 5.56,
+      "text": "copy it and paste it here in this"
+    },
+    {
+      "start": 2754.28,
+      "duration": 6.48,
+      "text": "download input we need to the"
+    },
+    {
+      "start": 2756.44,
+      "duration": 7.76,
+      "text": "FID so this is the FID and I'm going to"
+    },
+    {
+      "start": 2760.76,
+      "duration": 6.599,
+      "text": "get the FID from the email which is here"
+    },
+    {
+      "start": 2764.2,
+      "duration": 6.96,
+      "text": "let's copy it paste along with"
+    },
+    {
+      "start": 2767.359,
+      "duration": 8.96,
+      "text": "this I also need to put the node"
+    },
+    {
+      "start": 2771.16,
+      "duration": 7.72,
+      "text": "IP which is here so let's copy the node"
+    },
+    {
+      "start": 2776.319,
+      "duration": 4.8,
+      "text": "IP paste it here along with node IP I"
+    },
+    {
+      "start": 2778.88,
+      "duration": 5.12,
+      "text": "also need the GWT token so let's put the"
+    },
+    {
+      "start": 2781.119,
+      "duration": 5.041,
+      "text": "JWT token here and this is all you need"
+    },
+    {
+      "start": 2784.0,
+      "duration": 5.48,
+      "text": "to download once it is downloaded we"
+    },
+    {
+      "start": 2786.16,
+      "duration": 6.28,
+      "text": "should be able to see an MP3 file being"
+    },
+    {
+      "start": 2789.48,
+      "duration": 4.44,
+      "text": "created in our assets folder because"
+    },
+    {
+      "start": 2792.44,
+      "duration": 3.44,
+      "text": "this is where we are running it so if I"
+    },
+    {
+      "start": 2793.92,
+      "duration": 4.199,
+      "text": "press enter you can see a download has"
+    },
+    {
+      "start": 2795.88,
+      "duration": 4.8,
+      "text": "been started and it's been downloaded if"
+    },
+    {
+      "start": 2798.119,
+      "duration": 4.801,
+      "text": "I do LS you can see a video. MP3 has"
+    },
+    {
+      "start": 2800.68,
+      "duration": 6.0,
+      "text": "been created and let's try to test it"
+    },
+    {
+      "start": 2802.92,
+      "duration": 5.8,
+      "text": "out so uh this is actually here in this"
+    },
+    {
+      "start": 2806.68,
+      "duration": 4.28,
+      "text": "microservices python app assets is here"
+    },
+    {
+      "start": 2808.72,
+      "duration": 4.28,
+      "text": "we have video. MP4 and we also have"
+    },
+    {
+      "start": 2810.96,
+      "duration": 6.119,
+      "text": "video. MP3 so let me show you the"
+    },
+    {
+      "start": 2813.0,
+      "duration": 10.0,
+      "text": "validation this video is"
+    },
+    {
+      "start": 2817.079,
+      "duration": 5.921,
+      "text": "so this was the video and uh this is the"
+    },
+    {
+      "start": 2824.0,
+      "duration": 4.64,
+      "text": "audio so this was our project I hope you"
+    },
+    {
+      "start": 2826.839,
+      "duration": 3.681,
+      "text": "have understood how you can create a"
+    },
+    {
+      "start": 2828.64,
+      "duration": 3.959,
+      "text": "microservices application to convert"
+    },
+    {
+      "start": 2830.52,
+      "duration": 3.64,
+      "text": "video into audio using all this"
+    },
+    {
+      "start": 2832.599,
+      "duration": 3.401,
+      "text": "different tools I hope this was"
+    },
+    {
+      "start": 2834.16,
+      "duration": 3.8,
+      "text": "informative if you have any questions"
+    },
+    {
+      "start": 2836.0,
+      "duration": 3.28,
+      "text": "any doubts throughout this project let"
+    },
+    {
+      "start": 2837.96,
+      "duration": 3.159,
+      "text": "me know in the comment section I can"
+    },
+    {
+      "start": 2839.28,
+      "duration": 3.16,
+      "text": "help you out let me know in the comment"
+    },
+    {
+      "start": 2841.119,
+      "duration": 3.641,
+      "text": "section but this is very easy a"
+    },
+    {
+      "start": 2842.44,
+      "duration": 3.72,
+      "text": "straightforward application but a very"
+    },
+    {
+      "start": 2844.76,
+      "duration": 3.28,
+      "text": "important one that you can in your"
+    },
+    {
+      "start": 2846.16,
+      "duration": 4.08,
+      "text": "resume which will showcase your"
+    },
+    {
+      "start": 2848.04,
+      "duration": 3.68,
+      "text": "expertise in different tools I hope you"
+    },
+    {
+      "start": 2850.24,
+      "duration": 3.28,
+      "text": "complete this and you also share it on"
+    },
+    {
+      "start": 2851.72,
+      "duration": 3.8,
+      "text": "LinkedIn for now let's go ahead and"
+    },
+    {
+      "start": 2853.52,
+      "duration": 4.48,
+      "text": "delete all the resources you have so we"
+    },
+    {
+      "start": 2855.52,
+      "duration": 4.36,
+      "text": "just need to go to the AWS account so"
+    },
+    {
+      "start": 2858.0,
+      "duration": 3.88,
+      "text": "I'm here in my AWS account and I'm going"
+    },
+    {
+      "start": 2859.88,
+      "duration": 3.36,
+      "text": "to go to the cluster that's created"
+    },
+    {
+      "start": 2861.88,
+      "duration": 2.76,
+      "text": "first we are going to delete the node"
+    },
+    {
+      "start": 2863.24,
+      "duration": 3.64,
+      "text": "group and then we are going to delete"
+    },
+    {
+      "start": 2864.64,
+      "duration": 4.28,
+      "text": "the cluster there is nothing else apart"
+    },
+    {
+      "start": 2866.88,
+      "duration": 3.479,
+      "text": "from this because this is these are all"
+    },
+    {
+      "start": 2868.92,
+      "duration": 3.159,
+      "text": "the things we have right now so I'm"
+    },
+    {
+      "start": 2870.359,
+      "duration": 3.2,
+      "text": "going to go to node group select the"
+    },
+    {
+      "start": 2872.079,
+      "duration": 4.081,
+      "text": "node group click on"
+    },
+    {
+      "start": 2873.559,
+      "duration": 4.361,
+      "text": "delete and node group the name of the"
+    },
+    {
+      "start": 2876.16,
+      "duration": 4.0,
+      "text": "node that I have added so I'm going to"
+    },
+    {
+      "start": 2877.92,
+      "duration": 4.0,
+      "text": "delete it once this is deleted we have"
+    },
+    {
+      "start": 2880.16,
+      "duration": 3.72,
+      "text": "to wait for some time till this is"
+    },
+    {
+      "start": 2881.92,
+      "duration": 4.12,
+      "text": "deleted completely before we delete the"
+    },
+    {
+      "start": 2883.88,
+      "duration": 4.239,
+      "text": "cluster because if I do it now it will"
+    },
+    {
+      "start": 2886.04,
+      "duration": 4.16,
+      "text": "tell me that there are nodes in node"
+    },
+    {
+      "start": 2888.119,
+      "duration": 4.081,
+      "text": "group and first you need to delete that"
+    },
+    {
+      "start": 2890.2,
+      "duration": 3.48,
+      "text": "and then you can delete your cluster so"
+    },
+    {
+      "start": 2892.2,
+      "duration": 3.56,
+      "text": "this is the end of our python"
+    },
+    {
+      "start": 2893.68,
+      "duration": 3.879,
+      "text": "microservices application I hope this"
+    },
+    {
+      "start": 2895.76,
+      "duration": 3.64,
+      "text": "video was informative and you have"
+    },
+    {
+      "start": 2897.559,
+      "duration": 3.401,
+      "text": "completed the project successfully if"
+    },
+    {
+      "start": 2899.4,
+      "duration": 4.28,
+      "text": "you did make sure you share it on your"
+    },
+    {
+      "start": 2900.96,
+      "duration": 3.68,
+      "text": "LinkedIn or on your resume thank you and"
+    },
+    {
+      "start": 2903.68,
+      "duration": 3.96,
+      "text": "have a good"
+    },
+    {
+      "start": 2904.64,
+      "duration": 3.0,
+      "text": "day"
+    },
+    {
+      "start": 2911.44,
+      "duration": 3.0,
+      "text": "just"
+    }
+  ]
+}

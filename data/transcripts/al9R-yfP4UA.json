@@ -1,0 +1,4221 @@
+{
+  "video": {
+    "id": "al9R-yfP4UA",
+    "title": "Kubernetes Explained - What is Kubernetes and How it works?",
+    "url": "https://www.youtube.com/watch?v=al9R-yfP4UA",
+    "duration": 1706,
+    "channel": "Cloud Champ"
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "duration": 4.16,
+      "text": "In this video, we are going to"
+    },
+    {
+      "start": 1.4,
+      "duration": 4.92,
+      "text": "understand what is Kubernetes and how it"
+    },
+    {
+      "start": 4.16,
+      "duration": 4.28,
+      "text": "actually works. We are going to discuss"
+    },
+    {
+      "start": 6.32,
+      "duration": 4.36,
+      "text": "why is Kubernetes so popular and what"
+    },
+    {
+      "start": 8.44,
+      "duration": 4.0,
+      "text": "problem is Kubernetes actually solving."
+    },
+    {
+      "start": 10.68,
+      "duration": 3.8,
+      "text": "Then going deep down in the Kubernetes"
+    },
+    {
+      "start": 12.44,
+      "duration": 4.44,
+      "text": "architecture, understanding master node,"
+    },
+    {
+      "start": 14.48,
+      "duration": 3.92,
+      "text": "worker node, its component, along with"
+    },
+    {
+      "start": 16.88,
+      "duration": 3.2,
+      "text": "the scenario where we are going to see"
+    },
+    {
+      "start": 18.4,
+      "duration": 3.96,
+      "text": "what happens in the back end when you"
+    },
+    {
+      "start": 20.08,
+      "duration": 4.04,
+      "text": "deploy your application on Kubernetes."
+    },
+    {
+      "start": 22.36,
+      "duration": 3.6,
+      "text": "So, make sure you watch this video till"
+    },
+    {
+      "start": 24.12,
+      "duration": 3.88,
+      "text": "the end and let me know if you have any"
+    },
+    {
+      "start": 25.96,
+      "duration": 5.32,
+      "text": "questions, any doubt in the comment"
+    },
+    {
+      "start": 28.0,
+      "duration": 3.28,
+      "text": "section. Let's start."
+    },
+    {
+      "start": 34.08,
+      "duration": 3.68,
+      "text": "All right. So, I'm here on my computer"
+    },
+    {
+      "start": 36.04,
+      "duration": 3.84,
+      "text": "screen and I have a notion document"
+    },
+    {
+      "start": 37.76,
+      "duration": 3.36,
+      "text": "created which contains all the notes"
+    },
+    {
+      "start": 39.88,
+      "duration": 3.64,
+      "text": "about the topic we are going to be"
+    },
+    {
+      "start": 41.12,
+      "duration": 4.2,
+      "text": "discussing in this particular video. We"
+    },
+    {
+      "start": 43.52,
+      "duration": 4.04,
+      "text": "start with what is Kubernetes and why is"
+    },
+    {
+      "start": 45.32,
+      "duration": 4.32,
+      "text": "it so popular, looking at how different"
+    },
+    {
+      "start": 47.56,
+      "duration": 3.4,
+      "text": "companies are using Kubernetes. Then we"
+    },
+    {
+      "start": 49.64,
+      "duration": 3.36,
+      "text": "look at different problems that"
+    },
+    {
+      "start": 50.96,
+      "duration": 4.0,
+      "text": "Kubernetes is solving or what features"
+    },
+    {
+      "start": 53.0,
+      "duration": 4.28,
+      "text": "or benefits you get when using"
+    },
+    {
+      "start": 54.96,
+      "duration": 4.2,
+      "text": "Kubernetes. Then we go deep down in the"
+    },
+    {
+      "start": 57.28,
+      "duration": 3.4,
+      "text": "Kubernetes architecture where we look at"
+    },
+    {
+      "start": 59.16,
+      "duration": 3.6,
+      "text": "what is master node, what is worker"
+    },
+    {
+      "start": 60.68,
+      "duration": 4.199,
+      "text": "node, what are components inside master"
+    },
+    {
+      "start": 62.76,
+      "duration": 3.88,
+      "text": "node and worker nodes, also their roles"
+    },
+    {
+      "start": 64.879,
+      "duration": 3.241,
+      "text": "and responsibilities. And to better"
+    },
+    {
+      "start": 66.64,
+      "duration": 3.72,
+      "text": "understand this topic, I have a great"
+    },
+    {
+      "start": 68.12,
+      "duration": 3.84,
+      "text": "example which explains what happens when"
+    },
+    {
+      "start": 70.36,
+      "duration": 3.48,
+      "text": "you create a pod, how all these"
+    },
+    {
+      "start": 71.96,
+      "duration": 3.44,
+      "text": "components work together inside a"
+    },
+    {
+      "start": 73.84,
+      "duration": 3.12,
+      "text": "cluster. This will give you a good"
+    },
+    {
+      "start": 75.4,
+      "duration": 4.2,
+      "text": "understanding of how Kubernetes actually"
+    },
+    {
+      "start": 76.96,
+      "duration": 4.56,
+      "text": "work and what is it made of. So, make"
+    },
+    {
+      "start": 79.6,
+      "duration": 4.0,
+      "text": "sure you watch this video till the end."
+    },
+    {
+      "start": 81.52,
+      "duration": 4.2,
+      "text": "Let's start. So, we will begin with why"
+    },
+    {
+      "start": 83.6,
+      "duration": 4.4,
+      "text": "is Kubernetes so popular and why are"
+    },
+    {
+      "start": 85.72,
+      "duration": 4.0,
+      "text": "companies actually using it a lot. If"
+    },
+    {
+      "start": 88.0,
+      "duration": 3.16,
+      "text": "you follow recent IT trends, you might"
+    },
+    {
+      "start": 89.72,
+      "duration": 3.8,
+      "text": "know companies are shifting from"
+    },
+    {
+      "start": 91.16,
+      "duration": 4.04,
+      "text": "monolith architectures to microservices."
+    },
+    {
+      "start": 93.52,
+      "duration": 5.36,
+      "text": "Here are some big companies like Amazon,"
+    },
+    {
+      "start": 95.2,
+      "duration": 5.8,
+      "text": "Coca-Cola, eBay, Etsy, Spotify, Netflix,"
+    },
+    {
+      "start": 98.88,
+      "duration": 4.44,
+      "text": "all of them have shifted from monolith"
+    },
+    {
+      "start": 101.0,
+      "duration": 3.72,
+      "text": "architectures to microservices. Monolith"
+    },
+    {
+      "start": 103.32,
+      "duration": 3.24,
+      "text": "architecture is where you deploy an"
+    },
+    {
+      "start": 104.72,
+      "duration": 3.64,
+      "text": "application as a single unit. So,"
+    },
+    {
+      "start": 106.56,
+      "duration": 3.72,
+      "text": "managing any of these services can be"
+    },
+    {
+      "start": 108.36,
+      "duration": 4.56,
+      "text": "troublesome and can cause issue to the"
+    },
+    {
+      "start": 110.28,
+      "duration": 5.16,
+      "text": "entire application. Also, scaling and"
+    },
+    {
+      "start": 112.92,
+      "duration": 4.04,
+      "text": "deployment is very problematic. So,"
+    },
+    {
+      "start": 115.44,
+      "duration": 3.48,
+      "text": "companies have shifted from monolith"
+    },
+    {
+      "start": 116.96,
+      "duration": 4.4,
+      "text": "architectures to microservices. In"
+    },
+    {
+      "start": 118.92,
+      "duration": 4.6,
+      "text": "microservices, you deploy application in"
+    },
+    {
+      "start": 121.36,
+      "duration": 3.88,
+      "text": "independent services. So, scaling and"
+    },
+    {
+      "start": 123.52,
+      "duration": 3.48,
+      "text": "deployment is very easy. And each of"
+    },
+    {
+      "start": 125.24,
+      "duration": 3.76,
+      "text": "these services is usually deployed as a"
+    },
+    {
+      "start": 127.0,
+      "duration": 4.36,
+      "text": "container, most probably a Docker"
+    },
+    {
+      "start": 129.0,
+      "duration": 4.08,
+      "text": "container. So, managing these containers"
+    },
+    {
+      "start": 131.36,
+      "duration": 3.0,
+      "text": "can be an issue. When you have a big"
+    },
+    {
+      "start": 133.08,
+      "duration": 2.92,
+      "text": "application, you have multiple"
+    },
+    {
+      "start": 134.36,
+      "duration": 3.64,
+      "text": "containers. You have hundreds or"
+    },
+    {
+      "start": 136.0,
+      "duration": 4.28,
+      "text": "thousands of containers. So, managing"
+    },
+    {
+      "start": 138.0,
+      "duration": 3.8,
+      "text": "these will be a problem and you require"
+    },
+    {
+      "start": 140.28,
+      "duration": 3.12,
+      "text": "a container orchestration tool,"
+    },
+    {
+      "start": 141.8,
+      "duration": 3.88,
+      "text": "something like Kubernetes. So,"
+    },
+    {
+      "start": 143.4,
+      "duration": 4.76,
+      "text": "Kubernetes can help you manage all these"
+    },
+    {
+      "start": 145.68,
+      "duration": 4.6,
+      "text": "multiple containers for an application."
+    },
+    {
+      "start": 148.16,
+      "duration": 3.76,
+      "text": "And Kubernetes does an excellent job as"
+    },
+    {
+      "start": 150.28,
+      "duration": 3.76,
+      "text": "a container orchestration. So,"
+    },
+    {
+      "start": 151.92,
+      "duration": 4.2,
+      "text": "Kubernetes is amazing. It simplifies"
+    },
+    {
+      "start": 154.04,
+      "duration": 4.28,
+      "text": "complex tasks, making it easier for"
+    },
+    {
+      "start": 156.12,
+      "duration": 4.44,
+      "text": "DevOps engineers to manage applications"
+    },
+    {
+      "start": 158.32,
+      "duration": 4.24,
+      "text": "seamlessly. So, big companies like NASA,"
+    },
+    {
+      "start": 160.56,
+      "duration": 4.76,
+      "text": "ChatGPT, Microsoft, Google, Spotify,"
+    },
+    {
+      "start": 162.56,
+      "duration": 4.64,
+      "text": "Pinterest, almost everyone rely on"
+    },
+    {
+      "start": 165.32,
+      "duration": 4.28,
+      "text": "Kubernetes. Here is a good blog that"
+    },
+    {
+      "start": 167.2,
+      "duration": 4.68,
+      "text": "explains how big companies like Google,"
+    },
+    {
+      "start": 169.6,
+      "duration": 4.359,
+      "text": "Spotify, Capital One, Pinterest, Adidas,"
+    },
+    {
+      "start": 171.88,
+      "duration": 3.96,
+      "text": "all of them are using Kubernetes for"
+    },
+    {
+      "start": 173.959,
+      "duration": 3.241,
+      "text": "their application. If you read here,"
+    },
+    {
+      "start": 175.84,
+      "duration": 3.119,
+      "text": "Tinder, which is one of the largest"
+    },
+    {
+      "start": 177.2,
+      "duration": 4.56,
+      "text": "dating application, shifted to"
+    },
+    {
+      "start": 178.959,
+      "duration": 4.841,
+      "text": "Kubernetes in 2018. The Tinder platform"
+    },
+    {
+      "start": 181.76,
+      "duration": 3.44,
+      "text": "operates completely on Kubernetes, which"
+    },
+    {
+      "start": 183.8,
+      "duration": 3.92,
+      "text": "can handle all the individual"
+    },
+    {
+      "start": 185.2,
+      "duration": 4.759,
+      "text": "microservices that Tinder uses. As of"
+    },
+    {
+      "start": 187.72,
+      "duration": 5.96,
+      "text": "April 2019, Tinder was using Kubernetes"
+    },
+    {
+      "start": 189.959,
+      "duration": 7.0,
+      "text": "with 200 services, 1,000 node, 15,000"
+    },
+    {
+      "start": 193.68,
+      "duration": 5.0,
+      "text": "pods and 48,000 containers. So, this is"
+    },
+    {
+      "start": 196.959,
+      "duration": 3.681,
+      "text": "why Kubernetes is so popular and"
+    },
+    {
+      "start": 198.68,
+      "duration": 4.839,
+      "text": "virtually every job description for"
+    },
+    {
+      "start": 200.64,
+      "duration": 5.0,
+      "text": "DevOps or cloud-related roles include"
+    },
+    {
+      "start": 203.519,
+      "duration": 3.801,
+      "text": "Kubernetes skills. So, this is the right"
+    },
+    {
+      "start": 205.64,
+      "duration": 3.319,
+      "text": "time for learning and mastering"
+    },
+    {
+      "start": 207.32,
+      "duration": 3.88,
+      "text": "Kubernetes."
+    },
+    {
+      "start": 208.959,
+      "duration": 4.241,
+      "text": "Okay, now you know Kubernetes is used as"
+    },
+    {
+      "start": 211.2,
+      "duration": 4.0,
+      "text": "a container orchestrated tool used to"
+    },
+    {
+      "start": 213.2,
+      "duration": 3.72,
+      "text": "manage different Docker container, but"
+    },
+    {
+      "start": 215.2,
+      "duration": 3.64,
+      "text": "that's not all. Kubernetes provides you"
+    },
+    {
+      "start": 216.92,
+      "duration": 3.92,
+      "text": "with more features and benefits and"
+    },
+    {
+      "start": 218.84,
+      "duration": 3.56,
+      "text": "actually solves many more problem that"
+    },
+    {
+      "start": 220.84,
+      "duration": 3.24,
+      "text": "you might be facing when doing things"
+    },
+    {
+      "start": 222.4,
+      "duration": 3.68,
+      "text": "manually. So, in this section we are"
+    },
+    {
+      "start": 224.08,
+      "duration": 4.84,
+      "text": "going to understand what problems does"
+    },
+    {
+      "start": 226.08,
+      "duration": 4.32,
+      "text": "Kubernetes actually solve. So, we have"
+    },
+    {
+      "start": 228.92,
+      "duration": 3.56,
+      "text": "an example here, which is a recruitment"
+    },
+    {
+      "start": 230.4,
+      "duration": 4.0,
+      "text": "website. This recruitment website has"
+    },
+    {
+      "start": 232.48,
+      "duration": 3.76,
+      "text": "been transitioned into microservices,"
+    },
+    {
+      "start": 234.4,
+      "duration": 3.96,
+      "text": "deployed as a Docker container, and"
+    },
+    {
+      "start": 236.24,
+      "duration": 3.92,
+      "text": "managed using Kubernetes. So, we are"
+    },
+    {
+      "start": 238.36,
+      "duration": 3.16,
+      "text": "going to use this example to understand"
+    },
+    {
+      "start": 240.16,
+      "duration": 2.92,
+      "text": "what problems are you going to face when"
+    },
+    {
+      "start": 241.52,
+      "duration": 4.28,
+      "text": "you do it manually rather than using"
+    },
+    {
+      "start": 243.08,
+      "duration": 4.2,
+      "text": "Kubernetes. So, first is container"
+    },
+    {
+      "start": 245.8,
+      "duration": 3.08,
+      "text": "orchestration, obviously. When you have"
+    },
+    {
+      "start": 247.28,
+      "duration": 3.679,
+      "text": "multiple Docker containers, if you're"
+    },
+    {
+      "start": 248.88,
+      "duration": 4.4,
+      "text": "managing them yourself, it is going to"
+    },
+    {
+      "start": 250.959,
+      "duration": 3.961,
+      "text": "be very complex and time-consuming. So,"
+    },
+    {
+      "start": 253.28,
+      "duration": 3.959,
+      "text": "using Kubernetes, you can automate the"
+    },
+    {
+      "start": 254.92,
+      "duration": 4.56,
+      "text": "deployment, scaling, and management of"
+    },
+    {
+      "start": 257.239,
+      "duration": 5.001,
+      "text": "microservices, ensuring seamless"
+    },
+    {
+      "start": 259.48,
+      "duration": 5.68,
+      "text": "operation. So, this is the first benefit"
+    },
+    {
+      "start": 262.24,
+      "duration": 4.32,
+      "text": "of using Kubernetes. Next is declarative"
+    },
+    {
+      "start": 265.16,
+      "duration": 2.88,
+      "text": "configuration."
+    },
+    {
+      "start": 266.56,
+      "duration": 3.6,
+      "text": "If you have already used Kubernetes or"
+    },
+    {
+      "start": 268.04,
+      "duration": 4.36,
+      "text": "if you have done the previous projects"
+    },
+    {
+      "start": 270.16,
+      "duration": 4.12,
+      "text": "that on this channel, you might know if"
+    },
+    {
+      "start": 272.4,
+      "duration": 4.28,
+      "text": "you deploy anything on Kubernetes, we"
+    },
+    {
+      "start": 274.28,
+      "duration": 3.8,
+      "text": "create a manifest file. A manifest file"
+    },
+    {
+      "start": 276.68,
+      "duration": 3.28,
+      "text": "is something like this. Here is a"
+    },
+    {
+      "start": 278.08,
+      "duration": 3.6,
+      "text": "manifest file to create a deployment,"
+    },
+    {
+      "start": 279.96,
+      "duration": 3.44,
+      "text": "which is a Kubernetes object, where we"
+    },
+    {
+      "start": 281.68,
+      "duration": 3.4,
+      "text": "define everything. So, we define how"
+    },
+    {
+      "start": 283.4,
+      "duration": 3.64,
+      "text": "many replicas we want, what should be"
+    },
+    {
+      "start": 285.08,
+      "duration": 4.24,
+      "text": "the deployment strategy, what should be"
+    },
+    {
+      "start": 287.04,
+      "duration": 3.56,
+      "text": "the image used for this deployment,"
+    },
+    {
+      "start": 289.32,
+      "duration": 3.88,
+      "text": "where should be the configuration"
+    },
+    {
+      "start": 290.6,
+      "duration": 4.12,
+      "text": "stored, and everything else. So, using"
+    },
+    {
+      "start": 293.2,
+      "duration": 3.0,
+      "text": "Kubernetes, you can declare what do you"
+    },
+    {
+      "start": 294.72,
+      "duration": 3.48,
+      "text": "want. And if you are not using"
+    },
+    {
+      "start": 296.2,
+      "duration": 4.16,
+      "text": "Kubernetes, defining configurations for"
+    },
+    {
+      "start": 298.2,
+      "duration": 3.08,
+      "text": "complex applications can be error-prone."
+    },
+    {
+      "start": 300.36,
+      "duration": 2.12,
+      "text": "So, if you do it manually, there are"
+    },
+    {
+      "start": 301.28,
+      "duration": 2.96,
+      "text": "going to be errors, there are going to"
+    },
+    {
+      "start": 302.48,
+      "duration": 3.52,
+      "text": "be problems. Whereas, if you use"
+    },
+    {
+      "start": 304.24,
+      "duration": 4.28,
+      "text": "Kubernetes, you can declare everything."
+    },
+    {
+      "start": 306.0,
+      "duration": 4.6,
+      "text": "So, Kubernetes uses manifest or"
+    },
+    {
+      "start": 308.52,
+      "duration": 5.2,
+      "text": "declarative configurations, enabling you"
+    },
+    {
+      "start": 310.6,
+      "duration": 4.56,
+      "text": "to specify microservices desired state,"
+    },
+    {
+      "start": 313.72,
+      "duration": 4.199,
+      "text": "and Kubernetes ensure that the actual"
+    },
+    {
+      "start": 315.16,
+      "duration": 5.24,
+      "text": "state matches defined ones, minimizing"
+    },
+    {
+      "start": 317.919,
+      "duration": 4.201,
+      "text": "configuration errors. So,"
+    },
+    {
+      "start": 320.4,
+      "duration": 3.56,
+      "text": "Kubernetes is using manifest files, and"
+    },
+    {
+      "start": 322.12,
+      "duration": 3.96,
+      "text": "it will make sure that this manifest"
+    },
+    {
+      "start": 323.96,
+      "duration": 3.68,
+      "text": "file is exactly what you want on the"
+    },
+    {
+      "start": 326.08,
+      "duration": 3.56,
+      "text": "Kubernetes cluster. And it does that"
+    },
+    {
+      "start": 327.64,
+      "duration": 3.6,
+      "text": "using controllers, which we are going to"
+    },
+    {
+      "start": 329.64,
+      "duration": 3.2,
+      "text": "learn very soon. So, make sure you watch"
+    },
+    {
+      "start": 331.24,
+      "duration": 3.12,
+      "text": "the video and not just understand the"
+    },
+    {
+      "start": 332.84,
+      "duration": 3.079,
+      "text": "theory, but also understand what is"
+    },
+    {
+      "start": 334.36,
+      "duration": 3.72,
+      "text": "Kubernetes made of, how Kubernetes"
+    },
+    {
+      "start": 335.919,
+      "duration": 3.481,
+      "text": "actually solve all these problems. So,"
+    },
+    {
+      "start": 338.08,
+      "duration": 3.92,
+      "text": "the second problem that Kubernetes"
+    },
+    {
+      "start": 339.4,
+      "duration": 4.12,
+      "text": "solves is declarative configuration."
+    },
+    {
+      "start": 342.0,
+      "duration": 3.8,
+      "text": "When you declare things, there are less"
+    },
+    {
+      "start": 343.52,
+      "duration": 3.68,
+      "text": "chances of getting errors. Next problem"
+    },
+    {
+      "start": 345.8,
+      "duration": 3.56,
+      "text": "when not using Kubernetes is"
+    },
+    {
+      "start": 347.2,
+      "duration": 4.24,
+      "text": "scalability. And this is actually a very"
+    },
+    {
+      "start": 349.36,
+      "duration": 4.52,
+      "text": "big problem in microservices. Let's"
+    },
+    {
+      "start": 351.44,
+      "duration": 4.24,
+      "text": "consider your website is now viral and"
+    },
+    {
+      "start": 353.88,
+      "duration": 3.64,
+      "text": "there is a huge traffic coming in. You"
+    },
+    {
+      "start": 355.68,
+      "duration": 3.56,
+      "text": "have huge traffic coming in for"
+    },
+    {
+      "start": 357.52,
+      "duration": 3.28,
+      "text": "recruiters, for job vacancies, and now"
+    },
+    {
+      "start": 359.24,
+      "duration": 3.04,
+      "text": "you want to scale up. You can"
+    },
+    {
+      "start": 360.8,
+      "duration": 4.08,
+      "text": "dynamically scale up, or you can also"
+    },
+    {
+      "start": 362.28,
+      "duration": 4.8,
+      "text": "mention replicas to be four or five or"
+    },
+    {
+      "start": 364.88,
+      "duration": 3.8,
+      "text": "10, anything you want. So, scaling is a"
+    },
+    {
+      "start": 367.08,
+      "duration": 3.28,
+      "text": "problem."
+    },
+    {
+      "start": 368.68,
+      "duration": 3.76,
+      "text": "Scaling microservices efficiently"
+    },
+    {
+      "start": 370.36,
+      "duration": 4.08,
+      "text": "becomes difficult as the recruitment"
+    },
+    {
+      "start": 372.44,
+      "duration": 4.08,
+      "text": "platform grows. Whereas when using"
+    },
+    {
+      "start": 374.44,
+      "duration": 3.8,
+      "text": "Kubernetes, you can define the replicas"
+    },
+    {
+      "start": 376.52,
+      "duration": 3.96,
+      "text": "in the manifest files, or you can also"
+    },
+    {
+      "start": 378.24,
+      "duration": 4.24,
+      "text": "use something known as HPA, or"
+    },
+    {
+      "start": 380.48,
+      "duration": 3.56,
+      "text": "horizontal pod auto scaling, which uses"
+    },
+    {
+      "start": 382.48,
+      "duration": 4.16,
+      "text": "metrics, and based on the metrics, it"
+    },
+    {
+      "start": 384.04,
+      "duration": 4.24,
+      "text": "will scale up or down depending on the"
+    },
+    {
+      "start": 386.64,
+      "duration": 4.0,
+      "text": "load or traffic or whatever metric you"
+    },
+    {
+      "start": 388.28,
+      "duration": 4.72,
+      "text": "have, which can be CPU, memory, same as"
+    },
+    {
+      "start": 390.64,
+      "duration": 4.68,
+      "text": "auto scaling groups in AWS. So,"
+    },
+    {
+      "start": 393.0,
+      "duration": 4.76,
+      "text": "Kubernetes automatically scales services"
+    },
+    {
+      "start": 395.32,
+      "duration": 4.76,
+      "text": "based on demand, optimizing performance"
+    },
+    {
+      "start": 397.76,
+      "duration": 3.44,
+      "text": "across cluster node. So, this is also"
+    },
+    {
+      "start": 400.08,
+      "duration": 3.0,
+      "text": "one of the problems that Kubernetes"
+    },
+    {
+      "start": 401.2,
+      "duration": 4.0,
+      "text": "solves, which is scalability for"
+    },
+    {
+      "start": 403.08,
+      "duration": 3.8,
+      "text": "microservices application."
+    },
+    {
+      "start": 405.2,
+      "duration": 3.28,
+      "text": "Now, let's consider your application is"
+    },
+    {
+      "start": 406.88,
+      "duration": 3.64,
+      "text": "more viral. There's a huge traffic"
+    },
+    {
+      "start": 408.48,
+      "duration": 3.76,
+      "text": "coming in, and you are making money. You"
+    },
+    {
+      "start": 410.52,
+      "duration": 4.24,
+      "text": "have also solved the scalability issue"
+    },
+    {
+      "start": 412.24,
+      "duration": 4.88,
+      "text": "using Kubernetes, but you also want the"
+    },
+    {
+      "start": 414.76,
+      "duration": 3.84,
+      "text": "application to be up all the time, no"
+    },
+    {
+      "start": 417.12,
+      "duration": 3.96,
+      "text": "matter what. Your application should"
+    },
+    {
+      "start": 418.6,
+      "duration": 4.319,
+      "text": "never go down, which can cause issues or"
+    },
+    {
+      "start": 421.08,
+      "duration": 3.32,
+      "text": "which can cause business loss. So, how"
+    },
+    {
+      "start": 422.919,
+      "duration": 3.681,
+      "text": "can you solve this problem? This is"
+    },
+    {
+      "start": 424.4,
+      "duration": 4.64,
+      "text": "actually a very big problem in many"
+    },
+    {
+      "start": 426.6,
+      "duration": 4.76,
+      "text": "websites and applications. So, ensuring"
+    },
+    {
+      "start": 429.04,
+      "duration": 4.2,
+      "text": "continuous availability for all services"
+    },
+    {
+      "start": 431.36,
+      "duration": 3.72,
+      "text": "is challenging. Whereas when you use"
+    },
+    {
+      "start": 433.24,
+      "duration": 3.76,
+      "text": "Kubernetes, you can define how many"
+    },
+    {
+      "start": 435.08,
+      "duration": 3.36,
+      "text": "replicas you want. So, in this"
+    },
+    {
+      "start": 437.0,
+      "duration": 4.36,
+      "text": "deployment, we have defined to have two"
+    },
+    {
+      "start": 438.44,
+      "duration": 4.64,
+      "text": "replicas of this particular deployment."
+    },
+    {
+      "start": 441.36,
+      "duration": 4.16,
+      "text": "So, Kubernetes will make sure that at"
+    },
+    {
+      "start": 443.08,
+      "duration": 4.44,
+      "text": "every time, there should be two replicas"
+    },
+    {
+      "start": 445.52,
+      "duration": 4.08,
+      "text": "all the time. Kubernetes ensures fault"
+    },
+    {
+      "start": 447.52,
+      "duration": 3.84,
+      "text": "tolerance by automatically rescheduling"
+    },
+    {
+      "start": 449.6,
+      "duration": 3.56,
+      "text": "failed containers and maintaining the"
+    },
+    {
+      "start": 451.36,
+      "duration": 3.6,
+      "text": "desired state and ensuring high"
+    },
+    {
+      "start": 453.16,
+      "duration": 3.16,
+      "text": "availability. So, if any of these"
+    },
+    {
+      "start": 454.96,
+      "duration": 2.6,
+      "text": "containers is down, let's say rather"
+    },
+    {
+      "start": 456.32,
+      "duration": 2.96,
+      "text": "than having two, we only have one"
+    },
+    {
+      "start": 457.56,
+      "duration": 4.12,
+      "text": "container, Kubernetes will check that"
+    },
+    {
+      "start": 459.28,
+      "duration": 4.64,
+      "text": "and automatically create a new container"
+    },
+    {
+      "start": 461.68,
+      "duration": 4.12,
+      "text": "to maintain the count of two as defined"
+    },
+    {
+      "start": 463.92,
+      "duration": 4.04,
+      "text": "in the manifest and Kubernetes actually"
+    },
+    {
+      "start": 465.8,
+      "duration": 3.68,
+      "text": "does that using replication controller"
+    },
+    {
+      "start": 467.96,
+      "duration": 3.72,
+      "text": "which maintains the desired number of"
+    },
+    {
+      "start": 469.48,
+      "duration": 3.84,
+      "text": "pods replicas. So, using replication"
+    },
+    {
+      "start": 471.68,
+      "duration": 3.84,
+      "text": "controller Kubernetes will make sure"
+    },
+    {
+      "start": 473.32,
+      "duration": 3.96,
+      "text": "your application is highly available and"
+    },
+    {
+      "start": 475.52,
+      "duration": 3.52,
+      "text": "you make money. So, this is another"
+    },
+    {
+      "start": 477.28,
+      "duration": 3.48,
+      "text": "problem that Kubernetes is solving which"
+    },
+    {
+      "start": 479.04,
+      "duration": 3.08,
+      "text": "is fault tolerance and high"
+    },
+    {
+      "start": 480.76,
+      "duration": 2.8,
+      "text": "availability."
+    },
+    {
+      "start": 482.12,
+      "duration": 3.88,
+      "text": "Another big problem when using"
+    },
+    {
+      "start": 483.56,
+      "duration": 4.4,
+      "text": "microservices application is service"
+    },
+    {
+      "start": 486.0,
+      "duration": 3.64,
+      "text": "discovery and load balancing. When you"
+    },
+    {
+      "start": 487.96,
+      "duration": 3.52,
+      "text": "have a microservices application, it's"
+    },
+    {
+      "start": 489.64,
+      "duration": 3.32,
+      "text": "very hard to find other microservices or"
+    },
+    {
+      "start": 491.48,
+      "duration": 3.12,
+      "text": "to communicate between them. For"
+    },
+    {
+      "start": 492.96,
+      "duration": 2.52,
+      "text": "example, if you look at this diagram"
+    },
+    {
+      "start": 494.6,
+      "duration": 2.64,
+      "text": "here,"
+    },
+    {
+      "start": 495.48,
+      "duration": 3.64,
+      "text": "this is a microservices architecture for"
+    },
+    {
+      "start": 497.24,
+      "duration": 3.88,
+      "text": "an e-commerce application where you have"
+    },
+    {
+      "start": 499.12,
+      "duration": 4.24,
+      "text": "account service, order service, shipping"
+    },
+    {
+      "start": 501.12,
+      "duration": 3.52,
+      "text": "service, and book service. So, let's say"
+    },
+    {
+      "start": 503.36,
+      "duration": 3.12,
+      "text": "user is here and he has ordered"
+    },
+    {
+      "start": 504.64,
+      "duration": 3.16,
+      "text": "something. Next, the order service does"
+    },
+    {
+      "start": 506.48,
+      "duration": 4.4,
+      "text": "not know where is the shipping service"
+    },
+    {
+      "start": 507.8,
+      "duration": 5.239,
+      "text": "or what IP is it working on. Also, IP"
+    },
+    {
+      "start": 510.88,
+      "duration": 3.96,
+      "text": "address for a pod is temporary and it"
+    },
+    {
+      "start": 513.039,
+      "duration": 3.44,
+      "text": "changes every time. So, it's a big"
+    },
+    {
+      "start": 514.84,
+      "duration": 3.04,
+      "text": "problem to locate and communicate with"
+    },
+    {
+      "start": 516.479,
+      "duration": 2.841,
+      "text": "other services."
+    },
+    {
+      "start": 517.88,
+      "duration": 4.0,
+      "text": "Discovering and connecting to dynamic"
+    },
+    {
+      "start": 519.32,
+      "duration": 4.64,
+      "text": "services is challenging. Whereas, if you"
+    },
+    {
+      "start": 521.88,
+      "duration": 4.44,
+      "text": "use Kubernetes, it automates all of this"
+    },
+    {
+      "start": 523.96,
+      "duration": 3.68,
+      "text": "using stuff like labels and selectors."
+    },
+    {
+      "start": 526.32,
+      "duration": 3.24,
+      "text": "So, you can define labels and also"
+    },
+    {
+      "start": 527.64,
+      "duration": 4.16,
+      "text": "selectors in your manifest files. You"
+    },
+    {
+      "start": 529.56,
+      "duration": 4.08,
+      "text": "can use ingress controllers, you can use"
+    },
+    {
+      "start": 531.8,
+      "duration": 4.36,
+      "text": "service endpoints, and lot more that"
+    },
+    {
+      "start": 533.64,
+      "duration": 4.68,
+      "text": "will help you automate service discovery"
+    },
+    {
+      "start": 536.16,
+      "duration": 3.88,
+      "text": "and load balancing facilitating seamless"
+    },
+    {
+      "start": 538.32,
+      "duration": 3.8,
+      "text": "communication between service"
+    },
+    {
+      "start": 540.04,
+      "duration": 3.76,
+      "text": "interfaces. Now, let's talk about"
+    },
+    {
+      "start": 542.12,
+      "duration": 3.24,
+      "text": "updating an application. Let's say you"
+    },
+    {
+      "start": 543.8,
+      "duration": 3.72,
+      "text": "want to update an application, you have"
+    },
+    {
+      "start": 545.36,
+      "duration": 3.76,
+      "text": "new versions for your microservices."
+    },
+    {
+      "start": 547.52,
+      "duration": 4.04,
+      "text": "But, when you want to update it, you"
+    },
+    {
+      "start": 549.12,
+      "duration": 3.8,
+      "text": "don't want the application to go down."
+    },
+    {
+      "start": 551.56,
+      "duration": 3.24,
+      "text": "Also, if there is any problem with the"
+    },
+    {
+      "start": 552.92,
+      "duration": 3.32,
+      "text": "new version, you want to roll back and"
+    },
+    {
+      "start": 554.8,
+      "duration": 3.72,
+      "text": "when rolling back, your application"
+    },
+    {
+      "start": 556.24,
+      "duration": 4.96,
+      "text": "should not go down which is very complex"
+    },
+    {
+      "start": 558.52,
+      "duration": 4.68,
+      "text": "when not using Kubernetes. So,"
+    },
+    {
+      "start": 561.2,
+      "duration": 3.52,
+      "text": "rolling update and rollbacks, updating"
+    },
+    {
+      "start": 563.2,
+      "duration": 4.12,
+      "text": "or rolling back application without"
+    },
+    {
+      "start": 564.72,
+      "duration": 3.96,
+      "text": "downtime is risky. But, when you use"
+    },
+    {
+      "start": 567.32,
+      "duration": 3.24,
+      "text": "Kubernetes, you have different"
+    },
+    {
+      "start": 568.68,
+      "duration": 4.04,
+      "text": "deployment strategies which will help"
+    },
+    {
+      "start": 570.56,
+      "duration": 3.72,
+      "text": "you do this very easily."
+    },
+    {
+      "start": 572.72,
+      "duration": 4.24,
+      "text": "In Kubernetes, there are two types of"
+    },
+    {
+      "start": 574.28,
+      "duration": 5.24,
+      "text": "strategies, recreate and rolling update."
+    },
+    {
+      "start": 576.96,
+      "duration": 4.52,
+      "text": "Recreate will kill all the existing pods"
+    },
+    {
+      "start": 579.52,
+      "duration": 3.92,
+      "text": "before a new version is created. So,"
+    },
+    {
+      "start": 581.48,
+      "duration": 4.08,
+      "text": "this will cause downtime. Whereas, if"
+    },
+    {
+      "start": 583.44,
+      "duration": 4.12,
+      "text": "you use rolling update, it will let you"
+    },
+    {
+      "start": 585.56,
+      "duration": 3.72,
+      "text": "keep new version along with the previous"
+    },
+    {
+      "start": 587.56,
+      "duration": 3.64,
+      "text": "version. And when the new version is"
+    },
+    {
+      "start": 589.28,
+      "duration": 3.44,
+      "text": "ready, only then the new previous"
+    },
+    {
+      "start": 591.2,
+      "duration": 2.96,
+      "text": "version will be deleted. Which means"
+    },
+    {
+      "start": 592.72,
+      "duration": 4.24,
+      "text": "that all times your application will"
+    },
+    {
+      "start": 594.16,
+      "duration": 5.04,
+      "text": "have either new or previous version and"
+    },
+    {
+      "start": 596.96,
+      "duration": 4.0,
+      "text": "no downtime. Also, when rolling back,"
+    },
+    {
+      "start": 599.2,
+      "duration": 3.16,
+      "text": "you will have no downtime. And these"
+    },
+    {
+      "start": 600.96,
+      "duration": 3.92,
+      "text": "strategies can be defined in the"
+    },
+    {
+      "start": 602.36,
+      "duration": 4.6,
+      "text": "manifest files here in the strategy"
+    },
+    {
+      "start": 604.88,
+      "duration": 3.64,
+      "text": "section. So, we have strategy defined as"
+    },
+    {
+      "start": 606.96,
+      "duration": 3.24,
+      "text": "rolling update. So, this is how you can"
+    },
+    {
+      "start": 608.52,
+      "duration": 3.68,
+      "text": "solve another problem of rolling updates"
+    },
+    {
+      "start": 610.2,
+      "duration": 4.8,
+      "text": "and rollbacks where Kubernetes support"
+    },
+    {
+      "start": 612.2,
+      "duration": 5.04,
+      "text": "seamless updates without disrupting user"
+    },
+    {
+      "start": 615.0,
+      "duration": 4.56,
+      "text": "behaviors and provides capability to"
+    },
+    {
+      "start": 617.24,
+      "duration": 3.84,
+      "text": "rollback changes as well."
+    },
+    {
+      "start": 619.56,
+      "duration": 3.6,
+      "text": "So, these are all the benefits and"
+    },
+    {
+      "start": 621.08,
+      "duration": 4.64,
+      "text": "problems that Kubernetes is actually"
+    },
+    {
+      "start": 623.16,
+      "duration": 4.6,
+      "text": "solving. I hope now you have an idea of"
+    },
+    {
+      "start": 625.72,
+      "duration": 3.48,
+      "text": "how powerful Kubernetes is and how"
+    },
+    {
+      "start": 627.76,
+      "duration": 4.0,
+      "text": "Kubernetes can help you with your"
+    },
+    {
+      "start": 629.2,
+      "duration": 4.32,
+      "text": "microservices application. So, let's"
+    },
+    {
+      "start": 631.76,
+      "duration": 3.6,
+      "text": "check out what is inside a Kubernetes"
+    },
+    {
+      "start": 633.52,
+      "duration": 3.68,
+      "text": "cluster, understanding Kubernetes"
+    },
+    {
+      "start": 635.36,
+      "duration": 3.16,
+      "text": "architecture in depth. We're going to"
+    },
+    {
+      "start": 637.2,
+      "duration": 3.8,
+      "text": "see what is the cluster actually made"
+    },
+    {
+      "start": 638.52,
+      "duration": 4.84,
+      "text": "of, what are components inside master"
+    },
+    {
+      "start": 641.0,
+      "duration": 4.48,
+      "text": "node and worker node, what are their"
+    },
+    {
+      "start": 643.36,
+      "duration": 4.04,
+      "text": "roles and responsibility. Then moving on"
+    },
+    {
+      "start": 645.48,
+      "duration": 4.08,
+      "text": "to understand how is an application"
+    },
+    {
+      "start": 647.4,
+      "duration": 4.0,
+      "text": "deployed on Kubernetes, what happens in"
+    },
+    {
+      "start": 649.56,
+      "duration": 3.88,
+      "text": "the backend, what is going on with other"
+    },
+    {
+      "start": 651.4,
+      "duration": 3.92,
+      "text": "components and how they actually work."
+    },
+    {
+      "start": 653.44,
+      "duration": 4.399,
+      "text": "So, let's get started with understanding"
+    },
+    {
+      "start": 655.32,
+      "duration": 4.12,
+      "text": "what is Kubernetes architecture. So, at"
+    },
+    {
+      "start": 657.839,
+      "duration": 4.441,
+      "text": "a very high level, Kubernetes cluster"
+    },
+    {
+      "start": 659.44,
+      "duration": 5.04,
+      "text": "consists of two main things, master node"
+    },
+    {
+      "start": 662.28,
+      "duration": 4.44,
+      "text": "and worker nodes. Master node, also"
+    },
+    {
+      "start": 664.48,
+      "duration": 4.56,
+      "text": "known as control plane, is responsible"
+    },
+    {
+      "start": 666.72,
+      "duration": 4.84,
+      "text": "to take cluster decisions and also"
+    },
+    {
+      "start": 669.04,
+      "duration": 4.96,
+      "text": "responsible to handle things inside the"
+    },
+    {
+      "start": 671.56,
+      "duration": 5.04,
+      "text": "cluster. Whereas, worker nodes are where"
+    },
+    {
+      "start": 674.0,
+      "duration": 4.6,
+      "text": "actual workload happen, where the actual"
+    },
+    {
+      "start": 676.6,
+      "duration": 3.28,
+      "text": "application pod is running. So,"
+    },
+    {
+      "start": 678.6,
+      "duration": 3.6,
+      "text": "everything happening in the cluster is"
+    },
+    {
+      "start": 679.88,
+      "duration": 4.52,
+      "text": "going to be managed by master node or"
+    },
+    {
+      "start": 682.2,
+      "duration": 3.639,
+      "text": "control plane. Whereas, responsibility"
+    },
+    {
+      "start": 684.4,
+      "duration": 4.04,
+      "text": "of worker node is to receive"
+    },
+    {
+      "start": 685.839,
+      "duration": 4.521,
+      "text": "instructions from the control plane or"
+    },
+    {
+      "start": 688.44,
+      "duration": 4.48,
+      "text": "this master node and manage local"
+    },
+    {
+      "start": 690.36,
+      "duration": 4.12,
+      "text": "executions of workload. So, in this"
+    },
+    {
+      "start": 692.92,
+      "duration": 3.72,
+      "text": "worker node, your application will be"
+    },
+    {
+      "start": 694.48,
+      "duration": 4.4,
+      "text": "running inside a pod. A pod is a"
+    },
+    {
+      "start": 696.64,
+      "duration": 4.56,
+      "text": "smallest unit in Kubernetes cluster. If"
+    },
+    {
+      "start": 698.88,
+      "duration": 4.56,
+      "text": "you look here, this is a pod inside a"
+    },
+    {
+      "start": 701.2,
+      "duration": 5.12,
+      "text": "worker node. A pod is going to contain"
+    },
+    {
+      "start": 703.44,
+      "duration": 5.16,
+      "text": "your application containers. Usually, a"
+    },
+    {
+      "start": 706.32,
+      "duration": 3.96,
+      "text": "pod will have single container, but"
+    },
+    {
+      "start": 708.6,
+      "duration": 3.4,
+      "text": "there can be more than one containers as"
+    },
+    {
+      "start": 710.28,
+      "duration": 3.56,
+      "text": "well. So, this is a pod having one"
+    },
+    {
+      "start": 712.0,
+      "duration": 3.24,
+      "text": "container. This is another pod having"
+    },
+    {
+      "start": 713.84,
+      "duration": 2.8,
+      "text": "two containers."
+    },
+    {
+      "start": 715.24,
+      "duration": 4.24,
+      "text": "And the key components of master node"
+    },
+    {
+      "start": 716.64,
+      "duration": 5.36,
+      "text": "include API server, controller manager,"
+    },
+    {
+      "start": 719.48,
+      "duration": 4.44,
+      "text": "scheduler, etcd. Whereas, components of"
+    },
+    {
+      "start": 722.0,
+      "duration": 4.24,
+      "text": "worker nodes include kubelet, kube"
+    },
+    {
+      "start": 723.92,
+      "duration": 4.24,
+      "text": "proxy, and container runtime. You have a"
+    },
+    {
+      "start": 726.24,
+      "duration": 3.6,
+      "text": "diagram here which has all the master"
+    },
+    {
+      "start": 728.16,
+      "duration": 3.36,
+      "text": "node components and worker node"
+    },
+    {
+      "start": 729.84,
+      "duration": 4.0,
+      "text": "components as well. We are now going to"
+    },
+    {
+      "start": 731.52,
+      "duration": 4.16,
+      "text": "look into what is etcd, what is the"
+    },
+    {
+      "start": 733.84,
+      "duration": 3.72,
+      "text": "purpose of this component, what is"
+    },
+    {
+      "start": 735.68,
+      "duration": 3.96,
+      "text": "controller manager, what is kube API"
+    },
+    {
+      "start": 737.56,
+      "duration": 4.0,
+      "text": "server, what is scheduler, what is"
+    },
+    {
+      "start": 739.64,
+      "duration": 4.0,
+      "text": "kubelet in worker node, what is kube"
+    },
+    {
+      "start": 741.56,
+      "duration": 3.64,
+      "text": "proxy in worker node, and lot more"
+    },
+    {
+      "start": 743.64,
+      "duration": 3.88,
+      "text": "in-depth. So, let's go ahead and"
+    },
+    {
+      "start": 745.2,
+      "duration": 4.6,
+      "text": "understand each of these components one"
+    },
+    {
+      "start": 747.52,
+      "duration": 3.84,
+      "text": "by one and how they actually work inside"
+    },
+    {
+      "start": 749.8,
+      "duration": 3.36,
+      "text": "the cluster."
+    },
+    {
+      "start": 751.36,
+      "duration": 4.32,
+      "text": "So, the first master node component that"
+    },
+    {
+      "start": 753.16,
+      "duration": 5.12,
+      "text": "we're going to look into is etcd. So,"
+    },
+    {
+      "start": 755.68,
+      "duration": 4.88,
+      "text": "what is etcd? Etcd is a distributed key"
+    },
+    {
+      "start": 758.28,
+      "duration": 4.48,
+      "text": "value store that serves as a primary"
+    },
+    {
+      "start": 760.56,
+      "duration": 4.24,
+      "text": "data store for Kubernetes. It's a key"
+    },
+    {
+      "start": 762.76,
+      "duration": 4.68,
+      "text": "value store that is used to contain all"
+    },
+    {
+      "start": 764.8,
+      "duration": 4.76,
+      "text": "the information about the cluster. Etcd"
+    },
+    {
+      "start": 767.44,
+      "duration": 4.08,
+      "text": "will have all the information of what"
+    },
+    {
+      "start": 769.56,
+      "duration": 3.44,
+      "text": "node is running, what is the pod running"
+    },
+    {
+      "start": 771.52,
+      "duration": 3.08,
+      "text": "on the node, or what are different"
+    },
+    {
+      "start": 773.0,
+      "duration": 3.12,
+      "text": "services inside the cluster, and"
+    },
+    {
+      "start": 774.6,
+      "duration": 3.68,
+      "text": "everything. So, it stores the"
+    },
+    {
+      "start": 776.12,
+      "duration": 4.92,
+      "text": "configuration data that represents the"
+    },
+    {
+      "start": 778.28,
+      "duration": 6.32,
+      "text": "state of entire cluster and including"
+    },
+    {
+      "start": 781.04,
+      "duration": 5.52,
+      "text": "about nodes, pods, services, and more."
+    },
+    {
+      "start": 784.6,
+      "duration": 4.04,
+      "text": "Now, we know etcd is used to store and"
+    },
+    {
+      "start": 786.56,
+      "duration": 4.4,
+      "text": "retrieve configuration data for all the"
+    },
+    {
+      "start": 788.64,
+      "duration": 5.08,
+      "text": "cluster components, which makes etcd a"
+    },
+    {
+      "start": 790.96,
+      "duration": 4.48,
+      "text": "very important component of master node."
+    },
+    {
+      "start": 793.72,
+      "duration": 3.44,
+      "text": "And also, the data inside etcd is very"
+    },
+    {
+      "start": 795.44,
+      "duration": 4.6,
+      "text": "important. So, we need to make sure that"
+    },
+    {
+      "start": 797.16,
+      "duration": 4.76,
+      "text": "it's not deleted or not lost. One of the"
+    },
+    {
+      "start": 800.04,
+      "duration": 4.12,
+      "text": "responsibilities of etcd is to"
+    },
+    {
+      "start": 801.92,
+      "duration": 4.64,
+      "text": "consistently replicate data across"
+    },
+    {
+      "start": 804.16,
+      "duration": 4.92,
+      "text": "cluster of etcd node, providing fault"
+    },
+    {
+      "start": 806.56,
+      "duration": 4.44,
+      "text": "tolerance and high availability to make"
+    },
+    {
+      "start": 809.08,
+      "duration": 2.96,
+      "text": "sure that the data is not lost at any"
+    },
+    {
+      "start": 811.0,
+      "duration": 2.8,
+      "text": "point."
+    },
+    {
+      "start": 812.04,
+      "duration": 3.28,
+      "text": "Now, I also have a documentation"
+    },
+    {
+      "start": 813.8,
+      "duration": 3.0,
+      "text": "attached for all of these master nodes."
+    },
+    {
+      "start": 815.32,
+      "duration": 4.2,
+      "text": "You can go and read about it if you want"
+    },
+    {
+      "start": 816.8,
+      "duration": 4.96,
+      "text": "to. Here is the documentation of etcd by"
+    },
+    {
+      "start": 819.52,
+      "duration": 3.8,
+      "text": "Kubernetes. So, if you do read here,"
+    },
+    {
+      "start": 821.76,
+      "duration": 3.76,
+      "text": "etcd is a consistent and highly"
+    },
+    {
+      "start": 823.32,
+      "duration": 4.32,
+      "text": "available key-value store used as"
+    },
+    {
+      "start": 825.52,
+      "duration": 4.24,
+      "text": "Kubernetes backing store for cluster"
+    },
+    {
+      "start": 827.64,
+      "duration": 4.24,
+      "text": "data. One of the important question for"
+    },
+    {
+      "start": 829.76,
+      "duration": 4.44,
+      "text": "CKA is backing up data, which you can"
+    },
+    {
+      "start": 831.88,
+      "duration": 4.92,
+      "text": "see here in this section, and you can"
+    },
+    {
+      "start": 834.2,
+      "duration": 5.64,
+      "text": "back up data using these commands. etcd"
+    },
+    {
+      "start": 836.8,
+      "duration": 5.16,
+      "text": "uses CLI tool, which is etcdctl, and it"
+    },
+    {
+      "start": 839.84,
+      "duration": 4.2,
+      "text": "has two APIs, version two and version"
+    },
+    {
+      "start": 841.96,
+      "duration": 3.76,
+      "text": "three, right now supported. If you want"
+    },
+    {
+      "start": 844.04,
+      "duration": 4.12,
+      "text": "to back it up, you can run the command"
+    },
+    {
+      "start": 845.72,
+      "duration": 4.08,
+      "text": "along with certificate files, which are"
+    },
+    {
+      "start": 848.16,
+      "duration": 3.2,
+      "text": "mentioned here. So, this is the command"
+    },
+    {
+      "start": 849.8,
+      "duration": 4.28,
+      "text": "to take the backup, and you can also"
+    },
+    {
+      "start": 851.36,
+      "duration": 4.2,
+      "text": "restore it. So, this is how etcd works."
+    },
+    {
+      "start": 854.08,
+      "duration": 3.84,
+      "text": "We are going to see more in depth about"
+    },
+    {
+      "start": 855.56,
+      "duration": 4.36,
+      "text": "etcd when we look at the example below."
+    },
+    {
+      "start": 857.92,
+      "duration": 4.68,
+      "text": "So, this is etcd, which is used to store"
+    },
+    {
+      "start": 859.92,
+      "duration": 5.04,
+      "text": "all the cluster information about pods,"
+    },
+    {
+      "start": 862.6,
+      "duration": 4.68,
+      "text": "nodes, services, everything, and storing"
+    },
+    {
+      "start": 864.96,
+      "duration": 3.96,
+      "text": "in the cluster state."
+    },
+    {
+      "start": 867.28,
+      "duration": 4.28,
+      "text": "Next very important master node"
+    },
+    {
+      "start": 868.92,
+      "duration": 4.44,
+      "text": "component is kube API server. If you"
+    },
+    {
+      "start": 871.56,
+      "duration": 4.0,
+      "text": "look at this Kubernetes architecture,"
+    },
+    {
+      "start": 873.36,
+      "duration": 4.4,
+      "text": "you will see API server is the center of"
+    },
+    {
+      "start": 875.56,
+      "duration": 5.84,
+      "text": "communication for all the components"
+    },
+    {
+      "start": 877.76,
+      "duration": 5.96,
+      "text": "inside the Kubernetes cluster. In fact,"
+    },
+    {
+      "start": 881.4,
+      "duration": 4.28,
+      "text": "etcd cluster only talks to API server."
+    },
+    {
+      "start": 883.72,
+      "duration": 4.28,
+      "text": "So, if scheduler or any other components"
+    },
+    {
+      "start": 885.68,
+      "duration": 4.2,
+      "text": "want to get some data from the etcd,"
+    },
+    {
+      "start": 888.0,
+      "duration": 4.32,
+      "text": "they will ask the API. API will get the"
+    },
+    {
+      "start": 889.88,
+      "duration": 4.52,
+      "text": "data, and then it will be served. Not"
+    },
+    {
+      "start": 892.32,
+      "duration": 4.36,
+      "text": "just this, whenever you run a kubectl"
+    },
+    {
+      "start": 894.4,
+      "duration": 4.24,
+      "text": "get pod or get nodes command to retrieve"
+    },
+    {
+      "start": 896.68,
+      "duration": 4.44,
+      "text": "the information, it actually goes to API"
+    },
+    {
+      "start": 898.64,
+      "duration": 4.44,
+      "text": "server. API server validates and"
+    },
+    {
+      "start": 901.12,
+      "duration": 4.4,
+      "text": "authenticates the request, then retrieve"
+    },
+    {
+      "start": 903.08,
+      "duration": 4.92,
+      "text": "the data, and give it out to the user."
+    },
+    {
+      "start": 905.52,
+      "duration": 4.96,
+      "text": "API server is central management entity"
+    },
+    {
+      "start": 908.0,
+      "duration": 4.68,
+      "text": "for entire Kubernetes cluster. It"
+    },
+    {
+      "start": 910.48,
+      "duration": 4.16,
+      "text": "exposes the Kubernetes API, which allow"
+    },
+    {
+      "start": 912.68,
+      "duration": 4.56,
+      "text": "users, administrators, and other"
+    },
+    {
+      "start": 914.64,
+      "duration": 4.04,
+      "text": "components to interact with the cluster."
+    },
+    {
+      "start": 917.24,
+      "duration": 3.76,
+      "text": "All the other components communicate"
+    },
+    {
+      "start": 918.68,
+      "duration": 4.52,
+      "text": "with the API server to read or modify"
+    },
+    {
+      "start": 921.0,
+      "duration": 5.0,
+      "text": "the cluster state. So, now we understand"
+    },
+    {
+      "start": 923.2,
+      "duration": 4.4,
+      "text": "kube API server exposes an API which"
+    },
+    {
+      "start": 926.0,
+      "duration": 3.6,
+      "text": "lets you communicate to the components"
+    },
+    {
+      "start": 927.6,
+      "duration": 3.64,
+      "text": "inside the cluster and also to get the"
+    },
+    {
+      "start": 929.6,
+      "duration": 3.08,
+      "text": "data. So, here are some of the"
+    },
+    {
+      "start": 931.24,
+      "duration": 3.64,
+      "text": "responsibilities. It validates and"
+    },
+    {
+      "start": 932.68,
+      "duration": 5.24,
+      "text": "configures data for API objects. And you"
+    },
+    {
+      "start": 934.88,
+      "duration": 4.96,
+      "text": "can talk to the API server using kubectl"
+    },
+    {
+      "start": 937.92,
+      "duration": 4.24,
+      "text": "commands, which is command line tool,"
+    },
+    {
+      "start": 939.84,
+      "duration": 4.72,
+      "text": "also k9s. Uh you can also talk to the"
+    },
+    {
+      "start": 942.16,
+      "duration": 5.16,
+      "text": "kube API server using Kubernetes UI"
+    },
+    {
+      "start": 944.56,
+      "duration": 4.8,
+      "text": "dashboard or using API REST methods like"
+    },
+    {
+      "start": 947.32,
+      "duration": 4.52,
+      "text": "get, put, post, delete to retrieve the"
+    },
+    {
+      "start": 949.36,
+      "duration": 5.24,
+      "text": "information. It also acts as a front-end"
+    },
+    {
+      "start": 951.84,
+      "duration": 4.96,
+      "text": "for etcd data store. As I told you, etcd"
+    },
+    {
+      "start": 954.6,
+      "duration": 3.76,
+      "text": "can only be communicated through the API"
+    },
+    {
+      "start": 956.8,
+      "duration": 3.64,
+      "text": "server. And I have a documentation"
+    },
+    {
+      "start": 958.36,
+      "duration": 3.8,
+      "text": "attached for kube API server, which you"
+    },
+    {
+      "start": 960.44,
+      "duration": 4.0,
+      "text": "can go and access. According to the"
+    },
+    {
+      "start": 962.16,
+      "duration": 4.32,
+      "text": "documentation, the API server validates"
+    },
+    {
+      "start": 964.44,
+      "duration": 3.68,
+      "text": "and configures data for API objects,"
+    },
+    {
+      "start": 966.48,
+      "duration": 3.92,
+      "text": "which includes pods, services,"
+    },
+    {
+      "start": 968.12,
+      "duration": 3.64,
+      "text": "replication controllers, and others."
+    },
+    {
+      "start": 970.4,
+      "duration": 3.44,
+      "text": "So, this is documentation. If you want"
+    },
+    {
+      "start": 971.76,
+      "duration": 4.92,
+      "text": "to read more about API server, go ahead"
+    },
+    {
+      "start": 973.84,
+      "duration": 4.8,
+      "text": "and read on the official documentation."
+    },
+    {
+      "start": 976.68,
+      "duration": 3.88,
+      "text": "Next, moving on, we have another very"
+    },
+    {
+      "start": 978.64,
+      "duration": 4.2,
+      "text": "important master node component, which"
+    },
+    {
+      "start": 980.56,
+      "duration": 4.08,
+      "text": "is kube scheduler. Kube scheduler, as"
+    },
+    {
+      "start": 982.84,
+      "duration": 4.68,
+      "text": "the name suggests, is responsible for"
+    },
+    {
+      "start": 984.64,
+      "duration": 4.68,
+      "text": "scheduling pods on the worker nodes. So,"
+    },
+    {
+      "start": 987.52,
+      "duration": 4.0,
+      "text": "let's consider a scenario where a user"
+    },
+    {
+      "start": 989.32,
+      "duration": 4.84,
+      "text": "has requested to create a pod using the"
+    },
+    {
+      "start": 991.52,
+      "duration": 4.96,
+      "text": "command kubectl apply {hyphen}f the pod"
+    },
+    {
+      "start": 994.16,
+      "duration": 4.2,
+      "text": "manifest. The API server is going to get"
+    },
+    {
+      "start": 996.48,
+      "duration": 4.8,
+      "text": "that request, and scheduler is going to"
+    },
+    {
+      "start": 998.36,
+      "duration": 4.8,
+      "text": "check which node is the best fit for the"
+    },
+    {
+      "start": 1001.28,
+      "duration": 3.76,
+      "text": "pod, and it is going to decide the node"
+    },
+    {
+      "start": 1003.16,
+      "duration": 4.36,
+      "text": "on which the pod has to be placed."
+    },
+    {
+      "start": 1005.04,
+      "duration": 5.2,
+      "text": "Remember, it only decides where to place"
+    },
+    {
+      "start": 1007.52,
+      "duration": 4.0,
+      "text": "the pod, but not actually places it. So,"
+    },
+    {
+      "start": 1010.24,
+      "duration": 3.32,
+      "text": "it's going to decide which node is the"
+    },
+    {
+      "start": 1011.52,
+      "duration": 4.44,
+      "text": "best on different factors like the CPU"
+    },
+    {
+      "start": 1013.56,
+      "duration": 4.32,
+      "text": "requirements, memory requirements, label"
+    },
+    {
+      "start": 1015.96,
+      "duration": 3.879,
+      "text": "selectors, node affinity rules. There"
+    },
+    {
+      "start": 1017.88,
+      "duration": 4.52,
+      "text": "are many things that scheduler looks at"
+    },
+    {
+      "start": 1019.839,
+      "duration": 4.801,
+      "text": "before deciding the right node. So, kube"
+    },
+    {
+      "start": 1022.4,
+      "duration": 4.6,
+      "text": "scheduler is responsible for placing"
+    },
+    {
+      "start": 1024.64,
+      "duration": 4.16,
+      "text": "pods onto the nodes based on the"
+    },
+    {
+      "start": 1027.0,
+      "duration": 4.72,
+      "text": "resource requirements, constraints, and"
+    },
+    {
+      "start": 1028.8,
+      "duration": 5.24,
+      "text": "other policies. It makes decisions on"
+    },
+    {
+      "start": 1031.72,
+      "duration": 4.08,
+      "text": "where to deploy the pods in the cluster."
+    },
+    {
+      "start": 1034.04,
+      "duration": 4.32,
+      "text": "So, it only makes decision on where to"
+    },
+    {
+      "start": 1035.8,
+      "duration": 5.0,
+      "text": "deploy it, but don't actually do it. It"
+    },
+    {
+      "start": 1038.36,
+      "duration": 4.56,
+      "text": "only finds the right node for the pod."
+    },
+    {
+      "start": 1040.8,
+      "duration": 4.48,
+      "text": "So, responsibilities include watches for"
+    },
+    {
+      "start": 1042.92,
+      "duration": 4.6,
+      "text": "newly created pods which don't have any"
+    },
+    {
+      "start": 1045.28,
+      "duration": 4.28,
+      "text": "assigned node, selects an appropriate"
+    },
+    {
+      "start": 1047.52,
+      "duration": 3.8,
+      "text": "node for each pod based on resource"
+    },
+    {
+      "start": 1049.56,
+      "duration": 3.88,
+      "text": "requirements, node capacity, and other"
+    },
+    {
+      "start": 1051.32,
+      "duration": 4.16,
+      "text": "constraints. Once the kube scheduler has"
+    },
+    {
+      "start": 1053.44,
+      "duration": 4.44,
+      "text": "found the right node, it will update the"
+    },
+    {
+      "start": 1055.48,
+      "duration": 4.96,
+      "text": "pod information in the API server"
+    },
+    {
+      "start": 1057.88,
+      "duration": 4.52,
+      "text": "assigning it to specific node. So, here"
+    },
+    {
+      "start": 1060.44,
+      "duration": 3.88,
+      "text": "is a documentation for kube scheduler,"
+    },
+    {
+      "start": 1062.4,
+      "duration": 3.52,
+      "text": "and you can go ahead and also look into"
+    },
+    {
+      "start": 1064.32,
+      "duration": 3.24,
+      "text": "it if you want to learn more about kube"
+    },
+    {
+      "start": 1065.92,
+      "duration": 3.44,
+      "text": "scheduler. If you look here, the"
+    },
+    {
+      "start": 1067.56,
+      "duration": 3.12,
+      "text": "documentation says, \"Kubernetes"
+    },
+    {
+      "start": 1069.36,
+      "duration": 4.4,
+      "text": "scheduler is a control plane process"
+    },
+    {
+      "start": 1070.68,
+      "duration": 4.6,
+      "text": "which assign pods to the nodes.\" So, it"
+    },
+    {
+      "start": 1073.76,
+      "duration": 3.28,
+      "text": "only decides where should be the pod"
+    },
+    {
+      "start": 1075.28,
+      "duration": 3.92,
+      "text": "placed, but don't actually do it, which"
+    },
+    {
+      "start": 1077.04,
+      "duration": 4.04,
+      "text": "we know. So, who actually creates the"
+    },
+    {
+      "start": 1079.2,
+      "duration": 3.6,
+      "text": "pod on the worker nodes? It is actually"
+    },
+    {
+      "start": 1081.08,
+      "duration": 3.44,
+      "text": "done by a component in the worker node,"
+    },
+    {
+      "start": 1082.8,
+      "duration": 3.88,
+      "text": "which is kubelet, and we are going to"
+    },
+    {
+      "start": 1084.52,
+      "duration": 3.6,
+      "text": "look into that very soon. But, before we"
+    },
+    {
+      "start": 1086.68,
+      "duration": 3.76,
+      "text": "go ahead and understand the worker node"
+    },
+    {
+      "start": 1088.12,
+      "duration": 4.4,
+      "text": "components, there is still more to the"
+    },
+    {
+      "start": 1090.44,
+      "duration": 4.68,
+      "text": "master node, which is kube controller"
+    },
+    {
+      "start": 1092.52,
+      "duration": 4.28,
+      "text": "manager. So, what is controller manager?"
+    },
+    {
+      "start": 1095.12,
+      "duration": 3.96,
+      "text": "Controller manager is a component in"
+    },
+    {
+      "start": 1096.8,
+      "duration": 4.32,
+      "text": "master node that continuously monitors"
+    },
+    {
+      "start": 1099.08,
+      "duration": 4.2,
+      "text": "and troubleshoot. But, what does it"
+    },
+    {
+      "start": 1101.12,
+      "duration": 4.32,
+      "text": "monitors and troubleshoot? Controller"
+    },
+    {
+      "start": 1103.28,
+      "duration": 3.48,
+      "text": "manager are of different types like node"
+    },
+    {
+      "start": 1105.44,
+      "duration": 2.64,
+      "text": "controller, application controller,"
+    },
+    {
+      "start": 1106.76,
+      "duration": 2.48,
+      "text": "endpoint controller, service account"
+    },
+    {
+      "start": 1108.08,
+      "duration": 3.04,
+      "text": "controllers,"
+    },
+    {
+      "start": 1109.24,
+      "duration": 3.16,
+      "text": "token controllers, and lot more. So,"
+    },
+    {
+      "start": 1111.12,
+      "duration": 3.36,
+      "text": "depending on the type of controller, it"
+    },
+    {
+      "start": 1112.4,
+      "duration": 3.92,
+      "text": "will actually monitor that component and"
+    },
+    {
+      "start": 1114.48,
+      "duration": 3.32,
+      "text": "troubleshoot if there are any issues."
+    },
+    {
+      "start": 1116.32,
+      "duration": 2.92,
+      "text": "So, looking back here,"
+    },
+    {
+      "start": 1117.8,
+      "duration": 3.32,
+      "text": "controller manager run controller"
+    },
+    {
+      "start": 1119.24,
+      "duration": 4.36,
+      "text": "processes that monitors the state of the"
+    },
+    {
+      "start": 1121.12,
+      "duration": 4.68,
+      "text": "cluster and respond to changes to drive"
+    },
+    {
+      "start": 1123.6,
+      "duration": 3.6,
+      "text": "cluster towards the desired state. So,"
+    },
+    {
+      "start": 1125.8,
+      "duration": 3.36,
+      "text": "these are actual components that will"
+    },
+    {
+      "start": 1127.2,
+      "duration": 3.68,
+      "text": "continuously monitor and make sure that"
+    },
+    {
+      "start": 1129.16,
+      "duration": 3.44,
+      "text": "the cluster is as desired in the"
+    },
+    {
+      "start": 1130.88,
+      "duration": 3.0,
+      "text": "manifest files. So, there are different"
+    },
+    {
+      "start": 1132.6,
+      "duration": 3.2,
+      "text": "types of controllers like node"
+    },
+    {
+      "start": 1133.88,
+      "duration": 3.88,
+      "text": "controller, which monitors and respond"
+    },
+    {
+      "start": 1135.8,
+      "duration": 4.16,
+      "text": "to the changes in the state of nodes,"
+    },
+    {
+      "start": 1137.76,
+      "duration": 4.6,
+      "text": "replication controllers, which maintains"
+    },
+    {
+      "start": 1139.96,
+      "duration": 3.92,
+      "text": "the desired state of pod replicas,"
+    },
+    {
+      "start": 1142.36,
+      "duration": 3.52,
+      "text": "endpoint controllers, which populates"
+    },
+    {
+      "start": 1143.88,
+      "duration": 4.12,
+      "text": "the endpoint objects, and there are lot"
+    },
+    {
+      "start": 1145.88,
+      "duration": 3.92,
+      "text": "more which you can see here in this"
+    },
+    {
+      "start": 1148.0,
+      "duration": 3.72,
+      "text": "particular screenshot. So, here are the"
+    },
+    {
+      "start": 1149.8,
+      "duration": 3.36,
+      "text": "list of controllers that you can enable,"
+    },
+    {
+      "start": 1151.72,
+      "duration": 3.48,
+      "text": "and you have all controllers which are"
+    },
+    {
+      "start": 1153.16,
+      "duration": 4.76,
+      "text": "attached, detached, bootstrap signer,"
+    },
+    {
+      "start": 1155.2,
+      "duration": 4.72,
+      "text": "custom role aggregation, cron job, CSR"
+    },
+    {
+      "start": 1157.92,
+      "duration": 3.68,
+      "text": "approving and lot more. You also have"
+    },
+    {
+      "start": 1159.92,
+      "duration": 3.76,
+      "text": "something known as cloud controller"
+    },
+    {
+      "start": 1161.6,
+      "duration": 4.28,
+      "text": "manager that is used whenever you are"
+    },
+    {
+      "start": 1163.68,
+      "duration": 4.72,
+      "text": "deploying your Kubernetes cluster on the"
+    },
+    {
+      "start": 1165.88,
+      "duration": 4.92,
+      "text": "cloud to use different features. So in"
+    },
+    {
+      "start": 1168.4,
+      "duration": 4.8,
+      "text": "cloud based Kubernetes installation, the"
+    },
+    {
+      "start": 1170.8,
+      "duration": 4.8,
+      "text": "cloud controller manager integrates with"
+    },
+    {
+      "start": 1173.2,
+      "duration": 4.2,
+      "text": "cloud specific APIs to manage external"
+    },
+    {
+      "start": 1175.6,
+      "duration": 3.64,
+      "text": "resources such as load balancers and"
+    },
+    {
+      "start": 1177.4,
+      "duration": 3.68,
+      "text": "storage volumes. So it interacts with"
+    },
+    {
+      "start": 1179.24,
+      "duration": 3.88,
+      "text": "cloud provider's API to manage"
+    },
+    {
+      "start": 1181.08,
+      "duration": 4.36,
+      "text": "resources, abstract cloud specifics"
+    },
+    {
+      "start": 1183.12,
+      "duration": 3.48,
+      "text": "functionality for the core Kubernetes"
+    },
+    {
+      "start": 1185.44,
+      "duration": 3.08,
+      "text": "components."
+    },
+    {
+      "start": 1186.6,
+      "duration": 3.76,
+      "text": "So now we have understood all the master"
+    },
+    {
+      "start": 1188.52,
+      "duration": 3.84,
+      "text": "node components. We know etcd is used to"
+    },
+    {
+      "start": 1190.36,
+      "duration": 3.52,
+      "text": "store the data about the cluster which"
+    },
+    {
+      "start": 1192.36,
+      "duration": 3.88,
+      "text": "will have data or information about"
+    },
+    {
+      "start": 1193.88,
+      "duration": 4.44,
+      "text": "nodes, pods, services, everything. kube"
+    },
+    {
+      "start": 1196.24,
+      "duration": 4.08,
+      "text": "API server is used to communicate and to"
+    },
+    {
+      "start": 1198.32,
+      "duration": 3.8,
+      "text": "retrieve information from the different"
+    },
+    {
+      "start": 1200.32,
+      "duration": 3.6,
+      "text": "components and also to talk to the"
+    },
+    {
+      "start": 1202.12,
+      "duration": 4.2,
+      "text": "cluster."
+    },
+    {
+      "start": 1203.92,
+      "duration": 4.28,
+      "text": "kube scheduler is used to assign the pod"
+    },
+    {
+      "start": 1206.32,
+      "duration": 4.0,
+      "text": "to a particular node which is the best"
+    },
+    {
+      "start": 1208.2,
+      "duration": 3.92,
+      "text": "fit for that particular pod."
+    },
+    {
+      "start": 1210.32,
+      "duration": 3.44,
+      "text": "Next we know controller manager that"
+    },
+    {
+      "start": 1212.12,
+      "duration": 3.2,
+      "text": "will continuously monitor and"
+    },
+    {
+      "start": 1213.76,
+      "duration": 3.2,
+      "text": "troubleshoot if there are any issues"
+    },
+    {
+      "start": 1215.32,
+      "duration": 3.48,
+      "text": "with the cluster and there are different"
+    },
+    {
+      "start": 1216.96,
+      "duration": 3.88,
+      "text": "types of controller manager."
+    },
+    {
+      "start": 1218.8,
+      "duration": 4.44,
+      "text": "So these are all the components that we"
+    },
+    {
+      "start": 1220.84,
+      "duration": 4.72,
+      "text": "have seen API server, etcd, scheduler,"
+    },
+    {
+      "start": 1223.24,
+      "duration": 4.88,
+      "text": "controller manager and cloud controller"
+    },
+    {
+      "start": 1225.56,
+      "duration": 4.64,
+      "text": "which is AWS in this case. Now let's go"
+    },
+    {
+      "start": 1228.12,
+      "duration": 3.84,
+      "text": "and understand what are the components"
+    },
+    {
+      "start": 1230.2,
+      "duration": 3.76,
+      "text": "inside the worker node. So what is"
+    },
+    {
+      "start": 1231.96,
+      "duration": 4.48,
+      "text": "kubelet? What is kube proxy? What is"
+    },
+    {
+      "start": 1233.96,
+      "duration": 4.32,
+      "text": "container runtime? And lot more. The"
+    },
+    {
+      "start": 1236.44,
+      "duration": 4.16,
+      "text": "first worker node component that we are"
+    },
+    {
+      "start": 1238.28,
+      "duration": 4.12,
+      "text": "going to look into is kubelet. So"
+    },
+    {
+      "start": 1240.6,
+      "duration": 4.2,
+      "text": "kubelet is an agent that is running on"
+    },
+    {
+      "start": 1242.4,
+      "duration": 4.52,
+      "text": "every worker node which is responsible"
+    },
+    {
+      "start": 1244.8,
+      "duration": 4.28,
+      "text": "to create pods on the nodes, also to"
+    },
+    {
+      "start": 1246.92,
+      "duration": 4.36,
+      "text": "monitor them, send the status back to"
+    },
+    {
+      "start": 1249.08,
+      "duration": 4.4,
+      "text": "the API server and ensure everything is"
+    },
+    {
+      "start": 1251.28,
+      "duration": 5.04,
+      "text": "working fine. So as we know scheduler is"
+    },
+    {
+      "start": 1253.48,
+      "duration": 4.84,
+      "text": "used to assign the pod on a particular"
+    },
+    {
+      "start": 1256.32,
+      "duration": 4.76,
+      "text": "node but kubelet is responsible to"
+    },
+    {
+      "start": 1258.32,
+      "duration": 4.6,
+      "text": "create that pod on that node. So"
+    },
+    {
+      "start": 1261.08,
+      "duration": 3.84,
+      "text": "whenever a request is received from the"
+    },
+    {
+      "start": 1262.92,
+      "duration": 4.48,
+      "text": "API server, kubelet is going to tell the"
+    },
+    {
+      "start": 1264.92,
+      "duration": 4.0,
+      "text": "container runtime to run the image and"
+    },
+    {
+      "start": 1267.4,
+      "duration": 3.76,
+      "text": "start the container for that"
+    },
+    {
+      "start": 1268.92,
+      "duration": 4.24,
+      "text": "application. The The kubelet is an agent"
+    },
+    {
+      "start": 1271.16,
+      "duration": 3.6,
+      "text": "running on each node responsible for"
+    },
+    {
+      "start": 1273.16,
+      "duration": 3.84,
+      "text": "creating and maintaining the state of"
+    },
+    {
+      "start": 1274.76,
+      "duration": 4.84,
+      "text": "the pod and ensuring they run as"
+    },
+    {
+      "start": 1277.0,
+      "duration": 4.8,
+      "text": "expected. Responsibilities include"
+    },
+    {
+      "start": 1279.6,
+      "duration": 3.72,
+      "text": "listening for pod related instructions"
+    },
+    {
+      "start": 1281.8,
+      "duration": 3.28,
+      "text": "from the control plane, which is a Kube"
+    },
+    {
+      "start": 1283.32,
+      "duration": 3.88,
+      "text": "API server. So, whenever we have a"
+    },
+    {
+      "start": 1285.08,
+      "duration": 4.84,
+      "text": "request from the API server to create a"
+    },
+    {
+      "start": 1287.2,
+      "duration": 5.24,
+      "text": "new pod, kubelet is going to do that on"
+    },
+    {
+      "start": 1289.92,
+      "duration": 3.8,
+      "text": "the nodes decided by scheduler and"
+    },
+    {
+      "start": 1292.44,
+      "duration": 3.52,
+      "text": "kubelet is going to tell that container"
+    },
+    {
+      "start": 1293.72,
+      "duration": 3.84,
+      "text": "runtime, which is going to be Docker"
+    },
+    {
+      "start": 1295.96,
+      "duration": 3.96,
+      "text": "in most cases, but can be any other"
+    },
+    {
+      "start": 1297.56,
+      "duration": 4.2,
+      "text": "runtime as well. Then ensures containers"
+    },
+    {
+      "start": 1299.92,
+      "duration": 4.44,
+      "text": "within the pod are running and healthy"
+    },
+    {
+      "start": 1301.76,
+      "duration": 4.64,
+      "text": "and reports node status and usage back"
+    },
+    {
+      "start": 1304.36,
+      "duration": 4.6,
+      "text": "to the control plane. So, this is the"
+    },
+    {
+      "start": 1306.4,
+      "duration": 4.96,
+      "text": "task of kubelet, which is to create the"
+    },
+    {
+      "start": 1308.96,
+      "duration": 4.48,
+      "text": "pod, ensure it is running all the time,"
+    },
+    {
+      "start": 1311.36,
+      "duration": 3.64,
+      "text": "and give the status back to the control"
+    },
+    {
+      "start": 1313.44,
+      "duration": 3.52,
+      "text": "plane. I also have a kubelet"
+    },
+    {
+      "start": 1315.0,
+      "duration": 3.56,
+      "text": "documentation attached here. If you want"
+    },
+    {
+      "start": 1316.96,
+      "duration": 3.76,
+      "text": "to learn more about kubelet, you can go"
+    },
+    {
+      "start": 1318.56,
+      "duration": 3.88,
+      "text": "ahead and read about it from the"
+    },
+    {
+      "start": 1320.72,
+      "duration": 3.28,
+      "text": "official documentation."
+    },
+    {
+      "start": 1322.44,
+      "duration": 3.6,
+      "text": "Now, whenever a pod is created, there"
+    },
+    {
+      "start": 1324.0,
+      "duration": 3.56,
+      "text": "are a few more things that is required,"
+    },
+    {
+      "start": 1326.04,
+      "duration": 3.56,
+      "text": "which is the container runtime, also"
+    },
+    {
+      "start": 1327.56,
+      "duration": 4.12,
+      "text": "known as CRI. Along with this, you also"
+    },
+    {
+      "start": 1329.6,
+      "duration": 5.44,
+      "text": "need to have networking for the pod and"
+    },
+    {
+      "start": 1331.68,
+      "duration": 4.92,
+      "text": "storage configurations if required. So,"
+    },
+    {
+      "start": 1335.04,
+      "duration": 4.6,
+      "text": "there are three things that you require:"
+    },
+    {
+      "start": 1336.6,
+      "duration": 5.04,
+      "text": "CRI, container runtime interface; CNI,"
+    },
+    {
+      "start": 1339.64,
+      "duration": 4.4,
+      "text": "which is container network interface;"
+    },
+    {
+      "start": 1341.64,
+      "duration": 5.0,
+      "text": "and CSI, which is container storage"
+    },
+    {
+      "start": 1344.04,
+      "duration": 4.2,
+      "text": "interface. CRI, or container runtime"
+    },
+    {
+      "start": 1346.64,
+      "duration": 3.4,
+      "text": "interface, is interface for"
+    },
+    {
+      "start": 1348.24,
+      "duration": 4.08,
+      "text": "communication between kubelet and"
+    },
+    {
+      "start": 1350.04,
+      "duration": 3.64,
+      "text": "container runtimes, defining how many"
+    },
+    {
+      "start": 1352.32,
+      "duration": 4.52,
+      "text": "how containers are managed within the"
+    },
+    {
+      "start": 1353.68,
+      "duration": 5.2,
+      "text": "pod. Then you need CNI. CNI is container"
+    },
+    {
+      "start": 1356.84,
+      "duration": 3.96,
+      "text": "network interface, which specify how"
+    },
+    {
+      "start": 1358.88,
+      "duration": 3.64,
+      "text": "network plugins interact with container"
+    },
+    {
+      "start": 1360.8,
+      "duration": 4.28,
+      "text": "runtimes to provide networking for the"
+    },
+    {
+      "start": 1362.52,
+      "duration": 4.0,
+      "text": "pods in the Kubernetes cluster. Then you"
+    },
+    {
+      "start": 1365.08,
+      "duration": 3.56,
+      "text": "have cluster container storage"
+    },
+    {
+      "start": 1366.52,
+      "duration": 3.76,
+      "text": "interface, which enables Kubernetes to"
+    },
+    {
+      "start": 1368.64,
+      "duration": 4.08,
+      "text": "work with various storage systems and"
+    },
+    {
+      "start": 1370.28,
+      "duration": 4.48,
+      "text": "drivers for persistent storage volumes"
+    },
+    {
+      "start": 1372.72,
+      "duration": 3.68,
+      "text": "attached to the pod. If you remember, we"
+    },
+    {
+      "start": 1374.76,
+      "duration": 4.12,
+      "text": "had a Kubernetes voting application"
+    },
+    {
+      "start": 1376.4,
+      "duration": 4.48,
+      "text": "project on this channel, and whenever we"
+    },
+    {
+      "start": 1378.88,
+      "duration": 4.8,
+      "text": "want to create a persistent volumes for"
+    },
+    {
+      "start": 1380.88,
+      "duration": 5.32,
+      "text": "our pods, we need to enable the EBS CSI"
+    },
+    {
+      "start": 1383.68,
+      "duration": 4.56,
+      "text": "plugin in our Kubernetes cluster. If you"
+    },
+    {
+      "start": 1386.2,
+      "duration": 4.4,
+      "text": "don't remember that, make sure you watch"
+    },
+    {
+      "start": 1388.24,
+      "duration": 4.4,
+      "text": "or you complete that Kubernetes voting"
+    },
+    {
+      "start": 1390.6,
+      "duration": 3.84,
+      "text": "project as well."
+    },
+    {
+      "start": 1392.64,
+      "duration": 3.96,
+      "text": "The last worker node component in the"
+    },
+    {
+      "start": 1394.44,
+      "duration": 4.24,
+      "text": "Kubernetes cluster is kube-proxy, which"
+    },
+    {
+      "start": 1396.6,
+      "duration": 5.48,
+      "text": "is actually a component that is used for"
+    },
+    {
+      "start": 1398.68,
+      "duration": 5.88,
+      "text": "communication between services and pod."
+    },
+    {
+      "start": 1402.08,
+      "duration": 4.48,
+      "text": "Also, kube-proxy is responsible for"
+    },
+    {
+      "start": 1404.56,
+      "duration": 4.32,
+      "text": "network proxying and load balancing,"
+    },
+    {
+      "start": 1406.56,
+      "duration": 4.16,
+      "text": "ensuring communication between services"
+    },
+    {
+      "start": 1408.88,
+      "duration": 3.36,
+      "text": "and forwarding external traffic to the"
+    },
+    {
+      "start": 1410.72,
+      "duration": 3.36,
+      "text": "correct pods."
+    },
+    {
+      "start": 1412.24,
+      "duration": 3.48,
+      "text": "Responsibilities include managing"
+    },
+    {
+      "start": 1414.08,
+      "duration": 3.52,
+      "text": "network rules to enable pod-to-pod"
+    },
+    {
+      "start": 1415.72,
+      "duration": 3.8,
+      "text": "communication within the cluster,"
+    },
+    {
+      "start": 1417.6,
+      "duration": 3.72,
+      "text": "implement service load balancing,"
+    },
+    {
+      "start": 1419.52,
+      "duration": 4.12,
+      "text": "distributing external traffic to service"
+    },
+    {
+      "start": 1421.32,
+      "duration": 3.92,
+      "text": "endpoints, facilitates network policies"
+    },
+    {
+      "start": 1423.64,
+      "duration": 3.64,
+      "text": "for secure communication between the"
+    },
+    {
+      "start": 1425.24,
+      "duration": 4.28,
+      "text": "pods. So, kube-proxy is actually used to"
+    },
+    {
+      "start": 1427.28,
+      "duration": 4.08,
+      "text": "communication and it does that using IP"
+    },
+    {
+      "start": 1429.52,
+      "duration": 3.64,
+      "text": "tables. And you have a documentation for"
+    },
+    {
+      "start": 1431.36,
+      "duration": 3.4,
+      "text": "kube-proxy here, which you can read in"
+    },
+    {
+      "start": 1433.16,
+      "duration": 3.04,
+      "text": "depth if you want to learn more about"
+    },
+    {
+      "start": 1434.76,
+      "duration": 2.96,
+      "text": "kube-proxy."
+    },
+    {
+      "start": 1436.2,
+      "duration": 3.6,
+      "text": "Now, let's understand what happens in"
+    },
+    {
+      "start": 1437.72,
+      "duration": 4.36,
+      "text": "the back end when you run kubectl create"
+    },
+    {
+      "start": 1439.8,
+      "duration": 3.8,
+      "text": "or apply commands to create a pod or run"
+    },
+    {
+      "start": 1442.08,
+      "duration": 3.56,
+      "text": "your own application. So, I'm"
+    },
+    {
+      "start": 1443.6,
+      "duration": 3.76,
+      "text": "considering you have an application that"
+    },
+    {
+      "start": 1445.64,
+      "duration": 3.6,
+      "text": "has been dockerized and the image is"
+    },
+    {
+      "start": 1447.36,
+      "duration": 3.6,
+      "text": "uploaded on Docker Hub. You can use that"
+    },
+    {
+      "start": 1449.24,
+      "duration": 3.8,
+      "text": "image to create a pod, something like"
+    },
+    {
+      "start": 1450.96,
+      "duration": 3.96,
+      "text": "this. So, this is a manifest file for"
+    },
+    {
+      "start": 1453.04,
+      "duration": 3.72,
+      "text": "creating pod and the image used is"
+    },
+    {
+      "start": 1454.92,
+      "duration": 2.72,
+      "text": "Nginx. You can use any image you want"
+    },
+    {
+      "start": 1456.76,
+      "duration": 2.92,
+      "text": "to."
+    },
+    {
+      "start": 1457.64,
+      "duration": 4.12,
+      "text": "In this example, we are going to see how"
+    },
+    {
+      "start": 1459.68,
+      "duration": 4.0,
+      "text": "Kubernetes components work together to"
+    },
+    {
+      "start": 1461.76,
+      "duration": 3.88,
+      "text": "actually create a pod, what happens when"
+    },
+    {
+      "start": 1463.68,
+      "duration": 4.36,
+      "text": "you run the kubectl apply command, what"
+    },
+    {
+      "start": 1465.64,
+      "duration": 4.36,
+      "text": "data is stored in the etcd, how is a pod"
+    },
+    {
+      "start": 1468.04,
+      "duration": 4.24,
+      "text": "scheduled on the worker node. So, let's"
+    },
+    {
+      "start": 1470.0,
+      "duration": 4.24,
+      "text": "go and do this hands-on. I already have"
+    },
+    {
+      "start": 1472.28,
+      "duration": 4.48,
+      "text": "kube setup. So, if I run the command"
+    },
+    {
+      "start": 1474.24,
+      "duration": 4.6,
+      "text": "minikube status, you will see a cluster"
+    },
+    {
+      "start": 1476.76,
+      "duration": 3.48,
+      "text": "is running. So, control plane host,"
+    },
+    {
+      "start": 1478.84,
+      "duration": 3.84,
+      "text": "kubelet, API server, all of them are"
+    },
+    {
+      "start": 1480.24,
+      "duration": 4.68,
+      "text": "running. And if I show you kubectl"
+    },
+    {
+      "start": 1482.68,
+      "duration": 4.64,
+      "text": "get pods inside the kube system"
+    },
+    {
+      "start": 1484.92,
+      "duration": 3.56,
+      "text": "namespace, you will see"
+    },
+    {
+      "start": 1487.32,
+      "duration": 2.68,
+      "text": "all the pods running. So, etcd is"
+    },
+    {
+      "start": 1488.48,
+      "duration": 3.4,
+      "text": "running, kube API is running, controller"
+    },
+    {
+      "start": 1490.0,
+      "duration": 3.76,
+      "text": "is running, proxy is running, scheduler"
+    },
+    {
+      "start": 1491.88,
+      "duration": 3.2,
+      "text": "is running, and all of them is running."
+    },
+    {
+      "start": 1493.76,
+      "duration": 3.2,
+      "text": "So, we are going to do the steps to"
+    },
+    {
+      "start": 1495.08,
+      "duration": 3.88,
+      "text": "understand what happens when you run the"
+    },
+    {
+      "start": 1496.96,
+      "duration": 3.76,
+      "text": "kubectl apply command, what data is"
+    },
+    {
+      "start": 1498.96,
+      "duration": 4.0,
+      "text": "stored in the etcd and everything else."
+    },
+    {
+      "start": 1500.72,
+      "duration": 4.64,
+      "text": "So, I have this pod manifest which I'm"
+    },
+    {
+      "start": 1502.96,
+      "duration": 4.16,
+      "text": "going to copy and create a file. So, I'm"
+    },
+    {
+      "start": 1505.36,
+      "duration": 4.16,
+      "text": "going to say nano"
+    },
+    {
+      "start": 1507.12,
+      "duration": 4.08,
+      "text": "my-pod.yaml."
+    },
+    {
+      "start": 1509.52,
+      "duration": 4.08,
+      "text": "Nano is a text editor and we're getting"
+    },
+    {
+      "start": 1511.2,
+      "duration": 4.12,
+      "text": "a manifest file which is YAML. If you"
+    },
+    {
+      "start": 1513.6,
+      "duration": 3.76,
+      "text": "haven't checked the previous video which"
+    },
+    {
+      "start": 1515.32,
+      "duration": 4.24,
+      "text": "explains all the prerequisites you need"
+    },
+    {
+      "start": 1517.36,
+      "duration": 3.44,
+      "text": "to know before learning Kubernetes, YAML"
+    },
+    {
+      "start": 1519.56,
+      "duration": 2.68,
+      "text": "is one of the prerequisites that you"
+    },
+    {
+      "start": 1520.8,
+      "duration": 2.88,
+      "text": "need to know. So, I'm going to save this"
+    },
+    {
+      "start": 1522.24,
+      "duration": 4.04,
+      "text": "manifest file and now I'm going to run"
+    },
+    {
+      "start": 1523.68,
+      "duration": 4.64,
+      "text": "the command kubectl apply"
+    },
+    {
+      "start": 1526.28,
+      "duration": 4.08,
+      "text": "-f name of this file. When I run this"
+    },
+    {
+      "start": 1528.32,
+      "duration": 4.56,
+      "text": "command, kubectl will submit the pod"
+    },
+    {
+      "start": 1530.36,
+      "duration": 5.16,
+      "text": "configuration to the Kubernetes API"
+    },
+    {
+      "start": 1532.88,
+      "duration": 4.92,
+      "text": "server. This Kubernetes API server will"
+    },
+    {
+      "start": 1535.52,
+      "duration": 4.6,
+      "text": "validate the pod configuration and store"
+    },
+    {
+      "start": 1537.8,
+      "duration": 4.44,
+      "text": "the data inside etcd. And we can check"
+    },
+    {
+      "start": 1540.12,
+      "duration": 4.04,
+      "text": "that data using this command. So, let me"
+    },
+    {
+      "start": 1542.24,
+      "duration": 4.76,
+      "text": "run the command kubectl apply command"
+    },
+    {
+      "start": 1544.16,
+      "duration": 4.92,
+      "text": "with the file name which is mypod.yaml."
+    },
+    {
+      "start": 1547.0,
+      "duration": 4.36,
+      "text": "Once I run this, you will see the status"
+    },
+    {
+      "start": 1549.08,
+      "duration": 3.96,
+      "text": "is mypod created. Let's see. I'm going"
+    },
+    {
+      "start": 1551.36,
+      "duration": 4.92,
+      "text": "to say kubectl get pods and you can see"
+    },
+    {
+      "start": 1553.04,
+      "duration": 3.24,
+      "text": "the container is now in creating"
+    },
+    {
+      "start": 1556.56,
+      "duration": 5.2,
+      "text": "-w and now it has been running state."
+    },
+    {
+      "start": 1559.2,
+      "duration": 5.6,
+      "text": "So, in this time frame, the scheduler"
+    },
+    {
+      "start": 1561.76,
+      "duration": 4.6,
+      "text": "decides the node to place the pod and"
+    },
+    {
+      "start": 1564.8,
+      "duration": 3.6,
+      "text": "kubelet then places the pod on the"
+    },
+    {
+      "start": 1566.36,
+      "duration": 4.08,
+      "text": "worker node as well. For now, this"
+    },
+    {
+      "start": 1568.4,
+      "duration": 4.12,
+      "text": "minikube only has one node, so the pod"
+    },
+    {
+      "start": 1570.44,
+      "duration": 5.2,
+      "text": "will always be placed on that node. So,"
+    },
+    {
+      "start": 1572.52,
+      "duration": 5.72,
+      "text": "if I run the command kubectl"
+    },
+    {
+      "start": 1575.64,
+      "duration": 4.64,
+      "text": "-o wide command, you will see all the"
+    },
+    {
+      "start": 1578.24,
+      "duration": 3.44,
+      "text": "pods are placed on minikube node because"
+    },
+    {
+      "start": 1580.28,
+      "duration": 3.32,
+      "text": "there's only single node. But when you"
+    },
+    {
+      "start": 1581.68,
+      "duration": 4.32,
+      "text": "have multiple nodes, kube scheduler will"
+    },
+    {
+      "start": 1583.6,
+      "duration": 4.68,
+      "text": "find the right right node and place the"
+    },
+    {
+      "start": 1586.0,
+      "duration": 4.28,
+      "text": "pod on that. Now, let's see what data is"
+    },
+    {
+      "start": 1588.28,
+      "duration": 3.84,
+      "text": "stored inside the etcd which you can get"
+    },
+    {
+      "start": 1590.28,
+      "duration": 3.56,
+      "text": "by this particular command. So, I'm"
+    },
+    {
+      "start": 1592.12,
+      "duration": 3.6,
+      "text": "going to copy this command"
+    },
+    {
+      "start": 1593.84,
+      "duration": 3.64,
+      "text": "and we will see the pod status inside"
+    },
+    {
+      "start": 1595.72,
+      "duration": 3.48,
+      "text": "the etcd."
+    },
+    {
+      "start": 1597.48,
+      "duration": 4.0,
+      "text": "So, once I paste this,"
+    },
+    {
+      "start": 1599.2,
+      "duration": 4.48,
+      "text": "you can see this is the status or this"
+    },
+    {
+      "start": 1601.48,
+      "duration": 4.68,
+      "text": "is the information present inside the"
+    },
+    {
+      "start": 1603.68,
+      "duration": 3.52,
+      "text": "etcd. The image used is this, image ID"
+    },
+    {
+      "start": 1606.16,
+      "duration": 3.12,
+      "text": "is this,"
+    },
+    {
+      "start": 1607.2,
+      "duration": 4.2,
+      "text": "the container is ready and all the other"
+    },
+    {
+      "start": 1609.28,
+      "duration": 3.52,
+      "text": "information. Now, moving on, you can So,"
+    },
+    {
+      "start": 1611.4,
+      "duration": 3.28,
+      "text": "we already know scheduler is the one"
+    },
+    {
+      "start": 1612.8,
+      "duration": 3.84,
+      "text": "which decides which node is the best and"
+    },
+    {
+      "start": 1614.68,
+      "duration": 4.4,
+      "text": "you can check the scheduler decision by"
+    },
+    {
+      "start": 1616.64,
+      "duration": 3.76,
+      "text": "running this particular command. So if I"
+    },
+    {
+      "start": 1619.08,
+      "duration": 3.56,
+      "text": "run the command it will tell me what"
+    },
+    {
+      "start": 1620.4,
+      "duration": 4.12,
+      "text": "node is the pod placed on."
+    },
+    {
+      "start": 1622.64,
+      "duration": 4.32,
+      "text": "Minikube is the name of the node on"
+    },
+    {
+      "start": 1624.52,
+      "duration": 4.24,
+      "text": "which my pod is placed. But kubelet"
+    },
+    {
+      "start": 1626.96,
+      "duration": 3.44,
+      "text": "actually runs the pod or starts the pod"
+    },
+    {
+      "start": 1628.76,
+      "duration": 3.28,
+      "text": "and you can check that by going inside"
+    },
+    {
+      "start": 1630.4,
+      "duration": 4.08,
+      "text": "that node and running the command. So if"
+    },
+    {
+      "start": 1632.04,
+      "duration": 4.32,
+      "text": "I go inside the Minikube node by running"
+    },
+    {
+      "start": 1634.48,
+      "duration": 4.32,
+      "text": "Minikube SSH, so I'm inside the Minikube"
+    },
+    {
+      "start": 1636.36,
+      "duration": 3.96,
+      "text": "node and if I run the command docker ps"
+    },
+    {
+      "start": 1638.8,
+      "duration": 3.2,
+      "text": "here docker is the container run times."
+    },
+    {
+      "start": 1640.32,
+      "duration": 3.16,
+      "text": "I'm going to run the command docker ps"
+    },
+    {
+      "start": 1642.0,
+      "duration": 3.24,
+      "text": "which will give me the list of"
+    },
+    {
+      "start": 1643.48,
+      "duration": 4.48,
+      "text": "containers running. So we will find"
+    },
+    {
+      "start": 1645.24,
+      "duration": 4.76,
+      "text": "nginx here which is what we ran right"
+    },
+    {
+      "start": 1647.96,
+      "duration": 3.76,
+      "text": "now 2 minutes ago. If you want to get"
+    },
+    {
+      "start": 1650.0,
+      "duration": 4.28,
+      "text": "the IP address that is assigned by using"
+    },
+    {
+      "start": 1651.72,
+      "duration": 3.56,
+      "text": "kube proxy, you I will first exit from"
+    },
+    {
+      "start": 1654.28,
+      "duration": 2.96,
+      "text": "this,"
+    },
+    {
+      "start": 1655.28,
+      "duration": 5.12,
+      "text": "clear the screen and run this command"
+    },
+    {
+      "start": 1657.24,
+      "duration": 5.28,
+      "text": "which is to get the IP address of my"
+    },
+    {
+      "start": 1660.4,
+      "duration": 4.6,
+      "text": "pod. First run this command kubectl"
+    },
+    {
+      "start": 1662.52,
+      "duration": 3.8,
+      "text": "describe my pod and get the IP address."
+    },
+    {
+      "start": 1665.0,
+      "duration": 4.28,
+      "text": "So this is my IP address which is"
+    },
+    {
+      "start": 1666.32,
+      "duration": 4.48,
+      "text": "10.244.0.120."
+    },
+    {
+      "start": 1669.28,
+      "duration": 2.64,
+      "text": "This is the IP address assigned to the"
+    },
+    {
+      "start": 1670.8,
+      "duration": 3.12,
+      "text": "pod."
+    },
+    {
+      "start": 1671.92,
+      "duration": 3.84,
+      "text": "So now the pod has been created. It also"
+    },
+    {
+      "start": 1673.92,
+      "duration": 3.44,
+      "text": "has an IP address. The data is stored in"
+    },
+    {
+      "start": 1675.76,
+      "duration": 3.0,
+      "text": "the etcd as well."
+    },
+    {
+      "start": 1677.36,
+      "duration": 3.2,
+      "text": "So this is actually what happens when"
+    },
+    {
+      "start": 1678.76,
+      "duration": 3.6,
+      "text": "you run the kubectl apply command or"
+    },
+    {
+      "start": 1680.56,
+      "duration": 4.16,
+      "text": "even push a new update for your"
+    },
+    {
+      "start": 1682.36,
+      "duration": 4.4,
+      "text": "application. I hope now you have an idea"
+    },
+    {
+      "start": 1684.72,
+      "duration": 3.92,
+      "text": "of what Kubernetes is, what problem is"
+    },
+    {
+      "start": 1686.76,
+      "duration": 3.56,
+      "text": "it solving, what is the Kubernetes"
+    },
+    {
+      "start": 1688.64,
+      "duration": 3.32,
+      "text": "architecture all about, what are"
+    },
+    {
+      "start": 1690.32,
+      "duration": 3.32,
+      "text": "different components in it and I hope"
+    },
+    {
+      "start": 1691.96,
+      "duration": 3.96,
+      "text": "this video was informative. If you have"
+    },
+    {
+      "start": 1693.64,
+      "duration": 4.12,
+      "text": "any questions, any doubt, do let me know"
+    },
+    {
+      "start": 1695.92,
+      "duration": 3.68,
+      "text": "in the comment section. Also if you want"
+    },
+    {
+      "start": 1697.76,
+      "duration": 2.92,
+      "text": "me to share this document, you can let"
+    },
+    {
+      "start": 1699.6,
+      "duration": 3.32,
+      "text": "me know in the comment section. I can"
+    },
+    {
+      "start": 1700.68,
+      "duration": 4.12,
+      "text": "upload this on LinkedIn or GitHub if you"
+    },
+    {
+      "start": 1702.92,
+      "duration": 4.32,
+      "text": "want me to share it. Thank you and have"
+    },
+    {
+      "start": 1704.8,
+      "duration": 2.44,
+      "text": "a good day."
+    }
+  ]
+}
