@@ -18,7 +18,7 @@
 
 
 
-The platform indexes 1,917+ video transcript chunks into an optimized Full-Text Search (SQLite FTS5) engine, leverages Google Gemini 3.5 Flash-lite via the `google-genai` SDK for real-time token streaming, and integrates clickable YouTube video jump points directly inside the web interface.
+The platform indexes 2,873+ video transcript chunks into an optimized Full-Text Search (SQLite FTS5) engine, leverages Google Gemini 3.5 Flash-lite via the `google-genai` SDK for real-time token streaming, and integrates clickable YouTube video jump points directly inside the web interface.
 
 
 
@@ -32,7 +32,7 @@ The platform indexes 1,917+ video transcript chunks into an optimized Full-Text 
 
 \- \*\*Token-by-Token Live Streaming:\*\* Real-time answer generation using `client.models.generate\_content\_stream()` and Streamlit's native `st.write\_stream()`.
 
-\- \*\*Fast Local RAG Engine:\*\* Sub-millisecond keyword and ranked retrieval over 1,917+ transcript chunks using SQLite FTS5 with BM25-based rank ordering.
+\- \*\*Fast Local RAG Engine:\*\* Sub-millisecond keyword and ranked retrieval over 2,873+ transcript chunks using SQLite FTS5 with BM25-based rank ordering.
 
 \- \*\*Interactive Video Embeds:\*\* Automatically retrieves exact YouTube video timestamps and displays responsive cards with direct clip jump points.
 
@@ -64,7 +64,7 @@ YouTube Channel (@cloudchamp)
 
 &#x20;        ▼
 
-1,917 Clean Transcript Chunks ──▶ SQLite FTS5 Database (BM25 Retrieval)
+2,873 Clean Transcript Chunks ──▶ SQLite FTS5 Database (BM25 Retrieval)
 
 &#x20;                                             │
 
