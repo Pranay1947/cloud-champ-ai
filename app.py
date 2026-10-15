@@ -1,5 +1,6 @@
 import os
 import sys
+import json
 import base64
 import sqlite3
 from pathlib import Path
@@ -39,7 +40,7 @@ st.markdown("""
         font-weight: 700;
         letter-spacing: -0.5px;
     }
-    
+
     .brand-title {
         background: linear-gradient(90deg, #00E5FF 0%, #3A86FF 100%);
         -webkit-background-clip: text;
@@ -107,13 +108,23 @@ DB_PATH = Path("data/index.sqlite")
 SYSTEM_PROMPT_PATH = Path("cloud_champ_system_prompt.md")
 
 DEFAULT_SYSTEM_PROMPT = """
-You are Cloud Champ AI, an expert Cloud & DevOps mentor. 
+You are Cloud Champ AI, an expert Cloud & DevOps mentor.
 Your goal is to answer technical questions in the distinct Cloud Champ teaching style:
 1. Beginner-friendly, practical, and energetic with real-world analogies.
 2. Step-by-step technical explanations (commands, architecture, YAML configs where relevant).
 3. Ground your answers strictly in the provided video transcript excerpts whenever possible.
-4. Encourage the user and point them to the recommended video segments.
+4. Support follow-up conversation naturally using the discussion history.
+5. Encourage the user and point them to recommended video segments.
 """
+
+def get_api_key() -> str:
+    """Retrieves API key from Streamlit secrets or OS environment variable."""
+    try:
+        if hasattr(st, "secrets") and "GEMINI_API_KEY" in st.secrets:
+            return st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        pass
+    return os.getenv("GEMINI_API_KEY", "")
 
 def load_system_prompt() -> str:
     if SYSTEM_PROMPT_PATH.exists():
@@ -208,21 +219,42 @@ def format_context_and_sources(results):
             "excerpt": text.strip()
         }
         sources.append(source_item)
-        
+
         block = f"[Source {idx}]\nVideo: {title}\nURL: {url}\nExcerpt: \"{text.strip()}\""
         context_blocks.append(block)
 
     return "\n\n".join(context_blocks), sources
 
+def get_conversation_history_text(limit_turns: int = 4) -> str:
+    """Formats the last few conversation turns to provide memory context."""
+    if "messages" not in st.session_state:
+        return ""
+    
+    relevant = [m for m in st.session_state.messages if m["role"] in ("user", "assistant")][1:]
+    recent = relevant[-limit_turns:]
+    
+    formatted = []
+    for msg in recent:
+        role_label = "User" if msg["role"] == "user" else "Cloud Champ"
+        snippet = msg["content"][:350] + ("..." if len(msg["content"]) > 350 else "")
+        formatted.append(f"{role_label}: {snippet}")
+    
+    return "\n".join(formatted)
+
 def stream_gemini_response(question: str, context: str):
-    """Yields text chunks as they arrive from Gemini."""
-    api_key = os.getenv("GEMINI_API_KEY")
+    """Yields text chunks as they arrive from Gemini, incorporating recent dialogue history."""
+    api_key = get_api_key()
     if not api_key:
-        yield "⚠️ **GEMINI_API_KEY** is not set. Run `$env:GEMINI_API_KEY='...'` before launching."
+        yield "⚠️ **GEMINI_API_KEY** is not set. Run `$env:GEMINI_API_KEY='your_key'` before launching."
         return
 
+    history_str = get_conversation_history_text(limit_turns=4)
     system_instruction = load_system_prompt()
+
     user_prompt = f"""
+PRIOR CONVERSATION HISTORY:
+{history_str if history_str else "No prior history - this is the first question."}
+
 CONTEXT FROM CLOUD CHAMP VIDEOS:
 ---
 {context}
@@ -231,10 +263,10 @@ CONTEXT FROM CLOUD CHAMP VIDEOS:
 USER QUESTION:
 {question}
 
-Answer the question thoroughly using the context above while staying true to the Cloud Champ mentor persona. Focus on the core explanations and step-by-step guidance.
+Answer the question thoroughly using the transcript context above while honoring prior conversation turns. Maintain the energetic Cloud Champ mentor persona. Focus on core explanations and step-by-step guidance.
 """
 
-    client = genai.Client()
+    client = genai.Client(api_key=api_key)
     response_stream = client.models.generate_content_stream(
         model="gemini-3.5-flash-lite",
         contents=user_prompt,
@@ -248,6 +280,37 @@ Answer the question thoroughly using the context above while staying true to the
         if chunk.text:
             yield chunk.text
 
+def generate_follow_up_chips(question: str, answer: str) -> list:
+    """Generates 3 fast, clickable follow-up suggestions using Gemini."""
+    api_key = get_api_key()
+    if not api_key:
+        return []
+
+    prompt = f"""
+Based on this DevOps Q&A:
+Question: {question}
+Answer summary: {answer[:300]}
+
+Generate exactly 3 concise, highly relevant follow-up questions a learner would ask next.
+Return ONLY a valid JSON list of 3 strings, with no markdown code fences and no extra text.
+Example: ["Show me the Kubernetes YAML config", "How do I troubleshoot if the pod fails?", "What is the AWS alternative?"]
+"""
+    try:
+        client = genai.Client(api_key=api_key)
+        res = client.models.generate_content(
+            model="gemini-3.5-flash-lite",
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                temperature=0.5,
+                max_output_tokens=120,
+            ),
+        )
+        raw_text = res.text.strip().replace("```json", "").replace("```", "").strip()
+        suggestions = json.loads(raw_text)
+        return suggestions[:3] if isinstance(suggestions, list) else []
+    except Exception:
+        return []
+
 def render_sources_ui(sources):
     """Renders video cards, thumbnails, excerpts, and playable video players."""
     if not sources:
@@ -256,14 +319,14 @@ def render_sources_ui(sources):
     with st.expander(f"📺 Watch Matching Video Clips ({len(sources)} Sources Available)", expanded=False):
         for idx, s in enumerate(sources, 1):
             st.markdown(f"#### {idx}. [{s['title']}]({s['url']})")
-            
+
             col_thumb, col_details = st.columns([1, 2])
-            
+
             with col_thumb:
                 if s["thumb_url"]:
-                    st.image(s["thumb_url"], width="stretch")
+                    st.image(s["thumb_url"], use_container_width=True)
                 st.caption(f"⏱️ Jump Point: **{s['timestamp_str']}**")
-            
+
             with col_details:
                 st.markdown(f"> *\"{s['excerpt']}\"*")
                 st.markdown(f"[▶️ Open directly on YouTube at {s['timestamp_str']}]({s['url']})")
@@ -271,25 +334,25 @@ def render_sources_ui(sources):
             if s["video_id"]:
                 with st.expander(f"▶️ Play clip right here ({s['timestamp_str']})"):
                     st.video(s["url"], start_time=s["start_sec"])
-            
+
             st.divider()
 
 # --- Sidebar UI ---
 with st.sidebar:
     pfp_candidates = list(Path("assets").glob("pfp*")) if Path("assets").exists() else []
-    
+
     if pfp_candidates:
         b64_img = base64.b64encode(pfp_candidates[0].read_bytes()).decode()
         st.markdown(
             f"""
             <div style="display: flex; justify-content: center; margin-bottom: 15px;">
-                <img src="data:image/jpeg;base64,{b64_img}" 
-                     style="width: 90px; height: 90px; border-radius: 50%; 
-                            border: 2px solid #00E5FF; 
-                            box-shadow: 0 0 18px rgba(0, 229, 255, 0.45); 
+                <img src="data:image/jpeg;base64,{b64_img}"
+                     style="width: 90px; height: 90px; border-radius: 50%;
+                            border: 2px solid #00E5FF;
+                            box-shadow: 0 0 18px rgba(0, 229, 255, 0.45);
                             object-fit: cover;">
             </div>
-            """, 
+            """,
             unsafe_allow_html=True
         )
     else:
@@ -307,7 +370,7 @@ with st.sidebar:
     st.markdown('<div class="brand-title" style="text-align: center;">Cloud Champ</div>', unsafe_allow_html=True)
     st.markdown('<div style="text-align: center; color: #94a3b8; font-size: 0.85rem; margin-bottom: 12px;">AI Mentor Clone • 305 Tutorials</div>', unsafe_allow_html=True)
     st.markdown("---")
-    
+
     if DB_PATH.exists():
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
@@ -331,12 +394,13 @@ with st.sidebar:
         "How do I use Python as a DevOps Engineer?"
     ]
     for sq in sample_queries:
-        if st.button(sq, width="stretch"):
+        if st.button(sq, use_container_width=True):
             st.session_state["preset_input"] = sq
 
     st.markdown("---")
-    if st.button("🗑️ Clear Chat History", width="stretch"):
+    if st.button("🗑️ Clear Chat History", use_container_width=True):
         st.session_state.messages = []
+        st.session_state.follow_ups = []
         st.rerun()
 
 # --- Main Chat UI ---
@@ -348,12 +412,25 @@ if "messages" not in st.session_state:
         {"role": "assistant", "content": "Hey Cloud Champs! Welcome back! What are we deploying or troubleshooting today? Ask away!"}
     ]
 
+if "follow_ups" not in st.session_state:
+    st.session_state.follow_ups = []
+
 # Render past history
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
         if "sources" in msg and msg["sources"]:
             render_sources_ui(msg["sources"])
+
+# Render follow-up prompt chips if available
+if st.session_state.follow_ups:
+    st.markdown("**Suggested Follow-ups:**")
+    cols = st.columns(len(st.session_state.follow_ups))
+    for i, follow_up in enumerate(st.session_state.follow_ups):
+        if cols[i].button(f"👉 {follow_up}", key=f"chip_{i}", use_container_width=True):
+            st.session_state["preset_input"] = follow_up
+            st.session_state.follow_ups = []
+            st.rerun()
 
 # Input handling
 user_input = st.chat_input("Ask about AWS, Kubernetes, Terraform, Docker, Python...")
@@ -362,6 +439,8 @@ if "preset_input" in st.session_state and st.session_state["preset_input"]:
     st.session_state["preset_input"] = None
 
 if user_input:
+    st.session_state.follow_ups = []
+
     # 1. Add user message
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
@@ -369,17 +448,29 @@ if user_input:
 
     # 2. Assistant response with live streaming
     with st.chat_message("assistant"):
-        matches = search_index(user_input, limit=4)
+        search_term = user_input
+        if len(user_input.split()) < 4 and len(st.session_state.messages) > 2:
+            prev_user_msgs = [m["content"] for m in st.session_state.messages if m["role"] == "user"]
+            if len(prev_user_msgs) >= 2:
+                search_term = f"{prev_user_msgs[-2]} {user_input}"
+
+        matches = search_index(search_term, limit=4)
         context, sources = format_context_and_sources(matches)
-        
+
         full_response = st.write_stream(stream_gemini_response(user_input, context))
-        
+
         if sources:
             render_sources_ui(sources)
 
     # 3. Save full response in session state
     st.session_state.messages.append({
-        "role": "assistant", 
+        "role": "assistant",
         "content": full_response,
         "sources": sources
     })
+
+    # 4. Generate dynamic follow-up suggestion chips
+    new_chips = generate_follow_up_chips(user_input, full_response)
+    if new_chips:
+        st.session_state.follow_ups = new_chips
+        st.rerun()
