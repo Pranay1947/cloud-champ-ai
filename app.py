@@ -4,7 +4,9 @@ import json
 import base64
 import sqlite3
 from pathlib import Path
+import numpy as np
 import streamlit as st
+from fastembed import TextEmbedding
 from google import genai
 from google.genai import types
 
@@ -107,6 +109,14 @@ st.markdown("""
 DB_PATH = Path("data/index.sqlite")
 SYSTEM_PROMPT_PATH = Path("cloud_champ_system_prompt.md")
 
+# Verified active models list for your account
+INFERENCE_MODELS = [
+    "gemini-2.5-flash-lite",
+    "gemini-flash-lite-latest",
+    "gemini-flash-latest",
+    "gemini-2.5-flash"
+]
+
 DEFAULT_SYSTEM_PROMPT = """
 You are Cloud Champ AI, an expert Cloud & DevOps mentor.
 Your goal is to answer technical questions in the distinct Cloud Champ teaching style:
@@ -131,7 +141,37 @@ def load_system_prompt() -> str:
         return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8").strip()
     return DEFAULT_SYSTEM_PROMPT.strip()
 
-def search_index(query: str, limit: int = 4):
+@st.cache_resource(show_spinner="Loading FastEmbed semantic model...")
+def load_embedder():
+    """Caches the local embedding model in memory."""
+    return TextEmbedding(model_name="BAAI/bge-small-en-v1.5")
+
+@st.cache_resource(show_spinner="Preloading vector matrix...")
+def load_vector_index():
+    """Loads all precomputed chunk embeddings into memory once for fast vector scoring."""
+    if not DB_PATH.exists():
+        return [], None
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT chunk_id, embedding FROM chunk_embeddings ORDER BY chunk_id ASC")
+    rows = cursor.fetchall()
+    conn.close()
+
+    if not rows:
+        return [], None
+
+    chunk_ids = [r[0] for r in rows]
+    matrix = np.vstack([np.frombuffer(r[1], dtype=np.float32) for r in rows])
+    norms = np.linalg.norm(matrix, axis=1, keepdims=True)
+    norms[norms == 0] = 1e-10
+    norm_matrix = matrix / norms
+    return chunk_ids, norm_matrix
+
+def search_index_hybrid(query: str, limit: int = 4, rrf_k: int = 60):
+    """
+    Executes Hybrid Search combining SQLite FTS5 (BM25) and Dense Local Vectors
+    using Reciprocal Rank Fusion (RRF).
+    """
     if not DB_PATH.exists():
         return []
 
@@ -139,51 +179,71 @@ def search_index(query: str, limit: int = 4):
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
 
-    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-    tables = [row["name"] for row in cursor.fetchall()]
-
-    fts_table = None
-    for candidate in ["transcript_chunks_fts", "transcripts_fts", "chunks_fts", "fts_chunks"]:
-        if candidate in tables:
-            fts_table = candidate
-            break
-
+    # 1. Keyword search (FTS5)
     clean_words = [w for w in query.replace('"', '').replace("'", '').split() if w.isalnum()]
     match_query = " OR ".join(clean_words) if clean_words else query
 
-    results = []
+    fts_ranks = {}
     try:
-        if fts_table:
-            sql = f"""
-                SELECT title, video_id, start_time, text, rank
-                FROM {fts_table}
-                WHERE {fts_table} MATCH ?
-                ORDER BY rank
-                LIMIT ?
-            """
-            cursor.execute(sql, (match_query, limit))
-            results = cursor.fetchall()
-        else:
-            main_table = "transcript_chunks" if "transcript_chunks" in tables else tables[0]
-            sql = f"""
-                SELECT title, video_id, start_time, text
-                FROM {main_table}
-                WHERE text LIKE ? OR title LIKE ?
-                LIMIT ?
-            """
-            like_term = f"%{clean_words[0] if clean_words else query}%"
-            cursor.execute(sql, (like_term, like_term, limit))
-            results = cursor.fetchall()
-
+        sql = """
+            SELECT rowid, rank FROM chunks
+            WHERE chunks MATCH ?
+            ORDER BY rank
+            LIMIT 25
+        """
+        cursor.execute(sql, (match_query,))
+        for rank_idx, row in enumerate(cursor.fetchall(), start=1):
+            fts_ranks[row["rowid"]] = rank_idx
     except Exception:
-        if tables:
-            main_table = "transcript_chunks" if "transcript_chunks" in tables else tables[0]
-            cursor.execute(f"SELECT * FROM {main_table} LIMIT ?", (limit,))
-            results = cursor.fetchall()
-    finally:
-        conn.close()
+        pass
 
-    return results
+    # 2. Semantic vector search (FastEmbed)
+    vector_ranks = {}
+    try:
+        embedder = load_embedder()
+        chunk_ids, norm_matrix = load_vector_index()
+        if chunk_ids and norm_matrix is not None:
+            q_vec = list(embedder.embed([query]))[0]
+            q_norm = q_vec / (np.linalg.norm(q_vec) + 1e-10)
+            
+            sims = np.dot(norm_matrix, q_norm)
+            top_indices = np.argsort(sims)[::-1][:25]
+            for rank_idx, idx in enumerate(top_indices, start=1):
+                vector_ranks[chunk_ids[idx]] = rank_idx
+    except Exception:
+        pass
+
+    # 3. Reciprocal Rank Fusion (RRF)
+    all_candidates = set(fts_ranks.keys()).union(set(vector_ranks.keys()))
+    if not all_candidates:
+        cursor.execute("SELECT rowid, video_id, title, url, start_seconds, text FROM chunks LIMIT ?", (limit,))
+        rows = cursor.fetchall()
+        conn.close()
+        return rows
+
+    rrf_scores = {}
+    for doc_id in all_candidates:
+        score = 0.0
+        if doc_id in fts_ranks:
+            score += 1.0 / (rrf_k + fts_ranks[doc_id])
+        if doc_id in vector_ranks:
+            score += 1.0 / (rrf_k + vector_ranks[doc_id])
+        rrf_scores[doc_id] = score
+
+    sorted_ids = sorted(rrf_scores.keys(), key=lambda x: rrf_scores[x], reverse=True)[:limit]
+
+    # Retrieve matching chunks using database column names
+    placeholders = ",".join("?" * len(sorted_ids))
+    cursor.execute(f"""
+        SELECT rowid, video_id, title, url, start_seconds, text
+        FROM chunks
+        WHERE rowid IN ({placeholders})
+    """, sorted_ids)
+    rows = cursor.fetchall()
+    conn.close()
+
+    row_map = {r["rowid"]: r for r in rows}
+    return [row_map[cid] for cid in sorted_ids if cid in row_map]
 
 def format_timestamp(seconds: int) -> str:
     mins, secs = divmod(seconds, 60)
@@ -203,10 +263,11 @@ def format_context_and_sources(results):
         row_dict = dict(row)
         title = row_dict.get("title", "Cloud Champ Video")
         vid_id = row_dict.get("video_id", "")
-        start_sec = int(float(row_dict.get("start_time", 0)))
+        start_sec = int(float(row_dict.get("start_seconds", 0)))
         text = row_dict.get("text", "")
-
-        url = f"https://www.youtube.com/watch?v={vid_id}&t={start_sec}s" if vid_id else "#"
+        
+        existing_url = row_dict.get("url", "")
+        url = existing_url if existing_url else (f"https://www.youtube.com/watch?v={vid_id}&t={start_sec}s" if vid_id else "#")
         thumb_url = f"https://img.youtube.com/vi/{vid_id}/hqdefault.jpg" if vid_id else None
 
         source_item = {
@@ -226,23 +287,18 @@ def format_context_and_sources(results):
     return "\n\n".join(context_blocks), sources
 
 def get_conversation_history_text(limit_turns: int = 4) -> str:
-    """Formats the last few conversation turns to provide memory context."""
     if "messages" not in st.session_state:
         return ""
-    
     relevant = [m for m in st.session_state.messages if m["role"] in ("user", "assistant")][1:]
     recent = relevant[-limit_turns:]
-    
     formatted = []
     for msg in recent:
         role_label = "User" if msg["role"] == "user" else "Cloud Champ"
         snippet = msg["content"][:350] + ("..." if len(msg["content"]) > 350 else "")
         formatted.append(f"{role_label}: {snippet}")
-    
     return "\n".join(formatted)
 
 def stream_gemini_response(question: str, context: str):
-    """Yields text chunks as they arrive from Gemini, incorporating recent dialogue history."""
     api_key = get_api_key()
     if not api_key:
         yield "⚠️ **GEMINI_API_KEY** is not set. Run `$env:GEMINI_API_KEY='your_key'` before launching."
@@ -267,21 +323,29 @@ Answer the question thoroughly using the transcript context above while honoring
 """
 
     client = genai.Client(api_key=api_key)
-    response_stream = client.models.generate_content_stream(
-        model="gemini-3.5-flash-lite",
-        contents=user_prompt,
-        config=types.GenerateContentConfig(
-            system_instruction=system_instruction,
-            temperature=0.3,
-        ),
-    )
+    
+    last_err = None
+    for model_name in INFERENCE_MODELS:
+        try:
+            response_stream = client.models.generate_content_stream(
+                model=model_name,
+                contents=user_prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=system_instruction,
+                    temperature=0.3,
+                ),
+            )
+            for chunk in response_stream:
+                if chunk.text:
+                    yield chunk.text
+            return
+        except Exception as e:
+            last_err = e
+            continue
 
-    for chunk in response_stream:
-        if chunk.text:
-            yield chunk.text
+    yield f"⚠️ All inference models currently busy or unavailable. Please retry in a moment. (Error: {last_err})"
 
 def generate_follow_up_chips(question: str, answer: str) -> list:
-    """Generates 3 fast, clickable follow-up suggestions using Gemini."""
     api_key = get_api_key()
     if not api_key:
         return []
@@ -295,24 +359,28 @@ Generate exactly 3 concise, highly relevant follow-up questions a learner would 
 Return ONLY a valid JSON list of 3 strings, with no markdown code fences and no extra text.
 Example: ["Show me the Kubernetes YAML config", "How do I troubleshoot if the pod fails?", "What is the AWS alternative?"]
 """
-    try:
-        client = genai.Client(api_key=api_key)
-        res = client.models.generate_content(
-            model="gemini-3.5-flash-lite",
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                temperature=0.5,
-                max_output_tokens=120,
-            ),
-        )
-        raw_text = res.text.strip().replace("```json", "").replace("```", "").strip()
-        suggestions = json.loads(raw_text)
-        return suggestions[:3] if isinstance(suggestions, list) else []
-    except Exception:
-        return []
+    client = genai.Client(api_key=api_key)
+
+    for model_name in INFERENCE_MODELS:
+        try:
+            res = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.5,
+                    max_output_tokens=120,
+                ),
+            )
+            raw_text = res.text.strip().replace("```json", "").replace("```", "").strip()
+            suggestions = json.loads(raw_text)
+            if isinstance(suggestions, list):
+                return suggestions[:3]
+        except Exception:
+            continue
+
+    return []
 
 def render_sources_ui(sources):
-    """Renders video cards, thumbnails, excerpts, and playable video players."""
     if not sources:
         return
 
@@ -375,9 +443,12 @@ with st.sidebar:
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
         try:
-            cursor.execute("SELECT COUNT(*) FROM transcript_chunks")
+            cursor.execute("SELECT COUNT(*) FROM chunks")
             total_chunks = cursor.fetchone()[0]
             st.success(f"🧠 Indexed Chunks: **{total_chunks:,}**")
+            cursor.execute("SELECT COUNT(*) FROM chunk_embeddings")
+            emb_count = cursor.fetchone()[0]
+            st.caption(f"⚡ Hybrid Search: **{emb_count:,} Vectors Active**")
         except Exception:
             st.info("Database loaded.")
         finally:
@@ -415,14 +486,12 @@ if "messages" not in st.session_state:
 if "follow_ups" not in st.session_state:
     st.session_state.follow_ups = []
 
-# Render past history
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
         if "sources" in msg and msg["sources"]:
             render_sources_ui(msg["sources"])
 
-# Render follow-up prompt chips if available
 if st.session_state.follow_ups:
     st.markdown("**Suggested Follow-ups:**")
     cols = st.columns(len(st.session_state.follow_ups))
@@ -432,7 +501,6 @@ if st.session_state.follow_ups:
             st.session_state.follow_ups = []
             st.rerun()
 
-# Input handling
 user_input = st.chat_input("Ask about AWS, Kubernetes, Terraform, Docker, Python...")
 if "preset_input" in st.session_state and st.session_state["preset_input"]:
     user_input = st.session_state["preset_input"]
@@ -441,12 +509,10 @@ if "preset_input" in st.session_state and st.session_state["preset_input"]:
 if user_input:
     st.session_state.follow_ups = []
 
-    # 1. Add user message
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
         st.markdown(user_input)
 
-    # 2. Assistant response with live streaming
     with st.chat_message("assistant"):
         search_term = user_input
         if len(user_input.split()) < 4 and len(st.session_state.messages) > 2:
@@ -454,7 +520,7 @@ if user_input:
             if len(prev_user_msgs) >= 2:
                 search_term = f"{prev_user_msgs[-2]} {user_input}"
 
-        matches = search_index(search_term, limit=4)
+        matches = search_index_hybrid(search_term, limit=4)
         context, sources = format_context_and_sources(matches)
 
         full_response = st.write_stream(stream_gemini_response(user_input, context))
@@ -462,14 +528,12 @@ if user_input:
         if sources:
             render_sources_ui(sources)
 
-    # 3. Save full response in session state
     st.session_state.messages.append({
         "role": "assistant",
         "content": full_response,
         "sources": sources
     })
 
-    # 4. Generate dynamic follow-up suggestion chips
     new_chips = generate_follow_up_chips(user_input, full_response)
     if new_chips:
         st.session_state.follow_ups = new_chips
