@@ -1,96 +1,88 @@
-# Cloud Champ AI — MVP
+\# ☁️ Cloud Champ AI — DevOps \& Cloud Mentor
 
-This project is the starting point for building an AI knowledge + teaching-style clone from the Cloud Champ YouTube channel.
 
-## Goal
 
-Turn the channel's long-form videos and Shorts into:
+\[!\[Streamlit App](https://static.streamlit.io/badges/streamlit\_badge\_black\_white.svg)](https://share.streamlit.io)
 
-1. A searchable knowledge base.
-2. A source-grounded Q&A assistant.
-3. A Cloud Champ teaching-style profile.
-4. A future script-writing assistant.
-5. A later voice/avatar layer (kept separate from the knowledge system).
+\[!\[Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg?logo=python\&logoColor=white)](https://www.python.org/)
 
-## Channel
+\[!\[Google Gemini 3.5](https://img.shields.io/badge/Model-Gemini%203.5%20Flash--Lite-orange.svg?logo=google)](https://ai.google.dev/)
 
-`https://youtube.com/@cloudchamp`
+\[!\[SQLite FTS5](https://img.shields.io/badge/Search-SQLite%20FTS5-003B57.svg?logo=sqlite\&logoColor=white)](https://www.sqlite.org/fts5.html)
 
-The public channel information currently indexed identifies Cloud Champ as a Cloud/DevOps education channel and lists hundreds of videos. The ingestion script is designed to discover the channel's current video catalogue rather than relying on a fixed number.
+\[!\[License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## MVP pipeline
+
+
+\*\*Cloud Champ AI\*\* is an interactive, RAG-powered technical mentor clone built on top of 305+ end-to-end DevOps and Cloud video tutorials from the \[@cloudchamp](https://youtube.com/@cloudchamp) YouTube channel. 
+
+
+
+The platform indexes 1,917+ video transcript chunks into an optimized Full-Text Search (SQLite FTS5) engine, leverages Google Gemini 3.5 Flash-lite via the `google-genai` SDK for real-time token streaming, and integrates clickable YouTube video jump points directly inside the web interface.
+
+
+
+\---
+
+
+
+\## 🚀 Key Features
+
+
+
+\- \*\*Token-by-Token Live Streaming:\*\* Real-time answer generation using `client.models.generate\_content\_stream()` and Streamlit's native `st.write\_stream()`.
+
+\- \*\*Fast Local RAG Engine:\*\* Sub-millisecond keyword and ranked retrieval over 1,917+ transcript chunks using SQLite FTS5 with BM25-based rank ordering.
+
+\- \*\*Interactive Video Embeds:\*\* Automatically retrieves exact YouTube video timestamps and displays responsive cards with direct clip jump points.
+
+\- \*\*Authentic Cloud Champ Persona:\*\* Grounded prompt architecture calibrated to deliver beginner-friendly analogies, production YAML configs, and actionable DevOps troubleshooting.
+
+\- \*\*Modern Glassmorphic UI:\*\* Custom CSS styling with dark radial gradients, high-contrast typography, and YouTube profile avatar integration.
+
+
+
+\---
+
+
+
+\## 🛠️ Architecture \& Pipeline
+
+
 
 ```text
-YouTube channel
-      |
-      v
-video metadata + transcripts
-      |
-      v
-clean transcript chunks
-      |
-      +----> searchable knowledge base
-      |
-      +----> style-analysis corpus
-      |
-      v
-Cloud Champ AI
-```
 
-## Important design choice
+YouTube Channel (@cloudchamp)
 
-Do NOT train a model blindly on everything. Keep four layers separate:
+&#x20;        │
 
-- `knowledge`: technical facts from the videos
-- `sources`: video title, URL, timestamp/chunk
-- `style`: recurring teaching patterns and phrasing
-- `identity`: the creator's own approved persona/instructions
+&#x20;        ▼
 
-This makes the assistant easier to update and reduces hallucinations.
+305 Video Metadata + Transcripts
 
-## Quick start on Windows
+&#x20;        │
 
-### 1. Create a virtual environment
+&#x20;        ▼
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\activate
-```
+1,917 Clean Transcript Chunks ──▶ SQLite FTS5 Database (BM25 Retrieval)
 
-### 2. Install dependencies
+&#x20;                                             │
 
-```powershell
-pip install -r requirements.txt
-```
+User Query ───────────────────────────────────┤
 
-### 3. Discover the channel's videos
+&#x20;                                             ▼
 
-```powershell
-python ingest_youtube.py --discover
-```
+&#x20;                              Top-K Grounded Context Assembly
 
-### 4. Download available transcripts
+&#x20;                                             │
 
-```powershell
-python ingest_youtube.py --transcripts
-```
+&#x20;                                             ▼
 
-### 5. Build searchable chunks
+&#x20;                            Google Gemini 3.5 Flash-lite
 
-```powershell
-python build_index.py
-```
+&#x20;                                             │
 
-The first target should be a 20–50 video pilot. Once quality is verified, scale to the complete catalogue.
+&#x20;                                             ▼
 
-## What comes next
+Streamlit Web UI ◀──────── Token-by-Token Live Streaming + Video Embeds
 
-After the pilot corpus exists:
-
-- create `style_profile.md` from representative transcripts
-- add semantic embeddings/vector search
-- add a chat API
-- require source citations for factual answers
-- add "answer only from Cloud Champ content" mode
-- add a separate "general knowledge" mode
-- later connect voice/avatar generation
